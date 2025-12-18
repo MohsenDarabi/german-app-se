@@ -10,16 +10,23 @@ export const load: PageServerLoad = async ({ params }) => {
   // Search logic: The lesson could be in any module folder (module-01, module-02, etc.)
   // We need to find where `lessonId.json` resides under `content/{pair}/{level}/`.
 
-  const baseContentPath = path.resolve(process.cwd(), `content/${pair}/${level}`);
-  const baseContentPathFallback = path.resolve(process.cwd(), `../../content/${pair}/${level}`);
+  // Try multiple paths (for local dev and Vercel)
+  const possiblePaths = [
+    path.resolve(process.cwd(), `content/${pair}/${level}`),
+    path.resolve(process.cwd(), `../../content/${pair}/${level}`),
+    path.resolve(process.cwd(), `../content/${pair}/${level}`),
+  ];
 
-  let searchRoot = baseContentPath;
-  if (!fs.existsSync(searchRoot)) {
-    searchRoot = baseContentPathFallback;
+  let searchRoot: string | null = null;
+  for (const p of possiblePaths) {
+    if (fs.existsSync(p)) {
+      searchRoot = p;
+      break;
+    }
   }
 
-  if (!fs.existsSync(searchRoot)) {
-     throw error(404, `Level content not found: ${level} (Path: ${searchRoot})`);
+  if (!searchRoot) {
+     throw error(404, `Level content not found: ${level}. Tried: ${possiblePaths.join(', ')}`);
   }
 
   // Find the file recursively or by iterating known module folders
