@@ -1,0 +1,168 @@
+{
+  "id": "A1-M01-L01",
+  "title": {
+    "de": "Grüße",
+    "fa": "سلام و خداحافظی"
+  },
+  "level": "A1",
+  "module": 1,
+  "lessonNumber": 1,
+  "estimatedMinutes": 10,
+  "tags": ["greetings", "basics"],
+  "steps": [
+    {
+      "type": "new-word",
+      "id": "step-1",
+      "header": "Look, something new!",
+      "video": {
+        "url": "/videos/hallo.mp4",
+        "autoPlay": true
+      },
+      "word": {
+        "de": "Hallo!",
+        "fa": "سلام!"
+      },
+      "example": {
+        "text": {
+          "de": "Hallo!",
+          "fa": "سلام!"
+        },
+        "audio": {
+          "url": "/audio/hallo-example.mp3"
+        }
+      }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "step-2",
+      "video": {
+        "url": "/videos/hallo-quiz.mp4",
+        "autoPlay": false
+      },
+      "question": "Hallo!",
+      "options": ["Hey", "Hallo"],
+      "correctAnswerIndex": 1,
+      "feedback": {
+        "correctAnswer": "Hallo!",
+        "correctAnswerTranslation": "Hello!",
+        "explanation": "\"Hallo\" is the most common greeting in German. It can be used in almost any situation."
+      }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "step-3",
+      "video": {
+        "url": "/videos/hi-quiz.mp4",
+        "autoPlay": false
+      },
+      "question": "Hi!",
+      "options": ["Hallo", "Tschüss"],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "correctAnswer": "Hi!",
+        "correctAnswerTranslation": "Hi!",
+        "explanation": "\"Hi\" is a more casual version of \"Hallo\"."
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "step-4",
+      "instruction": "Complete the sentence.",
+      "video": {
+        "url": "/videos/complete-hi.mp4",
+        "autoPlay": false
+      },
+      "sentence": "{0}!",
+      "options": ["Hi", "Hallo"],
+      "correctAnswers": [0],
+      "feedback": {
+        "explanation": "Both \"Hi\" and \"Hallo\" are correct greetings."
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "step-5",
+      "header": "Look, something new!",
+      "video": {
+        "url": "/videos/tschuess.mp4",
+        "autoPlay": true
+      },
+      "word": {
+        "de": "Tschüss!",
+        "fa": "خداحافظ!"
+      },
+      "example": {
+        "text": {
+          "de": "Tschüss!",
+          "fa": "خداحافظ!"
+        },
+        "audio": {
+          "url": "/audio/tschuess-example.mp3"
+        }
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "step-6",
+      "instruction": "Complete the sentence.",
+      "video": {
+        "url": "/videos/complete-tschuess.mp4",
+        "autoPlay": false
+      },
+      "sentence": "{0}!",
+      "options": ["Süß", "Tschüss"],
+      "correctAnswers": [1],
+      "feedback": {
+        "correctAnswer": "Tschüss!",
+        "correctAnswerTranslation": "Bye!",
+        "explanation": "\"Tschüss\" is an informal way to say goodbye."
+      }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "step-7",
+      "video": {
+        "url": "/videos/tschuess-quiz.mp4",
+        "autoPlay": false
+      },
+      "question": "Tschüss!",
+      "options": ["Süß", "Hallo"],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "correctAnswer": "Tschüss!",
+        "correctAnswerTranslation": "Bye!",
+        "explanation": "\"Tschüss\" is an informal way to say goodbye."
+      }
+    },
+    {
+      "type": "completion",
+      "id": "step-8",
+      "message": "Well done, Mo!",
+      "vocabularyLearned": [
+        {
+          "word": {
+            "de": "Tschüss!",
+            "fa": "خداحافظ!"
+          },
+          "audio": {
+            "url": "/audio/tschuess.mp3"
+          }
+        },
+        {
+          "word": {
+            "de": "Hallo!",
+            "fa": "سلام!"
+          },
+          "audio": {
+            "url": "/audio/hallo.mp3"
+          }
+        }
+      ],
+      "stats": {
+        "starsEarned": 10,
+        "scorePercentage": 100,
+        "newVocabCount": 3
+      }
+    }
+  ]
+}

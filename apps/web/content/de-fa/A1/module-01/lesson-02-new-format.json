@@ -1,0 +1,220 @@
+{
+  "id": "A1-M01-L02",
+  "title": {
+    "de": "Ich heiße...",
+    "fa": "اسم من ... است"
+  },
+  "level": "A1",
+  "module": 1,
+  "lessonNumber": 2,
+  "estimatedMinutes": 15,
+  "tags": ["introduction", "names"],
+  "steps": [
+    {
+      "type": "new-word",
+      "id": "step-1",
+      "header": "Look, something new!",
+      "video": {
+        "url": "/videos/ich-heisse-anna.mp4",
+        "autoPlay": true
+      },
+      "word": {
+        "de": "Ich heiße Anna.",
+        "fa": "اسم من آنا است."
+      },
+      "example": {
+        "text": {
+          "de": "Ich heiße Anna.",
+          "fa": "اسم من آنا است."
+        },
+        "audio": {
+          "url": "/audio/ich-heisse-anna.mp3"
+        }
+      }
+    },
+    {
+      "type": "word-order",
+      "id": "step-2",
+      "instruction": "Put the words in order.",
+      "audio": {
+        "url": "/audio/ich-heisse-heidi.mp3"
+      },
+      "words": ["Heidi.", "heiße", "Ich"],
+      "correctOrder": [2, 1, 0],
+      "correctSentence": {
+        "de": "Ich heiße Heidi.",
+        "fa": "اسم من هایدی است."
+      },
+      "feedback": {
+        "explanation": "\"ich\" is in first position. \"heiße\" is a verb and is therefore in second position."
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "step-3",
+      "instruction": "Complete the sentence.",
+      "video": {
+        "url": "/videos/hallo-ich-maria.mp4",
+        "autoPlay": false
+      },
+      "sentence": "Hallo, ich {0} Maria.",
+      "options": ["heiße", "habe"],
+      "correctAnswers": [0],
+      "feedback": {
+        "correctAnswer": "Hallo, ich heiße Maria.",
+        "correctAnswerTranslation": "Hello, my name is Maria.",
+        "explanation": "We can spell it \"heiße\" or \"heisse\". The ß stands for a double s."
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "step-4",
+      "header": "Look, something new!",
+      "video": {
+        "url": "/videos/ich-bin-felix.mp4",
+        "autoPlay": true
+      },
+      "word": {
+        "de": "Ich bin Felix.",
+        "fa": "من فلیکس هستم."
+      },
+      "example": {
+        "text": {
+          "de": "Ich bin Felix.",
+          "fa": "من فلیکس هستم."
+        },
+        "audio": {
+          "url": "/audio/ich-bin-felix.mp3"
+        }
+      }
+    },
+    {
+      "type": "word-order",
+      "id": "step-5",
+      "instruction": "Put the words in order.",
+      "audio": {
+        "url": "/audio/ich-bin-johanna.mp3"
+      },
+      "words": ["bin", "Ich", "Johanna."],
+      "correctOrder": [1, 0, 2],
+      "correctSentence": {
+        "de": "Ich bin Johanna.",
+        "fa": "من یوهانا هستم."
+      },
+      "feedback": {
+        "explanation": "\"ich\" is in first position. \"bin\" is a verb and is therefore in second position."
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "step-6",
+      "instruction": "Complete the sentence.",
+      "video": {
+        "url": "/videos/ben.mp4",
+        "autoPlay": false
+      },
+      "sentence": "{0} Ben.",
+      "options": ["Bin ich", "Ich bin"],
+      "correctAnswers": [1],
+      "feedback": {
+        "correctAnswer": "Ich bin Ben.",
+        "correctAnswerTranslation": "I'm Ben.",
+        "explanation": "\"Ich bin\" means: I am."
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "step-7",
+      "header": "Look, something new!",
+      "video": {
+        "url": "/videos/freut-mich.mp4",
+        "autoPlay": true
+      },
+      "word": {
+        "de": "Freut mich!",
+        "fa": "از آشنایی با شما خوشوقتم!"
+      },
+      "example": {
+        "text": {
+          "de": "Freut mich!",
+          "fa": "از آشنایی با شما خوشوقتم!"
+        },
+        "audio": {
+          "url": "/audio/freut-mich.mp3"
+        }
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "step-8",
+      "instruction": "True or false?",
+      "audio": {
+        "url": "/audio/freut-mich-question.mp3"
+      },
+      "statement": "Freut mich!",
+      "statementExplanation": "\"Freut mich\" means: Nice to meet you.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "The phrase \"Nice to meet you\" consists of \"Freut\" and \"mich\" (literally \"pleases me\")."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "step-9",
+      "sourceText": "Nice to meet you. I'm Anna.",
+      "video": {
+        "url": "/videos/freut-mich-ich-bin-anna.mp4",
+        "autoPlay": false
+      },
+      "sentenceTemplate": "{0} {1}. Ich bin Anna.",
+      "options": ["mich", "Freuen", "Freut", "dich"],
+      "correctAnswers": [2, 0],
+      "correctTranslation": {
+        "de": "Freut mich. Ich bin Anna.",
+        "fa": "از آشنایی با شما خوشوقتم. من آنا هستم."
+      },
+      "feedback": {
+        "explanation": "\"Freut mich\" literally translated means \"it makes me happy to get to know you\"."
+      }
+    },
+    {
+      "type": "completion",
+      "id": "step-10",
+      "message": "Well done!",
+      "vocabularyLearned": [
+        {
+          "word": {
+            "de": "Ich heiße Anna.",
+            "fa": "اسم من آنا است."
+          },
+          "audio": {
+            "url": "/audio/ich-heisse-anna.mp3"
+          }
+        },
+        {
+          "word": {
+            "de": "Ich bin Felix.",
+            "fa": "من فلیکس هستم."
+          },
+          "audio": {
+            "url": "/audio/ich-bin-felix.mp3"
+          }
+        },
+        {
+          "word": {
+            "de": "Freut mich!",
+            "fa": "از آشنایی با شما خوشوقتم!"
+          },
+          "audio": {
+            "url": "/audio/freut-mich.mp3"
+          }
+        }
+      ],
+      "stats": {
+        "starsEarned": 10,
+        "scorePercentage": 100,
+        "newVocabCount": 5
+      }
+    }
+  ]
+}

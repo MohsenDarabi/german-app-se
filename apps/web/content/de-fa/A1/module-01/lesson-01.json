@@ -1,0 +1,86 @@
+{
+  "id": "A1-M01-L01",
+  "title": {
+    "de": "Begrüßung",
+    "fa": "سلام و احوال‌پرسی"
+  },
+  "level": "A1",
+  "module": 1,
+  "lessonNumber": 1,
+  "steps": [
+    {
+      "type": "new-word",
+      "id": "s1",
+      "word": {
+        "de": "Hallo",
+        "fa": "سلام"
+      },
+      "example": {
+        "text": {
+          "de": "Hallo! Wie geht es dir?",
+          "fa": "سلام! حالت چطوره؟"
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": {
+        "de": "Danke",
+        "fa": "ممنون / تشکر"
+      },
+      "example": {
+        "text": {
+          "de": "Mir geht es gut, danke.",
+          "fa": "خوبم، ممنون."
+        }
+      }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s3",
+      "question": "کلمه 'Danke' به چه معناست؟",
+      "options": ["سلام", "ممنون", "خداحافظ"],
+      "correctAnswerIndex": 1
+    },
+    {
+      "type": "dialog",
+      "id": "s4",
+      "lines": [
+        {
+          "speaker": "Anna",
+          "text": {
+            "de": "Hallo!",
+            "fa": "سلام!"
+          }
+        },
+        {
+          "speaker": "Lukas",
+          "text": {
+            "de": "Hallo! Wie geht es dir?",
+            "fa": "سلام! حالت چطوره؟"
+          }
+        },
+        {
+          "speaker": "Anna",
+          "text": {
+            "de": "Mir geht es gut, danke. Und dir?",
+            "fa": "خوبم، ممنون. تو چطوری؟"
+          }
+        },
+        {
+          "speaker": "Lukas",
+          "text": {
+            "de": "Auch gut.",
+            "fa": "من هم خوبم."
+          }
+        }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "content": "در زبان آلمانی، جمله 'Wie geht es dir?' برای پرسیدن حال افراد به صورت دوستانه (غیررسمی) استفاده می‌شود. برای افراد غریبه یا مسن‌تر باید از فرم رسمی استفاده کنید."
+    }
+  ]
+}

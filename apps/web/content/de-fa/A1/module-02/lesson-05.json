@@ -1,0 +1,113 @@
+{
+  "id": "A1-M02-L05",
+  "title": {
+    "de": "Berufe",
+    "fa": "مشاغل"
+  },
+  "level": "A1",
+  "module": 2,
+  "lessonNumber": 5,
+  "estimatedMinutes": 14,
+  "steps": [
+    {
+      "type": "new-word",
+      "id": "s1",
+      "word": {
+        "de": "der Lehrer / die Lehrerin",
+        "fa": "معلم"
+      },
+      "example": {
+        "text": {
+          "de": "Ich bin Lehrer.",
+          "fa": "من معلم هستم."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": {
+        "de": "der Arzt / die Ärztin",
+        "fa": "پزشک"
+      },
+      "example": {
+        "text": {
+          "de": "Sie ist Ärztin.",
+          "fa": "او پزشک است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": {
+        "de": "der Student / die Studentin",
+        "fa": "دانشجو"
+      },
+      "example": {
+        "text": {
+          "de": "Er ist Student.",
+          "fa": "او دانشجو است."
+        }
+      }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s4",
+      "question": "Was sind Sie von Beruf?",
+      "options": ["Ich bin Lehrer", "Ich heiße Max", "Ich komme aus Iran"],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "explanation": "برای گفتن شغل از 'Ich bin + شغل' استفاده می‌کنیم."
+      }
+    },
+    {
+      "type": "dialog",
+      "id": "s5",
+      "lines": [
+        {
+          "speaker": "Anna",
+          "text": {
+            "de": "Was bist du von Beruf?",
+            "fa": "شغلت چیست؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Ich bin Ingenieur. Und du?",
+            "fa": "من مهندس هستم. تو چطور؟"
+          }
+        },
+        {
+          "speaker": "Anna",
+          "text": {
+            "de": "Ich bin Studentin.",
+            "fa": "من دانشجو هستم."
+          }
+        }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s6",
+      "content": "در زبان آلمانی، اسامی مشاغل برای مرد و زن متفاوت است. معمولاً برای خانم‌ها -in اضافه می‌شود.",
+      "examples": [
+        {
+          "de": "der Lehrer → die Lehrerin",
+          "fa": "معلم (مرد) → معلم (زن)"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s7",
+      "question": "'پزشک خانم' به آلمانی چه می‌شود؟",
+      "options": ["der Arzt", "die Ärztin", "Arzt"],
+      "correctAnswerIndex": 1,
+      "feedback": {
+        "explanation": "برای خانم پزشک از 'die Ärztin' استفاده می‌کنیم."
+      }
+    }
+  ]
+}
