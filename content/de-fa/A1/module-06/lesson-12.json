@@ -1,0 +1,118 @@
+{
+  "id": "A1-M06-L12",
+  "title": {
+    "de": "In der Stadt",
+    "fa": "در شهر"
+  },
+  "level": "A1",
+  "module": 6,
+  "lessonNumber": 12,
+  "estimatedMinutes": 14,
+  "steps": [
+    {
+      "type": "new-word",
+      "id": "s1",
+      "word": {
+        "de": "der Bahnhof",
+        "fa": "ایستگاه قطار"
+      },
+      "example": {
+        "text": {
+          "de": "Der Bahnhof ist in der Stadtmitte.",
+          "fa": "ایستگاه قطار در مرکز شهر است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": {
+        "de": "geradeaus",
+        "fa": "مستقیم"
+      },
+      "example": {
+        "text": {
+          "de": "Gehen Sie geradeaus.",
+          "fa": "مستقیم بروید."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": {
+        "de": "links / rechts",
+        "fa": "چپ / راست"
+      },
+      "example": {
+        "text": {
+          "de": "Gehen Sie nach links.",
+          "fa": "به چپ بروید."
+        }
+      }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s4",
+      "question": "کلمه 'der Bahnhof' یعنی چه؟",
+      "options": ["فرودگاه", "ایستگاه قطار", "ایستگاه اتوبوس"],
+      "correctAnswerIndex": 1,
+      "feedback": {
+        "explanation": "'der Bahnhof' به معنای ایستگاه قطار است"
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "حالت امری (Imperativ)",
+      "content": "برای آدرس دادن یا دستور دادن از حالت امری استفاده می‌کنیم. فرم رسمی با 'Sie' ساخته می‌شود.",
+      "examples": [
+        {
+          "de": "Gehen Sie geradeaus!",
+          "fa": "مستقیم بروید! (رسمی)"
+        },
+        {
+          "de": "Nehmen Sie die U-Bahn!",
+          "fa": "مترو بگیرید! (رسمی)"
+        }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "s6",
+      "lines": [
+        {
+          "speaker": "Tourist",
+          "text": {
+            "de": "Entschuldigung, wo ist der Bahnhof?",
+            "fa": "ببخشید، ایستگاه قطار کجاست؟"
+          }
+        },
+        {
+          "speaker": "Passant",
+          "text": {
+            "de": "Gehen Sie geradeaus und dann links.",
+            "fa": "مستقیم بروید و سپس به چپ بپیچید."
+          }
+        },
+        {
+          "speaker": "Tourist",
+          "text": {
+            "de": "Vielen Dank!",
+            "fa": "خیلی ممنون!"
+          }
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s7",
+      "question": "'geradeaus' یعنی چه؟",
+      "options": ["چپ", "راست", "مستقیم"],
+      "correctAnswerIndex": 2,
+      "feedback": {
+        "explanation": "'geradeaus' به معنای مستقیم (به جلو) است"
+      }
+    }
+  ]
+}

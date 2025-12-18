@@ -1,0 +1,118 @@
+{
+  "id": "A1-M01-L02",
+  "title": {
+    "de": "Wer bin ich?",
+    "fa": "من کی هستم؟"
+  },
+  "level": "A1",
+  "module": 1,
+  "lessonNumber": 2,
+  "estimatedMinutes": 12,
+  "steps": [
+    {
+      "type": "new-word",
+      "id": "s1",
+      "word": {
+        "de": "Ich bin",
+        "fa": "من هستم"
+      },
+      "example": {
+        "text": {
+          "de": "Ich bin Sara.",
+          "fa": "من سارا هستم."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": {
+        "de": "Wie heißt du?",
+        "fa": "اسم تو چیست؟"
+      },
+      "example": {
+        "text": {
+          "de": "Hallo! Wie heißt du?",
+          "fa": "سلام! اسم تو چیست؟"
+        }
+      }
+    },
+    {
+      "type": "dialog",
+      "id": "s3",
+      "lines": [
+        {
+          "speaker": "Sara",
+          "text": {
+            "de": "Hallo, ich bin Sara. Wie heißt du?",
+            "fa": "سلام، من سارا هستم. اسم تو چیست؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Ich heiße Tom.",
+            "fa": "اسم من تام است."
+          }
+        },
+        {
+          "speaker": "Sara",
+          "text": {
+            "de": "Woher kommst du, Tom?",
+            "fa": "اهل کجایی، تام؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Ich komme aus Deutschland. Und du?",
+            "fa": "من اهل آلمان هستم. تو چطور؟"
+          }
+        },
+        {
+          "speaker": "Sara",
+          "text": {
+            "de": "Ich komme aus dem Iran.",
+            "fa": "من اهل ایران هستم."
+          }
+        }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s4",
+      "title": "فعل sein (بودن)",
+      "content": "فعل 'sein' (بودن) بی‌قاعده است: ich bin (من هستم)، du bist (تو هستی). برای گفتن اسم از 'heißen' استفاده می‌کنیم: ich heiße...",
+      "examples": [
+        {
+          "de": "Ich bin Sara.",
+          "fa": "من سارا هستم."
+        },
+        {
+          "de": "Ich heiße Tom.",
+          "fa": "اسم من تام است."
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s5",
+      "question": "کدام جمله صحیح است؟ (من سارا هستم)",
+      "options": ["Ich bist Sara", "Ich bin Sara", "Du bist Sara"],
+      "correctAnswerIndex": 1,
+      "feedback": {
+        "explanation": "با 'ich' از فعل 'bin' استفاده می‌کنیم: ich bin"
+      }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s6",
+      "question": "معنی 'Woher kommst du?' چیست؟",
+      "options": ["کجا زندگی می‌کنی؟", "اهل کجایی؟", "چه کار می‌کنی؟"],
+      "correctAnswerIndex": 1,
+      "feedback": {
+        "explanation": "'Woher kommst du?' به معنای 'اهل کجایی؟' است."
+      }
+    }
+  ]
+}

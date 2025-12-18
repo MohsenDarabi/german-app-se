@@ -1,0 +1,125 @@
+{
+  "id": "A1-M03-L07",
+  "title": {
+    "de": "Obst und Gemüse",
+    "fa": "میوه‌ها و سبزیجات"
+  },
+  "level": "A1",
+  "module": 3,
+  "lessonNumber": 7,
+  "estimatedMinutes": 14,
+  "steps": [
+    {
+      "type": "new-word",
+      "id": "s1",
+      "word": {
+        "de": "der Apfel",
+        "fa": "سیب"
+      },
+      "example": {
+        "text": {
+          "de": "Ich esse einen Apfel.",
+          "fa": "من یک سیب می‌خورم."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": {
+        "de": "die Banane",
+        "fa": "موز"
+      },
+      "example": {
+        "text": {
+          "de": "Die Banane ist gelb.",
+          "fa": "موز زرد است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": {
+        "de": "die Kartoffel",
+        "fa": "سیب‌زمینی"
+      },
+      "example": {
+        "text": {
+          "de": "Ich brauche zwei Kilo Kartoffeln.",
+          "fa": "من دو کیلو سیب‌زمینی لازم دارم."
+        }
+      }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s4",
+      "question": "کلمه 'der Apfel' یعنی چه؟",
+      "options": ["سیب", "موز", "پرتقال"],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "explanation": "'der Apfel' به معنای سیب است."
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "جمع بستن اسامی",
+      "content": "در زبان آلمانی، جمع اسامی تغییر می‌کند و معمولاً حرف صدادار آهنگین می‌شود (Umlaut).",
+      "examples": [
+        {
+          "de": "der Apfel → die Äpfel",
+          "fa": "سیب → سیب‌ها"
+        },
+        {
+          "de": "die Banane → die Bananen",
+          "fa": "موز → موزها"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s6",
+      "question": "جمع کلمه 'die Banane' چیست؟",
+      "options": ["die Bananen", "die Banane", "die Banans"],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "explanation": "جمع 'die Banane' می‌شود 'die Bananen' با اضافه کردن -n"
+      }
+    },
+    {
+      "type": "dialog",
+      "id": "s7",
+      "lines": [
+        {
+          "speaker": "Verkäufer",
+          "text": {
+            "de": "Bitte schön?",
+            "fa": "بفرمایید؟"
+          }
+        },
+        {
+          "speaker": "Kunde",
+          "text": {
+            "de": "Ich brauche ein Kilo Kartoffeln.",
+            "fa": "من یک کیلو سیب‌زمینی لازم دارم."
+          }
+        },
+        {
+          "speaker": "Verkäufer",
+          "text": {
+            "de": "Sonst noch etwas?",
+            "fa": "چیز دیگری هم هست؟"
+          }
+        },
+        {
+          "speaker": "Kunde",
+          "text": {
+            "de": "Nein, danke.",
+            "fa": "نه، ممنون."
+          }
+        }
+      ]
+    }
+  ]
+}

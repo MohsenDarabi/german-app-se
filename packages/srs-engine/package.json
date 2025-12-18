@@ -1,0 +1,17 @@
+{
+  "name": "@pkg/srs-engine",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": "./src/index.ts",
+  "scripts": {
+    "build": "echo \"TODO: build srs-engine\"",
+    "test": "vitest",
+    "lint": "echo \"TODO: lint srs-engine\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "vitest": "^2.0.0"
+  }
+}
