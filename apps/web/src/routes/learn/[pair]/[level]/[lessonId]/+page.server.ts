@@ -12,6 +12,7 @@ export const load: PageServerLoad = async ({ params }) => {
 
   // Try multiple paths (for local dev and Vercel)
   const possiblePaths = [
+    path.resolve(process.cwd(), `apps/web/content/${pair}/${level}`), // Vercel: content copied to apps/web/content
     path.resolve(process.cwd(), `content/${pair}/${level}`),
     path.resolve(process.cwd(), `../../content/${pair}/${level}`),
     path.resolve(process.cwd(), `../content/${pair}/${level}`),
