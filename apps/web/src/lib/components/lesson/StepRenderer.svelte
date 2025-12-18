@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { LessonStep } from "@pkg/content-model";
+  import type { LessonStep } from "$lib/content-model";
   import DialogStep from "./steps/DialogStep.svelte";
   import GrammarTipStep from "./steps/GrammarTipStep.svelte";
   import WordQuizStep from "./steps/WordQuizStep.svelte";

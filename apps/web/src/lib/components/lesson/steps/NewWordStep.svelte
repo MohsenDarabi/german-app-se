@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { NewWordStep } from "@pkg/content-model";
+  import type { NewWordStep } from "$lib/content-model";
   import { db } from "$lib/db";
   import { onMount } from "svelte";
   import { liveQuery } from "dexie";

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { DialogStep } from "@pkg/content-model";
+  import type { DialogStep } from "$lib/content-model";
   import { playText } from "$lib/utils/audio";
 
   export let step: DialogStep;

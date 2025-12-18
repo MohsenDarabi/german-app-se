@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { GrammarTipStep } from "@pkg/content-model";
+  import type { GrammarTipStep } from "$lib/content-model";
   export let step: GrammarTipStep;
 </script>
 

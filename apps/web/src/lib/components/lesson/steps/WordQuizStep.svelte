@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { WordQuizStep, MultipleChoiceStep } from "@pkg/content-model";
+  import type { WordQuizStep, MultipleChoiceStep } from "$lib/content-model";
   import { createEventDispatcher } from "svelte";
 
   export let step: WordQuizStep | MultipleChoiceStep | any;

@@ -1,5 +1,5 @@
 import { writable, derived } from 'svelte/store';
-import type { Lesson } from '@pkg/content-model';
+import type { Lesson } from '$lib/content-model';
 import { getLessonProgress, saveStepProgress, updateStudyTime, clearLessonWrongAnswers, resetLessonForReplay } from '$lib/services/progressService';
 
 function createLessonStore() {

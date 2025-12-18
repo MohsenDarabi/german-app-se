@@ -35,13 +35,13 @@
   "dependencies": {
     "@auth/core": "^0.34.3",
     "@auth/sveltekit": "^1.11.1",
-    "@pkg/content-model": "workspace:*",
     "@supabase/auth-helpers-sveltekit": "^0.15.0",
     "@supabase/ssr": "^0.8.0",
     "@supabase/supabase-js": "^2.88.0",
     "@tanstack/svelte-query": "^5.51.0",
     "dexie": "^4.0.8",
-    "svelte-i18n": "^4.0.0"
+    "svelte-i18n": "^4.0.0",
+    "zod": "^3.22.4"
   },
   "pnpm": {
     "overrides": {
