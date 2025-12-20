@@ -65,6 +65,17 @@ export const NewWordStepSchema = BaseStepSchema.extend({
   // Optional image for visual learning
   image: z.string().optional(), // URL
 
+  // Phonetic pronunciation guide (e.g., "ha-LO" for "Hallo")
+  phonetic: z.string().optional(),
+
+  // Word type/part of speech (e.g., "noun", "verb", "adjective", "phrase")
+  wordType: z.string().optional(),
+
+  // Additional note in Persian for learners
+  note: z.object({
+    fa: z.string(),
+  }).optional(),
+
   // Header text (default: "Look, something new!")
   header: z.string().default("Look, something new!"),
 });
@@ -184,6 +195,12 @@ export const TranslationStepSchema = BaseStepSchema.extend({
 
 export const DialogStepSchema = BaseStepSchema.extend({
   type: z.literal("dialog"),
+
+  // Dialog title (e.g., "Im Deutschkurs", "Am Telefon")
+  title: z.string().optional(),
+
+  // Instruction text (e.g., "Read and practice:")
+  instruction: z.string().optional(),
 
   // Conversation lines with speaker names
   lines: z.array(
