@@ -1,0 +1,247 @@
+{
+  "id": "A2-2-M12-L11",
+  "title": {
+    "de": "Einladungen",
+    "fa": "دعوت‌نامه‌ها"
+  },
+  "level": "A2-2",
+  "module": 12,
+  "lessonNumber": 11,
+  "estimatedMinutes": 18,
+  "steps": [
+    {
+      "type": "dialog",
+      "id": "s1",
+      "title": "Eine Geburtstagseinladung",
+      "lines": [
+        {
+          "speaker": "Anna",
+          "text": {
+            "de": "Ich lade dich zu meiner Geburtstagsfeier ein. Am dritten März um 19 Uhr.",
+            "fa": "تو را به جشن تولدم دعوت می‌کنم. سوم مارس ساعت ۷ شب."
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Oh wie schön! Vielen Dank für die Einladung. Ich komme gern!",
+            "fa": "چه خوب! خیلی ممنون بابت دعوت. با کمال میل می‌آیم!"
+          }
+        },
+        {
+          "speaker": "Anna",
+          "text": {
+            "de": "Super! Kannst du vielleicht einen Salat mitbringen?",
+            "fa": "عالی! می‌توانی شاید یک سالاد بیاوری؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Natürlich! Soll ich noch etwas anderes bringen?",
+            "fa": "البته! چیز دیگری هم بیاورم؟"
+          }
+        }
+      ],
+      "feedback": {
+        "explanation": "در این مکالمه یاد می‌گیریم چگونه دعوت کنیم و به دعوت پاسخ دهیم."
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": {
+        "de": "die Einladung",
+        "fa": "دعوت‌نامه"
+      },
+      "phonetic": "AYN-la-dung",
+      "wordType": "noun",
+      "gender": "feminin",
+      "example": {
+        "text": {
+          "de": "Danke für die Einladung!",
+          "fa": "ممنون بابت دعوت!"
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": {
+        "de": "einladen",
+        "fa": "دعوت کردن"
+      },
+      "phonetic": "AYN-la-den",
+      "wordType": "separable verb",
+      "example": {
+        "text": {
+          "de": "Ich lade dich zum Essen ein.",
+          "fa": "تو را به شام دعوت می‌کنم."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": {
+        "de": "die Feier",
+        "fa": "جشن / مراسم"
+      },
+      "phonetic": "FY-er",
+      "wordType": "noun",
+      "gender": "feminin",
+      "example": {
+        "text": {
+          "de": "Die Feier beginnt um 20 Uhr.",
+          "fa": "جشن ساعت ۸ شب شروع می‌شود."
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "اعداد ترتیبی برای تاریخ",
+      "content": "**اعداد ترتیبی (Ordinalzahlen):**\n\n**۱-۱۹:** عدد + **-te**\n| عدد | ترتیبی |\n|---|---|\n| 1 | der/die/das **erste** |\n| 2 | der/die/das **zweite** |\n| 3 | der/die/das **dritte** |\n| 4 | der/die/das **vierte** |\n| 7 | der/die/das **siebte** |\n\n**۲۰+:** عدد + **-ste**\n• 20 → der zwanzigste\n• 21 → der einundzwanzigste\n\n**تاریخ:**\n• Am **dritten** März = در سوم مارس\n• Am **ersten** Januar = در اول ژانویه",
+      "examples": [
+        {
+          "de": "Mein Geburtstag ist am fünfzehnten Juli.",
+          "fa": "تولدم پانزدهم جولای است."
+        },
+        {
+          "de": "Heute ist der zweite Dezember.",
+          "fa": "امروز دوم دسامبر است."
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s6",
+      "question": "Am _____ April habe ich Geburtstag. (۱۵)",
+      "options": ["fünfzehnten", "fünfzehnte", "fünfzehn", "fünfzehnste"],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "explanation": "am + ترتیبی + -en (Dativ): am fünfzehnten"
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s7",
+      "instruction": "جمله را کامل کنید:",
+      "sentence": "Die Party ist am {0} März um {1} Uhr.",
+      "options": ["dritten", "drei", "dritte", "acht", "achten", "achte"],
+      "correctAnswers": [0, 3],
+      "feedback": {
+        "explanation": "تاریخ: am dritten. ساعت: um acht (عدد معمولی)"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": {
+        "de": "mitbringen",
+        "fa": "همراه آوردن"
+      },
+      "phonetic": "MIT-bring-en",
+      "wordType": "separable verb",
+      "example": {
+        "text": {
+          "de": "Ich bringe einen Kuchen mit.",
+          "fa": "یک کیک می‌آورم."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": {
+        "de": "das Geschenk",
+        "fa": "هدیه"
+      },
+      "phonetic": "ge-SHENK",
+      "wordType": "noun",
+      "gender": "neutral",
+      "example": {
+        "text": {
+          "de": "Was soll ich als Geschenk mitbringen?",
+          "fa": "چه هدیه‌ای بیاورم؟"
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s10",
+      "title": "💡 نکته فرهنگی: آداب دعوت در آلمان",
+      "content": "رسوم مهمانی آلمانی:\n\n🎁 **Mitbringsel:**\n• همیشه چیزی بیاورید!\n• گل، شکلات، شراب\n• زوج نه برای گل! (۷، ۹، ۱۱)\n\n⏰ **وقت‌شناسی:**\n• دقیقاً سر ساعت\n• ۵ دقیقه دیر = قابل قبول\n• ۱۵ دقیقه دیر = بی‌ادبی!\n\n📝 **پاسخ به دعوت:**\n• حتماً Zu- oder Absagen کنید!\n• بگویید می‌آیید یا نه\n\n🏠 **در خانه:**\n• کفش‌ها را در بیاورید\n• Hausschuhe (دمپایی خانه)",
+      "examples": [
+        {
+          "de": "Danke für die Einladung! Ich komme gern.",
+          "fa": "ممنون بابت دعوت! با کمال میل می‌آیم."
+        },
+        {
+          "de": "Leider kann ich nicht kommen.",
+          "fa": "متأسفانه نمی‌توانم بیایم."
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s11",
+      "question": "Heute ist der _____ Februar. (1)",
+      "options": ["erste", "ersten", "eins", "einste"],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "explanation": "der erste (Nominativ): Heute ist der erste..."
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s12",
+      "instruction": "جمله را کامل کنید:",
+      "sentence": "Ich {0} dich zu meinem Geburtstag {1}.",
+      "options": ["lade", "laden", "lad", "ein", "an", "mit"],
+      "correctAnswers": [0, 3],
+      "feedback": {
+        "explanation": "einladen (جداشدنی): Ich lade ... ein"
+      }
+    },
+    {
+      "type": "word-order",
+      "id": "s13",
+      "instruction": "کلمات را مرتب کنید:",
+      "words": ["Kuchen", "mit", "Ich", "bringe", "einen"],
+      "correctOrder": [2, 3, 4, 0, 1],
+      "correctSentence": {
+        "de": "Ich bringe einen Kuchen mit",
+        "fa": "یک کیک می‌آورم"
+      },
+      "feedback": {
+        "explanation": "mitbringen جداشدنی: bringe ... mit"
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "s14",
+      "statement": "'Der dritte März' bedeutet '3. März'.",
+      "statementExplanation": "'der dritte März' یعنی '۳ مارس'.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! dritte = سوم"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "s15",
+      "sourceText": "جشن در بیستم ماه می است.",
+      "sentenceTemplate": "Die Feier ist am {0} {1}.",
+      "options": ["zwanzigsten", "zwanzig", "Mai", "Mais"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": {
+        "de": "Die Feier ist am zwanzigsten Mai.",
+        "fa": "جشن در بیستم ماه می است."
+      },
+      "feedback": {
+        "explanation": "am + عدد ترتیبی-en: am zwanzigsten"
+      }
+    }
+  ]
+}

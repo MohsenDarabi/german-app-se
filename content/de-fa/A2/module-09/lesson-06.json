@@ -1,0 +1,245 @@
+{
+  "id": "A2-1-M09-L06",
+  "title": {
+    "de": "Gesund leben",
+    "fa": "زندگی سالم"
+  },
+  "level": "A2-1",
+  "module": 9,
+  "lessonNumber": 6,
+  "estimatedMinutes": 18,
+  "steps": [
+    {
+      "type": "dialog",
+      "id": "s1",
+      "title": "Tipps für die Gesundheit",
+      "lines": [
+        {
+          "speaker": "Lisa",
+          "text": {
+            "de": "Ich bin so müde! Ich schlafe nur fünf Stunden pro Nacht.",
+            "fa": "خیلی خسته‌ام! شب‌ها فقط پنج ساعت می‌خوابم."
+          }
+        },
+        {
+          "speaker": "Max",
+          "text": {
+            "de": "Das ist zu wenig! Du solltest mehr schlafen.",
+            "fa": "این خیلی کمه! باید بیشتر بخوابی."
+          }
+        },
+        {
+          "speaker": "Lisa",
+          "text": {
+            "de": "Ich weiß. Ich sollte auch mehr Sport machen.",
+            "fa": "می‌دونم. باید ورزش هم بیشتر کنم."
+          }
+        },
+        {
+          "speaker": "Max",
+          "text": {
+            "de": "Und vergiss nicht, viel Wasser zu trinken! Das ist wichtig.",
+            "fa": "و یادت نره آب زیاد بخوری! این مهمه."
+          }
+        }
+      ],
+      "feedback": {
+        "explanation": "در این مکالمه یاد می‌گیریم چگونه نصیحت بدهیم و درباره زندگی سالم صحبت کنیم."
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": {
+        "de": "gesund",
+        "fa": "سالم"
+      },
+      "phonetic": "ge-ZUNT",
+      "wordType": "adjective",
+      "example": {
+        "text": {
+          "de": "Obst und Gemüse sind gesund.",
+          "fa": "میوه و سبزیجات سالم هستند."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": {
+        "de": "müde",
+        "fa": "خسته"
+      },
+      "phonetic": "MÜ-de",
+      "wordType": "adjective",
+      "example": {
+        "text": {
+          "de": "Ich bin heute sehr müde.",
+          "fa": "امروز خیلی خسته‌ام."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": {
+        "de": "Sport machen",
+        "fa": "ورزش کردن"
+      },
+      "phonetic": "shport MA-khen",
+      "wordType": "phrase",
+      "example": {
+        "text": {
+          "de": "Ich mache dreimal pro Woche Sport.",
+          "fa": "هفته‌ای سه بار ورزش می‌کنم."
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "sollte برای نصیحت",
+      "content": "**sollte** (Konjunktiv II از sollen) برای نصیحت دادن:\n\n| ضمیر | sollte |\n|---|---|\n| ich | sollte |\n| du | solltest |\n| er/sie/es | sollte |\n| wir | sollten |\n| ihr | solltet |\n| sie/Sie | sollten |\n\n**ساختار:** Subject + sollte + ... + Infinitiv\n\n⚠️ فعل اصلی به صورت مصدر به آخر می‌رود!",
+      "examples": [
+        {
+          "de": "Du solltest mehr Wasser trinken.",
+          "fa": "باید آب بیشتری بخوری."
+        },
+        {
+          "de": "Sie sollten früher schlafen gehen.",
+          "fa": "شما باید زودتر بخوابید."
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s6",
+      "question": "Du _____ weniger Zucker essen.",
+      "options": ["solltest", "sollte", "sollten", "sollt"],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "explanation": "با du از solltest استفاده می‌کنیم."
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s7",
+      "instruction": "جمله را کامل کنید:",
+      "sentence": "Ihr {0} mehr Obst und Gemüse {1}.",
+      "options": ["solltet", "sollten", "solltest", "essen", "esst", "gegessen"],
+      "correctAnswers": [0, 3],
+      "feedback": {
+        "explanation": "با ihr: solltet + مصدر (essen)"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": {
+        "de": "abnehmen",
+        "fa": "لاغر شدن / وزن کم کردن"
+      },
+      "phonetic": "AP-nay-men",
+      "wordType": "separable verb",
+      "example": {
+        "text": {
+          "de": "Ich möchte fünf Kilo abnehmen.",
+          "fa": "می‌خواهم پنج کیلو لاغر شوم."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": {
+        "de": "zunehmen",
+        "fa": "چاق شدن / وزن اضافه کردن"
+      },
+      "phonetic": "TSOO-nay-men",
+      "wordType": "separable verb",
+      "example": {
+        "text": {
+          "de": "Im Winter nehme ich immer zu.",
+          "fa": "زمستان همیشه چاق می‌شوم."
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s10",
+      "title": "مصدر با zu",
+      "content": "بعد از بعضی عبارات، از **zu + Infinitiv** استفاده می‌کنیم:\n\n**عبارات رایج:**\n• vergessen + zu: Vergiss nicht, Sport **zu machen**!\n• versuchen + zu: Ich versuche, gesund **zu leben**.\n• anfangen + zu: Ich fange an, Deutsch **zu lernen**.\n\n**ساختار:** ... , zu + Infinitiv\n\n⚠️ **نکته:** zu قبل از مصدر می‌آید!",
+      "examples": [
+        {
+          "de": "Es ist wichtig, viel Wasser zu trinken.",
+          "fa": "مهم است آب زیاد بخوریم."
+        },
+        {
+          "de": "Ich habe keine Zeit, Sport zu machen.",
+          "fa": "وقت ندارم ورزش کنم."
+        }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s11",
+      "title": "💡 نکته فرهنگی: زندگی سالم در آلمان",
+      "content": "فرهنگ سلامتی آلمانی:\n\n🥗 **Bio:**\n• محصولات ارگانیک بسیار محبوب\n• Bio-Laden = فروشگاه ارگانیک\n\n🚴 **ورزش:**\n• دوچرخه‌سواری = حمل و نقل روزمره\n• Fitnessstudio = باشگاه بدنسازی\n• پیاده‌روی (Wandern) محبوب\n\n🧘 **Wellness:**\n• سونا و اسپا در آلمان خیلی رایج\n• Kur = دوره درمانی (با بیمه!)\n\n🚭 **مقررات:**\n• سیگار در مکان‌های عمومی ممنوع",
+      "examples": [
+        {
+          "de": "Ich kaufe nur Bio-Produkte.",
+          "fa": "فقط محصولات ارگانیک می‌خرم."
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s12",
+      "question": "Vergiss nicht, genug Wasser _____!",
+      "options": ["zu trinken", "trinken", "trinkst", "getrunken"],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "explanation": "vergessen + zu + Infinitiv: zu trinken"
+      }
+    },
+    {
+      "type": "word-order",
+      "id": "s13",
+      "instruction": "کلمات را مرتب کنید:",
+      "words": ["mehr", "solltest", "Du", "Sport", "machen"],
+      "correctOrder": [2, 1, 0, 4, 3],
+      "correctSentence": {
+        "de": "Du solltest mehr Sport machen",
+        "fa": "باید ورزش بیشتری کنی"
+      },
+      "feedback": {
+        "explanation": "ساختار: Subject + sollte + ... + Infinitiv (آخر جمله)"
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "s14",
+      "statement": "'Ich sollte' ist höflicher als 'Ich soll'.",
+      "statementExplanation": "'Ich sollte' مودب‌تر از 'Ich soll' است.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! sollte (Konjunktiv II) ملایم‌تر و مودب‌تر از soll است."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "s15",
+      "sourceText": "مهم است که سالم غذا بخوریم.",
+      "sentenceTemplate": "Es ist wichtig, gesund {0} {1}.",
+      "options": ["zu", "essen", "isst", "gegessen"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": {
+        "de": "Es ist wichtig, gesund zu essen.",
+        "fa": "مهم است که سالم غذا بخوریم."
+      },
+      "feedback": {
+        "explanation": "Es ist wichtig, ... zu + Infinitiv"
+      }
+    }
+  ]
+}

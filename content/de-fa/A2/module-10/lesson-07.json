@@ -1,0 +1,242 @@
+{
+  "id": "A2-2-M10-L07",
+  "title": {
+    "de": "Meine Freizeit",
+    "fa": "اوقات فراغت من"
+  },
+  "level": "A2-2",
+  "module": 10,
+  "lessonNumber": 7,
+  "estimatedMinutes": 18,
+  "steps": [
+    {
+      "type": "dialog",
+      "id": "s1",
+      "title": "Hobbys besprechen",
+      "lines": [
+        {
+          "speaker": "Anna",
+          "text": {
+            "de": "Was machst du gern in deiner Freizeit?",
+            "fa": "اوقات فراغتت چه کار می‌کنی؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Ich gehe oft wandern. Ich liebe die Natur. Und du?",
+            "fa": "زیاد پیاده‌روی می‌رم. طبیعت را دوست دارم. تو چی؟"
+          }
+        },
+        {
+          "speaker": "Anna",
+          "text": {
+            "de": "Ich spiele gern Gitarre. Leider habe ich wenig Zeit dafür.",
+            "fa": "گیتار زدن دوست دارم. متأسفانه وقت کمی دارم."
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Das verstehe ich. Trotzdem solltest du Zeit für deine Hobbys finden.",
+            "fa": "می‌فهمم. با این حال باید برای سرگرمی‌هایت وقت پیدا کنی."
+          }
+        }
+      ],
+      "feedback": {
+        "explanation": "در این مکالمه یاد می‌گیریم چگونه درباره سرگرمی‌ها صحبت کنیم."
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": {
+        "de": "die Freizeit",
+        "fa": "اوقات فراغت"
+      },
+      "phonetic": "FRY-tsayt",
+      "wordType": "noun",
+      "gender": "feminin",
+      "example": {
+        "text": {
+          "de": "In meiner Freizeit lese ich gern.",
+          "fa": "در اوقات فراغتم کتاب خواندن دوست دارم."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": {
+        "de": "wandern",
+        "fa": "پیاده‌روی کردن (در طبیعت)"
+      },
+      "phonetic": "VAN-dern",
+      "wordType": "verb",
+      "example": {
+        "text": {
+          "de": "Am Wochenende wandern wir in den Bergen.",
+          "fa": "آخر هفته در کوه‌ها پیاده‌روی می‌کنیم."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": {
+        "de": "das Hobby",
+        "fa": "سرگرمی"
+      },
+      "phonetic": "HO-bi",
+      "wordType": "noun",
+      "gender": "neutral",
+      "example": {
+        "text": {
+          "de": "Mein Hobby ist Fotografieren.",
+          "fa": "سرگرمی من عکاسی است."
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "trotzdem (با این حال)",
+      "content": "**trotzdem** برای بیان تضاد استفاده می‌شود:\n\n**معنی:** با این حال، با این وجود\n\n**ساختار:** جمله اول + جمله دوم با trotzdem\n\n⚠️ **نکته مهم:** trotzdem یک قید است، نه حرف ربط!\nفعل بعد از آن در جایگاه دوم می‌ماند:\n\n**Trotzdem** + **Verb** + Subject + ...\n\n**یا:** Subject + Verb + **trotzdem** + ...",
+      "examples": [
+        {
+          "de": "Es regnet. Trotzdem gehe ich spazieren.",
+          "fa": "باران می‌بارد. با این حال پیاده‌روی می‌روم."
+        },
+        {
+          "de": "Ich bin müde. Ich arbeite trotzdem weiter.",
+          "fa": "خسته‌ام. با این حال به کار ادامه می‌دهم."
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s6",
+      "question": "Es ist kalt. _____ gehen wir schwimmen.",
+      "options": ["Trotzdem", "Weil", "Denn", "Obwohl"],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "explanation": "trotzdem = با این حال. نشان‌دهنده تضاد است."
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s7",
+      "instruction": "جمله را کامل کنید:",
+      "sentence": "Ich habe wenig Geld. {0} kaufe ich das Buch.",
+      "options": ["Trotzdem", "Weil", "Denn", "Aber"],
+      "correctAnswers": [0],
+      "feedback": {
+        "explanation": "trotzdem در ابتدای جمله دوم، فعل بعد از آن."
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": {
+        "de": "leider",
+        "fa": "متأسفانه"
+      },
+      "phonetic": "LY-der",
+      "wordType": "adverb",
+      "example": {
+        "text": {
+          "de": "Leider habe ich heute keine Zeit.",
+          "fa": "متأسفانه امروز وقت ندارم."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": {
+        "de": "klettern",
+        "fa": "صخره‌نوردی کردن"
+      },
+      "phonetic": "KLE-tern",
+      "wordType": "verb",
+      "example": {
+        "text": {
+          "de": "Am Samstag gehen wir klettern.",
+          "fa": "شنبه صخره‌نوردی می‌رویم."
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s10",
+      "title": "💡 نکته فرهنگی: Vereine در آلمان",
+      "content": "سیستم باشگاه‌ها (Vereine) در آلمان:\n\n🏃 **Sportverein:**\n• ورزش در آلمان = عضویت در باشگاه\n• حق عضویت ماهانه (۵-۳۰ یورو)\n• فوتبال، شنا، تنیس محبوب\n\n🎵 **سایر Vereine:**\n• Musikverein = انجمن موسیقی\n• Wanderverein = باشگاه کوهنوردی\n• Schützenverein = باشگاه تیراندازی\n\n🤝 **جامعه:**\n• راه خوب برای دوستیابی\n• آلمانی‌ها عاشق عضویت هستند!",
+      "examples": [
+        {
+          "de": "Ich bin Mitglied in einem Sportverein.",
+          "fa": "عضو یک باشگاه ورزشی هستم."
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s11",
+      "question": "Ich bin müde, _____ gehe ich ins Fitnessstudio.",
+      "options": ["trotzdem", "weil", "denn", "deshalb"],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "explanation": "تضاد: خسته‌ام + با این حال می‌روم = trotzdem"
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s12",
+      "instruction": "جمله را کامل کنید:",
+      "sentence": "Das Wetter ist schlecht. Wir gehen {0} {1}.",
+      "options": ["trotzdem", "denn", "wandern", "gewandert"],
+      "correctAnswers": [0, 2],
+      "feedback": {
+        "explanation": "تضاد با trotzdem + فعل مصدر با gehen"
+      }
+    },
+    {
+      "type": "word-order",
+      "id": "s13",
+      "instruction": "کلمات را مرتب کنید:",
+      "words": ["trotzdem", "spiele", "bin", "ich", "müde", "Ich", "Fußball"],
+      "correctOrder": [5, 2, 4, 0, 1, 3, 6],
+      "correctSentence": {
+        "de": "Ich bin müde trotzdem spiele ich Fußball",
+        "fa": "خسته‌ام با این حال فوتبال بازی می‌کنم"
+      },
+      "feedback": {
+        "explanation": "دو جمله با trotzdem: جمله ۱ + trotzdem + Verb + Subject"
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "s14",
+      "statement": "'Trotzdem' steht am Anfang des zweiten Satzes und das Verb kommt direkt danach.",
+      "statementExplanation": "'Trotzdem' در ابتدای جمله دوم می‌آید و فعل مستقیماً بعد از آن.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! Trotzdem + Verb: Trotzdem gehe ich..."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "s15",
+      "sourceText": "باران می‌بارد. با این حال بیرون می‌روم.",
+      "sentenceTemplate": "Es regnet. {0} {1} ich nach draußen.",
+      "options": ["Trotzdem", "Weil", "gehe", "geht"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": {
+        "de": "Es regnet. Trotzdem gehe ich nach draußen.",
+        "fa": "باران می‌بارد. با این حال بیرون می‌روم."
+      },
+      "feedback": {
+        "explanation": "Trotzdem + Verb + Subject: Trotzdem gehe ich..."
+      }
+    }
+  ]
+}

@@ -128,3 +128,120 @@ export const A1_MODULES: ModuleStub[] = [
     ]
   }
 ];
+
+export const A2_MODULES: ModuleStub[] = [
+  {
+    id: "module-07",
+    title: "بخش ۷: سفر و تجربه‌ها (Reisen & Erlebnisse)",
+    level: "A2",
+    lessons: [
+      {
+        id: "A2-M07-L01",
+        title: "تجربه‌های سفر (Urlaubserlebnisse)",
+        description: "صحبت درباره تعطیلات با زمان Perfekt.",
+        path: "/learn/de-fa/A2/lesson-01"
+      },
+      {
+        id: "A2-M07-L02",
+        title: "سفر با تاخیر (Reise mit Verspätung)",
+        description: "صحبت درباره مشکلات سفر و Perfekt با sein.",
+        path: "/learn/de-fa/A2/lesson-02"
+      }
+    ]
+  },
+  {
+    id: "module-08",
+    title: "بخش ۸: کار و شغل (Arbeit & Beruf)",
+    level: "A2",
+    lessons: [
+      {
+        id: "A2-M08-L03",
+        title: "شغل من (Mein Beruf)",
+        description: "توصیف مشاغل و فعالیت‌های کاری.",
+        path: "/learn/de-fa/A2/lesson-03"
+      },
+      {
+        id: "A2-M08-L04",
+        title: "در دفتر (Im Büro)",
+        description: "واژگان دفتر و ارتباطات کاری.",
+        path: "/learn/de-fa/A2/lesson-04"
+      }
+    ]
+  },
+  {
+    id: "module-09",
+    title: "بخش ۹: سلامتی (Gesundheit)",
+    level: "A2",
+    lessons: [
+      {
+        id: "A2-M09-L05",
+        title: "پیش دکتر (Beim Arzt)",
+        description: "توصیف علائم و ویزیت پزشک.",
+        path: "/learn/de-fa/A2/lesson-05"
+      },
+      {
+        id: "A2-M09-L06",
+        title: "زندگی سالم (Gesund leben)",
+        description: "صحبت درباره سبک زندگی سالم.",
+        path: "/learn/de-fa/A2/lesson-06"
+      }
+    ]
+  },
+  {
+    id: "module-10",
+    title: "بخش ۱۰: اوقات فراغت و سرگرمی (Freizeit & Hobbys)",
+    level: "A2",
+    lessons: [
+      {
+        id: "A2-M10-L07",
+        title: "اوقات فراغت من (Meine Freizeit)",
+        description: "صحبت درباره سرگرمی‌ها و ترجیحات.",
+        path: "/learn/de-fa/A2/lesson-07"
+      },
+      {
+        id: "A2-M10-L08",
+        title: "برنامه‌های آخر هفته (Wochenendpläne)",
+        description: "برنامه‌ریزی و زمان آینده.",
+        path: "/learn/de-fa/A2/lesson-08"
+      }
+    ]
+  },
+  {
+    id: "module-11",
+    title: "بخش ۱۱: رسانه و تکنولوژی (Medien & Technik)",
+    level: "A2",
+    lessons: [
+      {
+        id: "A2-M11-L09",
+        title: "اینترنت و موبایل (Internet & Handy)",
+        description: "صحبت درباره تکنولوژی و مقایسه.",
+        path: "/learn/de-fa/A2/lesson-09"
+      },
+      {
+        id: "A2-M11-L10",
+        title: "اخبار و رسانه (Nachrichten & Medien)",
+        description: "صحبت درباره اخبار و رسانه‌ها.",
+        path: "/learn/de-fa/A2/lesson-10"
+      }
+    ]
+  },
+  {
+    id: "module-12",
+    title: "بخش ۱۲: جشن‌ها و مراسم (Feste & Feiern)",
+    level: "A2",
+    lessons: [
+      {
+        id: "A2-M12-L11",
+        title: "دعوت‌نامه‌ها (Einladungen)",
+        description: "نوشتن و پاسخ به دعوت‌نامه.",
+        path: "/learn/de-fa/A2/lesson-11"
+      },
+      {
+        id: "A2-M12-L12",
+        title: "جشن‌های آلمانی (Deutsche Feste)",
+        description: "آشنایی با جشن‌ها و سنت‌های آلمانی.",
+        path: "/learn/de-fa/A2/lesson-12"
+      }
+    ]
+  }
+];

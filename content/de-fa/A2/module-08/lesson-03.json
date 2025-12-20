@@ -1,0 +1,250 @@
+{
+  "id": "A2-1-M08-L03",
+  "title": {
+    "de": "Mein Beruf",
+    "fa": "شغل من"
+  },
+  "level": "A2-1",
+  "module": 8,
+  "lessonNumber": 3,
+  "estimatedMinutes": 18,
+  "steps": [
+    {
+      "type": "dialog",
+      "id": "s1",
+      "title": "Auf einer Party",
+      "lines": [
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Und was machst du beruflich?",
+            "fa": "و شغلت چیه؟"
+          }
+        },
+        {
+          "speaker": "Sara",
+          "text": {
+            "de": "Ich bin Ingenieurin. Ich arbeite seit drei Jahren bei Siemens.",
+            "fa": "من مهندس هستم. سه ساله که در زیمنس کار می‌کنم."
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Interessant! Gefällt dir die Arbeit?",
+            "fa": "جالبه! از کارت راضی هستی؟"
+          }
+        },
+        {
+          "speaker": "Sara",
+          "text": {
+            "de": "Ja, sehr! Meine Kollegen sind nett und das Gehalt ist gut.",
+            "fa": "بله، خیلی! همکارانم مهربانند و حقوقم خوبه."
+          }
+        }
+      ],
+      "feedback": {
+        "explanation": "در این مکالمه یاد می‌گیریم چگونه درباره شغل و کار صحبت کنیم."
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": {
+        "de": "der Beruf",
+        "fa": "شغل / حرفه"
+      },
+      "phonetic": "be-ROOF",
+      "wordType": "noun",
+      "gender": "maskulin",
+      "example": {
+        "text": {
+          "de": "Was ist dein Beruf?",
+          "fa": "شغلت چیه؟"
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": {
+        "de": "der/die Ingenieur/in",
+        "fa": "مهندس"
+      },
+      "phonetic": "in-zhen-YÖR",
+      "wordType": "noun",
+      "example": {
+        "text": {
+          "de": "Er ist Ingenieur bei BMW.",
+          "fa": "او مهندس در BMW است."
+        }
+      },
+      "note": {
+        "fa": "مذکر: der Ingenieur / مونث: die Ingenieurin"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": {
+        "de": "der/die Arzt/Ärztin",
+        "fa": "پزشک / دکتر"
+      },
+      "phonetic": "artst / ERTS-tin",
+      "wordType": "noun",
+      "example": {
+        "text": {
+          "de": "Meine Schwester ist Ärztin.",
+          "fa": "خواهرم پزشک است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": {
+        "de": "der/die Lehrer/in",
+        "fa": "معلم"
+      },
+      "phonetic": "LAY-rer",
+      "wordType": "noun",
+      "example": {
+        "text": {
+          "de": "Ich bin Lehrerin an einer Grundschule.",
+          "fa": "من معلم در یک دبستان هستم."
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s6",
+      "title": "seit + Dativ برای مدت زمان",
+      "content": "**seit** برای بیان مدت زمان تا الان استفاده می‌شود:\n\n**ساختار:** seit + Dativ\n\n| زمان | مثال |\n|---|---|\n| seit einem Jahr | از یک سال پیش |\n| seit zwei Monaten | از دو ماه پیش |\n| seit drei Wochen | از سه هفته پیش |\n| seit 2020 | از سال ۲۰۲۰ |\n\n⚠️ **توجه:** با seit از زمان حال استفاده می‌کنیم!\n• Ich arbeite seit 2020 hier. ✓\n• Ich habe seit 2020 hier gearbeitet. ✗",
+      "examples": [
+        {
+          "de": "Ich lerne seit einem Jahr Deutsch.",
+          "fa": "یک ساله که آلمانی یاد می‌گیرم."
+        },
+        {
+          "de": "Sie wohnt seit Mai in Berlin.",
+          "fa": "از ماه مه در برلین زندگی می‌کند."
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s7",
+      "question": "Ich arbeite _____ fünf Jahren bei der Firma.",
+      "options": ["seit", "vor", "nach", "in"],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "explanation": "seit برای مدت زمان تا الان: seit fünf Jahren"
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s8",
+      "instruction": "جمله را کامل کنید:",
+      "sentence": "Maria ist {0}. Sie arbeitet {1} zwei Jahren im Krankenhaus.",
+      "options": ["Ärztin", "Arzt", "Arztin", "seit", "vor", "nach"],
+      "correctAnswers": [0, 3],
+      "feedback": {
+        "explanation": "Maria = مونث → Ärztin. مدت زمان با seit"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": {
+        "de": "das Gehalt",
+        "fa": "حقوق (ماهانه)"
+      },
+      "phonetic": "ge-HALT",
+      "wordType": "noun",
+      "gender": "neutral",
+      "example": {
+        "text": {
+          "de": "Das Gehalt ist gut.",
+          "fa": "حقوق خوب است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": {
+        "de": "der/die Kollege/Kollegin",
+        "fa": "همکار"
+      },
+      "phonetic": "ko-LAY-ge",
+      "wordType": "noun",
+      "example": {
+        "text": {
+          "de": "Meine Kollegen sind sehr freundlich.",
+          "fa": "همکارانم خیلی صمیمی هستند."
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s11",
+      "title": "💡 نکته فرهنگی: فرهنگ کار در آلمان",
+      "content": "محیط کار آلمانی:\n\n⏰ **ساعات کار:**\n• معمولاً ۳۸-۴۰ ساعت در هفته\n• اضافه‌کاری کمتر از ایران!\n• Work-life balance مهم است\n\n🤝 **روابط:**\n• با رئیس: Sie (رسمی)\n• با همکاران: معمولاً du (غیررسمی)\n• Duzen (تو خطاب کردن) باید پیشنهاد شود\n\n📝 **Ausbildung:**\n• سیستم کارآموزی حرفه‌ای\n• یادگیری عملی همراه با نظری",
+      "examples": [
+        {
+          "de": "Wir können uns duzen.",
+          "fa": "می‌توانیم همدیگر را تو خطاب کنیم."
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s12",
+      "question": "Was machst du _____?",
+      "options": ["beruflich", "Beruf", "berufen", "berufliche"],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "explanation": "beruflich = از نظر شغلی. سوال معمول درباره شغل."
+      }
+    },
+    {
+      "type": "word-order",
+      "id": "s13",
+      "instruction": "کلمات را مرتب کنید:",
+      "words": ["Jahren", "arbeite", "hier", "Ich", "seit", "drei"],
+      "correctOrder": [3, 1, 4, 5, 0, 2],
+      "correctSentence": {
+        "de": "Ich arbeite seit drei Jahren hier",
+        "fa": "سه ساله که اینجا کار می‌کنم"
+      },
+      "feedback": {
+        "explanation": "ساختار: Subject + Verb + seit + زمان + ..."
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "s14",
+      "statement": "Mit 'seit' benutzt man das Perfekt.",
+      "statementExplanation": "با seit از Perfekt استفاده می‌شود.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! با seit از زمان حال استفاده می‌شود: Ich arbeite seit... (نه: Ich habe gearbeitet seit...)"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "s15",
+      "sourceText": "من دو ساله که در برلین زندگی می‌کنم.",
+      "sentenceTemplate": "Ich {0} {1} zwei Jahren in Berlin.",
+      "options": ["wohne", "wohnt", "seit", "vor", "gewohnt"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": {
+        "de": "Ich wohne seit zwei Jahren in Berlin.",
+        "fa": "من دو ساله که در برلین زندگی می‌کنم."
+      },
+      "feedback": {
+        "explanation": "seit + زمان حال: Ich wohne seit..."
+      }
+    }
+  ]
+}

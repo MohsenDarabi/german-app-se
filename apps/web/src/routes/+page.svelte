@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { A1_MODULES } from "$lib/data/modules";
+  import { A1_MODULES, A2_MODULES } from "$lib/data/modules";
   import { onMount } from "svelte";
   import { db } from "$lib/db";
   import { liveQuery } from "dexie";
@@ -63,7 +63,7 @@
 <div class="dashboard" dir="rtl">
   <header class="header">
     <h1>مسیر یادگیری شما</h1>
-    <p class="subtitle">آلمانی سطح A1</p>
+    <p class="subtitle">آلمانی سطح A1 و A2</p>
 
     <!-- Stats Header -->
     {#if $user || $completedCount}
@@ -99,44 +99,93 @@
     {/if}
   </header>
 
-  <div class="timeline">
-    {#key $progressMap}
-      {#each A1_MODULES as module, moduleIndex}
-        <div class="module-section">
-          <h2 class="module-title">{module.title}</h2>
+  <!-- A1 Level -->
+  <div class="level-section">
+    <h2 class="level-title">🇩🇪 سطح A1 - مبتدی</h2>
+    <div class="timeline">
+      {#key $progressMap}
+        {#each A1_MODULES as module, moduleIndex}
+          <div class="module-section">
+            <h3 class="module-title">{module.title}</h3>
 
-          <div class="lessons-list">
-            {#each module.lessons as lesson, lessonIndex}
-              {@const globalIndex = A1_MODULES.slice(0, moduleIndex).reduce((sum, m) => sum + m.lessons.length, 0) + lessonIndex}
-              {@const status = getLessonStatus(lesson.id, globalIndex)}
-              {@const progress = $progressMap?.get(lesson.id)}
-              {@const isLocked = status === 'locked'}
+            <div class="lessons-list">
+              {#each module.lessons as lesson, lessonIndex}
+                {@const globalIndex = A1_MODULES.slice(0, moduleIndex).reduce((sum, m) => sum + m.lessons.length, 0) + lessonIndex}
+                {@const status = getLessonStatus(lesson.id, globalIndex)}
+                {@const progress = $progressMap?.get(lesson.id)}
+                {@const isLocked = status === 'locked'}
 
-            <div class="lesson-card" class:locked={isLocked}>
-              <div class="icon" class:completed={status === 'completed'} class:in-progress={status === 'in-progress'}>
-                {getIcon(status)}
+              <div class="lesson-card" class:locked={isLocked}>
+                <div class="icon" class:completed={status === 'completed'} class:in-progress={status === 'in-progress'}>
+                  {getIcon(status)}
+                </div>
+                <div class="info">
+                  <h3>{lesson.title}</h3>
+                  <p>{lesson.description}</p>
+                </div>
+                <div class="action">
+                  {#if isLocked}
+                    <button class="start-btn locked-btn" disabled>
+                      {getButtonText(status, progress)}
+                    </button>
+                  {:else}
+                    <a href={lesson.path} class="start-btn" class:completed={status === 'completed'}>
+                      {getButtonText(status, progress)}
+                    </a>
+                  {/if}
+                </div>
               </div>
-              <div class="info">
-                <h3>{lesson.title}</h3>
-                <p>{lesson.description}</p>
-              </div>
-              <div class="action">
-                {#if isLocked}
-                  <button class="start-btn locked-btn" disabled>
-                    {getButtonText(status, progress)}
-                  </button>
-                {:else}
-                  <a href={lesson.path} class="start-btn" class:completed={status === 'completed'}>
-                    {getButtonText(status, progress)}
-                  </a>
-                {/if}
-              </div>
+              {/each}
             </div>
-            {/each}
           </div>
-        </div>
-      {/each}
-    {/key}
+        {/each}
+      {/key}
+    </div>
+  </div>
+
+  <!-- A2 Level -->
+  <div class="level-section">
+    <h2 class="level-title">🇩🇪 سطح A2 - مقدماتی</h2>
+    <div class="timeline">
+      {#key $progressMap}
+        {#each A2_MODULES as module, moduleIndex}
+          <div class="module-section">
+            <h3 class="module-title">{module.title}</h3>
+
+            <div class="lessons-list">
+              {#each module.lessons as lesson, lessonIndex}
+                {@const a1TotalLessons = A1_MODULES.reduce((sum, m) => sum + m.lessons.length, 0)}
+                {@const globalIndex = a1TotalLessons + A2_MODULES.slice(0, moduleIndex).reduce((sum, m) => sum + m.lessons.length, 0) + lessonIndex}
+                {@const status = getLessonStatus(lesson.id, globalIndex)}
+                {@const progress = $progressMap?.get(lesson.id)}
+                {@const isLocked = status === 'locked'}
+
+              <div class="lesson-card" class:locked={isLocked}>
+                <div class="icon" class:completed={status === 'completed'} class:in-progress={status === 'in-progress'}>
+                  {getIcon(status)}
+                </div>
+                <div class="info">
+                  <h3>{lesson.title}</h3>
+                  <p>{lesson.description}</p>
+                </div>
+                <div class="action">
+                  {#if isLocked}
+                    <button class="start-btn locked-btn" disabled>
+                      {getButtonText(status, progress)}
+                    </button>
+                  {:else}
+                    <a href={lesson.path} class="start-btn" class:completed={status === 'completed'}>
+                      {getButtonText(status, progress)}
+                    </a>
+                  {/if}
+                </div>
+              </div>
+              {/each}
+            </div>
+          </div>
+        {/each}
+      {/key}
+    </div>
   </div>
 </div>
 
@@ -216,6 +265,21 @@
   .review-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(59, 130, 246, 0.4);
+  }
+
+  .level-section {
+    margin-bottom: 3rem;
+  }
+
+  .level-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #1e293b;
+    margin-bottom: 1.5rem;
+    padding: 0.75rem 1rem;
+    background: linear-gradient(135deg, #eff6ff 0%, #f0fdf4 100%);
+    border-radius: 0.75rem;
+    border-right: 4px solid #3b82f6;
   }
 
   .timeline {
