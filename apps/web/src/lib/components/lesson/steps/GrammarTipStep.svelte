@@ -1,6 +1,15 @@
 <script lang="ts">
   import type { GrammarTipStep } from "$lib/content-model";
+  import VocabPillList from "$lib/components/shared/VocabPillList.svelte";
+
   export let step: GrammarTipStep;
+
+  // Check if content contains vocab pairs pattern (e.g., "vier (۴)، fünf (۵)")
+  function hasVocabPairs(text: string): boolean {
+    return /[a-zA-ZäöüßÄÖÜẞ]+\s*\([^)]+\)[،,]/.test(text);
+  }
+
+  $: isVocabList = hasVocabPairs(step.content);
 </script>
 
 <div class="grammar-card">
@@ -8,7 +17,12 @@
     <span class="bulb-icon">💡</span>
     <h2 class="step-title">{step.title || 'نکته گرامری'}</h2>
   </div>
-  <p class="grammar-text">{step.content}</p>
+
+  {#if isVocabList}
+    <VocabPillList text={step.content} variant="warning" />
+  {:else}
+    <p class="grammar-text">{step.content}</p>
+  {/if}
 
   {#if step.examples && step.examples.length > 0}
     <div class="examples-section">
