@@ -8,9 +8,14 @@
 
   // Parse sentence into parts with blanks
   $: parts = step.sentence.split(/(\{[0-9]+\})/g);
-  $: blankCount = step.correctAnswers.length;
+  $: blankCount = step.correctAnswers?.length || 0;
 
-  let selectedAnswers: (number | null)[] = Array(blankCount).fill(null);
+  // Initialize selectedAnswers reactively based on blankCount
+  let selectedAnswers: (number | null)[] = [];
+  $: if (blankCount > 0 && selectedAnswers.length !== blankCount) {
+    selectedAnswers = Array(blankCount).fill(null);
+  }
+
   let isAnswered = false;
   let isCorrect = false;
   let canRetry = false;
@@ -60,7 +65,7 @@
       {#if part.match(/\{[0-9]+\}/)}
         {@const blankIdx = getBlankIndex(part)}
         <span class="blank-wrapper">
-          {#if selectedAnswers[blankIdx] !== null}
+          {#if blankIdx >= 0 && blankIdx < selectedAnswers.length && selectedAnswers[blankIdx] !== null && step.options[selectedAnswers[blankIdx]] !== undefined}
             <span
               class="filled-blank"
               class:correct={isAnswered && selectedAnswers[blankIdx] === step.correctAnswers[blankIdx]}
