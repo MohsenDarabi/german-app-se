@@ -1,26 +1,57 @@
 {
-  "id": "A1-M02-L04",
+  "id": "A1-1-M02-L04",
   "title": {
-    "de": "Familienmitglieder",
-    "fa": "اعضای خانواده"
+    "de": "Meine Familie",
+    "fa": "خانواده من"
   },
-  "level": "A1",
+  "level": "A1-1",
   "module": 2,
   "lessonNumber": 4,
-  "estimatedMinutes": 15,
+  "estimatedMinutes": 18,
   "steps": [
     {
-      "type": "new-word",
+      "type": "dialog",
       "id": "s1",
-      "word": {
-        "de": "der Vater",
-        "fa": "پدر"
-      },
-      "example": {
-        "text": {
-          "de": "Mein Vater heißt Thomas.",
-          "fa": "اسم پدرم توماس است."
+      "title": "Familienfotos",
+      "lines": [
+        {
+          "speaker": "Anna",
+          "text": {
+            "de": "Schau mal, das ist meine Familie!",
+            "fa": "ببین، این خانواده من است!"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Oh, wer ist das?",
+            "fa": "اوه، این کیه؟"
+          }
+        },
+        {
+          "speaker": "Anna",
+          "text": {
+            "de": "Das ist meine Mutter. Sie heißt Maria. Und das ist mein Vater. Er heißt Peter.",
+            "fa": "این مادرم است. اسمش ماریا است. و این پدرم است. اسمش پیتر است."
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Hast du Geschwister?",
+            "fa": "خواهر و برادر داری؟"
+          }
+        },
+        {
+          "speaker": "Anna",
+          "text": {
+            "de": "Ja, ich habe einen Bruder. Er heißt Max.",
+            "fa": "بله، یک برادر دارم. اسمش ماکس است."
+          }
         }
+      ],
+      "feedback": {
+        "explanation": "در این مکالمه یاد می‌گیریم چگونه اعضای خانواده را معرفی کنیم و از ضمایر ملکی mein/meine استفاده کنیم."
       }
     },
     {
@@ -30,6 +61,8 @@
         "de": "die Mutter",
         "fa": "مادر"
       },
+      "phonetic": "MOO-ter",
+      "wordType": "noun",
       "example": {
         "text": {
           "de": "Meine Mutter ist Lehrerin.",
@@ -41,13 +74,15 @@
       "type": "new-word",
       "id": "s3",
       "word": {
-        "de": "der Bruder",
-        "fa": "برادر"
+        "de": "der Vater",
+        "fa": "پدر"
       },
+      "phonetic": "FAH-ter",
+      "wordType": "noun",
       "example": {
         "text": {
-          "de": "Ich habe einen Bruder.",
-          "fa": "من یک برادر دارم."
+          "de": "Mein Vater kommt aus Iran.",
+          "fa": "پدرم اهل ایران است."
         }
       }
     },
@@ -55,77 +90,202 @@
       "type": "new-word",
       "id": "s4",
       "word": {
-        "de": "die Schwester",
-        "fa": "خواهر"
+        "de": "der Bruder",
+        "fa": "برادر"
       },
+      "phonetic": "BROO-der",
+      "wordType": "noun",
       "example": {
         "text": {
-          "de": "Meine Schwester ist zehn Jahre alt.",
-          "fa": "خواهرم ده سال دارد."
+          "de": "Mein Bruder ist 25 Jahre alt.",
+          "fa": "برادرم ۲۵ ساله است."
         }
       }
     },
     {
-      "type": "multiple-choice",
+      "type": "new-word",
       "id": "s5",
-      "question": "کلمه 'die Mutter' یعنی چه؟",
-      "options": ["پدر", "مادر", "خواهر"],
-      "correctAnswerIndex": 1,
-      "feedback": {
-        "explanation": "'die Mutter' به معنای مادر است."
+      "word": {
+        "de": "die Schwester",
+        "fa": "خواهر"
+      },
+      "phonetic": "SHVES-ter",
+      "wordType": "noun",
+      "example": {
+        "text": {
+          "de": "Ich habe zwei Schwestern.",
+          "fa": "من دو خواهر دارم."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": {
+        "de": "die Großmutter / die Oma",
+        "fa": "مادربزرگ"
+      },
+      "phonetic": "GROHS-moo-ter / OH-ma",
+      "wordType": "noun",
+      "example": {
+        "text": {
+          "de": "Meine Oma wohnt in Wien.",
+          "fa": "مادربزرگم در وین زندگی می‌کند."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": {
+        "de": "der Großvater / der Opa",
+        "fa": "پدربزرگ"
+      },
+      "phonetic": "GROHS-fah-ter / OH-pa",
+      "wordType": "noun",
+      "example": {
+        "text": {
+          "de": "Mein Opa ist 80 Jahre alt.",
+          "fa": "پدربزرگم ۸۰ ساله است."
+        }
       }
     },
     {
       "type": "grammar-tip",
-      "id": "s6",
-      "title": "ضمایر ملکی",
-      "content": "برای گفتن 'من' از mein (برای مذکر/خنثی) و meine (برای مؤنث) استفاده می‌کنیم.",
+      "id": "s8",
+      "title": "ضمایر ملکی: mein / dein",
+      "content": "ضمایر ملکی نشان می‌دهند چیزی متعلق به کیست:\n\n**mein** = مال من\n**dein** = مال تو\n\n**قاعده:** با اسم‌های مذکر و خنثی: **mein/dein**\nبا اسم‌های مونث: **meine/deine**\n\n| | مذکر (der) | مونث (die) | خنثی (das) |\n|---|---|---|---|\n| من | mein Vater | meine Mutter | mein Kind |\n| تو | dein Vater | deine Mutter | dein Kind |",
       "examples": [
         {
-          "de": "mein Vater (پدرم)",
-          "fa": "مذکر"
+          "de": "Das ist mein Bruder.",
+          "fa": "این برادرم است."
         },
         {
-          "de": "meine Mutter (مادرم)",
-          "fa": "مؤنث"
-        }
-      ]
-    },
-    {
-      "type": "dialog",
-      "id": "s7",
-      "lines": [
-        {
-          "speaker": "Maria",
-          "text": {
-            "de": "Das ist mein Bruder, Max.",
-            "fa": "این برادر من، مکس است."
-          }
-        },
-        {
-          "speaker": "Julia",
-          "text": {
-            "de": "Hallo Max! Und wer ist das?",
-            "fa": "سلام مکس! و این کیست؟"
-          }
-        },
-        {
-          "speaker": "Maria",
-          "text": {
-            "de": "Das ist meine Mutter.",
-            "fa": "این مادر من است."
-          }
+          "de": "Das ist meine Schwester.",
+          "fa": "این خواهرم است."
         }
       ]
     },
     {
       "type": "multiple-choice",
-      "id": "s8",
-      "question": "چطور 'برادرم' به آلمانی می‌گوییم؟",
-      "options": ["meine Bruder", "mein Bruder", "der Bruder"],
-      "correctAnswerIndex": 1,
+      "id": "s9",
+      "question": "Das ist _____ Mutter. (مادرم)",
+      "options": [
+        "meine",
+        "mein",
+        "meinen",
+        "meiner"
+      ],
+      "correctAnswerIndex": 0,
       "feedback": {
-        "explanation": "Bruder مذکر است، پس از 'mein' استفاده می‌کنیم."
+        "explanation": "آفرین! Mutter مونث (die) است، پس meine استفاده می‌شود. Mutter مونث است (die Mutter)، پس باید meine باشد."
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s10",
+      "instruction": "با mein یا meine کامل کنید:",
+      "sentence": "Das ist {0} Vater und das ist {1} Schwester.",
+      "feedback": {
+        "explanation": "Vater مذکر (der) است → mein. Schwester مونث (die) است → meine."
+      },
+      "options": [
+        "mein",
+        "meine"
+      ],
+      "correctAnswers": [
+        0,
+        1
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s11",
+      "word": {
+        "de": "verheiratet",
+        "fa": "متأهل"
+      },
+      "phonetic": "fer-HAY-ra-tet",
+      "wordType": "adjective",
+      "example": {
+        "text": {
+          "de": "Meine Eltern sind verheiratet.",
+          "fa": "والدینم متأهل هستند."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s12",
+      "word": {
+        "de": "ledig",
+        "fa": "مجرد"
+      },
+      "phonetic": "LAY-dikh",
+      "wordType": "adjective",
+      "example": {
+        "text": {
+          "de": "Ich bin ledig.",
+          "fa": "من مجرد هستم."
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s13",
+      "title": "💡 نکته فرهنگی: خانواده در آلمان",
+      "content": "ساختار خانواده در آلمان:\n\n👨‍👩‍👧‍👦 خانواده‌های کوچک‌تر از ایران (معمولاً ۱-۲ فرزند)\n\n💑 **Patchwork-Familie**: خانواده‌های ترکیبی (با ناپدری/نامادری) رایج است\n\n🏠 فرزندان معمولاً بعد از ۱۸ سالگی از خانه می‌روند\n\n👵 پدربزرگ و مادربزرگ معمولاً جدا زندگی می‌کنند\n\n📛 آلمانی‌ها معمولاً از اسم کوچک (حتی برای خانواده همسر) استفاده می‌کنند",
+      "examples": [
+        {
+          "de": "Meine Eltern sind geschieden.",
+          "fa": "والدینم طلاق گرفته‌اند."
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s14",
+      "question": "Das ist _____ Bruder. (برادرم)",
+      "options": [
+        "mein",
+        "meine",
+        "meinen",
+        "meiner"
+      ],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "explanation": "درست! Bruder مذکر (der) است، پس mein استفاده می‌شود. Bruder مذکر است (der Bruder)، پس باید mein باشد."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "s15",
+      "sourceText": "این مادرم است. اسمش سارا است.",
+      "feedback": {
+        "explanation": "Das ist meine Mutter. Sie heißt Sara."
+      },
+      "sentenceTemplate": "{0} {1} {2} {3} {4} {5} {6}",
+      "options": [
+        "Das",
+        "ist",
+        "meine",
+        "Mutter.",
+        "Sie",
+        "heißt",
+        "Sara."
+      ],
+      "correctAnswers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "correctTranslation": {
+        "de": "Das ist meine Mutter. Sie heißt Sara.",
+        "fa": "این مادرم است. اسمش سارا است."
       }
     }
   ]

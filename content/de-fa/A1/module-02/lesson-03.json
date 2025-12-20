@@ -1,0 +1,293 @@
+{
+  "id": "A1-1-M02-L03",
+  "title": {
+    "de": "Ich bin Ingenieur",
+    "fa": "من مهندس هستم"
+  },
+  "level": "A1-1",
+  "module": 2,
+  "lessonNumber": 3,
+  "estimatedMinutes": 18,
+  "steps": [
+    {
+      "type": "dialog",
+      "id": "s1",
+      "title": "Beim Networking",
+      "lines": [
+        {
+          "speaker": "Herr Müller",
+          "text": {
+            "de": "Guten Tag! Mein Name ist Müller. Ich bin Ingenieur. Und Sie?",
+            "fa": "روز بخیر! اسم من مولر است. من مهندس هستم. و شما؟"
+          }
+        },
+        {
+          "speaker": "Frau Ahmadi",
+          "text": {
+            "de": "Freut mich! Ich heiße Ahmadi. Ich bin Ärztin.",
+            "fa": "خوشوقتم! اسم من احمدی است. من پزشک هستم."
+          }
+        },
+        {
+          "speaker": "Herr Müller",
+          "text": {
+            "de": "Ärztin? Interessant! Wo arbeiten Sie?",
+            "fa": "پزشک؟ جالب است! کجا کار می‌کنید؟"
+          }
+        },
+        {
+          "speaker": "Frau Ahmadi",
+          "text": {
+            "de": "Ich arbeite im Krankenhaus.",
+            "fa": "من در بیمارستان کار می‌کنم."
+          }
+        }
+      ],
+      "feedback": {
+        "explanation": "در این مکالمه یاد می‌گیریم چگونه درباره شغل صحبت کنیم. توجه کنید که Ärztin (مونث) برای خانم‌ها استفاده می‌شود."
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": {
+        "de": "der Arzt / die Ärztin",
+        "fa": "پزشک (مرد / زن)"
+      },
+      "phonetic": "artst / ÄR-tstin",
+      "wordType": "noun",
+      "example": {
+        "text": {
+          "de": "Mein Vater ist Arzt.",
+          "fa": "پدرم پزشک است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": {
+        "de": "der Lehrer / die Lehrerin",
+        "fa": "معلم (مرد / زن)"
+      },
+      "phonetic": "LAY-rer / LAY-re-rin",
+      "wordType": "noun",
+      "example": {
+        "text": {
+          "de": "Sie ist Lehrerin.",
+          "fa": "او معلم است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": {
+        "de": "der Ingenieur / die Ingenieurin",
+        "fa": "مهندس (مرد / زن)"
+      },
+      "phonetic": "in-zhe-ni-ÖR / in-zhe-ni-Ö-rin",
+      "wordType": "noun",
+      "example": {
+        "text": {
+          "de": "Ich bin Ingenieur bei BMW.",
+          "fa": "من مهندس در BMW هستم."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": {
+        "de": "der Student / die Studentin",
+        "fa": "دانشجو (مرد / زن)"
+      },
+      "phonetic": "shtoo-DENT / shtoo-DEN-tin",
+      "wordType": "noun",
+      "example": {
+        "text": {
+          "de": "Ich bin Student. Ich studiere Informatik.",
+          "fa": "من دانشجو هستم. کامپیوتر می‌خوانم."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": {
+        "de": "arbeiten",
+        "fa": "کار کردن"
+      },
+      "phonetic": "AR-bay-ten",
+      "wordType": "verb",
+      "example": {
+        "text": {
+          "de": "Wo arbeitest du?",
+          "fa": "کجا کار می‌کنی؟"
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "پسوند -in برای مشاغل زنانه",
+      "content": "در آلمانی، اکثر مشاغل دو شکل دارند:\n\n• مرد: **Arzt** → زن: **Ärztin**\n• مرد: **Lehrer** → زن: **Lehrerin**\n• مرد: **Student** → زن: **Studentin**\n• مرد: **Ingenieur** → زن: **Ingenieurin**\n\n**قاعده:** شکل زنانه = شکل مردانه + **-in**\n\n⚠️ گاهی اوملاوت هم اضافه می‌شود: Arzt → Ärztin",
+      "examples": [
+        {
+          "de": "Er ist Lehrer. Sie ist Lehrerin.",
+          "fa": "او (مرد) معلم است. او (زن) معلم است."
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s8",
+      "question": "شکل مونث Ingenieur چیست؟",
+      "options": [
+        "Ingenieurin",
+        "Ingenieuren",
+        "Ingenieuran",
+        "Ingenieure"
+      ],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "explanation": "آفرین! پسوند -in برای شکل مونث اضافه می‌شود. شکل مونث با پسوند -in ساخته می‌شود: Ingenieurin"
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "فعل arbeiten (کار کردن)",
+      "content": "فعل arbeiten یک فعل منظم است:\n\n• ich **arbeite** = من کار می‌کنم\n• du **arbeitest** = تو کار می‌کنی\n• er/sie **arbeitet** = او کار می‌کند\n• wir **arbeiten** = ما کار می‌کنیم\n• ihr **arbeitet** = شما کار می‌کنید\n• sie/Sie **arbeiten** = آنها/شما کار می‌کنند",
+      "examples": [
+        {
+          "de": "Ich arbeite bei Siemens.",
+          "fa": "من در زیمنس کار می‌کنم."
+        },
+        {
+          "de": "Arbeitest du auch hier?",
+          "fa": "تو هم اینجا کار می‌کنی؟"
+        }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s10",
+      "instruction": "جمله را کامل کنید:",
+      "sentence": "Meine Schwester {0} Ärztin. Sie {1} im Krankenhaus.",
+      "feedback": {
+        "explanation": "با sie (او - مونث) از ist و arbeitet استفاده می‌کنیم."
+      },
+      "options": [
+        "ist",
+        "sind",
+        "bist",
+        "arbeitet",
+        "arbeite",
+        "arbeiten"
+      ],
+      "correctAnswers": [
+        0,
+        3
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s11",
+      "word": {
+        "de": "der Programmierer / die Programmiererin",
+        "fa": "برنامه‌نویس (مرد / زن)"
+      },
+      "phonetic": "pro-gra-MEE-rer",
+      "wordType": "noun",
+      "example": {
+        "text": {
+          "de": "Ich bin Programmierer. Ich arbeite bei Google.",
+          "fa": "من برنامه‌نویس هستم. در گوگل کار می‌کنم."
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s12",
+      "title": "💡 نکته فرهنگی: شغل‌ها در آلمان",
+      "content": "در آلمان، سوال درباره شغل رایج است:\n\n**Was sind Sie von Beruf?** (رسمی)\nیا **Was machst du beruflich?** (غیررسمی)\n\n🎓 آلمان سیستم Ausbildung (کارآموزی) دارد که بسیاری از مشاغل فنی نیاز به این دوره دارند.\n\n💼 برای ایرانیان: رشته‌های IT، مهندسی و پزشکی در آلمان بسیار تقاضا دارند!",
+      "examples": [
+        {
+          "de": "Was sind Sie von Beruf?",
+          "fa": "شغلتان چیست؟"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s13",
+      "question": "Ich _____ bei BMW.",
+      "options": [
+        "arbeite",
+        "arbeitest",
+        "arbeitet",
+        "arbeiten"
+      ],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "explanation": "درست! با ich از arbeite استفاده می‌کنیم. با ich از arbeite استفاده می‌کنیم."
+      }
+    },
+    {
+      "type": "word-order",
+      "id": "s14",
+      "instruction": "کلمات را مرتب کنید:",
+      "words": [
+        "Ingenieur",
+        "bin",
+        "Ich"
+      ],
+      "correctOrder": [
+        2,
+        1,
+        0
+      ],
+      "correctSentence": {
+        "de": "Ich bin Ingenieur",
+        "fa": "من مهندس هستم"
+      },
+      "feedback": {
+        "explanation": "ترتیب: Subject (Ich) + Verb (bin) + Beruf (Ingenieur)"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "s15",
+      "sourceText": "او (زن) معلم است. در مدرسه کار می‌کند.",
+      "feedback": {
+        "explanation": "Sie ist Lehrerin. Sie arbeitet in der Schule."
+      },
+      "sentenceTemplate": "{0} {1} {2} {3} {4} {5} {6} {7}",
+      "options": [
+        "Sie",
+        "ist",
+        "Lehrerin.",
+        "Sie",
+        "arbeitet",
+        "in",
+        "der",
+        "Schule."
+      ],
+      "correctAnswers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "correctTranslation": {
+        "de": "Sie ist Lehrerin. Sie arbeitet in der Schule.",
+        "fa": "او (زن) معلم است. در مدرسه کار می‌کند."
+      }
+    }
+  ]
+}

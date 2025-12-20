@@ -1,39 +1,73 @@
 {
-  "id": "A1-M05-L10",
+  "id": "A1-2-M05-L10",
   "title": {
-    "de": "Hobbys und Freizeit",
-    "fa": "سرگرمی‌ها و اوقات فراغت"
+    "de": "Wege & Orte",
+    "fa": "مسیرها و مکان‌ها"
   },
-  "level": "A1",
+  "level": "A1-2",
   "module": 5,
   "lessonNumber": 10,
-  "estimatedMinutes": 13,
+  "estimatedMinutes": 18,
   "steps": [
     {
-      "type": "new-word",
+      "type": "dialog",
       "id": "s1",
-      "word": {
-        "de": "lesen",
-        "fa": "خواندن"
-      },
-      "example": {
-        "text": {
-          "de": "Ich lese gerne Bücher.",
-          "fa": "من کتاب خواندن را دوست دارم."
+      "title": "Nach dem Weg fragen",
+      "lines": [
+        {
+          "speaker": "Tourist",
+          "text": {
+            "de": "Entschuldigung, wo ist der Bahnhof?",
+            "fa": "ببخشید، ایستگاه قطار کجاست؟"
+          }
+        },
+        {
+          "speaker": "Passant",
+          "text": {
+            "de": "Gehen Sie geradeaus und dann links. Der Bahnhof ist neben der Post.",
+            "fa": "مستقیم بروید و بعد بپیچید چپ. ایستگاه قطار کنار پست است."
+          }
+        },
+        {
+          "speaker": "Tourist",
+          "text": {
+            "de": "Ist das weit?",
+            "fa": "دور است؟"
+          }
+        },
+        {
+          "speaker": "Passant",
+          "text": {
+            "de": "Nein, nur fünf Minuten zu Fuß.",
+            "fa": "نه، فقط پنج دقیقه پیاده."
+          }
+        },
+        {
+          "speaker": "Tourist",
+          "text": {
+            "de": "Vielen Dank!",
+            "fa": "خیلی ممنون!"
+          }
         }
+      ],
+      "feedback": {
+        "explanation": "در این مکالمه یاد می‌گیریم چگونه آدرس بپرسیم و راهنمایی کنیم."
       }
     },
     {
       "type": "new-word",
       "id": "s2",
       "word": {
-        "de": "spielen",
-        "fa": "بازی کردن"
+        "de": "der Bahnhof",
+        "fa": "ایستگاه قطار"
       },
+      "phonetic": "BAHN-hof",
+      "wordType": "noun",
+      "gender": "maskulin",
       "example": {
         "text": {
-          "de": "Ich spiele Fußball.",
-          "fa": "من فوتبال بازی می‌کنم."
+          "de": "Der Bahnhof ist in der Stadtmitte.",
+          "fa": "ایستگاه قطار در مرکز شهر است."
         }
       }
     },
@@ -41,77 +75,225 @@
       "type": "new-word",
       "id": "s3",
       "word": {
-        "de": "Musik hören",
-        "fa": "موسیقی گوش دادن"
+        "de": "die Post",
+        "fa": "پست / اداره پست"
       },
+      "phonetic": "post",
+      "wordType": "noun",
+      "gender": "feminin",
       "example": {
         "text": {
-          "de": "Ich höre gerne Musik.",
-          "fa": "من موسیقی گوش دادن را دوست دارم."
+          "de": "Die Post ist gegenüber dem Supermarkt.",
+          "fa": "پست روبروی سوپرمارکت است."
         }
       }
     },
     {
-      "type": "multiple-choice",
+      "type": "new-word",
       "id": "s4",
-      "question": "کلمه 'lesen' یعنی چه؟",
-      "options": ["نوشتن", "خواندن", "دویدن"],
-      "correctAnswerIndex": 1,
-      "feedback": {
-        "explanation": "'lesen' به معنای خواندن است"
+      "word": {
+        "de": "die Apotheke",
+        "fa": "داروخانه"
+      },
+      "phonetic": "a-po-TAY-ke",
+      "wordType": "noun",
+      "gender": "feminin",
+      "example": {
+        "text": {
+          "de": "Die Apotheke ist neben der Bäckerei.",
+          "fa": "داروخانه کنار نانوایی است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": {
+        "de": "das Krankenhaus",
+        "fa": "بیمارستان"
+      },
+      "phonetic": "KRAN-ken-hows",
+      "wordType": "noun",
+      "gender": "neutral",
+      "example": {
+        "text": {
+          "de": "Das Krankenhaus ist weit von hier.",
+          "fa": "بیمارستان از اینجا دور است."
+        }
       }
     },
     {
       "type": "grammar-tip",
-      "id": "s5",
-      "title": "بیان علاقه با gern",
-      "content": "برای گفتن اینکه کاری را دوست داریم، از 'gern' یا 'gerne' بعد از فعل استفاده می‌کنیم.",
+      "id": "s6",
+      "title": "جهت‌ها",
+      "content": "**جهت‌های اصلی:**\n\n| آلمانی | فارسی |\n|---|---|\n| geradeaus | مستقیم |\n| links | چپ |\n| rechts | راست |\n| zurück | برگشت |\n\n**دستورات:**\n• Gehen Sie geradeaus! = مستقیم بروید!\n• Biegen Sie links ab! = بپیچید چپ!\n• Nehmen Sie die erste Straße rechts! = خیابان اول را بپیچید راست!",
       "examples": [
         {
-          "de": "Ich spiele gerne Fußball.",
-          "fa": "من فوتبال بازی کردن را دوست دارم."
-        },
-        {
-          "de": "Ich höre gern Musik.",
-          "fa": "من موسیقی گوش دادن را دوست دارم."
-        }
-      ]
-    },
-    {
-      "type": "dialog",
-      "id": "s6",
-      "lines": [
-        {
-          "speaker": "Julia",
-          "text": {
-            "de": "Was sind deine Hobbys?",
-            "fa": "سرگرمی‌های تو چیست؟"
-          }
-        },
-        {
-          "speaker": "Max",
-          "text": {
-            "de": "Ich spiele gerne Fußball und lese gern.",
-            "fa": "من فوتبال بازی کردن و خواندن را دوست دارم."
-          }
-        },
-        {
-          "speaker": "Julia",
-          "text": {
-            "de": "Ich höre gerne Musik.",
-            "fa": "من موسیقی گوش دادن را دوست دارم."
-          }
+          "de": "Gehen Sie geradeaus und dann rechts.",
+          "fa": "مستقیم بروید و بعد بپیچید راست."
         }
       ]
     },
     {
       "type": "multiple-choice",
       "id": "s7",
-      "question": "چطور بگوییم 'من شنا کردن را دوست دارم'؟",
-      "options": ["Ich schwimme gern", "Ich gern schwimme", "Ich schwimme"],
+      "question": "Gehen Sie _____ und dann links.",
+      "options": [
+        "geradeaus",
+        "links",
+        "neben",
+        "auf"
+      ],
       "correctAnswerIndex": 0,
       "feedback": {
-        "explanation": "'gern' بعد از فعل می‌آید: Ich schwimme gern"
+        "explanation": "آفرین! geradeaus یعنی مستقیم geradeaus = مستقیم"
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s8",
+      "title": "حروف اضافه مکان + Dativ",
+      "content": "وقتی می‌گویید چیزی **کجا** است (مکان ثابت)، از Dativ استفاده می‌شود:\n\n| حرف اضافه | معنی | مثال |\n|---|---|---|\n| in | در | in der Stadt |\n| an | کنار/روی | am Bahnhof |\n| auf | روی | auf der Straße |\n| neben | کنار | neben der Post |\n| vor | جلوی | vor dem Haus |\n| hinter | پشت | hinter dem Park |\n| zwischen | بین | zwischen A und B |\n| gegenüber | روبروی | gegenüber der Bank |\n\n**تغییرات Dativ:**\n• der → dem\n• die → der\n• das → dem",
+      "examples": [
+        {
+          "de": "Die Apotheke ist neben der Post.",
+          "fa": "داروخانه کنار پست است."
+        },
+        {
+          "de": "Das Café ist in der Stadtmitte.",
+          "fa": "کافه در مرکز شهر است."
+        }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s9",
+      "instruction": "با حرف اضافه مناسب کامل کنید:",
+      "sentence": "Der Supermarkt ist {0} der Apotheke.",
+      "feedback": {
+        "explanation": "neben + Dativ: neben der Apotheke (Apotheke مونث است)"
+      },
+      "options": [
+        "neben",
+        "neben der",
+        "neben die"
+      ],
+      "correctAnswers": [
+        0
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": {
+        "de": "die Straße",
+        "fa": "خیابان"
+      },
+      "phonetic": "SHTRA-se",
+      "wordType": "noun",
+      "gender": "feminin",
+      "example": {
+        "text": {
+          "de": "Die erste Straße rechts.",
+          "fa": "خیابان اول سمت راست."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s11",
+      "word": {
+        "de": "die Haltestelle",
+        "fa": "ایستگاه (اتوبوس/ترام)"
+      },
+      "phonetic": "HAL-te-shte-le",
+      "wordType": "noun",
+      "gender": "feminin",
+      "example": {
+        "text": {
+          "de": "Die Bushaltestelle ist vor dem Supermarkt.",
+          "fa": "ایستگاه اتوبوس جلوی سوپرمارکت است."
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s12",
+      "title": "💡 نکته فرهنگی: حمل و نقل عمومی در آلمان",
+      "content": "حمل و نقل عمومی عالی:\n\n🚇 **U-Bahn** = مترو (زیرزمینی)\n🚃 **S-Bahn** = قطار شهری\n🚋 **Straßenbahn/Tram** = تراموا\n🚌 **Bus** = اتوبوس\n\n🎫 **بلیط:**\n• Einzelfahrt = تک‌سفره\n• Tageskarte = روزانه\n• Monatskarte = ماهانه\n\n⚠️ **مهم:** بلیط را قبل از سوار شدن بخرید و در دستگاه مهر کنید!",
+      "examples": [
+        {
+          "de": "Wo ist die U-Bahn-Station?",
+          "fa": "ایستگاه مترو کجاست؟"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s13",
+      "question": "Das Café ist _____ Bank. (روبروی بانک)",
+      "options": [
+        "gegenüber der",
+        "gegenüber die",
+        "neben der",
+        "in der"
+      ],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "explanation": "درست! gegenüber + Dativ: gegenüber der Bank gegenüber + Dativ: Bank مونث است → der Bank"
+      }
+    },
+    {
+      "type": "word-order",
+      "id": "s14",
+      "instruction": "کلمات را مرتب کنید:",
+      "words": [
+        "ist",
+        "Bahnhof",
+        "Wo",
+        "der"
+      ],
+      "correctOrder": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "correctSentence": {
+        "de": "Wo ist der Bahnhof",
+        "fa": "ایستگاه قطار کجاست"
+      },
+      "feedback": {
+        "explanation": "سوال: Wo + ist + Subject"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "s15",
+      "sourceText": "داروخانه کنار بیمارستان است.",
+      "feedback": {
+        "explanation": "Die Apotheke ist neben dem Krankenhaus. (neben + Dativ: dem)"
+      },
+      "sentenceTemplate": "{0} {1} {2} {3} {4} {5}",
+      "options": [
+        "Die",
+        "Apotheke",
+        "ist",
+        "neben",
+        "dem",
+        "Krankenhaus."
+      ],
+      "correctAnswers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "correctTranslation": {
+        "de": "Die Apotheke ist neben dem Krankenhaus.",
+        "fa": "داروخانه کنار بیمارستان است."
       }
     }
   ]

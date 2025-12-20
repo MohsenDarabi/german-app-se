@@ -1,0 +1,309 @@
+{
+  "id": "A1-2-M05-L09",
+  "title": {
+    "de": "Mein Tag",
+    "fa": "روز من"
+  },
+  "level": "A1-2",
+  "module": 5,
+  "lessonNumber": 9,
+  "estimatedMinutes": 18,
+  "steps": [
+    {
+      "type": "dialog",
+      "id": "s1",
+      "title": "Tagesablauf",
+      "lines": [
+        {
+          "speaker": "Max",
+          "text": {
+            "de": "Wann stehst du morgens auf?",
+            "fa": "صبح‌ها کی بیدار می‌شوی؟"
+          }
+        },
+        {
+          "speaker": "Sara",
+          "text": {
+            "de": "Ich stehe um halb sieben auf. Und du?",
+            "fa": "ساعت شش و نیم بیدار می‌شوم. و تو؟"
+          }
+        },
+        {
+          "speaker": "Max",
+          "text": {
+            "de": "Ich stehe erst um acht auf. Ich fange um neun mit der Arbeit an.",
+            "fa": "من ساعت هشت بیدار می‌شوم. ساعت نه کارم شروع می‌شود."
+          }
+        },
+        {
+          "speaker": "Sara",
+          "text": {
+            "de": "Wann kommst du nach Hause?",
+            "fa": "کی به خانه می‌آیی؟"
+          }
+        },
+        {
+          "speaker": "Max",
+          "text": {
+            "de": "Meistens um sechs. Dann koche ich und sehe fern.",
+            "fa": "معمولاً ساعت شش. بعد آشپزی می‌کنم و تلویزیون تماشا می‌کنم."
+          }
+        }
+      ],
+      "feedback": {
+        "explanation": "در این مکالمه یاد می‌گیریم چگونه برنامه روزانه را توصیف کنیم و از افعال جداشدنی استفاده کنیم."
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s2",
+      "title": "گفتن ساعت",
+      "content": "**ساعت‌های کامل:**\n• Es ist drei Uhr. = ساعت ۳ است.\n• Um acht Uhr = ساعت ۸\n\n**نیم ساعت:**\n• halb + ساعت بعد\n• halb sieben = ۶:۳۰ (نیم ساعت مانده به ۷)\n\n**ربع ساعت:**\n• Viertel vor = ربع مانده به\n• Viertel nach = ربع بعد از\n\n| ساعت | آلمانی |\n|---|---|\n| 7:00 | sieben Uhr |\n| 7:15 | Viertel nach sieben |\n| 7:30 | halb acht ⚠️ |\n| 7:45 | Viertel vor acht |",
+      "examples": [
+        {
+          "de": "Es ist halb neun.",
+          "fa": "ساعت هشت و نیم است."
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s3",
+      "question": "ساعت 6:30 به آلمانی چیست؟",
+      "options": [
+        "halb sieben",
+        "halb sechs",
+        "sechs und halb",
+        "Viertel nach sechs"
+      ],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "explanation": "آفرین! halb sieben = نیم ساعت مانده به ۷ = ۶:۳۰ در آلمانی halb + ساعت بعد می‌گویند. ۶:۳۰ = halb sieben (نیم ۷)"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": {
+        "de": "aufstehen",
+        "fa": "بیدار شدن / از خواب بلند شدن"
+      },
+      "phonetic": "OWF-shtay-en",
+      "wordType": "separable verb",
+      "example": {
+        "text": {
+          "de": "Ich stehe um 7 Uhr auf.",
+          "fa": "ساعت ۷ بیدار می‌شوم."
+        }
+      },
+      "note": {
+        "fa": "فعل جداشدنی: auf به آخر جمله می‌رود."
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": {
+        "de": "anfangen",
+        "fa": "شروع کردن"
+      },
+      "phonetic": "AN-fang-en",
+      "wordType": "separable verb",
+      "example": {
+        "text": {
+          "de": "Die Arbeit fängt um 9 Uhr an.",
+          "fa": "کار ساعت ۹ شروع می‌شود."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": {
+        "de": "fernsehen",
+        "fa": "تلویزیون تماشا کردن"
+      },
+      "phonetic": "FERN-zay-en",
+      "wordType": "separable verb",
+      "example": {
+        "text": {
+          "de": "Abends sehe ich gern fern.",
+          "fa": "عصرها تلویزیون تماشا کردن را دوست دارم."
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "افعال جداشدنی (Trennbare Verben)",
+      "content": "برخی افعال از دو بخش تشکیل شده‌اند:\n\n• **auf**stehen → Ich stehe um 7 **auf**.\n• **an**fangen → Die Arbeit fängt um 9 **an**.\n• **fern**sehen → Ich sehe abends **fern**.\n• **ein**kaufen → Sie kauft im Supermarkt **ein**.\n\n**قاعده:** پیشوند به آخر جمله می‌رود!\n\n**پیشوندهای جداشدنی رایج:**\nauf-, an-, ab-, ein-, aus-, mit-, fern-, zurück-",
+      "examples": [
+        {
+          "de": "Wann stehst du auf?",
+          "fa": "کی بیدار می‌شوی؟"
+        },
+        {
+          "de": "Ich rufe dich später an.",
+          "fa": "بعداً بهت زنگ می‌زنم."
+        }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s8",
+      "instruction": "فعل جداشدنی را کامل کنید:",
+      "sentence": "Wann {0} du morgens {1}? (aufstehen)",
+      "feedback": {
+        "explanation": "aufstehen: du stehst ... auf. پیشوند به آخر جمله می‌رود."
+      },
+      "options": [
+        "stehst",
+        "stehe",
+        "steht",
+        "auf",
+        "an",
+        "ein"
+      ],
+      "correctAnswers": [
+        0,
+        3
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": {
+        "de": "frühstücken",
+        "fa": "صبحانه خوردن"
+      },
+      "phonetic": "FROO-shtü-ken",
+      "wordType": "verb",
+      "example": {
+        "text": {
+          "de": "Ich frühstücke um halb acht.",
+          "fa": "ساعت هفت و نیم صبحانه می‌خورم."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": {
+        "de": "einkaufen",
+        "fa": "خرید کردن"
+      },
+      "phonetic": "AYN-kow-fen",
+      "wordType": "separable verb",
+      "example": {
+        "text": {
+          "de": "Samstags kaufe ich im Supermarkt ein.",
+          "fa": "شنبه‌ها در سوپرمارکت خرید می‌کنم."
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s11",
+      "title": "💡 نکته فرهنگی: برنامه روزانه آلمانی‌ها",
+      "content": "آلمانی‌ها به وقت‌شناسی مشهورند!\n\n⏰ **روز کاری:**\n• شروع کار: ۸-۹ صبح\n• ناهار: ۱۲-۱۳ (معمولاً ۳۰ دقیقه)\n• پایان کار: ۱۷-۱۸\n\n🛒 **مهم برای ایرانیان:**\n• فروشگاه‌ها یکشنبه بسته‌اند!\n• بیشتر مغازه‌ها ساعت ۲۰ می‌بندند\n\n😴 **Ruhezeit:** ساعت ۲۲-۶ و یکشنبه‌ها باید ساکت باشید!",
+      "examples": [
+        {
+          "de": "Die Geschäfte sind sonntags geschlossen.",
+          "fa": "فروشگاه‌ها یکشنبه‌ها بسته‌اند."
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s12",
+      "question": "Die Arbeit _____ um 9 Uhr _____.",
+      "options": [
+        "fängt ... an",
+        "fangt ... an",
+        "anfängt",
+        "fängt an"
+      ],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "explanation": "درست! anfangen جداشدنی است: fängt ... an anfangen جداشدنی است: fängt + ... + an"
+      }
+    },
+    {
+      "type": "word-order",
+      "id": "s13",
+      "instruction": "کلمات را مرتب کنید:",
+      "words": [
+        "auf",
+        "Uhr",
+        "stehe",
+        "um",
+        "sieben",
+        "Ich"
+      ],
+      "correctOrder": [
+        5,
+        2,
+        3,
+        4,
+        1,
+        0
+      ],
+      "correctSentence": {
+        "de": "Ich stehe um sieben Uhr auf",
+        "fa": "من ساعت هفت بیدار می‌شوم"
+      },
+      "feedback": {
+        "explanation": "پیشوند auf به آخر جمله می‌رود."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "s14",
+      "sourceText": "ساعت ۶ بیدار می‌شوم و ساعت ۷ صبحانه می‌خورم.",
+      "feedback": {
+        "explanation": "Ich stehe um 6 Uhr auf und frühstücke um 7 Uhr."
+      },
+      "sentenceTemplate": "{0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10}",
+      "options": [
+        "Ich",
+        "stehe",
+        "um",
+        "6",
+        "Uhr",
+        "auf",
+        "und",
+        "frühstücke",
+        "um",
+        "7",
+        "Uhr."
+      ],
+      "correctAnswers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "correctTranslation": {
+        "de": "Ich stehe um 6 Uhr auf und frühstücke um 7 Uhr.",
+        "fa": "ساعت ۶ بیدار می‌شوم و ساعت ۷ صبحانه می‌خورم."
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "s15",
+      "statement": "halb acht = 8:30",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "درست! halb acht = ۷:۳۰ (نیم ساعت مانده به ۸) halb acht = ۷:۳۰ نه ۸:۳۰! در آلمانی halb + ساعت بعد می‌گویند."
+      },
+      "statementExplanation": "halb acht = ۸:۳۰"
+    }
+  ]
+}

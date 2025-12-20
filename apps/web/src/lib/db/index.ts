@@ -80,6 +80,14 @@ export class DeutschLernDB extends Dexie {
         user.totalStudyMinutes = user.totalStudyMinutes || 0;
       });
     });
+
+    // Add compound index for wrongAnswers lookup
+    this.version(4).stores({
+      users: '++id, email',
+      lessonProgress: '++id, &lessonId, status, updatedAt',
+      vocab: '++id, &word, nextReview, addedAt',
+      wrongAnswers: '++id, [lessonId+stepId], lessonId, reviewedAt'
+    });
   }
 }
 

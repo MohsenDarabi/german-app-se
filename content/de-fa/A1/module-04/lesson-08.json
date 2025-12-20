@@ -1,103 +1,313 @@
 {
-  "id": "A1-M04-L08",
+  "id": "A1-2-M04-L08",
   "title": {
-    "de": "Die Uhrzeit",
-    "fa": "ساعت و زمان"
+    "de": "Essen & Trinken",
+    "fa": "غذا و نوشیدنی"
   },
-  "level": "A1",
+  "level": "A1-2",
   "module": 4,
   "lessonNumber": 8,
-  "estimatedMinutes": 13,
+  "estimatedMinutes": 18,
   "steps": [
     {
-      "type": "new-word",
+      "type": "dialog",
       "id": "s1",
-      "word": {
-        "de": "Wie spät ist es?",
-        "fa": "ساعت چند است؟"
-      },
-      "example": {
-        "text": {
-          "de": "Entschuldigung, wie spät ist es?",
-          "fa": "ببخشید، ساعت چند است؟"
+      "title": "Im Restaurant",
+      "lines": [
+        {
+          "speaker": "Kellner",
+          "text": {
+            "de": "Guten Tag! Was möchten Sie bestellen?",
+            "fa": "روز بخیر! چه میل دارید سفارش دهید؟"
+          }
+        },
+        {
+          "speaker": "Gast",
+          "text": {
+            "de": "Ich möchte eine Pizza, bitte.",
+            "fa": "یک پیتزا می‌خواهم، لطفاً."
+          }
+        },
+        {
+          "speaker": "Kellner",
+          "text": {
+            "de": "Und zu trinken?",
+            "fa": "و برای نوشیدن؟"
+          }
+        },
+        {
+          "speaker": "Gast",
+          "text": {
+            "de": "Ein Glas Wasser, bitte. Und einen Kaffee zum Nachtisch.",
+            "fa": "یک لیوان آب، لطفاً. و یک قهوه برای دسر."
+          }
+        },
+        {
+          "speaker": "Kellner",
+          "text": {
+            "de": "Sehr gern. Kommt sofort!",
+            "fa": "با کمال میل. الان می‌آورم!"
+          }
         }
+      ],
+      "feedback": {
+        "explanation": "در این مکالمه یاد می‌گیریم چگونه در رستوران سفارش دهیم."
       }
     },
     {
       "type": "new-word",
       "id": "s2",
       "word": {
-        "de": "Es ist zwei Uhr",
-        "fa": "ساعت دو است"
+        "de": "das Wasser",
+        "fa": "آب"
       },
+      "phonetic": "VA-ser",
+      "wordType": "noun",
+      "gender": "neutral",
       "example": {
         "text": {
-          "de": "Es ist genau zwei Uhr.",
-          "fa": "دقیقاً ساعت دو است."
+          "de": "Ein Glas Wasser, bitte.",
+          "fa": "یک لیوان آب، لطفاً."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": {
+        "de": "der Kaffee",
+        "fa": "قهوه"
+      },
+      "phonetic": "KA-feh",
+      "wordType": "noun",
+      "gender": "maskulin",
+      "example": {
+        "text": {
+          "de": "Ich trinke jeden Morgen Kaffee.",
+          "fa": "هر صبح قهوه می‌نوشم."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": {
+        "de": "der Tee",
+        "fa": "چای"
+      },
+      "phonetic": "teh",
+      "wordType": "noun",
+      "gender": "maskulin",
+      "example": {
+        "text": {
+          "de": "Möchten Sie Tee oder Kaffee?",
+          "fa": "چای می‌خواهید یا قهوه؟"
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": {
+        "de": "das Brot",
+        "fa": "نان"
+      },
+      "phonetic": "broht",
+      "wordType": "noun",
+      "gender": "neutral",
+      "example": {
+        "text": {
+          "de": "In Deutschland gibt es über 300 Brotsorten!",
+          "fa": "در آلمان بیش از ۳۰۰ نوع نان وجود دارد!"
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": {
+        "de": "der Kuchen",
+        "fa": "کیک"
+      },
+      "phonetic": "KOO-khen",
+      "wordType": "noun",
+      "gender": "maskulin",
+      "example": {
+        "text": {
+          "de": "Der Apfelkuchen ist sehr lecker.",
+          "fa": "کیک سیب خیلی خوشمزه است."
         }
       }
     },
     {
       "type": "grammar-tip",
-      "id": "s3",
-      "title": "گفتن ساعت",
-      "content": "برای گفتن ساعت از ساختار 'Es ist + عدد + Uhr' استفاده می‌کنیم.",
+      "id": "s7",
+      "title": "فعل möchten (خواستن - مودبانه)",
+      "content": "**möchten** برای سفارش دادن و درخواست مودبانه استفاده می‌شود:\n\n| ضمیر | möchten |\n|---|---|\n| ich | **möchte** |\n| du | **möchtest** |\n| er/sie/es | **möchte** |\n| wir | **möchten** |\n| ihr | **möchtet** |\n| sie/Sie | **möchten** |\n\n**ساختار:** Ich möchte + **Akkusativ**",
       "examples": [
         {
-          "de": "Es ist drei Uhr.",
-          "fa": "ساعت سه است."
+          "de": "Ich möchte einen Kaffee.",
+          "fa": "یک قهوه می‌خواهم."
         },
         {
-          "de": "Es ist halb drei.",
-          "fa": "ساعت دو و نیم است. (نصف راه به سه)"
+          "de": "Was möchten Sie trinken?",
+          "fa": "چه می‌خواهید بنوشید؟"
+        }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s8",
+      "title": "Akkusativ با غذا و نوشیدنی",
+      "content": "وقتی چیزی سفارش می‌دهید، از حالت **Akkusativ** استفاده می‌شود:\n\n| Nominativ | Akkusativ |\n|---|---|\n| der Kaffee | ein**en** Kaffee |\n| die Pizza | ein**e** Pizza |\n| das Wasser | ein Wasser |\n\n**فقط مذکر تغییر می‌کند!**\nder → den / ein → einen",
+      "examples": [
+        {
+          "de": "Ich möchte einen Tee.",
+          "fa": "یک چای می‌خواهم. (Tee مذکر است)"
+        },
+        {
+          "de": "Ich möchte eine Suppe.",
+          "fa": "یک سوپ می‌خواهم. (Suppe مونث است)"
         }
       ]
     },
     {
       "type": "multiple-choice",
-      "id": "s4",
-      "question": "'Wie spät ist es?' یعنی چه؟",
-      "options": ["ساعت چند است؟", "کجا می‌روید؟", "چه کار می‌کنید؟"],
+      "id": "s9",
+      "question": "Ich möchte _____ Kaffee, bitte.",
+      "options": [
+        "einen",
+        "eine",
+        "ein",
+        "der"
+      ],
       "correctAnswerIndex": 0,
       "feedback": {
-        "explanation": "'Wie spät ist es?' یعنی 'ساعت چند است؟'"
+        "explanation": "آفرین! Kaffee مذکر است و در Akkusativ: einen Kaffee Kaffee مذکر است (der Kaffee)، در Akkusativ: einen Kaffee"
       }
     },
     {
-      "type": "dialog",
-      "id": "s5",
-      "lines": [
+      "type": "fill-in-blank",
+      "id": "s10",
+      "instruction": "سفارش را کامل کنید:",
+      "sentence": "Ich {0} eine Pizza und {1} Orangensaft, bitte.",
+      "feedback": {
+        "explanation": "با ich: möchte. Orangensaft مذکر است: einen Orangensaft"
+      },
+      "options": [
+        "möchte",
+        "möchtest",
+        "möchten",
+        "einen",
+        "eine",
+        "ein"
+      ],
+      "correctAnswers": [
+        0,
+        3
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s11",
+      "word": {
+        "de": "die Rechnung",
+        "fa": "صورتحساب"
+      },
+      "phonetic": "REKH-noong",
+      "wordType": "noun",
+      "gender": "feminin",
+      "example": {
+        "text": {
+          "de": "Die Rechnung, bitte!",
+          "fa": "صورتحساب، لطفاً!"
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s12",
+      "title": "💡 نکته فرهنگی: غذا خوردن در آلمان",
+      "content": "نکات مهم برای ایرانیان:\n\n🍽️ **وعده‌های غذایی:**\n• Frühstück (صبحانه): ۷-۹ صبح - نان، پنیر، مربا\n• Mittagessen (ناهار): ۱۲-۱۴ - وعده اصلی\n• Abendessen (شام): ۱۸-۲۰ - معمولاً سبک\n\n☕ **Kaffee und Kuchen:** سنت بعدازظهر (۱۵-۱۶)\n\n💰 **انعام:** ۵-۱۰٪ معمول است. بگویید: \"Stimmt so!\" (بقیه‌اش مال شما)\n\n🍺 آب رایگان نیست! باید Mineralwasser سفارش دهید.",
+      "examples": [
         {
-          "speaker": "Person A",
-          "text": {
-            "de": "Wie spät ist es bitte?",
-            "fa": "ساعت چند است لطفاً؟"
-          }
-        },
-        {
-          "speaker": "Person B",
-          "text": {
-            "de": "Es ist halb drei.",
-            "fa": "ساعت دو و نیم است."
-          }
-        },
-        {
-          "speaker": "Person A",
-          "text": {
-            "de": "Danke schön!",
-            "fa": "ممنون!"
-          }
+          "de": "Stimmt so!",
+          "fa": "بقیه‌اش مال شما! (انعام)"
         }
       ]
     },
     {
       "type": "multiple-choice",
-      "id": "s6",
-      "question": "'halb drei' یعنی چه ساعتی؟",
-      "options": ["۳:۳۰", "۲:۳۰", "۱:۳۰"],
-      "correctAnswerIndex": 1,
+      "id": "s13",
+      "question": "_____ Sie noch etwas?",
+      "options": [
+        "Möchten",
+        "Möchte",
+        "Möchtest",
+        "Möchtet"
+      ],
+      "correctAnswerIndex": 0,
       "feedback": {
-        "explanation": "'halb drei' یعنی نصف راه به سه = ۲:۳۰ (دو و نیم)"
+        "explanation": "درست! با Sie (رسمی): Möchten Sie...? با Sie رسمی از möchten استفاده می‌کنیم."
+      }
+    },
+    {
+      "type": "word-order",
+      "id": "s14",
+      "instruction": "کلمات را مرتب کنید:",
+      "words": [
+        "bitte",
+        "Tee",
+        "möchte",
+        "einen",
+        "Ich"
+      ],
+      "correctOrder": [
+        4,
+        2,
+        3,
+        1,
+        0
+      ],
+      "correctSentence": {
+        "de": "Ich möchte einen Tee bitte",
+        "fa": "یک چای می‌خواهم لطفاً"
+      },
+      "feedback": {
+        "explanation": "ترتیب: Subject + möchte + Akkusativ + bitte"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "s15",
+      "sourceText": "یک قهوه و یک کیک می‌خواهم، لطفاً.",
+      "feedback": {
+        "explanation": "Ich möchte einen Kaffee und einen Kuchen, bitte."
+      },
+      "sentenceTemplate": "{0} {1} {2} {3} {4} {5} {6} {7}",
+      "options": [
+        "Ich",
+        "möchte",
+        "einen",
+        "Kaffee",
+        "und",
+        "einen",
+        "Kuchen,",
+        "bitte."
+      ],
+      "correctAnswers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "correctTranslation": {
+        "de": "Ich möchte einen Kaffee und einen Kuchen, bitte.",
+        "fa": "یک قهوه و یک کیک می‌خواهم، لطفاً."
       }
     }
   ]

@@ -1,113 +1,266 @@
 {
-  "id": "A1-M02-L05",
+  "id": "A1-1-M02-L05",
   "title": {
-    "de": "Berufe",
-    "fa": "مشاغل"
+    "de": "Zahlen 1-100",
+    "fa": "اعداد ۱ تا ۱۰۰"
   },
-  "level": "A1",
+  "level": "A1-1",
   "module": 2,
   "lessonNumber": 5,
-  "estimatedMinutes": 14,
+  "estimatedMinutes": 15,
   "steps": [
     {
-      "type": "new-word",
+      "type": "dialog",
       "id": "s1",
-      "word": {
-        "de": "der Lehrer / die Lehrerin",
-        "fa": "معلم"
-      },
-      "example": {
-        "text": {
-          "de": "Ich bin Lehrer.",
-          "fa": "من معلم هستم."
+      "title": "Wie alt bist du?",
+      "lines": [
+        {
+          "speaker": "Maria",
+          "text": {
+            "de": "Wie alt bist du, Ali?",
+            "fa": "علی، چند سالته؟"
+          }
+        },
+        {
+          "speaker": "Ali",
+          "text": {
+            "de": "Ich bin fünfundzwanzig Jahre alt. Und du?",
+            "fa": "من بیست و پنج سالمه. و تو؟"
+          }
+        },
+        {
+          "speaker": "Maria",
+          "text": {
+            "de": "Ich bin dreißig.",
+            "fa": "من سی سالمه."
+          }
+        },
+        {
+          "speaker": "Ali",
+          "text": {
+            "de": "Und deine Telefonnummer?",
+            "fa": "و شماره تلفنت؟"
+          }
+        },
+        {
+          "speaker": "Maria",
+          "text": {
+            "de": "Null eins sieben sechs - fünf vier drei zwei eins.",
+            "fa": "صفر یک هفت شش - پنج چهار سه دو یک."
+          }
         }
+      ],
+      "feedback": {
+        "explanation": "در این مکالمه یاد می‌گیریم چگونه سن خود را بگوییم و شماره تلفن رد و بدل کنیم."
       }
     },
     {
-      "type": "new-word",
+      "type": "grammar-tip",
       "id": "s2",
-      "word": {
-        "de": "der Arzt / die Ärztin",
-        "fa": "پزشک"
-      },
-      "example": {
-        "text": {
-          "de": "Sie ist Ärztin.",
-          "fa": "او پزشک است."
+      "title": "اعداد ۱ تا ۱۲",
+      "content": "اعداد پایه در آلمانی:\n\n| عدد | آلمانی | تلفظ |\n|---|---|---|\n| 0 | null | نول |\n| 1 | eins | آینس |\n| 2 | zwei | تسوای |\n| 3 | drei | درای |\n| 4 | vier | فیر |\n| 5 | fünf | فونف |\n| 6 | sechs | زکس |\n| 7 | sieben | زیبن |\n| 8 | acht | آخت |\n| 9 | neun | نوین |\n| 10 | zehn | تسین |\n| 11 | elf | الف |\n| 12 | zwölf | تسوولف |",
+      "examples": [
+        {
+          "de": "Ich habe drei Geschwister.",
+          "fa": "من سه خواهر و برادر دارم."
         }
-      }
-    },
-    {
-      "type": "new-word",
-      "id": "s3",
-      "word": {
-        "de": "der Student / die Studentin",
-        "fa": "دانشجو"
-      },
-      "example": {
-        "text": {
-          "de": "Er ist Student.",
-          "fa": "او دانشجو است."
-        }
-      }
+      ]
     },
     {
       "type": "multiple-choice",
-      "id": "s4",
-      "question": "Was sind Sie von Beruf?",
-      "options": ["Ich bin Lehrer", "Ich heiße Max", "Ich komme aus Iran"],
+      "id": "s3",
+      "question": "عدد ۷ به آلمانی چیست؟",
+      "options": [
+        "sieben",
+        "sechs",
+        "acht",
+        "neun"
+      ],
       "correctAnswerIndex": 0,
       "feedback": {
-        "explanation": "برای گفتن شغل از 'Ich bin + شغل' استفاده می‌کنیم."
+        "explanation": "آفرین! sieben = ۷ sieben = ۷. sechs = ۶، acht = ۸، neun = ۹"
       }
     },
     {
-      "type": "dialog",
+      "type": "grammar-tip",
+      "id": "s4",
+      "title": "اعداد ۱۳ تا ۱۹",
+      "content": "این اعداد با پسوند **-zehn** ساخته می‌شوند:\n\n| عدد | آلمانی |\n|---|---|\n| 13 | drei**zehn** |\n| 14 | vier**zehn** |\n| 15 | fünf**zehn** |\n| 16 | sech**zehn** ⚠️ |\n| 17 | sieb**zehn** ⚠️ |\n| 18 | acht**zehn** |\n| 19 | neun**zehn** |\n\n⚠️ توجه: sechzehn (نه sechszehn) و siebzehn (نه siebenzehn)",
+      "examples": [
+        {
+          "de": "Mein Bruder ist siebzehn Jahre alt.",
+          "fa": "برادرم هفده ساله است."
+        }
+      ]
+    },
+    {
+      "type": "grammar-tip",
       "id": "s5",
-      "lines": [
+      "title": "ده‌گان (۲۰-۹۰)",
+      "content": "ده‌گان با پسوند **-zig** ساخته می‌شوند:\n\n| عدد | آلمانی |\n|---|---|\n| 20 | zwan**zig** |\n| 30 | drei**ßig** ⚠️ |\n| 40 | vier**zig** |\n| 50 | fünf**zig** |\n| 60 | sech**zig** |\n| 70 | sieb**zig** |\n| 80 | acht**zig** |\n| 90 | neun**zig** |\n| 100 | (ein)hundert |\n\n⚠️ فقط dreißig با ß نوشته می‌شود!",
+      "examples": [
         {
-          "speaker": "Anna",
-          "text": {
-            "de": "Was bist du von Beruf?",
-            "fa": "شغلت چیست؟"
-          }
-        },
-        {
-          "speaker": "Tom",
-          "text": {
-            "de": "Ich bin Ingenieur. Und du?",
-            "fa": "من مهندس هستم. تو چطور؟"
-          }
-        },
-        {
-          "speaker": "Anna",
-          "text": {
-            "de": "Ich bin Studentin.",
-            "fa": "من دانشجو هستم."
-          }
+          "de": "Mein Vater ist fünfzig Jahre alt.",
+          "fa": "پدرم پنجاه ساله است."
         }
       ]
     },
     {
       "type": "grammar-tip",
       "id": "s6",
-      "content": "در زبان آلمانی، اسامی مشاغل برای مرد و زن متفاوت است. معمولاً برای خانم‌ها -in اضافه می‌شود.",
+      "title": "اعداد ترکیبی (۲۱-۹۹) 🔄",
+      "content": "**قاعده مهم:** در آلمانی، یکان قبل از ده‌گان می‌آید!\n\n**ساختار:** یکان + **und** + ده‌گان\n\n| عدد | آلمانی | تحت‌اللفظی |\n|---|---|---|\n| 21 | ein**und**zwanzig | یک و بیست |\n| 25 | fünf**und**zwanzig | پنج و بیست |\n| 34 | vier**und**dreißig | چهار و سی |\n| 67 | sieben**und**sechzig | هفت و شصت |\n| 99 | neun**und**neunzig | نه و نود |\n\n⚠️ این برعکس فارسی است!",
       "examples": [
         {
-          "de": "der Lehrer → die Lehrerin",
-          "fa": "معلم (مرد) → معلم (زن)"
+          "de": "Ich bin siebenundzwanzig Jahre alt.",
+          "fa": "من بیست و هفت ساله هستم."
         }
       ]
     },
     {
       "type": "multiple-choice",
       "id": "s7",
-      "question": "'پزشک خانم' به آلمانی چه می‌شود؟",
-      "options": ["der Arzt", "die Ärztin", "Arzt"],
-      "correctAnswerIndex": 1,
+      "question": "عدد ۴۵ به آلمانی چیست؟",
+      "options": [
+        "fünfundvierzig",
+        "vierzigfünf",
+        "fünfvierzig",
+        "vierundfünfzig"
+      ],
+      "correctAnswerIndex": 0,
       "feedback": {
-        "explanation": "برای خانم پزشک از 'die Ärztin' استفاده می‌کنیم."
+        "explanation": "آفرین! ۴۵ = fünf (۵) + und + vierzig (۴۰) در آلمانی یکان اول می‌آید: fünfundvierzig (پنج و چهل)"
       }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s8",
+      "instruction": "عدد را به آلمانی بنویسید:",
+      "sentence": "Ich bin {0} Jahre alt. (۳۲)",
+      "feedback": {
+        "explanation": "۳۲ = zwei (۲) + und + dreißig (۳۰) = zweiunddreißig"
+      },
+      "options": [
+        "zweiunddreißig",
+        "dreißigzwei",
+        "dreiundwanzig"
+      ],
+      "correctAnswers": [
+        0
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "💡 نکته فرهنگی: اعداد در آلمان",
+      "content": "تفاوت‌های مهم با ایران:\n\n✍️ **نوشتن اعداد:**\n• عدد ۱ با خط بالایی: 1̸\n• عدد ۷ با خط وسط: 7̶\n\n💶 **قیمت‌ها:**\n• اعشار با کاما: 5,99 €\n• هزارگان با نقطه: 1.000 €\n\n📅 **تاریخ:**\n• روز.ماه.سال: 20.12.2024\n\n📞 **شماره تلفن:**\n• معمولاً دو رقم دو رقم خوانده می‌شود",
+      "examples": [
+        {
+          "de": "Das kostet neunundneunzig Euro.",
+          "fa": "این نود و نه یورو قیمت دارد."
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s10",
+      "question": "Wie alt bist du? - Ich bin _____ Jahre alt. (۲۸)",
+      "options": [
+        "achtundzwanzig",
+        "zwanzigacht",
+        "zweiunachtzig",
+        "achtundzweißig"
+      ],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "explanation": "درست! ۲۸ = acht + und + zwanzig ۲۸ = achtundzwanzig (هشت و بیست)"
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s11",
+      "instruction": "جمله را کامل کنید:",
+      "sentence": "Wie {0} bist du? - Ich bin zwanzig {1} alt.",
+      "feedback": {
+        "explanation": "Wie alt bist du? = چند سالته؟ Jahre alt = ساله"
+      },
+      "options": [
+        "alt",
+        "groß",
+        "viel",
+        "Jahre",
+        "Jahr",
+        "Jahres"
+      ],
+      "correctAnswers": [
+        0,
+        3
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "s12",
+      "instruction": "کلمات را مرتب کنید:",
+      "words": [
+        "Jahre",
+        "fünfundzwanzig",
+        "bin",
+        "alt",
+        "Ich"
+      ],
+      "correctOrder": [
+        4,
+        2,
+        1,
+        0,
+        3
+      ],
+      "correctSentence": {
+        "de": "Ich bin fünfundzwanzig Jahre alt",
+        "fa": "من بیست و پنج ساله هستم"
+      },
+      "feedback": {
+        "explanation": "ترتیب: Ich bin [عدد] Jahre alt."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "s13",
+      "sourceText": "مادرم پنجاه و سه ساله است.",
+      "feedback": {
+        "explanation": "Meine Mutter ist dreiundfünfzig Jahre alt."
+      },
+      "sentenceTemplate": "{0} {1} {2} {3} {4} {5}",
+      "options": [
+        "Meine",
+        "Mutter",
+        "ist",
+        "dreiundfünfzig",
+        "Jahre",
+        "alt."
+      ],
+      "correctAnswers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "correctTranslation": {
+        "de": "Meine Mutter ist dreiundfünfzig Jahre alt.",
+        "fa": "مادرم پنجاه و سه ساله است."
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "s14",
+      "statement": "42 = vierundvierzig",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "درست! ۴۲ = zweiundvierzig (دو و چهل). vierundvierzig = ۴۴ ۴۲ = zweiundvierzig. vierundvierzig = ۴۴"
+      },
+      "statementExplanation": "۴۲ = vierundvierzig"
     }
   ]
 }

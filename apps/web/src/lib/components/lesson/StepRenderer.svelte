@@ -4,6 +4,10 @@
   import GrammarTipStep from "./steps/GrammarTipStep.svelte";
   import WordQuizStep from "./steps/WordQuizStep.svelte";
   import NewWordStep from "./steps/NewWordStep.svelte";
+  import FillInBlankStep from "./steps/FillInBlankStep.svelte";
+  import WordOrderStep from "./steps/WordOrderStep.svelte";
+  import TranslationStep from "./steps/TranslationStep.svelte";
+  import TrueFalseStep from "./steps/TrueFalseStep.svelte";
 
   export let step: LessonStep;
 </script>
@@ -17,6 +21,14 @@
     <GrammarTipStep {step} />
   {:else if step.type === "dialog"}
     <DialogStep {step} />
+  {:else if step.type === "fill-in-blank"}
+    <FillInBlankStep {step} on:answer />
+  {:else if step.type === "word-order"}
+    <WordOrderStep {step} on:answer />
+  {:else if step.type === "translation"}
+    <TranslationStep {step} on:answer />
+  {:else if step.type === "true-false"}
+    <TrueFalseStep {step} on:answer />
   {:else}
     <div class="unknown-step">
       <p>Unknown step type: {step.type}</p>

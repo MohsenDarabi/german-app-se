@@ -4,6 +4,35 @@
   import { db } from "$lib/db";
   import { liveQuery } from "dexie";
 
+  let showResetConfirm = false;
+  let isResetting = false;
+
+  async function resetAllProgress() {
+    isResetting = true;
+    try {
+      // Clear all progress data
+      await db.lessonProgress.clear();
+      await db.wrongAnswers.clear();
+      await db.vocab.clear();
+
+      // Reset user stats
+      await db.users.update(1, {
+        xp: 0,
+        streak: 0,
+        totalStudyMinutes: 0,
+        lastStudyDate: ''
+      });
+
+      showResetConfirm = false;
+      alert('Progress has been reset successfully!');
+    } catch (error) {
+      console.error('Error resetting progress:', error);
+      alert('Failed to reset progress. Please try again.');
+    } finally {
+      isResetting = false;
+    }
+  }
+
   // Reactive queries for user stats
   const user = liveQuery(() => db.users.get(1));
 
@@ -245,6 +274,43 @@
         <p>شما تمام درس‌های سطح مبتدی را به پایان رساندید. آماده برای سطح A2 هستید!</p>
       </div>
     </section>
+  {/if}
+
+  <!-- Reset Progress Section -->
+  <section class="reset-section">
+    <button class="reset-btn" on:click={() => showResetConfirm = true}>
+      🔄 بازنشانی پیشرفت
+    </button>
+    <p class="reset-hint">تمام پیشرفت، واژگان و امتیازها پاک می‌شود</p>
+  </section>
+
+  <!-- Reset Confirmation Modal -->
+  {#if showResetConfirm}
+    <div class="modal-overlay" on:click={() => showResetConfirm = false}>
+      <div class="modal-content" on:click|stopPropagation>
+        <div class="modal-icon">⚠️</div>
+        <h3>بازنشانی پیشرفت</h3>
+        <p>آیا مطمئن هستید؟ این عمل غیرقابل بازگشت است و تمام موارد زیر پاک خواهند شد:</p>
+        <ul class="reset-list">
+          <li>پیشرفت تمام درس‌ها</li>
+          <li>واژگان ذخیره شده</li>
+          <li>امتیازها و XP</li>
+          <li>روزهای پیاپی (streak)</li>
+        </ul>
+        <div class="modal-actions">
+          <button class="cancel-btn" on:click={() => showResetConfirm = false} disabled={isResetting}>
+            انصراف
+          </button>
+          <button class="confirm-reset-btn" on:click={resetAllProgress} disabled={isResetting}>
+            {#if isResetting}
+              در حال بازنشانی...
+            {:else}
+              بله، پاک کن
+            {/if}
+          </button>
+        </div>
+      </div>
+    </div>
   {/if}
 </div>
 
@@ -605,5 +671,140 @@
     .vocab-overview {
       grid-template-columns: 1fr;
     }
+  }
+
+  /* Reset Section */
+  .reset-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e2e8f0;
+    text-align: center;
+  }
+
+  .reset-btn {
+    padding: 0.75rem 1.5rem;
+    background: transparent;
+    color: #64748b;
+    border: 2px solid #e2e8f0;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .reset-btn:hover {
+    color: #ef4444;
+    border-color: #ef4444;
+    background: #fef2f2;
+  }
+
+  .reset-hint {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: #94a3b8;
+  }
+
+  /* Modal Styles */
+  .modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    padding: 1rem;
+  }
+
+  .modal-content {
+    background: white;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  }
+
+  .modal-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .modal-content h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 0.75rem;
+  }
+
+  .modal-content p {
+    color: #64748b;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+
+  .reset-list {
+    text-align: right;
+    background: #fef2f2;
+    padding: 1rem 1.5rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1.5rem;
+    list-style: none;
+  }
+
+  .reset-list li {
+    padding: 0.25rem 0;
+    color: #b91c1c;
+    font-size: 0.95rem;
+  }
+
+  .reset-list li::before {
+    content: '✗ ';
+  }
+
+  .modal-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .cancel-btn {
+    padding: 0.75rem 1.5rem;
+    background: #f1f5f9;
+    color: #64748b;
+    border: none;
+    border-radius: 999px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .cancel-btn:hover:not(:disabled) {
+    background: #e2e8f0;
+  }
+
+  .confirm-reset-btn {
+    padding: 0.75rem 1.5rem;
+    background: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 999px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .confirm-reset-btn:hover:not(:disabled) {
+    background: #dc2626;
+  }
+
+  .confirm-reset-btn:disabled,
+  .cancel-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
   }
 </style>

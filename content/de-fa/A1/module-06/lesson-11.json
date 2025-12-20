@@ -1,0 +1,303 @@
+{
+  "id": "A1-2-M06-L11",
+  "title": {
+    "de": "Kleidung & Einkaufen",
+    "fa": "لباس و خرید"
+  },
+  "level": "A1-2",
+  "module": 6,
+  "lessonNumber": 11,
+  "estimatedMinutes": 20,
+  "steps": [
+    {
+      "type": "dialog",
+      "id": "s1",
+      "title": "Im Kleidergeschäft",
+      "lines": [
+        {
+          "speaker": "Verkäuferin",
+          "text": {
+            "de": "Kann ich Ihnen helfen?",
+            "fa": "می‌توانم کمکتان کنم؟"
+          }
+        },
+        {
+          "speaker": "Kundin",
+          "text": {
+            "de": "Ja, ich suche eine Jacke. Haben Sie die in Blau?",
+            "fa": "بله، دنبال یک ژاکت می‌گردم. آبی دارید؟"
+          }
+        },
+        {
+          "speaker": "Verkäuferin",
+          "text": {
+            "de": "Ja, natürlich. Welche Größe brauchen Sie?",
+            "fa": "بله، البته. چه سایزی نیاز دارید؟"
+          }
+        },
+        {
+          "speaker": "Kundin",
+          "text": {
+            "de": "Größe 38, bitte. Kann ich die Jacke anprobieren?",
+            "fa": "سایز ۳۸، لطفاً. می‌توانم ژاکت را امتحان کنم؟"
+          }
+        },
+        {
+          "speaker": "Verkäuferin",
+          "text": {
+            "de": "Natürlich! Die Umkleidekabine ist dort hinten.",
+            "fa": "البته! اتاق پرو آن طرف پشت است."
+          }
+        }
+      ],
+      "feedback": {
+        "explanation": "در این مکالمه یاد می‌گیریم چگونه لباس بخریم و سایز بپرسیم."
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": {
+        "de": "die Jacke",
+        "fa": "ژاکت / کت"
+      },
+      "phonetic": "YA-ke",
+      "wordType": "noun",
+      "gender": "feminin",
+      "example": {
+        "text": {
+          "de": "Die Jacke ist sehr warm.",
+          "fa": "ژاکت خیلی گرم است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": {
+        "de": "das Hemd",
+        "fa": "پیراهن (مردانه)"
+      },
+      "phonetic": "hemt",
+      "wordType": "noun",
+      "gender": "neutral",
+      "example": {
+        "text": {
+          "de": "Das weiße Hemd gefällt mir.",
+          "fa": "پیراهن سفید را دوست دارم."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": {
+        "de": "die Hose",
+        "fa": "شلوار"
+      },
+      "phonetic": "HO-ze",
+      "wordType": "noun",
+      "gender": "feminin",
+      "example": {
+        "text": {
+          "de": "Die Hose ist zu lang.",
+          "fa": "شلوار خیلی بلند است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": {
+        "de": "der Rock",
+        "fa": "دامن"
+      },
+      "phonetic": "rok",
+      "wordType": "noun",
+      "gender": "maskulin",
+      "example": {
+        "text": {
+          "de": "Der rote Rock ist schön.",
+          "fa": "دامن قرمز زیباست."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": {
+        "de": "die Schuhe (Pl.)",
+        "fa": "کفش‌ها"
+      },
+      "phonetic": "SHOO-e",
+      "wordType": "noun",
+      "gender": "plural",
+      "example": {
+        "text": {
+          "de": "Die Schuhe passen gut.",
+          "fa": "کفش‌ها خوب اندازه‌اند."
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "صفت‌های تفضیلی (Komparativ)",
+      "content": "برای مقایسه از صفت تفضیلی استفاده می‌کنیم:\n\n**قاعده:** صفت + **-er**\n\n| ساده | تفضیلی | معنی |\n|---|---|---|\n| klein | klein**er** | کوچک‌تر |\n| schön | schön**er** | زیباتر |\n| billig | billig**er** | ارزان‌تر |\n\n**صفت‌های بی‌قاعده:**\n| ساده | تفضیلی | عالی |\n|---|---|---|\n| gut | **besser** | am besten |\n| gern | **lieber** | am liebsten |\n| viel | **mehr** | am meisten |\n| groß | **größer** | am größten |",
+      "examples": [
+        {
+          "de": "Diese Jacke ist schöner.",
+          "fa": "این ژاکت زیباتر است."
+        },
+        {
+          "de": "Das Hemd ist billiger als die Hose.",
+          "fa": "پیراهن ارزان‌تر از شلوار است."
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s8",
+      "question": "Diese Hose ist _____ als die andere.",
+      "options": [
+        "billiger",
+        "billig",
+        "billigsten",
+        "am billigsten"
+      ],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "explanation": "آفرین! برای مقایسه دو چیز از -er استفاده می‌کنیم. برای مقایسه: صفت + er. billiger = ارزان‌تر"
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "عبارات مفید برای خرید",
+      "content": "**پرسیدن:**\n• Haben Sie das in Größe ...? = سایز ... دارید؟\n• Kann ich das anprobieren? = می‌توانم امتحان کنم؟\n• Was kostet das? = این چند است؟\n\n**توصیف:**\n• Das ist zu groß/klein. = این خیلی بزرگ/کوچک است.\n• Das passt gut. = این خوب اندازه است.\n• Das gefällt mir (nicht). = این را (نه) دوست دارم.\n\n**خریدن:**\n• Ich nehme das. = این را می‌برم.",
+      "examples": [
+        {
+          "de": "Das ist mir zu teuer.",
+          "fa": "این برای من خیلی گران است."
+        }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s10",
+      "instruction": "جمله را کامل کنید:",
+      "sentence": "Die blaue Jacke ist {0} als die schwarze.",
+      "feedback": {
+        "explanation": "برای مقایسه دو چیز با als: صفت + er"
+      },
+      "options": [
+        "schöner",
+        "schön",
+        "am schönsten"
+      ],
+      "correctAnswers": [
+        0
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s11",
+      "word": {
+        "de": "anprobieren",
+        "fa": "امتحان کردن / پرو کردن"
+      },
+      "phonetic": "AN-pro-bee-ren",
+      "wordType": "separable verb",
+      "example": {
+        "text": {
+          "de": "Kann ich die Hose anprobieren?",
+          "fa": "می‌توانم شلوار را امتحان کنم؟"
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s12",
+      "title": "💡 نکته فرهنگی: خرید لباس در آلمان",
+      "content": "**سایزهای آلمانی:**\n• زنانه: 34, 36, 38, 40, 42...\n• مردانه: 46, 48, 50, 52...\n• کفش: 36, 37, 38... (اروپایی)\n\n🛍️ **حراجی‌ها:**\n• Winterschlussverkauf (ژانویه)\n• Sommerschlussverkauf (ژوئیه)\n\n⏰ **ساعات فروشگاه‌ها:**\n• دوشنبه-شنبه: ۱۰-۲۰\n• یکشنبه: بسته! ❌\n\n💳 آلمانی‌ها هنوز زیاد با نقد پرداخت می‌کنند!",
+      "examples": [
+        {
+          "de": "Welche Größe haben Sie?",
+          "fa": "چه سایزی می‌پوشید؟"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s13",
+      "question": "کدام صفت تفضیلی درست است؟",
+      "options": [
+        "gut → besser",
+        "gut → guter",
+        "gut → mehr gut",
+        "gut → am gut"
+      ],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "explanation": "درست! gut بی‌قاعده است: gut → besser → am besten gut بی‌قاعده است: gut → besser → am besten"
+      }
+    },
+    {
+      "type": "word-order",
+      "id": "s14",
+      "instruction": "کلمات را مرتب کنید:",
+      "words": [
+        "mir",
+        "gefällt",
+        "Jacke",
+        "Die",
+        "nicht"
+      ],
+      "correctOrder": [
+        3,
+        2,
+        1,
+        0,
+        4
+      ],
+      "correctSentence": {
+        "de": "Die Jacke gefällt mir nicht",
+        "fa": "ژاکت را دوست ندارم"
+      },
+      "feedback": {
+        "explanation": "gefallen + Dativ: Die Jacke gefällt mir."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "s15",
+      "sourceText": "این شلوار ارزان‌تر از آن دامن است.",
+      "feedback": {
+        "explanation": "Diese Hose ist billiger als der Rock."
+      },
+      "sentenceTemplate": "{0} {1} {2} {3} {4} {5} {6}",
+      "options": [
+        "Diese",
+        "Hose",
+        "ist",
+        "billiger",
+        "als",
+        "der",
+        "Rock."
+      ],
+      "correctAnswers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "correctTranslation": {
+        "de": "Diese Hose ist billiger als der Rock.",
+        "fa": "این شلوار ارزان‌تر از آن دامن است."
+      }
+    }
+  ]
+}
