@@ -2,6 +2,7 @@
   import type { TranslationStep } from "$lib/content-model";
   import { createEventDispatcher } from "svelte";
   import BiDiText from "$lib/components/ui/BiDiText.svelte";
+  import { detectDirection } from "$lib/utils/bidi";
 
   export let step: TranslationStep;
 
@@ -10,6 +11,8 @@
   // Parse template into parts with blanks
   $: parts = step.sentenceTemplate.split(/(\{[0-9]+\})/g);
   $: blankCount = step.correctAnswers?.length || step.options?.length || 0;
+  // For translation, the answer is always German (LTR), but detect from template content if available
+  $: answerDir = detectDirection(step.options?.join(' ') || step.sentenceTemplate);
 
   // Initialize selectedAnswers reactively based on blankCount
   let selectedAnswers: (number | null)[] = [];
@@ -72,7 +75,7 @@
     <p class="text" dir="rtl"><BiDiText text={step.sourceText} /></p>
   </div>
 
-  <div class="answer-area" class:correct={isAnswered && isCorrect} class:wrong={isAnswered && !isCorrect}>
+  <div class="answer-area" dir={answerDir} class:correct={isAnswered && isCorrect} class:wrong={isAnswered && !isCorrect}>
     {#each parts as part}
       {#if part.match(/\{[0-9]+\}/)}
         {@const blankIdx = getBlankIndex(part)}
@@ -112,27 +115,27 @@
 
   {#if !isAnswered && selectedAnswers.every(a => a !== null)}
     <button class="check-btn" on:click={checkAnswers}>
-      Check Translation
+      بررسی پاسخ
     </button>
   {/if}
 
   {#if isAnswered && isCorrect}
     <div class="success-section">
-      <p class="feedback-text success">Correct!</p>
+      <p class="feedback-text success">آفرین! صحیح است</p>
       <p class="correct-translation">{step.correctTranslation.de}</p>
     </div>
   {/if}
 
   {#if canRetry}
     <div class="retry-section">
-      <p class="feedback-text">Not quite right!</p>
+      <p class="feedback-text">پاسخ صحیح نیست!</p>
       <p class="correct-answer">
-        <strong>Correct:</strong> {step.correctTranslation.de}
+        <strong>پاسخ صحیح:</strong> {step.correctTranslation.de}
       </p>
       {#if step.feedback?.explanation}
         <p class="explanation">{step.feedback.explanation}</p>
       {/if}
-      <button class="retry-btn" on:click={retry}>Retry</button>
+      <button class="retry-btn" on:click={retry}>تلاش مجدد</button>
     </div>
   {/if}
 </div>

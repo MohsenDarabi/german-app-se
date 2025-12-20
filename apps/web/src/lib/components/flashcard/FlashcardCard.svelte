@@ -31,14 +31,14 @@
         <button class="audio-btn" on:click={handleAudio} aria-label="Play pronunciation">
           🔊
         </button>
-        <p class="hint">Click to reveal translation</p>
+        <p class="hint">برای نمایش ترجمه کلیک کنید</p>
       </div>
       <div class="flashcard-back">
         <p class="translation">{card.translation}</p>
         {#if card.example}
           <div class="example-box">
             <p class="example-text">{card.example}</p>
-            <p class="example-label">Example</p>
+            <p class="example-label">مثال</p>
           </div>
         {/if}
       </div>
@@ -48,12 +48,12 @@
   {#if isFlipped}
     <div class="grade-buttons">
       <button class="wrong-btn" on:click={(e) => handleGrade(false, e)}>
-        ❌ Wrong
-        <span class="btn-subtitle">Back to Box 1</span>
+        ❌ اشتباه
+        <span class="btn-subtitle">بازگشت به جعبه ۱</span>
       </button>
       <button class="correct-btn" on:click={(e) => handleGrade(true, e)}>
-        ✅ Correct
-        <span class="btn-subtitle">Next Box</span>
+        ✅ صحیح
+        <span class="btn-subtitle">جعبه بعدی</span>
       </button>
     </div>
   {/if}

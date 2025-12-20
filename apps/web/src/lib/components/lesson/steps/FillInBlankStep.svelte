@@ -2,6 +2,7 @@
   import type { FillInBlankStep } from "$lib/content-model";
   import { createEventDispatcher } from "svelte";
   import BiDiText from "$lib/components/ui/BiDiText.svelte";
+  import { detectDirection } from "$lib/utils/bidi";
 
   export let step: FillInBlankStep;
 
@@ -10,6 +11,7 @@
   // Parse sentence into parts with blanks
   $: parts = step.sentence.split(/(\{[0-9]+\})/g);
   $: blankCount = step.correctAnswers?.length || 0;
+  $: sentenceDir = detectDirection(step.sentence);
 
   // Initialize selectedAnswers reactively based on blankCount
   let selectedAnswers: (number | null)[] = [];
@@ -61,7 +63,7 @@
     <p class="instruction" dir="rtl"><BiDiText text={step.instruction} /></p>
   {/if}
 
-  <div class="sentence-area">
+  <div class="sentence-area" dir={sentenceDir}>
     {#each parts as part}
       {#if part.match(/\{[0-9]+\}/)}
         {@const blankIdx = getBlankIndex(part)}
@@ -106,23 +108,23 @@
 
   {#if !isAnswered && selectedAnswers.every(a => a !== null)}
     <button class="check-btn" on:click={checkAnswers}>
-      Check Answer
+      بررسی پاسخ
     </button>
   {/if}
 
   {#if isAnswered && isCorrect}
     <div class="success-section">
-      <p class="feedback-text success">Correct!</p>
+      <p class="feedback-text success">آفرین! صحیح است</p>
     </div>
   {/if}
 
   {#if canRetry}
     <div class="retry-section">
-      <p class="feedback-text">Try again!</p>
+      <p class="feedback-text">دوباره امتحان کنید!</p>
       {#if step.feedback?.explanation}
         <p class="explanation">{step.feedback.explanation}</p>
       {/if}
-      <button class="retry-btn" on:click={retry}>Retry</button>
+      <button class="retry-btn" on:click={retry}>تلاش مجدد</button>
     </div>
   {/if}
 </div>

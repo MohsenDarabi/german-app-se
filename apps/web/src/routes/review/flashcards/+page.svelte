@@ -37,16 +37,16 @@
 </script>
 
 <svelte:head>
-  <title>Flashcard Review - Deutschlern</title>
+  <title>مرور فلش‌کارت - Deutschlern</title>
 </svelte:head>
 
-<div class="review-page">
+<div class="review-page" dir="rtl">
   <header class="review-header">
-    <a href="/" class="back-link">← Back</a>
-    <h1>Flashcard Review</h1>
+    <a href="/" class="back-link">بازگشت ←</a>
+    <h1>مرور فلش‌کارت</h1>
     {#if !sessionComplete && dueCards.length > 0}
       <div class="progress-info">
-        <div class="progress-text">{reviewedCount} / {dueCards.length} reviewed</div>
+        <div class="progress-text">{reviewedCount} از {dueCards.length} مرور شده</div>
         <div class="progress-bar">
           <div class="progress-fill" style="width: {progress}%"></div>
         </div>
@@ -58,43 +58,43 @@
     {#if loading}
       <div class="loading-state">
         <div class="spinner"></div>
-        <p>Loading flashcards...</p>
+        <p>در حال بارگذاری...</p>
       </div>
     {:else if sessionComplete}
       <div class="completion-screen">
         <div class="completion-icon">🎉</div>
-        <h2>Review Complete!</h2>
+        <h2>مرور تکمیل شد!</h2>
         <div class="stats-grid">
           <div class="stat-card">
             <div class="stat-icon">📊</div>
             <div class="stat-value">{score}%</div>
-            <div class="stat-label">Score</div>
+            <div class="stat-label">امتیاز</div>
           </div>
           <div class="stat-card">
             <div class="stat-icon">✅</div>
             <div class="stat-value">{correctCount}/{reviewedCount}</div>
-            <div class="stat-label">Correct</div>
+            <div class="stat-label">صحیح</div>
           </div>
           <div class="stat-card">
             <div class="stat-icon">🎴</div>
             <div class="stat-value">{reviewedCount}</div>
-            <div class="stat-label">Cards Reviewed</div>
+            <div class="stat-label">کارت مرور شده</div>
           </div>
         </div>
         <div class="completion-actions">
-          <a href="/" class="primary-btn">Back to Dashboard</a>
-          <a href="/vocabulary" class="secondary-btn">View Vocabulary List</a>
+          <a href="/" class="primary-btn">بازگشت به داشبورد</a>
+          <a href="/vocabulary" class="secondary-btn">مشاهده واژگان</a>
         </div>
       </div>
     {:else if dueCards.length === 0}
       <div class="empty-state">
         <div class="empty-icon">🎊</div>
-        <h2>No Cards Due!</h2>
-        <p>Great job! You've reviewed all your vocabulary.</p>
-        <p class="empty-subtitle">Come back later when more cards are due for review.</p>
+        <h2>کارتی برای مرور نیست!</h2>
+        <p>آفرین! همه واژگان خود را مرور کرده‌اید.</p>
+        <p class="empty-subtitle">بعداً بازگردید زمانی که کارت‌های بیشتری آماده مرور هستند.</p>
         <div class="empty-actions">
-          <a href="/" class="primary-btn">Back to Dashboard</a>
-          <a href="/vocabulary" class="secondary-btn">View Vocabulary List</a>
+          <a href="/" class="primary-btn">بازگشت به داشبورد</a>
+          <a href="/vocabulary" class="secondary-btn">مشاهده واژگان</a>
         </div>
       </div>
     {:else if currentCard}

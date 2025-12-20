@@ -2,6 +2,7 @@
   import type { WordOrderStep } from "$lib/content-model";
   import { createEventDispatcher } from "svelte";
   import BiDiText from "$lib/components/ui/BiDiText.svelte";
+  import { detectDirection } from "$lib/utils/bidi";
 
   export let step: WordOrderStep;
 
@@ -13,6 +14,8 @@
   let canRetry = false;
 
   $: availableWords = step.words.map((_, i) => i).filter(i => !selectedWords.includes(i));
+  // Detect direction from the correct sentence or words
+  $: sentenceDir = detectDirection(step.correctSentence?.de || step.words.join(' '));
 
   function selectWord(index: number) {
     if (isAnswered) return;
@@ -53,9 +56,9 @@
     <p class="instruction" dir="rtl"><BiDiText text={step.instruction} /></p>
   {/if}
 
-  <div class="answer-area" class:correct={isAnswered && isCorrect} class:wrong={isAnswered && !isCorrect}>
+  <div class="answer-area" dir={sentenceDir} class:correct={isAnswered && isCorrect} class:wrong={isAnswered && !isCorrect}>
     {#if selectedWords.length === 0}
-      <span class="placeholder">Tap words below to build the sentence</span>
+      <span class="placeholder">روی کلمات زیر بزنید تا جمله بسازید</span>
     {:else}
       {#each selectedWords as wordIdx, i}
         <button
@@ -69,7 +72,7 @@
     {/if}
   </div>
 
-  <div class="words-pool">
+  <div class="words-pool" dir={sentenceDir}>
     {#each step.words as word, i}
       <button
         class="word-chip"
@@ -84,28 +87,28 @@
 
   {#if !isAnswered && selectedWords.length === step.words.length}
     <button class="check-btn" on:click={checkAnswer}>
-      Check Answer
+      بررسی پاسخ
     </button>
   {/if}
 
   {#if isAnswered && isCorrect}
     <div class="success-section">
-      <p class="feedback-text success">Correct!</p>
+      <p class="feedback-text success">آفرین! صحیح است</p>
       <p class="translation">{step.correctSentence.fa}</p>
     </div>
   {/if}
 
   {#if canRetry}
     <div class="retry-section">
-      <p class="feedback-text">Not quite right!</p>
+      <p class="feedback-text">پاسخ صحیح نیست!</p>
       <p class="correct-answer">
-        <strong>Correct:</strong> {step.correctSentence.de}
+        <strong>پاسخ صحیح:</strong> {step.correctSentence.de}
       </p>
       <p class="translation">{step.correctSentence.fa}</p>
       {#if step.feedback?.explanation}
         <p class="explanation">{step.feedback.explanation}</p>
       {/if}
-      <button class="retry-btn" on:click={retry}>Retry</button>
+      <button class="retry-btn" on:click={retry}>تلاش مجدد</button>
     </div>
   {/if}
 </div>

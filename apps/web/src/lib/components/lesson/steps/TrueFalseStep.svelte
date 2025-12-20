@@ -59,7 +59,7 @@
       disabled={isAnswered}
     >
       <span class="icon">✓</span>
-      <span class="label">True</span>
+      <span class="label">درست</span>
     </button>
 
     <button
@@ -71,13 +71,13 @@
       disabled={isAnswered}
     >
       <span class="icon">✗</span>
-      <span class="label">False</span>
+      <span class="label">نادرست</span>
     </button>
   </div>
 
   {#if isAnswered && isCorrect}
     <div class="success-section">
-      <p class="feedback-text success">Correct!</p>
+      <p class="feedback-text success">آفرین! صحیح است</p>
       {#if step.feedback?.explanation}
         <p class="explanation">{step.feedback.explanation}</p>
       {/if}
@@ -86,14 +86,14 @@
 
   {#if canRetry}
     <div class="retry-section">
-      <p class="feedback-text">Not quite!</p>
+      <p class="feedback-text">پاسخ صحیح نیست!</p>
       <p class="correct-answer">
-        The correct answer is: <strong>{step.correctAnswer ? 'True' : 'False'}</strong>
+        پاسخ صحیح: <strong>{step.correctAnswer ? 'درست' : 'نادرست'}</strong>
       </p>
       {#if step.feedback?.explanation}
         <p class="explanation">{step.feedback.explanation}</p>
       {/if}
-      <button class="retry-btn" on:click={retry}>Retry</button>
+      <button class="retry-btn" on:click={retry}>تلاش مجدد</button>
     </div>
   {/if}
 </div>

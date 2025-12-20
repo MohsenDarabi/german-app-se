@@ -44,12 +44,12 @@
   }
 
   function getButtonText(status: string, progress: any): string {
-    if (status === 'locked') return 'Locked';
-    if (status === 'completed') return `Review (${progress?.score || 0}%)`;
+    if (status === 'locked') return 'قفل';
+    if (status === 'completed') return `مرور (${progress?.score || 0}%)`;
     if (status === 'in-progress' && progress?.currentStepIndex > 0) {
-      return `Resume (Step ${progress.currentStepIndex})`;
+      return `ادامه (مرحله ${progress.currentStepIndex})`;
     }
-    return 'Start';
+    return 'شروع';
   }
 
   function getIcon(status: string): string {
@@ -60,10 +60,10 @@
   }
 </script>
 
-<div class="dashboard">
+<div class="dashboard" dir="rtl">
   <header class="header">
-    <h1>Your Learning Path</h1>
-    <p class="subtitle">German A1</p>
+    <h1>مسیر یادگیری شما</h1>
+    <p class="subtitle">آلمانی سطح A1</p>
 
     <!-- Stats Header -->
     {#if $user || $completedCount}
@@ -71,22 +71,22 @@
         <div class="stat">
           <span class="stat-icon">🔥</span>
           <span class="stat-value">{$user?.streak || 0}</span>
-          <span class="stat-label">day streak</span>
+          <span class="stat-label">روز متوالی</span>
         </div>
         <div class="stat">
           <span class="stat-icon">⭐</span>
           <span class="stat-value">{$user?.xp || 0}</span>
-          <span class="stat-label">XP</span>
+          <span class="stat-label">امتیاز</span>
         </div>
         <div class="stat">
           <span class="stat-icon">✅</span>
           <span class="stat-value">{$completedCount || 0}</span>
-          <span class="stat-label">completed</span>
+          <span class="stat-label">تکمیل شده</span>
         </div>
         <div class="stat">
           <span class="stat-icon">🎴</span>
           <span class="stat-value">{$dueCardsCount || 0}</span>
-          <span class="stat-label">cards due</span>
+          <span class="stat-label">کارت برای مرور</span>
         </div>
       </div>
     {/if}
@@ -94,7 +94,7 @@
     <!-- Review Button -->
     {#if $dueCardsCount > 0}
       <a href="/review/flashcards" class="review-btn">
-        🎴 Review Flashcards ({$dueCardsCount} due)
+        🎴 مرور کارت‌ها ({$dueCardsCount} کارت)
       </a>
     {/if}
   </header>
@@ -167,9 +167,9 @@
 
   .stats-header {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
   }
 

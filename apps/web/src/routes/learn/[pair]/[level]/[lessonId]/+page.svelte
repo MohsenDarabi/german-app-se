@@ -111,20 +111,20 @@
     {#if completionStats}
       <!-- Final completion screen with stats -->
       <div class="completion-screen">
-        <h2>🎉 Lesson Complete!</h2>
+        <h2>🎉 درس تمام شد!</h2>
         <div class="stats-grid">
           <div class="stat-item">
             <span class="stat-icon">📊</span>
             <span class="stat-value">{completionStats.score}%</span>
-            <span class="stat-label">Score</span>
+            <span class="stat-label">امتیاز</span>
           </div>
           <div class="stat-item">
             <span class="stat-icon">⭐</span>
             <span class="stat-value">+{completionStats.xpEarned}</span>
-            <span class="stat-label">XP Earned</span>
+            <span class="stat-label">امتیاز کسب شده</span>
           </div>
         </div>
-        <button class="finish-btn" on:click={backToDashboard}>Back to Dashboard</button>
+        <button class="finish-btn" on:click={backToDashboard}>بازگشت به صفحه اصلی</button>
       </div>
     {:else if showReviewScreen}
       <!-- Review screen for wrong answers -->
@@ -149,7 +149,7 @@
         disabled={!$lessonStore.canContinue}
         on:click={handleContinue}
       >
-        Continue
+        ادامه
       </button>
     </footer>
   {/if}

@@ -7,10 +7,10 @@
   let vocabList = liveQuery(() => db.vocab.toArray());
 </script>
 
-<div class="vocab-page">
+<div class="vocab-page" dir="rtl">
   <header class="header">
-    <h1>Your Vocabulary</h1>
-    <p>Words you have saved.</p>
+    <h1>واژگان شما</h1>
+    <p>کلماتی که ذخیره کرده‌اید.</p>
   </header>
 
   {#if $vocabList}
@@ -30,13 +30,13 @@
         </div>
       {:else}
         <div class="empty-state">
-          <p>No words saved yet.</p>
-          <a href="/" class="start-btn">Start Learning</a>
+          <p>هنوز کلمه‌ای ذخیره نشده است.</p>
+          <a href="/" class="start-btn">شروع یادگیری</a>
         </div>
       {/each}
     </div>
   {:else}
-    <p>Loading...</p>
+    <p>در حال بارگذاری...</p>
   {/if}
 </div>
 

@@ -52,10 +52,10 @@
   }
 </script>
 
-<div class="review-container">
+<div class="review-container" dir="rtl">
   <div class="review-header">
-    <h2>📝 Review Time!</h2>
-    <p>Let's practice the questions you got wrong.</p>
+    <h2>📝 زمان مرور!</h2>
+    <p>بیایید سوالاتی که اشتباه پاسخ دادید را تمرین کنیم.</p>
     <div class="review-progress">
       {currentReviewIndex + 1} / {wrongAnswers.length}
     </div>
@@ -88,9 +88,9 @@
 
       {#if selectedAnswer && selectedAnswer !== currentWrong.correctAnswer}
         <div class="retry-section">
-          <p class="feedback-text">Try again!</p>
+          <p class="feedback-text">دوباره امتحان کنید!</p>
           <button class="retry-btn" on:click={retry}>
-            🔄 Retry
+            🔄 تلاش مجدد
           </button>
         </div>
       {/if}
@@ -99,10 +99,10 @@
 
   {#if allReviewed}
     <div class="completion-section">
-      <h3>🎉 Great job!</h3>
-      <p>You've reviewed all the questions. Now you're ready to complete the lesson.</p>
+      <h3>🎉 آفرین!</h3>
+      <p>شما همه سوالات را مرور کردید. حالا آماده تکمیل درس هستید.</p>
       <button class="complete-btn" on:click={completeReview}>
-        Complete Lesson
+        تکمیل درس
       </button>
     </div>
   {/if}

@@ -70,9 +70,9 @@
 
   {#if canRetry}
     <div class="retry-section">
-      <p class="feedback-text">❌ Try again! The correct answer is highlighted above.</p>
+      <p class="feedback-text">❌ دوباره امتحان کنید! پاسخ صحیح بالا مشخص شده است.</p>
       <button class="retry-btn" on:click={retry}>
-        🔄 Retry
+        🔄 تلاش مجدد
       </button>
     </div>
   {/if}
