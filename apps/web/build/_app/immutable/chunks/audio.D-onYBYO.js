@@ -1,0 +1,1 @@
+function o(n,t="de-DE"){if(!("speechSynthesis"in window)){console.warn("Text-to-speech not supported in this browser.");return}window.speechSynthesis.cancel();const e=new SpeechSynthesisUtterance(n);e.lang=t,e.rate=.9;const s=window.speechSynthesis.getVoices().find(i=>i.lang.startsWith("de"));s&&(e.voice=s),window.speechSynthesis.speak(e)}export{o as p};
