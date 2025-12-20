@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { TranslationStep } from "$lib/content-model";
   import { createEventDispatcher } from "svelte";
+  import BiDiText from "$lib/components/ui/BiDiText.svelte";
 
   export let step: TranslationStep;
 
@@ -68,7 +69,7 @@
 <div class="translation-container">
   <div class="source-text">
     <span class="label">Translate:</span>
-    <p class="text">{step.sourceText}</p>
+    <p class="text" dir="rtl"><BiDiText text={step.sourceText} /></p>
   </div>
 
   <div class="answer-area" class:correct={isAnswered && isCorrect} class:wrong={isAnswered && !isCorrect}>

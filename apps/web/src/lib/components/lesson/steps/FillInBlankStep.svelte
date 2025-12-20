@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { FillInBlankStep } from "$lib/content-model";
   import { createEventDispatcher } from "svelte";
+  import BiDiText from "$lib/components/ui/BiDiText.svelte";
 
   export let step: FillInBlankStep;
 
@@ -57,7 +58,7 @@
 
 <div class="fill-blank-container">
   {#if step.instruction}
-    <p class="instruction">{step.instruction}</p>
+    <p class="instruction" dir="rtl"><BiDiText text={step.instruction} /></p>
   {/if}
 
   <div class="sentence-area">

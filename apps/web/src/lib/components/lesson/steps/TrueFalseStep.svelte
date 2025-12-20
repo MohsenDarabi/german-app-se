@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { TrueFalseStep } from "$lib/content-model";
   import { createEventDispatcher } from "svelte";
+  import BiDiText from "$lib/components/ui/BiDiText.svelte";
 
   export let step: TrueFalseStep;
 
@@ -38,13 +39,13 @@
 
 <div class="true-false-container">
   {#if step.instruction}
-    <p class="instruction">{step.instruction}</p>
+    <p class="instruction" dir="rtl"><BiDiText text={step.instruction} /></p>
   {/if}
 
   <div class="statement-card">
-    <p class="statement">{step.statement}</p>
+    <p class="statement"><BiDiText text={step.statement} /></p>
     {#if step.statementExplanation}
-      <p class="statement-explanation">{step.statementExplanation}</p>
+      <p class="statement-explanation" dir="rtl"><BiDiText text={step.statementExplanation} /></p>
     {/if}
   </div>
 

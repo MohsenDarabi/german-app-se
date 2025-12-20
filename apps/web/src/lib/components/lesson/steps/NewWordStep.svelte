@@ -4,6 +4,7 @@
   import { onMount } from "svelte";
   import { liveQuery } from "dexie";
   import { playText } from "$lib/utils/audio";
+  import BiDiText from "$lib/components/ui/BiDiText.svelte";
 
   export let step: NewWordStep;
 
@@ -62,7 +63,7 @@
       </button>
     </div>
 
-    <p class="translation">{step.word.fa}</p>
+    <p class="translation" dir="rtl"><BiDiText text={step.word.fa} /></p>
 
     <button
       class="save-btn"
@@ -75,7 +76,7 @@
     {#if step.example}
       <div class="sentence-box">
         <p class="sentence-text">{step.example.text.de}</p>
-        <p class="sentence-translation">{step.example.text.fa}</p>
+        <p class="sentence-translation" dir="rtl"><BiDiText text={step.example.text.fa} /></p>
         <p class="sentence-label">مثال در جمله</p>
       </div>
     {/if}

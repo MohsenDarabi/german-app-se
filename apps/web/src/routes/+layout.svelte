@@ -72,4 +72,21 @@
       padding-inline: 0;
     }
   }
+
+  /* Global BiDi (Bidirectional Text) Styles */
+  :global(.bidi-rtl) {
+    direction: rtl;
+    unicode-bidi: isolate;
+    text-align: right;
+  }
+
+  :global(.bidi-ltr) {
+    direction: ltr;
+    unicode-bidi: isolate;
+    display: inline;
+  }
+
+  :global(.bidi-mixed) {
+    unicode-bidi: plaintext;
+  }
 </style>

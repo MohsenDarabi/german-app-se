@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { DialogStep } from "$lib/content-model";
   import { playText } from "$lib/utils/audio";
+  import BiDiText from "$lib/components/ui/BiDiText.svelte";
 
   export let step: DialogStep;
 
@@ -22,7 +23,7 @@
       <div class="chat-bubble">
         <div class="speaker-name">{line.speaker}</div>
         <p class="dialog-text">{line.text.de}</p>
-        <p class="dialog-translation">{line.text.fa}</p>
+        <p class="dialog-translation" dir="rtl"><BiDiText text={line.text.fa} /></p>
         <button class="audio-btn-small" on:click={() => playLineAudio(line)} aria-label="Play audio">
           🔊
         </button>

@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { WordQuizStep, MultipleChoiceStep } from "$lib/content-model";
   import { createEventDispatcher } from "svelte";
+  import BiDiText from "$lib/components/ui/BiDiText.svelte";
 
   export let step: WordQuizStep | MultipleChoiceStep | any;
 
@@ -43,7 +44,7 @@
 </script>
 
 <div class="quiz-container">
-  <h2 class="question">{question}</h2>
+  <h2 class="question" dir="rtl"><BiDiText text={question} /></h2>
 
   <div class="options-grid">
     {#each step.options as option, i (i)}

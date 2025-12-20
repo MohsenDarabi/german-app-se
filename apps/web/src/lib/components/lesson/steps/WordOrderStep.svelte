@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { WordOrderStep } from "$lib/content-model";
   import { createEventDispatcher } from "svelte";
+  import BiDiText from "$lib/components/ui/BiDiText.svelte";
 
   export let step: WordOrderStep;
 
@@ -49,7 +50,7 @@
 
 <div class="word-order-container">
   {#if step.instruction}
-    <p class="instruction">{step.instruction}</p>
+    <p class="instruction" dir="rtl"><BiDiText text={step.instruction} /></p>
   {/if}
 
   <div class="answer-area" class:correct={isAnswered && isCorrect} class:wrong={isAnswered && !isCorrect}>

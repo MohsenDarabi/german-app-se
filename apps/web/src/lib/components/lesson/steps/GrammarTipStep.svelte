@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { GrammarTipStep } from "$lib/content-model";
   import VocabPillList from "$lib/components/shared/VocabPillList.svelte";
+  import BiDiText from "$lib/components/ui/BiDiText.svelte";
 
   export let step: GrammarTipStep;
 
@@ -12,16 +13,16 @@
   $: isVocabList = hasVocabPairs(step.content);
 </script>
 
-<div class="grammar-card">
+<div class="grammar-card" dir="rtl">
   <div class="icon-header">
     <span class="bulb-icon">💡</span>
-    <h2 class="step-title">{step.title || 'نکته گرامری'}</h2>
+    <h2 class="step-title"><BiDiText text={step.title || 'نکته گرامری'} /></h2>
   </div>
 
   {#if isVocabList}
     <VocabPillList text={step.content} variant="warning" />
   {:else}
-    <p class="grammar-text">{step.content}</p>
+    <p class="grammar-text"><BiDiText text={step.content} /></p>
   {/if}
 
   {#if step.examples && step.examples.length > 0}
@@ -29,8 +30,8 @@
       <h3 class="examples-title">مثال‌ها:</h3>
       {#each step.examples as example}
         <div class="example-item">
-          <p class="example-de">{example.de}</p>
-          <p class="example-fa">{example.fa}</p>
+          <p class="example-de" dir="ltr">{example.de}</p>
+          <p class="example-fa"><BiDiText text={example.fa} /></p>
         </div>
       {/each}
     </div>
