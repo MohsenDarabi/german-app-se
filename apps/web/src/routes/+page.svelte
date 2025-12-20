@@ -3,6 +3,8 @@
   import { onMount } from "svelte";
   import { db } from "$lib/db";
   import { liveQuery } from "dexie";
+  import DevModeToggle from "$lib/components/dev/DevModeToggle.svelte";
+  import { devMode } from "$lib/stores/devMode";
 
   // Reactive queries for user stats and progress
   const user = liveQuery(() => db.users.get(1));
@@ -22,6 +24,14 @@
   $: allLessons = [...A1_MODULES, ...A2_MODULES].flatMap(m => m.lessons);
 
   function getLessonStatus(lessonId: string, index: number): 'locked' | 'in-progress' | 'completed' | 'unlocked' {
+    // Dev mode: all lessons unlocked
+    if ($devMode) {
+      const progress = $progressMap?.get(lessonId);
+      if (progress?.status === 'completed') return 'completed';
+      if (progress?.status === 'in-progress') return 'in-progress';
+      return 'unlocked';
+    }
+
     // First lesson is always unlocked
     if (index === 0 && !$progressMap?.has(lessonId)) {
       return 'unlocked';
@@ -192,6 +202,9 @@
     </div>
   </div>
 </div>
+
+<!-- Dev Mode Toggle (only visible in development) -->
+<DevModeToggle />
 
 <style>
   .dashboard {
