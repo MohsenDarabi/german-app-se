@@ -18,6 +18,9 @@
     return await db.vocab.where('nextReview').belowOrEqual(now).count();
   });
 
+  // Combine all lessons for sequential unlocking
+  $: allLessons = [...A1_MODULES, ...A2_MODULES].flatMap(m => m.lessons);
+
   function getLessonStatus(lessonId: string, index: number): 'locked' | 'in-progress' | 'completed' | 'unlocked' {
     // First lesson is always unlocked
     if (index === 0 && !$progressMap?.has(lessonId)) {
@@ -29,12 +32,13 @@
     if (!progress) {
       // No progress - check if previous lesson is completed
       if (index > 0) {
-        const lessons = A1_MODULES.flatMap(m => m.lessons);
-        const prevLesson = lessons[index - 1];
-        const prevProgress = $progressMap?.get(prevLesson.id);
+        const prevLesson = allLessons[index - 1];
+        if (prevLesson) {
+          const prevProgress = $progressMap?.get(prevLesson.id);
 
-        if (!prevProgress || prevProgress.status !== 'completed') {
-          return 'locked';
+          if (!prevProgress || prevProgress.status !== 'completed') {
+            return 'locked';
+          }
         }
       }
       return 'unlocked';
