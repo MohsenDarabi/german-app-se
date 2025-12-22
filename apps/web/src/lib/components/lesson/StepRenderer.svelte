@@ -10,25 +10,26 @@
   import TrueFalseStep from "./steps/TrueFalseStep.svelte";
 
   export let step: LessonStep;
+  export let lessonId: string = '';
 </script>
 
 <div class="step-wrapper">
   {#if step.type === "word-quiz" || step.type === "multiple-choice"}
-    <WordQuizStep {step} on:answer />
+    <WordQuizStep {step} {lessonId} on:answer />
   {:else if step.type === "new-word"}
-    <NewWordStep {step} />
+    <NewWordStep {step} {lessonId} />
   {:else if step.type === "grammar-tip"}
-    <GrammarTipStep {step} />
+    <GrammarTipStep {step} {lessonId} />
   {:else if step.type === "dialog"}
-    <DialogStep {step} />
+    <DialogStep {step} {lessonId} />
   {:else if step.type === "fill-in-blank"}
-    <FillInBlankStep {step} on:answer />
+    <FillInBlankStep {step} {lessonId} on:answer />
   {:else if step.type === "word-order"}
-    <WordOrderStep {step} on:answer />
+    <WordOrderStep {step} {lessonId} on:answer />
   {:else if step.type === "translation"}
-    <TranslationStep {step} on:answer />
+    <TranslationStep {step} {lessonId} on:answer />
   {:else if step.type === "true-false"}
-    <TrueFalseStep {step} on:answer />
+    <TrueFalseStep {step} {lessonId} on:answer />
   {:else}
     <div class="unknown-step">
       <p>Unknown step type: {step.type}</p>

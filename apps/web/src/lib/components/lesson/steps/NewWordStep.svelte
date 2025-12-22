@@ -3,10 +3,12 @@
   import { db } from "$lib/db";
   import { onMount } from "svelte";
   import { liveQuery } from "dexie";
-  import { playText } from "$lib/utils/audio";
+  import { playGerman } from "$lib/utils/audio";
   import BiDiText from "$lib/components/ui/BiDiText.svelte";
+  import AudioButton from "$lib/components/ui/AudioButton.svelte";
 
   export let step: NewWordStep;
+  export let lessonId: string = '';
 
   let isSaved = false;
 
@@ -38,9 +40,6 @@
     }
   }
 
-  function playAudio() {
-    playText(step.word.de, 'de-DE');
-  }
 </script>
 
 <div class="card-container">
@@ -58,9 +57,12 @@
   <div class="content-area">
     <div class="word-row">
       <h2 class="german-word">{step.word.de}</h2>
-      <button class="audio-btn" on:click={playAudio} aria-label="Play Audio">
-        🔊
-      </button>
+      <AudioButton
+        text={step.word.de}
+        {lessonId}
+        audioId="{step.id}-word"
+        size="md"
+      />
     </div>
 
     <p class="translation" dir="rtl"><BiDiText text={step.word.fa} /></p>
@@ -75,7 +77,15 @@
 
     {#if step.example}
       <div class="sentence-box">
-        <p class="sentence-text">{step.example.text.de}</p>
+        <div class="sentence-row">
+          <p class="sentence-text">{step.example.text.de}</p>
+          <AudioButton
+            text={step.example.text.de}
+            {lessonId}
+            audioId="{step.id}-example"
+            size="sm"
+          />
+        </div>
         <p class="sentence-translation" dir="rtl"><BiDiText text={step.example.text.fa} /></p>
         <p class="sentence-label">مثال در جمله</p>
       </div>
@@ -134,24 +144,6 @@
     color: #1e293b;
   }
 
-  .audio-btn {
-    background: #e0f2fe;
-    border: none;
-    border-radius: 50%;
-    width: 2.5rem;
-    height: 2.5rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    transition: background 0.2s;
-  }
-
-  .audio-btn:hover {
-    background: #bae6fd;
-  }
-
   .translation {
     font-size: 1.25rem;
     color: #64748b;
@@ -183,6 +175,13 @@
     border-radius: 0.75rem;
     border: 1px solid #e2e8f0;
     width: 100%;
+  }
+
+  .sentence-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
   }
 
   .sentence-text {

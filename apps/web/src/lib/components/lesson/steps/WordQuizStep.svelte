@@ -2,8 +2,10 @@
   import type { WordQuizStep, MultipleChoiceStep } from "$lib/content-model";
   import { createEventDispatcher } from "svelte";
   import BiDiText from "$lib/components/ui/BiDiText.svelte";
+  import AudioButton from "$lib/components/ui/AudioButton.svelte";
 
   export let step: WordQuizStep | MultipleChoiceStep | any;
+  export let lessonId: string = '';
 
   let selectedIndex: number | null = null;
   let isAnswered = false;

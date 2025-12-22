@@ -2,8 +2,10 @@
   import type { TrueFalseStep } from "$lib/content-model";
   import { createEventDispatcher } from "svelte";
   import BiDiText from "$lib/components/ui/BiDiText.svelte";
+  import AudioButton from "$lib/components/ui/AudioButton.svelte";
 
   export let step: TrueFalseStep;
+  export let lessonId: string = '';
 
   const dispatch = createEventDispatcher();
 
@@ -43,7 +45,15 @@
   {/if}
 
   <div class="statement-card">
-    <p class="statement"><BiDiText text={step.statement} /></p>
+    <div class="statement-row">
+      <p class="statement"><BiDiText text={step.statement} /></p>
+      <AudioButton
+        text={step.statement}
+        {lessonId}
+        audioId="{step.id}-statement"
+        size="md"
+      />
+    </div>
     {#if step.statementExplanation}
       <p class="statement-explanation" dir="rtl"><BiDiText text={step.statementExplanation} /></p>
     {/if}
@@ -118,6 +128,13 @@
     border: 2px solid #e2e8f0;
     border-radius: 1rem;
     text-align: center;
+  }
+
+  .statement-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
   }
 
   .statement {

@@ -136,7 +136,7 @@
       <!-- Regular lesson steps -->
       {#key $currentStep.id}
         <div class="step-animation">
-          <StepRenderer step={$currentStep} on:answer={handleAnswer} />
+          <StepRenderer step={$currentStep} lessonId={data.lesson.id} on:answer={handleAnswer} />
         </div>
       {/key}
     {/if}

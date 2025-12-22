@@ -2,9 +2,11 @@
   import type { TranslationStep } from "$lib/content-model";
   import { createEventDispatcher } from "svelte";
   import BiDiText from "$lib/components/ui/BiDiText.svelte";
+  import AudioButton from "$lib/components/ui/AudioButton.svelte";
   import { detectDirection } from "$lib/utils/bidi";
 
   export let step: TranslationStep;
+  export let lessonId: string = '';
 
   const dispatch = createEventDispatcher();
 
@@ -122,7 +124,15 @@
   {#if isAnswered && isCorrect}
     <div class="success-section">
       <p class="feedback-text success">آفرین! صحیح است</p>
-      <p class="correct-translation">{step.correctTranslation.de}</p>
+      <div class="audio-row">
+        <p class="correct-translation">{step.correctTranslation.de}</p>
+        <AudioButton
+          text={step.correctTranslation.de}
+          {lessonId}
+          audioId="{step.id}-translation"
+          size="md"
+        />
+      </div>
     </div>
   {/if}
 
@@ -292,6 +302,13 @@
     border: 2px solid #86efac;
     border-radius: 0.75rem;
     text-align: center;
+  }
+
+  .audio-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
   }
 
   .retry-section {

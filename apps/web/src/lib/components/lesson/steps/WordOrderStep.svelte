@@ -2,9 +2,11 @@
   import type { WordOrderStep } from "$lib/content-model";
   import { createEventDispatcher } from "svelte";
   import BiDiText from "$lib/components/ui/BiDiText.svelte";
+  import AudioButton from "$lib/components/ui/AudioButton.svelte";
   import { detectDirection } from "$lib/utils/bidi";
 
   export let step: WordOrderStep;
+  export let lessonId: string = '';
 
   const dispatch = createEventDispatcher();
 
@@ -94,6 +96,14 @@
   {#if isAnswered && isCorrect}
     <div class="success-section">
       <p class="feedback-text success">آفرین! صحیح است</p>
+      <div class="audio-row">
+        <AudioButton
+          text={step.correctSentence.de}
+          {lessonId}
+          audioId="{step.id}-sentence"
+          size="md"
+        />
+      </div>
       <p class="translation">{step.correctSentence.fa}</p>
     </div>
   {/if}
@@ -217,6 +227,12 @@
     border: 2px solid #86efac;
     border-radius: 0.75rem;
     text-align: center;
+  }
+
+  .audio-row {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem 0;
   }
 
   .retry-section {

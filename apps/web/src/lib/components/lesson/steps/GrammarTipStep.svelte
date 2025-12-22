@@ -2,8 +2,10 @@
   import type { GrammarTipStep } from "$lib/content-model";
   import VocabPillList from "$lib/components/shared/VocabPillList.svelte";
   import BiDiText from "$lib/components/ui/BiDiText.svelte";
+  import AudioButton from "$lib/components/ui/AudioButton.svelte";
 
   export let step: GrammarTipStep;
+  export let lessonId: string = '';
 
   // Check if content contains vocab pairs pattern (e.g., "vier (۴)، fünf (۵)")
   function hasVocabPairs(text: string): boolean {
@@ -28,9 +30,17 @@
   {#if step.examples && step.examples.length > 0}
     <div class="examples-section">
       <h3 class="examples-title">مثال‌ها:</h3>
-      {#each step.examples as example}
+      {#each step.examples as example, idx}
         <div class="example-item">
-          <p class="example-de" dir="ltr">{example.de}</p>
+          <div class="example-row">
+            <p class="example-de" dir="ltr">{example.de}</p>
+            <AudioButton
+              text={example.de}
+              {lessonId}
+              audioId="{step.id}-example{idx}"
+              size="sm"
+            />
+          </div>
           <p class="example-fa"><BiDiText text={example.fa} /></p>
         </div>
       {/each}
@@ -77,10 +87,16 @@
     margin-bottom: 0.75rem;
     padding-left: 1rem;
   }
+  .example-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
   .example-de {
     font-size: 0.95rem;
     color: #78350f;
     margin-bottom: 0.25rem;
+    margin: 0;
   }
   .example-fa {
     font-size: 0.85rem;
