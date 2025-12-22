@@ -3,7 +3,7 @@
  * Audio Generation Script for German Learning App
  *
  * Features:
- * - Uses Google Cloud TTS Neural2 voices (high quality, API key compatible)
+ * - Uses Google Cloud TTS Chirp3-HD voices (highest quality)
  * - Deduplicates texts (same text = generate once, copy to all locations)
  * - Tracks character usage with monthly reset
  * - Maintains manifest of generated audio
@@ -117,15 +117,14 @@ async function getAccessToken() {
 // ============================================
 
 const CONFIG = {
-  // Google Cloud TTS settings - Neural2 for high quality with API key support
+  // Google Cloud TTS settings - Chirp3-HD for highest quality
   voice: {
     languageCode: 'de-DE',
-    name: 'de-DE-Neural2-C', // Neural2-C = female voice, high quality
+    name: 'de-DE-Chirp3-HD-Aoede', // Chirp3-HD female voice (highest quality)
   },
   audioConfig: {
     audioEncoding: 'MP3',
-    speakingRate: 0.9,  // Slightly slower for learners
-    pitch: 0.0,
+    // Note: Chirp3-HD doesn't support speakingRate or pitch control
   },
 
   // Paths
@@ -206,7 +205,7 @@ function loadUsage() {
     billingMonth: currentMonth,
     charactersUsed: 0,
     freeLimit: CONFIG.freeLimit,
-    voiceType: 'Neural2',
+    voiceType: 'Chirp3-HD',
     lastUpdated: new Date().toISOString(),
     history: []
   };
@@ -455,7 +454,7 @@ function findAllLessons(dir) {
 // ============================================
 
 async function main() {
-  console.log('🎵 German Learning App - Audio Generator (Neural2)');
+  console.log('🎵 German Learning App - Audio Generator (Chirp3-HD)');
   console.log('═══════════════════════════════════════════════════════\n');
 
   // Parse command line args
@@ -664,7 +663,7 @@ async function main() {
         hash,
         filePath: primaryPath,
         generatedAt: new Date().toISOString(),
-        voiceType: 'Neural2',
+        voiceType: 'Chirp3-HD',
         fileSize: result.size,
         charCount: text.length,
       };
