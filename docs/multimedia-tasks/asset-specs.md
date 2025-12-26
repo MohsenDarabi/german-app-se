@@ -2,6 +2,8 @@
 
 Detailed specifications for creating images and videos for the German learning app.
 
+> **Scope**: Images and videos only. Audio/TTS is handled separately by project lead.
+
 ---
 
 ## Image Specifications

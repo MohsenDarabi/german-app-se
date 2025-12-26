@@ -1,6 +1,9 @@
 # Multimedia Task Board
 
-This folder contains structured task files for creating images and videos for the German learning app.
+This folder contains structured task files for creating **images and videos** for the German learning app.
+
+> **Note**: Audio (TTS) is handled separately by the project lead using Google Cloud TTS.
+> Your tasks are **images and videos only**.
 
 ## How This Works
 
