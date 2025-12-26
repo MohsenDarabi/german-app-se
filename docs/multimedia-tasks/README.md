@@ -1,5 +1,7 @@
 # Multimedia Task Board
 
+> **START HERE:** Open **[START-HERE.md](./START-HERE.md)** - it has everything you need in one file!
+
 This folder contains structured task files for creating **images and videos** for the German learning app.
 
 > **Note**: Audio (TTS) is handled separately by the project lead using Google Cloud TTS.
