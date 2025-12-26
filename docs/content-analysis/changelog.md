@@ -101,10 +101,45 @@ Track of content comparisons with Busuu and enhancements made.
 
 ---
 
-## Module 3: Alltag (Daily Routine)
+## Module 3: Alltag (Daily Life)
 
 **Busuu Sources:** Chapter 29
-**Date:** Pending
+**Date:** 2025-12-26
+
+### Content Created from Busuu Chapter 29
+
+| Busuu Content | Lesson | Status |
+|---------------|--------|--------|
+| Daily routines (aufstehen, frühstücken, etc.) | L07 | Created |
+| Separable verbs (aufstehen, einkaufen) | L07 | Created |
+| Time expressions (halb sieben) | L07 | Created |
+| Bathroom vocabulary (duschen, Zähne putzen) | L08 | Created |
+| Reflexive pronouns (mich, dich, sich) | L08 | Created |
+| Reflexive with Dativ (mir, dir) | L08 | Created |
+
+### Lesson Structure
+
+#### L06: Der, die oder das? (Already existed)
+- Furniture vocabulary
+- Gender of nouns
+- Colors and adjectives
+- 16 steps
+
+#### L07: Mein Tag (NEW - Daily Routine)
+- aufstehen, frühstücken, abendessen, ins Bett gehen
+- zur Arbeit gehen, verschlafen
+- sich anziehen
+- Separable verbs grammar
+- Time expressions (halb sieben)
+- 18 steps
+
+#### L08: Im Badezimmer (NEW - Personal Hygiene)
+- duschen, sich die Zähne putzen
+- sich die Haare bürsten, sich rasieren
+- sich schminken, sich waschen
+- Reflexive pronouns (Akkusativ vs Dativ)
+- Bathroom nouns (Badezimmer, Dusche, Zahnbürste)
+- 18 steps
 
 ---
 
