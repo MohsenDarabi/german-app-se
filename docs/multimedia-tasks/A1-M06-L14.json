@@ -1,0 +1,342 @@
+{
+  "lessonId": "A1-1-M06-L14",
+  "lessonTitle": {
+    "de": "Beschreibungen: Dinge",
+    "fa": "توصیفات: اشیاء"
+  },
+  "module": 6,
+  "priority": "high",
+  "createdAt": "2025-12-26",
+  "tasks": [
+    {
+      "id": "vid-01",
+      "type": "video",
+      "stepId": "s1",
+      "stepType": "dialog",
+      "description": "Lisa and Tom are in a bookstore or library. Lisa picks up a large, thick book and asks: 'Schau mal! Was ist das?' Tom examines it: 'Das ist ein Buch. Ein großes, dickes Buch.' Lisa: 'Und ist es teuer?' Tom: 'Nein, es ist nicht teuer. Es ist günstig und sehr interessant. Ziemlich schwer! Es ist ein altes Wörterbuch.'",
+      "context": "Dialog demonstrating how to describe objects and their properties",
+      "specs": {
+        "duration": "20-25 seconds",
+        "format": "mp4",
+        "resolution": "1080p",
+        "audio": "Clear German pronunciation, conversational tone"
+      },
+      "outputPath": "videos/A1-1-M06-L14/describing-book-dialog.mp4",
+      "status": "pending",
+      "assignee": null,
+      "notes": "Show the book clearly, actors should handle it to show weight and size."
+    },
+    {
+      "id": "img-01",
+      "type": "image",
+      "stepId": "s3",
+      "stepType": "new-word",
+      "description": "A large, thick book (großes, dickes Buch) on a table with clear visibility of its size and thickness.",
+      "context": "Vocabulary: 'das Buch' (book)",
+      "specs": {
+        "dimensions": "800x600",
+        "format": "jpg",
+        "style": "clear product shot, neutral background"
+      },
+      "outputPath": "images/A1-1-M06-L14/buch-gross-dick.jpg",
+      "status": "pending",
+      "assignee": null,
+      "notes": "Book should look substantial and heavy"
+    },
+    {
+      "id": "img-02",
+      "type": "image",
+      "stepId": "s4",
+      "stepType": "new-word",
+      "description": "A large, round table (großer, runder Tisch) in a room, showing its full size and shape clearly.",
+      "context": "Vocabulary: 'der Tisch' (table)",
+      "specs": {
+        "dimensions": "800x600",
+        "format": "jpg",
+        "style": "clear, well-lit interior shot"
+      },
+      "outputPath": "images/A1-1-M06-L14/tisch-gross-rund.jpg",
+      "status": "pending",
+      "assignee": null,
+      "notes": "Table should be prominent in frame"
+    },
+    {
+      "id": "img-03",
+      "type": "image",
+      "stepId": "s5",
+      "stepType": "grammar-tip",
+      "description": "Comparison image showing size contrasts: two books (groß vs. klein), two tables (lang vs. kurz), two items (breit vs. schmal). Side-by-side comparisons with labels.",
+      "context": "Grammar: Size adjectives (groß, klein, lang, kurz, breit, schmal)",
+      "specs": {
+        "dimensions": "800x600",
+        "format": "jpg",
+        "style": "educational, clear comparisons"
+      },
+      "outputPath": "images/A1-1-M06-L14/groesse-vergleich.jpg",
+      "status": "pending",
+      "assignee": null,
+      "notes": "Make size differences obvious"
+    },
+    {
+      "id": "img-04",
+      "type": "image",
+      "stepId": "s6",
+      "stepType": "new-word",
+      "description": "A heavy package (schweres Paket) being lifted by someone with visible effort, showing the weight.",
+      "context": "Vocabulary: 'schwer' (heavy)",
+      "specs": {
+        "dimensions": "800x600",
+        "format": "jpg",
+        "style": "realistic, showing effort"
+      },
+      "outputPath": "images/A1-1-M06-L14/schwer-paket.jpg",
+      "status": "pending",
+      "assignee": null,
+      "notes": "Person's posture should show the weight"
+    },
+    {
+      "id": "img-05",
+      "type": "image",
+      "stepId": "s7",
+      "stepType": "new-word",
+      "description": "A light bag (leichte Tasche) being easily held with one finger or carried effortlessly, showing lightness.",
+      "context": "Vocabulary: 'leicht' (light/easy)",
+      "specs": {
+        "dimensions": "800x600",
+        "format": "jpg",
+        "style": "clear, showing ease"
+      },
+      "outputPath": "images/A1-1-M06-L14/leicht-tasche.jpg",
+      "status": "pending",
+      "assignee": null,
+      "notes": "Contrast with heavy package"
+    },
+    {
+      "id": "img-06",
+      "type": "image",
+      "stepId": "s8",
+      "stepType": "new-word",
+      "description": "An expensive car (teures Auto) - luxury vehicle like a Mercedes or BMW with price tag visible or in upscale setting.",
+      "context": "Vocabulary: 'teuer' (expensive)",
+      "specs": {
+        "dimensions": "800x600",
+        "format": "jpg",
+        "style": "luxury, high-end"
+      },
+      "outputPath": "images/A1-1-M06-L14/teuer-auto.jpg",
+      "status": "pending",
+      "assignee": null,
+      "notes": "Should look clearly expensive"
+    },
+    {
+      "id": "img-07",
+      "type": "image",
+      "stepId": "s9",
+      "stepType": "new-word",
+      "description": "An affordable/cheap phone (günstiges Handy) with a sale tag or affordable price tag, simple model.",
+      "context": "Vocabulary: 'günstig' (affordable/cheap)",
+      "specs": {
+        "dimensions": "800x600",
+        "format": "jpg",
+        "style": "budget-friendly, sale context"
+      },
+      "outputPath": "images/A1-1-M06-L14/guenstig-handy.jpg",
+      "status": "pending",
+      "assignee": null,
+      "notes": "Should look affordable but decent quality"
+    },
+    {
+      "id": "img-08",
+      "type": "image",
+      "stepId": "s10",
+      "stepType": "grammar-tip",
+      "description": "Opposite pairs visual chart: groß↔klein, lang↔kurz, breit↔schmal, schwer↔leicht, teuer↔günstig, neu↔alt, gut↔schlecht. Each pair shown with contrasting images.",
+      "context": "Grammar: Opposite adjectives (Gegensätze)",
+      "specs": {
+        "dimensions": "800x600",
+        "format": "jpg",
+        "style": "educational, clear comparisons"
+      },
+      "outputPath": "images/A1-1-M06-L14/gegensaetze-chart.jpg",
+      "status": "pending",
+      "assignee": null,
+      "notes": "Make contrasts very clear visually"
+    },
+    {
+      "id": "img-09",
+      "type": "image",
+      "stepId": "s12",
+      "stepType": "new-word",
+      "description": "A brand new smartphone (neues Handy) still in box or with protective film, looking pristine and modern.",
+      "context": "Vocabulary: 'neu' (new)",
+      "specs": {
+        "dimensions": "800x600",
+        "format": "jpg",
+        "style": "clean, modern, pristine"
+      },
+      "outputPath": "images/A1-1-M06-L14/neu-handy.jpg",
+      "status": "pending",
+      "assignee": null,
+      "notes": "Should look brand new"
+    },
+    {
+      "id": "img-10",
+      "type": "image",
+      "stepId": "s13",
+      "stepType": "new-word",
+      "description": "An old, vintage book (altes Buch) with worn cover, yellowed pages, looking aged but well-maintained.",
+      "context": "Vocabulary: 'alt' (old)",
+      "specs": {
+        "dimensions": "800x600",
+        "format": "jpg",
+        "style": "vintage, aged appearance"
+      },
+      "outputPath": "images/A1-1-M06-L14/alt-buch.jpg",
+      "status": "pending",
+      "assignee": null,
+      "notes": "Should show age and character"
+    },
+    {
+      "id": "img-11",
+      "type": "image",
+      "stepId": "s15",
+      "stepType": "grammar-tip",
+      "description": "An interesting book cover (interessantes Buch) - showing engaging design, captivating title, colorful and attractive.",
+      "context": "Grammar: Quality adjectives - interessant",
+      "specs": {
+        "dimensions": "800x600",
+        "format": "jpg",
+        "style": "engaging, attractive design"
+      },
+      "outputPath": "images/A1-1-M06-L14/interessant-buch.jpg",
+      "status": "pending",
+      "assignee": null,
+      "notes": "Should look appealing and interesting"
+    },
+    {
+      "id": "img-12",
+      "type": "image",
+      "stepId": "s17",
+      "stepType": "new-word",
+      "description": "A boring film/movie scene (langweiliger Film) - showing someone yawning while watching TV or looking disinterested.",
+      "context": "Vocabulary: 'langweilig' (boring)",
+      "specs": {
+        "dimensions": "800x600",
+        "format": "jpg",
+        "style": "conveying boredom, disinterest"
+      },
+      "outputPath": "images/A1-1-M06-L14/langweilig-film.jpg",
+      "status": "pending",
+      "assignee": null,
+      "notes": "Person's expression should show boredom"
+    },
+    {
+      "id": "img-13",
+      "type": "image",
+      "stepId": "s5",
+      "stepType": "grammar-tip",
+      "description": "A thick book (dickes Buch) shown from the side to emphasize thickness, next to a thin book (dünnes Buch) for comparison.",
+      "context": "Grammar: Thickness - dick vs. dünn",
+      "specs": {
+        "dimensions": "800x600",
+        "format": "jpg",
+        "style": "side view, clear comparison"
+      },
+      "outputPath": "images/A1-1-M06-L14/dick-duenn-buch.jpg",
+      "status": "pending",
+      "assignee": null,
+      "notes": "Side profile to show thickness clearly"
+    },
+    {
+      "id": "img-14",
+      "type": "image",
+      "stepId": "s15",
+      "stepType": "grammar-tip",
+      "description": "A practical tool (praktisches Werkzeug) like a Swiss Army knife or multi-tool, showing its usefulness.",
+      "context": "Grammar: Quality adjectives - praktisch",
+      "specs": {
+        "dimensions": "800x600",
+        "format": "jpg",
+        "style": "functional, clear product shot"
+      },
+      "outputPath": "images/A1-1-M06-L14/praktisch-werkzeug.jpg",
+      "status": "pending",
+      "assignee": null,
+      "notes": "Show the tool's versatility"
+    },
+    {
+      "id": "img-15",
+      "type": "image",
+      "stepId": "s15",
+      "stepType": "grammar-tip",
+      "description": "A broken computer (kaputter Computer) with cracked screen or error messages visible, clearly not working.",
+      "context": "Grammar: Condition - kaputt (broken)",
+      "specs": {
+        "dimensions": "800x600",
+        "format": "jpg",
+        "style": "showing damage or malfunction"
+      },
+      "outputPath": "images/A1-1-M06-L14/kaputt-computer.jpg",
+      "status": "pending",
+      "assignee": null,
+      "notes": "Should clearly show it's broken"
+    },
+    {
+      "id": "img-16",
+      "type": "image",
+      "stepId": "s15",
+      "stepType": "grammar-tip",
+      "description": "A clean room/desk (sauber) with everything organized and tidy, bright and spotless.",
+      "context": "Grammar: Condition - sauber (clean)",
+      "specs": {
+        "dimensions": "800x600",
+        "format": "jpg",
+        "style": "clean, organized, bright"
+      },
+      "outputPath": "images/A1-1-M06-L14/sauber-zimmer.jpg",
+      "status": "pending",
+      "assignee": null,
+      "notes": "Should look spotless"
+    },
+    {
+      "id": "img-17",
+      "type": "image",
+      "stepId": "s15",
+      "stepType": "grammar-tip",
+      "description": "A dirty/messy room (schmutziges Zimmer) with clutter, dust, disorder - clearly contrasting with clean room.",
+      "context": "Grammar: Condition - schmutzig (dirty)",
+      "specs": {
+        "dimensions": "800x600",
+        "format": "jpg",
+        "style": "messy, cluttered"
+      },
+      "outputPath": "images/A1-1-M06-L14/schmutzig-zimmer.jpg",
+      "status": "pending",
+      "assignee": null,
+      "notes": "Contrast with clean room image"
+    },
+    {
+      "id": "img-18",
+      "type": "image",
+      "stepId": "s15",
+      "stepType": "grammar-tip",
+      "description": "A beautiful/nice object (schönes Ding) - perhaps a modern design object, vase, or decorative item that's aesthetically pleasing.",
+      "context": "Grammar: Quality - schön (beautiful)",
+      "specs": {
+        "dimensions": "800x600",
+        "format": "jpg",
+        "style": "aesthetic, pleasing design"
+      },
+      "outputPath": "images/A1-1-M06-L14/schoen-objekt.jpg",
+      "status": "pending",
+      "assignee": null,
+      "notes": "Should be visually appealing"
+    }
+  ],
+  "summary": {
+    "totalTasks": 19,
+    "images": 18,
+    "videos": 1,
+    "priority": "Focus on clear visual contrasts between opposite adjectives. Show objects with their qualities prominently displayed."
+  }
+}
