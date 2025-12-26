@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { WrongAnswer } from '$lib/db';
-  import { createEventDispatcher } from 'svelte';
+  import { createEventDispatcher, onMount } from 'svelte';
 
   export let wrongAnswers: WrongAnswer[];
 
@@ -16,20 +16,27 @@
 
   // Extract options from the original question if available
   // For now, we'll create a simple quiz with the correct answer and the user's wrong answer
-  $: options = currentWrong ? [
-    currentWrong.correctAnswer,
-    currentWrong.userAnswer
-  ].filter((v, i, arr) => v && v !== 'unknown' && arr.indexOf(v) === i) : []; // Deduplicate and filter invalid
+  function getOptions(wrong: typeof currentWrong) {
+    if (!wrong) return [];
+    return [wrong.correctAnswer, wrong.userAnswer]
+      .filter((v, i, arr) => v && v !== 'unknown' && arr.indexOf(v) === i);
+  }
 
-  // Skip corrupted data automatically
-  $: if (currentWrong && options.length === 0) {
-    // Auto-mark as reviewed and move on
-    reviewCorrect.add(currentReviewIndex);
-    reviewCorrect = reviewCorrect;
-    if (!isLastReview) {
-      currentReviewIndex++;
+  $: options = getOptions(currentWrong);
+
+  // Skip corrupted data - use onMount and function instead of reactive statement
+  function skipIfCorrupted() {
+    if (currentWrong && options.length === 0) {
+      reviewCorrect.add(currentReviewIndex);
+      reviewCorrect = reviewCorrect;
+      if (!isLastReview) {
+        setTimeout(() => { currentReviewIndex++; skipIfCorrupted(); }, 0);
+      }
     }
   }
+
+  // Check on mount
+  onMount(() => skipIfCorrupted());
 
   function selectOption(option: string) {
     if (selectedAnswer) return; // Already answered this review

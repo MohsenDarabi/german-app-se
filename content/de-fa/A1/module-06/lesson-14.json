@@ -1,0 +1,433 @@
+{
+  "id": "A1-1-M06-L14",
+  "title": {
+    "de": "Beschreibungen: Dinge",
+    "fa": "توصیفات: اشیاء"
+  },
+  "level": "A1-1",
+  "module": 6,
+  "lessonNumber": 14,
+  "estimatedMinutes": 20,
+  "steps": [
+    {
+      "type": "dialog",
+      "id": "s1",
+      "title": "Was ist das?",
+      "lines": [
+        {
+          "speaker": "Lisa",
+          "text": {
+            "de": "Schau mal! Was ist das?",
+            "fa": "نگاه کن! این چیست؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Das ist ein Buch. Ein großes, dickes Buch.",
+            "fa": "این یک کتاب است. یک کتاب بزرگ و ضخیم."
+          }
+        },
+        {
+          "speaker": "Lisa",
+          "text": {
+            "de": "Und ist es teuer?",
+            "fa": "و گران است؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Nein, es ist nicht teuer. Es ist günstig und sehr interessant.",
+            "fa": "نه، گران نیست. ارزان و خیلی جالب است."
+          }
+        },
+        {
+          "speaker": "Lisa",
+          "text": {
+            "de": "Und wie schwer ist es?",
+            "fa": "و چقدر سنگین است؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Ziemlich schwer! Es ist ein altes Wörterbuch.",
+            "fa": "خیلی سنگین! یک فرهنگ لغت قدیمی است."
+          }
+        }
+      ],
+      "feedback": {
+        "explanation": "در این مکالمه یاد می‌گیریم چگونه اشیاء و ویژگی‌هایشان را توصیف کنیم."
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": {
+        "de": "das Ding",
+        "fa": "چیز / شیء"
+      },
+      "phonetic": "das ding",
+      "wordType": "noun",
+      "gender": "neutral",
+      "example": {
+        "text": {
+          "de": "Was ist das für ein Ding?",
+          "fa": "این چه چیزی است؟"
+        }
+      },
+      "note": {
+        "fa": "جمع: die Dinge"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": {
+        "de": "das Buch",
+        "fa": "کتاب"
+      },
+      "phonetic": "das bookh",
+      "wordType": "noun",
+      "gender": "neutral",
+      "example": {
+        "text": {
+          "de": "Das Buch ist interessant.",
+          "fa": "کتاب جالب است."
+        }
+      },
+      "note": {
+        "fa": "جمع: die Bücher"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": {
+        "de": "der Tisch",
+        "fa": "میز"
+      },
+      "phonetic": "der tish",
+      "wordType": "noun",
+      "gender": "maskulin",
+      "example": {
+        "text": {
+          "de": "Der Tisch ist rund und groß.",
+          "fa": "میز گرد و بزرگ است."
+        }
+      },
+      "note": {
+        "fa": "جمع: die Tische"
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "صفت‌های توصیفی برای اشیاء",
+      "content": "صفت‌های مهم برای توصیف اشیاء:\n\n**اندازه:**\n| آلمانی | فارسی |\n|---|---|\n| groß | بزرگ |\n| klein | کوچک |\n| lang | بلند / دراز |\n| kurz | کوتاه |\n| breit | پهن |\n| schmal | باریک |\n| hoch | بلند / مرتفع |\n| niedrig | کوتاه / پست |\n\n**وزن و ضخامت:**\n• schwer = سنگین\n• leicht = سبک\n• dick = ضخیم / کلفت\n• dünn = نازک / باریک\n\n**ساختار:**\n• Subject + **ist** + Adjektiv\n• Das Buch **ist groß**.",
+      "examples": [
+        {
+          "de": "Der Tisch ist lang und breit.",
+          "fa": "میز بلند و پهن است."
+        },
+        {
+          "de": "Das Handy ist klein und leicht.",
+          "fa": "موبایل کوچک و سبک است."
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": {
+        "de": "schwer",
+        "fa": "سنگین / سخت"
+      },
+      "phonetic": "shvehr",
+      "wordType": "adjective",
+      "example": {
+        "text": {
+          "de": "Das Paket ist sehr schwer.",
+          "fa": "بسته خیلی سنگین است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": {
+        "de": "leicht",
+        "fa": "سبک / آسان"
+      },
+      "phonetic": "likht",
+      "wordType": "adjective",
+      "example": {
+        "text": {
+          "de": "Die Tasche ist leicht.",
+          "fa": "کیف سبک است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": {
+        "de": "teuer",
+        "fa": "گران"
+      },
+      "phonetic": "TOY-er",
+      "wordType": "adjective",
+      "example": {
+        "text": {
+          "de": "Das Auto ist sehr teuer.",
+          "fa": "ماشین خیلی گران است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": {
+        "de": "günstig",
+        "fa": "ارزان / مقرون‌به‌صرفه"
+      },
+      "phonetic": "GÜN-stikh",
+      "wordType": "adjective",
+      "example": {
+        "text": {
+          "de": "Das Handy ist günstig.",
+          "fa": "موبایل ارزان است."
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s10",
+      "title": "صفت‌های متضاد (Gegensätze)",
+      "content": "صفت‌های متضاد رایج:\n\n| مثبت | منفی |\n|---|---|\n| groß (بزرگ) | klein (کوچک) |\n| lang (بلند) | kurz (کوتاه) |\n| breit (پهن) | schmal (باریک) |\n| schwer (سنگین) | leicht (سبک) |\n| teuer (گران) | günstig/billig (ارزان) |\n| neu (جدید) | alt (قدیمی) |\n| gut (خوب) | schlecht (بد) |\n| warm (گرم) | kalt (سرد) |\n| heiß (داغ) | kalt (سرد) |\n| dick (ضخیم) | dünn (نازک) |\n| schön (زیبا) | hässlich (زشت) |\n\n**نکته:** billig = ارزان (کمی منفی)، günstig = مقرون‌به‌صرفه (خنثی/مثبت)",
+      "examples": [
+        {
+          "de": "Das alte Auto ist günstig.",
+          "fa": "ماشین قدیمی ارزان است."
+        },
+        {
+          "de": "Das neue Haus ist teuer.",
+          "fa": "خانه جدید گران است."
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s11",
+      "question": "Das Buch ist nicht schwer. Es ist _____.",
+      "options": [
+        "leicht",
+        "teuer",
+        "neu",
+        "schön"
+      ],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "explanation": "آفرین! متضاد schwer (سنگین) = leicht (سبک) است."
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s12",
+      "word": {
+        "de": "neu",
+        "fa": "جدید / نو"
+      },
+      "phonetic": "noy",
+      "wordType": "adjective",
+      "example": {
+        "text": {
+          "de": "Ich habe ein neues Handy.",
+          "fa": "موبایل جدید دارم."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s13",
+      "word": {
+        "de": "alt",
+        "fa": "قدیمی / کهنه"
+      },
+      "phonetic": "alt",
+      "wordType": "adjective",
+      "example": {
+        "text": {
+          "de": "Das ist ein altes Buch.",
+          "fa": "این یک کتاب قدیمی است."
+        }
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s14",
+      "instruction": "جمله را با صفت مناسب کامل کنید:",
+      "sentence": "Das Auto ist nicht alt. Es ist {0}. Der Tisch ist nicht klein. Er ist {1}.",
+      "feedback": {
+        "explanation": "متضادها: alt ↔ neu, klein ↔ groß"
+      },
+      "options": [
+        "neu",
+        "groß",
+        "leicht",
+        "teuer",
+        "alt",
+        "klein"
+      ],
+      "correctAnswers": [
+        0,
+        1
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s15",
+      "title": "صفت‌های کیفیت",
+      "content": "صفت‌های کیفی برای توصیف اشیاء:\n\n**ظاهر:**\n• schön = زیبا\n• hübsch = خوشگل\n• hässlich = زشت\n• modern = مدرن\n• klassisch = کلاسیک\n\n**کیفیت:**\n• gut = خوب\n• schlecht = بد\n• interessant = جالب\n• langweilig = کسل‌کننده\n• praktisch = کاربردی\n• nützlich = مفید\n• wichtig = مهم\n\n**حالت:**\n• sauber = تمیز\n• schmutzig = کثیف\n• kaputt = خراب\n• ganz = کامل / سالم",
+      "examples": [
+        {
+          "de": "Das ist ein praktisches Werkzeug.",
+          "fa": "این یک ابزار کاربردی است."
+        },
+        {
+          "de": "Der Computer ist kaputt.",
+          "fa": "کامپیوتر خراب است."
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s16",
+      "word": {
+        "de": "interessant",
+        "fa": "جالب / جذاب"
+      },
+      "phonetic": "in-te-re-SANT",
+      "wordType": "adjective",
+      "example": {
+        "text": {
+          "de": "Das ist ein interessantes Buch.",
+          "fa": "این یک کتاب جالب است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s17",
+      "word": {
+        "de": "langweilig",
+        "fa": "کسل‌کننده / خسته‌کننده"
+      },
+      "phonetic": "LANG-vai-likh",
+      "wordType": "adjective",
+      "example": {
+        "text": {
+          "de": "Der Film ist langweilig.",
+          "fa": "فیلم کسل‌کننده است."
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s18",
+      "title": "💡 نکته فرهنگی: خریدن در آلمان",
+      "content": "**هنگام خرید:**\n\n🛍️ **توصیف کالا:**\n• آلمانی‌ها دقیق هستند\n• اندازه، رنگ، کیفیت مهم است\n• گارانتی و کیفیت اولویت دارد\n\n💰 **قیمت:**\n• \"Wie viel kostet das?\" = این چند است؟\n• \"Ist das günstig?\" = این ارزان است؟\n• \"Das ist mir zu teuer\" = برای من خیلی گران است\n\n📏 **اندازه:**\n• Größe = سایز / اندازه\n• Gewicht = وزن\n• Länge = طول\n• Breite = عرض\n\n🔍 **کیفیت:**\n• آلمانی‌ها \"Made in Germany\" را ارزش می‌دهند\n• کیفیت بالا مهم‌تر از قیمت پایین است",
+      "examples": [
+        {
+          "de": "Das ist ein gutes Produkt.",
+          "fa": "این یک محصول خوب است."
+        },
+        {
+          "de": "Wie viel kostet der Tisch?",
+          "fa": "میز چقدر است؟"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s19",
+      "question": "_____ Stuhl ist sehr bequem.",
+      "options": [
+        "Der",
+        "Die",
+        "Das",
+        "Den"
+      ],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "explanation": "درست! der Stuhl مذکر است، پس Der Stuhl ist... استفاده می‌کنیم."
+      }
+    },
+    {
+      "type": "word-order",
+      "id": "s20",
+      "instruction": "کلمات را مرتب کنید:",
+      "words": [
+        "ist",
+        "Das",
+        "neu",
+        "Auto",
+        "und",
+        "teuer"
+      ],
+      "correctOrder": [
+        1,
+        3,
+        0,
+        2,
+        4,
+        5
+      ],
+      "correctSentence": {
+        "de": "Das Auto ist neu und teuer",
+        "fa": "ماشین جدید و گران است"
+      },
+      "feedback": {
+        "explanation": "ساختار: Subject + ist + Adjektiv + und + Adjektiv"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "s21",
+      "sourceText": "کیف سبک و ارزان است، اما خیلی زیبا نیست.",
+      "feedback": {
+        "explanation": "Die Tasche ist leicht und günstig, aber nicht sehr schön."
+      },
+      "sentenceTemplate": "{0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10}",
+      "options": [
+        "Die",
+        "Tasche",
+        "ist",
+        "leicht",
+        "und",
+        "günstig,",
+        "aber",
+        "nicht",
+        "sehr",
+        "schön."
+      ],
+      "correctAnswers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "correctTranslation": {
+        "de": "Die Tasche ist leicht und günstig, aber nicht sehr schön.",
+        "fa": "کیف سبک و ارزان است، اما خیلی زیبا نیست."
+      }
+    }
+  ]
+}

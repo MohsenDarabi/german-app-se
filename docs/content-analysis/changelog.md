@@ -267,7 +267,102 @@ Track of content comparisons with Busuu and enhancements made.
 ## Module 5: Orte (Places)
 
 **Busuu Sources:** Chapters 7, 25
-**Date:** Pending
+**Date:** 2025-12-26
+
+### Content Created from Busuu Chapters 7 & 25
+
+| Busuu Content | Lesson | Status |
+|---------------|--------|--------|
+| Places in city (Bahnhof, Post, Apotheke) | L11 | Created |
+| es gibt + Akkusativ | L11 | Created |
+| City vocabulary (Stadt, Museum, Rathaus) | L11 | Created |
+| Asking directions (Wo ist...?) | L12 | Created |
+| Direction words (links, rechts, geradeaus) | L12 | Created |
+| Imperativ Sie-Form (Gehen Sie...) | L12 | Created |
+| Transportation (U-Bahn, Bus, S-Bahn) | L13 | Created |
+| mit + Dativ (mit dem Bus) | L13 | Created |
+| zu + Dativ / zum/zur (zum Bahnhof) | L13 | Created |
+
+### Lesson Structure
+
+#### L09: Mein Tag (Already existed)
+- Daily routines with time
+- Separable verbs
+- Time expressions
+- 15 steps
+
+#### L10: Wege & Orte (Already existed)
+- Basic direction vocabulary
+- Location prepositions + Dativ
+- Simple places
+- 15 steps
+
+#### L11: In der Stadt (NEW - Places in the City)
+- die Stadt, der Bahnhof, die Apotheke, die Bank
+- das Krankenhaus, der Marktplatz, das Museum, die Post
+- der Supermarkt, das Rathaus
+- es gibt + Akkusativ grammar
+- Cultural tip: German cities, shopping hours (Sundays closed!)
+- 20 steps
+
+#### L12: Nach dem Weg fragen (NEW - Asking for Directions)
+- Entschuldigung, wo ist...?
+- geradeaus, links, rechts, abbiegen
+- die Ecke, die Kreuzung, die Ampel
+- Imperativ Sie-Form (Gehen Sie!, Biegen Sie ab!)
+- zu Fuß, weit/nah
+- Cultural tip: Asking directions politely in Germany
+- 22 steps
+
+#### L13: Verkehrsmittel (NEW - Transportation)
+- die U-Bahn, der Bus, die S-Bahn, die Straßenbahn
+- das Fahrrad, das Auto, der Zug, das Taxi
+- der Flughafen, die Haltestelle
+- mit + Dativ grammar (mit dem Bus, mit der U-Bahn)
+- zu + Dativ / zum/zur grammar (zum Bahnhof, zur Post)
+- fahren verb conjugation
+- Cultural tip: Public transport system, Deutschland-Ticket, bike culture
+- 25 steps
+
+### Cultural Enhancements for Persian Speakers
+
+**L11 Additions:**
+- German city structure (Altstadt, Marktplatz as city center)
+- Bike-friendly infrastructure comparison
+- Sunday shopping closure law (critical for Iranians!)
+- Store closing times (8pm vs. Iran's late hours)
+- Emergency number: 112
+- Apotheke system (pharmacy = prescription only)
+
+**L12 Additions:**
+- Polite direction-asking with Sie-Form
+- Metric system (meters, not blocks like in Iran)
+- Precise German directions vs. Iranian "پایین‌تر/بالاتر" style
+- Street sign quality and maps at stations
+- Google Maps usage still common
+
+**L13 Additions:**
+- World-class public transport system
+- Deutschland-Ticket (€49/month unlimited!)
+- Punctuality culture and real-time apps
+- Bike integration with trains
+- Ticket validation system (CRITICAL - €60 fine!)
+- Cash vs. private car culture comparison
+- Environmental consciousness in Germany
+
+### Statistics
+
+**Total Steps Added:** 67 (20 + 22 + 25)
+**New Vocabulary Items:** 40+
+**Grammar Points Covered:**
+- es gibt + Akkusativ
+- Imperativ Sie-Form (polite commands)
+- mit + Dativ (transportation)
+- zu + Dativ / zum/zur contractions
+- fahren verb conjugation (stem-changing)
+- Location prepositions + Dativ review
+
+**Cultural Tips:** 6 major culture sections comparing German and Iranian city life, transport, and navigation
 
 ---
 
