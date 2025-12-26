@@ -19,7 +19,17 @@
   $: options = currentWrong ? [
     currentWrong.correctAnswer,
     currentWrong.userAnswer
-  ].filter((v, i, arr) => arr.indexOf(v) === i) : []; // Deduplicate
+  ].filter((v, i, arr) => v && v !== 'unknown' && arr.indexOf(v) === i) : []; // Deduplicate and filter invalid
+
+  // Skip corrupted data automatically
+  $: if (currentWrong && options.length === 0) {
+    // Auto-mark as reviewed and move on
+    reviewCorrect.add(currentReviewIndex);
+    reviewCorrect = reviewCorrect;
+    if (!isLastReview) {
+      currentReviewIndex++;
+    }
+  }
 
   function selectOption(option: string) {
     if (selectedAnswer) return; // Already answered this review
@@ -63,7 +73,7 @@
 
   {#if currentWrong}
     <div class="review-question-card">
-      <h3 class="question">{currentWrong.question}</h3>
+      <h3 class="question">{currentWrong.question || `سوال ${currentReviewIndex + 1}`}</h3>
 
       <div class="options-grid">
         {#each options as option}

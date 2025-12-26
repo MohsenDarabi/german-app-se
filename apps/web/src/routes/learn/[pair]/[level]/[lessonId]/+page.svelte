@@ -14,6 +14,19 @@
 
   export let data;
 
+  // Helper to extract question text from various step types
+  function getQuestionText(step: any): string {
+    // Different step types use different field names
+    if (step.question) return step.question;
+    if (step.statement) return step.statement; // true-false
+    if (step.sourceText) return step.sourceText; // translation
+    if (step.sentence) return step.sentence; // fill-in-blank
+    if (step.instruction) return step.instruction; // word-order, fill-in-blank
+    if (step.word?.de) return step.word.de; // new-word
+    if (step.title) return step.title; // dialog, grammar-tip
+    return `Step ${step.id || 'unknown'}`;
+  }
+
   let showReviewScreen = false;
   let wrongAnswersToReview: WrongAnswer[] = [];
   let completionStats: { score: number; xpEarned: number } | null = null;
@@ -48,7 +61,7 @@
         lessonId: data.lesson.id,
         stepId: $currentStep.id,
         stepType: $currentStep.type,
-        question: ($currentStep as any).question || ($currentStep as any).prompt,
+        question: getQuestionText($currentStep),
         userAnswer: userAnswer || 'unknown',
         correctAnswer: correctAnswer || 'unknown'
       });
