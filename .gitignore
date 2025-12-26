@@ -14,3 +14,17 @@ coverage
 
 # Service account keys (sensitive)
 scripts/keys/
+
+# Extracted content from other apps
+extracted-content/
+scripts/busuu-extractor/screenshots/
+scripts/busuu-extractor/node_modules/
+scripts/busuu-extractor/extraction-progress*.json
+scripts/busuu-extractor/*.backup
+scripts/busuu-extractor/*-debug.html
+
+# Claude Code settings
+.claude/
+
+# Build output (generated)
+apps/web/build/
