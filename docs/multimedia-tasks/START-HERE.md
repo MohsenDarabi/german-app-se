@@ -1,795 +1,1556 @@
-# Multimedia Tasks for German Learning App
+# Multimedia Assets for German Learning App
+
+> **Organized by concept** - Same image can be used in multiple lessons!
+
+---
 
 ## How to Use (3 Simple Steps)
 
-1. **Find a task** - Scroll down and pick any unchecked `[ ]` task
-2. **Create the asset** - Follow the description and specs
-3. **Mark done** - Change `[ ]` to `[x]` and commit
+1. **Find an asset** - Browse by category below
+2. **Create it** - Follow the description and specs
+3. **Save & Mark done** - Save to the path shown, change `[ ]` to `[x]`
 
 ---
 
-## Quick Info
+## Quick Stats
 
-| What | Details |
-|------|---------|
-| **Total Tasks** | 205 (189 images + 16 videos) |
-| **Image Format** | JPG, 800x600 |
-| **Video Format** | MP4, 1080p, 15-30 sec |
-| **Save Images To** | `apps/web/static/images/{folder}/` |
-| **Save Videos To** | `apps/web/static/videos/{folder}/` |
-| **Audio** | NOT your task (handled separately) |
+| Total | Images | Videos | Pending | Complete |
+|-------|--------|--------|---------|----------|
+| 205 | 189 | 16 | 205 | 0 |
 
 ---
 
-# Module 1: Grundlagen (Basics)
+## Grammar Diagrams (Grammatik)
 
-## Lesson 01: Begrüßungen (Greetings)
+**53 images**
 
-### Images
+### 🖼️ img-map-dach-countries
 
-- [ ] **img-01**: Two young adults (Anna and Tom) meeting in a German language classroom. Shaking hands, smiling. Whiteboard shows 'Willkommen!'
-  - Save to: `images/A1-1-M01-L01/classroom-introduction.jpg`
+- [ ] **Map of DACH countries (Germany, Austria, Switzerland) with flags and key cities marked. Clean, ed...**
+- Used in: A1.1-M01-L02
+- Save to: `apps/web/static/images/shared/grammar/img-map-dach-countries.png`
+- Specs: 800x600 png
 
-- [ ] **img-02**: Person waving hand in friendly greeting. Casual, approachable pose.
-  - Save to: `images/A1-1-M01-L01/hallo-greeting.jpg`
+### 🖼️ img-family-tree-diagram
 
-- [ ] **img-03**: Two business professionals shaking hands in office lobby. Formal attire.
-  - Save to: `images/A1-1-M01-L01/guten-tag-formal.jpg`
+- [ ] **Family tree diagram showing mein/meine usage. Simple, clean educational diagram with German labels.**
+- Used in: A1.1-M02-L04
+- Save to: `apps/web/static/images/shared/grammar/img-family-tree-diagram.png`
+- Specs: 800x600 png
 
-- [ ] **img-04**: Person stretching/yawning in morning sunlight by window, or having morning coffee. Sunrise visible.
-  - Save to: `images/A1-1-M01-L01/guten-morgen.jpg`
+### 🖼️ img-numbers-1-12-displayed
 
-- [ ] **img-05**: Person waving goodbye at train station or office door. Professional context.
-  - Save to: `images/A1-1-M01-L01/auf-wiedersehen.jpg`
+- [ ] **Numbers 1-12 displayed in colorful, educational format. Each number shown with German word. Clean...**
+- Used in: A1.1-M02-L05
+- Save to: `apps/web/static/images/shared/grammar/img-numbers-1-12-displayed.png`
+- Specs: 800x600 png
 
-- [ ] **img-06**: Two friends waving goodbye casually at cafe or park. Relaxed, informal.
-  - Save to: `images/A1-1-M01-L01/tschues-casual.jpg`
+### 🖼️ img-numbers-20-100-tens
 
-### Videos
+- [ ] **Numbers 20-100 (tens) displayed in educational format. Highlight the -zig ending pattern. dreißig...**
+- Used in: A1.1-M02-L05
+- Save to: `apps/web/static/images/shared/grammar/img-numbers-20-100-tens.png`
+- Specs: 800x600 png
 
-- [ ] **vid-01**: Two business professionals meeting. Dialog: "Guten Tag! Mein Name ist Schmidt. Wie heißen Sie?" - "Guten Tag, Herr Schmidt. Ich heiße Ahmadi." - "Freut mich!" - "Freut mich auch!" (15-20 sec)
-  - Save to: `videos/A1-1-M01-L01/formal-introduction.mp4`
+### 🖼️ img-diagram-showing-german
+
+- [ ] **Diagram showing German number order: '25 = fünfundzwanzig' with arrows showing ones before tens. ...**
+- Used in: A1.1-M02-L05
+- Save to: `apps/web/static/images/shared/grammar/img-diagram-showing-german.png`
+- Specs: 800x600 png
+
+### 🖼️ img-comparison-infographic-german
+
+- [ ] **Comparison infographic: German vs Persian number/date formats. Show: 5,99€ vs 5.99, date format 2...**
+- Used in: A1.1-M02-L05
+- Save to: `apps/web/static/images/shared/grammar/img-comparison-infographic-german.png`
+- Specs: 800x600 png
+
+### 🖼️ img-visual-representation-colors
+
+- [ ] **Visual representation of colors: Display of colorful objects or color swatches showing red (rot),...**
+- Used in: A1.1-M03-L06
+- Save to: `apps/web/static/images/shared/grammar/img-visual-representation-colors.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-ikea-store-exterior
+
+- [ ] **IKEA store exterior or interior shopping scene - German customers browsing furniture in a modern ...**
+- Used in: A1.1-M03-L06
+- Save to: `apps/web/static/images/shared/grammar/img-ikea-store-exterior.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-visual-diagram-showing
+
+- [ ] **Visual diagram showing separable verb 'aufstehen' - split view showing the verb separation. Left ...**
+- Used in: A1.1-M03-L07
+- Save to: `apps/web/static/images/shared/grammar/img-visual-diagram-showing.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-clock-faces-showing
+
+- [ ] **Clock faces showing different times: Full hour (7:00 'sieben Uhr'), half hour (6:30 'halb sieben'...**
+- Used in: A1.1-M03-L07
+- Save to: `apps/web/static/images/shared/grammar/img-clock-faces-showing.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-german-breakfast-table
+
+- [ ] **German breakfast table scene showing typical German morning routine - Brötchen (breakfast rolls) ...**
+- Used in: A1.1-M03-L07
+- Save to: `apps/web/static/images/shared/grammar/img-german-breakfast-table.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-educational-diagram-showing
+
+- [ ] **Educational diagram showing reflexive pronouns with different subjects: 'ich → mich', 'du → dich'...**
+- Used in: A1.1-M03-L08
+- Save to: `apps/web/static/images/shared/grammar/img-educational-diagram-showing.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-split-diagram-showing
+
+- [ ] **Split diagram showing Akkusativ vs Dativ reflexive pronouns: Left side shows 'Ich wasche mich' (w...**
+- Used in: A1.1-M03-L08
+- Save to: `apps/web/static/images/shared/grammar/img-split-diagram-showing.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-german-bathroom-products
+
+- [ ] **German bathroom products scene: Shower gel (Duschgel) bottles prominently displayed, modern Germa...**
+- Used in: A1.1-M03-L08
+- Save to: `apps/web/static/images/shared/grammar/img-german-bathroom-products.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-collage-german-street
+
+- [ ] **Collage of German street food: Bratwurst stand, Döner Kebab shop, Currywurst with fries, fresh Br...**
+- Used in: A1.2-M04-L09
+- Save to: `apps/web/static/images/shared/grammar/img-collage-german-street.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-close-up-delicious-doener
+
+- [ ] **Close-up of a delicious Döner Kebab with fresh vegetables, sauce, and meat in a flatbread. Appeti...**
+- Used in: A1.2-M04-L09
+- Save to: `apps/web/static/images/shared/grammar/img-close-up-delicious-doener.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-afternoon-coffee-and
+
+- [ ] **Afternoon coffee and cake scene: elegant table with coffee service, fresh cake slices, family or ...**
+- Used in: A1.2-M04-L10
+- Save to: `apps/web/static/images/shared/grammar/img-afternoon-coffee-and.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-close-up-classic-german
+
+- [ ] **Close-up of classic German cakes: Schwarzwälder Kirschtorte (Black Forest cake), Apfelstrudel, an...**
+- Used in: A1.2-M04-L10
+- Save to: `apps/web/static/images/shared/grammar/img-close-up-classic-german.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-two-scenes-side
+
+- [ ] **Two scenes side by side: Left - customer handing cash to waiter saying 'Stimmt so!' with smile (t...**
+- Used in: A1.2-M04-L10
+- Save to: `apps/web/static/images/shared/grammar/img-two-scenes-side.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-friends-toasting-with
+
+- [ ] **Friends toasting with beer glasses (Prost!) looking into each other's eyes. Friendly pub/restaura...**
+- Used in: A1.2-M04-L10
+- Save to: `apps/web/static/images/shared/grammar/img-friends-toasting-with.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-collage-german-breads
+
+- [ ] **Collage of German breads: Brötchen (breakfast rolls), Vollkornbrot (whole grain), Brezel (pretzel...**
+- Used in: A1.2-M04-L11
+- Save to: `apps/web/static/images/shared/grammar/img-collage-german-breads.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-three-meal-scenes
+
+- [ ] **Three meal scenes showing German meal times: Morning - Frühstück with bread and coffee, Midday - ...**
+- Used in: A1.2-M04-L11
+- Save to: `apps/web/static/images/shared/grammar/img-three-meal-scenes.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-restaurant-menu-section
+
+- [ ] **Restaurant menu section showing symbols: vegetarian (V), vegan (VG), gluten-free (GF), allergy wa...**
+- Used in: A1.2-M04-L11
+- Save to: `apps/web/static/images/shared/grammar/img-restaurant-menu-section.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-collage-showing-typical
+
+- [ ] **Collage showing typical German city features: Altstadt (old town) with historic half-timbered bui...**
+- Used in: A1.2-M05-L11
+- Save to: `apps/web/static/images/shared/grammar/img-collage-showing-typical.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-educational-diagram-showing-1
+
+- [ ] **Educational diagram showing Imperativ Sie-form directions: arrows labeled 'Gehen Sie geradeaus!',...**
+- Used in: A1.2-M05-L12
+- Save to: `apps/web/static/images/shared/grammar/img-educational-diagram-showing-1.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-collage-showing-german
+
+- [ ] **Collage showing German direction-asking culture: person politely saying 'Entschuldigung', Google ...**
+- Used in: A1.2-M05-L12
+- Save to: `apps/web/static/images/shared/grammar/img-collage-showing-german.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-educational-diagram-showing-2
+
+- [ ] **Educational diagram showing 'mit + Dativ' grammar: images of different transport modes with corre...**
+- Used in: A1.2-M05-L13
+- Save to: `apps/web/static/images/shared/grammar/img-educational-diagram-showing-2.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-collage-showing-german-1
+
+- [ ] **Collage showing German public transport culture: transit ticket/Monatskarte, Deutschland-Ticket (...**
+- Used in: A1.2-M05-L13
+- Save to: `apps/web/static/images/shared/grammar/img-collage-showing-german-1.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-color-palette-showing
+
+- [ ] **Color palette showing the main colors with labels: schwarz, weiß, rot, blau, grün, gelb, braun, g...**
+- Used in: A1.1-M06-L13
+- Save to: `apps/web/static/images/shared/grammar/img-color-palette-showing.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-composite-image-showing
+
+- [ ] **Composite image showing different body types and hair types: groß/klein (height), schlank/dick (b...**
+- Used in: A1.1-M06-L13
+- Save to: `apps/web/static/images/shared/grammar/img-composite-image-showing.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-portrait-person-with-1
+
+- [ ] **Portrait of a person with curly hair (lockige Haare), showing the curl pattern clearly.**
+- Used in: A1.1-M06-L13
+- Save to: `apps/web/static/images/shared/grammar/img-portrait-person-with-1.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-portrait-person-with-2
+
+- [ ] **Portrait of a person with straight hair (glatte Haare), showing smooth, straight hair texture.**
+- Used in: A1.1-M06-L13
+- Save to: `apps/web/static/images/shared/grammar/img-portrait-person-with-2.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-comparison-image-showing
+
+- [ ] **Comparison image showing size contrasts: two books (groß vs. klein), two tables (lang vs. kurz), ...**
+- Used in: A1.1-M06-L14
+- Save to: `apps/web/static/images/shared/grammar/img-comparison-image-showing.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-opposite-pairs-visual
+
+- [ ] **Opposite pairs visual chart: groß↔klein, lang↔kurz, breit↔schmal, schwer↔leicht, teuer↔günstig, n...**
+- Used in: A1.1-M06-L14
+- Save to: `apps/web/static/images/shared/grammar/img-opposite-pairs-visual.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-interesting-book-cover
+
+- [ ] **An interesting book cover (interessantes Buch) - showing engaging design, captivating title, colo...**
+- Used in: A1.1-M06-L14
+- Save to: `apps/web/static/images/shared/grammar/img-interesting-book-cover.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-thick-book-dickes
+
+- [ ] **A thick book (dickes Buch) shown from the side to emphasize thickness, next to a thin book (dünne...**
+- Used in: A1.1-M06-L14
+- Save to: `apps/web/static/images/shared/grammar/img-thick-book-dickes.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-practical-tool-praktisches
+
+- [ ] **A practical tool (praktisches Werkzeug) like a Swiss Army knife or multi-tool, showing its useful...**
+- Used in: A1.1-M06-L14
+- Save to: `apps/web/static/images/shared/grammar/img-practical-tool-praktisches.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-broken-computer-kaputter
+
+- [ ] **A broken computer (kaputter Computer) with cracked screen or error messages visible, clearly not ...**
+- Used in: A1.1-M06-L14
+- Save to: `apps/web/static/images/shared/grammar/img-broken-computer-kaputter.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-clean-roomdesk-sauber
+
+- [ ] **A clean room/desk (sauber) with everything organized and tidy, bright and spotless.**
+- Used in: A1.1-M06-L14
+- Save to: `apps/web/static/images/shared/grammar/img-clean-roomdesk-sauber.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-dirtymessy-room-schmutziges
+
+- [ ] **A dirty/messy room (schmutziges Zimmer) with clutter, dust, disorder - clearly contrasting with c...**
+- Used in: A1.1-M06-L14
+- Save to: `apps/web/static/images/shared/grammar/img-dirtymessy-room-schmutziges.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-beautifulnice-object-schoenes
+
+- [ ] **A beautiful/nice object (schönes Ding) - perhaps a modern design object, vase, or decorative item...**
+- Used in: A1.1-M06-L14
+- Save to: `apps/web/static/images/shared/grammar/img-beautifulnice-object-schoenes.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-weather-conditions-composite
+
+- [ ] **Weather conditions composite: sunny (sonnig), cloudy (bewölkt), windy (windig), foggy (neblig), s...**
+- Used in: A1.1-M06-L15
+- Save to: `apps/web/static/images/shared/grammar/img-weather-conditions-composite.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-temperature-visual-hot
+
+- [ ] **Temperature visual: hot day (heiß) - thermometer showing high temperature, people in summer cloth...**
+- Used in: A1.1-M06-L15
+- Save to: `apps/web/static/images/shared/grammar/img-temperature-visual-hot.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-temperature-visual-cold
+
+- [ ] **Temperature visual: cold day (kalt) - thermometer showing low temperature, people in winter cloth...**
+- Used in: A1.1-M06-L15
+- Save to: `apps/web/static/images/shared/grammar/img-temperature-visual-cold.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-four-seasons-comparison
+
+- [ ] **Four seasons comparison chart: Frühling (März-Mai), Sommer (Juni-August), Herbst (September-Novem...**
+- Used in: A1.1-M06-L15
+- Save to: `apps/web/static/images/shared/grammar/img-four-seasons-comparison.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-tired-person-muede
+
+- [ ] **A tired person (müde Person) yawning, rubbing eyes, looking exhausted, perhaps with coffee.**
+- Used in: A1.1-M06-L15
+- Save to: `apps/web/static/images/shared/grammar/img-tired-person-muede.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-sick-person-kranke
+
+- [ ] **A sick person (kranke Person) in bed with thermometer, tissues, looking unwell but cared for.**
+- Used in: A1.1-M06-L15
+- Save to: `apps/web/static/images/shared/grammar/img-sick-person-kranke.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-cheerful-person-froehliche
+
+- [ ] **A cheerful person (fröhliche Person) laughing, full of energy, joyful expression, lively posture.**
+- Used in: A1.1-M06-L15
+- Save to: `apps/web/static/images/shared/grammar/img-cheerful-person-froehliche.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-stressed-person-gestresste
+
+- [ ] **A stressed person (gestresste Person im Stress) surrounded by work, looking overwhelmed, tense po...**
+- Used in: A1.1-M06-L15
+- Save to: `apps/web/static/images/shared/grammar/img-stressed-person-gestresste.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-emotions-chart-showing
+
+- [ ] **Emotions chart showing positive emotions (glücklich, fröhlich, zufrieden) and negative emotions (...**
+- Used in: A1.1-M06-L15
+- Save to: `apps/web/static/images/shared/grammar/img-emotions-chart-showing.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-foggy-day-nebliger
+
+- [ ] **Foggy day (nebliger Tag) - limited visibility, fog covering landscape, mysterious atmosphere.**
+- Used in: A1.1-M06-L15
+- Save to: `apps/web/static/images/shared/grammar/img-foggy-day-nebliger.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-stormy-day-stuermischer
+
+- [ ] **Stormy day (stürmischer Tag) - dark clouds, lightning if possible, heavy rain, dramatic weather.**
+- Used in: A1.1-M06-L15
+- Save to: `apps/web/static/images/shared/grammar/img-stormy-day-stuermischer.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-healthyfit-person-gesundefitte
+
+- [ ] **A healthy/fit person (gesunde/fitte Person) exercising or looking vibrant and energetic, showing ...**
+- Used in: A1.1-M06-L15
+- Save to: `apps/web/static/images/shared/grammar/img-healthyfit-person-gesundefitte.jpg`
+- Specs: 800x600 jpg
 
 ---
 
-## Lesson 02: Woher kommst du? (Where are you from?)
+## People & Descriptions (Menschen)
 
-### Images
+**43 images, 4 videos**
 
-- [ ] **img-01**: Two young adults (Maria from Austria, Ali from Iran) chatting at cafe. World map or flags in background.
-  - Save to: `images/A1-1-M01-L02/international-meeting.jpg`
+### 🖼️ img-two-young-adults
 
-- [ ] **img-02**: German flag (black-red-gold) with Brandenburg Gate or Neuschwanstein in background.
-  - Save to: `images/A1-1-M01-L02/deutschland.jpg`
+- [ ] **Two young adults (Anna and Tom) meeting in a German language classroom. They are shaking hands an...**
+- Used in: A1.1-M01-L01
+- Save to: `apps/web/static/images/shared/people/img-two-young-adults.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-03**: Austrian flag (red-white-red) with Vienna or Alpine scenery.
-  - Save to: `images/A1-1-M01-L02/oesterreich.jpg`
+### 🖼️ img-person-stretchingyawning-morning
 
-- [ ] **img-04**: Swiss flag with Matterhorn or Lake Geneva.
-  - Save to: `images/A1-1-M01-L02/schweiz.jpg`
+- [ ] **Person stretching/yawning in morning sunlight by a window, or having morning coffee. Sunrise visi...**
+- Used in: A1.1-M01-L01
+- Save to: `apps/web/static/images/shared/people/img-person-stretchingyawning-morning.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-05**: Iranian flag with Azadi Tower or Persian architecture.
-  - Save to: `images/A1-1-M01-L02/iran.jpg`
+### 🖼️ img-two-young-adults-1
 
-- [ ] **img-06**: Turkish flag with Istanbul (Blue Mosque, Bosphorus).
-  - Save to: `images/A1-1-M01-L02/tuerkei.jpg`
+- [ ] **Two young adults (Maria from Austria and Ali from Iran) having a friendly conversation at a cafe ...**
+- Used in: A1.1-M01-L02
+- Save to: `apps/web/static/images/shared/people/img-two-young-adults-1.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-07**: Map of DACH countries (Germany, Austria, Switzerland) with flags and cities. Educational diagram.
-  - Save to: `images/A1-1-M01-L02/dach-countries-map.png`
+### 🖼️ img-person-giving-thumbs
+
+- [ ] **Person giving thumbs up with a happy, confident expression. Positive body language.**
+- Used in: A1.1-M01-L03
+- Save to: `apps/web/static/images/shared/people/img-person-giving-thumbs.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-person-jumping-for
+
+- [ ] **Person jumping for joy or celebrating with arms raised. Very enthusiastic, energetic pose.**
+- Used in: A1.1-M01-L03
+- Save to: `apps/web/static/images/shared/people/img-person-jumping-for.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-person-looking-tired
+
+- [ ] **Person looking tired or slightly unwell, maybe with hand on forehead. Sympathetic, not overly dra...**
+- Used in: A1.1-M01-L03
+- Save to: `apps/web/static/images/shared/people/img-person-looking-tired.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-person-looking-sad
+
+- [ ] **Person looking sad or unwell, maybe in bed or with a blanket. Sick or very tired appearance.**
+- Used in: A1.1-M01-L03
+- Save to: `apps/web/static/images/shared/people/img-person-looking-sad.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-university-student-with
+
+- [ ] **University student with books or laptop, campus or library setting. Young adult, casual but studi...**
+- Used in: A1.1-M02-L03
+- Save to: `apps/web/static/images/shared/people/img-university-student-with.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-sister-young-woman
+
+- [ ] **Sister - young woman, possibly with siblings. Casual, friendly.**
+- Used in: A1.1-M02-L04
+- Save to: `apps/web/static/images/shared/people/img-sister-young-woman.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-grandmother-elderly-woman
+
+- [ ] **Grandmother - elderly woman, warm and kind expression. May be with grandchildren or in cozy home ...**
+- Used in: A1.1-M02-L04
+- Save to: `apps/web/static/images/shared/people/img-grandmother-elderly-woman.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-grandfather-elderly-man
+
+- [ ] **Grandfather - elderly man, warm and wise expression. May be with grandchildren or in cozy home se...**
+- Used in: A1.1-M02-L04
+- Save to: `apps/web/static/images/shared/people/img-grandfather-elderly-man.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-interior-modern-furniture
+
+- [ ] **Interior of a modern furniture store. A female salesperson and male customer standing near a wood...**
+- Used in: A1.1-M03-L06
+- Save to: `apps/web/static/images/shared/people/img-interior-modern-furniture.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-chair-der-stuhl
+
+- [ ] **Chair (der Stuhl) - Simple wooden chair with straight back, shown from 3/4 angle. Natural wood co...**
+- Used in: A1.1-M03-L06
+- Save to: `apps/web/static/images/shared/people/img-chair-der-stuhl.jpg`
+- Specs: 800x600 jpg
+
+### 🎬 vid-furniture-store-scene
+
+- [ ] **Furniture store scene: Female salesperson greets male customer. Dialog: 'Guten Tag! Kann ich Ihne...**
+- Used in: A1.1-M03-L06
+- Save to: `apps/web/static/videos/shared/people/vid-furniture-store-scene.mp4`
+- Specs: 20-25 seconds mp4 1080p
+
+### 🖼️ img-person-waking-bed
+
+- [ ] **Person waking up in bed, stretching arms, with alarm clock showing 7:00. Morning sunlight streami...**
+- Used in: A1.1-M03-L07
+- Save to: `apps/web/static/images/shared/people/img-person-waking-bed.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-person-pajamas-walking
+
+- [ ] **Person in pajamas walking toward bed with bedside lamp on, ready to sleep. Nighttime scene showin...**
+- Used in: A1.1-M03-L07
+- Save to: `apps/web/static/images/shared/people/img-person-pajamas-walking.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-person-oversleeping-alarmed
+
+- [ ] **Person oversleeping - alarmed expression, looking at alarm clock showing late time (8:30 or 9:00)...**
+- Used in: A1.1-M03-L07
+- Save to: `apps/web/static/images/shared/people/img-person-oversleeping-alarmed.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-person-getting-dressed
+
+- [ ] **Person getting dressed, pulling shirt over head or buttoning shirt. Morning routine scene, showin...**
+- Used in: A1.1-M03-L07
+- Save to: `apps/web/static/images/shared/people/img-person-getting-dressed.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-person-taking-shower
+
+- [ ] **Person taking a shower - visible from shoulders up through glass shower door, water running, stea...**
+- Used in: A1.1-M03-L08
+- Save to: `apps/web/static/images/shared/people/img-person-taking-shower.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-person-brushing-teeth
+
+- [ ] **Person brushing teeth in front of bathroom mirror. Clear view of toothbrush in use, toothpaste vi...**
+- Used in: A1.1-M03-L08
+- Save to: `apps/web/static/images/shared/people/img-person-brushing-teeth.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-person-brushingcombing-hair
+
+- [ ] **Person brushing/combing hair in front of mirror. Using hairbrush, styling hair. Bathroom or bedro...**
+- Used in: A1.1-M03-L08
+- Save to: `apps/web/static/images/shared/people/img-person-brushingcombing-hair.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-person-washing-hands
+
+- [ ] **Person washing hands with soap at sink. Soap bubbles visible, water running from faucet. Close-up...**
+- Used in: A1.1-M03-L08
+- Save to: `apps/web/static/images/shared/people/img-person-washing-hands.jpg`
+- Specs: 800x600 jpg
+
+### 🎬 vid-mother-and-teenage
+
+- [ ] **Mother and teenage son (Max) morning bathroom routine scene. Mother outside bathroom calling: 'Ma...**
+- Used in: A1.1-M03-L08
+- Save to: `apps/web/static/videos/shared/people/vid-mother-and-teenage.mp4`
+- Specs: 20-25 seconds mp4 1080p
+
+### 🖼️ img-street-view-showing
+
+- [ ] **Street view showing person walking straight ahead (geradeaus) on German street. Arrow or overlay ...**
+- Used in: A1.2-M05-L12
+- Save to: `apps/web/static/images/shared/people/img-street-view-showing.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-person-cyclist-turning
+
+- [ ] **Person or cyclist turning left at a German intersection. Left turn arrow visible. Street corner w...**
+- Used in: A1.2-M05-L12
+- Save to: `apps/web/static/images/shared/people/img-person-cyclist-turning.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-person-vehicle-turning
+
+- [ ] **Person or vehicle turning right at a German intersection. Right turn arrow visible. Street corner...**
+- Used in: A1.2-M05-L12
+- Save to: `apps/web/static/images/shared/people/img-person-vehicle-turning.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-close-up-portrait-showing
+
+- [ ] **Close-up portrait showing different hair types: long blonde hair (lange blonde Haare), displayed ...**
+- Used in: A1.1-M06-L13
+- Save to: `apps/web/static/images/shared/people/img-close-up-portrait-showing.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-portrait-showing-short
+
+- [ ] **Portrait showing short brown hair (kurze braune Haare) on a person with a friendly expression.**
+- Used in: A1.1-M06-L13
+- Save to: `apps/web/static/images/shared/people/img-portrait-showing-short.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-close-up-eyes-showing
+
+- [ ] **Close-up of eyes showing blue eyes (blaue Augen) with clear, vibrant blue color visible.**
+- Used in: A1.1-M06-L13
+- Save to: `apps/web/static/images/shared/people/img-close-up-eyes-showing.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-close-up-eyes-showing-1
+
+- [ ] **Close-up of eyes showing green eyes (grüne Augen) with clear, vibrant green color visible.**
+- Used in: A1.1-M06-L13
+- Save to: `apps/web/static/images/shared/people/img-close-up-eyes-showing-1.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-full-body-portrait-woman
+
+- [ ] **Full-body portrait of a woman with long hair (lange Haare), shown from front view to clearly demo...**
+- Used in: A1.1-M06-L13
+- Save to: `apps/web/static/images/shared/people/img-full-body-portrait-woman.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-portrait-person-with
+
+- [ ] **Portrait of a person with short hair (kurze Haare), clearly showing the short length.**
+- Used in: A1.1-M06-L13
+- Save to: `apps/web/static/images/shared/people/img-portrait-person-with.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-full-body-photo-tall
+
+- [ ] **Full-body photo of a tall person (groß) standing next to a height reference or doorway, clearly s...**
+- Used in: A1.1-M06-L13
+- Save to: `apps/web/static/images/shared/people/img-full-body-photo-tall.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-full-body-photo-shortsmall
+
+- [ ] **Full-body photo of a short/small person (klein) standing next to a height reference, clearly show...**
+- Used in: A1.1-M06-L13
+- Save to: `apps/web/static/images/shared/people/img-full-body-photo-shortsmall.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-close-up-person-wearing
+
+- [ ] **Close-up of a person wearing glasses (Brille), with focus on the glasses. Person should be smilin...**
+- Used in: A1.1-M06-L13
+- Save to: `apps/web/static/images/shared/people/img-close-up-person-wearing.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-portrait-showing-black-framed
+
+- [ ] **Portrait showing black-framed glasses (schwarze Brille) clearly visible on a person's face.**
+- Used in: A1.1-M06-L13
+- Save to: `apps/web/static/images/shared/people/img-portrait-showing-black-framed.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-portrait-man-with
+
+- [ ] **Portrait of a man with a long beard (langer Bart), showing the facial hair clearly.**
+- Used in: A1.1-M06-L13
+- Save to: `apps/web/static/images/shared/people/img-portrait-man-with.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-portrait-young-person
+
+- [ ] **Portrait of a young person (jung) - someone in their 20s, with youthful, energetic appearance.**
+- Used in: A1.1-M06-L13
+- Save to: `apps/web/static/images/shared/people/img-portrait-young-person.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-portrait-older-person
+
+- [ ] **Portrait of an older person (alt) - someone in their 70s or 80s, but still active and fit, with g...**
+- Used in: A1.1-M06-L13
+- Save to: `apps/web/static/images/shared/people/img-portrait-older-person.jpg`
+- Specs: 800x600 jpg
+
+### 🎬 vid-lisa-and-tom
+
+- [ ] **Lisa and Tom are in a bookstore or library. Lisa picks up a large, thick book and asks: 'Schau ma...**
+- Used in: A1.1-M06-L14
+- Save to: `apps/web/static/videos/shared/people/vid-lisa-and-tom.mp4`
+- Specs: 20-25 seconds mp4 1080p
+
+### 🖼️ img-large-thick-book
+
+- [ ] **A large, thick book (großes, dickes Buch) on a table with clear visibility of its size and thickn...**
+- Used in: A1.1-M06-L14
+- Save to: `apps/web/static/images/shared/people/img-large-thick-book.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-large-round-table
+
+- [ ] **A large, round table (großer, runder Tisch) in a room, showing its full size and shape clearly.**
+- Used in: A1.1-M06-L14
+- Save to: `apps/web/static/images/shared/people/img-large-round-table.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-old-vintage-book
+
+- [ ] **An old, vintage book (altes Buch) with worn cover, yellowed pages, looking aged but well-maintained.**
+- Used in: A1.1-M06-L14
+- Save to: `apps/web/static/images/shared/people/img-old-vintage-book.jpg`
+- Specs: 800x600 jpg
+
+### 🎬 vid-emma-and-jonas
+
+- [ ] **Emma and Jonas meet in the morning. Emma: 'Guten Morgen! Wie ist das Wetter heute?' Jonas looks o...**
+- Used in: A1.1-M06-L15
+- Save to: `apps/web/static/videos/shared/people/vid-emma-and-jonas.mp4`
+- Specs: 25-30 seconds mp4 1080p
+
+### 🖼️ img-happy-person-glueckliche
+
+- [ ] **A happy person (glückliche Person) with big genuine smile, joyful expression, bright eyes, positi...**
+- Used in: A1.1-M06-L15
+- Save to: `apps/web/static/images/shared/people/img-happy-person-glueckliche.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-sad-person-traurige
+
+- [ ] **A sad person (traurige Person) with tears or sad expression, downcast eyes, showing sadness or gr...**
+- Used in: A1.1-M06-L15
+- Save to: `apps/web/static/images/shared/people/img-sad-person-traurige.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-windy-day-windiger
+
+- [ ] **Windy day (windiger Tag) - trees bending in wind, leaves blowing, person's hair and clothes movin...**
+- Used in: A1.1-M06-L15
+- Save to: `apps/web/static/images/shared/people/img-windy-day-windiger.jpg`
+- Specs: 800x600 jpg
 
 ---
 
-## Lesson 03: Wie geht's? (How are you?)
+## Transport (Verkehrsmittel)
 
-### Images
+**34 images, 6 videos**
 
-- [ ] **img-01**: Two friends (Lisa and Stefan) at cozy German cafe. Smiling, coffee cups visible.
-  - Save to: `images/A1-1-M01-L03/cafe-friends.jpg`
+### 🖼️ img-two-business-professionals
 
-- [ ] **img-02**: Person giving thumbs up with happy expression.
-  - Save to: `images/A1-1-M01-L03/gut-thumbs-up.jpg`
+- [ ] **Two business professionals (man and woman) shaking hands in an office lobby. Formal attire, profe...**
+- Used in: A1.1-M01-L01
+- Save to: `apps/web/static/images/shared/transport/img-two-business-professionals.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-03**: Person jumping for joy, arms raised. Very enthusiastic.
-  - Save to: `images/A1-1-M01-L03/super-celebration.jpg`
+### 🖼️ img-person-waving-goodbye
 
-- [ ] **img-04**: Person looking tired or slightly unwell, hand on forehead.
-  - Save to: `images/A1-1-M01-L03/nicht-so-gut.jpg`
+- [ ] **Person waving goodbye at a train station or office door. Professional context, slightly formal.**
+- Used in: A1.1-M01-L01
+- Save to: `apps/web/static/images/shared/transport/img-person-waving-goodbye.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-05**: Person looking sad or unwell, in bed or with blanket.
-  - Save to: `images/A1-1-M01-L03/schlecht-unwell.jpg`
+### 🎬 vid-two-business-professionals
 
-- [ ] **img-06**: Two business professionals in formal conversation in office.
-  - Save to: `images/A1-1-M01-L03/formal-office.jpg`
+- [ ] **Two business professionals (Mr. Schmidt and Mr. Ahmadi) meeting for the first time. They shake ha...**
+- Used in: A1.1-M01-L01
+- Save to: `apps/web/static/videos/shared/transport/vid-two-business-professionals.mp4`
+- Specs: 15-20 seconds mp4 1080p
 
-### Videos
+### 🖼️ img-two-business-professionals-1
 
-- [ ] **vid-01**: Two friends at cafe. Dialog: "Hallo Stefan! Wie geht's?" - "Hallo Lisa! Mir geht's gut, danke. Und dir?" - "Mir geht's super!" (15-20 sec)
-  - Save to: `videos/A1-1-M01-L03/cafe-small-talk.mp4`
+- [ ] **Two business professionals (Frau Schmidt and Herr Ahmadi) having a formal conversation in an offi...**
+- Used in: A1.1-M01-L03
+- Save to: `apps/web/static/images/shared/transport/img-two-business-professionals-1.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-professional-networking-event
+
+- [ ] **Professional networking event - two business people (Herr Müller and Frau Ahmadi) exchanging busi...**
+- Used in: A1.1-M02-L03
+- Save to: `apps/web/static/images/shared/transport/img-professional-networking-event.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-engineer-with-hard
+
+- [ ] **Engineer with hard hat at construction site or in office with blueprints/technical drawings.**
+- Used in: A1.1-M02-L03
+- Save to: `apps/web/static/images/shared/transport/img-engineer-with-hard.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-programmerdeveloper-computer-with
+
+- [ ] **Programmer/developer at computer with code on screen. Modern office or home office setting.**
+- Used in: A1.1-M02-L03
+- Save to: `apps/web/static/images/shared/transport/img-programmerdeveloper-computer-with.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-father-with-child
+
+- [ ] **Father with child or in family setting. Caring, protective image.**
+- Used in: A1.1-M02-L04
+- Save to: `apps/web/static/images/shared/transport/img-father-with-child.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-two-colleagues-lisa
+
+- [ ] **Two colleagues (Lisa and Tom) having a casual conversation in an office break room or cafe. They ...**
+- Used in: A1.1-M03-L07
+- Save to: `apps/web/static/images/shared/transport/img-two-colleagues-lisa.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-traditional-german-breakfast
+
+- [ ] **Traditional German breakfast (das Frühstück) spread on a table: bread rolls (Brötchen), butter, j...**
+- Used in: A1.1-M03-L07
+- Save to: `apps/web/static/images/shared/transport/img-traditional-german-breakfast.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-professional-person-business
+
+- [ ] **Professional person (business casual attire) walking toward office building entrance in the morni...**
+- Used in: A1.1-M03-L07
+- Save to: `apps/web/static/images/shared/transport/img-professional-person-business.jpg`
+- Specs: 800x600 jpg
+
+### 🎬 vid-two-colleagues-meeting
+
+- [ ] **Two colleagues meeting in office break room. Dialog: 'Wann stehst du morgens auf?' - 'Ich stehe u...**
+- Used in: A1.1-M03-L07
+- Save to: `apps/web/static/videos/shared/transport/vid-two-colleagues-meeting.mp4`
+- Specs: 20-25 seconds mp4 1080p
+
+### 🖼️ img-woman-applying-makeup
+
+- [ ] **Woman applying makeup at vanity or bathroom mirror. Makeup brushes and cosmetics visible on count...**
+- Used in: A1.1-M03-L08
+- Save to: `apps/web/static/images/shared/transport/img-woman-applying-makeup.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-close-up-refreshing-glass
+
+- [ ] **Close-up of a refreshing glass of Apfelschorle (apple spritzer) with condensation on the glass, a...**
+- Used in: A1.2-M04-L09
+- Save to: `apps/web/static/images/shared/transport/img-close-up-refreshing-glass.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-coffee-service-items
+
+- [ ] **Coffee service items: milk pitcher (Milch) and sugar bowl (Zucker) on a cafe table with coffee cu...**
+- Used in: A1.2-M04-L10
+- Save to: `apps/web/static/images/shared/transport/img-coffee-service-items.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-customer-paying-bill
+
+- [ ] **Customer paying bill at cafe. Waiter presenting check/receipt in leather bill holder. Cash and ca...**
+- Used in: A1.2-M04-L10
+- Save to: `apps/web/static/images/shared/transport/img-customer-paying-bill.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-sara-and-ali
+
+- [ ] **Sara and Ali in a German supermarket aisle with shopping cart. They're selecting fresh produce (f...**
+- Used in: A1.2-M04-L11
+- Save to: `apps/web/static/images/shared/transport/img-sara-and-ali.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-fresh-vegetables-gemuese
+
+- [ ] **Fresh vegetables (Gemüse) display: tomatoes, carrots, broccoli, peppers, lettuce, cucumbers. Orga...**
+- Used in: A1.2-M04-L11
+- Save to: `apps/web/static/images/shared/transport/img-fresh-vegetables-gemuese.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-exterior-view-german
+
+- [ ] **Exterior view of a German Bahnhof (train station). Modern glass and steel architecture typical of...**
+- Used in: A1.2-M05-L11
+- Save to: `apps/web/static/images/shared/transport/img-exterior-view-german.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-german-post-office
+
+- [ ] **German post office (Die Post) exterior. Yellow Deutsche Post logo prominent. Modern service cente...**
+- Used in: A1.2-M05-L11
+- Save to: `apps/web/static/images/shared/transport/img-german-post-office.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-german-supermarket-supermarkt
+
+- [ ] **German supermarket (Supermarkt) exterior. Popular chain like REWE, EDEKA, or Aldi. Shopping carts...**
+- Used in: A1.2-M05-L11
+- Save to: `apps/web/static/images/shared/transport/img-german-supermarket-supermarkt.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-german-intersection-kreuzung
+
+- [ ] **German intersection (Kreuzung) from above or street level. Four-way crossing with crosswalks. Tra...**
+- Used in: A1.2-M05-L12
+- Save to: `apps/web/static/images/shared/transport/img-german-intersection-kreuzung.jpg`
+- Specs: 800x600 jpg
+
+### 🎬 vid-mina-asks-man
+
+- [ ] **Mina asks a man for directions on a German street. Mina: 'Entschuldigung, wie komme ich zur U-Bah...**
+- Used in: A1.2-M05-L12
+- Save to: `apps/web/static/videos/shared/transport/vid-mina-asks-man.mp4`
+- Specs: 20-25 seconds mp4 1080p
+
+### 🖼️ img-lisa-and-armin
+
+- [ ] **Lisa and Armin having a conversation at a German transit station or street. Both in commuter clot...**
+- Used in: A1.2-M05-L13
+- Save to: `apps/web/static/images/shared/transport/img-lisa-and-armin.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-german-u-bahn-subway
+
+- [ ] **German U-Bahn (subway) train at platform. Modern yellow Berlin U-Bahn or Hamburg subway. U-Bahn l...**
+- Used in: A1.2-M05-L13
+- Save to: `apps/web/static/images/shared/transport/img-german-u-bahn-subway.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-german-city-bus
+
+- [ ] **German city bus (Bus) at bus stop. Modern public bus with route number. Green/yellow color scheme...**
+- Used in: A1.2-M05-L13
+- Save to: `apps/web/static/images/shared/transport/img-german-city-bus.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-german-s-bahn-train
+
+- [ ] **German S-Bahn train at station platform. Red and cream colored S-Bahn typical of German cities. L...**
+- Used in: A1.2-M05-L13
+- Save to: `apps/web/static/images/shared/transport/img-german-s-bahn-train.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-german-strassenbahn-tram
+
+- [ ] **German Straßenbahn (tram) on city street. Modern yellow or red tram with overhead electric wires....**
+- Used in: A1.2-M05-L13
+- Save to: `apps/web/static/images/shared/transport/img-german-strassenbahn-tram.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-person-riding-bicycle
+
+- [ ] **Person riding a bicycle (Fahrrad) on German bicycle lane. Dedicated bike path with bicycle symbol...**
+- Used in: A1.2-M05-L13
+- Save to: `apps/web/static/images/shared/transport/img-person-riding-bicycle.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-german-car-auto
+
+- [ ] **German car (Auto) on city street. Modern vehicle, could be popular German brand (VW, BMW, Mercede...**
+- Used in: A1.2-M05-L13
+- Save to: `apps/web/static/images/shared/transport/img-german-car-auto.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-german-ice-high-speed
+
+- [ ] **German ICE high-speed train (Zug) at station platform. Sleek white ICE train with Deutsche Bahn l...**
+- Used in: A1.2-M05-L13
+- Save to: `apps/web/static/images/shared/transport/img-german-ice-high-speed.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-german-taxi-taxi
+
+- [ ] **German taxi at taxi stand. Cream/beige colored taxi with 'TAXI' sign on roof illuminated. Mercede...**
+- Used in: A1.2-M05-L13
+- Save to: `apps/web/static/images/shared/transport/img-german-taxi-taxi.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-german-airport-flughafen
+
+- [ ] **German airport (Flughafen) terminal exterior or interior. Modern airport building with airplane v...**
+- Used in: A1.2-M05-L13
+- Save to: `apps/web/static/images/shared/transport/img-german-airport-flughafen.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-german-bustram-stop
+
+- [ ] **German bus/tram stop (Haltestelle) with yellow sign. Information board showing routes and times. ...**
+- Used in: A1.2-M05-L13
+- Save to: `apps/web/static/images/shared/transport/img-german-bustram-stop.jpg`
+- Specs: 800x600 jpg
+
+### 🎬 vid-lisa-and-armin
+
+- [ ] **Lisa and Armin at a German transit station. Lisa: 'Wie kommst du jeden Tag zur Arbeit?' Armin: 'I...**
+- Used in: A1.2-M05-L13
+- Save to: `apps/web/static/videos/shared/transport/vid-lisa-and-armin.mp4`
+- Specs: 25-30 seconds mp4 1080p
+
+### 🎬 vid-customer-german-train
+
+- [ ] **Customer at German train station information counter. Kunde: 'Entschuldigung, fährt dieser Zug na...**
+- Used in: A1.2-M05-L13
+- Save to: `apps/web/static/videos/shared/transport/vid-customer-german-train.mp4`
+- Specs: 15-20 seconds mp4 1080p
+
+### 🎬 vid-anna-looking-for
+
+- [ ] **Anna is looking for her brother at a busy location (like a train station or university campus). S...**
+- Used in: A1.1-M06-L13
+- Save to: `apps/web/static/videos/shared/transport/vid-anna-looking-for.mp4`
+- Specs: 20-25 seconds mp4 1080p
+
+### 🖼️ img-light-bag-leichte
+
+- [ ] **A light bag (leichte Tasche) being easily held with one finger or carried effortlessly, showing l...**
+- Used in: A1.1-M06-L14
+- Save to: `apps/web/static/images/shared/transport/img-light-bag-leichte.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-expensive-car-teures
+
+- [ ] **An expensive car (teures Auto) - luxury vehicle like a Mercedes or BMW with price tag visible or ...**
+- Used in: A1.1-M06-L14
+- Save to: `apps/web/static/images/shared/transport/img-expensive-car-teures.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-affordablecheap-phone-guenstiges
+
+- [ ] **An affordable/cheap phone (günstiges Handy) with a sale tag or affordable price tag, simple model.**
+- Used in: A1.1-M06-L14
+- Save to: `apps/web/static/images/shared/transport/img-affordablecheap-phone-guenstiges.jpg`
+- Specs: 800x600 jpg
 
 ---
 
-# Module 2: Persönliches (Personal)
+## Other (Sonstiges)
 
-## Lesson 03: Berufe (Professions)
+**12 images, 2 videos**
 
-### Images
+### 🖼️ img-german-flag-black-red-gold
 
-- [ ] **img-01**: Professional networking event. Two business people exchanging cards.
-  - Save to: `images/A1-1-M02-L03/networking-event.jpg`
+- [ ] **German flag (black-red-gold) with iconic German landmark in background (Brandenburg Gate, Neuschw...**
+- Used in: A1.1-M01-L02
+- Save to: `apps/web/static/images/shared/misc/img-german-flag-black-red-gold.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-02**: Doctor in white coat with stethoscope. Hospital setting.
-  - Save to: `images/A1-1-M02-L03/arzt-doctor.jpg`
+### 🖼️ img-austrian-flag-red-white-red
 
-- [ ] **img-03**: Teacher at whiteboard with students.
-  - Save to: `images/A1-1-M02-L03/lehrer-teacher.jpg`
+- [ ] **Austrian flag (red-white-red) with Vienna landmark (St. Stephen's Cathedral, Schönbrunn Palace, o...**
+- Used in: A1.1-M01-L02
+- Save to: `apps/web/static/images/shared/misc/img-austrian-flag-red-white-red.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-04**: Engineer with hard hat at construction site or with blueprints.
-  - Save to: `images/A1-1-M02-L03/ingenieur-engineer.jpg`
+### 🖼️ img-swiss-flag-white
 
-- [ ] **img-05**: University student with books/laptop on campus.
-  - Save to: `images/A1-1-M02-L03/student.jpg`
+- [ ] **Swiss flag (white cross on red) with iconic Swiss imagery (Matterhorn, Lake Geneva, or Swiss vill...**
+- Used in: A1.1-M01-L02
+- Save to: `apps/web/static/images/shared/misc/img-swiss-flag-white.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-06**: Programmer at computer with code on screen. Modern office.
-  - Save to: `images/A1-1-M02-L03/programmierer.jpg`
+### 🖼️ img-iranian-flag-green-white-red
 
----
+- [ ] **Iranian flag (green-white-red) with iconic Persian imagery (Azadi Tower, Nasir al-Mulk Mosque, or...**
+- Used in: A1.1-M01-L02
+- Save to: `apps/web/static/images/shared/misc/img-iranian-flag-green-white-red.jpg`
+- Specs: 800x600 jpg
 
-## Lesson 04: Meine Familie (My Family)
+### 🖼️ img-turkish-flag-red
 
-### Images
+- [ ] **Turkish flag (red with white crescent and star) with Istanbul imagery (Blue Mosque, Bosphorus, or...**
+- Used in: A1.1-M01-L02
+- Save to: `apps/web/static/images/shared/misc/img-turkish-flag-red.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-01**: Two friends looking at family photos on phone. Warm living room.
-  - Save to: `images/A1-1-M02-L04/family-photos.jpg`
+### 🖼️ img-two-friends-lisa
 
-- [ ] **img-02**: Mother with child. Warm, loving, nurturing.
-  - Save to: `images/A1-1-M02-L04/mutter-mother.jpg`
+- [ ] **Two friends (Lisa and Stefan) meeting at a cozy German cafe. They are smiling and appear to be ca...**
+- Used in: A1.1-M01-L03
+- Save to: `apps/web/static/images/shared/misc/img-two-friends-lisa.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-03**: Father with child. Caring, protective.
-  - Save to: `images/A1-1-M02-L04/vater-father.jpg`
+### 🖼️ img-two-people-exchanging
 
-- [ ] **img-04**: Brother - young man, possibly with siblings.
-  - Save to: `images/A1-1-M02-L04/bruder-brother.jpg`
+- [ ] **Two people exchanging phone numbers - one typing into phone while other dictates. Casual setting ...**
+- Used in: A1.1-M02-L05
+- Save to: `apps/web/static/images/shared/misc/img-two-people-exchanging.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-05**: Sister - young woman, possibly with siblings.
-  - Save to: `images/A1-1-M02-L04/schwester-sister.jpg`
+### 🎬 vid-sara-and-ali
 
-- [ ] **img-06**: Grandmother - elderly woman, warm and kind.
-  - Save to: `images/A1-1-M02-L04/oma-grandmother.jpg`
+- [ ] **Sara and Ali at a cafe. Sara: 'Ich habe so viel Hunger!' Ali: 'Ich auch! Ich habe Lust auf Pizza....**
+- Used in: A1.2-M04-L09
+- Save to: `apps/web/static/videos/shared/misc/vid-sara-and-ali.mp4`
+- Specs: 20-25 seconds mp4 1080p
 
-- [ ] **img-07**: Grandfather - elderly man, warm and wise.
-  - Save to: `images/A1-1-M02-L04/opa-grandfather.jpg`
+### 🖼️ img-beautiful-piece-german
 
-- [ ] **img-08**: Family tree diagram showing mein/meine usage. Educational.
-  - Save to: `images/A1-1-M02-L04/family-tree-mein.png`
+- [ ] **Beautiful piece of German cake (Kuchen) on a white plate with a fork. Classic German cake like Sc...**
+- Used in: A1.2-M04-L10
+- Save to: `apps/web/static/images/shared/misc/img-beautiful-piece-german.jpg`
+- Specs: 800x600 jpg
 
----
+### 🎬 vid-cafe-scene-gast
 
-## Lesson 05: Zahlen (Numbers)
+- [ ] **Cafe scene. Gast: 'Entschuldigung, kann ich bestellen?' Kellner: 'Gern! Was darf es sein?' Gast: ...**
+- Used in: A1.2-M04-L10
+- Save to: `apps/web/static/videos/shared/misc/vid-cafe-scene-gast.mp4`
+- Specs: 25-30 seconds mp4 1080p
 
-### Images
+### 🖼️ img-dairy-products-section
 
-- [ ] **img-01**: Two people exchanging phone numbers at cafe.
-  - Save to: `images/A1-1-M02-L05/exchanging-numbers.jpg`
+- [ ] **Dairy products section (Milchprodukte): milk bottles, yogurt, cheese, butter arranged on supermar...**
+- Used in: A1.2-M04-L11
+- Save to: `apps/web/static/images/shared/misc/img-dairy-products-section.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-02**: Numbers 1-12 in colorful educational format with German words.
-  - Save to: `images/A1-1-M02-L05/zahlen-1-12.png`
+### 🖼️ img-heavy-package-schweres
 
-- [ ] **img-03**: Numbers 20-100 (tens) showing -zig pattern. Highlight dreißig with ß.
-  - Save to: `images/A1-1-M02-L05/zahlen-20-100.png`
+- [ ] **A heavy package (schweres Paket) being lifted by someone with visible effort, showing the weight.**
+- Used in: A1.1-M06-L14
+- Save to: `apps/web/static/images/shared/misc/img-heavy-package-schweres.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-04**: Diagram showing German number order: "25 = fünfundzwanzig" with arrows.
-  - Save to: `images/A1-1-M02-L05/number-order.png`
+### 🖼️ img-brand-new-smartphone
 
-- [ ] **img-05**: German vs Persian number formats. Show 5,99€, date 20.12.2024.
-  - Save to: `images/A1-1-M02-L05/number-formats.png`
+- [ ] **A brand new smartphone (neues Handy) still in box or with protective film, looking pristine and m...**
+- Used in: A1.1-M06-L14
+- Save to: `apps/web/static/images/shared/misc/img-brand-new-smartphone.jpg`
+- Specs: 800x600 jpg
 
----
+### 🖼️ img-boring-filmmovie-scene
 
-# Module 3: Alltag (Daily Life)
-
-## Lesson 06: Der, die oder das? (Furniture)
-
-### Images
-
-- [ ] **img-01**: Modern furniture store interior. Salesperson and customer near table/lamp display.
-  - Save to: `images/A1-1-M03-L06/furniture-store-dialog.jpg`
-
-- [ ] **img-02**: Wooden table (der Tisch). Modern brown dining table, 3/4 angle.
-  - Save to: `images/A1-1-M03-L06/der-tisch.jpg`
-
-- [ ] **img-03**: Table lamp (die Lampe). Modern white lamp, turned on and glowing.
-  - Save to: `images/A1-1-M03-L06/die-lampe.jpg`
-
-- [ ] **img-04**: Sofa (das Sofa). Gray modern 2-3 seater, comfortable.
-  - Save to: `images/A1-1-M03-L06/das-sofa.jpg`
-
-- [ ] **img-05**: Chair (der Stuhl). Simple wooden dining chair.
-  - Save to: `images/A1-1-M03-L06/der-stuhl.jpg`
-
-- [ ] **img-06**: Bed (das Bett). Modern double bed with white bedding.
-  - Save to: `images/A1-1-M03-L06/das-bett.jpg`
-
-- [ ] **img-07**: Colors display. Swatches: rot, blau, grün, gelb, schwarz, weiß, braun, orange, lila, grau.
-  - Save to: `images/A1-1-M03-L06/colors-german.jpg`
-
-- [ ] **img-08**: IKEA store scene. German customers browsing furniture. Blue/yellow branding.
-  - Save to: `images/A1-1-M03-L06/ikea-shopping-germany.jpg`
-
-### Videos
-
-- [ ] **vid-01**: Furniture store. "Guten Tag! Kann ich Ihnen helfen?" - "Ja, ich suche einen Tisch. Wie viel kostet der Tisch dort?" - "Der Tisch kostet 199 Euro." (20-25 sec)
-  - Save to: `videos/A1-1-M03-L06/furniture-store-dialog.mp4`
+- [ ] **A boring film/movie scene (langweiliger Film) - showing someone yawning while watching TV or look...**
+- Used in: A1.1-M06-L14
+- Save to: `apps/web/static/images/shared/misc/img-boring-filmmovie-scene.jpg`
+- Specs: 800x600 jpg
 
 ---
 
-## Lesson 07: Mein Tag (Daily Routine)
+## Food & Restaurant (Essen)
 
-### Images
+**13 images, 1 videos**
 
-- [ ] **img-01**: Two colleagues chatting in office break room about daily routines.
-  - Save to: `images/A1-1-M03-L07/daily-routine-dialog.jpg`
+### 🖼️ img-brother-young-man
 
-- [ ] **img-02**: Person waking up, stretching, alarm clock showing 7:00. Morning light.
-  - Save to: `images/A1-1-M03-L07/aufstehen-wake-up.jpg`
+- [ ] **Brother - young man, possibly with siblings. Casual, friendly.**
+- Used in: A1.1-M02-L04
+- Save to: `apps/web/static/images/shared/food/img-brother-young-man.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-03**: Person eating breakfast. Bread rolls, jam, cheese, coffee on table.
-  - Save to: `images/A1-1-M03-L07/fruehstuecken-breakfast.jpg`
+### 🖼️ img-person-sitting-breakfast
 
-- [ ] **img-04**: German breakfast spread top-down: Brötchen, butter, jam, cheese, coffee, juice.
-  - Save to: `images/A1-1-M03-L07/das-fruehstueck.jpg`
+- [ ] **Person sitting at breakfast table eating breakfast. Table has bread rolls (Brötchen), jam, cheese...**
+- Used in: A1.1-M03-L07
+- Save to: `apps/web/static/images/shared/food/img-person-sitting-breakfast.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-05**: Professional walking toward office building in morning.
-  - Save to: `images/A1-1-M03-L07/zur-arbeit-gehen.jpg`
+### 🖼️ img-evening-dinner-das
 
-- [ ] **img-06**: Evening dinner (Abendbrot). Bread, cold cuts, cheese. Warm lighting.
-  - Save to: `images/A1-1-M03-L07/das-abendessen.jpg`
+- [ ] **Evening dinner (das Abendessen) - family or individual at dinner table with German-style evening ...**
+- Used in: A1.1-M03-L07
+- Save to: `apps/web/static/images/shared/food/img-evening-dinner-das.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-07**: Person in pajamas going to bed. Clock showing 10 PM.
-  - Save to: `images/A1-1-M03-L07/ins-bett-gehen.jpg`
+### 🖼️ img-two-young-friends
 
-- [ ] **img-08**: Person oversleeping - alarmed, looking at clock showing 8:30, messy hair.
-  - Save to: `images/A1-1-M03-L07/verschlafen-oversleep.jpg`
+- [ ] **Two young friends (Sara and Ali) sitting at a casual cafe table. They look hungry and are looking...**
+- Used in: A1.2-M04-L09
+- Save to: `apps/web/static/images/shared/food/img-two-young-friends.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-09**: Diagram showing separable verb "aufstehen" splitting: "Ich stehe ... auf".
-  - Save to: `images/A1-1-M03-L07/separable-verbs-diagram.jpg`
+### 🖼️ img-delicious-grilled-bratwurst
 
-- [ ] **img-10**: Clock faces showing German times: 7:00 (sieben Uhr), 6:30 (halb sieben), 6:15, 6:45.
-  - Save to: `images/A1-1-M03-L07/telling-time-german.jpg`
+- [ ] **Delicious grilled Bratwurst (German sausage) on a white paper plate with mustard, served with a b...**
+- Used in: A1.2-M04-L09
+- Save to: `apps/web/static/images/shared/food/img-delicious-grilled-bratwurst.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-11**: Person getting dressed, pulling on shirt.
-  - Save to: `images/A1-1-M03-L07/sich-anziehen.jpg`
+### 🖼️ img-appetizing-pizza-wooden
 
-- [ ] **img-12**: German breakfast scene with Brötchen, clock showing 6-7 AM.
-  - Save to: `images/A1-1-M03-L07/german-daily-routine.jpg`
+- [ ] **Appetizing pizza on a wooden board with fresh toppings - tomatoes, cheese, basil. Restaurant/cafe...**
+- Used in: A1.2-M04-L09
+- Save to: `apps/web/static/images/shared/food/img-appetizing-pizza-wooden.jpg`
+- Specs: 800x600 jpg
 
-### Videos
+### 🖼️ img-beautiful-spread-various
 
-- [ ] **vid-01**: "Wann stehst du morgens auf?" - "Ich stehe um sieben Uhr auf. Und du?" - "Ich stehe um halb sieben auf." (20-25 sec)
-  - Save to: `videos/A1-1-M03-L07/daily-routine-dialog.mp4`
+- [ ] **Beautiful spread of various German foods on a table: Bratwurst, bread, salad, cheese, and drinks....**
+- Used in: A1.2-M04-L09
+- Save to: `apps/web/static/images/shared/food/img-beautiful-spread-various.jpg`
+- Specs: 800x600 jpg
 
----
+### 🖼️ img-inside-cozy-german
 
-## Lesson 08: Im Badezimmer (Bathroom)
+- [ ] **Inside a cozy German cafe. Customer (Gast) at table gesturing to waiter (Kellner) who is holding ...**
+- Used in: A1.2-M04-L10
+- Save to: `apps/web/static/images/shared/food/img-inside-cozy-german.jpg`
+- Specs: 800x600 jpg
 
-### Images
+### 🖼️ img-colorful-display-fresh
 
-- [ ] **img-01**: Mother calling to son through bathroom door. Morning scene.
-  - Save to: `images/A1-1-M03-L08/bathroom-routine-dialog.jpg`
+- [ ] **Colorful display of fresh fruits (Obst): apples, oranges, bananas, berries, grapes arranged attra...**
+- Used in: A1.2-M04-L11
+- Save to: `apps/web/static/images/shared/food/img-colorful-display-fresh.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-02**: Person taking shower. Shoulders up, water running, steam visible.
-  - Save to: `images/A1-1-M03-L08/duschen-shower.jpg`
+### 🖼️ img-meat-counter-fleischtheke
 
-- [ ] **img-03**: Person brushing teeth in front of mirror.
-  - Save to: `images/A1-1-M03-L08/zaehne-putzen.jpg`
+- [ ] **Meat counter (Fleischtheke) in German supermarket: various meats, sausages, cold cuts displayed. ...**
+- Used in: A1.2-M04-L11
+- Save to: `apps/web/static/images/shared/food/img-meat-counter-fleischtheke.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-04**: Person brushing/combing hair in front of mirror.
-  - Save to: `images/A1-1-M03-L08/haare-buersten.jpg`
+### 🖼️ img-happy-vegetarian-person
 
-- [ ] **img-05**: Man shaving face with razor in front of mirror.
-  - Save to: `images/A1-1-M03-L08/sich-rasieren.jpg`
+- [ ] **Happy vegetarian person with shopping basket full of vegetables, fruits, plant-based products. Ve...**
+- Used in: A1.2-M04-L11
+- Save to: `apps/web/static/images/shared/food/img-happy-vegetarian-person.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-06**: Woman applying makeup at vanity.
-  - Save to: `images/A1-1-M03-L08/sich-schminken.jpg`
+### 🖼️ img-traditional-german-baeckerei
 
-- [ ] **img-07**: Person washing hands with soap at sink.
-  - Save to: `images/A1-1-M03-L08/sich-waschen.jpg`
+- [ ] **Traditional German Bäckerei (bakery) exterior and display window showing fresh breads, rolls (Brö...**
+- Used in: A1.2-M04-L11
+- Save to: `apps/web/static/images/shared/food/img-traditional-german-baeckerei.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-08**: Reflexive pronouns diagram: ich→mich, du→dich, er/sie/es→sich, etc.
-  - Save to: `images/A1-1-M03-L08/reflexive-pronouns-diagram.jpg`
+### 🖼️ img-family-friends-dinner
 
-- [ ] **img-09**: Akkusativ vs Dativ diagram: "Ich wasche mich" vs "Ich wasche mir die Hände".
-  - Save to: `images/A1-1-M03-L08/dativ-akkusativ-reflexive.jpg`
+- [ ] **Family or friends at dinner table saying 'Guten Appetit!' together before eating. Warm, social di...**
+- Used in: A1.2-M04-L11
+- Save to: `apps/web/static/images/shared/food/img-family-friends-dinner.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-10**: Modern German bathroom. Sink, mirror, shower, towels organized.
-  - Save to: `images/A1-1-M03-L08/das-badezimmer.jpg`
+### 🎬 vid-supermarket-scene-sara
 
-- [ ] **img-11**: Shower head with water running.
-  - Save to: `images/A1-1-M03-L08/die-dusche.jpg`
-
-- [ ] **img-12**: Toothbrush with toothpaste close-up.
-  - Save to: `images/A1-1-M03-L08/die-zahnbuerste.jpg`
-
-- [ ] **img-13**: German bathroom products: Duschgel bottles, modern hygiene products.
-  - Save to: `images/A1-1-M03-L08/german-hygiene-culture.jpg`
-
-### Videos
-
-- [ ] **vid-01**: Mother and son. "Max, steh auf! Du musst dich duschen!" - "Ja, Mama. Ich dusche mich und putze mir die Zähne." (20-25 sec)
-  - Save to: `videos/A1-1-M03-L08/bathroom-routine-dialog.mp4`
-
----
-
-# Module 4: Essen (Food)
-
-## Lesson 09: Hunger und Durst
-
-### Images
-
-- [ ] **img-01**: Two friends (Sara and Ali) at cafe looking hungry, looking at menu.
-  - Save to: `images/A1-2-M04-L09/cafe-hungry-friends.jpg`
-
-- [ ] **img-02**: Glass of Apfelschorle with condensation, apple slices, ice.
-  - Save to: `images/A1-2-M04-L09/apfelschorle-drink.jpg`
-
-- [ ] **img-03**: Grilled Bratwurst on paper plate with mustard and bread roll.
-  - Save to: `images/A1-2-M04-L09/bratwurst-sausage.jpg`
-
-- [ ] **img-04**: German street food collage: Bratwurst stand, Döner shop, Currywurst, Brezel.
-  - Save to: `images/A1-2-M04-L09/german-street-food-collage.jpg`
-
-- [ ] **img-05**: Close-up of Döner Kebab with fresh vegetables and sauce.
-  - Save to: `images/A1-2-M04-L09/doner-kebab.jpg`
-
-- [ ] **img-06**: Appetizing pizza on wooden board with fresh toppings.
-  - Save to: `images/A1-2-M04-L09/pizza-craving.jpg`
-
-- [ ] **img-07**: Spread of German foods: Bratwurst, bread, salad, cheese, drinks.
-  - Save to: `images/A1-2-M04-L09/das-essen-meal.jpg`
-
-### Videos
-
-- [ ] **vid-01**: "Ich habe so viel Hunger!" - "Ich auch! Ich habe Lust auf Pizza." - "Hast du auch Durst?" - "Ja, ich habe Lust auf Apfelschorle." (20-25 sec)
-  - Save to: `videos/A1-2-M04-L09/hunger-durst-dialog.mp4`
+- [ ] **Supermarket scene. Sara: 'Ich muss einkaufen gehen. Kommst du mit?' Ali: 'Ja, gern! Was isst du g...**
+- Used in: A1.2-M04-L11
+- Save to: `apps/web/static/videos/shared/food/vid-supermarket-scene-sara.mp4`
+- Specs: 25-30 seconds mp4 1080p
 
 ---
 
-## Lesson 10: Im Restaurant
+## Places in City (Orte)
 
-### Images
+**11 images, 2 videos**
 
-- [ ] **img-01**: Cozy German cafe. Customer gesturing to waiter with notepad.
-  - Save to: `images/A1-2-M04-L10/cafe-ordering.jpg`
+### 🖼️ img-doctor-male-female
 
-- [ ] **img-02**: German cake on white plate. Schwarzwälder or apple strudel with coffee.
-  - Save to: `images/A1-2-M04-L10/kuchen-cake.jpg`
+- [ ] **Doctor (male or female) in white coat with stethoscope, friendly expression, hospital or clinic s...**
+- Used in: A1.1-M02-L03
+- Save to: `apps/web/static/images/shared/places/img-doctor-male-female.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-03**: Afternoon Kaffee und Kuchen scene. Elegant table, afternoon light.
-  - Save to: `images/A1-2-M04-L10/kaffee-und-kuchen-tradition.jpg`
+### 🖼️ img-mina-young-woman
 
-- [ ] **img-04**: German cakes display: Schwarzwälder Kirschtorte, Apfelstrudel, Käsekuchen.
-  - Save to: `images/A1-2-M04-L10/german-cakes-variety.jpg`
+- [ ] **Mina (young woman) asking Thomas for directions on a Berlin street. Urban German cityscape in bac...**
+- Used in: A1.2-M05-L11
+- Save to: `apps/web/static/images/shared/places/img-mina-young-woman.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-05**: Milk pitcher and sugar bowl with coffee cup.
-  - Save to: `images/A1-2-M04-L10/milch-zucker-coffee-service.jpg`
+### 🖼️ img-german-pharmacy-apotheke
 
-- [ ] **img-06**: Customer paying bill. Waiter with check holder, cash on table.
-  - Save to: `images/A1-2-M04-L10/zahlen-bitte-bill.jpg`
+- [ ] **German pharmacy (Apotheke) storefront. Distinctive red 'A' sign illuminated. Clean, modern shop f...**
+- Used in: A1.2-M05-L11
+- Save to: `apps/web/static/images/shared/places/img-german-pharmacy-apotheke.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-07**: Split scene: "Stimmt so!" tipping + "Nur bar" (cash only) sign.
-  - Save to: `images/A1-2-M04-L10/tipping-cash-culture.jpg`
+### 🖼️ img-german-bank-building
 
-- [ ] **img-08**: Friends toasting "Prost!" with beer, making eye contact.
-  - Save to: `images/A1-2-M04-L10/prost-toasting.jpg`
+- [ ] **German bank building exterior. Modern glass facade with bank logo. Professional architecture typi...**
+- Used in: A1.2-M05-L11
+- Save to: `apps/web/static/images/shared/places/img-german-bank-building.jpg`
+- Specs: 800x600 jpg
 
-### Videos
+### 🖼️ img-modern-german-hospital
 
-- [ ] **vid-01**: "Entschuldigung, kann ich bestellen?" - "Gern! Was darf es sein?" - "Ich hätte gern einen Kaffee und ein Stück Kuchen." (25-30 sec)
-  - Save to: `videos/A1-2-M04-L10/cafe-ordering-dialog.mp4`
+- [ ] **Modern German hospital (Krankenhaus) building. Large medical facility with emergency entrance mar...**
+- Used in: A1.2-M05-L11
+- Save to: `apps/web/static/images/shared/places/img-modern-german-hospital.jpg`
+- Specs: 800x600 jpg
 
----
+### 🖼️ img-traditional-german-marktplatz
 
-## Lesson 11: Essen Vorlieben (Food Preferences)
+- [ ] **Traditional German Marktplatz (market square) with historic town hall or church in background. Ma...**
+- Used in: A1.2-M05-L11
+- Save to: `apps/web/static/images/shared/places/img-traditional-german-marktplatz.jpg`
+- Specs: 800x600 jpg
 
-### Images
+### 🖼️ img-german-museum-exterior
 
-- [ ] **img-01**: Sara and Ali in German supermarket with cart, selecting produce.
-  - Save to: `images/A1-2-M04-L11/supermarkt-shopping.jpg`
+- [ ] **German museum exterior. Classical architecture with columns, or modern museum building. Sign show...**
+- Used in: A1.2-M05-L11
+- Save to: `apps/web/static/images/shared/places/img-german-museum-exterior.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-02**: Fresh fruits display: apples, oranges, bananas, berries, grapes.
-  - Save to: `images/A1-2-M04-L11/obst-fruits.jpg`
+### 🖼️ img-traditional-german-rathaus
 
-- [ ] **img-03**: Fresh vegetables: tomatoes, carrots, broccoli, peppers, lettuce.
-  - Save to: `images/A1-2-M04-L11/gemuse-vegetables.jpg`
+- [ ] **Traditional German Rathaus (city hall/town hall). Historic building with clock tower, located at ...**
+- Used in: A1.2-M05-L11
+- Save to: `apps/web/static/images/shared/places/img-traditional-german-rathaus.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-04**: Meat counter (Fleischtheke) with various meats, sausages.
-  - Save to: `images/A1-2-M04-L11/fleisch-meat-counter.jpg`
+### 🎬 vid-mina-and-thomas
 
-- [ ] **img-05**: Happy vegetarian with basket of vegetables and plant-based products.
-  - Save to: `images/A1-2-M04-L11/vegetarier-lifestyle.jpg`
+- [ ] **Mina and Thomas having a conversation on a Berlin street. Mina: 'Hallo! Ich bin neu in Berlin. Ke...**
+- Used in: A1.2-M05-L11
+- Save to: `apps/web/static/videos/shared/places/vid-mina-and-thomas.mp4`
+- Specs: 25-30 seconds mp4 1080p
 
-- [ ] **img-06**: Dairy section: milk, yogurt, cheese, butter on shelves.
-  - Save to: `images/A1-2-M04-L11/milchprodukte-dairy.jpg`
+### 🖼️ img-tourist-asking-german
 
-- [ ] **img-07**: German Bäckerei exterior with bread, Brötchen, pretzels in window.
-  - Save to: `images/A1-2-M04-L11/backerei-bakery.jpg`
+- [ ] **Tourist asking a German passerby for directions on a city street. Tourist has map or phone. Passe...**
+- Used in: A1.2-M05-L12
+- Save to: `apps/web/static/images/shared/places/img-tourist-asking-german.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-08**: German breads collage: Brötchen, Vollkornbrot, Brezel, Schwarzbrot.
-  - Save to: `images/A1-2-M04-L11/german-bread-varieties.jpg`
+### 🖼️ img-german-street-corner
 
-- [ ] **img-09**: Three meals: Frühstück (morning), Mittagessen (noon), Abendbrot (evening).
-  - Save to: `images/A1-2-M04-L11/german-meal-times.jpg`
+- [ ] **German street corner (Ecke). Building corner where two streets meet. Clear corner architecture. S...**
+- Used in: A1.2-M05-L12
+- Save to: `apps/web/static/images/shared/places/img-german-street-corner.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-10**: Family at table saying "Guten Appetit!" before eating.
-  - Save to: `images/A1-2-M04-L11/guten-appetit-meal.jpg`
+### 🖼️ img-person-walking-german
 
-- [ ] **img-11**: Menu showing symbols: V (vegetarian), VG (vegan), GF (gluten-free).
-  - Save to: `images/A1-2-M04-L11/dietary-restrictions-menu.jpg`
+- [ ] **Person walking on German sidewalk (zu Fuß). Pedestrian zone or walkway. Person in comfortable wal...**
+- Used in: A1.2-M05-L12
+- Save to: `apps/web/static/images/shared/places/img-person-walking-german.jpg`
+- Specs: 800x600 jpg
 
-### Videos
+### 🎬 vid-tourist-approaches-passerby
 
-- [ ] **vid-01**: "Ich muss einkaufen gehen. Kommst du mit?" - "Was isst du gern?" - "Ich esse gern Obst und Gemüse. Ich esse kein Fleisch." (25-30 sec)
-  - Save to: `videos/A1-2-M04-L11/shopping-preferences-dialog.mp4`
-
----
-
-# Module 5: Orte (Places)
-
-## Lesson 11: In der Stadt (In the City)
-
-### Images
-
-- [ ] **img-01**: Mina asking Thomas for directions on Berlin street. City architecture visible.
-  - Save to: `images/A1-1-M05-L11/berlin-street-conversation.jpg`
-
-- [ ] **img-02**: German train station (Bahnhof). Modern glass/steel, DB logo visible.
-  - Save to: `images/A1-1-M05-L11/bahnhof.jpg`
-
-- [ ] **img-03**: German pharmacy (Apotheke) with distinctive red 'A' sign.
-  - Save to: `images/A1-1-M05-L11/apotheke.jpg`
-
-- [ ] **img-04**: German bank building exterior. Modern, ATMs visible.
-  - Save to: `images/A1-1-M05-L11/bank.jpg`
-
-- [ ] **img-05**: German hospital (Krankenhaus) with "Notaufnahme" emergency entrance.
-  - Save to: `images/A1-1-M05-L11/krankenhaus.jpg`
-
-- [ ] **img-06**: German Marktplatz with town hall, market stalls, cobblestones.
-  - Save to: `images/A1-1-M05-L11/marktplatz.jpg`
-
-- [ ] **img-07**: German museum exterior with columns or modern design.
-  - Save to: `images/A1-1-M05-L11/museum.jpg`
-
-- [ ] **img-08**: German post office (Die Post) with yellow Deutsche Post logo.
-  - Save to: `images/A1-1-M05-L11/post.jpg`
-
-- [ ] **img-09**: German supermarket (REWE, EDEKA, or Aldi) exterior with carts.
-  - Save to: `images/A1-1-M05-L11/supermarkt.jpg`
-
-- [ ] **img-10**: German Rathaus (town hall) with clock tower, flags.
-  - Save to: `images/A1-1-M05-L11/rathaus.jpg`
-
-- [ ] **img-11**: German city culture collage: Altstadt, bike lanes, Sunday closed shops, red A pharmacy sign.
-  - Save to: `images/A1-1-M05-L11/german-city-culture.jpg`
-
-### Videos
-
-- [ ] **vid-01**: "Hallo! Ich bin neu in Berlin. Kennst du die Stadt?" - "Ja! Was suchst du?" - "Ich brauche eine Apotheke und eine Bank." (25-30 sec)
-  - Save to: `videos/A1-1-M05-L11/city-locations-dialog.mp4`
+- [ ] **Tourist approaches passerby on German street. Tourist: 'Entschuldigung! Wo ist der Bahnhof?' Pass...**
+- Used in: A1.2-M05-L12
+- Save to: `apps/web/static/videos/shared/places/vid-tourist-approaches-passerby.mp4`
+- Specs: 25-30 seconds mp4 1080p
 
 ---
 
-## Lesson 12: Nach dem Weg fragen (Asking for Directions)
+## Weather & Feelings (Wetter & Gefühle)
 
-### Images
+**9 images**
 
-- [ ] **img-01**: Tourist asking passerby for directions. Map/phone in hand, pointing.
-  - Save to: `images/A1-1-M05-L12/asking-directions.jpg`
+### 🖼️ img-two-friends-looking
 
-- [ ] **img-02**: Street view showing straight ahead (geradeaus) direction with arrow.
-  - Save to: `images/A1-1-M05-L12/geradeaus.jpg`
+- [ ] **Two friends looking at family photos on a phone or photo album. Casual, warm setting like a livin...**
+- Used in: A1.1-M02-L04
+- Save to: `apps/web/static/images/shared/weather/img-two-friends-looking.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-03**: Person turning left (links) at intersection with arrow.
-  - Save to: `images/A1-1-M05-L12/links.jpg`
+### 🖼️ img-bright-sunny-day
 
-- [ ] **img-04**: Person turning right (rechts) at intersection with arrow.
-  - Save to: `images/A1-1-M05-L12/rechts.jpg`
+- [ ] **A bright sunny day (sonniger Tag) with clear blue sky, sun visible, perhaps a park or outdoor sce...**
+- Used in: A1.1-M06-L15
+- Save to: `apps/web/static/images/shared/weather/img-bright-sunny-day.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-05**: German street corner (die Ecke). Building corner, street signs.
-  - Save to: `images/A1-1-M05-L12/ecke.jpg`
+### 🖼️ img-cloudy-day-bewoelkter
 
-- [ ] **img-06**: German intersection (die Kreuzung). Four-way crossing, crosswalks.
-  - Save to: `images/A1-1-M05-L12/kreuzung.jpg`
+- [ ] **A cloudy day (bewölkter Tag) with overcast sky, clouds covering the sky, gray but not raining.**
+- Used in: A1.1-M06-L15
+- Save to: `apps/web/static/images/shared/weather/img-cloudy-day-bewoelkter.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-07**: German traffic light (die Ampel) at pedestrian crossing.
-  - Save to: `images/A1-1-M05-L12/ampel.jpg`
+### 🖼️ img-rain-falling-regnet
 
-- [ ] **img-08**: Person walking on sidewalk (zu Fuß).
-  - Save to: `images/A1-1-M05-L12/zu-fuss.jpg`
+- [ ] **Rain falling (es regnet) - showing rainfall, raindrops visible, wet streets, people with umbrellas.**
+- Used in: A1.1-M06-L15
+- Save to: `apps/web/static/images/shared/weather/img-rain-falling-regnet.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-09**: Diagram: Imperativ directions - "Gehen Sie geradeaus!", "Biegen Sie links ab!"
-  - Save to: `images/A1-1-M05-L12/imperativ-directions.jpg`
+### 🖼️ img-snow-falling-schneit
 
-- [ ] **img-10**: Direction culture collage: "Entschuldigung", Google Maps, German street signs.
-  - Save to: `images/A1-1-M05-L12/direction-culture.jpg`
+- [ ] **Snow falling (es schneit) - snowflakes falling from sky, snow-covered ground, winter scene.**
+- Used in: A1.1-M06-L15
+- Save to: `apps/web/static/images/shared/weather/img-snow-falling-schneit.jpg`
+- Specs: 800x600 jpg
 
-### Videos
+### 🖼️ img-spring-season-fruehling
 
-- [ ] **vid-01**: "Entschuldigung! Wo ist der Bahnhof?" - "Gehen Sie hier geradeaus, etwa 200 Meter. Dann biegen Sie links ab." (25-30 sec)
-  - Save to: `videos/A1-1-M05-L12/asking-directions-dialog.mp4`
+- [ ] **Spring season (Frühling) - blooming flowers, green grass, trees with fresh leaves, colorful bloss...**
+- Used in: A1.1-M06-L15
+- Save to: `apps/web/static/images/shared/weather/img-spring-season-fruehling.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **vid-02**: "Entschuldigung, wie komme ich zur U-Bahn-Station?" - "Gehen Sie geradeaus bis zur Kreuzung. Biegen Sie rechts ab." (20-25 sec)
-  - Save to: `videos/A1-1-M05-L12/ubahn-directions-dialog.mp4`
+### 🖼️ img-summer-season-sommer
 
----
+- [ ] **Summer season (Sommer) - bright sun, people at beach or pool, hot weather, blue sky, vacation atm...**
+- Used in: A1.1-M06-L15
+- Save to: `apps/web/static/images/shared/weather/img-summer-season-sommer.jpg`
+- Specs: 800x600 jpg
 
-## Lesson 13: Verkehrsmittel (Transportation)
+### 🖼️ img-autumn-season-herbst
 
-### Images
+- [ ] **Autumn season (Herbst) - colorful fall leaves (red, orange, yellow), leaves falling from trees, m...**
+- Used in: A1.1-M06-L15
+- Save to: `apps/web/static/images/shared/weather/img-autumn-season-herbst.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-01**: Lisa and Armin at transit station discussing commute.
-  - Save to: `images/A1-1-M05-L13/commute-conversation.jpg`
+### 🖼️ img-winter-season-winter
 
-- [ ] **img-02**: German U-Bahn (yellow Berlin subway) at platform.
-  - Save to: `images/A1-1-M05-L13/ubahn.jpg`
-
-- [ ] **img-03**: German city bus at bus stop with route number.
-  - Save to: `images/A1-1-M05-L13/bus.jpg`
-
-- [ ] **img-04**: German S-Bahn (red commuter train) with DB branding.
-  - Save to: `images/A1-1-M05-L13/sbahn.jpg`
-
-- [ ] **img-05**: German Straßenbahn (tram) with overhead wires.
-  - Save to: `images/A1-1-M05-L13/strassenbahn.jpg`
-
-- [ ] **img-06**: Person on bicycle on German bike lane.
-  - Save to: `images/A1-1-M05-L13/fahrrad.jpg`
-
-- [ ] **img-07**: German car (VW, BMW, or Mercedes) on city street.
-  - Save to: `images/A1-1-M05-L13/auto.jpg`
-
-- [ ] **img-08**: German ICE high-speed train with DB logo.
-  - Save to: `images/A1-1-M05-L13/zug.jpg`
-
-- [ ] **img-09**: German taxi (cream/beige Mercedes with TAXI sign).
-  - Save to: `images/A1-1-M05-L13/taxi.jpg`
-
-- [ ] **img-10**: German airport (Flughafen) terminal.
-  - Save to: `images/A1-1-M05-L13/flughafen.jpg`
-
-- [ ] **img-11**: German Haltestelle (bus/tram stop) with yellow H sign.
-  - Save to: `images/A1-1-M05-L13/haltestelle.jpg`
-
-- [ ] **img-12**: "mit + Dativ" grammar diagram: mit dem Bus, mit der U-Bahn, mit dem Fahrrad.
-  - Save to: `images/A1-1-M05-L13/mit-dativ-grammar.jpg`
-
-- [ ] **img-13**: German transit culture collage: Deutschland-Ticket, smartphone app, bike on S-Bahn.
-  - Save to: `images/A1-1-M05-L13/german-transit-culture.jpg`
-
-### Videos
-
-- [ ] **vid-01**: "Wie kommst du zur Arbeit?" - "Ich fahre mit der U-Bahn. Das geht schnell." - "Ich nehme den Bus." (25-30 sec)
-  - Save to: `videos/A1-1-M05-L13/commute-dialog.mp4`
-
-- [ ] **vid-02**: "Fährt dieser Zug nach Hamburg?" - "Nein, Sie müssen mit der S-Bahn zum Hauptbahnhof fahren." (15-20 sec)
-  - Save to: `videos/A1-1-M05-L13/train-station-dialog.mp4`
+- [ ] **Winter season (Winter) - snow-covered landscape, bare trees, people in heavy coats, cold atmosphe...**
+- Used in: A1.1-M06-L15
+- Save to: `apps/web/static/images/shared/weather/img-winter-season-winter.jpg`
+- Specs: 800x600 jpg
 
 ---
 
-# Module 6: Beschreibungen (Descriptions)
+## Furniture & Rooms (Möbel)
 
-## Lesson 13: Menschen beschreiben (Describing People)
+**7 images**
 
-### Images
+### 🖼️ img-wooden-table-der
 
-- [ ] **img-01**: Portrait: long blonde hair (lange blonde Haare).
-  - Save to: `images/A1-1-M06-L13/haare-lang-blond.jpg`
+- [ ] **Wooden table (der Tisch) - Modern brown wooden dining table with clean simple design, shown from ...**
+- Used in: A1.1-M03-L06
+- Save to: `apps/web/static/images/shared/furniture/img-wooden-table-der.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-02**: Portrait: short brown hair (kurze braune Haare).
-  - Save to: `images/A1-1-M06-L13/haare-kurz-braun.jpg`
+### 🖼️ img-table-lamp-die
 
-- [ ] **img-03**: Close-up: blue eyes (blaue Augen).
-  - Save to: `images/A1-1-M06-L13/augen-blau.jpg`
+- [ ] **Table lamp (die Lampe) - Modern white table lamp with cylindrical shade, turned on and glowing, s...**
+- Used in: A1.1-M03-L06
+- Save to: `apps/web/static/images/shared/furniture/img-table-lamp-die.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-04**: Close-up: green eyes (grüne Augen).
-  - Save to: `images/A1-1-M06-L13/augen-gruen.jpg`
+### 🖼️ img-sofacouch-das-sofa
 
-- [ ] **img-05**: Color palette chart with German labels: schwarz, weiß, rot, blau, grün, gelb, braun, grau, rosa, lila, orange.
-  - Save to: `images/A1-1-M06-L13/farben-palette.jpg`
+- [ ] **Sofa/couch (das Sofa) - Comfortable gray modern sofa with cushions, 2-3 seater, shown from front ...**
+- Used in: A1.1-M03-L06
+- Save to: `apps/web/static/images/shared/furniture/img-sofacouch-das-sofa.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-06**: Full-body: woman with long hair.
-  - Save to: `images/A1-1-M06-L13/lang-haare.jpg`
+### 🖼️ img-man-shaving-face
 
-- [ ] **img-07**: Portrait: person with short hair.
-  - Save to: `images/A1-1-M06-L13/kurz-haare.jpg`
+- [ ] **Man shaving face with electric or traditional razor in front of bathroom mirror. Shaving cream on...**
+- Used in: A1.1-M03-L08
+- Save to: `apps/web/static/images/shared/furniture/img-man-shaving-face.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-08**: Full-body: tall person (groß) next to doorway reference.
-  - Save to: `images/A1-1-M06-L13/gross-person.jpg`
+### 🖼️ img-modern-german-bathroom
 
-- [ ] **img-09**: Full-body: short person (klein) next to height reference.
-  - Save to: `images/A1-1-M06-L13/klein-person.jpg`
+- [ ] **Modern German bathroom (das Badezimmer) - clean, well-organized bathroom showing sink, mirror, sh...**
+- Used in: A1.1-M03-L08
+- Save to: `apps/web/static/images/shared/furniture/img-modern-german-bathroom.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-10**: Physical appearance chart: groß/klein, schlank/dick, blond/dunkel, lockig/glatt.
-  - Save to: `images/A1-1-M06-L13/erscheinung-adjektive.jpg`
+### 🖼️ img-shower-fixtureshower-head
 
-- [ ] **img-11**: Person wearing glasses (Brille), smiling.
-  - Save to: `images/A1-1-M06-L13/brille.jpg`
+- [ ] **Shower fixture/shower head (die Dusche) - modern shower head with water running, chrome fixtures,...**
+- Used in: A1.1-M03-L08
+- Save to: `apps/web/static/images/shared/furniture/img-shower-fixtureshower-head.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-12**: Person with black-framed glasses (schwarze Brille).
-  - Save to: `images/A1-1-M06-L13/brille-schwarz.jpg`
+### 🖼️ img-toothbrush-die-zahnbuerste
 
-- [ ] **img-13**: Man with long beard (langer Bart).
-  - Save to: `images/A1-1-M06-L13/bart-lang.jpg`
-
-- [ ] **img-14**: Young person (jung) in their 20s, energetic.
-  - Save to: `images/A1-1-M06-L13/jung-person.jpg`
-
-- [ ] **img-15**: Elderly person (alt) in 70s-80s, dignified.
-  - Save to: `images/A1-1-M06-L13/alt-person.jpg`
-
-- [ ] **img-16**: Person with curly hair (lockige Haare).
-  - Save to: `images/A1-1-M06-L13/haare-lockig.jpg`
-
-- [ ] **img-17**: Person with straight hair (glatte Haare).
-  - Save to: `images/A1-1-M06-L13/haare-glatt.jpg`
-
-### Videos
-
-- [ ] **vid-01**: Anna looking for brother. "Er hat kurze braune Haare und grüne Augen. Er ist groß und schlank. Er trägt eine schwarze Brille." - "Ah, da ist er!" (20-25 sec)
-  - Save to: `videos/A1-1-M06-L13/finding-brother-dialog.mp4`
+- [ ] **Toothbrush (die Zahnbürste) - close-up of modern toothbrush with toothpaste on bristles, position...**
+- Used in: A1.1-M03-L08
+- Save to: `apps/web/static/images/shared/furniture/img-toothbrush-die-zahnbuerste.jpg`
+- Specs: 800x600 jpg
 
 ---
 
-## Lesson 14: Dinge beschreiben (Describing Things)
+## Greetings (Begrüßungen)
 
-### Images
+**2 images, 1 videos**
 
-- [ ] **img-01**: Large, thick book (großes, dickes Buch) on table.
-  - Save to: `images/A1-1-M06-L14/buch-gross-dick.jpg`
+### 🖼️ img-person-waving-hand
 
-- [ ] **img-02**: Large, round table (großer, runder Tisch).
-  - Save to: `images/A1-1-M06-L14/tisch-gross-rund.jpg`
+- [ ] **Person waving hand in friendly greeting gesture. Casual, approachable pose.**
+- Used in: A1.1-M01-L01
+- Save to: `apps/web/static/images/shared/greetings/img-person-waving-hand.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-03**: Size comparison: groß vs klein, lang vs kurz, breit vs schmal.
-  - Save to: `images/A1-1-M06-L14/groesse-vergleich.jpg`
+### 🖼️ img-two-friends-young
 
-- [ ] **img-04**: Heavy package (schweres Paket) being lifted with effort.
-  - Save to: `images/A1-1-M06-L14/schwer-paket.jpg`
+- [ ] **Two friends (young adults) waving goodbye casually at a cafe or park. Relaxed, informal setting.**
+- Used in: A1.1-M01-L01
+- Save to: `apps/web/static/images/shared/greetings/img-two-friends-young.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-05**: Light bag (leichte Tasche) held easily with one finger.
-  - Save to: `images/A1-1-M06-L14/leicht-tasche.jpg`
+### 🎬 vid-two-friends-meeting
 
-- [ ] **img-06**: Expensive car (teures Auto) - luxury Mercedes/BMW.
-  - Save to: `images/A1-1-M06-L14/teuer-auto.jpg`
-
-- [ ] **img-07**: Affordable phone (günstiges Handy) with sale tag.
-  - Save to: `images/A1-1-M06-L14/guenstig-handy.jpg`
-
-- [ ] **img-08**: Opposite adjectives chart: groß↔klein, schwer↔leicht, teuer↔günstig, neu↔alt.
-  - Save to: `images/A1-1-M06-L14/gegensaetze-chart.jpg`
-
-- [ ] **img-09**: Brand new smartphone (neues Handy) in box.
-  - Save to: `images/A1-1-M06-L14/neu-handy.jpg`
-
-- [ ] **img-10**: Old vintage book (altes Buch) with worn cover, yellowed pages.
-  - Save to: `images/A1-1-M06-L14/alt-buch.jpg`
-
-- [ ] **img-11**: Interesting book cover (interessantes Buch), colorful and engaging.
-  - Save to: `images/A1-1-M06-L14/interessant-buch.jpg`
-
-- [ ] **img-12**: Person yawning at boring film (langweiliger Film).
-  - Save to: `images/A1-1-M06-L14/langweilig-film.jpg`
-
-- [ ] **img-13**: Thick book vs thin book side-by-side (dick vs dünn).
-  - Save to: `images/A1-1-M06-L14/dick-duenn-buch.jpg`
-
-- [ ] **img-14**: Practical tool (praktisches Werkzeug) - Swiss Army knife.
-  - Save to: `images/A1-1-M06-L14/praktisch-werkzeug.jpg`
-
-- [ ] **img-15**: Broken computer (kaputter Computer) with cracked screen.
-  - Save to: `images/A1-1-M06-L14/kaputt-computer.jpg`
-
-- [ ] **img-16**: Clean room (sauber) - organized, spotless.
-  - Save to: `images/A1-1-M06-L14/sauber-zimmer.jpg`
-
-- [ ] **img-17**: Dirty room (schmutzig) - cluttered, messy.
-  - Save to: `images/A1-1-M06-L14/schmutzig-zimmer.jpg`
-
-- [ ] **img-18**: Beautiful object (schönes Ding) - aesthetic vase or decor.
-  - Save to: `images/A1-1-M06-L14/schoen-objekt.jpg`
-
-### Videos
-
-- [ ] **vid-01**: Lisa picks up book. "Schau mal! Was ist das?" - "Das ist ein Buch. Ein großes, dickes Buch." - "Ist es teuer?" - "Nein, es ist günstig." (20-25 sec)
-  - Save to: `videos/A1-1-M06-L14/describing-book-dialog.mp4`
+- [ ] **Two friends meeting at a cafe. Dialog: 'Hallo Stefan! Wie geht's?' - 'Hallo Lisa! Mir geht's gut,...**
+- Used in: A1.1-M01-L03
+- Save to: `apps/web/static/videos/shared/greetings/vid-two-friends-meeting.mp4`
+- Specs: 15-20 seconds mp4 1080p
 
 ---
 
-## Lesson 15: Wetter und Gefühle (Weather & Feelings)
+## Daily Life (Alltag)
 
-### Images
+**2 images**
 
-- [ ] **img-01**: Bright sunny day (sonnig) - blue sky, park scene.
-  - Save to: `images/A1-1-M06-L15/sonnig-tag.jpg`
+### 🖼️ img-bed-das-bett
 
-- [ ] **img-02**: Cloudy day (bewölkt) - overcast, gray sky.
-  - Save to: `images/A1-1-M06-L15/bewoelkt-tag.jpg`
+- [ ] **Bed (das Bett) - Modern double bed with white/cream bedding, wooden frame, shown from side angle ...**
+- Used in: A1.1-M03-L06
+- Save to: `apps/web/static/images/shared/daily-life/img-bed-das-bett.jpg`
+- Specs: 800x600 jpg
 
-- [ ] **img-03**: Rain falling (es regnet) - raindrops, wet streets, umbrellas.
-  - Save to: `images/A1-1-M06-L15/regnen.jpg`
+### 🖼️ img-mother-calling-teenage
 
-- [ ] **img-04**: Snow falling (es schneit) - snowflakes, white landscape.
-  - Save to: `images/A1-1-M06-L15/schneien.jpg`
-
-- [ ] **img-05**: Weather types composite: sonnig, bewölkt, windig, neblig, stürmisch.
-  - Save to: `images/A1-1-M06-L15/wetter-typen.jpg`
-
-- [ ] **img-06**: Hot day (heiß) - thermometer high, summer clothes.
-  - Save to: `images/A1-1-M06-L15/heiss-sommer.jpg`
-
-- [ ] **img-07**: Cold day (kalt) - thermometer low, winter clothes.
-  - Save to: `images/A1-1-M06-L15/kalt-winter.jpg`
-
-- [ ] **img-08**: Spring (Frühling) - blooming flowers, fresh leaves.
-  - Save to: `images/A1-1-M06-L15/fruehling.jpg`
-
-- [ ] **img-09**: Summer (Sommer) - bright sun, beach/pool, vacation.
-  - Save to: `images/A1-1-M06-L15/sommer.jpg`
-
-- [ ] **img-10**: Autumn (Herbst) - colorful fall leaves (red, orange, yellow).
-  - Save to: `images/A1-1-M06-L15/herbst.jpg`
-
-- [ ] **img-11**: Winter (Winter) - snow-covered, bare trees, heavy coats.
-  - Save to: `images/A1-1-M06-L15/winter.jpg`
-
-- [ ] **img-12**: Four seasons chart with German months.
-  - Save to: `images/A1-1-M06-L15/jahreszeiten-chart.jpg`
-
-- [ ] **img-13**: Happy person (glücklich) - big smile, joyful.
-  - Save to: `images/A1-1-M06-L15/gluecklich.jpg`
-
-- [ ] **img-14**: Sad person (traurig) - tears or sad expression.
-  - Save to: `images/A1-1-M06-L15/traurig.jpg`
-
-- [ ] **img-15**: Tired person (müde) - yawning, rubbing eyes.
-  - Save to: `images/A1-1-M06-L15/muede.jpg`
-
-- [ ] **img-16**: Sick person (krank) - in bed with thermometer.
-  - Save to: `images/A1-1-M06-L15/krank.jpg`
-
-- [ ] **img-17**: Cheerful person (fröhlich) - laughing, energetic.
-  - Save to: `images/A1-1-M06-L15/froehlich.jpg`
-
-- [ ] **img-18**: Stressed person (im Stress) - overwhelmed by work.
-  - Save to: `images/A1-1-M06-L15/im-stress.jpg`
-
-- [ ] **img-19**: Emotions chart: glücklich, fröhlich, zufrieden vs traurig, müde, krank.
-  - Save to: `images/A1-1-M06-L15/gefuehle-chart.jpg`
-
-- [ ] **img-20**: Windy day (windig) - trees bending, leaves blowing.
-  - Save to: `images/A1-1-M06-L15/windig.jpg`
-
-- [ ] **img-21**: Foggy day (neblig) - limited visibility, fog.
-  - Save to: `images/A1-1-M06-L15/neblig.jpg`
-
-- [ ] **img-22**: Stormy day (stürmisch) - dark clouds, lightning.
-  - Save to: `images/A1-1-M06-L15/stuermisch.jpg`
-
-- [ ] **img-23**: Healthy person (gesund/fit) - exercising, energetic.
-  - Save to: `images/A1-1-M06-L15/gesund-fit.jpg`
-
-### Videos
-
-- [ ] **vid-01**: "Wie ist das Wetter heute?" - "Es ist sonnig und warm. Perfekt für einen Spaziergang!" - "Aber gestern war es kalt und regnerisch." (25-30 sec)
-  - Save to: `videos/A1-1-M06-L15/weather-discussion-dialog.mp4`
+- [ ] **Mother calling to teenage son through bathroom door. Morning scene in hallway outside bathroom. M...**
+- Used in: A1.1-M03-L08
+- Save to: `apps/web/static/images/shared/daily-life/img-mother-calling-teenage.jpg`
+- Specs: 800x600 jpg
 
 ---
 
-## When You're Done
+## Professions (Berufe)
 
-1. Check the box `[x]` next to each completed task
-2. Save files to the correct path in `apps/web/static/`
-3. Commit changes: `git add . && git commit -m "feat(media): add [description]"`
+**1 images**
+
+### 🖼️ img-teacher-male-female
+
+- [ ] **Teacher (male or female) at a whiteboard or with students in a classroom. Friendly, educational s...**
+- Used in: A1.1-M02-L03
+- Save to: `apps/web/static/images/shared/professions/img-teacher-male-female.jpg`
+- Specs: 800x600 jpg
 
 ---
 
-*Total: 205 tasks (189 images + 16 videos)*
+## Family (Familie)
+
+**1 images**
+
+### 🖼️ img-mother-with-child
+
+- [ ] **Mother with child or in family setting. Warm, loving, nurturing image.**
+- Used in: A1.1-M02-L04
+- Save to: `apps/web/static/images/shared/family/img-mother-with-child.jpg`
+- Specs: 800x600 jpg
+
+---
+
+## Directions (Richtungen)
+
+**1 images**
+
+### 🖼️ img-german-traffic-light
+
+- [ ] **German traffic light (Ampel) at pedestrian crossing. Red/yellow/green lights visible. Pedestrian ...**
+- Used in: A1.2-M05-L12
+- Save to: `apps/web/static/images/shared/directions/img-german-traffic-light.jpg`
+- Specs: 800x600 jpg
+
+---
+
+## Notes
+
+- ⭐ = **Reusable asset** - used in multiple lessons, create only once!
+- Assets organized by **what they show**, not which lesson uses them
+- Full details in `scripts/media-data/asset-registry.json`
+
+## Folder Structure
+
+```
+apps/web/static/
+├── images/shared/
+│   ├── transport/      # U-Bahn, Bus, S-Bahn, etc.
+│   ├── food/           # Restaurant, Frühstück, etc.
+│   ├── places/         # Bahnhof, Apotheke, etc.
+│   ├── people/         # Portraits, descriptions
+│   ├── weather/        # Sun, rain, seasons
+│   ├── grammar/        # Educational diagrams
+│   └── ...             # Other categories
+└── videos/shared/
+    └── dialogs/        # Dialog videos
+```

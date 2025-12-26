@@ -44,6 +44,10 @@ export const BaseStepSchema = z.object({
   video: MediaSchema.optional(),
   audio: MediaSchema.optional(),
 
+  // Image support - use imageId for asset registry lookup, or image for direct path
+  imageId: z.string().optional(), // Asset registry ID (e.g., "ubahn-berlin")
+  image: z.string().optional(),   // Direct URL path (legacy, for backward compatibility)
+
   // Optional feedback/explanation for any step
   feedback: FeedbackSchema.optional(),
 });
@@ -62,8 +66,7 @@ export const NewWordStepSchema = BaseStepSchema.extend({
   // Optional example usage
   example: ExampleSchema.optional(),
 
-  // Optional image for visual learning
-  image: z.string().optional(), // URL
+  // Note: image and imageId are now in BaseStepSchema for all step types
 
   // Header text (default: "Look, something new!")
   header: z.string().default("Look, something new!"),
