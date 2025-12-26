@@ -52,10 +52,52 @@ Track of content comparisons with Busuu and enhancements made.
 
 ---
 
-## Module 2: Personal Info
+## Module 2: Personal Info (Professions, Family, Numbers)
 
-**Busuu Sources:** Chapters 3, 4
-**Date:** Pending
+**Busuu Sources:** Chapters 3, 4, 10, 16, 19-24
+**Date:** 2025-12-26
+
+### Gap Analysis
+
+| Content | Busuu | App Before | Action |
+|---------|-------|------------|--------|
+| Was bist du von Beruf? | Yes | Cultural tip only | Already covered |
+| Krankenpfleger/in | Yes | No | Added to L03 |
+| Verkäufer/in | Yes | No | Added to L03 |
+| Kellner/in | Yes | No | Added to L03 |
+| die Arbeit | Yes | No | Added to L03 |
+| arbeitslos | Yes | No | Added to L03 |
+| bei + company pattern | Yes | Example only | Added grammar tip |
+| Sohn/Tochter | Yes | No | Added to L04 |
+| die Eltern | Yes | No | Added to L04 |
+| Tante/Onkel | Yes | No | Added to L04 |
+| Einzelkind | Yes | No | Added to L04 |
+| Geschwister | Yes | Dialog only | Added explicit |
+| keine Geschwister | Yes | No | Added grammar tip |
+| Numbers 0-100 | Yes | Yes | Already comprehensive |
+
+### Lesson Changes
+
+#### L03: Ich bin Ingenieur (Professions)
+- [x] Added: Krankenpfleger/in (nurse)
+- [x] Added: Verkäufer/in (shop assistant)
+- [x] Added: Kellner/in (waiter)
+- [x] Added: die Arbeit (work/job)
+- [x] Added: arbeitslos (unemployed)
+- [x] Added: Grammar tip for "bei + company" and "Arbeit als + profession"
+- Steps: 15 → 21
+
+#### L04: Meine Familie (Family)
+- [x] Added: der Sohn / die Tochter
+- [x] Added: die Eltern (parents)
+- [x] Added: die Tante / der Onkel
+- [x] Added: das Einzelkind (only child)
+- [x] Added: die Geschwister as explicit vocab
+- [x] Added: Grammar tip for haben + keine/keinen negation
+- Steps: 15 → 21
+
+#### L05: Zahlen 1-100 (Numbers)
+- No changes needed - already comprehensive coverage
 
 ---
 
