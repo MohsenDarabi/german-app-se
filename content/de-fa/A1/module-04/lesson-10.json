@@ -1,0 +1,502 @@
+{
+  "id": "A1-2-M04-L10",
+  "title": {
+    "de": "Im Restaurant bestellen",
+    "fa": "سفارش دادن در رستوران"
+  },
+  "level": "A1-2",
+  "module": 4,
+  "lessonNumber": 10,
+  "estimatedMinutes": 24,
+  "steps": [
+    {
+      "type": "dialog",
+      "id": "s1",
+      "title": "Im Café",
+      "lines": [
+        {
+          "speaker": "Gast",
+          "text": {
+            "de": "Entschuldigung, kann ich bestellen?",
+            "fa": "ببخشید، می‌توانم سفارش دهم؟"
+          }
+        },
+        {
+          "speaker": "Kellner",
+          "text": {
+            "de": "Gern! Was darf es sein?",
+            "fa": "با کمال میل! چه میل دارید؟"
+          }
+        },
+        {
+          "speaker": "Gast",
+          "text": {
+            "de": "Ich hätte gern einen Kaffee und ein Stück Kuchen.",
+            "fa": "یک قهوه و یک تکه کیک می‌خواهم."
+          }
+        },
+        {
+          "speaker": "Kellner",
+          "text": {
+            "de": "Mit Milch und Zucker?",
+            "fa": "با شیر و شکر؟"
+          }
+        },
+        {
+          "speaker": "Gast",
+          "text": {
+            "de": "Ja, bitte. Und die Rechnung, bitte!",
+            "fa": "بله، لطفاً. و صورتحساب، لطفاً!"
+          }
+        }
+      ],
+      "feedback": {
+        "explanation": "در این مکالمه یاد می‌گیریم چگونه در کافه یا رستوران سفارش دهیم و صورتحساب بخواهیم."
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": {
+        "de": "bestellen",
+        "fa": "سفارش دادن"
+      },
+      "phonetic": "be-SHTEL-len",
+      "wordType": "verb",
+      "example": {
+        "text": {
+          "de": "Kann ich bestellen?",
+          "fa": "می‌توانم سفارش دهم؟"
+        }
+      },
+      "note": {
+        "fa": "تأکید روی هجای دوم: be-STEL-len"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": {
+        "de": "Ich hätte gern...",
+        "fa": "می‌خواهم... (مودبانه)"
+      },
+      "phonetic": "ikh HET-te gehrn",
+      "wordType": "phrase",
+      "example": {
+        "text": {
+          "de": "Ich hätte gern eine Pizza.",
+          "fa": "یک پیتزا می‌خواهم."
+        }
+      },
+      "note": {
+        "fa": "شکل مودبانه برای سفارش دادن - بهتر از Ich möchte"
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s4",
+      "title": "Akkusativ با سفارش غذا",
+      "content": "وقتی غذا یا نوشیدنی سفارش می‌دهیم، از حالت **Akkusativ** استفاده می‌کنیم:\n\n**فقط مذکر تغییر می‌کند:**\n\n| Nominativ | Akkusativ |\n|---|---|\n| der Kaffee | ein**en** Kaffee |\n| der Tee | ein**en** Tee |\n| der Saft | ein**en** Saft |\n| die Pizza | ein**e** Pizza |\n| das Wasser | ein Wasser |\n\n**یادتان باشد:**\nder → den\nein → einen (فقط مذکر!)",
+      "examples": [
+        {
+          "de": "Ich hätte gern einen Kaffee.",
+          "fa": "یک قهوه می‌خواهم. (Kaffee مذکر)"
+        },
+        {
+          "de": "Ich hätte gern eine Suppe.",
+          "fa": "یک سوپ می‌خواهم. (Suppe مونث)"
+        },
+        {
+          "de": "Ich hätte gern ein Wasser.",
+          "fa": "یک آب می‌خواهم. (Wasser خنثی)"
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": {
+        "de": "Was darf es sein?",
+        "fa": "چه میل دارید؟"
+      },
+      "phonetic": "vas darf es zayn",
+      "wordType": "phrase",
+      "example": {
+        "text": {
+          "de": "Was darf es sein? - Einen Tee, bitte.",
+          "fa": "چه میل دارید؟ - یک چای، لطفاً."
+        }
+      },
+      "note": {
+        "fa": "عبارت رایج پیشخدمت برای پرسیدن سفارش"
+      }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s6",
+      "question": "Ich hätte gern _____ Kaffee, bitte.",
+      "options": [
+        "einen",
+        "eine",
+        "ein",
+        "der"
+      ],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "explanation": "آفرین! Kaffee مذکر است، در Akkusativ: einen Kaffee"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": {
+        "de": "Zum Essen?",
+        "fa": "برای خوردن؟"
+      },
+      "phonetic": "tsoom ES-sen",
+      "wordType": "phrase",
+      "example": {
+        "text": {
+          "de": "Zum Essen? - Ein Stück Kuchen, bitte.",
+          "fa": "برای خوردن؟ - یک تکه کیک، لطفاً."
+        }
+      },
+      "note": {
+        "fa": "پیشخدمت از این عبارت استفاده می‌کند"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": {
+        "de": "Zum Trinken?",
+        "fa": "برای نوشیدن؟"
+      },
+      "phonetic": "tsoom TRIN-ken",
+      "wordType": "phrase",
+      "example": {
+        "text": {
+          "de": "Zum Trinken? - Ein Glas Wein, bitte.",
+          "fa": "برای نوشیدن؟ - یک لیوان شراب، لطفاً."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": {
+        "de": "ein Stück Kuchen",
+        "fa": "یک تکه کیک"
+      },
+      "phonetic": "ayn shtük KOO-khen",
+      "wordType": "phrase",
+      "example": {
+        "text": {
+          "de": "Ich hätte gern ein Stück Kuchen.",
+          "fa": "یک تکه کیک می‌خواهم."
+        }
+      },
+      "note": {
+        "fa": "Stück = تکه، قطعه"
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s10",
+      "instruction": "سفارش را کامل کنید:",
+      "sentence": "Ich hätte gern {0} Pizza und {1} Orangensaft.",
+      "feedback": {
+        "explanation": "Pizza مونث است (eine)، Orangensaft مذکر است (einen)"
+      },
+      "options": [
+        "eine",
+        "einen",
+        "ein",
+        "der",
+        "die",
+        "das"
+      ],
+      "correctAnswers": [
+        0,
+        1
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s11",
+      "word": {
+        "de": "die Milch",
+        "fa": "شیر"
+      },
+      "phonetic": "milkh",
+      "wordType": "noun",
+      "gender": "feminin",
+      "example": {
+        "text": {
+          "de": "Mit Milch und Zucker?",
+          "fa": "با شیر و شکر؟"
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s12",
+      "word": {
+        "de": "der Zucker",
+        "fa": "شکر"
+      },
+      "phonetic": "TSOO-ker",
+      "wordType": "noun",
+      "gender": "maskulin",
+      "example": {
+        "text": {
+          "de": "Kaffee mit Milch und Zucker.",
+          "fa": "قهوه با شیر و شکر."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s13",
+      "word": {
+        "de": "Sonst noch etwas?",
+        "fa": "چیز دیگری هم می‌خواهید؟"
+      },
+      "phonetic": "zonst nokh ET-vas",
+      "wordType": "phrase",
+      "example": {
+        "text": {
+          "de": "Sonst noch etwas? - Nein, danke.",
+          "fa": "چیز دیگری هم می‌خواهید؟ - نه، متشکرم."
+        }
+      },
+      "note": {
+        "fa": "پیشخدمت در پایان سفارش این را می‌پرسد"
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s14",
+      "title": "💡 نکته فرهنگی: Kaffee und Kuchen",
+      "content": "**Kaffee und Kuchen** یک سنت آلمانی است!\n\n☕ **زمان:** بعدازظهر (۱۵:۰۰-۱۷:۰۰)\n🍰 **محتوا:** قهوه + کیک تازه\n👪 **با چه کسانی:** خانواده یا دوستان\n📅 **روزها:** خصوصاً یکشنبه‌ها\n\n**محبوب‌ترین کیک‌ها:**\n• Schwarzwälder Kirschtorte (جنگل سیاه)\n• Apfelstrudel (اشترودل سیب)\n• Käsekuchen (چیزکیک)\n\n💡 **برای ایرانیان:** شبیه «چایی و شیرینی» در ایران، ولی با قهوه!\n\n⏰ در ایران معمولاً شب چای می‌نوشیم، در آلمان بعدازظهر قهوه!",
+      "examples": [
+        {
+          "de": "Wir treffen uns zum Kaffee und Kuchen.",
+          "fa": "برای قهوه و کیک همدیگر را می‌بینیم."
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s15",
+      "word": {
+        "de": "Zahlen, bitte!",
+        "fa": "صورتحساب، لطفاً!"
+      },
+      "phonetic": "TSAH-len BI-te",
+      "wordType": "phrase",
+      "example": {
+        "text": {
+          "de": "Wir möchten zahlen, bitte!",
+          "fa": "می‌خواهیم پرداخت کنیم، لطفاً!"
+        }
+      },
+      "note": {
+        "fa": "برای خواستن صورتحساب استفاده می‌شود"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s16",
+      "word": {
+        "de": "Was macht das?",
+        "fa": "چقدر می‌شود؟"
+      },
+      "phonetic": "vas makht das",
+      "wordType": "phrase",
+      "example": {
+        "text": {
+          "de": "Was macht das? - Das macht 15 Euro.",
+          "fa": "چقدر می‌شود؟ - ۱۵ یورو می‌شود."
+        }
+      },
+      "note": {
+        "fa": "برای پرسیدن مجموع صورتحساب"
+      }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s17",
+      "question": "Kann ich mit Karte zahlen? - Nein, es geht nur _____.",
+      "options": [
+        "bar",
+        "Karte",
+        "Euro",
+        "Geld"
+      ],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "explanation": "درست! es geht nur bar = فقط نقدی امکان پذیر است"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s18",
+      "word": {
+        "de": "Stimmt so!",
+        "fa": "بقیه‌اش مال شما! (انعام)"
+      },
+      "phonetic": "shtimt zoh",
+      "wordType": "phrase",
+      "example": {
+        "text": {
+          "de": "Das macht 8,50 Euro. - Hier sind 10 Euro. Stimmt so!",
+          "fa": "۸.۵۰ یورو می‌شود. - ۱۰ یورو بفرمایید. بقیه‌اش مال شما!"
+        }
+      },
+      "note": {
+        "fa": "راه مودبانه برای دادن انعام"
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s19",
+      "title": "💡 نکته فرهنگی: انعام در آلمان",
+      "content": "**Trinkgeld** (انعام) در آلمان:\n\n💰 **چقدر:** ۵-۱۰٪ معمول است\n✅ **اختیاری:** اجباری نیست!\n😊 **برای چه:** خدمات خوب\n\n**نحوه دادن:**\n• گزینه ۱: \"Stimmt so!\" (بقیه‌اش مال شما)\n• گزینه ۲: \"Machen Sie 20 Euro.\" (۲۰ یورو حساب کنید)\n\n**تفاوت با ایران:**\n🇮🇷 ایران: انعام کمتر رایج است\n🇩🇪 آلمان: انعام معمول ولی اختیاری است\n\n**تفاوت با آمریکا:**\n🇺🇸 آمریکا: ۱۵-۲۰٪ تقریباً اجباری\n🇩🇪 آلمان: ۵-۱۰٪ اختیاری\n\n💳 **مهم:** خیلی جاها فقط نقدی! همیشه پول نقد همراه داشته باشید.",
+      "examples": [
+        {
+          "de": "Kann ich mit Karte zahlen?",
+          "fa": "می‌توانم با کارت پرداخت کنم؟"
+        },
+        {
+          "de": "Es geht nur bar.",
+          "fa": "فقط نقدی امکان‌پذیر است."
+        }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "s20",
+      "instruction": "کلمات را مرتب کنید:",
+      "words": [
+        "Ich",
+        "hätte",
+        "gern",
+        "einen",
+        "Tee",
+        "bitte"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "correctSentence": {
+        "de": "Ich hätte gern einen Tee bitte",
+        "fa": "یک چای می‌خواهم لطفاً"
+      },
+      "feedback": {
+        "explanation": "ترتیب: Ich hätte gern + Akkusativ + bitte"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s21",
+      "word": {
+        "de": "Prost!",
+        "fa": "به سلامتی! (با نوشیدنی)"
+      },
+      "phonetic": "prohst",
+      "wordType": "interjection",
+      "example": {
+        "text": {
+          "de": "Prost! Zum Wohl!",
+          "fa": "به سلامتی!"
+        }
+      },
+      "note": {
+        "fa": "وقتی لیوان را با هم بزنید، حتماً به چشم هم نگاه کنید!"
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s22",
+      "title": "💡 نکته فرهنگی: Prost و آداب نوشیدن",
+      "content": "**آداب نوشیدن در آلمان:**\n\n🍻 **Prost!** = به سلامتی (با آبجو)\n🍷 **Zum Wohl!** = به سلامتی (با شراب، رسمی‌تر)\n\n**قوانین مهم:**\n👁️ **حتماً به چشم هم نگاه کنید!**\n⚠️ اگر نگاه نکنید، خرافه می‌گوید ۷ سال بدبخت خواهید بود!\n\n🔊 **صدای لیوان:** آبجو با هم بزنید، ولی شراب نه!\n\n**مقایسه با ایران:**\n🇮🇷 در ایران: \"نوش جان\" می‌گوییم\n🇩🇪 در آلمان: \"Prost\" یا \"Zum Wohl\"\n\n💡 **نکته:** قبل از اولین جرعه، منتظر \"Prost\" باشید!",
+      "examples": [
+        {
+          "de": "Prost! Auf die Freundschaft!",
+          "fa": "به سلامتی! به دوستی!"
+        },
+        {
+          "de": "Zum Wohl! Auf uns!",
+          "fa": "به سلامتی! به ما!"
+        }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s23",
+      "instruction": "مکالمه در رستوران را کامل کنید:",
+      "sentence": "Kann ich {0}? - Gern! Ich {1} gern {2} Suppe und {3} Wasser.",
+      "feedback": {
+        "explanation": "bestellen (سفارش دادن)، hätte (می‌خواهم)، eine (Suppe مونث)، ein (Wasser خنثی)"
+      },
+      "options": [
+        "bestellen",
+        "zahlen",
+        "hätte",
+        "habe",
+        "eine",
+        "einen",
+        "ein"
+      ],
+      "correctAnswers": [
+        0,
+        2,
+        4,
+        6
+      ]
+    },
+    {
+      "type": "translation",
+      "id": "s24",
+      "sourceText": "یک قهوه و یک تکه کیک می‌خواهم، لطفاً.",
+      "feedback": {
+        "explanation": "Ich hätte gern einen Kaffee und ein Stück Kuchen, bitte."
+      },
+      "sentenceTemplate": "{0} {1} {2} {3} {4} {5} {6} {7} {8} {9}",
+      "options": [
+        "Ich",
+        "hätte",
+        "gern",
+        "einen",
+        "Kaffee",
+        "und",
+        "ein",
+        "Stück",
+        "Kuchen,",
+        "bitte."
+      ],
+      "correctAnswers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "correctTranslation": {
+        "de": "Ich hätte gern einen Kaffee und ein Stück Kuchen, bitte.",
+        "fa": "یک قهوه و یک تکه کیک می‌خواهم، لطفاً."
+      }
+    }
+  ]
+}

@@ -146,7 +146,121 @@ Track of content comparisons with Busuu and enhancements made.
 ## Module 4: Essen (Food)
 
 **Busuu Sources:** Chapters 14-18
-**Date:** Pending
+**Date:** 2025-12-26
+
+### Content Created from Busuu Chapters 14-18
+
+| Busuu Content | Lesson | Status |
+|---------------|--------|--------|
+| Hunger & Durst expressions | L09 | Created |
+| haben verb conjugation | L09 | Created |
+| Ich habe Lust auf... | L09 | Created |
+| Ich habe Bock auf... (informal) | L09 | Created |
+| Basic food vocabulary | L09 | Created |
+| Restaurant ordering (Ich hätte gern...) | L10 | Created |
+| Akkusativ with food orders | L10 | Created |
+| Was darf es sein? / Zum Essen? | L10 | Created |
+| Zahlen, bitte! / Was macht das? | L10 | Created |
+| Stimmt so! / Prost! / Zum Wohl! | L10 | Created |
+| essen verb conjugation (stem-changing) | L11 | Created |
+| kein/keine negation | L11 | Created |
+| Food preferences (gern, lieber als) | L11 | Created |
+| Vegetarier/in, Veganer/in | L11 | Created |
+| Shopping vocabulary (einkaufen gehen) | L11 | Created |
+| Wo finde ich...? / Haben Sie...? | L11 | Created |
+| Guten Appetit! / Mahlzeit! | L11 | Created |
+
+### Lesson Structure
+
+#### L07: Freizeit & Hobbys (Already existed)
+- Hobbies and free time activities
+- gern + verb pattern
+- können verb
+- 15 steps
+
+#### L08: Essen & Trinken (Already existed)
+- Basic food and drink vocabulary
+- möchten verb
+- Akkusativ with orders
+- 15 steps
+
+#### L09: Hunger und Durst (NEW - Food Basics)
+- der Hunger, der Durst
+- haben verb full conjugation
+- Ich habe Lust auf... (informal desire)
+- Ich habe Bock auf... (very informal)
+- Au ja! / Null Bock! responses
+- Bratwurst, Apfelschorle
+- German street food culture tip
+- Lust auf vs. Bock auf comparison
+- 20 steps
+
+#### L10: Im Restaurant bestellen (NEW - Ordering Food)
+- bestellen, Ich hätte gern...
+- Akkusativ with food orders (einen/eine/ein)
+- Was darf es sein? / Zum Essen? / Zum Trinken?
+- ein Stück Kuchen, mit Milch und Zucker
+- Sonst noch etwas?
+- Zahlen, bitte! / Was macht das?
+- Kann ich mit Karte zahlen? / Es geht nur bar.
+- Stimmt so! (tipping)
+- Prost! / Zum Wohl!
+- Kaffee und Kuchen culture tip
+- Trinkgeld (tipping) culture comparison
+- Toasting customs and eye contact rule
+- 24 steps
+
+#### L11: Essen Vorlieben & Einkaufen (NEW - Food Preferences & Shopping)
+- essen verb conjugation (ich esse, du isst)
+- das Obst, das Gemüse, das Fleisch
+- die Milchprodukte, kein/keine negation
+- Vegetarier/in, Veganer/in
+- einkaufen gehen, der Supermarkt, die Bäckerei
+- Wo finde ich...? / Haben Sie...?
+- Guten Appetit! / Mahlzeit!
+- lieber... als... (preferences)
+- German bread culture (300+ types!)
+- Meal times culture (Frühstück, Mittagessen, Abendessen)
+- Cold dinner tradition (Abendbrot)
+- Table manners comparison
+- Dietary restrictions vocabulary
+- 26 steps
+
+### Cultural Enhancements for Persian Speakers
+
+**L09 Additions:**
+- German street food culture (Bratwurst, Döner, Currywurst)
+- Comparison: Döner vs. Iranian kebab
+- Informal vs. very informal expressions (Lust auf vs. Bock auf)
+
+**L10 Additions:**
+- Kaffee und Kuchen tradition (afternoon coffee & cake)
+- Comparison with Iranian tea culture
+- Tipping culture: Germany (5-10%, optional) vs. Iran vs. USA
+- Cash-only culture in Germany
+- Prost! and eye contact superstition
+- Toasting customs comparison
+
+**L11 Additions:**
+- German bread culture (3000+ types, UNESCO heritage)
+- Comparison: German breads vs. Iranian breads (Sangak, Lavash, Barbari)
+- Meal timing differences: Iran (dinner is main) vs. Germany (lunch is main)
+- Abendbrot (cold dinner) tradition explained
+- Table manners differences (hands on table)
+- Vegetarian/Vegan culture in Germany
+
+### Statistics
+
+**Total Steps Added:** 70 (20 + 24 + 26)
+**New Vocabulary Items:** 45+
+**Grammar Points Covered:**
+- haben verb full conjugation
+- essen verb stem-changing conjugation
+- Akkusativ with food (einen/eine/ein)
+- kein/keine negation patterns
+- Preferences with gern/lieber/am liebsten
+
+**Cultural Tips:** 8 major culture sections comparing German and Iranian food cultures
 
 ---
 

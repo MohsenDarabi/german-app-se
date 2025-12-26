@@ -1,0 +1,433 @@
+{
+  "id": "A1-2-M04-L09",
+  "title": {
+    "de": "Hunger und Durst",
+    "fa": "گرسنگی و تشنگی"
+  },
+  "level": "A1-2",
+  "module": 4,
+  "lessonNumber": 9,
+  "estimatedMinutes": 22,
+  "steps": [
+    {
+      "type": "dialog",
+      "id": "s1",
+      "title": "Ich habe Hunger!",
+      "lines": [
+        {
+          "speaker": "Sara",
+          "text": {
+            "de": "Ich habe so viel Hunger!",
+            "fa": "خیلی گرسنه‌ام!"
+          }
+        },
+        {
+          "speaker": "Ali",
+          "text": {
+            "de": "Ich auch! Ich habe Lust auf Pizza.",
+            "fa": "منم! میل به پیتزا دارم."
+          }
+        },
+        {
+          "speaker": "Sara",
+          "text": {
+            "de": "Hast du auch Durst?",
+            "fa": "تشنه هم هستی؟"
+          }
+        },
+        {
+          "speaker": "Ali",
+          "text": {
+            "de": "Ja, ich habe Lust auf Apfelschorle.",
+            "fa": "بله، میل به شربت سیب دارم."
+          }
+        },
+        {
+          "speaker": "Sara",
+          "text": {
+            "de": "Super! Ich habe Lust auf Kaffee.",
+            "fa": "عالی! من میل به قهوه دارم."
+          }
+        }
+      ],
+      "feedback": {
+        "explanation": "در این مکالمه یاد می‌گیریم چگونه گرسنگی و تشنگی را بیان کنیم و بگوییم میل به چه چیزی داریم."
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": {
+        "de": "der Hunger",
+        "fa": "گرسنگی"
+      },
+      "phonetic": "HOONG-er",
+      "wordType": "noun",
+      "gender": "maskulin",
+      "example": {
+        "text": {
+          "de": "Ich habe Hunger.",
+          "fa": "گرسنه‌ام."
+        }
+      },
+      "note": {
+        "fa": "⚠️ Hunger فقط مفرد دارد! نمی‌توان گفت: zwei Hunger"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": {
+        "de": "der Durst",
+        "fa": "تشنگی"
+      },
+      "phonetic": "doorst",
+      "wordType": "noun",
+      "gender": "maskulin",
+      "example": {
+        "text": {
+          "de": "Ich habe Durst.",
+          "fa": "تشنه‌ام."
+        }
+      },
+      "note": {
+        "fa": "⚠️ Durst فقط مفرد دارد!"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": {
+        "de": "Ich habe Lust auf...",
+        "fa": "میل دارم به... / حس می‌کنم می‌خواهم..."
+      },
+      "phonetic": "ikh HA-be loost owf",
+      "wordType": "phrase",
+      "example": {
+        "text": {
+          "de": "Ich habe Lust auf Pizza.",
+          "fa": "میل به پیتزا دارم."
+        }
+      },
+      "note": {
+        "fa": "این عبارت غیررسمی برای بیان میل به غذا یا نوشیدنی استفاده می‌شود"
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "فعل haben با ضمایر",
+      "content": "فعل **haben** (داشتن) یکی از مهم‌ترین افعال آلمانی است:\n\n| ضمیر | haben |\n|---|---|\n| ich | **habe** |\n| du | **hast** |\n| er/sie/es | **hat** |\n| wir | **haben** |\n| ihr | **habt** |\n| sie/Sie | **haben** |\n\n**عبارات ثابت با haben:**\n• Ich habe Hunger. (گرسنه‌ام)\n• Ich habe Durst. (تشنه‌ام)\n• Ich habe Lust auf... (میل دارم به...)",
+      "examples": [
+        {
+          "de": "Ich habe Hunger.",
+          "fa": "من گرسنه‌ام."
+        },
+        {
+          "de": "Hast du Durst?",
+          "fa": "تو تشنه‌ای؟"
+        },
+        {
+          "de": "Sie hat Lust auf Eis.",
+          "fa": "او میل به بستنی دارد."
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s6",
+      "question": "Ich _____ Hunger.",
+      "options": [
+        "habe",
+        "hast",
+        "hat",
+        "haben"
+      ],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "explanation": "آفرین! با ich از habe استفاده می‌کنیم."
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": {
+        "de": "die Apfelschorle",
+        "fa": "شربت سیب گازدار"
+      },
+      "phonetic": "AP-fel-shor-le",
+      "wordType": "noun",
+      "gender": "feminin",
+      "example": {
+        "text": {
+          "de": "Ich trinke gern Apfelschorle.",
+          "fa": "نوشیدن شربت سیب را دوست دارم."
+        }
+      },
+      "note": {
+        "fa": "نوشیدنی محبوب آلمانی: آب سیب + آب گازدار"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": {
+        "de": "das Essen",
+        "fa": "غذا / خوردن"
+      },
+      "phonetic": "ES-sen",
+      "wordType": "noun",
+      "gender": "neutral",
+      "example": {
+        "text": {
+          "de": "Das Essen ist lecker!",
+          "fa": "غذا خوشمزه است!"
+        }
+      },
+      "note": {
+        "fa": "Essen می‌تواند اسم (غذا) یا فعل (خوردن) باشد"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": {
+        "de": "das Trinken",
+        "fa": "نوشیدنی / نوشیدن"
+      },
+      "phonetic": "TRIN-ken",
+      "wordType": "noun",
+      "gender": "neutral",
+      "example": {
+        "text": {
+          "de": "Zum Trinken möchte ich Wasser.",
+          "fa": "برای نوشیدن آب می‌خواهم."
+        }
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s10",
+      "instruction": "جمله را کامل کنید:",
+      "sentence": "{0} du Hunger? - Ja, ich {1} Hunger.",
+      "feedback": {
+        "explanation": "با du از hast استفاده می‌کنیم، با ich از habe"
+      },
+      "options": [
+        "Hast",
+        "Habe",
+        "Hat",
+        "habe",
+        "hast",
+        "hat"
+      ],
+      "correctAnswers": [
+        0,
+        3
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s11",
+      "word": {
+        "de": "die Bratwurst",
+        "fa": "سوسیس کبابی"
+      },
+      "phonetic": "BRAHT-voorst",
+      "wordType": "noun",
+      "gender": "feminin",
+      "example": {
+        "text": {
+          "de": "Ich habe Lust auf Bratwurst.",
+          "fa": "میل به سوسیس کبابی دارم."
+        }
+      },
+      "note": {
+        "fa": "غذای خیابانی معروف آلمان"
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s12",
+      "title": "💡 نکته فرهنگی: غذای خیابانی آلمان",
+      "content": "غذاهای خیابانی محبوب در آلمان:\n\n🌭 **Bratwurst** - سوسیس کبابی (در همه جای آلمان)\n🍟 **Currywurst** - سوسیس با سس کاری (برلین)\n🥙 **Döner Kebab** - کباب ترکی (محبوب‌ترین!)\n🥨 **Brezel** - نان حلقه‌ای شور (جنوب آلمان)\n\n💡 **برای ایرانیان:** Döner Kebab شباهت زیادی به کباب ترکی ایران دارد ولی با سس‌های مخصوص سرو می‌شود!\n\n📊 آلمانی‌ها روزانه ۱۵۰ تن Döner می‌خورند!",
+      "examples": [
+        {
+          "de": "Ich habe Lust auf Döner.",
+          "fa": "میل به دونر دارم."
+        },
+        {
+          "de": "Eine Bratwurst, bitte!",
+          "fa": "یک براتوورست، لطفاً!"
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s13",
+      "word": {
+        "de": "Hast du Bock auf...?",
+        "fa": "حال داری...؟ (خیلی غیررسمی)"
+      },
+      "phonetic": "hast doo bok owf",
+      "wordType": "phrase",
+      "example": {
+        "text": {
+          "de": "Hast du Bock auf Pizza?",
+          "fa": "حال پیتزا داری؟"
+        }
+      },
+      "note": {
+        "fa": "⚠️ عبارت غیررسمی! با دوستان استفاده کنید، نه با رئیس!"
+      }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s14",
+      "question": "Wir _____ Lust auf Eis.",
+      "options": [
+        "haben",
+        "habe",
+        "hast",
+        "habt"
+      ],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "explanation": "درست! با wir از haben استفاده می‌کنیم."
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s15",
+      "word": {
+        "de": "Au ja!",
+        "fa": "آره عالیه! (خیلی غیررسمی)"
+      },
+      "phonetic": "ow yah",
+      "wordType": "interjection",
+      "example": {
+        "text": {
+          "de": "Hast du Bock auf Schokolade? - Au ja!",
+          "fa": "حال شکلات داری؟ - آره عالیه!"
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s16",
+      "word": {
+        "de": "Null Bock!",
+        "fa": "اصلاً حال ندارم! (خیلی غیررسمی)"
+      },
+      "phonetic": "nool bok",
+      "wordType": "phrase",
+      "example": {
+        "text": {
+          "de": "Hast du Bock auf Party? - Ne, null Bock.",
+          "fa": "حال مهمونی داری؟ - نه، اصلاً حال ندارم."
+        }
+      },
+      "note": {
+        "fa": "Bock = بز نر، ولی در این عبارت معنی متفاوت دارد!"
+      }
+    },
+    {
+      "type": "word-order",
+      "id": "s17",
+      "instruction": "کلمات را مرتب کنید:",
+      "words": [
+        "Ich",
+        "habe",
+        "Lust",
+        "auf",
+        "Kaffee"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "correctSentence": {
+        "de": "Ich habe Lust auf Kaffee",
+        "fa": "میل به قهوه دارم"
+      },
+      "feedback": {
+        "explanation": "ترتیب: Ich + habe + Lust auf + چیزی که می‌خواهید"
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s18",
+      "instruction": "مکالمه را کامل کنید:",
+      "sentence": "Ich habe Hunger. {0} ihr auch Hunger? - Ja, wir {1} auch Hunger.",
+      "feedback": {
+        "explanation": "با ihr از Habt استفاده می‌کنیم، با wir از haben"
+      },
+      "options": [
+        "Habt",
+        "Hast",
+        "Haben",
+        "haben",
+        "habt",
+        "habe"
+      ],
+      "correctAnswers": [
+        0,
+        3
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s19",
+      "title": "💡 مقایسه: Lust auf vs. Bock auf",
+      "content": "**Ich habe Lust auf...** (غیررسمی)\n• استفاده در موقعیت‌های روزمره\n• مودبانه‌تر از Bock auf\n• مثال: Ich habe Lust auf Pizza.\n\n**Ich habe Bock auf...** (خیلی غیررسمی)\n• فقط با دوستان نزدیک\n• خیلی محاوره‌ای (Slang)\n• مثال: Ich habe Bock auf Party!\n\n**پاسخ‌ها:**\n• Au ja! = آره عالیه!\n• Voll Bock! = خیلی حالشه!\n• Null Bock! = اصلاً حال ندارم!\n• Ne, null Bock. = نه، اصلاً حوصله ندارم.",
+      "examples": [
+        {
+          "de": "Ich habe Lust auf Kaffee. (مودبانه)",
+          "fa": "میل به قهوه دارم."
+        },
+        {
+          "de": "Ich habe Bock auf Kaffee! (خیلی غیررسمی)",
+          "fa": "حال قهوه دارم!"
+        }
+      ]
+    },
+    {
+      "type": "translation",
+      "id": "s20",
+      "sourceText": "گرسنه‌ام و میل به پیتزا دارم.",
+      "feedback": {
+        "explanation": "Ich habe Hunger und ich habe Lust auf Pizza."
+      },
+      "sentenceTemplate": "{0} {1} {2} {3} {4} {5} {6} {7} {8}",
+      "options": [
+        "Ich",
+        "habe",
+        "Hunger",
+        "und",
+        "ich",
+        "habe",
+        "Lust",
+        "auf",
+        "Pizza."
+      ],
+      "correctAnswers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "correctTranslation": {
+        "de": "Ich habe Hunger und ich habe Lust auf Pizza.",
+        "fa": "گرسنه‌ام و میل به پیتزا دارم."
+      }
+    }
+  ]
+}

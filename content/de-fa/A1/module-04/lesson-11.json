@@ -1,0 +1,546 @@
+{
+  "id": "A1-2-M04-L11",
+  "title": {
+    "de": "Essen Vorlieben & Einkaufen",
+    "fa": "ترجیحات غذایی و خرید"
+  },
+  "level": "A1-2",
+  "module": 4,
+  "lessonNumber": 11,
+  "estimatedMinutes": 25,
+  "steps": [
+    {
+      "type": "dialog",
+      "id": "s1",
+      "title": "Im Supermarkt",
+      "lines": [
+        {
+          "speaker": "Sara",
+          "text": {
+            "de": "Ich muss einkaufen gehen. Kommst du mit?",
+            "fa": "باید برم خرید. می‌آیی؟"
+          }
+        },
+        {
+          "speaker": "Ali",
+          "text": {
+            "de": "Ja, gern! Was isst du gern?",
+            "fa": "بله، با کمال میل! چه چیزی دوست داری بخوری؟"
+          }
+        },
+        {
+          "speaker": "Sara",
+          "text": {
+            "de": "Ich esse gern Obst und Gemüse. Ich esse kein Fleisch.",
+            "fa": "من میوه و سبزیجات دوست دارم. گوشت نمی‌خورم."
+          }
+        },
+        {
+          "speaker": "Ali",
+          "text": {
+            "de": "Bist du Vegetarierin?",
+            "fa": "گیاه‌خوار هستی؟"
+          }
+        },
+        {
+          "speaker": "Sara",
+          "text": {
+            "de": "Ja, genau! Ich esse auch keine Milchprodukte.",
+            "fa": "بله، دقیقاً! محصولات لبنی هم نمی‌خورم."
+          }
+        }
+      ],
+      "feedback": {
+        "explanation": "در این مکالمه یاد می‌گیریم چگونه درباره ترجیحات غذایی و خرید صحبت کنیم."
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": {
+        "de": "einkaufen gehen",
+        "fa": "رفتن خرید"
+      },
+      "phonetic": "AYN-kow-fen GAY-en",
+      "wordType": "verb phrase",
+      "example": {
+        "text": {
+          "de": "Ich muss einkaufen gehen.",
+          "fa": "باید برم خرید."
+        }
+      },
+      "note": {
+        "fa": "einkaufen = فعل جداشدنی"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": {
+        "de": "essen",
+        "fa": "خوردن"
+      },
+      "phonetic": "ES-sen",
+      "wordType": "verb",
+      "example": {
+        "text": {
+          "de": "Ich esse gern Pizza.",
+          "fa": "دوست دارم پیتزا بخورم."
+        }
+      },
+      "note": {
+        "fa": "فعل تغییر صدادار: ich esse, du isst, er/sie isst"
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s4",
+      "title": "فعل essen (خوردن)",
+      "content": "فعل **essen** یک فعل تغییر صدادار است:\n\n| ضمیر | essen |\n|---|---|\n| ich | **esse** |\n| du | **isst** |\n| er/sie/es | **isst** |\n| wir | **essen** |\n| ihr | **esst** |\n| sie/Sie | **essen** |\n\n⚠️ **توجه:** e → i در du و er/sie/es\n\n**با gern برای بیان علاقه:**\n• Ich esse gern... = دوست دارم... بخورم\n• Ich esse nicht gern... = دوست ندارم... بخورم",
+      "examples": [
+        {
+          "de": "Ich esse gern Obst.",
+          "fa": "دوست دارم میوه بخورم."
+        },
+        {
+          "de": "Was isst du gern?",
+          "fa": "دوست داری چی بخوری؟"
+        },
+        {
+          "de": "Sie isst kein Fleisch.",
+          "fa": "او گوشت نمی‌خورد."
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": {
+        "de": "das Obst",
+        "fa": "میوه"
+      },
+      "phonetic": "ohpst",
+      "wordType": "noun",
+      "gender": "neutral",
+      "example": {
+        "text": {
+          "de": "Ich esse gern frisches Obst.",
+          "fa": "دوست دارم میوه تازه بخورم."
+        }
+      },
+      "note": {
+        "fa": "Obst همیشه مفرد است (مانند Hunger)"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": {
+        "de": "das Gemüse",
+        "fa": "سبزیجات"
+      },
+      "phonetic": "ge-MÜ-ze",
+      "wordType": "noun",
+      "gender": "neutral",
+      "example": {
+        "text": {
+          "de": "Ich esse viel Gemüse.",
+          "fa": "سبزیجات زیاد می‌خورم."
+        }
+      },
+      "note": {
+        "fa": "Gemüse همیشه مفرد است"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": {
+        "de": "das Fleisch",
+        "fa": "گوشت"
+      },
+      "phonetic": "flaish",
+      "wordType": "noun",
+      "gender": "neutral",
+      "example": {
+        "text": {
+          "de": "Ich esse kein Fleisch.",
+          "fa": "گوشت نمی‌خورم."
+        }
+      }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s8",
+      "question": "Was _____ du gern?",
+      "options": [
+        "isst",
+        "esse",
+        "essen",
+        "esst"
+      ],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "explanation": "آفرین! با du از isst استفاده می‌کنیم. فعل essen تغییر صدادار دارد: e → i"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": {
+        "de": "die Milchprodukte",
+        "fa": "محصولات لبنی"
+      },
+      "phonetic": "MILKH-pro-dook-te",
+      "wordType": "noun",
+      "gender": "plural",
+      "example": {
+        "text": {
+          "de": "Ich esse keine Milchprodukte.",
+          "fa": "محصولات لبنی نمی‌خورم."
+        }
+      },
+      "note": {
+        "fa": "با جمع از keine استفاده می‌کنیم، نه kein"
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s10",
+      "title": "kein/keine (نه، هیچ)",
+      "content": "برای منفی کردن اسم‌ها از **kein/keine** استفاده می‌کنیم:\n\n| جنس | Akkusativ |\n|---|---|\n| Maskulin | kein**en** Kaffee |\n| Feminin | kein**e** Pizza |\n| Neutral | kein Fleisch |\n| Plural | kein**e** Milchprodukte |\n\n**ساختار:**\nIch esse + kein/keine + اسم\n\n⚠️ **توجه:** با جمع همیشه keine",
+      "examples": [
+        {
+          "de": "Ich esse kein Fleisch.",
+          "fa": "گوشت نمی‌خورم. (خنثی)"
+        },
+        {
+          "de": "Ich trinke keinen Kaffee.",
+          "fa": "قهوه نمی‌نوشم. (مذکر)"
+        },
+        {
+          "de": "Ich esse keine Pizza.",
+          "fa": "پیتزا نمی‌خورم. (مونث)"
+        },
+        {
+          "de": "Ich esse keine Milchprodukte.",
+          "fa": "محصولات لبنی نمی‌خورم. (جمع)"
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s11",
+      "word": {
+        "de": "der Vegetarier / die Vegetarierin",
+        "fa": "گیاه‌خوار (مرد/زن)"
+      },
+      "phonetic": "ve-ge-TAH-ri-er / ve-ge-TAH-ri-e-rin",
+      "wordType": "noun",
+      "gender": "maskulin/feminin",
+      "example": {
+        "text": {
+          "de": "Ich bin Vegetarierin.",
+          "fa": "من گیاه‌خوار هستم. (زن)"
+        }
+      },
+      "note": {
+        "fa": "برای زنان -in اضافه می‌شود"
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s12",
+      "instruction": "جمله را کامل کنید:",
+      "sentence": "Ich esse {0} Fleisch und {1} Milchprodukte.",
+      "feedback": {
+        "explanation": "Fleisch خنثی مفرد است (kein)، Milchprodukte جمع است (keine)"
+      },
+      "options": [
+        "kein",
+        "keine",
+        "keinen",
+        "der",
+        "die",
+        "das"
+      ],
+      "correctAnswers": [
+        0,
+        1
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s13",
+      "word": {
+        "de": "der Supermarkt",
+        "fa": "سوپرمارکت"
+      },
+      "phonetic": "ZOO-per-markt",
+      "wordType": "noun",
+      "gender": "maskulin",
+      "example": {
+        "text": {
+          "de": "Ist hier ein Supermarkt in der Nähe?",
+          "fa": "آیا اینجا نزدیکی سوپرمارکت هست؟"
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s14",
+      "word": {
+        "de": "die Bäckerei",
+        "fa": "نانوایی"
+      },
+      "phonetic": "BE-ke-ray",
+      "wordType": "noun",
+      "gender": "feminin",
+      "example": {
+        "text": {
+          "de": "Ich kaufe Brot in der Bäckerei.",
+          "fa": "نان را از نانوایی می‌خرم."
+        }
+      },
+      "note": {
+        "fa": "آلمانی‌ها نان تازه را خیلی دوست دارند!"
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s15",
+      "title": "💡 نکته فرهنگی: فرهنگ نان در آلمان",
+      "content": "آلمان کشور **نان** است!\n\n🥖 **تنوع:** بیش از ۳۰۰۰ نوع نان مختلف!\n🏆 **میراث یونسکو:** نان آلمان در فهرست میراث فرهنگی\n\n**محبوب‌ترین نان‌ها:**\n• Brötchen - نان کوچک گرد (صبحانه)\n• Vollkornbrot - نان سبوس‌دار\n• Brezel - نان حلقه‌ای شور\n• Schwarzbrot - نان سیاه\n\n**مقایسه با ایران:**\n🇮🇷 ایران: نان سنگک، لواش، بربری\n🇩🇪 آلمان: Vollkornbrot، Brötchen، Brezel\n\n🕗 **نکته:** Bäckerei معمولاً صبح زود باز می‌شود (۶ صبح!)\n\n📅 **یکشنبه‌ها:** خیلی از فروشگاه‌ها بسته‌اند، ولی بعضی Bäckerei باز است!",
+      "examples": [
+        {
+          "de": "Ich kaufe jeden Morgen frische Brötchen.",
+          "fa": "هر صبح نان تازه می‌خرم."
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s16",
+      "word": {
+        "de": "Wo finde ich...?",
+        "fa": "کجا می‌توانم... پیدا کنم؟"
+      },
+      "phonetic": "voh FIN-de ikh",
+      "wordType": "phrase",
+      "example": {
+        "text": {
+          "de": "Entschuldigung, wo finde ich das Obst?",
+          "fa": "ببخشید، میوه را کجا می‌توانم پیدا کنم؟"
+        }
+      },
+      "note": {
+        "fa": "برای پرسیدن مکان چیزی در فروشگاه"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s17",
+      "word": {
+        "de": "Haben Sie...?",
+        "fa": "... دارید؟ (رسمی)"
+      },
+      "phonetic": "HAH-ben zee",
+      "wordType": "phrase",
+      "example": {
+        "text": {
+          "de": "Haben Sie Apfelschorle?",
+          "fa": "شربت سیب دارید؟"
+        }
+      },
+      "note": {
+        "fa": "Sie = شما رسمی، با غریبه‌ها استفاده کنید"
+      }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s18",
+      "question": "Entschuldigung, _____ Sie mir helfen?",
+      "options": [
+        "können",
+        "kann",
+        "kannst",
+        "könnt"
+      ],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "explanation": "آفرین! با Sie (رسمی) از können استفاده می‌کنیم."
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s19",
+      "word": {
+        "de": "Guten Appetit!",
+        "fa": "نوش جان!"
+      },
+      "phonetic": "GOO-ten a-pe-TEET",
+      "wordType": "phrase",
+      "example": {
+        "text": {
+          "de": "Das Essen ist fertig. Guten Appetit!",
+          "fa": "غذا حاضر است. نوش جان!"
+        }
+      },
+      "note": {
+        "fa": "قبل از شروع غذا گفته می‌شود"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s20",
+      "word": {
+        "de": "Mahlzeit!",
+        "fa": "نوش جان! (غیررسمی‌تر)"
+      },
+      "phonetic": "MAHL-tsayt",
+      "wordType": "interjection",
+      "example": {
+        "text": {
+          "de": "Mahlzeit! Schmeckt es gut?",
+          "fa": "نوش جان! خوشمزه است؟"
+        }
+      },
+      "note": {
+        "fa": "Mahlzeit = وعده غذایی، ولی به معنی نوش جان گفته می‌شود"
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s21",
+      "title": "💡 نکته فرهنگی: آداب غذا خوردن",
+      "content": "**آداب سر میز در آلمان:**\n\n🍽️ **قبل از غذا:**\n• همه می‌گویند: \"Guten Appetit!\" یا \"Mahlzeit!\"\n• ⚠️ تا همه غذایشان جلویشان نباشد، شروع نکنید!\n\n🍴 **در حین غذا:**\n• دست‌ها روی میز باشد (نه زیر میز!)\n• چنگال چپ، کارد راست\n\n**وعده‌های غذایی:**\n• 🌅 Frühstück (۷-۹ صبح): نان، پنیر، مربا\n• 🌞 Mittagessen (۱۲-۱۴): وعده اصلی (گرم)\n• 🌆 Abendessen (۱۸-۲۰): معمولاً سرد (Abendbrot)\n\n**تفاوت با ایران:**\n🇮🇷 ایران: شام وعده اصلی، معمولاً گرم\n🇩🇪 آلمان: ناهار وعده اصلی، شام معمولاً سرد\n\n💡 Abendbrot = نان شب (شام سرد با نان، پنیر، سوسیس سرد)",
+      "examples": [
+        {
+          "de": "Zum Frühstück esse ich Brötchen mit Marmelade.",
+          "fa": "برای صبحانه نان با مربا می‌خورم."
+        },
+        {
+          "de": "Zum Abendessen essen wir oft Brot mit Käse.",
+          "fa": "برای شام اغلب نان با پنیر می‌خوریم."
+        }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "s22",
+      "instruction": "کلمات را مرتب کنید:",
+      "words": [
+        "Ich",
+        "esse",
+        "gern",
+        "Obst",
+        "und",
+        "Gemüse"
+      ],
+      "correctOrder": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "correctSentence": {
+        "de": "Ich esse gern Obst und Gemüse",
+        "fa": "دوست دارم میوه و سبزیجات بخورم"
+      },
+      "feedback": {
+        "explanation": "ترتیب: Subject + Verb + gern + Object"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s23",
+      "word": {
+        "de": "lieber als",
+        "fa": "ترجیح دادن... به..."
+      },
+      "phonetic": "LEE-ber als",
+      "wordType": "phrase",
+      "example": {
+        "text": {
+          "de": "Ich esse lieber Pizza als Pasta.",
+          "fa": "پیتزا را بیشتر از پاستا ترجیح می‌دهم."
+        }
+      },
+      "note": {
+        "fa": "lieber = ترجیح دادن (مقایسه‌ای از gern)"
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s24",
+      "instruction": "ترجیحات را بیان کنید:",
+      "sentence": "Ich esse {0} Gemüse {1} Fleisch.",
+      "feedback": {
+        "explanation": "lieber... als... = ترجیح دادن... به..."
+      },
+      "options": [
+        "lieber",
+        "gern",
+        "als",
+        "wie",
+        "oder",
+        "und"
+      ],
+      "correctAnswers": [
+        0,
+        2
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s25",
+      "title": "💡 رژیم‌های غذایی به آلمانی",
+      "content": "**انواع رژیم غذایی:**\n\n🥗 **der Vegetarier / die Vegetarierin**\n= گیاه‌خوار (بدون گوشت)\n\n🌱 **der Veganer / die Veganerin**\n= وگان (بدون هیچ محصول حیوانی)\n\n🥜 **Ich bin allergisch gegen...**\n= به... حساسیت دارم\n\n🍞 **Ich vertrage kein Gluten.**\n= گلوتن را تحمل نمی‌کنم\n\n**عبارات مهم:**\n• Ich esse kein Fleisch.\n• Ich esse keine Milchprodukte.\n• Ich bin Vegetarier/in.\n• Ich bin Veganer/in.\n• Ich bin allergisch gegen Nüsse.\n\n**در رستوران:**\n• Haben Sie vegetarische Gerichte?\n= غذای گیاه‌خواری دارید؟\n• Ist das vegan?\n= این وگان است؟",
+      "examples": [
+        {
+          "de": "Ich bin Vegetarierin und esse kein Fleisch.",
+          "fa": "من گیاه‌خوار هستم و گوشت نمی‌خورم."
+        },
+        {
+          "de": "Haben Sie vegane Optionen?",
+          "fa": "گزینه‌های وگان دارید؟"
+        }
+      ]
+    },
+    {
+      "type": "translation",
+      "id": "s26",
+      "sourceText": "من گیاه‌خوار هستم و گوشت نمی‌خورم.",
+      "feedback": {
+        "explanation": "Ich bin Vegetarierin und ich esse kein Fleisch."
+      },
+      "sentenceTemplate": "{0} {1} {2} {3} {4} {5} {6} {7}",
+      "options": [
+        "Ich",
+        "bin",
+        "Vegetarierin",
+        "und",
+        "ich",
+        "esse",
+        "kein",
+        "Fleisch."
+      ],
+      "correctAnswers": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "correctTranslation": {
+        "de": "Ich bin Vegetarierin und ich esse kein Fleisch.",
+        "fa": "من گیاه‌خوار هستم و گوشت نمی‌خورم."
+      }
+    }
+  ]
+}
