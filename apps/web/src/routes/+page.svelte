@@ -117,7 +117,7 @@
   <div class="level-section">
     <h2 class="level-title">🇩🇪 سطح A1 - مبتدی</h2>
     <div class="timeline">
-      {#key $progressMap}
+      {#key [$progressMap, $devMode]}
         {#each A1_MODULES as module, moduleIndex}
           <div class="module-section">
             <h3 class="module-title">{module.title}</h3>
@@ -161,7 +161,7 @@
   <div class="level-section">
     <h2 class="level-title">🇩🇪 سطح A2 - مقدماتی</h2>
     <div class="timeline">
-      {#key $progressMap}
+      {#key [$progressMap, $devMode]}
         {#each A2_MODULES as module, moduleIndex}
           <div class="module-section">
             <h3 class="module-title">{module.title}</h3>
