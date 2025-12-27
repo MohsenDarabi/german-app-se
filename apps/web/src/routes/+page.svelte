@@ -5,6 +5,7 @@
   import { liveQuery } from "dexie";
   import DevModeToggle from "$lib/components/dev/DevModeToggle.svelte";
   import { devMode } from "$lib/stores/devMode";
+  import { resetLessonForReplay, clearLessonWrongAnswers } from "$lib/services/progressService";
 
   // Reactive queries for user stats and progress
   const user = liveQuery(() => db.users.get(1));
@@ -71,6 +72,13 @@
     if (status === 'completed') return '✅';
     if (status === 'in-progress') return '▶️';
     return '⭐';
+  }
+
+  async function handleResetLesson(lessonId: string) {
+    if (confirm('آیا مطمئن هستید که می‌خواهید این درس را بازنشانی کنید؟ تمام پیشرفت شما پاک خواهد شد.')) {
+      await resetLessonForReplay(lessonId);
+      await clearLessonWrongAnswers(lessonId);
+    }
   }
 </script>
 
@@ -142,8 +150,17 @@
                     <button class="start-btn locked-btn" disabled>
                       {getButtonText(status, progress)}
                     </button>
+                  {:else if status === 'completed'}
+                    <div class="action-group">
+                      <a href={lesson.path} class="start-btn completed">
+                        مرور ({progress?.score || 0}%)
+                      </a>
+                      <button class="reset-btn" on:click={() => handleResetLesson(lesson.id)}>
+                        بازنشانی
+                      </button>
+                    </div>
                   {:else}
-                    <a href={lesson.path} class="start-btn" class:completed={status === 'completed'}>
+                    <a href={lesson.path} class="start-btn">
                       {getButtonText(status, progress)}
                     </a>
                   {/if}
@@ -187,8 +204,17 @@
                     <button class="start-btn locked-btn" disabled>
                       {getButtonText(status, progress)}
                     </button>
+                  {:else if status === 'completed'}
+                    <div class="action-group">
+                      <a href={lesson.path} class="start-btn completed">
+                        مرور ({progress?.score || 0}%)
+                      </a>
+                      <button class="reset-btn" on:click={() => handleResetLesson(lesson.id)}>
+                        بازنشانی
+                      </button>
+                    </div>
                   {:else}
-                    <a href={lesson.path} class="start-btn" class:completed={status === 'completed'}>
+                    <a href={lesson.path} class="start-btn">
                       {getButtonText(status, progress)}
                     </a>
                   {/if}
@@ -439,6 +465,31 @@
 
   .locked-btn:hover {
     background: #cbd5e1;
+  }
+
+  .action-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: stretch;
+  }
+
+  .reset-btn {
+    background: transparent;
+    color: #64748b;
+    border: 1px solid #e2e8f0;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    font-weight: 500;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .reset-btn:hover {
+    background: #fef2f2;
+    border-color: #fca5a5;
+    color: #dc2626;
   }
 
   @media (max-width: 600px) {
