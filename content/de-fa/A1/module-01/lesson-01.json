@@ -7,49 +7,106 @@
   "level": "A1-1",
   "module": 1,
   "lessonNumber": 1,
-  "estimatedMinutes": 15,
+  "estimatedMinutes": 18,
   "steps": [
     {
-      "type": "dialog",
+      "type": "new-word",
       "id": "s1",
-      "title": "Im Deutschkurs",
-      "lines": [
-        {
-          "speaker": "Anna",
-          "text": {
-            "de": "Hallo! Ich bin Anna. Wie heißt du?",
-            "fa": "سلام! من آنا هستم. اسم تو چیه؟"
-          }
-        },
-        {
-          "speaker": "Tom",
-          "text": {
-            "de": "Hallo Anna! Ich heiße Tom. Und woher kommst du?",
-            "fa": "سلام آنا! اسم من تام است. و تو اهل کجایی؟"
-          }
-        },
-        {
-          "speaker": "Anna",
-          "text": {
-            "de": "Ich komme aus Deutschland. Und du?",
-            "fa": "من اهل آلمان هستم. و تو؟"
-          }
-        },
-        {
-          "speaker": "Tom",
-          "text": {
-            "de": "Ich komme aus Iran.",
-            "fa": "من اهل ایران هستم."
-          }
+      "word": {
+        "de": "ich",
+        "fa": "من"
+      },
+      "phonetic": "ich",
+      "wordType": "pronoun",
+      "example": {
+        "text": {
+          "de": "Ich bin Anna.",
+          "fa": "من آنا هستم."
         }
-      ],
-      "feedback": {
-        "explanation": "این گفتگو نشان می‌دهد چگونه خودتان را معرفی کنید و از دیگران درباره اسم و کشورشان بپرسید."
+      },
+      "note": {
+        "fa": "ضمیر اول شخص مفرد - همیشه با حرف کوچک نوشته می‌شود مگر در ابتدای جمله."
       }
     },
     {
       "type": "new-word",
       "id": "s2",
+      "word": {
+        "de": "du",
+        "fa": "تو"
+      },
+      "phonetic": "doo",
+      "wordType": "pronoun",
+      "example": {
+        "text": {
+          "de": "Wie heißt du?",
+          "fa": "اسم تو چیه؟"
+        }
+      },
+      "note": {
+        "fa": "ضمیر دوم شخص مفرد غیررسمی - با دوستان و خانواده استفاده می‌شود."
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": {
+        "de": "Sie",
+        "fa": "شما (رسمی)"
+      },
+      "phonetic": "zee",
+      "wordType": "pronoun",
+      "example": {
+        "text": {
+          "de": "Wie heißen Sie?",
+          "fa": "اسم شما چیست؟"
+        }
+      },
+      "note": {
+        "fa": "ضمیر رسمی - همیشه با حرف بزرگ S نوشته می‌شود."
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": {
+        "de": "sein",
+        "fa": "بودن"
+      },
+      "phonetic": "zain",
+      "wordType": "verb",
+      "example": {
+        "text": {
+          "de": "Ich bin Student.",
+          "fa": "من دانشجو هستم."
+        }
+      },
+      "note": {
+        "fa": "فعل بودن - مهم‌ترین فعل آلمانی. صرف: ich bin, du bist, Sie sind"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": {
+        "de": "heißen",
+        "fa": "نامیده شدن"
+      },
+      "phonetic": "HAI-sen",
+      "wordType": "verb",
+      "example": {
+        "text": {
+          "de": "Ich heiße Maria.",
+          "fa": "اسم من ماریا است."
+        }
+      },
+      "note": {
+        "fa": "برای گفتن اسم: ich heiße, du heißt, Sie heißen"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
       "word": {
         "de": "Hallo",
         "fa": "سلام"
@@ -58,14 +115,17 @@
       "wordType": "interjection",
       "example": {
         "text": {
-          "de": "Hallo, wie geht's?",
-          "fa": "سلام، حالت چطوره؟"
+          "de": "Hallo! Wie geht's?",
+          "fa": "سلام! حالت چطوره؟"
         }
+      },
+      "note": {
+        "fa": "احوالپرسی غیررسمی - در هر زمان از روز قابل استفاده است."
       }
     },
     {
       "type": "new-word",
-      "id": "s3",
+      "id": "s7",
       "word": {
         "de": "Guten Tag",
         "fa": "روز بخیر"
@@ -79,12 +139,12 @@
         }
       },
       "note": {
-        "fa": "این احوالپرسی رسمی‌تر است و در محیط‌های کاری استفاده می‌شود."
+        "fa": "احوالپرسی رسمی‌تر - در محیط کار و با غریبه‌ها استفاده می‌شود."
       }
     },
     {
       "type": "new-word",
-      "id": "s4",
+      "id": "s8",
       "word": {
         "de": "Guten Morgen",
         "fa": "صبح بخیر"
@@ -93,17 +153,33 @@
       "wordType": "phrase",
       "example": {
         "text": {
-          "de": "Guten Morgen! Wie geht es Ihnen?",
-          "fa": "صبح بخیر! حالتان چطور است؟"
+          "de": "Guten Morgen! Schönen Tag!",
+          "fa": "صبح بخیر! روز خوبی داشته باشید!"
         }
       }
     },
     {
       "type": "new-word",
-      "id": "s5",
+      "id": "s9",
+      "word": {
+        "de": "Guten Abend",
+        "fa": "عصر بخیر"
+      },
+      "phonetic": "GOO-ten AH-bent",
+      "wordType": "phrase",
+      "example": {
+        "text": {
+          "de": "Guten Abend, Frau Schmidt!",
+          "fa": "عصر بخیر، خانم اشمیت!"
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
       "word": {
         "de": "Auf Wiedersehen",
-        "fa": "خداحافظ"
+        "fa": "خداحافظ (رسمی)"
       },
       "phonetic": "owf VEE-der-zay-en",
       "wordType": "phrase",
@@ -114,15 +190,15 @@
         }
       },
       "note": {
-        "fa": "این خداحافظی رسمی است. در موقعیت‌های غیررسمی از Tschüs استفاده کنید."
+        "fa": "خداحافظی رسمی - در محیط کار استفاده کنید."
       }
     },
     {
       "type": "new-word",
-      "id": "s6",
+      "id": "s11",
       "word": {
         "de": "Tschüs",
-        "fa": "بای بای / خداحافظ"
+        "fa": "خداحافظ (غیررسمی)"
       },
       "phonetic": "chüss",
       "wordType": "interjection",
@@ -131,353 +207,159 @@
           "de": "Tschüs, Anna! Bis später!",
           "fa": "خداحافظ، آنا! تا بعد!"
         }
+      },
+      "note": {
+        "fa": "خداحافظی غیررسمی - با دوستان استفاده کنید."
       }
     },
     {
       "type": "new-word",
-      "id": "s6a",
+      "id": "s12",
       "word": {
-        "de": "Hi!",
-        "fa": "سلام! / های!"
+        "de": "ja",
+        "fa": "بله"
       },
-      "phonetic": "hai",
-      "wordType": "interjection",
+      "phonetic": "yaa",
+      "wordType": "adverb",
       "example": {
         "text": {
-          "de": "Hi! Wie geht's?",
-          "fa": "سلام! حالت چطوره؟"
+          "de": "Ja, ich bin Anna.",
+          "fa": "بله، من آنا هستم."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s13",
+      "word": {
+        "de": "nein",
+        "fa": "نه"
+      },
+      "phonetic": "nain",
+      "wordType": "adverb",
+      "example": {
+        "text": {
+          "de": "Nein, ich heiße nicht Tom.",
+          "fa": "نه، اسم من تام نیست."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s14",
+      "word": {
+        "de": "und",
+        "fa": "و"
+      },
+      "phonetic": "oont",
+      "wordType": "conjunction",
+      "example": {
+        "text": {
+          "de": "Ich bin Anna und du?",
+          "fa": "من آنا هستم و تو؟"
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s15",
+      "word": {
+        "de": "Wie",
+        "fa": "چگونه / چطور"
+      },
+      "phonetic": "vee",
+      "wordType": "adverb",
+      "example": {
+        "text": {
+          "de": "Wie heißt du?",
+          "fa": "اسمت چیه؟"
         }
       },
       "note": {
-        "fa": "این یک احوالپرسی خیلی غیررسمی است، بیشتر بین جوانان و دوستان استفاده می‌شود."
+        "fa": "کلمه پرسشی - برای سوال درباره اسم و حال استفاده می‌شود."
       }
     },
     {
       "type": "new-word",
-      "id": "s6b",
+      "id": "s16",
       "word": {
-        "de": "Freut mich!",
-        "fa": "از آشنایی با شما خوشوقتم!"
+        "de": "Freut mich",
+        "fa": "از آشنایی خوشوقتم"
       },
-      "phonetic": "froyt mikh",
+      "phonetic": "froyt mich",
       "wordType": "phrase",
       "example": {
         "text": {
-          "de": "Ich bin Anna. Freut mich!",
-          "fa": "من آنا هستم. از آشنایی با شما خوشوقتم!"
+          "de": "Freut mich, Herr Müller!",
+          "fa": "از آشنایی خوشوقتم، آقای مولر!"
         }
-      },
-      "note": {
-        "fa": "معنی تحت‌اللفظی: «خوشحالم می‌کند». بعد از معرفی خود می‌گویند."
-      }
-    },
-    {
-      "type": "new-word",
-      "id": "s6c",
-      "word": {
-        "de": "Freut mich auch!",
-        "fa": "من هم همینطور!"
-      },
-      "phonetic": "froyt mikh owkh",
-      "wordType": "phrase",
-      "example": {
-        "text": {
-          "de": "Freut mich! - Freut mich auch!",
-          "fa": "از آشنایی با شما خوشوقتم! - من هم همینطور!"
-        }
-      }
-    },
-    {
-      "type": "new-word",
-      "id": "s6d",
-      "word": {
-        "de": "Herr / Frau",
-        "fa": "آقای / خانم"
-      },
-      "phonetic": "hair / frow",
-      "wordType": "noun",
-      "example": {
-        "text": {
-          "de": "Guten Tag, Herr Müller! Guten Tag, Frau Schmidt!",
-          "fa": "روز بخیر، آقای مولر! روز بخیر، خانم اشمیت!"
-        }
-      },
-      "note": {
-        "fa": "در نوشتار رسمی مخفف می‌شوند: Hr. (آقای) و Fr. (خانم)"
-      }
-    },
-    {
-      "type": "new-word",
-      "id": "s6e",
-      "word": {
-        "de": "Tschau!",
-        "fa": "چائو! / خداحافظ!"
-      },
-      "phonetic": "chow",
-      "wordType": "interjection",
-      "example": {
-        "text": {
-          "de": "Tschau Franzi! - Tschau Paul!",
-          "fa": "خداحافظ فرانتسی! - خداحافظ پاول!"
-        }
-      },
-      "note": {
-        "fa": "از ایتالیایی «ciao» گرفته شده. مثل Tschüs غیررسمی است."
-      }
-    },
-    {
-      "type": "new-word",
-      "id": "s6f",
-      "word": {
-        "de": "Bis bald!",
-        "fa": "تا به زودی!"
-      },
-      "phonetic": "bis balt",
-      "wordType": "phrase",
-      "example": {
-        "text": {
-          "de": "Tschüs, bis bald!",
-          "fa": "خداحافظ، تا به زودی!"
-        }
-      },
-      "note": {
-        "fa": "برای وقتی که چند روز یا هفته بعد می‌بینید."
-      }
-    },
-    {
-      "type": "new-word",
-      "id": "s6g",
-      "word": {
-        "de": "Bis später!",
-        "fa": "تا بعد!"
-      },
-      "phonetic": "bis shpay-ter",
-      "wordType": "phrase",
-      "example": {
-        "text": {
-          "de": "Ich muss gehen. Bis später!",
-          "fa": "باید برم. تا بعد!"
-        }
-      },
-      "note": {
-        "fa": "برای وقتی که همان روز دوباره می‌بینید."
-      }
-    },
-    {
-      "type": "new-word",
-      "id": "s6h",
-      "word": {
-        "de": "Schönen Tag!",
-        "fa": "روز خوبی داشته باشی!"
-      },
-      "phonetic": "shö-nen tahk",
-      "wordType": "phrase",
-      "example": {
-        "text": {
-          "de": "Auf Wiedersehen! Schönen Tag noch!",
-          "fa": "خداحافظ! روز خوبی داشته باشی!"
-        }
-      }
-    },
-    {
-      "type": "new-word",
-      "id": "s6i",
-      "word": {
-        "de": "Schönes Wochenende!",
-        "fa": "آخر هفته خوبی داشته باشی!"
-      },
-      "phonetic": "shö-nes VO-khen-en-de",
-      "wordType": "phrase",
-      "example": {
-        "text": {
-          "de": "Tschüs! Schönes Wochenende!",
-          "fa": "خداحافظ! آخر هفته خوبی داشته باشی!"
-        }
-      },
-      "note": {
-        "fa": "Wochenende = Wochen (هفته‌ها) + Ende (پایان)"
-      }
-    },
-    {
-      "type": "new-word",
-      "id": "s6j",
-      "word": {
-        "de": "Dir auch! / Ihnen auch!",
-        "fa": "تو هم همینطور! / شما هم همینطور!"
-      },
-      "phonetic": "deer owkh / EE-nen owkh",
-      "wordType": "phrase",
-      "example": {
-        "text": {
-          "de": "Schönes Wochenende! - Dir auch!",
-          "fa": "آخر هفته خوبی داشته باشی! - تو هم همینطور!"
-        }
-      },
-      "note": {
-        "fa": "Dir (غیررسمی با دوستان)، Ihnen (رسمی با غریبه‌ها)"
       }
     },
     {
       "type": "grammar-tip",
-      "id": "s7",
-      "title": "فعل‌های heißen و sein",
-      "content": "در آلمانی، برای معرفی خود از دو فعل استفاده می‌کنیم:\n\n**heißen** (نامیده شدن):\n• ich heiße = اسم من ... است\n• du heißt = اسم تو ... است\n• Sie heißen = اسم شما ... است (رسمی)\n\n**sein** (بودن):\n• ich bin = من هستم\n• du bist = تو هستی\n• Sie sind = شما هستید (رسمی)",
+      "id": "s17",
+      "title": "صرف فعل sein (بودن)",
+      "content": "فعل **sein** مهم‌ترین فعل در زبان آلمانی است:\n\n| ضمیر | فعل | فارسی |\n|------|-----|-------|\n| ich | bin | من هستم |\n| du | bist | تو هستی |\n| Sie | sind | شما هستید (رسمی) |\n\n⚠️ توجه: این فعل بی‌قاعده است و باید حفظ شود!",
+      "examples": [
+        {
+          "de": "Ich bin Anna.",
+          "fa": "من آنا هستم."
+        },
+        {
+          "de": "Du bist Tom.",
+          "fa": "تو تام هستی."
+        },
+        {
+          "de": "Sie sind Herr Müller.",
+          "fa": "شما آقای مولر هستید."
+        }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s18",
+      "title": "صرف فعل heißen (نامیده شدن)",
+      "content": "برای گفتن اسم از فعل **heißen** استفاده می‌کنیم:\n\n| ضمیر | فعل | فارسی |\n|------|-----|-------|\n| ich | heiße | اسم من ... است |\n| du | heißt | اسم تو ... است |\n| Sie | heißen | اسم شما ... است |\n\n💡 می‌توانید از \"Ich bin...\" هم استفاده کنید!",
       "examples": [
         {
           "de": "Ich heiße Maria.",
           "fa": "اسم من ماریا است."
         },
         {
-          "de": "Ich bin Maria.",
-          "fa": "من ماریا هستم."
+          "de": "Wie heißt du?",
+          "fa": "اسم تو چیه؟"
         }
       ]
-    },
-    {
-      "type": "multiple-choice",
-      "id": "s8",
-      "question": "چگونه صبح به کسی سلام می‌کنید؟",
-      "options": [
-        "Guten Morgen",
-        "Guten Abend",
-        "Gute Nacht",
-        "Auf Wiedersehen"
-      ],
-      "correctAnswerIndex": 0,
-      "feedback": {
-        "explanation": "آفرین! Guten Morgen یعنی صبح بخیر. نادرست. Guten Morgen یعنی صبح بخیر. Guten Abend برای عصر و Gute Nacht برای شب است."
-      }
-    },
-    {
-      "type": "fill-in-blank",
-      "id": "s9",
-      "instruction": "جمله را کامل کنید:",
-      "sentence": "Hallo! Ich {0} Anna. Wie {1} du?",
-      "feedback": {
-        "explanation": "با ich از bin و heiße استفاده می‌کنیم. با du از bist و heißt استفاده می‌کنیم."
-      },
-      "options": [
-        "bin",
-        "bist",
-        "sind",
-        "heißt",
-        "heiße",
-        "heißen"
-      ],
-      "correctAnswers": [
-        0,
-        3
-      ]
-    },
-    {
-      "type": "grammar-tip",
-      "id": "s10",
-      "title": "💡 نکته فرهنگی: Du یا Sie؟",
-      "content": "در آلمانی، دو نوع «شما/تو» وجود دارد:\n\n**Du** (غیررسمی):\n• با دوستان و خانواده\n• با همکلاسی‌ها\n• با کودکان\n\n**Sie** (رسمی):\n• با غریبه‌ها\n• در محیط کار\n• با افراد مسن‌تر\n\n⚠️ همیشه با Sie شروع کنید مگر اینکه طرف مقابل پیشنهاد Du بدهد!",
-      "examples": [
-        {
-          "de": "Wie heißt du? (غیررسمی)",
-          "fa": "اسمت چیه؟"
-        },
-        {
-          "de": "Wie heißen Sie? (رسمی)",
-          "fa": "اسم شما چیست؟"
-        }
-      ]
-    },
-    {
-      "type": "multiple-choice",
-      "id": "s11",
-      "question": "Ich _____ Tom.",
-      "options": [
-        "heiße",
-        "heißt",
-        "heißen",
-        "bin heißen"
-      ],
-      "correctAnswerIndex": 0,
-      "feedback": {
-        "explanation": "صحیح! با ich از heiße استفاده می‌کنیم. با ich از heiße استفاده می‌کنیم: Ich heiße Tom."
-      }
-    },
-    {
-      "type": "word-order",
-      "id": "s12",
-      "instruction": "کلمات را مرتب کنید تا یک جمله بسازید:",
-      "words": [
-        "bin",
-        "ich",
-        "Anna",
-        "Hallo"
-      ],
-      "correctOrder": [
-        3,
-        1,
-        0,
-        2
-      ],
-      "correctSentence": {
-        "de": "Hallo ich bin Anna",
-        "fa": "سلام من آنا هستم"
-      },
-      "feedback": {
-        "explanation": "ترتیب صحیح: Hallo, ich bin Anna. (سلام، من آنا هستم.)"
-      }
-    },
-    {
-      "type": "translation",
-      "id": "s13",
-      "sourceText": "سلام! اسم من سارا است.",
-      "feedback": {
-        "explanation": "می‌توانید بگویید: Hallo! Ich heiße Sara. یا Hallo! Ich bin Sara."
-      },
-      "sentenceTemplate": "{0} {1} {2} {3}",
-      "options": [
-        "Hallo!",
-        "Ich",
-        "heiße",
-        "Sara."
-      ],
-      "correctAnswers": [
-        0,
-        1,
-        2,
-        3
-      ],
-      "correctTranslation": {
-        "de": "Hallo! Ich heiße Sara.",
-        "fa": "سلام! اسم من سارا است."
-      }
     },
     {
       "type": "dialog",
-      "id": "s14",
-      "title": "تمرین مکالمه",
-      "instruction": "این مکالمه را بخوانید و تمرین کنید:",
+      "id": "s19",
+      "title": "در کلاس آلمانی",
+      "instruction": "به این مکالمه گوش دهید و تمرین کنید:",
       "lines": [
         {
-          "speaker": "A",
+          "speaker": "Anna",
           "text": {
-            "de": "Guten Tag! Mein Name ist Schmidt. Wie heißen Sie?",
-            "fa": "روز بخیر! اسم من اشمیت است. اسم شما چیست؟"
+            "de": "Hallo! Ich bin Anna. Wie heißt du?",
+            "fa": "سلام! من آنا هستم. اسم تو چیه؟"
           }
         },
         {
-          "speaker": "B",
+          "speaker": "Tom",
           "text": {
-            "de": "Guten Tag, Herr Schmidt. Ich heiße Ahmadi.",
-            "fa": "روز بخیر، آقای اشمیت. اسم من احمدی است."
+            "de": "Hallo Anna! Ich heiße Tom.",
+            "fa": "سلام آنا! اسم من تام است."
           }
         },
         {
-          "speaker": "A",
+          "speaker": "Anna",
           "text": {
-            "de": "Freut mich, Herr Ahmadi!",
-            "fa": "از آشنایی با شما خوشوقتم، آقای احمدی!"
+            "de": "Freut mich, Tom!",
+            "fa": "از آشنایی خوشوقتم، تام!"
           }
         },
         {
-          "speaker": "B",
+          "speaker": "Tom",
           "text": {
             "de": "Freut mich auch!",
             "fa": "من هم همینطور!"
@@ -485,89 +367,208 @@
         }
       ],
       "feedback": {
-        "explanation": "این یک مکالمه رسمی است. توجه کنید که از Sie و Herr (آقای) استفاده شده است."
-      }
-    },
-    {
-      "type": "true-false",
-      "id": "s15",
-      "statement": "'Tschüs' ist formell.",
-      "correctAnswer": false,
-      "feedback": {
-        "explanation": "درست! Tschüs غیررسمی است. برای موقعیت‌های رسمی از Auf Wiedersehen استفاده کنید. Tschüs غیررسمی است و با دوستان استفاده می‌شود. Auf Wiedersehen رسمی است."
-      },
-      "statementExplanation": "«چوس» رسمی است."
-    },
-    {
-      "type": "grammar-tip",
-      "id": "s16",
-      "title": "💡 نکته فرهنگی: احوالپرسی‌های منطقه‌ای",
-      "content": "در کشورهای آلمانی‌زبان، احوالپرسی‌های محلی مختلفی وجود دارد:\n\n🇩🇪 **شمال آلمان:**\n• **Moin!** یا **Moin moin!** = سلام!\n\n🇦🇹 **اتریش و جنوب آلمان:**\n• **Servus!** = سلام! / خداحافظ!\n\n🇨🇭 **سوئیس:**\n• **Hoi!** = سلام!\n\n⚠️ این‌ها احوالپرسی‌های غیررسمی هستند. در موقعیت‌های رسمی همیشه از «Guten Tag» استفاده کنید.",
-      "examples": [
-        {
-          "de": "Moin Paul! (شمال آلمان)",
-          "fa": "سلام پاول!"
-        },
-        {
-          "de": "Servus! (اتریش)",
-          "fa": "سلام! / خداحافظ!"
-        },
-        {
-          "de": "Hoi Selina! (سوئیس)",
-          "fa": "سلام سلینا!"
-        }
-      ]
-    },
-    {
-      "type": "multiple-choice",
-      "id": "s17",
-      "question": "کدام یک از این احوالپرسی‌ها در سوئیس استفاده می‌شود؟",
-      "options": [
-        "Hoi!",
-        "Moin!",
-        "Servus!",
-        "Guten Tag!"
-      ],
-      "correctAnswerIndex": 0,
-      "feedback": {
-        "explanation": "آفرین! «Hoi» احوالپرسی غیررسمی در سوئیس است. «Moin» در شمال آلمان و «Servus» در اتریش و جنوب آلمان استفاده می‌شود."
+        "explanation": "این یک مکالمه غیررسمی است. توجه کنید که از du استفاده شده است."
       }
     },
     {
       "type": "multiple-choice",
-      "id": "s18",
-      "question": "چگونه می‌گویید «تو هم همینطور» به صورت غیررسمی؟",
-      "options": [
-        "Dir auch!",
-        "Ihnen auch!",
-        "Mir auch!",
-        "Dich auch!"
-      ],
+      "id": "s20",
+      "question": "چگونه صبح به کسی سلام می‌کنید؟",
+      "options": ["Guten Morgen", "Guten Abend", "Gute Nacht", "Auf Wiedersehen"],
       "correctAnswerIndex": 0,
       "feedback": {
-        "explanation": "صحیح! «Dir auch» غیررسمی است (با دوستان). «Ihnen auch» رسمی است (با غریبه‌ها یا در محیط کار)."
+        "explanation": "Guten Morgen یعنی صبح بخیر. Guten Abend برای عصر و Gute Nacht برای شب است."
+      }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s21",
+      "question": "Ich _____ Tom.",
+      "options": ["heiße", "heißt", "heißen", "bist"],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "explanation": "با ich از heiße استفاده می‌کنیم: Ich heiße Tom."
       }
     },
     {
       "type": "fill-in-blank",
-      "id": "s19",
-      "instruction": "جاهای خالی را پر کنید:",
-      "sentence": "Schönes {0}! - {1} auch!",
+      "id": "s22",
+      "instruction": "جمله را کامل کنید:",
+      "sentence": "Hallo! Ich {0} Anna. Wie {1} du?",
+      "options": ["bin", "bist", "heißt", "heiße", "sind", "heißen"],
+      "correctAnswers": [0, 2],
       "feedback": {
-        "explanation": "«Schönes Wochenende» یعنی آخر هفته خوبی داشته باشی. جواب غیررسمی «Dir auch» است."
+        "explanation": "با ich از bin استفاده می‌کنیم. با du از heißt استفاده می‌کنیم."
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s23",
+      "instruction": "جمله را کامل کنید:",
+      "sentence": "Guten Tag! Ich {0} Müller. Wie heißen {1}?",
+      "options": ["bin", "bist", "heiße", "Sie", "du", "sind"],
+      "correctAnswers": [2, 3],
+      "feedback": {
+        "explanation": "در موقعیت رسمی: Ich heiße... و Wie heißen Sie?"
+      }
+    },
+    {
+      "type": "word-order",
+      "id": "s24",
+      "instruction": "کلمات را مرتب کنید:",
+      "words": ["bin", "ich", "Maria", "Hallo"],
+      "correctOrder": [3, 1, 0, 2],
+      "correctSentence": {
+        "de": "Hallo ich bin Maria",
+        "fa": "سلام من ماریا هستم"
       },
-      "options": [
-        "Wochenende",
-        "Tag",
-        "Morgen",
-        "Dir",
-        "Ihnen",
-        "Mir"
-      ],
-      "correctAnswers": [
-        0,
-        3
+      "feedback": {
+        "explanation": "ترتیب صحیح: Hallo, ich bin Maria."
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s25",
+      "title": "💡 نکته فرهنگی: Du یا Sie؟",
+      "content": "در آلمانی، دو نوع «شما/تو» وجود دارد:\n\n**Du** (غیررسمی) - با حرف کوچک:\n• با دوستان و خانواده\n• با همکلاسی‌ها و دانشجویان\n• با کودکان\n\n**Sie** (رسمی) - همیشه با حرف بزرگ S:\n• با غریبه‌ها\n• در محیط کار\n• با افراد مسن‌تر\n• در فروشگاه‌ها و اداره‌ها\n\n⚠️ قانون طلایی: همیشه با Sie شروع کنید!",
+      "examples": [
+        {
+          "de": "Wie heißt du?",
+          "fa": "اسمت چیه؟ (غیررسمی)"
+        },
+        {
+          "de": "Wie heißen Sie?",
+          "fa": "اسم شما چیست؟ (رسمی)"
+        }
       ]
+    },
+    {
+      "type": "dialog",
+      "id": "s26",
+      "title": "مکالمه رسمی",
+      "instruction": "این مکالمه رسمی را بخوانید:",
+      "lines": [
+        {
+          "speaker": "Herr Schmidt",
+          "text": {
+            "de": "Guten Tag! Mein Name ist Schmidt. Wie heißen Sie?",
+            "fa": "روز بخیر! اسم من اشمیت است. اسم شما چیست؟"
+          }
+        },
+        {
+          "speaker": "Frau Ahmadi",
+          "text": {
+            "de": "Guten Tag, Herr Schmidt. Ich heiße Ahmadi.",
+            "fa": "روز بخیر، آقای اشمیت. اسم من احمدی است."
+          }
+        },
+        {
+          "speaker": "Herr Schmidt",
+          "text": {
+            "de": "Freut mich, Frau Ahmadi!",
+            "fa": "از آشنایی خوشوقتم، خانم احمدی!"
+          }
+        },
+        {
+          "speaker": "Frau Ahmadi",
+          "text": {
+            "de": "Freut mich auch, Herr Schmidt!",
+            "fa": "من هم همینطور، آقای اشمیت!"
+          }
+        }
+      ],
+      "feedback": {
+        "explanation": "توجه کنید: از Sie، Herr (آقای) و Frau (خانم) استفاده شده است."
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "s27",
+      "statement": "Tschüs ist formell.",
+      "statementExplanation": "«چوس» رسمی است.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "Tschüs غیررسمی است. برای موقعیت‌های رسمی از Auf Wiedersehen استفاده کنید."
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "s28",
+      "statement": "Mit 'Sie' sprechen wir formell.",
+      "statementExplanation": "با «Sie» رسمی صحبت می‌کنیم.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! Sie ضمیر رسمی است و همیشه با حرف بزرگ نوشته می‌شود."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "s29",
+      "sourceText": "سلام! اسم من سارا است.",
+      "sentenceTemplate": "{0} Ich {1} {2}",
+      "options": ["Hallo!", "heiße", "Sara.", "bin", "heißt"],
+      "correctAnswers": [0, 1, 2],
+      "correctTranslation": {
+        "de": "Hallo! Ich heiße Sara.",
+        "fa": "سلام! اسم من سارا است."
+      },
+      "feedback": {
+        "explanation": "می‌توانید بگویید: Hallo! Ich heiße Sara. یا Hallo! Ich bin Sara."
+      }
+    },
+    {
+      "type": "matching",
+      "id": "s30",
+      "instruction": "کلمات آلمانی را با ترجمه فارسی تطبیق دهید:",
+      "items": [
+        { "id": "i1", "text": "Hallo" },
+        { "id": "i2", "text": "Auf Wiedersehen" },
+        { "id": "i3", "text": "Guten Morgen" },
+        { "id": "i4", "text": "ja" },
+        { "id": "i5", "text": "nein" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "سلام" },
+        { "id": "m2", "text": "خداحافظ" },
+        { "id": "m3", "text": "صبح بخیر" },
+        { "id": "m4", "text": "بله" },
+        { "id": "m5", "text": "نه" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"],
+        ["i4", "m4"],
+        ["i5", "m5"]
+      ],
+      "shuffleTargets": true,
+      "feedback": {
+        "explanation": "آفرین! این کلمات پایه‌ای هستند که هر روز استفاده می‌شوند."
+      }
+    },
+    {
+      "type": "matching",
+      "id": "s31",
+      "instruction": "ضمیرها را با فعل sein تطبیق دهید:",
+      "items": [
+        { "id": "i1", "text": "ich" },
+        { "id": "i2", "text": "du" },
+        { "id": "i3", "text": "Sie" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "bin" },
+        { "id": "m2", "text": "bist" },
+        { "id": "m3", "text": "sind" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"]
+      ],
+      "shuffleTargets": true,
+      "feedback": {
+        "explanation": "ich bin, du bist, Sie sind - این صرف فعل را خوب حفظ کنید!"
+      }
     }
   ]
 }

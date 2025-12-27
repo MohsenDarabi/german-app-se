@@ -6,6 +6,7 @@
   import NewWordStep from "./steps/NewWordStep.svelte";
   import FillInBlankStep from "./steps/FillInBlankStep.svelte";
   import WordOrderStep from "./steps/WordOrderStep.svelte";
+  import MatchingStep from "./steps/MatchingStep.svelte";
   import TranslationStep from "./steps/TranslationStep.svelte";
   import TrueFalseStep from "./steps/TrueFalseStep.svelte";
 
@@ -26,6 +27,8 @@
     <FillInBlankStep {step} {lessonId} on:answer />
   {:else if step.type === "word-order"}
     <WordOrderStep {step} {lessonId} on:answer />
+  {:else if step.type === "matching"}
+    <MatchingStep {step} {lessonId} on:answer />
   {:else if step.type === "translation"}
     <TranslationStep {step} {lessonId} on:answer />
   {:else if step.type === "true-false"}

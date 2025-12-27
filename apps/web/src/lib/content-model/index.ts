@@ -144,7 +144,43 @@ export const WordOrderStepSchema = BaseStepSchema.extend({
 });
 
 /* --------------------------------------------------
-   Step Type 5: True or False
+   Step Type 5: Matching Exercise
+   Match items from two columns (tap-to-match)
+-------------------------------------------------- */
+
+export const MatchingStepSchema = BaseStepSchema.extend({
+  type: z.literal("matching"),
+
+  // Instruction text
+  instruction: z.string().default("Match the items."),
+
+  // Left column items (e.g., German words)
+  items: z.array(
+    z.object({
+      id: z.string(),
+      text: z.string(),
+    })
+  ).min(2).max(6),
+
+  // Right column items (e.g., Persian translations)
+  matches: z.array(
+    z.object({
+      id: z.string(),
+      text: z.string(),
+    })
+  ).min(2).max(6),
+
+  // Correct pairs: array of [itemId, matchId] tuples
+  correctPairs: z.array(
+    z.tuple([z.string(), z.string()])
+  ),
+
+  // Whether to shuffle the right column (default: true)
+  shuffleTargets: z.boolean().default(true),
+});
+
+/* --------------------------------------------------
+   Step Type 6: True or False
    Verify if a statement is correct
 -------------------------------------------------- */
 
@@ -278,6 +314,7 @@ export const LessonStepSchema = z.discriminatedUnion("type", [
   MultipleChoiceStepSchema,
   FillInBlankStepSchema,
   WordOrderStepSchema,
+  MatchingStepSchema,
   TrueFalseStepSchema,
   TranslationStepSchema,
   DialogStepSchema,
@@ -345,6 +382,7 @@ export type NewWordStep = z.infer<typeof NewWordStepSchema>;
 export type MultipleChoiceStep = z.infer<typeof MultipleChoiceStepSchema>;
 export type FillInBlankStep = z.infer<typeof FillInBlankStepSchema>;
 export type WordOrderStep = z.infer<typeof WordOrderStepSchema>;
+export type MatchingStep = z.infer<typeof MatchingStepSchema>;
 export type TrueFalseStep = z.infer<typeof TrueFalseStepSchema>;
 export type TranslationStep = z.infer<typeof TranslationStepSchema>;
 export type DialogStep = z.infer<typeof DialogStepSchema>;

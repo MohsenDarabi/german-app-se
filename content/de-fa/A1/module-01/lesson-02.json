@@ -7,12 +7,328 @@
   "level": "A1-1",
   "module": 1,
   "lessonNumber": 2,
-  "estimatedMinutes": 15,
+  "estimatedMinutes": 18,
   "steps": [
     {
-      "type": "dialog",
+      "type": "new-word",
       "id": "s1",
-      "title": "Neue Freunde",
+      "word": {
+        "de": "kommen",
+        "fa": "آمدن / اهل بودن"
+      },
+      "phonetic": "KO-men",
+      "wordType": "verb",
+      "example": {
+        "text": {
+          "de": "Ich komme aus Iran.",
+          "fa": "من اهل ایران هستم."
+        }
+      },
+      "note": {
+        "fa": "صرف: ich komme, du kommst, er/sie kommt, Sie kommen"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": {
+        "de": "Woher",
+        "fa": "از کجا"
+      },
+      "phonetic": "vo-HAIR",
+      "wordType": "adverb",
+      "example": {
+        "text": {
+          "de": "Woher kommst du?",
+          "fa": "اهل کجایی؟"
+        }
+      },
+      "note": {
+        "fa": "کلمه پرسشی برای سوال درباره مبدا و کشور"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": {
+        "de": "Wo",
+        "fa": "کجا"
+      },
+      "phonetic": "vo",
+      "wordType": "adverb",
+      "example": {
+        "text": {
+          "de": "Wo wohnst du?",
+          "fa": "کجا زندگی می‌کنی؟"
+        }
+      },
+      "note": {
+        "fa": "برای سوال درباره مکان فعلی"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": {
+        "de": "Wer",
+        "fa": "چه کسی"
+      },
+      "phonetic": "vair",
+      "wordType": "pronoun",
+      "example": {
+        "text": {
+          "de": "Wer ist das?",
+          "fa": "این کیست؟"
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": {
+        "de": "Was",
+        "fa": "چه چیزی"
+      },
+      "phonetic": "vas",
+      "wordType": "pronoun",
+      "example": {
+        "text": {
+          "de": "Was ist das?",
+          "fa": "این چیست؟"
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": {
+        "de": "aus",
+        "fa": "از"
+      },
+      "phonetic": "ows",
+      "wordType": "preposition",
+      "example": {
+        "text": {
+          "de": "Ich komme aus Deutschland.",
+          "fa": "من اهل آلمان هستم."
+        }
+      },
+      "note": {
+        "fa": "حرف اضافه برای مبدا: kommen aus + کشور"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": {
+        "de": "in",
+        "fa": "در"
+      },
+      "phonetic": "in",
+      "wordType": "preposition",
+      "example": {
+        "text": {
+          "de": "Ich wohne in Berlin.",
+          "fa": "من در برلین زندگی می‌کنم."
+        }
+      },
+      "note": {
+        "fa": "حرف اضافه برای مکان: wohnen in + شهر"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": {
+        "de": "wohnen",
+        "fa": "زندگی کردن"
+      },
+      "phonetic": "VOH-nen",
+      "wordType": "verb",
+      "example": {
+        "text": {
+          "de": "Ich wohne in München.",
+          "fa": "من در مونیخ زندگی می‌کنم."
+        }
+      },
+      "note": {
+        "fa": "صرف: ich wohne, du wohnst, er/sie wohnt"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": {
+        "de": "Deutschland",
+        "fa": "آلمان"
+      },
+      "phonetic": "DOYTSH-lant",
+      "wordType": "noun",
+      "example": {
+        "text": {
+          "de": "Berlin ist in Deutschland.",
+          "fa": "برلین در آلمان است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": {
+        "de": "Österreich",
+        "fa": "اتریش"
+      },
+      "phonetic": "ÖS-ter-raykh",
+      "wordType": "noun",
+      "example": {
+        "text": {
+          "de": "Wien ist die Hauptstadt von Österreich.",
+          "fa": "وین پایتخت اتریش است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s11",
+      "word": {
+        "de": "die Schweiz",
+        "fa": "سوئیس"
+      },
+      "phonetic": "dee shvayts",
+      "wordType": "noun",
+      "example": {
+        "text": {
+          "de": "Ich wohne in der Schweiz.",
+          "fa": "من در سوئیس زندگی می‌کنم."
+        }
+      },
+      "note": {
+        "fa": "سوئیس با حرف تعریف die استفاده می‌شود: aus der Schweiz, in der Schweiz"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s12",
+      "word": {
+        "de": "Iran",
+        "fa": "ایران"
+      },
+      "phonetic": "ee-RAHN",
+      "wordType": "noun",
+      "example": {
+        "text": {
+          "de": "Teheran ist die Hauptstadt von Iran.",
+          "fa": "تهران پایتخت ایران است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s13",
+      "word": {
+        "de": "die Türkei",
+        "fa": "ترکیه"
+      },
+      "phonetic": "dee tür-KAY",
+      "wordType": "noun",
+      "example": {
+        "text": {
+          "de": "Er kommt aus der Türkei.",
+          "fa": "او اهل ترکیه است."
+        }
+      },
+      "note": {
+        "fa": "ترکیه هم با حرف تعریف die استفاده می‌شود."
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s14",
+      "word": {
+        "de": "Spanien",
+        "fa": "اسپانیا"
+      },
+      "phonetic": "SHPAH-nee-en",
+      "wordType": "noun",
+      "example": {
+        "text": {
+          "de": "Madrid ist in Spanien.",
+          "fa": "مادرید در اسپانیا است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s15",
+      "word": {
+        "de": "Italien",
+        "fa": "ایتالیا"
+      },
+      "phonetic": "ee-TAH-lee-en",
+      "wordType": "noun",
+      "example": {
+        "text": {
+          "de": "Rom ist in Italien.",
+          "fa": "رم در ایتالیا است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s16",
+      "word": {
+        "de": "die USA",
+        "fa": "آمریکا"
+      },
+      "phonetic": "dee oo-es-AH",
+      "wordType": "noun",
+      "example": {
+        "text": {
+          "de": "Sie kommt aus den USA.",
+          "fa": "او اهل آمریکا است."
+        }
+      },
+      "note": {
+        "fa": "USA همیشه با die استفاده می‌شود و جمع است: aus den USA"
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s17",
+      "title": "صرف فعل kommen",
+      "content": "فعل **kommen** (آمدن) یک فعل باقاعده است:\n\n| ضمیر | فعل | فارسی |\n|------|-----|-------|\n| ich | komme | من می‌آیم |\n| du | kommst | تو می‌آیی |\n| er/sie/es | kommt | او می‌آید |\n| Sie | kommen | شما می‌آیید |\n\n**kommen aus** = اهل ... بودن",
+      "examples": [
+        {
+          "de": "Ich komme aus Iran.",
+          "fa": "من اهل ایران هستم."
+        },
+        {
+          "de": "Woher kommst du?",
+          "fa": "اهل کجایی؟"
+        }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s18",
+      "title": "سوالات با W (W-Fragen)",
+      "content": "سوالات مهم در آلمانی با **W** شروع می‌شوند:\n\n| آلمانی | فارسی | مثال |\n|--------|-------|------|\n| **Wie** | چگونه | Wie heißt du? |\n| **Woher** | از کجا | Woher kommst du? |\n| **Wo** | کجا | Wo wohnst du? |\n| **Wer** | چه کسی | Wer ist das? |\n| **Was** | چه چیزی | Was ist das? |\n\n**ترتیب جمله:** W-Wort + Verb + Subject",
+      "examples": [
+        {
+          "de": "Wo wohnst du?",
+          "fa": "کجا زندگی می‌کنی؟"
+        },
+        {
+          "de": "Wer ist das?",
+          "fa": "این کیست؟"
+        }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "s19",
+      "title": "دوستان جدید",
+      "instruction": "به این مکالمه گوش دهید:",
       "lines": [
         {
           "speaker": "Maria",
@@ -31,279 +347,190 @@
         {
           "speaker": "Maria",
           "text": {
-            "de": "Ich komme aus Österreich, aus Wien.",
-            "fa": "من اهل اتریش هستم، از وین."
+            "de": "Ich komme aus Österreich. Ich wohne in Wien.",
+            "fa": "من اهل اتریش هستم. در وین زندگی می‌کنم."
           }
         },
         {
           "speaker": "Ali",
           "text": {
-            "de": "Oh, Wien ist sehr schön!",
-            "fa": "اوه، وین خیلی قشنگه!"
+            "de": "Wien ist sehr schön!",
+            "fa": "وین خیلی قشنگه!"
           }
         }
       ],
       "feedback": {
-        "explanation": "در این مکالمه یاد می‌گیریم چگونه بپرسیم کسی اهل کجاست و پاسخ دهیم."
+        "explanation": "توجه کنید: kommen aus برای کشور مبدا و wohnen in برای شهر فعلی استفاده می‌شود."
       }
-    },
-    {
-      "type": "new-word",
-      "id": "s2",
-      "word": {
-        "de": "Deutschland",
-        "fa": "آلمان"
-      },
-      "phonetic": "DOYTSH-lant",
-      "wordType": "noun",
-      "example": {
-        "text": {
-          "de": "Ich komme aus Deutschland.",
-          "fa": "من اهل آلمان هستم."
-        }
-      }
-    },
-    {
-      "type": "new-word",
-      "id": "s3",
-      "word": {
-        "de": "Österreich",
-        "fa": "اتریش"
-      },
-      "phonetic": "ÖS-ter-raykh",
-      "wordType": "noun",
-      "example": {
-        "text": {
-          "de": "Wien ist in Österreich.",
-          "fa": "وین در اتریش است."
-        }
-      }
-    },
-    {
-      "type": "new-word",
-      "id": "s4",
-      "word": {
-        "de": "die Schweiz",
-        "fa": "سوئیس"
-      },
-      "phonetic": "dee shvayts",
-      "wordType": "noun",
-      "example": {
-        "text": {
-          "de": "Ich wohne in der Schweiz.",
-          "fa": "من در سوئیس زندگی می‌کنم."
-        }
-      },
-      "note": {
-        "fa": "سوئیس تنها کشور آلمانی‌زبان است که با حرف تعریف (die) استفاده می‌شود."
-      }
-    },
-    {
-      "type": "new-word",
-      "id": "s5",
-      "word": {
-        "de": "Iran",
-        "fa": "ایران"
-      },
-      "phonetic": "ee-RAHN",
-      "wordType": "noun",
-      "example": {
-        "text": {
-          "de": "Ich komme aus Iran.",
-          "fa": "من اهل ایران هستم."
-        }
-      }
-    },
-    {
-      "type": "new-word",
-      "id": "s6",
-      "word": {
-        "de": "die Türkei",
-        "fa": "ترکیه"
-      },
-      "phonetic": "dee tür-KAY",
-      "wordType": "noun",
-      "example": {
-        "text": {
-          "de": "Meine Freundin kommt aus der Türkei.",
-          "fa": "دوستم اهل ترکیه است."
-        }
-      }
-    },
-    {
-      "type": "grammar-tip",
-      "id": "s7",
-      "title": "فعل kommen (آمدن)",
-      "content": "فعل kommen برای گفتن اهل کجا هستید استفاده می‌شود:\n\n• ich **komme** = من می‌آیم / اهل ... هستم\n• du **kommst** = تو می‌آیی / اهل ... هستی\n• er/sie **kommt** = او می‌آید / اهل ... است\n• Sie **kommen** = شما می‌آیید (رسمی)\n\n**ساختار:** Ich komme **aus** + کشور",
-      "examples": [
-        {
-          "de": "Woher kommst du?",
-          "fa": "اهل کجایی؟"
-        },
-        {
-          "de": "Ich komme aus Iran.",
-          "fa": "من اهل ایران هستم."
-        }
-      ]
     },
     {
       "type": "multiple-choice",
-      "id": "s8",
+      "id": "s20",
       "question": "Woher _____ du?",
-      "options": [
-        "kommst",
-        "komme",
-        "kommen",
-        "kommt"
-      ],
+      "options": ["kommst", "komme", "kommen", "kommt"],
       "correctAnswerIndex": 0,
       "feedback": {
-        "explanation": "آفرین! با du از kommst استفاده می‌کنیم. با du از kommst استفاده می‌کنیم: Woher kommst du?"
+        "explanation": "با du از kommst استفاده می‌کنیم: Woher kommst du?"
       }
     },
     {
-      "type": "grammar-tip",
-      "id": "s9",
-      "title": "سوالات W (W-Fragen)",
-      "content": "سوالات مهم در آلمانی با W شروع می‌شوند:\n\n• **Wie** = چگونه / چطور\n• **Woher** = از کجا\n• **Wo** = کجا\n• **Wer** = چه کسی\n• **Was** = چه چیزی\n\n**ترتیب جمله:** W-Wort + Verb + Subject",
-      "examples": [
-        {
-          "de": "Wie heißt du?",
-          "fa": "اسمت چیه؟"
-        },
-        {
-          "de": "Woher kommst du?",
-          "fa": "اهل کجایی؟"
-        },
-        {
-          "de": "Wo wohnst du?",
-          "fa": "کجا زندگی می‌کنی؟"
-        }
-      ]
+      "type": "multiple-choice",
+      "id": "s21",
+      "question": "Ich _____ aus Deutschland.",
+      "options": ["komme", "kommst", "kommt", "kommen"],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "explanation": "با ich از komme استفاده می‌کنیم: Ich komme aus Deutschland."
+      }
     },
     {
       "type": "fill-in-blank",
-      "id": "s10",
-      "instruction": "جاهای خالی را پر کنید:",
-      "sentence": "{0} kommst du? - Ich {1} aus Deutschland.",
+      "id": "s22",
+      "instruction": "جمله را کامل کنید:",
+      "sentence": "{0} kommst du? - Ich {1} aus Iran.",
+      "options": ["Woher", "Wo", "Wer", "komme", "kommst", "wohne"],
+      "correctAnswers": [0, 3],
       "feedback": {
-        "explanation": "Woher برای پرسیدن از کجا می‌آیی استفاده می‌شود. با ich از komme استفاده می‌کنیم."
-      },
-      "options": [
-        "Woher",
-        "Wo",
-        "Wie",
-        "komme",
-        "kommst",
-        "kommen"
-      ],
-      "correctAnswers": [
-        0,
-        3
-      ]
+        "explanation": "Woher برای سوال از مبدا استفاده می‌شود. با ich از komme استفاده می‌کنیم."
+      }
     },
     {
-      "type": "grammar-tip",
-      "id": "s11",
-      "title": "💡 نکته فرهنگی: کشورهای آلمانی‌زبان",
-      "content": "آلمانی زبان رسمی سه کشور است:\n\n🇩🇪 **Deutschland** (آلمان) - ۸۳ میلیون نفر\n🇦🇹 **Österreich** (اتریش) - ۹ میلیون نفر\n🇨🇭 **die Schweiz** (سوئیس) - ۸ میلیون نفر\n\nاین سه کشور را با هم **DACH** می‌نامند:\n• **D**eutschland\n• **A**ustria (Österreich)\n• **CH** = Confoederatio Helvetica (سوئیس)",
-      "examples": [
-        {
-          "de": "In der Schweiz spricht man auch Französisch.",
-          "fa": "در سوئیس فرانسوی هم صحبت می‌کنند."
-        }
-      ]
-    },
-    {
-      "type": "new-word",
-      "id": "s12",
-      "word": {
-        "de": "wohnen",
-        "fa": "زندگی کردن / سکونت داشتن"
-      },
-      "phonetic": "VOH-nen",
-      "wordType": "verb",
-      "example": {
-        "text": {
-          "de": "Ich wohne in Berlin.",
-          "fa": "من در برلین زندگی می‌کنم."
-        }
-      },
-      "note": {
-        "fa": "kommen از = اهل کجا بودن، wohnen in = کجا زندگی کردن"
+      "type": "fill-in-blank",
+      "id": "s23",
+      "instruction": "جمله را کامل کنید:",
+      "sentence": "{0} wohnst du? - Ich wohne {1} Berlin.",
+      "options": ["Wo", "Woher", "Was", "in", "aus", "von"],
+      "correctAnswers": [0, 3],
+      "feedback": {
+        "explanation": "Wo برای سوال از مکان استفاده می‌شود. wohnen in + شهر."
       }
     },
     {
       "type": "multiple-choice",
-      "id": "s13",
+      "id": "s24",
       "question": "کدام کشور با حرف تعریف die استفاده می‌شود؟",
-      "options": [
-        "die Schweiz",
-        "Deutschland",
-        "Österreich",
-        "Iran"
-      ],
+      "options": ["die Schweiz", "Deutschland", "Österreich", "Iran"],
       "correctAnswerIndex": 0,
       "feedback": {
-        "explanation": "درست! die Schweiz و die Türkei با حرف تعریف استفاده می‌شوند. فقط چند کشور خاص مثل die Schweiz و die Türkei با حرف تعریف استفاده می‌شوند."
+        "explanation": "die Schweiz، die Türkei و die USA با حرف تعریف استفاده می‌شوند."
       }
     },
     {
       "type": "word-order",
-      "id": "s14",
+      "id": "s25",
       "instruction": "کلمات را مرتب کنید:",
-      "words": [
-        "aus",
-        "kommst",
-        "Woher",
-        "du"
-      ],
-      "correctOrder": [
-        2,
-        1,
-        3,
-        0
-      ],
+      "words": ["kommst", "Woher", "du"],
+      "correctOrder": [1, 0, 2],
       "correctSentence": {
-        "de": "Woher kommst du aus",
+        "de": "Woher kommst du",
         "fa": "اهل کجایی"
       },
-      "alternativeCorrect": "Woher kommst du?",
       "feedback": {
-        "explanation": "ترتیب صحیح: Woher kommst du? (توجه: aus در سوال نیست، در جواب است)"
+        "explanation": "ترتیب صحیح: Woher kommst du? - کلمه پرسشی اول، سپس فعل، سپس فاعل."
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s26",
+      "title": "💡 نکته فرهنگی: کشورهای آلمانی‌زبان (DACH)",
+      "content": "آلمانی زبان رسمی سه کشور است:\n\n🇩🇪 **Deutschland** (آلمان) - ۸۳ میلیون نفر\n🇦🇹 **Österreich** (اتریش) - ۹ میلیون نفر\n🇨🇭 **die Schweiz** (سوئیس) - ۸ میلیون نفر\n\nاین سه کشور را با هم **DACH** می‌نامند:\n• **D**eutschland\n• **A**ustria (اتریش به انگلیسی)\n• **CH** = Confoederatio Helvetica (سوئیس به لاتین)\n\n⚠️ در سوئیس ۴ زبان رسمی وجود دارد: آلمانی، فرانسوی، ایتالیایی و رومانش.",
+      "examples": [
+        {
+          "de": "Ich lerne Deutsch.",
+          "fa": "من آلمانی یاد می‌گیرم."
+        }
+      ]
+    },
+    {
+      "type": "true-false",
+      "id": "s27",
+      "statement": "Man sagt: Ich komme aus der Schweiz.",
+      "statementExplanation": "می‌گویند: من اهل سوئیس هستم.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! die Schweiz با حرف تعریف است، پس می‌گوییم: aus der Schweiz."
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "s28",
+      "statement": "Woher bedeutet 'wo'.",
+      "statementExplanation": "Woher به معنی 'کجا' است.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "Woher یعنی 'از کجا' (برای مبدا). Wo یعنی 'کجا' (برای مکان فعلی)."
       }
     },
     {
       "type": "translation",
-      "id": "s15",
-      "sourceText": "من اهل ایران هستم. در مونیخ زندگی می‌کنم.",
-      "feedback": {
-        "explanation": "Ich komme aus Iran. Ich wohne in München."
-      },
-      "sentenceTemplate": "{0} {1} {2} {3} {4} {5} {6} {7}",
-      "options": [
-        "Ich",
-        "komme",
-        "aus",
-        "Iran.",
-        "Ich",
-        "wohne",
-        "in",
-        "München."
-      ],
-      "correctAnswers": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7
-      ],
+      "id": "s29",
+      "sourceText": "من اهل ایران هستم.",
+      "sentenceTemplate": "Ich {0} {1} {2}",
+      "options": ["komme", "aus", "Iran.", "wohne", "in"],
+      "correctAnswers": [0, 1, 2],
       "correctTranslation": {
-        "de": "Ich komme aus Iran. Ich wohne in München.",
-        "fa": "من اهل ایران هستم. در مونیخ زندگی می‌کنم."
+        "de": "Ich komme aus Iran.",
+        "fa": "من اهل ایران هستم."
+      },
+      "feedback": {
+        "explanation": "برای گفتن اهل کجا هستید: Ich komme aus + کشور"
+      }
+    },
+    {
+      "type": "matching",
+      "id": "s30",
+      "instruction": "کشورها را با پایتخت‌هایشان تطبیق دهید:",
+      "items": [
+        { "id": "i1", "text": "Deutschland" },
+        { "id": "i2", "text": "Österreich" },
+        { "id": "i3", "text": "die Schweiz" },
+        { "id": "i4", "text": "Iran" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "Berlin" },
+        { "id": "m2", "text": "Wien" },
+        { "id": "m3", "text": "Bern" },
+        { "id": "m4", "text": "Teheran" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"],
+        ["i4", "m4"]
+      ],
+      "shuffleTargets": true,
+      "feedback": {
+        "explanation": "پایتخت‌ها: آلمان-برلین، اتریش-وین، سوئیس-برن، ایران-تهران"
+      }
+    },
+    {
+      "type": "matching",
+      "id": "s31",
+      "instruction": "کلمات پرسشی را با معنی فارسی تطبیق دهید:",
+      "items": [
+        { "id": "i1", "text": "Woher" },
+        { "id": "i2", "text": "Wo" },
+        { "id": "i3", "text": "Wer" },
+        { "id": "i4", "text": "Was" },
+        { "id": "i5", "text": "Wie" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "از کجا" },
+        { "id": "m2", "text": "کجا" },
+        { "id": "m3", "text": "چه کسی" },
+        { "id": "m4", "text": "چه چیزی" },
+        { "id": "m5", "text": "چگونه" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"],
+        ["i4", "m4"],
+        ["i5", "m5"]
+      ],
+      "shuffleTargets": true,
+      "feedback": {
+        "explanation": "این کلمات پرسشی W-Fragen نامیده می‌شوند چون همه با W شروع می‌شوند."
       }
     }
   ]

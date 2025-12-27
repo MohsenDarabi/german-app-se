@@ -7,12 +7,293 @@
   "level": "A1-2",
   "module": 5,
   "lessonNumber": 10,
-  "estimatedMinutes": 18,
+  "estimatedMinutes": 20,
   "steps": [
     {
-      "type": "dialog",
+      "type": "new-word",
       "id": "s1",
+      "word": {
+        "de": "der Bahnhof",
+        "fa": "ایستگاه قطار"
+      },
+      "phonetic": "BAHN-hof",
+      "wordType": "noun",
+      "example": {
+        "text": {
+          "de": "Wo ist der Bahnhof?",
+          "fa": "ایستگاه قطار کجاست؟"
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": {
+        "de": "die Post",
+        "fa": "پست / اداره پست"
+      },
+      "phonetic": "post",
+      "wordType": "noun",
+      "example": {
+        "text": {
+          "de": "Die Post ist neben der Bank.",
+          "fa": "پست کنار بانک است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": {
+        "de": "die Apotheke",
+        "fa": "داروخانه"
+      },
+      "phonetic": "a-po-TAY-ke",
+      "wordType": "noun",
+      "example": {
+        "text": {
+          "de": "Die Apotheke ist in der Nähe.",
+          "fa": "داروخانه نزدیک است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": {
+        "de": "das Krankenhaus",
+        "fa": "بیمارستان"
+      },
+      "phonetic": "KRAN-ken-hows",
+      "wordType": "noun",
+      "example": {
+        "text": {
+          "de": "Das Krankenhaus ist weit von hier.",
+          "fa": "بیمارستان از اینجا دور است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": {
+        "de": "die Straße",
+        "fa": "خیابان"
+      },
+      "phonetic": "SHTRA-se",
+      "wordType": "noun",
+      "example": {
+        "text": {
+          "de": "Nehmen Sie die erste Straße rechts.",
+          "fa": "خیابان اول را بپیچید راست."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": {
+        "de": "die Haltestelle",
+        "fa": "ایستگاه (اتوبوس/ترام)"
+      },
+      "phonetic": "HAL-te-shte-le",
+      "wordType": "noun",
+      "example": {
+        "text": {
+          "de": "Die Bushaltestelle ist vor dem Supermarkt.",
+          "fa": "ایستگاه اتوبوس جلوی سوپرمارکت است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": {
+        "de": "geradeaus",
+        "fa": "مستقیم"
+      },
+      "phonetic": "ge-RA-de-ows",
+      "wordType": "adverb",
+      "example": {
+        "text": {
+          "de": "Gehen Sie geradeaus.",
+          "fa": "مستقیم بروید."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": {
+        "de": "links",
+        "fa": "چپ"
+      },
+      "phonetic": "links",
+      "wordType": "adverb",
+      "example": {
+        "text": {
+          "de": "Biegen Sie links ab.",
+          "fa": "بپیچید چپ."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": {
+        "de": "rechts",
+        "fa": "راست"
+      },
+      "phonetic": "rekhts",
+      "wordType": "adverb",
+      "example": {
+        "text": {
+          "de": "Die Bank ist rechts.",
+          "fa": "بانک سمت راست است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": {
+        "de": "neben",
+        "fa": "کنار"
+      },
+      "phonetic": "NAY-ben",
+      "wordType": "preposition",
+      "example": {
+        "text": {
+          "de": "Die Apotheke ist neben der Post.",
+          "fa": "داروخانه کنار پست است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s11",
+      "word": {
+        "de": "vor",
+        "fa": "جلوی"
+      },
+      "phonetic": "for",
+      "wordType": "preposition",
+      "example": {
+        "text": {
+          "de": "Wir treffen uns vor dem Kino.",
+          "fa": "جلوی سینما همدیگر را می‌بینیم."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s12",
+      "word": {
+        "de": "hinter",
+        "fa": "پشت"
+      },
+      "phonetic": "HIN-ter",
+      "wordType": "preposition",
+      "example": {
+        "text": {
+          "de": "Der Parkplatz ist hinter dem Haus.",
+          "fa": "پارکینگ پشت ساختمان است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s13",
+      "word": {
+        "de": "gegenüber",
+        "fa": "روبروی"
+      },
+      "phonetic": "ge-gen-Ü-ber",
+      "wordType": "preposition",
+      "example": {
+        "text": {
+          "de": "Das Café ist gegenüber der Bank.",
+          "fa": "کافه روبروی بانک است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s14",
+      "word": {
+        "de": "zwischen",
+        "fa": "بین"
+      },
+      "phonetic": "TSVI-shen",
+      "wordType": "preposition",
+      "example": {
+        "text": {
+          "de": "Die Post ist zwischen der Bank und dem Supermarkt.",
+          "fa": "پست بین بانک و سوپرمارکت است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s15",
+      "word": {
+        "de": "weit",
+        "fa": "دور"
+      },
+      "phonetic": "vait",
+      "wordType": "adjective",
+      "example": {
+        "text": {
+          "de": "Ist das weit von hier?",
+          "fa": "از اینجا دور است؟"
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s16",
+      "word": {
+        "de": "zu Fuß",
+        "fa": "پیاده"
+      },
+      "phonetic": "tsoo foos",
+      "wordType": "phrase",
+      "example": {
+        "text": {
+          "de": "Nur fünf Minuten zu Fuß.",
+          "fa": "فقط پنج دقیقه پیاده."
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s17",
+      "title": "جهت‌ها و دستورات",
+      "content": "**جهت‌های اصلی:**\n\n| آلمانی | فارسی |\n|---|---|\n| geradeaus | مستقیم |\n| links | چپ |\n| rechts | راست |\n| zurück | برگشت |\n\n**دستورات (با Sie رسمی):**\n• Gehen Sie geradeaus! = مستقیم بروید!\n• Biegen Sie links ab! = بپیچید چپ!\n• Nehmen Sie die erste Straße rechts! = خیابان اول را بپیچید راست!",
+      "examples": [
+        {
+          "de": "Gehen Sie geradeaus und dann rechts.",
+          "fa": "مستقیم بروید و بعد بپیچید راست."
+        }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s18",
+      "title": "حروف اضافه مکان + Dativ",
+      "content": "وقتی می‌گویید چیزی **کجا** است (مکان ثابت)، از **Dativ** استفاده می‌شود:\n\n| حرف اضافه | معنی | + Dativ |\n|---|---|---|\n| in | در | in der Stadt |\n| an | کنار | am Bahnhof |\n| neben | کنار | neben der Post |\n| vor | جلوی | vor dem Haus |\n| hinter | پشت | hinter dem Park |\n| gegenüber | روبروی | gegenüber der Bank |\n\n**تغییرات Dativ:**\n• der → dem\n• die → der\n• das → dem",
+      "examples": [
+        {
+          "de": "Die Apotheke ist neben der Post.",
+          "fa": "داروخانه کنار پست است. (Post مونث → der)"
+        }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "s19",
       "title": "Nach dem Weg fragen",
+      "instruction": "به این مکالمه درباره آدرس پرسیدن گوش دهید:",
       "lines": [
         {
           "speaker": "Tourist",
@@ -51,214 +332,57 @@
         }
       ],
       "feedback": {
-        "explanation": "در این مکالمه یاد می‌گیریم چگونه آدرس بپرسیم و راهنمایی کنیم."
+        "explanation": "توجه کنید: neben der Post (Post مونث است → der در Dativ)"
       }
-    },
-    {
-      "type": "new-word",
-      "id": "s2",
-      "word": {
-        "de": "der Bahnhof",
-        "fa": "ایستگاه قطار"
-      },
-      "phonetic": "BAHN-hof",
-      "wordType": "noun",
-      "gender": "maskulin",
-      "example": {
-        "text": {
-          "de": "Der Bahnhof ist in der Stadtmitte.",
-          "fa": "ایستگاه قطار در مرکز شهر است."
-        }
-      }
-    },
-    {
-      "type": "new-word",
-      "id": "s3",
-      "word": {
-        "de": "die Post",
-        "fa": "پست / اداره پست"
-      },
-      "phonetic": "post",
-      "wordType": "noun",
-      "gender": "feminin",
-      "example": {
-        "text": {
-          "de": "Die Post ist gegenüber dem Supermarkt.",
-          "fa": "پست روبروی سوپرمارکت است."
-        }
-      }
-    },
-    {
-      "type": "new-word",
-      "id": "s4",
-      "word": {
-        "de": "die Apotheke",
-        "fa": "داروخانه"
-      },
-      "phonetic": "a-po-TAY-ke",
-      "wordType": "noun",
-      "gender": "feminin",
-      "example": {
-        "text": {
-          "de": "Die Apotheke ist neben der Bäckerei.",
-          "fa": "داروخانه کنار نانوایی است."
-        }
-      }
-    },
-    {
-      "type": "new-word",
-      "id": "s5",
-      "word": {
-        "de": "das Krankenhaus",
-        "fa": "بیمارستان"
-      },
-      "phonetic": "KRAN-ken-hows",
-      "wordType": "noun",
-      "gender": "neutral",
-      "example": {
-        "text": {
-          "de": "Das Krankenhaus ist weit von hier.",
-          "fa": "بیمارستان از اینجا دور است."
-        }
-      }
-    },
-    {
-      "type": "grammar-tip",
-      "id": "s6",
-      "title": "جهت‌ها",
-      "content": "**جهت‌های اصلی:**\n\n| آلمانی | فارسی |\n|---|---|\n| geradeaus | مستقیم |\n| links | چپ |\n| rechts | راست |\n| zurück | برگشت |\n\n**دستورات:**\n• Gehen Sie geradeaus! = مستقیم بروید!\n• Biegen Sie links ab! = بپیچید چپ!\n• Nehmen Sie die erste Straße rechts! = خیابان اول را بپیچید راست!",
-      "examples": [
-        {
-          "de": "Gehen Sie geradeaus und dann rechts.",
-          "fa": "مستقیم بروید و بعد بپیچید راست."
-        }
-      ]
     },
     {
       "type": "multiple-choice",
-      "id": "s7",
+      "id": "s20",
       "question": "Gehen Sie _____ und dann links.",
-      "options": [
-        "geradeaus",
-        "links",
-        "neben",
-        "auf"
-      ],
+      "options": ["geradeaus", "neben", "auf", "weit"],
       "correctAnswerIndex": 0,
       "feedback": {
-        "explanation": "آفرین! geradeaus یعنی مستقیم geradeaus = مستقیم"
+        "explanation": "geradeaus = مستقیم. Gehen Sie geradeaus = مستقیم بروید."
       }
     },
     {
-      "type": "grammar-tip",
-      "id": "s8",
-      "title": "حروف اضافه مکان + Dativ",
-      "content": "وقتی می‌گویید چیزی **کجا** است (مکان ثابت)، از Dativ استفاده می‌شود:\n\n| حرف اضافه | معنی | مثال |\n|---|---|---|\n| in | در | in der Stadt |\n| an | کنار/روی | am Bahnhof |\n| auf | روی | auf der Straße |\n| neben | کنار | neben der Post |\n| vor | جلوی | vor dem Haus |\n| hinter | پشت | hinter dem Park |\n| zwischen | بین | zwischen A und B |\n| gegenüber | روبروی | gegenüber der Bank |\n\n**تغییرات Dativ:**\n• der → dem\n• die → der\n• das → dem",
-      "examples": [
-        {
-          "de": "Die Apotheke ist neben der Post.",
-          "fa": "داروخانه کنار پست است."
-        },
-        {
-          "de": "Das Café ist in der Stadtmitte.",
-          "fa": "کافه در مرکز شهر است."
-        }
-      ]
+      "type": "multiple-choice",
+      "id": "s21",
+      "question": "Das Café ist gegenüber _____ Bank.",
+      "options": ["der", "die", "dem", "den"],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "explanation": "Bank مونث است. در Dativ: die → der. gegenüber der Bank"
+      }
     },
     {
       "type": "fill-in-blank",
-      "id": "s9",
+      "id": "s22",
       "instruction": "با حرف اضافه مناسب کامل کنید:",
-      "sentence": "Der Supermarkt ist {0} der Apotheke.",
+      "sentence": "Der Supermarkt ist {0} der Apotheke und der Post.",
+      "options": ["zwischen", "neben", "vor", "hinter", "gegenüber", "in"],
+      "correctAnswers": [0],
       "feedback": {
-        "explanation": "neben + Dativ: neben der Apotheke (Apotheke مونث است)"
-      },
-      "options": [
-        "neben",
-        "neben der",
-        "neben die"
-      ],
-      "correctAnswers": [
-        0
-      ]
-    },
-    {
-      "type": "new-word",
-      "id": "s10",
-      "word": {
-        "de": "die Straße",
-        "fa": "خیابان"
-      },
-      "phonetic": "SHTRA-se",
-      "wordType": "noun",
-      "gender": "feminin",
-      "example": {
-        "text": {
-          "de": "Die erste Straße rechts.",
-          "fa": "خیابان اول سمت راست."
-        }
+        "explanation": "zwischen = بین. zwischen der Apotheke und der Post"
       }
     },
     {
-      "type": "new-word",
-      "id": "s11",
-      "word": {
-        "de": "die Haltestelle",
-        "fa": "ایستگاه (اتوبوس/ترام)"
-      },
-      "phonetic": "HAL-te-shte-le",
-      "wordType": "noun",
-      "gender": "feminin",
-      "example": {
-        "text": {
-          "de": "Die Bushaltestelle ist vor dem Supermarkt.",
-          "fa": "ایستگاه اتوبوس جلوی سوپرمارکت است."
-        }
-      }
-    },
-    {
-      "type": "grammar-tip",
-      "id": "s12",
-      "title": "💡 نکته فرهنگی: حمل و نقل عمومی در آلمان",
-      "content": "حمل و نقل عمومی عالی:\n\n🚇 **U-Bahn** = مترو (زیرزمینی)\n🚃 **S-Bahn** = قطار شهری\n🚋 **Straßenbahn/Tram** = تراموا\n🚌 **Bus** = اتوبوس\n\n🎫 **بلیط:**\n• Einzelfahrt = تک‌سفره\n• Tageskarte = روزانه\n• Monatskarte = ماهانه\n\n⚠️ **مهم:** بلیط را قبل از سوار شدن بخرید و در دستگاه مهر کنید!",
-      "examples": [
-        {
-          "de": "Wo ist die U-Bahn-Station?",
-          "fa": "ایستگاه مترو کجاست؟"
-        }
-      ]
-    },
-    {
-      "type": "multiple-choice",
-      "id": "s13",
-      "question": "Das Café ist _____ Bank. (روبروی بانک)",
-      "options": [
-        "gegenüber der",
-        "gegenüber die",
-        "neben der",
-        "in der"
-      ],
-      "correctAnswerIndex": 0,
+      "type": "fill-in-blank",
+      "id": "s23",
+      "instruction": "جمله را کامل کنید:",
+      "sentence": "Die Bushaltestelle ist {0} dem Supermarkt.",
+      "options": ["vor", "neben", "hinter", "gegenüber", "zwischen", "in"],
+      "correctAnswers": [0],
       "feedback": {
-        "explanation": "درست! gegenüber + Dativ: gegenüber der Bank gegenüber + Dativ: Bank مونث است → der Bank"
+        "explanation": "vor dem Supermarkt = جلوی سوپرمارکت (Supermarkt مذکر → dem)"
       }
     },
     {
       "type": "word-order",
-      "id": "s14",
+      "id": "s24",
       "instruction": "کلمات را مرتب کنید:",
-      "words": [
-        "ist",
-        "Bahnhof",
-        "Wo",
-        "der"
-      ],
-      "correctOrder": [
-        2,
-        0,
-        3,
-        1
-      ],
+      "words": ["ist", "Bahnhof", "Wo", "der"],
+      "correctOrder": [2, 0, 3, 1],
       "correctSentence": {
         "de": "Wo ist der Bahnhof",
         "fa": "ایستگاه قطار کجاست"
@@ -268,32 +392,104 @@
       }
     },
     {
-      "type": "translation",
-      "id": "s15",
-      "sourceText": "داروخانه کنار بیمارستان است.",
+      "type": "grammar-tip",
+      "id": "s25",
+      "title": "💡 نکته فرهنگی: حمل و نقل عمومی در آلمان",
+      "content": "حمل و نقل عمومی عالی:\n\n🚇 **U-Bahn** = مترو (زیرزمینی)\n🚃 **S-Bahn** = قطار شهری\n🚋 **Straßenbahn/Tram** = تراموا\n🚌 **Bus** = اتوبوس\n\n🎫 **بلیط:**\n• Einzelfahrt = تک‌سفره\n• Tageskarte = روزانه\n• Monatskarte = ماهانه\n\n⚠️ **مهم:** بلیط را قبل از سوار شدن بخرید و در دستگاه مهر کنید (entwerten)!\n\n📱 برنامه‌های مفید: DB Navigator, MVV, BVG",
+      "examples": [
+        {
+          "de": "Wo ist die U-Bahn-Station?",
+          "fa": "ایستگاه مترو کجاست؟"
+        }
+      ]
+    },
+    {
+      "type": "true-false",
+      "id": "s26",
+      "statement": "Bei Dativ wird 'die' zu 'der'.",
+      "statementExplanation": "در Dativ، die به der تبدیل می‌شود.",
+      "correctAnswer": true,
       "feedback": {
-        "explanation": "Die Apotheke ist neben dem Krankenhaus. (neben + Dativ: dem)"
-      },
-      "sentenceTemplate": "{0} {1} {2} {3} {4} {5}",
-      "options": [
-        "Die",
-        "Apotheke",
-        "ist",
-        "neben",
-        "dem",
-        "Krankenhaus."
-      ],
-      "correctAnswers": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
+        "explanation": "درست! die Post (Nominativ) → neben der Post (Dativ)"
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "s27",
+      "statement": "'Geradeaus' bedeutet 'links'.",
+      "statementExplanation": "geradeaus یعنی چپ.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "نادرست! geradeaus = مستقیم، links = چپ"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "s28",
+      "sourceText": "داروخانه کنار بیمارستان است.",
+      "sentenceTemplate": "Die Apotheke ist {0} {1} Krankenhaus.",
+      "options": ["neben", "dem", "der", "vor", "das", "hinter"],
+      "correctAnswers": [0, 1],
       "correctTranslation": {
         "de": "Die Apotheke ist neben dem Krankenhaus.",
         "fa": "داروخانه کنار بیمارستان است."
+      },
+      "feedback": {
+        "explanation": "neben + Dativ. Krankenhaus خنثی است → dem"
+      }
+    },
+    {
+      "type": "matching",
+      "id": "s29",
+      "instruction": "مکان‌ها را با معنی فارسی تطبیق دهید:",
+      "items": [
+        { "id": "i1", "text": "der Bahnhof" },
+        { "id": "i2", "text": "die Post" },
+        { "id": "i3", "text": "die Apotheke" },
+        { "id": "i4", "text": "das Krankenhaus" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "ایستگاه قطار" },
+        { "id": "m2", "text": "پست" },
+        { "id": "m3", "text": "داروخانه" },
+        { "id": "m4", "text": "بیمارستان" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"],
+        ["i4", "m4"]
+      ],
+      "shuffleTargets": true,
+      "feedback": {
+        "explanation": "جنسیت اسم‌ها را با حرف تعریف یاد بگیرید!"
+      }
+    },
+    {
+      "type": "matching",
+      "id": "s30",
+      "instruction": "حروف اضافه را با معنی فارسی تطبیق دهید:",
+      "items": [
+        { "id": "i1", "text": "neben" },
+        { "id": "i2", "text": "vor" },
+        { "id": "i3", "text": "hinter" },
+        { "id": "i4", "text": "gegenüber" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "کنار" },
+        { "id": "m2", "text": "جلوی" },
+        { "id": "m3", "text": "پشت" },
+        { "id": "m4", "text": "روبروی" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"],
+        ["i4", "m4"]
+      ],
+      "shuffleTargets": true,
+      "feedback": {
+        "explanation": "این حروف اضافه همیشه با Dativ استفاده می‌شوند."
       }
     }
   ]

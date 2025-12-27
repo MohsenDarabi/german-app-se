@@ -10,76 +10,71 @@
   "estimatedMinutes": 20,
   "steps": [
     {
-      "type": "dialog",
+      "type": "new-word",
       "id": "s1",
-      "title": "Im Möbelgeschäft",
-      "lines": [
-        {
-          "speaker": "Verkäuferin",
-          "text": {
-            "de": "Guten Tag! Kann ich Ihnen helfen?",
-            "fa": "روز بخیر! می‌توانم کمکتان کنم؟"
-          }
-        },
-        {
-          "speaker": "Kunde",
-          "text": {
-            "de": "Ja, ich suche einen Tisch. Wie viel kostet der Tisch dort?",
-            "fa": "بله، دنبال یک میز می‌گردم. آن میز چند است؟"
-          }
-        },
-        {
-          "speaker": "Verkäuferin",
-          "text": {
-            "de": "Der Tisch kostet 199 Euro. Er ist sehr schön, oder?",
-            "fa": "میز ۱۹۹ یورو است. خیلی قشنگه، نه؟"
-          }
-        },
-        {
-          "speaker": "Kunde",
-          "text": {
-            "de": "Ja, er ist schön. Und die Lampe? Was kostet sie?",
-            "fa": "بله، قشنگه. و چراغ؟ چند است؟"
-          }
-        },
-        {
-          "speaker": "Verkäuferin",
-          "text": {
-            "de": "Die Lampe kostet 45 Euro.",
-            "fa": "چراغ ۴۵ یورو است."
-          }
+      "word": {
+        "de": "der",
+        "fa": "حرف تعریف مذکر"
+      },
+      "phonetic": "dair",
+      "wordType": "article",
+      "example": {
+        "text": {
+          "de": "Der Tisch ist groß.",
+          "fa": "میز بزرگ است."
         }
-      ],
-      "feedback": {
-        "explanation": "در این مکالمه یاد می‌گیریم چگونه از حروف تعریف der/die/das استفاده کنیم و قیمت بپرسیم."
+      },
+      "note": {
+        "fa": "برای اسم‌های مذکر (maskulin) استفاده می‌شود."
       }
     },
     {
-      "type": "grammar-tip",
+      "type": "new-word",
       "id": "s2",
-      "title": "حروف تعریف معین: der, die, das",
-      "content": "در آلمانی، هر اسم یک **جنسیت گرامری** دارد:\n\n| جنس | حرف تعریف | ضمیر |\n|---|---|---|\n| مذکر (maskulin) | **der** | er (او) |\n| مونث (feminin) | **die** | sie (او) |\n| خنثی (neutral) | **das** | es (آن) |\n\n⚠️ جنسیت گرامری ربطی به جنسیت واقعی ندارد!\n\n**مثال:** das Mädchen (دختر) خنثی است!",
-      "examples": [
-        {
-          "de": "Der Tisch ist braun. Er ist groß.",
-          "fa": "میز قهوه‌ای است. (آن) بزرگ است."
-        },
-        {
-          "de": "Die Lampe ist neu. Sie ist schön.",
-          "fa": "چراغ نو است. (آن) زیباست."
+      "word": {
+        "de": "die",
+        "fa": "حرف تعریف مونث"
+      },
+      "phonetic": "dee",
+      "wordType": "article",
+      "example": {
+        "text": {
+          "de": "Die Lampe ist neu.",
+          "fa": "چراغ نو است."
         }
-      ]
+      },
+      "note": {
+        "fa": "برای اسم‌های مونث (feminin) استفاده می‌شود."
+      }
     },
     {
       "type": "new-word",
       "id": "s3",
+      "word": {
+        "de": "das",
+        "fa": "حرف تعریف خنثی"
+      },
+      "phonetic": "das",
+      "wordType": "article",
+      "example": {
+        "text": {
+          "de": "Das Buch ist interessant.",
+          "fa": "کتاب جالب است."
+        }
+      },
+      "note": {
+        "fa": "برای اسم‌های خنثی (neutral) استفاده می‌شود."
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
       "word": {
         "de": "der Tisch",
         "fa": "میز"
       },
       "phonetic": "tish",
       "wordType": "noun",
-      "gender": "maskulin",
       "example": {
         "text": {
           "de": "Der Tisch ist aus Holz.",
@@ -89,14 +84,29 @@
     },
     {
       "type": "new-word",
-      "id": "s4",
+      "id": "s5",
+      "word": {
+        "de": "der Stuhl",
+        "fa": "صندلی"
+      },
+      "phonetic": "shtool",
+      "wordType": "noun",
+      "example": {
+        "text": {
+          "de": "Der Stuhl ist bequem.",
+          "fa": "صندلی راحت است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
       "word": {
         "de": "die Lampe",
         "fa": "چراغ / لامپ"
       },
       "phonetic": "LAM-pe",
       "wordType": "noun",
-      "gender": "feminin",
       "example": {
         "text": {
           "de": "Die Lampe ist sehr hell.",
@@ -106,14 +116,45 @@
     },
     {
       "type": "new-word",
-      "id": "s5",
+      "id": "s7",
+      "word": {
+        "de": "die Tür",
+        "fa": "در"
+      },
+      "phonetic": "tür",
+      "wordType": "noun",
+      "example": {
+        "text": {
+          "de": "Die Tür ist offen.",
+          "fa": "در باز است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": {
+        "de": "das Bett",
+        "fa": "تخت"
+      },
+      "phonetic": "bet",
+      "wordType": "noun",
+      "example": {
+        "text": {
+          "de": "Das Bett ist neu.",
+          "fa": "تخت نو است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
       "word": {
         "de": "das Sofa",
         "fa": "کاناپه / مبل"
       },
       "phonetic": "ZO-fa",
       "wordType": "noun",
-      "gender": "neutral",
       "example": {
         "text": {
           "de": "Das Sofa ist sehr bequem.",
@@ -123,58 +164,121 @@
     },
     {
       "type": "new-word",
-      "id": "s6",
+      "id": "s10",
       "word": {
-        "de": "der Stuhl",
-        "fa": "صندلی"
+        "de": "das Fenster",
+        "fa": "پنجره"
       },
-      "phonetic": "shtool",
+      "phonetic": "FENS-ter",
       "wordType": "noun",
-      "gender": "maskulin",
       "example": {
         "text": {
-          "de": "Der Stuhl ist kaputt.",
-          "fa": "صندلی خراب است."
+          "de": "Das Fenster ist groß.",
+          "fa": "پنجره بزرگ است."
         }
       }
     },
     {
       "type": "new-word",
-      "id": "s7",
+      "id": "s11",
       "word": {
-        "de": "das Bett",
-        "fa": "تخت"
+        "de": "groß",
+        "fa": "بزرگ"
       },
-      "phonetic": "bet",
-      "wordType": "noun",
-      "gender": "neutral",
+      "phonetic": "grohs",
+      "wordType": "adjective",
       "example": {
         "text": {
-          "de": "Das Bett ist neu.",
-          "fa": "تخت نو است."
+          "de": "Der Tisch ist groß.",
+          "fa": "میز بزرگ است."
         }
       }
     },
     {
-      "type": "multiple-choice",
-      "id": "s8",
-      "question": "_____ Lampe ist schön.",
-      "options": [
-        "Die",
-        "Der",
-        "Das",
-        "Den"
-      ],
-      "correctAnswerIndex": 0,
-      "feedback": {
-        "explanation": "آفرین! Lampe مونث است → die Lampe Lampe مونث است، پس die Lampe"
+      "type": "new-word",
+      "id": "s12",
+      "word": {
+        "de": "klein",
+        "fa": "کوچک"
+      },
+      "phonetic": "klain",
+      "wordType": "adjective",
+      "example": {
+        "text": {
+          "de": "Die Lampe ist klein.",
+          "fa": "چراغ کوچک است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s13",
+      "word": {
+        "de": "neu",
+        "fa": "نو / جدید"
+      },
+      "phonetic": "noy",
+      "wordType": "adjective",
+      "example": {
+        "text": {
+          "de": "Das Sofa ist neu.",
+          "fa": "کاناپه نو است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s14",
+      "word": {
+        "de": "schön",
+        "fa": "زیبا / قشنگ"
+      },
+      "phonetic": "shön",
+      "wordType": "adjective",
+      "example": {
+        "text": {
+          "de": "Die Lampe ist schön.",
+          "fa": "چراغ زیباست."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s15",
+      "word": {
+        "de": "teuer",
+        "fa": "گران"
+      },
+      "phonetic": "TOY-er",
+      "wordType": "adjective",
+      "example": {
+        "text": {
+          "de": "Der Tisch ist teuer.",
+          "fa": "میز گران است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s16",
+      "word": {
+        "de": "billig",
+        "fa": "ارزان"
+      },
+      "phonetic": "BI-likh",
+      "wordType": "adjective",
+      "example": {
+        "text": {
+          "de": "Der Stuhl ist billig.",
+          "fa": "صندلی ارزان است."
+        }
       }
     },
     {
       "type": "grammar-tip",
-      "id": "s9",
-      "title": "رنگ‌ها در آلمانی",
-      "content": "رنگ‌های اصلی:\n\n🔴 **rot** - قرمز\n🔵 **blau** - آبی\n🟢 **grün** - سبز\n🟡 **gelb** - زرد\n⚫ **schwarz** - سیاه\n⚪ **weiß** - سفید\n🟤 **braun** - قهوه‌ای\n🟠 **orange** - نارنجی\n🟣 **lila** - بنفش\n⬜ **grau** - خاکستری",
+      "id": "s17",
+      "title": "سه جنسیت در آلمانی",
+      "content": "در آلمانی، هر اسم یک **جنسیت گرامری** دارد:\n\n| جنس | حرف تعریف | مثال |\n|---|---|---|\n| مذکر (maskulin) | **der** | der Tisch, der Stuhl |\n| مونث (feminin) | **die** | die Lampe, die Tür |\n| خنثی (neutral) | **das** | das Bett, das Sofa |\n\n⚠️ **مهم:** جنسیت گرامری ربطی به جنسیت واقعی ندارد!\n\n**مثال:** das Mädchen (دختر) خنثی است!",
       "examples": [
         {
           "de": "Der Tisch ist braun.",
@@ -187,62 +291,120 @@
       ]
     },
     {
-      "type": "fill-in-blank",
-      "id": "s10",
-      "instruction": "با der, die یا das کامل کنید:",
-      "sentence": "{0} Sofa ist grau und {1} Stuhl ist schwarz.",
-      "feedback": {
-        "explanation": "Sofa خنثی (das) و Stuhl مذکر (der) است."
-      },
-      "options": [
-        "Das",
-        "Die",
-        "Der",
-        "der",
-        "die",
-        "das"
-      ],
-      "correctAnswers": [
-        0,
-        3
-      ]
-    },
-    {
       "type": "grammar-tip",
-      "id": "s11",
-      "title": "صفت‌های توصیفی",
-      "content": "صفت‌های رایج برای توصیف اشیا:\n\n| آلمانی | فارسی |\n|---|---|\n| schön | زیبا |\n| groß | بزرگ |\n| klein | کوچک |\n| neu | نو |\n| alt | قدیمی |\n| teuer | گران |\n| billig | ارزان |\n| bequem | راحت |\n\n**ساختار:** Subject + ist + Adjektiv",
+      "id": "s18",
+      "title": "نکات مهم برای یادگیری جنسیت",
+      "content": "**قواعد کمکی:**\n\n🔵 معمولاً **der** (مذکر):\n• روزها: der Montag, der Dienstag\n• ماه‌ها: der Januar, der Februar\n• فصل‌ها: der Frühling, der Sommer\n\n🔴 معمولاً **die** (مونث):\n• اعداد: die Eins, die Zwei\n• کلمات با پسوند -ung, -heit, -keit\n\n🟢 معمولاً **das** (خنثی):\n• کلمات با پسوند -chen, -lein\n• حروف الفبا: das A, das B\n\n💡 **بهترین روش:** اسم را همیشه با حرف تعریفش یاد بگیرید!",
       "examples": [
         {
-          "de": "Das Sofa ist bequem.",
-          "fa": "کاناپه راحت است."
-        },
-        {
-          "de": "Der Tisch ist teuer.",
-          "fa": "میز گران است."
+          "de": "das Mädchen (نه die Mädchen)",
+          "fa": "دختر - خنثی چون پسوند -chen دارد"
         }
       ]
     },
     {
-      "type": "multiple-choice",
-      "id": "s12",
-      "question": "_____ Bett ist sehr bequem.",
-      "options": [
-        "Das",
-        "Die",
-        "Der",
-        "Den"
+      "type": "dialog",
+      "id": "s19",
+      "title": "در فروشگاه مبل",
+      "instruction": "به این مکالمه گوش دهید:",
+      "lines": [
+        {
+          "speaker": "Verkäuferin",
+          "text": {
+            "de": "Guten Tag! Kann ich Ihnen helfen?",
+            "fa": "روز بخیر! می‌توانم کمکتان کنم؟"
+          }
+        },
+        {
+          "speaker": "Kunde",
+          "text": {
+            "de": "Ja, wie viel kostet der Tisch?",
+            "fa": "بله، میز چند است؟"
+          }
+        },
+        {
+          "speaker": "Verkäuferin",
+          "text": {
+            "de": "Der Tisch kostet 199 Euro. Er ist sehr schön, oder?",
+            "fa": "میز ۱۹۹ یورو است. خیلی قشنگه، نه؟"
+          }
+        },
+        {
+          "speaker": "Kunde",
+          "text": {
+            "de": "Ja, er ist schön. Und die Lampe?",
+            "fa": "بله، قشنگه. و چراغ؟"
+          }
+        },
+        {
+          "speaker": "Verkäuferin",
+          "text": {
+            "de": "Die Lampe kostet 45 Euro. Sie ist neu.",
+            "fa": "چراغ ۴۵ یورو است. نو است."
+          }
+        }
       ],
+      "feedback": {
+        "explanation": "توجه کنید: der Tisch → er (او/آن)، die Lampe → sie (او/آن)"
+      }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s20",
+      "question": "_____ Lampe ist schön.",
+      "options": ["Die", "Der", "Das", "Den"],
       "correctAnswerIndex": 0,
       "feedback": {
-        "explanation": "درست! Bett خنثی است → das Bett Bett خنثی است، پس das Bett"
+        "explanation": "Lampe مونث است → die Lampe"
+      }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s21",
+      "question": "_____ Bett ist sehr bequem.",
+      "options": ["Das", "Die", "Der", "Den"],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "explanation": "Bett خنثی است → das Bett"
+      }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s22",
+      "question": "_____ Stuhl ist neu.",
+      "options": ["Der", "Die", "Das", "Den"],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "explanation": "Stuhl مذکر است → der Stuhl"
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s23",
+      "instruction": "با der, die یا das کامل کنید:",
+      "sentence": "{0} Sofa ist grau und {1} Stuhl ist schwarz.",
+      "options": ["Das", "Die", "Der", "den", "die", "der"],
+      "correctAnswers": [0, 2],
+      "feedback": {
+        "explanation": "Sofa خنثی (das) و Stuhl مذکر (der) است."
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s24",
+      "instruction": "جمله را کامل کنید:",
+      "sentence": "{0} Tisch ist groß. {1} Lampe ist klein.",
+      "options": ["Der", "Die", "Das", "Ein", "Eine"],
+      "correctAnswers": [0, 1],
+      "feedback": {
+        "explanation": "Tisch مذکر (der) و Lampe مونث (die) است."
       }
     },
     {
       "type": "grammar-tip",
-      "id": "s13",
+      "id": "s25",
       "title": "💡 نکته فرهنگی: خرید مبل در آلمان",
-      "content": "نکات مهم برای ایرانیان:\n\n🏠 **آپارتمان‌های آلمانی** معمولاً بدون مبل اجاره می‌شوند!\n\n🍳 **آشپزخانه:** گاهی حتی آشپزخانه هم ندارند (Einbauküche)\n\n🛋️ **IKEA** محبوب‌ترین فروشگاه مبل است\n\n💶 **قیمت‌ها:** معمولاً شامل مالیات (MwSt) هستند\n\n📦 **حمل:** معمولاً باید خودتان ترتیب دهید",
+      "content": "نکات مهم برای ایرانیان:\n\n🏠 **آپارتمان‌های آلمانی** معمولاً بدون مبل اجاره می‌شوند!\n\n🍳 **آشپزخانه:** گاهی حتی آشپزخانه هم ندارند\n\n🛋️ **IKEA** محبوب‌ترین فروشگاه مبل است\n\n💶 **قیمت‌ها:** معمولاً شامل مالیات (MwSt) هستند\n\n📦 **حمل:** معمولاً باید خودتان ترتیب دهید",
       "examples": [
         {
           "de": "Die Wohnung ist ohne Möbel.",
@@ -252,20 +414,10 @@
     },
     {
       "type": "word-order",
-      "id": "s14",
+      "id": "s26",
       "instruction": "کلمات را مرتب کنید:",
-      "words": [
-        "schön",
-        "Lampe",
-        "ist",
-        "Die"
-      ],
-      "correctOrder": [
-        3,
-        1,
-        2,
-        0
-      ],
+      "words": ["schön", "Lampe", "ist", "Die"],
+      "correctOrder": [3, 1, 2, 0],
       "correctSentence": {
         "de": "Die Lampe ist schön",
         "fa": "چراغ زیباست"
@@ -275,47 +427,99 @@
       }
     },
     {
-      "type": "translation",
-      "id": "s15",
-      "sourceText": "میز بزرگ است. صندلی کوچک است.",
+      "type": "true-false",
+      "id": "s27",
+      "statement": "Das Mädchen ist neutral, obwohl es 'Mädchen' (Mädchen = Mädchen) bedeutet.",
+      "statementExplanation": "«das Mädchen» خنثی است، با وجود اینکه به معنی دختر است.",
+      "correctAnswer": true,
       "feedback": {
-        "explanation": "Der Tisch ist groß. Der Stuhl ist klein."
-      },
-      "sentenceTemplate": "{0} {1} {2} {3} {4} {5} {6} {7}",
-      "options": [
-        "Der",
-        "Tisch",
-        "ist",
-        "groß.",
-        "Der",
-        "Stuhl",
-        "ist",
-        "klein."
-      ],
-      "correctAnswers": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7
-      ],
-      "correctTranslation": {
-        "de": "Der Tisch ist groß. Der Stuhl ist klein.",
-        "fa": "میز بزرگ است. صندلی کوچک است."
+        "explanation": "درست! پسوند -chen همیشه خنثی است: das Mädchen, das Brötchen"
       }
     },
     {
       "type": "true-false",
-      "id": "s16",
-      "statement": "'Das Mädchen' ist neutral, obwohl Mädchen ein Mädchen (weiblich) bedeutet.",
-      "correctAnswer": true,
+      "id": "s28",
+      "statement": "Lampe ist maskulin.",
+      "statementExplanation": "Lampe مذکر است.",
+      "correctAnswer": false,
       "feedback": {
-        "explanation": "درست! جنسیت گرامری همیشه با جنسیت واقعی مطابقت ندارد. das Mädchen خنثی است! بله درست است! das Mädchen خنثی است چون پسوند -chen همیشه خنثی است."
+        "explanation": "نادرست! Lampe مونث است: die Lampe"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "s29",
+      "sourceText": "میز بزرگ است.",
+      "sentenceTemplate": "{0} Tisch ist {1}.",
+      "options": ["Der", "Die", "Das", "groß", "klein", "schön"],
+      "correctAnswers": [0, 3],
+      "correctTranslation": {
+        "de": "Der Tisch ist groß.",
+        "fa": "میز بزرگ است."
       },
-      "statementExplanation": "«das Mädchen» خنثی است، با وجود اینکه Mädchen به معنی دختر است."
+      "feedback": {
+        "explanation": "Tisch مذکر است → Der Tisch. groß = بزرگ"
+      }
+    },
+    {
+      "type": "matching",
+      "id": "s30",
+      "instruction": "اسم‌ها را با حرف تعریف صحیح تطبیق دهید:",
+      "items": [
+        { "id": "i1", "text": "Tisch" },
+        { "id": "i2", "text": "Lampe" },
+        { "id": "i3", "text": "Bett" },
+        { "id": "i4", "text": "Stuhl" },
+        { "id": "i5", "text": "Tür" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "der (مذکر)" },
+        { "id": "m2", "text": "die (مونث)" },
+        { "id": "m3", "text": "das (خنثی)" },
+        { "id": "m4", "text": "der (مذکر)" },
+        { "id": "m5", "text": "die (مونث)" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"],
+        ["i4", "m4"],
+        ["i5", "m5"]
+      ],
+      "shuffleTargets": true,
+      "feedback": {
+        "explanation": "der Tisch, die Lampe, das Bett, der Stuhl, die Tür"
+      }
+    },
+    {
+      "type": "matching",
+      "id": "s31",
+      "instruction": "صفت‌های آلمانی را با معنی فارسی تطبیق دهید:",
+      "items": [
+        { "id": "i1", "text": "groß" },
+        { "id": "i2", "text": "klein" },
+        { "id": "i3", "text": "neu" },
+        { "id": "i4", "text": "schön" },
+        { "id": "i5", "text": "teuer" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "بزرگ" },
+        { "id": "m2", "text": "کوچک" },
+        { "id": "m3", "text": "نو" },
+        { "id": "m4", "text": "زیبا" },
+        { "id": "m5", "text": "گران" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"],
+        ["i4", "m4"],
+        ["i5", "m5"]
+      ],
+      "shuffleTargets": true,
+      "feedback": {
+        "explanation": "این صفت‌های پایه‌ای برای توصیف اشیا استفاده می‌شوند."
+      }
     }
   ]
 }
