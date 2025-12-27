@@ -22,6 +22,8 @@
  *   --force         Regenerate all audio (ignore manifest)
  *   --status        Show usage stats only
  *   --level=A1      Filter to specific level (e.g., A1, A2, B1)
+ *   --clean-level   Delete existing audio files for the level before regenerating
+ *                   (requires --level=XX, fixes audio/content mismatch after reimport)
  */
 
 const fs = require('fs');
@@ -462,6 +464,7 @@ async function main() {
   const dryRun = args.includes('--dry-run');
   const forceRegenerate = args.includes('--force');
   const statusOnly = args.includes('--status');
+  const cleanLevel = args.includes('--clean-level');
   const levelFilter = args.find(a => a.startsWith('--level='))?.split('=')[1];
 
   // Load tracking data
@@ -536,6 +539,43 @@ async function main() {
     process.exit(1);
   }
 
+  // Clean level option: delete existing audio files and clear manifest for this level
+  if (cleanLevel && levelFilter) {
+    console.log(`🧹 CLEAN MODE - Removing old audio files for level: ${levelFilter}\n`);
+
+    const lessonIds = lessons.map(({ lesson }) => lesson.id);
+    let deletedFiles = 0;
+    let deletedDirs = 0;
+
+    // Delete audio directories for each lesson
+    for (const lessonId of lessonIds) {
+      const audioDir = path.join(CONFIG.outputDir, lessonId);
+      if (fs.existsSync(audioDir)) {
+        const files = fs.readdirSync(audioDir);
+        for (const file of files) {
+          fs.unlinkSync(path.join(audioDir, file));
+          deletedFiles++;
+        }
+        fs.rmdirSync(audioDir);
+        deletedDirs++;
+      }
+
+      // Clear fileMapping for this lesson
+      if (manifest.fileMapping[lessonId]) {
+        delete manifest.fileMapping[lessonId];
+      }
+    }
+
+    // Save updated manifest
+    saveManifest(manifest);
+
+    console.log(`   Deleted ${deletedFiles} audio files from ${deletedDirs} directories`);
+    console.log(`   Cleared manifest fileMapping for ${lessonIds.length} lessons\n`);
+  } else if (cleanLevel && !levelFilter) {
+    console.log('⚠️  --clean-level requires --level=XX to be specified\n');
+    process.exit(1);
+  }
+
   // Extract all audio items
   const allItems = [];
   for (const { lesson } of lessons) {
@@ -574,12 +614,22 @@ async function main() {
       if (fs.existsSync(sourceFile)) {
         for (const item of items) {
           const destPath = path.join(CONFIG.outputDir, item.lessonId, `${item.id}.mp3`);
-          if (!fs.existsSync(destPath)) {
-            const destDir = path.dirname(destPath);
-            if (!fs.existsSync(destDir)) {
-              fs.mkdirSync(destDir, { recursive: true });
-            }
+          const destDir = path.dirname(destPath);
+          if (!fs.existsSync(destDir)) {
+            fs.mkdirSync(destDir, { recursive: true });
+          }
+
+          // Check if file needs updating: either doesn't exist or mapping changed
+          const currentMapping = manifest.fileMapping[item.lessonId]?.[item.id];
+          const needsUpdate = !fs.existsSync(destPath) || currentMapping !== hash;
+
+          if (needsUpdate) {
             fs.copyFileSync(sourceFile, destPath);
+            // Update fileMapping
+            if (!manifest.fileMapping[item.lessonId]) {
+              manifest.fileMapping[item.lessonId] = {};
+            }
+            manifest.fileMapping[item.lessonId][item.id] = hash;
           }
         }
       }
@@ -619,6 +669,8 @@ async function main() {
   }
 
   if (textsToGenerate.length === 0) {
+    // Save manifest in case fileMapping was updated for existing texts
+    saveManifest(manifest);
     console.log('✅ All audio already generated! Nothing to do.\n');
     return;
   }
