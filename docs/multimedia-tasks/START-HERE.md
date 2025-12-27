@@ -16,13 +16,544 @@
 
 | Total | Images | Videos | Pending | Complete |
 |-------|--------|--------|---------|----------|
-| 205 | 189 | 16 | 205 | 0 |
+| 302 | 274 | 28 | 302 | 0 |
+
+---
+
+## Transport (Verkehrsmittel)
+
+**65 images, 10 videos**
+
+### 🖼️ img-two-business-professionals
+
+- [ ] **Two business professionals (man and woman) shaking hands in an office lobby. Formal attire, profe...**
+- Used in: A1.1-M01-L01
+- Save to: `apps/web/static/images/shared/transport/img-two-business-professionals.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-person-waving-goodbye
+
+- [ ] **Person waving goodbye at a train station or office door. Professional context, slightly formal.**
+- Used in: A1.1-M01-L01
+- Save to: `apps/web/static/images/shared/transport/img-person-waving-goodbye.jpg`
+- Specs: 800x600 jpg
+
+### 🎬 vid-two-business-professionals
+
+- [ ] **Two business professionals (Mr. Schmidt and Mr. Ahmadi) meeting for the first time. They shake ha...**
+- Used in: A1.1-M01-L01
+- Save to: `apps/web/static/videos/shared/transport/vid-two-business-professionals.mp4`
+- Specs: 15-20 seconds mp4 1080p
+
+### 🖼️ img-two-business-professionals-1
+
+- [ ] **Two business professionals (Frau Schmidt and Herr Ahmadi) having a formal conversation in an offi...**
+- Used in: A1.1-M01-L03
+- Save to: `apps/web/static/images/shared/transport/img-two-business-professionals-1.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-professional-networking-event
+
+- [ ] **Professional networking event - two business people (Herr Müller and Frau Ahmadi) exchanging busi...**
+- Used in: A1.1-M02-L03
+- Save to: `apps/web/static/images/shared/transport/img-professional-networking-event.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-engineer-with-hard
+
+- [ ] **Engineer with hard hat at construction site or in office with blueprints/technical drawings.**
+- Used in: A1.1-M02-L03
+- Save to: `apps/web/static/images/shared/transport/img-engineer-with-hard.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-programmerdeveloper-computer-with
+
+- [ ] **Programmer/developer at computer with code on screen. Modern office or home office setting.**
+- Used in: A1.1-M02-L03
+- Save to: `apps/web/static/images/shared/transport/img-programmerdeveloper-computer-with.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-father-with-child
+
+- [ ] **Father with child or in family setting. Caring, protective image.**
+- Used in: A1.1-M02-L04
+- Save to: `apps/web/static/images/shared/transport/img-father-with-child.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-two-colleagues-lisa
+
+- [ ] **Two colleagues (Lisa and Tom) having a casual conversation in an office break room or cafe. They ...**
+- Used in: A1.1-M03-L07
+- Save to: `apps/web/static/images/shared/transport/img-two-colleagues-lisa.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-traditional-german-breakfast
+
+- [ ] **Traditional German breakfast (das Frühstück) spread on a table: bread rolls (Brötchen), butter, j...**
+- Used in: A1.1-M03-L07
+- Save to: `apps/web/static/images/shared/transport/img-traditional-german-breakfast.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-professional-person-business
+
+- [ ] **Professional person (business casual attire) walking toward office building entrance in the morni...**
+- Used in: A1.1-M03-L07
+- Save to: `apps/web/static/images/shared/transport/img-professional-person-business.jpg`
+- Specs: 800x600 jpg
+
+### 🎬 vid-two-colleagues-meeting
+
+- [ ] **Two colleagues meeting in office break room. Dialog: 'Wann stehst du morgens auf?' - 'Ich stehe u...**
+- Used in: A1.1-M03-L07
+- Save to: `apps/web/static/videos/shared/transport/vid-two-colleagues-meeting.mp4`
+- Specs: 20-25 seconds mp4 1080p
+
+### 🖼️ img-woman-applying-makeup
+
+- [ ] **Woman applying makeup at vanity or bathroom mirror. Makeup brushes and cosmetics visible on count...**
+- Used in: A1.1-M03-L08
+- Save to: `apps/web/static/images/shared/transport/img-woman-applying-makeup.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-close-up-refreshing-glass
+
+- [ ] **Close-up of a refreshing glass of Apfelschorle (apple spritzer) with condensation on the glass, a...**
+- Used in: A1.2-M04-L09
+- Save to: `apps/web/static/images/shared/transport/img-close-up-refreshing-glass.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-coffee-service-items
+
+- [ ] **Coffee service items: milk pitcher (Milch) and sugar bowl (Zucker) on a cafe table with coffee cu...**
+- Used in: A1.2-M04-L10
+- Save to: `apps/web/static/images/shared/transport/img-coffee-service-items.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-customer-paying-bill
+
+- [ ] **Customer paying bill at cafe. Waiter presenting check/receipt in leather bill holder. Cash and ca...**
+- Used in: A1.2-M04-L10
+- Save to: `apps/web/static/images/shared/transport/img-customer-paying-bill.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-sara-and-ali
+
+- [ ] **Sara and Ali in a German supermarket aisle with shopping cart. They're selecting fresh produce (f...**
+- Used in: A1.2-M04-L11
+- Save to: `apps/web/static/images/shared/transport/img-sara-and-ali.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-fresh-vegetables-gemuese
+
+- [ ] **Fresh vegetables (Gemüse) display: tomatoes, carrots, broccoli, peppers, lettuce, cucumbers. Orga...**
+- Used in: A1.2-M04-L11
+- Save to: `apps/web/static/images/shared/transport/img-fresh-vegetables-gemuese.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-exterior-view-german
+
+- [ ] **Exterior view of a German Bahnhof (train station). Modern glass and steel architecture typical of...**
+- Used in: A1.2-M05-L11
+- Save to: `apps/web/static/images/shared/transport/img-exterior-view-german.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-german-post-office
+
+- [ ] **German post office (Die Post) exterior. Yellow Deutsche Post logo prominent. Modern service cente...**
+- Used in: A1.2-M05-L11
+- Save to: `apps/web/static/images/shared/transport/img-german-post-office.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-german-supermarket-supermarkt
+
+- [ ] **German supermarket (Supermarkt) exterior. Popular chain like REWE, EDEKA, or Aldi. Shopping carts...**
+- Used in: A1.2-M05-L11
+- Save to: `apps/web/static/images/shared/transport/img-german-supermarket-supermarkt.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-german-intersection-kreuzung
+
+- [ ] **German intersection (Kreuzung) from above or street level. Four-way crossing with crosswalks. Tra...**
+- Used in: A1.2-M05-L12
+- Save to: `apps/web/static/images/shared/transport/img-german-intersection-kreuzung.jpg`
+- Specs: 800x600 jpg
+
+### 🎬 vid-mina-asks-man
+
+- [ ] **Mina asks a man for directions on a German street. Mina: 'Entschuldigung, wie komme ich zur U-Bah...**
+- Used in: A1.2-M05-L12
+- Save to: `apps/web/static/videos/shared/transport/vid-mina-asks-man.mp4`
+- Specs: 20-25 seconds mp4 1080p
+
+### 🖼️ img-lisa-and-armin
+
+- [ ] **Lisa and Armin having a conversation at a German transit station or street. Both in commuter clot...**
+- Used in: A1.2-M05-L13
+- Save to: `apps/web/static/images/shared/transport/img-lisa-and-armin.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-german-u-bahn-subway
+
+- [ ] **German U-Bahn (subway) train at platform. Modern yellow Berlin U-Bahn or Hamburg subway. U-Bahn l...**
+- Used in: A1.2-M05-L13
+- Save to: `apps/web/static/images/shared/transport/img-german-u-bahn-subway.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-german-city-bus
+
+- [ ] **German city bus (Bus) at bus stop. Modern public bus with route number. Green/yellow color scheme...**
+- Used in: A1.2-M05-L13
+- Save to: `apps/web/static/images/shared/transport/img-german-city-bus.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-german-s-bahn-train
+
+- [ ] **German S-Bahn train at station platform. Red and cream colored S-Bahn typical of German cities. L...**
+- Used in: A1.2-M05-L13
+- Save to: `apps/web/static/images/shared/transport/img-german-s-bahn-train.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-german-strassenbahn-tram
+
+- [ ] **German Straßenbahn (tram) on city street. Modern yellow or red tram with overhead electric wires....**
+- Used in: A1.2-M05-L13
+- Save to: `apps/web/static/images/shared/transport/img-german-strassenbahn-tram.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-person-riding-bicycle
+
+- [ ] **Person riding a bicycle (Fahrrad) on German bicycle lane. Dedicated bike path with bicycle symbol...**
+- Used in: A1.2-M05-L13
+- Save to: `apps/web/static/images/shared/transport/img-person-riding-bicycle.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-german-car-auto
+
+- [ ] **German car (Auto) on city street. Modern vehicle, could be popular German brand (VW, BMW, Mercede...**
+- Used in: A1.2-M05-L13
+- Save to: `apps/web/static/images/shared/transport/img-german-car-auto.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-german-ice-high-speed
+
+- [ ] **German ICE high-speed train (Zug) at station platform. Sleek white ICE train with Deutsche Bahn l...**
+- Used in: A1.2-M05-L13
+- Save to: `apps/web/static/images/shared/transport/img-german-ice-high-speed.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-german-taxi-taxi
+
+- [ ] **German taxi at taxi stand. Cream/beige colored taxi with 'TAXI' sign on roof illuminated. Mercede...**
+- Used in: A1.2-M05-L13
+- Save to: `apps/web/static/images/shared/transport/img-german-taxi-taxi.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-german-airport-flughafen
+
+- [ ] **German airport (Flughafen) terminal exterior or interior. Modern airport building with airplane v...**
+- Used in: A1.2-M05-L13
+- Save to: `apps/web/static/images/shared/transport/img-german-airport-flughafen.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-german-bustram-stop
+
+- [ ] **German bus/tram stop (Haltestelle) with yellow sign. Information board showing routes and times. ...**
+- Used in: A1.2-M05-L13
+- Save to: `apps/web/static/images/shared/transport/img-german-bustram-stop.jpg`
+- Specs: 800x600 jpg
+
+### 🎬 vid-lisa-and-armin
+
+- [ ] **Lisa and Armin at a German transit station. Lisa: 'Wie kommst du jeden Tag zur Arbeit?' Armin: 'I...**
+- Used in: A1.2-M05-L13
+- Save to: `apps/web/static/videos/shared/transport/vid-lisa-and-armin.mp4`
+- Specs: 25-30 seconds mp4 1080p
+
+### 🎬 vid-customer-german-train
+
+- [ ] **Customer at German train station information counter. Kunde: 'Entschuldigung, fährt dieser Zug na...**
+- Used in: A1.2-M05-L13
+- Save to: `apps/web/static/videos/shared/transport/vid-customer-german-train.mp4`
+- Specs: 15-20 seconds mp4 1080p
+
+### 🎬 vid-anna-looking-for
+
+- [ ] **Anna is looking for her brother at a busy location (like a train station or university campus). S...**
+- Used in: A1.1-M06-L13
+- Save to: `apps/web/static/videos/shared/transport/vid-anna-looking-for.mp4`
+- Specs: 20-25 seconds mp4 1080p
+
+### 🖼️ img-light-bag-leichte
+
+- [ ] **A light bag (leichte Tasche) being easily held with one finger or carried effortlessly, showing l...**
+- Used in: A1.1-M06-L14
+- Save to: `apps/web/static/images/shared/transport/img-light-bag-leichte.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-expensive-car-teures
+
+- [ ] **An expensive car (teures Auto) - luxury vehicle like a Mercedes or BMW with price tag visible or ...**
+- Used in: A1.1-M06-L14
+- Save to: `apps/web/static/images/shared/transport/img-expensive-car-teures.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-affordablecheap-phone-guenstiges
+
+- [ ] **An affordable/cheap phone (günstiges Handy) with a sale tag or affordable price tag, simple model.**
+- Used in: A1.1-M06-L14
+- Save to: `apps/web/static/images/shared/transport/img-affordablecheap-phone-guenstiges.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-two-friends-maria
+
+- [ ] **Two friends (Maria and Peter) chatting in an office break room or cafe. Peter has just returned f...**
+- Used in: A2-1-M07-L01
+- Save to: `apps/web/static/images/shared/transport/img-two-friends-maria.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-beautiful-italian-scenic
+
+- [ ] **Beautiful Italian scenic view - Colosseum in Rome or Venice canals with gondolas. Iconic Italian ...**
+- Used in: A2-1-M07-L01
+- Save to: `apps/web/static/images/shared/transport/img-beautiful-italian-scenic.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-family-couple-with
+
+- [ ] **Family or couple with luggage at a travel destination - airport arrival area or hotel entrance. H...**
+- Used in: A2-1-M07-L01
+- Save to: `apps/web/static/images/shared/transport/img-family-couple-with.jpg`
+- Specs: 800x600 jpg
+
+### 🎬 vid-maria-and-peter
+
+- [ ] **Maria and Peter having a conversation after Peter's return from Italy. Scene 1: Office setting. M...**
+- Used in: A2-1-M07-L01
+- Save to: `apps/web/static/videos/shared/transport/vid-maria-and-peter.mp4`
+- Specs: 20-25 seconds mp4 1080p
+
+### 🖼️ img-airport-information-desk
+
+- [ ] **Airport information desk scene. Woman (Anna) speaking with male airport staff member at informati...**
+- Used in: A2-1-M07-L02
+- Save to: `apps/web/static/images/shared/transport/img-airport-information-desk.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-airport-train-station
+
+- [ ] **Airport or train station departure board showing 'VERSPÄTUNG' (delay) in red text next to flight/...**
+- Used in: A2-1-M07-L02
+- Save to: `apps/web/static/images/shared/transport/img-airport-train-station.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-commercial-airplane-taking
+
+- [ ] **Commercial airplane taking off from runway. Aircraft in mid-takeoff with landing gear still visib...**
+- Used in: A2-1-M07-L02
+- Save to: `apps/web/static/images/shared/transport/img-commercial-airplane-taking.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-airplane-landing-runway
+
+- [ ] **Airplane landing on runway, touching down with landing gear deployed. View from side showing airc...**
+- Used in: A2-1-M07-L02
+- Save to: `apps/web/static/images/shared/transport/img-airplane-landing-runway.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-modern-international-airport
+
+- [ ] **Modern international airport exterior or interior. Large terminal building with control tower vis...**
+- Used in: A2-1-M07-L02
+- Save to: `apps/web/static/images/shared/transport/img-modern-international-airport.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-train-station-platform
+
+- [ ] **Train station platform (Gleis/Bahnsteig) with ICE or regional train waiting. Platform number sign...**
+- Used in: A2-1-M07-L02
+- Save to: `apps/web/static/images/shared/transport/img-train-station-platform.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-passenger-placing-carry-on
+
+- [ ] **Passenger placing carry-on luggage (Handgepäck) in airplane overhead compartment. Small rolling s...**
+- Used in: A2-1-M07-L02
+- Save to: `apps/web/static/images/shared/transport/img-passenger-placing-carry-on.jpg`
+- Specs: 800x600 jpg
+
+### 🎬 vid-airport-information-desk
+
+- [ ] **Airport information desk scene. Anna approaches desk and speaks to staff member. Anna: 'Entschuld...**
+- Used in: A2-1-M07-L02
+- Save to: `apps/web/static/videos/shared/transport/vid-airport-information-desk.mp4`
+- Specs: 20-25 seconds mp4 1080p
+
+### 🖼️ img-diverse-group-office
+
+- [ ] **Diverse group of office colleagues (3-4 people) collaborating around a conference table, smiling ...**
+- Used in: A2-1-M08-L03
+- Save to: `apps/web/static/images/shared/transport/img-diverse-group-office.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-international-team-meeting
+
+- [ ] **International team meeting with diverse members from different cultural backgrounds working toget...**
+- Used in: A2-1-M08-L03
+- Save to: `apps/web/static/images/shared/transport/img-international-team-meeting.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-herr-mueller-senior
+
+- [ ] **Herr Müller (senior colleague) showing Frau Weber (new employee) around a modern office. They are...**
+- Used in: A2-1-M08-L04
+- Save to: `apps/web/static/images/shared/transport/img-herr-mueller-senior.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-modern-office-desk
+
+- [ ] **Modern office desk (Schreibtisch) with computer monitor, keyboard, mouse, desk lamp, organized do...**
+- Used in: A2-1-M08-L04
+- Save to: `apps/web/static/images/shared/transport/img-modern-office-desk.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-office-printercopier-machine
+
+- [ ] **Office printer/copier machine in a hallway or shared office space. Person standing nearby using t...**
+- Used in: A2-1-M08-L04
+- Save to: `apps/web/static/images/shared/transport/img-office-printercopier-machine.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-business-meeting-besprechung
+
+- [ ] **Business meeting (Besprechung) with 4-5 professionals sitting around a conference table. Laptop o...**
+- Used in: A2-1-M08-L04
+- Save to: `apps/web/static/images/shared/transport/img-business-meeting-besprechung.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-modern-conference-room
+
+- [ ] **Modern conference room (Konferenzraum) with long table, multiple chairs, projection screen or lar...**
+- Used in: A2-1-M08-L04
+- Save to: `apps/web/static/images/shared/transport/img-modern-conference-room.jpg`
+- Specs: 800x600 jpg
+
+### 🎬 vid-herr-mueller-shows
+
+- [ ] **Herr Müller shows Frau Weber around the office. Herr Müller: 'Guten Morgen! Ich zeige Ihnen das B...**
+- Used in: A2-1-M08-L04
+- Save to: `apps/web/static/videos/shared/transport/vid-herr-mueller-shows.mp4`
+- Specs: 25-30 seconds mp4 1080p
+
+### 🖼️ img-doctors-office-scene
+
+- [ ] **Doctor's office scene: A doctor (wearing white coat) sitting at desk examining a patient who look...**
+- Used in: A2-1-M09-L05
+- Save to: `apps/web/static/images/shared/transport/img-doctors-office-scene.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-person-lying-bed
+
+- [ ] **Person lying in bed with thermometer in mouth, showing fever. Tissue box on nightstand, glass of ...**
+- Used in: A2-1-M09-L05
+- Save to: `apps/web/static/images/shared/transport/img-person-lying-bed.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-modern-german-ambulance
+
+- [ ] **Modern German ambulance (Krankenwagen) with red cross symbol, parked outside hospital or respondi...**
+- Used in: A2-1-M09-L05
+- Save to: `apps/web/static/images/shared/transport/img-modern-german-ambulance.jpg`
+- Specs: 800x600 jpg
+
+### 🎬 vid-doctors-office-consultation
+
+- [ ] **Doctor's office consultation scene. Patient enters, sits down. Doctor asks 'Guten Tag! Was fehlt ...**
+- Used in: A2-1-M09-L05
+- Save to: `apps/web/static/videos/shared/transport/vid-doctors-office-consultation.mp4`
+- Specs: 30-40 seconds mp4 1080p
+
+### 🖼️ img-two-friends-lisa-1
+
+- [ ] **Two friends (Lisa and Max) having coffee at a cafe table. Lisa looks tired, yawning or rubbing ey...**
+- Used in: A2-1-M09-L06
+- Save to: `apps/web/static/images/shared/transport/img-two-friends-lisa-1.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-colorful-display-fresh-1
+
+- [ ] **Colorful display of fresh fruits and vegetables at a market or kitchen counter. Includes apples, ...**
+- Used in: A2-1-M09-L06
+- Save to: `apps/web/static/images/shared/transport/img-colorful-display-fresh-1.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-person-hiking-mountains
+
+- [ ] **Person hiking in mountains or forest trail. They are wearing outdoor clothing, carrying a backpac...**
+- Used in: A2-2-M10-L07
+- Save to: `apps/web/static/images/shared/transport/img-person-hiking-mountains.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-maria-and-peter
+
+- [ ] **Maria and Peter having a conversation. They could be looking at a calendar or phone showing weeke...**
+- Used in: A2-2-M10-L08
+- Save to: `apps/web/static/images/shared/transport/img-maria-and-peter.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-person-checking-watch
+
+- [ ] **Person checking watch or looking at phone with slightly concerned expression, suggesting they don...**
+- Used in: A2-2-M10-L08
+- Save to: `apps/web/static/images/shared/transport/img-person-checking-watch.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-modern-smartphone-android
+
+- [ ] **Modern smartphone (Android or iPhone) held in hand, showing the home screen with apps. Close-up s...**
+- Used in: A2-2-M11-L09
+- Save to: `apps/web/static/images/shared/transport/img-modern-smartphone-android.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-vintage-modern-radio
+
+- [ ] **Vintage or modern radio receiver on a desk or shelf. Could be in a car dashboard or on a kitchen ...**
+- Used in: A2-2-M11-L10
+- Save to: `apps/web/static/images/shared/transport/img-vintage-modern-radio.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-two-friends-anna
+
+- [ ] **Two friends (Anna and Tom) in a casual setting. Anna is holding a birthday invitation card and sm...**
+- Used in: A2-2-M12-L11
+- Save to: `apps/web/static/images/shared/transport/img-two-friends-anna.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-elegant-birthday-invitation
+
+- [ ] **Elegant birthday invitation card with decorative elements (balloons, ribbons). The card should ha...**
+- Used in: A2-2-M12-L11
+- Save to: `apps/web/static/images/shared/transport/img-elegant-birthday-invitation.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-person-carrying-food
+
+- [ ] **Person carrying food items (salad bowl, cake, or dish) to bring to a party. Friendly, helpful exp...**
+- Used in: A2-2-M12-L11
+- Save to: `apps/web/static/images/shared/transport/img-person-carrying-food.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-karneval-celebration-scene
+
+- [ ] **Karneval celebration scene in Germany (Köln/Cologne or Mainz style). People in colorful costumes ...**
+- Used in: A2-2-M12-L12
+- Save to: `apps/web/static/images/shared/transport/img-karneval-celebration-scene.jpg`
+- Specs: 800x600 jpg
 
 ---
 
 ## Grammar Diagrams (Grammatik)
 
-**53 images**
+**61 images, 2 videos**
 
 ### 🖼️ img-map-dach-countries
 
@@ -395,11 +926,81 @@
 - Save to: `apps/web/static/images/shared/grammar/img-healthyfit-person-gesundefitte.jpg`
 - Specs: 800x600 jpg
 
+### 🖼️ img-split-image-collage
+
+- [ ] **Split image or collage showing popular German vacation destinations: Mediterranean beach (Spain/I...**
+- Used in: A2-1-M07-L01
+- Save to: `apps/web/static/images/shared/grammar/img-split-image-collage.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-split-image-showing
+
+- [ ] **Split image showing German healthcare system elements: 1) Health insurance card (Krankenversicher...**
+- Used in: A2-1-M09-L05
+- Save to: `apps/web/static/images/shared/grammar/img-split-image-showing.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-split-image-showing-1
+
+- [ ] **Split image showing German health culture: 1) Organic food section (Bio) with green labels, 2) Pe...**
+- Used in: A2-1-M09-L06
+- Save to: `apps/web/static/images/shared/grammar/img-split-image-showing-1.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-german-sports-club
+
+- [ ] **German sports club (Sportverein) scene. Group of people in sports uniforms gathered at a sports f...**
+- Used in: A2-2-M10-L07
+- Save to: `apps/web/static/images/shared/grammar/img-german-sports-club.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-traditional-german-sunday
+
+- [ ] **Traditional German Sunday scene. Could show: closed shop with 'Sonntags geschlossen' sign, family...**
+- Used in: A2-2-M10-L08
+- Save to: `apps/web/static/images/shared/grammar/img-traditional-german-sunday.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-person-working-laptop
+
+- [ ] **Person working at a laptop computer, typing an email. Screen visible showing an email interface. ...**
+- Used in: A2-2-M11-L09
+- Save to: `apps/web/static/images/shared/grammar/img-person-working-laptop.jpg`
+- Specs: 800x600 jpg
+
+### 🎬 vid-short-educational-video
+
+- [ ] **Short educational video demonstrating phone comparisons. Two people comparing smartphones side by...**
+- Used in: A2-2-M11-L09
+- Save to: `apps/web/static/videos/shared/grammar/vid-short-educational-video.mp4`
+- Specs: 20-25 seconds mp4 1080p
+
+### 🎬 vid-educational-video-showing
+
+- [ ] **Educational video showing superlative comparisons of news sources. Person looking at different me...**
+- Used in: A2-2-M11-L10
+- Save to: `apps/web/static/videos/shared/grammar/vid-educational-video-showing.mp4`
+- Specs: 25-30 seconds mp4 1080p
+
+### 🖼️ img-german-home-entrance
+
+- [ ] **German home entrance scene showing typical customs: person removing shoes at the door, Hausschuhe...**
+- Used in: A2-2-M12-L11
+- Save to: `apps/web/static/images/shared/grammar/img-german-home-entrance.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-split-image-collage-1
+
+- [ ] **Split image or collage showing comparison of German and Iranian festivals. Left side: German Chri...**
+- Used in: A2-2-M12-L12
+- Save to: `apps/web/static/images/shared/grammar/img-split-image-collage-1.jpg`
+- Specs: 800x600 jpg
+
 ---
 
 ## People & Descriptions (Menschen)
 
-**43 images, 4 videos**
+**56 images, 5 videos**
 
 ### 🖼️ img-two-young-adults
 
@@ -730,401 +1331,109 @@
 - Save to: `apps/web/static/images/shared/people/img-windy-day-windiger.jpg`
 - Specs: 800x600 jpg
 
----
+### 🖼️ img-tourist-taking-photos
 
-## Transport (Verkehrsmittel)
-
-**34 images, 6 videos**
-
-### 🖼️ img-two-business-professionals
-
-- [ ] **Two business professionals (man and woman) shaking hands in an office lobby. Formal attire, profe...**
-- Used in: A1.1-M01-L01
-- Save to: `apps/web/static/images/shared/transport/img-two-business-professionals.jpg`
+- [ ] **Tourist taking photos with a camera or smartphone at a famous landmark. Person framing a shot of ...**
+- Used in: A2-1-M07-L01
+- Save to: `apps/web/static/images/shared/people/img-tourist-taking-photos.jpg`
 - Specs: 800x600 jpg
 
-### 🖼️ img-person-waving-goodbye
+### 🖼️ img-female-teacher-standing
 
-- [ ] **Person waving goodbye at a train station or office door. Professional context, slightly formal.**
-- Used in: A1.1-M01-L01
-- Save to: `apps/web/static/images/shared/transport/img-person-waving-goodbye.jpg`
+- [ ] **Female teacher standing in front of an elementary school classroom, teaching young students. Whit...**
+- Used in: A2-1-M08-L03
+- Save to: `apps/web/static/images/shared/people/img-female-teacher-standing.jpg`
 - Specs: 800x600 jpg
 
-### 🎬 vid-two-business-professionals
+### 🎬 vid-tom-and-sara
 
-- [ ] **Two business professionals (Mr. Schmidt and Mr. Ahmadi) meeting for the first time. They shake ha...**
-- Used in: A1.1-M01-L01
-- Save to: `apps/web/static/videos/shared/transport/vid-two-business-professionals.mp4`
-- Specs: 15-20 seconds mp4 1080p
-
-### 🖼️ img-two-business-professionals-1
-
-- [ ] **Two business professionals (Frau Schmidt and Herr Ahmadi) having a formal conversation in an offi...**
-- Used in: A1.1-M01-L03
-- Save to: `apps/web/static/images/shared/transport/img-two-business-professionals-1.jpg`
-- Specs: 800x600 jpg
-
-### 🖼️ img-professional-networking-event
-
-- [ ] **Professional networking event - two business people (Herr Müller and Frau Ahmadi) exchanging busi...**
-- Used in: A1.1-M02-L03
-- Save to: `apps/web/static/images/shared/transport/img-professional-networking-event.jpg`
-- Specs: 800x600 jpg
-
-### 🖼️ img-engineer-with-hard
-
-- [ ] **Engineer with hard hat at construction site or in office with blueprints/technical drawings.**
-- Used in: A1.1-M02-L03
-- Save to: `apps/web/static/images/shared/transport/img-engineer-with-hard.jpg`
-- Specs: 800x600 jpg
-
-### 🖼️ img-programmerdeveloper-computer-with
-
-- [ ] **Programmer/developer at computer with code on screen. Modern office or home office setting.**
-- Used in: A1.1-M02-L03
-- Save to: `apps/web/static/images/shared/transport/img-programmerdeveloper-computer-with.jpg`
-- Specs: 800x600 jpg
-
-### 🖼️ img-father-with-child
-
-- [ ] **Father with child or in family setting. Caring, protective image.**
-- Used in: A1.1-M02-L04
-- Save to: `apps/web/static/images/shared/transport/img-father-with-child.jpg`
-- Specs: 800x600 jpg
-
-### 🖼️ img-two-colleagues-lisa
-
-- [ ] **Two colleagues (Lisa and Tom) having a casual conversation in an office break room or cafe. They ...**
-- Used in: A1.1-M03-L07
-- Save to: `apps/web/static/images/shared/transport/img-two-colleagues-lisa.jpg`
-- Specs: 800x600 jpg
-
-### 🖼️ img-traditional-german-breakfast
-
-- [ ] **Traditional German breakfast (das Frühstück) spread on a table: bread rolls (Brötchen), butter, j...**
-- Used in: A1.1-M03-L07
-- Save to: `apps/web/static/images/shared/transport/img-traditional-german-breakfast.jpg`
-- Specs: 800x600 jpg
-
-### 🖼️ img-professional-person-business
-
-- [ ] **Professional person (business casual attire) walking toward office building entrance in the morni...**
-- Used in: A1.1-M03-L07
-- Save to: `apps/web/static/images/shared/transport/img-professional-person-business.jpg`
-- Specs: 800x600 jpg
-
-### 🎬 vid-two-colleagues-meeting
-
-- [ ] **Two colleagues meeting in office break room. Dialog: 'Wann stehst du morgens auf?' - 'Ich stehe u...**
-- Used in: A1.1-M03-L07
-- Save to: `apps/web/static/videos/shared/transport/vid-two-colleagues-meeting.mp4`
+- [ ] **Tom and Sara at a party. Tom asks: 'Und was machst du beruflich?' Sara replies: 'Ich bin Ingenieu...**
+- Used in: A2-1-M08-L03
+- Save to: `apps/web/static/videos/shared/people/vid-tom-and-sara.mp4`
 - Specs: 20-25 seconds mp4 1080p
 
-### 🖼️ img-woman-applying-makeup
+### 🖼️ img-close-up-laptop-screen
 
-- [ ] **Woman applying makeup at vanity or bathroom mirror. Makeup brushes and cosmetics visible on count...**
-- Used in: A1.1-M03-L08
-- Save to: `apps/web/static/images/shared/transport/img-woman-applying-makeup.jpg`
+- [ ] **Close-up of laptop screen showing email inbox interface. Person typing an email, 'E-Mail' visible...**
+- Used in: A2-1-M08-L04
+- Save to: `apps/web/static/images/shared/people/img-close-up-laptop-screen.jpg`
 - Specs: 800x600 jpg
 
-### 🖼️ img-close-up-refreshing-glass
+### 🖼️ img-close-up-illustration-person
 
-- [ ] **Close-up of a refreshing glass of Apfelschorle (apple spritzer) with condensation on the glass, a...**
-- Used in: A1.2-M04-L09
-- Save to: `apps/web/static/images/shared/transport/img-close-up-refreshing-glass.jpg`
+- [ ] **Close-up illustration of a person holding their head with both hands, showing pain or discomfort....**
+- Used in: A2-1-M09-L05
+- Save to: `apps/web/static/images/shared/people/img-close-up-illustration-person.jpg`
 - Specs: 800x600 jpg
 
-### 🖼️ img-coffee-service-items
+### 🖼️ img-person-coughing-into
 
-- [ ] **Coffee service items: milk pitcher (Milch) and sugar bowl (Zucker) on a cafe table with coffee cu...**
-- Used in: A1.2-M04-L10
-- Save to: `apps/web/static/images/shared/transport/img-coffee-service-items.jpg`
+- [ ] **Person coughing into their elbow/tissue, showing proper cough etiquette. Person appears to have a...**
+- Used in: A2-1-M09-L05
+- Save to: `apps/web/static/images/shared/people/img-person-coughing-into.jpg`
 - Specs: 800x600 jpg
 
-### 🖼️ img-customer-paying-bill
+### 🖼️ img-fit-person-outdoors
 
-- [ ] **Customer paying bill at cafe. Waiter presenting check/receipt in leather bill holder. Cash and ca...**
-- Used in: A1.2-M04-L10
-- Save to: `apps/web/static/images/shared/transport/img-customer-paying-bill.jpg`
+- [ ] **Fit person outdoors in athletic wear, stretching or in confident active pose. Person looks health...**
+- Used in: A2-1-M09-L06
+- Save to: `apps/web/static/images/shared/people/img-fit-person-outdoors.jpg`
 - Specs: 800x600 jpg
 
-### 🖼️ img-sara-and-ali
+### 🖼️ img-person-rock-climbing
 
-- [ ] **Sara and Ali in a German supermarket aisle with shopping cart. They're selecting fresh produce (f...**
-- Used in: A1.2-M04-L11
-- Save to: `apps/web/static/images/shared/transport/img-sara-and-ali.jpg`
+- [ ] **Person rock climbing on an indoor climbing wall or outdoor rock face. Safety equipment visible (h...**
+- Used in: A2-2-M10-L07
+- Save to: `apps/web/static/images/shared/people/img-person-rock-climbing.jpg`
 - Specs: 800x600 jpg
 
-### 🖼️ img-fresh-vegetables-gemuese
+### 🖼️ img-person-exercising-gym
 
-- [ ] **Fresh vegetables (Gemüse) display: tomatoes, carrots, broccoli, peppers, lettuce, cucumbers. Orga...**
-- Used in: A1.2-M04-L11
-- Save to: `apps/web/static/images/shared/transport/img-fresh-vegetables-gemuese.jpg`
+- [ ] **Person exercising at gym or doing sports outdoors. Could be running, doing yoga, or using gym equ...**
+- Used in: A2-2-M10-L07
+- Save to: `apps/web/static/images/shared/people/img-person-exercising-gym.jpg`
 - Specs: 800x600 jpg
 
-### 🖼️ img-exterior-view-german
+### 🖼️ img-person-relaxing-peacefully
 
-- [ ] **Exterior view of a German Bahnhof (train station). Modern glass and steel architecture typical of...**
-- Used in: A1.2-M05-L11
-- Save to: `apps/web/static/images/shared/transport/img-exterior-view-german.jpg`
+- [ ] **Person relaxing peacefully. Could be reading a book on a comfortable couch, meditating, or lying ...**
+- Used in: A2-2-M10-L07
+- Save to: `apps/web/static/images/shared/people/img-person-relaxing-peacefully.jpg`
 - Specs: 800x600 jpg
 
-### 🖼️ img-german-post-office
+### 🖼️ img-person-thinking-planning
 
-- [ ] **German post office (Die Post) exterior. Yellow Deutsche Post logo prominent. Modern service cente...**
-- Used in: A1.2-M05-L11
-- Save to: `apps/web/static/images/shared/transport/img-german-post-office.jpg`
+- [ ] **Person thinking or planning, possibly writing in planner or looking at calendar thoughtfully. Tho...**
+- Used in: A2-2-M10-L08
+- Save to: `apps/web/static/images/shared/people/img-person-thinking-planning.jpg`
 - Specs: 800x600 jpg
 
-### 🖼️ img-german-supermarket-supermarkt
+### 🖼️ img-group-friends-inviting
 
-- [ ] **German supermarket (Supermarkt) exterior. Popular chain like REWE, EDEKA, or Aldi. Shopping carts...**
-- Used in: A1.2-M05-L11
-- Save to: `apps/web/static/images/shared/transport/img-german-supermarket-supermarkt.jpg`
+- [ ] **Group of friends inviting someone to join them. One person gesturing 'come along' to another. Fri...**
+- Used in: A2-2-M10-L08
+- Save to: `apps/web/static/images/shared/people/img-group-friends-inviting.jpg`
 - Specs: 800x600 jpg
 
-### 🖼️ img-german-intersection-kreuzung
+### 🖼️ img-two-young-adults-2
 
-- [ ] **German intersection (Kreuzung) from above or street level. Four-way crossing with crosswalks. Tra...**
-- Used in: A1.2-M05-L12
-- Save to: `apps/web/static/images/shared/transport/img-german-intersection-kreuzung.jpg`
+- [ ] **Two young adults (Lisa and Tom) in a phone store or cafe, looking at smartphones. Lisa looks slig...**
+- Used in: A2-2-M11-L09
+- Save to: `apps/web/static/images/shared/people/img-two-young-adults-2.jpg`
 - Specs: 800x600 jpg
 
-### 🎬 vid-mina-asks-man
-
-- [ ] **Mina asks a man for directions on a German street. Mina: 'Entschuldigung, wie komme ich zur U-Bah...**
-- Used in: A1.2-M05-L12
-- Save to: `apps/web/static/videos/shared/transport/vid-mina-asks-man.mp4`
-- Specs: 20-25 seconds mp4 1080p
-
-### 🖼️ img-lisa-and-armin
-
-- [ ] **Lisa and Armin having a conversation at a German transit station or street. Both in commuter clot...**
-- Used in: A1.2-M05-L13
-- Save to: `apps/web/static/images/shared/transport/img-lisa-and-armin.jpg`
-- Specs: 800x600 jpg
-
-### 🖼️ img-german-u-bahn-subway
-
-- [ ] **German U-Bahn (subway) train at platform. Modern yellow Berlin U-Bahn or Hamburg subway. U-Bahn l...**
-- Used in: A1.2-M05-L13
-- Save to: `apps/web/static/images/shared/transport/img-german-u-bahn-subway.jpg`
-- Specs: 800x600 jpg
-
-### 🖼️ img-german-city-bus
-
-- [ ] **German city bus (Bus) at bus stop. Modern public bus with route number. Green/yellow color scheme...**
-- Used in: A1.2-M05-L13
-- Save to: `apps/web/static/images/shared/transport/img-german-city-bus.jpg`
-- Specs: 800x600 jpg
-
-### 🖼️ img-german-s-bahn-train
-
-- [ ] **German S-Bahn train at station platform. Red and cream colored S-Bahn typical of German cities. L...**
-- Used in: A1.2-M05-L13
-- Save to: `apps/web/static/images/shared/transport/img-german-s-bahn-train.jpg`
-- Specs: 800x600 jpg
-
-### 🖼️ img-german-strassenbahn-tram
-
-- [ ] **German Straßenbahn (tram) on city street. Modern yellow or red tram with overhead electric wires....**
-- Used in: A1.2-M05-L13
-- Save to: `apps/web/static/images/shared/transport/img-german-strassenbahn-tram.jpg`
-- Specs: 800x600 jpg
-
-### 🖼️ img-person-riding-bicycle
-
-- [ ] **Person riding a bicycle (Fahrrad) on German bicycle lane. Dedicated bike path with bicycle symbol...**
-- Used in: A1.2-M05-L13
-- Save to: `apps/web/static/images/shared/transport/img-person-riding-bicycle.jpg`
-- Specs: 800x600 jpg
-
-### 🖼️ img-german-car-auto
-
-- [ ] **German car (Auto) on city street. Modern vehicle, could be popular German brand (VW, BMW, Mercede...**
-- Used in: A1.2-M05-L13
-- Save to: `apps/web/static/images/shared/transport/img-german-car-auto.jpg`
-- Specs: 800x600 jpg
-
-### 🖼️ img-german-ice-high-speed
-
-- [ ] **German ICE high-speed train (Zug) at station platform. Sleek white ICE train with Deutsche Bahn l...**
-- Used in: A1.2-M05-L13
-- Save to: `apps/web/static/images/shared/transport/img-german-ice-high-speed.jpg`
-- Specs: 800x600 jpg
-
-### 🖼️ img-german-taxi-taxi
-
-- [ ] **German taxi at taxi stand. Cream/beige colored taxi with 'TAXI' sign on roof illuminated. Mercede...**
-- Used in: A1.2-M05-L13
-- Save to: `apps/web/static/images/shared/transport/img-german-taxi-taxi.jpg`
-- Specs: 800x600 jpg
-
-### 🖼️ img-german-airport-flughafen
-
-- [ ] **German airport (Flughafen) terminal exterior or interior. Modern airport building with airplane v...**
-- Used in: A1.2-M05-L13
-- Save to: `apps/web/static/images/shared/transport/img-german-airport-flughafen.jpg`
-- Specs: 800x600 jpg
-
-### 🖼️ img-german-bustram-stop
-
-- [ ] **German bus/tram stop (Haltestelle) with yellow sign. Information board showing routes and times. ...**
-- Used in: A1.2-M05-L13
-- Save to: `apps/web/static/images/shared/transport/img-german-bustram-stop.jpg`
-- Specs: 800x600 jpg
-
-### 🎬 vid-lisa-and-armin
-
-- [ ] **Lisa and Armin at a German transit station. Lisa: 'Wie kommst du jeden Tag zur Arbeit?' Armin: 'I...**
-- Used in: A1.2-M05-L13
-- Save to: `apps/web/static/videos/shared/transport/vid-lisa-and-armin.mp4`
-- Specs: 25-30 seconds mp4 1080p
-
-### 🎬 vid-customer-german-train
-
-- [ ] **Customer at German train station information counter. Kunde: 'Entschuldigung, fährt dieser Zug na...**
-- Used in: A1.2-M05-L13
-- Save to: `apps/web/static/videos/shared/transport/vid-customer-german-train.mp4`
-- Specs: 15-20 seconds mp4 1080p
-
-### 🎬 vid-anna-looking-for
-
-- [ ] **Anna is looking for her brother at a busy location (like a train station or university campus). S...**
-- Used in: A1.1-M06-L13
-- Save to: `apps/web/static/videos/shared/transport/vid-anna-looking-for.mp4`
-- Specs: 20-25 seconds mp4 1080p
-
-### 🖼️ img-light-bag-leichte
-
-- [ ] **A light bag (leichte Tasche) being easily held with one finger or carried effortlessly, showing l...**
-- Used in: A1.1-M06-L14
-- Save to: `apps/web/static/images/shared/transport/img-light-bag-leichte.jpg`
-- Specs: 800x600 jpg
-
-### 🖼️ img-expensive-car-teures
-
-- [ ] **An expensive car (teures Auto) - luxury vehicle like a Mercedes or BMW with price tag visible or ...**
-- Used in: A1.1-M06-L14
-- Save to: `apps/web/static/images/shared/transport/img-expensive-car-teures.jpg`
-- Specs: 800x600 jpg
-
-### 🖼️ img-affordablecheap-phone-guenstiges
-
-- [ ] **An affordable/cheap phone (günstiges Handy) with a sale tag or affordable price tag, simple model.**
-- Used in: A1.1-M06-L14
-- Save to: `apps/web/static/images/shared/transport/img-affordablecheap-phone-guenstiges.jpg`
-- Specs: 800x600 jpg
-
----
-
-## Other (Sonstiges)
-
-**12 images, 2 videos**
-
-### 🖼️ img-german-flag-black-red-gold
-
-- [ ] **German flag (black-red-gold) with iconic German landmark in background (Brandenburg Gate, Neuschw...**
-- Used in: A1.1-M01-L02
-- Save to: `apps/web/static/images/shared/misc/img-german-flag-black-red-gold.jpg`
-- Specs: 800x600 jpg
-
-### 🖼️ img-austrian-flag-red-white-red
-
-- [ ] **Austrian flag (red-white-red) with Vienna landmark (St. Stephen's Cathedral, Schönbrunn Palace, o...**
-- Used in: A1.1-M01-L02
-- Save to: `apps/web/static/images/shared/misc/img-austrian-flag-red-white-red.jpg`
-- Specs: 800x600 jpg
-
-### 🖼️ img-swiss-flag-white
-
-- [ ] **Swiss flag (white cross on red) with iconic Swiss imagery (Matterhorn, Lake Geneva, or Swiss vill...**
-- Used in: A1.1-M01-L02
-- Save to: `apps/web/static/images/shared/misc/img-swiss-flag-white.jpg`
-- Specs: 800x600 jpg
-
-### 🖼️ img-iranian-flag-green-white-red
-
-- [ ] **Iranian flag (green-white-red) with iconic Persian imagery (Azadi Tower, Nasir al-Mulk Mosque, or...**
-- Used in: A1.1-M01-L02
-- Save to: `apps/web/static/images/shared/misc/img-iranian-flag-green-white-red.jpg`
-- Specs: 800x600 jpg
-
-### 🖼️ img-turkish-flag-red
-
-- [ ] **Turkish flag (red with white crescent and star) with Istanbul imagery (Blue Mosque, Bosphorus, or...**
-- Used in: A1.1-M01-L02
-- Save to: `apps/web/static/images/shared/misc/img-turkish-flag-red.jpg`
-- Specs: 800x600 jpg
-
-### 🖼️ img-two-friends-lisa
-
-- [ ] **Two friends (Lisa and Stefan) meeting at a cozy German cafe. They are smiling and appear to be ca...**
-- Used in: A1.1-M01-L03
-- Save to: `apps/web/static/images/shared/misc/img-two-friends-lisa.jpg`
-- Specs: 800x600 jpg
-
-### 🖼️ img-two-people-exchanging
-
-- [ ] **Two people exchanging phone numbers - one typing into phone while other dictates. Casual setting ...**
-- Used in: A1.1-M02-L05
-- Save to: `apps/web/static/images/shared/misc/img-two-people-exchanging.jpg`
-- Specs: 800x600 jpg
-
-### 🎬 vid-sara-and-ali
-
-- [ ] **Sara and Ali at a cafe. Sara: 'Ich habe so viel Hunger!' Ali: 'Ich auch! Ich habe Lust auf Pizza....**
-- Used in: A1.2-M04-L09
-- Save to: `apps/web/static/videos/shared/misc/vid-sara-and-ali.mp4`
-- Specs: 20-25 seconds mp4 1080p
-
-### 🖼️ img-beautiful-piece-german
-
-- [ ] **Beautiful piece of German cake (Kuchen) on a white plate with a fork. Classic German cake like Sc...**
-- Used in: A1.2-M04-L10
-- Save to: `apps/web/static/images/shared/misc/img-beautiful-piece-german.jpg`
-- Specs: 800x600 jpg
-
-### 🎬 vid-cafe-scene-gast
-
-- [ ] **Cafe scene. Gast: 'Entschuldigung, kann ich bestellen?' Kellner: 'Gern! Was darf es sein?' Gast: ...**
-- Used in: A1.2-M04-L10
-- Save to: `apps/web/static/videos/shared/misc/vid-cafe-scene-gast.mp4`
-- Specs: 25-30 seconds mp4 1080p
-
-### 🖼️ img-dairy-products-section
-
-- [ ] **Dairy products section (Milchprodukte): milk bottles, yogurt, cheese, butter arranged on supermar...**
-- Used in: A1.2-M04-L11
-- Save to: `apps/web/static/images/shared/misc/img-dairy-products-section.jpg`
-- Specs: 800x600 jpg
-
-### 🖼️ img-heavy-package-schweres
-
-- [ ] **A heavy package (schweres Paket) being lifted by someone with visible effort, showing the weight.**
-- Used in: A1.1-M06-L14
-- Save to: `apps/web/static/images/shared/misc/img-heavy-package-schweres.jpg`
-- Specs: 800x600 jpg
-
-### 🖼️ img-brand-new-smartphone
-
-- [ ] **A brand new smartphone (neues Handy) still in box or with protective film, looking pristine and m...**
-- Used in: A1.1-M06-L14
-- Save to: `apps/web/static/images/shared/misc/img-brand-new-smartphone.jpg`
-- Specs: 800x600 jpg
-
-### 🖼️ img-boring-filmmovie-scene
-
-- [ ] **A boring film/movie scene (langweiliger Film) - showing someone yawning while watching TV or look...**
-- Used in: A1.1-M06-L14
-- Save to: `apps/web/static/images/shared/misc/img-boring-filmmovie-scene.jpg`
+### 🖼️ img-person-wearing-headphones
+
+- [ ] **Person wearing headphones, looking at smartphone or laptop showing a podcast interface/player. Re...**
+- Used in: A2-2-M11-L10
+- Save to: `apps/web/static/images/shared/people/img-person-wearing-headphones.jpg`
 - Specs: 800x600 jpg
 
 ---
 
 ## Food & Restaurant (Essen)
 
-**13 images, 1 videos**
+**23 images, 1 videos**
 
 ### 🖼️ img-brother-young-man
 
@@ -1224,11 +1533,81 @@
 - Save to: `apps/web/static/videos/shared/food/vid-supermarket-scene-sara.mp4`
 - Specs: 25-30 seconds mp4 1080p
 
+### 🖼️ img-two-young-professionals
+
+- [ ] **Two young professionals (Tom and Sara) at a casual party, standing with drinks. Sara is dressed p...**
+- Used in: A2-1-M08-L03
+- Save to: `apps/web/static/images/shared/food/img-two-young-professionals.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-active-lifestyle-montage
+
+- [ ] **Active lifestyle montage: Person jogging in park, person at gym lifting weights, person doing yog...**
+- Used in: A2-1-M09-L06
+- Save to: `apps/web/static/images/shared/food/img-active-lifestyle-montage.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-person-scale-showing
+
+- [ ] **Person on scale showing weight loss progress. Happy expression, holding measuring tape around wai...**
+- Used in: A2-1-M09-L06
+- Save to: `apps/web/static/images/shared/food/img-person-scale-showing.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-group-diverse-friends
+
+- [ ] **Group of diverse friends meeting at a cafe or park. They're greeting each other with smiles, hugs...**
+- Used in: A2-2-M10-L07
+- Save to: `apps/web/static/images/shared/food/img-group-diverse-friends.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-person-reading-german
+
+- [ ] **Person reading a German newspaper at a breakfast table or cafe. Newspaper clearly visible with Ge...**
+- Used in: A2-2-M11-L10
+- Save to: `apps/web/static/images/shared/food/img-person-reading-german.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-beautifully-wrapped-gift
+
+- [ ] **Beautifully wrapped gift box with ribbon and bow. Could be multiple gifts stacked together. Festi...**
+- Used in: A2-2-M12-L11
+- Save to: `apps/web/static/images/shared/food/img-beautifully-wrapped-gift.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-group-diverse-party
+
+- [ ] **Group of diverse party guests mingling at a celebration. People holding drinks, talking, laughing...**
+- Used in: A2-2-M12-L11
+- Save to: `apps/web/static/images/shared/food/img-group-diverse-party.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-german-family-celebrating
+
+- [ ] **German family celebrating Weihnachten (Christmas). Decorated Christmas tree with lights and ornam...**
+- Used in: A2-2-M12-L12
+- Save to: `apps/web/static/images/shared/food/img-german-family-celebrating.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-traditional-german-weihnachtsmarkt
+
+- [ ] **Traditional German Weihnachtsmarkt (Christmas market) scene. Wooden stalls with festive lights, p...**
+- Used in: A2-2-M12-L12
+- Save to: `apps/web/static/images/shared/food/img-traditional-german-weihnachtsmarkt.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-close-up-spectacular-feuerwerk
+
+- [ ] **Close-up of spectacular Feuerwerk (fireworks) display. Colorful bursts of fireworks against night...**
+- Used in: A2-2-M12-L12
+- Save to: `apps/web/static/images/shared/food/img-close-up-spectacular-feuerwerk.jpg`
+- Specs: 800x600 jpg
+
 ---
 
 ## Places in City (Orte)
 
-**11 images, 2 videos**
+**15 images, 2 videos**
 
 ### 🖼️ img-doctor-male-female
 
@@ -1321,11 +1700,39 @@
 - Save to: `apps/web/static/videos/shared/places/vid-tourist-approaches-passerby.mp4`
 - Specs: 25-30 seconds mp4 1080p
 
+### 🖼️ img-tourist-visiting-art
+
+- [ ] **Tourist visiting an art museum or historical museum. Person viewing paintings or sculptures in a ...**
+- Used in: A2-1-M07-L01
+- Save to: `apps/web/static/images/shared/places/img-tourist-visiting-art.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-female-doctor-white
+
+- [ ] **Female doctor in white coat with stethoscope, examining a patient or reviewing medical charts in ...**
+- Used in: A2-1-M08-L03
+- Save to: `apps/web/static/images/shared/places/img-female-doctor-white.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-doctors-hand-writing
+
+- [ ] **Doctor's hand writing prescription, with various medicine bottles and pill packages on the desk. ...**
+- Used in: A2-1-M09-L05
+- Save to: `apps/web/static/images/shared/places/img-doctors-hand-writing.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-silvester-new-years
+
+- [ ] **Silvester (New Year's Eve) celebration at midnight. Spectacular fireworks display over a German c...**
+- Used in: A2-2-M12-L12
+- Save to: `apps/web/static/images/shared/places/img-silvester-new-years.jpg`
+- Specs: 800x600 jpg
+
 ---
 
 ## Weather & Feelings (Wetter & Gefühle)
 
-**9 images**
+**11 images, 3 videos**
 
 ### 🖼️ img-two-friends-looking
 
@@ -1390,11 +1797,46 @@
 - Save to: `apps/web/static/images/shared/weather/img-winter-season-winter.jpg`
 - Specs: 800x600 jpg
 
+### 🎬 vid-conversation-between-anna
+
+- [ ] **Conversation between Anna and Tom about hobbies. Tom: 'Was machst du gern in deiner Freizeit?' An...**
+- Used in: A2-2-M10-L07
+- Save to: `apps/web/static/videos/shared/weather/vid-conversation-between-anna.mp4`
+- Specs: 20-25 seconds mp4 1080p
+
+### 🎬 vid-maria-and-peter-1
+
+- [ ] **Maria and Peter discussing weekend plans. Peter: 'Was wirst du am Wochenende machen?' Maria: 'Ich...**
+- Used in: A2-2-M10-L08
+- Save to: `apps/web/static/videos/shared/weather/vid-maria-and-peter-1.mp4`
+- Specs: 20-25 seconds mp4 1080p
+
+### 🖼️ img-modern-computer-keyboard
+
+- [ ] **Modern computer keyboard (laptop or desktop) with hands typing. Clean, well-lit photo showing the...**
+- Used in: A2-2-M11-L09
+- Save to: `apps/web/static/images/shared/weather/img-modern-computer-keyboard.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-easter-ostern-celebration
+
+- [ ] **Easter (Ostern) celebration scene with children searching for colorful Easter eggs in a garden. E...**
+- Used in: A2-2-M12-L12
+- Save to: `apps/web/static/images/shared/weather/img-easter-ostern-celebration.jpg`
+- Specs: 800x600 jpg
+
+### 🎬 vid-dialog-scene-between
+
+- [ ] **Dialog scene between Anna and Ali discussing festivals. Anna: 'Welche Feste feierst du in Deutsch...**
+- Used in: A2-2-M12-L12
+- Save to: `apps/web/static/videos/shared/weather/vid-dialog-scene-between.mp4`
+- Specs: 25-30 seconds mp4 1080p
+
 ---
 
 ## Furniture & Rooms (Möbel)
 
-**7 images**
+**10 images**
 
 ### 🖼️ img-wooden-table-der
 
@@ -1445,11 +1887,190 @@
 - Save to: `apps/web/static/images/shared/furniture/img-toothbrush-die-zahnbuerste.jpg`
 - Specs: 800x600 jpg
 
+### 🖼️ img-close-up-laptop-tablet
+
+- [ ] **Close-up of a laptop or tablet screen/display showing clear, sharp content. Focus on the screen i...**
+- Used in: A2-2-M11-L09
+- Save to: `apps/web/static/images/shared/furniture/img-close-up-laptop-tablet.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-two-people-maria
+
+- [ ] **Two people (Maria and Max) sitting in a modern living room or cafe, one holding a tablet/smartpho...**
+- Used in: A2-2-M11-L10
+- Save to: `apps/web/static/images/shared/furniture/img-two-people-maria.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-birthday-party-celebration
+
+- [ ] **Birthday party celebration scene with people gathered around a decorated table with cake, balloon...**
+- Used in: A2-2-M12-L11
+- Save to: `apps/web/static/images/shared/furniture/img-birthday-party-celebration.jpg`
+- Specs: 800x600 jpg
+
+---
+
+## Other (Sonstiges)
+
+**7 images, 1 videos**
+
+### 🖼️ img-german-flag-black-red-gold
+
+- [ ] **German flag (black-red-gold) with iconic German landmark in background (Brandenburg Gate, Neuschw...**
+- Used in: A1.1-M01-L02
+- Save to: `apps/web/static/images/shared/misc/img-german-flag-black-red-gold.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-austrian-flag-red-white-red
+
+- [ ] **Austrian flag (red-white-red) with Vienna landmark (St. Stephen's Cathedral, Schönbrunn Palace, o...**
+- Used in: A1.1-M01-L02
+- Save to: `apps/web/static/images/shared/misc/img-austrian-flag-red-white-red.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-swiss-flag-white
+
+- [ ] **Swiss flag (white cross on red) with iconic Swiss imagery (Matterhorn, Lake Geneva, or Swiss vill...**
+- Used in: A1.1-M01-L02
+- Save to: `apps/web/static/images/shared/misc/img-swiss-flag-white.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-iranian-flag-green-white-red
+
+- [ ] **Iranian flag (green-white-red) with iconic Persian imagery (Azadi Tower, Nasir al-Mulk Mosque, or...**
+- Used in: A1.1-M01-L02
+- Save to: `apps/web/static/images/shared/misc/img-iranian-flag-green-white-red.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-turkish-flag-red
+
+- [ ] **Turkish flag (red with white crescent and star) with Istanbul imagery (Blue Mosque, Bosphorus, or...**
+- Used in: A1.1-M01-L02
+- Save to: `apps/web/static/images/shared/misc/img-turkish-flag-red.jpg`
+- Specs: 800x600 jpg
+
+### 🎬 vid-sara-and-ali
+
+- [ ] **Sara and Ali at a cafe. Sara: 'Ich habe so viel Hunger!' Ali: 'Ich auch! Ich habe Lust auf Pizza....**
+- Used in: A1.2-M04-L09
+- Save to: `apps/web/static/videos/shared/misc/vid-sara-and-ali.mp4`
+- Specs: 20-25 seconds mp4 1080p
+
+### 🖼️ img-dairy-products-section
+
+- [ ] **Dairy products section (Milchprodukte): milk bottles, yogurt, cheese, butter arranged on supermar...**
+- Used in: A1.2-M04-L11
+- Save to: `apps/web/static/images/shared/misc/img-dairy-products-section.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-heavy-package-schweres
+
+- [ ] **A heavy package (schweres Paket) being lifted by someone with visible effort, showing the weight.**
+- Used in: A1.1-M06-L14
+- Save to: `apps/web/static/images/shared/misc/img-heavy-package-schweres.jpg`
+- Specs: 800x600 jpg
+
+---
+
+## Daily Life (Alltag)
+
+**7 images**
+
+### 🖼️ img-bed-das-bett
+
+- [ ] **Bed (das Bett) - Modern double bed with white/cream bedding, wooden frame, shown from side angle ...**
+- Used in: A1.1-M03-L06
+- Save to: `apps/web/static/images/shared/daily-life/img-bed-das-bett.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-mother-calling-teenage
+
+- [ ] **Mother calling to teenage son through bathroom door. Morning scene in hallway outside bathroom. M...**
+- Used in: A1.1-M03-L08
+- Save to: `apps/web/static/images/shared/daily-life/img-mother-calling-teenage.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-female-engineer-safety
+
+- [ ] **Female engineer in safety gear (hard hat, vest) reviewing blueprints or working with technical eq...**
+- Used in: A2-1-M08-L03
+- Save to: `apps/web/static/images/shared/daily-life/img-female-engineer-safety.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-professional-project-manager
+
+- [ ] **Professional project manager (male or female) leading a meeting, standing by a presentation board...**
+- Used in: A2-1-M08-L03
+- Save to: `apps/web/static/images/shared/daily-life/img-professional-project-manager.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-modern-fitness-studio
+
+- [ ] **Modern fitness studio interior with diverse people exercising: treadmills, weight machines, free ...**
+- Used in: A2-1-M09-L06
+- Save to: `apps/web/static/images/shared/daily-life/img-modern-fitness-studio.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-smartphone-plugged-into
+
+- [ ] **Smartphone plugged into a charging cable, with battery icon showing low or charging status. The p...**
+- Used in: A2-2-M11-L09
+- Save to: `apps/web/static/images/shared/daily-life/img-smartphone-plugged-into.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-screen-showing-the
+
+- [ ] **TV screen showing the iconic Tagesschau logo and news anchor. Professional news studio setting. G...**
+- Used in: A2-2-M11-L10
+- Save to: `apps/web/static/images/shared/daily-life/img-screen-showing-the.jpg`
+- Specs: 800x600 jpg
+
+---
+
+## technology
+
+**5 images**
+
+### 🖼️ img-two-people-exchanging
+
+- [ ] **Two people exchanging phone numbers - one typing into phone while other dictates. Casual setting ...**
+- Used in: A1.1-M02-L05
+- Save to: `apps/web/static/images/shared/technology/img-two-people-exchanging.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-beautiful-piece-german
+
+- [ ] **Beautiful piece of German cake (Kuchen) on a white plate with a fork. Classic German cake like Sc...**
+- Used in: A1.2-M04-L10
+- Save to: `apps/web/static/images/shared/technology/img-beautiful-piece-german.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-brand-new-smartphone
+
+- [ ] **A brand new smartphone (neues Handy) still in box or with protective film, looking pristine and m...**
+- Used in: A1.1-M06-L14
+- Save to: `apps/web/static/images/shared/technology/img-brand-new-smartphone.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-smartphone-screen-showing
+
+- [ ] **Smartphone screen showing various colorful app icons (social media, messaging, productivity apps)...**
+- Used in: A2-2-M11-L09
+- Save to: `apps/web/static/images/shared/technology/img-smartphone-screen-showing.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-screen-studio-showing
+
+- [ ] **TV screen or studio showing a popular TV show being recorded or broadcast. Cameras, lights, and p...**
+- Used in: A2-2-M11-L10
+- Save to: `apps/web/static/images/shared/technology/img-screen-studio-showing.jpg`
+- Specs: 800x600 jpg
+
 ---
 
 ## Greetings (Begrüßungen)
 
-**2 images, 1 videos**
+**3 images, 1 videos**
 
 ### 🖼️ img-person-waving-hand
 
@@ -1472,31 +2093,25 @@
 - Save to: `apps/web/static/videos/shared/greetings/vid-two-friends-meeting.mp4`
 - Specs: 15-20 seconds mp4 1080p
 
----
+### 🖼️ img-beautiful-beach-scene
 
-## Daily Life (Alltag)
-
-**2 images**
-
-### 🖼️ img-bed-das-bett
-
-- [ ] **Bed (das Bett) - Modern double bed with white/cream bedding, wooden frame, shown from side angle ...**
-- Used in: A1.1-M03-L06
-- Save to: `apps/web/static/images/shared/daily-life/img-bed-das-bett.jpg`
-- Specs: 800x600 jpg
-
-### 🖼️ img-mother-calling-teenage
-
-- [ ] **Mother calling to teenage son through bathroom door. Morning scene in hallway outside bathroom. M...**
-- Used in: A1.1-M03-L08
-- Save to: `apps/web/static/images/shared/daily-life/img-mother-calling-teenage.jpg`
+- [ ] **Beautiful beach scene with ocean waves, sandy beach, and blue sky. People swimming or sunbathing....**
+- Used in: A2-1-M07-L01
+- Save to: `apps/web/static/images/shared/greetings/img-beautiful-beach-scene.jpg`
 - Specs: 800x600 jpg
 
 ---
 
 ## Professions (Berufe)
 
-**1 images**
+**4 images**
+
+### 🖼️ img-two-friends-lisa
+
+- [ ] **Two friends (Lisa and Stefan) meeting at a cozy German cafe. They are smiling and appear to be ca...**
+- Used in: A1.1-M01-L03
+- Save to: `apps/web/static/images/shared/professions/img-two-friends-lisa.jpg`
+- Specs: 800x600 jpg
 
 ### 🖼️ img-teacher-male-female
 
@@ -1504,6 +2119,67 @@
 - Used in: A1.1-M02-L03
 - Save to: `apps/web/static/images/shared/professions/img-teacher-male-female.jpg`
 - Specs: 800x600 jpg
+
+### 🖼️ img-professional-looking-frustrated
+
+- [ ] **Professional looking frustrated at slow computer. Hand on forehead or looking concerned at screen...**
+- Used in: A2-1-M08-L04
+- Save to: `apps/web/static/images/shared/professions/img-professional-looking-frustrated.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-screen-showing-professional
+
+- [ ] **TV screen showing a professional news broadcast (Nachrichtensendung). News anchor visible on scre...**
+- Used in: A2-2-M11-L10
+- Save to: `apps/web/static/images/shared/professions/img-screen-showing-professional.jpg`
+- Specs: 800x600 jpg
+
+---
+
+## Hobbies (Hobbys)
+
+**2 images, 1 videos**
+
+### 🎬 vid-cafe-scene-with
+
+- [ ] **Cafe scene with Lisa and Max. Lisa looks tired, says 'Ich bin so müde! Ich schlafe nur fünf Stund...**
+- Used in: A2-1-M09-L06
+- Save to: `apps/web/static/videos/shared/hobbies/vid-cafe-scene-with.mp4`
+- Specs: 25-35 seconds mp4 1080p
+
+### 🖼️ img-two-people-anna
+
+- [ ] **Two people (Anna and Tom) having a conversation outdoors in nature. Tom is wearing hiking gear wi...**
+- Used in: A2-2-M10-L07
+- Save to: `apps/web/static/images/shared/hobbies/img-two-people-anna.jpg`
+- Specs: 800x600 jpg
+
+### 🖼️ img-weekend-scene-with
+
+- [ ] **Weekend scene with calendar showing Saturday and Sunday highlighted. Could show people relaxing, ...**
+- Used in: A2-2-M10-L08
+- Save to: `apps/web/static/images/shared/hobbies/img-weekend-scene-with.jpg`
+- Specs: 800x600 jpg
+
+---
+
+## celebrations
+
+**2 videos**
+
+### 🎬 vid-cafe-scene-gast
+
+- [ ] **Cafe scene. Gast: 'Entschuldigung, kann ich bestellen?' Kellner: 'Gern! Was darf es sein?' Gast: ...**
+- Used in: A1.2-M04-L10
+- Save to: `apps/web/static/videos/shared/celebrations/vid-cafe-scene-gast.mp4`
+- Specs: 25-30 seconds mp4 1080p
+
+### 🎬 vid-full-birthday-invitation
+
+- [ ] **Full birthday invitation dialog scene. Anna invites Tom: 'Ich lade dich zu meiner Geburtstagsfeie...**
+- Used in: A2-2-M12-L11
+- Save to: `apps/web/static/videos/shared/celebrations/vid-full-birthday-invitation.mp4`
+- Specs: 20-25 seconds mp4 1080p
 
 ---
 
@@ -1529,6 +2205,45 @@
 - [ ] **German traffic light (Ampel) at pedestrian crossing. Red/yellow/green lights visible. Pedestrian ...**
 - Used in: A1.2-M05-L12
 - Save to: `apps/web/static/images/shared/directions/img-german-traffic-light.jpg`
+- Specs: 800x600 jpg
+
+---
+
+## media
+
+**1 images**
+
+### 🖼️ img-boring-filmmovie-scene
+
+- [ ] **A boring film/movie scene (langweiliger Film) - showing someone yawning while watching TV or look...**
+- Used in: A1.1-M06-L14
+- Save to: `apps/web/static/images/shared/media/img-boring-filmmovie-scene.jpg`
+- Specs: 800x600 jpg
+
+---
+
+## travel
+
+**1 images**
+
+### 🖼️ img-group-people-day
+
+- [ ] **Group of people on a day trip (Ausflug). Could be at a lake, visiting a castle, or in a scenic lo...**
+- Used in: A2-2-M10-L08
+- Save to: `apps/web/static/images/shared/travel/img-group-people-day.jpg`
+- Specs: 800x600 jpg
+
+---
+
+## holidays
+
+**1 images**
+
+### 🖼️ img-anna-and-ali
+
+- [ ] **Anna and Ali having a conversation in a cozy setting, perhaps with a small Christmas tree visible...**
+- Used in: A2-2-M12-L12
+- Save to: `apps/web/static/images/shared/holidays/img-anna-and-ali.jpg`
 - Specs: 800x600 jpg
 
 ---
