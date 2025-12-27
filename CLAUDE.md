@@ -87,8 +87,8 @@ CONTENT LAB (Creation):
 
 | Level | Lessons | Content | Audio | Multimedia |
 |-------|---------|---------|-------|------------|
-| **A1** | 18 | ✅ Complete (merged) | ✅ 10 lessons | 🔄 205 tasks created |
-| **A2** | 12 | ⚠️ Raw (needs merge with Busuu) | ❌ Not generated | ❌ Not created |
+| **A1** | 18 | ✅ Complete (merged) | ✅ 18 lessons | 🔄 205 tasks created |
+| **A2** | 12 | ✅ Complete (merged with Busuu) | ✅ 12 lessons | ⏳ Tasks pending |
 | **B1** | - | ⚠️ Busuu extracted, needs lessons | ❌ Not generated | ❌ Not created |
 | **B2** | - | ❌ Not extracted | ❌ Not generated | ❌ Not created |
 
@@ -164,21 +164,21 @@ cd scripts/busuu-extractor && node extractor.js --level=b2
 
 Priority order for continuing work:
 
-1. **A2 Content Comparison** ⏳
-   - Compare `languageAppContent/phase3-lessons/A2-*/` with `extracted-content/busuu/A2/`
-   - Use prompts from `docs/tasks/content-comparison-task.md`
-   - Merge into enhanced `content/de-fa/A2/` lessons
-
-2. **A2 Audio Generation** ⏳
-   - Run `generate-audio.js --level=A2`
-
-3. **A2 Multimedia Tasks** ⏳
+1. **A2 Multimedia Tasks** ⏳
    - Create task files in `docs/multimedia-tasks/A2-*.json`
-   - Update START-HERE.md
+   - Update START-HERE.md with A2 assets
 
-4. **B1 Content Creation** ⏳
-   - Create lessons from Busuu B1 content
-   - Follow A1 pattern
+2. **B1 Content Creation** ⏳
+   - Create lessons from Busuu B1 content (`extracted-content/busuu/B1/`)
+   - Compare with `languageAppContent/phase3-lessons/B1-*/` if available
+   - Follow A1/A2 merged pattern
+
+3. **B1 Audio Generation** ⏳
+   - Run `generate-audio.js --level=B1` after lessons created
+
+4. **B2 Extraction & Content** ⏳
+   - Extract Busuu B2 content first
+   - Then create lessons
 
 ---
 
@@ -219,11 +219,12 @@ german-learning-app-main/
 
 | Date | Commit | Change | Impact |
 |------|--------|--------|--------|
+| Dec 27 | `6f3ecec` | A2 audio generation | 334 audio files for 12 A2 lessons |
+| Dec 27 | `4c3c32b` | A2 content merged | Busuu + textbook content merged with Persian notes |
+| Dec 27 | `b210a43` | AI agent entry point | CLAUDE.md and docs/AI_AGENTS.md created |
 | Dec 26 | `270e3bc` | Multimedia asset management | Assets organized by concept, reusable across lessons |
-| Dec 26 | `5ee929f` | START-HERE.md simplification | Single file for colleague's multimedia tasks |
 | Dec 25 | `85734f4` | Busuu content extractor | A1/A2/B1 content extracted |
 | Dec 22 | `e0c73b6` | TTS with Chirp3-HD | High-quality German pronunciation |
-| Dec 22 | `3b5e67d` | Modules 5 & 6 complete | A1 content finished |
 
 ---
 
