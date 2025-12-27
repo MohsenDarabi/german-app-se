@@ -6,6 +6,17 @@ Siehe `docs/ADR-0001.md` und `docs/` für Details. Repo verwaltet via pnpm + Tur
 
 ---
 
+## For AI Agents
+
+**Start here:** Read [`CLAUDE.md`](./CLAUDE.md) for complete project context, workflows, and current status.
+
+Key documents:
+- `CLAUDE.md` - Main entry point with pipeline overview
+- `docs/AI_AGENTS.md` - Detailed agent roles and handoff protocols
+- `docs/tasks/content-comparison-task.md` - Content merging workflow
+
+---
+
 ## Audio Generation (TTS)
 
 The app uses Google Cloud Text-to-Speech with **Chirp3-HD** voices for highest quality German pronunciation.
