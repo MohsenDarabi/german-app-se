@@ -28,7 +28,7 @@ This folder supports **Approach B** - building ground truth documentation.
 | ST-08 | Word Order (Phrase Builder) | documented | 1 |
 | ST-09 | Multiple Choice (MCQ) | documented | 1 |
 | ST-10 | Matching Pairs (Matchup) | documented | 1 |
-| ST-11 | Dialog/Conversation | - | - |
+| ST-11 | Conversation (Community) | documented (pass-through) | 1 |
 | ST-12 | Listening Exercise | - | - |
 | ST-13 | Speaking Exercise | - | - |
 | ST-14 | True/False | documented | 1 |
