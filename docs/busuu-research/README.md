@@ -35,6 +35,7 @@ This folder supports **Approach B** - building ground truth documentation.
 | ST-15 | Translation | - | - |
 | ST-16 | Typing Exercise | documented | 1 |
 | ST-17 | Spelling (Letter Order) | documented | 1 |
+| ST-18 | Word Completion | documented | 1 |
 
 *Status: `documented` | `partial` | `-` (not started)*
 
