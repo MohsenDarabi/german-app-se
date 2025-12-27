@@ -7,7 +7,7 @@
   "level": "A2-2",
   "module": 11,
   "lessonNumber": 9,
-  "estimatedMinutes": 18,
+  "estimatedMinutes": 22,
   "steps": [
     {
       "type": "dialog",
@@ -171,6 +171,75 @@
       }
     },
     {
+      "type": "new-word",
+      "id": "s9a",
+      "word": {
+        "de": "anrufen",
+        "fa": "تلفن کردن"
+      },
+      "phonetic": "AN-roo-fen",
+      "wordType": "verb",
+      "example": {
+        "text": {
+          "de": "Ich rufe dich später an.",
+          "fa": "بعداً بهت زنگ می‌زنم."
+        }
+      },
+      "note": {
+        "fa": "فعل جداشونده: ich rufe...an"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s9b",
+      "word": {
+        "de": "die Tastatur",
+        "fa": "صفحه کلید"
+      },
+      "phonetic": "tas-ta-TOOR",
+      "wordType": "noun",
+      "gender": "feminin",
+      "example": {
+        "text": {
+          "de": "Die Tastatur ist sehr bequem.",
+          "fa": "صفحه کلید خیلی راحت است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s9c",
+      "word": {
+        "de": "der Akku",
+        "fa": "باتری (قابل شارژ)"
+      },
+      "phonetic": "A-koo",
+      "wordType": "noun",
+      "gender": "maskulin",
+      "example": {
+        "text": {
+          "de": "Der Akku ist leer. Ich muss mein Handy aufladen.",
+          "fa": "باتری خالی است. باید گوشیم را شارژ کنم."
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9d",
+      "title": "نکته املایی: E-Mail و کلمات مرکب",
+      "content": "**توجه به املای کلمات تکنولوژی آلمانی:**\n\n📧 **E-Mail:**\n• همیشه با خط فاصله: E-Mail\n• دو حرف بزرگ: E و M\n• E = elektronisch (الکترونیک)\n• مانند: U-Bahn, T-Shirt\n\n💻 **کلمات انگلیسی در آلمانی:**\n• Computer (maskulin): der Computer\n• Laptop (maskulin): der Laptop\n• Handy (neutral): das Handy ⚠️ فقط در آلمانی!\n\n**تفاوت با فارسی:**\nدر آلمانی کلمات تکنولوژی جنسیت دارند و باید با حرف بزرگ شروع شوند.",
+      "examples": [
+        {
+          "de": "Ich schreibe eine E-Mail am Computer.",
+          "fa": "با کامپیوتر یک ایمیل می‌نویسم."
+        },
+        {
+          "de": "Das Handy ist ein deutsches Wort!",
+          "fa": "Handy یک کلمه آلمانی است!"
+        }
+      ]
+    },
+    {
       "type": "grammar-tip",
       "id": "s10",
       "title": "💡 نکته فرهنگی: حریم خصوصی در آلمان",
@@ -225,6 +294,27 @@
       "correctAnswer": false,
       "feedback": {
         "explanation": "غلط! gut → besser (بی‌قاعده)"
+      }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s14a",
+      "question": "Der _____ ist leer. Ich muss mein Handy aufladen.",
+      "options": ["Akku", "Bildschirm", "Tastatur", "App"],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "explanation": "Akku = باتری قابل شارژ"
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s14b",
+      "instruction": "جمله را کامل کنید:",
+      "sentence": "Ich schreibe eine {0} am {1}.",
+      "options": ["E-Mail", "Email", "e-mail", "Computer", "Komputer", "computer"],
+      "correctAnswers": [0, 3],
+      "feedback": {
+        "explanation": "املای صحیح: E-Mail (با خط فاصله و دو حرف بزرگ)"
       }
     },
     {

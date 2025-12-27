@@ -167,14 +167,82 @@
       }
     },
     {
+      "type": "new-word",
+      "id": "s9a",
+      "word": {
+        "de": "Freunde treffen",
+        "fa": "با دوستان دیدار کردن"
+      },
+      "phonetic": "FROYN-de TREF-en",
+      "wordType": "verb phrase",
+      "example": {
+        "text": {
+          "de": "Am Wochenende treffe ich meine Freunde.",
+          "fa": "آخر هفته با دوستانم می‌بینم."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s9b",
+      "word": {
+        "de": "Sport treiben",
+        "fa": "ورزش کردن"
+      },
+      "phonetic": "SHPORT TRY-ben",
+      "wordType": "verb phrase",
+      "example": {
+        "text": {
+          "de": "Ich treibe zweimal pro Woche Sport.",
+          "fa": "هفته‌ای دو بار ورزش می‌کنم."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s9c",
+      "word": {
+        "de": "entspannen",
+        "fa": "استراحت کردن / آرام کردن"
+      },
+      "phonetic": "ent-SHPA-nen",
+      "wordType": "verb",
+      "example": {
+        "text": {
+          "de": "In meiner Freizeit möchte ich entspannen.",
+          "fa": "در اوقات فراغتم می‌خواهم استراحت کنم."
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9d",
+      "title": "نکته برای فارسی‌زبانان: Sport machen vs. Sport treiben",
+      "content": "**دو فعل برای ورزش:**\n\n**Sport machen** = ورزش کردن (عمومی)\n• بیشتر در مکالمات روزمره\n• Ich mache Sport. = من ورزش می‌کنم.\n\n**Sport treiben** = ورزش کردن (رسمی‌تر)\n• رسمی‌تر و ادبی‌تر\n• Ich treibe Sport. = من ورزش می‌کنم.\n\n⚠️ **نکته:** هر دو درست هستند!\nدر زبان فارسی تفاوتی نداریم، اما در آلمانی \"treiben\" کمی رسمی‌تر است.",
+      "examples": [
+        {
+          "de": "Ich mache jeden Tag Sport.",
+          "fa": "هر روز ورزش می‌کنم. (روزمره)"
+        },
+        {
+          "de": "Ich treibe regelmäßig Sport.",
+          "fa": "مرتباً ورزش می‌کنم. (رسمی)"
+        }
+      ]
+    },
+    {
       "type": "grammar-tip",
       "id": "s10",
       "title": "💡 نکته فرهنگی: Vereine در آلمان",
-      "content": "سیستم باشگاه‌ها (Vereine) در آلمان:\n\n🏃 **Sportverein:**\n• ورزش در آلمان = عضویت در باشگاه\n• حق عضویت ماهانه (۵-۳۰ یورو)\n• فوتبال، شنا، تنیس محبوب\n\n🎵 **سایر Vereine:**\n• Musikverein = انجمن موسیقی\n• Wanderverein = باشگاه کوهنوردی\n• Schützenverein = باشگاه تیراندازی\n\n🤝 **جامعه:**\n• راه خوب برای دوستیابی\n• آلمانی‌ها عاشق عضویت هستند!",
+      "content": "سیستم باشگاه‌ها (Vereine) در آلمان:\n\n🏃 **Sportverein:**\n• ورزش در آلمان = عضویت در باشگاه\n• حق عضویت ماهانه (۵-۳۰ یورو)\n• فوتبال، شنا، تنیس محبوب\n• بخش مهم زندگی اجتماعی آلمانی‌ها\n\n🎵 **سایر Vereine:**\n• Musikverein = انجمن موسیقی\n• Wanderverein = باشگاه کوهنوردی\n• Schützenverein = باشگاه تیراندازی\n• Gartenverein = باشگاه باغبانی\n\n🤝 **جامعه:**\n• راه خوب برای دوستیابی\n• آلمانی‌ها عاشق عضویت هستند!\n• بیش از ۴۰٪ آلمانی‌ها عضو یک Verein هستند",
       "examples": [
         {
           "de": "Ich bin Mitglied in einem Sportverein.",
           "fa": "عضو یک باشگاه ورزشی هستم."
+        },
+        {
+          "de": "In Deutschland gibt es über 600.000 Vereine!",
+          "fa": "در آلمان بیش از ۶۰۰،۰۰۰ باشگاه وجود دارد!"
         }
       ]
     },
@@ -236,6 +304,38 @@
       },
       "feedback": {
         "explanation": "Trotzdem + Verb + Subject: Trotzdem gehe ich..."
+      }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s16",
+      "question": "Am Wochenende _____ ich meine Freunde.",
+      "options": ["treffe", "treffen", "triffst", "trefft"],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "explanation": "با ich از treffe استفاده می‌کنیم: Freunde treffen = با دوستان دیدار کردن"
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s17",
+      "instruction": "جمله را کامل کنید:",
+      "sentence": "Ich {0} zweimal pro Woche {1}.",
+      "options": ["treibe", "treffen", "Sport", "Freunde"],
+      "correctAnswers": [0, 2],
+      "feedback": {
+        "explanation": "Sport treiben = ورزش کردن (رسمی‌تر از Sport machen)"
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s18",
+      "instruction": "جمله را کامل کنید:",
+      "sentence": "Ich habe viel Stress. In meiner Freizeit möchte ich {0}.",
+      "options": ["entspannen", "entschlafen", "treffen", "treiben"],
+      "correctAnswers": [0],
+      "feedback": {
+        "explanation": "entspannen = استراحت کردن، آرام کردن"
       }
     }
   ]

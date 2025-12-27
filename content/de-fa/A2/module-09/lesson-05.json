@@ -194,14 +194,84 @@
       }
     },
     {
+      "type": "new-word",
+      "id": "s10a",
+      "word": {
+        "de": "verletzt",
+        "fa": "مصدوم / زخمی"
+      },
+      "phonetic": "fer-LETZT",
+      "wordType": "adjective",
+      "example": {
+        "text": {
+          "de": "Ich bin verletzt. Ich brauche einen Arzt.",
+          "fa": "مصدومم. به دکتر نیاز دارم."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s10b",
+      "word": {
+        "de": "der Krankenwagen",
+        "fa": "آمبولانس"
+      },
+      "phonetic": "KRAN-ken-vah-gen",
+      "wordType": "noun",
+      "gender": "maskulin",
+      "example": {
+        "text": {
+          "de": "Rufen Sie bitte einen Krankenwagen!",
+          "fa": "لطفاً آمبولانس بخوانید!"
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s10c",
+      "word": {
+        "de": "die Symptome (Pl.)",
+        "fa": "علائم"
+      },
+      "phonetic": "zümp-TOH-me",
+      "wordType": "noun",
+      "gender": "plural",
+      "example": {
+        "text": {
+          "de": "Was sind Ihre Symptome?",
+          "fa": "علائم شما چیست؟"
+        }
+      }
+    },
+    {
       "type": "grammar-tip",
       "id": "s11",
       "title": "💡 نکته فرهنگی: سیستم بهداشت آلمان",
-      "content": "سیستم بهداشتی در آلمان:\n\n🏥 **Krankenversicherung:**\n• بیمه سلامت اجباری است!\n• دو نوع: قانونی (gesetzlich) یا خصوصی (privat)\n\n👨‍⚕️ **Hausarzt:**\n• پزشک عمومی = اولین مرجع\n• برای متخصص، معمولاً ارجاع لازم است\n\n💊 **Apotheke:**\n• داروهای تجویزی با نسخه\n• داروهای بدون نسخه گران‌ترند!\n\n📞 **اورژانس:** 112",
+      "content": "سیستم بهداشتی در آلمان:\n\n🏥 **Krankenversicherung (بیمه سلامت):**\n• بیمه سلامت اجباری است!\n• دو نوع: قانونی (gesetzlich) یا خصوصی (privat)\n\n👨‍⚕️ **Die Praxis (مطب):**\n• Hausarzt = پزشک خانواده (اولین مرجع)\n• Kinderarzt = متخصص اطفال\n• Facharzt = پزشک متخصص (با ارجاع)\n\n🩺 **Die Untersuchung (معاینه):**\n• معاینه و تشخیص توسط پزشک\n• ممکن است Krankschreibung (گواهی پزشکی) بگیرید\n\n💊 **Apotheke:**\n• داروهای تجویزی با نسخه\n• داروهای بدون نسخه گران‌ترند!\n\n🚑 **اورژانس:** \n• تلفن: 112\n• Krankenwagen = آمبولانس\n• در موارد اضطراری: Krankenhaus (بیمارستان)",
       "examples": [
         {
           "de": "Ich brauche einen Termin beim Hausarzt.",
           "fa": "به وقت پیش پزشک عمومی نیاز دارم."
+        },
+        {
+          "de": "Können Sie einen Krankenwagen rufen?",
+          "fa": "می‌توانید آمبولانس بخوانید؟"
+        }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s11a",
+      "title": "عبارات اضطراری و کمک خواستن",
+      "content": "**درخواست کمک در موارد اضطراری:**\n\n**۱. کمک خواستن:**\n• Können Sie mir bitte helfen? = می‌توانید به من کمک کنید؟\n• Ich brauche einen Arzt! = به دکتر نیاز دارم!\n• Rufen Sie bitte einen Krankenwagen! = لطفاً آمبولانس بخوانید!\n\n**۲. توصیف مصدومیت:**\n• Ich bin verletzt. = مصدومم.\n• Ich habe starke Schmerzen. = درد شدیدی دارم.\n• Ich glaube, ich habe mir etwas gebrochen. = فکر کنم چیزی شکسته.\n\n**۳. پرسیدن درباره خدمات:**\n• Gibt es hier in der Nähe ein Krankenhaus? = بیمارستانی اینجا نزدیکی هست؟\n• Wo ist die nächste Apotheke? = نزدیک‌ترین داروخانه کجاست؟\n\n⚠️ **نکته:** rufen = صدا کردن / فریاد زدن، anrufen = تلفن کردن",
+      "examples": [
+        {
+          "de": "Ich bin verletzt. Ich habe starke Schmerzen.",
+          "fa": "مصدومم. درد شدیدی دارم."
+        },
+        {
+          "de": "Gibt es hier in der Nähe ein Krankenhaus?",
+          "fa": "بیمارستانی اینجا نزدیکی هست؟"
         }
       ]
     },
@@ -237,6 +307,27 @@
       "correctAnswer": false,
       "feedback": {
         "explanation": "غلط! Mir ist schlecht = حالم بد است (حالت تهوع). Ich bin schlecht = من بد هستم (در کاری)"
+      }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s15a",
+      "question": "Ich bin _____. Rufen Sie bitte einen Krankenwagen!",
+      "options": ["verletzt", "Verletzung", "verletzen", "verletzend"],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "explanation": "verletzt = مصدوم (صفت). Ich bin verletzt = مصدومم"
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s15b",
+      "instruction": "جمله را کامل کنید:",
+      "sentence": "Können Sie mir {0} {1}? Ich habe starke {2}.",
+      "options": ["bitte", "danke", "helfen", "geholfen", "Schmerzen", "Schmerz"],
+      "correctAnswers": [0, 2, 4],
+      "feedback": {
+        "explanation": "Können Sie mir bitte helfen? = می‌توانید به من کمک کنید؟ starke Schmerzen = درد شدید"
       }
     },
     {

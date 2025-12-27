@@ -154,6 +154,80 @@
       }
     },
     {
+      "type": "new-word",
+      "id": "s8a",
+      "word": {
+        "de": "die Reise",
+        "fa": "سفر / سفرنامه"
+      },
+      "phonetic": "RAI-ze",
+      "wordType": "noun",
+      "gender": "feminin",
+      "example": {
+        "text": {
+          "de": "Unsere Reise nach Italien war wunderschön.",
+          "fa": "سفر ما به ایتالیا فوق‌العاده زیبا بود."
+        }
+      },
+      "note": {
+        "fa": "تفاوت: reisen (فعل: سفر کردن) / die Reise (اسم: سفر)"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s8b",
+      "word": {
+        "de": "ans Meer fahren",
+        "fa": "به ساحل رفتن"
+      },
+      "phonetic": "ans MEHR FAH-ren",
+      "wordType": "expression",
+      "example": {
+        "text": {
+          "de": "Im Sommer fahren wir ans Meer.",
+          "fa": "در تابستان به ساحل می‌رویم."
+        }
+      },
+      "note": {
+        "fa": "مشابه: in die Berge fahren (به کوهستان رفتن), aufs Land fahren (به روستا رفتن)"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s8c",
+      "word": {
+        "de": "letztes Jahr",
+        "fa": "سال گذشته"
+      },
+      "phonetic": "LETS-tes yahr",
+      "wordType": "time phrase",
+      "example": {
+        "text": {
+          "de": "Letztes Jahr sind wir nach Spanien gefahren.",
+          "fa": "سال گذشته به اسپانیا رفتیم."
+        }
+      },
+      "note": {
+        "fa": "مشابه: letzten Monat (ماه گذشته), letzte Woche (هفته گذشته)"
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s8d",
+      "title": "ترتیب کلمات با عبارات زمانی",
+      "content": "عبارات زمانی مثل **letztes Jahr**, **letzten Monat**, **letzte Woche** می‌توانند در دو جای جمله قرار گیرند:\n\n**۱. بعد از فعل:**\nIch habe **letztes Jahr** viel gereist.\n(سال گذشته زیاد سفر کردم.)\n\n**۲. اول جمله (تأکید بیشتر):**\n**Letztes Jahr** habe ich viel gereist.\nتوجه: وقتی عبارت زمانی اول جمله است، فعل و فاعل جای خود را عوض می‌کنند!\n\n**نکته مهم برای فارسی‌زبانان:**\nدر فارسی می‌گوییم: \"سال گذشته من سفر کردم\"\nاما در آلمانی: **Letztes Jahr bin ich gereist** (فعل قبل از فاعل!)",
+      "examples": [
+        {
+          "de": "Letzten Monat habe ich viel Sport gemacht.",
+          "fa": "ماه گذشته زیاد ورزش کردم."
+        },
+        {
+          "de": "Letzte Woche sind meine Eltern zu Besuch gekommen.",
+          "fa": "هفته گذشته پدر و مادرم آمدند دیدن."
+        }
+      ]
+    },
+    {
       "type": "grammar-tip",
       "id": "s9",
       "title": "💡 نکته فرهنگی: فرهنگ تعطیلات در آلمان",
@@ -233,6 +307,41 @@
       "correctAnswerIndex": 0,
       "feedback": {
         "explanation": "Urlaub مذکر است (der Urlaub)، پس از Er استفاده می‌کنیم."
+      }
+    },
+    {
+      "type": "word-order",
+      "id": "s16",
+      "instruction": "کلمات را مرتب کنید (عبارت زمانی اول جمله):",
+      "words": ["Jahr", "Letztes", "sind", "wir", "viel", "gereist"],
+      "correctOrder": [1, 0, 2, 3, 4, 5],
+      "correctSentence": {
+        "de": "Letztes Jahr sind wir viel gereist",
+        "fa": "سال گذشته زیاد سفر کردیم"
+      },
+      "feedback": {
+        "explanation": "عبارت زمانی اول + فعل + فاعل + بقیه جمله"
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s17",
+      "instruction": "جمله را با کلمات مناسب کامل کنید:",
+      "sentence": "Unsere {0} nach Italien war wunderschön!",
+      "options": ["Reise", "reisen", "gereist", "Urlaub"],
+      "correctAnswers": [0],
+      "feedback": {
+        "explanation": "die Reise = سفر (اسم). reisen = سفر کردن (فعل)"
+      }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s18",
+      "question": "Im Sommer _____ wir ans Meer.",
+      "options": ["fahren", "gefahren", "fährt", "gefahrt"],
+      "correctAnswerIndex": 0,
+      "feedback": {
+        "explanation": "زمان حال ساده: wir fahren ans Meer (به ساحل می‌رویم)"
       }
     }
   ]
