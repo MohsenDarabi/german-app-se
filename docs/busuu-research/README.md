@@ -38,6 +38,7 @@ This folder supports **Approach B** - building ground truth documentation.
 | ST-18 | Word Completion | documented | 1 |
 | ST-19 | Review Dashboard | documented (pass-through) | 1 |
 | ST-20 | Video Comprehension | documented | 1 |
+| ST-21 | Grammar Tip | documented | 1 |
 
 *Status: `documented` | `partial` | `-` (not started)*
 
