@@ -88,7 +88,7 @@ CONTENT LAB (Creation):
 | Level | Lessons | Content | Audio | Multimedia |
 |-------|---------|---------|-------|------------|
 | **A1** | 18 | ✅ Complete (merged) | ✅ 18 lessons | 🔄 205 tasks created |
-| **A2** | 12 | ✅ Complete (merged with Busuu) | ✅ 12 lessons | ⏳ Tasks pending |
+| **A2** | 12 | ✅ Complete (merged with Busuu) | ✅ 12 lessons | 🔄 97 tasks created |
 | **B1** | - | ⚠️ Busuu extracted, needs lessons | ❌ Not generated | ❌ Not created |
 | **B2** | - | ❌ Not extracted | ❌ Not generated | ❌ Not created |
 
@@ -219,12 +219,12 @@ german-learning-app-main/
 
 | Date | Commit | Change | Impact |
 |------|--------|--------|--------|
+| Dec 27 | `73be3a9` | A2 multimedia tasks | 97 new assets (85 images, 12 videos) for A2 |
 | Dec 27 | `6f3ecec` | A2 audio generation | 334 audio files for 12 A2 lessons |
 | Dec 27 | `4c3c32b` | A2 content merged | Busuu + textbook content merged with Persian notes |
 | Dec 27 | `b210a43` | AI agent entry point | CLAUDE.md and docs/AI_AGENTS.md created |
-| Dec 26 | `270e3bc` | Multimedia asset management | Assets organized by concept, reusable across lessons |
+| Dec 26 | `270e3bc` | Multimedia asset management | Assets organized by concept, reusable |
 | Dec 25 | `85734f4` | Busuu content extractor | A1/A2/B1 content extracted |
-| Dec 22 | `e0c73b6` | TTS with Chirp3-HD | High-quality German pronunciation |
 
 ---
 
