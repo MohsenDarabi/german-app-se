@@ -198,17 +198,16 @@ export async function hasFeedback(page) {
       'Lesson complete',
       'Congratulations',
       'Great job',
-      'Today\'s challenges',
-      'Today's challenges',  // Fancy apostrophe
+      'challenges',          // Matches "Today's challenges" regardless of apostrophe
       'Earn 20 stars',
       'Complete 3 lessons',
+      'Score over 80%',
       'Bronze League',
       'Silver League',
       'Gold League',
       'Welcome to the',
       'Keep it up',
-      'You\'re on a streak',
-      'You're on a streak',  // Fancy apostrophe
+      'on a streak',         // Matches "You're on a streak" regardless of apostrophe
       'Daily goal',
       'XP earned'
     ];
@@ -281,17 +280,16 @@ export async function isInterstitialPage(page) {
   return await page.evaluate(() => {
     const interstitialIndicators = [
       'Checkpoint completed',
-      'Today\'s challenges',
-      'Today's challenges',  // Fancy apostrophe variant
+      'challenges',          // Matches "Today's challenges" regardless of apostrophe
       'Earn 20 stars',       // Specific text from Today's challenges screen
       'Complete 3 lessons',  // Another specific text
+      'Score over 80%',      // Another challenge text
       'Bronze League',
       'Silver League',
       'Gold League',
       'Welcome to the',
       'Keep it up',
-      'You\'re on a streak',
-      'You're on a streak',  // Fancy apostrophe variant
+      'on a streak',         // Matches "You're on a streak" regardless of apostrophe
       'Daily goal',
       'XP earned',
       'Challenge completed',
@@ -301,7 +299,8 @@ export async function isInterstitialPage(page) {
       'Congratulations'
     ];
 
-    const bodyText = document.body?.innerText || '';
+    // Normalize text by replacing fancy apostrophes with regular ones
+    const bodyText = (document.body?.innerText || '').replace(/[\u2018\u2019]/g, "'");
     return interstitialIndicators.some(text =>
       bodyText.toLowerCase().includes(text.toLowerCase())
     );
