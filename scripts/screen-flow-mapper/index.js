@@ -6,9 +6,11 @@
  * Extract Busuu content screen-by-screen with human-in-the-loop validation.
  *
  * Usage:
- *   node index.js                    # Interactive mode
- *   node index.js --lesson <url>     # Extract specific lesson
- *   node index.js --validate         # Validate existing extraction
+ *   node index.js                     # Interactive mode
+ *   node index.js --level=a1          # Extract all lessons for level
+ *   node index.js --lesson <url>      # Extract specific lesson
+ *   node index.js --validate          # Validate existing extraction
+ *   node index.js --auto              # Auto-advance without validation
  *
  * See: docs/busuu-research/README.md
  */
@@ -16,6 +18,7 @@
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import { promises as fs } from 'fs';
+import fsSync from 'fs';
 
 import { detectScreenType, waitForScreen, hasFeedback, isSkipPage, SCREEN_TYPES } from './lib/detector.js';
 import { extract, hasExtractor } from './lib/extractors/index.js';
@@ -31,9 +34,96 @@ const __dirname = dirname(__filename);
 const CONFIG = {
   cookiesPath: join(__dirname, 'cookies.json'),
   outputDir: join(__dirname, 'output'),
+  finalOutputDir: join(__dirname, '..', '..', 'extracted-content', 'busuu-screen-flow'),
   maxScreens: 100, // Safety limit per lesson
-  screenTimeout: 15000
+  screenTimeout: 15000,
+  // Progress files are per-level
+  getProgressFile: (level) => join(__dirname, `progress-${level.toLowerCase()}.json`)
 };
+
+// ============================================
+// PROGRESS TRACKING (Like the other extractor)
+// ============================================
+
+function loadProgress(level) {
+  const progressFile = CONFIG.getProgressFile(level);
+  try {
+    if (fsSync.existsSync(progressFile)) {
+      const data = JSON.parse(fsSync.readFileSync(progressFile, 'utf8'));
+      console.log(`Loaded ${level.toUpperCase()} progress: ${data.completedLessons?.length || 0} lessons already extracted`);
+      return data;
+    }
+  } catch (e) {
+    console.log(`No previous ${level.toUpperCase()} progress found, starting fresh`);
+  }
+  return { completedLessons: [], lessons: [] };
+}
+
+function saveProgress(level, progress) {
+  const progressFile = CONFIG.getProgressFile(level);
+  try {
+    fsSync.writeFileSync(progressFile, JSON.stringify(progress, null, 2));
+  } catch (e) {
+    console.log('Warning: Could not save progress:', e.message);
+  }
+}
+
+// ============================================
+// TIMELINE NAVIGATION (Get all lessons)
+// ============================================
+
+async function getAllLessons(page, level) {
+  console.log(`\nGetting ${level.toUpperCase()} lessons from timeline...`);
+
+  await page.goto(`https://www.busuu.com/dashboard/timeline/${level}`, { waitUntil: 'networkidle2' });
+  await page.waitForTimeout(2500);
+
+  // Scroll to load all lesson cards
+  await page.evaluate(async () => {
+    for (let i = 0; i < 30; i++) {
+      window.scrollBy(0, 500);
+      await new Promise(r => setTimeout(r, 150));
+    }
+    window.scrollTo(0, 0);
+  });
+  await page.waitForTimeout(1500);
+
+  // Extract lesson cards
+  const lessons = await page.evaluate(() => {
+    const results = [];
+    const cards = document.querySelectorAll('[data-testid="lesson_card"]');
+
+    cards.forEach((card, i) => {
+      const titleEl = card.querySelector('[data-testid="dialog_level_title"]');
+      const title = titleEl?.textContent?.trim() || `Lesson ${i + 1}`;
+
+      const descEl = titleEl?.nextElementSibling;
+      const description = descEl?.textContent?.trim() || '';
+
+      const isLocked = !!card.querySelector('[data-testid="lesson_padlock"]');
+
+      // Check if speaking lesson
+      const hasAnimation = !!card.querySelector('[aria-label="animation"]');
+      const isSpeakingTitle = title.toLowerCase().includes('speaking') ||
+                              description.toLowerCase().includes('speaking practice');
+      const isSpeaking = hasAnimation || isSpeakingTitle;
+
+      // Get chapter from parent section
+      const section = card.closest('section');
+      const chapter = section?.querySelector('h3')?.textContent?.trim() || '';
+
+      results.push({ index: i, title, description, isLocked, chapter, isSpeaking });
+    });
+
+    return results;
+  });
+
+  const unlocked = lessons.filter(l => !l.isLocked);
+  const speaking = lessons.filter(l => l.isSpeaking);
+  console.log(`Found ${lessons.length} lessons (${unlocked.length} unlocked, ${speaking.length} speaking)`);
+
+  return lessons;
+}
 
 /**
  * Main extraction flow for a single lesson
@@ -277,20 +367,209 @@ class AutoSaver {
 }
 
 /**
+ * Click on a lesson card in the timeline and start it
+ */
+async function startLessonFromTimeline(page, lessonInfo) {
+  // Scroll to make sure the lesson is visible
+  await page.evaluate(async (idx) => {
+    const cards = document.querySelectorAll('[data-testid="lesson_card"]');
+    if (cards[idx]) {
+      cards[idx].scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }, lessonInfo.index);
+  await page.waitForTimeout(500);
+
+  // Click the lesson card
+  const clicked = await page.evaluate((idx) => {
+    const cards = document.querySelectorAll('[data-testid="lesson_card"]');
+    if (cards[idx]) {
+      cards[idx].click();
+      return true;
+    }
+    return false;
+  }, lessonInfo.index);
+
+  if (!clicked) {
+    console.log(`  Could not click lesson card at index ${lessonInfo.index}`);
+    return false;
+  }
+
+  await page.waitForTimeout(1500);
+
+  // Click "Start lesson" or similar button
+  const started = await page.evaluate(() => {
+    const buttons = [...document.querySelectorAll('button')];
+    const priorities = [
+      'Restart lesson', 'Start lesson', 'Start learning',
+      'Begin lesson', 'Continue lesson', 'Continue learning',
+      "Let's go", 'Continue', 'Start', 'Begin'
+    ];
+
+    for (const text of priorities) {
+      const btn = buttons.find(b => {
+        const btnText = b.textContent?.trim().toLowerCase();
+        return btnText === text.toLowerCase() || btnText?.includes(text.toLowerCase());
+      });
+      if (btn && btn.offsetParent !== null) {
+        btn.click();
+        return btn.textContent?.trim();
+      }
+    }
+    return null;
+  });
+
+  if (started) {
+    console.log(`  Started: "${started}"`);
+    await page.waitForTimeout(2000);
+    return true;
+  }
+
+  console.log(`  Could not find start button`);
+  return false;
+}
+
+/**
+ * Extract all lessons for a level with progress tracking
+ */
+async function extractLevel(page, level, options = {}) {
+  const { autoAdvance = false } = options;
+
+  // Load previous progress
+  const progress = loadProgress(level);
+  const completedLessons = new Set(progress.completedLessons || []);
+  const extractedLessons = progress.lessons || [];
+
+  // Get all lessons from timeline
+  const allLessons = await getAllLessons(page, level);
+
+  if (allLessons.length === 0) {
+    console.log('No lessons found!');
+    return;
+  }
+
+  // Filter to unlocked, non-speaking lessons
+  const lessons = allLessons.filter(l => !l.isLocked && !l.isSpeaking);
+  console.log(`\nWill extract ${lessons.length} lessons (skipping locked/speaking)`);
+
+  // Process each lesson
+  for (let i = 0; i < lessons.length; i++) {
+    const lessonInfo = lessons[i];
+    const lessonKey = `${lessonInfo.chapter}:${lessonInfo.title}`;
+
+    // Skip already completed lessons
+    if (completedLessons.has(lessonKey)) {
+      console.log(`\n[${i + 1}/${lessons.length}] ${lessonInfo.title} - SKIPPED (already extracted)`);
+      continue;
+    }
+
+    console.log(`\n[${i + 1}/${lessons.length}] ${lessonInfo.title}`);
+    console.log(`  Chapter: ${lessonInfo.chapter}`);
+
+    // Navigate back to timeline
+    await page.goto(`https://www.busuu.com/dashboard/timeline/${level}`, { waitUntil: 'networkidle2' });
+    await page.waitForTimeout(2000);
+
+    // Scroll to load the target lesson card
+    await page.evaluate(async (targetIdx) => {
+      let lastCount = 0;
+      for (let i = 0; i < 50; i++) {
+        const cards = document.querySelectorAll('[data-testid="lesson_card"]');
+        if (cards.length > targetIdx) break;
+        if (cards.length === lastCount && i > 10) break;
+        lastCount = cards.length;
+        window.scrollBy(0, 400);
+        await new Promise(r => setTimeout(r, 200));
+      }
+    }, lessonInfo.index);
+    await page.waitForTimeout(1000);
+
+    // Start the lesson
+    const started = await startLessonFromTimeline(page, lessonInfo);
+    if (!started) {
+      console.log('  Failed to start lesson, skipping...');
+      continue;
+    }
+
+    // Get the lesson URL for extraction
+    const lessonUrl = page.url();
+
+    // Initialize auto-saver for this lesson
+    const autoSaver = new AutoSaver(CONFIG.outputDir);
+    await autoSaver.init();
+
+    // Extract the lesson screens
+    const results = await extractLesson(page, lessonUrl, {
+      validate: !autoAdvance,
+      autoAdvance,
+      autoSaver
+    });
+
+    // Save the results
+    if (results.screens.length > 0) {
+      const finalPath = await autoSaver.finalize(results);
+      console.log(`  Saved: ${finalPath}`);
+
+      // Add to extracted lessons
+      extractedLessons.push({
+        key: lessonKey,
+        title: lessonInfo.title,
+        chapter: lessonInfo.chapter,
+        screenCount: results.screens.length,
+        extractedAt: results.extractedAt,
+        file: finalPath
+      });
+
+      // Mark as completed
+      completedLessons.add(lessonKey);
+
+      // Save progress
+      saveProgress(level, {
+        completedLessons: Array.from(completedLessons),
+        lessons: extractedLessons
+      });
+      console.log(`  Progress saved (${completedLessons.size}/${lessons.length} done)`);
+    } else {
+      console.log('  No screens extracted');
+    }
+  }
+
+  // Final summary
+  console.log('\n========================================');
+  console.log('EXTRACTION COMPLETE');
+  console.log('========================================');
+  console.log(`Level:       ${level.toUpperCase()}`);
+  console.log(`Completed:   ${completedLessons.size}/${lessons.length} lessons`);
+  console.log(`Progress:    ${CONFIG.getProgressFile(level)}`);
+  console.log(`Output:      ${CONFIG.outputDir}`);
+  console.log('========================================\n');
+}
+
+/**
  * Main entry point
  */
 async function main() {
   const args = process.argv.slice(2);
 
   // Parse arguments
+  const levelArg = args.find(a => a.startsWith('--level='));
+  const level = levelArg ? levelArg.split('=')[1].toLowerCase() : null;
   const lessonUrl = args.find((a, i) => args[i - 1] === '--lesson');
-  const validateMode = args.includes('--validate');
   const autoAdvance = args.includes('--auto');
   const headless = args.includes('--headless');
 
   console.log('╔════════════════════════════════════════════════════════════╗');
   console.log('║         BUSUU SCREEN FLOW MAPPER (Approach B)              ║');
   console.log('╚════════════════════════════════════════════════════════════╝');
+  console.log();
+
+  if (level) {
+    console.log(`Mode: Extract all ${level.toUpperCase()} lessons`);
+  } else if (lessonUrl) {
+    console.log(`Mode: Extract single lesson`);
+  } else {
+    console.log('Mode: Interactive');
+  }
+  console.log(`Auto-advance: ${autoAdvance ? 'Yes' : 'No (with validation)'}`);
   console.log();
 
   // Launch browser
@@ -313,39 +592,54 @@ async function main() {
       await navigator.saveCookies(page, CONFIG.cookiesPath);
     }
 
-    // If no lesson URL provided, ask for one
-    let targetUrl = lessonUrl;
-    if (!targetUrl) {
-      console.log('\nNavigate to the lesson you want to extract in the browser.');
-      targetUrl = await validator.askText('Enter lesson URL (or press Enter if already there)');
+    // MODE 1: Extract all lessons for a level
+    if (level) {
+      await extractLevel(page, level, { autoAdvance });
+    }
+    // MODE 2: Extract single lesson from URL
+    else if (lessonUrl) {
+      const autoSaver = new AutoSaver(CONFIG.outputDir);
+      await autoSaver.init();
+      console.log(`\nAuto-save enabled: ${autoSaver.getPartialPath()}`);
 
-      if (!targetUrl) {
-        targetUrl = page.url();
+      const results = await extractLesson(page, lessonUrl, {
+        validate: !autoAdvance,
+        autoAdvance,
+        autoSaver
+      });
+
+      if (results.screens.length > 0) {
+        validator.displaySummary(results.screens);
+        const finalPath = await autoSaver.finalize(results);
+        console.log(`\nResults saved to: ${finalPath}`);
+      } else {
+        console.log('\nNo screens extracted.');
       }
     }
+    // MODE 3: Interactive mode
+    else {
+      console.log('\nNavigate to the lesson you want to extract in the browser.');
+      const targetUrl = await validator.askText('Enter lesson URL (or press Enter if already there)');
 
-    // Initialize auto-saver for partial progress
-    const autoSaver = new AutoSaver(CONFIG.outputDir);
-    await autoSaver.init();
-    console.log(`\nAuto-save enabled: Progress will be saved after each screen.`);
-    console.log(`Partial file: ${autoSaver.getPartialPath()}`);
+      const url = targetUrl || page.url();
 
-    // Extract the lesson
-    const results = await extractLesson(page, targetUrl, {
-      validate: !autoAdvance,
-      autoAdvance,
-      autoSaver
-    });
+      const autoSaver = new AutoSaver(CONFIG.outputDir);
+      await autoSaver.init();
+      console.log(`\nAuto-save enabled: ${autoSaver.getPartialPath()}`);
 
-    // Show summary
-    if (results.screens.length > 0) {
-      validator.displaySummary(results.screens);
+      const results = await extractLesson(page, url, {
+        validate: !autoAdvance,
+        autoAdvance,
+        autoSaver
+      });
 
-      // Finalize results (removes partial file, creates final file)
-      const finalPath = await autoSaver.finalize(results);
-      console.log(`\nResults saved to: ${finalPath}`);
-    } else {
-      console.log('\nNo screens extracted.');
+      if (results.screens.length > 0) {
+        validator.displaySummary(results.screens);
+        const finalPath = await autoSaver.finalize(results);
+        console.log(`\nResults saved to: ${finalPath}`);
+      } else {
+        console.log('\nNo screens extracted.');
+      }
     }
 
   } catch (error) {
