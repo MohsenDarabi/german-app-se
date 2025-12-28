@@ -22,6 +22,7 @@ export async function solveExercise(page) {
   // Try each solver in order
   const solvers = [
     { name: 'conversation', fn: solveConversation }, // Skip community exercises first
+    { name: 'tip', fn: solveTip }, // Grammar tips - just informational
     { name: 'flashcard', fn: solveFlashcard },
     { name: 'typing', fn: solveTyping },
     { name: 'true-false', fn: solveTrueFalse },
@@ -101,6 +102,15 @@ async function solveConversation(page) {
   });
 
   return clicked ? `skip-community: ${clicked}` : null;
+}
+
+/**
+ * Grammar Tip - just informational, click Continue
+ */
+async function solveTip(page) {
+  const isTip = await page.$('[data-qa-ex="ex-tip"]');
+  if (!isTip) return null;
+  return 'continue (informational)';
 }
 
 /**
