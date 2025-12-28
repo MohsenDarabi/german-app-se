@@ -199,12 +199,16 @@ export async function hasFeedback(page) {
       'Congratulations',
       'Great job',
       'Today\'s challenges',
+      'Today's challenges',  // Fancy apostrophe
+      'Earn 20 stars',
+      'Complete 3 lessons',
       'Bronze League',
       'Silver League',
       'Gold League',
       'Welcome to the',
       'Keep it up',
       'You\'re on a streak',
+      'You're on a streak',  // Fancy apostrophe
       'Daily goal',
       'XP earned'
     ];
@@ -278,12 +282,16 @@ export async function isInterstitialPage(page) {
     const interstitialIndicators = [
       'Checkpoint completed',
       'Today\'s challenges',
+      'Today's challenges',  // Fancy apostrophe variant
+      'Earn 20 stars',       // Specific text from Today's challenges screen
+      'Complete 3 lessons',  // Another specific text
       'Bronze League',
       'Silver League',
       'Gold League',
       'Welcome to the',
       'Keep it up',
       'You\'re on a streak',
+      'You're on a streak',  // Fancy apostrophe variant
       'Daily goal',
       'XP earned',
       'Challenge completed',
