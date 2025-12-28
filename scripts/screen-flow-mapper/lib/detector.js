@@ -234,17 +234,15 @@ export async function countFillgapBlanks(page) {
 }
 
 /**
- * Check if we're on a page that should be skipped (not an exercise)
+ * Check if we're on an interstitial page that should be clicked through (not an exercise)
+ * These are reward/progress screens that appear BETWEEN exercises
  * @param {import('puppeteer').Page} page
  * @returns {Promise<boolean>}
  */
-export async function isSkipPage(page) {
+export async function isInterstitialPage(page) {
   return await page.evaluate(() => {
-    const skipIndicators = [
-      'Well done',
-      'Lesson complete',
-      'Congratulations',
-      'Great job',
+    const interstitialIndicators = [
+      'Checkpoint completed',
       'Today\'s challenges',
       'Bronze League',
       'Silver League',
@@ -256,14 +254,57 @@ export async function isSkipPage(page) {
       'XP earned',
       'Challenge completed',
       'New achievement',
-      'Level up'
+      'Level up',
+      'Great job',
+      'Congratulations'
     ];
 
     const bodyText = document.body?.innerText || '';
-    return skipIndicators.some(text =>
+    return interstitialIndicators.some(text =>
       bodyText.toLowerCase().includes(text.toLowerCase())
     );
   });
+}
+
+/**
+ * Check if lesson has actually ended (back to timeline or explicit completion)
+ * @param {import('puppeteer').Page} page
+ * @returns {Promise<boolean>}
+ */
+export async function isLessonEnded(page) {
+  return await page.evaluate(() => {
+    const url = window.location.href;
+
+    // If we're back on timeline, lesson is done
+    if (url.includes('/timeline/') && !url.includes('/course/') && !url.includes('/learning/')) {
+      return true;
+    }
+
+    // Check for explicit lesson completion indicators
+    const endIndicators = [
+      'Lesson complete',
+      'Well done!',
+      'lesson finished'
+    ];
+
+    const bodyText = document.body?.innerText || '';
+    return endIndicators.some(text =>
+      bodyText.toLowerCase().includes(text.toLowerCase())
+    );
+  });
+}
+
+/**
+ * Check if we're on a page that should be skipped (not an exercise)
+ * @param {import('puppeteer').Page} page
+ * @returns {Promise<boolean>}
+ * @deprecated Use isInterstitialPage() or isLessonEnded() instead
+ */
+export async function isSkipPage(page) {
+  // Keep for backwards compatibility - combines both checks
+  const isInterstitial = await isInterstitialPage(page);
+  const isEnded = await isLessonEnded(page);
+  return isInterstitial || isEnded;
 }
 
 export default {
@@ -272,6 +313,8 @@ export default {
   waitForScreen,
   hasFeedback,
   isSkipPage,
+  isInterstitialPage,
+  isLessonEnded,
   isWordCompletion,
   countFillgapBlanks
 };

@@ -20,7 +20,7 @@ import { dirname, join } from 'path';
 import { promises as fs } from 'fs';
 import fsSync from 'fs';
 
-import { detectScreenType, waitForScreen, hasFeedback, isSkipPage, SCREEN_TYPES } from './lib/detector.js';
+import { detectScreenType, waitForScreen, hasFeedback, isInterstitialPage, isLessonEnded, SCREEN_TYPES } from './lib/detector.js';
 import { extract, hasExtractor } from './lib/extractors/index.js';
 import { extractFeedback } from './lib/extractors/feedback.js';
 import { solveExercise } from './lib/auto-solver.js';
@@ -167,12 +167,40 @@ async function extractLesson(page, lessonUrl, options = {}) {
   // Main extraction loop
   while (screenIndex < CONFIG.maxScreens) {
     try {
-      // First check if we're on a skip page (Well done, League, etc.)
-      // Treat this as lesson complete - same as the other extractor
-      if (await isSkipPage(page)) {
-        console.log('\n  → Completion/reward page detected (Well done, League, etc.)');
+      // First check if lesson has actually ended (back to timeline or explicit completion)
+      if (await isLessonEnded(page)) {
+        console.log('\n  → Lesson end detected');
         console.log('\nLesson complete!');
         break;
+      }
+
+      // Check for interstitial pages (Checkpoint completed, Today's challenges, etc.)
+      // These should be clicked through, not treated as lesson end
+      if (await isInterstitialPage(page)) {
+        console.log('\n  → Interstitial page detected (Checkpoint, Challenges, etc.)');
+        console.log('  → Clicking Continue to proceed...');
+
+        // Click Continue/Next button
+        const clicked = await page.evaluate(() => {
+          const buttons = [...document.querySelectorAll('button')];
+          const btnTexts = ['continue', 'next', 'ok', 'got it', 'close'];
+
+          for (const btn of buttons) {
+            const text = btn.textContent?.trim().toLowerCase() || '';
+            if (btnTexts.some(t => text === t || text.includes(t)) && btn.offsetParent !== null) {
+              btn.click();
+              return text;
+            }
+          }
+          return null;
+        });
+
+        if (clicked) {
+          console.log(`  → Clicked: "${clicked}"`);
+        }
+
+        await page.waitForTimeout(1000);
+        continue; // Continue the loop, don't break!
       }
 
       // Wait for a screen to appear
