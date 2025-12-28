@@ -20,6 +20,7 @@ import { promises as fs } from 'fs';
 import { detectScreenType, waitForScreen, hasFeedback, SCREEN_TYPES } from './lib/detector.js';
 import { extract, hasExtractor } from './lib/extractors/index.js';
 import { extractFeedback } from './lib/extractors/feedback.js';
+import { solveExercise } from './lib/auto-solver.js';
 import navigator from './lib/navigator.js';
 import validator from './lib/validator.js';
 
@@ -142,11 +143,20 @@ async function extractLesson(page, lessonUrl, options = {}) {
       // Auto-save after each screen
       await saveProgress();
 
-      // User interaction point
-      if (!autoAdvance) {
-        console.log('\n  [Complete the exercise in the browser, then press Enter]');
-        await validator.waitForEnter('Press Enter after completing exercise...');
+      // Auto-solve the exercise
+      console.log('  → Auto-solving exercise...');
+      const solveResult = await solveExercise(page);
+      if (solveResult.solved) {
+        console.log(`  → Solved: ${solveResult.method}`);
+      } else {
+        console.log('  → Could not auto-solve, manual intervention may be needed');
+        if (!autoAdvance) {
+          await validator.waitForEnter('Press Enter after completing exercise...');
+        }
       }
+
+      // Small delay for UI to update after solving
+      await page.waitForTimeout(300);
 
       // Now check for feedback overlay (after user completed exercise)
       await page.waitForTimeout(500); // Small delay for feedback to appear
@@ -191,15 +201,9 @@ async function extractLesson(page, lessonUrl, options = {}) {
         await navigator.clickContinue(page);
         await navigator.waitForScreenChange(page);
       } else {
-        // No feedback, just advance
-        if (autoAdvance) {
-          await navigator.clickContinue(page);
-          await navigator.waitForScreenChange(page);
-        } else {
-          await validator.waitForEnter('Press Enter to go to next screen...');
-          await navigator.clickContinue(page);
-          await navigator.waitForScreenChange(page);
-        }
+        // No feedback, just advance automatically
+        await navigator.clickContinue(page);
+        await navigator.waitForScreenChange(page);
       }
 
     } catch (error) {
