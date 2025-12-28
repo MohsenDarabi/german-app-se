@@ -456,27 +456,73 @@ async function saveResults(data, filename) {
 }
 
 /**
- * Auto-save manager for partial progress
+ * Convert string to URL-friendly slug
+ */
+function slugify(text) {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '')
+    .substring(0, 50);
+}
+
+/**
+ * Parse chapter string to get number and title
+ * "Chapter 1: Introductions" -> { number: 1, title: "Introductions" }
+ */
+function parseChapter(chapterStr) {
+  const match = chapterStr.match(/Chapter\s+(\d+):\s*(.+)/i);
+  if (match) {
+    return { number: parseInt(match[1]), title: match[2].trim() };
+  }
+  return { number: 0, title: chapterStr };
+}
+
+/**
+ * Auto-save manager for partial progress with proper folder structure
  */
 class AutoSaver {
-  constructor(outputDir) {
-    this.outputDir = outputDir;
+  constructor(outputDir, metadata = {}) {
+    this.baseOutputDir = outputDir;
+    this.metadata = metadata; // { level, chapter, chapterNumber, lessonNumber, title }
     this.sessionId = Date.now();
     this.partialFile = null;
+    this.finalDir = null;
+    this.finalFile = null;
   }
 
   async init() {
-    await fs.mkdir(this.outputDir, { recursive: true });
-    this.partialFile = join(this.outputDir, `lesson-${this.sessionId}-partial.json`);
+    const { level, chapterNumber, chapter, lessonNumber, title } = this.metadata;
+
+    if (level && chapterNumber && lessonNumber) {
+      // Create hierarchical structure: output/A1/chapter-01-introductions/
+      const chapterSlug = slugify(chapter || `chapter-${chapterNumber}`);
+      const chapterDir = `chapter-${String(chapterNumber).padStart(2, '0')}-${chapterSlug}`;
+      this.finalDir = join(this.baseOutputDir, level.toUpperCase(), chapterDir);
+
+      // Lesson filename: 01-hallo.json
+      const lessonSlug = slugify(title || `lesson-${lessonNumber}`);
+      const lessonFilename = `${String(lessonNumber).padStart(2, '0')}-${lessonSlug}.json`;
+      this.finalFile = join(this.finalDir, lessonFilename);
+    } else {
+      // Fallback to flat structure
+      this.finalDir = this.baseOutputDir;
+      this.finalFile = join(this.finalDir, `lesson-${this.sessionId}.json`);
+    }
+
+    await fs.mkdir(this.finalDir, { recursive: true });
+    this.partialFile = this.finalFile.replace('.json', '-partial.json');
   }
 
   async save(data) {
-    await fs.writeFile(this.partialFile, JSON.stringify(data, null, 2));
+    // Add metadata to data
+    const enrichedData = this._enrichData(data);
+    await fs.writeFile(this.partialFile, JSON.stringify(enrichedData, null, 2));
   }
 
   async finalize(data) {
-    const finalFile = join(this.outputDir, `lesson-${this.sessionId}.json`);
-    await fs.writeFile(finalFile, JSON.stringify(data, null, 2));
+    const enrichedData = this._enrichData(data);
+    await fs.writeFile(this.finalFile, JSON.stringify(enrichedData, null, 2));
 
     // Remove partial file
     try {
@@ -485,11 +531,36 @@ class AutoSaver {
       // Ignore if already removed
     }
 
-    return finalFile;
+    return this.finalFile;
+  }
+
+  _enrichData(data) {
+    const { level, chapter, chapterNumber, lessonNumber, title } = this.metadata;
+    return {
+      level: level?.toUpperCase() || null,
+      chapter: {
+        number: chapterNumber || null,
+        title: chapter || null
+      },
+      lesson: {
+        number: lessonNumber || null,
+        title: title || data.lesson?.lesson || null,
+        url: data.lesson?.url || null,
+        objectiveId: data.lesson?.objectiveId || null
+      },
+      screens: data.screens || [],
+      screenCount: data.screens?.length || 0,
+      extractedAt: data.extractedAt || new Date().toISOString(),
+      status: data.status || 'complete'
+    };
   }
 
   getPartialPath() {
     return this.partialFile;
+  }
+
+  getFinalPath() {
+    return this.finalFile;
   }
 }
 
@@ -578,6 +649,22 @@ async function extractLevel(page, level, options = {}) {
   const lessons = allLessons.filter(l => !l.isLocked && !l.isSpeaking);
   console.log(`\nWill extract ${lessons.length} lessons (skipping locked/speaking)`);
 
+  // Build lesson numbering per chapter
+  const chapterLessonCount = {};
+  for (const lesson of lessons) {
+    const chapterNum = parseChapter(lesson.chapter).number;
+    if (!chapterLessonCount[chapterNum]) {
+      chapterLessonCount[chapterNum] = 0;
+    }
+    chapterLessonCount[chapterNum]++;
+    lesson.lessonNumber = chapterLessonCount[chapterNum];
+    lesson.chapterNumber = chapterNum;
+    lesson.chapterTitle = parseChapter(lesson.chapter).title;
+  }
+
+  // Reset counts for actual extraction
+  const chapterLessonIndex = {};
+
   // Process each lesson
   for (let i = 0; i < lessons.length; i++) {
     const lessonInfo = lessons[i];
@@ -632,9 +719,17 @@ async function extractLevel(page, level, options = {}) {
     // Get the lesson URL for extraction
     const lessonUrl = currentUrl;
 
-    // Initialize auto-saver for this lesson
-    const autoSaver = new AutoSaver(CONFIG.outputDir);
+    // Initialize auto-saver with proper metadata for folder structure
+    const autoSaver = new AutoSaver(CONFIG.outputDir, {
+      level: level,
+      chapter: lessonInfo.chapterTitle,
+      chapterNumber: lessonInfo.chapterNumber,
+      lessonNumber: lessonInfo.lessonNumber,
+      title: lessonInfo.title
+    });
     await autoSaver.init();
+
+    console.log(`  Output: ${autoSaver.getFinalPath()}`);
 
     // Extract the lesson screens
     const results = await extractLesson(page, lessonUrl, {
@@ -651,8 +746,11 @@ async function extractLevel(page, level, options = {}) {
       // Add to extracted lessons
       extractedLessons.push({
         key: lessonKey,
+        level: level.toUpperCase(),
+        chapterNumber: lessonInfo.chapterNumber,
+        chapter: lessonInfo.chapterTitle,
+        lessonNumber: lessonInfo.lessonNumber,
         title: lessonInfo.title,
-        chapter: lessonInfo.chapter,
         screenCount: results.screens.length,
         extractedAt: results.extractedAt,
         file: finalPath
