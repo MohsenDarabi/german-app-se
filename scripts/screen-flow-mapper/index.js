@@ -581,15 +581,20 @@ async function main() {
     await navigator.loadCookies(page, CONFIG.cookiesPath);
 
     // Navigate to Busuu
-    const isLoggedIn = await navigator.goToDashboard(page);
+    let isLoggedIn = await navigator.goToDashboard(page);
 
     if (!isLoggedIn) {
       console.log('\nPlease log in to Busuu in the browser window.');
       console.log('After logging in, press Enter to continue...');
       await validator.waitForEnter();
 
+      // Check again after login
+      isLoggedIn = await navigator.goToDashboard(page);
+
       // Save cookies for next time
       await navigator.saveCookies(page, CONFIG.cookiesPath);
+    } else {
+      console.log('Already logged in (cookies valid)');
     }
 
     // MODE 1: Extract all lessons for a level
@@ -646,9 +651,15 @@ async function main() {
     console.error('\nFatal error:', error);
   } finally {
     // Close browser
-    const keepOpen = await validator.askYesNo('Keep browser open?');
-    if (!keepOpen) {
+    if (level && autoAdvance) {
+      // In full auto mode, just close the browser
+      console.log('\nClosing browser...');
       await browser.close();
+    } else {
+      const keepOpen = await validator.askYesNo('Keep browser open?');
+      if (!keepOpen) {
+        await browser.close();
+      }
     }
   }
 }
