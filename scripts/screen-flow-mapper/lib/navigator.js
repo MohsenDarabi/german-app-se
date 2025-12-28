@@ -5,6 +5,7 @@
  */
 
 import puppeteer from 'puppeteer';
+import { existsSync } from 'fs';
 
 // Busuu URLs
 const BUSUU_BASE = 'https://www.busuu.com';
@@ -12,21 +13,61 @@ const BUSUU_DASHBOARD = `${BUSUU_BASE}/dashboard`;
 const BUSUU_LEARN = `${BUSUU_BASE}/dashboard/learn`;
 
 /**
+ * Find Chrome executable path on different platforms
+ */
+function findChromePath() {
+  const paths = [
+    // macOS
+    '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+    '/Applications/Chromium.app/Contents/MacOS/Chromium',
+    // Linux
+    '/usr/bin/google-chrome',
+    '/usr/bin/chromium-browser',
+    '/usr/bin/chromium',
+    // Windows
+    'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
+    'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe'
+  ];
+
+  for (const p of paths) {
+    try {
+      if (existsSync(p)) return p;
+    } catch {
+      // Continue to next path
+    }
+  }
+
+  return null; // Let Puppeteer use its bundled browser
+}
+
+/**
  * Launch browser with optimal settings
  * @param {object} options
  * @returns {Promise<{browser: Browser, page: Page}>}
  */
 export async function launchBrowser(options = {}) {
-  const browser = await puppeteer.launch({
+  const chromePath = findChromePath();
+
+  const launchOptions = {
     headless: options.headless ?? false, // Show browser by default for validation
     defaultViewport: { width: 1280, height: 800 },
     args: [
       '--no-sandbox',
       '--disable-setuid-sandbox',
-      '--disable-dev-shm-usage'
+      '--disable-dev-shm-usage',
+      '--disable-gpu',
+      '--disable-extensions'
     ],
     ...options
-  });
+  };
+
+  // Use system Chrome if found
+  if (chromePath) {
+    launchOptions.executablePath = chromePath;
+    console.log(`Using Chrome at: ${chromePath}`);
+  }
+
+  const browser = await puppeteer.launch(launchOptions);
 
   const page = await browser.newPage();
 
