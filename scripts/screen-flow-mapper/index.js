@@ -118,12 +118,20 @@ async function extractLesson(page, lessonUrl, options = {}) {
       screens.push(screen);
       screenIndex++;
 
-      // Check for feedback overlay after exercises
+      // User interaction point
+      if (!autoAdvance) {
+        console.log('\n  [Complete the exercise in the browser, then press Enter]');
+        await validator.waitForEnter('Press Enter after completing exercise...');
+      }
+
+      // Now check for feedback overlay (after user completed exercise)
+      await page.waitForTimeout(500); // Small delay for feedback to appear
+
       if (await hasFeedback(page)) {
         console.log('  → Feedback detected');
         const feedbackContent = await extractFeedback(page);
 
-        if (feedbackContent) {
+        if (feedbackContent && feedbackContent.tip) {
           const feedbackScreen = {
             index: screenIndex,
             type: 'feedback',
@@ -144,16 +152,20 @@ async function extractLesson(page, lessonUrl, options = {}) {
           screens.push(feedbackScreen);
           screenIndex++;
         }
-      }
 
-      // Advance to next screen
-      if (autoAdvance) {
+        // Click continue to dismiss feedback
         await navigator.clickContinue(page);
         await navigator.waitForScreenChange(page);
       } else {
-        await validator.waitForEnter('Press Enter to advance...');
-        await navigator.clickContinue(page);
-        await navigator.waitForScreenChange(page);
+        // No feedback, just advance
+        if (autoAdvance) {
+          await navigator.clickContinue(page);
+          await navigator.waitForScreenChange(page);
+        } else {
+          await validator.waitForEnter('Press Enter to go to next screen...');
+          await navigator.clickContinue(page);
+          await navigator.waitForScreenChange(page);
+        }
       }
 
     } catch (error) {

@@ -142,13 +142,23 @@ export async function waitForScreen(page, timeout = 10000) {
 }
 
 /**
- * Check if current screen has feedback overlay
+ * Check if current screen has VISIBLE feedback overlay
  * @param {import('puppeteer').Page} page
  * @returns {Promise<boolean>}
  */
 export async function hasFeedback(page) {
-  const feedback = await page.$('[data-testid="feedback-footer"]');
-  return !!feedback;
+  return await page.evaluate(() => {
+    const feedback = document.querySelector('[data-testid="feedback-footer"]');
+    if (!feedback) return false;
+
+    // Check if actually visible (not hidden)
+    const style = window.getComputedStyle(feedback);
+    const isVisible = style.display !== 'none' &&
+                      style.visibility !== 'hidden' &&
+                      style.opacity !== '0' &&
+                      feedback.offsetParent !== null;
+    return isVisible;
+  });
 }
 
 /**

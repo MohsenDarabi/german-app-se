@@ -213,8 +213,10 @@ export async function isLessonComplete(page) {
  */
 export function getLessonInfo(page) {
   const url = page.url();
-  const match = url.match(/\/learn\/([^/]+)\/([^/]+)\/([^/?]+)/);
 
+  // Try different URL patterns
+  // Pattern 1: /learn/language/level/lesson
+  let match = url.match(/\/learn\/([^/]+)\/([^/]+)\/([^/?]+)/);
   if (match) {
     return {
       language: match[1],
@@ -224,7 +226,27 @@ export function getLessonInfo(page) {
     };
   }
 
-  return { url };
+  // Pattern 2: /learning/course/start/objective_xxx
+  match = url.match(/\/learning\/course\/start\/objective_([^/]+)/);
+  if (match) {
+    return {
+      objectiveId: match[1],
+      lesson: `objective-${match[1].substring(0, 8)}`,
+      url
+    };
+  }
+
+  // Pattern 3: /activity_xxx
+  match = url.match(/activity_([^/]+)/);
+  if (match) {
+    return {
+      activityId: match[1],
+      lesson: `activity-${match[1].substring(0, 8)}`,
+      url
+    };
+  }
+
+  return { lesson: 'Lesson', url };
 }
 
 export default {
