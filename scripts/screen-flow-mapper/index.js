@@ -576,6 +576,12 @@ async function main() {
   console.log('Launching browser...');
   const { browser, page } = await navigator.launchBrowser({ headless });
 
+  // Auto-accept "Leave site?" dialogs (like the other extractor)
+  page.on('dialog', async dialog => {
+    console.log(`  [Dialog: ${dialog.type()}] ${dialog.message()}`);
+    await dialog.accept();
+  });
+
   try {
     // Try to load saved cookies
     await navigator.loadCookies(page, CONFIG.cookiesPath);
