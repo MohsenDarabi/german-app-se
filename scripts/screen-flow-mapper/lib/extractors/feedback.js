@@ -31,16 +31,20 @@ export async function extractFeedback(page) {
       .map(el => el.textContent?.trim())
       .filter(Boolean);
 
-    // Get audio if present in feedback
+    // Get audio if present in feedback (check for audio button/icon, not just audio element)
     const audioEl = feedback.querySelector('audio source, [data-testid="asset-audio"] source');
     const audioUrl = audioEl?.src || null;
+
+    // Also check for clickable audio button/icon (sometimes audio is loaded on click)
+    const audioButton = feedback.querySelector('[data-testid="audio-button"], .audio-button, button[aria-label*="audio"], button[aria-label*="play"], .ex-audio-btn');
+    const hasAudioButton = !!audioButton;
 
     return {
       type: 'feedback',
       isCorrect,
       tip: tipText,
       highlights,
-      hasAudio: !!audioUrl,
+      hasAudio: !!audioUrl || hasAudioButton,
       audioUrl
     };
   });

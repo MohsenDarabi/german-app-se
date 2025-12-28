@@ -142,7 +142,7 @@ export async function waitForScreen(page, timeout = 10000) {
 }
 
 /**
- * Check if current screen has VISIBLE feedback overlay
+ * Check if current screen has VISIBLE feedback overlay with actual content
  * @param {import('puppeteer').Page} page
  * @returns {Promise<boolean>}
  */
@@ -157,7 +157,16 @@ export async function hasFeedback(page) {
                       style.visibility !== 'hidden' &&
                       style.opacity !== '0' &&
                       feedback.offsetParent !== null;
-    return isVisible;
+
+    if (!isVisible) return false;
+
+    // IMPORTANT: Also check that feedback has actual tip content
+    // This prevents false positives when feedback element exists but is empty
+    const footer = feedback.querySelector('footer');
+    const tipText = footer?.textContent?.trim() || '';
+
+    // Must have some meaningful tip text (at least 10 chars)
+    return tipText.length >= 10;
   });
 }
 

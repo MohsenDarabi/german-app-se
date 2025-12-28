@@ -49,11 +49,13 @@ async function extractLesson(page, lessonUrl, options = {}) {
   await navigator.goToLesson(page, lessonUrl);
   await page.waitForTimeout(2000); // Wait for lesson to load
 
-  const lessonInfo = navigator.getLessonInfo(page);
+  const lessonInfo = await navigator.getLessonInfo(page);
   const lessonName = lessonInfo.lesson || 'Unknown';
+  console.log(`Lesson name: ${lessonName}`);
 
   const screens = [];
   let screenIndex = 0;
+  let lastFeedbackTip = null; // Track last feedback to prevent duplicates
 
   // Main extraction loop
   while (screenIndex < CONFIG.maxScreens) {
@@ -90,6 +92,9 @@ async function extractLesson(page, lessonUrl, options = {}) {
 
         continue;
       }
+
+      // Auto-scroll to trigger lazy loading of media
+      await navigator.scrollPage(page);
 
       // Extract content if we have an extractor
       let content = null;
@@ -128,10 +133,15 @@ async function extractLesson(page, lessonUrl, options = {}) {
       await page.waitForTimeout(500); // Small delay for feedback to appear
 
       if (await hasFeedback(page)) {
-        console.log('  → Feedback detected');
         const feedbackContent = await extractFeedback(page);
 
-        if (feedbackContent && feedbackContent.tip) {
+        // Check if this is a duplicate (same tip as last feedback)
+        const isDuplicate = feedbackContent?.tip && feedbackContent.tip === lastFeedbackTip;
+
+        if (feedbackContent && feedbackContent.tip && !isDuplicate) {
+          console.log('  → Feedback detected');
+          lastFeedbackTip = feedbackContent.tip; // Track to prevent duplicates
+
           const feedbackScreen = {
             index: screenIndex,
             type: 'feedback',
@@ -151,6 +161,8 @@ async function extractLesson(page, lessonUrl, options = {}) {
 
           screens.push(feedbackScreen);
           screenIndex++;
+        } else if (isDuplicate) {
+          console.log('  → Skipping duplicate feedback');
         }
 
         // Click continue to dismiss feedback

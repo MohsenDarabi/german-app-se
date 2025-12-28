@@ -75,6 +75,11 @@ export async function extractFillgap(page) {
     const imageEl = document.querySelector('[data-testid="asset-image"]');
     const imageUrl = imageEl?.src || null;
 
+    // Get video if present
+    const videoEl = document.querySelector('[data-testid="asset-video"] source') ||
+                    document.querySelector('video source');
+    const videoUrl = videoEl?.src || null;
+
     return {
       type: blanksCount > 1 ? 'fillgap-multiple' : 'fillgap-single',
       instruction,
@@ -91,7 +96,8 @@ export async function extractFillgap(page) {
       correctAnswers,
       media: {
         audio: audioUrl,
-        image: imageUrl
+        image: imageUrl,
+        video: videoUrl
       }
     };
   });

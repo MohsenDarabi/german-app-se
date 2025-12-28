@@ -207,12 +207,24 @@ export async function isLessonComplete(page) {
 }
 
 /**
- * Get current lesson info from URL
+ * Get current lesson info from URL and page content
  * @param {Page} page
- * @returns {object}
+ * @returns {Promise<object>}
  */
-export function getLessonInfo(page) {
+export async function getLessonInfo(page) {
   const url = page.url();
+
+  // Try to get lesson name from page title or DOM first
+  const pageInfo = await page.evaluate(() => {
+    // Try lesson title from DOM
+    const titleEl = document.querySelector('[data-testid="lesson-title"], .lesson-title, h1');
+    const title = titleEl?.textContent?.trim();
+
+    // Try from page title
+    const pageTitle = document.title;
+
+    return { title, pageTitle };
+  });
 
   // Try different URL patterns
   // Pattern 1: /learn/language/level/lesson
@@ -221,7 +233,7 @@ export function getLessonInfo(page) {
     return {
       language: match[1],
       level: match[2],
-      lesson: match[3],
+      lesson: pageInfo.title || match[3],
       url
     };
   }
@@ -231,7 +243,7 @@ export function getLessonInfo(page) {
   if (match) {
     return {
       objectiveId: match[1],
-      lesson: `objective-${match[1].substring(0, 8)}`,
+      lesson: pageInfo.title || `Objective ${match[1].substring(0, 8)}`,
       url
     };
   }
@@ -241,12 +253,45 @@ export function getLessonInfo(page) {
   if (match) {
     return {
       activityId: match[1],
-      lesson: `activity-${match[1].substring(0, 8)}`,
+      lesson: pageInfo.title || `Activity ${match[1].substring(0, 8)}`,
       url
     };
   }
 
+  // Fallback: use page title if available
+  if (pageInfo.title) {
+    return { lesson: pageInfo.title, url };
+  }
+
+  // Last resort: extract from page title (format: "Lesson Name | Busuu")
+  if (pageInfo.pageTitle) {
+    const cleanTitle = pageInfo.pageTitle.split('|')[0].trim();
+    if (cleanTitle && cleanTitle !== 'Busuu') {
+      return { lesson: cleanTitle, url };
+    }
+  }
+
   return { lesson: 'Lesson', url };
+}
+
+/**
+ * Scroll through the page to ensure all content is visible/loaded
+ * @param {Page} page
+ */
+export async function scrollPage(page) {
+  await page.evaluate(async () => {
+    // Scroll down incrementally to trigger lazy loading
+    const scrollStep = 300;
+    const maxScrolls = 5;
+
+    for (let i = 0; i < maxScrolls; i++) {
+      window.scrollBy(0, scrollStep);
+      await new Promise(r => setTimeout(r, 100));
+    }
+
+    // Scroll back to top
+    window.scrollTo(0, 0);
+  });
 }
 
 export default {
@@ -259,6 +304,7 @@ export default {
   waitForScreenChange,
   isLessonComplete,
   getLessonInfo,
+  scrollPage,
   BUSUU_BASE,
   BUSUU_DASHBOARD,
   BUSUU_LEARN
