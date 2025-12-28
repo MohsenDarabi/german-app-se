@@ -163,7 +163,16 @@ export async function hasFeedback(page) {
       'Well done',
       'Lesson complete',
       'Congratulations',
-      'Great job'
+      'Great job',
+      'Today\'s challenges',
+      'Bronze League',
+      'Silver League',
+      'Gold League',
+      'Welcome to the',
+      'Keep it up',
+      'You\'re on a streak',
+      'Daily goal',
+      'XP earned'
     ];
 
     const bodyText = document.body?.innerText || '';
@@ -224,11 +233,45 @@ export async function countFillgapBlanks(page) {
   return blanks.length;
 }
 
+/**
+ * Check if we're on a page that should be skipped (not an exercise)
+ * @param {import('puppeteer').Page} page
+ * @returns {Promise<boolean>}
+ */
+export async function isSkipPage(page) {
+  return await page.evaluate(() => {
+    const skipIndicators = [
+      'Well done',
+      'Lesson complete',
+      'Congratulations',
+      'Great job',
+      'Today\'s challenges',
+      'Bronze League',
+      'Silver League',
+      'Gold League',
+      'Welcome to the',
+      'Keep it up',
+      'You\'re on a streak',
+      'Daily goal',
+      'XP earned',
+      'Challenge completed',
+      'New achievement',
+      'Level up'
+    ];
+
+    const bodyText = document.body?.innerText || '';
+    return skipIndicators.some(text =>
+      bodyText.toLowerCase().includes(text.toLowerCase())
+    );
+  });
+}
+
 export default {
   SCREEN_TYPES,
   detectScreenType,
   waitForScreen,
   hasFeedback,
+  isSkipPage,
   isWordCompletion,
   countFillgapBlanks
 };

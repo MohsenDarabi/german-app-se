@@ -17,7 +17,7 @@ import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import { promises as fs } from 'fs';
 
-import { detectScreenType, waitForScreen, hasFeedback, SCREEN_TYPES } from './lib/detector.js';
+import { detectScreenType, waitForScreen, hasFeedback, isSkipPage, SCREEN_TYPES } from './lib/detector.js';
 import { extract, hasExtractor } from './lib/extractors/index.js';
 import { extractFeedback } from './lib/extractors/feedback.js';
 import { solveExercise } from './lib/auto-solver.js';
@@ -77,11 +77,27 @@ async function extractLesson(page, lessonUrl, options = {}) {
   // Main extraction loop
   while (screenIndex < CONFIG.maxScreens) {
     try {
+      // First check if we're on a skip page (Well done, League, etc.)
+      if (await isSkipPage(page)) {
+        console.log('\n  → Skip page detected (Well done / League / etc.), auto-continuing...');
+        await navigator.clickContinue(page);
+        await page.waitForTimeout(1000);
+
+        // Check if we're back on dashboard or lesson ended
+        const url = page.url();
+        if (url.includes('/dashboard') && !url.includes('/learning/')) {
+          console.log('\nBack to dashboard - lesson complete!');
+          break;
+        }
+        continue;
+      }
+
       // Wait for a screen to appear
       const { type, key } = await waitForScreen(page, CONFIG.screenTimeout);
 
       if (!type) {
-        console.log('No screen type detected, waiting...');
+        console.log('No screen type detected, trying to continue...');
+        await navigator.clickContinue(page);
         await page.waitForTimeout(1000);
         continue;
       }
@@ -94,19 +110,11 @@ async function extractLesson(page, lessonUrl, options = {}) {
         break;
       }
 
-      // Skip pass-through screens
+      // Skip pass-through screens (auto-advance)
       if (type.passThrough) {
-        console.log('  → Pass-through screen, skipping extraction');
-
-        if (autoAdvance) {
-          await navigator.clickContinue(page);
-          await navigator.waitForScreenChange(page);
-        } else {
-          await validator.waitForEnter('Press Enter to continue...');
-          await navigator.clickContinue(page);
-          await navigator.waitForScreenChange(page);
-        }
-
+        console.log('  → Pass-through screen, auto-continuing...');
+        await navigator.clickContinue(page);
+        await navigator.waitForScreenChange(page);
         continue;
       }
 
