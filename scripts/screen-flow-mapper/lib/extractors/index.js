@@ -15,6 +15,7 @@ import extractSpelling from './spelling.js';
 import extractComprehension from './comprehension.js';
 import extractTip from './tip.js';
 import extractFeedback, { waitForFeedback } from './feedback.js';
+import extractGeneric from './generic.js';
 
 // Map screen type IDs to extractors
 const EXTRACTORS = {
@@ -28,7 +29,9 @@ const EXTRACTORS = {
   'spelling': extractSpelling,
   'comprehension': extractComprehension,
   'tip': extractTip,
-  'feedback': extractFeedback
+  'feedback': extractFeedback,
+  'generic-exercise': extractGeneric,
+  'word-select': extractGeneric  // Use generic for word-select too
 };
 
 /**
@@ -82,6 +85,7 @@ export {
   extractComprehension,
   extractTip,
   extractFeedback,
+  extractGeneric,
   waitForFeedback
 };
 

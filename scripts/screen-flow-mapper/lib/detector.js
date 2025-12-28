@@ -86,6 +86,14 @@ export const SCREEN_TYPES = {
     extract: true
   },
 
+  // Generic exercise fallback - catches any data-qa-ex we haven't defined
+  GENERIC_EXERCISE: {
+    id: 'generic-exercise',
+    name: 'Generic Exercise',
+    selector: '[data-qa-ex]',
+    extract: true
+  },
+
   // Feedback (appears after exercises) - checked LAST among exercises
   FEEDBACK: {
     id: 'feedback',
