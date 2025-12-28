@@ -41,7 +41,7 @@ const CONFIG = {
  * @param {object} options
  */
 async function extractLesson(page, lessonUrl, options = {}) {
-  const { validate = true, autoAdvance = false } = options;
+  const { validate = true, autoAdvance = false, autoSaver = null } = options;
 
   console.log(`\nExtracting lesson: ${lessonUrl}`);
 
@@ -53,9 +53,25 @@ async function extractLesson(page, lessonUrl, options = {}) {
   const lessonName = lessonInfo.lesson || 'Unknown';
   console.log(`Lesson name: ${lessonName}`);
 
+  if (autoSaver) {
+    console.log(`Auto-saving to: ${autoSaver.getPartialPath()}`);
+  }
+
   const screens = [];
   let screenIndex = 0;
   let lastFeedbackTip = null; // Track last feedback to prevent duplicates
+
+  // Helper to auto-save current progress
+  const saveProgress = async () => {
+    if (autoSaver) {
+      await autoSaver.save({
+        lesson: lessonInfo,
+        screens,
+        extractedAt: new Date().toISOString(),
+        status: 'partial'
+      });
+    }
+  };
 
   // Main extraction loop
   while (screenIndex < CONFIG.maxScreens) {
@@ -123,6 +139,9 @@ async function extractLesson(page, lessonUrl, options = {}) {
       screens.push(screen);
       screenIndex++;
 
+      // Auto-save after each screen
+      await saveProgress();
+
       // User interaction point
       if (!autoAdvance) {
         console.log('\n  [Complete the exercise in the browser, then press Enter]');
@@ -161,6 +180,9 @@ async function extractLesson(page, lessonUrl, options = {}) {
 
           screens.push(feedbackScreen);
           screenIndex++;
+
+          // Auto-save after feedback
+          await saveProgress();
         } else if (isDuplicate) {
           console.log('  → Skipping duplicate feedback');
         }
@@ -208,7 +230,45 @@ async function saveResults(data, filename) {
   await fs.mkdir(CONFIG.outputDir, { recursive: true });
   const filepath = join(CONFIG.outputDir, filename);
   await fs.writeFile(filepath, JSON.stringify(data, null, 2));
-  console.log(`\nResults saved to: ${filepath}`);
+  return filepath;
+}
+
+/**
+ * Auto-save manager for partial progress
+ */
+class AutoSaver {
+  constructor(outputDir) {
+    this.outputDir = outputDir;
+    this.sessionId = Date.now();
+    this.partialFile = null;
+  }
+
+  async init() {
+    await fs.mkdir(this.outputDir, { recursive: true });
+    this.partialFile = join(this.outputDir, `lesson-${this.sessionId}-partial.json`);
+  }
+
+  async save(data) {
+    await fs.writeFile(this.partialFile, JSON.stringify(data, null, 2));
+  }
+
+  async finalize(data) {
+    const finalFile = join(this.outputDir, `lesson-${this.sessionId}.json`);
+    await fs.writeFile(finalFile, JSON.stringify(data, null, 2));
+
+    // Remove partial file
+    try {
+      await fs.unlink(this.partialFile);
+    } catch {
+      // Ignore if already removed
+    }
+
+    return finalFile;
+  }
+
+  getPartialPath() {
+    return this.partialFile;
+  }
 }
 
 /**
@@ -259,19 +319,26 @@ async function main() {
       }
     }
 
+    // Initialize auto-saver for partial progress
+    const autoSaver = new AutoSaver(CONFIG.outputDir);
+    await autoSaver.init();
+    console.log(`\nAuto-save enabled: Progress will be saved after each screen.`);
+    console.log(`Partial file: ${autoSaver.getPartialPath()}`);
+
     // Extract the lesson
     const results = await extractLesson(page, targetUrl, {
       validate: !autoAdvance,
-      autoAdvance
+      autoAdvance,
+      autoSaver
     });
 
     // Show summary
     if (results.screens.length > 0) {
       validator.displaySummary(results.screens);
 
-      // Save results
-      const filename = `lesson-${Date.now()}.json`;
-      await saveResults(results, filename);
+      // Finalize results (removes partial file, creates final file)
+      const finalPath = await autoSaver.finalize(results);
+      console.log(`\nResults saved to: ${finalPath}`);
     } else {
       console.log('\nNo screens extracted.');
     }
