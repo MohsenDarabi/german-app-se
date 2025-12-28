@@ -21,6 +21,7 @@ function sleep(ms) {
 export async function solveExercise(page) {
   // Try each solver in order
   const solvers = [
+    { name: 'conversation', fn: solveConversation }, // Skip community exercises first
     { name: 'flashcard', fn: solveFlashcard },
     { name: 'typing', fn: solveTyping },
     { name: 'true-false', fn: solveTrueFalse },
@@ -44,6 +45,62 @@ export async function solveExercise(page) {
   }
 
   return { solved: false, method: 'none' };
+}
+
+/**
+ * Conversation/Community exercise - skip by clicking Continue
+ * These have Speak/Write buttons for community feedback (can't automate)
+ */
+async function solveConversation(page) {
+  // Check for conversation exercise
+  const isConversation = await page.$('[data-qa-ex="ex-conversation"]');
+  if (!isConversation) {
+    // Also check for speak/write button combination (community exercise)
+    const hasSpeakWrite = await page.evaluate(() => {
+      const buttons = [...document.querySelectorAll('button')];
+      const hasSpeak = buttons.some(b => b.textContent?.trim().toLowerCase() === 'speak');
+      const hasWrite = buttons.some(b => b.textContent?.trim().toLowerCase() === 'write');
+      return hasSpeak && hasWrite;
+    });
+    if (!hasSpeakWrite) return null;
+  }
+
+  // Click the Continue button in the feedback footer
+  const clicked = await page.evaluate(() => {
+    // Try feedback bar continue button first
+    const continueBtn = document.querySelector(
+      '[data-testid="check_button"], ' +
+      '.ex-feedback-bar__button, ' +
+      '[data-qa-feedback-cta], ' +
+      'button.sc-gsDKAQ'
+    );
+    if (continueBtn && continueBtn.offsetParent !== null) {
+      continueBtn.click();
+      return 'continue';
+    }
+
+    // Try any button with "Continue" text
+    const buttons = [...document.querySelectorAll('button')];
+    const contBtn = buttons.find(b =>
+      b.textContent?.trim().toLowerCase() === 'continue' &&
+      b.offsetParent !== null
+    );
+    if (contBtn) {
+      contBtn.click();
+      return 'continue (text)';
+    }
+
+    // Try close button
+    const closeBtn = document.querySelector('button[aria-label*="close"], button[aria-label*="Close"]');
+    if (closeBtn) {
+      closeBtn.click();
+      return 'close';
+    }
+
+    return null;
+  });
+
+  return clicked ? `skip-community: ${clicked}` : null;
 }
 
 /**
