@@ -204,14 +204,26 @@ async function extractLesson(page, lessonUrl, options = {}) {
           console.log('  → Treating as lesson complete (these exercises are usually at the end)');
 
           // Click close to exit the lesson gracefully
-          await page.evaluate(() => {
+          const closeClicked = await page.evaluate(() => {
             const closeBtn = document.querySelector('button[aria-label="close"]');
-            if (closeBtn) closeBtn.click();
+            if (closeBtn) {
+              closeBtn.click();
+              return true;
+            }
+            return false;
           });
-          await page.waitForTimeout(500);
 
-          // The "Are you sure?" dialog will be auto-accepted by our dialog handler
-          // This exits the lesson, which is what we want
+          if (closeClicked) {
+            // Wait for "Are you sure?" dialog to be auto-accepted and page to navigate
+            // The dialog handler will accept it automatically
+            console.log('  → Waiting for lesson exit...');
+            try {
+              await page.waitForNavigation({ timeout: 5000, waitUntil: 'networkidle2' });
+            } catch {
+              // Navigation might have already happened or timeout is fine
+            }
+            await page.waitForTimeout(1000);
+          }
 
           console.log('\nLesson complete (skipped community exercise)');
           break;
@@ -511,8 +523,20 @@ async function extractLevel(page, level, options = {}) {
       continue;
     }
 
+    // Wait for lesson to fully load
+    await page.waitForTimeout(2000);
+
+    // Verify we're on a lesson page (not dashboard/timeline)
+    const currentUrl = page.url();
+    const isOnTimeline = currentUrl.includes('/timeline/');
+    const isOnDashboardNotLesson = currentUrl.includes('/dashboard') && !currentUrl.includes('/learning/');
+    if (isOnTimeline || isOnDashboardNotLesson) {
+      console.log(`  Not on lesson page (${currentUrl}), retrying...`);
+      continue;
+    }
+
     // Get the lesson URL for extraction
-    const lessonUrl = page.url();
+    const lessonUrl = currentUrl;
 
     // Initialize auto-saver for this lesson
     const autoSaver = new AutoSaver(CONFIG.outputDir);
