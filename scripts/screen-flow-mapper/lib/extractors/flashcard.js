@@ -33,9 +33,18 @@ export async function extractFlashcard(page) {
     const imageEl = document.querySelector('[data-testid="asset-image"]');
     const imageUrl = imageEl?.src || null;
 
-    // Get audio
-    const audioEl = document.querySelector('[data-testid="asset-audio"] source');
-    const audioUrl = audioEl?.src || null;
+    // Get audio - try multiple selectors
+    const audioEl = document.querySelector('[data-testid="asset-audio"] source') ||
+                    document.querySelector('audio source') ||
+                    document.querySelector('[data-testid="asset-audio"]');
+    let audioUrl = null;
+    if (audioEl) {
+      audioUrl = audioEl.src || audioEl.querySelector('source')?.src || null;
+    }
+
+    // Also check for audio button (audio may load on click)
+    const audioButton = document.querySelector('[data-testid="audio-button"], .audio-button, button[aria-label*="audio"], button[aria-label*="play"], .ex-audio-btn, [class*="audio"]');
+    const hasAudioButton = !!audioButton;
 
     // Get video (some flashcards have video instead of image)
     const videoEl = document.querySelector('[data-testid="asset-video"] source');
@@ -55,7 +64,8 @@ export async function extractFlashcard(page) {
       media: {
         image: imageUrl,
         audio: audioUrl,
-        video: videoUrl
+        video: videoUrl,
+        hasAudio: !!audioUrl || hasAudioButton
       },
       features: {
         hasFavorite

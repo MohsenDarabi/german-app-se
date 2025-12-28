@@ -94,6 +94,15 @@ export const SCREEN_TYPES = {
     selector: '[data-testid="lesson-complete"], .lesson-complete',
     extract: false,
     isEnd: true
+  },
+
+  // Well Done / Summary screens (should skip)
+  WELL_DONE: {
+    id: 'well-done',
+    name: 'Well Done Screen',
+    selector: '[class*="summary"], [class*="Summary"], [class*="result"], [class*="Result"]',
+    extract: false,
+    isEnd: true
   }
 };
 
@@ -143,11 +152,34 @@ export async function waitForScreen(page, timeout = 10000) {
 
 /**
  * Check if current screen has VISIBLE feedback overlay with actual content
+ * (and we're NOT on a completion/well-done screen)
  * @param {import('puppeteer').Page} page
  * @returns {Promise<boolean>}
  */
 export async function hasFeedback(page) {
   return await page.evaluate(() => {
+    // First, check if we're on a completion/well-done/summary screen - these are NOT feedback
+    const completionIndicators = [
+      'Well done',
+      'Lesson complete',
+      'Congratulations',
+      'Great job'
+    ];
+
+    const bodyText = document.body?.innerText || '';
+    const isCompletionScreen = completionIndicators.some(text =>
+      bodyText.toLowerCase().includes(text.toLowerCase())
+    );
+
+    // Also check for summary/result classes
+    const hasSummaryClass = !!document.querySelector(
+      '[class*="summary"], [class*="Summary"], [class*="result"], [class*="Result"], [class*="complete"], [class*="Complete"]'
+    );
+
+    if (isCompletionScreen || hasSummaryClass) {
+      return false; // Not feedback, it's a completion screen
+    }
+
     const feedback = document.querySelector('[data-testid="feedback-footer"]');
     if (!feedback) return false;
 
