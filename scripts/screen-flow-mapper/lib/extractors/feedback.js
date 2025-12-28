@@ -62,4 +62,3 @@ export async function waitForFeedback(page, timeout = 5000) {
 }
 
 export default extractFeedback;
-export { waitForFeedback };
