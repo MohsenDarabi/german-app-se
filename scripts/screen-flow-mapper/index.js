@@ -151,6 +151,8 @@ async function extractLesson(page, lessonUrl, options = {}) {
   const screens = [];
   let screenIndex = 0;
   let lastFeedbackTip = null; // Track last feedback to prevent duplicates
+  let lastContent = ''; // Track content for stuck detection
+  let stuckCount = 0;
 
   // Helper to auto-save current progress
   const saveProgress = async () => {
@@ -357,6 +359,44 @@ async function extractLesson(page, lessonUrl, options = {}) {
         await navigator.clickContinue(page);
         await navigator.waitForScreenChange(page);
       }
+
+      // Stuck detection - if content hasn't changed, we might be stuck
+      const currentContent = await page.evaluate(() => document.body.innerText.substring(0, 500));
+      if (currentContent === lastContent) {
+        stuckCount++;
+        console.log(`  → Same content detected (stuck count: ${stuckCount})`);
+
+        if (stuckCount > 2) {
+          // Try pressing Escape then Enter to dismiss any dialog/overlay
+          console.log('  → Trying Escape + Enter to unstick...');
+          await page.keyboard.press('Escape');
+          await page.waitForTimeout(300);
+          await page.keyboard.press('Enter');
+          await page.waitForTimeout(500);
+        }
+
+        if (stuckCount > 4) {
+          console.log('  → Stuck too long, moving on...');
+          // Try clicking any visible Continue/Check button more aggressively
+          await page.evaluate(() => {
+            const btns = [...document.querySelectorAll('button')];
+            const checkBtn = btns.find(b => {
+              const t = b.textContent?.toLowerCase().trim() || '';
+              return (t === 'check' || t === 'continue' || t === 'next') && b.offsetParent !== null;
+            });
+            if (checkBtn) checkBtn.click();
+          });
+          await page.waitForTimeout(1000);
+        }
+
+        if (stuckCount > 6) {
+          console.log('  → Breaking out of stuck loop');
+          break;
+        }
+      } else {
+        stuckCount = 0;
+      }
+      lastContent = currentContent;
 
     } catch (error) {
       console.error(`Error on screen ${screenIndex}:`, error.message);

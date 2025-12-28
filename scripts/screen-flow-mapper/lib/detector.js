@@ -78,7 +78,15 @@ export const SCREEN_TYPES = {
     passThrough: true
   },
 
-  // Feedback (appears after exercises)
+  // Word Selection / Multi-select exercise
+  WORD_SELECT: {
+    id: 'word-select',
+    name: 'Word Selection',
+    selector: '[data-qa-ex="ex-word-select"], [data-testid="ex-instruction"]:has(+ div button[data-qa-pass])',
+    extract: true
+  },
+
+  // Feedback (appears after exercises) - checked LAST among exercises
   FEEDBACK: {
     id: 'feedback',
     name: 'Answer Feedback + Tip',
@@ -114,6 +122,24 @@ export const SCREEN_TYPES = {
 export async function detectScreenType(page) {
   // Check each screen type in order of priority
   for (const [key, type] of Object.entries(SCREEN_TYPES)) {
+    // Special handling for FEEDBACK - only match if no active exercise
+    if (key === 'FEEDBACK') {
+      const hasActiveExercise = await page.evaluate(() => {
+        // Check if there are clickable answer buttons (active exercise)
+        const answerBtns = document.querySelectorAll('button[data-qa-pass], button[data-qa-choice]');
+        const clickableAnswers = [...answerBtns].filter(b => {
+          const style = window.getComputedStyle(b);
+          return b.offsetParent !== null && style.pointerEvents !== 'none';
+        });
+        return clickableAnswers.length > 0;
+      });
+
+      if (hasActiveExercise) {
+        // Skip FEEDBACK detection, there's an active exercise
+        continue;
+      }
+    }
+
     const element = await page.$(type.selector);
     if (element) {
       return {
