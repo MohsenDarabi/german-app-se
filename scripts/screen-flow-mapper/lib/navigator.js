@@ -161,14 +161,27 @@ export async function clickContinue(page) {
       return 'continue_button';
     }
 
-    // 2. Try feedback bar button
+    // 2. Try lesson finished / progress banner button (for skip pages)
+    const lessonFinishedBtn = document.querySelector('[data-qa-lesson-finished]');
+    if (isVisible(lessonFinishedBtn)) {
+      lessonFinishedBtn.click();
+      return 'lesson-finished';
+    }
+
+    const progressBannerBtn = document.querySelector('.progress-banner-bar__cta');
+    if (isVisible(progressBannerBtn)) {
+      progressBannerBtn.click();
+      return 'progress-banner-cta';
+    }
+
+    // 3. Try feedback bar button
     const feedbackBtn = document.querySelector('.ex-feedback-bar__button');
     if (isVisible(feedbackBtn)) {
       feedbackBtn.click();
       return 'feedback-bar';
     }
 
-    // 3. Try data-qa-feedback-cta
+    // 4. Try data-qa-feedback-cta
     const ctaBtn = document.querySelector('[data-qa-feedback-cta]');
     if (isVisible(ctaBtn)) {
       ctaBtn.click();
