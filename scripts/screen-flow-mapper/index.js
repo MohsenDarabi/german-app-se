@@ -209,11 +209,37 @@ async function extractLesson(page, lessonUrl, options = {}) {
       const { type, key } = await waitForScreen(page, CONFIG.screenTimeout);
 
       if (!type) {
-        console.log('No screen type detected, trying to continue...');
+        stuckCount++;
+        console.log(`No screen type detected (stuck count: ${stuckCount}), trying to continue...`);
+
+        if (stuckCount > 2) {
+          console.log('  → Trying Escape + Enter...');
+          await page.keyboard.press('Escape');
+          await page.waitForTimeout(300);
+          await page.keyboard.press('Enter');
+          await page.waitForTimeout(500);
+        }
+
+        if (stuckCount > 4) {
+          // Check if we're actually done (back on timeline or lesson complete)
+          if (await isLessonEnded(page)) {
+            console.log('\nLesson complete (detected after stuck)!');
+            break;
+          }
+        }
+
+        if (stuckCount > 6) {
+          console.log('  → Too many failed detections, ending lesson extraction');
+          break;
+        }
+
         await navigator.clickContinue(page);
         await page.waitForTimeout(1000);
         continue;
       }
+
+      // Reset stuck count when we successfully detect a screen
+      stuckCount = 0;
 
       console.log(`\nScreen ${screenIndex + 1}: ${type.name} (${key})`);
 
