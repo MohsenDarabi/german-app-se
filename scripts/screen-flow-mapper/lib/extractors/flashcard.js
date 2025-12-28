@@ -43,11 +43,24 @@ export async function extractFlashcard(page) {
     }
 
     // Also check for audio button (audio may load on click)
-    const audioButton = document.querySelector('[data-testid="audio-button"], .audio-button, button[aria-label*="audio"], button[aria-label*="play"], .ex-audio-btn, [class*="audio"]');
+    // Flashcards use ex-audio-icon-button for their audio
+    const audioButton = document.querySelector(
+      '[data-testid="ex-audio-icon-button"], ' +
+      '[data-testid="audio-button"], ' +
+      '[data-testid="feedback-audio-button"], ' +
+      '.audio-button, ' +
+      'button[aria-label*="audio"], ' +
+      'button[aria-label*="play"], ' +
+      '.ex-audio-btn, ' +
+      '[class*="audio"]'
+    );
     const hasAudioButton = !!audioButton;
 
-    // Get video (some flashcards have video instead of image)
-    const videoEl = document.querySelector('[data-testid="asset-video"] source');
+    // Get video - flashcards use asset-simple-video
+    const videoEl = document.querySelector('[data-testid="asset-simple-video"] video source') ||
+                    document.querySelector('[data-testid="asset-simple-video"] source') ||
+                    document.querySelector('[data-testid="asset-video"] source') ||
+                    document.querySelector('video source');
     const videoUrl = videoEl?.src || null;
 
     // Check for favorite button
