@@ -160,23 +160,62 @@ cd scripts/busuu-extractor && node extractor.js --level=b2
 
 ---
 
+## Work In Progress: Screen Flow Mapper
+
+**Status:** 🔄 Phase 3 Testing (IN PROGRESS)
+
+A new Busuu content extractor that works screen-by-screen with human validation.
+
+| Location | Purpose |
+|----------|---------|
+| `scripts/screen-flow-mapper/` | New extractor (Approach B) |
+| `docs/busuu-research/` | Screen type documentation |
+| Plan file | `~/.claude/plans/kind-rolling-hellman.md` |
+
+**To Resume:**
+```bash
+cd scripts/screen-flow-mapper
+node index.js
+```
+
+**Current Task:** Verify skip page fix works (lesson completes cleanly)
+
+**What's Done:**
+- ✅ 18 screen types documented
+- ✅ 11 extractors built
+- ✅ Auto-solver for exercises
+- ✅ Auto-save partial progress
+- 🔄 Testing on A1 Lesson 1
+
+**What Remains:**
+- Verify latest fix
+- Test 2-3 more A1 lessons
+- Full re-crawl (A1, A2, B1, B2)
+
+---
+
 ## Next Tasks Queue
 
 Priority order for continuing work:
 
-1. **A2 Multimedia Tasks** ⏳
+1. **Screen Flow Mapper Testing** 🔄 (CURRENT)
+   - Verify skip page fix works
+   - Test on more A1 lessons
+   - Then full re-crawl
+
+2. **A2 Multimedia Tasks** ⏳
    - Create task files in `docs/multimedia-tasks/A2-*.json`
    - Update START-HERE.md with A2 assets
 
-2. **B1 Content Creation** ⏳
+3. **B1 Content Creation** ⏳
    - Create lessons from Busuu B1 content (`extracted-content/busuu/B1/`)
    - Compare with `languageAppContent/phase3-lessons/B1-*/` if available
    - Follow A1/A2 merged pattern
 
-3. **B1 Audio Generation** ⏳
+4. **B1 Audio Generation** ⏳
    - Run `generate-audio.js --level=B1` after lessons created
 
-4. **B2 Extraction & Content** ⏳
+5. **B2 Extraction & Content** ⏳
    - Extract Busuu B2 content first
    - Then create lessons
 
