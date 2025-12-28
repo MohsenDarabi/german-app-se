@@ -61,6 +61,8 @@ async function extractLesson(page, lessonUrl, options = {}) {
   const screens = [];
   let screenIndex = 0;
   let lastFeedbackTip = null; // Track last feedback to prevent duplicates
+  let skipAttempts = 0; // Track skip attempts to prevent infinite loops
+  const MAX_SKIP_ATTEMPTS = 10;
 
   // Helper to auto-save current progress
   const saveProgress = async () => {
@@ -79,8 +81,19 @@ async function extractLesson(page, lessonUrl, options = {}) {
     try {
       // First check if we're on a skip page (Well done, League, etc.)
       if (await isSkipPage(page)) {
-        console.log('\n  → Skip page detected (Well done / League / etc.), auto-continuing...');
-        await navigator.clickContinue(page);
+        skipAttempts++;
+        console.log(`\n  → Skip page detected (attempt ${skipAttempts}/${MAX_SKIP_ATTEMPTS}), auto-continuing...`);
+
+        if (skipAttempts >= MAX_SKIP_ATTEMPTS) {
+          console.log('\nToo many skip attempts - ending extraction.');
+          break;
+        }
+
+        const clicked = await navigator.clickContinue(page);
+        if (!clicked) {
+          console.log('  → No button found, trying keyboard Enter...');
+          await page.keyboard.press('Enter');
+        }
         await page.waitForTimeout(1000);
 
         // Check if we're back on dashboard or lesson ended
@@ -91,6 +104,9 @@ async function extractLesson(page, lessonUrl, options = {}) {
         }
         continue;
       }
+
+      // Reset skip attempts when we find a real screen
+      skipAttempts = 0;
 
       // Wait for a screen to appear
       const { type, key } = await waitForScreen(page, CONFIG.screenTimeout);

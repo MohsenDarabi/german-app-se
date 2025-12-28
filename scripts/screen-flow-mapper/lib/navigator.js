@@ -145,26 +145,68 @@ export async function goToLesson(page, lessonUrl) {
  * @returns {Promise<boolean>}
  */
 export async function clickContinue(page) {
-  // Try different button selectors
-  const buttonSelectors = [
-    '[data-testid="continue_button"]',
-    '[data-testid="check_button"]',
-    'button:has-text("Continue")',
-    'button:has-text("Check")',
-    '.ex-continue-button'
-  ];
+  const clicked = await page.evaluate(() => {
+    const isVisible = (el) => el && el.offsetParent !== null;
 
-  for (const selector of buttonSelectors) {
-    try {
-      const button = await page.$(selector);
-      if (button) {
-        await button.click();
-        await page.waitForTimeout(500); // Small delay for animation
-        return true;
-      }
-    } catch {
-      // Try next selector
+    // 1. Try data-testid selectors first
+    const checkBtn = document.querySelector('[data-testid="check_button"]');
+    if (isVisible(checkBtn)) {
+      checkBtn.click();
+      return 'check_button';
     }
+
+    const continueBtn = document.querySelector('[data-testid="continue_button"]');
+    if (isVisible(continueBtn)) {
+      continueBtn.click();
+      return 'continue_button';
+    }
+
+    // 2. Try feedback bar button
+    const feedbackBtn = document.querySelector('.ex-feedback-bar__button');
+    if (isVisible(feedbackBtn)) {
+      feedbackBtn.click();
+      return 'feedback-bar';
+    }
+
+    // 3. Try data-qa-feedback-cta
+    const ctaBtn = document.querySelector('[data-qa-feedback-cta]');
+    if (isVisible(ctaBtn)) {
+      ctaBtn.click();
+      return 'feedback-cta';
+    }
+
+    // 4. Search all buttons by text content
+    const buttons = [...document.querySelectorAll('button')];
+    const textMatches = ['continue', 'check', 'next', 'ok', 'got it', 'done', 'close'];
+
+    for (const btn of buttons) {
+      const text = btn.textContent?.trim().toLowerCase() || '';
+      if (textMatches.some(t => text === t || text.includes(t)) && isVisible(btn)) {
+        btn.click();
+        return 'text: ' + text;
+      }
+    }
+
+    // 5. Try any primary/action button
+    const primaryBtn = document.querySelector('.btn-primary, .action-button, [class*="primary"], [class*="Primary"]');
+    if (isVisible(primaryBtn)) {
+      primaryBtn.click();
+      return 'primary-btn';
+    }
+
+    // 6. Try clicking any visible button as last resort
+    const anyBtn = buttons.find(b => isVisible(b) && b.textContent?.trim());
+    if (anyBtn) {
+      anyBtn.click();
+      return 'any-btn: ' + anyBtn.textContent?.trim().substring(0, 20);
+    }
+
+    return false;
+  });
+
+  if (clicked) {
+    await page.waitForTimeout(500);
+    return true;
   }
 
   return false;
