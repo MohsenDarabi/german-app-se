@@ -281,14 +281,20 @@ export async function isLessonEnded(page) {
     }
 
     // Check for explicit lesson completion indicators
+    // Note: "Well done" can be "Well done!", "Well done mohsen!", etc.
     const endIndicators = [
       'Lesson complete',
-      'Well done!',
+      'Well done',  // Matches "Well done!", "Well done mohsen!", etc.
       'lesson finished'
     ];
 
     const bodyText = document.body?.innerText || '';
-    return endIndicators.some(text =>
+
+    // Also check for vocabulary summary section (appears on lesson complete screen)
+    const hasVocabSummary = bodyText.includes('VOCABULARY') &&
+                           (bodyText.includes('Stars') || bodyText.includes('Score'));
+
+    return hasVocabSummary || endIndicators.some(text =>
       bodyText.toLowerCase().includes(text.toLowerCase())
     );
   });
