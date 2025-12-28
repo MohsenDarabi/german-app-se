@@ -197,49 +197,24 @@ async function extractLesson(page, lessonUrl, options = {}) {
       if (type.passThrough) {
         console.log('  → Pass-through screen, auto-continuing...');
 
-        // For conversation/community exercises, click the close/X button
+        // For conversation/community exercises - these can't be automated
+        // They require Speak/Write. Consider lesson complete and move on.
         if (type.id === 'conversation') {
-          const closed = await page.evaluate(() => {
-            // Try the nav close button (top right X) - exact selectors from HTML
-            const navClose = document.querySelector(
-              'button[aria-label="close"], ' +  // exact match
-              'button.sc-gyElHZ, ' +              // class from HTML
-              'button.hMmPyk'                     // another class from HTML
-            );
-            if (navClose && navClose.offsetParent !== null) {
-              navClose.click();
-              return 'nav-close';
-            }
+          console.log('  → Community exercise detected (requires Speak/Write)');
+          console.log('  → Treating as lesson complete (these exercises are usually at the end)');
 
-            // Try close button with contains selector
-            const closeBtn = document.querySelector(
-              'button[aria-label*="close"], button[aria-label*="Close"]'
-            );
-            if (closeBtn && closeBtn.offsetParent !== null) {
-              closeBtn.click();
-              return 'close-btn';
-            }
-
-            // Fallback: any button with X icon or close in aria-label
-            const buttons = [...document.querySelectorAll('button')];
-            const xBtn = buttons.find(b => {
-              const label = b.getAttribute('aria-label')?.toLowerCase() || '';
-              const hasCloseIcon = b.querySelector('svg path[d*="19.4912"]'); // X icon path
-              return (label.includes('close') || hasCloseIcon) && b.offsetParent !== null;
-            });
-            if (xBtn) {
-              xBtn.click();
-              return 'x-btn';
-            }
-
-            return null;
+          // Click close to exit the lesson gracefully
+          await page.evaluate(() => {
+            const closeBtn = document.querySelector('button[aria-label="close"]');
+            if (closeBtn) closeBtn.click();
           });
+          await page.waitForTimeout(500);
 
-          if (closed) {
-            console.log(`  → Closed conversation screen (${closed})`);
-            await page.waitForTimeout(1000);
-            continue;
-          }
+          // The "Are you sure?" dialog will be auto-accepted by our dialog handler
+          // This exits the lesson, which is what we want
+
+          console.log('\nLesson complete (skipped community exercise)');
+          break;
         }
 
         await navigator.clickContinue(page);
