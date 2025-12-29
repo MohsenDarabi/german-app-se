@@ -318,13 +318,31 @@ async function solveMatching(page) {
         // Get the clickable element inside
         const clickable = await wrapper.$('[data-selector="matching-item-option"]');
         if (clickable) {
-          // Scroll into view and click using Puppeteer's native click
+          // Use CDP click for trusted events that React accepts
           await clickable.scrollIntoViewIfNeeded();
-          await clickable.click({ delay: 100 });
-          const matchText = await clickable.evaluate(el => el.textContent.substring(0, 30));
-          console.log(`  [matching] Clicked match: "${matchText}"`);
-          clicked = true;
-          break;
+          const box = await clickable.boundingBox();
+          if (box) {
+            const client = await page.target().createCDPSession();
+            const x = box.x + box.width / 2;
+            const y = box.y + box.height / 2;
+            await client.send('Input.dispatchMouseEvent', {
+              type: 'mousePressed',
+              x, y,
+              button: 'left',
+              clickCount: 1
+            });
+            await client.send('Input.dispatchMouseEvent', {
+              type: 'mouseReleased',
+              x, y,
+              button: 'left',
+              clickCount: 1
+            });
+            await client.detach();
+            const matchText = await clickable.evaluate(el => el.textContent.substring(0, 30));
+            console.log(`  [matching] Clicked match: "${matchText}"`);
+            clicked = true;
+            break;
+          }
         }
       }
     }
@@ -380,12 +398,12 @@ async function solveWordSorting(page) {
   console.log(`  [word-sorting] Found ${positionData.length} items:`, positionData.map(i => i.choice).join(', '));
 
   if (positionData.length > 0) {
-    // Click each button in position order using Puppeteer's elementHandle.click()
+    // Click each button in position order
     for (const item of positionData) {
       // data-selector uses hyphens instead of spaces: "ich bin" -> "ich-bin"
       const selectorChoice = item.choice.replace(/\s+/g, '-');
 
-      // Try multiple selectors to find and click the button
+      // Try multiple selectors to find the button
       const selectors = [
         `button[data-selector="choice-item-${selectorChoice}"]:not([disabled])`,
         `button[data-selector="choice-item-${item.choice}"]:not([disabled])`,
@@ -393,17 +411,64 @@ async function solveWordSorting(page) {
       ];
 
       let clicked = false;
-      for (const selector of selectors) {
-        const btn = await page.$(selector);
-        if (btn) {
-          try {
-            await btn.scrollIntoViewIfNeeded();
-            await btn.click({ delay: 50 });
-            console.log(`  [word-sorting] Clicked "${item.choice}" using: ${selector}`);
-            clicked = true;
-            break;
-          } catch (e) {
-            console.log(`  [word-sorting] Click failed for "${item.choice}": ${e.message}`);
+
+      // First, try to find the shortcut key for this choice
+      const shortcutKey = await page.evaluate((choice) => {
+        // Find button with this choice and get its shortcut key
+        const btns = document.querySelectorAll('button[data-selector^="choice-item"]:not([disabled])');
+        for (const btn of btns) {
+          if (btn.getAttribute('title') === `answer ${choice}`) {
+            const shortcutSpan = btn.querySelector('[data-shortcut-key]');
+            if (shortcutSpan) {
+              return shortcutSpan.getAttribute('data-shortcut-key');
+            }
+          }
+        }
+        return null;
+      }, item.choice);
+
+      if (shortcutKey) {
+        // Use keyboard shortcut - only works for simple ASCII characters
+        const isSimpleKey = /^[a-zA-Z0-9]$/.test(shortcutKey);
+        if (isSimpleKey) {
+          await page.keyboard.press(shortcutKey);
+          console.log(`  [word-sorting] Pressed shortcut "${shortcutKey}" for "${item.choice}"`);
+          clicked = true;
+        }
+      }
+
+      if (!clicked) {
+        // Use CDP click for special characters and as fallback
+        // CDP clicks are "trusted" events that React accepts
+        for (const selector of selectors) {
+          const btn = await page.$(selector);
+          if (btn) {
+            try {
+              const box = await btn.boundingBox();
+              if (box) {
+                const client = await page.target().createCDPSession();
+                const x = box.x + box.width / 2;
+                const y = box.y + box.height / 2;
+                await client.send('Input.dispatchMouseEvent', {
+                  type: 'mousePressed',
+                  x, y,
+                  button: 'left',
+                  clickCount: 1
+                });
+                await client.send('Input.dispatchMouseEvent', {
+                  type: 'mouseReleased',
+                  x, y,
+                  button: 'left',
+                  clickCount: 1
+                });
+                await client.detach();
+                console.log(`  [word-sorting] CDP clicked "${item.choice}"`);
+                clicked = true;
+                break;
+              }
+            } catch (e) {
+              console.log(`  [word-sorting] CDP click failed for "${item.choice}": ${e.message}`);
+            }
           }
         }
       }
@@ -411,7 +476,7 @@ async function solveWordSorting(page) {
       if (!clicked) {
         console.log(`  [word-sorting] Could not find button for: ${item.choice}`);
       }
-      await page.waitForTimeout(400);
+      await page.waitForTimeout(500);
     }
   } else {
     // Fallback: click buttons with title starting with "answer" in order using mouse
@@ -432,12 +497,11 @@ async function solveWordSorting(page) {
   }
 
   // Wait for answer to register, then click forward nav to advance
-  await page.waitForTimeout(500);
+  await page.waitForTimeout(800);
   const forwardBtn = await page.$('[data-selector="navigation-forward"]:not([disabled])');
   if (forwardBtn) {
     try {
-      await forwardBtn.scrollIntoViewIfNeeded();
-      await forwardBtn.click({ delay: 50 });
+      await forwardBtn.click({ force: true, delay: 100 });
       console.log(`  [word-sorting] Clicked forward navigation`);
     } catch (e) {
       console.log(`  [word-sorting] Forward click failed: ${e.message}`);
@@ -449,35 +513,84 @@ async function solveWordSorting(page) {
 }
 
 /**
- * Dialogue - fill in all blanks in sequence
+ * Dialogue / Dialog-choose - fill in blanks using data-solution attribute
+ * The correct answer is marked with data-solution="CorrectText"
  */
 async function solveDialogue(page) {
-  // Keep filling blanks until dialogue is complete
-  for (let i = 0; i < 10; i++) {
-    const hasMoreBlanks = await page.evaluate(() => {
-      const buttons = document.querySelectorAll('button[title^="answer"]:not([disabled])');
-      if (buttons.length > 0) {
-        buttons[0].click();
-        return true;
-      }
-      return false;
-    });
+  // Find the correct solution from data-solution attribute
+  const solution = await page.evaluate(() => {
+    const solutionEl = document.querySelector('[data-solution]');
+    return solutionEl ? solutionEl.getAttribute('data-solution') : null;
+  });
 
-    if (!hasMoreBlanks) {
-      // Check for Continue button
-      const continued = await page.evaluate(() => {
-        const continueBtn = Array.from(document.querySelectorAll('button'))
-          .find(b => b.textContent.includes('Continue'));
-        if (continueBtn && !continueBtn.disabled) {
-          continueBtn.click();
-          return true;
+  // Check if there are enabled answer buttons
+  const buttons = await page.$$('button[title^="answer"]:not([disabled])');
+
+  if (buttons.length === 0) {
+    console.log(`  [dialogue] No answer buttons available`);
+  } else if (solution) {
+    console.log(`  [dialogue] Looking for answer: "${solution}"`);
+
+    // Find and click the button with matching text using CDP
+    for (const btn of buttons) {
+      const text = await btn.evaluate(el => el.textContent.trim());
+      // Strip leading number from button text for comparison
+      const cleanText = text.replace(/^\d+/, '').trim();
+      if (cleanText.includes(solution) || solution.includes(cleanText) || text.includes(solution)) {
+        const box = await btn.boundingBox();
+        if (box) {
+          const client = await page.target().createCDPSession();
+          const x = box.x + box.width / 2;
+          const y = box.y + box.height / 2;
+          await client.send('Input.dispatchMouseEvent', {
+            type: 'mousePressed', x, y, button: 'left', clickCount: 1
+          });
+          await client.send('Input.dispatchMouseEvent', {
+            type: 'mouseReleased', x, y, button: 'left', clickCount: 1
+          });
+          await client.detach();
+          console.log(`  [dialogue] CDP clicked "${text}"`);
+          break;
         }
-        return false;
-      });
-      if (continued) break;
+      }
     }
+  } else {
+    // No data-solution, click first available answer button via CDP
+    const btn = buttons[0];
+    if (btn) {
+      const box = await btn.boundingBox();
+      if (box) {
+        const client = await page.target().createCDPSession();
+        const x = box.x + box.width / 2;
+        const y = box.y + box.height / 2;
+        await client.send('Input.dispatchMouseEvent', {
+          type: 'mousePressed', x, y, button: 'left', clickCount: 1
+        });
+        await client.send('Input.dispatchMouseEvent', {
+          type: 'mouseReleased', x, y, button: 'left', clickCount: 1
+        });
+        await client.detach();
+        console.log(`  [dialogue] CDP clicked first answer button`);
+      }
+    }
+  }
 
-    await page.waitForTimeout(400);
+  // Click forward navigation
+  await page.waitForTimeout(500);
+  const forwardBtn = await page.$('[data-selector="navigation-forward"]:not([disabled])');
+  if (forwardBtn) {
+    const box = await forwardBtn.boundingBox();
+    if (box) {
+      const client = await page.target().createCDPSession();
+      await client.send('Input.dispatchMouseEvent', {
+        type: 'mousePressed', x: box.x + box.width/2, y: box.y + box.height/2, button: 'left', clickCount: 1
+      });
+      await client.send('Input.dispatchMouseEvent', {
+        type: 'mouseReleased', x: box.x + box.width/2, y: box.y + box.height/2, button: 'left', clickCount: 1
+      });
+      await client.detach();
+      console.log(`  [dialogue] Clicked forward navigation`);
+    }
   }
 }
 
@@ -540,16 +653,77 @@ async function solveGeneric(page) {
 
 /**
  * Listening - choose what is said (click correct audio option)
+ * Uses data-solution attribute to find the correct answer
  */
 async function solveListeningChooseSaid(page) {
-  // Similar to MCQ but for audio options
-  await page.evaluate(() => {
-    const buttons = document.querySelectorAll('button[title^="answer"]');
-    if (buttons.length > 0) {
-      buttons[0].click();
-    }
+  // Find the correct solution from data-solution attribute
+  const solution = await page.evaluate(() => {
+    const solutionEl = document.querySelector('[data-solution]');
+    return solutionEl ? solutionEl.getAttribute('data-solution') : null;
   });
-  await page.waitForTimeout(500);
+
+  if (solution) {
+    console.log(`  [listening-choose-said] Looking for answer: "${solution}"`);
+
+    // Find and click the button with matching text using CDP
+    const buttons = await page.$$('button[title^="answer"]:not([disabled])');
+
+    for (const btn of buttons) {
+      const text = await btn.evaluate(el => el.textContent.trim());
+      if (text.includes(solution) || solution.includes(text.replace(/^\d+/, '').trim())) {
+        const box = await btn.boundingBox();
+        if (box) {
+          const client = await page.target().createCDPSession();
+          const x = box.x + box.width / 2;
+          const y = box.y + box.height / 2;
+          await client.send('Input.dispatchMouseEvent', {
+            type: 'mousePressed', x, y, button: 'left', clickCount: 1
+          });
+          await client.send('Input.dispatchMouseEvent', {
+            type: 'mouseReleased', x, y, button: 'left', clickCount: 1
+          });
+          await client.detach();
+          console.log(`  [listening-choose-said] CDP clicked "${text}"`);
+          break;
+        }
+      }
+    }
+  } else {
+    // Fallback: click first button
+    const btn = await page.$('button[title^="answer"]:not([disabled])');
+    if (btn) {
+      const box = await btn.boundingBox();
+      if (box) {
+        const client = await page.target().createCDPSession();
+        await client.send('Input.dispatchMouseEvent', {
+          type: 'mousePressed', x: box.x + box.width/2, y: box.y + box.height/2, button: 'left', clickCount: 1
+        });
+        await client.send('Input.dispatchMouseEvent', {
+          type: 'mouseReleased', x: box.x + box.width/2, y: box.y + box.height/2, button: 'left', clickCount: 1
+        });
+        await client.detach();
+        console.log(`  [listening-choose-said] CDP clicked first button`);
+      }
+    }
+  }
+
+  // Click forward navigation
+  await page.waitForTimeout(600);
+  const forwardBtn = await page.$('[data-selector="navigation-forward"]:not([disabled])');
+  if (forwardBtn) {
+    const box = await forwardBtn.boundingBox();
+    if (box) {
+      const client = await page.target().createCDPSession();
+      await client.send('Input.dispatchMouseEvent', {
+        type: 'mousePressed', x: box.x + box.width/2, y: box.y + box.height/2, button: 'left', clickCount: 1
+      });
+      await client.send('Input.dispatchMouseEvent', {
+        type: 'mouseReleased', x: box.x + box.width/2, y: box.y + box.height/2, button: 'left', clickCount: 1
+      });
+      await client.detach();
+      console.log(`  [listening-choose-said] Clicked forward navigation`);
+    }
+  }
 }
 
 /**

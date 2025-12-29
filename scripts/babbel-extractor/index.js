@@ -360,8 +360,25 @@ async function extractLesson(page, lessonInfo, progress) {
       process.exit(1);
     }
 
-    // Check for stuck (same screen type AND same progress position)
-    const progressKey = pageProgress ? `${type}-${pageProgress.current}/${pageProgress.total}` : type;
+    // Check for stuck (same screen type AND same progress position AND same content hint)
+    // Get a content hint to distinguish different exercises at the same progress
+    const contentHint = await page.evaluate(() => {
+      // For word-sorting, use the answer choices
+      const choices = Array.from(document.querySelectorAll('[data-choice]')).map(el => el.getAttribute('data-choice')).join(',');
+      if (choices) return choices;
+      // For matching, use first item text
+      const matchItem = document.querySelector('[data-solution-id]');
+      if (matchItem) return matchItem.textContent?.substring(0, 20) || '';
+      // For MCQ, use prompt text
+      const prompt = document.querySelector('[data-selector="prompt"]');
+      if (prompt) return prompt.textContent?.substring(0, 20) || '';
+      // Fallback to instruction text
+      const instr = document.querySelector('[class*="instruction"], [data-selector*="instruction"]');
+      return instr?.textContent?.substring(0, 20) || '';
+    });
+    const progressKey = pageProgress
+      ? `${type}-${pageProgress.current}/${pageProgress.total}-${contentHint}`
+      : `${type}-${contentHint}`;
     if (progressKey === lastProgressKey) {
       stuckCount++;
       console.log(`    ⚠ Same screen detected (stuck count: ${stuckCount}/${CONFIG.maxStuckCount})`);
