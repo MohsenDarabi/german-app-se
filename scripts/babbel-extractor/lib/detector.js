@@ -107,6 +107,10 @@ export async function detectScreenType(page) {
                      !!document.querySelector('.popup') ||
                      fullText.includes('Got it');
 
+    // Get trainer type from data attribute
+    const trainerTypeEl = document.querySelector('[data-trainer-type]');
+    const trainerType = trainerTypeEl ? trainerTypeEl.getAttribute('data-trainer-type') : null;
+
     return {
       text: fullText,
       instruction,
@@ -121,11 +125,124 @@ export async function detectScreenType(page) {
       hasStoryTitle,
       hasContinueOnly,
       hasImages,
-      hasPopup
+      hasPopup,
+      trainerType
     };
   });
 
   const { text, instruction } = pageInfo;
+
+  // === DATA-SELECTOR DETECTION ===
+  // Check for specific selectors first
+  const hasVocabSpeak = await page.evaluate(() => !!document.querySelector('[data-selector="vocabulary-speak"]'));
+  const hasVocabShow = await page.evaluate(() => !!document.querySelector('[data-selector="vocabulary-show"]'));
+  const hasSkipButton = await page.evaluate(() => !!document.querySelector('[data-selector="skip-button"]'));
+  const hasMicButton = await page.evaluate(() => !!document.querySelector('[data-selector="mic-button"]'));
+
+  // vocabulary-speak screen with mic-button = speech exercise (requires recording)
+  if (hasVocabSpeak && hasMicButton) {
+    return { type: 'speech-exercise', instruction };
+  }
+
+  // vocabulary-show = vocabulary display (just click forward to advance)
+  if (hasVocabShow) {
+    return { type: 'vocab-intro', instruction };
+  }
+
+  // vocabulary-puzzlehelper = word building (click syllables) OR spelling (click letters) OR single-answer
+  const hasVocabPuzzlehelper = await page.evaluate(() => !!document.querySelector('[data-selector="vocabulary-puzzlehelper"]'));
+  if (hasVocabPuzzlehelper) {
+    // Check if it's a spelling exercise (has done-button and delete-button selectors)
+    const isSpelling = await page.evaluate(() => {
+      return !!document.querySelector('[data-selector="done-button"]') &&
+             !!document.querySelector('[data-selector="delete-button"]');
+    });
+    if (isSpelling) {
+      return { type: 'spelling', instruction };
+    }
+
+    // Check if it has data-position elements (word-sorting with syllables)
+    const hasPositionElements = await page.evaluate(() => {
+      const posElems = document.querySelectorAll('[data-position]');
+      // Need at least one position element with a choice
+      for (const posElem of posElems) {
+        if (posElem.querySelector('[data-choice]')) {
+          return true;
+        }
+      }
+      return false;
+    });
+
+    if (hasPositionElements) {
+      return { type: 'word-sorting', instruction };
+    }
+
+    // No position elements = single-answer vocabulary exercise ("Complete the question with the missing word")
+    // This should use mcq-translation solver which clicks data-correct="true" buttons
+    return { type: 'mcq-translation', instruction };
+  }
+
+  // vocabulary-choose = vocabulary choice exercise (MCQ, formality, or response)
+  const hasVocabChoose = await page.evaluate(() => !!document.querySelector('[data-selector="vocabulary-choose"]'));
+  if (hasVocabChoose) {
+    // Check if it's formality-related
+    const hasFormality = await page.evaluate(() => {
+      const text = document.body.textContent || '';
+      return text.includes('formell') || text.includes('informell') ||
+             text.includes('formal') || text.includes('informal');
+    });
+    if (hasFormality) {
+      return { type: 'formality-choice', instruction };
+    }
+
+    // Check if it's a "How would you respond?" question
+    const hasRespond = await page.evaluate(() => {
+      const text = document.body.textContent || '';
+      return text.includes('respond') || text.includes('How would you');
+    });
+    if (hasRespond) {
+      return { type: 'response-choice', instruction };
+    }
+
+    return { type: 'mcq-translation', instruction };
+  }
+
+  // vocabulary-wordorder = letter/word ordering exercise
+  const hasVocabWordorder = await page.evaluate(() => !!document.querySelector('[data-selector="vocabulary-wordorder"]'));
+  if (hasVocabWordorder) {
+    // Check if it's a letter dictation (data-trainer-dictate="true")
+    const isDictation = await page.evaluate(() => !!document.querySelector('[data-trainer-dictate="true"]'));
+    if (isDictation) {
+      return { type: 'letter-dictation', instruction };
+    }
+    return { type: 'sentence-order', instruction };
+  }
+
+  // Any screen with skip button = speech exercise
+  if (hasSkipButton) {
+    return { type: 'speech-exercise', instruction };
+  }
+
+  // === TRAINER TYPE DETECTION ===
+  // Use data-trainer-type attribute when available (most reliable)
+  if (pageInfo.trainerType) {
+    switch (pageInfo.trainerType) {
+      case 'card':
+        return { type: 'vocab-card', instruction };
+      case 'dialog':
+        return { type: 'dialogue', instruction };
+      case 'matching':
+        return { type: 'matching', instruction };
+      case 'puzzlehelper':
+        return { type: 'sentence-order', instruction };
+      case 'vocabulary':
+        // Could be vocab-intro or listening-choose-said based on instruction
+        if (instruction && instruction.includes('Listen and choose')) {
+          return { type: 'listening-choose-said', instruction };
+        }
+        break;
+    }
+  }
 
   // === POPUP/TIP DETECTION ===
   if (pageInfo.hasPopup && text.includes('Got it')) {
