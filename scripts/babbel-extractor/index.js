@@ -80,19 +80,45 @@ function parseArgs() {
 }
 
 /**
- * Connect to existing Chrome instance
+ * Connect to existing Chrome or launch new one
  */
 async function connectToChrome() {
+  // First try to connect to existing Chrome with remote debugging
   try {
     const browser = await puppeteer.connect({
       browserURL: 'http://localhost:9222',
       defaultViewport: null
     });
-    console.log('✓ Connected to Chrome');
+    console.log('✓ Connected to existing Chrome');
     return browser;
   } catch (error) {
-    console.error('✗ Could not connect to Chrome on port 9222');
-    console.error('  Start Chrome with: /Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome --remote-debugging-port=9222');
+    console.log('No Chrome on port 9222, launching new instance...');
+  }
+
+  // Launch Chrome with a profile in temp directory (external SSD causes issues)
+  const userDataDir = '/tmp/babbel-chrome-profile';
+
+  console.log('Launching Chrome...');
+  console.log('  Profile dir:', userDataDir);
+
+  try {
+    const browser = await puppeteer.launch({
+      headless: false,
+      executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+      defaultViewport: null,
+      userDataDir: userDataDir,
+      args: [
+        '--start-maximized',
+        '--no-first-run',
+        '--no-default-browser-check'
+      ]
+    });
+    console.log('✓ Launched Chrome');
+    console.log('  (If not logged into Babbel, please log in now)');
+    return browser;
+  } catch (error) {
+    console.error('✗ Could not launch Chrome:', error.message);
+    console.error('  Full error:', error);
     process.exit(1);
   }
 }
@@ -163,6 +189,35 @@ async function saveIssue(page, type, details) {
 }
 
 /**
+ * Check if user is logged into Babbel
+ */
+async function ensureLoggedIn(page) {
+  console.log('\nChecking Babbel login...');
+  await page.goto('https://my.babbel.com/dashboard', { waitUntil: 'networkidle2' });
+  await new Promise(r => setTimeout(r, 2000));
+
+  const url = page.url();
+
+  // If redirected to login page, wait for user to log in
+  if (url.includes('/login') || url.includes('/accounts') || !url.includes('babbel.com/dashboard')) {
+    console.log('\n╔════════════════════════════════════════╗');
+    console.log('║  Please log into Babbel in the browser ║');
+    console.log('║  Waiting for login...                  ║');
+    console.log('╚════════════════════════════════════════╝\n');
+
+    // Wait until we're on the dashboard
+    await page.waitForFunction(
+      () => window.location.href.includes('/dashboard'),
+      { timeout: 300000 } // 5 minute timeout
+    );
+    console.log('✓ Logged in successfully!');
+    await new Promise(r => setTimeout(r, 2000));
+  } else {
+    console.log('✓ Already logged in');
+  }
+}
+
+/**
  * Discover all lessons from course overview page
  */
 async function discoverLessons(page, level) {
@@ -175,66 +230,39 @@ async function discoverLessons(page, level) {
   const levelUrl = `${CONFIG.courseOverviewUrl}/learning_path/${levelConfig.pathId}`;
   console.log(`\nNavigating to ${levelConfig.name}...`);
   await page.goto(levelUrl, { waitUntil: 'networkidle2' });
-  await new Promise(r => setTimeout(r, 2000));
+  await new Promise(r => setTimeout(r, 3000));
 
-  // Extract lesson information
+  // Debug: save screenshot
+  await page.screenshot({ path: path.join(__dirname, 'debug-course-overview.png'), fullPage: true });
+  console.log('  (saved debug screenshot)');
+
+  // Extract lesson information - simply find all "Start now" and "Repeat" buttons
   const lessons = await page.evaluate(() => {
     const results = [];
-    let currentUnit = null;
-    let lessonInUnit = 0;
 
-    // Find all elements in main content
-    const elements = document.querySelectorAll('main *');
+    // Find all buttons on the page
+    const allButtons = document.querySelectorAll('button');
+    let lessonIndex = 0;
 
-    for (const el of elements) {
-      // Check for unit headers (images with unit title)
-      if (el.tagName === 'IMG' && el.alt && !el.alt.includes('Babbel')) {
-        currentUnit = {
-          title: el.alt,
-          number: results.filter(r => r.type === 'unit').length + 1
-        };
-        results.push({ type: 'unit', ...currentUnit });
-        lessonInUnit = 0;
-      }
-
-      // Check for lesson buttons (Start now or Repeat)
-      if (el.tagName === 'BUTTON') {
-        const text = el.textContent.trim();
-        if (text === 'Start now' || text === 'Repeat') {
-          // Get lesson info from previous siblings
-          let lessonTitle = null;
-          let lessonDescription = null;
-
-          // Look backwards for lesson info
-          let sibling = el.previousElementSibling;
-          while (sibling) {
-            const sibText = sibling.textContent.trim();
-            if (sibText.length > 20 && !sibText.includes('lesson')) {
-              lessonDescription = sibText;
-            } else if (sibText.length > 5 && !sibText.match(/^lesson \d+$/) && !sibText.match(/^\d+$/)) {
-              lessonTitle = sibText;
-              break;
-            }
-            sibling = sibling.previousElementSibling;
-          }
-
-          lessonInUnit++;
-
-          results.push({
-            type: 'lesson',
-            unit: currentUnit?.number || 1,
-            unitTitle: currentUnit?.title || 'Unknown',
-            lessonInUnit,
-            title: lessonTitle || `Lesson ${lessonInUnit}`,
-            description: lessonDescription,
-            status: text === 'Repeat' ? 'completed' : 'available',
-            buttonText: text
-          });
-        }
+    for (const btn of allButtons) {
+      const text = btn.textContent.trim();
+      if (text === 'Start now' || text === 'Repeat') {
+        lessonIndex++;
+        results.push({
+          type: 'lesson',
+          index: lessonIndex,
+          unit: 1,
+          unitTitle: 'Unit',
+          lessonInUnit: lessonIndex,
+          title: `Lesson ${lessonIndex}`,
+          description: null,
+          status: text === 'Repeat' ? 'completed' : 'available',
+          buttonText: text
+        });
       }
     }
 
-    return results.filter(r => r.type === 'lesson');
+    return results;
   });
 
   console.log(`Found ${lessons.length} lessons in ${level.toUpperCase()}`);
@@ -245,22 +273,54 @@ async function discoverLessons(page, level) {
  * Start a lesson by clicking its button
  */
 async function startLesson(page, lessonIndex) {
-  // Find all Start/Repeat buttons
-  const buttons = await page.$$('button');
-  let lessonButtonIndex = 0;
+  console.log(`  Looking for lesson ${lessonIndex + 1} button...`);
 
-  for (const button of buttons) {
-    const text = await button.evaluate(el => el.textContent.trim());
-    if (text === 'Start now' || text === 'Repeat') {
-      if (lessonButtonIndex === lessonIndex) {
-        await button.click();
-        await new Promise(r => setTimeout(r, 2000));
-        return true;
+  // Click the button using JavaScript
+  const clicked = await page.evaluate((idx) => {
+    const buttons = document.querySelectorAll('button');
+    let lessonButtonIndex = 0;
+
+    for (const btn of buttons) {
+      const text = btn.textContent.trim();
+      if (text === 'Start now' || text === 'Repeat') {
+        if (lessonButtonIndex === idx) {
+          btn.scrollIntoView({ block: 'center' });
+          btn.click();
+          return { clicked: true, text };
+        }
+        lessonButtonIndex++;
       }
-      lessonButtonIndex++;
+    }
+    return { clicked: false };
+  }, lessonIndex);
+
+  if (!clicked.clicked) {
+    console.log('  ⚠ Button not found');
+    return false;
+  }
+
+  console.log(`  Clicked "${clicked.text}" button`);
+
+  // Wait for URL to change to lesson-player
+  const startUrl = page.url();
+  for (let i = 0; i < 20; i++) {
+    await new Promise(r => setTimeout(r, 1000));
+    const currentUrl = page.url();
+    if (currentUrl.includes('/lesson-player/')) {
+      console.log('  ✓ Lesson started');
+      await new Promise(r => setTimeout(r, 2000));
+      return true;
+    }
+    if (currentUrl !== startUrl && !currentUrl.includes('course-overview')) {
+      console.log(`  Navigated to: ${currentUrl}`);
+      await new Promise(r => setTimeout(r, 2000));
+      return true;
     }
   }
 
+  console.log('  ⚠ Navigation timeout - URL did not change');
+  // Take screenshot for debugging
+  await page.screenshot({ path: path.join(__dirname, 'debug-after-click.png') });
   return false;
 }
 
@@ -276,7 +336,7 @@ async function extractLesson(page, lessonInfo, progress) {
   const screens = [];
   let screenIndex = progress.currentScreen || 0;
   let stuckCount = 0;
-  let lastType = null;
+  let lastProgressKey = null;
 
   while (!await isLessonComplete(page) && stuckCount < CONFIG.maxStuckCount) {
     const pageProgress = await getProgress(page);
@@ -300,9 +360,11 @@ async function extractLesson(page, lessonInfo, progress) {
       process.exit(1);
     }
 
-    // Check for stuck (same screen type twice in a row after solving)
-    if (type === lastType && stuckCount > 0) {
+    // Check for stuck (same screen type AND same progress position)
+    const progressKey = pageProgress ? `${type}-${pageProgress.current}/${pageProgress.total}` : type;
+    if (progressKey === lastProgressKey) {
       stuckCount++;
+      console.log(`    ⚠ Same screen detected (stuck count: ${stuckCount}/${CONFIG.maxStuckCount})`);
       if (stuckCount >= CONFIG.maxStuckCount) {
         const issueDir = await saveIssue(page, 'stuck', {
           screenIndex,
@@ -318,6 +380,8 @@ async function extractLesson(page, lessonInfo, progress) {
         console.error(`${'!'.repeat(60)}`);
         process.exit(1);
       }
+    } else {
+      stuckCount = 0; // Reset on actual progress
     }
 
     // Extract content before solving
@@ -337,13 +401,10 @@ async function extractLesson(page, lessonInfo, progress) {
     // Solve and advance
     const solved = await solveExercise(page, type);
     if (!solved) {
-      stuckCount++;
-      console.log(`    ⚠ Could not solve (attempt ${stuckCount}/${CONFIG.maxStuckCount})`);
-    } else {
-      stuckCount = 0;
+      console.log(`    ⚠ Solver returned false for ${type}`);
     }
 
-    lastType = type;
+    lastProgressKey = progressKey;
     await new Promise(r => setTimeout(r, CONFIG.exerciseDelay));
     screenIndex++;
 
@@ -438,6 +499,9 @@ async function main() {
 
     const progress = await loadProgress(options.level);
     console.log(`Previously completed: ${progress.completedLessons.length} lessons`);
+
+    // Ensure user is logged in
+    await ensureLoggedIn(page);
 
     // Discover all lessons
     const lessons = await discoverLessons(page, options.level);

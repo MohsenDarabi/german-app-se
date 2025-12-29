@@ -76,67 +76,181 @@ export async function solveExercise(page, type) {
 }
 
 /**
- * Vocab intro - click on the word to continue
+ * Vocab intro - click the forward arrow (>) in navigation to progress
+ * The screen shows vocabulary with a word card - advance via nav arrow
  */
 async function solveVocabIntro(page) {
   await page.evaluate(() => {
-    const buttons = document.querySelectorAll('main button');
-    if (buttons.length > 0) {
-      buttons[0].click();
+    // Direct selector for forward navigation button
+    const forwardBtn = document.querySelector('[data-selector="navigation-forward"]');
+    if (forwardBtn && !forwardBtn.disabled) {
+      forwardBtn.click();
+      return;
+    }
+
+    // Fallback: look for button with title containing "next"
+    const allBtns = document.querySelectorAll('button');
+    for (const btn of allBtns) {
+      const title = (btn.getAttribute('title') || '').toLowerCase();
+      if (title.includes('next') || title.includes('forward')) {
+        btn.click();
+        return;
+      }
     }
   });
   await page.waitForTimeout(500);
 }
 
 /**
- * MCQ Translation - find and click correct answer
+ * MCQ Translation - find and click correct answer tile then advance
+ * The correct tile has the same data-item-id as the prompt
  */
 async function solveMcq(page) {
-  // Click through all options until one is correct
-  // Babbel typically shows feedback immediately
-  const buttons = await page.$$('main button');
+  // Check if there are tiles to click
+  const hasTiles = await page.evaluate(() => {
+    return document.querySelector('[data-selector="vocabulary-click-tile"]') !== null ||
+           document.querySelector('button[data-correct]') !== null;
+  });
 
-  for (const button of buttons) {
-    const description = await button.evaluate(el => el.getAttribute('description') || '');
-    if (description.includes('answer') || description.includes('Placeholder')) {
-      await button.click();
-      await page.waitForTimeout(300);
-
-      // Check if we need to continue (wrong answer scenario)
-      const isDisabled = await button.evaluate(el => el.disabled);
-      if (!isDisabled) {
-        // Might be the right answer, wait for next question
-        await page.waitForTimeout(500);
+  if (hasTiles) {
+    await page.evaluate(() => {
+      // Get the prompt item's ID
+      const promptBtn = document.querySelector('[data-selector="vocabulary-click-ll-item"]');
+      if (promptBtn) {
+        const targetId = promptBtn.getAttribute('data-item-id');
+        if (targetId) {
+          // Find the tile with matching ID
+          const tiles = document.querySelectorAll('[data-selector="vocabulary-click-tile"]');
+          for (const tile of tiles) {
+            if (tile.getAttribute('data-item-id') === targetId) {
+              tile.click();
+              return;
+            }
+          }
+        }
       }
-    }
-  }
-}
 
-/**
- * Listening fill-in - click correct answer button
- */
-async function solveListeningFill(page) {
-  // Find answer buttons and click them in sequence
+      // Fallback: try data-correct="true" button
+      const correctBtn = document.querySelector('button[data-correct="true"]');
+      if (correctBtn) {
+        correctBtn.click();
+        return;
+      }
+
+      // Second fallback: click first tile
+      const firstTile = document.querySelector('[data-selector="vocabulary-click-tile"]');
+      if (firstTile) {
+        firstTile.click();
+      }
+    });
+    await page.waitForTimeout(800);
+  }
+
+  // After answering, click forward nav to advance
   await page.evaluate(() => {
-    const buttons = document.querySelectorAll('button[description*="answer"]');
-    if (buttons.length > 0) {
-      buttons[0].click();
+    const forwardBtn = document.querySelector('[data-selector="navigation-forward"]');
+    if (forwardBtn && !forwardBtn.disabled) {
+      forwardBtn.click();
     }
   });
   await page.waitForTimeout(500);
 }
 
 /**
- * Grammar tip - click answer to fill in blank
+ * Listening fill-in - click correct answer button (choice items) then advance
  */
-async function solveGrammarTip(page) {
-  await page.evaluate(() => {
-    const buttons = document.querySelectorAll('button[description*="answer"]');
-    buttons.forEach(btn => {
-      if (!btn.disabled) {
-        btn.click();
+async function solveListeningFill(page) {
+  // First check if we need to answer or just advance
+  const hasChoices = await page.evaluate(() => {
+    return document.querySelector('button[data-correct]') !== null ||
+           document.querySelector('button[data-selector^="choice-item"]') !== null;
+  });
+
+  if (hasChoices) {
+    await page.evaluate(() => {
+      // First try: find button with data-correct="true"
+      const correctBtn = document.querySelector('button[data-correct="true"]');
+      if (correctBtn) {
+        correctBtn.click();
+        return;
+      }
+
+      // Second try: find choice-item buttons
+      const choiceBtn = document.querySelector('button[data-selector^="choice-item"]');
+      if (choiceBtn) {
+        choiceBtn.click();
+        return;
+      }
+
+      // Third try: buttons with title starting with "answer"
+      const allBtns = document.querySelectorAll('button');
+      for (const btn of allBtns) {
+        const title = btn.getAttribute('title') || '';
+        if (title.startsWith('answer')) {
+          btn.click();
+          return;
+        }
       }
     });
+    await page.waitForTimeout(800);
+  }
+
+  // After answering (or if already answered), click forward nav to advance
+  await page.evaluate(() => {
+    const forwardBtn = document.querySelector('[data-selector="navigation-forward"]');
+    if (forwardBtn && !forwardBtn.disabled) {
+      forwardBtn.click();
+    }
+  });
+  await page.waitForTimeout(500);
+}
+
+/**
+ * Grammar tip - click answer to fill in blank then advance
+ */
+async function solveGrammarTip(page) {
+  // Check if there are answers to click
+  const hasAnswers = await page.evaluate(() => {
+    return document.querySelector('button[data-correct]') !== null ||
+           document.querySelector('button[data-selector^="choice-item"]') !== null ||
+           document.querySelector('button[title^="answer"]') !== null;
+  });
+
+  if (hasAnswers) {
+    await page.evaluate(() => {
+      // First try: find button with data-correct="true"
+      const correctBtn = document.querySelector('button[data-correct="true"]');
+      if (correctBtn) {
+        correctBtn.click();
+        return;
+      }
+
+      // Second try: find choice-item buttons
+      const choiceBtn = document.querySelector('button[data-selector^="choice-item"]');
+      if (choiceBtn) {
+        choiceBtn.click();
+        return;
+      }
+
+      // Third try: buttons with title starting with "answer"
+      const allBtns = document.querySelectorAll('button');
+      for (const btn of allBtns) {
+        const title = btn.getAttribute('title') || '';
+        if (title.startsWith('answer')) {
+          btn.click();
+          return;
+        }
+      }
+    });
+    await page.waitForTimeout(800);
+  }
+
+  // After answering (or if already answered), click forward nav to advance
+  await page.evaluate(() => {
+    const forwardBtn = document.querySelector('[data-selector="navigation-forward"]');
+    if (forwardBtn && !forwardBtn.disabled) {
+      forwardBtn.click();
+    }
   });
   await page.waitForTimeout(500);
 }

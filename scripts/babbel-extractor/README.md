@@ -10,30 +10,51 @@ Automated extraction of German learning content from Babbel for integration into
 | Screen Types | ✅ 23 types documented |
 | Detectors | ✅ All 23 types |
 | Extractors | ✅ All 23 types |
-| Auto-Solvers | ✅ All 23 types |
+| Auto-Solvers | ✅ Fixed & tested (Dec 29, 2025) |
 | Lesson Discovery | ✅ Implemented |
 | Progress Tracking | ✅ Implemented |
 | Issue Capture | ✅ Implemented |
-| A1.1 Extraction | ⏳ Ready to run |
+| A1.1 Extraction | ⏳ Ready to run (52 lessons) |
+
+## Recent Fixes (Dec 29, 2025)
+
+The auto-solvers were extensively debugged. Key issues fixed:
+
+| Solver | Issue | Fix |
+|--------|-------|-----|
+| **vocab-intro** | Clicked audio button instead of advancing | Now clicks `[data-selector="navigation-forward"]` |
+| **stuck detection** | Never triggered on first repeat | Now tracks `progressKey` (type + progress position) |
+| **listening-fill** | Clicked answer but didn't advance | Clicks answer + forward nav |
+| **mcq-translation** | Used wrong selectors | Matches `data-item-id` from prompt to correct tile |
+| **grammar-tip** | Same as listening-fill | Clicks answer + forward nav |
+
+### Key Pattern Discovered
+
+All Babbel exercises follow this pattern:
+1. Answer buttons have `data-correct="true"` or `data-selector="choice-item-X"`
+2. MCQ tiles use `data-item-id` matching between prompt and correct answer
+3. After answering, must click `[data-selector="navigation-forward"]` to advance
+
+### Testing Progress
+
+Crawler successfully advances through:
+- vocab-intro → mcq-translation → listening-fill → grammar-tip → ...
+
+More exercise types may need similar fixes as they're encountered.
 
 ## Quick Start
-
-### 1. Start Chrome with Remote Debugging
-
-```bash
-/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222
-```
-
-### 2. Log into Babbel
-
-Open `https://my.babbel.com` in that Chrome and log in with your Babbel account.
-
-### 3. Run the Extractor
 
 ```bash
 cd /Volumes/External_ssd_mohsen/WorkspaceExtern/german-learning-app-main/scripts/babbel-extractor
 node index.js --level=a1.1
 ```
+
+The crawler will:
+1. Launch Chrome automatically (uses profile at `/tmp/babbel-chrome-profile`)
+2. Check if logged into Babbel (wait if not)
+3. Navigate to A1.1 course and start extracting
+
+**First run:** You'll need to log into Babbel in the Chrome window that opens.
 
 ## Usage
 
@@ -150,17 +171,20 @@ cat progress-a11.json | jq '.completedLessons | length'
 
 ## Troubleshooting
 
-### Chrome connection failed
-```
-✗ Could not connect to Chrome on port 9222
-```
-Start Chrome with: `/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222`
+### Chrome launch failed
+The crawler launches Chrome automatically using the system Chrome at `/Applications/Google Chrome.app`. If it fails, check that Chrome is installed.
 
 ### Not logged into Babbel
-Navigate to `https://my.babbel.com` in Chrome and log in.
+The crawler waits for you to log in. When Chrome opens, navigate to Babbel and log in. The crawler will continue automatically.
 
 ### Stuck on same screen
-Check `issues/` folder for captured screenshot and DOM, then fix the solver.
+1. Check `issues/` folder for captured screenshot and DOM
+2. Look at `issue.json` for the screen type and context
+3. Fix the solver in `lib/auto-solver.js`
+4. Re-run - it resumes from last completed lesson
+
+### Lesson button click not working
+The crawler uses JavaScript click via `page.evaluate()` and polls for URL change. If it times out, check if the page structure changed.
 
 ## Related Files
 
