@@ -1,0 +1,14 @@
+{
+  "name": "babbel-extractor",
+  "version": "1.0.0",
+  "description": "Extract German learning content from Babbel",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "extract": "node index.js --auto --headless"
+  },
+  "dependencies": {
+    "puppeteer": "^21.0.0"
+  }
+}

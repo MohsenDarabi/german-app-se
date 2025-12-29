@@ -160,37 +160,195 @@ cd scripts/busuu-extractor && node extractor.js --level=b2
 
 ---
 
-## Work In Progress: Screen Flow Mapper
+## Screen Flow Mapper (Busuu Extractor v2)
 
-**Status:** 🔄 Phase 3 Testing (IN PROGRESS)
+**Status:** 🔄 A1 Extraction IN PROGRESS (Dec 28, 2025)
 
-A new Busuu content extractor that works screen-by-screen with human validation.
+A screen-by-screen Busuu content extractor with auto-solving and progress tracking.
 
-| Location | Purpose |
-|----------|---------|
-| `scripts/screen-flow-mapper/` | New extractor (Approach B) |
+### Location & Files
+
+| Path | Purpose |
+|------|---------|
+| `scripts/screen-flow-mapper/` | Main extractor code |
+| `scripts/screen-flow-mapper/output/` | Extracted JSON (hierarchical: `A1/chapter-01/lesson.json`) |
+| `scripts/screen-flow-mapper/progress-{level}.json` | Progress tracking per level |
+| `scripts/screen-flow-mapper/cookies.json` | Busuu login session |
 | `docs/busuu-research/` | Screen type documentation |
-| Plan file | `~/.claude/plans/kind-rolling-hellman.md` |
 
-**To Resume:**
+### Commands
+
 ```bash
 cd scripts/screen-flow-mapper
-node index.js
+
+# Extract all lessons for a level (auto mode, headless)
+node index.js --level=a1 --auto --headless
+
+# Extract with visible browser (for debugging)
+node index.js --level=a1 --auto
+
+# Extract single lesson
+node index.js --lesson <url>
+
+# Interactive mode with validation
+node index.js --level=a1
+
+# Check progress
+cat progress-a1.json | jq '.completedLessons | length'
+
+# Clear progress to restart fresh
+rm progress-a1.json && rm -rf output/A1/
 ```
 
-**Current Task:** Verify skip page fix works (lesson completes cleanly)
+### Supported Exercise Types (12 total)
 
-**What's Done:**
-- ✅ 18 screen types documented
-- ✅ 11 extractors built
-- ✅ Auto-solver for exercises
-- ✅ Auto-save partial progress
-- 🔄 Testing on A1 Lesson 1
+| Type | Selector | Auto-Solve |
+|------|----------|------------|
+| Flashcard | `ex-flashcard` | ✅ Click continue |
+| Fill Gap | `ex-fillgap-dragdrop` | ✅ Click words in order |
+| Phrase Builder | `ex-phrase-builder` | ✅ Click words in order |
+| MCQ | `ex-mcq` | ✅ Click correct option |
+| True/False | `ex-true-false` | ✅ Click correct button |
+| Matchup | `ex-matchup` | ✅ Match pairs |
+| Spelling | `ex-spelling` | ✅ Click letters in order |
+| Typing | `ex-typing` | ✅ Type correct answer |
+| Highlighter | `ex-highlighter` | ✅ Click ALL correct words |
+| Comprehension | `ex-comprehension` | ⚠️ Manual (video) |
+| Grammar Tip | `ex-tip` | ✅ Continue |
+| Conversation | `ex-conversation` | ⚠️ Skipped (community) |
 
-**What Remains:**
-- Verify latest fix
-- Test 2-3 more A1 lessons
-- Full re-crawl (A1, A2, B1, B2)
+### Output Data Structure
+
+```json
+{
+  "level": "A1",
+  "chapter": { "number": 1, "title": "Introductions" },
+  "lesson": { "number": 1, "title": "Hallo!", "url": "...", "objectiveId": "..." },
+  "screens": [
+    {
+      "type": "flashcard",
+      "content": { "german": "Hallo!", "english": null, "media": {...} }
+    },
+    {
+      "type": "feedback",
+      "content": { "tip": "\"Hallo\" is the most common greeting...", "highlights": ["Hallo"] }
+    }
+  ],
+  "screenCount": 8,
+  "extractedAt": "2025-12-28T..."
+}
+```
+
+### Current Extraction Status (Dec 28, 2025)
+
+| Level | Total | Extracted | Status |
+|-------|-------|-----------|--------|
+| A1 | 170 | 🔄 In Progress | Running in background |
+| A2 | ~150 | ❌ | Pending |
+| B1 | ~150 | ❌ | Pending |
+| B2 | ~150 | ❌ | Pending |
+
+### How to Resume After Interruption
+
+The script saves progress after each lesson. To resume:
+
+```bash
+cd scripts/screen-flow-mapper
+node index.js --level=a1 --auto --headless
+```
+
+It will automatically skip already-completed lessons and continue from where it stopped.
+
+### Fixes Applied (Dec 28, 2025)
+
+1. **Phrase-builder empty words** - Fixed selector to capture words before solving
+2. **Flashcard translation** - Returns `null` instead of duplicating German
+3. **Highlighter exercises** - Clicks ALL correct words (multi-select)
+4. **Interstitial pages** - Auto-clicks Continue on checkpoint/challenge screens
+5. **"Well done" detection** - Properly detects lesson end with personalized names
+6. **Stuck detection** - Escape+Enter recovery after repeated failures
+7. **Generic fallback** - Catches unknown `data-qa-ex` types
+
+### MCP Server (Chrome DevTools)
+
+Configured in `~/.claude.json` for this project:
+```json
+"chrome-devtools": {
+  "command": "npx",
+  "args": ["chrome-devtools-mcp@latest"]
+}
+```
+Restart Claude Code to activate. Provides DOM inspection, console, network monitoring.
+
+---
+
+## Babbel Content Extractor
+
+**Status:** ✅ Ready to run (Dec 29, 2025)
+
+Automated extraction of German learning content from Babbel with issue capture for unknown screens.
+
+### Location & Files
+
+| Path | Purpose |
+|------|---------|
+| `scripts/babbel-extractor/` | Main extractor code |
+| `scripts/babbel-extractor/output/` | Extracted JSON (hierarchical: `A11/unit-01/lesson-01.json`) |
+| `scripts/babbel-extractor/issues/` | Captured issues (screenshot + DOM) for debugging |
+| `scripts/babbel-extractor/progress-a11.json` | Progress tracking per level |
+| `docs/babbel-research/screen-types-summary.md` | Screen type documentation with screenshots |
+
+### Prerequisites
+
+1. Chrome running with remote debugging:
+   ```bash
+   /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222
+   ```
+2. Logged into Babbel with active subscription
+
+### Commands
+
+```bash
+cd scripts/babbel-extractor
+
+# Extract all lessons for a level
+node index.js --level=a1.1
+
+# Extract single lesson by URL
+node index.js --lesson "https://my.babbel.com/en/lesson-player/DEU/..."
+
+# Check progress
+cat progress-a11.json | jq '.completedLessons | length'
+```
+
+### Supported Screen Types (23 total)
+
+| Category | Types |
+|----------|-------|
+| Vocabulary | vocab-intro |
+| Translation | mcq-translation |
+| Listening | listening-fill, listening-choose-said |
+| Grammar | grammar-tip |
+| Matching | matching, response-matching |
+| Building | word-sorting, sentence-order, spelling |
+| Dialogue | dialogue, response-choice |
+| Pronunciation | pronunciation-fill, listen-repeat, pronunciation-rule, pronunciation-quiz |
+| Meta/Navigation | lesson-end, pronunciation-end, feedback-popup-tip, recap-intro, recap-end, formality-choice, story-intro |
+
+### Issue Capture Workflow
+
+When crawler encounters unknown screen or gets stuck:
+1. Saves `screenshot.png` + `page.html` + `issue.json` to `issues/issue-{timestamp}/`
+2. Exits with error message
+3. You fix detector/extractor/solver code
+4. Re-run same command - resumes from last completed lesson
+
+### Level Path IDs
+
+| Level | Path ID | Status |
+|-------|---------|--------|
+| A1.1 | `2c17d37bf4b8cb436d6cba815b3cb085` | ✅ Ready |
+| A1.2 - B2 | TBD | ⏳ Need to discover |
 
 ---
 
