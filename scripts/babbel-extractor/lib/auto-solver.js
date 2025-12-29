@@ -256,43 +256,196 @@ async function solveGrammarTip(page) {
 }
 
 /**
- * Matching - click numbered options to match pairs
+ * Matching - match items by data-solution-id then advance
+ *
+ * DOM Pattern (Babbel):
+ * - Active base item: [data-appearance="ACTIVE"] [data-solution-id="X"]
+ * - Options: [data-selector="matching-item-option"] contains [data-solution-id="X"]
+ * - The focusable/clickable element is [data-selector="matching-item-option"] with tabindex="0"
+ *
+ * IMPORTANT: JavaScript .click() doesn't work on Babbel's React elements.
+ * Must use Puppeteer's native page.click() with selector.
+ *
+ * IMPORTANT: Click [data-selector="matching-item-option"] element, not the outer wrapper.
+ * The wrapper has data-clickable-item="true" but the actual clickable element is the inner div.
  */
 async function solveMatching(page) {
-  // Keep clicking available options until all matched
-  for (let i = 0; i < 10; i++) {
-    const clicked = await page.evaluate(() => {
-      const options = document.querySelectorAll('main [role="generic"]:not([disabled])');
-      for (const opt of options) {
-        const text = opt.textContent;
-        // Click numbered options (1, 2, 3, 4)
-        if (/^\d/.test(text.trim())) {
-          opt.click();
-          return true;
-        }
-      }
-      return false;
+  // Keep matching until no more active base items
+  // After each match, wait for DOM update and check for next active item
+
+  for (let i = 0; i < 10; i++) { // Max 10 pairs
+    // Wait for DOM to stabilize after previous match
+    await page.waitForTimeout(1000);
+
+    // Get the target solution-id from active base
+    const targetInfo = await page.evaluate(() => {
+      const activeBase = document.querySelector('[data-appearance="ACTIVE"] [data-solution-id]');
+      if (!activeBase) return null;
+      return {
+        targetId: activeBase.getAttribute('data-solution-id'),
+        activeText: activeBase.textContent.substring(0, 30)
+      };
     });
 
-    if (!clicked) break;
-    await page.waitForTimeout(400);
+    if (!targetInfo) {
+      // Check how many unmatched options remain
+      const remainingOptions = await page.$$eval(
+        '[data-item-type="option"]:not([data-matched-item="true"])',
+        els => els.length
+      );
+      if (remainingOptions === 0) {
+        console.log(`  [matching] All pairs matched`);
+      } else {
+        console.log(`  [matching] No active base found but ${remainingOptions} options remain`);
+      }
+      break;
+    }
+
+    console.log(`  [matching] Looking for match for "${targetInfo.activeText}" (id: ${targetInfo.targetId})`);
+
+    // Find and click the matching option using Puppeteer's native click
+    const wrappers = await page.$$('[data-item-type="option"]:not([data-matched-item="true"])');
+    let clicked = false;
+
+    for (const wrapper of wrappers) {
+      // Check if this wrapper contains the matching solution-id
+      const hasMatch = await wrapper.evaluate((el, targetId) => {
+        const solutionEl = el.querySelector(`[data-solution-id="${targetId}"]`);
+        return !!solutionEl;
+      }, targetInfo.targetId);
+
+      if (hasMatch) {
+        // Get the clickable element inside
+        const clickable = await wrapper.$('[data-selector="matching-item-option"]');
+        if (clickable) {
+          // Scroll into view and click using Puppeteer's native click
+          await clickable.scrollIntoViewIfNeeded();
+          await clickable.click({ delay: 100 });
+          const matchText = await clickable.evaluate(el => el.textContent.substring(0, 30));
+          console.log(`  [matching] Clicked match: "${matchText}"`);
+          clicked = true;
+          break;
+        }
+      }
+    }
+
+    if (!clicked) {
+      console.log(`  [matching] Could not find match for "${targetInfo.activeText}"`);
+      // Don't break - maybe the match happened and we need to wait
+    }
+
+    // Wait for match animation to complete
+    await page.waitForTimeout(1200);
   }
+
+  // After matching, click forward nav to advance
+  await page.waitForTimeout(500);
+  try {
+    await page.click('[data-selector="navigation-forward"]:not([disabled])', { delay: 50 });
+  } catch (e) {
+    // Nav button not found or not clickable yet
+  }
+  await page.waitForTimeout(500);
 }
 
 /**
- * Word sorting - click syllables in correct order
+ * Word sorting - click syllables in correct order by data-position then advance
+ *
+ * DOM Pattern (Babbel):
+ * <div data-position="0"><div data-choice="dan"><button data-selector="choice-item-dan" title="answer dan">dan</button></div></div>
+ * <div data-position="1"><div data-choice="ke"><button data-selector="choice-item-ke" title="answer ke">ke</button></div></div>
+ *
+ * Click in position order (0, 1, 2...) to spell the word correctly
+ *
+ * NOTE: Button clicks work via page.evaluate() but navigation needs Puppeteer native click
  */
 async function solveWordSorting(page) {
-  // Click answer buttons in order (they appear in correct order usually)
-  for (let i = 0; i < 5; i++) {
-    await page.evaluate(() => {
-      const buttons = document.querySelectorAll('button[description*="answer"]:not([disabled])');
-      if (buttons.length > 0) {
-        buttons[0].click();
+  // First, try the structured approach: collect all position elements
+  const positionData = await page.evaluate(() => {
+    const items = [];
+    const posElems = document.querySelectorAll('[data-position]');
+    for (const posElem of posElems) {
+      const pos = parseInt(posElem.getAttribute('data-position'), 10);
+      const choiceDiv = posElem.querySelector('[data-choice]');
+      const choice = choiceDiv ? choiceDiv.getAttribute('data-choice') : null;
+      if (!isNaN(pos) && choice) {
+        items.push({ position: pos, choice });
       }
-    });
-    await page.waitForTimeout(300);
+    }
+    // Sort by position
+    items.sort((a, b) => a.position - b.position);
+    return items;
+  });
+
+  console.log(`  [word-sorting] Found ${positionData.length} items:`, positionData.map(i => i.choice).join(', '));
+
+  if (positionData.length > 0) {
+    // Click each button in position order using Puppeteer's elementHandle.click()
+    for (const item of positionData) {
+      // data-selector uses hyphens instead of spaces: "ich bin" -> "ich-bin"
+      const selectorChoice = item.choice.replace(/\s+/g, '-');
+
+      // Try multiple selectors to find and click the button
+      const selectors = [
+        `button[data-selector="choice-item-${selectorChoice}"]:not([disabled])`,
+        `button[data-selector="choice-item-${item.choice}"]:not([disabled])`,
+        `button[title="answer ${item.choice}"]:not([disabled])`
+      ];
+
+      let clicked = false;
+      for (const selector of selectors) {
+        const btn = await page.$(selector);
+        if (btn) {
+          try {
+            await btn.scrollIntoViewIfNeeded();
+            await btn.click({ delay: 50 });
+            console.log(`  [word-sorting] Clicked "${item.choice}" using: ${selector}`);
+            clicked = true;
+            break;
+          } catch (e) {
+            console.log(`  [word-sorting] Click failed for "${item.choice}": ${e.message}`);
+          }
+        }
+      }
+
+      if (!clicked) {
+        console.log(`  [word-sorting] Could not find button for: ${item.choice}`);
+      }
+      await page.waitForTimeout(400);
+    }
+  } else {
+    // Fallback: click buttons with title starting with "answer" in order using mouse
+    for (let i = 0; i < 10; i++) {
+      const btn = await page.$('button[title^="answer"]:not([disabled])');
+      if (btn) {
+        const box = await btn.boundingBox();
+        if (box) {
+          await page.mouse.click(box.x + box.width / 2, box.y + box.height / 2);
+          await page.waitForTimeout(400);
+        } else {
+          break;
+        }
+      } else {
+        break;
+      }
+    }
   }
+
+  // Wait for answer to register, then click forward nav to advance
+  await page.waitForTimeout(500);
+  const forwardBtn = await page.$('[data-selector="navigation-forward"]:not([disabled])');
+  if (forwardBtn) {
+    try {
+      await forwardBtn.scrollIntoViewIfNeeded();
+      await forwardBtn.click({ delay: 50 });
+      console.log(`  [word-sorting] Clicked forward navigation`);
+    } catch (e) {
+      console.log(`  [word-sorting] Forward click failed: ${e.message}`);
+    }
+  } else {
+    console.log(`  [word-sorting] Forward button not found or disabled`);
+  }
+  await page.waitForTimeout(500);
 }
 
 /**
@@ -302,7 +455,7 @@ async function solveDialogue(page) {
   // Keep filling blanks until dialogue is complete
   for (let i = 0; i < 10; i++) {
     const hasMoreBlanks = await page.evaluate(() => {
-      const buttons = document.querySelectorAll('button[description*="answer"]:not([disabled])');
+      const buttons = document.querySelectorAll('button[title^="answer"]:not([disabled])');
       if (buttons.length > 0) {
         buttons[0].click();
         return true;
@@ -373,7 +526,7 @@ async function solveFeedback(page) {
  */
 async function solveGeneric(page) {
   await page.evaluate(() => {
-    const buttons = document.querySelectorAll('button[description*="answer"]:not([disabled])');
+    const buttons = document.querySelectorAll('button[title^="answer"]:not([disabled])');
     if (buttons.length > 0) {
       buttons[0].click();
     }
@@ -391,7 +544,7 @@ async function solveGeneric(page) {
 async function solveListeningChooseSaid(page) {
   // Similar to MCQ but for audio options
   await page.evaluate(() => {
-    const buttons = document.querySelectorAll('button[description*="answer"]');
+    const buttons = document.querySelectorAll('button[title^="answer"]');
     if (buttons.length > 0) {
       buttons[0].click();
     }
@@ -426,7 +579,7 @@ async function solveSentenceOrder(page) {
   // Click word tiles in order
   for (let i = 0; i < 10; i++) {
     const clicked = await page.evaluate(() => {
-      const buttons = document.querySelectorAll('button[description*="answer"]:not([disabled])');
+      const buttons = document.querySelectorAll('button[title^="answer"]:not([disabled])');
       if (buttons.length > 0) {
         buttons[0].click();
         return true;
@@ -446,7 +599,7 @@ async function solveSpelling(page) {
   // For auto-solving, we'll try clicking available letters
   for (let i = 0; i < 15; i++) {
     const hasMore = await page.evaluate(() => {
-      const letterBtns = document.querySelectorAll('button[description*="answer"]:not([disabled])');
+      const letterBtns = document.querySelectorAll('button[title^="answer"]:not([disabled])');
       if (letterBtns.length > 0) {
         letterBtns[0].click();
         return true;
@@ -475,7 +628,7 @@ async function solveSpelling(page) {
  */
 async function solveResponseChoice(page) {
   await page.evaluate(() => {
-    const buttons = document.querySelectorAll('button[description*="answer"]');
+    const buttons = document.querySelectorAll('button[title^="answer"]');
     if (buttons.length > 0) {
       buttons[0].click();
     }
@@ -488,7 +641,7 @@ async function solveResponseChoice(page) {
  */
 async function solvePronunciationFill(page) {
   await page.evaluate(() => {
-    const buttons = document.querySelectorAll('button[description*="answer"]');
+    const buttons = document.querySelectorAll('button[title^="answer"]');
     if (buttons.length > 0) {
       buttons[0].click();
     }
@@ -526,7 +679,7 @@ async function solvePronunciationRule(page) {
   // Fill in all blanks
   for (let i = 0; i < 5; i++) {
     await page.evaluate(() => {
-      const buttons = document.querySelectorAll('button[description*="answer"]:not([disabled])');
+      const buttons = document.querySelectorAll('button[title^="answer"]:not([disabled])');
       if (buttons.length > 0) {
         buttons[0].click();
       }
@@ -574,7 +727,7 @@ async function solveFeedbackPopup(page) {
 async function solveRecapIntro(page) {
   await page.evaluate(() => {
     // Click the "Los geht's" answer or Continue button
-    const buttons = document.querySelectorAll('button[description*="answer"]');
+    const buttons = document.querySelectorAll('button[title^="answer"]');
     if (buttons.length > 0) {
       buttons[0].click();
       return;
