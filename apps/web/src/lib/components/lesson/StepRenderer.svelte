@@ -9,6 +9,8 @@
   import MatchingStep from "./steps/MatchingStep.svelte";
   import TranslationStep from "./steps/TranslationStep.svelte";
   import TrueFalseStep from "./steps/TrueFalseStep.svelte";
+  import SpeedChallengeStep from "./steps/SpeedChallengeStep.svelte";
+  import CompletionStep from "./steps/CompletionStep.svelte";
 
   export let step: LessonStep;
   export let lessonId: string = '';
@@ -33,6 +35,10 @@
     <TranslationStep {step} {lessonId} on:answer />
   {:else if step.type === "true-false"}
     <TrueFalseStep {step} {lessonId} on:answer />
+  {:else if step.type === "speed-challenge"}
+    <SpeedChallengeStep {step} {lessonId} on:answer />
+  {:else if step.type === "completion"}
+    <CompletionStep {step} {lessonId} on:answer />
   {:else}
     <div class="unknown-step">
       <p>Unknown step type: {step.type}</p>

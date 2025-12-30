@@ -244,6 +244,39 @@ export const CompletionStepSchema = BaseStepSchema.extend({
 });
 
 /* --------------------------------------------------
+   Step Type 10: Speed Challenge
+   Timed vocabulary sprint - answer as many as possible
+-------------------------------------------------- */
+
+export const SpeedChallengeQuestionSchema = z.object({
+  question: z.string(), // German word or phrase
+  options: z.array(z.string()).min(2).max(4),
+  correctAnswerIndex: z.number().int().min(0),
+});
+
+export const SpeedChallengeStepSchema = BaseStepSchema.extend({
+  type: z.literal("speed-challenge"),
+
+  // Title shown at start
+  title: z.string().default("Speed Challenge!"),
+
+  // Instructions
+  instruction: z.string().default("Answer as many as you can!"),
+
+  // Time limit in seconds (default 60)
+  timeLimit: z.number().int().min(10).max(180).default(60),
+
+  // Questions pool
+  questions: z.array(SpeedChallengeQuestionSchema).min(5),
+
+  // Points per correct answer
+  basePoints: z.number().int().default(10),
+
+  // Combo multiplier settings
+  comboEnabled: z.boolean().default(true),
+});
+
+/* --------------------------------------------------
    EXTENSIBILITY: Generic Step Type
    For future unknown step types, allow custom data
 -------------------------------------------------- */
@@ -269,6 +302,7 @@ export const LessonStepSchema = z.discriminatedUnion("type", [
   DialogStepSchema,
   GrammarTipStepSchema,
   CompletionStepSchema,
+  SpeedChallengeStepSchema,
   // Add new step types here as you discover them
 ]);
 
@@ -336,6 +370,8 @@ export type TranslationStep = z.infer<typeof TranslationStepSchema>;
 export type DialogStep = z.infer<typeof DialogStepSchema>;
 export type GrammarTipStep = z.infer<typeof GrammarTipStepSchema>;
 export type CompletionStep = z.infer<typeof CompletionStepSchema>;
+export type SpeedChallengeStep = z.infer<typeof SpeedChallengeStepSchema>;
+export type SpeedChallengeQuestion = z.infer<typeof SpeedChallengeQuestionSchema>;
 export type GenericStep = z.infer<typeof GenericStepSchema>;
 
 export type LessonStep = z.infer<typeof LessonStepSchema>;

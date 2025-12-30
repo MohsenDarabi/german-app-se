@@ -1,0 +1,111 @@
+{
+  "id": "A1-M01-L-TEST-SPEED",
+  "title": {
+    "de": "Speed Challenge Test",
+    "fa": "تست چالش سرعت"
+  },
+  "level": "A1",
+  "module": 1,
+  "lessonNumber": 99,
+  "estimatedMinutes": 5,
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "intro",
+      "title": "چالش سرعت!",
+      "content": "در این درس، ویژگی جدید چالش سرعت را تست می‌کنید. در ۶۰ ثانیه هر چه بیشتر سوال جواب دهید!"
+    },
+    {
+      "type": "speed-challenge",
+      "id": "speed1",
+      "title": "چالش واژگان!",
+      "instruction": "هر چه سریع‌تر ترجمه کنید!",
+      "timeLimit": 60,
+      "basePoints": 10,
+      "comboEnabled": true,
+      "questions": [
+        {
+          "question": "Hund یعنی چه؟",
+          "options": ["گربه", "سگ", "خانه", "درخت"],
+          "correctAnswerIndex": 1
+        },
+        {
+          "question": "Katze یعنی چه؟",
+          "options": ["سگ", "گربه", "پرنده", "ماهی"],
+          "correctAnswerIndex": 1
+        },
+        {
+          "question": "Haus یعنی چه؟",
+          "options": ["ماشین", "درخت", "خانه", "در"],
+          "correctAnswerIndex": 2
+        },
+        {
+          "question": "Baum یعنی چه؟",
+          "options": ["درخت", "گل", "چمن", "بوته"],
+          "correctAnswerIndex": 0
+        },
+        {
+          "question": "Auto یعنی چه؟",
+          "options": ["دوچرخه", "قطار", "ماشین", "اتوبوس"],
+          "correctAnswerIndex": 2
+        },
+        {
+          "question": "Buch یعنی چه؟",
+          "options": ["قلم", "کتاب", "کاغذ", "میز"],
+          "correctAnswerIndex": 1
+        },
+        {
+          "question": "Wasser یعنی چه؟",
+          "options": ["آتش", "هوا", "خاک", "آب"],
+          "correctAnswerIndex": 3
+        },
+        {
+          "question": "Brot یعنی چه؟",
+          "options": ["نان", "کره", "پنیر", "شیر"],
+          "correctAnswerIndex": 0
+        },
+        {
+          "question": "Milch یعنی چه؟",
+          "options": ["آب", "آبمیوه", "شیر", "چای"],
+          "correctAnswerIndex": 2
+        },
+        {
+          "question": "Apfel یعنی چه؟",
+          "options": ["پرتقال", "موز", "سیب", "انگور"],
+          "correctAnswerIndex": 2
+        },
+        {
+          "question": "Tisch یعنی چه؟",
+          "options": ["صندلی", "میز", "مبل", "تخت"],
+          "correctAnswerIndex": 1
+        },
+        {
+          "question": "Stuhl یعنی چه؟",
+          "options": ["میز", "میز تحریر", "صندلی", "چراغ"],
+          "correctAnswerIndex": 2
+        },
+        {
+          "question": "Fenster یعنی چه؟",
+          "options": ["در", "پنجره", "دیوار", "سقف"],
+          "correctAnswerIndex": 1
+        },
+        {
+          "question": "Tür یعنی چه؟",
+          "options": ["پنجره", "در", "دروازه", "دیوار"],
+          "correctAnswerIndex": 1
+        },
+        {
+          "question": "Schule یعنی چه؟",
+          "options": ["خانه", "دفتر", "مدرسه", "مغازه"],
+          "correctAnswerIndex": 2
+        }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "message": "آفرین! چالش سرعت را تست کردید!",
+      "vocabularyLearned": []
+    }
+  ]
+}
