@@ -27,6 +27,7 @@ export async function solveExercise(page) {
     { name: 'typing', fn: solveTyping },
     { name: 'true-false', fn: solveTrueFalse },
     { name: 'mcq', fn: solveMCQ },
+    { name: 'highlighter', fn: solveHighlighter }, // Word highlighter - click ALL correct words
     { name: 'fillgap', fn: solveFillgap },
     { name: 'word-order', fn: solveWordOrder },
     { name: 'matchup', fn: solveMatchup },
@@ -111,6 +112,41 @@ async function solveTip(page) {
   const isTip = await page.$('[data-qa-ex="ex-tip"]');
   if (!isTip) return null;
   return 'continue (informational)';
+}
+
+/**
+ * Word Highlighter - click ALL buttons with data-qa-pass="true"
+ */
+async function solveHighlighter(page) {
+  const isHighlighter = await page.$('[data-qa-ex="ex-highlighter"]');
+  if (!isHighlighter) return null;
+
+  // Click ALL buttons with data-qa-pass="true" that aren't already selected
+  const clicked = await page.evaluate(() => {
+    const buttons = document.querySelectorAll('[data-qa-ex="ex-highlighter"] button[data-qa-pass="true"]');
+    const clickedWords = [];
+
+    for (const btn of buttons) {
+      // Skip if already selected
+      if (btn.classList.contains('ex-btn--selected')) continue;
+
+      // Check if clickable
+      if (btn.offsetParent !== null) {
+        btn.click();
+        clickedWords.push(btn.textContent?.trim());
+      }
+    }
+
+    return clickedWords;
+  });
+
+  if (clicked.length > 0) {
+    await sleep(200);
+    return clicked.join(' + ');
+  }
+
+  // All correct words might already be selected
+  return 'already complete';
 }
 
 /**

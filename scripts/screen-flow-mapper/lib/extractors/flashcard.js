@@ -21,13 +21,38 @@ export async function extractFlashcard(page) {
 
     // Get main text (German word/phrase)
     const assetText = document.querySelector('[data-testid="asset-text"]');
+
+    // Try multiple strategies for German text
     const germanText = assetText?.querySelector('p > span > b')?.textContent?.trim() ||
+                       assetText?.querySelector('p > span > strong')?.textContent?.trim() ||
+                       assetText?.querySelector('b')?.textContent?.trim() ||
                        assetText?.querySelector('p > span')?.textContent?.trim() || '';
 
-    // Get translation (usually in italic or separate span)
-    const translationEl = assetText?.querySelector('p > span > i') ||
-                          assetText?.querySelector('p > span:last-child');
-    const englishText = translationEl?.textContent?.trim() || '';
+    // Get translation (usually in italic, parentheses, or separate element)
+    // Try multiple strategies:
+    // 1. Italic text
+    let englishText = assetText?.querySelector('p > span > i')?.textContent?.trim() ||
+                      assetText?.querySelector('i')?.textContent?.trim() || '';
+
+    // 2. Text in parentheses from the full content
+    if (!englishText && assetText) {
+      const fullText = assetText.textContent || '';
+      const parenMatch = fullText.match(/\(([^)]+)\)/);
+      if (parenMatch) {
+        englishText = parenMatch[1].trim();
+      }
+    }
+
+    // 3. Look for a secondary text element
+    if (!englishText) {
+      const secondaryText = document.querySelector('[data-testid="asset-secondary-text"]');
+      englishText = secondaryText?.textContent?.trim() || '';
+    }
+
+    // 4. Don't repeat German if no translation found
+    if (!englishText || englishText === germanText) {
+      englishText = null; // Explicitly null rather than duplicating German
+    }
 
     // Get image
     const imageEl = document.querySelector('[data-testid="asset-image"]');

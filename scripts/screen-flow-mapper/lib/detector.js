@@ -78,11 +78,11 @@ export const SCREEN_TYPES = {
     passThrough: true
   },
 
-  // Word Selection / Multi-select exercise
-  WORD_SELECT: {
-    id: 'word-select',
-    name: 'Word Selection',
-    selector: '[data-qa-ex="ex-word-select"], [data-testid="ex-instruction"]:has(+ div button[data-qa-pass])',
+  // Word Highlighter - select multiple correct words
+  HIGHLIGHTER: {
+    id: 'highlighter',
+    name: 'Word Highlighter',
+    selector: '[data-qa-ex="ex-highlighter"]',
     extract: true
   },
 

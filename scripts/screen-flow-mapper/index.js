@@ -427,8 +427,13 @@ async function extractLesson(page, lessonUrl, options = {}) {
     } catch (error) {
       console.error(`Error on screen ${screenIndex}:`, error.message);
 
-      // Try to continue
-      const shouldContinue = await validator.askYesNo('Continue to next screen?');
+      // In auto mode, always continue; otherwise ask
+      let shouldContinue = true;
+      if (!autoAdvance) {
+        shouldContinue = await validator.askYesNo('Continue to next screen?');
+      } else {
+        console.log('  → Auto-continuing after error...');
+      }
       if (!shouldContinue) break;
 
       await navigator.clickContinue(page);

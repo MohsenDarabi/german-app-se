@@ -24,11 +24,21 @@ export async function extractPhraseBuilder(page) {
     const promptText = assetText?.textContent?.trim() || '';
 
     // Get all word options with their correct positions
-    const wordEls = document.querySelectorAll('[data-qa-choice][data-qa-pass]');
-    const words = Array.from(wordEls).map(el => ({
-      text: el.querySelector('.font-face-lt')?.textContent?.trim() || '',
-      position: parseInt(el.getAttribute('data-qa-pass') || '0', 10)
-    }));
+    // Try multiple selectors - phrase-builder uses similar structure to fillgap
+    const wordEls = container.querySelectorAll(
+      '.ex-btn[role="button"][data-qa-pass], ' +
+      '[role="button"][data-qa-pass][draggable="true"], ' +
+      'button[data-qa-pass][data-qa-choice], ' +
+      '.fillgap-dragdrop__options .ex-btn[data-qa-pass]'
+    );
+
+    const words = Array.from(wordEls).map(el => {
+      // Get text from font-face-lt span or direct textContent
+      const text = el.querySelector('.font-face-lt')?.textContent?.trim() ||
+                   el.textContent?.trim() || '';
+      const position = parseInt(el.getAttribute('data-qa-pass') || '0', 10);
+      return { text, position };
+    }).filter(w => w.text && w.position > 0); // Filter out empty or invalid entries
 
     // Sort by position to get correct word order
     const sortedWords = [...words].sort((a, b) => a.position - b.position);
@@ -38,8 +48,9 @@ export async function extractPhraseBuilder(page) {
     const imageEl = document.querySelector('[data-testid="asset-image"]');
     const imageUrl = imageEl?.src || null;
 
-    // Get audio if present
-    const audioEl = document.querySelector('[data-testid="asset-audio"] source');
+    // Get audio if present - try multiple selectors
+    const audioEl = document.querySelector('[data-testid="asset-audio"] source') ||
+                    document.querySelector('audio source');
     const audioUrl = audioEl?.src || null;
 
     return {
