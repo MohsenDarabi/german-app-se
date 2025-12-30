@@ -354,6 +354,45 @@ export const SpeedChallengeStepSchema = BaseStepSchema.extend({
 });
 
 /* --------------------------------------------------
+   Step Type 12: Formality Choice
+   Choose Sie (formal) or Du (informal) for situations
+   Critical for Persian speakers (similar to شما/تو)
+-------------------------------------------------- */
+
+export const FormalityChoiceStepSchema = BaseStepSchema.extend({
+  type: z.literal("formality-choice"),
+
+  // Instruction text
+  instruction: z.string().default("رسمی یا غیررسمی؟"),
+
+  // Scenario description (in Persian)
+  scenario: z.string(),
+
+  // Optional scenario image
+  scenarioImage: z.string().optional(),
+
+  // The two options (formal and informal German phrases)
+  formalOption: z.object({
+    text: z.string(),        // "Wie geht es Ihnen?"
+    label: z.string().default("رسمی (Sie)"),
+  }),
+
+  informalOption: z.object({
+    text: z.string(),        // "Wie geht's?"
+    label: z.string().default("غیررسمی (Du)"),
+  }),
+
+  // Which is correct: "formal" or "informal"
+  correctAnswer: z.enum(["formal", "informal"]),
+
+  // Cultural explanation (shown after answering)
+  explanation: z.string(),
+
+  // Optional comparison to Persian culture
+  persianNote: z.string().optional(),
+});
+
+/* --------------------------------------------------
    EXTENSIBILITY: Generic Step Type
    For future unknown step types, allow custom data
 -------------------------------------------------- */
@@ -382,6 +421,7 @@ export const LessonStepSchema = z.discriminatedUnion("type", [
   CompletionStepSchema,
   ListenAndChooseStepSchema,
   SpeedChallengeStepSchema,
+  FormalityChoiceStepSchema,
   // Add new step types here as you discover them
 ]);
 
@@ -453,6 +493,7 @@ export type CompletionStep = z.infer<typeof CompletionStepSchema>;
 export type ListenAndChooseStep = z.infer<typeof ListenAndChooseStepSchema>;
 export type SpeedChallengeStep = z.infer<typeof SpeedChallengeStepSchema>;
 export type SpeedChallengeQuestion = z.infer<typeof SpeedChallengeQuestionSchema>;
+export type FormalityChoiceStep = z.infer<typeof FormalityChoiceStepSchema>;
 export type GenericStep = z.infer<typeof GenericStepSchema>;
 
 export type LessonStep = z.infer<typeof LessonStepSchema>;

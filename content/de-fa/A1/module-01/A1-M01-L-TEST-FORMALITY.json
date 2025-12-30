@@ -1,0 +1,126 @@
+{
+  "id": "A1-M01-L-TEST-FORMALITY",
+  "title": {
+    "de": "Sie oder Du?",
+    "fa": "رسمی یا غیررسمی؟"
+  },
+  "level": "A1",
+  "module": 1,
+  "lessonNumber": 97,
+  "estimatedMinutes": 5,
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "intro",
+      "title": "Sie یا Du؟",
+      "content": "در آلمانی، مثل فارسی، دو شکل خطاب داریم:\n\n• **Sie** = شما (رسمی)\n• **Du** = تو (غیررسمی)\n\nدر این درس یاد می‌گیرید کجا از کدام استفاده کنید!"
+    },
+    {
+      "type": "formality-choice",
+      "id": "f1",
+      "scenario": "شما در یک مصاحبه کاری هستید و می‌خواهید از مدیر بپرسید حالش چطور است.",
+      "formalOption": {
+        "text": "Wie geht es Ihnen?",
+        "label": "رسمی (Sie)"
+      },
+      "informalOption": {
+        "text": "Wie geht's dir?",
+        "label": "غیررسمی (Du)"
+      },
+      "correctAnswer": "formal",
+      "explanation": "در محیط کاری و مصاحبه، همیشه از Sie استفاده کنید. این نشان‌دهنده احترام حرفه‌ای است.",
+      "persianNote": "مثل وقتی که در فارسی به کسی که نمی‌شناسید یا بزرگتر است می‌گویید «شما» نه «تو»."
+    },
+    {
+      "type": "formality-choice",
+      "id": "f2",
+      "scenario": "دوست صمیمی‌تان را در کافه می‌بینید و می‌خواهید احوالپرسی کنید.",
+      "formalOption": {
+        "text": "Guten Tag, wie geht es Ihnen?",
+        "label": "رسمی (Sie)"
+      },
+      "informalOption": {
+        "text": "Hey, wie geht's?",
+        "label": "غیررسمی (Du)"
+      },
+      "correctAnswer": "informal",
+      "explanation": "با دوستان صمیمی همیشه از Du استفاده کنید. Sie در این حالت خیلی سرد و رسمی به نظر می‌رسد!",
+      "persianNote": "به دوست صمیمی نمی‌گویید «شما چطورید؟» - می‌گویید «چطوری؟»"
+    },
+    {
+      "type": "formality-choice",
+      "id": "f3",
+      "scenario": "در فروشگاه هستید و می‌خواهید از فروشنده کمک بخواهید.",
+      "formalOption": {
+        "text": "Können Sie mir bitte helfen?",
+        "label": "رسمی (Sie)"
+      },
+      "informalOption": {
+        "text": "Kannst du mir helfen?",
+        "label": "غیررسمی (Du)"
+      },
+      "correctAnswer": "formal",
+      "explanation": "با فروشندگان و کارمندان که نمی‌شناسید، از Sie استفاده کنید. این ادب استاندارد است.",
+      "persianNote": "در ایران هم به فروشنده‌ای که نمی‌شناسید «شما» می‌گویید."
+    },
+    {
+      "type": "formality-choice",
+      "id": "f4",
+      "scenario": "با بچه ۸ ساله همسایه صحبت می‌کنید.",
+      "formalOption": {
+        "text": "Was machen Sie?",
+        "label": "رسمی (Sie)"
+      },
+      "informalOption": {
+        "text": "Was machst du?",
+        "label": "غیررسمی (Du)"
+      },
+      "correctAnswer": "informal",
+      "explanation": "با بچه‌ها همیشه از Du استفاده کنید. استفاده از Sie برای بچه‌ها خیلی عجیب است!",
+      "persianNote": "به بچه‌ها «شما» نمی‌گویید - همیشه «تو» می‌گویید."
+    },
+    {
+      "type": "formality-choice",
+      "id": "f5",
+      "scenario": "در دانشگاه، می‌خواهید از استاد سوال بپرسید.",
+      "formalOption": {
+        "text": "Entschuldigung, haben Sie einen Moment Zeit?",
+        "label": "رسمی (Sie)"
+      },
+      "informalOption": {
+        "text": "Hey, hast du kurz Zeit?",
+        "label": "غیررسمی (Du)"
+      },
+      "correctAnswer": "formal",
+      "explanation": "با اساتید دانشگاه از Sie استفاده کنید. در آلمان، رابطه دانشجو-استاد رسمی است.",
+      "persianNote": "در دانشگاه‌های ایران هم به استاد «شما» می‌گویید، نه «تو»."
+    },
+    {
+      "type": "formality-choice",
+      "id": "f6",
+      "scenario": "هم‌کلاسی جدید هم‌سن خودتان را ملاقات می‌کنید.",
+      "formalOption": {
+        "text": "Freut mich, Sie kennenzulernen.",
+        "label": "رسمی (Sie)"
+      },
+      "informalOption": {
+        "text": "Hey, freut mich! Ich bin...",
+        "label": "غیررسمی (Du)"
+      },
+      "correctAnswer": "informal",
+      "explanation": "بین دانشجویان و جوانان هم‌سن، معمولاً از Du استفاده می‌شود. رابطه دوستانه‌تر است.",
+      "persianNote": "به هم‌کلاسی هم‌سن معمولاً «تو» می‌گویید، مگر اینکه خیلی رسمی باشید."
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "message": "آفرین! حالا تفاوت Sie و Du را بهتر می‌دانید!",
+      "vocabularyLearned": [
+        { "word": { "de": "Sie", "fa": "شما (رسمی)" } },
+        { "word": { "de": "Du", "fa": "تو (غیررسمی)" } },
+        { "word": { "de": "Wie geht es Ihnen?", "fa": "حال شما چطور است؟" } },
+        { "word": { "de": "Wie geht's dir?", "fa": "چطوری؟" } }
+      ]
+    }
+  ]
+}
