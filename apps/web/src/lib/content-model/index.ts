@@ -294,7 +294,34 @@ export const CompletionStepSchema = BaseStepSchema.extend({
 });
 
 /* --------------------------------------------------
-   Step Type 10: Speed Challenge
+   Step Type 10: Listen and Choose
+   Hear audio, select what was said
+-------------------------------------------------- */
+
+export const ListenAndChooseStepSchema = BaseStepSchema.extend({
+  type: z.literal("listen-and-choose"),
+
+  // Instruction text
+  instruction: z.string().default("چه شنیدید؟"),
+
+  // The German text to be spoken (audio will be generated/played)
+  germanText: z.string(),
+
+  // Optional Persian translation to show after answering
+  translation: z.string().optional(),
+
+  // Answer choices (German text options)
+  options: z.array(z.string()).min(2).max(4),
+
+  // Correct answer index (0-based)
+  correctAnswerIndex: z.number().int().min(0),
+
+  // Auto-play audio on step load
+  autoPlay: z.boolean().default(false),
+});
+
+/* --------------------------------------------------
+   Step Type 11: Speed Challenge
    Timed vocabulary sprint - answer as many as possible
 -------------------------------------------------- */
 
@@ -353,6 +380,7 @@ export const LessonStepSchema = z.discriminatedUnion("type", [
   DialogStepSchema,
   GrammarTipStepSchema,
   CompletionStepSchema,
+  ListenAndChooseStepSchema,
   SpeedChallengeStepSchema,
   // Add new step types here as you discover them
 ]);
@@ -422,6 +450,7 @@ export type TranslationStep = z.infer<typeof TranslationStepSchema>;
 export type DialogStep = z.infer<typeof DialogStepSchema>;
 export type GrammarTipStep = z.infer<typeof GrammarTipStepSchema>;
 export type CompletionStep = z.infer<typeof CompletionStepSchema>;
+export type ListenAndChooseStep = z.infer<typeof ListenAndChooseStepSchema>;
 export type SpeedChallengeStep = z.infer<typeof SpeedChallengeStepSchema>;
 export type SpeedChallengeQuestion = z.infer<typeof SpeedChallengeQuestionSchema>;
 export type GenericStep = z.infer<typeof GenericStepSchema>;

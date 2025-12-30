@@ -545,4 +545,78 @@ recognition.onresult = (event) => {
 | 2025-12-31 | Defined pricing: €4.99/mo, €49.99/year |
 | 2025-12-31 | Defined free tier structure (A1: 3+3, A2: 2+2, B1/B2: 1+1) |
 | 2025-12-31 | Updated Open Questions (4 answered, 4 remaining) |
+| 2025-12-31 | Implemented `speed-challenge` step type |
+| 2025-12-31 | Implemented `listen-and-choose` step type with auto-play |
 | 2025-12-30 | Initial draft created |
+
+---
+
+## Implementation Notes
+
+### Test Lessons & URLs
+
+| Step Type | Test Lesson ID | URL (dev) |
+|-----------|---------------|-----------|
+| `speed-challenge` | `A1-M01-L-TEST-SPEED` | `http://localhost:5173/learn/de-fa/A1/A1-M01-L-TEST-SPEED` |
+| `listen-and-choose` | `A1-M01-L-TEST-LISTEN` | `http://localhost:5173/learn/de-fa/A1/A1-M01-L-TEST-LISTEN` |
+
+**Note:** Port may vary (5173, 5174, etc.) depending on available ports.
+
+### Lesson File Naming Convention
+
+Lesson files MUST be named to match their `id` field:
+- File: `content/de-fa/A1/module-01/A1-M01-L-TEST-SPEED.json`
+- JSON: `{ "id": "A1-M01-L-TEST-SPEED", ... }`
+
+The lesson loader (`+page.server.ts`) searches for `{lessonId}.json` in `module-*` directories.
+
+### Key Fixes & Gotchas
+
+#### 1. Dual Content Model Issue
+There are TWO copies of the content model schema:
+- `packages/content-model/src/index.ts` (shared package)
+- `apps/web/src/lib/content-model/index.ts` (actually used by web app!)
+
+**Fix:** Always update BOTH files when adding new step types.
+
+#### 2. Svelte Reactive Auto-Play
+Auto-playing audio on step change requires careful handling:
+- Use `currentStepId` tracking to prevent duplicate initialization
+- Clear pending timers with `clearTimeout` before setting new ones
+- Verify step hasn't changed before playing: `if (currentStepId === stepId)`
+- Use `onDestroy` to cleanup timers and stop audio
+
+Example pattern (ListenAndChooseStep.svelte):
+```javascript
+let currentStepId = '';
+let autoPlayTimer: ReturnType<typeof setTimeout> | null = null;
+
+function initStep(stepId: string) {
+  if (currentStepId === stepId) return; // Prevent duplicate
+  currentStepId = stepId;
+
+  if (autoPlayTimer) clearTimeout(autoPlayTimer);
+
+  if (step.autoPlay && mounted) {
+    autoPlayTimer = setTimeout(() => {
+      if (!isAnswered && currentStepId === stepId) {
+        playAudio();
+      }
+    }, 600);
+  }
+}
+```
+
+#### 3. Audio Utility
+`playGerman(text, lessonId)` falls back to browser TTS if no `audioId` provided.
+For pre-generated audio, use: `playGerman(text, lessonId, audioId)`
+
+### Files Modified (Phase 1)
+
+| File | Changes |
+|------|---------|
+| `apps/web/src/lib/content-model/index.ts` | Added SpeedChallengeStepSchema, ListenAndChooseStepSchema |
+| `apps/web/src/lib/components/lesson/StepRenderer.svelte` | Registered new step types |
+| `apps/web/src/lib/components/lesson/steps/SpeedChallengeStep.svelte` | New component |
+| `apps/web/src/lib/components/lesson/steps/ListenAndChooseStep.svelte` | New component |
+| `apps/web/src/lib/components/lesson/steps/CompletionStep.svelte` | New component |

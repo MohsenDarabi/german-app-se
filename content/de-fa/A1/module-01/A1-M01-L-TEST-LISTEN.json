@@ -1,0 +1,80 @@
+{
+  "id": "A1-M01-L-TEST-LISTEN",
+  "title": {
+    "de": "Listen & Choose Test",
+    "fa": "تست گوش دادن و انتخاب"
+  },
+  "level": "A1",
+  "module": 1,
+  "lessonNumber": 98,
+  "estimatedMinutes": 5,
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "intro",
+      "title": "گوش کن و انتخاب کن!",
+      "content": "در این درس، ویژگی جدید گوش دادن و انتخاب را تست می‌کنید. به صدا گوش بدهید و جواب درست را انتخاب کنید."
+    },
+    {
+      "type": "listen-and-choose",
+      "id": "listen1",
+      "instruction": "چه شنیدید؟",
+      "germanText": "Guten Morgen",
+      "translation": "صبح بخیر",
+      "options": ["Guten Tag", "Guten Morgen", "Gute Nacht", "Guten Abend"],
+      "correctAnswerIndex": 1,
+      "autoPlay": true
+    },
+    {
+      "type": "listen-and-choose",
+      "id": "listen2",
+      "instruction": "چه شنیدید؟",
+      "germanText": "Wie geht es dir?",
+      "translation": "حالت چطوره؟",
+      "options": ["Wie heißt du?", "Woher kommst du?", "Wie geht es dir?", "Was machst du?"],
+      "correctAnswerIndex": 2,
+      "autoPlay": true
+    },
+    {
+      "type": "listen-and-choose",
+      "id": "listen3",
+      "instruction": "چه شنیدید؟",
+      "germanText": "Ich komme aus Deutschland",
+      "translation": "من از آلمان می‌آیم",
+      "options": ["Ich wohne in Berlin", "Ich komme aus Deutschland", "Ich spreche Deutsch", "Ich lerne Deutsch"],
+      "correctAnswerIndex": 1,
+      "autoPlay": true
+    },
+    {
+      "type": "listen-and-choose",
+      "id": "listen4",
+      "instruction": "چه شنیدید؟",
+      "germanText": "Auf Wiedersehen",
+      "translation": "خداحافظ",
+      "options": ["Tschüss", "Hallo", "Auf Wiedersehen", "Bis bald"],
+      "correctAnswerIndex": 2,
+      "autoPlay": true
+    },
+    {
+      "type": "listen-and-choose",
+      "id": "listen5",
+      "instruction": "چه شنیدید؟",
+      "germanText": "Danke schön",
+      "translation": "متشکرم",
+      "options": ["Bitte schön", "Danke schön", "Entschuldigung", "Gern geschehen"],
+      "correctAnswerIndex": 1,
+      "autoPlay": true
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "message": "آفرین! گوش دادن و انتخاب را تست کردید!",
+      "vocabularyLearned": [
+        { "word": { "de": "Guten Morgen", "fa": "صبح بخیر" } },
+        { "word": { "de": "Wie geht es dir?", "fa": "حالت چطوره؟" } },
+        { "word": { "de": "Auf Wiedersehen", "fa": "خداحافظ" } },
+        { "word": { "de": "Danke schön", "fa": "متشکرم" } }
+      ]
+    }
+  ]
+}

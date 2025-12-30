@@ -11,6 +11,7 @@
   import TrueFalseStep from "./steps/TrueFalseStep.svelte";
   import SpeedChallengeStep from "./steps/SpeedChallengeStep.svelte";
   import CompletionStep from "./steps/CompletionStep.svelte";
+  import ListenAndChooseStep from "./steps/ListenAndChooseStep.svelte";
 
   export let step: LessonStep;
   export let lessonId: string = '';
@@ -39,6 +40,8 @@
     <SpeedChallengeStep {step} {lessonId} on:answer />
   {:else if step.type === "completion"}
     <CompletionStep {step} {lessonId} on:answer />
+  {:else if step.type === "listen-and-choose"}
+    <ListenAndChooseStep {step} {lessonId} on:answer />
   {:else}
     <div class="unknown-step">
       <p>Unknown step type: {step.type}</p>
