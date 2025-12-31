@@ -18,10 +18,14 @@
     selectedAnswer = choice;
     isAnswered = true;
 
+    // Get the actual German text for review system
+    const userText = choice === "formal" ? step.formalOption.text : step.informalOption.text;
+    const correctText = step.correctAnswer === "formal" ? step.formalOption.text : step.informalOption.text;
+
     dispatch('answer', {
       correct: choice === step.correctAnswer,
-      userAnswer: choice,
-      correctAnswer: step.correctAnswer,
+      userAnswer: userText,
+      correctAnswer: correctText,
       allowContinue: choice === step.correctAnswer
     });
   }
@@ -42,7 +46,7 @@
     <p class="scenario-text">{step.scenario}</p>
   </div>
 
-  <!-- Options -->
+  <!-- Options - labels hidden until answered -->
   <div class="options-row">
     <!-- Formal Option -->
     <button
@@ -54,12 +58,14 @@
       on:click={() => selectOption("formal")}
       disabled={isAnswered}
     >
-      <span class="option-label" dir="rtl">{step.formalOption.label || 'رسمی (Sie)'}</span>
       <span class="option-text">{step.formalOption.text}</span>
-      {#if isAnswered && step.correctAnswer === "formal"}
-        <span class="result-icon">✅</span>
-      {:else if isAnswered && selectedAnswer === "formal"}
-        <span class="result-icon">❌</span>
+      {#if isAnswered}
+        <span class="option-label revealed" dir="rtl">{step.formalOption.label || 'رسمی (Sie)'}</span>
+        {#if step.correctAnswer === "formal"}
+          <span class="result-icon">✅</span>
+        {:else if selectedAnswer === "formal"}
+          <span class="result-icon">❌</span>
+        {/if}
       {/if}
     </button>
 
@@ -73,12 +79,14 @@
       on:click={() => selectOption("informal")}
       disabled={isAnswered}
     >
-      <span class="option-label" dir="rtl">{step.informalOption.label || 'غیررسمی (Du)'}</span>
       <span class="option-text">{step.informalOption.text}</span>
-      {#if isAnswered && step.correctAnswer === "informal"}
-        <span class="result-icon">✅</span>
-      {:else if isAnswered && selectedAnswer === "informal"}
-        <span class="result-icon">❌</span>
+      {#if isAnswered}
+        <span class="option-label revealed" dir="rtl">{step.informalOption.label || 'غیررسمی (Du)'}</span>
+        {#if step.correctAnswer === "informal"}
+          <span class="result-icon">✅</span>
+        {:else if selectedAnswer === "informal"}
+          <span class="result-icon">❌</span>
+        {/if}
       {/if}
     </button>
   </div>
@@ -205,11 +213,18 @@
   }
 
   .option-label {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: 600;
     color: #64748b;
-    text-transform: uppercase;
     letter-spacing: 0.5px;
+  }
+
+  .option-label.revealed {
+    margin-top: 0.5rem;
+    padding: 0.25rem 0.75rem;
+    background: #f1f5f9;
+    border-radius: 999px;
+    font-size: 0.8rem;
   }
 
   .option-text {

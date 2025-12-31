@@ -21,6 +21,8 @@
     if (step.statement) return step.statement; // true-false
     if (step.sourceText) return step.sourceText; // translation
     if (step.sentence) return step.sentence; // fill-in-blank
+    // formality-choice: use scenario for context in review
+    if (step.type === 'formality-choice' && step.scenario) return step.scenario;
     if (step.instruction) return step.instruction; // word-order, fill-in-blank
     if (step.word?.de) return step.word.de; // new-word
     if (step.title) return step.title; // dialog, grammar-tip
