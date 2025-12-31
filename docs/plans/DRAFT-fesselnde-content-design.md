@@ -259,16 +259,33 @@ Hear audio, select what was said
 
 **Why engaging:** Active listening, trains ear for German sounds
 
-#### 7. `pronunciation-challenge`
-Practice German sounds (using Web Speech API - FREE)
+#### 7. `pronunciation-challenge` ⏸️ DEFERRED
 
-- Show German word/phrase
-- Play native pronunciation
+Practice German sounds with speech recognition scoring.
+
+**Status:** Research complete, implementation deferred (Dec 2025)
+
+**Research Summary (2025):**
+
+| API | Free Tier | TRUE Pronunciation Assessment | Quality |
+|-----|-----------|------------------------------|---------|
+| **Groq Whisper** | 14,400 req/day | ❌ Just transcription | Excellent |
+| Google Cloud STT | 60 min/month | ❌ Just transcription | Good |
+| **Azure Speech** | 5 hrs/month | ✅ Phoneme-level scoring | Best |
+| Web Speech API | Unlimited | ❌ Just transcription | Variable |
+
+**Key Finding:** Only Azure provides TRUE pronunciation assessment (phoneme accuracy, fluency, prosody). Others just transcribe speech and compare text.
+
+**Recommendation:**
+- **Phase 1:** Use Groq Whisper (FREE) with text comparison algorithm
+- **Phase 2:** Add Azure ($35-50/mo) as premium feature for phoneme-level feedback
+
+**Implementation when ready:**
+- Show German word/phrase + Persian translation
+- Play native pronunciation (TTS)
 - User records their attempt
-- Speech recognition scores similarity
-- Feedback on specific sounds (ü, ö, ä, ch, sch)
-
-**Technical Note:** Uses browser's Web Speech API (free, no backend needed)
+- API transcribes → compare to expected → calculate accuracy %
+- Show feedback with retry option
 
 **Why engaging:** Speaking practice, instant feedback
 
@@ -463,7 +480,7 @@ Practice words you got wrong
 
 | Priority | Type | Effort | Notes |
 |----------|------|--------|-------|
-| 9 | `pronunciation-challenge` | 3-4 days | Web Speech API (FREE) |
+| 9 | `pronunciation-challenge` | 3-4 days | ⏸️ DEFERRED - Research complete, use Groq (free) or Azure (premium) |
 | 10 | `story-episode` | Content-heavy | Needs story writing |
 | 11 | `article-attack` | 1 week | Animation/game engine |
 | 12 | `case-detective` | 1 week | Complex grammar logic |
