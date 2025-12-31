@@ -537,6 +537,38 @@ export const ChatSimulatorStepSchema = BaseStepSchema.extend({
 });
 
 /* --------------------------------------------------
+   Step Type 17: Spaced Review
+   Vocabulary review with difficulty rating
+-------------------------------------------------- */
+
+export const ReviewWordSchema = z.object({
+  id: z.string(),
+  german: z.string(),
+  persian: z.string(),
+  example: z.string().optional(),       // Example sentence
+  audio: z.string().optional(),         // Audio ID for pronunciation
+});
+
+export const SpacedReviewStepSchema = BaseStepSchema.extend({
+  type: z.literal("spaced-review"),
+
+  // Title
+  title: z.string().default("مرور واژگان"),
+
+  // Instruction
+  instruction: z.string().default("هر کلمه را مرور کنید و سختی آن را مشخص کنید"),
+
+  // Words to review
+  words: z.array(ReviewWordSchema).min(3),
+
+  // Show example sentences
+  showExamples: z.boolean().default(true),
+
+  // Enable audio playback
+  enableAudio: z.boolean().default(true),
+});
+
+/* --------------------------------------------------
    EXTENSIBILITY: Generic Step Type
    For future unknown step types, allow custom data
 -------------------------------------------------- */
@@ -570,6 +602,7 @@ export const LessonStepSchema = z.discriminatedUnion("type", [
   WordHuntStepSchema,
   RapidFireStepSchema,
   ChatSimulatorStepSchema,
+  SpacedReviewStepSchema,
   // Add new step types here as you discover them
 ]);
 
@@ -652,6 +685,8 @@ export type ChatSimulatorStep = z.infer<typeof ChatSimulatorStepSchema>;
 export type ChatNode = z.infer<typeof ChatNodeSchema>;
 export type ChatMessage = z.infer<typeof ChatMessageSchema>;
 export type ChatResponseOption = z.infer<typeof ChatResponseOptionSchema>;
+export type SpacedReviewStep = z.infer<typeof SpacedReviewStepSchema>;
+export type ReviewWord = z.infer<typeof ReviewWordSchema>;
 export type GenericStep = z.infer<typeof GenericStepSchema>;
 
 export type LessonStep = z.infer<typeof LessonStepSchema>;

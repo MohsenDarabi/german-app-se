@@ -17,6 +17,7 @@
   import WordHuntStep from "./steps/WordHuntStep.svelte";
   import RapidFireStep from "./steps/RapidFireStep.svelte";
   import ChatSimulatorStep from "./steps/ChatSimulatorStep.svelte";
+  import SpacedReviewStep from "./steps/SpacedReviewStep.svelte";
 
   export let step: LessonStep;
   export let lessonId: string = '';
@@ -57,6 +58,8 @@
     <RapidFireStep {step} {lessonId} on:answer />
   {:else if step.type === "chat-simulator"}
     <ChatSimulatorStep {step} {lessonId} on:answer />
+  {:else if step.type === "spaced-review"}
+    <SpacedReviewStep {step} {lessonId} on:answer />
   {:else}
     <div class="unknown-step">
       <p>Unknown step type: {step.type}</p>
