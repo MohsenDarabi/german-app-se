@@ -1,0 +1,78 @@
+{
+  "id": "A1-M01-L-TEST-WORDHUNT",
+  "title": {
+    "de": "Wortsuche",
+    "fa": "جستجوی کلمات"
+  },
+  "level": "A1",
+  "module": 1,
+  "lessonNumber": 97,
+  "estimatedMinutes": 5,
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "intro",
+      "title": "جستجوی کلمات!",
+      "content": "کلمات آلمانی را در جدول حروف پیدا کنید. می‌توانید افقی یا عمودی بگردید. روی حرف اول کلیک کنید و سپس روی حرف آخر."
+    },
+    {
+      "type": "word-hunt",
+      "id": "hunt1",
+      "instruction": "۴ کلمه آلمانی را پیدا کنید!",
+      "words": [
+        { "word": "HALLO", "translation": "سلام" },
+        { "word": "DANKE", "translation": "ممنون" },
+        { "word": "BITTE", "translation": "لطفاً" },
+        { "word": "JA", "translation": "بله" }
+      ],
+      "gridSize": 6,
+      "directions": ["horizontal", "vertical"],
+      "timeLimit": 0,
+      "showHints": true
+    },
+    {
+      "type": "word-hunt",
+      "id": "hunt2",
+      "instruction": "این بار سخت‌تر! ۵ کلمه!",
+      "words": [
+        { "word": "GUTEN", "translation": "خوب" },
+        { "word": "MORGEN", "translation": "صبح" },
+        { "word": "TAG", "translation": "روز" },
+        { "word": "ABEND", "translation": "عصر" },
+        { "word": "NACHT", "translation": "شب" }
+      ],
+      "gridSize": 8,
+      "directions": ["horizontal", "vertical", "diagonal"],
+      "timeLimit": 0,
+      "showHints": false
+    },
+    {
+      "type": "word-hunt",
+      "id": "hunt3",
+      "instruction": "چالش زمان‌دار! ۹۰ ثانیه فرصت دارید!",
+      "words": [
+        { "word": "WASSER", "translation": "آب" },
+        { "word": "BROT", "translation": "نان" },
+        { "word": "MILCH", "translation": "شیر" },
+        { "word": "KAFFEE", "translation": "قهوه" },
+        { "word": "TEE", "translation": "چای" },
+        { "word": "APFEL", "translation": "سیب" }
+      ],
+      "gridSize": 8,
+      "directions": ["horizontal", "vertical", "diagonal"],
+      "timeLimit": 90,
+      "showHints": true
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "message": "آفرین! جستجوی کلمات را کامل کردید!",
+      "vocabularyLearned": [
+        { "word": { "de": "Hallo", "fa": "سلام" } },
+        { "word": { "de": "Danke", "fa": "ممنون" } },
+        { "word": { "de": "Guten Morgen", "fa": "صبح بخیر" } },
+        { "word": { "de": "Wasser", "fa": "آب" } }
+      ]
+    }
+  ]
+}

@@ -423,6 +423,38 @@ export const MemoryMatchStepSchema = BaseStepSchema.extend({
 });
 
 /* --------------------------------------------------
+   Step Type 14: Word Hunt
+   Word search puzzle - find German words in a letter grid
+-------------------------------------------------- */
+
+export const WordHuntWordSchema = z.object({
+  word: z.string(),           // The German word to find
+  translation: z.string(),    // Persian translation (shown in word list)
+});
+
+export const WordHuntStepSchema = BaseStepSchema.extend({
+  type: z.literal("word-hunt"),
+
+  // Instruction text
+  instruction: z.string().default("کلمات آلمانی را در جدول پیدا کنید!"),
+
+  // Words to find in the grid
+  words: z.array(WordHuntWordSchema).min(3).max(8),
+
+  // Grid size (6x6, 8x8, etc.) - will be auto-generated
+  gridSize: z.number().int().min(5).max(10).default(6),
+
+  // Allowed directions for word placement
+  directions: z.array(z.enum(["horizontal", "vertical", "diagonal"])).default(["horizontal", "vertical"]),
+
+  // Optional time limit in seconds (0 = no limit)
+  timeLimit: z.number().int().min(0).max(300).default(0),
+
+  // Show hints (highlight first letter)
+  showHints: z.boolean().default(false),
+});
+
+/* --------------------------------------------------
    EXTENSIBILITY: Generic Step Type
    For future unknown step types, allow custom data
 -------------------------------------------------- */
@@ -453,6 +485,7 @@ export const LessonStepSchema = z.discriminatedUnion("type", [
   SpeedChallengeStepSchema,
   FormalityChoiceStepSchema,
   MemoryMatchStepSchema,
+  WordHuntStepSchema,
   // Add new step types here as you discover them
 ]);
 
@@ -527,6 +560,8 @@ export type SpeedChallengeQuestion = z.infer<typeof SpeedChallengeQuestionSchema
 export type FormalityChoiceStep = z.infer<typeof FormalityChoiceStepSchema>;
 export type MemoryMatchStep = z.infer<typeof MemoryMatchStepSchema>;
 export type MemoryMatchPair = z.infer<typeof MemoryMatchPairSchema>;
+export type WordHuntStep = z.infer<typeof WordHuntStepSchema>;
+export type WordHuntWord = z.infer<typeof WordHuntWordSchema>;
 export type GenericStep = z.infer<typeof GenericStepSchema>;
 
 export type LessonStep = z.infer<typeof LessonStepSchema>;

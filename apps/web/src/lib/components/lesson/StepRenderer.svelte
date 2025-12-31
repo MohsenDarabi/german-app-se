@@ -14,6 +14,7 @@
   import ListenAndChooseStep from "./steps/ListenAndChooseStep.svelte";
   import FormalityChoiceStep from "./steps/FormalityChoiceStep.svelte";
   import MemoryMatchStep from "./steps/MemoryMatchStep.svelte";
+  import WordHuntStep from "./steps/WordHuntStep.svelte";
 
   export let step: LessonStep;
   export let lessonId: string = '';
@@ -48,6 +49,8 @@
     <FormalityChoiceStep {step} {lessonId} on:answer />
   {:else if step.type === "memory-match"}
     <MemoryMatchStep {step} {lessonId} on:answer />
+  {:else if step.type === "word-hunt"}
+    <WordHuntStep {step} {lessonId} on:answer />
   {:else}
     <div class="unknown-step">
       <p>Unknown step type: {step.type}</p>
