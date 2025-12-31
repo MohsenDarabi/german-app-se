@@ -16,7 +16,8 @@
   import MemoryMatchStep from "./steps/MemoryMatchStep.svelte";
   import WordHuntStep from "./steps/WordHuntStep.svelte";
   import RapidFireStep from "./steps/RapidFireStep.svelte";
-  import ChatSimulatorStep from "./steps/ChatSimulatorStep.svelte";
+  // ChatSimulatorStep disabled - will be replaced by AI chatbot
+  // import ChatSimulatorStep from "./steps/ChatSimulatorStep.svelte";
   import VocabCheckStep from "./steps/VocabCheckStep.svelte";
 
   export let step: LessonStep;
@@ -57,7 +58,10 @@
   {:else if step.type === "rapid-fire"}
     <RapidFireStep {step} {lessonId} on:answer />
   {:else if step.type === "chat-simulator"}
-    <ChatSimulatorStep {step} {lessonId} on:answer />
+    <!-- Chat simulator disabled - will be replaced by AI chatbot -->
+    <div class="disabled-step" dir="rtl">
+      <p>این قابلیت به زودی با چت‌بات هوشمند جایگزین می‌شود.</p>
+    </div>
   {:else if step.type === "vocab-check"}
     <VocabCheckStep {step} {lessonId} on:answer />
   {:else}
@@ -88,5 +92,13 @@
     border-radius: 0.5rem;
     overflow: auto;
     font-size: 0.85rem;
+  }
+  .disabled-step {
+    padding: 2rem;
+    background: #f8fafc;
+    border: 2px dashed #cbd5e1;
+    border-radius: 0.75rem;
+    text-align: center;
+    color: #64748b;
   }
 </style>
