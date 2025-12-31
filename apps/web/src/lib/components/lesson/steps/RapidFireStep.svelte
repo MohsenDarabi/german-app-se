@@ -32,13 +32,7 @@
   $: cardTranslateX = isDragging ? currentX - startX : 0;
 
   onMount(() => {
-    // Add touch and mouse listeners
-    if (cardElement) {
-      cardElement.addEventListener('touchstart', handleTouchStart, { passive: true });
-      cardElement.addEventListener('touchmove', handleTouchMove, { passive: true });
-      cardElement.addEventListener('touchend', handleTouchEnd);
-      cardElement.addEventListener('mousedown', handleMouseDown);
-    }
+    // Add document-level mouse listeners for drag tracking
     document.addEventListener('mousemove', handleMouseMove);
     document.addEventListener('mouseup', handleMouseUp);
   });
@@ -308,6 +302,12 @@
           class:dragging={isDragging}
           bind:this={cardElement}
           style="transform: translateX({cardTranslateX}px) rotate({cardRotation}deg)"
+          on:touchstart={handleTouchStart}
+          on:touchmove={handleTouchMove}
+          on:touchend={handleTouchEnd}
+          on:mousedown={handleMouseDown}
+          role="button"
+          tabindex="0"
         >
           <span class="card-text">{currentQuestion.question}</span>
           <span class="card-flag">🇩🇪</span>
@@ -598,6 +598,7 @@
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     cursor: grab;
     user-select: none;
+    touch-action: none; /* Prevent browser default touch handling */
     transition: transform 0.1s, border-color 0.2s, background 0.2s;
   }
 

@@ -286,8 +286,9 @@
       }
     }
 
-    // No match - clear selection
-    clearSelection();
+    // No match yet - keep selection visible so user can extend it
+    // Selection will be cleared when user clicks outside valid direction
+    // or when they start a new selection by clicking a non-adjacent cell
   }
 
   function completeGame() {
