@@ -1,0 +1,230 @@
+{
+  "id": "A1-M01-L-TEST-CHAT",
+  "title": {
+    "de": "Chat mit Anna",
+    "fa": "چت با آنا"
+  },
+  "level": "A1",
+  "module": 1,
+  "lessonNumber": 99,
+  "estimatedMinutes": 5,
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "intro",
+      "title": "مکالمه چت!",
+      "content": "با آنا چت کنید! او یک دوست آلمانی است. از بین گزینه‌ها پاسخ مناسب را انتخاب کنید. روی پیام‌ها کلیک کنید تا ترجمه را ببینید."
+    },
+    {
+      "type": "chat-simulator",
+      "id": "chat1",
+      "friendName": "Anna",
+      "friendAvatar": "👩",
+      "scenario": "آنا می‌خواهد با شما آشنا شود",
+      "showTranslations": false,
+      "startNodeId": "node1",
+      "nodes": [
+        {
+          "messageId": "node1",
+          "message": {
+            "id": "msg1",
+            "sender": "friend",
+            "text": "Hallo! 👋",
+            "translation": "سلام!"
+          },
+          "responseOptions": [
+            {
+              "id": "resp1a",
+              "text": "Hallo! Wie geht's?",
+              "translation": "سلام! حالت چطوره؟",
+              "isCorrect": true,
+              "nextMessageId": "node2"
+            },
+            {
+              "id": "resp1b",
+              "text": "Auf Wiedersehen!",
+              "translation": "خداحافظ!",
+              "isCorrect": false,
+              "nextMessageId": "node2bad"
+            }
+          ],
+          "correctResponseId": "resp1a"
+        },
+        {
+          "messageId": "node2",
+          "message": {
+            "id": "msg2",
+            "sender": "friend",
+            "text": "Mir geht's gut, danke! Und dir? 😊",
+            "translation": "خوبم، ممنون! تو چطوری؟"
+          },
+          "responseOptions": [
+            {
+              "id": "resp2a",
+              "text": "Auch gut, danke!",
+              "translation": "منم خوبم، ممنون!",
+              "isCorrect": true,
+              "nextMessageId": "node3"
+            },
+            {
+              "id": "resp2b",
+              "text": "Nicht so gut...",
+              "translation": "خیلی خوب نیستم...",
+              "isCorrect": true,
+              "nextMessageId": "node3"
+            }
+          ]
+        },
+        {
+          "messageId": "node2bad",
+          "message": {
+            "id": "msg2bad",
+            "sender": "friend",
+            "text": "Oh... schon gehen? 😅 Na gut, tschüss!",
+            "translation": "اوه... داری میری؟ باشه، خداحافظ!"
+          },
+          "responseOptions": [
+            {
+              "id": "resp2bad",
+              "text": "Entschuldigung! Hallo nochmal!",
+              "translation": "ببخشید! دوباره سلام!",
+              "isCorrect": true,
+              "nextMessageId": "node3"
+            },
+            {
+              "id": "resp2bad2",
+              "text": "Tschüss!",
+              "translation": "خداحافظ!",
+              "isCorrect": false
+            }
+          ],
+          "correctResponseId": "resp2bad"
+        },
+        {
+          "messageId": "node3",
+          "message": {
+            "id": "msg3",
+            "sender": "friend",
+            "text": "Wie heißt du? 🤔",
+            "translation": "اسمت چیه؟"
+          },
+          "responseOptions": [
+            {
+              "id": "resp3a",
+              "text": "Ich heiße Ali.",
+              "translation": "اسمم علی هست.",
+              "isCorrect": true,
+              "nextMessageId": "node4"
+            },
+            {
+              "id": "resp3b",
+              "text": "Ich bin Sara.",
+              "translation": "من سارا هستم.",
+              "isCorrect": true,
+              "nextMessageId": "node4"
+            }
+          ]
+        },
+        {
+          "messageId": "node4",
+          "message": {
+            "id": "msg4",
+            "sender": "friend",
+            "text": "Schön, dich kennenzulernen! 😄 Woher kommst du?",
+            "translation": "از آشناییت خوشحالم! اهل کجایی؟"
+          },
+          "responseOptions": [
+            {
+              "id": "resp4a",
+              "text": "Ich komme aus dem Iran.",
+              "translation": "من اهل ایران هستم.",
+              "isCorrect": true
+            },
+            {
+              "id": "resp4b",
+              "text": "Ich komme aus Afghanistan.",
+              "translation": "من اهل افغانستان هستم.",
+              "isCorrect": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "chat-simulator",
+      "id": "chat2",
+      "friendName": "Max",
+      "friendAvatar": "👨",
+      "scenario": "مکس می‌خواهد بداند چند ساله هستید",
+      "showTranslations": true,
+      "startNodeId": "node1",
+      "nodes": [
+        {
+          "messageId": "node1",
+          "message": {
+            "id": "msg1",
+            "sender": "friend",
+            "text": "Hey! Wie alt bist du?",
+            "translation": "سلام! چند سالته؟"
+          },
+          "responseOptions": [
+            {
+              "id": "resp1a",
+              "text": "Ich bin 25 Jahre alt.",
+              "translation": "من ۲۵ ساله هستم.",
+              "isCorrect": true,
+              "nextMessageId": "node2"
+            },
+            {
+              "id": "resp1b",
+              "text": "Ich bin 30.",
+              "translation": "من ۳۰ ساله‌ام.",
+              "isCorrect": true,
+              "nextMessageId": "node2"
+            }
+          ]
+        },
+        {
+          "messageId": "node2",
+          "message": {
+            "id": "msg2",
+            "sender": "friend",
+            "text": "Cool! Was machst du beruflich?",
+            "translation": "باحال! شغلت چیه؟"
+          },
+          "responseOptions": [
+            {
+              "id": "resp2a",
+              "text": "Ich bin Student.",
+              "translation": "من دانشجو هستم.",
+              "isCorrect": true
+            },
+            {
+              "id": "resp2b",
+              "text": "Ich arbeite als Ingenieur.",
+              "translation": "من مهندس هستم.",
+              "isCorrect": true
+            },
+            {
+              "id": "resp2c",
+              "text": "Ich suche Arbeit.",
+              "translation": "دنبال کار می‌گردم.",
+              "isCorrect": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "message": "آفرین! مکالمات چت را کامل کردید!",
+      "vocabularyLearned": [
+        { "word": { "de": "Wie geht's?", "fa": "حالت چطوره؟" } },
+        { "word": { "de": "Wie heißt du?", "fa": "اسمت چیه؟" } },
+        { "word": { "de": "Woher kommst du?", "fa": "اهل کجایی؟" } },
+        { "word": { "de": "Wie alt bist du?", "fa": "چند سالته؟" } }
+      ]
+    }
+  ]
+}

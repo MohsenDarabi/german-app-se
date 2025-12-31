@@ -489,6 +489,54 @@ export const RapidFireStepSchema = BaseStepSchema.extend({
 });
 
 /* --------------------------------------------------
+   Step Type 16: Chat Simulator
+   WhatsApp-style conversation practice
+-------------------------------------------------- */
+
+export const ChatMessageSchema = z.object({
+  id: z.string(),
+  sender: z.enum(["friend", "user"]),  // Who sends this message
+  text: z.string(),                     // Message text (German)
+  translation: z.string().optional(),   // Persian translation (shown on tap)
+  timestamp: z.string().optional(),     // e.g., "14:32"
+});
+
+export const ChatResponseOptionSchema = z.object({
+  id: z.string(),
+  text: z.string(),                     // German response text
+  translation: z.string().optional(),   // Persian hint
+  isCorrect: z.boolean().default(true), // All can be correct for branching
+  nextMessageId: z.string().optional(), // Which message follows this choice
+});
+
+export const ChatNodeSchema = z.object({
+  messageId: z.string(),                // ID of friend's message
+  message: ChatMessageSchema,           // The friend's message
+  responseOptions: z.array(ChatResponseOptionSchema).min(2).max(4),
+  correctResponseId: z.string().optional(), // If there's one "best" answer
+});
+
+export const ChatSimulatorStepSchema = BaseStepSchema.extend({
+  type: z.literal("chat-simulator"),
+
+  // Friend's name and avatar
+  friendName: z.string().default("Anna"),
+  friendAvatar: z.string().optional(),  // Emoji or image URL
+
+  // Scenario description (Persian)
+  scenario: z.string(),
+
+  // Conversation nodes (tree structure)
+  nodes: z.array(ChatNodeSchema).min(1),
+
+  // Starting node ID
+  startNodeId: z.string(),
+
+  // Show translations automatically or on tap
+  showTranslations: z.boolean().default(false),
+});
+
+/* --------------------------------------------------
    EXTENSIBILITY: Generic Step Type
    For future unknown step types, allow custom data
 -------------------------------------------------- */
@@ -521,6 +569,7 @@ export const LessonStepSchema = z.discriminatedUnion("type", [
   MemoryMatchStepSchema,
   WordHuntStepSchema,
   RapidFireStepSchema,
+  ChatSimulatorStepSchema,
   // Add new step types here as you discover them
 ]);
 
@@ -599,6 +648,10 @@ export type WordHuntStep = z.infer<typeof WordHuntStepSchema>;
 export type WordHuntWord = z.infer<typeof WordHuntWordSchema>;
 export type RapidFireStep = z.infer<typeof RapidFireStepSchema>;
 export type RapidFireQuestion = z.infer<typeof RapidFireQuestionSchema>;
+export type ChatSimulatorStep = z.infer<typeof ChatSimulatorStepSchema>;
+export type ChatNode = z.infer<typeof ChatNodeSchema>;
+export type ChatMessage = z.infer<typeof ChatMessageSchema>;
+export type ChatResponseOption = z.infer<typeof ChatResponseOptionSchema>;
 export type GenericStep = z.infer<typeof GenericStepSchema>;
 
 export type LessonStep = z.infer<typeof LessonStepSchema>;
