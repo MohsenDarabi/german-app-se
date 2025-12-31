@@ -470,6 +470,112 @@ Practice words you got wrong
 
 ---
 
+## AI Chatbot Assistant (Future Feature)
+
+### Overview
+
+A context-aware AI assistant that floats on lesson pages and helps users understand content, practice exercises, and get explanations in Persian.
+
+### UI Concept
+
+```
+┌─────────────────────────────────────────┐
+│  Lesson Page Content                    │
+│  ┌─────────────────────────────────┐    │
+│  │  Exercise / Grammar / Dialog    │    │
+│  └─────────────────────────────────┘    │
+│                                         │
+│                              ┌────┐     │
+│                              │ 🤖 │ ◄── Floating AI button
+│                              └────┘     │
+└─────────────────────────────────────────┘
+
+     │ User clicks
+     ▼
+
+┌─────────────────────────────────────────┐
+│  Lesson Page Content                    │
+│  ┌─────────────────────────────────┐    │
+│  │  Exercise / Grammar / Dialog    │    │
+│  └─────────────────────────────────┘    │
+│                                         │
+│  ┌──────────────────────────────────┐   │
+│  │ 🤖 دستیار هوشمند                 │   │
+│  ├──────────────────────────────────┤   │
+│  │ تمرین‌های پیشنهادی:              │   │
+│  │ ┌────────┐ ┌────────┐ ┌────────┐ │   │
+│  │ │ Hallo  │ │ Danke  │ │ Bitte  │ │   │ ◄── Exercise chips from page
+│  │ └────────┘ └────────┘ └────────┘ │   │
+│  ├──────────────────────────────────┤   │
+│  │ ┌────────────────────────────┐   │   │
+│  │ │ سوالت رو بنویس...         │   │   │ ◄── Free text input
+│  │ └────────────────────────────┘   │   │
+│  └──────────────────────────────────┘   │
+└─────────────────────────────────────────┘
+```
+
+### Features
+
+1. **Context-Aware**
+   - Knows current lesson content (words, grammar, exercises)
+   - Can reference specific items from the page
+   - Explains in Persian with German examples
+
+2. **Quick Practice Chips**
+   - Shows clickable chips for words/phrases from current page
+   - User clicks → AI generates practice question or explanation
+   - Example: Click "Hallo" → "Hallo به معنی سلام است. در موقعیت‌های رسمی و غیررسمی استفاده می‌شود."
+
+3. **Free Chat**
+   - User types any question in Persian
+   - AI responds with explanations, examples, mnemonics
+   - Supports follow-up questions
+
+4. **Extendable/Collapsible**
+   - Minimized: Small floating button (🤖)
+   - Expanded: Chat panel with chips + input
+   - Remembers state per session
+
+### Technical Approach
+
+```typescript
+// Context passed to AI
+interface LessonContext {
+  lessonId: string;
+  currentStep: LessonStep;
+  allSteps: LessonStep[];
+  vocabularyOnPage: { german: string; persian: string }[];
+  grammarTopics: string[];
+  userProgress: { correct: number; total: number };
+}
+
+// API endpoint
+POST /api/ai-chat
+{
+  context: LessonContext,
+  userMessage: string,
+  conversationHistory: Message[]
+}
+```
+
+### Implementation Options
+
+| Option | Cost | Notes |
+|--------|------|-------|
+| Claude API | ~$0.01/conversation | Best quality, Persian support |
+| OpenAI GPT-4 | ~$0.02/conversation | Good quality |
+| Gemini | Free tier available | Good for starting |
+| Self-hosted (Ollama) | Server cost only | Privacy, no per-call cost |
+
+### Priority
+
+- **Phase 4** feature (after core gamification)
+- Consider as **premium feature** for subscription tier
+- Start with simple FAQ/explanation mode
+- Expand to full conversational AI later
+
+---
+
 ## Technical Notes
 
 ### Files to Modify (App)
