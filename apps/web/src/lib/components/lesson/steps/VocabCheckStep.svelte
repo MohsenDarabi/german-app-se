@@ -1,25 +1,25 @@
 <script lang="ts">
-  import type { SpacedReviewStep, ReviewWord } from "$lib/content-model";
+  import type { VocabCheckStep, VocabCheckWord } from "$lib/content-model";
   import { createEventDispatcher } from "svelte";
 
-  export let step: SpacedReviewStep;
+  export let step: VocabCheckStep;
   export let lessonId: string = '';
 
   const dispatch = createEventDispatcher();
 
-  interface ReviewedWord extends ReviewWord {
+  interface CheckedWord extends VocabCheckWord {
     rating: 'easy' | 'medium' | 'hard' | null;
     revealed: boolean;
   }
 
-  let words: ReviewedWord[] = step.words.map(w => ({
+  let words: CheckedWord[] = step.words.map(w => ({
     ...w,
     rating: null,
     revealed: false
   }));
 
   let currentIndex = 0;
-  let reviewComplete = false;
+  let checkComplete = false;
 
   // Stats
   let easyCount = 0;
@@ -28,7 +28,7 @@
 
   $: currentWord = words[currentIndex];
   $: progress = (currentIndex / words.length) * 100;
-  $: totalReviewed = easyCount + mediumCount + hardCount;
+  $: totalChecked = easyCount + mediumCount + hardCount;
 
   function revealWord() {
     if (currentWord) {
@@ -52,12 +52,12 @@
     if (currentIndex < words.length - 1) {
       currentIndex++;
     } else {
-      completeReview();
+      completeCheck();
     }
   }
 
-  function completeReview() {
-    reviewComplete = true;
+  function completeCheck() {
+    checkComplete = true;
 
     // Calculate mastery score (easy = 100%, medium = 70%, hard = 40%)
     const masteryScore = Math.round(
@@ -81,8 +81,8 @@
   }
 </script>
 
-<div class="review-container">
-  {#if !reviewComplete}
+<div class="check-container">
+  {#if !checkComplete}
     <!-- Progress -->
     <div class="progress-section">
       <div class="progress-bar">
@@ -195,7 +195,7 @@
 </div>
 
 <style>
-  .review-container {
+  .check-container {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;

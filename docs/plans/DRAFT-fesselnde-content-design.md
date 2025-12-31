@@ -386,16 +386,16 @@ Simulated WhatsApp-style conversation
 
 ### Category F: Review & Retention
 
-#### 17. `spaced-review`
-Smart review based on forgetting curve
+#### 17. `vocab-check`
+In-lesson vocabulary self-assessment with difficulty rating
 
-- Shows words due for review
+- Shows words from the current lesson
 - Difficulty rating after each (Easy/Medium/Hard)
-- Adjusts next review timing
-- Streak for daily reviews
-- "Words mastered" counter
+- Mastery score calculation
+- Visual progress through flashcards
+- Tip to practice hard words more
 
-**Why engaging:** Visible progress, mastery feeling
+**Why engaging:** Self-assessment, visible mastery score
 
 #### 18. `mistake-replay`
 Practice words you got wrong
@@ -457,7 +457,7 @@ Practice words you got wrong
 | 5 | `word-hunt` | 3-4 days | Word search grid |
 | 6 | `rapid-fire` | 3 days | Swipe interface |
 | 7 | `chat-simulator` | 4-5 days | Conversation tree |
-| 8 | `spaced-review` | 4 days | Scheduling algorithm |
+| 8 | `vocab-check` | 2 days | Flashcard self-assessment |
 
 ### Phase 3: Advanced (1 week+ each)
 

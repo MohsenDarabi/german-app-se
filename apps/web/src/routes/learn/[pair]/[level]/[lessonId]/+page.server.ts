@@ -1,10 +1,15 @@
 import type { PageServerLoad } from "./$types";
 import { LessonSchema, type Lesson } from "$lib/content-model";
-import { error } from "@sveltejs/kit";
+import { error, redirect } from "@sveltejs/kit";
 import fs from "node:fs";
 import path from "node:path";
 
-export const load: PageServerLoad = async ({ params }) => {
+export const load: PageServerLoad = async ({ params, locals }) => {
+  // Require authentication to access lessons
+  if (!locals.user) {
+    throw redirect(303, '/login');
+  }
+
   const { pair, level, lessonId } = params;
 
   // Search logic: The lesson could be in any module folder (module-01, module-02, etc.)
