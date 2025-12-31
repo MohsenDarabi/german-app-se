@@ -15,6 +15,7 @@
   import FormalityChoiceStep from "./steps/FormalityChoiceStep.svelte";
   import MemoryMatchStep from "./steps/MemoryMatchStep.svelte";
   import WordHuntStep from "./steps/WordHuntStep.svelte";
+  import RapidFireStep from "./steps/RapidFireStep.svelte";
 
   export let step: LessonStep;
   export let lessonId: string = '';
@@ -51,6 +52,8 @@
     <MemoryMatchStep {step} {lessonId} on:answer />
   {:else if step.type === "word-hunt"}
     <WordHuntStep {step} {lessonId} on:answer />
+  {:else if step.type === "rapid-fire"}
+    <RapidFireStep {step} {lessonId} on:answer />
   {:else}
     <div class="unknown-step">
       <p>Unknown step type: {step.type}</p>

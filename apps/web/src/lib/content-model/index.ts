@@ -455,6 +455,40 @@ export const WordHuntStepSchema = BaseStepSchema.extend({
 });
 
 /* --------------------------------------------------
+   Step Type 15: Rapid Fire
+   Tinder-style swipe decisions for vocabulary
+-------------------------------------------------- */
+
+export const RapidFireQuestionSchema = z.object({
+  question: z.string(),           // German word or phrase
+  optionLeft: z.string(),         // Left swipe option (e.g., Persian translation A)
+  optionRight: z.string(),        // Right swipe option (e.g., Persian translation B)
+  correctSide: z.enum(["left", "right"]), // Which side is correct
+});
+
+export const RapidFireStepSchema = BaseStepSchema.extend({
+  type: z.literal("rapid-fire"),
+
+  // Title shown at start
+  title: z.string().default("چالش سریع!"),
+
+  // Instructions
+  instruction: z.string().default("به چپ یا راست بکشید!"),
+
+  // Questions pool
+  questions: z.array(RapidFireQuestionSchema).min(5),
+
+  // Time per question in seconds (0 = no limit)
+  timePerQuestion: z.number().int().min(0).max(10).default(3),
+
+  // Points per correct answer
+  basePoints: z.number().int().default(10),
+
+  // Show streak counter with fire animation
+  showStreak: z.boolean().default(true),
+});
+
+/* --------------------------------------------------
    EXTENSIBILITY: Generic Step Type
    For future unknown step types, allow custom data
 -------------------------------------------------- */
@@ -486,6 +520,7 @@ export const LessonStepSchema = z.discriminatedUnion("type", [
   FormalityChoiceStepSchema,
   MemoryMatchStepSchema,
   WordHuntStepSchema,
+  RapidFireStepSchema,
   // Add new step types here as you discover them
 ]);
 
@@ -562,6 +597,8 @@ export type MemoryMatchStep = z.infer<typeof MemoryMatchStepSchema>;
 export type MemoryMatchPair = z.infer<typeof MemoryMatchPairSchema>;
 export type WordHuntStep = z.infer<typeof WordHuntStepSchema>;
 export type WordHuntWord = z.infer<typeof WordHuntWordSchema>;
+export type RapidFireStep = z.infer<typeof RapidFireStepSchema>;
+export type RapidFireQuestion = z.infer<typeof RapidFireQuestionSchema>;
 export type GenericStep = z.infer<typeof GenericStepSchema>;
 
 export type LessonStep = z.infer<typeof LessonStepSchema>;
