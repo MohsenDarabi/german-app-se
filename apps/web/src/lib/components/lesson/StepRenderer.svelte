@@ -13,6 +13,7 @@
   import CompletionStep from "./steps/CompletionStep.svelte";
   import ListenAndChooseStep from "./steps/ListenAndChooseStep.svelte";
   import FormalityChoiceStep from "./steps/FormalityChoiceStep.svelte";
+  import MemoryMatchStep from "./steps/MemoryMatchStep.svelte";
 
   export let step: LessonStep;
   export let lessonId: string = '';
@@ -45,6 +46,8 @@
     <ListenAndChooseStep {step} {lessonId} on:answer />
   {:else if step.type === "formality-choice"}
     <FormalityChoiceStep {step} {lessonId} on:answer />
+  {:else if step.type === "memory-match"}
+    <MemoryMatchStep {step} {lessonId} on:answer />
   {:else}
     <div class="unknown-step">
       <p>Unknown step type: {step.type}</p>

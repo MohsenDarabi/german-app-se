@@ -547,6 +547,8 @@ recognition.onresult = (event) => {
 | 2025-12-31 | Updated Open Questions (4 answered, 4 remaining) |
 | 2025-12-31 | Implemented `speed-challenge` step type |
 | 2025-12-31 | Implemented `listen-and-choose` step type with auto-play |
+| 2025-12-31 | Implemented `formality-choice` step type for Sie/Du learning |
+| 2025-12-31 | Implemented `memory-match` step type (card flip game) |
 | 2025-12-30 | Initial draft created |
 
 ---
@@ -559,6 +561,8 @@ recognition.onresult = (event) => {
 |-----------|---------------|-----------|
 | `speed-challenge` | `A1-M01-L-TEST-SPEED` | `http://localhost:5173/learn/de-fa/A1/A1-M01-L-TEST-SPEED` |
 | `listen-and-choose` | `A1-M01-L-TEST-LISTEN` | `http://localhost:5173/learn/de-fa/A1/A1-M01-L-TEST-LISTEN` |
+| `formality-choice` | `A1-M01-L-TEST-FORMALITY` | `http://localhost:5173/learn/de-fa/A1/A1-M01-L-TEST-FORMALITY` |
+| `memory-match` | `A1-M01-L-TEST-MEMORY` | `http://localhost:5173/learn/de-fa/A1/A1-M01-L-TEST-MEMORY` |
 
 **Note:** Port may vary (5173, 5174, etc.) depending on available ports.
 
@@ -611,12 +615,29 @@ function initStep(stepId: string) {
 `playGerman(text, lessonId)` falls back to browser TTS if no `audioId` provided.
 For pre-generated audio, use: `playGerman(text, lessonId, audioId)`
 
+#### 4. Memory Games Don't Use Review System
+Memory-match step type does NOT dispatch wrong answers to the review system because:
+- Review format (Q: question, A: user answer vs correct answer) doesn't fit memory games
+- Memory games track "attempts" and "matched pairs" which don't map to Q&A review
+- Users must complete all pairs to continue; timeout requires retry
+
+Implementation: `MemoryMatchStep.svelte` only dispatches on `completeGame()`, never on timeout or partial progress.
+
+#### 5. Formality-Choice Review Integration
+For Sie/Du exercises, store the actual German text in review (not "formal"/"informal"):
+- `userAnswer`: The German phrase the user selected
+- `correctAnswer`: The correct German phrase
+- `question`: The scenario context (e.g., "شما در یک مصاحبه کاری هستید...")
+
 ### Files Modified (Phase 1)
 
 | File | Changes |
 |------|---------|
-| `apps/web/src/lib/content-model/index.ts` | Added SpeedChallengeStepSchema, ListenAndChooseStepSchema |
+| `apps/web/src/lib/content-model/index.ts` | Added SpeedChallengeStepSchema, ListenAndChooseStepSchema, FormalityChoiceStepSchema, MemoryMatchStepSchema |
 | `apps/web/src/lib/components/lesson/StepRenderer.svelte` | Registered new step types |
 | `apps/web/src/lib/components/lesson/steps/SpeedChallengeStep.svelte` | New component |
 | `apps/web/src/lib/components/lesson/steps/ListenAndChooseStep.svelte` | New component |
+| `apps/web/src/lib/components/lesson/steps/FormalityChoiceStep.svelte` | New component (Sie/Du choice) |
+| `apps/web/src/lib/components/lesson/steps/MemoryMatchStep.svelte` | New component (card flip game) |
 | `apps/web/src/lib/components/lesson/steps/CompletionStep.svelte` | New component |
+| `apps/web/src/routes/learn/[pair]/[level]/[lessonId]/+page.svelte` | Added formality-choice to getQuestionText() |

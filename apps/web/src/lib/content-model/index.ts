@@ -393,6 +393,36 @@ export const FormalityChoiceStepSchema = BaseStepSchema.extend({
 });
 
 /* --------------------------------------------------
+   Step Type 13: Memory Match
+   Classic memory game with German-Persian pairs
+-------------------------------------------------- */
+
+export const MemoryMatchPairSchema = z.object({
+  id: z.string(),
+  german: z.string(),
+  persian: z.string(),
+});
+
+export const MemoryMatchStepSchema = BaseStepSchema.extend({
+  type: z.literal("memory-match"),
+
+  // Instruction text
+  instruction: z.string().default("کارت‌های همسان را پیدا کنید!"),
+
+  // Pairs to match (German-Persian)
+  pairs: z.array(MemoryMatchPairSchema).min(3).max(8),
+
+  // Grid columns (auto-calculated if not provided)
+  columns: z.number().int().min(2).max(4).optional(),
+
+  // Optional time limit in seconds (0 = no limit)
+  timeLimit: z.number().int().min(0).max(300).default(0),
+
+  // Show attempts counter
+  showAttempts: z.boolean().default(true),
+});
+
+/* --------------------------------------------------
    EXTENSIBILITY: Generic Step Type
    For future unknown step types, allow custom data
 -------------------------------------------------- */
@@ -422,6 +452,7 @@ export const LessonStepSchema = z.discriminatedUnion("type", [
   ListenAndChooseStepSchema,
   SpeedChallengeStepSchema,
   FormalityChoiceStepSchema,
+  MemoryMatchStepSchema,
   // Add new step types here as you discover them
 ]);
 
@@ -494,6 +525,8 @@ export type ListenAndChooseStep = z.infer<typeof ListenAndChooseStepSchema>;
 export type SpeedChallengeStep = z.infer<typeof SpeedChallengeStepSchema>;
 export type SpeedChallengeQuestion = z.infer<typeof SpeedChallengeQuestionSchema>;
 export type FormalityChoiceStep = z.infer<typeof FormalityChoiceStepSchema>;
+export type MemoryMatchStep = z.infer<typeof MemoryMatchStepSchema>;
+export type MemoryMatchPair = z.infer<typeof MemoryMatchPairSchema>;
 export type GenericStep = z.infer<typeof GenericStepSchema>;
 
 export type LessonStep = z.infer<typeof LessonStepSchema>;

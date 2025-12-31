@@ -1,0 +1,72 @@
+{
+  "id": "A1-M01-L-TEST-MEMORY",
+  "title": {
+    "de": "Memory-Spiel",
+    "fa": "بازی حافظه"
+  },
+  "level": "A1",
+  "module": 1,
+  "lessonNumber": 96,
+  "estimatedMinutes": 5,
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "intro",
+      "title": "بازی حافظه!",
+      "content": "کارت‌ها را بچرخانید و جفت‌های آلمانی-فارسی را پیدا کنید. هر جفت یک کلمه آلمانی و ترجمه فارسی آن است."
+    },
+    {
+      "type": "memory-match",
+      "id": "memory1",
+      "instruction": "جفت‌های همسان را پیدا کنید!",
+      "pairs": [
+        { "id": "p1", "german": "Hund", "persian": "سگ" },
+        { "id": "p2", "german": "Katze", "persian": "گربه" },
+        { "id": "p3", "german": "Haus", "persian": "خانه" },
+        { "id": "p4", "german": "Baum", "persian": "درخت" }
+      ],
+      "showAttempts": true,
+      "timeLimit": 0
+    },
+    {
+      "type": "memory-match",
+      "id": "memory2",
+      "instruction": "این بار سخت‌تر! ۶ جفت!",
+      "pairs": [
+        { "id": "p1", "german": "Guten Morgen", "persian": "صبح بخیر" },
+        { "id": "p2", "german": "Guten Tag", "persian": "روز بخیر" },
+        { "id": "p3", "german": "Guten Abend", "persian": "عصر بخیر" },
+        { "id": "p4", "german": "Gute Nacht", "persian": "شب بخیر" },
+        { "id": "p5", "german": "Danke", "persian": "ممنون" },
+        { "id": "p6", "german": "Bitte", "persian": "خواهش می‌کنم" }
+      ],
+      "showAttempts": true,
+      "timeLimit": 0
+    },
+    {
+      "type": "memory-match",
+      "id": "memory3",
+      "instruction": "چالش زمان‌دار! ۶۰ ثانیه فرصت دارید!",
+      "pairs": [
+        { "id": "p1", "german": "Wasser", "persian": "آب" },
+        { "id": "p2", "german": "Brot", "persian": "نان" },
+        { "id": "p3", "german": "Milch", "persian": "شیر" },
+        { "id": "p4", "german": "Apfel", "persian": "سیب" },
+        { "id": "p5", "german": "Kaffee", "persian": "قهوه" }
+      ],
+      "showAttempts": true,
+      "timeLimit": 60
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "message": "آفرین! بازی حافظه را کامل کردید!",
+      "vocabularyLearned": [
+        { "word": { "de": "Hund", "fa": "سگ" } },
+        { "word": { "de": "Katze", "fa": "گربه" } },
+        { "word": { "de": "Guten Morgen", "fa": "صبح بخیر" } },
+        { "word": { "de": "Danke", "fa": "ممنون" } }
+      ]
+    }
+  ]
+}
