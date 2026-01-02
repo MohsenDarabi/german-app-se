@@ -27,15 +27,18 @@ Next lesson to create: `A1-M01-L02`
 
 **Total active lessons: 1**
 
-### Source Content Available
+### Source Content Available (THREE SOURCES)
 
-| Source | Level | Lessons/Chapters | Location |
-|--------|-------|------------------|----------|
-| Babbel | A1.1 | 52 lessons | `scripts/babbel-extractor/output/A11/` |
+| Source | Level | Content | Location |
+|--------|-------|---------|----------|
+| **PDF Textbooks** | A1-B2 | Menschen, Schritte, etc. | `/Volumes/.../languageAppContent/phase1-extracted/` |
+| Babbel | A1.1 | 52 lessons crawled | `scripts/babbel-extractor/output/A11/` |
 | Busuu | A1 | 5 chapters | `extracted-content/busuu/A1/` |
 | Busuu | A2 | extracted | `extracted-content/busuu/A2/` |
 | Busuu | B1 | extracted | `extracted-content/busuu/B1/` |
 | Busuu | B2 | extracted | `extracted-content/busuu/B2/` |
+
+**REMEMBER:** Create UNIQUE content - change names, rewrite dialogs, add Persian notes!
 
 ### Archived Content (reference only)
 

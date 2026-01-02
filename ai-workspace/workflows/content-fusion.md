@@ -1,51 +1,150 @@
 # Content Fusion Workflow
 
-> How to create a lesson by fusing Babbel + Busuu content
+> How to create UNIQUE lessons by fusing multiple sources
 
 ---
 
 ## Overview
 
-Each lesson combines content from multiple sources:
-1. **Babbel** - Vocabulary, exercises, dialogs
-2. **Busuu** - Additional exercises, grammar tips
-3. **Persian adaptation** - Translations, cultural notes
+Each lesson combines content from **THREE sources** to create **UNIQUE, ORIGINAL** content:
+
+1. **PDF Textbooks** - Extracted from Menschen, Schritte, etc.
+2. **Babbel** - Crawled vocabulary, exercises, dialogs
+3. **Busuu** - Extracted exercises, grammar tips
+
+**CRITICAL: We do NOT copy content directly. We CREATE UNIQUE lessons inspired by these sources.**
 
 ---
 
-## Step 1: Identify Source Content
+## Content Sources
 
-### Find Babbel lesson
+### Source 1: PDF Textbooks (Primary Reference)
+```
+/Volumes/External_ssd_mohsen/WorkspaceExtern/languageAppContent/phase1-extracted/
+```
+
+Contains extracted content from professional German textbooks:
+- Menschen A1/A2
+- Schritte Plus
+- Other CEFR-aligned materials
+
+**Use for:** Vocabulary lists, grammar structures, topic progression
+
+### Source 2: Babbel (Crawled)
+```
+scripts/babbel-extractor/output/A11/
+```
+
+Contains 52+ lessons with:
+- Vocabulary with audio URLs
+- Dialog scripts
+- Exercise patterns
+
+**Use for:** Exercise ideas, dialog structures
+
+### Source 3: Busuu (Extracted)
+```
+extracted-content/busuu/A1/  (and A2, B1, B2)
+```
+
+Contains:
+- Flashcard content
+- Fill-in-blank patterns
+- Grammar tips
+
+**Use for:** Additional vocabulary, grammar explanations
+
+---
+
+## CRITICAL: Creating UNIQUE Content
+
+### Rule 1: Change ALL Names
+
+**DO NOT** use names from source materials. Use common modern German names:
+
+| Source Name | Replace With |
+|-------------|--------------|
+| Anna (Babbel) | Lena, Sophie, Emma |
+| Tom (Babbel) | Max, Felix, Leon |
+| Maria | Hannah, Mia, Lea |
+| Peter | Paul, Lukas, Jonas |
+
+**Common German names to use:**
+- Female: Lena, Sophie, Emma, Hannah, Mia, Lea, Laura, Anna, Lisa, Sarah
+- Male: Max, Felix, Leon, Paul, Lukas, Jonas, Tim, David, Finn, Ben
+- Persian names (for learner character): Amir, Sara, Maryam, Ali, Neda, Reza
+
+### Rule 2: Rewrite Dialogs
+
+Don't copy dialogs verbatim. Keep the structure, change the content:
+
+**Source (Babbel):**
+```
+Anna: Hallo! Ich bin Anna.
+Tom: Hallo Anna! Ich heiße Tom.
+```
+
+**Our version:**
+```
+Lena: Hallo! Ich bin Lena.
+Max: Hi Lena! Ich heiße Max. Freut mich!
+Lena: Freut mich auch, Max!
+```
+
+### Rule 3: Create Original Examples
+
+Use the vocabulary, but create fresh example sentences:
+
+**Source:** "Ich komme aus Deutschland."
+**Our version:** "Ich komme aus Berlin." or "Max kommt aus München."
+
+### Rule 4: Adapt for Persian Speakers
+
+Add cultural notes and explanations specific to Persian speakers:
+- Compare German/Persian grammar differences
+- Explain cultural contexts (du vs Sie = تو vs شما but different usage)
+- Note false friends and common mistakes
+
+---
+
+## Step 1: Research Sources
+
+Before writing a lesson, check ALL three sources for the topic:
+
 ```bash
-# List Babbel A1.1 lessons
+# 1. Check PDF extracted content
+ls /Volumes/External_ssd_mohsen/WorkspaceExtern/languageAppContent/phase1-extracted/
+
+# 2. Check Babbel lessons
 ls scripts/babbel-extractor/output/A11/
+cat scripts/babbel-extractor/output/A11/unit-01/lesson-01.json | jq '.screens[].content'
 
-# Read a specific lesson
-cat scripts/babbel-extractor/output/A11/unit-01/lesson-01.json | jq
-```
-
-### Find Busuu chapter
-```bash
-# List Busuu A1 chapters
+# 3. Check Busuu chapters
 ls extracted-content/busuu/A1/
-
-# Read chapter content
-cat extracted-content/busuu/A1/chapter-01/content.json | jq
+cat extracted-content/busuu/A1/chapter-01/*.json | jq
 ```
+
+**Extract from each:**
+- Vocabulary list (words to teach)
+- Grammar points (structures to explain)
+- Dialog patterns (conversation templates)
+- Exercise types (quiz formats)
 
 ---
 
-## Step 2: Plan the Lesson
+## Step 2: Plan UNIQUE Lesson
 
-Before writing, decide:
+Create an original lesson plan:
 
 1. **Lesson ID**: `{Level}-M{Module}-L{Lesson}` (e.g., `A1-M01-L02`)
-2. **Theme**: What vocabulary/grammar topic?
-3. **Steps**: Plan 15-25 steps mixing:
+2. **Theme**: Topic from CEFR curriculum
+3. **Characters**: Use OUR names (Max, Lena, etc.)
+4. **Vocabulary**: From sources, but with original examples
+5. **Steps**: Plan 15-25 steps:
    - `new-word` (vocabulary introduction)
-   - `grammar-tip` (explanations)
+   - `grammar-tip` (explanations for Persian speakers)
    - `multiple-choice`, `fill-in-blank`, `word-order` (exercises)
-   - `dialog` (conversations)
+   - `dialog` (original conversations)
    - `true-false` (comprehension)
    - Games: `rapid-fire`, `memory-match`, `word-hunt` (every 5-7 steps)
 
@@ -63,8 +162,8 @@ content/de-fa/{Level}/module-{NN}/{LessonID}.json
 {
   "id": "A1-M01-L02",
   "title": {
-    "de": "German title",
-    "fa": "Persian title"
+    "de": "Wie geht's?",
+    "fa": "حالت چطوره؟"
   },
   "level": "A1",
   "module": 1,
@@ -73,66 +172,59 @@ content/de-fa/{Level}/module-{NN}/{LessonID}.json
   "steps": [
     // ... steps here
   ],
-  "tags": ["greetings", "introductions"]
+  "tags": ["greetings", "feelings"]
 }
 ```
 
 ---
 
-## Step 4: Write Steps
+## Step 4: Write Steps (with original content)
 
 ### new-word step
 ```json
 {
   "type": "new-word",
   "id": "s1",
-  "word": { "de": "Hallo", "fa": "سلام" },
+  "word": { "de": "Wie geht's?", "fa": "حالت چطوره؟" },
   "example": {
-    "text": { "de": "Hallo, wie geht's?", "fa": "سلام، حالت چطوره؟" }
+    "text": { "de": "Hallo Max! Wie geht's?", "fa": "سلام مکس! حالت چطوره؟" }
   },
-  "header": "Look, something new!"
+  "header": "یاد بگیر!"
 }
 ```
 
-### grammar-tip step
+### dialog step (ORIGINAL - not copied)
 ```json
 {
-  "type": "grammar-tip",
-  "id": "s5",
-  "title": "Verb Conjugation",
-  "content": "Explanation text here...",
-  "examples": [
-    { "de": "Ich bin Anna.", "fa": "من آنا هستم." }
+  "type": "dialog",
+  "id": "s10",
+  "lines": [
+    {
+      "speaker": "Lena",
+      "text": { "de": "Hallo Max! Wie geht's?", "fa": "سلام مکس! حالت چطوره؟" }
+    },
+    {
+      "speaker": "Max",
+      "text": { "de": "Gut, danke! Und dir?", "fa": "خوبم، ممنون! تو چطوری؟" }
+    },
+    {
+      "speaker": "Lena",
+      "text": { "de": "Auch gut!", "fa": "منم خوبم!" }
+    }
   ]
 }
 ```
 
-### multiple-choice step
+### grammar-tip step (Persian-specific)
 ```json
 {
-  "type": "multiple-choice",
-  "id": "s8",
-  "question": "What does 'Hallo' mean?",
-  "options": ["Hello", "Goodbye", "Thank you", "Please"],
-  "correctAnswerIndex": 0
-}
-```
-
-### Game steps (insert every 5-7 learning steps)
-```json
-{
-  "type": "rapid-fire",
-  "id": "s12",
-  "title": "Quick Quiz",
-  "instruction": "Answer quickly!",
-  "timePerQuestion": 5,
-  "questions": [
-    {
-      "prompt": "Hallo",
-      "left": "سلام",
-      "right": "خداحافظ",
-      "correctSide": "left"
-    }
+  "type": "grammar-tip",
+  "id": "s5",
+  "title": "Du vs Sie - تو و شما",
+  "content": "در آلمانی مثل فارسی دو نوع خطاب داریم:\n\n**du** = تو (غیررسمی، برای دوستان و خانواده)\n**Sie** = شما (رسمی، برای غریبه‌ها و محیط کار)\n\n⚠️ تفاوت مهم: در آلمان Sie را حتی با همکاران مسن‌تر استفاده می‌کنند!",
+  "examples": [
+    { "de": "Wie geht's dir?", "fa": "حالت چطوره؟ (غیررسمی)" },
+    { "de": "Wie geht es Ihnen?", "fa": "حالتان چطور است؟ (رسمی)" }
   ]
 }
 ```
@@ -183,7 +275,11 @@ After creating lesson:
 
 ## Checklist
 
-- [ ] Lesson JSON created and valid
+- [ ] Researched ALL THREE sources for topic
+- [ ] Used ORIGINAL names (Max, Lena, etc. - not source names)
+- [ ] Wrote ORIGINAL dialogs (not copied from sources)
+- [ ] Created ORIGINAL example sentences
+- [ ] Added Persian-specific grammar notes
 - [ ] All German text has Persian translation
 - [ ] BiDi rule followed for mixed text
 - [ ] Game steps inserted every 5-7 steps

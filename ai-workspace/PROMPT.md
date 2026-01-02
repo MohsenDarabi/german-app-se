@@ -36,11 +36,17 @@ cat ai-workspace/STATUS.md
 | `apps/web/` | SvelteKit PWA source code |
 | `scripts/` | Audio generation, extractors |
 
-### Source Content (for fusion)
+### Source Content (for fusion) - THREE SOURCES
 | Path | Content |
 |------|---------|
-| `scripts/babbel-extractor/output/` | Extracted Babbel lessons |
+| `/Volumes/.../languageAppContent/phase1-extracted/` | PDF textbooks (Menschen, Schritte) |
+| `scripts/babbel-extractor/output/` | Crawled Babbel lessons |
 | `extracted-content/busuu/` | Extracted Busuu lessons |
+
+**CRITICAL RULE: Create UNIQUE content - do NOT copy directly!**
+- Change ALL names to modern German names (Max, Lena, Felix, Sophie)
+- Rewrite dialogs with original sentences
+- Add Persian-specific grammar notes
 
 ### Archive (reference only)
 | Path | Content |
