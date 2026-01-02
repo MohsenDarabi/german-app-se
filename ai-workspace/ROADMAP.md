@@ -1,66 +1,107 @@
 # Feature Roadmap
 
-> Planned features and step types to implement
+> App features and content creation status
 
 ---
 
-## Step Types Status
+## Understanding the Two Layers
 
-### Implemented
+```
+┌─────────────────────────────────────────────────────────────┐
+│  APP CODE (already built)                                   │
+│                                                             │
+│  apps/web/src/lib/content-model/index.ts  ← Zod schemas     │
+│  apps/web/src/lib/components/lesson/steps/*.svelte ← UI     │
+│                                                             │
+│  The "engine" that RENDERS step types                       │
+└─────────────────────────────────────────────────────────────┘
+                            ↑
+                            │ reads JSON
+                            │
+┌─────────────────────────────────────────────────────────────┐
+│  CONTENT (ai-workspace creates this)                        │
+│                                                             │
+│  content/de-fa/{level}/module-{nn}/{lessonId}.json         │
+│                                                             │
+│  Lesson DATA that uses those step types                     │
+└─────────────────────────────────────────────────────────────┘
+```
 
-| Type | Description | Status |
-|------|-------------|--------|
-| `new-word` | Vocabulary introduction | Done |
-| `multiple-choice` | Quiz with options | Done |
-| `fill-in-blank` | Complete sentence | Done |
-| `word-order` | Arrange scrambled words | Done |
-| `true-false` | Statement verification | Done |
-| `translation` | Translate with blanks | Done |
-| `dialog` | Conversation display | Done |
-| `grammar-tip` | Educational content | Done |
-| `matching` | Pair matching | Done |
-| `completion` | Lesson summary | Done |
-| `speed-challenge` | Timed vocabulary sprint | Done |
-| `listen-and-choose` | Audio + MCQ | Done |
-| `formality-choice` | Sie/Du scenarios | Done |
-| `memory-match` | Card flip game | Done |
+**ai-workspace = Content creation workflows**
+**App code = Already has 20 step types ready to use**
 
-### To Implement (Phase 2)
+---
 
-| Type | Description | Effort | Priority |
-|------|-------------|--------|----------|
-| `rapid-fire` | Swipe-based quick decisions | 3 days | High |
-| `word-hunt` | Word search grid game | 3-4 days | High |
-| `vocab-check` | In-lesson self-assessment | 2 days | Medium |
-| `spelling` | Type the word letter by letter | 2 days | Medium |
-| `comprehension` | Reading passage + questions | 3 days | Medium |
+## Step Types (All 20 Implemented in App)
 
-### To Implement (Phase 3)
+The app code already supports these step types. Content creators just need to write JSON using them.
 
-| Type | Description | Effort | Notes |
-|------|-------------|--------|-------|
-| `pronunciation-challenge` | Speech recognition | 3-4 days | DEFERRED - Use Groq (free) or Azure (premium) |
-| `story-episode` | Episodic narrative content | 1 week+ | Content-heavy |
-| `chat-simulator` | WhatsApp-style conversation | 4-5 days | Conversation tree |
-| `article-attack` | Arcade-style article game (der/die/das) | 1 week | Animation needed |
-| `case-detective` | Identify Nominativ/Akkusativ/Dativ | 1 week | Complex grammar logic |
-| `verb-conjugator` | Conjugation wheel spinner | 3-4 days | - |
-| `sound-sort` | Categorize words by sound patterns | 3 days | Audio-heavy |
-| `culture-tip` | Interactive cultural comparison cards | 2 days | - |
-| `scenario-choice` | Choose appropriate response in situation | 3 days | - |
+### Core Learning Steps
 
-### Phase 4 (Future)
+| Type | Description | Component |
+|------|-------------|-----------|
+| `new-word` | Vocabulary introduction with audio | `NewWordStep.svelte` |
+| `grammar-tip` | Educational explanations | `GrammarTipStep.svelte` |
+| `dialog` | Conversation display | `DialogStep.svelte` |
+| `completion` | Lesson summary with vocab review | `CompletionStep.svelte` |
 
-| Feature | Description |
-|---------|-------------|
-| AI Chatbot Assistant | Context-aware helper on lesson pages |
-| Leaderboards | Weekly top learners |
-| Badges/Achievements | Gamification rewards |
-| Community Corrections | Native speaker feedback |
+### Exercise Steps
+
+| Type | Description | Component |
+|------|-------------|-----------|
+| `multiple-choice` | Quiz with 2-4 options | `WordQuizStep.svelte` |
+| `fill-in-blank` | Complete sentence with blanks | `FillInBlankStep.svelte` |
+| `word-order` | Arrange scrambled words | `WordOrderStep.svelte` |
+| `true-false` | Statement verification | `TrueFalseStep.svelte` |
+| `translation` | Translate with options | `TranslationStep.svelte` |
+| `matching` | Pair matching (German ↔ Persian) | `MatchingStep.svelte` |
+| `spelling` | Type word letter by letter | `SpellingStep.svelte` |
+| `comprehension` | Reading passage + questions | `ComprehensionStep.svelte` |
+| `listen-and-choose` | Audio + MCQ | `ListenAndChooseStep.svelte` |
+| `formality-choice` | Sie/Du scenarios | `FormalityChoiceStep.svelte` |
+
+### Game Steps
+
+| Type | Description | Component |
+|------|-------------|-----------|
+| `speed-challenge` | Timed vocabulary sprint (60s) | `SpeedChallengeStep.svelte` |
+| `rapid-fire` | Swipe left/right quick decisions | `RapidFireStep.svelte` |
+| `memory-match` | Card flip matching game | `MemoryMatchStep.svelte` |
+| `word-hunt` | Word search grid | `WordHuntStep.svelte` |
+| `vocab-check` | Self-assessment with difficulty rating | `VocabCheckStep.svelte` |
+
+### Special Steps
+
+| Type | Description | Component | Status |
+|------|-------------|-----------|--------|
+| `chat-simulator` | WhatsApp-style conversation | `ChatSimulatorStep.svelte` | Disabled (future AI feature) |
+
+---
+
+## Content Creation Status
+
+### What Exists
+
+| Level | Lessons | Audio | Status |
+|-------|---------|-------|--------|
+| A1 | 1 (A1-M01-L01) | Generated | Needs more lessons |
+| A2 | 0 | - | Not started |
+| B1 | 0 | - | Not started |
+| B2 | 0 | - | Not started |
+
+### Content TODO
+
+- [ ] Create A1 lessons using content fusion workflow
+- [ ] Generate audio after each lesson
+- [ ] Create multimedia tasks for colleague
+
+See `ai-workspace/workflows/content-fusion.md` for the full workflow.
 
 ---
 
 ## App Features TODO
+
+These require **new code** in the app, not just content.
 
 ### High Priority
 
@@ -68,11 +109,9 @@
   - Practice Your Mistakes feature
   - Random drill mode
   - Cards due count display
-  - Originally: LAN-13 from PROJECT_PLAN.md
 
 - [ ] **Fix Language Switcher**
   - FA/DE/EN buttons exist but not functional
-  - Originally: LAN-14
 
 ### Medium Priority
 
@@ -80,11 +119,17 @@
 - [ ] **Streak Freeze** (Premium feature)
 - [ ] **Push Notifications**
 
-### Low Priority (Phase 4+)
+### Future App Features (Phase 3+)
 
-- [ ] **Speaking Practice** with recording
-- [ ] **Drag-and-drop** sentence ordering
-- [ ] **Community Features**
+| Feature | Description | Effort |
+|---------|-------------|--------|
+| `pronunciation-challenge` | Speech recognition scoring | Needs API (Groq/Azure) |
+| `article-attack` | Arcade-style der/die/das game | Animation work |
+| `case-detective` | Identify Nominativ/Akkusativ/Dativ | Grammar logic |
+| `verb-conjugator` | Conjugation wheel spinner | UI work |
+| AI Chatbot Assistant | Context-aware helper on lessons | API integration |
+| Leaderboards | Weekly top learners | Backend work |
+| Badges/Achievements | Gamification rewards | Backend work |
 
 ---
 
@@ -118,5 +163,8 @@ From `docs/plans/DRAFT-fesselnde-content-design.md`:
 
 ## Related Documents
 
+- `ai-workspace/workflows/content-fusion.md` - Lesson creation workflow
+- `ai-workspace/references/step-types.md` - Step type JSON schemas
+- `ai-workspace/references/rules-and-tips.md` - Content rules
 - `docs/plans/DRAFT-fesselnde-content-design.md` - Full business plan
 - `docs/TODO-AUTH-BYPASS.md` - Auth bypass tracking
