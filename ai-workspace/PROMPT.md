@@ -16,14 +16,18 @@ You are helping build a **German learning PWA for Persian speakers**. Your job i
 
 ## First Steps Every Session
 
-1. **Read STATUS.md** - Understand current state
-2. **Check progress/** - See what's done and what's pending
-3. **Follow workflows/** - Step-by-step guides for each task
+1. **Read CURRENT_TASK.md** - Resume interrupted work (MOST IMPORTANT!)
+2. **Read STATUS.md** - Understand overall priorities
+3. **Check progress/** - See what's done and what's pending
+4. **Follow workflows/** - Step-by-step guides for each task
 
 ```bash
-# Quick status check
+# Quick resume check (always run this first!)
+cat ai-workspace/CURRENT_TASK.md
 cat ai-workspace/STATUS.md
 ```
+
+> **After conversation compaction**: CURRENT_TASK.md tells you exactly where you left off!
 
 ---
 
@@ -79,11 +83,14 @@ cat ai-workspace/STATUS.md
 
 ## Rules
 
-1. **Always update STATUS.md** after completing work
-2. **Track progress** in `progress/*.json` files
-3. **One lesson at a time** - complete fully before moving to next
-4. **Multimedia tasks** - create for each lesson, save to `progress/multimedia-pending.json`
-5. **Test before commit** - run `pnpm run dev` and verify lesson works
+1. **Update CURRENT_TASK.md** when starting AND finishing tasks (critical for recovery!)
+2. **Update STATUS.md** after completing significant work
+3. **Track progress** in `progress/*.json` files
+4. **One lesson at a time** - complete fully before moving to next
+5. **Multimedia tasks** - create for each lesson, save to `progress/multimedia-pending.json`
+6. **Test before commit** - run `pnpm run dev` and verify lesson works
+
+> **CRITICAL**: Always update CURRENT_TASK.md so the next session knows where to resume!
 
 ---
 
