@@ -17,6 +17,22 @@
 
 ---
 
+## Multimedia Requirements
+
+| Step Type | Needs Image? | Needs Video? |
+|-----------|--------------|--------------|
+| `new-word` | Optional (concrete nouns) | No |
+| `dialog` | ✅ Yes (scene) | Optional |
+| `comprehension` | ✅ Yes | Optional |
+| `grammar-tip` | Optional (diagrams) | No |
+| All others | No | No |
+
+**After creating a lesson**: Generate multimedia task file → `ai-workspace/progress/multimedia-tasks/{LessonID}.json`
+
+See `workflows/multimedia-tasks.md` for task file format.
+
+---
+
 ## 1. new-word
 
 Introduces a new vocabulary word or phrase.
@@ -38,7 +54,9 @@ Introduces a new vocabulary word or phrase.
 | `word` | Yes | Bilingual word/phrase |
 | `example` | No | Example sentence |
 | `header` | No | Header text (default: "Look, something new!") |
-| `imageId` | No | Asset registry ID for image |
+| `imageId` | No | Path to image (e.g., `greetings/hello-wave.jpg`) |
+
+**Image Usage**: For concrete nouns (objects, places, people), add an image task in `multimedia-tasks/{LessonID}.json`. After colleague creates it, add `imageId` to the step.
 
 ---
 
@@ -258,7 +276,9 @@ Conversation between speakers.
 |-------|----------|-------------|
 | `title` | No | Dialog title |
 | `lines` | Yes | Array of speaker/text objects |
-| `imageId` | No | Scene image |
+| `imageId` | No | Path to scene image (e.g., `scenes/cafe-meeting.jpg`) |
+
+**Image Required**: Every dialog should have a scene image. Add task in `multimedia-tasks/{LessonID}.json`.
 
 ---
 

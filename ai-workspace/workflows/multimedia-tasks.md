@@ -8,23 +8,31 @@
 
 After creating a lesson, generate a task file listing all images and videos needed. Your colleague will create these assets.
 
+**Reference**: See `references/rules-and-tips.md` for content quality rules.
+
 ---
 
 ## When to Create Tasks
 
 Create multimedia tasks for these step types:
-- `dialog` - Scene images and conversation videos
-- `grammar-tip` - Educational diagrams
-- `new-word` - Vocabulary illustrations (optional, for concrete nouns)
-- `comprehension` - Context images/videos
 
-**Skip these** (text-only):
+| Step Type | Needs Image? | Needs Video? | Notes |
+|-----------|--------------|--------------|-------|
+| `dialog` | ✅ Yes | Optional | Scene for conversation |
+| `new-word` | ✅ Optional | No | For concrete nouns only |
+| `grammar-tip` | Optional | No | Only for complex diagrams |
+| `comprehension` | ✅ Yes | Optional | Context for passage |
+
+**Skip these** (text-only, no multimedia needed):
 - `multiple-choice`
 - `fill-in-blank`
 - `word-order`
 - `true-false`
 - `translation`
-- Game steps (`rapid-fire`, `memory-match`, etc.)
+- `spelling`
+- `matching`
+- Game steps (`rapid-fire`, `memory-match`, `vocab-check`, etc.)
+- `completion`
 
 ---
 
@@ -110,22 +118,43 @@ Duration: 15-20 seconds."
 
 ### Images
 ```
-apps/web/static/images/shared/{category}/{descriptive-name}.jpg
+images/shared/{category}/{descriptive-name}.jpg
 ```
 
-Categories:
-- `greetings/` - Hello, goodbye scenes
-- `classroom/` - Learning environments
-- `office/` - Professional settings
-- `transport/` - Vehicles, stations
-- `food/` - Restaurants, meals
-- `home/` - Domestic scenes
-- `diagrams/` - Grammar charts, conjugation tables
+**Full path**: `apps/web/static/images/shared/{category}/{filename}`
+
+**Image Categories** (standardized):
+| Category | Use For |
+|----------|---------|
+| `greetings/` | Hello, goodbye, waving |
+| `introductions/` | Handshakes, first meetings |
+| `expressions/` | Thank you, please, emotions |
+| `scenes/` | Cafe, office, street, public places |
+| `people/` | Individual portraits |
+| `family/` | Family members, relationships |
+| `food/` | Food, drinks, restaurants |
+| `places/` | Buildings, locations |
+| `transport/` | Cars, trains, buses, stations |
+| `professions/` | Jobs, workplaces |
+| `daily-life/` | Everyday activities |
+| `weather/` | Weather conditions |
+| `hobbies/` | Sports, leisure activities |
+| `furniture/` | Home items, rooms |
 
 ### Videos
 ```
-apps/web/static/videos/shared/{category}/{descriptive-name}.mp4
+videos/shared/{category}/{descriptive-name}.mp4
 ```
+
+**Full path**: `apps/web/static/videos/shared/{category}/{filename}`
+
+**Video Categories**:
+| Category | Use For |
+|----------|---------|
+| `pronunciation/` | Word pronunciation demos |
+| `conversations/` | Dialog videos |
+| `culture/` | Cultural context clips |
+| `grammar/` | Grammar explanation visuals |
 
 ---
 

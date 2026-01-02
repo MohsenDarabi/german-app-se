@@ -321,11 +321,29 @@ pnpm run dev
 
 ## Step 9: Create Multimedia Tasks
 
-Create task file for images/videos needed:
+**REQUIRED after each lesson!** Create task file for images/videos needed.
 
+### 9.1 Identify steps needing assets
+- Every `dialog` step → needs scene image
+- `new-word` for concrete nouns → needs illustration
+- `comprehension` → needs context image
+
+### 9.2 Create task file
 ```bash
-# Create task file (see workflows/multimedia-tasks.md for format)
-# Save to: ai-workspace/progress/multimedia-tasks/A1-M01-L02.json
+# Save to: ai-workspace/progress/multimedia-tasks/{LessonID}.json
+# Format: See workflows/multimedia-tasks.md
+```
+
+### 9.3 Update progress tracking
+```bash
+# Update: ai-workspace/progress/multimedia-pending.json
+# Add entry for this lesson's tasks
+```
+
+### 9.4 Update START-HERE.md
+```bash
+# Add checkbox items to: ai-workspace/progress/multimedia-tasks/START-HERE.md
+# Colleague uses this for easy tracking
 ```
 
 ---
@@ -390,10 +408,14 @@ git commit -m "feat: add lesson A1-M01-L02 with audio"
 - [ ] Audio files exist in `apps/web/static/audio/{lessonId}/`
 - [ ] Audio plays correctly in browser
 
+### Multimedia Tasks (DO NOT SKIP!)
+- [ ] Task JSON created: `progress/multimedia-tasks/{LessonID}.json`
+- [ ] `progress/multimedia-pending.json` updated
+- [ ] `progress/multimedia-tasks/START-HERE.md` updated with checkboxes
+
 ### Progress
 - [ ] CURRENT_TASK.md updated
 - [ ] STATUS.md updated
 - [ ] progress/lessons-created.json updated
 - [ ] progress/audio-generated.json updated
-- [ ] Multimedia tasks created
 - [ ] Changes committed
