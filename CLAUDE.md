@@ -87,10 +87,13 @@ CONTENT LAB (Creation):
 
 | Level | Lessons | Content | Audio | Multimedia |
 |-------|---------|---------|-------|------------|
-| **A1** | 18 | ✅ Complete (merged) | ✅ 18 lessons | 🔄 205 tasks created |
-| **A2** | 12 | ✅ Complete (merged with Busuu) | ✅ 12 lessons | 🔄 97 tasks created |
-| **B1** | - | ⚠️ Busuu extracted, needs lessons | ❌ Not generated | ❌ Not created |
-| **B2** | - | ❌ Not extracted | ❌ Not generated | ❌ Not created |
+| **A1** | 1 | 🔄 New pipeline started | ✅ 1 lesson | 🔄 1 task file |
+| **A2** | 0 | ⏳ Pending | ❌ Not generated | ❌ Not created |
+| **B1** | 0 | ⏳ Busuu extracted, needs fusion | ❌ Not generated | ❌ Not created |
+| **B2** | 0 | ⏳ Busuu extracted, needs fusion | ❌ Not generated | ❌ Not created |
+
+> **Note:** Legacy 35 lessons archived to `/Volumes/External_ssd_mohsen/WorkspaceExtern/content-archive/legacy-v1/`
+> See `docs/CONTENT_ARCHIVE.md` for details.
 
 ---
 
@@ -98,64 +101,70 @@ CONTENT LAB (Creation):
 
 | Document | Purpose | When to Read |
 |----------|---------|--------------|
-| `docs/tasks/content-comparison-task.md` | Content merging workflow & prompts | Before merging content |
-| `AI_CONTENT_CREATION_PROMPTS.md` | Phase 1-3 content creation prompts | When creating new content |
-| `content/de-fa/A1/A1_CURRICULUM.md` | A1 lesson status tracker | When working on A1 |
-| `docs/multimedia-tasks/START-HERE.md` | Multimedia task list | When creating images/videos |
-| `scripts/media-data/asset-registry.json` | All 205 multimedia assets | When managing media |
+| **`docs/LESSON_CREATION_PIPELINE.md`** | **Step-by-step lesson creation (MANDATORY)** | **Before creating ANY lesson** |
+| `docs/CONTENT_ARCHIVE.md` | Legacy content archive reference | When needing old lessons |
+| `scripts/content-fusion-agent.md` | Content fusion prompt template | When merging Babbel + Busuu |
+| `scripts/multimedia-task-agent.md` | Multimedia task generation prompt | When creating task files |
+| `docs/TODO-AUTH-BYPASS.md` | Dev mode auth bypass (temporary) | When debugging auth |
+
+---
+
+## Lesson Creation Pipeline (AI Agent MUST Follow)
+
+```
+1. Create lesson JSON (merge Babbel + Busuu)
+2. Run validation: node scripts/validate-lesson.js <file>  ← MANDATORY
+3. Fix any validation errors
+4. Generate multimedia tasks
+5. Generate audio
+6. Update modules.ts
+7. Test in browser
+8. Commit
+```
+
+**See `docs/LESSON_CREATION_PIPELINE.md` for full details and 21 validation rules.**
 
 ---
 
 ## AI Agent Roles
 
-### Role 1: Content Creator
-**Workspace**: `/Volumes/External_ssd_mohsen/WorkspaceExtern/languageAppContent`
-
-Responsibilities:
-- Extract content from PDF textbooks (Menschen, Schritte, etc.)
-- Follow `AI_CONTENT_CREATION_PROMPTS.md` Phase 1-3
-- Output to `phase3-lessons/{level}/`
-- Create structured lesson proposals
-
-### Role 2: Content Integrator (THIS AGENT)
+### Role 1: Content Integrator (THIS AGENT)
 **Workspace**: This app (`german-learning-app-main`)
 
 Responsibilities:
-- Run Busuu extractor (`scripts/busuu-extractor/`)
-- Compare content using `docs/tasks/content-comparison-task.md`
-- Merge into final unique lessons in `content/de-fa/`
+- Merge Babbel + Busuu content using fusion agent prompt
+- **Run validation script on EVERY lesson created**
+- Generate multimedia task files
 - Generate TTS audio
-- Create multimedia task files
-- Update curriculum status
+- Update modules.ts
+- Test and commit
 
-### Role 3: Multimedia Creator (Human Colleague)
-**Reference**: `docs/multimedia-tasks/START-HERE.md`
+### Role 2: Multimedia Creator (Human Colleague)
+**Reference**: `docs/multimedia-tasks/{Level}/{LessonId}-tasks.json`
 
 Responsibilities:
 - Create images/videos following task specs
 - Save to `apps/web/static/images/shared/{category}/`
-- Update task status in START-HERE.md
+- Mark tasks complete in task files
 
 ---
 
 ## Critical Commands
 
 ```bash
+# Validate a lesson (MANDATORY before audio/commit)
+node scripts/validate-lesson.js content/de-fa/A1/module-01/A1-M01-L01.json
+
+# Validate all lessons
+node scripts/validate-lesson.js --all
+
 # Generate TTS audio for a level
 GOOGLE_APPLICATION_CREDENTIALS="./scripts/keys/gcp-tts-service-account.json" \
-  node scripts/generate-audio.js --level=A2
+  node scripts/generate-audio.js --level=A1
 
-# Check multimedia task progress
-node scripts/check-asset-usage.js
-
-# Regenerate asset registry from task files
-node scripts/generate-asset-registry.js
-
-# Regenerate START-HERE.md from registry
-node scripts/generate-start-here.js
-
-# Extract Busuu content (if needed)
-cd scripts/busuu-extractor && node extractor.js --level=b2
+# Dry-run audio (see what would be generated)
+GOOGLE_APPLICATION_CREDENTIALS="./scripts/keys/gcp-tts-service-account.json" \
+  node scripts/generate-audio.js --level=A1 --dry-run
 ```
 
 ---
