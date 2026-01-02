@@ -4,6 +4,32 @@
 
 ---
 
+## AI Workspace (NEW)
+
+**For detailed workflows, progress tracking, and current status, use:**
+
+```
+ai-workspace/
+├── PROMPT.md           # Entry point - read first each session
+├── STATUS.md           # Current state of everything
+├── workflows/          # Step-by-step guides
+│   ├── content-fusion.md
+│   ├── multimedia-tasks.md
+│   └── audio-generation.md
+├── progress/           # Track what's done
+│   ├── lessons-created.json
+│   ├── multimedia-pending.json
+│   └── audio-generated.json
+└── archive-refs/       # References to archived content
+```
+
+**Start fresh sessions with:**
+```bash
+claude --prompt-file ai-workspace/PROMPT.md
+```
+
+---
+
 ## Project Overview
 
 **Deutschlern** - A German learning PWA for **Persian speakers** (Farsi).
@@ -72,11 +98,11 @@ CONTENT LAB (Creation):
               ▼                           ▼
 ┌──────────────────────┐    ┌──────────────────────┐
 │   AUDIO GENERATION   │    │   MULTIMEDIA TASKS   │
-│ scripts/generate-    │    │ docs/multimedia-     │
-│ audio.js             │    │ tasks/START-HERE.md  │
-│                      │    │                      │
-│ • Chirp3-HD TTS      │    │ • Images by concept  │
-│ • Deduplication      │    │ • Asset registry     │
+│ scripts/generate-    │    │ ai-workspace/        │
+│ audio.js             │    │ progress/multimedia- │
+│                      │    │ pending.json         │
+│ • Chirp3-HD TTS      │    │                      │
+│ • Deduplication      │    │ • Per-lesson tasks   │
 │ • Auto-manifest      │    │ • Colleague creates  │
 └──────────────────────┘    └──────────────────────┘
 ```
@@ -85,15 +111,18 @@ CONTENT LAB (Creation):
 
 ## Current Status
 
-| Level | Lessons | Content | Audio | Multimedia |
-|-------|---------|---------|-------|------------|
-| **A1** | 1 | 🔄 New pipeline started | ✅ 1 lesson | 🔄 1 task file |
-| **A2** | 0 | ⏳ Pending | ❌ Not generated | ❌ Not created |
-| **B1** | 0 | ⏳ Busuu extracted, needs fusion | ❌ Not generated | ❌ Not created |
-| **B2** | 0 | ⏳ Busuu extracted, needs fusion | ❌ Not generated | ❌ Not created |
+> **See `ai-workspace/STATUS.md` for detailed, up-to-date status.**
 
-> **Note:** Legacy 35 lessons archived to `/Volumes/External_ssd_mohsen/WorkspaceExtern/content-archive/legacy-v1/`
-> See `docs/CONTENT_ARCHIVE.md` for details.
+| Level | Lessons | Status |
+|-------|---------|--------|
+| **A1** | 1 | Fusion pipeline started |
+| **A2** | 0 | Pending |
+| **B1** | 0 | Pending |
+| **B2** | 0 | Pending |
+
+**Archived content:**
+- Legacy lessons (78): `/Volumes/.../content-archive/legacy-v1/`
+- Legacy multimedia tasks (302): `/Volumes/.../content-archive/legacy-multimedia-tasks/`
 
 ---
 
