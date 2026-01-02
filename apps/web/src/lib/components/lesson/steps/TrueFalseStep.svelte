@@ -46,7 +46,7 @@
 
   <div class="statement-card">
     <div class="statement-row">
-      <p class="statement"><BiDiText text={step.statement} /></p>
+      <p class="statement" dir="rtl"><BiDiText text={step.statement} /></p>
       <AudioButton
         text={step.statement}
         {lessonId}
