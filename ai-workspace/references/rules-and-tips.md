@@ -151,7 +151,38 @@ Across a lesson, distribute correct answers across positions 0, 1, 2, 3.
 
 ---
 
-### Rule 8: Fill-in-Blank Verb Consistency
+### Rule 8: No Meta-Answers
+
+**NEVER use "both options", "all of the above", or "none of the above".**
+
+These make the question unfair - if a learner picks the ACTUAL correct answer, they get marked wrong!
+
+```json
+// BAD - "هر دو گزینه اول" is a trap
+{
+  "question": "معنی «Ich heiße Lena» چیست؟",
+  "options": ["من لنا هستم", "اسم من لناست", "سلام لنا", "هر دو گزینه اول"],
+  "correctAnswerIndex": 3  // ❌ Actual correct answers (0,1) marked wrong!
+}
+
+// GOOD - clear distractors, one correct answer
+{
+  "question": "معنی «Ich heiße Lena» چیست؟",
+  "options": ["سلام لنا", "اسم من لناست", "خداحافظ لنا", "ممنون لنا"],
+  "correctAnswerIndex": 1  // ✓ Only one correct
+}
+```
+
+**Forbidden patterns:**
+- `هر دو گزینه` (both options)
+- `همه گزینه‌ها` (all options)
+- `هیچکدام` (none of the above)
+- `all of the above`
+- `none of the above`
+
+---
+
+### Rule 9: Fill-in-Blank Verb Consistency
 
 **DO NOT mix conjugations from different verbs** in the same exercise.
 
@@ -177,7 +208,7 @@ Across a lesson, distribute correct answers across positions 0, 1, 2, 3.
 
 ---
 
-### Rule 9: Game Step Minimums
+### Rule 10: Game Step Minimums
 
 | Game Type | Minimum Items |
 |-----------|---------------|
@@ -188,7 +219,7 @@ Across a lesson, distribute correct answers across positions 0, 1, 2, 3.
 
 ---
 
-### Rule 10: Rapid-Fire Balance
+### Rule 11: Rapid-Fire Balance
 
 Balance `correctSide` roughly 50% "left" / 50% "right".
 
