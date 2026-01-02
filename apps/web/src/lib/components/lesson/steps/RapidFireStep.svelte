@@ -288,13 +288,13 @@
       <div class="swipe-area">
         <!-- Left option -->
         <div class="option left" class:highlighted={swipeDirection === 'left'}>
-          <span class="option-text" dir="rtl">{currentQuestion.optionLeft}</span>
+          <span class="option-text" dir="auto">{currentQuestion.left}</span>
           <button class="option-btn" on:click={() => handleButtonClick('left')}>
             👈
           </button>
         </div>
 
-        <!-- Card -->
+        <!-- Card - shows the question (German word if correctSide is 'right', otherwise Persian) -->
         <div
           class="card"
           class:correct={showResult === 'correct'}
@@ -309,13 +309,13 @@
           role="button"
           tabindex="0"
         >
-          <span class="card-text">{currentQuestion.question}</span>
+          <span class="card-text">{currentQuestion.correctSide === 'right' ? currentQuestion.left : currentQuestion.right}</span>
           <span class="card-flag">🇩🇪</span>
         </div>
 
         <!-- Right option -->
         <div class="option right" class:highlighted={swipeDirection === 'right'}>
-          <span class="option-text" dir="rtl">{currentQuestion.optionRight}</span>
+          <span class="option-text" dir="auto">{currentQuestion.right}</span>
           <button class="option-btn" on:click={() => handleButtonClick('right')}>
             👉
           </button>
