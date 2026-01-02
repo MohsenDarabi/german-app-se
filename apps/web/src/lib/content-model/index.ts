@@ -44,6 +44,10 @@ export const BaseStepSchema = z.object({
   video: MediaSchema.optional(),
   audio: MediaSchema.optional(),
 
+  // Image support - use imageId for asset registry lookup, or image for direct path
+  imageId: z.string().optional(), // Asset registry ID (e.g., "ubahn-berlin")
+  image: z.string().optional(),   // Direct URL path (legacy, for backward compatibility)
+
   // Optional feedback/explanation for any step
   feedback: FeedbackSchema.optional(),
 });
@@ -62,19 +66,7 @@ export const NewWordStepSchema = BaseStepSchema.extend({
   // Optional example usage
   example: ExampleSchema.optional(),
 
-  // Optional image for visual learning
-  image: z.string().optional(), // URL
-
-  // Phonetic pronunciation guide (e.g., "ha-LO" for "Hallo")
-  phonetic: z.string().optional(),
-
-  // Word type/part of speech (e.g., "noun", "verb", "adjective", "phrase")
-  wordType: z.string().optional(),
-
-  // Additional note in Persian for learners
-  note: z.object({
-    fa: z.string(),
-  }).optional(),
+  // Note: image and imageId are now in BaseStepSchema for all step types
 
   // Header text (default: "Look, something new!")
   header: z.string().default("Look, something new!"),
@@ -144,43 +136,7 @@ export const WordOrderStepSchema = BaseStepSchema.extend({
 });
 
 /* --------------------------------------------------
-   Step Type 5: Matching Exercise
-   Match items from two columns (tap-to-match)
--------------------------------------------------- */
-
-export const MatchingStepSchema = BaseStepSchema.extend({
-  type: z.literal("matching"),
-
-  // Instruction text
-  instruction: z.string().default("Match the items."),
-
-  // Left column items (e.g., German words)
-  items: z.array(
-    z.object({
-      id: z.string(),
-      text: z.string(),
-    })
-  ).min(2).max(6),
-
-  // Right column items (e.g., Persian translations)
-  matches: z.array(
-    z.object({
-      id: z.string(),
-      text: z.string(),
-    })
-  ).min(2).max(6),
-
-  // Correct pairs: array of [itemId, matchId] tuples
-  correctPairs: z.array(
-    z.tuple([z.string(), z.string()])
-  ),
-
-  // Whether to shuffle the right column (default: true)
-  shuffleTargets: z.boolean().default(true),
-});
-
-/* --------------------------------------------------
-   Step Type 6: True or False
+   Step Type 5: True or False
    Verify if a statement is correct
 -------------------------------------------------- */
 
@@ -231,12 +187,6 @@ export const TranslationStepSchema = BaseStepSchema.extend({
 
 export const DialogStepSchema = BaseStepSchema.extend({
   type: z.literal("dialog"),
-
-  // Dialog title (e.g., "Im Deutschkurs", "Am Telefon")
-  title: z.string().optional(),
-
-  // Instruction text (e.g., "Read and practice:")
-  instruction: z.string().optional(),
 
   // Conversation lines with speaker names
   lines: z.array(
@@ -294,34 +244,7 @@ export const CompletionStepSchema = BaseStepSchema.extend({
 });
 
 /* --------------------------------------------------
-   Step Type 10: Listen and Choose
-   Hear audio, select what was said
--------------------------------------------------- */
-
-export const ListenAndChooseStepSchema = BaseStepSchema.extend({
-  type: z.literal("listen-and-choose"),
-
-  // Instruction text
-  instruction: z.string().default("چه شنیدید؟"),
-
-  // The German text to be spoken (audio will be generated/played)
-  germanText: z.string(),
-
-  // Optional Persian translation to show after answering
-  translation: z.string().optional(),
-
-  // Answer choices (German text options)
-  options: z.array(z.string()).min(2).max(4),
-
-  // Correct answer index (0-based)
-  correctAnswerIndex: z.number().int().min(0),
-
-  // Auto-play audio on step load
-  autoPlay: z.boolean().default(false),
-});
-
-/* --------------------------------------------------
-   Step Type 11: Speed Challenge
+   Step Type 10: Speed Challenge
    Timed vocabulary sprint - answer as many as possible
 -------------------------------------------------- */
 
@@ -354,295 +277,146 @@ export const SpeedChallengeStepSchema = BaseStepSchema.extend({
 });
 
 /* --------------------------------------------------
-   Step Type 12: Formality Choice
-   Choose Sie (formal) or Du (informal) for situations
-   Critical for Persian speakers (similar to شما/تو)
--------------------------------------------------- */
-
-export const FormalityChoiceStepSchema = BaseStepSchema.extend({
-  type: z.literal("formality-choice"),
-
-  // Instruction text
-  instruction: z.string().default("رسمی یا غیررسمی؟"),
-
-  // Scenario description (in Persian)
-  scenario: z.string(),
-
-  // Optional scenario image
-  scenarioImage: z.string().optional(),
-
-  // The two options (formal and informal German phrases)
-  formalOption: z.object({
-    text: z.string(),        // "Wie geht es Ihnen?"
-    label: z.string().default("رسمی (Sie)"),
-  }),
-
-  informalOption: z.object({
-    text: z.string(),        // "Wie geht's?"
-    label: z.string().default("غیررسمی (Du)"),
-  }),
-
-  // Which is correct: "formal" or "informal"
-  correctAnswer: z.enum(["formal", "informal"]),
-
-  // Cultural explanation (shown after answering)
-  explanation: z.string(),
-
-  // Optional comparison to Persian culture
-  persianNote: z.string().optional(),
-});
-
-/* --------------------------------------------------
-   Step Type 13: Memory Match
-   Classic memory game with German-Persian pairs
--------------------------------------------------- */
-
-export const MemoryMatchPairSchema = z.object({
-  id: z.string(),
-  german: z.string(),
-  persian: z.string(),
-});
-
-export const MemoryMatchStepSchema = BaseStepSchema.extend({
-  type: z.literal("memory-match"),
-
-  // Instruction text
-  instruction: z.string().default("کارت‌های همسان را پیدا کنید!"),
-
-  // Pairs to match (German-Persian)
-  pairs: z.array(MemoryMatchPairSchema).min(3).max(8),
-
-  // Grid columns (auto-calculated if not provided)
-  columns: z.number().int().min(2).max(4).optional(),
-
-  // Optional time limit in seconds (0 = no limit)
-  timeLimit: z.number().int().min(0).max(300).default(0),
-
-  // Show attempts counter
-  showAttempts: z.boolean().default(true),
-});
-
-/* --------------------------------------------------
-   Step Type 14: Word Hunt
-   Word search puzzle - find German words in a letter grid
--------------------------------------------------- */
-
-export const WordHuntWordSchema = z.object({
-  word: z.string(),           // The German word to find
-  translation: z.string(),    // Persian translation (shown in word list)
-});
-
-export const WordHuntStepSchema = BaseStepSchema.extend({
-  type: z.literal("word-hunt"),
-
-  // Instruction text
-  instruction: z.string().default("کلمات آلمانی را در جدول پیدا کنید!"),
-
-  // Words to find in the grid
-  words: z.array(WordHuntWordSchema).min(3).max(8),
-
-  // Grid size (6x6, 8x8, etc.) - will be auto-generated
-  gridSize: z.number().int().min(5).max(10).default(6),
-
-  // Allowed directions for word placement
-  directions: z.array(z.enum(["horizontal", "vertical", "diagonal"])).default(["horizontal", "vertical"]),
-
-  // Optional time limit in seconds (0 = no limit)
-  timeLimit: z.number().int().min(0).max(300).default(0),
-
-  // Show hints (highlight first letter)
-  showHints: z.boolean().default(false),
-});
-
-/* --------------------------------------------------
-   Step Type 15: Rapid Fire
-   Tinder-style swipe decisions for vocabulary
--------------------------------------------------- */
-
-export const RapidFireQuestionSchema = z.object({
-  question: z.string(),           // German word or phrase
-  optionLeft: z.string(),         // Left swipe option (e.g., Persian translation A)
-  optionRight: z.string(),        // Right swipe option (e.g., Persian translation B)
-  correctSide: z.enum(["left", "right"]), // Which side is correct
-});
-
-export const RapidFireStepSchema = BaseStepSchema.extend({
-  type: z.literal("rapid-fire"),
-
-  // Title shown at start
-  title: z.string().default("چالش سریع!"),
-
-  // Instructions
-  instruction: z.string().default("به چپ یا راست بکشید!"),
-
-  // Questions pool
-  questions: z.array(RapidFireQuestionSchema).min(5),
-
-  // Time per question in seconds (0 = no limit)
-  timePerQuestion: z.number().int().min(0).max(10).default(3),
-
-  // Points per correct answer
-  basePoints: z.number().int().default(10),
-
-  // Show streak counter with fire animation
-  showStreak: z.boolean().default(true),
-});
-
-/* --------------------------------------------------
-   Step Type 16: Chat Simulator
-   WhatsApp-style conversation practice
--------------------------------------------------- */
-
-export const ChatMessageSchema = z.object({
-  id: z.string(),
-  sender: z.enum(["friend", "user"]),  // Who sends this message
-  text: z.string(),                     // Message text (German)
-  translation: z.string().optional(),   // Persian translation (shown on tap)
-  timestamp: z.string().optional(),     // e.g., "14:32"
-});
-
-export const ChatResponseOptionSchema = z.object({
-  id: z.string(),
-  text: z.string(),                     // German response text
-  translation: z.string().optional(),   // Persian hint
-  isCorrect: z.boolean().default(true), // All can be correct for branching
-  nextMessageId: z.string().optional(), // Which message follows this choice
-});
-
-export const ChatNodeSchema = z.object({
-  messageId: z.string(),                // ID of friend's message
-  message: ChatMessageSchema,           // The friend's message
-  responseOptions: z.array(ChatResponseOptionSchema).min(2).max(4),
-  correctResponseId: z.string().optional(), // If there's one "best" answer
-});
-
-export const ChatSimulatorStepSchema = BaseStepSchema.extend({
-  type: z.literal("chat-simulator"),
-
-  // Friend's name and avatar
-  friendName: z.string().default("Anna"),
-  friendAvatar: z.string().optional(),  // Emoji or image URL
-
-  // Scenario description (Persian)
-  scenario: z.string(),
-
-  // Conversation nodes (tree structure)
-  nodes: z.array(ChatNodeSchema).min(1),
-
-  // Starting node ID
-  startNodeId: z.string(),
-
-  // Show translations automatically or on tap
-  showTranslations: z.boolean().default(false),
-});
-
-/* --------------------------------------------------
-   Step Type 17: Spelling
-   Letter-by-letter spelling exercise
+   Step Type 11: Spelling Exercise
+   Spell a word by clicking/typing letters in order
 -------------------------------------------------- */
 
 export const SpellingStepSchema = BaseStepSchema.extend({
   type: z.literal("spelling"),
 
-  // Instruction text
-  instruction: z.string().default("این کلمه را هجی کنید"),
-
   // The word to spell
   word: z.string(),
 
-  // Persian translation (shown as hint)
+  // Persian translation
   translation: z.string(),
 
-  // Optional phonetic hint (e.g., "hah-LO" for "Hallo")
-  phonetic: z.string().optional(),
+  // Optional phonetic hint
+  hint: z.string().optional(),
 
-  // Available letters (shuffled, may include extra distractors)
-  letters: z.array(z.string()).optional(), // Auto-generated if not provided
-
-  // Include distractor letters (makes it harder)
-  includeDistractors: z.boolean().default(false),
-
-  // Number of distractor letters to add
-  distractorCount: z.number().int().min(0).max(5).default(2),
-
-  // Show image hint
-  showImage: z.boolean().default(false),
-  image: z.string().optional(),
+  // Instruction text
+  instruction: z.string().default("Spell the word."),
 });
 
 /* --------------------------------------------------
-   Step Type 18: Comprehension
-   Reading/listening comprehension with questions
+   Step Type 12: Comprehension Exercise
+   Read/listen to a passage and answer questions
 -------------------------------------------------- */
 
 export const ComprehensionQuestionSchema = z.object({
-  id: z.string(),
-  question: z.string(),                    // Question text (German or Persian)
-  questionTranslation: z.string().optional(), // Translation of question
+  question: z.string(), // Question text
   options: z.array(z.string()).min(2).max(4),
-  correctAnswerIndex: z.number().int().min(0),
-  explanation: z.string().optional(),      // Why this answer is correct
+  correctIndex: z.number().int().min(0),
 });
 
 export const ComprehensionStepSchema = BaseStepSchema.extend({
   type: z.literal("comprehension"),
 
-  // Instruction text
-  instruction: z.string().default("متن را بخوانید و به سوالات پاسخ دهید"),
+  // Title for the exercise
+  title: z.string().optional(),
 
-  // The passage to read/listen
-  passage: z.object({
-    de: z.string(),                        // German text
-    fa: z.string(),                        // Persian translation
-  }),
+  // The passage to read/comprehend
+  passage: BilingualTextSchema,
 
-  // Optional media (audio/video of the passage)
+  // Optional media (audio or video of the passage)
   media: z.object({
     type: z.enum(["audio", "video"]),
     url: z.string(),
-    autoPlay: z.boolean().default(false),
   }).optional(),
 
   // Questions about the passage
-  questions: z.array(ComprehensionQuestionSchema).min(1).max(5),
+  questions: z.array(ComprehensionQuestionSchema).min(1),
 
-  // Show translation toggle
-  showTranslationToggle: z.boolean().default(true),
-
-  // Allow replaying media during questions
-  allowReplay: z.boolean().default(true),
+  // Instruction text
+  instruction: z.string().default("Read/listen and answer the questions."),
 });
 
 /* --------------------------------------------------
-   Step Type 19: Vocab Check
-   In-lesson vocabulary self-assessment with difficulty rating
+   Step Type 13: Rapid Fire Game
+   Quick-fire translation matching game
+-------------------------------------------------- */
+
+export const RapidFireQuestionSchema = z.object({
+  left: z.string(),
+  right: z.string(),
+  correctSide: z.enum(["left", "right"]),
+});
+
+export const RapidFireStepSchema = BaseStepSchema.extend({
+  type: z.literal("rapid-fire"),
+  title: z.string().default("Quick Quiz"),
+  instruction: z.string().default("Answer quickly!"),
+  timePerQuestion: z.number().int().min(1).max(30).default(5),
+  questions: z.array(RapidFireQuestionSchema).min(2),
+});
+
+/* --------------------------------------------------
+   Step Type 14: Memory Match Game
+   Match pairs of German-Persian words
+-------------------------------------------------- */
+
+export const MemoryMatchPairSchema = z.object({
+  de: z.string(),
+  fa: z.string(),
+});
+
+export const MemoryMatchStepSchema = BaseStepSchema.extend({
+  type: z.literal("memory-match"),
+  title: z.string().default("Memory Game"),
+  pairs: z.array(MemoryMatchPairSchema).min(2).max(8),
+  timeLimit: z.number().int().min(30).max(300).default(60),
+});
+
+/* --------------------------------------------------
+   Step Type 15: Vocab Check (Self-Assessment)
+   User rates their knowledge of words
 -------------------------------------------------- */
 
 export const VocabCheckWordSchema = z.object({
-  id: z.string(),
-  german: z.string(),
-  persian: z.string(),
-  example: z.string().optional(),       // Example sentence
-  audio: z.string().optional(),         // Audio ID for pronunciation
+  de: z.string(),
+  fa: z.string(),
 });
 
 export const VocabCheckStepSchema = BaseStepSchema.extend({
   type: z.literal("vocab-check"),
+  title: z.string().default("Self Check"),
+  instruction: z.string().default("How well did you learn these words?"),
+  words: z.array(VocabCheckWordSchema).min(1),
+});
 
-  // Title
-  title: z.string().default("مرور واژگان"),
+/* --------------------------------------------------
+   Step Type 16: Word Hunt Game
+   Find words in a letter grid
+-------------------------------------------------- */
 
-  // Instruction
-  instruction: z.string().default("هر کلمه را مرور کنید و سختی آن را مشخص کنید"),
+export const WordHuntStepSchema = BaseStepSchema.extend({
+  type: z.literal("word-hunt"),
+  title: z.string().default("Word Hunt"),
+  instruction: z.string().default("Find all the German words from this lesson"),
+  targetWords: z.array(z.string()).min(2),
+  gridSize: z.object({
+    rows: z.number().int().min(5).max(12).default(8),
+    cols: z.number().int().min(5).max(12).default(8),
+  }).optional(),
+  timeLimit: z.number().int().min(30).max(300).default(90),
+});
 
-  // Words to check
-  words: z.array(VocabCheckWordSchema).min(3),
+/* --------------------------------------------------
+   Step Type 17: Matching Exercise
+   Match German items to Persian translations
+-------------------------------------------------- */
 
-  // Show example sentences
-  showExamples: z.boolean().default(true),
+export const MatchingItemSchema = z.object({
+  id: z.string(),
+  text: z.string(),
+});
 
-  // Enable audio playback
-  enableAudio: z.boolean().default(true),
+export const MatchingStepSchema = BaseStepSchema.extend({
+  type: z.literal("matching"),
+  instruction: z.string().default("Find the correct pairs"),
+  items: z.array(MatchingItemSchema).min(2),
+  matches: z.array(MatchingItemSchema).min(2),
+  correctPairs: z.array(z.array(z.string()).length(2)),
+  shuffleTargets: z.boolean().default(true),
 });
 
 /* --------------------------------------------------
@@ -666,23 +440,20 @@ export const LessonStepSchema = z.discriminatedUnion("type", [
   MultipleChoiceStepSchema,
   FillInBlankStepSchema,
   WordOrderStepSchema,
-  MatchingStepSchema,
   TrueFalseStepSchema,
   TranslationStepSchema,
   DialogStepSchema,
   GrammarTipStepSchema,
   CompletionStepSchema,
-  ListenAndChooseStepSchema,
   SpeedChallengeStepSchema,
-  FormalityChoiceStepSchema,
-  MemoryMatchStepSchema,
-  WordHuntStepSchema,
-  RapidFireStepSchema,
-  ChatSimulatorStepSchema,
-  VocabCheckStepSchema,
   SpellingStepSchema,
   ComprehensionStepSchema,
-  // Add new step types here as you discover them
+  // Game step types
+  RapidFireStepSchema,
+  MemoryMatchStepSchema,
+  VocabCheckStepSchema,
+  WordHuntStepSchema,
+  MatchingStepSchema,
 ]);
 
 /* --------------------------------------------------
@@ -744,31 +515,25 @@ export type NewWordStep = z.infer<typeof NewWordStepSchema>;
 export type MultipleChoiceStep = z.infer<typeof MultipleChoiceStepSchema>;
 export type FillInBlankStep = z.infer<typeof FillInBlankStepSchema>;
 export type WordOrderStep = z.infer<typeof WordOrderStepSchema>;
-export type MatchingStep = z.infer<typeof MatchingStepSchema>;
 export type TrueFalseStep = z.infer<typeof TrueFalseStepSchema>;
 export type TranslationStep = z.infer<typeof TranslationStepSchema>;
 export type DialogStep = z.infer<typeof DialogStepSchema>;
 export type GrammarTipStep = z.infer<typeof GrammarTipStepSchema>;
 export type CompletionStep = z.infer<typeof CompletionStepSchema>;
-export type ListenAndChooseStep = z.infer<typeof ListenAndChooseStepSchema>;
 export type SpeedChallengeStep = z.infer<typeof SpeedChallengeStepSchema>;
 export type SpeedChallengeQuestion = z.infer<typeof SpeedChallengeQuestionSchema>;
-export type FormalityChoiceStep = z.infer<typeof FormalityChoiceStepSchema>;
-export type MemoryMatchStep = z.infer<typeof MemoryMatchStepSchema>;
-export type MemoryMatchPair = z.infer<typeof MemoryMatchPairSchema>;
-export type WordHuntStep = z.infer<typeof WordHuntStepSchema>;
-export type WordHuntWord = z.infer<typeof WordHuntWordSchema>;
-export type RapidFireStep = z.infer<typeof RapidFireStepSchema>;
-export type RapidFireQuestion = z.infer<typeof RapidFireQuestionSchema>;
-export type ChatSimulatorStep = z.infer<typeof ChatSimulatorStepSchema>;
-export type ChatNode = z.infer<typeof ChatNodeSchema>;
-export type ChatMessage = z.infer<typeof ChatMessageSchema>;
-export type ChatResponseOption = z.infer<typeof ChatResponseOptionSchema>;
-export type VocabCheckStep = z.infer<typeof VocabCheckStepSchema>;
-export type VocabCheckWord = z.infer<typeof VocabCheckWordSchema>;
 export type SpellingStep = z.infer<typeof SpellingStepSchema>;
 export type ComprehensionStep = z.infer<typeof ComprehensionStepSchema>;
 export type ComprehensionQuestion = z.infer<typeof ComprehensionQuestionSchema>;
+export type RapidFireStep = z.infer<typeof RapidFireStepSchema>;
+export type RapidFireQuestion = z.infer<typeof RapidFireQuestionSchema>;
+export type MemoryMatchStep = z.infer<typeof MemoryMatchStepSchema>;
+export type MemoryMatchPair = z.infer<typeof MemoryMatchPairSchema>;
+export type VocabCheckStep = z.infer<typeof VocabCheckStepSchema>;
+export type VocabCheckWord = z.infer<typeof VocabCheckWordSchema>;
+export type WordHuntStep = z.infer<typeof WordHuntStepSchema>;
+export type MatchingStep = z.infer<typeof MatchingStepSchema>;
+export type MatchingItem = z.infer<typeof MatchingItemSchema>;
 export type GenericStep = z.infer<typeof GenericStepSchema>;
 
 export type LessonStep = z.infer<typeof LessonStepSchema>;

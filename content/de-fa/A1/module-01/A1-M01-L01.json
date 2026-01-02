@@ -1,0 +1,265 @@
+{
+  "id": "A1-M01-L01",
+  "title": {
+    "de": "Hallo und Tschüss",
+    "fa": "سلام و خداحافظی"
+  },
+  "level": "A1",
+  "module": 1,
+  "lessonNumber": 1,
+  "estimatedMinutes": 15,
+  "steps": [
+    {
+      "type": "new-word",
+      "id": "s1",
+      "word": {
+        "de": "Hallo",
+        "fa": "سلام"
+      },
+      "example": {
+        "text": {
+          "de": "Hallo! Wie geht's?",
+          "fa": "سلام! حالت چطوره؟"
+        }
+      },
+      "header": "Look, something new!"
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": {
+        "de": "Hi",
+        "fa": "سلام (غیررسمی)"
+      },
+      "example": {
+        "text": {
+          "de": "Hi! Alles gut?",
+          "fa": "سلام! همه چی خوبه؟"
+        }
+      },
+      "header": "Look, something new!"
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": {
+        "de": "Tschüss",
+        "fa": "خداحافظ"
+      },
+      "example": {
+        "text": {
+          "de": "Tschüss! Bis morgen!",
+          "fa": "خداحافظ! تا فردا!"
+        }
+      },
+      "header": "Look, something new!"
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": {
+        "de": "danke",
+        "fa": "ممنون"
+      },
+      "example": {
+        "text": {
+          "de": "Danke schön!",
+          "fa": "خیلی ممنون!"
+        }
+      },
+      "header": "Look, something new!"
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "احوالپرسی در آلمانی",
+      "content": "**Hallo** رایج‌ترین احوالپرسی در آلمانی است و تقریباً در هر موقعیتی قابل استفاده است.\n\n**Hi** نسخه غیررسمی‌تر Hallo است - بیشتر بین دوستان استفاده می‌شود.\n\n**Tschüss** برای خداحافظی غیررسمی استفاده می‌شود.",
+      "examples": [
+        { "de": "Hallo, wie geht's?", "fa": "سلام، حالت چطوره؟" },
+        { "de": "Hi! Alles klar?", "fa": "سلام! همه چی اوکیه؟" }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "آزمون سریع",
+      "instruction": "به سرعت پاسخ دهید!",
+      "timePerQuestion": 5,
+      "questions": [
+        { "left": "Hallo", "right": "سلام", "correctSide": "right" },
+        { "left": "خداحافظ", "right": "Tschüss", "correctSide": "left" },
+        { "left": "Hi", "right": "سلام غیررسمی", "correctSide": "right" },
+        { "left": "ممنون", "right": "danke", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s6",
+      "question": "چگونه به آلمانی می‌گویید 'سلام'؟",
+      "options": ["Tschüss", "Danke", "Hallo", "Bitte"],
+      "correctAnswerIndex": 2,
+      "feedback": {
+        "explanation": "Hallo یعنی سلام - رایج‌ترین احوالپرسی در آلمان."
+      }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s7",
+      "question": "'Tschüss' به فارسی یعنی چه؟",
+      "options": ["سلام", "ممنون", "لطفاً", "خداحافظ"],
+      "correctAnswerIndex": 3,
+      "feedback": {
+        "explanation": "Tschüss یعنی خداحافظ - برای وداع غیررسمی استفاده می‌شود."
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s8",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "{0}! Wie geht's?",
+      "options": ["Tschüss", "Hallo", "Danke", "Bitte"],
+      "correctAnswers": [1],
+      "feedback": {
+        "explanation": "برای سلام کردن از Hallo استفاده می‌کنیم."
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": {
+        "de": "Ich bin",
+        "fa": "من هستم"
+      },
+      "example": {
+        "text": {
+          "de": "Ich bin Anna.",
+          "fa": "من آنا هستم."
+        }
+      },
+      "header": "Look, something new!"
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s10",
+      "title": "معرفی خود",
+      "content": "برای معرفی خودتان در آلمانی از این ساختار استفاده کنید:\n\n**Ich bin + اسم**\n\nمثال: Ich bin Freddy. (من فردی هستم.)\n\n⚠️ توجه: در آلمانی فعل 'bin' (هستم) بعد از 'ich' (من) می‌آید.",
+      "examples": [
+        { "de": "Ich bin Anna.", "fa": "من آنا هستم." },
+        { "de": "Ich bin Max.", "fa": "من مکس هستم." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "s11",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Anna", "bin", "Ich"],
+      "correctOrder": [2, 1, 0],
+      "correctSentence": {
+        "de": "Ich bin Anna",
+        "fa": "من آنا هستم"
+      }
+    },
+    {
+      "type": "memory-match",
+      "id": "g2",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "Hallo", "fa": "سلام" },
+        { "de": "Tschüss", "fa": "خداحافظ" },
+        { "de": "danke", "fa": "ممنون" },
+        { "de": "Hi", "fa": "سلام غیررسمی" }
+      ],
+      "timeLimit": 60
+    },
+    {
+      "type": "matching",
+      "id": "s12",
+      "instruction": "جفت‌های درست را پیدا کنید",
+      "items": [
+        { "id": "i1", "text": "Hallo" },
+        { "id": "i2", "text": "Tschüss" },
+        { "id": "i3", "text": "danke" },
+        { "id": "i4", "text": "Ich bin Anna" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "سلام" },
+        { "id": "m2", "text": "خداحافظ" },
+        { "id": "m3", "text": "ممنون" },
+        { "id": "m4", "text": "من آنا هستم" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]],
+      "shuffleTargets": true
+    },
+    {
+      "type": "dialog",
+      "id": "s13",
+      "title": "آشنایی اولیه",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Hallo!", "fa": "سلام!" } },
+        { "speaker": "Max", "text": { "de": "Hi! Ich bin Max.", "fa": "سلام! من مکس هستم." } },
+        { "speaker": "Anna", "text": { "de": "Ich bin Anna.", "fa": "من آنا هستم." } },
+        { "speaker": "Max", "text": { "de": "Tschüss, Anna!", "fa": "خداحافظ، آنا!" } },
+        { "speaker": "Anna", "text": { "de": "Tschüss!", "fa": "خداحافظ!" } }
+      ],
+      "feedback": {
+        "explanation": "در این مکالمه دو نفر با هم آشنا می‌شوند و سپس خداحافظی می‌کنند."
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "s14",
+      "instruction": "درست یا غلط؟",
+      "statement": "\"Hi\" رسمی‌تر از \"Hallo\" است.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "خیر! Hi غیررسمی‌تر از Hallo است و بیشتر بین دوستان استفاده می‌شود."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "s15",
+      "sourceText": "من آنا هستم.",
+      "sentenceTemplate": "{0} {1} {2}.",
+      "options": ["bin", "Ich", "Anna", "du"],
+      "correctAnswers": [1, 0, 2],
+      "correctTranslation": {
+        "de": "Ich bin Anna.",
+        "fa": "من آنا هستم."
+      }
+    },
+    {
+      "type": "spelling",
+      "id": "s16",
+      "word": "Tschüss",
+      "translation": "خداحافظ",
+      "hint": "CHOOS",
+      "instruction": "این کلمه را هجی کنید"
+    },
+    {
+      "type": "vocab-check",
+      "id": "g3",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "Hallo", "fa": "سلام" },
+        { "de": "Hi", "fa": "سلام غیررسمی" },
+        { "de": "Tschüss", "fa": "خداحافظ" },
+        { "de": "danke", "fa": "ممنون" },
+        { "de": "Ich bin", "fa": "من هستم" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "s17",
+      "message": "آفرین! درس اول را تمام کردید!",
+      "vocabularyLearned": [
+        { "word": { "de": "Hallo", "fa": "سلام" } },
+        { "word": { "de": "Hi", "fa": "سلام غیررسمی" } },
+        { "word": { "de": "Tschüss", "fa": "خداحافظ" } },
+        { "word": { "de": "danke", "fa": "ممنون" } },
+        { "word": { "de": "Ich bin", "fa": "من هستم" } }
+      ]
+    }
+  ],
+  "tags": ["greetings", "introductions", "A1"]
+}

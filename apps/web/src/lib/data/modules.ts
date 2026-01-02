@@ -19,17 +19,12 @@ export const A1_MODULES: ModuleStub[] = [
     level: "A1",
     lessons: [
       {
-        id: "A1-1-M01-L01",
-        title: "سلام و احوال‌پرسی (Hallo!)",
-        description: "یاد بگیرید چطور سلام کنید و حال بپرسید.",
-        path: "/learn/de-fa/A1/A1-1-M01-L01"
-      },
-      {
-        id: "A1-1-M01-L02",
-        title: "من کی هستم؟ (Wer bin ich?)",
-        description: "معرفی خود و فعل 'sein' (بودن).",
-        path: "/learn/de-fa/A1/A1-1-M01-L02"
+        id: "A1-M01-L01",
+        title: "سلام و خداحافظی (Hallo und Tschüss)",
+        description: "یاد بگیرید چطور سلام و خداحافظی کنید و خود را معرفی کنید.",
+        path: "/learn/de-fa/A1/A1-M01-L01"
       }
+      // More lessons will be added as they are created from content fusion
     ]
   },
   {

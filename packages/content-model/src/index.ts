@@ -331,6 +331,95 @@ export const ComprehensionStepSchema = BaseStepSchema.extend({
 });
 
 /* --------------------------------------------------
+   Step Type 13: Rapid Fire Game
+   Quick-fire translation matching game
+-------------------------------------------------- */
+
+export const RapidFireQuestionSchema = z.object({
+  left: z.string(),
+  right: z.string(),
+  correctSide: z.enum(["left", "right"]),
+});
+
+export const RapidFireStepSchema = BaseStepSchema.extend({
+  type: z.literal("rapid-fire"),
+  title: z.string().default("Quick Quiz"),
+  instruction: z.string().default("Answer quickly!"),
+  timePerQuestion: z.number().int().min(1).max(30).default(5),
+  questions: z.array(RapidFireQuestionSchema).min(2),
+});
+
+/* --------------------------------------------------
+   Step Type 14: Memory Match Game
+   Match pairs of German-Persian words
+-------------------------------------------------- */
+
+export const MemoryMatchPairSchema = z.object({
+  de: z.string(),
+  fa: z.string(),
+});
+
+export const MemoryMatchStepSchema = BaseStepSchema.extend({
+  type: z.literal("memory-match"),
+  title: z.string().default("Memory Game"),
+  pairs: z.array(MemoryMatchPairSchema).min(2).max(8),
+  timeLimit: z.number().int().min(30).max(300).default(60),
+});
+
+/* --------------------------------------------------
+   Step Type 15: Vocab Check (Self-Assessment)
+   User rates their knowledge of words
+-------------------------------------------------- */
+
+export const VocabCheckWordSchema = z.object({
+  de: z.string(),
+  fa: z.string(),
+});
+
+export const VocabCheckStepSchema = BaseStepSchema.extend({
+  type: z.literal("vocab-check"),
+  title: z.string().default("Self Check"),
+  instruction: z.string().default("How well did you learn these words?"),
+  words: z.array(VocabCheckWordSchema).min(1),
+});
+
+/* --------------------------------------------------
+   Step Type 16: Word Hunt Game
+   Find words in a letter grid
+-------------------------------------------------- */
+
+export const WordHuntStepSchema = BaseStepSchema.extend({
+  type: z.literal("word-hunt"),
+  title: z.string().default("Word Hunt"),
+  instruction: z.string().default("Find all the German words from this lesson"),
+  targetWords: z.array(z.string()).min(2),
+  gridSize: z.object({
+    rows: z.number().int().min(5).max(12).default(8),
+    cols: z.number().int().min(5).max(12).default(8),
+  }).optional(),
+  timeLimit: z.number().int().min(30).max(300).default(90),
+});
+
+/* --------------------------------------------------
+   Step Type 17: Matching Exercise
+   Match German items to Persian translations
+-------------------------------------------------- */
+
+export const MatchingItemSchema = z.object({
+  id: z.string(),
+  text: z.string(),
+});
+
+export const MatchingStepSchema = BaseStepSchema.extend({
+  type: z.literal("matching"),
+  instruction: z.string().default("Find the correct pairs"),
+  items: z.array(MatchingItemSchema).min(2),
+  matches: z.array(MatchingItemSchema).min(2),
+  correctPairs: z.array(z.array(z.string()).length(2)),
+  shuffleTargets: z.boolean().default(true),
+});
+
+/* --------------------------------------------------
    EXTENSIBILITY: Generic Step Type
    For future unknown step types, allow custom data
 -------------------------------------------------- */
@@ -359,7 +448,12 @@ export const LessonStepSchema = z.discriminatedUnion("type", [
   SpeedChallengeStepSchema,
   SpellingStepSchema,
   ComprehensionStepSchema,
-  // Add new step types here as you discover them
+  // Game step types
+  RapidFireStepSchema,
+  MemoryMatchStepSchema,
+  VocabCheckStepSchema,
+  WordHuntStepSchema,
+  MatchingStepSchema,
 ]);
 
 /* --------------------------------------------------
@@ -431,6 +525,15 @@ export type SpeedChallengeQuestion = z.infer<typeof SpeedChallengeQuestionSchema
 export type SpellingStep = z.infer<typeof SpellingStepSchema>;
 export type ComprehensionStep = z.infer<typeof ComprehensionStepSchema>;
 export type ComprehensionQuestion = z.infer<typeof ComprehensionQuestionSchema>;
+export type RapidFireStep = z.infer<typeof RapidFireStepSchema>;
+export type RapidFireQuestion = z.infer<typeof RapidFireQuestionSchema>;
+export type MemoryMatchStep = z.infer<typeof MemoryMatchStepSchema>;
+export type MemoryMatchPair = z.infer<typeof MemoryMatchPairSchema>;
+export type VocabCheckStep = z.infer<typeof VocabCheckStepSchema>;
+export type VocabCheckWord = z.infer<typeof VocabCheckWordSchema>;
+export type WordHuntStep = z.infer<typeof WordHuntStepSchema>;
+export type MatchingStep = z.infer<typeof MatchingStepSchema>;
+export type MatchingItem = z.infer<typeof MatchingItemSchema>;
 export type GenericStep = z.infer<typeof GenericStepSchema>;
 
 export type LessonStep = z.infer<typeof LessonStepSchema>;

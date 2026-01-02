@@ -14,14 +14,14 @@
   let isAnswered = false;
   let isCorrect = false;
   let canRetry = false;
-  let shuffledMatches: typeof step.matches = [];
 
-  // Shuffle matches on mount
+  // Initialize shuffledMatches immediately (not in onMount to avoid empty render)
+  let shuffledMatches: typeof step.matches = step.matches ? [...step.matches] : [];
+
+  // Shuffle on mount if needed
   onMount(() => {
-    if (step.shuffleTargets !== false) {
+    if (step.matches && step.shuffleTargets !== false) {
       shuffledMatches = [...step.matches].sort(() => Math.random() - 0.5);
-    } else {
-      shuffledMatches = [...step.matches];
     }
   });
 
