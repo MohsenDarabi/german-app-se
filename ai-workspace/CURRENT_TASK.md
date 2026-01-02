@@ -20,11 +20,14 @@
 
 ## Last Completed
 
-**Task**: Move extractors and extracted content outside main app
+**Task**: Clean up obsolete plans, merge valuable docs, create ROADMAP
 
 **Completed**: 2026-01-02
 
-**Result**: Moved babbel-extractor, screen-flow-mapper, busuu-extractor to /Volumes/.../content-extractors/. Moved extracted-content to content-archive. Updated all path references in CLAUDE.md and ai-workspace docs.
+**Result**:
+- Deleted 7 obsolete files (PROJECT_PLAN.md, BABBEL_EXTRACTION_AGENT.md, AI_AGENTS.md, busuu-extraction-plan.md, CONTENT_FUSION_APPROACH.md, content-comparison-task.md, AI_CONTENT_QUALITY_CHECKLIST.md)
+- Merged quality rules to ai-workspace/references/rules-and-tips.md (Rules 6-9)
+- Created ai-workspace/ROADMAP.md with forgotten features TODO
 
 ---
 
@@ -102,8 +105,8 @@ If you just started or conversation was compacted:
 
 | Date | Task | Result |
 |------|------|--------|
+| 2026-01-02 | Clean up obsolete plans | Completed - deleted 7 files, merged rules, created ROADMAP.md |
 | 2026-01-02 | Move extractors outside main app | Completed - moved to content-extractors/, updated paths |
 | 2026-01-02 | Set up ai-workspace references | Completed - 4 reference docs created |
 | 2026-01-02 | Fix Busuu path in workflows | Completed - corrected to screen-flow-mapper |
 | 2026-01-02 | Create ai-workspace structure | Completed - PROMPT.md, STATUS.md, workflows |
-| 2026-01-02 | Fix BiDi text rule | Completed - documented in rules-and-tips.md |

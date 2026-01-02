@@ -104,6 +104,86 @@ Add notes that help Persian speakers specifically:
 
 ---
 
+### Rule 6: Randomize Answer Positions
+
+**CRITICAL**: `correctAnswerIndex` must NOT always be 0.
+
+```json
+// BAD - correct answer always first
+{
+  "options": ["Hallo", "Tschüss", "Danke", "Bitte"],
+  "correctAnswerIndex": 0  // WRONG! Always 0
+}
+
+// GOOD - correct answer at random position
+{
+  "options": ["Tschüss", "Danke", "Hallo", "Bitte"],
+  "correctAnswerIndex": 2  // Varies between questions
+}
+```
+
+Across a lesson, distribute correct answers across positions 0, 1, 2, 3.
+
+---
+
+### Rule 7: Fill-in-Blank Verb Consistency
+
+**DO NOT mix conjugations from different verbs** in the same exercise.
+
+```json
+// BAD - mixes "sein" and "heißen" verbs (confusing!)
+{
+  "sentence": "Hallo! Ich {0} Anna. Wie {1} du?",
+  "options": ["bin", "bist", "heißt", "heiße"],
+  "correctAnswers": [0, 2]  // "bin" (sein) + "heißt" (heißen) = CONFUSING
+}
+
+// GOOD - consistent verb family
+{
+  "sentence": "Ich {0} Anna. Wie {1} du?",
+  "options": ["heiße", "heißt", "heißen"],
+  "correctAnswers": [0, 1]  // Both from "heißen" = CLEAR
+}
+```
+
+**Valid exceptions:**
+- Modal verb + infinitive: "Ihr **solltet** mehr Gemüse **essen**"
+- Future tense: "Er **wird** morgen nach Berlin **fahren**"
+
+---
+
+### Rule 8: Game Step Minimums
+
+| Game Type | Minimum Items |
+|-----------|---------------|
+| `speed-challenge` | 5 questions |
+| `rapid-fire` | 5 questions |
+| `memory-match` | 4 pairs (8 cards) |
+| `matching` | 3 pairs |
+
+---
+
+### Rule 9: Rapid-Fire Balance
+
+Balance `correctSide` roughly 50% "left" / 50% "right".
+
+```json
+// BAD - all answers on right
+{ "correctSide": "right" },
+{ "correctSide": "right" },
+{ "correctSide": "right" }
+
+// GOOD - balanced
+{ "correctSide": "right" },
+{ "correctSide": "left" },
+{ "correctSide": "right" },
+{ "correctSide": "left" }
+```
+
+Never more than 80% on one side.
+
+---
+
 ## COMMON MISTAKES
 
 ### Mistake 1: Wrong correctAnswerIndex
