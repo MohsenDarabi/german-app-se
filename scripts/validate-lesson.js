@@ -483,6 +483,44 @@ const rules = [
       }
       return { pass: true };
     }
+  },
+  {
+    name: 'mcq-no-meta-answers',
+    description: 'MCQ: no "both options" or "all of the above" type meta-answers',
+    check: (lesson) => {
+      // Meta-answer patterns that indicate bad question design
+      const metaPatterns = [
+        /هر دو گزینه/,           // "both options" in Persian
+        /همه گزینه/,            // "all options" in Persian
+        /هیچکدام/,              // "none of the above" in Persian
+        /all of the above/i,
+        /both.*correct/i,
+        /none of the above/i,
+        /both a and b/i,
+      ];
+
+      const mcqs = lesson.steps?.filter(s => s.type === 'multiple-choice') || [];
+      const issues = [];
+
+      for (const step of mcqs) {
+        if (!step.options) continue;
+
+        for (let i = 0; i < step.options.length; i++) {
+          const opt = step.options[i];
+          for (const pattern of metaPatterns) {
+            if (pattern.test(opt)) {
+              issues.push(`${step.id}: option[${i}] "${opt}" is a meta-answer (bad design)`);
+              break;
+            }
+          }
+        }
+      }
+
+      if (issues.length > 0) {
+        return { pass: false, error: issues.join('; ') };
+      }
+      return { pass: true };
+    }
   }
 ];
 
