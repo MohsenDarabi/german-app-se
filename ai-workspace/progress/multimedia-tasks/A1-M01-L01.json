@@ -1,0 +1,99 @@
+{
+  "lessonId": "A1-M01-L01",
+  "title": "Hallo! Ich bin...",
+  "createdAt": "2026-01-02",
+  "tasks": [
+    {
+      "id": "img-001",
+      "type": "image",
+      "stepId": "s1",
+      "stepType": "new-word",
+      "description": "Two people waving hello to each other on a street",
+      "context": "Vocabulary introduction for 'Hallo' (Hello)",
+      "specs": {
+        "format": "jpg",
+        "dimensions": "800x600",
+        "style": "friendly, warm, modern German setting"
+      },
+      "outputPath": "images/shared/greetings/hello-wave.jpg",
+      "status": "pending",
+      "reusable": true,
+      "reusableFor": ["greetings", "introductions"]
+    },
+    {
+      "id": "img-002",
+      "type": "image",
+      "stepId": "s3",
+      "stepType": "new-word",
+      "description": "Person waving goodbye, walking away",
+      "context": "Vocabulary introduction for 'Tschüss' (Bye)",
+      "specs": {
+        "format": "jpg",
+        "dimensions": "800x600",
+        "style": "casual farewell scene"
+      },
+      "outputPath": "images/shared/greetings/goodbye-wave.jpg",
+      "status": "pending",
+      "reusable": true,
+      "reusableFor": ["greetings", "farewells"]
+    },
+    {
+      "id": "img-003",
+      "type": "image",
+      "stepId": "s4",
+      "stepType": "new-word",
+      "description": "Person expressing gratitude, hands together or thumbs up",
+      "context": "Vocabulary introduction for 'danke' (thanks)",
+      "specs": {
+        "format": "jpg",
+        "dimensions": "800x600",
+        "style": "appreciative gesture"
+      },
+      "outputPath": "images/shared/expressions/thank-you.jpg",
+      "status": "pending",
+      "reusable": true,
+      "reusableFor": ["gratitude", "politeness"]
+    },
+    {
+      "id": "img-004",
+      "type": "image",
+      "stepId": "s8",
+      "stepType": "new-word",
+      "description": "Two people shaking hands with friendly smiles",
+      "context": "Vocabulary introduction for 'Freut mich!' (Nice to meet you)",
+      "specs": {
+        "format": "jpg",
+        "dimensions": "800x600",
+        "style": "professional but warm first meeting"
+      },
+      "outputPath": "images/shared/introductions/handshake-meeting.jpg",
+      "status": "pending",
+      "reusable": true,
+      "reusableFor": ["introductions", "first-meetings"]
+    },
+    {
+      "id": "img-005",
+      "type": "image",
+      "stepId": "s15",
+      "stepType": "dialog",
+      "description": "Two young adults (one male, one female) meeting at a cafe table",
+      "context": "Dialog scene: Lena and Max meeting at a cafe",
+      "specs": {
+        "format": "jpg",
+        "dimensions": "800x600",
+        "style": "modern German cafe, friendly atmosphere, diverse characters"
+      },
+      "outputPath": "images/shared/scenes/cafe-meeting.jpg",
+      "status": "pending",
+      "reusable": true,
+      "reusableFor": ["cafe-scenes", "introductions", "conversations"]
+    }
+  ],
+  "summary": {
+    "totalTasks": 5,
+    "images": 5,
+    "videos": 0,
+    "pending": 5,
+    "completed": 0
+  }
+}
