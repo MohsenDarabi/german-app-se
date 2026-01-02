@@ -1,12 +1,14 @@
 import type { PageServerLoad } from "./$types";
 import { LessonSchema, type Lesson } from "$lib/content-model";
 import { error, redirect } from "@sveltejs/kit";
+import { dev } from '$app/environment';
 import fs from "node:fs";
 import path from "node:path";
 
 export const load: PageServerLoad = async ({ params, locals }) => {
-  // Require authentication to access lessons
-  if (!locals.user) {
+  // TODO: TEMPORARY BYPASS - Remove `&& !dev` after implementing proper dev auth
+  // See docs/TODO-AUTH-BYPASS.md for details
+  if (!locals.user && !dev) {
     throw redirect(303, '/login');
   }
 

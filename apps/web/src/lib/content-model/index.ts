@@ -537,7 +537,84 @@ export const ChatSimulatorStepSchema = BaseStepSchema.extend({
 });
 
 /* --------------------------------------------------
-   Step Type 17: Vocab Check
+   Step Type 17: Spelling
+   Letter-by-letter spelling exercise
+-------------------------------------------------- */
+
+export const SpellingStepSchema = BaseStepSchema.extend({
+  type: z.literal("spelling"),
+
+  // Instruction text
+  instruction: z.string().default("این کلمه را هجی کنید"),
+
+  // The word to spell
+  word: z.string(),
+
+  // Persian translation (shown as hint)
+  translation: z.string(),
+
+  // Optional phonetic hint (e.g., "hah-LO" for "Hallo")
+  phonetic: z.string().optional(),
+
+  // Available letters (shuffled, may include extra distractors)
+  letters: z.array(z.string()).optional(), // Auto-generated if not provided
+
+  // Include distractor letters (makes it harder)
+  includeDistractors: z.boolean().default(false),
+
+  // Number of distractor letters to add
+  distractorCount: z.number().int().min(0).max(5).default(2),
+
+  // Show image hint
+  showImage: z.boolean().default(false),
+  image: z.string().optional(),
+});
+
+/* --------------------------------------------------
+   Step Type 18: Comprehension
+   Reading/listening comprehension with questions
+-------------------------------------------------- */
+
+export const ComprehensionQuestionSchema = z.object({
+  id: z.string(),
+  question: z.string(),                    // Question text (German or Persian)
+  questionTranslation: z.string().optional(), // Translation of question
+  options: z.array(z.string()).min(2).max(4),
+  correctAnswerIndex: z.number().int().min(0),
+  explanation: z.string().optional(),      // Why this answer is correct
+});
+
+export const ComprehensionStepSchema = BaseStepSchema.extend({
+  type: z.literal("comprehension"),
+
+  // Instruction text
+  instruction: z.string().default("متن را بخوانید و به سوالات پاسخ دهید"),
+
+  // The passage to read/listen
+  passage: z.object({
+    de: z.string(),                        // German text
+    fa: z.string(),                        // Persian translation
+  }),
+
+  // Optional media (audio/video of the passage)
+  media: z.object({
+    type: z.enum(["audio", "video"]),
+    url: z.string(),
+    autoPlay: z.boolean().default(false),
+  }).optional(),
+
+  // Questions about the passage
+  questions: z.array(ComprehensionQuestionSchema).min(1).max(5),
+
+  // Show translation toggle
+  showTranslationToggle: z.boolean().default(true),
+
+  // Allow replaying media during questions
+  allowReplay: z.boolean().default(true),
+});
+
+/* --------------------------------------------------
+   Step Type 19: Vocab Check
    In-lesson vocabulary self-assessment with difficulty rating
 -------------------------------------------------- */
 
@@ -603,6 +680,8 @@ export const LessonStepSchema = z.discriminatedUnion("type", [
   RapidFireStepSchema,
   ChatSimulatorStepSchema,
   VocabCheckStepSchema,
+  SpellingStepSchema,
+  ComprehensionStepSchema,
   // Add new step types here as you discover them
 ]);
 
@@ -687,6 +766,9 @@ export type ChatMessage = z.infer<typeof ChatMessageSchema>;
 export type ChatResponseOption = z.infer<typeof ChatResponseOptionSchema>;
 export type VocabCheckStep = z.infer<typeof VocabCheckStepSchema>;
 export type VocabCheckWord = z.infer<typeof VocabCheckWordSchema>;
+export type SpellingStep = z.infer<typeof SpellingStepSchema>;
+export type ComprehensionStep = z.infer<typeof ComprehensionStepSchema>;
+export type ComprehensionQuestion = z.infer<typeof ComprehensionQuestionSchema>;
 export type GenericStep = z.infer<typeof GenericStepSchema>;
 
 export type LessonStep = z.infer<typeof LessonStepSchema>;

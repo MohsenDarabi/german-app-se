@@ -19,6 +19,8 @@
   // ChatSimulatorStep disabled - will be replaced by AI chatbot
   // import ChatSimulatorStep from "./steps/ChatSimulatorStep.svelte";
   import VocabCheckStep from "./steps/VocabCheckStep.svelte";
+  import SpellingStep from "./steps/SpellingStep.svelte";
+  import ComprehensionStep from "./steps/ComprehensionStep.svelte";
 
   export let step: LessonStep;
   export let lessonId: string = '';
@@ -64,6 +66,10 @@
     </div>
   {:else if step.type === "vocab-check"}
     <VocabCheckStep {step} {lessonId} on:answer />
+  {:else if step.type === "spelling"}
+    <SpellingStep {step} {lessonId} on:answer />
+  {:else if step.type === "comprehension"}
+    <ComprehensionStep {step} {lessonId} on:answer />
   {:else}
     <div class="unknown-step">
       <p>Unknown step type: {step.type}</p>

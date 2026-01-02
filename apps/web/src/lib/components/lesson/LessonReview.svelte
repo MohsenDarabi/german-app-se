@@ -111,6 +111,22 @@
           </button>
         </div>
       {/if}
+
+      {#if options.length === 0}
+        <div class="skip-section">
+          <p class="skip-text">این سوال قابل بازبینی نیست</p>
+          <button class="skip-btn" on:click={() => {
+            reviewCorrect.add(currentReviewIndex);
+            reviewCorrect = reviewCorrect;
+            if (!isLastReview) {
+              currentReviewIndex++;
+              selectedAnswer = null;
+            }
+          }}>
+            ⏭️ رد شدن
+          </button>
+        </div>
+      {/if}
     </div>
   {/if}
 
@@ -255,6 +271,41 @@
 
   .retry-btn:hover {
     background: #dc2626;
+  }
+
+  .skip-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: #fef3c7;
+    border: 2px solid #fcd34d;
+    border-radius: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  .skip-text {
+    color: #92400e;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+  }
+
+  .skip-btn {
+    padding: 0.75rem 2rem;
+    background: #f59e0b;
+    color: white;
+    border: none;
+    border-radius: 999px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .skip-btn:hover {
+    background: #d97706;
   }
 
   .completion-section {

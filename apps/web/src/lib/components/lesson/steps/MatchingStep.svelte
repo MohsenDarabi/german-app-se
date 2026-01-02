@@ -109,6 +109,21 @@
     const item = step.items.find(i => i.id === itemId);
     return item?.text || '';
   }
+
+  // Color palette for matched pairs (5 distinct colors)
+  const pairColors = ['coral', 'teal', 'purple', 'amber', 'indigo'];
+
+  // Get color index for a matched pair
+  function getPairColorIndex(itemId: string): number {
+    const index = matchedPairs.findIndex(([item]) => item === itemId);
+    return index >= 0 ? index % pairColors.length : -1;
+  }
+
+  // Get color index for a match target
+  function getMatchColorIndex(matchId: string): number {
+    const index = matchedPairs.findIndex(([, match]) => match === matchId);
+    return index >= 0 ? index % pairColors.length : -1;
+  }
 </script>
 
 <div class="matching-container">
@@ -123,16 +138,27 @@
         {@const matched = isItemMatched(item.id)}
         {@const matchId = getMatchForItem(item.id)}
         {@const pairCorrect = matchId ? isPairCorrect(item.id, matchId) : false}
+        {@const colorIndex = getPairColorIndex(item.id)}
         <button
           class="match-chip"
           class:selected={selectedItemId === item.id}
           class:matched={matched}
           class:correct={isAnswered && matched && pairCorrect}
           class:wrong={isAnswered && matched && !pairCorrect}
+          class:pair-coral={matched && !isAnswered && colorIndex === 0}
+          class:pair-teal={matched && !isAnswered && colorIndex === 1}
+          class:pair-purple={matched && !isAnswered && colorIndex === 2}
+          class:pair-amber={matched && !isAnswered && colorIndex === 3}
+          class:pair-indigo={matched && !isAnswered && colorIndex === 4}
           on:click={() => matched ? removePair(item.id) : selectItem(item.id)}
           disabled={isAnswered}
         >
-          <span class="item-text">{item.text}</span>
+          <span class="item-text">
+            {#if matched && !isAnswered}
+              <span class="pair-indicator" style="background: {colorIndex >= 0 ? ['#ff7875', '#36cfc9', '#b37feb', '#ffc53d', '#597ef7'][colorIndex] : '#94a3b8'}">✓</span>
+            {/if}
+            {item.text}
+          </span>
           {#if matched}
             <span class="matched-text">{getMatchText(matchId || '')}</span>
           {/if}
@@ -144,13 +170,22 @@
     <div class="column matches-column" dir="rtl">
       {#each shuffledMatches as match}
         {@const used = isMatchUsed(match.id)}
+        {@const matchColorIndex = getMatchColorIndex(match.id)}
         <button
           class="match-chip"
           class:used={used}
           class:selectable={selectedItemId !== null && !used}
+          class:pair-coral={used && !isAnswered && matchColorIndex === 0}
+          class:pair-teal={used && !isAnswered && matchColorIndex === 1}
+          class:pair-purple={used && !isAnswered && matchColorIndex === 2}
+          class:pair-amber={used && !isAnswered && matchColorIndex === 3}
+          class:pair-indigo={used && !isAnswered && matchColorIndex === 4}
           on:click={() => selectMatch(match.id)}
           disabled={isAnswered || used || selectedItemId === null}
         >
+          {#if used && !isAnswered}
+            <span class="pair-indicator" style="background: {matchColorIndex >= 0 ? ['#ff7875', '#36cfc9', '#b37feb', '#ffc53d', '#597ef7'][matchColorIndex] : '#94a3b8'}">✓</span>
+          {/if}
           {match.text}
         </button>
       {/each}
@@ -163,8 +198,13 @@
     </button>
   {/if}
 
-  {#if selectedItemId && !isAnswered}
-    <p class="hint" dir="rtl">حالا روی ترجمه صحیح بزنید</p>
+  {#if !isAnswered}
+    <div class="progress-row">
+      <span class="progress-text">{matchedPairs.length} از {step.items.length} جفت</span>
+      {#if selectedItemId}
+        <span class="hint-inline">← جفت را انتخاب کنید</span>
+      {/if}
+    </div>
   {/if}
 
   {#if isAnswered && isCorrect}
@@ -265,8 +305,43 @@
   }
 
   .match-chip.used {
-    opacity: 0.3;
+    opacity: 1;
     cursor: default;
+  }
+
+  /* Color-coded pair styles - coral */
+  .match-chip.pair-coral {
+    background: #fff1f0;
+    border-color: #ff7875;
+    border-width: 2px;
+  }
+
+  /* Color-coded pair styles - teal */
+  .match-chip.pair-teal {
+    background: #e6fffb;
+    border-color: #36cfc9;
+    border-width: 2px;
+  }
+
+  /* Color-coded pair styles - purple */
+  .match-chip.pair-purple {
+    background: #f9f0ff;
+    border-color: #b37feb;
+    border-width: 2px;
+  }
+
+  /* Color-coded pair styles - amber */
+  .match-chip.pair-amber {
+    background: #fffbe6;
+    border-color: #ffc53d;
+    border-width: 2px;
+  }
+
+  /* Color-coded pair styles - indigo */
+  .match-chip.pair-indigo {
+    background: #e8edff;
+    border-color: #597ef7;
+    border-width: 2px;
   }
 
   .match-chip.correct {
@@ -285,6 +360,22 @@
 
   .item-text {
     font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .pair-indicator {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: bold;
   }
 
   .matched-text {
@@ -293,11 +384,23 @@
     font-style: italic;
   }
 
-  .hint {
-    text-align: center;
+  .progress-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .progress-text {
+    color: #64748b;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .hint-inline {
     color: #3b82f6;
-    font-size: 0.95rem;
-    margin: 0;
+    font-size: 0.9rem;
+    animation: pulse 1s infinite;
   }
 
   .check-btn {

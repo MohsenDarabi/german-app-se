@@ -277,6 +277,60 @@ export const SpeedChallengeStepSchema = BaseStepSchema.extend({
 });
 
 /* --------------------------------------------------
+   Step Type 11: Spelling Exercise
+   Spell a word by clicking/typing letters in order
+-------------------------------------------------- */
+
+export const SpellingStepSchema = BaseStepSchema.extend({
+  type: z.literal("spelling"),
+
+  // The word to spell
+  word: z.string(),
+
+  // Persian translation
+  translation: z.string(),
+
+  // Optional phonetic hint
+  hint: z.string().optional(),
+
+  // Instruction text
+  instruction: z.string().default("Spell the word."),
+});
+
+/* --------------------------------------------------
+   Step Type 12: Comprehension Exercise
+   Read/listen to a passage and answer questions
+-------------------------------------------------- */
+
+export const ComprehensionQuestionSchema = z.object({
+  question: z.string(), // Question text
+  options: z.array(z.string()).min(2).max(4),
+  correctIndex: z.number().int().min(0),
+});
+
+export const ComprehensionStepSchema = BaseStepSchema.extend({
+  type: z.literal("comprehension"),
+
+  // Title for the exercise
+  title: z.string().optional(),
+
+  // The passage to read/comprehend
+  passage: BilingualTextSchema,
+
+  // Optional media (audio or video of the passage)
+  media: z.object({
+    type: z.enum(["audio", "video"]),
+    url: z.string(),
+  }).optional(),
+
+  // Questions about the passage
+  questions: z.array(ComprehensionQuestionSchema).min(1),
+
+  // Instruction text
+  instruction: z.string().default("Read/listen and answer the questions."),
+});
+
+/* --------------------------------------------------
    EXTENSIBILITY: Generic Step Type
    For future unknown step types, allow custom data
 -------------------------------------------------- */
@@ -303,6 +357,8 @@ export const LessonStepSchema = z.discriminatedUnion("type", [
   GrammarTipStepSchema,
   CompletionStepSchema,
   SpeedChallengeStepSchema,
+  SpellingStepSchema,
+  ComprehensionStepSchema,
   // Add new step types here as you discover them
 ]);
 
@@ -372,6 +428,9 @@ export type GrammarTipStep = z.infer<typeof GrammarTipStepSchema>;
 export type CompletionStep = z.infer<typeof CompletionStepSchema>;
 export type SpeedChallengeStep = z.infer<typeof SpeedChallengeStepSchema>;
 export type SpeedChallengeQuestion = z.infer<typeof SpeedChallengeQuestionSchema>;
+export type SpellingStep = z.infer<typeof SpellingStepSchema>;
+export type ComprehensionStep = z.infer<typeof ComprehensionStepSchema>;
+export type ComprehensionQuestion = z.infer<typeof ComprehensionQuestionSchema>;
 export type GenericStep = z.infer<typeof GenericStepSchema>;
 
 export type LessonStep = z.infer<typeof LessonStepSchema>;

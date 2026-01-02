@@ -19,22 +19,16 @@ export const A1_MODULES: ModuleStub[] = [
     level: "A1",
     lessons: [
       {
-        id: "A1-M01-L01",
+        id: "A1-1-M01-L01",
         title: "سلام و احوال‌پرسی (Hallo!)",
         description: "یاد بگیرید چطور سلام کنید و حال بپرسید.",
-        path: "/learn/de-fa/A1/lesson-01"
+        path: "/learn/de-fa/A1/A1-1-M01-L01"
       },
       {
-        id: "A1-M01-L02",
+        id: "A1-1-M01-L02",
         title: "من کی هستم؟ (Wer bin ich?)",
         description: "معرفی خود و فعل 'sein' (بودن).",
-        path: "/learn/de-fa/A1/lesson-02"
-      },
-      {
-        id: "A1-M01-L03",
-        title: "اعداد ۱ تا ۲۰ (Zahlen)",
-        description: "شمارش اعداد پایه را یاد بگیرید.",
-        path: "/learn/de-fa/A1/lesson-03"
+        path: "/learn/de-fa/A1/A1-1-M01-L02"
       }
     ]
   },
@@ -44,16 +38,22 @@ export const A1_MODULES: ModuleStub[] = [
     level: "A1",
     lessons: [
       {
-        id: "A1-M02-L04",
+        id: "A1-1-M02-L03",
         title: "اعضای خانواده (Familienmitglieder)",
         description: "پدر، مادر، خواهر و برادر.",
-        path: "/learn/de-fa/A1/lesson-04"
+        path: "/learn/de-fa/A1/A1-1-M02-L03"
       },
       {
-        id: "A1-M02-L05",
+        id: "A1-1-M02-L04",
+        title: "معرفی خانواده (Familienvorstellen)",
+        description: "معرفی اعضای خانواده.",
+        path: "/learn/de-fa/A1/A1-1-M02-L04"
+      },
+      {
+        id: "A1-1-M02-L05",
         title: "این کیست؟ (Wer ist das?)",
-        description: "پرسیدن درباره افراد و ضمایر ملکی (mein/dein).",
-        path: "/learn/de-fa/A1/lesson-05"
+        description: "پرسیدن درباره افراد و ضمایر ملکی.",
+        path: "/learn/de-fa/A1/A1-1-M02-L05"
       }
     ]
   },
@@ -63,16 +63,22 @@ export const A1_MODULES: ModuleStub[] = [
     level: "A1",
     lessons: [
       {
-        id: "A1-M03-L06",
+        id: "A1-1-M03-L06",
         title: "در کافه (Im Café)",
         description: "سفارش دادن قهوه و کیک.",
-        path: "/learn/de-fa/A1/lesson-06"
+        path: "/learn/de-fa/A1/A1-1-M03-L06"
       },
       {
-        id: "A1-M03-L07",
+        id: "A1-1-M03-L07",
         title: "میوه‌ها و سبزیجات (Obst & Gemüse)",
-        description: "واژگان مربوط به خرید و جمع بستن اسامی.",
-        path: "/learn/de-fa/A1/lesson-07"
+        description: "واژگان مربوط به خرید.",
+        path: "/learn/de-fa/A1/A1-1-M03-L07"
+      },
+      {
+        id: "A1-1-M03-L08",
+        title: "در رستوران (Im Restaurant)",
+        description: "سفارش غذا.",
+        path: "/learn/de-fa/A1/A1-1-M03-L08"
       }
     ]
   },
@@ -82,16 +88,34 @@ export const A1_MODULES: ModuleStub[] = [
     level: "A1",
     lessons: [
       {
-        id: "A1-M04-L08",
+        id: "A1-2-M04-L07",
         title: "ساعت چند است؟ (Uhrzeit)",
         description: "پرسیدن و گفتن زمان.",
-        path: "/learn/de-fa/A1/lesson-08"
+        path: "/learn/de-fa/A1/A1-2-M04-L07"
       },
       {
-        id: "A1-M04-L09",
+        id: "A1-2-M04-L08",
         title: "برنامه روزانه (Tagesablauf)",
         description: "بیدار شدن، کار کردن، خوابیدن.",
-        path: "/learn/de-fa/A1/lesson-09"
+        path: "/learn/de-fa/A1/A1-2-M04-L08"
+      },
+      {
+        id: "A1-2-M04-L09",
+        title: "روزهای هفته (Wochentage)",
+        description: "روزهای هفته و برنامه‌ریزی.",
+        path: "/learn/de-fa/A1/A1-2-M04-L09"
+      },
+      {
+        id: "A1-2-M04-L10",
+        title: "قرار ملاقات (Termine)",
+        description: "تنظیم قرار ملاقات.",
+        path: "/learn/de-fa/A1/A1-2-M04-L10"
+      },
+      {
+        id: "A1-2-M04-L11",
+        title: "عادات روزانه (Gewohnheiten)",
+        description: "صحبت درباره عادات.",
+        path: "/learn/de-fa/A1/A1-2-M04-L11"
       }
     ]
   },
@@ -101,16 +125,34 @@ export const A1_MODULES: ModuleStub[] = [
     level: "A1",
     lessons: [
       {
-        id: "A1-M05-L10",
+        id: "A1-2-M05-L09",
         title: "سرگرمی‌ها (Hobbys)",
         description: "صحبت درباره علایق و سرگرمی‌ها.",
-        path: "/learn/de-fa/A1/lesson-10"
+        path: "/learn/de-fa/A1/A1-2-M05-L09"
       },
       {
-        id: "A1-M05-L11",
+        id: "A1-2-M05-L10",
+        title: "ورزش (Sport)",
+        description: "صحبت درباره ورزش.",
+        path: "/learn/de-fa/A1/A1-2-M05-L10"
+      },
+      {
+        id: "A1-2-M05-L11",
         title: "آخر هفته (Wochenende)",
         description: "برنامه‌ریزی برای تعطیلات.",
-        path: "/learn/de-fa/A1/lesson-11"
+        path: "/learn/de-fa/A1/A1-2-M05-L11"
+      },
+      {
+        id: "A1-2-M05-L12",
+        title: "موسیقی و فیلم (Musik & Film)",
+        description: "صحبت درباره موسیقی و فیلم.",
+        path: "/learn/de-fa/A1/A1-2-M05-L12"
+      },
+      {
+        id: "A1-2-M05-L13",
+        title: "سفر (Reisen)",
+        description: "برنامه‌ریزی سفر.",
+        path: "/learn/de-fa/A1/A1-2-M05-L13"
       }
     ]
   },
@@ -120,10 +162,34 @@ export const A1_MODULES: ModuleStub[] = [
     level: "A1",
     lessons: [
       {
-        id: "A1-M06-L12",
+        id: "A1-2-M06-L11",
+        title: "مکان‌ها در شهر (Orte in der Stadt)",
+        description: "فروشگاه‌ها، رستوران‌ها و...",
+        path: "/learn/de-fa/A1/A1-2-M06-L11"
+      },
+      {
+        id: "A1-2-M06-L12",
         title: "آدرس پرسیدن (Nach dem Weg fragen)",
         description: "پیدا کردن مکان‌ها و جهت‌ها.",
-        path: "/learn/de-fa/A1/lesson-12"
+        path: "/learn/de-fa/A1/A1-2-M06-L12"
+      },
+      {
+        id: "A1-1-M06-L13",
+        title: "حمل و نقل (Verkehrsmittel)",
+        description: "وسایل حمل و نقل.",
+        path: "/learn/de-fa/A1/A1-1-M06-L13"
+      },
+      {
+        id: "A1-1-M06-L14",
+        title: "بلیت خریدن (Fahrkarten kaufen)",
+        description: "خرید بلیت حمل و نقل.",
+        path: "/learn/de-fa/A1/A1-1-M06-L14"
+      },
+      {
+        id: "A1-1-M06-L15",
+        title: "مسیریابی (Wegbeschreibung)",
+        description: "توضیح دادن مسیر.",
+        path: "/learn/de-fa/A1/A1-1-M06-L15"
       }
     ]
   }
@@ -136,16 +202,16 @@ export const A2_MODULES: ModuleStub[] = [
     level: "A2",
     lessons: [
       {
-        id: "A2-M07-L01",
+        id: "A2-1-M07-L01",
         title: "تجربه‌های سفر (Urlaubserlebnisse)",
         description: "صحبت درباره تعطیلات با زمان Perfekt.",
-        path: "/learn/de-fa/A2/lesson-01"
+        path: "/learn/de-fa/A2/A2-1-M07-L01"
       },
       {
-        id: "A2-M07-L02",
+        id: "A2-1-M07-L02",
         title: "سفر با تاخیر (Reise mit Verspätung)",
         description: "صحبت درباره مشکلات سفر و Perfekt با sein.",
-        path: "/learn/de-fa/A2/lesson-02"
+        path: "/learn/de-fa/A2/A2-1-M07-L02"
       }
     ]
   },
@@ -155,16 +221,16 @@ export const A2_MODULES: ModuleStub[] = [
     level: "A2",
     lessons: [
       {
-        id: "A2-M08-L03",
+        id: "A2-1-M08-L03",
         title: "شغل من (Mein Beruf)",
         description: "توصیف مشاغل و فعالیت‌های کاری.",
-        path: "/learn/de-fa/A2/lesson-03"
+        path: "/learn/de-fa/A2/A2-1-M08-L03"
       },
       {
-        id: "A2-M08-L04",
+        id: "A2-1-M08-L04",
         title: "در دفتر (Im Büro)",
         description: "واژگان دفتر و ارتباطات کاری.",
-        path: "/learn/de-fa/A2/lesson-04"
+        path: "/learn/de-fa/A2/A2-1-M08-L04"
       }
     ]
   },
@@ -174,16 +240,16 @@ export const A2_MODULES: ModuleStub[] = [
     level: "A2",
     lessons: [
       {
-        id: "A2-M09-L05",
+        id: "A2-1-M09-L05",
         title: "پیش دکتر (Beim Arzt)",
         description: "توصیف علائم و ویزیت پزشک.",
-        path: "/learn/de-fa/A2/lesson-05"
+        path: "/learn/de-fa/A2/A2-1-M09-L05"
       },
       {
-        id: "A2-M09-L06",
+        id: "A2-1-M09-L06",
         title: "زندگی سالم (Gesund leben)",
         description: "صحبت درباره سبک زندگی سالم.",
-        path: "/learn/de-fa/A2/lesson-06"
+        path: "/learn/de-fa/A2/A2-1-M09-L06"
       }
     ]
   },
@@ -193,16 +259,16 @@ export const A2_MODULES: ModuleStub[] = [
     level: "A2",
     lessons: [
       {
-        id: "A2-M10-L07",
+        id: "A2-2-M10-L07",
         title: "اوقات فراغت من (Meine Freizeit)",
         description: "صحبت درباره سرگرمی‌ها و ترجیحات.",
-        path: "/learn/de-fa/A2/lesson-07"
+        path: "/learn/de-fa/A2/A2-2-M10-L07"
       },
       {
-        id: "A2-M10-L08",
+        id: "A2-2-M10-L08",
         title: "برنامه‌های آخر هفته (Wochenendpläne)",
         description: "برنامه‌ریزی و زمان آینده.",
-        path: "/learn/de-fa/A2/lesson-08"
+        path: "/learn/de-fa/A2/A2-2-M10-L08"
       }
     ]
   },
@@ -212,16 +278,16 @@ export const A2_MODULES: ModuleStub[] = [
     level: "A2",
     lessons: [
       {
-        id: "A2-M11-L09",
+        id: "A2-2-M11-L09",
         title: "اینترنت و موبایل (Internet & Handy)",
         description: "صحبت درباره تکنولوژی و مقایسه.",
-        path: "/learn/de-fa/A2/lesson-09"
+        path: "/learn/de-fa/A2/A2-2-M11-L09"
       },
       {
-        id: "A2-M11-L10",
+        id: "A2-2-M11-L10",
         title: "اخبار و رسانه (Nachrichten & Medien)",
         description: "صحبت درباره اخبار و رسانه‌ها.",
-        path: "/learn/de-fa/A2/lesson-10"
+        path: "/learn/de-fa/A2/A2-2-M11-L10"
       }
     ]
   },
@@ -231,16 +297,16 @@ export const A2_MODULES: ModuleStub[] = [
     level: "A2",
     lessons: [
       {
-        id: "A2-M12-L11",
+        id: "A2-2-M12-L11",
         title: "دعوت‌نامه‌ها (Einladungen)",
         description: "نوشتن و پاسخ به دعوت‌نامه.",
-        path: "/learn/de-fa/A2/lesson-11"
+        path: "/learn/de-fa/A2/A2-2-M12-L11"
       },
       {
-        id: "A2-M12-L12",
+        id: "A2-2-M12-L12",
         title: "جشن‌های آلمانی (Deutsche Feste)",
         description: "آشنایی با جشن‌ها و سنت‌های آلمانی.",
-        path: "/learn/de-fa/A2/lesson-12"
+        path: "/learn/de-fa/A2/A2-2-M12-L12"
       }
     ]
   }
