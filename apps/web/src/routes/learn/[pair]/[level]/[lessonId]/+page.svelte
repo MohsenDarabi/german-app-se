@@ -49,6 +49,9 @@
     lessonStore.nextStep();
   }
 
+  // Game step types that shouldn't track wrong answers (they report summary stats, not individual Q&A)
+  const gameStepTypes = ['rapid-fire', 'memory-match', 'vocab-check', 'word-hunt', 'speed-challenge'];
+
   async function handleAnswer(event: CustomEvent) {
     const { correct, userAnswer, correctAnswer, allowContinue } = event.detail;
 
@@ -58,15 +61,17 @@
     } else {
       console.log("❌ Wrong Answer - Must retry");
 
-      // Track wrong answer for end-of-lesson review
-      await saveWrongAnswer({
-        lessonId: data.lesson.id,
-        stepId: $currentStep.id,
-        stepType: $currentStep.type,
-        question: getQuestionText($currentStep),
-        userAnswer: userAnswer || 'unknown',
-        correctAnswer: correctAnswer || 'unknown'
-      });
+      // Skip wrong answer tracking for game steps (they report summary stats, not individual Q&A)
+      if (!gameStepTypes.includes($currentStep.type)) {
+        await saveWrongAnswer({
+          lessonId: data.lesson.id,
+          stepId: $currentStep.id,
+          stepType: $currentStep.type,
+          question: getQuestionText($currentStep),
+          userAnswer: userAnswer || 'unknown',
+          correctAnswer: correctAnswer || 'unknown'
+        });
+      }
 
       // Don't enable continue - user must retry
       if (allowContinue === false) {
