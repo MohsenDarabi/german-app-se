@@ -355,7 +355,7 @@ GOOGLE_APPLICATION_CREDENTIALS="./scripts/keys/gcp-tts-service-account.json" \
 - "Jan" → "Januar"
 - "Dr" → "Doktor"
 
-**Solution**: The `generate-audio.js` script now uses SSML with `<sub>` tags to protect these words. Protected words list is in the script's `PROTECTED_WORDS` array.
+**Solution**: The `generate-audio.js` script uses SSML with `<sub>` tags to protect these words.
 
 **If you find a new word being expanded**:
 1. Add it to `PROTECTED_WORDS` in `scripts/generate-audio.js`
@@ -365,9 +365,42 @@ GOOGLE_APPLICATION_CREDENTIALS="./scripts/keys/gcp-tts-service-account.json" \
 const PROTECTED_WORDS = [
   'Max', 'max',    // Name, not "maximal"
   'Jan', 'jan',    // Name, not "Januar"
+  'ja', 'Ja',      // "yes" - don't expand
+  'ok', 'OK',      // Keep as-is
   // Add new words here
 ];
 ```
+
+---
+
+### Google TTS Pronunciation Issues (FIXED)
+
+**Problem**: Google TTS mispronounces certain words:
+- "Hallo" → sounds like "Aalo" (H dropped)
+- "Hi" → may sound wrong
+
+**Solution**: The `generate-audio.js` script uses SSML `<phoneme>` tags with IPA for exact pronunciation.
+
+**If you find a word being mispronounced**:
+1. Add it to `PRONUNCIATION_FIXES` in `scripts/generate-audio.js`
+2. Use IPA notation (see: https://en.wikipedia.org/wiki/Help:IPA/Standard_German)
+3. Regenerate audio with `--force`
+
+```javascript
+const PRONUNCIATION_FIXES = {
+  'Hallo': 'haloː',    // Ensure H is pronounced
+  'hallo': 'haloː',
+  'Hi': 'haɪ',         // English-style "hi"
+  'hi': 'haɪ',
+  // Add new words here with IPA pronunciation
+};
+```
+
+**Common IPA for German**:
+- `h` = H sound (as in "Hallo")
+- `aː` = long A (as in "Tag")
+- `oː` = long O (as in "Hallo")
+- `aɪ` = "ai" diphthong (as in English "hi")
 
 ---
 
