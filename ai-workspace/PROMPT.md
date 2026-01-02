@@ -66,6 +66,17 @@ cat ai-workspace/STATUS.md
 
 ---
 
+## References
+
+| Reference | File |
+|-----------|------|
+| All 17 step types with examples | `references/step-types.md` |
+| Navigate source content (Babbel/Busuu/PDF) | `references/source-content.md` |
+| Critical rules & troubleshooting | `references/rules-and-tips.md` |
+| Lesson JSON template | `references/lesson-template.md` |
+
+---
+
 ## Rules
 
 1. **Always update STATUS.md** after completing work
