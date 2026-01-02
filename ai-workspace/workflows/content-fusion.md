@@ -48,17 +48,23 @@ Contains full curriculum with:
 
 **Use for:** Exercise ideas, dialog structures
 
-### Source 3: Busuu (Extracted)
+### Source 3: Busuu (Screen-Flow-Mapper - MOST COMPLETE)
 ```
-extracted-content/busuu/A1/  (and A2, B1, B2)
+scripts/screen-flow-mapper/output/
+├── A1/  (168 lessons)
+├── A2/  (98 lessons)
+├── B1/  (140 lessons)
+└── B2/  (76 lessons)
 ```
 
-Contains:
-- Flashcard content
-- Fill-in-blank patterns
+Contains per-screen extracted content:
+- Flashcards with translations
+- Fill-in-blank exercises
 - Grammar tips
+- True/false questions
+- Matchup exercises
 
-**Use for:** Additional vocabulary, grammar explanations
+**Use for:** Additional vocabulary, grammar explanations, exercise patterns
 
 ---
 
@@ -125,9 +131,9 @@ ls /Volumes/External_ssd_mohsen/WorkspaceExtern/languageAppContent/phase1-extrac
 ls /Volumes/External_ssd_mohsen/WorkspaceExtern/babbel-extractor-yolo/output/A11/
 cat /Volumes/External_ssd_mohsen/WorkspaceExtern/babbel-extractor-yolo/output/A11/unit-01/lesson-01.json | jq '.screens[].content'
 
-# 3. Check Busuu chapters
-ls extracted-content/busuu/A1/
-cat extracted-content/busuu/A1/chapter-01/*.json | jq
+# 3. Check Busuu lessons (screen-flow-mapper)
+ls scripts/screen-flow-mapper/output/A1/
+cat scripts/screen-flow-mapper/output/A1/chapter-01-introductions/*.json | jq '.screens[].content'
 ```
 
 **Extract from each:**
