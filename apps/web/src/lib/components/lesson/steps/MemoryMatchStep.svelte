@@ -46,19 +46,20 @@
     // Create cards from pairs
     const newCards: Card[] = [];
 
-    step.pairs.forEach(pair => {
+    step.pairs.forEach((pair, index) => {
+      const pairId = `pair-${index}`;
       newCards.push({
-        id: `${pair.id}-de`,
-        pairId: pair.id,
-        text: pair.german,
+        id: `${pairId}-de`,
+        pairId: pairId,
+        text: pair.de,
         type: 'german',
         flipped: false,
         matched: false
       });
       newCards.push({
-        id: `${pair.id}-fa`,
-        pairId: pair.id,
-        text: pair.persian,
+        id: `${pairId}-fa`,
+        pairId: pairId,
+        text: pair.fa,
         type: 'persian',
         flipped: false,
         matched: false

@@ -83,13 +83,15 @@
       "type": "rapid-fire",
       "id": "g1",
       "title": "آزمون سریع",
-      "instruction": "به سرعت پاسخ دهید!",
+      "instruction": "ترجمه درست را انتخاب کنید!",
       "timePerQuestion": 5,
+      "basePoints": 10,
+      "showStreak": true,
       "questions": [
-        { "left": "Hallo", "right": "سلام", "correctSide": "right" },
-        { "left": "خداحافظ", "right": "Tschüss", "correctSide": "left" },
-        { "left": "Hi", "right": "سلام غیررسمی", "correctSide": "right" },
-        { "left": "ممنون", "right": "danke", "correctSide": "left" }
+        { "prompt": "Hallo", "left": "خداحافظ", "right": "سلام", "correctSide": "right" },
+        { "prompt": "Tschüss", "left": "خداحافظ", "right": "سلام", "correctSide": "left" },
+        { "prompt": "Hi", "left": "ممنون", "right": "سلام غیررسمی", "correctSide": "right" },
+        { "prompt": "danke", "left": "ممنون", "right": "خداحافظ", "correctSide": "left" }
       ]
     },
     {

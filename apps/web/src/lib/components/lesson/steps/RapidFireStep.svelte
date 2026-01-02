@@ -294,7 +294,7 @@
           </button>
         </div>
 
-        <!-- Card - shows the question (German word if correctSide is 'right', otherwise Persian) -->
+        <!-- Card - shows the prompt (word to match) -->
         <div
           class="card"
           class:correct={showResult === 'correct'}
@@ -309,8 +309,8 @@
           role="button"
           tabindex="0"
         >
-          <span class="card-text">{currentQuestion.correctSide === 'right' ? currentQuestion.left : currentQuestion.right}</span>
-          <span class="card-flag">🇩🇪</span>
+          <span class="card-text">{currentQuestion.prompt}</span>
+          <span class="card-flag">🤔</span>
         </div>
 
         <!-- Right option -->

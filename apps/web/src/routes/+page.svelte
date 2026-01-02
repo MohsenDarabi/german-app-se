@@ -150,10 +150,10 @@
                     <button class="start-btn locked-btn" disabled>
                       {getButtonText(status, progress)}
                     </button>
-                  {:else if status === 'completed'}
+                  {:else if status === 'completed' || status === 'in-progress'}
                     <div class="action-group">
-                      <a href={lesson.path} class="start-btn completed">
-                        مرور ({progress?.score || 0}%)
+                      <a href={lesson.path} class="start-btn" class:completed={status === 'completed'}>
+                        {getButtonText(status, progress)}
                       </a>
                       <button class="reset-btn" on:click={() => handleResetLesson(lesson.id)}>
                         بازنشانی
@@ -204,10 +204,10 @@
                     <button class="start-btn locked-btn" disabled>
                       {getButtonText(status, progress)}
                     </button>
-                  {:else if status === 'completed'}
+                  {:else if status === 'completed' || status === 'in-progress'}
                     <div class="action-group">
-                      <a href={lesson.path} class="start-btn completed">
-                        مرور ({progress?.score || 0}%)
+                      <a href={lesson.path} class="start-btn" class:completed={status === 'completed'}>
+                        {getButtonText(status, progress)}
                       </a>
                       <button class="reset-btn" on:click={() => handleResetLesson(lesson.id)}>
                         بازنشانی

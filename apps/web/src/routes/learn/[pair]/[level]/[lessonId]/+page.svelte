@@ -119,12 +119,16 @@
 
 <div class="lesson-layout">
   <header class="lesson-header">
+    <button class="exit-btn" on:click={backToDashboard} title="خروج">
+      ✕
+    </button>
     <div class="progress-bar">
-      <div 
-        class="progress-fill" 
+      <div
+        class="progress-fill"
         style="width: {($lessonStore.currentIndex / (data.lesson.steps.length || 1)) * 100}%"
       ></div>
     </div>
+    <span class="step-counter">{$lessonStore.currentIndex + 1}/{data.lesson.steps.length}</span>
   </header>
 
   <main class="lesson-content">
@@ -187,9 +191,42 @@
 
   .lesson-header {
     padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .exit-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    background: #f1f5f9;
+    color: #64748b;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    flex-shrink: 0;
+  }
+
+  .exit-btn:hover {
+    background: #e2e8f0;
+    color: #475569;
+  }
+
+  .step-counter {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #64748b;
+    white-space: nowrap;
+    flex-shrink: 0;
   }
 
   .progress-bar {
+    flex: 1;
     height: 8px;
     background: #e2e8f0;
     border-radius: 999px;

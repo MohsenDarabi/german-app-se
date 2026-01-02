@@ -336,8 +336,9 @@ export const ComprehensionStepSchema = BaseStepSchema.extend({
 -------------------------------------------------- */
 
 export const RapidFireQuestionSchema = z.object({
-  left: z.string(),
-  right: z.string(),
+  prompt: z.string(), // Word/phrase shown on the card (what to match)
+  left: z.string(),   // Left option text
+  right: z.string(),  // Right option text
   correctSide: z.enum(["left", "right"]),
 });
 
@@ -346,6 +347,8 @@ export const RapidFireStepSchema = BaseStepSchema.extend({
   title: z.string().default("Quick Quiz"),
   instruction: z.string().default("Answer quickly!"),
   timePerQuestion: z.number().int().min(1).max(30).default(5),
+  basePoints: z.number().int().min(1).default(10),
+  showStreak: z.boolean().default(true),
   questions: z.array(RapidFireQuestionSchema).min(2),
 });
 

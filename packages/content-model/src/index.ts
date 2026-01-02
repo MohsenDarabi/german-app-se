@@ -336,8 +336,9 @@ export const ComprehensionStepSchema = BaseStepSchema.extend({
 -------------------------------------------------- */
 
 export const RapidFireQuestionSchema = z.object({
-  left: z.string(),
-  right: z.string(),
+  prompt: z.string(), // Word/phrase shown on the card (what to match)
+  left: z.string(),   // Left option text
+  right: z.string(),  // Right option text
   correctSide: z.enum(["left", "right"]),
 });
 
