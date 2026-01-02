@@ -89,7 +89,7 @@
     <div class="success-section">
       <p class="feedback-text success">آفرین! صحیح است</p>
       {#if step.feedback?.explanation}
-        <p class="explanation">{step.feedback.explanation}</p>
+        <p class="explanation" dir="rtl"><BiDiText text={step.feedback.explanation} /></p>
       {/if}
     </div>
   {/if}
@@ -101,7 +101,7 @@
         پاسخ صحیح: <strong>{step.correctAnswer ? 'درست' : 'نادرست'}</strong>
       </p>
       {#if step.feedback?.explanation}
-        <p class="explanation">{step.feedback.explanation}</p>
+        <p class="explanation" dir="rtl"><BiDiText text={step.feedback.explanation} /></p>
       {/if}
       <button class="retry-btn" on:click={retry}>تلاش مجدد</button>
     </div>

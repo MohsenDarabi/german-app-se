@@ -224,6 +224,60 @@ function getTextHash(text) {
 }
 
 // ============================================
+// SSML PROCESSING - Fix TTS pronunciation issues
+// ============================================
+
+// Words that Google TTS incorrectly expands (e.g., "Max" → "maximal")
+// Add new problematic words here as discovered
+const PROTECTED_WORDS = [
+  'Max', 'max',           // Name, not "maximal"
+  'Jan', 'jan',           // Name, not "Januar"
+  'Min', 'min',           // Could expand to "Minute"
+  'Prof', 'prof',         // Could expand
+  'Dr', 'dr',             // Could expand to "Doktor"
+  'Nr', 'nr',             // Could expand to "Nummer"
+  'ca', 'Ca',             // Could expand to "circa"
+  'ja', 'Ja',             // "yes" - don't expand
+  'ok', 'OK', 'Ok',       // Keep as-is
+];
+
+// Words with pronunciation issues (e.g., dropped H in "Hallo")
+// Uses IPA phoneme for exact pronunciation
+// IPA reference: https://en.wikipedia.org/wiki/Help:IPA/Standard_German
+const PRONUNCIATION_FIXES = {
+  'Hallo': 'haloː',       // Prevent H from being dropped
+  'hallo': 'haloː',
+  'Hi': 'haɪ',            // English-style "hi"
+  'hi': 'haɪ',
+};
+
+/**
+ * Wrap text in SSML to fix pronunciation issues
+ * Uses <sub> tag for abbreviation protection
+ * Uses <phoneme> tag for pronunciation fixes
+ */
+function wrapWithSSML(text) {
+  let processed = text;
+
+  // Apply pronunciation fixes first (using IPA phonemes)
+  for (const [word, ipa] of Object.entries(PRONUNCIATION_FIXES)) {
+    const regex = new RegExp(`\\b${word}\\b`, 'g');
+    processed = processed.replace(regex, `<phoneme alphabet="ipa" ph="${ipa}">${word}</phoneme>`);
+  }
+
+  // Wrap protected words with <sub alias="..."> to prevent abbreviation expansion
+  for (const word of PROTECTED_WORDS) {
+    // Skip if already wrapped in phoneme tag
+    if (PRONUNCIATION_FIXES[word]) continue;
+    // Match word boundaries to avoid partial replacements
+    const regex = new RegExp(`\\b${word}\\b`, 'g');
+    processed = processed.replace(regex, `<sub alias="${word}">${word}</sub>`);
+  }
+
+  return `<speak>${processed}</speak>`;
+}
+
+// ============================================
 // GOOGLE CLOUD TTS API
 // ============================================
 
@@ -231,8 +285,11 @@ async function synthesizeSpeech(text, outputPath) {
   const apiKey = process.env.GOOGLE_CLOUD_API_KEY;
   const useServiceAccount = !apiKey && process.env.GOOGLE_APPLICATION_CREDENTIALS;
 
+  // Use SSML to prevent abbreviation expansion
+  const ssmlText = wrapWithSSML(text);
+
   const requestBody = JSON.stringify({
-    input: { text },
+    input: { ssml: ssmlText },
     voice: CONFIG.voice,
     audioConfig: CONFIG.audioConfig,
   });
@@ -607,30 +664,37 @@ async function main() {
 
     // Check if already in manifest (unless force regenerate)
     if (!forceRegenerate && manifest.generatedTexts[hash]) {
-      textsAlreadyGenerated++;
-
       // Still need to copy files to all locations
       const sourceFile = manifest.generatedTexts[hash].filePath;
-      if (fs.existsSync(sourceFile)) {
-        for (const item of items) {
-          const destPath = path.join(CONFIG.outputDir, item.lessonId, `${item.id}.mp3`);
-          const destDir = path.dirname(destPath);
-          if (!fs.existsSync(destDir)) {
-            fs.mkdirSync(destDir, { recursive: true });
-          }
 
-          // Check if file needs updating: either doesn't exist or mapping changed
-          const currentMapping = manifest.fileMapping[item.lessonId]?.[item.id];
-          const needsUpdate = !fs.existsSync(destPath) || currentMapping !== hash;
+      // If source file is missing, remove stale manifest entry and regenerate
+      if (!fs.existsSync(sourceFile)) {
+        console.log(`⚠️  Cached file missing for "${text.substring(0, 30)}...", will regenerate`);
+        delete manifest.generatedTexts[hash];
+        textsToGenerate.push({ text, hash, items });
+        charsToGenerate += text.length;
+        continue;
+      }
 
-          if (needsUpdate) {
-            fs.copyFileSync(sourceFile, destPath);
-            // Update fileMapping
-            if (!manifest.fileMapping[item.lessonId]) {
-              manifest.fileMapping[item.lessonId] = {};
-            }
-            manifest.fileMapping[item.lessonId][item.id] = hash;
+      textsAlreadyGenerated++;
+      for (const item of items) {
+        const destPath = path.join(CONFIG.outputDir, item.lessonId, `${item.id}.mp3`);
+        const destDir = path.dirname(destPath);
+        if (!fs.existsSync(destDir)) {
+          fs.mkdirSync(destDir, { recursive: true });
+        }
+
+        // Check if file needs updating: either doesn't exist or mapping changed
+        const currentMapping = manifest.fileMapping[item.lessonId]?.[item.id];
+        const needsUpdate = !fs.existsSync(destPath) || currentMapping !== hash;
+
+        if (needsUpdate) {
+          fs.copyFileSync(sourceFile, destPath);
+          // Update fileMapping
+          if (!manifest.fileMapping[item.lessonId]) {
+            manifest.fileMapping[item.lessonId] = {};
           }
+          manifest.fileMapping[item.lessonId][item.id] = hash;
         }
       }
       continue;

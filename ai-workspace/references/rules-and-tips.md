@@ -126,7 +126,32 @@ Across a lesson, distribute correct answers across positions 0, 1, 2, 3.
 
 ---
 
-### Rule 7: Fill-in-Blank Verb Consistency
+### Rule 7: Only ONE Correct Answer Per Question
+
+**CRITICAL**: Every quiz/fill-in-blank must have EXACTLY ONE valid answer.
+
+```json
+// BAD - both "bin" and "heiße" work for "Ich ___ Max"
+{
+  "sentence": "Ich {0} Max.",
+  "options": ["bin", "heiße", "Tschüss"],  // ❌ Two correct options!
+}
+
+// GOOD - only "bin" works, "heißt" is wrong conjugation
+{
+  "sentence": "Ich {0} Max.",
+  "options": ["bin", "heißt", "Tschüss"],  // ✓ Only one correct
+}
+```
+
+**Common traps:**
+- "bin" vs "heiße" - both mean "I am" → use wrong conjugation "heißt" as distractor
+- "du" vs "Sie" in same question → only one is contextually correct
+- Synonyms that both work → pick one and use unrelated distractors
+
+---
+
+### Rule 8: Fill-in-Blank Verb Consistency
 
 **DO NOT mix conjugations from different verbs** in the same exercise.
 
@@ -152,7 +177,7 @@ Across a lesson, distribute correct answers across positions 0, 1, 2, 3.
 
 ---
 
-### Rule 8: Game Step Minimums
+### Rule 9: Game Step Minimums
 
 | Game Type | Minimum Items |
 |-----------|---------------|
@@ -163,7 +188,7 @@ Across a lesson, distribute correct answers across positions 0, 1, 2, 3.
 
 ---
 
-### Rule 9: Rapid-Fire Balance
+### Rule 10: Rapid-Fire Balance
 
 Balance `correctSide` roughly 50% "left" / 50% "right".
 
@@ -322,6 +347,29 @@ GOOGLE_APPLICATION_CREDENTIALS="./scripts/keys/gcp-tts-service-account.json" \
 ---
 
 ## TROUBLESHOOTING
+
+### Google TTS Abbreviation Expansion (FIXED)
+
+**Problem**: Google TTS expands short words as abbreviations:
+- "Max" → "maximal"
+- "Jan" → "Januar"
+- "Dr" → "Doktor"
+
+**Solution**: The `generate-audio.js` script now uses SSML with `<sub>` tags to protect these words. Protected words list is in the script's `PROTECTED_WORDS` array.
+
+**If you find a new word being expanded**:
+1. Add it to `PROTECTED_WORDS` in `scripts/generate-audio.js`
+2. Regenerate audio with `--force`
+
+```javascript
+const PROTECTED_WORDS = [
+  'Max', 'max',    // Name, not "maximal"
+  'Jan', 'jan',    // Name, not "Januar"
+  // Add new words here
+];
+```
+
+---
 
 ### "Step type X not found"
 - Check `type` field matches exactly (case-sensitive)

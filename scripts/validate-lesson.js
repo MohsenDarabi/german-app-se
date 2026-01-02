@@ -335,6 +335,154 @@ const rules = [
       }
       return { pass: true };
     }
+  },
+
+  // ========================================
+  // SEMANTIC QUALITY RULES
+  // ========================================
+
+  {
+    name: 'fill-blank-no-synonym-traps',
+    description: 'Fill-in-blank: check for common synonym traps (bin/heiße)',
+    check: (lesson) => {
+      // Known synonym pairs that should NOT both appear as options for the same blank
+      const synonymTraps = [
+        ['bin', 'heiße'],      // Both work for "Ich ___ Max"
+        ['Hallo', 'Hi'],       // Both are greetings
+        ['Guten Tag', 'Hallo'], // Both are greetings
+        ['Tschüss', 'Auf Wiedersehen'], // Both are goodbyes
+      ];
+
+      const fills = lesson.steps?.filter(s => s.type === 'fill-in-blank') || [];
+      const warnings = [];
+
+      for (const step of fills) {
+        if (!step.options) continue;
+        const optionsLower = step.options.map(o => o.toLowerCase());
+
+        for (const [word1, word2] of synonymTraps) {
+          const has1 = optionsLower.some(o => o.includes(word1.toLowerCase()));
+          const has2 = optionsLower.some(o => o.includes(word2.toLowerCase()));
+
+          if (has1 && has2) {
+            // Check if both could fill the same blank
+            const sentence = step.sentence || '';
+            if (sentence.includes('{0}') || sentence.includes('{1}')) {
+              warnings.push(`${step.id}: has both "${word1}" and "${word2}" - potential synonym trap`);
+            }
+          }
+        }
+      }
+
+      if (warnings.length > 0) {
+        return { pass: false, error: warnings.join('; ') };
+      }
+      return { pass: true };
+    }
+  },
+  {
+    name: 'rapid-fire-balance',
+    description: 'Rapid-fire: correctSide should be balanced (not >80% one side)',
+    check: (lesson) => {
+      const rapidFires = lesson.steps?.filter(s => s.type === 'rapid-fire') || [];
+
+      for (const rf of rapidFires) {
+        if (!rf.questions?.length || rf.questions.length < 5) continue;
+
+        const leftCount = rf.questions.filter(q => q.correctSide === 'left').length;
+        const rightCount = rf.questions.filter(q => q.correctSide === 'right').length;
+        const total = leftCount + rightCount;
+
+        if (total === 0) continue;
+
+        const leftPct = leftCount / total;
+        const rightPct = rightCount / total;
+
+        if (leftPct > 0.8 || rightPct > 0.8) {
+          return {
+            pass: false,
+            error: `${rf.id}: unbalanced (${Math.round(leftPct*100)}% left, ${Math.round(rightPct*100)}% right)`
+          };
+        }
+      }
+      return { pass: true };
+    }
+  },
+  {
+    name: 'fill-blank-correct-answers-valid',
+    description: 'Fill-in-blank: correctAnswers indices are within options range',
+    check: (lesson) => {
+      const fills = lesson.steps?.filter(s => s.type === 'fill-in-blank') || [];
+
+      for (const step of fills) {
+        if (!step.options || !step.correctAnswers) continue;
+
+        for (let i = 0; i < step.correctAnswers.length; i++) {
+          const idx = step.correctAnswers[i];
+          if (idx < 0 || idx >= step.options.length) {
+            return {
+              pass: false,
+              error: `${step.id}: correctAnswers[${i}]=${idx} out of range (options has ${step.options.length} items)`
+            };
+          }
+        }
+      }
+      return { pass: true };
+    }
+  },
+  {
+    name: 'game-steps-present',
+    description: 'Lesson has at least one game step (rapid-fire, memory-match, etc.)',
+    check: (lesson) => {
+      const gameTypes = ['rapid-fire', 'memory-match', 'word-hunt', 'speed-challenge', 'vocab-check'];
+      const gameSteps = lesson.steps?.filter(s => gameTypes.includes(s.type)) || [];
+
+      if (gameSteps.length === 0) {
+        return { pass: false, error: 'No game steps found - add rapid-fire, memory-match, etc.' };
+      }
+      return { pass: true };
+    }
+  },
+  {
+    name: 'matching-no-duplicate-meanings',
+    description: 'Matching: items should not have same translation',
+    check: (lesson) => {
+      const matchings = lesson.steps?.filter(s => s.type === 'matching') || [];
+
+      for (const step of matchings) {
+        if (!step.matches) continue;
+
+        const texts = step.matches.map(m => m.text?.toLowerCase());
+        const uniqueTexts = new Set(texts);
+
+        if (texts.length !== uniqueTexts.size) {
+          return { pass: false, error: `${step.id}: has duplicate match texts (ambiguous)` };
+        }
+      }
+      return { pass: true };
+    }
+  },
+  {
+    name: 'translation-correct-answers-valid',
+    description: 'Translation: correctAnswers indices are within options range',
+    check: (lesson) => {
+      const translations = lesson.steps?.filter(s => s.type === 'translation') || [];
+
+      for (const step of translations) {
+        if (!step.options || !step.correctAnswers) continue;
+
+        for (let i = 0; i < step.correctAnswers.length; i++) {
+          const idx = step.correctAnswers[i];
+          if (idx < 0 || idx >= step.options.length) {
+            return {
+              pass: false,
+              error: `${step.id}: correctAnswers[${i}]=${idx} out of range (options has ${step.options.length} items)`
+            };
+          }
+        }
+      }
+      return { pass: true };
+    }
   }
 ];
 

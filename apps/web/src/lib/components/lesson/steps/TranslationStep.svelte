@@ -143,7 +143,7 @@
         <strong>پاسخ صحیح:</strong> {step.correctTranslation.de}
       </p>
       {#if step.feedback?.explanation}
-        <p class="explanation">{step.feedback.explanation}</p>
+        <p class="explanation" dir="rtl"><BiDiText text={step.feedback.explanation} /></p>
       {/if}
       <button class="retry-btn" on:click={retry}>تلاش مجدد</button>
     </div>

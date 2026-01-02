@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { MatchingStep } from "$lib/content-model";
-  import { createEventDispatcher, onMount } from "svelte";
+  import { createEventDispatcher } from "svelte";
   import BiDiText from "$lib/components/ui/BiDiText.svelte";
 
   export let step: MatchingStep;
@@ -8,22 +8,31 @@
 
   const dispatch = createEventDispatcher();
 
+  // Fisher-Yates shuffle (deterministic, not dependent on sort stability)
+  function shuffle<T>(array: T[]): T[] {
+    const result = [...array];
+    for (let i = result.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [result[i], result[j]] = [result[j], result[i]];
+    }
+    return result;
+  }
+
   // State
-  let selectedItemId: string | null = null;
+  let selectedItemId: string | null = null;  // Selected from left (German) column
+  let selectedMatchId: string | null = null; // Selected from right (Persian) column
   let matchedPairs: [string, string][] = [];
   let isAnswered = false;
   let isCorrect = false;
   let canRetry = false;
 
-  // Initialize shuffledMatches immediately (not in onMount to avoid empty render)
-  let shuffledMatches: typeof step.matches = step.matches ? [...step.matches] : [];
-
-  // Shuffle on mount if needed
-  onMount(() => {
-    if (step.matches && step.shuffleTargets !== false) {
-      shuffledMatches = [...step.matches].sort(() => Math.random() - 0.5);
-    }
-  });
+  // Shuffle BOTH columns immediately on initialization
+  let shuffledItems: typeof step.items = step.shuffleTargets !== false
+    ? shuffle(step.items)
+    : [...step.items];
+  let shuffledMatches: typeof step.matches = step.shuffleTargets !== false
+    ? shuffle(step.matches)
+    : [...step.matches];
 
   // Check if an item is already matched
   function isItemMatched(itemId: string): boolean {
@@ -50,15 +59,30 @@
 
   function selectItem(itemId: string) {
     if (isAnswered || isItemMatched(itemId)) return;
-    selectedItemId = itemId;
+
+    // If a match is already selected, create the pair
+    if (selectedMatchId) {
+      matchedPairs = [...matchedPairs, [itemId, selectedMatchId]];
+      selectedItemId = null;
+      selectedMatchId = null;
+    } else {
+      // Select this item (deselect if clicking same one)
+      selectedItemId = selectedItemId === itemId ? null : itemId;
+    }
   }
 
   function selectMatch(matchId: string) {
-    if (isAnswered || !selectedItemId || isMatchUsed(matchId)) return;
+    if (isAnswered || isMatchUsed(matchId)) return;
 
-    // Create the pair
-    matchedPairs = [...matchedPairs, [selectedItemId, matchId]];
-    selectedItemId = null;
+    // If an item is already selected, create the pair
+    if (selectedItemId) {
+      matchedPairs = [...matchedPairs, [selectedItemId, matchId]];
+      selectedItemId = null;
+      selectedMatchId = null;
+    } else {
+      // Select this match (deselect if clicking same one)
+      selectedMatchId = selectedMatchId === matchId ? null : matchId;
+    }
   }
 
   function removePair(itemId: string) {
@@ -89,12 +113,14 @@
   function retry() {
     matchedPairs = [];
     selectedItemId = null;
+    selectedMatchId = null;
     isAnswered = false;
     isCorrect = false;
     canRetry = false;
-    // Reshuffle
+    // Reshuffle both columns
     if (step.shuffleTargets !== false) {
-      shuffledMatches = [...step.matches].sort(() => Math.random() - 0.5);
+      shuffledItems = shuffle(step.items);
+      shuffledMatches = shuffle(step.matches);
     }
   }
 
@@ -132,9 +158,9 @@
   {/if}
 
   <div class="columns">
-    <!-- Left column: Items (German words) -->
+    <!-- Left column: Items (German words) - shuffled -->
     <div class="column items-column">
-      {#each step.items as item}
+      {#each shuffledItems as item}
         {@const matched = isItemMatched(item.id)}
         {@const matchId = getMatchForItem(item.id)}
         {@const pairCorrect = matchId ? isPairCorrect(item.id, matchId) : false}
@@ -143,6 +169,7 @@
           class="match-chip"
           class:selected={selectedItemId === item.id}
           class:matched={matched}
+          class:selectable={selectedMatchId !== null && !matched}
           class:correct={isAnswered && matched && pairCorrect}
           class:wrong={isAnswered && matched && !pairCorrect}
           class:pair-coral={matched && !isAnswered && colorIndex === 0}
@@ -151,7 +178,7 @@
           class:pair-amber={matched && !isAnswered && colorIndex === 3}
           class:pair-indigo={matched && !isAnswered && colorIndex === 4}
           on:click={() => matched ? removePair(item.id) : selectItem(item.id)}
-          disabled={isAnswered}
+          disabled={isAnswered || matched}
         >
           <span class="item-text">
             {#if matched && !isAnswered}
@@ -166,7 +193,7 @@
       {/each}
     </div>
 
-    <!-- Right column: Matches (translations) -->
+    <!-- Right column: Matches (translations) - shuffled -->
     <div class="column matches-column" dir="rtl">
       {#each shuffledMatches as match}
         {@const used = isMatchUsed(match.id)}
@@ -174,6 +201,7 @@
         <button
           class="match-chip"
           class:used={used}
+          class:selected={selectedMatchId === match.id}
           class:selectable={selectedItemId !== null && !used}
           class:pair-coral={used && !isAnswered && matchColorIndex === 0}
           class:pair-teal={used && !isAnswered && matchColorIndex === 1}
@@ -181,7 +209,7 @@
           class:pair-amber={used && !isAnswered && matchColorIndex === 3}
           class:pair-indigo={used && !isAnswered && matchColorIndex === 4}
           on:click={() => selectMatch(match.id)}
-          disabled={isAnswered || used || selectedItemId === null}
+          disabled={isAnswered || used}
         >
           {#if used && !isAnswered}
             <span class="pair-indicator" style="background: {matchColorIndex >= 0 ? ['#ff7875', '#36cfc9', '#b37feb', '#ffc53d', '#597ef7'][matchColorIndex] : '#94a3b8'}">✓</span>
@@ -201,8 +229,8 @@
   {#if !isAnswered}
     <div class="progress-row">
       <span class="progress-text">{matchedPairs.length} از {step.items.length} جفت</span>
-      {#if selectedItemId}
-        <span class="hint-inline">← جفت را انتخاب کنید</span>
+      {#if selectedItemId || selectedMatchId}
+        <span class="hint-inline">جفت را انتخاب کنید</span>
       {/if}
     </div>
   {/if}
@@ -211,7 +239,7 @@
     <div class="success-section">
       <p class="feedback-text success">آفرین! همه جفت‌ها صحیح هستند</p>
       {#if step.feedback?.explanation}
-        <p class="explanation" dir="rtl">{step.feedback.explanation}</p>
+        <p class="explanation" dir="rtl"><BiDiText text={step.feedback.explanation} /></p>
       {/if}
     </div>
   {/if}
@@ -228,7 +256,7 @@
         {/each}
       </div>
       {#if step.feedback?.explanation}
-        <p class="explanation" dir="rtl">{step.feedback.explanation}</p>
+        <p class="explanation" dir="rtl"><BiDiText text={step.feedback.explanation} /></p>
       {/if}
       <button class="retry-btn" on:click={retry}>تلاش مجدد</button>
     </div>
@@ -249,24 +277,39 @@
     margin: 0;
   }
 
+  /* Mobile-first: stack columns vertically */
   .columns {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
   }
 
   .column {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 0.5rem;
+  }
+
+  /* Side-by-side columns on larger screens */
+  @media (min-width: 480px) {
+    .columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .column {
+      gap: 0.75rem;
+    }
   }
 
   .match-chip {
-    padding: 0.875rem 1rem;
+    /* Minimum 44px touch target for accessibility */
+    min-height: 44px;
+    padding: 0.75rem 0.875rem;
     border: 2px solid #e2e8f0;
     border-radius: 0.75rem;
     background: white;
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: #334155;
     cursor: pointer;
     transition: all 0.2s;
@@ -274,6 +317,13 @@
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
+  }
+
+  @media (min-width: 480px) {
+    .match-chip {
+      padding: 0.875rem 1rem;
+      font-size: 1rem;
+    }
   }
 
   .match-chip:hover:not(:disabled):not(.matched) {

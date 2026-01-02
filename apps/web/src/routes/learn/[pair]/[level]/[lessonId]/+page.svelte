@@ -200,25 +200,30 @@
 </div>
 
 <style>
+  /* Mobile-first styles */
   .lesson-layout {
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 64px); 
+    /* Use 100dvh for better mobile viewport handling */
+    height: 100dvh;
+    height: calc(100vh - 64px); /* Fallback */
     max-width: 600px;
     margin: 0 auto;
     background: #fff;
   }
 
   .lesson-header {
-    padding: 1rem;
+    padding: 0.75rem;
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 0.5rem;
+    flex-shrink: 0;
   }
 
   .exit-btn {
-    width: 32px;
-    height: 32px;
+    /* 44px minimum touch target */
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     border: none;
     background: #f1f5f9;
@@ -238,7 +243,7 @@
   }
 
   .step-counter {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 600;
     color: #64748b;
     white-space: nowrap;
@@ -247,7 +252,7 @@
 
   .progress-bar {
     flex: 1;
-    height: 8px;
+    height: 6px;
     background: #e2e8f0;
     border-radius: 999px;
     overflow: hidden;
@@ -262,20 +267,34 @@
   .lesson-content {
     flex: 1;
     overflow-y: auto;
-    padding: 1rem;
+    padding: 0.75rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* Use flex-start to prevent long content being pushed off-screen */
+    /* Content will scroll naturally from top */
+    justify-content: flex-start;
+    /* Prevent content from being hidden under notches */
+    padding-bottom: env(safe-area-inset-bottom, 0.75rem);
+  }
+
+  .step-animation {
+    /* Auto margins center short content, but allow long content to scroll */
+    margin: auto 0;
+    width: 100%;
   }
 
   .lesson-footer {
-    padding: 1rem;
+    padding: 0.75rem;
+    padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
     border-top: 1px solid #f1f5f9;
+    flex-shrink: 0;
   }
 
   .continue-btn {
     width: 100%;
-    padding: 0.8rem;
+    /* 44px minimum touch target */
+    min-height: 44px;
+    padding: 0.75rem;
     border-radius: 0.75rem;
     background: #22c55e;
     color: white;
@@ -284,6 +303,39 @@
     border: none;
     cursor: pointer;
     transition: all 0.2s;
+  }
+
+  /* Larger screens */
+  @media (min-width: 480px) {
+    .lesson-header {
+      padding: 1rem;
+      gap: 0.75rem;
+    }
+
+    .exit-btn {
+      width: 32px;
+      height: 32px;
+    }
+
+    .step-counter {
+      font-size: 0.85rem;
+    }
+
+    .progress-bar {
+      height: 8px;
+    }
+
+    .lesson-content {
+      padding: 1rem;
+    }
+
+    .lesson-footer {
+      padding: 1rem;
+    }
+
+    .continue-btn {
+      padding: 0.8rem;
+    }
   }
 
   .continue-btn:disabled {
