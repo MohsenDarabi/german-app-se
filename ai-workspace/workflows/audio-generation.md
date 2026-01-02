@@ -4,6 +4,19 @@
 
 ---
 
+## When to Use This Workflow
+
+| Situation | Action |
+|-----------|--------|
+| **Creating a new lesson** | Audio is INTEGRATED into content-fusion.md (Step 7) - use that! |
+| **Regenerating audio** | Use this workflow (e.g., after content changes) |
+| **Batch generation** | Use `--level` flag to generate for entire level |
+
+> **NOTE**: For new lessons, follow `content-fusion.md` which includes audio generation as Step 7.
+> This workflow is mainly for regeneration or batch operations.
+
+---
+
 ## Overview
 
 German text in lessons needs audio for:
