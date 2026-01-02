@@ -3,6 +3,29 @@
  *
  * Handles detection and proper rendering of mixed RTL/LTR text
  * (Persian/Arabic + German/Latin).
+ *
+ * ═══════════════════════════════════════════════════════════════════
+ * RULE FOR CONTENT CREATORS:
+ * ═══════════════════════════════════════════════════════════════════
+ *
+ * When mixing Persian and German/English words in a sentence,
+ * THE FIRST WORD DETERMINES THE TEXT DIRECTION.
+ *
+ * - If the sentence is Persian with embedded German words:
+ *   START with a Persian word, not the German word.
+ *
+ * WRONG: "Hi" رسمی‌تر از "Hallo" است.
+ *        (First char is "H" → detected as LTR → displays incorrectly)
+ *
+ * RIGHT: کلمه "Hi" رسمی‌تر از "Hallo" است.
+ *        (First char is Persian "ک" → detected as RTL → displays correctly)
+ *
+ * - If the sentence is German with embedded Persian:
+ *   START with a German word.
+ *
+ * This rule ensures the Unicode BiDi algorithm renders text correctly
+ * without needing to hardcode direction attributes.
+ * ═══════════════════════════════════════════════════════════════════
  */
 
 // RTL Unicode ranges: Arabic, Persian, Hebrew, etc.
