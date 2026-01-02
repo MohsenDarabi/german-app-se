@@ -1,6 +1,7 @@
 <script lang="ts">
-  import { onMount } from "svelte";
+  import { onMount, onDestroy } from "svelte";
   import { goto } from "$app/navigation";
+  import { browser } from "$app/environment";
   import StepRenderer from "$lib/components/lesson/StepRenderer.svelte";
   import LessonReview from "$lib/components/lesson/LessonReview.svelte";
   import { lessonStore, currentStep } from "../../../lessonStore";
@@ -33,10 +34,28 @@
   let wrongAnswersToReview: WrongAnswer[] = [];
   let completionStats: { score: number; xpEarned: number } | null = null;
 
+  // Keyboard shortcut handler for Continue button
+  function handleKeydown(e: KeyboardEvent) {
+    // Enter or Space triggers continue when enabled
+    if ((e.key === 'Enter' || e.key === ' ') && $lessonStore.canContinue && !$lessonStore.isComplete && !showReviewScreen) {
+      e.preventDefault();
+      handleContinue();
+    }
+  }
+
   // Initialize store when data changes (or on mount)
   onMount(() => {
     if (data.lesson) {
       lessonStore.init(data.lesson);
+    }
+    // Add keyboard listener
+    window.addEventListener('keydown', handleKeydown);
+  });
+
+  onDestroy(() => {
+    // Clean up keyboard listener (only in browser)
+    if (browser) {
+      window.removeEventListener('keydown', handleKeydown);
     }
   });
 
@@ -174,6 +193,7 @@
         on:click={handleContinue}
       >
         ادامه
+        <span class="shortcut-hint">↵</span>
       </button>
     </footer>
   {/if}
@@ -274,6 +294,12 @@
 
   .continue-btn:not(:disabled):hover {
     background: #16a34a;
+  }
+
+  .shortcut-hint {
+    margin-right: 0.5rem;
+    opacity: 0.7;
+    font-size: 0.9em;
   }
 
   .completion-screen {
