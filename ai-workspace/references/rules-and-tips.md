@@ -191,7 +191,31 @@ Every line needs both `de` and `fa`:
 
 ---
 
+## VALIDATION RULES (21 Total)
+
+Run with: `node scripts/validate-lesson.js <file>`
+
+| Category | Rules |
+|----------|-------|
+| **Schema** | has-required-fields, title-bilingual, steps-not-empty, steps-have-ids, steps-have-types, ends-with-completion |
+| **New Word** | new-word-has-translations |
+| **MCQ** | mcq-has-options, mcq-correct-index-valid, mcq-answer-distribution |
+| **Fill-blank** | fill-blank-has-options |
+| **Word Order** | word-order-scrambled |
+| **Matching** | matching-has-pairs, matching-pairs-valid |
+| **Dialog** | dialog-has-lines, dialog-lines-bilingual |
+| **Games** | rapid-fire-questions-valid, memory-match-pairs-valid, vocab-check-words-valid |
+| **Completion** | completion-has-vocab |
+| **Quality** | no-undefined-values |
+
+---
+
 ## VALIDATION COMMANDS
+
+### Validate a lesson (MANDATORY)
+```bash
+node scripts/validate-lesson.js content/de-fa/A1/module-01/A1-M01-L01.json
+```
 
 ### Check JSON syntax
 ```bash

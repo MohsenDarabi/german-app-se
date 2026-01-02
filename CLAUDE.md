@@ -109,9 +109,9 @@ german-learning-app-main/
 | Document | Purpose |
 |----------|---------|
 | `ai-workspace/PROMPT.md` | Start here for content work |
-| `ai-workspace/workflows/content-fusion.md` | Lesson creation guide |
+| `ai-workspace/workflows/content-fusion.md` | Full lesson creation workflow |
 | `ai-workspace/references/step-types.md` | All 17 step types |
-| `docs/LESSON_CREATION_PIPELINE.md` | Validation rules |
+| `ai-workspace/references/rules-and-tips.md` | Validation & BiDi rules |
 
 ---
 
