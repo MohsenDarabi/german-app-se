@@ -65,7 +65,7 @@ ai-workspace/progress/multimedia-tasks/A1-M01-L02.json  ← Tasks for colleague
 |------|---------|
 | `/Volumes/.../languageAppContent/phase1-extracted/` | PDF textbooks (Menschen, Schritte) |
 | `/Volumes/.../babbel-extractor-yolo/output/` | Crawled Babbel (A1.1-B2) |
-| `scripts/screen-flow-mapper/output/` | Busuu full mapping (482 lessons) |
+| `/Volumes/.../content-extractors/screen-flow-mapper/output/` | Busuu full mapping (482 lessons) |
 
 **CRITICAL RULE: Create UNIQUE content - do NOT copy directly!**
 - Change ALL names to modern German names (Max, Lena, Felix, Sophie)

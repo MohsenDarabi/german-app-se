@@ -55,7 +55,7 @@ Contains full curriculum with:
 ### Source 3: Busuu (Screen-Flow-Mapper - MOST COMPLETE)
 
 ```
-scripts/screen-flow-mapper/output/
+/Volumes/External_ssd_mohsen/WorkspaceExtern/content-extractors/screen-flow-mapper/output/
 ├── A1/  (168 lessons)
 ├── A2/  (98 lessons)
 ├── B1/  (140 lessons)
@@ -142,8 +142,8 @@ ls /Volumes/External_ssd_mohsen/WorkspaceExtern/babbel-extractor-yolo/output/A11
 cat /Volumes/External_ssd_mohsen/WorkspaceExtern/babbel-extractor-yolo/output/A11/unit-01/lesson-01.json | jq '.screens[].content'
 
 # 3. Check Busuu lessons (screen-flow-mapper)
-ls scripts/screen-flow-mapper/output/A1/
-cat scripts/screen-flow-mapper/output/A1/chapter-01-introductions/*.json | jq '.screens[].content'
+ls /Volumes/External_ssd_mohsen/WorkspaceExtern/content-extractors/screen-flow-mapper/output/A1/
+cat /Volumes/External_ssd_mohsen/WorkspaceExtern/content-extractors/screen-flow-mapper/output/A1/chapter-01-introductions/*.json | jq '.screens[].content'
 ```
 
 **Extract from each:**

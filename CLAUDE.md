@@ -68,8 +68,8 @@ CONTENT LAB (Creation):
 │  Source 1: languageAppContent/phase3-lessons/                   │
 │            (Created from PDF textbooks by Content Creator Agent)│
 │                                                                 │
-│  Source 2: extracted-content/busuu/                             │
-│            (Extracted from Busuu app)                           │
+│  Source 2: content-archive/extracted-content/busuu/             │
+│            (Extracted from Busuu app - on SSD)                  │
 │                                                                 │
 └───────────────────────────┬─────────────────────────────────────┘
                             │
@@ -200,7 +200,8 @@ GOOGLE_APPLICATION_CREDENTIALS="./scripts/keys/gcp-tts-service-account.json" \
 
 ## Screen Flow Mapper (Busuu Extractor v2)
 
-**Status:** 🔄 A1 Extraction IN PROGRESS (Dec 28, 2025)
+**Status:** ✅ COMPLETE (A1-B2 extracted)
+**Location:** MOVED to `/Volumes/.../content-extractors/screen-flow-mapper/`
 
 A screen-by-screen Busuu content extractor with auto-solving and progress tracking.
 
@@ -208,34 +209,20 @@ A screen-by-screen Busuu content extractor with auto-solving and progress tracki
 
 | Path | Purpose |
 |------|---------|
-| `scripts/screen-flow-mapper/` | Main extractor code |
-| `scripts/screen-flow-mapper/output/` | Extracted JSON (hierarchical: `A1/chapter-01/lesson.json`) |
-| `scripts/screen-flow-mapper/progress-{level}.json` | Progress tracking per level |
-| `scripts/screen-flow-mapper/cookies.json` | Busuu login session |
-| `docs/busuu-research/` | Screen type documentation |
+| `/Volumes/.../content-extractors/screen-flow-mapper/` | Main extractor code (moved outside app) |
+| `/Volumes/.../content-extractors/screen-flow-mapper/output/` | Extracted JSON (482 lessons) |
+| `/Volumes/.../content-archive/busuu-raw` | Symlink to output |
 
-### Commands
+### Commands (run from extractor directory)
 
 ```bash
-cd scripts/screen-flow-mapper
+cd /Volumes/External_ssd_mohsen/WorkspaceExtern/content-extractors/screen-flow-mapper
 
 # Extract all lessons for a level (auto mode, headless)
 node index.js --level=a1 --auto --headless
 
-# Extract with visible browser (for debugging)
-node index.js --level=a1 --auto
-
-# Extract single lesson
-node index.js --lesson <url>
-
-# Interactive mode with validation
-node index.js --level=a1
-
 # Check progress
 cat progress-a1.json | jq '.completedLessons | length'
-
-# Clear progress to restart fresh
-rm progress-a1.json && rm -rf output/A1/
 ```
 
 ### Supported Exercise Types (12 total)
@@ -322,38 +309,27 @@ Restart Claude Code to activate. Provides DOM inspection, console, network monit
 
 ## Babbel Content Extractor
 
-**Status:** ✅ Ready to run (Dec 29, 2025)
+**Status:** ✅ COMPLETE (A1.1-B2 extracted)
+**Location:** MOVED to `/Volumes/.../content-extractors/babbel-extractor/`
 
-Automated extraction of German learning content from Babbel with issue capture for unknown screens.
+Automated extraction of German learning content from Babbel.
 
 ### Location & Files
 
 | Path | Purpose |
 |------|---------|
-| `scripts/babbel-extractor/` | Main extractor code |
-| `scripts/babbel-extractor/output/` | Extracted JSON (hierarchical: `A11/unit-01/lesson-01.json`) |
-| `scripts/babbel-extractor/issues/` | Captured issues (screenshot + DOM) for debugging |
-| `scripts/babbel-extractor/progress-a11.json` | Progress tracking per level |
-| `docs/babbel-research/screen-types-summary.md` | Screen type documentation with screenshots |
+| `/Volumes/.../content-extractors/babbel-extractor/` | Main extractor code (moved outside app) |
+| `/Volumes/.../content-extractors/babbel-extractor/output/` | Extracted JSON (232 lessons) |
+| `/Volumes/.../babbel-extractor-yolo/output/` | Another copy of extracted content |
+| `/Volumes/.../content-archive/babbel-raw` | Symlink to output |
 
-### Prerequisites
-
-1. Chrome running with remote debugging:
-   ```bash
-   /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222
-   ```
-2. Logged into Babbel with active subscription
-
-### Commands
+### Commands (run from extractor directory)
 
 ```bash
-cd scripts/babbel-extractor
+cd /Volumes/External_ssd_mohsen/WorkspaceExtern/content-extractors/babbel-extractor
 
 # Extract all lessons for a level
 node index.js --level=a1.1
-
-# Extract single lesson by URL
-node index.js --lesson "https://my.babbel.com/en/lesson-player/DEU/..."
 
 # Check progress
 cat progress-a11.json | jq '.completedLessons | length'
@@ -404,7 +380,7 @@ Priority order for continuing work:
    - Update START-HERE.md with A2 assets
 
 3. **B1 Content Creation** ⏳
-   - Create lessons from Busuu B1 content (`extracted-content/busuu/B1/`)
+   - Create lessons from Busuu B1 content (`/Volumes/.../content-extractors/screen-flow-mapper/output/B1/`)
    - Compare with `languageAppContent/phase3-lessons/B1-*/` if available
    - Follow A1/A2 merged pattern
 
@@ -437,15 +413,24 @@ german-learning-app-main/
 │   │   ├── A1_CURRICULUM.md     # Status tracker
 │   │   └── module-*/lesson-*.json
 │   └── A2/
+├── ai-workspace/                # AI agent workspace (workflows, progress)
 ├── docs/
 │   ├── tasks/                   # Task documentation
 │   └── multimedia-tasks/        # Image/video task files
-├── extracted-content/busuu/     # Extracted Busuu content
 ├── packages/content-model/      # Zod schemas for lessons
 └── scripts/
-    ├── generate-audio.js        # TTS generation
-    ├── media-data/              # Asset registry
-    └── busuu-extractor/         # Busuu content extractor
+    └── generate-audio.js        # TTS generation
+
+EXTERNAL (on SSD, not in repo):
+├── content-extractors/          # Moved out of main app
+│   ├── babbel-extractor/        # Babbel crawler
+│   ├── screen-flow-mapper/      # Busuu crawler
+│   └── busuu-extractor-old/     # Legacy extractor
+└── content-archive/             # Reference content
+    ├── legacy-v1/               # Old lessons
+    ├── extracted-content/       # Busuu/Babbel raw content
+    ├── babbel-raw -> symlink    # Points to babbel output
+    └── busuu-raw -> symlink     # Points to screen-flow-mapper output
 ```
 
 ---

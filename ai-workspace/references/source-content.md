@@ -10,7 +10,7 @@
 |--------|------|---------|----------|
 | **PDF Textbooks** | `/Volumes/.../languageAppContent/phase1-extracted/` | Menschen, Schritte | Vocabulary lists, grammar structures |
 | **Babbel** | `/Volumes/.../babbel-extractor-yolo/output/` | Full curriculum | Exercise patterns, dialogs |
-| **Busuu** | `scripts/screen-flow-mapper/output/` | 482 lessons | Flashcards, grammar tips |
+| **Busuu** | `/Volumes/.../content-extractors/screen-flow-mapper/output/` | 482 lessons | Flashcards, grammar tips |
 
 ---
 
@@ -130,7 +130,7 @@ cat /Volumes/.../babbel-extractor-yolo/output/A11/unit-01/lesson-01.json | jq '.
 
 ### Location
 ```
-scripts/screen-flow-mapper/output/
+/Volumes/External_ssd_mohsen/WorkspaceExtern/content-extractors/screen-flow-mapper/output/
 ```
 
 ### Structure
@@ -201,16 +201,16 @@ output/
 ### Example: Exploring Busuu A1
 ```bash
 # List chapters
-ls scripts/screen-flow-mapper/output/A1/
+ls /Volumes/.../content-extractors/screen-flow-mapper/output/A1/
 
 # Count lessons
-find scripts/screen-flow-mapper/output/A1 -name "*.json" | wc -l
+find /Volumes/.../content-extractors/screen-flow-mapper/output/A1 -name "*.json" | wc -l
 
 # Read first lesson
-cat scripts/screen-flow-mapper/output/A1/chapter-01-introductions/lesson-*.json | jq '.lesson.title, .screens[0]'
+cat /Volumes/.../content-extractors/screen-flow-mapper/output/A1/chapter-01-introductions/lesson-*.json | jq '.lesson.title, .screens[0]'
 
 # Find all tips
-cat scripts/screen-flow-mapper/output/A1/chapter-01-introductions/*.json | jq '.screens[] | select(.type == "tip")'
+cat /Volumes/.../content-extractors/screen-flow-mapper/output/A1/chapter-01-introductions/*.json | jq '.screens[] | select(.type == "tip")'
 ```
 
 ---
@@ -249,7 +249,7 @@ cat /Volumes/.../babbel-extractor-yolo/output/A11/unit-01/lesson-01.json | jq '.
 
 2. **Check Busuu A1 Chapter 1**
 ```bash
-cat scripts/screen-flow-mapper/output/A1/chapter-01-*/*.json | jq '.screens[] | select(.type == "flashcard") | .content.german'
+cat /Volumes/.../content-extractors/screen-flow-mapper/output/A1/chapter-01-*/*.json | jq '.screens[] | select(.type == "flashcard") | .content.german'
 ```
 
 3. **Check PDF textbooks**

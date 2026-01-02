@@ -33,10 +33,10 @@ Next lesson to create: `A1-M01-L02`
 |--------|-------|---------|----------|
 | **PDF Textbooks** | A1-B2 | Menschen, Schritte, etc. | `/Volumes/.../languageAppContent/phase1-extracted/` |
 | **Babbel** | A1.1-B2 | Full curriculum crawled | `/Volumes/.../babbel-extractor-yolo/output/` |
-| **Busuu** | A1 | 168 lessons | `scripts/screen-flow-mapper/output/A1/` |
-| **Busuu** | A2 | 98 lessons | `scripts/screen-flow-mapper/output/A2/` |
-| **Busuu** | B1 | 140 lessons | `scripts/screen-flow-mapper/output/B1/` |
-| **Busuu** | B2 | 76 lessons | `scripts/screen-flow-mapper/output/B2/` |
+| **Busuu** | A1 | 168 lessons | `/Volumes/.../content-extractors/screen-flow-mapper/output/A1/` |
+| **Busuu** | A2 | 98 lessons | `/Volumes/.../content-extractors/screen-flow-mapper/output/A2/` |
+| **Busuu** | B1 | 140 lessons | `/Volumes/.../content-extractors/screen-flow-mapper/output/B1/` |
+| **Busuu** | B2 | 76 lessons | `/Volumes/.../content-extractors/screen-flow-mapper/output/B2/` |
 
 **REMEMBER:** Create UNIQUE content - change names, rewrite dialogs, add Persian notes!
 
