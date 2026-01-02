@@ -435,7 +435,7 @@ function findAllLessons(dir) {
 
       if (stat.isDirectory()) {
         scanDir(fullPath);
-      } else if (item.endsWith('.json') && item.startsWith('lesson-')) {
+      } else if (item.endsWith('.json') && (item.startsWith('lesson-') || /^[AB]\d/.test(item))) {
         try {
           const content = fs.readFileSync(fullPath, 'utf8');
           const lesson = JSON.parse(content);
