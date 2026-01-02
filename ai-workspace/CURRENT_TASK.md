@@ -20,14 +20,21 @@
 
 ## Last Completed
 
-**Task**: Clean up obsolete plans, merge valuable docs, create ROADMAP
+**Task**: Deep codebase cleanup - remove orphaned files and docs
 
 **Completed**: 2026-01-02
 
 **Result**:
-- Deleted 7 obsolete files (PROJECT_PLAN.md, BABBEL_EXTRACTION_AGENT.md, AI_AGENTS.md, busuu-extraction-plan.md, CONTENT_FUSION_APPROACH.md, content-comparison-task.md, AI_CONTENT_QUALITY_CHECKLIST.md)
-- Merged quality rules to ai-workspace/references/rules-and-tips.md (Rules 6-9)
-- Created ai-workspace/ROADMAP.md with forgotten features TODO
+- Deleted 47 orphaned audio folders (~19MB) - kept only A1-M01-L01
+- Removed root debug files: bidi-test-screenshot.png
+- Removed obsolete docs: AI_CONTENT_CREATION_PROMPTS.md, CONTENT_SCHEMA_REDESIGN.md
+- Removed duplicate agent files: scripts/*-agent.md
+- Removed empty folders: docs/tasks/, docs/examples/, docs/content-analysis/
+- Removed legacy docs/multimedia-tasks/ (referenced archived content)
+- Moved docs/babbel-research/ → content-extractors/babbel-extractor/docs/
+- Moved docs/busuu-research/ → content-extractors/screen-flow-mapper/docs/
+- Moved CHUNK_EXAMPLE_GREETINGS.md → ai-workspace/references/chunk-example.md
+- Total: 1984 files changed, 47KB deletions
 
 ---
 
@@ -105,8 +112,8 @@ If you just started or conversation was compacted:
 
 | Date | Task | Result |
 |------|------|--------|
+| 2026-01-02 | Deep codebase cleanup | Completed - removed 47 orphaned audio folders, obsolete docs, 1984 files |
 | 2026-01-02 | Clean up obsolete plans | Completed - deleted 7 files, merged rules, created ROADMAP.md |
 | 2026-01-02 | Move extractors outside main app | Completed - moved to content-extractors/, updated paths |
 | 2026-01-02 | Set up ai-workspace references | Completed - 4 reference docs created |
 | 2026-01-02 | Fix Busuu path in workflows | Completed - corrected to screen-flow-mapper |
-| 2026-01-02 | Create ai-workspace structure | Completed - PROMPT.md, STATUS.md, workflows |
