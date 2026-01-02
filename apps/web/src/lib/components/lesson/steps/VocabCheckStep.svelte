@@ -97,7 +97,7 @@
     <!-- Flashcard -->
     <div class="flashcard" class:revealed={currentWord?.revealed}>
       <div class="card-front">
-        <span class="german-word">{currentWord?.german}</span>
+        <span class="german-word">{currentWord?.de}</span>
         <span class="flag">🇩🇪</span>
 
         {#if !currentWord?.revealed}
@@ -109,7 +109,7 @@
 
       {#if currentWord?.revealed}
         <div class="card-back">
-          <span class="persian-word" dir="rtl">{currentWord?.persian}</span>
+          <span class="persian-word" dir="rtl">{currentWord?.fa}</span>
           <span class="flag">🇮🇷</span>
 
           {#if step.showExamples && currentWord?.example}
