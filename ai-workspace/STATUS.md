@@ -32,7 +32,7 @@ Next lesson to create: `A1-M01-L02`
 | Source | Level | Content | Location |
 |--------|-------|---------|----------|
 | **PDF Textbooks** | A1-B2 | Menschen, Schritte, etc. | `/Volumes/.../languageAppContent/phase1-extracted/` |
-| Babbel | A1.1 | 52 lessons crawled | `scripts/babbel-extractor/output/A11/` |
+| **Babbel** | A1.1-B2 | Full curriculum crawled | `/Volumes/.../babbel-extractor-yolo/output/` |
 | Busuu | A1 | 5 chapters | `extracted-content/busuu/A1/` |
 | Busuu | A2 | extracted | `extracted-content/busuu/A2/` |
 | Busuu | B1 | extracted | `extracted-content/busuu/B1/` |

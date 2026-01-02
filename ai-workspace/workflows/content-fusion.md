@@ -32,10 +32,16 @@ Contains extracted content from professional German textbooks:
 
 ### Source 2: Babbel (Crawled)
 ```
-scripts/babbel-extractor/output/A11/
+/Volumes/External_ssd_mohsen/WorkspaceExtern/babbel-extractor-yolo/output/
+├── A11/  (A1.1)
+├── A12/  (A1.2)
+├── A21/  (A2.1)
+├── A22/  (A2.2)
+├── B1/
+└── B2/
 ```
 
-Contains 52+ lessons with:
+Contains full curriculum with:
 - Vocabulary with audio URLs
 - Dialog scripts
 - Exercise patterns
@@ -116,8 +122,8 @@ Before writing a lesson, check ALL three sources for the topic:
 ls /Volumes/External_ssd_mohsen/WorkspaceExtern/languageAppContent/phase1-extracted/
 
 # 2. Check Babbel lessons
-ls scripts/babbel-extractor/output/A11/
-cat scripts/babbel-extractor/output/A11/unit-01/lesson-01.json | jq '.screens[].content'
+ls /Volumes/External_ssd_mohsen/WorkspaceExtern/babbel-extractor-yolo/output/A11/
+cat /Volumes/External_ssd_mohsen/WorkspaceExtern/babbel-extractor-yolo/output/A11/unit-01/lesson-01.json | jq '.screens[].content'
 
 # 3. Check Busuu chapters
 ls extracted-content/busuu/A1/

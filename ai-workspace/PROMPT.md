@@ -40,7 +40,7 @@ cat ai-workspace/STATUS.md
 | Path | Content |
 |------|---------|
 | `/Volumes/.../languageAppContent/phase1-extracted/` | PDF textbooks (Menschen, Schritte) |
-| `scripts/babbel-extractor/output/` | Crawled Babbel lessons |
+| `/Volumes/.../babbel-extractor-yolo/output/` | Crawled Babbel (A1.1-B2) |
 | `extracted-content/busuu/` | Extracted Busuu lessons |
 
 **CRITICAL RULE: Create UNIQUE content - do NOT copy directly!**
