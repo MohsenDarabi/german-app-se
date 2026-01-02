@@ -40,6 +40,26 @@ cat ai-workspace/STATUS.md
 | `apps/web/` | SvelteKit PWA source code |
 | `scripts/` | Audio generation, extractors |
 
+---
+
+## Output Locations (Where to Put Created Content)
+
+| Type | Output Location | Created By |
+|------|-----------------|------------|
+| **Lesson JSON** | `content/de-fa/{Level}/module-{NN}/{LessonID}.json` | AI agent |
+| **Audio files** | `apps/web/static/audio/{LessonID}/` | Audio script |
+| **Images** | `apps/web/static/images/shared/{category}/` | Colleague |
+| **Videos** | `apps/web/static/videos/shared/{category}/` | Colleague |
+| **Progress logs** | `ai-workspace/progress/*.json` | AI agent |
+| **Multimedia tasks** | `ai-workspace/progress/multimedia-tasks/{LessonID}.json` | AI agent |
+
+**Example for lesson A1-M01-L02:**
+```
+content/de-fa/A1/module-01/A1-M01-L02.json          ← Lesson content
+apps/web/static/audio/A1-M01-L02/s1-word.mp3        ← Audio files
+ai-workspace/progress/multimedia-tasks/A1-M01-L02.json  ← Tasks for colleague
+```
+
 ### Source Content (for fusion) - THREE SOURCES
 | Path | Content |
 |------|---------|
