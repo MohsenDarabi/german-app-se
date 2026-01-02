@@ -47,6 +47,22 @@ Videos: apps/web/static/videos/shared/
   - Context: Dialog scene - Lena and Max meeting
   - Style: modern German cafe, friendly atmosphere, diverse characters
 
+### Lesson 02: Wie geht's?
+
+**Images (3):**
+
+- [ ] `greetings/asking-how-are-you.jpg` - Two friends (young man and woman, 20s) meeting casually on a street or park, one asking 'how are you?' with friendly hand gesture
+  - Context: Dialog scene - Lena and Max asking each other how they are
+  - Style: casual, friendly, outdoor German setting
+
+- [ ] `expressions/feeling-good.jpg` - Person with thumbs up and happy expression, representing 'gut' (good/well)
+  - Context: Vocabulary for 'gut' (good) - how someone feels
+  - Style: positive, bright, simple background
+
+- [ ] `expressions/feeling-bad.jpg` - Person looking unwell or tired, representing 'schlecht' (bad)
+  - Context: Vocabulary for 'schlecht' (bad) - how someone feels
+  - Style: sympathetic, not overly dramatic, simple background
+
 ---
 
 ## Progress Summary
@@ -54,8 +70,9 @@ Videos: apps/web/static/videos/shared/
 | Level | Module | Lesson | Images | Videos | Status |
 |-------|--------|--------|--------|--------|--------|
 | A1 | 01 | 01 | 5 | 0 | Pending |
+| A1 | 01 | 02 | 3 | 0 | Pending |
 
-**Total:** 5 tasks (5 images, 0 videos)
+**Total:** 8 tasks (8 images, 0 videos)
 
 ---
 
@@ -100,4 +117,6 @@ weather/         - Weather conditions
 
 ## Questions?
 
-Check the detailed task file: `A1-M01-L01.json`
+Check the detailed task files:
+- `A1-M01-L01.json` - Lesson 01 tasks
+- `A1-M01-L02.json` - Lesson 02 tasks

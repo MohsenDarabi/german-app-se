@@ -1,0 +1,65 @@
+{
+  "lessonId": "A1-M01-L02",
+  "title": "Wie geht's?",
+  "createdAt": "2026-01-03",
+  "tasks": [
+    {
+      "id": "img-001",
+      "type": "image",
+      "stepId": "s10",
+      "stepType": "dialog",
+      "description": "Two friends (young man and woman, 20s) meeting casually on a street or park, one asking 'how are you?' with friendly hand gesture",
+      "context": "Dialog scene: Lena and Max asking each other how they are",
+      "specs": {
+        "format": "jpg",
+        "dimensions": "800x600",
+        "style": "casual, friendly, outdoor German setting"
+      },
+      "outputPath": "images/shared/greetings/asking-how-are-you.jpg",
+      "status": "pending",
+      "reusable": true,
+      "reusableFor": ["small-talk", "greetings", "feelings"]
+    },
+    {
+      "id": "img-002",
+      "type": "image",
+      "stepId": "s2",
+      "stepType": "new-word",
+      "description": "Person with thumbs up and happy expression, representing 'gut' (good/well)",
+      "context": "Vocabulary illustration for 'gut' (good) - how someone feels",
+      "specs": {
+        "format": "jpg",
+        "dimensions": "800x600",
+        "style": "positive, bright, simple background"
+      },
+      "outputPath": "images/shared/expressions/feeling-good.jpg",
+      "status": "pending",
+      "reusable": true,
+      "reusableFor": ["feelings", "expressions", "positive"]
+    },
+    {
+      "id": "img-003",
+      "type": "image",
+      "stepId": "s3",
+      "stepType": "new-word",
+      "description": "Person looking unwell or tired, representing 'schlecht' (bad)",
+      "context": "Vocabulary illustration for 'schlecht' (bad) - how someone feels",
+      "specs": {
+        "format": "jpg",
+        "dimensions": "800x600",
+        "style": "sympathetic, not overly dramatic, simple background"
+      },
+      "outputPath": "images/shared/expressions/feeling-bad.jpg",
+      "status": "pending",
+      "reusable": true,
+      "reusableFor": ["feelings", "expressions", "negative"]
+    }
+  ],
+  "summary": {
+    "totalTasks": 3,
+    "images": 3,
+    "videos": 0,
+    "pending": 3,
+    "completed": 0
+  }
+}

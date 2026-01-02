@@ -26,6 +26,12 @@ export const A1_MODULES: ModuleStub[] = [
         title: "سلام و خداحافظی (Hallo und Tschüss)",
         description: "یاد بگیرید چطور سلام و خداحافظی کنید و خود را معرفی کنید.",
         path: "/learn/de-fa/A1/A1-M01-L01"
+      },
+      {
+        id: "A1-M01-L02",
+        title: "حالت چطوره؟ (Wie geht's?)",
+        description: "یاد بگیرید چطور از حال کسی بپرسید و به آن پاسخ دهید.",
+        path: "/learn/de-fa/A1/A1-M01-L02"
       }
       // Add more lessons here as content JSON files are created
     ]
