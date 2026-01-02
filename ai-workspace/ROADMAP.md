@@ -84,10 +84,19 @@ The app code already supports these step types. Content creators just need to wr
 
 | Level | Lessons | Audio | Status |
 |-------|---------|-------|--------|
-| A1 | 1 (A1-M01-L01) | Generated | Needs more lessons |
+| A1 | 1 sample (test) | Generated | **No fusion content yet** |
 | A2 | 0 | - | Not started |
 | B1 | 0 | - | Not started |
 | B2 | 0 | - | Not started |
+
+**Note:** The existing `A1-M01-L01.json` is a sample/test lesson, not created using fusion.
+
+### Source Content Available
+
+| Source | Levels | Location |
+|--------|--------|----------|
+| **Babbel** | A1.1, A1.2, A2.1, A2.2, B1 | `/Volumes/.../babbel-extractor-yolo/output/` |
+| **Busuu** | A1, A2, B1, B2 | `/Volumes/.../content-extractors/screen-flow-mapper/output/` |
 
 ### Content TODO
 
