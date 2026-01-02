@@ -20,11 +20,11 @@
 
 ## Last Completed
 
-**Task**: Set up ai-workspace with reference documentation
+**Task**: Move extractors and extracted content outside main app
 
 **Completed**: 2026-01-02
 
-**Result**: Created references/ directory with step-types.md, source-content.md, rules-and-tips.md, lesson-template.md
+**Result**: Moved babbel-extractor, screen-flow-mapper, busuu-extractor to /Volumes/.../content-extractors/. Moved extracted-content to content-archive. Updated all path references in CLAUDE.md and ai-workspace docs.
 
 ---
 
@@ -102,8 +102,8 @@ If you just started or conversation was compacted:
 
 | Date | Task | Result |
 |------|------|--------|
+| 2026-01-02 | Move extractors outside main app | Completed - moved to content-extractors/, updated paths |
 | 2026-01-02 | Set up ai-workspace references | Completed - 4 reference docs created |
 | 2026-01-02 | Fix Busuu path in workflows | Completed - corrected to screen-flow-mapper |
 | 2026-01-02 | Create ai-workspace structure | Completed - PROMPT.md, STATUS.md, workflows |
 | 2026-01-02 | Fix BiDi text rule | Completed - documented in rules-and-tips.md |
-| - | - | - |
