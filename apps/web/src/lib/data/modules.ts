@@ -32,6 +32,12 @@ export const A1_MODULES: ModuleStub[] = [
         title: "حالت چطوره؟ (Wie geht's?)",
         description: "یاد بگیرید چطور از حال کسی بپرسید و به آن پاسخ دهید.",
         path: "/learn/de-fa/A1/A1-M01-L02"
+      },
+      {
+        id: "A1-M01-L03",
+        title: "اهل کجایی؟ (Woher kommst du?)",
+        description: "یاد بگیرید چطور از کشور مبدأ و محل زندگی بپرسید و پاسخ دهید.",
+        path: "/learn/de-fa/A1/A1-M01-L03"
       }
       // Add more lessons here as content JSON files are created
     ]

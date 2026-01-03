@@ -63,6 +63,26 @@ Videos: apps/web/static/videos/shared/
   - Context: Vocabulary for 'schlecht' (bad) - how someone feels
   - Style: sympathetic, not overly dramatic, simple background
 
+### Lesson 03: Woher kommst du?
+
+**Images (4):**
+
+- [ ] `scenes/international-meeting.jpg` - Two young women (one German, one Iranian) meeting and chatting in a cafe or park
+  - Context: Dialog scene - Lena and Sara meeting, discussing countries of origin
+  - Style: friendly, multicultural, modern German setting
+
+- [ ] `places/germany.jpg` - German flag or iconic German landmark (Brandenburg Gate, Berlin skyline)
+  - Context: Vocabulary for 'Deutschland' (Germany)
+  - Style: recognizable, clean, modern
+
+- [ ] `places/iran.jpg` - Iranian flag or iconic Persian landmark (Azadi Tower, Isfahan mosque)
+  - Context: Vocabulary for 'der Iran' (Iran)
+  - Style: recognizable, respectful, cultural
+
+- [ ] `expressions/asking-origin.jpg` - Person pointing at a world map or globe, asking about origins
+  - Context: Vocabulary for 'Woher kommst du?' (Where are you from?)
+  - Style: curious, friendly, educational
+
 ---
 
 ## Progress Summary
@@ -71,8 +91,9 @@ Videos: apps/web/static/videos/shared/
 |-------|--------|--------|--------|--------|--------|
 | A1 | 01 | 01 | 5 | 0 | Pending |
 | A1 | 01 | 02 | 3 | 0 | Pending |
+| A1 | 01 | 03 | 4 | 0 | Pending |
 
-**Total:** 8 tasks (8 images, 0 videos)
+**Total:** 12 tasks (12 images, 0 videos)
 
 ---
 
@@ -120,3 +141,4 @@ weather/         - Weather conditions
 Check the detailed task files:
 - `A1-M01-L01.json` - Lesson 01 tasks
 - `A1-M01-L02.json` - Lesson 02 tasks
+- `A1-M01-L03.json` - Lesson 03 tasks
