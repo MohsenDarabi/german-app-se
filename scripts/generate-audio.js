@@ -470,6 +470,107 @@ function extractAudioItems(lesson) {
           });
         }
         break;
+
+      case 'spelling':
+        // Spelling step needs audio for the word to spell
+        if (step.word) {
+          items.push({
+            id: `${stepId}-word`,
+            text: step.word.trim(),
+            type: 'word',
+            lessonId,
+          });
+        }
+        break;
+
+      case 'rapid-fire':
+        // Rapid-fire questions need audio for German prompts
+        if (step.questions) {
+          step.questions.forEach((q, idx) => {
+            // Only generate audio for German prompts (not Persian)
+            if (q.prompt && /[a-zA-ZäöüßÄÖÜ]/.test(q.prompt) && !/[\u0600-\u06FF]/.test(q.prompt)) {
+              items.push({
+                id: `${stepId}-q${idx}`,
+                text: q.prompt.trim(),
+                type: 'word',
+                lessonId,
+              });
+            }
+          });
+        }
+        break;
+
+      case 'memory-match':
+        // Memory match needs audio for German words in pairs
+        if (step.pairs) {
+          step.pairs.forEach((pair, idx) => {
+            if (pair.de) {
+              items.push({
+                id: `${stepId}-pair${idx}`,
+                text: pair.de.trim(),
+                type: 'word',
+                lessonId,
+              });
+            }
+          });
+        }
+        break;
+
+      case 'vocab-check':
+        // Vocab check needs audio for German words
+        if (step.words) {
+          step.words.forEach((word, idx) => {
+            if (word.de) {
+              items.push({
+                id: `${stepId}-word${idx}`,
+                text: word.de.trim(),
+                type: 'word',
+                lessonId,
+              });
+            }
+          });
+        }
+        break;
+
+      case 'matching':
+        // Matching needs audio for German items
+        if (step.items) {
+          step.items.forEach((item, idx) => {
+            if (item.text && /[a-zA-ZäöüßÄÖÜ]/.test(item.text)) {
+              items.push({
+                id: `${stepId}-item${idx}`,
+                text: item.text.trim(),
+                type: 'word',
+                lessonId,
+              });
+            }
+          });
+        }
+        break;
+
+      case 'listen-and-choose':
+        // Listen and choose - audio for the German sentence
+        if (step.sentence?.de) {
+          items.push({
+            id: `${stepId}-sentence`,
+            text: step.sentence.de.trim(),
+            type: 'sentence',
+            lessonId,
+          });
+        }
+        break;
+
+      case 'comprehension':
+        // Comprehension - audio for the passage if it's German
+        if (step.passage?.de) {
+          items.push({
+            id: `${stepId}-passage`,
+            text: step.passage.de.trim(),
+            type: 'sentence',
+            lessonId,
+          });
+        }
+        break;
     }
   }
 
