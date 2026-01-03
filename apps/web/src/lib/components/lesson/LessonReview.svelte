@@ -38,6 +38,16 @@
   // Check on mount
   onMount(() => skipIfCorrupted());
 
+  // Manual skip function for when auto-skip fails
+  function skipCurrent() {
+    reviewCorrect.add(currentReviewIndex);
+    reviewCorrect = reviewCorrect;
+    if (!isLastReview) {
+      currentReviewIndex++;
+      selectedAnswer = null;
+    }
+  }
+
   function selectOption(option: string) {
     if (selectedAnswer) return; // Already answered this review
 
@@ -115,18 +125,28 @@
       {#if options.length === 0}
         <div class="skip-section">
           <p class="skip-text">این سوال قابل بازبینی نیست</p>
-          <button class="skip-btn" on:click={() => {
-            reviewCorrect.add(currentReviewIndex);
-            reviewCorrect = reviewCorrect;
-            if (!isLastReview) {
-              currentReviewIndex++;
-              selectedAnswer = null;
-            }
-          }}>
-            ⏭️ رد شدن
-          </button>
+          {#if isLastReview}
+            <button class="skip-btn" on:click={() => {
+              reviewCorrect.add(currentReviewIndex);
+              reviewCorrect = reviewCorrect;
+            }}>
+              ✅ تکمیل مرور
+            </button>
+          {:else}
+            <button class="skip-btn" on:click={skipCurrent}>
+              ⏭️ رد شدن
+            </button>
+          {/if}
         </div>
       {/if}
+    </div>
+  {:else if !allReviewed}
+    <!-- Fallback when currentWrong is undefined but we haven't reviewed all -->
+    <div class="skip-section">
+      <p class="skip-text">خطا در بارگذاری سوال</p>
+      <button class="skip-btn" on:click={skipCurrent}>
+        ⏭️ ادامه
+      </button>
     </div>
   {/if}
 
