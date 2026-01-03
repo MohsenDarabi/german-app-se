@@ -38,6 +38,12 @@ export const A1_MODULES: ModuleStub[] = [
         title: "اهل کجایی؟ (Woher kommst du?)",
         description: "یاد بگیرید چطور از کشور مبدأ و محل زندگی بپرسید و پاسخ دهید.",
         path: "/learn/de-fa/A1/A1-M01-L03"
+      },
+      {
+        id: "A1-M01-L04",
+        title: "من آلمانی صحبت می‌کنم! (Ich spreche Deutsch!)",
+        description: "یاد بگیرید چطور درباره زبان‌هایی که صحبت می‌کنید و یاد می‌گیرید صحبت کنید.",
+        path: "/learn/de-fa/A1/A1-M01-L04"
       }
       // Add more lessons here as content JSON files are created
     ]

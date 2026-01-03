@@ -1,0 +1,88 @@
+{
+  "lessonId": "A1-M01-L04",
+  "lessonTitle": "Ich spreche Deutsch!",
+  "level": "A1",
+  "module": 1,
+  "createdAt": "2026-01-03",
+  "tasks": [
+    {
+      "id": "L04-img-01",
+      "type": "image",
+      "stepId": "s10",
+      "stepType": "dialog",
+      "outputPath": "scenes/language-exchange.jpg",
+      "specs": {
+        "width": 800,
+        "height": 600,
+        "format": "jpg",
+        "maxSize": "200KB"
+      },
+      "description": "Two young adults (Max and Sara) having a friendly conversation about languages they speak and learn",
+      "context": "Dialog scene where Max asks Sara if she speaks German, and they discuss learning each other's languages (German, English, Persian)",
+      "style": "Modern cafe or university setting, friendly atmosphere, one male and one female character, diverse representation",
+      "priority": "high",
+      "status": "pending"
+    },
+    {
+      "id": "L04-img-02",
+      "type": "image",
+      "stepId": "s1",
+      "stepType": "new-word",
+      "outputPath": "actions/speaking.jpg",
+      "specs": {
+        "width": 800,
+        "height": 600,
+        "format": "jpg",
+        "maxSize": "200KB"
+      },
+      "description": "Person speaking or having a conversation, representing 'sprechen' (to speak)",
+      "context": "Vocabulary illustration for the verb 'sprechen' - should clearly show the action of speaking",
+      "style": "Clear, simple background, person mid-conversation or speaking gesture, friendly expression",
+      "priority": "medium",
+      "status": "pending"
+    },
+    {
+      "id": "L04-img-03",
+      "type": "image",
+      "stepId": "s4",
+      "stepType": "new-word",
+      "outputPath": "actions/learning.jpg",
+      "specs": {
+        "width": 800,
+        "height": 600,
+        "format": "jpg",
+        "maxSize": "200KB"
+      },
+      "description": "Person studying or learning, representing 'lernen' (to learn)",
+      "context": "Vocabulary illustration for the verb 'lernen' - should show learning activity",
+      "style": "Student with books, laptop, or flashcards, focused expression, modern study environment",
+      "priority": "medium",
+      "status": "pending"
+    },
+    {
+      "id": "L04-img-04",
+      "type": "image",
+      "stepId": "s5",
+      "stepType": "grammar-tip",
+      "outputPath": "grammar/verb-conjugation-ich-du.jpg",
+      "specs": {
+        "width": 800,
+        "height": 600,
+        "format": "jpg",
+        "maxSize": "200KB"
+      },
+      "description": "Visual diagram showing German verb conjugation for 'ich' (-e ending) and 'du' (-st ending)",
+      "context": "Grammar tip illustration showing how verbs change: ich spreche/lerne vs du sprichst/lernst",
+      "style": "Clean infographic style, clear text boxes, arrows showing stem + ending, color-coded for ich (blue) and du (green)",
+      "priority": "high",
+      "status": "pending"
+    }
+  ],
+  "summary": {
+    "totalTasks": 4,
+    "images": 4,
+    "videos": 0,
+    "highPriority": 2,
+    "mediumPriority": 2
+  }
+}

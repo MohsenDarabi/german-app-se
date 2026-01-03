@@ -1,0 +1,268 @@
+{
+  "id": "A1-M01-L04",
+  "title": {
+    "de": "Ich spreche Deutsch!",
+    "fa": "من آلمانی صحبت می‌کنم!"
+  },
+  "level": "A1",
+  "module": 1,
+  "lessonNumber": 4,
+  "estimatedMinutes": 15,
+  "steps": [
+    {
+      "type": "new-word",
+      "id": "s1",
+      "word": {
+        "de": "sprechen",
+        "fa": "صحبت کردن"
+      },
+      "example": {
+        "text": {
+          "de": "Ich spreche Deutsch.",
+          "fa": "من آلمانی صحبت می‌کنم."
+        }
+      },
+      "header": "یه چیز جدید!"
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": {
+        "de": "Deutsch",
+        "fa": "زبان آلمانی"
+      },
+      "example": {
+        "text": {
+          "de": "Sprichst du Deutsch?",
+          "fa": "آیا آلمانی صحبت می‌کنی؟"
+        }
+      },
+      "header": "یه چیز جدید!"
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": {
+        "de": "Englisch",
+        "fa": "زبان انگلیسی"
+      },
+      "example": {
+        "text": {
+          "de": "Ich spreche Englisch.",
+          "fa": "من انگلیسی صحبت می‌کنم."
+        }
+      },
+      "header": "یه چیز جدید!"
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": {
+        "de": "lernen",
+        "fa": "یاد گرفتن"
+      },
+      "example": {
+        "text": {
+          "de": "Ich lerne Deutsch.",
+          "fa": "من آلمانی یاد می‌گیرم."
+        }
+      },
+      "header": "یه چیز جدید!"
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "صرف فعل برای ich و du",
+      "content": "در آلمانی، فعل‌ها بر اساس فاعل تغییر می‌کنند. این کار با افزودن پسوند به ریشه فعل انجام می‌شود:\n\n**ich (من) → پسوند -e**\n🗣️ Ich sprech**e** = من صحبت می‌کنم\n📚 Ich lern**e** = من یاد می‌گیرم\n🏠 Ich wohn**e** = من زندگی می‌کنم\n\n**du (تو) → پسوند -st**\n🗣️ Du sprich**st** = تو صحبت می‌کنی\n📚 Du lern**st** = تو یاد می‌گیری\n🏠 Du wohn**st** = تو زندگی می‌کنی\n\n🇮🇷 **نکته برای فارسی‌زبانان:**\nدر فارسی فعل با پیشوند «می-» صرف می‌شود، اما در آلمانی از پسوند استفاده می‌شود!",
+      "examples": [
+        { "de": "Ich spreche Deutsch.", "fa": "من آلمانی صحبت می‌کنم." },
+        { "de": "Sprichst du Englisch?", "fa": "آیا انگلیسی صحبت می‌کنی؟" },
+        { "de": "Ich lerne Deutsch.", "fa": "من آلمانی یاد می‌گیرم." }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "آزمون سریع!",
+      "instruction": "ترجمه درست را انتخاب کن!",
+      "timePerQuestion": 5,
+      "basePoints": 10,
+      "showStreak": true,
+      "questions": [
+        { "prompt": "Ich spreche", "left": "تو صحبت می‌کنی", "right": "من صحبت می‌کنم", "correctSide": "right" },
+        { "prompt": "Du lernst", "left": "تو یاد می‌گیری", "right": "من یاد می‌گیرم", "correctSide": "left" },
+        { "prompt": "Deutsch", "left": "انگلیسی", "right": "آلمانی", "correctSide": "right" },
+        { "prompt": "sprechen", "left": "صحبت کردن", "right": "یاد گرفتن", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s6",
+      "question": "کدام پسوند برای فعل با «ich» درست است؟",
+      "options": ["-st", "-e", "-en", "-t"],
+      "correctAnswerIndex": 1,
+      "feedback": {
+        "explanation": "فعل‌ها با «ich» پسوند «-e» می‌گیرند: ich spreche، ich lerne، ich wohne."
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s7",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Ich {0} Deutsch.",
+      "options": ["spreche", "sprichst", "sprechen", "spricht"],
+      "correctAnswers": [0],
+      "feedback": {
+        "explanation": "با «ich» از «spreche» استفاده می‌کنیم. پسوند «-e» برای ich است."
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s8",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "{0} du Englisch?",
+      "options": ["Sprichst", "Spreche", "Sprechen", "Spriche"],
+      "correctAnswers": [0],
+      "feedback": {
+        "explanation": "با «du» از «Sprichst» استفاده می‌کنیم. پسوند «-st» برای du است."
+      }
+    },
+    {
+      "type": "word-order",
+      "id": "s9",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["Deutsch.", "lerne", "Ich"],
+      "correctOrder": [2, 1, 0],
+      "correctSentence": {
+        "de": "Ich lerne Deutsch.",
+        "fa": "من آلمانی یاد می‌گیرم."
+      }
+    },
+    {
+      "type": "memory-match",
+      "id": "g2",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "Ich spreche", "fa": "من صحبت می‌کنم" },
+        { "de": "Du sprichst", "fa": "تو صحبت می‌کنی" },
+        { "de": "Ich lerne", "fa": "من یاد می‌گیرم" },
+        { "de": "Du lernst", "fa": "تو یاد می‌گیری" }
+      ],
+      "timeLimit": 60
+    },
+    {
+      "type": "dialog",
+      "id": "s10",
+      "title": "گفتگوی زبان‌آموزان",
+      "lines": [
+        { "speaker": "Max", "text": { "de": "Hallo! Sprichst du Deutsch?", "fa": "سلام! آیا آلمانی صحبت می‌کنی؟" } },
+        { "speaker": "Sara", "text": { "de": "Ja, ich lerne Deutsch!", "fa": "بله، من آلمانی یاد می‌گیرم!" } },
+        { "speaker": "Max", "text": { "de": "Super! Ich spreche auch Englisch.", "fa": "عالیه! من انگلیسی هم صحبت می‌کنم." } },
+        { "speaker": "Sara", "text": { "de": "Sprichst du Persisch?", "fa": "آیا فارسی صحبت می‌کنی؟" } },
+        { "speaker": "Max", "text": { "de": "Nein, ich lerne Persisch.", "fa": "نه، من فارسی یاد می‌گیرم." } },
+        { "speaker": "Sara", "text": { "de": "Toll! Ich spreche Persisch und Deutsch.", "fa": "عالیه! من فارسی و آلمانی صحبت می‌کنم." } }
+      ],
+      "feedback": {
+        "explanation": "در این مکالمه مکس و سارا درباره زبان‌هایی که صحبت می‌کنند و یاد می‌گیرند حرف می‌زنند. توجه کنید که «ich» با «spreche/lerne» و «du» با «sprichst/lernst» می‌آید."
+      }
+    },
+    {
+      "type": "matching",
+      "id": "s11",
+      "instruction": "جفت‌های درست را پیدا کنید",
+      "items": [
+        { "id": "i1", "text": "Ich spreche" },
+        { "id": "i2", "text": "Du sprichst" },
+        { "id": "i3", "text": "Ich lerne" },
+        { "id": "i4", "text": "Du lernst" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "من صحبت می‌کنم" },
+        { "id": "m2", "text": "تو صحبت می‌کنی" },
+        { "id": "m3", "text": "من یاد می‌گیرم" },
+        { "id": "m4", "text": "تو یاد می‌گیری" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]],
+      "shuffleTargets": true
+    },
+    {
+      "type": "true-false",
+      "id": "s12",
+      "instruction": "درست یا غلط؟",
+      "statement": "فعل با «du» پسوند «-st» می‌گیرد: Du sprichst Deutsch.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست است! فعل‌ها با «du» پسوند «-st» می‌گیرند: du sprichst، du lernst، du wohnst."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "s13",
+      "sourceText": "آیا آلمانی صحبت می‌کنی؟",
+      "sentenceTemplate": "{0} du {1}?",
+      "options": ["Deutsch", "Sprichst", "Englisch", "Lernst"],
+      "correctAnswers": [1, 0],
+      "correctTranslation": {
+        "de": "Sprichst du Deutsch?",
+        "fa": "آیا آلمانی صحبت می‌کنی؟"
+      }
+    },
+    {
+      "type": "spelling",
+      "id": "s14",
+      "word": "sprechen",
+      "translation": "صحبت کردن",
+      "hint": "شپرِشِن",
+      "instruction": "این کلمه را تایپ کنید"
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s15",
+      "question": "کدام جمله درست است؟",
+      "options": ["Ich sprichst Deutsch.", "Du spreche Deutsch.", "Ich spreche Deutsch.", "Du sprich Deutsch."],
+      "correctAnswerIndex": 2,
+      "feedback": {
+        "explanation": "«Ich spreche» درست است. با «ich» فعل پسوند «-e» می‌گیرد."
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s16",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Ich {0} Deutsch. Du {1} Englisch.",
+      "options": ["lerne", "lernst"],
+      "correctAnswers": [0, 1],
+      "feedback": {
+        "explanation": "با «ich» از «lerne» (پسوند -e) و با «du» از «lernst» (پسوند -st) استفاده می‌کنیم."
+      }
+    },
+    {
+      "type": "vocab-check",
+      "id": "g3",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "sprechen", "fa": "صحبت کردن" },
+        { "de": "Ich spreche", "fa": "من صحبت می‌کنم" },
+        { "de": "Du sprichst", "fa": "تو صحبت می‌کنی" },
+        { "de": "lernen", "fa": "یاد گرفتن" },
+        { "de": "Deutsch", "fa": "زبان آلمانی" },
+        { "de": "Englisch", "fa": "زبان انگلیسی" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "s17",
+      "message": "آفرین! درس چهارم را با موفقیت تمام کردید!",
+      "vocabularyLearned": [
+        { "word": { "de": "sprechen", "fa": "صحبت کردن" } },
+        { "word": { "de": "Ich spreche", "fa": "من صحبت می‌کنم" } },
+        { "word": { "de": "Du sprichst", "fa": "تو صحبت می‌کنی" } },
+        { "word": { "de": "lernen", "fa": "یاد گرفتن" } },
+        { "word": { "de": "Deutsch", "fa": "زبان آلمانی" } },
+        { "word": { "de": "Englisch", "fa": "زبان انگلیسی" } }
+      ]
+    }
+  ],
+  "tags": ["verbs", "conjugation", "languages", "grammar", "A1"]
+}

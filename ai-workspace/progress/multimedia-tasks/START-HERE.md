@@ -83,6 +83,26 @@ Videos: apps/web/static/videos/shared/
   - Context: Vocabulary for 'Woher kommst du?' (Where are you from?)
   - Style: curious, friendly, educational
 
+### Lesson 04: Ich spreche Deutsch!
+
+**Images (4):**
+
+- [ ] `scenes/language-exchange.jpg` - Two young adults (Max and Sara) having a friendly conversation about languages
+  - Context: Dialog scene - Max asks Sara about languages she speaks and learns
+  - Style: modern cafe or university setting, friendly atmosphere, diverse characters
+
+- [ ] `actions/speaking.jpg` - Person speaking or having a conversation
+  - Context: Vocabulary for 'sprechen' (to speak)
+  - Style: clear, simple background, person mid-conversation
+
+- [ ] `actions/learning.jpg` - Person studying or learning with books/laptop
+  - Context: Vocabulary for 'lernen' (to learn)
+  - Style: student focused on studying, modern environment
+
+- [ ] `grammar/verb-conjugation-ich-du.jpg` - Visual diagram showing verb conjugation for ich (-e) and du (-st)
+  - Context: Grammar tip - how verbs change: ich spreche vs du sprichst
+  - Style: clean infographic, color-coded (ich=blue, du=green)
+
 ---
 
 ## Progress Summary
@@ -92,8 +112,9 @@ Videos: apps/web/static/videos/shared/
 | A1 | 01 | 01 | 5 | 0 | Pending |
 | A1 | 01 | 02 | 3 | 0 | Pending |
 | A1 | 01 | 03 | 4 | 0 | Pending |
+| A1 | 01 | 04 | 4 | 0 | Pending |
 
-**Total:** 12 tasks (12 images, 0 videos)
+**Total:** 16 tasks (16 images, 0 videos)
 
 ---
 
@@ -102,9 +123,11 @@ Videos: apps/web/static/videos/shared/
 All folders are ready in `apps/web/static/images/shared/`:
 
 ```
+actions/         - Speaking, learning, doing
 greetings/       - Hello, goodbye, waves
 introductions/   - Handshakes, first meetings
 expressions/     - Thank you, please, emotions
+grammar/         - Verb conjugation, grammar visuals
 scenes/          - Cafe, office, street scenes
 people/          - Individual portraits
 family/          - Family members
@@ -142,3 +165,4 @@ Check the detailed task files:
 - `A1-M01-L01.json` - Lesson 01 tasks
 - `A1-M01-L02.json` - Lesson 02 tasks
 - `A1-M01-L03.json` - Lesson 03 tasks
+- `A1-M01-L04.json` - Lesson 04 tasks
