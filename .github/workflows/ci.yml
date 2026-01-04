@@ -13,6 +13,6 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 20 }
       - run: pnpm install
-      - run: pnpm lint
+      - run: pnpm lint:all
       - run: pnpm typecheck
       - run: pnpm -w build
