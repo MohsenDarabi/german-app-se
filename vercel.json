@@ -2,7 +2,7 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "cp -r ./content apps/web/content && pnpm --filter web build",
   "devCommand": "pnpm --filter web dev",
-  "installCommand": "pnpm install",
+  "installCommand": "corepack enable && pnpm install",
   "framework": "sveltekit",
   "outputDirectory": "apps/web/.svelte-kit"
 }
