@@ -16,6 +16,12 @@
     "lint": "turbo run lint",
     "typecheck": "turbo run typecheck",
     "test": "turbo run test",
-    "dev": "pnpm --filter web dev"
+    "dev": "pnpm --filter @app/web dev",
+    "dev:web": "pnpm --filter @app/web dev"
+  },
+    "pnpm": {
+    "overrides": {
+      "svelte": "4.2.0"
+    }
   }
 }
