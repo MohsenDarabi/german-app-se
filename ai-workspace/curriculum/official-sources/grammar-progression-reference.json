@@ -1,0 +1,421 @@
+{
+  "source": "Learn German Original A1 Course",
+  "sourceUrl": "https://learngermanoriginal.com/courses/a1-course/",
+  "totalLessons": 65,
+  "level": "A1",
+  "description": "Standard grammar progression for A1 level. W-Fragen comes AFTER accusative case.",
+  "progression": [
+    {
+      "lessonRange": [1, 6],
+      "focus": "vocabulary-only",
+      "topics": ["greetings", "numbers", "basic-phrases"],
+      "grammar": [],
+      "note": "No formal grammar - pure vocabulary acquisition"
+    },
+    {
+      "lessonRange": [7, 8],
+      "focus": "formality",
+      "topics": ["formality"],
+      "grammar": [
+        {
+          "id": "du-vs-sie",
+          "de": "du vs. Sie",
+          "fa": "تو در مقابل شما",
+          "description": "Informal vs formal address",
+          "prerequisites": []
+        }
+      ]
+    },
+    {
+      "lessonRange": [9, 10],
+      "focus": "sentence-structure",
+      "topics": ["word-order"],
+      "grammar": [
+        {
+          "id": "basic-sentence-structure",
+          "de": "Grundlegende Satzstruktur",
+          "fa": "ساختار پایه جمله",
+          "description": "Subject-Verb-Object basics, V2 rule introduction",
+          "prerequisites": []
+        }
+      ]
+    },
+    {
+      "lessonRange": [11, 15],
+      "focus": "verbs-pronouns",
+      "topics": ["pronouns", "verb-conjugation"],
+      "grammar": [
+        {
+          "id": "personal-pronouns-nominative",
+          "de": "Personalpronomen (Nominativ)",
+          "fa": "ضمایر شخصی (فاعلی)",
+          "description": "ich, du, er, sie, es, wir, ihr, sie, Sie",
+          "prerequisites": ["du-vs-sie"]
+        },
+        {
+          "id": "verb-sein",
+          "de": "sein (Konjugation)",
+          "fa": "فعل بودن",
+          "description": "bin, bist, ist, sind, seid, sind",
+          "prerequisites": ["personal-pronouns-nominative"]
+        },
+        {
+          "id": "verb-haben",
+          "de": "haben (Konjugation)",
+          "fa": "فعل داشتن",
+          "description": "habe, hast, hat, haben, habt, haben",
+          "prerequisites": ["personal-pronouns-nominative"]
+        },
+        {
+          "id": "regular-verb-conjugation",
+          "de": "Regelmäßige Verben",
+          "fa": "صرف فعل‌های باقاعده",
+          "description": "-e, -st, -t, -en, -t, -en endings",
+          "prerequisites": ["personal-pronouns-nominative"]
+        },
+        {
+          "id": "irregular-verb-conjugation",
+          "de": "Unregelmäßige Verben",
+          "fa": "صرف فعل‌های بی‌قاعده",
+          "description": "Stem-changing verbs (fahren, sprechen, etc.)",
+          "prerequisites": ["regular-verb-conjugation"]
+        }
+      ]
+    },
+    {
+      "lessonRange": [16, 18],
+      "focus": "negation",
+      "topics": ["negation"],
+      "grammar": [
+        {
+          "id": "negation-nicht",
+          "de": "Verneinung mit nicht",
+          "fa": "منفی کردن با nicht",
+          "description": "Negating verbs and adjectives",
+          "prerequisites": ["basic-sentence-structure"]
+        },
+        {
+          "id": "negation-kein",
+          "de": "Verneinung mit kein",
+          "fa": "منفی کردن با kein",
+          "description": "Negating nouns (kein/keine)",
+          "prerequisites": ["negation-nicht"]
+        }
+      ]
+    },
+    {
+      "lessonRange": [19, 21],
+      "focus": "articles",
+      "topics": ["definite-articles", "indefinite-articles", "gender"],
+      "grammar": [
+        {
+          "id": "definite-articles-nominative",
+          "de": "Bestimmte Artikel (Nominativ)",
+          "fa": "حروف تعریف معین (فاعلی)",
+          "description": "der, die, das - grammatical gender",
+          "prerequisites": []
+        },
+        {
+          "id": "indefinite-articles-nominative",
+          "de": "Unbestimmte Artikel (Nominativ)",
+          "fa": "حروف تعریف نامعین (فاعلی)",
+          "description": "ein, eine - indefinite articles",
+          "prerequisites": ["definite-articles-nominative"]
+        },
+        {
+          "id": "noun-gender",
+          "de": "Genus (Geschlecht)",
+          "fa": "جنسیت اسم",
+          "description": "Masculine, feminine, neuter nouns",
+          "prerequisites": ["definite-articles-nominative"]
+        }
+      ]
+    },
+    {
+      "lessonRange": [22, 23],
+      "focus": "plural",
+      "topics": ["plural-nouns"],
+      "grammar": [
+        {
+          "id": "plural-formation",
+          "de": "Pluralbildung",
+          "fa": "جمع بستن",
+          "description": "5 plural patterns: -e, -n/-en, -er, -s, no change",
+          "prerequisites": ["noun-gender"]
+        }
+      ]
+    },
+    {
+      "lessonRange": [24, 25],
+      "focus": "possessives",
+      "topics": ["possessive-pronouns"],
+      "grammar": [
+        {
+          "id": "possessive-pronouns-nominative",
+          "de": "Possessivpronomen (Nominativ)",
+          "fa": "ضمایر ملکی (فاعلی)",
+          "description": "mein, dein, sein, ihr, unser, euer, ihr, Ihr",
+          "prerequisites": ["personal-pronouns-nominative", "indefinite-articles-nominative"]
+        }
+      ]
+    },
+    {
+      "lessonRange": [26, 28],
+      "focus": "accusative-case",
+      "topics": ["accusative"],
+      "grammar": [
+        {
+          "id": "accusative-articles",
+          "de": "Akkusativ (Artikel)",
+          "fa": "حالت مفعولی (حروف تعریف)",
+          "description": "den, die, das; einen, eine, ein",
+          "prerequisites": ["definite-articles-nominative", "indefinite-articles-nominative"],
+          "note": "der → den for masculine nouns"
+        },
+        {
+          "id": "accusative-pronouns",
+          "de": "Akkusativ (Pronomen)",
+          "fa": "حالت مفعولی (ضمایر)",
+          "description": "mich, dich, ihn, sie, es, uns, euch, sie, Sie",
+          "prerequisites": ["accusative-articles", "personal-pronouns-nominative"]
+        },
+        {
+          "id": "accusative-verbs",
+          "de": "Verben mit Akkusativ",
+          "fa": "فعل‌های با مفعول مستقیم",
+          "description": "haben, brauchen, möchten, sehen, etc.",
+          "prerequisites": ["accusative-articles"]
+        }
+      ]
+    },
+    {
+      "lessonRange": [29, 31],
+      "focus": "w-fragen",
+      "topics": ["question-words", "word-order-questions"],
+      "grammar": [
+        {
+          "id": "yes-no-questions",
+          "de": "Ja/Nein-Fragen",
+          "fa": "سوالات بله/خیر",
+          "description": "Verb-first questions: Sprichst du Deutsch?",
+          "prerequisites": ["basic-sentence-structure"]
+        },
+        {
+          "id": "w-fragen",
+          "de": "W-Fragen",
+          "fa": "سوالات با کلمات پرسشی",
+          "description": "Was, Wo, Wer, Wie, Wann, Warum, Woher, Wohin",
+          "prerequisites": ["accusative-case", "yes-no-questions"],
+          "note": "CRITICAL: Only introduce AFTER accusative case is taught"
+        }
+      ]
+    },
+    {
+      "lessonRange": [32, 36],
+      "focus": "dative-case",
+      "topics": ["dative"],
+      "grammar": [
+        {
+          "id": "dative-articles",
+          "de": "Dativ (Artikel)",
+          "fa": "حالت مفعول غیرمستقیم (حروف تعریف)",
+          "description": "dem, der, dem; einem, einer, einem",
+          "prerequisites": ["accusative-articles"]
+        },
+        {
+          "id": "dative-pronouns",
+          "de": "Dativ (Pronomen)",
+          "fa": "حالت مفعول غیرمستقیم (ضمایر)",
+          "description": "mir, dir, ihm, ihr, ihm, uns, euch, ihnen, Ihnen",
+          "prerequisites": ["dative-articles", "accusative-pronouns"]
+        },
+        {
+          "id": "dative-verbs",
+          "de": "Verben mit Dativ",
+          "fa": "فعل‌های با مفعول غیرمستقیم",
+          "description": "helfen, gefallen, gehören, danken, etc.",
+          "prerequisites": ["dative-articles"]
+        },
+        {
+          "id": "dative-prepositions",
+          "de": "Präpositionen mit Dativ",
+          "fa": "حروف اضافه با حالت Dativ",
+          "description": "aus, bei, mit, nach, seit, von, zu",
+          "prerequisites": ["dative-articles"]
+        }
+      ]
+    },
+    {
+      "lessonRange": [37, 40],
+      "focus": "separable-verbs",
+      "topics": ["separable-verbs", "word-order"],
+      "grammar": [
+        {
+          "id": "separable-verbs",
+          "de": "Trennbare Verben",
+          "fa": "فعل‌های جداشدنی",
+          "description": "aufstehen, ankommen, einkaufen - prefix goes to end",
+          "prerequisites": ["basic-sentence-structure", "regular-verb-conjugation"]
+        },
+        {
+          "id": "inseparable-verbs",
+          "de": "Untrennbare Verben",
+          "fa": "فعل‌های جدانشدنی",
+          "description": "be-, ge-, er-, ver-, ent-, emp-, miss-, zer-",
+          "prerequisites": ["separable-verbs"]
+        }
+      ]
+    },
+    {
+      "lessonRange": [41, 43],
+      "focus": "modal-verbs",
+      "topics": ["modal-verbs"],
+      "grammar": [
+        {
+          "id": "modal-verbs",
+          "de": "Modalverben",
+          "fa": "فعل‌های وجهی",
+          "description": "können, müssen, wollen, dürfen, sollen, mögen",
+          "prerequisites": ["basic-sentence-structure", "irregular-verb-conjugation"]
+        },
+        {
+          "id": "modal-verb-word-order",
+          "de": "Wortstellung mit Modalverben",
+          "fa": "ترتیب کلمات با فعل‌های وجهی",
+          "description": "Modal verb conjugated, main verb at end (infinitive)",
+          "prerequisites": ["modal-verbs"]
+        }
+      ]
+    },
+    {
+      "lessonRange": [44, 50],
+      "focus": "past-tense",
+      "topics": ["perfekt", "past-participle"],
+      "grammar": [
+        {
+          "id": "perfekt-haben",
+          "de": "Perfekt mit haben",
+          "fa": "زمان گذشته با haben",
+          "description": "Ich habe gemacht - most verbs",
+          "prerequisites": ["verb-haben", "regular-verb-conjugation"]
+        },
+        {
+          "id": "perfekt-sein",
+          "de": "Perfekt mit sein",
+          "fa": "زمان گذشته با sein",
+          "description": "Ich bin gegangen - movement/change verbs",
+          "prerequisites": ["verb-sein", "perfekt-haben"]
+        },
+        {
+          "id": "past-participle-regular",
+          "de": "Partizip II (regelmäßig)",
+          "fa": "اسم مفعول (باقاعده)",
+          "description": "ge-...-t pattern: gemacht, gekauft",
+          "prerequisites": ["perfekt-haben"]
+        },
+        {
+          "id": "past-participle-irregular",
+          "de": "Partizip II (unregelmäßig)",
+          "fa": "اسم مفعول (بی‌قاعده)",
+          "description": "ge-...-en pattern: gegangen, geschrieben",
+          "prerequisites": ["past-participle-regular"]
+        }
+      ]
+    },
+    {
+      "lessonRange": [51, 55],
+      "focus": "prepositions",
+      "topics": ["prepositions", "two-way-prepositions"],
+      "grammar": [
+        {
+          "id": "accusative-prepositions",
+          "de": "Präpositionen mit Akkusativ",
+          "fa": "حروف اضافه با حالت Akkusativ",
+          "description": "durch, für, gegen, ohne, um",
+          "prerequisites": ["accusative-articles"]
+        },
+        {
+          "id": "two-way-prepositions",
+          "de": "Wechselpräpositionen",
+          "fa": "حروف اضافه دوگانه",
+          "description": "an, auf, hinter, in, neben, über, unter, vor, zwischen",
+          "prerequisites": ["accusative-prepositions", "dative-prepositions"],
+          "note": "Wohin? → Accusative, Wo? → Dative"
+        }
+      ]
+    },
+    {
+      "lessonRange": [56, 60],
+      "focus": "conjunctions",
+      "topics": ["conjunctions", "subordinate-clauses"],
+      "grammar": [
+        {
+          "id": "coordinating-conjunctions",
+          "de": "Koordinierende Konjunktionen",
+          "fa": "حروف ربط همپایه",
+          "description": "und, oder, aber, denn, sondern",
+          "prerequisites": ["basic-sentence-structure"]
+        },
+        {
+          "id": "subordinating-conjunctions",
+          "de": "Subordinierende Konjunktionen",
+          "fa": "حروف ربط ناهمپایه",
+          "description": "weil, dass, wenn, obwohl - verb goes to end",
+          "prerequisites": ["coordinating-conjunctions"]
+        }
+      ]
+    },
+    {
+      "lessonRange": [61, 65],
+      "focus": "practical-communication",
+      "topics": ["review", "practical-situations"],
+      "grammar": [],
+      "note": "Review and practical application of all grammar"
+    }
+  ],
+  "functionWords": {
+    "description": "Function words that may be used before formally taught",
+    "allowedAlways": [
+      "der", "die", "das", "ein", "eine",
+      "und", "oder", "aber",
+      "ist", "sind", "bin",
+      "ja", "nein", "nicht",
+      "ich", "du", "Sie",
+      "in", "aus", "mit"
+    ]
+  },
+  "keyMilestones": [
+    {
+      "lesson": 7,
+      "milestone": "du vs. Sie formality distinction"
+    },
+    {
+      "lesson": 11,
+      "milestone": "Full verb conjugation begins"
+    },
+    {
+      "lesson": 19,
+      "milestone": "Article system (der/die/das) introduced"
+    },
+    {
+      "lesson": 26,
+      "milestone": "Accusative case begins"
+    },
+    {
+      "lesson": 29,
+      "milestone": "W-Fragen (question words) introduced - AFTER accusative"
+    },
+    {
+      "lesson": 32,
+      "milestone": "Dative case begins"
+    },
+    {
+      "lesson": 37,
+      "milestone": "Separable verbs"
+    },
+    {
+      "lesson": 44,
+      "milestone": "Past tense (Perfekt) begins"
+    }
+  ]
+}

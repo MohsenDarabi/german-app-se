@@ -1,0 +1,149 @@
+{
+  "version": "1.0.0",
+  "description": "Character registry for German Learning App content. Minimizes cognitive load while enabling realistic scenarios.",
+  "characters": {
+    "primary": {
+      "names": ["Lisa", "Theo"],
+      "description": "Default characters for 2-person dialogues. Use these FIRST for all basic scenarios.",
+      "traits": {
+        "Lisa": {
+          "gender": "female",
+          "age": "young adult (20s)",
+          "role": "German native speaker, friendly and patient",
+          "pronouns": { "nominative": "sie", "accusative": "sie", "dative": "ihr" }
+        },
+        "Theo": {
+          "gender": "male",
+          "age": "young adult (20s)",
+          "role": "German native speaker, curious and helpful",
+          "pronouns": { "nominative": "er", "accusative": "ihn", "dative": "ihm" }
+        }
+      },
+      "introducedAt": "A1-M01-L01",
+      "usageRule": "ALWAYS use Lisa & Theo when only 2 people are needed"
+    },
+    "secondary": {
+      "names": ["Max", "Sophie", "Leon", "Emma"],
+      "description": "Use when 3rd or 4th person is needed in a scene (e.g., introducing someone, family scenes).",
+      "traits": {
+        "Max": {
+          "gender": "male",
+          "age": "young adult",
+          "role": "Friend/colleague/acquaintance",
+          "pronouns": { "nominative": "er", "accusative": "ihn", "dative": "ihm" }
+        },
+        "Sophie": {
+          "gender": "female",
+          "age": "young adult",
+          "role": "Friend/colleague/acquaintance",
+          "pronouns": { "nominative": "sie", "accusative": "sie", "dative": "ihr" }
+        },
+        "Leon": {
+          "gender": "male",
+          "age": "varies by context",
+          "role": "Family member/extended acquaintance",
+          "pronouns": { "nominative": "er", "accusative": "ihn", "dative": "ihm" }
+        },
+        "Emma": {
+          "gender": "female",
+          "age": "varies by context",
+          "role": "Family member/extended acquaintance",
+          "pronouns": { "nominative": "sie", "accusative": "sie", "dative": "ihr" }
+        }
+      },
+      "introducedAt": "A1-M02 (when 3+ person scenes begin)",
+      "usageRule": "Only add secondary characters when scene requires more than 2 people"
+    },
+    "persian": {
+      "names": ["Sara", "Amir"],
+      "description": "Persian-speaking characters for cultural bridge moments and relatable learner perspective.",
+      "traits": {
+        "Sara": {
+          "gender": "female",
+          "age": "young adult",
+          "role": "Persian speaker learning German, relatable learner perspective",
+          "pronouns": { "nominative": "sie", "accusative": "sie", "dative": "ihr" },
+          "nativeLanguage": "Persian (Farsi)"
+        },
+        "Amir": {
+          "gender": "male",
+          "age": "young adult",
+          "role": "Persian speaker living in Germany, cultural bridge",
+          "pronouns": { "nominative": "er", "accusative": "ihn", "dative": "ihm" },
+          "nativeLanguage": "Persian (Farsi)"
+        }
+      },
+      "introducedAt": "A1-M03 (cultural context lessons)",
+      "usageRule": "Use for Persian cultural perspective or when showing learner struggles"
+    },
+    "service": {
+      "names": ["Kellner", "Verkäufer", "Arzt"],
+      "description": "Generic role names for service scenarios (not named characters).",
+      "usageRule": "Use role titles instead of names for brief service interactions",
+      "examples": [
+        "der Kellner (the waiter)",
+        "die Verkäuferin (the saleswoman)",
+        "der Arzt / die Ärztin (the doctor)"
+      ]
+    }
+  },
+  "rules": {
+    "cognitiveLoad": {
+      "maxCharactersPerScene": 4,
+      "maxNewCharactersPerLesson": 2,
+      "preferFamiliarCharacters": true
+    },
+    "consistency": {
+      "sameNameSamePerson": true,
+      "maintainTraitsAcrossLessons": true,
+      "noConflictingBackstories": true
+    },
+    "selection": {
+      "twoPersonScene": "Use Lisa & Theo",
+      "threePersonScene": "Use Lisa, Theo + one from secondary",
+      "fourPersonScene": "Use Lisa, Theo + two from secondary",
+      "persianPerspective": "Use Sara or Amir when showing learner experience",
+      "serviceInteraction": "Use role titles (Kellner, etc.) instead of names"
+    }
+  },
+  "levelGuidelines": {
+    "A1": {
+      "allowedPrimary": ["Lisa", "Theo"],
+      "allowedSecondary": ["Max", "Sophie"],
+      "allowedPersian": ["Sara"],
+      "note": "Keep character count minimal for beginners"
+    },
+    "A2": {
+      "allowedPrimary": ["Lisa", "Theo"],
+      "allowedSecondary": ["Max", "Sophie", "Leon", "Emma"],
+      "allowedPersian": ["Sara", "Amir"],
+      "note": "Can introduce more complex multi-person scenarios"
+    },
+    "B1": {
+      "allowedAll": true,
+      "note": "Full character roster available, learners can handle complexity"
+    }
+  },
+  "validationRules": [
+    {
+      "rule": "unknown-character",
+      "description": "Fail if character name not in registry",
+      "severity": "error"
+    },
+    {
+      "rule": "too-many-characters",
+      "description": "Warn if more than 4 characters in a scene",
+      "severity": "warning"
+    },
+    {
+      "rule": "premature-secondary",
+      "description": "Warn if secondary character used before A1-M02",
+      "severity": "warning"
+    },
+    {
+      "rule": "unnecessary-expansion",
+      "description": "Warn if 3+ characters used when 2 would suffice",
+      "severity": "info"
+    }
+  ]
+}

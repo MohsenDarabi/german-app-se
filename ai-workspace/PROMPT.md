@@ -80,6 +80,59 @@ ai-workspace/progress/multimedia-tasks/A1-M01-L02.json  ← Tasks for colleague
 
 ---
 
+## 🚨 SCOPE SYSTEM (MANDATORY)
+
+Before creating ANY lesson content, you MUST follow the scope constraints:
+
+### Scope Files Location
+```
+ai-workspace/curriculum/
+├── canonical-scope.json              # Master scope - defines ALL 60 A1 lessons
+├── official-sources/
+│   ├── goethe-a1-wordlist.json      # 676 official Goethe A1 words
+│   └── grammar-progression-reference.json  # When grammar is introduced
+├── characters/
+│   └── character-registry.json       # Lisa, Theo, Max, Sophie...
+└── resource-mapping/
+    ├── babbel-a1-scope.json         # Vocabulary per Babbel lesson
+    └── busuu-a1-scope.json          # Vocabulary per Busuu lesson
+```
+
+### Before Creating a Lesson
+
+1. **Check canonical-scope.json** for target lesson:
+   - What vocabulary is allowed (cumulative from all previous lessons)
+   - What grammar is introduced/forbidden
+   - Which characters can appear
+
+2. **Key Rules**:
+   - **W-Fragen (Was, Wo, Wer, Wie, etc.)**: Only from lesson L34+ (after accusative case)
+   - **Characters**: Use Lisa & Theo for 2-person scenes. Add Max/Sophie only when 3+ people needed
+   - **Vocabulary**: Max 15 new words per lesson. Check against Goethe A1 wordlist
+   - **Grammar**: Never introduce before its scheduled lesson
+
+3. **Validate after creating**:
+   ```bash
+   node scripts/validate-scope.js content/de-fa/A1/module-XX/A1-MXX-LYY.json
+   ```
+
+### Grammar Progression (Key Milestones)
+| Lesson | Grammar Introduced |
+|--------|-------------------|
+| L01-L08 | No formal grammar (vocabulary only) |
+| L07-L08 | du vs. Sie |
+| L13-L16 | Verb conjugation (sein, haben, regular, irregular) |
+| L17-L20 | Negation (nicht, kein) |
+| L21-L24 | Articles (der/die/das, ein/eine) + Possessives |
+| L29-L32 | Accusative case |
+| L33-L36 | **W-Fragen** (only HERE, after accusative!) |
+| L41-L44 | Dative case |
+| L45-L48 | Separable verbs |
+| L49-L52 | Modal verbs |
+| L53-L56 | Perfekt (past tense) |
+
+---
+
 ## Workflows
 
 | Task | Workflow File |
@@ -94,6 +147,9 @@ ai-workspace/progress/multimedia-tasks/A1-M01-L02.json  ← Tasks for colleague
 
 | Reference | File |
 |-----------|------|
+| **Curriculum Scope (CRITICAL)** | `curriculum/canonical-scope.json` |
+| **Grammar Progression** | `curriculum/official-sources/grammar-progression-reference.json` |
+| **Character Registry** | `curriculum/characters/character-registry.json` |
 | All 17 step types with examples | `references/step-types.md` |
 | Navigate source content (Babbel/Busuu/PDF) | `references/source-content.md` |
 | Critical rules & troubleshooting | `references/rules-and-tips.md` |
@@ -103,14 +159,17 @@ ai-workspace/progress/multimedia-tasks/A1-M01-L02.json  ← Tasks for colleague
 
 ## Rules
 
-1. **Update CURRENT_TASK.md** when starting AND finishing tasks (critical for recovery!)
-2. **Update STATUS.md** after completing significant work
-3. **Track progress** in `progress/*.json` files
-4. **One lesson at a time** - complete fully before moving to next
-5. **Multimedia tasks** - create for each lesson, save to `progress/multimedia-pending.json`
-6. **Test before commit** - run `pnpm run dev` and verify lesson works
+1. **🚨 CHECK SCOPE FIRST** - Before creating ANY lesson, read `curriculum/canonical-scope.json`
+2. **Update CURRENT_TASK.md** when starting AND finishing tasks (critical for recovery!)
+3. **Update STATUS.md** after completing significant work
+4. **Track progress** in `progress/*.json` files
+5. **One lesson at a time** - complete fully before moving to next
+6. **Multimedia tasks** - create for each lesson, save to `progress/multimedia-pending.json`
+7. **Validate scope** - Run `node scripts/validate-scope.js` before committing
+8. **Test before commit** - run `pnpm run dev` and verify lesson works
 
 > **CRITICAL**: Always update CURRENT_TASK.md so the next session knows where to resume!
+> **CRITICAL**: Never use W-Fragen (Was, Wo, Wer...) before lesson L34!
 
 ---
 

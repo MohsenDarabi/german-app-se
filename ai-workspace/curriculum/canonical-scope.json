@@ -1,0 +1,759 @@
+{
+  "version": "1.0.0",
+  "level": "A1",
+  "description": "Canonical scope definition for A1 German. All content must adhere to this scope.",
+  "totalSections": 15,
+  "totalLessons": 60,
+  "sections": [
+    {
+      "id": "A1-S01",
+      "title": { "de": "Begrüßung", "fa": "احوالپرسی" },
+      "theme": "greetings",
+      "grammarFocus": [],
+      "lessons": [
+        {
+          "id": "A1-M01-L01",
+          "title": { "de": "Hallo!", "fa": "سلام!" },
+          "vocabulary": {
+            "introduces": ["Hallo", "Hi", "Guten Tag", "Tschüss", "Auf Wiedersehen"],
+            "maxNewWords": 8
+          },
+          "grammar": { "introduces": [], "forbidden": ["verb-conjugation", "cases", "w-fragen"] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M01-L02",
+          "title": { "de": "Guten Morgen!", "fa": "صبح بخیر!" },
+          "vocabulary": {
+            "introduces": ["Guten Morgen", "Guten Abend", "Gute Nacht", "Bis bald", "Bis später"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": [], "forbidden": ["verb-conjugation", "cases", "w-fragen"] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M01-L03",
+          "title": { "de": "Ich bin...", "fa": "من هستم..." },
+          "vocabulary": {
+            "introduces": ["ich", "bin", "heiße", "Freut mich", "Name"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": ["sein-ich"], "forbidden": ["full-conjugation", "cases", "w-fragen"] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M01-L04",
+          "title": { "de": "Ich spreche Deutsch!", "fa": "من آلمانی صحبت می‌کنم!" },
+          "vocabulary": {
+            "introduces": ["spreche", "Deutsch", "Persisch", "lernen", "verstehen"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": ["regular-verb-ich"], "forbidden": ["cases", "w-fragen"] },
+          "characters": ["Lisa", "Theo"]
+        }
+      ]
+    },
+    {
+      "id": "A1-S02",
+      "title": { "de": "Wie geht's?", "fa": "حالت چطوره؟" },
+      "theme": "feelings-wellbeing",
+      "grammarFocus": ["du-vs-sie"],
+      "lessons": [
+        {
+          "id": "A1-M02-L05",
+          "title": { "de": "Wie geht es dir?", "fa": "حالت چطوره؟" },
+          "vocabulary": {
+            "introduces": ["Wie", "geht", "dir", "mir", "gut", "danke"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": ["du-vs-sie-intro"], "forbidden": ["cases", "w-fragen"] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M02-L06",
+          "title": { "de": "Mir geht es gut", "fa": "حالم خوبه" },
+          "vocabulary": {
+            "introduces": ["schlecht", "super", "toll", "nicht so gut", "es"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": [], "forbidden": ["cases", "w-fragen"] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M02-L07",
+          "title": { "de": "Formell: Wie geht es Ihnen?", "fa": "رسمی: حال شما چطوره؟" },
+          "vocabulary": {
+            "introduces": ["Ihnen", "Sie", "Herr", "Frau", "formell"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": ["du-vs-sie"], "forbidden": ["cases", "w-fragen"] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M02-L08",
+          "title": { "de": "Gefühle", "fa": "احساسات" },
+          "vocabulary": {
+            "introduces": ["müde", "glücklich", "traurig", "krank", "hungrig"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": [], "forbidden": ["cases", "w-fragen"] },
+          "characters": ["Lisa", "Theo"]
+        }
+      ]
+    },
+    {
+      "id": "A1-S03",
+      "title": { "de": "Zahlen", "fa": "اعداد" },
+      "theme": "numbers",
+      "grammarFocus": [],
+      "lessons": [
+        {
+          "id": "A1-M03-L09",
+          "title": { "de": "Zahlen 1-10", "fa": "اعداد ۱ تا ۱۰" },
+          "vocabulary": {
+            "introduces": ["eins", "zwei", "drei", "vier", "fünf", "sechs", "sieben", "acht", "neun", "zehn"],
+            "maxNewWords": 12
+          },
+          "grammar": { "introduces": [], "forbidden": ["cases", "w-fragen"] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M03-L10",
+          "title": { "de": "Zahlen 11-20", "fa": "اعداد ۱۱ تا ۲۰" },
+          "vocabulary": {
+            "introduces": ["elf", "zwölf", "dreizehn", "vierzehn", "fünfzehn", "sechzehn", "siebzehn", "achtzehn", "neunzehn", "zwanzig"],
+            "maxNewWords": 12
+          },
+          "grammar": { "introduces": [], "forbidden": ["cases", "w-fragen"] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M03-L11",
+          "title": { "de": "Zahlen bis 100", "fa": "اعداد تا ۱۰۰" },
+          "vocabulary": {
+            "introduces": ["dreißig", "vierzig", "fünfzig", "sechzig", "siebzig", "achtzig", "neunzig", "hundert"],
+            "maxNewWords": 12
+          },
+          "grammar": { "introduces": [], "forbidden": ["cases", "w-fragen"] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M03-L12",
+          "title": { "de": "Telefonnummern", "fa": "شماره تلفن" },
+          "vocabulary": {
+            "introduces": ["Telefonnummer", "Nummer", "null", "Handy", "anrufen"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": [], "forbidden": ["cases", "w-fragen"] },
+          "characters": ["Lisa", "Theo"]
+        }
+      ]
+    },
+    {
+      "id": "A1-S04",
+      "title": { "de": "Verben", "fa": "فعل‌ها" },
+      "theme": "basic-verbs",
+      "grammarFocus": ["verb-conjugation"],
+      "lessons": [
+        {
+          "id": "A1-M04-L13",
+          "title": { "de": "sein und haben", "fa": "بودن و داشتن" },
+          "vocabulary": {
+            "introduces": ["sein", "haben", "bist", "hast", "ist", "hat"],
+            "maxNewWords": 12
+          },
+          "grammar": { "introduces": ["verb-sein", "verb-haben"], "forbidden": ["cases", "w-fragen"] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M04-L14",
+          "title": { "de": "Regelmäßige Verben", "fa": "فعل‌های باقاعده" },
+          "vocabulary": {
+            "introduces": ["machen", "wohnen", "kommen", "spielen", "arbeiten"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": ["regular-verb-conjugation"], "forbidden": ["cases", "w-fragen"] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M04-L15",
+          "title": { "de": "ich, du, er/sie/es", "fa": "من، تو، او" },
+          "vocabulary": {
+            "introduces": ["er", "sie", "wir", "ihr", "macht", "wohnt"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": ["personal-pronouns-nominative"], "forbidden": ["cases", "w-fragen"] },
+          "characters": ["Lisa", "Theo", "Max"]
+        },
+        {
+          "id": "A1-M04-L16",
+          "title": { "de": "Unregelmäßige Verben", "fa": "فعل‌های بی‌قاعده" },
+          "vocabulary": {
+            "introduces": ["fahren", "fährst", "lesen", "liest", "schlafen", "schläfst"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": ["irregular-verb-conjugation"], "forbidden": ["cases", "w-fragen"] },
+          "characters": ["Lisa", "Theo"]
+        }
+      ]
+    },
+    {
+      "id": "A1-S05",
+      "title": { "de": "Verneinung", "fa": "منفی کردن" },
+      "theme": "negation",
+      "grammarFocus": ["negation"],
+      "lessons": [
+        {
+          "id": "A1-M05-L17",
+          "title": { "de": "nicht", "fa": "نه/نمی" },
+          "vocabulary": {
+            "introduces": ["nicht", "heute", "morgen", "hier", "dort"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": ["negation-nicht"], "forbidden": ["cases", "w-fragen"] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M05-L18",
+          "title": { "de": "kein/keine", "fa": "هیچ" },
+          "vocabulary": {
+            "introduces": ["kein", "keine", "keinen", "Zeit", "Geld"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": ["negation-kein"], "forbidden": ["w-fragen"] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M05-L19",
+          "title": { "de": "Nein, danke!", "fa": "نه، ممنون!" },
+          "vocabulary": {
+            "introduces": ["nein", "leider", "vielleicht", "aber", "oder"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": [], "forbidden": ["w-fragen"] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M05-L20",
+          "title": { "de": "Kontraste", "fa": "تضادها" },
+          "vocabulary": {
+            "introduces": ["sondern", "doch", "noch", "schon", "immer"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": [], "forbidden": ["w-fragen"] },
+          "characters": ["Lisa", "Theo"]
+        }
+      ]
+    },
+    {
+      "id": "A1-S06",
+      "title": { "de": "Artikel", "fa": "حروف تعریف" },
+      "theme": "articles-gender",
+      "grammarFocus": ["articles", "noun-gender"],
+      "lessons": [
+        {
+          "id": "A1-M06-L21",
+          "title": { "de": "der, die, das", "fa": "der, die, das" },
+          "vocabulary": {
+            "introduces": ["der", "die", "das", "Mann", "Frau", "Kind"],
+            "maxNewWords": 12
+          },
+          "grammar": { "introduces": ["definite-articles-nominative", "noun-gender"], "forbidden": ["w-fragen"] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M06-L22",
+          "title": { "de": "ein, eine", "fa": "ein, eine" },
+          "vocabulary": {
+            "introduces": ["ein", "eine", "Buch", "Tisch", "Lampe"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": ["indefinite-articles-nominative"], "forbidden": ["w-fragen"] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M06-L23",
+          "title": { "de": "Plural", "fa": "جمع" },
+          "vocabulary": {
+            "introduces": ["Bücher", "Tische", "Kinder", "Männer", "Frauen"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": ["plural-formation"], "forbidden": ["w-fragen"] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M06-L24",
+          "title": { "de": "Possessivartikel", "fa": "صفات ملکی" },
+          "vocabulary": {
+            "introduces": ["mein", "meine", "dein", "deine", "sein", "seine", "ihr", "ihre"],
+            "maxNewWords": 12
+          },
+          "grammar": { "introduces": ["possessive-pronouns-nominative"], "forbidden": ["w-fragen"] },
+          "characters": ["Lisa", "Theo"]
+        }
+      ]
+    },
+    {
+      "id": "A1-S07",
+      "title": { "de": "Familie", "fa": "خانواده" },
+      "theme": "family",
+      "grammarFocus": [],
+      "lessons": [
+        {
+          "id": "A1-M07-L25",
+          "title": { "de": "Meine Familie", "fa": "خانواده‌ام" },
+          "vocabulary": {
+            "introduces": ["Familie", "Mutter", "Vater", "Bruder", "Schwester"],
+            "maxNewWords": 12
+          },
+          "grammar": { "introduces": [], "forbidden": ["w-fragen"] },
+          "characters": ["Lisa", "Theo", "Max"]
+        },
+        {
+          "id": "A1-M07-L26",
+          "title": { "de": "Großeltern", "fa": "پدربزرگ و مادربزرگ" },
+          "vocabulary": {
+            "introduces": ["Oma", "Opa", "Großmutter", "Großvater", "Enkel", "Enkelin"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": [], "forbidden": ["w-fragen"] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M07-L27",
+          "title": { "de": "Verwandte", "fa": "خویشاوندان" },
+          "vocabulary": {
+            "introduces": ["Onkel", "Tante", "Cousin", "Cousine", "Neffe", "Nichte"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": [], "forbidden": ["w-fragen"] },
+          "characters": ["Lisa", "Theo", "Sophie"]
+        },
+        {
+          "id": "A1-M07-L28",
+          "title": { "de": "Familienfoto", "fa": "عکس خانوادگی" },
+          "vocabulary": {
+            "introduces": ["Foto", "zeigen", "das ist", "das sind", "zusammen"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": [], "forbidden": ["w-fragen"] },
+          "characters": ["Lisa", "Theo", "Max", "Sophie"]
+        }
+      ]
+    },
+    {
+      "id": "A1-S08",
+      "title": { "de": "Akkusativ", "fa": "حالت مفعولی" },
+      "theme": "accusative-case",
+      "grammarFocus": ["accusative-case"],
+      "lessons": [
+        {
+          "id": "A1-M08-L29",
+          "title": { "de": "den, die, das", "fa": "حالت مفعولی حروف تعریف" },
+          "vocabulary": {
+            "introduces": ["den", "sehen", "brauchen", "kaufen", "haben"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": ["accusative-articles"], "forbidden": ["w-fragen"] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M08-L30",
+          "title": { "de": "einen, eine, ein", "fa": "حالت مفعولی ein" },
+          "vocabulary": {
+            "introduces": ["einen", "möchten", "nehmen", "bestellen", "Kaffee"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": ["accusative-indefinite"], "forbidden": ["w-fragen"] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M08-L31",
+          "title": { "de": "mich, dich, ihn, sie", "fa": "ضمایر مفعولی" },
+          "vocabulary": {
+            "introduces": ["mich", "dich", "ihn", "uns", "euch"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": ["accusative-pronouns"], "forbidden": ["w-fragen"] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M08-L32",
+          "title": { "de": "Verben mit Akkusativ", "fa": "فعل‌های با مفعول" },
+          "vocabulary": {
+            "introduces": ["finden", "kennen", "lieben", "besuchen", "anrufen"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": ["accusative-verbs"], "forbidden": [] },
+          "characters": ["Lisa", "Theo"]
+        }
+      ]
+    },
+    {
+      "id": "A1-S09",
+      "title": { "de": "Fragen", "fa": "سوالات" },
+      "theme": "questions",
+      "grammarFocus": ["w-fragen"],
+      "prerequisite": "A1-S08",
+      "lessons": [
+        {
+          "id": "A1-M09-L33",
+          "title": { "de": "Ja/Nein-Fragen", "fa": "سوالات بله/خیر" },
+          "vocabulary": {
+            "introduces": ["Frage", "Antwort", "richtig", "falsch", "natürlich"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": ["yes-no-questions"], "forbidden": [] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M09-L34",
+          "title": { "de": "Was? Wo? Wer?", "fa": "چه؟ کجا؟ چه کسی؟" },
+          "vocabulary": {
+            "introduces": ["Was", "Wo", "Wer", "jetzt", "dann"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": ["w-fragen"], "forbidden": [] },
+          "characters": ["Lisa", "Theo"],
+          "note": "W-Fragen introduced HERE after accusative case is taught"
+        },
+        {
+          "id": "A1-M09-L35",
+          "title": { "de": "Wie? Wann? Warum?", "fa": "چطور؟ کی؟ چرا؟" },
+          "vocabulary": {
+            "introduces": ["Wann", "Warum", "weil", "deshalb", "also"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": ["w-fragen-extended"], "forbidden": [] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M09-L36",
+          "title": { "de": "Woher? Wohin?", "fa": "از کجا؟ به کجا؟" },
+          "vocabulary": {
+            "introduces": ["Woher", "Wohin", "nach", "aus", "von"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": ["directional-questions"], "forbidden": [] },
+          "characters": ["Lisa", "Theo"]
+        }
+      ]
+    },
+    {
+      "id": "A1-S10",
+      "title": { "de": "Essen und Trinken", "fa": "غذا و نوشیدنی" },
+      "theme": "food-drinks",
+      "grammarFocus": [],
+      "lessons": [
+        {
+          "id": "A1-M10-L37",
+          "title": { "de": "Im Café", "fa": "در کافه" },
+          "vocabulary": {
+            "introduces": ["Café", "Tee", "Wasser", "Saft", "Milch"],
+            "maxNewWords": 12
+          },
+          "grammar": { "introduces": [], "forbidden": [] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M10-L38",
+          "title": { "de": "Frühstück", "fa": "صبحانه" },
+          "vocabulary": {
+            "introduces": ["Frühstück", "Brot", "Butter", "Käse", "Marmelade", "Ei"],
+            "maxNewWords": 12
+          },
+          "grammar": { "introduces": [], "forbidden": [] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M10-L39",
+          "title": { "de": "Im Restaurant", "fa": "در رستوران" },
+          "vocabulary": {
+            "introduces": ["Restaurant", "Speisekarte", "Rechnung", "Trinkgeld", "bezahlen"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": [], "forbidden": [] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M10-L40",
+          "title": { "de": "Bestellen", "fa": "سفارش دادن" },
+          "vocabulary": {
+            "introduces": ["Ich hätte gern", "Für mich bitte", "Guten Appetit", "Prost", "lecker"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": ["moechten"], "forbidden": [] },
+          "characters": ["Lisa", "Theo"]
+        }
+      ]
+    },
+    {
+      "id": "A1-S11",
+      "title": { "de": "Dativ", "fa": "حالت برای/به" },
+      "theme": "dative-case",
+      "grammarFocus": ["dative-case"],
+      "lessons": [
+        {
+          "id": "A1-M11-L41",
+          "title": { "de": "dem, der, dem", "fa": "حروف تعریف Dativ" },
+          "vocabulary": {
+            "introduces": ["dem", "geben", "helfen", "schenken", "zeigen"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": ["dative-articles"], "forbidden": [] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M11-L42",
+          "title": { "de": "mir, dir, ihm, ihr", "fa": "ضمایر Dativ" },
+          "vocabulary": {
+            "introduces": ["ihm", "ihr", "ihnen", "gefallen", "gehören"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": ["dative-pronouns"], "forbidden": [] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M11-L43",
+          "title": { "de": "Verben mit Dativ", "fa": "فعل‌های با Dativ" },
+          "vocabulary": {
+            "introduces": ["danken", "gratulieren", "antworten", "passen", "schmecken"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": ["dative-verbs"], "forbidden": [] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M11-L44",
+          "title": { "de": "Präpositionen mit Dativ", "fa": "حروف اضافه با Dativ" },
+          "vocabulary": {
+            "introduces": ["bei", "mit", "seit", "zu", "gegenüber"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": ["dative-prepositions"], "forbidden": [] },
+          "characters": ["Lisa", "Theo"]
+        }
+      ]
+    },
+    {
+      "id": "A1-S12",
+      "title": { "de": "Trennbare Verben", "fa": "فعل‌های جداشدنی" },
+      "theme": "separable-verbs",
+      "grammarFocus": ["separable-verbs"],
+      "lessons": [
+        {
+          "id": "A1-M12-L45",
+          "title": { "de": "aufstehen, ankommen", "fa": "بلند شدن، رسیدن" },
+          "vocabulary": {
+            "introduces": ["aufstehen", "ankommen", "abfahren", "einsteigen", "aussteigen"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": ["separable-verbs"], "forbidden": [] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M12-L46",
+          "title": { "de": "einkaufen, fernsehen", "fa": "خرید کردن، تلویزیون دیدن" },
+          "vocabulary": {
+            "introduces": ["einkaufen", "fernsehen", "anrufen", "aufräumen", "zumachen"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": [], "forbidden": [] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M12-L47",
+          "title": { "de": "Tagesablauf", "fa": "برنامه روزانه" },
+          "vocabulary": {
+            "introduces": ["Morgens", "Mittags", "Abends", "Nachts", "um ... Uhr"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": [], "forbidden": [] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M12-L48",
+          "title": { "de": "Mein Tag", "fa": "روز من" },
+          "vocabulary": {
+            "introduces": ["zuerst", "dann", "danach", "später", "zum Schluss"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": [], "forbidden": [] },
+          "characters": ["Lisa", "Theo"]
+        }
+      ]
+    },
+    {
+      "id": "A1-S13",
+      "title": { "de": "Modalverben", "fa": "فعل‌های وجهی" },
+      "theme": "modal-verbs",
+      "grammarFocus": ["modal-verbs"],
+      "lessons": [
+        {
+          "id": "A1-M13-L49",
+          "title": { "de": "können", "fa": "توانستن" },
+          "vocabulary": {
+            "introduces": ["können", "kann", "kannst", "schwimmen", "tanzen"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": ["modal-koennen"], "forbidden": [] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M13-L50",
+          "title": { "de": "müssen, wollen", "fa": "باید، خواستن" },
+          "vocabulary": {
+            "introduces": ["müssen", "muss", "wollen", "will", "sollen"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": ["modal-muessen", "modal-wollen"], "forbidden": [] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M13-L51",
+          "title": { "de": "dürfen", "fa": "اجازه داشتن" },
+          "vocabulary": {
+            "introduces": ["dürfen", "darf", "darfst", "erlaubt", "verboten"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": ["modal-duerfen"], "forbidden": [] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M13-L52",
+          "title": { "de": "mögen", "fa": "دوست داشتن" },
+          "vocabulary": {
+            "introduces": ["mögen", "mag", "magst", "gern", "lieber"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": ["modal-moegen"], "forbidden": [] },
+          "characters": ["Lisa", "Theo"]
+        }
+      ]
+    },
+    {
+      "id": "A1-S14",
+      "title": { "de": "Perfekt", "fa": "زمان گذشته" },
+      "theme": "past-tense",
+      "grammarFocus": ["perfekt"],
+      "lessons": [
+        {
+          "id": "A1-M14-L53",
+          "title": { "de": "haben + Partizip", "fa": "haben + صفت مفعولی" },
+          "vocabulary": {
+            "introduces": ["gemacht", "gekauft", "gespielt", "gearbeitet", "gelernt"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": ["perfekt-haben"], "forbidden": [] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M14-L54",
+          "title": { "de": "sein + Partizip", "fa": "sein + صفت مفعولی" },
+          "vocabulary": {
+            "introduces": ["gegangen", "gefahren", "gekommen", "geblieben", "gewesen"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": ["perfekt-sein"], "forbidden": [] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M14-L55",
+          "title": { "de": "Unregelmäßige Partizipien", "fa": "صفت مفعولی بی‌قاعده" },
+          "vocabulary": {
+            "introduces": ["geschrieben", "gelesen", "getrunken", "gegessen", "gesehen"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": ["past-participle-irregular"], "forbidden": [] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M14-L56",
+          "title": { "de": "Was hast du gemacht?", "fa": "چه کار کردی؟" },
+          "vocabulary": {
+            "introduces": ["gestern", "letzte Woche", "letztes Jahr", "vor", "schon"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": [], "forbidden": [] },
+          "characters": ["Lisa", "Theo"]
+        }
+      ]
+    },
+    {
+      "id": "A1-S15",
+      "title": { "de": "Orte und Richtungen", "fa": "مکان‌ها و جهت‌ها" },
+      "theme": "places-directions",
+      "grammarFocus": ["prepositions"],
+      "lessons": [
+        {
+          "id": "A1-M15-L57",
+          "title": { "de": "Wechselpräpositionen", "fa": "حروف اضافه دوگانه" },
+          "vocabulary": {
+            "introduces": ["in", "an", "auf", "hinter", "vor", "neben"],
+            "maxNewWords": 12
+          },
+          "grammar": { "introduces": ["two-way-prepositions"], "forbidden": [] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M15-L58",
+          "title": { "de": "Wo? - im, am, auf dem", "fa": "کجا؟ - مکان" },
+          "vocabulary": {
+            "introduces": ["im", "am", "beim", "zwischen", "über", "unter"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": ["locative-prepositions"], "forbidden": [] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M15-L59",
+          "title": { "de": "Wohin? - ins, ans, auf den", "fa": "به کجا؟ - جهت" },
+          "vocabulary": {
+            "introduces": ["ins", "ans", "zum", "zur", "nach Hause"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": ["directional-prepositions"], "forbidden": [] },
+          "characters": ["Lisa", "Theo"]
+        },
+        {
+          "id": "A1-M15-L60",
+          "title": { "de": "Stadtplan", "fa": "نقشه شهر" },
+          "vocabulary": {
+            "introduces": ["links", "rechts", "geradeaus", "Kreuzung", "Ampel"],
+            "maxNewWords": 10
+          },
+          "grammar": { "introduces": [], "forbidden": [] },
+          "characters": ["Lisa", "Theo"]
+        }
+      ]
+    }
+  ],
+  "functionWords": {
+    "description": "Function words allowed at any point even before formally taught",
+    "allowedAlways": [
+      "der", "die", "das", "ein", "eine",
+      "und", "oder", "aber", "auch",
+      "ist", "sind", "bin", "bist",
+      "ja", "nein", "nicht",
+      "ich", "du", "Sie", "er", "sie", "es", "wir",
+      "in", "aus", "mit", "für", "an", "auf",
+      "sehr", "so", "noch", "schon"
+    ]
+  },
+  "validationRules": {
+    "vocabulary": {
+      "maxNewWordsPerLesson": 15,
+      "mustBeInGoetheA1": "warning",
+      "mustBeIntroducedBefore": "error"
+    },
+    "grammar": {
+      "forbiddenBeforeIntroduction": "error",
+      "wFragenRequiresAccusative": true
+    },
+    "characters": {
+      "maxPerScene": 4,
+      "primaryFirst": ["Lisa", "Theo"],
+      "secondaryAllowedFrom": "A1-M04-L15"
+    }
+  }
+}
