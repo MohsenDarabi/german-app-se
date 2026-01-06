@@ -181,6 +181,19 @@ export const A1_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/A1/A1-M04-L04"
       }
     ]
+  },
+  {
+    id: "module-05",
+    title: "بخش ۵: سوالات (Fragen)",
+    level: "A1",
+    lessons: [
+      {
+        id: "A1-M05-L01",
+        title: "بله یا خیر؟ (Ja oder Nein?)",
+        description: "یاد بگیرید چطور سوالات بله/خیر بسازید: فعل را اول جمله بیاورید!",
+        path: "/learn/de-fa/A1/A1-M05-L01"
+      }
+    ]
   }
 ];
 
