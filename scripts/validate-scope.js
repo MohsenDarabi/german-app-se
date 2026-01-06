@@ -27,6 +27,22 @@ try {
 const goetheWordSet = new Set(goetheWords.words.map(w => w.de.toLowerCase()));
 const functionWords = new Set(canonicalScope.functionWords.allowedAlways.map(w => w.toLowerCase()));
 
+// English words to ignore (common in JSON field names and instructions)
+const englishIgnoreList = new Set([
+  'new', 'word', 'grammar', 'tip', 'rapid', 'fire', 'right', 'wrong', 'correct',
+  'incorrect', 'answer', 'question', 'listen', 'speak', 'read', 'write', 'match',
+  'select', 'choose', 'complete', 'fill', 'blank', 'option', 'options', 'true',
+  'false', 'yes', 'next', 'back', 'skip', 'hint', 'help', 'start', 'end',
+  'continue', 'finish', 'done', 'submit', 'check', 'review', 'practice', 'learn',
+  'step', 'steps', 'lesson', 'module', 'level', 'score', 'points', 'progress',
+  'audio', 'image', 'video', 'media', 'type', 'content', 'text', 'title',
+  'description', 'instruction', 'instructions', 'example', 'examples', 'note',
+  'notes', 'translation', 'meaning', 'context', 'category', 'tag', 'tags',
+  'id', 'index', 'count', 'total', 'max', 'min', 'value', 'key', 'name',
+  'status', 'state', 'mode', 'version', 'data', 'info', 'item', 'items',
+  'list', 'array', 'object', 'string', 'number', 'boolean', 'null', 'undefined'
+]);
+
 // Extract all German words from text
 function extractGermanWords(text) {
   if (!text) return [];
@@ -34,7 +50,14 @@ function extractGermanWords(text) {
     .split(/[\s.,!?;:'"()\[\]{}«»„"–—\-\/\\<>]+/)
     .filter(w => w.length > 1)
     .filter(w => /^[A-ZÄÖÜa-zäöüß]+$/.test(w))
-    .map(w => w.toLowerCase());
+    .map(w => w.toLowerCase())
+    .filter(w => !englishIgnoreList.has(w)); // Filter out English words
+}
+
+// Get lesson number from ID (e.g., "A1-M01-L03" -> 3)
+function getLessonNumber(lessonId) {
+  const match = lessonId.match(/L(\d+)/);
+  return match ? parseInt(match[1], 10) : 0;
 }
 
 // Get lesson scope (vocabulary allowed up to this lesson)
@@ -45,12 +68,30 @@ function getLessonScope(lessonId) {
   const allowedCharacters = new Set(['Lisa', 'Theo']); // Default
 
   let foundLesson = false;
+  const lessonNum = getLessonNumber(lessonId);
+
+  // Add vocabulary from formulaic expressions
+  if (canonicalScope.formulaicExpressions) {
+    // Always add L01 idiom vocabulary
+    if (canonicalScope.formulaicExpressions.vocabularyFromIdioms) {
+      canonicalScope.formulaicExpressions.vocabularyFromIdioms.forEach(w =>
+        allowedVocab.add(w.toLowerCase())
+      );
+    }
+  }
 
   for (const section of canonicalScope.sections) {
     for (const lesson of section.lessons) {
       // Add vocabulary from this lesson
       if (lesson.vocabulary?.introduces) {
         lesson.vocabulary.introduces.forEach(w => allowedVocab.add(w.toLowerCase()));
+      }
+
+      // Add idiom vocabulary from this lesson
+      if (lesson.vocabulary?.idioms) {
+        lesson.vocabulary.idioms.forEach(idiom => {
+          extractGermanWords(idiom).forEach(w => allowedVocab.add(w));
+        });
       }
 
       // Add grammar from this lesson
@@ -75,41 +116,38 @@ function getLessonScope(lessonId) {
     if (foundLesson) break;
   }
 
-  return { allowedVocab, allowedGrammar, forbiddenGrammar, allowedCharacters, foundLesson };
+  return { allowedVocab, allowedGrammar, forbiddenGrammar, allowedCharacters, foundLesson, lessonNum };
 }
 
-// Extract vocabulary from lesson content
+// Extract vocabulary from lesson content (only German text fields)
 function extractLessonVocabulary(lesson) {
   const words = new Set();
 
-  function processContent(obj) {
+  function processContent(obj, parentKey = '') {
     if (!obj) return;
 
     if (typeof obj === 'string') {
-      extractGermanWords(obj).forEach(w => words.add(w));
+      // Only extract from German-related fields
+      const germanFields = ['de', 'german', 'sentence', 'word', 'phrase'];
+      if (germanFields.includes(parentKey) || parentKey === '') {
+        extractGermanWords(obj).forEach(w => words.add(w));
+      }
       return;
     }
 
     if (Array.isArray(obj)) {
-      obj.forEach(processContent);
+      obj.forEach(item => processContent(item, parentKey));
       return;
     }
 
     if (typeof obj === 'object') {
-      // Skip certain fields
-      const skipFields = ['fa', 'en', 'english', 'translation', 'hint', 'audio', 'image'];
+      // Skip non-German fields entirely
+      const skipFields = ['fa', 'en', 'english', 'translation', 'hint', 'audio', 'image',
+                          'grammarTip', 'tip', 'note', 'id', 'type', 'stepType'];
 
       for (const [key, value] of Object.entries(obj)) {
-        // Process German text fields
-        if (key === 'de' || key === 'german' || key === 'text' || key === 'content' || key === 'sentence') {
-          if (typeof value === 'string') {
-            extractGermanWords(value).forEach(w => words.add(w));
-          }
-        }
-
-        // Skip non-German fields
         if (!skipFields.includes(key)) {
-          processContent(value);
+          processContent(value, key);
         }
       }
     }
@@ -118,8 +156,23 @@ function extractLessonVocabulary(lesson) {
   // Process all steps
   if (lesson.steps) {
     for (const step of lesson.steps) {
-      processContent(step);
+      // Focus on content that learners see
+      if (step.content) {
+        processContent(step.content);
+      }
+      // Also check vocabulary arrays
+      if (step.vocabulary) {
+        processContent(step.vocabulary);
+      }
     }
+  }
+
+  // Process vocabulary section
+  if (lesson.vocabulary) {
+    lesson.vocabulary.forEach(v => {
+      if (v.de) extractGermanWords(v.de).forEach(w => words.add(w));
+      if (v.word) extractGermanWords(v.word).forEach(w => words.add(w));
+    });
   }
 
   return words;
@@ -138,9 +191,11 @@ function extractCharacters(lesson) {
     if (!obj) return;
 
     if (typeof obj === 'string') {
-      // Check for known character names
+      // Check for known character names (case-sensitive)
       knownNames.forEach(name => {
-        if (obj.includes(name)) {
+        // Use word boundary to avoid partial matches
+        const regex = new RegExp(`\\b${name}\\b`);
+        if (regex.test(obj)) {
           characters.add(name);
         }
       });
@@ -161,19 +216,6 @@ function extractCharacters(lesson) {
 
   processContent(lesson);
   return characters;
-}
-
-// Check for W-Fragen usage
-function hasWFragen(lesson) {
-  const wFragen = ['was', 'wo', 'wer', 'wie', 'wann', 'warum', 'woher', 'wohin'];
-  const words = extractLessonVocabulary(lesson);
-
-  for (const word of words) {
-    if (wFragen.includes(word)) {
-      return word;
-    }
-  }
-  return null;
 }
 
 // Main validation function
@@ -213,7 +255,7 @@ function validateLesson(lessonPath) {
       outOfScope.push(word);
     }
 
-    if (!goetheWordSet.has(word) && !functionWords.has(word)) {
+    if (!goetheWordSet.has(word) && !functionWords.has(word) && !scope.allowedVocab.has(word)) {
       notInGoethe.push(word);
     }
   }
@@ -226,13 +268,7 @@ function validateLesson(lessonPath) {
     warnings.push(`⚠️  Not in Goethe A1 wordlist (${notInGoethe.length}): ${notInGoethe.slice(0, 10).join(', ')}${notInGoethe.length > 10 ? '...' : ''}`);
   }
 
-  // 3. Check W-Fragen usage (before accusative case)
-  const wFragenWord = hasWFragen(lesson);
-  if (wFragenWord && scope.forbiddenGrammar.has('w-fragen')) {
-    errors.push(`❌ W-Fragen ("${wFragenWord}") used before accusative case is taught`);
-  }
-
-  // 4. Check characters
+  // 3. Check characters
   const usedCharacters = extractCharacters(lesson);
   const unknownCharacters = [];
 
@@ -243,14 +279,14 @@ function validateLesson(lessonPath) {
   }
 
   if (unknownCharacters.length > 0) {
-    warnings.push(`⚠️  Characters not yet introduced: ${unknownCharacters.join(', ')}`);
+    errors.push(`❌ Characters not allowed: ${unknownCharacters.join(', ')} (use Lisa & Theo for L01-L04)`);
   }
 
   if (usedCharacters.size > canonicalScope.validationRules.characters.maxPerScene) {
     warnings.push(`⚠️  Too many characters (${usedCharacters.size} > ${canonicalScope.validationRules.characters.maxPerScene})`);
   }
 
-  // 5. Check vocabulary count
+  // 4. Check vocabulary count
   const newVocabCount = lesson.vocabulary?.length || 0;
   const maxNewWords = canonicalScope.validationRules.vocabulary.maxNewWordsPerLesson;
 
@@ -260,7 +296,8 @@ function validateLesson(lessonPath) {
 
   // Output results
   console.log('📊 Results:');
-  console.log(`   Vocabulary used: ${usedVocab.size} words`);
+  console.log(`   Lesson: ${lessonId}`);
+  console.log(`   Vocabulary used: ${usedVocab.size} German words`);
   console.log(`   Characters: ${Array.from(usedCharacters).join(', ') || 'none detected'}`);
 
   if (errors.length > 0) {

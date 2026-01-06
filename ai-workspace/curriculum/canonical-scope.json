@@ -1,55 +1,78 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "level": "A1",
   "description": "Canonical scope definition for A1 German. All content must adhere to this scope.",
   "totalSections": 15,
   "totalLessons": 60,
+  "formulaicExpressions": {
+    "description": "Idiomatic expressions taught as memorized chunks BEFORE their grammar is formally introduced. These are NOT W-Fragen grammar - they are social formulas.",
+    "allowedFromL01": [
+      { "expression": "Wie geht's?", "meaning": "How are you?", "note": "Idiomatic greeting, not a grammar question" },
+      { "expression": "Wie geht es dir?", "meaning": "How are you? (informal)", "note": "Fixed phrase" },
+      { "expression": "Wie geht es Ihnen?", "meaning": "How are you? (formal)", "note": "Fixed phrase" },
+      { "expression": "Wie heißt du?", "meaning": "What's your name?", "note": "Taught as chunk in introductions" },
+      { "expression": "Wie heißen Sie?", "meaning": "What's your name? (formal)", "note": "Fixed phrase" }
+    ],
+    "allowedFromL03": [
+      { "expression": "Woher kommst du?", "meaning": "Where are you from?", "note": "Standard introduction question" },
+      { "expression": "Woher kommen Sie?", "meaning": "Where are you from? (formal)", "note": "Fixed phrase" }
+    ],
+    "vocabularyFromIdioms": ["wie", "geht", "dir", "Ihnen", "heißt", "heißen", "woher", "kommst", "kommen"]
+  },
   "sections": [
     {
       "id": "A1-S01",
-      "title": { "de": "Begrüßung", "fa": "احوالپرسی" },
-      "theme": "greetings",
+      "title": { "de": "Erste Kontakte", "fa": "اولین برخوردها" },
+      "theme": "first-contacts",
       "grammarFocus": [],
       "lessons": [
         {
           "id": "A1-M01-L01",
           "title": { "de": "Hallo!", "fa": "سلام!" },
           "vocabulary": {
-            "introduces": ["Hallo", "Hi", "Guten Tag", "Tschüss", "Auf Wiedersehen"],
-            "maxNewWords": 8
+            "introduces": ["Hallo", "Hi", "Guten Tag", "Tschüss", "Auf Wiedersehen", "danke", "bitte"],
+            "idioms": ["Wie geht's?", "Wie geht es dir?"],
+            "maxNewWords": 12
           },
-          "grammar": { "introduces": [], "forbidden": ["verb-conjugation", "cases", "w-fragen"] },
-          "characters": ["Lisa", "Theo"]
+          "grammar": { "introduces": [], "forbidden": ["cases"] },
+          "characters": ["Lisa", "Theo"],
+          "note": "First lesson - basic greetings and 'Wie geht's?' as formulaic expression"
         },
         {
           "id": "A1-M01-L02",
-          "title": { "de": "Guten Morgen!", "fa": "صبح بخیر!" },
+          "title": { "de": "Wie geht's?", "fa": "حالت چطوره؟" },
           "vocabulary": {
-            "introduces": ["Guten Morgen", "Guten Abend", "Gute Nacht", "Bis bald", "Bis später"],
-            "maxNewWords": 10
+            "introduces": ["gut", "sehr gut", "schlecht", "nicht so gut", "super", "toll", "mir", "es"],
+            "idioms": ["Mir geht es gut", "Und dir?"],
+            "maxNewWords": 12
           },
-          "grammar": { "introduces": [], "forbidden": ["verb-conjugation", "cases", "w-fragen"] },
-          "characters": ["Lisa", "Theo"]
+          "grammar": { "introduces": [], "forbidden": ["cases"] },
+          "characters": ["Lisa", "Theo"],
+          "note": "Responding to 'Wie geht's?' - feelings vocabulary"
         },
         {
           "id": "A1-M01-L03",
           "title": { "de": "Ich bin...", "fa": "من هستم..." },
           "vocabulary": {
-            "introduces": ["ich", "bin", "heiße", "Freut mich", "Name"],
-            "maxNewWords": 10
+            "introduces": ["ich", "bin", "heiße", "Name", "Freut mich", "auch", "und"],
+            "idioms": ["Wie heißt du?", "Ich heiße...", "Freut mich!"],
+            "maxNewWords": 12
           },
-          "grammar": { "introduces": ["sein-ich"], "forbidden": ["full-conjugation", "cases", "w-fragen"] },
-          "characters": ["Lisa", "Theo"]
+          "grammar": { "introduces": ["sein-ich", "heissen-ich"], "forbidden": ["cases"] },
+          "characters": ["Lisa", "Theo"],
+          "note": "Introductions - name exchange"
         },
         {
           "id": "A1-M01-L04",
-          "title": { "de": "Ich spreche Deutsch!", "fa": "من آلمانی صحبت می‌کنم!" },
+          "title": { "de": "Woher kommst du?", "fa": "اهل کجایی؟" },
           "vocabulary": {
-            "introduces": ["spreche", "Deutsch", "Persisch", "lernen", "verstehen"],
-            "maxNewWords": 10
+            "introduces": ["aus", "Deutschland", "Iran", "komme", "wohne", "in", "Berlin", "Teheran"],
+            "idioms": ["Woher kommst du?", "Ich komme aus...", "Ich wohne in..."],
+            "maxNewWords": 12
           },
-          "grammar": { "introduces": ["regular-verb-ich"], "forbidden": ["cases", "w-fragen"] },
-          "characters": ["Lisa", "Theo"]
+          "grammar": { "introduces": ["kommen-ich", "wohnen-ich", "aus-preposition"], "forbidden": ["cases"] },
+          "characters": ["Lisa", "Theo"],
+          "note": "Origin and residence - countries and cities"
         }
       ]
     },
