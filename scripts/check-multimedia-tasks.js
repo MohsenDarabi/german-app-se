@@ -30,7 +30,7 @@ function getStats(taskFiles) {
       if (task.type === 'image') total.images++;
       if (task.type === 'video') total.videos++;
       if (task.status === 'pending') total.pending++;
-      if (task.status === 'complete') total.complete++;
+      if (task.status === 'completed') total.complete++;
       if (task.status === 'blocked') total.blocked++;
     });
   });
@@ -76,7 +76,7 @@ function showProgress() {
       modules[mod].files.push(tf.file);
       tf.tasks.forEach(t => {
         modules[mod].total++;
-        if (t.status === 'complete') modules[mod].complete++;
+        if (t.status === 'completed') modules[mod].complete++;
       });
     }
   });

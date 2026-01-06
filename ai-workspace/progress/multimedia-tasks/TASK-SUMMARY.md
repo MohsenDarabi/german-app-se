@@ -24,7 +24,7 @@
 #### A1-M01-L01: Hallo!
 
 - [ ] 🟡 **img-s1** - Visual for "Hallo"
-  - Output: `images/shared/greetings/hallo.jpg`
+  - Output: `images/shared/greetings/img-greeting-wave.png`
   - Specs: 800x600, jpg
 
 - [ ] 🟡 **img-s2** - Visual for "Hi"
