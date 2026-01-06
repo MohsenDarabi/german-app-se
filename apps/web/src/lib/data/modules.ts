@@ -173,6 +173,12 @@ export const A1_MODULES: ModuleStub[] = [
         title: "جمع در آلمانی (Plural)",
         description: "یاد بگیرید چطور اسم‌های جمع در آلمانی ساخته می‌شوند و همه جمع‌ها die می‌گیرند",
         path: "/learn/de-fa/A1/A1-M04-L03"
+      },
+      {
+        id: "A1-M04-L04",
+        title: "حالت مفعولی (Akkusativ)",
+        description: "یاد بگیرید که در حالت مفعولی، فقط مذکر تغییر می‌کند: der/ein → den/einen",
+        path: "/learn/de-fa/A1/A1-M04-L04"
       }
     ]
   }
