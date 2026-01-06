@@ -6,18 +6,108 @@
 
 ## Quick Start
 
-1. Open task file: `ai-workspace/progress/multimedia-tasks/A1-M01-L01.json`
-2. Create images per specs
-3. Save to: `apps/web/static/images/shared/{category}/`
-4. Update task status to `"completed"`
+```bash
+# Check your current tasks
+node scripts/generate-multimedia-tasks.js --status
+
+# Your task files are in:
+ai-workspace/progress/multimedia-tasks/
+```
 
 ---
 
-## Base Paths
+## Your Workflow
+
+### 1. Check Status
+```bash
+node scripts/generate-multimedia-tasks.js --status
+```
+
+Output shows tasks by status:
+- `pending` - Not started yet
+- `in_progress` - You're working on it
+- `completed` - Done!
+- `obsolete` - Content changed, needs review
+
+### 2. Open Your Task File
 
 ```
-Images: apps/web/static/images/shared/
-Videos: apps/web/static/videos/shared/
+ai-workspace/progress/multimedia-tasks/A1-M01-L01.json
+```
+
+Each task looks like:
+```json
+{
+  "id": "img-s14",
+  "type": "image",
+  "stepId": "s14",
+  "priority": "high",
+  "description": "Lisa & Theo - Dialog scene",
+  "context": "Dialog with 5 lines: \"Hallo Theo!\"",
+  "specs": {
+    "format": "jpg",
+    "dimensions": "800x600",
+    "style": "friendly, modern German setting",
+    "subjects": "Lisa, Theo"
+  },
+  "category": "greetings",
+  "outputPath": "images/shared/greetings/lisa-theo-hello.jpg",
+  "status": "pending"
+}
+```
+
+### 3. Update Status While Working
+
+Edit the task file:
+```json
+"status": "in_progress"
+```
+
+### 4. Create the Image
+
+- Follow the `specs` (format, dimensions, style)
+- Save to `outputPath` (relative to `apps/web/static/`)
+- Full path: `apps/web/static/images/shared/{category}/{filename}.jpg`
+
+### 5. Mark Complete
+
+```json
+"status": "completed",
+"completedAt": "2026-01-06"
+```
+
+---
+
+## Task Statuses
+
+| Status | Meaning | Action |
+|--------|---------|--------|
+| `pending` | New task, not started | Start when ready |
+| `in_progress` | You're working on it | Continue |
+| `completed` | Done, image exists | Nothing needed |
+| `obsolete` | Content changed after completion | Review & possibly redo |
+| `removed` | Step was deleted from lesson | Can ignore |
+
+---
+
+## When Content Changes
+
+If the development team changes lesson content:
+
+```bash
+# They will run:
+node scripts/generate-multimedia-tasks.js --all --update
+```
+
+This will:
+- Keep your `completed` tasks as-is (if unchanged)
+- Mark changed tasks as `obsolete` (you review)
+- Add new tasks as `pending`
+- Mark removed tasks as `removed`
+
+**You'll see notes like:**
+```json
+"notes": "[Source changed 2026-01-06]"
 ```
 
 ---
@@ -26,7 +116,7 @@ Videos: apps/web/static/videos/shared/
 
 | Property | Requirement |
 |----------|-------------|
-| **Format** | JPG (photos), PNG (illustrations with transparency) |
+| **Format** | JPG (photos), PNG (with transparency) |
 | **Dimensions** | 800x600 pixels |
 | **File size** | < 200KB (optimize for web) |
 | **Style** | Modern, friendly, diverse characters |
@@ -36,7 +126,7 @@ Videos: apps/web/static/videos/shared/
 
 ## Category Folders
 
-Create if missing:
+Save images to `apps/web/static/images/shared/{category}/`:
 
 ```
 images/shared/
@@ -45,70 +135,23 @@ images/shared/
 ├── expressions/     # Thank you, please, emotions
 ├── scenes/          # Cafe, office, street scenes
 ├── people/          # Individual portraits
-├── family/          # Family members
-├── food/            # Food and drinks
-├── places/          # Locations, buildings
-├── transport/       # Cars, trains, buses
-├── professions/     # Jobs and occupations
+├── places/          # Countries, cities, locations
 ├── daily-life/      # Everyday activities
-└── weather/         # Weather conditions
+└── ...
 ```
 
 ---
 
-## Task File Format
+## Primary Characters
 
-Each task in the JSON has:
+Use these characters consistently:
 
-```json
-{
-  "id": "img-001",
-  "type": "image",
-  "stepId": "s1",
-  "stepType": "new-word",
-  "description": "Two people waving hello to each other",
-  "context": "Vocabulary introduction for 'Hallo'",
-  "specs": {
-    "format": "jpg",
-    "dimensions": "800x600",
-    "style": "friendly, warm"
-  },
-  "outputPath": "images/shared/greetings/hello-wave.jpg",
-  "status": "pending"
-}
-```
+| Character | Role | Description |
+|-----------|------|-------------|
+| **Lisa** | German native | Young German woman, friendly |
+| **Theo** | Persian learner | Young Persian man learning German |
 
----
-
-## Workflow
-
-### 1. Check Task
-
-```json
-"description": "Two people waving hello to each other on a street"
-"context": "Vocabulary introduction for 'Hallo' (Hello)"
-"style": "friendly, warm, modern German setting"
-```
-
-### 2. Create Image
-
-- Match the description
-- Follow the style guide
-- Use diverse, modern characters
-- Ensure clear subject focus
-
-### 3. Save File
-
-```
-apps/web/static/images/shared/greetings/hello-wave.jpg
-```
-
-### 4. Update Status
-
-Change in task JSON:
-```json
-"status": "completed"
-```
+Secondary characters if needed: Max, Lena, Felix, Sophie
 
 ---
 
@@ -130,20 +173,39 @@ Change in task JSON:
 
 ---
 
-## Current Tasks
+## Priority Levels
 
-### A1-M01-L01 (5 images)
+| Priority | Meaning |
+|----------|---------|
+| `high` | Dialog scenes - most visible |
+| `medium` | Vocabulary illustrations |
+| `low` | Optional enhancements |
 
-| ID | Description | Output |
-|----|-------------|--------|
-| img-001 | Two people waving hello | `greetings/hello-wave.jpg` |
-| img-002 | Person waving goodbye | `greetings/goodbye-wave.jpg` |
-| img-003 | Person expressing gratitude | `expressions/thank-you.jpg` |
-| img-004 | Two people shaking hands | `introductions/handshake-meeting.jpg` |
-| img-005 | Lena & Max meeting at cafe | `scenes/cafe-meeting.jpg` |
+Focus on `high` priority first!
+
+---
+
+## Commands Reference
+
+```bash
+# Check all task status
+node scripts/generate-multimedia-tasks.js --status
+
+# Generate tasks for one lesson (first time)
+node scripts/generate-multimedia-tasks.js --lesson=A1-M01-L01
+
+# Update tasks after content changes
+node scripts/generate-multimedia-tasks.js --lesson=A1-M01-L01 --update
+
+# Process all lessons
+node scripts/generate-multimedia-tasks.js --all
+
+# Update all after content changes
+node scripts/generate-multimedia-tasks.js --all --update
+```
 
 ---
 
 ## Questions?
 
-Contact the development team or check the task JSON for detailed specs.
+Check the task JSON for detailed specs, or contact the development team.

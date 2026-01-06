@@ -1,99 +1,198 @@
 {
   "lessonId": "A1-M01-L01",
-  "title": "Hallo! Ich bin...",
-  "createdAt": "2026-01-02",
+  "lessonTitle": {
+    "de": "Hallo!",
+    "fa": "سلام!"
+  },
+  "sourceHash": "c8c22fb0",
+  "generatedAt": "2026-01-06T00:40:55.079Z",
+  "updatedAt": "2026-01-06T00:40:55.080Z",
   "tasks": [
     {
-      "id": "img-001",
+      "id": "img-s1",
       "type": "image",
       "stepId": "s1",
       "stepType": "new-word",
-      "description": "Two people waving hello to each other on a street",
-      "context": "Vocabulary introduction for 'Hallo' (Hello)",
+      "priority": "medium",
+      "sourceContent": {
+        "word": "Hallo",
+        "translation": "سلام",
+        "example": "Hallo Lisa!"
+      },
+      "sourceHash": "039b348d",
+      "description": "Visual for \"Hallo\"",
+      "context": "New word introduction: Hallo Lisa!",
       "specs": {
         "format": "jpg",
         "dimensions": "800x600",
-        "style": "friendly, warm, modern German setting"
+        "style": "clear, educational",
+        "focus": "Hallo"
       },
-      "outputPath": "images/shared/greetings/hello-wave.jpg",
+      "category": "greetings",
+      "outputPath": "images/shared/greetings/hallo.jpg",
       "status": "pending",
-      "reusable": true,
-      "reusableFor": ["greetings", "introductions"]
+      "completedAt": null,
+      "notes": ""
     },
     {
-      "id": "img-002",
+      "id": "img-s2",
+      "type": "image",
+      "stepId": "s2",
+      "stepType": "new-word",
+      "priority": "medium",
+      "sourceContent": {
+        "word": "Hi",
+        "translation": "سلام (خودمانی)",
+        "example": "Hi Theo!"
+      },
+      "sourceHash": "2ab218b8",
+      "description": "Visual for \"Hi\"",
+      "context": "New word introduction: Hi Theo!",
+      "specs": {
+        "format": "jpg",
+        "dimensions": "800x600",
+        "style": "clear, educational",
+        "focus": "Hi"
+      },
+      "category": "greetings",
+      "outputPath": "images/shared/greetings/hi.jpg",
+      "status": "pending",
+      "completedAt": null,
+      "notes": ""
+    },
+    {
+      "id": "img-s3",
       "type": "image",
       "stepId": "s3",
       "stepType": "new-word",
-      "description": "Person waving goodbye, walking away",
-      "context": "Vocabulary introduction for 'Tschüss' (Bye)",
+      "priority": "medium",
+      "sourceContent": {
+        "word": "Guten Tag",
+        "translation": "روز بخیر",
+        "example": "Guten Tag!"
+      },
+      "sourceHash": "761fe9b5",
+      "description": "Visual for \"Guten Tag\"",
+      "context": "New word introduction: Guten Tag!",
       "specs": {
         "format": "jpg",
         "dimensions": "800x600",
-        "style": "casual farewell scene"
+        "style": "clear, educational",
+        "focus": "Guten Tag"
       },
-      "outputPath": "images/shared/greetings/goodbye-wave.jpg",
+      "category": "expressions",
+      "outputPath": "images/shared/expressions/guten-tag.jpg",
       "status": "pending",
-      "reusable": true,
-      "reusableFor": ["greetings", "farewells"]
+      "completedAt": null,
+      "notes": ""
     },
     {
-      "id": "img-003",
+      "id": "img-s5",
       "type": "image",
-      "stepId": "s4",
+      "stepId": "s5",
       "stepType": "new-word",
-      "description": "Person expressing gratitude, hands together or thumbs up",
-      "context": "Vocabulary introduction for 'danke' (thanks)",
+      "priority": "medium",
+      "sourceContent": {
+        "word": "Tschüss",
+        "translation": "خداحافظ",
+        "example": "Tschüss Lisa!"
+      },
+      "sourceHash": "57e43d4e",
+      "description": "Visual for \"Tschüss\"",
+      "context": "New word introduction: Tschüss Lisa!",
       "specs": {
         "format": "jpg",
         "dimensions": "800x600",
-        "style": "appreciative gesture"
+        "style": "clear, educational",
+        "focus": "Tschüss"
       },
-      "outputPath": "images/shared/expressions/thank-you.jpg",
+      "category": "greetings",
+      "outputPath": "images/shared/greetings/tschuess.jpg",
       "status": "pending",
-      "reusable": true,
-      "reusableFor": ["gratitude", "politeness"]
+      "completedAt": null,
+      "notes": ""
     },
     {
-      "id": "img-004",
+      "id": "img-s8",
       "type": "image",
       "stepId": "s8",
       "stepType": "new-word",
-      "description": "Two people shaking hands with friendly smiles",
-      "context": "Vocabulary introduction for 'Freut mich!' (Nice to meet you)",
+      "priority": "medium",
+      "sourceContent": {
+        "word": "danke",
+        "translation": "ممنون",
+        "example": "Danke!"
+      },
+      "sourceHash": "db9ac932",
+      "description": "Visual for \"danke\"",
+      "context": "New word introduction: Danke!",
       "specs": {
         "format": "jpg",
         "dimensions": "800x600",
-        "style": "professional but warm first meeting"
+        "style": "clear, educational",
+        "focus": "danke"
       },
-      "outputPath": "images/shared/introductions/handshake-meeting.jpg",
+      "category": "expressions",
+      "outputPath": "images/shared/expressions/danke.jpg",
       "status": "pending",
-      "reusable": true,
-      "reusableFor": ["introductions", "first-meetings"]
+      "completedAt": null,
+      "notes": ""
     },
     {
-      "id": "img-005",
+      "id": "img-s9",
       "type": "image",
-      "stepId": "s15",
-      "stepType": "dialog",
-      "description": "Two young adults (one male, one female) meeting at a cafe table",
-      "context": "Dialog scene: Lena and Max meeting at a cafe",
+      "stepId": "s9",
+      "stepType": "new-word",
+      "priority": "medium",
+      "sourceContent": {
+        "word": "bitte",
+        "translation": "خواهش می‌کنم / لطفاً",
+        "example": "Bitte!"
+      },
+      "sourceHash": "00e00414",
+      "description": "Visual for \"bitte\"",
+      "context": "New word introduction: Bitte!",
       "specs": {
         "format": "jpg",
         "dimensions": "800x600",
-        "style": "modern German cafe, friendly atmosphere, diverse characters"
+        "style": "clear, educational",
+        "focus": "bitte"
       },
-      "outputPath": "images/shared/scenes/cafe-meeting.jpg",
+      "category": "expressions",
+      "outputPath": "images/shared/expressions/bitte.jpg",
       "status": "pending",
-      "reusable": true,
-      "reusableFor": ["cafe-scenes", "introductions", "conversations"]
+      "completedAt": null,
+      "notes": ""
+    },
+    {
+      "id": "img-s14",
+      "type": "image",
+      "stepId": "s14",
+      "stepType": "dialog",
+      "priority": "high",
+      "sourceContent": {
+        "title": "ملاقات در خیابان",
+        "speakers": [
+          "Lisa",
+          "Theo"
+        ],
+        "firstLine": "Hallo Theo!",
+        "lineCount": 5
+      },
+      "sourceHash": "06a536b8",
+      "description": "Lisa & Theo - ملاقات در خیابان",
+      "context": "Dialog with 5 lines: \"Hallo Theo!\"",
+      "specs": {
+        "format": "jpg",
+        "dimensions": "800x600",
+        "style": "friendly, modern German setting",
+        "subjects": "Lisa, Theo"
+      },
+      "category": "greetings",
+      "outputPath": "images/shared/greetings/a1-m01-l01-s14-lisa-theo.jpg",
+      "status": "pending",
+      "completedAt": null,
+      "notes": ""
     }
-  ],
-  "summary": {
-    "totalTasks": 5,
-    "images": 5,
-    "videos": 0,
-    "pending": 5,
-    "completed": 0
-  }
+  ]
 }

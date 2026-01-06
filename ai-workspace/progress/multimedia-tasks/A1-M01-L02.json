@@ -1,65 +1,94 @@
 {
   "lessonId": "A1-M01-L02",
-  "title": "Wie geht's?",
-  "createdAt": "2026-01-03",
+  "lessonTitle": {
+    "de": "Wie geht's?",
+    "fa": "حالت چطوره؟"
+  },
+  "sourceHash": "69b01202",
+  "generatedAt": "2026-01-06T00:40:55.083Z",
+  "updatedAt": "2026-01-06T00:40:55.083Z",
   "tasks": [
     {
-      "id": "img-001",
-      "type": "image",
-      "stepId": "s10",
-      "stepType": "dialog",
-      "description": "Two friends (young man and woman, 20s) meeting casually on a street or park, one asking 'how are you?' with friendly hand gesture",
-      "context": "Dialog scene: Lena and Max asking each other how they are",
-      "specs": {
-        "format": "jpg",
-        "dimensions": "800x600",
-        "style": "casual, friendly, outdoor German setting"
-      },
-      "outputPath": "images/shared/greetings/asking-how-are-you.jpg",
-      "status": "pending",
-      "reusable": true,
-      "reusableFor": ["small-talk", "greetings", "feelings"]
-    },
-    {
-      "id": "img-002",
+      "id": "img-s2",
       "type": "image",
       "stepId": "s2",
       "stepType": "new-word",
-      "description": "Person with thumbs up and happy expression, representing 'gut' (good/well)",
-      "context": "Vocabulary illustration for 'gut' (good) - how someone feels",
+      "priority": "medium",
+      "sourceContent": {
+        "word": "gut",
+        "translation": "خوب",
+        "example": "Mir geht's gut!"
+      },
+      "sourceHash": "4f7fcca6",
+      "description": "Visual for \"gut\"",
+      "context": "New word introduction: Mir geht's gut!",
       "specs": {
         "format": "jpg",
         "dimensions": "800x600",
-        "style": "positive, bright, simple background"
+        "style": "clear, educational",
+        "focus": "gut"
       },
-      "outputPath": "images/shared/expressions/feeling-good.jpg",
+      "category": "expressions",
+      "outputPath": "images/shared/expressions/gut.jpg",
       "status": "pending",
-      "reusable": true,
-      "reusableFor": ["feelings", "expressions", "positive"]
+      "completedAt": null,
+      "notes": ""
     },
     {
-      "id": "img-003",
+      "id": "img-s3",
       "type": "image",
       "stepId": "s3",
       "stepType": "new-word",
-      "description": "Person looking unwell or tired, representing 'schlecht' (bad)",
-      "context": "Vocabulary illustration for 'schlecht' (bad) - how someone feels",
+      "priority": "medium",
+      "sourceContent": {
+        "word": "schlecht",
+        "translation": "بد",
+        "example": "Mir geht's schlecht."
+      },
+      "sourceHash": "bce26aad",
+      "description": "Visual for \"schlecht\"",
+      "context": "New word introduction: Mir geht's schlecht.",
       "specs": {
         "format": "jpg",
         "dimensions": "800x600",
-        "style": "sympathetic, not overly dramatic, simple background"
+        "style": "clear, educational",
+        "focus": "schlecht"
       },
-      "outputPath": "images/shared/expressions/feeling-bad.jpg",
+      "category": "expressions",
+      "outputPath": "images/shared/expressions/schlecht.jpg",
       "status": "pending",
-      "reusable": true,
-      "reusableFor": ["feelings", "expressions", "negative"]
+      "completedAt": null,
+      "notes": ""
+    },
+    {
+      "id": "img-s10",
+      "type": "image",
+      "stepId": "s10",
+      "stepType": "dialog",
+      "priority": "high",
+      "sourceContent": {
+        "title": "مکالمه روزانه",
+        "speakers": [
+          "Lisa",
+          "Theo"
+        ],
+        "firstLine": "Hallo Theo!",
+        "lineCount": 6
+      },
+      "sourceHash": "a308f061",
+      "description": "Lisa & Theo - مکالمه روزانه",
+      "context": "Dialog with 6 lines: \"Hallo Theo!\"",
+      "specs": {
+        "format": "jpg",
+        "dimensions": "800x600",
+        "style": "friendly, modern German setting",
+        "subjects": "Lisa, Theo"
+      },
+      "category": "greetings",
+      "outputPath": "images/shared/greetings/a1-m01-l02-s10-lisa-theo.jpg",
+      "status": "pending",
+      "completedAt": null,
+      "notes": ""
     }
-  ],
-  "summary": {
-    "totalTasks": 3,
-    "images": 3,
-    "videos": 0,
-    "pending": 3,
-    "completed": 0
-  }
+  ]
 }

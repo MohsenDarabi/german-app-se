@@ -1,82 +1,42 @@
 {
   "lessonId": "A1-M01-L03",
-  "title": "Woher kommst du?",
-  "createdAt": "2026-01-03",
+  "lessonTitle": {
+    "de": "Woher kommst du?",
+    "fa": "اهل کجایی؟"
+  },
+  "sourceHash": "091adf27",
+  "generatedAt": "2026-01-06T00:40:55.084Z",
+  "updatedAt": "2026-01-06T00:40:55.084Z",
   "tasks": [
     {
-      "id": "img-001",
+      "id": "img-s11",
       "type": "image",
       "stepId": "s11",
       "stepType": "dialog",
-      "description": "Two young women (one German, one Iranian) meeting and chatting in a cafe or park, friendly conversation about where they're from",
-      "context": "Dialog scene: Lena and Sara meeting, discussing their countries of origin",
+      "priority": "high",
+      "sourceContent": {
+        "title": "آشنایی جدید",
+        "speakers": [
+          "Lisa",
+          "Theo"
+        ],
+        "firstLine": "Hallo! Ich bin Lisa.",
+        "lineCount": 8
+      },
+      "sourceHash": "58bb149d",
+      "description": "Lisa & Theo - آشنایی جدید",
+      "context": "Dialog with 8 lines: \"Hallo! Ich bin Lisa.\"",
       "specs": {
         "format": "jpg",
         "dimensions": "800x600",
-        "style": "friendly, multicultural, modern German setting"
+        "style": "friendly, modern German setting",
+        "subjects": "Lisa, Theo"
       },
-      "outputPath": "images/shared/scenes/international-meeting.jpg",
+      "category": "greetings",
+      "outputPath": "images/shared/greetings/a1-m01-l03-s11-lisa-theo.jpg",
       "status": "pending",
-      "reusable": true,
-      "reusableFor": ["countries", "introductions", "origins"]
-    },
-    {
-      "id": "img-002",
-      "type": "image",
-      "stepId": "s3",
-      "stepType": "new-word",
-      "description": "German flag or iconic German landmark (Brandenburg Gate, Berlin skyline) representing Deutschland",
-      "context": "Vocabulary illustration for 'Deutschland' (Germany)",
-      "specs": {
-        "format": "jpg",
-        "dimensions": "800x600",
-        "style": "recognizable, clean, modern"
-      },
-      "outputPath": "images/shared/places/germany.jpg",
-      "status": "pending",
-      "reusable": true,
-      "reusableFor": ["countries", "germany", "europe"]
-    },
-    {
-      "id": "img-003",
-      "type": "image",
-      "stepId": "s4",
-      "stepType": "new-word",
-      "description": "Iranian flag or iconic Persian landmark (Persepolis, Isfahan mosque, Azadi Tower) representing Iran",
-      "context": "Vocabulary illustration for 'der Iran' (Iran)",
-      "specs": {
-        "format": "jpg",
-        "dimensions": "800x600",
-        "style": "recognizable, respectful, cultural"
-      },
-      "outputPath": "images/shared/places/iran.jpg",
-      "status": "pending",
-      "reusable": true,
-      "reusableFor": ["countries", "iran", "persia"]
-    },
-    {
-      "id": "img-004",
-      "type": "image",
-      "stepId": "s1",
-      "stepType": "new-word",
-      "description": "Person pointing at a world map or globe, asking about origins",
-      "context": "Vocabulary illustration for 'Woher kommst du?' (Where are you from?)",
-      "specs": {
-        "format": "jpg",
-        "dimensions": "800x600",
-        "style": "curious, friendly, educational"
-      },
-      "outputPath": "images/shared/expressions/asking-origin.jpg",
-      "status": "pending",
-      "reusable": true,
-      "reusableFor": ["countries", "questions", "geography"]
+      "completedAt": null,
+      "notes": ""
     }
-  ],
-  "summary": {
-    "totalTasks": 4,
-    "images": 4,
-    "videos": 0,
-    "pending": 4,
-    "completed": 0
-  }
+  ]
 }
