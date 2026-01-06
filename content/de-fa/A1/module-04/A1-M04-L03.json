@@ -1,0 +1,352 @@
+{
+  "id": "A1-M04-L03",
+  "title": {
+    "de": "die Kinder, die Bücher",
+    "fa": "جمع در آلمانی"
+  },
+  "description": "یاد بگیرید چطور اسم‌های جمع در آلمانی ساخته می‌شوند و همه جمع‌ها die می‌گیرند",
+  "level": "A1",
+  "module": 4,
+  "lessonNumber": 3,
+  "totalSteps": 26,
+  "estimatedMinutes": 15,
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "خبر خوب درباره جمع!",
+      "content": "در آلمانی **همه** اسم‌های جمع با **die** می‌آیند!\n\n• der Mann → **die** Männer\n• die Frau → **die** Frauen\n• das Kind → **die** Kinder\n\n🎉 **دیگر نگران جنسیت نیستید!**\nفقط باید شکل جمع را یاد بگیرید.",
+      "examples": [
+        { "de": "die Männer, die Frauen, die Kinder", "fa": "مردها، زن‌ها، بچه‌ها" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": {
+        "de": "die Männer",
+        "fa": "مردها"
+      },
+      "example": {
+        "text": {
+          "de": "Die Männer arbeiten.",
+          "fa": "مردها کار می‌کنند."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": {
+        "de": "die Frauen",
+        "fa": "زن‌ها"
+      },
+      "example": {
+        "text": {
+          "de": "Die Frauen lesen.",
+          "fa": "زن‌ها می‌خوانند."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": {
+        "de": "die Kinder",
+        "fa": "بچه‌ها"
+      },
+      "example": {
+        "text": {
+          "de": "Die Kinder spielen.",
+          "fa": "بچه‌ها بازی می‌کنند."
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "پنج الگوی جمع",
+      "content": "آلمانی پنج روش برای ساختن جمع دارد:\n\n**۱. بدون تغییر:** der Lehrer → die Lehrer\n**۲. اوملاوت:** der Mann → die Männer\n**۳. پسوند -e:** der Tag → die Tage\n**۴. پسوند -er:** das Kind → die Kinder\n**۵. پسوند -en/-n:** die Frau → die Frauen\n\n📝 **نکته:** باید جمع هر کلمه را جداگانه یاد بگیرید!",
+      "examples": [
+        { "de": "der Apfel, die Äpfel", "fa": "سیب، سیب‌ها (اوملاوت)" },
+        { "de": "das Buch, die Bücher", "fa": "کتاب، کتاب‌ها (-er)" }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "مفرد یا جمع؟",
+      "instruction": "این اسم مفرد است یا جمع؟",
+      "questions": [
+        { "prompt": "die Kinder", "left": "مفرد", "right": "جمع", "correctSide": "right" },
+        { "prompt": "das Kind", "left": "مفرد", "right": "جمع", "correctSide": "left" },
+        { "prompt": "die Frauen", "left": "مفرد", "right": "جمع", "correctSide": "right" },
+        { "prompt": "der Mann", "left": "مفرد", "right": "جمع", "correctSide": "left" },
+        { "prompt": "die Bücher", "left": "مفرد", "right": "جمع", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": {
+        "de": "die Bücher",
+        "fa": "کتاب‌ها"
+      },
+      "example": {
+        "text": {
+          "de": "Die Bücher sind interessant.",
+          "fa": "کتاب‌ها جالب هستند."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": {
+        "de": "die Tische",
+        "fa": "میزها"
+      },
+      "example": {
+        "text": {
+          "de": "Die Tische sind groß.",
+          "fa": "میزها بزرگ هستند."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": {
+        "de": "die Stühle",
+        "fa": "صندلی‌ها"
+      },
+      "example": {
+        "text": {
+          "de": "Die Stühle sind neu.",
+          "fa": "صندلی‌ها نو هستند."
+        }
+      }
+    },
+    {
+      "type": "dialog",
+      "id": "s9",
+      "title": "مکالمه: در کلاس",
+      "context": "معلم درباره وسایل کلاس صحبت می‌کند",
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Wie viele Bücher haben wir?", "fa": "چند تا کتاب داریم؟" } },
+        { "speaker": "Alex", "text": { "de": "Wir haben zehn Bücher.", "fa": "ما ده تا کتاب داریم." } },
+        { "speaker": "Lisa", "text": { "de": "Und die Tische?", "fa": "و میزها؟" } },
+        { "speaker": "Alex", "text": { "de": "Fünf Tische und zehn Stühle.", "fa": "پنج میز و ده صندلی." } },
+        { "speaker": "Lisa", "text": { "de": "Die Kinder brauchen mehr Stühle!", "fa": "بچه‌ها صندلی بیشتر نیاز دارند!" } }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": {
+        "de": "die Äpfel",
+        "fa": "سیب‌ها"
+      },
+      "example": {
+        "text": {
+          "de": "Die Äpfel sind rot.",
+          "fa": "سیب‌ها قرمز هستند."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s11",
+      "word": {
+        "de": "die Bananen",
+        "fa": "موزها"
+      },
+      "example": {
+        "text": {
+          "de": "Die Bananen sind gelb.",
+          "fa": "موزها زرد هستند."
+        }
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s12",
+      "instruction": "حرف تعریف درست را انتخاب کنید",
+      "sentence": "{0} Kinder spielen im Park.",
+      "options": ["Der", "Die", "Das", "Ein"],
+      "correctAnswers": [1],
+      "feedback": {
+        "explanation": "**Die** Kinder (همه جمع‌ها با die می‌آیند)"
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s13",
+      "instruction": "حرف تعریف درست را انتخاب کنید",
+      "sentence": "{0} Bücher sind auf dem Tisch.",
+      "options": ["Der", "Die", "Das", "Eine"],
+      "correctAnswers": [1],
+      "feedback": {
+        "explanation": "**Die** Bücher (همه جمع‌ها با die می‌آیند)"
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s14",
+      "title": "الگوی -en برای مونث",
+      "content": "بیشتر اسم‌های مونث با **-en** یا **-n** جمع می‌شوند:\n\n• die Frau → die Frau**en**\n• die Lampe → die Lampe**n**\n• die Tür → die Tür**en**\n• die Banane → die Banane**n**\n\n📝 **ساده‌ترین قانون:**\nاگر کلمه با -e تمام شود: فقط -n اضافه کنید",
+      "examples": [
+        { "de": "die Katze, die Katzen", "fa": "گربه، گربه‌ها" },
+        { "de": "die Tasche, die Taschen", "fa": "کیف، کیف‌ها" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s15",
+      "word": {
+        "de": "die Lampen",
+        "fa": "چراغ‌ها"
+      },
+      "example": {
+        "text": {
+          "de": "Die Lampen sind hell.",
+          "fa": "چراغ‌ها روشن هستند."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s16",
+      "word": {
+        "de": "die Türen",
+        "fa": "درها"
+      },
+      "example": {
+        "text": {
+          "de": "Die Türen sind offen.",
+          "fa": "درها باز هستند."
+        }
+      }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "جمع درست را بشناسید",
+      "instruction": "جمع درست کدام است؟",
+      "questions": [
+        { "prompt": "die Frau:", "left": "Frauen", "right": "Fraus", "correctSide": "left" },
+        { "prompt": "die Lampe:", "left": "Lampeen", "right": "Lampen", "correctSide": "right" },
+        { "prompt": "das Buch:", "left": "Bücher", "right": "Buchen", "correctSide": "left" },
+        { "prompt": "der Tisch:", "left": "Tischen", "right": "Tische", "correctSide": "right" },
+        { "prompt": "das Kind:", "left": "Kinder", "right": "Kinden", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s17",
+      "word": {
+        "de": "die Fenster",
+        "fa": "پنجره‌ها"
+      },
+      "example": {
+        "text": {
+          "de": "Die Fenster sind sauber.",
+          "fa": "پنجره‌ها تمیز هستند."
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s18",
+      "title": "کلمات بدون تغییر",
+      "content": "بعضی کلمات در جمع تغییر نمی‌کنند:\n\n• der Lehrer → die Lehrer (معلم‌ها)\n• das Fenster → die Fenster (پنجره‌ها)\n• der Computer → die Computer (کامپیوترها)\n\n📝 **معمولاً:** کلمات -er و -el و -en در انتها",
+      "examples": [
+        { "de": "der Kuchen, die Kuchen", "fa": "کیک، کیک‌ها" }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "s19",
+      "instruction": "مفرد را با جمع جفت کنید",
+      "items": [
+        { "id": "i1", "text": "das Kind" },
+        { "id": "i2", "text": "die Frau" },
+        { "id": "i3", "text": "der Tisch" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "die Kinder" },
+        { "id": "m2", "text": "die Frauen" },
+        { "id": "m3", "text": "die Tische" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"]
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s20",
+      "question": "جمع «das Buch» چیست؟",
+      "options": ["die Buchen", "die Bücher", "die Buchs", "die Büchen"],
+      "correctAnswerIndex": 1,
+      "feedback": {
+        "correct": "آفرین! das Buch → die Bücher (با اوملاوت و -er)",
+        "incorrect": "جواب درست: die Bücher (با اوملاوت و -er)"
+      }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g3",
+      "title": "مرور کلی",
+      "instruction": "این کلمه مفرد است یا جمع؟",
+      "questions": [
+        { "prompt": "die Äpfel", "left": "مفرد", "right": "جمع", "correctSide": "right" },
+        { "prompt": "die Lampe", "left": "مفرد", "right": "جمع", "correctSide": "left" },
+        { "prompt": "die Türen", "left": "مفرد", "right": "جمع", "correctSide": "right" },
+        { "prompt": "der Stuhl", "left": "مفرد", "right": "جمع", "correctSide": "left" },
+        { "prompt": "die Fenster", "left": "مفرد", "right": "جمع", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این جمع‌ها را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "die Männer", "fa": "مردها" },
+        { "de": "die Frauen", "fa": "زن‌ها" },
+        { "de": "die Kinder", "fa": "بچه‌ها" },
+        { "de": "die Bücher", "fa": "کتاب‌ها" },
+        { "de": "die Tische", "fa": "میزها" },
+        { "de": "die Stühle", "fa": "صندلی‌ها" },
+        { "de": "die Äpfel", "fa": "سیب‌ها" },
+        { "de": "die Bananen", "fa": "موزها" },
+        { "de": "die Lampen", "fa": "چراغ‌ها" },
+        { "de": "die Türen", "fa": "درها" },
+        { "de": "die Fenster", "fa": "پنجره‌ها" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما جمع در آلمانی را یاد گرفتید:\n\n🎉 **همه جمع‌ها با die می‌آیند!**\n\n**الگوهای جمع:**\n• بدون تغییر: Lehrer, Fenster\n• اوملاوت: Mann → Männer\n• پسوند -e: Tisch → Tische\n• پسوند -er: Kind → Kinder\n• پسوند -en: Frau → Frauen",
+      "xpEarned": 50,
+      "nextLessonId": "A1-M04-L04",
+      "vocabularyLearned": [
+        { "word": { "de": "die Männer", "fa": "مردها" } },
+        { "word": { "de": "die Frauen", "fa": "زن‌ها" } },
+        { "word": { "de": "die Kinder", "fa": "بچه‌ها" } },
+        { "word": { "de": "die Bücher", "fa": "کتاب‌ها" } },
+        { "word": { "de": "die Tische", "fa": "میزها" } },
+        { "word": { "de": "die Stühle", "fa": "صندلی‌ها" } },
+        { "word": { "de": "die Äpfel", "fa": "سیب‌ها" } },
+        { "word": { "de": "die Bananen", "fa": "موزها" } },
+        { "word": { "de": "die Lampen", "fa": "چراغ‌ها" } },
+        { "word": { "de": "die Türen", "fa": "درها" } },
+        { "word": { "de": "die Fenster", "fa": "پنجره‌ها" } }
+      ]
+    }
+  ]
+}

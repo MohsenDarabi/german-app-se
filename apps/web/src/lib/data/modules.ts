@@ -167,6 +167,12 @@ export const A1_MODULES: ModuleStub[] = [
         title: "یک چیزی (ein, eine)",
         description: "یاد بگیرید چطور بگویید «یک» در آلمانی: ein برای مذکر و خنثی، eine برای مونث",
         path: "/learn/de-fa/A1/A1-M04-L02"
+      },
+      {
+        id: "A1-M04-L03",
+        title: "جمع در آلمانی (Plural)",
+        description: "یاد بگیرید چطور اسم‌های جمع در آلمانی ساخته می‌شوند و همه جمع‌ها die می‌گیرند",
+        path: "/learn/de-fa/A1/A1-M04-L03"
       }
     ]
   }
