@@ -119,6 +119,19 @@ export const A1_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/A1/A1-M02-L05"
       }
     ]
+  },
+  {
+    id: "module-03",
+    title: "بخش ۳: منفی کردن (Verneinung)",
+    level: "A1",
+    lessons: [
+      {
+        id: "A1-M03-L01",
+        title: "نه / نمی (nicht)",
+        description: "یاد بگیرید چطور جملات منفی بسازید با کلمه nicht",
+        path: "/learn/de-fa/A1/A1-M03-L01"
+      }
+    ]
   }
 ];
 
