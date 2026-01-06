@@ -1,0 +1,366 @@
+{
+  "id": "A1-M04-L02",
+  "title": {
+    "de": "ein, eine, ein",
+    "fa": "حرف تعریف نامعین"
+  },
+  "description": "یاد بگیرید چطور بگویید «یک» در آلمانی: ein برای مذکر و خنثی، eine برای مونث",
+  "level": "A1",
+  "module": 4,
+  "lessonNumber": 2,
+  "totalSteps": 26,
+  "estimatedMinutes": 15,
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "حروف تعریف معین و نامعین",
+      "content": "در آلمانی دو نوع حرف تعریف داریم:\n\n**معین (Bestimmter Artikel):**\nder، die، das = این/آن (مشخص)\n\n**نامعین (Unbestimmter Artikel):**\nein، eine = یک (نامشخص)\n\n🇮🇷 **مثل فارسی:**\n• معین: «این کتاب» (مشخص است)\n• نامعین: «یک کتاب» (هر کتابی)",
+      "examples": [
+        { "de": "Das ist das Buch.", "fa": "این آن کتاب است. (مشخص)" },
+        { "de": "Das ist ein Buch.", "fa": "این یک کتاب است. (نامشخص)" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": {
+        "de": "ein",
+        "fa": "یک (مذکر/خنثی)"
+      },
+      "example": {
+        "text": {
+          "de": "ein Mann, ein Kind",
+          "fa": "یک مرد، یک بچه"
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": {
+        "de": "eine",
+        "fa": "یک (مونث)"
+      },
+      "example": {
+        "text": {
+          "de": "eine Frau",
+          "fa": "یک زن"
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s4",
+      "title": "قانون ساده",
+      "content": "**der** → **ein**\n**das** → **ein**\n**die** → **eine**\n\n📝 **به یاد داشته باشید:**\n• مذکر و خنثی = ein (یکسان!)\n• مونث = eine (با e)",
+      "examples": [
+        { "de": "der Mann, ein Mann", "fa": "مرد، یک مرد" },
+        { "de": "das Kind, ein Kind", "fa": "بچه، یک بچه" },
+        { "de": "die Frau, eine Frau", "fa": "زن، یک زن" }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "ein یا eine؟",
+      "instruction": "حرف تعریف نامعین درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "___ Mann", "left": "ein", "right": "eine", "correctSide": "left" },
+        { "prompt": "___ Frau", "left": "ein", "right": "eine", "correctSide": "right" },
+        { "prompt": "___ Kind", "left": "ein", "right": "eine", "correctSide": "left" },
+        { "prompt": "___ Tisch", "left": "ein", "right": "eine", "correctSide": "left" },
+        { "prompt": "___ Lampe", "left": "ein", "right": "eine", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": {
+        "de": "ein Apfel",
+        "fa": "یک سیب"
+      },
+      "example": {
+        "text": {
+          "de": "Ich esse einen Apfel.",
+          "fa": "من یک سیب می‌خورم."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": {
+        "de": "eine Banane",
+        "fa": "یک موز"
+      },
+      "example": {
+        "text": {
+          "de": "Ich esse eine Banane.",
+          "fa": "من یک موز می‌خورم."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": {
+        "de": "ein Brot",
+        "fa": "یک نان"
+      },
+      "example": {
+        "text": {
+          "de": "Ich kaufe ein Brot.",
+          "fa": "من یک نان می‌خرم."
+        }
+      }
+    },
+    {
+      "type": "dialog",
+      "id": "s8",
+      "title": "مکالمه: در فروشگاه",
+      "context": "الی در فروشگاه خرید می‌کند",
+      "lines": [
+        { "speaker": "Eli", "text": { "de": "Ich möchte einen Apfel, bitte.", "fa": "یک سیب می‌خواهم، لطفاً." } },
+        { "speaker": "Tom", "text": { "de": "Hier, ein Apfel.", "fa": "بفرمایید، یک سیب." } },
+        { "speaker": "Eli", "text": { "de": "Und eine Banane.", "fa": "و یک موز." } },
+        { "speaker": "Tom", "text": { "de": "Eine Banane, bitte schön!", "fa": "یک موز، بفرمایید!" } },
+        { "speaker": "Eli", "text": { "de": "Danke! Und ein Brot?", "fa": "ممنون! و یک نان؟" } },
+        { "speaker": "Tom", "text": { "de": "Ja, hier ist ein Brot.", "fa": "بله، اینجا یک نان است." } }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "کی از کدام استفاده کنیم؟",
+      "content": "**معین (der/die/das):**\n• چیز مشخص و شناخته\n• قبلاً ذکر شده\n\n**نامعین (ein/eine):**\n• اولین بار ذکر می‌شود\n• یکی از چند تا\n• اهمیت ندارد کدام",
+      "examples": [
+        { "de": "Ich sehe einen Mann. Der Mann ist groß.", "fa": "یک مردی می‌بینم. آن مرد بلند است." },
+        { "de": "Hast du ein Buch?", "fa": "کتابی داری؟ (هر کتابی)" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": {
+        "de": "ein Hund",
+        "fa": "یک سگ"
+      },
+      "example": {
+        "text": {
+          "de": "Das ist ein Hund.",
+          "fa": "این یک سگ است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s11",
+      "word": {
+        "de": "eine Katze",
+        "fa": "یک گربه"
+      },
+      "example": {
+        "text": {
+          "de": "Ich habe eine Katze.",
+          "fa": "من یک گربه دارم."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s12",
+      "word": {
+        "de": "ein Vogel",
+        "fa": "یک پرنده"
+      },
+      "example": {
+        "text": {
+          "de": "Der Vogel fliegt.",
+          "fa": "پرنده پرواز می‌کند."
+        }
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s13",
+      "instruction": "حرف تعریف نامعین درست را انتخاب کنید",
+      "sentence": "Das ist {0} Hund.",
+      "options": ["ein", "eine", "der", "die"],
+      "correctAnswers": [0],
+      "feedback": {
+        "explanation": "**ein** Hund (Hund مذکر است: der Hund → ein Hund)"
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s14",
+      "instruction": "حرف تعریف نامعین درست را انتخاب کنید",
+      "sentence": "Ich habe {0} Katze.",
+      "options": ["ein", "eine", "das", "die"],
+      "correctAnswers": [1],
+      "feedback": {
+        "explanation": "**eine** Katze (Katze مونث است: die Katze → eine Katze)"
+      }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "حیوانات",
+      "instruction": "حرف تعریف نامعین درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "___ Hund", "left": "ein", "right": "eine", "correctSide": "left" },
+        { "prompt": "___ Katze", "left": "ein", "right": "eine", "correctSide": "right" },
+        { "prompt": "___ Vogel", "left": "ein", "right": "eine", "correctSide": "left" },
+        { "prompt": "___ Maus", "left": "ein", "right": "eine", "correctSide": "right" },
+        { "prompt": "___ Pferd", "left": "ein", "right": "eine", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s15",
+      "word": {
+        "de": "ein Auto",
+        "fa": "یک ماشین"
+      },
+      "example": {
+        "text": {
+          "de": "Ich habe ein Auto.",
+          "fa": "من یک ماشین دارم."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s16",
+      "word": {
+        "de": "eine Tasche",
+        "fa": "یک کیف"
+      },
+      "example": {
+        "text": {
+          "de": "Das ist eine Tasche.",
+          "fa": "این یک کیف است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s17",
+      "word": {
+        "de": "ein Handy",
+        "fa": "یک موبایل"
+      },
+      "example": {
+        "text": {
+          "de": "Ich brauche ein Handy.",
+          "fa": "من یک موبایل نیاز دارم."
+        }
+      }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s18",
+      "question": "کدام جمله درست است؟",
+      "options": ["Ich habe ein Tasche.", "Ich habe eine Tasche.", "Ich habe einer Tasche.", "Ich habe einen Tasche."],
+      "correctAnswerIndex": 1,
+      "feedback": {
+        "correct": "آفرین! die Tasche → eine Tasche",
+        "incorrect": "Tasche مونث است (die Tasche)، پس: eine Tasche"
+      }
+    },
+    {
+      "type": "matching",
+      "id": "s19",
+      "instruction": "اسم را با حرف تعریف نامعین جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Mann (der)" },
+        { "id": "i2", "text": "Frau (die)" },
+        { "id": "i3", "text": "Kind (das)" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "ein" },
+        { "id": "m2", "text": "eine" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m1"]
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s20",
+      "title": "جمع = بدون حرف تعریف نامعین!",
+      "content": "در آلمانی حرف تعریف نامعین **جمع ندارد**:\n\n• ein Mann → Männer (بدون حرف تعریف)\n• eine Frau → Frauen\n• ein Kind → Kinder\n\n🇮🇷 **مثل فارسی:**\n• «یک مرد» ← «مردها» (نه «یک مردها»!)",
+      "examples": [
+        { "de": "Ich sehe Kinder.", "fa": "بچه‌هایی می‌بینم." },
+        { "de": "Hier sind Bücher.", "fa": "اینجا کتاب‌هایی هست." }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g3",
+      "title": "مرور کلی",
+      "instruction": "حرف تعریف نامعین درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "___ Buch", "left": "ein", "right": "eine", "correctSide": "left" },
+        { "prompt": "___ Tür", "left": "ein", "right": "eine", "correctSide": "right" },
+        { "prompt": "___ Fenster", "left": "ein", "right": "eine", "correctSide": "left" },
+        { "prompt": "___ Auto", "left": "ein", "right": "eine", "correctSide": "left" },
+        { "prompt": "___ Banane", "left": "ein", "right": "eine", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s21",
+      "instruction": "حرف تعریف درست را انتخاب کنید",
+      "sentence": "Ich kaufe {0} Auto.",
+      "options": ["ein", "eine", "einen", "einer"],
+      "correctAnswers": [0],
+      "feedback": {
+        "explanation": "**ein** Auto (Auto خنثی است: das Auto → ein Auto)"
+      }
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "ein", "fa": "یک (مذکر/خنثی)" },
+        { "de": "eine", "fa": "یک (مونث)" },
+        { "de": "ein Apfel", "fa": "یک سیب" },
+        { "de": "eine Banane", "fa": "یک موز" },
+        { "de": "ein Brot", "fa": "یک نان" },
+        { "de": "ein Hund", "fa": "یک سگ" },
+        { "de": "eine Katze", "fa": "یک گربه" },
+        { "de": "ein Vogel", "fa": "یک پرنده" },
+        { "de": "ein Auto", "fa": "یک ماشین" },
+        { "de": "eine Tasche", "fa": "یک کیف" },
+        { "de": "ein Handy", "fa": "یک موبایل" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما حروف تعریف نامعین را یاد گرفتید:\n\n• **ein** = یک (برای مذکر و خنثی)\n• **eine** = یک (برای مونث)\n\n🎯 **قانون ساده:**\nder/das → ein\ndie → eine",
+      "xpEarned": 50,
+      "nextLessonId": "A1-M04-L03",
+      "vocabularyLearned": [
+        { "word": { "de": "ein", "fa": "یک (مذکر/خنثی)" } },
+        { "word": { "de": "eine", "fa": "یک (مونث)" } },
+        { "word": { "de": "ein Apfel", "fa": "یک سیب" } },
+        { "word": { "de": "eine Banane", "fa": "یک موز" } },
+        { "word": { "de": "ein Brot", "fa": "یک نان" } },
+        { "word": { "de": "ein Hund", "fa": "یک سگ" } },
+        { "word": { "de": "eine Katze", "fa": "یک گربه" } },
+        { "word": { "de": "ein Vogel", "fa": "یک پرنده" } },
+        { "word": { "de": "ein Auto", "fa": "یک ماشین" } },
+        { "word": { "de": "eine Tasche", "fa": "یک کیف" } },
+        { "word": { "de": "ein Handy", "fa": "یک موبایل" } }
+      ]
+    }
+  ]
+}

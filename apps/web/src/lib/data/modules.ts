@@ -161,6 +161,12 @@ export const A1_MODULES: ModuleStub[] = [
         title: "حروف تعریف (der, die, das)",
         description: "یاد بگیرید سه جنس آلمانی را: مذکر (der)، مونث (die) و خنثی (das)",
         path: "/learn/de-fa/A1/A1-M04-L01"
+      },
+      {
+        id: "A1-M04-L02",
+        title: "یک چیزی (ein, eine)",
+        description: "یاد بگیرید چطور بگویید «یک» در آلمانی: ein برای مذکر و خنثی، eine برای مونث",
+        path: "/learn/de-fa/A1/A1-M04-L02"
       }
     ]
   }
