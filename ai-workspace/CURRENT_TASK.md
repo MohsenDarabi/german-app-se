@@ -14,23 +14,22 @@
 
 ## Last Completed
 
-**Task**: Create A1-M02-L01 (sein und haben) - MODULE 2 BEGINS!
+**Task**: Create A1-M02-L02 (Regelmäßige Verben)
 
 **Completed**: 2026-01-06
 
 **Result**:
-- Created L01: "sein und haben" (to be and to have)
-- Vocabulary: sein, haben, ich bin/habe, du bist/hast, er/sie ist/hat
-- 24 steps including grammar tables for verb conjugation
-- Key grammar: irregular verbs sein and haben, "haben for feelings" pattern
+- Created L02: "Regelmäßige Verben" (Regular Verbs)
+- Vocabulary: machen, spielen, lernen, arbeiten, heute, jeden Tag
+- 24 steps with verb conjugation patterns
+- Key grammar: -e (ich), -st (du), -t (er/sie/es), arbeiten exception
 - All validation rules pass
-- Audio generated (52 texts)
-- **Module 02 starts with verb fundamentals!**
+- Audio generated (40 texts)
 
 **Key Files Changed**:
-- `content/de-fa/A1/module-02/A1-M02-L01.json` - NEW
-- `apps/web/static/audio/A1-M02-L01/` - Audio files
-- `apps/web/src/lib/data/modules.ts` - Added Module 02
+- `content/de-fa/A1/module-02/A1-M02-L02.json` - NEW
+- `apps/web/static/audio/A1-M02-L02/` - Audio files
+- `apps/web/src/lib/data/modules.ts` - Added L02
 
 ---
 

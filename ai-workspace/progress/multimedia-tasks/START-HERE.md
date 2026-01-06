@@ -167,6 +167,14 @@ Videos: apps/web/static/videos/shared/
   - Context: Dialog scene - "Hallo Theo! Wie geht's?" - discussing being happy, hungry, having time
   - Style: friendly conversation, modern German cafe or park, casual setting
 
+### Lesson 02: Regelmäßige Verben
+
+**Images (1):**
+
+- [ ] `scenes/a1-m02-l02-s12-lisa-theo.jpg` - Lisa and Theo discussing daily activities
+  - Context: Dialog scene - "Was machst du?" - discussing activities (learning German, playing guitar, working)
+  - Style: modern setting, Lisa could be at a cafe where she works or holding a guitar
+
 ---
 
 ## Progress Summary
@@ -184,8 +192,9 @@ Videos: apps/web/static/videos/shared/
 | A1 | 01 | 09 | 1 | 0 | Pending |
 | A1 | 01 | 10 | 2 | 0 | Pending |
 | A1 | 02 | 01 | 1 | 0 | Pending |
+| A1 | 02 | 02 | 1 | 0 | Pending |
 
-**Total:** 24 tasks (24 images, 0 videos)
+**Total:** 25 tasks (25 images, 0 videos)
 
 ---
 
@@ -244,3 +253,4 @@ Check the detailed task files:
 - `A1-M01-L09.json` - Lesson 09 tasks
 - `A1-M01-L10.json` - Lesson 10 tasks
 - `A1-M02-L01.json` - Lesson 01 (Module 2) tasks
+- `A1-M02-L02.json` - Lesson 02 (Module 2) tasks

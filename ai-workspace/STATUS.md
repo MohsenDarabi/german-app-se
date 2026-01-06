@@ -19,10 +19,10 @@ Next lesson to create: `A1-M02-L02` (continue Module 2)
 | Level | Module | Lessons | Status |
 |-------|--------|---------|--------|
 | A1 | M01 | L01-L10 | Complete! All 10 lessons created |
-| A1 | M02 | L01 | In progress (1 lesson) |
+| A1 | M02 | L01-L02 | In progress (2 lessons) |
 | A2 | - | - | Not created |
 
-**Total active lessons: 11**
+**Total active lessons: 12**
 
 ### Lessons Summary
 
@@ -39,6 +39,7 @@ Next lesson to create: `A1-M02-L02` (continue Module 2)
 | A1-M01-L09 | Zahlen 21-100 | اعداد ۲۱ تا ۱۰۰ | 24 |
 | A1-M01-L10 | Telefonnummern | شماره تلفن | 22 |
 | A1-M02-L01 | sein und haben | بودن و داشتن | 24 |
+| A1-M02-L02 | Regelmäßige Verben | فعل‌های باقاعده | 24 |
 
 ---
 
@@ -76,6 +77,7 @@ All 10 lessons have audio generated!
 
 | Date | Change |
 |------|--------|
+| 2026-01-06 | Created A1-M02-L02 (Regelmäßige Verben) - regular verb conjugation |
 | 2026-01-06 | Created A1-M02-L01 (sein und haben) - Module 2 begins! |
 | 2026-01-06 | Created A1-M01-L10 (Telefonnummern) - Module 1 complete! |
 | 2026-01-06 | Created A1-M01-L09 (Zahlen 21-100) |

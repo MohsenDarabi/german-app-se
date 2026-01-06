@@ -93,6 +93,12 @@ export const A1_MODULES: ModuleStub[] = [
         title: "بودن و داشتن (sein und haben)",
         description: "دو فعل مهم آلمانی را یاد بگیرید: sein (بودن) و haben (داشتن).",
         path: "/learn/de-fa/A1/A1-M02-L01"
+      },
+      {
+        id: "A1-M02-L02",
+        title: "فعل‌های باقاعده (Regelmäßige Verben)",
+        description: "یاد بگیرید چطور فعل‌های باقاعده آلمانی را صرف کنید.",
+        path: "/learn/de-fa/A1/A1-M02-L02"
       }
     ]
   }
