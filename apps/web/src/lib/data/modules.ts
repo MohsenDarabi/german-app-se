@@ -192,6 +192,12 @@ export const A1_MODULES: ModuleStub[] = [
         title: "بله یا خیر؟ (Ja oder Nein?)",
         description: "یاد بگیرید چطور سوالات بله/خیر بسازید: فعل را اول جمله بیاورید!",
         path: "/learn/de-fa/A1/A1-M05-L01"
+      },
+      {
+        id: "A1-M05-L02",
+        title: "کی؟ چی؟ کجا؟ (Wer? Was? Wo?)",
+        description: "یاد بگیرید سوالات با کلمات پرسشی W بسازید: Wer، Was، Wo، Woher، Wohin",
+        path: "/learn/de-fa/A1/A1-M05-L02"
       }
     ]
   }
