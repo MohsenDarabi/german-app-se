@@ -32,8 +32,9 @@
 
   $: isVocabList = hasVocabPairs(step.content);
   $: parsedContent = parseMarkdown(step.content);
-  // Hide "مثال‌ها" header when content instructs to click examples
-  $: isPronunciationGuide = step.content.includes('کلیک کنید');
+  // Pronunciation guide: when content instructs to click AND examples are single words (no spaces)
+  $: isPronunciationGuide = step.content.includes('کلیک کنید') &&
+    step.examples?.every(ex => !ex.de.includes(' '));
 </script>
 
 <div class="grammar-card" dir="rtl">
@@ -54,16 +55,31 @@
         <h3 class="examples-title">مثال‌ها:</h3>
       {/if}
       {#each step.examples as example, idx}
-        <div class="example-item" class:inline-example={isPronunciationGuide}>
-          <AudioButton
-            text={example.de}
-            {lessonId}
-            audioId="{step.id}-example{idx}"
-            size="sm"
-          />
-          <span class="example-de" dir="ltr">{example.de}</span>
-          <span class="example-fa"><BiDiText text={example.fa} /></span>
-        </div>
+        {#if isPronunciationGuide}
+          <div class="example-item inline-example">
+            <AudioButton
+              text={example.de}
+              {lessonId}
+              audioId="{step.id}-example{idx}"
+              size="sm"
+            />
+            <span class="example-de" dir="ltr">{example.de}</span>
+            <span class="example-fa"><BiDiText text={example.fa} /></span>
+          </div>
+        {:else}
+          <div class="example-item">
+            <div class="example-row">
+              <AudioButton
+                text={example.de}
+                {lessonId}
+                audioId="{step.id}-example{idx}"
+                size="sm"
+              />
+              <p class="example-de" dir="ltr">{example.de}</p>
+            </div>
+            <p class="example-fa"><BiDiText text={example.fa} /></p>
+          </div>
+        {/if}
       {/each}
     </div>
   {/if}
@@ -106,14 +122,24 @@
 
   .grammar-text :global(.table-row) {
     display: flex;
+    flex-direction: row-reverse; /* RTL: first column on right */
     border-bottom: 1px solid #fcd34d;
-    padding: 0.25rem 0;
+    padding: 0.5rem 0;
   }
 
   .grammar-text :global(.table-cell) {
     flex: 1;
     padding: 0.25rem 0.5rem;
-    unicode-bidi: plaintext; /* Auto-detect text direction for mixed content */
+    text-align: center;
+  }
+
+  .grammar-text :global(.table-cell:first-child) {
+    text-align: right; /* Persian numbers on right */
+  }
+
+  .grammar-text :global(.table-cell:last-child) {
+    text-align: left; /* German words on left */
+    direction: ltr;
   }
   .examples-section {
     margin-top: 1rem;
@@ -127,7 +153,12 @@
   }
   .example-item {
     margin-bottom: 0.75rem;
-    padding-left: 1rem;
+  }
+  .example-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.25rem;
   }
   .example-item.inline-example {
     display: flex;
@@ -147,10 +178,14 @@
   .example-fa {
     font-size: 0.9rem;
     color: #92400e;
+    font-style: italic;
+    margin: 0;
+    padding-right: 2rem;
   }
   .inline-example .example-fa {
     font-style: normal;
     margin-right: auto;
+    padding-right: 0;
   }
   .pronunciation-guide {
     margin-top: 0.75rem;
