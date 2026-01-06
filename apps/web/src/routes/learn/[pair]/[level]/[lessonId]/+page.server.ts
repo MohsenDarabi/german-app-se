@@ -70,7 +70,12 @@ export const load: PageServerLoad = async ({ params, locals }) => {
       lessonId: lessonId,
     };
   } catch (e: any) {
-    console.error("Parse Error:", e);
-    throw error(500, `Failed to parse lesson data: ${e.message}`);
+    // Safely log Zod errors (they can have circular refs that break console.error)
+    if (e?.errors) {
+      console.error("Parse Error (Zod):", JSON.stringify(e.errors, null, 2));
+    } else {
+      console.error("Parse Error:", e?.message || String(e));
+    }
+    throw error(500, `Failed to parse lesson data: ${e?.message || 'Unknown error'}`);
   }
 };

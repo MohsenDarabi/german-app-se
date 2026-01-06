@@ -56,6 +56,12 @@ export const A1_MODULES: ModuleStub[] = [
         title: "کجا زندگی می‌کنی؟ (Wo wohnst du?)",
         description: "یاد بگیرید چطور درباره محل زندگی صحبت کنید و تفاوت aus و in را بدانید.",
         path: "/learn/de-fa/A1/A1-M01-L06"
+      },
+      {
+        id: "A1-M01-L07",
+        title: "اعداد ۱ تا ۱۰ (Zahlen 1-10)",
+        description: "یاد بگیرید اعداد ۱ تا ۱۰ را به آلمانی بشمارید.",
+        path: "/learn/de-fa/A1/A1-M01-L07"
       }
       // Add more lessons here as content JSON files are created
     ]
