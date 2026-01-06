@@ -10,7 +10,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const TASKS_DIR = path.join(__dirname, '../docs/multimedia-tasks');
+const TASKS_DIR = path.join(__dirname, '../ai-workspace/progress/multimedia-tasks');
 
 function loadTaskFiles() {
   const files = fs.readdirSync(TASKS_DIR)
