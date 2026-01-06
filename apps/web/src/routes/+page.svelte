@@ -7,6 +7,12 @@
   import { devMode } from "$lib/stores/devMode";
   import { resetLessonForReplay, clearLessonWrongAnswers } from "$lib/services/progressService";
 
+  // Fix BiDi for mixed Persian/German titles - wrap parenthesized text in LTR
+  function fixBiDiTitle(title: string): string {
+    // Match text in parentheses that contains Latin characters
+    return title.replace(/\(([^)]*[a-zA-ZäöüßÄÖÜ][^)]*)\)/g, '<span dir="ltr">($1)</span>');
+  }
+
   // Reactive queries for user stats and progress
   const user = liveQuery(() => db.users.get(1));
   const progressMap = liveQuery(async () => {
@@ -128,7 +134,7 @@
       {#key [$progressMap, $devMode]}
         {#each A1_MODULES as module, moduleIndex}
           <div class="module-section">
-            <h3 class="module-title">{module.title}</h3>
+            <h3 class="module-title">{@html fixBiDiTitle(module.title)}</h3>
 
             <div class="lessons-list">
               {#each module.lessons as lesson, lessonIndex}
@@ -143,7 +149,7 @@
                   <span class="status-icon">{getIcon(status)}</span>
                 </div>
                 <div class="info">
-                  <h3>{lesson.title}</h3>
+                  <h3>{@html fixBiDiTitle(lesson.title)}</h3>
                   <p>{lesson.description}</p>
                 </div>
                 <div class="action">
@@ -182,7 +188,7 @@
       {#key [$progressMap, $devMode]}
         {#each A2_MODULES as module, moduleIndex}
           <div class="module-section">
-            <h3 class="module-title">{module.title}</h3>
+            <h3 class="module-title">{@html fixBiDiTitle(module.title)}</h3>
 
             <div class="lessons-list">
               {#each module.lessons as lesson, lessonIndex}
@@ -199,7 +205,7 @@
                   <span class="status-icon">{getIcon(status)}</span>
                 </div>
                 <div class="info">
-                  <h3>{lesson.title}</h3>
+                  <h3>{@html fixBiDiTitle(lesson.title)}</h3>
                   <p>{lesson.description}</p>
                 </div>
                 <div class="action">
@@ -441,6 +447,7 @@
     font-weight: 700;
     color: #0f172a;
     margin-bottom: 0.25rem;
+    unicode-bidi: plaintext; /* Fix punctuation in mixed RTL/LTR text */
   }
 
   .info p {
