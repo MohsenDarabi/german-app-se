@@ -81,8 +81,8 @@
       "type": "new-word",
       "id": "s6",
       "word": {
-        "de": "sie (جمع)",
-        "fa": "آن‌ها"
+        "de": "sie",
+        "fa": "آن‌ها (ضمیر جمع)"
       },
       "example": {
         "text": {
@@ -124,7 +124,7 @@
       "questions": [
         { "prompt": "wir ___", "left": "machen", "right": "macht", "correctSide": "left" },
         { "prompt": "ihr ___", "left": "machen", "right": "macht", "correctSide": "right" },
-        { "prompt": "sie (آن‌ها) ___", "left": "machen", "right": "macht", "correctSide": "left" },
+        { "prompt": "sie ___", "left": "machen", "right": "macht", "correctSide": "left" },
         { "prompt": "___ lernen Deutsch.", "left": "Wir", "right": "Ihr", "correctSide": "left" },
         { "prompt": "___ spielt gut!", "left": "Wir", "right": "Ihr", "correctSide": "right" }
       ]
@@ -133,8 +133,8 @@
       "type": "new-word",
       "id": "s9",
       "word": {
-        "de": "Sie (رسمی)",
-        "fa": "شما (محترمانه)"
+        "de": "Sie",
+        "fa": "شما (محترمانه/رسمی)"
       },
       "example": {
         "text": {
@@ -149,8 +149,8 @@
       "title": "Sie رسمی و sie جمع",
       "content": "در آلمانی دو نوع «sie» داریم:\n\n| نوشتار | معنی | استفاده |\n|-----|-----|-----|\n| **S**ie | شما (محترم) | با غریبه‌ها، بزرگ‌ترها |\n| **s**ie | آن‌ها | برای گروه‌ها |\n\n**نکته:** هر دو پسوند **-en** می‌گیرند!\n\nدر نوشتار، Sie رسمی همیشه با **S** بزرگ نوشته می‌شود.",
       "examples": [
-        { "de": "Sie arbeiten hier? (رسمی)", "fa": "شما اینجا کار می‌کنید؟" },
-        { "de": "sie arbeiten dort. (جمع)", "fa": "آن‌ها آنجا کار می‌کنند." }
+        { "de": "Sie arbeiten hier?", "fa": "شما اینجا کار می‌کنید؟ (رسمی)" },
+        { "de": "sie arbeiten dort.", "fa": "آن‌ها آنجا کار می‌کنند." }
       ]
     },
     {
@@ -184,18 +184,18 @@
     {
       "type": "matching",
       "id": "s13",
-      "instruction": "ضمیر را با فعل جفت کنید",
+      "instruction": "ضمیر را با پسوند جفت کنید",
       "items": [
-        { "id": "i1", "text": "wir" },
-        { "id": "i2", "text": "ihr" },
-        { "id": "i3", "text": "sie (آن‌ها)" },
-        { "id": "i4", "text": "Sie (رسمی)" }
+        { "id": "i1", "text": "ich" },
+        { "id": "i2", "text": "du" },
+        { "id": "i3", "text": "wir" },
+        { "id": "i4", "text": "ihr" }
       ],
       "matches": [
-        { "id": "m1", "text": "spielen (ما)" },
-        { "id": "m2", "text": "spielt" },
-        { "id": "m3", "text": "spielen (آن‌ها)" },
-        { "id": "m4", "text": "spielen (شما)" }
+        { "id": "m1", "text": "-e" },
+        { "id": "m2", "text": "-st" },
+        { "id": "m3", "text": "-en" },
+        { "id": "m4", "text": "-t" }
       ],
       "correctPairs": [
         ["i1", "m1"],
@@ -243,7 +243,7 @@
       "type": "fill-in-blank",
       "id": "s17",
       "instruction": "جمله را کامل کنید",
-      "sentence": "Sie {0} im Büro. (آن‌ها)",
+      "sentence": "Sie {0} im Büro.",
       "options": ["arbeite", "arbeitet", "arbeiten", "arbeitest"],
       "correctAnswers": [2],
       "feedback": {
@@ -254,7 +254,7 @@
       "type": "fill-in-blank",
       "id": "s18",
       "instruction": "جمله را کامل کنید",
-      "sentence": "{0} Sie Deutsch? (رسمی)",
+      "sentence": "{0} Sie Deutsch?",
       "options": ["Spreche", "Sprichst", "Sprecht", "Sprechen"],
       "correctAnswers": [3],
       "feedback": {
@@ -271,7 +271,7 @@
         { "prompt": "wir ___", "left": "lernt", "right": "lernen", "correctSide": "right" },
         { "prompt": "du ___", "left": "lernst", "right": "lernt", "correctSide": "left" },
         { "prompt": "ihr ___", "left": "lernt", "right": "lernen", "correctSide": "left" },
-        { "prompt": "sie (آن‌ها) ___", "left": "lernt", "right": "lernen", "correctSide": "right" }
+        { "prompt": "sie ___", "left": "lernt", "right": "lernen", "correctSide": "right" }
       ]
     },
     {
@@ -330,9 +330,9 @@
         { "de": "wir machen", "fa": "ما انجام می‌دهیم" },
         { "de": "ihr", "fa": "شما (غیررسمی)" },
         { "de": "ihr macht", "fa": "شما انجام می‌دهید" },
-        { "de": "sie (جمع)", "fa": "آن‌ها" },
+        { "de": "sie", "fa": "آن‌ها (ضمیر جمع)" },
         { "de": "sie machen", "fa": "آن‌ها انجام می‌دهند" },
-        { "de": "Sie (رسمی)", "fa": "شما (محترم)" },
+        { "de": "Sie", "fa": "شما (رسمی/محترم)" },
         { "de": "zusammen", "fa": "با هم" },
         { "de": "alle", "fa": "همه" }
       ]
@@ -349,9 +349,9 @@
         { "word": { "de": "wir machen", "fa": "ما انجام می‌دهیم" } },
         { "word": { "de": "ihr", "fa": "شما (غیررسمی)" } },
         { "word": { "de": "ihr macht", "fa": "شما انجام می‌دهید" } },
-        { "word": { "de": "sie (جمع)", "fa": "آن‌ها" } },
+        { "word": { "de": "sie", "fa": "آن‌ها (ضمیر جمع)" } },
         { "word": { "de": "sie machen", "fa": "آن‌ها انجام می‌دهند" } },
-        { "word": { "de": "Sie (رسمی)", "fa": "شما (محترم)" } },
+        { "word": { "de": "Sie", "fa": "شما (رسمی/محترم)" } },
         { "word": { "de": "zusammen", "fa": "با هم" } },
         { "word": { "de": "alle", "fa": "همه" } }
       ]
