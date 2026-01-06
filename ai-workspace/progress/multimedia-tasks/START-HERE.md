@@ -143,6 +143,18 @@ Videos: apps/web/static/videos/shared/
   - Context: Dialog scene - "Theo, wie alt ist dein Opa?" - discussing ages with larger numbers
   - Style: modern German setting, friendly conversation about family ages
 
+### Lesson 10: Telefonnummern
+
+**Images (2):**
+
+- [ ] `expressions/a1-m01-l10-s11-lisa-theo.jpg` - Lisa and Theo exchanging phone numbers
+  - Context: Dialog scene - "Theo, was ist deine Handynummer?" - asking for phone numbers
+  - Style: modern German setting, one person showing phone to another
+
+- [ ] `greetings/a1-m01-l10-s17-lisa-theo.jpg` - Lisa answering a phone call from Theo
+  - Context: Dialog scene - "Hallo?" - phone call conversation
+  - Style: split scene showing both people on phone, or one person on phone
+
 ---
 
 ## Progress Summary
@@ -158,8 +170,9 @@ Videos: apps/web/static/videos/shared/
 | A1 | 01 | 07 | 1 | 0 | Pending |
 | A1 | 01 | 08 | 1 | 0 | Pending |
 | A1 | 01 | 09 | 1 | 0 | Pending |
+| A1 | 01 | 10 | 2 | 0 | Pending |
 
-**Total:** 21 tasks (21 images, 0 videos)
+**Total:** 23 tasks (23 images, 0 videos)
 
 ---
 
@@ -216,3 +229,4 @@ Check the detailed task files:
 - `A1-M01-L07.json` - Lesson 07 tasks
 - `A1-M01-L08.json` - Lesson 08 tasks
 - `A1-M01-L09.json` - Lesson 09 tasks
+- `A1-M01-L10.json` - Lesson 10 tasks

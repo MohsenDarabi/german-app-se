@@ -74,6 +74,12 @@ export const A1_MODULES: ModuleStub[] = [
         title: "اعداد ۲۱ تا ۱۰۰ (Zahlen 21-100)",
         description: "یاد بگیرید اعداد ۲۱ تا ۱۰۰ را به آلمانی بشمارید.",
         path: "/learn/de-fa/A1/A1-M01-L09"
+      },
+      {
+        id: "A1-M01-L10",
+        title: "شماره تلفن (Telefonnummern)",
+        description: "یاد بگیرید چطور شماره تلفن بپرسید و بگویید.",
+        path: "/learn/de-fa/A1/A1-M01-L10"
       }
       // Add more lessons here as content JSON files are created
     ]
