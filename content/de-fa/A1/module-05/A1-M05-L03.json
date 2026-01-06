@@ -1,0 +1,347 @@
+{
+  "id": "A1-M05-L03",
+  "title": {
+    "de": "Wann? Wie?",
+    "fa": "کی؟ چطور؟"
+  },
+  "description": "یاد بگیرید سوالات درباره زمان و چگونگی بپرسید: Wann، Wie، Wie viel، Wie lange",
+  "level": "A1",
+  "module": 5,
+  "lessonNumber": 3,
+  "totalSteps": 26,
+  "estimatedMinutes": 15,
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "سوالات زمان و چگونگی",
+      "content": "این کلمات پرسشی برای زمان و چگونگی استفاده می‌شوند:\n\n• **Wann?** = کی؟ (زمان)\n• **Wie?** = چطور؟\n• **Wie viel?** = چقدر؟\n• **Wie lange?** = چه مدت؟\n• **Wie oft?** = چند وقت یکبار؟",
+      "examples": [
+        { "de": "Wann kommst du?", "fa": "کی می‌آیی؟" },
+        { "de": "Wie geht es dir?", "fa": "حالت چطوره؟" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": {
+        "de": "Wann",
+        "fa": "کی (زمان)"
+      },
+      "example": {
+        "text": {
+          "de": "Wann kommst du?",
+          "fa": "کی می‌آیی؟"
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": {
+        "de": "Wie",
+        "fa": "چطور"
+      },
+      "example": {
+        "text": {
+          "de": "Wie heißt du?",
+          "fa": "اسمت چیه؟"
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": {
+        "de": "Wie viel",
+        "fa": "چقدر"
+      },
+      "example": {
+        "text": {
+          "de": "Wie viel kostet das?",
+          "fa": "این چقدر است؟"
+        }
+      }
+    },
+    {
+      "type": "dialog",
+      "id": "s5",
+      "title": "مکالمه: قرار ملاقات",
+      "context": "لیزا و الکس قرار می‌گذارند",
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Wann hast du Zeit?", "fa": "کی وقت داری؟" } },
+        { "speaker": "Alex", "text": { "de": "Morgen Nachmittag.", "fa": "فردا بعدازظهر." } },
+        { "speaker": "Lisa", "text": { "de": "Wie lange?", "fa": "چه مدت؟" } },
+        { "speaker": "Alex", "text": { "de": "Zwei Stunden.", "fa": "دو ساعت." } },
+        { "speaker": "Lisa", "text": { "de": "Gut! Wie kommen wir dahin?", "fa": "خوب! چطور می‌ریم اونجا؟" } },
+        { "speaker": "Alex", "text": { "de": "Mit dem Bus.", "fa": "با اتوبوس." } }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "کلمه پرسشی درست",
+      "instruction": "کدام کلمه پرسشی مناسب است؟",
+      "questions": [
+        { "prompt": "___ kommst du? (زمان)", "left": "Wann", "right": "Wie", "correctSide": "left" },
+        { "prompt": "___ heißt du?", "left": "Wann", "right": "Wie", "correctSide": "right" },
+        { "prompt": "___ kostet das?", "left": "Wie viel", "right": "Wie lange", "correctSide": "left" },
+        { "prompt": "___ dauert das?", "left": "Wie viel", "right": "Wie lange", "correctSide": "right" },
+        { "prompt": "___ geht es dir?", "left": "Wann", "right": "Wie", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": {
+        "de": "Wie lange",
+        "fa": "چه مدت"
+      },
+      "example": {
+        "text": {
+          "de": "Wie lange lernst du Deutsch?",
+          "fa": "چه مدت آلمانی یاد می‌گیری؟"
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": {
+        "de": "Wie oft",
+        "fa": "چند وقت یکبار"
+      },
+      "example": {
+        "text": {
+          "de": "Wie oft gehst du ins Kino?",
+          "fa": "چند وقت یکبار سینما می‌ری؟"
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s8",
+      "title": "ترکیب‌های Wie",
+      "content": "**Wie** با کلمات دیگر ترکیب می‌شود:\n\n• **Wie viel?** = چقدر؟ (مقدار)\n• **Wie viele?** = چند تا؟ (تعداد)\n• **Wie lange?** = چه مدت؟\n• **Wie oft?** = چند وقت یکبار؟\n• **Wie alt?** = چند سالته؟\n• **Wie spät?** = ساعت چنده؟",
+      "examples": [
+        { "de": "Wie alt bist du?", "fa": "چند سالته؟" },
+        { "de": "Wie spät ist es?", "fa": "ساعت چنده؟" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s9",
+      "instruction": "کلمه پرسشی درست را انتخاب کنید",
+      "sentence": "{0} ist es?",
+      "options": ["Wie spät", "Wie lange", "Wann", "Wie viel"],
+      "correctAnswers": [0],
+      "feedback": {
+        "explanation": "**Wie spät** ist es? (ساعت چنده؟)"
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s10",
+      "instruction": "کلمه پرسشی درست را انتخاب کنید",
+      "sentence": "{0} bist du?",
+      "options": ["Wie alt", "Wie viel", "Wann", "Wie lange"],
+      "correctAnswers": [0],
+      "feedback": {
+        "explanation": "**Wie alt** bist du? (چند سالته؟)"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s11",
+      "word": {
+        "de": "morgen",
+        "fa": "فردا"
+      },
+      "example": {
+        "text": {
+          "de": "Wann kommst du? Morgen.",
+          "fa": "کی می‌آیی؟ فردا."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s12",
+      "word": {
+        "de": "die Stunde",
+        "fa": "ساعت (مدت)"
+      },
+      "example": {
+        "text": {
+          "de": "Zwei Stunden.",
+          "fa": "دو ساعت."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s13",
+      "word": {
+        "de": "kosten",
+        "fa": "قیمت داشتن"
+      },
+      "example": {
+        "text": {
+          "de": "Wie viel kostet das?",
+          "fa": "این چقدر است؟"
+        }
+      }
+    },
+    {
+      "type": "dialog",
+      "id": "s14",
+      "title": "مکالمه: خرید",
+      "context": "تام در فروشگاه خرید می‌کند",
+      "lines": [
+        { "speaker": "Tom", "text": { "de": "Wie viel kostet das Buch?", "fa": "این کتاب چند است؟" } },
+        { "speaker": "Eli", "text": { "de": "Zehn Euro.", "fa": "ده یورو." } },
+        { "speaker": "Tom", "text": { "de": "Und wie viele Bücher haben Sie?", "fa": "و چند کتاب دارید؟" } },
+        { "speaker": "Eli", "text": { "de": "Wir haben viele Bücher.", "fa": "کتاب زیاد داریم." } },
+        { "speaker": "Tom", "text": { "de": "Wie lange ist das Geschäft offen?", "fa": "مغازه تا چه ساعتی باز است؟" } },
+        { "speaker": "Eli", "text": { "de": "Bis acht Uhr.", "fa": "تا ساعت هشت." } }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "viel یا viele؟",
+      "instruction": "کدام درست است؟",
+      "questions": [
+        { "prompt": "Wie ___ kostet das?", "left": "viel", "right": "viele", "correctSide": "left" },
+        { "prompt": "Wie ___ Kinder hast du?", "left": "viel", "right": "viele", "correctSide": "right" },
+        { "prompt": "Wie ___ Zeit hast du?", "left": "viel", "right": "viele", "correctSide": "left" },
+        { "prompt": "Wie ___ Bücher liest du?", "left": "viel", "right": "viele", "correctSide": "right" },
+        { "prompt": "Wie ___ Geld brauchst du?", "left": "viel", "right": "viele", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s15",
+      "word": {
+        "de": "das Geld",
+        "fa": "پول"
+      },
+      "example": {
+        "text": {
+          "de": "Wie viel Geld hast du?",
+          "fa": "چقدر پول داری؟"
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s16",
+      "word": {
+        "de": "der Euro",
+        "fa": "یورو"
+      },
+      "example": {
+        "text": {
+          "de": "Das kostet zehn Euro.",
+          "fa": "این ده یورو است."
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s17",
+      "title": "viel یا viele؟",
+      "content": "**Wie viel** برای چیزهای غیرقابل شمارش:\n• Wie viel Geld? (چقدر پول؟)\n• Wie viel Zeit? (چقدر وقت؟)\n• Wie viel Wasser? (چقدر آب؟)\n\n**Wie viele** برای چیزهای قابل شمارش:\n• Wie viele Bücher? (چند کتاب؟)\n• Wie viele Kinder? (چند بچه؟)\n• Wie viele Stunden? (چند ساعت؟)",
+      "examples": [
+        { "de": "Wie viel kostet das?", "fa": "چقدر است؟ (قیمت)" },
+        { "de": "Wie viele Geschwister hast du?", "fa": "چند خواهر و برادر داری؟" }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "s18",
+      "instruction": "سوال را با جواب مناسب جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Wie spät ist es?" },
+        { "id": "i2", "text": "Wie lange dauert das?" },
+        { "id": "i3", "text": "Wie viel kostet das?" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "Zehn Uhr." },
+        { "id": "m2", "text": "Zwei Stunden." },
+        { "id": "m3", "text": "Fünf Euro." }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"]
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s19",
+      "question": "برای پرسیدن سن کدام درست است؟",
+      "options": ["Wie viel bist du?", "Wie alt bist du?", "Wann bist du?", "Wie lange bist du?"],
+      "correctAnswerIndex": 1,
+      "feedback": {
+        "correct": "آفرین! Wie alt bist du? = چند سالته؟",
+        "incorrect": "برای سن: Wie alt bist du? (چند سالته؟)"
+      }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g3",
+      "title": "مرور کلی",
+      "instruction": "کلمه پرسشی مناسب را انتخاب کنید",
+      "questions": [
+        { "prompt": "___ fährst du nach Berlin?", "left": "Wann", "right": "Wie", "correctSide": "left" },
+        { "prompt": "___ lernst du Deutsch?", "left": "Wie lange", "right": "Wie viel", "correctSide": "left" },
+        { "prompt": "___ geht es Ihnen?", "left": "Wann", "right": "Wie", "correctSide": "right" },
+        { "prompt": "___ Sprachen sprichst du?", "left": "Wie viel", "right": "Wie viele", "correctSide": "right" },
+        { "prompt": "___ gehst du schwimmen?", "left": "Wie oft", "right": "Wie lange", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "Wann", "fa": "کی (زمان)" },
+        { "de": "Wie", "fa": "چطور" },
+        { "de": "Wie viel", "fa": "چقدر" },
+        { "de": "Wie viele", "fa": "چند تا" },
+        { "de": "Wie lange", "fa": "چه مدت" },
+        { "de": "Wie oft", "fa": "چند وقت یکبار" },
+        { "de": "Wie alt", "fa": "چند سال" },
+        { "de": "Wie spät", "fa": "ساعت چند" },
+        { "de": "morgen", "fa": "فردا" },
+        { "de": "die Stunde", "fa": "ساعت (مدت)" },
+        { "de": "kosten", "fa": "قیمت داشتن" },
+        { "de": "das Geld", "fa": "پول" },
+        { "de": "der Euro", "fa": "یورو" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما سوالات زمان و چگونگی را یاد گرفتید:\n\n• **Wann?** = کی؟\n• **Wie?** = چطور؟\n• **Wie viel?** = چقدر؟ (غیرقابل شمارش)\n• **Wie viele?** = چند تا؟ (قابل شمارش)\n• **Wie lange?** = چه مدت؟\n• **Wie oft?** = چند وقت یکبار؟\n• **Wie alt?** = چند سال؟",
+      "xpEarned": 50,
+      "nextLessonId": "A1-M05-L04",
+      "vocabularyLearned": [
+        { "word": { "de": "Wann", "fa": "کی (زمان)" } },
+        { "word": { "de": "Wie", "fa": "چطور" } },
+        { "word": { "de": "Wie viel", "fa": "چقدر" } },
+        { "word": { "de": "Wie viele", "fa": "چند تا" } },
+        { "word": { "de": "Wie lange", "fa": "چه مدت" } },
+        { "word": { "de": "Wie oft", "fa": "چند وقت یکبار" } },
+        { "word": { "de": "morgen", "fa": "فردا" } },
+        { "word": { "de": "die Stunde", "fa": "ساعت (مدت)" } },
+        { "word": { "de": "kosten", "fa": "قیمت داشتن" } },
+        { "word": { "de": "das Geld", "fa": "پول" } },
+        { "word": { "de": "der Euro", "fa": "یورو" } }
+      ]
+    }
+  ]
+}

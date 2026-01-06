@@ -198,6 +198,12 @@ export const A1_MODULES: ModuleStub[] = [
         title: "کی؟ چی؟ کجا؟ (Wer? Was? Wo?)",
         description: "یاد بگیرید سوالات با کلمات پرسشی W بسازید: Wer، Was، Wo، Woher، Wohin",
         path: "/learn/de-fa/A1/A1-M05-L02"
+      },
+      {
+        id: "A1-M05-L03",
+        title: "کی؟ چطور؟ (Wann? Wie?)",
+        description: "یاد بگیرید سوالات درباره زمان و چگونگی بپرسید: Wann، Wie، Wie viel، Wie lange",
+        path: "/learn/de-fa/A1/A1-M05-L03"
       }
     ]
   }
