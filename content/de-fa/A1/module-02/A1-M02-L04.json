@@ -1,0 +1,386 @@
+{
+  "id": "A1-M02-L04",
+  "title": {
+    "de": "Besondere Verben",
+    "fa": "فعل‌های خاص"
+  },
+  "description": "یاد بگیرید فعل‌هایی که ریشه‌شان تغییر می‌کند: essen, lesen, schlafen, fahren",
+  "level": "A1",
+  "module": 2,
+  "lessonNumber": 4,
+  "totalSteps": 26,
+  "estimatedMinutes": 15,
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "فعل‌های با تغییر ریشه",
+      "content": "بعضی فعل‌های آلمانی در ضمیر **du** و **er/sie/es** ریشه‌شان تغییر می‌کند:\n\n| نوع تغییر | مثال |\n|---------|------|\n| e → i | essen → du **i**sst |\n| e → ie | lesen → du l**ie**st |\n| a → ä | fahren → du f**ä**hrst |\n\nدر ich و ضمایر جمع، ریشه تغییر نمی‌کند!",
+      "examples": [
+        { "de": "Ich esse, aber du isst.", "fa": "من می‌خورم، ولی تو می‌خوری." },
+        { "de": "Ich fahre, aber er fährt.", "fa": "من می‌روم، ولی او می‌رود." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": {
+        "de": "essen",
+        "fa": "خوردن"
+      },
+      "example": {
+        "text": {
+          "de": "Was isst du gern?",
+          "fa": "چه چیزی دوست داری بخوری؟"
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": {
+        "de": "ich esse",
+        "fa": "من می‌خورم"
+      },
+      "example": {
+        "text": {
+          "de": "Ich esse Brot.",
+          "fa": "من نان می‌خورم."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": {
+        "de": "du isst",
+        "fa": "تو می‌خوری"
+      },
+      "example": {
+        "text": {
+          "de": "Isst du Pizza?",
+          "fa": "پیتزا می‌خوری؟"
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": {
+        "de": "er isst",
+        "fa": "او می‌خورد"
+      },
+      "example": {
+        "text": {
+          "de": "Er isst einen Apfel.",
+          "fa": "او یک سیب می‌خورد."
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s6",
+      "title": "essen - صرف کامل",
+      "content": "| ضمیر | فعل | تغییر |\n|-----|-----|------|\n| ich | **esse** | بدون تغییر |\n| du | **isst** | e → i |\n| er/sie/es | **isst** | e → i |\n| wir | **essen** | بدون تغییر |\n| ihr | **esst** | بدون تغییر |\n| sie/Sie | **essen** | بدون تغییر |",
+      "examples": [
+        { "de": "Wir essen zusammen.", "fa": "ما با هم می‌خوریم." }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "essen - تمرین سریع",
+      "instruction": "فرم درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "ich ___", "left": "esse", "right": "isst", "correctSide": "left" },
+        { "prompt": "du ___", "left": "esse", "right": "isst", "correctSide": "right" },
+        { "prompt": "er ___", "left": "esst", "right": "isst", "correctSide": "right" },
+        { "prompt": "wir ___", "left": "essen", "right": "isst", "correctSide": "left" },
+        { "prompt": "ihr ___", "left": "esst", "right": "isst", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": {
+        "de": "lesen",
+        "fa": "خواندن"
+      },
+      "example": {
+        "text": {
+          "de": "Ich lese ein Buch.",
+          "fa": "من یک کتاب می‌خوانم."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": {
+        "de": "du liest",
+        "fa": "تو می‌خوانی"
+      },
+      "example": {
+        "text": {
+          "de": "Was liest du?",
+          "fa": "چی می‌خوانی؟"
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": {
+        "de": "er liest",
+        "fa": "او می‌خواند"
+      },
+      "example": {
+        "text": {
+          "de": "Er liest die Zeitung.",
+          "fa": "او روزنامه می‌خواند."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": {
+        "de": "schlafen",
+        "fa": "خوابیدن"
+      },
+      "example": {
+        "text": {
+          "de": "Ich schlafe acht Stunden.",
+          "fa": "من هشت ساعت می‌خوابم."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s11",
+      "word": {
+        "de": "du schläfst",
+        "fa": "تو می‌خوابی"
+      },
+      "example": {
+        "text": {
+          "de": "Schläfst du gut?",
+          "fa": "خوب می‌خوابی؟"
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s12",
+      "word": {
+        "de": "er schläft",
+        "fa": "او می‌خوابد"
+      },
+      "example": {
+        "text": {
+          "de": "Das Baby schläft.",
+          "fa": "نوزاد می‌خوابد."
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s13",
+      "title": "سه نوع تغییر ریشه",
+      "content": "| فعل | تغییر | du | er/sie |\n|-----|------|-----|--------|\n| essen | e→i | isst | isst |\n| lesen | e→ie | liest | liest |\n| schlafen | a→ä | schläfst | schläft |\n\n**نکته:** تغییر فقط در du و er/sie/es اتفاق می‌افتد!",
+      "examples": [
+        { "de": "Du liest, er liest.", "fa": "تو می‌خوانی، او می‌خواند." },
+        { "de": "Du schläfst, sie schläft.", "fa": "تو می‌خوابی، او می‌خوابد." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s14",
+      "word": {
+        "de": "fahren",
+        "fa": "رفتن (با وسیله نقلیه)"
+      },
+      "example": {
+        "text": {
+          "de": "Ich fahre mit dem Bus.",
+          "fa": "من با اتوبوس می‌روم."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s15",
+      "word": {
+        "de": "du fährst",
+        "fa": "تو می‌روی"
+      },
+      "example": {
+        "text": {
+          "de": "Fährst du Auto?",
+          "fa": "رانندگی می‌کنی؟"
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s16",
+      "word": {
+        "de": "er fährt",
+        "fa": "او می‌رود"
+      },
+      "example": {
+        "text": {
+          "de": "Er fährt nach Berlin.",
+          "fa": "او به برلین می‌رود."
+        }
+      }
+    },
+    {
+      "type": "matching",
+      "id": "s17",
+      "instruction": "فعل‌ها را با فرم du جفت کنید",
+      "items": [
+        { "id": "i1", "text": "essen" },
+        { "id": "i2", "text": "lesen" },
+        { "id": "i3", "text": "schlafen" },
+        { "id": "i4", "text": "fahren" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "du isst" },
+        { "id": "m2", "text": "du liest" },
+        { "id": "m3", "text": "du schläfst" },
+        { "id": "m4", "text": "du fährst" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"],
+        ["i4", "m4"]
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "s18",
+      "title": "مکالمه: صبحانه",
+      "context": "لیزا و تئو درباره صبحانه صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Guten Morgen! Was isst du zum Frühstück?", "fa": "صبح بخیر! صبحانه چی می‌خوری؟" } },
+        { "speaker": "Theo", "text": { "de": "Ich esse Brot mit Käse. Und du?", "fa": "نان با پنیر می‌خورم. تو چی؟" } },
+        { "speaker": "Lisa", "text": { "de": "Ich esse Müsli. Liest du morgens die Zeitung?", "fa": "من موسلی می‌خورم. صبح‌ها روزنامه می‌خوانی؟" } },
+        { "speaker": "Theo", "text": { "de": "Nein, ich lese am Abend. Morgens schlafe ich lange!", "fa": "نه، شب می‌خوانم. صبح‌ها زیاد می‌خوابم!" } },
+        { "speaker": "Lisa", "text": { "de": "Fährst du mit dem Auto zur Arbeit?", "fa": "با ماشین می‌روی سر کار؟" } },
+        { "speaker": "Theo", "text": { "de": "Nein, ich fahre mit dem Fahrrad.", "fa": "نه، با دوچرخه می‌روم." } }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s19",
+      "question": "کدام گزینه درست است؟ «Er ___ gern Pizza.»",
+      "options": ["esse", "esst", "isst", "essen"],
+      "correctAnswerIndex": 2,
+      "feedback": {
+        "correct": "آفرین! er isst (e→i در du و er/sie)",
+        "incorrect": "پاسخ صحیح: er isst (تغییر ریشه e→i)"
+      }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s20",
+      "question": "کدام گزینه درست است؟ «Du ___ ein Buch.»",
+      "options": ["lese", "lest", "liest", "lesen"],
+      "correctAnswerIndex": 2,
+      "feedback": {
+        "correct": "آفرین! du liest (e→ie در du و er/sie)",
+        "incorrect": "پاسخ صحیح: du liest (تغییر ریشه e→ie)"
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s21",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Das Kind {0} viel.",
+      "options": ["schlafe", "schläfst", "schläft", "schlafen"],
+      "correctAnswers": [2],
+      "feedback": {
+        "explanation": "Das Kind **schläft** viel. = بچه زیاد می‌خوابد. (a→ä)"
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s22",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Mein Vater {0} jeden Tag Auto.",
+      "options": ["fahre", "fährst", "fährt", "fahren"],
+      "correctAnswers": [2],
+      "feedback": {
+        "explanation": "Mein Vater **fährt** jeden Tag Auto. = پدرم هر روز رانندگی می‌کند. (a→ä)"
+      }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "تغییر ریشه - تمرین سریع",
+      "instruction": "فرم درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "er lesen → er ___", "left": "lest", "right": "liest", "correctSide": "right" },
+        { "prompt": "du schlafen → du ___", "left": "schläfst", "right": "schlafst", "correctSide": "left" },
+        { "prompt": "sie fahren → sie ___", "left": "fährt", "right": "fahrt", "correctSide": "left" },
+        { "prompt": "ich essen → ich ___", "left": "esse", "right": "isst", "correctSide": "left" },
+        { "prompt": "du lesen → du ___", "left": "lest", "right": "liest", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "true-false",
+      "id": "s23",
+      "instruction": "درست یا غلط؟",
+      "statement": "Wir esst Kuchen.",
+      "correctAnswer": false,
+      "vocabHint": {
+        "words": {
+          "Wir": "ما",
+          "esst": "می‌خورید (فرم ihr)",
+          "Kuchen": "کیک"
+        },
+        "translation": "ما کیک می‌خورید. (غلط!)"
+      },
+      "feedback": {
+        "explanation": "غلط! فرم درست: Wir **essen** Kuchen. (با wir تغییر ریشه نداریم)"
+      }
+    },
+    {
+      "type": "vocab-check",
+      "id": "g3",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "essen", "fa": "خوردن" },
+        { "de": "du isst", "fa": "تو می‌خوری" },
+        { "de": "lesen", "fa": "خواندن" },
+        { "de": "du liest", "fa": "تو می‌خوانی" },
+        { "de": "schlafen", "fa": "خوابیدن" },
+        { "de": "du schläfst", "fa": "تو می‌خوابی" },
+        { "de": "fahren", "fa": "رفتن (با وسیله)" },
+        { "de": "du fährst", "fa": "تو می‌روی" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما فعل‌های با تغییر ریشه را یاد گرفتید! این فعل‌ها در آلمانی بسیار پرکاربرد هستند.",
+      "xpEarned": 50,
+      "nextLessonId": "A1-M02-L05",
+      "vocabularyLearned": [
+        { "word": { "de": "essen", "fa": "خوردن" } },
+        { "word": { "de": "ich esse", "fa": "من می‌خورم" } },
+        { "word": { "de": "du isst", "fa": "تو می‌خوری" } },
+        { "word": { "de": "lesen", "fa": "خواندن" } },
+        { "word": { "de": "du liest", "fa": "تو می‌خوانی" } },
+        { "word": { "de": "schlafen", "fa": "خوابیدن" } },
+        { "word": { "de": "du schläfst", "fa": "تو می‌خوابی" } },
+        { "word": { "de": "fahren", "fa": "رفتن (با وسیله)" } },
+        { "word": { "de": "du fährst", "fa": "تو می‌روی" } }
+      ]
+    }
+  ]
+}

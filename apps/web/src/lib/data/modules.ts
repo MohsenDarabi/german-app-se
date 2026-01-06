@@ -105,6 +105,12 @@ export const A1_MODULES: ModuleStub[] = [
         title: "ما، شما، آن‌ها (Wir, ihr, sie)",
         description: "صرف فعل با ضمایر جمع: wir (ما)، ihr (شما)، sie (آن‌ها) و Sie (شما محترم).",
         path: "/learn/de-fa/A1/A1-M02-L03"
+      },
+      {
+        id: "A1-M02-L04",
+        title: "فعل‌های خاص (Besondere Verben)",
+        description: "یاد بگیرید فعل‌هایی که ریشه‌شان تغییر می‌کند: essen, lesen, schlafen, fahren",
+        path: "/learn/de-fa/A1/A1-M02-L04"
       }
     ]
   }
