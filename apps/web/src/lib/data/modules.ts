@@ -130,6 +130,12 @@ export const A1_MODULES: ModuleStub[] = [
         title: "نه / نمی (nicht)",
         description: "یاد بگیرید چطور جملات منفی بسازید با کلمه nicht",
         path: "/learn/de-fa/A1/A1-M03-L01"
+      },
+      {
+        id: "A1-M03-L02",
+        title: "هیچ / ندارم (kein/keine)",
+        description: "یاد بگیرید چطور اسم‌ها را منفی کنید با kein و keine",
+        path: "/learn/de-fa/A1/A1-M03-L02"
       }
     ]
   }
