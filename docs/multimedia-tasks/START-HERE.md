@@ -42,16 +42,16 @@ Each task looks like:
   "type": "image",
   "stepId": "s14",
   "priority": "high",
-  "description": "Lisa & Theo - Dialog scene",
-  "context": "Dialog with 5 lines: \"Hallo Theo!\"",
+  "description": "Eli & Tom - Dialog scene",
+  "context": "Dialog with 5 lines: \"Hallo Tom!\"",
   "specs": {
     "format": "jpg",
     "dimensions": "800x600",
     "style": "friendly, modern German setting",
-    "subjects": "Lisa, Theo"
+    "subjects": "Eli, Tom"
   },
   "category": "greetings",
-  "outputPath": "images/shared/greetings/lisa-theo-hello.jpg",
+  "outputPath": "images/shared/greetings/eli-tom-hello.jpg",
   "status": "pending"
 }
 ```
@@ -142,16 +142,18 @@ images/shared/
 
 ---
 
-## Primary Characters
+## Characters (with visual definitions)
 
 Use these characters consistently:
 
-| Character | Role | Description |
-|-----------|------|-------------|
-| **Lisa** | German native | Young German woman, friendly |
-| **Theo** | Persian learner | Young Persian man learning German |
+| Character | Age | Role | Description |
+|-----------|-----|------|-------------|
+| **Eli** | 43 | Primary | German teacher, calm and supportive |
+| **Tom** | 35-37 | Primary | Language instructor, reliable guide |
+| **Lisa** | 18-20 | Secondary | Young companion, playful and energetic |
+| **Alex** | 21-22 | Secondary | German student, adaptable |
 
-Secondary characters if needed: Max, Lena, Felix, Sophie
+**Service roles** (no character visuals needed): Kellner, Verkäufer, Arzt
 
 ---
 

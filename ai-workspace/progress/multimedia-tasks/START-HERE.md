@@ -107,7 +107,7 @@ Videos: apps/web/static/videos/shared/
 
 **Images (1):**
 
-- [ ] `greetings/a1-m01-l05-s12-lisa-theo.jpg` - Lisa and Theo meeting for the first time
+- [ ] `greetings/a1-m01-l05-s12-eli-tom.jpg` - Eli and Tom meeting for the first time
   - Context: Dialog scene - "Hallo! Wie heißt du?" - first introductions
   - Style: friendly, modern German cafe or park setting
 
@@ -115,7 +115,7 @@ Videos: apps/web/static/videos/shared/
 
 **Images (1):**
 
-- [ ] `greetings/a1-m01-l06-s13-lisa-theo.jpg` - Lisa and Theo having a longer conversation
+- [ ] `greetings/a1-m01-l06-s13-eli-tom.jpg` - Eli and Tom having a longer conversation
   - Context: Dialog scene - "Hallo! Ich heiße Lisa. Und du?" - discussing where they live
   - Style: friendly, modern German setting, 10-line conversation
 
@@ -123,7 +123,7 @@ Videos: apps/web/static/videos/shared/
 
 **Images (1):**
 
-- [ ] `expressions/a1-m01-l07-s17-lisa-kellner-theo.jpg` - Lisa, Theo, and a waiter at a cafe
+- [ ] `expressions/a1-m01-l07-s17-lisa-kellner-theo.jpg` - Eli, Tom, and a waiter at a cafe
   - Context: Dialog scene - "Zwei Kaffee, bitte." - ordering with numbers
   - Style: modern German cafe, ordering food/drinks with numbers
 
@@ -139,19 +139,19 @@ Videos: apps/web/static/videos/shared/
 
 **Images (1):**
 
-- [ ] `scenes/a1-m01-l09-s17-lisa-theo.jpg` - Lisa and Theo talking about grandparents' ages
-  - Context: Dialog scene - "Theo, wie alt ist dein Opa?" - discussing ages with larger numbers
+- [ ] `scenes/a1-m01-l09-s17-eli-tom.jpg` - Eli and Tom talking about grandparents' ages
+  - Context: Dialog scene - "Tom, wie alt ist dein Opa?" - discussing ages with larger numbers
   - Style: modern German setting, friendly conversation about family ages
 
 ### Lesson 10: Telefonnummern
 
 **Images (2):**
 
-- [ ] `expressions/a1-m01-l10-s11-lisa-theo.jpg` - Lisa and Theo exchanging phone numbers
-  - Context: Dialog scene - "Theo, was ist deine Handynummer?" - asking for phone numbers
+- [ ] `expressions/a1-m01-l10-s11-eli-tom.jpg` - Eli and Tom exchanging phone numbers
+  - Context: Dialog scene - "Tom, was ist deine Handynummer?" - asking for phone numbers
   - Style: modern German setting, one person showing phone to another
 
-- [ ] `greetings/a1-m01-l10-s17-lisa-theo.jpg` - Lisa answering a phone call from Theo
+- [ ] `greetings/a1-m01-l10-s17-eli-tom.jpg` - Lisa answering a phone call from Theo
   - Context: Dialog scene - "Hallo?" - phone call conversation
   - Style: split scene showing both people on phone, or one person on phone
 
@@ -163,7 +163,7 @@ Videos: apps/web/static/videos/shared/
 
 **Images (1):**
 
-- [ ] `scenes/a1-m02-l01-s15-lisa-theo.jpg` - Lisa and Theo chatting about feelings and availability
+- [ ] `scenes/a1-m02-l01-s15-eli-tom.jpg` - Eli and Tom chatting about feelings and availability
   - Context: Dialog scene - "Hallo Theo! Wie geht's?" - discussing being happy, hungry, having time
   - Style: friendly conversation, modern German cafe or park, casual setting
 
@@ -171,7 +171,7 @@ Videos: apps/web/static/videos/shared/
 
 **Images (1):**
 
-- [ ] `scenes/a1-m02-l02-s12-lisa-theo.jpg` - Lisa and Theo discussing daily activities
+- [ ] `scenes/a1-m02-l02-s12-eli-tom.jpg` - Eli and Tom discussing daily activities
   - Context: Dialog scene - "Was machst du?" - discussing activities (learning German, playing guitar, working)
   - Style: modern setting, Lisa could be at a cafe where she works or holding a guitar
 
