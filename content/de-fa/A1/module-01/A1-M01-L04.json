@@ -72,8 +72,8 @@
     {
       "type": "grammar-tip",
       "id": "s5",
-      "title": "صرف فعل برای ich و du",
-      "content": "در آلمانی، فعل‌ها بر اساس فاعل تغییر می‌کنند. این کار با افزودن پسوند به ریشه فعل انجام می‌شود:\n\n**ich (من) → پسوند -e**\n🗣️ Ich sprech**e** = من صحبت می‌کنم\n📚 Ich lern**e** = من یاد می‌گیرم\n🏠 Ich wohn**e** = من زندگی می‌کنم\n\n**du (تو) → پسوند -st**\n🗣️ Du sprich**st** = تو صحبت می‌کنی\n📚 Du lern**st** = تو یاد می‌گیری\n🏠 Du wohn**st** = تو زندگی می‌کنی\n\n🇮🇷 **نکته برای فارسی‌زبانان:**\nدر فارسی فعل با پیشوند «می-» صرف می‌شود، اما در آلمانی از پسوند استفاده می‌شود!",
+      "title": "الگوی فعل با ich و du",
+      "content": "در آلمانی فعل‌ها با ich و du فرق دارند. این الگو را یاد بگیرید:\n\n**با ich (من):**\n🗣️ Ich sprech**e** = من صحبت می‌کنم\n📚 Ich lern**e** = من یاد می‌گیرم\n🏠 Ich wohn**e** = من زندگی می‌کنم\n\n**با du (تو):**\n🗣️ Du sprich**st** = تو صحبت می‌کنی\n📚 Du lern**st** = تو یاد می‌گیری\n🏠 Du wohn**st** = تو زندگی می‌کنی\n\n✨ **الگو:** ich → فعل با **-e** | du → فعل با **-st**",
       "examples": [
         { "de": "Ich spreche Deutsch.", "fa": "من آلمانی صحبت می‌کنم." },
         { "de": "Du sprichst Englisch.", "fa": "تو انگلیسی صحبت می‌کنی." },
@@ -108,11 +108,11 @@
     {
       "type": "multiple-choice",
       "id": "s6",
-      "question": "کدام پسوند برای فعل با «ich» درست است؟",
+      "question": "فعل با «ich» چگونه تمام می‌شود؟",
       "options": ["-st", "-e", "-en", "-t"],
       "correctAnswerIndex": 1,
       "feedback": {
-        "explanation": "فعل‌ها با «ich» پسوند «-e» می‌گیرند: ich spreche، ich lerne، ich wohne."
+        "explanation": "با «ich» فعل به **-e** ختم می‌شود: ich spreche، ich lerne، ich wohne."
       }
     },
     {
@@ -123,7 +123,7 @@
       "options": ["spreche", "sprichst", "sprechen", "spricht"],
       "correctAnswers": [0],
       "feedback": {
-        "explanation": "با «ich» از «spreche» استفاده می‌کنیم. پسوند «-e» برای ich است."
+        "explanation": "با «ich» می‌گوییم «spreche». الگو: ich → فعل با -e"
       }
     },
     {
@@ -134,7 +134,7 @@
       "options": ["Sprichst", "Spreche", "Sprechen", "Spriche"],
       "correctAnswers": [0],
       "feedback": {
-        "explanation": "با «du» از «Sprichst» استفاده می‌کنیم. پسوند «-st» برای du است."
+        "explanation": "با «du» می‌گوییم «Sprichst». الگو: du → فعل با -st"
       }
     },
     {
@@ -199,10 +199,10 @@
       "type": "true-false",
       "id": "s12",
       "instruction": "درست یا غلط؟",
-      "statement": "فعل با «du» پسوند «-st» می‌گیرد: Du sprichst Deutsch.",
+      "statement": "با «du» فعل به «-st» ختم می‌شود: Du sprichst Deutsch.",
       "correctAnswer": true,
       "feedback": {
-        "explanation": "درست است! فعل‌ها با «du» پسوند «-st» می‌گیرند: du sprichst، du lernst، du wohnst."
+        "explanation": "درست است! با «du» فعل به -st ختم می‌شود: du sprichst، du lernst، du wohnst."
       }
     },
     {
@@ -232,7 +232,7 @@
       "options": ["Ich sprichst Deutsch.", "Du spreche Deutsch.", "Ich spreche Deutsch.", "Du sprich Deutsch."],
       "correctAnswerIndex": 2,
       "feedback": {
-        "explanation": "«Ich spreche» درست است. با «ich» فعل پسوند «-e» می‌گیرد."
+        "explanation": "«Ich spreche» درست است. با «ich» فعل به -e ختم می‌شود."
       }
     },
     {
@@ -243,7 +243,7 @@
       "options": ["lerne", "lernst"],
       "correctAnswers": [0, 1],
       "feedback": {
-        "explanation": "با «ich» از «lerne» (پسوند -e) و با «du» از «lernst» (پسوند -st) استفاده می‌کنیم."
+        "explanation": "با «ich» می‌گوییم «lerne» و با «du» می‌گوییم «lernst»."
       }
     },
     {
