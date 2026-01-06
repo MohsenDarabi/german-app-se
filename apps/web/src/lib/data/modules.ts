@@ -99,6 +99,12 @@ export const A1_MODULES: ModuleStub[] = [
         title: "فعل‌های باقاعده (Regelmäßige Verben)",
         description: "یاد بگیرید چطور فعل‌های باقاعده آلمانی را صرف کنید.",
         path: "/learn/de-fa/A1/A1-M02-L02"
+      },
+      {
+        id: "A1-M02-L03",
+        title: "ما، شما، آن‌ها (Wir, ihr, sie)",
+        description: "صرف فعل با ضمایر جمع: wir (ما)، ihr (شما)، sie (آن‌ها) و Sie (شما محترم).",
+        path: "/learn/de-fa/A1/A1-M02-L03"
       }
     ]
   }

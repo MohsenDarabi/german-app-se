@@ -1,0 +1,360 @@
+{
+  "id": "A1-M02-L03",
+  "title": {
+    "de": "Wir, ihr, sie",
+    "fa": "ما، شما، آن‌ها"
+  },
+  "description": "صرف فعل با ضمایر جمع: wir (ما)، ihr (شما)، sie (آن‌ها) و Sie (شما محترم).",
+  "level": "A1",
+  "module": 2,
+  "lessonNumber": 3,
+  "totalSteps": 25,
+  "estimatedMinutes": 15,
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "ضمایر جمع در آلمانی",
+      "content": "در درس‌های قبل با ضمایر مفرد آشنا شدید:\n\n| مفرد | معنی |\n|-----|-----|\n| ich | من |\n| du | تو |\n| er/sie/es | او |\n\nحالا ضمایر **جمع** را یاد می‌گیریم!",
+      "examples": [
+        { "de": "Wir lernen Deutsch.", "fa": "ما آلمانی یاد می‌گیریم." },
+        { "de": "Ihr spielt Fußball.", "fa": "شما فوتبال بازی می‌کنید." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": {
+        "de": "wir",
+        "fa": "ما"
+      },
+      "example": {
+        "text": {
+          "de": "Wir sind Freunde.",
+          "fa": "ما دوست هستیم."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": {
+        "de": "wir machen",
+        "fa": "ما انجام می‌دهیم"
+      },
+      "example": {
+        "text": {
+          "de": "Wir machen Hausaufgaben.",
+          "fa": "ما تکالیف انجام می‌دهیم."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": {
+        "de": "ihr",
+        "fa": "شما (غیررسمی جمع)"
+      },
+      "example": {
+        "text": {
+          "de": "Ihr seid toll!",
+          "fa": "شما عالی هستید!"
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": {
+        "de": "ihr macht",
+        "fa": "شما انجام می‌دهید"
+      },
+      "example": {
+        "text": {
+          "de": "Ihr macht das gut!",
+          "fa": "شما این کار را خوب انجام می‌دهید!"
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": {
+        "de": "sie (جمع)",
+        "fa": "آن‌ها"
+      },
+      "example": {
+        "text": {
+          "de": "Sie spielen Tennis.",
+          "fa": "آن‌ها تنیس بازی می‌کنند."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": {
+        "de": "sie machen",
+        "fa": "آن‌ها انجام می‌دهند"
+      },
+      "example": {
+        "text": {
+          "de": "Sie machen Sport.",
+          "fa": "آن‌ها ورزش می‌کنند."
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s8",
+      "title": "پسوندهای جمع",
+      "content": "| ضمیر | پسوند | مثال (machen) |\n|-----|-----|-----|\n| wir | **-en** | mach**en** |\n| ihr | **-t** | mach**t** |\n| sie (آن‌ها) | **-en** | mach**en** |\n\n**نکته:** wir و sie (جمع) پسوند یکسان دارند: **-en**",
+      "examples": [
+        { "de": "Wir lernen.", "fa": "ما یاد می‌گیریم." },
+        { "de": "Ihr lernt.", "fa": "شما یاد می‌گیرید." },
+        { "de": "Sie lernen.", "fa": "آن‌ها یاد می‌گیرند." }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "machen - تمرین جمع",
+      "instruction": "فرم درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "wir ___", "left": "machen", "right": "macht", "correctSide": "left" },
+        { "prompt": "ihr ___", "left": "machen", "right": "macht", "correctSide": "right" },
+        { "prompt": "sie (آن‌ها) ___", "left": "machen", "right": "macht", "correctSide": "left" },
+        { "prompt": "___ lernen Deutsch.", "left": "Wir", "right": "Ihr", "correctSide": "left" },
+        { "prompt": "___ spielt gut!", "left": "Wir", "right": "Ihr", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": {
+        "de": "Sie (رسمی)",
+        "fa": "شما (محترمانه)"
+      },
+      "example": {
+        "text": {
+          "de": "Sprechen Sie Deutsch?",
+          "fa": "آیا شما آلمانی صحبت می‌کنید؟"
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s10",
+      "title": "Sie رسمی و sie جمع",
+      "content": "در آلمانی دو نوع «sie» داریم:\n\n| نوشتار | معنی | استفاده |\n|-----|-----|-----|\n| **S**ie | شما (محترم) | با غریبه‌ها، بزرگ‌ترها |\n| **s**ie | آن‌ها | برای گروه‌ها |\n\n**نکته:** هر دو پسوند **-en** می‌گیرند!\n\nدر نوشتار، Sie رسمی همیشه با **S** بزرگ نوشته می‌شود.",
+      "examples": [
+        { "de": "Sie arbeiten hier? (رسمی)", "fa": "شما اینجا کار می‌کنید؟" },
+        { "de": "sie arbeiten dort. (جمع)", "fa": "آن‌ها آنجا کار می‌کنند." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s11",
+      "word": {
+        "de": "zusammen",
+        "fa": "با هم"
+      },
+      "example": {
+        "text": {
+          "de": "Wir lernen zusammen.",
+          "fa": "ما با هم یاد می‌گیریم."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s12",
+      "word": {
+        "de": "alle",
+        "fa": "همه"
+      },
+      "example": {
+        "text": {
+          "de": "Alle spielen Fußball.",
+          "fa": "همه فوتبال بازی می‌کنند."
+        }
+      }
+    },
+    {
+      "type": "matching",
+      "id": "s13",
+      "instruction": "ضمیر را با فعل جفت کنید",
+      "items": [
+        { "id": "i1", "text": "wir" },
+        { "id": "i2", "text": "ihr" },
+        { "id": "i3", "text": "sie (آن‌ها)" },
+        { "id": "i4", "text": "Sie (رسمی)" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "spielen (ما)" },
+        { "id": "m2", "text": "spielt" },
+        { "id": "m3", "text": "spielen (آن‌ها)" },
+        { "id": "m4", "text": "spielen (شما)" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"],
+        ["i4", "m4"]
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "s14",
+      "title": "مکالمه: برنامه گروهی",
+      "context": "لیزا و تئو با دوستانشان صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Hallo zusammen! Was macht ihr heute?", "fa": "سلام به همه! امروز چه کار می‌کنید؟" } },
+        { "speaker": "Max", "text": { "de": "Wir spielen Fußball. Kommst du mit?", "fa": "ما فوتبال بازی می‌کنیم. میای با ما؟" } },
+        { "speaker": "Lisa", "text": { "de": "Ja, gerne! Spielen Anna und Tom auch?", "fa": "آره، با کمال میل! آنا و تام هم بازی می‌کنند؟" } },
+        { "speaker": "Max", "text": { "de": "Ja, sie spielen auch.", "fa": "آره، آن‌ها هم بازی می‌کنند." } },
+        { "speaker": "Theo", "text": { "de": "Super! Wir spielen alle zusammen!", "fa": "عالی! همه با هم بازی می‌کنیم!" } }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s15",
+      "question": "کدام گزینه درست است؟ «Wir ___ Deutsch.»",
+      "options": ["lerne", "lernst", "lernt", "lernen"],
+      "correctAnswerIndex": 3,
+      "feedback": {
+        "correct": "آفرین! wir lernen = ما یاد می‌گیریم",
+        "incorrect": "پاسخ صحیح: wir lernen (ما یاد می‌گیریم)"
+      }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s16",
+      "question": "کدام گزینه درست است؟ «Ihr ___ sehr gut!»",
+      "options": ["spielen", "spielt", "spiele", "spielst"],
+      "correctAnswerIndex": 1,
+      "feedback": {
+        "correct": "آفرین! ihr spielt = شما بازی می‌کنید",
+        "incorrect": "پاسخ صحیح: ihr spielt (شما بازی می‌کنید)"
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s17",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Sie {0} im Büro. (آن‌ها)",
+      "options": ["arbeite", "arbeitet", "arbeiten", "arbeitest"],
+      "correctAnswers": [2],
+      "feedback": {
+        "explanation": "Sie **arbeiten** im Büro. = آن‌ها در دفتر کار می‌کنند."
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s18",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "{0} Sie Deutsch? (رسمی)",
+      "options": ["Spreche", "Sprichst", "Sprecht", "Sprechen"],
+      "correctAnswers": [3],
+      "feedback": {
+        "explanation": "**Sprechen** Sie Deutsch? = آیا شما آلمانی صحبت می‌کنید؟"
+      }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "lernen - همه ضمایر",
+      "instruction": "فرم درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "ich ___", "left": "lerne", "right": "lernen", "correctSide": "left" },
+        { "prompt": "wir ___", "left": "lernt", "right": "lernen", "correctSide": "right" },
+        { "prompt": "du ___", "left": "lernst", "right": "lernt", "correctSide": "left" },
+        { "prompt": "ihr ___", "left": "lernt", "right": "lernen", "correctSide": "left" },
+        { "prompt": "sie (آن‌ها) ___", "left": "lernt", "right": "lernen", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s19",
+      "title": "خلاصه: همه پسوندها",
+      "content": "| ضمیر | پسوند | مثال |\n|-----|-----|-----|\n| ich | **-e** | lerne |\n| du | **-st** | lernst |\n| er/sie/es | **-t** | lernt |\n| wir | **-en** | lernen |\n| ihr | **-t** | lernt |\n| sie/Sie | **-en** | lernen |\n\n**یادتان باشد:** er/sie/es و ihr هر دو **-t** می‌گیرند!",
+      "examples": [
+        { "de": "Ich lerne, du lernst, er lernt.", "fa": "من یاد می‌گیرم، تو یاد می‌گیری، او یاد می‌گیرد." },
+        { "de": "Wir lernen, ihr lernt, sie lernen.", "fa": "ما یاد می‌گیریم، شما یاد می‌گیرید، آن‌ها یاد می‌گیرند." }
+      ]
+    },
+    {
+      "type": "true-false",
+      "id": "s20",
+      "instruction": "درست یا غلط؟",
+      "statement": "Wir spielen zusammen.",
+      "correctAnswer": true,
+      "vocabHint": {
+        "words": {
+          "Wir": "ما",
+          "spielen": "بازی می‌کنیم",
+          "zusammen": "با هم"
+        },
+        "translation": "ما با هم بازی می‌کنیم."
+      },
+      "feedback": {
+        "explanation": "درست است! wir spielen = ما بازی می‌کنیم"
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "s21",
+      "instruction": "درست یا غلط؟",
+      "statement": "Ihr lernen Deutsch.",
+      "correctAnswer": false,
+      "vocabHint": {
+        "words": {
+          "Ihr": "شما",
+          "lernen": "یاد می‌گیریم (فرم wir/sie)",
+          "Deutsch": "آلمانی"
+        },
+        "translation": "شما آلمانی یاد می‌گیریم. (غلط!)"
+      },
+      "feedback": {
+        "explanation": "غلط! فرم درست: Ihr **lernt** Deutsch. (با ihr از پسوند -t استفاده می‌کنیم)"
+      }
+    },
+    {
+      "type": "vocab-check",
+      "id": "g3",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "wir", "fa": "ما" },
+        { "de": "wir machen", "fa": "ما انجام می‌دهیم" },
+        { "de": "ihr", "fa": "شما (غیررسمی)" },
+        { "de": "ihr macht", "fa": "شما انجام می‌دهید" },
+        { "de": "sie (جمع)", "fa": "آن‌ها" },
+        { "de": "sie machen", "fa": "آن‌ها انجام می‌دهند" },
+        { "de": "Sie (رسمی)", "fa": "شما (محترم)" },
+        { "de": "zusammen", "fa": "با هم" },
+        { "de": "alle", "fa": "همه" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما حالا همه ضمایر و صرف فعل را یاد گرفتید! می‌توانید بگویید «ما»، «شما» و «آن‌ها» چه کار می‌کنند.",
+      "xpEarned": 50,
+      "nextLessonId": "A1-M02-L04",
+      "vocabularyLearned": [
+        { "word": { "de": "wir", "fa": "ما" } },
+        { "word": { "de": "wir machen", "fa": "ما انجام می‌دهیم" } },
+        { "word": { "de": "ihr", "fa": "شما (غیررسمی)" } },
+        { "word": { "de": "ihr macht", "fa": "شما انجام می‌دهید" } },
+        { "word": { "de": "sie (جمع)", "fa": "آن‌ها" } },
+        { "word": { "de": "sie machen", "fa": "آن‌ها انجام می‌دهند" } },
+        { "word": { "de": "Sie (رسمی)", "fa": "شما (محترم)" } },
+        { "word": { "de": "zusammen", "fa": "با هم" } },
+        { "word": { "de": "alle", "fa": "همه" } }
+      ]
+    }
+  ]
+}
