@@ -17,7 +17,7 @@
       "title": "دو فعل بسیار مهم",
       "content": "در این درس دو فعل اساسی آلمانی را یاد می‌گیریم:\n\n**sein** = بودن (مثل «هستم»)\n**haben** = داشتن (مثل «دارم»)\n\nاین دو فعل در هر زبانی مهم‌ترین فعل‌ها هستند!",
       "examples": [
-        { "de": "Ich bin Lisa.", "fa": "من لیزا هستم." },
+        { "de": "Ich bin Eli.", "fa": "من الی هستم." },
         { "de": "Ich habe Zeit.", "fa": "من وقت دارم." }
       ]
     },
@@ -107,7 +107,7 @@
       "title": "sein - تمرین سریع",
       "instruction": "ضمیر درست را انتخاب کنید",
       "questions": [
-        { "prompt": "___ bin Lisa.", "left": "Ich", "right": "Du", "correctSide": "left" },
+        { "prompt": "___ bin Eli.", "left": "Ich", "right": "Du", "correctSide": "left" },
         { "prompt": "___ bist nett.", "left": "Ich", "right": "Du", "correctSide": "right" },
         { "prompt": "Er ___ mein Freund.", "left": "bin", "right": "ist", "correctSide": "right" },
         { "prompt": "Sie ___ aus Berlin.", "left": "ist", "right": "bist", "correctSide": "left" },
@@ -221,13 +221,13 @@
       "type": "dialog",
       "id": "s15",
       "title": "مکالمه: دوستان جدید",
-      "context": "لیزا و تئو درباره خودشان صحبت می‌کنند",
+      "context": "الی و تئو درباره خودشان صحبت می‌کنند",
       "lines": [
-        { "speaker": "Lisa", "text": { "de": "Hallo Theo! Wie geht's?", "fa": "سلام تئو! حالت چطوره؟" } },
+        { "speaker": "Eli", "text": { "de": "Hallo Theo! Wie geht's?", "fa": "سلام تئو! حالت چطوره؟" } },
         { "speaker": "Theo", "text": { "de": "Gut, danke! Ich bin heute sehr glücklich.", "fa": "خوبم، ممنون! من امروز خیلی خوشحالم." } },
-        { "speaker": "Lisa", "text": { "de": "Das ist schön! Hast du Zeit?", "fa": "چه خوب! وقت داری؟" } },
+        { "speaker": "Eli", "text": { "de": "Das ist schön! Hast du Zeit?", "fa": "چه خوب! وقت داری؟" } },
         { "speaker": "Theo", "text": { "de": "Ja, ich habe Zeit. Und du?", "fa": "آره، وقت دارم. تو چی؟" } },
-        { "speaker": "Lisa", "text": { "de": "Ich habe auch Zeit. Bist du hungrig?", "fa": "من هم وقت دارم. گرسنه‌ای؟" } },
+        { "speaker": "Eli", "text": { "de": "Ich habe auch Zeit. Bist du hungrig?", "fa": "من هم وقت دارم. گرسنه‌ای؟" } },
         { "speaker": "Theo", "text": { "de": "Ja, ich bin sehr hungrig!", "fa": "آره، خیلی گرسنه‌ام!" } }
       ]
     },

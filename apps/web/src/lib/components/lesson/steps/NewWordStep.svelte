@@ -6,11 +6,13 @@
   import { playGerman } from "$lib/utils/audio";
   import BiDiText from "$lib/components/ui/BiDiText.svelte";
   import AudioButton from "$lib/components/ui/AudioButton.svelte";
+  import { resolveMedia } from "$lib/utils/asset-resolver";
 
   export let step: NewWordStep;
   export let lessonId: string = '';
 
   let isSaved = false;
+  let imageSrc: string | null = null;
 
   // Check if word is already in DB
   onMount(async () => {
@@ -22,6 +24,8 @@
        window.speechSynthesis.getVoices();
     }
   });
+
+  $: imageSrc = resolveMedia(step.imageId ?? step.image);
 
   async function toggleSave() {
     if (isSaved) {
@@ -45,8 +49,8 @@
 <div class="card-container">
   <div class="image-area">
     <!-- Placeholder for image -->
-    {#if step.image}
-      <img src={step.image} alt={step.word.de} class="vocab-image" />
+    {#if imageSrc}
+      <img src={imageSrc} alt={step.word.de} class="vocab-image" />
     {:else}
       <div class="image-placeholder">
         <span>🖼️</span>

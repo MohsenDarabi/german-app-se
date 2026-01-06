@@ -170,6 +170,34 @@
       "createdAt": "2025-12-26",
       "status": "pending"
     },
+    "img-greeting-wave": {
+      "id": "img-greeting-wave",
+      "type": "image",
+      "category": "greetings",
+      "path": "/images/shared/greetings/img-greeting-wave.png",
+      "description": "Friendly greeting image. Simple, welcoming visual without any text.",
+      "tags": [
+        "greetings",
+        "A1",
+        "new-word"
+      ],
+      "specs": {
+        "dimensions": "unknown",
+        "format": "png",
+        "style": "friendly, welcoming"
+      },
+      "usedIn": [
+        {
+          "lessonId": "A1-1-M01-L01",
+          "stepId": "s1",
+          "taskId": "img-greeting-wave",
+          "context": "Vocabulary: Greeting (Hello/Hi)"
+        }
+      ],
+      "originalTaskFile": "A1-M01-L01.json",
+      "createdAt": "2025-01-06",
+      "status": "pending"
+    },
     "vid-two-business-professionals": {
       "id": "vid-two-business-professionals",
       "type": "video",
@@ -5812,6 +5840,7 @@
     "greetings": [
       "img-person-waving-hand",
       "img-two-friends-young",
+      "img-greeting-wave",
       "vid-two-friends-meeting"
     ],
     "transport": [
