@@ -32,6 +32,8 @@
 
   $: isVocabList = hasVocabPairs(step.content);
   $: parsedContent = parseMarkdown(step.content);
+  // Hide "مثال‌ها" header when content instructs to click examples
+  $: isPronunciationGuide = step.content.includes('کلیک کنید');
 </script>
 
 <div class="grammar-card" dir="rtl">
@@ -47,20 +49,20 @@
   {/if}
 
   {#if step.examples && step.examples.length > 0}
-    <div class="examples-section">
-      <h3 class="examples-title">مثال‌ها:</h3>
+    <div class="examples-section" class:pronunciation-guide={isPronunciationGuide}>
+      {#if !isPronunciationGuide}
+        <h3 class="examples-title">مثال‌ها:</h3>
+      {/if}
       {#each step.examples as example, idx}
-        <div class="example-item">
-          <div class="example-row">
-            <p class="example-de" dir="ltr">{example.de}</p>
-            <AudioButton
-              text={example.de}
-              {lessonId}
-              audioId="{step.id}-example{idx}"
-              size="sm"
-            />
-          </div>
-          <p class="example-fa"><BiDiText text={example.fa} /></p>
+        <div class="example-item" class:inline-example={isPronunciationGuide}>
+          <AudioButton
+            text={example.de}
+            {lessonId}
+            audioId="{step.id}-example{idx}"
+            size="sm"
+          />
+          <span class="example-de" dir="ltr">{example.de}</span>
+          <span class="example-fa"><BiDiText text={example.fa} /></span>
         </div>
       {/each}
     </div>
@@ -127,20 +129,30 @@
     margin-bottom: 0.75rem;
     padding-left: 1rem;
   }
-  .example-row {
+  .example-item.inline-example {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    background: rgba(255,255,255,0.5);
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
   }
   .example-de {
-    font-size: 0.95rem;
+    font-size: 1rem;
+    font-weight: 600;
     color: #78350f;
-    margin-bottom: 0.25rem;
-    margin: 0;
+    min-width: 3rem;
   }
   .example-fa {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     color: #92400e;
-    font-style: italic;
+  }
+  .inline-example .example-fa {
+    font-style: normal;
+    margin-right: auto;
+  }
+  .pronunciation-guide {
+    margin-top: 0.75rem;
   }
 </style>
