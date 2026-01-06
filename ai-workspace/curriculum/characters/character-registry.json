@@ -1,59 +1,90 @@
 {
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Character registry for German Learning App content. Minimizes cognitive load while enabling realistic scenarios.",
   "characters": {
     "primary": {
-      "names": ["Lisa", "Theo"],
+      "names": ["Eli", "Tom"],
       "description": "Default characters for 2-person dialogues. Use these FIRST for all basic scenarios.",
       "traits": {
-        "Lisa": {
+        "Eli": {
           "gender": "female",
-          "age": "young adult (20s)",
-          "role": "German native speaker, friendly and patient",
+          "age": "43",
+          "role": "Professional German teacher, calm and supportive",
+          "personality": ["calm", "supportive", "knowledgeable", "patient", "warm"],
           "pronouns": { "nominative": "sie", "accusative": "sie", "dative": "ihr" },
-          "persianSpelling": "لیزا"
+          "persianSpelling": "الی",
+          "assetPath": "content/characters/eli/"
         },
-        "Theo": {
+        "Tom": {
           "gender": "male",
-          "age": "young adult (20s)",
-          "role": "German native speaker, curious and helpful",
-          "pronouns": { "nominative": "er", "accusative": "ihn", "dative": "ihm" }
+          "age": "35-37",
+          "role": "Professional language instructor, reliable guide",
+          "personality": ["calm", "confident", "trustworthy", "patient", "professional"],
+          "pronouns": { "nominative": "er", "accusative": "ihn", "dative": "ihm" },
+          "persianSpelling": "تام",
+          "assetPath": "content/characters/tom/"
         }
       },
       "introducedAt": "A1-M01-L01",
-      "usageRule": "ALWAYS use Lisa & Theo when only 2 people are needed"
+      "usageRule": "ALWAYS use Eli & Tom when only 2 people are needed"
     },
     "secondary": {
-      "names": ["Max", "Sophie", "Leon", "Emma"],
-      "description": "Use when 3rd or 4th person is needed in a scene (e.g., introducing someone, family scenes).",
+      "names": ["Lisa", "Alex", "Max", "Sophie", "Leon", "Emma"],
+      "description": "Use when 3rd or 4th person is needed, or for youth/casual scenarios.",
       "traits": {
+        "Lisa": {
+          "gender": "female",
+          "age": "18-20",
+          "role": "Young companion, represents youth culture and casual speech",
+          "personality": ["playful", "energetic", "friendly", "confident", "approachable"],
+          "pronouns": { "nominative": "sie", "accusative": "sie", "dative": "ihr" },
+          "persianSpelling": "لیزا",
+          "assetPath": "content/characters/lisa/"
+        },
+        "Alex": {
+          "gender": "male",
+          "age": "21-22",
+          "role": "German student, flexible for many dialogue situations",
+          "personality": ["friendly", "cool", "confident", "approachable", "adaptable"],
+          "pronouns": { "nominative": "er", "accusative": "ihn", "dative": "ihm" },
+          "persianSpelling": "الکس",
+          "assetPath": "content/characters/alex/"
+        },
         "Max": {
           "gender": "male",
           "age": "young adult",
           "role": "Friend/colleague/acquaintance",
-          "pronouns": { "nominative": "er", "accusative": "ihn", "dative": "ihm" }
+          "pronouns": { "nominative": "er", "accusative": "ihn", "dative": "ihm" },
+          "persianSpelling": "مکس",
+          "assetPath": null
         },
         "Sophie": {
           "gender": "female",
           "age": "young adult",
           "role": "Friend/colleague/acquaintance",
-          "pronouns": { "nominative": "sie", "accusative": "sie", "dative": "ihr" }
+          "pronouns": { "nominative": "sie", "accusative": "sie", "dative": "ihr" },
+          "persianSpelling": "سوفی",
+          "assetPath": null
         },
         "Leon": {
           "gender": "male",
           "age": "varies by context",
           "role": "Family member/extended acquaintance",
-          "pronouns": { "nominative": "er", "accusative": "ihn", "dative": "ihm" }
+          "pronouns": { "nominative": "er", "accusative": "ihn", "dative": "ihm" },
+          "persianSpelling": "لئون",
+          "assetPath": null
         },
         "Emma": {
           "gender": "female",
           "age": "varies by context",
           "role": "Family member/extended acquaintance",
-          "pronouns": { "nominative": "sie", "accusative": "sie", "dative": "ihr" }
+          "pronouns": { "nominative": "sie", "accusative": "sie", "dative": "ihr" },
+          "persianSpelling": "اِما",
+          "assetPath": null
         }
       },
       "introducedAt": "A1-M02 (when 3+ person scenes begin)",
-      "usageRule": "Only add secondary characters when scene requires more than 2 people"
+      "usageRule": "Use Lisa/Alex for youth scenarios, others when scene requires more people"
     },
     "persian": {
       "names": ["Sara", "Amir"],
@@ -64,14 +95,18 @@
           "age": "young adult",
           "role": "Persian speaker learning German, relatable learner perspective",
           "pronouns": { "nominative": "sie", "accusative": "sie", "dative": "ihr" },
-          "nativeLanguage": "Persian (Farsi)"
+          "nativeLanguage": "Persian (Farsi)",
+          "persianSpelling": "سارا",
+          "assetPath": null
         },
         "Amir": {
           "gender": "male",
           "age": "young adult",
           "role": "Persian speaker living in Germany, cultural bridge",
           "pronouns": { "nominative": "er", "accusative": "ihn", "dative": "ihm" },
-          "nativeLanguage": "Persian (Farsi)"
+          "nativeLanguage": "Persian (Farsi)",
+          "persianSpelling": "امیر",
+          "assetPath": null
         }
       },
       "introducedAt": "A1-M03 (cultural context lessons)",
@@ -100,23 +135,24 @@
       "noConflictingBackstories": true
     },
     "selection": {
-      "twoPersonScene": "Use Lisa & Theo",
-      "threePersonScene": "Use Lisa, Theo + one from secondary",
-      "fourPersonScene": "Use Lisa, Theo + two from secondary",
+      "twoPersonScene": "Use Eli & Tom",
+      "threePersonScene": "Use Eli, Tom + one from secondary",
+      "fourPersonScene": "Use Eli, Tom + two from secondary",
+      "youthScene": "Use Lisa and/or Alex for casual youth scenarios",
       "persianPerspective": "Use Sara or Amir when showing learner experience",
       "serviceInteraction": "Use role titles (Kellner, etc.) instead of names"
     }
   },
   "levelGuidelines": {
     "A1": {
-      "allowedPrimary": ["Lisa", "Theo"],
-      "allowedSecondary": ["Max", "Sophie"],
+      "allowedPrimary": ["Eli", "Tom"],
+      "allowedSecondary": ["Lisa", "Alex"],
       "allowedPersian": ["Sara"],
       "note": "Keep character count minimal for beginners"
     },
     "A2": {
-      "allowedPrimary": ["Lisa", "Theo"],
-      "allowedSecondary": ["Max", "Sophie", "Leon", "Emma"],
+      "allowedPrimary": ["Eli", "Tom"],
+      "allowedSecondary": ["Lisa", "Alex", "Max", "Sophie", "Leon", "Emma"],
       "allowedPersian": ["Sara", "Amir"],
       "note": "Can introduce more complex multi-person scenarios"
     },
@@ -146,5 +182,23 @@
       "description": "Warn if 3+ characters used when 2 would suffice",
       "severity": "info"
     }
-  ]
+  ],
+  "migrationNotes": {
+    "v1-to-v2": {
+      "date": "2026-01-06",
+      "changes": [
+        "Primary characters changed: Lisa/Theo → Eli/Tom",
+        "Lisa moved to secondary (young companion role)",
+        "Alex added as secondary character",
+        "Theo removed (replaced by Tom)",
+        "Added assetPath references to characters with visual definitions",
+        "Added persianSpelling for all characters",
+        "Added personality traits for characters with full definitions"
+      ],
+      "contentImpact": [
+        "Existing lessons using 'Theo' need update to 'Tom'",
+        "Audio regeneration needed for renamed characters"
+      ]
+    }
+  }
 }

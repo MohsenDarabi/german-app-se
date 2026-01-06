@@ -36,17 +36,18 @@ RIGHT: واژه "Guten Tag" یعنی روز بخیر
 
 | DON'T | DO |
 |-------|-----|
-| Copy Anna/Tom from Babbel | Use **Lisa & Theo** (primary characters) |
+| Copy Anna/Tom from Babbel | Use **Eli & Tom** (primary characters) |
 | Copy exact dialogs | Rewrite with same structure |
 | Copy exact sentences | Create original examples |
 
 **Primary Characters (use consistently across lessons):**
-- **Lisa** - German woman (native speaker)
-- **Theo** - Persian man learning German (represents the learner)
+- **Eli** - German teacher (43, female, calm and supportive)
+- **Tom** - Language instructor (35-37, male, reliable guide)
 
 **Secondary characters** (if needed):
-- German: Max, Lena, Felix, Sophie, Emma
-- Persian learners: Amir, Sara, Maryam, Neda
+- Young/casual: Lisa (18-20), Alex (21-22)
+- German: Max, Sophie, Leon, Emma
+- Persian learners: Sara, Amir
 
 ---
 
@@ -517,7 +518,7 @@ const PRONUNCIATION_FIXES = {
 Before saving a lesson:
 
 - [ ] All `de` text has corresponding `fa` translation
-- [ ] Names are from OUR list (Lisa, Theo, etc.)
+- [ ] Names are from OUR list (Eli, Tom, Lisa, Alex, etc.)
 - [ ] BiDi rule followed for mixed text
 - [ ] Game steps inserted every 5-7 steps
 - [ ] `completion` step is last

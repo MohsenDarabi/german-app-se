@@ -65,7 +65,7 @@ function getLessonScope(lessonId) {
   const allowedVocab = new Set(functionWords);
   const allowedGrammar = new Set();
   const forbiddenGrammar = new Set();
-  const allowedCharacters = new Set(['Lisa', 'Theo']); // Default
+  const allowedCharacters = new Set(characterRegistry.characters.primary.names); // Default from registry
 
   let foundLesson = false;
   const lessonNum = getLessonNumber(lessonId);
@@ -279,7 +279,7 @@ function validateLesson(lessonPath) {
   }
 
   if (unknownCharacters.length > 0) {
-    errors.push(`❌ Characters not allowed: ${unknownCharacters.join(', ')} (use Lisa & Theo for L01-L04)`);
+    errors.push(`❌ Characters not allowed: ${unknownCharacters.join(', ')} (use ${characterRegistry.characters.primary.names.join(' & ')} for early lessons)`);
   }
 
   if (usedCharacters.size > canonicalScope.validationRules.characters.maxPerScene) {
