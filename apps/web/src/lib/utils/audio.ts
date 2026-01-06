@@ -96,6 +96,31 @@ export function playText(text: string, lang: string = 'de-DE') {
 }
 
 /**
+ * Check if text contains Persian/Arabic characters
+ */
+function containsPersian(text: string): boolean {
+  return /[\u0600-\u06FF\u0750-\u077F\uFB50-\uFDFF\uFE70-\uFEFF]/.test(text);
+}
+
+/**
+ * Extract German text from mixed Persian/German content
+ * Removes Persian portions and returns only Latin/German text
+ */
+function extractGermanText(text: string): string {
+  // Remove Persian/Arabic text blocks
+  let germanOnly = text
+    // Remove Persian text blocks (sequences of Persian chars with spaces)
+    .replace(/[\u0600-\u06FF\u0750-\u077F\uFB50-\uFDFF\uFE70-\uFEFF]+[\s\u200C]*[\u0600-\u06FF\u0750-\u077F\uFB50-\uFDFF\uFE70-\uFEFF\s\u200C]*/g, ' ')
+    // Remove Persian quotation marks « »
+    .replace(/[«»]/g, '')
+    // Clean up multiple spaces
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  return germanOnly;
+}
+
+/**
  * Play German text using TTS (async version with promise)
  *
  * @param text - German text to speak
@@ -111,8 +136,19 @@ export async function playTextAsync(text: string, rate = 0.9): Promise<void> {
   // Stop any current speech
   speechSynthesis.cancel();
 
+  // If text contains Persian, extract only German portions
+  let textToSpeak = text;
+  if (containsPersian(text)) {
+    textToSpeak = extractGermanText(text);
+    // If no German text remains, don't play anything
+    if (!textToSpeak || textToSpeak.length < 2) {
+      console.warn('No German text to speak in mixed content');
+      return;
+    }
+  }
+
   return new Promise((resolve) => {
-    const utterance = new SpeechSynthesisUtterance(text);
+    const utterance = new SpeechSynthesisUtterance(textToSpeak);
     utterance.lang = 'de-DE';
     utterance.rate = rate;
     utterance.pitch = 1.0;
