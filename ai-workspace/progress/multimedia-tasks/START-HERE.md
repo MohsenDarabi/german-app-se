@@ -1,236 +1,135 @@
 # Multimedia Tasks for German Learning App
 
-> Quick reference for creating images and videos. Check boxes as you complete each task.
+> Guide for creating images for the German learning app. **51 tasks** across **31 lessons**.
 
 ---
 
 ## Quick Start
 
-1. Find a task below
-2. Create the image/video following the specs
-3. Save to the output path shown
-4. Check the box `[x]` when done
-
-**Base Paths:**
-```
-Images: apps/web/static/images/shared/
-Videos: apps/web/static/videos/shared/
-```
-
-**Image Specs:** 800x600 px, JPG (photos) or PNG (transparency), < 200KB
+1. Check `TASK-SUMMARY.md` for the full checklist
+2. Open the JSON file for detailed specs (e.g., `A1-M01-L01.json`)
+3. Create the image following the specs
+4. Save to the output path
+5. Update status in JSON file to `"completed"`
 
 ---
 
-## A1 - Module 01
+## Commands
 
-### Lesson 01: Hallo! Ich bin...
+```bash
+# Check progress
+node scripts/check-multimedia-tasks.js
 
-**Images (5):**
+# List next 10 pending tasks
+node scripts/check-multimedia-tasks.js -p 10
 
-- [ ] `greetings/hello-wave.jpg` - Two people waving hello to each other on a street
-  - Context: Vocabulary for "Hallo" (Hello)
-  - Style: friendly, warm, modern German setting
+# Validate all task files
+node scripts/validate-multimedia-tasks.js
 
-- [ ] `greetings/goodbye-wave.jpg` - Person waving goodbye, walking away
-  - Context: Vocabulary for "Tschüss" (Bye)
-  - Style: casual farewell scene
-
-- [ ] `expressions/thank-you.jpg` - Person expressing gratitude, hands together or thumbs up
-  - Context: Vocabulary for "danke" (thanks)
-  - Style: appreciative gesture
-
-- [ ] `introductions/handshake-meeting.jpg` - Two people shaking hands with friendly smiles
-  - Context: Vocabulary for "Freut mich!" (Nice to meet you)
-  - Style: professional but warm first meeting
-
-- [ ] `scenes/cafe-meeting.jpg` - Two young adults (one male, one female) meeting at a cafe table
-  - Context: Dialog scene - Lena and Max meeting
-  - Style: modern German cafe, friendly atmosphere, diverse characters
-
-### Lesson 02: Wie geht's?
-
-**Images (3):**
-
-- [ ] `greetings/asking-how-are-you.jpg` - Two friends (young man and woman, 20s) meeting casually on a street or park, one asking 'how are you?' with friendly hand gesture
-  - Context: Dialog scene - Lena and Max asking each other how they are
-  - Style: casual, friendly, outdoor German setting
-
-- [ ] `expressions/feeling-good.jpg` - Person with thumbs up and happy expression, representing 'gut' (good/well)
-  - Context: Vocabulary for 'gut' (good) - how someone feels
-  - Style: positive, bright, simple background
-
-- [ ] `expressions/feeling-bad.jpg` - Person looking unwell or tired, representing 'schlecht' (bad)
-  - Context: Vocabulary for 'schlecht' (bad) - how someone feels
-  - Style: sympathetic, not overly dramatic, simple background
-
-### Lesson 03: Woher kommst du?
-
-**Images (4):**
-
-- [ ] `scenes/international-meeting.jpg` - Two young women (one German, one Iranian) meeting and chatting in a cafe or park
-  - Context: Dialog scene - Lena and Sara meeting, discussing countries of origin
-  - Style: friendly, multicultural, modern German setting
-
-- [ ] `places/germany.jpg` - German flag or iconic German landmark (Brandenburg Gate, Berlin skyline)
-  - Context: Vocabulary for 'Deutschland' (Germany)
-  - Style: recognizable, clean, modern
-
-- [ ] `places/iran.jpg` - Iranian flag or iconic Persian landmark (Azadi Tower, Isfahan mosque)
-  - Context: Vocabulary for 'der Iran' (Iran)
-  - Style: recognizable, respectful, cultural
-
-- [ ] `expressions/asking-origin.jpg` - Person pointing at a world map or globe, asking about origins
-  - Context: Vocabulary for 'Woher kommst du?' (Where are you from?)
-  - Style: curious, friendly, educational
-
-### Lesson 04: Ich spreche Deutsch!
-
-**Images (4):**
-
-- [ ] `scenes/language-exchange.jpg` - Two young adults (Max and Sara) having a friendly conversation about languages
-  - Context: Dialog scene - Max asks Sara about languages she speaks and learns
-  - Style: modern cafe or university setting, friendly atmosphere, diverse characters
-
-- [ ] `actions/speaking.jpg` - Person speaking or having a conversation
-  - Context: Vocabulary for 'sprechen' (to speak)
-  - Style: clear, simple background, person mid-conversation
-
-- [ ] `actions/learning.jpg` - Person studying or learning with books/laptop
-  - Context: Vocabulary for 'lernen' (to learn)
-  - Style: student focused on studying, modern environment
-
-- [ ] `grammar/verb-conjugation-ich-du.jpg` - Visual diagram showing verb conjugation for ich (-e) and du (-st)
-  - Context: Grammar tip - how verbs change: ich spreche vs du sprichst
-  - Style: clean infographic, color-coded (ich=blue, du=green)
-
-### Lesson 05: Wie heißt du?
-
-**Images (1):**
-
-- [ ] `greetings/a1-m01-l05-s12-eli-tom.jpg` - Eli and Tom meeting for the first time
-  - Context: Dialog scene - "Hallo! Wie heißt du?" - first introductions
-  - Style: friendly, modern German cafe or park setting
-
-### Lesson 06: Wo wohnst du?
-
-**Images (1):**
-
-- [ ] `greetings/a1-m01-l06-s13-eli-tom.jpg` - Eli and Tom having a longer conversation
-  - Context: Dialog scene - "Hallo! Ich heiße Lisa. Und du?" - discussing where they live
-  - Style: friendly, modern German setting, 10-line conversation
-
-### Lesson 07: Zahlen 1-10
-
-**Images (1):**
-
-- [ ] `expressions/a1-m01-l07-s17-lisa-kellner-theo.jpg` - Eli, Tom, and a waiter at a cafe
-  - Context: Dialog scene - "Zwei Kaffee, bitte." - ordering with numbers
-  - Style: modern German cafe, ordering food/drinks with numbers
-
-### Lesson 08: Zahlen 11-20
-
-**Images (1):**
-
-- [ ] `scenes/a1-m01-l08-s16-markus-verkaeufer.jpg` - Markus and a shop employee (Verkäufer)
-  - Context: Dialog scene - "Was kostet das Buch?" - asking about prices with numbers
-  - Style: modern German bookshop or store, friendly customer-employee interaction
-
-### Lesson 09: Zahlen 21-100
-
-**Images (1):**
-
-- [ ] `scenes/a1-m01-l09-s17-eli-tom.jpg` - Eli and Tom talking about grandparents' ages
-  - Context: Dialog scene - "Tom, wie alt ist dein Opa?" - discussing ages with larger numbers
-  - Style: modern German setting, friendly conversation about family ages
-
-### Lesson 10: Telefonnummern
-
-**Images (2):**
-
-- [ ] `expressions/a1-m01-l10-s11-eli-tom.jpg` - Eli and Tom exchanging phone numbers
-  - Context: Dialog scene - "Tom, was ist deine Handynummer?" - asking for phone numbers
-  - Style: modern German setting, one person showing phone to another
-
-- [ ] `greetings/a1-m01-l10-s17-eli-tom.jpg` - Lisa answering a phone call from Theo
-  - Context: Dialog scene - "Hallo?" - phone call conversation
-  - Style: split scene showing both people on phone, or one person on phone
+# Regenerate TASK-SUMMARY.md
+node scripts/generate-task-summary.js
+```
 
 ---
 
-## A1 - Module 02
+## Current Status
 
-### Lesson 01: sein und haben
-
-**Images (1):**
-
-- [ ] `scenes/a1-m02-l01-s15-eli-tom.jpg` - Eli and Tom chatting about feelings and availability
-  - Context: Dialog scene - "Hallo Theo! Wie geht's?" - discussing being happy, hungry, having time
-  - Style: friendly conversation, modern German cafe or park, casual setting
-
-### Lesson 02: Regelmäßige Verben
-
-**Images (1):**
-
-- [ ] `scenes/a1-m02-l02-s12-eli-tom.jpg` - Eli and Tom discussing daily activities
-  - Context: Dialog scene - "Was machst du?" - discussing activities (learning German, playing guitar, working)
-  - Style: modern setting, Lisa could be at a cafe where she works or holding a guitar
+| Module | Topic | Tasks | High Priority |
+|--------|-------|-------|---------------|
+| Module 1 | Basics (Hallo, Zahlen) | 19 | 11 |
+| Module 2 | Verben (sein, haben) | 5 | 5 |
+| Module 3 | Verneinung (nicht, kein) | 6 | 4 |
+| Module 4 | Artikel (der, die, das) | 4 | 4 |
+| Module 5 | Fragen (W-Fragen) | 9 | 8 |
+| Module 6 | Zeit (Uhrzeit, Tage) | 8 | 8 |
+| **Total** | | **51** | **40** |
 
 ---
 
-## Progress Summary
-
-| Level | Module | Lesson | Images | Videos | Status |
-|-------|--------|--------|--------|--------|--------|
-| A1 | 01 | 01 | 5 | 0 | Pending |
-| A1 | 01 | 02 | 3 | 0 | Pending |
-| A1 | 01 | 03 | 4 | 0 | Pending |
-| A1 | 01 | 04 | 4 | 0 | Pending |
-| A1 | 01 | 05 | 1 | 0 | Pending |
-| A1 | 01 | 06 | 1 | 0 | Pending |
-| A1 | 01 | 07 | 1 | 0 | Pending |
-| A1 | 01 | 08 | 1 | 0 | Pending |
-| A1 | 01 | 09 | 1 | 0 | Pending |
-| A1 | 01 | 10 | 2 | 0 | Pending |
-| A1 | 02 | 01 | 1 | 0 | Pending |
-| A1 | 02 | 02 | 1 | 0 | Pending |
-
-**Total:** 25 tasks (25 images, 0 videos)
-
----
-
-## Category Folders
-
-All folders are ready in `apps/web/static/images/shared/`:
+## File Structure
 
 ```
-actions/         - Speaking, learning, doing
-greetings/       - Hello, goodbye, waves
-introductions/   - Handshakes, first meetings
-expressions/     - Thank you, please, emotions
-grammar/         - Verb conjugation, grammar visuals
-scenes/          - Cafe, office, street scenes
-people/          - Individual portraits
-family/          - Family members
-food/            - Food and drinks
-places/          - Locations, buildings
-transport/       - Cars, trains, buses
-professions/     - Jobs and occupations
-daily-life/      - Everyday activities
-weather/         - Weather conditions
+ai-workspace/progress/multimedia-tasks/
+├── START-HERE.md          # This guide
+├── TASK-SUMMARY.md        # Auto-generated checklist
+├── A1-M01-L01.json        # Task specs for each lesson
+├── A1-M01-L02.json
+├── ...
+└── A1-M06-L04.json
+
+apps/web/static/images/shared/
+├── greetings/             # Hello, goodbye, waves
+├── expressions/           # Emotions, reactions
+├── scenes/                # Dialog scenes
+├── places/                # Countries, cities
+├── daily-life/            # Activities
+└── ...
 ```
+
+---
+
+## Image Specs
+
+| Property | Requirement |
+|----------|-------------|
+| **Dimensions** | 800 x 600 pixels |
+| **Format** | JPG (photos), PNG (transparency) |
+| **File size** | < 200 KB |
+| **Style** | Modern, friendly, diverse |
+
+---
+
+## Characters
+
+Use these 4 characters consistently:
+
+| Name | Age | Role | Description |
+|------|-----|------|-------------|
+| **Eli** | 43 | Teacher | German teacher, calm, supportive |
+| **Tom** | 35-37 | Instructor | Language guide, reliable |
+| **Lisa** | 18-20 | Student | Young, playful, energetic |
+| **Alex** | 21-22 | Student | Adaptable, curious |
+
+**Service roles** (no consistent visuals needed): Kellner, Verkäufer, Arzt
+
+---
+
+## Priority Levels
+
+- 🔴 **High** - Dialog scenes (most visible to users)
+- 🟡 **Medium** - Vocabulary illustrations
+- 🟢 **Low** - Optional enhancements
+
+**Focus on 🔴 High priority first!**
+
+---
+
+## How to Mark Complete
+
+1. Open the task JSON file (e.g., `A1-M01-L01.json`)
+2. Find the task by `id`
+3. Change:
+   ```json
+   "status": "pending"
+   ```
+   to:
+   ```json
+   "status": "completed",
+   "completedAt": "2026-01-07"
+   ```
 
 ---
 
 ## Style Guidelines
 
-### DO
-- Modern, contemporary settings
+### DO ✅
+- Modern, contemporary German settings
 - Diverse characters (age, ethnicity)
 - Clear, well-lit scenes
 - Friendly, approachable expressions
 - Realistic proportions
 
-### DON'T
+### DON'T ❌
 - Outdated or stereotypical imagery
 - Overly busy backgrounds
 - Dark or unclear lighting
@@ -239,18 +138,56 @@ weather/         - Weather conditions
 
 ---
 
+## Output Paths
+
+Save images to `apps/web/static/images/shared/{category}/`:
+
+| Category | Content |
+|----------|---------|
+| `greetings/` | Hello, goodbye, waves |
+| `expressions/` | Thank you, emotions, reactions |
+| `scenes/` | Dialog scenes, cafe, street |
+| `places/` | Countries, cities, landmarks |
+| `daily-life/` | Everyday activities |
+| `actions/` | Speaking, learning, working |
+| `grammar/` | Visual grammar explanations |
+
+---
+
+## Task JSON Structure
+
+Each task file contains:
+
+```json
+{
+  "lessonId": "A1-M01-L01",
+  "lessonTitle": { "de": "Hallo!", "fa": "سلام!" },
+  "tasks": [
+    {
+      "id": "img-s14",
+      "type": "image",
+      "stepId": "s14",
+      "stepType": "dialog",
+      "priority": "high",
+      "description": "Eli & Tom - Dialog scene",
+      "context": "Dialog with 5 lines: \"Hallo!\"",
+      "specs": {
+        "format": "jpg",
+        "dimensions": "800x600",
+        "style": "friendly, modern German setting",
+        "subjects": "Eli, Tom"
+      },
+      "outputPath": "images/shared/scenes/a1-m01-l01-s14-eli-tom.jpg",
+      "status": "pending"
+    }
+  ]
+}
+```
+
+---
+
 ## Questions?
 
-Check the detailed task files:
-- `A1-M01-L01.json` - Lesson 01 tasks
-- `A1-M01-L02.json` - Lesson 02 tasks
-- `A1-M01-L03.json` - Lesson 03 tasks
-- `A1-M01-L04.json` - Lesson 04 tasks
-- `A1-M01-L05.json` - Lesson 05 tasks
-- `A1-M01-L06.json` - Lesson 06 tasks
-- `A1-M01-L07.json` - Lesson 07 tasks
-- `A1-M01-L08.json` - Lesson 08 tasks
-- `A1-M01-L09.json` - Lesson 09 tasks
-- `A1-M01-L10.json` - Lesson 10 tasks
-- `A1-M02-L01.json` - Lesson 01 (Module 2) tasks
-- `A1-M02-L02.json` - Lesson 02 (Module 2) tasks
+- Check `TASK-SUMMARY.md` for the full checklist
+- Check individual JSON files for detailed specs
+- Run `node scripts/check-multimedia-tasks.js` for progress
