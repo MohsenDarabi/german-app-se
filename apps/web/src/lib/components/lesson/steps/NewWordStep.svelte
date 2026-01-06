@@ -72,7 +72,7 @@
       class:saved={isSaved}
       on:click={toggleSave}
     >
-      {isSaved ? '✅ Saved' : '➕ Add to Vocab'}
+      {isSaved ? '✅ ذخیره شد' : '➕ افزودن به واژگان'}
     </button>
 
     {#if step.example}
