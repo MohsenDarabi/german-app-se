@@ -111,6 +111,12 @@ export const A1_MODULES: ModuleStub[] = [
         title: "فعل‌های خاص (Besondere Verben)",
         description: "یاد بگیرید فعل‌هایی که ریشه‌شان تغییر می‌کند: essen, lesen, schlafen, fahren",
         path: "/learn/de-fa/A1/A1-M02-L04"
+      },
+      {
+        id: "A1-M02-L05",
+        title: "فعل‌های کمکی (Modalverben)",
+        description: "یاد بگیرید چگونه بگویید «می‌توانم»، «می‌خواهم» و «باید»: können, wollen, müssen",
+        path: "/learn/de-fa/A1/A1-M02-L05"
       }
     ]
   }
