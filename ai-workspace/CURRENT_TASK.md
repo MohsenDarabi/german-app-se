@@ -20,24 +20,23 @@
 
 ## Last Completed
 
-**Task**: Implement multimedia task management system + TTS fixes
+**Task**: Create A1-M01-L05 (names/introductions)
 
 **Completed**: 2026-01-06
 
 **Result**:
-- Fixed TTS bug: en-dash "–" was read as "Minus" by Google TTS
-- Added validation rule `no-tts-unfriendly-chars` (now 29 rules total)
-- Standardized characters to Lisa & Theo across all M01 lessons
-- Created `scripts/generate-multimedia-tasks.js` for auto-generating image tasks
-- Generated 12 multimedia tasks for L01-L04
-- Updated docs: rules-and-tips.md, START-HERE.md
+- Created L05: "Wie heißt du?" (What's your name?)
+- Vocabulary: heißen, Wie heißt du?, Ich heiße..., der Name, Freut mich!, auch
+- 19 steps with games, dialog, exercises
+- All 29 validation rules pass
+- Audio generated (18 new texts, 285 chars)
+- Multimedia task generated (1 dialog image)
 
 **Key Files Changed**:
-- `scripts/generate-multimedia-tasks.js` - NEW
-- `scripts/validate-lesson.js` - added TTS rule
-- `ai-workspace/references/rules-and-tips.md` - Rule 12 + updated names
-- `docs/multimedia-tasks/START-HERE.md` - colleague workflow
-- `ai-workspace/progress/multimedia-tasks/*.json` - task files for L01-L04
+- `content/de-fa/A1/module-01/A1-M01-L05.json` - NEW
+- `ai-workspace/progress/multimedia-tasks/A1-M01-L05.json` - NEW
+
+**Previous**: Grammar simplification for L03/L04
 
 ---
 
@@ -45,10 +44,10 @@
 
 | Step | Status | Notes |
 |------|--------|-------|
-| Lesson JSONs | ✅ L01-L04 | Lisa & Theo characters |
+| Lesson JSONs | ✅ L01-L05 | Lisa & Theo characters |
 | Validation | ✅ 29 rules | All pass |
 | Audio | ✅ Generated | TTS-friendly content |
-| Multimedia Tasks | ✅ 12 tasks | Pending for colleague |
+| Multimedia Tasks | ✅ 13 tasks | Pending for colleague |
 | SRS Persistence | ❌ Gap | vocab-check ratings not saved |
 
 ---
@@ -98,8 +97,8 @@ pnpm run dev
 
 | Date | Task | Result |
 |------|------|--------|
+| 2026-01-06 | Create A1-M01-L05 | Completed - names/introductions: Wie heißt du?, Freut mich! |
+| 2026-01-06 | Grammar simplification L03/L04 | Completed - pattern-based explanations for A1 level |
 | 2026-01-06 | Multimedia task system | Completed - generate-multimedia-tasks.js, 12 tasks for L01-L04 |
 | 2026-01-06 | TTS fixes + validation | Completed - removed dashes, added no-tts-unfriendly-chars rule |
 | 2026-01-06 | Lisa & Theo standardization | Completed - all M01 dialogs use Lisa & Theo |
-| 2026-01-02 | Create A1-M01-L01 (fusion workflow) | Completed - 20 steps, 7 vocab, audio generated |
-| 2026-01-02 | Deep codebase cleanup | Completed - removed 47 orphaned audio folders |
