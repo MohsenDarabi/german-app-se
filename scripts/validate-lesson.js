@@ -485,6 +485,50 @@ const rules = [
     }
   },
   {
+    name: 'no-tts-unfriendly-chars',
+    description: 'No characters that TTS mispronounces (en-dash, em-dash read as "Minus")',
+    check: (lesson) => {
+      // Characters that TTS engines mispronounce
+      const ttsUnfriendly = [
+        { char: '–', name: 'en-dash', readAs: 'Minus' },
+        { char: '—', name: 'em-dash', readAs: 'Gedankenstrich' },
+        { char: '→', name: 'arrow', readAs: 'Pfeil' },
+        { char: '←', name: 'left arrow', readAs: 'Pfeil' },
+        { char: '•', name: 'bullet', readAs: 'Punkt' },
+        { char: '×', name: 'multiplication', readAs: 'mal' },
+      ];
+
+      const issues = [];
+
+      // Helper to check text fields recursively
+      function checkText(obj, path = '') {
+        if (typeof obj === 'string') {
+          for (const { char, name, readAs } of ttsUnfriendly) {
+            if (obj.includes(char)) {
+              // Only flag if it's in a German text field that will be spoken
+              if (path.includes('.de') || path.includes('example') || path.includes('line')) {
+                issues.push(`${path}: contains ${name} "${char}" (TTS reads as "${readAs}")`);
+              }
+            }
+          }
+        } else if (Array.isArray(obj)) {
+          obj.forEach((item, i) => checkText(item, `${path}[${i}]`));
+        } else if (typeof obj === 'object' && obj !== null) {
+          for (const [key, value] of Object.entries(obj)) {
+            checkText(value, path ? `${path}.${key}` : key);
+          }
+        }
+      }
+
+      checkText(lesson.steps, 'steps');
+
+      if (issues.length > 0) {
+        return { pass: false, error: issues.slice(0, 3).join('; ') + (issues.length > 3 ? ` (+${issues.length - 3} more)` : '') };
+      }
+      return { pass: true };
+    }
+  },
+  {
     name: 'mcq-no-meta-answers',
     description: 'MCQ: no "both options" or "all of the above" type meta-answers',
     check: (lesson) => {

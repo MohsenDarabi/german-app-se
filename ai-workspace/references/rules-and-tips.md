@@ -36,21 +36,17 @@ RIGHT: واژه "Guten Tag" یعنی روز بخیر
 
 | DON'T | DO |
 |-------|-----|
-| Copy Anna/Tom from Babbel | Use Lena, Max, Felix, Sophie |
+| Copy Anna/Tom from Babbel | Use **Lisa & Theo** (primary characters) |
 | Copy exact dialogs | Rewrite with same structure |
 | Copy exact sentences | Create original examples |
 
-**Name Replacement Table:**
+**Primary Characters (use consistently across lessons):**
+- **Lisa** - German woman (native speaker)
+- **Theo** - Persian man learning German (represents the learner)
 
-| Source Name | Replace With |
-|-------------|--------------|
-| Anna (Babbel) | Lena, Sophie, Emma, Hannah |
-| Tom (Babbel) | Max, Felix, Leon, Paul |
-| Maria | Mia, Lea, Lisa, Laura |
-| Peter | Jonas, Tim, Finn, Ben |
-
-**Persian character names** (for learner role):
-- Amir, Sara, Maryam, Ali, Neda, Reza
+**Secondary characters** (if needed):
+- German: Max, Lena, Felix, Sophie, Emma
+- Persian learners: Amir, Sara, Maryam, Neda
 
 ---
 
@@ -240,6 +236,31 @@ Never more than 80% on one side.
 
 ---
 
+### Rule 12: No TTS-Unfriendly Characters
+
+**CRITICAL**: Do NOT use characters that TTS mispronounces in German text.
+
+| Character | Name | TTS Reads As | Use Instead |
+|-----------|------|--------------|-------------|
+| `–` | en-dash | "Minus" | space or comma |
+| `—` | em-dash | "Gedankenstrich" | space or period |
+| `→` | arrow | "Pfeil" | write out direction |
+| `×` | multiplication | "mal" | write "mal" |
+
+```json
+// BAD - TTS says "Wie geht's Minus Es geht"
+"de": "Wie geht's? – Es geht."
+
+// GOOD - natural pause from punctuation
+"de": "Wie geht's? Es geht."
+```
+
+**Q&A Format**: For question-answer pairs, just use the question mark for pause:
+- ✅ `"Wie geht's? Gut!"`
+- ❌ `"Wie geht's? – Gut!"`
+
+---
+
 ## COMMON MISTAKES
 
 ### Mistake 1: Wrong correctAnswerIndex
@@ -327,7 +348,7 @@ Every line needs both `de` and `fa`:
 
 ---
 
-## VALIDATION RULES (21 Total)
+## VALIDATION RULES (29 Total)
 
 Run with: `node scripts/validate-lesson.js <file>`
 
@@ -335,14 +356,15 @@ Run with: `node scripts/validate-lesson.js <file>`
 |----------|-------|
 | **Schema** | has-required-fields, title-bilingual, steps-not-empty, steps-have-ids, steps-have-types, ends-with-completion |
 | **New Word** | new-word-has-translations |
-| **MCQ** | mcq-has-options, mcq-correct-index-valid, mcq-answer-distribution |
-| **Fill-blank** | fill-blank-has-options |
+| **MCQ** | mcq-has-options, mcq-correct-index-valid, mcq-answer-distribution, mcq-no-meta-answers |
+| **Fill-blank** | fill-blank-has-options, fill-blank-no-synonym-traps, fill-blank-correct-answers-valid |
 | **Word Order** | word-order-scrambled |
-| **Matching** | matching-has-pairs, matching-pairs-valid |
+| **Matching** | matching-has-pairs, matching-pairs-valid, matching-no-duplicate-meanings |
 | **Dialog** | dialog-has-lines, dialog-lines-bilingual |
-| **Games** | rapid-fire-questions-valid, memory-match-pairs-valid, vocab-check-words-valid |
+| **Games** | rapid-fire-questions-valid, rapid-fire-balance, memory-match-pairs-valid, vocab-check-words-valid, game-steps-present |
+| **Translation** | translation-correct-answers-valid |
 | **Completion** | completion-has-vocab |
-| **Quality** | no-undefined-values |
+| **Quality** | no-undefined-values, no-tts-unfriendly-chars |
 
 ---
 
@@ -465,10 +487,11 @@ const PRONUNCIATION_FIXES = {
 Before saving a lesson:
 
 - [ ] All `de` text has corresponding `fa` translation
-- [ ] Names are from OUR list (Max, Lena, etc.)
+- [ ] Names are from OUR list (Lisa, Theo, etc.)
 - [ ] BiDi rule followed for mixed text
 - [ ] Game steps inserted every 5-7 steps
 - [ ] `completion` step is last
 - [ ] All indices are 0-based
+- [ ] No TTS-unfriendly chars (–, —, →) in German text
 - [ ] JSON validates (no syntax errors)
 - [ ] Tested in browser
