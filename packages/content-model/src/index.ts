@@ -36,6 +36,14 @@ export const FeedbackSchema = z.object({
    All step types extend this base
 -------------------------------------------------- */
 
+// Vocabulary hint for German-only questions (helps beginners understand)
+export const VocabHintSchema = z.object({
+  // Word-by-word translations, e.g., {"sieben": "۷", "kommt": "می‌آید", "nach": "بعد از", "sechs": "۶"}
+  words: z.record(z.string()),
+  // Optional full sentence translation
+  translation: z.string().optional(),
+});
+
 export const BaseStepSchema = z.object({
   id: z.string(),
   type: z.string(), // Will be overridden by specific types
@@ -50,6 +58,9 @@ export const BaseStepSchema = z.object({
 
   // Optional feedback/explanation for any step
   feedback: FeedbackSchema.optional(),
+
+  // Vocabulary hint for German-only questions (expandable help for beginners)
+  vocabHint: VocabHintSchema.optional(),
 });
 
 /* --------------------------------------------------
@@ -510,6 +521,7 @@ export type Media = z.infer<typeof MediaSchema>;
 export type BilingualText = z.infer<typeof BilingualTextSchema>;
 export type Example = z.infer<typeof ExampleSchema>;
 export type Feedback = z.infer<typeof FeedbackSchema>;
+export type VocabHint = z.infer<typeof VocabHintSchema>;
 
 export type BaseStep = z.infer<typeof BaseStepSchema>;
 export type NewWordStep = z.infer<typeof NewWordStepSchema>;

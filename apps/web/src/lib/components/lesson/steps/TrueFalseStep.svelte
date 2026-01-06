@@ -13,6 +13,7 @@
   let isAnswered = false;
   let isCorrect = false;
   let canRetry = false;
+  let showHint = false;
 
   function selectAnswer(answer: boolean) {
     if (isAnswered) return;
@@ -38,8 +39,14 @@
     canRetry = false;
   }
 
+  function toggleHint() {
+    showHint = !showHint;
+  }
+
   // Check if statement is pure German (no Persian/Arabic characters)
   $: isPureGerman = !/[\u0600-\u06FF]/.test(step.statement);
+  // Check if we have a vocab hint available
+  $: hasVocabHint = isPureGerman && step.vocabHint && Object.keys(step.vocabHint.words || {}).length > 0;
 </script>
 
 <div class="true-false-container">
@@ -61,6 +68,31 @@
     </div>
     {#if step.statementExplanation}
       <p class="statement-explanation" dir="rtl"><BiDiText text={step.statementExplanation} /></p>
+    {/if}
+
+    {#if hasVocabHint}
+      <button class="hint-toggle" on:click={toggleHint} dir="rtl">
+        <span class="hint-icon">{showHint ? '🔽' : '💡'}</span>
+        <span>{showHint ? 'بستن راهنما' : 'نیاز به کمک؟'}</span>
+      </button>
+
+      {#if showHint}
+        <div class="hint-content" dir="rtl">
+          <p class="hint-intro">این کلمات را قبلاً یاد گرفتید:</p>
+          <div class="hint-words">
+            {#each Object.entries(step.vocabHint?.words || {}) as [de, fa]}
+              <span class="hint-word">
+                <span class="de" dir="ltr">{de}</span>
+                <span class="sep">=</span>
+                <span class="fa">{fa}</span>
+              </span>
+            {/each}
+          </div>
+          {#if step.vocabHint?.translation}
+            <p class="hint-translation">ترجمه: {step.vocabHint.translation}</p>
+          {/if}
+        </div>
+      {/if}
     {/if}
   </div>
 
@@ -155,6 +187,86 @@
     color: #64748b;
     margin: 0.75rem 0 0;
     font-style: italic;
+  }
+
+  .hint-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: transparent;
+    border: 1px dashed #94a3b8;
+    border-radius: 0.5rem;
+    color: #64748b;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .hint-toggle:hover {
+    border-color: #3b82f6;
+    color: #3b82f6;
+    background: #eff6ff;
+  }
+
+  .hint-icon {
+    font-size: 1rem;
+  }
+
+  .hint-content {
+    margin-top: 0.75rem;
+    padding: 1rem;
+    background: #f0f9ff;
+    border: 1px solid #bae6fd;
+    border-radius: 0.5rem;
+  }
+
+  .hint-intro {
+    font-size: 0.85rem;
+    color: #0369a1;
+    margin: 0 0 0.75rem;
+    font-weight: 500;
+  }
+
+  .hint-words {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  .hint-word {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    background: white;
+    border-radius: 0.25rem;
+    font-size: 0.9rem;
+  }
+
+  .hint-word .de {
+    font-weight: 600;
+    color: #0369a1;
+  }
+
+  .hint-word .sep {
+    color: #94a3b8;
+  }
+
+  .hint-word .fa {
+    color: #475569;
+  }
+
+  .hint-translation {
+    margin: 0.75rem 0 0;
+    padding-top: 0.75rem;
+    border-top: 1px dashed #bae6fd;
+    font-size: 0.9rem;
+    color: #475569;
+    text-align: center;
   }
 
   .options-row {

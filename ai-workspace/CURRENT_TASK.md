@@ -20,26 +20,26 @@
 
 ## Last Completed
 
-**Task**: Create A1-M01-L07 (Numbers 1-10)
+**Task**: Implement Vocabulary Hints for German-only Questions
 
 **Completed**: 2026-01-06
 
 **Result**:
-- Created L07: "Zahlen 1-10" (Numbers 1-10)
-- Vocabulary: eins, zwei, drei, vier, fünf, sechs, sieben, acht, neun, zehn
-- 23 steps: new-word, grammar-tip, rapid-fire, matching, dialog, fill-in-blank, etc.
-- All validation rules pass
-- Audio generated (57 mp3 files)
-- Multimedia task generated (1 cafe dialog image)
-- All progress files updated
+- Added `vocabHint` schema to BaseStepSchema (both packages/content-model and apps/web)
+- Implemented expandable hint UI in TrueFalseStep.svelte
+- Shows "نیاز به کمک؟" (Need help?) button for German-only questions
+- Expands to show word-by-word translations + full sentence translation
+- Added hint to L07 true-false question as example
+- Pedagogical feature to reduce beginner anxiety
 
 **Key Files Changed**:
-- `content/de-fa/A1/module-01/A1-M01-L07.json` - NEW
-- `apps/web/static/audio/A1-M01-L07/` - 57 audio files
-- `apps/web/src/lib/data/modules.ts` - Added L07
-- `ai-workspace/progress/*` - Updated all tracking files
+- `packages/content-model/src/index.ts` - Added VocabHintSchema
+- `apps/web/src/lib/content-model/index.ts` - Added VocabHintSchema
+- `apps/web/src/lib/components/lesson/steps/TrueFalseStep.svelte` - Hint UI
+- `content/de-fa/A1/module-01/A1-M01-L07.json` - Added vocabHint to s19
+- `ai-workspace/ROADMAP.md` - Marked feature as done
 
-**Previous**: Create A1-M01-L06 (Wo wohnst du?)
+**Previous**: Create A1-M01-L07 (Zahlen 1-10)
 
 ---
 

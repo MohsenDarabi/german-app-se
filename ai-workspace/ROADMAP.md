@@ -114,6 +114,14 @@ These require **new code** in the app, not just content.
 
 ### High Priority
 
+- [x] **Vocabulary Hints for German-only Questions** ✅ DONE
+  - When exercises show German-only questions (e.g., "Sieben kommt nach sechs.")
+  - Add expandable "نیاز به کمک؟" (Need help?) button
+  - Shows vocabulary breakdown: `sieben = ۷، sechs = ۶، kommt nach = می‌آید بعد از`
+  - Reduces anxiety for beginners - shows them they already know the words!
+  - Applies to: `true-false` (implemented), other step types can use same schema
+  - Schema: `vocabHint` field added to BaseStepSchema with `words` and `translation`
+
 - [ ] **Practice Hub** (`/practice` route)
   - Practice Your Mistakes feature
   - Random drill mode
