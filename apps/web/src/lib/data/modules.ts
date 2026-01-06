@@ -142,6 +142,12 @@ export const A1_MODULES: ModuleStub[] = [
         title: "نه، ممنون! (Nein, danke!)",
         description: "یاد بگیرید چطور مودبانه رد کنید و عذرخواهی کنید",
         path: "/learn/de-fa/A1/A1-M03-L03"
+      },
+      {
+        id: "A1-M03-L04",
+        title: "تضادها (Kontraste)",
+        description: "یاد بگیرید چطور با sondern، noch، schon و immer تضاد و تأکید بسازید",
+        path: "/learn/de-fa/A1/A1-M03-L04"
       }
     ]
   }
