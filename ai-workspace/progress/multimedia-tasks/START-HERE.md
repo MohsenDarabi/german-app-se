@@ -127,6 +127,14 @@ Videos: apps/web/static/videos/shared/
   - Context: Dialog scene - "Zwei Kaffee, bitte." - ordering with numbers
   - Style: modern German cafe, ordering food/drinks with numbers
 
+### Lesson 08: Zahlen 11-20
+
+**Images (1):**
+
+- [ ] `scenes/a1-m01-l08-s16-markus-verkaeufer.jpg` - Markus and a shop employee (Verkäufer)
+  - Context: Dialog scene - "Was kostet das Buch?" - asking about prices with numbers
+  - Style: modern German bookshop or store, friendly customer-employee interaction
+
 ---
 
 ## Progress Summary
@@ -140,8 +148,9 @@ Videos: apps/web/static/videos/shared/
 | A1 | 01 | 05 | 1 | 0 | Pending |
 | A1 | 01 | 06 | 1 | 0 | Pending |
 | A1 | 01 | 07 | 1 | 0 | Pending |
+| A1 | 01 | 08 | 1 | 0 | Pending |
 
-**Total:** 19 tasks (19 images, 0 videos)
+**Total:** 20 tasks (20 images, 0 videos)
 
 ---
 
@@ -196,3 +205,4 @@ Check the detailed task files:
 - `A1-M01-L05.json` - Lesson 05 tasks
 - `A1-M01-L06.json` - Lesson 06 tasks
 - `A1-M01-L07.json` - Lesson 07 tasks
+- `A1-M01-L08.json` - Lesson 08 tasks
