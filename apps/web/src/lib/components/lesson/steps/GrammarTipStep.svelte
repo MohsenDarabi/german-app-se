@@ -111,6 +111,7 @@
   .grammar-text :global(.table-cell) {
     flex: 1;
     padding: 0.25rem 0.5rem;
+    unicode-bidi: plaintext; /* Auto-detect text direction for mixed content */
   }
   .examples-section {
     margin-top: 1rem;
