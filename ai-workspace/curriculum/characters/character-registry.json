@@ -1,6 +1,6 @@
 {
-  "version": "2.0.0",
-  "description": "Character registry for German Learning App content. Minimizes cognitive load while enabling realistic scenarios.",
+  "version": "2.1.0",
+  "description": "Character registry for German Learning App content. Only characters with visual definitions are available for content creation.",
   "characters": {
     "primary": {
       "names": ["Eli", "Tom"],
@@ -13,7 +13,8 @@
           "personality": ["calm", "supportive", "knowledgeable", "patient", "warm"],
           "pronouns": { "nominative": "sie", "accusative": "sie", "dative": "ihr" },
           "persianSpelling": "الی",
-          "assetPath": "content/characters/eli/"
+          "assetPath": "content/characters/eli/",
+          "available": true
         },
         "Tom": {
           "gender": "male",
@@ -22,15 +23,16 @@
           "personality": ["calm", "confident", "trustworthy", "patient", "professional"],
           "pronouns": { "nominative": "er", "accusative": "ihn", "dative": "ihm" },
           "persianSpelling": "تام",
-          "assetPath": "content/characters/tom/"
+          "assetPath": "content/characters/tom/",
+          "available": true
         }
       },
       "introducedAt": "A1-M01-L01",
       "usageRule": "ALWAYS use Eli & Tom when only 2 people are needed"
     },
     "secondary": {
-      "names": ["Lisa", "Alex", "Max", "Sophie", "Leon", "Emma"],
-      "description": "Use when 3rd or 4th person is needed, or for youth/casual scenarios.",
+      "names": ["Lisa", "Alex"],
+      "description": "Use for youth/casual scenarios or when 3rd/4th person is needed.",
       "traits": {
         "Lisa": {
           "gender": "female",
@@ -39,7 +41,8 @@
           "personality": ["playful", "energetic", "friendly", "confident", "approachable"],
           "pronouns": { "nominative": "sie", "accusative": "sie", "dative": "ihr" },
           "persianSpelling": "لیزا",
-          "assetPath": "content/characters/lisa/"
+          "assetPath": "content/characters/lisa/",
+          "available": true
         },
         "Alex": {
           "gender": "male",
@@ -48,79 +51,27 @@
           "personality": ["friendly", "cool", "confident", "approachable", "adaptable"],
           "pronouns": { "nominative": "er", "accusative": "ihn", "dative": "ihm" },
           "persianSpelling": "الکس",
-          "assetPath": "content/characters/alex/"
-        },
-        "Max": {
-          "gender": "male",
-          "age": "young adult",
-          "role": "Friend/colleague/acquaintance",
-          "pronouns": { "nominative": "er", "accusative": "ihn", "dative": "ihm" },
-          "persianSpelling": "مکس",
-          "assetPath": null
-        },
-        "Sophie": {
-          "gender": "female",
-          "age": "young adult",
-          "role": "Friend/colleague/acquaintance",
-          "pronouns": { "nominative": "sie", "accusative": "sie", "dative": "ihr" },
-          "persianSpelling": "سوفی",
-          "assetPath": null
-        },
-        "Leon": {
-          "gender": "male",
-          "age": "varies by context",
-          "role": "Family member/extended acquaintance",
-          "pronouns": { "nominative": "er", "accusative": "ihn", "dative": "ihm" },
-          "persianSpelling": "لئون",
-          "assetPath": null
-        },
-        "Emma": {
-          "gender": "female",
-          "age": "varies by context",
-          "role": "Family member/extended acquaintance",
-          "pronouns": { "nominative": "sie", "accusative": "sie", "dative": "ihr" },
-          "persianSpelling": "اِما",
-          "assetPath": null
+          "assetPath": "content/characters/alex/",
+          "available": true
         }
       },
       "introducedAt": "A1-M02 (when 3+ person scenes begin)",
-      "usageRule": "Use Lisa/Alex for youth scenarios, others when scene requires more people"
-    },
-    "persian": {
-      "names": ["Sara", "Amir"],
-      "description": "Persian-speaking characters for cultural bridge moments and relatable learner perspective.",
-      "traits": {
-        "Sara": {
-          "gender": "female",
-          "age": "young adult",
-          "role": "Persian speaker learning German, relatable learner perspective",
-          "pronouns": { "nominative": "sie", "accusative": "sie", "dative": "ihr" },
-          "nativeLanguage": "Persian (Farsi)",
-          "persianSpelling": "سارا",
-          "assetPath": null
-        },
-        "Amir": {
-          "gender": "male",
-          "age": "young adult",
-          "role": "Persian speaker living in Germany, cultural bridge",
-          "pronouns": { "nominative": "er", "accusative": "ihn", "dative": "ihm" },
-          "nativeLanguage": "Persian (Farsi)",
-          "persianSpelling": "امیر",
-          "assetPath": null
-        }
-      },
-      "introducedAt": "A1-M03 (cultural context lessons)",
-      "usageRule": "Use for Persian cultural perspective or when showing learner struggles"
+      "usageRule": "Use Lisa/Alex for youth scenarios or when more than 2 people needed"
     },
     "service": {
       "names": ["Kellner", "Verkäufer", "Arzt"],
-      "description": "Generic role names for service scenarios (not named characters).",
+      "description": "Generic role names for service scenarios (not named characters, no visual needed).",
       "usageRule": "Use role titles instead of names for brief service interactions",
       "examples": [
         "der Kellner (the waiter)",
         "die Verkäuferin (the saleswoman)",
         "der Arzt / die Ärztin (the doctor)"
       ]
+    },
+    "future": {
+      "description": "Characters reserved for future use. DO NOT use until visual definitions are created.",
+      "reserved": ["Max", "Sophie", "Leon", "Emma", "Sara", "Amir"],
+      "note": "These names are reserved but not yet available for content creation"
     }
   },
   "rules": {
@@ -136,10 +87,9 @@
     },
     "selection": {
       "twoPersonScene": "Use Eli & Tom",
-      "threePersonScene": "Use Eli, Tom + one from secondary",
-      "fourPersonScene": "Use Eli, Tom + two from secondary",
+      "threePersonScene": "Use Eli, Tom + Lisa or Alex",
+      "fourPersonScene": "Use Eli, Tom, Lisa, Alex",
       "youthScene": "Use Lisa and/or Alex for casual youth scenarios",
-      "persianPerspective": "Use Sara or Amir when showing learner experience",
       "serviceInteraction": "Use role titles (Kellner, etc.) instead of names"
     }
   },
@@ -147,57 +97,45 @@
     "A1": {
       "allowedPrimary": ["Eli", "Tom"],
       "allowedSecondary": ["Lisa", "Alex"],
-      "allowedPersian": ["Sara"],
-      "note": "Keep character count minimal for beginners"
+      "note": "Only use characters with visual definitions"
     },
     "A2": {
       "allowedPrimary": ["Eli", "Tom"],
-      "allowedSecondary": ["Lisa", "Alex", "Max", "Sophie", "Leon", "Emma"],
-      "allowedPersian": ["Sara", "Amir"],
-      "note": "Can introduce more complex multi-person scenarios"
+      "allowedSecondary": ["Lisa", "Alex"],
+      "note": "More characters will be added when visual definitions are created"
     },
     "B1": {
-      "allowedAll": true,
-      "note": "Full character roster available, learners can handle complexity"
+      "allowedPrimary": ["Eli", "Tom"],
+      "allowedSecondary": ["Lisa", "Alex"],
+      "note": "Expand roster as more characters get visual definitions"
     }
   },
   "validationRules": [
     {
       "rule": "unknown-character",
-      "description": "Fail if character name not in registry",
+      "description": "Fail if character name not in available list",
+      "severity": "error"
+    },
+    {
+      "rule": "reserved-character",
+      "description": "Fail if using a reserved (future) character name",
       "severity": "error"
     },
     {
       "rule": "too-many-characters",
       "description": "Warn if more than 4 characters in a scene",
       "severity": "warning"
-    },
-    {
-      "rule": "premature-secondary",
-      "description": "Warn if secondary character used before A1-M02",
-      "severity": "warning"
-    },
-    {
-      "rule": "unnecessary-expansion",
-      "description": "Warn if 3+ characters used when 2 would suffice",
-      "severity": "info"
     }
   ],
   "migrationNotes": {
-    "v1-to-v2": {
+    "v2-to-v2.1": {
       "date": "2026-01-06",
       "changes": [
-        "Primary characters changed: Lisa/Theo → Eli/Tom",
-        "Lisa moved to secondary (young companion role)",
-        "Alex added as secondary character",
-        "Theo removed (replaced by Tom)",
-        "Added assetPath references to characters with visual definitions",
-        "Added persianSpelling for all characters",
-        "Added personality traits for characters with full definitions"
-      ],
-      "contentImpact": [
-        "Existing lessons using 'Theo' need update to 'Tom'",
-        "Audio regeneration needed for renamed characters"
+        "Removed Max, Sophie, Leon, Emma from secondary (no visual definitions)",
+        "Removed Sara, Amir from persian category (no visual definitions)",
+        "Added 'future' category for reserved character names",
+        "Added 'available' flag to character traits",
+        "Simplified to only 4 available characters: Eli, Tom, Lisa, Alex"
       ]
     }
   }

@@ -44,10 +44,12 @@ RIGHT: واژه "Guten Tag" یعنی روز بخیر
 - **Eli** - German teacher (43, female, calm and supportive)
 - **Tom** - Language instructor (35-37, male, reliable guide)
 
-**Secondary characters** (if needed):
-- Young/casual: Lisa (18-20), Alex (21-22)
-- German: Max, Sophie, Leon, Emma
-- Persian learners: Sara, Amir
+**Secondary characters** (with visual definitions):
+- **Lisa** - Young companion (18-20, female, playful)
+- **Alex** - German student (21-22, male, adaptable)
+
+**Service roles** (no visual needed):
+- Kellner, Verkäufer, Arzt (use role titles, not names)
 
 ---
 
