@@ -19,7 +19,8 @@
  *
  * Options:
  *   --dry-run       Show what would be generated without calling API
- *   --force         Regenerate all audio (ignore manifest)
+ *   --force         Regenerate audio for specified lesson only (requires --lesson=X)
+ *   --force-all     Regenerate ALL audio (ignore manifest entirely)
  *   --status        Show usage stats only
  *   --level=A1      Filter to specific level (e.g., A1, A2, B1)
  *   --clean-level   Delete existing audio files for the level before regenerating
@@ -620,10 +621,12 @@ async function main() {
   // Parse command line args
   const args = process.argv.slice(2);
   const dryRun = args.includes('--dry-run');
-  const forceRegenerate = args.includes('--force');
+  const forceAll = args.includes('--force-all');
+  const forceLesson = args.includes('--force');
   const statusOnly = args.includes('--status');
   const cleanLevel = args.includes('--clean-level');
   const levelFilter = args.find(a => a.startsWith('--level='))?.split('=')[1];
+  const lessonFilter = args.find(a => a.startsWith('--lesson='))?.split('=')[1];
 
   // Load tracking data
   const manifest = loadManifest();
@@ -667,8 +670,18 @@ async function main() {
     console.log('🔍 DRY RUN MODE - No API calls will be made\n');
   }
 
-  if (forceRegenerate) {
-    console.log('⚠️  FORCE MODE - Ignoring manifest, regenerating all\n');
+  // Validate --force requires --lesson
+  if (forceLesson && !lessonFilter) {
+    console.error('❌ Error: --force requires --lesson=X to specify which lesson to regenerate');
+    console.log('   Example: node scripts/generate-audio.js --lesson=A1-M02-L03 --force');
+    console.log('   Use --force-all to regenerate ALL audio (expensive!)\n');
+    process.exit(1);
+  }
+
+  if (forceAll) {
+    console.log('⚠️  FORCE-ALL MODE - Regenerating ALL audio (ignoring manifest)\n');
+  } else if (forceLesson) {
+    console.log(`⚠️  FORCE MODE - Regenerating audio for lesson: ${lessonFilter}\n`);
   }
 
   // Find all lessons
@@ -686,6 +699,12 @@ async function main() {
              lesson.level?.startsWith(levelFilter);
     });
     console.log(`   Filtered to ${lessons.length} lessons for level: ${levelFilter}`);
+  }
+
+  // Apply specific lesson filter if specified
+  if (lessonFilter) {
+    lessons = lessons.filter(({ lesson }) => lesson.id === lessonFilter);
+    console.log(`   Filtered to ${lessons.length} lesson(s) for: ${lessonFilter}`);
   }
   console.log('');
 
@@ -760,11 +779,14 @@ async function main() {
   let textsAlreadyGenerated = 0;
   let charsToGenerate = 0;
 
+  // forceLesson is safe here because lessons are already filtered to just that lesson
+  const shouldForceRegenerate = forceAll || forceLesson;
+
   for (const [text, items] of textToItems) {
     const hash = getTextHash(text);
 
     // Check if already in manifest (unless force regenerate)
-    if (!forceRegenerate && manifest.generatedTexts[hash]) {
+    if (!shouldForceRegenerate && manifest.generatedTexts[hash]) {
       // Still need to copy files to all locations
       const sourceFile = manifest.generatedTexts[hash].filePath;
 
