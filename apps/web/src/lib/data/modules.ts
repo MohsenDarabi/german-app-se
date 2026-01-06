@@ -204,6 +204,12 @@ export const A1_MODULES: ModuleStub[] = [
         title: "کی؟ چطور؟ (Wann? Wie?)",
         description: "یاد بگیرید سوالات درباره زمان و چگونگی بپرسید: Wann، Wie، Wie viel، Wie lange",
         path: "/learn/de-fa/A1/A1-M05-L03"
+      },
+      {
+        id: "A1-M05-L04",
+        title: "چرا؟ کدام؟ (Warum? Welche?)",
+        description: "یاد بگیرید سوالات درباره دلیل و انتخاب بپرسید: Warum، Welcher، Welche، Welches",
+        path: "/learn/de-fa/A1/A1-M05-L04"
       }
     ]
   }

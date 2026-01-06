@@ -1,0 +1,330 @@
+{
+  "id": "A1-M05-L04",
+  "title": {
+    "de": "Warum? Welche?",
+    "fa": "چرا؟ کدام؟"
+  },
+  "description": "یاد بگیرید سوالات درباره دلیل و انتخاب بپرسید: Warum، Welcher، Welche، Welches",
+  "level": "A1",
+  "module": 5,
+  "lessonNumber": 4,
+  "totalSteps": 26,
+  "estimatedMinutes": 15,
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "سوالات دلیل و انتخاب",
+      "content": "این کلمات پرسشی برای دلیل و انتخاب استفاده می‌شوند:\n\n• **Warum?** = چرا؟\n• **Welcher?** = کدام؟ (مذکر)\n• **Welche?** = کدام؟ (مونث/جمع)\n• **Welches?** = کدام؟ (خنثی)\n\n📝 welch- مثل حرف تعریف تغییر می‌کند!",
+      "examples": [
+        { "de": "Warum lernst du Deutsch?", "fa": "چرا آلمانی یاد می‌گیری؟" },
+        { "de": "Welches Buch liest du?", "fa": "کدام کتاب را می‌خوانی؟" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": {
+        "de": "Warum",
+        "fa": "چرا"
+      },
+      "example": {
+        "text": {
+          "de": "Warum bist du hier?",
+          "fa": "چرا اینجایی؟"
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": {
+        "de": "weil",
+        "fa": "چون / به خاطر اینکه"
+      },
+      "example": {
+        "text": {
+          "de": "Weil ich Deutsch lerne.",
+          "fa": "چون آلمانی یاد می‌گیرم."
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s4",
+      "title": "جواب با weil",
+      "content": "برای جواب دادن به **Warum** از **weil** استفاده کنید:\n\nWarum lernst du Deutsch?\n→ **Weil** ich in Deutschland arbeiten möchte.\n\n⚠️ **نکته مهم:** بعد از weil فعل به **آخر** می‌رود!\n\nIch lerne Deutsch, **weil** ich es mag**.**",
+      "examples": [
+        { "de": "Warum kommst du nicht?", "fa": "چرا نمی‌آیی؟" },
+        { "de": "Weil ich krank bin.", "fa": "چون مریضم." }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "s5",
+      "title": "مکالمه: دلیل",
+      "context": "تام و الی درباره زبان صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Tom", "text": { "de": "Warum lernst du Deutsch?", "fa": "چرا آلمانی یاد می‌گیری؟" } },
+        { "speaker": "Eli", "text": { "de": "Weil ich es schön finde.", "fa": "چون فکر می‌کنم زیباست." } },
+        { "speaker": "Tom", "text": { "de": "Und warum nicht Französisch?", "fa": "و چرا فرانسوی نه؟" } },
+        { "speaker": "Eli", "text": { "de": "Weil Deutsch praktischer ist.", "fa": "چون آلمانی کاربردی‌تر است." } },
+        { "speaker": "Tom", "text": { "de": "Das stimmt!", "fa": "درسته!" } }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "Warum یا Weil؟",
+      "instruction": "کدام کلمه در جای خالی می‌آید؟",
+      "questions": [
+        { "prompt": "___ lernst du Deutsch?", "left": "Warum", "right": "Weil", "correctSide": "left" },
+        { "prompt": "___ ich es mag.", "left": "Warum", "right": "Weil", "correctSide": "right" },
+        { "prompt": "___ kommst du nicht?", "left": "Warum", "right": "Weil", "correctSide": "left" },
+        { "prompt": "___ ich krank bin.", "left": "Warum", "right": "Weil", "correctSide": "right" },
+        { "prompt": "___ ist sie traurig?", "left": "Warum", "right": "Weil", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": {
+        "de": "Welcher",
+        "fa": "کدام (مذکر)"
+      },
+      "example": {
+        "text": {
+          "de": "Welcher Mann ist dein Vater?",
+          "fa": "کدام مرد پدرت است؟"
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": {
+        "de": "Welche",
+        "fa": "کدام (مونث/جمع)"
+      },
+      "example": {
+        "text": {
+          "de": "Welche Frau ist deine Mutter?",
+          "fa": "کدام زن مادرت است؟"
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": {
+        "de": "Welches",
+        "fa": "کدام (خنثی)"
+      },
+      "example": {
+        "text": {
+          "de": "Welches Buch liest du?",
+          "fa": "کدام کتاب را می‌خوانی؟"
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "welch- مثل der/die/das",
+      "content": "**welch-** با جنس اسم تغییر می‌کند:\n\n| جنس | حرف تعریف | welch- |\n|-----|-----------|--------|\n| مذکر | der | welcher |\n| مونث | die | welche |\n| خنثی | das | welches |\n| جمع | die | welche |\n\n📝 **ساده:** welch + پایان der/die/das",
+      "examples": [
+        { "de": "der Tag: Welcher Tag?", "fa": "روز: کدام روز؟" },
+        { "de": "die Farbe: Welche Farbe?", "fa": "رنگ: کدام رنگ؟" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s10",
+      "instruction": "شکل درست welch- را انتخاب کنید",
+      "sentence": "{0} Buch möchtest du?",
+      "options": ["Welcher", "Welche", "Welches", "Welchen"],
+      "correctAnswers": [2],
+      "feedback": {
+        "explanation": "**Welches** Buch (das Buch = خنثی)"
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s11",
+      "instruction": "شکل درست welch- را انتخاب کنید",
+      "sentence": "{0} Farbe magst du?",
+      "options": ["Welcher", "Welche", "Welches", "Welchen"],
+      "correctAnswers": [1],
+      "feedback": {
+        "explanation": "**Welche** Farbe (die Farbe = مونث)"
+      }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "welch- درست",
+      "instruction": "کدام شکل welch- درست است؟",
+      "questions": [
+        { "prompt": "___ Mann? (der)", "left": "Welcher", "right": "Welche", "correctSide": "left" },
+        { "prompt": "___ Frau? (die)", "left": "Welcher", "right": "Welche", "correctSide": "right" },
+        { "prompt": "___ Kind? (das)", "left": "Welches", "right": "Welche", "correctSide": "left" },
+        { "prompt": "___ Bücher? (جمع)", "left": "Welches", "right": "Welche", "correctSide": "right" },
+        { "prompt": "___ Tag? (der)", "left": "Welcher", "right": "Welches", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s12",
+      "word": {
+        "de": "die Farbe",
+        "fa": "رنگ"
+      },
+      "example": {
+        "text": {
+          "de": "Welche Farbe magst du?",
+          "fa": "کدام رنگ را دوست داری؟"
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s13",
+      "word": {
+        "de": "krank",
+        "fa": "مریض"
+      },
+      "example": {
+        "text": {
+          "de": "Ich bin krank.",
+          "fa": "مریضم."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s14",
+      "word": {
+        "de": "praktisch",
+        "fa": "کاربردی / عملی"
+      },
+      "example": {
+        "text": {
+          "de": "Deutsch ist praktisch.",
+          "fa": "آلمانی کاربردی است."
+        }
+      }
+    },
+    {
+      "type": "dialog",
+      "id": "s15",
+      "title": "مکالمه: انتخاب",
+      "context": "لیزا و الکس در فروشگاه هستند",
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Welches T-Shirt magst du?", "fa": "کدام تی‌شرت را دوست داری؟" } },
+        { "speaker": "Alex", "text": { "de": "Das blaue. Und du?", "fa": "آبی را. و تو؟" } },
+        { "speaker": "Lisa", "text": { "de": "Ich mag das rote.", "fa": "من قرمز را دوست دارم." } },
+        { "speaker": "Alex", "text": { "de": "Warum?", "fa": "چرا؟" } },
+        { "speaker": "Lisa", "text": { "de": "Weil rot meine Lieblingsfarbe ist!", "fa": "چون قرمز رنگ مورد علاقه‌ام است!" } }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "s16",
+      "instruction": "سوال را با جواب مناسب جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Warum lernst du Deutsch?" },
+        { "id": "i2", "text": "Welches Buch liest du?" },
+        { "id": "i3", "text": "Welche Farbe magst du?" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "Weil ich es mag." },
+        { "id": "m2", "text": "Ein deutsches Buch." },
+        { "id": "m3", "text": "Blau." }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"]
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s17",
+      "question": "برای اسم مذکر کدام درست است؟",
+      "options": ["Welche", "Welches", "Welcher", "Welchen"],
+      "correctAnswerIndex": 2,
+      "feedback": {
+        "correct": "آفرین! der → Welcher",
+        "incorrect": "برای مذکر (der): Welcher"
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s18",
+      "title": "خلاصه کلمات پرسشی W",
+      "content": "در این ماژول یاد گرفتید:\n\n**سوالات بله/خیر:** فعل اول\n**کی/چی/کجا:** Wer، Was، Wo، Woher، Wohin\n**زمان/چگونگی:** Wann، Wie، Wie viel/e، Wie lange\n**دلیل/انتخاب:** Warum (+ weil)، Welcher/e/es\n\n🎯 **همه با W شروع می‌شوند!**",
+      "examples": [
+        { "de": "Warum fragst du?", "fa": "چرا می‌پرسی؟" },
+        { "de": "Weil ich neugierig bin!", "fa": "چون کنجکاوم!" }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g3",
+      "title": "مرور کلی",
+      "instruction": "کلمه پرسشی مناسب را انتخاب کنید",
+      "questions": [
+        { "prompt": "___ lernst du nicht?", "left": "Warum", "right": "Welche", "correctSide": "left" },
+        { "prompt": "___ Sprache sprichst du?", "left": "Warum", "right": "Welche", "correctSide": "right" },
+        { "prompt": "___ ich müde bin.", "left": "Warum", "right": "Weil", "correctSide": "right" },
+        { "prompt": "___ Film siehst du?", "left": "Welchen", "right": "Welches", "correctSide": "left" },
+        { "prompt": "___ kommst du so spät?", "left": "Warum", "right": "Welche", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s19",
+      "instruction": "کلمه درست را انتخاب کنید",
+      "sentence": "Ich lerne Deutsch, {0} ich in Deutschland arbeiten möchte.",
+      "options": ["warum", "weil", "welche", "dass"],
+      "correctAnswers": [1],
+      "feedback": {
+        "explanation": "**weil** ich in Deutschland arbeiten möchte. (فعل به آخر می‌رود)"
+      }
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "Warum", "fa": "چرا" },
+        { "de": "weil", "fa": "چون" },
+        { "de": "Welcher", "fa": "کدام (مذکر)" },
+        { "de": "Welche", "fa": "کدام (مونث/جمع)" },
+        { "de": "Welches", "fa": "کدام (خنثی)" },
+        { "de": "die Farbe", "fa": "رنگ" },
+        { "de": "krank", "fa": "مریض" },
+        { "de": "praktisch", "fa": "کاربردی" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما ماژول سوالات را کامل کردید!\n\n🎯 **خلاصه:**\n• **Ja/Nein:** فعل اول\n• **Wer/Was/Wo:** شخص، شیء، مکان\n• **Wann/Wie:** زمان، چگونگی\n• **Warum:** دلیل (+ weil)\n• **Welch-:** انتخاب (مطابق جنس)\n\n📝 همه کلمات پرسشی آلمانی با **W** شروع می‌شوند!",
+      "xpEarned": 50,
+      "nextLessonId": "A1-M06-L01",
+      "vocabularyLearned": [
+        { "word": { "de": "Warum", "fa": "چرا" } },
+        { "word": { "de": "weil", "fa": "چون" } },
+        { "word": { "de": "Welcher", "fa": "کدام (مذکر)" } },
+        { "word": { "de": "Welche", "fa": "کدام (مونث/جمع)" } },
+        { "word": { "de": "Welches", "fa": "کدام (خنثی)" } },
+        { "word": { "de": "die Farbe", "fa": "رنگ" } },
+        { "word": { "de": "krank", "fa": "مریض" } },
+        { "word": { "de": "praktisch", "fa": "کاربردی" } }
+      ]
+    }
+  ]
+}
