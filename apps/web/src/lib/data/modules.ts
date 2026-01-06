@@ -212,6 +212,37 @@ export const A1_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/A1/A1-M05-L04"
       }
     ]
+  },
+  {
+    id: "module-06",
+    title: "بخش ۶: زمان (Zeit)",
+    level: "A1",
+    lessons: [
+      {
+        id: "A1-M06-L01",
+        title: "ساعت چنده؟ (Wie spät ist es?)",
+        description: "یاد بگیرید چطور ساعت را به آلمانی بگویید و بپرسید.",
+        path: "/learn/de-fa/A1/A1-M06-L01"
+      },
+      {
+        id: "A1-M06-L02",
+        title: "روزهای هفته (Wochentage)",
+        description: "یاد بگیرید روزهای هفته را به آلمانی بگویید.",
+        path: "/learn/de-fa/A1/A1-M06-L02"
+      },
+      {
+        id: "A1-M06-L03",
+        title: "ماه‌ها و فصل‌ها (Monate und Jahreszeiten)",
+        description: "یاد بگیرید ماه‌ها و فصل‌های سال را به آلمانی بگویید.",
+        path: "/learn/de-fa/A1/A1-M06-L03"
+      },
+      {
+        id: "A1-M06-L04",
+        title: "برنامه روزانه (Tagesablauf)",
+        description: "یاد بگیرید درباره برنامه روزانه‌تان صحبت کنید.",
+        path: "/learn/de-fa/A1/A1-M06-L04"
+      }
+    ]
   }
 ];
 
