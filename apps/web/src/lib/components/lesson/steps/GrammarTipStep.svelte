@@ -12,7 +12,26 @@
     return /[a-zA-ZäöüßÄÖÜẞ]+\s*\([^)]+\)[،,]/.test(text);
   }
 
+  // Simple markdown parser for grammar tips
+  function parseMarkdown(text: string): string {
+    return text
+      // Escape HTML first
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      // Bold: **text**
+      .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+      // Remove table separator rows |------|------|
+      .replace(/\|[-]+\|[-]+\|/g, '')
+      // Tables: | col | col |
+      .replace(/\|([^|\n]+)\|([^|\n]+)\|/g, '<span class="table-row"><span class="table-cell">$1</span><span class="table-cell">$2</span></span>')
+      // Line breaks
+      .replace(/\n\n+/g, '</p><p>')
+      .replace(/\n/g, '<br>');
+  }
+
   $: isVocabList = hasVocabPairs(step.content);
+  $: parsedContent = parseMarkdown(step.content);
 </script>
 
 <div class="grammar-card" dir="rtl">
@@ -24,7 +43,7 @@
   {#if isVocabList}
     <VocabPillList text={step.content} variant="warning" />
   {:else}
-    <p class="grammar-text"><BiDiText text={step.content} /></p>
+    <div class="grammar-text" dir="rtl">{@html parsedContent}</div>
   {/if}
 
   {#if step.examples && step.examples.length > 0}
@@ -71,7 +90,27 @@
   }
   .grammar-text {
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.8;
+  }
+
+  .grammar-text :global(strong) {
+    font-weight: 700;
+    color: #78350f;
+  }
+
+  .grammar-text :global(p) {
+    margin-bottom: 0.75rem;
+  }
+
+  .grammar-text :global(.table-row) {
+    display: flex;
+    border-bottom: 1px solid #fcd34d;
+    padding: 0.25rem 0;
+  }
+
+  .grammar-text :global(.table-cell) {
+    flex: 1;
+    padding: 0.25rem 0.5rem;
   }
   .examples-section {
     margin-top: 1rem;
