@@ -565,6 +565,87 @@ const rules = [
       }
       return { pass: true };
     }
+  },
+  {
+    name: 'no-english-in-persian',
+    description: 'Persian content should not contain English words (except German vocabulary)',
+    check: (lesson) => {
+      // Common English words that shouldn't appear in Persian text
+      const englishPatterns = [
+        /\bvs\b/i,
+        /\band\b/i,
+        /\bor\b/i,
+        /\bthe\b/i,
+        /\bis\b/i,
+        /\bare\b/i,
+        /\bwith\b/i,
+        /\bfor\b/i,
+        /\bto\b/i,
+        /\bof\b/i,
+        /\byou\b/i,
+        /\bcan\b/i,
+        /\bwill\b/i,
+        /\bnot\b/i,
+        /\bbut\b/i,
+        /\balso\b/i,
+        /\bjust\b/i,
+        /\blike\b/i,
+        /\bmore\b/i,
+        /\bfirst\b/i,
+        /\bthen\b/i,
+        /\bbecause\b/i,
+        /\bhowever\b/i,
+        /\bexample\b/i,
+        /\bnote\b/i,
+        /\btip\b/i,
+      ];
+
+      const issues = [];
+
+      // Check grammar-tip titles and content
+      const grammarTips = lesson.steps?.filter(s => s.type === 'grammar-tip') || [];
+      for (const tip of grammarTips) {
+        // Check title (should be Persian, but may contain German words - that's OK)
+        if (tip.title) {
+          for (const pattern of englishPatterns) {
+            if (pattern.test(tip.title)) {
+              issues.push(`${tip.id} title: contains English "${tip.title.match(pattern)?.[0]}"`);
+              break;
+            }
+          }
+        }
+      }
+
+      // Check Persian translations (.fa fields)
+      function checkPersianText(obj, path = '') {
+        if (typeof obj === 'object' && obj !== null) {
+          // Check .fa fields specifically
+          if (obj.fa && typeof obj.fa === 'string') {
+            for (const pattern of englishPatterns) {
+              if (pattern.test(obj.fa)) {
+                issues.push(`${path}.fa: contains English "${obj.fa.match(pattern)?.[0]}"`);
+                break;
+              }
+            }
+          }
+          // Recurse into nested objects
+          for (const [key, value] of Object.entries(obj)) {
+            if (Array.isArray(value)) {
+              value.forEach((item, i) => checkPersianText(item, `${path}[${i}]`));
+            } else if (typeof value === 'object' && value !== null) {
+              checkPersianText(value, path ? `${path}.${key}` : key);
+            }
+          }
+        }
+      }
+
+      checkPersianText(lesson.steps, 'steps');
+
+      if (issues.length > 0) {
+        return { pass: false, error: issues.slice(0, 3).join('; ') + (issues.length > 3 ? ` (+${issues.length - 3} more)` : '') };
+      }
+      return { pass: true };
+    }
   }
 ];
 

@@ -64,7 +64,37 @@ Every German word, sentence, or phrase MUST have a Persian translation.
 
 ---
 
-### Rule 4: Game Steps Every 5-7 Steps
+### Rule 4: NO English in Persian Content
+
+**Persian text must be 100% Persian - no English words.**
+
+This applies to:
+- Grammar tip titles and content
+- Persian translations (.fa fields)
+- Instructions and feedback text
+
+| DON'T | DO |
+|-------|-----|
+| `aus vs in` | `aus در برابر in` |
+| `with subject` | `با فاعل` |
+| `Note: ...` | `نکته: ...` |
+| `for example` | `برای مثال` |
+| `first, then` | `اول، بعد` |
+
+**Common Persian equivalents:**
+- `vs` / `versus` → `در برابر` / `در مقابل`
+- `and` → `و`
+- `or` → `یا`
+- `note` / `tip` → `نکته`
+- `example` → `مثال`
+- `first` → `اول` / `نخست`
+- `then` → `بعد` / `سپس`
+
+**Validation**: The validator checks for English words in Persian content (rule: `no-english-in-persian`).
+
+---
+
+### Rule 5: Game Steps Every 5-7 Steps
 
 Insert games to maintain engagement:
 
