@@ -20,19 +20,44 @@
 
 ## Last Completed
 
-**Task**: Create A1-M01-L01 using content fusion workflow
+**Task**: Implement multimedia task management system + TTS fixes
 
-**Completed**: 2026-01-02
+**Completed**: 2026-01-06
 
 **Result**:
-- Researched Babbel A1.1 Unit 1 + Busuu A1 Chapter 1
-- Created unique lesson with 20 steps, 7 vocabulary words
-- Used original names: Max, Lena, Sophie, Felix (not source names)
-- Added Persian-specific grammar tips
-- Generated 38 audio files (12 new, 15 reused)
-- Validated: all 21 rules passed
-- Tested in browser: working correctly
-- Created 5 multimedia tasks for colleague
+- Fixed TTS bug: en-dash "–" was read as "Minus" by Google TTS
+- Added validation rule `no-tts-unfriendly-chars` (now 29 rules total)
+- Standardized characters to Lisa & Theo across all M01 lessons
+- Created `scripts/generate-multimedia-tasks.js` for auto-generating image tasks
+- Generated 12 multimedia tasks for L01-L04
+- Updated docs: rules-and-tips.md, START-HERE.md
+
+**Key Files Changed**:
+- `scripts/generate-multimedia-tasks.js` - NEW
+- `scripts/validate-lesson.js` - added TTS rule
+- `ai-workspace/references/rules-and-tips.md` - Rule 12 + updated names
+- `docs/multimedia-tasks/START-HERE.md` - colleague workflow
+- `ai-workspace/progress/multimedia-tasks/*.json` - task files for L01-L04
+
+---
+
+## Pipeline Status
+
+| Step | Status | Notes |
+|------|--------|-------|
+| Lesson JSONs | ✅ L01-L04 | Lisa & Theo characters |
+| Validation | ✅ 29 rules | All pass |
+| Audio | ✅ Generated | TTS-friendly content |
+| Multimedia Tasks | ✅ 12 tasks | Pending for colleague |
+| SRS Persistence | ❌ Gap | vocab-check ratings not saved |
+
+---
+
+## Known Issues
+
+1. **SRS not persisting vocab-check ratings** - Ratings (easy/medium/hard) are collected but discarded after lesson. Need to connect VocabCheckStep → db.vocab → SRS scheduler.
+
+2. **Multimedia tasks pending** - 12 image tasks waiting for colleague to create assets.
 
 ---
 
@@ -47,61 +72,24 @@ If you just started or conversation was compacted:
 
 ---
 
-## How to Update This File
+## Useful Commands
 
-### When STARTING a task:
-```markdown
-## Active Task
+```bash
+# Validate all lessons
+node scripts/validate-lesson.js --all
 
-**Status**: `in-progress`
+# Generate audio
+GOOGLE_APPLICATION_CREDENTIALS="./scripts/keys/gcp-tts-service-account.json" \
+  node scripts/generate-audio.js --lesson=A1-M01-L01
 
-**Task**: Create multimedia tasks for A1-M01-L01
+# Check multimedia task status
+node scripts/generate-multimedia-tasks.js --status
 
-**Started**: 2026-01-02 15:30
+# Update multimedia tasks after content changes
+node scripts/generate-multimedia-tasks.js --all --update
 
-**Details**:
-- Reading lesson JSON
-- Identifying dialog/grammar-tip steps
-- Next: create task file
-```
-
-### When FINISHING a task:
-```markdown
-## Active Task
-
-**Status**: `idle`
-
-**Task**: None
-
-**Started**: -
-
-**Details**: -
-
----
-
-## Last Completed
-
-**Task**: Create multimedia tasks for A1-M01-L01
-
-**Completed**: 2026-01-02 16:00
-
-**Result**: Created ai-workspace/progress/multimedia-tasks/A1-M01-L01.json with 5 image tasks, 2 video tasks
-```
-
-### When BLOCKED:
-```markdown
-## Active Task
-
-**Status**: `blocked`
-
-**Task**: Generate audio for A1-M01-L02
-
-**Started**: 2026-01-02 14:00
-
-**Details**:
-- BLOCKED: Missing GCP credentials
-- Waiting for: User to provide service account key
-- Can continue with: Creating next lesson instead
+# Run dev server
+pnpm run dev
 ```
 
 ---
@@ -110,8 +98,8 @@ If you just started or conversation was compacted:
 
 | Date | Task | Result |
 |------|------|--------|
-| 2026-01-02 | Create A1-M01-L01 (fusion workflow) | Completed - 20 steps, 7 vocab, audio generated, 5 multimedia tasks |
-| 2026-01-02 | Deep codebase cleanup | Completed - removed 47 orphaned audio folders, obsolete docs, 1984 files |
-| 2026-01-02 | Clean up obsolete plans | Completed - deleted 7 files, merged rules, created ROADMAP.md |
-| 2026-01-02 | Move extractors outside main app | Completed - moved to content-extractors/, updated paths |
-| 2026-01-02 | Set up ai-workspace references | Completed - 4 reference docs created |
+| 2026-01-06 | Multimedia task system | Completed - generate-multimedia-tasks.js, 12 tasks for L01-L04 |
+| 2026-01-06 | TTS fixes + validation | Completed - removed dashes, added no-tts-unfriendly-chars rule |
+| 2026-01-06 | Lisa & Theo standardization | Completed - all M01 dialogs use Lisa & Theo |
+| 2026-01-02 | Create A1-M01-L01 (fusion workflow) | Completed - 20 steps, 7 vocab, audio generated |
+| 2026-01-02 | Deep codebase cleanup | Completed - removed 47 orphaned audio folders |
