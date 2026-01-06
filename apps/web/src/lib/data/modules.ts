@@ -150,6 +150,19 @@ export const A1_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/A1/A1-M03-L04"
       }
     ]
+  },
+  {
+    id: "module-04",
+    title: "بخش ۴: حروف تعریف (Artikel)",
+    level: "A1",
+    lessons: [
+      {
+        id: "A1-M04-L01",
+        title: "حروف تعریف (der, die, das)",
+        description: "یاد بگیرید سه جنس آلمانی را: مذکر (der)، مونث (die) و خنثی (das)",
+        path: "/learn/de-fa/A1/A1-M04-L01"
+      }
+    ]
   }
 ];
 
