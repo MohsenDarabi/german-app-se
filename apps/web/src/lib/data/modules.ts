@@ -50,6 +50,12 @@ export const A1_MODULES: ModuleStub[] = [
         title: "اسمت چیه؟ (Wie heißt du?)",
         description: "یاد بگیرید چطور اسم بپرسید و خودتان را معرفی کنید.",
         path: "/learn/de-fa/A1/A1-M01-L05"
+      },
+      {
+        id: "A1-M01-L06",
+        title: "کجا زندگی می‌کنی؟ (Wo wohnst du?)",
+        description: "یاد بگیرید چطور درباره محل زندگی صحبت کنید و تفاوت aus و in را بدانید.",
+        path: "/learn/de-fa/A1/A1-M01-L06"
       }
       // Add more lessons here as content JSON files are created
     ]

@@ -138,11 +138,14 @@
                 {@const isLocked = status === 'locked'}
 
               <div class="lesson-card" class:locked={isLocked}>
+                <div class="lesson-number" class:completed={status === 'completed'} class:in-progress={status === 'in-progress'}>
+                  {globalIndex + 1}
+                </div>
                 <div class="icon" class:completed={status === 'completed'} class:in-progress={status === 'in-progress'}>
                   {getIcon(status)}
                 </div>
                 <div class="info">
-                  <h3>{lesson.title}</h3>
+                  <h3><span class="lesson-id">L{String(globalIndex + 1).padStart(2, '0')}</span> {lesson.title}</h3>
                   <p>{lesson.description}</p>
                 </div>
                 <div class="action">
@@ -187,16 +190,20 @@
               {#each module.lessons as lesson, lessonIndex}
                 {@const a1TotalLessons = A1_MODULES.reduce((sum, m) => sum + m.lessons.length, 0)}
                 {@const globalIndex = a1TotalLessons + A2_MODULES.slice(0, moduleIndex).reduce((sum, m) => sum + m.lessons.length, 0) + lessonIndex}
+                {@const a2LessonNum = A2_MODULES.slice(0, moduleIndex).reduce((sum, m) => sum + m.lessons.length, 0) + lessonIndex + 1}
                 {@const status = getLessonStatus(lesson.id, globalIndex)}
                 {@const progress = $progressMap?.get(lesson.id)}
                 {@const isLocked = status === 'locked'}
 
               <div class="lesson-card" class:locked={isLocked}>
+                <div class="lesson-number" class:completed={status === 'completed'} class:in-progress={status === 'in-progress'}>
+                  {a2LessonNum}
+                </div>
                 <div class="icon" class:completed={status === 'completed'} class:in-progress={status === 'in-progress'}>
                   {getIcon(status)}
                 </div>
                 <div class="info">
-                  <h3>{lesson.title}</h3>
+                  <h3><span class="lesson-id">L{String(a2LessonNum).padStart(2, '0')}</span> {lesson.title}</h3>
                   <p>{lesson.description}</p>
                 </div>
                 <div class="action">
@@ -392,6 +399,40 @@
   .lesson-card.locked:hover {
     transform: none;
     box-shadow: none;
+  }
+
+  .lesson-number {
+    width: 2rem;
+    height: 2rem;
+    background: #e2e8f0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: #64748b;
+    flex-shrink: 0;
+  }
+
+  .lesson-number.completed {
+    background: #dcfce7;
+    color: #16a34a;
+  }
+
+  .lesson-number.in-progress {
+    background: #fef3c7;
+    color: #d97706;
+  }
+
+  .lesson-id {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #94a3b8;
+    background: #f1f5f9;
+    padding: 0.15rem 0.4rem;
+    border-radius: 0.25rem;
+    margin-left: 0.5rem;
   }
 
   .icon {
