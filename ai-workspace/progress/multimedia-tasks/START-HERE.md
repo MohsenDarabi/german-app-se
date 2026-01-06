@@ -135,6 +135,14 @@ Videos: apps/web/static/videos/shared/
   - Context: Dialog scene - "Was kostet das Buch?" - asking about prices with numbers
   - Style: modern German bookshop or store, friendly customer-employee interaction
 
+### Lesson 09: Zahlen 21-100
+
+**Images (1):**
+
+- [ ] `scenes/a1-m01-l09-s17-lisa-theo.jpg` - Lisa and Theo talking about grandparents' ages
+  - Context: Dialog scene - "Theo, wie alt ist dein Opa?" - discussing ages with larger numbers
+  - Style: modern German setting, friendly conversation about family ages
+
 ---
 
 ## Progress Summary
@@ -149,8 +157,9 @@ Videos: apps/web/static/videos/shared/
 | A1 | 01 | 06 | 1 | 0 | Pending |
 | A1 | 01 | 07 | 1 | 0 | Pending |
 | A1 | 01 | 08 | 1 | 0 | Pending |
+| A1 | 01 | 09 | 1 | 0 | Pending |
 
-**Total:** 20 tasks (20 images, 0 videos)
+**Total:** 21 tasks (21 images, 0 videos)
 
 ---
 
@@ -206,3 +215,4 @@ Check the detailed task files:
 - `A1-M01-L06.json` - Lesson 06 tasks
 - `A1-M01-L07.json` - Lesson 07 tasks
 - `A1-M01-L08.json` - Lesson 08 tasks
+- `A1-M01-L09.json` - Lesson 09 tasks

@@ -20,26 +20,26 @@
 
 ## Last Completed
 
-**Task**: Create A1-M01-L08 (Zahlen 11-20)
+**Task**: Create A1-M01-L09 (Zahlen 21-100)
 
 **Completed**: 2026-01-06
 
 **Result**:
-- Created L08: "Zahlen 11-20" (Numbers 11-20)
-- Vocabulary: elf, zwölf, dreizehn, vierzehn, fünfzehn, sechzehn, siebzehn, achtzehn, neunzehn, zwanzig
-- 22 steps: new-word, grammar-tip, rapid-fire, matching, dialog, fill-in-blank, etc.
-- Added vocabHint to true-false question for pedagogical scaffolding
+- Created L09: "Zahlen 21-100" (Numbers 21-100)
+- Vocabulary: einundzwanzig, zweiundzwanzig, dreiundzwanzig, dreißig, vierzig, fünfzig, sechzig, siebzig, achtzig, neunzig, hundert
+- 24 steps: grammar-tip (units before tens pattern), new-word, rapid-fire, matching, dialog, multiple-choice, fill-in-blank, true-false, vocab-check
+- Key grammar: German number pattern (units + und + tens), dreißig exception, sechzig/siebzig spelling
 - All validation rules pass
-- Audio generated (28 new texts)
-- Multimedia task generated (1 shop dialog image)
+- Audio generated (32 new texts)
+- Multimedia task generated (1 age dialog image)
 - All progress files updated
 
 **Key Files Changed**:
-- `content/de-fa/A1/module-01/A1-M01-L08.json` - NEW
-- `apps/web/static/audio/A1-M01-L08/` - Audio files
+- `content/de-fa/A1/module-01/A1-M01-L09.json` - NEW
+- `apps/web/static/audio/A1-M01-L09/` - Audio files
 - `ai-workspace/progress/*` - Updated all tracking files
 
-**Previous**: Implement Vocabulary Hints for German-only Questions
+**Previous**: Create A1-M01-L08 (Zahlen 11-20)
 
 ---
 
@@ -47,10 +47,10 @@
 
 | Step | Status | Notes |
 |------|--------|-------|
-| Lesson JSONs | 8 lessons | L01-L08 complete |
+| Lesson JSONs | 9 lessons | L01-L09 complete |
 | Validation | 30 rules | All pass |
-| Audio | Complete | All 8 lessons have audio |
-| Multimedia Tasks | 20 tasks | Pending for colleague |
+| Audio | Complete | All 9 lessons have audio |
+| Multimedia Tasks | 21 tasks | Pending for colleague |
 | SRS Persistence | Gap | vocab-check ratings not saved |
 
 ---
@@ -59,7 +59,7 @@
 
 1. **SRS not persisting vocab-check ratings** - Ratings (easy/medium/hard) are collected but discarded after lesson. Need to connect VocabCheckStep -> db.vocab -> SRS scheduler.
 
-2. **Multimedia tasks pending** - 19 image tasks waiting for colleague to create assets.
+2. **Multimedia tasks pending** - 21 image tasks waiting for colleague to create assets.
 
 ---
 
@@ -81,17 +81,17 @@ If you just started or conversation was compacted:
 node scripts/validate-lesson.js --all
 
 # Validate single lesson
-node scripts/validate-lesson.js content/de-fa/A1/module-01/A1-M01-L07.json
+node scripts/validate-lesson.js content/de-fa/A1/module-01/A1-M01-L09.json
 
 # Generate audio
 GOOGLE_APPLICATION_CREDENTIALS="./scripts/keys/gcp-tts-service-account.json" \
-  node scripts/generate-audio.js --lesson=A1-M01-L07
+  node scripts/generate-audio.js --lesson=A1-M01-L09
 
 # Check multimedia task status
 node scripts/generate-multimedia-tasks.js --status
 
 # Generate multimedia tasks for a lesson
-node scripts/generate-multimedia-tasks.js --lesson=A1-M01-L07
+node scripts/generate-multimedia-tasks.js --lesson=A1-M01-L09
 
 # Update multimedia tasks after content changes
 node scripts/generate-multimedia-tasks.js --all --update
@@ -106,8 +106,8 @@ pnpm run dev
 
 | Date | Task | Result |
 |------|------|--------|
+| 2026-01-06 | Create A1-M01-L09 | Completed - Numbers 21-100: einundzwanzig to hundert |
 | 2026-01-06 | Create A1-M01-L08 | Completed - Numbers 11-20: elf to zwanzig |
 | 2026-01-06 | Vocabulary hints feature | Completed - expandable hints for German-only questions |
 | 2026-01-06 | Create A1-M01-L07 | Completed - Numbers 1-10: eins to zehn |
 | 2026-01-06 | Create A1-M01-L06 | Completed - Wo wohnst du? (Where do you live?) |
-| 2026-01-06 | Create A1-M01-L05 | Completed - names/introductions: Wie heißt du?, Freut mich! |
