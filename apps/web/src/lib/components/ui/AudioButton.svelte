@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { onDestroy } from 'svelte';
   import { playGerman, stopAudio } from '$lib/utils/audio';
 
   export let text: string;
@@ -22,6 +23,13 @@
       isPlaying = false;
     }
   }
+
+  // Stop audio when component is destroyed (e.g., navigating away)
+  onDestroy(() => {
+    if (isPlaying) {
+      stopAudio();
+    }
+  });
 </script>
 
 <button

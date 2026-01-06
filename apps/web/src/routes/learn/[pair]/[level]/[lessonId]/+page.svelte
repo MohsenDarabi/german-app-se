@@ -11,6 +11,7 @@
     markWrongAnswersReviewed,
     completeLessonWithStats
   } from "$lib/services/progressService";
+  import { stopAudio } from "$lib/utils/audio";
   import type { WrongAnswer } from "$lib/db";
 
   export let data;
@@ -56,6 +57,8 @@
     // Clean up keyboard listener (only in browser)
     if (browser) {
       window.removeEventListener('keydown', handleKeydown);
+      // Stop any playing audio when leaving the page
+      stopAudio();
     }
   });
 
@@ -65,6 +68,8 @@
   }
 
   function handleContinue() {
+    // Stop any playing audio before moving to next step
+    stopAudio();
     lessonStore.nextStep();
   }
 
