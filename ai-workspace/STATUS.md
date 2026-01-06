@@ -8,7 +8,7 @@
 
 **Create A1 lessons using content fusion approach**
 
-Next lesson to create: `A1-M02-L01` (Module 2 begins!)
+Next lesson to create: `A1-M02-L02` (continue Module 2)
 
 ---
 
@@ -19,10 +19,10 @@ Next lesson to create: `A1-M02-L01` (Module 2 begins!)
 | Level | Module | Lessons | Status |
 |-------|--------|---------|--------|
 | A1 | M01 | L01-L10 | Complete! All 10 lessons created |
-| A1 | M02+ | - | Not created |
+| A1 | M02 | L01 | In progress (1 lesson) |
 | A2 | - | - | Not created |
 
-**Total active lessons: 10**
+**Total active lessons: 11**
 
 ### Lessons Summary
 
@@ -38,6 +38,7 @@ Next lesson to create: `A1-M02-L01` (Module 2 begins!)
 | A1-M01-L08 | Zahlen 11-20 | اعداد ۱۱ تا ۲۰ | 22 |
 | A1-M01-L09 | Zahlen 21-100 | اعداد ۲۱ تا ۱۰۰ | 24 |
 | A1-M01-L10 | Telefonnummern | شماره تلفن | 22 |
+| A1-M02-L01 | sein und haben | بودن و داشتن | 24 |
 
 ---
 
@@ -75,16 +76,17 @@ All 10 lessons have audio generated!
 
 | Date | Change |
 |------|--------|
+| 2026-01-06 | Created A1-M02-L01 (sein und haben) - Module 2 begins! |
 | 2026-01-06 | Created A1-M01-L10 (Telefonnummern) - Module 1 complete! |
 | 2026-01-06 | Created A1-M01-L09 (Zahlen 21-100) |
 | 2026-01-06 | Created A1-M01-L08 (Zahlen 11-20) |
 | 2026-01-06 | Created A1-M01-L07 (Zahlen 1-10) |
-| 2026-01-06 | Fixed 3-column table parser in grammar tips |
 
 ---
 
 ## Next Steps
 
 1. [x] Complete A1 Module 01 (10 lessons)
-2. [ ] Start A1 Module 02
-3. [ ] Colleague creates multimedia assets (23 images)
+2. [x] Start A1 Module 02 (L01 done)
+3. [ ] Continue A1 Module 02 (L02-L10)
+4. [ ] Colleague creates multimedia assets (24 images)

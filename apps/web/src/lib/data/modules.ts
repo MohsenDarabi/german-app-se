@@ -81,10 +81,21 @@ export const A1_MODULES: ModuleStub[] = [
         description: "یاد بگیرید چطور شماره تلفن بپرسید و بگویید.",
         path: "/learn/de-fa/A1/A1-M01-L10"
       }
-      // Add more lessons here as content JSON files are created
+    ]
+  },
+  {
+    id: "module-02",
+    title: "بخش ۲: فعل‌ها (Verben)",
+    level: "A1",
+    lessons: [
+      {
+        id: "A1-M02-L01",
+        title: "بودن و داشتن (sein und haben)",
+        description: "دو فعل مهم آلمانی را یاد بگیرید: sein (بودن) و haben (داشتن).",
+        path: "/learn/de-fa/A1/A1-M02-L01"
+      }
     ]
   }
-  // Add more modules here as lessons are created
 ];
 
 // A2 modules - add when content is created
