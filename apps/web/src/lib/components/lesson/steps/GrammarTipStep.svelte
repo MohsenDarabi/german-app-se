@@ -21,14 +21,21 @@
       .replace(/>/g, '&gt;')
       // Bold: **text**
       .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
-      // Remove table separator rows (2, 3, or 4 columns)
-      .replace(/\|[-]+\|[-]+\|[-]+\|[-]+\|/g, '')
-      .replace(/\|[-]+\|[-]+\|[-]+\|/g, '')
-      .replace(/\|[-]+\|[-]+\|/g, '')
-      // Tables: 3 columns | col | col | col |
+      // Remove table separator rows (2, 3, 4, or 5 columns)
+      .replace(/\|[-\s]+\|[-\s]+\|[-\s]+\|[-\s]+\|[-\s]+\|/g, '')
+      .replace(/\|[-\s]+\|[-\s]+\|[-\s]+\|[-\s]+\|/g, '')
+      .replace(/\|[-\s]+\|[-\s]+\|[-\s]+\|/g, '')
+      .replace(/\|[-\s]+\|[-\s]+\|/g, '')
+      // Tables: 5 columns
+      .replace(/\|([^|\n]+)\|([^|\n]+)\|([^|\n]+)\|([^|\n]+)\|([^|\n]+)\|/g, '<span class="table-row"><span class="table-cell">$1</span><span class="table-cell">$2</span><span class="table-cell">$3</span><span class="table-cell">$4</span><span class="table-cell">$5</span></span>')
+      // Tables: 4 columns
+      .replace(/\|([^|\n]+)\|([^|\n]+)\|([^|\n]+)\|([^|\n]+)\|/g, '<span class="table-row"><span class="table-cell">$1</span><span class="table-cell">$2</span><span class="table-cell">$3</span><span class="table-cell">$4</span></span>')
+      // Tables: 3 columns
       .replace(/\|([^|\n]+)\|([^|\n]+)\|([^|\n]+)\|/g, '<span class="table-row"><span class="table-cell">$1</span><span class="table-cell">$2</span><span class="table-cell">$3</span></span>')
-      // Tables: 2 columns | col | col |
+      // Tables: 2 columns
       .replace(/\|([^|\n]+)\|([^|\n]+)\|/g, '<span class="table-row"><span class="table-cell">$1</span><span class="table-cell">$2</span></span>')
+      // Bullet points: • item
+      .replace(/^[•]\s*(.+)$/gm, '<span class="bullet-item">$1</span>')
       // Line breaks
       .replace(/\n\n+/g, '</p><p>')
       .replace(/\n/g, '<br>');
@@ -144,6 +151,20 @@
   .grammar-text :global(.table-cell:last-child) {
     text-align: left; /* German words on left */
     direction: ltr;
+  }
+
+  .grammar-text :global(.bullet-item) {
+    display: block;
+    padding-right: 1.25rem;
+    position: relative;
+    margin-bottom: 0.25rem;
+  }
+
+  .grammar-text :global(.bullet-item)::before {
+    content: '•';
+    position: absolute;
+    right: 0;
+    color: #d97706;
   }
   .examples-section {
     margin-top: 1rem;
