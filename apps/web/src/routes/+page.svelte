@@ -138,14 +138,12 @@
                 {@const isLocked = status === 'locked'}
 
               <div class="lesson-card" class:locked={isLocked}>
-                <div class="lesson-number" class:completed={status === 'completed'} class:in-progress={status === 'in-progress'}>
-                  {globalIndex + 1}
-                </div>
                 <div class="icon" class:completed={status === 'completed'} class:in-progress={status === 'in-progress'}>
-                  {getIcon(status)}
+                  <span class="lesson-num">{globalIndex + 1}</span>
+                  <span class="status-icon">{getIcon(status)}</span>
                 </div>
                 <div class="info">
-                  <h3><span class="lesson-id">L{String(globalIndex + 1).padStart(2, '0')}</span> {lesson.title}</h3>
+                  <h3>{lesson.title}</h3>
                   <p>{lesson.description}</p>
                 </div>
                 <div class="action">
@@ -196,14 +194,12 @@
                 {@const isLocked = status === 'locked'}
 
               <div class="lesson-card" class:locked={isLocked}>
-                <div class="lesson-number" class:completed={status === 'completed'} class:in-progress={status === 'in-progress'}>
-                  {a2LessonNum}
-                </div>
                 <div class="icon" class:completed={status === 'completed'} class:in-progress={status === 'in-progress'}>
-                  {getIcon(status)}
+                  <span class="lesson-num">{a2LessonNum}</span>
+                  <span class="status-icon">{getIcon(status)}</span>
                 </div>
                 <div class="info">
-                  <h3><span class="lesson-id">L{String(a2LessonNum).padStart(2, '0')}</span> {lesson.title}</h3>
+                  <h3>{lesson.title}</h3>
                   <p>{lesson.description}</p>
                 </div>
                 <div class="action">
@@ -401,52 +397,31 @@
     box-shadow: none;
   }
 
-  .lesson-number {
-    width: 2rem;
-    height: 2rem;
-    background: #e2e8f0;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 0.9rem;
-    color: #64748b;
-    flex-shrink: 0;
-  }
-
-  .lesson-number.completed {
-    background: #dcfce7;
-    color: #16a34a;
-  }
-
-  .lesson-number.in-progress {
-    background: #fef3c7;
-    color: #d97706;
-  }
-
-  .lesson-id {
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: #94a3b8;
-    background: #f1f5f9;
-    padding: 0.15rem 0.4rem;
-    border-radius: 0.25rem;
-    margin-left: 0.5rem;
-  }
-
   .icon {
     width: 3rem;
     height: 3rem;
     background: #3b82f6;
     border-radius: 50%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 1.2rem;
-    box-shadow: 0 0 0 4px #fff; /* Gap for timeline */
+    box-shadow: 0 0 0 4px #fff;
     flex-shrink: 0;
+    position: relative;
+  }
+
+  .icon .lesson-num {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .icon .status-icon {
+    font-size: 0.6rem;
+    line-height: 1;
+    margin-top: 1px;
   }
 
   .icon.completed {
@@ -534,19 +509,104 @@
   }
 
   @media (max-width: 600px) {
+    .dashboard {
+      padding: 1rem 0.75rem;
+    }
+
+    .header h1 {
+      font-size: 1.5rem;
+    }
+
+    .stats-header {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.5rem;
+    }
+
+    .stat {
+      padding: 0.75rem 0.5rem;
+    }
+
+    .stat-value {
+      font-size: 1.25rem;
+    }
+
     .timeline::before {
-        left: 1.5rem;
+      display: none;
     }
+
+    .lesson-card {
+      flex-wrap: wrap;
+      padding: 0.875rem;
+      gap: 0.75rem;
+    }
+
     .icon {
-        width: 2.5rem;
-        height: 2.5rem;
-        font-size: 1rem;
+      width: 2.75rem;
+      height: 2.75rem;
+      box-shadow: none;
     }
+
+    .icon .lesson-num {
+      font-size: 0.95rem;
+    }
+
+    .icon .status-icon {
+      font-size: 0.55rem;
+    }
+
+    .info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .info h3 {
+      font-size: 0.95rem;
+      line-height: 1.3;
+    }
+
+    .info p {
+      font-size: 0.8rem;
+      line-height: 1.4;
+    }
+
+    .action {
+      width: 100%;
+      margin-top: 0.25rem;
+    }
+
+    .start-btn {
+      width: 100%;
+      text-align: center;
+      padding: 0.6rem 1rem;
+    }
+
+    .action-group {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .action-group .start-btn {
+      flex: 1;
+    }
+
+    .reset-btn {
+      white-space: nowrap;
+    }
+
     .module-title {
-        margin-left: 0;
-        margin-bottom: 1rem;
-        display: block;
-        text-align: center;
+      margin-left: 0;
+      margin-bottom: 1rem;
+      display: block;
+      text-align: center;
+    }
+
+    .level-title {
+      font-size: 1.2rem;
+      padding: 0.6rem 0.75rem;
+    }
+
+    .lessons-list {
+      gap: 1rem;
     }
   }
 </style>
