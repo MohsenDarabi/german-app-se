@@ -44,6 +44,12 @@ export const A1_MODULES: ModuleStub[] = [
         title: "من آلمانی صحبت می‌کنم! (Ich spreche Deutsch!)",
         description: "یاد بگیرید چطور درباره زبان‌هایی که صحبت می‌کنید و یاد می‌گیرید صحبت کنید.",
         path: "/learn/de-fa/A1/A1-M01-L04"
+      },
+      {
+        id: "A1-M01-L05",
+        title: "اسمت چیه؟ (Wie heißt du?)",
+        description: "یاد بگیرید چطور اسم بپرسید و خودتان را معرفی کنید.",
+        path: "/learn/de-fa/A1/A1-M01-L05"
       }
       // Add more lessons here as content JSON files are created
     ]
