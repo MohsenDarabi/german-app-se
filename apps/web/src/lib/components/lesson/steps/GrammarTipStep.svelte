@@ -21,9 +21,13 @@
       .replace(/>/g, '&gt;')
       // Bold: **text**
       .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
-      // Remove table separator rows |------|------|
+      // Remove table separator rows (2, 3, or 4 columns)
+      .replace(/\|[-]+\|[-]+\|[-]+\|[-]+\|/g, '')
+      .replace(/\|[-]+\|[-]+\|[-]+\|/g, '')
       .replace(/\|[-]+\|[-]+\|/g, '')
-      // Tables: | col | col |
+      // Tables: 3 columns | col | col | col |
+      .replace(/\|([^|\n]+)\|([^|\n]+)\|([^|\n]+)\|/g, '<span class="table-row"><span class="table-cell">$1</span><span class="table-cell">$2</span><span class="table-cell">$3</span></span>')
+      // Tables: 2 columns | col | col |
       .replace(/\|([^|\n]+)\|([^|\n]+)\|/g, '<span class="table-row"><span class="table-cell">$1</span><span class="table-cell">$2</span></span>')
       // Line breaks
       .replace(/\n\n+/g, '</p><p>')
