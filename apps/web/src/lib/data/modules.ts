@@ -136,6 +136,12 @@ export const A1_MODULES: ModuleStub[] = [
         title: "هیچ / ندارم (kein/keine)",
         description: "یاد بگیرید چطور اسم‌ها را منفی کنید با kein و keine",
         path: "/learn/de-fa/A1/A1-M03-L02"
+      },
+      {
+        id: "A1-M03-L03",
+        title: "نه، ممنون! (Nein, danke!)",
+        description: "یاد بگیرید چطور مودبانه رد کنید و عذرخواهی کنید",
+        path: "/learn/de-fa/A1/A1-M03-L03"
       }
     ]
   }
