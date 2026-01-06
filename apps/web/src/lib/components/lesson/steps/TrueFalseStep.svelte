@@ -37,6 +37,9 @@
     isCorrect = false;
     canRetry = false;
   }
+
+  // Check if statement is pure German (no Persian/Arabic characters)
+  $: isPureGerman = !/[\u0600-\u06FF]/.test(step.statement);
 </script>
 
 <div class="true-false-container">
@@ -47,12 +50,14 @@
   <div class="statement-card">
     <div class="statement-row">
       <p class="statement" dir="rtl"><BiDiText text={step.statement} /></p>
-      <AudioButton
-        text={step.statement}
-        {lessonId}
-        audioId="{step.id}-statement"
-        size="md"
-      />
+      {#if isPureGerman}
+        <AudioButton
+          text={step.statement}
+          {lessonId}
+          audioId="{step.id}-statement"
+          size="md"
+        />
+      {/if}
     </div>
     {#if step.statementExplanation}
       <p class="statement-explanation" dir="rtl"><BiDiText text={step.statementExplanation} /></p>
