@@ -103,6 +103,30 @@ Videos: apps/web/static/videos/shared/
   - Context: Grammar tip - how verbs change: ich spreche vs du sprichst
   - Style: clean infographic, color-coded (ich=blue, du=green)
 
+### Lesson 05: Wie heißt du?
+
+**Images (1):**
+
+- [ ] `greetings/a1-m01-l05-s12-lisa-theo.jpg` - Lisa and Theo meeting for the first time
+  - Context: Dialog scene - "Hallo! Wie heißt du?" - first introductions
+  - Style: friendly, modern German cafe or park setting
+
+### Lesson 06: Wo wohnst du?
+
+**Images (1):**
+
+- [ ] `greetings/a1-m01-l06-s13-lisa-theo.jpg` - Lisa and Theo having a longer conversation
+  - Context: Dialog scene - "Hallo! Ich heiße Lisa. Und du?" - discussing where they live
+  - Style: friendly, modern German setting, 10-line conversation
+
+### Lesson 07: Zahlen 1-10
+
+**Images (1):**
+
+- [ ] `expressions/a1-m01-l07-s17-lisa-kellner-theo.jpg` - Lisa, Theo, and a waiter at a cafe
+  - Context: Dialog scene - "Zwei Kaffee, bitte." - ordering with numbers
+  - Style: modern German cafe, ordering food/drinks with numbers
+
 ---
 
 ## Progress Summary
@@ -113,8 +137,11 @@ Videos: apps/web/static/videos/shared/
 | A1 | 01 | 02 | 3 | 0 | Pending |
 | A1 | 01 | 03 | 4 | 0 | Pending |
 | A1 | 01 | 04 | 4 | 0 | Pending |
+| A1 | 01 | 05 | 1 | 0 | Pending |
+| A1 | 01 | 06 | 1 | 0 | Pending |
+| A1 | 01 | 07 | 1 | 0 | Pending |
 
-**Total:** 16 tasks (16 images, 0 videos)
+**Total:** 19 tasks (19 images, 0 videos)
 
 ---
 
@@ -166,3 +193,6 @@ Check the detailed task files:
 - `A1-M01-L02.json` - Lesson 02 tasks
 - `A1-M01-L03.json` - Lesson 03 tasks
 - `A1-M01-L04.json` - Lesson 04 tasks
+- `A1-M01-L05.json` - Lesson 05 tasks
+- `A1-M01-L06.json` - Lesson 06 tasks
+- `A1-M01-L07.json` - Lesson 07 tasks
