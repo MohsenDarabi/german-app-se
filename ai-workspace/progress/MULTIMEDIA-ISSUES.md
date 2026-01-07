@@ -11,9 +11,10 @@ After thorough review of all lessons (A1 M01-M06), the following issues were fou
 
 | Issue Type | Count | Severity |
 |------------|-------|----------|
-| Duplicate asset (explicit imageId) | 1 | Low |
+| Duplicate asset (explicit imageId) | 1 | Low | ✅ FIXED |
 | Wrong category (substring match) | 10+ | Medium |
 | Inconsistent country categorization | 1 | Low |
+| **Dialog images not displayed in UI** | 40 | **High** |
 
 ---
 
@@ -100,6 +101,49 @@ After thorough review of all lessons (A1 M01-M06), the following issues were fou
 
 ---
 
+## Issue 7: Dialog Scene Images Not Displayed in UI ⚠️ HIGH PRIORITY
+
+**Severity:** HIGH - Asset/UI mismatch
+
+**Problem:** The asset registry generates scene images for all dialog steps (40 assets), but the `DialogStep.svelte` component has NO image support at all.
+
+**Example:**
+- Asset registry has: `img-a1-m01-l01-s14-eli-tom` (Eli and Tom conversing)
+- DialogStep component displays: Only text bubbles, no scene image
+
+**Current DialogStep component:**
+```svelte
+// apps/web/src/lib/components/lesson/steps/DialogStep.svelte
+// - Shows speaker names
+// - Shows German/Persian text in chat bubbles
+// - Shows audio buttons
+// - NO image element, NO placeholder
+```
+
+**Asset registry creates for dialogs:**
+```json
+{
+  "id": "img-a1-m01-l01-s14-eli-tom",
+  "type": "image",
+  "category": "dialogs",
+  "path": "/images/shared/dialogs/img-a1-m01-l01-s14-eli-tom.jpg",
+  "speakers": ["Eli", "Tom"],
+  "characterRefs": ["content/characters/eli/eli-fullbody.md", "content/characters/tom/tom-fullbody.md"],
+  "action": "Eli and Tom conversing: \"Hallo Tom!...\""
+}
+```
+
+**Options:**
+1. **Update DialogStep component** to show scene images (like NewWordStep does)
+2. **Remove dialog assets from registry** if scene images aren't needed
+3. **Keep as-is** for future feature (dialog scene images)
+
+**Affected assets:** ~40 dialog scene images
+
+**Recommendation:** Decide on design direction before designer creates 40 dialog scene images that may never be displayed.
+
+---
+
 ## Recommended Fixes
 
 ### Priority 1: Category Matching Logic
@@ -153,12 +197,17 @@ jq -r '.assets | keys[]' apps/web/src/lib/data/asset-registry.json | sort | uniq
 ## Impact Assessment
 
 **Current state:**
-- 338 total assets
+- 337 total assets (after duplicate fix)
 - ~10-15 miscategorized (3-4%)
-- 1 duplicate
+- ~40 dialog scene images that won't be displayed
 
 **User impact:** None (categories only affect designer workflow, not lesson functionality)
 
-**Designer impact:** Low - wrong character might be suggested for ~10 images
+**Designer impact:**
+- Low - wrong character might be suggested for ~10 images
+- **HIGH** - 40 dialog scene images would be wasted effort if created
 
-**Recommendation:** Fix in next iteration, not urgent.
+**Recommendation:**
+1. ✅ Duplicate fix - DONE
+2. ⚠️ Dialog image decision - URGENT (before designer starts work)
+3. Category fixes - next iteration, not urgent
