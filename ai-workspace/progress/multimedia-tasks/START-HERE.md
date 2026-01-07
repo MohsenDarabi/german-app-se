@@ -6,11 +6,12 @@
 
 ## Quick Start
 
-1. Run `node scripts/check-multimedia-tasks.js -p 10` to see next pending assets
-2. Check the asset registry for detailed specs
-3. Create the asset following the specs
-4. Save to the output path with semantic naming (e.g., `img-greeting-wave.png`)
-5. Run `node scripts/check-multimedia-tasks.js -s` to auto-mark as completed
+1. Check `TASK-SUMMARY.md` for the full checklist with checkboxes
+2. Or run `node scripts/check-multimedia-tasks.js -p 10` to see next pending assets
+3. Check the asset registry for detailed specs
+4. Create the asset following the specs
+5. Save to the output path with semantic naming (e.g., `img-greeting-wave.png`)
+6. Run `node scripts/check-multimedia-tasks.js -s` to auto-mark as completed
 
 ---
 
@@ -28,6 +29,9 @@ node scripts/check-multimedia-tasks.js -s
 
 # Validate asset registry
 node scripts/validate-multimedia-tasks.js
+
+# Regenerate TASK-SUMMARY.md checklist
+node scripts/generate-task-summary.js
 ```
 
 ---
@@ -35,6 +39,10 @@ node scripts/validate-multimedia-tasks.js
 ## File Structure
 
 ```
+ai-workspace/progress/multimedia-tasks/
+├── START-HERE.md           # This guide
+└── TASK-SUMMARY.md         # Auto-generated checklist (run generate-task-summary.js)
+
 apps/web/src/lib/data/
 └── asset-registry.json     # Central registry (source of truth)
 
