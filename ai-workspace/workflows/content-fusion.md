@@ -76,22 +76,19 @@ Contains per-screen extracted content:
 
 ## CRITICAL: Creating UNIQUE Content
 
-### Rule 1: Change ALL Names
+### Rule 1: Use OUR Characters
 
-**DO NOT** use names from source materials. Use common modern German names:
+**DO NOT** use names from source materials. Use our defined characters:
 
-| Source Name   | Replace With       |
-| ------------- | ------------------ | ---- |
-| Anna (Babbel) | Lena, Sophie, Emma | Lisa |
-| Tom (Babbel)  | Max, Felix, Leon   |
-| Maria         | Hannah, Mia, Lea   |
-| Peter         | Paul, Lukas, Jonas |
+| Character | Role | Description |
+|-----------|------|-------------|
+| **Eli** | Primary | German teacher (43, female, calm and supportive) |
+| **Tom** | Primary | Language instructor (35-37, male, reliable guide) |
+| **Lisa** | Secondary | Young companion (18-20, female, playful) |
+| **Alex** | Secondary | German student (21-22, male, adaptable) |
 
-**Common German names to use:**
-
-- Female: Lena, Sophie, Emma, Hannah, Mia, Lea, Laura, Anna, Lisa, Sarah
-- Male: Max, Felix, Leon, Paul, Lukas, Jonas, Tim, David, Finn, Ben
-- Persian names (for learner character): Amir, Sara, Maryam, Ali, Neda, Reza
+**Service roles** (no consistent visuals needed):
+- Kellner, Verkäufer, Arzt (use role titles, not names)
 
 ### Rule 2: Rewrite Dialogs
 
@@ -107,9 +104,9 @@ Tom: Hallo Anna! Ich heiße Tom.
 **Our version:**
 
 ```
-Lena: Hallo! Ich bin Lena.
-Max: Hi Lena! Ich heiße Max. Freut mich!
-Lena: Freut mich auch, Max!
+Eli: Hallo! Ich bin Eli.
+Tom: Hi Eli! Ich heiße Tom. Freut mich!
+Eli: Freut mich auch, Tom!
 ```
 
 ### Rule 3: Create Original Examples
@@ -117,7 +114,7 @@ Lena: Freut mich auch, Max!
 Use the vocabulary, but create fresh example sentences:
 
 **Source:** "Ich komme aus Deutschland."
-**Our version:** "Ich komme aus Berlin." or "Max kommt aus München."
+**Our version:** "Ich komme aus Berlin." or "Tom kommt aus München."
 
 ### Rule 4: Adapt for Persian Speakers
 
@@ -161,7 +158,7 @@ Create an original lesson plan:
 
 1. **Lesson ID**: `{Level}-M{Module}-L{Lesson}` (e.g., `A1-M01-L02`)
 2. **Theme**: Topic from CEFR curriculum
-3. **Characters**: Use OUR names (Max, Lena, etc.)
+3. **Characters**: Use OUR characters (Eli, Tom, Lisa, Alex)
 4. **Vocabulary**: From sources, but with original examples
 5. **Steps**: Plan 15-25 steps:
    - `new-word` (vocabulary introduction)
@@ -227,15 +224,15 @@ content/de-fa/{Level}/module-{NN}/{LessonID}.json
   "id": "s10",
   "lines": [
     {
-      "speaker": "Lena",
-      "text": { "de": "Hallo Max! Wie geht's?", "fa": "سلام مکس! حالت چطوره؟" }
+      "speaker": "Eli",
+      "text": { "de": "Hallo Tom! Wie geht's?", "fa": "سلام تام! حالت چطوره؟" }
     },
     {
-      "speaker": "Max",
+      "speaker": "Tom",
       "text": { "de": "Gut, danke! Und dir?", "fa": "خوبم، ممنون! تو چطوری؟" }
     },
     {
-      "speaker": "Lena",
+      "speaker": "Eli",
       "text": { "de": "Auch gut!", "fa": "منم خوبم!" }
     }
   ]
@@ -391,7 +388,7 @@ git commit -m "feat: add lesson A1-M01-L02 with audio"
 
 ### Content
 - [ ] Researched ALL THREE sources for topic
-- [ ] Used ORIGINAL names (Max, Lena, etc.)
+- [ ] Used OUR characters (Eli, Tom, Lisa, Alex)
 - [ ] Wrote ORIGINAL dialogs
 - [ ] Created ORIGINAL example sentences
 - [ ] Added Persian-specific grammar notes

@@ -147,8 +147,8 @@ export type ListeningComprehensionStep = z.infer<typeof ListeningComprehensionSt
     "autoPlay": true
   },
   "question": {
-    "de": "Was sagt Anna?",
-    "fa": "آنا چه می‌گوید؟"
+    "de": "Was sagt Eli?",
+    "fa": "الی چه می‌گوید؟"
   },
   "options": [
     { "de": "Guten Morgen", "fa": "صبح بخیر" },
@@ -156,7 +156,7 @@ export type ListeningComprehensionStep = z.infer<typeof ListeningComprehensionSt
   ],
   "correctAnswerIndex": 0,
   "feedback": {
-    "explanation": "Anna grüßt am Morgen."
+    "explanation": "Eli grüßt am Morgen."
   }
 }
 ```
@@ -257,7 +257,7 @@ correctAnswerIndex: z.number().int().min(0),
 ### Pattern 2: Sentence with Blanks
 
 ```typescript
-sentence: z.string(), // "Hello, my name {0} Anna."
+sentence: z.string(), // "Hello, my name {0} Eli."
 options: z.array(z.string()),
 correctAnswers: z.array(z.number().int().min(0)),
 ```

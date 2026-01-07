@@ -147,11 +147,11 @@ Arrange words in correct order.
   "type": "word-order",
   "id": "s11",
   "instruction": "کلمات را مرتب کنید",
-  "words": ["Anna", "bin", "Ich"],
+  "words": ["Lisa", "bin", "Ich"],
   "correctOrder": [2, 1, 0],
   "correctSentence": {
-    "de": "Ich bin Anna",
-    "fa": "من آنا هستم"
+    "de": "Ich bin Lisa",
+    "fa": "من لیزا هستم"
   }
 }
 ```
@@ -198,13 +198,13 @@ Translate sentence by selecting words.
 {
   "type": "translation",
   "id": "s15",
-  "sourceText": "من آنا هستم.",
+  "sourceText": "من لیزا هستم.",
   "sentenceTemplate": "{0} {1} {2}.",
-  "options": ["bin", "Ich", "Anna", "du"],
+  "options": ["bin", "Ich", "Lisa", "du"],
   "correctAnswers": [1, 0, 2],
   "correctTranslation": {
-    "de": "Ich bin Anna.",
-    "fa": "من آنا هستم."
+    "de": "Ich bin Lisa.",
+    "fa": "من لیزا هستم."
   }
 }
 ```
@@ -262,9 +262,9 @@ Conversation between speakers.
   "id": "s13",
   "title": "آشنایی اولیه",
   "lines": [
-    { "speaker": "Lena", "text": { "de": "Hallo!", "fa": "سلام!" } },
-    { "speaker": "Max", "text": { "de": "Hi! Ich bin Max.", "fa": "سلام! من مکس هستم." } },
-    { "speaker": "Lena", "text": { "de": "Ich bin Lena.", "fa": "من لنا هستم." } }
+    { "speaker": "Eli", "text": { "de": "Hallo!", "fa": "سلام!" } },
+    { "speaker": "Tom", "text": { "de": "Hi! Ich bin Tom.", "fa": "سلام! من تام هستم." } },
+    { "speaker": "Eli", "text": { "de": "Ich bin Eli.", "fa": "من الی هستم." } }
   ],
   "feedback": {
     "explanation": "در این مکالمه دو نفر با هم آشنا می‌شوند."
@@ -316,12 +316,12 @@ Read/listen passage and answer questions.
   "id": "s20",
   "title": "درک مطلب",
   "passage": {
-    "de": "Max kommt aus Berlin. Er ist 25 Jahre alt.",
-    "fa": "مکس اهل برلین است. او ۲۵ ساله است."
+    "de": "Tom kommt aus Berlin. Er ist 25 Jahre alt.",
+    "fa": "تام اهل برلین است. او ۲۵ ساله است."
   },
   "questions": [
     {
-      "question": "مکس اهل کجاست؟",
+      "question": "تام اهل کجاست؟",
       "options": ["München", "Berlin", "Hamburg"],
       "correctIndex": 1
     }

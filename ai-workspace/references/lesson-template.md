@@ -169,10 +169,10 @@
       "id": "s10",
       "title": "مکالمه روزانه",
       "lines": [
-        { "speaker": "Lena", "text": { "de": "Hallo Max!", "fa": "سلام مکس!" } },
-        { "speaker": "Max", "text": { "de": "Hi Lena! Wie geht's?", "fa": "سلام لنا! حالت چطوره؟" } },
-        { "speaker": "Lena", "text": { "de": "Gut, danke! Und dir?", "fa": "خوبم، ممنون! تو چطوری؟" } },
-        { "speaker": "Max", "text": { "de": "Auch gut!", "fa": "منم خوبم!" } }
+        { "speaker": "Eli", "text": { "de": "Hallo Tom!", "fa": "سلام تام!" } },
+        { "speaker": "Tom", "text": { "de": "Hi Eli! Wie geht's?", "fa": "سلام الی! حالت چطوره؟" } },
+        { "speaker": "Eli", "text": { "de": "Gut, danke! Und dir?", "fa": "خوبم، ممنون! تو چطوری؟" } },
+        { "speaker": "Tom", "text": { "de": "Auch gut!", "fa": "منم خوبم!" } }
       ],
       "feedback": {
         "explanation": "این یک مکالمه ساده روزانه برای احوالپرسی است."

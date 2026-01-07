@@ -178,7 +178,7 @@ export const TranslationStepSchema = BaseStepSchema.extend({
   // Source sentence (English/Persian) to translate
   sourceText: z.string(),
 
-  // Template with multiple blanks: "Freut {0}. Ich {1} Anna."
+  // Template with multiple blanks: "Freut {0}. Ich {1} Eli."
   sentenceTemplate: z.string(),
 
   // Available word choices
@@ -202,7 +202,7 @@ export const DialogStepSchema = BaseStepSchema.extend({
   // Conversation lines with speaker names
   lines: z.array(
     z.object({
-      speaker: z.string(), // "Anna", "Tom", etc.
+      speaker: z.string(), // "Eli", "Tom", etc.
       text: BilingualTextSchema,
       audio: MediaSchema.optional(),
     })

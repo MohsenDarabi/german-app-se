@@ -126,7 +126,7 @@ function generateStartHere() {
   lines.push('');
   lines.push('- ⭐ = **Reusable asset** - used in multiple lessons, create only once!');
   lines.push('- Assets organized by **what they show**, not which lesson uses them');
-  lines.push('- Full details in `scripts/media-data/asset-registry.json`');
+  lines.push('- Full details in `apps/web/src/lib/data/asset-registry.json`');
   lines.push('');
   lines.push('## Folder Structure');
   lines.push('');

@@ -160,15 +160,15 @@ Across a lesson, distribute correct answers across positions 0, 1, 2, 3.
 **CRITICAL**: Every quiz/fill-in-blank must have EXACTLY ONE valid answer.
 
 ```json
-// BAD - both "bin" and "heiße" work for "Ich ___ Max"
+// BAD - both "bin" and "heiße" work for "Ich ___ Tom"
 {
-  "sentence": "Ich {0} Max.",
+  "sentence": "Ich {0} Tom.",
   "options": ["bin", "heiße", "Tschüss"],  // ❌ Two correct options!
 }
 
 // GOOD - only "bin" works, "heißt" is wrong conjugation
 {
-  "sentence": "Ich {0} Max.",
+  "sentence": "Ich {0} Tom.",
   "options": ["bin", "heißt", "Tschüss"],  // ✓ Only one correct
 }
 ```
@@ -189,15 +189,15 @@ These make the question unfair - if a learner picks the ACTUAL correct answer, t
 ```json
 // BAD - "هر دو گزینه اول" is a trap
 {
-  "question": "معنی «Ich heiße Lena» چیست؟",
-  "options": ["من لنا هستم", "اسم من لناست", "سلام لنا", "هر دو گزینه اول"],
+  "question": "معنی «Ich heiße Lisa» چیست؟",
+  "options": ["من لیزا هستم", "اسم من لیزاست", "سلام لیزا", "هر دو گزینه اول"],
   "correctAnswerIndex": 3  // ❌ Actual correct answers (0,1) marked wrong!
 }
 
 // GOOD - clear distractors, one correct answer
 {
-  "question": "معنی «Ich heiße Lena» چیست؟",
-  "options": ["سلام لنا", "اسم من لناست", "خداحافظ لنا", "ممنون لنا"],
+  "question": "معنی «Ich heiße Lisa» چیست؟",
+  "options": ["سلام لیزا", "اسم من لیزاست", "خداحافظ لیزا", "ممنون لیزا"],
   "correctAnswerIndex": 1  // ✓ Only one correct
 }
 ```
@@ -218,14 +218,14 @@ These make the question unfair - if a learner picks the ACTUAL correct answer, t
 ```json
 // BAD - mixes "sein" and "heißen" verbs (confusing!)
 {
-  "sentence": "Hallo! Ich {0} Anna. Wie {1} du?",
+  "sentence": "Hallo! Ich {0} Lisa. Wie {1} du?",
   "options": ["bin", "bist", "heißt", "heiße"],
   "correctAnswers": [0, 2]  // "bin" (sein) + "heißt" (heißen) = CONFUSING
 }
 
 // GOOD - consistent verb family
 {
-  "sentence": "Ich {0} Anna. Wie {1} du?",
+  "sentence": "Ich {0} Lisa. Wie {1} du?",
   "options": ["heiße", "heißt", "heißen"],
   "correctAnswers": [0, 1]  // Both from "heißen" = CLEAR
 }
@@ -316,10 +316,10 @@ Index is 0-based, not 1-based!
 `correctOrder` contains indices pointing to `words` array:
 
 ```json
-// Words array: ["Anna", "bin", "Ich"]
+// Words array: ["Lisa", "bin", "Ich"]
 // Indices:       0       1      2
 
-// To make "Ich bin Anna", we need words[2], words[1], words[0]
+// To make "Ich bin Lisa", we need words[2], words[1], words[0]
 "correctOrder": [2, 1, 0]  // ✅ Correct
 
 // NOT the final position of each word
@@ -370,12 +370,12 @@ Every line needs both `de` and `fa`:
 ```json
 // WRONG
 "lines": [
-  { "speaker": "Max", "text": "Hallo!" }
+  { "speaker": "Tom", "text": "Hallo!" }
 ]
 
 // RIGHT
 "lines": [
-  { "speaker": "Max", "text": { "de": "Hallo!", "fa": "سلام!" } }
+  { "speaker": "Tom", "text": { "de": "Hallo!", "fa": "سلام!" } }
 ]
 ```
 

@@ -224,7 +224,7 @@ Greetings likely in different unit - for this example, limited Babbel data.
   "id": "A1-M01-L01-S08",
   "type": "fill-in-blank",
   "instruction": "جای خالی را پر کنید",
-  "sentence": "Anna: {0}! Wie geht's?\nTom: {1}, danke!",
+  "sentence": "Eli: {0}! Wie geht's?\nTom: {1}, danke!",
   "options": ["Hallo", "Gut", "Tschüss", "Nein"],
   "correctAnswers": [0, 1],
   "feedback": {

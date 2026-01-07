@@ -21,7 +21,7 @@ curriculum/
 │   ├── babbel-a1-scope.json               # 91 lessons, 726 unique words
 │   └── busuu-a1-scope.json                # 168 lessons, 1397 unique words
 └── characters/
-    └── character-registry.json             # Lisa, Theo, Max, Sophie, etc.
+    └── character-registry.json             # Eli, Tom, Lisa, Alex
 ```
 
 ## Hierarchy
@@ -35,7 +35,7 @@ Level (A1, A2, B1, B2)
 ## Key Rules
 
 1. **W-Fragen timing** - Only after lesson L33 (accusative case must be taught first)
-2. **Characters** - Lisa & Theo for 2-person scenes; add Max/Sophie for 3+ people
+2. **Characters** - Eli & Tom for 2-person scenes; add Lisa/Alex for 3+ people
 3. **Vocabulary** - Max 15 new words per lesson
 4. **Grammar** - One new concept per lesson maximum
 5. **Function words** - der/die/das, und, ist, ich, du always allowed
@@ -82,10 +82,10 @@ node scripts/validate-scope.js content/de-fa/A1/**/*.json
 
 | Scene Type | Characters to Use |
 |------------|-------------------|
-| 2-person dialogue | Lisa, Theo |
-| 3-person scene | Lisa, Theo + Max or Sophie |
-| 4-person scene | Lisa, Theo, Max, Sophie |
-| Persian perspective | Sara or Amir |
+| 2-person dialogue | Eli, Tom |
+| 3-person scene | Eli, Tom + Lisa or Alex |
+| 4-person scene | Eli, Tom, Lisa, Alex |
+| Service roles | Kellner, Verkäufer, Arzt (no consistent visuals) |
 
 ## Scripts
 

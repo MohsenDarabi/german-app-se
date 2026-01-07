@@ -68,7 +68,7 @@ ai-workspace/progress/multimedia-tasks/A1-M01-L02.json  ← Tasks for colleague
 | `/Volumes/.../content-extractors/screen-flow-mapper/output/` | Busuu full mapping (482 lessons) |
 
 **CRITICAL RULE: Create UNIQUE content - do NOT copy directly!**
-- Change ALL names to modern German names (Max, Lena, Felix, Sophie)
+- Use OUR characters: **Eli & Tom** (primary), **Lisa & Alex** (secondary)
 - Rewrite dialogs with original sentences
 - Add Persian-specific grammar notes
 
@@ -92,7 +92,7 @@ ai-workspace/curriculum/
 │   ├── goethe-a1-wordlist.json      # 676 official Goethe A1 words
 │   └── grammar-progression-reference.json  # When grammar is introduced
 ├── characters/
-│   └── character-registry.json       # Lisa, Theo, Max, Sophie...
+│   └── character-registry.json       # Eli, Tom, Lisa, Alex
 └── resource-mapping/
     ├── babbel-a1-scope.json         # Vocabulary per Babbel lesson
     └── busuu-a1-scope.json          # Vocabulary per Busuu lesson
@@ -107,7 +107,7 @@ ai-workspace/curriculum/
 
 2. **Key Rules**:
    - **W-Fragen (Was, Wo, Wer, Wie, etc.)**: Only from lesson L34+ (after accusative case)
-   - **Characters**: Use Lisa & Theo for 2-person scenes. Add Max/Sophie only when 3+ people needed
+   - **Characters**: Use Eli & Tom for 2-person scenes. Add Lisa/Alex only when 3+ people needed
    - **Vocabulary**: Max 15 new words per lesson. Check against Goethe A1 wordlist
    - **Grammar**: Never introduce before its scheduled lesson
 

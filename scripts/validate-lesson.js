@@ -347,7 +347,7 @@ const rules = [
     check: (lesson) => {
       // Known synonym pairs that should NOT both appear as options for the same blank
       const synonymTraps = [
-        ['bin', 'heiße'],      // Both work for "Ich ___ Max"
+        ['bin', 'heiße'],      // Both work for "Ich ___ Tom"
         ['Hallo', 'Hi'],       // Both are greetings
         ['Guten Tag', 'Hallo'], // Both are greetings
         ['Tschüss', 'Auf Wiedersehen'], // Both are goodbyes
