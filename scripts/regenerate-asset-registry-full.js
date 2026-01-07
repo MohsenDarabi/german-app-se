@@ -3,13 +3,20 @@
  * Regenerate asset registry from ALL lesson content
  * - Dialog steps → scene images
  * - New-word steps → vocabulary images
+ *
+ * Enhanced with character references (Option C):
+ * - Characters are referenced by name + variant
+ * - Visual prompts live in content/characters/{name}/{name}-{variant}.md
+ * - Simple illustrations (places, objects) have no character
  */
 
 const fs = require('fs');
 const path = require('path');
 
-const CONTENT_DIR = 'content/de-fa/A1';
+const CONTENT_BASE = 'content/de-fa';
+const LEVELS = ['A1', 'A2', 'B1', 'B2'];
 const REGISTRY_PATH = 'apps/web/src/lib/data/asset-registry.json';
+const CHARACTERS_DIR = 'content/characters';
 
 // Category mapping for vocabulary
 const CATEGORY_KEYWORDS = {
@@ -29,6 +36,90 @@ const CATEGORY_KEYWORDS = {
   'actions': ['machen', 'gehen', 'kommen', 'sehen', 'hören', 'sprechen', 'lesen', 'schreiben', 'lernen', 'verstehen', 'wissen', 'kennen', 'mögen', 'wollen', 'können', 'müssen', 'sollen', 'dürfen', 'haben', 'sein', 'werden', 'geben', 'nehmen', 'kaufen', 'bezahlen', 'kosten', 'brauchen'],
   'introductions': ['Name', 'heißen', 'kommen', 'wohnen', 'sprechen', 'Land', 'Sprache', 'Deutsch', 'Englisch', 'Persisch', 'Deutschland', 'Iran', 'Berlin', 'München', 'Wien']
 };
+
+// Categories that get simple illustrations (no character)
+const SIMPLE_ILLUSTRATION_CATEGORIES = [
+  'places', 'food', 'furniture', 'transport', 'weather', 'numbers', 'family'
+];
+
+// Categories that need a character demonstrating
+const CHARACTER_CATEGORIES = {
+  greetings: { character: 'eli', variant: 'fullbody', actionTemplate: 'waving warmly in greeting' },
+  expressions: { character: 'eli', variant: 'head', actionTemplate: 'showing appropriate facial expression' },
+  actions: { character: 'eli', variant: 'fullbody', actionTemplate: 'demonstrating the action' },
+  introductions: { character: 'eli', variant: 'fullbody', actionTemplate: 'introducing themselves' },
+  hobbies: { character: 'lisa', variant: 'fullbody', actionTemplate: 'enjoying the hobby' },
+  'daily-life': { character: 'eli', variant: 'fullbody', actionTemplate: 'in daily routine' },
+  professions: { character: 'tom', variant: 'fullbody', actionTemplate: 'in professional setting' },
+  people: { character: null, variant: null, actionTemplate: null }, // Simple illustration of person type
+};
+
+// Alternate characters for variety
+let characterAlternator = 0;
+function getAlternateCharacter() {
+  characterAlternator++;
+  return characterAlternator % 2 === 0 ? 'eli' : 'tom';
+}
+
+/**
+ * Assign character, variant, and action based on category and word
+ */
+function assignCharacterAndAction(word, category) {
+  // Simple illustration categories - no character needed
+  if (SIMPLE_ILLUSTRATION_CATEGORIES.includes(category)) {
+    return { character: null, characterVariant: null, action: null };
+  }
+
+  // Check if category has character assignment
+  const config = CHARACTER_CATEGORIES[category];
+  if (config) {
+    if (!config.character) {
+      return { character: null, characterVariant: null, action: null };
+    }
+
+    // Generate specific action based on word
+    let action = config.actionTemplate;
+    if (category === 'actions') {
+      // For verbs, describe the specific action
+      const cleanWord = word.replace(/^(der|die|das) /, '').toLowerCase();
+      action = `demonstrating "${cleanWord}" action`;
+    } else if (category === 'greetings') {
+      action = `saying "${word}" with friendly gesture`;
+    } else if (category === 'expressions') {
+      action = `expressing "${word}" emotion`;
+    }
+
+    return {
+      character: config.character,
+      characterVariant: config.variant,
+      action: action
+    };
+  }
+
+  // Default: no character
+  return { character: null, characterVariant: null, action: null };
+}
+
+/**
+ * Get character reference path if character is assigned
+ * Points to markdown files in content/characters/
+ */
+function getCharacterRefPath(character, variant) {
+  if (!character || !variant) return null;
+
+  // Special cases for head variants with different naming
+  const specialPaths = {
+    'lisa-head': 'content/characters/lisa/lisa-head-hair-open.md',
+  };
+
+  const key = `${character}-${variant}`;
+  if (specialPaths[key]) {
+    return specialPaths[key];
+  }
+
+  // Default: direct path pattern
+  return `content/characters/${character}/${character}-${variant}.md`;
+}
 
 function categorizeWord(word) {
   const wordLower = word.toLowerCase();
@@ -74,91 +165,113 @@ function main() {
     }
   }
 
-  // Scan all lessons
-  const modules = fs.readdirSync(CONTENT_DIR).filter(d => d.startsWith('module-'));
+  // Process all levels
+  for (const level of LEVELS) {
+    const levelDir = path.join(CONTENT_BASE, level);
+    if (!fs.existsSync(levelDir)) continue;
 
-  for (const mod of modules) {
-    const modPath = path.join(CONTENT_DIR, mod);
-    const files = fs.readdirSync(modPath).filter(f => f.endsWith('.json'));
+    // Scan all modules in this level
+    const modules = fs.readdirSync(levelDir).filter(d => d.startsWith('module-'));
 
-    for (const file of files) {
-      const lessonPath = path.join(modPath, file);
-      const lesson = JSON.parse(fs.readFileSync(lessonPath, 'utf8'));
-      const lessonId = file.replace('.json', '');
+    for (const mod of modules) {
+      const modPath = path.join(levelDir, mod);
+      const files = fs.readdirSync(modPath).filter(f => f.endsWith('.json'));
 
-      for (const step of (lesson.steps || [])) {
-        // Handle new-word steps
-        if (step.type === 'new-word' && step.word?.de) {
-          const word = step.word.de;
-          const category = categorizeWord(word);
-          const assetId = generateAssetId(lessonId, step.id, word);
+      for (const file of files) {
+        const lessonPath = path.join(modPath, file);
+        const lesson = JSON.parse(fs.readFileSync(lessonPath, 'utf8'));
+        const lessonId = file.replace('.json', '');
 
-          // Skip if already exists
-          if (assets[assetId]) continue;
+        for (const step of (lesson.steps || [])) {
+          // Handle new-word steps
+          if (step.type === 'new-word' && step.word?.de) {
+            const word = step.word.de;
+            const category = categorizeWord(word);
+            const assetId = generateAssetId(lessonId, step.id, word);
 
-          assets[assetId] = {
-            id: assetId,
-            type: 'image',
-            category: category,
-            path: `/images/shared/${category}/${assetId}.jpg`,
-            description: `${word} - ${step.word.fa || ''}`,
-            word: { de: word, fa: step.word.fa },
-            tags: [category, 'A1', 'vocabulary'],
-            specs: {
-              dimensions: '400x300',
-              format: 'jpg',
-              style: 'clear, simple illustration'
-            },
-            usedIn: [{
-              lessonId: lessonId,
-              stepId: step.id,
-              context: `Vocabulary: ${word}`
-            }],
-            status: 'pending',
-            createdAt: new Date().toISOString().split('T')[0]
-          };
+            // Skip if already exists
+            if (assets[assetId]) continue;
 
-          if (!categories[category]) categories[category] = [];
-          categories[category].push(assetId);
-        }
+            // Get character assignment for this category/word
+            const charInfo = assignCharacterAndAction(word, category);
+            const characterRef = getCharacterRefPath(charInfo.character, charInfo.characterVariant);
 
-        // Handle dialog steps
-        if (step.type === 'dialog' && step.lines?.length > 0) {
-          const speakers = [...new Set(step.lines.map(l => l.speaker))];
-          const speakerStr = speakers.join('-').toLowerCase().replace(/[^a-z-]/g, '');
-          const assetId = `img-${lessonId.toLowerCase()}-${step.id}-${speakerStr}`;
+            assets[assetId] = {
+              id: assetId,
+              type: 'image',
+              category: category,
+              path: `/images/shared/${category}/${assetId}.jpg`,
+              word: { de: word, fa: step.word.fa },
+              // Character reference (Option C)
+              character: charInfo.character,
+              characterVariant: charInfo.characterVariant,
+              characterRef: characterRef,
+              action: charInfo.action,
+              tags: [category, level, 'vocabulary'],
+              specs: {
+                dimensions: '400x300',
+                format: 'jpg',
+                style: charInfo.character ? 'character illustration' : 'clear, simple illustration'
+              },
+              usedIn: [{
+                lessonId: lessonId,
+                stepId: step.id,
+                context: `Vocabulary: ${word}`
+              }],
+              status: 'pending',
+              createdAt: new Date().toISOString().split('T')[0]
+            };
 
-          // Skip if already exists
-          if (assets[assetId]) continue;
+            if (!categories[category]) categories[category] = [];
+            categories[category].push(assetId);
+          }
 
-          const firstLine = step.lines[0]?.text?.de || '';
-          const title = step.title || step.context || '';
-          const category = speakers.some(s => ['Kellner', 'Verkäufer', 'Arzt'].includes(s)) ? 'scenes' : 'dialogs';
+          // Handle dialog steps
+          if (step.type === 'dialog' && step.lines?.length > 0) {
+            const speakers = [...new Set(step.lines.map(l => l.speaker))];
+            const speakerStr = speakers.join('-').toLowerCase().replace(/[^a-z-]/g, '');
+            const assetId = `img-${lessonId.toLowerCase()}-${step.id}-${speakerStr}`;
 
-          assets[assetId] = {
-            id: assetId,
-            type: 'image',
-            category: category,
-            path: `/images/shared/${category}/${assetId}.jpg`,
-            description: `${speakers.join(' & ')} - ${title}. Scene: "${firstLine.substring(0, 50)}"`,
-            tags: [category, 'A1', 'dialog'],
-            specs: {
-              dimensions: '800x600',
-              format: 'jpg',
-              style: 'friendly, modern German setting'
-            },
-            usedIn: [{
-              lessonId: lessonId,
-              stepId: step.id,
-              context: title
-            }],
-            speakers: speakers,
-            status: 'pending',
-            createdAt: new Date().toISOString().split('T')[0]
-          };
+            // Skip if already exists
+            if (assets[assetId]) continue;
 
-          if (!categories[category]) categories[category] = [];
-          categories[category].push(assetId);
+            const firstLine = step.lines[0]?.text?.de || '';
+            const title = step.title || step.context || '';
+            const isServiceScene = speakers.some(s => ['Kellner', 'Verkäufer', 'Arzt'].includes(s));
+            const category = isServiceScene ? 'scenes' : 'dialogs';
+
+            // For dialogs, speakers ARE the characters
+            const characterRefs = speakers
+              .filter(s => ['Eli', 'Tom', 'Lisa', 'Alex'].includes(s))
+              .map(s => getCharacterRefPath(s.toLowerCase(), 'fullbody'))
+              .filter(Boolean);
+
+            assets[assetId] = {
+              id: assetId,
+              type: 'image',
+              category: category,
+              path: `/images/shared/${category}/${assetId}.jpg`,
+              speakers: speakers,
+              characterRefs: characterRefs.length > 0 ? characterRefs : null,
+              action: `${speakers.join(' and ')} conversing: "${firstLine.substring(0, 40)}..."`,
+              tags: [category, level, 'dialog'],
+              specs: {
+                dimensions: '800x600',
+                format: 'jpg',
+                style: 'friendly, modern German setting'
+              },
+              usedIn: [{
+                lessonId: lessonId,
+                stepId: step.id,
+                context: title
+              }],
+              status: 'pending',
+              createdAt: new Date().toISOString().split('T')[0]
+            };
+
+            if (!categories[category]) categories[category] = [];
+            categories[category].push(assetId);
+          }
         }
       }
     }

@@ -51,13 +51,21 @@ cat ai-workspace/STATUS.md
 | **Images** | `apps/web/static/images/shared/{category}/` | Colleague |
 | **Videos** | `apps/web/static/videos/shared/{category}/` | Colleague |
 | **Progress logs** | `ai-workspace/progress/*.json` | AI agent |
-| **Multimedia tasks** | `ai-workspace/progress/multimedia-tasks/{LessonID}.json` | AI agent |
+| **Asset registry** | `apps/web/src/lib/data/asset-registry.json` | Auto-generated |
 
 **Example for lesson A1-M01-L02:**
 ```
 content/de-fa/A1/module-01/A1-M01-L02.json          ← Lesson content
 apps/web/static/audio/A1-M01-L02/s1-word.mp3        ← Audio files
-ai-workspace/progress/multimedia-tasks/A1-M01-L02.json  ← Tasks for colleague
+```
+
+**Multimedia workflow:**
+```bash
+# After creating lessons, regenerate asset registry
+node scripts/regenerate-asset-registry-full.js
+
+# Generate task summary for designers
+node scripts/generate-task-summary.js
 ```
 
 ### Source Content (for fusion) - THREE SOURCES
@@ -164,7 +172,7 @@ ai-workspace/curriculum/
 3. **Update STATUS.md** after completing significant work
 4. **Track progress** in `progress/*.json` files
 5. **One lesson at a time** - complete fully before moving to next
-6. **Multimedia tasks** - create for each lesson, save to `progress/multimedia-pending.json`
+6. **Regenerate assets** - After creating lessons, run `node scripts/regenerate-asset-registry-full.js`
 7. **Validate scope** - Run `node scripts/validate-scope.js` before committing
 8. **Test before commit** - run `pnpm run dev` and verify lesson works
 

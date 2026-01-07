@@ -1,221 +1,179 @@
-# Multimedia Tasks Workflow
+# Multimedia Asset Workflow
 
-> How to create task files for your colleague who makes images/videos
+> How to create and manage multimedia assets for the German Learning App
 
 ---
 
 ## Overview
 
-After creating a lesson, generate a task file listing all images and videos needed. Your colleague will create these assets.
+All multimedia assets are tracked in a single **asset registry**:
+```
+apps/web/src/lib/data/asset-registry.json
+```
 
-**Reference**: See `references/rules-and-tips.md` for content quality rules.
+Assets are auto-generated from lesson content. Designers create the actual images/videos.
 
 ---
 
-## When to Create Tasks
+## Source of Truth
 
-Create multimedia tasks for these step types:
-
-| Step Type | Needs Image? | Needs Video? | Notes |
-|-----------|--------------|--------------|-------|
-| `dialog` | ✅ Yes | Optional | Scene for conversation |
-| `new-word` | ✅ Optional | No | For concrete nouns only |
-| `grammar-tip` | Optional | No | Only for complex diagrams |
-| `comprehension` | ✅ Yes | Optional | Context for passage |
-
-**Skip these** (text-only, no multimedia needed):
-- `multiple-choice`
-- `fill-in-blank`
-- `word-order`
-- `true-false`
-- `translation`
-- `spelling`
-- `matching`
-- Game steps (`rapid-fire`, `memory-match`, `vocab-check`, etc.)
-- `completion`
+| File | Purpose |
+|------|---------|
+| `apps/web/src/lib/data/asset-registry.json` | Central asset registry |
+| `ai-workspace/progress/multimedia-tasks/TASK-SUMMARY.md` | Designer-friendly task list |
+| `content/characters/{name}/` | Character visual prompts |
 
 ---
 
-## Task File Structure
+## For Designers: Creating Assets
 
-### Location
-```
-ai-workspace/progress/multimedia-tasks/{LessonID}.json
-```
+### Quick Start
 
-### Format
-```json
-{
-  "lessonId": "A1-M01-L01",
-  "lessonTitle": {
-    "de": "Hallo! Ich bin...",
-    "fa": "سلام! من هستم..."
-  },
-  "createdAt": "2026-01-02",
-  "tasks": [
-    {
-      "id": "img-01",
-      "type": "image",
-      "stepId": "s19",
-      "stepType": "dialog",
-      "description": "Detailed description of what to create...",
-      "context": "How this is used in the lesson",
-      "specs": {
-        "dimensions": "800x600",
-        "format": "jpg"
-      },
-      "outputPath": "apps/web/static/images/shared/{category}/{filename}.jpg",
-      "status": "pending"
-    }
-  ],
-  "summary": {
-    "totalTasks": 5,
-    "images": 4,
-    "videos": 1
-  }
-}
+1. Generate the task list:
+   ```bash
+   node scripts/generate-task-summary.js
+   ```
+
+2. Open `ai-workspace/progress/multimedia-tasks/TASK-SUMMARY.md`
+
+3. Pick any pending task. Example:
+   ```
+   #### img-a1-m01-l04-s4-lernen
+   - Word: lernen (یاد گرفتن)
+   - Character ref: content/characters/eli/eli-fullbody.md
+   - Action: demonstrating "lernen" action
+   - Save to: apps/web/static/images/shared/actions/...
+   ```
+
+4. **If it has a Character ref:**
+   - Open the character markdown file (e.g., `content/characters/eli/eli-fullbody.md`)
+   - Copy the character prompt
+   - Append the Action description
+
+5. **If no character** (simple illustration):
+   - Create a simple, clean illustration of the word/concept
+
+6. Generate the image with your AI tool
+
+7. Save to the path shown
+
+8. Sync status:
+   ```bash
+   node scripts/check-multimedia-tasks.js -s
+   ```
+
+---
+
+## Character References
+
+Visual prompts for consistent character images:
+
+| Character | Role | Base Prompt File |
+|-----------|------|------------------|
+| **Eli** | 43yo teacher, calm, professional | `content/characters/eli/eli-fullbody.md` |
+| **Tom** | 35yo instructor, reliable | `content/characters/tom/tom-base.md` |
+| **Lisa** | 18yo student, playful, energetic | `content/characters/lisa/lisa-base.md` |
+| **Alex** | 21yo student, curious | `content/characters/alex/alex-base.md` |
+
+### Character Variants
+
+- `{name}-head.md` - Head/portrait shots
+- `{name}-fullbody.md` - Full body poses
+- Lisa has hairstyle variants: `lisa-head-hair-open.md`, `lisa-head-ponytail.md`
+
+---
+
+## Asset Categories
+
+Assets are auto-categorized by vocabulary type:
+
+| Category | Needs Character? | Example |
+|----------|------------------|---------|
+| `greetings` | Yes (Eli) | Waving, greeting gesture |
+| `expressions` | Yes (head shot) | Facial expressions |
+| `actions` | Yes (Eli/Tom) | Demonstrating verbs |
+| `introductions` | Yes (Eli) | Introduction scenes |
+| `places` | No | Simple illustration |
+| `food` | No | Simple illustration |
+| `transport` | No | Simple illustration |
+| `furniture` | No | Simple illustration |
+| `weather` | No | Simple illustration |
+| `numbers` | No | Simple illustration |
+| `family` | No | Simple illustration |
+| `dialogs` | Yes (multiple) | Conversation scenes |
+| `scenes` | Yes (context) | Service interactions |
+
+---
+
+## Commands Reference
+
+```bash
+# Check progress overview
+node scripts/check-multimedia-tasks.js
+
+# List next N pending tasks
+node scripts/check-multimedia-tasks.js -p 10
+
+# Auto-sync status (marks existing files as completed)
+node scripts/check-multimedia-tasks.js -s
+
+# Validate registry structure
+node scripts/validate-multimedia-tasks.js
+
+# Regenerate asset registry from lessons
+node scripts/regenerate-asset-registry-full.js
+
+# Regenerate task summary
+node scripts/generate-task-summary.js
 ```
 
 ---
 
-## Writing Good Descriptions
+## For Content Creators: How Assets Are Generated
 
-### For Images
+When lessons are created, the registry is auto-generated:
 
-Include:
-- **Who**: People in the scene (age, appearance, clothing)
-- **What**: Action happening
-- **Where**: Setting/environment
-- **Mood**: Atmosphere (formal, casual, friendly)
+1. Lesson JSON is created in `content/de-fa/{level}/module-{N}/`
+2. Run: `node scripts/regenerate-asset-registry-full.js`
+3. Script scans all `new-word` and `dialog` steps
+4. Assets are added to the registry with:
+   - Category (based on vocabulary keywords)
+   - Character assignment (based on category)
+   - Action description (based on word/context)
+5. Run: `node scripts/generate-task-summary.js` to update task list
 
-Example:
-```
-"Two business professionals (man in suit, 40s, and woman in
-professional attire, 30s) shaking hands in a modern office lobby.
-Formal atmosphere, both smiling politely. Glass walls and
-reception desk visible in background."
-```
+---
 
-### For Videos
+## Image Specifications
 
-Include:
-- **Scene**: Setting description
-- **Dialog**: Exact words to be spoken (German)
-- **Actions**: Body language, gestures
-- **Duration**: 15-20 seconds typical
-
-Example:
-```
-"Office meeting room. Herr Schmidt enters and greets Frau Ahmadi.
-Dialog: 'Guten Tag! Mein Name ist Schmidt.' - 'Guten Tag, Herr
-Schmidt. Ich heiße Ahmadi.' Handshake, professional distance.
-Duration: 15-20 seconds."
-```
+| Type | Dimensions | Format | Style |
+|------|------------|--------|-------|
+| Vocabulary (with character) | 400x300 | JPG | Character illustration |
+| Vocabulary (simple) | 400x300 | JPG | Clean, simple illustration |
+| Dialog/Scene | 800x600 | JPG | Modern German setting |
 
 ---
 
 ## Output Paths
 
-### Images
+Images are saved to:
 ```
-images/shared/{category}/{descriptive-name}.jpg
-```
-
-**Full path**: `apps/web/static/images/shared/{category}/{filename}`
-
-**Image Categories** (standardized):
-| Category | Use For |
-|----------|---------|
-| `greetings/` | Hello, goodbye, waving |
-| `introductions/` | Handshakes, first meetings |
-| `expressions/` | Thank you, please, emotions |
-| `scenes/` | Cafe, office, street, public places |
-| `people/` | Individual portraits |
-| `family/` | Family members, relationships |
-| `food/` | Food, drinks, restaurants |
-| `places/` | Buildings, locations |
-| `transport/` | Cars, trains, buses, stations |
-| `professions/` | Jobs, workplaces |
-| `daily-life/` | Everyday activities |
-| `weather/` | Weather conditions |
-| `hobbies/` | Sports, leisure activities |
-| `furniture/` | Home items, rooms |
-
-### Videos
-```
-videos/shared/{category}/{descriptive-name}.mp4
+apps/web/static/images/shared/{category}/{asset-id}.jpg
 ```
 
-**Full path**: `apps/web/static/videos/shared/{category}/{filename}`
-
-**Video Categories**:
-| Category | Use For |
-|----------|---------|
-| `pronunciation/` | Word pronunciation demos |
-| `conversations/` | Dialog videos |
-| `culture/` | Cultural context clips |
-| `grammar/` | Grammar explanation visuals |
-
----
-
-## Reusability
-
-**Think reusable!** Same image can be used in multiple lessons.
-
-Before creating a new task, check:
-1. Does a similar asset already exist?
-2. Can this asset be used in future lessons?
-
-Use generic names when possible:
+Videos (when needed):
 ```
-GOOD: office-handshake-formal.jpg (reusable)
-BAD:  a1-m01-l01-step19.jpg (lesson-specific)
+apps/web/static/videos/shared/{category}/{asset-id}.mp4
 ```
 
 ---
 
-## Update Progress
+## Checklist for Designers
 
-After creating task file:
-
-1. Add to `progress/multimedia-pending.json`:
-```json
-{
-  "pendingTasks": [
-    {
-      "lessonId": "A1-M01-L01",
-      "taskFile": "multimedia-tasks/A1-M01-L01.json",
-      "images": 5,
-      "videos": 2,
-      "createdAt": "2026-01-02"
-    }
-  ]
-}
-```
-
-2. Update `STATUS.md` multimedia section
-
----
-
-## Colleague Workflow
-
-Your colleague will:
-1. Check `progress/multimedia-pending.json` for new tasks
-2. Open the task JSON file
-3. Create each asset following the description
-4. Save to the specified `outputPath`
-5. Update task `status` from `"pending"` to `"completed"`
-6. Notify when batch is done
-
----
-
-## Checklist
-
-- [ ] Task file created for lesson
-- [ ] All dialog steps have image + video tasks
-- [ ] Grammar tips have diagram tasks
-- [ ] Descriptions are detailed and clear
-- [ ] Output paths use correct categories
-- [ ] Considered reusability
-- [ ] Added to `multimedia-pending.json`
-- [ ] Updated `STATUS.md`
+- [ ] Generated latest TASK-SUMMARY.md
+- [ ] Picked a pending task
+- [ ] Opened character reference (if applicable)
+- [ ] Combined character prompt + action
+- [ ] Generated image
+- [ ] Saved to correct path
+- [ ] Ran sync command to update status

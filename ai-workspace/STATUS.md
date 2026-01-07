@@ -47,8 +47,8 @@ Next lesson to create: `A1-M02-L02` (continue Module 2)
 
 ### Pending (for colleague)
 
-See `progress/multimedia-pending.json` for detailed list.
-Colleague should check `progress/multimedia-tasks/START-HERE.md` for easy checklist!
+Run `node scripts/generate-task-summary.js` to generate task list.
+Colleague should check `progress/multimedia-tasks/TASK-SUMMARY.md` for pending tasks!
 
 | Lesson | Images | Videos | Status |
 |--------|--------|--------|--------|

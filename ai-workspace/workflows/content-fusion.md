@@ -318,30 +318,31 @@ pnpm run dev
 
 ## Step 9: Create Multimedia Tasks
 
-**REQUIRED after each lesson!** Create task file for images/videos needed.
+**REQUIRED after each lesson!** Assets are auto-generated from lesson content.
 
-### 9.1 Identify steps needing assets
-- Every `dialog` step → needs scene image
-- `new-word` for concrete nouns → needs illustration
-- `comprehension` → needs context image
+### 9.1 How it works
+The asset registry script automatically detects:
+- Every `new-word` step → vocabulary image
+- Every `dialog` step → scene image
+- Assigns characters based on category (greetings→Eli, actions→Eli/Tom, places→no character)
 
-### 9.2 Create task file
+### 9.2 Regenerate asset registry
 ```bash
-# Save to: ai-workspace/progress/multimedia-tasks/{LessonID}.json
-# Format: See workflows/multimedia-tasks.md
+# Scans ALL lessons and regenerates the asset registry
+node scripts/regenerate-asset-registry-full.js
+
+# Output: apps/web/src/lib/data/asset-registry.json
 ```
 
-### 9.3 Update progress tracking
+### 9.3 Generate task summary for designer
 ```bash
-# Update: ai-workspace/progress/multimedia-pending.json
-# Add entry for this lesson's tasks
+# Creates pending task list with character refs
+node scripts/generate-task-summary.js
+
+# Output: ai-workspace/progress/multimedia-tasks/TASK-SUMMARY.md
 ```
 
-### 9.4 Update START-HERE.md
-```bash
-# Add checkbox items to: ai-workspace/progress/multimedia-tasks/START-HERE.md
-# Colleague uses this for easy tracking
-```
+Designer workflow is documented in `workflows/multimedia-tasks.md`
 
 ---
 
@@ -406,9 +407,8 @@ git commit -m "feat: add lesson A1-M01-L02 with audio"
 - [ ] Audio plays correctly in browser
 
 ### Multimedia Tasks (DO NOT SKIP!)
-- [ ] Task JSON created: `progress/multimedia-tasks/{LessonID}.json`
-- [ ] `progress/multimedia-pending.json` updated
-- [ ] `progress/multimedia-tasks/START-HERE.md` updated with checkboxes
+- [ ] Asset registry regenerated: `node scripts/regenerate-asset-registry-full.js`
+- [ ] Task summary generated: `node scripts/generate-task-summary.js`
 
 ### Progress
 - [ ] CURRENT_TASK.md updated
