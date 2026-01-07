@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { DialogStep } from "$lib/content-model";
+  import type { DialogStep } from "@pkg/content-model";
   import BiDiText from "$lib/components/ui/BiDiText.svelte";
   import AudioButton from "$lib/components/ui/AudioButton.svelte";
 

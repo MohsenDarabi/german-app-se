@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { CompletionStep } from "$lib/content-model";
+  import type { CompletionStep } from "@pkg/content-model";
   import { createEventDispatcher } from "svelte";
 
   export let step: CompletionStep;

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { FormalityChoiceStep } from "$lib/content-model";
+  import type { FormalityChoiceStep } from "@pkg/content-model";
   import { createEventDispatcher } from "svelte";
 
   export let step: FormalityChoiceStep;

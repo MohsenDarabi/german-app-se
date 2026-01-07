@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { WordQuizStep, MultipleChoiceStep } from "$lib/content-model";
+  import type { WordQuizStep, MultipleChoiceStep } from "@pkg/content-model";
   import { createEventDispatcher } from "svelte";
   import BiDiText from "$lib/components/ui/BiDiText.svelte";
   import AudioButton from "$lib/components/ui/AudioButton.svelte";

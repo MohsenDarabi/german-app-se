@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { GrammarTipStep } from "$lib/content-model";
+  import type { GrammarTipStep } from "@pkg/content-model";
   import VocabPillList from "$lib/components/shared/VocabPillList.svelte";
   import BiDiText from "$lib/components/ui/BiDiText.svelte";
   import AudioButton from "$lib/components/ui/AudioButton.svelte";

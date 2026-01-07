@@ -1,5 +1,5 @@
 import type { PageServerLoad } from "./$types";
-import { LessonSchema, type Lesson } from "$lib/content-model";
+import { LessonSchema, type Lesson } from "@pkg/content-model";
 import { error, redirect } from "@sveltejs/kit";
 import { dev } from '$app/environment';
 import fs from "node:fs";

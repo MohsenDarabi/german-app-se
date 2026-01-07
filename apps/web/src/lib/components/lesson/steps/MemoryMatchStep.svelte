@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { MemoryMatchStep } from "$lib/content-model";
+  import type { MemoryMatchStep } from "@pkg/content-model";
   import { createEventDispatcher, onMount } from "svelte";
 
   export let step: MemoryMatchStep;

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { SpellingStep } from "$lib/content-model";
+  import type { SpellingStep } from "@pkg/content-model";
   import { createEventDispatcher, onMount } from "svelte";
   import BiDiText from "$lib/components/ui/BiDiText.svelte";
   import AudioButton from "$lib/components/ui/AudioButton.svelte";
