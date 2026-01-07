@@ -3,145 +3,172 @@
 /**
  * Multimedia Task Progress Checker
  *
- * Shows progress on image/video tasks for the German learning app.
+ * Shows progress on image/video tasks from the asset registry.
  * Run from project root: node scripts/check-multimedia-tasks.js
  */
 
 const fs = require('fs');
 const path = require('path');
 
-const TASKS_DIR = path.join(__dirname, '../ai-workspace/progress/multimedia-tasks');
+const REGISTRY_PATH = path.join(__dirname, '../apps/web/src/lib/data/asset-registry.json');
+const IMAGES_DIR = path.join(__dirname, '../apps/web/static/images/shared');
 
-function loadTaskFiles() {
-  const files = fs.readdirSync(TASKS_DIR)
-    .filter(f => f.endsWith('.json') && f.startsWith('A1-'));
-
-  return files.map(file => {
-    const content = JSON.parse(fs.readFileSync(path.join(TASKS_DIR, file), 'utf8'));
-    return { file, ...content };
-  });
+function loadRegistry() {
+  const content = JSON.parse(fs.readFileSync(REGISTRY_PATH, 'utf8'));
+  return content.assets;
 }
 
-function getStats(taskFiles) {
-  let total = { images: 0, videos: 0, pending: 0, complete: 0, blocked: 0 };
+function checkFileExists(assetPath) {
+  if (!assetPath) return false;
+  const fullPath = path.join(__dirname, '../apps/web/static', assetPath);
+  return fs.existsSync(fullPath);
+}
 
-  taskFiles.forEach(tf => {
-    tf.tasks.forEach(task => {
-      if (task.type === 'image') total.images++;
-      if (task.type === 'video') total.videos++;
-      if (task.status === 'pending') total.pending++;
-      if (task.status === 'completed') total.complete++;
-      if (task.status === 'blocked') total.blocked++;
-    });
+function getStats(assets) {
+  const assetList = Object.values(assets);
+  let stats = { images: 0, videos: 0, pending: 0, completed: 0, blocked: 0, filesExist: 0 };
+
+  assetList.forEach(asset => {
+    if (asset.type === 'image') stats.images++;
+    if (asset.type === 'video') stats.videos++;
+    if (asset.status === 'pending') stats.pending++;
+    if (asset.status === 'completed') stats.completed++;
+    if (asset.status === 'blocked') stats.blocked++;
+    if (checkFileExists(asset.path)) stats.filesExist++;
   });
 
-  return total;
+  return stats;
 }
 
 function showProgress() {
-  const taskFiles = loadTaskFiles();
-  const stats = getStats(taskFiles);
+  const assets = loadRegistry();
+  const stats = getStats(assets);
   const totalTasks = stats.images + stats.videos;
-  const progress = ((stats.complete / totalTasks) * 100).toFixed(1);
+  const progress = ((stats.completed / totalTasks) * 100).toFixed(1);
+  const fileProgress = ((stats.filesExist / totalTasks) * 100).toFixed(1);
 
   console.log('\n═══════════════════════════════════════════════════════');
-  console.log('       A1 MULTIMEDIA TASKS - PROGRESS REPORT');
+  console.log('       MULTIMEDIA ASSETS - PROGRESS REPORT');
   console.log('═══════════════════════════════════════════════════════\n');
 
-  console.log(`  Total Tasks:    ${totalTasks}`);
+  console.log(`  Total Assets:   ${totalTasks}`);
   console.log(`  ├── Images:     ${stats.images}`);
   console.log(`  └── Videos:     ${stats.videos}\n`);
 
-  console.log(`  Progress:       ${stats.complete}/${totalTasks} (${progress}%)`);
-  console.log(`  ├── Complete:   ${stats.complete}`);
+  console.log(`  Status:`);
+  console.log(`  ├── Completed:  ${stats.completed}/${totalTasks} (${progress}%)`);
   console.log(`  ├── Pending:    ${stats.pending}`);
   console.log(`  └── Blocked:    ${stats.blocked}\n`);
 
-  // Progress bar
+  console.log(`  Files on disk:  ${stats.filesExist}/${totalTasks} (${fileProgress}%)\n`);
+
+  // Progress bar (based on files that exist)
   const barWidth = 40;
-  const filled = Math.round((stats.complete / totalTasks) * barWidth);
+  const filled = Math.round((stats.filesExist / totalTasks) * barWidth);
   const bar = '█'.repeat(filled) + '░'.repeat(barWidth - filled);
-  console.log(`  [${bar}] ${progress}%\n`);
+  console.log(`  [${bar}] ${fileProgress}%\n`);
 
-  // Per-module breakdown
+  // Per-category breakdown
   console.log('───────────────────────────────────────────────────────');
-  console.log('  MODULE BREAKDOWN\n');
+  console.log('  CATEGORY BREAKDOWN\n');
 
-  const modules = {};
-  taskFiles.forEach(tf => {
-    const match = tf.file.match(/A1-M0(\d)/);
-    if (match) {
-      const mod = `Module ${match[1]}`;
-      if (!modules[mod]) modules[mod] = { total: 0, complete: 0, files: [] };
-      modules[mod].files.push(tf.file);
-      tf.tasks.forEach(t => {
-        modules[mod].total++;
-        if (t.status === 'completed') modules[mod].complete++;
-      });
-    }
+  const categories = {};
+  Object.values(assets).forEach(asset => {
+    const cat = asset.category || 'uncategorized';
+    if (!categories[cat]) categories[cat] = { total: 0, completed: 0, filesExist: 0 };
+    categories[cat].total++;
+    if (asset.status === 'completed') categories[cat].completed++;
+    if (checkFileExists(asset.path)) categories[cat].filesExist++;
   });
 
-  Object.entries(modules).forEach(([mod, data]) => {
-    const pct = ((data.complete / data.total) * 100).toFixed(0);
-    const status = data.complete === data.total ? '✅' : data.complete > 0 ? '🔄' : '⏳';
-    console.log(`  ${status} ${mod}: ${data.complete}/${data.total} (${pct}%)`);
+  Object.entries(categories).sort((a, b) => b[1].total - a[1].total).forEach(([cat, data]) => {
+    const pct = ((data.filesExist / data.total) * 100).toFixed(0);
+    const status = data.filesExist === data.total ? '✅' : data.filesExist > 0 ? '🔄' : '⏳';
+    console.log(`  ${status} ${cat}: ${data.filesExist}/${data.total} (${pct}%)`);
   });
 
   console.log('\n═══════════════════════════════════════════════════════\n');
 
-  // Show blocked tasks if any
-  if (stats.blocked > 0) {
-    console.log('⚠️  BLOCKED TASKS:\n');
-    taskFiles.forEach(tf => {
-      tf.tasks.filter(t => t.status === 'blocked').forEach(task => {
-        console.log(`  • ${tf.file} → ${task.id}`);
-        if (task.notes) console.log(`    Notes: ${task.notes}`);
-      });
+  // Show mismatched status (files exist but status is pending)
+  const mismatched = Object.values(assets).filter(a =>
+    checkFileExists(a.path) && a.status !== 'completed'
+  );
+  if (mismatched.length > 0) {
+    console.log('⚠️  STATUS MISMATCH (files exist but not marked completed):\n');
+    mismatched.forEach(asset => {
+      console.log(`  • ${asset.id}`);
+      console.log(`    Path: ${asset.path}`);
     });
     console.log('');
   }
 }
 
 function listPending(limit = 10) {
-  const taskFiles = loadTaskFiles();
-  let count = 0;
+  const assets = loadRegistry();
+  const pending = Object.values(assets)
+    .filter(a => a.status === 'pending' && !checkFileExists(a.path))
+    .slice(0, limit);
 
-  console.log('\n📋 NEXT PENDING TASKS:\n');
+  console.log('\n📋 NEXT PENDING ASSETS:\n');
 
-  for (const tf of taskFiles) {
-    for (const task of tf.tasks) {
-      if (task.status === 'pending' && count < limit) {
-        const icon = task.type === 'image' ? '🖼️' : '🎬';
-        console.log(`${icon}  ${tf.file} → ${task.id}`);
-        console.log(`   ${task.description.substring(0, 70)}...`);
-        console.log(`   Output: ${task.outputPath}\n`);
-        count++;
-      }
+  pending.forEach(asset => {
+    const icon = asset.type === 'image' ? '🖼️' : '🎬';
+    console.log(`${icon}  ${asset.id}`);
+    console.log(`   ${(asset.description || '').substring(0, 70)}...`);
+    console.log(`   Path: ${asset.path}`);
+    console.log(`   Category: ${asset.category}\n`);
+  });
+
+  const totalPending = Object.values(assets).filter(a =>
+    a.status === 'pending' && !checkFileExists(a.path)
+  ).length;
+
+  console.log(`Showing ${pending.length} of ${totalPending} pending assets.\n`);
+}
+
+function syncStatus() {
+  const registry = JSON.parse(fs.readFileSync(REGISTRY_PATH, 'utf8'));
+  let updated = 0;
+
+  Object.entries(registry.assets).forEach(([id, asset]) => {
+    const exists = checkFileExists(asset.path);
+    if (exists && asset.status !== 'completed') {
+      registry.assets[id].status = 'completed';
+      registry.assets[id].completedAt = new Date().toISOString().split('T')[0];
+      updated++;
+      console.log(`✅ Marked completed: ${id}`);
     }
-    if (count >= limit) break;
-  }
+  });
 
-  console.log(`Showing ${count} of many pending tasks. Check TASK-SUMMARY.md for full list.\n`);
+  if (updated > 0) {
+    fs.writeFileSync(REGISTRY_PATH, JSON.stringify(registry, null, 2));
+    console.log(`\nUpdated ${updated} asset(s) in registry.`);
+  } else {
+    console.log('\nNo status updates needed.');
+  }
 }
 
 // CLI
 const args = process.argv.slice(2);
 
 if (args.includes('--pending') || args.includes('-p')) {
-  const limit = parseInt(args[args.indexOf('--pending') + 1] || args[args.indexOf('-p') + 1]) || 10;
+  const idx = args.indexOf('--pending') !== -1 ? args.indexOf('--pending') : args.indexOf('-p');
+  const limit = parseInt(args[idx + 1]) || 10;
   listPending(limit);
+} else if (args.includes('--sync') || args.includes('-s')) {
+  syncStatus();
 } else if (args.includes('--help') || args.includes('-h')) {
   console.log(`
-Multimedia Task Progress Checker
+Multimedia Asset Progress Checker
 
 Usage:
   node scripts/check-multimedia-tasks.js          Show progress overview
-  node scripts/check-multimedia-tasks.js -p [N]   List next N pending tasks
+  node scripts/check-multimedia-tasks.js -p [N]   List next N pending assets
+  node scripts/check-multimedia-tasks.js -s       Sync status (mark existing files as completed)
   node scripts/check-multimedia-tasks.js -h       Show this help
 
-Files:
-  docs/multimedia-tasks/TASK-SUMMARY.md   Full checklist (update checkboxes here)
-  docs/multimedia-tasks/A1-M0X-LXX.json   Detailed task specifications
+Source:
+  apps/web/src/lib/data/asset-registry.json       Central asset registry
 `);
 } else {
   showProgress();

@@ -1,70 +1,127 @@
 #!/usr/bin/env node
 /**
- * Multimedia Task Validator
+ * Asset Registry Validator
  *
- * Validates that all multimedia task files have correct structure.
+ * Validates the asset registry structure and checks for common issues.
  */
 
 const fs = require('fs');
 const path = require('path');
 
-const TASKS_DIR = path.join(__dirname, '../ai-workspace/progress/multimedia-tasks');
-
-const files = fs.readdirSync(TASKS_DIR).filter(f => f.endsWith('.json') && f.startsWith('A1-'));
+const REGISTRY_PATH = path.join(__dirname, '../apps/web/src/lib/data/asset-registry.json');
+const STATIC_DIR = path.join(__dirname, '../apps/web/static');
 
 let errors = [];
-let valid = 0;
-let totalTasks = 0;
+let warnings = [];
 
-console.log('\n📋 Validating multimedia task files...\n');
+console.log('\n📋 Validating asset registry...\n');
 
-files.forEach(file => {
-  try {
-    const content = JSON.parse(fs.readFileSync(path.join(TASKS_DIR, file), 'utf8'));
-    let fileErrors = [];
+try {
+  const content = JSON.parse(fs.readFileSync(REGISTRY_PATH, 'utf8'));
 
-    // Validate structure
-    if (!content.lessonId) fileErrors.push('missing lessonId');
-    if (!content.lessonTitle) fileErrors.push('missing lessonTitle');
-    if (!content.tasks || !Array.isArray(content.tasks)) fileErrors.push('missing tasks array');
+  // Validate top-level structure
+  if (!content.version) warnings.push('missing version field');
+  if (!content.assets || typeof content.assets !== 'object') {
+    errors.push('missing or invalid assets object');
+  }
 
-    if (content.tasks) {
-      content.tasks.forEach((task, i) => {
-        if (!task.id) fileErrors.push(`task[${i}] missing id`);
-        if (!task.type) fileErrors.push(`task[${i}] missing type`);
-        if (!task.stepId) fileErrors.push(`task[${i}] missing stepId`);
-        if (!task.outputPath) fileErrors.push(`task[${i}] missing outputPath`);
-        if (!task.status) fileErrors.push(`task[${i}] missing status`);
-        if (!task.specs) fileErrors.push(`task[${i}] missing specs`);
-        if (!task.description) fileErrors.push(`task[${i}] missing description`);
-        totalTasks++;
-      });
+  const assets = content.assets || {};
+  const assetIds = Object.keys(assets);
+  let valid = 0;
+  let images = 0;
+  let videos = 0;
+
+  console.log(`  Found ${assetIds.length} assets in registry\n`);
+
+  assetIds.forEach(id => {
+    const asset = assets[id];
+    let assetErrors = [];
+
+    // Required fields
+    if (!asset.id) assetErrors.push('missing id');
+    if (asset.id && asset.id !== id) assetErrors.push(`id mismatch: key="${id}" but id="${asset.id}"`);
+    if (!asset.type) assetErrors.push('missing type');
+    if (!asset.path) assetErrors.push('missing path');
+    if (!asset.category) assetErrors.push('missing category');
+    if (!asset.status) assetErrors.push('missing status');
+
+    // Type validation
+    if (asset.type && !['image', 'video'].includes(asset.type)) {
+      assetErrors.push(`invalid type: ${asset.type}`);
     }
 
-    if (fileErrors.length > 0) {
-      errors.push({ file, errors: fileErrors });
-      console.log(`  ❌ ${file}: ${fileErrors.length} error(s)`);
+    // Status validation
+    if (asset.status && !['pending', 'completed', 'blocked'].includes(asset.status)) {
+      assetErrors.push(`invalid status: ${asset.status}`);
+    }
+
+    // Path format validation
+    if (asset.path) {
+      if (!asset.path.startsWith('/images/') && !asset.path.startsWith('/videos/')) {
+        assetErrors.push(`invalid path format: ${asset.path}`);
+      }
+
+      // Check if file exists when marked as completed
+      const fullPath = path.join(STATIC_DIR, asset.path);
+      if (asset.status === 'completed' && !fs.existsSync(fullPath)) {
+        assetErrors.push(`marked completed but file missing: ${asset.path}`);
+      }
+    }
+
+    // Count types
+    if (asset.type === 'image') images++;
+    if (asset.type === 'video') videos++;
+
+    if (assetErrors.length > 0) {
+      errors.push({ id, errors: assetErrors });
     } else {
       valid++;
-      console.log(`  ✅ ${file}: ${content.tasks.length} task(s)`);
     }
-  } catch (e) {
-    errors.push({ file, errors: [e.message] });
-    console.log(`  ❌ ${file}: ${e.message}`);
-  }
-});
-
-console.log('\n' + '═'.repeat(50));
-console.log(`\n  Files: ${valid}/${files.length} valid`);
-console.log(`  Tasks: ${totalTasks} total\n`);
-
-if (errors.length > 0) {
-  console.log('❌ Errors found:\n');
-  errors.forEach(({ file, errors: errs }) => {
-    console.log(`  ${file}:`);
-    errs.forEach(e => console.log(`    • ${e}`));
   });
+
+  // Check for orphaned files (files without registry entry)
+  const imageCategories = ['greetings', 'expressions', 'scenes', 'places', 'daily-life', 'actions',
+                           'grammar', 'people', 'transport', 'food', 'weather', 'furniture',
+                           'misc', 'professions', 'family', 'directions'];
+
+  const registeredPaths = new Set(Object.values(assets).map(a => a.path));
+
+  imageCategories.forEach(cat => {
+    const catDir = path.join(STATIC_DIR, 'images/shared', cat);
+    if (fs.existsSync(catDir)) {
+      const files = fs.readdirSync(catDir).filter(f => !f.startsWith('.'));
+      files.forEach(file => {
+        const relativePath = `/images/shared/${cat}/${file}`;
+        if (!registeredPaths.has(relativePath)) {
+          warnings.push(`orphaned file (not in registry): ${relativePath}`);
+        }
+      });
+    }
+  });
+
+  console.log('═'.repeat(50));
+  console.log(`\n  Assets:     ${valid}/${assetIds.length} valid`);
+  console.log(`  ├── Images: ${images}`);
+  console.log(`  └── Videos: ${videos}\n`);
+
+  if (warnings.length > 0) {
+    console.log(`⚠️  Warnings: ${warnings.length}\n`);
+    warnings.forEach(w => console.log(`  • ${w}`));
+    console.log('');
+  }
+
+  if (errors.length > 0) {
+    console.log(`❌ Errors: ${errors.length}\n`);
+    errors.forEach(({ id, errors: errs }) => {
+      console.log(`  ${id}:`);
+      errs.forEach(e => console.log(`    • ${e}`));
+    });
+    process.exit(1);
+  } else {
+    console.log('✅ Asset registry is valid!\n');
+  }
+
+} catch (e) {
+  console.error(`❌ Failed to read registry: ${e.message}`);
   process.exit(1);
-} else {
-  console.log('✅ All multimedia task files are valid!\n');
 }

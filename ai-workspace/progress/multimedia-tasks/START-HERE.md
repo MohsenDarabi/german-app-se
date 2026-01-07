@@ -1,16 +1,16 @@
-# Multimedia Tasks for German Learning App
+# Multimedia Assets for German Learning App
 
-> Guide for creating images for the German learning app. **51 tasks** across **31 lessons**.
+> Guide for creating images/videos. **206 assets** (190 images, 16 videos).
 
 ---
 
 ## Quick Start
 
-1. Check `TASK-SUMMARY.md` for the full checklist
-2. Open the JSON file for detailed specs (e.g., `A1-M01-L01.json`)
-3. Create the image following the specs
-4. Save to the output path
-5. Update status in JSON file to `"completed"`
+1. Run `node scripts/check-multimedia-tasks.js -p 10` to see next pending assets
+2. Check the asset registry for detailed specs
+3. Create the asset following the specs
+4. Save to the output path with semantic naming (e.g., `img-greeting-wave.png`)
+5. Run `node scripts/check-multimedia-tasks.js -s` to auto-mark as completed
 
 ---
 
@@ -20,51 +20,51 @@
 # Check progress
 node scripts/check-multimedia-tasks.js
 
-# List next 10 pending tasks
+# List next 10 pending assets
 node scripts/check-multimedia-tasks.js -p 10
 
-# Validate all task files
+# Auto-sync status (marks existing files as completed)
+node scripts/check-multimedia-tasks.js -s
+
+# Validate asset registry
 node scripts/validate-multimedia-tasks.js
-
-# Regenerate TASK-SUMMARY.md
-node scripts/generate-task-summary.js
 ```
-
----
-
-## Current Status
-
-| Module | Topic | Tasks | High Priority |
-|--------|-------|-------|---------------|
-| Module 1 | Basics (Hallo, Zahlen) | 19 | 11 |
-| Module 2 | Verben (sein, haben) | 5 | 5 |
-| Module 3 | Verneinung (nicht, kein) | 6 | 4 |
-| Module 4 | Artikel (der, die, das) | 4 | 4 |
-| Module 5 | Fragen (W-Fragen) | 9 | 8 |
-| Module 6 | Zeit (Uhrzeit, Tage) | 8 | 8 |
-| **Total** | | **51** | **40** |
 
 ---
 
 ## File Structure
 
 ```
-ai-workspace/progress/multimedia-tasks/
-├── START-HERE.md          # This guide
-├── TASK-SUMMARY.md        # Auto-generated checklist
-├── A1-M01-L01.json        # Task specs for each lesson
-├── A1-M01-L02.json
-├── ...
-└── A1-M06-L04.json
+apps/web/src/lib/data/
+└── asset-registry.json     # Central registry (source of truth)
 
 apps/web/static/images/shared/
-├── greetings/             # Hello, goodbye, waves
-├── expressions/           # Emotions, reactions
-├── scenes/                # Dialog scenes
-├── places/                # Countries, cities
-├── daily-life/            # Activities
+├── greetings/              # Hello, goodbye, waves
+├── expressions/            # Emotions, reactions
+├── scenes/                 # Dialog scenes
+├── places/                 # Countries, cities
+├── people/                 # Character portraits
+├── grammar/                # Visual grammar
+├── food/                   # Food items
+├── weather/                # Weather scenes
+├── transport/              # Travel, vehicles
+├── furniture/              # Objects, furniture
 └── ...
 ```
+
+---
+
+## Naming Convention
+
+Use **semantic names** that describe the content, not the word:
+
+| Good | Bad |
+|------|-----|
+| `img-greeting-wave.png` | `hallo.jpg` |
+| `img-sad-person.jpg` | `schlecht.jpg` |
+| `img-coffee-cafe-scene.jpg` | `a1-m01-l01-s14.jpg` |
+
+**Why?** Semantic names allow reuse across multiple lessons and words.
 
 ---
 
@@ -94,20 +94,48 @@ Use these 4 characters consistently:
 
 ---
 
-## Priority Levels
+## Asset Registry Structure
 
-- 🔴 **High** - Dialog scenes (most visible to users)
-- 🟡 **Medium** - Vocabulary illustrations
-- 🟢 **Low** - Optional enhancements
+The source of truth is `apps/web/src/lib/data/asset-registry.json`:
 
-**Focus on 🔴 High priority first!**
+```json
+{
+  "assets": {
+    "img-greeting-wave": {
+      "id": "img-greeting-wave",
+      "type": "image",
+      "category": "greetings",
+      "path": "/images/shared/greetings/img-greeting-wave.png",
+      "description": "Friendly greeting image",
+      "tags": ["greetings", "A1", "new-word"],
+      "specs": {
+        "dimensions": "800x600",
+        "format": "png",
+        "style": "friendly, welcoming"
+      },
+      "usedIn": [
+        { "lessonId": "A1-1-M01-L01", "stepId": "s1", "context": "Vocabulary: Greeting" }
+      ],
+      "status": "completed",
+      "completedAt": "2026-01-06"
+    }
+  }
+}
+```
 
 ---
 
 ## How to Mark Complete
 
-1. Open the task JSON file (e.g., `A1-M01-L01.json`)
-2. Find the task by `id`
+**Option 1: Auto-sync** (recommended)
+```bash
+# Automatically marks all existing files as completed
+node scripts/check-multimedia-tasks.js -s
+```
+
+**Option 2: Manual**
+1. Open `apps/web/src/lib/data/asset-registry.json`
+2. Find the asset by `id`
 3. Change:
    ```json
    "status": "pending"
@@ -122,14 +150,14 @@ Use these 4 characters consistently:
 
 ## Style Guidelines
 
-### DO ✅
+### DO
 - Modern, contemporary German settings
 - Diverse characters (age, ethnicity)
 - Clear, well-lit scenes
 - Friendly, approachable expressions
 - Realistic proportions
 
-### DON'T ❌
+### DON'T
 - Outdated or stereotypical imagery
 - Overly busy backgrounds
 - Dark or unclear lighting
@@ -138,56 +166,25 @@ Use these 4 characters consistently:
 
 ---
 
-## Output Paths
+## Category Reference
 
-Save images to `apps/web/static/images/shared/{category}/`:
-
-| Category | Content |
-|----------|---------|
-| `greetings/` | Hello, goodbye, waves |
-| `expressions/` | Thank you, emotions, reactions |
-| `scenes/` | Dialog scenes, cafe, street |
-| `places/` | Countries, cities, landmarks |
-| `daily-life/` | Everyday activities |
-| `actions/` | Speaking, learning, working |
-| `grammar/` | Visual grammar explanations |
-
----
-
-## Task JSON Structure
-
-Each task file contains:
-
-```json
-{
-  "lessonId": "A1-M01-L01",
-  "lessonTitle": { "de": "Hallo!", "fa": "سلام!" },
-  "tasks": [
-    {
-      "id": "img-s14",
-      "type": "image",
-      "stepId": "s14",
-      "stepType": "dialog",
-      "priority": "high",
-      "description": "Eli & Tom - Dialog scene",
-      "context": "Dialog with 5 lines: \"Hallo!\"",
-      "specs": {
-        "format": "jpg",
-        "dimensions": "800x600",
-        "style": "friendly, modern German setting",
-        "subjects": "Eli, Tom"
-      },
-      "outputPath": "images/shared/scenes/a1-m01-l01-s14-eli-tom.jpg",
-      "status": "pending"
-    }
-  ]
-}
-```
+| Category | Content | Count |
+|----------|---------|-------|
+| `grammar/` | Visual grammar explanations | 53 |
+| `people/` | Character portraits, interactions | 47 |
+| `transport/` | Travel, vehicles, commuting | 40 |
+| `misc/` | Miscellaneous items | 14 |
+| `food/` | Food, drinks, dining | 14 |
+| `places/` | Countries, cities, landmarks | 13 |
+| `weather/` | Weather scenes, seasons | 9 |
+| `furniture/` | Objects, home items | 7 |
+| `greetings/` | Hello, goodbye, waves | 4 |
+| `daily-life/` | Everyday activities | 2 |
 
 ---
 
 ## Questions?
 
-- Check `TASK-SUMMARY.md` for the full checklist
-- Check individual JSON files for detailed specs
-- Run `node scripts/check-multimedia-tasks.js` for progress
+- Run `node scripts/check-multimedia-tasks.js -h` for help
+- Check asset registry for detailed specs per asset
+- Validate with `node scripts/validate-multimedia-tasks.js`
