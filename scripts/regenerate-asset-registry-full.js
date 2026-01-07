@@ -24,7 +24,7 @@ const CATEGORY_KEYWORDS = {
   'numbers': ['eins', 'zwei', 'drei', 'vier', 'fünf', 'sechs', 'sieben', 'acht', 'neun', 'zehn', 'elf', 'zwölf', 'dreizehn', 'vierzehn', 'fünfzehn', 'sechzehn', 'siebzehn', 'achtzehn', 'neunzehn', 'zwanzig', 'dreißig', 'vierzig', 'fünfzig', 'sechzig', 'siebzig', 'achtzig', 'neunzig', 'hundert', 'tausend', 'null'],
   'food': ['Kaffee', 'Tee', 'Wasser', 'Brot', 'Apfel', 'Frühstück', 'Mittagessen', 'Abendessen', 'essen', 'trinken', 'Croissant', 'Pizza', 'Salat', 'Suppe', 'Kuchen', 'Obst', 'Gemüse', 'Fleisch', 'Fisch', 'Reis', 'Nudeln', 'Käse', 'Butter', 'Milch', 'Saft', 'Bier', 'Wein', 'Cola', 'Restaurant', 'Café', 'Hunger', 'Durst'],
   'family': ['Mutter', 'Vater', 'Bruder', 'Schwester', 'Sohn', 'Tochter', 'Oma', 'Opa', 'Onkel', 'Tante', 'Cousin', 'Cousine', 'Kind', 'Kinder', 'Eltern', 'Familie', 'Großeltern', 'Enkel'],
-  'places': ['Haus', 'Wohnung', 'Schule', 'Universität', 'Büro', 'Bahnhof', 'Flughafen', 'Krankenhaus', 'Apotheke', 'Supermarkt', 'Bank', 'Post', 'Kino', 'Theater', 'Museum', 'Park', 'Bibliothek', 'Kirche', 'Stadt', 'Dorf', 'Land', 'Straße'],
+  'places': ['Haus', 'Wohnung', 'Schule', 'Universität', 'Büro', 'Bahnhof', 'Flughafen', 'Krankenhaus', 'Apotheke', 'Supermarkt', 'Bank', 'Post', 'Kino', 'Theater', 'Museum', 'Park', 'Bibliothek', 'Kirche', 'Stadt', 'Dorf', 'Land', 'Straße', 'Deutschland', 'Iran', 'Österreich', 'Schweiz', 'Frankreich', 'Italien', 'Spanien', 'England', 'USA', 'Türkei', 'Berlin', 'München', 'Wien', 'Hamburg', 'Köln', 'Frankfurt'],
   'transport': ['Auto', 'Bus', 'Zug', 'U-Bahn', 'S-Bahn', 'Fahrrad', 'Taxi', 'Flugzeug', 'Schiff', 'fahren', 'fliegen'],
   'furniture': ['Tisch', 'Stuhl', 'Bett', 'Sofa', 'Schrank', 'Lampe', 'Fenster', 'Tür', 'Regal', 'Küche', 'Bad', 'Zimmer', 'Wohnzimmer', 'Schlafzimmer'],
   'people': ['Mann', 'Frau', 'Junge', 'Mädchen', 'Freund', 'Freundin', 'Kollege', 'Kollegin', 'Chef', 'Lehrer', 'Schüler', 'Student', 'Arzt', 'Kellner', 'Verkäufer'],
@@ -34,7 +34,7 @@ const CATEGORY_KEYWORDS = {
   'hobbies': ['Sport', 'Musik', 'Fußball', 'Tennis', 'schwimmen', 'lesen', 'kochen', 'tanzen', 'singen', 'spielen', 'Gitarre', 'Klavier', 'Film', 'Buch', 'Hobby'],
   'expressions': ['ja', 'nein', 'danke', 'bitte', 'Entschuldigung', 'gut', 'schlecht', 'schön', 'toll', 'super', 'prima', 'okay', 'richtig', 'falsch', 'vielleicht', 'natürlich', 'gern', 'lieber', 'Freut mich'],
   'actions': ['machen', 'gehen', 'kommen', 'sehen', 'hören', 'sprechen', 'lesen', 'schreiben', 'lernen', 'verstehen', 'wissen', 'kennen', 'mögen', 'wollen', 'können', 'müssen', 'sollen', 'dürfen', 'haben', 'sein', 'werden', 'geben', 'nehmen', 'kaufen', 'bezahlen', 'kosten', 'brauchen'],
-  'introductions': ['Name', 'heißen', 'kommen', 'wohnen', 'sprechen', 'Land', 'Sprache', 'Deutsch', 'Englisch', 'Persisch', 'Deutschland', 'Iran', 'Berlin', 'München', 'Wien']
+  'introductions': ['Name', 'heißen', 'kommen', 'wohnen', 'sprechen', 'Sprache', 'Deutsch', 'Englisch', 'Persisch']
 };
 
 // Categories that get simple illustrations (no character)
