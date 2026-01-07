@@ -10,9 +10,9 @@
 | Status | Count | Progress |
 |--------|-------|----------|
 | ✅ Completed | 1 | ░░░░░░░░░░░░░░░░░░░░ |
-| ⏳ Pending | 337 | |
+| ⏳ Pending | 336 | |
 | 🚫 Blocked | 0 | |
-| **Total** | **338** | **0.3%** |
+| **Total** | **337** | **0.3%** |
 
 ---
 
@@ -2547,15 +2547,7 @@
 - **Save to:** `apps/web/static/images/shared/introductions/img-a1-m05-l02-s11-name.jpg`
 - **Used in:** A1-M05-L02
 
-### greetings (7 pending, 1/8 done)
-
-#### 🖼️ img-a1-m01-l01-s1-hallo
-
-- **Word:** Hallo (سلام)
-- **Character ref:** `content/characters/eli/eli-fullbody.md`
-- **Action:** saying "Hallo" with friendly gesture
-- **Save to:** `apps/web/static/images/shared/greetings/img-a1-m01-l01-s1-hallo.jpg`
-- **Used in:** A1-M01-L01
+### greetings (6 pending, 1/7 done)
 
 #### 🖼️ img-a1-m01-l01-s2-hi
 

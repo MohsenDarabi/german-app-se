@@ -185,6 +185,9 @@ function main() {
         for (const step of (lesson.steps || [])) {
           // Handle new-word steps
           if (step.type === 'new-word' && step.word?.de) {
+            // Skip if step already has explicit imageId (manually assigned)
+            if (step.imageId) continue;
+
             const word = step.word.de;
             const category = categorizeWord(word);
             const assetId = generateAssetId(lessonId, step.id, word);
