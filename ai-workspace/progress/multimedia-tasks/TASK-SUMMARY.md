@@ -286,7 +286,7 @@
 ### ⏳ people (0/47)
 
 - [ ] 🖼️ **img-two-young-adults**
-  - Two young adults (Anna and Tom) meeting in a German language classroom. They are...
+  - Two young adults (Lisa and Tom) meeting in a German language classroom. They are...
   - Path: `/images/shared/people/img-two-young-adults.jpg`
   - Used in: A1-1-M01-L01
 
@@ -296,7 +296,7 @@
   - Used in: A1-1-M01-L01
 
 - [ ] 🖼️ **img-two-young-adults-1**
-  - Two young adults (Maria from Austria and Ali from Iran) having a friendly conver...
+  - Two young adults (Maria from Austria and Alex from Iran) having a friendly conve...
   - Path: `/images/shared/people/img-two-young-adults-1.jpg`
   - Used in: A1-1-M01-L02
 
@@ -396,7 +396,7 @@
   - Used in: A1-1-M03-L08
 
 - [ ] 🎬 **vid-mother-and-teenage**
-  - Mother and teenage son (Max) morning bathroom routine scene. Mother outside bath...
+  - Mother and teenage son (Alex) morning bathroom routine scene. Mother outside bat...
   - Path: `/videos/shared/people/vid-mother-and-teenage.mp4`
   - Used in: A1-1-M03-L08
 
@@ -501,7 +501,7 @@
   - Used in: A1-1-M06-L14
 
 - [ ] 🎬 **vid-emma-and-jonas**
-  - Emma and Jonas meet in the morning. Emma: 'Guten Morgen! Wie ist das Wetter heut...
+  - Lisa and Tom meet in the morning. Lisa: 'Guten Morgen! Wie ist das Wetter heute?...
   - Path: `/videos/shared/people/vid-emma-and-jonas.mp4`
   - Used in: A1-1-M06-L15
 
@@ -603,7 +603,7 @@
   - Used in: A1-2-M04-L10
 
 - [ ] 🖼️ **img-sara-and-ali**
-  - Sara and Ali in a German supermarket aisle with shopping cart. They're selecting...
+  - Lisa and Alex in a German supermarket aisle with shopping cart. They're selectin...
   - Path: `/images/shared/transport/img-sara-and-ali.jpg`
   - Used in: A1-2-M04-L11
 
@@ -703,7 +703,7 @@
   - Used in: A1-2-M05-L13
 
 - [ ] 🎬 **vid-anna-looking-for**
-  - Anna is looking for her brother at a busy location (like a train station or univ...
+  - Lisa is looking for her brother at a busy location (like a train station or univ...
   - Path: `/videos/shared/transport/vid-anna-looking-for.mp4`
   - Used in: A1-1-M06-L13
 
@@ -760,7 +760,7 @@
   - Used in: A1-1-M02-L05
 
 - [ ] 🎬 **vid-sara-and-ali**
-  - Sara and Ali at a cafe. Sara: 'Ich habe so viel Hunger!' Ali: 'Ich auch! Ich hab...
+  - Lisa and Alex at a cafe. Lisa: 'Ich habe so viel Hunger!' Alex: 'Ich auch! Ich h...
   - Path: `/videos/shared/misc/vid-sara-and-ali.mp4`
   - Used in: A1-2-M04-L09
 
@@ -812,7 +812,7 @@
   - Used in: A1-1-M03-L07
 
 - [ ] 🖼️ **img-two-young-friends**
-  - Two young friends (Sara and Ali) sitting at a casual cafe table. They look hungr...
+  - Two young friends (Lisa and Alex) sitting at a casual cafe table. They look hung...
   - Path: `/images/shared/food/img-two-young-friends.jpg`
   - Used in: A1-2-M04-L09
 
@@ -862,7 +862,7 @@
   - Used in: A1-2-M04-L11
 
 - [ ] 🎬 **vid-supermarket-scene-sara**
-  - Supermarket scene. Sara: 'Ich muss einkaufen gehen. Kommst du mit?' Ali: 'Ja, ge...
+  - Supermarket scene. Lisa: 'Ich muss einkaufen gehen. Kommst du mit?' Alex: 'Ja, g...
   - Path: `/videos/shared/food/vid-supermarket-scene-sara.mp4`
   - Used in: A1-2-M04-L11
 
