@@ -8,6 +8,7 @@
   "module": 1,
   "lessonNumber": 1,
   "estimatedMinutes": 12,
+  "charactersInLesson": ["eli", "tom"],
   "vocabulary": [
     { "de": "Hallo", "fa": "سلام" },
     { "de": "Hi", "fa": "سلام (خودمانی)" },
@@ -228,11 +229,11 @@
       "id": "s14",
       "title": "ملاقات در خیابان",
       "lines": [
-        { "speaker": "Eli", "text": { "de": "Hallo Tom!", "fa": "سلام تام!" } },
-        { "speaker": "Tom", "text": { "de": "Hi Eli! Wie geht's?", "fa": "سلام الی! حالت چطوره؟" } },
-        { "speaker": "Eli", "text": { "de": "Danke, gut!", "fa": "ممنون، خوبم!" } },
-        { "speaker": "Tom", "text": { "de": "Tschüss Eli!", "fa": "خداحافظ الی!" } },
-        { "speaker": "Eli", "text": { "de": "Tschüss!", "fa": "خداحافظ!" } }
+        { "speakerId": "eli", "text": { "de": "Hallo Tom!", "fa": "سلام تام!" } },
+        { "speakerId": "tom", "text": { "de": "Hi Eli! Wie geht's?", "fa": "سلام الی! حالت چطوره؟" } },
+        { "speakerId": "eli", "text": { "de": "Danke, gut!", "fa": "ممنون، خوبم!" } },
+        { "speakerId": "tom", "text": { "de": "Tschüss Eli!", "fa": "خداحافظ الی!" } },
+        { "speakerId": "eli", "text": { "de": "Tschüss!", "fa": "خداحافظ!" } }
       ],
       "feedback": {
         "explanation": "الی و تام در خیابان همدیگر را می‌بینند و احوالپرسی می‌کنند."

@@ -10,6 +10,7 @@
   "lessonNumber": 2,
   "totalSteps": 26,
   "estimatedMinutes": 15,
+  "charactersInLesson": ["alex", "eli", "lisa", "tom"],
   "steps": [
     {
       "type": "grammar-tip",
@@ -69,11 +70,11 @@
       "title": "مکالمه: آشنایی",
       "context": "دو نفر در حال آشنا شدن هستند",
       "lines": [
-        { "speaker": "Lisa", "text": { "de": "Wer bist du?", "fa": "تو کی هستی؟" } },
-        { "speaker": "Alex", "text": { "de": "Ich bin Alex. Und du?", "fa": "من الکس هستم. و تو؟" } },
-        { "speaker": "Lisa", "text": { "de": "Ich bin Lisa. Woher kommst du?", "fa": "من لیزا هستم. از کجا هستی؟" } },
-        { "speaker": "Alex", "text": { "de": "Ich komme aus Berlin. Wo wohnst du?", "fa": "من اهل برلین هستم. کجا زندگی می‌کنی؟" } },
-        { "speaker": "Lisa", "text": { "de": "Ich wohne in München.", "fa": "من در مونیخ زندگی می‌کنم." } }
+        { "speakerId": "lisa", "text": { "de": "Wer bist du?", "fa": "تو کی هستی؟" } },
+        { "speakerId": "alex", "text": { "de": "Ich bin Alex. Und du?", "fa": "من الکس هستم. و تو؟" } },
+        { "speakerId": "lisa", "text": { "de": "Ich bin Lisa. Woher kommst du?", "fa": "من لیزا هستم. از کجا هستی؟" } },
+        { "speakerId": "alex", "text": { "de": "Ich komme aus Berlin. Wo wohnst du?", "fa": "من اهل برلین هستم. کجا زندگی می‌کنی؟" } },
+        { "speakerId": "lisa", "text": { "de": "Ich wohne in München.", "fa": "من در مونیخ زندگی می‌کنم." } }
       ]
     },
     {
@@ -197,12 +198,12 @@
       "title": "مکالمه: برنامه‌ها",
       "context": "تام و الی درباره برنامه‌ها صحبت می‌کنند",
       "lines": [
-        { "speaker": "Tom", "text": { "de": "Was machst du heute?", "fa": "امروز چیکار می‌کنی؟" } },
-        { "speaker": "Eli", "text": { "de": "Ich gehe in die Stadt.", "fa": "می‌رم شهر." } },
-        { "speaker": "Tom", "text": { "de": "Wohin genau?", "fa": "دقیقاً کجا؟" } },
-        { "speaker": "Eli", "text": { "de": "Ich gehe ins Kino.", "fa": "می‌رم سینما." } },
-        { "speaker": "Tom", "text": { "de": "Was siehst du?", "fa": "چی می‌بینی؟" } },
-        { "speaker": "Eli", "text": { "de": "Einen deutschen Film!", "fa": "یک فیلم آلمانی!" } }
+        { "speakerId": "tom", "text": { "de": "Was machst du heute?", "fa": "امروز چیکار می‌کنی؟" } },
+        { "speakerId": "eli", "text": { "de": "Ich gehe in die Stadt.", "fa": "می‌رم شهر." } },
+        { "speakerId": "tom", "text": { "de": "Wohin genau?", "fa": "دقیقاً کجا؟" } },
+        { "speakerId": "eli", "text": { "de": "Ich gehe ins Kino.", "fa": "می‌رم سینما." } },
+        { "speakerId": "tom", "text": { "de": "Was siehst du?", "fa": "چی می‌بینی؟" } },
+        { "speakerId": "eli", "text": { "de": "Einen deutschen Film!", "fa": "یک فیلم آلمانی!" } }
       ]
     },
     {

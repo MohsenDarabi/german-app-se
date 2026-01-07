@@ -10,6 +10,7 @@
   "lessonNumber": 1,
   "totalSteps": 26,
   "estimatedMinutes": 15,
+  "charactersInLesson": ["alex", "eli", "lisa", "tom"],
   "steps": [
     {
       "type": "grammar-tip",
@@ -55,11 +56,11 @@
       "title": "مکالمه: آشنایی",
       "context": "الی و تام تازه آشنا شده‌اند",
       "lines": [
-        { "speaker": "Eli", "text": { "de": "Kommst du aus Deutschland?", "fa": "اهل آلمان هستی؟" } },
-        { "speaker": "Tom", "text": { "de": "Ja, ich komme aus Berlin.", "fa": "بله، اهل برلین هستم." } },
-        { "speaker": "Eli", "text": { "de": "Sprichst du Englisch?", "fa": "انگلیسی صحبت می‌کنی؟" } },
-        { "speaker": "Tom", "text": { "de": "Ja, ein bisschen. Und du?", "fa": "بله، یک کم. و تو؟" } },
-        { "speaker": "Eli", "text": { "de": "Ja, ich spreche Englisch und Persisch.", "fa": "بله، انگلیسی و فارسی صحبت می‌کنم." } }
+        { "speakerId": "eli", "text": { "de": "Kommst du aus Deutschland?", "fa": "اهل آلمان هستی؟" } },
+        { "speakerId": "tom", "text": { "de": "Ja, ich komme aus Berlin.", "fa": "بله، اهل برلین هستم." } },
+        { "speakerId": "eli", "text": { "de": "Sprichst du Englisch?", "fa": "انگلیسی صحبت می‌کنی؟" } },
+        { "speakerId": "tom", "text": { "de": "Ja, ein bisschen. Und du?", "fa": "بله، یک کم. و تو؟" } },
+        { "speakerId": "eli", "text": { "de": "Ja, ich spreche Englisch und Persisch.", "fa": "بله، انگلیسی و فارسی صحبت می‌کنم." } }
       ]
     },
     {
@@ -210,11 +211,11 @@
       "title": "مکالمه: در کافه",
       "context": "لیزا و الکس در کافه هستند",
       "lines": [
-        { "speaker": "Lisa", "text": { "de": "Hast du Hunger?", "fa": "گرسنه هستی؟" } },
-        { "speaker": "Alex", "text": { "de": "Ja, ein bisschen. Und du?", "fa": "بله، یک کم. و تو؟" } },
-        { "speaker": "Lisa", "text": { "de": "Nein, aber ich habe Durst.", "fa": "نه، ولی تشنه هستم." } },
-        { "speaker": "Alex", "text": { "de": "Möchtest du einen Kaffee?", "fa": "یک قهوه می‌خواهی؟" } },
-        { "speaker": "Lisa", "text": { "de": "Ja, gerne!", "fa": "بله، با کمال میل!" } }
+        { "speakerId": "lisa", "text": { "de": "Hast du Hunger?", "fa": "گرسنه هستی؟" } },
+        { "speakerId": "alex", "text": { "de": "Ja, ein bisschen. Und du?", "fa": "بله، یک کم. و تو؟" } },
+        { "speakerId": "lisa", "text": { "de": "Nein, aber ich habe Durst.", "fa": "نه، ولی تشنه هستم." } },
+        { "speakerId": "alex", "text": { "de": "Möchtest du einen Kaffee?", "fa": "یک قهوه می‌خواهی؟" } },
+        { "speakerId": "lisa", "text": { "de": "Ja, gerne!", "fa": "بله، با کمال میل!" } }
       ]
     },
     {

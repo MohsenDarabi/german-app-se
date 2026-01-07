@@ -10,6 +10,7 @@
   "lessonNumber": 2,
   "totalSteps": 26,
   "estimatedMinutes": 15,
+  "charactersInLesson": ["eli", "tom"],
   "steps": [
     {
       "type": "grammar-tip",
@@ -121,12 +122,12 @@
       "title": "مکالمه: در فروشگاه",
       "context": "الی در فروشگاه خرید می‌کند",
       "lines": [
-        { "speaker": "Eli", "text": { "de": "Ich möchte einen Apfel, bitte.", "fa": "یک سیب می‌خواهم، لطفاً." } },
-        { "speaker": "Tom", "text": { "de": "Hier, ein Apfel.", "fa": "بفرمایید، یک سیب." } },
-        { "speaker": "Eli", "text": { "de": "Und eine Banane.", "fa": "و یک موز." } },
-        { "speaker": "Tom", "text": { "de": "Eine Banane, bitte schön!", "fa": "یک موز، بفرمایید!" } },
-        { "speaker": "Eli", "text": { "de": "Danke! Und ein Brot?", "fa": "ممنون! و یک نان؟" } },
-        { "speaker": "Tom", "text": { "de": "Ja, hier ist ein Brot.", "fa": "بله، اینجا یک نان است." } }
+        { "speakerId": "eli", "text": { "de": "Ich möchte einen Apfel, bitte.", "fa": "یک سیب می‌خواهم، لطفاً." } },
+        { "speakerId": "tom", "text": { "de": "Hier, ein Apfel.", "fa": "بفرمایید، یک سیب." } },
+        { "speakerId": "eli", "text": { "de": "Und eine Banane.", "fa": "و یک موز." } },
+        { "speakerId": "tom", "text": { "de": "Eine Banane, bitte schön!", "fa": "یک موز، بفرمایید!" } },
+        { "speakerId": "eli", "text": { "de": "Danke! Und ein Brot?", "fa": "ممنون! و یک نان؟" } },
+        { "speakerId": "tom", "text": { "de": "Ja, hier ist ein Brot.", "fa": "بله، اینجا یک نان است." } }
       ]
     },
     {

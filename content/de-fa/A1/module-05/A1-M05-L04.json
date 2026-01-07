@@ -10,6 +10,7 @@
   "lessonNumber": 4,
   "totalSteps": 26,
   "estimatedMinutes": 15,
+  "charactersInLesson": ["alex", "eli", "lisa", "tom"],
   "steps": [
     {
       "type": "grammar-tip",
@@ -65,11 +66,11 @@
       "title": "مکالمه: دلیل",
       "context": "تام و الی درباره زبان صحبت می‌کنند",
       "lines": [
-        { "speaker": "Tom", "text": { "de": "Warum lernst du Deutsch?", "fa": "چرا آلمانی یاد می‌گیری؟" } },
-        { "speaker": "Eli", "text": { "de": "Weil ich es schön finde.", "fa": "چون فکر می‌کنم زیباست." } },
-        { "speaker": "Tom", "text": { "de": "Und warum nicht Französisch?", "fa": "و چرا فرانسوی نه؟" } },
-        { "speaker": "Eli", "text": { "de": "Weil Deutsch praktischer ist.", "fa": "چون آلمانی کاربردی‌تر است." } },
-        { "speaker": "Tom", "text": { "de": "Das stimmt!", "fa": "درسته!" } }
+        { "speakerId": "tom", "text": { "de": "Warum lernst du Deutsch?", "fa": "چرا آلمانی یاد می‌گیری؟" } },
+        { "speakerId": "eli", "text": { "de": "Weil ich es schön finde.", "fa": "چون فکر می‌کنم زیباست." } },
+        { "speakerId": "tom", "text": { "de": "Und warum nicht Französisch?", "fa": "و چرا فرانسوی نه؟" } },
+        { "speakerId": "eli", "text": { "de": "Weil Deutsch praktischer ist.", "fa": "چون آلمانی کاربردی‌تر است." } },
+        { "speakerId": "tom", "text": { "de": "Das stimmt!", "fa": "درسته!" } }
       ]
     },
     {
@@ -220,11 +221,11 @@
       "title": "مکالمه: انتخاب",
       "context": "لیزا و الکس در فروشگاه هستند",
       "lines": [
-        { "speaker": "Lisa", "text": { "de": "Welches T-Shirt magst du?", "fa": "کدام تی‌شرت را دوست داری؟" } },
-        { "speaker": "Alex", "text": { "de": "Das blaue. Und du?", "fa": "آبی را. و تو؟" } },
-        { "speaker": "Lisa", "text": { "de": "Ich mag das rote.", "fa": "من قرمز را دوست دارم." } },
-        { "speaker": "Alex", "text": { "de": "Warum?", "fa": "چرا؟" } },
-        { "speaker": "Lisa", "text": { "de": "Weil rot meine Lieblingsfarbe ist!", "fa": "چون قرمز رنگ مورد علاقه‌ام است!" } }
+        { "speakerId": "lisa", "text": { "de": "Welches T-Shirt magst du?", "fa": "کدام تی‌شرت را دوست داری؟" } },
+        { "speakerId": "alex", "text": { "de": "Das blaue. Und du?", "fa": "آبی را. و تو؟" } },
+        { "speakerId": "lisa", "text": { "de": "Ich mag das rote.", "fa": "من قرمز را دوست دارم." } },
+        { "speakerId": "alex", "text": { "de": "Warum?", "fa": "چرا؟" } },
+        { "speakerId": "lisa", "text": { "de": "Weil rot meine Lieblingsfarbe ist!", "fa": "چون قرمز رنگ مورد علاقه‌ام است!" } }
       ]
     },
     {

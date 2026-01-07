@@ -10,6 +10,7 @@
   "lessonNumber": 4,
   "totalSteps": 26,
   "estimatedMinutes": 15,
+  "charactersInLesson": ["alex", "eli", "lisa", "tom"],
   "steps": [
     {
       "type": "grammar-tip",
@@ -134,11 +135,11 @@
       "title": "مکالمه: برنامه روزانه",
       "context": "الی و تام درباره برنامه‌شان صحبت می‌کنند",
       "lines": [
-        { "speaker": "Tom", "text": { "de": "Wann stehst du auf?", "fa": "کی بیدار می‌شوی؟" } },
-        { "speaker": "Eli", "text": { "de": "Um halb sieben. Und du?", "fa": "شش و نیم. و تو؟" } },
-        { "speaker": "Tom", "text": { "de": "Ich stehe um sieben auf.", "fa": "من ساعت هفت بیدار می‌شوم." } },
-        { "speaker": "Eli", "text": { "de": "Was machst du am Morgen?", "fa": "صبح چیکار می‌کنی؟" } },
-        { "speaker": "Tom", "text": { "de": "Ich dusche und frühstücke.", "fa": "دوش می‌گیرم و صبحانه می‌خورم." } }
+        { "speakerId": "tom", "text": { "de": "Wann stehst du auf?", "fa": "کی بیدار می‌شوی؟" } },
+        { "speakerId": "eli", "text": { "de": "Um halb sieben. Und du?", "fa": "شش و نیم. و تو؟" } },
+        { "speakerId": "tom", "text": { "de": "Ich stehe um sieben auf.", "fa": "من ساعت هفت بیدار می‌شوم." } },
+        { "speakerId": "eli", "text": { "de": "Was machst du am Morgen?", "fa": "صبح چیکار می‌کنی؟" } },
+        { "speakerId": "tom", "text": { "de": "Ich dusche und frühstücke.", "fa": "دوش می‌گیرم و صبحانه می‌خورم." } }
       ]
     },
     {
@@ -234,11 +235,11 @@
       "title": "مکالمه: روز کاری",
       "context": "لیزا و الکس درباره کار صحبت می‌کنند",
       "lines": [
-        { "speaker": "Lisa", "text": { "de": "Von wann bis wann arbeitest du?", "fa": "از چند تا چند کار می‌کنی؟" } },
-        { "speaker": "Alex", "text": { "de": "Von 8 bis 16 Uhr.", "fa": "از ۸ تا ۱۶." } },
-        { "speaker": "Lisa", "text": { "de": "Das ist früh!", "fa": "زوده!" } },
-        { "speaker": "Alex", "text": { "de": "Ja, aber ich habe früh Feierabend.", "fa": "بله، ولی زود تعطیل می‌شم." } },
-        { "speaker": "Lisa", "text": { "de": "Was machst du am Abend?", "fa": "شب چیکار می‌کنی؟" } }
+        { "speakerId": "lisa", "text": { "de": "Von wann bis wann arbeitest du?", "fa": "از چند تا چند کار می‌کنی؟" } },
+        { "speakerId": "alex", "text": { "de": "Von 8 bis 16 Uhr.", "fa": "از ۸ تا ۱۶." } },
+        { "speakerId": "lisa", "text": { "de": "Das ist früh!", "fa": "زوده!" } },
+        { "speakerId": "alex", "text": { "de": "Ja, aber ich habe früh Feierabend.", "fa": "بله، ولی زود تعطیل می‌شم." } },
+        { "speakerId": "lisa", "text": { "de": "Was machst du am Abend?", "fa": "شب چیکار می‌کنی؟" } }
       ]
     },
     {

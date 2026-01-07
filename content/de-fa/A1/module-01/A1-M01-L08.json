@@ -10,6 +10,7 @@
   "lessonNumber": 8,
   "totalSteps": 22,
   "estimatedMinutes": 15,
+  "charactersInLesson": ["alex", "verkäufer"],
   "steps": [
     {
       "type": "new-word",
@@ -235,10 +236,10 @@
       "title": "مکالمه: قیمت چنده؟",
       "context": "الکس در فروشگاه است",
       "lines": [
-        { "speaker": "Alex", "text": { "de": "Was kostet das Buch?", "fa": "این کتاب چند است؟" } },
-        { "speaker": "Verkäufer", "text": { "de": "Das kostet fünfzehn Euro.", "fa": "این پانزده یورو است." } },
-        { "speaker": "Alex", "text": { "de": "Und das Heft?", "fa": "و این دفتر؟" } },
-        { "speaker": "Verkäufer", "text": { "de": "Drei Euro. Zusammen achtzehn Euro.", "fa": "سه یورو. روی هم هجده یورو." } }
+        { "speakerId": "alex", "text": { "de": "Was kostet das Buch?", "fa": "این کتاب چند است؟" } },
+        { "speakerId": "verkäufer", "text": { "de": "Das kostet fünfzehn Euro.", "fa": "این پانزده یورو است." } },
+        { "speakerId": "alex", "text": { "de": "Und das Heft?", "fa": "و این دفتر؟" } },
+        { "speakerId": "verkäufer", "text": { "de": "Drei Euro. Zusammen achtzehn Euro.", "fa": "سه یورو. روی هم هجده یورو." } }
       ]
     },
     {

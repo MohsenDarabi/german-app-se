@@ -202,7 +202,7 @@ export const DialogStepSchema = BaseStepSchema.extend({
   // Conversation lines with speaker names
   lines: z.array(
     z.object({
-      speaker: z.string(), // "Eli", "Tom", etc.
+      speakerId: z.string(), // "eli", "tom", etc.
       text: BilingualTextSchema,
       audio: MediaSchema.optional(),
     })
@@ -486,6 +486,9 @@ export const LessonSchema = z.object({
 
   // Steps in this lesson
   steps: z.array(LessonStepSchema),
+
+  // Characters referenced in this lesson
+  charactersInLesson: z.array(z.string()).optional(),
 
   // Tags for categorization
   tags: z.array(z.string()).optional(),

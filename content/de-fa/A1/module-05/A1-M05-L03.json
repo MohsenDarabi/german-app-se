@@ -10,6 +10,7 @@
   "lessonNumber": 3,
   "totalSteps": 26,
   "estimatedMinutes": 15,
+  "charactersInLesson": ["alex", "eli", "lisa", "tom"],
   "steps": [
     {
       "type": "grammar-tip",
@@ -69,12 +70,12 @@
       "title": "مکالمه: قرار ملاقات",
       "context": "لیزا و الکس قرار می‌گذارند",
       "lines": [
-        { "speaker": "Lisa", "text": { "de": "Wann hast du Zeit?", "fa": "کی وقت داری؟" } },
-        { "speaker": "Alex", "text": { "de": "Morgen Nachmittag.", "fa": "فردا بعدازظهر." } },
-        { "speaker": "Lisa", "text": { "de": "Wie lange?", "fa": "چه مدت؟" } },
-        { "speaker": "Alex", "text": { "de": "Zwei Stunden.", "fa": "دو ساعت." } },
-        { "speaker": "Lisa", "text": { "de": "Gut! Wie kommen wir dahin?", "fa": "خوب! چطور می‌ریم اونجا؟" } },
-        { "speaker": "Alex", "text": { "de": "Mit dem Bus.", "fa": "با اتوبوس." } }
+        { "speakerId": "lisa", "text": { "de": "Wann hast du Zeit?", "fa": "کی وقت داری؟" } },
+        { "speakerId": "alex", "text": { "de": "Morgen Nachmittag.", "fa": "فردا بعدازظهر." } },
+        { "speakerId": "lisa", "text": { "de": "Wie lange?", "fa": "چه مدت؟" } },
+        { "speakerId": "alex", "text": { "de": "Zwei Stunden.", "fa": "دو ساعت." } },
+        { "speakerId": "lisa", "text": { "de": "Gut! Wie kommen wir dahin?", "fa": "خوب! چطور می‌ریم اونجا؟" } },
+        { "speakerId": "alex", "text": { "de": "Mit dem Bus.", "fa": "با اتوبوس." } }
       ]
     },
     {
@@ -198,12 +199,12 @@
       "title": "مکالمه: خرید",
       "context": "تام در فروشگاه خرید می‌کند",
       "lines": [
-        { "speaker": "Tom", "text": { "de": "Wie viel kostet das Buch?", "fa": "این کتاب چند است؟" } },
-        { "speaker": "Eli", "text": { "de": "Zehn Euro.", "fa": "ده یورو." } },
-        { "speaker": "Tom", "text": { "de": "Und wie viele Bücher haben Sie?", "fa": "و چند کتاب دارید؟" } },
-        { "speaker": "Eli", "text": { "de": "Wir haben viele Bücher.", "fa": "کتاب زیاد داریم." } },
-        { "speaker": "Tom", "text": { "de": "Wie lange ist das Geschäft offen?", "fa": "مغازه تا چه ساعتی باز است؟" } },
-        { "speaker": "Eli", "text": { "de": "Bis acht Uhr.", "fa": "تا ساعت هشت." } }
+        { "speakerId": "tom", "text": { "de": "Wie viel kostet das Buch?", "fa": "این کتاب چند است؟" } },
+        { "speakerId": "eli", "text": { "de": "Zehn Euro.", "fa": "ده یورو." } },
+        { "speakerId": "tom", "text": { "de": "Und wie viele Bücher haben Sie?", "fa": "و چند کتاب دارید؟" } },
+        { "speakerId": "eli", "text": { "de": "Wir haben viele Bücher.", "fa": "کتاب زیاد داریم." } },
+        { "speakerId": "tom", "text": { "de": "Wie lange ist das Geschäft offen?", "fa": "مغازه تا چه ساعتی باز است؟" } },
+        { "speakerId": "eli", "text": { "de": "Bis acht Uhr.", "fa": "تا ساعت هشت." } }
       ]
     },
     {
