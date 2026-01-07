@@ -39,7 +39,7 @@ const CATEGORY_KEYWORDS = {
 
 // Categories that get simple illustrations (no character)
 const SIMPLE_ILLUSTRATION_CATEGORIES = [
-  'places', 'food', 'furniture', 'transport', 'weather', 'numbers', 'family'
+  'places', 'food', 'furniture', 'transport', 'weather', 'numbers', 'family', 'grammar'
 ];
 
 // Categories that need a character demonstrating
@@ -121,15 +121,63 @@ function getCharacterRefPath(character, variant) {
   return `content/characters/${character}/${character}-${variant}.md`;
 }
 
+// Explicit overrides for words that would be miscategorized by substring matching
+const WORD_OVERRIDES = {
+  // "heißen" contains "heiß" (hot) but means "to be called" - Issue 2
+  'heißen': 'introductions',
+  'heißt': 'introductions',
+  'heiße': 'introductions',
+  'wie heißt du?': 'introductions',
+  'ich heiße...': 'introductions',
+  'wie heißen sie?': 'introductions',
+
+  // "macht" contains "acht" (eight) but is verb "machen" - Issue 3
+  'macht': 'actions',
+  'er macht': 'actions',
+  'sie macht': 'actions',
+  'ihr macht': 'actions',
+  'machen': 'actions',
+
+  // "Viertel" contains "vier" (four) but means "quarter" - Issue 4
+  'viertel': 'daily-life',
+  'das viertel': 'daily-life',
+
+  // Articles should not be "actions" just because they end in "en" - Issue 5
+  'den': 'grammar',
+  'einen': 'grammar',
+  'der': 'grammar',
+  'die': 'grammar',
+  'das': 'grammar',
+  'ein': 'grammar',
+  'eine': 'grammar',
+
+  // Countries should be consistent - Issue 6
+  'der iran': 'places',
+  'iran': 'places',
+};
+
 function categorizeWord(word) {
   const wordLower = word.toLowerCase();
+
+  // Check explicit overrides first (handles substring matching issues)
+  if (WORD_OVERRIDES[wordLower]) {
+    return WORD_OVERRIDES[wordLower];
+  }
+
+  // Use word boundary matching instead of substring matching
   for (const [category, keywords] of Object.entries(CATEGORY_KEYWORDS)) {
     for (const keyword of keywords) {
-      if (wordLower.includes(keyword.toLowerCase()) || word.includes(keyword)) {
+      // Create regex for word boundary matching
+      // Escape special regex characters in keyword
+      const escapedKeyword = keyword.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const regex = new RegExp(`(^|\\s|-)${escapedKeyword}($|\\s|[.,!?-])`, 'i');
+
+      if (regex.test(word)) {
         return category;
       }
     }
   }
+
   // Default category based on word characteristics
   if (word.match(/^(der|die|das) /)) return 'objects';
   if (word.match(/en$/)) return 'actions';
