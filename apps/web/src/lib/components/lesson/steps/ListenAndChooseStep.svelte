@@ -6,7 +6,9 @@
   export let step: ListenAndChooseStep;
   export let lessonId: string = '';
 
-  const dispatch = createEventDispatcher();
+  const dispatch = createEventDispatcher<{
+    answer: { correct: boolean; userAnswer: string; correctAnswer: string; allowContinue: boolean };
+  }>();
 
   let selectedIndex: number | null = null;
   let isAnswered = false;

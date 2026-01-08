@@ -4,7 +4,7 @@
 
   export let wrongAnswers: WrongAnswer[];
 
-  const dispatch = createEventDispatcher();
+  const dispatch = createEventDispatcher<{ complete: { reviewedIds: number[] } }>();
 
   let currentReviewIndex = 0;
   let selectedAnswer: string | null = null;
@@ -93,7 +93,7 @@
       <h3 class="question">{currentWrong.question || `سوال ${currentReviewIndex + 1}`}</h3>
 
       <div class="options-grid">
-        {#each options as option}
+        {#each options as option (option)}
           <button
             class="option-btn"
             class:selected={selectedAnswer === option}

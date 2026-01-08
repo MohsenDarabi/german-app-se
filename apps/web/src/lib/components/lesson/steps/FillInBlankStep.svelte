@@ -8,7 +8,7 @@
   export let step: FillInBlankStep;
   export let lessonId: string = '';
 
-  const dispatch = createEventDispatcher();
+  const dispatch = createEventDispatcher<{ answer: { correct: boolean; allowContinue: boolean } }>();
 
   // Parse sentence into parts with blanks
   $: parts = step.sentence.split(/(\{[0-9]+\})/g);
@@ -66,7 +66,7 @@
   {/if}
 
   <div class="sentence-area" dir={sentenceDir}>
-    {#each parts as part}
+    {#each parts as part, i (i)}
       {#if part.match(/\{[0-9]+\}/)}
         {@const blankIdx = getBlankIndex(part)}
         <span class="blank-wrapper">
@@ -89,7 +89,7 @@
   </div>
 
   <div class="options-grid">
-    {#each step.options as option, i}
+    {#each step.options as option, i (i)}
       <button
         class="option-btn"
         class:selected={selectedAnswers.includes(i)}

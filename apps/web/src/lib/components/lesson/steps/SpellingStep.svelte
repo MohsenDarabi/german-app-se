@@ -7,7 +7,7 @@
   export let step: SpellingStep;
   export let lessonId: string = '';
 
-  const dispatch = createEventDispatcher();
+  const dispatch = createEventDispatcher<{ answer: { correct: boolean; allowContinue: boolean } }>();
 
   // Generate letters from word + optional distractors
   let availableLetters: { letter: string; id: string; used: boolean }[] = [];
@@ -156,7 +156,7 @@
   <!-- Selected letters / answer area -->
   <div class="answer-area" class:correct={isCorrect} class:wrong={isWrong}>
     <div class="letter-slots">
-      {#each Array(step.word.length) as _, i}
+      {#each Array(step.word.length) as _, i (i)}
         <div
           class="letter-slot"
           class:filled={selectedLetters[i]}

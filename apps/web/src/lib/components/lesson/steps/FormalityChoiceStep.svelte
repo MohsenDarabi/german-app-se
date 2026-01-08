@@ -5,7 +5,9 @@
   export let step: FormalityChoiceStep;
   export let lessonId: string = '';
 
-  const dispatch = createEventDispatcher();
+  const dispatch = createEventDispatcher<{
+    answer: { correct: boolean; userAnswer: string; correctAnswer: string; allowContinue: boolean };
+  }>();
 
   let selectedAnswer: "formal" | "informal" | null = null;
   let isAnswered = false;

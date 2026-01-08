@@ -6,7 +6,7 @@
   export let step: MatchingStep;
   export let lessonId: string = '';
 
-  const dispatch = createEventDispatcher();
+  const dispatch = createEventDispatcher<{ answer: { correct: boolean; allowContinue: boolean } }>();
 
   // Fisher-Yates shuffle (deterministic, not dependent on sort stability)
   function shuffle<T>(array: T[]): T[] {
@@ -160,7 +160,7 @@
   <div class="columns">
     <!-- Left column: Items (German words) - shuffled -->
     <div class="column items-column">
-      {#each shuffledItems as item}
+      {#each shuffledItems as item (item.id)}
         {@const matched = isItemMatched(item.id)}
         {@const matchId = getMatchForItem(item.id)}
         {@const pairCorrect = matchId ? isPairCorrect(item.id, matchId) : false}
@@ -195,7 +195,7 @@
 
     <!-- Right column: Matches (translations) - shuffled -->
     <div class="column matches-column" dir="rtl">
-      {#each shuffledMatches as match}
+      {#each shuffledMatches as match (match.id)}
         {@const used = isMatchUsed(match.id)}
         {@const matchColorIndex = getMatchColorIndex(match.id)}
         <button
@@ -249,7 +249,7 @@
       <p class="feedback-text">بعضی جفت‌ها اشتباه هستند!</p>
       <div class="correct-pairs">
         <p><strong>پاسخ صحیح:</strong></p>
-        {#each step.correctPairs as [itemId, matchId]}
+        {#each step.correctPairs as [itemId, matchId] (`${itemId}:${matchId}`)}
           <p class="correct-pair">
             {getItemText(itemId)} = {getMatchText(matchId)}
           </p>
