@@ -5,7 +5,9 @@
   export let step: WordHuntStep;
   export let lessonId: string = '';
 
-  const dispatch = createEventDispatcher();
+  const dispatch = createEventDispatcher<{
+    answer: { correct: boolean; userAnswer: string; correctAnswer: string; allowContinue: boolean };
+  }>();
 
   interface Cell {
     letter: string;
@@ -349,7 +351,7 @@
 
   <!-- Word list -->
   <div class="word-list" dir="rtl">
-    {#each placedWords as word}
+    {#each placedWords as word (word.word)}
       <div class="word-item" class:found={word.found}>
         <span class="word-german">{word.word}</span>
         <span class="word-translation">{word.translation}</span>
@@ -365,8 +367,8 @@
     class="grid-container"
     style="--grid-size: {gridSize}"
   >
-    {#each grid as row, rowIdx}
-      {#each row as cell, colIdx}
+    {#each grid as row, rowIdx (rowIdx)}
+      {#each row as cell, colIdx (`${rowIdx}:${colIdx}`)}
         <button
           class="grid-cell"
           class:selected={cell.selected}

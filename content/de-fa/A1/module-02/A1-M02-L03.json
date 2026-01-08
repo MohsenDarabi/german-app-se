@@ -10,6 +10,7 @@
   "lessonNumber": 3,
   "totalSteps": 25,
   "estimatedMinutes": 15,
+  "charactersInLesson": ["alex", "eli", "tom"],
   "steps": [
     {
       "type": "grammar-tip",
@@ -210,11 +211,11 @@
       "title": "مکالمه: برنامه گروهی",
       "context": "الی و تام با دوستانشان صحبت می‌کنند",
       "lines": [
-        { "speaker": "Eli", "text": { "de": "Hallo zusammen! Was macht ihr heute?", "fa": "سلام به همه! امروز چه کار می‌کنید؟" } },
-        { "speaker": "Alex", "text": { "de": "Wir spielen Fußball. Kommst du mit?", "fa": "ما فوتبال بازی می‌کنیم. میای با ما؟" } },
-        { "speaker": "Eli", "text": { "de": "Ja, gerne! Spielen Lisa und Tom auch?", "fa": "آره، با کمال میل! لیزا و تام هم بازی می‌کنند؟" } },
-        { "speaker": "Alex", "text": { "de": "Ja, sie spielen auch.", "fa": "آره، آن‌ها هم بازی می‌کنند." } },
-        { "speaker": "Tom", "text": { "de": "Super! Wir spielen alle zusammen!", "fa": "عالی! همه با هم بازی می‌کنیم!" } }
+        { "speakerId": "eli", "text": { "de": "Hallo zusammen! Was macht ihr heute?", "fa": "سلام به همه! امروز چه کار می‌کنید؟" } },
+        { "speakerId": "alex", "text": { "de": "Wir spielen Fußball. Kommst du mit?", "fa": "ما فوتبال بازی می‌کنیم. میای با ما؟" } },
+        { "speakerId": "eli", "text": { "de": "Ja, gerne! Spielen Lisa und Tom auch?", "fa": "آره، با کمال میل! لیزا و تام هم بازی می‌کنند؟" } },
+        { "speakerId": "alex", "text": { "de": "Ja, sie spielen auch.", "fa": "آره، آن‌ها هم بازی می‌کنند." } },
+        { "speakerId": "tom", "text": { "de": "Super! Wir spielen alle zusammen!", "fa": "عالی! همه با هم بازی می‌کنیم!" } }
       ]
     },
     {

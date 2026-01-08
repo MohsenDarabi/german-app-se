@@ -10,6 +10,7 @@
   "lessonNumber": 2,
   "totalSteps": 26,
   "estimatedMinutes": 15,
+  "charactersInLesson": ["alex", "eli", "lisa", "tom"],
   "steps": [
     {
       "type": "grammar-tip",
@@ -138,11 +139,11 @@
       "title": "مکالمه: برنامه هفته",
       "context": "تام و لیزا درباره برنامه‌شان صحبت می‌کنند",
       "lines": [
-        { "speaker": "Tom", "text": { "de": "Welcher Tag ist heute?", "fa": "امروز چه روزی است؟" } },
-        { "speaker": "Lisa", "text": { "de": "Heute ist Mittwoch.", "fa": "امروز چهارشنبه است." } },
-        { "speaker": "Tom", "text": { "de": "Was machst du am Freitag?", "fa": "جمعه چیکار می‌کنی؟" } },
-        { "speaker": "Lisa", "text": { "de": "Am Freitag gehe ich ins Kino.", "fa": "جمعه می‌رم سینما." } },
-        { "speaker": "Tom", "text": { "de": "Schön! Und am Samstag?", "fa": "خوب! و شنبه؟" } }
+        { "speakerId": "tom", "text": { "de": "Welcher Tag ist heute?", "fa": "امروز چه روزی است؟" } },
+        { "speakerId": "lisa", "text": { "de": "Heute ist Mittwoch.", "fa": "امروز چهارشنبه است." } },
+        { "speakerId": "tom", "text": { "de": "Was machst du am Freitag?", "fa": "جمعه چیکار می‌کنی؟" } },
+        { "speakerId": "lisa", "text": { "de": "Am Freitag gehe ich ins Kino.", "fa": "جمعه می‌رم سینما." } },
+        { "speakerId": "tom", "text": { "de": "Schön! Und am Samstag?", "fa": "خوب! و شنبه؟" } }
       ]
     },
     {
@@ -252,11 +253,11 @@
       "title": "مکالمه: قرار گذاشتن",
       "context": "الکس و الی قرار می‌گذارند",
       "lines": [
-        { "speaker": "Alex", "text": { "de": "Hast du morgen Zeit?", "fa": "فردا وقت داری؟" } },
-        { "speaker": "Eli", "text": { "de": "Morgen? Nein, leider nicht.", "fa": "فردا؟ نه، متاسفانه نه." } },
-        { "speaker": "Alex", "text": { "de": "Und übermorgen?", "fa": "و پس‌فردا؟" } },
-        { "speaker": "Eli", "text": { "de": "Ja, übermorgen geht.", "fa": "بله، پس‌فردا می‌شه." } },
-        { "speaker": "Alex", "text": { "de": "Super! Um wie viel Uhr?", "fa": "عالی! ساعت چند؟" } }
+        { "speakerId": "alex", "text": { "de": "Hast du morgen Zeit?", "fa": "فردا وقت داری؟" } },
+        { "speakerId": "eli", "text": { "de": "Morgen? Nein, leider nicht.", "fa": "فردا؟ نه، متاسفانه نه." } },
+        { "speakerId": "alex", "text": { "de": "Und übermorgen?", "fa": "و پس‌فردا؟" } },
+        { "speakerId": "eli", "text": { "de": "Ja, übermorgen geht.", "fa": "بله، پس‌فردا می‌شه." } },
+        { "speakerId": "alex", "text": { "de": "Super! Um wie viel Uhr?", "fa": "عالی! ساعت چند؟" } }
       ]
     },
     {

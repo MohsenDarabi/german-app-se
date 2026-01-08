@@ -10,6 +10,7 @@
   "lessonNumber": 7,
   "totalSteps": 23,
   "estimatedMinutes": 15,
+  "charactersInLesson": ["eli", "kellner", "tom"],
   "steps": [
     {
       "type": "new-word",
@@ -249,10 +250,10 @@
       "title": "مکالمه: چند تا؟",
       "context": "الی و تام در کافه هستند",
       "lines": [
-        { "speaker": "Eli", "text": { "de": "Zwei Kaffee, bitte.", "fa": "دو قهوه، لطفاً." } },
-        { "speaker": "Kellner", "text": { "de": "Zwei Kaffee. Sonst noch etwas?", "fa": "دو قهوه. چیز دیگه‌ای؟" } },
-        { "speaker": "Tom", "text": { "de": "Ja, drei Croissants, bitte.", "fa": "بله، سه کروسان، لطفاً." } },
-        { "speaker": "Kellner", "text": { "de": "Das macht acht Euro.", "fa": "می‌شه هشت یورو." } }
+        { "speakerId": "eli", "text": { "de": "Zwei Kaffee, bitte.", "fa": "دو قهوه، لطفاً." } },
+        { "speakerId": "kellner", "text": { "de": "Zwei Kaffee. Sonst noch etwas?", "fa": "دو قهوه. چیز دیگه‌ای؟" } },
+        { "speakerId": "tom", "text": { "de": "Ja, drei Croissants, bitte.", "fa": "بله، سه کروسان، لطفاً." } },
+        { "speakerId": "kellner", "text": { "de": "Das macht acht Euro.", "fa": "می‌شه هشت یورو." } }
       ]
     },
     {

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { TrueFalseStep } from "$lib/content-model";
+  import type { TrueFalseStep } from "@pkg/content-model";
   import { createEventDispatcher } from "svelte";
   import BiDiText from "$lib/components/ui/BiDiText.svelte";
   import AudioButton from "$lib/components/ui/AudioButton.svelte";
@@ -7,7 +7,7 @@
   export let step: TrueFalseStep;
   export let lessonId: string = '';
 
-  const dispatch = createEventDispatcher();
+  const dispatch = createEventDispatcher<{ answer: { correct: boolean; allowContinue: boolean } }>();
 
   let selectedAnswer: boolean | null = null;
   let isAnswered = false;
@@ -80,7 +80,7 @@
         <div class="hint-content" dir="rtl">
           <p class="hint-intro">این کلمات را قبلاً یاد گرفتید:</p>
           <div class="hint-words">
-            {#each Object.entries(step.vocabHint?.words || {}) as [de, fa]}
+            {#each Object.entries(step.vocabHint?.words || {}) as [de, fa] (de)}
               <span class="hint-word">
                 <span class="de" dir="ltr">{de}</span>
                 <span class="sep">=</span>

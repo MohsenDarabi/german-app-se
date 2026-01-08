@@ -10,6 +10,7 @@
   "lessonNumber": 1,
   "totalSteps": 26,
   "estimatedMinutes": 15,
+  "charactersInLesson": ["alex", "eli", "lisa", "tom"],
   "steps": [
     {
       "type": "grammar-tip",
@@ -78,11 +79,11 @@
       "title": "مکالمه: قرار ملاقات",
       "context": "تام و لیزا قرار می‌گذارند",
       "lines": [
-        { "speaker": "Tom", "text": { "de": "Wie spät ist es?", "fa": "ساعت چنده؟" } },
-        { "speaker": "Lisa", "text": { "de": "Es ist drei Uhr.", "fa": "ساعت سه است." } },
-        { "speaker": "Tom", "text": { "de": "Wann treffen wir uns?", "fa": "کی همدیگر را ملاقات می‌کنیم؟" } },
-        { "speaker": "Lisa", "text": { "de": "Um halb vier?", "fa": "ساعت سه و نیم؟" } },
-        { "speaker": "Tom", "text": { "de": "Gut, bis dann!", "fa": "خوب، تا اون موقع!" } }
+        { "speakerId": "tom", "text": { "de": "Wie spät ist es?", "fa": "ساعت چنده؟" } },
+        { "speakerId": "lisa", "text": { "de": "Es ist drei Uhr.", "fa": "ساعت سه است." } },
+        { "speakerId": "tom", "text": { "de": "Wann treffen wir uns?", "fa": "کی همدیگر را ملاقات می‌کنیم؟" } },
+        { "speakerId": "lisa", "text": { "de": "Um halb vier?", "fa": "ساعت سه و نیم؟" } },
+        { "speakerId": "tom", "text": { "de": "Gut, bis dann!", "fa": "خوب، تا اون موقع!" } }
       ]
     },
     {
@@ -202,11 +203,11 @@
       "title": "مکالمه: برنامه روز",
       "context": "الکس و الی درباره برنامه صحبت می‌کنند",
       "lines": [
-        { "speaker": "Alex", "text": { "de": "Um wie viel Uhr stehst du auf?", "fa": "ساعت چند بیدار می‌شوی؟" } },
-        { "speaker": "Eli", "text": { "de": "Um sieben Uhr.", "fa": "ساعت هفت." } },
-        { "speaker": "Alex", "text": { "de": "Und wann gehst du zur Arbeit?", "fa": "و کی می‌ری سر کار؟" } },
-        { "speaker": "Eli", "text": { "de": "Um halb acht.", "fa": "ساعت هفت و نیم." } },
-        { "speaker": "Alex", "text": { "de": "Das ist früh!", "fa": "زوده!" } }
+        { "speakerId": "alex", "text": { "de": "Um wie viel Uhr stehst du auf?", "fa": "ساعت چند بیدار می‌شوی؟" } },
+        { "speakerId": "eli", "text": { "de": "Um sieben Uhr.", "fa": "ساعت هفت." } },
+        { "speakerId": "alex", "text": { "de": "Und wann gehst du zur Arbeit?", "fa": "و کی می‌ری سر کار؟" } },
+        { "speakerId": "eli", "text": { "de": "Um halb acht.", "fa": "ساعت هفت و نیم." } },
+        { "speakerId": "alex", "text": { "de": "Das ist früh!", "fa": "زوده!" } }
       ]
     },
     {

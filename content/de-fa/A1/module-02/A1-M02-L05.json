@@ -10,6 +10,7 @@
   "lessonNumber": 5,
   "totalSteps": 26,
   "estimatedMinutes": 15,
+  "charactersInLesson": ["eli", "tom"],
   "steps": [
     {
       "type": "grammar-tip",
@@ -258,11 +259,11 @@
       "title": "مکالمه: برنامه‌های آخر هفته",
       "context": "الی و تام درباره آخر هفته صحبت می‌کنند",
       "lines": [
-        { "speaker": "Eli", "text": { "de": "Was willst du am Wochenende machen?", "fa": "آخر هفته می‌خواهی چه کار کنی؟" } },
-        { "speaker": "Tom", "text": { "de": "Ich will ins Kino gehen. Kannst du mitkommen?", "fa": "می‌خواهم به سینما بروم. می‌توانی بیایی؟" } },
-        { "speaker": "Eli", "text": { "de": "Leider muss ich am Samstag arbeiten.", "fa": "متأسفانه شنبه باید کار کنم." } },
-        { "speaker": "Tom", "text": { "de": "Und am Sonntag?", "fa": "و یکشنبه؟" } },
-        { "speaker": "Eli", "text": { "de": "Ja, am Sonntag kann ich!", "fa": "آره، یکشنبه می‌توانم!" } }
+        { "speakerId": "eli", "text": { "de": "Was willst du am Wochenende machen?", "fa": "آخر هفته می‌خواهی چه کار کنی؟" } },
+        { "speakerId": "tom", "text": { "de": "Ich will ins Kino gehen. Kannst du mitkommen?", "fa": "می‌خواهم به سینما بروم. می‌توانی بیایی؟" } },
+        { "speakerId": "eli", "text": { "de": "Leider muss ich am Samstag arbeiten.", "fa": "متأسفانه شنبه باید کار کنم." } },
+        { "speakerId": "tom", "text": { "de": "Und am Sonntag?", "fa": "و یکشنبه؟" } },
+        { "speakerId": "eli", "text": { "de": "Ja, am Sonntag kann ich!", "fa": "آره، یکشنبه می‌توانم!" } }
       ]
     },
     {

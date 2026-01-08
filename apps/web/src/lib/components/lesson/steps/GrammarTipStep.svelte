@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { GrammarTipStep } from "$lib/content-model";
+  import type { GrammarTipStep } from "@pkg/content-model";
   import VocabPillList from "$lib/components/shared/VocabPillList.svelte";
   import BiDiText from "$lib/components/ui/BiDiText.svelte";
   import AudioButton from "$lib/components/ui/AudioButton.svelte";
@@ -57,6 +57,7 @@
   {#if isVocabList}
     <VocabPillList text={step.content} variant="warning" />
   {:else}
+    <!-- svelte-ignore svelte/no-at-html-tags -->
     <div class="grammar-text" dir="rtl">{@html parsedContent}</div>
   {/if}
 
@@ -65,7 +66,7 @@
       {#if !isPronunciationGuide}
         <h3 class="examples-title">مثال‌ها:</h3>
       {/if}
-      {#each step.examples as example, idx}
+      {#each step.examples as example, idx (idx)}
         {#if isPronunciationGuide}
           <div class="example-item inline-example">
             <AudioButton

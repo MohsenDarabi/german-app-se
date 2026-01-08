@@ -1,11 +1,13 @@
 <script lang="ts">
-  import type { MemoryMatchStep } from "$lib/content-model";
+  import type { MemoryMatchStep } from "@pkg/content-model";
   import { createEventDispatcher, onMount } from "svelte";
 
   export let step: MemoryMatchStep;
   export let lessonId: string = '';
 
-  const dispatch = createEventDispatcher();
+  const dispatch = createEventDispatcher<{
+    answer: { correct: boolean; userAnswer: string; correctAnswer: string; allowContinue: boolean };
+  }>();
 
   interface Card {
     id: string;

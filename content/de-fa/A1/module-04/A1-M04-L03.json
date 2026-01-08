@@ -10,6 +10,7 @@
   "lessonNumber": 3,
   "totalSteps": 26,
   "estimatedMinutes": 15,
+  "charactersInLesson": ["alex", "lisa"],
   "steps": [
     {
       "type": "grammar-tip",
@@ -133,11 +134,11 @@
       "title": "مکالمه: در کلاس",
       "context": "معلم درباره وسایل کلاس صحبت می‌کند",
       "lines": [
-        { "speaker": "Lisa", "text": { "de": "Wie viele Bücher haben wir?", "fa": "چند تا کتاب داریم؟" } },
-        { "speaker": "Alex", "text": { "de": "Wir haben zehn Bücher.", "fa": "ما ده تا کتاب داریم." } },
-        { "speaker": "Lisa", "text": { "de": "Und die Tische?", "fa": "و میزها؟" } },
-        { "speaker": "Alex", "text": { "de": "Fünf Tische und zehn Stühle.", "fa": "پنج میز و ده صندلی." } },
-        { "speaker": "Lisa", "text": { "de": "Die Kinder brauchen mehr Stühle!", "fa": "بچه‌ها صندلی بیشتر نیاز دارند!" } }
+        { "speakerId": "lisa", "text": { "de": "Wie viele Bücher haben wir?", "fa": "چند تا کتاب داریم؟" } },
+        { "speakerId": "alex", "text": { "de": "Wir haben zehn Bücher.", "fa": "ما ده تا کتاب داریم." } },
+        { "speakerId": "lisa", "text": { "de": "Und die Tische?", "fa": "و میزها؟" } },
+        { "speakerId": "alex", "text": { "de": "Fünf Tische und zehn Stühle.", "fa": "پنج میز و ده صندلی." } },
+        { "speakerId": "lisa", "text": { "de": "Die Kinder brauchen mehr Stühle!", "fa": "بچه‌ها صندلی بیشتر نیاز دارند!" } }
       ]
     },
     {

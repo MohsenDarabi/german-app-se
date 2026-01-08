@@ -10,6 +10,7 @@
   "lessonNumber": 3,
   "totalSteps": 26,
   "estimatedMinutes": 15,
+  "charactersInLesson": ["alex", "eli", "lisa", "tom"],
   "steps": [
     {
       "type": "grammar-tip",
@@ -134,11 +135,11 @@
       "title": "مکالمه: تولد",
       "context": "لیزا و تام درباره تولد صحبت می‌کنند",
       "lines": [
-        { "speaker": "Lisa", "text": { "de": "Wann hast du Geburtstag?", "fa": "کی تولدت است؟" } },
-        { "speaker": "Tom", "text": { "de": "Im Mai. Und du?", "fa": "در مه. و تو؟" } },
-        { "speaker": "Lisa", "text": { "de": "Ich habe im November Geburtstag.", "fa": "تولد من در نوامبر است." } },
-        { "speaker": "Tom", "text": { "de": "Oh, im Herbst!", "fa": "اوه، در پاییز!" } },
-        { "speaker": "Lisa", "text": { "de": "Ja, ich liebe den Herbst.", "fa": "بله، عاشق پاییزم." } }
+        { "speakerId": "lisa", "text": { "de": "Wann hast du Geburtstag?", "fa": "کی تولدت است؟" } },
+        { "speakerId": "tom", "text": { "de": "Im Mai. Und du?", "fa": "در مه. و تو؟" } },
+        { "speakerId": "lisa", "text": { "de": "Ich habe im November Geburtstag.", "fa": "تولد من در نوامبر است." } },
+        { "speakerId": "tom", "text": { "de": "Oh, im Herbst!", "fa": "اوه، در پاییز!" } },
+        { "speakerId": "lisa", "text": { "de": "Ja, ich liebe den Herbst.", "fa": "بله، عاشق پاییزم." } }
       ]
     },
     {
@@ -247,11 +248,11 @@
       "title": "مکالمه: فصل مورد علاقه",
       "context": "الکس و الی درباره فصل‌ها صحبت می‌کنند",
       "lines": [
-        { "speaker": "Alex", "text": { "de": "Was ist deine Lieblingsjahreszeit?", "fa": "فصل مورد علاقه‌ات چیه؟" } },
-        { "speaker": "Eli", "text": { "de": "Ich mag den Frühling.", "fa": "بهار رو دوست دارم." } },
-        { "speaker": "Alex", "text": { "de": "Warum?", "fa": "چرا؟" } },
-        { "speaker": "Eli", "text": { "de": "Es ist nicht zu heiß und nicht zu kalt.", "fa": "نه خیلی گرمه نه خیلی سرد." } },
-        { "speaker": "Alex", "text": { "de": "Ich liebe den Sommer!", "fa": "من عاشق تابستانم!" } }
+        { "speakerId": "alex", "text": { "de": "Was ist deine Lieblingsjahreszeit?", "fa": "فصل مورد علاقه‌ات چیه؟" } },
+        { "speakerId": "eli", "text": { "de": "Ich mag den Frühling.", "fa": "بهار رو دوست دارم." } },
+        { "speakerId": "alex", "text": { "de": "Warum?", "fa": "چرا؟" } },
+        { "speakerId": "eli", "text": { "de": "Es ist nicht zu heiß und nicht zu kalt.", "fa": "نه خیلی گرمه نه خیلی سرد." } },
+        { "speakerId": "alex", "text": { "de": "Ich liebe den Sommer!", "fa": "من عاشق تابستانم!" } }
       ]
     },
     {

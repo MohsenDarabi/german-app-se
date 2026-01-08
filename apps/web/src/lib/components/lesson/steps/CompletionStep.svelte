@@ -1,11 +1,11 @@
 <script lang="ts">
-  import type { CompletionStep } from "$lib/content-model";
+  import type { CompletionStep } from "@pkg/content-model";
   import { createEventDispatcher } from "svelte";
 
   export let step: CompletionStep;
   export let lessonId: string = '';
 
-  const dispatch = createEventDispatcher();
+  const dispatch = createEventDispatcher<{ answer: { correct: boolean; allowContinue: boolean } }>();
 
   // Dispatch that we're done (allow continue)
   dispatch('answer', {
@@ -23,7 +23,7 @@
     <div class="vocabulary-section">
       <h3 class="vocab-title">واژگان یاد گرفته شده:</h3>
       <div class="vocab-list">
-        {#each step.vocabularyLearned as item}
+        {#each step.vocabularyLearned as item (item.word.de)}
           <div class="vocab-item">
             <span class="vocab-de">{item.word.de}</span>
             <span class="vocab-fa">{item.word.fa}</span>

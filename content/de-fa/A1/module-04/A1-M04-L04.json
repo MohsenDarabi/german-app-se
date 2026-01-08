@@ -10,6 +10,7 @@
   "lessonNumber": 4,
   "totalSteps": 26,
   "estimatedMinutes": 15,
+  "charactersInLesson": ["lisa", "tom"],
   "steps": [
     {
       "type": "grammar-tip",
@@ -119,11 +120,11 @@
       "title": "مکالمه: خرید",
       "context": "تام و لیزا در فروشگاه هستند",
       "lines": [
-        { "speaker": "Tom", "text": { "de": "Ich brauche einen Stuhl.", "fa": "من یک صندلی نیاز دارم." } },
-        { "speaker": "Lisa", "text": { "de": "Siehst du den Stuhl dort?", "fa": "آن صندلی را آنجا می‌بینی؟" } },
-        { "speaker": "Tom", "text": { "de": "Ja, ich kaufe den Stuhl.", "fa": "بله، آن صندلی را می‌خرم." } },
-        { "speaker": "Lisa", "text": { "de": "Und ich kaufe die Lampe.", "fa": "و من چراغ را می‌خرم." } },
-        { "speaker": "Tom", "text": { "de": "Die Lampe ist schön!", "fa": "چراغ قشنگ است!" } }
+        { "speakerId": "tom", "text": { "de": "Ich brauche einen Stuhl.", "fa": "من یک صندلی نیاز دارم." } },
+        { "speakerId": "lisa", "text": { "de": "Siehst du den Stuhl dort?", "fa": "آن صندلی را آنجا می‌بینی؟" } },
+        { "speakerId": "tom", "text": { "de": "Ja, ich kaufe den Stuhl.", "fa": "بله، آن صندلی را می‌خرم." } },
+        { "speakerId": "lisa", "text": { "de": "Und ich kaufe die Lampe.", "fa": "و من چراغ را می‌خرم." } },
+        { "speakerId": "tom", "text": { "de": "Die Lampe ist schön!", "fa": "چراغ قشنگ است!" } }
       ]
     },
     {

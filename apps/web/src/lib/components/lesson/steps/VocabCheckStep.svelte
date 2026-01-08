@@ -5,7 +5,9 @@
   export let step: VocabCheckStep;
   export let lessonId: string = '';
 
-  const dispatch = createEventDispatcher();
+  const dispatch = createEventDispatcher<{
+    answer: { correct: boolean; userAnswer: string; correctAnswer: string; allowContinue: boolean };
+  }>();
 
   interface CheckedWord extends VocabCheckWord {
     rating: 'easy' | 'medium' | 'hard' | null;

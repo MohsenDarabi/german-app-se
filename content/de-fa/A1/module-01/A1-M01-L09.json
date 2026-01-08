@@ -10,6 +10,7 @@
   "lessonNumber": 9,
   "totalSteps": 24,
   "estimatedMinutes": 18,
+  "charactersInLesson": ["eli", "tom"],
   "steps": [
     {
       "type": "grammar-tip",
@@ -274,11 +275,11 @@
       "title": "مکالمه: سن و سال",
       "context": "الی و تام درباره سن صحبت می‌کنند",
       "lines": [
-        { "speaker": "Eli", "text": { "de": "Tom, wie alt ist dein Opa?", "fa": "تام، پدربزرگت چند سالشه؟" } },
-        { "speaker": "Tom", "text": { "de": "Er ist fünfundsiebzig.", "fa": "او هفتاد و پنج ساله است." } },
-        { "speaker": "Eli", "text": { "de": "Und deine Oma?", "fa": "و مادربزرگت؟" } },
-        { "speaker": "Tom", "text": { "de": "Sie ist dreiundsiebzig.", "fa": "او هفتاد و سه ساله است." } },
-        { "speaker": "Eli", "text": { "de": "Mein Opa ist achtzig!", "fa": "پدربزرگ من هشتاد ساله است!" } }
+        { "speakerId": "eli", "text": { "de": "Tom, wie alt ist dein Opa?", "fa": "تام، پدربزرگت چند سالشه؟" } },
+        { "speakerId": "tom", "text": { "de": "Er ist fünfundsiebzig.", "fa": "او هفتاد و پنج ساله است." } },
+        { "speakerId": "eli", "text": { "de": "Und deine Oma?", "fa": "و مادربزرگت؟" } },
+        { "speakerId": "tom", "text": { "de": "Sie ist dreiundsiebzig.", "fa": "او هفتاد و سه ساله است." } },
+        { "speakerId": "eli", "text": { "de": "Mein Opa ist achtzig!", "fa": "پدربزرگ من هشتاد ساله است!" } }
       ]
     },
     {
