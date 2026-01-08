@@ -2,6 +2,7 @@
   import type { DialogStep } from "@pkg/content-model";
   import BiDiText from "$lib/components/ui/BiDiText.svelte";
   import AudioButton from "$lib/components/ui/AudioButton.svelte";
+  import { getCharacterAvatarPath, getCharacterDisplayName } from "$lib/utils/character-resolver";
 
   export let step: DialogStep;
   export let lessonId: string = '';
@@ -11,9 +12,16 @@
   <h2 class="step-title">مکالمه</h2>
   <div class="chat-box">
     {#each step.lines as line, i (i)}
+      {@const avatarPath = getCharacterAvatarPath(line.speakerId)}
+      {@const speakerName = getCharacterDisplayName(line.speakerId)}
       <div class="chat-bubble">
         <div class="bubble-header">
-          <span class="speaker-name">{line.speaker}</span>
+          <div class="speaker-info">
+            {#if avatarPath}
+              <img class="speaker-avatar" src={avatarPath} alt={speakerName} />
+            {/if}
+            <span class="speaker-name">{speakerName}</span>
+          </div>
           <AudioButton
             text={line.text.de}
             {lessonId}
@@ -68,6 +76,21 @@
     justify-content: space-between;
     margin-bottom: 0.25rem;
     gap: 0.5rem;
+  }
+
+  .speaker-info {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .speaker-avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #e2e8f0;
+    flex-shrink: 0;
   }
 
   .speaker-name {
