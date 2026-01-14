@@ -8,7 +8,7 @@
 
   const dispatch = createEventDispatcher();
 
-  // Fisher-Yates shuffle (deterministic, not dependent on sort stability)
+  // Fisher-Yates shuffle
   function shuffle<T>(array: T[]): T[] {
     const result = [...array];
     for (let i = result.length - 1; i > 0; i--) {
@@ -18,137 +18,109 @@
     return result;
   }
 
+  // Create mixed items from both columns
+  type MixedItem = {
+    id: string;
+    text: string;
+    type: 'german' | 'persian';
+    originalId: string;
+  };
+
+  function createMixedItems(): MixedItem[] {
+    const germanItems: MixedItem[] = step.items.map(item => ({
+      id: `de-${item.id}`,
+      text: item.text,
+      type: 'german' as const,
+      originalId: item.id
+    }));
+
+    const persianItems: MixedItem[] = step.matches.map(match => ({
+      id: `fa-${match.id}`,
+      text: match.text,
+      type: 'persian' as const,
+      originalId: match.id
+    }));
+
+    return shuffle([...germanItems, ...persianItems]);
+  }
+
   // State
-  let selectedItemId: string | null = null;  // Selected from left (German) column
-  let selectedMatchId: string | null = null; // Selected from right (Persian) column
-  let matchedPairs: [string, string][] = [];
-  let isAnswered = false;
-  let isCorrect = false;
-  let canRetry = false;
+  let mixedItems = createMixedItems();
+  let selectedItem: MixedItem | null = null;
+  let matchedPairs: Map<string, string> = new Map(); // german originalId -> persian originalId
+  let matchedItemIds: Set<string> = new Set(); // All matched item IDs (for styling)
+  let lastMatchedIds: Set<string> = new Set(); // For animation
+  let isComplete = false;
 
-  // Shuffle BOTH columns immediately on initialization
-  let shuffledItems: typeof step.items = step.shuffleTargets !== false
-    ? shuffle(step.items)
-    : [...step.items];
-  let shuffledMatches: typeof step.matches = step.shuffleTargets !== false
-    ? shuffle(step.matches)
-    : [...step.matches];
+  $: totalPairs = step.items.length;
+  $: completedPairs = matchedPairs.size;
+  $: progressDots = Array(totalPairs).fill(false).map((_, i) => i < completedPairs);
 
-  // Check if an item is already matched
-  function isItemMatched(itemId: string): boolean {
-    return matchedPairs.some(([item]) => item === itemId);
-  }
-
-  // Check if a match is already used
-  function isMatchUsed(matchId: string): boolean {
-    return matchedPairs.some(([, match]) => match === matchId);
-  }
-
-  // Get the match id for a matched item
-  function getMatchForItem(itemId: string): string | null {
-    const pair = matchedPairs.find(([item]) => item === itemId);
-    return pair ? pair[1] : null;
-  }
-
-  // Check if a specific pair is correct
-  function isPairCorrect(itemId: string, matchId: string): boolean {
+  // Check if a pair is correct
+  function isPairCorrect(germanId: string, persianId: string): boolean {
     return step.correctPairs.some(
-      ([correctItem, correctMatch]) => correctItem === itemId && correctMatch === matchId
+      ([correctGerman, correctPersian]) => correctGerman === germanId && correctPersian === persianId
     );
   }
 
-  function selectItem(itemId: string) {
-    if (isAnswered || isItemMatched(itemId)) return;
+  function handleItemClick(item: MixedItem) {
+    if (matchedItemIds.has(item.id) || isComplete) return;
 
-    // If a match is already selected, create the pair
-    if (selectedMatchId) {
-      matchedPairs = [...matchedPairs, [itemId, selectedMatchId]];
-      selectedItemId = null;
-      selectedMatchId = null;
+    if (!selectedItem) {
+      // First selection
+      selectedItem = item;
+    } else if (selectedItem.id === item.id) {
+      // Deselect
+      selectedItem = null;
+    } else if (selectedItem.type === item.type) {
+      // Same type - switch selection
+      selectedItem = item;
     } else {
-      // Select this item (deselect if clicking same one)
-      selectedItemId = selectedItemId === itemId ? null : itemId;
+      // Different types - try to match
+      const germanItem = selectedItem.type === 'german' ? selectedItem : item;
+      const persianItem = selectedItem.type === 'persian' ? selectedItem : item;
+
+      // Check if correct
+      const correct = isPairCorrect(germanItem.originalId, persianItem.originalId);
+
+      if (correct) {
+        // Add to matched
+        matchedPairs.set(germanItem.originalId, persianItem.originalId);
+        matchedPairs = matchedPairs; // trigger reactivity
+
+        matchedItemIds.add(germanItem.id);
+        matchedItemIds.add(persianItem.id);
+        matchedItemIds = matchedItemIds; // trigger reactivity
+
+        // Animation tracking
+        lastMatchedIds = new Set([germanItem.id, persianItem.id]);
+        setTimeout(() => {
+          lastMatchedIds = new Set();
+        }, 600);
+
+        // Check if all matched
+        if (matchedPairs.size === totalPairs) {
+          isComplete = true;
+          dispatch('answer', {
+            correct: true,
+            allowContinue: true
+          });
+        }
+      } else {
+        // Wrong match - shake and reset selection
+        // Could add shake animation here
+      }
+
+      selectedItem = null;
     }
   }
 
-  function selectMatch(matchId: string) {
-    if (isAnswered || isMatchUsed(matchId)) return;
-
-    // If an item is already selected, create the pair
-    if (selectedItemId) {
-      matchedPairs = [...matchedPairs, [selectedItemId, matchId]];
-      selectedItemId = null;
-      selectedMatchId = null;
-    } else {
-      // Select this match (deselect if clicking same one)
-      selectedMatchId = selectedMatchId === matchId ? null : matchId;
-    }
-  }
-
-  function removePair(itemId: string) {
-    if (isAnswered) return;
-    matchedPairs = matchedPairs.filter(([item]) => item !== itemId);
-  }
-
-  function checkAnswer() {
-    if (matchedPairs.length !== step.items.length) return;
-
-    isAnswered = true;
-
-    // Check if all pairs are correct
-    isCorrect = matchedPairs.every(([itemId, matchId]) =>
-      isPairCorrect(itemId, matchId)
-    );
-
-    if (!isCorrect) {
-      canRetry = true;
-    }
-
-    dispatch('answer', {
-      correct: isCorrect,
-      allowContinue: isCorrect
-    });
-  }
-
-  function retry() {
-    matchedPairs = [];
-    selectedItemId = null;
-    selectedMatchId = null;
-    isAnswered = false;
-    isCorrect = false;
-    canRetry = false;
-    // Reshuffle both columns
-    if (step.shuffleTargets !== false) {
-      shuffledItems = shuffle(step.items);
-      shuffledMatches = shuffle(step.matches);
-    }
-  }
-
-  // Get the text for a match by ID
-  function getMatchText(matchId: string): string {
-    const match = step.matches.find(m => m.id === matchId);
-    return match?.text || '';
-  }
-
-  // Get the text for an item by ID
-  function getItemText(itemId: string): string {
-    const item = step.items.find(i => i.id === itemId);
-    return item?.text || '';
-  }
-
-  // Color palette for matched pairs (5 distinct colors)
-  const pairColors = ['coral', 'teal', 'purple', 'amber', 'indigo'];
-
-  // Get color index for a matched pair
-  function getPairColorIndex(itemId: string): number {
-    const index = matchedPairs.findIndex(([item]) => item === itemId);
-    return index >= 0 ? index % pairColors.length : -1;
-  }
-
-  // Get color index for a match target
-  function getMatchColorIndex(matchId: string): number {
-    const index = matchedPairs.findIndex(([, match]) => match === matchId);
-    return index >= 0 ? index % pairColors.length : -1;
+  function getItemState(item: MixedItem): string {
+    if (lastMatchedIds.has(item.id)) return 'just-matched';
+    if (matchedItemIds.has(item.id)) return 'matched';
+    if (selectedItem?.id === item.id) return 'selected';
+    if (selectedItem && selectedItem.type !== item.type && !matchedItemIds.has(item.id)) return 'selectable';
+    return 'default';
   }
 </script>
 
@@ -157,108 +129,39 @@
     <p class="instruction" dir="rtl"><BiDiText text={step.instruction} /></p>
   {/if}
 
-  <div class="columns">
-    <!-- Left column: Items (German words) - shuffled -->
-    <div class="column items-column">
-      {#each shuffledItems as item}
-        {@const matched = isItemMatched(item.id)}
-        {@const matchId = getMatchForItem(item.id)}
-        {@const pairCorrect = matchId ? isPairCorrect(item.id, matchId) : false}
-        {@const colorIndex = getPairColorIndex(item.id)}
-        <button
-          class="match-chip"
-          class:selected={selectedItemId === item.id}
-          class:matched={matched}
-          class:selectable={selectedMatchId !== null && !matched}
-          class:correct={isAnswered && matched && pairCorrect}
-          class:wrong={isAnswered && matched && !pairCorrect}
-          class:pair-coral={matched && !isAnswered && colorIndex === 0}
-          class:pair-teal={matched && !isAnswered && colorIndex === 1}
-          class:pair-purple={matched && !isAnswered && colorIndex === 2}
-          class:pair-amber={matched && !isAnswered && colorIndex === 3}
-          class:pair-indigo={matched && !isAnswered && colorIndex === 4}
-          on:click={() => matched ? removePair(item.id) : selectItem(item.id)}
-          disabled={isAnswered || matched}
-        >
-          <span class="item-text">
-            {#if matched && !isAnswered}
-              <span class="pair-indicator" style="background: {colorIndex >= 0 ? ['#ff7875', '#36cfc9', '#b37feb', '#ffc53d', '#597ef7'][colorIndex] : '#94a3b8'}">✓</span>
-            {/if}
-            {item.text}
-          </span>
-          {#if matched}
-            <span class="matched-text">{getMatchText(matchId || '')}</span>
-          {/if}
-        </button>
-      {/each}
-    </div>
-
-    <!-- Right column: Matches (translations) - shuffled -->
-    <div class="column matches-column" dir="rtl">
-      {#each shuffledMatches as match}
-        {@const used = isMatchUsed(match.id)}
-        {@const matchColorIndex = getMatchColorIndex(match.id)}
-        <button
-          class="match-chip"
-          class:used={used}
-          class:selected={selectedMatchId === match.id}
-          class:selectable={selectedItemId !== null && !used}
-          class:pair-coral={used && !isAnswered && matchColorIndex === 0}
-          class:pair-teal={used && !isAnswered && matchColorIndex === 1}
-          class:pair-purple={used && !isAnswered && matchColorIndex === 2}
-          class:pair-amber={used && !isAnswered && matchColorIndex === 3}
-          class:pair-indigo={used && !isAnswered && matchColorIndex === 4}
-          on:click={() => selectMatch(match.id)}
-          disabled={isAnswered || used}
-        >
-          {#if used && !isAnswered}
-            <span class="pair-indicator" style="background: {matchColorIndex >= 0 ? ['#ff7875', '#36cfc9', '#b37feb', '#ffc53d', '#597ef7'][matchColorIndex] : '#94a3b8'}">✓</span>
-          {/if}
-          {match.text}
-        </button>
-      {/each}
-    </div>
+  <!-- Progress dots -->
+  <div class="progress-dots">
+    {#each progressDots as completed, i}
+      <span class="dot" class:completed></span>
+    {/each}
   </div>
 
-  {#if !isAnswered && matchedPairs.length === step.items.length}
-    <button class="check-btn" on:click={checkAnswer}>
-      بررسی پاسخ
-    </button>
-  {/if}
+  <!-- Mixed items grid -->
+  <div class="items-grid">
+    {#each mixedItems as item (item.id)}
+      {@const state = getItemState(item)}
+      <button
+        class="match-item"
+        class:german={item.type === 'german'}
+        class:persian={item.type === 'persian'}
+        class:selected={state === 'selected'}
+        class:selectable={state === 'selectable'}
+        class:matched={state === 'matched'}
+        class:just-matched={state === 'just-matched'}
+        on:click={() => handleItemClick(item)}
+        disabled={matchedItemIds.has(item.id)}
+      >
+        <span class="flag">{item.type === 'german' ? '🇩🇪' : '🇮🇷'}</span>
+        <span class="text" dir={item.type === 'persian' ? 'rtl' : 'ltr'}>{item.text}</span>
+      </button>
+    {/each}
+  </div>
 
-  {#if !isAnswered}
-    <div class="progress-row">
-      <span class="progress-text">{matchedPairs.length} از {step.items.length} جفت</span>
-      {#if selectedItemId || selectedMatchId}
-        <span class="hint-inline">جفت را انتخاب کنید</span>
-      {/if}
-    </div>
-  {/if}
-
-  {#if isAnswered && isCorrect}
-    <div class="success-section">
-      <p class="feedback-text success">آفرین! همه جفت‌ها صحیح هستند</p>
-      {#if step.feedback?.explanation}
-        <p class="explanation" dir="rtl"><BiDiText text={step.feedback.explanation} /></p>
-      {/if}
-    </div>
-  {/if}
-
-  {#if canRetry}
-    <div class="retry-section">
-      <p class="feedback-text">بعضی جفت‌ها اشتباه هستند!</p>
-      <div class="correct-pairs">
-        <p><strong>پاسخ صحیح:</strong></p>
-        {#each step.correctPairs as [itemId, matchId]}
-          <p class="correct-pair">
-            {getItemText(itemId)} = {getMatchText(matchId)}
-          </p>
-        {/each}
-      </div>
-      {#if step.feedback?.explanation}
-        <p class="explanation" dir="rtl"><BiDiText text={step.feedback.explanation} /></p>
-      {/if}
-      <button class="retry-btn" on:click={retry}>تلاش مجدد</button>
+  <!-- Completion message -->
+  {#if isComplete}
+    <div class="success-message">
+      <span class="success-icon">✓</span>
+      <span dir="rtl">آفرین! همه جفت‌ها صحیح</span>
     </div>
   {/if}
 </div>
@@ -267,284 +170,192 @@
   .matching-container {
     display: flex;
     flex-direction: column;
-    gap: var(--space-6, 1.5rem);
-  }
-
-  .instruction {
-    font-size: var(--text-lg, 1.125rem);
-    color: var(--color-neutral-500, #78716c);
-    text-align: center;
-    margin: 0;
-  }
-
-  /* Mobile-first: stack columns vertically */
-  .columns {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-6, 1.5rem);
-  }
-
-  .column {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-2, 0.5rem);
-  }
-
-  /* Side-by-side columns on larger screens */
-  @media (min-width: 480px) {
-    .columns {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: var(--space-4, 1rem);
-    }
-    .column {
-      gap: var(--space-3, 0.75rem);
-    }
-  }
-
-  .match-chip {
-    /* Minimum 44px touch target for accessibility */
-    min-height: 44px;
-    padding: var(--space-3, 0.75rem);
-    border: 2px solid var(--glass-border, rgba(212, 201, 185, 0.5));
-    border-radius: var(--radius-lg, 0.75rem);
-    background: var(--glass-bg, rgba(253, 251, 247, 0.95));
-    font-size: var(--text-base, 1rem);
-    color: var(--color-neutral-700, #44403c);
-    cursor: pointer;
-    transition: all var(--transition-normal, 200ms);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-1, 0.25rem);
-  }
-
-  @media (min-width: 480px) {
-    .match-chip {
-      padding: var(--space-3, 0.75rem) var(--space-4, 1rem);
-    }
-  }
-
-  .match-chip:hover:not(:disabled):not(.matched) {
-    border-color: var(--color-primary-400, #22d3ee);
-    background: var(--color-primary-50, #ecfeff);
-    transform: translateY(-2px);
-  }
-
-  .match-chip.selected {
-    border-color: var(--color-primary-500, #0891b2);
-    background: linear-gradient(135deg, var(--color-primary-100, #cffafe), var(--color-primary-50, #ecfeff));
-    box-shadow: 0 0 0 3px rgba(8, 145, 178, 0.2);
-  }
-
-  .match-chip.selectable {
-    border-color: var(--color-success-400, #facc15);
-    background: linear-gradient(135deg, rgba(234, 179, 8, 0.1), rgba(234, 179, 8, 0.05));
-    animation: pulse 1s infinite;
-  }
-
-  @keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.7; }
-  }
-
-  .match-chip.matched {
-    background: var(--color-neutral-100, #f5f0e8);
-    border-color: var(--color-neutral-400, #a69b8a);
-    cursor: pointer;
-  }
-
-  .match-chip.used {
-    opacity: 1;
-    cursor: default;
-  }
-
-  /* Color-coded pair styles - Persian palette */
-  .match-chip.pair-coral {
-    background: linear-gradient(135deg, rgba(219, 39, 119, 0.1), rgba(219, 39, 119, 0.05));
-    border-color: var(--color-accent, #db2777);
-    border-width: 2px;
-  }
-
-  .match-chip.pair-teal {
-    background: linear-gradient(135deg, var(--color-primary-50, #ecfeff), rgba(8, 145, 178, 0.05));
-    border-color: var(--color-primary-400, #22d3ee);
-    border-width: 2px;
-  }
-
-  .match-chip.pair-purple {
-    background: linear-gradient(135deg, var(--color-xp-50, #eef2ff), rgba(79, 70, 229, 0.05));
-    border-color: var(--color-xp-400, #818cf8);
-    border-width: 2px;
-  }
-
-  .match-chip.pair-amber {
-    background: linear-gradient(135deg, var(--color-success-50, #fefce8), rgba(234, 179, 8, 0.05));
-    border-color: var(--color-success-400, #facc15);
-    border-width: 2px;
-  }
-
-  .match-chip.pair-indigo {
-    background: linear-gradient(135deg, rgba(5, 150, 105, 0.1), rgba(5, 150, 105, 0.05));
-    border-color: var(--color-gem, #059669);
-    border-width: 2px;
-  }
-
-  .match-chip.correct {
-    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(16, 185, 129, 0.05));
-    border-color: var(--color-gem-400, #34d399);
-  }
-
-  .match-chip.wrong {
-    background: linear-gradient(135deg, rgba(169, 30, 30, 0.1), rgba(169, 30, 30, 0.05));
-    border-color: var(--color-error-400, #c84b4b);
-  }
-
-  .match-chip:disabled {
-    cursor: default;
-  }
-
-  .item-text {
-    font-weight: var(--font-medium, 500);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--space-2, 0.5rem);
-  }
-
-  .pair-indicator {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 1.25rem;
-    height: 1.25rem;
-    border-radius: 50%;
-    color: white;
-    font-size: 0.75rem;
-    font-weight: bold;
-  }
-
-  .matched-text {
-    font-size: var(--text-sm, 0.875rem);
-    color: var(--color-neutral-500, #78716c);
-    font-style: italic;
-  }
-
-  .progress-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: var(--space-4, 1rem);
   }
 
-  .progress-text {
-    color: var(--color-neutral-500, #78716c);
-    font-size: var(--text-sm, 0.875rem);
-    font-weight: var(--font-medium, 500);
-  }
-
-  .hint-inline {
-    color: var(--color-primary-600, #0e7490);
-    font-size: var(--text-sm, 0.875rem);
-    animation: pulse 1s infinite;
-  }
-
-  .check-btn {
-    padding: var(--space-4, 1rem) var(--space-8, 2rem);
-    background: linear-gradient(135deg, var(--color-primary-500, #0891b2), var(--color-primary-600, #0e7490));
-    color: white;
-    border: none;
-    border-radius: var(--radius-full, 9999px);
+  .instruction {
     font-size: var(--text-base, 1rem);
-    font-weight: var(--font-semibold, 600);
-    cursor: pointer;
-    align-self: center;
-    transition: all var(--transition-normal, 200ms);
-    box-shadow: 0 4px 15px rgba(8, 145, 178, 0.3);
-    min-height: 48px;
-  }
-
-  .check-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(8, 145, 178, 0.4);
-  }
-
-  .success-section {
-    padding: var(--space-6, 1.5rem);
-    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(16, 185, 129, 0.05));
-    border: 2px solid var(--color-gem-400, #34d399);
-    border-radius: var(--radius-lg, 0.75rem);
+    color: var(--color-neutral-500, #78716c);
     text-align: center;
+    margin: 0;
   }
 
-  .retry-section {
+  /* Progress dots */
+  .progress-dots {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--space-3, 0.75rem);
-    padding: var(--space-6, 1.5rem);
-    background: linear-gradient(135deg, rgba(169, 30, 30, 0.1), rgba(169, 30, 30, 0.05));
-    border: 2px solid var(--color-error-400, #c84b4b);
-    border-radius: var(--radius-lg, 0.75rem);
+    justify-content: center;
+    gap: var(--space-2, 0.5rem);
+    padding: var(--space-2, 0.5rem) 0;
   }
 
-  .feedback-text {
-    font-weight: var(--font-semibold, 600);
-    text-align: center;
-    margin: 0;
-  }
-
-  .feedback-text.success {
-    color: var(--color-gem-600, #059669);
-    font-size: var(--text-lg, 1.125rem);
-  }
-
-  .retry-section .feedback-text {
-    color: var(--color-error-600, #8b1a1a);
-  }
-
-  .correct-pairs {
-    text-align: center;
-  }
-
-  .correct-pair {
-    margin: var(--space-1, 0.25rem) 0;
-    color: var(--color-neutral-800, #292524);
-  }
-
-  .explanation {
-    color: var(--color-neutral-500, #78716c);
-    font-size: var(--text-sm, 0.875rem);
-    text-align: center;
-    margin: 0;
-  }
-
-  .retry-btn {
-    padding: var(--space-3, 0.75rem) var(--space-8, 2rem);
-    background: linear-gradient(135deg, var(--color-error-500, #a91e1e), var(--color-error-600, #8b1a1a));
-    color: white;
-    border: none;
-    border-radius: var(--radius-full, 9999px);
-    font-size: var(--text-base, 1rem);
-    font-weight: var(--font-semibold, 600);
-    cursor: pointer;
-    margin-top: var(--space-2, 0.5rem);
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--color-neutral-200, #e8e0d5);
     transition: all var(--transition-normal, 200ms);
-    min-height: 44px;
   }
 
-  .retry-btn:hover {
+  .dot.completed {
+    background: var(--color-gem-400, #34d399);
+    transform: scale(1.1);
+  }
+
+  /* Items grid - 2 columns */
+  .items-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-3, 0.75rem);
+  }
+
+  /* Match item */
+  .match-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2, 0.5rem);
+    padding: var(--space-3, 0.75rem);
+    min-height: 48px;
+    border: 2px solid var(--color-neutral-200, #e8e0d5);
+    border-radius: var(--radius-lg, 0.75rem);
+    background: var(--color-neutral-50, #fdfbf7);
+    cursor: pointer;
+    transition: all var(--transition-normal, 200ms);
+    text-align: left;
+  }
+
+  .match-item.persian {
+    text-align: right;
+    flex-direction: row-reverse;
+  }
+
+  .match-item:hover:not(:disabled):not(.matched) {
+    border-color: var(--color-primary-300, #67e8f9);
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(169, 30, 30, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  /* Selected state - lifted */
+  .match-item.selected {
+    border-color: var(--color-primary-500, #0891b2);
+    background: var(--color-primary-50, #ecfeff);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(8, 145, 178, 0.2);
+  }
+
+  /* Selectable state - waiting for match */
+  .match-item.selectable {
+    border-color: var(--color-primary-300, #67e8f9);
+    animation: pulse-border 1s infinite;
+  }
+
+  @keyframes pulse-border {
+    0%, 100% { border-color: var(--color-primary-300, #67e8f9); }
+    50% { border-color: var(--color-primary-500, #0891b2); }
+  }
+
+  /* Just matched - green glow animation */
+  .match-item.just-matched {
+    border-color: var(--color-gem-400, #34d399);
+    background: var(--color-gem-50, #ecfdf5);
+    animation: match-glow 0.6s ease-out;
+  }
+
+  @keyframes match-glow {
+    0% {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(16, 185, 129, 0.5);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: none;
+    }
+  }
+
+  /* Matched state - muted */
+  .match-item.matched {
+    border-color: var(--color-neutral-200, #e8e0d5);
+    background: var(--color-neutral-100, #f5f0e8);
+    opacity: 0.6;
+    cursor: default;
+  }
+
+  .match-item:disabled {
+    cursor: default;
+  }
+
+  .flag {
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
+
+  .text {
+    font-size: var(--text-base, 1rem);
+    font-weight: var(--font-medium, 500);
+    color: var(--color-neutral-700, #44403c);
+    flex: 1;
+  }
+
+  .match-item.matched .text {
+    color: var(--color-neutral-400, #a69b8a);
+  }
+
+  /* Success message */
+  .success-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2, 0.5rem);
+    padding: var(--space-3, 0.75rem);
+    color: var(--color-gem-600, #059669);
+    font-weight: var(--font-semibold, 600);
+    animation: fade-in 0.3s ease-out;
+  }
+
+  .success-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: var(--color-gem-500, #10b981);
+    color: white;
+    border-radius: 50%;
+    font-size: 0.875rem;
+  }
+
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
   }
 
   /* Dark Mode */
-  :global([data-theme="dark"]) .match-chip {
-    background: rgba(28, 25, 23, 0.95);
+  :global([data-theme="dark"]) .match-item {
+    background: var(--color-neutral-100, #292524);
+    border-color: var(--color-neutral-200, #44403c);
+  }
+
+  :global([data-theme="dark"]) .match-item .text {
     color: var(--color-neutral-200, #e8e0d5);
   }
 
-  :global([data-theme="dark"]) .correct-pair {
-    color: var(--color-neutral-100, #f5f0e8);
+  :global([data-theme="dark"]) .match-item.selected {
+    background: rgba(8, 145, 178, 0.15);
+  }
+
+  :global([data-theme="dark"]) .match-item.just-matched {
+    background: rgba(16, 185, 129, 0.15);
+  }
+
+  :global([data-theme="dark"]) .match-item.matched {
+    background: var(--color-neutral-100, #292524);
+    opacity: 0.5;
+  }
+
+  :global([data-theme="dark"]) .match-item.matched .text {
+    color: var(--color-neutral-400, #78716c);
+  }
+
+  :global([data-theme="dark"]) .dot {
+    background: var(--color-neutral-300, #57534e);
   }
 </style>
