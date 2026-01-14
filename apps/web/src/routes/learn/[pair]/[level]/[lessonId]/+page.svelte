@@ -214,24 +214,23 @@
 
 <style>
   /*
-   * Mobile-first lesson layout using FIXED positioning
-   * Works reliably in Capacitor WebView
+   * Mobile-first lesson layout
+   * Uses flex with calculated height to avoid nested scrolling
    */
   .lesson-layout {
-    /* Full screen container */
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     display: flex;
     flex-direction: column;
+    /* Fill available space from app layout */
+    height: calc(100vh - 64px - 70px); /* viewport - navbar - bottomnav */
+    height: calc(100dvh - 64px - 70px);
+    max-width: 600px;
+    margin: 0 auto;
     background: var(--color-neutral-50, #fdfbf7);
-    /* This is the ONLY scrollable container */
+    border-radius: var(--radius-xl, 1rem);
     overflow: hidden;
   }
 
-  /* Fixed header at top */
+  /* Header - never scrolls */
   .lesson-header {
     flex-shrink: 0;
     padding: var(--space-3, 0.75rem);
@@ -239,9 +238,6 @@
     align-items: center;
     gap: var(--space-2, 0.5rem);
     background: var(--color-neutral-50, #fdfbf7);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    /* Safe area for notch */
-    padding-top: max(0.75rem, env(safe-area-inset-top));
   }
 
   .exit-btn {
@@ -295,9 +291,10 @@
     box-shadow: 0 0 8px var(--color-xp-glow, rgba(79, 70, 229, 0.4));
   }
 
-  /* Scrollable content area - THE ONLY SCROLL */
+  /* Scrollable content - THE ONLY SCROLL ZONE */
   .lesson-content {
     flex: 1;
+    min-height: 0; /* Important for flex scroll */
     overflow-y: auto;
     overflow-x: hidden;
     padding: var(--space-3, 0.75rem);
@@ -307,8 +304,6 @@
 
   .step-animation {
     width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
     animation: fadeSlideIn 0.3s ease;
   }
 
@@ -323,19 +318,15 @@
     }
   }
 
-  /* Fixed footer at bottom */
+  /* Footer - never scrolls */
   .lesson-footer {
     flex-shrink: 0;
     padding: var(--space-3, 0.75rem);
-    padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
     background: var(--color-neutral-50, #fdfbf7);
-    border-top: 1px solid rgba(0, 0, 0, 0.05);
   }
 
   .continue-btn {
     width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
     display: flex;
     /* 44px minimum touch target */
     min-height: 48px;
@@ -356,6 +347,11 @@
 
   /* Larger screens */
   @media (min-width: 480px) {
+    .lesson-layout {
+      height: calc(100vh - 80px - 70px);
+      height: calc(100dvh - 80px - 70px);
+    }
+
     .lesson-header {
       padding: var(--space-4, 1rem);
       gap: var(--space-3, 0.75rem);
@@ -380,11 +376,18 @@
 
     .lesson-footer {
       padding: var(--space-4, 1rem);
-      padding-bottom: max(1rem, env(safe-area-inset-bottom));
     }
 
     .continue-btn {
       padding: var(--space-4, 1rem);
+    }
+  }
+
+  /* Desktop - no bottom nav */
+  @media (min-width: 769px) {
+    .lesson-layout {
+      height: calc(100vh - 80px);
+      height: calc(100dvh - 80px);
     }
   }
 
@@ -552,7 +555,6 @@
 
   :global([data-theme="dark"]) .lesson-header {
     background: #1c1917;
-    border-bottom-color: rgba(255, 255, 255, 0.05);
   }
 
   :global([data-theme="dark"]) .exit-btn {
@@ -574,9 +576,12 @@
     background: #44403c;
   }
 
+  :global([data-theme="dark"]) .lesson-content {
+    background: #1c1917;
+  }
+
   :global([data-theme="dark"]) .lesson-footer {
     background: #1c1917;
-    border-top-color: rgba(255, 255, 255, 0.05);
   }
 
   :global([data-theme="dark"]) .completion-screen {
