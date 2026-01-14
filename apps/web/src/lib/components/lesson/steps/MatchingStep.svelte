@@ -148,7 +148,10 @@
           on:click={() => selectGerman(item.id)}
           disabled={isGermanMatched(item.id)}
         >
-          {item.text}
+          {#if state === 'selected'}
+            <span class="selected-indicator">●</span>
+          {/if}
+          <span class="item-text">{item.text}</span>
         </button>
       {/each}
     </div>
@@ -167,7 +170,10 @@
           disabled={isPersianMatched(item.id)}
           dir="rtl"
         >
-          {item.text}
+          {#if state === 'selected'}
+            <span class="selected-indicator">●</span>
+          {/if}
+          <span class="item-text">{item.text}</span>
         </button>
       {/each}
     </div>
@@ -230,6 +236,10 @@
 
   /* Match item */
   .match-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2, 0.5rem);
     padding: var(--space-3, 0.75rem) var(--space-4, 1rem);
     min-height: 44px;
     border: 2px solid var(--color-neutral-200, #e8e0d5);
@@ -241,10 +251,26 @@
     cursor: pointer;
     transition: all var(--transition-normal, 200ms);
     text-align: center;
+    position: relative;
   }
 
   .match-item.persian {
-    text-align: center;
+    flex-direction: row-reverse;
+  }
+
+  .item-text {
+    flex: 1;
+  }
+
+  .selected-indicator {
+    color: var(--color-primary-500, #0891b2);
+    font-size: 0.75rem;
+    animation: pulse-dot 1s infinite;
+  }
+
+  @keyframes pulse-dot {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.6; transform: scale(0.8); }
   }
 
   .match-item:hover:not(:disabled):not(.matched) {
@@ -253,17 +279,19 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   }
 
-  /* Selected - lifted with color */
+  /* Selected - very prominent */
   .match-item.selected {
     border-color: var(--color-primary-500, #0891b2);
-    background: var(--color-primary-50, #ecfeff);
+    border-width: 3px;
+    background: var(--color-primary-100, #cffafe);
     transform: translateY(-3px);
-    box-shadow: 0 6px 16px rgba(8, 145, 178, 0.2);
+    box-shadow: 0 6px 20px rgba(8, 145, 178, 0.3);
+    font-weight: var(--font-semibold, 600);
   }
 
-  /* Selectable - pulsing hint */
+  /* Selectable - hint for other column */
   .match-item.selectable {
-    border-color: var(--color-primary-300, #67e8f9);
+    border-color: var(--color-primary-200, #a5f3fc);
     background: var(--color-primary-50, #ecfeff);
   }
 
@@ -323,8 +351,13 @@
   }
 
   :global([data-theme="dark"]) .match-item.selected {
-    background: rgba(8, 145, 178, 0.2);
+    background: rgba(8, 145, 178, 0.3);
     border-color: var(--color-primary-400, #22d3ee);
+    border-width: 3px;
+  }
+
+  :global([data-theme="dark"]) .selected-indicator {
+    color: var(--color-primary-400, #22d3ee);
   }
 
   :global([data-theme="dark"]) .match-item.selectable {
