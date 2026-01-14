@@ -176,13 +176,13 @@
   .listen-choose-container {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: var(--space-6, 1.5rem);
   }
 
   .instruction {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: #1e293b;
+    font-size: var(--text-xl, 1.25rem);
+    font-weight: var(--font-bold, 700);
+    color: var(--color-neutral-800, #292524);
     text-align: center;
     margin: 0;
   }
@@ -191,26 +191,28 @@
   .audio-section {
     display: flex;
     justify-content: center;
-    padding: 1rem 0;
+    padding: var(--space-4, 1rem) 0;
   }
 
   .play-btn {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
-    padding: 1.5rem 3rem;
-    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    gap: var(--space-2, 0.5rem);
+    padding: var(--space-6, 1.5rem) var(--space-8, 2rem);
+    background: linear-gradient(135deg, var(--color-primary-500, #0891b2), var(--color-primary-600, #0e7490));
     border: none;
-    border-radius: 1rem;
+    border-radius: var(--radius-xl, 1rem);
     color: white;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: all var(--transition-normal, 200ms);
+    box-shadow: 0 4px 20px rgba(8, 145, 178, 0.3);
+    min-width: 180px;
   }
 
   .play-btn:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 20px rgba(59, 130, 246, 0.4);
+    box-shadow: 0 6px 25px rgba(8, 145, 178, 0.4);
   }
 
   .play-btn:active {
@@ -218,7 +220,8 @@
   }
 
   .play-btn.playing {
-    background: linear-gradient(135deg, #f59e0b, #d97706);
+    background: linear-gradient(135deg, var(--color-streak, #f59e0b), var(--color-streak-light, #fbbf24));
+    box-shadow: 0 4px 20px var(--color-streak-glow, rgba(245, 158, 11, 0.4));
     animation: pulse 1s ease-in-out infinite;
   }
 
@@ -232,48 +235,51 @@
   }
 
   .play-text {
-    font-size: 1rem;
-    font-weight: 600;
+    font-size: var(--text-base, 1rem);
+    font-weight: var(--font-semibold, 600);
   }
 
   /* Options */
   .options-list {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: var(--space-3, 0.75rem);
   }
 
   .option-btn {
-    padding: 1rem 1.25rem;
-    border: 2px solid #e2e8f0;
-    border-radius: 0.75rem;
-    background: white;
-    font-size: 1.1rem;
-    color: #334155;
+    padding: var(--space-4, 1rem) var(--space-4, 1rem);
+    border: 2px solid var(--glass-border, rgba(212, 201, 185, 0.5));
+    border-radius: var(--radius-lg, 0.75rem);
+    background: var(--glass-bg, rgba(253, 251, 247, 0.95));
+    font-size: var(--text-lg, 1.125rem);
+    color: var(--color-neutral-700, #44403c);
     cursor: pointer;
-    transition: all 0.2s;
+    transition: all var(--transition-normal, 200ms);
     text-align: left;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 56px;
   }
 
   .option-btn:hover:not(.disabled) {
-    border-color: #3b82f6;
-    background: #eff6ff;
+    border-color: var(--color-primary-400, #22d3ee);
+    background: var(--color-primary-50, #ecfeff);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md, 0 4px 15px rgba(0, 0, 0, 0.08));
   }
 
   .option-btn.correct {
-    border-color: #22c55e;
-    background: #f0fdf4;
-    color: #15803d;
-    font-weight: 600;
+    border-color: var(--color-success-400, #facc15);
+    background: linear-gradient(135deg, rgba(234, 179, 8, 0.15), rgba(234, 179, 8, 0.05));
+    color: var(--color-success-700, #a16207);
+    font-weight: var(--font-semibold, 600);
   }
 
   .option-btn.wrong {
-    border-color: #ef4444;
-    background: #fef2f2;
-    color: #b91c1c;
+    border-color: var(--color-error-400, #c84b4b);
+    background: linear-gradient(135deg, rgba(169, 30, 30, 0.1), rgba(169, 30, 30, 0.05));
+    color: var(--color-error-600, #8b1a1a);
   }
 
   .option-btn.disabled {
@@ -286,26 +292,26 @@
 
   .icon {
     font-size: 1.2rem;
-    margin-left: 0.5rem;
+    margin-left: var(--space-2, 0.5rem);
   }
 
   /* Translation */
   .translation-box {
-    padding: 1rem 1.25rem;
-    background: #f0fdf4;
-    border: 2px solid #22c55e;
-    border-radius: 0.75rem;
+    padding: var(--space-4, 1rem) var(--space-4, 1rem);
+    background: linear-gradient(135deg, rgba(234, 179, 8, 0.15), rgba(234, 179, 8, 0.05));
+    border: 2px solid var(--color-success-400, #facc15);
+    border-radius: var(--radius-lg, 0.75rem);
     display: flex;
-    gap: 0.5rem;
+    gap: var(--space-2, 0.5rem);
   }
 
   .translation-label {
-    font-weight: 600;
-    color: #15803d;
+    font-weight: var(--font-semibold, 600);
+    color: var(--color-success-700, #a16207);
   }
 
   .translation-text {
-    color: #166534;
+    color: var(--color-success-800, #854d0e);
   }
 
   /* Retry */
@@ -313,33 +319,49 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    padding: 1.5rem;
-    background: #fef2f2;
-    border: 2px solid #fecaca;
-    border-radius: 0.75rem;
+    gap: var(--space-4, 1rem);
+    padding: var(--space-6, 1.5rem);
+    background: linear-gradient(135deg, rgba(169, 30, 30, 0.1), rgba(169, 30, 30, 0.05));
+    border: 2px solid var(--color-error-400, #c84b4b);
+    border-radius: var(--radius-lg, 0.75rem);
   }
 
   .feedback-text {
-    color: #b91c1c;
-    font-weight: 600;
+    color: var(--color-error-600, #8b1a1a);
+    font-weight: var(--font-semibold, 600);
     text-align: center;
     margin: 0;
   }
 
   .retry-btn {
-    padding: 0.75rem 2rem;
-    background: #ef4444;
+    padding: var(--space-3, 0.75rem) var(--space-8, 2rem);
+    background: linear-gradient(135deg, var(--color-error-500, #a91e1e), var(--color-error-600, #8b1a1a));
     color: white;
     border: none;
-    border-radius: 999px;
-    font-size: 1rem;
-    font-weight: 600;
+    border-radius: var(--radius-full, 9999px);
+    font-size: var(--text-base, 1rem);
+    font-weight: var(--font-semibold, 600);
     cursor: pointer;
-    transition: background 0.2s;
+    transition: all var(--transition-normal, 200ms);
+    min-height: 44px;
   }
 
   .retry-btn:hover {
-    background: #dc2626;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(169, 30, 30, 0.3);
+  }
+
+  /* Dark Mode */
+  :global([data-theme="dark"]) .instruction {
+    color: var(--color-neutral-100, #f5f0e8);
+  }
+
+  :global([data-theme="dark"]) .option-btn {
+    background: rgba(28, 25, 23, 0.95);
+    color: var(--color-neutral-200, #e8e0d5);
+  }
+
+  :global([data-theme="dark"]) .translation-text {
+    color: var(--color-success-300, #fde047);
   }
 </style>

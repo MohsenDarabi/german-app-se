@@ -84,53 +84,56 @@
   .quiz-container {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: var(--space-6, 1.5rem);
   }
+
   .question {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: #1e293b;
+    font-size: var(--text-xl, 1.25rem);
+    font-weight: var(--font-bold, 700);
+    color: var(--color-neutral-800, #292524);
     text-align: center;
   }
+
   .options-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 0.75rem;
+    gap: var(--space-3, 0.75rem);
   }
+
   .option-btn {
-    padding: 1rem;
-    border: 2px solid #e2e8f0;
-    border-radius: 0.75rem;
-    background: white;
-    font-size: 1rem;
-    color: #334155;
+    padding: var(--space-4, 1rem);
+    border: 2px solid var(--glass-border, rgba(212, 201, 185, 0.5));
+    border-radius: var(--radius-lg, 0.75rem);
+    background: var(--glass-bg, rgba(253, 251, 247, 0.95));
+    font-size: var(--text-base, 1rem);
+    color: var(--color-neutral-700, #44403c);
     cursor: pointer;
-    transition: all 0.2s;
+    transition: all var(--transition-normal, 200ms);
     text-align: left;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  .option-btn:hover:not(.disabled) {
-    border-color: #cbd5e1;
-    background: #f8fafc;
-  }
-  
-  /* Selected State (Neutral/Blue before validation? No, instant validation) */
-  
-  /* Correct Answer (Green) */
-  .option-btn.correct {
-    border-color: #22c55e;
-    background: #f0fdf4;
-    color: #15803d;
-    font-weight: 600;
+    min-height: 56px;
   }
 
-  /* Wrong Selection (Red) */
+  .option-btn:hover:not(.disabled) {
+    border-color: var(--color-primary-400, #22d3ee);
+    background: var(--color-primary-50, #ecfeff);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md, 0 4px 15px rgba(0, 0, 0, 0.08));
+  }
+
+  .option-btn.correct {
+    border-color: var(--color-success-400, #facc15);
+    background: linear-gradient(135deg, rgba(234, 179, 8, 0.15), rgba(234, 179, 8, 0.05));
+    color: var(--color-success-700, #a16207);
+    font-weight: var(--font-semibold, 600);
+  }
+
   .option-btn.wrong {
-    border-color: #ef4444;
-    background: #fef2f2;
-    color: #b91c1c;
+    border-color: var(--color-error-400, #c84b4b);
+    background: linear-gradient(135deg, rgba(169, 30, 30, 0.1), rgba(169, 30, 30, 0.05));
+    color: var(--color-error-600, #8b1a1a);
   }
 
   .option-btn.disabled {
@@ -139,40 +142,53 @@
 
   .icon {
     font-size: 1.2rem;
+    margin-left: var(--space-2, 0.5rem);
   }
 
   .retry-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    padding: 1.5rem;
-    background: #fef2f2;
-    border: 2px solid #fecaca;
-    border-radius: 0.75rem;
-    margin-top: 1rem;
+    gap: var(--space-4, 1rem);
+    padding: var(--space-6, 1.5rem);
+    background: linear-gradient(135deg, rgba(169, 30, 30, 0.1), rgba(169, 30, 30, 0.05));
+    border: 2px solid var(--color-error-400, #c84b4b);
+    border-radius: var(--radius-lg, 0.75rem);
+    margin-top: var(--space-4, 1rem);
   }
 
   .feedback-text {
-    color: #b91c1c;
-    font-weight: 600;
+    color: var(--color-error-600, #8b1a1a);
+    font-weight: var(--font-semibold, 600);
     text-align: center;
     margin: 0;
   }
 
   .retry-btn {
-    padding: 0.75rem 2rem;
-    background: #ef4444;
+    padding: var(--space-3, 0.75rem) var(--space-8, 2rem);
+    background: linear-gradient(135deg, var(--color-error-500, #a91e1e), var(--color-error-600, #8b1a1a));
     color: white;
     border: none;
-    border-radius: 999px;
-    font-size: 1rem;
-    font-weight: 600;
+    border-radius: var(--radius-full, 9999px);
+    font-size: var(--text-base, 1rem);
+    font-weight: var(--font-semibold, 600);
     cursor: pointer;
-    transition: background 0.2s;
+    transition: all var(--transition-normal, 200ms);
+    min-height: 44px;
   }
 
   .retry-btn:hover {
-    background: #dc2626;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(169, 30, 30, 0.3);
+  }
+
+  /* Dark Mode */
+  :global([data-theme="dark"]) .question {
+    color: var(--color-neutral-100, #f5f0e8);
+  }
+
+  :global([data-theme="dark"]) .option-btn {
+    background: rgba(28, 25, 23, 0.95);
+    color: var(--color-neutral-200, #e8e0d5);
   }
 </style>
