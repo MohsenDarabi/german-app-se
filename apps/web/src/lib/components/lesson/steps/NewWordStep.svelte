@@ -101,40 +101,47 @@
   .card-container {
     display: flex;
     flex-direction: column;
-    gap: var(--space-6, 1.5rem);
+    gap: var(--space-4, 1rem);
     text-align: center;
+    /* Remove borders - use spacing for visual hierarchy */
   }
 
   .image-area {
     display: flex;
     justify-content: center;
+    padding: var(--space-4, 1rem);
   }
 
   .vocab-image {
-    max-width: 100%;
+    max-width: 200px;
     border-radius: var(--radius-xl, 1rem);
-    height: 200px;
+    height: auto;
+    max-height: 160px;
     object-fit: cover;
-    box-shadow: var(--shadow-md, 0 4px 15px rgba(0, 0, 0, 0.1));
+    /* Soft shadow instead of border */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
   }
 
   .image-placeholder {
-    width: 100%;
-    height: 180px;
-    background: var(--color-neutral-100, #f5f0e8);
+    width: 160px;
+    height: 120px;
+    background: linear-gradient(135deg, var(--color-neutral-100, #f5f0e8), var(--color-neutral-200, #e8e0d5));
     border-radius: var(--radius-xl, 1rem);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: var(--color-neutral-300, #d4c9b9);
+    /* Soft shadow instead of border */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
   }
 
   .content-area {
     display: flex;
     flex-direction: column;
-    gap: var(--space-2, 0.5rem);
+    gap: var(--space-3, 0.75rem);
     align-items: center;
+    padding: var(--space-2, 0.5rem) 0;
   }
 
   .word-row {
@@ -151,22 +158,25 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    margin: 0;
   }
 
   .translation {
     font-size: var(--text-xl, 1.25rem);
     color: var(--color-neutral-500, #78716c);
     font-weight: var(--font-medium, 500);
+    margin: 0;
   }
 
   .save-btn {
     margin-top: var(--space-2, 0.5rem);
-    padding: var(--space-2, 0.5rem) var(--space-4, 1rem);
-    border: 2px solid var(--color-primary-500, #0891b2);
+    padding: var(--space-2, 0.5rem) var(--space-5, 1.25rem);
+    border: 2px solid var(--color-primary-400, #22d3ee);
     background: transparent;
     color: var(--color-primary-600, #0e7490);
     border-radius: var(--radius-full, 9999px);
     font-weight: var(--font-semibold, 600);
+    font-size: var(--text-sm, 0.875rem);
     cursor: pointer;
     transition: all var(--transition-normal, 200ms);
     min-height: 44px;
@@ -175,23 +185,24 @@
   .save-btn:hover {
     background: var(--color-primary-50, #ecfeff);
     transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(8, 145, 178, 0.15);
   }
 
   .save-btn.saved {
     background: linear-gradient(135deg, var(--color-primary-500, #0891b2), var(--color-primary-600, #0e7490));
     color: white;
-    border-color: var(--color-primary-500, #0891b2);
+    border-color: transparent;
     box-shadow: 0 4px 12px rgba(8, 145, 178, 0.3);
   }
 
+  /* Example sentence - no border, just subtle background */
   .sentence-box {
-    margin-top: var(--space-6, 1.5rem);
-    background: var(--glass-bg, rgba(253, 251, 247, 0.85));
-    padding: var(--space-4, 1rem);
-    border-radius: var(--radius-lg, 0.75rem);
-    border: 1px solid var(--glass-border, rgba(212, 201, 185, 0.3));
+    margin-top: var(--space-4, 1rem);
+    padding: var(--space-4, 1rem) var(--space-3, 0.75rem);
     width: 100%;
-    backdrop-filter: blur(var(--glass-blur, 12px));
+    /* No border - use very subtle background tint */
+    background: transparent;
+    border-radius: var(--radius-lg, 0.75rem);
   }
 
   .sentence-row {
@@ -199,32 +210,34 @@
     align-items: center;
     justify-content: center;
     gap: var(--space-2, 0.5rem);
+    margin-bottom: var(--space-2, 0.5rem);
   }
 
   .sentence-text {
-    font-size: var(--text-lg, 1.125rem);
-    color: var(--color-neutral-700, #44403c);
+    font-size: var(--text-base, 1rem);
+    color: var(--color-neutral-600, #57534e);
     font-style: italic;
-    margin-bottom: var(--space-1, 0.25rem);
+    margin: 0;
   }
 
   .sentence-translation {
-    font-size: var(--text-base, 1rem);
-    color: var(--color-neutral-500, #78716c);
-    margin-bottom: var(--space-2, 0.5rem);
+    font-size: var(--text-sm, 0.875rem);
+    color: var(--color-neutral-400, #a69b8a);
+    margin: 0 0 var(--space-1, 0.25rem) 0;
   }
 
   .sentence-label {
     font-size: var(--text-xs, 0.75rem);
-    color: var(--color-neutral-400, #a69b8a);
+    color: var(--color-neutral-300, #d4c9b9);
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
+    font-weight: var(--font-medium, 500);
   }
 
   /* Dark Mode */
   :global([data-theme="dark"]) .image-placeholder {
-    background: var(--color-neutral-800, #292524);
-    color: var(--color-neutral-600, #57534e);
+    background: linear-gradient(135deg, var(--color-neutral-200, #44403c), var(--color-neutral-100, #292524));
+    color: var(--color-neutral-400, #78716c);
   }
 
   :global([data-theme="dark"]) .german-word {
@@ -234,12 +247,11 @@
     background-clip: text;
   }
 
-  :global([data-theme="dark"]) .sentence-box {
-    background: rgba(28, 25, 23, 0.85);
-    border-color: rgba(68, 64, 60, 0.3);
+  :global([data-theme="dark"]) .sentence-text {
+    color: var(--color-neutral-300, #d4c9b9);
   }
 
-  :global([data-theme="dark"]) .sentence-text {
-    color: var(--color-neutral-200, #e8e0d5);
+  :global([data-theme="dark"]) .sentence-translation {
+    color: var(--color-neutral-500, #78716c);
   }
 </style>

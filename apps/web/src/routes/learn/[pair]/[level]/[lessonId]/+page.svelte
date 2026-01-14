@@ -233,9 +233,8 @@
     align-items: center;
     gap: var(--space-2, 0.5rem);
     flex-shrink: 0;
-    background: var(--glass-bg, rgba(253, 251, 247, 0.85));
-    backdrop-filter: blur(var(--glass-blur, 12px));
-    border-bottom: 1px solid var(--glass-border, rgba(212, 201, 185, 0.3));
+    /* Clean look - no border, transparent background */
+    background: transparent;
   }
 
   .exit-btn {
@@ -325,9 +324,8 @@
   .lesson-footer {
     padding: var(--space-3, 0.75rem);
     padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
-    background: var(--glass-bg, rgba(253, 251, 247, 0.95));
-    backdrop-filter: blur(var(--glass-blur, 12px));
-    border-top: 1px solid var(--glass-border, rgba(212, 201, 185, 0.3));
+    /* Clean look - no border */
+    background: transparent;
     flex-shrink: 0;
   }
 
@@ -547,8 +545,7 @@
   }
 
   :global([data-theme="dark"]) .lesson-header {
-    background: rgba(28, 25, 23, 0.85);
-    border-color: rgba(68, 64, 60, 0.3);
+    background: transparent;
   }
 
   :global([data-theme="dark"]) .exit-btn {
@@ -575,8 +572,7 @@
   }
 
   :global([data-theme="dark"]) .lesson-footer {
-    background: rgba(28, 25, 23, 0.95);
-    border-color: rgba(68, 64, 60, 0.3);
+    background: transparent;
   }
 
   :global([data-theme="dark"]) .completion-screen {
