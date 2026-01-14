@@ -214,32 +214,34 @@
 
 <style>
   /*
-   * Mobile-first lesson layout - NO nested scrolling!
-   * The page scrolls as one unit, with sticky header and footer.
+   * Mobile-first lesson layout using FIXED positioning
+   * Works reliably in Capacitor WebView
    */
   .lesson-layout {
+    /* Full screen container */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100%;
-    max-width: 600px;
-    margin: 0 auto;
     background: var(--color-neutral-50, #fdfbf7);
-    /* No overflow constraints - let content flow naturally */
+    /* This is the ONLY scrollable container */
+    overflow: hidden;
   }
 
-  /* Sticky header stays at top while scrolling */
+  /* Fixed header at top */
   .lesson-header {
-    position: sticky;
-    top: 0;
-    z-index: 10;
+    flex-shrink: 0;
     padding: var(--space-3, 0.75rem);
     display: flex;
     align-items: center;
     gap: var(--space-2, 0.5rem);
     background: var(--color-neutral-50, #fdfbf7);
-    /* Subtle shadow when content scrolls behind */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0);
-    transition: box-shadow 0.2s;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    /* Safe area for notch */
+    padding-top: max(0.75rem, env(safe-area-inset-top));
   }
 
   .exit-btn {
@@ -293,15 +295,20 @@
     box-shadow: 0 0 8px var(--color-xp-glow, rgba(79, 70, 229, 0.4));
   }
 
-  /* Content flows naturally - NO overflow/scroll here */
+  /* Scrollable content area - THE ONLY SCROLL */
   .lesson-content {
     flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
     padding: var(--space-3, 0.75rem);
-    /* Content expands to fit, page scrolls if needed */
+    /* Smooth scrolling on iOS */
+    -webkit-overflow-scrolling: touch;
   }
 
   .step-animation {
     width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
     animation: fadeSlideIn 0.3s ease;
   }
 
@@ -316,18 +323,20 @@
     }
   }
 
-  /* Sticky footer with continue button */
+  /* Fixed footer at bottom */
   .lesson-footer {
-    position: sticky;
-    bottom: 0;
-    z-index: 10;
+    flex-shrink: 0;
     padding: var(--space-3, 0.75rem);
     padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
-    background: linear-gradient(to top, var(--color-neutral-50, #fdfbf7) 80%, transparent);
+    background: var(--color-neutral-50, #fdfbf7);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
   }
 
   .continue-btn {
     width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
     /* 44px minimum touch target */
     min-height: 48px;
     padding: var(--space-3, 0.75rem);
@@ -340,7 +349,6 @@
     cursor: pointer;
     transition: all var(--transition-normal, 200ms);
     box-shadow: 0 4px 15px rgba(234, 179, 8, 0.3);
-    display: flex;
     align-items: center;
     justify-content: center;
     gap: var(--space-2, 0.5rem);
@@ -544,6 +552,7 @@
 
   :global([data-theme="dark"]) .lesson-header {
     background: #1c1917;
+    border-bottom-color: rgba(255, 255, 255, 0.05);
   }
 
   :global([data-theme="dark"]) .exit-btn {
@@ -566,7 +575,8 @@
   }
 
   :global([data-theme="dark"]) .lesson-footer {
-    background: linear-gradient(to top, #1c1917 80%, transparent);
+    background: #1c1917;
+    border-top-color: rgba(255, 255, 255, 0.05);
   }
 
   :global([data-theme="dark"]) .completion-screen {
