@@ -90,6 +90,8 @@
     );
     color: var(--color-neutral-800);
     transition: background var(--transition-slow), color var(--transition-slow);
+    /* Prevent horizontal overflow */
+    overflow-x: hidden;
   }
 
   /* Dark mode background */

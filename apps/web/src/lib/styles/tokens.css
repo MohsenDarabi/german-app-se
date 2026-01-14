@@ -360,6 +360,12 @@
   75% { transform: scale(1.02) rotate(1deg); }
 }
 
+/* === Global Resets === */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 /* === Utility Classes === */
 .animate-bounce-subtle { animation: bounce-subtle 1s ease-in-out infinite; }
 .animate-pulse-glow { animation: pulse-glow 2s ease-in-out infinite; }

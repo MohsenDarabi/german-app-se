@@ -223,6 +223,8 @@
     max-width: 600px;
     margin: 0 auto;
     background: var(--color-neutral-50, #fdfbf7);
+    /* Prevent horizontal overflow */
+    overflow-x: hidden;
   }
 
   .lesson-header {
@@ -290,6 +292,7 @@
   .lesson-content {
     flex: 1;
     overflow-y: auto;
+    overflow-x: hidden;
     padding: var(--space-3, 0.75rem);
     display: flex;
     flex-direction: column;
