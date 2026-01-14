@@ -1,5 +1,14 @@
 {
   "id": "A1-M01-L09",
+  "languagePair": "de-fa",
+  "source": {
+    "code": "de",
+    "name": "Deutsch"
+  },
+  "target": {
+    "code": "fa",
+    "name": "فارسی"
+  },
   "title": {
     "de": "Zahlen 21-100",
     "fa": "اعداد ۲۱ تا ۱۰۰"
@@ -17,8 +26,14 @@
       "title": "الگوی اعداد بزرگ‌تر از ۲۰",
       "content": "در آلمانی، اعداد ۲۱ تا ۹۹ یک ترتیب خاص دارند:\n\n**یکان + und + دهگان**\n\nیعنی برعکس فارسی و انگلیسی!\n\n۲۱ = **ein**und**zwanzig** (یک و بیست)\n۲۳ = **drei**und**zwanzig** (سه و بیست)",
       "examples": [
-        { "de": "einundzwanzig", "fa": "۲۱ - یک-و-بیست" },
-        { "de": "vierundzwanzig", "fa": "۲۴ - چهار-و-بیست" }
+        {
+          "de": "einundzwanzig",
+          "fa": "۲۱ - یک-و-بیست"
+        },
+        {
+          "de": "vierundzwanzig",
+          "fa": "۲۴ - چهار-و-بیست"
+        }
       ]
     },
     {
@@ -69,10 +84,30 @@
       "title": "الگو را یاد بگیر!",
       "instruction": "عدد درست را انتخاب کنید",
       "questions": [
-        { "prompt": "einundzwanzig", "left": "۲۱", "right": "۱۲", "correctSide": "left" },
-        { "prompt": "zweiundzwanzig", "left": "۱۲", "right": "۲۲", "correctSide": "right" },
-        { "prompt": "dreiundzwanzig", "left": "۲۳", "right": "۳۲", "correctSide": "left" },
-        { "prompt": "einundzwanzig", "left": "۱۲", "right": "۲۱", "correctSide": "right" }
+        {
+          "prompt": "einundzwanzig",
+          "left": "۲۱",
+          "right": "۱۲",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "zweiundzwanzig",
+          "left": "۱۲",
+          "right": "۲۲",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "dreiundzwanzig",
+          "left": "۲۳",
+          "right": "۳۲",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "einundzwanzig",
+          "left": "۱۲",
+          "right": "۲۱",
+          "correctSide": "right"
+        }
       ]
     },
     {
@@ -95,8 +130,14 @@
       "title": "نکته: dreißig نه dreizig!",
       "content": "توجه کنید که ۳۰ استثنا دارد:\n\n❌ dreizig (غلط)\n✅ **dreißig** (درست)\n\nحرف «ß» (اِس‌تسِت) صدای «س» می‌دهد. این تنها عدد ده‌گانی است که با «ig» نوشته نمی‌شود.",
       "examples": [
-        { "de": "dreißig", "fa": "۳۰ - استثنا!" },
-        { "de": "vierzig", "fa": "۴۰ - باقاعده" }
+        {
+          "de": "dreißig",
+          "fa": "۳۰ - استثنا!"
+        },
+        {
+          "de": "vierzig",
+          "fa": "۴۰ - باقاعده"
+        }
       ]
     },
     {
@@ -132,22 +173,58 @@
       "id": "s9",
       "instruction": "اعداد را با معنی فارسی جفت کنید",
       "items": [
-        { "id": "i1", "text": "einundzwanzig" },
-        { "id": "i2", "text": "dreißig" },
-        { "id": "i3", "text": "vierzig" },
-        { "id": "i4", "text": "fünfzig" }
+        {
+          "id": "i1",
+          "text": "einundzwanzig"
+        },
+        {
+          "id": "i2",
+          "text": "dreißig"
+        },
+        {
+          "id": "i3",
+          "text": "vierzig"
+        },
+        {
+          "id": "i4",
+          "text": "fünfzig"
+        }
       ],
       "matches": [
-        { "id": "m1", "text": "۲۱" },
-        { "id": "m2", "text": "۳۰" },
-        { "id": "m3", "text": "۴۰" },
-        { "id": "m4", "text": "۵۰" }
+        {
+          "id": "m1",
+          "text": "۲۱"
+        },
+        {
+          "id": "m2",
+          "text": "۳۰"
+        },
+        {
+          "id": "m3",
+          "text": "۴۰"
+        },
+        {
+          "id": "m4",
+          "text": "۵۰"
+        }
       ],
       "correctPairs": [
-        ["i1", "m1"],
-        ["i2", "m2"],
-        ["i3", "m3"],
-        ["i4", "m4"]
+        [
+          "i1",
+          "m1"
+        ],
+        [
+          "i2",
+          "m2"
+        ],
+        [
+          "i3",
+          "m3"
+        ],
+        [
+          "i4",
+          "m4"
+        ]
       ]
     },
     {
@@ -184,8 +261,14 @@
       "title": "استثناهای ۶۰ و ۷۰",
       "content": "در ۶۰ و ۷۰ بعضی حروف حذف می‌شوند:\n\n**۶۰:** sechs → sechzig (حرف s حذف می‌شود)\n❌ sechszig\n✅ **sechzig**\n\n**۷۰:** sieben → siebzig (حروف en حذف می‌شوند)\n❌ siebenzig\n✅ **siebzig**",
       "examples": [
-        { "de": "sechzig", "fa": "۶۰ - از sechs بدون s" },
-        { "de": "siebzig", "fa": "۷۰ - از sieben بدون en" }
+        {
+          "de": "sechzig",
+          "fa": "۶۰ - از sechs بدون s"
+        },
+        {
+          "de": "siebzig",
+          "fa": "۷۰ - از sieben بدون en"
+        }
       ]
     },
     {
@@ -236,13 +319,48 @@
       "title": "ده‌گان‌ها!",
       "instruction": "عدد درست را سریع انتخاب کنید",
       "questions": [
-        { "prompt": "dreißig", "left": "۳۰", "right": "۱۳", "correctSide": "left" },
-        { "prompt": "vierzig", "left": "۱۴", "right": "۴۰", "correctSide": "right" },
-        { "prompt": "sechzig", "left": "۶۰", "right": "۱۶", "correctSide": "left" },
-        { "prompt": "siebzig", "left": "۱۷", "right": "۷۰", "correctSide": "right" },
-        { "prompt": "achtzig", "left": "۸۰", "right": "۱۸", "correctSide": "left" },
-        { "prompt": "neunzig", "left": "۱۹", "right": "۹۰", "correctSide": "right" },
-        { "prompt": "hundert", "left": "۱۰۰", "right": "۱۰", "correctSide": "left" }
+        {
+          "prompt": "dreißig",
+          "left": "۳۰",
+          "right": "۱۳",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "vierzig",
+          "left": "۱۴",
+          "right": "۴۰",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "sechzig",
+          "left": "۶۰",
+          "right": "۱۶",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "siebzig",
+          "left": "۱۷",
+          "right": "۷۰",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "achtzig",
+          "left": "۸۰",
+          "right": "۱۸",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "neunzig",
+          "left": "۱۹",
+          "right": "۹۰",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "hundert",
+          "left": "۱۰۰",
+          "right": "۱۰",
+          "correctSide": "left"
+        }
       ]
     },
     {
@@ -250,22 +368,58 @@
       "id": "s16",
       "instruction": "اعداد بزرگ را جفت کنید",
       "items": [
-        { "id": "i1", "text": "sechzig" },
-        { "id": "i2", "text": "siebzig" },
-        { "id": "i3", "text": "achtzig" },
-        { "id": "i4", "text": "neunzig" }
+        {
+          "id": "i1",
+          "text": "sechzig"
+        },
+        {
+          "id": "i2",
+          "text": "siebzig"
+        },
+        {
+          "id": "i3",
+          "text": "achtzig"
+        },
+        {
+          "id": "i4",
+          "text": "neunzig"
+        }
       ],
       "matches": [
-        { "id": "m1", "text": "۶۰" },
-        { "id": "m2", "text": "۷۰" },
-        { "id": "m3", "text": "۸۰" },
-        { "id": "m4", "text": "۹۰" }
+        {
+          "id": "m1",
+          "text": "۶۰"
+        },
+        {
+          "id": "m2",
+          "text": "۷۰"
+        },
+        {
+          "id": "m3",
+          "text": "۸۰"
+        },
+        {
+          "id": "m4",
+          "text": "۹۰"
+        }
       ],
       "correctPairs": [
-        ["i1", "m1"],
-        ["i2", "m2"],
-        ["i3", "m3"],
-        ["i4", "m4"]
+        [
+          "i1",
+          "m1"
+        ],
+        [
+          "i2",
+          "m2"
+        ],
+        [
+          "i3",
+          "m3"
+        ],
+        [
+          "i4",
+          "m4"
+        ]
       ]
     },
     {
@@ -274,18 +428,53 @@
       "title": "مکالمه: سن و سال",
       "context": "الی و تام درباره سن صحبت می‌کنند",
       "lines": [
-        { "speaker": "Eli", "text": { "de": "Tom, wie alt ist dein Opa?", "fa": "تام، پدربزرگت چند سالشه؟" } },
-        { "speaker": "Tom", "text": { "de": "Er ist fünfundsiebzig.", "fa": "او هفتاد و پنج ساله است." } },
-        { "speaker": "Eli", "text": { "de": "Und deine Oma?", "fa": "و مادربزرگت؟" } },
-        { "speaker": "Tom", "text": { "de": "Sie ist dreiundsiebzig.", "fa": "او هفتاد و سه ساله است." } },
-        { "speaker": "Eli", "text": { "de": "Mein Opa ist achtzig!", "fa": "پدربزرگ من هشتاد ساله است!" } }
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Tom, wie alt ist dein Opa?",
+            "fa": "تام، پدربزرگت چند سالشه؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Er ist fünfundsiebzig.",
+            "fa": "او هفتاد و پنج ساله است."
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Und deine Oma?",
+            "fa": "و مادربزرگت؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Sie ist dreiundsiebzig.",
+            "fa": "او هفتاد و سه ساله است."
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Mein Opa ist achtzig!",
+            "fa": "پدربزرگ من هشتاد ساله است!"
+          }
+        }
       ]
     },
     {
       "type": "multiple-choice",
       "id": "s18",
       "question": "عدد «سی و پنج» به آلمانی چیست؟",
-      "options": ["dreißigfünf", "fünfunddreißig", "dreiundvierzig", "fünfzehn"],
+      "options": [
+        "dreißigfünf",
+        "fünfunddreißig",
+        "dreiundvierzig",
+        "fünfzehn"
+      ],
       "correctAnswerIndex": 1,
       "feedback": {
         "correct": "آفرین! یکان + und + دهگان: fünfunddreißig",
@@ -297,8 +486,16 @@
       "id": "s19",
       "instruction": "جمله را با عدد درست کامل کنید",
       "sentence": "Zwanzig, {0}, vierzig, {1}, sechzig.",
-      "options": ["dreißig", "fünfzig", "siebzig", "achtzig"],
-      "correctAnswers": [0, 1],
+      "options": [
+        "dreißig",
+        "fünfzig",
+        "siebzig",
+        "achtzig"
+      ],
+      "correctAnswers": [
+        0,
+        1
+      ],
       "feedback": {
         "explanation": "ترتیب ده‌گان‌ها: zwanzig (۲۰), **dreißig** (۳۰), vierzig (۴۰), **fünfzig** (۵۰), sechzig (۶۰)"
       }
@@ -326,8 +523,14 @@
       "title": "جدول اعداد ده‌گان",
       "content": "| عدد | آلمانی | نکته |\n|-----|--------|------|\n| ۲۰ | zwanzig | - |\n| ۳۰ | dreißig | با ß نه z |\n| ۴۰ | vierzig | - |\n| ۵۰ | fünfzig | - |\n| ۶۰ | sechzig | sechs بدون s |\n| ۷۰ | siebzig | sieben بدون en |\n| ۸۰ | achtzig | - |\n| ۹۰ | neunzig | - |\n| ۱۰۰ | hundert | - |",
       "examples": [
-        { "de": "fünfundsechzig", "fa": "۶۵ - شصت و پنج" },
-        { "de": "neunundneunzig", "fa": "۹۹ - نود و نه" }
+        {
+          "de": "fünfundsechzig",
+          "fa": "۶۵ - شصت و پنج"
+        },
+        {
+          "de": "neunundneunzig",
+          "fa": "۹۹ - نود و نه"
+        }
       ]
     },
     {
@@ -336,15 +539,42 @@
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [
-        { "de": "einundzwanzig", "fa": "بیست و یک (۲۱)" },
-        { "de": "dreißig", "fa": "سی (۳۰)" },
-        { "de": "vierzig", "fa": "چهل (۴۰)" },
-        { "de": "fünfzig", "fa": "پنجاه (۵۰)" },
-        { "de": "sechzig", "fa": "شصت (۶۰)" },
-        { "de": "siebzig", "fa": "هفتاد (۷۰)" },
-        { "de": "achtzig", "fa": "هشتاد (۸۰)" },
-        { "de": "neunzig", "fa": "نود (۹۰)" },
-        { "de": "hundert", "fa": "صد (۱۰۰)" }
+        {
+          "de": "einundzwanzig",
+          "fa": "بیست و یک (۲۱)"
+        },
+        {
+          "de": "dreißig",
+          "fa": "سی (۳۰)"
+        },
+        {
+          "de": "vierzig",
+          "fa": "چهل (۴۰)"
+        },
+        {
+          "de": "fünfzig",
+          "fa": "پنجاه (۵۰)"
+        },
+        {
+          "de": "sechzig",
+          "fa": "شصت (۶۰)"
+        },
+        {
+          "de": "siebzig",
+          "fa": "هفتاد (۷۰)"
+        },
+        {
+          "de": "achtzig",
+          "fa": "هشتاد (۸۰)"
+        },
+        {
+          "de": "neunzig",
+          "fa": "نود (۹۰)"
+        },
+        {
+          "de": "hundert",
+          "fa": "صد (۱۰۰)"
+        }
       ]
     },
     {
@@ -355,17 +585,72 @@
       "xpEarned": 50,
       "nextLessonId": "A1-M01-L10",
       "vocabularyLearned": [
-        { "word": { "de": "einundzwanzig", "fa": "بیست و یک (۲۱)" } },
-        { "word": { "de": "zweiundzwanzig", "fa": "بیست و دو (۲۲)" } },
-        { "word": { "de": "dreiundzwanzig", "fa": "بیست و سه (۲۳)" } },
-        { "word": { "de": "dreißig", "fa": "سی (۳۰)" } },
-        { "word": { "de": "vierzig", "fa": "چهل (۴۰)" } },
-        { "word": { "de": "fünfzig", "fa": "پنجاه (۵۰)" } },
-        { "word": { "de": "sechzig", "fa": "شصت (۶۰)" } },
-        { "word": { "de": "siebzig", "fa": "هفتاد (۷۰)" } },
-        { "word": { "de": "achtzig", "fa": "هشتاد (۸۰)" } },
-        { "word": { "de": "neunzig", "fa": "نود (۹۰)" } },
-        { "word": { "de": "hundert", "fa": "صد (۱۰۰)" } }
+        {
+          "word": {
+            "de": "einundzwanzig",
+            "fa": "بیست و یک (۲۱)"
+          }
+        },
+        {
+          "word": {
+            "de": "zweiundzwanzig",
+            "fa": "بیست و دو (۲۲)"
+          }
+        },
+        {
+          "word": {
+            "de": "dreiundzwanzig",
+            "fa": "بیست و سه (۲۳)"
+          }
+        },
+        {
+          "word": {
+            "de": "dreißig",
+            "fa": "سی (۳۰)"
+          }
+        },
+        {
+          "word": {
+            "de": "vierzig",
+            "fa": "چهل (۴۰)"
+          }
+        },
+        {
+          "word": {
+            "de": "fünfzig",
+            "fa": "پنجاه (۵۰)"
+          }
+        },
+        {
+          "word": {
+            "de": "sechzig",
+            "fa": "شصت (۶۰)"
+          }
+        },
+        {
+          "word": {
+            "de": "siebzig",
+            "fa": "هفتاد (۷۰)"
+          }
+        },
+        {
+          "word": {
+            "de": "achtzig",
+            "fa": "هشتاد (۸۰)"
+          }
+        },
+        {
+          "word": {
+            "de": "neunzig",
+            "fa": "نود (۹۰)"
+          }
+        },
+        {
+          "word": {
+            "de": "hundert",
+            "fa": "صد (۱۰۰)"
+          }
+        }
       ]
     }
   ]

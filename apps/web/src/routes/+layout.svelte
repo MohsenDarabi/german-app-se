@@ -13,11 +13,12 @@
 
   // Initialize services when app loads
   onMount(() => {
-    // Initialize services asynchronously
-    (async () => {
-      // Initialize asset service (loads CDN manifest)
-      await initAssetService('de-fa');
+    // Initialize asset service in background (non-blocking)
+    // App will use local fallbacks until CDN manifest loads
+    initAssetService('de-fa');
 
+    // Initialize auth/sync asynchronously
+    (async () => {
       // Initial sync on load if user is authenticated
       const { data: { session } } = await supabase.auth.getSession();
       if (session) {

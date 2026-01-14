@@ -1,5 +1,14 @@
 {
   "id": "A1-M01-L02",
+  "languagePair": "de-fa",
+  "source": {
+    "code": "de",
+    "name": "Deutsch"
+  },
+  "target": {
+    "code": "fa",
+    "name": "فارسی"
+  },
   "title": {
     "de": "Wie geht's?",
     "fa": "حالت چطوره؟"
@@ -75,8 +84,14 @@
       "title": "پرسیدن احوال در آلمانی",
       "content": "برای پرسیدن حال کسی از این عبارات استفاده می‌کنیم:\n\n**Wie geht's?** = حالت چطوره؟ (کوتاه و رایج)\n**Wie geht's dir?** = حالت چطوره؟ (با «dir» = به تو)\n\n🇮🇷 **نکته برای فارسی‌زبانان:**\nدر آلمانی فعل «gehen» (رفتن) برای حال پرسیدن استفاده می‌شود!\nیعنی می‌پرسند: «چطور می‌رود؟» (به جای «چطوری؟»)\n\n**پاسخ‌های رایج:**\n✅ Gut! = خوبم!\n😐 Es geht. = ای بدک نیست.\n❌ Schlecht. = بد.",
       "examples": [
-        { "de": "Wie geht's dir?", "fa": "حالت چطوره؟ (غیررسمی)" },
-        { "de": "Mir geht's gut, danke!", "fa": "حالم خوبه، ممنون!" }
+        {
+          "de": "Wie geht's dir?",
+          "fa": "حالت چطوره؟ (غیررسمی)"
+        },
+        {
+          "de": "Mir geht's gut, danke!",
+          "fa": "حالم خوبه، ممنون!"
+        }
       ]
     },
     {
@@ -88,18 +103,48 @@
       "basePoints": 10,
       "showStreak": true,
       "questions": [
-        { "prompt": "Wie geht's?", "left": "خداحافظ", "right": "حالت چطوره؟", "correctSide": "right" },
-        { "prompt": "gut", "left": "خوب", "right": "بد", "correctSide": "left" },
-        { "prompt": "schlecht", "left": "خوب", "right": "بد", "correctSide": "right" },
-        { "prompt": "Es geht.", "left": "ای بدک نیست", "right": "خیلی خوبم", "correctSide": "left" },
-        { "prompt": "حالم خوبه", "left": "Mir geht's schlecht", "right": "Mir geht's gut", "correctSide": "right" }
+        {
+          "prompt": "Wie geht's?",
+          "left": "خداحافظ",
+          "right": "حالت چطوره؟",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "gut",
+          "left": "خوب",
+          "right": "بد",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "schlecht",
+          "left": "خوب",
+          "right": "بد",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Es geht.",
+          "left": "ای بدک نیست",
+          "right": "خیلی خوبم",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "حالم خوبه",
+          "left": "Mir geht's schlecht",
+          "right": "Mir geht's gut",
+          "correctSide": "right"
+        }
       ]
     },
     {
       "type": "multiple-choice",
       "id": "s6",
       "question": "چگونه در آلمانی می‌پرسید «حالت چطوره؟»",
-      "options": ["Ich bin Alex", "Tschüss!", "Wie geht's?", "Danke schön"],
+      "options": [
+        "Ich bin Alex",
+        "Tschüss!",
+        "Wie geht's?",
+        "Danke schön"
+      ],
       "correctAnswerIndex": 2,
       "feedback": {
         "explanation": "عبارت Wie geht's? برای پرسیدن حال استفاده می‌شود. این عبارت رایج‌ترین روش احوالپرسی در آلمانی است."
@@ -110,8 +155,15 @@
       "id": "s7",
       "instruction": "جمله را کامل کنید",
       "sentence": "Wie {0} dir?",
-      "options": ["geht's", "heißt", "ist", "bist"],
-      "correctAnswers": [0],
+      "options": [
+        "geht's",
+        "heißt",
+        "ist",
+        "bist"
+      ],
+      "correctAnswers": [
+        0
+      ],
       "feedback": {
         "explanation": "عبارت کامل Wie geht's dir? است که یعنی «حالت چطوره؟»"
       }
@@ -135,8 +187,16 @@
       "type": "word-order",
       "id": "s9",
       "instruction": "کلمات را مرتب کنید تا جمله درست شود",
-      "words": ["gut.", "geht's", "Mir"],
-      "correctOrder": [2, 1, 0],
+      "words": [
+        "gut.",
+        "geht's",
+        "Mir"
+      ],
+      "correctOrder": [
+        2,
+        1,
+        0
+      ],
       "correctSentence": {
         "de": "Mir geht's gut.",
         "fa": "حالم خوبه."
@@ -147,10 +207,22 @@
       "id": "g2",
       "title": "بازی حافظه",
       "pairs": [
-        { "de": "Wie geht's?", "fa": "حالت چطوره؟" },
-        { "de": "gut", "fa": "خوب" },
-        { "de": "schlecht", "fa": "بد" },
-        { "de": "Es geht", "fa": "ای بدک نیست" }
+        {
+          "de": "Wie geht's?",
+          "fa": "حالت چطوره؟"
+        },
+        {
+          "de": "gut",
+          "fa": "خوب"
+        },
+        {
+          "de": "schlecht",
+          "fa": "بد"
+        },
+        {
+          "de": "Es geht",
+          "fa": "ای بدک نیست"
+        }
       ],
       "timeLimit": 60
     },
@@ -159,12 +231,48 @@
       "id": "s10",
       "title": "مکالمه روزانه",
       "lines": [
-        { "speaker": "Eli", "text": { "de": "Hallo Tom!", "fa": "سلام تام!" } },
-        { "speaker": "Tom", "text": { "de": "Hi Eli! Wie geht's?", "fa": "سلام الی! حالت چطوره؟" } },
-        { "speaker": "Eli", "text": { "de": "Gut, danke! Und dir?", "fa": "خوبم، ممنون! تو چطوری؟" } },
-        { "speaker": "Tom", "text": { "de": "Auch gut!", "fa": "منم خوبم!" } },
-        { "speaker": "Eli", "text": { "de": "Super! Tschüss Tom!", "fa": "عالیه! خداحافظ تام!" } },
-        { "speaker": "Tom", "text": { "de": "Tschüss!", "fa": "خداحافظ!" } }
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Hallo Tom!",
+            "fa": "سلام تام!"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Hi Eli! Wie geht's?",
+            "fa": "سلام الی! حالت چطوره؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Gut, danke! Und dir?",
+            "fa": "خوبم، ممنون! تو چطوری؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Auch gut!",
+            "fa": "منم خوبم!"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Super! Tschüss Tom!",
+            "fa": "عالیه! خداحافظ تام!"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Tschüss!",
+            "fa": "خداحافظ!"
+          }
+        }
       ],
       "feedback": {
         "explanation": "در این مکالمه الی و تام از حال یکدیگر می‌پرسند. توجه کنید که بعد از جواب دادن، با \"Und dir?\" از طرف مقابل هم می‌پرسند."
@@ -175,18 +283,59 @@
       "id": "s11",
       "instruction": "جفت‌های درست را پیدا کنید",
       "items": [
-        { "id": "i1", "text": "Wie geht's?" },
-        { "id": "i2", "text": "Mir geht's gut" },
-        { "id": "i3", "text": "schlecht" },
-        { "id": "i4", "text": "Und dir?" }
+        {
+          "id": "i1",
+          "text": "Wie geht's?"
+        },
+        {
+          "id": "i2",
+          "text": "Mir geht's gut"
+        },
+        {
+          "id": "i3",
+          "text": "schlecht"
+        },
+        {
+          "id": "i4",
+          "text": "Und dir?"
+        }
       ],
       "matches": [
-        { "id": "m1", "text": "حالت چطوره؟" },
-        { "id": "m2", "text": "حالم خوبه" },
-        { "id": "m3", "text": "بد" },
-        { "id": "m4", "text": "تو چطوری؟" }
+        {
+          "id": "m1",
+          "text": "حالت چطوره؟"
+        },
+        {
+          "id": "m2",
+          "text": "حالم خوبه"
+        },
+        {
+          "id": "m3",
+          "text": "بد"
+        },
+        {
+          "id": "m4",
+          "text": "تو چطوری؟"
+        }
       ],
-      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]],
+      "correctPairs": [
+        [
+          "i1",
+          "m1"
+        ],
+        [
+          "i2",
+          "m2"
+        ],
+        [
+          "i3",
+          "m3"
+        ],
+        [
+          "i4",
+          "m4"
+        ]
+      ],
       "shuffleTargets": true
     },
     {
@@ -204,8 +353,17 @@
       "id": "s13",
       "sourceText": "حالت چطوره؟ خوبم، ممنون!",
       "sentenceTemplate": "{0}? {1}, {2}!",
-      "options": ["danke", "Gut", "Wie geht's", "Schlecht"],
-      "correctAnswers": [2, 1, 0],
+      "options": [
+        "danke",
+        "Gut",
+        "Wie geht's",
+        "Schlecht"
+      ],
+      "correctAnswers": [
+        2,
+        1,
+        0
+      ],
       "correctTranslation": {
         "de": "Wie geht's? Gut, danke!",
         "fa": "حالت چطوره؟ خوبم، ممنون!"
@@ -223,7 +381,12 @@
       "type": "multiple-choice",
       "id": "s15",
       "question": "اگر حالتان بد باشد، چه می‌گویید؟",
-      "options": ["Mir geht's gut", "Es geht", "Mir geht's schlecht", "Und dir?"],
+      "options": [
+        "Mir geht's gut",
+        "Es geht",
+        "Mir geht's schlecht",
+        "Und dir?"
+      ],
       "correctAnswerIndex": 2,
       "feedback": {
         "explanation": "وقتی حالتان بد است، می‌گویید Mir geht's schlecht که یعنی «حالم بده»."
@@ -235,12 +398,30 @@
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [
-        { "de": "Wie geht's?", "fa": "حالت چطوره؟" },
-        { "de": "Mir geht's gut", "fa": "حالم خوبه" },
-        { "de": "gut", "fa": "خوب" },
-        { "de": "schlecht", "fa": "بد" },
-        { "de": "Es geht", "fa": "ای بدک نیست" },
-        { "de": "Und dir?", "fa": "تو چطوری؟" }
+        {
+          "de": "Wie geht's?",
+          "fa": "حالت چطوره؟"
+        },
+        {
+          "de": "Mir geht's gut",
+          "fa": "حالم خوبه"
+        },
+        {
+          "de": "gut",
+          "fa": "خوب"
+        },
+        {
+          "de": "schlecht",
+          "fa": "بد"
+        },
+        {
+          "de": "Es geht",
+          "fa": "ای بدک نیست"
+        },
+        {
+          "de": "Und dir?",
+          "fa": "تو چطوری؟"
+        }
       ]
     },
     {
@@ -248,14 +429,49 @@
       "id": "s16",
       "message": "آفرین! درس دوم را با موفقیت تمام کردید!",
       "vocabularyLearned": [
-        { "word": { "de": "Wie geht's?", "fa": "حالت چطوره؟" } },
-        { "word": { "de": "Mir geht's gut", "fa": "حالم خوبه" } },
-        { "word": { "de": "gut", "fa": "خوب" } },
-        { "word": { "de": "schlecht", "fa": "بد" } },
-        { "word": { "de": "Es geht", "fa": "ای بدک نیست" } },
-        { "word": { "de": "Und dir?", "fa": "تو چطوری؟" } }
+        {
+          "word": {
+            "de": "Wie geht's?",
+            "fa": "حالت چطوره؟"
+          }
+        },
+        {
+          "word": {
+            "de": "Mir geht's gut",
+            "fa": "حالم خوبه"
+          }
+        },
+        {
+          "word": {
+            "de": "gut",
+            "fa": "خوب"
+          }
+        },
+        {
+          "word": {
+            "de": "schlecht",
+            "fa": "بد"
+          }
+        },
+        {
+          "word": {
+            "de": "Es geht",
+            "fa": "ای بدک نیست"
+          }
+        },
+        {
+          "word": {
+            "de": "Und dir?",
+            "fa": "تو چطوری؟"
+          }
+        }
       ]
     }
   ],
-  "tags": ["greetings", "feelings", "small-talk", "A1"]
+  "tags": [
+    "greetings",
+    "feelings",
+    "small-talk",
+    "A1"
+  ]
 }

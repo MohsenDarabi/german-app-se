@@ -1,5 +1,14 @@
 {
   "id": "A1-M02-L03",
+  "languagePair": "de-fa",
+  "source": {
+    "code": "de",
+    "name": "Deutsch"
+  },
+  "target": {
+    "code": "fa",
+    "name": "فارسی"
+  },
   "title": {
     "de": "Wir, ihr, sie",
     "fa": "ما، شما، آن‌ها"
@@ -17,8 +26,14 @@
       "title": "ضمایر جمع در آلمانی",
       "content": "در درس‌های قبل با ضمایر مفرد آشنا شدید:\n\n| مفرد | معنی |\n|-----|-----|\n| ich | من |\n| du | تو |\n| er/sie/es | او |\n\nحالا ضمایر **جمع** را یاد می‌گیریم!",
       "examples": [
-        { "de": "Wir lernen Deutsch.", "fa": "ما آلمانی یاد می‌گیریم." },
-        { "de": "Ihr spielt Fußball.", "fa": "شما فوتبال بازی می‌کنید." }
+        {
+          "de": "Wir lernen Deutsch.",
+          "fa": "ما آلمانی یاد می‌گیریم."
+        },
+        {
+          "de": "Ihr spielt Fußball.",
+          "fa": "شما فوتبال بازی می‌کنید."
+        }
       ]
     },
     {
@@ -111,9 +126,18 @@
       "title": "پسوندهای جمع",
       "content": "| ضمیر | پسوند | مثال (machen) |\n|-----|-----|-----|\n| wir | **-en** | mach**en** |\n| ihr | **-t** | mach**t** |\n| sie (آن‌ها) | **-en** | mach**en** |\n\n**نکته:** wir و sie (جمع) پسوند یکسان دارند: **-en**",
       "examples": [
-        { "de": "Wir lernen.", "fa": "ما یاد می‌گیریم." },
-        { "de": "Ihr lernt.", "fa": "شما یاد می‌گیرید." },
-        { "de": "Sie lernen.", "fa": "آن‌ها یاد می‌گیرند." }
+        {
+          "de": "Wir lernen.",
+          "fa": "ما یاد می‌گیریم."
+        },
+        {
+          "de": "Ihr lernt.",
+          "fa": "شما یاد می‌گیرید."
+        },
+        {
+          "de": "Sie lernen.",
+          "fa": "آن‌ها یاد می‌گیرند."
+        }
       ]
     },
     {
@@ -122,11 +146,36 @@
       "title": "machen - تمرین جمع",
       "instruction": "فرم درست را انتخاب کنید",
       "questions": [
-        { "prompt": "wir ___", "left": "machen", "right": "macht", "correctSide": "left" },
-        { "prompt": "ihr ___", "left": "machen", "right": "macht", "correctSide": "right" },
-        { "prompt": "sie ___", "left": "machen", "right": "macht", "correctSide": "left" },
-        { "prompt": "___ lernen Deutsch.", "left": "Wir", "right": "Ihr", "correctSide": "left" },
-        { "prompt": "___ spielt gut!", "left": "Wir", "right": "Ihr", "correctSide": "right" }
+        {
+          "prompt": "wir ___",
+          "left": "machen",
+          "right": "macht",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "ihr ___",
+          "left": "machen",
+          "right": "macht",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "sie ___",
+          "left": "machen",
+          "right": "macht",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "___ lernen Deutsch.",
+          "left": "Wir",
+          "right": "Ihr",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "___ spielt gut!",
+          "left": "Wir",
+          "right": "Ihr",
+          "correctSide": "right"
+        }
       ]
     },
     {
@@ -149,8 +198,14 @@
       "title": "Sie رسمی و sie جمع",
       "content": "در آلمانی دو نوع «sie» داریم:\n\n| نوشتار | معنی | استفاده |\n|-----|-----|-----|\n| **S**ie | شما (محترم) | با غریبه‌ها، بزرگ‌ترها |\n| **s**ie | آن‌ها | برای گروه‌ها |\n\n**نکته:** هر دو پسوند **-en** می‌گیرند!\n\nدر نوشتار، Sie رسمی همیشه با **S** بزرگ نوشته می‌شود.",
       "examples": [
-        { "de": "Sie arbeiten hier?", "fa": "شما اینجا کار می‌کنید؟ (رسمی)" },
-        { "de": "sie arbeiten dort.", "fa": "آن‌ها آنجا کار می‌کنند." }
+        {
+          "de": "Sie arbeiten hier?",
+          "fa": "شما اینجا کار می‌کنید؟ (رسمی)"
+        },
+        {
+          "de": "sie arbeiten dort.",
+          "fa": "آن‌ها آنجا کار می‌کنند."
+        }
       ]
     },
     {
@@ -186,22 +241,58 @@
       "id": "s13",
       "instruction": "ضمیر را با پسوند جفت کنید",
       "items": [
-        { "id": "i1", "text": "ich" },
-        { "id": "i2", "text": "du" },
-        { "id": "i3", "text": "wir" },
-        { "id": "i4", "text": "ihr" }
+        {
+          "id": "i1",
+          "text": "ich"
+        },
+        {
+          "id": "i2",
+          "text": "du"
+        },
+        {
+          "id": "i3",
+          "text": "wir"
+        },
+        {
+          "id": "i4",
+          "text": "ihr"
+        }
       ],
       "matches": [
-        { "id": "m1", "text": "-e" },
-        { "id": "m2", "text": "-st" },
-        { "id": "m3", "text": "-en" },
-        { "id": "m4", "text": "-t" }
+        {
+          "id": "m1",
+          "text": "-e"
+        },
+        {
+          "id": "m2",
+          "text": "-st"
+        },
+        {
+          "id": "m3",
+          "text": "-en"
+        },
+        {
+          "id": "m4",
+          "text": "-t"
+        }
       ],
       "correctPairs": [
-        ["i1", "m1"],
-        ["i2", "m2"],
-        ["i3", "m3"],
-        ["i4", "m4"]
+        [
+          "i1",
+          "m1"
+        ],
+        [
+          "i2",
+          "m2"
+        ],
+        [
+          "i3",
+          "m3"
+        ],
+        [
+          "i4",
+          "m4"
+        ]
       ]
     },
     {
@@ -210,18 +301,53 @@
       "title": "مکالمه: برنامه گروهی",
       "context": "الی و تام با دوستانشان صحبت می‌کنند",
       "lines": [
-        { "speaker": "Eli", "text": { "de": "Hallo zusammen! Was macht ihr heute?", "fa": "سلام به همه! امروز چه کار می‌کنید؟" } },
-        { "speaker": "Alex", "text": { "de": "Wir spielen Fußball. Kommst du mit?", "fa": "ما فوتبال بازی می‌کنیم. میای با ما؟" } },
-        { "speaker": "Eli", "text": { "de": "Ja, gerne! Spielen Lisa und Tom auch?", "fa": "آره، با کمال میل! لیزا و تام هم بازی می‌کنند؟" } },
-        { "speaker": "Alex", "text": { "de": "Ja, sie spielen auch.", "fa": "آره، آن‌ها هم بازی می‌کنند." } },
-        { "speaker": "Tom", "text": { "de": "Super! Wir spielen alle zusammen!", "fa": "عالی! همه با هم بازی می‌کنیم!" } }
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Hallo zusammen! Was macht ihr heute?",
+            "fa": "سلام به همه! امروز چه کار می‌کنید؟"
+          }
+        },
+        {
+          "speaker": "Alex",
+          "text": {
+            "de": "Wir spielen Fußball. Kommst du mit?",
+            "fa": "ما فوتبال بازی می‌کنیم. میای با ما؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Ja, gerne! Spielen Lisa und Tom auch?",
+            "fa": "آره، با کمال میل! لیزا و تام هم بازی می‌کنند؟"
+          }
+        },
+        {
+          "speaker": "Alex",
+          "text": {
+            "de": "Ja, sie spielen auch.",
+            "fa": "آره، آن‌ها هم بازی می‌کنند."
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Super! Wir spielen alle zusammen!",
+            "fa": "عالی! همه با هم بازی می‌کنیم!"
+          }
+        }
       ]
     },
     {
       "type": "multiple-choice",
       "id": "s15",
       "question": "کدام گزینه درست است؟ «Wir ___ Deutsch.»",
-      "options": ["lerne", "lernst", "lernt", "lernen"],
+      "options": [
+        "lerne",
+        "lernst",
+        "lernt",
+        "lernen"
+      ],
       "correctAnswerIndex": 3,
       "feedback": {
         "correct": "آفرین! wir lernen = ما یاد می‌گیریم",
@@ -232,7 +358,12 @@
       "type": "multiple-choice",
       "id": "s16",
       "question": "کدام گزینه درست است؟ «Ihr ___ sehr gut!»",
-      "options": ["spielen", "spielt", "spiele", "spielst"],
+      "options": [
+        "spielen",
+        "spielt",
+        "spiele",
+        "spielst"
+      ],
       "correctAnswerIndex": 1,
       "feedback": {
         "correct": "آفرین! ihr spielt = شما بازی می‌کنید",
@@ -244,8 +375,15 @@
       "id": "s17",
       "instruction": "جمله را کامل کنید",
       "sentence": "Wir {0} im Büro.",
-      "options": ["arbeite", "arbeitet", "arbeiten", "arbeitest"],
-      "correctAnswers": [2],
+      "options": [
+        "arbeite",
+        "arbeitet",
+        "arbeiten",
+        "arbeitest"
+      ],
+      "correctAnswers": [
+        2
+      ],
       "feedback": {
         "explanation": "Wir **arbeiten** im Büro. = ما در دفتر کار می‌کنیم."
       }
@@ -255,8 +393,15 @@
       "id": "s18",
       "instruction": "جمله را کامل کنید",
       "sentence": "{0} Sie Deutsch?",
-      "options": ["Spreche", "Sprichst", "Sprecht", "Sprechen"],
-      "correctAnswers": [3],
+      "options": [
+        "Spreche",
+        "Sprichst",
+        "Sprecht",
+        "Sprechen"
+      ],
+      "correctAnswers": [
+        3
+      ],
       "feedback": {
         "explanation": "**Sprechen** Sie Deutsch? = آیا شما آلمانی صحبت می‌کنید؟"
       }
@@ -267,11 +412,36 @@
       "title": "lernen - همه ضمایر",
       "instruction": "فرم درست را انتخاب کنید",
       "questions": [
-        { "prompt": "ich ___", "left": "lerne", "right": "lernen", "correctSide": "left" },
-        { "prompt": "wir ___", "left": "lernt", "right": "lernen", "correctSide": "right" },
-        { "prompt": "du ___", "left": "lernst", "right": "lernt", "correctSide": "left" },
-        { "prompt": "ihr ___", "left": "lernt", "right": "lernen", "correctSide": "left" },
-        { "prompt": "sie ___", "left": "lernt", "right": "lernen", "correctSide": "right" }
+        {
+          "prompt": "ich ___",
+          "left": "lerne",
+          "right": "lernen",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "wir ___",
+          "left": "lernt",
+          "right": "lernen",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "du ___",
+          "left": "lernst",
+          "right": "lernt",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "ihr ___",
+          "left": "lernt",
+          "right": "lernen",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "sie ___",
+          "left": "lernt",
+          "right": "lernen",
+          "correctSide": "right"
+        }
       ]
     },
     {
@@ -280,8 +450,14 @@
       "title": "خلاصه: همه پسوندها",
       "content": "| ضمیر | پسوند | مثال |\n|-----|-----|-----|\n| ich | **-e** | lerne |\n| du | **-st** | lernst |\n| er/sie/es | **-t** | lernt |\n| wir | **-en** | lernen |\n| ihr | **-t** | lernt |\n| sie/Sie | **-en** | lernen |\n\n**یادتان باشد:** er/sie/es و ihr هر دو **-t** می‌گیرند!",
       "examples": [
-        { "de": "Ich lerne, du lernst, er lernt.", "fa": "من یاد می‌گیرم، تو یاد می‌گیری، او یاد می‌گیرد." },
-        { "de": "Wir lernen, ihr lernt, sie lernen.", "fa": "ما یاد می‌گیریم، شما یاد می‌گیرید، آن‌ها یاد می‌گیرند." }
+        {
+          "de": "Ich lerne, du lernst, er lernt.",
+          "fa": "من یاد می‌گیرم، تو یاد می‌گیری، او یاد می‌گیرد."
+        },
+        {
+          "de": "Wir lernen, ihr lernt, sie lernen.",
+          "fa": "ما یاد می‌گیریم، شما یاد می‌گیرید، آن‌ها یاد می‌گیرند."
+        }
       ]
     },
     {
@@ -326,15 +502,42 @@
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [
-        { "de": "wir", "fa": "ما" },
-        { "de": "wir machen", "fa": "ما انجام می‌دهیم" },
-        { "de": "ihr", "fa": "شما (غیررسمی)" },
-        { "de": "ihr macht", "fa": "شما انجام می‌دهید" },
-        { "de": "sie", "fa": "آن‌ها (ضمیر جمع)" },
-        { "de": "sie machen", "fa": "آن‌ها انجام می‌دهند" },
-        { "de": "Sie", "fa": "شما (رسمی/محترم)" },
-        { "de": "zusammen", "fa": "با هم" },
-        { "de": "alle", "fa": "همه" }
+        {
+          "de": "wir",
+          "fa": "ما"
+        },
+        {
+          "de": "wir machen",
+          "fa": "ما انجام می‌دهیم"
+        },
+        {
+          "de": "ihr",
+          "fa": "شما (غیررسمی)"
+        },
+        {
+          "de": "ihr macht",
+          "fa": "شما انجام می‌دهید"
+        },
+        {
+          "de": "sie",
+          "fa": "آن‌ها (ضمیر جمع)"
+        },
+        {
+          "de": "sie machen",
+          "fa": "آن‌ها انجام می‌دهند"
+        },
+        {
+          "de": "Sie",
+          "fa": "شما (رسمی/محترم)"
+        },
+        {
+          "de": "zusammen",
+          "fa": "با هم"
+        },
+        {
+          "de": "alle",
+          "fa": "همه"
+        }
       ]
     },
     {
@@ -345,15 +548,60 @@
       "xpEarned": 50,
       "nextLessonId": "A1-M02-L04",
       "vocabularyLearned": [
-        { "word": { "de": "wir", "fa": "ما" } },
-        { "word": { "de": "wir machen", "fa": "ما انجام می‌دهیم" } },
-        { "word": { "de": "ihr", "fa": "شما (غیررسمی)" } },
-        { "word": { "de": "ihr macht", "fa": "شما انجام می‌دهید" } },
-        { "word": { "de": "sie", "fa": "آن‌ها (ضمیر جمع)" } },
-        { "word": { "de": "sie machen", "fa": "آن‌ها انجام می‌دهند" } },
-        { "word": { "de": "Sie", "fa": "شما (رسمی/محترم)" } },
-        { "word": { "de": "zusammen", "fa": "با هم" } },
-        { "word": { "de": "alle", "fa": "همه" } }
+        {
+          "word": {
+            "de": "wir",
+            "fa": "ما"
+          }
+        },
+        {
+          "word": {
+            "de": "wir machen",
+            "fa": "ما انجام می‌دهیم"
+          }
+        },
+        {
+          "word": {
+            "de": "ihr",
+            "fa": "شما (غیررسمی)"
+          }
+        },
+        {
+          "word": {
+            "de": "ihr macht",
+            "fa": "شما انجام می‌دهید"
+          }
+        },
+        {
+          "word": {
+            "de": "sie",
+            "fa": "آن‌ها (ضمیر جمع)"
+          }
+        },
+        {
+          "word": {
+            "de": "sie machen",
+            "fa": "آن‌ها انجام می‌دهند"
+          }
+        },
+        {
+          "word": {
+            "de": "Sie",
+            "fa": "شما (رسمی/محترم)"
+          }
+        },
+        {
+          "word": {
+            "de": "zusammen",
+            "fa": "با هم"
+          }
+        },
+        {
+          "word": {
+            "de": "alle",
+            "fa": "همه"
+          }
+        }
       ]
     }
   ]
