@@ -98,47 +98,38 @@
 
 <style>
   .grammar-card {
-    background: linear-gradient(135deg, var(--color-success-50, #fefce8), rgba(234, 179, 8, 0.1));
-    border: 2px solid var(--color-success-400, #facc15);
+    background: var(--color-neutral-50, #fdfbf7);
     border-radius: var(--radius-xl, 1rem);
     padding: var(--space-6, 1.5rem);
-    color: var(--color-success-800, #854d0e);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   }
 
   .icon-header {
     display: flex;
     align-items: center;
     gap: var(--space-2, 0.5rem);
-    margin-bottom: var(--space-3, 0.75rem);
+    margin-bottom: var(--space-4, 1rem);
   }
 
   .bulb-icon {
-    font-size: 1.75rem;
-    animation: glow 2s ease-in-out infinite;
-  }
-
-  @keyframes glow {
-    0%, 100% { filter: brightness(1); }
-    50% { filter: brightness(1.2); }
+    font-size: 1.5rem;
   }
 
   .step-title {
     font-size: var(--text-lg, 1.125rem);
     font-weight: var(--font-bold, 700);
-    background: linear-gradient(135deg, var(--color-success-700, #a16207), var(--color-success-600, #ca8a04));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--color-neutral-800, #292524);
   }
 
   .grammar-text {
     font-size: var(--text-base, 1rem);
     line-height: 1.8;
+    color: var(--color-neutral-700, #44403c);
   }
 
   .grammar-text :global(strong) {
     font-weight: var(--font-bold, 700);
-    color: var(--color-success-900, #713f12);
+    color: var(--color-primary-600, #0e7490);
   }
 
   .grammar-text :global(p) {
@@ -148,7 +139,7 @@
   .grammar-text :global(.table-row) {
     display: flex;
     flex-direction: row-reverse;
-    border-bottom: 1px solid var(--color-success-300, #fde047);
+    border-bottom: 1px solid var(--color-neutral-200, #e8e0d5);
     padding: var(--space-2, 0.5rem) 0;
   }
 
@@ -165,6 +156,8 @@
   .grammar-text :global(.table-cell:last-child) {
     text-align: left;
     direction: ltr;
+    color: var(--color-primary-600, #0e7490);
+    font-weight: var(--font-medium, 500);
   }
 
   .grammar-text :global(.bullet-item) {
@@ -178,20 +171,20 @@
     content: '•';
     position: absolute;
     right: 0;
-    color: var(--color-success-500, #eab308);
+    color: var(--color-primary-500, #0891b2);
   }
 
   .examples-section {
     margin-top: var(--space-4, 1rem);
     padding-top: var(--space-4, 1rem);
-    border-top: 1px solid var(--color-success-300, #fde047);
+    border-top: 1px solid var(--color-neutral-200, #e8e0d5);
   }
 
   .examples-title {
     font-size: var(--text-sm, 0.875rem);
     font-weight: var(--font-bold, 700);
-    margin-bottom: var(--space-2, 0.5rem);
-    color: var(--color-success-700, #a16207);
+    margin-bottom: var(--space-3, 0.75rem);
+    color: var(--color-neutral-500, #78716c);
   }
 
   .example-item {
@@ -209,35 +202,34 @@
     display: flex;
     align-items: center;
     gap: var(--space-3, 0.75rem);
-    padding: var(--space-2, 0.5rem) var(--space-3, 0.75rem);
-    background: rgba(255, 255, 255, 0.6);
-    border-radius: var(--radius-md, 0.5rem);
+    padding: var(--space-3, 0.75rem);
+    background: white;
+    border-radius: var(--radius-lg, 0.75rem);
     margin-bottom: var(--space-2, 0.5rem);
     transition: all var(--transition-normal, 200ms);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   }
 
   .example-item.inline-example:hover {
-    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transform: translateX(-4px);
   }
 
   .example-de {
-    font-size: var(--text-base, 1rem);
+    font-size: var(--text-lg, 1.125rem);
     font-weight: var(--font-semibold, 600);
-    color: var(--color-success-900, #713f12);
+    color: var(--color-primary-600, #0e7490);
     min-width: 3rem;
   }
 
   .example-fa {
-    font-size: var(--text-sm, 0.875rem);
-    color: var(--color-success-700, #a16207);
-    font-style: italic;
+    font-size: var(--text-base, 1rem);
+    color: var(--color-neutral-600, #57534e);
     margin: 0;
     padding-right: var(--space-8, 2rem);
   }
 
   .inline-example .example-fa {
-    font-style: normal;
     margin-right: auto;
     padding-right: 0;
   }
@@ -246,29 +238,56 @@
     margin-top: var(--space-3, 0.75rem);
   }
 
-  /* Dark Mode */
+  /* Dark Mode - use hardcoded colors since CSS variables swap */
   :global([data-theme="dark"]) .grammar-card {
-    background: linear-gradient(135deg, rgba(234, 179, 8, 0.15), rgba(234, 179, 8, 0.05));
-    border-color: var(--color-success-500, #eab308);
-    color: var(--color-success-200, #fef08a);
+    background: #292524;
   }
 
   :global([data-theme="dark"]) .step-title {
-    background: linear-gradient(135deg, var(--color-success-400, #facc15), var(--color-success-300, #fde047));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #f5f0e8;
+  }
+
+  :global([data-theme="dark"]) .grammar-text {
+    color: #d4c9b9;
   }
 
   :global([data-theme="dark"]) .grammar-text :global(strong) {
-    color: var(--color-success-300, #fde047);
+    color: #22d3ee;
+  }
+
+  :global([data-theme="dark"]) .grammar-text :global(.table-row) {
+    border-color: #44403c;
+  }
+
+  :global([data-theme="dark"]) .grammar-text :global(.table-cell:last-child) {
+    color: #22d3ee;
+  }
+
+  :global([data-theme="dark"]) .grammar-text :global(.bullet-item)::before {
+    color: #22d3ee;
+  }
+
+  :global([data-theme="dark"]) .examples-section {
+    border-color: #44403c;
+  }
+
+  :global([data-theme="dark"]) .examples-title {
+    color: #a69b8a;
   }
 
   :global([data-theme="dark"]) .example-item.inline-example {
-    background: rgba(0, 0, 0, 0.2);
+    background: #44403c;
   }
 
   :global([data-theme="dark"]) .example-de {
-    color: var(--color-success-300, #fde047);
+    color: #22d3ee;
+  }
+
+  :global([data-theme="dark"]) .example-fa {
+    color: #a69b8a;
+  }
+
+  :global([data-theme="dark"]) .example-row p.example-de {
+    color: #22d3ee;
   }
 </style>

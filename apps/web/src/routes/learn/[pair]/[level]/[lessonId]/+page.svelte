@@ -213,38 +213,33 @@
 </div>
 
 <style>
-  /* Mobile-first styles */
+  /*
+   * Mobile-first lesson layout - NO nested scrolling!
+   * The page scrolls as one unit, with sticky header and footer.
+   */
   .lesson-layout {
     display: flex;
     flex-direction: column;
-    /* Fill available height without causing double scroll */
-    min-height: 0;
-    height: 100%;
-    /* On mobile, account for nav bars */
-    max-height: calc(100vh - 130px);
-    max-height: calc(100dvh - 130px);
+    min-height: 100%;
     max-width: 600px;
     margin: 0 auto;
     background: var(--color-neutral-50, #fdfbf7);
-    /* Prevent horizontal overflow */
-    overflow: hidden;
+    /* No overflow constraints - let content flow naturally */
   }
 
-  @media (min-width: 769px) {
-    .lesson-layout {
-      max-height: calc(100vh - 160px);
-      max-height: calc(100dvh - 160px);
-    }
-  }
-
+  /* Sticky header stays at top while scrolling */
   .lesson-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
     padding: var(--space-3, 0.75rem);
     display: flex;
     align-items: center;
     gap: var(--space-2, 0.5rem);
-    flex-shrink: 0;
-    /* Clean look - no border, transparent background */
-    background: transparent;
+    background: var(--color-neutral-50, #fdfbf7);
+    /* Subtle shadow when content scrolls behind */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0);
+    transition: box-shadow 0.2s;
   }
 
   .exit-btn {
@@ -298,24 +293,14 @@
     box-shadow: 0 0 8px var(--color-xp-glow, rgba(79, 70, 229, 0.4));
   }
 
+  /* Content flows naturally - NO overflow/scroll here */
   .lesson-content {
     flex: 1;
-    overflow-y: auto;
-    overflow-x: hidden;
     padding: var(--space-3, 0.75rem);
-    display: flex;
-    flex-direction: column;
-    /* Use flex-start to prevent long content being pushed off-screen */
-    /* Content will scroll naturally from top */
-    justify-content: flex-start;
-    /* Prevent content from being hidden under notches */
-    padding-bottom: env(safe-area-inset-bottom, 0.75rem);
-    background: var(--color-neutral-50, #fdfbf7);
+    /* Content expands to fit, page scrolls if needed */
   }
 
   .step-animation {
-    /* Auto margins center short content, but allow long content to scroll */
-    margin: auto 0;
     width: 100%;
     animation: fadeSlideIn 0.3s ease;
   }
@@ -331,12 +316,14 @@
     }
   }
 
+  /* Sticky footer with continue button */
   .lesson-footer {
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
     padding: var(--space-3, 0.75rem);
     padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
-    /* Clean look - no border */
-    background: transparent;
-    flex-shrink: 0;
+    background: linear-gradient(to top, var(--color-neutral-50, #fdfbf7) 80%, transparent);
   }
 
   .continue-btn {
@@ -385,6 +372,7 @@
 
     .lesson-footer {
       padding: var(--space-4, 1rem);
+      padding-bottom: max(1rem, env(safe-area-inset-bottom));
     }
 
     .continue-btn {
@@ -549,87 +537,91 @@
     transform: scale(0.98);
   }
 
-  /* Dark Mode */
+  /* Dark Mode - use hardcoded colors since CSS variables swap */
   :global([data-theme="dark"]) .lesson-layout {
-    background: var(--color-neutral-900, #1c1917);
-  }
-
-  :global([data-theme="dark"]) .lesson-header {
-    background: transparent;
-  }
-
-  :global([data-theme="dark"]) .exit-btn {
-    background: var(--color-neutral-800, #292524);
-    color: var(--color-neutral-400, #a69b8a);
-  }
-
-  :global([data-theme="dark"]) .exit-btn:hover {
-    background: var(--color-neutral-700, #44403c);
-    color: var(--color-neutral-200, #e8e0d5);
-  }
-
-  :global([data-theme="dark"]) .step-counter {
-    background: rgba(79, 70, 229, 0.2);
-    color: var(--color-xp-400, #818cf8);
-  }
-
-  :global([data-theme="dark"]) .progress-bar {
-    background: var(--color-neutral-700, #44403c);
-  }
-
-  :global([data-theme="dark"]) .lesson-content {
     background: #1c1917;
   }
 
+  :global([data-theme="dark"]) .lesson-header {
+    background: #1c1917;
+  }
+
+  :global([data-theme="dark"]) .exit-btn {
+    background: #44403c;
+    color: #a69b8a;
+  }
+
+  :global([data-theme="dark"]) .exit-btn:hover {
+    background: #57534e;
+    color: #e8e0d5;
+  }
+
+  :global([data-theme="dark"]) .step-counter {
+    background: rgba(79, 70, 229, 0.25);
+    color: #a5b4fc;
+  }
+
+  :global([data-theme="dark"]) .progress-bar {
+    background: #44403c;
+  }
+
   :global([data-theme="dark"]) .lesson-footer {
-    background: transparent;
+    background: linear-gradient(to top, #1c1917 80%, transparent);
   }
 
   :global([data-theme="dark"]) .completion-screen {
-    background: rgba(28, 25, 23, 0.85);
-    border-color: rgba(68, 64, 60, 0.3);
+    background: #292524;
+    border-color: #44403c;
   }
 
   :global([data-theme="dark"]) .completion-screen h2 {
-    background: linear-gradient(135deg, var(--color-success-400, #facc15), var(--color-primary-400, #22d3ee));
+    background: linear-gradient(135deg, #facc15, #22d3ee);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   :global([data-theme="dark"]) .stat-item {
-    background: rgba(28, 25, 23, 0.85);
-    border-color: rgba(68, 64, 60, 0.3);
+    background: #292524;
+    border-color: #44403c;
   }
 
   :global([data-theme="dark"]) .stat-item:first-child {
-    border-color: var(--color-xp-500, #4f46e5);
-    background: linear-gradient(135deg, rgba(79, 70, 229, 0.2), rgba(28, 25, 23, 0.85));
+    border-color: #4f46e5;
+    background: linear-gradient(135deg, rgba(79, 70, 229, 0.2), #292524);
   }
 
   :global([data-theme="dark"]) .stat-item:last-child {
-    border-color: var(--color-success-500, #eab308);
-    background: linear-gradient(135deg, rgba(234, 179, 8, 0.2), rgba(28, 25, 23, 0.85));
+    border-color: #eab308;
+    background: linear-gradient(135deg, rgba(234, 179, 8, 0.2), #292524);
   }
 
   :global([data-theme="dark"]) .stat-icon-wrapper {
-    background: var(--color-neutral-800, #292524);
+    background: #44403c;
   }
 
   :global([data-theme="dark"]) .stat-value {
-    color: var(--color-neutral-100, #f5f0e8);
+    color: #f5f0e8;
   }
 
   :global([data-theme="dark"]) .stat-item:first-child .stat-value {
-    color: var(--color-xp-400, #818cf8);
+    color: #a5b4fc;
   }
 
   :global([data-theme="dark"]) .stat-item:last-child .stat-value {
-    color: var(--color-success-400, #facc15);
+    color: #fbbf24;
+  }
+
+  :global([data-theme="dark"]) .stat-label {
+    color: #a69b8a;
   }
 
   :global([data-theme="dark"]) .continue-btn:disabled {
-    background: var(--color-neutral-700, #44403c);
-    color: var(--color-neutral-500, #78716c);
+    background: #44403c;
+    color: #78716c;
+  }
+
+  :global([data-theme="dark"]) .finish-btn {
+    background: linear-gradient(135deg, #0891b2, #0e7490);
   }
 </style>
