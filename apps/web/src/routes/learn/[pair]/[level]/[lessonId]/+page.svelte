@@ -214,22 +214,35 @@
 
 <style>
   /*
-   * Simple lesson layout - NO height constraints
-   * Content flows naturally, app layout handles scrolling
+   * Full-height lesson layout for mobile
+   * Uses flex layout with single scroll container
+   * Header and footer are fixed, content scrolls
    */
   .lesson-layout {
+    /* Fill available height from parent */
+    display: flex;
+    flex-direction: column;
     max-width: 600px;
     margin: 0 auto;
     background: var(--color-neutral-50, #fdfbf7);
     border-radius: var(--radius-xl, 1rem);
-    /* NO overflow, NO fixed height - content flows naturally */
+    /* Calculate height: viewport - navbar (~60px) - bottom nav (70px) - padding */
+    height: calc(100dvh - 60px - 70px - var(--space-4, 1rem));
+    min-height: 400px; /* Minimum for very small screens */
+    /* Prevent any overflow from this container */
+    overflow: hidden;
   }
 
   .lesson-header {
+    /* Fixed at top, never scrolls */
+    flex-shrink: 0;
     padding: var(--space-3, 0.75rem);
     display: flex;
     align-items: center;
     gap: var(--space-2, 0.5rem);
+    background: var(--color-neutral-50, #fdfbf7);
+    border-bottom: 1px solid var(--color-neutral-200, #e8e0d5);
+    z-index: 10;
   }
 
   .exit-btn {
@@ -283,9 +296,30 @@
     box-shadow: 0 0 8px var(--color-xp-glow, rgba(79, 70, 229, 0.4));
   }
 
-  /* Content - NO scroll here, flows naturally */
+  /* Content - THIS IS THE ONLY SCROLL CONTAINER */
   .lesson-content {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
     padding: var(--space-3, 0.75rem);
+    /* Smooth scrolling for iOS */
+    -webkit-overflow-scrolling: touch;
+    /* Hide scrollbar but keep functionality */
+    scrollbar-width: thin;
+  }
+
+  /* Webkit scrollbar styling */
+  .lesson-content::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .lesson-content::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .lesson-content::-webkit-scrollbar-thumb {
+    background: var(--color-neutral-300, #d4c9b9);
+    border-radius: var(--radius-full, 9999px);
   }
 
   .step-animation {
@@ -304,9 +338,13 @@
     }
   }
 
-  /* Footer with continue button */
+  /* Footer with continue button - fixed at bottom */
   .lesson-footer {
+    flex-shrink: 0;
     padding: var(--space-3, 0.75rem);
+    background: var(--color-neutral-50, #fdfbf7);
+    border-top: 1px solid var(--color-neutral-200, #e8e0d5);
+    z-index: 10;
   }
 
   .continue-btn {
@@ -331,6 +369,11 @@
 
   /* Larger screens */
   @media (min-width: 480px) {
+    .lesson-layout {
+      /* More space available on larger screens */
+      height: calc(100dvh - 70px - 80px - var(--space-6, 1.5rem));
+    }
+
     .lesson-header {
       padding: var(--space-4, 1rem);
       gap: var(--space-3, 0.75rem);
@@ -355,6 +398,13 @@
 
     .continue-btn {
       padding: var(--space-4, 1rem);
+    }
+  }
+
+  /* Desktop: larger height */
+  @media (min-width: 769px) {
+    .lesson-layout {
+      height: calc(100dvh - 80px - var(--space-8, 2rem));
     }
   }
 
@@ -518,6 +568,20 @@
   /* Dark Mode - use hardcoded colors since CSS variables swap */
   :global([data-theme="dark"]) .lesson-layout {
     background: #292524;
+  }
+
+  :global([data-theme="dark"]) .lesson-header {
+    background: #292524;
+    border-color: #44403c;
+  }
+
+  :global([data-theme="dark"]) .lesson-footer {
+    background: #292524;
+    border-color: #44403c;
+  }
+
+  :global([data-theme="dark"]) .lesson-content::-webkit-scrollbar-thumb {
+    background: #57534e;
   }
 
   :global([data-theme="dark"]) .exit-btn {
