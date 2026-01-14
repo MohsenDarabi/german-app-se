@@ -1,10 +1,18 @@
 <script lang="ts">
-    import LogoutButton from "../auth/LogoutButton.svelte";
+  import LogoutButton from "../auth/LogoutButton.svelte";
+  import { getState } from '$lib/services/assetService';
 
-  //import LogoutButton from '$lib/components/auth/LogoutButton.svelte'
-  
+  export let user: { email: string } | null = null;
 
-  export let user: { email: string } | null = null
+  // Get current language pair
+  $: currentLanguage = getState().languagePair || 'de-fa';
+
+  // Language display info
+  const languageFlags: Record<string, string> = {
+    'de-fa': '🇩🇪',
+    'en-fa': '🇬🇧',
+    'fr-fa': '🇫🇷',
+  };
 </script>
 
 <header class="navbar">
@@ -28,11 +36,10 @@
   </div>
 
   <div class="navbar-right">
-    <div class="language-switch">
-      <button type="button">FA</button>
-      <button type="button">DE</button>
-      <button type="button">EN</button>
-    </div>
+    <a href="/languages" class="language-switch" title="تغییر زبان">
+      <span class="lang-flag">{languageFlags[currentLanguage] || '🌐'}</span>
+      <span class="lang-code">{currentLanguage.split('-')[0].toUpperCase()}</span>
+    </a>
 
     {#if user}
       <div class="user-info">
@@ -126,24 +133,27 @@
 
   .language-switch {
     display: flex;
-    gap: 0.25rem;
+    align-items: center;
+    gap: 0.35rem;
     background: rgba(255, 255, 255, 0.12);
-    padding: 0.1rem;
+    padding: 0.35rem 0.65rem;
     border-radius: 999px;
-  }
-
-  .language-switch button {
-    border: none;
-    background: transparent;
+    text-decoration: none;
     color: #fff;
-    font-size: 0.75rem;
-    padding: 0.2rem 0.5rem;
-    border-radius: 999px;
-    cursor: pointer;
+    transition: background 0.2s ease;
   }
 
-  .language-switch button:hover {
-    background: rgba(255, 255, 255, 0.18);
+  .language-switch:hover {
+    background: rgba(255, 255, 255, 0.22);
+  }
+
+  .lang-flag {
+    font-size: 1rem;
+  }
+
+  .lang-code {
+    font-size: 0.8rem;
+    font-weight: 500;
   }
 
   .user-info {
