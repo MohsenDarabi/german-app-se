@@ -1,23 +1,33 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
+  import { onMount, onDestroy } from 'svelte';
   import NavBar from './../lib/components/layout/NavBar.svelte';
   import AppFooter from './../lib/components/layout/AppFooter.svelte';
   import { syncEngine } from '$lib/services/syncEngine';
   import { supabase } from '$lib/supabase/client';
+  import { init as initAssetService } from '$lib/services/assetService';
 
   export let data;
 
-  // Initialize sync engine when app loads
-  onMount(async () => {
-    // Initial sync on load if user is authenticated
-    const { data: { session } } = await supabase.auth.getSession();
-    if (session) {
-      console.log('[App] User authenticated, initializing sync...');
-      await syncEngine.sync();
-      syncEngine.startBackgroundSync();
-    } else {
-      console.log('[App] No authenticated user, sync disabled');
-    }
+  // Store auth listener for cleanup
+  let authSubscription: { unsubscribe: () => void } | null = null;
+
+  // Initialize services when app loads
+  onMount(() => {
+    // Initialize services asynchronously
+    (async () => {
+      // Initialize asset service (loads CDN manifest)
+      await initAssetService('de-fa');
+
+      // Initial sync on load if user is authenticated
+      const { data: { session } } = await supabase.auth.getSession();
+      if (session) {
+        console.log('[App] User authenticated, initializing sync...');
+        await syncEngine.sync();
+        syncEngine.startBackgroundSync();
+      } else {
+        console.log('[App] No authenticated user, sync disabled');
+      }
+    })();
 
     // Listen for auth state changes
     const { data: authListener } = supabase.auth.onAuthStateChange(async (event, session) => {
@@ -32,12 +42,13 @@
         syncEngine.stopBackgroundSync();
       }
     });
+    authSubscription = authListener.subscription;
+  });
 
-    // Cleanup on component destroy
-    return () => {
-      authListener.subscription.unsubscribe();
-      syncEngine.stopBackgroundSync();
-    };
+  // Cleanup on component destroy
+  onDestroy(() => {
+    authSubscription?.unsubscribe();
+    syncEngine.stopBackgroundSync();
   });
 </script>
 

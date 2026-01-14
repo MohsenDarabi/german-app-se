@@ -2,9 +2,11 @@
  * Audio Playback Utility for German Learning App
  *
  * Handles playing pre-generated audio files with fallback to device TTS.
+ * Supports both local assets and CDN-based delivery via assetService.
  */
 
 import { browser } from '$app/environment';
+import { getAudioUrl, getLessonAudioHashes, isCdnEnabled, getCdnBase, getState } from '$lib/services/assetService';
 
 // Audio cache to avoid re-creating audio elements
 const audioCache = new Map<string, HTMLAudioElement>();
@@ -14,13 +16,15 @@ let currentAudio: HTMLAudioElement | null = null;
 
 /**
  * Play pre-generated audio for a lesson step
+ * Uses CDN URL if available, otherwise falls back to local path.
  *
  * @param lessonId - The lesson ID (e.g., "A1-M01-L01")
  * @param audioId - The audio file ID (e.g., "s2-word")
  * @returns Promise that resolves when audio finishes playing
  */
 export async function playStepAudio(lessonId: string, audioId: string): Promise<void> {
-  const audioPath = `/audio/${lessonId}/${audioId}.mp3`;
+  // Get URL from asset service (handles CDN vs local)
+  const audioPath = getAudioUrl(lessonId, audioId);
   return playAudioFile(audioPath);
 }
 
@@ -213,6 +217,7 @@ export function stopAudio(): void {
 
 /**
  * Preload audio files for a lesson (call when lesson starts)
+ * Uses CDN hash-based URLs for deduplication benefits.
  *
  * @param lessonId - The lesson ID to preload
  * @param audioIds - Array of audio IDs to preload
@@ -220,8 +225,31 @@ export function stopAudio(): void {
 export function preloadLessonAudio(lessonId: string, audioIds: string[]): void {
   if (!browser) return;
 
+  // If CDN is enabled, preload unique hashes only
+  if (isCdnEnabled()) {
+    const state = getState();
+    const cdnBase = getCdnBase();
+
+    if (state.manifest) {
+      // Get unique hashes for this lesson (deduplication!)
+      const hashes = getLessonAudioHashes(lessonId);
+
+      for (const hash of hashes) {
+        const audioPath = `${cdnBase}/${state.languagePair}/audio/by-hash/${hash}.mp3`;
+        if (!audioCache.has(audioPath)) {
+          const audio = new Audio();
+          audio.preload = 'auto';
+          audio.src = audioPath;
+          audioCache.set(audioPath, audio);
+        }
+      }
+      return;
+    }
+  }
+
+  // Fallback: preload by individual audio IDs (local paths)
   for (const audioId of audioIds) {
-    const audioPath = `/audio/${lessonId}/${audioId}.mp3`;
+    const audioPath = getAudioUrl(lessonId, audioId);
     if (!audioCache.has(audioPath)) {
       const audio = new Audio();
       audio.preload = 'auto';
@@ -233,6 +261,7 @@ export function preloadLessonAudio(lessonId: string, audioIds: string[]): void {
 
 /**
  * Check if pre-generated audio exists for a step
+ * With CDN, checks the manifest; otherwise does a HEAD request.
  *
  * @param lessonId - The lesson ID
  * @param audioId - The audio ID
@@ -241,7 +270,17 @@ export function preloadLessonAudio(lessonId: string, audioIds: string[]): void {
 export async function hasPreGeneratedAudio(lessonId: string, audioId: string): Promise<boolean> {
   if (!browser) return false;
 
-  const audioPath = `/audio/${lessonId}/${audioId}.mp3`;
+  // If CDN is enabled, check manifest
+  if (isCdnEnabled()) {
+    const state = getState();
+    if (state.manifest) {
+      const key = `${lessonId}/${audioId}`;
+      return !!state.manifest.audioMap[key];
+    }
+  }
+
+  // Fallback: HEAD request to local path
+  const audioPath = getAudioUrl(lessonId, audioId);
 
   try {
     const response = await fetch(audioPath, { method: 'HEAD' });
