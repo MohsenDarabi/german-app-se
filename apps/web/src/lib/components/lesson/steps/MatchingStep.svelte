@@ -18,43 +18,19 @@
     return result;
   }
 
-  // Create mixed items from both columns
-  type MixedItem = {
-    id: string;
-    text: string;
-    type: 'german' | 'persian';
-    originalId: string;
-  };
-
-  function createMixedItems(): MixedItem[] {
-    const germanItems: MixedItem[] = step.items.map(item => ({
-      id: `de-${item.id}`,
-      text: item.text,
-      type: 'german' as const,
-      originalId: item.id
-    }));
-
-    const persianItems: MixedItem[] = step.matches.map(match => ({
-      id: `fa-${match.id}`,
-      text: match.text,
-      type: 'persian' as const,
-      originalId: match.id
-    }));
-
-    return shuffle([...germanItems, ...persianItems]);
-  }
-
   // State
-  let mixedItems = createMixedItems();
-  let selectedItem: MixedItem | null = null;
-  let matchedPairs: Map<string, string> = new Map(); // german originalId -> persian originalId
-  let matchedItemIds: Set<string> = new Set(); // All matched item IDs (for styling)
-  let lastMatchedIds: Set<string> = new Set(); // For animation
+  let shuffledGerman = shuffle([...step.items]);
+  let shuffledPersian = shuffle([...step.matches]);
+
+  let selectedGermanId: string | null = null;
+  let selectedPersianId: string | null = null;
+  let matchedPairs: Map<string, string> = new Map(); // german id -> persian id
+  let lastMatchedGerman: string | null = null;
+  let lastMatchedPersian: string | null = null;
   let isComplete = false;
 
   $: totalPairs = step.items.length;
   $: completedPairs = matchedPairs.size;
-  $: progressDots = Array(totalPairs).fill(false).map((_, i) => i < completedPairs);
 
   // Check if a pair is correct
   function isPairCorrect(germanId: string, persianId: string): boolean {
@@ -63,63 +39,84 @@
     );
   }
 
-  function handleItemClick(item: MixedItem) {
-    if (matchedItemIds.has(item.id) || isComplete) return;
+  function isGermanMatched(id: string): boolean {
+    return matchedPairs.has(id);
+  }
 
-    if (!selectedItem) {
-      // First selection
-      selectedItem = item;
-    } else if (selectedItem.id === item.id) {
-      // Deselect
-      selectedItem = null;
-    } else if (selectedItem.type === item.type) {
-      // Same type - switch selection
-      selectedItem = item;
+  function isPersianMatched(id: string): boolean {
+    return Array.from(matchedPairs.values()).includes(id);
+  }
+
+  function selectGerman(id: string) {
+    if (isGermanMatched(id) || isComplete) return;
+
+    if (selectedGermanId === id) {
+      selectedGermanId = null;
     } else {
-      // Different types - try to match
-      const germanItem = selectedItem.type === 'german' ? selectedItem : item;
-      const persianItem = selectedItem.type === 'persian' ? selectedItem : item;
-
-      // Check if correct
-      const correct = isPairCorrect(germanItem.originalId, persianItem.originalId);
-
-      if (correct) {
-        // Add to matched
-        matchedPairs.set(germanItem.originalId, persianItem.originalId);
-        matchedPairs = matchedPairs; // trigger reactivity
-
-        matchedItemIds.add(germanItem.id);
-        matchedItemIds.add(persianItem.id);
-        matchedItemIds = matchedItemIds; // trigger reactivity
-
-        // Animation tracking
-        lastMatchedIds = new Set([germanItem.id, persianItem.id]);
-        setTimeout(() => {
-          lastMatchedIds = new Set();
-        }, 600);
-
-        // Check if all matched
-        if (matchedPairs.size === totalPairs) {
-          isComplete = true;
-          dispatch('answer', {
-            correct: true,
-            allowContinue: true
-          });
-        }
-      } else {
-        // Wrong match - shake and reset selection
-        // Could add shake animation here
-      }
-
-      selectedItem = null;
+      selectedGermanId = id;
+      tryMatch();
     }
   }
 
-  function getItemState(item: MixedItem): string {
-    if (lastMatchedIds.has(item.id)) return 'just-matched';
-    if (matchedItemIds.has(item.id)) return 'matched';
-    if (selectedItem?.id === item.id) return 'selected';
-    if (selectedItem && selectedItem.type !== item.type && !matchedItemIds.has(item.id)) return 'selectable';
+  function selectPersian(id: string) {
+    if (isPersianMatched(id) || isComplete) return;
+
+    if (selectedPersianId === id) {
+      selectedPersianId = null;
+    } else {
+      selectedPersianId = id;
+      tryMatch();
+    }
+  }
+
+  function tryMatch() {
+    if (!selectedGermanId || !selectedPersianId) return;
+
+    const correct = isPairCorrect(selectedGermanId, selectedPersianId);
+
+    if (correct) {
+      // Store for animation
+      lastMatchedGerman = selectedGermanId;
+      lastMatchedPersian = selectedPersianId;
+
+      // Add to matched
+      matchedPairs.set(selectedGermanId, selectedPersianId);
+      matchedPairs = matchedPairs;
+
+      // Clear animation after delay
+      setTimeout(() => {
+        lastMatchedGerman = null;
+        lastMatchedPersian = null;
+      }, 500);
+
+      // Check completion
+      if (matchedPairs.size === totalPairs) {
+        isComplete = true;
+        dispatch('answer', {
+          correct: true,
+          allowContinue: true
+        });
+      }
+    }
+
+    // Reset selection
+    selectedGermanId = null;
+    selectedPersianId = null;
+  }
+
+  function getGermanState(id: string): string {
+    if (lastMatchedGerman === id) return 'just-matched';
+    if (isGermanMatched(id)) return 'matched';
+    if (selectedGermanId === id) return 'selected';
+    if (selectedPersianId && !isGermanMatched(id)) return 'selectable';
+    return 'default';
+  }
+
+  function getPersianState(id: string): string {
+    if (lastMatchedPersian === id) return 'just-matched';
+    if (isPersianMatched(id)) return 'matched';
+    if (selectedPersianId === id) return 'selected';
+    if (selectedGermanId && !isPersianMatched(id)) return 'selectable';
     return 'default';
   }
 </script>
@@ -131,37 +128,56 @@
 
   <!-- Progress dots -->
   <div class="progress-dots">
-    {#each progressDots as completed, i}
-      <span class="dot" class:completed></span>
+    {#each Array(totalPairs) as _, i}
+      <span class="dot" class:completed={i < completedPairs}></span>
     {/each}
   </div>
 
-  <!-- Mixed items grid -->
-  <div class="items-grid">
-    {#each mixedItems as item (item.id)}
-      {@const state = getItemState(item)}
-      <button
-        class="match-item"
-        class:german={item.type === 'german'}
-        class:persian={item.type === 'persian'}
-        class:selected={state === 'selected'}
-        class:selectable={state === 'selectable'}
-        class:matched={state === 'matched'}
-        class:just-matched={state === 'just-matched'}
-        on:click={() => handleItemClick(item)}
-        disabled={matchedItemIds.has(item.id)}
-      >
-        <span class="flag">{item.type === 'german' ? '🇩🇪' : '🇮🇷'}</span>
-        <span class="text" dir={item.type === 'persian' ? 'rtl' : 'ltr'}>{item.text}</span>
-      </button>
-    {/each}
+  <!-- Two columns -->
+  <div class="columns">
+    <!-- German column (left) -->
+    <div class="column">
+      {#each shuffledGerman as item (item.id)}
+        {@const state = getGermanState(item.id)}
+        <button
+          class="match-item"
+          class:selected={state === 'selected'}
+          class:selectable={state === 'selectable'}
+          class:matched={state === 'matched'}
+          class:just-matched={state === 'just-matched'}
+          on:click={() => selectGerman(item.id)}
+          disabled={isGermanMatched(item.id)}
+        >
+          {item.text}
+        </button>
+      {/each}
+    </div>
+
+    <!-- Persian column (right) -->
+    <div class="column">
+      {#each shuffledPersian as item (item.id)}
+        {@const state = getPersianState(item.id)}
+        <button
+          class="match-item persian"
+          class:selected={state === 'selected'}
+          class:selectable={state === 'selectable'}
+          class:matched={state === 'matched'}
+          class:just-matched={state === 'just-matched'}
+          on:click={() => selectPersian(item.id)}
+          disabled={isPersianMatched(item.id)}
+          dir="rtl"
+        >
+          {item.text}
+        </button>
+      {/each}
+    </div>
   </div>
 
   <!-- Completion message -->
   {#if isComplete}
     <div class="success-message">
       <span class="success-icon">✓</span>
-      <span dir="rtl">آفرین! همه جفت‌ها صحیح</span>
+      <span dir="rtl">آفرین!</span>
     </div>
   {/if}
 </div>
@@ -175,7 +191,7 @@
 
   .instruction {
     font-size: var(--text-base, 1rem);
-    color: var(--color-neutral-500, #78716c);
+    color: var(--color-neutral-400, #a69b8a);
     text-align: center;
     margin: 0;
   }
@@ -185,12 +201,11 @@
     display: flex;
     justify-content: center;
     gap: var(--space-2, 0.5rem);
-    padding: var(--space-2, 0.5rem) 0;
   }
 
   .dot {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background: var(--color-neutral-200, #e8e0d5);
     transition: all var(--transition-normal, 200ms);
@@ -198,34 +213,38 @@
 
   .dot.completed {
     background: var(--color-gem-400, #34d399);
-    transform: scale(1.1);
   }
 
-  /* Items grid - 2 columns */
-  .items-grid {
+  /* Two columns side by side */
+  .columns {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-3, 0.75rem);
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-4, 1rem);
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2, 0.5rem);
   }
 
   /* Match item */
   .match-item {
-    display: flex;
-    align-items: center;
-    gap: var(--space-2, 0.5rem);
-    padding: var(--space-3, 0.75rem);
-    min-height: 48px;
+    padding: var(--space-3, 0.75rem) var(--space-4, 1rem);
+    min-height: 44px;
     border: 2px solid var(--color-neutral-200, #e8e0d5);
     border-radius: var(--radius-lg, 0.75rem);
     background: var(--color-neutral-50, #fdfbf7);
+    font-size: var(--text-base, 1rem);
+    font-weight: var(--font-medium, 500);
+    color: var(--color-neutral-700, #44403c);
     cursor: pointer;
     transition: all var(--transition-normal, 200ms);
-    text-align: left;
+    text-align: center;
   }
 
   .match-item.persian {
-    text-align: right;
-    flex-direction: row-reverse;
+    text-align: center;
   }
 
   .match-item:hover:not(:disabled):not(.matched) {
@@ -234,69 +253,43 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   }
 
-  /* Selected state - lifted */
+  /* Selected - lifted with color */
   .match-item.selected {
     border-color: var(--color-primary-500, #0891b2);
     background: var(--color-primary-50, #ecfeff);
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(8, 145, 178, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(8, 145, 178, 0.2);
   }
 
-  /* Selectable state - waiting for match */
+  /* Selectable - pulsing hint */
   .match-item.selectable {
     border-color: var(--color-primary-300, #67e8f9);
-    animation: pulse-border 1s infinite;
+    background: var(--color-primary-50, #ecfeff);
   }
 
-  @keyframes pulse-border {
-    0%, 100% { border-color: var(--color-primary-300, #67e8f9); }
-    50% { border-color: var(--color-primary-500, #0891b2); }
-  }
-
-  /* Just matched - green glow animation */
+  /* Just matched - green flash */
   .match-item.just-matched {
     border-color: var(--color-gem-400, #34d399);
     background: var(--color-gem-50, #ecfdf5);
-    animation: match-glow 0.6s ease-out;
+    animation: match-pop 0.4s ease-out;
   }
 
-  @keyframes match-glow {
-    0% {
-      transform: scale(1.05);
-      box-shadow: 0 0 20px rgba(16, 185, 129, 0.5);
-    }
-    100% {
-      transform: scale(1);
-      box-shadow: none;
-    }
+  @keyframes match-pop {
+    0% { transform: scale(1.08); }
+    100% { transform: scale(1); }
   }
 
-  /* Matched state - muted */
+  /* Matched - muted */
   .match-item.matched {
-    border-color: var(--color-neutral-200, #e8e0d5);
-    background: var(--color-neutral-100, #f5f0e8);
-    opacity: 0.6;
+    border-color: var(--color-gem-200, #a7f3d0);
+    background: var(--color-gem-50, #ecfdf5);
+    color: var(--color-gem-600, #059669);
+    opacity: 0.7;
     cursor: default;
   }
 
   .match-item:disabled {
     cursor: default;
-  }
-
-  .flag {
-    font-size: 1rem;
-    flex-shrink: 0;
-  }
-
-  .text {
-    font-size: var(--text-base, 1rem);
-    font-weight: var(--font-medium, 500);
-    color: var(--color-neutral-700, #44403c);
-    flex: 1;
-  }
-
-  .match-item.matched .text {
-    color: var(--color-neutral-400, #a69b8a);
   }
 
   /* Success message */
@@ -305,54 +298,47 @@
     align-items: center;
     justify-content: center;
     gap: var(--space-2, 0.5rem);
-    padding: var(--space-3, 0.75rem);
+    padding: var(--space-2, 0.5rem);
     color: var(--color-gem-600, #059669);
     font-weight: var(--font-semibold, 600);
-    animation: fade-in 0.3s ease-out;
   }
 
   .success-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     background: var(--color-gem-500, #10b981);
     color: white;
     border-radius: 50%;
-    font-size: 0.875rem;
-  }
-
-  @keyframes fade-in {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    font-size: 0.75rem;
   }
 
   /* Dark Mode */
   :global([data-theme="dark"]) .match-item {
     background: var(--color-neutral-100, #292524);
     border-color: var(--color-neutral-200, #44403c);
-  }
-
-  :global([data-theme="dark"]) .match-item .text {
     color: var(--color-neutral-200, #e8e0d5);
   }
 
   :global([data-theme="dark"]) .match-item.selected {
-    background: rgba(8, 145, 178, 0.15);
+    background: rgba(8, 145, 178, 0.2);
+    border-color: var(--color-primary-400, #22d3ee);
+  }
+
+  :global([data-theme="dark"]) .match-item.selectable {
+    background: rgba(8, 145, 178, 0.1);
   }
 
   :global([data-theme="dark"]) .match-item.just-matched {
-    background: rgba(16, 185, 129, 0.15);
+    background: rgba(16, 185, 129, 0.2);
   }
 
   :global([data-theme="dark"]) .match-item.matched {
-    background: var(--color-neutral-100, #292524);
-    opacity: 0.5;
-  }
-
-  :global([data-theme="dark"]) .match-item.matched .text {
-    color: var(--color-neutral-400, #78716c);
+    background: rgba(16, 185, 129, 0.15);
+    border-color: var(--color-gem-600, #059669);
+    color: var(--color-gem-400, #34d399);
   }
 
   :global([data-theme="dark"]) .dot {
