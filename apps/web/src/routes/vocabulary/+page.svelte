@@ -6,8 +6,29 @@
   // Real-time query of vocabulary list
   let vocabList = liveQuery(() => db.vocab.toArray());
 
+  // Pagination - show limited cards per page for "same page" feel
+  const CARDS_PER_PAGE = 6; // Fits nicely on mobile without scrolling
+  let currentPage = 0;
+
   // Count stats
   $: totalWords = $vocabList?.length ?? 0;
+  $: totalPages = Math.ceil(totalWords / CARDS_PER_PAGE);
+  $: paginatedList = $vocabList?.slice(
+    currentPage * CARDS_PER_PAGE,
+    (currentPage + 1) * CARDS_PER_PAGE
+  ) ?? [];
+
+  function nextPage() {
+    if (currentPage < totalPages - 1) {
+      currentPage++;
+    }
+  }
+
+  function prevPage() {
+    if (currentPage > 0) {
+      currentPage--;
+    }
+  }
 </script>
 
 <svelte:head>
@@ -30,41 +51,66 @@
   </header>
 
   {#if $vocabList}
-    <div class="grid">
-      {#each $vocabList as item (item.id)}
-        <div class="card">
-          <div class="card-header">
-            <div class="word-info">
-              <h3 class="word">{item.word}</h3>
-              <span class="translation">{item.translation}</span>
+    {#if totalWords === 0}
+      <div class="empty-state">
+        <div class="empty-icon">📭</div>
+        <h2 class="empty-title">هنوز واژه‌ای ندارید</h2>
+        <p class="empty-desc">با شروع درس‌ها، واژه‌های جدید اینجا ذخیره می‌شوند.</p>
+        <a href="/" class="start-btn">
+          <span>🚀</span>
+          <span>شروع یادگیری</span>
+        </a>
+      </div>
+    {:else}
+      <div class="grid">
+        {#each paginatedList as item (item.id)}
+          <div class="card">
+            <div class="card-header">
+              <div class="word-info">
+                <h3 class="word">{item.word}</h3>
+                <span class="translation">{item.translation}</span>
+              </div>
+              <button
+                class="audio-btn"
+                on:click={() => playText(item.word)}
+                title="پخش تلفظ"
+              >
+                <span class="audio-icon">🔊</span>
+              </button>
             </div>
-            <button
-              class="audio-btn"
-              on:click={() => playText(item.word)}
-              title="پخش تلفظ"
-            >
-              <span class="audio-icon">🔊</span>
-            </button>
+            {#if item.example}
+              <div class="example-section">
+                <span class="example-label">مثال:</span>
+                <p class="example">{item.example}</p>
+              </div>
+            {/if}
           </div>
-          {#if item.example}
-            <div class="example-section">
-              <span class="example-label">مثال:</span>
-              <p class="example">{item.example}</p>
-            </div>
-          {/if}
+        {/each}
+      </div>
+
+      <!-- Pagination Controls -->
+      {#if totalPages > 1}
+        <div class="pagination">
+          <button
+            class="page-btn"
+            on:click={prevPage}
+            disabled={currentPage === 0}
+          >
+            <span>→</span>
+            <span>قبلی</span>
+          </button>
+          <span class="page-info">{currentPage + 1} / {totalPages}</span>
+          <button
+            class="page-btn"
+            on:click={nextPage}
+            disabled={currentPage >= totalPages - 1}
+          >
+            <span>بعدی</span>
+            <span>←</span>
+          </button>
         </div>
-      {:else}
-        <div class="empty-state">
-          <div class="empty-icon">📭</div>
-          <h2 class="empty-title">هنوز واژه‌ای ندارید</h2>
-          <p class="empty-desc">با شروع درس‌ها، واژه‌های جدید اینجا ذخیره می‌شوند.</p>
-          <a href="/" class="start-btn">
-            <span>🚀</span>
-            <span>شروع یادگیری</span>
-          </a>
-        </div>
-      {/each}
-    </div>
+      {/if}
+    {/if}
   {:else}
     <div class="loading-state">
       <div class="spinner"></div>
@@ -75,20 +121,25 @@
 
 <style>
   .vocab-page {
+    display: flex;
+    flex-direction: column;
     max-width: 900px;
     margin: 0 auto;
-    padding: var(--space-6, 1.5rem) var(--space-4, 1rem);
+    padding: var(--space-4, 1rem);
+    /* Fill available height */
+    height: 100%;
   }
 
-  /* Header */
+  /* Header - compact for mobile */
   .header {
-    margin-bottom: var(--space-8, 2rem);
+    flex-shrink: 0;
+    margin-bottom: var(--space-4, 1rem);
     text-align: center;
   }
 
   .header-icon {
-    font-size: 3rem;
-    margin-bottom: var(--space-3, 0.75rem);
+    font-size: 2rem;
+    margin-bottom: var(--space-2, 0.5rem);
     animation: bounce-subtle 0.6s ease-in-out;
   }
 
@@ -98,9 +149,9 @@
   }
 
   .title {
-    font-size: var(--text-2xl, 1.5rem);
+    font-size: var(--text-xl, 1.25rem);
     font-weight: var(--font-extrabold, 800);
-    margin: 0 0 var(--space-2, 0.5rem);
+    margin: 0 0 var(--space-1, 0.25rem);
     background: linear-gradient(135deg, var(--color-xp-500, #4f46e5), var(--color-primary-500, #0891b2));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -109,18 +160,18 @@
 
   .subtitle {
     color: var(--color-neutral-500, #78716c);
-    font-size: var(--text-base, 1rem);
+    font-size: var(--text-sm, 0.875rem);
     margin: 0;
   }
 
   .stats-badge {
     display: inline-flex;
     align-items: center;
-    gap: var(--space-2, 0.5rem);
-    margin-top: var(--space-4, 1rem);
-    padding: var(--space-2, 0.5rem) var(--space-4, 1rem);
+    gap: var(--space-1, 0.25rem);
+    margin-top: var(--space-2, 0.5rem);
+    padding: var(--space-1, 0.25rem) var(--space-3, 0.75rem);
     background: linear-gradient(135deg, var(--color-xp-100, #e0e7ff), var(--color-xp-50, #eef2ff));
-    border: 2px solid var(--color-xp-300, #a5b4fc);
+    border: 1px solid var(--color-xp-300, #a5b4fc);
     border-radius: var(--radius-full, 9999px);
   }
 
@@ -139,19 +190,21 @@
     color: var(--color-xp-500, #4f46e5);
   }
 
-  /* Grid */
+  /* Grid - fills available space */
   .grid {
     display: grid;
-    gap: var(--space-4, 1rem);
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--space-3, 0.75rem);
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    flex: 1;
+    align-content: start;
   }
 
-  /* Card */
+  /* Card - compact for mobile */
   .card {
     background: var(--glass-bg, rgba(253, 251, 247, 0.85));
-    padding: var(--space-4, 1rem);
+    padding: var(--space-3, 0.75rem);
     border: 1px solid var(--glass-border, rgba(212, 201, 185, 0.3));
-    border-radius: var(--radius-xl, 1rem);
+    border-radius: var(--radius-lg, 0.75rem);
     backdrop-filter: blur(var(--glass-blur, 12px));
     transition: all var(--transition-normal, 200ms);
   }
@@ -232,6 +285,51 @@
     color: var(--color-neutral-600, #57534e);
     font-style: italic;
     line-height: 1.6;
+  }
+
+  /* Pagination */
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-4, 1rem);
+    margin-top: var(--space-6, 1.5rem);
+    padding: var(--space-4, 1rem);
+  }
+
+  .page-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2, 0.5rem);
+    padding: var(--space-3, 0.75rem) var(--space-4, 1rem);
+    background: var(--glass-bg, rgba(253, 251, 247, 0.85));
+    border: 2px solid var(--color-primary-300, #67e8f9);
+    border-radius: var(--radius-full, 9999px);
+    color: var(--color-primary-600, #0e7490);
+    font-weight: var(--font-semibold, 600);
+    cursor: pointer;
+    transition: all var(--transition-normal, 200ms);
+    min-height: 48px;
+  }
+
+  .page-btn:hover:not(:disabled) {
+    background: var(--color-primary-100, #cffafe);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md, 0 4px 15px rgba(0, 0, 0, 0.08));
+  }
+
+  .page-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+
+  .page-info {
+    font-size: var(--text-lg, 1.125rem);
+    font-weight: var(--font-bold, 700);
+    color: var(--color-neutral-600, #57534e);
+    padding: var(--space-2, 0.5rem) var(--space-4, 1rem);
+    background: var(--color-neutral-100, #f5f0e8);
+    border-radius: var(--radius-full, 9999px);
   }
 
   /* Empty State */
@@ -352,25 +450,67 @@
   }
 
   :global([data-theme="dark"]) .empty-title {
-    color: var(--color-neutral-100, #f5f0e8);
+    color: #f5f0e8;
+  }
+
+  :global([data-theme="dark"]) .page-btn {
+    background: #292524;
+    border-color: #0891b2;
+    color: #22d3ee;
+  }
+
+  :global([data-theme="dark"]) .page-btn:hover:not(:disabled) {
+    background: rgba(8, 145, 178, 0.2);
+  }
+
+  :global([data-theme="dark"]) .page-info {
+    background: #44403c;
+    color: #d4c9b9;
   }
 
   /* Mobile Responsive */
   @media (max-width: 600px) {
     .vocab-page {
-      padding: var(--space-4, 1rem);
+      padding: var(--space-3, 0.75rem);
     }
 
     .grid {
       grid-template-columns: 1fr;
+      gap: var(--space-2, 0.5rem);
+    }
+
+    .header {
+      margin-bottom: var(--space-3, 0.75rem);
     }
 
     .header-icon {
-      font-size: 2.5rem;
+      font-size: 1.75rem;
     }
 
     .title {
-      font-size: var(--text-xl, 1.25rem);
+      font-size: var(--text-lg, 1.125rem);
+    }
+
+    .card {
+      padding: var(--space-2, 0.5rem) var(--space-3, 0.75rem);
+    }
+
+    .word {
+      font-size: var(--text-base, 1rem);
+    }
+
+    .translation {
+      font-size: var(--text-sm, 0.875rem);
+    }
+
+    .pagination {
+      margin-top: var(--space-4, 1rem);
+      padding: var(--space-2, 0.5rem);
+    }
+
+    .page-btn {
+      padding: var(--space-2, 0.5rem) var(--space-3, 0.75rem);
+      font-size: var(--text-sm, 0.875rem);
     }
   }
 </style>
