@@ -367,8 +367,8 @@
   }
 
   .question-card.correct-flash {
-    background: linear-gradient(135deg, rgba(234, 179, 8, 0.2), rgba(234, 179, 8, 0.1));
-    border-color: var(--color-success-400, #facc15);
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(16, 185, 129, 0.1));
+    border-color: var(--color-gem-400, #34d399);
   }
 
   .question-card.wrong-flash {

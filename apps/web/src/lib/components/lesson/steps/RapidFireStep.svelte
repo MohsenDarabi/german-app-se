@@ -619,8 +619,8 @@
   }
 
   .card.correct {
-    border-color: var(--color-success-400, #facc15);
-    background: linear-gradient(135deg, rgba(234, 179, 8, 0.15), rgba(234, 179, 8, 0.05));
+    border-color: var(--color-gem-400, #34d399);
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(16, 185, 129, 0.05));
   }
 
   .card.wrong {
@@ -653,9 +653,9 @@
   }
 
   .feedback.correct {
-    background: linear-gradient(135deg, rgba(234, 179, 8, 0.2), rgba(234, 179, 8, 0.1));
-    color: var(--color-success-700, #a16207);
-    border: 2px solid var(--color-success-400, #facc15);
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(16, 185, 129, 0.1));
+    color: var(--color-gem-700, #047857);
+    border: 2px solid var(--color-gem-400, #34d399);
   }
 
   .feedback.wrong {

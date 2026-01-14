@@ -293,9 +293,9 @@
   }
 
   .answer-area.correct {
-    border-color: var(--color-success-400, #facc15);
+    border-color: var(--color-gem-400, #34d399);
     border-style: solid;
-    background: linear-gradient(135deg, rgba(234, 179, 8, 0.15), rgba(234, 179, 8, 0.05));
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(16, 185, 129, 0.05));
   }
 
   .answer-area.wrong {
@@ -407,8 +407,8 @@
   .success-section {
     width: 100%;
     padding: var(--space-6, 1.5rem);
-    background: linear-gradient(135deg, rgba(234, 179, 8, 0.15), rgba(234, 179, 8, 0.05));
-    border: 2px solid var(--color-success-400, #facc15);
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(16, 185, 129, 0.05));
+    border: 2px solid var(--color-gem-400, #34d399);
     border-radius: var(--radius-lg, 0.75rem);
     text-align: center;
     display: flex;
@@ -426,7 +426,7 @@
   .correct-word {
     font-size: var(--text-2xl, 1.5rem);
     font-weight: var(--font-bold, 700);
-    color: var(--color-success-700, #a16207);
+    color: var(--color-gem-700, #047857);
   }
 
   .retry-section {
@@ -449,7 +449,7 @@
   }
 
   .feedback-text.success {
-    color: var(--color-success-600, #ca8a04);
+    color: var(--color-gem-600, #059669);
   }
 
   .feedback-text.error {
@@ -503,6 +503,6 @@
   }
 
   :global([data-theme="dark"]) .correct-word {
-    color: var(--color-success-400, #facc15);
+    color: var(--color-gem-400, #34d399);
   }
 </style>

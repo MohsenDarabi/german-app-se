@@ -360,7 +360,7 @@
   }
 
   .dot.correct {
-    background: var(--color-success-500, #eab308);
+    background: var(--color-gem-500, #10b981);
   }
 
   .dot.wrong {
@@ -422,8 +422,8 @@
   }
 
   .option-btn.correct {
-    border-color: var(--color-success-400, #facc15);
-    background: linear-gradient(135deg, rgba(234, 179, 8, 0.15), rgba(234, 179, 8, 0.05));
+    border-color: var(--color-gem-400, #34d399);
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(16, 185, 129, 0.05));
   }
 
   .option-btn.wrong {
@@ -450,7 +450,7 @@
   }
 
   .option-btn.correct .option-letter {
-    background: var(--color-success-500, #eab308);
+    background: var(--color-gem-500, #10b981);
     color: white;
   }
 
@@ -472,8 +472,8 @@
   }
 
   .question-feedback.success {
-    background: linear-gradient(135deg, rgba(234, 179, 8, 0.15), rgba(234, 179, 8, 0.05));
-    border: 1px solid var(--color-success-400, #facc15);
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(16, 185, 129, 0.05));
+    border: 1px solid var(--color-gem-400, #34d399);
   }
 
   .question-feedback.error {
@@ -487,7 +487,7 @@
   }
 
   .question-feedback.success .feedback-text {
-    color: var(--color-success-700, #a16207);
+    color: var(--color-gem-700, #047857);
   }
 
   .question-feedback.error .feedback-text {

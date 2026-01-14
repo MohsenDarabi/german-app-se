@@ -198,8 +198,8 @@
   }
 
   .filled-blank.correct {
-    background: var(--color-success-100, #fef9c3);
-    color: var(--color-success-700, #a16207);
+    background: var(--color-gem-100, #d1fae5);
+    color: var(--color-gem-700, #047857);
   }
 
   .filled-blank.wrong {
@@ -291,7 +291,7 @@
   }
 
   .feedback-text.success {
-    color: var(--color-success-600, #ca8a04);
+    color: var(--color-gem-600, #059669);
   }
 
   .retry-section .feedback-text {

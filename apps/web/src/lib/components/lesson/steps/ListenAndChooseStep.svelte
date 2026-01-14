@@ -270,9 +270,9 @@
   }
 
   .option-btn.correct {
-    border-color: var(--color-success-400, #facc15);
-    background: linear-gradient(135deg, rgba(234, 179, 8, 0.15), rgba(234, 179, 8, 0.05));
-    color: var(--color-success-700, #a16207);
+    border-color: var(--color-gem-400, #34d399);
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(16, 185, 129, 0.05));
+    color: var(--color-gem-700, #047857);
     font-weight: var(--font-semibold, 600);
   }
 
@@ -298,8 +298,8 @@
   /* Translation */
   .translation-box {
     padding: var(--space-4, 1rem) var(--space-4, 1rem);
-    background: linear-gradient(135deg, rgba(234, 179, 8, 0.15), rgba(234, 179, 8, 0.05));
-    border: 2px solid var(--color-success-400, #facc15);
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(16, 185, 129, 0.05));
+    border: 2px solid var(--color-gem-400, #34d399);
     border-radius: var(--radius-lg, 0.75rem);
     display: flex;
     gap: var(--space-2, 0.5rem);
@@ -307,11 +307,11 @@
 
   .translation-label {
     font-weight: var(--font-semibold, 600);
-    color: var(--color-success-700, #a16207);
+    color: var(--color-gem-700, #047857);
   }
 
   .translation-text {
-    color: var(--color-success-800, #854d0e);
+    color: var(--color-gem-800, #065f46);
   }
 
   /* Retry */
@@ -362,6 +362,6 @@
   }
 
   :global([data-theme="dark"]) .translation-text {
-    color: var(--color-success-300, #fde047);
+    color: var(--color-gem-300, #6ee7b7);
   }
 </style>

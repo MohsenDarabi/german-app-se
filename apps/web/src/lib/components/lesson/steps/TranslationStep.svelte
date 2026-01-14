@@ -194,8 +194,8 @@
   }
 
   .answer-area.correct {
-    background: linear-gradient(135deg, rgba(234, 179, 8, 0.1), rgba(234, 179, 8, 0.05));
-    border-color: var(--color-success-500, #eab308);
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(16, 185, 129, 0.05));
+    border-color: var(--color-gem-500, #10b981);
     border-style: solid;
   }
 
@@ -241,9 +241,9 @@
   }
 
   .filled-blank.correct-word {
-    background: linear-gradient(135deg, var(--color-success-100, #fef9c3), var(--color-success-50, #fefce8));
-    border-color: var(--color-success-400, #facc15);
-    color: var(--color-success-700, #a16207);
+    background: linear-gradient(135deg, var(--color-gem-100, #d1fae5), var(--color-gem-50, #ecfdf5));
+    border-color: var(--color-gem-400, #34d399);
+    color: var(--color-gem-700, #047857);
   }
 
   .filled-blank.wrong-word {
@@ -313,8 +313,8 @@
 
   .success-section {
     padding: var(--space-6, 1.5rem);
-    background: linear-gradient(135deg, rgba(234, 179, 8, 0.15), rgba(234, 179, 8, 0.05));
-    border: 2px solid var(--color-success-400, #facc15);
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(16, 185, 129, 0.05));
+    border: 2px solid var(--color-gem-400, #34d399);
     border-radius: var(--radius-lg, 0.75rem);
     text-align: center;
   }
@@ -344,7 +344,7 @@
   }
 
   .feedback-text.success {
-    color: var(--color-success-600, #ca8a04);
+    color: var(--color-gem-600, #059669);
     font-size: var(--text-lg, 1.125rem);
   }
 
