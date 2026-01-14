@@ -1,0 +1,645 @@
+{
+  "id": "A1-M06-L03",
+  "languagePair": "de-fa",
+  "source": {
+    "code": "de",
+    "name": "Deutsch"
+  },
+  "target": {
+    "code": "fa",
+    "name": "فارسی"
+  },
+  "title": {
+    "de": "Monate und Jahreszeiten",
+    "fa": "ماه‌ها و فصل‌ها"
+  },
+  "description": "یاد بگیرید ماه‌ها و فصل‌های سال را به آلمانی بگویید",
+  "level": "A1",
+  "module": 6,
+  "lessonNumber": 3,
+  "totalSteps": 26,
+  "estimatedMinutes": 15,
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "ماه‌های سال",
+      "content": "در آلمانی همه ماه‌ها **مذکر** هستند (der):\n\n• **Januar** = ژانویه\n• **Februar** = فوریه\n• **März** = مارس\n• **April** = آوریل\n• **Mai** = مه\n• **Juni** = ژوئن\n\n📝 **توجه:** شبیه انگلیسی هستند!",
+      "examples": [
+        {
+          "de": "Wir haben Januar.",
+          "fa": "ماه ژانویه است."
+        },
+        {
+          "de": "Im Januar ist es kalt.",
+          "fa": "در ژانویه سرد است."
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": {
+        "de": "der Januar",
+        "fa": "ژانویه"
+      },
+      "example": {
+        "text": {
+          "de": "Im Januar beginnt das Jahr.",
+          "fa": "سال در ژانویه شروع می‌شود."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": {
+        "de": "der Februar",
+        "fa": "فوریه"
+      },
+      "example": {
+        "text": {
+          "de": "Februar ist kurz.",
+          "fa": "فوریه کوتاه است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": {
+        "de": "der März",
+        "fa": "مارس"
+      },
+      "example": {
+        "text": {
+          "de": "Im März beginnt der Frühling.",
+          "fa": "بهار در مارس شروع می‌شود."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": {
+        "de": "der April",
+        "fa": "آوریل"
+      },
+      "example": {
+        "text": {
+          "de": "April, April!",
+          "fa": "دروغ آوریل!"
+        }
+      }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "ماه چندم؟",
+      "instruction": "این ماه چندمین ماه سال است؟",
+      "questions": [
+        {
+          "prompt": "Januar",
+          "left": "ماه ۱",
+          "right": "ماه ۲",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "März",
+          "left": "ماه ۲",
+          "right": "ماه ۳",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Mai",
+          "left": "ماه ۵",
+          "right": "ماه ۶",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Juni",
+          "left": "ماه ۵",
+          "right": "ماه ۶",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Februar",
+          "left": "ماه ۲",
+          "right": "ماه ۱",
+          "correctSide": "left"
+        }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s6",
+      "title": "ماه‌های نیمه دوم",
+      "content": "ادامه ماه‌ها:\n\n• **Juli** = ژوئیه\n• **August** = آگوست\n• **September** = سپتامبر\n• **Oktober** = اکتبر\n• **November** = نوامبر\n• **Dezember** = دسامبر\n\n📅 **تقویم آلمانی:** هفته از دوشنبه شروع می‌شود!",
+      "examples": [
+        {
+          "de": "Im Dezember ist Weihnachten.",
+          "fa": "در دسامبر کریسمس است."
+        },
+        {
+          "de": "August ist heiß.",
+          "fa": "آگوست گرم است."
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": {
+        "de": "der Juli",
+        "fa": "ژوئیه"
+      },
+      "example": {
+        "text": {
+          "de": "Im Juli haben wir Urlaub.",
+          "fa": "در ژوئیه تعطیلات داریم."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": {
+        "de": "der Dezember",
+        "fa": "دسامبر"
+      },
+      "example": {
+        "text": {
+          "de": "Im Dezember schneit es.",
+          "fa": "در دسامبر برف می‌بارد."
+        }
+      }
+    },
+    {
+      "type": "dialog",
+      "id": "s9",
+      "title": "مکالمه: تولد",
+      "context": "لیزا و تام درباره تولد صحبت می‌کنند",
+      "lines": [
+        {
+          "speaker": "Lisa",
+          "text": {
+            "de": "Wann hast du Geburtstag?",
+            "fa": "کی تولدت است؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Im Mai. Und du?",
+            "fa": "در مه. و تو؟"
+          }
+        },
+        {
+          "speaker": "Lisa",
+          "text": {
+            "de": "Ich habe im November Geburtstag.",
+            "fa": "تولد من در نوامبر است."
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Oh, im Herbst!",
+            "fa": "اوه، در پاییز!"
+          }
+        },
+        {
+          "speaker": "Lisa",
+          "text": {
+            "de": "Ja, ich liebe den Herbst.",
+            "fa": "بله، عاشق پاییزم."
+          }
+        }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s10",
+      "title": "im برای ماه‌ها",
+      "content": "برای گفتن «در ماه...» از **im** استفاده کنید:\n\n• **im** Januar = در ژانویه\n• **im** Sommer = در تابستان\n\n📝 **توجه:**\nim = in + dem (حرف اضافه + حرف تعریف)\n\nam = روزها\nim = ماه‌ها و فصل‌ها",
+      "examples": [
+        {
+          "de": "Im August fahre ich nach Berlin.",
+          "fa": "در آگوست به برلین می‌روم."
+        },
+        {
+          "de": "Im Winter ist es kalt.",
+          "fa": "در زمستان سرد است."
+        }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s11",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} Juli haben wir Urlaub.",
+      "options": [
+        "Im",
+        "Am",
+        "Um",
+        "An"
+      ],
+      "correctAnswers": [
+        0
+      ],
+      "feedback": {
+        "explanation": "**Im** Juli = در ژوئیه (im برای ماه‌ها)"
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s12",
+      "word": {
+        "de": "der Frühling",
+        "fa": "بهار"
+      },
+      "example": {
+        "text": {
+          "de": "Im Frühling blühen die Blumen.",
+          "fa": "در بهار گل‌ها شکوفه می‌زنند."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s13",
+      "word": {
+        "de": "der Sommer",
+        "fa": "تابستان"
+      },
+      "example": {
+        "text": {
+          "de": "Im Sommer ist es heiß.",
+          "fa": "در تابستان گرم است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s14",
+      "word": {
+        "de": "der Herbst",
+        "fa": "پاییز"
+      },
+      "example": {
+        "text": {
+          "de": "Im Herbst fallen die Blätter.",
+          "fa": "در پاییز برگ‌ها می‌ریزند."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s15",
+      "word": {
+        "de": "der Winter",
+        "fa": "زمستان"
+      },
+      "example": {
+        "text": {
+          "de": "Im Winter schneit es.",
+          "fa": "در زمستان برف می‌بارد."
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s16",
+      "title": "فصل‌ها و ماه‌ها",
+      "content": "**فصل‌ها همه مذکر (der) هستند:**\n\n🌸 **Frühling** (بهار): März, April, Mai\n☀️ **Sommer** (تابستان): Juni, Juli, August\n🍂 **Herbst** (پاییز): September, Oktober, November\n❄️ **Winter** (زمستان): Dezember, Januar, Februar",
+      "examples": [
+        {
+          "de": "Der Sommer ist meine Lieblingsjahreszeit.",
+          "fa": "تابستان فصل مورد علاقه‌ام است."
+        },
+        {
+          "de": "Im Winter fahren wir Ski.",
+          "fa": "زمستان اسکی می‌رویم."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "ماه در کدام فصل؟",
+      "instruction": "این ماه در کدام فصل است؟",
+      "questions": [
+        {
+          "prompt": "Juli",
+          "left": "Sommer",
+          "right": "Winter",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Januar",
+          "left": "Herbst",
+          "right": "Winter",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "April",
+          "left": "Frühling",
+          "right": "Sommer",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Oktober",
+          "left": "Sommer",
+          "right": "Herbst",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "März",
+          "left": "Frühling",
+          "right": "Winter",
+          "correctSide": "left"
+        }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "s17",
+      "title": "مکالمه: فصل مورد علاقه",
+      "context": "الکس و الی درباره فصل‌ها صحبت می‌کنند",
+      "lines": [
+        {
+          "speaker": "Alex",
+          "text": {
+            "de": "Was ist deine Lieblingsjahreszeit?",
+            "fa": "فصل مورد علاقه‌ات چیه؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Ich mag den Frühling.",
+            "fa": "بهار رو دوست دارم."
+          }
+        },
+        {
+          "speaker": "Alex",
+          "text": {
+            "de": "Warum?",
+            "fa": "چرا؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Es ist nicht zu heiß und nicht zu kalt.",
+            "fa": "نه خیلی گرمه نه خیلی سرد."
+          }
+        },
+        {
+          "speaker": "Alex",
+          "text": {
+            "de": "Ich liebe den Sommer!",
+            "fa": "من عاشق تابستانم!"
+          }
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "s18",
+      "instruction": "فصل را با توضیح جفت کنید",
+      "items": [
+        {
+          "id": "i1",
+          "text": "Sommer"
+        },
+        {
+          "id": "i2",
+          "text": "Winter"
+        },
+        {
+          "id": "i3",
+          "text": "Herbst"
+        }
+      ],
+      "matches": [
+        {
+          "id": "m1",
+          "text": "heiß (گرم)"
+        },
+        {
+          "id": "m2",
+          "text": "kalt (سرد)"
+        },
+        {
+          "id": "m3",
+          "text": "Blätter fallen (برگ می‌ریزد)"
+        }
+      ],
+      "correctPairs": [
+        [
+          "i1",
+          "m1"
+        ],
+        [
+          "i2",
+          "m2"
+        ],
+        [
+          "i3",
+          "m3"
+        ]
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s19",
+      "question": "کدام حرف اضافه برای ماه‌ها استفاده می‌شود؟",
+      "options": [
+        "am",
+        "im",
+        "um",
+        "an"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": {
+        "correct": "آفرین! im برای ماه‌ها و فصل‌ها استفاده می‌شود",
+        "incorrect": "im = in + dem برای ماه‌ها و فصل‌ها (am برای روزها)"
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s20",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} Frühling blühen die Blumen.",
+      "options": [
+        "Im",
+        "Am",
+        "Um",
+        "An"
+      ],
+      "correctAnswers": [
+        0
+      ],
+      "feedback": {
+        "explanation": "**Im** Frühling = در بهار (im برای فصل‌ها)"
+      }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g3",
+      "title": "مرور کلی",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        {
+          "prompt": "بهار =",
+          "left": "Frühling",
+          "right": "Herbst",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "پاییز =",
+          "left": "Frühling",
+          "right": "Herbst",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "تابستان =",
+          "left": "Sommer",
+          "right": "Winter",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "زمستان =",
+          "left": "Sommer",
+          "right": "Winter",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "ژوئیه =",
+          "left": "Juni",
+          "right": "Juli",
+          "correctSide": "right"
+        }
+      ]
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        {
+          "de": "der Januar",
+          "fa": "ژانویه"
+        },
+        {
+          "de": "der Februar",
+          "fa": "فوریه"
+        },
+        {
+          "de": "der März",
+          "fa": "مارس"
+        },
+        {
+          "de": "der April",
+          "fa": "آوریل"
+        },
+        {
+          "de": "der Juli",
+          "fa": "ژوئیه"
+        },
+        {
+          "de": "der Dezember",
+          "fa": "دسامبر"
+        },
+        {
+          "de": "der Frühling",
+          "fa": "بهار"
+        },
+        {
+          "de": "der Sommer",
+          "fa": "تابستان"
+        },
+        {
+          "de": "der Herbst",
+          "fa": "پاییز"
+        },
+        {
+          "de": "der Winter",
+          "fa": "زمستان"
+        }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما ماه‌ها و فصل‌ها را یاد گرفتید:\n\n🌸 **Frühling:** März, April, Mai\n☀️ **Sommer:** Juni, Juli, August\n🍂 **Herbst:** September, Oktober, November\n❄️ **Winter:** Dezember, Januar, Februar\n\n📝 **نکات مهم:**\n• همه ماه‌ها و فصل‌ها مذکر (der) هستند\n• برای ماه‌ها و فصل‌ها از **im** استفاده کنید",
+      "xpEarned": 50,
+      "nextLessonId": "A1-M06-L04",
+      "vocabularyLearned": [
+        {
+          "word": {
+            "de": "der Januar",
+            "fa": "ژانویه"
+          }
+        },
+        {
+          "word": {
+            "de": "der Februar",
+            "fa": "فوریه"
+          }
+        },
+        {
+          "word": {
+            "de": "der März",
+            "fa": "مارس"
+          }
+        },
+        {
+          "word": {
+            "de": "der April",
+            "fa": "آوریل"
+          }
+        },
+        {
+          "word": {
+            "de": "der Juli",
+            "fa": "ژوئیه"
+          }
+        },
+        {
+          "word": {
+            "de": "der Dezember",
+            "fa": "دسامبر"
+          }
+        },
+        {
+          "word": {
+            "de": "der Frühling",
+            "fa": "بهار"
+          }
+        },
+        {
+          "word": {
+            "de": "der Sommer",
+            "fa": "تابستان"
+          }
+        },
+        {
+          "word": {
+            "de": "der Herbst",
+            "fa": "پاییز"
+          }
+        },
+        {
+          "word": {
+            "de": "der Winter",
+            "fa": "زمستان"
+          }
+        }
+      ]
+    }
+  ]
+}

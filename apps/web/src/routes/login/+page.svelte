@@ -1,29 +1,63 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
   import { supabase } from '$lib/supabase/client';
   import { goto } from '$app/navigation';
+  import { page } from '$app/stores';
+  import { getOAuthRedirectUrl, initDeepLinkHandler } from '$lib/services/deepLinkHandler';
 
   let email = '';
   let password = '';
   let error = '';
   let isLoading = false;
 
+  onMount(() => {
+    // Initialize deep link handler for OAuth callbacks
+    initDeepLinkHandler();
+
+    // Check for error in URL params
+    const urlError = $page.url.searchParams.get('error');
+    if (urlError) {
+      error = urlError === 'auth_failed' ? 'خطا در احراز هویت' : urlError;
+    }
+  });
+
   async function handleGoogleSignIn() {
     try {
       isLoading = true;
       error = '';
 
-      const { error: signInError } = await supabase.auth.signInWithOAuth({
+      const redirectUrl = getOAuthRedirectUrl();
+      console.log('[Login] OAuth redirect URL:', redirectUrl);
+
+      // Get the OAuth URL from Supabase
+      const { data, error: signInError } = await supabase.auth.signInWithOAuth({
         provider: 'google',
         options: {
-          redirectTo: `${window.location.origin}/auth/callback`,
+          redirectTo: redirectUrl,
           queryParams: {
-            prompt: 'select_account' // Force Google account picker
-          }
+            prompt: 'select_account'
+          },
+          skipBrowserRedirect: true // Don't auto-redirect, we'll handle it
         }
       });
 
       if (signInError) {
         error = signInError.message;
+        return;
+      }
+
+      if (data?.url) {
+        // Open OAuth in external browser (required by Google)
+        const { Capacitor } = await import('@capacitor/core');
+
+        if (Capacitor.isNativePlatform()) {
+          const { Browser } = await import('@capacitor/browser');
+          console.log('[Login] Opening OAuth in external browser:', data.url);
+          await Browser.open({ url: data.url });
+        } else {
+          // Web: redirect normally
+          window.location.href = data.url;
+        }
       }
     } catch (err: any) {
       error = 'خطا در ورود با گوگل';

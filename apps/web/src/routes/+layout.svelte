@@ -1,67 +1,69 @@
 <script lang="ts">
   import { onMount, onDestroy } from 'svelte';
-  import NavBar from './../lib/components/layout/NavBar.svelte';
-  import AppFooter from './../lib/components/layout/AppFooter.svelte';
+  import NavBar from '$lib/components/layout/NavBar.svelte';
+  import AppFooter from '$lib/components/layout/AppFooter.svelte';
+  import AuthGuard from '$lib/components/auth/AuthGuard.svelte';
+  import { auth, currentUser, isAuthenticated } from '$lib/stores/auth';
   import { syncEngine } from '$lib/services/syncEngine';
-  import { supabase } from '$lib/supabase/client';
   import { init as initAssetService } from '$lib/services/assetService';
+  import { initDeepLinkHandler } from '$lib/services/deepLinkHandler';
 
-  export let data;
+  export let data: { user?: { email: string; name: string } | null } = {};
 
-  // Store auth listener for cleanup
-  let authSubscription: { unsubscribe: () => void } | null = null;
+  // Store unsubscribe function
+  let unsubscribeAuth: (() => void) | null = null;
 
-  // Initialize services when app loads
   onMount(() => {
-    // Initialize asset service in background (non-blocking)
-    // App will use local fallbacks until CDN manifest loads
-    initAssetService('de-fa');
+    // Initialize deep link handler for OAuth callbacks
+    initDeepLinkHandler();
 
-    // Initialize auth/sync asynchronously
-    (async () => {
-      // Initial sync on load if user is authenticated
-      const { data: { session } } = await supabase.auth.getSession();
-      if (session) {
-        console.log('[App] User authenticated, initializing sync...');
-        await syncEngine.sync();
-        syncEngine.startBackgroundSync();
-      } else {
-        console.log('[App] No authenticated user, sync disabled');
-      }
-    })();
+    // Initialize asset service
+    try {
+      initAssetService('de-fa');
+    } catch (e) {
+      console.warn('[App] Asset service init failed:', e);
+    }
 
-    // Listen for auth state changes
-    const { data: authListener } = supabase.auth.onAuthStateChange(async (event, session) => {
-      console.log('[App] Auth state changed:', event);
-
-      if (event === 'SIGNED_IN' && session) {
-        console.log('[App] User signed in, starting sync...');
-        await syncEngine.sync();
-        syncEngine.startBackgroundSync();
-      } else if (event === 'SIGNED_OUT') {
-        console.log('[App] User signed out, stopping sync...');
-        syncEngine.stopBackgroundSync();
+    // Subscribe to auth changes for sync engine
+    unsubscribeAuth = auth.subscribe(async (state) => {
+      if (state.isInitialized && !state.isLoading) {
+        if (state.user) {
+          try {
+            await syncEngine.sync();
+            syncEngine.startBackgroundSync();
+          } catch (e) {
+            console.warn('[App] Sync failed:', e);
+          }
+        } else {
+          syncEngine.stopBackgroundSync();
+        }
       }
     });
-    authSubscription = authListener.subscription;
   });
 
-  // Cleanup on component destroy
   onDestroy(() => {
-    authSubscription?.unsubscribe();
+    unsubscribeAuth?.();
     syncEngine.stopBackgroundSync();
   });
+
+  // Get user info for NavBar
+  $: userInfo = $currentUser ? {
+    email: $currentUser.email ?? '',
+    name: $currentUser.user_metadata?.name ?? $currentUser.email ?? ''
+  } : null;
 </script>
 
-<div class="app-shell">
-  <NavBar user={data.user} />
+<AuthGuard>
+  <div class="app-shell">
+    <NavBar user={userInfo} />
 
-  <main class="app-main">
-    <slot />
-  </main>
+    <main class="app-main">
+      <slot />
+    </main>
 
-  <AppFooter />
-</div>
+    <AppFooter />
+  </div>
+</AuthGuard>
 
 <style>
   .app-shell {

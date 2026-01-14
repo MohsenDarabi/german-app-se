@@ -1,0 +1,580 @@
+{
+  "id": "A1-M02-L02",
+  "languagePair": "de-fa",
+  "source": {
+    "code": "de",
+    "name": "Deutsch"
+  },
+  "target": {
+    "code": "fa",
+    "name": "فارسی"
+  },
+  "title": {
+    "de": "Regelmäßige Verben",
+    "fa": "فعل‌های باقاعده"
+  },
+  "description": "یاد بگیرید چطور فعل‌های باقاعده آلمانی را صرف کنید.",
+  "level": "A1",
+  "module": 2,
+  "lessonNumber": 2,
+  "totalSteps": 25,
+  "estimatedMinutes": 15,
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "فعل‌های باقاعده چیست؟",
+      "content": "فعل‌های باقاعده از یک الگوی ثابت پیروی می‌کنند:\n\n**ریشه + پسوند**\n\nبرای پیدا کردن ریشه، **-en** را از مصدر حذف کنید:\n\nmach**en** → mach (ریشه)\nwohn**en** → wohn (ریشه)",
+      "examples": [
+        {
+          "de": "machen",
+          "fa": "انجام دادن"
+        },
+        {
+          "de": "wohnen",
+          "fa": "زندگی کردن"
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": {
+        "de": "machen",
+        "fa": "انجام دادن / درست کردن"
+      },
+      "example": {
+        "text": {
+          "de": "Was machst du?",
+          "fa": "چه کار می‌کنی؟"
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": {
+        "de": "ich mache",
+        "fa": "من انجام می‌دهم"
+      },
+      "example": {
+        "text": {
+          "de": "Ich mache Kaffee.",
+          "fa": "من قهوه درست می‌کنم."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": {
+        "de": "du machst",
+        "fa": "تو انجام می‌دهی"
+      },
+      "example": {
+        "text": {
+          "de": "Was machst du heute?",
+          "fa": "امروز چه کار می‌کنی؟"
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": {
+        "de": "er macht",
+        "fa": "او (مرد) انجام می‌دهد"
+      },
+      "example": {
+        "text": {
+          "de": "Er macht Sport.",
+          "fa": "او ورزش می‌کند."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s5b",
+      "word": {
+        "de": "sie macht",
+        "fa": "او (زن) انجام می‌دهد"
+      },
+      "example": {
+        "text": {
+          "de": "Sie macht Musik.",
+          "fa": "او موسیقی می‌سازد."
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s6",
+      "title": "الگوی صرف فعل باقاعده",
+      "content": "| ضمیر | پسوند | مثال (machen) |\n|-----|-----|-----|\n| ich | **-e** | mach**e** |\n| du | **-st** | mach**st** |\n| er/sie/es | **-t** | mach**t** |\n\nاین الگو برای همه فعل‌های باقاعده یکسان است!",
+      "examples": [
+        {
+          "de": "Ich mache.",
+          "fa": "من انجام می‌دهم."
+        },
+        {
+          "de": "Du machst.",
+          "fa": "تو انجام می‌دهی."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "machen - تمرین سریع",
+      "instruction": "فرم درست را انتخاب کنید",
+      "questions": [
+        {
+          "prompt": "ich ___",
+          "left": "mache",
+          "right": "machst",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "du ___",
+          "left": "mache",
+          "right": "machst",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "er ___",
+          "left": "macht",
+          "right": "mache",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "sie ___",
+          "left": "machst",
+          "right": "macht",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "___ Kaffee.",
+          "left": "Ich mache",
+          "right": "Ich machst",
+          "correctSide": "left"
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": {
+        "de": "spielen",
+        "fa": "بازی کردن"
+      },
+      "example": {
+        "text": {
+          "de": "Spielst du Fußball?",
+          "fa": "فوتبال بازی می‌کنی؟"
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": {
+        "de": "lernen",
+        "fa": "یاد گرفتن"
+      },
+      "example": {
+        "text": {
+          "de": "Ich lerne Deutsch.",
+          "fa": "من آلمانی یاد می‌گیرم."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": {
+        "de": "arbeiten",
+        "fa": "کار کردن"
+      },
+      "example": {
+        "text": {
+          "de": "Er arbeitet viel.",
+          "fa": "او زیاد کار می‌کند."
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s10",
+      "title": "استثنا: فعل‌های با ریشه t/d",
+      "content": "وقتی ریشه فعل به **t** یا **d** ختم می‌شود، یک **e** اضافه می‌کنیم:\n\narbeit**en** → arbeit (ریشه به t ختم شده)\n\n| ضمیر | arbeiten |\n|-----|-----|\n| ich | arbeit**e** |\n| du | arbeit**e**st |\n| er/sie/es | arbeit**e**t |",
+      "examples": [
+        {
+          "de": "Du arbeitest.",
+          "fa": "تو کار می‌کنی."
+        },
+        {
+          "de": "Er arbeitet.",
+          "fa": "او کار می‌کند."
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "s11",
+      "instruction": "فعل‌ها را با ضمیر جفت کنید",
+      "items": [
+        {
+          "id": "i1",
+          "text": "ich"
+        },
+        {
+          "id": "i2",
+          "text": "du"
+        },
+        {
+          "id": "i3",
+          "text": "er"
+        },
+        {
+          "id": "i4",
+          "text": "sie"
+        }
+      ],
+      "matches": [
+        {
+          "id": "m1",
+          "text": "spiele"
+        },
+        {
+          "id": "m2",
+          "text": "spielst"
+        },
+        {
+          "id": "m3",
+          "text": "spielt (مرد)"
+        },
+        {
+          "id": "m4",
+          "text": "spielt (زن)"
+        }
+      ],
+      "correctPairs": [
+        [
+          "i1",
+          "m1"
+        ],
+        [
+          "i2",
+          "m2"
+        ],
+        [
+          "i3",
+          "m3"
+        ],
+        [
+          "i4",
+          "m4"
+        ]
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "s12",
+      "title": "مکالمه: چه کار می‌کنی؟",
+      "context": "الی و تام درباره فعالیت‌هایشان صحبت می‌کنند",
+      "lines": [
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Hallo Tom! Was machst du?",
+            "fa": "سلام تام! چه کار می‌کنی؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Ich lerne Deutsch. Und du?",
+            "fa": "دارم آلمانی یاد می‌گیرم. تو چی؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Ich spiele Gitarre.",
+            "fa": "من گیتار می‌زنم."
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Cool! Spielst du jeden Tag?",
+            "fa": "باحال! هر روز می‌زنی؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Ja, ich spiele jeden Tag.",
+            "fa": "آره، هر روز می‌زنم."
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Und arbeitest du auch?",
+            "fa": "کار هم می‌کنی؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Ja, ich arbeite im Café.",
+            "fa": "آره، در کافه کار می‌کنم."
+          }
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s13",
+      "question": "کدام گزینه درست است؟ «Du ___ Deutsch.»",
+      "options": [
+        "lerne",
+        "lernst",
+        "lernt",
+        "lernen"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": {
+        "correct": "آفرین! du lernst = تو یاد می‌گیری",
+        "incorrect": "پاسخ صحیح: du lernst (تو یاد می‌گیری)"
+      }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s14",
+      "question": "کدام گزینه درست است؟ «Er ___ viel.»",
+      "options": [
+        "arbeite",
+        "arbeitest",
+        "arbeitet",
+        "arbeiten"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": {
+        "correct": "آفرین! er arbeitet = او کار می‌کند",
+        "incorrect": "پاسخ صحیح: er arbeitet (او کار می‌کند)"
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s15",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Ich {0} Fußball.",
+      "options": [
+        "spiele",
+        "spielst",
+        "spielt",
+        "spielen"
+      ],
+      "correctAnswers": [
+        0
+      ],
+      "feedback": {
+        "explanation": "Ich **spiele** Fußball. = من فوتبال بازی می‌کنم."
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s16",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Sie {0} im Büro.",
+      "options": [
+        "arbeite",
+        "arbeitest",
+        "arbeitet",
+        "arbeiten"
+      ],
+      "correctAnswers": [
+        2
+      ],
+      "feedback": {
+        "explanation": "Sie **arbeitet** im Büro. = او در دفتر کار می‌کند."
+      }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "فعل درست را انتخاب کن!",
+      "instruction": "پسوند درست را انتخاب کنید",
+      "questions": [
+        {
+          "prompt": "ich lern___",
+          "left": "-e",
+          "right": "-st",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "du spiel___",
+          "left": "-e",
+          "right": "-st",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "er mach___",
+          "left": "-t",
+          "right": "-st",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "sie arbeit___",
+          "left": "-t",
+          "right": "-et",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "du arbeit___",
+          "left": "-st",
+          "right": "-est",
+          "correctSide": "right"
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s17",
+      "word": {
+        "de": "heute",
+        "fa": "امروز"
+      },
+      "example": {
+        "text": {
+          "de": "Was machst du heute?",
+          "fa": "امروز چه کار می‌کنی؟"
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s18",
+      "word": {
+        "de": "jeden Tag",
+        "fa": "هر روز"
+      },
+      "example": {
+        "text": {
+          "de": "Ich lerne jeden Tag.",
+          "fa": "من هر روز یاد می‌گیرم."
+        }
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "s19",
+      "instruction": "درست یا غلط؟",
+      "statement": "Er spielst Fußball.",
+      "correctAnswer": false,
+      "vocabHint": {
+        "words": {
+          "Er": "او",
+          "spielst": "بازی می‌کنی (فرم du)",
+          "Fußball": "فوتبال"
+        },
+        "translation": "او فوتبال بازی می‌کنی. (غلط!)"
+      },
+      "feedback": {
+        "explanation": "غلط! فرم درست: Er **spielt** Fußball. (با er از پسوند -t استفاده می‌کنیم)"
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s20",
+      "title": "خلاصه: پسوندهای فعل باقاعده",
+      "content": "| ضمیر | پسوند | مثال |\n|-----|-----|-----|\n| ich | **-e** | spiele, mache, lerne |\n| du | **-st** | spielst, machst, lernst |\n| er/sie/es | **-t** | spielt, macht, lernt |\n\n**یادتان باشد:** فعل‌های با ریشه t/d یک e اضافی می‌گیرند:\ndu arbeit**e**st, er arbeit**e**t",
+      "examples": [
+        {
+          "de": "Ich mache, du machst, er macht.",
+          "fa": "من می‌کنم، تو می‌کنی، او می‌کند."
+        }
+      ]
+    },
+    {
+      "type": "vocab-check",
+      "id": "g3",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        {
+          "de": "machen",
+          "fa": "انجام دادن"
+        },
+        {
+          "de": "spielen",
+          "fa": "بازی کردن"
+        },
+        {
+          "de": "lernen",
+          "fa": "یاد گرفتن"
+        },
+        {
+          "de": "arbeiten",
+          "fa": "کار کردن"
+        },
+        {
+          "de": "heute",
+          "fa": "امروز"
+        },
+        {
+          "de": "jeden Tag",
+          "fa": "هر روز"
+        }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما یاد گرفتید چطور فعل‌های باقاعده را صرف کنید. حالا می‌توانید بگویید چه کار می‌کنید!",
+      "xpEarned": 50,
+      "nextLessonId": "A1-M02-L03",
+      "vocabularyLearned": [
+        {
+          "word": {
+            "de": "machen",
+            "fa": "انجام دادن"
+          }
+        },
+        {
+          "word": {
+            "de": "spielen",
+            "fa": "بازی کردن"
+          }
+        },
+        {
+          "word": {
+            "de": "lernen",
+            "fa": "یاد گرفتن"
+          }
+        },
+        {
+          "word": {
+            "de": "arbeiten",
+            "fa": "کار کردن"
+          }
+        },
+        {
+          "word": {
+            "de": "heute",
+            "fa": "امروز"
+          }
+        },
+        {
+          "word": {
+            "de": "jeden Tag",
+            "fa": "هر روز"
+          }
+        }
+      ]
+    }
+  ]
+}

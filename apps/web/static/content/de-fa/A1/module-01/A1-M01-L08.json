@@ -1,0 +1,561 @@
+{
+  "id": "A1-M01-L08",
+  "languagePair": "de-fa",
+  "source": {
+    "code": "de",
+    "name": "Deutsch"
+  },
+  "target": {
+    "code": "fa",
+    "name": "فارسی"
+  },
+  "title": {
+    "de": "Zahlen 11-20",
+    "fa": "اعداد ۱۱ تا ۲۰"
+  },
+  "description": "یاد بگیرید اعداد ۱۱ تا ۲۰ را به آلمانی بشمارید.",
+  "level": "A1",
+  "module": 1,
+  "lessonNumber": 8,
+  "totalSteps": 22,
+  "estimatedMinutes": 15,
+  "steps": [
+    {
+      "type": "new-word",
+      "id": "s1",
+      "word": {
+        "de": "elf",
+        "fa": "یازده (۱۱)"
+      },
+      "example": {
+        "text": {
+          "de": "Elf Spieler in einer Mannschaft.",
+          "fa": "یازده بازیکن در یک تیم."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": {
+        "de": "zwölf",
+        "fa": "دوازده (۱۲)"
+      },
+      "example": {
+        "text": {
+          "de": "Zwölf Monate im Jahr.",
+          "fa": "دوازده ماه در سال."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": {
+        "de": "dreizehn",
+        "fa": "سیزده (۱۳)"
+      },
+      "example": {
+        "text": {
+          "de": "Dreizehn ist eine Primzahl.",
+          "fa": "سیزده یک عدد اول است."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": {
+        "de": "vierzehn",
+        "fa": "چهارده (۱۴)"
+      },
+      "example": {
+        "text": {
+          "de": "Vierzehn Tage sind zwei Wochen.",
+          "fa": "چهارده روز دو هفته است."
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "الگوی اعداد ۱۳ تا ۱۹",
+      "content": "در آلمانی، اعداد ۱۳ تا ۱۹ از ترکیب عدد یکان + zehn ساخته می‌شوند:\n\n**drei** + **zehn** = dreizehn (۱۳)\n**vier** + **zehn** = vierzehn (۱۴)\n\nاما ۱۱ و ۱۲ استثنا هستند و الگوی خاص خود را دارند.",
+      "examples": [
+        {
+          "de": "elf",
+          "fa": "۱۱ - یازده (استثنا)"
+        },
+        {
+          "de": "zwölf",
+          "fa": "۱۲ - دوازده (استثنا)"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "سریع پاسخ بده!",
+      "instruction": "عدد درست را انتخاب کنید",
+      "questions": [
+        {
+          "prompt": "elf",
+          "left": "۱۱",
+          "right": "۱۲",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "zwölf",
+          "left": "۱۱",
+          "right": "۱۲",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "dreizehn",
+          "left": "۱۳",
+          "right": "۱۴",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "vierzehn",
+          "left": "۱۵",
+          "right": "۱۴",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "elf",
+          "left": "۱۰",
+          "right": "۱۱",
+          "correctSide": "right"
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": {
+        "de": "fünfzehn",
+        "fa": "پانزده (۱۵)"
+      },
+      "example": {
+        "text": {
+          "de": "Fünfzehn Minuten Pause.",
+          "fa": "پانزده دقیقه استراحت."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": {
+        "de": "sechzehn",
+        "fa": "شانزده (۱۶)"
+      },
+      "example": {
+        "text": {
+          "de": "Mit sechzehn darf man Moped fahren.",
+          "fa": "در شانزده سالگی می‌توان موتور سوار شد."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": {
+        "de": "siebzehn",
+        "fa": "هفده (۱۷)"
+      },
+      "example": {
+        "text": {
+          "de": "Siebzehn plus drei ist zwanzig.",
+          "fa": "هفده به علاوه سه می‌شود بیست."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": {
+        "de": "achtzehn",
+        "fa": "هجده (۱۸)"
+      },
+      "example": {
+        "text": {
+          "de": "Mit achtzehn ist man erwachsen.",
+          "fa": "در هجده سالگی بزرگسال می‌شوی."
+        }
+      }
+    },
+    {
+      "type": "matching",
+      "id": "s10",
+      "instruction": "اعداد را با معنی فارسی جفت کنید",
+      "items": [
+        {
+          "id": "i1",
+          "text": "fünfzehn"
+        },
+        {
+          "id": "i2",
+          "text": "sechzehn"
+        },
+        {
+          "id": "i3",
+          "text": "siebzehn"
+        },
+        {
+          "id": "i4",
+          "text": "achtzehn"
+        }
+      ],
+      "matches": [
+        {
+          "id": "m1",
+          "text": "۱۵"
+        },
+        {
+          "id": "m2",
+          "text": "۱۶"
+        },
+        {
+          "id": "m3",
+          "text": "۱۷"
+        },
+        {
+          "id": "m4",
+          "text": "۱۸"
+        }
+      ],
+      "correctPairs": [
+        [
+          "i1",
+          "m1"
+        ],
+        [
+          "i2",
+          "m2"
+        ],
+        [
+          "i3",
+          "m3"
+        ],
+        [
+          "i4",
+          "m4"
+        ]
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s11",
+      "word": {
+        "de": "neunzehn",
+        "fa": "نوزده (۱۹)"
+      },
+      "example": {
+        "text": {
+          "de": "Neunzehn Euro, bitte.",
+          "fa": "نوزده یورو، لطفاً."
+        }
+      }
+    },
+    {
+      "type": "new-word",
+      "id": "s12",
+      "word": {
+        "de": "zwanzig",
+        "fa": "بیست (۲۰)"
+      },
+      "example": {
+        "text": {
+          "de": "Zwanzig Kilometer bis Berlin.",
+          "fa": "بیست کیلومتر تا برلین."
+        }
+      }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s13",
+      "title": "شمردن از ۱۱ تا ۲۰",
+      "content": "اعداد ۱۱ تا ۲۰ در آلمانی:\n\n| عدد | آلمانی |\n|-----|--------|\n| ۱۱ | elf |\n| ۱۲ | zwölf |\n| ۱۳ | dreizehn |\n| ۱۴ | vierzehn |\n| ۱۵ | fünfzehn |\n| ۱۶ | sechzehn |\n| ۱۷ | siebzehn |\n| ۱۸ | achtzehn |\n| ۱۹ | neunzehn |\n| ۲۰ | zwanzig |",
+      "examples": [
+        {
+          "de": "Elf, zwölf, dreizehn!",
+          "fa": "یازده، دوازده، سیزده!"
+        },
+        {
+          "de": "Achtzehn, neunzehn, zwanzig!",
+          "fa": "هجده، نوزده، بیست!"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s14",
+      "question": "عدد «هفده» به آلمانی چیست؟",
+      "options": [
+        "sechzehn",
+        "siebzehn",
+        "achtzehn",
+        "neunzehn"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": {
+        "correct": "آفرین! هفده = siebzehn",
+        "incorrect": "پاسخ صحیح: siebzehn (هفده)"
+      }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s15",
+      "question": "کلمه «zwanzig» یعنی چه؟",
+      "options": [
+        "هجده",
+        "نوزده",
+        "بیست",
+        "بیست و یک"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": {
+        "correct": "آفرین! zwanzig = بیست",
+        "incorrect": "پاسخ صحیح: بیست (۲۰)"
+      }
+    },
+    {
+      "type": "dialog",
+      "id": "s16",
+      "title": "مکالمه: قیمت چنده؟",
+      "context": "الکس در فروشگاه است",
+      "lines": [
+        {
+          "speaker": "Alex",
+          "text": {
+            "de": "Was kostet das Buch?",
+            "fa": "این کتاب چند است؟"
+          }
+        },
+        {
+          "speaker": "Verkäufer",
+          "text": {
+            "de": "Das kostet fünfzehn Euro.",
+            "fa": "این پانزده یورو است."
+          }
+        },
+        {
+          "speaker": "Alex",
+          "text": {
+            "de": "Und das Heft?",
+            "fa": "و این دفتر؟"
+          }
+        },
+        {
+          "speaker": "Verkäufer",
+          "text": {
+            "de": "Drei Euro. Zusammen achtzehn Euro.",
+            "fa": "سه یورو. روی هم هجده یورو."
+          }
+        }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s17",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Zehn, elf, {0}, dreizehn, {1}, fünfzehn.",
+      "options": [
+        "zwölf",
+        "vierzehn",
+        "sechzehn",
+        "achtzehn"
+      ],
+      "correctAnswers": [
+        0,
+        1
+      ],
+      "feedback": {
+        "explanation": "ترتیب اعداد: zehn (۱۰), elf (۱۱), **zwölf** (۱۲), dreizehn (۱۳), **vierzehn** (۱۴), fünfzehn (۱۵)"
+      }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "همه اعداد ۱۱-۲۰!",
+      "instruction": "عدد درست را سریع انتخاب کنید",
+      "questions": [
+        {
+          "prompt": "neunzehn",
+          "left": "۱۹",
+          "right": "۱۸",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "zwanzig",
+          "left": "۱۹",
+          "right": "۲۰",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "fünfzehn",
+          "left": "۱۵",
+          "right": "۱۴",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "achtzehn",
+          "left": "۱۷",
+          "right": "۱۸",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "sechzehn",
+          "left": "۱۶",
+          "right": "۱۷",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "siebzehn",
+          "left": "۱۸",
+          "right": "۱۷",
+          "correctSide": "right"
+        }
+      ]
+    },
+    {
+      "type": "true-false",
+      "id": "s18",
+      "instruction": "درست یا غلط؟",
+      "statement": "Zwölf kommt vor dreizehn.",
+      "correctAnswer": true,
+      "vocabHint": {
+        "words": {
+          "zwölf": "۱۲ (دوازده)",
+          "kommt": "می‌آید",
+          "vor": "قبل از",
+          "dreizehn": "۱۳ (سیزده)"
+        },
+        "translation": "دوازده قبل از سیزده می‌آید."
+      },
+      "feedback": {
+        "explanation": "درست است! دوازده (zwölf) قبل از سیزده (dreizehn) می‌آید."
+      }
+    },
+    {
+      "type": "vocab-check",
+      "id": "g3",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        {
+          "de": "elf",
+          "fa": "یازده (۱۱)"
+        },
+        {
+          "de": "zwölf",
+          "fa": "دوازده (۱۲)"
+        },
+        {
+          "de": "dreizehn",
+          "fa": "سیزده (۱۳)"
+        },
+        {
+          "de": "vierzehn",
+          "fa": "چهارده (۱۴)"
+        },
+        {
+          "de": "fünfzehn",
+          "fa": "پانزده (۱۵)"
+        },
+        {
+          "de": "sechzehn",
+          "fa": "شانزده (۱۶)"
+        },
+        {
+          "de": "siebzehn",
+          "fa": "هفده (۱۷)"
+        },
+        {
+          "de": "achtzehn",
+          "fa": "هجده (۱۸)"
+        },
+        {
+          "de": "neunzehn",
+          "fa": "نوزده (۱۹)"
+        },
+        {
+          "de": "zwanzig",
+          "fa": "بیست (۲۰)"
+        }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما اعداد ۱۱ تا ۲۰ را به آلمانی یاد گرفتید!",
+      "xpEarned": 50,
+      "nextLessonId": "A1-M01-L09",
+      "vocabularyLearned": [
+        {
+          "word": {
+            "de": "elf",
+            "fa": "یازده (۱۱)"
+          }
+        },
+        {
+          "word": {
+            "de": "zwölf",
+            "fa": "دوازده (۱۲)"
+          }
+        },
+        {
+          "word": {
+            "de": "dreizehn",
+            "fa": "سیزده (۱۳)"
+          }
+        },
+        {
+          "word": {
+            "de": "vierzehn",
+            "fa": "چهارده (۱۴)"
+          }
+        },
+        {
+          "word": {
+            "de": "fünfzehn",
+            "fa": "پانزده (۱۵)"
+          }
+        },
+        {
+          "word": {
+            "de": "sechzehn",
+            "fa": "شانزده (۱۶)"
+          }
+        },
+        {
+          "word": {
+            "de": "siebzehn",
+            "fa": "هفده (۱۷)"
+          }
+        },
+        {
+          "word": {
+            "de": "achtzehn",
+            "fa": "هجده (۱۸)"
+          }
+        },
+        {
+          "word": {
+            "de": "neunzehn",
+            "fa": "نوزده (۱۹)"
+          }
+        },
+        {
+          "word": {
+            "de": "zwanzig",
+            "fa": "بیست (۲۰)"
+          }
+        }
+      ]
+    }
+  ]
+}

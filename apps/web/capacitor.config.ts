@@ -7,13 +7,21 @@ const config: CapacitorConfig = {
 
   // Server configuration
   server: {
-    // Allow loading from CDN
+    // Allow loading from CDN and Supabase
     allowNavigation: [
       'pub-a0290b06f1ea45d5b65ac647cc69df34.r2.dev',
-      '*.supabase.co'
+      '*.supabase.co',
+      'accounts.google.com',
+      '*.google.com'
     ],
     // Clear text traffic for development (remove in production)
     cleartext: false
+  },
+
+  // App URL scheme for deep links (OAuth callbacks)
+  // Format: com.germanapp.se://auth/callback
+  appUrlOpen: {
+    enabled: true
   },
 
   // iOS specific settings
