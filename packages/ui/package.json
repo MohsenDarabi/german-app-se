@@ -3,13 +3,43 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "exports": "./src/index.ts",
+  "svelte": "./src/index.ts",
+  "exports": {
+    ".": {
+      "svelte": "./src/index.ts",
+      "default": "./src/index.ts"
+    },
+    "./Button.svelte": {
+      "svelte": "./src/Button.svelte",
+      "default": "./src/Button.svelte"
+    },
+    "./XPBar.svelte": {
+      "svelte": "./src/XPBar.svelte",
+      "default": "./src/XPBar.svelte"
+    },
+    "./StreakCounter.svelte": {
+      "svelte": "./src/StreakCounter.svelte",
+      "default": "./src/StreakCounter.svelte"
+    },
+    "./Card.svelte": {
+      "svelte": "./src/Card.svelte",
+      "default": "./src/Card.svelte"
+    },
+    "./Progress.svelte": {
+      "svelte": "./src/Progress.svelte",
+      "default": "./src/Progress.svelte"
+    }
+  },
   "scripts": {
     "build": "echo \"TODO: build ui\"",
     "lint": "echo \"TODO: lint ui\"",
     "test": "vitest"
   },
+  "peerDependencies": {
+    "svelte": "^4.0.0"
+  },
   "devDependencies": {
+    "svelte": "^4.2.0",
     "typescript": "^5.6.0",
     "vitest": "^2.0.0"
   }

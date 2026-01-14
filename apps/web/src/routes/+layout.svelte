@@ -7,6 +7,10 @@
   import { syncEngine } from '$lib/services/syncEngine';
   import { init as initAssetService } from '$lib/services/assetService';
   import { initDeepLinkHandler } from '$lib/services/deepLinkHandler';
+  import { theme } from '$lib/stores/theme';
+
+  // Import design tokens
+  import '$lib/styles/tokens.css';
 
   export let data: { user?: { email: string; name: string } | null } = {};
 
@@ -14,6 +18,9 @@
   let unsubscribeAuth: (() => void) | null = null;
 
   onMount(() => {
+    // Initialize theme system
+    theme.init();
+
     // Initialize deep link handler for OAuth callbacks
     initDeepLinkHandler();
 
@@ -70,7 +77,24 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: radial-gradient(circle at top, #eff6ff 0, #f9fafb 45%, #f1f5f9 100%);
+    /* Warm cream Persian-inspired background gradient */
+    background: radial-gradient(
+      circle at top,
+      var(--color-primary-50) 0%,
+      var(--color-neutral-50) 40%,
+      var(--color-neutral-100) 100%
+    );
+    color: var(--color-neutral-800);
+    transition: background var(--transition-slow), color var(--transition-slow);
+  }
+
+  /* Dark mode background */
+  :global([data-theme="dark"]) .app-shell {
+    background: radial-gradient(
+      circle at top,
+      var(--color-neutral-100) 0%,
+      var(--color-neutral-50) 100%
+    );
   }
 
   .app-main {
@@ -78,7 +102,7 @@
     max-width: 1100px;
     width: 100%;
     margin: 0 auto;
-    padding: 1.5rem 1rem 2rem;
+    padding: var(--space-6) var(--space-4) var(--space-8);
   }
 
   @media (min-width: 1024px) {
@@ -102,5 +126,17 @@
 
   :global(.bidi-mixed) {
     unicode-bidi: plaintext;
+  }
+
+  /* Global transitions for theme switching */
+  :global(*) {
+    transition-property: background-color, border-color, color;
+    transition-duration: 200ms;
+    transition-timing-function: ease;
+  }
+
+  /* Disable transitions on page load to prevent flash */
+  :global(.no-transitions *) {
+    transition: none !important;
   }
 </style>

@@ -1,0 +1,374 @@
+/**
+ * Design Tokens - Persian-Inspired Color Palette
+ *
+ * Colors inspired by traditional Persian art, ceramics, carpets, and miniatures:
+ * - فیروزه‌ای (Turquoise) - Primary actions
+ * - طلایی (Gold) - Success, achievements
+ * - لاجوردی (Indigo) - XP, progress, wisdom
+ * - زعفرانی (Saffron) - Streaks, energy
+ * - زرشکی (Burgundy) - Errors (softer than harsh red)
+ * - زمردی (Emerald) - Premium, gems
+ * - گلابی (Rose) - Accents, favorites
+ * - کرم (Cream) - Backgrounds (manuscript feel)
+ */
+
+:root {
+  /* === Persian-Inspired Color Palette === */
+
+  /* Primary: Persian Turquoise (فیروزه‌ای) - iconic tile/pottery color */
+  --color-primary-50: #ecfeff;
+  --color-primary-100: #cffafe;
+  --color-primary-200: #a5f3fc;
+  --color-primary-300: #67e8f9;
+  --color-primary-400: #22d3ee;
+  --color-primary-500: #0891b2;
+  --color-primary-600: #0e7490;
+  --color-primary-700: #155e75;
+  --color-primary-800: #164e63;
+  --color-primary-900: #083344;
+
+  /* Success: Persian Gold (طلایی) - royalty, achievement */
+  --color-success-50: #fefce8;
+  --color-success-100: #fef9c3;
+  --color-success-200: #fef08a;
+  --color-success-300: #fde047;
+  --color-success-400: #facc15;
+  --color-success-500: #eab308;
+  --color-success-600: #ca8a04;
+  --color-success-700: #a16207;
+  --color-success-800: #854d0e;
+  --color-success-900: #713f12;
+
+  /* XP/Progress: Persian Indigo (لاجوردی) - miniature art, wisdom */
+  --color-xp-50: #eef2ff;
+  --color-xp-100: #e0e7ff;
+  --color-xp-200: #c7d2fe;
+  --color-xp-300: #a5b4fc;
+  --color-xp-400: #818cf8;
+  --color-xp-500: #6366f1;
+  --color-xp-600: #4f46e5;
+  --color-xp-700: #4338ca;
+  --color-xp-800: #3730a3;
+  --color-xp-900: #312e81;
+  --color-xp: #4f46e5;
+  --color-xp-light: #818cf8;
+  --color-xp-glow: rgba(79, 70, 229, 0.4);
+
+  /* Streak: Saffron Yellow (زعفرانی) - precious, warm energy */
+  --color-streak-50: #fffbeb;
+  --color-streak-100: #fef3c7;
+  --color-streak-200: #fde68a;
+  --color-streak-300: #fcd34d;
+  --color-streak-400: #fbbf24;
+  --color-streak-500: #f59e0b;
+  --color-streak-600: #d97706;
+  --color-streak-700: #b45309;
+  --color-streak-800: #92400e;
+  --color-streak-900: #78350f;
+  --color-streak: #f59e0b;
+  --color-streak-light: #fbbf24;
+  --color-streak-glow: rgba(245, 158, 11, 0.4);
+
+  /* Error: Persian Burgundy (زرشکی) - carpet reds, softer than pure red */
+  --color-error-50: #fef2f2;
+  --color-error-100: #fee2e2;
+  --color-error-200: #fecaca;
+  --color-error-300: #fca5a5;
+  --color-error-400: #f87171;
+  --color-error-500: #b91c1c;
+  --color-error-600: #991b1b;
+  --color-error-700: #7f1d1d;
+  --color-error-800: #5c1616;
+  --color-error-900: #450a0a;
+
+  /* Achievement: Persian Gold Shimmer (طلایی درخشان) */
+  --color-achievement: #d4af37;
+  --color-achievement-light: #f0d77a;
+  --color-achievement-glow: rgba(212, 175, 55, 0.5);
+
+  /* Gems/Premium: Emerald Green (زمردی) - paradise gardens */
+  --color-gem-50: #ecfdf5;
+  --color-gem-100: #d1fae5;
+  --color-gem-200: #a7f3d0;
+  --color-gem-300: #6ee7b7;
+  --color-gem-400: #34d399;
+  --color-gem-500: #10b981;
+  --color-gem-600: #059669;
+  --color-gem-700: #047857;
+  --color-gem-800: #065f46;
+  --color-gem-900: #064e3b;
+  --color-gem: #059669;
+  --color-gem-light: #10b981;
+
+  /* Accent: Persian Rose (گلابی) - poetry, gardens */
+  --color-accent-50: #fdf2f8;
+  --color-accent-100: #fce7f3;
+  --color-accent-200: #fbcfe8;
+  --color-accent-300: #f9a8d4;
+  --color-accent-400: #f472b6;
+  --color-accent-500: #ec4899;
+  --color-accent-600: #db2777;
+  --color-accent-700: #be185d;
+  --color-accent-800: #9d174d;
+  --color-accent-900: #831843;
+  --color-accent: #db2777;
+  --color-accent-light: #f472b6;
+
+  /* Neutrals: Warm Cream/Ivory (کرم) - manuscript backgrounds */
+  --color-neutral-50: #fdfbf7;
+  --color-neutral-100: #f5f0e8;
+  --color-neutral-200: #e8e0d5;
+  --color-neutral-300: #d4c9b9;
+  --color-neutral-400: #a69b8a;
+  --color-neutral-500: #78716c;
+  --color-neutral-600: #57534e;
+  --color-neutral-700: #44403c;
+  --color-neutral-800: #292524;
+  --color-neutral-900: #1c1917;
+
+  /* === Typography === */
+  --font-sans: 'Vazirmatn', 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Vazirmatn', 'Inter', system-ui, -apple-system, sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+
+  --leading-none: 1;
+  --leading-tight: 1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.625;
+
+  /* === Spacing Scale (4px base) === */
+  --space-0: 0;
+  --space-px: 1px;
+  --space-0-5: 0.125rem;
+  --space-1: 0.25rem;
+  --space-1-5: 0.375rem;
+  --space-2: 0.5rem;
+  --space-2-5: 0.625rem;
+  --space-3: 0.75rem;
+  --space-3-5: 0.875rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-7: 1.75rem;
+  --space-8: 2rem;
+  --space-9: 2.25rem;
+  --space-10: 2.5rem;
+  --space-11: 2.75rem;
+  --space-12: 3rem;
+  --space-14: 3.5rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* === Border Radius === */
+  --radius-none: 0;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* === Shadows === */
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+
+  /* Colored shadows for gamification */
+  --shadow-primary: 0 4px 14px 0 rgba(8, 145, 178, 0.35);
+  --shadow-success: 0 4px 14px 0 rgba(234, 179, 8, 0.35);
+  --shadow-xp: 0 4px 14px 0 rgba(79, 70, 229, 0.35);
+  --shadow-streak: 0 4px 14px 0 rgba(245, 158, 11, 0.35);
+  --shadow-error: 0 4px 14px 0 rgba(185, 28, 28, 0.25);
+
+  /* === Transitions === */
+  --transition-fast: 100ms ease;
+  --transition-normal: 200ms ease;
+  --transition-slow: 300ms ease;
+  --transition-slower: 500ms ease;
+  --transition-bounce: 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --transition-spring: 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --transition-elastic: 800ms cubic-bezier(0.68, -0.6, 0.32, 1.6);
+
+  /* === Z-Index Scale === */
+  --z-base: 0;
+  --z-dropdown: 10;
+  --z-sticky: 20;
+  --z-fixed: 30;
+  --z-modal-backdrop: 40;
+  --z-modal: 50;
+  --z-popover: 60;
+  --z-tooltip: 70;
+  --z-toast: 80;
+  --z-max: 100;
+
+  /* === Glassmorphism === */
+  --glass-bg: rgba(253, 251, 247, 0.85);
+  --glass-bg-strong: rgba(253, 251, 247, 0.95);
+  --glass-border: rgba(212, 201, 185, 0.4);
+  --glass-blur: 12px;
+  --glass-blur-strong: 20px;
+
+  /* === Component Sizes === */
+  --touch-target-min: 44px;
+  --button-height-sm: 36px;
+  --button-height-md: 44px;
+  --button-height-lg: 52px;
+  --input-height: 44px;
+  --icon-sm: 16px;
+  --icon-md: 20px;
+  --icon-lg: 24px;
+  --icon-xl: 32px;
+
+  /* === Layout === */
+  --container-xs: 320px;
+  --container-sm: 384px;
+  --container-md: 448px;
+  --container-lg: 512px;
+  --container-xl: 576px;
+  --container-2xl: 672px;
+  --container-prose: 65ch;
+  --navbar-height: 60px;
+  --bottom-nav-height: 60px;
+  --safe-area-inset-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* === Dark Mode: Persian Night (شب ایرانی) === */
+[data-theme="dark"] {
+  /* Invert neutrals */
+  --color-neutral-50: #1c1917;
+  --color-neutral-100: #292524;
+  --color-neutral-200: #44403c;
+  --color-neutral-300: #57534e;
+  --color-neutral-400: #78716c;
+  --color-neutral-500: #a69b8a;
+  --color-neutral-600: #d4c9b9;
+  --color-neutral-700: #e8e0d5;
+  --color-neutral-800: #f5f0e8;
+  --color-neutral-900: #fdfbf7;
+
+  /* Brighter primary for dark backgrounds */
+  --color-primary-500: #22d3ee;
+  --color-primary-600: #0891b2;
+
+  /* Brighter accents for visibility */
+  --color-xp: #818cf8;
+  --color-xp-light: #a5b4fc;
+  --color-streak: #fbbf24;
+  --color-streak-light: #fde68a;
+  --color-gem: #34d399;
+  --color-gem-light: #6ee7b7;
+
+  /* Dark glass effect */
+  --glass-bg: rgba(28, 25, 23, 0.85);
+  --glass-bg-strong: rgba(28, 25, 23, 0.95);
+  --glass-border: rgba(68, 64, 60, 0.4);
+
+  /* Adjusted shadows for dark mode */
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 2px -1px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.4);
+}
+
+/* === Animations === */
+@keyframes bounce-subtle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 var(--color-primary-500); opacity: 1; }
+  50% { box-shadow: 0 0 20px 4px var(--color-primary-400); opacity: 0.8; }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-4px); }
+  20%, 40%, 60%, 80% { transform: translateX(4px); }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+}
+
+@keyframes slide-up {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-down {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scale-in {
+  0% { opacity: 0; transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes scale-bounce {
+  0% { transform: scale(0); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes confetti-fall {
+  0% { transform: translateY(-10px) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+}
+
+@keyframes float-up {
+  0% { opacity: 1; transform: translateY(0) scale(1); }
+  100% { opacity: 0; transform: translateY(-60px) scale(1.2); }
+}
+
+@keyframes shine {
+  0% { left: -100%; }
+  50%, 100% { left: 100%; }
+}
+
+@keyframes flame-flicker {
+  0%, 100% { transform: scale(1) rotate(-2deg); }
+  25% { transform: scale(1.05) rotate(2deg); }
+  50% { transform: scale(0.95) rotate(-1deg); }
+  75% { transform: scale(1.02) rotate(1deg); }
+}
+
+/* === Utility Classes === */
+.animate-bounce-subtle { animation: bounce-subtle 1s ease-in-out infinite; }
+.animate-pulse-glow { animation: pulse-glow 2s ease-in-out infinite; }
+.animate-shake { animation: shake 0.5s ease-in-out; }
+.animate-wiggle { animation: wiggle 0.3s ease-in-out; }
+.animate-slide-up { animation: slide-up 0.3s ease-out; }
+.animate-slide-down { animation: slide-down 0.3s ease-out; }
+.animate-scale-in { animation: scale-in 0.2s ease-out; }
+.animate-scale-bounce { animation: scale-bounce 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+.animate-spin { animation: spin 1s linear infinite; }
+.animate-float-up { animation: float-up 1s ease-out forwards; }
+.animate-flame { animation: flame-flicker 0.5s ease-in-out infinite; }

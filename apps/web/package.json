@@ -34,6 +34,7 @@
     "vitest": "^2.0.0"
   },
   "dependencies": {
+    "@pkg/ui": "workspace:*",
     "@auth/core": "^0.34.3",
     "@auth/sveltekit": "^1.11.1",
     "@capacitor/android": "^8.0.0",
