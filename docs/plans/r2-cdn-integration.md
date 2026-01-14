@@ -480,15 +480,21 @@ Changes:
 if (isMedia) return cacheFirst(request);
 ```
 
-### New Strategy
+### New Strategy: Cache-First for All Users
+
+**Key insight:** Caching audio for ALL users reduces R2 reads by 83%, keeping costs near zero.
+
+- **All users:** Audio cached after first fetch (browser/SW cache)
+- **Premium only:** Explicit offline download (persistent storage)
+
 ```typescript
-// Premium status from main thread
+// Premium status from main thread (for offline download feature)
 let isPremium = false;
 
 self.addEventListener('message', (event) => {
   if (event.data.type === 'SET_PREMIUM') isPremium = event.data.value;
-  if (event.data.type === 'CACHE_LESSON') cacheLessonAssets(event.data);
-  if (event.data.type === 'DELETE_LESSON') deleteLessonCache(event.data);
+  if (event.data.type === 'CACHE_LESSON') cacheLessonAssets(event.data);  // Premium
+  if (event.data.type === 'DELETE_LESSON') deleteLessonCache(event.data); // Premium
 });
 
 self.addEventListener('fetch', (event) => {
@@ -496,13 +502,10 @@ self.addEventListener('fetch', (event) => {
 
   // Handle CDN audio requests (by-hash pattern)
   if (url.pathname.includes('/audio/by-hash/')) {
-    if (isPremium) {
-      // Cache-first for premium (downloaded content)
-      event.respondWith(cacheFirst(event.request));
-    } else {
-      // Network-only for free users (no caching)
-      event.respondWith(networkOnly(event.request));
-    }
+    // ⭐ Cache-first for ALL users (reduces R2 reads by 83%)
+    // First play: fetch from R2, store in cache
+    // Subsequent plays: serve from cache (no R2 hit)
+    event.respondWith(cacheFirst(event.request));
     return;
   }
 
@@ -516,7 +519,8 @@ self.addEventListener('fetch', (event) => {
   // ... rest unchanged
 });
 
-// Cache lesson for offline (premium only)
+// Explicit offline download (premium only)
+// Downloads all audio for a lesson to persistent storage
 async function cacheLessonAssets(data: { lessonId: string; audioHashes: string[] }) {
   const cache = await caches.open('lesson-audio-v1');
 
@@ -526,7 +530,26 @@ async function cacheLessonAssets(data: { lessonId: string; audioHashes: string[]
     await cache.put(url, response);
   }
 }
+
+// Clear downloaded lesson (premium only)
+async function deleteLessonCache(data: { lessonId: string; audioHashes: string[] }) {
+  const cache = await caches.open('lesson-audio-v1');
+
+  for (const hash of data.audioHashes) {
+    const url = `${CDN_BASE}/de-fa/audio/by-hash/${hash}.mp3`;
+    await cache.delete(url);
+  }
+}
 ```
+
+### Caching Behavior Summary
+
+| User Type | First Play | Replays | Offline Mode |
+|-----------|------------|---------|--------------|
+| **Free** | Fetch from R2 → Cache | Serve from cache | ❌ No |
+| **Premium** | Fetch from R2 → Cache | Serve from cache | ✅ Yes (explicit download) |
+
+**Cost impact:** This caching strategy keeps R2 costs near zero for up to 20,000 users.
 
 ---
 
@@ -783,16 +806,38 @@ Exclude from static:
 
 ---
 
-## Cost Estimate (Free Tier)
+## Cost Estimate (With Cache-First Strategy)
 
-### Cloudflare R2 (Assets - Deduplicated)
+### Caching Strategy
 
-| Resource | Free Tier | Your Usage | Status |
-|----------|-----------|------------|--------|
-| Storage | 10 GB | ~500 MB (5 langs, deduplicated) | ✅ 5% used |
+Audio files are fetched once per lesson and cached locally. Subsequent plays use the cache, dramatically reducing R2 reads.
+
+| Metric | Without Cache | With Cache | Savings |
+|--------|---------------|------------|---------|
+| **Reads/user/month** | 3,000 | 500 | 83% |
+| **Free tier covers** | ~3,300 users | ~20,000 users | 6x more |
+
+**Per-user calculation:**
+```
+Daily (learning new content):
+- New lessons: 2 × 30 files = 60 R2 reads
+- Replays: served from cache = 0 R2 reads
+
+After first month (mostly cached):
+- New content: ~10-20 files/day
+- Monthly: 300-600 reads
+
+Average: ~500 reads/user/month
+```
+
+### Cloudflare R2 (Assets - Deduplicated + Cached)
+
+| Resource | Free Tier | Usage (10k users) | Status |
+|----------|-----------|-------------------|--------|
+| Storage | 10 GB | ~500 MB | ✅ 5% used |
 | Egress | **Unlimited** | Any amount | ✅ Always free |
-| Class A ops (writes) | 1M/month | ~6K (reduced by dedup) | ✅ |
-| Class B ops (reads) | 10M/month | ~500K | ✅ |
+| Class A ops (writes) | 1M/month | ~10K | ✅ |
+| Class B ops (reads) | 10M/month | ~5M | ✅ 50% used |
 
 ### Supabase (Auth + Database)
 
@@ -803,16 +848,31 @@ Exclude from static:
 | Storage | 1 GB | 0 (use R2) | ✅ Not needed |
 | Egress | 2 GB | ~100 MB | ✅ Small user data |
 
-### Total Monthly Cost
+### Total Monthly Cost (Hybrid: R2 + Supabase)
 
-| Scale | R2 | Supabase | Total |
-|-------|----|---------:|------:|
-| 100 MAU | $0 | $0 | **$0** |
-| 1,000 MAU | $0 | $0 | **$0** |
-| 10,000 MAU | $0 | $0 | **$0** |
-| 50,000+ MAU | $0 | ~$25 | **~$25** |
+| Users | R2 Reads | R2 Cost | Supabase | Total |
+|-------|----------|---------|----------|-------|
+| 1,000 | 500K | $0 | $0 | **$0** |
+| 2,000 | 1M | $0 | $0 | **$0** |
+| 10,000 | 5M | $0 | $0 | **$0** |
+| 20,000 | 10M | $0 | $0 | **$0** |
+| 50,000 | 25M | ~$5 | $25 | **~$30** |
+| 100,000 | 50M | ~$14 | $25 | **~$39** |
 
-**You stay on free tier until 50,000+ monthly active users!**
+**R2 pricing:** $0.36 per million Class B ops after 10M free
+
+### R2 Calculator Inputs
+
+For the [Cloudflare R2 pricing calculator](https://r2-calculator.cloudflare.com/):
+
+| Users | Storage | Class A (writes) | Class B (reads) |
+|-------|---------|------------------|-----------------|
+| 1 | 0.5 GB | 10,000 | 500 |
+| 10,000 | 0.5 GB | 10,000 | 5,000,000 |
+| 50,000 | 0.5 GB | 10,000 | 25,000,000 |
+| 100,000 | 0.5 GB | 10,000 | 50,000,000 |
+
+**Key insight:** With caching, 20,000 users stays completely free!
 
 ---
 

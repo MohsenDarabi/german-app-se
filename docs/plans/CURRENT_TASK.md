@@ -73,9 +73,15 @@ Then provide these to Claude to continue with the upload script.
 
 ---
 
-## Cost Summary
+## Cost Summary (With Cache-First Strategy)
+
+Cache-first reduces R2 reads by 83% (500 vs 3,000 reads/user/month).
 
 | Users | R2 | Supabase | HeyGen | Total |
 |-------|----|---------:|-------:|------:|
-| 2,000 | $0 | $25 | $24 | ~$49/mo |
-| 100,000 | ~$104 | $25 | $24 | ~$153/mo |
+| 10,000 | $0 | $0 | $24 | **~$24/mo** |
+| 20,000 | $0 | $0 | $24 | **~$24/mo** |
+| 50,000 | ~$5 | $25 | $24 | **~$54/mo** |
+| 100,000 | ~$14 | $25 | $24 | **~$63/mo** |
+
+**Free tier covers up to 20,000 users!**
