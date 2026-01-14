@@ -586,28 +586,74 @@
     transition: width 0.5s ease-out;
   }
 
-  /* Dark Mode */
+  /* Dark Mode - use hardcoded colors since CSS variables swap */
+  :global([data-theme="dark"]) .instruction {
+    color: #a69b8a;
+  }
+
   :global([data-theme="dark"]) .passage-card {
-    background: rgba(28, 25, 23, 0.85);
+    background: #44403c;
+    border-color: #57534e;
   }
 
   :global([data-theme="dark"]) .passage-text.german {
-    color: var(--color-neutral-100, #f5f0e8);
+    color: #f5f0e8;
+  }
+
+  :global([data-theme="dark"]) .passage-text.persian {
+    color: #a69b8a;
+    border-color: #57534e;
+  }
+
+  :global([data-theme="dark"]) .passage-label {
+    color: #a69b8a;
+  }
+
+  :global([data-theme="dark"]) .translation-toggle {
+    color: #22d3ee;
+  }
+
+  :global([data-theme="dark"]) .question-progress {
+    color: #a69b8a;
   }
 
   :global([data-theme="dark"]) .question-card {
-    background: rgba(28, 25, 23, 0.95);
+    background: #44403c;
+    border-color: #57534e;
   }
 
   :global([data-theme="dark"]) .question-text {
-    color: var(--color-neutral-100, #f5f0e8);
+    color: #f5f0e8;
+  }
+
+  :global([data-theme="dark"]) .question-translation {
+    color: #a69b8a;
   }
 
   :global([data-theme="dark"]) .option-btn {
-    background: rgba(28, 25, 23, 0.95);
+    background: #292524;
+    border-color: #57534e;
+  }
+
+  :global([data-theme="dark"]) .option-btn:hover:not(:disabled) {
+    background: #44403c;
+    border-color: #22d3ee;
   }
 
   :global([data-theme="dark"]) .option-text {
-    color: var(--color-neutral-100, #f5f0e8);
+    color: #f5f0e8;
+  }
+
+  :global([data-theme="dark"]) .option-letter {
+    background: #57534e;
+    color: #e8e0d5;
+  }
+
+  :global([data-theme="dark"]) .explanation {
+    color: #a69b8a;
+  }
+
+  :global([data-theme="dark"]) .summary-text {
+    color: #fbbf24;
   }
 </style>

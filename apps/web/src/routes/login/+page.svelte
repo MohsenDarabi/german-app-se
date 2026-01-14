@@ -201,21 +201,48 @@
 </section>
 
 <style>
+  /* Mobile-first: single column, full width */
   .login-layout {
     display: grid;
-    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
-    gap: var(--space-8, 2rem);
+    grid-template-columns: 1fr;
+    gap: var(--space-4, 1rem);
     align-items: center;
-    min-height: calc(100vh - 140px);
-    padding: var(--space-6, 1.5rem);
-    max-width: 1200px;
-    margin: 0 auto;
+    min-height: calc(100vh - 120px);
+    min-height: calc(100dvh - 120px);
+    padding: var(--space-3, 0.75rem);
+    padding-left: calc(var(--space-3, 0.75rem) + env(safe-area-inset-left, 0px));
+    padding-right: calc(var(--space-3, 0.75rem) + env(safe-area-inset-right, 0px));
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    box-sizing: border-box;
   }
 
-  /* Hero Section */
+  /* Tablet: two columns */
+  @media (min-width: 900px) {
+    .login-layout {
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+      gap: var(--space-8, 2rem);
+      padding: var(--space-6, 1.5rem);
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  }
+
+  /* Hero Section - Mobile first */
   .hero {
     position: relative;
-    padding: var(--space-6, 1.5rem);
+    padding: var(--space-3, 0.75rem);
+    text-align: center;
+    order: -1;
+  }
+
+  @media (min-width: 900px) {
+    .hero {
+      padding: var(--space-6, 1.5rem);
+      text-align: right;
+      order: 0;
+    }
   }
 
   .hero-badge {
@@ -239,12 +266,26 @@
     font-size: var(--text-sm, 0.875rem);
   }
 
+  /* Mobile-first title */
   .hero-title {
-    font-size: var(--text-3xl, 1.875rem);
+    font-size: var(--text-xl, 1.25rem);
     line-height: 1.3;
-    margin: 0 0 var(--space-4, 1rem);
+    margin: 0 0 var(--space-3, 0.75rem);
     color: var(--color-neutral-800, #292524);
     font-weight: var(--font-extrabold, 800);
+  }
+
+  @media (min-width: 640px) {
+    .hero-title {
+      font-size: var(--text-2xl, 1.5rem);
+      margin: 0 0 var(--space-4, 1rem);
+    }
+  }
+
+  @media (min-width: 900px) {
+    .hero-title {
+      font-size: var(--text-3xl, 1.875rem);
+    }
   }
 
   .hero-title .highlight {
@@ -254,22 +295,46 @@
     background-clip: text;
   }
 
+  /* Mobile-first description */
   .hero-description {
-    font-size: var(--text-base, 1rem);
+    font-size: var(--text-sm, 0.875rem);
     color: var(--color-neutral-600, #57534e);
-    max-width: 30rem;
-    margin: 0 0 var(--space-6, 1.5rem);
-    line-height: 1.7;
+    max-width: 100%;
+    margin: 0 auto var(--space-4, 1rem);
+    line-height: 1.6;
   }
 
-  /* Features List */
+  @media (min-width: 640px) {
+    .hero-description {
+      font-size: var(--text-base, 1rem);
+      line-height: 1.7;
+      margin: 0 0 var(--space-6, 1.5rem);
+    }
+  }
+
+  @media (min-width: 900px) {
+    .hero-description {
+      max-width: 30rem;
+    }
+  }
+
+  /* Features List - Mobile first */
   .features {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: var(--space-3, 0.75rem);
+    gap: var(--space-2, 0.5rem);
+    max-width: 400px;
+  }
+
+  @media (min-width: 900px) {
+    .features {
+      gap: var(--space-3, 0.75rem);
+      max-width: none;
+      margin: 0;
+    }
   }
 
   .features li {
@@ -300,13 +365,20 @@
     font-weight: var(--font-medium, 500);
   }
 
-  /* Decorative Elements */
+  /* Decorative Elements - Hidden on mobile, shown on desktop */
   .hero-decoration {
+    display: none;
     position: absolute;
     inset: 0;
     pointer-events: none;
     overflow: hidden;
     z-index: -1;
+  }
+
+  @media (min-width: 900px) {
+    .hero-decoration {
+      display: block;
+    }
   }
 
   .deco-circle {
@@ -347,16 +419,35 @@
     50% { transform: translateY(-20px); }
   }
 
-  /* Login Card */
+  /* Login Card - Mobile first */
   .card {
     background: var(--glass-bg, rgba(253, 251, 247, 0.95));
     border: 1px solid var(--glass-border, rgba(212, 201, 185, 0.3));
-    border-radius: var(--radius-2xl, 1.5rem);
-    padding: var(--space-8, 2rem);
+    border-radius: var(--radius-xl, 1rem);
+    padding: var(--space-4, 1rem);
     backdrop-filter: blur(var(--glass-blur, 12px));
     box-shadow:
-      0 20px 50px rgba(0, 0, 0, 0.1),
+      0 10px 30px rgba(0, 0, 0, 0.08),
       0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: 640px) {
+    .card {
+      padding: var(--space-6, 1.5rem);
+      border-radius: var(--radius-2xl, 1.5rem);
+    }
+  }
+
+  @media (min-width: 900px) {
+    .card {
+      padding: var(--space-8, 2rem);
+      box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.1),
+        0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+    }
   }
 
   .card-header {
@@ -525,13 +616,13 @@
     margin: var(--space-2, 0.5rem) 0 0;
   }
 
-  /* Dark Mode */
+  /* Dark Mode - use hardcoded colors since CSS variables swap in dark mode */
   :global([data-theme="dark"]) .hero-title {
-    color: var(--color-neutral-100, #f5f0e8);
+    color: #f5f0e8;
   }
 
   :global([data-theme="dark"]) .hero-description {
-    color: var(--color-neutral-300, #d4c9b9);
+    color: #d4c9b9;
   }
 
   :global([data-theme="dark"]) .card {
@@ -540,23 +631,50 @@
   }
 
   :global([data-theme="dark"]) .card-header h2 {
-    color: var(--color-neutral-100, #f5f0e8);
+    color: #f5f0e8;
+  }
+
+  :global([data-theme="dark"]) .card-subtitle {
+    color: #a69b8a;
   }
 
   :global([data-theme="dark"]) .google-btn {
-    background: var(--color-neutral-200, #44403c);
-    color: var(--color-neutral-100, #f5f0e8);
-    border-color: var(--color-neutral-300, #57534e);
+    background: #44403c;
+    color: #f5f0e8;
+    border-color: #57534e;
+  }
+
+  :global([data-theme="dark"]) .google-btn:hover:not(:disabled) {
+    background: #57534e;
+    border-color: #78716c;
+  }
+
+  :global([data-theme="dark"]) .divider {
+    color: #78716c;
+  }
+
+  :global([data-theme="dark"]) .divider::before,
+  :global([data-theme="dark"]) .divider::after {
+    border-color: #44403c;
   }
 
   :global([data-theme="dark"]) .input-group label {
-    color: var(--color-neutral-200, #e8e0d5);
+    color: #e8e0d5;
   }
 
   :global([data-theme="dark"]) .input-group input {
-    background: var(--color-neutral-200, #44403c);
-    border-color: var(--color-neutral-300, #57534e);
-    color: var(--color-neutral-100, #f5f0e8);
+    background: #44403c;
+    border-color: #57534e;
+    color: #f5f0e8;
+  }
+
+  :global([data-theme="dark"]) .input-group input:focus {
+    border-color: #22d3ee;
+    box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.15);
+  }
+
+  :global([data-theme="dark"]) .input-group input::placeholder {
+    color: #78716c;
   }
 
   :global([data-theme="dark"]) .features li {
@@ -565,7 +683,7 @@
   }
 
   :global([data-theme="dark"]) .feature-text {
-    color: var(--color-neutral-200, #e8e0d5);
+    color: #e8e0d5;
   }
 
   :global([data-theme="dark"]) .hero-badge {
@@ -573,58 +691,17 @@
   }
 
   :global([data-theme="dark"]) .badge-text {
-    color: var(--color-primary-300, #67e8f9);
+    color: #67e8f9;
   }
 
-  /* Mobile Responsive */
-  @media (max-width: 900px) {
-    .login-layout {
-      grid-template-columns: 1fr;
-      gap: var(--space-6, 1.5rem);
-    }
+  :global([data-theme="dark"]) .hint {
+    color: #a69b8a;
+  }
 
-    .hero {
-      order: -1;
-      text-align: center;
-    }
-
-    .hero-title {
-      font-size: var(--text-2xl, 1.5rem);
-    }
-
-    .hero-description {
-      max-width: 100%;
-    }
-
-    .features {
-      max-width: 400px;
-      margin: 0 auto;
-    }
-
+  /* Feature hover effect - only on desktop */
+  @media (min-width: 900px) {
     .features li:hover {
-      transform: none;
-    }
-
-    .hero-decoration {
-      display: none;
-    }
-  }
-
-  @media (max-width: 640px) {
-    .login-layout {
-      padding: var(--space-4, 1rem);
-    }
-
-    .card {
-      padding: var(--space-6, 1.5rem);
-    }
-
-    .hero-title {
-      font-size: var(--text-xl, 1.25rem);
-    }
-
-    .hero-badge {
-      margin-bottom: var(--space-3, 0.75rem);
+      transform: translateX(-4px);
     }
   }
 </style>

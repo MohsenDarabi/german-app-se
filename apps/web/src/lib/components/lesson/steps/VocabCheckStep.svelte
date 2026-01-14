@@ -516,28 +516,67 @@
     border-radius: var(--radius-lg, 0.75rem);
   }
 
-  /* Dark Mode */
+  /* Dark Mode - use hardcoded colors since CSS variables swap */
   :global([data-theme="dark"]) .flashcard {
-    background: rgba(28, 25, 23, 0.95);
+    background: #44403c;
+    border-color: #57534e;
   }
 
   :global([data-theme="dark"]) .german-word {
-    color: var(--color-neutral-100, #f5f0e8);
+    color: #f5f0e8;
   }
 
   :global([data-theme="dark"]) .persian-word {
-    color: var(--color-xp-light, #818cf8);
+    color: #a5b4fc;
+  }
+
+  :global([data-theme="dark"]) .instruction {
+    color: #a69b8a;
+  }
+
+  :global([data-theme="dark"]) .progress-text {
+    color: #a69b8a;
   }
 
   :global([data-theme="dark"]) .rating-btn {
-    background: rgba(28, 25, 23, 0.95);
+    background: #44403c;
+    border-color: #57534e;
+  }
+
+  :global([data-theme="dark"]) .rating-label {
+    color: #e8e0d5;
+  }
+
+  :global([data-theme="dark"]) .rating-prompt {
+    color: #a69b8a;
+  }
+
+  :global([data-theme="dark"]) .stat-count {
+    color: #f5f0e8;
   }
 
   :global([data-theme="dark"]) .final-stat {
-    background: rgba(28, 25, 23, 0.85);
+    background: #44403c;
+    border-color: #57534e;
   }
 
   :global([data-theme="dark"]) .final-count {
-    color: var(--color-neutral-100, #f5f0e8);
+    color: #f5f0e8;
+  }
+
+  :global([data-theme="dark"]) .final-label {
+    color: #a69b8a;
+  }
+
+  :global([data-theme="dark"]) .example {
+    background: #292524;
+  }
+
+  :global([data-theme="dark"]) .example-label {
+    color: #78716c;
+  }
+
+  :global([data-theme="dark"]) .example-text {
+    color: #d4c9b9;
   }
 </style>

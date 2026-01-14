@@ -159,34 +159,39 @@
     }
   }
 
-  /* Dark Mode */
+  /* Dark Mode - use hardcoded colors since CSS variables swap */
   :global([data-theme="dark"]) .step-title {
-    background: linear-gradient(135deg, var(--color-primary-400, #22d3ee), var(--color-xp-400, #818cf8));
+    background: linear-gradient(135deg, #22d3ee, #818cf8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   :global([data-theme="dark"]) .chat-bubble {
-    background: rgba(28, 25, 23, 0.85);
-    border-color: rgba(68, 64, 60, 0.3);
+    background: #44403c;
+    border-color: #57534e;
   }
 
   :global([data-theme="dark"]) .chat-bubble:nth-child(even) {
-    background: linear-gradient(135deg, rgba(8, 145, 178, 0.15), rgba(8, 145, 178, 0.05));
+    background: linear-gradient(135deg, rgba(8, 145, 178, 0.25), rgba(8, 145, 178, 0.15));
   }
 
   :global([data-theme="dark"]) .dialog-text {
-    color: var(--color-neutral-100, #f5f0e8);
+    color: #f5f0e8;
+    font-weight: 500;
+  }
+
+  :global([data-theme="dark"]) .dialog-translation {
+    color: #a69b8a;
   }
 
   :global([data-theme="dark"]) .speaker-name {
-    background: rgba(8, 145, 178, 0.2);
-    color: var(--color-primary-400, #22d3ee);
+    background: rgba(8, 145, 178, 0.3);
+    color: #22d3ee;
   }
 
   :global([data-theme="dark"]) .chat-bubble:nth-child(even) .speaker-name {
-    background: rgba(79, 70, 229, 0.2);
-    color: var(--color-xp-400, #818cf8);
+    background: rgba(79, 70, 229, 0.3);
+    color: #a5b4fc;
   }
 </style>

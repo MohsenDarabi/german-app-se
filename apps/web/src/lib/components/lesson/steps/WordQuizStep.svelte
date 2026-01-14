@@ -182,13 +182,40 @@
     box-shadow: 0 4px 15px rgba(169, 30, 30, 0.3);
   }
 
-  /* Dark Mode */
+  /* Dark Mode - use hardcoded colors since CSS variables swap */
   :global([data-theme="dark"]) .question {
-    color: var(--color-neutral-100, #f5f0e8);
+    color: #f5f0e8;
   }
 
   :global([data-theme="dark"]) .option-btn {
-    background: rgba(28, 25, 23, 0.95);
-    color: var(--color-neutral-200, #e8e0d5);
+    background: #44403c;
+    border-color: #57534e;
+    color: #f5f0e8;
+  }
+
+  :global([data-theme="dark"]) .option-btn:hover:not(.disabled) {
+    background: #57534e;
+    border-color: #22d3ee;
+  }
+
+  :global([data-theme="dark"]) .option-btn.correct {
+    background: rgba(16, 185, 129, 0.2);
+    border-color: #34d399;
+    color: #34d399;
+  }
+
+  :global([data-theme="dark"]) .option-btn.wrong {
+    background: rgba(169, 30, 30, 0.2);
+    border-color: #f87171;
+    color: #fca5a5;
+  }
+
+  :global([data-theme="dark"]) .retry-section {
+    background: rgba(169, 30, 30, 0.15);
+    border-color: #f87171;
+  }
+
+  :global([data-theme="dark"]) .feedback-text {
+    color: #fca5a5;
   }
 </style>

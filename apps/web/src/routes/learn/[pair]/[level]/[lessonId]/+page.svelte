@@ -217,14 +217,24 @@
   .lesson-layout {
     display: flex;
     flex-direction: column;
-    /* Use 100dvh for better mobile viewport handling */
-    height: 100dvh;
-    height: calc(100vh - 64px); /* Fallback */
+    /* Fill available height without causing double scroll */
+    min-height: 0;
+    height: 100%;
+    /* On mobile, account for nav bars */
+    max-height: calc(100vh - 130px);
+    max-height: calc(100dvh - 130px);
     max-width: 600px;
     margin: 0 auto;
     background: var(--color-neutral-50, #fdfbf7);
     /* Prevent horizontal overflow */
-    overflow-x: hidden;
+    overflow: hidden;
+  }
+
+  @media (min-width: 769px) {
+    .lesson-layout {
+      max-height: calc(100vh - 160px);
+      max-height: calc(100dvh - 160px);
+    }
   }
 
   .lesson-header {
@@ -568,7 +578,7 @@
   }
 
   :global([data-theme="dark"]) .lesson-content {
-    background: var(--color-neutral-900, #1c1917);
+    background: #1c1917;
   }
 
   :global([data-theme="dark"]) .lesson-footer {
