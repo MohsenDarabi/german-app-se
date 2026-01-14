@@ -5,10 +5,12 @@
   "license": "MIT",
   "packageManager": "pnpm@10.18.2",
   "devDependencies": {
-    "typescript": "^5.6.0",
+    "@aws-sdk/client-s3": "^3.968.0",
+    "dotenv": "^17.2.3",
     "eslint": "^9.9.0",
     "prettier": "^3.3.3",
     "turbo": "^2.0.6",
+    "typescript": "^5.6.0",
     "vitest": "^2.0.0"
   },
   "scripts": {
@@ -19,7 +21,7 @@
     "dev": "pnpm --filter @app/web dev",
     "dev:web": "pnpm --filter @app/web dev"
   },
-    "pnpm": {
+  "pnpm": {
     "overrides": {
       "svelte": "4.2.0"
     }

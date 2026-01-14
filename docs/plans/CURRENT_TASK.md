@@ -59,17 +59,14 @@ git checkout feature/r2-cdn-integration
 
 ## Next Step
 
-**Phase 1.1: Set up Cloudflare R2 bucket**
+**Phase 1.2: Get R2 API credentials**
 
-1. Go to https://dash.cloudflare.com
-2. Navigate to R2 > Create bucket
-3. Name: `language-learning-assets`
-4. Get credentials:
-   - Account ID
-   - Access Key ID
-   - Secret Access Key
+1. Go to https://dash.cloudflare.com → R2
+2. Create bucket: `language-learning-assets`
+3. Go to **Manage R2 API Tokens** → **Create API token**
+4. Get credentials (store in `.env.local`)
 
-Then provide these to Claude to continue with the upload script.
+See: `/Volumes/External_ssd_mohsen/WorkspaceExtern/planArchive/credentials.md` for account details.
 
 ---
 
