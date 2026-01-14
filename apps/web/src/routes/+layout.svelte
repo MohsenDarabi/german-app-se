@@ -77,8 +77,14 @@
 </AuthGuard>
 
 <style>
+  /*
+   * App Shell - Single scroll point architecture
+   * The shell is exactly viewport height with no overflow
+   * Only .app-main scrolls (or child components with overflow-y: auto)
+   */
   .app-shell {
-    min-height: 100vh;
+    height: 100vh;
+    height: 100dvh; /* Dynamic viewport height for mobile */
     display: flex;
     flex-direction: column;
     /* Warm cream Persian-inspired background gradient */
@@ -90,8 +96,11 @@
     );
     color: var(--color-neutral-800);
     transition: background var(--transition-slow), color var(--transition-slow);
-    /* Prevent horizontal overflow */
-    overflow-x: hidden;
+    /* Prevent ALL overflow - scrolling happens inside app-main */
+    overflow: hidden;
+    /* Fill entire screen edge-to-edge */
+    width: 100%;
+    position: relative;
   }
 
   /* Dark mode background */
@@ -103,24 +112,38 @@
     );
   }
 
+  /* Mobile-first: app-main is THE scroll container */
   .app-main {
     flex: 1;
-    max-width: 1100px;
     width: 100%;
-    margin: 0 auto;
-    padding: var(--space-6) var(--space-4) var(--space-8);
+    max-width: 100%;
+    margin: 0;
+    padding: var(--space-2);
+    padding-left: calc(var(--space-2) + env(safe-area-inset-left, 0px));
+    padding-right: calc(var(--space-2) + env(safe-area-inset-right, 0px));
+    padding-bottom: calc(70px + env(safe-area-inset-bottom, 0px));
+    box-sizing: border-box;
+    /* THIS is the single scroll point for the app */
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* Smooth scrolling for iOS */
+    -webkit-overflow-scrolling: touch;
   }
 
-  /* Add bottom padding on mobile for BottomNav */
-  @media (max-width: 768px) {
+  /* Tablet: slightly more padding, centered */
+  @media (min-width: 769px) {
     .app-main {
-      padding-bottom: calc(80px + env(safe-area-inset-bottom, 0px));
+      max-width: 900px;
+      margin: 0 auto;
+      padding: var(--space-6) var(--space-4) var(--space-8);
     }
   }
 
+  /* Desktop: wider container */
   @media (min-width: 1024px) {
     .app-main {
-      padding-inline: 0;
+      max-width: 1100px;
+      padding-inline: var(--space-4);
     }
   }
 

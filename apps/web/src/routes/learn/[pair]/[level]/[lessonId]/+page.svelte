@@ -219,15 +219,15 @@
    * Header and footer are fixed, content scrolls
    */
   .lesson-layout {
-    /* Fill available height from parent */
+    /* Fill available space from app-main */
     display: flex;
     flex-direction: column;
     max-width: 600px;
     margin: 0 auto;
     background: var(--color-neutral-50, #fdfbf7);
     border-radius: var(--radius-xl, 1rem);
-    /* Calculate height: viewport - navbar (~60px) - bottom nav (70px) - padding */
-    height: calc(100dvh - 60px - 70px - var(--space-4, 1rem));
+    /* Fill parent height - app-main handles the constraints */
+    height: 100%;
     min-height: 400px; /* Minimum for very small screens */
     /* Prevent any overflow from this container */
     overflow: hidden;
@@ -369,11 +369,6 @@
 
   /* Larger screens */
   @media (min-width: 480px) {
-    .lesson-layout {
-      /* More space available on larger screens */
-      height: calc(100dvh - 70px - 80px - var(--space-6, 1.5rem));
-    }
-
     .lesson-header {
       padding: var(--space-4, 1rem);
       gap: var(--space-3, 0.75rem);
@@ -398,13 +393,6 @@
 
     .continue-btn {
       padding: var(--space-4, 1rem);
-    }
-  }
-
-  /* Desktop: larger height */
-  @media (min-width: 769px) {
-    .lesson-layout {
-      height: calc(100dvh - 80px - var(--space-8, 2rem));
     }
   }
 
