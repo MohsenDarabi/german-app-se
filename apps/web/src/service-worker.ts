@@ -48,20 +48,30 @@ self.addEventListener('activate', (event: ExtendableEvent) => {
 // Handle messages from main thread
 self.addEventListener('message', (event: ExtendableMessageEvent) => {
   const { type, data } = event.data || {};
+  const port = event.ports?.[0]; // MessageChannel port for response
 
   switch (type) {
     case 'SET_PREMIUM':
       isPremium = data.value;
+      port?.postMessage({ success: true });
       break;
 
     case 'CACHE_LESSON':
       // Premium feature: explicitly cache all audio for a lesson
-      event.waitUntil(cacheLessonAssets(data));
+      event.waitUntil(
+        cacheLessonAssets(data)
+          .then(() => port?.postMessage({ success: true }))
+          .catch((e) => port?.postMessage({ error: e.message }))
+      );
       break;
 
     case 'DELETE_LESSON':
       // Premium feature: clear cached lesson audio
-      event.waitUntil(deleteLessonCache(data));
+      event.waitUntil(
+        deleteLessonCache(data)
+          .then(() => port?.postMessage({ success: true }))
+          .catch((e) => port?.postMessage({ error: e.message }))
+      );
       break;
 
     case 'GET_CACHE_SIZE':

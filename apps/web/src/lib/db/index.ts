@@ -8,6 +8,9 @@ export interface User {
   streak: number;
   lastStudyDate: string; // ISO Date string
   totalStudyMinutes: number;
+  // Premium fields
+  isPremium?: boolean;
+  premiumExpiresAt?: string; // ISO Date string
 }
 
 export interface LessonProgress {
@@ -41,11 +44,25 @@ export interface VocabItem {
   srsLevel?: number; // 0-5
 }
 
+/**
+ * Downloaded lesson for offline access (premium only)
+ */
+export interface DownloadedLesson {
+  id?: number;
+  languagePair: string;  // "de-fa", "en-fa"
+  lessonId: string;
+  audioHashes: string[]; // Unique hashes for this lesson
+  downloadedAt: string;  // ISO Date string
+  sizeBytes: number;
+  version: string;
+}
+
 export class DeutschLernDB extends Dexie {
   users!: Table<User>;
   lessonProgress!: Table<LessonProgress>;
   vocab!: Table<VocabItem>;
   wrongAnswers!: Table<WrongAnswer>;
+  downloadedLessons!: Table<DownloadedLesson>;
 
   constructor() {
     super('DeutschLernDB');
@@ -87,6 +104,20 @@ export class DeutschLernDB extends Dexie {
       lessonProgress: '++id, &lessonId, status, updatedAt',
       vocab: '++id, &word, nextReview, addedAt',
       wrongAnswers: '++id, [lessonId+stepId], lessonId, reviewedAt'
+    });
+
+    // Add premium support and downloaded lessons table
+    this.version(5).stores({
+      users: '++id, email',
+      lessonProgress: '++id, &lessonId, status, updatedAt',
+      vocab: '++id, &word, nextReview, addedAt',
+      wrongAnswers: '++id, [lessonId+stepId], lessonId, reviewedAt',
+      downloadedLessons: '++id, &[languagePair+lessonId], languagePair, downloadedAt'
+    }).upgrade(tx => {
+      // Migrate existing users to add premium fields
+      return tx.table('users').toCollection().modify(user => {
+        user.isPremium = user.isPremium ?? false;
+      });
     });
   }
 }
