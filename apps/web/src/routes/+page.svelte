@@ -6,6 +6,7 @@
   import DevModeToggle from "$lib/components/dev/DevModeToggle.svelte";
   import { devMode } from "$lib/stores/devMode";
   import { resetLessonForReplay, clearLessonWrongAnswers } from "$lib/services/progressService";
+  import { XPBar, StreakCounter, Button } from '@pkg/ui';
 
   // Fix BiDi for mixed Persian/German titles - wrap parenthesized text in LTR
   function fixBiDiTitle(title: string): string {
@@ -26,6 +27,11 @@
     const now = new Date();
     return await db.vocab.where('nextReview').belowOrEqual(now).count();
   });
+
+  // XP calculation for level display
+  $: currentXP = ($user?.xp || 0) % 100;
+  $: level = Math.floor(($user?.xp || 0) / 100) + 1;
+  const levelXP = 100;
 
   // Combine all lessons for sequential unlocking
   $: allLessons = [...A1_MODULES, ...A2_MODULES].flatMap(m => m.lessons);
@@ -89,32 +95,42 @@
 </script>
 
 <div class="dashboard" dir="rtl">
+  <!-- Gamification Header -->
   <header class="header">
-    <h1>مسیر یادگیری شما</h1>
-    <p class="subtitle">آلمانی سطح A1 و A2</p>
+    <div class="header-top">
+      <h1 class="title">مسیر یادگیری شما</h1>
+      <p class="subtitle">آلمانی سطح A1 و A2</p>
+    </div>
 
-    <!-- Stats Header -->
-    {#if $user || $completedCount}
-      <div class="stats-header">
-        <div class="stat">
-          <span class="stat-icon">🔥</span>
-          <span class="stat-value">{$user?.streak || 0}</span>
-          <span class="stat-label">روز متوالی</span>
+    <!-- XP Bar + Streak Row -->
+    {#if $user}
+      <div class="gamification-row">
+        <div class="xp-section">
+          <XPBar {currentXP} {levelXP} {level} />
         </div>
-        <div class="stat">
+        <div class="streak-section">
+          <StreakCounter streak={$user?.streak || 0} size="md" />
+        </div>
+      </div>
+    {/if}
+
+    <!-- Stats Cards -->
+    {#if $user || $completedCount}
+      <div class="stats-grid">
+        <div class="stat-card xp-card">
           <span class="stat-icon">⭐</span>
           <span class="stat-value">{$user?.xp || 0}</span>
-          <span class="stat-label">امتیاز</span>
+          <span class="stat-label">امتیاز کل</span>
         </div>
-        <div class="stat">
+        <div class="stat-card completed-card">
           <span class="stat-icon">✅</span>
           <span class="stat-value">{$completedCount || 0}</span>
           <span class="stat-label">تکمیل شده</span>
         </div>
-        <div class="stat">
+        <div class="stat-card cards-card">
           <span class="stat-icon">🎴</span>
           <span class="stat-value">{$dueCardsCount || 0}</span>
-          <span class="stat-label">کارت برای مرور</span>
+          <span class="stat-label">کارت مرور</span>
         </div>
       </div>
     {/if}
@@ -122,14 +138,18 @@
     <!-- Review Button -->
     {#if $dueCardsCount > 0}
       <a href="/review/flashcards" class="review-btn">
-        🎴 مرور کارت‌ها ({$dueCardsCount} کارت)
+        <span class="review-icon">🎴</span>
+        <span class="review-text">مرور کارت‌ها ({$dueCardsCount} کارت)</span>
       </a>
     {/if}
   </header>
 
   <!-- A1 Level -->
   <div class="level-section">
-    <h2 class="level-title">🇩🇪 سطح A1 - مبتدی</h2>
+    <h2 class="level-title">
+      <span class="level-badge">A1</span>
+      سطح مبتدی
+    </h2>
     <div class="timeline">
       {#key [$progressMap, $devMode]}
         {#each A1_MODULES as module, moduleIndex}
@@ -143,23 +163,28 @@
                 {@const progress = $progressMap?.get(lesson.id)}
                 {@const isLocked = status === 'locked'}
 
-              <div class="lesson-card" class:locked={isLocked}>
-                <div class="icon" class:completed={status === 'completed'} class:in-progress={status === 'in-progress'}>
+              <div
+                class="lesson-card"
+                class:locked={isLocked}
+                class:completed={status === 'completed'}
+                class:in-progress={status === 'in-progress'}
+              >
+                <div class="lesson-icon" class:completed={status === 'completed'} class:in-progress={status === 'in-progress'}>
                   <span class="lesson-num">{globalIndex + 1}</span>
                   <span class="status-icon">{getIcon(status)}</span>
                 </div>
-                <div class="info">
+                <div class="lesson-info">
                   <h3>{@html fixBiDiTitle(lesson.title)}</h3>
                   <p>{lesson.description}</p>
                 </div>
-                <div class="action">
+                <div class="lesson-action">
                   {#if isLocked}
-                    <button class="start-btn locked-btn" disabled>
+                    <button class="action-btn locked-btn" disabled>
                       {getButtonText(status, progress)}
                     </button>
                   {:else if status === 'completed' || status === 'in-progress'}
                     <div class="action-group">
-                      <a href={lesson.path} class="start-btn" class:completed={status === 'completed'}>
+                      <a href={lesson.path} class="action-btn" class:completed={status === 'completed'}>
                         {getButtonText(status, progress)}
                       </a>
                       <button class="reset-btn" on:click={() => handleResetLesson(lesson.id)}>
@@ -167,7 +192,7 @@
                       </button>
                     </div>
                   {:else}
-                    <a href={lesson.path} class="start-btn">
+                    <a href={lesson.path} class="action-btn primary">
                       {getButtonText(status, progress)}
                     </a>
                   {/if}
@@ -183,7 +208,10 @@
 
   <!-- A2 Level -->
   <div class="level-section">
-    <h2 class="level-title">🇩🇪 سطح A2 - مقدماتی</h2>
+    <h2 class="level-title">
+      <span class="level-badge a2">A2</span>
+      سطح مقدماتی
+    </h2>
     <div class="timeline">
       {#key [$progressMap, $devMode]}
         {#each A2_MODULES as module, moduleIndex}
@@ -199,23 +227,28 @@
                 {@const progress = $progressMap?.get(lesson.id)}
                 {@const isLocked = status === 'locked'}
 
-              <div class="lesson-card" class:locked={isLocked}>
-                <div class="icon" class:completed={status === 'completed'} class:in-progress={status === 'in-progress'}>
+              <div
+                class="lesson-card"
+                class:locked={isLocked}
+                class:completed={status === 'completed'}
+                class:in-progress={status === 'in-progress'}
+              >
+                <div class="lesson-icon" class:completed={status === 'completed'} class:in-progress={status === 'in-progress'}>
                   <span class="lesson-num">{a2LessonNum}</span>
                   <span class="status-icon">{getIcon(status)}</span>
                 </div>
-                <div class="info">
+                <div class="lesson-info">
                   <h3>{@html fixBiDiTitle(lesson.title)}</h3>
                   <p>{lesson.description}</p>
                 </div>
-                <div class="action">
+                <div class="lesson-action">
                   {#if isLocked}
-                    <button class="start-btn locked-btn" disabled>
+                    <button class="action-btn locked-btn" disabled>
                       {getButtonText(status, progress)}
                     </button>
                   {:else if status === 'completed' || status === 'in-progress'}
                     <div class="action-group">
-                      <a href={lesson.path} class="start-btn" class:completed={status === 'completed'}>
+                      <a href={lesson.path} class="action-btn" class:completed={status === 'completed'}>
                         {getButtonText(status, progress)}
                       </a>
                       <button class="reset-btn" on:click={() => handleResetLesson(lesson.id)}>
@@ -223,7 +256,7 @@
                       </button>
                     </div>
                   {:else}
-                    <a href={lesson.path} class="start-btn">
+                    <a href={lesson.path} class="action-btn primary">
                       {getButtonText(status, progress)}
                     </a>
                   {/if}
@@ -245,111 +278,199 @@
   .dashboard {
     max-width: 800px;
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: var(--space-6, 1.5rem) var(--space-4, 1rem);
   }
 
+  /* Header Section */
   .header {
-    margin-bottom: 2.5rem;
+    margin-bottom: var(--space-8, 2rem);
     text-align: center;
   }
 
-  .header h1 {
-    font-size: 2rem;
-    font-weight: 800;
-    color: #1e293b;
-    margin-bottom: 0.5rem;
+  .header-top {
+    margin-bottom: var(--space-6, 1.5rem);
+  }
+
+  .title {
+    font-size: var(--text-2xl, 1.75rem);
+    font-weight: var(--font-extrabold, 800);
+    color: var(--color-neutral-800, #292524);
+    margin: 0 0 var(--space-2, 0.5rem);
+    background: linear-gradient(135deg, var(--color-primary-600, #0e7490), var(--color-primary-500, #0891b2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
   .subtitle {
-    color: #64748b;
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
+    color: var(--color-neutral-500, #78716c);
+    font-size: var(--text-base, 1rem);
+    margin: 0;
   }
 
-  .stats-header {
+  /* Gamification Row */
+  .gamification-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-6, 1.5rem);
+    margin-bottom: var(--space-6, 1.5rem);
+    flex-wrap: wrap;
+  }
+
+  .xp-section {
+    flex: 1;
+    max-width: 300px;
+    min-width: 200px;
+  }
+
+  .streak-section {
+    flex-shrink: 0;
+  }
+
+  /* Stats Grid - Glass morphism cards */
+  .stats-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    max-width: 600px;
-    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-3, 0.75rem);
+    max-width: 500px;
+    margin: 0 auto var(--space-6, 1.5rem);
   }
 
-  .stat {
+  .stat-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
-    background: white;
-    border: 2px solid #e2e8f0;
-    border-radius: 0.75rem;
+    padding: var(--space-4, 1rem) var(--space-3, 0.75rem);
+    background: var(--glass-bg, rgba(253, 251, 247, 0.85));
+    border: 1px solid var(--glass-border, rgba(212, 201, 185, 0.3));
+    border-radius: var(--radius-xl, 1rem);
+    backdrop-filter: blur(var(--glass-blur, 12px));
+    transition: transform var(--transition-bounce, 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55)),
+                box-shadow var(--transition-normal, 200ms);
+  }
+
+  .stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg, 0 10px 25px -5px rgba(0, 0, 0, 0.1));
+  }
+
+  .stat-card.xp-card {
+    border-color: var(--color-xp-400, #818cf8);
+    background: linear-gradient(135deg, rgba(79, 70, 229, 0.1), rgba(129, 140, 248, 0.05));
+  }
+
+  .stat-card.completed-card {
+    border-color: var(--color-success-400, #facc15);
+    background: linear-gradient(135deg, rgba(234, 179, 8, 0.1), rgba(250, 204, 21, 0.05));
+  }
+
+  .stat-card.cards-card {
+    border-color: var(--color-gem-400, #10b981);
+    background: linear-gradient(135deg, rgba(5, 150, 105, 0.1), rgba(16, 185, 129, 0.05));
   }
 
   .stat-icon {
-    font-size: 1.5rem;
-    margin-bottom: 0.25rem;
+    font-size: var(--text-xl, 1.25rem);
+    margin-bottom: var(--space-1, 0.25rem);
   }
 
   .stat-value {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #1e293b;
+    font-size: var(--text-xl, 1.25rem);
+    font-weight: var(--font-bold, 700);
+    color: var(--color-neutral-800, #292524);
   }
 
   .stat-label {
-    font-size: 0.75rem;
-    color: #64748b;
+    font-size: var(--text-xs, 0.75rem);
+    color: var(--color-neutral-500, #78716c);
+    margin-top: var(--space-1, 0.25rem);
   }
 
+  /* Review Button */
   .review-btn {
-    display: inline-block;
-    margin-top: 1.5rem;
-    padding: 1rem 2rem;
-    background: linear-gradient(135deg, #3b82f6 0%, #22c55e 100%);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2, 0.5rem);
+    padding: var(--space-3, 0.75rem) var(--space-6, 1.5rem);
+    background: linear-gradient(135deg, var(--color-primary-500, #0891b2), var(--color-gem-500, #059669));
     color: white;
     text-decoration: none;
-    border-radius: 999px;
-    font-weight: 700;
-    font-size: 1.1rem;
-    transition: all 0.2s;
-    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+    border-radius: var(--radius-full, 9999px);
+    font-weight: var(--font-bold, 700);
+    font-size: var(--text-base, 1rem);
+    transition: all var(--transition-normal, 200ms);
+    box-shadow: 0 4px 15px rgba(8, 145, 178, 0.3);
   }
 
   .review-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(59, 130, 246, 0.4);
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 6px 20px rgba(8, 145, 178, 0.4);
   }
 
+  .review-btn:active {
+    transform: translateY(0) scale(0.98);
+  }
+
+  .review-icon {
+    font-size: var(--text-lg, 1.125rem);
+  }
+
+  /* Level Sections */
   .level-section {
-    margin-bottom: 3rem;
+    margin-bottom: var(--space-10, 2.5rem);
   }
 
   .level-title {
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: #1e293b;
-    margin-bottom: 1.5rem;
-    padding: 0.75rem 1rem;
-    background: linear-gradient(135deg, #eff6ff 0%, #f0fdf4 100%);
-    border-radius: 0.75rem;
-    border-right: 4px solid #3b82f6;
+    display: flex;
+    align-items: center;
+    gap: var(--space-3, 0.75rem);
+    font-size: var(--text-xl, 1.25rem);
+    font-weight: var(--font-bold, 700);
+    color: var(--color-neutral-800, #292524);
+    margin-bottom: var(--space-6, 1.5rem);
+    padding: var(--space-4, 1rem);
+    background: linear-gradient(135deg, var(--color-primary-50, #ecfeff), var(--color-neutral-50, #fdfbf7));
+    border-radius: var(--radius-xl, 1rem);
+    border-right: 4px solid var(--color-primary-500, #0891b2);
   }
 
+  .level-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--color-primary-500, #0891b2), var(--color-primary-600, #0e7490));
+    color: white;
+    font-weight: var(--font-extrabold, 800);
+    font-size: var(--text-sm, 0.875rem);
+    border-radius: var(--radius-lg, 0.75rem);
+    box-shadow: 0 2px 8px rgba(8, 145, 178, 0.3);
+  }
+
+  .level-badge.a2 {
+    background: linear-gradient(135deg, var(--color-xp-500, #4f46e5), var(--color-xp-600, #4338ca));
+    box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3);
+  }
+
+  /* Timeline */
   .timeline {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: var(--space-8, 2rem);
     position: relative;
   }
 
-  /* Vertical Line */
   .timeline::before {
     content: '';
     position: absolute;
-    left: 2rem; /* Align with icons */
+    left: 1.75rem;
     top: 0;
     bottom: 0;
-    width: 2px;
-    background: #e2e8f0;
+    width: 3px;
+    background: linear-gradient(180deg, var(--color-primary-300, #67e8f9), var(--color-primary-200, #a5f3fc));
+    border-radius: var(--radius-full, 9999px);
     z-index: 0;
   }
 
@@ -359,38 +480,41 @@
   }
 
   .module-title {
-    background: #f1f5f9;
+    background: var(--color-neutral-100, #f5f0e8);
     display: inline-block;
-    padding: 0.5rem 1rem;
-    border-radius: 999px;
-    font-size: 0.9rem;
-    font-weight: 700;
-    color: #475569;
-    margin-bottom: 1.5rem;
-    margin-left: 3.5rem;
+    padding: var(--space-2, 0.5rem) var(--space-4, 1rem);
+    border-radius: var(--radius-full, 9999px);
+    font-size: var(--text-sm, 0.875rem);
+    font-weight: var(--font-semibold, 600);
+    color: var(--color-neutral-600, #57534e);
+    margin-bottom: var(--space-4, 1rem);
+    margin-left: var(--space-10, 2.5rem);
+    box-shadow: var(--shadow-sm, 0 1px 2px rgba(0, 0, 0, 0.05));
   }
 
   .lessons-list {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: var(--space-4, 1rem);
   }
 
+  /* Lesson Cards */
   .lesson-card {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    background: white;
-    border: 1px solid #e2e8f0;
-    padding: 1rem;
-    border-radius: 1rem;
-    transition: transform 0.2s, box-shadow 0.2s;
+    gap: var(--space-4, 1rem);
+    background: var(--glass-bg, rgba(253, 251, 247, 0.85));
+    border: 1px solid var(--glass-border, rgba(212, 201, 185, 0.3));
+    padding: var(--space-4, 1rem);
+    border-radius: var(--radius-xl, 1rem);
+    backdrop-filter: blur(var(--glass-blur, 12px));
+    transition: all var(--transition-normal, 200ms);
   }
 
   .lesson-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    border-color: #cbd5e1;
+    transform: translateX(-4px);
+    box-shadow: var(--shadow-md, 0 4px 15px rgba(0, 0, 0, 0.08));
+    border-color: var(--color-primary-300, #67e8f9);
   }
 
   .lesson-card.locked {
@@ -403,138 +527,239 @@
     box-shadow: none;
   }
 
-  .icon {
-    width: 3rem;
-    height: 3rem;
-    background: #3b82f6;
-    border-radius: 50%;
+  .lesson-card.completed {
+    border-color: var(--color-success-400, #facc15);
+    background: linear-gradient(135deg, rgba(234, 179, 8, 0.05), var(--glass-bg, rgba(253, 251, 247, 0.85)));
+  }
+
+  .lesson-card.in-progress {
+    border-color: var(--color-streak-400, #fbbf24);
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.05), var(--glass-bg, rgba(253, 251, 247, 0.85)));
+  }
+
+  /* Lesson Icon */
+  .lesson-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    background: linear-gradient(135deg, var(--color-primary-500, #0891b2), var(--color-primary-600, #0e7490));
+    border-radius: var(--radius-full, 9999px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: white;
-    box-shadow: 0 0 0 4px #fff;
+    box-shadow: 0 0 0 4px var(--color-neutral-50, #fdfbf7), 0 4px 12px rgba(8, 145, 178, 0.3);
     flex-shrink: 0;
     position: relative;
+    transition: all var(--transition-bounce, 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55));
   }
 
-  .icon .lesson-num {
-    font-size: 1rem;
-    font-weight: 700;
+  .lesson-card:hover .lesson-icon {
+    transform: scale(1.1);
+  }
+
+  .lesson-icon .lesson-num {
+    font-size: var(--text-base, 1rem);
+    font-weight: var(--font-bold, 700);
     line-height: 1;
   }
 
-  .icon .status-icon {
+  .lesson-icon .status-icon {
     font-size: 0.6rem;
     line-height: 1;
-    margin-top: 1px;
+    margin-top: 2px;
   }
 
-  .icon.completed {
-    background: #22c55e;
+  .lesson-icon.completed {
+    background: linear-gradient(135deg, var(--color-success-500, #eab308), var(--color-success-600, #ca8a04));
+    box-shadow: 0 0 0 4px var(--color-neutral-50, #fdfbf7), 0 4px 12px rgba(234, 179, 8, 0.3);
   }
 
-  .icon.in-progress {
-    background: #f59e0b;
+  .lesson-icon.in-progress {
+    background: linear-gradient(135deg, var(--color-streak-500, #f59e0b), var(--color-streak-600, #d97706));
+    box-shadow: 0 0 0 4px var(--color-neutral-50, #fdfbf7), 0 4px 12px rgba(245, 158, 11, 0.3);
+    animation: pulse-glow 2s ease-in-out infinite;
   }
 
-  .info {
+  /* Lesson Info */
+  .lesson-info {
     flex: 1;
+    min-width: 0;
   }
 
-  .info h3 {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: #0f172a;
-    margin-bottom: 0.25rem;
-    unicode-bidi: plaintext; /* Fix punctuation in mixed RTL/LTR text */
+  .lesson-info h3 {
+    font-size: var(--text-base, 1rem);
+    font-weight: var(--font-bold, 700);
+    color: var(--color-neutral-800, #292524);
+    margin: 0 0 var(--space-1, 0.25rem);
+    unicode-bidi: plaintext;
   }
 
-  .info p {
-    font-size: 0.9rem;
-    color: #64748b;
+  .lesson-info p {
+    font-size: var(--text-sm, 0.875rem);
+    color: var(--color-neutral-500, #78716c);
+    margin: 0;
+    line-height: 1.4;
   }
 
-  .start-btn {
-    background: #22c55e;
+  /* Action Buttons */
+  .lesson-action {
+    flex-shrink: 0;
+  }
+
+  .action-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-2, 0.5rem) var(--space-4, 1rem);
+    background: linear-gradient(135deg, var(--color-success-500, #eab308), var(--color-success-600, #ca8a04));
     color: white;
     text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 999px;
-    font-weight: 600;
-    font-size: 0.9rem;
-    transition: background 0.2s;
+    border-radius: var(--radius-full, 9999px);
+    font-weight: var(--font-semibold, 600);
+    font-size: var(--text-sm, 0.875rem);
+    transition: all var(--transition-normal, 200ms);
     border: none;
     cursor: pointer;
+    min-height: 44px;
+    box-shadow: 0 2px 8px rgba(234, 179, 8, 0.3);
   }
 
-  .start-btn:hover {
-    background: #16a34a;
+  .action-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(234, 179, 8, 0.4);
   }
 
-  .start-btn.completed {
-    background: #3b82f6;
+  .action-btn:active {
+    transform: translateY(0) scale(0.98);
   }
 
-  .start-btn.completed:hover {
-    background: #2563eb;
+  .action-btn.primary {
+    background: linear-gradient(135deg, var(--color-primary-500, #0891b2), var(--color-primary-600, #0e7490));
+    box-shadow: 0 2px 8px rgba(8, 145, 178, 0.3);
+  }
+
+  .action-btn.primary:hover {
+    box-shadow: 0 4px 12px rgba(8, 145, 178, 0.4);
+  }
+
+  .action-btn.completed {
+    background: linear-gradient(135deg, var(--color-xp-500, #4f46e5), var(--color-xp-600, #4338ca));
+    box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3);
+  }
+
+  .action-btn.completed:hover {
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.4);
   }
 
   .locked-btn {
-    background: #cbd5e1;
-    color: #94a3b8;
+    background: var(--color-neutral-300, #d4c9b9);
+    color: var(--color-neutral-500, #78716c);
     cursor: not-allowed;
+    box-shadow: none;
   }
 
   .locked-btn:hover {
-    background: #cbd5e1;
+    transform: none;
+    box-shadow: none;
   }
 
   .action-group {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: var(--space-2, 0.5rem);
     align-items: stretch;
   }
 
   .reset-btn {
     background: transparent;
-    color: #64748b;
-    border: 1px solid #e2e8f0;
-    padding: 0.35rem 0.75rem;
-    border-radius: 999px;
-    font-weight: 500;
-    font-size: 0.8rem;
+    color: var(--color-neutral-500, #78716c);
+    border: 1px solid var(--color-neutral-200, #e8e0d5);
+    padding: var(--space-1, 0.25rem) var(--space-3, 0.75rem);
+    border-radius: var(--radius-full, 9999px);
+    font-weight: var(--font-medium, 500);
+    font-size: var(--text-xs, 0.75rem);
     cursor: pointer;
-    transition: all 0.2s;
+    transition: all var(--transition-fast, 150ms);
   }
 
   .reset-btn:hover {
-    background: #fef2f2;
-    border-color: #fca5a5;
-    color: #dc2626;
+    background: var(--color-error-50, #fef2f2);
+    border-color: var(--color-error-300, #fca5a5);
+    color: var(--color-error-500, #a91e1e);
   }
 
+  /* Animations */
+  @keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 0 4px var(--color-neutral-50, #fdfbf7), 0 4px 12px rgba(245, 158, 11, 0.3); }
+    50% { box-shadow: 0 0 0 4px var(--color-neutral-50, #fdfbf7), 0 4px 20px rgba(245, 158, 11, 0.5); }
+  }
+
+  /* Dark Mode */
+  :global([data-theme="dark"]) .title {
+    background: linear-gradient(135deg, var(--color-primary-400, #22d3ee), var(--color-primary-300, #67e8f9));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  :global([data-theme="dark"]) .level-title {
+    background: linear-gradient(135deg, rgba(8, 145, 178, 0.15), var(--color-neutral-100, #292524));
+    color: var(--color-neutral-100, #f5f0e8);
+  }
+
+  :global([data-theme="dark"]) .lesson-card {
+    background: rgba(28, 25, 23, 0.85);
+    border-color: rgba(68, 64, 60, 0.3);
+  }
+
+  :global([data-theme="dark"]) .stat-card {
+    background: rgba(28, 25, 23, 0.85);
+  }
+
+  :global([data-theme="dark"]) .module-title {
+    background: var(--color-neutral-200, #44403c);
+    color: var(--color-neutral-100, #f5f0e8);
+  }
+
+  :global([data-theme="dark"]) .lesson-info h3 {
+    color: var(--color-neutral-100, #f5f0e8);
+  }
+
+  :global([data-theme="dark"]) .stat-value {
+    color: var(--color-neutral-100, #f5f0e8);
+  }
+
+  /* Mobile Responsive */
   @media (max-width: 600px) {
     .dashboard {
-      padding: 1rem 0.75rem;
+      padding: var(--space-4, 1rem) var(--space-3, 0.75rem);
     }
 
-    .header h1 {
-      font-size: 1.5rem;
+    .title {
+      font-size: var(--text-xl, 1.25rem);
     }
 
-    .stats-header {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 0.5rem;
+    .gamification-row {
+      flex-direction: column;
+      gap: var(--space-4, 1rem);
     }
 
-    .stat {
-      padding: 0.75rem 0.5rem;
+    .xp-section {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .stats-grid {
+      gap: var(--space-2, 0.5rem);
+    }
+
+    .stat-card {
+      padding: var(--space-3, 0.75rem) var(--space-2, 0.5rem);
     }
 
     .stat-value {
-      font-size: 1.25rem;
+      font-size: var(--text-base, 1rem);
     }
 
     .timeline::before {
@@ -543,48 +768,36 @@
 
     .lesson-card {
       flex-wrap: wrap;
-      padding: 0.875rem;
-      gap: 0.75rem;
+      padding: var(--space-3, 0.75rem);
+      gap: var(--space-3, 0.75rem);
     }
 
-    .icon {
-      width: 2.75rem;
-      height: 2.75rem;
-      box-shadow: none;
+    .lesson-icon {
+      width: 3rem;
+      height: 3rem;
+      box-shadow: 0 2px 8px rgba(8, 145, 178, 0.2);
     }
 
-    .icon .lesson-num {
-      font-size: 0.95rem;
+    .lesson-icon .lesson-num {
+      font-size: var(--text-sm, 0.875rem);
     }
 
-    .icon .status-icon {
-      font-size: 0.55rem;
+    .lesson-info h3 {
+      font-size: var(--text-sm, 0.875rem);
     }
 
-    .info {
-      flex: 1;
-      min-width: 0;
+    .lesson-info p {
+      font-size: var(--text-xs, 0.75rem);
     }
 
-    .info h3 {
-      font-size: 0.95rem;
-      line-height: 1.3;
-    }
-
-    .info p {
-      font-size: 0.8rem;
-      line-height: 1.4;
-    }
-
-    .action {
+    .lesson-action {
       width: 100%;
-      margin-top: 0.25rem;
+      margin-top: var(--space-1, 0.25rem);
     }
 
-    .start-btn {
+    .action-btn {
       width: 100%;
-      text-align: center;
-      padding: 0.6rem 1rem;
+      padding: var(--space-3, 0.75rem);
     }
 
     .action-group {
@@ -592,7 +805,7 @@
       justify-content: space-between;
     }
 
-    .action-group .start-btn {
+    .action-group .action-btn {
       flex: 1;
     }
 
@@ -602,18 +815,24 @@
 
     .module-title {
       margin-left: 0;
-      margin-bottom: 1rem;
+      margin-bottom: var(--space-3, 0.75rem);
       display: block;
       text-align: center;
     }
 
     .level-title {
-      font-size: 1.2rem;
-      padding: 0.6rem 0.75rem;
+      font-size: var(--text-base, 1rem);
+      padding: var(--space-3, 0.75rem);
+    }
+
+    .level-badge {
+      width: 32px;
+      height: 32px;
+      font-size: var(--text-xs, 0.75rem);
     }
 
     .lessons-list {
-      gap: 1rem;
+      gap: var(--space-3, 0.75rem);
     }
   }
 </style>

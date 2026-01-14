@@ -159,20 +159,28 @@
     {#if completionStats}
       <!-- Final completion screen with stats -->
       <div class="completion-screen">
-        <h2>🎉 درس تمام شد!</h2>
+        <div class="completion-icon">🎉</div>
+        <h2>درس تمام شد!</h2>
         <div class="stats-grid">
           <div class="stat-item">
-            <span class="stat-icon">📊</span>
+            <div class="stat-icon-wrapper">
+              <span class="stat-icon">📊</span>
+            </div>
             <span class="stat-value">{completionStats.score}%</span>
             <span class="stat-label">امتیاز</span>
           </div>
           <div class="stat-item">
-            <span class="stat-icon">⭐</span>
+            <div class="stat-icon-wrapper">
+              <span class="stat-icon">⭐</span>
+            </div>
             <span class="stat-value">+{completionStats.xpEarned}</span>
-            <span class="stat-label">امتیاز کسب شده</span>
+            <span class="stat-label">XP کسب شده</span>
           </div>
         </div>
-        <button class="finish-btn" on:click={backToDashboard}>بازگشت به صفحه اصلی</button>
+        <button class="finish-btn" on:click={backToDashboard}>
+          <span>🏠</span>
+          <span>بازگشت به صفحه اصلی</span>
+        </button>
       </div>
     {:else if showReviewScreen}
       <!-- Review screen for wrong answers -->
@@ -214,65 +222,75 @@
     height: calc(100vh - 64px); /* Fallback */
     max-width: 600px;
     margin: 0 auto;
-    background: #fff;
+    background: var(--color-neutral-50, #fdfbf7);
   }
 
   .lesson-header {
-    padding: 0.75rem;
+    padding: var(--space-3, 0.75rem);
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: var(--space-2, 0.5rem);
     flex-shrink: 0;
+    background: var(--glass-bg, rgba(253, 251, 247, 0.85));
+    backdrop-filter: blur(var(--glass-blur, 12px));
+    border-bottom: 1px solid var(--glass-border, rgba(212, 201, 185, 0.3));
   }
 
   .exit-btn {
     /* 44px minimum touch target */
     width: 44px;
     height: 44px;
-    border-radius: 50%;
+    border-radius: var(--radius-full, 50%);
     border: none;
-    background: #f1f5f9;
-    color: #64748b;
+    background: var(--color-neutral-100, #f5f0e8);
+    color: var(--color-neutral-500, #78716c);
     font-size: 1.1rem;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.2s;
+    transition: all var(--transition-normal, 200ms);
     flex-shrink: 0;
   }
 
   .exit-btn:hover {
-    background: #e2e8f0;
-    color: #475569;
+    background: var(--color-neutral-200, #e8e0d5);
+    color: var(--color-neutral-700, #44403c);
+    transform: scale(1.05);
   }
 
   .step-counter {
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: #64748b;
+    font-size: var(--text-sm, 0.875rem);
+    font-weight: var(--font-bold, 700);
+    color: var(--color-xp-500, #4f46e5);
     white-space: nowrap;
     flex-shrink: 0;
+    background: var(--color-xp-50, #eef2ff);
+    padding: var(--space-1, 0.25rem) var(--space-3, 0.75rem);
+    border-radius: var(--radius-full, 9999px);
   }
 
   .progress-bar {
     flex: 1;
-    height: 6px;
-    background: #e2e8f0;
-    border-radius: 999px;
+    height: 8px;
+    background: var(--color-neutral-200, #e8e0d5);
+    border-radius: var(--radius-full, 9999px);
     overflow: hidden;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
   }
 
   .progress-fill {
     height: 100%;
-    background: #3b82f6;
-    transition: width 0.3s ease;
+    background: linear-gradient(90deg, var(--color-xp-500, #4f46e5), var(--color-primary-500, #0891b2));
+    transition: width 0.5s ease;
+    border-radius: var(--radius-full, 9999px);
+    box-shadow: 0 0 8px var(--color-xp-glow, rgba(79, 70, 229, 0.4));
   }
 
   .lesson-content {
     flex: 1;
     overflow-y: auto;
-    padding: 0.75rem;
+    padding: var(--space-3, 0.75rem);
     display: flex;
     flex-direction: column;
     /* Use flex-start to prevent long content being pushed off-screen */
@@ -280,146 +298,329 @@
     justify-content: flex-start;
     /* Prevent content from being hidden under notches */
     padding-bottom: env(safe-area-inset-bottom, 0.75rem);
+    background: var(--color-neutral-50, #fdfbf7);
   }
 
   .step-animation {
     /* Auto margins center short content, but allow long content to scroll */
     margin: auto 0;
     width: 100%;
+    animation: fadeSlideIn 0.3s ease;
+  }
+
+  @keyframes fadeSlideIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   .lesson-footer {
-    padding: 0.75rem;
+    padding: var(--space-3, 0.75rem);
     padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
-    border-top: 1px solid #f1f5f9;
+    background: var(--glass-bg, rgba(253, 251, 247, 0.95));
+    backdrop-filter: blur(var(--glass-blur, 12px));
+    border-top: 1px solid var(--glass-border, rgba(212, 201, 185, 0.3));
     flex-shrink: 0;
   }
 
   .continue-btn {
     width: 100%;
     /* 44px minimum touch target */
-    min-height: 44px;
-    padding: 0.75rem;
-    border-radius: 0.75rem;
-    background: #22c55e;
-    color: white;
-    font-weight: 700;
-    font-size: 1rem;
+    min-height: 48px;
+    padding: var(--space-3, 0.75rem);
+    border-radius: var(--radius-xl, 1rem);
+    background: linear-gradient(135deg, var(--color-success-500, #eab308), var(--color-success-600, #ca8a04));
+    color: var(--color-neutral-900, #1c1917);
+    font-weight: var(--font-bold, 700);
+    font-size: var(--text-base, 1rem);
     border: none;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: all var(--transition-normal, 200ms);
+    box-shadow: 0 4px 15px rgba(234, 179, 8, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2, 0.5rem);
   }
 
   /* Larger screens */
   @media (min-width: 480px) {
     .lesson-header {
-      padding: 1rem;
-      gap: 0.75rem;
+      padding: var(--space-4, 1rem);
+      gap: var(--space-3, 0.75rem);
     }
 
     .exit-btn {
-      width: 32px;
-      height: 32px;
+      width: 40px;
+      height: 40px;
     }
 
     .step-counter {
-      font-size: 0.85rem;
+      font-size: var(--text-sm, 0.875rem);
     }
 
     .progress-bar {
-      height: 8px;
+      height: 10px;
     }
 
     .lesson-content {
-      padding: 1rem;
+      padding: var(--space-4, 1rem);
     }
 
     .lesson-footer {
-      padding: 1rem;
+      padding: var(--space-4, 1rem);
     }
 
     .continue-btn {
-      padding: 0.8rem;
+      padding: var(--space-4, 1rem);
     }
   }
 
   .continue-btn:disabled {
-    background: #cbd5e1;
-    color: #94a3b8;
+    background: var(--color-neutral-300, #d4c9b9);
+    color: var(--color-neutral-500, #78716c);
     cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
   }
 
   .continue-btn:not(:disabled):hover {
-    background: #16a34a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(234, 179, 8, 0.4);
+  }
+
+  .continue-btn:not(:disabled):active {
+    transform: scale(0.98);
   }
 
   .shortcut-hint {
-    margin-right: 0.5rem;
     opacity: 0.7;
     font-size: 0.9em;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 2px 8px;
+    border-radius: var(--radius-sm, 0.375rem);
   }
 
+  /* Completion Screen */
   .completion-screen {
     text-align: center;
-    padding: 2rem;
+    padding: var(--space-8, 2rem);
+    background: var(--glass-bg, rgba(253, 251, 247, 0.85));
+    border: 1px solid var(--glass-border, rgba(212, 201, 185, 0.3));
+    border-radius: var(--radius-2xl, 1.5rem);
+    backdrop-filter: blur(var(--glass-blur, 12px));
+    animation: fadeSlideIn 0.4s ease;
+  }
+
+  .completion-icon {
+    font-size: 4rem;
+    margin-bottom: var(--space-4, 1rem);
+    animation: bounce-celebration 0.6s ease-in-out;
+  }
+
+  @keyframes bounce-celebration {
+    0%, 100% { transform: translateY(0) scale(1); }
+    30% { transform: translateY(-20px) scale(1.1); }
+    50% { transform: translateY(-10px) scale(1.05); }
+    70% { transform: translateY(-15px) scale(1.08); }
   }
 
   .completion-screen h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
+    font-size: var(--text-2xl, 1.5rem);
+    font-weight: var(--font-extrabold, 800);
+    margin-bottom: var(--space-6, 1.5rem);
+    background: linear-gradient(135deg, var(--color-success-500, #eab308), var(--color-primary-500, #0891b2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
   .stats-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: var(--space-4, 1rem);
     max-width: 400px;
-    margin: 0 auto 2rem;
+    margin: 0 auto var(--space-8, 2rem);
   }
 
   .stat-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1.5rem;
-    background: #f8fafc;
-    border: 2px solid #e2e8f0;
-    border-radius: 1rem;
+    padding: var(--space-4, 1rem);
+    background: var(--glass-bg, rgba(253, 251, 247, 0.95));
+    border: 2px solid var(--glass-border, rgba(212, 201, 185, 0.3));
+    border-radius: var(--radius-xl, 1rem);
+    transition: all var(--transition-normal, 200ms);
+  }
+
+  .stat-item:first-child {
+    border-color: var(--color-xp-400, #818cf8);
+    background: linear-gradient(135deg, rgba(79, 70, 229, 0.1), var(--glass-bg));
+  }
+
+  .stat-item:last-child {
+    border-color: var(--color-success-400, #facc15);
+    background: linear-gradient(135deg, rgba(234, 179, 8, 0.1), var(--glass-bg));
+  }
+
+  .stat-item:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md, 0 4px 15px rgba(0, 0, 0, 0.08));
+  }
+
+  .stat-icon-wrapper {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-neutral-100, #f5f0e8);
+    border-radius: var(--radius-lg, 0.75rem);
+    margin-bottom: var(--space-2, 0.5rem);
   }
 
   .stat-icon {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
   }
 
   .stat-value {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #1e293b;
-    margin-bottom: 0.25rem;
+    font-size: var(--text-2xl, 1.5rem);
+    font-weight: var(--font-bold, 700);
+    color: var(--color-neutral-800, #292524);
+    margin-bottom: var(--space-1, 0.25rem);
+  }
+
+  .stat-item:first-child .stat-value {
+    color: var(--color-xp-600, #4338ca);
+  }
+
+  .stat-item:last-child .stat-value {
+    color: var(--color-success-600, #ca8a04);
   }
 
   .stat-label {
-    font-size: 0.9rem;
-    color: #64748b;
+    font-size: var(--text-sm, 0.875rem);
+    color: var(--color-neutral-500, #78716c);
   }
 
   .finish-btn {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 1rem 2rem;
-    background: #3b82f6;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2, 0.5rem);
+    margin-top: var(--space-4, 1rem);
+    padding: var(--space-4, 1rem) var(--space-8, 2rem);
+    background: linear-gradient(135deg, var(--color-primary-500, #0891b2), var(--color-primary-600, #0e7490));
     color: white;
     text-decoration: none;
     border: none;
-    border-radius: 999px;
-    font-weight: 700;
-    font-size: 1.1rem;
+    border-radius: var(--radius-full, 9999px);
+    font-weight: var(--font-bold, 700);
+    font-size: var(--text-lg, 1.125rem);
     cursor: pointer;
-    transition: background 0.2s;
+    transition: all var(--transition-normal, 200ms);
+    box-shadow: 0 4px 15px rgba(8, 145, 178, 0.3);
+    min-height: 48px;
   }
 
   .finish-btn:hover {
-    background: #2563eb;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(8, 145, 178, 0.4);
+  }
+
+  .finish-btn:active {
+    transform: scale(0.98);
+  }
+
+  /* Dark Mode */
+  :global([data-theme="dark"]) .lesson-layout {
+    background: var(--color-neutral-900, #1c1917);
+  }
+
+  :global([data-theme="dark"]) .lesson-header {
+    background: rgba(28, 25, 23, 0.85);
+    border-color: rgba(68, 64, 60, 0.3);
+  }
+
+  :global([data-theme="dark"]) .exit-btn {
+    background: var(--color-neutral-800, #292524);
+    color: var(--color-neutral-400, #a69b8a);
+  }
+
+  :global([data-theme="dark"]) .exit-btn:hover {
+    background: var(--color-neutral-700, #44403c);
+    color: var(--color-neutral-200, #e8e0d5);
+  }
+
+  :global([data-theme="dark"]) .step-counter {
+    background: rgba(79, 70, 229, 0.2);
+    color: var(--color-xp-400, #818cf8);
+  }
+
+  :global([data-theme="dark"]) .progress-bar {
+    background: var(--color-neutral-700, #44403c);
+  }
+
+  :global([data-theme="dark"]) .lesson-content {
+    background: var(--color-neutral-900, #1c1917);
+  }
+
+  :global([data-theme="dark"]) .lesson-footer {
+    background: rgba(28, 25, 23, 0.95);
+    border-color: rgba(68, 64, 60, 0.3);
+  }
+
+  :global([data-theme="dark"]) .completion-screen {
+    background: rgba(28, 25, 23, 0.85);
+    border-color: rgba(68, 64, 60, 0.3);
+  }
+
+  :global([data-theme="dark"]) .completion-screen h2 {
+    background: linear-gradient(135deg, var(--color-success-400, #facc15), var(--color-primary-400, #22d3ee));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  :global([data-theme="dark"]) .stat-item {
+    background: rgba(28, 25, 23, 0.85);
+    border-color: rgba(68, 64, 60, 0.3);
+  }
+
+  :global([data-theme="dark"]) .stat-item:first-child {
+    border-color: var(--color-xp-500, #4f46e5);
+    background: linear-gradient(135deg, rgba(79, 70, 229, 0.2), rgba(28, 25, 23, 0.85));
+  }
+
+  :global([data-theme="dark"]) .stat-item:last-child {
+    border-color: var(--color-success-500, #eab308);
+    background: linear-gradient(135deg, rgba(234, 179, 8, 0.2), rgba(28, 25, 23, 0.85));
+  }
+
+  :global([data-theme="dark"]) .stat-icon-wrapper {
+    background: var(--color-neutral-800, #292524);
+  }
+
+  :global([data-theme="dark"]) .stat-value {
+    color: var(--color-neutral-100, #f5f0e8);
+  }
+
+  :global([data-theme="dark"]) .stat-item:first-child .stat-value {
+    color: var(--color-xp-400, #818cf8);
+  }
+
+  :global([data-theme="dark"]) .stat-item:last-child .stat-value {
+    color: var(--color-success-400, #facc15);
+  }
+
+  :global([data-theme="dark"]) .continue-btn:disabled {
+    background: var(--color-neutral-700, #44403c);
+    color: var(--color-neutral-500, #78716c);
   }
 </style>

@@ -18,5 +18,8 @@ export { default as Progress } from './Progress.svelte';
 export { default as XPBar } from './XPBar.svelte';
 export { default as StreakCounter } from './StreakCounter.svelte';
 
+// Layout
+export { default as BottomNav } from './BottomNav.svelte';
+
 // Media
 export { default as RecorderShell } from './RecorderShell.svelte';

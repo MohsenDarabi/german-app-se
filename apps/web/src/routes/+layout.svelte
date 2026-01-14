@@ -3,6 +3,7 @@
   import NavBar from '$lib/components/layout/NavBar.svelte';
   import AppFooter from '$lib/components/layout/AppFooter.svelte';
   import AuthGuard from '$lib/components/auth/AuthGuard.svelte';
+  import { BottomNav } from '@pkg/ui';
   import { auth, currentUser, isAuthenticated } from '$lib/stores/auth';
   import { syncEngine } from '$lib/services/syncEngine';
   import { init as initAssetService } from '$lib/services/assetService';
@@ -69,6 +70,9 @@
     </main>
 
     <AppFooter />
+
+    <!-- Mobile Bottom Navigation -->
+    <BottomNav />
   </div>
 </AuthGuard>
 
@@ -103,6 +107,13 @@
     width: 100%;
     margin: 0 auto;
     padding: var(--space-6) var(--space-4) var(--space-8);
+  }
+
+  /* Add bottom padding on mobile for BottomNav */
+  @media (max-width: 768px) {
+    .app-main {
+      padding-bottom: calc(80px + env(safe-area-inset-bottom, 0px));
+    }
   }
 
   @media (min-width: 1024px) {
