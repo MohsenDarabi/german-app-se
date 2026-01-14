@@ -2,8 +2,6 @@
   import type { NewWordStep } from "$lib/content-model";
   import { db } from "$lib/db";
   import { onMount } from "svelte";
-  import { liveQuery } from "dexie";
-  import { playGerman } from "$lib/utils/audio";
   import BiDiText from "$lib/components/ui/BiDiText.svelte";
   import AudioButton from "$lib/components/ui/AudioButton.svelte";
   import { resolveMedia } from "$lib/utils/asset-resolver";
@@ -14,12 +12,10 @@
   let isSaved = false;
   let imageSrc: string | null = null;
 
-  // Check if word is already in DB
   onMount(async () => {
     const exists = await db.vocab.where('word').equals(step.word.de).first();
     isSaved = !!exists;
 
-    // Pre-load voices fix for Chrome
     if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
        window.speechSynthesis.getVoices();
     }
@@ -38,17 +34,19 @@
         example: step.example?.text.de,
         addedAt: new Date(),
         srsLevel: 0,
-        nextReview: new Date() // Due immediately for first review
+        nextReview: new Date()
       });
       isSaved = true;
     }
   }
-
 </script>
 
-<div class="card-container">
+<div class="new-word-step">
+  <!-- Header hint -->
+  <p class="hint">یک کلمه جدید!</p>
+
+  <!-- Image area - large, full width -->
   <div class="image-area">
-    <!-- Placeholder for image -->
     {#if imageSrc}
       <img src={imageSrc} alt={step.word.de} class="vocab-image" />
     {:else}
@@ -58,90 +56,102 @@
     {/if}
   </div>
 
-  <div class="content-area">
+  <!-- Word section -->
+  <div class="word-section">
     <div class="word-row">
       <h2 class="german-word">{step.word.de}</h2>
       <AudioButton
         text={step.word.de}
         {lessonId}
         audioId="{step.id}-word"
-        size="md"
+        size="lg"
       />
     </div>
-
     <p class="translation" dir="rtl"><BiDiText text={step.word.fa} /></p>
-
-    <button
-      class="save-btn"
-      class:saved={isSaved}
-      on:click={toggleSave}
-    >
-      {isSaved ? '✅ ذخیره شد' : '➕ افزودن به واژگان'}
-    </button>
-
-    {#if step.example}
-      <div class="sentence-box">
-        <div class="sentence-row">
-          <p class="sentence-text">{step.example.text.de}</p>
-          <AudioButton
-            text={step.example.text.de}
-            {lessonId}
-            audioId="{step.id}-example"
-            size="sm"
-          />
-        </div>
-        <p class="sentence-translation" dir="rtl"><BiDiText text={step.example.text.fa} /></p>
-        <p class="sentence-label">مثال در جمله</p>
-      </div>
-    {/if}
   </div>
+
+  <!-- Save button -->
+  <button
+    class="save-btn"
+    class:saved={isSaved}
+    on:click={toggleSave}
+  >
+    {isSaved ? '✅ ذخیره شد' : '➕ افزودن به واژگان'}
+  </button>
+
+  <!-- Example section -->
+  {#if step.example}
+    <div class="example-section">
+      <div class="example-label">
+        <span class="label-text">مثال</span>
+        <AudioButton
+          text={step.example.text.de}
+          {lessonId}
+          audioId="{step.id}-example"
+          size="sm"
+        />
+      </div>
+      <p class="example-de">{step.example.text.de}</p>
+      <p class="example-fa" dir="rtl"><BiDiText text={step.example.text.fa} /></p>
+    </div>
+  {/if}
 </div>
 
 <style>
-  .card-container {
+  /* Busuu-style clean layout */
+  .new-word-step {
     display: flex;
     flex-direction: column;
-    gap: var(--space-4, 1rem);
+    align-items: center;
     text-align: center;
-    /* Remove borders - use spacing for visual hierarchy */
+    gap: var(--space-4, 1rem);
+    padding: var(--space-2, 0.5rem) 0;
   }
 
+  /* Header hint - like Busuu's "Look, something new!" */
+  .hint {
+    font-size: var(--text-base, 1rem);
+    color: var(--color-primary-500, #0891b2);
+    font-weight: var(--font-semibold, 600);
+    margin: 0;
+  }
+
+  /* Large image area */
   .image-area {
+    width: 100%;
     display: flex;
     justify-content: center;
-    padding: var(--space-4, 1rem);
   }
 
   .vocab-image {
-    max-width: 200px;
-    border-radius: var(--radius-xl, 1rem);
+    width: 100%;
+    max-width: 280px;
     height: auto;
-    max-height: 160px;
+    aspect-ratio: 4/3;
     object-fit: cover;
-    /* Soft shadow instead of border */
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    border-radius: var(--radius-xl, 1rem);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
   }
 
   .image-placeholder {
-    width: 160px;
-    height: 120px;
+    width: 100%;
+    max-width: 280px;
+    aspect-ratio: 4/3;
     background: linear-gradient(135deg, var(--color-neutral-100, #f5f0e8), var(--color-neutral-200, #e8e0d5));
     border-radius: var(--radius-xl, 1rem);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2.5rem;
-    color: var(--color-neutral-300, #d4c9b9);
-    /* Soft shadow instead of border */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    font-size: 3rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
   }
 
-  .content-area {
+  /* Word section - prominent */
+  .word-section {
     display: flex;
     flex-direction: column;
-    gap: var(--space-3, 0.75rem);
     align-items: center;
-    padding: var(--space-2, 0.5rem) 0;
+    gap: var(--space-2, 0.5rem);
   }
 
   .word-row {
@@ -151,26 +161,22 @@
   }
 
   .german-word {
-    font-size: var(--text-3xl, 2rem);
+    font-size: var(--text-4xl, 2.5rem);
     font-weight: var(--font-extrabold, 800);
     color: var(--color-neutral-800, #292524);
-    background: linear-gradient(135deg, var(--color-primary-600, #0e7490), var(--color-xp-600, #4338ca));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
     margin: 0;
+    letter-spacing: -0.02em;
   }
 
   .translation {
-    font-size: var(--text-xl, 1.25rem);
+    font-size: var(--text-lg, 1.125rem);
     color: var(--color-neutral-500, #78716c);
-    font-weight: var(--font-medium, 500);
     margin: 0;
   }
 
+  /* Save button */
   .save-btn {
-    margin-top: var(--space-2, 0.5rem);
-    padding: var(--space-2, 0.5rem) var(--space-5, 1.25rem);
+    padding: var(--space-2, 0.5rem) var(--space-6, 1.5rem);
     border: 2px solid var(--color-primary-400, #22d3ee);
     background: transparent;
     color: var(--color-primary-600, #0e7490);
@@ -184,28 +190,24 @@
 
   .save-btn:hover {
     background: var(--color-primary-50, #ecfeff);
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(8, 145, 178, 0.15);
+    transform: scale(1.02);
   }
 
   .save-btn.saved {
-    background: linear-gradient(135deg, var(--color-primary-500, #0891b2), var(--color-primary-600, #0e7490));
+    background: var(--color-primary-500, #0891b2);
     color: white;
     border-color: transparent;
-    box-shadow: 0 4px 12px rgba(8, 145, 178, 0.3);
   }
 
-  /* Example sentence - no border, just subtle background */
-  .sentence-box {
-    margin-top: var(--space-4, 1rem);
-    padding: var(--space-4, 1rem) var(--space-3, 0.75rem);
+  /* Example section - clean separator */
+  .example-section {
     width: 100%;
-    /* No border - use very subtle background tint */
-    background: transparent;
-    border-radius: var(--radius-lg, 0.75rem);
+    padding-top: var(--space-4, 1rem);
+    margin-top: var(--space-2, 0.5rem);
+    border-top: 1px solid var(--color-neutral-200, #e8e0d5);
   }
 
-  .sentence-row {
+  .example-label {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -213,45 +215,69 @@
     margin-bottom: var(--space-2, 0.5rem);
   }
 
-  .sentence-text {
-    font-size: var(--text-base, 1rem);
-    color: var(--color-neutral-600, #57534e);
-    font-style: italic;
-    margin: 0;
-  }
-
-  .sentence-translation {
+  .label-text {
     font-size: var(--text-sm, 0.875rem);
-    color: var(--color-neutral-400, #a69b8a);
-    margin: 0 0 var(--space-1, 0.25rem) 0;
+    color: var(--color-primary-500, #0891b2);
+    font-weight: var(--font-semibold, 600);
   }
 
-  .sentence-label {
-    font-size: var(--text-xs, 0.75rem);
-    color: var(--color-neutral-300, #d4c9b9);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+  .example-de {
+    font-size: var(--text-lg, 1.125rem);
+    color: var(--color-neutral-700, #44403c);
+    margin: 0 0 var(--space-1, 0.25rem);
     font-weight: var(--font-medium, 500);
   }
 
+  .example-fa {
+    font-size: var(--text-base, 1rem);
+    color: var(--color-neutral-400, #a69b8a);
+    margin: 0;
+  }
+
   /* Dark Mode */
+  :global([data-theme="dark"]) .hint {
+    color: #22d3ee;
+  }
+
   :global([data-theme="dark"]) .image-placeholder {
-    background: linear-gradient(135deg, var(--color-neutral-200, #44403c), var(--color-neutral-100, #292524));
-    color: var(--color-neutral-400, #78716c);
+    background: linear-gradient(135deg, #44403c, #292524);
   }
 
   :global([data-theme="dark"]) .german-word {
-    background: linear-gradient(135deg, var(--color-primary-400, #22d3ee), var(--color-xp-400, #818cf8));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #f5f0e8;
   }
 
-  :global([data-theme="dark"]) .sentence-text {
-    color: var(--color-neutral-300, #d4c9b9);
+  :global([data-theme="dark"]) .translation {
+    color: #a69b8a;
   }
 
-  :global([data-theme="dark"]) .sentence-translation {
-    color: var(--color-neutral-500, #78716c);
+  :global([data-theme="dark"]) .save-btn {
+    border-color: #0891b2;
+    color: #22d3ee;
+  }
+
+  :global([data-theme="dark"]) .save-btn:hover {
+    background: rgba(8, 145, 178, 0.2);
+  }
+
+  :global([data-theme="dark"]) .save-btn.saved {
+    background: #0891b2;
+    color: white;
+  }
+
+  :global([data-theme="dark"]) .example-section {
+    border-color: #44403c;
+  }
+
+  :global([data-theme="dark"]) .label-text {
+    color: #22d3ee;
+  }
+
+  :global([data-theme="dark"]) .example-de {
+    color: #d4c9b9;
+  }
+
+  :global([data-theme="dark"]) .example-fa {
+    color: #78716c;
   }
 </style>

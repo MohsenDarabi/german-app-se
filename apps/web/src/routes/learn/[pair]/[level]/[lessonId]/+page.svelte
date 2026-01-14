@@ -214,34 +214,27 @@
 
 <style>
   /*
-   * Full-height lesson layout for mobile
-   * Uses flex layout with single scroll container
-   * Header and footer are fixed, content scrolls
+   * Clean, full-height lesson layout (Busuu-style)
+   * No card - content breathes with full space
    */
   .lesson-layout {
-    /* Fill available space from app-main */
     display: flex;
     flex-direction: column;
-    max-width: 600px;
+    width: 100%;
+    max-width: 500px;
     margin: 0 auto;
-    background: var(--color-neutral-50, #fdfbf7);
-    border-radius: var(--radius-xl, 1rem);
-    /* Fill parent height - app-main handles the constraints */
+    /* No background - inherits from app shell */
     height: 100%;
-    min-height: 400px; /* Minimum for very small screens */
-    /* Prevent any overflow from this container */
+    min-height: 400px;
     overflow: hidden;
   }
 
   .lesson-header {
-    /* Fixed at top, never scrolls */
     flex-shrink: 0;
-    padding: var(--space-3, 0.75rem);
+    padding: var(--space-2, 0.5rem) var(--space-3, 0.75rem);
     display: flex;
     align-items: center;
-    gap: var(--space-2, 0.5rem);
-    background: var(--color-neutral-50, #fdfbf7);
-    border-bottom: 1px solid var(--color-neutral-200, #e8e0d5);
+    gap: var(--space-3, 0.75rem);
     z-index: 10;
   }
 
@@ -338,12 +331,10 @@
     }
   }
 
-  /* Footer with continue button - fixed at bottom */
+  /* Footer with continue button */
   .lesson-footer {
     flex-shrink: 0;
-    padding: var(--space-3, 0.75rem);
-    background: var(--color-neutral-50, #fdfbf7);
-    border-top: 1px solid var(--color-neutral-200, #e8e0d5);
+    padding: var(--space-4, 1rem) var(--space-3, 0.75rem);
     z-index: 10;
   }
 
@@ -554,20 +545,6 @@
   }
 
   /* Dark Mode - use hardcoded colors since CSS variables swap */
-  :global([data-theme="dark"]) .lesson-layout {
-    background: #292524;
-  }
-
-  :global([data-theme="dark"]) .lesson-header {
-    background: #292524;
-    border-color: #44403c;
-  }
-
-  :global([data-theme="dark"]) .lesson-footer {
-    background: #292524;
-    border-color: #44403c;
-  }
-
   :global([data-theme="dark"]) .lesson-content::-webkit-scrollbar-thumb {
     background: #57534e;
   }
