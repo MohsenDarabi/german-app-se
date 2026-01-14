@@ -214,30 +214,22 @@
 
 <style>
   /*
-   * Mobile-first lesson layout
-   * Uses flex with calculated height to avoid nested scrolling
+   * Simple lesson layout - NO height constraints
+   * Content flows naturally, app layout handles scrolling
    */
   .lesson-layout {
-    display: flex;
-    flex-direction: column;
-    /* Fill available space from app layout */
-    height: calc(100vh - 64px - 70px); /* viewport - navbar - bottomnav */
-    height: calc(100dvh - 64px - 70px);
     max-width: 600px;
     margin: 0 auto;
     background: var(--color-neutral-50, #fdfbf7);
     border-radius: var(--radius-xl, 1rem);
-    overflow: hidden;
+    /* NO overflow, NO fixed height - content flows naturally */
   }
 
-  /* Header - never scrolls */
   .lesson-header {
-    flex-shrink: 0;
     padding: var(--space-3, 0.75rem);
     display: flex;
     align-items: center;
     gap: var(--space-2, 0.5rem);
-    background: var(--color-neutral-50, #fdfbf7);
   }
 
   .exit-btn {
@@ -291,15 +283,9 @@
     box-shadow: 0 0 8px var(--color-xp-glow, rgba(79, 70, 229, 0.4));
   }
 
-  /* Scrollable content - THE ONLY SCROLL ZONE */
+  /* Content - NO scroll here, flows naturally */
   .lesson-content {
-    flex: 1;
-    min-height: 0; /* Important for flex scroll */
-    overflow-y: auto;
-    overflow-x: hidden;
     padding: var(--space-3, 0.75rem);
-    /* Smooth scrolling on iOS */
-    -webkit-overflow-scrolling: touch;
   }
 
   .step-animation {
@@ -318,11 +304,9 @@
     }
   }
 
-  /* Footer - never scrolls */
+  /* Footer with continue button */
   .lesson-footer {
-    flex-shrink: 0;
     padding: var(--space-3, 0.75rem);
-    background: var(--color-neutral-50, #fdfbf7);
   }
 
   .continue-btn {
@@ -347,11 +331,6 @@
 
   /* Larger screens */
   @media (min-width: 480px) {
-    .lesson-layout {
-      height: calc(100vh - 80px - 70px);
-      height: calc(100dvh - 80px - 70px);
-    }
-
     .lesson-header {
       padding: var(--space-4, 1rem);
       gap: var(--space-3, 0.75rem);
@@ -360,10 +339,6 @@
     .exit-btn {
       width: 40px;
       height: 40px;
-    }
-
-    .step-counter {
-      font-size: var(--text-sm, 0.875rem);
     }
 
     .progress-bar {
@@ -380,14 +355,6 @@
 
     .continue-btn {
       padding: var(--space-4, 1rem);
-    }
-  }
-
-  /* Desktop - no bottom nav */
-  @media (min-width: 769px) {
-    .lesson-layout {
-      height: calc(100vh - 80px);
-      height: calc(100dvh - 80px);
     }
   }
 
@@ -550,11 +517,7 @@
 
   /* Dark Mode - use hardcoded colors since CSS variables swap */
   :global([data-theme="dark"]) .lesson-layout {
-    background: #1c1917;
-  }
-
-  :global([data-theme="dark"]) .lesson-header {
-    background: #1c1917;
+    background: #292524;
   }
 
   :global([data-theme="dark"]) .exit-btn {
@@ -574,14 +537,6 @@
 
   :global([data-theme="dark"]) .progress-bar {
     background: #44403c;
-  }
-
-  :global([data-theme="dark"]) .lesson-content {
-    background: #1c1917;
-  }
-
-  :global([data-theme="dark"]) .lesson-footer {
-    background: #1c1917;
   }
 
   :global([data-theme="dark"]) .completion-screen {
