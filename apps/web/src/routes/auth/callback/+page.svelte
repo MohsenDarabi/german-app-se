@@ -3,20 +3,76 @@
   import { goto } from '$app/navigation';
   import { supabase } from '$lib/supabase/client';
   import { page } from '$app/stores';
+  import { browser } from '$app/environment';
 
   let error: string | null = null;
   let message: string | null = null;
+  let status: string = 'در حال بررسی...';
 
   onMount(async () => {
-    try {
-      // Check for email confirmation tokens in URL (query params)
-      const token = $page.url.searchParams.get('token');
-      const type = $page.url.searchParams.get('type');
-      const tokenHash = $page.url.searchParams.get('token_hash');
+    if (!browser) return;
 
-      // Handle email confirmation (Supabase PKCE flow)
+    try {
+      status = 'در حال پردازش توکن...';
+
+      // Get the full URL including hash
+      const fullUrl = window.location.href;
+      console.log('[Auth Callback] Processing URL:', fullUrl);
+
+      // First, check if there are hash params (OAuth/email confirmation flow)
+      if (window.location.hash && window.location.hash.length > 1) {
+        const hashParams = new URLSearchParams(window.location.hash.substring(1));
+        const accessToken = hashParams.get('access_token');
+        const refreshToken = hashParams.get('refresh_token');
+        const tokenType = hashParams.get('type');
+
+        console.log('[Auth Callback] Hash params found:', {
+          hasAccessToken: !!accessToken,
+          hasRefreshToken: !!refreshToken,
+          type: tokenType
+        });
+
+        if (accessToken && refreshToken) {
+          status = 'در حال تنظیم نشست...';
+
+          const { data, error: setSessionError } = await supabase.auth.setSession({
+            access_token: accessToken,
+            refresh_token: refreshToken,
+          });
+
+          if (setSessionError) {
+            console.error('[Auth Callback] Error setting session:', setSessionError);
+            error = 'خطا در ورود: ' + setSessionError.message;
+            setTimeout(() => goto('/login'), 3000);
+            return;
+          }
+
+          if (data.session) {
+            console.log('[Auth Callback] Session created successfully');
+            message = tokenType === 'signup'
+              ? 'ایمیل شما تأیید شد! در حال انتقال...'
+              : 'ورود موفق! در حال انتقال...';
+
+            // Clean up the URL hash
+            window.history.replaceState(null, '', window.location.pathname);
+
+            setTimeout(() => {
+              window.location.href = '/';
+            }, 1000);
+            return;
+          } else {
+            console.log('[Auth Callback] No session in response');
+          }
+        }
+      }
+
+      // Check for PKCE flow tokens in query params
+      const tokenHash = $page.url.searchParams.get('token_hash');
+      const type = $page.url.searchParams.get('type');
+
       if (tokenHash && type) {
-        console.log('[Auth Callback] Email confirmation detected, type:', type);
+        status = 'در حال تأیید ایمیل...';
+        console.log('[Auth Callback] PKCE token found, verifying...');
 
         const { data, error: verifyError } = await supabase.auth.verifyOtp({
           token_hash: tokenHash,
@@ -24,73 +80,46 @@
         });
 
         if (verifyError) {
-          console.error('[Auth Callback] Email verification error:', verifyError);
+          console.error('[Auth Callback] OTP verification error:', verifyError);
           error = 'خطا در تأیید ایمیل: ' + verifyError.message;
           setTimeout(() => goto('/login'), 3000);
           return;
         }
 
         if (data.session) {
-          console.log('[Auth Callback] Email verified, session created');
           message = 'ایمیل شما تأیید شد! در حال انتقال...';
           setTimeout(() => {
             window.location.href = '/';
-          }, 1500);
+          }, 1000);
           return;
         }
       }
 
-      // Check if there's a hash fragment with OAuth tokens
-      const hashParams = new URLSearchParams(window.location.hash.substring(1));
-      const accessToken = hashParams.get('access_token');
-      const refreshToken = hashParams.get('refresh_token');
-
-      if (accessToken && refreshToken) {
-        console.log('[Auth Callback] OAuth tokens found in URL, setting session...');
-
-        // Explicitly set the session from the OAuth tokens
-        const { data, error: setSessionError } = await supabase.auth.setSession({
-          access_token: accessToken,
-          refresh_token: refreshToken,
-        });
-
-        if (setSessionError) {
-          console.error('[Auth Callback] Error setting session:', setSessionError);
-          error = setSessionError.message;
-          setTimeout(() => goto('/login'), 3000);
-          return;
-        }
-
-        if (data.session) {
-          console.log('[Auth Callback] Session set successfully, redirecting to dashboard...');
-          // Clean up the URL hash
-          window.location.hash = '';
-          // Use window.location instead of goto to ensure cookies are sent
-          window.location.href = '/';
-          return;
-        }
-      }
-
-      // Fallback: try to get existing session
+      // Fallback: check for existing session
+      status = 'در حال بررسی نشست...';
       const { data: { session }, error: sessionError } = await supabase.auth.getSession();
 
       if (sessionError) {
-        console.error('[Auth Callback] Auth callback error:', sessionError);
+        console.error('[Auth Callback] Session error:', sessionError);
         error = sessionError.message;
         setTimeout(() => goto('/login'), 3000);
         return;
       }
 
       if (session) {
-        console.log('[Auth Callback] Login successful, redirecting to dashboard...');
-        window.location.href = '/';
+        console.log('[Auth Callback] Existing session found');
+        message = 'ورود موفق! در حال انتقال...';
+        setTimeout(() => {
+          window.location.href = '/';
+        }, 500);
       } else {
-        console.log('[Auth Callback] No session found, redirecting to login...');
-        goto('/login');
+        console.log('[Auth Callback] No session found');
+        error = 'نشست یافت نشد. لطفاً دوباره وارد شوید.';
+        setTimeout(() => goto('/login'), 2000);
       }
-    } catch (err) {
-      console.error('[Auth Callback] Unexpected error during auth callback:', err);
-      error = 'An unexpected error occurred';
+    } catch (err: any) {
+      console.error('[Auth Callback] Unexpected error:', err);
+      error = 'خطای غیرمنتظره: ' + (err.message || 'Unknown error');
       setTimeout(() => goto('/login'), 3000);
     }
   });
@@ -100,21 +129,21 @@
   <title>Signing In... - Deutschlern</title>
 </svelte:head>
 
-<div class="loading-page">
+<div class="loading-page" dir="rtl">
   <div class="loading-content">
     {#if error}
       <div class="error-icon">❌</div>
-      <h2>Authentication Failed</h2>
+      <h2>خطا در احراز هویت</h2>
       <p class="error-message">{error}</p>
-      <p class="redirect-notice">Redirecting to sign in page...</p>
+      <p class="redirect-notice">در حال انتقال به صفحه ورود...</p>
     {:else if message}
       <div class="success-icon">✅</div>
-      <h2>ایمیل تأیید شد!</h2>
+      <h2>موفق!</h2>
       <p class="success-message">{message}</p>
     {:else}
       <div class="spinner"></div>
-      <h2>Signing you in...</h2>
-      <p>Please wait while we complete your authentication</p>
+      <h2>در حال ورود...</h2>
+      <p>{status}</p>
     {/if}
   </div>
 </div>
