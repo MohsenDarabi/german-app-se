@@ -56,8 +56,10 @@
     display: none; /* Hidden by default, shown on mobile */
     justify-content: space-around;
     align-items: center;
-    padding: var(--space-2, 0.5rem) var(--space-2, 0.5rem);
-    padding-bottom: max(var(--space-2, 0.5rem), env(safe-area-inset-bottom));
+    padding: var(--space-2, 0.5rem);
+    padding-bottom: calc(var(--space-2, 0.5rem) + env(safe-area-inset-bottom, 0px));
+    padding-left: calc(var(--space-2, 0.5rem) + env(safe-area-inset-left, 0px));
+    padding-right: calc(var(--space-2, 0.5rem) + env(safe-area-inset-right, 0px));
     background: var(--glass-bg, rgba(253, 251, 247, 0.92));
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
