@@ -8,8 +8,11 @@
 
   let email = '';
   let password = '';
+  let confirmPassword = '';
   let error = '';
+  let successMessage = '';
   let isLoading = false;
+  let mode: 'login' | 'signup' = 'login';
 
   onMount(() => {
     // Initialize deep link handler for OAuth callbacks
@@ -21,6 +24,14 @@
       error = urlError === 'auth_failed' ? 'خطا در احراز هویت' : urlError;
     }
   });
+
+  function toggleMode() {
+    mode = mode === 'login' ? 'signup' : 'login';
+    error = '';
+    successMessage = '';
+    password = '';
+    confirmPassword = '';
+  }
 
   async function handleGoogleSignIn() {
     try {
@@ -91,6 +102,61 @@
       isLoading = false;
     }
   }
+
+  async function handleEmailSignUp(event: Event) {
+    event.preventDefault();
+
+    // Validate passwords match
+    if (password !== confirmPassword) {
+      error = 'رمز عبور و تکرار آن یکسان نیستند';
+      return;
+    }
+
+    // Validate password length
+    if (password.length < 6) {
+      error = 'رمز عبور باید حداقل ۶ کاراکتر باشد';
+      return;
+    }
+
+    try {
+      isLoading = true;
+      error = '';
+      successMessage = '';
+
+      const { data, error: signUpError } = await supabase.auth.signUp({
+        email,
+        password,
+        options: {
+          emailRedirectTo: `${window.location.origin}/auth`
+        }
+      });
+
+      if (signUpError) {
+        if (signUpError.message.includes('already registered')) {
+          error = 'این ایمیل قبلاً ثبت شده است. لطفاً وارد شوید.';
+        } else {
+          error = signUpError.message;
+        }
+        return;
+      }
+
+      // Check if email confirmation is required
+      if (data.user && !data.session) {
+        successMessage = 'لینک تأیید به ایمیل شما ارسال شد. لطفاً ایمیل خود را بررسی کنید.';
+        email = '';
+        password = '';
+        confirmPassword = '';
+      } else if (data.session) {
+        // Auto-confirmed (if email confirmation is disabled)
+        goto('/');
+      }
+    } catch (err: any) {
+      error = 'خطا در ثبت‌نام';
+      console.error('Email sign-up error:', err);
+    } finally {
+      isLoading = false;
+    }
+  }
 </script>
 
 <section class="login-layout" dir="rtl">
@@ -119,10 +185,37 @@
 
   <!-- Login Card -->
   <div class="card">
-    <div class="card-header">
-      <h2>ورود به حساب کاربری</h2>
-      <p class="card-subtitle">برای ادامه یادگیری، وارد حساب خودت شو.</p>
+    <!-- Mode Toggle -->
+    <div class="mode-toggle">
+      <button
+        class="toggle-btn"
+        class:active={mode === 'login'}
+        on:click={() => { if (mode !== 'login') toggleMode(); }}
+      >
+        ورود
+      </button>
+      <button
+        class="toggle-btn"
+        class:active={mode === 'signup'}
+        on:click={() => { if (mode !== 'signup') toggleMode(); }}
+      >
+        ثبت‌نام
+      </button>
     </div>
+
+    <div class="card-header">
+      <h2>{mode === 'login' ? 'ورود به حساب کاربری' : 'ساخت حساب جدید'}</h2>
+      <p class="card-subtitle">
+        {mode === 'login' ? 'برای ادامه یادگیری، وارد حساب خودت شو.' : 'یک حساب جدید بساز و یادگیری را شروع کن.'}
+      </p>
+    </div>
+
+    {#if successMessage}
+      <div class="success-message">
+        <span class="success-icon">✅</span>
+        <span>{successMessage}</span>
+      </div>
+    {/if}
 
     {#if error}
       <div class="error-message">
@@ -145,7 +238,7 @@
       <span>یا با ایمیل</span>
     </div>
 
-    <form on:submit={handleEmailSignIn} class="form">
+    <form on:submit={mode === 'login' ? handleEmailSignIn : handleEmailSignUp} class="form">
       <div class="input-group">
         <label for="email">ایمیل</label>
         <input
@@ -167,17 +260,41 @@
           type="password"
           bind:value={password}
           placeholder="•••••••"
+          minlength={mode === 'signup' ? 6 : undefined}
           required
           disabled={isLoading}
         />
       </div>
 
+      {#if mode === 'signup'}
+        <div class="input-group">
+          <label for="confirmPassword">تکرار رمز عبور</label>
+          <input
+            id="confirmPassword"
+            name="confirmPassword"
+            type="password"
+            bind:value={confirmPassword}
+            placeholder="•••••••"
+            required
+            disabled={isLoading}
+          />
+        </div>
+      {/if}
+
       <button type="submit" class="submit-btn" disabled={isLoading}>
-        {isLoading ? 'در حال ورود...' : 'ورود'}
+        {#if isLoading}
+          {mode === 'login' ? 'در حال ورود...' : 'در حال ثبت‌نام...'}
+        {:else}
+          {mode === 'login' ? 'ورود' : 'ثبت‌نام'}
+        {/if}
       </button>
 
       <p class="hint">
-        حساب کاربری ندارید؟ با گوگل وارد شوید تا حساب جدید ساخته شود.
+        {#if mode === 'login'}
+          حساب کاربری ندارید؟ <button type="button" class="link-btn" on:click={toggleMode}>ثبت‌نام کنید</button>
+        {:else}
+          قبلاً ثبت‌نام کردید؟ <button type="button" class="link-btn" on:click={toggleMode}>وارد شوید</button>
+        {/if}
       </p>
     </form>
   </div>
@@ -356,6 +473,74 @@
         0 20px 50px rgba(0, 0, 0, 0.1),
         0 0 0 1px rgba(255, 255, 255, 0.5) inset;
     }
+  }
+
+  /* Mode Toggle */
+  .mode-toggle {
+    display: flex;
+    background: var(--color-neutral-100, #f5f0e8);
+    border-radius: var(--radius-full, 9999px);
+    padding: 4px;
+    margin-bottom: var(--space-6, 1.5rem);
+  }
+
+  .toggle-btn {
+    flex: 1;
+    padding: var(--space-2, 0.5rem) var(--space-4, 1rem);
+    border: none;
+    background: transparent;
+    border-radius: var(--radius-full, 9999px);
+    font-size: var(--text-sm, 0.875rem);
+    font-weight: var(--font-medium, 500);
+    color: var(--color-neutral-500, #78716c);
+    cursor: pointer;
+    transition: all var(--transition-normal, 200ms);
+  }
+
+  .toggle-btn.active {
+    background: white;
+    color: var(--color-primary-600, #0e7490);
+    font-weight: var(--font-semibold, 600);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .toggle-btn:hover:not(.active) {
+    color: var(--color-neutral-700, #44403c);
+  }
+
+  /* Success Message */
+  .success-message {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2, 0.5rem);
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.05));
+    color: var(--color-gem-600, #047857);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    border-radius: var(--radius-lg, 0.75rem);
+    padding: var(--space-3, 0.75rem) var(--space-4, 1rem);
+    font-size: var(--text-sm, 0.875rem);
+    margin-bottom: var(--space-4, 1rem);
+  }
+
+  .success-icon {
+    font-size: var(--text-base, 1rem);
+  }
+
+  /* Link Button */
+  .link-btn {
+    background: none;
+    border: none;
+    color: var(--color-primary-500, #0891b2);
+    font-weight: var(--font-semibold, 600);
+    cursor: pointer;
+    padding: 0;
+    font-size: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .link-btn:hover {
+    color: var(--color-primary-600, #0e7490);
   }
 
   .card-header {
@@ -596,6 +781,37 @@
 
   :global([data-theme="dark"]) .hint {
     color: #a69b8a;
+  }
+
+  :global([data-theme="dark"]) .mode-toggle {
+    background: #44403c;
+  }
+
+  :global([data-theme="dark"]) .toggle-btn {
+    color: #a69b8a;
+  }
+
+  :global([data-theme="dark"]) .toggle-btn.active {
+    background: #57534e;
+    color: #22d3ee;
+  }
+
+  :global([data-theme="dark"]) .toggle-btn:hover:not(.active) {
+    color: #e8e0d5;
+  }
+
+  :global([data-theme="dark"]) .success-message {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(5, 150, 105, 0.1));
+    color: #34d399;
+    border-color: rgba(16, 185, 129, 0.4);
+  }
+
+  :global([data-theme="dark"]) .link-btn {
+    color: #22d3ee;
+  }
+
+  :global([data-theme="dark"]) .link-btn:hover {
+    color: #67e8f9;
   }
 
   /* Feature hover effect - only on desktop */
