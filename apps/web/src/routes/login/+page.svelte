@@ -96,42 +96,25 @@
 <section class="login-layout" dir="rtl">
   <!-- Hero Section -->
   <div class="hero">
-    <div class="hero-badge">
-      <span class="badge-icon">🇩🇪</span>
-      <span class="badge-text">Deutschlern</span>
-    </div>
-
     <h1 class="hero-title">
-      یادگیری آلمانی و انگلیسی از صفر،
-      <span class="highlight">مخصوص فارسی‌زبان‌ها</span>
+      یادگیری زبان،
+      <span class="highlight">ساده و کاربردی</span>
     </h1>
 
     <p class="hero-description">
-      مسیرت را از فارسی شروع کن، واژه‌ها، جملات و دیالوگ‌های روزمره را
       قدم‌به‌قدم یاد بگیر و پیشرفتت را هر روز ببین.
     </p>
 
     <ul class="features">
       <li>
         <span class="feature-icon">📚</span>
-        <span class="feature-text">درس‌های کوتاه و قابل فهم</span>
-      </li>
-      <li>
-        <span class="feature-icon">🌍</span>
-        <span class="feature-text">مثال‌های واقعی از زندگی مهاجرتی</span>
+        <span class="feature-text">درس‌های کوتاه و کاربردی</span>
       </li>
       <li>
         <span class="feature-icon">📈</span>
-        <span class="feature-text">پیشرفت مرحله‌به‌مرحله و قابل اندازه‌گیری</span>
+        <span class="feature-text">پیشرفت قابل اندازه‌گیری</span>
       </li>
     </ul>
-
-    <!-- Decorative Elements -->
-    <div class="hero-decoration">
-      <div class="deco-circle deco-1"></div>
-      <div class="deco-circle deco-2"></div>
-      <div class="deco-circle deco-3"></div>
-    </div>
   </div>
 
   <!-- Login Card -->
@@ -245,27 +228,6 @@
     }
   }
 
-  .hero-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--space-2, 0.5rem);
-    background: linear-gradient(135deg, var(--color-primary-100, #cffafe), var(--color-primary-50, #ecfeff));
-    padding: var(--space-2, 0.5rem) var(--space-4, 1rem);
-    border-radius: var(--radius-full, 9999px);
-    margin-bottom: var(--space-4, 1rem);
-    box-shadow: 0 2px 8px rgba(8, 145, 178, 0.15);
-  }
-
-  .badge-icon {
-    font-size: var(--text-lg, 1.125rem);
-  }
-
-  .badge-text {
-    font-weight: var(--font-bold, 700);
-    color: var(--color-primary-700, #155e75);
-    font-size: var(--text-sm, 0.875rem);
-  }
-
   /* Mobile-first title */
   .hero-title {
     font-size: var(--text-xl, 1.25rem);
@@ -363,60 +325,6 @@
     font-size: var(--text-sm, 0.875rem);
     color: var(--color-neutral-700, #44403c);
     font-weight: var(--font-medium, 500);
-  }
-
-  /* Decorative Elements - Hidden on mobile, shown on desktop */
-  .hero-decoration {
-    display: none;
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    overflow: hidden;
-    z-index: -1;
-  }
-
-  @media (min-width: 900px) {
-    .hero-decoration {
-      display: block;
-    }
-  }
-
-  .deco-circle {
-    position: absolute;
-    border-radius: 50%;
-    opacity: 0.15;
-  }
-
-  .deco-1 {
-    width: 200px;
-    height: 200px;
-    background: var(--color-primary-400, #22d3ee);
-    top: -50px;
-    right: -50px;
-    animation: float 6s ease-in-out infinite;
-  }
-
-  .deco-2 {
-    width: 150px;
-    height: 150px;
-    background: var(--color-xp-400, #818cf8);
-    bottom: 20%;
-    left: -30px;
-    animation: float 8s ease-in-out infinite reverse;
-  }
-
-  .deco-3 {
-    width: 100px;
-    height: 100px;
-    background: var(--color-streak-400, #fbbf24);
-    top: 40%;
-    right: 10%;
-    animation: float 5s ease-in-out infinite;
-  }
-
-  @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
   }
 
   /* Login Card - Mobile first */
@@ -684,14 +592,6 @@
 
   :global([data-theme="dark"]) .feature-text {
     color: #e8e0d5;
-  }
-
-  :global([data-theme="dark"]) .hero-badge {
-    background: linear-gradient(135deg, rgba(8, 145, 178, 0.2), rgba(8, 145, 178, 0.1));
-  }
-
-  :global([data-theme="dark"]) .badge-text {
-    color: #67e8f9;
   }
 
   :global([data-theme="dark"]) .hint {
