@@ -122,21 +122,30 @@ export class DeutschLernDB extends Dexie {
     });
 
     // Add multi-language support: languagePair field in lessonProgress
-    // Unique constraint now on [languagePair+lessonId] to separate progress per language
+    // Step 1: First add languagePair field WITHOUT changing the unique constraint
+    // This ensures existing data is preserved before we change indexes
     this.version(6).stores({
       users: '++id, email',
-      lessonProgress: '++id, &[languagePair+lessonId], languagePair, status, updatedAt',
+      lessonProgress: '++id, &lessonId, languagePair, status, updatedAt', // Keep &lessonId for now
       vocab: '++id, &word, nextReview, addedAt',
       wrongAnswers: '++id, [lessonId+stepId], lessonId, reviewedAt',
       downloadedLessons: '++id, &[languagePair+lessonId], languagePair, downloadedAt'
     }).upgrade(tx => {
-      // Migrate existing lessonProgress records to add languagePair
-      // Default to 'de-fa' since that was the only language before this update
+      // First: add languagePair to all existing records
       return tx.table('lessonProgress').toCollection().modify(progress => {
         if (!progress.languagePair) {
           progress.languagePair = 'de-fa';
         }
       });
+    });
+
+    // Step 2: NOW change the unique constraint after data has languagePair
+    this.version(7).stores({
+      users: '++id, email',
+      lessonProgress: '++id, &[languagePair+lessonId], languagePair, status, updatedAt',
+      vocab: '++id, &word, nextReview, addedAt',
+      wrongAnswers: '++id, [lessonId+stepId], lessonId, reviewedAt',
+      downloadedLessons: '++id, &[languagePair+lessonId], languagePair, downloadedAt'
     });
   }
 }

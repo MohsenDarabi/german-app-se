@@ -72,7 +72,8 @@ export async function init(languagePair: string = 'de-fa'): Promise<void> {
   if (!browser) return;
   if (!CDN_BASE) {
     console.warn('AssetService: CDN not configured, using local assets');
-    state.update(s => ({ ...s, initialized: true }));
+    // Still update the language pair for local asset path resolution
+    state.update(s => ({ ...s, initialized: true, languagePair }));
     return;
   }
 
@@ -128,22 +129,24 @@ export async function init(languagePair: string = 'de-fa'): Promise<void> {
 /**
  * Get audio URL for a lesson step
  * Returns CDN URL if available, otherwise returns local path
+ * Local paths include language pair for multi-language support
  */
 export function getAudioUrl(lessonId: string, audioId: string): string {
   const currentState = get(state);
+  const langPair = currentState.languagePair || 'de-fa';
 
-  // If CDN not configured or manifest not loaded, use local path
+  // If CDN not configured or manifest not loaded, use local path with language pair
   if (!CDN_BASE || !currentState.manifest) {
-    return `/audio/${lessonId}/${audioId}.mp3`;
+    return `/audio/${langPair}/${lessonId}/${audioId}.mp3`;
   }
 
   const key = `${lessonId}/${audioId}`;
   const hash = currentState.manifest.audioMap[key];
 
   if (!hash) {
-    // Audio not in manifest, fall back to local
+    // Audio not in manifest, fall back to local with language pair
     console.warn(`AssetService: Audio not found in manifest: ${key}`);
-    return `/audio/${lessonId}/${audioId}.mp3`;
+    return `/audio/${langPair}/${lessonId}/${audioId}.mp3`;
   }
 
   return `${CDN_BASE}/${currentState.languagePair}/audio/by-hash/${hash}.mp3`;
