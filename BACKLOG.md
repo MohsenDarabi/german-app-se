@@ -50,7 +50,10 @@
 
 ## Technical Debt
 
-- [ ] Unify `content/` and `apps/web/static/content/` (symlink or build step)
+- [ ] **Move lesson content to R2 CDN** → [#7](https://github.com/MohsenDarabi/german-app-se/issues/7)
+  - Currently all content bundled in APK (heavy)
+  - Goal: lightweight shell APK + cloud content
+  - Fixes `content/` vs `static/content/` sync issue
 - [ ] Add E2E tests for critical user flows
 - [ ] Add database migration tests
 - [ ] Improve error handling in sync engine
