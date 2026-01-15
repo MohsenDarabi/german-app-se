@@ -1,5 +1,14 @@
 {
   "id": "A1-M02-L05",
+  "languagePair": "de-fa",
+  "source": {
+    "code": "de",
+    "name": "Deutsch"
+  },
+  "target": {
+    "code": "fa",
+    "name": "فارسی"
+  },
   "title": {
     "de": "Modalverben",
     "fa": "فعل‌های کمکی"
@@ -10,7 +19,6 @@
   "lessonNumber": 5,
   "totalSteps": 26,
   "estimatedMinutes": 15,
-  "charactersInLesson": ["eli", "tom"],
   "steps": [
     {
       "type": "grammar-tip",
@@ -18,8 +26,14 @@
       "title": "فعل‌های کمکی چیستند؟",
       "content": "فعل‌های کمکی (Modalverben) معنی فعل اصلی را تغییر می‌دهند:\n\n**können** = توانستن (می‌توانم)\n**wollen** = خواستن (می‌خواهم)\n**müssen** = باید (مجبورم)\n\n🇮🇷 **نکته:** در آلمانی فعل کمکی صرف می‌شود و فعل اصلی به آخر جمله می‌رود!",
       "examples": [
-        { "de": "Ich kann Deutsch sprechen.", "fa": "من می‌توانم آلمانی صحبت کنم." },
-        { "de": "Ich will Kaffee trinken.", "fa": "من می‌خواهم قهوه بنوشم." }
+        {
+          "de": "Ich kann Deutsch sprechen.",
+          "fa": "من می‌توانم آلمانی صحبت کنم."
+        },
+        {
+          "de": "Ich will Kaffee trinken.",
+          "fa": "من می‌خواهم قهوه بنوشم."
+        }
       ]
     },
     {
@@ -84,8 +98,14 @@
       "title": "صرف können",
       "content": "فعل **können** (توانستن):\n\n| ضمیر | فعل |\n|-----|-----|\n| ich | **kann** |\n| du | **kannst** |\n| er/sie/es | **kann** |\n| wir | **können** |\n| ihr | **könnt** |\n| sie/Sie | **können** |\n\n⚠️ توجه: ich و er/sie هر دو **kann** هستند!",
       "examples": [
-        { "de": "Ich kann tanzen.", "fa": "من می‌توانم برقصم." },
-        { "de": "Wir können helfen.", "fa": "ما می‌توانیم کمک کنیم." }
+        {
+          "de": "Ich kann tanzen.",
+          "fa": "من می‌توانم برقصم."
+        },
+        {
+          "de": "Wir können helfen.",
+          "fa": "ما می‌توانیم کمک کنیم."
+        }
       ]
     },
     {
@@ -94,11 +114,36 @@
       "title": "können - تمرین سریع",
       "instruction": "شکل درست را انتخاب کنید",
       "questions": [
-        { "prompt": "Ich ___ schwimmen.", "left": "kann", "right": "kannst", "correctSide": "left" },
-        { "prompt": "Du ___ gut tanzen.", "left": "kann", "right": "kannst", "correctSide": "right" },
-        { "prompt": "Er ___ Englisch sprechen.", "left": "kann", "right": "können", "correctSide": "left" },
-        { "prompt": "Wir ___ helfen.", "left": "kann", "right": "können", "correctSide": "right" },
-        { "prompt": "Sie (او) ___ kochen.", "left": "kann", "right": "könnt", "correctSide": "left" }
+        {
+          "prompt": "Ich ___ schwimmen.",
+          "left": "kann",
+          "right": "kannst",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Du ___ gut tanzen.",
+          "left": "kann",
+          "right": "kannst",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Er ___ Englisch sprechen.",
+          "left": "kann",
+          "right": "können",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Wir ___ helfen.",
+          "left": "kann",
+          "right": "können",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Sie (او) ___ kochen.",
+          "left": "kann",
+          "right": "könnt",
+          "correctSide": "left"
+        }
       ]
     },
     {
@@ -163,8 +208,14 @@
       "title": "صرف wollen",
       "content": "فعل **wollen** (خواستن):\n\n| ضمیر | فعل |\n|-----|-----|\n| ich | **will** |\n| du | **willst** |\n| er/sie/es | **will** |\n| wir | **wollen** |\n| ihr | **wollt** |\n| sie/Sie | **wollen** |\n\n⚠️ مثل können: ich و er/sie یکسان هستند!",
       "examples": [
-        { "de": "Ich will Pizza essen.", "fa": "من می‌خواهم پیتزا بخورم." },
-        { "de": "Sie wollen ins Kino gehen.", "fa": "آن‌ها می‌خواهند به سینما بروند." }
+        {
+          "de": "Ich will Pizza essen.",
+          "fa": "من می‌خواهم پیتزا بخورم."
+        },
+        {
+          "de": "Sie wollen ins Kino gehen.",
+          "fa": "آن‌ها می‌خواهند به سینما بروند."
+        }
       ]
     },
     {
@@ -229,8 +280,14 @@
       "title": "صرف müssen",
       "content": "فعل **müssen** (باید):\n\n| ضمیر | فعل |\n|-----|-----|\n| ich | **muss** |\n| du | **musst** |\n| er/sie/es | **muss** |\n| wir | **müssen** |\n| ihr | **müsst** |\n| sie/Sie | **müssen** |\n\n🇮🇷 **نکته:** müssen = اجبار، nicht müssen = لازم نیست (نه ممنوع!)",
       "examples": [
-        { "de": "Ich muss Deutsch lernen.", "fa": "من باید آلمانی یاد بگیرم." },
-        { "de": "Du musst nicht kommen.", "fa": "لازم نیست بیایی." }
+        {
+          "de": "Ich muss Deutsch lernen.",
+          "fa": "من باید آلمانی یاد بگیرم."
+        },
+        {
+          "de": "Du musst nicht kommen.",
+          "fa": "لازم نیست بیایی."
+        }
       ]
     },
     {
@@ -238,19 +295,46 @@
       "id": "s17",
       "instruction": "فعل کمکی را با معنی جفت کنید",
       "items": [
-        { "id": "i1", "text": "können" },
-        { "id": "i2", "text": "wollen" },
-        { "id": "i3", "text": "müssen" }
+        {
+          "id": "i1",
+          "text": "können"
+        },
+        {
+          "id": "i2",
+          "text": "wollen"
+        },
+        {
+          "id": "i3",
+          "text": "müssen"
+        }
       ],
       "matches": [
-        { "id": "m1", "text": "توانستن" },
-        { "id": "m2", "text": "خواستن" },
-        { "id": "m3", "text": "باید" }
+        {
+          "id": "m1",
+          "text": "توانستن"
+        },
+        {
+          "id": "m2",
+          "text": "خواستن"
+        },
+        {
+          "id": "m3",
+          "text": "باید"
+        }
       ],
       "correctPairs": [
-        ["i1", "m1"],
-        ["i2", "m2"],
-        ["i3", "m3"]
+        [
+          "i1",
+          "m1"
+        ],
+        [
+          "i2",
+          "m2"
+        ],
+        [
+          "i3",
+          "m3"
+        ]
       ]
     },
     {
@@ -259,11 +343,41 @@
       "title": "مکالمه: برنامه‌های آخر هفته",
       "context": "الی و تام درباره آخر هفته صحبت می‌کنند",
       "lines": [
-        { "speakerId": "eli", "text": { "de": "Was willst du am Wochenende machen?", "fa": "آخر هفته می‌خواهی چه کار کنی؟" } },
-        { "speakerId": "tom", "text": { "de": "Ich will ins Kino gehen. Kannst du mitkommen?", "fa": "می‌خواهم به سینما بروم. می‌توانی بیایی؟" } },
-        { "speakerId": "eli", "text": { "de": "Leider muss ich am Samstag arbeiten.", "fa": "متأسفانه شنبه باید کار کنم." } },
-        { "speakerId": "tom", "text": { "de": "Und am Sonntag?", "fa": "و یکشنبه؟" } },
-        { "speakerId": "eli", "text": { "de": "Ja, am Sonntag kann ich!", "fa": "آره، یکشنبه می‌توانم!" } }
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Was willst du am Wochenende machen?",
+            "fa": "آخر هفته می‌خواهی چه کار کنی؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Ich will ins Kino gehen. Kannst du mitkommen?",
+            "fa": "می‌خواهم به سینما بروم. می‌توانی بیایی؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Leider muss ich am Samstag arbeiten.",
+            "fa": "متأسفانه شنبه باید کار کنم."
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Und am Sonntag?",
+            "fa": "و یکشنبه؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Ja, am Sonntag kann ich!",
+            "fa": "آره، یکشنبه می‌توانم!"
+          }
+        }
       ]
     },
     {
@@ -272,15 +386,26 @@
       "title": "ترتیب کلمات با فعل کمکی",
       "content": "با فعل کمکی، فعل اصلی به **آخر جمله** می‌رود:\n\n| فعل کمکی | ... | فعل اصلی |\n|---------|-----|----------|\n| Ich **kann** | gut | **schwimmen**. |\n| Er **will** | Pizza | **essen**. |\n| Wir **müssen** | jetzt | **gehen**. |\n\n🇮🇷 **نکته:** این شبیه فارسی است که فعل آخر می‌آید!",
       "examples": [
-        { "de": "Ich kann Deutsch sprechen.", "fa": "من می‌توانم آلمانی صحبت کنم." },
-        { "de": "Sie will nach Hause gehen.", "fa": "او می‌خواهد به خانه برود." }
+        {
+          "de": "Ich kann Deutsch sprechen.",
+          "fa": "من می‌توانم آلمانی صحبت کنم."
+        },
+        {
+          "de": "Sie will nach Hause gehen.",
+          "fa": "او می‌خواهد به خانه برود."
+        }
       ]
     },
     {
       "type": "multiple-choice",
       "id": "s20",
       "question": "کدام جمله درست است؟",
-      "options": ["Ich schwimmen kann.", "Ich kann schwimmen.", "Kann ich schwimmen.", "Schwimmen ich kann."],
+      "options": [
+        "Ich schwimmen kann.",
+        "Ich kann schwimmen.",
+        "Kann ich schwimmen.",
+        "Schwimmen ich kann."
+      ],
       "correctAnswerIndex": 1,
       "feedback": {
         "correct": "آفرین! فعل کمکی در جایگاه دوم و فعل اصلی در آخر.",
@@ -292,8 +417,15 @@
       "id": "s21",
       "instruction": "جمله را کامل کنید",
       "sentence": "Er {0} sehr gut Gitarre spielen.",
-      "options": ["kann", "kannst", "können", "könnt"],
-      "correctAnswers": [0],
+      "options": [
+        "kann",
+        "kannst",
+        "können",
+        "könnt"
+      ],
+      "correctAnswers": [
+        0
+      ],
       "feedback": {
         "explanation": "Er **kann** Gitarre spielen. = او می‌تواند گیتار بزند."
       }
@@ -303,8 +435,15 @@
       "id": "s22",
       "instruction": "جمله را کامل کنید",
       "sentence": "Wir {0} morgen nach Berlin fahren.",
-      "options": ["will", "wollen", "wollt", "willst"],
-      "correctAnswers": [1],
+      "options": [
+        "will",
+        "wollen",
+        "wollt",
+        "willst"
+      ],
+      "correctAnswers": [
+        1
+      ],
       "feedback": {
         "explanation": "Wir **wollen** fahren. = ما می‌خواهیم برویم."
       }
@@ -315,11 +454,36 @@
       "title": "کدام فعل کمکی؟",
       "instruction": "فعل کمکی مناسب را انتخاب کنید",
       "questions": [
-        { "prompt": "توانستن = ?", "left": "können", "right": "müssen", "correctSide": "left" },
-        { "prompt": "خواستن = ?", "left": "müssen", "right": "wollen", "correctSide": "right" },
-        { "prompt": "باید = ?", "left": "müssen", "right": "können", "correctSide": "left" },
-        { "prompt": "Ich ___ schlafen. (می‌خواهم)", "left": "will", "right": "muss", "correctSide": "left" },
-        { "prompt": "Du ___ kommen. (باید)", "left": "willst", "right": "musst", "correctSide": "right" }
+        {
+          "prompt": "توانستن = ?",
+          "left": "können",
+          "right": "müssen",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "خواستن = ?",
+          "left": "müssen",
+          "right": "wollen",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "باید = ?",
+          "left": "müssen",
+          "right": "können",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Ich ___ schlafen. (می‌خواهم)",
+          "left": "will",
+          "right": "muss",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Du ___ kommen. (باید)",
+          "left": "willst",
+          "right": "musst",
+          "correctSide": "right"
+        }
       ]
     },
     {
@@ -328,15 +492,42 @@
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [
-        { "de": "können", "fa": "توانستن" },
-        { "de": "ich kann", "fa": "من می‌توانم" },
-        { "de": "du kannst", "fa": "تو می‌توانی" },
-        { "de": "wollen", "fa": "خواستن" },
-        { "de": "ich will", "fa": "من می‌خواهم" },
-        { "de": "du willst", "fa": "تو می‌خواهی" },
-        { "de": "müssen", "fa": "باید" },
-        { "de": "ich muss", "fa": "من باید" },
-        { "de": "du musst", "fa": "تو باید" }
+        {
+          "de": "können",
+          "fa": "توانستن"
+        },
+        {
+          "de": "ich kann",
+          "fa": "من می‌توانم"
+        },
+        {
+          "de": "du kannst",
+          "fa": "تو می‌توانی"
+        },
+        {
+          "de": "wollen",
+          "fa": "خواستن"
+        },
+        {
+          "de": "ich will",
+          "fa": "من می‌خواهم"
+        },
+        {
+          "de": "du willst",
+          "fa": "تو می‌خواهی"
+        },
+        {
+          "de": "müssen",
+          "fa": "باید"
+        },
+        {
+          "de": "ich muss",
+          "fa": "من باید"
+        },
+        {
+          "de": "du musst",
+          "fa": "تو باید"
+        }
       ]
     },
     {
@@ -347,18 +538,78 @@
       "xpEarned": 50,
       "nextLessonId": "A1-M02-L06",
       "vocabularyLearned": [
-        { "word": { "de": "können", "fa": "توانستن" } },
-        { "word": { "de": "ich kann", "fa": "من می‌توانم" } },
-        { "word": { "de": "du kannst", "fa": "تو می‌توانی" } },
-        { "word": { "de": "er/sie kann", "fa": "او می‌تواند" } },
-        { "word": { "de": "wollen", "fa": "خواستن" } },
-        { "word": { "de": "ich will", "fa": "من می‌خواهم" } },
-        { "word": { "de": "du willst", "fa": "تو می‌خواهی" } },
-        { "word": { "de": "er/sie will", "fa": "او می‌خواهد" } },
-        { "word": { "de": "müssen", "fa": "باید" } },
-        { "word": { "de": "ich muss", "fa": "من باید" } },
-        { "word": { "de": "du musst", "fa": "تو باید" } },
-        { "word": { "de": "er/sie muss", "fa": "او باید" } }
+        {
+          "word": {
+            "de": "können",
+            "fa": "توانستن"
+          }
+        },
+        {
+          "word": {
+            "de": "ich kann",
+            "fa": "من می‌توانم"
+          }
+        },
+        {
+          "word": {
+            "de": "du kannst",
+            "fa": "تو می‌توانی"
+          }
+        },
+        {
+          "word": {
+            "de": "er/sie kann",
+            "fa": "او می‌تواند"
+          }
+        },
+        {
+          "word": {
+            "de": "wollen",
+            "fa": "خواستن"
+          }
+        },
+        {
+          "word": {
+            "de": "ich will",
+            "fa": "من می‌خواهم"
+          }
+        },
+        {
+          "word": {
+            "de": "du willst",
+            "fa": "تو می‌خواهی"
+          }
+        },
+        {
+          "word": {
+            "de": "er/sie will",
+            "fa": "او می‌خواهد"
+          }
+        },
+        {
+          "word": {
+            "de": "müssen",
+            "fa": "باید"
+          }
+        },
+        {
+          "word": {
+            "de": "ich muss",
+            "fa": "من باید"
+          }
+        },
+        {
+          "word": {
+            "de": "du musst",
+            "fa": "تو باید"
+          }
+        },
+        {
+          "word": {
+            "de": "er/sie muss",
+            "fa": "او باید"
+          }
+        }
       ]
     }
   ]

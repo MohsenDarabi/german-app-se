@@ -1,5 +1,14 @@
 {
   "id": "A1-M03-L04",
+  "languagePair": "de-fa",
+  "source": {
+    "code": "de",
+    "name": "Deutsch"
+  },
+  "target": {
+    "code": "fa",
+    "name": "فارسی"
+  },
   "title": {
     "de": "Kontraste",
     "fa": "تضادها"
@@ -10,7 +19,6 @@
   "lessonNumber": 4,
   "totalSteps": 26,
   "estimatedMinutes": 15,
-  "charactersInLesson": ["eli", "tom"],
   "steps": [
     {
       "type": "grammar-tip",
@@ -18,8 +26,14 @@
       "title": "sondern - بلکه",
       "content": "وقتی چیزی را رد می‌کنید و جایگزین می‌دهید، از **sondern** استفاده کنید:\n\n**nicht ... sondern** = نه ... بلکه\n\nIch trinke **nicht** Kaffee, **sondern** Tee.\n(قهوه نمی‌نوشم، **بلکه** چای می‌نوشم.)\n\n🇮🇷 **نکته:** sondern فقط بعد از جمله منفی می‌آید!",
       "examples": [
-        { "de": "Das ist nicht rot, sondern blau.", "fa": "این قرمز نیست، بلکه آبی است." },
-        { "de": "Er kommt nicht heute, sondern morgen.", "fa": "او امروز نمی‌آید، بلکه فردا." }
+        {
+          "de": "Das ist nicht rot, sondern blau.",
+          "fa": "این قرمز نیست، بلکه آبی است."
+        },
+        {
+          "de": "Er kommt nicht heute, sondern morgen.",
+          "fa": "او امروز نمی‌آید، بلکه فردا."
+        }
       ]
     },
     {
@@ -42,8 +56,14 @@
       "title": "aber یا sondern؟",
       "content": "**aber** = ولی (اضافه کردن اطلاعات متضاد)\n**sondern** = بلکه (جایگزین کردن بعد از منفی)\n\n**۱. aber:**\nIch bin müde, **aber** ich arbeite.\n(خسته‌ام، **ولی** کار می‌کنم.)\n\n**۲. sondern:**\nIch bin **nicht** müde, **sondern** hungrig.\n(خسته **نیستم**، **بلکه** گرسنه‌ام.)",
       "examples": [
-        { "de": "Er ist klein, aber stark.", "fa": "او کوچک است، ولی قوی است." },
-        { "de": "Er ist nicht klein, sondern groß.", "fa": "او کوچک نیست، بلکه بزرگ است." }
+        {
+          "de": "Er ist klein, aber stark.",
+          "fa": "او کوچک است، ولی قوی است."
+        },
+        {
+          "de": "Er ist nicht klein, sondern groß.",
+          "fa": "او کوچک نیست، بلکه بزرگ است."
+        }
       ]
     },
     {
@@ -94,8 +114,14 @@
       "title": "noch یا schon؟",
       "content": "**noch** = هنوز (ادامه دارد)\n**schon** = دیگر / قبلاً (تمام شد)\n\n**۱. noch:**\nBist du **noch** müde? (هنوز خسته‌ای؟)\nJa, ich bin **noch** müde. (آره، هنوز خسته‌ام.)\n\n**۲. schon:**\nBist du **schon** fertig? (دیگر تمام کردی؟)\nJa, ich bin **schon** fertig. (آره، دیگر تمام کردم.)",
       "examples": [
-        { "de": "Schläfst du noch? - Nein, ich bin schon wach.", "fa": "هنوز می‌خوابی؟ - نه، دیگر بیدارم." },
-        { "de": "Ist er schon da? - Nein, noch nicht.", "fa": "دیگر رسیده؟ - نه، هنوز نه." }
+        {
+          "de": "Schläfst du noch? - Nein, ich bin schon wach.",
+          "fa": "هنوز می‌خوابی؟ - نه، دیگر بیدارم."
+        },
+        {
+          "de": "Ist er schon da? - Nein, noch nicht.",
+          "fa": "دیگر رسیده؟ - نه، هنوز نه."
+        }
       ]
     },
     {
@@ -104,11 +130,36 @@
       "title": "noch یا schon؟",
       "instruction": "کلمه مناسب را انتخاب کنید",
       "questions": [
-        { "prompt": "Ich bin ___ müde. (هنوز)", "left": "noch", "right": "schon", "correctSide": "left" },
-        { "prompt": "Er ist ___ fertig. (دیگر)", "left": "noch", "right": "schon", "correctSide": "right" },
-        { "prompt": "Sie ist ___ nicht hier. (هنوز نه)", "left": "noch", "right": "schon", "correctSide": "left" },
-        { "prompt": "Bist du ___ wach? (دیگر)", "left": "noch", "right": "schon", "correctSide": "right" },
-        { "prompt": "Ich lerne ___ Deutsch. (هنوز)", "left": "noch", "right": "schon", "correctSide": "left" }
+        {
+          "prompt": "Ich bin ___ müde. (هنوز)",
+          "left": "noch",
+          "right": "schon",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Er ist ___ fertig. (دیگر)",
+          "left": "noch",
+          "right": "schon",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Sie ist ___ nicht hier. (هنوز نه)",
+          "left": "noch",
+          "right": "schon",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Bist du ___ wach? (دیگر)",
+          "left": "noch",
+          "right": "schon",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Ich lerne ___ Deutsch. (هنوز)",
+          "left": "noch",
+          "right": "schon",
+          "correctSide": "left"
+        }
       ]
     },
     {
@@ -173,12 +224,48 @@
       "title": "مکالمه: عادت‌ها",
       "context": "الی و تام درباره عادت‌هایشان صحبت می‌کنند",
       "lines": [
-        { "speakerId": "eli", "text": { "de": "Trinkst du immer Kaffee?", "fa": "همیشه قهوه می‌نوشی؟" } },
-        { "speakerId": "tom", "text": { "de": "Nein, nicht immer. Manchmal trinke ich Tee.", "fa": "نه، نه همیشه. گاهی چای می‌نوشم." } },
-        { "speakerId": "eli", "text": { "de": "Ich trinke nie Kaffee, sondern nur Tee.", "fa": "من هرگز قهوه نمی‌نوشم، بلکه فقط چای." } },
-        { "speakerId": "tom", "text": { "de": "Wirklich? Ich trinke oft Kaffee.", "fa": "واقعاً؟ من اغلب قهوه می‌نوشم." } },
-        { "speakerId": "eli", "text": { "de": "Bist du schon wach?", "fa": "دیگر بیداری؟" } },
-        { "speakerId": "tom", "text": { "de": "Nein, noch nicht ganz!", "fa": "نه، هنوز نه کاملاً!" } }
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Trinkst du immer Kaffee?",
+            "fa": "همیشه قهوه می‌نوشی؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Nein, nicht immer. Manchmal trinke ich Tee.",
+            "fa": "نه، نه همیشه. گاهی چای می‌نوشم."
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Ich trinke nie Kaffee, sondern nur Tee.",
+            "fa": "من هرگز قهوه نمی‌نوشم، بلکه فقط چای."
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Wirklich? Ich trinke oft Kaffee.",
+            "fa": "واقعاً؟ من اغلب قهوه می‌نوشم."
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Bist du schon wach?",
+            "fa": "دیگر بیداری؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Nein, noch nicht ganz!",
+            "fa": "نه، هنوز نه کاملاً!"
+          }
+        }
       ]
     },
     {
@@ -214,8 +301,15 @@
       "id": "s15",
       "instruction": "جای خالی را پر کنید",
       "sentence": "Das ist nicht rot, {0} blau.",
-      "options": ["aber", "sondern", "und", "oder"],
-      "correctAnswers": [1],
+      "options": [
+        "aber",
+        "sondern",
+        "und",
+        "oder"
+      ],
+      "correctAnswers": [
+        1
+      ],
       "feedback": {
         "explanation": "Das ist nicht rot, **sondern** blau. (بعد از منفی + جایگزین = sondern)"
       }
@@ -225,8 +319,15 @@
       "id": "s16",
       "instruction": "جای خالی را پر کنید",
       "sentence": "Ich bin müde, {0} ich arbeite.",
-      "options": ["aber", "sondern", "und", "oder"],
-      "correctAnswers": [0],
+      "options": [
+        "aber",
+        "sondern",
+        "und",
+        "oder"
+      ],
+      "correctAnswers": [
+        0
+      ],
       "feedback": {
         "explanation": "Ich bin müde, **aber** ich arbeite. (اضافه کردن متضاد = aber)"
       }
@@ -236,8 +337,15 @@
       "id": "s17",
       "instruction": "جای خالی را پر کنید",
       "sentence": "Er ist {0} nicht hier.",
-      "options": ["noch", "schon", "immer", "nie"],
-      "correctAnswers": [0],
+      "options": [
+        "noch",
+        "schon",
+        "immer",
+        "nie"
+      ],
+      "correctAnswers": [
+        0
+      ],
       "feedback": {
         "explanation": "Er ist **noch** nicht hier. = او هنوز اینجا نیست."
       }
@@ -246,7 +354,12 @@
       "type": "multiple-choice",
       "id": "s18",
       "question": "کدام جمله درست است؟",
-      "options": ["Ich trinke nicht Tee, aber Kaffee.", "Ich trinke nicht Tee, sondern Kaffee.", "Ich trinke Tee, sondern Kaffee.", "Ich trinke nicht Tee, und Kaffee."],
+      "options": [
+        "Ich trinke nicht Tee, aber Kaffee.",
+        "Ich trinke nicht Tee, sondern Kaffee.",
+        "Ich trinke Tee, sondern Kaffee.",
+        "Ich trinke nicht Tee, und Kaffee."
+      ],
       "correctAnswerIndex": 1,
       "feedback": {
         "correct": "آفرین! بعد از nicht + جایگزین = sondern",
@@ -258,19 +371,46 @@
       "id": "s19",
       "instruction": "کلمه آلمانی را با معنی جفت کنید",
       "items": [
-        { "id": "i1", "text": "immer" },
-        { "id": "i2", "text": "nie" },
-        { "id": "i3", "text": "manchmal" }
+        {
+          "id": "i1",
+          "text": "immer"
+        },
+        {
+          "id": "i2",
+          "text": "nie"
+        },
+        {
+          "id": "i3",
+          "text": "manchmal"
+        }
       ],
       "matches": [
-        { "id": "m1", "text": "همیشه" },
-        { "id": "m2", "text": "هرگز" },
-        { "id": "m3", "text": "گاهی" }
+        {
+          "id": "m1",
+          "text": "همیشه"
+        },
+        {
+          "id": "m2",
+          "text": "هرگز"
+        },
+        {
+          "id": "m3",
+          "text": "گاهی"
+        }
       ],
       "correctPairs": [
-        ["i1", "m1"],
-        ["i2", "m2"],
-        ["i3", "m3"]
+        [
+          "i1",
+          "m1"
+        ],
+        [
+          "i2",
+          "m2"
+        ],
+        [
+          "i3",
+          "m3"
+        ]
       ]
     },
     {
@@ -279,11 +419,36 @@
       "title": "aber یا sondern؟",
       "instruction": "کلمه مناسب را انتخاب کنید",
       "questions": [
-        { "prompt": "Er ist klein, ___ stark.", "left": "aber", "right": "sondern", "correctSide": "left" },
-        { "prompt": "Das ist nicht rot, ___ blau.", "left": "aber", "right": "sondern", "correctSide": "right" },
-        { "prompt": "Ich bin müde, ___ glücklich.", "left": "aber", "right": "sondern", "correctSide": "left" },
-        { "prompt": "Sie kommt nicht heute, ___ morgen.", "left": "aber", "right": "sondern", "correctSide": "right" },
-        { "prompt": "Es ist kalt, ___ schön.", "left": "aber", "right": "sondern", "correctSide": "left" }
+        {
+          "prompt": "Er ist klein, ___ stark.",
+          "left": "aber",
+          "right": "sondern",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Das ist nicht rot, ___ blau.",
+          "left": "aber",
+          "right": "sondern",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Ich bin müde, ___ glücklich.",
+          "left": "aber",
+          "right": "sondern",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Sie kommt nicht heute, ___ morgen.",
+          "left": "aber",
+          "right": "sondern",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Es ist kalt, ___ schön.",
+          "left": "aber",
+          "right": "sondern",
+          "correctSide": "left"
+        }
       ]
     },
     {
@@ -292,8 +457,14 @@
       "title": "خلاصه قیدهای زمان",
       "content": "**۱. تکرار:**\n• **immer** = همیشه\n• **oft** = اغلب\n• **manchmal** = گاهی\n• **nie** = هرگز\n\n**۲. وضعیت:**\n• **noch** = هنوز (ادامه دارد)\n• **schon** = دیگر (تمام شد)\n• **noch nicht** = هنوز نه",
       "examples": [
-        { "de": "Ich bin immer müde, aber er ist nie müde.", "fa": "من همیشه خسته‌ام، ولی او هرگز خسته نیست." },
-        { "de": "Bist du schon fertig? - Nein, noch nicht.", "fa": "دیگر تمام کردی؟ - نه، هنوز نه." }
+        {
+          "de": "Ich bin immer müde, aber er ist nie müde.",
+          "fa": "من همیشه خسته‌ام، ولی او هرگز خسته نیست."
+        },
+        {
+          "de": "Bist du schon fertig? - Nein, noch nicht.",
+          "fa": "دیگر تمام کردی؟ - نه، هنوز نه."
+        }
       ]
     },
     {
@@ -316,17 +487,50 @@
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [
-        { "de": "sondern", "fa": "بلکه" },
-        { "de": "noch", "fa": "هنوز" },
-        { "de": "noch nicht", "fa": "هنوز نه" },
-        { "de": "schon", "fa": "دیگر / قبلاً" },
-        { "de": "immer", "fa": "همیشه" },
-        { "de": "nie", "fa": "هرگز" },
-        { "de": "manchmal", "fa": "گاهی" },
-        { "de": "oft", "fa": "اغلب" },
-        { "de": "nur", "fa": "فقط" },
-        { "de": "wirklich", "fa": "واقعاً" },
-        { "de": "fertig", "fa": "تمام / آماده" }
+        {
+          "de": "sondern",
+          "fa": "بلکه"
+        },
+        {
+          "de": "noch",
+          "fa": "هنوز"
+        },
+        {
+          "de": "noch nicht",
+          "fa": "هنوز نه"
+        },
+        {
+          "de": "schon",
+          "fa": "دیگر / قبلاً"
+        },
+        {
+          "de": "immer",
+          "fa": "همیشه"
+        },
+        {
+          "de": "nie",
+          "fa": "هرگز"
+        },
+        {
+          "de": "manchmal",
+          "fa": "گاهی"
+        },
+        {
+          "de": "oft",
+          "fa": "اغلب"
+        },
+        {
+          "de": "nur",
+          "fa": "فقط"
+        },
+        {
+          "de": "wirklich",
+          "fa": "واقعاً"
+        },
+        {
+          "de": "fertig",
+          "fa": "تمام / آماده"
+        }
       ]
     },
     {
@@ -337,17 +541,72 @@
       "xpEarned": 50,
       "nextLessonId": "A1-M04-L01",
       "vocabularyLearned": [
-        { "word": { "de": "sondern", "fa": "بلکه" } },
-        { "word": { "de": "noch", "fa": "هنوز" } },
-        { "word": { "de": "noch nicht", "fa": "هنوز نه" } },
-        { "word": { "de": "schon", "fa": "دیگر / قبلاً" } },
-        { "word": { "de": "immer", "fa": "همیشه" } },
-        { "word": { "de": "nie", "fa": "هرگز" } },
-        { "word": { "de": "manchmal", "fa": "گاهی" } },
-        { "word": { "de": "oft", "fa": "اغلب" } },
-        { "word": { "de": "nur", "fa": "فقط" } },
-        { "word": { "de": "wirklich", "fa": "واقعاً" } },
-        { "word": { "de": "fertig", "fa": "تمام / آماده" } }
+        {
+          "word": {
+            "de": "sondern",
+            "fa": "بلکه"
+          }
+        },
+        {
+          "word": {
+            "de": "noch",
+            "fa": "هنوز"
+          }
+        },
+        {
+          "word": {
+            "de": "noch nicht",
+            "fa": "هنوز نه"
+          }
+        },
+        {
+          "word": {
+            "de": "schon",
+            "fa": "دیگر / قبلاً"
+          }
+        },
+        {
+          "word": {
+            "de": "immer",
+            "fa": "همیشه"
+          }
+        },
+        {
+          "word": {
+            "de": "nie",
+            "fa": "هرگز"
+          }
+        },
+        {
+          "word": {
+            "de": "manchmal",
+            "fa": "گاهی"
+          }
+        },
+        {
+          "word": {
+            "de": "oft",
+            "fa": "اغلب"
+          }
+        },
+        {
+          "word": {
+            "de": "nur",
+            "fa": "فقط"
+          }
+        },
+        {
+          "word": {
+            "de": "wirklich",
+            "fa": "واقعاً"
+          }
+        },
+        {
+          "word": {
+            "de": "fertig",
+            "fa": "تمام / آماده"
+          }
+        }
       ]
     }
   ]

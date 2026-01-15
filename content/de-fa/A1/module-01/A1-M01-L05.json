@@ -1,5 +1,14 @@
 {
   "id": "A1-M01-L05",
+  "languagePair": "de-fa",
+  "source": {
+    "code": "de",
+    "name": "Deutsch"
+  },
+  "target": {
+    "code": "fa",
+    "name": "فارسی"
+  },
   "title": {
     "de": "Wie heißt du?",
     "fa": "اسمت چیه؟"
@@ -8,7 +17,6 @@
   "module": 1,
   "lessonNumber": 5,
   "estimatedMinutes": 15,
-  "charactersInLesson": ["eli", "tom"],
   "steps": [
     {
       "type": "new-word",
@@ -76,8 +84,14 @@
       "title": "دو راه برای گفتن اسم",
       "content": "در آلمانی دو راه برای گفتن اسم وجود دارد:\n\n**راه اول (رایج‌تر):**\n🗣️ **Ich heiße Eli.** = اسم من الی است.\n\n**راه دوم (رسمی‌تر):**\n📋 **Mein Name ist Eli.** = نام من الی است.\n\n✨ هر دو درست هستند! «Ich heiße» بیشتر استفاده می‌شود.",
       "examples": [
-        { "de": "Ich heiße Tom.", "fa": "اسم من تام است." },
-        { "de": "Mein Name ist Tom.", "fa": "نام من تام است." }
+        {
+          "de": "Ich heiße Tom.",
+          "fa": "اسم من تام است."
+        },
+        {
+          "de": "Mein Name ist Tom.",
+          "fa": "نام من تام است."
+        }
       ]
     },
     {
@@ -89,10 +103,30 @@
       "basePoints": 10,
       "showStreak": true,
       "questions": [
-        { "prompt": "Wie heißt du?", "left": "حالت چطوره؟", "right": "اسمت چیه؟", "correctSide": "right" },
-        { "prompt": "Ich heiße Eli", "left": "اسم من الی است", "right": "من الی هستم", "correctSide": "left" },
-        { "prompt": "der Name", "left": "اسم", "right": "خانه", "correctSide": "left" },
-        { "prompt": "heißen", "left": "زندگی کردن", "right": "نامیده شدن", "correctSide": "right" }
+        {
+          "prompt": "Wie heißt du?",
+          "left": "حالت چطوره؟",
+          "right": "اسمت چیه؟",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Ich heiße Eli",
+          "left": "اسم من الی است",
+          "right": "من الی هستم",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "der Name",
+          "left": "اسم",
+          "right": "خانه",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "heißen",
+          "left": "زندگی کردن",
+          "right": "نامیده شدن",
+          "correctSide": "right"
+        }
       ]
     },
     {
@@ -131,15 +165,26 @@
       "title": "Freut mich! در آشنایی",
       "content": "وقتی با کسی آشنا می‌شوید:\n\n**نفر اول:** Freut mich! = از آشناییت خوشحالم!\n**نفر دوم:** Freut mich **auch**! = منم از آشناییت خوشحالم!\n\n🇮🇷 **نکته:** کلمه «auch» یعنی «هم» یا «همچنین». در جواب «Freut mich» همیشه «auch» اضافه می‌کنیم.",
       "examples": [
-        { "de": "Freut mich!", "fa": "از آشناییت خوشحالم!" },
-        { "de": "Freut mich auch!", "fa": "منم از آشناییت خوشحالم!" }
+        {
+          "de": "Freut mich!",
+          "fa": "از آشناییت خوشحالم!"
+        },
+        {
+          "de": "Freut mich auch!",
+          "fa": "منم از آشناییت خوشحالم!"
+        }
       ]
     },
     {
       "type": "multiple-choice",
       "id": "s9",
       "question": "چگونه در آلمانی می‌پرسید «اسمت چیه؟»",
-      "options": ["Wie geht's?", "Woher kommst du?", "Wie heißt du?", "Wo wohnst du?"],
+      "options": [
+        "Wie geht's?",
+        "Woher kommst du?",
+        "Wie heißt du?",
+        "Wo wohnst du?"
+      ],
       "correctAnswerIndex": 2,
       "feedback": {
         "explanation": "برای پرسیدن اسم می‌گوییم «Wie heißt du?» که یعنی «اسمت چیه؟»"
@@ -150,8 +195,15 @@
       "id": "s10",
       "instruction": "جمله را کامل کنید",
       "sentence": "Ich {0} Eli.",
-      "options": ["heiße", "wohne", "komme", "spreche"],
-      "correctAnswers": [0],
+      "options": [
+        "heiße",
+        "wohne",
+        "komme",
+        "spreche"
+      ],
+      "correctAnswers": [
+        0
+      ],
       "feedback": {
         "explanation": "برای گفتن اسم از «heiße» استفاده می‌کنیم: Ich heiße Eli."
       }
@@ -160,8 +212,16 @@
       "type": "word-order",
       "id": "s11",
       "instruction": "کلمات را مرتب کنید تا جمله درست شود",
-      "words": ["Tom.", "heiße", "Ich"],
-      "correctOrder": [2, 1, 0],
+      "words": [
+        "Tom.",
+        "heiße",
+        "Ich"
+      ],
+      "correctOrder": [
+        2,
+        1,
+        0
+      ],
       "correctSentence": {
         "de": "Ich heiße Tom.",
         "fa": "اسم من تام است."
@@ -172,10 +232,22 @@
       "id": "g2",
       "title": "بازی حافظه",
       "pairs": [
-        { "de": "Wie heißt du?", "fa": "اسمت چیه؟" },
-        { "de": "Ich heiße...", "fa": "اسم من... است" },
-        { "de": "Freut mich!", "fa": "از آشناییت خوشحالم!" },
-        { "de": "auch", "fa": "هم / همچنین" }
+        {
+          "de": "Wie heißt du?",
+          "fa": "اسمت چیه؟"
+        },
+        {
+          "de": "Ich heiße...",
+          "fa": "اسم من... است"
+        },
+        {
+          "de": "Freut mich!",
+          "fa": "از آشناییت خوشحالم!"
+        },
+        {
+          "de": "auch",
+          "fa": "هم / همچنین"
+        }
       ],
       "timeLimit": 60
     },
@@ -184,11 +256,41 @@
       "id": "s12",
       "title": "اولین آشنایی",
       "lines": [
-        { "speakerId": "eli", "text": { "de": "Hallo! Wie heißt du?", "fa": "سلام! اسمت چیه؟" } },
-        { "speakerId": "tom", "text": { "de": "Hallo! Ich heiße Tom. Und du?", "fa": "سلام! اسم من تام است. تو چی؟" } },
-        { "speakerId": "eli", "text": { "de": "Ich heiße Eli.", "fa": "اسم من الی است." } },
-        { "speakerId": "tom", "text": { "de": "Freut mich, Eli!", "fa": "از آشناییت خوشحالم، الی!" } },
-        { "speakerId": "eli", "text": { "de": "Freut mich auch, Tom!", "fa": "منم از آشناییت خوشحالم، تام!" } }
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Hallo! Wie heißt du?",
+            "fa": "سلام! اسمت چیه؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Hallo! Ich heiße Tom. Und du?",
+            "fa": "سلام! اسم من تام است. تو چی؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Ich heiße Eli.",
+            "fa": "اسم من الی است."
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Freut mich, Eli!",
+            "fa": "از آشناییت خوشحالم، الی!"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Freut mich auch, Tom!",
+            "fa": "منم از آشناییت خوشحالم، تام!"
+          }
+        }
       ],
       "feedback": {
         "explanation": "در این مکالمه الی و تام با هم آشنا می‌شوند. توجه کنید که بعد از «Freut mich» نفر دوم «auch» اضافه می‌کند."
@@ -199,18 +301,59 @@
       "id": "s13",
       "instruction": "جفت‌های درست را پیدا کنید",
       "items": [
-        { "id": "i1", "text": "Wie heißt du?" },
-        { "id": "i2", "text": "Ich heiße..." },
-        { "id": "i3", "text": "Freut mich!" },
-        { "id": "i4", "text": "Freut mich auch!" }
+        {
+          "id": "i1",
+          "text": "Wie heißt du?"
+        },
+        {
+          "id": "i2",
+          "text": "Ich heiße..."
+        },
+        {
+          "id": "i3",
+          "text": "Freut mich!"
+        },
+        {
+          "id": "i4",
+          "text": "Freut mich auch!"
+        }
       ],
       "matches": [
-        { "id": "m1", "text": "اسمت چیه؟" },
-        { "id": "m2", "text": "اسم من... است" },
-        { "id": "m3", "text": "از آشناییت خوشحالم!" },
-        { "id": "m4", "text": "منم از آشناییت خوشحالم!" }
+        {
+          "id": "m1",
+          "text": "اسمت چیه؟"
+        },
+        {
+          "id": "m2",
+          "text": "اسم من... است"
+        },
+        {
+          "id": "m3",
+          "text": "از آشناییت خوشحالم!"
+        },
+        {
+          "id": "m4",
+          "text": "منم از آشناییت خوشحالم!"
+        }
       ],
-      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]],
+      "correctPairs": [
+        [
+          "i1",
+          "m1"
+        ],
+        [
+          "i2",
+          "m2"
+        ],
+        [
+          "i3",
+          "m3"
+        ],
+        [
+          "i4",
+          "m4"
+        ]
+      ],
       "shuffleTargets": true
     },
     {
@@ -228,8 +371,16 @@
       "id": "s15",
       "sourceText": "اسم من تام است. از آشناییت خوشحالم!",
       "sentenceTemplate": "Ich {0} Tom. {1} mich!",
-      "options": ["Freut", "heiße", "wohne", "Gut"],
-      "correctAnswers": [1, 0],
+      "options": [
+        "Freut",
+        "heiße",
+        "wohne",
+        "Gut"
+      ],
+      "correctAnswers": [
+        1,
+        0
+      ],
       "correctTranslation": {
         "de": "Ich heiße Tom. Freut mich!",
         "fa": "اسم من تام است. از آشناییت خوشحالم!"
@@ -248,8 +399,15 @@
       "id": "s17",
       "instruction": "جمله را کامل کنید",
       "sentence": "Wie {0} du?",
-      "options": ["heißt", "heiße", "wohnst", "kommst"],
-      "correctAnswers": [0],
+      "options": [
+        "heißt",
+        "heiße",
+        "wohnst",
+        "kommst"
+      ],
+      "correctAnswers": [
+        0
+      ],
       "feedback": {
         "explanation": "برای پرسیدن اسم از «heißt» استفاده می‌کنیم: Wie heißt du?"
       }
@@ -258,7 +416,12 @@
       "type": "multiple-choice",
       "id": "s18",
       "question": "وقتی کسی می‌گوید «Freut mich!» شما چه جواب می‌دهید؟",
-      "options": ["Danke!", "Freut mich auch!", "Tschüss!", "Wie geht's?"],
+      "options": [
+        "Danke!",
+        "Freut mich auch!",
+        "Tschüss!",
+        "Wie geht's?"
+      ],
       "correctAnswerIndex": 1,
       "feedback": {
         "explanation": "وقتی کسی می‌گوید «Freut mich!» در جواب می‌گوییم «Freut mich auch!» یعنی «منم از آشناییت خوشحالم!»"
@@ -270,12 +433,30 @@
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [
-        { "de": "heißen", "fa": "نامیده شدن" },
-        { "de": "Wie heißt du?", "fa": "اسمت چیه؟" },
-        { "de": "Ich heiße...", "fa": "اسم من... است" },
-        { "de": "der Name", "fa": "اسم / نام" },
-        { "de": "Freut mich!", "fa": "از آشناییت خوشحالم!" },
-        { "de": "auch", "fa": "هم / همچنین" }
+        {
+          "de": "heißen",
+          "fa": "نامیده شدن"
+        },
+        {
+          "de": "Wie heißt du?",
+          "fa": "اسمت چیه؟"
+        },
+        {
+          "de": "Ich heiße...",
+          "fa": "اسم من... است"
+        },
+        {
+          "de": "der Name",
+          "fa": "اسم / نام"
+        },
+        {
+          "de": "Freut mich!",
+          "fa": "از آشناییت خوشحالم!"
+        },
+        {
+          "de": "auch",
+          "fa": "هم / همچنین"
+        }
       ]
     },
     {
@@ -283,14 +464,49 @@
       "id": "s19",
       "message": "آفرین! درس پنجم را با موفقیت تمام کردید!\n\nحالا می‌توانید اسم بپرسید و خودتان را معرفی کنید!",
       "vocabularyLearned": [
-        { "word": { "de": "heißen", "fa": "نامیده شدن" } },
-        { "word": { "de": "Wie heißt du?", "fa": "اسمت چیه؟" } },
-        { "word": { "de": "Ich heiße...", "fa": "اسم من... است" } },
-        { "word": { "de": "der Name", "fa": "اسم / نام" } },
-        { "word": { "de": "Freut mich!", "fa": "از آشناییت خوشحالم!" } },
-        { "word": { "de": "auch", "fa": "هم / همچنین" } }
+        {
+          "word": {
+            "de": "heißen",
+            "fa": "نامیده شدن"
+          }
+        },
+        {
+          "word": {
+            "de": "Wie heißt du?",
+            "fa": "اسمت چیه؟"
+          }
+        },
+        {
+          "word": {
+            "de": "Ich heiße...",
+            "fa": "اسم من... است"
+          }
+        },
+        {
+          "word": {
+            "de": "der Name",
+            "fa": "اسم / نام"
+          }
+        },
+        {
+          "word": {
+            "de": "Freut mich!",
+            "fa": "از آشناییت خوشحالم!"
+          }
+        },
+        {
+          "word": {
+            "de": "auch",
+            "fa": "هم / همچنین"
+          }
+        }
       ]
     }
   ],
-  "tags": ["introductions", "names", "greetings", "A1"]
+  "tags": [
+    "introductions",
+    "names",
+    "greetings",
+    "A1"
+  ]
 }

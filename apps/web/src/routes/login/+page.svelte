@@ -1,29 +1,75 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
   import { supabase } from '$lib/supabase/client';
   import { goto } from '$app/navigation';
+  import { page } from '$app/stores';
+  import { getOAuthRedirectUrl, initDeepLinkHandler } from '$lib/services/deepLinkHandler';
+  import { Button } from '@pkg/ui';
 
   let email = '';
   let password = '';
+  let confirmPassword = '';
   let error = '';
+  let successMessage = '';
   let isLoading = false;
+  let mode: 'login' | 'signup' = 'login';
+
+  onMount(() => {
+    // Initialize deep link handler for OAuth callbacks
+    initDeepLinkHandler();
+
+    // Check for error in URL params
+    const urlError = $page.url.searchParams.get('error');
+    if (urlError) {
+      error = urlError === 'auth_failed' ? 'خطا در احراز هویت' : urlError;
+    }
+  });
+
+  function toggleMode() {
+    mode = mode === 'login' ? 'signup' : 'login';
+    error = '';
+    successMessage = '';
+    password = '';
+    confirmPassword = '';
+  }
 
   async function handleGoogleSignIn() {
     try {
       isLoading = true;
       error = '';
 
-      const { error: signInError } = await supabase.auth.signInWithOAuth({
+      const redirectUrl = getOAuthRedirectUrl();
+      console.log('[Login] OAuth redirect URL:', redirectUrl);
+
+      // Get the OAuth URL from Supabase
+      const { data, error: signInError } = await supabase.auth.signInWithOAuth({
         provider: 'google',
         options: {
-          redirectTo: `${window.location.origin}/auth/callback`,
+          redirectTo: redirectUrl,
           queryParams: {
-            prompt: 'select_account' // Force Google account picker
-          }
+            prompt: 'select_account'
+          },
+          skipBrowserRedirect: true // Don't auto-redirect, we'll handle it
         }
       });
 
       if (signInError) {
         error = signInError.message;
+        return;
+      }
+
+      if (data?.url) {
+        // Open OAuth in external browser (required by Google)
+        const { Capacitor } = await import('@capacitor/core');
+
+        if (Capacitor.isNativePlatform()) {
+          const { Browser } = await import('@capacitor/browser');
+          console.log('[Login] Opening OAuth in external browser:', data.url);
+          await Browser.open({ url: data.url });
+        } else {
+          // Web: redirect normally
+          window.location.href = data.url;
+        }
       }
     } catch (err: any) {
       error = 'خطا در ورود با گوگل';
@@ -56,29 +102,126 @@
       isLoading = false;
     }
   }
+
+  async function handleEmailSignUp(event: Event) {
+    event.preventDefault();
+
+    // Validate passwords match
+    if (password !== confirmPassword) {
+      error = 'رمز عبور و تکرار آن یکسان نیستند';
+      return;
+    }
+
+    // Validate password length
+    if (password.length < 6) {
+      error = 'رمز عبور باید حداقل ۶ کاراکتر باشد';
+      return;
+    }
+
+    try {
+      isLoading = true;
+      error = '';
+      successMessage = '';
+
+      const { data, error: signUpError } = await supabase.auth.signUp({
+        email,
+        password,
+        options: {
+          emailRedirectTo: `${window.location.origin}/auth/callback`
+        }
+      });
+
+      if (signUpError) {
+        if (signUpError.message.includes('already registered')) {
+          error = 'این ایمیل قبلاً ثبت شده است. لطفاً وارد شوید.';
+        } else {
+          error = signUpError.message;
+        }
+        return;
+      }
+
+      // Check if email confirmation is required
+      if (data.user && !data.session) {
+        successMessage = 'لینک تأیید به ایمیل شما ارسال شد. لطفاً ایمیل خود را بررسی کنید.';
+        email = '';
+        password = '';
+        confirmPassword = '';
+      } else if (data.session) {
+        // Auto-confirmed (if email confirmation is disabled)
+        goto('/');
+      }
+    } catch (err: any) {
+      error = 'خطا در ثبت‌نام';
+      console.error('Email sign-up error:', err);
+    } finally {
+      isLoading = false;
+    }
+  }
 </script>
 
-<section class="login-layout">
+<section class="login-layout" dir="rtl">
+  <!-- Hero Section -->
   <div class="hero">
-    <h1>یادگیری آلمانی و انگلیسی از صفر، مخصوص فارسی‌زبان‌ها</h1>
-    <p>
-      مسیرت را از فارسی شروع کن، واژه‌ها، جملات و دیالوگ‌های روزمره را
+    <h1 class="hero-title">
+      یادگیری زبان،
+      <span class="highlight">ساده و کاربردی</span>
+    </h1>
+
+    <p class="hero-description">
       قدم‌به‌قدم یاد بگیر و پیشرفتت را هر روز ببین.
     </p>
 
     <ul class="features">
-      <li>درس‌های کوتاه و قابل فهم</li>
-      <li>مثال‌های واقعی از زندگی مهاجرتی</li>
-      <li>پیشرفت مرحله‌به‌مرحله و قابل اندازه‌گیری</li>
+      <li>
+        <span class="feature-icon">📚</span>
+        <span class="feature-text">درس‌های کوتاه و کاربردی</span>
+      </li>
+      <li>
+        <span class="feature-icon">📈</span>
+        <span class="feature-text">پیشرفت قابل اندازه‌گیری</span>
+      </li>
     </ul>
   </div>
 
+  <!-- Login Card -->
   <div class="card">
-    <h2>ورود به حساب کاربری</h2>
-    <p class="card-subtitle">برای ادامه یادگیری، وارد حساب خودت شو.</p>
+    <!-- Mode Toggle -->
+    <div class="mode-toggle">
+      <button
+        class="toggle-btn"
+        class:active={mode === 'login'}
+        on:click={() => { if (mode !== 'login') toggleMode(); }}
+      >
+        ورود
+      </button>
+      <button
+        class="toggle-btn"
+        class:active={mode === 'signup'}
+        on:click={() => { if (mode !== 'signup') toggleMode(); }}
+      >
+        ثبت‌نام
+      </button>
+    </div>
+
+    <div class="card-header">
+      <h2>{mode === 'login' ? 'ورود به حساب کاربری' : 'ساخت حساب جدید'}</h2>
+      <p class="card-subtitle">
+        {mode === 'login' ? 'برای ادامه یادگیری، وارد حساب خودت شو.' : 'یک حساب جدید بساز و یادگیری را شروع کن.'}
+      </p>
+    </div>
+
+    {#if successMessage}
+      <div class="success-message">
+        <span class="success-icon">✅</span>
+        <span>{successMessage}</span>
+      </div>
+    {/if}
 
     {#if error}
-      <p class="error">{error}</p>
+      <div class="error-message">
+        <span class="error-icon">⚠️</span>
+        <span>{error}</span>
+      </div>
     {/if}
 
     <button class="google-btn" on:click={handleGoogleSignIn} disabled={isLoading}>
@@ -88,15 +231,18 @@
         <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05" />
         <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335" />
       </svg>
-      {isLoading ? 'در حال ورود...' : 'ورود با گوگل'}
+      <span>{isLoading ? 'در حال ورود...' : 'ورود با گوگل'}</span>
     </button>
 
-    <div class="divider">یا با ایمیل</div>
+    <div class="divider">
+      <span>یا با ایمیل</span>
+    </div>
 
-    <form on:submit={handleEmailSignIn} class="form">
-      <label>
-        ایمیل
+    <form on:submit={mode === 'login' ? handleEmailSignIn : handleEmailSignUp} class="form">
+      <div class="input-group">
+        <label for="email">ایمیل</label>
         <input
+          id="email"
           name="email"
           type="email"
           bind:value={email}
@@ -104,221 +250,574 @@
           required
           disabled={isLoading}
         />
-      </label>
+      </div>
 
-      <label>
-        رمز عبور
+      <div class="input-group">
+        <label for="password">رمز عبور</label>
         <input
+          id="password"
           name="password"
           type="password"
           bind:value={password}
           placeholder="•••••••"
+          minlength={mode === 'signup' ? 6 : undefined}
           required
           disabled={isLoading}
         />
-      </label>
+      </div>
 
-      <button type="submit" disabled={isLoading}>
-        {isLoading ? 'در حال ورود...' : 'ورود'}
+      {#if mode === 'signup'}
+        <div class="input-group">
+          <label for="confirmPassword">تکرار رمز عبور</label>
+          <input
+            id="confirmPassword"
+            name="confirmPassword"
+            type="password"
+            bind:value={confirmPassword}
+            placeholder="•••••••"
+            required
+            disabled={isLoading}
+          />
+        </div>
+      {/if}
+
+      <button type="submit" class="submit-btn" disabled={isLoading}>
+        {#if isLoading}
+          {mode === 'login' ? 'در حال ورود...' : 'در حال ثبت‌نام...'}
+        {:else}
+          {mode === 'login' ? 'ورود' : 'ثبت‌نام'}
+        {/if}
       </button>
 
       <p class="hint">
-        حساب کاربری ندارید؟ با گوگل وارد شوید تا حساب جدید ساخته شود.
+        {#if mode === 'login'}
+          حساب کاربری ندارید؟ <button type="button" class="link-btn" on:click={toggleMode}>ثبت‌نام کنید</button>
+        {:else}
+          قبلاً ثبت‌نام کردید؟ <button type="button" class="link-btn" on:click={toggleMode}>وارد شوید</button>
+        {/if}
       </p>
     </form>
   </div>
 </section>
 
 <style>
+  /* Mobile-first: single column, full width */
   .login-layout {
     display: grid;
-    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
-    gap: 2rem;
+    grid-template-columns: 1fr;
+    gap: var(--space-4, 1rem);
     align-items: center;
-    min-height: calc(100vh - 140px);
+    min-height: calc(100vh - 120px);
+    min-height: calc(100dvh - 120px);
+    padding: var(--space-3, 0.75rem);
+    padding-left: calc(var(--space-3, 0.75rem) + env(safe-area-inset-left, 0px));
+    padding-right: calc(var(--space-3, 0.75rem) + env(safe-area-inset-right, 0px));
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    box-sizing: border-box;
   }
 
-  .hero h1 {
-    font-size: 1.9rem;
+  /* Tablet: two columns */
+  @media (min-width: 900px) {
+    .login-layout {
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+      gap: var(--space-8, 2rem);
+      padding: var(--space-6, 1.5rem);
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  }
+
+  /* Hero Section - Mobile first */
+  .hero {
+    position: relative;
+    padding: var(--space-3, 0.75rem);
+    text-align: center;
+    order: -1;
+  }
+
+  @media (min-width: 900px) {
+    .hero {
+      padding: var(--space-6, 1.5rem);
+      text-align: right;
+      order: 0;
+    }
+  }
+
+  /* Mobile-first title */
+  .hero-title {
+    font-size: var(--text-xl, 1.25rem);
     line-height: 1.3;
-    margin-bottom: 0.75rem;
-    color: #0f172a;
+    margin: 0 0 var(--space-3, 0.75rem);
+    color: var(--color-neutral-800, #292524);
+    font-weight: var(--font-extrabold, 800);
   }
 
-  .hero p {
-    font-size: 0.95rem;
-    color: #475569;
-    max-width: 30rem;
-    margin-bottom: 1rem;
+  @media (min-width: 640px) {
+    .hero-title {
+      font-size: var(--text-2xl, 1.5rem);
+      margin: 0 0 var(--space-4, 1rem);
+    }
   }
 
+  @media (min-width: 900px) {
+    .hero-title {
+      font-size: var(--text-3xl, 1.875rem);
+    }
+  }
+
+  .hero-title .highlight {
+    background: linear-gradient(135deg, var(--color-primary-500, #0891b2), var(--color-xp-500, #4f46e5));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Mobile-first description */
+  .hero-description {
+    font-size: var(--text-sm, 0.875rem);
+    color: var(--color-neutral-600, #57534e);
+    max-width: 100%;
+    margin: 0 auto var(--space-4, 1rem);
+    line-height: 1.6;
+  }
+
+  @media (min-width: 640px) {
+    .hero-description {
+      font-size: var(--text-base, 1rem);
+      line-height: 1.7;
+      margin: 0 0 var(--space-6, 1.5rem);
+    }
+  }
+
+  @media (min-width: 900px) {
+    .hero-description {
+      max-width: 30rem;
+    }
+  }
+
+  /* Features List - Mobile first */
   .features {
     list-style: none;
     padding: 0;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 0.35rem;
-    font-size: 0.9rem;
-    color: #334155;
+    gap: var(--space-2, 0.5rem);
+    max-width: 400px;
   }
 
-  .features li::before {
-    content: '• ';
-    color: #1d4ed8;
-    font-weight: 700;
+  @media (min-width: 900px) {
+    .features {
+      gap: var(--space-3, 0.75rem);
+      max-width: none;
+      margin: 0;
+    }
   }
 
+  .features li {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3, 0.75rem);
+    padding: var(--space-3, 0.75rem) var(--space-4, 1rem);
+    background: var(--glass-bg, rgba(253, 251, 247, 0.85));
+    border: 1px solid var(--glass-border, rgba(212, 201, 185, 0.3));
+    border-radius: var(--radius-lg, 0.75rem);
+    backdrop-filter: blur(var(--glass-blur, 12px));
+    transition: all var(--transition-normal, 200ms);
+  }
+
+  .features li:hover {
+    transform: translateX(-4px);
+    border-color: var(--color-primary-300, #67e8f9);
+    box-shadow: var(--shadow-sm, 0 2px 4px rgba(0, 0, 0, 0.05));
+  }
+
+  .feature-icon {
+    font-size: var(--text-lg, 1.125rem);
+  }
+
+  .feature-text {
+    font-size: var(--text-sm, 0.875rem);
+    color: var(--color-neutral-700, #44403c);
+    font-weight: var(--font-medium, 500);
+  }
+
+  /* Login Card - Mobile first */
   .card {
-    background: #ffffff;
-    border-radius: 1rem;
-    padding: 1.6rem 1.5rem;
-    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
-    border: 1px solid rgba(148, 163, 184, 0.25);
+    background: var(--glass-bg, rgba(253, 251, 247, 0.95));
+    border: 1px solid var(--glass-border, rgba(212, 201, 185, 0.3));
+    border-radius: var(--radius-xl, 1rem);
+    padding: var(--space-4, 1rem);
+    backdrop-filter: blur(var(--glass-blur, 12px));
+    box-shadow:
+      0 10px 30px rgba(0, 0, 0, 0.08),
+      0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
+  @media (min-width: 640px) {
+    .card {
+      padding: var(--space-6, 1.5rem);
+      border-radius: var(--radius-2xl, 1.5rem);
+    }
+  }
+
+  @media (min-width: 900px) {
+    .card {
+      padding: var(--space-8, 2rem);
+      box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.1),
+        0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+    }
+  }
+
+  /* Mode Toggle */
+  .mode-toggle {
+    display: flex;
+    background: var(--color-neutral-100, #f5f0e8);
+    border-radius: var(--radius-full, 9999px);
+    padding: 4px;
+    margin-bottom: var(--space-6, 1.5rem);
+  }
+
+  .toggle-btn {
+    flex: 1;
+    padding: var(--space-2, 0.5rem) var(--space-4, 1rem);
+    border: none;
+    background: transparent;
+    border-radius: var(--radius-full, 9999px);
+    font-size: var(--text-sm, 0.875rem);
+    font-weight: var(--font-medium, 500);
+    color: var(--color-neutral-500, #78716c);
+    cursor: pointer;
+    transition: all var(--transition-normal, 200ms);
+  }
+
+  .toggle-btn.active {
+    background: white;
+    color: var(--color-primary-600, #0e7490);
+    font-weight: var(--font-semibold, 600);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .toggle-btn:hover:not(.active) {
+    color: var(--color-neutral-700, #44403c);
+  }
+
+  /* Success Message */
+  .success-message {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2, 0.5rem);
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.05));
+    color: var(--color-gem-600, #047857);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    border-radius: var(--radius-lg, 0.75rem);
+    padding: var(--space-3, 0.75rem) var(--space-4, 1rem);
+    font-size: var(--text-sm, 0.875rem);
+    margin-bottom: var(--space-4, 1rem);
+  }
+
+  .success-icon {
+    font-size: var(--text-base, 1rem);
+  }
+
+  /* Link Button */
+  .link-btn {
+    background: none;
+    border: none;
+    color: var(--color-primary-500, #0891b2);
+    font-weight: var(--font-semibold, 600);
+    cursor: pointer;
+    padding: 0;
+    font-size: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .link-btn:hover {
+    color: var(--color-primary-600, #0e7490);
+  }
+
+  .card-header {
+    text-align: center;
+    margin-bottom: var(--space-6, 1.5rem);
+  }
+
+  .card-header h2 {
+    font-size: var(--text-xl, 1.25rem);
+    font-weight: var(--font-bold, 700);
+    color: var(--color-neutral-800, #292524);
+    margin: 0 0 var(--space-2, 0.5rem);
+  }
+
+  .card-subtitle {
+    font-size: var(--text-sm, 0.875rem);
+    color: var(--color-neutral-500, #78716c);
+    margin: 0;
+  }
+
+  /* Error Message */
+  .error-message {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2, 0.5rem);
+    background: linear-gradient(135deg, var(--color-error-50, #fef2f2), rgba(185, 28, 28, 0.05));
+    color: var(--color-error-600, #8b1a1a);
+    border: 1px solid var(--color-error-200, #fecaca);
+    border-radius: var(--radius-lg, 0.75rem);
+    padding: var(--space-3, 0.75rem) var(--space-4, 1rem);
+    font-size: var(--text-sm, 0.875rem);
+    margin-bottom: var(--space-4, 1rem);
+  }
+
+  .error-icon {
+    font-size: var(--text-base, 1rem);
+  }
+
+  /* Google Button */
   .google-btn {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.75rem;
-    background: #fff;
-    color: #374151;
-    border: 1px solid #e5e7eb;
-    padding: 0.6rem;
-    border-radius: 999px;
-    font-size: 0.95rem;
-    font-weight: 500;
+    gap: var(--space-3, 0.75rem);
+    background: white;
+    color: var(--color-neutral-700, #44403c);
+    border: 2px solid var(--color-neutral-200, #e8e0d5);
+    padding: var(--space-3, 0.75rem) var(--space-4, 1rem);
+    border-radius: var(--radius-full, 9999px);
+    font-size: var(--text-base, 1rem);
+    font-weight: var(--font-medium, 500);
     cursor: pointer;
-    transition: all 0.2s;
-    margin-bottom: 1.25rem;
+    transition: all var(--transition-normal, 200ms);
+    min-height: 48px;
   }
 
-  .google-btn:hover {
-    background: #f9fafb;
-    border-color: #d1d5db;
+  .google-btn:hover:not(:disabled) {
+    background: var(--color-neutral-50, #fdfbf7);
+    border-color: var(--color-neutral-300, #d4c9b9);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md, 0 4px 12px rgba(0, 0, 0, 0.1));
   }
 
+  .google-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+
+  /* Divider */
   .divider {
     display: flex;
     align-items: center;
     text-align: center;
-    color: #94a3b8;
-    font-size: 0.85rem;
-    margin-bottom: 1.25rem;
+    color: var(--color-neutral-400, #a69b8a);
+    font-size: var(--text-sm, 0.875rem);
+    margin: var(--space-6, 1.5rem) 0;
   }
 
   .divider::before,
   .divider::after {
     content: '';
     flex: 1;
-    border-bottom: 1px solid #e2e8f0;
+    border-bottom: 1px solid var(--color-neutral-200, #e8e0d5);
   }
 
-  .divider::before {
-    margin-left: 0.75rem;
+  .divider span {
+    padding: 0 var(--space-3, 0.75rem);
   }
 
-  .divider::after {
-    margin-right: 0.75rem;
-  }
-
-  .card h2 {
-    font-size: 1.3rem;
-    margin-bottom: 0.25rem;
-  }
-
-  .card-subtitle {
-    font-size: 0.85rem;
-    color: #64748b;
-    margin-bottom: 1.25rem;
-  }
-
+  /* Form */
   .form {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: var(--space-4, 1rem);
   }
 
-  label {
+  .input-group {
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
-    font-size: 0.9rem;
+    gap: var(--space-2, 0.5rem);
   }
 
-  input {
-    padding: 0.55rem 0.8rem;
-    border-radius: 0.7rem;
-    border: 1px solid #cbd5e1;
-    font-size: 0.9rem;
+  .input-group label {
+    font-size: var(--text-sm, 0.875rem);
+    font-weight: var(--font-medium, 500);
+    color: var(--color-neutral-700, #44403c);
   }
 
-  p {
-    color: #c0e909;
+  .input-group input {
+    padding: var(--space-3, 0.75rem) var(--space-4, 1rem);
+    border-radius: var(--radius-lg, 0.75rem);
+    border: 2px solid var(--color-neutral-200, #e8e0d5);
+    font-size: var(--text-base, 1rem);
+    background: white;
+    transition: all var(--transition-fast, 150ms);
+    min-height: 48px;
   }
 
-  input:focus {
+  .input-group input:focus {
     outline: none;
-    border-color: #2563eb;
-    box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.3);
+    border-color: var(--color-primary-500, #0891b2);
+    box-shadow: 0 0 0 3px rgba(8, 145, 178, 0.15);
   }
 
-  button {
-    margin-top: 0.5rem;
-    padding: 0.6rem 1rem;
-    border-radius: 999px;
+  .input-group input:disabled {
+    background: var(--color-neutral-100, #f5f0e8);
+    cursor: not-allowed;
+  }
+
+  /* Submit Button */
+  .submit-btn {
+    margin-top: var(--space-2, 0.5rem);
+    padding: var(--space-3, 0.75rem) var(--space-6, 1.5rem);
+    border-radius: var(--radius-full, 9999px);
     border: none;
     cursor: pointer;
-    background: linear-gradient(90deg, #1d4ed8, #3b82f6);
-    color: #fff;
-    font-weight: 500;
-    font-size: 0.95rem;
+    background: linear-gradient(135deg, var(--color-primary-500, #0891b2), var(--color-primary-600, #0e7490));
+    color: white;
+    font-weight: var(--font-semibold, 600);
+    font-size: var(--text-base, 1rem);
+    min-height: 48px;
+    transition: all var(--transition-normal, 200ms);
+    box-shadow: 0 4px 15px rgba(8, 145, 178, 0.3);
   }
 
-  button:hover {
-    filter: brightness(1.05);
+  .submit-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(8, 145, 178, 0.4);
   }
 
-  .error {
-    background: #fee2e2;
-    color: #991b1b;
-    border-radius: 0.6rem;
-    padding: 0.4rem 0.6rem;
-    font-size: 0.8rem;
-    margin-bottom: 0.4rem;
+  .submit-btn:active:not(:disabled) {
+    transform: translateY(0) scale(0.98);
   }
 
+  .submit-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+
+  /* Hint */
   .hint {
-    font-size: 0.8rem;
-    color: #64748b;
-    margin-top: 0.5rem;
+    font-size: var(--text-sm, 0.875rem);
+    color: var(--color-neutral-500, #78716c);
+    text-align: center;
+    margin: var(--space-2, 0.5rem) 0 0;
   }
 
-  code {
-    background: #e0f2fe;
-    padding: 0.1rem 0.35rem;
-    border-radius: 0.35rem;
+  /* Dark Mode - use hardcoded colors since CSS variables swap in dark mode */
+  :global([data-theme="dark"]) .hero-title {
+    color: #f5f0e8;
   }
 
-  @media (max-width: 900px) {
-    .login-layout {
-      grid-template-columns: minmax(0, 1fr);
-      text-align: right;
-    }
-
-    .hero {
-      order: -1;
-    }
+  :global([data-theme="dark"]) .hero-description {
+    color: #d4c9b9;
   }
 
-  @media (max-width: 640px) {
-    .card {
-      padding: 1.3rem 1.1rem;
-    }
+  :global([data-theme="dark"]) .card {
+    background: rgba(28, 25, 23, 0.95);
+    border-color: rgba(68, 64, 60, 0.3);
+  }
 
-    .hero h1 {
-      font-size: 1.4rem;
+  :global([data-theme="dark"]) .card-header h2 {
+    color: #f5f0e8;
+  }
+
+  :global([data-theme="dark"]) .card-subtitle {
+    color: #a69b8a;
+  }
+
+  :global([data-theme="dark"]) .google-btn {
+    background: #44403c;
+    color: #f5f0e8;
+    border-color: #57534e;
+  }
+
+  :global([data-theme="dark"]) .google-btn:hover:not(:disabled) {
+    background: #57534e;
+    border-color: #78716c;
+  }
+
+  :global([data-theme="dark"]) .divider {
+    color: #78716c;
+  }
+
+  :global([data-theme="dark"]) .divider::before,
+  :global([data-theme="dark"]) .divider::after {
+    border-color: #44403c;
+  }
+
+  :global([data-theme="dark"]) .input-group label {
+    color: #e8e0d5;
+  }
+
+  :global([data-theme="dark"]) .input-group input {
+    background: #44403c;
+    border-color: #57534e;
+    color: #f5f0e8;
+  }
+
+  :global([data-theme="dark"]) .input-group input:focus {
+    border-color: #22d3ee;
+    box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.15);
+  }
+
+  :global([data-theme="dark"]) .input-group input::placeholder {
+    color: #78716c;
+  }
+
+  :global([data-theme="dark"]) .features li {
+    background: rgba(28, 25, 23, 0.85);
+    border-color: rgba(68, 64, 60, 0.3);
+  }
+
+  :global([data-theme="dark"]) .feature-text {
+    color: #e8e0d5;
+  }
+
+  :global([data-theme="dark"]) .hint {
+    color: #a69b8a;
+  }
+
+  :global([data-theme="dark"]) .mode-toggle {
+    background: #44403c;
+  }
+
+  :global([data-theme="dark"]) .toggle-btn {
+    color: #a69b8a;
+  }
+
+  :global([data-theme="dark"]) .toggle-btn.active {
+    background: #57534e;
+    color: #22d3ee;
+  }
+
+  :global([data-theme="dark"]) .toggle-btn:hover:not(.active) {
+    color: #e8e0d5;
+  }
+
+  :global([data-theme="dark"]) .success-message {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(5, 150, 105, 0.1));
+    color: #34d399;
+    border-color: rgba(16, 185, 129, 0.4);
+  }
+
+  :global([data-theme="dark"]) .link-btn {
+    color: #22d3ee;
+  }
+
+  :global([data-theme="dark"]) .link-btn:hover {
+    color: #67e8f9;
+  }
+
+  /* Feature hover effect - only on desktop */
+  @media (min-width: 900px) {
+    .features li:hover {
+      transform: translateX(-4px);
     }
   }
 </style>

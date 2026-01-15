@@ -3,9 +3,19 @@ import type { LessonProgress, WrongAnswer } from '$lib/db';
 
 /**
  * Save progress after completing a step
+ * @param languagePair - The language pair (e.g., 'de-fa', 'en-fa')
+ * @param lessonId - The lesson ID (e.g., 'A1-M01-L01')
+ * @param stepIndex - The current step index
  */
-export async function saveStepProgress(lessonId: string, stepIndex: number): Promise<void> {
-  const existing = await db.lessonProgress.where('lessonId').equals(lessonId).first();
+export async function saveStepProgress(
+  languagePair: string,
+  lessonId: string,
+  stepIndex: number
+): Promise<void> {
+  const existing = await db.lessonProgress
+    .where('[languagePair+lessonId]')
+    .equals([languagePair, lessonId])
+    .first();
 
   if (existing) {
     await db.lessonProgress.update(existing.id!, {
@@ -15,6 +25,7 @@ export async function saveStepProgress(lessonId: string, stepIndex: number): Pro
     });
   } else {
     await db.lessonProgress.add({
+      languagePair,
       lessonId,
       status: 'in-progress',
       currentStepIndex: stepIndex,
@@ -43,9 +54,30 @@ export async function saveWrongAnswer(data: {
 
 /**
  * Get lesson progress for resume capability
+ * @param languagePair - The language pair (e.g., 'de-fa', 'en-fa')
+ * @param lessonId - The lesson ID (e.g., 'A1-M01-L01')
  */
-export async function getLessonProgress(lessonId: string): Promise<LessonProgress | undefined> {
-  return await db.lessonProgress.where('lessonId').equals(lessonId).first();
+export async function getLessonProgress(
+  languagePair: string,
+  lessonId: string
+): Promise<LessonProgress | undefined> {
+  return await db.lessonProgress
+    .where('[languagePair+lessonId]')
+    .equals([languagePair, lessonId])
+    .first();
+}
+
+/**
+ * Get all progress for a specific language pair
+ * @param languagePair - The language pair (e.g., 'de-fa', 'en-fa')
+ */
+export async function getAllProgressForLanguage(
+  languagePair: string
+): Promise<LessonProgress[]> {
+  return await db.lessonProgress
+    .where('languagePair')
+    .equals(languagePair)
+    .toArray();
 }
 
 /**
@@ -75,9 +107,17 @@ export async function clearLessonWrongAnswers(lessonId: string): Promise<void> {
 
 /**
  * Reset lesson progress to allow replaying
+ * @param languagePair - The language pair (e.g., 'de-fa', 'en-fa')
+ * @param lessonId - The lesson ID (e.g., 'A1-M01-L01')
  */
-export async function resetLessonForReplay(lessonId: string): Promise<void> {
-  const existing = await db.lessonProgress.where('lessonId').equals(lessonId).first();
+export async function resetLessonForReplay(
+  languagePair: string,
+  lessonId: string
+): Promise<void> {
+  const existing = await db.lessonProgress
+    .where('[languagePair+lessonId]')
+    .equals([languagePair, lessonId])
+    .first();
 
   if (existing) {
     await db.lessonProgress.update(existing.id!, {
@@ -117,8 +157,12 @@ export async function calculateLessonScore(lessonId: string, totalSteps: number)
 
 /**
  * Mark lesson as completed and award XP
+ * @param languagePair - The language pair (e.g., 'de-fa', 'en-fa')
+ * @param lessonId - The lesson ID (e.g., 'A1-M01-L01')
+ * @param totalSteps - Total number of steps in the lesson
  */
 export async function completeLessonWithStats(
+  languagePair: string,
   lessonId: string,
   totalSteps: number
 ): Promise<{ score: number; xpEarned: number }> {
@@ -126,7 +170,10 @@ export async function completeLessonWithStats(
   const xpEarned = Math.round(score * 1.5); // 100% = 150 XP, 70% = 105 XP, etc.
 
   // Update lesson progress
-  const existing = await db.lessonProgress.where('lessonId').equals(lessonId).first();
+  const existing = await db.lessonProgress
+    .where('[languagePair+lessonId]')
+    .equals([languagePair, lessonId])
+    .first();
 
   if (existing) {
     await db.lessonProgress.update(existing.id!, {
@@ -137,6 +184,7 @@ export async function completeLessonWithStats(
     });
   } else {
     await db.lessonProgress.add({
+      languagePair,
       lessonId,
       status: 'completed',
       currentStepIndex: 0,

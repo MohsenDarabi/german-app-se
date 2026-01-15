@@ -1,5 +1,14 @@
 {
   "id": "A1-M01-L10",
+  "languagePair": "de-fa",
+  "source": {
+    "code": "de",
+    "name": "Deutsch"
+  },
+  "target": {
+    "code": "fa",
+    "name": "فارسی"
+  },
   "title": {
     "de": "Telefonnummern",
     "fa": "شماره تلفن"
@@ -10,7 +19,6 @@
   "lessonNumber": 10,
   "totalSteps": 22,
   "estimatedMinutes": 15,
-  "charactersInLesson": ["eli", "tom"],
   "steps": [
     {
       "type": "new-word",
@@ -32,8 +40,14 @@
       "title": "صفر در آلمانی: null",
       "content": "در آلمانی صفر را **null** می‌گویند (تلفظ: نُول).\n\nاین کلمه برای شماره تلفن خیلی مهم است چون شماره‌های آلمانی معمولاً با 0 شروع می‌شوند.",
       "examples": [
-        { "de": "null", "fa": "۰ - صفر" },
-        { "de": "null, eins", "fa": "۰۱" }
+        {
+          "de": "null",
+          "fa": "۰ - صفر"
+        },
+        {
+          "de": "null, eins",
+          "fa": "۰۱"
+        }
       ]
     },
     {
@@ -84,8 +98,14 @@
       "title": "چطور شماره تلفن می‌گوییم؟",
       "content": "در آلمانی شماره تلفن را معمولاً **دو رقم دو رقم** می‌خوانند:\n\n0171-12 34 567\n= null eins sieben eins - **zwölf** **vierunddreißig** fünf sechs sieben\n\nیا هر رقم جداگانه:\n= null - eins - sieben - eins - ...",
       "examples": [
-        { "de": "zwölf vierunddreißig", "fa": "۱۲ ۳۴" },
-        { "de": "fünfundfünfzig", "fa": "۵۵" }
+        {
+          "de": "zwölf vierunddreißig",
+          "fa": "۱۲ ۳۴"
+        },
+        {
+          "de": "fünfundfünfzig",
+          "fa": "۵۵"
+        }
       ]
     },
     {
@@ -94,11 +114,36 @@
       "title": "اعداد را به یاد بیاور!",
       "instruction": "عدد درست را انتخاب کنید",
       "questions": [
-        { "prompt": "null", "left": "۰", "right": "۱", "correctSide": "left" },
-        { "prompt": "zwölf", "left": "۲۱", "right": "۱۲", "correctSide": "right" },
-        { "prompt": "vierunddreißig", "left": "۳۴", "right": "۴۳", "correctSide": "left" },
-        { "prompt": "fünfundfünfzig", "left": "۴۵", "right": "۵۵", "correctSide": "right" },
-        { "prompt": "null sieben", "left": "۰۷", "right": "۷۰", "correctSide": "left" }
+        {
+          "prompt": "null",
+          "left": "۰",
+          "right": "۱",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "zwölf",
+          "left": "۲۱",
+          "right": "۱۲",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "vierunddreißig",
+          "left": "۳۴",
+          "right": "۴۳",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "fünfundfünfzig",
+          "left": "۴۵",
+          "right": "۵۵",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "null sieben",
+          "left": "۰۷",
+          "right": "۷۰",
+          "correctSide": "left"
+        }
       ]
     },
     {
@@ -121,8 +166,14 @@
       "title": "فعل جداشدنی: anrufen",
       "content": "**anrufen** یک فعل جداشدنی است:\n\nan + rufen = anrufen\n\nدر جمله، **an** به آخر می‌رود:\n\nIch **rufe** dich **an**. (من بهت زنگ می‌زنم)",
       "examples": [
-        { "de": "Ich rufe an.", "fa": "من زنگ می‌زنم." },
-        { "de": "Rufst du mich an?", "fa": "بهم زنگ می‌زنی؟" }
+        {
+          "de": "Ich rufe an.",
+          "fa": "من زنگ می‌زنم."
+        },
+        {
+          "de": "Rufst du mich an?",
+          "fa": "بهم زنگ می‌زنی؟"
+        }
       ]
     },
     {
@@ -144,22 +195,58 @@
       "id": "s10",
       "instruction": "کلمات را با معنی جفت کنید",
       "items": [
-        { "id": "i1", "text": "Telefonnummer" },
-        { "id": "i2", "text": "Handy" },
-        { "id": "i3", "text": "anrufen" },
-        { "id": "i4", "text": "Vorwahl" }
+        {
+          "id": "i1",
+          "text": "Telefonnummer"
+        },
+        {
+          "id": "i2",
+          "text": "Handy"
+        },
+        {
+          "id": "i3",
+          "text": "anrufen"
+        },
+        {
+          "id": "i4",
+          "text": "Vorwahl"
+        }
       ],
       "matches": [
-        { "id": "m1", "text": "شماره تلفن" },
-        { "id": "m2", "text": "موبایل" },
-        { "id": "m3", "text": "زنگ زدن" },
-        { "id": "m4", "text": "پیش‌شماره" }
+        {
+          "id": "m1",
+          "text": "شماره تلفن"
+        },
+        {
+          "id": "m2",
+          "text": "موبایل"
+        },
+        {
+          "id": "m3",
+          "text": "زنگ زدن"
+        },
+        {
+          "id": "m4",
+          "text": "پیش‌شماره"
+        }
       ],
       "correctPairs": [
-        ["i1", "m1"],
-        ["i2", "m2"],
-        ["i3", "m3"],
-        ["i4", "m4"]
+        [
+          "i1",
+          "m1"
+        ],
+        [
+          "i2",
+          "m2"
+        ],
+        [
+          "i3",
+          "m3"
+        ],
+        [
+          "i4",
+          "m4"
+        ]
       ]
     },
     {
@@ -168,18 +255,53 @@
       "title": "مکالمه: شماره تلفن",
       "context": "الی و تام شماره تلفن رد و بدل می‌کنند",
       "lines": [
-        { "speakerId": "eli", "text": { "de": "Tom, was ist deine Handynummer?", "fa": "تام، شماره موبایلت چیه؟" } },
-        { "speakerId": "tom", "text": { "de": "Meine Nummer ist 0171-23 45 678.", "fa": "شماره من ۰۱۷۱-۲۳ ۴۵ ۶۷۸ است." } },
-        { "speakerId": "eli", "text": { "de": "Kannst du das wiederholen?", "fa": "می‌تونی تکرار کنی؟" } },
-        { "speakerId": "tom", "text": { "de": "Null eins sieben eins, dreiundzwanzig, fünfundvierzig, sechs sieben acht.", "fa": "صفر یک هفت یک، بیست و سه، چهل و پنج، شش هفت هشت." } },
-        { "speakerId": "eli", "text": { "de": "Danke! Ich rufe dich an.", "fa": "ممنون! بهت زنگ می‌زنم." } }
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Tom, was ist deine Handynummer?",
+            "fa": "تام، شماره موبایلت چیه؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Meine Nummer ist 0171-23 45 678.",
+            "fa": "شماره من ۰۱۷۱-۲۳ ۴۵ ۶۷۸ است."
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Kannst du das wiederholen?",
+            "fa": "می‌تونی تکرار کنی؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Null eins sieben eins, dreiundzwanzig, fünfundvierzig, sechs sieben acht.",
+            "fa": "صفر یک هفت یک، بیست و سه، چهل و پنج، شش هفت هشت."
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Danke! Ich rufe dich an.",
+            "fa": "ممنون! بهت زنگ می‌زنم."
+          }
+        }
       ]
     },
     {
       "type": "multiple-choice",
       "id": "s12",
       "question": "«شماره موبایل» به آلمانی چیست؟",
-      "options": ["Telefonnummer", "Handynummer", "Vorwahl", "Nummer"],
+      "options": [
+        "Telefonnummer",
+        "Handynummer",
+        "Vorwahl",
+        "Nummer"
+      ],
       "correctAnswerIndex": 1,
       "feedback": {
         "correct": "آفرین! Handy (موبایل) + Nummer (شماره) = Handynummer",
@@ -190,7 +312,12 @@
       "type": "multiple-choice",
       "id": "s13",
       "question": "عدد «صفر» به آلمانی چیست؟",
-      "options": ["eins", "null", "zehn", "nein"],
+      "options": [
+        "eins",
+        "null",
+        "zehn",
+        "nein"
+      ],
       "correctAnswerIndex": 1,
       "feedback": {
         "correct": "آفرین! null = صفر (۰)",
@@ -202,8 +329,15 @@
       "id": "s14",
       "instruction": "جمله را کامل کنید",
       "sentence": "Was ist deine {0}?",
-      "options": ["Telefonnummer", "anrufen", "Handy", "null"],
-      "correctAnswers": [0],
+      "options": [
+        "Telefonnummer",
+        "anrufen",
+        "Handy",
+        "null"
+      ],
+      "correctAnswers": [
+        0
+      ],
       "feedback": {
         "explanation": "Was ist deine **Telefonnummer**? = شماره تلفنت چیست؟"
       }
@@ -214,11 +348,36 @@
       "title": "شماره‌ها را بخوان!",
       "instruction": "شماره درست را انتخاب کنید",
       "questions": [
-        { "prompt": "null drei null", "left": "030", "right": "300", "correctSide": "left" },
-        { "prompt": "null eins sieben eins", "left": "1071", "right": "0171", "correctSide": "right" },
-        { "prompt": "zwölf vierunddreißig", "left": "1234", "right": "1432", "correctSide": "left" },
-        { "prompt": "fünfundsechzig", "left": "56", "right": "65", "correctSide": "right" },
-        { "prompt": "null null vier neun", "left": "0049", "right": "4900", "correctSide": "left" }
+        {
+          "prompt": "null drei null",
+          "left": "030",
+          "right": "300",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "null eins sieben eins",
+          "left": "1071",
+          "right": "0171",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "zwölf vierunddreißig",
+          "left": "1234",
+          "right": "1432",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "fünfundsechzig",
+          "left": "56",
+          "right": "65",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "null null vier neun",
+          "left": "0049",
+          "right": "4900",
+          "correctSide": "left"
+        }
       ]
     },
     {
@@ -227,8 +386,14 @@
       "title": "پیش‌شماره‌های مهم",
       "content": "| پیش‌شماره | معنی |\n|-----|--------|\n| 0049 | کد کشور آلمان |\n| 030 | برلین |\n| 089 | مونیخ |\n| 040 | هامبورگ |\n| 0171/0172 | موبایل |",
       "examples": [
-        { "de": "null null vier neun", "fa": "۰۰۴۹ - کد آلمان" },
-        { "de": "null drei null", "fa": "۰۳۰ - برلین" }
+        {
+          "de": "null null vier neun",
+          "fa": "۰۰۴۹ - کد آلمان"
+        },
+        {
+          "de": "null drei null",
+          "fa": "۰۳۰ - برلین"
+        }
       ]
     },
     {
@@ -257,10 +422,34 @@
       "title": "مکالمه: تماس تلفنی",
       "context": "تام به الی زنگ می‌زند",
       "lines": [
-        { "speakerId": "eli", "text": { "de": "Hallo?", "fa": "الو؟" } },
-        { "speakerId": "tom", "text": { "de": "Hallo Eli, hier ist Tom.", "fa": "سلام الی، تام هستم." } },
-        { "speakerId": "eli", "text": { "de": "Oh, hallo Tom! Wie geht's?", "fa": "اوه، سلام تام! حالت چطوره؟" } },
-        { "speakerId": "tom", "text": { "de": "Gut, danke. Ich rufe kurz an.", "fa": "خوبم، ممنون. یه زنگ کوتاه می‌زنم." } }
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Hallo?",
+            "fa": "الو؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Hallo Eli, hier ist Tom.",
+            "fa": "سلام الی، تام هستم."
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Oh, hallo Tom! Wie geht's?",
+            "fa": "اوه، سلام تام! حالت چطوره؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Gut, danke. Ich rufe kurz an.",
+            "fa": "خوبم، ممنون. یه زنگ کوتاه می‌زنم."
+          }
+        }
       ]
     },
     {
@@ -268,8 +457,16 @@
       "id": "s18",
       "instruction": "جمله را کامل کنید",
       "sentence": "Ich {0} dich morgen {1}.",
-      "options": ["rufe", "an", "auf", "rufst"],
-      "correctAnswers": [0, 1],
+      "options": [
+        "rufe",
+        "an",
+        "auf",
+        "rufst"
+      ],
+      "correctAnswers": [
+        0,
+        1
+      ],
       "feedback": {
         "explanation": "Ich **rufe** dich morgen **an**. = فردا بهت زنگ می‌زنم. (فعل جداشدنی: anrufen)"
       }
@@ -280,12 +477,30 @@
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [
-        { "de": "null", "fa": "صفر (۰)" },
-        { "de": "die Telefonnummer", "fa": "شماره تلفن" },
-        { "de": "die Nummer", "fa": "شماره" },
-        { "de": "das Handy", "fa": "موبایل" },
-        { "de": "anrufen", "fa": "زنگ زدن" },
-        { "de": "die Vorwahl", "fa": "پیش‌شماره" }
+        {
+          "de": "null",
+          "fa": "صفر (۰)"
+        },
+        {
+          "de": "die Telefonnummer",
+          "fa": "شماره تلفن"
+        },
+        {
+          "de": "die Nummer",
+          "fa": "شماره"
+        },
+        {
+          "de": "das Handy",
+          "fa": "موبایل"
+        },
+        {
+          "de": "anrufen",
+          "fa": "زنگ زدن"
+        },
+        {
+          "de": "die Vorwahl",
+          "fa": "پیش‌شماره"
+        }
       ]
     },
     {
@@ -296,12 +511,42 @@
       "xpEarned": 50,
       "nextLessonId": "A1-M02-L01",
       "vocabularyLearned": [
-        { "word": { "de": "null", "fa": "صفر (۰)" } },
-        { "word": { "de": "die Telefonnummer", "fa": "شماره تلفن" } },
-        { "word": { "de": "die Nummer", "fa": "شماره" } },
-        { "word": { "de": "das Handy", "fa": "موبایل" } },
-        { "word": { "de": "anrufen", "fa": "زنگ زدن" } },
-        { "word": { "de": "die Vorwahl", "fa": "پیش‌شماره" } }
+        {
+          "word": {
+            "de": "null",
+            "fa": "صفر (۰)"
+          }
+        },
+        {
+          "word": {
+            "de": "die Telefonnummer",
+            "fa": "شماره تلفن"
+          }
+        },
+        {
+          "word": {
+            "de": "die Nummer",
+            "fa": "شماره"
+          }
+        },
+        {
+          "word": {
+            "de": "das Handy",
+            "fa": "موبایل"
+          }
+        },
+        {
+          "word": {
+            "de": "anrufen",
+            "fa": "زنگ زدن"
+          }
+        },
+        {
+          "word": {
+            "de": "die Vorwahl",
+            "fa": "پیش‌شماره"
+          }
+        }
       ]
     }
   ]

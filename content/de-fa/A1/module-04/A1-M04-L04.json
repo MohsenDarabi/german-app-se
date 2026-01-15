@@ -1,5 +1,14 @@
 {
   "id": "A1-M04-L04",
+  "languagePair": "de-fa",
+  "source": {
+    "code": "de",
+    "name": "Deutsch"
+  },
+  "target": {
+    "code": "fa",
+    "name": "فارسی"
+  },
   "title": {
     "de": "Ich sehe den Mann",
     "fa": "حالت مفعولی"
@@ -10,7 +19,6 @@
   "lessonNumber": 4,
   "totalSteps": 26,
   "estimatedMinutes": 15,
-  "charactersInLesson": ["lisa", "tom"],
   "steps": [
     {
       "type": "grammar-tip",
@@ -18,7 +26,10 @@
       "title": "دو حالت مهم",
       "content": "در آلمانی اسم‌ها می‌توانند در حالت‌های مختلف باشند:\n\n**فاعلی (Nominativ):**\nکی کار را انجام می‌دهد؟\n**Der** Mann liest. (مرد می‌خواند)\n\n**مفعولی (Akkusativ):**\nچه چیزی/چه کسی؟\nIch sehe **den** Mann. (مرد را می‌بینم)",
       "examples": [
-        { "de": "Der Mann liest das Buch.", "fa": "مرد کتاب را می‌خواند." }
+        {
+          "de": "Der Mann liest das Buch.",
+          "fa": "مرد کتاب را می‌خواند."
+        }
       ]
     },
     {
@@ -27,8 +38,14 @@
       "title": "خبر خوب!",
       "content": "🎉 **فقط مذکر تغییر می‌کند!**\n\n| فاعلی | مفعولی |\n|-------|--------|\n| **der** | **den** |\n| die | die |\n| das | das |\n| **ein** | **einen** |\n| eine | eine |\n\n📝 مونث و خنثی تغییر نمی‌کنند!",
       "examples": [
-        { "de": "der Mann, den Mann", "fa": "مرد (فاعل)، مرد را (مفعول)" },
-        { "de": "die Frau, die Frau", "fa": "زن (بدون تغییر)" }
+        {
+          "de": "der Mann, den Mann",
+          "fa": "مرد (فاعل)، مرد را (مفعول)"
+        },
+        {
+          "de": "die Frau, die Frau",
+          "fa": "زن (بدون تغییر)"
+        }
       ]
     },
     {
@@ -65,11 +82,36 @@
       "title": "der یا den؟",
       "instruction": "حرف تعریف درست را انتخاب کنید",
       "questions": [
-        { "prompt": "Ich sehe ___ Mann.", "left": "der", "right": "den", "correctSide": "right" },
-        { "prompt": "___ Mann liest.", "left": "Der", "right": "Den", "correctSide": "left" },
-        { "prompt": "Ich kaufe ___ Tisch.", "left": "der", "right": "den", "correctSide": "right" },
-        { "prompt": "___ Stuhl ist groß.", "left": "Der", "right": "Den", "correctSide": "left" },
-        { "prompt": "Wir brauchen ___ Stuhl.", "left": "der", "right": "den", "correctSide": "right" }
+        {
+          "prompt": "Ich sehe ___ Mann.",
+          "left": "der",
+          "right": "den",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "___ Mann liest.",
+          "left": "Der",
+          "right": "Den",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Ich kaufe ___ Tisch.",
+          "left": "der",
+          "right": "den",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "___ Stuhl ist groß.",
+          "left": "Der",
+          "right": "Den",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Wir brauchen ___ Stuhl.",
+          "left": "der",
+          "right": "den",
+          "correctSide": "right"
+        }
       ]
     },
     {
@@ -120,11 +162,41 @@
       "title": "مکالمه: خرید",
       "context": "تام و لیزا در فروشگاه هستند",
       "lines": [
-        { "speakerId": "tom", "text": { "de": "Ich brauche einen Stuhl.", "fa": "من یک صندلی نیاز دارم." } },
-        { "speakerId": "lisa", "text": { "de": "Siehst du den Stuhl dort?", "fa": "آن صندلی را آنجا می‌بینی؟" } },
-        { "speakerId": "tom", "text": { "de": "Ja, ich kaufe den Stuhl.", "fa": "بله، آن صندلی را می‌خرم." } },
-        { "speakerId": "lisa", "text": { "de": "Und ich kaufe die Lampe.", "fa": "و من چراغ را می‌خرم." } },
-        { "speakerId": "tom", "text": { "de": "Die Lampe ist schön!", "fa": "چراغ قشنگ است!" } }
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Ich brauche einen Stuhl.",
+            "fa": "من یک صندلی نیاز دارم."
+          }
+        },
+        {
+          "speaker": "Lisa",
+          "text": {
+            "de": "Siehst du den Stuhl dort?",
+            "fa": "آن صندلی را آنجا می‌بینی؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Ja, ich kaufe den Stuhl.",
+            "fa": "بله، آن صندلی را می‌خرم."
+          }
+        },
+        {
+          "speaker": "Lisa",
+          "text": {
+            "de": "Und ich kaufe die Lampe.",
+            "fa": "و من چراغ را می‌خرم."
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Die Lampe ist schön!",
+            "fa": "چراغ قشنگ است!"
+          }
+        }
       ]
     },
     {
@@ -133,8 +205,14 @@
       "title": "کی مفعولی است؟",
       "content": "بعد از این فعل‌ها **مفعولی** می‌آید:\n\n• sehen (دیدن)\n• kaufen (خریدن)\n• brauchen (نیاز داشتن)\n• haben (داشتن)\n• möchten (خواستن)\n• essen (خوردن)\n• trinken (نوشیدن)\n\n📝 **سوال کمکی:** چه چیزی؟ چه کسی را؟",
       "examples": [
-        { "de": "Ich esse einen Apfel.", "fa": "من یک سیب می‌خورم." },
-        { "de": "Sie hat einen Hund.", "fa": "او یک سگ دارد." }
+        {
+          "de": "Ich esse einen Apfel.",
+          "fa": "من یک سیب می‌خورم."
+        },
+        {
+          "de": "Sie hat einen Hund.",
+          "fa": "او یک سگ دارد."
+        }
       ]
     },
     {
@@ -142,8 +220,15 @@
       "id": "s10",
       "instruction": "حرف تعریف مفعولی درست را انتخاب کنید",
       "sentence": "Ich kaufe {0} Buch.",
-      "options": ["der", "den", "das", "ein"],
-      "correctAnswers": [2],
+      "options": [
+        "der",
+        "den",
+        "das",
+        "ein"
+      ],
+      "correctAnswers": [
+        2
+      ],
       "feedback": {
         "explanation": "**das** Buch (خنثی در مفعولی تغییر نمی‌کند)"
       }
@@ -153,8 +238,15 @@
       "id": "s11",
       "instruction": "حرف تعریف مفعولی درست را انتخاب کنید",
       "sentence": "Sie sieht {0} Mann.",
-      "options": ["der", "den", "das", "die"],
-      "correctAnswers": [1],
+      "options": [
+        "der",
+        "den",
+        "das",
+        "die"
+      ],
+      "correctAnswers": [
+        1
+      ],
       "feedback": {
         "explanation": "**den** Mann (مذکر در مفعولی: der → den)"
       }
@@ -165,11 +257,36 @@
       "title": "ein یا einen؟",
       "instruction": "حرف تعریف نامعین درست را انتخاب کنید",
       "questions": [
-        { "prompt": "Ich esse ___ Apfel.", "left": "ein", "right": "einen", "correctSide": "right" },
-        { "prompt": "Ich trinke ___ Kaffee.", "left": "ein", "right": "einen", "correctSide": "right" },
-        { "prompt": "Ich habe ___ Buch.", "left": "ein", "right": "einen", "correctSide": "left" },
-        { "prompt": "Ich kaufe ___ Tasche.", "left": "eine", "right": "einen", "correctSide": "left" },
-        { "prompt": "Ich brauche ___ Computer.", "left": "ein", "right": "einen", "correctSide": "right" }
+        {
+          "prompt": "Ich esse ___ Apfel.",
+          "left": "ein",
+          "right": "einen",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Ich trinke ___ Kaffee.",
+          "left": "ein",
+          "right": "einen",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Ich habe ___ Buch.",
+          "left": "ein",
+          "right": "einen",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Ich kaufe ___ Tasche.",
+          "left": "eine",
+          "right": "einen",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Ich brauche ___ Computer.",
+          "left": "ein",
+          "right": "einen",
+          "correctSide": "right"
+        }
       ]
     },
     {
@@ -219,26 +336,58 @@
       "id": "s15",
       "instruction": "جمله فاعلی را با جمله مفعولی جفت کنید",
       "items": [
-        { "id": "i1", "text": "Der Mann liest." },
-        { "id": "i2", "text": "Die Frau arbeitet." },
-        { "id": "i3", "text": "Das Kind spielt." }
+        {
+          "id": "i1",
+          "text": "Der Mann liest."
+        },
+        {
+          "id": "i2",
+          "text": "Die Frau arbeitet."
+        },
+        {
+          "id": "i3",
+          "text": "Das Kind spielt."
+        }
       ],
       "matches": [
-        { "id": "m1", "text": "Ich sehe den Mann." },
-        { "id": "m2", "text": "Ich sehe die Frau." },
-        { "id": "m3", "text": "Ich sehe das Kind." }
+        {
+          "id": "m1",
+          "text": "Ich sehe den Mann."
+        },
+        {
+          "id": "m2",
+          "text": "Ich sehe die Frau."
+        },
+        {
+          "id": "m3",
+          "text": "Ich sehe das Kind."
+        }
       ],
       "correctPairs": [
-        ["i1", "m1"],
-        ["i2", "m2"],
-        ["i3", "m3"]
+        [
+          "i1",
+          "m1"
+        ],
+        [
+          "i2",
+          "m2"
+        ],
+        [
+          "i3",
+          "m3"
+        ]
       ]
     },
     {
       "type": "multiple-choice",
       "id": "s16",
       "question": "کدام جمله درست است؟",
-      "options": ["Ich sehe der Mann.", "Ich sehe den Mann.", "Ich sehe dem Mann.", "Ich sehe des Manns."],
+      "options": [
+        "Ich sehe der Mann.",
+        "Ich sehe den Mann.",
+        "Ich sehe dem Mann.",
+        "Ich sehe des Manns."
+      ],
       "correctAnswerIndex": 1,
       "feedback": {
         "correct": "آفرین! در مفعولی: der → den",
@@ -251,9 +400,18 @@
       "title": "خلاصه تغییرات",
       "content": "**فقط مذکر تغییر می‌کند:**\n\n• der → **den**\n• ein → **einen**\n\n**بدون تغییر:**\n• die → die\n• das → das\n• eine → eine\n• ein (خنثی) → ein",
       "examples": [
-        { "de": "Ich kaufe den Tisch.", "fa": "میز را می‌خرم (مذکر)" },
-        { "de": "Ich kaufe die Lampe.", "fa": "چراغ را می‌خرم (مونث)" },
-        { "de": "Ich kaufe das Buch.", "fa": "کتاب را می‌خرم (خنثی)" }
+        {
+          "de": "Ich kaufe den Tisch.",
+          "fa": "میز را می‌خرم (مذکر)"
+        },
+        {
+          "de": "Ich kaufe die Lampe.",
+          "fa": "چراغ را می‌خرم (مونث)"
+        },
+        {
+          "de": "Ich kaufe das Buch.",
+          "fa": "کتاب را می‌خرم (خنثی)"
+        }
       ]
     },
     {
@@ -262,11 +420,36 @@
       "title": "مرور کلی",
       "instruction": "حرف تعریف مفعولی درست را انتخاب کنید",
       "questions": [
-        { "prompt": "Ich sehe ___ Katze.", "left": "die", "right": "den", "correctSide": "left" },
-        { "prompt": "Ich kaufe ___ Hund.", "left": "der", "right": "den", "correctSide": "right" },
-        { "prompt": "Er hat ___ Buch.", "left": "das", "right": "den", "correctSide": "left" },
-        { "prompt": "Sie braucht ___ Tisch.", "left": "der", "right": "den", "correctSide": "right" },
-        { "prompt": "Wir sehen ___ Kind.", "left": "das", "right": "den", "correctSide": "left" }
+        {
+          "prompt": "Ich sehe ___ Katze.",
+          "left": "die",
+          "right": "den",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Ich kaufe ___ Hund.",
+          "left": "der",
+          "right": "den",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Er hat ___ Buch.",
+          "left": "das",
+          "right": "den",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Sie braucht ___ Tisch.",
+          "left": "der",
+          "right": "den",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Wir sehen ___ Kind.",
+          "left": "das",
+          "right": "den",
+          "correctSide": "left"
+        }
       ]
     },
     {
@@ -274,8 +457,15 @@
       "id": "s18",
       "instruction": "حرف تعریف درست را انتخاب کنید",
       "sentence": "Ich möchte {0} Kaffee, bitte.",
-      "options": ["der", "den", "einen", "ein"],
-      "correctAnswers": [2],
+      "options": [
+        "der",
+        "den",
+        "einen",
+        "ein"
+      ],
+      "correctAnswers": [
+        2
+      ],
       "feedback": {
         "explanation": "**einen** Kaffee (مذکر نامعین در مفعولی: ein → einen)"
       }
@@ -285,8 +475,15 @@
       "id": "s19",
       "instruction": "حرف تعریف درست را انتخاب کنید",
       "sentence": "Hast du {0} Bruder?",
-      "options": ["der", "den", "einen", "eine"],
-      "correctAnswers": [2],
+      "options": [
+        "der",
+        "den",
+        "einen",
+        "eine"
+      ],
+      "correctAnswers": [
+        2
+      ],
       "feedback": {
         "explanation": "**einen** Bruder (مذکر نامعین در مفعولی: ein → einen)"
       }
@@ -297,14 +494,38 @@
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [
-        { "de": "den", "fa": "حرف تعریف مفعولی مذکر" },
-        { "de": "einen", "fa": "یک (مفعولی مذکر)" },
-        { "de": "sehen", "fa": "دیدن" },
-        { "de": "kaufen", "fa": "خریدن" },
-        { "de": "brauchen", "fa": "نیاز داشتن" },
-        { "de": "trinken", "fa": "نوشیدن" },
-        { "de": "der Kaffee", "fa": "قهوه" },
-        { "de": "der Tee", "fa": "چای" }
+        {
+          "de": "den",
+          "fa": "حرف تعریف مفعولی مذکر"
+        },
+        {
+          "de": "einen",
+          "fa": "یک (مفعولی مذکر)"
+        },
+        {
+          "de": "sehen",
+          "fa": "دیدن"
+        },
+        {
+          "de": "kaufen",
+          "fa": "خریدن"
+        },
+        {
+          "de": "brauchen",
+          "fa": "نیاز داشتن"
+        },
+        {
+          "de": "trinken",
+          "fa": "نوشیدن"
+        },
+        {
+          "de": "der Kaffee",
+          "fa": "قهوه"
+        },
+        {
+          "de": "der Tee",
+          "fa": "چای"
+        }
       ]
     },
     {
@@ -315,14 +536,54 @@
       "xpEarned": 50,
       "nextLessonId": "A1-M05-L01",
       "vocabularyLearned": [
-        { "word": { "de": "den", "fa": "حرف تعریف مفعولی مذکر" } },
-        { "word": { "de": "einen", "fa": "یک (مفعولی مذکر)" } },
-        { "word": { "de": "sehen", "fa": "دیدن" } },
-        { "word": { "de": "kaufen", "fa": "خریدن" } },
-        { "word": { "de": "brauchen", "fa": "نیاز داشتن" } },
-        { "word": { "de": "trinken", "fa": "نوشیدن" } },
-        { "word": { "de": "der Kaffee", "fa": "قهوه" } },
-        { "word": { "de": "der Tee", "fa": "چای" } }
+        {
+          "word": {
+            "de": "den",
+            "fa": "حرف تعریف مفعولی مذکر"
+          }
+        },
+        {
+          "word": {
+            "de": "einen",
+            "fa": "یک (مفعولی مذکر)"
+          }
+        },
+        {
+          "word": {
+            "de": "sehen",
+            "fa": "دیدن"
+          }
+        },
+        {
+          "word": {
+            "de": "kaufen",
+            "fa": "خریدن"
+          }
+        },
+        {
+          "word": {
+            "de": "brauchen",
+            "fa": "نیاز داشتن"
+          }
+        },
+        {
+          "word": {
+            "de": "trinken",
+            "fa": "نوشیدن"
+          }
+        },
+        {
+          "word": {
+            "de": "der Kaffee",
+            "fa": "قهوه"
+          }
+        },
+        {
+          "word": {
+            "de": "der Tee",
+            "fa": "چای"
+          }
+        }
       ]
     }
   ]

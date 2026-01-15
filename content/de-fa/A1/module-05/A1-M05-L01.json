@@ -1,5 +1,14 @@
 {
   "id": "A1-M05-L01",
+  "languagePair": "de-fa",
+  "source": {
+    "code": "de",
+    "name": "Deutsch"
+  },
+  "target": {
+    "code": "fa",
+    "name": "فارسی"
+  },
   "title": {
     "de": "Ja oder Nein?",
     "fa": "سوالات بله/خیر"
@@ -10,7 +19,6 @@
   "lessonNumber": 1,
   "totalSteps": 26,
   "estimatedMinutes": 15,
-  "charactersInLesson": ["alex", "eli", "lisa", "tom"],
   "steps": [
     {
       "type": "grammar-tip",
@@ -18,8 +26,14 @@
       "title": "سوال ساختن در آلمانی",
       "content": "برای سوال بله/خیر، **فعل را اول جمله** بیاورید:\n\n**جمله:** Du **kommst** aus Iran.\n**سوال:** **Kommst** du aus Iran?\n\n🇮🇷 **تفاوت با فارسی:**\nفارسی: آیا... می‌آیی؟ (کلمه اضافه)\nآلمانی: فقط جای فعل عوض می‌شود!",
       "examples": [
-        { "de": "Du lernst Deutsch.", "fa": "تو آلمانی یاد می‌گیری." },
-        { "de": "Lernst du Deutsch?", "fa": "آلمانی یاد می‌گیری؟" }
+        {
+          "de": "Du lernst Deutsch.",
+          "fa": "تو آلمانی یاد می‌گیری."
+        },
+        {
+          "de": "Lernst du Deutsch?",
+          "fa": "آلمانی یاد می‌گیری؟"
+        }
       ]
     },
     {
@@ -56,11 +70,41 @@
       "title": "مکالمه: آشنایی",
       "context": "الی و تام تازه آشنا شده‌اند",
       "lines": [
-        { "speakerId": "eli", "text": { "de": "Kommst du aus Deutschland?", "fa": "اهل آلمان هستی؟" } },
-        { "speakerId": "tom", "text": { "de": "Ja, ich komme aus Berlin.", "fa": "بله، اهل برلین هستم." } },
-        { "speakerId": "eli", "text": { "de": "Sprichst du Englisch?", "fa": "انگلیسی صحبت می‌کنی؟" } },
-        { "speakerId": "tom", "text": { "de": "Ja, ein bisschen. Und du?", "fa": "بله، یک کم. و تو؟" } },
-        { "speakerId": "eli", "text": { "de": "Ja, ich spreche Englisch und Persisch.", "fa": "بله، انگلیسی و فارسی صحبت می‌کنم." } }
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Kommst du aus Deutschland?",
+            "fa": "اهل آلمان هستی؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Ja, ich komme aus Berlin.",
+            "fa": "بله، اهل برلین هستم."
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Sprichst du Englisch?",
+            "fa": "انگلیسی صحبت می‌کنی؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Ja, ein bisschen. Und du?",
+            "fa": "بله، یک کم. و تو؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Ja, ich spreche Englisch und Persisch.",
+            "fa": "بله، انگلیسی و فارسی صحبت می‌کنم."
+          }
+        }
       ]
     },
     {
@@ -69,11 +113,36 @@
       "title": "جمله یا سوال؟",
       "instruction": "این جمله است یا سوال؟",
       "questions": [
-        { "prompt": "Kommst du?", "left": "جمله", "right": "سوال", "correctSide": "right" },
-        { "prompt": "Du kommst.", "left": "جمله", "right": "سوال", "correctSide": "left" },
-        { "prompt": "Lernst du Deutsch?", "left": "جمله", "right": "سوال", "correctSide": "right" },
-        { "prompt": "Er arbeitet.", "left": "جمله", "right": "سوال", "correctSide": "left" },
-        { "prompt": "Arbeitet er?", "left": "جمله", "right": "سوال", "correctSide": "right" }
+        {
+          "prompt": "Kommst du?",
+          "left": "جمله",
+          "right": "سوال",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Du kommst.",
+          "left": "جمله",
+          "right": "سوال",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Lernst du Deutsch?",
+          "left": "جمله",
+          "right": "سوال",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Er arbeitet.",
+          "left": "جمله",
+          "right": "سوال",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Arbeitet er?",
+          "left": "جمله",
+          "right": "سوال",
+          "correctSide": "right"
+        }
       ]
     },
     {
@@ -124,8 +193,14 @@
       "title": "سوال با sein و haben",
       "content": "با **sein** و **haben** هم همین قانون:\n\n**sein:**\n• Du **bist** müde. → **Bist** du müde?\n• Er **ist** Lehrer. → **Ist** er Lehrer?\n\n**haben:**\n• Du **hast** Zeit. → **Hast** du Zeit?\n• Sie **hat** ein Auto. → **Hat** sie ein Auto?",
       "examples": [
-        { "de": "Bist du fertig?", "fa": "تمام کردی؟" },
-        { "de": "Hast du Hunger?", "fa": "گرسنه هستی؟" }
+        {
+          "de": "Bist du fertig?",
+          "fa": "تمام کردی؟"
+        },
+        {
+          "de": "Hast du Hunger?",
+          "fa": "گرسنه هستی؟"
+        }
       ]
     },
     {
@@ -133,8 +208,15 @@
       "id": "s9",
       "instruction": "سوال را کامل کنید",
       "sentence": "{0} du Deutsch?",
-      "options": ["Sprichst", "Du sprichst", "Sprechen", "Sprichen"],
-      "correctAnswers": [0],
+      "options": [
+        "Sprichst",
+        "Du sprichst",
+        "Sprechen",
+        "Sprichen"
+      ],
+      "correctAnswers": [
+        0
+      ],
       "feedback": {
         "explanation": "**Sprichst** du Deutsch? (فعل اول می‌آید)"
       }
@@ -144,8 +226,15 @@
       "id": "s10",
       "instruction": "سوال را کامل کنید",
       "sentence": "{0} er aus Berlin?",
-      "options": ["Kommt", "Er kommt", "Kommen", "Kommst"],
-      "correctAnswers": [0],
+      "options": [
+        "Kommt",
+        "Er kommt",
+        "Kommen",
+        "Kommst"
+      ],
+      "correctAnswers": [
+        0
+      ],
       "feedback": {
         "explanation": "**Kommt** er aus Berlin? (فعل با er: kommt)"
       }
@@ -198,11 +287,36 @@
       "title": "سوال درست",
       "instruction": "کدام سوال درست است؟",
       "questions": [
-        { "prompt": "تو می‌آیی؟", "left": "Kommst du?", "right": "Du kommst?", "correctSide": "left" },
-        { "prompt": "او کار می‌کند؟", "left": "Arbeitet er?", "right": "Er arbeitet?", "correctSide": "left" },
-        { "prompt": "تو وقت داری؟", "left": "Du hast Zeit?", "right": "Hast du Zeit?", "correctSide": "right" },
-        { "prompt": "او خسته است؟", "left": "Ist sie müde?", "right": "Sie ist müde?", "correctSide": "left" },
-        { "prompt": "تو می‌فهمی؟", "left": "Du verstehst?", "right": "Verstehst du?", "correctSide": "right" }
+        {
+          "prompt": "تو می‌آیی؟",
+          "left": "Kommst du?",
+          "right": "Du kommst?",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "او کار می‌کند؟",
+          "left": "Arbeitet er?",
+          "right": "Er arbeitet?",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "تو وقت داری؟",
+          "left": "Du hast Zeit?",
+          "right": "Hast du Zeit?",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "او خسته است؟",
+          "left": "Ist sie müde?",
+          "right": "Sie ist müde?",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "تو می‌فهمی؟",
+          "left": "Du verstehst?",
+          "right": "Verstehst du?",
+          "correctSide": "right"
+        }
       ]
     },
     {
@@ -211,11 +325,41 @@
       "title": "مکالمه: در کافه",
       "context": "لیزا و الکس در کافه هستند",
       "lines": [
-        { "speakerId": "lisa", "text": { "de": "Hast du Hunger?", "fa": "گرسنه هستی؟" } },
-        { "speakerId": "alex", "text": { "de": "Ja, ein bisschen. Und du?", "fa": "بله، یک کم. و تو؟" } },
-        { "speakerId": "lisa", "text": { "de": "Nein, aber ich habe Durst.", "fa": "نه، ولی تشنه هستم." } },
-        { "speakerId": "alex", "text": { "de": "Möchtest du einen Kaffee?", "fa": "یک قهوه می‌خواهی؟" } },
-        { "speakerId": "lisa", "text": { "de": "Ja, gerne!", "fa": "بله، با کمال میل!" } }
+        {
+          "speaker": "Lisa",
+          "text": {
+            "de": "Hast du Hunger?",
+            "fa": "گرسنه هستی؟"
+          }
+        },
+        {
+          "speaker": "Alex",
+          "text": {
+            "de": "Ja, ein bisschen. Und du?",
+            "fa": "بله، یک کم. و تو؟"
+          }
+        },
+        {
+          "speaker": "Lisa",
+          "text": {
+            "de": "Nein, aber ich habe Durst.",
+            "fa": "نه، ولی تشنه هستم."
+          }
+        },
+        {
+          "speaker": "Alex",
+          "text": {
+            "de": "Möchtest du einen Kaffee?",
+            "fa": "یک قهوه می‌خواهی؟"
+          }
+        },
+        {
+          "speaker": "Lisa",
+          "text": {
+            "de": "Ja, gerne!",
+            "fa": "بله، با کمال میل!"
+          }
+        }
       ]
     },
     {
@@ -252,8 +396,14 @@
       "title": "جواب دادن به سوال منفی",
       "content": "اگر سوال منفی باشد و جواب مثبت است:\n\n**از doch استفاده کنید!**\n\n• Kommst du **nicht**? → **Doch**, ich komme!\n• Hast du **keine** Zeit? → **Doch**, ich habe Zeit!\n\n🇮🇷 **مثل فارسی:** «چرا» به جای «بله»",
       "examples": [
-        { "de": "Magst du das nicht?", "fa": "این را دوست نداری؟" },
-        { "de": "Doch, ich mag das!", "fa": "چرا، دوست دارم!" }
+        {
+          "de": "Magst du das nicht?",
+          "fa": "این را دوست نداری؟"
+        },
+        {
+          "de": "Doch, ich mag das!",
+          "fa": "چرا، دوست دارم!"
+        }
       ]
     },
     {
@@ -261,26 +411,58 @@
       "id": "s18",
       "instruction": "سوال را با جواب مناسب جفت کنید",
       "items": [
-        { "id": "i1", "text": "Kommst du?" },
-        { "id": "i2", "text": "Hast du Zeit?" },
-        { "id": "i3", "text": "Bist du müde?" }
+        {
+          "id": "i1",
+          "text": "Kommst du?"
+        },
+        {
+          "id": "i2",
+          "text": "Hast du Zeit?"
+        },
+        {
+          "id": "i3",
+          "text": "Bist du müde?"
+        }
       ],
       "matches": [
-        { "id": "m1", "text": "Ja, ich komme." },
-        { "id": "m2", "text": "Nein, ich habe keine Zeit." },
-        { "id": "m3", "text": "Ja, ich bin sehr müde." }
+        {
+          "id": "m1",
+          "text": "Ja, ich komme."
+        },
+        {
+          "id": "m2",
+          "text": "Nein, ich habe keine Zeit."
+        },
+        {
+          "id": "m3",
+          "text": "Ja, ich bin sehr müde."
+        }
       ],
       "correctPairs": [
-        ["i1", "m1"],
-        ["i2", "m2"],
-        ["i3", "m3"]
+        [
+          "i1",
+          "m1"
+        ],
+        [
+          "i2",
+          "m2"
+        ],
+        [
+          "i3",
+          "m3"
+        ]
       ]
     },
     {
       "type": "multiple-choice",
       "id": "s19",
       "question": "کدام سوال درست است؟",
-      "options": ["Du sprichst Deutsch?", "Sprichst du Deutsch?", "Deutsch sprichst du?", "Sprichst Deutsch du?"],
+      "options": [
+        "Du sprichst Deutsch?",
+        "Sprichst du Deutsch?",
+        "Deutsch sprichst du?",
+        "Sprichst Deutsch du?"
+      ],
       "correctAnswerIndex": 1,
       "feedback": {
         "correct": "آفرین! فعل اول، سپس فاعل: Sprichst du...?",
@@ -293,11 +475,36 @@
       "title": "مرور کلی",
       "instruction": "سوال درست را انتخاب کنید",
       "questions": [
-        { "prompt": "او می‌آید؟ (sie)", "left": "Kommt sie?", "right": "Sie kommt?", "correctSide": "left" },
-        { "prompt": "شما وقت دارید؟ (Sie)", "left": "Sie haben Zeit?", "right": "Haben Sie Zeit?", "correctSide": "right" },
-        { "prompt": "ما می‌رویم؟", "left": "Gehen wir?", "right": "Wir gehen?", "correctSide": "left" },
-        { "prompt": "قهوه دوست داری؟", "left": "Du magst Kaffee?", "right": "Magst du Kaffee?", "correctSide": "right" },
-        { "prompt": "این درست است؟", "left": "Ist das richtig?", "right": "Das ist richtig?", "correctSide": "left" }
+        {
+          "prompt": "او می‌آید؟ (sie)",
+          "left": "Kommt sie?",
+          "right": "Sie kommt?",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "شما وقت دارید؟ (Sie)",
+          "left": "Sie haben Zeit?",
+          "right": "Haben Sie Zeit?",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "ما می‌رویم؟",
+          "left": "Gehen wir?",
+          "right": "Wir gehen?",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "قهوه دوست داری؟",
+          "left": "Du magst Kaffee?",
+          "right": "Magst du Kaffee?",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "این درست است؟",
+          "left": "Ist das richtig?",
+          "right": "Das ist richtig?",
+          "correctSide": "left"
+        }
       ]
     },
     {
@@ -334,18 +541,54 @@
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [
-        { "de": "Ja", "fa": "بله" },
-        { "de": "Nein", "fa": "نه" },
-        { "de": "verstehen", "fa": "فهمیدن" },
-        { "de": "kennen", "fa": "شناختن" },
-        { "de": "mögen", "fa": "دوست داشتن" },
-        { "de": "müde", "fa": "خسته" },
-        { "de": "fertig", "fa": "تمام / آماده" },
-        { "de": "die Zeit", "fa": "وقت" },
-        { "de": "der Hunger", "fa": "گرسنگی" },
-        { "de": "der Durst", "fa": "تشنگی" },
-        { "de": "richtig", "fa": "درست" },
-        { "de": "gerne", "fa": "با کمال میل" }
+        {
+          "de": "Ja",
+          "fa": "بله"
+        },
+        {
+          "de": "Nein",
+          "fa": "نه"
+        },
+        {
+          "de": "verstehen",
+          "fa": "فهمیدن"
+        },
+        {
+          "de": "kennen",
+          "fa": "شناختن"
+        },
+        {
+          "de": "mögen",
+          "fa": "دوست داشتن"
+        },
+        {
+          "de": "müde",
+          "fa": "خسته"
+        },
+        {
+          "de": "fertig",
+          "fa": "تمام / آماده"
+        },
+        {
+          "de": "die Zeit",
+          "fa": "وقت"
+        },
+        {
+          "de": "der Hunger",
+          "fa": "گرسنگی"
+        },
+        {
+          "de": "der Durst",
+          "fa": "تشنگی"
+        },
+        {
+          "de": "richtig",
+          "fa": "درست"
+        },
+        {
+          "de": "gerne",
+          "fa": "با کمال میل"
+        }
       ]
     },
     {
@@ -356,18 +599,78 @@
       "xpEarned": 50,
       "nextLessonId": "A1-M05-L02",
       "vocabularyLearned": [
-        { "word": { "de": "Ja", "fa": "بله" } },
-        { "word": { "de": "Nein", "fa": "نه" } },
-        { "word": { "de": "verstehen", "fa": "فهمیدن" } },
-        { "word": { "de": "kennen", "fa": "شناختن" } },
-        { "word": { "de": "mögen", "fa": "دوست داشتن" } },
-        { "word": { "de": "müde", "fa": "خسته" } },
-        { "word": { "de": "fertig", "fa": "تمام / آماده" } },
-        { "word": { "de": "die Zeit", "fa": "وقت" } },
-        { "word": { "de": "der Hunger", "fa": "گرسنگی" } },
-        { "word": { "de": "der Durst", "fa": "تشنگی" } },
-        { "word": { "de": "richtig", "fa": "درست" } },
-        { "word": { "de": "gerne", "fa": "با کمال میل" } }
+        {
+          "word": {
+            "de": "Ja",
+            "fa": "بله"
+          }
+        },
+        {
+          "word": {
+            "de": "Nein",
+            "fa": "نه"
+          }
+        },
+        {
+          "word": {
+            "de": "verstehen",
+            "fa": "فهمیدن"
+          }
+        },
+        {
+          "word": {
+            "de": "kennen",
+            "fa": "شناختن"
+          }
+        },
+        {
+          "word": {
+            "de": "mögen",
+            "fa": "دوست داشتن"
+          }
+        },
+        {
+          "word": {
+            "de": "müde",
+            "fa": "خسته"
+          }
+        },
+        {
+          "word": {
+            "de": "fertig",
+            "fa": "تمام / آماده"
+          }
+        },
+        {
+          "word": {
+            "de": "die Zeit",
+            "fa": "وقت"
+          }
+        },
+        {
+          "word": {
+            "de": "der Hunger",
+            "fa": "گرسنگی"
+          }
+        },
+        {
+          "word": {
+            "de": "der Durst",
+            "fa": "تشنگی"
+          }
+        },
+        {
+          "word": {
+            "de": "richtig",
+            "fa": "درست"
+          }
+        },
+        {
+          "word": {
+            "de": "gerne",
+            "fa": "با کمال میل"
+          }
+        }
       ]
     }
   ]

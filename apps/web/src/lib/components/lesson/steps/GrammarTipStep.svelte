@@ -99,121 +99,196 @@
 
 <style>
   .grammar-card {
-    background-color: #fffbeb; /* Amber-50 */
-    border: 1px solid #fcd34d; /* Amber-300 */
-    border-radius: 1rem;
-    padding: 1.5rem;
-    color: #92400e; /* Amber-800 */
+    background: var(--color-neutral-50, #fdfbf7);
+    border-radius: var(--radius-xl, 1rem);
+    padding: var(--space-6, 1.5rem);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   }
+
   .icon-header {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 0.75rem;
+    gap: var(--space-2, 0.5rem);
+    margin-bottom: var(--space-4, 1rem);
   }
+
   .bulb-icon {
     font-size: 1.5rem;
   }
+
   .step-title {
-    font-size: 1.1rem;
-    font-weight: 700;
+    font-size: var(--text-lg, 1.125rem);
+    font-weight: var(--font-bold, 700);
+    color: var(--color-neutral-800, #292524);
   }
+
   .grammar-text {
-    font-size: 1rem;
+    font-size: var(--text-base, 1rem);
     line-height: 1.8;
+    color: var(--color-neutral-700, #44403c);
   }
 
   .grammar-text :global(strong) {
-    font-weight: 700;
-    color: #78350f;
+    font-weight: var(--font-bold, 700);
+    color: var(--color-primary-600, #0e7490);
   }
 
   .grammar-text :global(p) {
-    margin-bottom: 0.75rem;
+    margin-bottom: var(--space-3, 0.75rem);
   }
 
   .grammar-text :global(.table-row) {
     display: flex;
-    flex-direction: row-reverse; /* RTL: first column on right */
-    border-bottom: 1px solid #fcd34d;
-    padding: 0.5rem 0;
+    flex-direction: row-reverse;
+    border-bottom: 1px solid var(--color-neutral-200, #e8e0d5);
+    padding: var(--space-2, 0.5rem) 0;
   }
 
   .grammar-text :global(.table-cell) {
     flex: 1;
-    padding: 0.25rem 0.5rem;
+    padding: var(--space-1, 0.25rem) var(--space-2, 0.5rem);
     text-align: center;
   }
 
   .grammar-text :global(.table-cell:first-child) {
-    text-align: right; /* Persian numbers on right */
+    text-align: right;
   }
 
   .grammar-text :global(.table-cell:last-child) {
-    text-align: left; /* German words on left */
+    text-align: left;
     direction: ltr;
+    color: var(--color-primary-600, #0e7490);
+    font-weight: var(--font-medium, 500);
   }
 
   .grammar-text :global(.bullet-item) {
     display: block;
     padding-right: 1.25rem;
     position: relative;
-    margin-bottom: 0.25rem;
+    margin-bottom: var(--space-1, 0.25rem);
   }
 
   .grammar-text :global(.bullet-item)::before {
     content: '•';
     position: absolute;
     right: 0;
-    color: #d97706;
+    color: var(--color-primary-500, #0891b2);
   }
+
   .examples-section {
-    margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 1px solid #fcd34d;
+    margin-top: var(--space-4, 1rem);
+    padding-top: var(--space-4, 1rem);
+    border-top: 1px solid var(--color-neutral-200, #e8e0d5);
   }
+
   .examples-title {
-    font-size: 0.95rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
+    font-size: var(--text-sm, 0.875rem);
+    font-weight: var(--font-bold, 700);
+    margin-bottom: var(--space-3, 0.75rem);
+    color: var(--color-neutral-500, #78716c);
   }
+
   .example-item {
-    margin-bottom: 0.75rem;
+    margin-bottom: var(--space-3, 0.75rem);
   }
+
   .example-row {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 0.25rem;
+    gap: var(--space-2, 0.5rem);
+    margin-bottom: var(--space-1, 0.25rem);
   }
+
   .example-item.inline-example {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
-    padding: 0.5rem 0.75rem;
-    background: rgba(255,255,255,0.5);
-    border-radius: 0.5rem;
-    margin-bottom: 0.5rem;
+    gap: var(--space-3, 0.75rem);
+    padding: var(--space-3, 0.75rem);
+    background: white;
+    border-radius: var(--radius-lg, 0.75rem);
+    margin-bottom: var(--space-2, 0.5rem);
+    transition: all var(--transition-normal, 200ms);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   }
+
+  .example-item.inline-example:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transform: translateX(-4px);
+  }
+
   .example-de {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #78350f;
+    font-size: var(--text-lg, 1.125rem);
+    font-weight: var(--font-semibold, 600);
+    color: var(--color-primary-600, #0e7490);
     min-width: 3rem;
   }
+
   .example-fa {
-    font-size: 0.9rem;
-    color: #92400e;
-    font-style: italic;
+    font-size: var(--text-base, 1rem);
+    color: var(--color-neutral-600, #57534e);
     margin: 0;
-    padding-right: 2rem;
+    padding-right: var(--space-8, 2rem);
   }
+
   .inline-example .example-fa {
-    font-style: normal;
     margin-right: auto;
     padding-right: 0;
   }
+
   .pronunciation-guide {
-    margin-top: 0.75rem;
+    margin-top: var(--space-3, 0.75rem);
+  }
+
+  /* Dark Mode - use hardcoded colors since CSS variables swap */
+  :global([data-theme="dark"]) .grammar-card {
+    background: #292524;
+  }
+
+  :global([data-theme="dark"]) .step-title {
+    color: #f5f0e8;
+  }
+
+  :global([data-theme="dark"]) .grammar-text {
+    color: #d4c9b9;
+  }
+
+  :global([data-theme="dark"]) .grammar-text :global(strong) {
+    color: #22d3ee;
+  }
+
+  :global([data-theme="dark"]) .grammar-text :global(.table-row) {
+    border-color: #44403c;
+  }
+
+  :global([data-theme="dark"]) .grammar-text :global(.table-cell:last-child) {
+    color: #22d3ee;
+  }
+
+  :global([data-theme="dark"]) .grammar-text :global(.bullet-item)::before {
+    color: #22d3ee;
+  }
+
+  :global([data-theme="dark"]) .examples-section {
+    border-color: #44403c;
+  }
+
+  :global([data-theme="dark"]) .examples-title {
+    color: #a69b8a;
+  }
+
+  :global([data-theme="dark"]) .example-item.inline-example {
+    background: #44403c;
+  }
+
+  :global([data-theme="dark"]) .example-de {
+    color: #22d3ee;
+  }
+
+  :global([data-theme="dark"]) .example-fa {
+    color: #a69b8a;
+  }
+
+  :global([data-theme="dark"]) .example-row p.example-de {
+    color: #22d3ee;
   }
 </style>

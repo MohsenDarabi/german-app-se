@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 /**
- * Audio Generation Script for German Learning App
+ * Audio Generation Script for Language Learning App
  *
  * Features:
  * - Uses Google Cloud TTS Chirp3-HD voices (highest quality)
+ * - Supports multiple language pairs (de-fa, en-fa, fr-fa, etc.)
  * - Deduplicates texts (same text = generate once, copy to all locations)
  * - Tracks character usage with monthly reset
  * - Maintains manifest of generated audio
@@ -18,13 +19,18 @@
  *   node scripts/generate-audio.js [options]
  *
  * Options:
- *   --dry-run       Show what would be generated without calling API
- *   --force         Regenerate audio for specified lesson only (requires --lesson=X)
- *   --force-all     Regenerate ALL audio (ignore manifest entirely)
- *   --status        Show usage stats only
- *   --level=A1      Filter to specific level (e.g., A1, A2, B1)
- *   --clean-level   Delete existing audio files for the level before regenerating
- *                   (requires --level=XX, fixes audio/content mismatch after reimport)
+ *   --language-pair=de-fa  Language pair to generate audio for (default: de-fa)
+ *   --dry-run              Show what would be generated without calling API
+ *   --force                Regenerate audio for specified lesson only (requires --lesson=X)
+ *   --force-all            Regenerate ALL audio (ignore manifest entirely)
+ *   --status               Show usage stats only
+ *   --level=A1             Filter to specific level (e.g., A1, A2, B1)
+ *   --clean-level          Delete existing audio files for the level before regenerating
+ *                          (requires --level=XX, fixes audio/content mismatch after reimport)
+ *
+ * Examples:
+ *   node scripts/generate-audio.js --language-pair=de-fa --level=A1
+ *   node scripts/generate-audio.js --language-pair=en-fa --lesson=A1-M01-L01
  */
 
 const fs = require('fs');
@@ -119,23 +125,50 @@ async function getAccessToken() {
 // CONFIGURATION
 // ============================================
 
-const CONFIG = {
-  // Google Cloud TTS settings - Chirp3-HD for highest quality
-  voice: {
+// Voice configurations for different languages
+// Using Chirp3-HD voices where available (highest quality)
+const LANGUAGE_VOICES = {
+  'de': {
     languageCode: 'de-DE',
-    name: 'de-DE-Chirp3-HD-Aoede', // Chirp3-HD female voice (highest quality)
+    name: 'de-DE-Chirp3-HD-Aoede', // German female voice
   },
+  'en': {
+    languageCode: 'en-US',
+    name: 'en-US-Chirp3-HD-Aoede', // English female voice
+  },
+  'fr': {
+    languageCode: 'fr-FR',
+    name: 'fr-FR-Neural2-A', // French female voice (no Chirp3-HD yet)
+  },
+  'es': {
+    languageCode: 'es-ES',
+    name: 'es-ES-Neural2-A', // Spanish female voice
+  },
+};
+
+// Parse language pair from command line (default: de-fa)
+const args = process.argv.slice(2);
+const languagePairArg = args.find(a => a.startsWith('--language-pair='))?.split('=')[1] || 'de-fa';
+const sourceLanguage = languagePairArg.split('-')[0]; // 'de' from 'de-fa'
+
+const CONFIG = {
+  // Language pair being processed
+  languagePair: languagePairArg,
+  sourceLanguage: sourceLanguage,
+
+  // Google Cloud TTS settings - dynamically selected based on language
+  voice: LANGUAGE_VOICES[sourceLanguage] || LANGUAGE_VOICES['en'],
   audioConfig: {
     audioEncoding: 'MP3',
     // Note: Chirp3-HD doesn't support speakingRate or pitch control
   },
 
-  // Paths
-  contentDir: path.join(__dirname, '..', 'content', 'de-fa'),
-  outputDir: path.join(__dirname, '..', 'apps', 'web', 'static', 'audio'),
+  // Paths - now include language pair
+  contentDir: path.join(__dirname, '..', 'content', languagePairArg),
+  outputDir: path.join(__dirname, '..', 'apps', 'web', 'static', 'audio', languagePairArg),
   dataDir: path.join(__dirname, 'audio-data'),
-  manifestFile: path.join(__dirname, 'audio-data', 'manifest.json'),
-  usageFile: path.join(__dirname, 'audio-data', 'usage.json'),
+  manifestFile: path.join(__dirname, 'audio-data', `manifest-${languagePairArg}.json`),
+  usageFile: path.join(__dirname, 'audio-data', 'usage.json'), // Shared usage file
 
   // Free tier limits
   freeLimit: 1000000,        // 1M characters per month
@@ -615,11 +648,10 @@ function findAllLessons(dir) {
 // ============================================
 
 async function main() {
-  console.log('🎵 German Learning App - Audio Generator (Chirp3-HD)');
+  console.log('🎵 Language Learning App - Audio Generator (Chirp3-HD)');
   console.log('═══════════════════════════════════════════════════════\n');
 
-  // Parse command line args
-  const args = process.argv.slice(2);
+  // Parse command line args (already parsed above for CONFIG)
   const dryRun = args.includes('--dry-run');
   const forceAll = args.includes('--force-all');
   const forceLesson = args.includes('--force');
@@ -627,6 +659,12 @@ async function main() {
   const cleanLevel = args.includes('--clean-level');
   const levelFilter = args.find(a => a.startsWith('--level='))?.split('=')[1];
   const lessonFilter = args.find(a => a.startsWith('--lesson='))?.split('=')[1];
+
+  // Show language pair info
+  console.log(`📍 Language pair: ${CONFIG.languagePair}`);
+  console.log(`🗣️  Voice: ${CONFIG.voice.name} (${CONFIG.voice.languageCode})`);
+  console.log(`📂 Content: ${CONFIG.contentDir}`);
+  console.log(`📁 Output: ${CONFIG.outputDir}\n`);
 
   // Load tracking data
   const manifest = loadManifest();
@@ -709,7 +747,7 @@ async function main() {
   console.log('');
 
   if (lessons.length === 0) {
-    console.log('No lessons found. Make sure content exists in content/de-fa/');
+    console.log(`No lessons found. Make sure content exists in content/${CONFIG.languagePair}/`);
     if (levelFilter) {
       console.log(`(Note: Level filter "${levelFilter}" was applied)`);
     }
@@ -967,8 +1005,8 @@ async function main() {
   console.log('═══════════════════════════════════════════════════════\n');
 
   if (!dryRun && stats.generated > 0) {
-    console.log('✅ Audio files saved to: apps/web/static/audio/');
-    console.log('   Manifest saved to: scripts/audio-data/manifest.json');
+    console.log(`✅ Audio files saved to: apps/web/static/audio/${CONFIG.languagePair}/`);
+    console.log(`   Manifest saved to: scripts/audio-data/manifest-${CONFIG.languagePair}.json`);
     console.log('   Usage saved to: scripts/audio-data/usage.json\n');
   }
 }

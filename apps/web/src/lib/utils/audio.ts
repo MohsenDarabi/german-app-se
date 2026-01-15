@@ -2,9 +2,11 @@
  * Audio Playback Utility for German Learning App
  *
  * Handles playing pre-generated audio files with fallback to device TTS.
+ * Supports both local assets and CDN-based delivery via assetService.
  */
 
 import { browser } from '$app/environment';
+import { getAudioUrl, getLessonAudioHashes, isCdnEnabled, getCdnBase, getState } from '$lib/services/assetService';
 
 // Audio cache to avoid re-creating audio elements
 const audioCache = new Map<string, HTMLAudioElement>();
@@ -14,13 +16,15 @@ let currentAudio: HTMLAudioElement | null = null;
 
 /**
  * Play pre-generated audio for a lesson step
+ * Uses CDN URL if available, otherwise falls back to local path.
  *
  * @param lessonId - The lesson ID (e.g., "A1-M01-L01")
  * @param audioId - The audio file ID (e.g., "s2-word")
  * @returns Promise that resolves when audio finishes playing
  */
 export async function playStepAudio(lessonId: string, audioId: string): Promise<void> {
-  const audioPath = `/audio/${lessonId}/${audioId}.mp3`;
+  // Get URL from asset service (handles CDN vs local)
+  const audioPath = getAudioUrl(lessonId, audioId);
   return playAudioFile(audioPath);
 }
 
@@ -63,10 +67,30 @@ export async function playAudioFile(audioPath: string): Promise<void> {
 }
 
 /**
- * Play German text using TTS (fallback when pre-generated audio not available)
+ * Language code mapping for TTS
+ */
+const LANGUAGE_TTS_MAP: Record<string, string> = {
+  'de': 'de-DE',
+  'en': 'en-US',
+  'fr': 'fr-FR',
+  'es': 'es-ES',
+};
+
+/**
+ * Get TTS language code from language pair
+ * @param langPair - Language pair like 'de-fa', 'en-fa'
+ * @returns TTS language code like 'de-DE', 'en-US'
+ */
+function getTTSLanguage(langPair: string): string {
+  const sourceLang = langPair.split('-')[0]; // 'de' from 'de-fa'
+  return LANGUAGE_TTS_MAP[sourceLang] || 'en-US';
+}
+
+/**
+ * Play text using TTS (fallback when pre-generated audio not available)
  * This is the legacy function, kept for backward compatibility.
  *
- * @param text - German text to speak
+ * @param text - Text to speak
  * @param lang - Language code (default: 'de-DE')
  */
 export function playText(text: string, lang: string = 'de-DE') {
@@ -82,14 +106,15 @@ export function playText(text: string, lang: string = 'de-DE') {
   utterance.lang = lang;
   utterance.rate = 0.9; // Slightly slower for learning
 
-  // Select a German voice if available (prefer Neural/Enhanced voices)
+  // Select appropriate voice based on language (prefer Neural/Enhanced voices)
   const voices = window.speechSynthesis.getVoices();
-  const germanVoice = voices.find(v =>
-    v.lang.startsWith('de') && (v.name.includes('Neural') || v.name.includes('Enhanced'))
-  ) || voices.find(v => v.lang.startsWith('de'));
+  const langPrefix = lang.split('-')[0]; // 'de' from 'de-DE'
+  const preferredVoice = voices.find(v =>
+    v.lang.startsWith(langPrefix) && (v.name.includes('Neural') || v.name.includes('Enhanced'))
+  ) || voices.find(v => v.lang.startsWith(langPrefix));
 
-  if (germanVoice) {
-    utterance.voice = germanVoice;
+  if (preferredVoice) {
+    utterance.voice = preferredVoice;
   }
 
   window.speechSynthesis.speak(utterance);
@@ -121,13 +146,15 @@ function extractGermanText(text: string): string {
 }
 
 /**
- * Play German text using TTS (async version with promise)
+ * Play text using TTS (async version with promise)
+ * Supports multiple languages based on language pair.
  *
- * @param text - German text to speak
+ * @param text - Text to speak
  * @param rate - Speaking rate (0.5 to 2.0, default 0.9 for learners)
+ * @param langPair - Language pair like 'de-fa', 'en-fa' (default: 'de-fa')
  * @returns Promise that resolves when speech finishes
  */
-export async function playTextAsync(text: string, rate = 0.9): Promise<void> {
+export async function playTextAsync(text: string, rate = 0.9, langPair = 'de-fa'): Promise<void> {
   if (!browser || !('speechSynthesis' in window)) {
     console.warn('Speech synthesis not available');
     return;
@@ -136,31 +163,34 @@ export async function playTextAsync(text: string, rate = 0.9): Promise<void> {
   // Stop any current speech
   speechSynthesis.cancel();
 
-  // If text contains Persian, extract only German portions
+  // If text contains Persian, extract only Latin/source language portions
   let textToSpeak = text;
   if (containsPersian(text)) {
-    textToSpeak = extractGermanText(text);
-    // If no German text remains, don't play anything
+    textToSpeak = extractGermanText(text); // Works for any Latin text
+    // If no source language text remains, don't play anything
     if (!textToSpeak || textToSpeak.length < 2) {
-      console.warn('No German text to speak in mixed content');
+      console.warn('No source language text to speak in mixed content');
       return;
     }
   }
 
+  const ttsLang = getTTSLanguage(langPair);
+  const langPrefix = ttsLang.split('-')[0];
+
   return new Promise((resolve) => {
     const utterance = new SpeechSynthesisUtterance(textToSpeak);
-    utterance.lang = 'de-DE';
+    utterance.lang = ttsLang;
     utterance.rate = rate;
     utterance.pitch = 1.0;
 
-    // Try to find the best German voice
+    // Try to find the best voice for this language
     const voices = speechSynthesis.getVoices();
-    const germanVoice = voices.find(v =>
-      v.lang.startsWith('de') && (v.name.includes('Neural') || v.name.includes('Enhanced'))
-    ) || voices.find(v => v.lang.startsWith('de'));
+    const preferredVoice = voices.find(v =>
+      v.lang.startsWith(langPrefix) && (v.name.includes('Neural') || v.name.includes('Enhanced'))
+    ) || voices.find(v => v.lang.startsWith(langPrefix));
 
-    if (germanVoice) {
-      utterance.voice = germanVoice;
+    if (preferredVoice) {
+      utterance.voice = preferredVoice;
     }
 
     utterance.onend = () => resolve();
@@ -171,17 +201,23 @@ export async function playTextAsync(text: string, rate = 0.9): Promise<void> {
 }
 
 /**
- * Play German text - tries pre-generated audio first, falls back to TTS
+ * Play source language text - tries pre-generated audio first, falls back to TTS
+ * Works with any language pair (de-fa, en-fa, etc.)
  *
- * @param text - German text to speak
+ * @param text - Source language text to speak
  * @param lessonId - Optional lesson ID for pre-generated audio lookup
  * @param audioId - Optional audio ID for pre-generated audio lookup
+ * @param langPair - Language pair like 'de-fa', 'en-fa' (default: from asset service)
  */
 export async function playGerman(
   text: string,
   lessonId?: string,
-  audioId?: string
+  audioId?: string,
+  langPair?: string
 ): Promise<void> {
+  // Get language pair from asset service if not provided
+  const effectiveLangPair = langPair || getState().languagePair || 'de-fa';
+
   // Try pre-generated audio first
   if (lessonId && audioId) {
     try {
@@ -192,8 +228,8 @@ export async function playGerman(
     }
   }
 
-  // Fallback to TTS
-  await playTextAsync(text);
+  // Fallback to TTS with appropriate language
+  await playTextAsync(text, 0.9, effectiveLangPair);
 }
 
 /**
@@ -213,6 +249,7 @@ export function stopAudio(): void {
 
 /**
  * Preload audio files for a lesson (call when lesson starts)
+ * Uses CDN hash-based URLs for deduplication benefits.
  *
  * @param lessonId - The lesson ID to preload
  * @param audioIds - Array of audio IDs to preload
@@ -220,8 +257,31 @@ export function stopAudio(): void {
 export function preloadLessonAudio(lessonId: string, audioIds: string[]): void {
   if (!browser) return;
 
+  // If CDN is enabled, preload unique hashes only
+  if (isCdnEnabled()) {
+    const state = getState();
+    const cdnBase = getCdnBase();
+
+    if (state.manifest) {
+      // Get unique hashes for this lesson (deduplication!)
+      const hashes = getLessonAudioHashes(lessonId);
+
+      for (const hash of hashes) {
+        const audioPath = `${cdnBase}/${state.languagePair}/audio/by-hash/${hash}.mp3`;
+        if (!audioCache.has(audioPath)) {
+          const audio = new Audio();
+          audio.preload = 'auto';
+          audio.src = audioPath;
+          audioCache.set(audioPath, audio);
+        }
+      }
+      return;
+    }
+  }
+
+  // Fallback: preload by individual audio IDs (local paths)
   for (const audioId of audioIds) {
-    const audioPath = `/audio/${lessonId}/${audioId}.mp3`;
+    const audioPath = getAudioUrl(lessonId, audioId);
     if (!audioCache.has(audioPath)) {
       const audio = new Audio();
       audio.preload = 'auto';
@@ -233,6 +293,7 @@ export function preloadLessonAudio(lessonId: string, audioIds: string[]): void {
 
 /**
  * Check if pre-generated audio exists for a step
+ * With CDN, checks the manifest; otherwise does a HEAD request.
  *
  * @param lessonId - The lesson ID
  * @param audioId - The audio ID
@@ -241,7 +302,17 @@ export function preloadLessonAudio(lessonId: string, audioIds: string[]): void {
 export async function hasPreGeneratedAudio(lessonId: string, audioId: string): Promise<boolean> {
   if (!browser) return false;
 
-  const audioPath = `/audio/${lessonId}/${audioId}.mp3`;
+  // If CDN is enabled, check manifest
+  if (isCdnEnabled()) {
+    const state = getState();
+    if (state.manifest) {
+      const key = `${lessonId}/${audioId}`;
+      return !!state.manifest.audioMap[key];
+    }
+  }
+
+  // Fallback: HEAD request to local path
+  const audioPath = getAudioUrl(lessonId, audioId);
 
   try {
     const response = await fetch(audioPath, { method: 'HEAD' });

@@ -1,5 +1,14 @@
 {
   "id": "A1-M01-L07",
+  "languagePair": "de-fa",
+  "source": {
+    "code": "de",
+    "name": "Deutsch"
+  },
+  "target": {
+    "code": "fa",
+    "name": "فارسی"
+  },
   "title": {
     "de": "Zahlen 1-10",
     "fa": "اعداد ۱ تا ۱۰"
@@ -10,7 +19,6 @@
   "lessonNumber": 7,
   "totalSteps": 23,
   "estimatedMinutes": 15,
-  "charactersInLesson": ["eli", "kellner", "tom"],
   "steps": [
     {
       "type": "new-word",
@@ -74,10 +82,22 @@
       "title": "نکته تلفظ اعداد",
       "content": "روی هر عدد کلیک کنید تا تلفظ صحیح را بشنوید:",
       "examples": [
-        { "de": "eins", "fa": "۱ - اَینس" },
-        { "de": "zwei", "fa": "۲ - تسوای" },
-        { "de": "drei", "fa": "۳ - درای" },
-        { "de": "vier", "fa": "۴ - فیر" }
+        {
+          "de": "eins",
+          "fa": "۱ - اَینس"
+        },
+        {
+          "de": "zwei",
+          "fa": "۲ - تسوای"
+        },
+        {
+          "de": "drei",
+          "fa": "۳ - درای"
+        },
+        {
+          "de": "vier",
+          "fa": "۴ - فیر"
+        }
       ]
     },
     {
@@ -86,11 +106,36 @@
       "title": "سریع پاسخ بده!",
       "instruction": "عدد درست را انتخاب کنید",
       "questions": [
-        { "prompt": "eins", "left": "۲", "right": "۱", "correctSide": "right" },
-        { "prompt": "zwei", "left": "۲", "right": "۳", "correctSide": "left" },
-        { "prompt": "drei", "left": "۴", "right": "۳", "correctSide": "right" },
-        { "prompt": "vier", "left": "۴", "right": "۲", "correctSide": "left" },
-        { "prompt": "eins", "left": "۱", "right": "۴", "correctSide": "left" }
+        {
+          "prompt": "eins",
+          "left": "۲",
+          "right": "۱",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "zwei",
+          "left": "۲",
+          "right": "۳",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "drei",
+          "left": "۴",
+          "right": "۳",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "vier",
+          "left": "۴",
+          "right": "۲",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "eins",
+          "left": "۱",
+          "right": "۴",
+          "correctSide": "left"
+        }
       ]
     },
     {
@@ -154,22 +199,58 @@
       "id": "s10",
       "instruction": "اعداد را با معنی فارسی جفت کنید",
       "items": [
-        { "id": "i1", "text": "fünf" },
-        { "id": "i2", "text": "sechs" },
-        { "id": "i3", "text": "sieben" },
-        { "id": "i4", "text": "acht" }
+        {
+          "id": "i1",
+          "text": "fünf"
+        },
+        {
+          "id": "i2",
+          "text": "sechs"
+        },
+        {
+          "id": "i3",
+          "text": "sieben"
+        },
+        {
+          "id": "i4",
+          "text": "acht"
+        }
       ],
       "matches": [
-        { "id": "m1", "text": "۵" },
-        { "id": "m2", "text": "۶" },
-        { "id": "m3", "text": "۷" },
-        { "id": "m4", "text": "۸" }
+        {
+          "id": "m1",
+          "text": "۵"
+        },
+        {
+          "id": "m2",
+          "text": "۶"
+        },
+        {
+          "id": "m3",
+          "text": "۷"
+        },
+        {
+          "id": "m4",
+          "text": "۸"
+        }
       ],
       "correctPairs": [
-        ["i1", "m1"],
-        ["i2", "m2"],
-        ["i3", "m3"],
-        ["i4", "m4"]
+        [
+          "i1",
+          "m1"
+        ],
+        [
+          "i2",
+          "m2"
+        ],
+        [
+          "i3",
+          "m3"
+        ],
+        [
+          "i4",
+          "m4"
+        ]
       ]
     },
     {
@@ -206,15 +287,26 @@
       "title": "شمردن از ۱ تا ۱۰",
       "content": "اعداد ۱ تا ۱۰ در آلمانی:\n\n| عدد | آلمانی |\n|-----|--------|\n| ۱ | eins |\n| ۲ | zwei |\n| ۳ | drei |\n| ۴ | vier |\n| ۵ | fünf |\n| ۶ | sechs |\n| ۷ | sieben |\n| ۸ | acht |\n| ۹ | neun |\n| ۱۰ | zehn |",
       "examples": [
-        { "de": "Eins, zwei, drei, vier, fünf!", "fa": "یک، دو، سه، چهار، پنج!" },
-        { "de": "Sechs, sieben, acht, neun, zehn!", "fa": "شش، هفت، هشت، نه، ده!" }
+        {
+          "de": "Eins, zwei, drei, vier, fünf!",
+          "fa": "یک، دو، سه، چهار، پنج!"
+        },
+        {
+          "de": "Sechs, sieben, acht, neun, zehn!",
+          "fa": "شش، هفت، هشت، نه، ده!"
+        }
       ]
     },
     {
       "type": "multiple-choice",
       "id": "s14",
       "question": "عدد «هفت» به آلمانی چیست؟",
-      "options": ["sechs", "acht", "sieben", "neun"],
+      "options": [
+        "sechs",
+        "acht",
+        "sieben",
+        "neun"
+      ],
       "correctAnswerIndex": 2,
       "feedback": {
         "correct": "آفرین! هفت = sieben",
@@ -225,7 +317,12 @@
       "type": "multiple-choice",
       "id": "s15",
       "question": "کلمه «fünf» یعنی چه؟",
-      "options": ["چهار", "پنج", "شش", "هفت"],
+      "options": [
+        "چهار",
+        "پنج",
+        "شش",
+        "هفت"
+      ],
       "correctAnswerIndex": 1,
       "feedback": {
         "correct": "آفرین! fünf = پنج",
@@ -236,8 +333,16 @@
       "type": "word-order",
       "id": "s16",
       "instruction": "اعداد را به ترتیب مرتب کنید (از کوچک به بزرگ)",
-      "words": ["drei", "eins", "zwei"],
-      "correctOrder": [1, 2, 0],
+      "words": [
+        "drei",
+        "eins",
+        "zwei"
+      ],
+      "correctOrder": [
+        1,
+        2,
+        0
+      ],
       "correctSentence": {
         "de": "eins, zwei, drei",
         "fa": "یک، دو، سه"
@@ -250,10 +355,34 @@
       "title": "مکالمه: چند تا؟",
       "context": "الی و تام در کافه هستند",
       "lines": [
-        { "speakerId": "eli", "text": { "de": "Zwei Kaffee, bitte.", "fa": "دو قهوه، لطفاً." } },
-        { "speakerId": "kellner", "text": { "de": "Zwei Kaffee. Sonst noch etwas?", "fa": "دو قهوه. چیز دیگه‌ای؟" } },
-        { "speakerId": "tom", "text": { "de": "Ja, drei Croissants, bitte.", "fa": "بله، سه کروسان، لطفاً." } },
-        { "speakerId": "kellner", "text": { "de": "Das macht acht Euro.", "fa": "می‌شه هشت یورو." } }
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Zwei Kaffee, bitte.",
+            "fa": "دو قهوه، لطفاً."
+          }
+        },
+        {
+          "speaker": "Kellner",
+          "text": {
+            "de": "Zwei Kaffee. Sonst noch etwas?",
+            "fa": "دو قهوه. چیز دیگه‌ای؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Ja, drei Croissants, bitte.",
+            "fa": "بله، سه کروسان، لطفاً."
+          }
+        },
+        {
+          "speaker": "Kellner",
+          "text": {
+            "de": "Das macht acht Euro.",
+            "fa": "می‌شه هشت یورو."
+          }
+        }
       ]
     },
     {
@@ -261,8 +390,16 @@
       "id": "s18",
       "instruction": "جمله را کامل کنید",
       "sentence": "Eins, zwei, {0}, vier, {1}.",
-      "options": ["drei", "fünf", "sechs", "acht"],
-      "correctAnswers": [0, 1],
+      "options": [
+        "drei",
+        "fünf",
+        "sechs",
+        "acht"
+      ],
+      "correctAnswers": [
+        0,
+        1
+      ],
       "feedback": {
         "explanation": "ترتیب اعداد: eins (۱), zwei (۲), **drei** (۳), vier (۴), **fünf** (۵)"
       }
@@ -273,12 +410,42 @@
       "title": "همه اعداد!",
       "instruction": "عدد درست را سریع انتخاب کنید",
       "questions": [
-        { "prompt": "neun", "left": "۹", "right": "۶", "correctSide": "left" },
-        { "prompt": "zehn", "left": "۸", "right": "۱۰", "correctSide": "right" },
-        { "prompt": "fünf", "left": "۵", "right": "۴", "correctSide": "left" },
-        { "prompt": "acht", "left": "۷", "right": "۸", "correctSide": "right" },
-        { "prompt": "sechs", "left": "۶", "right": "۹", "correctSide": "left" },
-        { "prompt": "sieben", "left": "۸", "right": "۷", "correctSide": "right" }
+        {
+          "prompt": "neun",
+          "left": "۹",
+          "right": "۶",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "zehn",
+          "left": "۸",
+          "right": "۱۰",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "fünf",
+          "left": "۵",
+          "right": "۴",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "acht",
+          "left": "۷",
+          "right": "۸",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "sechs",
+          "left": "۶",
+          "right": "۹",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "sieben",
+          "left": "۸",
+          "right": "۷",
+          "correctSide": "right"
+        }
       ]
     },
     {
@@ -306,16 +473,46 @@
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [
-        { "de": "eins", "fa": "یک (۱)" },
-        { "de": "zwei", "fa": "دو (۲)" },
-        { "de": "drei", "fa": "سه (۳)" },
-        { "de": "vier", "fa": "چهار (۴)" },
-        { "de": "fünf", "fa": "پنج (۵)" },
-        { "de": "sechs", "fa": "شش (۶)" },
-        { "de": "sieben", "fa": "هفت (۷)" },
-        { "de": "acht", "fa": "هشت (۸)" },
-        { "de": "neun", "fa": "نه (۹)" },
-        { "de": "zehn", "fa": "ده (۱۰)" }
+        {
+          "de": "eins",
+          "fa": "یک (۱)"
+        },
+        {
+          "de": "zwei",
+          "fa": "دو (۲)"
+        },
+        {
+          "de": "drei",
+          "fa": "سه (۳)"
+        },
+        {
+          "de": "vier",
+          "fa": "چهار (۴)"
+        },
+        {
+          "de": "fünf",
+          "fa": "پنج (۵)"
+        },
+        {
+          "de": "sechs",
+          "fa": "شش (۶)"
+        },
+        {
+          "de": "sieben",
+          "fa": "هفت (۷)"
+        },
+        {
+          "de": "acht",
+          "fa": "هشت (۸)"
+        },
+        {
+          "de": "neun",
+          "fa": "نه (۹)"
+        },
+        {
+          "de": "zehn",
+          "fa": "ده (۱۰)"
+        }
       ]
     },
     {
@@ -326,16 +523,66 @@
       "xpEarned": 50,
       "nextLessonId": "A1-M01-L08",
       "vocabularyLearned": [
-        { "word": { "de": "eins", "fa": "یک (۱)" } },
-        { "word": { "de": "zwei", "fa": "دو (۲)" } },
-        { "word": { "de": "drei", "fa": "سه (۳)" } },
-        { "word": { "de": "vier", "fa": "چهار (۴)" } },
-        { "word": { "de": "fünf", "fa": "پنج (۵)" } },
-        { "word": { "de": "sechs", "fa": "شش (۶)" } },
-        { "word": { "de": "sieben", "fa": "هفت (۷)" } },
-        { "word": { "de": "acht", "fa": "هشت (۸)" } },
-        { "word": { "de": "neun", "fa": "نه (۹)" } },
-        { "word": { "de": "zehn", "fa": "ده (۱۰)" } }
+        {
+          "word": {
+            "de": "eins",
+            "fa": "یک (۱)"
+          }
+        },
+        {
+          "word": {
+            "de": "zwei",
+            "fa": "دو (۲)"
+          }
+        },
+        {
+          "word": {
+            "de": "drei",
+            "fa": "سه (۳)"
+          }
+        },
+        {
+          "word": {
+            "de": "vier",
+            "fa": "چهار (۴)"
+          }
+        },
+        {
+          "word": {
+            "de": "fünf",
+            "fa": "پنج (۵)"
+          }
+        },
+        {
+          "word": {
+            "de": "sechs",
+            "fa": "شش (۶)"
+          }
+        },
+        {
+          "word": {
+            "de": "sieben",
+            "fa": "هفت (۷)"
+          }
+        },
+        {
+          "word": {
+            "de": "acht",
+            "fa": "هشت (۸)"
+          }
+        },
+        {
+          "word": {
+            "de": "neun",
+            "fa": "نه (۹)"
+          }
+        },
+        {
+          "word": {
+            "de": "zehn",
+            "fa": "ده (۱۰)"
+          }
+        }
       ]
     }
   ]

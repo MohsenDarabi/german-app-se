@@ -12,10 +12,8 @@ export interface ModuleStub {
   lessons: LessonStub[];
 }
 
-// Only include lessons that have actual content files in content/de-fa/
-// Add new lessons here as they are created from content fusion
-
-export const A1_MODULES: ModuleStub[] = [
+// German (de-fa) modules
+const DE_FA_A1_MODULES: ModuleStub[] = [
   {
     id: "module-01",
     title: "بخش ۱: شروع سفر (Basics)",
@@ -246,5 +244,53 @@ export const A1_MODULES: ModuleStub[] = [
   }
 ];
 
-// A2 modules - add when content is created
-export const A2_MODULES: ModuleStub[] = [];
+const DE_FA_A2_MODULES: ModuleStub[] = [];
+
+// English (en-fa) modules
+const EN_FA_A1_MODULES: ModuleStub[] = [
+  {
+    id: "module-01",
+    title: "بخش ۱: شروع سفر (Getting Started)",
+    level: "A1",
+    lessons: [
+      {
+        id: "A1-M01-L01",
+        title: "سلام و خداحافظی (Hello and Goodbye)",
+        description: "یاد بگیرید چطور به انگلیسی سلام و خداحافظی کنید.",
+        path: "/learn/en-fa/A1/A1-M01-L01"
+      }
+    ]
+  }
+];
+
+const EN_FA_A2_MODULES: ModuleStub[] = [];
+
+// Module data registry by language pair
+const MODULE_DATA: Record<string, { A1: ModuleStub[]; A2: ModuleStub[] }> = {
+  'de-fa': {
+    A1: DE_FA_A1_MODULES,
+    A2: DE_FA_A2_MODULES,
+  },
+  'en-fa': {
+    A1: EN_FA_A1_MODULES,
+    A2: EN_FA_A2_MODULES,
+  },
+};
+
+/**
+ * Get all modules for a specific language pair
+ */
+export function getAllModulesForLanguage(languagePair: string): { A1: ModuleStub[]; A2: ModuleStub[] } {
+  return MODULE_DATA[languagePair] || { A1: [], A2: [] };
+}
+
+/**
+ * Get modules for a specific language pair and level
+ */
+export function getModulesForLevel(languagePair: string, level: 'A1' | 'A2'): ModuleStub[] {
+  return MODULE_DATA[languagePair]?.[level] || [];
+}
+
+// Backward compatibility exports (for existing code that imports these directly)
+export const A1_MODULES = DE_FA_A1_MODULES;
+export const A2_MODULES = DE_FA_A2_MODULES;

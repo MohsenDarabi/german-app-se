@@ -1,5 +1,14 @@
 {
   "id": "A1-M02-L01",
+  "languagePair": "de-fa",
+  "source": {
+    "code": "de",
+    "name": "Deutsch"
+  },
+  "target": {
+    "code": "fa",
+    "name": "فارسی"
+  },
   "title": {
     "de": "sein und haben",
     "fa": "بودن و داشتن"
@@ -10,7 +19,6 @@
   "lessonNumber": 1,
   "totalSteps": 24,
   "estimatedMinutes": 15,
-  "charactersInLesson": ["eli", "tom"],
   "steps": [
     {
       "type": "grammar-tip",
@@ -18,8 +26,14 @@
       "title": "دو فعل بسیار مهم",
       "content": "در این درس دو فعل اساسی آلمانی را یاد می‌گیریم:\n\n**sein** = بودن (مثل «هستم»)\n**haben** = داشتن (مثل «دارم»)\n\nاین دو فعل در هر زبانی مهم‌ترین فعل‌ها هستند!",
       "examples": [
-        { "de": "Ich bin Eli.", "fa": "من الی هستم." },
-        { "de": "Ich habe Zeit.", "fa": "من وقت دارم." }
+        {
+          "de": "Ich bin Eli.",
+          "fa": "من الی هستم."
+        },
+        {
+          "de": "Ich habe Zeit.",
+          "fa": "من وقت دارم."
+        }
       ]
     },
     {
@@ -98,8 +112,14 @@
       "title": "صرف فعل sein",
       "content": "فعل **sein** کاملاً بی‌قاعده است:\n\n| ضمیر | فعل | معنی |\n|-----|-----|-----|\n| ich | **bin** | من هستم |\n| du | **bist** | تو هستی |\n| er/sie/es | **ist** | او هست |",
       "examples": [
-        { "de": "Ich bin müde.", "fa": "من خسته‌ام." },
-        { "de": "Du bist toll!", "fa": "تو عالی هستی!" }
+        {
+          "de": "Ich bin müde.",
+          "fa": "من خسته‌ام."
+        },
+        {
+          "de": "Du bist toll!",
+          "fa": "تو عالی هستی!"
+        }
       ]
     },
     {
@@ -108,11 +128,36 @@
       "title": "sein - تمرین سریع",
       "instruction": "ضمیر درست را انتخاب کنید",
       "questions": [
-        { "prompt": "___ bin Eli.", "left": "Ich", "right": "Du", "correctSide": "left" },
-        { "prompt": "___ bist nett.", "left": "Ich", "right": "Du", "correctSide": "right" },
-        { "prompt": "Er ___ mein Freund.", "left": "bin", "right": "ist", "correctSide": "right" },
-        { "prompt": "Sie ___ aus Berlin.", "left": "ist", "right": "bist", "correctSide": "left" },
-        { "prompt": "Ich ___ Student.", "left": "bin", "right": "bist", "correctSide": "left" }
+        {
+          "prompt": "___ bin Eli.",
+          "left": "Ich",
+          "right": "Du",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "___ bist nett.",
+          "left": "Ich",
+          "right": "Du",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Er ___ mein Freund.",
+          "left": "bin",
+          "right": "ist",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Sie ___ aus Berlin.",
+          "left": "ist",
+          "right": "bist",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Ich ___ Student.",
+          "left": "bin",
+          "right": "bist",
+          "correctSide": "left"
+        }
       ]
     },
     {
@@ -191,8 +236,14 @@
       "title": "صرف فعل haben",
       "content": "فعل **haben** هم بی‌قاعده است:\n\n| ضمیر | فعل | معنی |\n|-----|-----|-----|\n| ich | **habe** | من دارم |\n| du | **hast** | تو داری |\n| er/sie/es | **hat** | او دارد |\n\nتوجه: du ha**st** (حرف b حذف می‌شود)",
       "examples": [
-        { "de": "Ich habe Hunger.", "fa": "من گرسنه‌ام." },
-        { "de": "Sie hat ein Auto.", "fa": "او یک ماشین دارد." }
+        {
+          "de": "Ich habe Hunger.",
+          "fa": "من گرسنه‌ام."
+        },
+        {
+          "de": "Sie hat ein Auto.",
+          "fa": "او یک ماشین دارد."
+        }
       ]
     },
     {
@@ -200,22 +251,58 @@
       "id": "s14",
       "instruction": "فعل sein را با ضمیر جفت کنید",
       "items": [
-        { "id": "i1", "text": "ich" },
-        { "id": "i2", "text": "du" },
-        { "id": "i3", "text": "er" },
-        { "id": "i4", "text": "sie" }
+        {
+          "id": "i1",
+          "text": "ich"
+        },
+        {
+          "id": "i2",
+          "text": "du"
+        },
+        {
+          "id": "i3",
+          "text": "er"
+        },
+        {
+          "id": "i4",
+          "text": "sie"
+        }
       ],
       "matches": [
-        { "id": "m1", "text": "bin" },
-        { "id": "m2", "text": "bist" },
-        { "id": "m3", "text": "ist (مرد)" },
-        { "id": "m4", "text": "ist (زن)" }
+        {
+          "id": "m1",
+          "text": "bin"
+        },
+        {
+          "id": "m2",
+          "text": "bist"
+        },
+        {
+          "id": "m3",
+          "text": "ist (مرد)"
+        },
+        {
+          "id": "m4",
+          "text": "ist (زن)"
+        }
       ],
       "correctPairs": [
-        ["i1", "m1"],
-        ["i2", "m2"],
-        ["i3", "m3"],
-        ["i4", "m4"]
+        [
+          "i1",
+          "m1"
+        ],
+        [
+          "i2",
+          "m2"
+        ],
+        [
+          "i3",
+          "m3"
+        ],
+        [
+          "i4",
+          "m4"
+        ]
       ]
     },
     {
@@ -224,19 +311,60 @@
       "title": "مکالمه: دوستان جدید",
       "context": "الی و تام درباره خودشان صحبت می‌کنند",
       "lines": [
-        { "speakerId": "eli", "text": { "de": "Hallo Tom! Wie geht's?", "fa": "سلام تام! حالت چطوره؟" } },
-        { "speakerId": "tom", "text": { "de": "Gut, danke! Ich bin heute sehr glücklich.", "fa": "خوبم، ممنون! من امروز خیلی خوشحالم." } },
-        { "speakerId": "eli", "text": { "de": "Das ist schön! Hast du Zeit?", "fa": "چه خوب! وقت داری؟" } },
-        { "speakerId": "tom", "text": { "de": "Ja, ich habe Zeit. Und du?", "fa": "آره، وقت دارم. تو چی؟" } },
-        { "speakerId": "eli", "text": { "de": "Ich habe auch Zeit. Bist du hungrig?", "fa": "من هم وقت دارم. گرسنه‌ای؟" } },
-        { "speakerId": "tom", "text": { "de": "Ja, ich bin sehr hungrig!", "fa": "آره، خیلی گرسنه‌ام!" } }
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Hallo Tom! Wie geht's?",
+            "fa": "سلام تام! حالت چطوره؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Gut, danke! Ich bin heute sehr glücklich.",
+            "fa": "خوبم، ممنون! من امروز خیلی خوشحالم."
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Das ist schön! Hast du Zeit?",
+            "fa": "چه خوب! وقت داری؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Ja, ich habe Zeit. Und du?",
+            "fa": "آره، وقت دارم. تو چی؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Ich habe auch Zeit. Bist du hungrig?",
+            "fa": "من هم وقت دارم. گرسنه‌ای؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Ja, ich bin sehr hungrig!",
+            "fa": "آره، خیلی گرسنه‌ام!"
+          }
+        }
       ]
     },
     {
       "type": "multiple-choice",
       "id": "s16",
       "question": "کدام گزینه درست است؟ «Ich ___ müde.»",
-      "options": ["bist", "ist", "bin", "habe"],
+      "options": [
+        "bist",
+        "ist",
+        "bin",
+        "habe"
+      ],
       "correctAnswerIndex": 2,
       "feedback": {
         "correct": "آفرین! ich bin = من هستم",
@@ -247,7 +375,12 @@
       "type": "multiple-choice",
       "id": "s17",
       "question": "کدام گزینه درست است؟ «Du ___ ein Handy.»",
-      "options": ["habe", "hast", "hat", "bist"],
+      "options": [
+        "habe",
+        "hast",
+        "hat",
+        "bist"
+      ],
       "correctAnswerIndex": 1,
       "feedback": {
         "correct": "آفرین! du hast = تو داری",
@@ -259,8 +392,15 @@
       "id": "s18",
       "instruction": "جمله را کامل کنید",
       "sentence": "Sie {0} aus Deutschland.",
-      "options": ["bin", "bist", "ist", "hat"],
-      "correctAnswers": [2],
+      "options": [
+        "bin",
+        "bist",
+        "ist",
+        "hat"
+      ],
+      "correctAnswers": [
+        2
+      ],
       "feedback": {
         "explanation": "Sie **ist** aus Deutschland. = او از آلمان است."
       }
@@ -270,8 +410,15 @@
       "id": "s19",
       "instruction": "جمله را کامل کنید",
       "sentence": "Er {0} einen Bruder.",
-      "options": ["bin", "ist", "habe", "hat"],
-      "correctAnswers": [3],
+      "options": [
+        "bin",
+        "ist",
+        "habe",
+        "hat"
+      ],
+      "correctAnswers": [
+        3
+      ],
       "feedback": {
         "explanation": "Er **hat** einen Bruder. = او یک برادر دارد."
       }
@@ -282,11 +429,36 @@
       "title": "sein یا haben?",
       "instruction": "فعل درست را انتخاب کنید",
       "questions": [
-        { "prompt": "Ich ___ glücklich.", "left": "bin", "right": "habe", "correctSide": "left" },
-        { "prompt": "Du ___ Zeit.", "left": "bist", "right": "hast", "correctSide": "right" },
-        { "prompt": "Er ___ Student.", "left": "ist", "right": "hat", "correctSide": "left" },
-        { "prompt": "Sie ___ ein Auto.", "left": "ist", "right": "hat", "correctSide": "right" },
-        { "prompt": "Ich ___ Hunger.", "left": "bin", "right": "habe", "correctSide": "right" }
+        {
+          "prompt": "Ich ___ glücklich.",
+          "left": "bin",
+          "right": "habe",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Du ___ Zeit.",
+          "left": "bist",
+          "right": "hast",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Er ___ Student.",
+          "left": "ist",
+          "right": "hat",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Sie ___ ein Auto.",
+          "left": "ist",
+          "right": "hat",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Ich ___ Hunger.",
+          "left": "bin",
+          "right": "habe",
+          "correctSide": "right"
+        }
       ]
     },
     {
@@ -314,8 +486,14 @@
       "title": "نکته مهم: haben برای احساسات",
       "content": "در آلمانی برای بعضی احساسات از **haben** استفاده می‌کنیم (نه sein):\n\n| آلمانی | فارسی |\n|------|------|\n| Ich **habe** Hunger. | من گرسنه‌ام. |\n| Ich **habe** Durst. | من تشنه‌ام. |\n| Ich **habe** Angst. | من می‌ترسم. |\n\nدر فارسی: «گرسنه **هستم**»\nدر آلمانی: «گرسنگی **دارم**»",
       "examples": [
-        { "de": "Hast du Hunger?", "fa": "گرسنه‌ای؟" },
-        { "de": "Ich habe Durst.", "fa": "تشنه‌ام." }
+        {
+          "de": "Hast du Hunger?",
+          "fa": "گرسنه‌ای؟"
+        },
+        {
+          "de": "Ich habe Durst.",
+          "fa": "تشنه‌ام."
+        }
       ]
     },
     {
@@ -324,16 +502,46 @@
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [
-        { "de": "sein", "fa": "بودن" },
-        { "de": "ich bin", "fa": "من هستم" },
-        { "de": "du bist", "fa": "تو هستی" },
-        { "de": "er ist", "fa": "او (مرد) هست" },
-        { "de": "sie ist", "fa": "او (زن) هست" },
-        { "de": "haben", "fa": "داشتن" },
-        { "de": "ich habe", "fa": "من دارم" },
-        { "de": "du hast", "fa": "تو داری" },
-        { "de": "er hat", "fa": "او (مرد) دارد" },
-        { "de": "sie hat", "fa": "او (زن) دارد" }
+        {
+          "de": "sein",
+          "fa": "بودن"
+        },
+        {
+          "de": "ich bin",
+          "fa": "من هستم"
+        },
+        {
+          "de": "du bist",
+          "fa": "تو هستی"
+        },
+        {
+          "de": "er ist",
+          "fa": "او (مرد) هست"
+        },
+        {
+          "de": "sie ist",
+          "fa": "او (زن) هست"
+        },
+        {
+          "de": "haben",
+          "fa": "داشتن"
+        },
+        {
+          "de": "ich habe",
+          "fa": "من دارم"
+        },
+        {
+          "de": "du hast",
+          "fa": "تو داری"
+        },
+        {
+          "de": "er hat",
+          "fa": "او (مرد) دارد"
+        },
+        {
+          "de": "sie hat",
+          "fa": "او (زن) دارد"
+        }
       ]
     },
     {
@@ -344,16 +552,66 @@
       "xpEarned": 50,
       "nextLessonId": "A1-M02-L02",
       "vocabularyLearned": [
-        { "word": { "de": "sein", "fa": "بودن" } },
-        { "word": { "de": "ich bin", "fa": "من هستم" } },
-        { "word": { "de": "du bist", "fa": "تو هستی" } },
-        { "word": { "de": "er ist", "fa": "او (مرد) هست" } },
-        { "word": { "de": "sie ist", "fa": "او (زن) هست" } },
-        { "word": { "de": "haben", "fa": "داشتن" } },
-        { "word": { "de": "ich habe", "fa": "من دارم" } },
-        { "word": { "de": "du hast", "fa": "تو داری" } },
-        { "word": { "de": "er hat", "fa": "او (مرد) دارد" } },
-        { "word": { "de": "sie hat", "fa": "او (زن) دارد" } }
+        {
+          "word": {
+            "de": "sein",
+            "fa": "بودن"
+          }
+        },
+        {
+          "word": {
+            "de": "ich bin",
+            "fa": "من هستم"
+          }
+        },
+        {
+          "word": {
+            "de": "du bist",
+            "fa": "تو هستی"
+          }
+        },
+        {
+          "word": {
+            "de": "er ist",
+            "fa": "او (مرد) هست"
+          }
+        },
+        {
+          "word": {
+            "de": "sie ist",
+            "fa": "او (زن) هست"
+          }
+        },
+        {
+          "word": {
+            "de": "haben",
+            "fa": "داشتن"
+          }
+        },
+        {
+          "word": {
+            "de": "ich habe",
+            "fa": "من دارم"
+          }
+        },
+        {
+          "word": {
+            "de": "du hast",
+            "fa": "تو داری"
+          }
+        },
+        {
+          "word": {
+            "de": "er hat",
+            "fa": "او (مرد) دارد"
+          }
+        },
+        {
+          "word": {
+            "de": "sie hat",
+            "fa": "او (زن) دارد"
+          }
+        }
       ]
     }
   ]

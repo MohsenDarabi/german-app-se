@@ -1,5 +1,14 @@
 {
   "id": "A1-M06-L04",
+  "languagePair": "de-fa",
+  "source": {
+    "code": "de",
+    "name": "Deutsch"
+  },
+  "target": {
+    "code": "fa",
+    "name": "فارسی"
+  },
   "title": {
     "de": "Tagesablauf",
     "fa": "برنامه روزانه"
@@ -10,7 +19,6 @@
   "lessonNumber": 4,
   "totalSteps": 26,
   "estimatedMinutes": 15,
-  "charactersInLesson": ["alex", "eli", "lisa", "tom"],
   "steps": [
     {
       "type": "grammar-tip",
@@ -18,8 +26,14 @@
       "title": "بخش‌های روز",
       "content": "در آلمانی روز به چند بخش تقسیم می‌شود:\n\n• **der Morgen** = صبح\n• **der Vormittag** = قبل از ظهر\n• **der Mittag** = ظهر\n• **der Nachmittag** = بعد از ظهر\n• **der Abend** = عصر/شب\n• **die Nacht** = شب\n\n📝 **توجه:** همه مذکر هستند، جز Nacht!",
       "examples": [
-        { "de": "Am Morgen trinke ich Kaffee.", "fa": "صبح قهوه می‌خورم." },
-        { "de": "Am Abend sehe ich fern.", "fa": "شب تلویزیون می‌بینم." }
+        {
+          "de": "Am Morgen trinke ich Kaffee.",
+          "fa": "صبح قهوه می‌خورم."
+        },
+        {
+          "de": "Am Abend sehe ich fern.",
+          "fa": "شب تلویزیون می‌بینم."
+        }
       ]
     },
     {
@@ -70,8 +84,14 @@
       "title": "فعل‌های جداشدنی",
       "content": "بعضی فعل‌ها **جداشدنی** هستند:\n\n**aufstehen** = بیدار شدن\nIch **stehe** um 7 Uhr **auf**.\n\n**fernsehen** = تلویزیون دیدن\nIch **sehe** abends **fern**.\n\n📝 **قاعده:** پیشوند به آخر جمله می‌رود!",
       "examples": [
-        { "de": "Ich stehe früh auf.", "fa": "زود بیدار می‌شوم." },
-        { "de": "Wann stehst du auf?", "fa": "کی بیدار می‌شوی؟" }
+        {
+          "de": "Ich stehe früh auf.",
+          "fa": "زود بیدار می‌شوم."
+        },
+        {
+          "de": "Wann stehst du auf?",
+          "fa": "کی بیدار می‌شوی؟"
+        }
       ]
     },
     {
@@ -80,11 +100,36 @@
       "title": "بخش‌های روز",
       "instruction": "این چه زمانی از روز است؟",
       "questions": [
-        { "prompt": "7:00 Uhr", "left": "Morgen", "right": "Abend", "correctSide": "left" },
-        { "prompt": "20:00 Uhr", "left": "Morgen", "right": "Abend", "correctSide": "right" },
-        { "prompt": "12:00 Uhr", "left": "Mittag", "right": "Nacht", "correctSide": "left" },
-        { "prompt": "15:00 Uhr", "left": "Vormittag", "right": "Nachmittag", "correctSide": "right" },
-        { "prompt": "10:00 Uhr", "left": "Vormittag", "right": "Nachmittag", "correctSide": "left" }
+        {
+          "prompt": "7:00 Uhr",
+          "left": "Morgen",
+          "right": "Abend",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "20:00 Uhr",
+          "left": "Morgen",
+          "right": "Abend",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "12:00 Uhr",
+          "left": "Mittag",
+          "right": "Nacht",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "15:00 Uhr",
+          "left": "Vormittag",
+          "right": "Nachmittag",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "10:00 Uhr",
+          "left": "Vormittag",
+          "right": "Nachmittag",
+          "correctSide": "left"
+        }
       ]
     },
     {
@@ -135,11 +180,41 @@
       "title": "مکالمه: برنامه روزانه",
       "context": "الی و تام درباره برنامه‌شان صحبت می‌کنند",
       "lines": [
-        { "speakerId": "tom", "text": { "de": "Wann stehst du auf?", "fa": "کی بیدار می‌شوی؟" } },
-        { "speakerId": "eli", "text": { "de": "Um halb sieben. Und du?", "fa": "شش و نیم. و تو؟" } },
-        { "speakerId": "tom", "text": { "de": "Ich stehe um sieben auf.", "fa": "من ساعت هفت بیدار می‌شوم." } },
-        { "speakerId": "eli", "text": { "de": "Was machst du am Morgen?", "fa": "صبح چیکار می‌کنی؟" } },
-        { "speakerId": "tom", "text": { "de": "Ich dusche und frühstücke.", "fa": "دوش می‌گیرم و صبحانه می‌خورم." } }
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Wann stehst du auf?",
+            "fa": "کی بیدار می‌شوی؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Um halb sieben. Und du?",
+            "fa": "شش و نیم. و تو؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Ich stehe um sieben auf.",
+            "fa": "من ساعت هفت بیدار می‌شوم."
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Was machst du am Morgen?",
+            "fa": "صبح چیکار می‌کنی؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Ich dusche und frühstücke.",
+            "fa": "دوش می‌گیرم و صبحانه می‌خورم."
+          }
+        }
       ]
     },
     {
@@ -161,8 +236,15 @@
       "id": "s11",
       "instruction": "جمله را کامل کنید",
       "sentence": "Ich {0} um 7 Uhr auf.",
-      "options": ["stehe", "schlafe", "arbeite", "esse"],
-      "correctAnswers": [0],
+      "options": [
+        "stehe",
+        "schlafe",
+        "arbeite",
+        "esse"
+      ],
+      "correctAnswers": [
+        0
+      ],
       "feedback": {
         "explanation": "Ich **stehe** um 7 Uhr **auf**. (aufstehen = بیدار شدن)"
       }
@@ -172,8 +254,15 @@
       "id": "s12",
       "instruction": "جای خالی را پر کنید",
       "sentence": "{0} Morgen trinke ich Kaffee.",
-      "options": ["Am", "Im", "Um", "An"],
-      "correctAnswers": [0],
+      "options": [
+        "Am",
+        "Im",
+        "Um",
+        "An"
+      ],
+      "correctAnswers": [
+        0
+      ],
       "feedback": {
         "explanation": "**Am** Morgen = صبح (am برای بخش‌های روز)"
       }
@@ -212,8 +301,14 @@
       "title": "von... bis...",
       "content": "برای بیان بازه زمانی:\n\n**von** ... **bis** = از... تا...\n\n• Ich arbeite **von** 9 **bis** 17 Uhr.\n• Der Laden ist **von** Montag **bis** Samstag offen.",
       "examples": [
-        { "de": "Ich schlafe von 23 bis 7 Uhr.", "fa": "از ۲۳ تا ۷ می‌خوابم." },
-        { "de": "Von 12 bis 13 Uhr habe ich Pause.", "fa": "از ۱۲ تا ۱۳ استراحت دارم." }
+        {
+          "de": "Ich schlafe von 23 bis 7 Uhr.",
+          "fa": "از ۲۳ تا ۷ می‌خوابم."
+        },
+        {
+          "de": "Von 12 bis 13 Uhr habe ich Pause.",
+          "fa": "از ۱۲ تا ۱۳ استراحت دارم."
+        }
       ]
     },
     {
@@ -222,11 +317,36 @@
       "title": "فعل درست",
       "instruction": "کدام فعل مناسب است؟",
       "questions": [
-        { "prompt": "صبح: ___ (بیدار شدن)", "left": "aufstehen", "right": "schlafen", "correctSide": "left" },
-        { "prompt": "شب: ___ (خوابیدن)", "left": "aufstehen", "right": "schlafen", "correctSide": "right" },
-        { "prompt": "صبح: ___ (صبحانه)", "left": "frühstücken", "right": "arbeiten", "correctSide": "left" },
-        { "prompt": "ظهر: ___ (ناهار)", "left": "Abendessen", "right": "Mittagessen", "correctSide": "right" },
-        { "prompt": "حمام: ___", "left": "duschen", "right": "essen", "correctSide": "left" }
+        {
+          "prompt": "صبح: ___ (بیدار شدن)",
+          "left": "aufstehen",
+          "right": "schlafen",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "شب: ___ (خوابیدن)",
+          "left": "aufstehen",
+          "right": "schlafen",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "صبح: ___ (صبحانه)",
+          "left": "frühstücken",
+          "right": "arbeiten",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "ظهر: ___ (ناهار)",
+          "left": "Abendessen",
+          "right": "Mittagessen",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "حمام: ___",
+          "left": "duschen",
+          "right": "essen",
+          "correctSide": "left"
+        }
       ]
     },
     {
@@ -235,11 +355,41 @@
       "title": "مکالمه: روز کاری",
       "context": "لیزا و الکس درباره کار صحبت می‌کنند",
       "lines": [
-        { "speakerId": "lisa", "text": { "de": "Von wann bis wann arbeitest du?", "fa": "از چند تا چند کار می‌کنی؟" } },
-        { "speakerId": "alex", "text": { "de": "Von 8 bis 16 Uhr.", "fa": "از ۸ تا ۱۶." } },
-        { "speakerId": "lisa", "text": { "de": "Das ist früh!", "fa": "زوده!" } },
-        { "speakerId": "alex", "text": { "de": "Ja, aber ich habe früh Feierabend.", "fa": "بله، ولی زود تعطیل می‌شم." } },
-        { "speakerId": "lisa", "text": { "de": "Was machst du am Abend?", "fa": "شب چیکار می‌کنی؟" } }
+        {
+          "speaker": "Lisa",
+          "text": {
+            "de": "Von wann bis wann arbeitest du?",
+            "fa": "از چند تا چند کار می‌کنی؟"
+          }
+        },
+        {
+          "speaker": "Alex",
+          "text": {
+            "de": "Von 8 bis 16 Uhr.",
+            "fa": "از ۸ تا ۱۶."
+          }
+        },
+        {
+          "speaker": "Lisa",
+          "text": {
+            "de": "Das ist früh!",
+            "fa": "زوده!"
+          }
+        },
+        {
+          "speaker": "Alex",
+          "text": {
+            "de": "Ja, aber ich habe früh Feierabend.",
+            "fa": "بله، ولی زود تعطیل می‌شم."
+          }
+        },
+        {
+          "speaker": "Lisa",
+          "text": {
+            "de": "Was machst du am Abend?",
+            "fa": "شب چیکار می‌کنی؟"
+          }
+        }
       ]
     },
     {
@@ -261,26 +411,58 @@
       "id": "s18",
       "instruction": "فعالیت را با زمان جفت کنید",
       "items": [
-        { "id": "i1", "text": "aufstehen" },
-        { "id": "i2", "text": "Mittagessen" },
-        { "id": "i3", "text": "schlafen" }
+        {
+          "id": "i1",
+          "text": "aufstehen"
+        },
+        {
+          "id": "i2",
+          "text": "Mittagessen"
+        },
+        {
+          "id": "i3",
+          "text": "schlafen"
+        }
       ],
       "matches": [
-        { "id": "m1", "text": "am Morgen" },
-        { "id": "m2", "text": "um 12 Uhr" },
-        { "id": "m3", "text": "in der Nacht" }
+        {
+          "id": "m1",
+          "text": "am Morgen"
+        },
+        {
+          "id": "m2",
+          "text": "um 12 Uhr"
+        },
+        {
+          "id": "m3",
+          "text": "in der Nacht"
+        }
       ],
       "correctPairs": [
-        ["i1", "m1"],
-        ["i2", "m2"],
-        ["i3", "m3"]
+        [
+          "i1",
+          "m1"
+        ],
+        [
+          "i2",
+          "m2"
+        ],
+        [
+          "i3",
+          "m3"
+        ]
       ]
     },
     {
       "type": "multiple-choice",
       "id": "s19",
       "question": "فعل aufstehen چطور جدا می‌شود؟",
-      "options": ["Ich aufstehe.", "Ich stehe auf.", "Ich stehe aufn.", "Ich auf stehe."],
+      "options": [
+        "Ich aufstehe.",
+        "Ich stehe auf.",
+        "Ich stehe aufn.",
+        "Ich auf stehe."
+      ],
       "correctAnswerIndex": 1,
       "feedback": {
         "correct": "آفرین! Ich stehe auf. - پیشوند به آخر می‌رود!",
@@ -293,11 +475,36 @@
       "title": "مرور کلی",
       "instruction": "ترجمه درست را انتخاب کنید",
       "questions": [
-        { "prompt": "صبح =", "left": "der Morgen", "right": "der Abend", "correctSide": "left" },
-        { "prompt": "شب =", "left": "der Morgen", "right": "der Abend", "correctSide": "right" },
-        { "prompt": "بیدار شدن =", "left": "aufstehen", "right": "schlafen", "correctSide": "left" },
-        { "prompt": "ناهار =", "left": "Frühstück", "right": "Mittagessen", "correctSide": "right" },
-        { "prompt": "دوش گرفتن =", "left": "duschen", "right": "arbeiten", "correctSide": "left" }
+        {
+          "prompt": "صبح =",
+          "left": "der Morgen",
+          "right": "der Abend",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "شب =",
+          "left": "der Morgen",
+          "right": "der Abend",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "بیدار شدن =",
+          "left": "aufstehen",
+          "right": "schlafen",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "ناهار =",
+          "left": "Frühstück",
+          "right": "Mittagessen",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "دوش گرفتن =",
+          "left": "duschen",
+          "right": "arbeiten",
+          "correctSide": "left"
+        }
       ]
     },
     {
@@ -306,16 +513,46 @@
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [
-        { "de": "der Morgen", "fa": "صبح" },
-        { "de": "der Abend", "fa": "عصر/شب" },
-        { "de": "aufstehen", "fa": "بیدار شدن" },
-        { "de": "frühstücken", "fa": "صبحانه خوردن" },
-        { "de": "arbeiten", "fa": "کار کردن" },
-        { "de": "duschen", "fa": "دوش گرفتن" },
-        { "de": "schlafen", "fa": "خوابیدن" },
-        { "de": "fernsehen", "fa": "تلویزیون دیدن" },
-        { "de": "das Mittagessen", "fa": "ناهار" },
-        { "de": "das Abendessen", "fa": "شام" }
+        {
+          "de": "der Morgen",
+          "fa": "صبح"
+        },
+        {
+          "de": "der Abend",
+          "fa": "عصر/شب"
+        },
+        {
+          "de": "aufstehen",
+          "fa": "بیدار شدن"
+        },
+        {
+          "de": "frühstücken",
+          "fa": "صبحانه خوردن"
+        },
+        {
+          "de": "arbeiten",
+          "fa": "کار کردن"
+        },
+        {
+          "de": "duschen",
+          "fa": "دوش گرفتن"
+        },
+        {
+          "de": "schlafen",
+          "fa": "خوابیدن"
+        },
+        {
+          "de": "fernsehen",
+          "fa": "تلویزیون دیدن"
+        },
+        {
+          "de": "das Mittagessen",
+          "fa": "ناهار"
+        },
+        {
+          "de": "das Abendessen",
+          "fa": "شام"
+        }
       ]
     },
     {
@@ -326,16 +563,66 @@
       "xpEarned": 50,
       "nextLessonId": "A1-M07-L01",
       "vocabularyLearned": [
-        { "word": { "de": "der Morgen", "fa": "صبح" } },
-        { "word": { "de": "der Abend", "fa": "عصر/شب" } },
-        { "word": { "de": "aufstehen", "fa": "بیدار شدن" } },
-        { "word": { "de": "frühstücken", "fa": "صبحانه خوردن" } },
-        { "word": { "de": "arbeiten", "fa": "کار کردن" } },
-        { "word": { "de": "duschen", "fa": "دوش گرفتن" } },
-        { "word": { "de": "schlafen", "fa": "خوابیدن" } },
-        { "word": { "de": "fernsehen", "fa": "تلویزیون دیدن" } },
-        { "word": { "de": "das Mittagessen", "fa": "ناهار" } },
-        { "word": { "de": "das Abendessen", "fa": "شام" } }
+        {
+          "word": {
+            "de": "der Morgen",
+            "fa": "صبح"
+          }
+        },
+        {
+          "word": {
+            "de": "der Abend",
+            "fa": "عصر/شب"
+          }
+        },
+        {
+          "word": {
+            "de": "aufstehen",
+            "fa": "بیدار شدن"
+          }
+        },
+        {
+          "word": {
+            "de": "frühstücken",
+            "fa": "صبحانه خوردن"
+          }
+        },
+        {
+          "word": {
+            "de": "arbeiten",
+            "fa": "کار کردن"
+          }
+        },
+        {
+          "word": {
+            "de": "duschen",
+            "fa": "دوش گرفتن"
+          }
+        },
+        {
+          "word": {
+            "de": "schlafen",
+            "fa": "خوابیدن"
+          }
+        },
+        {
+          "word": {
+            "de": "fernsehen",
+            "fa": "تلویزیون دیدن"
+          }
+        },
+        {
+          "word": {
+            "de": "das Mittagessen",
+            "fa": "ناهار"
+          }
+        },
+        {
+          "word": {
+            "de": "das Abendessen",
+            "fa": "شام"
+          }
+        }
       ]
     }
   ]

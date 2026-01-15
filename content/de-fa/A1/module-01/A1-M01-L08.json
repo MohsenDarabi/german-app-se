@@ -1,5 +1,14 @@
 {
   "id": "A1-M01-L08",
+  "languagePair": "de-fa",
+  "source": {
+    "code": "de",
+    "name": "Deutsch"
+  },
+  "target": {
+    "code": "fa",
+    "name": "فارسی"
+  },
   "title": {
     "de": "Zahlen 11-20",
     "fa": "اعداد ۱۱ تا ۲۰"
@@ -10,7 +19,6 @@
   "lessonNumber": 8,
   "totalSteps": 22,
   "estimatedMinutes": 15,
-  "charactersInLesson": ["alex", "verkäufer"],
   "steps": [
     {
       "type": "new-word",
@@ -74,8 +82,14 @@
       "title": "الگوی اعداد ۱۳ تا ۱۹",
       "content": "در آلمانی، اعداد ۱۳ تا ۱۹ از ترکیب عدد یکان + zehn ساخته می‌شوند:\n\n**drei** + **zehn** = dreizehn (۱۳)\n**vier** + **zehn** = vierzehn (۱۴)\n\nاما ۱۱ و ۱۲ استثنا هستند و الگوی خاص خود را دارند.",
       "examples": [
-        { "de": "elf", "fa": "۱۱ - یازده (استثنا)" },
-        { "de": "zwölf", "fa": "۱۲ - دوازده (استثنا)" }
+        {
+          "de": "elf",
+          "fa": "۱۱ - یازده (استثنا)"
+        },
+        {
+          "de": "zwölf",
+          "fa": "۱۲ - دوازده (استثنا)"
+        }
       ]
     },
     {
@@ -84,11 +98,36 @@
       "title": "سریع پاسخ بده!",
       "instruction": "عدد درست را انتخاب کنید",
       "questions": [
-        { "prompt": "elf", "left": "۱۱", "right": "۱۲", "correctSide": "left" },
-        { "prompt": "zwölf", "left": "۱۱", "right": "۱۲", "correctSide": "right" },
-        { "prompt": "dreizehn", "left": "۱۳", "right": "۱۴", "correctSide": "left" },
-        { "prompt": "vierzehn", "left": "۱۵", "right": "۱۴", "correctSide": "right" },
-        { "prompt": "elf", "left": "۱۰", "right": "۱۱", "correctSide": "right" }
+        {
+          "prompt": "elf",
+          "left": "۱۱",
+          "right": "۱۲",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "zwölf",
+          "left": "۱۱",
+          "right": "۱۲",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "dreizehn",
+          "left": "۱۳",
+          "right": "۱۴",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "vierzehn",
+          "left": "۱۵",
+          "right": "۱۴",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "elf",
+          "left": "۱۰",
+          "right": "۱۱",
+          "correctSide": "right"
+        }
       ]
     },
     {
@@ -152,22 +191,58 @@
       "id": "s10",
       "instruction": "اعداد را با معنی فارسی جفت کنید",
       "items": [
-        { "id": "i1", "text": "fünfzehn" },
-        { "id": "i2", "text": "sechzehn" },
-        { "id": "i3", "text": "siebzehn" },
-        { "id": "i4", "text": "achtzehn" }
+        {
+          "id": "i1",
+          "text": "fünfzehn"
+        },
+        {
+          "id": "i2",
+          "text": "sechzehn"
+        },
+        {
+          "id": "i3",
+          "text": "siebzehn"
+        },
+        {
+          "id": "i4",
+          "text": "achtzehn"
+        }
       ],
       "matches": [
-        { "id": "m1", "text": "۱۵" },
-        { "id": "m2", "text": "۱۶" },
-        { "id": "m3", "text": "۱۷" },
-        { "id": "m4", "text": "۱۸" }
+        {
+          "id": "m1",
+          "text": "۱۵"
+        },
+        {
+          "id": "m2",
+          "text": "۱۶"
+        },
+        {
+          "id": "m3",
+          "text": "۱۷"
+        },
+        {
+          "id": "m4",
+          "text": "۱۸"
+        }
       ],
       "correctPairs": [
-        ["i1", "m1"],
-        ["i2", "m2"],
-        ["i3", "m3"],
-        ["i4", "m4"]
+        [
+          "i1",
+          "m1"
+        ],
+        [
+          "i2",
+          "m2"
+        ],
+        [
+          "i3",
+          "m3"
+        ],
+        [
+          "i4",
+          "m4"
+        ]
       ]
     },
     {
@@ -204,15 +279,26 @@
       "title": "شمردن از ۱۱ تا ۲۰",
       "content": "اعداد ۱۱ تا ۲۰ در آلمانی:\n\n| عدد | آلمانی |\n|-----|--------|\n| ۱۱ | elf |\n| ۱۲ | zwölf |\n| ۱۳ | dreizehn |\n| ۱۴ | vierzehn |\n| ۱۵ | fünfzehn |\n| ۱۶ | sechzehn |\n| ۱۷ | siebzehn |\n| ۱۸ | achtzehn |\n| ۱۹ | neunzehn |\n| ۲۰ | zwanzig |",
       "examples": [
-        { "de": "Elf, zwölf, dreizehn!", "fa": "یازده، دوازده، سیزده!" },
-        { "de": "Achtzehn, neunzehn, zwanzig!", "fa": "هجده، نوزده، بیست!" }
+        {
+          "de": "Elf, zwölf, dreizehn!",
+          "fa": "یازده، دوازده، سیزده!"
+        },
+        {
+          "de": "Achtzehn, neunzehn, zwanzig!",
+          "fa": "هجده، نوزده، بیست!"
+        }
       ]
     },
     {
       "type": "multiple-choice",
       "id": "s14",
       "question": "عدد «هفده» به آلمانی چیست؟",
-      "options": ["sechzehn", "siebzehn", "achtzehn", "neunzehn"],
+      "options": [
+        "sechzehn",
+        "siebzehn",
+        "achtzehn",
+        "neunzehn"
+      ],
       "correctAnswerIndex": 1,
       "feedback": {
         "correct": "آفرین! هفده = siebzehn",
@@ -223,7 +309,12 @@
       "type": "multiple-choice",
       "id": "s15",
       "question": "کلمه «zwanzig» یعنی چه؟",
-      "options": ["هجده", "نوزده", "بیست", "بیست و یک"],
+      "options": [
+        "هجده",
+        "نوزده",
+        "بیست",
+        "بیست و یک"
+      ],
       "correctAnswerIndex": 2,
       "feedback": {
         "correct": "آفرین! zwanzig = بیست",
@@ -236,10 +327,34 @@
       "title": "مکالمه: قیمت چنده؟",
       "context": "الکس در فروشگاه است",
       "lines": [
-        { "speakerId": "alex", "text": { "de": "Was kostet das Buch?", "fa": "این کتاب چند است؟" } },
-        { "speakerId": "verkäufer", "text": { "de": "Das kostet fünfzehn Euro.", "fa": "این پانزده یورو است." } },
-        { "speakerId": "alex", "text": { "de": "Und das Heft?", "fa": "و این دفتر؟" } },
-        { "speakerId": "verkäufer", "text": { "de": "Drei Euro. Zusammen achtzehn Euro.", "fa": "سه یورو. روی هم هجده یورو." } }
+        {
+          "speaker": "Alex",
+          "text": {
+            "de": "Was kostet das Buch?",
+            "fa": "این کتاب چند است؟"
+          }
+        },
+        {
+          "speaker": "Verkäufer",
+          "text": {
+            "de": "Das kostet fünfzehn Euro.",
+            "fa": "این پانزده یورو است."
+          }
+        },
+        {
+          "speaker": "Alex",
+          "text": {
+            "de": "Und das Heft?",
+            "fa": "و این دفتر؟"
+          }
+        },
+        {
+          "speaker": "Verkäufer",
+          "text": {
+            "de": "Drei Euro. Zusammen achtzehn Euro.",
+            "fa": "سه یورو. روی هم هجده یورو."
+          }
+        }
       ]
     },
     {
@@ -247,8 +362,16 @@
       "id": "s17",
       "instruction": "جمله را کامل کنید",
       "sentence": "Zehn, elf, {0}, dreizehn, {1}, fünfzehn.",
-      "options": ["zwölf", "vierzehn", "sechzehn", "achtzehn"],
-      "correctAnswers": [0, 1],
+      "options": [
+        "zwölf",
+        "vierzehn",
+        "sechzehn",
+        "achtzehn"
+      ],
+      "correctAnswers": [
+        0,
+        1
+      ],
       "feedback": {
         "explanation": "ترتیب اعداد: zehn (۱۰), elf (۱۱), **zwölf** (۱۲), dreizehn (۱۳), **vierzehn** (۱۴), fünfzehn (۱۵)"
       }
@@ -259,12 +382,42 @@
       "title": "همه اعداد ۱۱-۲۰!",
       "instruction": "عدد درست را سریع انتخاب کنید",
       "questions": [
-        { "prompt": "neunzehn", "left": "۱۹", "right": "۱۸", "correctSide": "left" },
-        { "prompt": "zwanzig", "left": "۱۹", "right": "۲۰", "correctSide": "right" },
-        { "prompt": "fünfzehn", "left": "۱۵", "right": "۱۴", "correctSide": "left" },
-        { "prompt": "achtzehn", "left": "۱۷", "right": "۱۸", "correctSide": "right" },
-        { "prompt": "sechzehn", "left": "۱۶", "right": "۱۷", "correctSide": "left" },
-        { "prompt": "siebzehn", "left": "۱۸", "right": "۱۷", "correctSide": "right" }
+        {
+          "prompt": "neunzehn",
+          "left": "۱۹",
+          "right": "۱۸",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "zwanzig",
+          "left": "۱۹",
+          "right": "۲۰",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "fünfzehn",
+          "left": "۱۵",
+          "right": "۱۴",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "achtzehn",
+          "left": "۱۷",
+          "right": "۱۸",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "sechzehn",
+          "left": "۱۶",
+          "right": "۱۷",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "siebzehn",
+          "left": "۱۸",
+          "right": "۱۷",
+          "correctSide": "right"
+        }
       ]
     },
     {
@@ -292,16 +445,46 @@
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [
-        { "de": "elf", "fa": "یازده (۱۱)" },
-        { "de": "zwölf", "fa": "دوازده (۱۲)" },
-        { "de": "dreizehn", "fa": "سیزده (۱۳)" },
-        { "de": "vierzehn", "fa": "چهارده (۱۴)" },
-        { "de": "fünfzehn", "fa": "پانزده (۱۵)" },
-        { "de": "sechzehn", "fa": "شانزده (۱۶)" },
-        { "de": "siebzehn", "fa": "هفده (۱۷)" },
-        { "de": "achtzehn", "fa": "هجده (۱۸)" },
-        { "de": "neunzehn", "fa": "نوزده (۱۹)" },
-        { "de": "zwanzig", "fa": "بیست (۲۰)" }
+        {
+          "de": "elf",
+          "fa": "یازده (۱۱)"
+        },
+        {
+          "de": "zwölf",
+          "fa": "دوازده (۱۲)"
+        },
+        {
+          "de": "dreizehn",
+          "fa": "سیزده (۱۳)"
+        },
+        {
+          "de": "vierzehn",
+          "fa": "چهارده (۱۴)"
+        },
+        {
+          "de": "fünfzehn",
+          "fa": "پانزده (۱۵)"
+        },
+        {
+          "de": "sechzehn",
+          "fa": "شانزده (۱۶)"
+        },
+        {
+          "de": "siebzehn",
+          "fa": "هفده (۱۷)"
+        },
+        {
+          "de": "achtzehn",
+          "fa": "هجده (۱۸)"
+        },
+        {
+          "de": "neunzehn",
+          "fa": "نوزده (۱۹)"
+        },
+        {
+          "de": "zwanzig",
+          "fa": "بیست (۲۰)"
+        }
       ]
     },
     {
@@ -312,16 +495,66 @@
       "xpEarned": 50,
       "nextLessonId": "A1-M01-L09",
       "vocabularyLearned": [
-        { "word": { "de": "elf", "fa": "یازده (۱۱)" } },
-        { "word": { "de": "zwölf", "fa": "دوازده (۱۲)" } },
-        { "word": { "de": "dreizehn", "fa": "سیزده (۱۳)" } },
-        { "word": { "de": "vierzehn", "fa": "چهارده (۱۴)" } },
-        { "word": { "de": "fünfzehn", "fa": "پانزده (۱۵)" } },
-        { "word": { "de": "sechzehn", "fa": "شانزده (۱۶)" } },
-        { "word": { "de": "siebzehn", "fa": "هفده (۱۷)" } },
-        { "word": { "de": "achtzehn", "fa": "هجده (۱۸)" } },
-        { "word": { "de": "neunzehn", "fa": "نوزده (۱۹)" } },
-        { "word": { "de": "zwanzig", "fa": "بیست (۲۰)" } }
+        {
+          "word": {
+            "de": "elf",
+            "fa": "یازده (۱۱)"
+          }
+        },
+        {
+          "word": {
+            "de": "zwölf",
+            "fa": "دوازده (۱۲)"
+          }
+        },
+        {
+          "word": {
+            "de": "dreizehn",
+            "fa": "سیزده (۱۳)"
+          }
+        },
+        {
+          "word": {
+            "de": "vierzehn",
+            "fa": "چهارده (۱۴)"
+          }
+        },
+        {
+          "word": {
+            "de": "fünfzehn",
+            "fa": "پانزده (۱۵)"
+          }
+        },
+        {
+          "word": {
+            "de": "sechzehn",
+            "fa": "شانزده (۱۶)"
+          }
+        },
+        {
+          "word": {
+            "de": "siebzehn",
+            "fa": "هفده (۱۷)"
+          }
+        },
+        {
+          "word": {
+            "de": "achtzehn",
+            "fa": "هجده (۱۸)"
+          }
+        },
+        {
+          "word": {
+            "de": "neunzehn",
+            "fa": "نوزده (۱۹)"
+          }
+        },
+        {
+          "word": {
+            "de": "zwanzig",
+            "fa": "بیست (۲۰)"
+          }
+        }
       ]
     }
   ]

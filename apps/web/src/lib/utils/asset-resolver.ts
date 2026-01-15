@@ -3,10 +3,12 @@
  *
  * Resolves asset IDs to file paths and provides asset information.
  * Used for reusable multimedia assets across lessons.
+ * Supports CDN-based delivery via assetService.
  */
 
 // Import registry from scripts (will be copied to lib/data in build)
 import registry from '../data/asset-registry.json';
+import { getImageUrl, isCdnEnabled } from '$lib/services/assetService';
 
 export interface AssetUsage {
   lessonId: string;
@@ -48,13 +50,20 @@ export interface AssetRegistry {
 const typedRegistry = registry as AssetRegistry;
 
 /**
- * Resolve an asset ID to its file path
+ * Resolve an asset ID to its file path or CDN URL
  * @param assetId - The unique asset identifier
- * @returns The asset path or null if not found
+ * @returns The asset path/URL or null if not found
  */
 export function resolveAsset(assetId: string): string | null {
   const asset = typedRegistry.assets[assetId];
-  return asset?.path ?? null;
+  if (!asset?.path) return null;
+
+  // Use CDN URL if available
+  if (isCdnEnabled()) {
+    return getImageUrl(assetId);
+  }
+
+  return asset.path;
 }
 
 /**
@@ -143,15 +152,22 @@ export function getRegistryStats(): {
 
 /**
  * Resolve image/video with fallback
- * Tries assetId first, then falls back to direct path
+ * Tries assetId first, then falls back to direct path.
+ * Uses CDN URLs when available.
  * @param assetIdOrPath - Either an asset ID or a direct path
- * @returns The resolved path
+ * @returns The resolved path/URL
  */
 export function resolveMedia(assetIdOrPath: string | undefined): string | null {
   if (!assetIdOrPath) return null;
 
   // If it starts with /, it's already a path
   if (assetIdOrPath.startsWith('/')) {
+    // Even for direct paths, use CDN if enabled
+    if (isCdnEnabled() && assetIdOrPath.startsWith('/images/')) {
+      // Extract asset-like ID from path for CDN lookup
+      // This is a fallback for direct paths
+      return getImageUrl(assetIdOrPath);
+    }
     return assetIdOrPath;
   }
 

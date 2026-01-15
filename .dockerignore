@@ -1,0 +1,39 @@
+# Dependencies (will be installed in container)
+node_modules
+**/node_modules
+
+# Build outputs
+**/dist
+**/.svelte-kit
+**/build
+**/.turbo
+
+# Native mobile
+apps/web/android
+apps/web/ios
+
+# IDE & OS
+.git
+.idea
+.vscode
+*.swp
+.DS_Store
+
+# Environment (will be injected)
+.env
+.env.local
+.env*.local
+
+# Logs & temp
+*.log
+npm-debug.log*
+.pnpm-debug.log*
+coverage
+
+# Test files
+**/*.test.ts
+**/*.spec.ts
+
+# Documentation
+*.md
+!README.md

@@ -1,5 +1,14 @@
 {
   "id": "A1-M04-L01",
+  "languagePair": "de-fa",
+  "source": {
+    "code": "de",
+    "name": "Deutsch"
+  },
+  "target": {
+    "code": "fa",
+    "name": "فارسی"
+  },
   "title": {
     "de": "der, die, das",
     "fa": "حروف تعریف"
@@ -10,7 +19,6 @@
   "lessonNumber": 1,
   "totalSteps": 26,
   "estimatedMinutes": 15,
-  "charactersInLesson": ["eli", "tom"],
   "steps": [
     {
       "type": "grammar-tip",
@@ -18,8 +26,14 @@
       "title": "جنسیت در آلمانی",
       "content": "در آلمانی هر اسم یک **جنس** دارد:\n\n**۱. مذکر (Maskulin):** der Mann\n**۲. مونث (Feminin):** die Frau\n**۳. خنثی (Neutrum):** das Kind\n\n🇮🇷 **نکته مهم:** در فارسی جنسیت نداریم! در آلمانی باید جنس هر کلمه را حفظ کنید.",
       "examples": [
-        { "de": "Der Mann ist groß.", "fa": "مرد بلند است." },
-        { "de": "Die Frau ist nett.", "fa": "زن مهربان است." }
+        {
+          "de": "Der Mann ist groß.",
+          "fa": "مرد بلند است."
+        },
+        {
+          "de": "Die Frau ist nett.",
+          "fa": "زن مهربان است."
+        }
       ]
     },
     {
@@ -112,8 +126,14 @@
       "title": "چطور جنس را بدانیم؟",
       "content": "بعضی قوانین کمک می‌کنند:\n\n**مذکر (der):**\n• روزها: der Montag، der Dienstag\n• ماه‌ها: der Januar، der Februar\n• فصل‌ها: der Sommer، der Winter\n\n**مونث (die):**\n• کلمات با -ung: die Zeitung\n• کلمات با -heit/-keit: die Freiheit\n\n**خنثی (das):**\n• کلمات با -chen: das Mädchen\n• کلمات با -lein: das Fräulein",
       "examples": [
-        { "de": "der Montag, der Sommer", "fa": "دوشنبه، تابستان (مذکر)" },
-        { "de": "das Mädchen", "fa": "دختر (خنثی! نه مونث)" }
+        {
+          "de": "der Montag, der Sommer",
+          "fa": "دوشنبه، تابستان (مذکر)"
+        },
+        {
+          "de": "das Mädchen",
+          "fa": "دختر (خنثی! نه مونث)"
+        }
       ]
     },
     {
@@ -122,11 +142,36 @@
       "title": "der، die یا das؟",
       "instruction": "حرف تعریف درست را انتخاب کنید",
       "questions": [
-        { "prompt": "___ Mann", "left": "der", "right": "die", "correctSide": "left" },
-        { "prompt": "___ Frau", "left": "der", "right": "die", "correctSide": "right" },
-        { "prompt": "___ Kind", "left": "die", "right": "das", "correctSide": "right" },
-        { "prompt": "___ Mädchen", "left": "die", "right": "das", "correctSide": "right" },
-        { "prompt": "___ Sommer", "left": "der", "right": "das", "correctSide": "left" }
+        {
+          "prompt": "___ Mann",
+          "left": "der",
+          "right": "die",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "___ Frau",
+          "left": "der",
+          "right": "die",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "___ Kind",
+          "left": "die",
+          "right": "das",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "___ Mädchen",
+          "left": "die",
+          "right": "das",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "___ Sommer",
+          "left": "der",
+          "right": "das",
+          "correctSide": "left"
+        }
       ]
     },
     {
@@ -177,12 +222,48 @@
       "title": "مکالمه: در اتاق",
       "context": "الی و تام درباره اشیاء اتاق صحبت می‌کنند",
       "lines": [
-        { "speakerId": "eli", "text": { "de": "Was ist das?", "fa": "این چیه؟" } },
-        { "speakerId": "tom", "text": { "de": "Das ist ein Tisch.", "fa": "این یک میز است." } },
-        { "speakerId": "eli", "text": { "de": "Und das?", "fa": "و این؟" } },
-        { "speakerId": "tom", "text": { "de": "Das ist eine Lampe.", "fa": "این یک چراغ است." } },
-        { "speakerId": "eli", "text": { "de": "Die Lampe ist schön!", "fa": "چراغ قشنگ است!" } },
-        { "speakerId": "tom", "text": { "de": "Ja, und das Buch ist auch gut.", "fa": "آره، و کتاب هم خوب است." } }
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Was ist das?",
+            "fa": "این چیه؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Das ist ein Tisch.",
+            "fa": "این یک میز است."
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Und das?",
+            "fa": "و این؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Das ist eine Lampe.",
+            "fa": "این یک چراغ است."
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Die Lampe ist schön!",
+            "fa": "چراغ قشنگ است!"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Ja, und das Buch ist auch gut.",
+            "fa": "آره، و کتاب هم خوب است."
+          }
+        }
       ]
     },
     {
@@ -232,8 +313,15 @@
       "id": "s16",
       "instruction": "حرف تعریف درست را انتخاب کنید",
       "sentence": "{0} Tisch ist braun.",
-      "options": ["Der", "Die", "Das", "Ein"],
-      "correctAnswers": [0],
+      "options": [
+        "Der",
+        "Die",
+        "Das",
+        "Ein"
+      ],
+      "correctAnswers": [
+        0
+      ],
       "feedback": {
         "explanation": "**Der** Tisch ist braun. (Tisch مذکر است)"
       }
@@ -243,8 +331,15 @@
       "id": "s17",
       "instruction": "حرف تعریف درست را انتخاب کنید",
       "sentence": "{0} Buch ist interessant.",
-      "options": ["Der", "Die", "Das", "Eine"],
-      "correctAnswers": [2],
+      "options": [
+        "Der",
+        "Die",
+        "Das",
+        "Eine"
+      ],
+      "correctAnswers": [
+        2
+      ],
       "feedback": {
         "explanation": "**Das** Buch ist interessant. (Buch خنثی است)"
       }
@@ -253,7 +348,12 @@
       "type": "multiple-choice",
       "id": "s18",
       "question": "کدام اسم مذکر (der) است؟",
-      "options": ["Frau", "Kind", "Mann", "Lampe"],
+      "options": [
+        "Frau",
+        "Kind",
+        "Mann",
+        "Lampe"
+      ],
       "correctAnswerIndex": 2,
       "feedback": {
         "correct": "آفرین! der Mann = مرد",
@@ -265,19 +365,46 @@
       "id": "s19",
       "instruction": "اسم را با حرف تعریف جفت کنید",
       "items": [
-        { "id": "i1", "text": "Tisch" },
-        { "id": "i2", "text": "Lampe" },
-        { "id": "i3", "text": "Buch" }
+        {
+          "id": "i1",
+          "text": "Tisch"
+        },
+        {
+          "id": "i2",
+          "text": "Lampe"
+        },
+        {
+          "id": "i3",
+          "text": "Buch"
+        }
       ],
       "matches": [
-        { "id": "m1", "text": "der" },
-        { "id": "m2", "text": "die" },
-        { "id": "m3", "text": "das" }
+        {
+          "id": "m1",
+          "text": "der"
+        },
+        {
+          "id": "m2",
+          "text": "die"
+        },
+        {
+          "id": "m3",
+          "text": "das"
+        }
       ],
       "correctPairs": [
-        ["i1", "m1"],
-        ["i2", "m2"],
-        ["i3", "m3"]
+        [
+          "i1",
+          "m1"
+        ],
+        [
+          "i2",
+          "m2"
+        ],
+        [
+          "i3",
+          "m3"
+        ]
       ]
     },
     {
@@ -286,11 +413,36 @@
       "title": "اشیاء اتاق",
       "instruction": "حرف تعریف درست را انتخاب کنید",
       "questions": [
-        { "prompt": "___ Stuhl", "left": "der", "right": "die", "correctSide": "left" },
-        { "prompt": "___ Tür", "left": "der", "right": "die", "correctSide": "right" },
-        { "prompt": "___ Fenster", "left": "die", "right": "das", "correctSide": "right" },
-        { "prompt": "___ Lampe", "left": "der", "right": "die", "correctSide": "right" },
-        { "prompt": "___ Buch", "left": "der", "right": "das", "correctSide": "right" }
+        {
+          "prompt": "___ Stuhl",
+          "left": "der",
+          "right": "die",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "___ Tür",
+          "left": "der",
+          "right": "die",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "___ Fenster",
+          "left": "die",
+          "right": "das",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "___ Lampe",
+          "left": "der",
+          "right": "die",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "___ Buch",
+          "left": "der",
+          "right": "das",
+          "correctSide": "right"
+        }
       ]
     },
     {
@@ -299,8 +451,14 @@
       "title": "نکته یادگیری",
       "content": "**همیشه اسم را با حرف تعریف یاد بگیرید!**\n\nنگویید: Tisch = میز\nبگویید: **der** Tisch = میز\n\n🎨 **ترفند رنگی:**\n• der = 🔵 آبی\n• die = 🔴 قرمز\n• das = 🟢 سبز\n\nوقتی کلمه جدید یاد می‌گیرید، رنگ آن را تصور کنید!",
       "examples": [
-        { "de": "der Tisch (آبی)", "fa": "میز را آبی تصور کنید" },
-        { "de": "die Lampe (قرمز)", "fa": "چراغ را قرمز تصور کنید" }
+        {
+          "de": "der Tisch (آبی)",
+          "fa": "میز را آبی تصور کنید"
+        },
+        {
+          "de": "die Lampe (قرمز)",
+          "fa": "چراغ را قرمز تصور کنید"
+        }
       ]
     },
     {
@@ -337,17 +495,50 @@
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [
-        { "de": "der Mann", "fa": "مرد" },
-        { "de": "die Frau", "fa": "زن" },
-        { "de": "das Kind", "fa": "بچه" },
-        { "de": "der Tisch", "fa": "میز" },
-        { "de": "die Lampe", "fa": "چراغ" },
-        { "de": "das Buch", "fa": "کتاب" },
-        { "de": "der Stuhl", "fa": "صندلی" },
-        { "de": "die Tür", "fa": "در" },
-        { "de": "das Fenster", "fa": "پنجره" },
-        { "de": "groß", "fa": "بزرگ" },
-        { "de": "klein", "fa": "کوچک" }
+        {
+          "de": "der Mann",
+          "fa": "مرد"
+        },
+        {
+          "de": "die Frau",
+          "fa": "زن"
+        },
+        {
+          "de": "das Kind",
+          "fa": "بچه"
+        },
+        {
+          "de": "der Tisch",
+          "fa": "میز"
+        },
+        {
+          "de": "die Lampe",
+          "fa": "چراغ"
+        },
+        {
+          "de": "das Buch",
+          "fa": "کتاب"
+        },
+        {
+          "de": "der Stuhl",
+          "fa": "صندلی"
+        },
+        {
+          "de": "die Tür",
+          "fa": "در"
+        },
+        {
+          "de": "das Fenster",
+          "fa": "پنجره"
+        },
+        {
+          "de": "groß",
+          "fa": "بزرگ"
+        },
+        {
+          "de": "klein",
+          "fa": "کوچک"
+        }
       ]
     },
     {
@@ -358,20 +549,90 @@
       "xpEarned": 50,
       "nextLessonId": "A1-M04-L02",
       "vocabularyLearned": [
-        { "word": { "de": "der", "fa": "حرف تعریف مذکر" } },
-        { "word": { "de": "die", "fa": "حرف تعریف مونث" } },
-        { "word": { "de": "das", "fa": "حرف تعریف خنثی" } },
-        { "word": { "de": "der Mann", "fa": "مرد" } },
-        { "word": { "de": "die Frau", "fa": "زن" } },
-        { "word": { "de": "das Kind", "fa": "بچه" } },
-        { "word": { "de": "der Tisch", "fa": "میز" } },
-        { "word": { "de": "die Lampe", "fa": "چراغ" } },
-        { "word": { "de": "das Buch", "fa": "کتاب" } },
-        { "word": { "de": "der Stuhl", "fa": "صندلی" } },
-        { "word": { "de": "die Tür", "fa": "در" } },
-        { "word": { "de": "das Fenster", "fa": "پنجره" } },
-        { "word": { "de": "groß", "fa": "بزرگ" } },
-        { "word": { "de": "klein", "fa": "کوچک" } }
+        {
+          "word": {
+            "de": "der",
+            "fa": "حرف تعریف مذکر"
+          }
+        },
+        {
+          "word": {
+            "de": "die",
+            "fa": "حرف تعریف مونث"
+          }
+        },
+        {
+          "word": {
+            "de": "das",
+            "fa": "حرف تعریف خنثی"
+          }
+        },
+        {
+          "word": {
+            "de": "der Mann",
+            "fa": "مرد"
+          }
+        },
+        {
+          "word": {
+            "de": "die Frau",
+            "fa": "زن"
+          }
+        },
+        {
+          "word": {
+            "de": "das Kind",
+            "fa": "بچه"
+          }
+        },
+        {
+          "word": {
+            "de": "der Tisch",
+            "fa": "میز"
+          }
+        },
+        {
+          "word": {
+            "de": "die Lampe",
+            "fa": "چراغ"
+          }
+        },
+        {
+          "word": {
+            "de": "das Buch",
+            "fa": "کتاب"
+          }
+        },
+        {
+          "word": {
+            "de": "der Stuhl",
+            "fa": "صندلی"
+          }
+        },
+        {
+          "word": {
+            "de": "die Tür",
+            "fa": "در"
+          }
+        },
+        {
+          "word": {
+            "de": "das Fenster",
+            "fa": "پنجره"
+          }
+        },
+        {
+          "word": {
+            "de": "groß",
+            "fa": "بزرگ"
+          }
+        },
+        {
+          "word": {
+            "de": "klein",
+            "fa": "کوچک"
+          }
+        }
       ]
     }
   ]
