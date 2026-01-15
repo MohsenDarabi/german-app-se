@@ -18,6 +18,7 @@ const path = require('path');
 
 // Configuration
 const CONTENT_DIR = path.join(__dirname, '..', 'content');
+const STATIC_CONTENT_DIR = path.join(__dirname, '..', 'apps', 'web', 'static', 'content');
 const LANGUAGE_PAIRS = ['de-fa', 'en-fa']; // Add more as needed
 
 // Fields that should be synced across language pairs (language-neutral)
@@ -193,8 +194,18 @@ function syncLesson(lessonId) {
     }
 
     if (modified) {
-      fs.writeFileSync(versions[langPair], JSON.stringify(lesson, null, 2) + '\n');
-      console.log(`✅ Fixed: ${langPair}/${lessonId}`);
+      const jsonContent = JSON.stringify(lesson, null, 2) + '\n';
+      fs.writeFileSync(versions[langPair], jsonContent);
+
+      // Also update static folder copy if it exists
+      const relativePath = path.relative(CONTENT_DIR, versions[langPair]);
+      const staticPath = path.join(STATIC_CONTENT_DIR, relativePath);
+      if (fs.existsSync(path.dirname(staticPath))) {
+        fs.writeFileSync(staticPath, jsonContent);
+        console.log(`✅ Fixed: ${langPair}/${lessonId} (+ static copy)`);
+      } else {
+        console.log(`✅ Fixed: ${langPair}/${lessonId}`);
+      }
     }
   }
 
