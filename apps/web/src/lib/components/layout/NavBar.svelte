@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { onMount, onDestroy } from 'svelte';
   import LogoutButton from "../auth/LogoutButton.svelte";
   import { getState } from '$lib/services/assetService';
   import { StreakCounter } from '@pkg/ui';
@@ -7,6 +8,33 @@
   import { liveQuery } from 'dexie';
 
   export let user: { email: string } | null = null;
+
+  // Mobile menu state
+  let isMenuOpen = false;
+
+  function toggleMenu() {
+    isMenuOpen = !isMenuOpen;
+  }
+
+  function closeMenu() {
+    isMenuOpen = false;
+  }
+
+  // Close menu on click outside
+  function handleClickOutside(e: MouseEvent) {
+    const target = e.target as HTMLElement;
+    if (isMenuOpen && !target.closest('.menu-container') && !target.closest('.hamburger-btn')) {
+      closeMenu();
+    }
+  }
+
+  onMount(() => {
+    document.addEventListener('click', handleClickOutside);
+  });
+
+  onDestroy(() => {
+    document.removeEventListener('click', handleClickOutside);
+  });
 
   // Get current language pair
   $: currentLanguage = getState().languagePair || 'de-fa';
@@ -35,7 +63,7 @@
     </a>
 
     {#if user}
-      <nav class="nav-links">
+      <nav class="nav-links desktop-only">
         <a href="/" class="nav-link">درس‌ها</a>
         <a href="/vocabulary" class="nav-link">واژگان</a>
         <a href="/practice" class="nav-link">تمرین</a>
@@ -44,21 +72,19 @@
     {/if}
   </div>
 
-  <div class="navbar-right">
-    <!-- Streak Counter (mobile-friendly) -->
+  <!-- Desktop: show all items -->
+  <div class="navbar-right desktop-only">
     {#if user && $userStats}
       <div class="streak-wrapper">
         <StreakCounter streak={$userStats.streak || 0} size="sm" compact />
       </div>
     {/if}
 
-    <!-- Language Switch -->
     <a href="/languages" class="language-switch" title="تغییر زبان">
       <span class="lang-flag">{languageFlags[currentLanguage] || '🌐'}</span>
       <span class="lang-code">{currentLanguage.split('-')[0].toUpperCase()}</span>
     </a>
 
-    <!-- Theme Toggle -->
     <button class="theme-toggle" on:click={() => theme.toggle()} title="تغییر تم">
       {$isDarkMode ? '☀️' : '🌙'}
     </button>
@@ -72,6 +98,52 @@
       <a href="/login" class="login-link">ورود</a>
     {/if}
   </div>
+
+  <!-- Mobile: hamburger menu -->
+  <div class="navbar-right mobile-only">
+    {#if !user}
+      <a href="/login" class="login-link">ورود</a>
+    {/if}
+
+    <button class="hamburger-btn" on:click={toggleMenu} title="منو">
+      <span class="hamburger-icon">{isMenuOpen ? '✕' : '☰'}</span>
+    </button>
+  </div>
+
+  <!-- Mobile Menu Panel -->
+  {#if isMenuOpen}
+    <div class="menu-container">
+      <nav class="mobile-menu" dir="rtl">
+        {#if user && $userStats}
+          <div class="menu-item streak-item">
+            <StreakCounter streak={$userStats.streak || 0} size="sm" />
+            <span class="menu-label">روزهای متوالی</span>
+          </div>
+        {/if}
+
+        <a href="/languages" class="menu-item" on:click={closeMenu}>
+          <span class="menu-icon">{languageFlags[currentLanguage] || '🌐'}</span>
+          <span class="menu-label">تغییر زبان</span>
+        </a>
+
+        <button class="menu-item" on:click={() => { theme.toggle(); closeMenu(); }}>
+          <span class="menu-icon">{$isDarkMode ? '☀️' : '🌙'}</span>
+          <span class="menu-label">{$isDarkMode ? 'حالت روشن' : 'حالت تاریک'}</span>
+        </button>
+
+        {#if user}
+          <div class="menu-divider"></div>
+          <div class="menu-item user-item">
+            <span class="menu-icon">👤</span>
+            <span class="menu-label user-email-menu">{user.email}</span>
+          </div>
+          <div class="menu-item">
+            <LogoutButton />
+          </div>
+        {/if}
+      </nav>
+    </div>
+  {/if}
 </header>
 
 <style>
@@ -82,7 +154,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--space-3, 0.75rem) var(--space-6, 1.5rem);
+    /* Mobile-first: account for safe area on notched phones */
+    padding: var(--space-2, 0.5rem) var(--space-3, 0.75rem);
+    padding-top: calc(var(--space-2, 0.5rem) + env(safe-area-inset-top, 0px));
+    padding-left: calc(var(--space-3, 0.75rem) + env(safe-area-inset-left, 0px));
+    padding-right: calc(var(--space-3, 0.75rem) + env(safe-area-inset-right, 0px));
     /* Persian Turquoise gradient */
     background: linear-gradient(
       135deg,
@@ -270,26 +346,160 @@
     transform: translateY(-1px);
   }
 
-  /* Mobile Responsive */
-  @media (max-width: 768px) {
+  /* Mobile is default (mobile-first) */
+  /* Hide desktop-only elements on mobile */
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: flex;
+  }
+
+  .brand-subtitle {
+    display: none;
+  }
+
+  /* Hamburger Button */
+  .hamburger-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    border-radius: var(--radius-lg, 0.5rem);
+    cursor: pointer;
+    transition: all var(--transition-fast, 150ms) ease;
+  }
+
+  .hamburger-btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+  }
+
+  .hamburger-icon {
+    font-size: var(--text-lg, 1.125rem);
+    color: #fff;
+  }
+
+  /* Mobile Menu Container */
+  .menu-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: var(--space-2, 0.5rem);
+    padding-left: calc(var(--space-2, 0.5rem) + env(safe-area-inset-left, 0px));
+    padding-right: calc(var(--space-2, 0.5rem) + env(safe-area-inset-right, 0px));
+  }
+
+  .mobile-menu {
+    background: var(--color-neutral-50, #faf8f5);
+    border-radius: var(--radius-xl, 1rem);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    padding: var(--space-2, 0.5rem);
+    animation: menu-slide-down 0.2s ease-out;
+  }
+
+  @keyframes menu-slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .menu-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3, 0.75rem);
+    width: 100%;
+    padding: var(--space-3, 0.75rem);
+    background: transparent;
+    border: none;
+    border-radius: var(--radius-lg, 0.75rem);
+    font-size: var(--text-base, 1rem);
+    color: var(--color-neutral-700, #44403c);
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.15s ease;
+    min-height: 44px;
+  }
+
+  .menu-item:hover {
+    background: var(--color-neutral-100, #f5f0e8);
+  }
+
+  .menu-icon {
+    font-size: var(--text-lg, 1.125rem);
+    flex-shrink: 0;
+  }
+
+  .menu-label {
+    flex: 1;
+    text-align: right;
+    font-weight: var(--font-medium, 500);
+  }
+
+  .menu-divider {
+    height: 1px;
+    background: var(--color-neutral-200, #e8e0d5);
+    margin: var(--space-2, 0.5rem) 0;
+  }
+
+  .streak-item {
+    justify-content: flex-end;
+    gap: var(--space-2, 0.5rem);
+  }
+
+  .user-email-menu {
+    font-size: var(--text-sm, 0.875rem);
+    color: var(--color-neutral-500, #78716c);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  /* Tablet and up: show desktop layout, hide mobile */
+  @media (min-width: 769px) {
     .navbar {
-      padding: var(--space-2, 0.5rem) var(--space-4, 1rem);
+      padding: var(--space-3, 0.75rem) var(--space-6, 1.5rem);
+      padding-top: var(--space-3, 0.75rem);
+      padding-left: var(--space-6, 1.5rem);
+      padding-right: var(--space-6, 1.5rem);
     }
 
-    .nav-links {
+    .desktop-only {
+      display: flex;
+    }
+
+    .mobile-only {
+      display: none;
+    }
+
+    .menu-container {
       display: none;
     }
 
     .brand-subtitle {
-      display: none;
+      display: block;
     }
 
     .user-email {
-      display: none;
+      display: block;
     }
 
     .language-switch .lang-code {
-      display: none;
+      display: inline;
+    }
+
+    .nav-links {
+      gap: var(--space-1, 0.25rem);
     }
   }
 
@@ -302,5 +512,23 @@
       width: 32px;
       height: 32px;
     }
+  }
+
+  /* Dark mode for mobile menu */
+  :global([data-theme="dark"]) .mobile-menu {
+    background: var(--color-neutral-100, #292524);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+
+  :global([data-theme="dark"]) .menu-item {
+    color: var(--color-neutral-200, #d4c9b9);
+  }
+
+  :global([data-theme="dark"]) .menu-item:hover {
+    background: var(--color-neutral-50, #44403c);
+  }
+
+  :global([data-theme="dark"]) .menu-divider {
+    background: var(--color-neutral-50, #44403c);
   }
 </style>
