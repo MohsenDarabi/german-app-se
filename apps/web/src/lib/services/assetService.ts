@@ -7,6 +7,7 @@
 
 import { browser } from '$app/environment';
 import { writable, get } from 'svelte/store';
+import { PUBLIC_R2_URL } from '$env/static/public';
 
 // Types
 interface Manifest {
@@ -36,7 +37,7 @@ interface AssetServiceState {
 }
 
 // CDN base URL from environment
-const CDN_BASE = import.meta.env.PUBLIC_R2_URL || '';
+const CDN_BASE = PUBLIC_R2_URL || '';
 
 // Service state store
 const state = writable<AssetServiceState>({

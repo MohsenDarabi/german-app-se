@@ -1,36 +1,31 @@
-// Client-side lesson loader for Capacitor compatibility
+// Client-side lesson loader with CDN support
+// Uses contentService for CDN + offline caching, falls back to local
 import type { PageLoad } from "./$types";
-import { LessonSchema } from "$lib/content-model";
 import { error } from "@sveltejs/kit";
+import { browser } from "$app/environment";
+import * as contentService from "$lib/services/contentService";
 
-// Module folders to search for lessons
-const MODULE_FOLDERS = ['module-01', 'module-02', 'module-03', 'module-04', 'module-05', 'module-06', 'module-07', 'module-08'];
-
-export const load: PageLoad = async ({ params, fetch }) => {
+export const load: PageLoad = async ({ params }) => {
   const { pair, level, lessonId } = params;
 
-  // Try to fetch lesson from static content folder
-  for (const moduleFolder of MODULE_FOLDERS) {
-    const url = `/content/${pair}/${level}/${moduleFolder}/${lessonId}.json`;
-
-    try {
-      const response = await fetch(url);
-      if (response.ok) {
-        const json = await response.json();
-        const parsed = LessonSchema.parse(json);
-
-        return {
-          lesson: parsed,
-          langPair: pair,
-          level: level,
-          lessonId: lessonId,
-        };
-      }
-    } catch (e) {
-      // Continue to next module folder
-      continue;
-    }
+  // Initialize content service with the language pair
+  if (browser) {
+    await contentService.init(pair);
   }
 
-  throw error(404, `Lesson not found: ${lessonId}`);
+  try {
+    // Load lesson through content service (handles CDN + caching + fallback)
+    const lesson = await contentService.loadLesson(lessonId);
+
+    return {
+      lesson,
+      langPair: pair,
+      level: level,
+      lessonId: lessonId,
+    };
+  } catch (e) {
+    const message = e instanceof Error ? e.message : 'Unknown error';
+    console.error(`Failed to load lesson ${lessonId}:`, message);
+    throw error(404, `Lesson not found: ${lessonId}`);
+  }
 };

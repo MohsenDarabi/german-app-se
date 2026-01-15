@@ -6,6 +6,7 @@ import { build, files, version } from '$service-worker';
 
 const CACHE = `deutschlern-cache-${version}`;
 const CDN_CACHE = 'cdn-assets-v1';
+const CONTENT_CACHE = 'cdn-content-v1'; // Lesson JSON content from CDN
 
 // CDN base URL (matches PUBLIC_R2_URL in .env)
 const CDN_HOSTS = ['pub-a0290b06f1ea45d5b65ac647cc69df34.r2.dev'];
@@ -35,8 +36,8 @@ self.addEventListener('activate', (event: ExtendableEvent) => {
       const keys = await caches.keys();
       await Promise.all(
         keys.map((key) =>
-          // Keep CDN cache across versions
-          key === CACHE || key === CDN_CACHE ? Promise.resolve() : caches.delete(key)
+          // Keep CDN caches across versions (assets + content)
+          key === CACHE || key === CDN_CACHE || key === CONTENT_CACHE ? Promise.resolve() : caches.delete(key)
         )
       );
 
@@ -140,12 +141,20 @@ self.addEventListener('fetch', (event: FetchEvent) => {
   // Check if this is a CDN request
   const isCdnRequest = CDN_HOSTS.includes(url.host);
 
-  // Handle CDN requests (audio/images from R2)
+  // Handle CDN requests (audio/images/content from R2)
   if (isCdnRequest) {
-    // ⭐ Cache-first for ALL users (reduces R2 reads by 83%)
-    // First fetch: get from R2, store in cache
-    // Subsequent fetches: serve from cache (no R2 hit)
-    event.respondWith(cdnCacheFirst(request));
+    // Content JSON uses separate cache for version management
+    const isContentRequest = url.pathname.includes('/content/') && url.pathname.endsWith('.json');
+
+    if (isContentRequest) {
+      // ⭐ Cache-first for lesson content JSON
+      event.respondWith(contentCacheFirst(request));
+    } else {
+      // ⭐ Cache-first for ALL users (reduces R2 reads by 83%)
+      // First fetch: get from R2, store in cache
+      // Subsequent fetches: serve from cache (no R2 hit)
+      event.respondWith(cdnCacheFirst(request));
+    }
     return;
   }
 
@@ -255,6 +264,29 @@ async function cdnCacheFirst(request: Request): Promise<Response> {
   } catch (e) {
     // Return error response if fetch fails and nothing in cache
     console.warn('CDN fetch failed:', request.url, e);
+    return Response.error();
+  }
+}
+
+/**
+ * Cache-first strategy for CDN content (lesson JSON)
+ * Uses separate content cache for version management
+ */
+async function contentCacheFirst(request: Request): Promise<Response> {
+  const cache = await caches.open(CONTENT_CACHE);
+  const cached = await cache.match(request);
+  if (cached) return cached;
+
+  try {
+    const fresh = await fetch(request);
+    if (fresh.ok) {
+      // Clone response before caching (response can only be read once)
+      cache.put(request, fresh.clone());
+    }
+    return fresh;
+  } catch (e) {
+    // Return error response if fetch fails and nothing in cache
+    console.warn('Content fetch failed:', request.url, e);
     return Response.error();
   }
 }

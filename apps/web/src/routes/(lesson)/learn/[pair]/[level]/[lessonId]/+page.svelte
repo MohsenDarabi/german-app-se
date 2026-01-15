@@ -14,9 +14,17 @@
     completeLessonWithStats
   } from "$lib/services/progressService";
   import { stopAudio } from "$lib/utils/audio";
+  import * as contentService from "$lib/services/contentService";
   import type { WrongAnswer } from "$lib/db";
 
   export let data;
+
+  // Smart pre-caching: preload next lesson when near completion
+  let preloadTriggered = false;
+  $: if (browser && !preloadTriggered && $lessonStore.currentStepIndex >= $lessonStore.lesson?.steps?.length - 2) {
+    preloadTriggered = true;
+    contentService.preloadNextLesson(data.lessonId);
+  }
 
   // Exit dialog and menu state
   let showExitDialog = false;
