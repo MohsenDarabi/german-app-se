@@ -89,11 +89,12 @@ export class SyncEngine {
         if (error) console.error('[SyncEngine] Error syncing user:', error);
       }
 
-      // Sync Lesson Progress
+      // Sync Lesson Progress (now includes language_pair for multi-language support)
       const lessonProgress = await db.lessonProgress.toArray();
       if (lessonProgress.length > 0) {
         const progressData = lessonProgress.map(p => ({
           user_id: userId,
+          language_pair: p.languagePair || 'de-fa', // Default for legacy records
           lesson_id: p.lessonId,
           status: p.status,
           current_step_index: p.currentStepIndex,
@@ -103,7 +104,7 @@ export class SyncEngine {
         }));
 
         const { error } = await supabase.from('lesson_progress').upsert(progressData, {
-          onConflict: 'user_id,lesson_id'
+          onConflict: 'user_id,language_pair,lesson_id'
         });
         if (error) console.error('[SyncEngine] Error syncing lesson progress:', error);
       }
@@ -177,7 +178,7 @@ export class SyncEngine {
         });
       }
 
-      // Pull Lesson Progress
+      // Pull Lesson Progress (now includes language_pair for multi-language support)
       const { data: cloudProgress, error: progressError } = await supabase
         .from('lesson_progress')
         .select('*')
@@ -185,10 +186,12 @@ export class SyncEngine {
 
       if (cloudProgress && !progressError) {
         for (const progress of cloudProgress) {
-          // Check if local version is newer
+          const languagePair = progress.language_pair || 'de-fa'; // Default for legacy records
+
+          // Check if local version is newer using composite key
           const localProgress = await db.lessonProgress
-            .where('lessonId')
-            .equals(progress.lesson_id)
+            .where('[languagePair+lessonId]')
+            .equals([languagePair, progress.lesson_id])
             .first();
 
           const shouldUpdate = !localProgress ||
@@ -197,6 +200,7 @@ export class SyncEngine {
           if (shouldUpdate) {
             await db.lessonProgress.put({
               id: localProgress?.id, // Include existing ID to update, or undefined to insert new
+              languagePair: languagePair,
               lessonId: progress.lesson_id,
               status: progress.status,
               currentStepIndex: progress.current_step_index,

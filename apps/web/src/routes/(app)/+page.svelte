@@ -6,7 +6,7 @@
   import { liveQuery } from "dexie";
   import DevModeToggle from "$lib/components/dev/DevModeToggle.svelte";
   import { devMode } from "$lib/stores/devMode";
-  import { resetLessonForReplay, clearLessonWrongAnswers } from "$lib/services/progressService";
+  import { resetLessonForReplay, clearLessonWrongAnswers, getAllProgressForLanguage } from "$lib/services/progressService";
   import { XPBar, StreakCounter, Button } from '@pkg/ui';
   import { selectedPair, currentLanguagePack } from "$lib/stores/languagePreference";
 
@@ -24,13 +24,28 @@
 
   // Reactive queries for user stats and progress
   const user = liveQuery(() => db.users.get(1));
-  const progressMap = liveQuery(async () => {
-    const allProgress = await db.lessonProgress.toArray();
-    return new Map(allProgress.map(p => [p.lessonId, p]));
+
+  // Progress map filtered by current language pair
+  // We need to make this reactive to language changes
+  let progressMapStore: Map<string, any> = new Map();
+
+  // Re-fetch progress when language changes
+  $: {
+    // This block runs whenever $selectedPair changes
+    const langPair = $selectedPair;
+    getAllProgressForLanguage(langPair).then(progress => {
+      progressMapStore = new Map(progress.map(p => [p.lessonId, p]));
+    });
+  }
+
+  // Use the reactive store for display
+  $: progressMap = progressMapStore;
+
+  // Completed count for current language only
+  const completedCount = liveQuery(async () => {
+    const langProgress = await getAllProgressForLanguage($selectedPair);
+    return langProgress.filter(p => p.status === 'completed').length;
   });
-  const completedCount = liveQuery(() =>
-    db.lessonProgress.where('status').equals('completed').count()
-  );
   const dueCardsCount = liveQuery(async () => {
     const now = new Date();
     return await db.vocab.where('nextReview').belowOrEqual(now).count();
@@ -55,7 +70,7 @@
     const total = module.lessons.length;
 
     for (const lesson of module.lessons) {
-      const progress = $progressMap?.get(lesson.id);
+      const progress = progressMap?.get(lesson.id);
       if (progress?.status === 'completed') {
         completed++;
       } else if (progress?.status === 'in-progress' || (!progress && completed === module.lessons.indexOf(lesson))) {
@@ -66,12 +81,12 @@
     // Check if this module has the next unlocked lesson
     if (!hasCurrentLesson && completed < total) {
       const firstIncomplete = module.lessons.find(l => {
-        const p = $progressMap?.get(l.id);
+        const p = progressMap?.get(l.id);
         return !p || p.status !== 'completed';
       });
       if (firstIncomplete) {
         const globalIdx = allLessons.findIndex(l => l.id === firstIncomplete.id);
-        if (globalIdx === 0 || (globalIdx > 0 && $progressMap?.get(allLessons[globalIdx - 1].id)?.status === 'completed')) {
+        if (globalIdx === 0 || (globalIdx > 0 && progressMap?.get(allLessons[globalIdx - 1].id)?.status === 'completed')) {
           hasCurrentLesson = true;
         }
       }
@@ -136,32 +151,32 @@
   }
 
   // Initialize on mount and when progressMap updates
-  $: if ($progressMap && browser) {
+  $: if (progressMap && browser) {
     initExpandedState();
   }
 
   function getLessonStatus(lessonId: string, index: number): 'locked' | 'in-progress' | 'completed' | 'unlocked' {
     // Dev mode: all lessons unlocked
     if ($devMode) {
-      const progress = $progressMap?.get(lessonId);
+      const progress = progressMap?.get(lessonId);
       if (progress?.status === 'completed') return 'completed';
       if (progress?.status === 'in-progress') return 'in-progress';
       return 'unlocked';
     }
 
     // First lesson is always unlocked
-    if (index === 0 && !$progressMap?.has(lessonId)) {
+    if (index === 0 && !progressMap?.has(lessonId)) {
       return 'unlocked';
     }
 
-    const progress = $progressMap?.get(lessonId);
+    const progress = progressMap?.get(lessonId);
 
     if (!progress) {
       // No progress - check if previous lesson is completed
       if (index > 0) {
         const prevLesson = allLessons[index - 1];
         if (prevLesson) {
-          const prevProgress = $progressMap?.get(prevLesson.id);
+          const prevProgress = progressMap?.get(prevLesson.id);
 
           if (!prevProgress || prevProgress.status !== 'completed') {
             return 'locked';
@@ -192,8 +207,11 @@
 
   async function handleResetLesson(lessonId: string) {
     if (confirm('آیا مطمئن هستید که می‌خواهید این درس را بازنشانی کنید؟ تمام پیشرفت شما پاک خواهد شد.')) {
-      await resetLessonForReplay(lessonId);
+      await resetLessonForReplay($selectedPair, lessonId);
       await clearLessonWrongAnswers(lessonId);
+      // Refresh progress map after reset
+      const progress = await getAllProgressForLanguage($selectedPair);
+      progressMapStore = new Map(progress.map(p => [p.lessonId, p]));
     }
   }
 </script>
@@ -255,7 +273,7 @@
       سطح مبتدی
     </h2>
     <div class="timeline">
-      {#key [$progressMap, $devMode]}
+      {#key [progressMap, $devMode]}
         {#each A1_MODULES as module, moduleIndex}
           {@const moduleId = `a1-${moduleIndex}`}
           {@const stats = getModuleStats(module, 'a1', moduleIndex)}
@@ -282,7 +300,7 @@
               {#each module.lessons as lesson, lessonIndex}
                 {@const globalIndex = A1_MODULES.slice(0, moduleIndex).reduce((sum, m) => sum + m.lessons.length, 0) + lessonIndex}
                 {@const status = getLessonStatus(lesson.id, globalIndex)}
-                {@const progress = $progressMap?.get(lesson.id)}
+                {@const progress = progressMap?.get(lesson.id)}
                 {@const isLocked = status === 'locked'}
 
               <div
@@ -335,7 +353,7 @@
       سطح مقدماتی
     </h2>
     <div class="timeline">
-      {#key [$progressMap, $devMode]}
+      {#key [progressMap, $devMode]}
         {#each A2_MODULES as module, moduleIndex}
           {@const moduleId = `a2-${moduleIndex}`}
           {@const stats = getModuleStats(module, 'a2', moduleIndex)}
@@ -364,7 +382,7 @@
                 {@const globalIndex = a1TotalLessons + A2_MODULES.slice(0, moduleIndex).reduce((sum, m) => sum + m.lessons.length, 0) + lessonIndex}
                 {@const a2LessonNum = A2_MODULES.slice(0, moduleIndex).reduce((sum, m) => sum + m.lessons.length, 0) + lessonIndex + 1}
                 {@const status = getLessonStatus(lesson.id, globalIndex)}
-                {@const progress = $progressMap?.get(lesson.id)}
+                {@const progress = progressMap?.get(lesson.id)}
                 {@const isLocked = status === 'locked'}
 
               <div

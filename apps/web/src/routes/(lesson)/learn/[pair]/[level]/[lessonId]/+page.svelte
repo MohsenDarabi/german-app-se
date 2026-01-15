@@ -53,7 +53,7 @@
   // Initialize store when data changes (or on mount)
   onMount(() => {
     if (data.lesson) {
-      lessonStore.init(data.lesson);
+      lessonStore.init(data.lesson, data.langPair);
     }
     // Add keyboard listener
     window.addEventListener('keydown', handleKeydown);
@@ -136,6 +136,7 @@
   async function finishLesson() {
     // Award XP, update streak, mark lesson as complete
     completionStats = await completeLessonWithStats(
+      data.langPair,
       data.lesson.id,
       data.lesson.steps.length
     );

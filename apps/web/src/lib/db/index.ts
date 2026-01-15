@@ -15,6 +15,7 @@ export interface User {
 
 export interface LessonProgress {
   id?: number;
+  languagePair: string;  // "de-fa", "en-fa" - required for multi-language support
   lessonId: string;
   status: 'locked' | 'in-progress' | 'completed';
   currentStepIndex: number;
@@ -117,6 +118,24 @@ export class DeutschLernDB extends Dexie {
       // Migrate existing users to add premium fields
       return tx.table('users').toCollection().modify(user => {
         user.isPremium = user.isPremium ?? false;
+      });
+    });
+
+    // Add multi-language support: languagePair field in lessonProgress
+    // Unique constraint now on [languagePair+lessonId] to separate progress per language
+    this.version(6).stores({
+      users: '++id, email',
+      lessonProgress: '++id, &[languagePair+lessonId], languagePair, status, updatedAt',
+      vocab: '++id, &word, nextReview, addedAt',
+      wrongAnswers: '++id, [lessonId+stepId], lessonId, reviewedAt',
+      downloadedLessons: '++id, &[languagePair+lessonId], languagePair, downloadedAt'
+    }).upgrade(tx => {
+      // Migrate existing lessonProgress records to add languagePair
+      // Default to 'de-fa' since that was the only language before this update
+      return tx.table('lessonProgress').toCollection().modify(progress => {
+        if (!progress.languagePair) {
+          progress.languagePair = 'de-fa';
+        }
       });
     });
   }
