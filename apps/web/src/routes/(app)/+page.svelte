@@ -1,6 +1,7 @@
 <script lang="ts">
   import { A1_MODULES, A2_MODULES } from "$lib/data/modules";
   import { onMount } from "svelte";
+  import { browser } from "$app/environment";
   import { db } from "$lib/db";
   import { liveQuery } from "dexie";
   import DevModeToggle from "$lib/components/dev/DevModeToggle.svelte";
@@ -35,6 +36,102 @@
 
   // Combine all lessons for sequential unlocking
   $: allLessons = [...A1_MODULES, ...A2_MODULES].flatMap(m => m.lessons);
+
+  // --- Collapsible Modules ---
+  let expandedModules: Set<string> = new Set();
+  let initialized = false;
+
+  // Get module stats (completed/total lessons)
+  function getModuleStats(module: typeof A1_MODULES[0], levelPrefix: string, moduleIndex: number): { completed: number; total: number; hasCurrentLesson: boolean } {
+    let completed = 0;
+    let hasCurrentLesson = false;
+    const total = module.lessons.length;
+
+    for (const lesson of module.lessons) {
+      const progress = $progressMap?.get(lesson.id);
+      if (progress?.status === 'completed') {
+        completed++;
+      } else if (progress?.status === 'in-progress' || (!progress && completed === module.lessons.indexOf(lesson))) {
+        hasCurrentLesson = true;
+      }
+    }
+
+    // Check if this module has the next unlocked lesson
+    if (!hasCurrentLesson && completed < total) {
+      const firstIncomplete = module.lessons.find(l => {
+        const p = $progressMap?.get(l.id);
+        return !p || p.status !== 'completed';
+      });
+      if (firstIncomplete) {
+        const globalIdx = allLessons.findIndex(l => l.id === firstIncomplete.id);
+        if (globalIdx === 0 || (globalIdx > 0 && $progressMap?.get(allLessons[globalIdx - 1].id)?.status === 'completed')) {
+          hasCurrentLesson = true;
+        }
+      }
+    }
+
+    return { completed, total, hasCurrentLesson };
+  }
+
+  // Toggle module expansion
+  function toggleModule(moduleId: string) {
+    if (expandedModules.has(moduleId)) {
+      expandedModules.delete(moduleId);
+    } else {
+      expandedModules.add(moduleId);
+    }
+    expandedModules = expandedModules; // Trigger reactivity
+    saveExpandedState();
+  }
+
+  // Save expanded state to localStorage
+  function saveExpandedState() {
+    if (browser) {
+      localStorage.setItem('expandedModules', JSON.stringify([...expandedModules]));
+    }
+  }
+
+  // Load expanded state from localStorage or set smart defaults
+  function initExpandedState() {
+    if (!browser || initialized) return;
+
+    const saved = localStorage.getItem('expandedModules');
+    if (saved) {
+      try {
+        expandedModules = new Set(JSON.parse(saved));
+        initialized = true;
+        return;
+      } catch (e) {
+        // Invalid saved state, use defaults
+      }
+    }
+
+    // Smart defaults: expand module with current/next lesson
+    const allModules = [
+      ...A1_MODULES.map((m, i) => ({ ...m, id: `a1-${i}` })),
+      ...A2_MODULES.map((m, i) => ({ ...m, id: `a2-${i}` }))
+    ];
+
+    for (const module of allModules) {
+      const stats = getModuleStats(module, module.id.split('-')[0], parseInt(module.id.split('-')[1]));
+      if (stats.hasCurrentLesson || (stats.completed > 0 && stats.completed < stats.total)) {
+        expandedModules.add(module.id);
+      }
+    }
+
+    // If nothing expanded, expand first module
+    if (expandedModules.size === 0) {
+      expandedModules.add('a1-0');
+    }
+
+    expandedModules = expandedModules;
+    initialized = true;
+  }
+
+  // Initialize on mount and when progressMap updates
+  $: if ($progressMap && browser) {
+    initExpandedState();
+  }
 
   function getLessonStatus(lessonId: string, index: number): 'locked' | 'in-progress' | 'completed' | 'unlocked' {
     // Dev mode: all lessons unlocked
@@ -153,10 +250,28 @@
     <div class="timeline">
       {#key [$progressMap, $devMode]}
         {#each A1_MODULES as module, moduleIndex}
+          {@const moduleId = `a1-${moduleIndex}`}
+          {@const stats = getModuleStats(module, 'a1', moduleIndex)}
+          {@const isExpanded = expandedModules.has(moduleId)}
           <div class="module-section">
-            <h3 class="module-title">{@html fixBiDiTitle(module.title)}</h3>
+            <button
+              class="module-header"
+              class:expanded={isExpanded}
+              on:click={() => toggleModule(moduleId)}
+            >
+              <h3 class="module-title">{@html fixBiDiTitle(module.title)}</h3>
+              <div class="module-stats">
+                <span class="stats-text">{stats.completed}/{stats.total}</span>
+                {#if stats.completed === stats.total}
+                  <span class="stats-icon">✅</span>
+                {:else if stats.hasCurrentLesson}
+                  <span class="stats-icon current">▶️</span>
+                {/if}
+              </div>
+              <span class="chevron" class:expanded={isExpanded}>‹</span>
+            </button>
 
-            <div class="lessons-list">
+            <div class="lessons-list" class:collapsed={!isExpanded}>
               {#each module.lessons as lesson, lessonIndex}
                 {@const globalIndex = A1_MODULES.slice(0, moduleIndex).reduce((sum, m) => sum + m.lessons.length, 0) + lessonIndex}
                 {@const status = getLessonStatus(lesson.id, globalIndex)}
@@ -215,10 +330,28 @@
     <div class="timeline">
       {#key [$progressMap, $devMode]}
         {#each A2_MODULES as module, moduleIndex}
+          {@const moduleId = `a2-${moduleIndex}`}
+          {@const stats = getModuleStats(module, 'a2', moduleIndex)}
+          {@const isExpanded = expandedModules.has(moduleId)}
           <div class="module-section">
-            <h3 class="module-title">{@html fixBiDiTitle(module.title)}</h3>
+            <button
+              class="module-header"
+              class:expanded={isExpanded}
+              on:click={() => toggleModule(moduleId)}
+            >
+              <h3 class="module-title">{@html fixBiDiTitle(module.title)}</h3>
+              <div class="module-stats">
+                <span class="stats-text">{stats.completed}/{stats.total}</span>
+                {#if stats.completed === stats.total}
+                  <span class="stats-icon">✅</span>
+                {:else if stats.hasCurrentLesson}
+                  <span class="stats-icon current">▶️</span>
+                {/if}
+              </div>
+              <span class="chevron" class:expanded={isExpanded}>‹</span>
+            </button>
 
-            <div class="lessons-list">
+            <div class="lessons-list" class:collapsed={!isExpanded}>
               {#each module.lessons as lesson, lessonIndex}
                 {@const a1TotalLessons = A1_MODULES.reduce((sum, m) => sum + m.lessons.length, 0)}
                 {@const globalIndex = a1TotalLessons + A2_MODULES.slice(0, moduleIndex).reduce((sum, m) => sum + m.lessons.length, 0) + lessonIndex}
@@ -491,23 +624,92 @@
     z-index: 1;
   }
 
-  .module-title {
-    background: var(--color-neutral-100, #f5f0e8);
-    display: inline-block;
+  /* Collapsible Module Header */
+  .module-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3, 0.75rem);
+    width: 100%;
     padding: var(--space-2, 0.5rem) var(--space-4, 1rem);
-    border-radius: var(--radius-full, 9999px);
-    font-size: var(--text-sm, 0.875rem);
-    font-weight: var(--font-semibold, 600);
-    color: var(--color-neutral-600, #57534e);
-    margin-bottom: var(--space-4, 1rem);
-    margin-left: var(--space-10, 2.5rem);
-    box-shadow: var(--shadow-sm, 0 1px 2px rgba(0, 0, 0, 0.05));
+    background: var(--color-neutral-100, #f5f0e8);
+    border: 1px solid var(--color-neutral-200, #e8e0d5);
+    border-radius: var(--radius-xl, 1rem);
+    cursor: pointer;
+    transition: all var(--transition-normal, 200ms);
+    margin-bottom: var(--space-3, 0.75rem);
   }
 
+  .module-header:hover {
+    background: var(--color-neutral-50, #fdfbf7);
+    border-color: var(--color-primary-300, #67e8f9);
+  }
+
+  .module-header.expanded {
+    border-color: var(--color-primary-400, #22d3ee);
+    background: linear-gradient(135deg, var(--color-primary-50, #ecfeff), var(--color-neutral-50, #fdfbf7));
+  }
+
+  .module-title {
+    flex: 1;
+    font-size: var(--text-sm, 0.875rem);
+    font-weight: var(--font-semibold, 600);
+    color: var(--color-neutral-700, #44403c);
+    margin: 0;
+    text-align: right;
+  }
+
+  .module-stats {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2, 0.5rem);
+  }
+
+  .stats-text {
+    font-size: var(--text-xs, 0.75rem);
+    color: var(--color-neutral-500, #78716c);
+    font-weight: var(--font-medium, 500);
+  }
+
+  .stats-icon {
+    font-size: var(--text-sm, 0.875rem);
+  }
+
+  .stats-icon.current {
+    animation: pulse-current 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse-current {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+
+  .chevron {
+    font-size: var(--text-lg, 1.125rem);
+    color: var(--color-neutral-400, #a69b8a);
+    transition: transform var(--transition-normal, 200ms);
+    transform: rotate(-90deg);
+  }
+
+  .chevron.expanded {
+    transform: rotate(-270deg);
+  }
+
+  /* Lessons list collapse/expand */
   .lessons-list {
     display: flex;
     flex-direction: column;
     gap: var(--space-4, 1rem);
+    overflow: hidden;
+    max-height: 2000px; /* Large enough for any module */
+    transition: max-height var(--transition-normal, 200ms) ease-out,
+                opacity var(--transition-normal, 200ms) ease-out;
+    opacity: 1;
+  }
+
+  .lessons-list.collapsed {
+    max-height: 0;
+    opacity: 0;
+    margin-bottom: 0;
   }
 
   /* Lesson Cards */
@@ -729,9 +931,31 @@
     background: rgba(28, 25, 23, 0.85);
   }
 
-  :global([data-theme="dark"]) .module-title {
+  :global([data-theme="dark"]) .module-header {
     background: var(--color-neutral-200, #44403c);
+    border-color: var(--color-neutral-300, #57534e);
+  }
+
+  :global([data-theme="dark"]) .module-header:hover {
+    background: var(--color-neutral-300, #57534e);
+    border-color: var(--color-primary-500, #0891b2);
+  }
+
+  :global([data-theme="dark"]) .module-header.expanded {
+    background: linear-gradient(135deg, rgba(8, 145, 178, 0.15), var(--color-neutral-200, #44403c));
+    border-color: var(--color-primary-400, #22d3ee);
+  }
+
+  :global([data-theme="dark"]) .module-title {
     color: var(--color-neutral-100, #f5f0e8);
+  }
+
+  :global([data-theme="dark"]) .stats-text {
+    color: var(--color-neutral-400, #a69b8a);
+  }
+
+  :global([data-theme="dark"]) .chevron {
+    color: var(--color-neutral-500, #78716c);
   }
 
   :global([data-theme="dark"]) .lesson-info h3 {
@@ -942,20 +1166,17 @@
     white-space: nowrap;
   }
 
-  /* Module title - centered on mobile */
-  .module-title {
-    margin-left: 0;
-    margin-bottom: var(--space-3, 0.75rem);
-    display: block;
-    text-align: center;
+  /* Module header - mobile adjustments */
+  .module-header {
+    padding: var(--space-2, 0.5rem) var(--space-3, 0.75rem);
+    gap: var(--space-2, 0.5rem);
   }
 
   @media (min-width: 600px) {
-    .module-title {
-      display: inline-block;
+    .module-header {
+      padding: var(--space-2, 0.5rem) var(--space-4, 1rem);
+      gap: var(--space-3, 0.75rem);
       margin-left: var(--space-10, 2.5rem);
-      margin-bottom: var(--space-4, 1rem);
-      text-align: right;
     }
   }
 
