@@ -5,7 +5,16 @@
   export let step: SpeedChallengeStep;
   export let lessonId: string = '';
 
-  const dispatch = createEventDispatcher();
+  const dispatch = createEventDispatcher<{
+    answer: {
+      correct: boolean;
+      score: number;
+      correctCount: number;
+      wrongCount: number;
+      maxCombo: number;
+      allowContinue: boolean;
+    };
+  }>();
 
   // Game state
   let gameState: 'ready' | 'playing' | 'finished' = 'ready';

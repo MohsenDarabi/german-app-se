@@ -5,7 +5,14 @@
   export let step: ChatSimulatorStep;
   export let lessonId: string = '';
 
-  const dispatch = createEventDispatcher();
+  const dispatch = createEventDispatcher<{
+    answer: {
+      correct: boolean;
+      userAnswer: string;
+      correctAnswer: string;
+      allowContinue: boolean;
+    };
+  }>();
 
   interface DisplayMessage {
     id: string;
@@ -208,7 +215,7 @@
     <div class="response-area">
       <p class="response-prompt" dir="rtl">پاسخ خود را انتخاب کنید:</p>
       <div class="response-options">
-        {#each responseOptions as option}
+        {#each responseOptions as option (option.id)}
           <button
             class="response-option"
             on:click={() => selectResponse(option)}

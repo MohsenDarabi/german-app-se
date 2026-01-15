@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { WordOrderStep } from "$lib/content-model";
+  import type { WordOrderStep } from "@pkg/content-model";
   import { createEventDispatcher } from "svelte";
   import BiDiText from "$lib/components/ui/BiDiText.svelte";
   import AudioButton from "$lib/components/ui/AudioButton.svelte";

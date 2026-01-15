@@ -78,22 +78,31 @@
     return `${days} days ago`;
   }
 
-  $: syncStatus = getSyncStatus();
+  $: syncStatus = getSyncStatus(isAuthenticated, isOnline, isSyncing, lastSyncTime);
 
-  function getSyncStatus(): string {
-    if (!isAuthenticated) return 'Not signed in';
-    if (!isOnline) return 'Offline';
-    if (isSyncing) return 'Syncing...';
-    if (lastSyncTime) return `Synced ${formatTime(lastSyncTime)}`;
+  function getSyncStatus(
+    authenticated: boolean,
+    online: boolean,
+    syncing: boolean,
+    lastSync: Date | null
+  ): string {
+    if (!authenticated) return 'Not signed in';
+    if (!online) return 'Offline';
+    if (syncing) return 'Syncing...';
+    if (lastSync) return `Synced ${formatTime(lastSync)}`;
     return 'Not synced';
   }
 
-  $: statusClass = getStatusClass();
+  $: statusClass = getStatusClass(isAuthenticated, isOnline, isSyncing);
 
-  function getStatusClass(): string {
-    if (!isAuthenticated) return 'not-authenticated';
-    if (!isOnline) return 'offline';
-    if (isSyncing) return 'syncing';
+  function getStatusClass(
+    authenticated: boolean,
+    online: boolean,
+    syncing: boolean
+  ): string {
+    if (!authenticated) return 'not-authenticated';
+    if (!online) return 'offline';
+    if (syncing) return 'syncing';
     return 'synced';
   }
 </script>

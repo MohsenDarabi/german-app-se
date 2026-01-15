@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { ComprehensionStep, ComprehensionQuestion } from "$lib/content-model";
+  import type { ComprehensionStep, ComprehensionQuestion } from "@pkg/content-model";
   import { createEventDispatcher, onMount } from "svelte";
   import BiDiText from "$lib/components/ui/BiDiText.svelte";
   import AudioButton from "$lib/components/ui/AudioButton.svelte";
@@ -7,7 +7,9 @@
   export let step: ComprehensionStep;
   export let lessonId: string = '';
 
-  const dispatch = createEventDispatcher();
+  const dispatch = createEventDispatcher<{
+    answer: { correct: boolean; allowContinue: boolean; score: number };
+  }>();
 
   type AnswerState = {
     selectedIndex: number | null;
@@ -152,7 +154,7 @@
       <div class="question-progress">
         <span>سوال {currentQuestionIndex + 1} از {step.questions.length}</span>
         <div class="progress-dots">
-          {#each step.questions as _, i}
+          {#each step.questions as _, i (i)}
             <span
               class="dot"
               class:active={i === currentQuestionIndex}
@@ -173,7 +175,7 @@
         {/if}
 
         <div class="options-list">
-          {#each currentQuestion.options as option, i}
+          {#each currentQuestion.options as option, i (i)}
             <button
               class="option-btn"
               class:selected={currentAnswerState.selectedIndex === i}

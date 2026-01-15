@@ -1,11 +1,13 @@
 <script lang="ts">
-  import type { FormalityChoiceStep } from "$lib/content-model";
+  import type { FormalityChoiceStep } from "@pkg/content-model";
   import { createEventDispatcher } from "svelte";
 
   export let step: FormalityChoiceStep;
   export let lessonId: string = '';
 
-  const dispatch = createEventDispatcher();
+  const dispatch = createEventDispatcher<{
+    answer: { correct: boolean; userAnswer: string; correctAnswer: string; allowContinue: boolean };
+  }>();
 
   let selectedAnswer: "formal" | "informal" | null = null;
   let isAnswered = false;

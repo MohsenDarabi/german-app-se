@@ -8,7 +8,7 @@
   export let step: TranslationStep;
   export let lessonId: string = '';
 
-  const dispatch = createEventDispatcher();
+  const dispatch = createEventDispatcher<{ answer: { correct: boolean; allowContinue: boolean } }>();
 
   // Parse template into parts with blanks
   $: parts = step.sentenceTemplate.split(/(\{[0-9]+\})/g);
@@ -78,7 +78,7 @@
   </div>
 
   <div class="answer-area" dir={answerDir} class:correct={isAnswered && isCorrect} class:wrong={isAnswered && !isCorrect}>
-    {#each parts as part}
+    {#each parts as part, i (i)}
       {#if part.match(/\{[0-9]+\}/)}
         {@const blankIdx = getBlankIndex(part)}
         <span class="blank-wrapper">
@@ -103,7 +103,7 @@
   </div>
 
   <div class="options-grid">
-    {#each step.options as option, i}
+    {#each step.options as option, i (i)}
       <button
         class="option-btn"
         class:used={selectedAnswers.includes(i)}

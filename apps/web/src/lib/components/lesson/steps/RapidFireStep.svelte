@@ -5,7 +5,9 @@
   export let step: RapidFireStep;
   export let lessonId: string = '';
 
-  const dispatch = createEventDispatcher();
+  const dispatch = createEventDispatcher<{
+    answer: { correct: boolean; userAnswer: string; correctAnswer: string; allowContinue: boolean };
+  }>();
 
   let currentIndex = 0;
   let score = 0;
