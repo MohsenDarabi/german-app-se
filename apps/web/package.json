@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "lint": "eslint .",
     "typecheck": "svelte-check && tsc --noEmit",
-    "test": "vitest"
+    "test": "vitest",
+    "rebuild": "./scripts/rebuild.sh"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "^7.0.0",
