@@ -48,7 +48,7 @@ COPY . .
 EXPOSE 5173
 
 # Start dev server with host binding for Docker
-CMD ["pnpm", "dev", "--filter", "@app/web", "--", "--host", "0.0.0.0"]
+CMD ["sh", "-c", "cd apps/web && pnpm exec vite --host 0.0.0.0"]
 
 # ============================================
 # Stage 4: Build for Production
