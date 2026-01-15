@@ -2,18 +2,51 @@
   import { onMount } from 'svelte';
   import { goto } from '$app/navigation';
   import { supabase } from '$lib/supabase/client';
+  import { page } from '$app/stores';
 
   let error: string | null = null;
+  let message: string | null = null;
 
   onMount(async () => {
     try {
+      // Check for email confirmation tokens in URL (query params)
+      const token = $page.url.searchParams.get('token');
+      const type = $page.url.searchParams.get('type');
+      const tokenHash = $page.url.searchParams.get('token_hash');
+
+      // Handle email confirmation (Supabase PKCE flow)
+      if (tokenHash && type) {
+        console.log('[Auth Callback] Email confirmation detected, type:', type);
+
+        const { data, error: verifyError } = await supabase.auth.verifyOtp({
+          token_hash: tokenHash,
+          type: type as 'signup' | 'email' | 'recovery' | 'invite' | 'email_change'
+        });
+
+        if (verifyError) {
+          console.error('[Auth Callback] Email verification error:', verifyError);
+          error = 'خطا در تأیید ایمیل: ' + verifyError.message;
+          setTimeout(() => goto('/login'), 3000);
+          return;
+        }
+
+        if (data.session) {
+          console.log('[Auth Callback] Email verified, session created');
+          message = 'ایمیل شما تأیید شد! در حال انتقال...';
+          setTimeout(() => {
+            window.location.href = '/';
+          }, 1500);
+          return;
+        }
+      }
+
       // Check if there's a hash fragment with OAuth tokens
       const hashParams = new URLSearchParams(window.location.hash.substring(1));
       const accessToken = hashParams.get('access_token');
       const refreshToken = hashParams.get('refresh_token');
 
       if (accessToken && refreshToken) {
-        console.log('OAuth tokens found in URL, setting session...');
+        console.log('[Auth Callback] OAuth tokens found in URL, setting session...');
 
         // Explicitly set the session from the OAuth tokens
         const { data, error: setSessionError } = await supabase.auth.setSession({
@@ -22,14 +55,14 @@
         });
 
         if (setSessionError) {
-          console.error('Error setting session:', setSessionError);
+          console.error('[Auth Callback] Error setting session:', setSessionError);
           error = setSessionError.message;
           setTimeout(() => goto('/login'), 3000);
           return;
         }
 
         if (data.session) {
-          console.log('Session set successfully, redirecting to dashboard...');
+          console.log('[Auth Callback] Session set successfully, redirecting to dashboard...');
           // Clean up the URL hash
           window.location.hash = '';
           // Use window.location instead of goto to ensure cookies are sent
@@ -42,21 +75,21 @@
       const { data: { session }, error: sessionError } = await supabase.auth.getSession();
 
       if (sessionError) {
-        console.error('Auth callback error:', sessionError);
+        console.error('[Auth Callback] Auth callback error:', sessionError);
         error = sessionError.message;
         setTimeout(() => goto('/login'), 3000);
         return;
       }
 
       if (session) {
-        console.log('Login successful, redirecting to dashboard...');
+        console.log('[Auth Callback] Login successful, redirecting to dashboard...');
         window.location.href = '/';
       } else {
-        console.log('No session found, redirecting to login...');
+        console.log('[Auth Callback] No session found, redirecting to login...');
         goto('/login');
       }
     } catch (err) {
-      console.error('Unexpected error during auth callback:', err);
+      console.error('[Auth Callback] Unexpected error during auth callback:', err);
       error = 'An unexpected error occurred';
       setTimeout(() => goto('/login'), 3000);
     }
@@ -74,6 +107,10 @@
       <h2>Authentication Failed</h2>
       <p class="error-message">{error}</p>
       <p class="redirect-notice">Redirecting to sign in page...</p>
+    {:else if message}
+      <div class="success-icon">✅</div>
+      <h2>ایمیل تأیید شد!</h2>
+      <p class="success-message">{message}</p>
     {:else}
       <div class="spinner"></div>
       <h2>Signing you in...</h2>
@@ -114,9 +151,15 @@
     to { transform: rotate(360deg); }
   }
 
-  .error-icon {
+  .error-icon,
+  .success-icon {
     font-size: 4rem;
     margin-bottom: 1rem;
+  }
+
+  .success-message {
+    color: #059669;
+    font-weight: 500;
   }
 
   h2 {

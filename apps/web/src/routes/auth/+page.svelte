@@ -1,9 +1,19 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
   import { supabase } from '$lib/supabase/client';
   import { goto } from '$app/navigation';
 
   let isLoading = false;
   let error: string | null = null;
+
+  onMount(() => {
+    // Check if this is an email confirmation redirect with tokens in hash
+    // If so, forward to /auth/callback to handle it properly
+    if (window.location.hash && window.location.hash.includes('access_token')) {
+      console.log('[Auth] Detected tokens in hash, forwarding to callback...');
+      window.location.href = '/auth/callback' + window.location.hash;
+    }
+  });
 
   async function signInWithGoogle() {
     try {
