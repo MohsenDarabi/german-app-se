@@ -3,6 +3,7 @@
   import { goto, beforeNavigate } from '$app/navigation';
   import { page } from '$app/stores';
   import { auth, isAuthenticated, isLoading } from '$lib/stores/auth';
+  import { isOnboarded } from '$lib/stores/languagePreference';
 
   // Public routes that don't require authentication
   const PUBLIC_ROUTES = ['/login', '/auth', '/auth/callback'];
@@ -47,6 +48,12 @@
         goto('/login', { replaceState: true });
       } else if ($isAuthenticated && currentPath === '/login') {
         // Authenticated and on login page -> redirect to home
+        goto('/', { replaceState: true });
+      } else if ($isAuthenticated && !$isOnboarded && currentPath !== '/onboarding') {
+        // Authenticated but not onboarded -> redirect to onboarding
+        goto('/onboarding', { replaceState: true });
+      } else if ($isAuthenticated && $isOnboarded && currentPath === '/onboarding') {
+        // Already onboarded but on onboarding page -> redirect to home
         goto('/', { replaceState: true });
       }
     }

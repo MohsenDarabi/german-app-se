@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { A1_MODULES, A2_MODULES } from "$lib/data/modules";
+  import { getAllModulesForLanguage } from "$lib/data/modules";
   import { onMount } from "svelte";
   import { browser } from "$app/environment";
   import { db } from "$lib/db";
@@ -8,6 +8,13 @@
   import { devMode } from "$lib/stores/devMode";
   import { resetLessonForReplay, clearLessonWrongAnswers } from "$lib/services/progressService";
   import { XPBar, StreakCounter, Button } from '@pkg/ui';
+  import { selectedPair, currentLanguagePack } from "$lib/stores/languagePreference";
+
+  // Dynamic module loading based on selected language
+  $: modules = getAllModulesForLanguage($selectedPair);
+  $: A1_MODULES = modules.A1;
+  $: A2_MODULES = modules.A2;
+  $: languageName = $currentLanguagePack?.name.target || 'آلمانی';
 
   // Fix BiDi for mixed Persian/German titles - wrap parenthesized text in LTR
   function fixBiDiTitle(title: string): string {
@@ -196,7 +203,7 @@
   <header class="header">
     <div class="header-top">
       <h1 class="title">مسیر یادگیری شما</h1>
-      <p class="subtitle">آلمانی سطح A1 و A2</p>
+      <p class="subtitle">{languageName} سطح A1 و A2</p>
     </div>
 
     <!-- XP Bar + Streak Row -->

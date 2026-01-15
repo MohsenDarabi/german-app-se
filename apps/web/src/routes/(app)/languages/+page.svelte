@@ -1,52 +1,17 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
   import { goto } from '$app/navigation';
-  import { getState, isCdnEnabled } from '$lib/services/assetService';
+  import { isCdnEnabled } from '$lib/services/assetService';
+  import { init as initAssetService } from '$lib/services/assetService';
   import { downloadedLessons, totalCacheSize, formatBytes, isPremium } from '$lib/stores/premium';
+  import {
+    languagePreference,
+    selectedPair,
+    LANGUAGE_PACKS,
+    type LanguagePack
+  } from '$lib/stores/languagePreference';
 
-  interface LanguagePack {
-    id: string;
-    name: { source: string; target: string };
-    flag: string;
-    levels: string[];
-    totalLessons: number;
-    freeLessons: number;
-    available: boolean;
-  }
+  let switching = false;
 
-  // Available language packs
-  const languagePacks: LanguagePack[] = [
-    {
-      id: 'de-fa',
-      name: { source: 'Deutsch', target: 'آلمانی' },
-      flag: '🇩🇪',
-      levels: ['A1', 'A2', 'B1', 'B2'],
-      totalLessons: 60,
-      freeLessons: 6,
-      available: true,
-    },
-    {
-      id: 'en-fa',
-      name: { source: 'English', target: 'انگلیسی' },
-      flag: '🇬🇧',
-      levels: ['A1', 'A2', 'B1', 'B2'],
-      totalLessons: 60,
-      freeLessons: 6,
-      available: false, // Coming soon
-    },
-    {
-      id: 'fr-fa',
-      name: { source: 'Francais', target: 'فرانسوی' },
-      flag: '🇫🇷',
-      levels: ['A1', 'A2', 'B1', 'B2'],
-      totalLessons: 60,
-      freeLessons: 6,
-      available: false, // Coming soon
-    },
-  ];
-
-  // Active language (from assetService)
-  $: activeLanguage = getState().languagePair;
   $: cdnEnabled = isCdnEnabled();
 
   // Count downloaded lessons per language
@@ -54,11 +19,28 @@
     return $downloadedLessons.filter(l => l.languagePair === languageId).length;
   }
 
-  function selectLanguage(langId: string) {
-    if (languagePacks.find(l => l.id === langId)?.available) {
-      // In future: switch active language
-      // For now, just go to home
+  async function selectLanguage(pack: LanguagePack) {
+    if (!pack.available || pack.id === $selectedPair || switching) return;
+
+    switching = true;
+
+    try {
+      // Set the new language preference
+      languagePreference.setLanguage(pack.id);
+
+      // Reinitialize asset service with new language
+      try {
+        await initAssetService(pack.id);
+      } catch (e) {
+        console.warn('[Languages] Asset service reinit warning:', e);
+      }
+
+      // Navigate to home
       goto('/');
+    } catch (e) {
+      console.error('[Languages] Switch failed:', e);
+    } finally {
+      switching = false;
     }
   }
 </script>
@@ -78,29 +60,29 @@
   {/if}
 
   <div class="language-grid">
-    {#each languagePacks as lang}
+    {#each LANGUAGE_PACKS as pack}
       <button
         class="language-card"
-        class:active={lang.id === activeLanguage}
-        class:disabled={!lang.available}
-        on:click={() => selectLanguage(lang.id)}
+        class:active={pack.id === $selectedPair}
+        class:disabled={!pack.available}
+        disabled={switching || !pack.available}
+        on:click={() => selectLanguage(pack)}
       >
-        <div class="lang-flag">{lang.flag}</div>
+        <div class="lang-flag">{pack.flag}</div>
         <div class="lang-info">
           <h2 class="lang-name">
-            <span class="target-name">{lang.name.target}</span>
-            <span class="source-name" dir="ltr">{lang.name.source}</span>
+            <span class="target-name">{pack.name.target}</span>
+            <span class="source-name" dir="ltr">{pack.name.source}</span>
           </h2>
           <div class="lang-meta">
-            <span class="levels">{lang.levels.join(' - ')}</span>
-            <span class="lessons">{lang.totalLessons} درس</span>
+            <span class="levels">{pack.levels.join(' - ')}</span>
           </div>
         </div>
 
         <div class="lang-status">
-          {#if !lang.available}
+          {#if !pack.available}
             <span class="badge coming-soon">به زودی</span>
-          {:else if lang.id === activeLanguage}
+          {:else if pack.id === $selectedPair}
             <span class="badge active">فعال</span>
           {:else}
             <span class="badge">انتخاب</span>
@@ -108,8 +90,8 @@
         </div>
 
         <!-- Download status for premium -->
-        {#if $isPremium && lang.available}
-          {@const downloaded = getDownloadedCount(lang.id)}
+        {#if $isPremium && pack.available}
+          {@const downloaded = getDownloadedCount(pack.id)}
           {#if downloaded > 0}
             <div class="download-status">
               <span class="download-icon">✓</span>

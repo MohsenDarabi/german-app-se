@@ -6,6 +6,7 @@
   import { init as initAssetService } from '$lib/services/assetService';
   import { initDeepLinkHandler } from '$lib/services/deepLinkHandler';
   import { theme } from '$lib/stores/theme';
+  import { languagePreference } from '$lib/stores/languagePreference';
 
   // Import design tokens
   import '$lib/styles/tokens.css';
@@ -20,9 +21,10 @@
     // Initialize deep link handler for OAuth callbacks
     initDeepLinkHandler();
 
-    // Initialize asset service
+    // Initialize asset service with user's language preference
     try {
-      initAssetService('de-fa');
+      const { selectedPair } = languagePreference.getState();
+      initAssetService(selectedPair);
     } catch (e) {
       console.warn('[App] Asset service init failed:', e);
     }
