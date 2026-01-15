@@ -2,6 +2,9 @@
 /**
  * Upload language pack to Cloudflare R2 (deduplicated)
  *
+ * This script uploads AUDIO and IMAGES to R2 CDN.
+ * For lesson JSON content, use: scripts/upload-content-to-r2.js
+ *
  * Features:
  * - Reads existing audio manifest (scripts/audio-data/manifest.json)
  * - Reads asset registry (apps/web/src/lib/data/asset-registry.json)
@@ -14,6 +17,9 @@
  *   node scripts/upload-to-r2.js --dry-run          # Preview what would upload
  *   node scripts/upload-to-r2.js                    # Actually upload
  *   node scripts/upload-to-r2.js --force            # Re-upload all (ignore existing)
+ *
+ * Full content upload (audio + images + lesson JSON):
+ *   node scripts/upload-to-r2.js && node scripts/upload-content-to-r2.js
  *
  * Environment variables (from .env.local):
  *   R2_ACCOUNT_ID, R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY, R2_BUCKET_NAME
