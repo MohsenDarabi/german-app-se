@@ -275,10 +275,22 @@
 <DevModeToggle />
 
 <style>
+  /* Mobile-first: full width, minimal padding */
   .dashboard {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: var(--space-6, 1.5rem) var(--space-4, 1rem);
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: var(--space-3, 0.75rem);
+    box-sizing: border-box;
+  }
+
+  /* Tablet and up: constrained width */
+  @media (min-width: 600px) {
+    .dashboard {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: var(--space-6, 1.5rem) var(--space-4, 1rem);
+    }
   }
 
   /* Header Section */
@@ -730,109 +742,270 @@
     color: var(--color-neutral-100, #f5f0e8);
   }
 
-  /* Mobile Responsive */
-  @media (max-width: 600px) {
-    .dashboard {
+  /* ===== MOBILE-FIRST OVERRIDES ===== */
+  /* These are the default mobile styles - defined above as desktop then overridden here */
+
+  /* Title - smaller on mobile */
+  .title {
+    font-size: var(--text-xl, 1.25rem);
+  }
+
+  @media (min-width: 600px) {
+    .title {
+      font-size: var(--text-2xl, 1.75rem);
+    }
+  }
+
+  /* Gamification row - stack on mobile */
+  .gamification-row {
+    flex-direction: column;
+    gap: var(--space-4, 1rem);
+  }
+
+  @media (min-width: 600px) {
+    .gamification-row {
+      flex-direction: row;
+      gap: var(--space-6, 1.5rem);
+    }
+  }
+
+  /* XP section */
+  .xp-section {
+    max-width: 100%;
+    width: 100%;
+    min-width: auto;
+  }
+
+  @media (min-width: 600px) {
+    .xp-section {
+      flex: 1;
+      max-width: 300px;
+      min-width: 200px;
+    }
+  }
+
+  /* Stats grid - tighter on mobile */
+  .stats-grid {
+    gap: var(--space-2, 0.5rem);
+  }
+
+  @media (min-width: 600px) {
+    .stats-grid {
+      gap: var(--space-3, 0.75rem);
+    }
+  }
+
+  /* Stat cards - smaller padding on mobile */
+  .stat-card {
+    padding: var(--space-3, 0.75rem) var(--space-2, 0.5rem);
+  }
+
+  @media (min-width: 600px) {
+    .stat-card {
       padding: var(--space-4, 1rem) var(--space-3, 0.75rem);
     }
+  }
 
-    .title {
+  /* Stat value - smaller on mobile */
+  .stat-value {
+    font-size: var(--text-base, 1rem);
+  }
+
+  @media (min-width: 600px) {
+    .stat-value {
       font-size: var(--text-xl, 1.25rem);
     }
+  }
 
-    .gamification-row {
-      flex-direction: column;
+  /* Timeline - hide line on mobile */
+  .timeline::before {
+    display: none;
+  }
+
+  @media (min-width: 600px) {
+    .timeline::before {
+      display: block;
+    }
+  }
+
+  /* Lesson cards - wrap on mobile */
+  .lesson-card {
+    flex-wrap: wrap;
+    padding: var(--space-3, 0.75rem);
+    gap: var(--space-3, 0.75rem);
+  }
+
+  @media (min-width: 600px) {
+    .lesson-card {
+      flex-wrap: nowrap;
+      padding: var(--space-4, 1rem);
       gap: var(--space-4, 1rem);
     }
+  }
 
-    .xp-section {
-      max-width: 100%;
-      width: 100%;
-    }
+  /* Lesson icon - smaller on mobile */
+  .lesson-icon {
+    width: 3rem;
+    height: 3rem;
+    box-shadow: 0 2px 8px rgba(8, 145, 178, 0.2);
+  }
 
-    .stats-grid {
-      gap: var(--space-2, 0.5rem);
-    }
-
-    .stat-card {
-      padding: var(--space-3, 0.75rem) var(--space-2, 0.5rem);
-    }
-
-    .stat-value {
-      font-size: var(--text-base, 1rem);
-    }
-
-    .timeline::before {
-      display: none;
-    }
-
-    .lesson-card {
-      flex-wrap: wrap;
-      padding: var(--space-3, 0.75rem);
-      gap: var(--space-3, 0.75rem);
-    }
-
+  @media (min-width: 600px) {
     .lesson-icon {
-      width: 3rem;
-      height: 3rem;
-      box-shadow: 0 2px 8px rgba(8, 145, 178, 0.2);
+      width: 3.5rem;
+      height: 3.5rem;
+      box-shadow: 0 0 0 4px var(--color-neutral-50, #fdfbf7), 0 4px 12px rgba(8, 145, 178, 0.3);
     }
+  }
 
+  .lesson-icon .lesson-num {
+    font-size: var(--text-sm, 0.875rem);
+  }
+
+  @media (min-width: 600px) {
     .lesson-icon .lesson-num {
-      font-size: var(--text-sm, 0.875rem);
-    }
-
-    .lesson-info h3 {
-      font-size: var(--text-sm, 0.875rem);
-    }
-
-    .lesson-info p {
-      font-size: var(--text-xs, 0.75rem);
-    }
-
-    .lesson-action {
-      width: 100%;
-      margin-top: var(--space-1, 0.25rem);
-    }
-
-    .action-btn {
-      width: 100%;
-      padding: var(--space-3, 0.75rem);
-    }
-
-    .action-group {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-
-    .action-group .action-btn {
-      flex: 1;
-    }
-
-    .reset-btn {
-      white-space: nowrap;
-    }
-
-    .module-title {
-      margin-left: 0;
-      margin-bottom: var(--space-3, 0.75rem);
-      display: block;
-      text-align: center;
-    }
-
-    .level-title {
       font-size: var(--text-base, 1rem);
-      padding: var(--space-3, 0.75rem);
     }
+  }
 
+  /* Lesson info - smaller text on mobile */
+  .lesson-info h3 {
+    font-size: var(--text-sm, 0.875rem);
+  }
+
+  @media (min-width: 600px) {
+    .lesson-info h3 {
+      font-size: var(--text-base, 1rem);
+    }
+  }
+
+  .lesson-info p {
+    font-size: var(--text-xs, 0.75rem);
+  }
+
+  @media (min-width: 600px) {
+    .lesson-info p {
+      font-size: var(--text-sm, 0.875rem);
+    }
+  }
+
+  /* Lesson action - full width on mobile */
+  .lesson-action {
+    width: 100%;
+    margin-top: var(--space-1, 0.25rem);
+  }
+
+  @media (min-width: 600px) {
+    .lesson-action {
+      width: auto;
+      margin-top: 0;
+    }
+  }
+
+  /* Action button - full width on mobile */
+  .action-btn {
+    width: 100%;
+    padding: var(--space-3, 0.75rem);
+  }
+
+  @media (min-width: 600px) {
+    .action-btn {
+      width: auto;
+      padding: var(--space-2, 0.5rem) var(--space-4, 1rem);
+    }
+  }
+
+  /* Action group - row on mobile */
+  .action-group {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 600px) {
+    .action-group {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
+
+  .action-group .action-btn {
+    flex: 1;
+  }
+
+  @media (min-width: 600px) {
+    .action-group .action-btn {
+      flex: none;
+    }
+  }
+
+  .reset-btn {
+    white-space: nowrap;
+  }
+
+  /* Module title - centered on mobile */
+  .module-title {
+    margin-left: 0;
+    margin-bottom: var(--space-3, 0.75rem);
+    display: block;
+    text-align: center;
+  }
+
+  @media (min-width: 600px) {
+    .module-title {
+      display: inline-block;
+      margin-left: var(--space-10, 2.5rem);
+      margin-bottom: var(--space-4, 1rem);
+      text-align: right;
+    }
+  }
+
+  /* Level title - smaller on mobile */
+  .level-title {
+    font-size: var(--text-base, 1rem);
+    padding: var(--space-3, 0.75rem);
+  }
+
+  @media (min-width: 600px) {
+    .level-title {
+      font-size: var(--text-xl, 1.25rem);
+      padding: var(--space-4, 1rem);
+    }
+  }
+
+  /* Level badge - smaller on mobile */
+  .level-badge {
+    width: 32px;
+    height: 32px;
+    font-size: var(--text-xs, 0.75rem);
+  }
+
+  @media (min-width: 600px) {
     .level-badge {
-      width: 32px;
-      height: 32px;
-      font-size: var(--text-xs, 0.75rem);
+      width: 40px;
+      height: 40px;
+      font-size: var(--text-sm, 0.875rem);
+    }
+  }
+
+  /* Lessons list - tighter on mobile */
+  .lessons-list {
+    gap: var(--space-3, 0.75rem);
+  }
+
+  @media (min-width: 600px) {
+    .lessons-list {
+      gap: var(--space-4, 1rem);
+    }
+  }
+
+  /* Disable hover effects on mobile */
+  @media (max-width: 599px) {
+    .lesson-card:hover {
+      transform: none;
     }
 
-    .lessons-list {
-      gap: var(--space-3, 0.75rem);
+    .stat-card:hover {
+      transform: none;
     }
   }
 </style>

@@ -4,6 +4,8 @@
   import { browser } from "$app/environment";
   import StepRenderer from "$lib/components/lesson/StepRenderer.svelte";
   import LessonReview from "$lib/components/lesson/LessonReview.svelte";
+  import ExitConfirmationDialog from "$lib/components/lesson/ExitConfirmationDialog.svelte";
+  import LessonSettingsMenu from "$lib/components/lesson/LessonSettingsMenu.svelte";
   import { lessonStore, currentStep } from "../../../lessonStore";
   import {
     saveWrongAnswer,
@@ -15,6 +17,10 @@
   import type { WrongAnswer } from "$lib/db";
 
   export let data;
+
+  // Exit dialog and menu state
+  let showExitDialog = false;
+  let showSettingsMenu = false;
 
   // Helper to extract question text from various step types
   function getQuestionText(step: any): string {
@@ -139,11 +145,40 @@
     // Force full page reload to ensure liveQuery picks up database changes
     window.location.href = '/';
   }
+
+  // Exit button handler - show dialog if lesson started, otherwise exit directly
+  function handleExitClick() {
+    if ($lessonStore.currentIndex > 0) {
+      showExitDialog = true;
+    } else {
+      backToDashboard();
+    }
+  }
+
+  function handleExitDialogContinue() {
+    showExitDialog = false;
+  }
+
+  function handleExitDialogExit() {
+    showExitDialog = false;
+    backToDashboard();
+  }
+
+  function toggleSettingsMenu() {
+    showSettingsMenu = !showSettingsMenu;
+  }
+
+  function closeSettingsMenu() {
+    showSettingsMenu = false;
+  }
+
+  // Calculate progress percentage for exit dialog
+  $: progressPercent = Math.round(($lessonStore.currentIndex / (data.lesson?.steps?.length || 1)) * 100);
 </script>
 
 <div class="lesson-layout">
   <header class="lesson-header">
-    <button class="exit-btn" on:click={backToDashboard} title="خروج">
+    <button class="exit-btn" on:click={handleExitClick} title="خروج">
       ✕
     </button>
     <div class="progress-bar">
@@ -153,6 +188,12 @@
       ></div>
     </div>
     <span class="step-counter">{$lessonStore.currentIndex + 1}/{data.lesson.steps.length}</span>
+    <div class="menu-wrapper">
+      <button class="menu-btn" on:click={toggleSettingsMenu} title="تنظیمات">
+        ⋮
+      </button>
+      <LessonSettingsMenu isOpen={showSettingsMenu} on:close={closeSettingsMenu} />
+    </div>
   </header>
 
   <main class="lesson-content">
@@ -212,6 +253,14 @@
   {/if}
 </div>
 
+<!-- Exit Confirmation Dialog -->
+<ExitConfirmationDialog
+  isOpen={showExitDialog}
+  progress={progressPercent}
+  on:continue={handleExitDialogContinue}
+  on:exit={handleExitDialogExit}
+/>
+
 <style>
   /*
    * Clean, full-height lesson layout (Busuu-style)
@@ -232,6 +281,7 @@
   .lesson-header {
     flex-shrink: 0;
     padding: var(--space-2, 0.5rem) var(--space-3, 0.75rem);
+    padding-top: calc(var(--space-2, 0.5rem) + env(safe-area-inset-top, 0px));
     display: flex;
     align-items: center;
     gap: var(--space-3, 0.75rem);
@@ -256,6 +306,33 @@
   }
 
   .exit-btn:hover {
+    background: var(--color-neutral-200, #e8e0d5);
+    color: var(--color-neutral-700, #44403c);
+    transform: scale(1.05);
+  }
+
+  .menu-wrapper {
+    position: relative;
+    flex-shrink: 0;
+  }
+
+  .menu-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-full, 50%);
+    border: none;
+    background: var(--color-neutral-100, #f5f0e8);
+    color: var(--color-neutral-500, #78716c);
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-normal, 200ms);
+  }
+
+  .menu-btn:hover {
     background: var(--color-neutral-200, #e8e0d5);
     color: var(--color-neutral-700, #44403c);
     transform: scale(1.05);
@@ -555,6 +632,16 @@
   }
 
   :global([data-theme="dark"]) .exit-btn:hover {
+    background: #57534e;
+    color: #e8e0d5;
+  }
+
+  :global([data-theme="dark"]) .menu-btn {
+    background: #44403c;
+    color: #a69b8a;
+  }
+
+  :global([data-theme="dark"]) .menu-btn:hover {
     background: #57534e;
     color: #e8e0d5;
   }

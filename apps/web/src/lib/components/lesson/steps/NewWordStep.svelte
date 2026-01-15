@@ -42,8 +42,8 @@
 </script>
 
 <div class="new-word-step">
-  <!-- Header hint -->
-  <p class="hint">یک کلمه جدید!</p>
+  <!-- Header hint - RTL for proper punctuation placement -->
+  <p class="hint" dir="rtl">یک کلمه جدید!</p>
 
   <!-- Image area - large, full width -->
   <div class="image-area">
@@ -98,45 +98,45 @@
 </div>
 
 <style>
-  /* Busuu-style clean layout */
+  /* Busuu-style clean layout - compact gaps for better space usage */
   .new-word-step {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: var(--space-4, 1rem);
-    padding: var(--space-2, 0.5rem) 0;
+    gap: var(--space-3, 0.75rem);
+    padding: 0;
   }
 
   /* Header hint - like Busuu's "Look, something new!" */
   .hint {
-    font-size: var(--text-base, 1rem);
+    font-size: var(--text-sm, 0.875rem);
     color: var(--color-primary-500, #0891b2);
     font-weight: var(--font-semibold, 600);
     margin: 0;
   }
 
-  /* Large image area */
+  /* Image area - flexible sizing */
   .image-area {
     width: 100%;
     display: flex;
     justify-content: center;
+    flex: 0 1 auto;
   }
 
   .vocab-image {
-    width: 100%;
-    max-width: 280px;
+    width: auto;
+    max-width: 100%;
     height: auto;
-    aspect-ratio: 4/3;
-    object-fit: cover;
+    max-height: 35vh;
+    object-fit: contain;
     border-radius: var(--radius-xl, 1rem);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
   }
 
   .image-placeholder {
-    width: 100%;
-    max-width: 280px;
-    aspect-ratio: 4/3;
+    width: 200px;
+    height: 150px;
     background: linear-gradient(135deg, var(--color-neutral-100, #f5f0e8), var(--color-neutral-200, #e8e0d5));
     border-radius: var(--radius-xl, 1rem);
     display: flex;
@@ -146,22 +146,29 @@
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
   }
 
+  /* Tablet+: larger images */
+  @media (min-width: 768px) {
+    .vocab-image {
+      max-height: 40vh;
+    }
+  }
+
   /* Word section - prominent */
   .word-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--space-2, 0.5rem);
+    gap: var(--space-1, 0.25rem);
   }
 
   .word-row {
     display: flex;
     align-items: center;
-    gap: var(--space-3, 0.75rem);
+    gap: var(--space-2, 0.5rem);
   }
 
   .german-word {
-    font-size: var(--text-4xl, 2.5rem);
+    font-size: var(--text-3xl, 1.875rem);
     font-weight: var(--font-extrabold, 800);
     color: var(--color-neutral-800, #292524);
     margin: 0;
@@ -169,9 +176,20 @@
   }
 
   .translation {
-    font-size: var(--text-lg, 1.125rem);
+    font-size: var(--text-base, 1rem);
     color: var(--color-neutral-500, #78716c);
     margin: 0;
+  }
+
+  /* Larger screens: bigger text */
+  @media (min-width: 768px) {
+    .german-word {
+      font-size: var(--text-4xl, 2.25rem);
+    }
+
+    .translation {
+      font-size: var(--text-lg, 1.125rem);
+    }
   }
 
   /* Save button */
@@ -202,8 +220,8 @@
   /* Example section - clean separator */
   .example-section {
     width: 100%;
-    padding-top: var(--space-4, 1rem);
-    margin-top: var(--space-2, 0.5rem);
+    padding-top: var(--space-3, 0.75rem);
+    margin-top: var(--space-1, 0.25rem);
     border-top: 1px solid var(--color-neutral-200, #e8e0d5);
   }
 
@@ -212,7 +230,7 @@
     align-items: center;
     justify-content: center;
     gap: var(--space-2, 0.5rem);
-    margin-bottom: var(--space-2, 0.5rem);
+    margin-bottom: var(--space-1, 0.25rem);
   }
 
   .label-text {
