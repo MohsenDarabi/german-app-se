@@ -13,7 +13,9 @@
 
 set -e
 
-cd "$(dirname "$0")/.."
+# Store the apps/web directory
+SCRIPT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
+cd "$SCRIPT_DIR"
 
 # Parse arguments
 TARGET="device"
@@ -69,40 +71,36 @@ pnpm run build
 echo "🔄 Syncing with Capacitor..."
 npx cap sync ios
 
-echo "🔨 Building iOS app..."
-cd ios/App
-
 if [ "$TARGET" = "simulator" ]; then
     echo "📱 Running on simulator..."
-    cd ../..
     npx cap run ios
 else
     # Build for device
-    if [ -n "$DEVICE_ID" ]; then
-        DESTINATION="id=$DEVICE_ID"
-    else
+    if [ -z "$DEVICE_ID" ]; then
         # Try to find connected device
-        DEVICE_ID=$(npx cap run ios --list 2>/dev/null | grep -v "simulator" | grep -v "API" | grep -v "^-" | head -1 | awk '{print $NF}')
-        if [ -n "$DEVICE_ID" ]; then
-            DESTINATION="id=$DEVICE_ID"
-            echo "📱 Found device: $DEVICE_ID"
-        else
-            echo "⚠️  No physical device found. Use --simulator or connect a device."
-            echo "   List targets: ./scripts/rebuild-ios.sh --list"
-            exit 1
-        fi
+        DEVICE_ID=$(npx cap run ios --list 2>/dev/null | grep -v "simulator" | grep -v "API" | grep -v "^-" | grep -v "^Name" | head -1 | awk '{print $NF}')
     fi
 
-    echo "🏗️  Building with xcodebuild..."
+    if [ -z "$DEVICE_ID" ]; then
+        echo "⚠️  No physical device found. Use --simulator or connect a device."
+        echo "   List targets: ./scripts/rebuild-ios.sh --list"
+        exit 1
+    fi
+
+    echo "📱 Building for device: $DEVICE_ID"
+    echo "🔨 Building iOS app..."
+
+    cd "$SCRIPT_DIR/ios/App"
     xcodebuild -project App.xcodeproj -scheme "App" -configuration Debug \
-        -destination "$DESTINATION" build
+        -destination "id=$DEVICE_ID" build
 
     echo ""
     echo "✅ Build complete!"
     echo ""
     echo "📲 To install on device, either:"
     echo "   1. Open Xcode and press Cmd+R (recommended for wireless)"
-    echo "   2. Connect via USB and run: ios-deploy --bundle <path-to-app>"
+    echo "   2. Connect via USB and run:"
+    echo "      ios-deploy --bundle ~/Library/Developer/Xcode/DerivedData/App-*/Build/Products/Debug-iphoneos/App.app"
     echo ""
-    echo "   Xcode project: apps/web/ios/App/App.xcodeproj"
+    echo "   Xcode project: $SCRIPT_DIR/ios/App/App.xcodeproj"
 fi
