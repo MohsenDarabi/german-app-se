@@ -97,10 +97,6 @@ else
     echo ""
     echo "✅ Build complete!"
     echo ""
-    echo "📲 To install on device, either:"
-    echo "   1. Open Xcode and press Cmd+R (recommended for wireless)"
-    echo "   2. Connect via USB and run:"
-    echo "      ios-deploy --bundle ~/Library/Developer/Xcode/DerivedData/App-*/Build/Products/Debug-iphoneos/App.app"
-    echo ""
-    echo "   Xcode project: $SCRIPT_DIR/ios/App/App.xcodeproj"
+    echo "📲 Opening Xcode - press Cmd+R to install on device..."
+    open "$SCRIPT_DIR/ios/App/App.xcodeproj"
 fi
