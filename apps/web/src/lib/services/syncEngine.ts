@@ -30,18 +30,15 @@ export class SyncEngine {
    */
   async sync(): Promise<void> {
     if (this.syncInProgress) {
-      console.log('[SyncEngine] Sync already in progress, skipping...');
       return;
     }
 
     try {
       this.syncInProgress = true;
-      console.log('[SyncEngine] Starting sync...');
 
       // Check if user is authenticated
       const { data: { user } } = await supabase.auth.getUser();
       if (!user) {
-        console.log('[SyncEngine] No authenticated user, skipping sync');
         return;
       }
 
@@ -56,8 +53,6 @@ export class SyncEngine {
       if (typeof window !== 'undefined') {
         localStorage.setItem('lastSyncTimestamp', this.lastSyncTimestamp.toISOString());
       }
-
-      console.log('[SyncEngine] Sync completed successfully');
     } catch (error) {
       console.error('[SyncEngine] Sync error:', error);
       // Don't throw - we want the app to continue working offline
@@ -71,8 +66,6 @@ export class SyncEngine {
    * Uses upsert to handle both inserts and updates
    */
   private async pushLocalChanges(userId: string): Promise<void> {
-    console.log('[SyncEngine] Pushing local changes to cloud...');
-
     try {
       // Sync User data
       const localUser = await db.users.get(1);
@@ -143,8 +136,6 @@ export class SyncEngine {
         const { error } = await supabase.from('wrong_answers').upsert(wrongAnswersData);
         if (error) console.error('[SyncEngine] Error syncing wrong answers:', error);
       }
-
-      console.log('[SyncEngine] Push completed');
     } catch (error) {
       console.error('[SyncEngine] Error during push:', error);
       throw error;
@@ -156,8 +147,6 @@ export class SyncEngine {
    * Only updates local data if cloud version is newer (last-write-wins)
    */
   private async pullCloudChanges(userId: string): Promise<void> {
-    console.log('[SyncEngine] Pulling cloud changes to local...');
-
     try {
       // Pull User data
       const { data: cloudUser, error: userError } = await supabase
@@ -271,8 +260,6 @@ export class SyncEngine {
           }
         }
       }
-
-      console.log('[SyncEngine] Pull completed');
     } catch (error) {
       console.error('[SyncEngine] Error during pull:', error);
       throw error;
@@ -285,8 +272,6 @@ export class SyncEngine {
    */
   startBackgroundSync(): void {
     if (typeof window === 'undefined') return;
-
-    console.log('[SyncEngine] Starting background sync...');
 
     // Sync every 30 seconds
     this.syncIntervalId = window.setInterval(() => {
@@ -302,13 +287,7 @@ export class SyncEngine {
 
     // Sync when online
     window.addEventListener('online', () => {
-      console.log('[SyncEngine] Connection restored, syncing...');
       this.sync();
-    });
-
-    // Log offline status
-    window.addEventListener('offline', () => {
-      console.log('[SyncEngine] Connection lost, will sync when restored');
     });
   }
 
@@ -319,7 +298,6 @@ export class SyncEngine {
     if (this.syncIntervalId !== null) {
       clearInterval(this.syncIntervalId);
       this.syncIntervalId = null;
-      console.log('[SyncEngine] Background sync stopped');
     }
   }
 
