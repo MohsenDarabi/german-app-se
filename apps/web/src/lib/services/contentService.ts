@@ -11,7 +11,7 @@
 import { browser } from '$app/environment';
 import { writable, get } from 'svelte/store';
 import { PUBLIC_R2_URL } from '$env/static/public';
-import { LessonSchema, type Lesson } from '$lib/content-model';
+import { LessonSchema, type Lesson } from '@pkg/content-model';
 import * as assetService from './assetService';
 
 // Types
@@ -303,7 +303,7 @@ export async function loadLesson(lessonId: string): Promise<Lesson> {
         return lesson;
       }
     } catch (e) {
-      console.warn(`ContentService: CDN fetch failed for ${lessonId}, trying local`, e);
+      console.error(`ContentService: CDN fetch/parse failed for ${lessonId}:`, e);
     }
   }
 

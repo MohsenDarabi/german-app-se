@@ -202,7 +202,8 @@ export const DialogStepSchema = BaseStepSchema.extend({
   // Conversation lines with speaker names
   lines: z.array(
     z.object({
-      speakerId: z.string(), // "eli", "tom", etc.
+      speaker: z.string(), // "Eli", "Tom", etc.
+      speakerId: z.string().optional(), // Optional alias for backward compat
       text: BilingualTextSchema,
       audio: MediaSchema.optional(),
     })

@@ -5,13 +5,15 @@ import { error } from "@sveltejs/kit";
 import { browser } from "$app/environment";
 import * as contentService from "$lib/services/contentService";
 
+// Disable SSR - lesson loading requires browser features (IndexedDB, CDN fetch)
+export const ssr = false;
+
 export const load: PageLoad = async ({ params }) => {
   const { pair, level, lessonId } = params;
 
   // Initialize content service with the language pair
-  if (browser) {
-    await contentService.init(pair);
-  }
+  // With ssr=false, this always runs in the browser
+  await contentService.init(pair);
 
   try {
     // Load lesson through content service (handles CDN + caching + fallback)
