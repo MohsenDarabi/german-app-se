@@ -1,6 +1,7 @@
 import { writable, derived } from 'svelte/store';
 import type { Lesson } from '@pkg/content-model';
 import { getLessonProgress, saveStepProgress, updateStudyTime, clearLessonWrongAnswers, resetLessonForReplay } from '$lib/services/progressService';
+import { init as initAssetService } from '$lib/services/assetService';
 
 function createLessonStore() {
   const { subscribe, set, update } = writable({
@@ -15,6 +16,10 @@ function createLessonStore() {
   return {
     subscribe,
     init: async (lesson: Lesson, languagePair: string) => {
+      // Re-initialize asset service with this lesson's language pair
+      // This ensures audio URLs use the correct language (de-fa for German, en-fa for English)
+      await initAssetService(languagePair);
+
       // Load saved progress if exists - now using language pair
       const progress = await getLessonProgress(languagePair, lesson.id);
 

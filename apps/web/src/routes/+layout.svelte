@@ -3,10 +3,11 @@
   import AuthGuard from '$lib/components/auth/AuthGuard.svelte';
   import { auth } from '$lib/stores/auth';
   import { syncEngine } from '$lib/services/syncEngine';
-  import { init as initAssetService } from '$lib/services/assetService';
+  // Asset service is initialized by lesson pages with the correct language pair
+// import { init as initAssetService } from '$lib/services/assetService';
   import { initDeepLinkHandler } from '$lib/services/deepLinkHandler';
   import { theme } from '$lib/stores/theme';
-  import { languagePreference } from '$lib/stores/languagePreference';
+  // languagePreference no longer needed here - lesson pages handle asset service init
 
   // Import design tokens
   import '$lib/styles/tokens.css';
@@ -21,13 +22,8 @@
     // Initialize deep link handler for OAuth callbacks
     initDeepLinkHandler();
 
-    // Initialize asset service with user's language preference
-    try {
-      const { selectedPair } = languagePreference.getState();
-      initAssetService(selectedPair);
-    } catch (e) {
-      console.warn('[App] Asset service init failed:', e);
-    }
+    // Asset service is now initialized by lesson pages with the lesson's language pair
+    // This ensures audio matches the lesson content, not the user's preference
 
     // Subscribe to auth changes for sync engine
     unsubscribeAuth = auth.subscribe(async (state) => {

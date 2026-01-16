@@ -118,11 +118,29 @@ export async function init(languagePair: string = 'de-fa'): Promise<void> {
   } catch (error) {
     const message = error instanceof Error ? error.message : 'Unknown error';
     console.error('AssetService: Failed to initialize', error);
+
+    // If the requested language manifest fails, try to load de-fa as fallback for shared images
+    if (languagePair !== 'de-fa' && !manifestCache.has('de-fa')) {
+      try {
+        const fallbackUrl = `${CDN_BASE}/de-fa/manifest.json`;
+        const fallbackResponse = await fetch(fallbackUrl);
+        if (fallbackResponse.ok) {
+          const fallbackManifest: Manifest = await fallbackResponse.json();
+          manifestCache.set('de-fa', fallbackManifest);
+          console.log('AssetService: Loaded de-fa manifest as fallback for shared images');
+        }
+      } catch {
+        // Silently fail - fallback is best-effort
+      }
+    }
+
     state.update(s => ({
       ...s,
       loading: false,
       error: message,
       initialized: true, // Still mark as initialized to allow fallback
+      languagePair, // IMPORTANT: Update language pair even on failure for correct local fallback paths
+      manifest: null, // Clear manifest to force local path fallback
     }));
   }
 }
@@ -155,23 +173,32 @@ export function getAudioUrl(lessonId: string, audioId: string): string {
 
 /**
  * Get image URL by asset ID
+ * Images are shared across languages, so we fall back to de-fa manifest if current language's manifest isn't available
  */
 export function getImageUrl(imageId: string): string {
   const currentState = get(state);
 
-  if (!CDN_BASE || !currentState.manifest) {
+  if (!CDN_BASE) {
     // Fall back to local path
     return `/images/shared/${imageId}.png`;
   }
 
-  const path = currentState.manifest.images[imageId];
+  // Try current language's manifest first, then fall back to de-fa (images are shared)
+  const manifest = currentState.manifest || manifestCache.get('de-fa');
+
+  if (!manifest) {
+    return `/images/shared/${imageId}.png`;
+  }
+
+  const path = manifest.images[imageId];
 
   if (!path) {
     console.warn(`AssetService: Image not found in manifest: ${imageId}`);
     return `/images/shared/${imageId}.png`;
   }
 
-  return `${CDN_BASE}/${currentState.languagePair}${path}`;
+  // Use de-fa for shared images since they're the same across languages
+  return `${CDN_BASE}/de-fa${path}`;
 }
 
 /**
