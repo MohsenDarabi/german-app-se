@@ -12,12 +12,14 @@ export const ssr = false;
 export const load: PageLoad = async ({ params }) => {
   const { pair, level, lessonId } = params;
 
-  // Initialize both services with the lesson's language pair
+  // Initialize all services with the lesson's language pair
   // This ensures audio URLs use the correct language (de-fa for German lessons, en-fa for English)
+  // initShared loads the shared manifest (images) - only fetches once
   // With ssr=false, this always runs in the browser
   await Promise.all([
     contentService.init(pair),
     assetService.init(pair),
+    assetService.initShared(),
   ]);
 
   try {

@@ -18,12 +18,20 @@ interface Manifest {
   levels: string[];
   freeLessons: number;
   audioMap: Record<string, string>; // "lessonId/audioId" -> hash
-  images: Record<string, string>; // assetId -> path
   stats: {
     totalAudioFiles: number;
     totalAudioReferences: number;
-    totalImages: number;
     deduplicationSavings: string;
+  };
+  updatedAt: string;
+}
+
+interface SharedManifest {
+  version: string;
+  type: 'shared';
+  images: Record<string, string>; // assetId -> path
+  stats: {
+    totalImages: number;
   };
   updatedAt: string;
 }
@@ -51,6 +59,10 @@ const state = writable<AssetServiceState>({
 // Cache for manifests (by language pair)
 const manifestCache = new Map<string, Manifest>();
 
+// Shared manifest (language-agnostic images)
+let sharedManifest: SharedManifest | null = null;
+let sharedManifestLoading = false;
+
 /**
  * Check if CDN is configured
  */
@@ -63,6 +75,36 @@ export function isCdnEnabled(): boolean {
  */
 export function getCdnBase(): string {
   return CDN_BASE;
+}
+
+/**
+ * Initialize shared resources (images, characters)
+ * This is language-agnostic and only needs to be called once
+ */
+export async function initShared(): Promise<void> {
+  if (!browser) return;
+  if (!CDN_BASE) return;
+  if (sharedManifest || sharedManifestLoading) return;
+
+  sharedManifestLoading = true;
+
+  try {
+    const url = `${CDN_BASE}/shared/manifest.json`;
+    const response = await fetch(url);
+
+    if (!response.ok) {
+      throw new Error(`Failed to load shared manifest: ${response.status}`);
+    }
+
+    sharedManifest = await response.json();
+    console.log('AssetService: Loaded shared manifest', {
+      images: sharedManifest?.stats.totalImages,
+    });
+  } catch (error) {
+    console.warn('AssetService: Failed to load shared manifest, using local fallback', error);
+  } finally {
+    sharedManifestLoading = false;
+  }
 }
 
 /**
@@ -119,21 +161,6 @@ export async function init(languagePair: string = 'de-fa'): Promise<void> {
     const message = error instanceof Error ? error.message : 'Unknown error';
     console.error('AssetService: Failed to initialize', error);
 
-    // If the requested language manifest fails, try to load de-fa as fallback for shared images
-    if (languagePair !== 'de-fa' && !manifestCache.has('de-fa')) {
-      try {
-        const fallbackUrl = `${CDN_BASE}/de-fa/manifest.json`;
-        const fallbackResponse = await fetch(fallbackUrl);
-        if (fallbackResponse.ok) {
-          const fallbackManifest: Manifest = await fallbackResponse.json();
-          manifestCache.set('de-fa', fallbackManifest);
-          console.log('AssetService: Loaded de-fa manifest as fallback for shared images');
-        }
-      } catch {
-        // Silently fail - fallback is best-effort
-      }
-    }
-
     state.update(s => ({
       ...s,
       loading: false,
@@ -173,32 +200,21 @@ export function getAudioUrl(lessonId: string, audioId: string): string {
 
 /**
  * Get image URL by asset ID
- * Images are shared across languages, so we fall back to de-fa manifest if current language's manifest isn't available
+ * Images are shared across all languages (loaded from shared/ folder)
  */
 export function getImageUrl(imageId: string): string {
-  const currentState = get(state);
-
-  if (!CDN_BASE) {
-    // Fall back to local path
-    return `/images/shared/${imageId}.png`;
+  // Try shared manifest first (CDN path)
+  if (CDN_BASE && sharedManifest) {
+    const path = sharedManifest.images[imageId];
+    if (path) {
+      return `${CDN_BASE}/shared${path}`;
+    }
   }
 
-  // Try current language's manifest first, then fall back to de-fa (images are shared)
-  const manifest = currentState.manifest || manifestCache.get('de-fa');
-
-  if (!manifest) {
-    return `/images/shared/${imageId}.png`;
-  }
-
-  const path = manifest.images[imageId];
-
-  if (!path) {
-    console.warn(`AssetService: Image not found in manifest: ${imageId}`);
-    return `/images/shared/${imageId}.png`;
-  }
-
-  // Use de-fa for shared images since they're the same across languages
-  return `${CDN_BASE}/de-fa${path}`;
+  // Local fallback
+  // Note: asset-resolver.ts handles full path lookup via asset-registry
+  // This is a last-resort fallback for unknown imageIds
+  return `/images/greetings/${imageId}.png`;
 }
 
 /**

@@ -1,7 +1,6 @@
 <script lang="ts">
   import { goto } from '$app/navigation';
-  import { isCdnEnabled } from '$lib/services/assetService';
-  import { init as initAssetService } from '$lib/services/assetService';
+  import { isCdnEnabled, init as initAssetService, initShared } from '$lib/services/assetService';
   import { downloadedLessons, totalCacheSize, formatBytes, isPremium } from '$lib/stores/premium';
   import {
     languagePreference,
@@ -30,6 +29,7 @@
 
       // Reinitialize asset service with new language
       try {
+        await initShared(); // Load shared images manifest (only once)
         await initAssetService(pack.id);
       } catch (e) {
         console.warn('[Languages] Asset service reinit warning:', e);

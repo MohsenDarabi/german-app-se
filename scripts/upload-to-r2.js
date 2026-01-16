@@ -8,9 +8,11 @@
  * Features:
  * - Reads existing audio manifest (scripts/audio-data/manifest.json)
  * - Reads asset registry (apps/web/src/lib/data/asset-registry.json)
- * - Uploads audio by content hash (deduplication)
- * - Uploads images by asset path
- * - Generates combined R2 manifest
+ * - Uploads audio by content hash (deduplication) to {languagePair}/audio/
+ * - Uploads images to shared/images/ (language-agnostic)
+ * - Generates two manifests:
+ *   - {languagePair}/manifest.json (audio only)
+ *   - shared/manifest.json (images only)
  * - Uses S3-compatible API (@aws-sdk/client-s3)
  *
  * Usage:
@@ -188,9 +190,9 @@ async function main() {
   const client = dryRun ? null : createR2Client();
   const bucket = process.env.R2_BUCKET_NAME || 'language-learning-assets';
 
-  // Scan actual audio files on disk
+  // Scan actual audio files on disk (language-specific folder)
   console.log('🔍 Scanning audio directory...\n');
-  const audioDir = path.join(STATIC_DIR, 'audio');
+  const audioDir = path.join(STATIC_DIR, 'audio', LANGUAGE_PAIR);
   const { files: scannedFiles, hashToFile } = scanAudioDirectory(audioDir);
 
   // Build audioMap from scanned files
@@ -247,8 +249,8 @@ async function main() {
 
   console.log(`\n   Summary: ${audioUploaded} uploaded, ${audioSkipped} skipped, ${audioErrors} errors\n`);
 
-  // Upload images
-  console.log('🖼️  Uploading images...\n');
+  // Upload images to shared/ folder (language-agnostic)
+  console.log('🖼️  Uploading images to shared/...\n');
 
   let imageUploaded = 0;
   let imageSkipped = 0;
@@ -265,7 +267,8 @@ async function main() {
       continue;
     }
 
-    const r2Key = `${LANGUAGE_PAIR}${asset.path}`;
+    // Upload to shared/ folder instead of language-specific folder
+    const r2Key = `shared${asset.path}`;
     images[assetId] = asset.path;
 
     if (dryRun) {
@@ -290,10 +293,10 @@ async function main() {
 
   console.log(`\n   Summary: ${imageUploaded} uploaded, ${imageSkipped} skipped, ${imageErrors} errors\n`);
 
-  // Build and upload R2 manifest
-  console.log('📋 Building R2 manifest...\n');
+  // Build and upload language-specific manifest (audio only)
+  console.log('📋 Building language manifest (audio)...\n');
 
-  const r2Manifest = {
+  const languageManifest = {
     id: LANGUAGE_PAIR,
     version: '1.0.0',
     name: { source: 'Deutsch', target: 'آلمانی' },
@@ -301,31 +304,56 @@ async function main() {
     levels: ['A1', 'A2', 'B1', 'B2'],
     freeLessons: 6,
     audioMap: audioMap,
-    images: images,
     stats: {
       totalAudioFiles: uniqueHashes.size,
       totalAudioReferences: totalReferences,
-      totalImages: Object.keys(images).length,
       deduplicationSavings: `${((1 - uniqueHashes.size / totalReferences) * 100).toFixed(1)}%`,
     },
     updatedAt: new Date().toISOString(),
   };
 
-  const manifestKey = `${LANGUAGE_PAIR}/manifest.json`;
+  const languageManifestKey = `${LANGUAGE_PAIR}/manifest.json`;
 
   if (dryRun) {
-    console.log(`   [DRY RUN] ${manifestKey}`);
-    console.log('\n   Manifest preview:');
-    console.log(`   - Audio files: ${r2Manifest.stats.totalAudioFiles}`);
-    console.log(`   - Audio references: ${r2Manifest.stats.totalAudioReferences}`);
-    console.log(`   - Images: ${r2Manifest.stats.totalImages}`);
-    console.log(`   - Savings: ${r2Manifest.stats.deduplicationSavings}`);
+    console.log(`   [DRY RUN] ${languageManifestKey}`);
+    console.log('\n   Language manifest preview:');
+    console.log(`   - Audio files: ${languageManifest.stats.totalAudioFiles}`);
+    console.log(`   - Audio references: ${languageManifest.stats.totalAudioReferences}`);
+    console.log(`   - Savings: ${languageManifest.stats.deduplicationSavings}`);
   } else {
     try {
-      await uploadJSON(client, bucket, manifestKey, r2Manifest);
-      console.log(`   ✅ ${manifestKey}`);
+      await uploadJSON(client, bucket, languageManifestKey, languageManifest);
+      console.log(`   ✅ ${languageManifestKey}`);
     } catch (err) {
-      console.log(`   ❌ ${manifestKey}: ${err.message}`);
+      console.log(`   ❌ ${languageManifestKey}: ${err.message}`);
+    }
+  }
+
+  // Build and upload shared manifest (images only)
+  console.log('\n📋 Building shared manifest (images)...\n');
+
+  const sharedManifest = {
+    version: '1.0.0',
+    type: 'shared',
+    images: images,
+    stats: {
+      totalImages: Object.keys(images).length,
+    },
+    updatedAt: new Date().toISOString(),
+  };
+
+  const sharedManifestKey = 'shared/manifest.json';
+
+  if (dryRun) {
+    console.log(`   [DRY RUN] ${sharedManifestKey}`);
+    console.log('\n   Shared manifest preview:');
+    console.log(`   - Images: ${sharedManifest.stats.totalImages}`);
+  } else {
+    try {
+      await uploadJSON(client, bucket, sharedManifestKey, sharedManifest);
+      console.log(`   ✅ ${sharedManifestKey}`);
+    } catch (err) {
+      console.log(`   ❌ ${sharedManifestKey}: ${err.message}`);
     }
   }
 

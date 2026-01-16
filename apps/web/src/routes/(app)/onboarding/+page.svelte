@@ -5,7 +5,7 @@
     LANGUAGE_PACKS,
     type LanguagePack
   } from '$lib/stores/languagePreference';
-  import { init as initAssetService } from '$lib/services/assetService';
+  import { init as initAssetService, initShared } from '$lib/services/assetService';
 
   let selectedLang: string | null = null;
   let isSubmitting = false;
@@ -26,6 +26,7 @@
 
       // Initialize asset service for new language
       try {
+        await initShared(); // Load shared images manifest (only once)
         await initAssetService(selectedLang);
       } catch (e) {
         console.warn('[Onboarding] Asset service init warning:', e);
