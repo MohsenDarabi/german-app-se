@@ -1,6 +1,15 @@
 #!/bin/bash
 # Rebuild and deploy iOS app
-# Usage: ./scripts/rebuild-ios.sh [--device] [--simulator]
+#
+# Usage:
+#   ./scripts/rebuild-ios.sh                    # Build for first connected device
+#   ./scripts/rebuild-ios.sh --list             # List available targets
+#   ./scripts/rebuild-ios.sh --target <ID>      # Build for specific device
+#   ./scripts/rebuild-ios.sh --simulator        # Run on simulator (interactive)
+#
+# Examples:
+#   ./scripts/rebuild-ios.sh --list
+#   ./scripts/rebuild-ios.sh --target 51fb285bae9bea103ae1e51c861bb12308a83151
 
 set -e
 
@@ -20,14 +29,36 @@ while [[ $# -gt 0 ]]; do
             TARGET="device"
             shift
             ;;
+        --target)
+            DEVICE_ID="$2"
+            shift 2
+            ;;
         --list)
             echo "📱 Available targets:"
+            echo ""
             npx cap run ios --list
+            echo ""
+            echo "Usage: ./scripts/rebuild-ios.sh --target <Target ID>"
+            exit 0
+            ;;
+        --help|-h)
+            echo "Usage: ./scripts/rebuild-ios.sh [OPTIONS]"
+            echo ""
+            echo "Options:"
+            echo "  --list              List available devices/simulators"
+            echo "  --target <ID>       Build for specific device ID"
+            echo "  --simulator         Run on simulator (interactive picker)"
+            echo "  --help, -h          Show this help"
+            echo ""
+            echo "Examples:"
+            echo "  ./scripts/rebuild-ios.sh --list"
+            echo "  ./scripts/rebuild-ios.sh --target 51fb285bae9bea103ae1e51c861bb12308a83151"
             exit 0
             ;;
         *)
-            DEVICE_ID="$1"
-            shift
+            echo "Unknown option: $1"
+            echo "Use --help for usage"
+            exit 1
             ;;
     esac
 done
