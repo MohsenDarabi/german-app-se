@@ -972,11 +972,11 @@
   }
 
   :global([data-theme="dark"]) .module-title {
-    color: var(--color-neutral-100, #f5f0e8);
+    color: #ffffff;
   }
 
   :global([data-theme="dark"]) .stats-text {
-    color: var(--color-neutral-400, #a69b8a);
+    color: var(--color-neutral-200, #e8e0d5);
   }
 
   :global([data-theme="dark"]) .chevron {
@@ -984,11 +984,23 @@
   }
 
   :global([data-theme="dark"]) .lesson-info h3 {
-    color: var(--color-neutral-100, #f5f0e8);
+    color: #ffffff;
+  }
+
+  :global([data-theme="dark"]) .lesson-info p {
+    color: #e0d6c8;
   }
 
   :global([data-theme="dark"]) .stat-value {
     color: var(--color-neutral-100, #f5f0e8);
+  }
+
+  :global([data-theme="dark"]) .subtitle {
+    color: var(--color-neutral-300, #d4c9b9);
+  }
+
+  :global([data-theme="dark"]) .stat-label {
+    color: var(--color-neutral-400, #a69b8a);
   }
 
   /* ===== MOBILE-FIRST OVERRIDES ===== */
