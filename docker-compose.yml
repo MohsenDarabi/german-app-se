@@ -19,7 +19,8 @@ services:
       - /app/packages/srs-engine/node_modules
       - /app/packages/utils/node_modules
     env_file:
-      - ./apps/web/.env
+      - path: ./apps/web/.env
+        required: false
     environment:
       - NODE_ENV=development
     stdin_open: true
