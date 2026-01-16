@@ -357,6 +357,62 @@ async function main() {
     }
   }
 
+  // Build and upload root index (lists available language packs)
+  console.log('\n📋 Updating root index.json...\n');
+
+  // Fetch existing index or create new one
+  let rootIndex = {
+    version: '1.0.0',
+    availableLanguages: [],
+    updatedAt: new Date().toISOString(),
+  };
+
+  if (!dryRun) {
+    try {
+      // Try to fetch existing index
+      const { GetObjectCommand } = require('@aws-sdk/client-s3');
+      const response = await client.send(new GetObjectCommand({
+        Bucket: bucket,
+        Key: 'index.json',
+      }));
+      const existingIndex = JSON.parse(await response.Body.transformToString());
+      rootIndex = existingIndex;
+    } catch (err) {
+      // Index doesn't exist yet, start fresh
+    }
+  }
+
+  // Add/update this language in the index
+  const existingLangIndex = rootIndex.availableLanguages.findIndex(l => l.id === LANGUAGE_PAIR);
+  const langEntry = {
+    id: LANGUAGE_PAIR,
+    name: languageManifest.name,
+    flag: languageManifest.flag,
+    hasAudio: uniqueHashes.size > 0,
+    hasContent: true, // Assume content exists if we're uploading audio
+    updatedAt: new Date().toISOString(),
+  };
+
+  if (existingLangIndex >= 0) {
+    rootIndex.availableLanguages[existingLangIndex] = langEntry;
+  } else {
+    rootIndex.availableLanguages.push(langEntry);
+  }
+  rootIndex.updatedAt = new Date().toISOString();
+
+  if (dryRun) {
+    console.log('   [DRY RUN] index.json');
+    console.log('\n   Root index preview:');
+    console.log(`   - Available languages: ${rootIndex.availableLanguages.map(l => l.id).join(', ')}`);
+  } else {
+    try {
+      await uploadJSON(client, bucket, 'index.json', rootIndex);
+      console.log('   ✅ index.json');
+    } catch (err) {
+      console.log(`   ❌ index.json: ${err.message}`);
+    }
+  }
+
   console.log('\n✅ Upload complete!\n');
 
   // Print public URL info

@@ -36,6 +36,19 @@ interface SharedManifest {
   updatedAt: string;
 }
 
+interface RootIndex {
+  version: string;
+  availableLanguages: Array<{
+    id: string;
+    name: { source: string; target: string };
+    flag: string;
+    hasAudio: boolean;
+    hasContent: boolean;
+    updatedAt: string;
+  }>;
+  updatedAt: string;
+}
+
 interface AssetServiceState {
   initialized: boolean;
   loading: boolean;
@@ -62,6 +75,10 @@ const manifestCache = new Map<string, Manifest>();
 // Shared manifest (language-agnostic images)
 let sharedManifest: SharedManifest | null = null;
 let sharedManifestLoading = false;
+
+// Root index (lists available language packs on CDN)
+let rootIndex: RootIndex | null = null;
+let rootIndexLoading = false;
 
 /**
  * Check if CDN is configured
@@ -108,13 +125,52 @@ export async function initShared(): Promise<void> {
 }
 
 /**
+ * Load root index from CDN (lists available language packs)
+ * Called once, results cached for the session
+ */
+async function loadRootIndex(): Promise<RootIndex | null> {
+  if (rootIndex) return rootIndex;
+  if (rootIndexLoading) return null;
+  if (!CDN_BASE) return null;
+
+  rootIndexLoading = true;
+
+  try {
+    const url = `${CDN_BASE}/index.json`;
+    const response = await fetch(url);
+
+    if (!response.ok) {
+      throw new Error(`Failed to load root index: ${response.status}`);
+    }
+
+    rootIndex = await response.json();
+    console.log('AssetService: Loaded root index', {
+      languages: rootIndex?.availableLanguages.map(l => l.id).join(', '),
+    });
+    return rootIndex;
+  } catch (error) {
+    console.warn('AssetService: Failed to load root index', error);
+    return null;
+  } finally {
+    rootIndexLoading = false;
+  }
+}
+
+/**
+ * Check if a language has CDN assets available
+ */
+export function isLanguageAvailableOnCdn(languagePair: string): boolean {
+  if (!rootIndex) return false;
+  return rootIndex.availableLanguages.some(l => l.id === languagePair && l.hasAudio);
+}
+
+/**
  * Initialize the asset service with a language pair
  * Loads the manifest from CDN
  */
 export async function init(languagePair: string = 'de-fa'): Promise<void> {
   if (!browser) return;
   if (!CDN_BASE) {
-    console.warn('AssetService: CDN not configured, using local assets');
     // Still update the language pair for local asset path resolution
     state.update(s => ({ ...s, initialized: true, languagePair }));
     return;
@@ -127,6 +183,21 @@ export async function init(languagePair: string = 'de-fa'): Promise<void> {
       initialized: true,
       languagePair,
       manifest: manifestCache.get(languagePair)!,
+    }));
+    return;
+  }
+
+  // Load root index first (if not already loaded)
+  await loadRootIndex();
+
+  // Check if this language is available on CDN
+  if (rootIndex && !isLanguageAvailableOnCdn(languagePair)) {
+    // Language not available on CDN - use local fallback silently
+    state.update(s => ({
+      ...s,
+      initialized: true,
+      languagePair,
+      manifest: null, // No CDN manifest, will use local paths
     }));
     return;
   }
