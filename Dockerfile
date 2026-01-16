@@ -33,16 +33,11 @@ FROM base AS dev
 
 WORKDIR /app
 
-# Copy dependencies from deps stage
-COPY --from=deps /app/node_modules ./node_modules
-COPY --from=deps /app/apps/web/node_modules ./apps/web/node_modules
-COPY --from=deps /app/packages/ui/node_modules ./packages/ui/node_modules
-COPY --from=deps /app/packages/content-model/node_modules ./packages/content-model/node_modules
-COPY --from=deps /app/packages/srs-engine/node_modules ./packages/srs-engine/node_modules
-COPY --from=deps /app/packages/utils/node_modules ./packages/utils/node_modules
-
-# Copy all source code
+# Copy all source code first
 COPY . .
+
+# Install dependencies (this preserves pnpm symlinks for workspace packages)
+RUN pnpm install --frozen-lockfile
 
 # Expose Vite dev server port
 EXPOSE 5173
@@ -57,16 +52,11 @@ FROM base AS builder
 
 WORKDIR /app
 
-# Copy dependencies
-COPY --from=deps /app/node_modules ./node_modules
-COPY --from=deps /app/apps/web/node_modules ./apps/web/node_modules
-COPY --from=deps /app/packages/ui/node_modules ./packages/ui/node_modules
-COPY --from=deps /app/packages/content-model/node_modules ./packages/content-model/node_modules
-COPY --from=deps /app/packages/srs-engine/node_modules ./packages/srs-engine/node_modules
-COPY --from=deps /app/packages/utils/node_modules ./packages/utils/node_modules
-
-# Copy source
+# Copy all source code
 COPY . .
+
+# Install dependencies (preserves workspace symlinks)
+RUN pnpm install --frozen-lockfile
 
 # Build all packages
 RUN pnpm run build
