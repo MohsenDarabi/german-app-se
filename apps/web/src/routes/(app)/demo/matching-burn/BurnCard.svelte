@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { createEventDispatcher, onMount } from 'svelte';
+  import { createEventDispatcher } from 'svelte';
   import GlassCrackOverlay from './GlassCrackOverlay.svelte';
 
   export let id: string;
@@ -9,12 +9,97 @@
 
   const dispatch = createEventDispatcher<{ select: { id: string } }>();
 
-  let crackAudio: HTMLAudioElement;
+  let audioContext: AudioContext | null = null;
 
-  onMount(() => {
-    // Create audio element for crack sound
-    crackAudio = new Audio('data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1sbWhvdHh4d3d3d3d3d3d3d3d3d3d3d3d3d3RwbW5wbm5ubGtra2tqa2pqaWlpaWhoaGdnZ2ZmZWVlZGRjY2NiYmFhYGBfX15eXV1cXFtbWlpZWVhYV1dWVlVVVFRTU1JSUVFQT09OTk1NTExLS0pKSUlISEdHRkZFRUREQ0NbdISLjI2NjY2NjY2NjY2NjY2NjYyMi4qJiIeGhYSDgoGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYCAgH9/fn59fHt7enl4d3Z1dHRzdHV2d3h5ent8fX5/gIGCg4SFhoeIiYqLjI2OjpKXnqSor7O3ur2/wb+9u7i0sKunopqVjomFgn58eXd1c3FwcG9vb29vb29vb29wcHFxcnJzc3R0dXV2dnd3eHh5eXp6e3t8fH19fn5/f4CAgYGCgoODhISFhYaGh4eIiImJioqLi4yMjY2Ojo+PkJCRkZKSk5OUlJWVlpaXl5iYmZmampubm5ycnZ2enp+fn6ChoaKio6OjpKWlpqanp6ioqamqqqqrq6ysra2urq+vsLCxsbKys7O0tLW1tra3t7i4ubm6uru7vLy9vb6+v7/AwMHBwsLDw8TExcXGxsfHyMjJycrKy8vMzM3Nzs7Pz9DQ0dHS0tPT1NTV1dbW19fY2NnZ2trb29zc3d3e3t/f4ODh4eLi4+Pk5OXl5ubn5+jo6enq6uvr7Ozs7e3u7u/v8PDx8fLy8/P09PX19vb39/j4+fn6+vv7/Pz9/f7+//8=');
-  });
+  // Synthesize a realistic glass crack/shatter sound using Web Audio API
+  function playGlassCrackSound() {
+    try {
+      // Create or resume audio context
+      if (!audioContext) {
+        audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
+      }
+
+      if (audioContext.state === 'suspended') {
+        audioContext.resume();
+      }
+
+      const now = audioContext.currentTime;
+      const duration = 0.4;
+
+      // Master gain for overall volume
+      const masterGain = audioContext.createGain();
+      masterGain.connect(audioContext.destination);
+      masterGain.gain.setValueAtTime(0.25, now);
+      masterGain.gain.exponentialDecayTo?.(0.01, now + duration) ||
+        masterGain.gain.exponentialRampToValueAtTime(0.01, now + duration);
+
+      // Layer 1: Initial sharp crack (noise burst with high-pass filter)
+      const noiseBuffer = audioContext.createBuffer(1, audioContext.sampleRate * 0.15, audioContext.sampleRate);
+      const noiseData = noiseBuffer.getChannelData(0);
+      for (let i = 0; i < noiseData.length; i++) {
+        // Sharp attack, quick decay
+        const envelope = Math.exp(-i / (audioContext.sampleRate * 0.02));
+        noiseData[i] = (Math.random() * 2 - 1) * envelope;
+      }
+
+      const noiseSource = audioContext.createBufferSource();
+      noiseSource.buffer = noiseBuffer;
+
+      const highPass = audioContext.createBiquadFilter();
+      highPass.type = 'highpass';
+      highPass.frequency.setValueAtTime(2000, now);
+      highPass.Q.setValueAtTime(1, now);
+
+      const noiseGain = audioContext.createGain();
+      noiseGain.gain.setValueAtTime(1, now);
+      noiseGain.gain.exponentialRampToValueAtTime(0.01, now + 0.1);
+
+      noiseSource.connect(highPass);
+      highPass.connect(noiseGain);
+      noiseGain.connect(masterGain);
+      noiseSource.start(now);
+
+      // Layer 2: Glass resonance (high frequency sine tones)
+      const frequencies = [3200, 4800, 6400, 8000];
+      frequencies.forEach((freq, i) => {
+        const osc = audioContext!.createOscillator();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(freq + Math.random() * 200, now);
+        osc.frequency.exponentialRampToValueAtTime(freq * 0.7, now + 0.15);
+
+        const oscGain = audioContext!.createGain();
+        oscGain.gain.setValueAtTime(0.08 - i * 0.015, now);
+        oscGain.gain.exponentialRampToValueAtTime(0.001, now + 0.15 + i * 0.02);
+
+        osc.connect(oscGain);
+        oscGain.connect(masterGain);
+        osc.start(now);
+        osc.stop(now + 0.2);
+      });
+
+      // Layer 3: Tinkling shards (delayed high pings)
+      for (let i = 0; i < 5; i++) {
+        const delay = 0.05 + Math.random() * 0.15;
+        const pingOsc = audioContext.createOscillator();
+        pingOsc.type = 'sine';
+        pingOsc.frequency.setValueAtTime(5000 + Math.random() * 4000, now + delay);
+
+        const pingGain = audioContext.createGain();
+        pingGain.gain.setValueAtTime(0, now);
+        pingGain.gain.setValueAtTime(0.04, now + delay);
+        pingGain.gain.exponentialRampToValueAtTime(0.001, now + delay + 0.08);
+
+        pingOsc.connect(pingGain);
+        pingGain.connect(masterGain);
+        pingOsc.start(now + delay);
+        pingOsc.stop(now + delay + 0.1);
+      }
+
+    } catch (e) {
+      // Audio not supported, fail silently
+      console.warn('Audio not supported:', e);
+    }
+  }
 
   function handleClick() {
     if (state === 'idle') {
@@ -30,10 +115,8 @@
   }
 
   // Play crack sound when cracking starts
-  $: if (state === 'cracking' && crackAudio) {
-    crackAudio.currentTime = 0;
-    crackAudio.volume = 0.3;
-    crackAudio.play().catch(() => {});
+  $: if (state === 'cracking') {
+    playGlassCrackSound();
   }
 
   $: cardClasses = [
