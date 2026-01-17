@@ -41,34 +41,12 @@
 <div class="demo-container">
   <!-- Header -->
   <header class="demo-header">
-    <h1 class="demo-title">Matching Pairs</h1>
-    <p class="demo-subtitle">جفت‌های کلمات را پیدا کنید</p>
+    <p class="demo-subtitle">جفت‌ها را پیدا کنید</p>
 
     <button class="theme-toggle" on:click={() => theme.toggle()}>
       {$isDarkMode ? 'Light' : 'Dark'}
     </button>
   </header>
-
-  <!-- Progress indicator -->
-  <div class="progress-section">
-    <div class="progress-dots">
-      {#each wordPairs as pair, i}
-        <div
-          class="progress-dot"
-          class:completed={completedMatches.includes(pair.id)}
-        >
-          {#if completedMatches.includes(pair.id)}
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-              <polyline points="20 6 9 17 4 12"></polyline>
-            </svg>
-          {/if}
-        </div>
-      {/each}
-    </div>
-    <span class="progress-text">
-      {completedMatches.length} / {wordPairs.length}
-    </span>
-  </div>
 
   <!-- Game area -->
   <div class="game-area">
@@ -115,20 +93,14 @@
 
   .demo-header {
     text-align: center;
-    margin-bottom: var(--space-6);
+    margin-bottom: var(--space-4);
     position: relative;
   }
 
-  .demo-title {
-    font-size: var(--text-2xl);
-    font-weight: var(--font-bold);
-    color: var(--color-neutral-800);
-    margin: 0 0 var(--space-1);
-  }
-
   .demo-subtitle {
-    font-size: var(--text-base);
-    color: var(--color-neutral-500);
+    font-size: var(--text-lg);
+    font-weight: var(--font-medium);
+    color: var(--color-neutral-600);
     margin: 0;
     direction: rtl;
   }
@@ -150,62 +122,6 @@
 
   .theme-toggle:hover {
     background: var(--color-neutral-100);
-  }
-
-  .progress-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--space-4);
-    margin-bottom: var(--space-6);
-  }
-
-  .progress-dots {
-    display: flex;
-    gap: var(--space-2);
-  }
-
-  .progress-dot {
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    border: 2px solid var(--color-neutral-300);
-    background: var(--color-neutral-50);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all var(--transition-normal);
-  }
-
-  .progress-dot.completed {
-    background: var(--color-gem-500);
-    border-color: var(--color-gem-600);
-    color: white;
-    animation: pop-in 0.3s var(--transition-bounce);
-  }
-
-  .progress-dot svg {
-    width: 14px;
-    height: 14px;
-  }
-
-  @keyframes pop-in {
-    0% {
-      transform: scale(0);
-    }
-    50% {
-      transform: scale(1.2);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-
-  .progress-text {
-    font-size: var(--text-sm);
-    font-weight: var(--font-semibold);
-    color: var(--color-neutral-600);
-    min-width: 50px;
   }
 
   .game-area {
@@ -328,10 +244,6 @@
   }
 
   /* Dark mode */
-  :global([data-theme="dark"]) .demo-title {
-    color: var(--color-neutral-900);
-  }
-
   :global([data-theme="dark"]) .theme-toggle {
     background: var(--color-neutral-200);
     border-color: var(--color-neutral-300);
