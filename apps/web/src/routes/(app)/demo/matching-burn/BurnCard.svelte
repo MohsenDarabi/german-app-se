@@ -9,95 +9,18 @@
 
   const dispatch = createEventDispatcher<{ select: { id: string } }>();
 
-  let audioContext: AudioContext | null = null;
+  let crackAudio: HTMLAudioElement | null = null;
 
-  // Synthesize a realistic glass crack/shatter sound using Web Audio API
   function playGlassCrackSound() {
     try {
-      // Create or resume audio context
-      if (!audioContext) {
-        audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
+      if (!crackAudio) {
+        crackAudio = new Audio('/audio/effects/glass-crack.m4a');
       }
-
-      if (audioContext.state === 'suspended') {
-        audioContext.resume();
-      }
-
-      const now = audioContext.currentTime;
-      const duration = 0.4;
-
-      // Master gain for overall volume
-      const masterGain = audioContext.createGain();
-      masterGain.connect(audioContext.destination);
-      masterGain.gain.setValueAtTime(0.25, now);
-      masterGain.gain.exponentialDecayTo?.(0.01, now + duration) ||
-        masterGain.gain.exponentialRampToValueAtTime(0.01, now + duration);
-
-      // Layer 1: Initial sharp crack (noise burst with high-pass filter)
-      const noiseBuffer = audioContext.createBuffer(1, audioContext.sampleRate * 0.15, audioContext.sampleRate);
-      const noiseData = noiseBuffer.getChannelData(0);
-      for (let i = 0; i < noiseData.length; i++) {
-        // Sharp attack, quick decay
-        const envelope = Math.exp(-i / (audioContext.sampleRate * 0.02));
-        noiseData[i] = (Math.random() * 2 - 1) * envelope;
-      }
-
-      const noiseSource = audioContext.createBufferSource();
-      noiseSource.buffer = noiseBuffer;
-
-      const highPass = audioContext.createBiquadFilter();
-      highPass.type = 'highpass';
-      highPass.frequency.setValueAtTime(2000, now);
-      highPass.Q.setValueAtTime(1, now);
-
-      const noiseGain = audioContext.createGain();
-      noiseGain.gain.setValueAtTime(1, now);
-      noiseGain.gain.exponentialRampToValueAtTime(0.01, now + 0.1);
-
-      noiseSource.connect(highPass);
-      highPass.connect(noiseGain);
-      noiseGain.connect(masterGain);
-      noiseSource.start(now);
-
-      // Layer 2: Glass resonance (high frequency sine tones)
-      const frequencies = [3200, 4800, 6400, 8000];
-      frequencies.forEach((freq, i) => {
-        const osc = audioContext!.createOscillator();
-        osc.type = 'sine';
-        osc.frequency.setValueAtTime(freq + Math.random() * 200, now);
-        osc.frequency.exponentialRampToValueAtTime(freq * 0.7, now + 0.15);
-
-        const oscGain = audioContext!.createGain();
-        oscGain.gain.setValueAtTime(0.08 - i * 0.015, now);
-        oscGain.gain.exponentialRampToValueAtTime(0.001, now + 0.15 + i * 0.02);
-
-        osc.connect(oscGain);
-        oscGain.connect(masterGain);
-        osc.start(now);
-        osc.stop(now + 0.2);
-      });
-
-      // Layer 3: Tinkling shards (delayed high pings)
-      for (let i = 0; i < 5; i++) {
-        const delay = 0.05 + Math.random() * 0.15;
-        const pingOsc = audioContext.createOscillator();
-        pingOsc.type = 'sine';
-        pingOsc.frequency.setValueAtTime(5000 + Math.random() * 4000, now + delay);
-
-        const pingGain = audioContext.createGain();
-        pingGain.gain.setValueAtTime(0, now);
-        pingGain.gain.setValueAtTime(0.04, now + delay);
-        pingGain.gain.exponentialRampToValueAtTime(0.001, now + delay + 0.08);
-
-        pingOsc.connect(pingGain);
-        pingGain.connect(masterGain);
-        pingOsc.start(now + delay);
-        pingOsc.stop(now + delay + 0.1);
-      }
-
+      crackAudio.currentTime = 0;
+      crackAudio.volume = 0.5;
+      crackAudio.play().catch(() => {});
     } catch (e) {
       // Audio not supported, fail silently
-      console.warn('Audio not supported:', e);
     }
   }
 

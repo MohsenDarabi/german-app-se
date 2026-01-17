@@ -44,3 +44,5 @@ apps/web/images-backup-originals/
 # Audio files - loaded from CDN, NOT bundled in APK
 # DO NOT add audio back to static/ - it will bloat the APK
 apps/web/static/audio/
+# Exception: small UI sound effects are bundled
+!apps/web/static/audio/effects/
