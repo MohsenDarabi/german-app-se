@@ -142,32 +142,39 @@
     align-items: center;
     gap: var(--space-2);
     padding: var(--space-3) var(--space-5);
-    border-radius: var(--radius-lg);
-    border: 2px solid var(--color-primary-600);
-    background: var(--color-neutral-50);
+    border-radius: var(--radius-xl);
+    border: 2px solid var(--color-primary-500);
+    background: linear-gradient(145deg, var(--color-neutral-50) 0%, var(--color-neutral-100) 100%);
     font-family: var(--font-sans);
     font-size: var(--text-sm);
     font-weight: var(--font-semibold);
     color: var(--color-neutral-700);
     cursor: pointer;
-    box-shadow: 3px 3px 0px var(--color-primary-600);
+    box-shadow:
+      3px 3px 0px var(--color-primary-500),
+      3px 3px 6px rgba(8, 145, 178, 0.15);
     transform: translate(0, 0);
     transition: all 0.1s ease;
     direction: rtl;
   }
 
   .reset-button:hover {
-    background: var(--color-primary-50);
+    background: linear-gradient(145deg, var(--color-primary-50) 0%, var(--color-primary-100) 100%);
+    border-color: var(--color-primary-400);
+    box-shadow:
+      3px 3px 0px var(--color-primary-400),
+      3px 3px 10px rgba(8, 145, 178, 0.25);
   }
 
   .reset-button:active {
     transform: translate(3px, 3px);
-    box-shadow: 0px 0px 0px var(--color-primary-600);
+    box-shadow: 0px 0px 0px var(--color-primary-500);
   }
 
   .reset-button svg {
     width: 18px;
     height: 18px;
+    color: var(--color-primary-600);
   }
 
   /* Celebration overlay */
@@ -244,7 +251,11 @@
     margin: 0;
   }
 
-  /* Dark mode */
+  /* Dark mode - Persian Night */
+  :global([data-theme="dark"]) .demo-subtitle {
+    color: var(--color-neutral-500);
+  }
+
   :global([data-theme="dark"]) .theme-toggle {
     background: var(--color-neutral-200);
     border-color: var(--color-neutral-300);
@@ -252,17 +263,31 @@
   }
 
   :global([data-theme="dark"]) .reset-button {
-    background: var(--color-neutral-800);
+    background: linear-gradient(145deg, var(--color-neutral-100) 0%, var(--color-neutral-200) 100%);
     border-color: var(--color-primary-400);
-    color: var(--color-neutral-100);
-    box-shadow: 3px 3px 0px var(--color-primary-400);
+    color: var(--color-neutral-900);
+    box-shadow:
+      3px 3px 0px var(--color-primary-400),
+      3px 3px 6px rgba(34, 211, 238, 0.1);
   }
 
   :global([data-theme="dark"]) .reset-button:hover {
-    background: var(--color-neutral-700);
+    background: linear-gradient(145deg, var(--color-primary-900) 0%, var(--color-primary-800) 100%);
+    border-color: var(--color-primary-300);
+    box-shadow:
+      3px 3px 0px var(--color-primary-300),
+      3px 3px 10px rgba(34, 211, 238, 0.2);
+  }
+
+  :global([data-theme="dark"]) .reset-button svg {
+    color: var(--color-primary-400);
   }
 
   :global([data-theme="dark"]) .celebration-title {
     color: var(--color-gem-400);
+  }
+
+  :global([data-theme="dark"]) .celebration-subtitle {
+    color: var(--color-neutral-500);
   }
 </style>
