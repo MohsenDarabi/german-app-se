@@ -57,7 +57,6 @@
   {#if isVocabList}
     <VocabPillList text={step.content} variant="warning" />
   {:else}
-    <!-- eslint-disable-next-line svelte/no-at-html-tags -- content is sanitized by parseMarkdown -->
     <div class="grammar-text" dir="rtl">{@html parsedContent}</div>
   {/if}
 

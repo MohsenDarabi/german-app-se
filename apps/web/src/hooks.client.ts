@@ -5,7 +5,8 @@ if (import.meta.env.PROD && typeof window !== 'undefined' && 'serviceWorker' in 
   navigator.serviceWorker.register('/service-worker.js');
 }
 
-export const handleError: HandleClientError = ({ error, event: _event }) => {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const handleError: HandleClientError = ({ error, event }) => {
   console.error('Client error:', error);
 
   return {

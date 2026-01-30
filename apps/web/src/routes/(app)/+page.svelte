@@ -1,4 +1,3 @@
-<!-- eslint-disable svelte/no-at-html-tags -->
 <script lang="ts">
   import { getAllModulesForLanguage } from "$lib/data/modules";
   import { onMount } from "svelte";

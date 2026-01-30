@@ -79,4 +79,15 @@ export default [
       "svelte/no-navigation-without-resolve": "off"
     }
   },
+
+  // 6. Files that intentionally use {@html} with sanitized content
+  {
+    files: [
+      "**/routes/(app)/+page.svelte",
+      "**/components/lesson/steps/GrammarTipStep.svelte"
+    ],
+    rules: {
+      "svelte/no-at-html-tags": "off"
+    }
+  },
 ];
