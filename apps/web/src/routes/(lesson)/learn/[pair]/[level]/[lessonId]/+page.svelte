@@ -102,14 +102,15 @@
       console.log("❌ Wrong Answer - Must retry");
 
       // Skip wrong answer tracking for game steps (they report summary stats, not individual Q&A)
-      if (!gameStepTypes.includes($currentStep.type)) {
+      // Only save wrong answers when we have actual answer data to review later
+      if (!gameStepTypes.includes($currentStep.type) && (userAnswer || correctAnswer)) {
         await saveWrongAnswer({
           lessonId: data.lesson.id,
           stepId: $currentStep.id,
           stepType: $currentStep.type,
           question: getQuestionText($currentStep),
-          userAnswer: userAnswer || 'unknown',
-          correctAnswer: correctAnswer || 'unknown'
+          userAnswer: userAnswer || '',
+          correctAnswer: correctAnswer || ''
         });
       }
 

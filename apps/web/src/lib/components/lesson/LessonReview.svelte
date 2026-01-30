@@ -19,24 +19,28 @@
   function getOptions(wrong: typeof currentWrong) {
     if (!wrong) return [];
     return [wrong.correctAnswer, wrong.userAnswer]
-      .filter((v, i, arr) => v && v !== 'unknown' && arr.indexOf(v) === i);
+      .filter((v, i, arr) => v && v.trim() !== '' && v !== 'unknown' && arr.indexOf(v) === i);
   }
 
   $: options = getOptions(currentWrong);
 
   // Skip corrupted data - use onMount and function instead of reactive statement
   function skipIfCorrupted() {
-    if (currentWrong && options.length === 0) {
+    if (currentWrong && getOptions(currentWrong).length === 0) {
       reviewCorrect.add(currentReviewIndex);
       reviewCorrect = reviewCorrect;
       if (!isLastReview) {
-        setTimeout(() => { currentReviewIndex++; skipIfCorrupted(); }, 0);
+        setTimeout(() => { currentReviewIndex++; }, 0);
+      } else if (reviewCorrect.size === wrongAnswers.length) {
+        // All entries were corrupted — auto-complete
+        setTimeout(() => completeReview(), 100);
       }
     }
   }
 
-  // Check on mount
+  // Check on mount and when index changes
   onMount(() => skipIfCorrupted());
+  $: currentReviewIndex, skipIfCorrupted();
 
   // Manual skip function for when auto-skip fails
   function skipCurrent() {
