@@ -48,7 +48,7 @@ export function initDeepLinkHandler(): void {
         // Close the browser that was opened for OAuth
         try {
           await Browser.close();
-        } catch (e) {
+        } catch {
           // Browser might already be closed
         }
 
@@ -56,7 +56,7 @@ export function initDeepLinkHandler(): void {
         const code = params.get('code');
         if (code) {
           console.log('[DeepLink] Found authorization code, exchanging for session');
-          const { data, error } = await supabase.auth.exchangeCodeForSession(code);
+          const { error } = await supabase.auth.exchangeCodeForSession(code);
 
           if (error) {
             console.error('[DeepLink] Error exchanging code:', error);
@@ -102,8 +102,8 @@ export function initDeepLinkHandler(): void {
         console.log('[DeepLink] No tokens found in callback URL');
         goto('/login?error=no_tokens');
       }
-    } catch (e) {
-      console.error('[DeepLink] Error processing URL:', e);
+    } catch (err) {
+      console.error('[DeepLink] Error processing URL:', err);
       goto('/login?error=parse_failed');
     }
   });

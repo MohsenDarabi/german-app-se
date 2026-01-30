@@ -5,7 +5,7 @@ if (import.meta.env.PROD && typeof window !== 'undefined' && 'serviceWorker' in 
   navigator.serviceWorker.register('/service-worker.js');
 }
 
-export const handleError: HandleClientError = ({ error, event }) => {
+export const handleError: HandleClientError = ({ error, event: _event }) => {
   console.error('Client error:', error);
 
   return {

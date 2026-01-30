@@ -31,7 +31,7 @@
   let progressMapStore: Map<string, any> = new Map();
 
   // Re-fetch progress when language changes
-  // eslint-disable-next-line svelte/infinite-reactive-loop -- only $selectedPair triggers this
+  /* eslint-disable svelte/infinite-reactive-loop */
   $: {
     // This block runs whenever $selectedPair changes
     const langPair = $selectedPair;
@@ -39,6 +39,7 @@
       progressMapStore = new Map(progress.map(p => [p.lessonId, p]));
     });
   }
+  /* eslint-enable svelte/infinite-reactive-loop */
 
   // Use the reactive store for display
   $: progressMap = progressMapStore;

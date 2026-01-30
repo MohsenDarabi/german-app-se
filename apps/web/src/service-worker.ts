@@ -17,6 +17,7 @@ const CDN_HOSTS = ['pub-a0290b06f1ea45d5b65ac647cc69df34.r2.dev'];
 const PRECACHE_URLS = [...build, ...files];
 
 // Premium status (communicated from main thread)
+// eslint-disable-next-line @typescript-eslint/no-unused-vars -- set via message handler, read in fetch handler
 let isPremium = false;
 
 self.addEventListener('install', (event: ExtendableEvent) => {

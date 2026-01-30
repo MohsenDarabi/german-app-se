@@ -208,7 +208,7 @@ export async function completeLessonWithStats(
  */
 export async function updateUserXP(earnedXP: number): Promise<void> {
   // Get or create user
-  let user = await db.users.get(1);
+  const user = await db.users.get(1);
 
   if (!user) {
     // Create default user if doesn't exist
@@ -232,7 +232,7 @@ export async function updateUserXP(earnedXP: number): Promise<void> {
  * Update user streak
  */
 export async function updateStreak(): Promise<void> {
-  let user = await db.users.get(1);
+  const user = await db.users.get(1);
 
   if (!user) {
     // Create default user with streak = 1
@@ -281,7 +281,7 @@ export async function updateStreak(): Promise<void> {
  * Update total study time
  */
 export async function updateStudyTime(minutesStudied: number): Promise<void> {
-  let user = await db.users.get(1);
+  const user = await db.users.get(1);
 
   if (!user) {
     await db.users.add({

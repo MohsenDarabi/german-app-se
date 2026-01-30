@@ -33,7 +33,7 @@ export const handle: Handle = async ({ event, resolve }) => {
       { data: { session: null }, error: null }
     );
     session = result.data.session;
-  } catch (e) {
+  } catch {
     // Supabase unreachable, continue without auth
     console.warn('Supabase auth check failed, continuing without auth');
   }

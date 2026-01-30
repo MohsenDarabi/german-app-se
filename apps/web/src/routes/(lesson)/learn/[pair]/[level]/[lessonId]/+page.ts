@@ -2,7 +2,7 @@
 // Uses contentService for CDN + offline caching, falls back to local
 import type { PageLoad } from "./$types";
 import { error } from "@sveltejs/kit";
-import { browser } from "$app/environment";
+
 import * as contentService from "$lib/services/contentService";
 import * as assetService from "$lib/services/assetService";
 

@@ -71,4 +71,12 @@ export default [
       "svelte/no-navigation-without-resolve": "off"
     }
   },
+
+  // 5. Disable svelte navigation rule for TS files that use goto()
+  {
+    files: ["**/*.ts"],
+    rules: {
+      "svelte/no-navigation-without-resolve": "off"
+    }
+  },
 ];

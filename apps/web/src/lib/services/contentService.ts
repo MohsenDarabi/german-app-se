@@ -493,7 +493,7 @@ export async function getCacheStats(): Promise<{ lessonCount: number; totalSize:
         resolve({ lessonCount: lessons.length, totalSize });
       };
     });
-  } catch (e) {
+  } catch {
     return { lessonCount: 0, totalSize: 0 };
   }
 }

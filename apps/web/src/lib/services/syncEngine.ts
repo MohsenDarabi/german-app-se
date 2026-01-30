@@ -1,6 +1,6 @@
 import { db } from '$lib/db';
 import { supabase } from '$lib/supabase/client';
-import type { User, LessonProgress, VocabItem, WrongAnswer } from '$lib/db';
+
 
 /**
  * SyncEngine - Handles bidirectional sync between local IndexedDB and Supabase cloud

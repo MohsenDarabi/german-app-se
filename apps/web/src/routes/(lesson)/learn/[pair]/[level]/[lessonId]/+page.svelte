@@ -120,7 +120,7 @@
     }
   }
 
-  // eslint-disable-next-line svelte/infinite-reactive-loop -- guarded by conditions in reactive block
+  /* eslint-disable svelte/infinite-reactive-loop -- these functions are called from guarded reactive block */
   async function handleLessonEnd() {
     // Check for wrong answers that need review
     wrongAnswersToReview = await getUnreviewedWrongAnswers(data.lesson.id);
@@ -144,7 +144,6 @@
     await finishLesson();
   }
 
-  // eslint-disable-next-line svelte/infinite-reactive-loop -- guarded by conditions in reactive block
   async function finishLesson() {
     // Award XP, update streak, mark lesson as complete
     completionStats = await completeLessonWithStats(
@@ -153,6 +152,7 @@
       data.lesson.steps.length
     );
   }
+  /* eslint-enable svelte/infinite-reactive-loop */
 
   function backToDashboard() {
     // Force full page reload to ensure liveQuery picks up database changes

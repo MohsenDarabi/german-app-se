@@ -133,7 +133,7 @@ function containsPersian(text: string): boolean {
  */
 function extractGermanText(text: string): string {
   // Remove Persian/Arabic text blocks
-  let germanOnly = text
+  const germanOnly = text
     // Remove Persian text blocks (sequences of Persian chars with spaces)
     .replace(/[\u0600-\u06FF\u0750-\u077F\uFB50-\uFDFF\uFE70-\uFEFF]+[\s\u200C]*[\u0600-\u06FF\u0750-\u077F\uFB50-\uFDFF\uFE70-\uFEFF\s\u200C]*/g, ' ')
     // Remove Persian quotation marks « »
