@@ -12,8 +12,9 @@
   <h2 class="step-title">مکالمه</h2>
   <div class="chat-box">
     {#each step.lines as line, i (i)}
-      {@const avatarPath = getCharacterAvatarPath(line.speakerId)}
-      {@const speakerName = getCharacterDisplayName(line.speakerId)}
+      {@const id = line.speakerId || line.speaker?.toLowerCase()}
+      {@const avatarPath = getCharacterAvatarPath(id)}
+      {@const speakerName = getCharacterDisplayName(id)}
       <div class="chat-bubble">
         <div class="bubble-header">
           <div class="speaker-info">

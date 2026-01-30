@@ -58,11 +58,17 @@ export function resolveAsset(assetId: string): string | null {
   const asset = typedRegistry.assets[assetId];
   if (!asset?.path) return null;
 
-  // Use CDN URL if available
+  // Use CDN URL if available and asset is in shared manifest
   if (isCdnEnabled()) {
-    return getImageUrl(assetId);
+    const cdnUrl = getImageUrl(assetId);
+    // Only use CDN URL if it was actually found in the manifest
+    // (getImageUrl returns a fallback path with /images/greetings/ for unknown IDs)
+    if (!cdnUrl.includes('/images/greetings/')) {
+      return cdnUrl;
+    }
   }
 
+  // Use the registry path (served from static/)
   return asset.path;
 }
 

@@ -20,7 +20,7 @@ export function getCharacterProfile(id: string): CharacterProfile | null {
 
 export function getCharacterDisplayName(id: string): string {
   const profile = getCharacterProfile(id);
-  return profile?.displayName?.fa || profile?.displayName?.de || id;
+  return profile?.displayName?.de || profile?.displayName?.fa || id;
 }
 
 export function getCharacterAvatarPath(id: string): string | null {
