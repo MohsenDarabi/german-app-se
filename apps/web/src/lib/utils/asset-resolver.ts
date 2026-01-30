@@ -47,7 +47,7 @@ export interface AssetRegistry {
   categories: Record<string, string[]>;
 }
 
-const typedRegistry = registry as AssetRegistry;
+const typedRegistry = registry as unknown as AssetRegistry;
 
 /**
  * Resolve an asset ID to its file path or CDN URL

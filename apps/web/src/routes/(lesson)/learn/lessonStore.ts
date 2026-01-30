@@ -67,7 +67,7 @@ function createLessonStore() {
 
         // Determine if next step requires interaction
         const nextStepType = state.lesson.steps[nextIndex].type;
-        const autoEnable = nextStepType !== 'word-quiz' && nextStepType !== 'multiple-choice';
+        const autoEnable = nextStepType !== 'multiple-choice';
 
         return {
           ...state,

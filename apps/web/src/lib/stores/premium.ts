@@ -252,7 +252,7 @@ async function notifyServiceWorkerAndWait(message: { type: string; data?: unknow
       }
     };
 
-    navigator.serviceWorker.controller.postMessage(message, [channel.port2]);
+    navigator.serviceWorker.controller!.postMessage(message, [channel.port2]);
 
     // Timeout after 60 seconds
     setTimeout(() => reject(new Error('Service worker timeout')), 60000);
@@ -274,7 +274,7 @@ async function getCacheSizeFromServiceWorker(): Promise<number> {
     };
 
     navigator.serviceWorker.addEventListener('message', handleMessage);
-    navigator.serviceWorker.controller.postMessage({ type: 'GET_CACHE_SIZE' });
+    navigator.serviceWorker.controller!.postMessage({ type: 'GET_CACHE_SIZE' });
 
     // Timeout after 5 seconds
     setTimeout(() => {

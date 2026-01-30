@@ -109,7 +109,8 @@ export function initDeepLinkHandler(): void {
   });
 
   // Check if app was opened with a URL
-  App.getLaunchUrl().then(({ url }) => {
+  App.getLaunchUrl().then((result) => {
+    const url = result?.url;
     if (url) {
       console.log('[DeepLink] App launched with URL:', url);
       // The appUrlOpen listener will handle it

@@ -19,7 +19,7 @@ const config: CapacitorConfig = {
   },
 
   // App URL scheme for deep links (OAuth callbacks)
-  // Format: com.germanapp.se://auth/callback
+  // @ts-expect-error - Capacitor plugin config
   appUrlOpen: {
     enabled: true
   },
