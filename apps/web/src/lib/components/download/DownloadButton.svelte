@@ -1,20 +1,22 @@
 <script lang="ts">
-  import { createEventDispatcher } from "svelte";
+  import { createEventDispatcher, onMount } from "svelte";
   import * as contentService from "$lib/services/contentService";
   import { isPremium } from "$lib/stores/premium";
 
   export let lessonId: string;
   export let disabled: boolean = false;
 
-  const dispatch = createEventDispatcher();
+  const dispatch = createEventDispatcher<{ downloaded: { lessonId: string }; error: { lessonId: string; error: string }; premiumRequired: void }>();
 
   let isDownloading = false;
   let isDownloaded = false;
   let error: string | null = null;
 
   // Check if already cached on mount
-  $: contentService.isContentCached(lessonId).then(cached => {
-    isDownloaded = cached;
+  onMount(() => {
+    contentService.isContentCached(lessonId).then(cached => {
+      isDownloaded = cached;
+    });
   });
 
   async function handleDownload() {

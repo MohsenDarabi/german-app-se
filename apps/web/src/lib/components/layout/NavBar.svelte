@@ -37,7 +37,7 @@
   });
 
   // Get current language pair
-  $: currentLanguage = getState().languagePair || 'de-fa';
+  const currentLanguage = getState().languagePair || 'de-fa';
 
   // Get user stats for streak display
   const userStats = liveQuery(() => db.users.get(1));

@@ -8,7 +8,7 @@
   export let step: WordOrderStep;
   export let lessonId: string = '';
 
-  const dispatch = createEventDispatcher();
+  const dispatch = createEventDispatcher<{ answer: { correct: boolean; allowContinue: boolean } }>();
 
   let selectedWords: number[] = [];
   let isAnswered = false;
@@ -62,7 +62,7 @@
     {#if selectedWords.length === 0}
       <span class="placeholder">روی کلمات زیر بزنید تا جمله بسازید</span>
     {:else}
-      {#each selectedWords as wordIdx, i}
+      {#each selectedWords as wordIdx, i (i)}
         <button
           class="word-chip selected"
           on:click={() => removeWord(i)}

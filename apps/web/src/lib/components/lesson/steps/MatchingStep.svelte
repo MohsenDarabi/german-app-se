@@ -6,7 +6,7 @@
   export let step: MatchingStep;
   export let lessonId: string = '';
 
-  const dispatch = createEventDispatcher();
+  const dispatch = createEventDispatcher<{ answer: { correct: boolean; allowContinue: boolean } }>();
 
   // Fisher-Yates shuffle
   function shuffle<T>(array: T[]): T[] {
@@ -106,7 +106,7 @@
 
   <!-- Progress dots -->
   <div class="progress-dots">
-    {#each Array(totalPairs) as _, i}
+    {#each Array(totalPairs) as _, i (i)}
       <span class="dot" class:completed={i < completedPairs}></span>
     {/each}
   </div>

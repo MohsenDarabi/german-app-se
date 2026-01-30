@@ -137,7 +137,7 @@
   {/if}
 
   <div class="module-list" class:disabled={!$isPremium}>
-    {#each allModules as module}
+    {#each allModules as module (module.id)}
       {@const status = moduleDownloadStatus.get(module.id)}
       {@const isSelected = selectedModules.has(module.id)}
       {@const isCompleted = status === "downloaded"}
