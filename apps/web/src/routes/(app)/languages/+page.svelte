@@ -11,7 +11,7 @@
 
   let switching = false;
 
-  $: cdnEnabled = isCdnEnabled();
+  const cdnEnabled = isCdnEnabled();
 
   // Count downloaded lessons per language
   function getDownloadedCount(languageId: string): number {
@@ -60,7 +60,7 @@
   {/if}
 
   <div class="language-grid">
-    {#each LANGUAGE_PACKS as pack}
+    {#each LANGUAGE_PACKS as pack (pack.id)}
       <button
         class="language-card"
         class:active={pack.id === $selectedPair}

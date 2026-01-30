@@ -186,7 +186,7 @@
     </h2>
 
     <div class="modules-list">
-      {#each A1_MODULES as module}
+      {#each A1_MODULES as module (module.title)}
         {@const progress = getModuleProgress(module)}
         <div class="module-card" class:complete={progress.percentage === 100}>
           <div class="module-header">

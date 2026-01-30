@@ -13,6 +13,7 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 20 }
       - run: pnpm install
+      - run: pnpm --filter @app/web exec svelte-kit sync
       - run: pnpm lint
       - run: pnpm typecheck
       - run: pnpm -w build

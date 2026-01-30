@@ -69,7 +69,7 @@
     {/if}
 
     <div class="pills-grid">
-      {#each parsed.items as item}
+      {#each parsed.items as item (item.german)}
         <VocabPill
           german={item.german}
           persian={item.persian}

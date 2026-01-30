@@ -77,9 +77,11 @@
   });
 
   // Check for end-of-lesson review when lesson is complete
+  /* eslint-disable svelte/infinite-reactive-loop -- intentional: guards prevent re-triggering */
   $: if ($lessonStore.isComplete && !showReviewScreen && !completionStats) {
     handleLessonEnd();
   }
+  /* eslint-enable svelte/infinite-reactive-loop */
 
   function handleContinue() {
     // Stop any playing audio before moving to next step
@@ -118,6 +120,7 @@
     }
   }
 
+  // eslint-disable-next-line svelte/infinite-reactive-loop -- guarded by conditions in reactive block
   async function handleLessonEnd() {
     // Check for wrong answers that need review
     wrongAnswersToReview = await getUnreviewedWrongAnswers(data.lesson.id);
@@ -141,6 +144,7 @@
     await finishLesson();
   }
 
+  // eslint-disable-next-line svelte/infinite-reactive-loop -- guarded by conditions in reactive block
   async function finishLesson() {
     // Award XP, update streak, mark lesson as complete
     completionStats = await completeLessonWithStats(

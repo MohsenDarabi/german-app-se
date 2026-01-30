@@ -75,7 +75,7 @@
   </div>
 
   <div class="words-pool" dir={sentenceDir}>
-    {#each step.words as word, i}
+    {#each step.words as word, i (i)}
       <button
         class="word-chip"
         class:used={selectedWords.includes(i)}

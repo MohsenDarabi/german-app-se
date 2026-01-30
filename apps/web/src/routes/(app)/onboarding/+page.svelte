@@ -58,7 +58,7 @@
     </header>
 
     <div class="language-grid">
-      {#each LANGUAGE_PACKS as pack}
+      {#each LANGUAGE_PACKS as pack (pack.id)}
         <button
           class="language-card"
           class:selected={selectedLang === pack.id}

@@ -1,3 +1,4 @@
+<!-- eslint-disable svelte/no-at-html-tags -->
 <script lang="ts">
   import { getAllModulesForLanguage } from "$lib/data/modules";
   import { onMount } from "svelte";
@@ -30,6 +31,7 @@
   let progressMapStore: Map<string, any> = new Map();
 
   // Re-fetch progress when language changes
+  // eslint-disable-next-line svelte/infinite-reactive-loop -- only $selectedPair triggers this
   $: {
     // This block runs whenever $selectedPair changes
     const langPair = $selectedPair;
@@ -274,7 +276,7 @@
     </h2>
     <div class="timeline">
       {#key [progressMap, $devMode]}
-        {#each A1_MODULES as module, moduleIndex}
+        {#each A1_MODULES as module, moduleIndex (moduleIndex)}
           {@const moduleId = `a1-${moduleIndex}`}
           {@const stats = getModuleStats(module, 'a1', moduleIndex)}
           {@const isExpanded = expandedModules.has(moduleId)}
@@ -297,7 +299,7 @@
             </button>
 
             <div class="lessons-list" class:collapsed={!isExpanded}>
-              {#each module.lessons as lesson, lessonIndex}
+              {#each module.lessons as lesson, lessonIndex (lesson.id)}
                 {@const globalIndex = A1_MODULES.slice(0, moduleIndex).reduce((sum, m) => sum + m.lessons.length, 0) + lessonIndex}
                 {@const status = getLessonStatus(lesson.id, globalIndex)}
                 {@const progress = progressMap?.get(lesson.id)}
@@ -354,7 +356,7 @@
     </h2>
     <div class="timeline">
       {#key [progressMap, $devMode]}
-        {#each A2_MODULES as module, moduleIndex}
+        {#each A2_MODULES as module, moduleIndex (moduleIndex)}
           {@const moduleId = `a2-${moduleIndex}`}
           {@const stats = getModuleStats(module, 'a2', moduleIndex)}
           {@const isExpanded = expandedModules.has(moduleId)}
@@ -377,7 +379,7 @@
             </button>
 
             <div class="lessons-list" class:collapsed={!isExpanded}>
-              {#each module.lessons as lesson, lessonIndex}
+              {#each module.lessons as lesson, lessonIndex (lesson.id)}
                 {@const a1TotalLessons = A1_MODULES.reduce((sum, m) => sum + m.lessons.length, 0)}
                 {@const globalIndex = a1TotalLessons + A2_MODULES.slice(0, moduleIndex).reduce((sum, m) => sum + m.lessons.length, 0) + lessonIndex}
                 {@const a2LessonNum = A2_MODULES.slice(0, moduleIndex).reduce((sum, m) => sum + m.lessons.length, 0) + lessonIndex + 1}

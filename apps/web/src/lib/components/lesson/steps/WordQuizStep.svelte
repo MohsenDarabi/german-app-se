@@ -11,7 +11,7 @@
   let isAnswered = false;
   let canRetry = false;
 
-  const dispatch = createEventDispatcher();
+  const dispatch = createEventDispatcher<{ answer: { correct: boolean; allowContinue: boolean } }>();
 
   // Support both old and new field names
   $: question = (step as any).question || (step as any).prompt;
