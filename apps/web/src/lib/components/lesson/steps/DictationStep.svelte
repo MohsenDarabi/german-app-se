@@ -91,9 +91,9 @@
   function normalizeText(text: string): string {
     return text
       .toLowerCase()
-      .trim()
       .replace(/[.!?،؟]+/g, '') // Remove common punctuation (German and Persian)
-      .replace(/\s+/g, ' ');     // Normalize whitespace
+      .replace(/\s+/g, ' ')     // Normalize whitespace
+      .trim();                   // Trim AFTER punctuation removal to catch "auch !" → "auch " → "auch"
   }
 
   function retry() {
