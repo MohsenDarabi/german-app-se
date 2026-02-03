@@ -273,7 +273,7 @@
       <h3 class="question-text" dir="rtl">{currentQuestion.question}</h3>
 
       <div class="question-options">
-        {#each currentQuestion.options as option, i}
+        {#each currentQuestion.options as option, i (i)}
           <button
             class="question-option"
             class:selected={selectedOptionIndex === i}

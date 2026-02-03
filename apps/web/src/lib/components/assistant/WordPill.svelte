@@ -42,8 +42,9 @@
     return '';
   }
 
-  $: pillClass = getPillClass();
-  $: article = getArticle();
+  // Make reactive by referencing item directly
+  $: pillClass = item && getPillClass();
+  $: article = item && getArticle();
 </script>
 
 <button

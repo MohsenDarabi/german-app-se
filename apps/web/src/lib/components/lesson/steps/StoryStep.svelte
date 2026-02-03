@@ -143,7 +143,7 @@
         <div class="question-badge">❓ سوال</div>
         <h4 class="question-text">{currentSegment.question}</h4>
         <div class="question-options">
-          {#each currentSegment.options as option, i}
+          {#each currentSegment.options as option, i (i)}
             <button
               class="question-option"
               class:selected={selectedOptionIndex === i}
@@ -180,7 +180,7 @@
 
   <!-- Progress Dots -->
   <div class="progress-dots">
-    {#each step.segments as _, i}
+    {#each step.segments as _, i (i)}
       <span
         class="dot"
         class:active={i === currentSegmentIndex}

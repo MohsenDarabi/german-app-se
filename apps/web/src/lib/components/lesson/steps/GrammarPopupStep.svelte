@@ -36,6 +36,7 @@
   </div>
 
   <div class="explanation-text">
+    <!-- eslint-disable-next-line svelte/no-at-html-tags -- Content from trusted lesson JSON -->
     {@html highlightedExplanation}
   </div>
 
@@ -51,9 +52,8 @@
               audioId="{step.id}-example{idx}"
               size="sm"
             />
-            <span class="german-text" dir="ltr">
-              {@html highlightText(example.de, example.highlights || step.highlights)}
-            </span>
+            <!-- eslint-disable-next-line svelte/no-at-html-tags -- Content from trusted lesson JSON -->
+          <span class="german-text" dir="ltr">{@html highlightText(example.de, example.highlights || step.highlights)}</span>
           </div>
           <div class="example-persian">
             <BiDiText text={example.fa} />
