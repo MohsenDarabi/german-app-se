@@ -96,6 +96,10 @@
   {#if currentWrong}
     <div class="review-question-card">
       <h3 class="question">{currentWrong.question || `سوال ${currentReviewIndex + 1}`}</h3>
+      <!-- Show the German text that was tested (correctAnswer) -->
+      {#if currentWrong.correctAnswer && currentWrong.stepType === 'dictation'}
+        <p class="german-text" dir="ltr">{currentWrong.correctAnswer}</p>
+      {/if}
 
       <div class="options-grid">
         {#each options as option (option)}
@@ -107,7 +111,7 @@
             on:click={() => selectOption(option)}
             disabled={!!selectedAnswer}
           >
-            {option}
+            <span dir="ltr">{option}</span>
 
             {#if selectedAnswer && option === currentWrong.correctAnswer}
               <span class="icon">✅</span>
@@ -223,7 +227,19 @@
     font-weight: 700;
     color: #1e293b;
     text-align: center;
+    margin-bottom: 0.75rem;
+  }
+
+  .german-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #0891b2;
+    text-align: center;
     margin-bottom: 1.5rem;
+    padding: 0.5rem 1rem;
+    background: #ecfeff;
+    border-radius: 0.5rem;
+    display: inline-block;
   }
 
   .options-grid {

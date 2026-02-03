@@ -40,10 +40,14 @@
     if (step.sentence) return step.sentence; // fill-in-blank
     // formality-choice: use scenario for context in review
     if (step.type === 'formality-choice' && step.scenario) return step.scenario;
+    // dictation: use translation as the question (what user heard)
+    if (step.type === 'dictation' && step.translation) return step.translation;
+    // syllable-spelling: use translation as the question
+    if (step.type === 'syllable-spelling' && step.translation) return step.translation;
     if (step.instruction) return step.instruction; // word-order, fill-in-blank
     if (step.word?.de) return step.word.de; // new-word
     if (step.title) return step.title; // dialog, grammar-tip
-    return `Step ${step.id || 'unknown'}`;
+    return `سوال ${step.id || ''}`.trim(); // Persian fallback instead of English
   }
 
   let showReviewScreen = false;
