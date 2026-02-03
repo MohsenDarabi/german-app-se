@@ -20,6 +20,7 @@
   // ChatSimulatorStep disabled - will be replaced by AI chatbot
   // import ChatSimulatorStep from "./steps/ChatSimulatorStep.svelte";
   import VocabCheckStep from "./steps/VocabCheckStep.svelte";
+  import SyllableSpellingStep from "./steps/SyllableSpellingStep.svelte";
   import SpellingStep from "./steps/SpellingStep.svelte";
   import ComprehensionStep from "./steps/ComprehensionStep.svelte";
   import DictationStep from "./steps/DictationStep.svelte";
@@ -71,6 +72,8 @@
     </div>
   {:else if step.type === "vocab-check"}
     <VocabCheckStep {step} {lessonId} on:answer />
+  {:else if step.type === "syllable-spelling"}
+    <SyllableSpellingStep {step} {lessonId} on:answer />
   {:else if step.type === "spelling"}
     <SpellingStep {step} {lessonId} on:answer />
   {:else if step.type === "comprehension"}

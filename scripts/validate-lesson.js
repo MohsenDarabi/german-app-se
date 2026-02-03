@@ -80,10 +80,10 @@ const rules = [
     description: 'All steps have valid types',
     check: (lesson) => {
       const validTypes = [
-        'new-word', 'grammar-tip', 'multiple-choice', 'fill-in-blank',
+        'new-word', 'grammar-tip', 'grammar-popup', 'multiple-choice', 'fill-in-blank',
         'word-order', 'true-false', 'translation', 'dialog', 'completion',
-        'speed-challenge', 'spelling', 'comprehension', 'rapid-fire',
-        'memory-match', 'vocab-check', 'word-hunt', 'matching'
+        'speed-challenge', 'syllable-spelling', 'spelling', 'comprehension', 'rapid-fire',
+        'memory-match', 'vocab-check', 'word-hunt', 'matching', 'dictation', 'story'
       ];
       const invalid = lesson.steps?.filter(s => !validTypes.includes(s.type)) || [];
       if (invalid.length > 0) {

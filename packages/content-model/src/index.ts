@@ -465,7 +465,38 @@ export const SpeedChallengeStepSchema = BaseStepSchema.extend({
 });
 
 /* --------------------------------------------------
-   Step Type 11: Spelling Exercise
+   Step Type 11a: Syllable Spelling Exercise (Pre-step)
+   Arrange syllables/word chunks to build a word.
+   Easier than letter-level spelling - pedagogical scaffolding.
+-------------------------------------------------- */
+
+export const SyllableSpellingStepSchema = BaseStepSchema.extend({
+  type: z.literal("syllable-spelling"),
+
+  // The word to build
+  word: z.string(),
+
+  // Persian translation
+  translation: z.string(),
+
+  // Syllables in correct order
+  syllables: z.array(z.string()).min(2),
+
+  // Wrong syllables to include as distractors
+  distractors: z.array(z.string()).optional(),
+
+  // Optional phonetic hint
+  hint: z.string().optional(),
+
+  // Instruction text
+  instruction: z.string().default("قطعات را کنار هم بگذارید"),
+
+  // Contextual feedback tips
+  feedbackTip: FeedbackTipSchema,
+});
+
+/* --------------------------------------------------
+   Step Type 11b: Spelling Exercise
    Spell a word by clicking/typing letters in order
 -------------------------------------------------- */
 
@@ -728,6 +759,7 @@ export const LessonStepSchema = z.discriminatedUnion("type", [
   GrammarPopupStepSchema,  // NEW: Contextual grammar tips
   CompletionStepSchema,
   SpeedChallengeStepSchema,
+  SyllableSpellingStepSchema, // NEW: Syllable-level spelling (pre-step)
   SpellingStepSchema,
   ComprehensionStepSchema,
   DictationStepSchema,     // NEW: Listening dictation
@@ -838,6 +870,7 @@ export type GrammarPopupStep = z.infer<typeof GrammarPopupStepSchema>;
 export type CompletionStep = z.infer<typeof CompletionStepSchema>;
 export type SpeedChallengeStep = z.infer<typeof SpeedChallengeStepSchema>;
 export type SpeedChallengeQuestion = z.infer<typeof SpeedChallengeQuestionSchema>;
+export type SyllableSpellingStep = z.infer<typeof SyllableSpellingStepSchema>;
 export type SpellingStep = z.infer<typeof SpellingStepSchema>;
 export type ComprehensionStep = z.infer<typeof ComprehensionStepSchema>;
 export type ComprehensionQuestion = z.infer<typeof ComprehensionQuestionSchema>;
