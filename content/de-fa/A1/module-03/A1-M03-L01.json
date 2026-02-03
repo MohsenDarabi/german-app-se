@@ -17,8 +17,70 @@
   "level": "A1",
   "module": 3,
   "lessonNumber": 1,
-  "totalSteps": 26,
-  "estimatedMinutes": 15,
+  "totalSteps": 32,
+  "estimatedMinutes": 18,
+  "vocabulary": [
+    {
+      "de": "nicht",
+      "fa": "نه / نمی",
+      "grammar": { "pos": "adverb" }
+    },
+    {
+      "de": "heute",
+      "fa": "امروز",
+      "grammar": { "pos": "adverb" }
+    },
+    {
+      "de": "morgen",
+      "fa": "فردا",
+      "grammar": { "pos": "adverb" }
+    },
+    {
+      "de": "hier",
+      "fa": "اینجا",
+      "grammar": { "pos": "adverb" }
+    },
+    {
+      "de": "dort",
+      "fa": "آنجا",
+      "grammar": { "pos": "adverb" }
+    },
+    {
+      "de": "müde",
+      "fa": "خسته",
+      "grammar": { "pos": "adjective" }
+    },
+    {
+      "de": "hungrig",
+      "fa": "گرسنه",
+      "grammar": { "pos": "adjective" }
+    },
+    {
+      "de": "richtig",
+      "fa": "درست",
+      "grammar": { "pos": "adjective" }
+    },
+    {
+      "de": "falsch",
+      "fa": "غلط",
+      "grammar": { "pos": "adjective" }
+    },
+    {
+      "de": "Schade!",
+      "fa": "حیف!",
+      "grammar": { "pos": "interjection" }
+    },
+    {
+      "de": "jetzt",
+      "fa": "الان",
+      "grammar": { "pos": "adverb" }
+    },
+    {
+      "de": "später",
+      "fa": "بعداً",
+      "grammar": { "pos": "adverb" }
+    }
+  ],
   "steps": [
     {
       "type": "grammar-tip",
@@ -51,6 +113,15 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-1",
+      "word": "nicht",
+      "translation": "نه / نمی",
+      "syllables": ["nicht"],
+      "distractors": ["nacht", "nich", "nieht"],
+      "hint": "۱ بخش - منفی‌ساز"
+    },
+    {
       "type": "new-word",
       "id": "s3",
       "word": {
@@ -63,6 +134,15 @@
           "fa": "امروز کار نمی‌کنم."
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-2",
+      "word": "heute",
+      "translation": "امروز",
+      "syllables": ["heu", "te"],
+      "distractors": ["hoi", "hau", "ta", "ti"],
+      "hint": "۲ بخش - eu صدای اُی"
     },
     {
       "type": "new-word",
@@ -79,6 +159,15 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-3",
+      "word": "morgen",
+      "translation": "فردا",
+      "syllables": ["mor", "gen"],
+      "distractors": ["mar", "gor", "gan", "gen"],
+      "hint": "۲ بخش - فردا"
+    },
+    {
       "type": "new-word",
       "id": "s5",
       "word": {
@@ -93,6 +182,15 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-4",
+      "word": "hier",
+      "translation": "اینجا",
+      "syllables": ["hier"],
+      "distractors": ["hir", "hiar", "heir"],
+      "hint": "۱ بخش - ie صدای ای"
+    },
+    {
       "type": "new-word",
       "id": "s6",
       "word": {
@@ -105,6 +203,15 @@
           "fa": "او آنجا نیست."
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-5",
+      "word": "dort",
+      "translation": "آنجا",
+      "syllables": ["dort"],
+      "distractors": ["dert", "dart", "drot"],
+      "hint": "۱ بخش - آنجا"
     },
     {
       "type": "grammar-tip",
@@ -137,6 +244,15 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-6",
+      "word": "müde",
+      "translation": "خسته",
+      "syllables": ["mü", "de"],
+      "distractors": ["mu", "mi", "da", "di"],
+      "hint": "۲ بخش - ü صدای او"
+    },
+    {
       "type": "new-word",
       "id": "s9",
       "word": {
@@ -149,6 +265,15 @@
           "fa": "گرسنه نیستی؟"
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-7",
+      "word": "hungrig",
+      "translation": "گرسنه",
+      "syllables": ["hung", "rig"],
+      "distractors": ["hong", "hang", "rag", "reg"],
+      "hint": "۲ بخش - گرسنه"
     },
     {
       "type": "new-word",
@@ -165,6 +290,15 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-8",
+      "word": "richtig",
+      "translation": "درست",
+      "syllables": ["rich", "tig"],
+      "distractors": ["rech", "rach", "tag", "tog"],
+      "hint": "۲ بخش - درست"
+    },
+    {
       "type": "new-word",
       "id": "s11",
       "word": {
@@ -177,6 +311,15 @@
           "fa": "جواب غلط نیست."
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-9",
+      "word": "falsch",
+      "translation": "غلط",
+      "syllables": ["falsch"],
+      "distractors": ["felsch", "folsch", "falch"],
+      "hint": "۱ بخش - sch صدای ش"
     },
     {
       "type": "rapid-fire",
@@ -221,20 +364,26 @@
       "id": "s12",
       "title": "مکالمه: امروز نه!",
       "context": "الی و تام درباره برنامه‌هایشان صحبت می‌کنند",
+      "scene": {
+        "location": "café",
+        "description": { "de": "Im Café", "fa": "در کافه" }
+      },
       "lines": [
         {
           "speaker": "Eli",
           "text": {
             "de": "Kommst du heute ins Café?",
             "fa": "امروز میای کافه؟"
-          }
+          },
+          "mood": "happy"
         },
         {
           "speaker": "Tom",
           "text": {
             "de": "Nein, heute kann ich nicht.",
             "fa": "نه، امروز نمی‌توانم."
-          }
+          },
+          "mood": "sad"
         },
         {
           "speaker": "Eli",
@@ -255,14 +404,40 @@
           "text": {
             "de": "Schade! Und morgen?",
             "fa": "حیف! و فردا؟"
-          }
+          },
+          "mood": "sad"
         },
         {
           "speaker": "Tom",
           "text": {
             "de": "Morgen bin ich nicht müde. Ja!",
             "fa": "فردا خسته نیستم. آره!"
-          }
+          },
+          "mood": "happy"
+        }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        {
+          "question": "چرا تام امروز نمی‌تواند بیاید؟",
+          "options": ["خسته است", "کار می‌کند", "مریض است"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: «Ja, ich arbeite bis acht.» یعنی تا ساعت هشت کار می‌کند.",
+          "relatedLineIndex": 3
+        },
+        {
+          "question": "تام فردا چطور خواهد بود؟",
+          "options": ["خسته", "گرسنه", "خسته نیست"],
+          "correctIndex": 2,
+          "explanation": "تام گفت: «Morgen bin ich nicht müde.» یعنی فردا خسته نیستم.",
+          "relatedLineIndex": 5
+        },
+        {
+          "question": "معنی «Schade» چیست؟",
+          "options": ["آفرین", "حیف", "ممنون"],
+          "correctIndex": 1,
+          "explanation": "«Schade» یعنی «حیف» و وقتی خبر ناراحت‌کننده می‌شنویم استفاده می‌شود.",
+          "relatedLineIndex": 4
         }
       ]
     },
@@ -279,6 +454,15 @@
           "fa": "نمی‌توانی بیایی؟ حیف!"
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-10",
+      "word": "Schade",
+      "translation": "حیف",
+      "syllables": ["Scha", "de"],
+      "distractors": ["Sha", "Sche", "da", "di"],
+      "hint": "۲ بخش - sch صدای ش"
     },
     {
       "type": "grammar-tip",
@@ -307,11 +491,12 @@
         "kein",
         "nie"
       ],
-      "correctAnswers": [
-        0
-      ],
-      "feedback": {
-        "explanation": "Er kommt heute **nicht**. = او امروز نمی‌آید."
+      "correctAnswers": [0],
+      "feedbackTip": {
+        "onCorrect": "آفرین! «nicht» برای منفی کردن فعل در جمله استفاده می‌شود.",
+        "onWrong": "دقت کنید: برای منفی کردن فعل از «nicht» استفاده می‌کنیم، نه «nein» که پاسخ است.",
+        "errorCategory": "negation",
+        "highlights": ["nicht", "منفی"]
       }
     },
     {
@@ -325,11 +510,12 @@
         "kein",
         "nichts"
       ],
-      "correctAnswers": [
-        0
-      ],
-      "feedback": {
-        "explanation": "Ich bin **nicht** müde. = خسته نیستم. (nicht قبل از صفت می‌آید)"
+      "correctAnswers": [0],
+      "feedbackTip": {
+        "onCorrect": "آفرین! «nicht» قبل از صفت (müde) می‌آید.",
+        "onWrong": "دقت کنید: قبل از صفت «müde» باید «nicht» بگذاریم، نه «kein» که برای اسم است.",
+        "errorCategory": "negation",
+        "highlights": ["nicht", "müde"]
       }
     },
     {
@@ -343,9 +529,11 @@
         "Komme ich nicht."
       ],
       "correctAnswerIndex": 1,
-      "feedback": {
-        "correct": "آفرین! Ich komme nicht. = من نمی‌آیم.",
-        "incorrect": "پاسخ صحیح: Ich komme nicht. (nicht آخر جمله)"
+      "feedbackTip": {
+        "onCorrect": "آفرین! در جمله ساده، «nicht» آخر جمله می‌آید.",
+        "onWrong": "دقت کنید: ترتیب صحیح: فاعل + فعل + ... + nicht. پس «Ich komme nicht.»",
+        "errorCategory": "word-order",
+        "highlights": ["nicht", "آخر جمله"]
       }
     },
     {
@@ -359,9 +547,11 @@
         "Nicht er ist hungrig."
       ],
       "correctAnswerIndex": 0,
-      "feedback": {
-        "correct": "آفرین! nicht قبل از صفت (hungrig) می‌آید.",
-        "incorrect": "پاسخ صحیح: Er ist nicht hungrig. (nicht قبل از صفت)"
+      "feedbackTip": {
+        "onCorrect": "آفرین! «nicht» قبل از صفت (hungrig) می‌آید.",
+        "onWrong": "دقت کنید: وقتی صفت داریم، «nicht» قبل از صفت می‌آید: Er ist nicht hungrig.",
+        "errorCategory": "word-order",
+        "highlights": ["nicht", "hungrig"]
       }
     },
     {
@@ -369,46 +559,19 @@
       "id": "s19",
       "instruction": "جمله مثبت را با منفی جفت کنید",
       "items": [
-        {
-          "id": "i1",
-          "text": "Ich komme."
-        },
-        {
-          "id": "i2",
-          "text": "Er ist müde."
-        },
-        {
-          "id": "i3",
-          "text": "Sie wohnt hier."
-        }
+        { "id": "i1", "text": "Ich komme." },
+        { "id": "i2", "text": "Er ist müde." },
+        { "id": "i3", "text": "Sie wohnt hier." }
       ],
       "matches": [
-        {
-          "id": "m1",
-          "text": "Ich komme nicht."
-        },
-        {
-          "id": "m2",
-          "text": "Er ist nicht müde."
-        },
-        {
-          "id": "m3",
-          "text": "Sie wohnt nicht hier."
-        }
+        { "id": "m1", "text": "Ich komme nicht." },
+        { "id": "m2", "text": "Er ist nicht müde." },
+        { "id": "m3", "text": "Sie wohnt nicht hier." }
       ],
       "correctPairs": [
-        [
-          "i1",
-          "m1"
-        ],
-        [
-          "i2",
-          "m2"
-        ],
-        [
-          "i3",
-          "m3"
-        ]
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"]
       ]
     },
     {
@@ -480,6 +643,15 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-11",
+      "word": "jetzt",
+      "translation": "الان",
+      "syllables": ["jetzt"],
+      "distractors": ["jezt", "jazz", "jatzt"],
+      "hint": "۱ بخش - tz صدای تس"
+    },
+    {
       "type": "new-word",
       "id": "s22",
       "word": {
@@ -494,55 +666,45 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-12",
+      "word": "später",
+      "translation": "بعداً",
+      "syllables": ["spä", "ter"],
+      "distractors": ["spa", "spe", "tar", "tor"],
+      "hint": "۲ بخش - ä صدای اِ"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Ich komme nicht.",
+      "translation": "نمی‌آیم.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Er ist nicht müde.",
+      "translation": "او خسته نیست.",
+      "difficulty": "A1"
+    },
+    {
       "type": "vocab-check",
       "id": "g3",
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [
-        {
-          "de": "nicht",
-          "fa": "نه / نمی"
-        },
-        {
-          "de": "heute",
-          "fa": "امروز"
-        },
-        {
-          "de": "morgen",
-          "fa": "فردا"
-        },
-        {
-          "de": "hier",
-          "fa": "اینجا"
-        },
-        {
-          "de": "dort",
-          "fa": "آنجا"
-        },
-        {
-          "de": "müde",
-          "fa": "خسته"
-        },
-        {
-          "de": "hungrig",
-          "fa": "گرسنه"
-        },
-        {
-          "de": "richtig",
-          "fa": "درست"
-        },
-        {
-          "de": "falsch",
-          "fa": "غلط"
-        },
-        {
-          "de": "jetzt",
-          "fa": "الان"
-        },
-        {
-          "de": "später",
-          "fa": "بعداً"
-        }
+        { "de": "nicht", "fa": "نه / نمی" },
+        { "de": "heute", "fa": "امروز" },
+        { "de": "morgen", "fa": "فردا" },
+        { "de": "hier", "fa": "اینجا" },
+        { "de": "dort", "fa": "آنجا" },
+        { "de": "müde", "fa": "خسته" },
+        { "de": "hungrig", "fa": "گرسنه" },
+        { "de": "richtig", "fa": "درست" },
+        { "de": "falsch", "fa": "غلط" },
+        { "de": "jetzt", "fa": "الان" },
+        { "de": "später", "fa": "بعداً" }
       ]
     },
     {
@@ -553,78 +715,18 @@
       "xpEarned": 50,
       "nextLessonId": "A1-M03-L02",
       "vocabularyLearned": [
-        {
-          "word": {
-            "de": "nicht",
-            "fa": "نه / نمی"
-          }
-        },
-        {
-          "word": {
-            "de": "heute",
-            "fa": "امروز"
-          }
-        },
-        {
-          "word": {
-            "de": "morgen",
-            "fa": "فردا"
-          }
-        },
-        {
-          "word": {
-            "de": "hier",
-            "fa": "اینجا"
-          }
-        },
-        {
-          "word": {
-            "de": "dort",
-            "fa": "آنجا"
-          }
-        },
-        {
-          "word": {
-            "de": "müde",
-            "fa": "خسته"
-          }
-        },
-        {
-          "word": {
-            "de": "hungrig",
-            "fa": "گرسنه"
-          }
-        },
-        {
-          "word": {
-            "de": "richtig",
-            "fa": "درست"
-          }
-        },
-        {
-          "word": {
-            "de": "falsch",
-            "fa": "غلط"
-          }
-        },
-        {
-          "word": {
-            "de": "Schade!",
-            "fa": "حیف!"
-          }
-        },
-        {
-          "word": {
-            "de": "jetzt",
-            "fa": "الان"
-          }
-        },
-        {
-          "word": {
-            "de": "später",
-            "fa": "بعداً"
-          }
-        }
+        { "word": { "de": "nicht", "fa": "نه / نمی" } },
+        { "word": { "de": "heute", "fa": "امروز" } },
+        { "word": { "de": "morgen", "fa": "فردا" } },
+        { "word": { "de": "hier", "fa": "اینجا" } },
+        { "word": { "de": "dort", "fa": "آنجا" } },
+        { "word": { "de": "müde", "fa": "خسته" } },
+        { "word": { "de": "hungrig", "fa": "گرسنه" } },
+        { "word": { "de": "richtig", "fa": "درست" } },
+        { "word": { "de": "falsch", "fa": "غلط" } },
+        { "word": { "de": "Schade!", "fa": "حیف!" } },
+        { "word": { "de": "jetzt", "fa": "الان" } },
+        { "word": { "de": "später", "fa": "بعداً" } }
       ]
     }
   ]

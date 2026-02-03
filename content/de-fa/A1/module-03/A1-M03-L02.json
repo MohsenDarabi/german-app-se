@@ -17,8 +17,65 @@
   "level": "A1",
   "module": 3,
   "lessonNumber": 2,
-  "totalSteps": 26,
-  "estimatedMinutes": 15,
+  "totalSteps": 34,
+  "estimatedMinutes": 18,
+  "vocabulary": [
+    {
+      "de": "kein",
+      "fa": "هیچ (مذکر/خنثی)",
+      "grammar": { "pos": "pronoun" }
+    },
+    {
+      "de": "keine",
+      "fa": "هیچ (مونث/جمع)",
+      "grammar": { "pos": "pronoun" }
+    },
+    {
+      "de": "die Zeit",
+      "fa": "وقت / زمان",
+      "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Zeiten" } }
+    },
+    {
+      "de": "das Geld",
+      "fa": "پول",
+      "grammar": { "pos": "noun", "noun": { "artikel": "n" } }
+    },
+    {
+      "de": "die Ahnung",
+      "fa": "ایده / فکر",
+      "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Ahnungen" } }
+    },
+    {
+      "de": "das Problem",
+      "fa": "مشکل",
+      "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "Probleme" } }
+    },
+    {
+      "de": "die Frage",
+      "fa": "سوال",
+      "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Fragen" } }
+    },
+    {
+      "de": "die Lust",
+      "fa": "میل / حوصله",
+      "grammar": { "pos": "noun", "noun": { "artikel": "f" } }
+    },
+    {
+      "de": "die Sorge",
+      "fa": "نگرانی",
+      "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Sorgen" } }
+    },
+    {
+      "de": "der Hunger",
+      "fa": "گرسنگی",
+      "grammar": { "pos": "noun", "noun": { "artikel": "m" } }
+    },
+    {
+      "de": "der Durst",
+      "fa": "تشنگی",
+      "grammar": { "pos": "noun", "noun": { "artikel": "m" } }
+    }
+  ],
   "steps": [
     {
       "type": "grammar-tip",
@@ -26,43 +83,43 @@
       "title": "nicht یا kein؟",
       "content": "در آلمانی دو راه برای منفی کردن داریم:\n\n**nicht** = برای فعل‌ها و صفت‌ها\nIch komme **nicht**. (نمی‌آیم)\n\n**kein/keine** = برای اسم‌ها\nIch habe **keine** Zeit. (وقت ندارم)\n\n🇮🇷 **نکته:** kein جایگزین ein می‌شود!",
       "examples": [
-        {
-          "de": "Ich habe kein Geld.",
-          "fa": "پول ندارم."
-        },
-        {
-          "de": "Das ist keine Frage.",
-          "fa": "این سوال نیست."
-        }
+        { "de": "Ich habe kein Geld.", "fa": "پول ندارم." },
+        { "de": "Das ist keine Frage.", "fa": "این سوال نیست." }
       ]
     },
     {
       "type": "new-word",
       "id": "s2",
-      "word": {
-        "de": "kein",
-        "fa": "هیچ (مذکر/خنثی)"
-      },
+      "word": { "de": "kein", "fa": "هیچ (مذکر/خنثی)" },
       "example": {
-        "text": {
-          "de": "Ich habe kein Auto.",
-          "fa": "ماشین ندارم."
-        }
+        "text": { "de": "Ich habe kein Auto.", "fa": "ماشین ندارم." }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-1",
+      "word": "kein",
+      "translation": "هیچ (مذکر/خنثی)",
+      "syllables": ["kein"],
+      "distractors": ["kain", "kien", "keen"],
+      "hint": "۱ بخش - ei صدای آی"
     },
     {
       "type": "new-word",
       "id": "s3",
-      "word": {
-        "de": "keine",
-        "fa": "هیچ (مونث/جمع)"
-      },
+      "word": { "de": "keine", "fa": "هیچ (مونث/جمع)" },
       "example": {
-        "text": {
-          "de": "Ich habe keine Schwester.",
-          "fa": "خواهر ندارم."
-        }
+        "text": { "de": "Ich habe keine Schwester.", "fa": "خواهر ندارم." }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-2",
+      "word": "keine",
+      "translation": "هیچ (مونث/جمع)",
+      "syllables": ["kei", "ne"],
+      "distractors": ["kai", "kie", "na", "ni"],
+      "hint": "۲ بخش - ei صدای آی"
     },
     {
       "type": "grammar-tip",
@@ -70,71 +127,77 @@
       "title": "kein با جنسیت",
       "content": "**kein** مثل **ein** با جنسیت اسم تغییر می‌کند:\n\n| جنس | ein | kein |\n|-----|-----|------|\n| مذکر (der) | ein Mann | **kein** Mann |\n| مونث (die) | eine Frau | **keine** Frau |\n| خنثی (das) | ein Kind | **kein** Kind |\n| جمع | - | **keine** Kinder |\n\n🇮🇷 **نکته:** جمع همیشه **keine** است!",
       "examples": [
-        {
-          "de": "Das ist kein Problem.",
-          "fa": "این مشکلی نیست."
-        },
-        {
-          "de": "Ich habe keine Fragen.",
-          "fa": "سوالی ندارم."
-        }
+        { "de": "Das ist kein Problem.", "fa": "این مشکلی نیست." },
+        { "de": "Ich habe keine Fragen.", "fa": "سوالی ندارم." }
       ]
     },
     {
       "type": "new-word",
       "id": "s5",
-      "word": {
-        "de": "die Zeit",
-        "fa": "وقت / زمان"
-      },
+      "word": { "de": "die Zeit", "fa": "وقت / زمان" },
       "example": {
-        "text": {
-          "de": "Ich habe keine Zeit.",
-          "fa": "وقت ندارم."
-        }
+        "text": { "de": "Ich habe keine Zeit.", "fa": "وقت ندارم." }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-3",
+      "word": "Zeit",
+      "translation": "وقت / زمان",
+      "syllables": ["Zeit"],
+      "distractors": ["Zait", "Ziet", "Zeet"],
+      "hint": "۱ بخش - ei صدای آی"
     },
     {
       "type": "new-word",
       "id": "s6",
-      "word": {
-        "de": "das Geld",
-        "fa": "پول"
-      },
+      "word": { "de": "das Geld", "fa": "پول" },
       "example": {
-        "text": {
-          "de": "Ich habe kein Geld.",
-          "fa": "پول ندارم."
-        }
+        "text": { "de": "Ich habe kein Geld.", "fa": "پول ندارم." }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-4",
+      "word": "Geld",
+      "translation": "پول",
+      "syllables": ["Geld"],
+      "distractors": ["Gald", "Gold", "Gild"],
+      "hint": "۱ بخش - پول"
     },
     {
       "type": "new-word",
       "id": "s7",
-      "word": {
-        "de": "die Ahnung",
-        "fa": "ایده / فکر"
-      },
+      "word": { "de": "die Ahnung", "fa": "ایده / فکر" },
       "example": {
-        "text": {
-          "de": "Ich habe keine Ahnung.",
-          "fa": "نمی‌دانم. / هیچ ایده‌ای ندارم."
-        }
+        "text": { "de": "Ich habe keine Ahnung.", "fa": "نمی‌دانم. / هیچ ایده‌ای ندارم." }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-5",
+      "word": "Ahnung",
+      "translation": "ایده / فکر",
+      "syllables": ["Ah", "nung"],
+      "distractors": ["Eh", "Oh", "nang", "ning"],
+      "hint": "۲ بخش - ایده"
     },
     {
       "type": "new-word",
       "id": "s8",
-      "word": {
-        "de": "das Problem",
-        "fa": "مشکل"
-      },
+      "word": { "de": "das Problem", "fa": "مشکل" },
       "example": {
-        "text": {
-          "de": "Kein Problem!",
-          "fa": "مشکلی نیست!"
-        }
+        "text": { "de": "Kein Problem!", "fa": "مشکلی نیست!" }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-6",
+      "word": "Problem",
+      "translation": "مشکل",
+      "syllables": ["Pro", "blem"],
+      "distractors": ["Pre", "Pra", "blam", "blim"],
+      "hint": "۲ بخش - مشکل"
     },
     {
       "type": "rapid-fire",
@@ -142,113 +205,108 @@
       "title": "kein یا keine؟",
       "instruction": "شکل درست را انتخاب کنید",
       "questions": [
-        {
-          "prompt": "___ Zeit (die Zeit)",
-          "left": "kein",
-          "right": "keine",
-          "correctSide": "right"
-        },
-        {
-          "prompt": "___ Geld (das Geld)",
-          "left": "kein",
-          "right": "keine",
-          "correctSide": "left"
-        },
-        {
-          "prompt": "___ Auto (das Auto)",
-          "left": "kein",
-          "right": "keine",
-          "correctSide": "left"
-        },
-        {
-          "prompt": "___ Frage (die Frage)",
-          "left": "kein",
-          "right": "keine",
-          "correctSide": "right"
-        },
-        {
-          "prompt": "___ Kinder (جمع)",
-          "left": "kein",
-          "right": "keine",
-          "correctSide": "right"
-        }
+        { "prompt": "___ Zeit (die Zeit)", "left": "kein", "right": "keine", "correctSide": "right" },
+        { "prompt": "___ Geld (das Geld)", "left": "kein", "right": "keine", "correctSide": "left" },
+        { "prompt": "___ Auto (das Auto)", "left": "kein", "right": "keine", "correctSide": "left" },
+        { "prompt": "___ Frage (die Frage)", "left": "kein", "right": "keine", "correctSide": "right" },
+        { "prompt": "___ Kinder (جمع)", "left": "kein", "right": "keine", "correctSide": "right" }
       ]
     },
     {
       "type": "new-word",
       "id": "s9",
-      "word": {
-        "de": "die Frage",
-        "fa": "سوال"
-      },
+      "word": { "de": "die Frage", "fa": "سوال" },
       "example": {
-        "text": {
-          "de": "Hast du keine Fragen?",
-          "fa": "سوالی نداری؟"
-        }
+        "text": { "de": "Hast du keine Fragen?", "fa": "سوالی نداری؟" }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-7",
+      "word": "Frage",
+      "translation": "سوال",
+      "syllables": ["Fra", "ge"],
+      "distractors": ["Fre", "Fro", "ga", "gi"],
+      "hint": "۲ بخش - سوال"
     },
     {
       "type": "new-word",
       "id": "s10",
-      "word": {
-        "de": "die Lust",
-        "fa": "میل / حوصله"
-      },
+      "word": { "de": "die Lust", "fa": "میل / حوصله" },
       "example": {
-        "text": {
-          "de": "Ich habe keine Lust.",
-          "fa": "حوصله ندارم."
-        }
+        "text": { "de": "Ich habe keine Lust.", "fa": "حوصله ندارم." }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-8",
+      "word": "Lust",
+      "translation": "میل / حوصله",
+      "syllables": ["Lust"],
+      "distractors": ["Last", "List", "Lost"],
+      "hint": "۱ بخش - حوصله"
     },
     {
       "type": "dialog",
       "id": "s11",
       "title": "مکالمه: ندارم!",
       "context": "الی و تام درباره آخر هفته صحبت می‌کنند",
+      "scene": {
+        "location": "café",
+        "description": { "de": "Im Café", "fa": "در کافه" }
+      },
       "lines": [
         {
           "speaker": "Eli",
-          "text": {
-            "de": "Gehen wir ins Kino?",
-            "fa": "بریم سینما؟"
-          }
+          "text": { "de": "Gehen wir ins Kino?", "fa": "بریم سینما؟" },
+          "mood": "happy"
         },
         {
           "speaker": "Tom",
-          "text": {
-            "de": "Ich habe leider kein Geld.",
-            "fa": "متأسفانه پول ندارم."
-          }
+          "text": { "de": "Ich habe leider kein Geld.", "fa": "متأسفانه پول ندارم." },
+          "mood": "sad"
         },
         {
           "speaker": "Eli",
-          "text": {
-            "de": "Kein Problem! Ich lade dich ein.",
-            "fa": "مشکلی نیست! من مهمانت می‌کنم."
-          }
+          "text": { "de": "Kein Problem! Ich lade dich ein.", "fa": "مشکلی نیست! من مهمانت می‌کنم." },
+          "mood": "happy"
         },
         {
           "speaker": "Tom",
-          "text": {
-            "de": "Aber ich habe auch keine Zeit.",
-            "fa": "ولی وقت هم ندارم."
-          }
+          "text": { "de": "Aber ich habe auch keine Zeit.", "fa": "ولی وقت هم ندارم." }
         },
         {
           "speaker": "Eli",
-          "text": {
-            "de": "Und keine Lust?",
-            "fa": "و حوصله هم نداری؟"
-          }
+          "text": { "de": "Und keine Lust?", "fa": "و حوصله هم نداری؟" }
         },
         {
           "speaker": "Tom",
-          "text": {
-            "de": "Doch! Morgen habe ich Zeit.",
-            "fa": "چرا دارم! فردا وقت دارم."
-          }
+          "text": { "de": "Doch! Morgen habe ich Zeit.", "fa": "چرا دارم! فردا وقت دارم." },
+          "mood": "happy"
+        }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        {
+          "question": "تام چرا نمی‌تواند امروز برود سینما؟",
+          "options": ["پول ندارد", "وقت ندارد", "هم پول و هم وقت ندارد"],
+          "correctIndex": 2,
+          "explanation": "تام هم گفت «kein Geld» (پول ندارم) و هم «keine Zeit» (وقت ندارم).",
+          "relatedLineIndex": 1
+        },
+        {
+          "question": "الی چه پیشنهادی داد؟",
+          "options": ["فردا برویم", "من مهمانت می‌کنم", "سینما نرویم"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: «Ich lade dich ein.» یعنی «من مهمانت می‌کنم.»",
+          "relatedLineIndex": 2
+        },
+        {
+          "question": "معنی «Doch» در این مکالمه چیست؟",
+          "options": ["نه", "چرا (رد منفی)", "بله"],
+          "correctIndex": 1,
+          "explanation": "«Doch» برای رد کردن جمله منفی استفاده می‌شود. یعنی «چرا، دارم!»",
+          "relatedLineIndex": 5
         }
       ]
     },
@@ -258,46 +316,39 @@
       "title": "عبارات مفید با kein",
       "content": "این عبارات را یاد بگیرید:\n\n**Kein Problem!** = مشکلی نیست!\n**Keine Ahnung!** = نمی‌دانم!\n**Keine Sorge!** = نگران نباش!\n**Kein Wunder!** = تعجبی ندارد!\n\n🇮🇷 **نکته:** این‌ها عبارات رایج روزمره هستند.",
       "examples": [
-        {
-          "de": "Keine Sorge, alles ist gut.",
-          "fa": "نگران نباش، همه چیز خوب است."
-        },
-        {
-          "de": "Kein Wunder, er ist müde.",
-          "fa": "تعجبی ندارد، او خسته است."
-        }
+        { "de": "Keine Sorge, alles ist gut.", "fa": "نگران نباش، همه چیز خوب است." },
+        { "de": "Kein Wunder, er ist müde.", "fa": "تعجبی ندارد، او خسته است." }
       ]
     },
     {
       "type": "new-word",
       "id": "s13",
-      "word": {
-        "de": "die Sorge",
-        "fa": "نگرانی"
-      },
+      "word": { "de": "die Sorge", "fa": "نگرانی" },
       "example": {
-        "text": {
-          "de": "Keine Sorge!",
-          "fa": "نگران نباش!"
-        }
+        "text": { "de": "Keine Sorge!", "fa": "نگران نباش!" }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-9",
+      "word": "Sorge",
+      "translation": "نگرانی",
+      "syllables": ["Sor", "ge"],
+      "distractors": ["Ser", "Sur", "ga", "gi"],
+      "hint": "۲ بخش - نگرانی"
     },
     {
       "type": "fill-in-blank",
       "id": "s14",
       "instruction": "جای خالی را پر کنید",
       "sentence": "Ich habe {0} Zeit.",
-      "options": [
-        "kein",
-        "keine",
-        "nicht",
-        "nein"
-      ],
-      "correctAnswers": [
-        1
-      ],
-      "feedback": {
-        "explanation": "Ich habe **keine** Zeit. (die Zeit مونث است)"
+      "options": ["kein", "keine", "nicht", "nein"],
+      "correctAnswers": [1],
+      "feedbackTip": {
+        "onCorrect": "آفرین! «die Zeit» مونث است، پس «keine» درست است.",
+        "onWrong": "دقت کنید: «die Zeit» مونث است (die)، پس باید «keine» استفاده کنیم.",
+        "errorCategory": "wrong-article",
+        "highlights": ["keine", "die Zeit"]
       }
     },
     {
@@ -305,17 +356,13 @@
       "id": "s15",
       "instruction": "جای خالی را پر کنید",
       "sentence": "Er hat {0} Auto.",
-      "options": [
-        "kein",
-        "keine",
-        "nicht",
-        "keinen"
-      ],
-      "correctAnswers": [
-        0
-      ],
-      "feedback": {
-        "explanation": "Er hat **kein** Auto. (das Auto خنثی است)"
+      "options": ["kein", "keine", "nicht", "keinen"],
+      "correctAnswers": [0],
+      "feedbackTip": {
+        "onCorrect": "آفرین! «das Auto» خنثی است، پس «kein» درست است.",
+        "onWrong": "دقت کنید: «das Auto» خنثی است (das)، پس باید «kein» استفاده کنیم.",
+        "errorCategory": "wrong-article",
+        "highlights": ["kein", "das Auto"]
       }
     },
     {
@@ -323,17 +370,13 @@
       "id": "s16",
       "instruction": "جای خالی را پر کنید",
       "sentence": "Wir haben {0} Fragen.",
-      "options": [
-        "kein",
-        "keine",
-        "nicht",
-        "keinen"
-      ],
-      "correctAnswers": [
-        1
-      ],
-      "feedback": {
-        "explanation": "Wir haben **keine** Fragen. (جمع همیشه keine است)"
+      "options": ["kein", "keine", "nicht", "keinen"],
+      "correctAnswers": [1],
+      "feedbackTip": {
+        "onCorrect": "آفرین! جمع همیشه «keine» است.",
+        "onWrong": "دقت کنید: برای جمع همیشه از «keine» استفاده می‌کنیم.",
+        "errorCategory": "plural-form",
+        "highlights": ["keine", "جمع"]
       }
     },
     {
@@ -347,9 +390,11 @@
         "Ich habe keinen Geld."
       ],
       "correctAnswerIndex": 1,
-      "feedback": {
-        "correct": "آفرین! با اسم از kein/keine استفاده می‌کنیم.",
-        "incorrect": "پاسخ صحیح: Ich habe kein Geld. (das Geld خنثی است → kein)"
+      "feedbackTip": {
+        "onCorrect": "آفرین! «das Geld» خنثی است، پس «kein Geld» درست است.",
+        "onWrong": "دقت کنید: برای اسم‌ها از kein/keine استفاده می‌کنیم. «das Geld» خنثی است → kein",
+        "errorCategory": "negation",
+        "highlights": ["kein", "Geld"]
       }
     },
     {
@@ -363,9 +408,11 @@
         "Das ist keinen Problem."
       ],
       "correctAnswerIndex": 1,
-      "feedback": {
-        "correct": "آفرین! das Problem خنثی است → kein Problem",
-        "incorrect": "پاسخ صحیح: Das ist kein Problem. (das Problem خنثی است)"
+      "feedbackTip": {
+        "onCorrect": "آفرین! «das Problem» خنثی است، پس «kein Problem» درست است.",
+        "onWrong": "دقت کنید: «das Problem» خنثی است (das)، پس باید «kein» استفاده کنیم.",
+        "errorCategory": "wrong-article",
+        "highlights": ["kein", "Problem"]
       }
     },
     {
@@ -373,47 +420,16 @@
       "id": "s19",
       "instruction": "جمله مثبت را با منفی جفت کنید",
       "items": [
-        {
-          "id": "i1",
-          "text": "Ich habe ein Auto."
-        },
-        {
-          "id": "i2",
-          "text": "Er hat eine Schwester."
-        },
-        {
-          "id": "i3",
-          "text": "Sie hat Geld."
-        }
+        { "id": "i1", "text": "Ich habe ein Auto." },
+        { "id": "i2", "text": "Er hat eine Schwester." },
+        { "id": "i3", "text": "Sie hat Geld." }
       ],
       "matches": [
-        {
-          "id": "m1",
-          "text": "Ich habe kein Auto."
-        },
-        {
-          "id": "m2",
-          "text": "Er hat keine Schwester."
-        },
-        {
-          "id": "m3",
-          "text": "Sie hat kein Geld."
-        }
+        { "id": "m1", "text": "Ich habe kein Auto." },
+        { "id": "m2", "text": "Er hat keine Schwester." },
+        { "id": "m3", "text": "Sie hat kein Geld." }
       ],
-      "correctPairs": [
-        [
-          "i1",
-          "m1"
-        ],
-        [
-          "i2",
-          "m2"
-        ],
-        [
-          "i3",
-          "m3"
-        ]
-      ]
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"]]
     },
     {
       "type": "rapid-fire",
@@ -421,36 +437,11 @@
       "title": "nicht یا kein/keine؟",
       "instruction": "کدام کلمه مناسب است؟",
       "questions": [
-        {
-          "prompt": "Ich komme ___.",
-          "left": "nicht",
-          "right": "kein",
-          "correctSide": "left"
-        },
-        {
-          "prompt": "Ich habe ___ Zeit.",
-          "left": "nicht",
-          "right": "keine",
-          "correctSide": "right"
-        },
-        {
-          "prompt": "Er ist ___ müde.",
-          "left": "nicht",
-          "right": "kein",
-          "correctSide": "left"
-        },
-        {
-          "prompt": "Sie hat ___ Geld.",
-          "left": "nicht",
-          "right": "kein",
-          "correctSide": "right"
-        },
-        {
-          "prompt": "Das ist ___ richtig.",
-          "left": "nicht",
-          "right": "keine",
-          "correctSide": "left"
-        }
+        { "prompt": "Ich komme ___.", "left": "nicht", "right": "kein", "correctSide": "left" },
+        { "prompt": "Ich habe ___ Zeit.", "left": "nicht", "right": "keine", "correctSide": "right" },
+        { "prompt": "Er ist ___ müde.", "left": "nicht", "right": "kein", "correctSide": "left" },
+        { "prompt": "Sie hat ___ Geld.", "left": "nicht", "right": "kein", "correctSide": "right" },
+        { "prompt": "Das ist ___ richtig.", "left": "nicht", "right": "keine", "correctSide": "left" }
       ]
     },
     {
@@ -459,43 +450,57 @@
       "title": "خلاصه: nicht یا kein؟",
       "content": "**nicht** استفاده کنید برای:\n• فعل‌ها: Ich komme **nicht**.\n• صفت‌ها: Er ist **nicht** müde.\n• قیدها: Sie singt **nicht** gut.\n\n**kein/keine** استفاده کنید برای:\n• اسم‌ها: Ich habe **kein** Geld.\n• اسم‌ها با ein: ein Auto → **kein** Auto\n\n🇮🇷 **قانون ساده:** اگر ein داری → kein. اگر نداری → nicht.",
       "examples": [
-        {
-          "de": "Ich trinke nicht. (فعل)",
-          "fa": "نمی‌نوشم."
-        },
-        {
-          "de": "Ich trinke keinen Kaffee. (اسم)",
-          "fa": "قهوه نمی‌نوشم."
-        }
+        { "de": "Ich trinke nicht. (فعل)", "fa": "نمی‌نوشم." },
+        { "de": "Ich trinke keinen Kaffee. (اسم)", "fa": "قهوه نمی‌نوشم." }
       ]
     },
     {
       "type": "new-word",
       "id": "s21",
-      "word": {
-        "de": "der Hunger",
-        "fa": "گرسنگی"
-      },
+      "word": { "de": "der Hunger", "fa": "گرسنگی" },
       "example": {
-        "text": {
-          "de": "Ich habe keinen Hunger.",
-          "fa": "گرسنه نیستم."
-        }
+        "text": { "de": "Ich habe keinen Hunger.", "fa": "گرسنه نیستم." }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-10",
+      "word": "Hunger",
+      "translation": "گرسنگی",
+      "syllables": ["Hun", "ger"],
+      "distractors": ["Han", "Hin", "gar", "gir"],
+      "hint": "۲ بخش - گرسنگی"
     },
     {
       "type": "new-word",
       "id": "s22",
-      "word": {
-        "de": "der Durst",
-        "fa": "تشنگی"
-      },
+      "word": { "de": "der Durst", "fa": "تشنگی" },
       "example": {
-        "text": {
-          "de": "Hast du keinen Durst?",
-          "fa": "تشنه نیستی؟"
-        }
+        "text": { "de": "Hast du keinen Durst?", "fa": "تشنه نیستی؟" }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-11",
+      "word": "Durst",
+      "translation": "تشنگی",
+      "syllables": ["Durst"],
+      "distractors": ["Darst", "Dorst", "Dirst"],
+      "hint": "۱ بخش - تشنگی"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Ich habe keine Zeit.",
+      "translation": "وقت ندارم.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Kein Problem!",
+      "translation": "مشکلی نیست!",
+      "difficulty": "A1"
     },
     {
       "type": "vocab-check",
@@ -503,50 +508,17 @@
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [
-        {
-          "de": "kein",
-          "fa": "هیچ (مذکر/خنثی)"
-        },
-        {
-          "de": "keine",
-          "fa": "هیچ (مونث/جمع)"
-        },
-        {
-          "de": "die Zeit",
-          "fa": "وقت / زمان"
-        },
-        {
-          "de": "das Geld",
-          "fa": "پول"
-        },
-        {
-          "de": "die Ahnung",
-          "fa": "ایده / فکر"
-        },
-        {
-          "de": "das Problem",
-          "fa": "مشکل"
-        },
-        {
-          "de": "die Frage",
-          "fa": "سوال"
-        },
-        {
-          "de": "die Lust",
-          "fa": "میل / حوصله"
-        },
-        {
-          "de": "die Sorge",
-          "fa": "نگرانی"
-        },
-        {
-          "de": "der Hunger",
-          "fa": "گرسنگی"
-        },
-        {
-          "de": "der Durst",
-          "fa": "تشنگی"
-        }
+        { "de": "kein", "fa": "هیچ (مذکر/خنثی)" },
+        { "de": "keine", "fa": "هیچ (مونث/جمع)" },
+        { "de": "die Zeit", "fa": "وقت / زمان" },
+        { "de": "das Geld", "fa": "پول" },
+        { "de": "die Ahnung", "fa": "ایده / فکر" },
+        { "de": "das Problem", "fa": "مشکل" },
+        { "de": "die Frage", "fa": "سوال" },
+        { "de": "die Lust", "fa": "میل / حوصله" },
+        { "de": "die Sorge", "fa": "نگرانی" },
+        { "de": "der Hunger", "fa": "گرسنگی" },
+        { "de": "der Durst", "fa": "تشنگی" }
       ]
     },
     {
@@ -557,72 +529,17 @@
       "xpEarned": 50,
       "nextLessonId": "A1-M03-L03",
       "vocabularyLearned": [
-        {
-          "word": {
-            "de": "kein",
-            "fa": "هیچ (مذکر/خنثی)"
-          }
-        },
-        {
-          "word": {
-            "de": "keine",
-            "fa": "هیچ (مونث/جمع)"
-          }
-        },
-        {
-          "word": {
-            "de": "die Zeit",
-            "fa": "وقت / زمان"
-          }
-        },
-        {
-          "word": {
-            "de": "das Geld",
-            "fa": "پول"
-          }
-        },
-        {
-          "word": {
-            "de": "die Ahnung",
-            "fa": "ایده / فکر"
-          }
-        },
-        {
-          "word": {
-            "de": "das Problem",
-            "fa": "مشکل"
-          }
-        },
-        {
-          "word": {
-            "de": "die Frage",
-            "fa": "سوال"
-          }
-        },
-        {
-          "word": {
-            "de": "die Lust",
-            "fa": "میل / حوصله"
-          }
-        },
-        {
-          "word": {
-            "de": "die Sorge",
-            "fa": "نگرانی"
-          }
-        },
-        {
-          "word": {
-            "de": "der Hunger",
-            "fa": "گرسنگی"
-          }
-        },
-        {
-          "word": {
-            "de": "der Durst",
-            "fa": "تشنگی"
-          }
-        }
+        { "word": { "de": "kein", "fa": "هیچ (مذکر/خنثی)" } },
+        { "word": { "de": "keine", "fa": "هیچ (مونث/جمع)" } },
+        { "word": { "de": "die Zeit", "fa": "وقت / زمان" } },
+        { "word": { "de": "das Geld", "fa": "پول" } },
+        { "word": { "de": "die Ahnung", "fa": "ایده / فکر" } },
+        { "word": { "de": "das Problem", "fa": "مشکل" } },
+        { "word": { "de": "die Frage", "fa": "سوال" } },
+        { "word": { "de": "die Lust", "fa": "میل / حوصله" } },
+        { "word": { "de": "die Sorge", "fa": "نگرانی" } },
+        { "word": { "de": "der Hunger", "fa": "گرسنگی" } },
+        { "word": { "de": "der Durst", "fa": "تشنگی" } }
       ]
     }
   ]
