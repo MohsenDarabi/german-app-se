@@ -6,17 +6,25 @@
 
 ## Active Task
 
-**Status**: `idle`
+**Status**: `paused`
 
-**Task**: None
+**Task**: Content Migration (content-migration.md workflow)
+
+**Current**: Migrated L01-L04, remaining L05-L10 in Module 01, plus Modules 02-06
 
 ---
 
 ## Last Completed
 
-**Task**: Create A1-M02-L02 (Regelmäßige Verben)
+**Task**: Migrate A1-M01-L04
 
-**Completed**: 2026-01-06
+**Completed**: 2026-02-03
+
+**Progress**:
+- ✅ A1-M01-L01: vocabulary grammar, feedbackTip, dialog questions, dictation
+- ✅ A1-M01-L02: vocabulary grammar, feedbackTip, dialog questions, dictation
+- ✅ A1-M01-L03: vocabulary grammar, feedbackTip, dialog questions, dictation
+- ✅ A1-M01-L04: vocabulary grammar (with verb conjugation), feedbackTip, dialog questions, dictation
 
 **Result**:
 - Created L02: "Regelmäßige Verben" (Regular Verbs)
