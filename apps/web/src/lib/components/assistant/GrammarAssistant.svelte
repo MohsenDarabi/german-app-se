@@ -3,12 +3,16 @@
   import { slide, fly } from "svelte/transition";
   import { isAssistantOpen, activeTab, toggleAssistant, closeAssistant } from "./assistantStore";
   import ContentOverview from "./ContentOverview.svelte";
+  import ChatTab from "./ChatTab.svelte";
 
   export let lesson: Lesson;
   export let currentStep: number = 0;
 
   // Get vocabulary from lesson
   $: vocabulary = lesson.vocabulary || [];
+
+  // Get lesson title for chat context
+  $: lessonTitle = lesson.title?.fa || lesson.title?.de || '';
 </script>
 
 <!-- Floating Button -->
@@ -57,13 +61,11 @@
       {#if $activeTab === 'overview'}
         <ContentOverview {vocabulary} />
       {:else}
-        <div class="chat-tab" dir="rtl">
-          <div class="chat-placeholder">
-            <span class="chat-icon">🤖</span>
-            <p class="chat-message">سوالات گرامری خود را بپرسید!</p>
-            <p class="chat-hint">این قابلیت به زودی فعال می‌شود.</p>
-          </div>
-        </div>
+        <ChatTab
+          lessonId={lesson.id}
+          vocabulary={vocabulary}
+          {lessonTitle}
+        />
       {/if}
     </div>
   </div>
@@ -193,38 +195,6 @@
     overflow: hidden;
   }
 
-  /* Chat Placeholder */
-  .chat-tab {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-  }
-
-  .chat-placeholder {
-    text-align: center;
-  }
-
-  .chat-icon {
-    font-size: 3rem;
-    display: block;
-    margin-bottom: 1rem;
-  }
-
-  .chat-message {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--color-neutral-700, #44403c);
-    margin: 0 0 0.5rem 0;
-  }
-
-  .chat-hint {
-    font-size: 0.875rem;
-    color: var(--color-neutral-500, #78716c);
-    margin: 0;
-  }
-
   /* Dark Mode */
   :global([data-theme="dark"]) .assistant-panel {
     background: #292524;
@@ -245,14 +215,6 @@
   :global([data-theme="dark"]) .tab.active {
     color: #c4b5fd;
     border-bottom-color: #8b5cf6;
-  }
-
-  :global([data-theme="dark"]) .chat-message {
-    color: #f5f0e8;
-  }
-
-  :global([data-theme="dark"]) .chat-hint {
-    color: #a69b8a;
   }
 
   /* Mobile adjustments */

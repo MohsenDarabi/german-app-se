@@ -69,6 +69,17 @@ export interface VocabItem {
 }
 
 /**
+ * Chat message for AI grammar assistant
+ */
+export interface ChatMessage {
+  id?: number;
+  lessonId: string;
+  role: 'user' | 'assistant';
+  content: string;
+  timestamp: string; // ISO Date string
+}
+
+/**
  * Downloaded lesson for offline access (premium only)
  */
 export interface DownloadedLesson {
@@ -87,6 +98,7 @@ export class DeutschLernDB extends Dexie {
   vocab!: Table<VocabItem>;
   wrongAnswers!: Table<WrongAnswer>;
   downloadedLessons!: Table<DownloadedLesson>;
+  chatMessages!: Table<ChatMessage>;
 
   constructor() {
     super('DeutschLernDB');
@@ -178,6 +190,16 @@ export class DeutschLernDB extends Dexie {
       vocab: '++id, &word, nextReview, addedAt',
       wrongAnswers: '++id, [lessonId+stepId], lessonId, reviewedAt, errorCategory',
       downloadedLessons: '++id, &[languagePair+lessonId], languagePair, downloadedAt'
+    });
+
+    // Add chat messages for AI grammar assistant
+    this.version(9).stores({
+      users: '++id, email',
+      lessonProgress: '++id, &[languagePair+lessonId], languagePair, status, updatedAt',
+      vocab: '++id, &word, nextReview, addedAt',
+      wrongAnswers: '++id, [lessonId+stepId], lessonId, reviewedAt, errorCategory',
+      downloadedLessons: '++id, &[languagePair+lessonId], languagePair, downloadedAt',
+      chatMessages: '++id, lessonId, timestamp'
     });
   }
 }
