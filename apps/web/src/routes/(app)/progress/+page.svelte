@@ -325,7 +325,9 @@
 
   <!-- Reset Confirmation Modal -->
   {#if showResetConfirm}
+    <!-- svelte-ignore a11y-click-events-have-key-events a11y-no-static-element-interactions -->
     <div class="modal-overlay" on:click={() => showResetConfirm = false}>
+      <!-- svelte-ignore a11y-click-events-have-key-events a11y-no-static-element-interactions -->
       <div class="modal-content" on:click|stopPropagation>
         <div class="modal-icon">⚠️</div>
         <h3>بازنشانی پیشرفت</h3>

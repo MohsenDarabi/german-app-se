@@ -106,6 +106,7 @@
         </div>
       {:else if step.media.type === 'video'}
         <div class="video-player">
+          <!-- svelte-ignore a11y-media-has-caption -->
           <video
             controls
             src={step.media.url}

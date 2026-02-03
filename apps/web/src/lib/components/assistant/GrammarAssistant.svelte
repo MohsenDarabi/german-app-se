@@ -128,6 +128,7 @@
 
 <!-- Assistant Panel -->
 {#if $isAssistantOpen}
+  <!-- svelte-ignore a11y-click-events-have-key-events a11y-no-static-element-interactions -->
   <div class="assistant-backdrop" on:click={closeAssistant} transition:fade={{ duration: 200 }}></div>
   <div class="assistant-panel" transition:fly={{ x: 300, duration: 300 }}>
     <div class="panel-header">

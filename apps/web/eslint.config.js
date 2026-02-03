@@ -19,6 +19,9 @@ export default [
       "package-lock.json",
       "yarn.lock",
       "src/service-worker.ts",
+      // Mobile build artifacts
+      "android/**",
+      "ios/**",
     ],
   },
 

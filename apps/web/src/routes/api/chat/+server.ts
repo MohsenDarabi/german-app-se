@@ -1,6 +1,6 @@
 import { json } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
-import { GROQ_API_KEY } from '$env/static/private';
+import { env } from '$env/dynamic/private';
 
 const GROQ_API_URL = 'https://api.groq.com/openai/v1/chat/completions';
 
@@ -27,7 +27,7 @@ interface ChatRequest {
 
 export const POST: RequestHandler = async ({ request }) => {
   // Check if API key is configured
-  if (!GROQ_API_KEY) {
+  if (!env.GROQ_API_KEY) {
     return json(
       { error: 'AI chat is not configured. Please add GROQ_API_KEY to environment variables.' },
       { status: 503 }
@@ -64,7 +64,7 @@ export const POST: RequestHandler = async ({ request }) => {
     const response = await fetch(GROQ_API_URL, {
       method: 'POST',
       headers: {
-        'Authorization': `Bearer ${GROQ_API_KEY}`,
+        'Authorization': `Bearer ${env.GROQ_API_KEY}`,
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({

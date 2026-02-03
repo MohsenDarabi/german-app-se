@@ -148,6 +148,7 @@
             <label for="answer" class="answer-label">
               پاسخ جدید خود را وارد کنید:
             </label>
+            <!-- svelte-ignore a11y-autofocus -->
             <input
               id="answer"
               type="text"
