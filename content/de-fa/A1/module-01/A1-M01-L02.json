@@ -17,6 +17,43 @@
   "module": 1,
   "lessonNumber": 2,
   "estimatedMinutes": 15,
+  "vocabulary": [
+    {
+      "de": "Wie geht's?",
+      "fa": "حالت چطوره؟",
+      "grammar": {
+        "pos": "phrase"
+      }
+    },
+    {
+      "de": "gut",
+      "fa": "خوب",
+      "grammar": {
+        "pos": "adjective"
+      }
+    },
+    {
+      "de": "schlecht",
+      "fa": "بد",
+      "grammar": {
+        "pos": "adjective"
+      }
+    },
+    {
+      "de": "Es geht.",
+      "fa": "ای بدک نیست.",
+      "grammar": {
+        "pos": "phrase"
+      }
+    },
+    {
+      "de": "Und dir?",
+      "fa": "تو چطوری؟",
+      "grammar": {
+        "pos": "phrase"
+      }
+    }
+  ],
   "steps": [
     {
       "type": "new-word",
@@ -34,6 +71,22 @@
       "header": "یه چیز جدید!"
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-1",
+      "word": "Wie geht's?",
+      "translation": "حالت چطوره؟",
+      "syllables": [
+        "Wie",
+        "geht's"
+      ],
+      "hint": "۲ بخش - احوالپرسی",
+      "distractors": [
+        "Vie",
+        "Wia",
+        "giht's"
+      ]
+    },
+    {
       "type": "new-word",
       "id": "s2",
       "word": {
@@ -47,6 +100,23 @@
         }
       },
       "header": "یه چیز جدید!"
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-gut",
+      "word": "gut",
+      "translation": "خوب",
+      "syllables": [
+        "g",
+        "u",
+        "t"
+      ],
+      "distractors": [
+        "ü",
+        "tt",
+        "a"
+      ],
+      "hint": "۳ حرف"
     },
     {
       "type": "new-word",
@@ -64,6 +134,23 @@
       "header": "یه چیز جدید!"
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-schlecht",
+      "word": "schlecht",
+      "translation": "بد",
+      "syllables": [
+        "schl",
+        "e",
+        "cht"
+      ],
+      "distractors": [
+        "sch",
+        "a",
+        "ch"
+      ],
+      "hint": "۳ بخش"
+    },
+    {
       "type": "new-word",
       "id": "s4",
       "word": {
@@ -77,6 +164,22 @@
         }
       },
       "header": "یه چیز جدید!"
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-4",
+      "word": "Es geht.",
+      "translation": "ای بدک نیست",
+      "syllables": [
+        "Es",
+        "geht"
+      ],
+      "hint": "۲ بخش - نه خوب نه بد",
+      "distractors": [
+        "is",
+        "gaht",
+        "giht"
+      ]
     },
     {
       "type": "grammar-tip",
@@ -148,6 +251,11 @@
       "correctAnswerIndex": 2,
       "feedback": {
         "explanation": "عبارت Wie geht's? برای پرسیدن حال استفاده می‌شود. این عبارت رایج‌ترین روش احوالپرسی در آلمانی است."
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! Wie geht's? یعنی «حالت چطوره؟»",
+        "onWrong": "دقت کنید: برای احوالپرسی از Wie geht's? استفاده می‌کنیم.",
+        "errorCategory": "vocabulary"
       }
     },
     {
@@ -166,6 +274,11 @@
       ],
       "feedback": {
         "explanation": "عبارت کامل Wie geht's dir? است که یعنی «حالت چطوره؟»"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! geht's از فعل gehen (رفتن) می‌آید.",
+        "onWrong": "دقت کنید: در آلمانی می‌پرسند «چطور می‌رود؟» پس از geht's استفاده می‌کنیم.",
+        "errorCategory": "vocabulary"
       }
     },
     {
@@ -182,6 +295,21 @@
         }
       },
       "header": "یه چیز جدید!"
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-5",
+      "word": "Und dir?",
+      "translation": "تو چطوری؟",
+      "syllables": [
+        "Und",
+        "dir"
+      ],
+      "hint": "۲ بخش - و تو؟",
+      "distractors": [
+        "and",
+        "dor"
+      ]
     },
     {
       "type": "word-order",
@@ -230,48 +358,86 @@
       "type": "dialog",
       "id": "s10",
       "title": "مکالمه روزانه",
+      "scene": {
+        "location": "park",
+        "description": {
+          "de": "Im Park am Morgen",
+          "fa": "در پارک، صبح"
+        }
+      },
       "lines": [
         {
           "speaker": "Eli",
           "text": {
             "de": "Hallo Tom!",
             "fa": "سلام تام!"
-          }
+          },
+          "mood": "happy"
         },
         {
           "speaker": "Tom",
           "text": {
             "de": "Hi Eli! Wie geht's?",
             "fa": "سلام الی! حالت چطوره؟"
-          }
+          },
+          "mood": "happy"
         },
         {
           "speaker": "Eli",
           "text": {
             "de": "Gut, danke! Und dir?",
             "fa": "خوبم، ممنون! تو چطوری؟"
-          }
+          },
+          "mood": "happy"
         },
         {
           "speaker": "Tom",
           "text": {
             "de": "Auch gut!",
             "fa": "منم خوبم!"
-          }
+          },
+          "mood": "happy"
         },
         {
           "speaker": "Eli",
           "text": {
             "de": "Super! Tschüss Tom!",
             "fa": "عالیه! خداحافظ تام!"
-          }
+          },
+          "mood": "excited"
         },
         {
           "speaker": "Tom",
           "text": {
             "de": "Tschüss!",
             "fa": "خداحافظ!"
-          }
+          },
+          "mood": "neutral"
+        }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        {
+          "question": "حال الی چطور بود؟",
+          "options": [
+            "بد",
+            "خوب",
+            "ای بدک نیست"
+          ],
+          "correctIndex": 1,
+          "explanation": "الی گفت: «Gut, danke!» یعنی خوبم، ممنون!",
+          "relatedLineIndex": 2
+        },
+        {
+          "question": "الی چه پرسید بعد از جواب دادن؟",
+          "options": [
+            "Wie heißt du?",
+            "Und dir?",
+            "Tschüss!"
+          ],
+          "correctIndex": 1,
+          "explanation": "الی پرسید: «Und dir?» یعنی تو چطوری؟",
+          "relatedLineIndex": 2
         }
       ],
       "feedback": {
@@ -346,6 +512,11 @@
       "correctAnswer": true,
       "feedback": {
         "explanation": "درست است! عبارت Mir geht's gut به معنی «حالم خوبه» است. کلمه Mir یعنی «به من» و geht's یعنی «می‌رود»."
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! Mir geht's gut = حالم خوبه",
+        "onWrong": "دقت کنید: Mir یعنی «به من»، geht's یعنی «می‌رود»، gut یعنی «خوب».",
+        "errorCategory": "comprehension"
       }
     },
     {
@@ -378,6 +549,20 @@
       "instruction": "این کلمه را تایپ کنید"
     },
     {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Mir geht's gut",
+      "translation": "حالم خوبه",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Und dir?",
+      "translation": "تو چطوری؟",
+      "difficulty": "A1"
+    },
+    {
       "type": "multiple-choice",
       "id": "s15",
       "question": "اگر حالتان بد باشد، چه می‌گویید؟",
@@ -390,6 +575,11 @@
       "correctAnswerIndex": 2,
       "feedback": {
         "explanation": "وقتی حالتان بد است، می‌گویید Mir geht's schlecht که یعنی «حالم بده»."
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! schlecht یعنی «بد».",
+        "onWrong": "دقت کنید: gut = خوب، schlecht = بد، Es geht = ای بدک نیست.",
+        "errorCategory": "vocabulary"
       }
     },
     {

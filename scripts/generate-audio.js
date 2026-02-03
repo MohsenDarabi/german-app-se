@@ -605,6 +605,18 @@ function extractAudioItems(lesson) {
           });
         }
         break;
+
+      case 'syllable-spelling':
+        // Syllable spelling - audio for the word being spelled
+        if (step.word) {
+          items.push({
+            id: `${stepId}-word`,
+            text: step.word.trim(),
+            type: 'word',
+            lessonId,
+          });
+        }
+        break;
     }
   }
 

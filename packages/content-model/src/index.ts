@@ -105,7 +105,7 @@ export const VerbGrammarSchema = z.object({
 // Part of speech
 export const PosSchema = z.enum([
   'noun', 'verb', 'adjective', 'adverb', 'preposition',
-  'pronoun', 'conjunction', 'interjection', 'phrase'
+  'pronoun', 'conjunction', 'interjection', 'phrase', 'particle'
 ]);
 
 // Combined grammar info for vocabulary items
@@ -479,11 +479,11 @@ export const SyllableSpellingStepSchema = BaseStepSchema.extend({
   // Persian translation
   translation: z.string(),
 
-  // Syllables in correct order
-  syllables: z.array(z.string()).min(2),
+  // Pieces in correct order (syllables for long words, letter groups for short words)
+  syllables: z.array(z.string()).min(1),
 
-  // Wrong syllables to include as distractors
-  distractors: z.array(z.string()).optional(),
+  // Wrong pieces to include as distractors (REQUIRED - makes exercise challenging)
+  distractors: z.array(z.string()).min(1),
 
   // Optional phonetic hint
   hint: z.string().optional(),

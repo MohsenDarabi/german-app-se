@@ -1,10 +1,21 @@
 <script lang="ts">
   import { page } from '$app/stores';
+  import { onMount } from 'svelte';
+
+  onMount(() => {
+    console.error('[ErrorPage] Error details:', {
+      status: $page.status,
+      error: $page.error,
+      message: $page.error?.message,
+      stack: ($page.error as any)?.stack
+    });
+  });
 </script>
 
 <div class="error-container">
   <h1>{$page.status}</h1>
-  <p>{$page.error?.message || 'Something went wrong'}</p>
+  <p>{$page.error?.message || 'An error occurred'}</p>
+  <pre class="error-details">{JSON.stringify($page.error, null, 2)}</pre>
   <a href="/" class="home-link">Back to Home</a>
 </div>
 
@@ -42,5 +53,16 @@
 
   .home-link:hover {
     background: #1d4ed8;
+  }
+
+  .error-details {
+    background: #f1f5f9;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: left;
+    max-width: 90%;
+    overflow: auto;
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
   }
 </style>

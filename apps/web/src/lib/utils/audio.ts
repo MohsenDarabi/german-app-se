@@ -218,7 +218,7 @@ export async function playGerman(
   // Get language pair from asset service if not provided
   const effectiveLangPair = langPair || getState().languagePair || 'de-fa';
 
-  // Try pre-generated audio first
+  // Try pre-generated audio by lessonId/audioId first
   if (lessonId && audioId) {
     try {
       await playStepAudio(lessonId, audioId);

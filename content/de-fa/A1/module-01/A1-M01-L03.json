@@ -17,6 +17,56 @@
   "module": 1,
   "lessonNumber": 3,
   "estimatedMinutes": 15,
+  "vocabulary": [
+    {
+      "de": "Woher kommst du?",
+      "fa": "اهل کجایی؟",
+      "grammar": {
+        "pos": "phrase"
+      }
+    },
+    {
+      "de": "Ich komme aus...",
+      "fa": "من اهل... هستم",
+      "grammar": {
+        "pos": "phrase"
+      }
+    },
+    {
+      "de": "Deutschland",
+      "fa": "آلمان",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "n"
+        }
+      }
+    },
+    {
+      "de": "der Iran",
+      "fa": "ایران",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m"
+        }
+      }
+    },
+    {
+      "de": "Wo wohnst du?",
+      "fa": "کجا زندگی می‌کنی؟",
+      "grammar": {
+        "pos": "phrase"
+      }
+    },
+    {
+      "de": "Ich wohne in...",
+      "fa": "من در... زندگی می‌کنم",
+      "grammar": {
+        "pos": "phrase"
+      }
+    }
+  ],
   "steps": [
     {
       "type": "new-word",
@@ -34,6 +84,24 @@
       "header": "یه چیز جدید!"
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-1",
+      "word": "Woher kommst du?",
+      "translation": "اهل کجایی؟",
+      "syllables": [
+        "Wo",
+        "her",
+        "kommst",
+        "du"
+      ],
+      "hint": "۴ بخش - از کجا می‌آیی",
+      "distractors": [
+        "Wa",
+        "We",
+        "har"
+      ]
+    },
+    {
       "type": "new-word",
       "id": "s2",
       "word": {
@@ -47,6 +115,24 @@
         }
       },
       "header": "یه چیز جدید!"
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-2",
+      "word": "Ich komme aus...",
+      "translation": "من اهل... هستم",
+      "syllables": [
+        "Ich",
+        "kom",
+        "me",
+        "aus"
+      ],
+      "hint": "۴ بخش - من می‌آیم از",
+      "distractors": [
+        "och",
+        "kum",
+        "mi"
+      ]
     },
     {
       "type": "new-word",
@@ -64,6 +150,21 @@
       "header": "یه چیز جدید!"
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-3",
+      "word": "Deutschland",
+      "translation": "آلمان",
+      "syllables": [
+        "Deutsch",
+        "land"
+      ],
+      "hint": "۲ بخش - آلمان",
+      "distractors": [
+        "Diatsch",
+        "lend"
+      ]
+    },
+    {
       "type": "new-word",
       "id": "s4",
       "word": {
@@ -77,6 +178,23 @@
         }
       },
       "header": "یه چیز جدید!"
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-4",
+      "word": "der Iran",
+      "translation": "ایران",
+      "syllables": [
+        "der",
+        "I",
+        "ran"
+      ],
+      "hint": "۳ بخش - ایران",
+      "distractors": [
+        "dar",
+        "dir",
+        "o"
+      ]
     },
     {
       "type": "grammar-tip",
@@ -152,6 +270,11 @@
       "correctAnswerIndex": 1,
       "feedback": {
         "explanation": "عبارت Woher kommst du? برای پرسیدن اصلیت و کشور مبدأ استفاده می‌شود. Woher یعنی «از کجا»."
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! Woher یعنی «از کجا»، kommst یعنی «می‌آیی».",
+        "onWrong": "دقت کنید: Woher = از کجا، Wo = کجا، Wie = چطور.",
+        "errorCategory": "vocabulary"
       }
     },
     {
@@ -170,6 +293,11 @@
       ],
       "feedback": {
         "explanation": "برای گفتن اینکه اهل کجا هستیم، از «aus» استفاده می‌کنیم: Ich komme aus..."
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! aus یعنی «از» - برای مبدأ استفاده می‌شود.",
+        "onWrong": "دقت کنید: aus = از (مبدأ)، in = در (محل)، nach = به (مقصد).",
+        "errorCategory": "vocabulary"
       }
     },
     {
@@ -188,6 +316,23 @@
       "header": "یه چیز جدید!"
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-5",
+      "word": "Wo wohnst du?",
+      "translation": "کجا زندگی می‌کنی؟",
+      "syllables": [
+        "Wo",
+        "wohnst",
+        "du"
+      ],
+      "hint": "۳ بخش - کجا زندگی می‌کنی",
+      "distractors": [
+        "Wa",
+        "We",
+        "wuhnst"
+      ]
+    },
+    {
       "type": "new-word",
       "id": "s9",
       "word": {
@@ -201,6 +346,24 @@
         }
       },
       "header": "یه چیز جدید!"
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-6",
+      "word": "Ich wohne in...",
+      "translation": "من در... زندگی می‌کنم",
+      "syllables": [
+        "Ich",
+        "woh",
+        "ne",
+        "in"
+      ],
+      "hint": "۴ بخش - من زندگی می‌کنم در",
+      "distractors": [
+        "och",
+        "wah",
+        "weh"
+      ]
     },
     {
       "type": "word-order",
@@ -253,62 +416,102 @@
       "type": "dialog",
       "id": "s11",
       "title": "آشنایی جدید",
+      "scene": {
+        "location": "café",
+        "description": {
+          "de": "In einem Café in Berlin",
+          "fa": "در یک کافه در برلین"
+        }
+      },
       "lines": [
         {
           "speaker": "Eli",
           "text": {
             "de": "Hallo! Ich bin Eli.",
             "fa": "سلام! من الی هستم."
-          }
+          },
+          "mood": "happy"
         },
         {
           "speaker": "Tom",
           "text": {
             "de": "Hi! Ich heiße Tom.",
             "fa": "سلام! اسم من تام است."
-          }
+          },
+          "mood": "happy"
         },
         {
           "speaker": "Eli",
           "text": {
             "de": "Woher kommst du, Tom?",
             "fa": "تام، اهل کجایی؟"
-          }
+          },
+          "mood": "neutral"
         },
         {
           "speaker": "Tom",
           "text": {
             "de": "Ich komme aus dem Iran. Und du?",
             "fa": "من اهل ایران هستم. تو چی؟"
-          }
+          },
+          "mood": "neutral"
         },
         {
           "speaker": "Eli",
           "text": {
             "de": "Ich komme aus Deutschland.",
             "fa": "من اهل آلمان هستم."
-          }
+          },
+          "mood": "neutral"
         },
         {
           "speaker": "Tom",
           "text": {
             "de": "Wo wohnst du?",
             "fa": "کجا زندگی می‌کنی؟"
-          }
+          },
+          "mood": "neutral"
         },
         {
           "speaker": "Eli",
           "text": {
             "de": "Ich wohne in Berlin. Und du?",
             "fa": "من در برلین زندگی می‌کنم. تو چی؟"
-          }
+          },
+          "mood": "neutral"
         },
         {
           "speaker": "Tom",
           "text": {
             "de": "Ich wohne auch in Berlin!",
             "fa": "منم در برلین زندگی می‌کنم!"
-          }
+          },
+          "mood": "excited"
+        }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        {
+          "question": "تام اهل کجاست؟",
+          "options": [
+            "آلمان",
+            "ایران",
+            "ترکیه"
+          ],
+          "correctIndex": 1,
+          "explanation": "تام گفت: «Ich komme aus dem Iran»",
+          "relatedLineIndex": 3
+        },
+        {
+          "question": "الی کجا زندگی می‌کند؟",
+          "options": [
+            "تهران",
+            "مونیخ",
+            "برلین"
+          ],
+          "correctIndex": 2,
+          "explanation": "الی گفت: «Ich wohne in Berlin»",
+          "relatedLineIndex": 6
         }
       ],
       "feedback": {
@@ -383,6 +586,11 @@
       "correctAnswer": true,
       "feedback": {
         "explanation": "درست است! برای ایران می‌گوییم «aus dem Iran»."
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! ایران با حرف تعریف است: aus dem Iran",
+        "onWrong": "دقت کنید: ایران یکی از کشورهایی است که حرف تعریف دارد.",
+        "errorCategory": "comprehension"
       }
     },
     {
@@ -431,6 +639,20 @@
       "instruction": "این کلمه را تایپ کنید"
     },
     {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Ich komme aus Deutschland",
+      "translation": "من اهل آلمان هستم",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Ich wohne in Berlin",
+      "translation": "من در برلین زندگی می‌کنم",
+      "difficulty": "A1"
+    },
+    {
       "type": "fill-in-blank",
       "id": "s16",
       "instruction": "جمله را کامل کنید",
@@ -446,6 +668,11 @@
       ],
       "feedback": {
         "explanation": "برای پرسیدن محل زندگی از «Wo wohnst du?» استفاده می‌کنیم. wohnen یعنی «زندگی کردن»."
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! wohnen یعنی «زندگی کردن».",
+        "onWrong": "دقت کنید: wohnen = زندگی کردن، kommen = آمدن، heißen = نامیده شدن.",
+        "errorCategory": "vocabulary"
       }
     },
     {
@@ -461,6 +688,11 @@
       "correctAnswerIndex": 1,
       "feedback": {
         "explanation": "برای ایران باید بگوییم «aus dem Iran». این عبارت را به همین شکل حفظ کنید!"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! aus dem Iran درست است.",
+        "onWrong": "دقت کنید: ایران حرف تعریف دارد - باید بگوییم «aus dem Iran».",
+        "errorCategory": "vocabulary"
       }
     },
     {

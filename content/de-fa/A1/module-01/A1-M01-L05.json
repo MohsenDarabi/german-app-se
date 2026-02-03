@@ -17,6 +17,65 @@
   "module": 1,
   "lessonNumber": 5,
   "estimatedMinutes": 15,
+  "vocabulary": [
+    {
+      "de": "heißen",
+      "fa": "نامیده شدن",
+      "grammar": {
+        "pos": "verb",
+        "verb": {
+          "infinitiv": "heißen",
+          "praesens": {
+            "ich": "heiße",
+            "du": "heißt",
+            "er_sie_es": "heißt",
+            "wir": "heißen",
+            "ihr": "heißt",
+            "sie_Sie": "heißen"
+          }
+        }
+      }
+    },
+    {
+      "de": "Wie heißt du?",
+      "fa": "اسمت چیه؟",
+      "grammar": {
+        "pos": "phrase"
+      }
+    },
+    {
+      "de": "Ich heiße...",
+      "fa": "اسم من... است",
+      "grammar": {
+        "pos": "phrase"
+      }
+    },
+    {
+      "de": "der Name",
+      "fa": "اسم / نام",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "Namen"
+        }
+      }
+    },
+    {
+      "de": "Freut mich!",
+      "fa": "از آشناییت خوشحالم!",
+      "grammar": {
+        "pos": "phrase"
+      }
+    },
+    {
+      "de": "auch",
+      "fa": "هم / همچنین",
+      "grammar": {
+        "pos": "adverb"
+      }
+    }
+  ],
   "steps": [
     {
       "type": "new-word",
@@ -34,6 +93,22 @@
       "header": "یه چیز جدید!"
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-1",
+      "word": "heißen",
+      "translation": "نامیده شدن",
+      "syllables": [
+        "hei",
+        "ßen"
+      ],
+      "hint": "۲ بخش - نامیده شدن",
+      "distractors": [
+        "hai",
+        "hie",
+        "ßin"
+      ]
+    },
+    {
       "type": "new-word",
       "id": "s2",
       "word": {
@@ -47,6 +122,23 @@
         }
       },
       "header": "یه چیز جدید!"
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-2",
+      "word": "Wie heißt du?",
+      "translation": "اسمت چیه؟",
+      "syllables": [
+        "Wie",
+        "heißt",
+        "du"
+      ],
+      "hint": "۳ بخش - اسم پرسیدن",
+      "distractors": [
+        "Vie",
+        "Wia",
+        "hioßt"
+      ]
     },
     {
       "type": "new-word",
@@ -64,6 +156,23 @@
       "header": "یه چیز جدید!"
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-3",
+      "word": "Ich heiße...",
+      "translation": "اسم من... است",
+      "syllables": [
+        "Ich",
+        "hei",
+        "ße"
+      ],
+      "hint": "۳ بخش - معرفی اسم",
+      "distractors": [
+        "och",
+        "hai",
+        "hie"
+      ]
+    },
+    {
       "type": "new-word",
       "id": "s4",
       "word": {
@@ -77,6 +186,23 @@
         }
       },
       "header": "یه چیز جدید!"
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-4",
+      "word": "der Name",
+      "translation": "اسم / نام",
+      "syllables": [
+        "der",
+        "Na",
+        "me"
+      ],
+      "hint": "۳ بخش - نام",
+      "distractors": [
+        "dar",
+        "dir",
+        "Ne"
+      ]
     },
     {
       "type": "grammar-tip",
@@ -145,6 +271,21 @@
       "header": "یه چیز جدید!"
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-5",
+      "word": "Freut mich!",
+      "translation": "از آشناییت خوشحالم!",
+      "syllables": [
+        "Freut",
+        "mich"
+      ],
+      "hint": "۲ بخش - خوشوقتم",
+      "distractors": [
+        "Friat",
+        "moch"
+      ]
+    },
+    {
       "type": "new-word",
       "id": "s7",
       "word": {
@@ -158,6 +299,23 @@
         }
       },
       "header": "یه چیز جدید!"
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-auch",
+      "word": "auch",
+      "translation": "هم / همچنین",
+      "syllables": [
+        "a",
+        "u",
+        "ch"
+      ],
+      "distractors": [
+        "au",
+        "sch",
+        "o"
+      ],
+      "hint": "۳ حرف"
     },
     {
       "type": "grammar-tip",
@@ -188,6 +346,11 @@
       "correctAnswerIndex": 2,
       "feedback": {
         "explanation": "برای پرسیدن اسم می‌گوییم «Wie heißt du?» که یعنی «اسمت چیه؟»"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! Wie heißt du? = اسمت چیه؟",
+        "onWrong": "دقت کنید: Wie heißt du? برای پرسیدن اسم است.",
+        "errorCategory": "vocabulary"
       }
     },
     {
@@ -206,6 +369,11 @@
       ],
       "feedback": {
         "explanation": "برای گفتن اسم از «heiße» استفاده می‌کنیم: Ich heiße Eli."
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! Ich heiße... = اسم من... است",
+        "onWrong": "دقت کنید: heiße از فعل heißen است که برای گفتن اسم استفاده می‌شود.",
+        "errorCategory": "vocabulary"
       }
     },
     {
@@ -255,41 +423,78 @@
       "type": "dialog",
       "id": "s12",
       "title": "اولین آشنایی",
+      "scene": {
+        "location": "café",
+        "description": {
+          "de": "In einem Café",
+          "fa": "در یک کافه"
+        }
+      },
       "lines": [
         {
           "speaker": "Eli",
           "text": {
             "de": "Hallo! Wie heißt du?",
             "fa": "سلام! اسمت چیه؟"
-          }
+          },
+          "mood": "happy"
         },
         {
           "speaker": "Tom",
           "text": {
             "de": "Hallo! Ich heiße Tom. Und du?",
             "fa": "سلام! اسم من تام است. تو چی؟"
-          }
+          },
+          "mood": "happy"
         },
         {
           "speaker": "Eli",
           "text": {
             "de": "Ich heiße Eli.",
             "fa": "اسم من الی است."
-          }
+          },
+          "mood": "neutral"
         },
         {
           "speaker": "Tom",
           "text": {
             "de": "Freut mich, Eli!",
             "fa": "از آشناییت خوشحالم، الی!"
-          }
+          },
+          "mood": "happy"
         },
         {
           "speaker": "Eli",
           "text": {
             "de": "Freut mich auch, Tom!",
             "fa": "منم از آشناییت خوشحالم، تام!"
-          }
+          },
+          "mood": "happy"
+        }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        {
+          "question": "اسم مرد چیست؟",
+          "options": [
+            "الی",
+            "تام",
+            "الکس"
+          ],
+          "correctIndex": 1,
+          "explanation": "مرد گفت: «Ich heiße Tom»",
+          "relatedLineIndex": 1
+        },
+        {
+          "question": "چه کسی اول سوال پرسید؟",
+          "options": [
+            "تام",
+            "الی",
+            "هر دو"
+          ],
+          "correctIndex": 1,
+          "explanation": "الی اول پرسید: «Wie heißt du?»",
+          "relatedLineIndex": 0
         }
       ],
       "feedback": {
@@ -364,6 +569,11 @@
       "correctAnswer": true,
       "feedback": {
         "explanation": "درست است! عبارت «Ich heiße...» یعنی «اسم من... است» و رایج‌ترین روش گفتن اسم در آلمانی است."
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! Ich heiße رایج‌ترین روش گفتن اسم است.",
+        "onWrong": "دقت کنید: Ich heiße... واقعاً برای گفتن اسم استفاده می‌شود.",
+        "errorCategory": "comprehension"
       }
     },
     {
@@ -426,6 +636,11 @@
       ],
       "feedback": {
         "explanation": "برای پرسیدن اسم از «heißt» استفاده می‌کنیم: Wie heißt du?"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! با du فعل heißen می‌شود heißt.",
+        "onWrong": "دقت کنید: ich heiße، du heißt - فعل با du به -st یا -t ختم می‌شود.",
+        "errorCategory": "wrong-conjugation"
       }
     },
     {
@@ -441,7 +656,26 @@
       "correctAnswerIndex": 1,
       "feedback": {
         "explanation": "وقتی کسی می‌گوید «Freut mich!» در جواب می‌گوییم «Freut mich auch!» یعنی «منم از آشناییت خوشحالم!»"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! «auch» یعنی «هم» - منم از آشناییت خوشحالم!",
+        "onWrong": "دقت کنید: بعد از Freut mich می‌گوییم Freut mich auch!",
+        "errorCategory": "vocabulary"
       }
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Wie heißt du?",
+      "translation": "اسمت چیه؟",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Freut mich auch!",
+      "translation": "منم از آشناییت خوشحالم!",
+      "difficulty": "A1"
     },
     {
       "type": "vocab-check",

@@ -17,6 +17,64 @@
   "module": 1,
   "lessonNumber": 4,
   "estimatedMinutes": 15,
+  "vocabulary": [
+    {
+      "de": "sprechen",
+      "fa": "صحبت کردن",
+      "grammar": {
+        "pos": "verb",
+        "verb": {
+          "infinitiv": "sprechen",
+          "praesens": {
+            "ich": "spreche",
+            "du": "sprichst",
+            "er_sie_es": "spricht",
+            "wir": "sprechen",
+            "ihr": "sprecht",
+            "sie_Sie": "sprechen"
+          }
+        }
+      }
+    },
+    {
+      "de": "Deutsch",
+      "fa": "زبان آلمانی",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "n"
+        }
+      }
+    },
+    {
+      "de": "Englisch",
+      "fa": "زبان انگلیسی",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "n"
+        }
+      }
+    },
+    {
+      "de": "lernen",
+      "fa": "یاد گرفتن",
+      "grammar": {
+        "pos": "verb",
+        "verb": {
+          "infinitiv": "lernen",
+          "praesens": {
+            "ich": "lerne",
+            "du": "lernst",
+            "er_sie_es": "lernt",
+            "wir": "lernen",
+            "ihr": "lernt",
+            "sie_Sie": "lernen"
+          }
+        }
+      }
+    }
+  ],
   "steps": [
     {
       "type": "new-word",
@@ -34,6 +92,22 @@
       "header": "یه چیز جدید!"
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-1",
+      "word": "sprechen",
+      "translation": "صحبت کردن",
+      "syllables": [
+        "spre",
+        "chen"
+      ],
+      "hint": "۲ بخش - صحبت کردن",
+      "distractors": [
+        "spra",
+        "spro",
+        "chan"
+      ]
+    },
+    {
       "type": "new-word",
       "id": "s2",
       "word": {
@@ -47,6 +121,23 @@
         }
       },
       "header": "یه چیز جدید!"
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-deutsch",
+      "word": "Deutsch",
+      "translation": "زبان آلمانی",
+      "syllables": [
+        "D",
+        "eu",
+        "tsch"
+      ],
+      "distractors": [
+        "äu",
+        "sch",
+        "oi"
+      ],
+      "hint": "۳ بخش"
     },
     {
       "type": "new-word",
@@ -64,6 +155,21 @@
       "header": "یه چیز جدید!"
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-3",
+      "word": "Englisch",
+      "translation": "زبان انگلیسی",
+      "syllables": [
+        "Eng",
+        "lisch"
+      ],
+      "hint": "۲ بخش - انگلیسی",
+      "distractors": [
+        "ing",
+        "losch"
+      ]
+    },
+    {
       "type": "new-word",
       "id": "s4",
       "word": {
@@ -77,6 +183,22 @@
         }
       },
       "header": "یه چیز جدید!"
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-4",
+      "word": "lernen",
+      "translation": "یاد گرفتن",
+      "syllables": [
+        "ler",
+        "nen"
+      ],
+      "hint": "۲ بخش - یاد گرفتن",
+      "distractors": [
+        "lir",
+        "nan",
+        "nun"
+      ]
     },
     {
       "type": "grammar-tip",
@@ -162,6 +284,11 @@
       "correctAnswerIndex": 1,
       "feedback": {
         "explanation": "با «ich» فعل به **-e** ختم می‌شود: ich spreche، ich lerne، ich wohne."
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! ich → فعل با -e",
+        "onWrong": "دقت کنید: ich → -e | du → -st | er/sie/es → -t",
+        "errorCategory": "wrong-conjugation"
       }
     },
     {
@@ -180,6 +307,11 @@
       ],
       "feedback": {
         "explanation": "با «ich» می‌گوییم «spreche». الگو: ich → فعل با -e"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! ich spreche درست است.",
+        "onWrong": "دقت کنید: با ich فعل به -e ختم می‌شود.",
+        "errorCategory": "wrong-conjugation"
       }
     },
     {
@@ -198,6 +330,11 @@
       ],
       "feedback": {
         "explanation": "با «du» می‌گوییم «Sprichst». الگو: du → فعل با -st"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! du sprichst درست است.",
+        "onWrong": "دقت کنید: با du فعل به -st ختم می‌شود.",
+        "errorCategory": "wrong-conjugation"
       }
     },
     {
@@ -247,48 +384,86 @@
       "type": "dialog",
       "id": "s10",
       "title": "گفتگوی زبان‌آموزان",
+      "scene": {
+        "location": "school",
+        "description": {
+          "de": "In einer Sprachschule",
+          "fa": "در یک آموزشگاه زبان"
+        }
+      },
       "lines": [
         {
           "speaker": "Eli",
           "text": {
             "de": "Hallo! Sprichst du Deutsch?",
             "fa": "سلام! آیا آلمانی صحبت می‌کنی؟"
-          }
+          },
+          "mood": "happy"
         },
         {
           "speaker": "Tom",
           "text": {
             "de": "Ja, ich lerne Deutsch!",
             "fa": "بله، من آلمانی یاد می‌گیرم!"
-          }
+          },
+          "mood": "happy"
         },
         {
           "speaker": "Eli",
           "text": {
             "de": "Super! Ich spreche auch Englisch.",
             "fa": "عالیه! من انگلیسی هم صحبت می‌کنم."
-          }
+          },
+          "mood": "excited"
         },
         {
           "speaker": "Tom",
           "text": {
             "de": "Sprichst du Persisch?",
             "fa": "آیا فارسی صحبت می‌کنی؟"
-          }
+          },
+          "mood": "neutral"
         },
         {
           "speaker": "Eli",
           "text": {
             "de": "Nein, ich lerne Persisch.",
             "fa": "نه، من فارسی یاد می‌گیرم."
-          }
+          },
+          "mood": "neutral"
         },
         {
           "speaker": "Tom",
           "text": {
             "de": "Toll! Ich spreche Persisch und Deutsch.",
             "fa": "عالیه! من فارسی و آلمانی صحبت می‌کنم."
-          }
+          },
+          "mood": "happy"
+        }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        {
+          "question": "تام چه زبان‌هایی صحبت می‌کند؟",
+          "options": [
+            "فقط آلمانی",
+            "فارسی و آلمانی",
+            "فقط انگلیسی"
+          ],
+          "correctIndex": 1,
+          "explanation": "تام گفت: «Ich spreche Persisch und Deutsch»",
+          "relatedLineIndex": 5
+        },
+        {
+          "question": "الی چه زبانی یاد می‌گیرد؟",
+          "options": [
+            "آلمانی",
+            "انگلیسی",
+            "فارسی"
+          ],
+          "correctIndex": 2,
+          "explanation": "الی گفت: «Ich lerne Persisch»",
+          "relatedLineIndex": 4
         }
       ],
       "feedback": {
@@ -363,6 +538,11 @@
       "correctAnswer": true,
       "feedback": {
         "explanation": "درست است! با «du» فعل به -st ختم می‌شود: du sprichst، du lernst، du wohnst."
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! du → -st",
+        "onWrong": "دقت کنید: با du فعل به -st ختم می‌شود.",
+        "errorCategory": "comprehension"
       }
     },
     {
@@ -410,6 +590,20 @@
       "instruction": "این کلمه را تایپ کنید"
     },
     {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Ich spreche Deutsch",
+      "translation": "من آلمانی صحبت می‌کنم",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Ich lerne Englisch",
+      "translation": "من انگلیسی یاد می‌گیرم",
+      "difficulty": "A1"
+    },
+    {
       "type": "multiple-choice",
       "id": "s15",
       "question": "کدام جمله درست است؟",
@@ -422,6 +616,11 @@
       "correctAnswerIndex": 2,
       "feedback": {
         "explanation": "«Ich spreche» درست است. با «ich» فعل به -e ختم می‌شود."
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! ich spreche درست است.",
+        "onWrong": "دقت کنید: ich → -e | du → -st",
+        "errorCategory": "wrong-conjugation"
       }
     },
     {
@@ -439,6 +638,11 @@
       ],
       "feedback": {
         "explanation": "با «ich» می‌گوییم «lerne» و با «du» می‌گوییم «lernst»."
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! ich lerne و du lernst درست است.",
+        "onWrong": "دقت کنید: ich → -e | du → -st",
+        "errorCategory": "wrong-conjugation"
       }
     },
     {

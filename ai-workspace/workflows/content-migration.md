@@ -81,15 +81,36 @@ Based on **Miller's Chunking Theory**:
 
 ### Rule: EVERY new-word step MUST be followed by syllable-spelling
 
+**⚠️ DISTRACTORS ARE REQUIRED for all syllable-spelling exercises!**
+
 ```
 new-word (introduce "Guten Morgen")
     ↓
-syllable-spelling (practice "Gu-ten Mor-gen")
+syllable-spelling (practice "Gu-ten Mor-gen" with distractors)
     ↓
 [optional: spelling step for full word]
     ↓
 exercise (test the word)
 ```
+
+### Handling Short vs Long Words
+
+| Word Type | Syllables Array | Distractors | Example |
+|-----------|----------------|-------------|---------|
+| Multi-syllable | Split by syllables | Similar syllables | `"Hallo"` → `["Hal", "lo"]` + `["Hel", "la", "le"]` |
+| Monosyllabic | Split by letter groups | Confusing letters | `"nein"` → `["n", "ei", "n"]` + `["ie", "a", "e"]` |
+
+### German Spelling Confusions (Use as Distractors)
+
+| Sound | Correct | Distractor | Teaching Point |
+|-------|---------|------------|----------------|
+| "eye" sound | ei | ie | "ei" = آی, "ie" = ای |
+| "oy" sound | eu/äu | au/oi | "eu" = اوی |
+| Umlaut ü | ü | u, ue | Different from "u" |
+| Umlaut ö | ö | o, oe | Different from "o" |
+| German W | w | v | "w" = و (not English w) |
+| German J | j | y | "j" = ی (like English y) |
+| sch sound | sch | sh, ch | German "sch" = ش |
 
 ### Schema
 
@@ -97,12 +118,37 @@ exercise (test the word)
 {
   "type": "syllable-spelling",
   "id": "syllable-{N}",
-  "word": {
-    "de": "German word/phrase",
-    "fa": "Persian translation"
-  },
+  "word": "German word/phrase",
+  "translation": "Persian translation",
   "syllables": ["Syl", "la", "bles"],
+  "distractors": ["Sal", "le", "blos"],  // REQUIRED!
   "hint": "۳ بخش - brief Persian description"
+}
+```
+
+**Examples:**
+
+```json
+// Multi-syllable word
+{
+  "type": "syllable-spelling",
+  "id": "syllable-1",
+  "word": "Hallo",
+  "translation": "سلام",
+  "syllables": ["Hal", "lo"],
+  "distractors": ["Hel", "Hol", "la", "le"],
+  "hint": "۲ بخش"
+}
+
+// Short word (letter-based)
+{
+  "type": "syllable-spelling",
+  "id": "syllable-2",
+  "word": "nein",
+  "translation": "نه",
+  "syllables": ["n", "ei", "n"],
+  "distractors": ["ie", "a", "e"],
+  "hint": "۳ حرف - ei صدای آی"
 }
 ```
 
@@ -176,6 +222,7 @@ Format: `{Persian number} بخش - {brief meaning}`
 | Conjunction | `"conjunction"` | und, aber, oder |
 | Interjection | `"interjection"` | Ach!, Oh! |
 | Phrase | `"phrase"` | Multi-word expressions |
+| Particle | `"particle"` | Modal particles: doch, mal, ja, auch, eben |
 
 ### Noun Schema (REQUIRED for all nouns)
 

@@ -20,31 +20,52 @@
   "vocabulary": [
     {
       "de": "Hallo",
-      "fa": "سلام"
+      "fa": "سلام",
+      "grammar": {
+        "pos": "interjection"
+      }
     },
     {
       "de": "Hi",
-      "fa": "سلام (خودمانی)"
+      "fa": "سلام (خودمانی)",
+      "grammar": {
+        "pos": "interjection"
+      }
     },
     {
       "de": "Guten Tag",
-      "fa": "روز بخیر"
+      "fa": "روز بخیر",
+      "grammar": {
+        "pos": "phrase"
+      }
     },
     {
       "de": "Tschüss",
-      "fa": "خداحافظ"
+      "fa": "خداحافظ",
+      "grammar": {
+        "pos": "interjection"
+      }
     },
     {
       "de": "Auf Wiedersehen",
-      "fa": "خداحافظ (رسمی)"
+      "fa": "خداحافظ (رسمی)",
+      "grammar": {
+        "pos": "phrase"
+      }
     },
     {
       "de": "danke",
-      "fa": "ممنون"
+      "fa": "ممنون",
+      "grammar": {
+        "pos": "interjection"
+      }
     },
     {
       "de": "bitte",
-      "fa": "خواهش می‌کنم / لطفاً"
+      "fa": "خواهش می‌کنم / لطفاً",
+      "grammar": {
+        "pos": "particle"
+      }
     }
   ],
   "steps": [
@@ -65,6 +86,22 @@
       "header": "یه چیز جدید!"
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-1",
+      "word": "Hallo",
+      "translation": "سلام",
+      "syllables": [
+        "Hal",
+        "lo"
+      ],
+      "hint": "۲ بخش - سلام",
+      "distractors": [
+        "Hel",
+        "Hol",
+        "la"
+      ]
+    },
+    {
       "type": "new-word",
       "id": "s2",
       "word": {
@@ -80,6 +117,22 @@
       "header": "یه چیز جدید!"
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-hi",
+      "word": "Hi",
+      "translation": "سلام (خودمانی)",
+      "syllables": [
+        "H",
+        "i"
+      ],
+      "distractors": [
+        "ie",
+        "y",
+        "e"
+      ],
+      "hint": "حروف را انتخاب کنید"
+    },
+    {
       "type": "new-word",
       "id": "s3",
       "word": {
@@ -93,6 +146,23 @@
         }
       },
       "header": "یه چیز جدید!"
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-3",
+      "word": "Guten Tag",
+      "translation": "روز بخیر",
+      "syllables": [
+        "Gu",
+        "ten",
+        "Tag"
+      ],
+      "hint": "۳ بخش - سلام رسمی",
+      "distractors": [
+        "Go",
+        "Ge",
+        "tan"
+      ]
     },
     {
       "type": "grammar-tip",
@@ -165,6 +235,23 @@
       "header": "یه چیز جدید!"
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-tschss",
+      "word": "Tschüss",
+      "translation": "خداحافظ",
+      "syllables": [
+        "Tsch",
+        "ü",
+        "ss"
+      ],
+      "distractors": [
+        "sch",
+        "u",
+        "s"
+      ],
+      "hint": "۳ بخش"
+    },
+    {
       "type": "new-word",
       "id": "s6",
       "word": {
@@ -178,6 +265,25 @@
         }
       },
       "header": "یه چیز جدید!"
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-5",
+      "word": "Auf Wiedersehen",
+      "translation": "خداحافظ رسمی",
+      "syllables": [
+        "Auf",
+        "Wie",
+        "der",
+        "se",
+        "hen"
+      ],
+      "hint": "۵ بخش - خداحافظی رسمی",
+      "distractors": [
+        "Of",
+        "Uf",
+        "Vie"
+      ]
     },
     {
       "type": "grammar-tip",
@@ -211,6 +317,22 @@
       "header": "یه چیز جدید!"
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-6",
+      "word": "danke",
+      "translation": "ممنون",
+      "syllables": [
+        "Dan",
+        "ke"
+      ],
+      "hint": "۲ بخش - تشکر",
+      "distractors": [
+        "Den",
+        "ka",
+        "ki"
+      ]
+    },
+    {
       "type": "new-word",
       "id": "s9",
       "word": {
@@ -224,6 +346,22 @@
         }
       },
       "header": "یه چیز جدید!"
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-7",
+      "word": "bitte",
+      "translation": "خواهش می‌کنم",
+      "syllables": [
+        "Bit",
+        "te"
+      ],
+      "hint": "۲ بخش - لطفاً",
+      "distractors": [
+        "Bot",
+        "ta",
+        "ti"
+      ]
     },
     {
       "type": "grammar-tip",
@@ -278,6 +416,11 @@
       "correctAnswerIndex": 3,
       "feedback": {
         "explanation": "کلمه Hallo برای سلام کردن استفاده می‌شود. Tschüss برای خداحافظی، danke برای تشکر و bitte برای خواهش می‌کنم است."
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! Hallo رایج‌ترین راه برای سلام کردن است.",
+        "onWrong": "دقت کنید: Tschüss = خداحافظی، Danke = ممنون، Bitte = خواهش می‌کنم",
+        "errorCategory": "vocabulary"
       }
     },
     {
@@ -368,41 +511,78 @@
       "type": "dialog",
       "id": "s14",
       "title": "ملاقات در خیابان",
+      "scene": {
+        "location": "street",
+        "description": {
+          "de": "Auf der Straße in Berlin",
+          "fa": "در خیابانی در برلین"
+        }
+      },
       "lines": [
         {
           "speaker": "Eli",
           "text": {
             "de": "Hallo Tom!",
             "fa": "سلام تام!"
-          }
+          },
+          "mood": "happy"
         },
         {
           "speaker": "Tom",
           "text": {
             "de": "Hi Eli! Wie geht's?",
             "fa": "سلام الی! حالت چطوره؟"
-          }
+          },
+          "mood": "happy"
         },
         {
           "speaker": "Eli",
           "text": {
             "de": "Danke, gut!",
             "fa": "ممنون، خوبم!"
-          }
+          },
+          "mood": "happy"
         },
         {
           "speaker": "Tom",
           "text": {
             "de": "Tschüss Eli!",
             "fa": "خداحافظ الی!"
-          }
+          },
+          "mood": "neutral"
         },
         {
           "speaker": "Eli",
           "text": {
             "de": "Tschüss!",
             "fa": "خداحافظ!"
-          }
+          },
+          "mood": "neutral"
+        }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        {
+          "question": "چه کسی اول سلام کرد؟",
+          "options": [
+            "تام",
+            "الی",
+            "هر دو"
+          ],
+          "correctIndex": 1,
+          "explanation": "الی اول گفت: «Hallo Tom!»",
+          "relatedLineIndex": 0
+        },
+        {
+          "question": "تام چه پرسید؟",
+          "options": [
+            "اسمت چیه؟",
+            "حالت چطوره؟",
+            "کجا می‌ری؟"
+          ],
+          "correctIndex": 1,
+          "explanation": "تام پرسید: «Wie geht's?» یعنی حالت چطوره؟",
+          "relatedLineIndex": 1
         }
       ],
       "feedback": {
@@ -417,17 +597,26 @@
       "correctAnswer": false,
       "feedback": {
         "explanation": "غلط! کلمه Hi خودمانی‌تر از Hallo است. برای موقعیت‌های رسمی از Guten Tag استفاده کنید."
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! Hi خودمانی‌تر از Hallo است.",
+        "onWrong": "دقت کنید: Hi بین دوستان استفاده می‌شود و خودمانی‌تر است.",
+        "errorCategory": "comprehension"
       }
     },
     {
-      "type": "syllable-spelling",
-      "id": "s16a",
-      "word": "Tschüss",
-      "translation": "خداحافظ",
-      "syllables": ["Tschü", "ss"],
-      "distractors": ["sch"],
-      "hint": "چوس",
-      "instruction": "قطعات را کنار هم بگذارید"
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Guten Tag",
+      "translation": "روز بخیر",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Danke schön",
+      "translation": "خیلی ممنون",
+      "difficulty": "A1"
     },
     {
       "type": "spelling",
