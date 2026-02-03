@@ -19,6 +19,18 @@
   "lessonNumber": 8,
   "totalSteps": 22,
   "estimatedMinutes": 15,
+  "vocabulary": [
+    { "de": "elf", "fa": "یازده (۱۱)", "grammar": { "pos": "noun" } },
+    { "de": "zwölf", "fa": "دوازده (۱۲)", "grammar": { "pos": "noun" } },
+    { "de": "dreizehn", "fa": "سیزده (۱۳)", "grammar": { "pos": "noun" } },
+    { "de": "vierzehn", "fa": "چهارده (۱۴)", "grammar": { "pos": "noun" } },
+    { "de": "fünfzehn", "fa": "پانزده (۱۵)", "grammar": { "pos": "noun" } },
+    { "de": "sechzehn", "fa": "شانزده (۱۶)", "grammar": { "pos": "noun" } },
+    { "de": "siebzehn", "fa": "هفده (۱۷)", "grammar": { "pos": "noun" } },
+    { "de": "achtzehn", "fa": "هجده (۱۸)", "grammar": { "pos": "noun" } },
+    { "de": "neunzehn", "fa": "نوزده (۱۹)", "grammar": { "pos": "noun" } },
+    { "de": "zwanzig", "fa": "بیست (۲۰)", "grammar": { "pos": "noun" } }
+  ],
   "steps": [
     {
       "type": "new-word",
@@ -303,6 +315,11 @@
       "feedback": {
         "correct": "آفرین! هفده = siebzehn",
         "incorrect": "پاسخ صحیح: siebzehn (هفده)"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! sieb(en) + zehn = siebzehn (۱۷)",
+        "onWrong": "دقت کنید: sechzehn=۱۶, siebzehn=۱۷, achtzehn=۱۸, neunzehn=۱۹",
+        "errorCategory": "vocabulary"
       }
     },
     {
@@ -319,6 +336,11 @@
       "feedback": {
         "correct": "آفرین! zwanzig = بیست",
         "incorrect": "پاسخ صحیح: بیست (۲۰)"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! «zwanzig» یعنی بیست (۲۰).",
+        "onWrong": "دقت کنید: achtzehn=۱۸, neunzehn=۱۹, zwanzig=۲۰",
+        "errorCategory": "vocabulary"
       }
     },
     {
@@ -355,6 +377,23 @@
             "fa": "سه یورو. روی هم هجده یورو."
           }
         }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        {
+          "question": "کتاب چند یورو است؟",
+          "options": ["سه یورو", "پانزده یورو", "هجده یورو"],
+          "correctIndex": 1,
+          "explanation": "فروشنده گفت: «Das kostet fünfzehn Euro.»",
+          "relatedLineIndex": 1
+        },
+        {
+          "question": "مجموع خرید چند یورو شد؟",
+          "options": ["پانزده یورو", "هجده یورو", "بیست یورو"],
+          "correctIndex": 1,
+          "explanation": "فروشنده گفت: «Zusammen achtzehn Euro.»",
+          "relatedLineIndex": 3
+        }
       ]
     },
     {
@@ -374,6 +413,11 @@
       ],
       "feedback": {
         "explanation": "ترتیب اعداد: zehn (۱۰), elf (۱۱), **zwölf** (۱۲), dreizehn (۱۳), **vierzehn** (۱۴), fünfzehn (۱۵)"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! ترتیب اعداد را درست یاد گرفتید.",
+        "onWrong": "دقت کنید: elf(۱۱), zwölf(۱۲), dreizehn(۱۳), vierzehn(۱۴), fünfzehn(۱۵)",
+        "errorCategory": "vocabulary"
       }
     },
     {
@@ -437,7 +481,74 @@
       },
       "feedback": {
         "explanation": "درست است! دوازده (zwölf) قبل از سیزده (dreizehn) می‌آید."
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! elf(۱۱), zwölf(۱۲), dreizehn(۱۳) - ترتیب درست است.",
+        "onWrong": "دقت کنید: «vor» یعنی قبل از. ۱۲ قبل از ۱۳ است.",
+        "errorCategory": "vocabulary"
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-1",
+      "word": "dreizehn",
+      "translation": "سیزده (۱۳)",
+      "syllables": ["drei", "zehn"],
+      "distractors": ["dre", "zeh", "acht"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! drei + zehn = dreizehn (۱۳)"
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-2",
+      "word": "vierzehn",
+      "translation": "چهارده (۱۴)",
+      "syllables": ["vier", "zehn"],
+      "distractors": ["fier", "zeh", "fühn"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! vier + zehn = vierzehn (۱۴)"
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-3",
+      "word": "fünfzehn",
+      "translation": "پانزده (۱۵)",
+      "syllables": ["fünf", "zehn"],
+      "distractors": ["funf", "zeh", "vier"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! fünf + zehn = fünfzehn (۱۵)"
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-4",
+      "word": "zwanzig",
+      "translation": "بیست (۲۰)",
+      "syllables": ["zwan", "zig"],
+      "distractors": ["zwei", "sig", "tig"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «zwanzig» یعنی بیست (۲۰)"
+      }
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Elf, zwölf, dreizehn.",
+      "translation": "یازده، دوازده، سیزده.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Das kostet zwanzig Euro.",
+      "translation": "این بیست یورو است.",
+      "difficulty": "A1"
     },
     {
       "type": "vocab-check",

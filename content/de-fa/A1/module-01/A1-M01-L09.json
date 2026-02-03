@@ -19,6 +19,19 @@
   "lessonNumber": 9,
   "totalSteps": 24,
   "estimatedMinutes": 18,
+  "vocabulary": [
+    { "de": "einundzwanzig", "fa": "بیست و یک (۲۱)", "grammar": { "pos": "noun" } },
+    { "de": "zweiundzwanzig", "fa": "بیست و دو (۲۲)", "grammar": { "pos": "noun" } },
+    { "de": "dreiundzwanzig", "fa": "بیست و سه (۲۳)", "grammar": { "pos": "noun" } },
+    { "de": "dreißig", "fa": "سی (۳۰)", "grammar": { "pos": "noun" } },
+    { "de": "vierzig", "fa": "چهل (۴۰)", "grammar": { "pos": "noun" } },
+    { "de": "fünfzig", "fa": "پنجاه (۵۰)", "grammar": { "pos": "noun" } },
+    { "de": "sechzig", "fa": "شصت (۶۰)", "grammar": { "pos": "noun" } },
+    { "de": "siebzig", "fa": "هفتاد (۷۰)", "grammar": { "pos": "noun" } },
+    { "de": "achtzig", "fa": "هشتاد (۸۰)", "grammar": { "pos": "noun" } },
+    { "de": "neunzig", "fa": "نود (۹۰)", "grammar": { "pos": "noun" } },
+    { "de": "hundert", "fa": "صد (۱۰۰)", "grammar": { "pos": "noun" } }
+  ],
   "steps": [
     {
       "type": "grammar-tip",
@@ -463,6 +476,23 @@
             "fa": "پدربزرگ من هشتاد ساله است!"
           }
         }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        {
+          "question": "پدربزرگ تام چند ساله است؟",
+          "options": ["هفتاد و سه", "هفتاد و پنج", "هشتاد"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: «Er ist fünfundsiebzig.» یعنی ۷۵ ساله.",
+          "relatedLineIndex": 1
+        },
+        {
+          "question": "مادربزرگ تام چند ساله است؟",
+          "options": ["هفتاد و سه", "هفتاد و پنج", "هشتاد"],
+          "correctIndex": 0,
+          "explanation": "تام گفت: «Sie ist dreiundsiebzig.» یعنی ۷۳ ساله.",
+          "relatedLineIndex": 3
+        }
       ]
     },
     {
@@ -479,6 +509,11 @@
       "feedback": {
         "correct": "آفرین! یکان + und + دهگان: fünfunddreißig",
         "incorrect": "پاسخ صحیح: fünfunddreißig (پنج و سی)"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! در آلمانی: یکان + und + دهگان → fünf + und + dreißig = ۳۵",
+        "onWrong": "دقت کنید: الگوی آلمانی برعکس فارسی است. اول یکان، بعد und، بعد دهگان.",
+        "errorCategory": "vocabulary"
       }
     },
     {
@@ -498,6 +533,11 @@
       ],
       "feedback": {
         "explanation": "ترتیب ده‌گان‌ها: zwanzig (۲۰), **dreißig** (۳۰), vierzig (۴۰), **fünfzig** (۵۰), sechzig (۶۰)"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! ترتیب ده‌گان‌ها: ۲۰, ۳۰, ۴۰, ۵۰, ۶۰...",
+        "onWrong": "دقت کنید: zwanzig(۲۰), dreißig(۳۰), vierzig(۴۰), fünfzig(۵۰), sechzig(۶۰)",
+        "errorCategory": "vocabulary"
       }
     },
     {
@@ -515,6 +555,11 @@
       },
       "feedback": {
         "explanation": "درست است! vier (۴) + und + vierzig (۴۰) = vierundvierzig (۴۴)"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! vier(۴) + und + vierzig(۴۰) = ۴۴",
+        "onWrong": "دقت کنید: vierundvierzig = چهار و چهل = ۴۴",
+        "errorCategory": "vocabulary"
       }
     },
     {
@@ -532,6 +577,56 @@
           "fa": "۹۹ - نود و نه"
         }
       ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-1",
+      "word": "einundzwanzig",
+      "translation": "بیست و یک (۲۱)",
+      "syllables": ["ein", "und", "zwan", "zig"],
+      "distractors": ["eins", "zwein", "sig"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! ein + und + zwanzig = ۲۱ (یکان + und + دهگان)"
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-2",
+      "word": "fünfzig",
+      "translation": "پنجاه (۵۰)",
+      "syllables": ["fünf", "zig"],
+      "distractors": ["funf", "sig", "zehn"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! fünf + zig = fünfzig (۵۰)"
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-3",
+      "word": "hundert",
+      "translation": "صد (۱۰۰)",
+      "syllables": ["hun", "dert"],
+      "distractors": ["hund", "ert", "und"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «hundert» یعنی صد (۱۰۰)"
+      }
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Ich bin dreiundzwanzig Jahre alt.",
+      "translation": "من بیست و سه ساله هستم.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Das kostet fünfzig Euro.",
+      "translation": "این پنجاه یورو است.",
+      "difficulty": "A1"
     },
     {
       "type": "vocab-check",

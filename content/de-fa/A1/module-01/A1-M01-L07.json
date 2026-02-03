@@ -19,6 +19,78 @@
   "lessonNumber": 7,
   "totalSteps": 23,
   "estimatedMinutes": 15,
+  "vocabulary": [
+    {
+      "de": "eins",
+      "fa": "یک (۱)",
+      "grammar": {
+        "pos": "noun"
+      }
+    },
+    {
+      "de": "zwei",
+      "fa": "دو (۲)",
+      "grammar": {
+        "pos": "noun"
+      }
+    },
+    {
+      "de": "drei",
+      "fa": "سه (۳)",
+      "grammar": {
+        "pos": "noun"
+      }
+    },
+    {
+      "de": "vier",
+      "fa": "چهار (۴)",
+      "grammar": {
+        "pos": "noun"
+      }
+    },
+    {
+      "de": "fünf",
+      "fa": "پنج (۵)",
+      "grammar": {
+        "pos": "noun"
+      }
+    },
+    {
+      "de": "sechs",
+      "fa": "شش (۶)",
+      "grammar": {
+        "pos": "noun"
+      }
+    },
+    {
+      "de": "sieben",
+      "fa": "هفت (۷)",
+      "grammar": {
+        "pos": "noun"
+      }
+    },
+    {
+      "de": "acht",
+      "fa": "هشت (۸)",
+      "grammar": {
+        "pos": "noun"
+      }
+    },
+    {
+      "de": "neun",
+      "fa": "نه (۹)",
+      "grammar": {
+        "pos": "noun"
+      }
+    },
+    {
+      "de": "zehn",
+      "fa": "ده (۱۰)",
+      "grammar": {
+        "pos": "noun"
+      }
+    }
+  ],
   "steps": [
     {
       "type": "new-word",
@@ -311,6 +383,11 @@
       "feedback": {
         "correct": "آفرین! هفت = sieben",
         "incorrect": "پاسخ صحیح: sieben (هفت)"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! «sieben» یعنی هفت (۷).",
+        "onWrong": "دقت کنید: sieben = ۷، sechs = ۶، acht = ۸، neun = ۹",
+        "errorCategory": "vocabulary"
       }
     },
     {
@@ -327,6 +404,11 @@
       "feedback": {
         "correct": "آفرین! fünf = پنج",
         "incorrect": "پاسخ صحیح: پنج (۵)"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! «fünf» با ü (او-اوملات) یعنی پنج (۵).",
+        "onWrong": "دقت کنید: fünf = ۵، vier = ۴، sechs = ۶، sieben = ۷",
+        "errorCategory": "vocabulary"
       }
     },
     {
@@ -347,7 +429,12 @@
         "de": "eins, zwei, drei",
         "fa": "یک، دو، سه"
       },
-      "hint": "ترتیب: ۱، ۲، ۳"
+      "hint": "ترتیب: ۱، ۲، ۳",
+      "feedbackTip": {
+        "onCorrect": "آفرین! ترتیب صحیح: eins (۱), zwei (۲), drei (۳)",
+        "onWrong": "دقت کنید: اعداد به ترتیب از کوچک به بزرگ: eins → zwei → drei",
+        "errorCategory": "word-order"
+      }
     },
     {
       "type": "dialog",
@@ -383,6 +470,30 @@
             "fa": "می‌شه هشت یورو."
           }
         }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        {
+          "question": "الی چند قهوه سفارش داد؟",
+          "options": ["یک", "دو", "سه"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: «Zwei Kaffee, bitte.» یعنی دو قهوه.",
+          "relatedLineIndex": 0
+        },
+        {
+          "question": "تام چند کروسان خواست؟",
+          "options": ["دو", "سه", "چهار"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: «drei Croissants» یعنی سه کروسان.",
+          "relatedLineIndex": 2
+        },
+        {
+          "question": "کل سفارش چند یورو شد؟",
+          "options": ["شش یورو", "هشت یورو", "ده یورو"],
+          "correctIndex": 1,
+          "explanation": "گارسون گفت: «Das macht acht Euro.» یعنی هشت یورو.",
+          "relatedLineIndex": 3
+        }
       ]
     },
     {
@@ -402,6 +513,11 @@
       ],
       "feedback": {
         "explanation": "ترتیب اعداد: eins (۱), zwei (۲), **drei** (۳), vier (۴), **fünf** (۵)"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! ترتیب اعداد را درست یاد گرفتید.",
+        "onWrong": "دقت کنید: ۱ = eins, ۲ = zwei, ۳ = drei, ۴ = vier, ۵ = fünf",
+        "errorCategory": "vocabulary"
       }
     },
     {
@@ -465,7 +581,83 @@
       },
       "feedback": {
         "explanation": "درست است! هفت (sieben) بعد از شش (sechs) می‌آید."
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! sechs (۶) → sieben (۷) - ترتیب درست است.",
+        "onWrong": "دقت کنید: ترتیب اعداد: sechs (۶), sieben (۷), acht (۸)",
+        "errorCategory": "vocabulary"
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-1",
+      "word": "sieben",
+      "translation": "هفت (۷)",
+      "syllables": [
+        "sie",
+        "ben"
+      ],
+      "distractors": [
+        "se",
+        "bie",
+        "bein"
+      ],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «sieben» با ie (ای) یعنی هفت."
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-2",
+      "word": "fünf",
+      "translation": "پنج (۵)",
+      "syllables": [
+        "fün",
+        "f"
+      ],
+      "distractors": [
+        "fun",
+        "für",
+        "pf"
+      ],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «fünf» با ü (اوملات) یعنی پنج."
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-3",
+      "word": "sechs",
+      "translation": "شش (۶)",
+      "syllables": [
+        "se",
+        "chs"
+      ],
+      "distractors": [
+        "sch",
+        "ch",
+        "sx"
+      ],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! در «sechs» حروف chs صدای «کس» می‌دهند."
+      }
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Eins, zwei, drei.",
+      "translation": "یک، دو، سه.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Fünf Minuten.",
+      "translation": "پنج دقیقه.",
+      "difficulty": "A1"
     },
     {
       "type": "vocab-check",

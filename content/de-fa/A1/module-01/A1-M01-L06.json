@@ -17,6 +17,71 @@
   "module": 1,
   "lessonNumber": 6,
   "estimatedMinutes": 15,
+  "vocabulary": [
+    {
+      "de": "wohnen",
+      "fa": "زندگی کردن",
+      "grammar": {
+        "pos": "verb",
+        "verb": {
+          "infinitiv": "wohnen",
+          "praesens": {
+            "ich": "wohne",
+            "du": "wohnst",
+            "er_sie_es": "wohnt",
+            "wir": "wohnen",
+            "ihr": "wohnt",
+            "sie_Sie": "wohnen"
+          }
+        }
+      }
+    },
+    {
+      "de": "Wo wohnst du?",
+      "fa": "کجا زندگی می‌کنی؟",
+      "grammar": {
+        "pos": "phrase"
+      }
+    },
+    {
+      "de": "Ich wohne in...",
+      "fa": "من در... زندگی می‌کنم",
+      "grammar": {
+        "pos": "phrase"
+      }
+    },
+    {
+      "de": "Berlin",
+      "fa": "برلین",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "n"
+        }
+      }
+    },
+    {
+      "de": "München",
+      "fa": "مونیخ",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "n"
+        }
+      }
+    },
+    {
+      "de": "die Stadt",
+      "fa": "شهر",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "f",
+          "plural": "Städte"
+        }
+      }
+    }
+  ],
   "steps": [
     {
       "type": "new-word",
@@ -192,6 +257,11 @@
       "correctAnswerIndex": 2,
       "feedback": {
         "explanation": "برای پرسیدن محل زندگی می‌گوییم «Wo wohnst du?» که یعنی «کجا زندگی می‌کنی؟»"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! «Wo» یعنی کجا و «wohnst» از فعل «wohnen» است.",
+        "onWrong": "دقت کنید: «Woher» برای مبدأ و «Wo» برای محل زندگی استفاده می‌شود.",
+        "errorCategory": "vocabulary"
       }
     },
     {
@@ -210,6 +280,11 @@
       ],
       "feedback": {
         "explanation": "با «ich» می‌گوییم «wohne». الگو: ich → فعل با -e"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! با «ich» فعل به «-e» ختم می‌شود: ich wohne.",
+        "onWrong": "دقت کنید: الگوی صرف فعل با ich → فعل + e → wohne",
+        "errorCategory": "wrong-conjugation"
       }
     },
     {
@@ -228,6 +303,11 @@
       ],
       "feedback": {
         "explanation": "با «du» می‌گوییم «wohnst». الگو: du → فعل با -st"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! با «du» فعل به «-st» ختم می‌شود: du wohnst.",
+        "onWrong": "دقت کنید: الگوی صرف فعل با du → فعل + st → wohnst",
+        "errorCategory": "wrong-conjugation"
       }
     },
     {
@@ -249,6 +329,11 @@
       "correctSentence": {
         "de": "Ich wohne in München.",
         "fa": "من در مونیخ زندگی می‌کنم."
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! در آلمانی فعل «wohne» در جایگاه دوم است.",
+        "onWrong": "دقت کنید: در آلمانی فعل همیشه در جایگاه دوم است. ترتیب صحیح: Ich wohne in München.",
+        "errorCategory": "word-order"
       }
     },
     {
@@ -353,7 +438,31 @@
       ],
       "feedback": {
         "explanation": "در این مکالمه الی و تام با هم آشنا می‌شوند. آن‌ها اسم، اصالت (aus) و محل زندگی (in) را می‌پرسند. توجه کنید که «jetzt» یعنی «الان»."
-      }
+      },
+      "questionMode": "post-dialog",
+      "questions": [
+        {
+          "question": "تام اهل کجاست؟",
+          "options": ["آلمان", "ایران", "برلین"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: «Ich komme aus dem Iran.»",
+          "relatedLineIndex": 3
+        },
+        {
+          "question": "الی در کجا زندگی می‌کند؟",
+          "options": ["ایران", "مونیخ", "برلین"],
+          "correctIndex": 2,
+          "explanation": "الی گفت: «Ich wohne in Berlin.»",
+          "relatedLineIndex": 6
+        },
+        {
+          "question": "معنی «Wo wohnst du jetzt?» چیست؟",
+          "options": ["اهل کجایی؟", "الان کجا زندگی می‌کنی؟", "اسمت چیه؟"],
+          "correctIndex": 1,
+          "explanation": "«Wo wohnst du» یعنی کجا زندگی می‌کنی و «jetzt» یعنی الان.",
+          "relatedLineIndex": 5
+        }
+      ]
     },
     {
       "type": "matching",
@@ -423,6 +532,11 @@
       "correctAnswer": true,
       "feedback": {
         "explanation": "درست است! برای محل زندگی از «in» استفاده می‌کنیم: Ich wohne **in** Berlin. (نه «aus»)"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! «in» برای محل زندگی (Ich wohne in...) استفاده می‌شود.",
+        "onWrong": "دقت کنید: «aus» برای مبدأ (اهل کجایی) و «in» برای محل زندگی استفاده می‌شود.",
+        "errorCategory": "vocabulary"
       }
     },
     {
@@ -443,6 +557,11 @@
       "correctTranslation": {
         "de": "Ich wohne in München.",
         "fa": "من در مونیخ زندگی می‌کنم."
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! «Ich wohne in München» یعنی من در مونیخ زندگی می‌کنم.",
+        "onWrong": "دقت کنید: فعل «wohne» برای زندگی کردن و حرف اضافه «in» برای محل استفاده می‌شود.",
+        "errorCategory": "vocabulary"
       }
     },
     {
@@ -462,12 +581,53 @@
       "instruction": "قطعات را کنار هم بگذارید"
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-2",
+      "word": "Berlin",
+      "translation": "برلین",
+      "syllables": [
+        "Ber",
+        "lin"
+      ],
+      "distractors": [
+        "Ham",
+        "burg"
+      ],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! برلین پایتخت آلمان است."
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-3",
+      "word": "München",
+      "translation": "مونیخ",
+      "syllables": [
+        "Mün",
+        "chen"
+      ],
+      "distractors": [
+        "Köln",
+        "burg"
+      ],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! مونیخ بزرگ‌ترین شهر جنوب آلمان است."
+      }
+    },
+    {
       "type": "spelling",
       "id": "s17",
       "word": "wohnen",
       "translation": "زندگی کردن",
       "hint": "وُنِن",
-      "instruction": "این کلمه را تایپ کنید"
+      "instruction": "این کلمه را تایپ کنید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «wohnen» یعنی زندگی کردن.",
+        "onWrong": "دقت کنید: w-o-h-n-e-n - حرف «h» بعد از «o» ساکت است.",
+        "errorCategory": "spelling"
+      }
     },
     {
       "type": "multiple-choice",
@@ -482,6 +642,11 @@
       "correctAnswerIndex": 1,
       "feedback": {
         "explanation": "«Ich wohne in Berlin.» یعنی «من در برلین زندگی می‌کنم.» برای محل زندگی از «wohne in» استفاده می‌کنیم."
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! «wohnen» برای محل زندگی و «kommen» برای مبدأ استفاده می‌شود.",
+        "onWrong": "دقت کنید: «wohne in» = زندگی می‌کنم در، «komme aus» = اهل هستم.",
+        "errorCategory": "vocabulary"
       }
     },
     {
@@ -499,7 +664,45 @@
       ],
       "feedback": {
         "explanation": "«aus» برای مبدأ و «in» برای محل زندگی: Ich komme **aus** München und wohne **in** Berlin."
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! «aus» برای مبدأ (من اهل...) و «in» برای محل زندگی (من در... زندگی می‌کنم).",
+        "onWrong": "دقت کنید: «aus» + شهر = اهل آن شهر، «in» + شهر = ساکن آن شهر",
+        "errorCategory": "vocabulary"
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-4",
+      "word": "die Stadt",
+      "translation": "شهر",
+      "syllables": [
+        "die",
+        "Stadt"
+      ],
+      "distractors": [
+        "der",
+        "Stat",
+        "das"
+      ],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «die Stadt» یعنی شهر. توجه کنید که «Stadt» با دو «t» نوشته می‌شود."
+      }
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Ich wohne in Berlin.",
+      "translation": "من در برلین زندگی می‌کنم.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Wo wohnst du?",
+      "translation": "کجا زندگی می‌کنی؟",
+      "difficulty": "A1"
     },
     {
       "type": "vocab-check",

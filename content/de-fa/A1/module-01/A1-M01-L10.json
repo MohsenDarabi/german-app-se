@@ -19,6 +19,14 @@
   "lessonNumber": 10,
   "totalSteps": 22,
   "estimatedMinutes": 15,
+  "vocabulary": [
+    { "de": "null", "fa": "صفر (۰)", "grammar": { "pos": "noun" } },
+    { "de": "die Telefonnummer", "fa": "شماره تلفن", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Telefonnummern" } } },
+    { "de": "die Nummer", "fa": "شماره", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Nummern" } } },
+    { "de": "das Handy", "fa": "موبایل / گوشی", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "Handys" } } },
+    { "de": "anrufen", "fa": "زنگ زدن / تماس گرفتن", "grammar": { "pos": "verb", "verb": { "infinitiv": "anrufen" } } },
+    { "de": "die Vorwahl", "fa": "پیش‌شماره / کد منطقه", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Vorwahlen" } } }
+  ],
   "steps": [
     {
       "type": "new-word",
@@ -290,6 +298,23 @@
             "fa": "ممنون! بهت زنگ می‌زنم."
           }
         }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        {
+          "question": "شماره موبایل تام با چه رقمی شروع می‌شود؟",
+          "options": ["یک", "صفر", "سه"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: «0171...» که با صفر (null) شروع می‌شود.",
+          "relatedLineIndex": 1
+        },
+        {
+          "question": "معنی «Ich rufe dich an» چیست؟",
+          "options": ["بهت زنگ می‌زنم", "شماره‌ات چیه", "تکرار کن"],
+          "correctIndex": 0,
+          "explanation": "«anrufen» یعنی زنگ زدن. «Ich rufe dich an» = بهت زنگ می‌زنم.",
+          "relatedLineIndex": 4
+        }
       ]
     },
     {
@@ -306,6 +331,11 @@
       "feedback": {
         "correct": "آفرین! Handy (موبایل) + Nummer (شماره) = Handynummer",
         "incorrect": "پاسخ صحیح: Handynummer (شماره موبایل)"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! Handy + Nummer = Handynummer (شماره موبایل)",
+        "onWrong": "دقت کنید: Telefonnummer=شماره تلفن، Handynummer=شماره موبایل",
+        "errorCategory": "vocabulary"
       }
     },
     {
@@ -322,6 +352,11 @@
       "feedback": {
         "correct": "آفرین! null = صفر (۰)",
         "incorrect": "پاسخ صحیح: null (صفر)"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! «null» با تلفظ نُول یعنی صفر.",
+        "onWrong": "دقت کنید: null=صفر، eins=یک، nein=نه (منفی)",
+        "errorCategory": "vocabulary"
       }
     },
     {
@@ -340,6 +375,11 @@
       ],
       "feedback": {
         "explanation": "Was ist deine **Telefonnummer**? = شماره تلفنت چیست؟"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! «Was ist deine Telefonnummer?» سوال رایج برای پرسیدن شماره است.",
+        "onWrong": "دقت کنید: برای پرسیدن شماره می‌گوییم: Was ist deine Telefonnummer?",
+        "errorCategory": "vocabulary"
       }
     },
     {
@@ -414,6 +454,11 @@
       },
       "feedback": {
         "explanation": "درست است! پیش‌شماره برلین 030 (null drei null) است."
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! Vorwahl برلین = 030 (null drei null)",
+        "onWrong": "دقت کنید: پیش‌شماره برلین 030 است.",
+        "errorCategory": "vocabulary"
       }
     },
     {
@@ -450,6 +495,23 @@
             "fa": "خوبم، ممنون. یه زنگ کوتاه می‌زنم."
           }
         }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        {
+          "question": "چه کسی تماس گرفت؟",
+          "options": ["الی", "تام", "نامشخص"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: «hier ist Tom» یعنی تام زنگ زده.",
+          "relatedLineIndex": 1
+        },
+        {
+          "question": "معنی «hier ist Tom» چیست؟",
+          "options": ["تام کجاست؟", "تام هستم", "تام آمد"],
+          "correctIndex": 1,
+          "explanation": "در تماس تلفنی «hier ist...» یعنی «من... هستم».",
+          "relatedLineIndex": 1
+        }
       ]
     },
     {
@@ -469,7 +531,50 @@
       ],
       "feedback": {
         "explanation": "Ich **rufe** dich morgen **an**. = فردا بهت زنگ می‌زنم. (فعل جداشدنی: anrufen)"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! «anrufen» یک فعل جداشدنی است: Ich rufe...an",
+        "onWrong": "دقت کنید: فعل anrufen جدا می‌شود: rufe در جایگاه دوم، an در آخر.",
+        "errorCategory": "vocabulary"
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-1",
+      "word": "Telefonnummer",
+      "translation": "شماره تلفن",
+      "syllables": ["Te", "le", "fon", "num", "mer"],
+      "distractors": ["Tele", "fohn", "mum"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! Telefon + Nummer = Telefonnummer"
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-2",
+      "word": "anrufen",
+      "translation": "زنگ زدن",
+      "syllables": ["an", "ru", "fen"],
+      "distractors": ["auf", "ruf", "fan"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «anrufen» یک فعل جداشدنی است."
+      }
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Was ist deine Telefonnummer?",
+      "translation": "شماره تلفنت چیست؟",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Ich rufe dich an.",
+      "translation": "بهت زنگ می‌زنم.",
+      "difficulty": "A1"
     },
     {
       "type": "vocab-check",
