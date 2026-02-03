@@ -49,7 +49,6 @@
   let repeatCount = 0;
   let showFeedback = false;
   let isCorrect = false;
-  let similarity = 0;
   let isPlaying = false;
 
   async function playAudio() {
@@ -68,8 +67,16 @@
   }
 
   function checkAnswer() {
-    similarity = calculateSimilarity(userInput.trim(), step.targetText);
-    isCorrect = similarity >= config.acceptThreshold;
+    // Normalize both strings for comparison (ignore punctuation and case)
+    const normalizedInput = normalizeText(userInput);
+    const normalizedTarget = normalizeText(step.targetText);
+
+    // Check for exact match (after normalization)
+    isCorrect = normalizedInput === normalizedTarget;
+
+    // Track if only punctuation is different (for showing "پاسخ کامل")
+    const onlyPunctuationDiff = isCorrect && userInput.trim() !== step.targetText;
+
     showFeedback = true;
 
     dispatch('answer', {
@@ -80,45 +87,13 @@
     });
   }
 
-  // Levenshtein distance for similarity calculation
-  function calculateSimilarity(input: string, target: string): number {
-    const inputLower = input.toLowerCase().trim();
-    const targetLower = target.toLowerCase().trim();
-
-    if (inputLower === targetLower) return 1;
-    if (inputLower.length === 0 || targetLower.length === 0) return 0;
-
-    const distance = levenshteinDistance(inputLower, targetLower);
-    const maxLen = Math.max(inputLower.length, targetLower.length);
-    return 1 - (distance / maxLen);
-  }
-
-  function levenshteinDistance(a: string, b: string): number {
-    const matrix: number[][] = [];
-
-    for (let i = 0; i <= b.length; i++) {
-      matrix[i] = [i];
-    }
-
-    for (let j = 0; j <= a.length; j++) {
-      matrix[0][j] = j;
-    }
-
-    for (let i = 1; i <= b.length; i++) {
-      for (let j = 1; j <= a.length; j++) {
-        if (b.charAt(i - 1) === a.charAt(j - 1)) {
-          matrix[i][j] = matrix[i - 1][j - 1];
-        } else {
-          matrix[i][j] = Math.min(
-            matrix[i - 1][j - 1] + 1, // substitution
-            matrix[i][j - 1] + 1,     // insertion
-            matrix[i - 1][j] + 1      // deletion
-          );
-        }
-      }
-    }
-
-    return matrix[b.length][a.length];
+  // Normalize text: lowercase, remove punctuation, trim
+  function normalizeText(text: string): string {
+    return text
+      .toLowerCase()
+      .trim()
+      .replace(/[.!?،؟]+/g, '') // Remove common punctuation (German and Persian)
+      .replace(/\s+/g, ' ');     // Normalize whitespace
   }
 
   function retry() {
@@ -207,15 +182,15 @@
       {#if isCorrect}
         <div class="feedback-header">
           <span class="feedback-icon">✅</span>
-          <p class="result">آفرین! {Math.round(similarity * 100)}% درست</p>
+          <p class="result">آفرین!</p>
         </div>
-        {#if similarity < 1}
+        {#if userInput.trim() !== step.targetText}
           <p class="correct-answer" dir="ltr">پاسخ کامل: <strong>{step.targetText}</strong></p>
         {/if}
       {:else}
         <div class="feedback-header">
           <span class="feedback-icon">❌</span>
-          <p class="result">دقت کنید! {Math.round(similarity * 100)}% شباهت</p>
+          <p class="result">اشتباه!</p>
         </div>
         <p class="correct-answer" dir="ltr">پاسخ صحیح: <strong>{step.targetText}</strong></p>
         <p class="translation-hint">معنی: {step.translation}</p>
