@@ -82,9 +82,10 @@
 
   function checkAnswer() {
     const builtWord = selectedSyllables.map(s => s.syllable).join('');
-    // Compare without spaces (for multi-word phrases like "Guten Tag")
-    const expectedWord = step.word.replace(/\s+/g, '');
-    isCorrect = builtWord === expectedWord;
+    // Compare without spaces and punctuation (for phrases like "Wie heißt du?")
+    const normalizeForComparison = (str: string) => str.replace(/[\s.!?،؟]+/g, '');
+    const expectedWord = normalizeForComparison(step.word);
+    isCorrect = normalizeForComparison(builtWord) === expectedWord;
 
     if (isCorrect) {
       dispatch('answer', {
