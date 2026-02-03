@@ -17,8 +17,73 @@
   "level": "A1",
   "module": 2,
   "lessonNumber": 2,
-  "totalSteps": 25,
+  "totalSteps": 29,
   "estimatedMinutes": 15,
+  "vocabulary": [
+    {
+      "word": "machen",
+      "translation": "انجام دادن / درست کردن",
+      "pos": "verb",
+      "verb": {
+        "type": "regular",
+        "conjugation": {
+          "ich": "mache",
+          "du": "machst",
+          "er/sie/es": "macht"
+        }
+      }
+    },
+    {
+      "word": "spielen",
+      "translation": "بازی کردن",
+      "pos": "verb",
+      "verb": {
+        "type": "regular",
+        "conjugation": {
+          "ich": "spiele",
+          "du": "spielst",
+          "er/sie/es": "spielt"
+        }
+      }
+    },
+    {
+      "word": "lernen",
+      "translation": "یاد گرفتن",
+      "pos": "verb",
+      "verb": {
+        "type": "regular",
+        "conjugation": {
+          "ich": "lerne",
+          "du": "lernst",
+          "er/sie/es": "lernt"
+        }
+      }
+    },
+    {
+      "word": "arbeiten",
+      "translation": "کار کردن",
+      "pos": "verb",
+      "verb": {
+        "type": "regular",
+        "conjugation": {
+          "ich": "arbeite",
+          "du": "arbeitest",
+          "er/sie/es": "arbeitet"
+        },
+        "note": "stem ends in -t, needs extra -e-"
+      }
+    },
+    {
+      "word": "heute",
+      "translation": "امروز",
+      "pos": "adverb"
+    },
+    {
+      "word": "jeden Tag",
+      "translation": "هر روز",
+      "pos": "phrase"
+    }
+  ],
   "steps": [
     {
       "type": "grammar-tip",
@@ -175,6 +240,18 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-1",
+      "word": "spielen",
+      "translation": "بازی کردن",
+      "syllables": ["spie", "len"],
+      "distractors": ["spi", "elen", "piel"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «spielen» (بازی کردن) یک فعل باقاعده است."
+      }
+    },
+    {
       "type": "new-word",
       "id": "s8",
       "word": {
@@ -200,6 +277,18 @@
           "de": "Er arbeitet viel.",
           "fa": "او زیاد کار می‌کند."
         }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-2",
+      "word": "arbeiten",
+      "translation": "کار کردن",
+      "syllables": ["ar", "bei", "ten"],
+      "distractors": ["arb", "bet", "eit"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «arbeiten» فعل باقاعده است ولی چون ریشه به t ختم می‌شود، یک e اضافی می‌گیرد."
       }
     },
     {
@@ -275,7 +364,10 @@
           "i4",
           "m4"
         ]
-      ]
+      ],
+      "feedbackTip": {
+        "onCorrect": "آفرین! فعل spielen هم مثل همه فعل‌های باقاعده صرف می‌شود: ich -e، du -st، er/sie/es -t"
+      }
     },
     {
       "type": "dialog",
@@ -332,7 +424,31 @@
             "fa": "آره، در کافه کار می‌کنم."
           }
         }
-      ]
+      ],
+      "questions": [
+        {
+          "question": "تام الان چه کار می‌کند؟",
+          "options": ["گیتار می‌زند", "آلمانی یاد می‌گیرد", "کار می‌کند"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: «Ich lerne Deutsch» یعنی آلمانی یاد می‌گیرم.",
+          "relatedLineIndex": 1
+        },
+        {
+          "question": "الی کجا کار می‌کند؟",
+          "options": ["در دفتر", "در کافه", "در مدرسه"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: «Ich arbeite im Café» یعنی در کافه کار می‌کنم.",
+          "relatedLineIndex": 6
+        },
+        {
+          "question": "الی هر روز چه کار می‌کند؟",
+          "options": ["آلمانی یاد می‌گیرد", "گیتار می‌زند", "فوتبال بازی می‌کند"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: «Ich spiele jeden Tag» یعنی هر روز (گیتار) می‌زنم.",
+          "relatedLineIndex": 4
+        }
+      ],
+      "questionMode": "post-dialog"
     },
     {
       "type": "multiple-choice",
@@ -345,9 +461,10 @@
         "lernen"
       ],
       "correctAnswerIndex": 1,
-      "feedback": {
-        "correct": "آفرین! du lernst = تو یاد می‌گیری",
-        "incorrect": "پاسخ صحیح: du lernst (تو یاد می‌گیری)"
+      "feedbackTip": {
+        "onCorrect": "آفرین! du lernst = تو یاد می‌گیری (پسوند -st)",
+        "onWrong": "با du از پسوند -st استفاده می‌کنیم: du lernst",
+        "errorCategory": "verb-conjugation"
       }
     },
     {
@@ -361,9 +478,10 @@
         "arbeiten"
       ],
       "correctAnswerIndex": 2,
-      "feedback": {
-        "correct": "آفرین! er arbeitet = او کار می‌کند",
-        "incorrect": "پاسخ صحیح: er arbeitet (او کار می‌کند)"
+      "feedbackTip": {
+        "onCorrect": "آفرین! er arbeitet = او کار می‌کند (با e اضافی چون ریشه به t ختم می‌شود)",
+        "onWrong": "با er از پسوند -t استفاده می‌کنیم، ولی arbeiten چون به t ختم می‌شود e اضافی می‌گیرد: arbeitet",
+        "errorCategory": "verb-conjugation"
       }
     },
     {
@@ -380,8 +498,10 @@
       "correctAnswers": [
         0
       ],
-      "feedback": {
-        "explanation": "Ich **spiele** Fußball. = من فوتبال بازی می‌کنم."
+      "feedbackTip": {
+        "onCorrect": "آفرین! Ich spiele Fußball = من فوتبال بازی می‌کنم.",
+        "onWrong": "با ich از پسوند -e استفاده می‌کنیم: ich spiele",
+        "errorCategory": "verb-conjugation"
       }
     },
     {
@@ -398,8 +518,10 @@
       "correctAnswers": [
         2
       ],
-      "feedback": {
-        "explanation": "Sie **arbeitet** im Büro. = او در دفتر کار می‌کند."
+      "feedbackTip": {
+        "onCorrect": "آفرین! Sie arbeitet im Büro = او در دفتر کار می‌کند.",
+        "onWrong": "با sie (سوم شخص) از پسوند -t استفاده می‌کنیم، با e اضافی: arbeitet",
+        "errorCategory": "verb-conjugation"
       }
     },
     {
@@ -482,8 +604,9 @@
         },
         "translation": "او فوتبال بازی می‌کنی. (غلط!)"
       },
-      "feedback": {
-        "explanation": "غلط! فرم درست: Er **spielt** Fußball. (با er از پسوند -t استفاده می‌کنیم)"
+      "feedbackTip": {
+        "onCorrect": "آفرین! جمله غلط است چون spielst فرم du است، نه er.",
+        "onWrong": "جمله غلط است! فرم درست: Er spielt Fußball (با er از -t استفاده می‌کنیم)"
       }
     },
     {
@@ -497,6 +620,26 @@
           "fa": "من می‌کنم، تو می‌کنی، او می‌کند."
         }
       ]
+    },
+    {
+      "type": "dictation",
+      "id": "d1",
+      "targetText": "Ich lerne Deutsch.",
+      "translation": "من آلمانی یاد می‌گیرم.",
+      "difficulty": "A1",
+      "feedbackTip": {
+        "onCorrect": "آفرین! ich lerne با پسوند -e برای اول شخص."
+      }
+    },
+    {
+      "type": "dictation",
+      "id": "d2",
+      "targetText": "Was machst du heute?",
+      "translation": "امروز چه کار می‌کنی؟",
+      "difficulty": "A1",
+      "feedbackTip": {
+        "onCorrect": "آفرین! du machst با پسوند -st برای دوم شخص."
+      }
     },
     {
       "type": "vocab-check",

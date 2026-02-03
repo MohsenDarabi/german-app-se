@@ -17,8 +17,38 @@
   "level": "A1",
   "module": 2,
   "lessonNumber": 1,
-  "totalSteps": 24,
+  "totalSteps": 27,
   "estimatedMinutes": 15,
+  "vocabulary": [
+    {
+      "word": "sein",
+      "translation": "بودن",
+      "pos": "verb",
+      "verb": {
+        "type": "auxiliary",
+        "conjugation": {
+          "ich": "bin",
+          "du": "bist",
+          "er/sie/es": "ist"
+        },
+        "irregular": true
+      }
+    },
+    {
+      "word": "haben",
+      "translation": "داشتن",
+      "pos": "verb",
+      "verb": {
+        "type": "auxiliary",
+        "conjugation": {
+          "ich": "habe",
+          "du": "hast",
+          "er/sie/es": "hat"
+        },
+        "irregular": true
+      }
+    }
+  ],
   "steps": [
     {
       "type": "grammar-tip",
@@ -175,6 +205,18 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-1",
+      "word": "haben",
+      "translation": "داشتن",
+      "syllables": ["ha", "ben"],
+      "distractors": ["hab", "be", "hen"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «haben» یعنی داشتن - یکی از مهم‌ترین فعل‌های آلمانی."
+      }
+    },
+    {
       "type": "new-word",
       "id": "s9",
       "word": {
@@ -303,7 +345,10 @@
           "i4",
           "m4"
         ]
-      ]
+      ],
+      "feedbackTip": {
+        "onCorrect": "آفرین! فعل sein برای هر سه ضمیر سوم شخص (er/sie/es) یکسان است: ist"
+      }
     },
     {
       "type": "dialog",
@@ -353,7 +398,31 @@
             "fa": "آره، خیلی گرسنه‌ام!"
           }
         }
-      ]
+      ],
+      "questions": [
+        {
+          "question": "تام امروز چه حسی دارد؟",
+          "options": ["غمگین", "خوشحال", "خسته"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: «Ich bin heute sehr glücklich» یعنی خیلی خوشحالم.",
+          "relatedLineIndex": 1
+        },
+        {
+          "question": "آیا تام وقت دارد؟",
+          "options": ["بله، وقت دارد", "نه، وقت ندارد", "معلوم نیست"],
+          "correctIndex": 0,
+          "explanation": "تام گفت: «Ja, ich habe Zeit» یعنی آره، وقت دارم.",
+          "relatedLineIndex": 3
+        },
+        {
+          "question": "تام گرسنه است؟",
+          "options": ["نه، گرسنه نیست", "بله، خیلی گرسنه است", "کمی گرسنه است"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: «Ich bin sehr hungrig» یعنی خیلی گرسنه‌ام.",
+          "relatedLineIndex": 5
+        }
+      ],
+      "questionMode": "post-dialog"
     },
     {
       "type": "multiple-choice",
@@ -366,9 +435,10 @@
         "habe"
       ],
       "correctAnswerIndex": 2,
-      "feedback": {
-        "correct": "آفرین! ich bin = من هستم",
-        "incorrect": "پاسخ صحیح: ich bin (من هستم)"
+      "feedbackTip": {
+        "onCorrect": "آفرین! ich bin = من هستم",
+        "onWrong": "با ich از bin استفاده می‌کنیم: ich bin",
+        "errorCategory": "verb-conjugation"
       }
     },
     {
@@ -382,9 +452,10 @@
         "bist"
       ],
       "correctAnswerIndex": 1,
-      "feedback": {
-        "correct": "آفرین! du hast = تو داری",
-        "incorrect": "پاسخ صحیح: du hast (تو داری)"
+      "feedbackTip": {
+        "onCorrect": "آفرین! du hast = تو داری",
+        "onWrong": "با du از hast استفاده می‌کنیم: du hast",
+        "errorCategory": "verb-conjugation"
       }
     },
     {
@@ -401,8 +472,10 @@
       "correctAnswers": [
         2
       ],
-      "feedback": {
-        "explanation": "Sie **ist** aus Deutschland. = او از آلمان است."
+      "feedbackTip": {
+        "onCorrect": "آفرین! Sie ist aus Deutschland. = او از آلمان است.",
+        "onWrong": "با sie (سوم شخص مفرد) از ist استفاده می‌کنیم",
+        "errorCategory": "verb-conjugation"
       }
     },
     {
@@ -419,8 +492,10 @@
       "correctAnswers": [
         3
       ],
-      "feedback": {
-        "explanation": "Er **hat** einen Bruder. = او یک برادر دارد."
+      "feedbackTip": {
+        "onCorrect": "آفرین! Er hat einen Bruder. = او یک برادر دارد.",
+        "onWrong": "با er از hat استفاده می‌کنیم (فعل haben)",
+        "errorCategory": "verb-conjugation"
       }
     },
     {
@@ -476,8 +551,9 @@
         },
         "translation": "تو دوست من هستی."
       },
-      "feedback": {
-        "explanation": "درست است! Du bist = تو هستی"
+      "feedbackTip": {
+        "onCorrect": "آفرین! Du bist = تو هستی (فعل sein)",
+        "onWrong": "جمله درست است: Du bist mein Freund = تو دوست من هستی"
       }
     },
     {
@@ -495,6 +571,26 @@
           "fa": "تشنه‌ام."
         }
       ]
+    },
+    {
+      "type": "dictation",
+      "id": "d1",
+      "targetText": "Ich bin müde.",
+      "translation": "من خسته‌ام.",
+      "difficulty": "A1",
+      "feedbackTip": {
+        "onCorrect": "آفرین! ich bin برای «من هستم» استفاده می‌شود."
+      }
+    },
+    {
+      "type": "dictation",
+      "id": "d2",
+      "targetText": "Hast du Zeit?",
+      "translation": "وقت داری؟",
+      "difficulty": "A1",
+      "feedbackTip": {
+        "onCorrect": "آفرین! du hast برای «تو داری» استفاده می‌شود."
+      }
     },
     {
       "type": "vocab-check",

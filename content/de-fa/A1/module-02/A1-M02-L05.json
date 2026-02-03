@@ -17,8 +17,52 @@
   "level": "A1",
   "module": 2,
   "lessonNumber": 5,
-  "totalSteps": 26,
+  "totalSteps": 30,
   "estimatedMinutes": 15,
+  "vocabulary": [
+    {
+      "word": "können",
+      "translation": "توانستن",
+      "pos": "verb",
+      "verb": {
+        "type": "modal",
+        "conjugation": {
+          "ich": "kann",
+          "du": "kannst",
+          "er/sie/es": "kann",
+          "wir": "können"
+        }
+      }
+    },
+    {
+      "word": "wollen",
+      "translation": "خواستن",
+      "pos": "verb",
+      "verb": {
+        "type": "modal",
+        "conjugation": {
+          "ich": "will",
+          "du": "willst",
+          "er/sie/es": "will",
+          "wir": "wollen"
+        }
+      }
+    },
+    {
+      "word": "müssen",
+      "translation": "باید / مجبور بودن",
+      "pos": "verb",
+      "verb": {
+        "type": "modal",
+        "conjugation": {
+          "ich": "muss",
+          "du": "musst",
+          "er/sie/es": "muss",
+          "wir": "müssen"
+        }
+      }
+    }
+  ],
   "steps": [
     {
       "type": "grammar-tip",
@@ -48,6 +92,18 @@
           "de": "Kannst du schwimmen?",
           "fa": "شنا بلدی؟"
         }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-1",
+      "word": "können",
+      "translation": "توانستن",
+      "syllables": ["kön", "nen"],
+      "distractors": ["kan", "könn", "kon"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «können» یک فعل کمکی مهم است که یعنی توانستن."
       }
     },
     {
@@ -233,6 +289,18 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-2",
+      "word": "müssen",
+      "translation": "باید / مجبور بودن",
+      "syllables": ["müs", "sen"],
+      "distractors": ["mus", "müss", "mes"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «müssen» یعنی باید یا مجبور بودن."
+      }
+    },
+    {
       "type": "new-word",
       "id": "s13",
       "word": {
@@ -335,7 +403,10 @@
           "i3",
           "m3"
         ]
-      ]
+      ],
+      "feedbackTip": {
+        "onCorrect": "آفرین! سه فعل کمکی اصلی: können (توانستن)، wollen (خواستن)، müssen (باید)"
+      }
     },
     {
       "type": "dialog",
@@ -378,7 +449,31 @@
             "fa": "آره، یکشنبه می‌توانم!"
           }
         }
-      ]
+      ],
+      "questions": [
+        {
+          "question": "تام آخر هفته چه کاری می‌خواهد بکند؟",
+          "options": ["به کار برود", "به سینما برود", "بخوابد"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: «Ich will ins Kino gehen» یعنی می‌خواهم به سینما بروم.",
+          "relatedLineIndex": 1
+        },
+        {
+          "question": "چرا الی شنبه نمی‌تواند بیاید؟",
+          "options": ["خسته است", "باید کار کند", "بیمار است"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: «Ich muss am Samstag arbeiten» یعنی شنبه باید کار کنم.",
+          "relatedLineIndex": 2
+        },
+        {
+          "question": "الی چه روزی می‌تواند بیاید؟",
+          "options": ["شنبه", "یکشنبه", "هیچ‌وقت"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: «Am Sonntag kann ich» یعنی یکشنبه می‌توانم.",
+          "relatedLineIndex": 4
+        }
+      ],
+      "questionMode": "post-dialog"
     },
     {
       "type": "grammar-tip",
@@ -407,9 +502,10 @@
         "Schwimmen ich kann."
       ],
       "correctAnswerIndex": 1,
-      "feedback": {
-        "correct": "آفرین! فعل کمکی در جایگاه دوم و فعل اصلی در آخر.",
-        "incorrect": "پاسخ صحیح: Ich kann schwimmen. (فعل کمکی دوم، فعل اصلی آخر)"
+      "feedbackTip": {
+        "onCorrect": "آفرین! فعل کمکی در جایگاه دوم و فعل اصلی در آخر جمله.",
+        "onWrong": "ترتیب درست: فاعل + فعل کمکی + ... + فعل اصلی. پس: Ich kann schwimmen",
+        "errorCategory": "word-order"
       }
     },
     {
@@ -426,8 +522,10 @@
       "correctAnswers": [
         0
       ],
-      "feedback": {
-        "explanation": "Er **kann** Gitarre spielen. = او می‌تواند گیتار بزند."
+      "feedbackTip": {
+        "onCorrect": "آفرین! Er kann Gitarre spielen = او می‌تواند گیتار بزند.",
+        "onWrong": "با er از kann استفاده می‌کنیم (ich و er یکسان هستند)",
+        "errorCategory": "verb-conjugation"
       }
     },
     {
@@ -444,8 +542,10 @@
       "correctAnswers": [
         1
       ],
-      "feedback": {
-        "explanation": "Wir **wollen** fahren. = ما می‌خواهیم برویم."
+      "feedbackTip": {
+        "onCorrect": "آفرین! Wir wollen fahren = ما می‌خواهیم برویم.",
+        "onWrong": "با wir از wollen استفاده می‌کنیم",
+        "errorCategory": "verb-conjugation"
       }
     },
     {
@@ -485,6 +585,26 @@
           "correctSide": "right"
         }
       ]
+    },
+    {
+      "type": "dictation",
+      "id": "d1",
+      "targetText": "Ich kann Deutsch sprechen.",
+      "translation": "من می‌توانم آلمانی صحبت کنم.",
+      "difficulty": "A1",
+      "feedbackTip": {
+        "onCorrect": "آفرین! توجه کنید که فعل اصلی (sprechen) در آخر جمله است."
+      }
+    },
+    {
+      "type": "dictation",
+      "id": "d2",
+      "targetText": "Du musst jetzt gehen.",
+      "translation": "تو باید الان بروی.",
+      "difficulty": "A1",
+      "feedbackTip": {
+        "onCorrect": "آفرین! müssen برای اجبار استفاده می‌شود."
+      }
     },
     {
       "type": "vocab-check",

@@ -337,30 +337,46 @@ Conversation between speakers with questions, narratives, and scene support.
 
 ## 10. syllable-spelling (NEW)
 
-Scaffolded spelling with syllable hints - reduces cognitive load.
+Scaffolded spelling with syllable hints - reduces cognitive load. **REQUIRED** for vocabulary reinforcement.
 
 ```json
 {
   "type": "syllable-spelling",
   "id": "syllable-1",
-  "word": {
-    "de": "Guten Morgen",
-    "fa": "صبح بخیر"
-  },
-  "syllables": ["Gu", "ten", "Mor", "gen"],
-  "hint": "۴ بخش - سلام صبحگاهی"
+  "word": "sieben",
+  "translation": "هفت (۷)",
+  "syllables": ["sie", "ben"],
+  "distractors": ["se", "bie", "bein"],
+  "instruction": "قطعات را کنار هم بگذارید",
+  "feedbackTip": {
+    "onCorrect": "آفرین! «sieben» با ie (ای) یعنی هفت."
+  }
 }
 ```
 
 | Field | Required | Description |
 |-------|----------|-------------|
-| `word` | Yes | Bilingual word/phrase |
-| `syllables` | Yes | Array of syllable chunks |
-| `hint` | No | Persian hint with syllable count |
+| `word` | Yes | German word/phrase (string) |
+| `translation` | Yes | Persian translation |
+| `syllables` | Yes | Array of syllable chunks (correct pieces) |
+| `distractors` | **Yes** | 2-4 wrong syllables to increase challenge |
+| `instruction` | No | Persian instruction (default: "قطعات را کنار هم بگذارید") |
+| `feedbackTip` | No | Feedback object with `onCorrect`, `onWrong` |
+
+**Distractors Guidelines:**
+- Use 2-4 distractors per word
+- Make them phonetically similar but wrong: `"bie"` vs correct `"ben"`
+- Include common misspellings: `"se"` vs correct `"sie"`
+- For compound words, use partial syllables: `"zehn"` → `"zeh"`, `"ehn"`
+
+**Audio Integration:**
+- Audio is automatically generated via `generate-audio.js`
+- Uses audioId pattern: `{step.id}-word` (e.g., `syllable-1-word`)
+- Audio is preloaded with the lesson via `getLessonAudioHashes()`
 
 **Pedagogical Note**: Based on Miller's Chunking Theory - learners process 3-4 chunks easier than 7+ letters.
 
-**Placement**: After EVERY `new-word` step for vocabulary practice.
+**Placement**: Add 2-4 syllable-spelling steps per lesson for key vocabulary.
 
 ---
 

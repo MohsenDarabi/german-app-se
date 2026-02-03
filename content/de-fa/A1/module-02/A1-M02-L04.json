@@ -17,8 +17,66 @@
   "level": "A1",
   "module": 2,
   "lessonNumber": 4,
-  "totalSteps": 26,
+  "totalSteps": 30,
   "estimatedMinutes": 15,
+  "vocabulary": [
+    {
+      "word": "essen",
+      "translation": "خوردن",
+      "pos": "verb",
+      "verb": {
+        "type": "stem-changing",
+        "stemChange": "e→i",
+        "conjugation": {
+          "ich": "esse",
+          "du": "isst",
+          "er/sie/es": "isst"
+        }
+      }
+    },
+    {
+      "word": "lesen",
+      "translation": "خواندن",
+      "pos": "verb",
+      "verb": {
+        "type": "stem-changing",
+        "stemChange": "e→ie",
+        "conjugation": {
+          "ich": "lese",
+          "du": "liest",
+          "er/sie/es": "liest"
+        }
+      }
+    },
+    {
+      "word": "schlafen",
+      "translation": "خوابیدن",
+      "pos": "verb",
+      "verb": {
+        "type": "stem-changing",
+        "stemChange": "a→ä",
+        "conjugation": {
+          "ich": "schlafe",
+          "du": "schläfst",
+          "er/sie/es": "schläft"
+        }
+      }
+    },
+    {
+      "word": "fahren",
+      "translation": "رفتن (با وسیله نقلیه)",
+      "pos": "verb",
+      "verb": {
+        "type": "stem-changing",
+        "stemChange": "a→ä",
+        "conjugation": {
+          "ich": "fahre",
+          "du": "fährst",
+          "er/sie/es": "fährt"
+        }
+      }
+    }
+  ],
   "steps": [
     {
       "type": "grammar-tip",
@@ -199,6 +257,18 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-1",
+      "word": "schlafen",
+      "translation": "خوابیدن",
+      "syllables": ["schla", "fen"],
+      "distractors": ["schlä", "fan", "scha"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «schlafen» یک فعل با تغییر ریشه است: du schläfst، er schläft"
+      }
+    },
+    {
       "type": "new-word",
       "id": "s11",
       "word": {
@@ -254,6 +324,18 @@
           "de": "Ich fahre mit dem Bus.",
           "fa": "من با اتوبوس می‌روم."
         }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-2",
+      "word": "fahren",
+      "translation": "رفتن (با وسیله)",
+      "syllables": ["fah", "ren"],
+      "distractors": ["fäh", "ran", "far"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «fahren» هم تغییر ریشه دارد: du fährst، er fährt"
       }
     },
     {
@@ -341,7 +423,10 @@
           "i4",
           "m4"
         ]
-      ]
+      ],
+      "feedbackTip": {
+        "onCorrect": "آفرین! این فعل‌ها در du و er/sie/es تغییر ریشه دارند."
+      }
     },
     {
       "type": "dialog",
@@ -391,7 +476,31 @@
             "fa": "نه، با دوچرخه می‌روم."
           }
         }
-      ]
+      ],
+      "questions": [
+        {
+          "question": "تام صبحانه چه می‌خورد؟",
+          "options": ["موسلی", "نان با پنیر", "پیتزا"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: «Ich esse Brot mit Käse» یعنی نان با پنیر می‌خورم.",
+          "relatedLineIndex": 1
+        },
+        {
+          "question": "تام چطور می‌رود سر کار؟",
+          "options": ["با ماشین", "با دوچرخه", "با اتوبوس"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: «Ich fahre mit dem Fahrrad» یعنی با دوچرخه می‌روم.",
+          "relatedLineIndex": 5
+        },
+        {
+          "question": "تام صبح‌ها چه کار می‌کند؟",
+          "options": ["روزنامه می‌خواند", "زیاد می‌خوابد", "ورزش می‌کند"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: «Morgens schlafe ich lange» یعنی صبح‌ها زیاد می‌خوابم.",
+          "relatedLineIndex": 3
+        }
+      ],
+      "questionMode": "post-dialog"
     },
     {
       "type": "multiple-choice",
@@ -404,9 +513,10 @@
         "essen"
       ],
       "correctAnswerIndex": 2,
-      "feedback": {
-        "correct": "آفرین! er isst (e→i در du و er/sie)",
-        "incorrect": "پاسخ صحیح: er isst (تغییر ریشه e→i)"
+      "feedbackTip": {
+        "onCorrect": "آفرین! er isst (تغییر ریشه e→i در du و er/sie/es)",
+        "onWrong": "essen تغییر ریشه دارد: e→i در du و er. پس: er isst",
+        "errorCategory": "stem-change"
       }
     },
     {
@@ -420,9 +530,10 @@
         "lesen"
       ],
       "correctAnswerIndex": 2,
-      "feedback": {
-        "correct": "آفرین! du liest (e→ie در du و er/sie)",
-        "incorrect": "پاسخ صحیح: du liest (تغییر ریشه e→ie)"
+      "feedbackTip": {
+        "onCorrect": "آفرین! du liest (تغییر ریشه e→ie)",
+        "onWrong": "lesen تغییر ریشه دارد: e→ie در du و er. پس: du liest",
+        "errorCategory": "stem-change"
       }
     },
     {
@@ -439,8 +550,10 @@
       "correctAnswers": [
         2
       ],
-      "feedback": {
-        "explanation": "Das Kind **schläft** viel. = بچه زیاد می‌خوابد. (a→ä)"
+      "feedbackTip": {
+        "onCorrect": "آفرین! Das Kind schläft viel = بچه زیاد می‌خوابد (a→ä)",
+        "onWrong": "schlafen تغییر ریشه دارد: a→ä در du و er. پس: das Kind schläft",
+        "errorCategory": "stem-change"
       }
     },
     {
@@ -457,8 +570,10 @@
       "correctAnswers": [
         2
       ],
-      "feedback": {
-        "explanation": "Mein Vater **fährt** jeden Tag Auto. = پدرم هر روز رانندگی می‌کند. (a→ä)"
+      "feedbackTip": {
+        "onCorrect": "آفرین! Mein Vater fährt = پدرم رانندگی می‌کند (a→ä)",
+        "onWrong": "fahren تغییر ریشه دارد: a→ä در du و er. پس: mein Vater fährt",
+        "errorCategory": "stem-change"
       }
     },
     {
@@ -513,8 +628,29 @@
         },
         "translation": "ما کیک می‌خورید. (غلط!)"
       },
-      "feedback": {
-        "explanation": "غلط! فرم درست: Wir **essen** Kuchen. (با wir تغییر ریشه نداریم)"
+      "feedbackTip": {
+        "onCorrect": "آفرین! جمله غلط است چون با wir تغییر ریشه نداریم - wir essen",
+        "onWrong": "جمله غلط است! فرم درست: Wir essen Kuchen (با wir تغییر ریشه نیست)"
+      }
+    },
+    {
+      "type": "dictation",
+      "id": "d1",
+      "targetText": "Er isst einen Apfel.",
+      "translation": "او یک سیب می‌خورد.",
+      "difficulty": "A1",
+      "feedbackTip": {
+        "onCorrect": "آفرین! er isst با تغییر ریشه e→i"
+      }
+    },
+    {
+      "type": "dictation",
+      "id": "d2",
+      "targetText": "Du schläfst zu viel.",
+      "translation": "تو زیادی می‌خوابی.",
+      "difficulty": "A1",
+      "feedbackTip": {
+        "onCorrect": "آفرین! du schläfst با تغییر ریشه a→ä"
       }
     },
     {

@@ -17,8 +17,42 @@
   "level": "A1",
   "module": 2,
   "lessonNumber": 3,
-  "totalSteps": 25,
+  "totalSteps": 29,
   "estimatedMinutes": 15,
+  "vocabulary": [
+    {
+      "word": "wir",
+      "translation": "ما",
+      "pos": "pronoun"
+    },
+    {
+      "word": "ihr",
+      "translation": "شما (غیررسمی جمع)",
+      "pos": "pronoun"
+    },
+    {
+      "word": "sie",
+      "translation": "آن‌ها",
+      "pos": "pronoun",
+      "note": "plural 'they'"
+    },
+    {
+      "word": "Sie",
+      "translation": "شما (رسمی)",
+      "pos": "pronoun",
+      "note": "formal you, always capitalized"
+    },
+    {
+      "word": "zusammen",
+      "translation": "با هم",
+      "pos": "adverb"
+    },
+    {
+      "word": "alle",
+      "translation": "همه",
+      "pos": "pronoun"
+    }
+  ],
   "steps": [
     {
       "type": "grammar-tip",
@@ -223,6 +257,18 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-1",
+      "word": "zusammen",
+      "translation": "با هم",
+      "syllables": ["zu", "sam", "men"],
+      "distractors": ["zus", "am", "nen"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «zusammen» یعنی با هم - کلمه پرکاربردی است!"
+      }
+    },
+    {
       "type": "new-word",
       "id": "s12",
       "word": {
@@ -293,7 +339,10 @@
           "i4",
           "m4"
         ]
-      ]
+      ],
+      "feedbackTip": {
+        "onCorrect": "آفرین! یادتان باشد: ich -e، du -st، wir -en، ihr -t"
+      }
     },
     {
       "type": "dialog",
@@ -336,7 +385,24 @@
             "fa": "عالی! همه با هم بازی می‌کنیم!"
           }
         }
-      ]
+      ],
+      "questions": [
+        {
+          "question": "الکس و دوستانش چه کار می‌کنند؟",
+          "options": ["آلمانی یاد می‌گیرند", "فوتبال بازی می‌کنند", "کار می‌کنند"],
+          "correctIndex": 1,
+          "explanation": "الکس گفت: «Wir spielen Fußball» یعنی ما فوتبال بازی می‌کنیم.",
+          "relatedLineIndex": 1
+        },
+        {
+          "question": "آیا لیزا و تام هم بازی می‌کنند؟",
+          "options": ["بله، آن‌ها هم بازی می‌کنند", "نه، آن‌ها کار می‌کنند", "معلوم نیست"],
+          "correctIndex": 0,
+          "explanation": "الکس گفت: «Ja, sie spielen auch» یعنی آره، آن‌ها هم بازی می‌کنند.",
+          "relatedLineIndex": 3
+        }
+      ],
+      "questionMode": "post-dialog"
     },
     {
       "type": "multiple-choice",
@@ -349,9 +415,10 @@
         "lernen"
       ],
       "correctAnswerIndex": 3,
-      "feedback": {
-        "correct": "آفرین! wir lernen = ما یاد می‌گیریم",
-        "incorrect": "پاسخ صحیح: wir lernen (ما یاد می‌گیریم)"
+      "feedbackTip": {
+        "onCorrect": "آفرین! wir lernen = ما یاد می‌گیریم (پسوند -en)",
+        "onWrong": "با wir از پسوند -en استفاده می‌کنیم: wir lernen",
+        "errorCategory": "verb-conjugation"
       }
     },
     {
@@ -365,9 +432,10 @@
         "spielst"
       ],
       "correctAnswerIndex": 1,
-      "feedback": {
-        "correct": "آفرین! ihr spielt = شما بازی می‌کنید",
-        "incorrect": "پاسخ صحیح: ihr spielt (شما بازی می‌کنید)"
+      "feedbackTip": {
+        "onCorrect": "آفرین! ihr spielt = شما بازی می‌کنید (پسوند -t)",
+        "onWrong": "با ihr از پسوند -t استفاده می‌کنیم: ihr spielt",
+        "errorCategory": "verb-conjugation"
       }
     },
     {
@@ -384,8 +452,10 @@
       "correctAnswers": [
         2
       ],
-      "feedback": {
-        "explanation": "Wir **arbeiten** im Büro. = ما در دفتر کار می‌کنیم."
+      "feedbackTip": {
+        "onCorrect": "آفرین! Wir arbeiten im Büro = ما در دفتر کار می‌کنیم.",
+        "onWrong": "با wir از پسوند -en استفاده می‌کنیم: wir arbeiten",
+        "errorCategory": "verb-conjugation"
       }
     },
     {
@@ -402,8 +472,10 @@
       "correctAnswers": [
         3
       ],
-      "feedback": {
-        "explanation": "**Sprechen** Sie Deutsch? = آیا شما آلمانی صحبت می‌کنید؟"
+      "feedbackTip": {
+        "onCorrect": "آفرین! Sprechen Sie Deutsch? = آیا شما آلمانی صحبت می‌کنید؟",
+        "onWrong": "با Sie رسمی از پسوند -en استفاده می‌کنیم: Sprechen Sie",
+        "errorCategory": "verb-conjugation"
       }
     },
     {
@@ -474,8 +546,9 @@
         },
         "translation": "ما با هم بازی می‌کنیم."
       },
-      "feedback": {
-        "explanation": "درست است! wir spielen = ما بازی می‌کنیم"
+      "feedbackTip": {
+        "onCorrect": "آفرین! wir spielen = ما بازی می‌کنیم (پسوند -en)",
+        "onWrong": "جمله درست است: Wir spielen zusammen"
       }
     },
     {
@@ -492,8 +565,29 @@
         },
         "translation": "شما آلمانی یاد می‌گیریم. (غلط!)"
       },
-      "feedback": {
-        "explanation": "غلط! فرم درست: Ihr **lernt** Deutsch. (با ihr از پسوند -t استفاده می‌کنیم)"
+      "feedbackTip": {
+        "onCorrect": "آفرین! جمله غلط است چون با ihr از -t استفاده می‌کنیم نه -en.",
+        "onWrong": "جمله غلط است! فرم درست: Ihr lernt Deutsch"
+      }
+    },
+    {
+      "type": "dictation",
+      "id": "d1",
+      "targetText": "Wir lernen zusammen.",
+      "translation": "ما با هم یاد می‌گیریم.",
+      "difficulty": "A1",
+      "feedbackTip": {
+        "onCorrect": "آفرین! wir + lernen = ما یاد می‌گیریم"
+      }
+    },
+    {
+      "type": "dictation",
+      "id": "d2",
+      "targetText": "Sprechen Sie Deutsch?",
+      "translation": "آیا شما آلمانی صحبت می‌کنید؟",
+      "difficulty": "A1",
+      "feedbackTip": {
+        "onCorrect": "آفرین! Sie رسمی همیشه با حرف بزرگ نوشته می‌شود."
       }
     },
     {
