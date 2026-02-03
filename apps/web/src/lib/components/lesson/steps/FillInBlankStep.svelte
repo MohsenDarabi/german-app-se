@@ -4,11 +4,14 @@
   import BiDiText from "$lib/components/ui/BiDiText.svelte";
   import AudioButton from "$lib/components/ui/AudioButton.svelte";
   import { detectDirection } from "$lib/utils/bidi";
+  import { getErrorLabel } from '$lib/db';
 
   export let step: FillInBlankStep;
   export let lessonId: string = '';
 
-  const dispatch = createEventDispatcher<{ answer: { correct: boolean; allowContinue: boolean } }>();
+  $: feedbackTip = step.feedbackTip;
+
+  const dispatch = createEventDispatcher<{ answer: { correct: boolean; allowContinue: boolean; errorCategory?: string; feedbackExplanation?: string } }>();
 
   // Parse sentence into parts with blanks
   $: parts = step.sentence.split(/(\{[0-9]+\})/g);
@@ -43,7 +46,9 @@
 
     dispatch('answer', {
       correct: isCorrect,
-      allowContinue: isCorrect
+      allowContinue: isCorrect,
+      errorCategory: feedbackTip?.errorCategory,
+      feedbackExplanation: isCorrect ? feedbackTip?.onCorrect : feedbackTip?.onWrong
     });
   }
 
@@ -117,6 +122,11 @@
   {#if isAnswered && isCorrect}
     <div class="success-section">
       <p class="feedback-text success">آفرین! صحیح است</p>
+      {#if feedbackTip?.onCorrect}
+        <div class="feedback-tip-content correct">
+          <p class="tip-message">{feedbackTip.onCorrect}</p>
+        </div>
+      {/if}
       <div class="audio-row">
         <AudioButton
           text={step.sentence.replace(/\{[0-9]+\}/g, (match) => {
@@ -133,9 +143,22 @@
 
   {#if canRetry}
     <div class="retry-section">
-      <p class="feedback-text">دوباره امتحان کنید!</p>
-      {#if step.feedback?.explanation}
-        <p class="explanation" dir="rtl"><BiDiText text={step.feedback.explanation} /></p>
+      {#if feedbackTip?.onWrong}
+        <div class="feedback-tip-content wrong">
+          <span class="tip-icon">💡</span>
+          <p class="tip-message">{feedbackTip.onWrong}</p>
+          {#if feedbackTip.errorCategory}
+            <span class="error-badge">{getErrorLabel(feedbackTip.errorCategory)}</span>
+          {/if}
+          {#if feedbackTip.rule}
+            <p class="rule-hint">📚 {feedbackTip.rule}</p>
+          {/if}
+        </div>
+      {:else}
+        <p class="feedback-text">دوباره امتحان کنید!</p>
+        {#if step.feedback?.explanation}
+          <p class="explanation" dir="rtl"><BiDiText text={step.feedback.explanation} /></p>
+        {/if}
       {/if}
       <button class="retry-btn" on:click={retry}>تلاش مجدد</button>
     </div>
@@ -321,6 +344,67 @@
   .retry-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(169, 30, 30, 0.3);
+  }
+
+  .feedback-tip-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2, 0.5rem);
+    padding: var(--space-4, 1rem);
+    border-radius: var(--radius-lg, 0.75rem);
+    text-align: right;
+    direction: rtl;
+    width: 100%;
+    margin-bottom: var(--space-3, 0.75rem);
+  }
+
+  .feedback-tip-content.correct {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(16, 185, 129, 0.05));
+    border: 2px solid var(--color-gem-400, #34d399);
+  }
+
+  .feedback-tip-content.wrong {
+    background: linear-gradient(135deg, rgba(250, 204, 21, 0.15), rgba(250, 204, 21, 0.05));
+    border: 2px solid #facc15;
+  }
+
+  .tip-icon {
+    font-size: 1.5rem;
+  }
+
+  .tip-message {
+    font-size: var(--text-base, 1rem);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .feedback-tip-content.correct .tip-message {
+    color: var(--color-gem-700, #047857);
+  }
+
+  .feedback-tip-content.wrong .tip-message {
+    color: #78350f;
+  }
+
+  .error-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: #fef08a;
+    border: 1px solid #facc15;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #78350f;
+  }
+
+  .rule-hint {
+    font-size: var(--text-sm, 0.875rem);
+    color: #92400e;
+    margin: 0;
+    padding-top: var(--space-2, 0.5rem);
+    border-top: 1px solid rgba(250, 204, 21, 0.3);
+    width: 100%;
   }
 
   /* Dark Mode */

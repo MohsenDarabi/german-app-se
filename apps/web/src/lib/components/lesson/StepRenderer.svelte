@@ -2,6 +2,7 @@
   import type { LessonStep } from "@pkg/content-model";
   import DialogStep from "./steps/DialogStep.svelte";
   import GrammarTipStep from "./steps/GrammarTipStep.svelte";
+  import GrammarPopupStep from "./steps/GrammarPopupStep.svelte";
   import WordQuizStep from "./steps/WordQuizStep.svelte";
   import NewWordStep from "./steps/NewWordStep.svelte";
   import FillInBlankStep from "./steps/FillInBlankStep.svelte";
@@ -21,6 +22,8 @@
   import VocabCheckStep from "./steps/VocabCheckStep.svelte";
   import SpellingStep from "./steps/SpellingStep.svelte";
   import ComprehensionStep from "./steps/ComprehensionStep.svelte";
+  import DictationStep from "./steps/DictationStep.svelte";
+  import StoryStep from "./steps/StoryStep.svelte";
 
   export let step: LessonStep;
   export let lessonId: string = '';
@@ -33,8 +36,10 @@
     <NewWordStep {step} {lessonId} />
   {:else if step.type === "grammar-tip"}
     <GrammarTipStep {step} {lessonId} />
+  {:else if step.type === "grammar-popup"}
+    <GrammarPopupStep {step} {lessonId} />
   {:else if step.type === "dialog"}
-    <DialogStep {step} {lessonId} />
+    <DialogStep {step} {lessonId} on:answer />
   {:else if step.type === "fill-in-blank"}
     <FillInBlankStep {step} {lessonId} on:answer />
   {:else if step.type === "word-order"}
@@ -70,6 +75,10 @@
     <SpellingStep {step} {lessonId} on:answer />
   {:else if step.type === "comprehension"}
     <ComprehensionStep {step} {lessonId} on:answer />
+  {:else if step.type === "dictation"}
+    <DictationStep {step} {lessonId} on:answer />
+  {:else if step.type === "story"}
+    <StoryStep {step} {lessonId} on:answer />
   {:else}
     <div class="unknown-step">
       <p>Unknown step type: {step.type}</p>

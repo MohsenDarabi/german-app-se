@@ -32,6 +32,90 @@ export const FeedbackSchema = z.object({
 });
 
 /* --------------------------------------------------
+   Error Categories for Wrong Answer Analysis
+-------------------------------------------------- */
+
+export const ErrorCategorySchema = z.enum([
+  'wrong-article',      // der/die/das confusion
+  'wrong-conjugation',  // verb form error
+  'wrong-case',         // accusative/dative confusion
+  'word-order',         // V2 position error
+  'spelling',           // Rechtschreibung
+  'vocabulary',         // wrong word choice
+  'comprehension',      // didn't understand question
+  'plural-form',        // singular/plural error
+  'negation',           // nicht/kein placement
+  'gender-agreement',   // adjective gender mismatch
+]);
+
+/* --------------------------------------------------
+   Feedback Tips for Exercise Steps
+-------------------------------------------------- */
+
+export const FeedbackTipSchema = z.object({
+  onCorrect: z.string().optional(),   // Shown when answer is correct
+  onWrong: z.string().optional(),     // Shown when answer is wrong
+  highlights: z.array(z.string()).optional(), // Words to highlight
+  errorCategory: ErrorCategorySchema.optional(), // Type of error
+  rule: z.string().optional(),        // Grammar rule reference
+}).optional();
+
+/* --------------------------------------------------
+   Grammar Metadata Schemas (for vocabulary)
+-------------------------------------------------- */
+
+// Grammatical gender
+export const GenderSchema = z.enum(['m', 'f', 'n']); // masculine, feminine, neuter
+
+// Noun cases (German declension)
+export const NounCasesSchema = z.object({
+  nominativ: z.string(),
+  akkusativ: z.string(),
+  dativ: z.string(),
+  genitiv: z.string(),
+});
+
+// Noun grammar information
+export const NounGrammarSchema = z.object({
+  artikel: GenderSchema,
+  plural: z.string().optional(),
+  cases: NounCasesSchema.optional(),
+});
+
+// Verb conjugation (present tense)
+export const ConjugationSchema = z.object({
+  ich: z.string(),
+  du: z.string(),
+  er_sie_es: z.string(),
+  wir: z.string(),
+  ihr: z.string(),
+  sie_Sie: z.string(),
+});
+
+// Verb grammar information
+export const VerbGrammarSchema = z.object({
+  infinitiv: z.string(),
+  praesens: ConjugationSchema.optional(),
+  perfekt: z.object({
+    hilfsverb: z.enum(['haben', 'sein']),
+    partizip: z.string(),
+  }).optional(),
+});
+
+// Part of speech
+export const PosSchema = z.enum([
+  'noun', 'verb', 'adjective', 'adverb', 'preposition',
+  'pronoun', 'conjunction', 'interjection', 'phrase'
+]);
+
+// Combined grammar info for vocabulary items
+export const GrammarSchema = z.object({
+  pos: PosSchema.optional(),
+  noun: NounGrammarSchema.optional(),
+  verb: VerbGrammarSchema.optional(),
+}).optional();
+
+/* --------------------------------------------------
    Base Step Schema
    All step types extend this base
 -------------------------------------------------- */
@@ -99,6 +183,9 @@ export const MultipleChoiceStepSchema = BaseStepSchema.extend({
 
   // Correct answer index (0-based)
   correctAnswerIndex: z.number().int().min(0),
+
+  // Contextual feedback tips
+  feedbackTip: FeedbackTipSchema,
 });
 
 /* --------------------------------------------------
@@ -122,6 +209,9 @@ export const FillInBlankStepSchema = BaseStepSchema.extend({
   // Correct answers for each blank (by index)
   // Example: [1] means options[1] is correct for {0}
   correctAnswers: z.array(z.number().int().min(0)),
+
+  // Contextual feedback tips
+  feedbackTip: FeedbackTipSchema,
 });
 
 /* --------------------------------------------------
@@ -144,6 +234,9 @@ export const WordOrderStepSchema = BaseStepSchema.extend({
 
   // Or alternatively, just the correct sentence as string
   correctSentence: BilingualTextSchema,
+
+  // Contextual feedback tips
+  feedbackTip: FeedbackTipSchema,
 });
 
 /* --------------------------------------------------
@@ -165,6 +258,9 @@ export const TrueFalseStepSchema = BaseStepSchema.extend({
 
   // Correct answer
   correctAnswer: z.boolean(),
+
+  // Contextual feedback tips
+  feedbackTip: FeedbackTipSchema,
 });
 
 /* --------------------------------------------------
@@ -189,12 +285,45 @@ export const TranslationStepSchema = BaseStepSchema.extend({
 
   // Full correct translation
   correctTranslation: BilingualTextSchema,
+
+  // Contextual feedback tips
+  feedbackTip: FeedbackTipSchema,
 });
 
 /* --------------------------------------------------
    Step Type 7: Dialog/Conversation
    Show a conversation between speakers
 -------------------------------------------------- */
+
+/* --------------------------------------------------
+   Dialog Question Schema (for comprehension)
+-------------------------------------------------- */
+
+export const DialogQuestionSchema = z.object({
+  question: z.string(),                       // Persian question
+  options: z.array(z.string()).min(2).max(4),
+  correctIndex: z.number().int().min(0),
+  explanation: z.string().optional(),         // Persian explanation
+  relatedLineIndex: z.number().int().optional(), // Which dialog line to highlight
+  errorCategory: ErrorCategorySchema.optional(),
+});
+
+/* --------------------------------------------------
+   Narrative Segment Schema (text between dialog lines)
+-------------------------------------------------- */
+
+export const NarrativeSegmentSchema = z.object({
+  text: BilingualTextSchema,           // "Eli läuft zum Taxi..." / "الی به سمت تاکسی می‌دود..."
+  position: z.number().int().min(0),   // After which line index to show (0 = before first line)
+});
+
+/* --------------------------------------------------
+   Character Mood Schema
+-------------------------------------------------- */
+
+export const MoodSchema = z.enum([
+  'neutral', 'happy', 'sad', 'angry', 'surprised', 'confused', 'excited'
+]);
 
 export const DialogStepSchema = BaseStepSchema.extend({
   type: z.literal("dialog"),
@@ -206,8 +335,24 @@ export const DialogStepSchema = BaseStepSchema.extend({
       speakerId: z.string().optional(), // Optional alias for backward compat
       text: BilingualTextSchema,
       audio: MediaSchema.optional(),
+      mood: MoodSchema.optional(), // Character emotion for this line
     })
   ),
+
+  // Scene/setting information
+  scene: z.object({
+    location: z.string().optional(),     // "café", "airport", "street"
+    description: BilingualTextSchema.optional(),  // Scene-setting text
+    imageId: z.string().optional(),      // Background image
+  }).optional(),
+
+  // Narrative text between dialog lines
+  narratives: z.array(NarrativeSegmentSchema).optional(),
+
+  // Comprehension questions
+  questions: z.array(DialogQuestionSchema).optional(),
+  questionMode: z.enum(['mid-dialog', 'post-dialog', 'both']).default('post-dialog'),
+  pauseAfterLines: z.array(z.number()).optional(), // For mid-dialog mode
 });
 
 /* --------------------------------------------------
@@ -226,6 +371,37 @@ export const GrammarTipStepSchema = BaseStepSchema.extend({
 
   // Optional examples
   examples: z.array(BilingualTextSchema).optional(),
+});
+
+/* --------------------------------------------------
+   Step Type 8b: Grammar Popup (Contextual Tips)
+   Brief grammar explanations shown at optimal moments
+-------------------------------------------------- */
+
+export const GrammarPopupStepSchema = BaseStepSchema.extend({
+  type: z.literal("grammar-popup"),
+
+  // Title for the popup (default: "نکته!")
+  title: z.string().default("نکته!"),
+
+  // Main explanation text (Persian)
+  explanation: z.string(),
+
+  // Words/phrases to highlight in examples
+  highlights: z.array(z.string()).optional(),
+
+  // Example sentences with highlights
+  examples: z.array(z.object({
+    de: z.string(),
+    fa: z.string(),
+    highlights: z.array(z.string()).optional(),
+  })).optional(),
+
+  // Reference to grammar concept (for linking)
+  grammarConcept: z.string().optional(),
+
+  // Minimum lesson number where this applies (CEFR progression)
+  minLesson: z.number().optional(),
 });
 
 /* --------------------------------------------------
@@ -307,6 +483,9 @@ export const SpellingStepSchema = BaseStepSchema.extend({
 
   // Instruction text
   instruction: z.string().default("Spell the word."),
+
+  // Contextual feedback tips
+  feedbackTip: FeedbackTipSchema,
 });
 
 /* --------------------------------------------------
@@ -340,6 +519,95 @@ export const ComprehensionStepSchema = BaseStepSchema.extend({
 
   // Instruction text
   instruction: z.string().default("Read/listen and answer the questions."),
+
+  // Audio-only mode (hide text, only play audio)
+  audioOnly: z.boolean().default(false),
+
+  // Limit audio replays by level
+  maxAudioRepeats: z.number().optional(),
+});
+
+/* --------------------------------------------------
+   Step Type 12b: Dictation Exercise
+   Hear audio → type what you heard
+-------------------------------------------------- */
+
+export const DictationDifficultySchema = z.enum(['A1', 'A2', 'B1', 'B2']);
+
+export const DictationStepSchema = BaseStepSchema.extend({
+  type: z.literal("dictation"),
+
+  // What user should type
+  targetText: z.string(),
+
+  // Persian translation (for feedback)
+  translation: z.string(),
+
+  // Pre-generated audio ID
+  audioId: z.string().optional(),
+
+  // Difficulty level (affects hints, repeats)
+  difficulty: DictationDifficultySchema.default('A1'),
+
+  // Override defaults based on difficulty
+  maxRepeats: z.number().optional(),         // Default: A1=99, A2=5, B1=3, B2=1
+  showHints: z.boolean().optional(),         // Default: A1=true, B2=false
+
+  // Accept answer if similarity >= threshold
+  acceptPartial: z.boolean().default(false), // Accept if 80% correct?
+});
+
+/* --------------------------------------------------
+   Step Type 18: Story Step
+   Engaging narrative with mixed segments
+-------------------------------------------------- */
+
+export const StorySegmentSchema = z.discriminatedUnion("type", [
+  // Narration segment (scene description)
+  z.object({
+    type: z.literal("narration"),
+    text: BilingualTextSchema,
+    imageId: z.string().optional(),
+  }),
+  // Dialog segment (character speaks)
+  z.object({
+    type: z.literal("dialog"),
+    speaker: z.string(),
+    speakerId: z.string().optional(),
+    text: BilingualTextSchema,
+    mood: MoodSchema.optional(),
+  }),
+  // Comprehension check mid-story
+  z.object({
+    type: z.literal("question"),
+    question: z.string(),
+    options: z.array(z.string()).min(2).max(4),
+    correctIndex: z.number().int().min(0),
+    explanation: z.string().optional(),
+  }),
+]);
+
+export const StoryStepSchema = BaseStepSchema.extend({
+  type: z.literal("story"),
+
+  // Story title
+  title: BilingualTextSchema,
+
+  // Characters in this story
+  characters: z.array(z.string()).optional(),  // ["Eli", "Tom"]
+
+  // Scene setting
+  setting: z.object({
+    location: z.string(),
+    imageId: z.string().optional(),
+  }).optional(),
+
+  // Story segments (narration, dialog, questions)
+  segments: z.array(StorySegmentSchema).min(3),
+
+  // Story metadata
+  duration: z.enum(['short', 'medium']).default('short'), // short=1-2min, medium=2-3min
+  tone: z.enum(['funny', 'dramatic', 'casual', 'romantic']).default('casual'),
 });
 
 /* --------------------------------------------------
@@ -457,10 +725,13 @@ export const LessonStepSchema = z.discriminatedUnion("type", [
   TranslationStepSchema,
   DialogStepSchema,
   GrammarTipStepSchema,
+  GrammarPopupStepSchema,  // NEW: Contextual grammar tips
   CompletionStepSchema,
   SpeedChallengeStepSchema,
   SpellingStepSchema,
   ComprehensionStepSchema,
+  DictationStepSchema,     // NEW: Listening dictation
+  StoryStepSchema,         // NEW: Engaging stories
   // Game step types
   RapidFireStepSchema,
   MemoryMatchStepSchema,
@@ -472,6 +743,11 @@ export const LessonStepSchema = z.discriminatedUnion("type", [
 /* --------------------------------------------------
    Lesson Schema
 -------------------------------------------------- */
+
+// Vocabulary item with grammar metadata
+export const VocabularyItemSchema = BilingualTextSchema.extend({
+  grammar: GrammarSchema,
+});
 
 export const LessonSchema = z.object({
   id: z.string(), // "A1-M01-L01"
@@ -493,6 +769,9 @@ export const LessonSchema = z.object({
 
   // Tags for categorization
   tags: z.array(z.string()).optional(),
+
+  // Vocabulary with grammar metadata (for Grammar Assistant)
+  vocabulary: z.array(VocabularyItemSchema).optional(),
 });
 
 /* --------------------------------------------------
@@ -527,6 +806,25 @@ export type Example = z.infer<typeof ExampleSchema>;
 export type Feedback = z.infer<typeof FeedbackSchema>;
 export type VocabHint = z.infer<typeof VocabHintSchema>;
 
+// Error and feedback types
+export type ErrorCategory = z.infer<typeof ErrorCategorySchema>;
+export type FeedbackTip = z.infer<typeof FeedbackTipSchema>;
+
+// Grammar metadata types
+export type Gender = z.infer<typeof GenderSchema>;
+export type NounCases = z.infer<typeof NounCasesSchema>;
+export type NounGrammar = z.infer<typeof NounGrammarSchema>;
+export type Conjugation = z.infer<typeof ConjugationSchema>;
+export type VerbGrammar = z.infer<typeof VerbGrammarSchema>;
+export type Pos = z.infer<typeof PosSchema>;
+export type Grammar = z.infer<typeof GrammarSchema>;
+
+// Dialog types
+export type DialogQuestion = z.infer<typeof DialogQuestionSchema>;
+export type NarrativeSegment = z.infer<typeof NarrativeSegmentSchema>;
+export type Mood = z.infer<typeof MoodSchema>;
+
+// Step types
 export type BaseStep = z.infer<typeof BaseStepSchema>;
 export type NewWordStep = z.infer<typeof NewWordStepSchema>;
 export type MultipleChoiceStep = z.infer<typeof MultipleChoiceStepSchema>;
@@ -536,12 +834,21 @@ export type TrueFalseStep = z.infer<typeof TrueFalseStepSchema>;
 export type TranslationStep = z.infer<typeof TranslationStepSchema>;
 export type DialogStep = z.infer<typeof DialogStepSchema>;
 export type GrammarTipStep = z.infer<typeof GrammarTipStepSchema>;
+export type GrammarPopupStep = z.infer<typeof GrammarPopupStepSchema>;
 export type CompletionStep = z.infer<typeof CompletionStepSchema>;
 export type SpeedChallengeStep = z.infer<typeof SpeedChallengeStepSchema>;
 export type SpeedChallengeQuestion = z.infer<typeof SpeedChallengeQuestionSchema>;
 export type SpellingStep = z.infer<typeof SpellingStepSchema>;
 export type ComprehensionStep = z.infer<typeof ComprehensionStepSchema>;
 export type ComprehensionQuestion = z.infer<typeof ComprehensionQuestionSchema>;
+
+// New step types
+export type DictationDifficulty = z.infer<typeof DictationDifficultySchema>;
+export type DictationStep = z.infer<typeof DictationStepSchema>;
+export type StorySegment = z.infer<typeof StorySegmentSchema>;
+export type StoryStep = z.infer<typeof StoryStepSchema>;
+
+// Game step types
 export type RapidFireStep = z.infer<typeof RapidFireStepSchema>;
 export type RapidFireQuestion = z.infer<typeof RapidFireQuestionSchema>;
 export type MemoryMatchStep = z.infer<typeof MemoryMatchStepSchema>;
@@ -553,6 +860,8 @@ export type MatchingStep = z.infer<typeof MatchingStepSchema>;
 export type MatchingItem = z.infer<typeof MatchingItemSchema>;
 export type GenericStep = z.infer<typeof GenericStepSchema>;
 
+// Vocabulary and lesson types
+export type VocabularyItem = z.infer<typeof VocabularyItemSchema>;
 export type LessonStep = z.infer<typeof LessonStepSchema>;
 export type Lesson = z.infer<typeof LessonSchema>;
 export type Module = z.infer<typeof ModuleSchema>;

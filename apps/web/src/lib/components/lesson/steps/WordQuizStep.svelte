@@ -1,27 +1,31 @@
 <script lang="ts">
-  import type { WordQuizStep, MultipleChoiceStep } from "@pkg/content-model";
+  import type { MultipleChoiceStep } from "@pkg/content-model";
   import { createEventDispatcher } from "svelte";
   import BiDiText from "$lib/components/ui/BiDiText.svelte";
   import AudioButton from "$lib/components/ui/AudioButton.svelte";
+  import { getErrorLabel } from '$lib/db';
 
-  export let step: WordQuizStep | MultipleChoiceStep | any;
+  export let step: MultipleChoiceStep | any;
   export let lessonId: string = '';
 
   let selectedIndex: number | null = null;
   let isAnswered = false;
   let canRetry = false;
+  let showFeedback = false;
 
-  const dispatch = createEventDispatcher<{ answer: { correct: boolean; allowContinue: boolean } }>();
+  const dispatch = createEventDispatcher<{ answer: { correct: boolean; allowContinue: boolean; userAnswer?: string; correctAnswer?: string; errorCategory?: string; feedbackExplanation?: string } }>();
 
   // Support both old and new field names
   $: question = (step as any).question || (step as any).prompt;
   $: correctAnswer = (step as any).correctAnswerIndex ?? (step as any).answer;
+  $: feedbackTip = (step as any).feedbackTip;
 
   function selectOption(index: number) {
     if (isAnswered) return; // Prevent changing answer
 
     selectedIndex = index;
     isAnswered = true;
+    showFeedback = true;
 
     const isCorrect = index === correctAnswer;
 
@@ -29,12 +33,14 @@
       canRetry = true;
     }
 
-    // Dispatch event to parent with detailed info
+    // Dispatch event to parent with detailed info including feedback
     dispatch('answer', {
       correct: isCorrect,
       userAnswer: step.options[index],
       correctAnswer: step.options[correctAnswer],
-      allowContinue: isCorrect // Only allow continue if correct
+      allowContinue: isCorrect, // Only allow continue if correct
+      errorCategory: feedbackTip?.errorCategory,
+      feedbackExplanation: isCorrect ? feedbackTip?.onCorrect : feedbackTip?.onWrong
     });
   }
 
@@ -70,9 +76,33 @@
     {/each}
   </div>
 
+  {#if showFeedback && feedbackTip}
+    <div class="feedback-section" class:correct={selectedIndex === correctAnswer} class:wrong={selectedIndex !== correctAnswer}>
+      {#if selectedIndex === correctAnswer && feedbackTip.onCorrect}
+        <div class="feedback-content correct">
+          <span class="feedback-icon">✅</span>
+          <p class="feedback-message">{feedbackTip.onCorrect}</p>
+        </div>
+      {:else if selectedIndex !== correctAnswer && feedbackTip.onWrong}
+        <div class="feedback-content wrong">
+          <span class="feedback-icon">💡</span>
+          <p class="feedback-message">{feedbackTip.onWrong}</p>
+          {#if feedbackTip.errorCategory}
+            <span class="error-badge">{getErrorLabel(feedbackTip.errorCategory)}</span>
+          {/if}
+          {#if feedbackTip.rule}
+            <p class="rule-hint">📚 {feedbackTip.rule}</p>
+          {/if}
+        </div>
+      {/if}
+    </div>
+  {/if}
+
   {#if canRetry}
     <div class="retry-section">
-      <p class="feedback-text">❌ دوباره امتحان کنید! پاسخ صحیح بالا مشخص شده است.</p>
+      {#if !feedbackTip?.onWrong}
+        <p class="feedback-text">❌ دوباره امتحان کنید! پاسخ صحیح بالا مشخص شده است.</p>
+      {/if}
       <button class="retry-btn" on:click={retry}>
         🔄 تلاش مجدد
       </button>
@@ -143,6 +173,69 @@
   .icon {
     font-size: 1.2rem;
     margin-left: var(--space-2, 0.5rem);
+  }
+
+  .feedback-section {
+    padding: var(--space-4, 1rem);
+    border-radius: var(--radius-lg, 0.75rem);
+    margin-top: var(--space-3, 0.75rem);
+  }
+
+  .feedback-section.correct {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(16, 185, 129, 0.05));
+    border: 2px solid var(--color-gem-400, #34d399);
+  }
+
+  .feedback-section.wrong {
+    background: linear-gradient(135deg, rgba(250, 204, 21, 0.15), rgba(250, 204, 21, 0.05));
+    border: 2px solid #facc15;
+  }
+
+  .feedback-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2, 0.5rem);
+    text-align: right;
+    direction: rtl;
+  }
+
+  .feedback-icon {
+    font-size: 1.5rem;
+  }
+
+  .feedback-message {
+    font-size: var(--text-base, 1rem);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .feedback-content.correct .feedback-message {
+    color: var(--color-gem-700, #047857);
+  }
+
+  .feedback-content.wrong .feedback-message {
+    color: #78350f;
+  }
+
+  .error-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: #fef08a;
+    border: 1px solid #facc15;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #78350f;
+  }
+
+  .rule-hint {
+    font-size: var(--text-sm, 0.875rem);
+    color: #92400e;
+    margin: 0;
+    padding-top: var(--space-2, 0.5rem);
+    border-top: 1px solid rgba(250, 204, 21, 0.3);
+    width: 100%;
   }
 
   .retry-section {
@@ -217,5 +310,34 @@
 
   :global([data-theme="dark"]) .feedback-text {
     color: #fca5a5;
+  }
+
+  :global([data-theme="dark"]) .feedback-section.correct {
+    background: rgba(16, 185, 129, 0.15);
+    border-color: #34d399;
+  }
+
+  :global([data-theme="dark"]) .feedback-section.wrong {
+    background: rgba(250, 204, 21, 0.1);
+    border-color: #854d0e;
+  }
+
+  :global([data-theme="dark"]) .feedback-content.correct .feedback-message {
+    color: #6ee7b7;
+  }
+
+  :global([data-theme="dark"]) .feedback-content.wrong .feedback-message {
+    color: #fef08a;
+  }
+
+  :global([data-theme="dark"]) .error-badge {
+    background: #854d0e;
+    border-color: #a16207;
+    color: #fef08a;
+  }
+
+  :global([data-theme="dark"]) .rule-hint {
+    color: #fde047;
+    border-color: rgba(250, 204, 21, 0.2);
   }
 </style>

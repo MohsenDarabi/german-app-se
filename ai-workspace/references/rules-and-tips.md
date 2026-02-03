@@ -113,7 +113,7 @@ Step 17:   [completion]
 
 ---
 
-### Rule 5: Persian-Specific Grammar Notes
+### Rule 5b: Persian-Specific Grammar Notes
 
 Add notes that help Persian speakers specifically:
 
@@ -291,6 +291,135 @@ Never more than 80% on one side.
 **Q&A Format**: For question-answer pairs, just use the question mark for pause:
 - ✅ `"Wie geht's? Gut!"`
 - ❌ `"Wie geht's? – Gut!"`
+
+---
+
+### Rule 13: Grammar Tips Required (L7+)
+
+**For lessons L7 and above:**
+
+1. Every lesson MUST have 1-2 `grammar-popup` steps
+2. Popups placed BEFORE exercises testing the grammar
+3. Every exercise SHOULD have `feedbackTip` with onCorrect/onWrong + errorCategory
+4. Tips must be in Persian with German examples
+5. Follow CEFR progression (no cases before L26, etc.)
+
+```json
+{
+  "type": "grammar-popup",
+  "title": "نکته!",
+  "explanation": "در آلمانی فعل همیشه در جایگاه دوم است.",
+  "examples": [{ "de": "Ich heiße Anna.", "fa": "اسم من آنا است.", "highlights": ["heiße"] }],
+  "grammarConcept": "V2-word-order"
+}
+```
+
+---
+
+### Rule 14: Vocabulary Grammar Metadata
+
+Every word in `vocabulary` array must include `grammar`:
+
+| Type | Required Fields |
+|------|-----------------|
+| Nouns | `artikel` (m/f/n), optional `plural`, `cases` |
+| Verbs | `infinitiv`, optional `praesens` conjugation |
+| Other | `pos` (part of speech) |
+
+```json
+{
+  "de": "Apfel",
+  "fa": "سیب",
+  "grammar": {
+    "pos": "noun",
+    "noun": { "artikel": "m", "plural": "Äpfel" }
+  }
+}
+```
+
+---
+
+### Rule 15: Dialog Questions Required
+
+1. Every `dialog` step MUST have 1-3 comprehension questions
+2. Choose `questionMode`: `mid-dialog` OR `post-dialog` based on dialog length
+3. Questions in Persian, answers can be German or Persian
+4. Include `explanation` + `relatedLineIndex` for feedback
+
+```json
+{
+  "questions": [
+    {
+      "question": "اسم مرد چیست؟",
+      "options": ["الی", "تام", "لیزا"],
+      "correctIndex": 1,
+      "explanation": "تام گفت: «Ich bin Tom.»",
+      "relatedLineIndex": 1
+    }
+  ],
+  "questionMode": "post-dialog"
+}
+```
+
+---
+
+### Rule 16: Dictation Steps Required
+
+1. Every lesson SHOULD have 1-2 `dictation` steps
+2. Difficulty matches lesson level (A1 lessons = A1 difficulty)
+3. Target text comes from lesson vocabulary
+4. A1: single words, A2: phrases, B1+: sentences
+
+```json
+{
+  "type": "dictation",
+  "targetText": "Guten Morgen",
+  "translation": "صبح بخیر",
+  "difficulty": "A1"
+}
+```
+
+---
+
+### Rule 17: Error Categories Required
+
+Every exercise `feedbackTip.onWrong` MUST include:
+- `errorCategory`: one of the defined categories
+- Specific explanation of WHY the answer was wrong
+- Reference to related grammar rule when applicable
+
+**Error Categories:**
+| Category | Persian Label |
+|----------|---------------|
+| `wrong-article` | حرف تعریف اشتباه |
+| `wrong-conjugation` | صرف فعل اشتباه |
+| `wrong-case` | حالت دستوری اشتباه |
+| `word-order` | ترتیب کلمات اشتباه |
+| `spelling` | املای اشتباه |
+| `vocabulary` | واژه اشتباه |
+| `comprehension` | درک مطلب |
+| `plural-form` | جمع/مفرد اشتباه |
+| `negation` | منفی‌سازی اشتباه |
+| `gender-agreement` | تطابق جنسیت اشتباه |
+
+---
+
+### Rule 18: Stories Must Be Fun & Engaging
+
+1. Every `story` step MUST include at least ONE humor element:
+   - Plot twist / unexpected ending
+   - Character doing something silly
+   - Ironic situation
+2. Use character personalities consistently:
+   - **Eli** = forgetful, always running late
+   - **Tom** = over-organized, plans everything
+   - **Lisa** = adventurous, sometimes reckless
+   - **Alex** = foodie, always hungry
+3. Stories follow 3-act structure: Setup → Conflict → Resolution
+4. Keep stories SHORT (2-3 minutes read time)
+5. Dialogs should feel natural, not textbook-like
+
+**See also**: `ai-workspace/references/story-guidelines.md`
 
 ---
 

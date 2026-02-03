@@ -1,6 +1,6 @@
 # Step Types Reference
 
-> Complete reference for all 17 lesson step types
+> Complete reference for all 19 lesson step types
 
 ---
 
@@ -9,9 +9,9 @@
 | Category | Step Types |
 |----------|------------|
 | **Vocabulary** | `new-word`, `spelling` |
-| **Grammar** | `grammar-tip` |
+| **Grammar** | `grammar-tip`, `grammar-popup` (NEW) |
 | **Exercises** | `multiple-choice`, `fill-in-blank`, `word-order`, `true-false`, `translation`, `matching` |
-| **Media** | `dialog`, `comprehension` |
+| **Media** | `dialog` (enhanced), `comprehension`, `dictation` (NEW), `story` (NEW) |
 | **Games** | `rapid-fire`, `memory-match`, `word-hunt`, `speed-challenge`, `vocab-check` |
 | **Completion** | `completion` |
 
@@ -82,6 +82,39 @@ Educational grammar explanation.
 | `title` | No | Tip title |
 | `content` | Yes | Main explanation (supports markdown) |
 | `examples` | No | Example sentences |
+
+---
+
+## 2b. grammar-popup (NEW)
+
+Contextual grammar tips shown at optimal moments during lessons.
+
+```json
+{
+  "type": "grammar-popup",
+  "id": "s6",
+  "title": "نکته!",
+  "explanation": "در آلمانی فعل همیشه در جایگاه دوم است، نه آخر جمله.",
+  "highlights": ["heiße", "bin"],
+  "examples": [
+    { "de": "Ich heiße Anna.", "fa": "اسم من آنا است.", "highlights": ["heiße"] },
+    { "de": "Ich bin Tom.", "fa": "من تام هستم.", "highlights": ["bin"] }
+  ],
+  "grammarConcept": "V2-word-order",
+  "minLesson": 9
+}
+```
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| `title` | No | Title (default: "نکته!") |
+| `explanation` | Yes | Main explanation in Persian |
+| `highlights` | No | Words to highlight in examples |
+| `examples` | No | Example sentences with German/Persian |
+| `grammarConcept` | No | Reference to grammar concept |
+| `minLesson` | No | Minimum lesson number for this tip (CEFR progression) |
+
+**Usage**: Place before exercises testing a new grammar concept.
 
 ---
 
@@ -252,33 +285,53 @@ Match German items to Persian translations.
 
 ---
 
-## 9. dialog
+## 9. dialog (ENHANCED)
 
-Conversation between speakers.
+Conversation between speakers with questions, narratives, and scene support.
 
 ```json
 {
   "type": "dialog",
   "id": "s13",
-  "title": "آشنایی اولیه",
+  "scene": {
+    "location": "Café",
+    "description": { "de": "In einem Café in Berlin.", "fa": "در یک کافه در برلین." },
+    "imageId": "scenes/cafe-berlin"
+  },
+  "narratives": [
+    { "position": 0, "text": { "de": "Eli wartet auf Tom.", "fa": "الی منتظر تام است." }},
+    { "position": 2, "text": { "de": "Tom kommt rein.", "fa": "تام وارد می‌شود." }}
+  ],
   "lines": [
-    { "speaker": "Eli", "text": { "de": "Hallo!", "fa": "سلام!" } },
-    { "speaker": "Tom", "text": { "de": "Hi! Ich bin Tom.", "fa": "سلام! من تام هستم." } },
+    { "speaker": "Eli", "text": { "de": "Hallo!", "fa": "سلام!" }, "mood": "happy" },
+    { "speaker": "Tom", "text": { "de": "Hi! Ich bin Tom.", "fa": "سلام! من تام هستم." }, "mood": "excited" },
     { "speaker": "Eli", "text": { "de": "Ich bin Eli.", "fa": "من الی هستم." } }
   ],
-  "feedback": {
-    "explanation": "در این مکالمه دو نفر با هم آشنا می‌شوند."
-  }
+  "questions": [
+    {
+      "question": "اسم مرد چیست؟",
+      "options": ["الی", "تام", "ماریا"],
+      "correctIndex": 1,
+      "explanation": "تام گفت: «Ich bin Tom.»",
+      "relatedLineIndex": 1
+    }
+  ],
+  "questionMode": "post-dialog"
 }
 ```
 
 | Field | Required | Description |
 |-------|----------|-------------|
-| `title` | No | Dialog title |
-| `lines` | Yes | Array of speaker/text objects |
-| `imageId` | No | Path to scene image (e.g., `scenes/cafe-meeting.jpg`) |
+| `lines` | Yes | Array of speaker/text objects with optional `mood` |
+| `scene` | No | Scene context with location, description, imageId |
+| `narratives` | No | Text between dialog lines (position = after which line) |
+| `questions` | No | Comprehension questions |
+| `questionMode` | No | `mid-dialog`, `post-dialog`, or `both` (default: `post-dialog`) |
+| `pauseAfterLines` | No | Line indices to pause for mid-dialog questions |
 
-**Image Required**: Every dialog should have a scene image. Add task in `multimedia-tasks/{LessonID}.json`.
+**Moods**: `neutral`, `happy`, `sad`, `angry`, `surprised`, `confused`, `excited`
+
+**Image Required**: Every dialog should have a scene image.
 
 ---
 
@@ -332,9 +385,91 @@ Read/listen passage and answer questions.
 
 ---
 
+## 12. dictation (NEW)
+
+Listening dictation exercise - hear audio, type what you heard.
+
+```json
+{
+  "type": "dictation",
+  "id": "d1",
+  "targetText": "Guten Morgen",
+  "translation": "صبح بخیر",
+  "difficulty": "A1",
+  "audioId": "d1-audio"
+}
+```
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| `targetText` | Yes | Text the user should type |
+| `translation` | Yes | Persian translation for feedback |
+| `difficulty` | No | `A1`, `A2`, `B1`, `B2` (default: `A1`) |
+| `audioId` | No | Pre-generated audio ID |
+| `maxRepeats` | No | Override max audio repeats |
+| `showHints` | No | Override hint visibility |
+
+**Difficulty Settings:**
+| Level | Max Repeats | Show Translation | Show First Letter |
+|-------|-------------|------------------|-------------------|
+| A1 | Unlimited | Yes | Yes |
+| A2 | 5 | Yes | No |
+| B1 | 3 | No | No |
+| B2 | 1 | No | No |
+
+---
+
+## 13. story (NEW)
+
+Engaging narrative with mixed segments - narration, dialog, and questions.
+
+```json
+{
+  "type": "story",
+  "id": "story1",
+  "title": { "de": "Die verlorene Katze", "fa": "گربه گمشده" },
+  "characters": ["Eli", "Tom"],
+  "setting": { "location": "Park", "imageId": "park-scene" },
+  "duration": "short",
+  "tone": "funny",
+  "segments": [
+    {
+      "type": "narration",
+      "text": { "de": "Es ist Samstag Morgen.", "fa": "صبح شنبه است." }
+    },
+    {
+      "type": "dialog",
+      "speaker": "Eli",
+      "text": { "de": "Wo ist meine Katze?", "fa": "گربه‌ام کجاست؟" },
+      "mood": "confused"
+    },
+    {
+      "type": "question",
+      "question": "چه اتفاقی افتاده؟",
+      "options": ["گربه الی گم شده", "تام دیر آمده"],
+      "correctIndex": 0,
+      "explanation": "الی گربه‌اش را گم کرده است."
+    }
+  ]
+}
+```
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| `title` | Yes | Bilingual story title |
+| `segments` | Yes | Array of narration, dialog, or question segments |
+| `characters` | No | List of characters |
+| `setting` | No | Location and optional image |
+| `duration` | No | `short` (1-2 min) or `medium` (2-3 min) |
+| `tone` | No | `funny`, `dramatic`, `casual`, `romantic` |
+
+**See also**: `ai-workspace/references/story-guidelines.md` for story writing rules.
+
+---
+
 ## GAME STEPS
 
-### 12. rapid-fire
+### 14. rapid-fire
 
 Quick-fire left/right choice game.
 
@@ -359,7 +494,7 @@ Quick-fire left/right choice game.
 
 ---
 
-### 13. memory-match
+### 15. memory-match
 
 Match German-Persian pairs by flipping cards.
 
@@ -384,7 +519,7 @@ Match German-Persian pairs by flipping cards.
 
 ---
 
-### 14. word-hunt
+### 16. word-hunt
 
 Find words in a letter grid.
 
@@ -402,7 +537,7 @@ Find words in a letter grid.
 
 ---
 
-### 15. speed-challenge
+### 17. speed-challenge
 
 Timed vocabulary sprint (module-end game).
 
@@ -426,7 +561,7 @@ Timed vocabulary sprint (module-end game).
 
 ---
 
-### 16. vocab-check
+### 18. vocab-check
 
 Self-assessment of learned words.
 
@@ -445,7 +580,7 @@ Self-assessment of learned words.
 
 ---
 
-## 17. completion
+## 19. completion
 
 Lesson completion summary (always last step).
 

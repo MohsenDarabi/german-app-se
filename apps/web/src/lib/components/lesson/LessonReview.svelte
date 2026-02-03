@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { WrongAnswer } from '$lib/db';
+  import { getErrorLabel } from '$lib/db';
   import { createEventDispatcher, onMount } from 'svelte';
 
   export let wrongAnswers: WrongAnswer[];
@@ -119,7 +120,18 @@
 
       {#if selectedAnswer && selectedAnswer !== currentWrong.correctAnswer}
         <div class="retry-section">
-          <p class="feedback-text">دوباره امتحان کنید!</p>
+          <!-- Show detailed feedback if available -->
+          {#if currentWrong.feedbackExplanation}
+            <div class="detailed-feedback">
+              <h4 class="feedback-title">چرا اشتباه بود؟</h4>
+              <p class="feedback-explanation">{currentWrong.feedbackExplanation}</p>
+              {#if currentWrong.errorCategory}
+                <span class="error-badge">{getErrorLabel(currentWrong.errorCategory)}</span>
+              {/if}
+            </div>
+          {:else}
+            <p class="feedback-text">دوباره امتحان کنید!</p>
+          {/if}
           <button class="retry-btn" on:click={retry}>
             🔄 تلاش مجدد
           </button>
@@ -295,6 +307,37 @@
 
   .retry-btn:hover {
     background: #dc2626;
+  }
+
+  .detailed-feedback {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 0.5rem;
+  }
+
+  .feedback-title {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #991b1b;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .feedback-explanation {
+    font-size: 0.95rem;
+    color: #7f1d1d;
+    line-height: 1.6;
+    margin: 0 0 0.75rem 0;
+  }
+
+  .error-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: #fee2e2;
+    border: 1px solid #fca5a5;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #b91c1c;
   }
 
   .skip-section {

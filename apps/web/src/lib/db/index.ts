@@ -33,6 +33,29 @@ export interface WrongAnswer {
   userAnswer: string;
   correctAnswer: string;
   reviewedAt?: string; // ISO Date string - set when reviewed at end of lesson
+  // Enhanced wrong answer fields
+  errorCategory?: string; // 'wrong-article', 'word-order', etc.
+  errorDetail?: string; // Specific description of error
+  feedbackExplanation?: string; // Persian explanation of why wrong
+  understoodInReview?: boolean; // Did user get it right in review?
+}
+
+// Error category labels in Persian
+export const ERROR_LABELS: Record<string, string> = {
+  'wrong-article': 'حرف تعریف اشتباه',
+  'wrong-conjugation': 'صرف فعل اشتباه',
+  'wrong-case': 'حالت دستوری اشتباه',
+  'word-order': 'ترتیب کلمات اشتباه',
+  'spelling': 'املای اشتباه',
+  'vocabulary': 'واژه اشتباه',
+  'comprehension': 'درک مطلب',
+  'plural-form': 'جمع/مفرد اشتباه',
+  'negation': 'منفی‌سازی اشتباه',
+  'gender-agreement': 'تطابق جنسیت اشتباه',
+};
+
+export function getErrorLabel(category: string): string {
+  return ERROR_LABELS[category] || category;
 }
 
 export interface VocabItem {
@@ -145,6 +168,15 @@ export class DeutschLernDB extends Dexie {
       lessonProgress: '++id, &[languagePair+lessonId], languagePair, status, updatedAt',
       vocab: '++id, &word, nextReview, addedAt',
       wrongAnswers: '++id, [lessonId+stepId], lessonId, reviewedAt',
+      downloadedLessons: '++id, &[languagePair+lessonId], languagePair, downloadedAt'
+    });
+
+    // Add enhanced wrong answer tracking with error categories
+    this.version(8).stores({
+      users: '++id, email',
+      lessonProgress: '++id, &[languagePair+lessonId], languagePair, status, updatedAt',
+      vocab: '++id, &word, nextReview, addedAt',
+      wrongAnswers: '++id, [lessonId+stepId], lessonId, reviewedAt, errorCategory',
       downloadedLessons: '++id, &[languagePair+lessonId], languagePair, downloadedAt'
     });
   }
