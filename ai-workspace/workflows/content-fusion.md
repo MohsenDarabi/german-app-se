@@ -346,7 +346,35 @@ Designer workflow is documented in `workflows/multimedia-tasks.md`
 
 ---
 
-## Step 10: Update Progress & Commit
+## Step 10: Upload to Cloud (R2 CDN)
+
+**IMPORTANT**: After generating audio and testing locally, upload content to cloud storage.
+
+### 10.1 Upload Lesson Content to R2
+```bash
+# Preview what will be uploaded
+node scripts/upload-content-to-r2.js --dry-run
+
+# Actually upload lessons
+node scripts/upload-content-to-r2.js
+```
+
+### 10.2 Upload Audio to R2
+```bash
+# Upload audio files (uses hash-based deduplication)
+node scripts/upload-to-r2.js --dry-run
+node scripts/upload-to-r2.js
+```
+
+### 10.3 Verify Upload
+- Content URL: `https://pub-[id].r2.dev/de-fa/content/index.json`
+- Audio served from: `https://pub-[id].r2.dev/de-fa/audio/by-hash/`
+
+**Note**: Production app loads from CDN. Local dev server uses `apps/web/static/audio/` fallback.
+
+---
+
+## Step 11: Update Progress & Commit
 
 ```bash
 # 1. Update CURRENT_TASK.md (mark as completed)
@@ -376,8 +404,9 @@ git commit -m "feat: add lesson A1-M01-L02 with audio"
 │  5. ▶ GENERATE AUDIO IMMEDIATELY ◀                         │
 │  6. Test in browser (content + audio)                       │
 │  7. Create multimedia tasks                                 │
-│  8. Update progress files                                   │
-│  9. Commit everything together                              │
+│  8. ▶ UPLOAD TO CLOUD (R2) ◀                               │
+│  9. Update progress files                                   │
+│  10. Commit everything together                             │
 │                                                             │
 │  ✅ THEN move to next lesson                                │
 └─────────────────────────────────────────────────────────────┘
@@ -409,6 +438,11 @@ git commit -m "feat: add lesson A1-M01-L02 with audio"
 ### Multimedia Tasks (DO NOT SKIP!)
 - [ ] Asset registry regenerated: `node scripts/regenerate-asset-registry-full.js`
 - [ ] Task summary generated: `node scripts/generate-task-summary.js`
+
+### Cloud Upload (DO NOT SKIP!)
+- [ ] Lesson JSON uploaded: `node scripts/upload-content-to-r2.js`
+- [ ] Audio uploaded: `node scripts/upload-to-r2.js`
+- [ ] Verified content is accessible on CDN
 
 ### Progress
 - [ ] CURRENT_TASK.md updated

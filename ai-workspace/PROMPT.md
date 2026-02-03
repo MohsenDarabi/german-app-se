@@ -14,6 +14,40 @@ You are helping build a **German learning PWA for Persian speakers**. Your job i
 
 ---
 
+## What's New (February 2026)
+
+### New Step Types Added
+| Step Type | Description | Reference |
+|-----------|-------------|-----------|
+| `grammar-popup` | Interactive grammar tips with highlights (Busuu-style) | `references/step-types.md` |
+| `dictation` | Listening practice - type what you hear | `references/step-types.md` |
+| `story` | Engaging narrative with mixed segments | `references/step-types.md` |
+| `syllable-spelling` | Scaffolded spelling with syllable hints | `references/step-types.md` |
+
+### Enhanced Existing Steps
+- **`dialog`** now supports: questions (mid/post-dialog), narratives, scene context, character moods
+- **Exercise steps** now have `feedbackTip` with `errorCategory` for detailed wrong answer explanations
+
+### New Features in Lessons
+| Feature | Description |
+|---------|-------------|
+| **Grammar Assistant** | Floating AI chat panel on lesson pages |
+| **Error Categories** | Track why users make mistakes (wrong-article, word-order, etc.) |
+| **Dialog Questions** | Comprehension questions within conversations |
+| **Vocabulary Grammar** | Nouns have gender/cases, verbs have conjugation data |
+
+### Content Delivery
+- **Audio & content served from Cloudflare R2 CDN**
+- After creating content: `node scripts/upload-content-to-r2.js`
+- After generating audio: `node scripts/upload-to-r2.js`
+
+### Updated Rules (see `references/rules-and-tips.md`)
+- Rule 13-18 added for new step types
+- Vocabulary must include `grammar` metadata
+- Exercises should have `feedbackTip` with error categories
+
+---
+
 ## First Steps Every Session
 
 1. **Read CURRENT_TASK.md** - Resume interrupted work (MOST IMPORTANT!)
@@ -44,19 +78,27 @@ cat ai-workspace/STATUS.md
 
 ## Output Locations (Where to Put Created Content)
 
-| Type | Output Location | Created By |
-|------|-----------------|------------|
-| **Lesson JSON** | `content/de-fa/{Level}/module-{NN}/{LessonID}.json` | AI agent |
-| **Audio files** | `apps/web/static/audio/{LessonID}/` | Audio script |
-| **Images** | `apps/web/static/images/shared/{category}/` | Colleague |
-| **Videos** | `apps/web/static/videos/shared/{category}/` | Colleague |
-| **Progress logs** | `ai-workspace/progress/*.json` | AI agent |
-| **Asset registry** | `apps/web/src/lib/data/asset-registry.json` | Auto-generated |
+| Type | Local Location | Cloud (R2 CDN) |
+|------|----------------|----------------|
+| **Lesson JSON** | `content/de-fa/{Level}/module-{NN}/{LessonID}.json` | `{lang}/content/{Level}/lessons/{LessonID}.json` |
+| **Audio files** | `apps/web/static/audio/{LessonID}/` | `{lang}/audio/by-hash/{hash}.mp3` |
+| **Images** | `apps/web/static/images/shared/` | `shared/images/` |
+| **Progress logs** | `ai-workspace/progress/*.json` | N/A (local only) |
+| **Asset registry** | `apps/web/src/lib/data/asset-registry.json` | N/A (build-time) |
 
 **Example for lesson A1-M01-L02:**
 ```
-content/de-fa/A1/module-01/A1-M01-L02.json          ← Lesson content
-apps/web/static/audio/A1-M01-L02/s1-word.mp3        ← Audio files
+content/de-fa/A1/module-01/A1-M01-L02.json          ← Lesson content (local)
+apps/web/static/audio/A1-M01-L02/s1-word.mp3        ← Audio files (local)
+```
+
+**After creating content, upload to cloud:**
+```bash
+# Upload lesson JSON files to R2
+node scripts/upload-content-to-r2.js
+
+# Upload audio files to R2 (hash-based deduplication)
+node scripts/upload-to-r2.js
 ```
 
 **Multimedia workflow:**
