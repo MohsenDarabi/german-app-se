@@ -6,6 +6,7 @@
   import LessonReview from "$lib/components/lesson/LessonReview.svelte";
   import ExitConfirmationDialog from "$lib/components/lesson/ExitConfirmationDialog.svelte";
   import LessonSettingsMenu from "$lib/components/lesson/LessonSettingsMenu.svelte";
+  import GrammarAssistant from "$lib/components/assistant/GrammarAssistant.svelte";
   import { lessonStore, currentStep } from "../../../lessonStore";
   import {
     saveWrongAnswer,
@@ -274,6 +275,14 @@
   on:continue={handleExitDialogContinue}
   on:exit={handleExitDialogExit}
 />
+
+<!-- Grammar Assistant (Floating Button + Panel) -->
+{#if data.lesson}
+  <GrammarAssistant
+    lesson={data.lesson}
+    currentStep={$lessonStore.currentIndex}
+  />
+{/if}
 
 <style>
   /*
