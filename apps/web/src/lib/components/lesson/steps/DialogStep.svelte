@@ -11,7 +11,7 @@
   export let step: DialogStep;
   export let lessonId: string = '';
 
-  const dispatch = createEventDispatcher<{ answer: { correct: boolean; allowContinue: boolean; userAnswer?: string; correctAnswer?: string } }>();
+  const dispatch = createEventDispatcher<{ answer: { correct: boolean; allowContinue: boolean; userAnswer?: string; correctAnswer?: string; questionText?: string } }>();
 
   // Conversation playback state
   let isPlaying = false;
@@ -118,11 +118,12 @@
 
     showExplanation = true;
 
-    // Dispatch answer event
+    // Dispatch answer event with the actual question text for review
     dispatch('answer', {
       correct: isCorrect,
       userAnswer: currentQuestion.options[optionIndex],
       correctAnswer: currentQuestion.options[currentQuestion.correctIndex],
+      questionText: currentQuestion.question, // Include actual question for review
       allowContinue: false, // Don't auto-continue, user will click next
     });
   }

@@ -52,6 +52,14 @@
 
   // Keyboard shortcut handler for Continue button
   function handleKeydown(e: KeyboardEvent) {
+    // Don't trigger shortcuts when user is typing in an input field
+    const activeEl = document.activeElement;
+    const isTyping = activeEl instanceof HTMLInputElement ||
+                     activeEl instanceof HTMLTextAreaElement ||
+                     activeEl?.getAttribute('contenteditable') === 'true';
+
+    if (isTyping) return;
+
     // Enter or Space triggers continue when enabled
     if ((e.key === 'Enter' || e.key === ' ') && $lessonStore.canContinue && !$lessonStore.isComplete && !showReviewScreen) {
       e.preventDefault();
@@ -94,7 +102,7 @@
   const gameStepTypes = ['rapid-fire', 'memory-match', 'vocab-check', 'word-hunt', 'speed-challenge'];
 
   async function handleAnswer(event: CustomEvent) {
-    const { correct, userAnswer, correctAnswer, allowContinue } = event.detail;
+    const { correct, userAnswer, correctAnswer, allowContinue, questionText } = event.detail;
 
     if (correct) {
       console.log("✅ Correct Answer!");
@@ -109,7 +117,8 @@
           lessonId: data.lesson.id,
           stepId: $currentStep.id,
           stepType: $currentStep.type,
-          question: getQuestionText($currentStep),
+          // Use questionText from event if provided (e.g., dialog questions), otherwise extract from step
+          question: questionText || getQuestionText($currentStep),
           userAnswer: userAnswer || '',
           correctAnswer: correctAnswer || ''
         });
