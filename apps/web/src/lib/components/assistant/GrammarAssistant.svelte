@@ -1,6 +1,8 @@
 <script lang="ts">
   import type { Lesson } from "@pkg/content-model";
   import { slide, fly } from "svelte/transition";
+  import { onMount } from "svelte";
+  import { browser } from "$app/environment";
   import { isAssistantOpen, activeTab, toggleAssistant, closeAssistant } from "./assistantStore";
   import ContentOverview from "./ContentOverview.svelte";
   import ChatTab from "./ChatTab.svelte";
@@ -13,13 +15,108 @@
 
   // Get lesson title for chat context
   $: lessonTitle = lesson.title?.fa || lesson.title?.de || '';
+
+  // Draggable button state
+  let buttonRef: HTMLButtonElement;
+  let isDragging = false;
+  let dragStartTime = 0;
+  let startX = 0;
+  let startY = 0;
+  let buttonX = 20; // Default left position
+  let buttonY = 100; // Default bottom offset (from bottom)
+
+  const STORAGE_KEY = 'grammar-assistant-position';
+  const DRAG_THRESHOLD = 150; // ms - if held longer than this, it's a drag
+
+  onMount(() => {
+    // Load saved position
+    if (browser) {
+      const saved = localStorage.getItem(STORAGE_KEY);
+      if (saved) {
+        try {
+          const pos = JSON.parse(saved);
+          buttonX = pos.x ?? 20;
+          buttonY = pos.y ?? 100;
+        } catch {
+          // Invalid JSON, use defaults
+        }
+      }
+    }
+  });
+
+  function savePosition() {
+    if (browser) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify({ x: buttonX, y: buttonY }));
+    }
+  }
+
+  function handlePointerDown(e: PointerEvent) {
+    if ($isAssistantOpen) return; // Don't drag when panel is open
+
+    isDragging = false;
+    dragStartTime = Date.now();
+    startX = e.clientX;
+    startY = e.clientY;
+
+    buttonRef.setPointerCapture(e.pointerId);
+  }
+
+  function handlePointerMove(e: PointerEvent) {
+    if (!buttonRef.hasPointerCapture(e.pointerId)) return;
+
+    const elapsed = Date.now() - dragStartTime;
+    const movedX = Math.abs(e.clientX - startX);
+    const movedY = Math.abs(e.clientY - startY);
+
+    // Start dragging if held long enough OR moved enough
+    if (elapsed > DRAG_THRESHOLD || movedX > 10 || movedY > 10) {
+      isDragging = true;
+
+      // Calculate new position
+      const windowWidth = window.innerWidth;
+      const windowHeight = window.innerHeight;
+      const btnSize = 56;
+
+      // New X position (left edge)
+      let newX = e.clientX - btnSize / 2;
+      newX = Math.max(10, Math.min(windowWidth - btnSize - 10, newX));
+
+      // New Y position (from bottom)
+      let newY = windowHeight - e.clientY - btnSize / 2;
+      newY = Math.max(70, Math.min(windowHeight - btnSize - 60, newY)); // Keep away from edges
+
+      buttonX = newX;
+      buttonY = newY;
+    }
+  }
+
+  function handlePointerUp(e: PointerEvent) {
+    if (buttonRef.hasPointerCapture(e.pointerId)) {
+      buttonRef.releasePointerCapture(e.pointerId);
+    }
+
+    if (isDragging) {
+      // Save the new position
+      savePosition();
+      isDragging = false;
+    } else {
+      // It was a click, not a drag
+      toggleAssistant();
+    }
+  }
 </script>
 
-<!-- Floating Button -->
+<!-- Floating Button (Draggable) -->
 <button
+  bind:this={buttonRef}
   class="floating-btn"
   class:open={$isAssistantOpen}
-  on:click={toggleAssistant}
+  class:dragging={isDragging}
+  style="left: {buttonX}px; bottom: {buttonY}px;"
+  on:pointerdown={handlePointerDown}
+  on:pointermove={handlePointerMove}
+  on:pointerup={handlePointerUp}
+  on:pointercancel={handlePointerUp}
   aria-label="Grammar Assistant"
 >
   {#if $isAssistantOpen}
@@ -76,11 +173,10 @@
 </script>
 
 <style>
-  /* Floating Button */
+  /* Floating Button (Draggable) */
   .floating-btn {
     position: fixed;
-    bottom: 100px;
-    left: 20px;
+    /* left and bottom are set via style attribute */
     width: 56px;
     height: 56px;
     border-radius: 50%;
@@ -88,13 +184,15 @@
     color: white;
     border: none;
     font-size: 1.5rem;
-    cursor: pointer;
+    cursor: grab;
     box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
-    transition: all 0.3s;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
     z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: center;
+    touch-action: none; /* Prevent scroll while dragging */
+    user-select: none;
   }
 
   .floating-btn:hover {
@@ -102,9 +200,17 @@
     box-shadow: 0 6px 20px rgba(139, 92, 246, 0.5);
   }
 
+  .floating-btn.dragging {
+    cursor: grabbing;
+    transform: scale(1.15);
+    box-shadow: 0 8px 25px rgba(139, 92, 246, 0.6);
+    transition: none; /* No transition while dragging */
+  }
+
   .floating-btn.open {
     background: linear-gradient(135deg, #ef4444, #dc2626);
     box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4);
+    cursor: pointer;
   }
 
   /* Backdrop */
@@ -224,8 +330,6 @@
     }
 
     .floating-btn {
-      bottom: 80px;
-      left: 15px;
       width: 50px;
       height: 50px;
       font-size: 1.3rem;
