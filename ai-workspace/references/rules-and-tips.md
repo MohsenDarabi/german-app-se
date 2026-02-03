@@ -294,7 +294,38 @@ Never more than 80% on one side.
 
 ---
 
-### Rule 13: Grammar Tips Required (L7+)
+### Rule 13: Syllable-Spelling Required for ALL Vocabulary
+
+**EVERY new vocabulary word must have a `syllable-spelling` step.**
+
+Based on Miller's Chunking Theory:
+- Learners process 3-4 chunks easier than 7+ letters
+- Reduces cognitive load for spelling practice
+- Especially important for German compound words
+
+**Placement:** Immediately after each `new-word` step
+
+```
+new-word (introduce word)
+    ↓
+syllable-spelling (practice syllables)
+    ↓
+exercises/spelling
+```
+
+**Template:**
+```json
+{
+  "type": "syllable-spelling",
+  "word": { "de": "Guten Morgen", "fa": "صبح بخیر" },
+  "syllables": ["Gu", "ten", "Mor", "gen"],
+  "hint": "۴ بخش"
+}
+```
+
+---
+
+### Rule 15: Grammar Tips Required (L7+)
 
 **For lessons L7 and above:**
 
@@ -316,7 +347,7 @@ Never more than 80% on one side.
 
 ---
 
-### Rule 14: Vocabulary Grammar Metadata
+### Rule 16: Vocabulary Grammar Metadata
 
 Every word in `vocabulary` array must include `grammar`:
 
@@ -339,7 +370,7 @@ Every word in `vocabulary` array must include `grammar`:
 
 ---
 
-### Rule 15: Dialog Questions Required
+### Rule 17: Dialog Questions Required
 
 1. Every `dialog` step MUST have 1-3 comprehension questions
 2. Choose `questionMode`: `mid-dialog` OR `post-dialog` based on dialog length
@@ -363,7 +394,7 @@ Every word in `vocabulary` array must include `grammar`:
 
 ---
 
-### Rule 16: Dictation Steps Required
+### Rule 18: Dictation Steps Required
 
 1. Every lesson SHOULD have 1-2 `dictation` steps
 2. Difficulty matches lesson level (A1 lessons = A1 difficulty)
@@ -381,7 +412,7 @@ Every word in `vocabulary` array must include `grammar`:
 
 ---
 
-### Rule 17: Error Categories Required
+### Rule 19: Error Categories Required
 
 Every exercise `feedbackTip.onWrong` MUST include:
 - `errorCategory`: one of the defined categories
@@ -404,7 +435,7 @@ Every exercise `feedbackTip.onWrong` MUST include:
 
 ---
 
-### Rule 18: Stories Must Be Fun & Engaging
+### Rule 20: Stories Must Be Fun & Engaging
 
 1. Every `story` step MUST include at least ONE humor element:
    - Plot twist / unexpected ending

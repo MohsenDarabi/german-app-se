@@ -2,6 +2,8 @@
 
 > How to create UNIQUE lessons by fusing multiple sources
 
+**For updating EXISTING lessons:** See `workflows/content-migration.md`
+
 ---
 
 ## Overview
@@ -159,14 +161,26 @@ Create an original lesson plan:
 1. **Lesson ID**: `{Level}-M{Module}-L{Lesson}` (e.g., `A1-M01-L02`)
 2. **Theme**: Topic from CEFR curriculum
 3. **Characters**: Use OUR characters (Eli, Tom, Lisa, Alex)
-4. **Vocabulary**: From sources, but with original examples
-5. **Steps**: Plan 15-25 steps:
-   - `new-word` (vocabulary introduction)
-   - `grammar-tip` (explanations for Persian speakers)
-   - `multiple-choice`, `fill-in-blank`, `word-order` (exercises)
-   - `dialog` (original conversations)
-   - `true-false` (comprehension)
-   - Games: `rapid-fire`, `memory-match`, `word-hunt` (every 5-7 steps)
+4. **Vocabulary**: From sources, with grammar metadata (see Step 3)
+5. **Steps**: Plan 15-25 steps using this pattern:
+
+### Required Step Sequence for Each New Word
+```
+new-word → syllable-spelling → [optional: spelling] → exercise
+```
+
+### Step Types to Use
+
+| Step Type | Purpose | Frequency |
+|-----------|---------|-----------|
+| `new-word` | Introduce vocabulary | Per word |
+| `syllable-spelling` | **REQUIRED** after each new-word | Per word |
+| `grammar-popup` | Interactive grammar tips (L07+) | 1-2 per lesson |
+| `dialog` | Conversations with questions | 1-2 per lesson |
+| `dictation` | Listening practice | 1-2 per lesson |
+| `multiple-choice`, `fill-in-blank`, `word-order` | Exercises with feedbackTip | Multiple |
+| `true-false` | Comprehension | As needed |
+| Games: `rapid-fire`, `memory-match`, `word-hunt` | Engagement | Every 5-7 steps |
 
 ---
 
@@ -191,12 +205,51 @@ content/de-fa/{Level}/module-{NN}/{LessonID}.json
   "module": 1,
   "lessonNumber": 2,
   "estimatedMinutes": 15,
+  "vocabulary": [
+    {
+      "de": "der Mann",
+      "fa": "مرد",
+      "grammar": {
+        "pos": "noun",
+        "noun": { "artikel": "m", "plural": "Männer" }
+      }
+    },
+    {
+      "de": "kommen",
+      "fa": "آمدن",
+      "grammar": {
+        "pos": "verb",
+        "verb": {
+          "infinitiv": "kommen",
+          "praesens": {
+            "ich": "komme",
+            "du": "kommst",
+            "er_sie_es": "kommt"
+          }
+        }
+      }
+    },
+    {
+      "de": "Guten Morgen",
+      "fa": "صبح بخیر",
+      "grammar": { "pos": "phrase" }
+    }
+  ],
   "steps": [
     // ... steps here
   ],
   "tags": ["greetings", "feelings"]
 }
 ```
+
+### Vocabulary Grammar Metadata (REQUIRED)
+
+| Part of Speech | Required Fields |
+|----------------|-----------------|
+| **Noun** | `pos: "noun"`, `noun.artikel: "m"/"f"/"n"`, optional `plural` |
+| **Verb** | `pos: "verb"`, `verb.infinitiv`, optional `praesens` conjugation |
+| **Phrase** | `pos: "phrase"` |
+| **Other** | `pos: "adjective"/"adverb"/"preposition"/etc.` |
 
 ---
 
@@ -208,38 +261,143 @@ content/de-fa/{Level}/module-{NN}/{LessonID}.json
 {
   "type": "new-word",
   "id": "s1",
-  "word": { "de": "Wie geht's?", "fa": "حالت چطوره؟" },
+  "word": { "de": "Guten Morgen", "fa": "صبح بخیر" },
   "example": {
-    "text": { "de": "Hallo Max! Wie geht's?", "fa": "سلام مکس! حالت چطوره؟" }
+    "text": { "de": "Hallo! Guten Morgen!", "fa": "سلام! صبح بخیر!" }
   },
   "header": "یاد بگیر!"
 }
 ```
 
-### dialog step (ORIGINAL - not copied)
+### syllable-spelling step (REQUIRED after EVERY new-word!)
+
+```json
+{
+  "type": "syllable-spelling",
+  "id": "syllable-1",
+  "word": { "de": "Guten Morgen", "fa": "صبح بخیر" },
+  "syllables": ["Gu", "ten", "Mor", "gen"],
+  "hint": "۴ بخش - سلام صبحگاهی"
+}
+```
+
+**Syllable Breaking Rules:**
+| Pattern | Example | Syllables |
+|---------|---------|-----------|
+| Simple words | Hallo | Hal-lo |
+| Compound words | Guten Morgen | Gu-ten Mor-gen |
+| Prefixes | Entschuldigung | Ent-schul-di-gung |
+| -ung endings | Wohnung | Woh-nung |
+
+### dialog step (with questions - REQUIRED)
 
 ```json
 {
   "type": "dialog",
   "id": "s10",
+  "scene": {
+    "location": "café",
+    "description": { "de": "In einem Café", "fa": "در یک کافه" }
+  },
   "lines": [
     {
       "speaker": "Eli",
-      "text": { "de": "Hallo Tom! Wie geht's?", "fa": "سلام تام! حالت چطوره؟" }
+      "text": { "de": "Hallo Tom! Wie geht's?", "fa": "سلام تام! حالت چطوره؟" },
+      "mood": "happy"
     },
     {
       "speaker": "Tom",
       "text": { "de": "Gut, danke! Und dir?", "fa": "خوبم، ممنون! تو چطوری؟" }
-    },
+    }
+  ],
+  "questionMode": "post-dialog",
+  "questions": [
     {
-      "speaker": "Eli",
-      "text": { "de": "Auch gut!", "fa": "منم خوبم!" }
+      "question": "تام چطور است؟",
+      "options": ["خوب", "بد", "خسته"],
+      "correctIndex": 0,
+      "explanation": "تام گفت: «Gut, danke!»",
+      "relatedLineIndex": 1
     }
   ]
 }
 ```
 
-### grammar-tip step (Persian-specific)
+### grammar-popup step (for L07+ lessons)
+
+```json
+{
+  "type": "grammar-popup",
+  "id": "grammar-1",
+  "title": "نکته!",
+  "explanation": "در آلمانی فعل همیشه در جایگاه دوم است.",
+  "highlights": ["فعل", "جایگاه دوم"],
+  "examples": [
+    {
+      "de": "Ich heiße Anna.",
+      "fa": "اسم من آنا است.",
+      "highlights": ["heiße"]
+    }
+  ],
+  "grammarConcept": "v2-word-order"
+}
+```
+
+**Grammar Concepts by Lesson Range:**
+| Lessons | Allowed Concepts |
+|---------|-----------------|
+| L07-L10 | `du-vs-sie`, `v2-word-order` |
+| L11-L18 | + `verb-conjugation` |
+| L19-L25 | + `article-gender` |
+| L26-L31 | + `accusative-case` |
+
+### Exercise with feedbackTip (REQUIRED)
+
+```json
+{
+  "type": "multiple-choice",
+  "id": "s5",
+  "question": { "de": "Was bedeutet 'der Mann'?", "fa": "معنی 'der Mann' چیست؟" },
+  "options": ["زن", "مرد", "بچه"],
+  "correctIndex": 1,
+  "feedbackTip": {
+    "onCorrect": "آفرین! «der Mann» یعنی مرد.",
+    "onWrong": "دقت کنید: «Mann» با حرف تعریف «der» همراه است.",
+    "errorCategory": "vocabulary",
+    "highlights": ["der Mann"]
+  }
+}
+```
+
+**Error Categories:**
+| Category | Use When |
+|----------|----------|
+| `wrong-article` | der/die/das confusion |
+| `wrong-conjugation` | Verb form error |
+| `word-order` | V2 position error |
+| `vocabulary` | Wrong word choice |
+| `spelling` | Spelling mistake |
+
+### dictation step (1-2 per lesson)
+
+```json
+{
+  "type": "dictation",
+  "id": "dictation-1",
+  "targetText": "Guten Morgen",
+  "translation": "صبح بخیر",
+  "difficulty": "A1"
+}
+```
+
+**Difficulty by Level:**
+| Level | Max Repeats | Show Translation | Show First Letter |
+|-------|-------------|------------------|-------------------|
+| A1 | Unlimited | Yes | Yes |
+| A2 | 5 | Yes | No |
+| B1 | 3 | No | No |
+
+### grammar-tip step (Persian-specific - legacy)
 
 ```json
 {
@@ -253,6 +411,8 @@ content/de-fa/{Level}/module-{NN}/{LessonID}.json
   ]
 }
 ```
+
+> **Note:** Prefer `grammar-popup` for L07+ lessons. Use `grammar-tip` for general notes.
 
 ---
 
@@ -416,7 +576,7 @@ git commit -m "feat: add lesson A1-M01-L02 with audio"
 
 ## Checklist (Complete Before Next Lesson!)
 
-### Content
+### Content Basics
 - [ ] Researched ALL THREE sources for topic
 - [ ] Used OUR characters (Eli, Tom, Lisa, Alex)
 - [ ] Wrote ORIGINAL dialogs
@@ -425,6 +585,14 @@ git commit -m "feat: add lesson A1-M01-L02 with audio"
 - [ ] All German text has Persian translation
 - [ ] BiDi rule followed for mixed text
 - [ ] Game steps inserted every 5-7 steps
+
+### New Features (REQUIRED)
+- [ ] **Vocabulary has grammar metadata** (pos, artikel for nouns, conjugation for verbs)
+- [ ] **Syllable-spelling after EVERY new-word step**
+- [ ] **All dialogs have 1-3 comprehension questions**
+- [ ] **All exercises have feedbackTip** with onCorrect/onWrong + errorCategory
+- [ ] **1-2 dictation steps** added
+- [ ] **Grammar-popup steps** for lessons L07+ (instead of/with grammar-tip)
 
 ### Validation
 - [ ] JSON syntax valid (`jq` check)

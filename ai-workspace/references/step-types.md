@@ -335,7 +335,36 @@ Conversation between speakers with questions, narratives, and scene support.
 
 ---
 
-## 10. spelling
+## 10. syllable-spelling (NEW)
+
+Scaffolded spelling with syllable hints - reduces cognitive load.
+
+```json
+{
+  "type": "syllable-spelling",
+  "id": "syllable-1",
+  "word": {
+    "de": "Guten Morgen",
+    "fa": "صبح بخیر"
+  },
+  "syllables": ["Gu", "ten", "Mor", "gen"],
+  "hint": "۴ بخش - سلام صبحگاهی"
+}
+```
+
+| Field | Required | Description |
+|-------|----------|-------------|
+| `word` | Yes | Bilingual word/phrase |
+| `syllables` | Yes | Array of syllable chunks |
+| `hint` | No | Persian hint with syllable count |
+
+**Pedagogical Note**: Based on Miller's Chunking Theory - learners process 3-4 chunks easier than 7+ letters.
+
+**Placement**: After EVERY `new-word` step for vocabulary practice.
+
+---
+
+## 11. spelling
 
 Spell a word by clicking letters.
 

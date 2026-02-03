@@ -176,7 +176,7 @@ Every vocabulary word needs a `grammar` field:
 
 ---
 
-## Migration Task 2: Grammar Popup Steps
+## Migration Task 3: Grammar Popup Steps
 
 ### When to Add
 - Before exercises that test a new grammar concept
@@ -213,7 +213,7 @@ Every vocabulary word needs a `grammar` field:
 
 ---
 
-## Migration Task 3: Feedback Tips on Exercises
+## Migration Task 4: Feedback Tips on Exercises
 
 ### What to Add
 Every exercise step (`multiple-choice`, `fill-in-blank`, `word-order`, etc.) should have:
@@ -247,7 +247,7 @@ Every exercise step (`multiple-choice`, `fill-in-blank`, `word-order`, etc.) sho
 
 ---
 
-## Migration Task 4: Dialog Questions
+## Migration Task 5: Dialog Questions
 
 ### What to Add
 Every `dialog` step should have 1-3 comprehension questions:
@@ -285,7 +285,7 @@ Every `dialog` step should have 1-3 comprehension questions:
 
 ---
 
-## Migration Task 5: Dictation Steps
+## Migration Task 6: Dictation Steps
 
 ### When to Add
 Add 1-2 dictation steps per lesson, using vocabulary from that lesson.
@@ -311,7 +311,7 @@ Add 1-2 dictation steps per lesson, using vocabulary from that lesson.
 
 ---
 
-## Migration Task 6: Story Enhancements (Optional)
+## Migration Task 7: Story Enhancements (Optional)
 
 ### Add Scene Context to Dialogs
 ```json
