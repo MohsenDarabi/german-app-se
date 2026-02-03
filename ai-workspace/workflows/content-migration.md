@@ -37,7 +37,84 @@ cat content/de-fa/A1/module-XX/A1-MXX-LYY.json | jq '.vocabulary, .steps[].type'
 
 ---
 
-## Migration Task 1: Vocabulary Grammar Metadata
+## Migration Task 1: Syllable-Spelling Steps (REQUIRED FOR ALL VOCABULARY)
+
+### Pedagogical Rationale
+Based on **Miller's Chunking Theory** and language acquisition research:
+- Breaking words into syllables reduces cognitive load
+- Learners process 3-4 chunks more easily than 7+ letters
+- Scaffolded progression builds confidence before full spelling
+- Especially critical for German compound words
+
+### Rule: EVERY new vocabulary word needs syllable-spelling
+
+**Placement:** After each `new-word` step, add a `syllable-spelling` step:
+
+```
+new-word (introduce "Guten Morgen")
+  ↓
+syllable-spelling (practice "Gu-ten Mor-gen")
+  ↓
+spelling (full word - optional, for reinforcement)
+```
+
+### Template
+```json
+{
+  "type": "syllable-spelling",
+  "id": "syllable-1",
+  "word": {
+    "de": "Guten Morgen",
+    "fa": "صبح بخیر"
+  },
+  "syllables": ["Gu", "ten", "Mor", "gen"],
+  "hint": "۴ بخش - سلام صبحگاهی"
+}
+```
+
+### Syllable Breaking Rules for German
+
+| Pattern | Example | Syllables |
+|---------|---------|-----------|
+| Simple words | Hallo | Hal-lo |
+| Compound words | Guten Morgen | Gu-ten Mor-gen |
+| Words with prefixes | Entschuldigung | Ent-schul-di-gung |
+| Words with umlauts | Mädchen | Mäd-chen |
+| Words ending in -ung | Wohnung | Woh-nung |
+| Words ending in -tion | Information | In-for-ma-ti-on |
+
+### Common A1 Vocabulary Syllables
+
+| Word | Syllables | Hint |
+|------|-----------|------|
+| Hallo | ["Hal", "lo"] | ۲ بخش - سلام |
+| Danke | ["Dan", "ke"] | ۲ بخش - ممنون |
+| Bitte | ["Bit", "te"] | ۲ بخش - لطفاً |
+| Guten Morgen | ["Gu", "ten", "Mor", "gen"] | ۴ بخش - صبح بخیر |
+| Guten Tag | ["Gu", "ten", "Tag"] | ۳ بخش - روز بخیر |
+| Auf Wiedersehen | ["Auf", "Wie", "der", "se", "hen"] | ۵ بخش - خداحافظ |
+| Entschuldigung | ["Ent", "schul", "di", "gung"] | ۴ بخش - ببخشید |
+| Wie geht's | ["Wie", "geht's"] | ۲ بخش - چطوری |
+| Deutschland | ["Deutsch", "land"] | ۲ بخش - آلمان |
+| Frühstück | ["Früh", "stück"] | ۲ بخش - صبحانه |
+
+### Frequency Guidelines
+
+| Lesson Type | Syllable-Spelling Frequency |
+|-------------|----------------------------|
+| Vocabulary-focused | After EVERY new-word step |
+| Grammar-focused | After 50% of new-word steps |
+| Review lessons | After difficult/long words only |
+
+### Migration Script
+```bash
+# Add syllable-spelling to a lesson
+node scripts/add-syllable-spelling.js --lesson=A1-M01-L03
+```
+
+---
+
+## Migration Task 2: Vocabulary Grammar Metadata
 
 ### What to Add
 Every vocabulary word needs a `grammar` field:
@@ -286,6 +363,7 @@ Available moods: `neutral`, `happy`, `sad`, `angry`, `surprised`, `confused`, `e
 ## Migration Checklist
 
 ### Per Lesson
+- [ ] **SYLLABLE-SPELLING for ALL new vocabulary words**
 - [ ] All vocabulary has `grammar` field with `pos`
 - [ ] Nouns have `artikel` (m/f/n)
 - [ ] Common verbs have `praesens` conjugation
@@ -311,16 +389,19 @@ pnpm run typecheck
 For batch updates, use the migration scripts:
 
 ```bash
-# Add grammar metadata to vocabulary
+# 1. FIRST: Add syllable-spelling for ALL vocabulary (REQUIRED)
+node scripts/add-syllable-spelling.js --lesson=A1-M01-L03
+
+# 2. Add grammar metadata to vocabulary
 node scripts/migrate-vocab-grammar.js --lesson=A1-M01-L03
 
-# Inject grammar popup steps
+# 3. Inject grammar popup steps
 node scripts/inject-grammar-tips.js --lesson=A1-M01-L03
 
-# Add dialog questions
+# 4. Add dialog questions
 node scripts/inject-dialog-questions.js --lesson=A1-M01-L03
 
-# Add dictation steps
+# 5. Add dictation steps
 node scripts/inject-dictation-steps.js --lesson=A1-M01-L03
 ```
 
@@ -359,6 +440,19 @@ node scripts/inject-dictation-steps.js --lesson=A1-M01-L03
     }
   ],
   "steps": [
+    {
+      "type": "new-word",
+      "id": "s1",
+      "word": { "de": "der Mann", "fa": "مرد" },
+      "header": "یاد بگیر!"
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-1",
+      "word": { "de": "der Mann", "fa": "مرد" },
+      "syllables": ["der", "Mann"],
+      "hint": "۲ بخش - حرف تعریف + اسم"
+    },
     {
       "type": "grammar-popup",
       "id": "grammar-1",
