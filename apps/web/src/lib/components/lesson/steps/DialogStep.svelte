@@ -1,11 +1,62 @@
 <script lang="ts">
   import type { DialogStep } from "@pkg/content-model";
+  import { onDestroy } from "svelte";
   import BiDiText from "$lib/components/ui/BiDiText.svelte";
   import AudioButton from "$lib/components/ui/AudioButton.svelte";
   import { getCharacterAvatarPath, getCharacterDisplayName } from "$lib/utils/character-resolver";
+  import { playGerman, stopAudio } from "$lib/utils/audio";
 
   export let step: DialogStep;
   export let lessonId: string = '';
+
+  // Conversation playback state
+  let isPlaying = false;
+  let currentPlayingIndex = -1;
+  let stopRequested = false;
+
+  async function playConversation() {
+    if (isPlaying) {
+      // Stop playback
+      stopRequested = true;
+      stopAudio();
+      isPlaying = false;
+      currentPlayingIndex = -1;
+      return;
+    }
+
+    isPlaying = true;
+    stopRequested = false;
+
+    for (let i = 0; i < step.lines.length; i++) {
+      if (stopRequested) break;
+
+      currentPlayingIndex = i;
+      const line = step.lines[i];
+      const audioId = `${step.id}-line${i}`;
+
+      try {
+        await playGerman(line.text.de, lessonId, audioId);
+      } catch {
+        // Continue to next line even if this one fails
+      }
+
+      // Small pause between lines (300ms)
+      if (!stopRequested && i < step.lines.length - 1) {
+        await new Promise(resolve => setTimeout(resolve, 300));
+      }
+    }
+
+    isPlaying = false;
+    currentPlayingIndex = -1;
+  }
+
+  // Clean up on component destroy
+  onDestroy(() => {
+    if (isPlaying) {
+      stopRequested = true;
+      stopAudio();
+    }
+  });
 </script>
 
 <div class="step-container">
@@ -15,7 +66,7 @@
       {@const id = line.speakerId || line.speaker?.toLowerCase()}
       {@const avatarPath = getCharacterAvatarPath(id)}
       {@const speakerName = getCharacterDisplayName(id)}
-      <div class="chat-bubble">
+      <div class="chat-bubble" class:playing={currentPlayingIndex === i}>
         <div class="bubble-header">
           <div class="speaker-info">
             {#if avatarPath}
@@ -35,6 +86,17 @@
       </div>
     {/each}
   </div>
+
+  <!-- Play conversation button -->
+  <button class="play-conversation-btn" class:playing={isPlaying} on:click={playConversation}>
+    {#if isPlaying}
+      <span class="btn-icon">⏹️</span>
+      <span>توقف</span>
+    {:else}
+      <span class="btn-icon">▶️</span>
+      <span>پخش مکالمه</span>
+    {/if}
+  </button>
 </div>
 
 <style>
@@ -145,6 +207,60 @@
     word-wrap: break-word;
   }
 
+  /* Playing state highlight */
+  .chat-bubble.playing {
+    border-color: var(--color-primary-400, #22d3ee);
+    background: linear-gradient(135deg, var(--color-primary-50, #ecfeff), var(--color-primary-100, #cffafe));
+    box-shadow: 0 0 12px rgba(34, 211, 238, 0.3);
+    transform: scale(1.02);
+  }
+
+  .chat-bubble.playing .dialog-text {
+    color: var(--color-primary-700, #0e7490);
+  }
+
+  /* Play conversation button */
+  .play-conversation-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2, 0.5rem);
+    width: 100%;
+    padding: var(--space-3, 0.75rem) var(--space-4, 1rem);
+    margin-top: var(--space-4, 1rem);
+    background: linear-gradient(135deg, var(--color-primary-500, #06b6d4), var(--color-primary-600, #0891b2));
+    color: white;
+    border: none;
+    border-radius: var(--radius-lg, 0.75rem);
+    font-size: var(--text-base, 1rem);
+    font-weight: var(--font-semibold, 600);
+    cursor: pointer;
+    transition: all var(--transition-normal, 200ms);
+    box-shadow: 0 2px 8px rgba(6, 182, 212, 0.3);
+  }
+
+  .play-conversation-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(6, 182, 212, 0.4);
+  }
+
+  .play-conversation-btn:active {
+    transform: translateY(0);
+  }
+
+  .play-conversation-btn.playing {
+    background: linear-gradient(135deg, var(--color-error-500, #ef4444), var(--color-error-600, #dc2626));
+    box-shadow: 0 2px 8px rgba(239, 68, 68, 0.3);
+  }
+
+  .play-conversation-btn.playing:hover {
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);
+  }
+
+  .btn-icon {
+    font-size: 1.1rem;
+  }
+
   /* Larger screens */
   @media (min-width: 480px) {
     .step-container {
@@ -217,5 +333,23 @@
   :global([data-theme="dark"]) .chat-bubble:nth-child(even) .speaker-name {
     background: rgba(79, 70, 229, 0.3);
     color: #a5b4fc;
+  }
+
+  :global([data-theme="dark"]) .chat-bubble.playing {
+    border-color: #22d3ee;
+    background: linear-gradient(135deg, rgba(8, 145, 178, 0.4), rgba(8, 145, 178, 0.25));
+    box-shadow: 0 0 12px rgba(34, 211, 238, 0.4);
+  }
+
+  :global([data-theme="dark"]) .chat-bubble.playing .dialog-text {
+    color: #22d3ee;
+  }
+
+  :global([data-theme="dark"]) .play-conversation-btn {
+    background: linear-gradient(135deg, #0891b2, #0e7490);
+  }
+
+  :global([data-theme="dark"]) .play-conversation-btn.playing {
+    background: linear-gradient(135deg, #dc2626, #b91c1c);
   }
 </style>
