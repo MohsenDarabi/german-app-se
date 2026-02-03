@@ -82,7 +82,9 @@
 
   function checkAnswer() {
     const builtWord = selectedSyllables.map(s => s.syllable).join('');
-    isCorrect = builtWord === step.word;
+    // Compare without spaces (for multi-word phrases like "Guten Tag")
+    const expectedWord = step.word.replace(/\s+/g, '');
+    isCorrect = builtWord === expectedWord;
 
     if (isCorrect) {
       dispatch('answer', {
@@ -119,12 +121,9 @@
     <BiDiText text={step.instruction || 'قطعات را کنار هم بگذارید'} />
   </p>
 
-  <!-- Translation hint -->
+  <!-- Translation -->
   <div class="hint-section">
     <p class="translation" dir="rtl">{step.translation}</p>
-    {#if step.hint}
-      <p class="phonetic-hint">[{step.hint}]</p>
-    {/if}
   </div>
 
   <!-- Drop zone / answer area -->

@@ -7,10 +7,16 @@ if (import.meta.env.PROD && typeof window !== 'undefined' && 'serviceWorker' in 
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const handleError: HandleClientError = ({ error, event }) => {
-  console.error('Client error:', error);
+  const err = error as Error;
+  console.error('Client error details:', {
+    name: err?.name,
+    message: err?.message,
+    stack: err?.stack,
+    error: err
+  });
 
   return {
-    message: 'An error occurred',
-    code: (error as Error)?.name || 'UNKNOWN'
+    message: err?.message || 'An error occurred',
+    code: err?.name || 'UNKNOWN'
   };
 };
