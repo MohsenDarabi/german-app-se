@@ -639,6 +639,17 @@ Format: `{Persian number} بخش - {brief meaning}`
 }
 ```
 
+### Audio Generation
+
+**Audio is auto-generated** when running `generate-audio.js`. The script creates:
+- Audio ID: `{step.id}-audio` (e.g., `dictation-1-audio`)
+- Uses `targetText` as the text to synthesize
+
+**Evaluation**: Dictation uses binary correct/wrong evaluation:
+- Ignores punctuation (`.`, `!`, `?`, `،`, `؟`)
+- Case-insensitive comparison
+- No percentage scoring
+
 ### Difficulty Settings
 
 | Level | Max Repeats | Show Translation | Show First Letter | Accept Threshold |

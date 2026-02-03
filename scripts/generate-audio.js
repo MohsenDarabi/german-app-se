@@ -617,6 +617,18 @@ function extractAudioItems(lesson) {
           });
         }
         break;
+
+      case 'dictation':
+        // Dictation - audio for the target text to be written
+        if (step.targetText) {
+          items.push({
+            id: step.audioId || `${stepId}-audio`,
+            text: step.targetText.trim(),
+            type: 'sentence',
+            lessonId,
+          });
+        }
+        break;
     }
   }
 
