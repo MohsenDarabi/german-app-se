@@ -102,8 +102,13 @@
     lessonStore.nextStep();
   }
 
-  // Game step types that shouldn't track wrong answers (they report summary stats, not individual Q&A)
-  const gameStepTypes = ['rapid-fire', 'memory-match', 'vocab-check', 'word-hunt', 'speed-challenge'];
+  // Step types that shouldn't track wrong answers for review:
+  // - Game steps: report summary stats, not individual Q&A
+  // - Dictation/spelling: review format (pick-one-of-two) doesn't work for these
+  const skipReviewStepTypes = [
+    'rapid-fire', 'memory-match', 'vocab-check', 'word-hunt', 'speed-challenge',  // games
+    'dictation', 'syllable-spelling', 'spelling'  // typing exercises - not suitable for pick-one review
+  ];
 
   async function handleAnswer(event: CustomEvent) {
     const { correct, userAnswer, correctAnswer, allowContinue, questionText } = event.detail;
@@ -114,9 +119,9 @@
     } else {
       console.log("❌ Wrong Answer - Must retry");
 
-      // Skip wrong answer tracking for game steps (they report summary stats, not individual Q&A)
+      // Skip wrong answer tracking for steps that don't work well with review format
       // Only save wrong answers when we have actual answer data to review later
-      if (!gameStepTypes.includes($currentStep.type) && (userAnswer || correctAnswer)) {
+      if (!skipReviewStepTypes.includes($currentStep.type) && (userAnswer || correctAnswer)) {
         await saveWrongAnswer({
           lessonId: data.lesson.id,
           stepId: $currentStep.id,
