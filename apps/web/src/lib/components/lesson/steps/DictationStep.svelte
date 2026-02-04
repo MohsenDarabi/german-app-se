@@ -144,6 +144,19 @@
       }
     }
 
+    // 4. Words incorrectly capitalized (should be lowercase - verbs, adverbs, adjectives, etc.)
+    for (let i = 0; i < inputWords.length; i++) {
+      const inputWord = inputWords[i];
+      const targetWord = targetWords[i];
+      if (inputWord && targetWord &&
+          /^[A-ZÄÖÜ]/.test(inputWord) && /^[a-zäöü]/.test(targetWord) &&
+          inputWord.toLowerCase() === targetWord.toLowerCase()) {
+        // Skip first word (sentence start is handled separately)
+        if (i === 0) continue;
+        hints.push(`فقط اسم‌ها با حرف بزرگ نوشته می‌شوند - «${targetWord}» اسم نیست («${targetWord}» نه «${inputWord}»)`);
+      }
+    }
+
     return hints;
   }
 

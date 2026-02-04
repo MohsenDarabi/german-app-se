@@ -17,8 +17,8 @@
   "level": "A1",
   "module": 2,
   "lessonNumber": 2,
-  "totalSteps": 29,
-  "estimatedMinutes": 15,
+  "totalSteps": 37,
+  "estimatedMinutes": 18,
   "vocabulary": [
     {
       "de": "machen",
@@ -107,6 +107,18 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-machen",
+      "word": "machen",
+      "translation": "انجام دادن / درست کردن",
+      "syllables": ["ma", "chen"],
+      "distractors": ["mach", "en", "che"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «machen» یعنی انجام دادن - یک فعل باقاعده پرکاربرد."
+      }
+    },
+    {
       "type": "new-word",
       "id": "s3",
       "word": {
@@ -118,6 +130,18 @@
           "de": "Ich mache Kaffee.",
           "fa": "من قهوه درست می‌کنم."
         }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-ich-mache",
+      "word": "ich mache",
+      "translation": "من انجام می‌دهم",
+      "syllables": ["ich", "ma", "che"],
+      "distractors": ["machst", "macht", "mach"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «ich mache» - با ich پسوند -e می‌گیریم."
       }
     },
     {
@@ -135,6 +159,18 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-du-machst",
+      "word": "du machst",
+      "translation": "تو انجام می‌دهی",
+      "syllables": ["du", "machst"],
+      "distractors": ["mache", "macht", "mach"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «du machst» - با du پسوند -st می‌گیریم."
+      }
+    },
+    {
       "type": "new-word",
       "id": "s5",
       "word": {
@@ -149,6 +185,18 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-er-macht",
+      "word": "er macht",
+      "translation": "او (مرد) انجام می‌دهد",
+      "syllables": ["er", "macht"],
+      "distractors": ["mache", "machst", "es"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «er macht» - با er/sie/es پسوند -t می‌گیریم."
+      }
+    },
+    {
       "type": "new-word",
       "id": "s5b",
       "word": {
@@ -160,6 +208,18 @@
           "de": "Sie macht Musik.",
           "fa": "او موسیقی می‌سازد."
         }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-sie-macht",
+      "word": "sie macht",
+      "translation": "او (زن) انجام می‌دهد",
+      "syllables": ["sie", "macht"],
+      "distractors": ["mache", "machst", "es"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «sie macht» - با er/sie/es پسوند -t می‌گیریم."
       }
     },
     {
@@ -232,7 +292,7 @@
     },
     {
       "type": "syllable-spelling",
-      "id": "syllable-1",
+      "id": "syllable-spielen",
       "word": "spielen",
       "translation": "بازی کردن",
       "syllables": ["spie", "len"],
@@ -257,6 +317,18 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-lernen",
+      "word": "lernen",
+      "translation": "یاد گرفتن",
+      "syllables": ["ler", "nen"],
+      "distractors": ["lern", "en", "ern"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «lernen» یعنی یاد گرفتن - یک فعل باقاعده."
+      }
+    },
+    {
       "type": "new-word",
       "id": "s9",
       "word": {
@@ -272,7 +344,7 @@
     },
     {
       "type": "syllable-spelling",
-      "id": "syllable-2",
+      "id": "syllable-arbeiten",
       "word": "arbeiten",
       "translation": "کار کردن",
       "syllables": ["ar", "bei", "ten"],
@@ -568,6 +640,18 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-heute",
+      "word": "heute",
+      "translation": "امروز",
+      "syllables": ["heu", "te"],
+      "distractors": ["hei", "ta", "eu"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «heute» یعنی امروز. توجه: «eu» صدای «اوی» می‌دهد."
+      }
+    },
+    {
       "type": "new-word",
       "id": "s18",
       "word": {
@@ -579,6 +663,18 @@
           "de": "Ich lerne jeden Tag.",
           "fa": "من هر روز یاد می‌گیرم."
         }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-jeden-tag",
+      "word": "jeden Tag",
+      "translation": "هر روز",
+      "syllables": ["je", "den", "Tag"],
+      "distractors": ["jed", "Tog", "tag"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «jeden Tag» یعنی هر روز. توجه: Tag با حرف بزرگ چون اسم است."
       }
     },
     {
