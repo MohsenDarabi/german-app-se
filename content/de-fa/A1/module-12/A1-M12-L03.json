@@ -309,6 +309,53 @@
       "feedback": { "explanation": "aufhören: du hörst ... auf" }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-nachts",
+      "word": "nachts",
+      "translation": "شب دیروقت",
+      "syllables": ["nachts"],
+      "distractors": ["nochts", "nachtz", "nechts", "nachs"]
+    },
+    {
+      "type": "word-order",
+      "id": "w4",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["kaufe", "Mittags", "ein.", "ich"],
+      "correctOrder": [1, 0, 3, 2],
+      "correctSentence": { "de": "Mittags kaufe ich ein.", "fa": "ظهرها خرید می‌کنم." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "کدام گزینه معنی «spät» است؟",
+      "options": ["زود", "دیر", "صبح", "شب"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "spät = دیر (متضاد früh)" }
+    },
+    {
+      "type": "matching",
+      "id": "m2",
+      "instruction": "متضادها را جفت کنید",
+      "items": [
+        { "id": "i1", "text": "früh" },
+        { "id": "i2", "text": "aufstehen" },
+        { "id": "i3", "text": "anfangen" },
+        { "id": "i4", "text": "aufmachen" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "zumachen" },
+        { "id": "m2", "text": "spät" },
+        { "id": "m3", "text": "aufhören" },
+        { "id": "m4", "text": "hinsetzen" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m4"],
+        ["i3", "m3"],
+        ["i4", "m1"]
+      ]
+    },
+    {
       "type": "dictation",
       "id": "dictation-1",
       "targetText": "Morgens stehe ich um sechs Uhr auf.",
