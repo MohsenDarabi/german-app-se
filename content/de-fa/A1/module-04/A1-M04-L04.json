@@ -17,8 +17,18 @@
   "level": "A1",
   "module": 4,
   "lessonNumber": 4,
-  "totalSteps": 26,
-  "estimatedMinutes": 15,
+  "totalSteps": 38,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "den", "fa": "حرف تعریف مفعولی مذکر", "grammar": { "pos": "particle" } },
+    { "de": "einen", "fa": "یک (مفعولی مذکر)", "grammar": { "pos": "particle" } },
+    { "de": "sehen", "fa": "دیدن", "grammar": { "pos": "verb", "verb": { "infinitiv": "sehen", "praesens": { "ich": "sehe", "du": "siehst", "er_sie_es": "sieht", "wir": "sehen", "ihr": "seht", "sie_Sie": "sehen" } } } },
+    { "de": "kaufen", "fa": "خریدن", "grammar": { "pos": "verb", "verb": { "infinitiv": "kaufen", "praesens": { "ich": "kaufe", "du": "kaufst", "er_sie_es": "kauft", "wir": "kaufen", "ihr": "kauft", "sie_Sie": "kaufen" } } } },
+    { "de": "brauchen", "fa": "نیاز داشتن", "grammar": { "pos": "verb", "verb": { "infinitiv": "brauchen", "praesens": { "ich": "brauche", "du": "brauchst", "er_sie_es": "braucht", "wir": "brauchen", "ihr": "braucht", "sie_Sie": "brauchen" } } } },
+    { "de": "trinken", "fa": "نوشیدن", "grammar": { "pos": "verb", "verb": { "infinitiv": "trinken", "praesens": { "ich": "trinke", "du": "trinkst", "er_sie_es": "trinkt", "wir": "trinken", "ihr": "trinkt", "sie_Sie": "trinken" } } } },
+    { "de": "der Kaffee", "fa": "قهوه", "grammar": { "pos": "noun", "noun": { "artikel": "m" } } },
+    { "de": "der Tee", "fa": "چای", "grammar": { "pos": "noun", "noun": { "artikel": "m" } } }
+  ],
   "steps": [
     {
       "type": "grammar-tip",
@@ -63,6 +73,16 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-den",
+      "word": "den",
+      "translation": "حرف تعریف مفعولی مذکر",
+      "syllables": ["den"],
+      "distractors": ["der", "dem", "das"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": { "onCorrect": "آفرین! der → den در حالت مفعولی" }
+    },
+    {
       "type": "new-word",
       "id": "s4",
       "word": {
@@ -75,6 +95,16 @@
           "fa": "من یک سیب می‌خرم."
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-einen",
+      "word": "einen",
+      "translation": "یک (مفعولی مذکر)",
+      "syllables": ["ei", "nen"],
+      "distractors": ["ai", "nun", "non"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": { "onCorrect": "آفرین! ein → einen در حالت مفعولی مذکر" }
     },
     {
       "type": "rapid-fire",
@@ -129,6 +159,16 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-sehen",
+      "word": "sehen",
+      "translation": "دیدن",
+      "syllables": ["se", "hen"],
+      "distractors": ["sa", "han", "hon"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": { "onCorrect": "آفرین! «sehen» فعلی است که مفعول می‌گیرد" }
+    },
+    {
       "type": "new-word",
       "id": "s6",
       "word": {
@@ -143,6 +183,16 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-kaufen",
+      "word": "kaufen",
+      "translation": "خریدن",
+      "syllables": ["kau", "fen"],
+      "distractors": ["kou", "fan", "fon"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": { "onCorrect": "آفرین! «kaufen» یعنی خریدن - au صدای آو" }
+    },
+    {
       "type": "new-word",
       "id": "s7",
       "word": {
@@ -155,6 +205,16 @@
           "fa": "ما یک میز نیاز داریم."
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-brauchen",
+      "word": "brauchen",
+      "translation": "نیاز داشتن",
+      "syllables": ["brau", "chen"],
+      "distractors": ["brou", "chan", "chon"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": { "onCorrect": "آفرین! «brauchen» یعنی نیاز داشتن - au صدای آو" }
     },
     {
       "type": "dialog",
@@ -197,6 +257,30 @@
             "fa": "چراغ قشنگ است!"
           }
         }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        {
+          "question": "تام چه چیزی نیاز دارد؟",
+          "options": ["چراغ", "صندلی", "میز"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: «Ich brauche einen Stuhl.»",
+          "relatedLineIndex": 0
+        },
+        {
+          "question": "لیزا چه چیزی می‌خرد؟",
+          "options": ["صندلی", "چراغ", "میز"],
+          "correctIndex": 1,
+          "explanation": "لیزا گفت: «Ich kaufe die Lampe.»",
+          "relatedLineIndex": 3
+        },
+        {
+          "question": "چرا در «den Stuhl» از den استفاده شده؟",
+          "options": ["چون فاعل است", "چون مفعول است", "چون مونث است"],
+          "correctIndex": 1,
+          "explanation": "Stuhl مذکر است و در حالت مفعولی der → den می‌شود.",
+          "relatedLineIndex": 2
+        }
       ]
     },
     {
@@ -231,6 +315,12 @@
       ],
       "feedback": {
         "explanation": "**das** Buch (خنثی در مفعولی تغییر نمی‌کند)"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! Buch خنثی است (das) و در مفعولی تغییر نمی‌کند.",
+        "onWrong": "دقت کنید: Buch خنثی است و خنثی در مفعولی تغییر نمی‌کند - پس das می‌ماند.",
+        "errorCategory": "wrong-case",
+        "highlights": ["das", "خنثی"]
       }
     },
     {
@@ -249,6 +339,12 @@
       ],
       "feedback": {
         "explanation": "**den** Mann (مذکر در مفعولی: der → den)"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! Mann مذکر است و در مفعولی der → den می‌شود.",
+        "onWrong": "دقت کنید: Mann مذکر است و فقط مذکر در مفعولی تغییر می‌کند: der → den",
+        "errorCategory": "wrong-case",
+        "highlights": ["den", "مذکر"]
       }
     },
     {
@@ -304,6 +400,16 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-kaffee",
+      "word": "der Kaffee",
+      "translation": "قهوه",
+      "syllables": ["der", "Kaf", "fee"],
+      "distractors": ["den", "Kef", "fae"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": { "onCorrect": "آفرین! «der Kaffee» - مذکر پس در مفعولی: einen Kaffee" }
+    },
+    {
       "type": "new-word",
       "id": "s13",
       "word": {
@@ -318,6 +424,16 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-tee",
+      "word": "der Tee",
+      "translation": "چای",
+      "syllables": ["der", "Tee"],
+      "distractors": ["den", "Tea", "Tae"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": { "onCorrect": "آفرین! «der Tee» - مذکر پس در مفعولی: einen Tee" }
+    },
+    {
       "type": "new-word",
       "id": "s14",
       "word": {
@@ -330,6 +446,16 @@
           "fa": "ما آب می‌نوشیم."
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-trinken",
+      "word": "trinken",
+      "translation": "نوشیدن",
+      "syllables": ["trin", "ken"],
+      "distractors": ["tran", "kan", "kon"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": { "onCorrect": "آفرین! «trinken» فعلی است که مفعول می‌گیرد" }
     },
     {
       "type": "matching",
@@ -392,6 +518,12 @@
       "feedback": {
         "correct": "آفرین! در مفعولی: der → den",
         "incorrect": "جواب درست: Ich sehe den Mann. (مذکر در مفعولی: der → den)"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! فقط مذکر تغییر می‌کند: der → den",
+        "onWrong": "دقت کنید: بعد از sehen حالت مفعولی می‌آید و در مذکر der → den می‌شود.",
+        "errorCategory": "wrong-case",
+        "highlights": ["den", "مفعولی"]
       }
     },
     {
@@ -468,6 +600,12 @@
       ],
       "feedback": {
         "explanation": "**einen** Kaffee (مذکر نامعین در مفعولی: ein → einen)"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! Kaffee مذکر است و در مفعولی ein → einen می‌شود.",
+        "onWrong": "دقت کنید: بعد از möchte حالت مفعولی می‌آید و Kaffee مذکر است: ein → einen",
+        "errorCategory": "wrong-case",
+        "highlights": ["einen", "مذکر"]
       }
     },
     {
@@ -486,7 +624,27 @@
       ],
       "feedback": {
         "explanation": "**einen** Bruder (مذکر نامعین در مفعولی: ein → einen)"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! Bruder مذکر است و بعد از haben حالت مفعولی می‌آید: ein → einen",
+        "onWrong": "دقت کنید: haben مفعول می‌گیرد و Bruder مذکر است: ein → einen",
+        "errorCategory": "wrong-case",
+        "highlights": ["einen", "Bruder"]
       }
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Ich sehe den Mann.",
+      "translation": "من مرد را می‌بینم.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Ich kaufe einen Kaffee.",
+      "translation": "من یک قهوه می‌خرم.",
+      "difficulty": "A1"
     },
     {
       "type": "vocab-check",
