@@ -516,6 +516,12 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         title: "صفت تفضیلی (Komparativ)",
         description: "یاد بگیرید چطور چیزها را با هم مقایسه کنید.",
         path: "/learn/de-fa/A2/A2-M02-L01"
+      },
+      {
+        id: "A2-M02-L02",
+        title: "صفت عالی (Superlativ)",
+        description: "یاد بگیرید چطور بگویید چیزی بهترین یا بیشترین است.",
+        path: "/learn/de-fa/A2/A2-M02-L02"
       }
     ]
   }

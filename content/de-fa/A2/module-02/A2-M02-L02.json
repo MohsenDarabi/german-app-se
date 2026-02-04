@@ -1,0 +1,421 @@
+{
+  "id": "A2-M02-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Superlativ - das Beste", "fa": "صفت عالی - بهترین" },
+  "description": "یاد بگیرید چطور بگویید چیزی بهترین یا بیشترین است",
+  "level": "A2",
+  "module": 2,
+  "lessonNumber": 2,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "am schnellsten", "fa": "سریع‌ترین", "grammar": { "pos": "adjective", "form": "superlative" } },
+    { "de": "am größten", "fa": "بزرگ‌ترین", "grammar": { "pos": "adjective", "form": "superlative" } },
+    { "de": "am kleinsten", "fa": "کوچک‌ترین", "grammar": { "pos": "adjective", "form": "superlative" } },
+    { "de": "am ältesten", "fa": "مسن‌ترین", "grammar": { "pos": "adjective", "form": "superlative" } },
+    { "de": "am jüngsten", "fa": "جوان‌ترین", "grammar": { "pos": "adjective", "form": "superlative" } },
+    { "de": "am besten", "fa": "بهترین", "grammar": { "pos": "adjective", "form": "superlative" } },
+    { "de": "am liebsten", "fa": "از همه بیشتر دوست داشتن", "grammar": { "pos": "adjective", "form": "superlative" } },
+    { "de": "am meisten", "fa": "بیشترین", "grammar": { "pos": "adjective", "form": "superlative" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "Superlativ - صفت عالی",
+      "content": "🏆 **Superlativ** برای بیان بالاترین درجه استفاده می‌شود.\n\n📝 **ساختار:**\n**am** + صفت + **-sten**\n\n• schnell → am schnell**sten**\n  Er läuft **am schnellsten**.\n  = او سریع‌ترین می‌دود.\n\n⚠️ صفت‌های با Umlaut در Komparativ، در Superlativ هم Umlaut دارند:\n• groß → größer → am gr**ö**ßten\n• alt → älter → am **ä**ltesten",
+      "examples": [
+        { "de": "Das ist das größte Haus.", "fa": "این بزرگ‌ترین خانه است." },
+        { "de": "Sie singt am schönsten.", "fa": "او از همه زیباتر می‌خواند." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "am schnellsten", "fa": "سریع‌ترین" },
+      "example": { "text": { "de": "Der Gepard ist am schnellsten.", "fa": "یوزپلنگ سریع‌ترین است." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "am größten", "fa": "بزرگ‌ترین" },
+      "example": { "text": { "de": "Russland ist am größten.", "fa": "روسیه بزرگ‌ترین است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-schnellsten",
+      "word": "schnellsten",
+      "translation": "سریع‌ترین",
+      "syllables": ["schnell", "sten"],
+      "distractors": ["schnall", "stan", "schnoll", "stun"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«Er ist am schnellsten» یعنی چه؟",
+      "options": ["او سریع است", "او سریع‌تر است", "او سریع‌ترین است", "او سریع می‌دود"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین!", "incorrect": "am schnellsten = سریع‌ترین" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Der Mount Everest ist {0}.",
+      "options": ["am höchsten", "höher", "hoch", "höchst"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "am höchsten = بلندترین" }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "am kleinsten", "fa": "کوچک‌ترین" },
+      "example": { "text": { "de": "Mein Hund ist am kleinsten.", "fa": "سگ من کوچک‌ترین است." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "am ältesten", "fa": "مسن‌ترین" },
+      "example": { "text": { "de": "Meine Oma ist am ältesten.", "fa": "مادربزرگم مسن‌ترین است." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "am jüngsten", "fa": "جوان‌ترین" },
+      "example": { "text": { "de": "Tim ist am jüngsten in der Familie.", "fa": "تیم جوان‌ترین در خانواده است." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "صفت‌های بی‌قاعده",
+      "content": "⚠️ **صفت‌های بی‌قاعده** الگوی خاصی دارند:\n\n| صفت | Komparativ | Superlativ |\n|-----|------------|------------|\n| gut | besser | am **besten** |\n| viel | mehr | am **meisten** |\n| gern | lieber | am **liebsten** |\n\n📝 این‌ها را باید حفظ کنید!",
+      "examples": [
+        { "de": "Diese Pizza ist am besten.", "fa": "این پیتزا بهترین است." },
+        { "de": "Ich esse am liebsten Schokolade.", "fa": "از همه بیشتر شکلات دوست دارم." }
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-groessten",
+      "word": "größten",
+      "translation": "بزرگ‌ترین",
+      "syllables": ["größ", "ten"],
+      "distractors": ["gros", "tan", "graz", "tun"]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "Superlativ",
+      "instruction": "صفت عالی درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "schnell →", "left": "am schnellsten", "right": "am schneller", "correctSide": "left" },
+        { "prompt": "groß →", "left": "am großsten", "right": "am größten", "correctSide": "right" },
+        { "prompt": "klein →", "left": "am kleinsten", "right": "am kleineren", "correctSide": "left" },
+        { "prompt": "alt →", "left": "am alten", "right": "am ältesten", "correctSide": "right" },
+        { "prompt": "jung →", "left": "am jüngsten", "right": "am jungsten", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "am besten", "fa": "بهترین (از gut)" },
+      "example": { "text": { "de": "Dieses Restaurant ist am besten.", "fa": "این رستوران بهترین است." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "am liebsten", "fa": "از همه بیشتر دوست داشتن (از gern)" },
+      "example": { "text": { "de": "Ich esse am liebsten Pizza.", "fa": "از همه بیشتر پیتزا دوست دارم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": { "de": "am meisten", "fa": "بیشترین (از viel)" },
+      "example": { "text": { "de": "Er verdient am meisten.", "fa": "او بیشترین را درآمد دارد." } }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "بهترین رستوران",
+      "context": "دوستان درباره رستوران صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Welches Restaurant ist am besten?", "fa": "کدام رستوران بهترین است؟" } },
+        { "speaker": "Max", "text": { "de": "Ich finde das italienische am besten.", "fa": "فکر می‌کنم ایتالیایی بهترین است." } },
+        { "speaker": "Anna", "text": { "de": "Ja, die Pizza dort ist am leckersten!", "fa": "بله، پیتزای آنجا خوشمزه‌ترین است!" } },
+        { "speaker": "Max", "text": { "de": "Und die Preise sind am günstigsten.", "fa": "و قیمت‌ها مناسب‌ترین است." } },
+        { "speaker": "Anna", "text": { "de": "Was isst du dort am liebsten?", "fa": "آنجا از همه بیشتر چه می‌خوری؟" } },
+        { "speaker": "Max", "text": { "de": "Am liebsten esse ich Spaghetti!", "fa": "از همه بیشتر اسپاگتی می‌خورم!" } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "کدام رستوران بهترین است؟", "options": ["چینی", "ایتالیایی", "آلمانی"], "correctIndex": 1 },
+        { "question": "ماکس از همه بیشتر چه می‌خورد؟", "options": ["پیتزا", "سالاد", "اسپاگتی"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Dieses Buch ist {0}.",
+      "options": ["am besten", "besser", "gut", "beste"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "gut → besser → am besten" }
+    },
+    {
+      "type": "word-order",
+      "id": "w1",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["schnellsten.", "am", "läuft", "Er"],
+      "correctOrder": [3, 2, 1, 0],
+      "correctSentence": { "de": "Er läuft am schnellsten.", "fa": "او سریع‌ترین می‌دود." }
+    },
+    {
+      "type": "word-order",
+      "id": "w2",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["besten?", "am", "Restaurant", "ist", "Welches"],
+      "correctOrder": [4, 2, 3, 1, 0],
+      "correctSentence": { "de": "Welches Restaurant ist am besten?", "fa": "کدام رستوران بهترین است؟" }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "صفت‌ها را با Superlativ جفت کنید",
+      "items": [
+        { "id": "i1", "text": "gut" },
+        { "id": "i2", "text": "viel" },
+        { "id": "i3", "text": "gern" },
+        { "id": "i4", "text": "groß" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "am größten" },
+        { "id": "m2", "text": "am besten" },
+        { "id": "m3", "text": "am meisten" },
+        { "id": "m4", "text": "am liebsten" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m3"],
+        ["i3", "m4"],
+        ["i4", "m1"]
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-besten",
+      "word": "besten",
+      "translation": "بهترین",
+      "syllables": ["bes", "ten"],
+      "distractors": ["bas", "tan", "bis", "tun"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "Superlativ از «gut» چیست؟",
+      "options": ["am gutsten", "am besten", "am besser", "am güt"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "gut → besser → am besten (بی‌قاعده)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich esse {0} Schokolade.",
+      "options": ["am liebsten", "lieber", "gern", "liebsten"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "gern → lieber → am liebsten" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "خانواده",
+      "context": "الی درباره خانواده‌اش صحبت می‌کند",
+      "lines": [
+        { "speaker": "Tom", "text": { "de": "Wer ist am ältesten in deiner Familie?", "fa": "چه کسی مسن‌ترین در خانواده‌ات است؟" } },
+        { "speaker": "Eli", "text": { "de": "Meine Oma ist am ältesten. Sie ist 85.", "fa": "مادربزرگم مسن‌ترین است. او ۸۵ ساله است." } },
+        { "speaker": "Tom", "text": { "de": "Und wer ist am jüngsten?", "fa": "و چه کسی جوان‌ترین است؟" } },
+        { "speaker": "Eli", "text": { "de": "Mein Neffe. Er ist erst 2 Jahre alt.", "fa": "برادرزاده‌ام. او فقط ۲ ساله است." } },
+        { "speaker": "Tom", "text": { "de": "Wer kocht am besten in der Familie?", "fa": "چه کسی در خانواده بهترین آشپزی می‌کند؟" } },
+        { "speaker": "Eli", "text": { "de": "Meine Mutter kocht am besten!", "fa": "مادرم بهترین آشپزی می‌کند!" } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "مادربزرگ الی چند ساله است؟", "options": ["۷۵", "۸۵", "۹۵"], "correctIndex": 1 },
+        { "question": "چه کسی بهترین آشپزی می‌کند؟", "options": ["پدر", "مادربزرگ", "مادر"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "بی‌قاعده‌ها",
+      "instruction": "Superlativ درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "gut →", "left": "am besten", "right": "am gutsten", "correctSide": "left" },
+        { "prompt": "viel →", "left": "am vielsten", "right": "am meisten", "correctSide": "right" },
+        { "prompt": "gern →", "left": "am liebsten", "right": "am gernsten", "correctSide": "left" },
+        { "prompt": "schnell →", "left": "am schneller", "right": "am schnellsten", "correctSide": "right" },
+        { "prompt": "klein →", "left": "am kleinsten", "right": "am kleiner", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Meine Oma ist {0} in der Familie.",
+      "options": ["am ältesten", "älter", "alt", "ältesten"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "alt → älter → am ältesten" }
+    },
+    {
+      "type": "word-order",
+      "id": "w3",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["liebsten.", "Pizza", "esse", "am", "Ich"],
+      "correctOrder": [4, 2, 3, 0, 1],
+      "correctSentence": { "de": "Ich esse am liebsten Pizza.", "fa": "از همه بیشتر پیتزا می‌خورم." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "«Wer singt am schönsten?» یعنی چه؟",
+      "options": ["چه کسی زیبا می‌خواند؟", "چه کسی زیباتر می‌خواند؟", "چه کسی از همه زیباتر می‌خواند؟", "زیبا بخوان"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین!", "incorrect": "am schönsten = از همه زیباتر" }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-liebsten",
+      "word": "liebsten",
+      "translation": "از همه بیشتر",
+      "syllables": ["lieb", "sten"],
+      "distractors": ["leib", "stan", "lob", "stun"]
+    },
+    {
+      "type": "matching",
+      "id": "m2",
+      "instruction": "جملات را با ترجمه جفت کنید",
+      "items": [
+        { "id": "i1", "text": "am schnellsten" },
+        { "id": "i2", "text": "am besten" },
+        { "id": "i3", "text": "am liebsten" },
+        { "id": "i4", "text": "am größten" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "بهترین" },
+        { "id": "m2", "text": "سریع‌ترین" },
+        { "id": "m3", "text": "بزرگ‌ترین" },
+        { "id": "m4", "text": "از همه بیشتر دوست داشتن" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m1"],
+        ["i3", "m4"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er verdient {0} in der Firma.",
+      "options": ["am meisten", "mehr", "viel", "meisten"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "viel → mehr → am meisten" }
+    },
+    {
+      "type": "word-order",
+      "id": "w4",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["jüngsten.", "Familie", "ist", "am", "der", "Tim", "in"],
+      "correctOrder": [5, 2, 3, 0, 6, 4, 1],
+      "correctSentence": { "de": "Tim ist am jüngsten in der Familie.", "fa": "تیم جوان‌ترین در خانواده است." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "کدام جمله درست است؟",
+      "options": ["Er ist am größer.", "Er ist am größten.", "Er ist der größten.", "Er ist größten."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "ساختار: am + صفت + -sten" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Diese Stadt ist {0} in Deutschland.",
+      "options": ["am kleinsten", "kleiner", "klein", "kleinsten"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "klein → kleiner → am kleinsten" }
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Er läuft am schnellsten.",
+      "translation": "او سریع‌ترین می‌دود.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Dieses Restaurant ist am besten.",
+      "translation": "این رستوران بهترین است.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-3",
+      "targetText": "Ich esse am liebsten Pizza.",
+      "translation": "از همه بیشتر پیتزا می‌خورم.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "memory-match",
+      "id": "g3",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "am schnellsten", "fa": "سریع‌ترین" },
+        { "de": "am größten", "fa": "بزرگ‌ترین" },
+        { "de": "am besten", "fa": "بهترین" },
+        { "de": "am liebsten", "fa": "از همه بیشتر" },
+        { "de": "am ältesten", "fa": "مسن‌ترین" },
+        { "de": "am meisten", "fa": "بیشترین" }
+      ],
+      "timeLimit": 60
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "am schnellsten", "fa": "سریع‌ترین" },
+        { "de": "am größten", "fa": "بزرگ‌ترین" },
+        { "de": "am kleinsten", "fa": "کوچک‌ترین" },
+        { "de": "am ältesten", "fa": "مسن‌ترین" },
+        { "de": "am jüngsten", "fa": "جوان‌ترین" },
+        { "de": "am besten", "fa": "بهترین" },
+        { "de": "am liebsten", "fa": "از همه بیشتر دوست داشتن" },
+        { "de": "am meisten", "fa": "بیشترین" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما Superlativ (صفت عالی) را یاد گرفتید!\n\n📝 **ساختار Superlativ:**\n**am** + صفت + **-sten**\n\n📝 **صفت‌های بی‌قاعده:**\n• gut → besser → **am besten**\n• viel → mehr → **am meisten**\n• gern → lieber → **am liebsten**\n\n📝 **صفت‌های با Umlaut:**\n• groß → **am größten**\n• alt → **am ältesten**\n• jung → **am jüngsten**",
+      "xpEarned": 50,
+      "vocabularyLearned": [
+        { "word": { "de": "am schnellsten", "fa": "سریع‌ترین" } },
+        { "word": { "de": "am größten", "fa": "بزرگ‌ترین" } },
+        { "word": { "de": "am kleinsten", "fa": "کوچک‌ترین" } },
+        { "word": { "de": "am ältesten", "fa": "مسن‌ترین" } },
+        { "word": { "de": "am jüngsten", "fa": "جوان‌ترین" } },
+        { "word": { "de": "am besten", "fa": "بهترین" } },
+        { "word": { "de": "am liebsten", "fa": "از همه بیشتر دوست داشتن" } },
+        { "word": { "de": "am meisten", "fa": "بیشترین" } }
+      ]
+    }
+  ]
+}
