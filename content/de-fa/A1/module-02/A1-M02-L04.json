@@ -17,8 +17,8 @@
   "level": "A1",
   "module": 2,
   "lessonNumber": 4,
-  "totalSteps": 30,
-  "estimatedMinutes": 15,
+  "totalSteps": 41,
+  "estimatedMinutes": 20,
   "vocabulary": [
     {
       "de": "essen",
@@ -97,6 +97,18 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-essen",
+      "word": "essen",
+      "translation": "خوردن",
+      "syllables": ["es", "sen"],
+      "distractors": ["is", "san", "as"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «essen» یک فعل با تغییر ریشه است: ich esse، du isst"
+      }
+    },
+    {
       "type": "new-word",
       "id": "s3",
       "word": {
@@ -108,6 +120,18 @@
           "de": "Ich esse Brot.",
           "fa": "من نان می‌خورم."
         }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-ich-esse",
+      "word": "ich esse",
+      "translation": "من می‌خورم",
+      "syllables": ["ich", "es", "se"],
+      "distractors": ["du", "is", "sa"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «ich esse» - با ich ریشه تغییر نمی‌کند."
       }
     },
     {
@@ -125,6 +149,18 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-du-isst",
+      "word": "du isst",
+      "translation": "تو می‌خوری",
+      "syllables": ["du", "isst"],
+      "distractors": ["ich", "esst", "esse"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «du isst» - توجه کنید: e تغییر به i کرده!"
+      }
+    },
+    {
       "type": "new-word",
       "id": "s5",
       "word": {
@@ -136,6 +172,18 @@
           "de": "Er isst einen Apfel.",
           "fa": "او یک سیب می‌خورد."
         }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-er-isst",
+      "word": "er isst",
+      "translation": "او می‌خورد",
+      "syllables": ["er", "isst"],
+      "distractors": ["sie", "esst", "esse"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «er isst» - هم du و هم er/sie/es تغییر ریشه دارند."
       }
     },
     {
@@ -203,6 +251,18 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-lesen",
+      "word": "lesen",
+      "translation": "خواندن",
+      "syllables": ["le", "sen"],
+      "distractors": ["li", "san", "sa"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «lesen» تغییر ریشه e→ie دارد: du liest"
+      }
+    },
+    {
       "type": "new-word",
       "id": "s8",
       "word": {
@@ -217,6 +277,18 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-du-liest",
+      "word": "du liest",
+      "translation": "تو می‌خوانی",
+      "syllables": ["du", "liest"],
+      "distractors": ["ich", "lest", "lese"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «du liest» - توجه: e تغییر به ie کرده!"
+      }
+    },
+    {
       "type": "new-word",
       "id": "s9",
       "word": {
@@ -228,6 +300,18 @@
           "de": "Er liest die Zeitung.",
           "fa": "او روزنامه می‌خواند."
         }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-er-liest",
+      "word": "er liest",
+      "translation": "او می‌خواند",
+      "syllables": ["er", "liest"],
+      "distractors": ["sie", "lest", "lese"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «er liest» - در er/sie/es هم تغییر ریشه داریم."
       }
     },
     {
@@ -271,6 +355,18 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-du-schlaefst",
+      "word": "du schläfst",
+      "translation": "تو می‌خوابی",
+      "syllables": ["du", "schläfst"],
+      "distractors": ["ich", "schlafst", "schlafe"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «du schläfst» - توجه: a تغییر به ä کرده!"
+      }
+    },
+    {
       "type": "new-word",
       "id": "s12",
       "word": {
@@ -282,6 +378,18 @@
           "de": "Das Baby schläft.",
           "fa": "نوزاد می‌خوابد."
         }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-er-schlaeft",
+      "word": "er schläft",
+      "translation": "او می‌خوابد",
+      "syllables": ["er", "schläft"],
+      "distractors": ["sie", "schlaft", "schlafe"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «er schläft» - در er/sie/es هم a→ä می‌شود."
       }
     },
     {
@@ -341,6 +449,18 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-du-faehrst",
+      "word": "du fährst",
+      "translation": "تو می‌روی",
+      "syllables": ["du", "fährst"],
+      "distractors": ["ich", "fahrst", "fahre"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «du fährst» - توجه: a تغییر به ä کرده!"
+      }
+    },
+    {
       "type": "new-word",
       "id": "s16",
       "word": {
@@ -352,6 +472,18 @@
           "de": "Er fährt nach Berlin.",
           "fa": "او به برلین می‌رود."
         }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-er-faehrt",
+      "word": "er fährt",
+      "translation": "او می‌رود",
+      "syllables": ["er", "fährt"],
+      "distractors": ["sie", "fahrt", "fahre"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «er fährt» - در er/sie/es هم a→ä می‌شود."
       }
     },
     {
