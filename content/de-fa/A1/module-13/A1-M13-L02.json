@@ -1,0 +1,422 @@
+{
+  "id": "A1-M13-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "müssen und wollen", "fa": "باید و خواستن" },
+  "description": "یاد بگیرید چطور بگویید چه کارهایی باید انجام دهید یا می‌خواهید",
+  "level": "A1",
+  "module": 13,
+  "lessonNumber": 2,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "müssen", "fa": "باید/مجبور بودن", "grammar": { "pos": "verb" } },
+    { "de": "wollen", "fa": "خواستن", "grammar": { "pos": "verb" } },
+    { "de": "arbeiten", "fa": "کار کردن", "grammar": { "pos": "verb" } },
+    { "de": "lernen", "fa": "یاد گرفتن", "grammar": { "pos": "verb" } },
+    { "de": "schlafen", "fa": "خوابیدن", "grammar": { "pos": "verb" } },
+    { "de": "essen", "fa": "خوردن", "grammar": { "pos": "verb" } },
+    { "de": "heute", "fa": "امروز", "grammar": { "pos": "adverb" } },
+    { "de": "jetzt", "fa": "الان", "grammar": { "pos": "adverb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "müssen - باید/مجبور بودن",
+      "content": "**müssen** = باید / مجبور بودن\n\n🎯 برای بیان اجبار یا ضرورت:\n• Ich **muss** arbeiten. = باید کار کنم.\n• Du **musst** lernen. = باید درس بخوانی.\n\n📝 **صرف müssen:**\n• ich **muss**\n• du **musst**\n• er/sie/es **muss**\n• wir **müssen**\n• ihr **müsst**\n• sie/Sie **müssen**",
+      "examples": [
+        { "de": "Ich muss jetzt gehen.", "fa": "الان باید بروم." },
+        { "de": "Wir müssen Deutsch lernen.", "fa": "باید آلمانی یاد بگیریم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "müssen", "fa": "باید/مجبور بودن" },
+      "example": { "text": { "de": "Ich muss heute arbeiten.", "fa": "امروز باید کار کنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-muessen",
+      "word": "müssen",
+      "translation": "باید",
+      "syllables": ["müs", "sen"],
+      "distractors": ["mus", "san", "mes", "sun"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "arbeiten", "fa": "کار کردن" },
+      "example": { "text": { "de": "Er muss viel arbeiten.", "fa": "او باید زیاد کار کند." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "lernen", "fa": "یاد گرفتن" },
+      "example": { "text": { "de": "Ich muss Deutsch lernen.", "fa": "باید آلمانی یاد بگیرم." } }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich {0} heute arbeiten.",
+      "options": ["muss", "musst", "müssen", "müsst"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "ich muss (اول شخص مفرد)" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«Ich muss jetzt gehen» یعنی چه؟",
+      "options": ["الان می‌روم", "الان باید بروم", "الان می‌خواهم بروم", "الان می‌توانم بروم"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "müssen = باید → الان باید بروم" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "wollen - خواستن",
+      "content": "**wollen** = خواستن\n\n🎯 برای بیان خواسته یا تمایل:\n• Ich **will** schlafen. = می‌خواهم بخوابم.\n• Was **willst** du essen? = چه می‌خواهی بخوری؟\n\n📝 **صرف wollen:**\n• ich **will**\n• du **willst**\n• er/sie/es **will**\n• wir **wollen**\n• ihr **wollt**\n• sie/Sie **wollen**",
+      "examples": [
+        { "de": "Ich will Deutsch lernen.", "fa": "می‌خواهم آلمانی یاد بگیرم." },
+        { "de": "Was wollt ihr machen?", "fa": "چه می‌خواهید بکنید؟" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "wollen", "fa": "خواستن" },
+      "example": { "text": { "de": "Ich will nach Hause gehen.", "fa": "می‌خواهم به خانه بروم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-wollen",
+      "word": "wollen",
+      "translation": "خواستن",
+      "syllables": ["wol", "len"],
+      "distractors": ["wal", "lan", "wel", "lun"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "schlafen", "fa": "خوابیدن" },
+      "example": { "text": { "de": "Ich will jetzt schlafen.", "fa": "الان می‌خواهم بخوابم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "essen", "fa": "خوردن" },
+      "example": { "text": { "de": "Was willst du essen?", "fa": "چه می‌خواهی بخوری؟" } }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Was {0} du essen?",
+      "options": ["willst", "will", "wollen", "wollt"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "du willst (دوم شخص مفرد)" }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "müssen یا wollen؟",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "müssen", "left": "باید", "right": "خواستن", "correctSide": "left" },
+        { "prompt": "wollen", "left": "باید", "right": "خواستن", "correctSide": "right" },
+        { "prompt": "Ich muss arbeiten.", "left": "باید کار کنم", "right": "می‌خواهم کار کنم", "correctSide": "left" },
+        { "prompt": "Ich will schlafen.", "left": "باید بخوابم", "right": "می‌خواهم بخوابم", "correctSide": "right" },
+        { "prompt": "Du musst lernen.", "left": "باید درس بخوانی", "right": "می‌خواهی درس بخوانی", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "برنامه‌های امروز",
+      "context": "الی و تام درباره برنامه‌هایشان صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Eli", "text": { "de": "Was willst du heute machen?", "fa": "امروز چه می‌خواهی بکنی؟" } },
+        { "speaker": "Tom", "text": { "de": "Ich muss zuerst arbeiten.", "fa": "اول باید کار کنم." } },
+        { "speaker": "Eli", "text": { "de": "Und danach?", "fa": "و بعد از آن؟" } },
+        { "speaker": "Tom", "text": { "de": "Danach will ich ins Kino gehen.", "fa": "بعد می‌خواهم به سینما بروم." } },
+        { "speaker": "Eli", "text": { "de": "Cool! Ich will auch ins Kino!", "fa": "عالی! من هم می‌خواهم به سینما بروم!" } },
+        { "speaker": "Tom", "text": { "de": "Super! Aber ich muss um 22 Uhr zu Hause sein.", "fa": "عالی! ولی باید ساعت ۲۲ خانه باشم." } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "تام اول چه کار باید بکند؟", "options": ["به سینما برود", "کار کند", "بخوابد"], "correctIndex": 1 },
+        { "question": "تام کی باید خانه باشد؟", "options": ["ساعت ۲۰", "ساعت ۲۱", "ساعت ۲۲"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "heute", "fa": "امروز" },
+      "example": { "text": { "de": "Ich muss heute viel lernen.", "fa": "امروز باید زیاد درس بخوانم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": { "de": "jetzt", "fa": "الان" },
+      "example": { "text": { "de": "Ich will jetzt essen.", "fa": "الان می‌خواهم غذا بخورم." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s11",
+      "title": "تفاوت müssen و wollen",
+      "content": "📝 **müssen** = اجبار/ضرورت (از بیرون)\n• Ich **muss** arbeiten. = باید کار کنم. (مجبورم)\n\n❤️ **wollen** = خواسته/تمایل (از درون)\n• Ich **will** arbeiten. = می‌خواهم کار کنم. (دوست دارم)\n\n⚠️ مقایسه:\n• Ich **muss** schlafen. = باید بخوابم. (خسته‌ام)\n• Ich **will** schlafen. = می‌خواهم بخوابم. (دلم می‌خواهد)",
+      "examples": [
+        { "de": "Ich muss Deutsch lernen. (für die Prüfung)", "fa": "باید آلمانی یاد بگیرم. (برای امتحان)" },
+        { "de": "Ich will Deutsch lernen. (es macht Spaß)", "fa": "می‌خواهم آلمانی یاد بگیرم. (دوستش دارم)" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "برای بیان اجبار از کدام فعل استفاده می‌کنیم؟",
+      "options": ["wollen", "können", "müssen", "mögen"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین!", "incorrect": "müssen = باید (اجبار)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er {0} morgen früh aufstehen.",
+      "options": ["muss", "musst", "müssen", "will"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "er muss (سوم شخص مفرد)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Wir {0} heute Abend tanzen gehen.",
+      "options": ["wollen", "will", "willst", "wollt"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "wir wollen (اول شخص جمع)" }
+    },
+    {
+      "type": "word-order",
+      "id": "w1",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["arbeiten.", "muss", "Ich", "heute"],
+      "correctOrder": [2, 1, 3, 0],
+      "correctSentence": { "de": "Ich muss heute arbeiten.", "fa": "امروز باید کار کنم." }
+    },
+    {
+      "type": "word-order",
+      "id": "w2",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["schlafen.", "will", "Ich", "jetzt"],
+      "correctOrder": [2, 1, 3, 0],
+      "correctSentence": { "de": "Ich will jetzt schlafen.", "fa": "الان می‌خواهم بخوابم." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "جملات را با ترجمه جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Ich muss lernen." },
+        { "id": "i2", "text": "Ich will essen." },
+        { "id": "i3", "text": "Du musst gehen." },
+        { "id": "i4", "text": "Er will schlafen." }
+      ],
+      "matches": [
+        { "id": "m1", "text": "می‌خواهم بخورم" },
+        { "id": "m2", "text": "باید درس بخوانم" },
+        { "id": "m3", "text": "او می‌خواهد بخوابد" },
+        { "id": "m4", "text": "باید بروی" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m1"],
+        ["i3", "m4"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "آخر هفته",
+      "context": "الی و تام درباره آخر هفته صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Tom", "text": { "de": "Was willst du am Wochenende machen?", "fa": "آخر هفته چه می‌خواهی بکنی؟" } },
+        { "speaker": "Eli", "text": { "de": "Ich will lange schlafen!", "fa": "می‌خواهم زیاد بخوابم!" } },
+        { "speaker": "Tom", "text": { "de": "Ich auch! Aber ich muss am Samstag arbeiten.", "fa": "من هم! ولی شنبه باید کار کنم." } },
+        { "speaker": "Eli", "text": { "de": "Oh nein! Und am Sonntag?", "fa": "اوه نه! و یکشنبه؟" } },
+        { "speaker": "Tom", "text": { "de": "Am Sonntag will ich Freunde treffen.", "fa": "یکشنبه می‌خواهم دوستان را ببینم." } },
+        { "speaker": "Eli", "text": { "de": "Super! Ich will auch mitkommen!", "fa": "عالی! من هم می‌خواهم بیایم!" } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "الی آخر هفته چه می‌خواهد؟", "options": ["کار کند", "زیاد بخوابد", "درس بخواند"], "correctIndex": 1 },
+        { "question": "تام شنبه چه باید بکند؟", "options": ["کار کند", "بخوابد", "دوستان را ببیند"], "correctIndex": 0 }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "صرف فعل‌ها",
+      "instruction": "صرف درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "ich ... (müssen)", "left": "muss", "right": "müssen", "correctSide": "left" },
+        { "prompt": "du ... (wollen)", "left": "will", "right": "willst", "correctSide": "right" },
+        { "prompt": "er ... (müssen)", "left": "muss", "right": "musst", "correctSide": "left" },
+        { "prompt": "wir ... (wollen)", "left": "wollt", "right": "wollen", "correctSide": "right" },
+        { "prompt": "ihr ... (müssen)", "left": "müsst", "right": "müssen", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} ihr heute Abend kommen?",
+      "options": ["Wollt", "Wollen", "Will", "Willst"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "ihr wollt (دوم شخص جمع)" }
+    },
+    {
+      "type": "word-order",
+      "id": "w3",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["essen?", "du", "Was", "willst"],
+      "correctOrder": [2, 3, 1, 0],
+      "correctSentence": { "de": "Was willst du essen?", "fa": "چه می‌خواهی بخوری؟" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "«Wir müssen jetzt gehen» یعنی چه؟",
+      "options": ["می‌خواهیم الان برویم", "می‌توانیم الان برویم", "الان باید برویم", "الان می‌رویم"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین!", "incorrect": "müssen = باید" }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-arbeiten",
+      "word": "arbeiten",
+      "translation": "کار کردن",
+      "syllables": ["ar", "bei", "ten"],
+      "distractors": ["or", "bai", "tan", "ber"]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-schlafen",
+      "word": "schlafen",
+      "translation": "خوابیدن",
+      "syllables": ["schla", "fen"],
+      "distractors": ["schlo", "fan", "schle", "fun"]
+    },
+    {
+      "type": "word-order",
+      "id": "w4",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["gehen.", "müssen", "Wir", "jetzt"],
+      "correctOrder": [2, 1, 3, 0],
+      "correctSentence": { "de": "Wir müssen jetzt gehen.", "fa": "الان باید برویم." }
+    },
+    {
+      "type": "matching",
+      "id": "m2",
+      "instruction": "فعل‌ها را با ترجمه جفت کنید",
+      "items": [
+        { "id": "i1", "text": "müssen" },
+        { "id": "i2", "text": "wollen" },
+        { "id": "i3", "text": "arbeiten" },
+        { "id": "i4", "text": "schlafen" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "خوابیدن" },
+        { "id": "m2", "text": "باید" },
+        { "id": "m3", "text": "خواستن" },
+        { "id": "m4", "text": "کار کردن" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m3"],
+        ["i3", "m4"],
+        ["i4", "m1"]
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "«Er will nach Hause gehen» یعنی چه؟",
+      "options": ["باید به خانه برود", "می‌خواهد به خانه برود", "می‌تواند به خانه برود", "به خانه می‌رود"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "wollen = خواستن → می‌خواهد به خانه برود" }
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Ich muss heute arbeiten.",
+      "translation": "امروز باید کار کنم.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Was willst du essen?",
+      "translation": "چه می‌خواهی بخوری؟",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-3",
+      "targetText": "Wir wollen ins Kino gehen.",
+      "translation": "می‌خواهیم به سینما برویم.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "memory-match",
+      "id": "g3",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "müssen", "fa": "باید" },
+        { "de": "wollen", "fa": "خواستن" },
+        { "de": "arbeiten", "fa": "کار کردن" },
+        { "de": "lernen", "fa": "یاد گرفتن" },
+        { "de": "schlafen", "fa": "خوابیدن" },
+        { "de": "essen", "fa": "خوردن" }
+      ],
+      "timeLimit": 60
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "müssen", "fa": "باید" },
+        { "de": "wollen", "fa": "خواستن" },
+        { "de": "arbeiten", "fa": "کار کردن" },
+        { "de": "lernen", "fa": "یاد گرفتن" },
+        { "de": "schlafen", "fa": "خوابیدن" },
+        { "de": "essen", "fa": "خوردن" },
+        { "de": "heute", "fa": "امروز" },
+        { "de": "jetzt", "fa": "الان" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما فعل‌های وجهی müssen و wollen را یاد گرفتید!\n\n📝 **müssen** = باید (اجبار)\n• ich/er **muss**\n• du **musst**\n• wir/sie **müssen**\n\n❤️ **wollen** = خواستن (تمایل)\n• ich/er **will**\n• du **willst**\n• wir/sie **wollen**\n\n⚠️ **تفاوت:**\nIch **muss** arbeiten. = باید کار کنم.\nIch **will** arbeiten. = می‌خواهم کار کنم.",
+      "xpEarned": 50,
+      "vocabularyLearned": [
+        { "word": { "de": "müssen", "fa": "باید" } },
+        { "word": { "de": "wollen", "fa": "خواستن" } },
+        { "word": { "de": "arbeiten", "fa": "کار کردن" } },
+        { "word": { "de": "lernen", "fa": "یاد گرفتن" } },
+        { "word": { "de": "schlafen", "fa": "خوابیدن" } },
+        { "word": { "de": "essen", "fa": "خوردن" } },
+        { "word": { "de": "heute", "fa": "امروز" } },
+        { "word": { "de": "jetzt", "fa": "الان" } }
+      ]
+    }
+  ]
+}

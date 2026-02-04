@@ -438,6 +438,12 @@ const DE_FA_A1_MODULES: ModuleStub[] = [
         title: "می‌توانم! (können)",
         description: "یاد بگیرید چطور بگویید چه کارهایی می‌توانید انجام دهید.",
         path: "/learn/de-fa/A1/A1-M13-L01"
+      },
+      {
+        id: "A1-M13-L02",
+        title: "باید و خواستن (müssen und wollen)",
+        description: "یاد بگیرید چطور بگویید چه کارهایی باید انجام دهید یا می‌خواهید.",
+        path: "/learn/de-fa/A1/A1-M13-L02"
       }
     ]
   }
