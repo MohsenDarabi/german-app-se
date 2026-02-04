@@ -20,16 +20,97 @@
   "totalSteps": 40,
   "estimatedMinutes": 21,
   "vocabulary": [
-    { "de": "Wann", "fa": "کی (زمان)", "grammar": { "pos": "adverb" } },
-    { "de": "Wie", "fa": "چطور", "grammar": { "pos": "adverb" } },
-    { "de": "Wie viel", "fa": "چقدر", "grammar": { "pos": "phrase" } },
-    { "de": "Wie lange", "fa": "چه مدت", "grammar": { "pos": "phrase" } },
-    { "de": "Wie oft", "fa": "چند وقت یکبار", "grammar": { "pos": "phrase" } },
-    { "de": "morgen", "fa": "فردا", "grammar": { "pos": "adverb" } },
-    { "de": "die Stunde", "fa": "ساعت (مدت)", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Stunden" } } },
-    { "de": "kosten", "fa": "قیمت داشتن", "grammar": { "pos": "verb", "verb": { "infinitiv": "kosten", "praesens": { "ich": "koste", "du": "kostest", "er_sie_es": "kostet", "wir": "kosten", "ihr": "kostet", "sie_Sie": "kosten" } } } },
-    { "de": "das Geld", "fa": "پول", "grammar": { "pos": "noun", "noun": { "artikel": "n" } } },
-    { "de": "der Euro", "fa": "یورو", "grammar": { "pos": "noun", "noun": { "artikel": "m" } } }
+    {
+      "de": "Wann",
+      "fa": "کی (زمان)",
+      "grammar": {
+        "pos": "adverb"
+      }
+    },
+    {
+      "de": "Wie",
+      "fa": "چطور",
+      "grammar": {
+        "pos": "adverb"
+      }
+    },
+    {
+      "de": "Wie viel",
+      "fa": "چقدر",
+      "grammar": {
+        "pos": "phrase"
+      }
+    },
+    {
+      "de": "Wie lange",
+      "fa": "چه مدت",
+      "grammar": {
+        "pos": "phrase"
+      }
+    },
+    {
+      "de": "Wie oft",
+      "fa": "چند وقت یکبار",
+      "grammar": {
+        "pos": "phrase"
+      }
+    },
+    {
+      "de": "morgen",
+      "fa": "فردا",
+      "grammar": {
+        "pos": "adverb"
+      }
+    },
+    {
+      "de": "die Stunde",
+      "fa": "ساعت (مدت)",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "f",
+          "plural": "Stunden"
+        }
+      }
+    },
+    {
+      "de": "kosten",
+      "fa": "قیمت داشتن",
+      "grammar": {
+        "pos": "verb",
+        "verb": {
+          "infinitiv": "kosten",
+          "praesens": {
+            "ich": "koste",
+            "du": "kostest",
+            "er_sie_es": "kostet",
+            "wir": "kosten",
+            "ihr": "kostet",
+            "sie_Sie": "kosten"
+          }
+        }
+      }
+    },
+    {
+      "de": "das Geld",
+      "fa": "پول",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "n"
+        }
+      }
+    },
+    {
+      "de": "der Euro",
+      "fa": "یورو",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m"
+        }
+      }
+    }
   ],
   "steps": [
     {
@@ -67,8 +148,14 @@
       "id": "syllable-Wann",
       "word": "Wann",
       "translation": "کی (زمان)",
-      "syllables": ["Wann"],
-      "distractors": ["Wenn", "Wonn", "Winn"]
+      "syllables": [
+        "Wann"
+      ],
+      "distractors": [
+        "Wenn",
+        "Wonn",
+        "Winn"
+      ]
     },
     {
       "type": "new-word",
@@ -89,8 +176,14 @@
       "id": "syllable-Wie",
       "word": "Wie",
       "translation": "چطور",
-      "syllables": ["Wie"],
-      "distractors": ["Wia", "Wio", "Wiu"]
+      "syllables": [
+        "Wie"
+      ],
+      "distractors": [
+        "Wia",
+        "Wio",
+        "Wiu"
+      ]
     },
     {
       "type": "new-word",
@@ -111,8 +204,14 @@
       "id": "syllable-viel",
       "word": "viel",
       "translation": "زیاد",
-      "syllables": ["viel"],
-      "distractors": ["vial", "viol", "veil"]
+      "syllables": [
+        "viel"
+      ],
+      "distractors": [
+        "vial",
+        "viol",
+        "veil"
+      ]
     },
     {
       "type": "dialog",
@@ -166,13 +265,21 @@
       "questions": [
         {
           "question": "الکس کی وقت دارد؟",
-          "options": ["Heute", "Morgen Nachmittag", "Abends"],
+          "options": [
+            "Heute",
+            "Morgen Nachmittag",
+            "Abends"
+          ],
           "correctIndex": 1,
           "explanation": "الکس گفت: «Morgen Nachmittag.»"
         },
         {
           "question": "چطور می‌روند؟",
-          "options": ["Mit dem Auto", "Mit dem Bus", "Zu Fuß"],
+          "options": [
+            "Mit dem Auto",
+            "Mit dem Bus",
+            "Zu Fuß"
+          ],
           "correctIndex": 1,
           "explanation": "الکس گفت: «Mit dem Bus.»"
         }
@@ -236,8 +343,16 @@
       "id": "syllable-lange",
       "word": "lange",
       "translation": "طولانی",
-      "syllables": ["lan", "ge"],
-      "distractors": ["lon", "ga", "lin", "go"]
+      "syllables": [
+        "lan",
+        "ge"
+      ],
+      "distractors": [
+        "lon",
+        "ga",
+        "lin",
+        "go"
+      ]
     },
     {
       "type": "new-word",
@@ -258,8 +373,14 @@
       "id": "syllable-oft",
       "word": "oft",
       "translation": "اغلب",
-      "syllables": ["oft"],
-      "distractors": ["aft", "eft", "uft"]
+      "syllables": [
+        "oft"
+      ],
+      "distractors": [
+        "aft",
+        "eft",
+        "uft"
+      ]
     },
     {
       "type": "grammar-tip",
@@ -340,8 +461,16 @@
       "id": "syllable-morgen",
       "word": "morgen",
       "translation": "فردا",
-      "syllables": ["mor", "gen"],
-      "distractors": ["mar", "gan", "mir", "gon"]
+      "syllables": [
+        "mor",
+        "gen"
+      ],
+      "distractors": [
+        "mar",
+        "gan",
+        "mir",
+        "gon"
+      ]
     },
     {
       "type": "new-word",
@@ -362,8 +491,16 @@
       "id": "syllable-Stunde",
       "word": "Stunde",
       "translation": "ساعت",
-      "syllables": ["Stun", "de"],
-      "distractors": ["Stan", "da", "Ston", "di"]
+      "syllables": [
+        "Stun",
+        "de"
+      ],
+      "distractors": [
+        "Stan",
+        "da",
+        "Ston",
+        "di"
+      ]
     },
     {
       "type": "new-word",
@@ -384,8 +521,16 @@
       "id": "syllable-kosten",
       "word": "kosten",
       "translation": "قیمت داشتن",
-      "syllables": ["kos", "ten"],
-      "distractors": ["kas", "tan", "kis", "ton"]
+      "syllables": [
+        "kos",
+        "ten"
+      ],
+      "distractors": [
+        "kas",
+        "tan",
+        "kis",
+        "ton"
+      ]
     },
     {
       "type": "dialog",
@@ -439,13 +584,21 @@
       "questions": [
         {
           "question": "کتاب چند است؟",
-          "options": ["Fünf Euro", "Zehn Euro", "Zwanzig Euro"],
+          "options": [
+            "Fünf Euro",
+            "Zehn Euro",
+            "Zwanzig Euro"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: «Zehn Euro.»"
         },
         {
           "question": "مغازه تا چه ساعتی باز است؟",
-          "options": ["Bis sieben Uhr", "Bis acht Uhr", "Bis neun Uhr"],
+          "options": [
+            "Bis sieben Uhr",
+            "Bis acht Uhr",
+            "Bis neun Uhr"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: «Bis acht Uhr.»"
         }
@@ -509,8 +662,14 @@
       "id": "syllable-Geld",
       "word": "Geld",
       "translation": "پول",
-      "syllables": ["Geld"],
-      "distractors": ["Gald", "Gild", "Gold"]
+      "syllables": [
+        "Geld"
+      ],
+      "distractors": [
+        "Gald",
+        "Gild",
+        "Gold"
+      ]
     },
     {
       "type": "new-word",
@@ -531,8 +690,16 @@
       "id": "syllable-Euro",
       "word": "Euro",
       "translation": "یورو",
-      "syllables": ["Eu", "ro"],
-      "distractors": ["Au", "ra", "Oi", "ri"]
+      "syllables": [
+        "Eu",
+        "ro"
+      ],
+      "distractors": [
+        "Au",
+        "ra",
+        "Oi",
+        "ri"
+      ]
     },
     {
       "type": "grammar-tip",
@@ -670,8 +837,40 @@
       "difficulty": "A1"
     },
     {
+      "type": "memory-match",
+      "id": "g5",
+      "title": "بازی حافظه",
+      "pairs": [
+        {
+          "de": "Wann",
+          "fa": "کی (زمان)"
+        },
+        {
+          "de": "Wie",
+          "fa": "چطور"
+        },
+        {
+          "de": "Wie viel",
+          "fa": "چقدر"
+        },
+        {
+          "de": "Wie viele",
+          "fa": "چند تا"
+        },
+        {
+          "de": "Wie lange",
+          "fa": "چه مدت"
+        },
+        {
+          "de": "Wie oft",
+          "fa": "چند وقت یکبار"
+        }
+      ],
+      "timeLimit": 60
+    },
+    {
       "type": "vocab-check",
-      "id": "g4",
+      "id": "g6",
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [

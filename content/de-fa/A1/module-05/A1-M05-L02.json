@@ -20,17 +20,114 @@
   "totalSteps": 41,
   "estimatedMinutes": 22,
   "vocabulary": [
-    { "de": "Wer", "fa": "کی", "grammar": { "pos": "pronoun" } },
-    { "de": "Was", "fa": "چی", "grammar": { "pos": "pronoun" } },
-    { "de": "Wo", "fa": "کجا", "grammar": { "pos": "adverb" } },
-    { "de": "Woher", "fa": "از کجا", "grammar": { "pos": "adverb" } },
-    { "de": "Wohin", "fa": "به کجا", "grammar": { "pos": "adverb" } },
-    { "de": "der Name", "fa": "اسم", "grammar": { "pos": "noun", "noun": { "artikel": "m" } } },
-    { "de": "machen", "fa": "انجام دادن / کار کردن", "grammar": { "pos": "verb", "verb": { "infinitiv": "machen", "praesens": { "ich": "mache", "du": "machst", "er_sie_es": "macht", "wir": "machen", "ihr": "macht", "sie_Sie": "machen" } } } },
-    { "de": "gehen", "fa": "رفتن", "grammar": { "pos": "verb", "verb": { "infinitiv": "gehen", "praesens": { "ich": "gehe", "du": "gehst", "er_sie_es": "geht", "wir": "gehen", "ihr": "geht", "sie_Sie": "gehen" } } } },
-    { "de": "heute", "fa": "امروز", "grammar": { "pos": "adverb" } },
-    { "de": "die Stadt", "fa": "شهر", "grammar": { "pos": "noun", "noun": { "artikel": "f" } } },
-    { "de": "das Kino", "fa": "سینما", "grammar": { "pos": "noun", "noun": { "artikel": "n" } } }
+    {
+      "de": "Wer",
+      "fa": "کی",
+      "grammar": {
+        "pos": "pronoun"
+      }
+    },
+    {
+      "de": "Was",
+      "fa": "چی",
+      "grammar": {
+        "pos": "pronoun"
+      }
+    },
+    {
+      "de": "Wo",
+      "fa": "کجا",
+      "grammar": {
+        "pos": "adverb"
+      }
+    },
+    {
+      "de": "Woher",
+      "fa": "از کجا",
+      "grammar": {
+        "pos": "adverb"
+      }
+    },
+    {
+      "de": "Wohin",
+      "fa": "به کجا",
+      "grammar": {
+        "pos": "adverb"
+      }
+    },
+    {
+      "de": "der Name",
+      "fa": "اسم",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m"
+        }
+      }
+    },
+    {
+      "de": "machen",
+      "fa": "انجام دادن / کار کردن",
+      "grammar": {
+        "pos": "verb",
+        "verb": {
+          "infinitiv": "machen",
+          "praesens": {
+            "ich": "mache",
+            "du": "machst",
+            "er_sie_es": "macht",
+            "wir": "machen",
+            "ihr": "macht",
+            "sie_Sie": "machen"
+          }
+        }
+      }
+    },
+    {
+      "de": "gehen",
+      "fa": "رفتن",
+      "grammar": {
+        "pos": "verb",
+        "verb": {
+          "infinitiv": "gehen",
+          "praesens": {
+            "ich": "gehe",
+            "du": "gehst",
+            "er_sie_es": "geht",
+            "wir": "gehen",
+            "ihr": "geht",
+            "sie_Sie": "gehen"
+          }
+        }
+      }
+    },
+    {
+      "de": "heute",
+      "fa": "امروز",
+      "grammar": {
+        "pos": "adverb"
+      }
+    },
+    {
+      "de": "die Stadt",
+      "fa": "شهر",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "f"
+        }
+      }
+    },
+    {
+      "de": "das Kino",
+      "fa": "سینما",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "n"
+        }
+      }
+    }
   ],
   "steps": [
     {
@@ -68,8 +165,14 @@
       "id": "syllable-Wer",
       "word": "Wer",
       "translation": "کی",
-      "syllables": ["Wer"],
-      "distractors": ["War", "Wir", "Wor"]
+      "syllables": [
+        "Wer"
+      ],
+      "distractors": [
+        "War",
+        "Wir",
+        "Wor"
+      ]
     },
     {
       "type": "new-word",
@@ -90,8 +193,14 @@
       "id": "syllable-Was",
       "word": "Was",
       "translation": "چی",
-      "syllables": ["Was"],
-      "distractors": ["Wes", "Wis", "Wos"]
+      "syllables": [
+        "Was"
+      ],
+      "distractors": [
+        "Wes",
+        "Wis",
+        "Wos"
+      ]
     },
     {
       "type": "new-word",
@@ -112,8 +221,14 @@
       "id": "syllable-Wo",
       "word": "Wo",
       "translation": "کجا",
-      "syllables": ["Wo"],
-      "distractors": ["Wa", "We", "Wi"]
+      "syllables": [
+        "Wo"
+      ],
+      "distractors": [
+        "Wa",
+        "We",
+        "Wi"
+      ]
     },
     {
       "type": "dialog",
@@ -160,13 +275,21 @@
       "questions": [
         {
           "question": "الکس از کجا آمده؟",
-          "options": ["Aus München", "Aus Berlin", "Aus Hamburg"],
+          "options": [
+            "Aus München",
+            "Aus Berlin",
+            "Aus Hamburg"
+          ],
           "correctIndex": 1,
           "explanation": "الکس گفت: «Ich komme aus Berlin.»"
         },
         {
           "question": "لیزا کجا زندگی می‌کند؟",
-          "options": ["In Berlin", "In Hamburg", "In München"],
+          "options": [
+            "In Berlin",
+            "In Hamburg",
+            "In München"
+          ],
           "correctIndex": 2,
           "explanation": "لیزا گفت: «Ich wohne in München.»"
         }
@@ -230,8 +353,16 @@
       "id": "syllable-Woher",
       "word": "Woher",
       "translation": "از کجا",
-      "syllables": ["Wo", "her"],
-      "distractors": ["Wa", "har", "Wi", "hir"]
+      "syllables": [
+        "Wo",
+        "her"
+      ],
+      "distractors": [
+        "Wa",
+        "har",
+        "Wi",
+        "hir"
+      ]
     },
     {
       "type": "new-word",
@@ -252,8 +383,16 @@
       "id": "syllable-Wohin",
       "word": "Wohin",
       "translation": "به کجا",
-      "syllables": ["Wo", "hin"],
-      "distractors": ["Wa", "han", "We", "hun"]
+      "syllables": [
+        "Wo",
+        "hin"
+      ],
+      "distractors": [
+        "Wa",
+        "han",
+        "We",
+        "hun"
+      ]
     },
     {
       "type": "grammar-tip",
@@ -334,8 +473,16 @@
       "id": "syllable-Name",
       "word": "Name",
       "translation": "اسم",
-      "syllables": ["Na", "me"],
-      "distractors": ["No", "ma", "Ne", "mi"]
+      "syllables": [
+        "Na",
+        "me"
+      ],
+      "distractors": [
+        "No",
+        "ma",
+        "Ne",
+        "mi"
+      ]
     },
     {
       "type": "new-word",
@@ -356,8 +503,16 @@
       "id": "syllable-machen",
       "word": "machen",
       "translation": "انجام دادن",
-      "syllables": ["ma", "chen"],
-      "distractors": ["mo", "chon", "me", "chan"]
+      "syllables": [
+        "ma",
+        "chen"
+      ],
+      "distractors": [
+        "mo",
+        "chon",
+        "me",
+        "chan"
+      ]
     },
     {
       "type": "new-word",
@@ -378,8 +533,16 @@
       "id": "syllable-gehen",
       "word": "gehen",
       "translation": "رفتن",
-      "syllables": ["ge", "hen"],
-      "distractors": ["ga", "han", "go", "hun"]
+      "syllables": [
+        "ge",
+        "hen"
+      ],
+      "distractors": [
+        "ga",
+        "han",
+        "go",
+        "hun"
+      ]
     },
     {
       "type": "dialog",
@@ -433,13 +596,21 @@
       "questions": [
         {
           "question": "الی امروز کجا می‌رود؟",
-          "options": ["Ins Restaurant", "Ins Kino", "In den Park"],
+          "options": [
+            "Ins Restaurant",
+            "Ins Kino",
+            "In den Park"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: «Ich gehe ins Kino.»"
         },
         {
           "question": "الی چه می‌بیند؟",
-          "options": ["Einen amerikanischen Film", "Einen deutschen Film", "Eine Serie"],
+          "options": [
+            "Einen amerikanischen Film",
+            "Einen deutschen Film",
+            "Eine Serie"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: «Einen deutschen Film!»"
         }
@@ -503,8 +674,16 @@
       "id": "syllable-heute",
       "word": "heute",
       "translation": "امروز",
-      "syllables": ["heu", "te"],
-      "distractors": ["hau", "ta", "hai", "ti"]
+      "syllables": [
+        "heu",
+        "te"
+      ],
+      "distractors": [
+        "hau",
+        "ta",
+        "hai",
+        "ti"
+      ]
     },
     {
       "type": "new-word",
@@ -525,8 +704,14 @@
       "id": "syllable-Stadt",
       "word": "Stadt",
       "translation": "شهر",
-      "syllables": ["Stadt"],
-      "distractors": ["Statt", "Stodt", "Stidt"]
+      "syllables": [
+        "Stadt"
+      ],
+      "distractors": [
+        "Statt",
+        "Stodt",
+        "Stidt"
+      ]
     },
     {
       "type": "new-word",
@@ -547,8 +732,16 @@
       "id": "syllable-Kino",
       "word": "Kino",
       "translation": "سینما",
-      "syllables": ["Ki", "no"],
-      "distractors": ["Ka", "ni", "Ko", "na"]
+      "syllables": [
+        "Ki",
+        "no"
+      ],
+      "distractors": [
+        "Ka",
+        "ni",
+        "Ko",
+        "na"
+      ]
     },
     {
       "type": "matching",
@@ -692,8 +885,40 @@
       "difficulty": "A1"
     },
     {
+      "type": "memory-match",
+      "id": "g5",
+      "title": "بازی حافظه",
+      "pairs": [
+        {
+          "de": "Wer",
+          "fa": "کی"
+        },
+        {
+          "de": "Was",
+          "fa": "چی"
+        },
+        {
+          "de": "Wo",
+          "fa": "کجا"
+        },
+        {
+          "de": "Woher",
+          "fa": "از کجا"
+        },
+        {
+          "de": "Wohin",
+          "fa": "به کجا"
+        },
+        {
+          "de": "Name",
+          "fa": "اسم"
+        }
+      ],
+      "timeLimit": 60
+    },
+    {
       "type": "vocab-check",
-      "id": "g4",
+      "id": "g6",
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [

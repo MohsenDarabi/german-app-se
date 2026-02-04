@@ -20,16 +20,123 @@
   "totalSteps": 42,
   "estimatedMinutes": 20,
   "vocabulary": [
-    { "de": "der Supermarkt", "fa": "سوپرمارکت", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Supermärkte" } } },
-    { "de": "einkaufen", "fa": "خرید کردن", "grammar": { "pos": "verb", "verb": { "infinitiv": "einkaufen", "present": { "ich": "kaufe ein", "du": "kaufst ein", "er_sie_es": "kauft ein", "wir": "kaufen ein", "ihr": "kauft ein", "sie_Sie": "kaufen ein" } } } },
-    { "de": "der Einkaufswagen", "fa": "چرخ خرید", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Einkaufswagen" } } },
-    { "de": "die Tüte", "fa": "کیسه", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Tüten" } } },
-    { "de": "das Kilo", "fa": "کیلو", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Kilos" } } },
-    { "de": "das Gramm", "fa": "گرم", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Gramm" } } },
-    { "de": "der Liter", "fa": "لیتر", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Liter" } } },
-    { "de": "das Stück", "fa": "عدد/قطعه", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Stücke" } } },
-    { "de": "die Kasse", "fa": "صندوق", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Kassen" } } },
-    { "de": "der Preis", "fa": "قیمت", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Preise" } } }
+    {
+      "de": "der Supermarkt",
+      "fa": "سوپرمارکت",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Supermärkte"
+        }
+      }
+    },
+    {
+      "de": "einkaufen",
+      "fa": "خرید کردن",
+      "grammar": {
+        "pos": "verb",
+        "verb": {
+          "infinitiv": "einkaufen",
+          "present": {
+            "ich": "kaufe ein",
+            "du": "kaufst ein",
+            "er_sie_es": "kauft ein",
+            "wir": "kaufen ein",
+            "ihr": "kauft ein",
+            "sie_Sie": "kaufen ein"
+          }
+        }
+      }
+    },
+    {
+      "de": "der Einkaufswagen",
+      "fa": "چرخ خرید",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Einkaufswagen"
+        }
+      }
+    },
+    {
+      "de": "die Tüte",
+      "fa": "کیسه",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "f",
+          "plural": "die Tüten"
+        }
+      }
+    },
+    {
+      "de": "das Kilo",
+      "fa": "کیلو",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "n",
+          "plural": "die Kilos"
+        }
+      }
+    },
+    {
+      "de": "das Gramm",
+      "fa": "گرم",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "n",
+          "plural": "die Gramm"
+        }
+      }
+    },
+    {
+      "de": "der Liter",
+      "fa": "لیتر",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Liter"
+        }
+      }
+    },
+    {
+      "de": "das Stück",
+      "fa": "عدد/قطعه",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "n",
+          "plural": "die Stücke"
+        }
+      }
+    },
+    {
+      "de": "die Kasse",
+      "fa": "صندوق",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "f",
+          "plural": "die Kassen"
+        }
+      }
+    },
+    {
+      "de": "der Preis",
+      "fa": "قیمت",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Preise"
+        }
+      }
+    }
   ],
   "steps": [
     {
@@ -67,8 +174,17 @@
       "id": "syllable-Supermarkt",
       "word": "Supermarkt",
       "translation": "سوپرمارکت",
-      "syllables": ["Su", "per", "markt"],
-      "distractors": ["Sa", "par", "morkt", "So"]
+      "syllables": [
+        "Su",
+        "per",
+        "markt"
+      ],
+      "distractors": [
+        "Sa",
+        "par",
+        "morkt",
+        "So"
+      ]
     },
     {
       "type": "new-word",
@@ -89,8 +205,17 @@
       "id": "syllable-einkaufen",
       "word": "einkaufen",
       "translation": "خرید کردن",
-      "syllables": ["ein", "kau", "fen"],
-      "distractors": ["an", "kou", "fan", "un"]
+      "syllables": [
+        "ein",
+        "kau",
+        "fen"
+      ],
+      "distractors": [
+        "an",
+        "kou",
+        "fan",
+        "un"
+      ]
     },
     {
       "type": "new-word",
@@ -111,8 +236,18 @@
       "id": "syllable-Einkaufswagen",
       "word": "Einkaufswagen",
       "translation": "چرخ خرید",
-      "syllables": ["Ein", "kaufs", "wa", "gen"],
-      "distractors": ["An", "koufs", "wo", "gan"]
+      "syllables": [
+        "Ein",
+        "kaufs",
+        "wa",
+        "gen"
+      ],
+      "distractors": [
+        "An",
+        "koufs",
+        "wo",
+        "gan"
+      ]
     },
     {
       "type": "new-word",
@@ -133,8 +268,16 @@
       "id": "syllable-Tuete",
       "word": "Tüte",
       "translation": "کیسه",
-      "syllables": ["Tü", "te"],
-      "distractors": ["Ta", "tu", "To", "ti"]
+      "syllables": [
+        "Tü",
+        "te"
+      ],
+      "distractors": [
+        "Ta",
+        "tu",
+        "To",
+        "ti"
+      ]
     },
     {
       "type": "rapid-fire",
@@ -193,8 +336,16 @@
       "id": "syllable-Kilo",
       "word": "Kilo",
       "translation": "کیلو",
-      "syllables": ["Ki", "lo"],
-      "distractors": ["Ka", "lu", "Ko", "la"]
+      "syllables": [
+        "Ki",
+        "lo"
+      ],
+      "distractors": [
+        "Ka",
+        "lu",
+        "Ko",
+        "la"
+      ]
     },
     {
       "type": "new-word",
@@ -215,8 +366,15 @@
       "id": "syllable-Gramm",
       "word": "Gramm",
       "translation": "گرم",
-      "syllables": ["Gramm"],
-      "distractors": ["Gremm", "Grimm", "Gromm", "Grumm"]
+      "syllables": [
+        "Gramm"
+      ],
+      "distractors": [
+        "Gremm",
+        "Grimm",
+        "Gromm",
+        "Grumm"
+      ]
     },
     {
       "type": "new-word",
@@ -237,8 +395,16 @@
       "id": "syllable-Liter",
       "word": "Liter",
       "translation": "لیتر",
-      "syllables": ["Li", "ter"],
-      "distractors": ["La", "tar", "Lo", "tur"]
+      "syllables": [
+        "Li",
+        "ter"
+      ],
+      "distractors": [
+        "La",
+        "tar",
+        "Lo",
+        "tur"
+      ]
     },
     {
       "type": "new-word",
@@ -259,8 +425,15 @@
       "id": "syllable-Stueck",
       "word": "Stück",
       "translation": "عدد",
-      "syllables": ["Stück"],
-      "distractors": ["Stuck", "Stack", "Steck", "Stock"]
+      "syllables": [
+        "Stück"
+      ],
+      "distractors": [
+        "Stuck",
+        "Stack",
+        "Steck",
+        "Stock"
+      ]
     },
     {
       "type": "dialog",
@@ -322,13 +495,21 @@
       "questions": [
         {
           "question": "الی چند نان کوچک خرید؟",
-          "options": ["سه عدد", "چهار عدد", "پنج عدد"],
+          "options": [
+            "سه عدد",
+            "چهار عدد",
+            "پنج عدد"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: Ich hätte gern vier Brötchen (چهار نان کوچک)"
         },
         {
           "question": "کیسه چقدر است؟",
-          "options": ["رایگان", "۱۰ سنت", "۱ یورو"],
+          "options": [
+            "رایگان",
+            "۱۰ سنت",
+            "۱ یورو"
+          ],
           "correctIndex": 1,
           "explanation": "فروشنده گفت: Eine Tüte kostet 10 Cent"
         }
@@ -391,8 +572,16 @@
       "id": "syllable-Kasse",
       "word": "Kasse",
       "translation": "صندوق",
-      "syllables": ["Kas", "se"],
-      "distractors": ["Kos", "sa", "Kis", "su"]
+      "syllables": [
+        "Kas",
+        "se"
+      ],
+      "distractors": [
+        "Kos",
+        "sa",
+        "Kis",
+        "su"
+      ]
     },
     {
       "type": "new-word",
@@ -413,8 +602,15 @@
       "id": "syllable-Preis",
       "word": "Preis",
       "translation": "قیمت",
-      "syllables": ["Preis"],
-      "distractors": ["Prais", "Prois", "Prues", "Pries"]
+      "syllables": [
+        "Preis"
+      ],
+      "distractors": [
+        "Prais",
+        "Prois",
+        "Prues",
+        "Pries"
+      ]
     },
     {
       "type": "grammar-tip",
@@ -443,7 +639,9 @@
         "an",
         "ab"
       ],
-      "correctAnswers": [0],
+      "correctAnswers": [
+        0
+      ],
       "feedback": {
         "explanation": "**einkaufen** → Ich kaufe ... **ein** (پیشوند ein به آخر می‌رود)"
       },
@@ -463,7 +661,9 @@
         "Stück",
         "Gramm"
       ],
-      "correctAnswers": [0],
+      "correctAnswers": [
+        0
+      ],
       "feedback": {
         "explanation": "**Ein Kilo Äpfel** = یک کیلو سیب (برای میوه و سبزی از کیلو استفاده می‌شود)"
       },
@@ -539,13 +739,21 @@
       "questions": [
         {
           "question": "چقدر شیر می‌خواهند؟",
-          "options": ["یک لیتر", "دو لیتر", "سه لیتر"],
+          "options": [
+            "یک لیتر",
+            "دو لیتر",
+            "سه لیتر"
+          ],
           "correctIndex": 1,
           "explanation": "تام گفت: Zwei Liter (دو لیتر)"
         },
         {
           "question": "چند تخم‌مرغ می‌خواهند؟",
-          "options": ["چهار عدد", "شش عدد", "ده عدد"],
+          "options": [
+            "چهار عدد",
+            "شش عدد",
+            "ده عدد"
+          ],
           "correctIndex": 1,
           "explanation": "تام گفت: Sechs Stück (شش عدد)"
         }
@@ -556,22 +764,58 @@
       "id": "s17",
       "instruction": "واحد مناسب را پیدا کنید",
       "items": [
-        { "id": "i1", "text": "Milch" },
-        { "id": "i2", "text": "Äpfel" },
-        { "id": "i3", "text": "Käse" },
-        { "id": "i4", "text": "Brötchen" }
+        {
+          "id": "i1",
+          "text": "Milch"
+        },
+        {
+          "id": "i2",
+          "text": "Äpfel"
+        },
+        {
+          "id": "i3",
+          "text": "Käse"
+        },
+        {
+          "id": "i4",
+          "text": "Brötchen"
+        }
       ],
       "matches": [
-        { "id": "m1", "text": "Kilo" },
-        { "id": "m2", "text": "Liter" },
-        { "id": "m3", "text": "Stück" },
-        { "id": "m4", "text": "Gramm" }
+        {
+          "id": "m1",
+          "text": "Kilo"
+        },
+        {
+          "id": "m2",
+          "text": "Liter"
+        },
+        {
+          "id": "m3",
+          "text": "Stück"
+        },
+        {
+          "id": "m4",
+          "text": "Gramm"
+        }
       ],
       "correctPairs": [
-        ["i1", "m2"],
-        ["i2", "m1"],
-        ["i3", "m4"],
-        ["i4", "m3"]
+        [
+          "i1",
+          "m2"
+        ],
+        [
+          "i2",
+          "m1"
+        ],
+        [
+          "i3",
+          "m4"
+        ],
+        [
+          "i4",
+          "m3"
+        ]
       ]
     },
     {
@@ -647,21 +891,83 @@
       "difficulty": "A1"
     },
     {
+      "type": "memory-match",
+      "id": "g5",
+      "title": "بازی حافظه",
+      "pairs": [
+        {
+          "de": "Supermarkt",
+          "fa": "سوپرمارکت"
+        },
+        {
+          "de": "einkaufen",
+          "fa": "خرید کردن"
+        },
+        {
+          "de": "Einkaufswagen",
+          "fa": "چرخ خرید"
+        },
+        {
+          "de": "Tüte",
+          "fa": "کیسه"
+        },
+        {
+          "de": "Kilo",
+          "fa": "کیلو"
+        },
+        {
+          "de": "Gramm",
+          "fa": "گرم"
+        }
+      ],
+      "timeLimit": 60
+    },
+    {
       "type": "vocab-check",
-      "id": "g4",
+      "id": "g6",
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [
-        { "de": "der Supermarkt", "fa": "سوپرمارکت" },
-        { "de": "einkaufen", "fa": "خرید کردن" },
-        { "de": "der Einkaufswagen", "fa": "چرخ خرید" },
-        { "de": "die Tüte", "fa": "کیسه" },
-        { "de": "das Kilo", "fa": "کیلو" },
-        { "de": "das Gramm", "fa": "گرم" },
-        { "de": "der Liter", "fa": "لیتر" },
-        { "de": "das Stück", "fa": "عدد" },
-        { "de": "die Kasse", "fa": "صندوق" },
-        { "de": "der Preis", "fa": "قیمت" }
+        {
+          "de": "der Supermarkt",
+          "fa": "سوپرمارکت"
+        },
+        {
+          "de": "einkaufen",
+          "fa": "خرید کردن"
+        },
+        {
+          "de": "der Einkaufswagen",
+          "fa": "چرخ خرید"
+        },
+        {
+          "de": "die Tüte",
+          "fa": "کیسه"
+        },
+        {
+          "de": "das Kilo",
+          "fa": "کیلو"
+        },
+        {
+          "de": "das Gramm",
+          "fa": "گرم"
+        },
+        {
+          "de": "der Liter",
+          "fa": "لیتر"
+        },
+        {
+          "de": "das Stück",
+          "fa": "عدد"
+        },
+        {
+          "de": "die Kasse",
+          "fa": "صندوق"
+        },
+        {
+          "de": "der Preis",
+          "fa": "قیمت"
+        }
       ]
     },
     {
@@ -672,16 +978,66 @@
       "xpEarned": 75,
       "nextLessonId": "A1-M09-L01",
       "vocabularyLearned": [
-        { "word": { "de": "der Supermarkt", "fa": "سوپرمارکت" } },
-        { "word": { "de": "einkaufen", "fa": "خرید کردن" } },
-        { "word": { "de": "der Einkaufswagen", "fa": "چرخ خرید" } },
-        { "word": { "de": "die Tüte", "fa": "کیسه" } },
-        { "word": { "de": "das Kilo", "fa": "کیلو" } },
-        { "word": { "de": "das Gramm", "fa": "گرم" } },
-        { "word": { "de": "der Liter", "fa": "لیتر" } },
-        { "word": { "de": "das Stück", "fa": "عدد" } },
-        { "word": { "de": "die Kasse", "fa": "صندوق" } },
-        { "word": { "de": "der Preis", "fa": "قیمت" } }
+        {
+          "word": {
+            "de": "der Supermarkt",
+            "fa": "سوپرمارکت"
+          }
+        },
+        {
+          "word": {
+            "de": "einkaufen",
+            "fa": "خرید کردن"
+          }
+        },
+        {
+          "word": {
+            "de": "der Einkaufswagen",
+            "fa": "چرخ خرید"
+          }
+        },
+        {
+          "word": {
+            "de": "die Tüte",
+            "fa": "کیسه"
+          }
+        },
+        {
+          "word": {
+            "de": "das Kilo",
+            "fa": "کیلو"
+          }
+        },
+        {
+          "word": {
+            "de": "das Gramm",
+            "fa": "گرم"
+          }
+        },
+        {
+          "word": {
+            "de": "der Liter",
+            "fa": "لیتر"
+          }
+        },
+        {
+          "word": {
+            "de": "das Stück",
+            "fa": "عدد"
+          }
+        },
+        {
+          "word": {
+            "de": "die Kasse",
+            "fa": "صندوق"
+          }
+        },
+        {
+          "word": {
+            "de": "der Preis",
+            "fa": "قیمت"
+          }
+        }
       ]
     }
   ]

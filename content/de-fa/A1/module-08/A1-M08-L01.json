@@ -20,16 +20,116 @@
   "totalSteps": 40,
   "estimatedMinutes": 19,
   "vocabulary": [
-    { "de": "das Essen", "fa": "غذا", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Essen" } } },
-    { "de": "das Brot", "fa": "نان", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Brote" } } },
-    { "de": "das Brötchen", "fa": "نان کوچک/نان صبحانه", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Brötchen" } } },
-    { "de": "die Butter", "fa": "کره", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "-" } } },
-    { "de": "der Käse", "fa": "پنیر", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Käse" } } },
-    { "de": "die Wurst", "fa": "سوسیس/کالباس", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Würste" } } },
-    { "de": "das Ei", "fa": "تخم‌مرغ", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Eier" } } },
-    { "de": "das Wasser", "fa": "آب", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Wasser" } } },
-    { "de": "der Kaffee", "fa": "قهوه", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Kaffees" } } },
-    { "de": "der Tee", "fa": "چای", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Tees" } } }
+    {
+      "de": "das Essen",
+      "fa": "غذا",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "n",
+          "plural": "die Essen"
+        }
+      }
+    },
+    {
+      "de": "das Brot",
+      "fa": "نان",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "n",
+          "plural": "die Brote"
+        }
+      }
+    },
+    {
+      "de": "das Brötchen",
+      "fa": "نان کوچک/نان صبحانه",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "n",
+          "plural": "die Brötchen"
+        }
+      }
+    },
+    {
+      "de": "die Butter",
+      "fa": "کره",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "f",
+          "plural": "-"
+        }
+      }
+    },
+    {
+      "de": "der Käse",
+      "fa": "پنیر",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Käse"
+        }
+      }
+    },
+    {
+      "de": "die Wurst",
+      "fa": "سوسیس/کالباس",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "f",
+          "plural": "die Würste"
+        }
+      }
+    },
+    {
+      "de": "das Ei",
+      "fa": "تخم‌مرغ",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "n",
+          "plural": "die Eier"
+        }
+      }
+    },
+    {
+      "de": "das Wasser",
+      "fa": "آب",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "n",
+          "plural": "die Wasser"
+        }
+      }
+    },
+    {
+      "de": "der Kaffee",
+      "fa": "قهوه",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Kaffees"
+        }
+      }
+    },
+    {
+      "de": "der Tee",
+      "fa": "چای",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Tees"
+        }
+      }
+    }
   ],
   "steps": [
     {
@@ -67,8 +167,16 @@
       "id": "syllable-Essen",
       "word": "Essen",
       "translation": "غذا",
-      "syllables": ["Es", "sen"],
-      "distractors": ["As", "san", "Os", "sun"]
+      "syllables": [
+        "Es",
+        "sen"
+      ],
+      "distractors": [
+        "As",
+        "san",
+        "Os",
+        "sun"
+      ]
     },
     {
       "type": "new-word",
@@ -89,8 +197,15 @@
       "id": "syllable-Brot",
       "word": "Brot",
       "translation": "نان",
-      "syllables": ["Brot"],
-      "distractors": ["Brat", "Brut", "Brit", "Bret"]
+      "syllables": [
+        "Brot"
+      ],
+      "distractors": [
+        "Brat",
+        "Brut",
+        "Brit",
+        "Bret"
+      ]
     },
     {
       "type": "new-word",
@@ -111,8 +226,16 @@
       "id": "syllable-Broetchen",
       "word": "Brötchen",
       "translation": "نان کوچک",
-      "syllables": ["Bröt", "chen"],
-      "distractors": ["Brat", "chan", "Brut", "chin"]
+      "syllables": [
+        "Bröt",
+        "chen"
+      ],
+      "distractors": [
+        "Brat",
+        "chan",
+        "Brut",
+        "chin"
+      ]
     },
     {
       "type": "new-word",
@@ -133,8 +256,16 @@
       "id": "syllable-Butter",
       "word": "Butter",
       "translation": "کره",
-      "syllables": ["But", "ter"],
-      "distractors": ["Bat", "tar", "Bot", "tur"]
+      "syllables": [
+        "But",
+        "ter"
+      ],
+      "distractors": [
+        "Bat",
+        "tar",
+        "Bot",
+        "tur"
+      ]
     },
     {
       "type": "rapid-fire",
@@ -193,8 +324,16 @@
       "id": "syllable-Kaese",
       "word": "Käse",
       "translation": "پنیر",
-      "syllables": ["Kä", "se"],
-      "distractors": ["Ka", "sa", "Ko", "su"]
+      "syllables": [
+        "Kä",
+        "se"
+      ],
+      "distractors": [
+        "Ka",
+        "sa",
+        "Ko",
+        "su"
+      ]
     },
     {
       "type": "new-word",
@@ -215,8 +354,15 @@
       "id": "syllable-Wurst",
       "word": "Wurst",
       "translation": "سوسیس",
-      "syllables": ["Wurst"],
-      "distractors": ["Warst", "Wirst", "Werst", "Worst"]
+      "syllables": [
+        "Wurst"
+      ],
+      "distractors": [
+        "Warst",
+        "Wirst",
+        "Werst",
+        "Worst"
+      ]
     },
     {
       "type": "new-word",
@@ -237,8 +383,15 @@
       "id": "syllable-Ei",
       "word": "Ei",
       "translation": "تخم‌مرغ",
-      "syllables": ["Ei"],
-      "distractors": ["Ai", "Oi", "Ui", "Au"]
+      "syllables": [
+        "Ei"
+      ],
+      "distractors": [
+        "Ai",
+        "Oi",
+        "Ui",
+        "Au"
+      ]
     },
     {
       "type": "dialog",
@@ -286,13 +439,21 @@
       "questions": [
         {
           "question": "الی صبحانه چه می‌خورد؟",
-          "options": ["نان با سوسیس", "نان کوچک با کره و پنیر", "تخم‌مرغ"],
+          "options": [
+            "نان با سوسیس",
+            "نان کوچک با کره و پنیر",
+            "تخم‌مرغ"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: Ich esse ein Brötchen mit Butter und Käse"
         },
         {
           "question": "تام چه می‌خورد؟",
-          "options": ["پنیر", "نان با سوسیس و تخم‌مرغ", "فقط کره"],
+          "options": [
+            "پنیر",
+            "نان با سوسیس و تخم‌مرغ",
+            "فقط کره"
+          ],
           "correctIndex": 1,
           "explanation": "تام گفت: Ich esse Brot mit Wurst und ein Ei"
         }
@@ -355,8 +516,16 @@
       "id": "syllable-Wasser",
       "word": "Wasser",
       "translation": "آب",
-      "syllables": ["Was", "ser"],
-      "distractors": ["Wes", "sar", "Wos", "sur"]
+      "syllables": [
+        "Was",
+        "ser"
+      ],
+      "distractors": [
+        "Wes",
+        "sar",
+        "Wos",
+        "sur"
+      ]
     },
     {
       "type": "new-word",
@@ -377,8 +546,16 @@
       "id": "syllable-Kaffee",
       "word": "Kaffee",
       "translation": "قهوه",
-      "syllables": ["Kaf", "fee"],
-      "distractors": ["Kof", "faa", "Kuf", "fii"]
+      "syllables": [
+        "Kaf",
+        "fee"
+      ],
+      "distractors": [
+        "Kof",
+        "faa",
+        "Kuf",
+        "fii"
+      ]
     },
     {
       "type": "new-word",
@@ -399,8 +576,15 @@
       "id": "syllable-Tee",
       "word": "Tee",
       "translation": "چای",
-      "syllables": ["Tee"],
-      "distractors": ["Taa", "Tii", "Too", "Tuu"]
+      "syllables": [
+        "Tee"
+      ],
+      "distractors": [
+        "Taa",
+        "Tii",
+        "Too",
+        "Tuu"
+      ]
     },
     {
       "type": "grammar-tip",
@@ -429,7 +613,9 @@
         "esst",
         "essen"
       ],
-      "correctAnswers": [0],
+      "correctAnswers": [
+        0
+      ],
       "feedback": {
         "explanation": "**Ich esse** = من می‌خورم"
       },
@@ -449,7 +635,9 @@
         "trinkt",
         "trinken"
       ],
-      "correctAnswers": [2],
+      "correctAnswers": [
+        2
+      ],
       "feedback": {
         "explanation": "**Er trinkt** = او می‌نوشد"
       },
@@ -518,13 +706,21 @@
       "questions": [
         {
           "question": "الی قهوه‌اش را چطور می‌خواهد؟",
-          "options": ["با شیر و شکر", "فقط با شیر", "بدون شیر و شکر"],
+          "options": [
+            "با شیر و شکر",
+            "فقط با شیر",
+            "بدون شیر و شکر"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: Nur mit Milch, ohne Zucker (فقط با شیر، بدون شکر)"
         },
         {
           "question": "تام چه نوشیدنی سفارش می‌دهد؟",
-          "options": ["قهوه", "چای سبز", "چای سیاه"],
+          "options": [
+            "قهوه",
+            "چای سبز",
+            "چای سیاه"
+          ],
           "correctIndex": 2,
           "explanation": "تام گفت: Schwarzer Tee, bitte (چای سیاه، لطفاً)"
         }
@@ -535,22 +731,58 @@
       "id": "s17",
       "instruction": "کلمات آلمانی را با فارسی جفت کنید",
       "items": [
-        { "id": "i1", "text": "Wasser" },
-        { "id": "i2", "text": "Kaffee" },
-        { "id": "i3", "text": "Tee" },
-        { "id": "i4", "text": "Brot" }
+        {
+          "id": "i1",
+          "text": "Wasser"
+        },
+        {
+          "id": "i2",
+          "text": "Kaffee"
+        },
+        {
+          "id": "i3",
+          "text": "Tee"
+        },
+        {
+          "id": "i4",
+          "text": "Brot"
+        }
       ],
       "matches": [
-        { "id": "m1", "text": "قهوه" },
-        { "id": "m2", "text": "آب" },
-        { "id": "m3", "text": "نان" },
-        { "id": "m4", "text": "چای" }
+        {
+          "id": "m1",
+          "text": "قهوه"
+        },
+        {
+          "id": "m2",
+          "text": "آب"
+        },
+        {
+          "id": "m3",
+          "text": "نان"
+        },
+        {
+          "id": "m4",
+          "text": "چای"
+        }
       ],
       "correctPairs": [
-        ["i1", "m2"],
-        ["i2", "m1"],
-        ["i3", "m4"],
-        ["i4", "m3"]
+        [
+          "i1",
+          "m2"
+        ],
+        [
+          "i2",
+          "m1"
+        ],
+        [
+          "i3",
+          "m4"
+        ],
+        [
+          "i4",
+          "m3"
+        ]
       ]
     },
     {
@@ -626,21 +858,83 @@
       "difficulty": "A1"
     },
     {
+      "type": "memory-match",
+      "id": "g5",
+      "title": "بازی حافظه",
+      "pairs": [
+        {
+          "de": "Essen",
+          "fa": "غذا"
+        },
+        {
+          "de": "Brot",
+          "fa": "نان"
+        },
+        {
+          "de": "Brötchen",
+          "fa": "نان کوچک"
+        },
+        {
+          "de": "Butter",
+          "fa": "کره"
+        },
+        {
+          "de": "Käse",
+          "fa": "پنیر"
+        },
+        {
+          "de": "Wurst",
+          "fa": "سوسیس"
+        }
+      ],
+      "timeLimit": 60
+    },
+    {
       "type": "vocab-check",
-      "id": "g4",
+      "id": "g6",
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [
-        { "de": "das Essen", "fa": "غذا" },
-        { "de": "das Brot", "fa": "نان" },
-        { "de": "das Brötchen", "fa": "نان کوچک" },
-        { "de": "die Butter", "fa": "کره" },
-        { "de": "der Käse", "fa": "پنیر" },
-        { "de": "die Wurst", "fa": "سوسیس" },
-        { "de": "das Ei", "fa": "تخم‌مرغ" },
-        { "de": "das Wasser", "fa": "آب" },
-        { "de": "der Kaffee", "fa": "قهوه" },
-        { "de": "der Tee", "fa": "چای" }
+        {
+          "de": "das Essen",
+          "fa": "غذا"
+        },
+        {
+          "de": "das Brot",
+          "fa": "نان"
+        },
+        {
+          "de": "das Brötchen",
+          "fa": "نان کوچک"
+        },
+        {
+          "de": "die Butter",
+          "fa": "کره"
+        },
+        {
+          "de": "der Käse",
+          "fa": "پنیر"
+        },
+        {
+          "de": "die Wurst",
+          "fa": "سوسیس"
+        },
+        {
+          "de": "das Ei",
+          "fa": "تخم‌مرغ"
+        },
+        {
+          "de": "das Wasser",
+          "fa": "آب"
+        },
+        {
+          "de": "der Kaffee",
+          "fa": "قهوه"
+        },
+        {
+          "de": "der Tee",
+          "fa": "چای"
+        }
       ]
     },
     {
@@ -651,16 +945,66 @@
       "xpEarned": 50,
       "nextLessonId": "A1-M08-L02",
       "vocabularyLearned": [
-        { "word": { "de": "das Essen", "fa": "غذا" } },
-        { "word": { "de": "das Brot", "fa": "نان" } },
-        { "word": { "de": "das Brötchen", "fa": "نان کوچک" } },
-        { "word": { "de": "die Butter", "fa": "کره" } },
-        { "word": { "de": "der Käse", "fa": "پنیر" } },
-        { "word": { "de": "die Wurst", "fa": "سوسیس" } },
-        { "word": { "de": "das Ei", "fa": "تخم‌مرغ" } },
-        { "word": { "de": "das Wasser", "fa": "آب" } },
-        { "word": { "de": "der Kaffee", "fa": "قهوه" } },
-        { "word": { "de": "der Tee", "fa": "چای" } }
+        {
+          "word": {
+            "de": "das Essen",
+            "fa": "غذا"
+          }
+        },
+        {
+          "word": {
+            "de": "das Brot",
+            "fa": "نان"
+          }
+        },
+        {
+          "word": {
+            "de": "das Brötchen",
+            "fa": "نان کوچک"
+          }
+        },
+        {
+          "word": {
+            "de": "die Butter",
+            "fa": "کره"
+          }
+        },
+        {
+          "word": {
+            "de": "der Käse",
+            "fa": "پنیر"
+          }
+        },
+        {
+          "word": {
+            "de": "die Wurst",
+            "fa": "سوسیس"
+          }
+        },
+        {
+          "word": {
+            "de": "das Ei",
+            "fa": "تخم‌مرغ"
+          }
+        },
+        {
+          "word": {
+            "de": "das Wasser",
+            "fa": "آب"
+          }
+        },
+        {
+          "word": {
+            "de": "der Kaffee",
+            "fa": "قهوه"
+          }
+        },
+        {
+          "word": {
+            "de": "der Tee",
+            "fa": "چای"
+          }
+        }
       ]
     }
   ]

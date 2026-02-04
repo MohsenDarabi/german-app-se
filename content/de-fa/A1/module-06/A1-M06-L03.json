@@ -20,16 +20,116 @@
   "totalSteps": 42,
   "estimatedMinutes": 20,
   "vocabulary": [
-    { "de": "der Januar", "fa": "ژانویه", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Januare" } } },
-    { "de": "der Februar", "fa": "فوریه", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Februare" } } },
-    { "de": "der März", "fa": "مارس", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Märze" } } },
-    { "de": "der April", "fa": "آوریل", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Aprile" } } },
-    { "de": "der Juli", "fa": "ژوئیه", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Julis" } } },
-    { "de": "der Dezember", "fa": "دسامبر", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Dezember" } } },
-    { "de": "der Frühling", "fa": "بهار", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Frühlinge" } } },
-    { "de": "der Sommer", "fa": "تابستان", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Sommer" } } },
-    { "de": "der Herbst", "fa": "پاییز", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Herbste" } } },
-    { "de": "der Winter", "fa": "زمستان", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Winter" } } }
+    {
+      "de": "der Januar",
+      "fa": "ژانویه",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Januare"
+        }
+      }
+    },
+    {
+      "de": "der Februar",
+      "fa": "فوریه",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Februare"
+        }
+      }
+    },
+    {
+      "de": "der März",
+      "fa": "مارس",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Märze"
+        }
+      }
+    },
+    {
+      "de": "der April",
+      "fa": "آوریل",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Aprile"
+        }
+      }
+    },
+    {
+      "de": "der Juli",
+      "fa": "ژوئیه",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Julis"
+        }
+      }
+    },
+    {
+      "de": "der Dezember",
+      "fa": "دسامبر",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Dezember"
+        }
+      }
+    },
+    {
+      "de": "der Frühling",
+      "fa": "بهار",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Frühlinge"
+        }
+      }
+    },
+    {
+      "de": "der Sommer",
+      "fa": "تابستان",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Sommer"
+        }
+      }
+    },
+    {
+      "de": "der Herbst",
+      "fa": "پاییز",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Herbste"
+        }
+      }
+    },
+    {
+      "de": "der Winter",
+      "fa": "زمستان",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Winter"
+        }
+      }
+    }
   ],
   "steps": [
     {
@@ -67,8 +167,17 @@
       "id": "syllable-Januar",
       "word": "Januar",
       "translation": "ژانویه",
-      "syllables": ["Ja", "nu", "ar"],
-      "distractors": ["Je", "no", "er", "Ju"]
+      "syllables": [
+        "Ja",
+        "nu",
+        "ar"
+      ],
+      "distractors": [
+        "Je",
+        "no",
+        "er",
+        "Ju"
+      ]
     },
     {
       "type": "new-word",
@@ -89,8 +198,17 @@
       "id": "syllable-Februar",
       "word": "Februar",
       "translation": "فوریه",
-      "syllables": ["Feb", "ru", "ar"],
-      "distractors": ["Fäb", "ra", "or", "Fob"]
+      "syllables": [
+        "Feb",
+        "ru",
+        "ar"
+      ],
+      "distractors": [
+        "Fäb",
+        "ra",
+        "or",
+        "Fob"
+      ]
     },
     {
       "type": "new-word",
@@ -111,8 +229,15 @@
       "id": "syllable-Maerz",
       "word": "März",
       "translation": "مارس",
-      "syllables": ["März"],
-      "distractors": ["Merz", "Marz", "Mürz", "Morz"]
+      "syllables": [
+        "März"
+      ],
+      "distractors": [
+        "Merz",
+        "Marz",
+        "Mürz",
+        "Morz"
+      ]
     },
     {
       "type": "new-word",
@@ -133,8 +258,16 @@
       "id": "syllable-April",
       "word": "April",
       "translation": "آوریل",
-      "syllables": ["Ap", "ril"],
-      "distractors": ["Ab", "rel", "Op", "ral"]
+      "syllables": [
+        "Ap",
+        "ril"
+      ],
+      "distractors": [
+        "Ab",
+        "rel",
+        "Op",
+        "ral"
+      ]
     },
     {
       "type": "rapid-fire",
@@ -209,8 +342,16 @@
       "id": "syllable-Juli",
       "word": "Juli",
       "translation": "ژوئیه",
-      "syllables": ["Ju", "li"],
-      "distractors": ["Jo", "le", "Ji", "la"]
+      "syllables": [
+        "Ju",
+        "li"
+      ],
+      "distractors": [
+        "Jo",
+        "le",
+        "Ji",
+        "la"
+      ]
     },
     {
       "type": "new-word",
@@ -231,8 +372,17 @@
       "id": "syllable-Dezember",
       "word": "Dezember",
       "translation": "دسامبر",
-      "syllables": ["De", "zem", "ber"],
-      "distractors": ["Da", "zam", "bar", "Di"]
+      "syllables": [
+        "De",
+        "zem",
+        "ber"
+      ],
+      "distractors": [
+        "Da",
+        "zam",
+        "bar",
+        "Di"
+      ]
     },
     {
       "type": "dialog",
@@ -280,13 +430,21 @@
       "questions": [
         {
           "question": "تولد تام در چه ماهی است؟",
-          "options": ["März", "Mai", "November"],
+          "options": [
+            "März",
+            "Mai",
+            "November"
+          ],
           "correctIndex": 1,
           "explanation": "تام گفت: Im Mai (در مه)"
         },
         {
           "question": "تولد لیزا در چه فصلی است؟",
-          "options": ["Frühling", "Sommer", "Herbst"],
+          "options": [
+            "Frühling",
+            "Sommer",
+            "Herbst"
+          ],
           "correctIndex": 2,
           "explanation": "لیزا گفت تولدش در نوامبر است و تام گفت: Oh, im Herbst! (اوه، در پاییز!)"
         }
@@ -349,8 +507,16 @@
       "id": "syllable-Fruehling",
       "word": "Frühling",
       "translation": "بهار",
-      "syllables": ["Früh", "ling"],
-      "distractors": ["Frah", "lang", "Froh", "lung"]
+      "syllables": [
+        "Früh",
+        "ling"
+      ],
+      "distractors": [
+        "Frah",
+        "lang",
+        "Froh",
+        "lung"
+      ]
     },
     {
       "type": "new-word",
@@ -371,8 +537,16 @@
       "id": "syllable-Sommer",
       "word": "Sommer",
       "translation": "تابستان",
-      "syllables": ["Som", "mer"],
-      "distractors": ["Sam", "mar", "Sum", "mir"]
+      "syllables": [
+        "Som",
+        "mer"
+      ],
+      "distractors": [
+        "Sam",
+        "mar",
+        "Sum",
+        "mir"
+      ]
     },
     {
       "type": "new-word",
@@ -393,8 +567,15 @@
       "id": "syllable-Herbst",
       "word": "Herbst",
       "translation": "پاییز",
-      "syllables": ["Herbst"],
-      "distractors": ["Harbst", "Hirbst", "Horbst", "Hurbst"]
+      "syllables": [
+        "Herbst"
+      ],
+      "distractors": [
+        "Harbst",
+        "Hirbst",
+        "Horbst",
+        "Hurbst"
+      ]
     },
     {
       "type": "new-word",
@@ -415,8 +596,16 @@
       "id": "syllable-Winter",
       "word": "Winter",
       "translation": "زمستان",
-      "syllables": ["Win", "ter"],
-      "distractors": ["Wan", "tar", "Wun", "tor"]
+      "syllables": [
+        "Win",
+        "ter"
+      ],
+      "distractors": [
+        "Wan",
+        "tar",
+        "Wun",
+        "tor"
+      ]
     },
     {
       "type": "grammar-tip",
@@ -518,13 +707,21 @@
       "questions": [
         {
           "question": "الی کدام فصل را دوست دارد؟",
-          "options": ["Sommer", "Frühling", "Winter"],
+          "options": [
+            "Sommer",
+            "Frühling",
+            "Winter"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: Ich mag den Frühling (بهار رو دوست دارم)"
         },
         {
           "question": "چرا الی بهار را دوست دارد؟",
-          "options": ["هوای گرم", "نه گرم نه سرد", "برف"],
+          "options": [
+            "هوای گرم",
+            "نه گرم نه سرد",
+            "برف"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: Es ist nicht zu heiß und nicht zu kalt (نه خیلی گرمه نه خیلی سرد)"
         }
@@ -672,8 +869,40 @@
       "difficulty": "A1"
     },
     {
+      "type": "memory-match",
+      "id": "g5",
+      "title": "بازی حافظه",
+      "pairs": [
+        {
+          "de": "Januar",
+          "fa": "ژانویه"
+        },
+        {
+          "de": "Februar",
+          "fa": "فوریه"
+        },
+        {
+          "de": "März",
+          "fa": "مارس"
+        },
+        {
+          "de": "April",
+          "fa": "آوریل"
+        },
+        {
+          "de": "Juli",
+          "fa": "ژوئیه"
+        },
+        {
+          "de": "Dezember",
+          "fa": "دسامبر"
+        }
+      ],
+      "timeLimit": 60
+    },
+    {
       "type": "vocab-check",
-      "id": "g4",
+      "id": "g6",
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [

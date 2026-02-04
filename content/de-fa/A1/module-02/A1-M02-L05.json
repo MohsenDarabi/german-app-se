@@ -27,7 +27,14 @@
         "pos": "verb",
         "verb": {
           "infinitiv": "können",
-          "praesens": { "ich": "kann", "du": "kannst", "er_sie_es": "kann", "wir": "können", "ihr": "könnt", "sie_Sie": "können" }
+          "praesens": {
+            "ich": "kann",
+            "du": "kannst",
+            "er_sie_es": "kann",
+            "wir": "können",
+            "ihr": "könnt",
+            "sie_Sie": "können"
+          }
         }
       }
     },
@@ -38,7 +45,14 @@
         "pos": "verb",
         "verb": {
           "infinitiv": "wollen",
-          "praesens": { "ich": "will", "du": "willst", "er_sie_es": "will", "wir": "wollen", "ihr": "wollt", "sie_Sie": "wollen" }
+          "praesens": {
+            "ich": "will",
+            "du": "willst",
+            "er_sie_es": "will",
+            "wir": "wollen",
+            "ihr": "wollt",
+            "sie_Sie": "wollen"
+          }
         }
       }
     },
@@ -49,7 +63,14 @@
         "pos": "verb",
         "verb": {
           "infinitiv": "müssen",
-          "praesens": { "ich": "muss", "du": "musst", "er_sie_es": "muss", "wir": "müssen", "ihr": "müsst", "sie_Sie": "müssen" }
+          "praesens": {
+            "ich": "muss",
+            "du": "musst",
+            "er_sie_es": "muss",
+            "wir": "müssen",
+            "ihr": "müsst",
+            "sie_Sie": "müssen"
+          }
         }
       }
     }
@@ -90,8 +111,15 @@
       "id": "syllable-1",
       "word": "können",
       "translation": "توانستن",
-      "syllables": ["kön", "nen"],
-      "distractors": ["kan", "kon", "nun"],
+      "syllables": [
+        "kön",
+        "nen"
+      ],
+      "distractors": [
+        "kan",
+        "kon",
+        "nun"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «können» یک فعل کمکی مهم است که یعنی توانستن."
@@ -116,8 +144,15 @@
       "id": "syllable-ich-kann",
       "word": "ich kann",
       "translation": "من می‌توانم",
-      "syllables": ["ich", "kann"],
-      "distractors": ["ach", "kenn", "konn"],
+      "syllables": [
+        "ich",
+        "kann"
+      ],
+      "distractors": [
+        "ach",
+        "kenn",
+        "konn"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «ich kann» یعنی من می‌توانم. توجه: ich و er/sie هر دو kann هستند!"
@@ -142,8 +177,15 @@
       "id": "syllable-du-kannst",
       "word": "du kannst",
       "translation": "تو می‌توانی",
-      "syllables": ["du", "kannst"],
-      "distractors": ["da", "kennst", "konnst"],
+      "syllables": [
+        "du",
+        "kannst"
+      ],
+      "distractors": [
+        "da",
+        "kennst",
+        "konnst"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «du kannst» یعنی تو می‌توانی."
@@ -168,8 +210,15 @@
       "id": "syllable-er-kann",
       "word": "er kann",
       "translation": "او می‌تواند",
-      "syllables": ["er", "kann"],
-      "distractors": ["ar", "kenn", "konn"],
+      "syllables": [
+        "er",
+        "kann"
+      ],
+      "distractors": [
+        "ar",
+        "kenn",
+        "konn"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «er/sie kann» یعنی او می‌تواند. مثل ich، شکل kann است!"
@@ -248,8 +297,15 @@
       "id": "syllable-wollen",
       "word": "wollen",
       "translation": "خواستن",
-      "syllables": ["wol", "len"],
-      "distractors": ["wel", "wal", "lan"],
+      "syllables": [
+        "wol",
+        "len"
+      ],
+      "distractors": [
+        "wel",
+        "wal",
+        "lan"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «wollen» یعنی خواستن - یک فعل کمکی مهم!"
@@ -274,8 +330,15 @@
       "id": "syllable-ich-will",
       "word": "ich will",
       "translation": "من می‌خواهم",
-      "syllables": ["ich", "will"],
-      "distractors": ["ach", "well", "woll"],
+      "syllables": [
+        "ich",
+        "will"
+      ],
+      "distractors": [
+        "ach",
+        "well",
+        "woll"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «ich will» یعنی من می‌خواهم."
@@ -300,8 +363,15 @@
       "id": "syllable-du-willst",
       "word": "du willst",
       "translation": "تو می‌خواهی",
-      "syllables": ["du", "willst"],
-      "distractors": ["da", "wellst", "wollst"],
+      "syllables": [
+        "du",
+        "willst"
+      ],
+      "distractors": [
+        "da",
+        "wellst",
+        "wollst"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «du willst» یعنی تو می‌خواهی."
@@ -326,8 +396,15 @@
       "id": "syllable-er-will",
       "word": "er will",
       "translation": "او می‌خواهد",
-      "syllables": ["er", "will"],
-      "distractors": ["ar", "well", "woll"],
+      "syllables": [
+        "er",
+        "will"
+      ],
+      "distractors": [
+        "ar",
+        "well",
+        "woll"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «er/sie will» یعنی او می‌خواهد. مثل ich، شکل will است!"
@@ -368,8 +445,15 @@
       "id": "syllable-2",
       "word": "müssen",
       "translation": "باید / مجبور بودن",
-      "syllables": ["müs", "sen"],
-      "distractors": ["mus", "mes", "sin"],
+      "syllables": [
+        "müs",
+        "sen"
+      ],
+      "distractors": [
+        "mus",
+        "mes",
+        "sin"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «müssen» یعنی باید یا مجبور بودن."
@@ -394,8 +478,15 @@
       "id": "syllable-ich-muss",
       "word": "ich muss",
       "translation": "من باید",
-      "syllables": ["ich", "muss"],
-      "distractors": ["ach", "mess", "moss"],
+      "syllables": [
+        "ich",
+        "muss"
+      ],
+      "distractors": [
+        "ach",
+        "mess",
+        "moss"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «ich muss» یعنی من باید."
@@ -420,8 +511,15 @@
       "id": "syllable-du-musst",
       "word": "du musst",
       "translation": "تو باید",
-      "syllables": ["du", "musst"],
-      "distractors": ["da", "messt", "mosst"],
+      "syllables": [
+        "du",
+        "musst"
+      ],
+      "distractors": [
+        "da",
+        "messt",
+        "mosst"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «du musst» یعنی تو باید."
@@ -446,8 +544,15 @@
       "id": "syllable-er-muss",
       "word": "er muss",
       "translation": "او باید",
-      "syllables": ["er", "muss"],
-      "distractors": ["ar", "mess", "moss"],
+      "syllables": [
+        "er",
+        "muss"
+      ],
+      "distractors": [
+        "ar",
+        "mess",
+        "moss"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «er/sie muss» یعنی او باید. مثل ich، شکل muss است!"
@@ -564,21 +669,33 @@
       "questions": [
         {
           "question": "تام آخر هفته چه کاری می‌خواهد بکند؟",
-          "options": ["به کار برود", "به سینما برود", "بخوابد"],
+          "options": [
+            "به کار برود",
+            "به سینما برود",
+            "بخوابد"
+          ],
           "correctIndex": 1,
           "explanation": "تام گفت: «Ich will ins Kino gehen» یعنی می‌خواهم به سینما بروم.",
           "relatedLineIndex": 1
         },
         {
           "question": "چرا الی شنبه نمی‌تواند بیاید؟",
-          "options": ["خسته است", "باید کار کند", "بیمار است"],
+          "options": [
+            "خسته است",
+            "باید کار کند",
+            "بیمار است"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: «Ich muss am Samstag arbeiten» یعنی شنبه باید کار کنم.",
           "relatedLineIndex": 2
         },
         {
           "question": "الی چه روزی می‌تواند بیاید؟",
-          "options": ["شنبه", "یکشنبه", "هیچ‌وقت"],
+          "options": [
+            "شنبه",
+            "یکشنبه",
+            "هیچ‌وقت"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: «Am Sonntag kann ich» یعنی یکشنبه می‌توانم.",
           "relatedLineIndex": 4
@@ -718,8 +835,40 @@
       }
     },
     {
+      "type": "memory-match",
+      "id": "g4",
+      "title": "بازی حافظه",
+      "pairs": [
+        {
+          "de": "können",
+          "fa": "توانستن"
+        },
+        {
+          "de": "ich kann",
+          "fa": "من می‌توانم"
+        },
+        {
+          "de": "du kannst",
+          "fa": "تو می‌توانی"
+        },
+        {
+          "de": "er/sie kann",
+          "fa": "او می‌تواند"
+        },
+        {
+          "de": "wollen",
+          "fa": "خواستن"
+        },
+        {
+          "de": "ich will",
+          "fa": "من می‌خواهم"
+        }
+      ],
+      "timeLimit": 60
+    },
+    {
       "type": "vocab-check",
-      "id": "g3",
+      "id": "g5",
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [

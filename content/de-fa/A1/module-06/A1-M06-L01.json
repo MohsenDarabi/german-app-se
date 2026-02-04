@@ -20,14 +20,69 @@
   "totalSteps": 38,
   "estimatedMinutes": 20,
   "vocabulary": [
-    { "de": "die Uhr", "fa": "ساعت", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Uhren" } } },
-    { "de": "halb", "fa": "نیم", "grammar": { "pos": "adverb" } },
-    { "de": "Viertel", "fa": "ربع", "grammar": { "pos": "noun", "noun": { "artikel": "n" } } },
-    { "de": "nach", "fa": "بعد از", "grammar": { "pos": "preposition" } },
-    { "de": "vor", "fa": "قبل از", "grammar": { "pos": "preposition" } },
-    { "de": "um", "fa": "در ساعت", "grammar": { "pos": "preposition" } },
-    { "de": "früh", "fa": "زود", "grammar": { "pos": "adverb" } },
-    { "de": "spät", "fa": "دیر", "grammar": { "pos": "adverb" } }
+    {
+      "de": "die Uhr",
+      "fa": "ساعت",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "f",
+          "plural": "Uhren"
+        }
+      }
+    },
+    {
+      "de": "halb",
+      "fa": "نیم",
+      "grammar": {
+        "pos": "adverb"
+      }
+    },
+    {
+      "de": "Viertel",
+      "fa": "ربع",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "n"
+        }
+      }
+    },
+    {
+      "de": "nach",
+      "fa": "بعد از",
+      "grammar": {
+        "pos": "preposition"
+      }
+    },
+    {
+      "de": "vor",
+      "fa": "قبل از",
+      "grammar": {
+        "pos": "preposition"
+      }
+    },
+    {
+      "de": "um",
+      "fa": "در ساعت",
+      "grammar": {
+        "pos": "preposition"
+      }
+    },
+    {
+      "de": "früh",
+      "fa": "زود",
+      "grammar": {
+        "pos": "adverb"
+      }
+    },
+    {
+      "de": "spät",
+      "fa": "دیر",
+      "grammar": {
+        "pos": "adverb"
+      }
+    }
   ],
   "steps": [
     {
@@ -65,8 +120,14 @@
       "id": "syllable-Uhr",
       "word": "Uhr",
       "translation": "ساعت",
-      "syllables": ["Uhr"],
-      "distractors": ["Ur", "Ohr", "Ahr"]
+      "syllables": [
+        "Uhr"
+      ],
+      "distractors": [
+        "Ur",
+        "Ohr",
+        "Ahr"
+      ]
     },
     {
       "type": "new-word",
@@ -87,8 +148,14 @@
       "id": "syllable-halb",
       "word": "halb",
       "translation": "نیم",
-      "syllables": ["halb"],
-      "distractors": ["holb", "hilb", "hulb"]
+      "syllables": [
+        "halb"
+      ],
+      "distractors": [
+        "holb",
+        "hilb",
+        "hulb"
+      ]
     },
     {
       "type": "grammar-tip",
@@ -189,13 +256,21 @@
       "questions": [
         {
           "question": "الان ساعت چند است؟",
-          "options": ["Es ist zwei Uhr", "Es ist drei Uhr", "Es ist halb vier"],
+          "options": [
+            "Es ist zwei Uhr",
+            "Es ist drei Uhr",
+            "Es ist halb vier"
+          ],
           "correctIndex": 1,
           "explanation": "لیزا گفت: «Es ist drei Uhr.»"
         },
         {
           "question": "کی همدیگر را ملاقات می‌کنند؟",
-          "options": ["Um drei Uhr", "Um halb vier", "Um vier Uhr"],
+          "options": [
+            "Um drei Uhr",
+            "Um halb vier",
+            "Um vier Uhr"
+          ],
           "correctIndex": 1,
           "explanation": "لیزا پیشنهاد داد: «Um halb vier?»"
         }
@@ -221,8 +296,16 @@
       "id": "syllable-Viertel",
       "word": "Viertel",
       "translation": "ربع",
-      "syllables": ["Vier", "tel"],
-      "distractors": ["Viar", "tal", "Vior", "tol"]
+      "syllables": [
+        "Vier",
+        "tel"
+      ],
+      "distractors": [
+        "Viar",
+        "tal",
+        "Vior",
+        "tol"
+      ]
     },
     {
       "type": "new-word",
@@ -243,8 +326,14 @@
       "id": "syllable-nach",
       "word": "nach",
       "translation": "بعد از",
-      "syllables": ["nach"],
-      "distractors": ["noch", "nech", "nich"]
+      "syllables": [
+        "nach"
+      ],
+      "distractors": [
+        "noch",
+        "nech",
+        "nich"
+      ]
     },
     {
       "type": "new-word",
@@ -265,8 +354,14 @@
       "id": "syllable-vor",
       "word": "vor",
       "translation": "قبل از",
-      "syllables": ["vor"],
-      "distractors": ["ver", "vir", "vur"]
+      "syllables": [
+        "vor"
+      ],
+      "distractors": [
+        "ver",
+        "vir",
+        "vur"
+      ]
     },
     {
       "type": "grammar-tip",
@@ -385,8 +480,14 @@
       "id": "syllable-um",
       "word": "um",
       "translation": "در ساعت",
-      "syllables": ["um"],
-      "distractors": ["am", "im", "om"]
+      "syllables": [
+        "um"
+      ],
+      "distractors": [
+        "am",
+        "im",
+        "om"
+      ]
     },
     {
       "type": "grammar-tip",
@@ -449,13 +550,21 @@
       "questions": [
         {
           "question": "الی ساعت چند بیدار می‌شود؟",
-          "options": ["Um sechs Uhr", "Um sieben Uhr", "Um halb acht"],
+          "options": [
+            "Um sechs Uhr",
+            "Um sieben Uhr",
+            "Um halb acht"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: «Um sieben Uhr.»"
         },
         {
           "question": "الی ساعت چند می‌رود سر کار؟",
-          "options": ["Um sieben Uhr", "Um halb acht", "Um acht Uhr"],
+          "options": [
+            "Um sieben Uhr",
+            "Um halb acht",
+            "Um acht Uhr"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: «Um halb acht.»"
         }
@@ -481,8 +590,14 @@
       "id": "syllable-frueh",
       "word": "früh",
       "translation": "زود",
-      "syllables": ["früh"],
-      "distractors": ["frah", "froh", "frih"]
+      "syllables": [
+        "früh"
+      ],
+      "distractors": [
+        "frah",
+        "froh",
+        "frih"
+      ]
     },
     {
       "type": "new-word",
@@ -503,8 +618,14 @@
       "id": "syllable-spaet",
       "word": "spät",
       "translation": "دیر",
-      "syllables": ["spät"],
-      "distractors": ["spet", "spot", "spit"]
+      "syllables": [
+        "spät"
+      ],
+      "distractors": [
+        "spet",
+        "spot",
+        "spit"
+      ]
     },
     {
       "type": "grammar-tip",
@@ -642,8 +763,40 @@
       "difficulty": "A1"
     },
     {
+      "type": "memory-match",
+      "id": "g5",
+      "title": "بازی حافظه",
+      "pairs": [
+        {
+          "de": "Uhr",
+          "fa": "ساعت"
+        },
+        {
+          "de": "halb",
+          "fa": "نیم"
+        },
+        {
+          "de": "Viertel",
+          "fa": "ربع"
+        },
+        {
+          "de": "nach",
+          "fa": "بعد از"
+        },
+        {
+          "de": "vor",
+          "fa": "قبل از"
+        },
+        {
+          "de": "um",
+          "fa": "در ساعت"
+        }
+      ],
+      "timeLimit": 60
+    },
+    {
       "type": "vocab-check",
-      "id": "g4",
+      "id": "g6",
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [

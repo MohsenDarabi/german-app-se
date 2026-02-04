@@ -20,15 +20,85 @@
   "totalSteps": 40,
   "estimatedMinutes": 19,
   "vocabulary": [
-    { "de": "das Foto", "fa": "عکس", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Fotos" } } },
-    { "de": "das Familienfoto", "fa": "عکس خانوادگی", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Familienfotos" } } },
-    { "de": "der Mann", "fa": "شوهر/مرد", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Männer" } } },
-    { "de": "die Frau", "fa": "زن/همسر", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Frauen" } } },
-    { "de": "verheiratet", "fa": "متأهل", "grammar": { "pos": "adjective" } },
-    { "de": "ledig", "fa": "مجرد", "grammar": { "pos": "adjective" } },
-    { "de": "geschieden", "fa": "مطلقه/طلاق گرفته", "grammar": { "pos": "adjective" } },
-    { "de": "sein", "fa": "...اش (مرد)", "grammar": { "pos": "pronoun" } },
-    { "de": "ihr", "fa": "...اش (زن)", "grammar": { "pos": "pronoun" } }
+    {
+      "de": "das Foto",
+      "fa": "عکس",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "n",
+          "plural": "die Fotos"
+        }
+      }
+    },
+    {
+      "de": "das Familienfoto",
+      "fa": "عکس خانوادگی",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "n",
+          "plural": "die Familienfotos"
+        }
+      }
+    },
+    {
+      "de": "der Mann",
+      "fa": "شوهر/مرد",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Männer"
+        }
+      }
+    },
+    {
+      "de": "die Frau",
+      "fa": "زن/همسر",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "f",
+          "plural": "die Frauen"
+        }
+      }
+    },
+    {
+      "de": "verheiratet",
+      "fa": "متأهل",
+      "grammar": {
+        "pos": "adjective"
+      }
+    },
+    {
+      "de": "ledig",
+      "fa": "مجرد",
+      "grammar": {
+        "pos": "adjective"
+      }
+    },
+    {
+      "de": "geschieden",
+      "fa": "مطلقه/طلاق گرفته",
+      "grammar": {
+        "pos": "adjective"
+      }
+    },
+    {
+      "de": "sein",
+      "fa": "...اش (مرد)",
+      "grammar": {
+        "pos": "pronoun"
+      }
+    },
+    {
+      "de": "ihr",
+      "fa": "...اش (زن)",
+      "grammar": {
+        "pos": "pronoun"
+      }
+    }
   ],
   "steps": [
     {
@@ -66,8 +136,16 @@
       "id": "syllable-Foto",
       "word": "Foto",
       "translation": "عکس",
-      "syllables": ["Fo", "to"],
-      "distractors": ["Fa", "ta", "Fu", "tu"]
+      "syllables": [
+        "Fo",
+        "to"
+      ],
+      "distractors": [
+        "Fa",
+        "ta",
+        "Fu",
+        "tu"
+      ]
     },
     {
       "type": "new-word",
@@ -88,8 +166,22 @@
       "id": "syllable-Familienfoto",
       "word": "Familienfoto",
       "translation": "عکس خانوادگی",
-      "syllables": ["Fa", "mi", "li", "en", "fo", "to"],
-      "distractors": ["Fe", "mu", "lu", "an", "fu", "ta"]
+      "syllables": [
+        "Fa",
+        "mi",
+        "li",
+        "en",
+        "fo",
+        "to"
+      ],
+      "distractors": [
+        "Fe",
+        "mu",
+        "lu",
+        "an",
+        "fu",
+        "ta"
+      ]
     },
     {
       "type": "new-word",
@@ -110,8 +202,15 @@
       "id": "syllable-Mann",
       "word": "Mann",
       "translation": "شوهر/مرد",
-      "syllables": ["Mann"],
-      "distractors": ["Menn", "Munn", "Minn", "Monn"]
+      "syllables": [
+        "Mann"
+      ],
+      "distractors": [
+        "Menn",
+        "Munn",
+        "Minn",
+        "Monn"
+      ]
     },
     {
       "type": "new-word",
@@ -132,8 +231,15 @@
       "id": "syllable-Frau",
       "word": "Frau",
       "translation": "زن/همسر",
-      "syllables": ["Frau"],
-      "distractors": ["Freu", "Frou", "Friu", "Frao"]
+      "syllables": [
+        "Frau"
+      ],
+      "distractors": [
+        "Freu",
+        "Frou",
+        "Friu",
+        "Frao"
+      ]
     },
     {
       "type": "rapid-fire",
@@ -192,8 +298,18 @@
       "id": "syllable-verheiratet",
       "word": "verheiratet",
       "translation": "متأهل",
-      "syllables": ["ver", "hei", "ra", "tet"],
-      "distractors": ["vor", "hai", "ro", "tat"]
+      "syllables": [
+        "ver",
+        "hei",
+        "ra",
+        "tet"
+      ],
+      "distractors": [
+        "vor",
+        "hai",
+        "ro",
+        "tat"
+      ]
     },
     {
       "type": "new-word",
@@ -214,8 +330,16 @@
       "id": "syllable-ledig",
       "word": "ledig",
       "translation": "مجرد",
-      "syllables": ["le", "dig"],
-      "distractors": ["la", "dag", "lo", "dug"]
+      "syllables": [
+        "le",
+        "dig"
+      ],
+      "distractors": [
+        "la",
+        "dag",
+        "lo",
+        "dug"
+      ]
     },
     {
       "type": "new-word",
@@ -236,8 +360,17 @@
       "id": "syllable-geschieden",
       "word": "geschieden",
       "translation": "طلاق گرفته",
-      "syllables": ["ge", "schie", "den"],
-      "distractors": ["ga", "scha", "dan", "go"]
+      "syllables": [
+        "ge",
+        "schie",
+        "den"
+      ],
+      "distractors": [
+        "ga",
+        "scha",
+        "dan",
+        "go"
+      ]
     },
     {
       "type": "rapid-fire",
@@ -354,13 +487,21 @@
       "questions": [
         {
           "question": "برادر الی متأهل است یا مجرد؟",
-          "options": ["مجرد", "متأهل", "طلاق گرفته"],
+          "options": [
+            "مجرد",
+            "متأهل",
+            "طلاق گرفته"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: Er ist verheiratet (متأهل است)"
         },
         {
           "question": "پسر علی چند ساله است؟",
-          "options": ["دو ساله", "سه ساله", "چهار ساله"],
+          "options": [
+            "دو ساله",
+            "سه ساله",
+            "چهار ساله"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: Er ist drei Jahre alt (سه ساله است)"
         }
@@ -377,7 +518,9 @@
         "ihr",
         "ihre"
       ],
-      "correctAnswers": [1],
+      "correctAnswers": [
+        1
+      ],
       "feedback": {
         "explanation": "**Seine** Mutter = مادرش (تام مرد است، Mutter مونث است)"
       },
@@ -397,7 +540,9 @@
         "ihr",
         "ihre"
       ],
-      "correctAnswers": [3],
+      "correctAnswers": [
+        3
+      ],
       "feedback": {
         "explanation": "**Ihre** Oma = مامان‌بزرگش (سارا زن است، Oma مونث است)"
       },
@@ -417,7 +562,9 @@
         "ihr",
         "ihrem"
       ],
-      "correctAnswers": [1],
+      "correctAnswers": [
+        1
+      ],
       "feedback": {
         "explanation": "**Seinem** Bruder = با برادرش (mit + Dativ، ماکس مرد است)"
       },
@@ -431,22 +578,58 @@
       "id": "s14",
       "instruction": "کلمات آلمانی را با فارسی جفت کنید",
       "items": [
-        { "id": "i1", "text": "verheiratet" },
-        { "id": "i2", "text": "ledig" },
-        { "id": "i3", "text": "geschieden" },
-        { "id": "i4", "text": "Familienfoto" }
+        {
+          "id": "i1",
+          "text": "verheiratet"
+        },
+        {
+          "id": "i2",
+          "text": "ledig"
+        },
+        {
+          "id": "i3",
+          "text": "geschieden"
+        },
+        {
+          "id": "i4",
+          "text": "Familienfoto"
+        }
       ],
       "matches": [
-        { "id": "m1", "text": "مجرد" },
-        { "id": "m2", "text": "متأهل" },
-        { "id": "m3", "text": "عکس خانوادگی" },
-        { "id": "m4", "text": "طلاق گرفته" }
+        {
+          "id": "m1",
+          "text": "مجرد"
+        },
+        {
+          "id": "m2",
+          "text": "متأهل"
+        },
+        {
+          "id": "m3",
+          "text": "عکس خانوادگی"
+        },
+        {
+          "id": "m4",
+          "text": "طلاق گرفته"
+        }
       ],
       "correctPairs": [
-        ["i1", "m2"],
-        ["i2", "m1"],
-        ["i3", "m4"],
-        ["i4", "m3"]
+        [
+          "i1",
+          "m2"
+        ],
+        [
+          "i2",
+          "m1"
+        ],
+        [
+          "i3",
+          "m4"
+        ],
+        [
+          "i4",
+          "m3"
+        ]
       ]
     },
     {
@@ -529,13 +712,21 @@
       "questions": [
         {
           "question": "والدین سارا چه وضعیتی دارند؟",
-          "options": ["متأهل", "مجرد", "طلاق گرفته"],
+          "options": [
+            "متأهل",
+            "مجرد",
+            "طلاق گرفته"
+          ],
           "correctIndex": 2,
           "explanation": "سارا گفت: sie sind geschieden (طلاق گرفته‌اند)"
         },
         {
           "question": "خواهر سارا متأهل است؟",
-          "options": ["بله", "نه، مجرد است", "طلاق گرفته"],
+          "options": [
+            "بله",
+            "نه، مجرد است",
+            "طلاق گرفته"
+          ],
           "correctIndex": 1,
           "explanation": "سارا گفت: sie ist noch ledig (هنوز مجرد است)"
         }
@@ -630,20 +821,79 @@
       "difficulty": "A1"
     },
     {
+      "type": "memory-match",
+      "id": "g5",
+      "title": "بازی حافظه",
+      "pairs": [
+        {
+          "de": "Foto",
+          "fa": "عکس"
+        },
+        {
+          "de": "Familienfoto",
+          "fa": "عکس خانوادگی"
+        },
+        {
+          "de": "Mann",
+          "fa": "شوهر/مرد"
+        },
+        {
+          "de": "Frau",
+          "fa": "زن/همسر"
+        },
+        {
+          "de": "verheiratet",
+          "fa": "متأهل"
+        },
+        {
+          "de": "ledig",
+          "fa": "مجرد"
+        }
+      ],
+      "timeLimit": 60
+    },
+    {
       "type": "vocab-check",
-      "id": "g4",
+      "id": "g6",
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [
-        { "de": "das Foto", "fa": "عکس" },
-        { "de": "das Familienfoto", "fa": "عکس خانوادگی" },
-        { "de": "der Mann", "fa": "شوهر/مرد" },
-        { "de": "die Frau", "fa": "زن/همسر" },
-        { "de": "verheiratet", "fa": "متأهل" },
-        { "de": "ledig", "fa": "مجرد" },
-        { "de": "geschieden", "fa": "طلاق گرفته" },
-        { "de": "sein/seine", "fa": "...اش (مرد)" },
-        { "de": "ihr/ihre", "fa": "...اش (زن)" }
+        {
+          "de": "das Foto",
+          "fa": "عکس"
+        },
+        {
+          "de": "das Familienfoto",
+          "fa": "عکس خانوادگی"
+        },
+        {
+          "de": "der Mann",
+          "fa": "شوهر/مرد"
+        },
+        {
+          "de": "die Frau",
+          "fa": "زن/همسر"
+        },
+        {
+          "de": "verheiratet",
+          "fa": "متأهل"
+        },
+        {
+          "de": "ledig",
+          "fa": "مجرد"
+        },
+        {
+          "de": "geschieden",
+          "fa": "طلاق گرفته"
+        },
+        {
+          "de": "sein/seine",
+          "fa": "...اش (مرد)"
+        },
+        {
+          "de": "ihr/ihre",
+          "fa": "...اش (زن)"
+        }
       ]
     },
     {
@@ -654,15 +904,60 @@
       "xpEarned": 75,
       "nextLessonId": "A1-M08-L01",
       "vocabularyLearned": [
-        { "word": { "de": "das Foto", "fa": "عکس" } },
-        { "word": { "de": "das Familienfoto", "fa": "عکس خانوادگی" } },
-        { "word": { "de": "der Mann", "fa": "شوهر/مرد" } },
-        { "word": { "de": "die Frau", "fa": "زن/همسر" } },
-        { "word": { "de": "verheiratet", "fa": "متأهل" } },
-        { "word": { "de": "ledig", "fa": "مجرد" } },
-        { "word": { "de": "geschieden", "fa": "طلاق گرفته" } },
-        { "word": { "de": "sein/seine", "fa": "...اش (مرد)" } },
-        { "word": { "de": "ihr/ihre", "fa": "...اش (زن)" } }
+        {
+          "word": {
+            "de": "das Foto",
+            "fa": "عکس"
+          }
+        },
+        {
+          "word": {
+            "de": "das Familienfoto",
+            "fa": "عکس خانوادگی"
+          }
+        },
+        {
+          "word": {
+            "de": "der Mann",
+            "fa": "شوهر/مرد"
+          }
+        },
+        {
+          "word": {
+            "de": "die Frau",
+            "fa": "زن/همسر"
+          }
+        },
+        {
+          "word": {
+            "de": "verheiratet",
+            "fa": "متأهل"
+          }
+        },
+        {
+          "word": {
+            "de": "ledig",
+            "fa": "مجرد"
+          }
+        },
+        {
+          "word": {
+            "de": "geschieden",
+            "fa": "طلاق گرفته"
+          }
+        },
+        {
+          "word": {
+            "de": "sein/seine",
+            "fa": "...اش (مرد)"
+          }
+        },
+        {
+          "word": {
+            "de": "ihr/ihre",
+            "fa": "...اش (زن)"
+          }
+        }
       ]
     }
   ]

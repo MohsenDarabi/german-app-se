@@ -20,14 +20,66 @@
   "totalSteps": 38,
   "estimatedMinutes": 20,
   "vocabulary": [
-    { "de": "Warum", "fa": "چرا", "grammar": { "pos": "adverb" } },
-    { "de": "weil", "fa": "چون / به خاطر اینکه", "grammar": { "pos": "conjunction" } },
-    { "de": "Welcher", "fa": "کدام (مذکر)", "grammar": { "pos": "pronoun" } },
-    { "de": "Welche", "fa": "کدام (مونث/جمع)", "grammar": { "pos": "pronoun" } },
-    { "de": "Welches", "fa": "کدام (خنثی)", "grammar": { "pos": "pronoun" } },
-    { "de": "die Farbe", "fa": "رنگ", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Farben" } } },
-    { "de": "krank", "fa": "مریض", "grammar": { "pos": "adjective" } },
-    { "de": "praktisch", "fa": "کاربردی / عملی", "grammar": { "pos": "adjective" } }
+    {
+      "de": "Warum",
+      "fa": "چرا",
+      "grammar": {
+        "pos": "adverb"
+      }
+    },
+    {
+      "de": "weil",
+      "fa": "چون / به خاطر اینکه",
+      "grammar": {
+        "pos": "conjunction"
+      }
+    },
+    {
+      "de": "Welcher",
+      "fa": "کدام (مذکر)",
+      "grammar": {
+        "pos": "pronoun"
+      }
+    },
+    {
+      "de": "Welche",
+      "fa": "کدام (مونث/جمع)",
+      "grammar": {
+        "pos": "pronoun"
+      }
+    },
+    {
+      "de": "Welches",
+      "fa": "کدام (خنثی)",
+      "grammar": {
+        "pos": "pronoun"
+      }
+    },
+    {
+      "de": "die Farbe",
+      "fa": "رنگ",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "f",
+          "plural": "Farben"
+        }
+      }
+    },
+    {
+      "de": "krank",
+      "fa": "مریض",
+      "grammar": {
+        "pos": "adjective"
+      }
+    },
+    {
+      "de": "praktisch",
+      "fa": "کاربردی / عملی",
+      "grammar": {
+        "pos": "adjective"
+      }
+    }
   ],
   "steps": [
     {
@@ -65,8 +117,16 @@
       "id": "syllable-Warum",
       "word": "Warum",
       "translation": "چرا",
-      "syllables": ["Wa", "rum"],
-      "distractors": ["Wo", "ram", "We", "rim"]
+      "syllables": [
+        "Wa",
+        "rum"
+      ],
+      "distractors": [
+        "Wo",
+        "ram",
+        "We",
+        "rim"
+      ]
     },
     {
       "type": "new-word",
@@ -87,8 +147,14 @@
       "id": "syllable-weil",
       "word": "weil",
       "translation": "چون",
-      "syllables": ["weil"],
-      "distractors": ["wail", "wiel", "waal"]
+      "syllables": [
+        "weil"
+      ],
+      "distractors": [
+        "wail",
+        "wiel",
+        "waal"
+      ]
     },
     {
       "type": "grammar-tip",
@@ -151,13 +217,21 @@
       "questions": [
         {
           "question": "چرا الی آلمانی یاد می‌گیرد؟",
-          "options": ["Weil es praktisch ist", "Weil es schön ist", "Weil es einfach ist"],
+          "options": [
+            "Weil es praktisch ist",
+            "Weil es schön ist",
+            "Weil es einfach ist"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: «Weil ich es schön finde.»"
         },
         {
           "question": "چرا الی فرانسوی یاد نمی‌گیرد؟",
-          "options": ["Weil es schwer ist", "Weil Deutsch praktischer ist", "Weil sie kein Interesse hat"],
+          "options": [
+            "Weil es schwer ist",
+            "Weil Deutsch praktischer ist",
+            "Weil sie kein Interesse hat"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: «Weil Deutsch praktischer ist.»"
         }
@@ -221,8 +295,16 @@
       "id": "syllable-Welcher",
       "word": "Welcher",
       "translation": "کدام (مذکر)",
-      "syllables": ["Wel", "cher"],
-      "distractors": ["Wal", "char", "Wol", "chor"]
+      "syllables": [
+        "Wel",
+        "cher"
+      ],
+      "distractors": [
+        "Wal",
+        "char",
+        "Wol",
+        "chor"
+      ]
     },
     {
       "type": "new-word",
@@ -243,8 +325,16 @@
       "id": "syllable-Welche",
       "word": "Welche",
       "translation": "کدام (مونث)",
-      "syllables": ["Wel", "che"],
-      "distractors": ["Wal", "cha", "Wol", "cho"]
+      "syllables": [
+        "Wel",
+        "che"
+      ],
+      "distractors": [
+        "Wal",
+        "cha",
+        "Wol",
+        "cho"
+      ]
     },
     {
       "type": "new-word",
@@ -265,8 +355,16 @@
       "id": "syllable-Welches",
       "word": "Welches",
       "translation": "کدام (خنثی)",
-      "syllables": ["Wel", "ches"],
-      "distractors": ["Wal", "chas", "Wol", "chos"]
+      "syllables": [
+        "Wel",
+        "ches"
+      ],
+      "distractors": [
+        "Wal",
+        "chas",
+        "Wol",
+        "chos"
+      ]
     },
     {
       "type": "grammar-tip",
@@ -385,8 +483,16 @@
       "id": "syllable-Farbe",
       "word": "Farbe",
       "translation": "رنگ",
-      "syllables": ["Far", "be"],
-      "distractors": ["For", "ba", "Fir", "bo"]
+      "syllables": [
+        "Far",
+        "be"
+      ],
+      "distractors": [
+        "For",
+        "ba",
+        "Fir",
+        "bo"
+      ]
     },
     {
       "type": "new-word",
@@ -407,8 +513,14 @@
       "id": "syllable-krank",
       "word": "krank",
       "translation": "مریض",
-      "syllables": ["krank"],
-      "distractors": ["kronk", "krink", "krunk"]
+      "syllables": [
+        "krank"
+      ],
+      "distractors": [
+        "kronk",
+        "krink",
+        "krunk"
+      ]
     },
     {
       "type": "new-word",
@@ -429,8 +541,16 @@
       "id": "syllable-praktisch",
       "word": "praktisch",
       "translation": "کاربردی",
-      "syllables": ["prak", "tisch"],
-      "distractors": ["prok", "tasch", "prik", "tosch"]
+      "syllables": [
+        "prak",
+        "tisch"
+      ],
+      "distractors": [
+        "prok",
+        "tasch",
+        "prik",
+        "tosch"
+      ]
     },
     {
       "type": "dialog",
@@ -477,13 +597,21 @@
       "questions": [
         {
           "question": "الکس کدام تی‌شرت را دوست دارد؟",
-          "options": ["Das rote", "Das blaue", "Das grüne"],
+          "options": [
+            "Das rote",
+            "Das blaue",
+            "Das grüne"
+          ],
           "correctIndex": 1,
           "explanation": "الکس گفت: «Das blaue.»"
         },
         {
           "question": "چرا لیزا تی‌شرت قرمز را دوست دارد؟",
-          "options": ["Weil es billig ist", "Weil rot ihre Lieblingsfarbe ist", "Weil es schön ist"],
+          "options": [
+            "Weil es billig ist",
+            "Weil rot ihre Lieblingsfarbe ist",
+            "Weil es schön ist"
+          ],
           "correctIndex": 1,
           "explanation": "لیزا گفت: «Weil rot meine Lieblingsfarbe ist!»"
         }
@@ -648,8 +776,40 @@
       "difficulty": "A1"
     },
     {
+      "type": "memory-match",
+      "id": "g5",
+      "title": "بازی حافظه",
+      "pairs": [
+        {
+          "de": "Warum",
+          "fa": "چرا"
+        },
+        {
+          "de": "weil",
+          "fa": "چون"
+        },
+        {
+          "de": "Welcher",
+          "fa": "کدام (مذکر)"
+        },
+        {
+          "de": "Welche",
+          "fa": "کدام (مونث/جمع)"
+        },
+        {
+          "de": "Welches",
+          "fa": "کدام (خنثی)"
+        },
+        {
+          "de": "Farbe",
+          "fa": "رنگ"
+        }
+      ],
+      "timeLimit": 60
+    },
+    {
       "type": "vocab-check",
-      "id": "g4",
+      "id": "g6",
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [

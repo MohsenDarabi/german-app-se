@@ -20,14 +20,112 @@
   "totalSteps": 38,
   "estimatedMinutes": 20,
   "vocabulary": [
-    { "de": "den", "fa": "حرف تعریف مفعولی مذکر", "grammar": { "pos": "particle" } },
-    { "de": "einen", "fa": "یک (مفعولی مذکر)", "grammar": { "pos": "particle" } },
-    { "de": "sehen", "fa": "دیدن", "grammar": { "pos": "verb", "verb": { "infinitiv": "sehen", "praesens": { "ich": "sehe", "du": "siehst", "er_sie_es": "sieht", "wir": "sehen", "ihr": "seht", "sie_Sie": "sehen" } } } },
-    { "de": "kaufen", "fa": "خریدن", "grammar": { "pos": "verb", "verb": { "infinitiv": "kaufen", "praesens": { "ich": "kaufe", "du": "kaufst", "er_sie_es": "kauft", "wir": "kaufen", "ihr": "kauft", "sie_Sie": "kaufen" } } } },
-    { "de": "brauchen", "fa": "نیاز داشتن", "grammar": { "pos": "verb", "verb": { "infinitiv": "brauchen", "praesens": { "ich": "brauche", "du": "brauchst", "er_sie_es": "braucht", "wir": "brauchen", "ihr": "braucht", "sie_Sie": "brauchen" } } } },
-    { "de": "trinken", "fa": "نوشیدن", "grammar": { "pos": "verb", "verb": { "infinitiv": "trinken", "praesens": { "ich": "trinke", "du": "trinkst", "er_sie_es": "trinkt", "wir": "trinken", "ihr": "trinkt", "sie_Sie": "trinken" } } } },
-    { "de": "der Kaffee", "fa": "قهوه", "grammar": { "pos": "noun", "noun": { "artikel": "m" } } },
-    { "de": "der Tee", "fa": "چای", "grammar": { "pos": "noun", "noun": { "artikel": "m" } } }
+    {
+      "de": "den",
+      "fa": "حرف تعریف مفعولی مذکر",
+      "grammar": {
+        "pos": "particle"
+      }
+    },
+    {
+      "de": "einen",
+      "fa": "یک (مفعولی مذکر)",
+      "grammar": {
+        "pos": "particle"
+      }
+    },
+    {
+      "de": "sehen",
+      "fa": "دیدن",
+      "grammar": {
+        "pos": "verb",
+        "verb": {
+          "infinitiv": "sehen",
+          "praesens": {
+            "ich": "sehe",
+            "du": "siehst",
+            "er_sie_es": "sieht",
+            "wir": "sehen",
+            "ihr": "seht",
+            "sie_Sie": "sehen"
+          }
+        }
+      }
+    },
+    {
+      "de": "kaufen",
+      "fa": "خریدن",
+      "grammar": {
+        "pos": "verb",
+        "verb": {
+          "infinitiv": "kaufen",
+          "praesens": {
+            "ich": "kaufe",
+            "du": "kaufst",
+            "er_sie_es": "kauft",
+            "wir": "kaufen",
+            "ihr": "kauft",
+            "sie_Sie": "kaufen"
+          }
+        }
+      }
+    },
+    {
+      "de": "brauchen",
+      "fa": "نیاز داشتن",
+      "grammar": {
+        "pos": "verb",
+        "verb": {
+          "infinitiv": "brauchen",
+          "praesens": {
+            "ich": "brauche",
+            "du": "brauchst",
+            "er_sie_es": "braucht",
+            "wir": "brauchen",
+            "ihr": "braucht",
+            "sie_Sie": "brauchen"
+          }
+        }
+      }
+    },
+    {
+      "de": "trinken",
+      "fa": "نوشیدن",
+      "grammar": {
+        "pos": "verb",
+        "verb": {
+          "infinitiv": "trinken",
+          "praesens": {
+            "ich": "trinke",
+            "du": "trinkst",
+            "er_sie_es": "trinkt",
+            "wir": "trinken",
+            "ihr": "trinkt",
+            "sie_Sie": "trinken"
+          }
+        }
+      }
+    },
+    {
+      "de": "der Kaffee",
+      "fa": "قهوه",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m"
+        }
+      }
+    },
+    {
+      "de": "der Tee",
+      "fa": "چای",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m"
+        }
+      }
+    }
   ],
   "steps": [
     {
@@ -77,10 +175,18 @@
       "id": "syllable-den",
       "word": "den",
       "translation": "حرف تعریف مفعولی مذکر",
-      "syllables": ["den"],
-      "distractors": ["der", "dem", "das"],
+      "syllables": [
+        "den"
+      ],
+      "distractors": [
+        "der",
+        "dem",
+        "das"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
-      "feedbackTip": { "onCorrect": "آفرین! der → den در حالت مفعولی" }
+      "feedbackTip": {
+        "onCorrect": "آفرین! der → den در حالت مفعولی"
+      }
     },
     {
       "type": "new-word",
@@ -101,10 +207,19 @@
       "id": "syllable-einen",
       "word": "einen",
       "translation": "یک (مفعولی مذکر)",
-      "syllables": ["ei", "nen"],
-      "distractors": ["ai", "nun", "non"],
+      "syllables": [
+        "ei",
+        "nen"
+      ],
+      "distractors": [
+        "ai",
+        "nun",
+        "non"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
-      "feedbackTip": { "onCorrect": "آفرین! ein → einen در حالت مفعولی مذکر" }
+      "feedbackTip": {
+        "onCorrect": "آفرین! ein → einen در حالت مفعولی مذکر"
+      }
     },
     {
       "type": "rapid-fire",
@@ -163,10 +278,19 @@
       "id": "syllable-sehen",
       "word": "sehen",
       "translation": "دیدن",
-      "syllables": ["se", "hen"],
-      "distractors": ["sa", "han", "hon"],
+      "syllables": [
+        "se",
+        "hen"
+      ],
+      "distractors": [
+        "sa",
+        "han",
+        "hon"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
-      "feedbackTip": { "onCorrect": "آفرین! «sehen» فعلی است که مفعول می‌گیرد" }
+      "feedbackTip": {
+        "onCorrect": "آفرین! «sehen» فعلی است که مفعول می‌گیرد"
+      }
     },
     {
       "type": "new-word",
@@ -187,10 +311,19 @@
       "id": "syllable-kaufen",
       "word": "kaufen",
       "translation": "خریدن",
-      "syllables": ["kau", "fen"],
-      "distractors": ["kou", "fan", "fon"],
+      "syllables": [
+        "kau",
+        "fen"
+      ],
+      "distractors": [
+        "kou",
+        "fan",
+        "fon"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
-      "feedbackTip": { "onCorrect": "آفرین! «kaufen» یعنی خریدن - au صدای آو" }
+      "feedbackTip": {
+        "onCorrect": "آفرین! «kaufen» یعنی خریدن - au صدای آو"
+      }
     },
     {
       "type": "new-word",
@@ -211,10 +344,19 @@
       "id": "syllable-brauchen",
       "word": "brauchen",
       "translation": "نیاز داشتن",
-      "syllables": ["brau", "chen"],
-      "distractors": ["brou", "chan", "chon"],
+      "syllables": [
+        "brau",
+        "chen"
+      ],
+      "distractors": [
+        "brou",
+        "chan",
+        "chon"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
-      "feedbackTip": { "onCorrect": "آفرین! «brauchen» یعنی نیاز داشتن - au صدای آو" }
+      "feedbackTip": {
+        "onCorrect": "آفرین! «brauchen» یعنی نیاز داشتن - au صدای آو"
+      }
     },
     {
       "type": "dialog",
@@ -262,21 +404,33 @@
       "questions": [
         {
           "question": "تام چه چیزی نیاز دارد؟",
-          "options": ["چراغ", "صندلی", "میز"],
+          "options": [
+            "چراغ",
+            "صندلی",
+            "میز"
+          ],
           "correctIndex": 1,
           "explanation": "تام گفت: «Ich brauche einen Stuhl.»",
           "relatedLineIndex": 0
         },
         {
           "question": "لیزا چه چیزی می‌خرد؟",
-          "options": ["صندلی", "چراغ", "میز"],
+          "options": [
+            "صندلی",
+            "چراغ",
+            "میز"
+          ],
           "correctIndex": 1,
           "explanation": "لیزا گفت: «Ich kaufe die Lampe.»",
           "relatedLineIndex": 3
         },
         {
           "question": "چرا در «den Stuhl» از den استفاده شده؟",
-          "options": ["چون فاعل است", "چون مفعول است", "چون مونث است"],
+          "options": [
+            "چون فاعل است",
+            "چون مفعول است",
+            "چون مونث است"
+          ],
           "correctIndex": 1,
           "explanation": "Stuhl مذکر است و در حالت مفعولی der → den می‌شود.",
           "relatedLineIndex": 2
@@ -320,7 +474,10 @@
         "onCorrect": "آفرین! Buch خنثی است (das) و در مفعولی تغییر نمی‌کند.",
         "onWrong": "دقت کنید: Buch خنثی است و خنثی در مفعولی تغییر نمی‌کند - پس das می‌ماند.",
         "errorCategory": "wrong-case",
-        "highlights": ["das", "خنثی"]
+        "highlights": [
+          "das",
+          "خنثی"
+        ]
       }
     },
     {
@@ -344,7 +501,10 @@
         "onCorrect": "آفرین! Mann مذکر است و در مفعولی der → den می‌شود.",
         "onWrong": "دقت کنید: Mann مذکر است و فقط مذکر در مفعولی تغییر می‌کند: der → den",
         "errorCategory": "wrong-case",
-        "highlights": ["den", "مذکر"]
+        "highlights": [
+          "den",
+          "مذکر"
+        ]
       }
     },
     {
@@ -404,10 +564,20 @@
       "id": "syllable-kaffee",
       "word": "der Kaffee",
       "translation": "قهوه",
-      "syllables": ["der", "Kaf", "fee"],
-      "distractors": ["den", "Kef", "fae"],
+      "syllables": [
+        "der",
+        "Kaf",
+        "fee"
+      ],
+      "distractors": [
+        "den",
+        "Kef",
+        "fae"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
-      "feedbackTip": { "onCorrect": "آفرین! «der Kaffee» - مذکر پس در مفعولی: einen Kaffee" }
+      "feedbackTip": {
+        "onCorrect": "آفرین! «der Kaffee» - مذکر پس در مفعولی: einen Kaffee"
+      }
     },
     {
       "type": "new-word",
@@ -428,10 +598,19 @@
       "id": "syllable-tee",
       "word": "der Tee",
       "translation": "چای",
-      "syllables": ["der", "Tee"],
-      "distractors": ["den", "Tea", "Tae"],
+      "syllables": [
+        "der",
+        "Tee"
+      ],
+      "distractors": [
+        "den",
+        "Tea",
+        "Tae"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
-      "feedbackTip": { "onCorrect": "آفرین! «der Tee» - مذکر پس در مفعولی: einen Tee" }
+      "feedbackTip": {
+        "onCorrect": "آفرین! «der Tee» - مذکر پس در مفعولی: einen Tee"
+      }
     },
     {
       "type": "new-word",
@@ -452,10 +631,19 @@
       "id": "syllable-trinken",
       "word": "trinken",
       "translation": "نوشیدن",
-      "syllables": ["trin", "ken"],
-      "distractors": ["tran", "kan", "kon"],
+      "syllables": [
+        "trin",
+        "ken"
+      ],
+      "distractors": [
+        "tran",
+        "kan",
+        "kon"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
-      "feedbackTip": { "onCorrect": "آفرین! «trinken» فعلی است که مفعول می‌گیرد" }
+      "feedbackTip": {
+        "onCorrect": "آفرین! «trinken» فعلی است که مفعول می‌گیرد"
+      }
     },
     {
       "type": "matching",
@@ -523,7 +711,10 @@
         "onCorrect": "آفرین! فقط مذکر تغییر می‌کند: der → den",
         "onWrong": "دقت کنید: بعد از sehen حالت مفعولی می‌آید و در مذکر der → den می‌شود.",
         "errorCategory": "wrong-case",
-        "highlights": ["den", "مفعولی"]
+        "highlights": [
+          "den",
+          "مفعولی"
+        ]
       }
     },
     {
@@ -605,7 +796,10 @@
         "onCorrect": "آفرین! Kaffee مذکر است و در مفعولی ein → einen می‌شود.",
         "onWrong": "دقت کنید: بعد از möchte حالت مفعولی می‌آید و Kaffee مذکر است: ein → einen",
         "errorCategory": "wrong-case",
-        "highlights": ["einen", "مذکر"]
+        "highlights": [
+          "einen",
+          "مذکر"
+        ]
       }
     },
     {
@@ -629,7 +823,10 @@
         "onCorrect": "آفرین! Bruder مذکر است و بعد از haben حالت مفعولی می‌آید: ein → einen",
         "onWrong": "دقت کنید: haben مفعول می‌گیرد و Bruder مذکر است: ein → einen",
         "errorCategory": "wrong-case",
-        "highlights": ["einen", "Bruder"]
+        "highlights": [
+          "einen",
+          "Bruder"
+        ]
       }
     },
     {
@@ -647,8 +844,40 @@
       "difficulty": "A1"
     },
     {
+      "type": "memory-match",
+      "id": "g5",
+      "title": "بازی حافظه",
+      "pairs": [
+        {
+          "de": "den",
+          "fa": "حرف تعریف مفعولی مذکر"
+        },
+        {
+          "de": "einen",
+          "fa": "یک (مفعولی مذکر)"
+        },
+        {
+          "de": "sehen",
+          "fa": "دیدن"
+        },
+        {
+          "de": "kaufen",
+          "fa": "خریدن"
+        },
+        {
+          "de": "brauchen",
+          "fa": "نیاز داشتن"
+        },
+        {
+          "de": "trinken",
+          "fa": "نوشیدن"
+        }
+      ],
+      "timeLimit": 60
+    },
+    {
       "type": "vocab-check",
-      "id": "g4",
+      "id": "g6",
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [

@@ -20,12 +20,67 @@
   "totalSteps": 22,
   "estimatedMinutes": 15,
   "vocabulary": [
-    { "de": "null", "fa": "صفر (۰)", "grammar": { "pos": "noun" } },
-    { "de": "die Telefonnummer", "fa": "شماره تلفن", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Telefonnummern" } } },
-    { "de": "die Nummer", "fa": "شماره", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Nummern" } } },
-    { "de": "das Handy", "fa": "موبایل / گوشی", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "Handys" } } },
-    { "de": "anrufen", "fa": "زنگ زدن / تماس گرفتن", "grammar": { "pos": "verb", "verb": { "infinitiv": "anrufen" } } },
-    { "de": "die Vorwahl", "fa": "پیش‌شماره / کد منطقه", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Vorwahlen" } } }
+    {
+      "de": "null",
+      "fa": "صفر (۰)",
+      "grammar": {
+        "pos": "noun"
+      }
+    },
+    {
+      "de": "die Telefonnummer",
+      "fa": "شماره تلفن",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "f",
+          "plural": "Telefonnummern"
+        }
+      }
+    },
+    {
+      "de": "die Nummer",
+      "fa": "شماره",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "f",
+          "plural": "Nummern"
+        }
+      }
+    },
+    {
+      "de": "das Handy",
+      "fa": "موبایل / گوشی",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "n",
+          "plural": "Handys"
+        }
+      }
+    },
+    {
+      "de": "anrufen",
+      "fa": "زنگ زدن / تماس گرفتن",
+      "grammar": {
+        "pos": "verb",
+        "verb": {
+          "infinitiv": "anrufen"
+        }
+      }
+    },
+    {
+      "de": "die Vorwahl",
+      "fa": "پیش‌شماره / کد منطقه",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "f",
+          "plural": "Vorwahlen"
+        }
+      }
+    }
   ],
   "steps": [
     {
@@ -303,14 +358,22 @@
       "questions": [
         {
           "question": "شماره موبایل تام با چه رقمی شروع می‌شود؟",
-          "options": ["یک", "صفر", "سه"],
+          "options": [
+            "یک",
+            "صفر",
+            "سه"
+          ],
           "correctIndex": 1,
           "explanation": "تام گفت: «0171...» که با صفر (null) شروع می‌شود.",
           "relatedLineIndex": 1
         },
         {
           "question": "معنی «Ich rufe dich an» چیست؟",
-          "options": ["بهت زنگ می‌زنم", "شماره‌ات چیه", "تکرار کن"],
+          "options": [
+            "بهت زنگ می‌زنم",
+            "شماره‌ات چیه",
+            "تکرار کن"
+          ],
           "correctIndex": 0,
           "explanation": "«anrufen» یعنی زنگ زدن. «Ich rufe dich an» = بهت زنگ می‌زنم.",
           "relatedLineIndex": 4
@@ -500,14 +563,22 @@
       "questions": [
         {
           "question": "چه کسی تماس گرفت؟",
-          "options": ["الی", "تام", "نامشخص"],
+          "options": [
+            "الی",
+            "تام",
+            "نامشخص"
+          ],
           "correctIndex": 1,
           "explanation": "تام گفت: «hier ist Tom» یعنی تام زنگ زده.",
           "relatedLineIndex": 1
         },
         {
           "question": "معنی «hier ist Tom» چیست؟",
-          "options": ["تام کجاست؟", "تام هستم", "تام آمد"],
+          "options": [
+            "تام کجاست؟",
+            "تام هستم",
+            "تام آمد"
+          ],
           "correctIndex": 1,
           "explanation": "در تماس تلفنی «hier ist...» یعنی «من... هستم».",
           "relatedLineIndex": 1
@@ -543,8 +614,18 @@
       "id": "syllable-1",
       "word": "Telefonnummer",
       "translation": "شماره تلفن",
-      "syllables": ["Te", "le", "fon", "num", "mer"],
-      "distractors": ["Ti", "fohn", "mum"],
+      "syllables": [
+        "Te",
+        "le",
+        "fon",
+        "num",
+        "mer"
+      ],
+      "distractors": [
+        "Ti",
+        "fohn",
+        "mum"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! Telefon + Nummer = Telefonnummer"
@@ -555,8 +636,16 @@
       "id": "syllable-2",
       "word": "anrufen",
       "translation": "زنگ زدن",
-      "syllables": ["an", "ru", "fen"],
-      "distractors": ["auf", "ri", "fon"],
+      "syllables": [
+        "an",
+        "ru",
+        "fen"
+      ],
+      "distractors": [
+        "auf",
+        "ri",
+        "fon"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «anrufen» یک فعل جداشدنی است."
@@ -577,8 +666,40 @@
       "difficulty": "A1"
     },
     {
+      "type": "memory-match",
+      "id": "g4",
+      "title": "بازی حافظه",
+      "pairs": [
+        {
+          "de": "null",
+          "fa": "صفر (۰)"
+        },
+        {
+          "de": "Telefonnummer",
+          "fa": "شماره تلفن"
+        },
+        {
+          "de": "Nummer",
+          "fa": "شماره"
+        },
+        {
+          "de": "Handy",
+          "fa": "موبایل"
+        },
+        {
+          "de": "anrufen",
+          "fa": "زنگ زدن"
+        },
+        {
+          "de": "Vorwahl",
+          "fa": "پیش‌شماره"
+        }
+      ],
+      "timeLimit": 60
+    },
+    {
       "type": "vocab-check",
-      "id": "g3",
+      "id": "g5",
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [

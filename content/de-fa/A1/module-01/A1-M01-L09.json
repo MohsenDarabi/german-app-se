@@ -20,17 +20,83 @@
   "totalSteps": 24,
   "estimatedMinutes": 18,
   "vocabulary": [
-    { "de": "einundzwanzig", "fa": "بیست و یک (۲۱)", "grammar": { "pos": "noun" } },
-    { "de": "zweiundzwanzig", "fa": "بیست و دو (۲۲)", "grammar": { "pos": "noun" } },
-    { "de": "dreiundzwanzig", "fa": "بیست و سه (۲۳)", "grammar": { "pos": "noun" } },
-    { "de": "dreißig", "fa": "سی (۳۰)", "grammar": { "pos": "noun" } },
-    { "de": "vierzig", "fa": "چهل (۴۰)", "grammar": { "pos": "noun" } },
-    { "de": "fünfzig", "fa": "پنجاه (۵۰)", "grammar": { "pos": "noun" } },
-    { "de": "sechzig", "fa": "شصت (۶۰)", "grammar": { "pos": "noun" } },
-    { "de": "siebzig", "fa": "هفتاد (۷۰)", "grammar": { "pos": "noun" } },
-    { "de": "achtzig", "fa": "هشتاد (۸۰)", "grammar": { "pos": "noun" } },
-    { "de": "neunzig", "fa": "نود (۹۰)", "grammar": { "pos": "noun" } },
-    { "de": "hundert", "fa": "صد (۱۰۰)", "grammar": { "pos": "noun" } }
+    {
+      "de": "einundzwanzig",
+      "fa": "بیست و یک (۲۱)",
+      "grammar": {
+        "pos": "noun"
+      }
+    },
+    {
+      "de": "zweiundzwanzig",
+      "fa": "بیست و دو (۲۲)",
+      "grammar": {
+        "pos": "noun"
+      }
+    },
+    {
+      "de": "dreiundzwanzig",
+      "fa": "بیست و سه (۲۳)",
+      "grammar": {
+        "pos": "noun"
+      }
+    },
+    {
+      "de": "dreißig",
+      "fa": "سی (۳۰)",
+      "grammar": {
+        "pos": "noun"
+      }
+    },
+    {
+      "de": "vierzig",
+      "fa": "چهل (۴۰)",
+      "grammar": {
+        "pos": "noun"
+      }
+    },
+    {
+      "de": "fünfzig",
+      "fa": "پنجاه (۵۰)",
+      "grammar": {
+        "pos": "noun"
+      }
+    },
+    {
+      "de": "sechzig",
+      "fa": "شصت (۶۰)",
+      "grammar": {
+        "pos": "noun"
+      }
+    },
+    {
+      "de": "siebzig",
+      "fa": "هفتاد (۷۰)",
+      "grammar": {
+        "pos": "noun"
+      }
+    },
+    {
+      "de": "achtzig",
+      "fa": "هشتاد (۸۰)",
+      "grammar": {
+        "pos": "noun"
+      }
+    },
+    {
+      "de": "neunzig",
+      "fa": "نود (۹۰)",
+      "grammar": {
+        "pos": "noun"
+      }
+    },
+    {
+      "de": "hundert",
+      "fa": "صد (۱۰۰)",
+      "grammar": {
+        "pos": "noun"
+      }
+    }
   ],
   "steps": [
     {
@@ -481,14 +547,22 @@
       "questions": [
         {
           "question": "پدربزرگ تام چند ساله است؟",
-          "options": ["هفتاد و سه", "هفتاد و پنج", "هشتاد"],
+          "options": [
+            "هفتاد و سه",
+            "هفتاد و پنج",
+            "هشتاد"
+          ],
           "correctIndex": 1,
           "explanation": "تام گفت: «Er ist fünfundsiebzig.» یعنی ۷۵ ساله.",
           "relatedLineIndex": 1
         },
         {
           "question": "مادربزرگ تام چند ساله است؟",
-          "options": ["هفتاد و سه", "هفتاد و پنج", "هشتاد"],
+          "options": [
+            "هفتاد و سه",
+            "هفتاد و پنج",
+            "هشتاد"
+          ],
           "correctIndex": 0,
           "explanation": "تام گفت: «Sie ist dreiundsiebzig.» یعنی ۷۳ ساله.",
           "relatedLineIndex": 3
@@ -583,8 +657,17 @@
       "id": "syllable-1",
       "word": "einundzwanzig",
       "translation": "بیست و یک (۲۱)",
-      "syllables": ["ein", "und", "zwan", "zig"],
-      "distractors": ["drei", "vier", "sig"],
+      "syllables": [
+        "ein",
+        "und",
+        "zwan",
+        "zig"
+      ],
+      "distractors": [
+        "drei",
+        "vier",
+        "sig"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! ein + und + zwanzig = ۲۱ (یکان + und + دهگان)"
@@ -595,8 +678,15 @@
       "id": "syllable-2",
       "word": "fünfzig",
       "translation": "پنجاه (۵۰)",
-      "syllables": ["fünf", "zig"],
-      "distractors": ["funf", "sig", "zehn"],
+      "syllables": [
+        "fünf",
+        "zig"
+      ],
+      "distractors": [
+        "funf",
+        "sig",
+        "zehn"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! fünf + zig = fünfzig (۵۰)"
@@ -607,8 +697,15 @@
       "id": "syllable-3",
       "word": "hundert",
       "translation": "صد (۱۰۰)",
-      "syllables": ["hun", "dert"],
-      "distractors": ["han", "bei", "und"],
+      "syllables": [
+        "hun",
+        "dert"
+      ],
+      "distractors": [
+        "han",
+        "bei",
+        "und"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «hundert» یعنی صد (۱۰۰)"
@@ -629,8 +726,40 @@
       "difficulty": "A1"
     },
     {
+      "type": "memory-match",
+      "id": "g4",
+      "title": "بازی حافظه",
+      "pairs": [
+        {
+          "de": "einundzwanzig",
+          "fa": "بیست و یک (۲۱)"
+        },
+        {
+          "de": "zweiundzwanzig",
+          "fa": "بیست و دو (۲۲)"
+        },
+        {
+          "de": "dreiundzwanzig",
+          "fa": "بیست و سه (۲۳)"
+        },
+        {
+          "de": "dreißig",
+          "fa": "سی (۳۰)"
+        },
+        {
+          "de": "vierzig",
+          "fa": "چهل (۴۰)"
+        },
+        {
+          "de": "fünfzig",
+          "fa": "پنجاه (۵۰)"
+        }
+      ],
+      "timeLimit": 60
+    },
+    {
       "type": "vocab-check",
-      "id": "g3",
+      "id": "g5",
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [

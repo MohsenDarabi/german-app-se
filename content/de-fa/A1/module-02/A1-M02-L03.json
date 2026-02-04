@@ -20,12 +20,48 @@
   "totalSteps": 38,
   "estimatedMinutes": 18,
   "vocabulary": [
-    { "de": "wir", "fa": "ما", "grammar": { "pos": "pronoun" } },
-    { "de": "ihr", "fa": "شما (غیررسمی جمع)", "grammar": { "pos": "pronoun" } },
-    { "de": "sie", "fa": "آن‌ها", "grammar": { "pos": "pronoun" } },
-    { "de": "Sie", "fa": "شما (رسمی)", "grammar": { "pos": "pronoun" } },
-    { "de": "zusammen", "fa": "با هم", "grammar": { "pos": "adverb" } },
-    { "de": "alle", "fa": "همه", "grammar": { "pos": "pronoun" } }
+    {
+      "de": "wir",
+      "fa": "ما",
+      "grammar": {
+        "pos": "pronoun"
+      }
+    },
+    {
+      "de": "ihr",
+      "fa": "شما (غیررسمی جمع)",
+      "grammar": {
+        "pos": "pronoun"
+      }
+    },
+    {
+      "de": "sie",
+      "fa": "آن‌ها",
+      "grammar": {
+        "pos": "pronoun"
+      }
+    },
+    {
+      "de": "Sie",
+      "fa": "شما (رسمی)",
+      "grammar": {
+        "pos": "pronoun"
+      }
+    },
+    {
+      "de": "zusammen",
+      "fa": "با هم",
+      "grammar": {
+        "pos": "adverb"
+      }
+    },
+    {
+      "de": "alle",
+      "fa": "همه",
+      "grammar": {
+        "pos": "pronoun"
+      }
+    }
   ],
   "steps": [
     {
@@ -63,8 +99,16 @@
       "id": "syllable-wir",
       "word": "wir",
       "translation": "ما",
-      "syllables": ["w", "i", "r"],
-      "distractors": ["o", "ü", "v"],
+      "syllables": [
+        "w",
+        "i",
+        "r"
+      ],
+      "distractors": [
+        "o",
+        "ü",
+        "v"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «wir» یعنی ما. توجه: w در آلمانی صدای «و» می‌دهد."
@@ -89,8 +133,16 @@
       "id": "syllable-wir-machen",
       "word": "wir machen",
       "translation": "ما انجام می‌دهیم",
-      "syllables": ["wir", "ma", "chen"],
-      "distractors": ["wen", "te", "wie"],
+      "syllables": [
+        "wir",
+        "ma",
+        "chen"
+      ],
+      "distractors": [
+        "wen",
+        "te",
+        "wie"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «wir machen» - با wir پسوند -en می‌گیریم."
@@ -115,8 +167,16 @@
       "id": "syllable-ihr",
       "word": "ihr",
       "translation": "شما (غیررسمی جمع)",
-      "syllables": ["i", "h", "r"],
-      "distractors": ["o", "a", "u"],
+      "syllables": [
+        "i",
+        "h",
+        "r"
+      ],
+      "distractors": [
+        "o",
+        "a",
+        "u"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «ihr» یعنی شما (غیررسمی). برای دوستان و خانواده استفاده می‌شود."
@@ -141,8 +201,15 @@
       "id": "syllable-ihr-macht",
       "word": "ihr macht",
       "translation": "شما انجام می‌دهید",
-      "syllables": ["ihr", "macht"],
-      "distractors": ["machen", "machst", "ir"],
+      "syllables": [
+        "ihr",
+        "macht"
+      ],
+      "distractors": [
+        "machen",
+        "machst",
+        "ir"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «ihr macht» - با ihr پسوند -t می‌گیریم."
@@ -167,8 +234,15 @@
       "id": "syllable-sie",
       "word": "sie",
       "translation": "آن‌ها",
-      "syllables": ["s", "ie"],
-      "distractors": ["ei", "ö", "a"],
+      "syllables": [
+        "s",
+        "ie"
+      ],
+      "distractors": [
+        "ei",
+        "ö",
+        "a"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «sie» (با s کوچک) یعنی آن‌ها. توجه: ie صدای «ای» می‌دهد."
@@ -193,8 +267,16 @@
       "id": "syllable-sie-machen",
       "word": "sie machen",
       "translation": "آن‌ها انجام می‌دهند",
-      "syllables": ["sie", "ma", "chen"],
-      "distractors": ["wen", "te", "Se"],
+      "syllables": [
+        "sie",
+        "ma",
+        "chen"
+      ],
+      "distractors": [
+        "wen",
+        "te",
+        "Se"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «sie machen» - با sie (آن‌ها) پسوند -en می‌گیریم."
@@ -277,8 +359,15 @@
       "id": "syllable-Sie",
       "word": "Sie",
       "translation": "شما (رسمی)",
-      "syllables": ["S", "ie"],
-      "distractors": ["s", "ei", "a"],
+      "syllables": [
+        "S",
+        "ie"
+      ],
+      "distractors": [
+        "s",
+        "ei",
+        "a"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «Sie» (با S بزرگ) یعنی شما (رسمی). همیشه با حرف بزرگ نوشته می‌شود!"
@@ -319,8 +408,16 @@
       "id": "syllable-zusammen",
       "word": "zusammen",
       "translation": "با هم",
-      "syllables": ["zu", "sam", "men"],
-      "distractors": ["ze", "um", "nen"],
+      "syllables": [
+        "zu",
+        "sam",
+        "men"
+      ],
+      "distractors": [
+        "ze",
+        "um",
+        "nen"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «zusammen» یعنی با هم - کلمه پرکاربردی است!"
@@ -345,8 +442,15 @@
       "id": "syllable-alle",
       "word": "alle",
       "translation": "همه",
-      "syllables": ["al", "le"],
-      "distractors": ["el", "la", "li"],
+      "syllables": [
+        "al",
+        "le"
+      ],
+      "distractors": [
+        "el",
+        "la",
+        "li"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «alle» یعنی همه. توجه به حرف دوبل l کنید."
@@ -459,14 +563,22 @@
       "questions": [
         {
           "question": "الکس و دوستانش چه کار می‌کنند؟",
-          "options": ["آلمانی یاد می‌گیرند", "فوتبال بازی می‌کنند", "کار می‌کنند"],
+          "options": [
+            "آلمانی یاد می‌گیرند",
+            "فوتبال بازی می‌کنند",
+            "کار می‌کنند"
+          ],
           "correctIndex": 1,
           "explanation": "الکس گفت: «Wir spielen Fußball» یعنی ما فوتبال بازی می‌کنیم.",
           "relatedLineIndex": 1
         },
         {
           "question": "آیا لیزا و تام هم بازی می‌کنند؟",
-          "options": ["بله، آن‌ها هم بازی می‌کنند", "نه، آن‌ها کار می‌کنند", "معلوم نیست"],
+          "options": [
+            "بله، آن‌ها هم بازی می‌کنند",
+            "نه، آن‌ها کار می‌کنند",
+            "معلوم نیست"
+          ],
           "correctIndex": 0,
           "explanation": "الکس گفت: «Ja, sie spielen auch» یعنی آره، آن‌ها هم بازی می‌کنند.",
           "relatedLineIndex": 3
@@ -661,8 +773,40 @@
       }
     },
     {
+      "type": "memory-match",
+      "id": "g4",
+      "title": "بازی حافظه",
+      "pairs": [
+        {
+          "de": "wir",
+          "fa": "ما"
+        },
+        {
+          "de": "wir machen",
+          "fa": "ما انجام می‌دهیم"
+        },
+        {
+          "de": "ihr",
+          "fa": "شما (غیررسمی)"
+        },
+        {
+          "de": "ihr macht",
+          "fa": "شما انجام می‌دهید"
+        },
+        {
+          "de": "sie",
+          "fa": "آن‌ها (ضمیر جمع)"
+        },
+        {
+          "de": "sie machen",
+          "fa": "آن‌ها انجام می‌دهند"
+        }
+      ],
+      "timeLimit": 60
+    },
+    {
       "type": "vocab-check",
-      "id": "g3",
+      "id": "g5",
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [

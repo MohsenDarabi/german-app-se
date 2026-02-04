@@ -20,16 +20,116 @@
   "totalSteps": 40,
   "estimatedMinutes": 19,
   "vocabulary": [
-    { "de": "die Wohnung", "fa": "آپارتمان", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Wohnungen" } } },
-    { "de": "das Haus", "fa": "خانه", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Häuser" } } },
-    { "de": "das Zimmer", "fa": "اتاق", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Zimmer" } } },
-    { "de": "die Küche", "fa": "آشپزخانه", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Küchen" } } },
-    { "de": "das Bad", "fa": "حمام", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Bäder" } } },
-    { "de": "das Schlafzimmer", "fa": "اتاق خواب", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Schlafzimmer" } } },
-    { "de": "das Wohnzimmer", "fa": "اتاق نشیمن", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Wohnzimmer" } } },
-    { "de": "der Balkon", "fa": "بالکن", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Balkone" } } },
-    { "de": "der Flur", "fa": "راهرو", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Flure" } } },
-    { "de": "der Garten", "fa": "باغ/حیاط", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Gärten" } } }
+    {
+      "de": "die Wohnung",
+      "fa": "آپارتمان",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "f",
+          "plural": "die Wohnungen"
+        }
+      }
+    },
+    {
+      "de": "das Haus",
+      "fa": "خانه",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "n",
+          "plural": "die Häuser"
+        }
+      }
+    },
+    {
+      "de": "das Zimmer",
+      "fa": "اتاق",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "n",
+          "plural": "die Zimmer"
+        }
+      }
+    },
+    {
+      "de": "die Küche",
+      "fa": "آشپزخانه",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "f",
+          "plural": "die Küchen"
+        }
+      }
+    },
+    {
+      "de": "das Bad",
+      "fa": "حمام",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "n",
+          "plural": "die Bäder"
+        }
+      }
+    },
+    {
+      "de": "das Schlafzimmer",
+      "fa": "اتاق خواب",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "n",
+          "plural": "die Schlafzimmer"
+        }
+      }
+    },
+    {
+      "de": "das Wohnzimmer",
+      "fa": "اتاق نشیمن",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "n",
+          "plural": "die Wohnzimmer"
+        }
+      }
+    },
+    {
+      "de": "der Balkon",
+      "fa": "بالکن",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Balkone"
+        }
+      }
+    },
+    {
+      "de": "der Flur",
+      "fa": "راهرو",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Flure"
+        }
+      }
+    },
+    {
+      "de": "der Garten",
+      "fa": "باغ/حیاط",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Gärten"
+        }
+      }
+    }
   ],
   "steps": [
     {
@@ -67,8 +167,16 @@
       "id": "syllable-Wohnung",
       "word": "Wohnung",
       "translation": "آپارتمان",
-      "syllables": ["Woh", "nung"],
-      "distractors": ["Wah", "nang", "Weh", "ning"]
+      "syllables": [
+        "Woh",
+        "nung"
+      ],
+      "distractors": [
+        "Wah",
+        "nang",
+        "Weh",
+        "ning"
+      ]
     },
     {
       "type": "new-word",
@@ -89,8 +197,15 @@
       "id": "syllable-Haus",
       "word": "Haus",
       "translation": "خانه",
-      "syllables": ["Haus"],
-      "distractors": ["Hous", "Heis", "Hius", "Heos"]
+      "syllables": [
+        "Haus"
+      ],
+      "distractors": [
+        "Hous",
+        "Heis",
+        "Hius",
+        "Heos"
+      ]
     },
     {
       "type": "new-word",
@@ -111,8 +226,16 @@
       "id": "syllable-Zimmer",
       "word": "Zimmer",
       "translation": "اتاق",
-      "syllables": ["Zim", "mer"],
-      "distractors": ["Zam", "mar", "Zum", "mur"]
+      "syllables": [
+        "Zim",
+        "mer"
+      ],
+      "distractors": [
+        "Zam",
+        "mar",
+        "Zum",
+        "mur"
+      ]
     },
     {
       "type": "new-word",
@@ -133,8 +256,16 @@
       "id": "syllable-Kueche",
       "word": "Küche",
       "translation": "آشپزخانه",
-      "syllables": ["Kü", "che"],
-      "distractors": ["Ka", "cha", "Ko", "chu"]
+      "syllables": [
+        "Kü",
+        "che"
+      ],
+      "distractors": [
+        "Ka",
+        "cha",
+        "Ko",
+        "chu"
+      ]
     },
     {
       "type": "rapid-fire",
@@ -193,8 +324,15 @@
       "id": "syllable-Bad",
       "word": "Bad",
       "translation": "حمام",
-      "syllables": ["Bad"],
-      "distractors": ["Bed", "Bud", "Bid", "Bod"]
+      "syllables": [
+        "Bad"
+      ],
+      "distractors": [
+        "Bed",
+        "Bud",
+        "Bid",
+        "Bod"
+      ]
     },
     {
       "type": "new-word",
@@ -215,8 +353,17 @@
       "id": "syllable-Schlafzimmer",
       "word": "Schlafzimmer",
       "translation": "اتاق خواب",
-      "syllables": ["Schlaf", "zim", "mer"],
-      "distractors": ["Schlof", "zam", "mar", "Schluf"]
+      "syllables": [
+        "Schlaf",
+        "zim",
+        "mer"
+      ],
+      "distractors": [
+        "Schlof",
+        "zam",
+        "mar",
+        "Schluf"
+      ]
     },
     {
       "type": "new-word",
@@ -237,8 +384,17 @@
       "id": "syllable-Wohnzimmer",
       "word": "Wohnzimmer",
       "translation": "اتاق نشیمن",
-      "syllables": ["Wohn", "zim", "mer"],
-      "distractors": ["Wahn", "zam", "mar", "Wehn"]
+      "syllables": [
+        "Wohn",
+        "zim",
+        "mer"
+      ],
+      "distractors": [
+        "Wahn",
+        "zam",
+        "mar",
+        "Wehn"
+      ]
     },
     {
       "type": "dialog",
@@ -293,13 +449,21 @@
       "questions": [
         {
           "question": "آپارتمان الی چند اتاق دارد؟",
-          "options": ["دو اتاق", "سه اتاق", "چهار اتاق"],
+          "options": [
+            "دو اتاق",
+            "سه اتاق",
+            "چهار اتاق"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: Drei Zimmer (سه اتاق)"
         },
         {
           "question": "آشپزخانه چطور است؟",
-          "options": ["بزرگ", "کوچک", "متوسط"],
+          "options": [
+            "بزرگ",
+            "کوچک",
+            "متوسط"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: Die Küche ist klein (آشپزخانه کوچک است)"
         }
@@ -362,8 +526,16 @@
       "id": "syllable-Balkon",
       "word": "Balkon",
       "translation": "بالکن",
-      "syllables": ["Bal", "kon"],
-      "distractors": ["Bol", "kan", "Bel", "kun"]
+      "syllables": [
+        "Bal",
+        "kon"
+      ],
+      "distractors": [
+        "Bol",
+        "kan",
+        "Bel",
+        "kun"
+      ]
     },
     {
       "type": "new-word",
@@ -384,8 +556,15 @@
       "id": "syllable-Flur",
       "word": "Flur",
       "translation": "راهرو",
-      "syllables": ["Flur"],
-      "distractors": ["Flar", "Flor", "Flir", "Fler"]
+      "syllables": [
+        "Flur"
+      ],
+      "distractors": [
+        "Flar",
+        "Flor",
+        "Flir",
+        "Fler"
+      ]
     },
     {
       "type": "new-word",
@@ -406,8 +585,16 @@
       "id": "syllable-Garten",
       "word": "Garten",
       "translation": "باغ",
-      "syllables": ["Gar", "ten"],
-      "distractors": ["Gor", "tan", "Gur", "tin"]
+      "syllables": [
+        "Gar",
+        "ten"
+      ],
+      "distractors": [
+        "Gor",
+        "tan",
+        "Gur",
+        "tin"
+      ]
     },
     {
       "type": "grammar-tip",
@@ -436,7 +623,9 @@
         "Schlafzimmer",
         "Balkon"
       ],
-      "correctAnswers": [0],
+      "correctAnswers": [
+        0
+      ],
       "feedback": {
         "explanation": "**In der Küche** = در آشپزخانه (جایی که آشپزی می‌کنیم)"
       },
@@ -456,7 +645,9 @@
         "Balkon",
         "Flur"
       ],
-      "correctAnswers": [1],
+      "correctAnswers": [
+        1
+      ],
       "feedback": {
         "explanation": "**Im Schlafzimmer** = در اتاق خواب (جایی که می‌خوابیم)"
       },
@@ -518,13 +709,21 @@
       "questions": [
         {
           "question": "تام کجا زندگی می‌کند؟",
-          "options": ["در خانه با باغ", "در آپارتمان در شهر", "در روستا"],
+          "options": [
+            "در خانه با باغ",
+            "در آپارتمان در شهر",
+            "در روستا"
+          ],
           "correctIndex": 1,
           "explanation": "تام گفت: Ich wohne in einer Wohnung in der Stadt"
         },
         {
           "question": "والدین الی کجا زندگی می‌کنند؟",
-          "options": ["در آپارتمان", "در خانه با باغ", "در هتل"],
+          "options": [
+            "در آپارتمان",
+            "در خانه با باغ",
+            "در هتل"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: Meine Eltern wohnen in einem Haus mit Garten"
         }
@@ -535,22 +734,58 @@
       "id": "s17",
       "instruction": "کلمات آلمانی را با فارسی جفت کنید",
       "items": [
-        { "id": "i1", "text": "Küche" },
-        { "id": "i2", "text": "Bad" },
-        { "id": "i3", "text": "Balkon" },
-        { "id": "i4", "text": "Garten" }
+        {
+          "id": "i1",
+          "text": "Küche"
+        },
+        {
+          "id": "i2",
+          "text": "Bad"
+        },
+        {
+          "id": "i3",
+          "text": "Balkon"
+        },
+        {
+          "id": "i4",
+          "text": "Garten"
+        }
       ],
       "matches": [
-        { "id": "m1", "text": "حمام" },
-        { "id": "m2", "text": "آشپزخانه" },
-        { "id": "m3", "text": "باغ" },
-        { "id": "m4", "text": "بالکن" }
+        {
+          "id": "m1",
+          "text": "حمام"
+        },
+        {
+          "id": "m2",
+          "text": "آشپزخانه"
+        },
+        {
+          "id": "m3",
+          "text": "باغ"
+        },
+        {
+          "id": "m4",
+          "text": "بالکن"
+        }
       ],
       "correctPairs": [
-        ["i1", "m2"],
-        ["i2", "m1"],
-        ["i3", "m4"],
-        ["i4", "m3"]
+        [
+          "i1",
+          "m2"
+        ],
+        [
+          "i2",
+          "m1"
+        ],
+        [
+          "i3",
+          "m4"
+        ],
+        [
+          "i4",
+          "m3"
+        ]
       ]
     },
     {
@@ -626,21 +861,83 @@
       "difficulty": "A1"
     },
     {
+      "type": "memory-match",
+      "id": "g5",
+      "title": "بازی حافظه",
+      "pairs": [
+        {
+          "de": "Wohnung",
+          "fa": "آپارتمان"
+        },
+        {
+          "de": "Haus",
+          "fa": "خانه"
+        },
+        {
+          "de": "Zimmer",
+          "fa": "اتاق"
+        },
+        {
+          "de": "Küche",
+          "fa": "آشپزخانه"
+        },
+        {
+          "de": "Bad",
+          "fa": "حمام"
+        },
+        {
+          "de": "Schlafzimmer",
+          "fa": "اتاق خواب"
+        }
+      ],
+      "timeLimit": 60
+    },
+    {
       "type": "vocab-check",
-      "id": "g4",
+      "id": "g6",
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [
-        { "de": "die Wohnung", "fa": "آپارتمان" },
-        { "de": "das Haus", "fa": "خانه" },
-        { "de": "das Zimmer", "fa": "اتاق" },
-        { "de": "die Küche", "fa": "آشپزخانه" },
-        { "de": "das Bad", "fa": "حمام" },
-        { "de": "das Schlafzimmer", "fa": "اتاق خواب" },
-        { "de": "das Wohnzimmer", "fa": "اتاق نشیمن" },
-        { "de": "der Balkon", "fa": "بالکن" },
-        { "de": "der Flur", "fa": "راهرو" },
-        { "de": "der Garten", "fa": "باغ" }
+        {
+          "de": "die Wohnung",
+          "fa": "آپارتمان"
+        },
+        {
+          "de": "das Haus",
+          "fa": "خانه"
+        },
+        {
+          "de": "das Zimmer",
+          "fa": "اتاق"
+        },
+        {
+          "de": "die Küche",
+          "fa": "آشپزخانه"
+        },
+        {
+          "de": "das Bad",
+          "fa": "حمام"
+        },
+        {
+          "de": "das Schlafzimmer",
+          "fa": "اتاق خواب"
+        },
+        {
+          "de": "das Wohnzimmer",
+          "fa": "اتاق نشیمن"
+        },
+        {
+          "de": "der Balkon",
+          "fa": "بالکن"
+        },
+        {
+          "de": "der Flur",
+          "fa": "راهرو"
+        },
+        {
+          "de": "der Garten",
+          "fa": "باغ"
+        }
       ]
     },
     {
@@ -651,16 +948,66 @@
       "xpEarned": 50,
       "nextLessonId": "A1-M09-L02",
       "vocabularyLearned": [
-        { "word": { "de": "die Wohnung", "fa": "آپارتمان" } },
-        { "word": { "de": "das Haus", "fa": "خانه" } },
-        { "word": { "de": "das Zimmer", "fa": "اتاق" } },
-        { "word": { "de": "die Küche", "fa": "آشپزخانه" } },
-        { "word": { "de": "das Bad", "fa": "حمام" } },
-        { "word": { "de": "das Schlafzimmer", "fa": "اتاق خواب" } },
-        { "word": { "de": "das Wohnzimmer", "fa": "اتاق نشیمن" } },
-        { "word": { "de": "der Balkon", "fa": "بالکن" } },
-        { "word": { "de": "der Flur", "fa": "راهرو" } },
-        { "word": { "de": "der Garten", "fa": "باغ" } }
+        {
+          "word": {
+            "de": "die Wohnung",
+            "fa": "آپارتمان"
+          }
+        },
+        {
+          "word": {
+            "de": "das Haus",
+            "fa": "خانه"
+          }
+        },
+        {
+          "word": {
+            "de": "das Zimmer",
+            "fa": "اتاق"
+          }
+        },
+        {
+          "word": {
+            "de": "die Küche",
+            "fa": "آشپزخانه"
+          }
+        },
+        {
+          "word": {
+            "de": "das Bad",
+            "fa": "حمام"
+          }
+        },
+        {
+          "word": {
+            "de": "das Schlafzimmer",
+            "fa": "اتاق خواب"
+          }
+        },
+        {
+          "word": {
+            "de": "das Wohnzimmer",
+            "fa": "اتاق نشیمن"
+          }
+        },
+        {
+          "word": {
+            "de": "der Balkon",
+            "fa": "بالکن"
+          }
+        },
+        {
+          "word": {
+            "de": "der Flur",
+            "fa": "راهرو"
+          }
+        },
+        {
+          "word": {
+            "de": "der Garten",
+            "fa": "باغ"
+          }
+        }
       ]
     }
   ]

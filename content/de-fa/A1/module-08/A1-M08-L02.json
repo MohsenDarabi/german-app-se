@@ -20,16 +20,116 @@
   "totalSteps": 40,
   "estimatedMinutes": 19,
   "vocabulary": [
-    { "de": "das Obst", "fa": "میوه", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "-" } } },
-    { "de": "das Gemüse", "fa": "سبزیجات", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "-" } } },
-    { "de": "der Apfel", "fa": "سیب", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Äpfel" } } },
-    { "de": "die Banane", "fa": "موز", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Bananen" } } },
-    { "de": "die Orange", "fa": "پرتقال", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Orangen" } } },
-    { "de": "die Tomate", "fa": "گوجه‌فرنگی", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Tomaten" } } },
-    { "de": "die Kartoffel", "fa": "سیب‌زمینی", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Kartoffeln" } } },
-    { "de": "die Gurke", "fa": "خیار", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Gurken" } } },
-    { "de": "der Salat", "fa": "سالاد/کاهو", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Salate" } } },
-    { "de": "die Zwiebel", "fa": "پیاز", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Zwiebeln" } } }
+    {
+      "de": "das Obst",
+      "fa": "میوه",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "n",
+          "plural": "-"
+        }
+      }
+    },
+    {
+      "de": "das Gemüse",
+      "fa": "سبزیجات",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "n",
+          "plural": "-"
+        }
+      }
+    },
+    {
+      "de": "der Apfel",
+      "fa": "سیب",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Äpfel"
+        }
+      }
+    },
+    {
+      "de": "die Banane",
+      "fa": "موز",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "f",
+          "plural": "die Bananen"
+        }
+      }
+    },
+    {
+      "de": "die Orange",
+      "fa": "پرتقال",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "f",
+          "plural": "die Orangen"
+        }
+      }
+    },
+    {
+      "de": "die Tomate",
+      "fa": "گوجه‌فرنگی",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "f",
+          "plural": "die Tomaten"
+        }
+      }
+    },
+    {
+      "de": "die Kartoffel",
+      "fa": "سیب‌زمینی",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "f",
+          "plural": "die Kartoffeln"
+        }
+      }
+    },
+    {
+      "de": "die Gurke",
+      "fa": "خیار",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "f",
+          "plural": "die Gurken"
+        }
+      }
+    },
+    {
+      "de": "der Salat",
+      "fa": "سالاد/کاهو",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Salate"
+        }
+      }
+    },
+    {
+      "de": "die Zwiebel",
+      "fa": "پیاز",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "f",
+          "plural": "die Zwiebeln"
+        }
+      }
+    }
   ],
   "steps": [
     {
@@ -67,8 +167,15 @@
       "id": "syllable-Obst",
       "word": "Obst",
       "translation": "میوه",
-      "syllables": ["Obst"],
-      "distractors": ["Abst", "Ubst", "Ebst", "Ibst"]
+      "syllables": [
+        "Obst"
+      ],
+      "distractors": [
+        "Abst",
+        "Ubst",
+        "Ebst",
+        "Ibst"
+      ]
     },
     {
       "type": "new-word",
@@ -89,8 +196,17 @@
       "id": "syllable-Gemuese",
       "word": "Gemüse",
       "translation": "سبزیجات",
-      "syllables": ["Ge", "mü", "se"],
-      "distractors": ["Ga", "ma", "sa", "Go"]
+      "syllables": [
+        "Ge",
+        "mü",
+        "se"
+      ],
+      "distractors": [
+        "Ga",
+        "ma",
+        "sa",
+        "Go"
+      ]
     },
     {
       "type": "new-word",
@@ -111,8 +227,16 @@
       "id": "syllable-Apfel",
       "word": "Apfel",
       "translation": "سیب",
-      "syllables": ["Ap", "fel"],
-      "distractors": ["Op", "fal", "Up", "ful"]
+      "syllables": [
+        "Ap",
+        "fel"
+      ],
+      "distractors": [
+        "Op",
+        "fal",
+        "Up",
+        "ful"
+      ]
     },
     {
       "type": "new-word",
@@ -133,8 +257,17 @@
       "id": "syllable-Banane",
       "word": "Banane",
       "translation": "موز",
-      "syllables": ["Ba", "na", "ne"],
-      "distractors": ["Bo", "no", "nu", "Be"]
+      "syllables": [
+        "Ba",
+        "na",
+        "ne"
+      ],
+      "distractors": [
+        "Bo",
+        "no",
+        "nu",
+        "Be"
+      ]
     },
     {
       "type": "new-word",
@@ -155,8 +288,17 @@
       "id": "syllable-Orange",
       "word": "Orange",
       "translation": "پرتقال",
-      "syllables": ["O", "ran", "ge"],
-      "distractors": ["A", "run", "ga", "U"]
+      "syllables": [
+        "O",
+        "ran",
+        "ge"
+      ],
+      "distractors": [
+        "A",
+        "run",
+        "ga",
+        "U"
+      ]
     },
     {
       "type": "rapid-fire",
@@ -215,8 +357,17 @@
       "id": "syllable-Tomate",
       "word": "Tomate",
       "translation": "گوجه‌فرنگی",
-      "syllables": ["To", "ma", "te"],
-      "distractors": ["Ta", "mo", "tu", "Ti"]
+      "syllables": [
+        "To",
+        "ma",
+        "te"
+      ],
+      "distractors": [
+        "Ta",
+        "mo",
+        "tu",
+        "Ti"
+      ]
     },
     {
       "type": "new-word",
@@ -237,8 +388,17 @@
       "id": "syllable-Kartoffel",
       "word": "Kartoffel",
       "translation": "سیب‌زمینی",
-      "syllables": ["Kar", "tof", "fel"],
-      "distractors": ["Kor", "taf", "fal", "Kur"]
+      "syllables": [
+        "Kar",
+        "tof",
+        "fel"
+      ],
+      "distractors": [
+        "Kor",
+        "taf",
+        "fal",
+        "Kur"
+      ]
     },
     {
       "type": "new-word",
@@ -259,8 +419,16 @@
       "id": "syllable-Gurke",
       "word": "Gurke",
       "translation": "خیار",
-      "syllables": ["Gur", "ke"],
-      "distractors": ["Gar", "ka", "Gor", "ku"]
+      "syllables": [
+        "Gur",
+        "ke"
+      ],
+      "distractors": [
+        "Gar",
+        "ka",
+        "Gor",
+        "ku"
+      ]
     },
     {
       "type": "dialog",
@@ -315,13 +483,21 @@
       "questions": [
         {
           "question": "الی چه میوه‌ای می‌خرد؟",
-          "options": ["فقط سیب", "سیب و موز", "پرتقال"],
+          "options": [
+            "فقط سیب",
+            "سیب و موز",
+            "پرتقال"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: ich nehme ein Kilo Äpfel und Bananen"
         },
         {
           "question": "الی سبزیجات را برای چه می‌خواهد؟",
-          "options": ["سوپ", "سالاد", "ساندویچ"],
+          "options": [
+            "سوپ",
+            "سالاد",
+            "ساندویچ"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: für Salat (برای سالاد)"
         }
@@ -384,8 +560,16 @@
       "id": "syllable-Salat",
       "word": "Salat",
       "translation": "سالاد",
-      "syllables": ["Sa", "lat"],
-      "distractors": ["So", "lut", "Su", "lit"]
+      "syllables": [
+        "Sa",
+        "lat"
+      ],
+      "distractors": [
+        "So",
+        "lut",
+        "Su",
+        "lit"
+      ]
     },
     {
       "type": "new-word",
@@ -406,8 +590,16 @@
       "id": "syllable-Zwiebel",
       "word": "Zwiebel",
       "translation": "پیاز",
-      "syllables": ["Zwie", "bel"],
-      "distractors": ["Zwia", "bal", "Zwio", "bul"]
+      "syllables": [
+        "Zwie",
+        "bel"
+      ],
+      "distractors": [
+        "Zwia",
+        "bal",
+        "Zwio",
+        "bul"
+      ]
     },
     {
       "type": "grammar-tip",
@@ -436,7 +628,9 @@
         "esse",
         "trinke"
       ],
-      "correctAnswers": [0],
+      "correctAnswers": [
+        0
+      ],
       "feedback": {
         "explanation": "**Ich mag** = دوست دارم (دوست داشتن کلی)"
       },
@@ -456,7 +650,9 @@
         "esse",
         "trinke"
       ],
-      "correctAnswers": [1],
+      "correctAnswers": [
+        1
+      ],
       "feedback": {
         "explanation": "**Ich möchte** = می‌خواهم (خواستن در این لحظه)"
       },
@@ -470,22 +666,58 @@
       "id": "s16",
       "instruction": "کلمات آلمانی را با فارسی جفت کنید",
       "items": [
-        { "id": "i1", "text": "Apfel" },
-        { "id": "i2", "text": "Tomate" },
-        { "id": "i3", "text": "Kartoffel" },
-        { "id": "i4", "text": "Zwiebel" }
+        {
+          "id": "i1",
+          "text": "Apfel"
+        },
+        {
+          "id": "i2",
+          "text": "Tomate"
+        },
+        {
+          "id": "i3",
+          "text": "Kartoffel"
+        },
+        {
+          "id": "i4",
+          "text": "Zwiebel"
+        }
       ],
       "matches": [
-        { "id": "m1", "text": "گوجه‌فرنگی" },
-        { "id": "m2", "text": "سیب" },
-        { "id": "m3", "text": "پیاز" },
-        { "id": "m4", "text": "سیب‌زمینی" }
+        {
+          "id": "m1",
+          "text": "گوجه‌فرنگی"
+        },
+        {
+          "id": "m2",
+          "text": "سیب"
+        },
+        {
+          "id": "m3",
+          "text": "پیاز"
+        },
+        {
+          "id": "m4",
+          "text": "سیب‌زمینی"
+        }
       ],
       "correctPairs": [
-        ["i1", "m2"],
-        ["i2", "m1"],
-        ["i3", "m4"],
-        ["i4", "m3"]
+        [
+          "i1",
+          "m2"
+        ],
+        [
+          "i2",
+          "m1"
+        ],
+        [
+          "i3",
+          "m4"
+        ],
+        [
+          "i4",
+          "m3"
+        ]
       ]
     },
     {
@@ -561,13 +793,21 @@
       "questions": [
         {
           "question": "الی چه میوه‌ای دوست دارد؟",
-          "options": ["موز", "سیب", "پرتقال"],
+          "options": [
+            "موز",
+            "سیب",
+            "پرتقال"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: Ich mag besonders Äpfel (مخصوصاً سیب دوست دارم)"
         },
         {
           "question": "تام چرا پیاز دوست ندارد؟",
-          "options": ["بو می‌دهد", "زیادی تند است", "گران است"],
+          "options": [
+            "بو می‌دهد",
+            "زیادی تند است",
+            "گران است"
+          ],
           "correctIndex": 1,
           "explanation": "تام گفت: Sie sind zu scharf (زیادی تند است)"
         }
@@ -626,21 +866,83 @@
       "difficulty": "A1"
     },
     {
+      "type": "memory-match",
+      "id": "g5",
+      "title": "بازی حافظه",
+      "pairs": [
+        {
+          "de": "Obst",
+          "fa": "میوه"
+        },
+        {
+          "de": "Gemüse",
+          "fa": "سبزیجات"
+        },
+        {
+          "de": "Apfel",
+          "fa": "سیب"
+        },
+        {
+          "de": "Banane",
+          "fa": "موز"
+        },
+        {
+          "de": "Orange",
+          "fa": "پرتقال"
+        },
+        {
+          "de": "Tomate",
+          "fa": "گوجه‌فرنگی"
+        }
+      ],
+      "timeLimit": 60
+    },
+    {
       "type": "vocab-check",
-      "id": "g4",
+      "id": "g6",
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [
-        { "de": "das Obst", "fa": "میوه" },
-        { "de": "das Gemüse", "fa": "سبزیجات" },
-        { "de": "der Apfel", "fa": "سیب" },
-        { "de": "die Banane", "fa": "موز" },
-        { "de": "die Orange", "fa": "پرتقال" },
-        { "de": "die Tomate", "fa": "گوجه‌فرنگی" },
-        { "de": "die Kartoffel", "fa": "سیب‌زمینی" },
-        { "de": "die Gurke", "fa": "خیار" },
-        { "de": "der Salat", "fa": "سالاد" },
-        { "de": "die Zwiebel", "fa": "پیاز" }
+        {
+          "de": "das Obst",
+          "fa": "میوه"
+        },
+        {
+          "de": "das Gemüse",
+          "fa": "سبزیجات"
+        },
+        {
+          "de": "der Apfel",
+          "fa": "سیب"
+        },
+        {
+          "de": "die Banane",
+          "fa": "موز"
+        },
+        {
+          "de": "die Orange",
+          "fa": "پرتقال"
+        },
+        {
+          "de": "die Tomate",
+          "fa": "گوجه‌فرنگی"
+        },
+        {
+          "de": "die Kartoffel",
+          "fa": "سیب‌زمینی"
+        },
+        {
+          "de": "die Gurke",
+          "fa": "خیار"
+        },
+        {
+          "de": "der Salat",
+          "fa": "سالاد"
+        },
+        {
+          "de": "die Zwiebel",
+          "fa": "پیاز"
+        }
       ]
     },
     {
@@ -651,16 +953,66 @@
       "xpEarned": 50,
       "nextLessonId": "A1-M08-L03",
       "vocabularyLearned": [
-        { "word": { "de": "das Obst", "fa": "میوه" } },
-        { "word": { "de": "das Gemüse", "fa": "سبزیجات" } },
-        { "word": { "de": "der Apfel", "fa": "سیب" } },
-        { "word": { "de": "die Banane", "fa": "موز" } },
-        { "word": { "de": "die Orange", "fa": "پرتقال" } },
-        { "word": { "de": "die Tomate", "fa": "گوجه‌فرنگی" } },
-        { "word": { "de": "die Kartoffel", "fa": "سیب‌زمینی" } },
-        { "word": { "de": "die Gurke", "fa": "خیار" } },
-        { "word": { "de": "der Salat", "fa": "سالاد" } },
-        { "word": { "de": "die Zwiebel", "fa": "پیاز" } }
+        {
+          "word": {
+            "de": "das Obst",
+            "fa": "میوه"
+          }
+        },
+        {
+          "word": {
+            "de": "das Gemüse",
+            "fa": "سبزیجات"
+          }
+        },
+        {
+          "word": {
+            "de": "der Apfel",
+            "fa": "سیب"
+          }
+        },
+        {
+          "word": {
+            "de": "die Banane",
+            "fa": "موز"
+          }
+        },
+        {
+          "word": {
+            "de": "die Orange",
+            "fa": "پرتقال"
+          }
+        },
+        {
+          "word": {
+            "de": "die Tomate",
+            "fa": "گوجه‌فرنگی"
+          }
+        },
+        {
+          "word": {
+            "de": "die Kartoffel",
+            "fa": "سیب‌زمینی"
+          }
+        },
+        {
+          "word": {
+            "de": "die Gurke",
+            "fa": "خیار"
+          }
+        },
+        {
+          "word": {
+            "de": "der Salat",
+            "fa": "سالاد"
+          }
+        },
+        {
+          "word": {
+            "de": "die Zwiebel",
+            "fa": "پیاز"
+          }
+        }
       ]
     }
   ]

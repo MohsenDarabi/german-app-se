@@ -320,8 +320,43 @@
       ]
     },
     {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Ich suche eine Wohnung.",
+      "translation": "من دنبال آپارتمان می‌گردم.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Wie hoch ist die Miete?",
+      "translation": "اجاره چقدر است؟",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-3",
+      "targetText": "Die Wohnung ist noch frei.",
+      "translation": "آپارتمان هنوز خالی است.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "memory-match",
+      "id": "g5",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "die Miete", "fa": "اجاره" },
+        { "de": "die Kaution", "fa": "ودیعه" },
+        { "de": "suchen", "fa": "جستجو کردن" },
+        { "de": "mieten", "fa": "اجاره کردن" },
+        { "de": "frei", "fa": "خالی" },
+        { "de": "besichtigen", "fa": "بازدید کردن" }
+      ],
+      "timeLimit": 60
+    },
+    {
       "type": "vocab-check",
-      "id": "g4",
+      "id": "g6",
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [

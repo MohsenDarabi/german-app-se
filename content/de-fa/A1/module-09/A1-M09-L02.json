@@ -20,16 +20,116 @@
   "totalSteps": 42,
   "estimatedMinutes": 20,
   "vocabulary": [
-    { "de": "der Tisch", "fa": "میز", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Tische" } } },
-    { "de": "der Stuhl", "fa": "صندلی", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Stühle" } } },
-    { "de": "das Sofa", "fa": "کاناپه/مبل", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Sofas" } } },
-    { "de": "das Bett", "fa": "تخت", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Betten" } } },
-    { "de": "der Schrank", "fa": "کمد", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Schränke" } } },
-    { "de": "das Regal", "fa": "قفسه", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Regale" } } },
-    { "de": "die Lampe", "fa": "چراغ/لامپ", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Lampen" } } },
-    { "de": "der Teppich", "fa": "فرش", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Teppiche" } } },
-    { "de": "der Fernseher", "fa": "تلویزیون", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Fernseher" } } },
-    { "de": "der Kühlschrank", "fa": "یخچال", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Kühlschränke" } } }
+    {
+      "de": "der Tisch",
+      "fa": "میز",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Tische"
+        }
+      }
+    },
+    {
+      "de": "der Stuhl",
+      "fa": "صندلی",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Stühle"
+        }
+      }
+    },
+    {
+      "de": "das Sofa",
+      "fa": "کاناپه/مبل",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "n",
+          "plural": "die Sofas"
+        }
+      }
+    },
+    {
+      "de": "das Bett",
+      "fa": "تخت",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "n",
+          "plural": "die Betten"
+        }
+      }
+    },
+    {
+      "de": "der Schrank",
+      "fa": "کمد",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Schränke"
+        }
+      }
+    },
+    {
+      "de": "das Regal",
+      "fa": "قفسه",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "n",
+          "plural": "die Regale"
+        }
+      }
+    },
+    {
+      "de": "die Lampe",
+      "fa": "چراغ/لامپ",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "f",
+          "plural": "die Lampen"
+        }
+      }
+    },
+    {
+      "de": "der Teppich",
+      "fa": "فرش",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Teppiche"
+        }
+      }
+    },
+    {
+      "de": "der Fernseher",
+      "fa": "تلویزیون",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Fernseher"
+        }
+      }
+    },
+    {
+      "de": "der Kühlschrank",
+      "fa": "یخچال",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Kühlschränke"
+        }
+      }
+    }
   ],
   "steps": [
     {
@@ -67,8 +167,15 @@
       "id": "syllable-Tisch",
       "word": "Tisch",
       "translation": "میز",
-      "syllables": ["Tisch"],
-      "distractors": ["Tasch", "Tusch", "Tesch", "Tosch"]
+      "syllables": [
+        "Tisch"
+      ],
+      "distractors": [
+        "Tasch",
+        "Tusch",
+        "Tesch",
+        "Tosch"
+      ]
     },
     {
       "type": "new-word",
@@ -89,8 +196,15 @@
       "id": "syllable-Stuhl",
       "word": "Stuhl",
       "translation": "صندلی",
-      "syllables": ["Stuhl"],
-      "distractors": ["Stahl", "Stohl", "Stehl", "Stihl"]
+      "syllables": [
+        "Stuhl"
+      ],
+      "distractors": [
+        "Stahl",
+        "Stohl",
+        "Stehl",
+        "Stihl"
+      ]
     },
     {
       "type": "new-word",
@@ -111,8 +225,16 @@
       "id": "syllable-Sofa",
       "word": "Sofa",
       "translation": "کاناپه",
-      "syllables": ["So", "fa"],
-      "distractors": ["Sa", "fu", "Su", "fo"]
+      "syllables": [
+        "So",
+        "fa"
+      ],
+      "distractors": [
+        "Sa",
+        "fu",
+        "Su",
+        "fo"
+      ]
     },
     {
       "type": "new-word",
@@ -133,8 +255,15 @@
       "id": "syllable-Bett",
       "word": "Bett",
       "translation": "تخت",
-      "syllables": ["Bett"],
-      "distractors": ["Batt", "Bitt", "Butt", "Bott"]
+      "syllables": [
+        "Bett"
+      ],
+      "distractors": [
+        "Batt",
+        "Bitt",
+        "Butt",
+        "Bott"
+      ]
     },
     {
       "type": "rapid-fire",
@@ -193,8 +322,15 @@
       "id": "syllable-Schrank",
       "word": "Schrank",
       "translation": "کمد",
-      "syllables": ["Schrank"],
-      "distractors": ["Schrenk", "Schrunk", "Schronk", "Schrink"]
+      "syllables": [
+        "Schrank"
+      ],
+      "distractors": [
+        "Schrenk",
+        "Schrunk",
+        "Schronk",
+        "Schrink"
+      ]
     },
     {
       "type": "new-word",
@@ -215,8 +351,16 @@
       "id": "syllable-Regal",
       "word": "Regal",
       "translation": "قفسه",
-      "syllables": ["Re", "gal"],
-      "distractors": ["Ra", "gul", "Ro", "gil"]
+      "syllables": [
+        "Re",
+        "gal"
+      ],
+      "distractors": [
+        "Ra",
+        "gul",
+        "Ro",
+        "gil"
+      ]
     },
     {
       "type": "new-word",
@@ -237,8 +381,16 @@
       "id": "syllable-Lampe",
       "word": "Lampe",
       "translation": "چراغ",
-      "syllables": ["Lam", "pe"],
-      "distractors": ["Lom", "pa", "Lum", "pu"]
+      "syllables": [
+        "Lam",
+        "pe"
+      ],
+      "distractors": [
+        "Lom",
+        "pa",
+        "Lum",
+        "pu"
+      ]
     },
     {
       "type": "dialog",
@@ -293,13 +445,21 @@
       "questions": [
         {
           "question": "الی چند صندلی نیاز دارد؟",
-          "options": ["دو عدد", "چهار عدد", "شش عدد"],
+          "options": [
+            "دو عدد",
+            "چهار عدد",
+            "شش عدد"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: vier Stühle (چهار صندلی)"
         },
         {
           "question": "کاناپه چقدر است؟",
-          "options": ["۵۰۰ یورو", "۸۰۰ یورو", "۱۰۰۰ یورو"],
+          "options": [
+            "۵۰۰ یورو",
+            "۸۰۰ یورو",
+            "۱۰۰۰ یورو"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: 800 Euro"
         }
@@ -362,8 +522,16 @@
       "id": "syllable-Teppich",
       "word": "Teppich",
       "translation": "فرش",
-      "syllables": ["Tep", "pich"],
-      "distractors": ["Tap", "pach", "Top", "puch"]
+      "syllables": [
+        "Tep",
+        "pich"
+      ],
+      "distractors": [
+        "Tap",
+        "pach",
+        "Top",
+        "puch"
+      ]
     },
     {
       "type": "new-word",
@@ -384,8 +552,17 @@
       "id": "syllable-Fernseher",
       "word": "Fernseher",
       "translation": "تلویزیون",
-      "syllables": ["Fern", "se", "her"],
-      "distractors": ["Farn", "sa", "har", "Forn"]
+      "syllables": [
+        "Fern",
+        "se",
+        "her"
+      ],
+      "distractors": [
+        "Farn",
+        "sa",
+        "har",
+        "Forn"
+      ]
     },
     {
       "type": "new-word",
@@ -406,8 +583,16 @@
       "id": "syllable-Kuehlschrank",
       "word": "Kühlschrank",
       "translation": "یخچال",
-      "syllables": ["Kühl", "schrank"],
-      "distractors": ["Kahl", "schrenk", "Kohl", "schrunk"]
+      "syllables": [
+        "Kühl",
+        "schrank"
+      ],
+      "distractors": [
+        "Kahl",
+        "schrenk",
+        "Kohl",
+        "schrunk"
+      ]
     },
     {
       "type": "grammar-tip",
@@ -436,7 +621,9 @@
         "hängt",
         "sitzt"
       ],
-      "correctAnswers": [0],
+      "correctAnswers": [
+        0
+      ],
       "feedback": {
         "explanation": "**Der Tisch steht** = میز ایستاده است (مبلمان ایستاده)"
       },
@@ -456,7 +643,9 @@
         "hängt",
         "sitzt"
       ],
-      "correctAnswers": [1],
+      "correctAnswers": [
+        1
+      ],
       "feedback": {
         "explanation": "**Der Teppich liegt** = فرش خوابیده است (روی زمین پهن شده)"
       },
@@ -525,13 +714,21 @@
       "questions": [
         {
           "question": "اتاق نشیمن الی چطور است؟",
-          "options": ["بزرگ", "کوچک ولی راحت", "خیلی مدرن"],
+          "options": [
+            "بزرگ",
+            "کوچک ولی راحت",
+            "خیلی مدرن"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: nicht groß, aber gemütlich (بزرگ نیست ولی راحت)"
         },
         {
           "question": "فرش الی از کجاست؟",
-          "options": ["از ایکیا", "از مامان‌بزرگش", "از آلمان"],
+          "options": [
+            "از ایکیا",
+            "از مامان‌بزرگش",
+            "از آلمان"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: von meiner Oma (از مامان‌بزرگم)"
         }
@@ -542,22 +739,58 @@
       "id": "s17",
       "instruction": "کلمات آلمانی را با فارسی جفت کنید",
       "items": [
-        { "id": "i1", "text": "Fernseher" },
-        { "id": "i2", "text": "Kühlschrank" },
-        { "id": "i3", "text": "Teppich" },
-        { "id": "i4", "text": "Lampe" }
+        {
+          "id": "i1",
+          "text": "Fernseher"
+        },
+        {
+          "id": "i2",
+          "text": "Kühlschrank"
+        },
+        {
+          "id": "i3",
+          "text": "Teppich"
+        },
+        {
+          "id": "i4",
+          "text": "Lampe"
+        }
       ],
       "matches": [
-        { "id": "m1", "text": "یخچال" },
-        { "id": "m2", "text": "تلویزیون" },
-        { "id": "m3", "text": "چراغ" },
-        { "id": "m4", "text": "فرش" }
+        {
+          "id": "m1",
+          "text": "یخچال"
+        },
+        {
+          "id": "m2",
+          "text": "تلویزیون"
+        },
+        {
+          "id": "m3",
+          "text": "چراغ"
+        },
+        {
+          "id": "m4",
+          "text": "فرش"
+        }
       ],
       "correctPairs": [
-        ["i1", "m2"],
-        ["i2", "m1"],
-        ["i3", "m4"],
-        ["i4", "m3"]
+        [
+          "i1",
+          "m2"
+        ],
+        [
+          "i2",
+          "m1"
+        ],
+        [
+          "i3",
+          "m4"
+        ],
+        [
+          "i4",
+          "m3"
+        ]
       ]
     },
     {
@@ -633,21 +866,83 @@
       "difficulty": "A1"
     },
     {
+      "type": "memory-match",
+      "id": "g5",
+      "title": "بازی حافظه",
+      "pairs": [
+        {
+          "de": "Tisch",
+          "fa": "میز"
+        },
+        {
+          "de": "Stuhl",
+          "fa": "صندلی"
+        },
+        {
+          "de": "Sofa",
+          "fa": "کاناپه"
+        },
+        {
+          "de": "Bett",
+          "fa": "تخت"
+        },
+        {
+          "de": "Schrank",
+          "fa": "کمد"
+        },
+        {
+          "de": "Regal",
+          "fa": "قفسه"
+        }
+      ],
+      "timeLimit": 60
+    },
+    {
       "type": "vocab-check",
-      "id": "g4",
+      "id": "g6",
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [
-        { "de": "der Tisch", "fa": "میز" },
-        { "de": "der Stuhl", "fa": "صندلی" },
-        { "de": "das Sofa", "fa": "کاناپه" },
-        { "de": "das Bett", "fa": "تخت" },
-        { "de": "der Schrank", "fa": "کمد" },
-        { "de": "das Regal", "fa": "قفسه" },
-        { "de": "die Lampe", "fa": "چراغ" },
-        { "de": "der Teppich", "fa": "فرش" },
-        { "de": "der Fernseher", "fa": "تلویزیون" },
-        { "de": "der Kühlschrank", "fa": "یخچال" }
+        {
+          "de": "der Tisch",
+          "fa": "میز"
+        },
+        {
+          "de": "der Stuhl",
+          "fa": "صندلی"
+        },
+        {
+          "de": "das Sofa",
+          "fa": "کاناپه"
+        },
+        {
+          "de": "das Bett",
+          "fa": "تخت"
+        },
+        {
+          "de": "der Schrank",
+          "fa": "کمد"
+        },
+        {
+          "de": "das Regal",
+          "fa": "قفسه"
+        },
+        {
+          "de": "die Lampe",
+          "fa": "چراغ"
+        },
+        {
+          "de": "der Teppich",
+          "fa": "فرش"
+        },
+        {
+          "de": "der Fernseher",
+          "fa": "تلویزیون"
+        },
+        {
+          "de": "der Kühlschrank",
+          "fa": "یخچال"
+        }
       ]
     },
     {
@@ -658,16 +953,66 @@
       "xpEarned": 50,
       "nextLessonId": "A1-M09-L03",
       "vocabularyLearned": [
-        { "word": { "de": "der Tisch", "fa": "میز" } },
-        { "word": { "de": "der Stuhl", "fa": "صندلی" } },
-        { "word": { "de": "das Sofa", "fa": "کاناپه" } },
-        { "word": { "de": "das Bett", "fa": "تخت" } },
-        { "word": { "de": "der Schrank", "fa": "کمد" } },
-        { "word": { "de": "das Regal", "fa": "قفسه" } },
-        { "word": { "de": "die Lampe", "fa": "چراغ" } },
-        { "word": { "de": "der Teppich", "fa": "فرش" } },
-        { "word": { "de": "der Fernseher", "fa": "تلویزیون" } },
-        { "word": { "de": "der Kühlschrank", "fa": "یخچال" } }
+        {
+          "word": {
+            "de": "der Tisch",
+            "fa": "میز"
+          }
+        },
+        {
+          "word": {
+            "de": "der Stuhl",
+            "fa": "صندلی"
+          }
+        },
+        {
+          "word": {
+            "de": "das Sofa",
+            "fa": "کاناپه"
+          }
+        },
+        {
+          "word": {
+            "de": "das Bett",
+            "fa": "تخت"
+          }
+        },
+        {
+          "word": {
+            "de": "der Schrank",
+            "fa": "کمد"
+          }
+        },
+        {
+          "word": {
+            "de": "das Regal",
+            "fa": "قفسه"
+          }
+        },
+        {
+          "word": {
+            "de": "die Lampe",
+            "fa": "چراغ"
+          }
+        },
+        {
+          "word": {
+            "de": "der Teppich",
+            "fa": "فرش"
+          }
+        },
+        {
+          "word": {
+            "de": "der Fernseher",
+            "fa": "تلویزیون"
+          }
+        },
+        {
+          "word": {
+            "de": "der Kühlschrank",
+            "fa": "یخچال"
+          }
+        }
       ]
     }
   ]

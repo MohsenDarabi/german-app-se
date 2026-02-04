@@ -20,16 +20,76 @@
   "totalSteps": 22,
   "estimatedMinutes": 15,
   "vocabulary": [
-    { "de": "elf", "fa": "یازده (۱۱)", "grammar": { "pos": "noun" } },
-    { "de": "zwölf", "fa": "دوازده (۱۲)", "grammar": { "pos": "noun" } },
-    { "de": "dreizehn", "fa": "سیزده (۱۳)", "grammar": { "pos": "noun" } },
-    { "de": "vierzehn", "fa": "چهارده (۱۴)", "grammar": { "pos": "noun" } },
-    { "de": "fünfzehn", "fa": "پانزده (۱۵)", "grammar": { "pos": "noun" } },
-    { "de": "sechzehn", "fa": "شانزده (۱۶)", "grammar": { "pos": "noun" } },
-    { "de": "siebzehn", "fa": "هفده (۱۷)", "grammar": { "pos": "noun" } },
-    { "de": "achtzehn", "fa": "هجده (۱۸)", "grammar": { "pos": "noun" } },
-    { "de": "neunzehn", "fa": "نوزده (۱۹)", "grammar": { "pos": "noun" } },
-    { "de": "zwanzig", "fa": "بیست (۲۰)", "grammar": { "pos": "noun" } }
+    {
+      "de": "elf",
+      "fa": "یازده (۱۱)",
+      "grammar": {
+        "pos": "noun"
+      }
+    },
+    {
+      "de": "zwölf",
+      "fa": "دوازده (۱۲)",
+      "grammar": {
+        "pos": "noun"
+      }
+    },
+    {
+      "de": "dreizehn",
+      "fa": "سیزده (۱۳)",
+      "grammar": {
+        "pos": "noun"
+      }
+    },
+    {
+      "de": "vierzehn",
+      "fa": "چهارده (۱۴)",
+      "grammar": {
+        "pos": "noun"
+      }
+    },
+    {
+      "de": "fünfzehn",
+      "fa": "پانزده (۱۵)",
+      "grammar": {
+        "pos": "noun"
+      }
+    },
+    {
+      "de": "sechzehn",
+      "fa": "شانزده (۱۶)",
+      "grammar": {
+        "pos": "noun"
+      }
+    },
+    {
+      "de": "siebzehn",
+      "fa": "هفده (۱۷)",
+      "grammar": {
+        "pos": "noun"
+      }
+    },
+    {
+      "de": "achtzehn",
+      "fa": "هجده (۱۸)",
+      "grammar": {
+        "pos": "noun"
+      }
+    },
+    {
+      "de": "neunzehn",
+      "fa": "نوزده (۱۹)",
+      "grammar": {
+        "pos": "noun"
+      }
+    },
+    {
+      "de": "zwanzig",
+      "fa": "بیست (۲۰)",
+      "grammar": {
+        "pos": "noun"
+      }
+    }
   ],
   "steps": [
     {
@@ -382,14 +442,22 @@
       "questions": [
         {
           "question": "کتاب چند یورو است؟",
-          "options": ["سه یورو", "پانزده یورو", "هجده یورو"],
+          "options": [
+            "سه یورو",
+            "پانزده یورو",
+            "هجده یورو"
+          ],
           "correctIndex": 1,
           "explanation": "فروشنده گفت: «Das kostet fünfzehn Euro.»",
           "relatedLineIndex": 1
         },
         {
           "question": "مجموع خرید چند یورو شد؟",
-          "options": ["پانزده یورو", "هجده یورو", "بیست یورو"],
+          "options": [
+            "پانزده یورو",
+            "هجده یورو",
+            "بیست یورو"
+          ],
           "correctIndex": 1,
           "explanation": "فروشنده گفت: «Zusammen achtzehn Euro.»",
           "relatedLineIndex": 3
@@ -493,8 +561,15 @@
       "id": "syllable-1",
       "word": "dreizehn",
       "translation": "سیزده (۱۳)",
-      "syllables": ["drei", "zehn"],
-      "distractors": ["vier", "acht", "fünf"],
+      "syllables": [
+        "drei",
+        "zehn"
+      ],
+      "distractors": [
+        "vier",
+        "acht",
+        "fünf"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! drei + zehn = dreizehn (۱۳)"
@@ -505,8 +580,15 @@
       "id": "syllable-2",
       "word": "vierzehn",
       "translation": "چهارده (۱۴)",
-      "syllables": ["vier", "zehn"],
-      "distractors": ["fier", "drei", "acht"],
+      "syllables": [
+        "vier",
+        "zehn"
+      ],
+      "distractors": [
+        "fier",
+        "drei",
+        "acht"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! vier + zehn = vierzehn (۱۴)"
@@ -517,8 +599,15 @@
       "id": "syllable-3",
       "word": "fünfzehn",
       "translation": "پانزده (۱۵)",
-      "syllables": ["fünf", "zehn"],
-      "distractors": ["funf", "drei", "vier"],
+      "syllables": [
+        "fünf",
+        "zehn"
+      ],
+      "distractors": [
+        "funf",
+        "drei",
+        "vier"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! fünf + zehn = fünfzehn (۱۵)"
@@ -529,8 +618,15 @@
       "id": "syllable-4",
       "word": "zwanzig",
       "translation": "بیست (۲۰)",
-      "syllables": ["zwan", "zig"],
-      "distractors": ["zwei", "sig", "tig"],
+      "syllables": [
+        "zwan",
+        "zig"
+      ],
+      "distractors": [
+        "zwei",
+        "sig",
+        "tig"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «zwanzig» یعنی بیست (۲۰)"
@@ -551,8 +647,40 @@
       "difficulty": "A1"
     },
     {
+      "type": "memory-match",
+      "id": "g4",
+      "title": "بازی حافظه",
+      "pairs": [
+        {
+          "de": "elf",
+          "fa": "یازده (۱۱)"
+        },
+        {
+          "de": "zwölf",
+          "fa": "دوازده (۱۲)"
+        },
+        {
+          "de": "dreizehn",
+          "fa": "سیزده (۱۳)"
+        },
+        {
+          "de": "vierzehn",
+          "fa": "چهارده (۱۴)"
+        },
+        {
+          "de": "fünfzehn",
+          "fa": "پانزده (۱۵)"
+        },
+        {
+          "de": "sechzehn",
+          "fa": "شانزده (۱۶)"
+        }
+      ],
+      "timeLimit": 60
+    },
+    {
       "type": "vocab-check",
-      "id": "g3",
+      "id": "g5",
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [

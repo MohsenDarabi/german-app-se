@@ -20,15 +20,105 @@
   "totalSteps": 38,
   "estimatedMinutes": 18,
   "vocabulary": [
-    { "de": "die Familie", "fa": "خانواده", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Familien" } } },
-    { "de": "die Mutter", "fa": "مادر", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Mütter" } } },
-    { "de": "der Vater", "fa": "پدر", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Väter" } } },
-    { "de": "die Eltern", "fa": "والدین", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Eltern" } } },
-    { "de": "der Bruder", "fa": "برادر", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Brüder" } } },
-    { "de": "die Schwester", "fa": "خواهر", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Schwestern" } } },
-    { "de": "das Kind", "fa": "بچه/فرزند", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Kinder" } } },
-    { "de": "der Sohn", "fa": "پسر (فرزند)", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Söhne" } } },
-    { "de": "die Tochter", "fa": "دختر (فرزند)", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Töchter" } } }
+    {
+      "de": "die Familie",
+      "fa": "خانواده",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "f",
+          "plural": "die Familien"
+        }
+      }
+    },
+    {
+      "de": "die Mutter",
+      "fa": "مادر",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "f",
+          "plural": "die Mütter"
+        }
+      }
+    },
+    {
+      "de": "der Vater",
+      "fa": "پدر",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Väter"
+        }
+      }
+    },
+    {
+      "de": "die Eltern",
+      "fa": "والدین",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "f",
+          "plural": "die Eltern"
+        }
+      }
+    },
+    {
+      "de": "der Bruder",
+      "fa": "برادر",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Brüder"
+        }
+      }
+    },
+    {
+      "de": "die Schwester",
+      "fa": "خواهر",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "f",
+          "plural": "die Schwestern"
+        }
+      }
+    },
+    {
+      "de": "das Kind",
+      "fa": "بچه/فرزند",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "n",
+          "plural": "die Kinder"
+        }
+      }
+    },
+    {
+      "de": "der Sohn",
+      "fa": "پسر (فرزند)",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Söhne"
+        }
+      }
+    },
+    {
+      "de": "die Tochter",
+      "fa": "دختر (فرزند)",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "f",
+          "plural": "die Töchter"
+        }
+      }
+    }
   ],
   "steps": [
     {
@@ -66,8 +156,18 @@
       "id": "syllable-Familie",
       "word": "Familie",
       "translation": "خانواده",
-      "syllables": ["Fa", "mi", "li", "e"],
-      "distractors": ["Fo", "mo", "lo", "o"]
+      "syllables": [
+        "Fa",
+        "mi",
+        "li",
+        "e"
+      ],
+      "distractors": [
+        "Fo",
+        "mo",
+        "lo",
+        "o"
+      ]
     },
     {
       "type": "new-word",
@@ -88,8 +188,16 @@
       "id": "syllable-Mutter",
       "word": "Mutter",
       "translation": "مادر",
-      "syllables": ["Mut", "ter"],
-      "distractors": ["Mat", "tar", "Mot", "tur"]
+      "syllables": [
+        "Mut",
+        "ter"
+      ],
+      "distractors": [
+        "Mat",
+        "tar",
+        "Mot",
+        "tur"
+      ]
     },
     {
       "type": "new-word",
@@ -110,8 +218,16 @@
       "id": "syllable-Vater",
       "word": "Vater",
       "translation": "پدر",
-      "syllables": ["Va", "ter"],
-      "distractors": ["Ve", "tar", "Vo", "tur"]
+      "syllables": [
+        "Va",
+        "ter"
+      ],
+      "distractors": [
+        "Ve",
+        "tar",
+        "Vo",
+        "tur"
+      ]
     },
     {
       "type": "new-word",
@@ -132,8 +248,16 @@
       "id": "syllable-Eltern",
       "word": "Eltern",
       "translation": "والدین",
-      "syllables": ["El", "tern"],
-      "distractors": ["Al", "tarn", "Ol", "turn"]
+      "syllables": [
+        "El",
+        "tern"
+      ],
+      "distractors": [
+        "Al",
+        "tarn",
+        "Ol",
+        "turn"
+      ]
     },
     {
       "type": "rapid-fire",
@@ -192,8 +316,16 @@
       "id": "syllable-Bruder",
       "word": "Bruder",
       "translation": "برادر",
-      "syllables": ["Bru", "der"],
-      "distractors": ["Bra", "dar", "Bro", "dur"]
+      "syllables": [
+        "Bru",
+        "der"
+      ],
+      "distractors": [
+        "Bra",
+        "dar",
+        "Bro",
+        "dur"
+      ]
     },
     {
       "type": "new-word",
@@ -214,8 +346,16 @@
       "id": "syllable-Schwester",
       "word": "Schwester",
       "translation": "خواهر",
-      "syllables": ["Schwes", "ter"],
-      "distractors": ["Schwas", "tar", "Schwos", "tur"]
+      "syllables": [
+        "Schwes",
+        "ter"
+      ],
+      "distractors": [
+        "Schwas",
+        "tar",
+        "Schwos",
+        "tur"
+      ]
     },
     {
       "type": "dialog",
@@ -263,13 +403,21 @@
       "questions": [
         {
           "question": "الی چند خواهر برادر دارد؟",
-          "options": ["یکی", "دو تا", "هیچی"],
+          "options": [
+            "یکی",
+            "دو تا",
+            "هیچی"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: یک برادر و یک خواهر دارم (دو تا)"
         },
         {
           "question": "والدین الی کجا زندگی می‌کنند؟",
-          "options": ["برلین", "تهران", "مونیخ"],
+          "options": [
+            "برلین",
+            "تهران",
+            "مونیخ"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: Meine Eltern wohnen in Teheran"
         }
@@ -294,8 +442,15 @@
       "id": "syllable-Kind",
       "word": "Kind",
       "translation": "بچه",
-      "syllables": ["Kind"],
-      "distractors": ["Kund", "Kand", "Kend", "Kond"]
+      "syllables": [
+        "Kind"
+      ],
+      "distractors": [
+        "Kund",
+        "Kand",
+        "Kend",
+        "Kond"
+      ]
     },
     {
       "type": "new-word",
@@ -316,8 +471,15 @@
       "id": "syllable-Sohn",
       "word": "Sohn",
       "translation": "پسر (فرزند)",
-      "syllables": ["Sohn"],
-      "distractors": ["Suhn", "Sahn", "Sehn", "Sonn"]
+      "syllables": [
+        "Sohn"
+      ],
+      "distractors": [
+        "Suhn",
+        "Sahn",
+        "Sehn",
+        "Sonn"
+      ]
     },
     {
       "type": "new-word",
@@ -338,8 +500,16 @@
       "id": "syllable-Tochter",
       "word": "Tochter",
       "translation": "دختر (فرزند)",
-      "syllables": ["Toch", "ter"],
-      "distractors": ["Tach", "tar", "Tech", "tur"]
+      "syllables": [
+        "Toch",
+        "ter"
+      ],
+      "distractors": [
+        "Tach",
+        "tar",
+        "Tech",
+        "tur"
+      ]
     },
     {
       "type": "grammar-tip",
@@ -368,7 +538,9 @@
         "Meinen",
         "Meiner"
       ],
-      "correctAnswers": [0],
+      "correctAnswers": [
+        0
+      ],
       "feedback": {
         "explanation": "**Mein** Vater = پدرم (Vater مذکر است)"
       },
@@ -388,7 +560,9 @@
         "Meinen",
         "Meiner"
       ],
-      "correctAnswers": [1],
+      "correctAnswers": [
+        1
+      ],
       "feedback": {
         "explanation": "**Meine** Mutter = مادرم (Mutter مونث است)"
       },
@@ -440,19 +614,46 @@
       "id": "s15",
       "instruction": "کلمات آلمانی را با فارسی جفت کنید",
       "items": [
-        { "id": "i1", "text": "Mutter" },
-        { "id": "i2", "text": "Vater" },
-        { "id": "i3", "text": "Schwester" }
+        {
+          "id": "i1",
+          "text": "Mutter"
+        },
+        {
+          "id": "i2",
+          "text": "Vater"
+        },
+        {
+          "id": "i3",
+          "text": "Schwester"
+        }
       ],
       "matches": [
-        { "id": "m1", "text": "پدر" },
-        { "id": "m2", "text": "مادر" },
-        { "id": "m3", "text": "خواهر" }
+        {
+          "id": "m1",
+          "text": "پدر"
+        },
+        {
+          "id": "m2",
+          "text": "مادر"
+        },
+        {
+          "id": "m3",
+          "text": "خواهر"
+        }
       ],
       "correctPairs": [
-        ["i1", "m2"],
-        ["i2", "m1"],
-        ["i3", "m3"]
+        [
+          "i1",
+          "m2"
+        ],
+        [
+          "i2",
+          "m1"
+        ],
+        [
+          "i3",
+          "m3"
+        ]
       ]
     },
     {
@@ -522,13 +723,21 @@
       "questions": [
         {
           "question": "اسم برادر الی چیست؟",
-          "options": ["تام", "علی", "مینا"],
+          "options": [
+            "تام",
+            "علی",
+            "مینا"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: mein Bruder Ali (برادرم علی)"
         },
         {
           "question": "اسم خواهر الی چیست؟",
-          "options": ["سارا", "علی", "مینا"],
+          "options": [
+            "سارا",
+            "علی",
+            "مینا"
+          ],
           "correctIndex": 2,
           "explanation": "الی گفت: meine Schwester Mina (خواهرم مینا)"
         }
@@ -587,20 +796,79 @@
       "difficulty": "A1"
     },
     {
+      "type": "memory-match",
+      "id": "g5",
+      "title": "بازی حافظه",
+      "pairs": [
+        {
+          "de": "Familie",
+          "fa": "خانواده"
+        },
+        {
+          "de": "Mutter",
+          "fa": "مادر"
+        },
+        {
+          "de": "Vater",
+          "fa": "پدر"
+        },
+        {
+          "de": "Eltern",
+          "fa": "والدین"
+        },
+        {
+          "de": "Bruder",
+          "fa": "برادر"
+        },
+        {
+          "de": "Schwester",
+          "fa": "خواهر"
+        }
+      ],
+      "timeLimit": 60
+    },
+    {
       "type": "vocab-check",
-      "id": "g4",
+      "id": "g6",
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [
-        { "de": "die Familie", "fa": "خانواده" },
-        { "de": "die Mutter", "fa": "مادر" },
-        { "de": "der Vater", "fa": "پدر" },
-        { "de": "die Eltern", "fa": "والدین" },
-        { "de": "der Bruder", "fa": "برادر" },
-        { "de": "die Schwester", "fa": "خواهر" },
-        { "de": "das Kind", "fa": "بچه" },
-        { "de": "der Sohn", "fa": "پسر (فرزند)" },
-        { "de": "die Tochter", "fa": "دختر (فرزند)" }
+        {
+          "de": "die Familie",
+          "fa": "خانواده"
+        },
+        {
+          "de": "die Mutter",
+          "fa": "مادر"
+        },
+        {
+          "de": "der Vater",
+          "fa": "پدر"
+        },
+        {
+          "de": "die Eltern",
+          "fa": "والدین"
+        },
+        {
+          "de": "der Bruder",
+          "fa": "برادر"
+        },
+        {
+          "de": "die Schwester",
+          "fa": "خواهر"
+        },
+        {
+          "de": "das Kind",
+          "fa": "بچه"
+        },
+        {
+          "de": "der Sohn",
+          "fa": "پسر (فرزند)"
+        },
+        {
+          "de": "die Tochter",
+          "fa": "دختر (فرزند)"
+        }
       ]
     },
     {
@@ -611,15 +879,60 @@
       "xpEarned": 50,
       "nextLessonId": "A1-M07-L02",
       "vocabularyLearned": [
-        { "word": { "de": "die Familie", "fa": "خانواده" } },
-        { "word": { "de": "die Mutter", "fa": "مادر" } },
-        { "word": { "de": "der Vater", "fa": "پدر" } },
-        { "word": { "de": "die Eltern", "fa": "والدین" } },
-        { "word": { "de": "der Bruder", "fa": "برادر" } },
-        { "word": { "de": "die Schwester", "fa": "خواهر" } },
-        { "word": { "de": "das Kind", "fa": "بچه" } },
-        { "word": { "de": "der Sohn", "fa": "پسر (فرزند)" } },
-        { "word": { "de": "die Tochter", "fa": "دختر (فرزند)" } }
+        {
+          "word": {
+            "de": "die Familie",
+            "fa": "خانواده"
+          }
+        },
+        {
+          "word": {
+            "de": "die Mutter",
+            "fa": "مادر"
+          }
+        },
+        {
+          "word": {
+            "de": "der Vater",
+            "fa": "پدر"
+          }
+        },
+        {
+          "word": {
+            "de": "die Eltern",
+            "fa": "والدین"
+          }
+        },
+        {
+          "word": {
+            "de": "der Bruder",
+            "fa": "برادر"
+          }
+        },
+        {
+          "word": {
+            "de": "die Schwester",
+            "fa": "خواهر"
+          }
+        },
+        {
+          "word": {
+            "de": "das Kind",
+            "fa": "بچه"
+          }
+        },
+        {
+          "word": {
+            "de": "der Sohn",
+            "fa": "پسر (فرزند)"
+          }
+        },
+        {
+          "word": {
+            "de": "die Tochter",
+            "fa": "دختر (فرزند)"
+          }
+        }
       ]
     }
   ]

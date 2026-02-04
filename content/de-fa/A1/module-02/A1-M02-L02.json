@@ -27,7 +27,14 @@
         "pos": "verb",
         "verb": {
           "infinitiv": "machen",
-          "praesens": { "ich": "mache", "du": "machst", "er_sie_es": "macht", "wir": "machen", "ihr": "macht", "sie_Sie": "machen" }
+          "praesens": {
+            "ich": "mache",
+            "du": "machst",
+            "er_sie_es": "macht",
+            "wir": "machen",
+            "ihr": "macht",
+            "sie_Sie": "machen"
+          }
         }
       }
     },
@@ -38,7 +45,14 @@
         "pos": "verb",
         "verb": {
           "infinitiv": "spielen",
-          "praesens": { "ich": "spiele", "du": "spielst", "er_sie_es": "spielt", "wir": "spielen", "ihr": "spielt", "sie_Sie": "spielen" }
+          "praesens": {
+            "ich": "spiele",
+            "du": "spielst",
+            "er_sie_es": "spielt",
+            "wir": "spielen",
+            "ihr": "spielt",
+            "sie_Sie": "spielen"
+          }
         }
       }
     },
@@ -49,7 +63,14 @@
         "pos": "verb",
         "verb": {
           "infinitiv": "lernen",
-          "praesens": { "ich": "lerne", "du": "lernst", "er_sie_es": "lernt", "wir": "lernen", "ihr": "lernt", "sie_Sie": "lernen" }
+          "praesens": {
+            "ich": "lerne",
+            "du": "lernst",
+            "er_sie_es": "lernt",
+            "wir": "lernen",
+            "ihr": "lernt",
+            "sie_Sie": "lernen"
+          }
         }
       }
     },
@@ -60,19 +81,30 @@
         "pos": "verb",
         "verb": {
           "infinitiv": "arbeiten",
-          "praesens": { "ich": "arbeite", "du": "arbeitest", "er_sie_es": "arbeitet", "wir": "arbeiten", "ihr": "arbeitet", "sie_Sie": "arbeiten" }
+          "praesens": {
+            "ich": "arbeite",
+            "du": "arbeitest",
+            "er_sie_es": "arbeitet",
+            "wir": "arbeiten",
+            "ihr": "arbeitet",
+            "sie_Sie": "arbeiten"
+          }
         }
       }
     },
     {
       "de": "heute",
       "fa": "امروز",
-      "grammar": { "pos": "adverb" }
+      "grammar": {
+        "pos": "adverb"
+      }
     },
     {
       "de": "jeden Tag",
       "fa": "هر روز",
-      "grammar": { "pos": "phrase" }
+      "grammar": {
+        "pos": "phrase"
+      }
     }
   ],
   "steps": [
@@ -111,8 +143,15 @@
       "id": "syllable-machen",
       "word": "machen",
       "translation": "انجام دادن / درست کردن",
-      "syllables": ["ma", "chen"],
-      "distractors": ["mo", "te", "be"],
+      "syllables": [
+        "ma",
+        "chen"
+      ],
+      "distractors": [
+        "mo",
+        "te",
+        "be"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «machen» یعنی انجام دادن - یک فعل باقاعده پرکاربرد."
@@ -137,8 +176,16 @@
       "id": "syllable-ich-mache",
       "word": "ich mache",
       "translation": "من انجام می‌دهم",
-      "syllables": ["ich", "ma", "che"],
-      "distractors": ["du", "er", "sie"],
+      "syllables": [
+        "ich",
+        "ma",
+        "che"
+      ],
+      "distractors": [
+        "du",
+        "er",
+        "sie"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «ich mache» - با ich پسوند -e می‌گیریم."
@@ -163,8 +210,15 @@
       "id": "syllable-du-machst",
       "word": "du machst",
       "translation": "تو انجام می‌دهی",
-      "syllables": ["du", "machst"],
-      "distractors": ["mache", "macht", "ich"],
+      "syllables": [
+        "du",
+        "machst"
+      ],
+      "distractors": [
+        "mache",
+        "macht",
+        "ich"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «du machst» - با du پسوند -st می‌گیریم."
@@ -189,8 +243,15 @@
       "id": "syllable-er-macht",
       "word": "er macht",
       "translation": "او (مرد) انجام می‌دهد",
-      "syllables": ["er", "macht"],
-      "distractors": ["mache", "machst", "es"],
+      "syllables": [
+        "er",
+        "macht"
+      ],
+      "distractors": [
+        "mache",
+        "machst",
+        "es"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «er macht» - با er/sie/es پسوند -t می‌گیریم."
@@ -215,8 +276,15 @@
       "id": "syllable-sie-macht",
       "word": "sie macht",
       "translation": "او (زن) انجام می‌دهد",
-      "syllables": ["sie", "macht"],
-      "distractors": ["mache", "machst", "es"],
+      "syllables": [
+        "sie",
+        "macht"
+      ],
+      "distractors": [
+        "mache",
+        "machst",
+        "es"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «sie macht» - با er/sie/es پسوند -t می‌گیریم."
@@ -295,8 +363,15 @@
       "id": "syllable-spielen",
       "word": "spielen",
       "translation": "بازی کردن",
-      "syllables": ["spie", "len"],
-      "distractors": ["la", "ben", "piel"],
+      "syllables": [
+        "spie",
+        "len"
+      ],
+      "distractors": [
+        "la",
+        "ben",
+        "piel"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «spielen» (بازی کردن) یک فعل باقاعده است."
@@ -321,8 +396,15 @@
       "id": "syllable-lernen",
       "word": "lernen",
       "translation": "یاد گرفتن",
-      "syllables": ["ler", "nen"],
-      "distractors": ["la", "ben", "nan"],
+      "syllables": [
+        "ler",
+        "nen"
+      ],
+      "distractors": [
+        "la",
+        "ben",
+        "nan"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «lernen» یعنی یاد گرفتن - یک فعل باقاعده."
@@ -347,8 +429,16 @@
       "id": "syllable-arbeiten",
       "word": "arbeiten",
       "translation": "کار کردن",
-      "syllables": ["ar", "bei", "ten"],
-      "distractors": ["bu", "bet", "ner"],
+      "syllables": [
+        "ar",
+        "bei",
+        "ten"
+      ],
+      "distractors": [
+        "bu",
+        "bet",
+        "ner"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «arbeiten» فعل باقاعده است ولی چون ریشه به t ختم می‌شود، یک e اضافی می‌گیرد."
@@ -491,21 +581,33 @@
       "questions": [
         {
           "question": "تام الان چه کار می‌کند؟",
-          "options": ["گیتار می‌زند", "آلمانی یاد می‌گیرد", "کار می‌کند"],
+          "options": [
+            "گیتار می‌زند",
+            "آلمانی یاد می‌گیرد",
+            "کار می‌کند"
+          ],
           "correctIndex": 1,
           "explanation": "تام گفت: «Ich lerne Deutsch» یعنی آلمانی یاد می‌گیرم.",
           "relatedLineIndex": 1
         },
         {
           "question": "الی کجا کار می‌کند؟",
-          "options": ["در دفتر", "در کافه", "در مدرسه"],
+          "options": [
+            "در دفتر",
+            "در کافه",
+            "در مدرسه"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: «Ich arbeite im Café» یعنی در کافه کار می‌کنم.",
           "relatedLineIndex": 6
         },
         {
           "question": "الی هر روز چه کار می‌کند؟",
-          "options": ["آلمانی یاد می‌گیرد", "گیتار می‌زند", "فوتبال بازی می‌کند"],
+          "options": [
+            "آلمانی یاد می‌گیرد",
+            "گیتار می‌زند",
+            "فوتبال بازی می‌کند"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: «Ich spiele jeden Tag» یعنی هر روز (گیتار) می‌زنم.",
           "relatedLineIndex": 4
@@ -644,8 +746,15 @@
       "id": "syllable-heute",
       "word": "heute",
       "translation": "امروز",
-      "syllables": ["heu", "te"],
-      "distractors": ["hei", "ta", "au"],
+      "syllables": [
+        "heu",
+        "te"
+      ],
+      "distractors": [
+        "hei",
+        "ta",
+        "au"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «heute» یعنی امروز. توجه: «eu» صدای «اوی» می‌دهد."
@@ -670,8 +779,16 @@
       "id": "syllable-jeden-tag",
       "word": "jeden Tag",
       "translation": "هر روز",
-      "syllables": ["je", "den", "Tag"],
-      "distractors": ["di", "Tog", "tag"],
+      "syllables": [
+        "je",
+        "den",
+        "Tag"
+      ],
+      "distractors": [
+        "di",
+        "Tog",
+        "tag"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «jeden Tag» یعنی هر روز. توجه: Tag با حرف بزرگ چون اسم است."
@@ -729,8 +846,40 @@
       }
     },
     {
+      "type": "memory-match",
+      "id": "g4",
+      "title": "بازی حافظه",
+      "pairs": [
+        {
+          "de": "machen",
+          "fa": "انجام دادن"
+        },
+        {
+          "de": "spielen",
+          "fa": "بازی کردن"
+        },
+        {
+          "de": "lernen",
+          "fa": "یاد گرفتن"
+        },
+        {
+          "de": "arbeiten",
+          "fa": "کار کردن"
+        },
+        {
+          "de": "heute",
+          "fa": "امروز"
+        },
+        {
+          "de": "jeden Tag",
+          "fa": "هر روز"
+        }
+      ],
+      "timeLimit": 60
+    },
+    {
       "type": "vocab-check",
-      "id": "g3",
+      "id": "g5",
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [

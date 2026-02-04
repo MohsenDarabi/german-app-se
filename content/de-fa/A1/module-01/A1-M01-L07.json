@@ -475,21 +475,33 @@
       "questions": [
         {
           "question": "الی چند قهوه سفارش داد؟",
-          "options": ["یک", "دو", "سه"],
+          "options": [
+            "یک",
+            "دو",
+            "سه"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: «Zwei Kaffee, bitte.» یعنی دو قهوه.",
           "relatedLineIndex": 0
         },
         {
           "question": "تام چند کروسان خواست؟",
-          "options": ["دو", "سه", "چهار"],
+          "options": [
+            "دو",
+            "سه",
+            "چهار"
+          ],
           "correctIndex": 1,
           "explanation": "تام گفت: «drei Croissants» یعنی سه کروسان.",
           "relatedLineIndex": 2
         },
         {
           "question": "کل سفارش چند یورو شد؟",
-          "options": ["شش یورو", "هشت یورو", "ده یورو"],
+          "options": [
+            "شش یورو",
+            "هشت یورو",
+            "ده یورو"
+          ],
           "correctIndex": 1,
           "explanation": "گارسون گفت: «Das macht acht Euro.» یعنی هشت یورو.",
           "relatedLineIndex": 3
@@ -660,8 +672,40 @@
       "difficulty": "A1"
     },
     {
+      "type": "memory-match",
+      "id": "g4",
+      "title": "بازی حافظه",
+      "pairs": [
+        {
+          "de": "eins",
+          "fa": "یک (۱)"
+        },
+        {
+          "de": "zwei",
+          "fa": "دو (۲)"
+        },
+        {
+          "de": "drei",
+          "fa": "سه (۳)"
+        },
+        {
+          "de": "vier",
+          "fa": "چهار (۴)"
+        },
+        {
+          "de": "fünf",
+          "fa": "پنج (۵)"
+        },
+        {
+          "de": "sechs",
+          "fa": "شش (۶)"
+        }
+      ],
+      "timeLimit": 60
+    },
+    {
       "type": "vocab-check",
-      "id": "g3",
+      "id": "g5",
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [

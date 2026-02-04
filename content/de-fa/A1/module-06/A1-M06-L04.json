@@ -20,16 +20,162 @@
   "totalSteps": 42,
   "estimatedMinutes": 20,
   "vocabulary": [
-    { "de": "der Morgen", "fa": "صبح", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Morgen" } } },
-    { "de": "der Abend", "fa": "عصر/شب", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Abende" } } },
-    { "de": "aufstehen", "fa": "بیدار شدن", "grammar": { "pos": "verb", "verb": { "infinitiv": "aufstehen", "praesens": { "ich": "stehe auf", "du": "stehst auf", "er_sie_es": "steht auf", "wir": "stehen auf", "ihr": "steht auf", "sie_Sie": "stehen auf" }, "separable": true, "prefix": "auf" } } },
-    { "de": "frühstücken", "fa": "صبحانه خوردن", "grammar": { "pos": "verb", "verb": { "infinitiv": "frühstücken", "praesens": { "ich": "frühstücke", "du": "frühstückst", "er_sie_es": "frühstückt", "wir": "frühstücken", "ihr": "frühstückt", "sie_Sie": "frühstücken" } } } },
-    { "de": "arbeiten", "fa": "کار کردن", "grammar": { "pos": "verb", "verb": { "infinitiv": "arbeiten", "praesens": { "ich": "arbeite", "du": "arbeitest", "er_sie_es": "arbeitet", "wir": "arbeiten", "ihr": "arbeitet", "sie_Sie": "arbeiten" } } } },
-    { "de": "schlafen", "fa": "خوابیدن", "grammar": { "pos": "verb", "verb": { "infinitiv": "schlafen", "praesens": { "ich": "schlafe", "du": "schläfst", "er_sie_es": "schläft", "wir": "schlafen", "ihr": "schlaft", "sie_Sie": "schlafen" } } } },
-    { "de": "duschen", "fa": "دوش گرفتن", "grammar": { "pos": "verb", "verb": { "infinitiv": "duschen", "praesens": { "ich": "dusche", "du": "duschst", "er_sie_es": "duscht", "wir": "duschen", "ihr": "duscht", "sie_Sie": "duschen" } } } },
-    { "de": "das Mittagessen", "fa": "ناهار", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Mittagessen" } } },
-    { "de": "das Abendessen", "fa": "شام", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Abendessen" } } },
-    { "de": "fernsehen", "fa": "تلویزیون دیدن", "grammar": { "pos": "verb", "verb": { "infinitiv": "fernsehen", "praesens": { "ich": "sehe fern", "du": "siehst fern", "er_sie_es": "sieht fern", "wir": "sehen fern", "ihr": "seht fern", "sie_Sie": "sehen fern" }, "separable": true, "prefix": "fern" } } }
+    {
+      "de": "der Morgen",
+      "fa": "صبح",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Morgen"
+        }
+      }
+    },
+    {
+      "de": "der Abend",
+      "fa": "عصر/شب",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Abende"
+        }
+      }
+    },
+    {
+      "de": "aufstehen",
+      "fa": "بیدار شدن",
+      "grammar": {
+        "pos": "verb",
+        "verb": {
+          "infinitiv": "aufstehen",
+          "praesens": {
+            "ich": "stehe auf",
+            "du": "stehst auf",
+            "er_sie_es": "steht auf",
+            "wir": "stehen auf",
+            "ihr": "steht auf",
+            "sie_Sie": "stehen auf"
+          },
+          "separable": true,
+          "prefix": "auf"
+        }
+      }
+    },
+    {
+      "de": "frühstücken",
+      "fa": "صبحانه خوردن",
+      "grammar": {
+        "pos": "verb",
+        "verb": {
+          "infinitiv": "frühstücken",
+          "praesens": {
+            "ich": "frühstücke",
+            "du": "frühstückst",
+            "er_sie_es": "frühstückt",
+            "wir": "frühstücken",
+            "ihr": "frühstückt",
+            "sie_Sie": "frühstücken"
+          }
+        }
+      }
+    },
+    {
+      "de": "arbeiten",
+      "fa": "کار کردن",
+      "grammar": {
+        "pos": "verb",
+        "verb": {
+          "infinitiv": "arbeiten",
+          "praesens": {
+            "ich": "arbeite",
+            "du": "arbeitest",
+            "er_sie_es": "arbeitet",
+            "wir": "arbeiten",
+            "ihr": "arbeitet",
+            "sie_Sie": "arbeiten"
+          }
+        }
+      }
+    },
+    {
+      "de": "schlafen",
+      "fa": "خوابیدن",
+      "grammar": {
+        "pos": "verb",
+        "verb": {
+          "infinitiv": "schlafen",
+          "praesens": {
+            "ich": "schlafe",
+            "du": "schläfst",
+            "er_sie_es": "schläft",
+            "wir": "schlafen",
+            "ihr": "schlaft",
+            "sie_Sie": "schlafen"
+          }
+        }
+      }
+    },
+    {
+      "de": "duschen",
+      "fa": "دوش گرفتن",
+      "grammar": {
+        "pos": "verb",
+        "verb": {
+          "infinitiv": "duschen",
+          "praesens": {
+            "ich": "dusche",
+            "du": "duschst",
+            "er_sie_es": "duscht",
+            "wir": "duschen",
+            "ihr": "duscht",
+            "sie_Sie": "duschen"
+          }
+        }
+      }
+    },
+    {
+      "de": "das Mittagessen",
+      "fa": "ناهار",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "n",
+          "plural": "die Mittagessen"
+        }
+      }
+    },
+    {
+      "de": "das Abendessen",
+      "fa": "شام",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "n",
+          "plural": "die Abendessen"
+        }
+      }
+    },
+    {
+      "de": "fernsehen",
+      "fa": "تلویزیون دیدن",
+      "grammar": {
+        "pos": "verb",
+        "verb": {
+          "infinitiv": "fernsehen",
+          "praesens": {
+            "ich": "sehe fern",
+            "du": "siehst fern",
+            "er_sie_es": "sieht fern",
+            "wir": "sehen fern",
+            "ihr": "seht fern",
+            "sie_Sie": "sehen fern"
+          },
+          "separable": true,
+          "prefix": "fern"
+        }
+      }
+    }
   ],
   "steps": [
     {
@@ -67,8 +213,16 @@
       "id": "syllable-Morgen",
       "word": "Morgen",
       "translation": "صبح",
-      "syllables": ["Mor", "gen"],
-      "distractors": ["Mar", "gan", "Mur", "gon"]
+      "syllables": [
+        "Mor",
+        "gen"
+      ],
+      "distractors": [
+        "Mar",
+        "gan",
+        "Mur",
+        "gon"
+      ]
     },
     {
       "type": "new-word",
@@ -89,8 +243,16 @@
       "id": "syllable-Abend",
       "word": "Abend",
       "translation": "عصر/شب",
-      "syllables": ["A", "bend"],
-      "distractors": ["O", "band", "bund", "ond"]
+      "syllables": [
+        "A",
+        "bend"
+      ],
+      "distractors": [
+        "O",
+        "band",
+        "bund",
+        "ond"
+      ]
     },
     {
       "type": "new-word",
@@ -111,8 +273,17 @@
       "id": "syllable-aufstehen",
       "word": "aufstehen",
       "translation": "بیدار شدن",
-      "syllables": ["auf", "ste", "hen"],
-      "distractors": ["of", "sta", "han", "ef"]
+      "syllables": [
+        "auf",
+        "ste",
+        "hen"
+      ],
+      "distractors": [
+        "of",
+        "sta",
+        "han",
+        "ef"
+      ]
     },
     {
       "type": "grammar-tip",
@@ -187,8 +358,17 @@
       "id": "syllable-fruehstuecken",
       "word": "frühstücken",
       "translation": "صبحانه خوردن",
-      "syllables": ["früh", "stü", "cken"],
-      "distractors": ["frah", "sta", "kan", "stö"]
+      "syllables": [
+        "früh",
+        "stü",
+        "cken"
+      ],
+      "distractors": [
+        "frah",
+        "sta",
+        "kan",
+        "stö"
+      ]
     },
     {
       "type": "new-word",
@@ -209,8 +389,17 @@
       "id": "syllable-arbeiten",
       "word": "arbeiten",
       "translation": "کار کردن",
-      "syllables": ["ar", "bei", "ten"],
-      "distractors": ["er", "bai", "tan", "or"]
+      "syllables": [
+        "ar",
+        "bei",
+        "ten"
+      ],
+      "distractors": [
+        "er",
+        "bai",
+        "tan",
+        "or"
+      ]
     },
     {
       "type": "new-word",
@@ -231,8 +420,16 @@
       "id": "syllable-schlafen",
       "word": "schlafen",
       "translation": "خوابیدن",
-      "syllables": ["schla", "fen"],
-      "distractors": ["schlo", "fan", "schlu", "fon"]
+      "syllables": [
+        "schla",
+        "fen"
+      ],
+      "distractors": [
+        "schlo",
+        "fan",
+        "schlu",
+        "fon"
+      ]
     },
     {
       "type": "dialog",
@@ -280,13 +477,21 @@
       "questions": [
         {
           "question": "الی چه ساعتی بیدار می‌شود؟",
-          "options": ["Um 7 Uhr", "Um halb sieben", "Um 8 Uhr"],
+          "options": [
+            "Um 7 Uhr",
+            "Um halb sieben",
+            "Um 8 Uhr"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: Um halb sieben (شش و نیم)"
         },
         {
           "question": "تام صبح چه کار می‌کند؟",
-          "options": ["فقط صبحانه می‌خورد", "دوش می‌گیرد و صبحانه می‌خورد", "فقط دوش می‌گیرد"],
+          "options": [
+            "فقط صبحانه می‌خورد",
+            "دوش می‌گیرد و صبحانه می‌خورد",
+            "فقط دوش می‌گیرد"
+          ],
           "correctIndex": 1,
           "explanation": "تام گفت: Ich dusche und frühstücke (دوش می‌گیرم و صبحانه می‌خورم)"
         }
@@ -311,8 +516,16 @@
       "id": "syllable-duschen",
       "word": "duschen",
       "translation": "دوش گرفتن",
-      "syllables": ["du", "schen"],
-      "distractors": ["da", "schan", "do", "schon"]
+      "syllables": [
+        "du",
+        "schen"
+      ],
+      "distractors": [
+        "da",
+        "schan",
+        "do",
+        "schon"
+      ]
     },
     {
       "type": "fill-in-blank",
@@ -377,8 +590,18 @@
       "id": "syllable-Mittagessen",
       "word": "Mittagessen",
       "translation": "ناهار",
-      "syllables": ["Mit", "tag", "es", "sen"],
-      "distractors": ["Mat", "tog", "as", "san"]
+      "syllables": [
+        "Mit",
+        "tag",
+        "es",
+        "sen"
+      ],
+      "distractors": [
+        "Mat",
+        "tog",
+        "as",
+        "san"
+      ]
     },
     {
       "type": "new-word",
@@ -399,8 +622,18 @@
       "id": "syllable-Abendessen",
       "word": "Abendessen",
       "translation": "شام",
-      "syllables": ["A", "bend", "es", "sen"],
-      "distractors": ["O", "band", "as", "san"]
+      "syllables": [
+        "A",
+        "bend",
+        "es",
+        "sen"
+      ],
+      "distractors": [
+        "O",
+        "band",
+        "as",
+        "san"
+      ]
     },
     {
       "type": "grammar-tip",
@@ -502,13 +735,21 @@
       "questions": [
         {
           "question": "الکس از چه ساعتی تا چه ساعتی کار می‌کند؟",
-          "options": ["از 9 تا 17", "از 8 تا 16", "از 7 تا 15"],
+          "options": [
+            "از 9 تا 17",
+            "از 8 تا 16",
+            "از 7 تا 15"
+          ],
           "correctIndex": 1,
           "explanation": "الکس گفت: Von 8 bis 16 Uhr (از ۸ تا ۱۶)"
         },
         {
           "question": "چرا الکس زود شروع می‌کند؟",
-          "options": ["ترافیک کم است", "زود تعطیل می‌شود", "نزدیک خانه است"],
+          "options": [
+            "ترافیک کم است",
+            "زود تعطیل می‌شود",
+            "نزدیک خانه است"
+          ],
           "correctIndex": 1,
           "explanation": "الکس گفت: Ich habe früh Feierabend (زود تعطیل می‌شم)"
         }
@@ -533,8 +774,17 @@
       "id": "syllable-fernsehen",
       "word": "fernsehen",
       "translation": "تلویزیون دیدن",
-      "syllables": ["fern", "se", "hen"],
-      "distractors": ["farn", "sa", "han", "si"]
+      "syllables": [
+        "fern",
+        "se",
+        "hen"
+      ],
+      "distractors": [
+        "farn",
+        "sa",
+        "han",
+        "si"
+      ]
     },
     {
       "type": "matching",
@@ -656,8 +906,40 @@
       "difficulty": "A1"
     },
     {
+      "type": "memory-match",
+      "id": "g5",
+      "title": "بازی حافظه",
+      "pairs": [
+        {
+          "de": "Morgen",
+          "fa": "صبح"
+        },
+        {
+          "de": "Abend",
+          "fa": "عصر/شب"
+        },
+        {
+          "de": "aufstehen",
+          "fa": "بیدار شدن"
+        },
+        {
+          "de": "frühstücken",
+          "fa": "صبحانه خوردن"
+        },
+        {
+          "de": "arbeiten",
+          "fa": "کار کردن"
+        },
+        {
+          "de": "duschen",
+          "fa": "دوش گرفتن"
+        }
+      ],
+      "timeLimit": 60
+    },
+    {
       "type": "vocab-check",
-      "id": "g4",
+      "id": "g6",
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [

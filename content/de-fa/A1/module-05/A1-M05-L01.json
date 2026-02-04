@@ -20,18 +20,132 @@
   "totalSteps": 42,
   "estimatedMinutes": 22,
   "vocabulary": [
-    { "de": "Ja", "fa": "بله", "grammar": { "pos": "adverb" } },
-    { "de": "Nein", "fa": "نه", "grammar": { "pos": "adverb" } },
-    { "de": "verstehen", "fa": "فهمیدن", "grammar": { "pos": "verb", "verb": { "infinitiv": "verstehen", "praesens": { "ich": "verstehe", "du": "verstehst", "er_sie_es": "versteht", "wir": "verstehen", "ihr": "versteht", "sie_Sie": "verstehen" } } } },
-    { "de": "kennen", "fa": "شناختن", "grammar": { "pos": "verb", "verb": { "infinitiv": "kennen", "praesens": { "ich": "kenne", "du": "kennst", "er_sie_es": "kennt", "wir": "kennen", "ihr": "kennt", "sie_Sie": "kennen" } } } },
-    { "de": "mögen", "fa": "دوست داشتن", "grammar": { "pos": "verb", "verb": { "infinitiv": "mögen", "praesens": { "ich": "mag", "du": "magst", "er_sie_es": "mag", "wir": "mögen", "ihr": "mögt", "sie_Sie": "mögen" } } } },
-    { "de": "müde", "fa": "خسته", "grammar": { "pos": "adjective" } },
-    { "de": "fertig", "fa": "تمام / آماده", "grammar": { "pos": "adjective" } },
-    { "de": "die Zeit", "fa": "وقت / زمان", "grammar": { "pos": "noun", "noun": { "artikel": "f" } } },
-    { "de": "der Hunger", "fa": "گرسنگی", "grammar": { "pos": "noun", "noun": { "artikel": "m" } } },
-    { "de": "der Durst", "fa": "تشنگی", "grammar": { "pos": "noun", "noun": { "artikel": "m" } } },
-    { "de": "richtig", "fa": "درست", "grammar": { "pos": "adjective" } },
-    { "de": "gerne", "fa": "با کمال میل", "grammar": { "pos": "adverb" } }
+    {
+      "de": "Ja",
+      "fa": "بله",
+      "grammar": {
+        "pos": "adverb"
+      }
+    },
+    {
+      "de": "Nein",
+      "fa": "نه",
+      "grammar": {
+        "pos": "adverb"
+      }
+    },
+    {
+      "de": "verstehen",
+      "fa": "فهمیدن",
+      "grammar": {
+        "pos": "verb",
+        "verb": {
+          "infinitiv": "verstehen",
+          "praesens": {
+            "ich": "verstehe",
+            "du": "verstehst",
+            "er_sie_es": "versteht",
+            "wir": "verstehen",
+            "ihr": "versteht",
+            "sie_Sie": "verstehen"
+          }
+        }
+      }
+    },
+    {
+      "de": "kennen",
+      "fa": "شناختن",
+      "grammar": {
+        "pos": "verb",
+        "verb": {
+          "infinitiv": "kennen",
+          "praesens": {
+            "ich": "kenne",
+            "du": "kennst",
+            "er_sie_es": "kennt",
+            "wir": "kennen",
+            "ihr": "kennt",
+            "sie_Sie": "kennen"
+          }
+        }
+      }
+    },
+    {
+      "de": "mögen",
+      "fa": "دوست داشتن",
+      "grammar": {
+        "pos": "verb",
+        "verb": {
+          "infinitiv": "mögen",
+          "praesens": {
+            "ich": "mag",
+            "du": "magst",
+            "er_sie_es": "mag",
+            "wir": "mögen",
+            "ihr": "mögt",
+            "sie_Sie": "mögen"
+          }
+        }
+      }
+    },
+    {
+      "de": "müde",
+      "fa": "خسته",
+      "grammar": {
+        "pos": "adjective"
+      }
+    },
+    {
+      "de": "fertig",
+      "fa": "تمام / آماده",
+      "grammar": {
+        "pos": "adjective"
+      }
+    },
+    {
+      "de": "die Zeit",
+      "fa": "وقت / زمان",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "f"
+        }
+      }
+    },
+    {
+      "de": "der Hunger",
+      "fa": "گرسنگی",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m"
+        }
+      }
+    },
+    {
+      "de": "der Durst",
+      "fa": "تشنگی",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m"
+        }
+      }
+    },
+    {
+      "de": "richtig",
+      "fa": "درست",
+      "grammar": {
+        "pos": "adjective"
+      }
+    },
+    {
+      "de": "gerne",
+      "fa": "با کمال میل",
+      "grammar": {
+        "pos": "adverb"
+      }
+    }
   ],
   "steps": [
     {
@@ -69,8 +183,14 @@
       "id": "syllable-Ja",
       "word": "Ja",
       "translation": "بله",
-      "syllables": ["Ja"],
-      "distractors": ["Jo", "Je", "Ju"]
+      "syllables": [
+        "Ja"
+      ],
+      "distractors": [
+        "Jo",
+        "Je",
+        "Ju"
+      ]
     },
     {
       "type": "new-word",
@@ -91,8 +211,14 @@
       "id": "syllable-Nein",
       "word": "Nein",
       "translation": "نه",
-      "syllables": ["Nein"],
-      "distractors": ["Nain", "Noin", "Naun"]
+      "syllables": [
+        "Nein"
+      ],
+      "distractors": [
+        "Nain",
+        "Noin",
+        "Naun"
+      ]
     },
     {
       "type": "dialog",
@@ -139,13 +265,21 @@
       "questions": [
         {
           "question": "تام اهل کجاست؟",
-          "options": ["Aus Iran", "Aus Berlin", "Aus England"],
+          "options": [
+            "Aus Iran",
+            "Aus Berlin",
+            "Aus England"
+          ],
           "correctIndex": 1,
           "explanation": "تام گفت: «Ich komme aus Berlin.»"
         },
         {
           "question": "تام انگلیسی صحبت می‌کند؟",
-          "options": ["Ja, fließend", "Ja, ein bisschen", "Nein"],
+          "options": [
+            "Ja, fließend",
+            "Ja, ein bisschen",
+            "Nein"
+          ],
           "correctIndex": 1,
           "explanation": "تام گفت: «Ja, ein bisschen.»"
         }
@@ -209,8 +343,17 @@
       "id": "syllable-verstehen",
       "word": "verstehen",
       "translation": "فهمیدن",
-      "syllables": ["ver", "ste", "hen"],
-      "distractors": ["vor", "sta", "han", "sen"]
+      "syllables": [
+        "ver",
+        "ste",
+        "hen"
+      ],
+      "distractors": [
+        "vor",
+        "sta",
+        "han",
+        "sen"
+      ]
     },
     {
       "type": "new-word",
@@ -231,8 +374,16 @@
       "id": "syllable-kennen",
       "word": "kennen",
       "translation": "شناختن",
-      "syllables": ["ken", "nen"],
-      "distractors": ["kan", "non", "kun", "nin"]
+      "syllables": [
+        "ken",
+        "nen"
+      ],
+      "distractors": [
+        "kan",
+        "non",
+        "kun",
+        "nin"
+      ]
     },
     {
       "type": "new-word",
@@ -253,8 +404,16 @@
       "id": "syllable-moegen",
       "word": "mögen",
       "translation": "دوست داشتن",
-      "syllables": ["mö", "gen"],
-      "distractors": ["ma", "gun", "mo", "gan"]
+      "syllables": [
+        "mö",
+        "gen"
+      ],
+      "distractors": [
+        "ma",
+        "gun",
+        "mo",
+        "gan"
+      ]
     },
     {
       "type": "grammar-tip",
@@ -335,8 +494,16 @@
       "id": "syllable-muede",
       "word": "müde",
       "translation": "خسته",
-      "syllables": ["mü", "de"],
-      "distractors": ["mo", "da", "mi", "du"]
+      "syllables": [
+        "mü",
+        "de"
+      ],
+      "distractors": [
+        "mo",
+        "da",
+        "mi",
+        "du"
+      ]
     },
     {
       "type": "new-word",
@@ -357,8 +524,16 @@
       "id": "syllable-fertig",
       "word": "fertig",
       "translation": "تمام / آماده",
-      "syllables": ["fer", "tig"],
-      "distractors": ["for", "tag", "fir", "teg"]
+      "syllables": [
+        "fer",
+        "tig"
+      ],
+      "distractors": [
+        "for",
+        "tag",
+        "fir",
+        "teg"
+      ]
     },
     {
       "type": "new-word",
@@ -379,8 +554,14 @@
       "id": "syllable-Zeit",
       "word": "Zeit",
       "translation": "وقت / زمان",
-      "syllables": ["Zeit"],
-      "distractors": ["Zait", "Zoit", "Zeet"]
+      "syllables": [
+        "Zeit"
+      ],
+      "distractors": [
+        "Zait",
+        "Zoit",
+        "Zeet"
+      ]
     },
     {
       "type": "rapid-fire",
@@ -465,13 +646,21 @@
       "questions": [
         {
           "question": "الکس گرسنه است؟",
-          "options": ["Nein", "Ja, ein bisschen", "Ja, sehr"],
+          "options": [
+            "Nein",
+            "Ja, ein bisschen",
+            "Ja, sehr"
+          ],
           "correctIndex": 1,
           "explanation": "الکس گفت: «Ja, ein bisschen.»"
         },
         {
           "question": "لیزا چه می‌خواهد؟",
-          "options": ["Essen", "Einen Kaffee", "Wasser"],
+          "options": [
+            "Essen",
+            "Einen Kaffee",
+            "Wasser"
+          ],
           "correctIndex": 1,
           "explanation": "لیزا گفت: «Ja, gerne!» (به پیشنهاد قهوه)"
         }
@@ -497,8 +686,16 @@
       "id": "syllable-Hunger",
       "word": "Hunger",
       "translation": "گرسنگی",
-      "syllables": ["Hun", "ger"],
-      "distractors": ["Han", "gar", "Hin", "gur"]
+      "syllables": [
+        "Hun",
+        "ger"
+      ],
+      "distractors": [
+        "Han",
+        "gar",
+        "Hin",
+        "gur"
+      ]
     },
     {
       "type": "new-word",
@@ -519,8 +716,14 @@
       "id": "syllable-Durst",
       "word": "Durst",
       "translation": "تشنگی",
-      "syllables": ["Durst"],
-      "distractors": ["Darst", "Dorst", "Dirst"]
+      "syllables": [
+        "Durst"
+      ],
+      "distractors": [
+        "Darst",
+        "Dorst",
+        "Dirst"
+      ]
     },
     {
       "type": "grammar-tip",
@@ -662,8 +865,16 @@
       "id": "syllable-richtig",
       "word": "richtig",
       "translation": "درست",
-      "syllables": ["rich", "tig"],
-      "distractors": ["rach", "tag", "roch", "teg"]
+      "syllables": [
+        "rich",
+        "tig"
+      ],
+      "distractors": [
+        "rach",
+        "tag",
+        "roch",
+        "teg"
+      ]
     },
     {
       "type": "new-word",
@@ -684,8 +895,16 @@
       "id": "syllable-gerne",
       "word": "gerne",
       "translation": "با کمال میل",
-      "syllables": ["ger", "ne"],
-      "distractors": ["gar", "na", "gir", "no"]
+      "syllables": [
+        "ger",
+        "ne"
+      ],
+      "distractors": [
+        "gar",
+        "na",
+        "gir",
+        "no"
+      ]
     },
     {
       "type": "dictation",
@@ -702,8 +921,40 @@
       "difficulty": "A1"
     },
     {
+      "type": "memory-match",
+      "id": "g5",
+      "title": "بازی حافظه",
+      "pairs": [
+        {
+          "de": "Ja",
+          "fa": "بله"
+        },
+        {
+          "de": "Nein",
+          "fa": "نه"
+        },
+        {
+          "de": "verstehen",
+          "fa": "فهمیدن"
+        },
+        {
+          "de": "kennen",
+          "fa": "شناختن"
+        },
+        {
+          "de": "mögen",
+          "fa": "دوست داشتن"
+        },
+        {
+          "de": "müde",
+          "fa": "خسته"
+        }
+      ],
+      "timeLimit": 60
+    },
+    {
       "type": "vocab-check",
-      "id": "g4",
+      "id": "g6",
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [

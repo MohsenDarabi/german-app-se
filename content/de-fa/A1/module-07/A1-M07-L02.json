@@ -20,14 +20,94 @@
   "totalSteps": 36,
   "estimatedMinutes": 17,
   "vocabulary": [
-    { "de": "die Großmutter", "fa": "مادربزرگ", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Großmütter" } } },
-    { "de": "der Großvater", "fa": "پدربزرگ", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Großväter" } } },
-    { "de": "die Großeltern", "fa": "پدربزرگ و مادربزرگ", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Großeltern" } } },
-    { "de": "die Oma", "fa": "مامان‌بزرگ", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Omas" } } },
-    { "de": "der Opa", "fa": "بابابزرگ", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Opas" } } },
-    { "de": "das Enkelkind", "fa": "نوه", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Enkelkinder" } } },
-    { "de": "der Enkel", "fa": "نوه (پسر)", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Enkel" } } },
-    { "de": "die Enkelin", "fa": "نوه (دختر)", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Enkelinnen" } } }
+    {
+      "de": "die Großmutter",
+      "fa": "مادربزرگ",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "f",
+          "plural": "die Großmütter"
+        }
+      }
+    },
+    {
+      "de": "der Großvater",
+      "fa": "پدربزرگ",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Großväter"
+        }
+      }
+    },
+    {
+      "de": "die Großeltern",
+      "fa": "پدربزرگ و مادربزرگ",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "f",
+          "plural": "die Großeltern"
+        }
+      }
+    },
+    {
+      "de": "die Oma",
+      "fa": "مامان‌بزرگ",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "f",
+          "plural": "die Omas"
+        }
+      }
+    },
+    {
+      "de": "der Opa",
+      "fa": "بابابزرگ",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Opas"
+        }
+      }
+    },
+    {
+      "de": "das Enkelkind",
+      "fa": "نوه",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "n",
+          "plural": "die Enkelkinder"
+        }
+      }
+    },
+    {
+      "de": "der Enkel",
+      "fa": "نوه (پسر)",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Enkel"
+        }
+      }
+    },
+    {
+      "de": "die Enkelin",
+      "fa": "نوه (دختر)",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "f",
+          "plural": "die Enkelinnen"
+        }
+      }
+    }
   ],
   "steps": [
     {
@@ -65,8 +145,17 @@
       "id": "syllable-Grossmutter",
       "word": "Großmutter",
       "translation": "مادربزرگ",
-      "syllables": ["Groß", "mut", "ter"],
-      "distractors": ["Gras", "mat", "tar", "Gros"]
+      "syllables": [
+        "Groß",
+        "mut",
+        "ter"
+      ],
+      "distractors": [
+        "Gras",
+        "mat",
+        "tar",
+        "Gros"
+      ]
     },
     {
       "type": "new-word",
@@ -87,8 +176,17 @@
       "id": "syllable-Grossvater",
       "word": "Großvater",
       "translation": "پدربزرگ",
-      "syllables": ["Groß", "va", "ter"],
-      "distractors": ["Gras", "vo", "tar", "Gros"]
+      "syllables": [
+        "Groß",
+        "va",
+        "ter"
+      ],
+      "distractors": [
+        "Gras",
+        "vo",
+        "tar",
+        "Gros"
+      ]
     },
     {
       "type": "new-word",
@@ -109,8 +207,17 @@
       "id": "syllable-Grosseltern",
       "word": "Großeltern",
       "translation": "پدربزرگ و مادربزرگ",
-      "syllables": ["Groß", "el", "tern"],
-      "distractors": ["Gras", "al", "tarn", "Gros"]
+      "syllables": [
+        "Groß",
+        "el",
+        "tern"
+      ],
+      "distractors": [
+        "Gras",
+        "al",
+        "tarn",
+        "Gros"
+      ]
     },
     {
       "type": "rapid-fire",
@@ -169,8 +276,16 @@
       "id": "syllable-Oma",
       "word": "Oma",
       "translation": "مامان‌بزرگ",
-      "syllables": ["O", "ma"],
-      "distractors": ["A", "mo", "U", "mu"]
+      "syllables": [
+        "O",
+        "ma"
+      ],
+      "distractors": [
+        "A",
+        "mo",
+        "U",
+        "mu"
+      ]
     },
     {
       "type": "new-word",
@@ -191,8 +306,16 @@
       "id": "syllable-Opa",
       "word": "Opa",
       "translation": "بابابزرگ",
-      "syllables": ["O", "pa"],
-      "distractors": ["A", "po", "U", "pe"]
+      "syllables": [
+        "O",
+        "pa"
+      ],
+      "distractors": [
+        "A",
+        "po",
+        "U",
+        "pe"
+      ]
     },
     {
       "type": "dialog",
@@ -240,13 +363,21 @@
       "questions": [
         {
           "question": "مامان‌بزرگ الی کجا زندگی می‌کند؟",
-          "options": ["شیراز", "تهران", "برلین"],
+          "options": [
+            "شیراز",
+            "تهران",
+            "برلین"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: Meine Oma wohnt in Teheran"
         },
         {
           "question": "پدربزرگ و مادربزرگ تام کجا زندگی می‌کنند؟",
-          "options": ["تهران", "شیراز", "برلین"],
+          "options": [
+            "تهران",
+            "شیراز",
+            "برلین"
+          ],
           "correctIndex": 2,
           "explanation": "تام گفت: Meine Großeltern wohnen hier in Berlin"
         }
@@ -287,8 +418,17 @@
       "id": "syllable-Enkelkind",
       "word": "Enkelkind",
       "translation": "نوه",
-      "syllables": ["En", "kel", "kind"],
-      "distractors": ["An", "kal", "kund", "On"]
+      "syllables": [
+        "En",
+        "kel",
+        "kind"
+      ],
+      "distractors": [
+        "An",
+        "kal",
+        "kund",
+        "On"
+      ]
     },
     {
       "type": "new-word",
@@ -309,8 +449,16 @@
       "id": "syllable-Enkel",
       "word": "Enkel",
       "translation": "نوه (پسر)",
-      "syllables": ["En", "kel"],
-      "distractors": ["An", "kal", "On", "kul"]
+      "syllables": [
+        "En",
+        "kel"
+      ],
+      "distractors": [
+        "An",
+        "kal",
+        "On",
+        "kul"
+      ]
     },
     {
       "type": "new-word",
@@ -331,8 +479,17 @@
       "id": "syllable-Enkelin",
       "word": "Enkelin",
       "translation": "نوه (دختر)",
-      "syllables": ["En", "ke", "lin"],
-      "distractors": ["An", "ko", "lun", "On"]
+      "syllables": [
+        "En",
+        "ke",
+        "lin"
+      ],
+      "distractors": [
+        "An",
+        "ko",
+        "lun",
+        "On"
+      ]
     },
     {
       "type": "rapid-fire",
@@ -383,7 +540,9 @@
         "Meinen",
         "Meiner"
       ],
-      "correctAnswers": [1],
+      "correctAnswers": [
+        1
+      ],
       "feedback": {
         "explanation": "**Meine** Großmutter = مادربزرگم (Großmutter مونث است)"
       },
@@ -403,7 +562,9 @@
         "Meinen",
         "Meiner"
       ],
-      "correctAnswers": [0],
+      "correctAnswers": [
+        0
+      ],
       "feedback": {
         "explanation": "**Mein** Opa = بابابزرگم (Opa مذکر است)"
       },
@@ -417,22 +578,58 @@
       "id": "s14",
       "instruction": "کلمات آلمانی را با فارسی جفت کنید",
       "items": [
-        { "id": "i1", "text": "Großmutter" },
-        { "id": "i2", "text": "Großvater" },
-        { "id": "i3", "text": "Oma" },
-        { "id": "i4", "text": "Opa" }
+        {
+          "id": "i1",
+          "text": "Großmutter"
+        },
+        {
+          "id": "i2",
+          "text": "Großvater"
+        },
+        {
+          "id": "i3",
+          "text": "Oma"
+        },
+        {
+          "id": "i4",
+          "text": "Opa"
+        }
       ],
       "matches": [
-        { "id": "m1", "text": "پدربزرگ" },
-        { "id": "m2", "text": "مادربزرگ" },
-        { "id": "m3", "text": "بابابزرگ" },
-        { "id": "m4", "text": "مامان‌بزرگ" }
+        {
+          "id": "m1",
+          "text": "پدربزرگ"
+        },
+        {
+          "id": "m2",
+          "text": "مادربزرگ"
+        },
+        {
+          "id": "m3",
+          "text": "بابابزرگ"
+        },
+        {
+          "id": "m4",
+          "text": "مامان‌بزرگ"
+        }
       ],
       "correctPairs": [
-        ["i1", "m2"],
-        ["i2", "m1"],
-        ["i3", "m4"],
-        ["i4", "m3"]
+        [
+          "i1",
+          "m2"
+        ],
+        [
+          "i2",
+          "m1"
+        ],
+        [
+          "i3",
+          "m4"
+        ],
+        [
+          "i4",
+          "m3"
+        ]
       ]
     },
     {
@@ -502,13 +699,21 @@
       "questions": [
         {
           "question": "خانم مولر چند نوه دارد؟",
-          "options": ["دو تا", "سه تا", "چهار تا"],
+          "options": [
+            "دو تا",
+            "سه تا",
+            "چهار تا"
+          ],
           "correctIndex": 1,
           "explanation": "دو نوه پسر (Max و Tim) و یک نوه دختر (Lisa) = سه تا"
         },
         {
           "question": "نوه دختر خانم مولر چند ساله است؟",
-          "options": ["سه ساله", "پنج ساله", "هشت ساله"],
+          "options": [
+            "سه ساله",
+            "پنج ساله",
+            "هشت ساله"
+          ],
           "correctIndex": 0,
           "explanation": "خانم مولر گفت: die Enkelin Lisa ist drei (لیزا سه ساله است)"
         }
@@ -567,19 +772,75 @@
       "difficulty": "A1"
     },
     {
+      "type": "memory-match",
+      "id": "g5",
+      "title": "بازی حافظه",
+      "pairs": [
+        {
+          "de": "Großmutter",
+          "fa": "مادربزرگ"
+        },
+        {
+          "de": "Großvater",
+          "fa": "پدربزرگ"
+        },
+        {
+          "de": "Großeltern",
+          "fa": "پدربزرگ و مادربزرگ"
+        },
+        {
+          "de": "Oma",
+          "fa": "مامان‌بزرگ"
+        },
+        {
+          "de": "Opa",
+          "fa": "بابابزرگ"
+        },
+        {
+          "de": "Enkelkind",
+          "fa": "نوه"
+        }
+      ],
+      "timeLimit": 60
+    },
+    {
       "type": "vocab-check",
-      "id": "g4",
+      "id": "g6",
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [
-        { "de": "die Großmutter", "fa": "مادربزرگ" },
-        { "de": "der Großvater", "fa": "پدربزرگ" },
-        { "de": "die Großeltern", "fa": "پدربزرگ و مادربزرگ" },
-        { "de": "die Oma", "fa": "مامان‌بزرگ" },
-        { "de": "der Opa", "fa": "بابابزرگ" },
-        { "de": "das Enkelkind", "fa": "نوه" },
-        { "de": "der Enkel", "fa": "نوه (پسر)" },
-        { "de": "die Enkelin", "fa": "نوه (دختر)" }
+        {
+          "de": "die Großmutter",
+          "fa": "مادربزرگ"
+        },
+        {
+          "de": "der Großvater",
+          "fa": "پدربزرگ"
+        },
+        {
+          "de": "die Großeltern",
+          "fa": "پدربزرگ و مادربزرگ"
+        },
+        {
+          "de": "die Oma",
+          "fa": "مامان‌بزرگ"
+        },
+        {
+          "de": "der Opa",
+          "fa": "بابابزرگ"
+        },
+        {
+          "de": "das Enkelkind",
+          "fa": "نوه"
+        },
+        {
+          "de": "der Enkel",
+          "fa": "نوه (پسر)"
+        },
+        {
+          "de": "die Enkelin",
+          "fa": "نوه (دختر)"
+        }
       ]
     },
     {
@@ -590,14 +851,54 @@
       "xpEarned": 50,
       "nextLessonId": "A1-M07-L03",
       "vocabularyLearned": [
-        { "word": { "de": "die Großmutter", "fa": "مادربزرگ" } },
-        { "word": { "de": "der Großvater", "fa": "پدربزرگ" } },
-        { "word": { "de": "die Großeltern", "fa": "پدربزرگ و مادربزرگ" } },
-        { "word": { "de": "die Oma", "fa": "مامان‌بزرگ" } },
-        { "word": { "de": "der Opa", "fa": "بابابزرگ" } },
-        { "word": { "de": "das Enkelkind", "fa": "نوه" } },
-        { "word": { "de": "der Enkel", "fa": "نوه (پسر)" } },
-        { "word": { "de": "die Enkelin", "fa": "نوه (دختر)" } }
+        {
+          "word": {
+            "de": "die Großmutter",
+            "fa": "مادربزرگ"
+          }
+        },
+        {
+          "word": {
+            "de": "der Großvater",
+            "fa": "پدربزرگ"
+          }
+        },
+        {
+          "word": {
+            "de": "die Großeltern",
+            "fa": "پدربزرگ و مادربزرگ"
+          }
+        },
+        {
+          "word": {
+            "de": "die Oma",
+            "fa": "مامان‌بزرگ"
+          }
+        },
+        {
+          "word": {
+            "de": "der Opa",
+            "fa": "بابابزرگ"
+          }
+        },
+        {
+          "word": {
+            "de": "das Enkelkind",
+            "fa": "نوه"
+          }
+        },
+        {
+          "word": {
+            "de": "der Enkel",
+            "fa": "نوه (پسر)"
+          }
+        },
+        {
+          "word": {
+            "de": "die Enkelin",
+            "fa": "نوه (دختر)"
+          }
+        }
       ]
     }
   ]

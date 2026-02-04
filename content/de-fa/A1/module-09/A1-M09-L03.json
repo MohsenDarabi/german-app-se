@@ -20,16 +20,76 @@
   "totalSteps": 42,
   "estimatedMinutes": 20,
   "vocabulary": [
-    { "de": "groß", "fa": "بزرگ", "grammar": { "pos": "adjective" } },
-    { "de": "klein", "fa": "کوچک", "grammar": { "pos": "adjective" } },
-    { "de": "hell", "fa": "روشن", "grammar": { "pos": "adjective" } },
-    { "de": "dunkel", "fa": "تاریک", "grammar": { "pos": "adjective" } },
-    { "de": "gemütlich", "fa": "راحت/دنج", "grammar": { "pos": "adjective" } },
-    { "de": "modern", "fa": "مدرن", "grammar": { "pos": "adjective" } },
-    { "de": "alt", "fa": "قدیمی", "grammar": { "pos": "adjective" } },
-    { "de": "neu", "fa": "نو/جدید", "grammar": { "pos": "adjective" } },
-    { "de": "neben", "fa": "کنار", "grammar": { "pos": "preposition" } },
-    { "de": "zwischen", "fa": "بین", "grammar": { "pos": "preposition" } }
+    {
+      "de": "groß",
+      "fa": "بزرگ",
+      "grammar": {
+        "pos": "adjective"
+      }
+    },
+    {
+      "de": "klein",
+      "fa": "کوچک",
+      "grammar": {
+        "pos": "adjective"
+      }
+    },
+    {
+      "de": "hell",
+      "fa": "روشن",
+      "grammar": {
+        "pos": "adjective"
+      }
+    },
+    {
+      "de": "dunkel",
+      "fa": "تاریک",
+      "grammar": {
+        "pos": "adjective"
+      }
+    },
+    {
+      "de": "gemütlich",
+      "fa": "راحت/دنج",
+      "grammar": {
+        "pos": "adjective"
+      }
+    },
+    {
+      "de": "modern",
+      "fa": "مدرن",
+      "grammar": {
+        "pos": "adjective"
+      }
+    },
+    {
+      "de": "alt",
+      "fa": "قدیمی",
+      "grammar": {
+        "pos": "adjective"
+      }
+    },
+    {
+      "de": "neu",
+      "fa": "نو/جدید",
+      "grammar": {
+        "pos": "adjective"
+      }
+    },
+    {
+      "de": "neben",
+      "fa": "کنار",
+      "grammar": {
+        "pos": "preposition"
+      }
+    },
+    {
+      "de": "zwischen",
+      "fa": "بین",
+      "grammar": {
+        "pos": "preposition"
+      }
+    }
   ],
   "steps": [
     {
@@ -67,8 +127,15 @@
       "id": "syllable-gross",
       "word": "groß",
       "translation": "بزرگ",
-      "syllables": ["groß"],
-      "distractors": ["gros", "gruss", "grass", "gries"]
+      "syllables": [
+        "groß"
+      ],
+      "distractors": [
+        "gros",
+        "gruss",
+        "grass",
+        "gries"
+      ]
     },
     {
       "type": "new-word",
@@ -89,8 +156,15 @@
       "id": "syllable-klein",
       "word": "klein",
       "translation": "کوچک",
-      "syllables": ["klein"],
-      "distractors": ["klain", "klien", "kloin", "kleen"]
+      "syllables": [
+        "klein"
+      ],
+      "distractors": [
+        "klain",
+        "klien",
+        "kloin",
+        "kleen"
+      ]
     },
     {
       "type": "new-word",
@@ -111,8 +185,15 @@
       "id": "syllable-hell",
       "word": "hell",
       "translation": "روشن",
-      "syllables": ["hell"],
-      "distractors": ["hall", "hill", "holl", "hull"]
+      "syllables": [
+        "hell"
+      ],
+      "distractors": [
+        "hall",
+        "hill",
+        "holl",
+        "hull"
+      ]
     },
     {
       "type": "new-word",
@@ -133,8 +214,16 @@
       "id": "syllable-dunkel",
       "word": "dunkel",
       "translation": "تاریک",
-      "syllables": ["dun", "kel"],
-      "distractors": ["dan", "kal", "don", "kul"]
+      "syllables": [
+        "dun",
+        "kel"
+      ],
+      "distractors": [
+        "dan",
+        "kal",
+        "don",
+        "kul"
+      ]
     },
     {
       "type": "rapid-fire",
@@ -193,8 +282,17 @@
       "id": "syllable-gemuetlich",
       "word": "gemütlich",
       "translation": "راحت/دنج",
-      "syllables": ["ge", "müt", "lich"],
-      "distractors": ["ga", "mat", "lach", "go"]
+      "syllables": [
+        "ge",
+        "müt",
+        "lich"
+      ],
+      "distractors": [
+        "ga",
+        "mat",
+        "lach",
+        "go"
+      ]
     },
     {
       "type": "new-word",
@@ -215,8 +313,16 @@
       "id": "syllable-modern",
       "word": "modern",
       "translation": "مدرن",
-      "syllables": ["mo", "dern"],
-      "distractors": ["ma", "darn", "mu", "dirn"]
+      "syllables": [
+        "mo",
+        "dern"
+      ],
+      "distractors": [
+        "ma",
+        "darn",
+        "mu",
+        "dirn"
+      ]
     },
     {
       "type": "new-word",
@@ -237,8 +343,15 @@
       "id": "syllable-alt",
       "word": "alt",
       "translation": "قدیمی",
-      "syllables": ["alt"],
-      "distractors": ["olt", "elt", "ult", "ilt"]
+      "syllables": [
+        "alt"
+      ],
+      "distractors": [
+        "olt",
+        "elt",
+        "ult",
+        "ilt"
+      ]
     },
     {
       "type": "new-word",
@@ -259,8 +372,15 @@
       "id": "syllable-neu",
       "word": "neu",
       "translation": "نو/جدید",
-      "syllables": ["neu"],
-      "distractors": ["nau", "noi", "nuu", "nei"]
+      "syllables": [
+        "neu"
+      ],
+      "distractors": [
+        "nau",
+        "noi",
+        "nuu",
+        "nei"
+      ]
     },
     {
       "type": "dialog",
@@ -316,13 +436,21 @@
       "questions": [
         {
           "question": "آپارتمان الی چه ویژگی‌هایی دارد؟",
-          "options": ["بزرگ و تاریک", "کوچک و مدرن", "روشن و دنج"],
+          "options": [
+            "بزرگ و تاریک",
+            "کوچک و مدرن",
+            "روشن و دنج"
+          ],
           "correctIndex": 2,
           "explanation": "الی گفت: hell und gemütlich (روشن و دنج)"
         },
         {
           "question": "ساختمان چطور است؟",
-          "options": ["جدید", "قدیمی", "مدرن"],
+          "options": [
+            "جدید",
+            "قدیمی",
+            "مدرن"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: Das Haus ist alt (ساختمان قدیمی است)"
         }
@@ -401,8 +529,16 @@
       "id": "syllable-neben",
       "word": "neben",
       "translation": "کنار",
-      "syllables": ["ne", "ben"],
-      "distractors": ["na", "ban", "no", "bun"]
+      "syllables": [
+        "ne",
+        "ben"
+      ],
+      "distractors": [
+        "na",
+        "ban",
+        "no",
+        "bun"
+      ]
     },
     {
       "type": "new-word",
@@ -423,8 +559,16 @@
       "id": "syllable-zwischen",
       "word": "zwischen",
       "translation": "بین",
-      "syllables": ["zwi", "schen"],
-      "distractors": ["zwa", "schan", "zwo", "schun"]
+      "syllables": [
+        "zwi",
+        "schen"
+      ],
+      "distractors": [
+        "zwa",
+        "schan",
+        "zwo",
+        "schun"
+      ]
     },
     {
       "type": "fill-in-blank",
@@ -437,7 +581,9 @@
         "unter",
         "neben"
       ],
-      "correctAnswers": [0],
+      "correctAnswers": [
+        0
+      ],
       "feedback": {
         "explanation": "**An der Wand** = روی دیوار (عکس به دیوار وصل است)"
       },
@@ -457,7 +603,9 @@
         "an",
         "zwischen"
       ],
-      "correctAnswers": [1],
+      "correctAnswers": [
+        1
+      ],
       "feedback": {
         "explanation": "**Auf dem Sofa** = روی کاناپه"
       },
@@ -477,7 +625,9 @@
         "neben",
         "in"
       ],
-      "correctAnswers": [2],
+      "correctAnswers": [
+        2
+      ],
       "feedback": {
         "explanation": "**Neben dem Tisch** = کنار میز"
       },
@@ -547,13 +697,21 @@
       "questions": [
         {
           "question": "کلید کجا بود؟",
-          "options": ["روی میز", "کنار تلویزیون", "زیر کاناپه"],
+          "options": [
+            "روی میز",
+            "کنار تلویزیون",
+            "زیر کاناپه"
+          ],
           "correctIndex": 2,
           "explanation": "الی گفت: Unter dem Sofa (زیر کاناپه)"
         },
         {
           "question": "الی فکر می‌کند چه کسی کلید را آنجا برده؟",
-          "options": ["تام", "گربه", "خودش"],
+          "options": [
+            "تام",
+            "گربه",
+            "خودش"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: Vielleicht die Katze (شاید گربه)"
         }
@@ -564,22 +722,58 @@
       "id": "s18",
       "instruction": "حروف اضافه را با معنی جفت کنید",
       "items": [
-        { "id": "i1", "text": "auf" },
-        { "id": "i2", "text": "unter" },
-        { "id": "i3", "text": "neben" },
-        { "id": "i4", "text": "zwischen" }
+        {
+          "id": "i1",
+          "text": "auf"
+        },
+        {
+          "id": "i2",
+          "text": "unter"
+        },
+        {
+          "id": "i3",
+          "text": "neben"
+        },
+        {
+          "id": "i4",
+          "text": "zwischen"
+        }
       ],
       "matches": [
-        { "id": "m1", "text": "زیر" },
-        { "id": "m2", "text": "روی" },
-        { "id": "m3", "text": "بین" },
-        { "id": "m4", "text": "کنار" }
+        {
+          "id": "m1",
+          "text": "زیر"
+        },
+        {
+          "id": "m2",
+          "text": "روی"
+        },
+        {
+          "id": "m3",
+          "text": "بین"
+        },
+        {
+          "id": "m4",
+          "text": "کنار"
+        }
       ],
       "correctPairs": [
-        ["i1", "m2"],
-        ["i2", "m1"],
-        ["i3", "m4"],
-        ["i4", "m3"]
+        [
+          "i1",
+          "m2"
+        ],
+        [
+          "i2",
+          "m1"
+        ],
+        [
+          "i3",
+          "m4"
+        ],
+        [
+          "i4",
+          "m3"
+        ]
       ]
     },
     {
@@ -655,21 +849,83 @@
       "difficulty": "A1"
     },
     {
+      "type": "memory-match",
+      "id": "g5",
+      "title": "بازی حافظه",
+      "pairs": [
+        {
+          "de": "groß",
+          "fa": "بزرگ"
+        },
+        {
+          "de": "klein",
+          "fa": "کوچک"
+        },
+        {
+          "de": "hell",
+          "fa": "روشن"
+        },
+        {
+          "de": "dunkel",
+          "fa": "تاریک"
+        },
+        {
+          "de": "gemütlich",
+          "fa": "دنج/راحت"
+        },
+        {
+          "de": "modern",
+          "fa": "مدرن"
+        }
+      ],
+      "timeLimit": 60
+    },
+    {
       "type": "vocab-check",
-      "id": "g4",
+      "id": "g6",
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [
-        { "de": "groß", "fa": "بزرگ" },
-        { "de": "klein", "fa": "کوچک" },
-        { "de": "hell", "fa": "روشن" },
-        { "de": "dunkel", "fa": "تاریک" },
-        { "de": "gemütlich", "fa": "دنج/راحت" },
-        { "de": "modern", "fa": "مدرن" },
-        { "de": "alt", "fa": "قدیمی" },
-        { "de": "neu", "fa": "نو/جدید" },
-        { "de": "neben", "fa": "کنار" },
-        { "de": "zwischen", "fa": "بین" }
+        {
+          "de": "groß",
+          "fa": "بزرگ"
+        },
+        {
+          "de": "klein",
+          "fa": "کوچک"
+        },
+        {
+          "de": "hell",
+          "fa": "روشن"
+        },
+        {
+          "de": "dunkel",
+          "fa": "تاریک"
+        },
+        {
+          "de": "gemütlich",
+          "fa": "دنج/راحت"
+        },
+        {
+          "de": "modern",
+          "fa": "مدرن"
+        },
+        {
+          "de": "alt",
+          "fa": "قدیمی"
+        },
+        {
+          "de": "neu",
+          "fa": "نو/جدید"
+        },
+        {
+          "de": "neben",
+          "fa": "کنار"
+        },
+        {
+          "de": "zwischen",
+          "fa": "بین"
+        }
       ]
     },
     {
@@ -680,16 +936,66 @@
       "xpEarned": 50,
       "nextLessonId": "A1-M09-L04",
       "vocabularyLearned": [
-        { "word": { "de": "groß", "fa": "بزرگ" } },
-        { "word": { "de": "klein", "fa": "کوچک" } },
-        { "word": { "de": "hell", "fa": "روشن" } },
-        { "word": { "de": "dunkel", "fa": "تاریک" } },
-        { "word": { "de": "gemütlich", "fa": "دنج/راحت" } },
-        { "word": { "de": "modern", "fa": "مدرن" } },
-        { "word": { "de": "alt", "fa": "قدیمی" } },
-        { "word": { "de": "neu", "fa": "نو/جدید" } },
-        { "word": { "de": "neben", "fa": "کنار" } },
-        { "word": { "de": "zwischen", "fa": "بین" } }
+        {
+          "word": {
+            "de": "groß",
+            "fa": "بزرگ"
+          }
+        },
+        {
+          "word": {
+            "de": "klein",
+            "fa": "کوچک"
+          }
+        },
+        {
+          "word": {
+            "de": "hell",
+            "fa": "روشن"
+          }
+        },
+        {
+          "word": {
+            "de": "dunkel",
+            "fa": "تاریک"
+          }
+        },
+        {
+          "word": {
+            "de": "gemütlich",
+            "fa": "دنج/راحت"
+          }
+        },
+        {
+          "word": {
+            "de": "modern",
+            "fa": "مدرن"
+          }
+        },
+        {
+          "word": {
+            "de": "alt",
+            "fa": "قدیمی"
+          }
+        },
+        {
+          "word": {
+            "de": "neu",
+            "fa": "نو/جدید"
+          }
+        },
+        {
+          "word": {
+            "de": "neben",
+            "fa": "کنار"
+          }
+        },
+        {
+          "word": {
+            "de": "zwischen",
+            "fa": "بین"
+          }
+        }
       ]
     }
   ]

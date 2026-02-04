@@ -27,7 +27,14 @@
         "pos": "verb",
         "verb": {
           "infinitiv": "essen",
-          "praesens": { "ich": "esse", "du": "isst", "er_sie_es": "isst", "wir": "essen", "ihr": "esst", "sie_Sie": "essen" }
+          "praesens": {
+            "ich": "esse",
+            "du": "isst",
+            "er_sie_es": "isst",
+            "wir": "essen",
+            "ihr": "esst",
+            "sie_Sie": "essen"
+          }
         }
       }
     },
@@ -38,7 +45,14 @@
         "pos": "verb",
         "verb": {
           "infinitiv": "lesen",
-          "praesens": { "ich": "lese", "du": "liest", "er_sie_es": "liest", "wir": "lesen", "ihr": "lest", "sie_Sie": "lesen" }
+          "praesens": {
+            "ich": "lese",
+            "du": "liest",
+            "er_sie_es": "liest",
+            "wir": "lesen",
+            "ihr": "lest",
+            "sie_Sie": "lesen"
+          }
         }
       }
     },
@@ -49,7 +63,14 @@
         "pos": "verb",
         "verb": {
           "infinitiv": "schlafen",
-          "praesens": { "ich": "schlafe", "du": "schläfst", "er_sie_es": "schläft", "wir": "schlafen", "ihr": "schlaft", "sie_Sie": "schlafen" }
+          "praesens": {
+            "ich": "schlafe",
+            "du": "schläfst",
+            "er_sie_es": "schläft",
+            "wir": "schlafen",
+            "ihr": "schlaft",
+            "sie_Sie": "schlafen"
+          }
         }
       }
     },
@@ -60,7 +81,14 @@
         "pos": "verb",
         "verb": {
           "infinitiv": "fahren",
-          "praesens": { "ich": "fahre", "du": "fährst", "er_sie_es": "fährt", "wir": "fahren", "ihr": "fahrt", "sie_Sie": "fahren" }
+          "praesens": {
+            "ich": "fahre",
+            "du": "fährst",
+            "er_sie_es": "fährt",
+            "wir": "fahren",
+            "ihr": "fahrt",
+            "sie_Sie": "fahren"
+          }
         }
       }
     }
@@ -101,8 +129,15 @@
       "id": "syllable-essen",
       "word": "essen",
       "translation": "خوردن",
-      "syllables": ["es", "sen"],
-      "distractors": ["is", "san", "as"],
+      "syllables": [
+        "es",
+        "sen"
+      ],
+      "distractors": [
+        "is",
+        "san",
+        "as"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «essen» یک فعل با تغییر ریشه است: ich esse، du isst"
@@ -127,8 +162,16 @@
       "id": "syllable-ich-esse",
       "word": "ich esse",
       "translation": "من می‌خورم",
-      "syllables": ["ich", "es", "se"],
-      "distractors": ["du", "is", "sa"],
+      "syllables": [
+        "ich",
+        "es",
+        "se"
+      ],
+      "distractors": [
+        "du",
+        "is",
+        "sa"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «ich esse» - با ich ریشه تغییر نمی‌کند."
@@ -153,8 +196,15 @@
       "id": "syllable-du-isst",
       "word": "du isst",
       "translation": "تو می‌خوری",
-      "syllables": ["du", "isst"],
-      "distractors": ["ich", "esst", "esse"],
+      "syllables": [
+        "du",
+        "isst"
+      ],
+      "distractors": [
+        "ich",
+        "esst",
+        "esse"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «du isst» - توجه کنید: e تغییر به i کرده!"
@@ -179,8 +229,15 @@
       "id": "syllable-er-isst",
       "word": "er isst",
       "translation": "او می‌خورد",
-      "syllables": ["er", "isst"],
-      "distractors": ["sie", "esst", "esse"],
+      "syllables": [
+        "er",
+        "isst"
+      ],
+      "distractors": [
+        "sie",
+        "esst",
+        "esse"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «er isst» - هم du و هم er/sie/es تغییر ریشه دارند."
@@ -255,8 +312,15 @@
       "id": "syllable-lesen",
       "word": "lesen",
       "translation": "خواندن",
-      "syllables": ["le", "sen"],
-      "distractors": ["li", "san", "sa"],
+      "syllables": [
+        "le",
+        "sen"
+      ],
+      "distractors": [
+        "li",
+        "san",
+        "sa"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «lesen» تغییر ریشه e→ie دارد: du liest"
@@ -281,8 +345,15 @@
       "id": "syllable-du-liest",
       "word": "du liest",
       "translation": "تو می‌خوانی",
-      "syllables": ["du", "liest"],
-      "distractors": ["ich", "lest", "lese"],
+      "syllables": [
+        "du",
+        "liest"
+      ],
+      "distractors": [
+        "ich",
+        "lest",
+        "lese"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «du liest» - توجه: e تغییر به ie کرده!"
@@ -307,8 +378,15 @@
       "id": "syllable-er-liest",
       "word": "er liest",
       "translation": "او می‌خواند",
-      "syllables": ["er", "liest"],
-      "distractors": ["sie", "lest", "lese"],
+      "syllables": [
+        "er",
+        "liest"
+      ],
+      "distractors": [
+        "sie",
+        "lest",
+        "lese"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «er liest» - در er/sie/es هم تغییر ریشه داریم."
@@ -333,8 +411,15 @@
       "id": "syllable-1",
       "word": "schlafen",
       "translation": "خوابیدن",
-      "syllables": ["schla", "fen"],
-      "distractors": ["schlä", "fan", "scha"],
+      "syllables": [
+        "schla",
+        "fen"
+      ],
+      "distractors": [
+        "schlä",
+        "fan",
+        "scha"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «schlafen» یک فعل با تغییر ریشه است: du schläfst، er schläft"
@@ -359,8 +444,15 @@
       "id": "syllable-du-schlaefst",
       "word": "du schläfst",
       "translation": "تو می‌خوابی",
-      "syllables": ["du", "schläfst"],
-      "distractors": ["ich", "schlafst", "schlafe"],
+      "syllables": [
+        "du",
+        "schläfst"
+      ],
+      "distractors": [
+        "ich",
+        "schlafst",
+        "schlafe"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «du schläfst» - توجه: a تغییر به ä کرده!"
@@ -385,8 +477,15 @@
       "id": "syllable-er-schlaeft",
       "word": "er schläft",
       "translation": "او می‌خوابد",
-      "syllables": ["er", "schläft"],
-      "distractors": ["sie", "schlaft", "schlafe"],
+      "syllables": [
+        "er",
+        "schläft"
+      ],
+      "distractors": [
+        "sie",
+        "schlaft",
+        "schlafe"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «er schläft» - در er/sie/es هم a→ä می‌شود."
@@ -427,8 +526,15 @@
       "id": "syllable-2",
       "word": "fahren",
       "translation": "رفتن (با وسیله)",
-      "syllables": ["fah", "ren"],
-      "distractors": ["fäh", "ran", "far"],
+      "syllables": [
+        "fah",
+        "ren"
+      ],
+      "distractors": [
+        "fäh",
+        "ran",
+        "far"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «fahren» هم تغییر ریشه دارد: du fährst، er fährt"
@@ -453,8 +559,15 @@
       "id": "syllable-du-faehrst",
       "word": "du fährst",
       "translation": "تو می‌روی",
-      "syllables": ["du", "fährst"],
-      "distractors": ["ich", "fahrst", "fahre"],
+      "syllables": [
+        "du",
+        "fährst"
+      ],
+      "distractors": [
+        "ich",
+        "fahrst",
+        "fahre"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «du fährst» - توجه: a تغییر به ä کرده!"
@@ -479,8 +592,15 @@
       "id": "syllable-er-faehrt",
       "word": "er fährt",
       "translation": "او می‌رود",
-      "syllables": ["er", "fährt"],
-      "distractors": ["sie", "fahrt", "fahre"],
+      "syllables": [
+        "er",
+        "fährt"
+      ],
+      "distractors": [
+        "sie",
+        "fahrt",
+        "fahre"
+      ],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «er fährt» - در er/sie/es هم a→ä می‌شود."
@@ -600,21 +720,33 @@
       "questions": [
         {
           "question": "تام صبحانه چه می‌خورد؟",
-          "options": ["موسلی", "نان با پنیر", "پیتزا"],
+          "options": [
+            "موسلی",
+            "نان با پنیر",
+            "پیتزا"
+          ],
           "correctIndex": 1,
           "explanation": "تام گفت: «Ich esse Brot mit Käse» یعنی نان با پنیر می‌خورم.",
           "relatedLineIndex": 1
         },
         {
           "question": "تام چطور می‌رود سر کار؟",
-          "options": ["با ماشین", "با دوچرخه", "با اتوبوس"],
+          "options": [
+            "با ماشین",
+            "با دوچرخه",
+            "با اتوبوس"
+          ],
           "correctIndex": 1,
           "explanation": "تام گفت: «Ich fahre mit dem Fahrrad» یعنی با دوچرخه می‌روم.",
           "relatedLineIndex": 5
         },
         {
           "question": "تام صبح‌ها چه کار می‌کند؟",
-          "options": ["روزنامه می‌خواند", "زیاد می‌خوابد", "ورزش می‌کند"],
+          "options": [
+            "روزنامه می‌خواند",
+            "زیاد می‌خوابد",
+            "ورزش می‌کند"
+          ],
           "correctIndex": 1,
           "explanation": "تام گفت: «Morgens schlafe ich lange» یعنی صبح‌ها زیاد می‌خوابم.",
           "relatedLineIndex": 3
@@ -774,8 +906,40 @@
       }
     },
     {
+      "type": "memory-match",
+      "id": "g4",
+      "title": "بازی حافظه",
+      "pairs": [
+        {
+          "de": "essen",
+          "fa": "خوردن"
+        },
+        {
+          "de": "ich esse",
+          "fa": "من می‌خورم"
+        },
+        {
+          "de": "du isst",
+          "fa": "تو می‌خوری"
+        },
+        {
+          "de": "lesen",
+          "fa": "خواندن"
+        },
+        {
+          "de": "du liest",
+          "fa": "تو می‌خوانی"
+        },
+        {
+          "de": "schlafen",
+          "fa": "خوابیدن"
+        }
+      ],
+      "timeLimit": 60
+    },
+    {
       "type": "vocab-check",
-      "id": "g3",
+      "id": "g5",
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [

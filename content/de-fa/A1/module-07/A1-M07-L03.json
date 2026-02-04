@@ -20,15 +20,105 @@
   "totalSteps": 38,
   "estimatedMinutes": 18,
   "vocabulary": [
-    { "de": "die Verwandten", "fa": "خویشاوندان/فامیل", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Verwandten" } } },
-    { "de": "der Onkel", "fa": "عمو/دایی", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Onkel" } } },
-    { "de": "die Tante", "fa": "عمه/خاله", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Tanten" } } },
-    { "de": "der Cousin", "fa": "پسرعمو/پسرخاله", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Cousins" } } },
-    { "de": "die Cousine", "fa": "دخترعمو/دخترخاله", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Cousinen" } } },
-    { "de": "der Neffe", "fa": "برادرزاده/خواهرزاده (پسر)", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Neffen" } } },
-    { "de": "die Nichte", "fa": "برادرزاده/خواهرزاده (دختر)", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Nichten" } } },
-    { "de": "der Schwager", "fa": "شوهرخواهر/برادرشوهر", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Schwäger" } } },
-    { "de": "die Schwägerin", "fa": "زن‌برادر/خواهرشوهر", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Schwägerinnen" } } }
+    {
+      "de": "die Verwandten",
+      "fa": "خویشاوندان/فامیل",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "f",
+          "plural": "die Verwandten"
+        }
+      }
+    },
+    {
+      "de": "der Onkel",
+      "fa": "عمو/دایی",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Onkel"
+        }
+      }
+    },
+    {
+      "de": "die Tante",
+      "fa": "عمه/خاله",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "f",
+          "plural": "die Tanten"
+        }
+      }
+    },
+    {
+      "de": "der Cousin",
+      "fa": "پسرعمو/پسرخاله",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Cousins"
+        }
+      }
+    },
+    {
+      "de": "die Cousine",
+      "fa": "دخترعمو/دخترخاله",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "f",
+          "plural": "die Cousinen"
+        }
+      }
+    },
+    {
+      "de": "der Neffe",
+      "fa": "برادرزاده/خواهرزاده (پسر)",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Neffen"
+        }
+      }
+    },
+    {
+      "de": "die Nichte",
+      "fa": "برادرزاده/خواهرزاده (دختر)",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "f",
+          "plural": "die Nichten"
+        }
+      }
+    },
+    {
+      "de": "der Schwager",
+      "fa": "شوهرخواهر/برادرشوهر",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "m",
+          "plural": "die Schwäger"
+        }
+      }
+    },
+    {
+      "de": "die Schwägerin",
+      "fa": "زن‌برادر/خواهرشوهر",
+      "grammar": {
+        "pos": "noun",
+        "noun": {
+          "artikel": "f",
+          "plural": "die Schwägerinnen"
+        }
+      }
+    }
   ],
   "steps": [
     {
@@ -66,8 +156,17 @@
       "id": "syllable-Verwandten",
       "word": "Verwandten",
       "translation": "خویشاوندان",
-      "syllables": ["Ver", "wand", "ten"],
-      "distractors": ["Vor", "wund", "tan", "Var"]
+      "syllables": [
+        "Ver",
+        "wand",
+        "ten"
+      ],
+      "distractors": [
+        "Vor",
+        "wund",
+        "tan",
+        "Var"
+      ]
     },
     {
       "type": "new-word",
@@ -88,8 +187,16 @@
       "id": "syllable-Onkel",
       "word": "Onkel",
       "translation": "عمو/دایی",
-      "syllables": ["On", "kel"],
-      "distractors": ["An", "kal", "Un", "kol"]
+      "syllables": [
+        "On",
+        "kel"
+      ],
+      "distractors": [
+        "An",
+        "kal",
+        "Un",
+        "kol"
+      ]
     },
     {
       "type": "new-word",
@@ -110,8 +217,16 @@
       "id": "syllable-Tante",
       "word": "Tante",
       "translation": "عمه/خاله",
-      "syllables": ["Tan", "te"],
-      "distractors": ["Ten", "ta", "Ton", "tu"]
+      "syllables": [
+        "Tan",
+        "te"
+      ],
+      "distractors": [
+        "Ten",
+        "ta",
+        "Ton",
+        "tu"
+      ]
     },
     {
       "type": "rapid-fire",
@@ -170,8 +285,16 @@
       "id": "syllable-Cousin",
       "word": "Cousin",
       "translation": "پسرعمو",
-      "syllables": ["Cou", "sin"],
-      "distractors": ["Ca", "san", "Cu", "sun"]
+      "syllables": [
+        "Cou",
+        "sin"
+      ],
+      "distractors": [
+        "Ca",
+        "san",
+        "Cu",
+        "sun"
+      ]
     },
     {
       "type": "new-word",
@@ -192,8 +315,17 @@
       "id": "syllable-Cousine",
       "word": "Cousine",
       "translation": "دخترعمو",
-      "syllables": ["Cou", "si", "ne"],
-      "distractors": ["Ca", "so", "na", "Cu"]
+      "syllables": [
+        "Cou",
+        "si",
+        "ne"
+      ],
+      "distractors": [
+        "Ca",
+        "so",
+        "na",
+        "Cu"
+      ]
     },
     {
       "type": "dialog",
@@ -241,13 +373,21 @@
       "questions": [
         {
           "question": "الی چند عمو/دایی دارد؟",
-          "options": ["دو تا", "سه تا", "چهار تا"],
+          "options": [
+            "دو تا",
+            "سه تا",
+            "چهار تا"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: ich habe drei Onkel (سه عمو/دایی)"
         },
         {
           "question": "تام چند عمو دارد؟",
-          "options": ["یکی", "دو تا", "سه تا"],
+          "options": [
+            "یکی",
+            "دو تا",
+            "سه تا"
+          ],
           "correctIndex": 0,
           "explanation": "تام گفت: Ich habe nur einen Onkel (فقط یک عمو)"
         }
@@ -288,8 +428,16 @@
       "id": "syllable-Neffe",
       "word": "Neffe",
       "translation": "برادرزاده (پسر)",
-      "syllables": ["Nef", "fe"],
-      "distractors": ["Naf", "fa", "Nof", "fu"]
+      "syllables": [
+        "Nef",
+        "fe"
+      ],
+      "distractors": [
+        "Naf",
+        "fa",
+        "Nof",
+        "fu"
+      ]
     },
     {
       "type": "new-word",
@@ -310,8 +458,16 @@
       "id": "syllable-Nichte",
       "word": "Nichte",
       "translation": "خواهرزاده (دختر)",
-      "syllables": ["Nich", "te"],
-      "distractors": ["Nach", "ta", "Noch", "tu"]
+      "syllables": [
+        "Nich",
+        "te"
+      ],
+      "distractors": [
+        "Nach",
+        "ta",
+        "Noch",
+        "tu"
+      ]
     },
     {
       "type": "rapid-fire",
@@ -370,8 +526,16 @@
       "id": "syllable-Schwager",
       "word": "Schwager",
       "translation": "شوهرخواهر",
-      "syllables": ["Schwa", "ger"],
-      "distractors": ["Schwo", "gar", "Schwu", "gur"]
+      "syllables": [
+        "Schwa",
+        "ger"
+      ],
+      "distractors": [
+        "Schwo",
+        "gar",
+        "Schwu",
+        "gur"
+      ]
     },
     {
       "type": "new-word",
@@ -392,8 +556,17 @@
       "id": "syllable-Schwaegerin",
       "word": "Schwägerin",
       "translation": "زن‌برادر",
-      "syllables": ["Schwä", "ge", "rin"],
-      "distractors": ["Schwa", "ga", "ran", "Schwo"]
+      "syllables": [
+        "Schwä",
+        "ge",
+        "rin"
+      ],
+      "distractors": [
+        "Schwa",
+        "ga",
+        "ran",
+        "Schwo"
+      ]
     },
     {
       "type": "fill-in-blank",
@@ -406,7 +579,9 @@
         "Meinen",
         "Meiner"
       ],
-      "correctAnswers": [0],
+      "correctAnswers": [
+        0
+      ],
       "feedback": {
         "explanation": "**Mein** Onkel = عمویم (Onkel مذکر است)"
       },
@@ -426,7 +601,9 @@
         "Meinen",
         "Meiner"
       ],
-      "correctAnswers": [1],
+      "correctAnswers": [
+        1
+      ],
       "feedback": {
         "explanation": "**Meine** Tante = خاله‌ام (Tante مونث است)"
       },
@@ -440,22 +617,58 @@
       "id": "s15",
       "instruction": "کلمات آلمانی را با فارسی جفت کنید",
       "items": [
-        { "id": "i1", "text": "Onkel" },
-        { "id": "i2", "text": "Tante" },
-        { "id": "i3", "text": "Cousin" },
-        { "id": "i4", "text": "Nichte" }
+        {
+          "id": "i1",
+          "text": "Onkel"
+        },
+        {
+          "id": "i2",
+          "text": "Tante"
+        },
+        {
+          "id": "i3",
+          "text": "Cousin"
+        },
+        {
+          "id": "i4",
+          "text": "Nichte"
+        }
       ],
       "matches": [
-        { "id": "m1", "text": "عمه/خاله" },
-        { "id": "m2", "text": "عمو/دایی" },
-        { "id": "m3", "text": "خواهرزاده دختر" },
-        { "id": "m4", "text": "پسرعمو" }
+        {
+          "id": "m1",
+          "text": "عمه/خاله"
+        },
+        {
+          "id": "m2",
+          "text": "عمو/دایی"
+        },
+        {
+          "id": "m3",
+          "text": "خواهرزاده دختر"
+        },
+        {
+          "id": "m4",
+          "text": "پسرعمو"
+        }
       ],
       "correctPairs": [
-        ["i1", "m2"],
-        ["i2", "m1"],
-        ["i3", "m4"],
-        ["i4", "m3"]
+        [
+          "i1",
+          "m2"
+        ],
+        [
+          "i2",
+          "m1"
+        ],
+        [
+          "i3",
+          "m4"
+        ],
+        [
+          "i4",
+          "m3"
+        ]
       ]
     },
     {
@@ -525,13 +738,21 @@
       "questions": [
         {
           "question": "چرا خانواده الی جمع می‌شوند؟",
-          "options": ["تولد", "مهمانی خانوادگی", "عید"],
+          "options": [
+            "تولد",
+            "مهمانی خانوادگی",
+            "عید"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: Wir haben eine Familienfeier (مهمانی خانوادگی)"
         },
         {
           "question": "شوهرخواهر الی با که می‌آید؟",
-          "options": ["مادر الی", "خواهر الی", "برادر الی"],
+          "options": [
+            "مادر الی",
+            "خواهر الی",
+            "برادر الی"
+          ],
           "correctIndex": 1,
           "explanation": "الی گفت: mein Schwager mit meiner Schwester (شوهرخواهرم با خواهرم)"
         }
@@ -590,20 +811,79 @@
       "difficulty": "A1"
     },
     {
+      "type": "memory-match",
+      "id": "g5",
+      "title": "بازی حافظه",
+      "pairs": [
+        {
+          "de": "Verwandten",
+          "fa": "خویشاوندان"
+        },
+        {
+          "de": "Onkel",
+          "fa": "عمو/دایی"
+        },
+        {
+          "de": "Tante",
+          "fa": "عمه/خاله"
+        },
+        {
+          "de": "Cousin",
+          "fa": "پسرعمو/پسرخاله"
+        },
+        {
+          "de": "Cousine",
+          "fa": "دخترعمو/دخترخاله"
+        },
+        {
+          "de": "Neffe",
+          "fa": "برادرزاده (پسر)"
+        }
+      ],
+      "timeLimit": 60
+    },
+    {
       "type": "vocab-check",
-      "id": "g4",
+      "id": "g6",
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [
-        { "de": "die Verwandten", "fa": "خویشاوندان" },
-        { "de": "der Onkel", "fa": "عمو/دایی" },
-        { "de": "die Tante", "fa": "عمه/خاله" },
-        { "de": "der Cousin", "fa": "پسرعمو/پسرخاله" },
-        { "de": "die Cousine", "fa": "دخترعمو/دخترخاله" },
-        { "de": "der Neffe", "fa": "برادرزاده (پسر)" },
-        { "de": "die Nichte", "fa": "خواهرزاده (دختر)" },
-        { "de": "der Schwager", "fa": "شوهرخواهر" },
-        { "de": "die Schwägerin", "fa": "زن‌برادر" }
+        {
+          "de": "die Verwandten",
+          "fa": "خویشاوندان"
+        },
+        {
+          "de": "der Onkel",
+          "fa": "عمو/دایی"
+        },
+        {
+          "de": "die Tante",
+          "fa": "عمه/خاله"
+        },
+        {
+          "de": "der Cousin",
+          "fa": "پسرعمو/پسرخاله"
+        },
+        {
+          "de": "die Cousine",
+          "fa": "دخترعمو/دخترخاله"
+        },
+        {
+          "de": "der Neffe",
+          "fa": "برادرزاده (پسر)"
+        },
+        {
+          "de": "die Nichte",
+          "fa": "خواهرزاده (دختر)"
+        },
+        {
+          "de": "der Schwager",
+          "fa": "شوهرخواهر"
+        },
+        {
+          "de": "die Schwägerin",
+          "fa": "زن‌برادر"
+        }
       ]
     },
     {
@@ -614,15 +894,60 @@
       "xpEarned": 50,
       "nextLessonId": "A1-M07-L04",
       "vocabularyLearned": [
-        { "word": { "de": "die Verwandten", "fa": "خویشاوندان" } },
-        { "word": { "de": "der Onkel", "fa": "عمو/دایی" } },
-        { "word": { "de": "die Tante", "fa": "عمه/خاله" } },
-        { "word": { "de": "der Cousin", "fa": "پسرعمو/پسرخاله" } },
-        { "word": { "de": "die Cousine", "fa": "دخترعمو/دخترخاله" } },
-        { "word": { "de": "der Neffe", "fa": "برادرزاده (پسر)" } },
-        { "word": { "de": "die Nichte", "fa": "خواهرزاده (دختر)" } },
-        { "word": { "de": "der Schwager", "fa": "شوهرخواهر" } },
-        { "word": { "de": "die Schwägerin", "fa": "زن‌برادر" } }
+        {
+          "word": {
+            "de": "die Verwandten",
+            "fa": "خویشاوندان"
+          }
+        },
+        {
+          "word": {
+            "de": "der Onkel",
+            "fa": "عمو/دایی"
+          }
+        },
+        {
+          "word": {
+            "de": "die Tante",
+            "fa": "عمه/خاله"
+          }
+        },
+        {
+          "word": {
+            "de": "der Cousin",
+            "fa": "پسرعمو/پسرخاله"
+          }
+        },
+        {
+          "word": {
+            "de": "die Cousine",
+            "fa": "دخترعمو/دخترخاله"
+          }
+        },
+        {
+          "word": {
+            "de": "der Neffe",
+            "fa": "برادرزاده (پسر)"
+          }
+        },
+        {
+          "word": {
+            "de": "die Nichte",
+            "fa": "خواهرزاده (دختر)"
+          }
+        },
+        {
+          "word": {
+            "de": "der Schwager",
+            "fa": "شوهرخواهر"
+          }
+        },
+        {
+          "word": {
+            "de": "die Schwägerin",
+            "fa": "زن‌برادر"
+          }
+        }
       ]
     }
   ]
