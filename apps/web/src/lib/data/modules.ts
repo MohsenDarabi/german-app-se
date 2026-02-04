@@ -427,6 +427,19 @@ const DE_FA_A1_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/A1/A1-M12-L04"
       }
     ]
+  },
+  {
+    id: "module-13",
+    title: "بخش ۱۳: فعل‌های وجهی (Modalverben)",
+    level: "A1",
+    lessons: [
+      {
+        id: "A1-M13-L01",
+        title: "می‌توانم! (können)",
+        description: "یاد بگیرید چطور بگویید چه کارهایی می‌توانید انجام دهید.",
+        path: "/learn/de-fa/A1/A1-M13-L01"
+      }
+    ]
   }
 ];
 
