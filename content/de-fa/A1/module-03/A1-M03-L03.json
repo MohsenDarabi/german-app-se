@@ -8,7 +8,7 @@
   "level": "A1",
   "module": 3,
   "lessonNumber": 3,
-  "totalSteps": 38,
+  "totalSteps": 40,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "nein", "fa": "نه", "grammar": { "pos": "adverb" } },
@@ -144,6 +144,18 @@
       "example": { "text": { "de": "Tut mir leid, das geht nicht.", "fa": "متأسفم، این نمی‌شود." } }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-tut-mir-leid",
+      "word": "Tut mir leid",
+      "translation": "متأسفم",
+      "syllables": ["Tut", "mir", "leid"],
+      "distractors": ["Tat", "mer", "laid"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «Tut mir leid» یک عبارت مهم برای عذرخواهی است."
+      }
+    },
+    {
       "type": "new-word",
       "id": "s10",
       "word": { "de": "Entschuldigung", "fa": "ببخشید" },
@@ -217,6 +229,18 @@
       "id": "s13",
       "word": { "de": "mit", "fa": "با" },
       "example": { "text": { "de": "Kaffee mit Milch, bitte.", "fa": "قهوه با شیر، لطفاً." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-mit",
+      "word": "mit",
+      "translation": "با",
+      "syllables": ["mit"],
+      "distractors": ["mat", "met", "mot"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «mit» یعنی «با» - مثلاً: Kaffee mit Milch"
+      }
     },
     {
       "type": "new-word",
