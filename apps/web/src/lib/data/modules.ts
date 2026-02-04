@@ -252,6 +252,12 @@ const DE_FA_A1_MODULES: ModuleStub[] = [
         title: "خانواده‌ام (Meine Familie)",
         description: "یاد بگیرید اعضای خانواده را به آلمانی بگویید: مادر، پدر، خواهر، برادر",
         path: "/learn/de-fa/A1/A1-M07-L01"
+      },
+      {
+        id: "A1-M07-L02",
+        title: "پدربزرگ و مادربزرگ (Großeltern)",
+        description: "یاد بگیرید کلمات پدربزرگ، مادربزرگ و نوه را به آلمانی بگویید.",
+        path: "/learn/de-fa/A1/A1-M07-L02"
       }
     ]
   }
