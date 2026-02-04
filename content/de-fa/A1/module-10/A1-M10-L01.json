@@ -323,8 +323,43 @@
       "feedback": { "explanation": "با er از tanzt استفاده می‌کنیم." }
     },
     {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Ich lese gern Bücher.",
+      "translation": "دوست دارم کتاب بخوانم.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Mein Hobby ist Kochen.",
+      "translation": "سرگرمی من آشپزی است.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-3",
+      "targetText": "Sie tanzt sehr gut.",
+      "translation": "او خیلی خوب می‌رقصد.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "memory-match",
+      "id": "g4",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "lesen", "fa": "خواندن" },
+        { "de": "kochen", "fa": "آشپزی کردن" },
+        { "de": "tanzen", "fa": "رقصیدن" },
+        { "de": "malen", "fa": "نقاشی کردن" },
+        { "de": "reisen", "fa": "سفر کردن" },
+        { "de": "Hobby", "fa": "سرگرمی" }
+      ],
+      "timeLimit": 60
+    },
+    {
       "type": "vocab-check",
-      "id": "g3",
+      "id": "g5",
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [

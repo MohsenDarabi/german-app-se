@@ -311,8 +311,43 @@
       ]
     },
     {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Ich spiele gern Fußball.",
+      "translation": "دوست دارم فوتبال بازی کنم.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Wir gehen schwimmen.",
+      "translation": "ما می‌رویم شنا.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-3",
+      "targetText": "Er läuft jeden Tag.",
+      "translation": "او هر روز می‌دود.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "memory-match",
+      "id": "g4",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "Fußball", "fa": "فوتبال" },
+        { "de": "Tennis", "fa": "تنیس" },
+        { "de": "schwimmen", "fa": "شنا کردن" },
+        { "de": "laufen", "fa": "دویدن" },
+        { "de": "Yoga", "fa": "یوگا" },
+        { "de": "Sport", "fa": "ورزش" }
+      ],
+      "timeLimit": 60
+    },
+    {
       "type": "vocab-check",
-      "id": "g3",
+      "id": "g5",
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [
