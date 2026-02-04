@@ -1,0 +1,626 @@
+{
+  "id": "A1-M07-L01",
+  "languagePair": "de-fa",
+  "source": {
+    "code": "de",
+    "name": "Deutsch"
+  },
+  "target": {
+    "code": "fa",
+    "name": "فارسی"
+  },
+  "title": {
+    "de": "Meine Familie",
+    "fa": "خانواده‌ام"
+  },
+  "description": "یاد بگیرید اعضای خانواده را به آلمانی بگویید",
+  "level": "A1",
+  "module": 7,
+  "lessonNumber": 1,
+  "totalSteps": 38,
+  "estimatedMinutes": 18,
+  "vocabulary": [
+    { "de": "die Familie", "fa": "خانواده", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Familien" } } },
+    { "de": "die Mutter", "fa": "مادر", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Mütter" } } },
+    { "de": "der Vater", "fa": "پدر", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Väter" } } },
+    { "de": "die Eltern", "fa": "والدین", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Eltern" } } },
+    { "de": "der Bruder", "fa": "برادر", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Brüder" } } },
+    { "de": "die Schwester", "fa": "خواهر", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Schwestern" } } },
+    { "de": "das Kind", "fa": "بچه/فرزند", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Kinder" } } },
+    { "de": "der Sohn", "fa": "پسر (فرزند)", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Söhne" } } },
+    { "de": "die Tochter", "fa": "دختر (فرزند)", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Töchter" } } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "خانواده در آلمانی",
+      "content": "در این درس با اعضای خانواده آشنا می‌شویم:\n\n**والدین:**\n• die Mutter = مادر\n• der Vater = پدر\n• die Eltern = والدین\n\n**فرزندان:**\n• der Sohn = پسر\n• die Tochter = دختر\n• das Kind = بچه\n\n📝 **توجه:** جنسیت کلمات را با حرف تعریف حفظ کنید!",
+      "examples": [
+        {
+          "de": "Das ist meine Familie.",
+          "fa": "این خانواده‌ام است."
+        },
+        {
+          "de": "Meine Mutter heißt Sara.",
+          "fa": "مادرم اسمش سارا است."
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": {
+        "de": "die Familie",
+        "fa": "خانواده"
+      },
+      "example": {
+        "text": {
+          "de": "Meine Familie ist groß.",
+          "fa": "خانواده‌ام بزرگ است."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Familie",
+      "word": "Familie",
+      "translation": "خانواده",
+      "syllables": ["Fa", "mi", "li", "e"],
+      "distractors": ["Fo", "mo", "lo", "o"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": {
+        "de": "die Mutter",
+        "fa": "مادر"
+      },
+      "example": {
+        "text": {
+          "de": "Meine Mutter kocht gut.",
+          "fa": "مادرم خوب آشپزی می‌کند."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Mutter",
+      "word": "Mutter",
+      "translation": "مادر",
+      "syllables": ["Mut", "ter"],
+      "distractors": ["Mat", "tar", "Mot", "tur"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": {
+        "de": "der Vater",
+        "fa": "پدر"
+      },
+      "example": {
+        "text": {
+          "de": "Mein Vater arbeitet viel.",
+          "fa": "پدرم زیاد کار می‌کند."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Vater",
+      "word": "Vater",
+      "translation": "پدر",
+      "syllables": ["Va", "ter"],
+      "distractors": ["Ve", "tar", "Vo", "tur"]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": {
+        "de": "die Eltern",
+        "fa": "والدین"
+      },
+      "example": {
+        "text": {
+          "de": "Meine Eltern wohnen in Berlin.",
+          "fa": "والدینم در برلین زندگی می‌کنند."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Eltern",
+      "word": "Eltern",
+      "translation": "والدین",
+      "syllables": ["El", "tern"],
+      "distractors": ["Al", "tarn", "Ol", "turn"]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "والدین",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        {
+          "prompt": "Mutter",
+          "left": "مادر",
+          "right": "پدر",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Vater",
+          "left": "مادر",
+          "right": "پدر",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Eltern",
+          "left": "والدین",
+          "right": "فرزندان",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Familie",
+          "left": "خانه",
+          "right": "خانواده",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "پدر =",
+          "left": "Vater",
+          "right": "Mutter",
+          "correctSide": "left"
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": {
+        "de": "der Bruder",
+        "fa": "برادر"
+      },
+      "example": {
+        "text": {
+          "de": "Mein Bruder ist zwanzig Jahre alt.",
+          "fa": "برادرم بیست ساله است."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Bruder",
+      "word": "Bruder",
+      "translation": "برادر",
+      "syllables": ["Bru", "der"],
+      "distractors": ["Bra", "dar", "Bro", "dur"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": {
+        "de": "die Schwester",
+        "fa": "خواهر"
+      },
+      "example": {
+        "text": {
+          "de": "Meine Schwester studiert Medizin.",
+          "fa": "خواهرم پزشکی می‌خواند."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Schwester",
+      "word": "Schwester",
+      "translation": "خواهر",
+      "syllables": ["Schwes", "ter"],
+      "distractors": ["Schwas", "tar", "Schwos", "tur"]
+    },
+    {
+      "type": "dialog",
+      "id": "s8",
+      "title": "مکالمه: خانواده",
+      "context": "الی و تام درباره خانواده صحبت می‌کنند",
+      "lines": [
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Eli, hast du Geschwister?",
+            "fa": "الی، خواهر برادر داری؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Ja, ich habe einen Bruder und eine Schwester.",
+            "fa": "بله، یک برادر و یک خواهر دارم."
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Oh, schön! Und deine Eltern?",
+            "fa": "اوه، چه خوب! و والدینت؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Meine Eltern wohnen in Teheran.",
+            "fa": "والدینم در تهران زندگی می‌کنند."
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Meine Familie ist klein. Ich habe keine Geschwister.",
+            "fa": "خانواده‌ام کوچک است. خواهر برادر ندارم."
+          }
+        }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        {
+          "question": "الی چند خواهر برادر دارد؟",
+          "options": ["یکی", "دو تا", "هیچی"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: یک برادر و یک خواهر دارم (دو تا)"
+        },
+        {
+          "question": "والدین الی کجا زندگی می‌کنند؟",
+          "options": ["برلین", "تهران", "مونیخ"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: Meine Eltern wohnen in Teheran"
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": {
+        "de": "das Kind",
+        "fa": "بچه/فرزند"
+      },
+      "example": {
+        "text": {
+          "de": "Das Kind spielt im Garten.",
+          "fa": "بچه در باغ بازی می‌کند."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Kind",
+      "word": "Kind",
+      "translation": "بچه",
+      "syllables": ["Kind"],
+      "distractors": ["Kund", "Kand", "Kend", "Kond"]
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": {
+        "de": "der Sohn",
+        "fa": "پسر (فرزند)"
+      },
+      "example": {
+        "text": {
+          "de": "Mein Sohn ist fünf Jahre alt.",
+          "fa": "پسرم پنج ساله است."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Sohn",
+      "word": "Sohn",
+      "translation": "پسر (فرزند)",
+      "syllables": ["Sohn"],
+      "distractors": ["Suhn", "Sahn", "Sehn", "Sonn"]
+    },
+    {
+      "type": "new-word",
+      "id": "s11",
+      "word": {
+        "de": "die Tochter",
+        "fa": "دختر (فرزند)"
+      },
+      "example": {
+        "text": {
+          "de": "Meine Tochter geht zur Schule.",
+          "fa": "دخترم به مدرسه می‌رود."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Tochter",
+      "word": "Tochter",
+      "translation": "دختر (فرزند)",
+      "syllables": ["Toch", "ter"],
+      "distractors": ["Tach", "tar", "Tech", "tur"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s12",
+      "title": "mein و meine",
+      "content": "برای گفتن «...م» از **mein/meine** استفاده می‌کنیم:\n\n🔵 **mein** + مذکر/خنثی:\n• mein Vater = پدرم\n• mein Kind = بچه‌ام\n\n🔴 **meine** + مونث/جمع:\n• meine Mutter = مادرم\n• meine Eltern = والدینم\n\n📝 **قاعده:** mein برای der/das، meine برای die",
+      "examples": [
+        {
+          "de": "Mein Bruder wohnt in Berlin.",
+          "fa": "برادرم در برلین زندگی می‌کند."
+        },
+        {
+          "de": "Meine Schwester ist Ärztin.",
+          "fa": "خواهرم پزشک است."
+        }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s13",
+      "instruction": "جای خالی را با mein یا meine پر کنید",
+      "sentence": "{0} Vater arbeitet bei BMW.",
+      "options": [
+        "Mein",
+        "Meine",
+        "Meinen",
+        "Meiner"
+      ],
+      "correctAnswers": [0],
+      "feedback": {
+        "explanation": "**Mein** Vater = پدرم (Vater مذکر است)"
+      },
+      "feedbackTip": {
+        "category": "wrong-article",
+        "tip": "برای اسم‌های مذکر (der) و خنثی (das) از **mein** استفاده کنید. Vater مذکر است (der Vater)."
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s14",
+      "instruction": "جای خالی را با mein یا meine پر کنید",
+      "sentence": "{0} Mutter kocht sehr gut.",
+      "options": [
+        "Mein",
+        "Meine",
+        "Meinen",
+        "Meiner"
+      ],
+      "correctAnswers": [1],
+      "feedback": {
+        "explanation": "**Meine** Mutter = مادرم (Mutter مونث است)"
+      },
+      "feedbackTip": {
+        "category": "wrong-article",
+        "tip": "برای اسم‌های مونث (die) از **meine** استفاده کنید. Mutter مونث است (die Mutter)."
+      }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "فرزندان",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        {
+          "prompt": "Sohn",
+          "left": "پسر",
+          "right": "دختر",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Tochter",
+          "left": "پسر",
+          "right": "دختر",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Kind",
+          "left": "بچه",
+          "right": "بزرگ",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Bruder",
+          "left": "خواهر",
+          "right": "برادر",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Schwester",
+          "left": "خواهر",
+          "right": "برادر",
+          "correctSide": "left"
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "s15",
+      "instruction": "کلمات آلمانی را با فارسی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Mutter" },
+        { "id": "i2", "text": "Vater" },
+        { "id": "i3", "text": "Schwester" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "پدر" },
+        { "id": "m2", "text": "مادر" },
+        { "id": "m3", "text": "خواهر" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m1"],
+        ["i3", "m3"]
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s16",
+      "question": "کدام جمله درست است؟",
+      "options": [
+        "Mein Mutter ist Ärztin.",
+        "Meine Mutter ist Ärztin.",
+        "Meinen Mutter ist Ärztin.",
+        "Meiner Mutter ist Ärztin."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": {
+        "correct": "آفرین! Mutter مونث است، پس meine درست است.",
+        "incorrect": "Mutter مونث است (die Mutter)، پس باید meine باشد."
+      },
+      "feedbackTip": {
+        "category": "wrong-article",
+        "tip": "برای اسم‌های مونث (die) از **meine** استفاده کنید: die Mutter → meine Mutter"
+      }
+    },
+    {
+      "type": "dialog",
+      "id": "s17",
+      "title": "مکالمه: عکس خانوادگی",
+      "context": "الی عکس خانواده‌اش را به تام نشان می‌دهد",
+      "lines": [
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Schau mal, das ist meine Familie!",
+            "fa": "ببین، این خانواده‌ام است!"
+          },
+          "mood": "happy"
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Oh, wer ist das?",
+            "fa": "اوه، این کیست؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Das ist mein Vater und das ist meine Mutter.",
+            "fa": "این پدرم است و این مادرم است."
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Und die Kinder?",
+            "fa": "و بچه‌ها؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Das sind mein Bruder Ali und meine Schwester Mina.",
+            "fa": "این برادرم علی و این خواهرم مینا است."
+          }
+        }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        {
+          "question": "اسم برادر الی چیست؟",
+          "options": ["تام", "علی", "مینا"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: mein Bruder Ali (برادرم علی)"
+        },
+        {
+          "question": "اسم خواهر الی چیست؟",
+          "options": ["سارا", "علی", "مینا"],
+          "correctIndex": 2,
+          "explanation": "الی گفت: meine Schwester Mina (خواهرم مینا)"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g3",
+      "title": "مرور کلی",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        {
+          "prompt": "Familie",
+          "left": "خانواده",
+          "right": "خانه",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Eltern",
+          "left": "فرزندان",
+          "right": "والدین",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "mein Bruder",
+          "left": "برادرم",
+          "right": "خواهرم",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "meine Schwester",
+          "left": "برادرم",
+          "right": "خواهرم",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "das Kind",
+          "left": "بچه",
+          "right": "بزرگسال",
+          "correctSide": "left"
+        }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Das ist meine Familie.",
+      "translation": "این خانواده‌ام است.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Mein Bruder heißt Ali.",
+      "translation": "برادرم اسمش علی است.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "die Familie", "fa": "خانواده" },
+        { "de": "die Mutter", "fa": "مادر" },
+        { "de": "der Vater", "fa": "پدر" },
+        { "de": "die Eltern", "fa": "والدین" },
+        { "de": "der Bruder", "fa": "برادر" },
+        { "de": "die Schwester", "fa": "خواهر" },
+        { "de": "das Kind", "fa": "بچه" },
+        { "de": "der Sohn", "fa": "پسر (فرزند)" },
+        { "de": "die Tochter", "fa": "دختر (فرزند)" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما اعضای خانواده را یاد گرفتید:\n\n👨‍👩‍👧‍👦 **خانواده:**\n• die Familie = خانواده\n• die Eltern = والدین\n\n👫 **والدین:**\n• die Mutter = مادر\n• der Vater = پدر\n\n👧👦 **فرزندان:**\n• der Sohn = پسر\n• die Tochter = دختر\n• das Kind = بچه\n\n👥 **خواهر برادر:**\n• der Bruder = برادر\n• die Schwester = خواهر\n\n📝 **نکته:** mein برای مذکر/خنثی، meine برای مونث/جمع",
+      "xpEarned": 50,
+      "nextLessonId": "A1-M07-L02",
+      "vocabularyLearned": [
+        { "word": { "de": "die Familie", "fa": "خانواده" } },
+        { "word": { "de": "die Mutter", "fa": "مادر" } },
+        { "word": { "de": "der Vater", "fa": "پدر" } },
+        { "word": { "de": "die Eltern", "fa": "والدین" } },
+        { "word": { "de": "der Bruder", "fa": "برادر" } },
+        { "word": { "de": "die Schwester", "fa": "خواهر" } },
+        { "word": { "de": "das Kind", "fa": "بچه" } },
+        { "word": { "de": "der Sohn", "fa": "پسر (فرزند)" } },
+        { "word": { "de": "die Tochter", "fa": "دختر (فرزند)" } }
+      ]
+    }
+  ]
+}

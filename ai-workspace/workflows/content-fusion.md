@@ -538,7 +538,33 @@ Designer workflow is documented in `workflows/multimedia-tasks.md`
 
 ---
 
-## Step 10: Test Locally
+## Step 10: Register New Modules (CRITICAL!)
+
+**If creating a NEW MODULE (not just a new lesson in an existing module), you MUST register it!**
+
+Edit `apps/web/src/lib/data/modules.ts` and add the new module to `DE_FA_A1_MODULES`:
+
+```typescript
+{
+  id: "module-07",
+  title: "بخش ۷: خانواده (Familie)",
+  level: "A1",
+  lessons: [
+    {
+      id: "A1-M07-L01",
+      title: "خانواده‌ام (Meine Familie)",
+      description: "یاد بگیرید اعضای خانواده را به آلمانی بگویید",
+      path: "/learn/de-fa/A1/A1-M07-L01"
+    }
+  ]
+}
+```
+
+**When adding a new lesson to an existing module**, add it to the `lessons` array of that module.
+
+---
+
+## Step 11: Test Locally
 
 **Dev mode automatically loads LOCAL content** (not CDN), so you can test immediately:
 
@@ -553,7 +579,7 @@ pnpm run dev
 
 ---
 
-## Step 11: Upload to Cloud (R2 CDN)
+## Step 12: Upload to Cloud (R2 CDN)
 
 **IMPORTANT**: After testing locally, upload content to cloud storage for production.
 
@@ -587,7 +613,7 @@ node scripts/upload-to-r2.js
 
 ---
 
-## Step 12: Update Progress & Commit
+## Step 13: Update Progress & Commit
 
 ```bash
 # 1. Update CURRENT_TASK.md (mark as completed)
@@ -647,6 +673,10 @@ git commit -m "feat: add lesson A1-M01-L02 with audio"
 - [ ] **All exercises have feedbackTip** with onCorrect/onWrong + errorCategory
 - [ ] **1-2 dictation steps** added
 - [ ] **Grammar-popup steps** for lessons L07+ (instead of/with grammar-tip)
+
+### Module Registration (CRITICAL!)
+- [ ] **If NEW MODULE**: Added to `apps/web/src/lib/data/modules.ts`
+- [ ] **If NEW LESSON**: Added to existing module's `lessons` array
 
 ### Validation
 - [ ] JSON syntax valid (`jq` check)

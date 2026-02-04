@@ -241,6 +241,19 @@ const DE_FA_A1_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/A1/A1-M06-L04"
       }
     ]
+  },
+  {
+    id: "module-07",
+    title: "بخش ۷: خانواده (Familie)",
+    level: "A1",
+    lessons: [
+      {
+        id: "A1-M07-L01",
+        title: "خانواده‌ام (Meine Familie)",
+        description: "یاد بگیرید اعضای خانواده را به آلمانی بگویید: مادر، پدر، خواهر، برادر",
+        path: "/learn/de-fa/A1/A1-M07-L01"
+      }
+    ]
   }
 ];
 
