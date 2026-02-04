@@ -407,6 +407,12 @@ const DE_FA_A1_MODULES: ModuleStub[] = [
         title: "فعل‌های جداشدنی (Trennbare Verben)",
         description: "یاد بگیرید چطور فعل‌های جداشدنی آلمانی کار می‌کنند.",
         path: "/learn/de-fa/A1/A1-M12-L01"
+      },
+      {
+        id: "A1-M12-L02",
+        title: "زندگی روزمره (Alltag)",
+        description: "یاد بگیرید فعل‌های جداشدنی روزمره مثل einkaufen و fernsehen.",
+        path: "/learn/de-fa/A1/A1-M12-L02"
       }
     ]
   }

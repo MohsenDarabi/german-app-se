@@ -1,0 +1,411 @@
+{
+  "id": "A1-M12-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Alltag mit trennbaren Verben", "fa": "زندگی روزمره با فعل‌های جداشدنی" },
+  "description": "یاد بگیرید فعل‌های جداشدنی روزمره مثل einkaufen و fernsehen",
+  "level": "A1",
+  "module": 12,
+  "lessonNumber": 2,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "einkaufen", "fa": "خرید کردن", "grammar": { "pos": "verb" } },
+    { "de": "fernsehen", "fa": "تلویزیون تماشا کردن", "grammar": { "pos": "verb" } },
+    { "de": "anrufen", "fa": "زنگ زدن", "grammar": { "pos": "verb" } },
+    { "de": "aufräumen", "fa": "مرتب کردن", "grammar": { "pos": "verb" } },
+    { "de": "zumachen", "fa": "بستن", "grammar": { "pos": "verb" } },
+    { "de": "aufmachen", "fa": "باز کردن", "grammar": { "pos": "verb" } },
+    { "de": "anfangen", "fa": "شروع کردن", "grammar": { "pos": "verb" } },
+    { "de": "aufhören", "fa": "تمام کردن", "grammar": { "pos": "verb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "فعل‌های جداشدنی روزمره",
+      "content": "در این درس فعل‌های جداشدنی پرکاربرد روزانه را یاد می‌گیرید:\n\n🛒 **einkaufen** = خرید کردن\n📺 **fernsehen** = تلویزیون دیدن\n📞 **anrufen** = زنگ زدن\n🧹 **aufräumen** = مرتب کردن\n🚪 **zumachen** = بستن\n🚪 **aufmachen** = باز کردن\n\n⚠️ یادآوری: پیشوند به آخر جمله می‌رود!",
+      "examples": [
+        { "de": "Ich kaufe im Supermarkt ein.", "fa": "در سوپرمارکت خرید می‌کنم." },
+        { "de": "Abends sehe ich fern.", "fa": "شب‌ها تلویزیون می‌بینم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "einkaufen", "fa": "خرید کردن" },
+      "example": { "text": { "de": "Ich kaufe heute ein.", "fa": "امروز خرید می‌کنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-einkaufen",
+      "word": "einkaufen",
+      "translation": "خرید کردن",
+      "syllables": ["ein", "kau", "fen"],
+      "distractors": ["ain", "kou", "fan", "kon"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s3",
+      "title": "einkaufen - خرید کردن",
+      "content": "🛒 **einkaufen** = خرید کردن\n\n| ضمیر | صرف |\n|------|------|\n| ich | kaufe ... ein |\n| du | kaufst ... ein |\n| er/sie | kauft ... ein |\n| wir | kaufen ... ein |\n\n📍 معمولاً با مکان می‌آید:\n• Ich kaufe **im Supermarkt** ein.\n• Wo kaufst du **ein**?",
+      "examples": [
+        { "de": "Wir kaufen samstags ein.", "fa": "شنبه‌ها خرید می‌کنیم." },
+        { "de": "Kaufst du heute ein?", "fa": "امروز خرید می‌کنی؟" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich {0} im Supermarkt ein.",
+      "options": ["kaufe", "kaufen", "kauft", "einkaufe"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "einkaufen جداشدنی است: ich kaufe ... ein" }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "fernsehen", "fa": "تلویزیون تماشا کردن" },
+      "example": { "text": { "de": "Abends sehe ich fern.", "fa": "شب‌ها تلویزیون می‌بینم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-fernsehen",
+      "word": "fernsehen",
+      "translation": "تلویزیون دیدن",
+      "syllables": ["fern", "se", "hen"],
+      "distractors": ["farn", "sa", "han", "hun"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "fernsehen - تلویزیون دیدن",
+      "content": "📺 **fernsehen** = تلویزیون دیدن\n\n⚠️ **sehen** یک فعل بی‌قاعده است:\n• ich **sehe** ... fern\n• du **siehst** ... fern (با ie!)\n• er/sie **sieht** ... fern\n\n📝 مثال:\n• Was **siehst** du gern im Fernsehen?\n• Ich **sehe** abends fern.",
+      "examples": [
+        { "de": "Er sieht jeden Abend fern.", "fa": "هر شب تلویزیون می‌بیند." },
+        { "de": "Siehst du gern fern?", "fa": "دوست داری تلویزیون ببینی؟" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله درست است؟",
+      "options": ["Du fernsiehst gern.", "Du siehst gern fern.", "Du sehst gern fern.", "Du siehst fern gern."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! du siehst (با ie) و fern به آخر می‌رود.", "incorrect": "sehen بی‌قاعده است: du siehst. و پیشوند fern به آخر می‌رود." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "anrufen", "fa": "زنگ زدن" },
+      "example": { "text": { "de": "Ich rufe dich morgen an.", "fa": "فردا بهت زنگ می‌زنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-anrufen",
+      "word": "anrufen",
+      "translation": "زنگ زدن",
+      "syllables": ["an", "ru", "fen"],
+      "distractors": ["un", "ra", "fon", "ron"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "anrufen + Akkusativ",
+      "content": "📞 **anrufen** = زنگ زدن (به کسی)\n\n⚠️ با حالت مفعولی (Akkusativ) می‌آید:\n• Ich rufe **dich** an. (نه dir!)\n• Ich rufe **ihn/sie** an.\n• Ich rufe **meine Mutter** an.\n\n📝 مثال:\n• Wen rufst du an? = به چه کسی زنگ می‌زنی؟",
+      "examples": [
+        { "de": "Rufst du mich später an?", "fa": "بعداً بهم زنگ می‌زنی؟" },
+        { "de": "Er ruft seine Freundin an.", "fa": "به دوست‌دخترش زنگ می‌زند." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich rufe {0} morgen an.",
+      "options": ["dich", "dir", "du", "dein"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "anrufen با Akkusativ می‌آید: ich rufe dich an" }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "aufräumen", "fa": "مرتب کردن" },
+      "example": { "text": { "de": "Ich räume mein Zimmer auf.", "fa": "اتاقم را مرتب می‌کنم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "zumachen", "fa": "بستن" },
+      "example": { "text": { "de": "Mach bitte die Tür zu!", "fa": "لطفاً در را ببند!" } }
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": { "de": "aufmachen", "fa": "باز کردن" },
+      "example": { "text": { "de": "Mach bitte das Fenster auf!", "fa": "لطفاً پنجره را باز کن!" } }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "فعل‌های جداشدنی",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "einkaufen", "left": "خرید کردن", "right": "فروختن", "correctSide": "left" },
+        { "prompt": "fernsehen", "left": "رادیو گوش دادن", "right": "تلویزیون دیدن", "correctSide": "right" },
+        { "prompt": "anrufen", "left": "زنگ زدن", "right": "پیام دادن", "correctSide": "left" },
+        { "prompt": "aufräumen", "left": "به هم ریختن", "right": "مرتب کردن", "correctSide": "right" },
+        { "prompt": "zumachen", "left": "بستن", "right": "باز کردن", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "بعد از کار",
+      "context": "الی و تام درباره برنامه بعدازظهر صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Tom", "text": { "de": "Was machst du heute Nachmittag?", "fa": "امروز بعدازظهر چه کار می‌کنی؟" } },
+        { "speaker": "Eli", "text": { "de": "Zuerst räume ich meine Wohnung auf.", "fa": "اول آپارتمانم را مرتب می‌کنم." } },
+        { "speaker": "Tom", "text": { "de": "Und dann?", "fa": "و بعد؟" } },
+        { "speaker": "Eli", "text": { "de": "Dann kaufe ich im Supermarkt ein.", "fa": "بعد در سوپرمارکت خرید می‌کنم." } },
+        { "speaker": "Tom", "text": { "de": "Und abends?", "fa": "و شب؟" } },
+        { "speaker": "Eli", "text": { "de": "Abends sehe ich fern. Rufst du mich später an?", "fa": "شب تلویزیون می‌بینم. بعداً بهم زنگ می‌زنی؟" } },
+        { "speaker": "Tom", "text": { "de": "Ja, ich rufe dich um 8 Uhr an!", "fa": "بله، ساعت ۸ بهت زنگ می‌زنم!" } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "الی اول چه کار می‌کند؟", "options": ["خرید می‌کند", "مرتب می‌کند", "تلویزیون می‌بیند"], "correctIndex": 1 },
+        { "question": "تام کی زنگ می‌زند؟", "options": ["ساعت ۶", "ساعت ۷", "ساعت ۸"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s11",
+      "word": { "de": "anfangen", "fa": "شروع کردن" },
+      "example": { "text": { "de": "Der Film fängt um 8 Uhr an.", "fa": "فیلم ساعت ۸ شروع می‌شود." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s12",
+      "title": "anfangen - فعل بی‌قاعده",
+      "content": "▶️ **anfangen** = شروع کردن\n\n⚠️ **fangen** بی‌قاعده است (a → ä):\n• ich **fange** ... an\n• du **fängst** ... an\n• er/sie **fängt** ... an\n\n📝 مثال:\n• Wann **fängt** die Schule **an**?\n• Ich **fange** um 9 Uhr **an**.",
+      "examples": [
+        { "de": "Wann fängt der Kurs an?", "fa": "کلاس کی شروع می‌شود؟" },
+        { "de": "Ich fange morgen an.", "fa": "فردا شروع می‌کنم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s13",
+      "word": { "de": "aufhören", "fa": "تمام کردن" },
+      "example": { "text": { "de": "Wann hörst du mit der Arbeit auf?", "fa": "کی کارت تمام می‌شود؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-aufhoeren",
+      "word": "aufhören",
+      "translation": "تمام کردن",
+      "syllables": ["auf", "hö", "ren"],
+      "distractors": ["auf", "ho", "ran", "hun"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Der Film {0} um 10 Uhr an.",
+      "options": ["fängt", "fangt", "fangen", "anfängt"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "anfangen بی‌قاعده: er/sie fängt ... an" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "«Mach die Tür zu!» یعنی چه؟",
+      "options": ["در را باز کن!", "در را ببند!", "از در برو!", "در را بزن!"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "zumachen = بستن" }
+    },
+    {
+      "type": "word-order",
+      "id": "w1",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["kaufe", "Ich", "ein.", "im Supermarkt"],
+      "correctOrder": [1, 0, 3, 2],
+      "correctSentence": { "de": "Ich kaufe im Supermarkt ein.", "fa": "در سوپرمارکت خرید می‌کنم." }
+    },
+    {
+      "type": "word-order",
+      "id": "w2",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["sehe", "Abends", "fern.", "ich"],
+      "correctOrder": [1, 0, 3, 2],
+      "correctSentence": { "de": "Abends sehe ich fern.", "fa": "شب‌ها تلویزیون می‌بینم." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "فعل‌ها را با ترجمه جفت کنید",
+      "items": [
+        { "id": "i1", "text": "einkaufen" },
+        { "id": "i2", "text": "anrufen" },
+        { "id": "i3", "text": "aufmachen" },
+        { "id": "i4", "text": "zumachen" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "بستن" },
+        { "id": "m2", "text": "خرید کردن" },
+        { "id": "m3", "text": "باز کردن" },
+        { "id": "m4", "text": "زنگ زدن" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m4"],
+        ["i3", "m3"],
+        ["i4", "m1"]
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در خانه",
+      "context": "الی به خانه می‌آید",
+      "lines": [
+        { "speaker": "Tom", "text": { "de": "Mach bitte die Tür zu! Es ist kalt.", "fa": "لطفاً در را ببند! هوا سرد است." } },
+        { "speaker": "Eli", "text": { "de": "Okay! Aber mach das Fenster auf. Ich brauche frische Luft.", "fa": "باشه! ولی پنجره را باز کن. هوای تازه لازم دارم." } },
+        { "speaker": "Tom", "text": { "de": "Was hast du heute gemacht?", "fa": "امروز چه کار کردی؟" } },
+        { "speaker": "Eli", "text": { "de": "Ich habe eingekauft und mein Zimmer aufgeräumt.", "fa": "خرید کردم و اتاقم را مرتب کردم." } },
+        { "speaker": "Tom", "text": { "de": "Super! Der Film fängt gleich an.", "fa": "عالی! فیلم الان شروع می‌شود." } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "چرا تام می‌خواهد در بسته شود؟", "options": ["هوا گرم است", "هوا سرد است", "صدا می‌آید"], "correctIndex": 1 },
+        { "question": "الی امروز چه کار کرده؟", "options": ["خرید و مرتب کردن", "تلویزیون دیدن", "زنگ زدن"], "correctIndex": 0 }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Wann {0} du mit der Arbeit auf?",
+      "options": ["hörst", "hört", "hören", "aufhörst"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "aufhören: du hörst ... auf" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er {0} jeden Abend fern.",
+      "options": ["sieht", "siehst", "sehen", "seht"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "fernsehen بی‌قاعده: er sieht ... fern" }
+    },
+    {
+      "type": "word-order",
+      "id": "w3",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["auf!", "Mach", "das Fenster", "bitte"],
+      "correctOrder": [1, 3, 2, 0],
+      "correctSentence": { "de": "Mach bitte das Fenster auf!", "fa": "لطفاً پنجره را باز کن!" }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "تضادها",
+      "instruction": "متضاد را انتخاب کنید",
+      "questions": [
+        { "prompt": "aufmachen ↔", "left": "zumachen", "right": "aufräumen", "correctSide": "left" },
+        { "prompt": "anfangen ↔", "left": "anrufen", "right": "aufhören", "correctSide": "right" },
+        { "prompt": "einsteigen ↔", "left": "aussteigen", "right": "ankommen", "correctSide": "left" },
+        { "prompt": "ankommen ↔", "left": "mitkommen", "right": "abfahren", "correctSide": "right" },
+        { "prompt": "aufstehen ↔", "left": "einkaufen", "right": "hinsetzen", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "«Ich räume mein Zimmer auf» یعنی چه؟",
+      "options": ["اتاقم را اجاره می‌دهم", "اتاقم را مرتب می‌کنم", "اتاقم را تمیز می‌کنم", "از اتاقم می‌روم"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "aufräumen = مرتب کردن" }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-aufmachen",
+      "word": "aufmachen",
+      "translation": "باز کردن",
+      "syllables": ["auf", "ma", "chen"],
+      "distractors": ["ouf", "mo", "chon", "moch"]
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Ich kaufe im Supermarkt ein.",
+      "translation": "در سوپرمارکت خرید می‌کنم.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Abends sehe ich gern fern.",
+      "translation": "شب‌ها دوست دارم تلویزیون ببینم.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-3",
+      "targetText": "Rufst du mich später an?",
+      "translation": "بعداً بهم زنگ می‌زنی؟",
+      "difficulty": "A1"
+    },
+    {
+      "type": "memory-match",
+      "id": "g3",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "einkaufen", "fa": "خرید کردن" },
+        { "de": "fernsehen", "fa": "تلویزیون دیدن" },
+        { "de": "anrufen", "fa": "زنگ زدن" },
+        { "de": "aufräumen", "fa": "مرتب کردن" },
+        { "de": "zumachen", "fa": "بستن" },
+        { "de": "aufmachen", "fa": "باز کردن" }
+      ],
+      "timeLimit": 60
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "einkaufen", "fa": "خرید کردن" },
+        { "de": "fernsehen", "fa": "تلویزیون دیدن" },
+        { "de": "anrufen", "fa": "زنگ زدن" },
+        { "de": "aufräumen", "fa": "مرتب کردن" },
+        { "de": "zumachen", "fa": "بستن" },
+        { "de": "aufmachen", "fa": "باز کردن" },
+        { "de": "anfangen", "fa": "شروع کردن" },
+        { "de": "aufhören", "fa": "تمام کردن" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما فعل‌های جداشدنی روزمره را یاد گرفتید!\n\n🛒 **فعل‌های روزانه:**\n• einkaufen = خرید کردن\n• fernsehen = تلویزیون دیدن\n• anrufen = زنگ زدن\n• aufräumen = مرتب کردن\n\n🚪 **باز و بسته:**\n• aufmachen = باز کردن\n• zumachen = بستن\n\n▶️ **شروع و پایان:**\n• anfangen = شروع کردن\n• aufhören = تمام کردن",
+      "xpEarned": 50,
+      "vocabularyLearned": [
+        { "word": { "de": "einkaufen", "fa": "خرید کردن" } },
+        { "word": { "de": "fernsehen", "fa": "تلویزیون دیدن" } },
+        { "word": { "de": "anrufen", "fa": "زنگ زدن" } },
+        { "word": { "de": "aufräumen", "fa": "مرتب کردن" } },
+        { "word": { "de": "zumachen", "fa": "بستن" } },
+        { "word": { "de": "aufmachen", "fa": "باز کردن" } },
+        { "word": { "de": "anfangen", "fa": "شروع کردن" } },
+        { "word": { "de": "aufhören", "fa": "تمام کردن" } }
+      ]
+    }
+  ]
+}
