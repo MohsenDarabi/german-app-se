@@ -8,7 +8,7 @@
   "level": "A1",
   "module": 11,
   "lessonNumber": 3,
-  "totalSteps": 42,
+  "totalSteps": 39,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "das rote Kleid", "fa": "لباس قرمز", "grammar": { "pos": "phrase" } },
@@ -177,10 +177,26 @@
       "example": { "text": { "de": "Das hellblaue Hemd ist schön.", "fa": "پیراهن آبی روشن زیباست." } }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-hellblau",
+      "word": "hellblau",
+      "translation": "آبی روشن",
+      "syllables": ["hell", "blau"],
+      "distractors": ["hal", "bleu", "holl", "blaw"]
+    },
+    {
       "type": "new-word",
       "id": "s12",
       "word": { "de": "dunkelgrün", "fa": "سبز تیره" },
       "example": { "text": { "de": "Ich trage eine dunkelgrüne Jacke.", "fa": "یک ژاکت سبز تیره می‌پوشم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-dunkelgruen",
+      "word": "dunkelgrün",
+      "translation": "سبز تیره",
+      "syllables": ["dun", "kel", "grün"],
+      "distractors": ["dan", "kol", "grun", "gren"]
     },
     {
       "type": "grammar-tip",
@@ -197,6 +213,14 @@
       "id": "s14",
       "word": { "de": "gefallen", "fa": "خوش آمدن" },
       "example": { "text": { "de": "Das Kleid gefällt mir.", "fa": "لباس را دوست دارم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-gefallen",
+      "word": "gefallen",
+      "translation": "خوش آمدن",
+      "syllables": ["ge", "fal", "len"],
+      "distractors": ["ga", "fel", "lan", "gi"]
     },
     {
       "type": "grammar-tip",
@@ -225,6 +249,23 @@
       "questions": [
         { "question": "الی چه رنگی دوست دارد؟", "options": ["روشن", "تیره", "سفید"], "correctIndex": 1 },
         { "question": "لباس چه رنگی است؟", "options": ["آبی روشن", "آبی تیره", "سبز تیره"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "نظر دادن درباره لباس",
+      "context": "تام و الی درباره لباس‌ها صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Tom", "text": { "de": "Schau mal! Das rote Kleid ist schön, oder?", "fa": "نگاه کن! لباس قرمز زیباست، نه؟" } },
+        { "speaker": "Eli", "text": { "de": "Ja, aber die blaue Hose gefällt mir besser.", "fa": "آره، ولی شلوار آبی را بیشتر دوست دارم." } },
+        { "speaker": "Tom", "text": { "de": "Und was denkst du über den schwarzen Mantel?", "fa": "و درباره پالتوی سیاه چه فکر می‌کنی؟" } },
+        { "speaker": "Eli", "text": { "de": "Der ist zu dunkel. Ich mag hellere Farben.", "fa": "خیلی تیره است. رنگ‌های روشن‌تر را دوست دارم." } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "الی کدام لباس را بیشتر دوست دارد؟", "options": ["لباس قرمز", "شلوار آبی", "پالتوی سیاه"], "correctIndex": 1 },
+        { "question": "چرا الی پالتو را دوست ندارد؟", "options": ["خیلی گران است", "خیلی تیره است", "خیلی بزرگ است"], "correctIndex": 1 }
       ]
     },
     {
