@@ -602,6 +602,79 @@ pronoun | conjunction | interjection | phrase | particle
 
 ---
 
+### Issue: CI Typecheck Fails with $env Module Errors (Feb 2026)
+
+**Symptom:** GitHub Actions CI fails with errors like:
+```
+Error: Module '"$env/static/public"' has no exported member 'PUBLIC_R2_URL'.
+Error: Cannot find module '$env/static/public' or its corresponding type declarations.
+```
+
+**Root Cause:** SvelteKit generates `$env` module types during `svelte-kit sync` based on environment variables present at sync time. In CI, the env vars weren't available when sync ran.
+
+**Two issues combined:**
+
+1. **tsconfig.json needed .svelte-kit types included**
+
+   When extending `.svelte-kit/tsconfig.json`, if you override the `include` array, you lose the base config's includes. Must explicitly add:
+   ```json
+   "include": [
+     ".svelte-kit/ambient.d.ts",
+     ".svelte-kit/non-ambient.d.ts",
+     ".svelte-kit/types/**/$types.d.ts",
+     "src/**/*.ts",
+     "src/**/*.svelte"
+   ]
+   ```
+
+2. **CI workflow env vars only on build step**
+
+   The env vars (`PUBLIC_R2_URL`, `PUBLIC_SUPABASE_URL`, etc.) were only set for the `build` step, not available during `svelte-kit sync`.
+
+   **Fix:** Move env vars to workflow level (applies to all steps):
+   ```yaml
+   env:
+     PUBLIC_SUPABASE_URL: https://placeholder.supabase.co
+     PUBLIC_SUPABASE_ANON_KEY: placeholder-anon-key
+     PUBLIC_R2_URL: https://placeholder.r2.dev
+   jobs:
+     build:
+       # env vars available to all steps
+   ```
+
+**Files Modified:**
+- `apps/web/tsconfig.json` - Added .svelte-kit files to include
+- `.github/workflows/ci.yml` - Moved env vars to workflow level
+- `apps/web/package.json` - Added `svelte-kit sync` to build script
+
+---
+
+### Issue: Vercel 404 on SPA Routes (Feb 2026)
+
+**Symptom:** Deployed app shows Vercel's `404: NOT_FOUND` error when accessing routes like `/learn/de-fa/A1/A1-M03-L04`, even though the app works locally.
+
+**Root Cause:** Using `adapter-static` with `framework: null` in Vercel requires explicit rewrites for SPA client-side routing. Without rewrites, Vercel looks for a static file at that exact path and returns 404.
+
+**Fix:** Add SPA fallback rewrite to `vercel.json`:
+```json
+{
+  "framework": null,
+  "outputDirectory": "apps/web/build",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
+```
+
+This tells Vercel to serve `index.html` for any route that doesn't match a static file, allowing the SvelteKit client-side router to handle the route.
+
+**Note:** The app-level "Lesson not found" error (vs Vercel's 404) is a different issue - that means the SPA loaded but the lesson content isn't on the CDN.
+
+**Files Modified:**
+- `vercel.json` - Added rewrites for SPA fallback
+
+---
+
 ## Contributing
 
 Found a new debugging scenario? Add it here:
