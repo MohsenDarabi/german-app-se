@@ -17,8 +17,8 @@
   "level": "A1",
   "module": 2,
   "lessonNumber": 5,
-  "totalSteps": 30,
-  "estimatedMinutes": 15,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
   "vocabulary": [
     {
       "de": "können",
@@ -112,6 +112,18 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-ich-kann",
+      "word": "ich kann",
+      "translation": "من می‌توانم",
+      "syllables": ["ich", "kann"],
+      "distractors": ["ach", "kenn", "konn"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «ich kann» یعنی من می‌توانم. توجه: ich و er/sie هر دو kann هستند!"
+      }
+    },
+    {
       "type": "new-word",
       "id": "s4",
       "word": {
@@ -126,6 +138,18 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-du-kannst",
+      "word": "du kannst",
+      "translation": "تو می‌توانی",
+      "syllables": ["du", "kannst"],
+      "distractors": ["da", "kennst", "konnst"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «du kannst» یعنی تو می‌توانی."
+      }
+    },
+    {
       "type": "new-word",
       "id": "s5",
       "word": {
@@ -137,6 +161,18 @@
           "de": "Sie kann sehr gut singen.",
           "fa": "او می‌تواند خیلی خوب بخواند."
         }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-er-kann",
+      "word": "er kann",
+      "translation": "او می‌تواند",
+      "syllables": ["er", "kann"],
+      "distractors": ["ar", "kenn", "konn"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «er/sie kann» یعنی او می‌تواند. مثل ich، شکل kann است!"
       }
     },
     {
@@ -208,6 +244,18 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-wollen",
+      "word": "wollen",
+      "translation": "خواستن",
+      "syllables": ["wol", "len"],
+      "distractors": ["wel", "wal", "lan"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «wollen» یعنی خواستن - یک فعل کمکی مهم!"
+      }
+    },
+    {
       "type": "new-word",
       "id": "s8",
       "word": {
@@ -219,6 +267,18 @@
           "de": "Ich will schlafen.",
           "fa": "من می‌خواهم بخوابم."
         }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-ich-will",
+      "word": "ich will",
+      "translation": "من می‌خواهم",
+      "syllables": ["ich", "will"],
+      "distractors": ["ach", "well", "woll"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «ich will» یعنی من می‌خواهم."
       }
     },
     {
@@ -236,6 +296,18 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-du-willst",
+      "word": "du willst",
+      "translation": "تو می‌خواهی",
+      "syllables": ["du", "willst"],
+      "distractors": ["da", "wellst", "wollst"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «du willst» یعنی تو می‌خواهی."
+      }
+    },
+    {
       "type": "new-word",
       "id": "s10",
       "word": {
@@ -247,6 +319,18 @@
           "de": "Er will nach Berlin fahren.",
           "fa": "او می‌خواهد به برلین برود."
         }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-er-will",
+      "word": "er will",
+      "translation": "او می‌خواهد",
+      "syllables": ["er", "will"],
+      "distractors": ["ar", "well", "woll"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «er/sie will» یعنی او می‌خواهد. مثل ich، شکل will است!"
       }
     },
     {
@@ -306,6 +390,18 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-ich-muss",
+      "word": "ich muss",
+      "translation": "من باید",
+      "syllables": ["ich", "muss"],
+      "distractors": ["ach", "mess", "moss"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «ich muss» یعنی من باید."
+      }
+    },
+    {
       "type": "new-word",
       "id": "s14",
       "word": {
@@ -320,6 +416,18 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-du-musst",
+      "word": "du musst",
+      "translation": "تو باید",
+      "syllables": ["du", "musst"],
+      "distractors": ["da", "messt", "mosst"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «du musst» یعنی تو باید."
+      }
+    },
+    {
       "type": "new-word",
       "id": "s15",
       "word": {
@@ -331,6 +439,18 @@
           "de": "Sie muss zum Arzt gehen.",
           "fa": "او باید به دکتر برود."
         }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-er-muss",
+      "word": "er muss",
+      "translation": "او باید",
+      "syllables": ["er", "muss"],
+      "distractors": ["ar", "mess", "moss"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «er/sie muss» یعنی او باید. مثل ich، شکل muss است!"
       }
     },
     {
