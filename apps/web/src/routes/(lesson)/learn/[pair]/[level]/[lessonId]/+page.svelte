@@ -104,10 +104,13 @@
 
   // Step types that shouldn't track wrong answers for review:
   // - Game steps: report summary stats, not individual Q&A
-  // - Dictation/spelling: review format (pick-one-of-two) doesn't work for these
+  // - Dictation/spelling: review format doesn't work for typing exercises
+  // - Dialog: comprehension questions test context understanding, not vocabulary
+  //           (without re-hearing the dialog, review is just memory of story details)
   const skipReviewStepTypes = [
     'rapid-fire', 'memory-match', 'vocab-check', 'word-hunt', 'speed-challenge',  // games
-    'dictation', 'syllable-spelling', 'spelling'  // typing exercises - not suitable for pick-one review
+    'dictation', 'syllable-spelling', 'spelling',  // typing exercises
+    'dialog'  // comprehension questions need context to be educational
   ];
 
   async function handleAnswer(event: CustomEvent) {
