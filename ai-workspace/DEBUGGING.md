@@ -675,6 +675,28 @@ This tells Vercel to serve `index.html` for any route that doesn't match a stati
 
 ---
 
+### Issue: CDN Serving Old Content After Upload (Feb 2026)
+
+**Symptom:** Uploaded fixed content to R2, but app still shows schema errors for that lesson. Other lessons work fine.
+
+**Root Cause:** R2 uses `Cache-Control: max-age=3600` (1 hour). Edge servers may serve stale content.
+
+**Fix:** Re-upload with no-cache headers:
+```javascript
+// One-off fix for specific file
+const command = new PutObjectCommand({
+  Bucket: process.env.R2_BUCKET_NAME,
+  Key: 'de-fa/content/A1/lessons/A1-M02-L01.json',
+  Body: content,
+  ContentType: 'application/json',
+  CacheControl: 'no-cache, no-store, must-revalidate',
+});
+```
+
+Or wait 1 hour for cache to expire.
+
+---
+
 ## Contributing
 
 Found a new debugging scenario? Add it here:
