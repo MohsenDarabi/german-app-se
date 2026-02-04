@@ -491,6 +491,12 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         title: "Perfekt با sein",
         description: "یاد بگیرید چطور درباره حرکت و سفر در گذشته صحبت کنید.",
         path: "/learn/de-fa/A2/A2-M01-L02"
+      },
+      {
+        id: "A2-M01-L03",
+        title: "Partizip II بی‌قاعده",
+        description: "یاد بگیرید Partizip II فعل‌های بی‌قاعده را.",
+        path: "/learn/de-fa/A2/A2-M01-L03"
       }
     ]
   }
