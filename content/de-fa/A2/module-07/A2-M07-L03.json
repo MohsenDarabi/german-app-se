@@ -1,0 +1,380 @@
+{
+  "id": "A2-M07-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Relativsätze - Dativ", "fa": "جملات موصولی - متممی" },
+  "description": "یاد بگیرید جملات موصولی بسازید با dem, der, denen به عنوان متمم",
+  "level": "A2",
+  "module": 7,
+  "lessonNumber": 3,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "dem (Relativpronomen)", "fa": "که (مذکر/خنثی متممی)", "grammar": { "pos": "pronoun", "case": "dativ" } },
+    { "de": "der (Relativpronomen Dativ)", "fa": "که (مؤنث متممی)", "grammar": { "pos": "pronoun", "case": "dativ" } },
+    { "de": "denen (Relativpronomen)", "fa": "که (جمع متممی)", "grammar": { "pos": "pronoun", "case": "dativ" } },
+    { "de": "helfen", "fa": "کمک کردن", "grammar": { "pos": "verb", "infinitive": "helfen", "dativ": true } },
+    { "de": "danken", "fa": "تشکر کردن", "grammar": { "pos": "verb", "infinitive": "danken", "dativ": true } },
+    { "de": "geben", "fa": "دادن", "grammar": { "pos": "verb", "infinitive": "geben" } },
+    { "de": "schreiben", "fa": "نوشتن", "grammar": { "pos": "verb", "infinitive": "schreiben" } },
+    { "de": "gehören", "fa": "تعلق داشتن", "grammar": { "pos": "verb", "infinitive": "gehören", "dativ": true } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "ضمیر موصولی در Dativ",
+      "content": "📝 **وقتی ضمیر موصولی متمم است:**\n\n| جنس | Nom. | Akk. | Dat. |\n|-----|------|------|------|\n| مذکر | der | den | **dem** |\n| مؤنث | die | die | **der** |\n| خنثی | das | das | **dem** |\n| جمع | die | die | **denen** |\n\n⚠️ همه تغییر می‌کنند!",
+      "examples": [
+        { "de": "Der Mann, dem ich helfe, ist alt.", "fa": "مردی که کمکش می‌کنم، پیر است." },
+        { "de": "Die Frau, der ich danke, ist nett.", "fa": "زنی که ازش تشکر می‌کنم، مهربان است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "dem (Relativpronomen)", "fa": "که (مذکر/خنثی متممی)" },
+      "example": { "text": { "de": "Der Mann, dem ich helfe...", "fa": "مردی که کمکش می‌کنم..." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "der (Dativ)", "fa": "که (مؤنث متممی)" },
+      "example": { "text": { "de": "Die Frau, der ich danke...", "fa": "زنی که ازش تشکر می‌کنم..." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "denen", "fa": "که (جمع متممی)" },
+      "example": { "text": { "de": "Die Leute, denen ich schreibe...", "fa": "مردمی که برایشان می‌نویسم..." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "فعل‌های Dativ",
+      "content": "📝 **این فعل‌ها Dativ می‌گیرند:**\n\n• helfen (کمک کردن) → Ich helfe **dem** Mann.\n• danken (تشکر کردن) → Ich danke **der** Frau.\n• gehören (تعلق داشتن) → Das gehört **dem** Kind.\n• gefallen (خوش آمدن) → Das gefällt **den** Leuten.\n\n💡 با این فعل‌ها، ضمیر موصولی Dativ است",
+      "examples": [
+        { "de": "Der Lehrer, dem ich danke...", "fa": "معلمی که ازش تشکر می‌کنم..." },
+        { "de": "Das Auto, das mir gehört...", "fa": "ماشینی که مال من است..." }
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "helfen",
+      "translation": "کمک کردن",
+      "syllables": ["hel", "fen"],
+      "distractors": ["hal", "fan", "hil", "fun"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«مردی که کمکش می‌کنم» - کدام ضمیر موصولی درست است؟",
+      "options": ["der", "den", "dem", "denen"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! helfen + Dativ → dem", "incorrect": "helfen فعل Dativ است → dem" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "«زنی که ازش تشکر می‌کنم» - کدام ضمیر موصولی درست است؟",
+      "options": ["die", "der", "dem", "denen"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! die Frau + Dativ → der", "incorrect": "مؤنث در Dativ: die → der" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Der Mann, {0} ich helfe, ist alt.",
+      "options": ["der", "den", "dem", "denen"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "helfen + Dativ + مذکر = dem" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Frau, {0} ich danke, ist nett.",
+      "options": ["die", "der", "dem", "denen"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "danken + Dativ + مؤنث = der" }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "helfen", "fa": "کمک کردن" },
+      "example": { "text": { "de": "Ich helfe dem Kind.", "fa": "به بچه کمک می‌کنم." } }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در محل کار",
+      "context": "همکاران درباره یکدیگر صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Kennst du den Kollegen, dem ich gerade geholfen habe?", "fa": "همکاری که الان کمکش کردم را می‌شناسی؟" } },
+        { "speaker": "Ben", "text": { "de": "Ja, das ist Tom. Er ist neu hier.", "fa": "بله، اون تام است. او اینجا جدید است." } },
+        { "speaker": "Anna", "text": { "de": "Die Kollegin, der er das Projekt erklärt hat, ist seine Chefin.", "fa": "همکاری که پروژه را برایش توضیح داده، رئیسش است." } },
+        { "speaker": "Ben", "text": { "de": "Ah, interessant!", "fa": "آه، جالب است!" } }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "«بچه‌ای که کتاب را بهش می‌دهم» - کدام ضمیر موصولی درست است؟",
+      "options": ["das", "den", "dem", "denen"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! das Kind + Dativ → dem", "incorrect": "خنثی در Dativ: das → dem" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["alt.", "ist", "helfe,", "ich", "dem", "Mann,", "Der"],
+      "correctOrder": [6, 5, 4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Der Mann, dem ich helfe, ist alt.", "fa": "مردی که کمکش می‌کنم، پیر است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["nett.", "ist", "danke,", "ich", "der", "Frau,", "Die"],
+      "correctOrder": [6, 5, 4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Die Frau, der ich danke, ist nett.", "fa": "زنی که ازش تشکر می‌کنم، مهربان است." }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "danken",
+      "translation": "تشکر کردن",
+      "syllables": ["dan", "ken"],
+      "distractors": ["din", "kan", "dun", "kin"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das Kind, {0} ich das Buch gebe, ist klein.",
+      "options": ["das", "den", "dem", "denen"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "geben (به کسی) + Dativ + خنثی = dem" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Leute, {0} ich schreibe, sind meine Freunde.",
+      "options": ["die", "der", "dem", "denen"],
+      "correctAnswers": [3],
+      "feedback": { "explanation": "schreiben (به کسی) + Dativ + جمع = denen" }
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "danken", "fa": "تشکر کردن" },
+      "example": { "text": { "de": "Ich danke der Frau.", "fa": "از زن تشکر می‌کنم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "gehören", "fa": "تعلق داشتن" },
+      "example": { "text": { "de": "Das Auto, das mir gehört...", "fa": "ماشینی که مال من است..." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "مقایسه سه حالت",
+      "content": "📝 **مقایسه Nom/Akk/Dat:**\n\n| جنس | Nom. | Akk. | Dat. |\n|-----|------|------|------|\n| مذکر | der | den | dem |\n| مؤنث | die | die | der |\n| خنثی | das | das | dem |\n| جمع | die | die | denen |\n\n💡 جمع در Dativ خاص است: **denen**",
+      "examples": [
+        { "de": "Die Leute, denen ich helfe...", "fa": "مردمی که کمکشان می‌کنم..." },
+        { "de": "Die Kinder, denen ich das erkläre...", "fa": "بچه‌هایی که برایشان توضیح می‌دهم..." }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "هدیه تولد",
+      "context": "درباره هدیه‌ها صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Der Freund, dem ich das Geschenk gegeben habe, war sehr glücklich.", "fa": "دوستی که هدیه را بهش دادم، خیلی خوشحال بود." } },
+        { "speaker": "Tom", "text": { "de": "Was war es?", "fa": "چی بود؟" } },
+        { "speaker": "Lisa", "text": { "de": "Ein Buch, das ihm gefällt.", "fa": "یک کتاب که خوشش می‌آید." } },
+        { "speaker": "Tom", "text": { "de": "Die Freundin, der du letztes Jahr geholfen hast, ist auch eingeladen.", "fa": "دوستی که پارسال کمکش کردی، هم دعوت شده." } }
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "gehören",
+      "translation": "تعلق داشتن",
+      "syllables": ["ge", "hö", "ren"],
+      "distractors": ["ga", "ho", "ran", "hi"]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "جمله را با ترجمه وصل کنید",
+      "items": [
+        { "id": "i1", "text": "dem ich helfe" },
+        { "id": "i2", "text": "der ich danke" },
+        { "id": "i3", "text": "denen ich schreibe" },
+        { "id": "i4", "text": "dem das gehört" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "که کمکش می‌کنم" },
+        { "id": "m2", "text": "که ازش تشکر می‌کنم" },
+        { "id": "m3", "text": "که برایشان می‌نویسم" },
+        { "id": "m4", "text": "که مال اوست" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"],
+        ["i4", "m4"]
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "Dativ ضمیر موصولی",
+      "instruction": "ضمیر موصولی Dativ صحیح را انتخاب کنید",
+      "questions": [
+        { "prompt": "der Mann, ___ ich helfe", "left": "dem", "right": "den", "correctSide": "left" },
+        { "prompt": "die Frau, ___ ich danke", "left": "die", "right": "der", "correctSide": "right" },
+        { "prompt": "das Kind, ___ ich gebe", "left": "dem", "right": "das", "correctSide": "left" },
+        { "prompt": "die Leute, ___ ich schreibe", "left": "die", "right": "denen", "correctSide": "right" },
+        { "prompt": "der Freund, ___ das gefällt", "left": "dem", "right": "der", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "«مردمی که برایشان می‌نویسم» به آلمانی چیست؟",
+      "options": ["Die Leute, die ich schreibe", "Die Leute, der ich schreibe", "Die Leute, dem ich schreibe", "Die Leute, denen ich schreibe"],
+      "correctAnswerIndex": 3,
+      "feedback": { "correct": "آفرین! جمع در Dativ = denen", "incorrect": "جمع در Dativ: die → denen" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc5",
+      "question": "«معلمی که ازش تشکر می‌کنم» به آلمانی چیست؟",
+      "options": ["Der Lehrer, der ich danke", "Der Lehrer, den ich danke", "Der Lehrer, dem ich danke", "Der Lehrer, denen ich danke"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! danken + Dativ + مذکر = dem", "incorrect": "مذکر در Dativ: der → dem" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Kinder, {0} ich das erkläre, sind aufmerksam.",
+      "options": ["die", "der", "dem", "denen"],
+      "correctAnswers": [3],
+      "feedback": { "explanation": "جمع در Dativ = denen" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Der Freund, {0} das Buch gehört, ist nicht hier.",
+      "options": ["der", "den", "dem", "denen"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "gehören + Dativ + مذکر = dem" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["Freunde.", "meine", "sind", "schreibe,", "ich", "denen", "Leute,", "Die"],
+      "correctOrder": [7, 6, 5, 4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Die Leute, denen ich schreibe, sind meine Freunde.", "fa": "مردمی که برایشان می‌نویسم، دوستان من هستند." }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "schreiben",
+      "translation": "نوشتن",
+      "syllables": ["schrei", "ben"],
+      "distractors": ["schrai", "ban", "schri", "bon"]
+    },
+    {
+      "type": "dialog",
+      "id": "d3",
+      "title": "کمک به همسایه",
+      "context": "درباره کمک کردن صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Maria", "text": { "de": "Die alte Frau, der ich jeden Tag helfe, ist sehr dankbar.", "fa": "پیرزنی که هر روز کمکش می‌کنم، خیلی سپاسگزار است." } },
+        { "speaker": "Peter", "text": { "de": "Das ist schön von dir.", "fa": "این از تو خوب است." } },
+        { "speaker": "Maria", "text": { "de": "Der Mann, dem sie früher geholfen hat, besucht sie oft.", "fa": "مردی که قبلاً کمکش می‌کرده، اغلب بهش سر می‌زند." } },
+        { "speaker": "Peter", "text": { "de": "Das zeigt, dass Freundlichkeit zurückkommt.", "fa": "این نشان می‌دهد که مهربانی برمی‌گردد." } }
+      ]
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "ضمیر موصولی Dativ صحیح را انتخاب کنید",
+      "words": [
+        { "de": "der Tisch (Dativ)", "fa": "dem", "options": ["der", "den", "dem", "denen"], "correctIndex": 2 },
+        { "de": "die Lampe (Dativ)", "fa": "der", "options": ["die", "der", "dem", "denen"], "correctIndex": 1 },
+        { "de": "die Bücher (Dativ)", "fa": "denen", "options": ["die", "der", "dem", "denen"], "correctIndex": 3 }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo4",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["klein.", "ist", "gebe,", "Buch", "das", "ich", "dem", "Kind,", "Das"],
+      "correctOrder": [8, 7, 6, 5, 4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Das Kind, dem ich das Buch gebe, ist klein.", "fa": "بچه‌ای که کتاب را بهش می‌دهم، کوچک است." }
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Der Mann, dem ich helfe, ist nett.",
+      "translation": "مردی که کمکش می‌کنم، مهربان است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Die Frau, der ich danke, lächelt.",
+      "translation": "زنی که ازش تشکر می‌کنم، لبخند می‌زند."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Die Leute, denen ich schreibe, antworten schnell.",
+      "translation": "مردمی که برایشان می‌نویسم، سریع جواب می‌دهند."
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "dem ich helfe", "fa": "که کمکش می‌کنم (مذکر)" },
+        { "de": "der ich danke", "fa": "که ازش تشکر می‌کنم (مؤنث)" },
+        { "de": "dem ich gebe", "fa": "که بهش می‌دهم (خنثی)" },
+        { "de": "denen ich schreibe", "fa": "که برایشان می‌نویسم (جمع)" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp1",
+      "title": "آفرین! 🎉",
+      "message": "جملات موصولی با ضمیر متممی (Dativ) را یاد گرفتید!",
+      "keyPoints": [
+        "مذکر: der → dem",
+        "مؤنث: die → der",
+        "خنثی: das → dem",
+        "جمع: die → denen",
+        "با فعل‌های helfen, danken, gehören, gefallen",
+        "مثال: Der Mann, dem ich helfe..."
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "dem (Relativ)", "fa": "که (مذکر/خنثی Dativ)" } },
+        { "word": { "de": "der (Relativ Dat.)", "fa": "که (مؤنث Dativ)" } },
+        { "word": { "de": "denen", "fa": "که (جمع Dativ)" } },
+        { "word": { "de": "helfen", "fa": "کمک کردن" } },
+        { "word": { "de": "danken", "fa": "تشکر کردن" } }
+      ]
+    }
+  ]
+}

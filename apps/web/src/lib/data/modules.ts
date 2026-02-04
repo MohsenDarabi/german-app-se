@@ -677,6 +677,12 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         title: "Akkusativ - مفعولی",
         description: "یاد بگیرید جملات موصولی بسازید با den, die, das به عنوان مفعول.",
         path: "/learn/de-fa/A2/A2-M07-L02"
+      },
+      {
+        id: "A2-M07-L03",
+        title: "Dativ - متممی",
+        description: "یاد بگیرید جملات موصولی بسازید با dem, der, denen به عنوان متمم.",
+        path: "/learn/de-fa/A2/A2-M07-L03"
       }
     ]
   }
