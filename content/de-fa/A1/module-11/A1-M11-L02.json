@@ -1,0 +1,391 @@
+{
+  "id": "A1-M11-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Farben", "fa": "رنگ‌ها" },
+  "description": "یاد بگیرید رنگ‌ها را به آلمانی بگویید",
+  "level": "A1",
+  "module": 11,
+  "lessonNumber": 2,
+  "totalSteps": 42,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "die Farbe", "fa": "رنگ", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Farben" } } },
+    { "de": "rot", "fa": "قرمز", "grammar": { "pos": "adjective" } },
+    { "de": "blau", "fa": "آبی", "grammar": { "pos": "adjective" } },
+    { "de": "grün", "fa": "سبز", "grammar": { "pos": "adjective" } },
+    { "de": "gelb", "fa": "زرد", "grammar": { "pos": "adjective" } },
+    { "de": "schwarz", "fa": "سیاه", "grammar": { "pos": "adjective" } },
+    { "de": "weiß", "fa": "سفید", "grammar": { "pos": "adjective" } },
+    { "de": "braun", "fa": "قهوه‌ای", "grammar": { "pos": "adjective" } },
+    { "de": "grau", "fa": "خاکستری", "grammar": { "pos": "adjective" } },
+    { "de": "rosa", "fa": "صورتی", "grammar": { "pos": "adjective" } },
+    { "de": "orange", "fa": "نارنجی", "grammar": { "pos": "adjective" } },
+    { "de": "lila", "fa": "بنفش", "grammar": { "pos": "adjective" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "رنگ‌ها (Farben)",
+      "content": "در این درس یاد می‌گیرید:\n\n🔴 **رنگ‌های اصلی:**\n• rot = قرمز\n• blau = آبی\n• gelb = زرد\n• grün = سبز\n\n⚫ **رنگ‌های خنثی:**\n• schwarz = سیاه\n• weiß = سفید\n• grau = خاکستری\n\n💡 **سوال مهم:** Welche Farbe hat...? = چه رنگی دارد...؟",
+      "examples": [
+        { "de": "Welche Farbe hat das Hemd?", "fa": "پیراهن چه رنگی است؟" },
+        { "de": "Das Hemd ist blau.", "fa": "پیراهن آبی است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "die Farbe", "fa": "رنگ" },
+      "example": { "text": { "de": "Welche Farbe magst du?", "fa": "چه رنگی دوست داری؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-farbe",
+      "word": "Farbe",
+      "translation": "رنگ",
+      "syllables": ["Far", "be"],
+      "distractors": ["Fer", "ba", "For", "bi"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "rot", "fa": "قرمز" },
+      "example": { "text": { "de": "Die Rose ist rot.", "fa": "گل رز قرمز است." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "blau", "fa": "آبی" },
+      "example": { "text": { "de": "Der Himmel ist blau.", "fa": "آسمان آبی است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-blau",
+      "word": "blau",
+      "translation": "آبی",
+      "syllables": ["blau"],
+      "distractors": ["bleu", "blao", "blaw", "blou"]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "grün", "fa": "سبز" },
+      "example": { "text": { "de": "Das Gras ist grün.", "fa": "چمن سبز است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-gruen",
+      "word": "grün",
+      "translation": "سبز",
+      "syllables": ["grün"],
+      "distractors": ["grun", "gren", "grön", "grin"]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "gelb", "fa": "زرد" },
+      "example": { "text": { "de": "Die Sonne ist gelb.", "fa": "خورشید زرد است." } }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«grün» به فارسی چه معنی می‌دهد؟",
+      "options": ["قرمز", "آبی", "سبز", "زرد"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین!", "incorrect": "grün = سبز" }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "رنگ‌های اصلی",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "rot", "left": "قرمز", "right": "آبی", "correctSide": "left" },
+        { "prompt": "blau", "left": "سبز", "right": "آبی", "correctSide": "right" },
+        { "prompt": "grün", "left": "سبز", "right": "زرد", "correctSide": "left" },
+        { "prompt": "gelb", "left": "قرمز", "right": "زرد", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "schwarz", "fa": "سیاه" },
+      "example": { "text": { "de": "Die Katze ist schwarz.", "fa": "گربه سیاه است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-schwarz",
+      "word": "schwarz",
+      "translation": "سیاه",
+      "syllables": ["schwarz"],
+      "distractors": ["schvarz", "swarz", "shwarz", "schwartz"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "weiß", "fa": "سفید" },
+      "example": { "text": { "de": "Der Schnee ist weiß.", "fa": "برف سفید است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-weiss",
+      "word": "weiß",
+      "translation": "سفید",
+      "syllables": ["weiß"],
+      "distractors": ["weiss", "weis", "veis", "waiss"]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "braun", "fa": "قهوه‌ای" },
+      "example": { "text": { "de": "Der Hund ist braun.", "fa": "سگ قهوه‌ای است." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": { "de": "grau", "fa": "خاکستری" },
+      "example": { "text": { "de": "Der Elefant ist grau.", "fa": "فیل خاکستری است." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s11",
+      "title": "رنگ بعد از فعل",
+      "content": "🎨 وقتی رنگ بعد از فعل **ist** می‌آید، تغییر نمی‌کند:\n\n• Das Hemd **ist** rot.\n• Die Hose **ist** blau.\n• Der Rock **ist** grün.\n\n✅ رنگ همیشه ساده می‌ماند!",
+      "examples": [
+        { "de": "Das Auto ist schwarz.", "fa": "ماشین سیاه است." },
+        { "de": "Die Blume ist gelb.", "fa": "گل زرد است." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Der Himmel ist {0}.",
+      "options": ["rot", "blau", "gelb", "braun"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "آسمان آبی است: Der Himmel ist blau." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Tomate ist {0}.",
+      "options": ["grün", "rot", "blau", "grau"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "گوجه قرمز است: Die Tomate ist rot." }
+    },
+    {
+      "type": "new-word",
+      "id": "s12",
+      "word": { "de": "rosa", "fa": "صورتی" },
+      "example": { "text": { "de": "Das T-Shirt ist rosa.", "fa": "تی‌شرت صورتی است." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s13",
+      "word": { "de": "orange", "fa": "نارنجی" },
+      "example": { "text": { "de": "Die Orange ist orange.", "fa": "پرتقال نارنجی است." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s14",
+      "word": { "de": "lila", "fa": "بنفش" },
+      "example": { "text": { "de": "Die Blume ist lila.", "fa": "گل بنفش است." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s15",
+      "title": "rosa, orange, lila",
+      "content": "🌸 این سه رنگ خاص هستند:\n\n• **rosa** = صورتی\n• **orange** = نارنجی\n• **lila** = بنفش\n\n⚠️ این رنگ‌ها معمولاً تغییر نمی‌کنند:\n• das rosa Kleid (نه: das rosae Kleid)\n• die orange Jacke\n• der lila Rock",
+      "examples": [
+        { "de": "Sie trägt ein rosa Kleid.", "fa": "او لباس صورتی می‌پوشد." },
+        { "de": "Ich mag die lila Blumen.", "fa": "گل‌های بنفش را دوست دارم." }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "رنگ‌های بیشتر",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "schwarz", "left": "سیاه", "right": "سفید", "correctSide": "left" },
+        { "prompt": "weiß", "left": "خاکستری", "right": "سفید", "correctSide": "right" },
+        { "prompt": "braun", "left": "قهوه‌ای", "right": "نارنجی", "correctSide": "left" },
+        { "prompt": "rosa", "left": "بنفش", "right": "صورتی", "correctSide": "right" },
+        { "prompt": "lila", "left": "بنفش", "right": "صورتی", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "خرید لباس",
+      "context": "الی و تام در فروشگاه لباس هستند",
+      "lines": [
+        { "speaker": "Verkäufer", "text": { "de": "Kann ich Ihnen helfen?", "fa": "می‌توانم کمکتان کنم؟" } },
+        { "speaker": "Eli", "text": { "de": "Ja, ich suche ein Kleid.", "fa": "بله، دنبال یک لباس می‌گردم." } },
+        { "speaker": "Verkäufer", "text": { "de": "Welche Farbe möchten Sie?", "fa": "چه رنگی می‌خواهید؟" } },
+        { "speaker": "Eli", "text": { "de": "Haben Sie das in Blau?", "fa": "آبی دارید؟" } },
+        { "speaker": "Verkäufer", "text": { "de": "Ja, wir haben Blau, Rot und Grün.", "fa": "بله، آبی، قرمز و سبز داریم." } },
+        { "speaker": "Eli", "text": { "de": "Ich nehme das blaue Kleid.", "fa": "لباس آبی را می‌برم." } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "الی دنبال چه چیزی می‌گردد؟", "options": ["پیراهن", "لباس", "کفش"], "correctIndex": 1 },
+        { "question": "الی چه رنگی انتخاب می‌کند؟", "options": ["قرمز", "سبز", "آبی"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "w1",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["ist", "Das", "rot.", "Hemd"],
+      "correctOrder": [1, 3, 0, 2],
+      "correctSentence": { "de": "Das Hemd ist rot.", "fa": "پیراهن قرمز است." }
+    },
+    {
+      "type": "word-order",
+      "id": "w2",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["Farbe", "Welche", "das?", "hat"],
+      "correctOrder": [1, 0, 3, 2],
+      "correctSentence": { "de": "Welche Farbe hat das?", "fa": "این چه رنگی دارد؟" }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "رنگ‌ها را با ترجمه‌شان جفت کنید",
+      "items": [
+        { "id": "i1", "text": "rot" },
+        { "id": "i2", "text": "blau" },
+        { "id": "i3", "text": "schwarz" },
+        { "id": "i4", "text": "weiß" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "قرمز" },
+        { "id": "m2", "text": "آبی" },
+        { "id": "m3", "text": "سیاه" },
+        { "id": "m4", "text": "سفید" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"],
+        ["i4", "m4"]
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "«Die Hose ist braun» یعنی چه؟",
+      "options": ["شلوار سیاه است", "شلوار قهوه‌ای است", "شلوار خاکستری است", "شلوار سفید است"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "braun = قهوه‌ای" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "برای پرسیدن «چه رنگی؟» چه می‌گوییم؟",
+      "options": ["Was Farbe?", "Welche Farbe?", "Wie Farbe?", "Wo Farbe?"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "Welche Farbe? = چه رنگی؟" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} Farbe hat das T-Shirt?",
+      "options": ["Was", "Welche", "Wie", "Wo"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "برای پرسیدن رنگ از Welche استفاده می‌کنیم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Jacke ist {0} und {1}.",
+      "options": ["schwarz", "weiß"],
+      "correctAnswers": [0, 1],
+      "feedback": { "explanation": "ژاکت سیاه و سفید است." }
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Das Hemd ist blau.",
+      "translation": "پیراهن آبی است.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Welche Farbe hat die Hose?",
+      "translation": "شلوار چه رنگی است؟",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-3",
+      "targetText": "Ich mag die Farbe Grün.",
+      "translation": "من رنگ سبز را دوست دارم.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "memory-match",
+      "id": "g3",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "rot", "fa": "قرمز" },
+        { "de": "blau", "fa": "آبی" },
+        { "de": "grün", "fa": "سبز" },
+        { "de": "gelb", "fa": "زرد" },
+        { "de": "schwarz", "fa": "سیاه" },
+        { "de": "weiß", "fa": "سفید" }
+      ],
+      "timeLimit": 60
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "die Farbe", "fa": "رنگ" },
+        { "de": "rot", "fa": "قرمز" },
+        { "de": "blau", "fa": "آبی" },
+        { "de": "grün", "fa": "سبز" },
+        { "de": "gelb", "fa": "زرد" },
+        { "de": "schwarz", "fa": "سیاه" },
+        { "de": "weiß", "fa": "سفید" },
+        { "de": "braun", "fa": "قهوه‌ای" },
+        { "de": "grau", "fa": "خاکستری" },
+        { "de": "rosa", "fa": "صورتی" },
+        { "de": "orange", "fa": "نارنجی" },
+        { "de": "lila", "fa": "بنفش" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما یاد گرفتید رنگ‌ها را به آلمانی بگویید!\n\n🎨 **رنگ‌های اصلی:**\nrot, blau, grün, gelb\n\n⚫ **رنگ‌های خنثی:**\nschwarz, weiß, grau, braun\n\n🌸 **رنگ‌های خاص:**\nrosa, orange, lila\n\n❓ **سوال کلیدی:**\nWelche Farbe hat...? = چه رنگی دارد...؟",
+      "xpEarned": 50,
+      "nextLessonId": "A1-M11-L03",
+      "vocabularyLearned": [
+        { "word": { "de": "die Farbe", "fa": "رنگ" } },
+        { "word": { "de": "rot", "fa": "قرمز" } },
+        { "word": { "de": "blau", "fa": "آبی" } },
+        { "word": { "de": "grün", "fa": "سبز" } },
+        { "word": { "de": "gelb", "fa": "زرد" } },
+        { "word": { "de": "schwarz", "fa": "سیاه" } },
+        { "word": { "de": "weiß", "fa": "سفید" } },
+        { "word": { "de": "braun", "fa": "قهوه‌ای" } },
+        { "word": { "de": "grau", "fa": "خاکستری" } },
+        { "word": { "de": "rosa", "fa": "صورتی" } },
+        { "word": { "de": "orange", "fa": "نارنجی" } },
+        { "word": { "de": "lila", "fa": "بنفش" } }
+      ]
+    }
+  ]
+}

@@ -376,6 +376,12 @@ const DE_FA_A1_MODULES: ModuleStub[] = [
         title: "لباس (Kleidung)",
         description: "یاد بگیرید نام لباس‌ها را به آلمانی بگویید.",
         path: "/learn/de-fa/A1/A1-M11-L01"
+      },
+      {
+        id: "A1-M11-L02",
+        title: "رنگ‌ها (Farben)",
+        description: "یاد بگیرید رنگ‌ها را به آلمانی بگویید.",
+        path: "/learn/de-fa/A1/A1-M11-L02"
       }
     ]
   }
