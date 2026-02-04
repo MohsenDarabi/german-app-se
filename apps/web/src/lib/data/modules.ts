@@ -646,6 +646,12 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         title: "hätte und wäre",
         description: "یاد بگیرید فرم شرطی haben و sein را برای آرزوها و موقعیت‌های فرضی.",
         path: "/learn/de-fa/A2/A2-M06-L02"
+      },
+      {
+        id: "A2-M06-L03",
+        title: "Modalverben - فعل‌های وجهی",
+        description: "یاد بگیرید فرم شرطی فعل‌های وجهی را: könnte, müsste, sollte, dürfte.",
+        path: "/learn/de-fa/A2/A2-M06-L03"
       }
     ]
   }

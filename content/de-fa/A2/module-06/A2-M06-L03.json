@@ -1,0 +1,390 @@
+{
+  "id": "A2-M06-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Konjunktiv II - Modalverben", "fa": "شرطی - فعل‌های وجهی" },
+  "description": "یاد بگیرید فرم شرطی فعل‌های وجهی را: könnte, müsste, sollte, dürfte",
+  "level": "A2",
+  "module": 6,
+  "lessonNumber": 3,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "könnte", "fa": "می‌توانستم / شاید", "grammar": { "pos": "verb", "tense": "konjunktiv II", "infinitive": "können" } },
+    { "de": "müsste", "fa": "باید (شرطی)", "grammar": { "pos": "verb", "tense": "konjunktiv II", "infinitive": "müssen" } },
+    { "de": "sollte", "fa": "باید / بهتره", "grammar": { "pos": "verb", "tense": "konjunktiv II", "infinitive": "sollen" } },
+    { "de": "dürfte", "fa": "احتمالاً / شاید", "grammar": { "pos": "verb", "tense": "konjunktiv II", "infinitive": "dürfen" } },
+    { "de": "helfen", "fa": "کمک کردن", "grammar": { "pos": "verb", "infinitive": "helfen" } },
+    { "de": "stimmen", "fa": "درست بودن", "grammar": { "pos": "verb", "infinitive": "stimmen" } },
+    { "de": "vielleicht", "fa": "شاید", "grammar": { "pos": "adverb" } },
+    { "de": "eigentlich", "fa": "در واقع", "grammar": { "pos": "adverb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "فعل‌های وجهی در Konjunktiv II",
+      "content": "📝 **فرم شرطی فعل‌های وجهی:**\n\n• könnte = می‌توانستم (مودبانه‌تر از kann)\n• müsste = باید (شرطی)\n• sollte = بهتره / باید\n• dürfte = احتمالاً / شاید\n\n💡 این فرم‌ها مودبانه‌تر و نرم‌تر هستند",
+      "examples": [
+        { "de": "Könntest du mir helfen?", "fa": "می‌تونی کمکم کنی؟" },
+        { "de": "Du solltest mehr schlafen.", "fa": "بهتره بیشتر بخوابی." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "könnte", "fa": "می‌توانستم / شاید" },
+      "example": { "text": { "de": "Das könnte stimmen.", "fa": "شاید درست باشد." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "müsste", "fa": "باید (شرطی)" },
+      "example": { "text": { "de": "Ich müsste jetzt gehen.", "fa": "الان باید بروم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "sollte", "fa": "باید / بهتره" },
+      "example": { "text": { "de": "Du solltest das machen.", "fa": "بهتره این کار را بکنی." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "صرف könnte",
+      "content": "📝 **صرف könnte:**\n\n| ضمیر | könnte |\n|------|--------|\n| ich | könnte |\n| du | könntest |\n| er/sie/es | könnte |\n| wir | könnten |\n| ihr | könntet |\n| sie/Sie | könnten |\n\n💡 مودبانه‌تر از kann برای درخواست",
+      "examples": [
+        { "de": "Könnten Sie mir helfen?", "fa": "می‌توانید کمکم کنید؟" },
+        { "de": "Ich könnte morgen kommen.", "fa": "فردا می‌توانم بیایم." }
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "könnte",
+      "translation": "می‌توانستم",
+      "syllables": ["könn", "te"],
+      "distractors": ["kann", "ta", "kun", "tu"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله مودبانه‌تر است؟",
+      "options": ["Kannst du mir helfen?", "Könntest du mir helfen?", "Hilf mir!", "Du musst mir helfen."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! könntest مودبانه‌تر از kannst است", "incorrect": "könntest مودبانه‌تر است" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "«شاید درست باشد» به آلمانی چیست؟",
+      "options": ["Das kann stimmen.", "Das konnte stimmen.", "Das könnte stimmen.", "Das wird stimmen."],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! könnte برای احتمال", "incorrect": "könnte = شاید" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} Sie mir bitte helfen?",
+      "options": ["Können", "Könnten", "Konnten", "Kann"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Könnten Sie... مودبانه‌ترین فرم" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das {0} wahr sein.",
+      "options": ["kann", "könnte", "konnte", "können"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "könnte برای احتمال" }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "dürfte", "fa": "احتمالاً / شاید" },
+      "example": { "text": { "de": "Das dürfte richtig sein.", "fa": "احتمالاً درست است." } }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "درخواست مودبانه",
+      "context": "در دفتر کار",
+      "lines": [
+        { "speaker": "Mitarbeiter", "text": { "de": "Könnten Sie mir kurz helfen?", "fa": "می‌توانید یک لحظه کمکم کنید؟" } },
+        { "speaker": "Chef", "text": { "de": "Ja, natürlich. Was gibt es?", "fa": "بله، البته. چی شده؟" } },
+        { "speaker": "Mitarbeiter", "text": { "de": "Ich müsste diese E-Mail überprüfen.", "fa": "باید این ایمیل را بررسی کنم." } },
+        { "speaker": "Chef", "text": { "de": "Kein Problem. Das könnte ich machen.", "fa": "مشکلی نیست. می‌توانم انجام بدهم." } }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "sollte برای توصیه",
+      "content": "📝 **sollte برای توصیه و پیشنهاد:**\n\n• Du solltest mehr Sport machen.\n  (بهتره بیشتر ورزش کنی.)\n• Er sollte zum Arzt gehen.\n  (بهتره بره دکتر.)\n\n💡 sollte نرم‌تر از musst است",
+      "examples": [
+        { "de": "Du solltest früher schlafen.", "fa": "بهتره زودتر بخوابی." },
+        { "de": "Wir sollten jetzt gehen.", "fa": "بهتره الان بریم." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "«بهتره بیشتر بخوابی» به آلمانی چیست؟",
+      "options": ["Du musst mehr schlafen.", "Du sollst mehr schlafen.", "Du solltest mehr schlafen.", "Du kannst mehr schlafen."],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! solltest برای توصیه نرم", "incorrect": "solltest = بهتره (توصیه)" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["helfen?", "mir", "du", "Könntest"],
+      "correctOrder": [3, 2, 1, 0],
+      "correctSentence": { "de": "Könntest du mir helfen?", "fa": "می‌تونی کمکم کنی؟" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["schlafen.", "mehr", "solltest", "Du"],
+      "correctOrder": [3, 2, 1, 0],
+      "correctSentence": { "de": "Du solltest mehr schlafen.", "fa": "بهتره بیشتر بخوابی." }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "sollte",
+      "translation": "باید / بهتره",
+      "syllables": ["soll", "te"],
+      "distractors": ["sal", "ta", "sul", "tu"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Du {0} zum Arzt gehen.",
+      "options": ["musst", "sollst", "solltest", "kannst"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "solltest برای توصیه نرم" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Wir {0} jetzt gehen.",
+      "options": ["müssen", "sollten", "können", "wollen"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "sollten = بهتره (جمع)" }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "helfen", "fa": "کمک کردن" },
+      "example": { "text": { "de": "Könntest du mir helfen?", "fa": "می‌تونی کمکم کنی؟" } }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "stimmen", "fa": "درست بودن" },
+      "example": { "text": { "de": "Das dürfte stimmen.", "fa": "احتمالاً درست است." } }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "توصیه پزشک",
+      "context": "پزشک به بیمار توصیه می‌کند",
+      "lines": [
+        { "speaker": "Arzt", "text": { "de": "Sie sollten mehr Wasser trinken.", "fa": "بهتره آب بیشتری بنوشید." } },
+        { "speaker": "Patient", "text": { "de": "Wie viel sollte ich trinken?", "fa": "چقدر باید بنوشم؟" } },
+        { "speaker": "Arzt", "text": { "de": "Sie müssten zwei Liter pro Tag trinken.", "fa": "باید روزی دو لیتر بنوشید." } },
+        { "speaker": "Patient", "text": { "de": "Das könnte schwer sein.", "fa": "شاید سخت باشد." } },
+        { "speaker": "Arzt", "text": { "de": "Sie könnten auch Tee trinken.", "fa": "می‌توانید چای هم بنوشید." } }
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "müsste",
+      "translation": "باید (شرطی)",
+      "syllables": ["müss", "te"],
+      "distractors": ["mass", "ta", "miss", "tu"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s10",
+      "title": "dürfte برای احتمال",
+      "content": "📝 **dürfte برای احتمال بالا:**\n\n• Das dürfte stimmen. = احتمالاً درست است.\n• Er dürfte etwa 30 sein. = احتمالاً حدود ۳۰ ساله است.\n\n💡 dürfte نشان‌دهنده احتمال زیاد است (نه اجازه)",
+      "examples": [
+        { "de": "Das dürfte richtig sein.", "fa": "احتمالاً درست است." },
+        { "de": "Sie dürfte bald kommen.", "fa": "احتمالاً زود می‌آید." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "«احتمالاً درست است» به آلمانی چیست؟",
+      "options": ["Das ist richtig.", "Das war richtig.", "Das dürfte richtig sein.", "Das muss richtig sein."],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! dürfte برای احتمال بالا", "incorrect": "dürfte = احتمالاً" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er {0} etwa 40 Jahre alt sein.",
+      "options": ["muss", "dürfte", "kann", "soll"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "dürfte برای تخمین با احتمال بالا" }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "فعل شرطی را با معنی وصل کنید",
+      "items": [
+        { "id": "i1", "text": "könnte" },
+        { "id": "i2", "text": "müsste" },
+        { "id": "i3", "text": "sollte" },
+        { "id": "i4", "text": "dürfte" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "می‌توانستم / شاید" },
+        { "id": "m2", "text": "باید (شرطی)" },
+        { "id": "m3", "text": "بهتره" },
+        { "id": "m4", "text": "احتمالاً" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"],
+        ["i4", "m4"]
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "کدام فعل؟",
+      "instruction": "فعل مناسب را انتخاب کنید",
+      "questions": [
+        { "prompt": "درخواست مودبانه:", "left": "könntest", "right": "kannst", "correctSide": "left" },
+        { "prompt": "توصیه نرم:", "left": "musst", "right": "solltest", "correctSide": "right" },
+        { "prompt": "احتمال بالا:", "left": "dürfte", "right": "kann", "correctSide": "left" },
+        { "prompt": "باید (شرطی):", "left": "muss", "right": "müsste", "correctSide": "right" },
+        { "prompt": "شاید ممکن باشد:", "left": "könnte", "right": "kann", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["sein.", "richtig", "dürfte", "Das"],
+      "correctOrder": [3, 2, 1, 0],
+      "correctSentence": { "de": "Das dürfte richtig sein.", "fa": "احتمالاً درست است." }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "dürfte",
+      "translation": "احتمالاً",
+      "syllables": ["dürf", "te"],
+      "distractors": ["darf", "ta", "derf", "tu"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich {0} eigentlich jetzt gehen.",
+      "options": ["muss", "müsste", "kann", "soll"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "müsste = باید (نرم‌تر از muss)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d3",
+      "title": "برنامه‌ریزی",
+      "context": "دوستان برای آخر هفته برنامه می‌ریزند",
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Wir könnten ins Kino gehen.", "fa": "می‌تونیم بریم سینما." } },
+        { "speaker": "Tom", "text": { "de": "Ja, das dürfte Spaß machen!", "fa": "آره، احتمالاً خوش می‌گذره!" } },
+        { "speaker": "Lisa", "text": { "de": "Aber wir sollten früh gehen.", "fa": "ولی بهتره زود بریم." } },
+        { "speaker": "Tom", "text": { "de": "Stimmt. Ich müsste vorher noch einkaufen.", "fa": "درسته. قبلش باید خرید کنم." } }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc5",
+      "question": "کدام جمله برای توصیه مناسب است؟",
+      "options": ["Du musst das machen.", "Du solltest das machen.", "Du kannst das machen.", "Du willst das machen."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! solltest برای توصیه نرم", "incorrect": "solltest نرم‌ترین فرم برای توصیه است" }
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی صحیح را انتخاب کنید",
+      "words": [
+        { "de": "könnte", "fa": "می‌توانستم / شاید", "options": ["می‌توانستم / شاید", "می‌توانم", "توانستم", "خواهم توانست"], "correctIndex": 0 },
+        { "de": "sollte", "fa": "بهتره", "options": ["باید (قوی)", "بهتره", "می‌توانم", "می‌خواهم"], "correctIndex": 1 },
+        { "de": "dürfte", "fa": "احتمالاً", "options": ["اجازه دارم", "احتمالاً", "باید", "می‌خواهم"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo4",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["gehen.", "jetzt", "müsste", "Ich"],
+      "correctOrder": [3, 2, 1, 0],
+      "correctSentence": { "de": "Ich müsste jetzt gehen.", "fa": "الان باید بروم." }
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Könntest du mir helfen?",
+      "translation": "می‌تونی کمکم کنی؟"
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Du solltest mehr schlafen.",
+      "translation": "بهتره بیشتر بخوابی."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Das dürfte stimmen.",
+      "translation": "احتمالاً درست است."
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "könnte", "fa": "می‌توانستم" },
+        { "de": "müsste", "fa": "باید (شرطی)" },
+        { "de": "sollte", "fa": "بهتره" },
+        { "de": "dürfte", "fa": "احتمالاً" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp1",
+      "title": "آفرین! 🎉",
+      "message": "فرم شرطی فعل‌های وجهی را یاد گرفتید!",
+      "keyPoints": [
+        "könnte = می‌توانستم (مودبانه‌تر از kann)",
+        "sollte = بهتره (نرم‌تر از musst)",
+        "müsste = باید (شرطی)",
+        "dürfte = احتمالاً (برای تخمین)",
+        "Könntest du...? = درخواست مودبانه"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "könnte", "fa": "می‌توانستم" } },
+        { "word": { "de": "müsste", "fa": "باید (شرطی)" } },
+        { "word": { "de": "sollte", "fa": "بهتره" } },
+        { "word": { "de": "dürfte", "fa": "احتمالاً" } },
+        { "word": { "de": "helfen", "fa": "کمک کردن" } }
+      ]
+    }
+  ]
+}
