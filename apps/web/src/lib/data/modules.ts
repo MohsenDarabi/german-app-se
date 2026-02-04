@@ -382,6 +382,12 @@ const DE_FA_A1_MODULES: ModuleStub[] = [
         title: "رنگ‌ها (Farben)",
         description: "یاد بگیرید رنگ‌ها را به آلمانی بگویید.",
         path: "/learn/de-fa/A1/A1-M11-L02"
+      },
+      {
+        id: "A1-M11-L03",
+        title: "چه رنگی دارد؟ (Welche Farbe hat...?)",
+        description: "یاد بگیرید لباس‌ها را با رنگ توصیف کنید.",
+        path: "/learn/de-fa/A1/A1-M11-L03"
       }
     ]
   }

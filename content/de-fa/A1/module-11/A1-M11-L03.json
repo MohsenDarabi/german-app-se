@@ -1,0 +1,363 @@
+{
+  "id": "A1-M11-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Welche Farbe hat...?", "fa": "چه رنگی دارد...؟" },
+  "description": "یاد بگیرید لباس‌ها را با رنگ توصیف کنید",
+  "level": "A1",
+  "module": 11,
+  "lessonNumber": 3,
+  "totalSteps": 42,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "das rote Kleid", "fa": "لباس قرمز", "grammar": { "pos": "phrase" } },
+    { "de": "die blaue Hose", "fa": "شلوار آبی", "grammar": { "pos": "phrase" } },
+    { "de": "der schwarze Mantel", "fa": "پالتوی سیاه", "grammar": { "pos": "phrase" } },
+    { "de": "ein weißes Hemd", "fa": "یک پیراهن سفید", "grammar": { "pos": "phrase" } },
+    { "de": "eine grüne Jacke", "fa": "یک ژاکت سبز", "grammar": { "pos": "phrase" } },
+    { "de": "hell", "fa": "روشن", "grammar": { "pos": "adjective" } },
+    { "de": "dunkel", "fa": "تیره", "grammar": { "pos": "adjective" } },
+    { "de": "hellblau", "fa": "آبی روشن", "grammar": { "pos": "adjective" } },
+    { "de": "dunkelgrün", "fa": "سبز تیره", "grammar": { "pos": "adjective" } },
+    { "de": "gefallen", "fa": "خوش آمدن", "grammar": { "pos": "verb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "رنگ + لباس",
+      "content": "در این درس یاد می‌گیرید لباس‌ها را با رنگ توصیف کنید:\n\n👔 **با der/die/das:**\n• das rot**e** Kleid = لباس قرمز\n• die blau**e** Hose = شلوار آبی\n• der schwarz**e** Mantel = پالتوی سیاه\n\n💡 **نکته:** بعد از der/die/das، صفت پسوند **-e** می‌گیرد!",
+      "examples": [
+        { "de": "Das rote Kleid ist schön.", "fa": "لباس قرمز زیباست." },
+        { "de": "Ich mag die blaue Hose.", "fa": "شلوار آبی را دوست دارم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "das rote Kleid", "fa": "لباس قرمز" },
+      "example": { "text": { "de": "Das rote Kleid gefällt mir.", "fa": "لباس قرمز را دوست دارم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "die blaue Hose", "fa": "شلوار آبی" },
+      "example": { "text": { "de": "Die blaue Hose ist zu teuer.", "fa": "شلوار آبی خیلی گران است." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "der schwarze Mantel", "fa": "پالتوی سیاه" },
+      "example": { "text": { "de": "Der schwarze Mantel ist warm.", "fa": "پالتوی سیاه گرم است." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "پسوند -e بعد از der/die/das",
+      "content": "🎨 **قانون ساده:**\n\nبعد از **der, die, das** صفت همیشه **-e** می‌گیرد:\n\n| حرف تعریف | صفت + اسم |\n|------------|------------|\n| **der** | der rot**e** Rock |\n| **die** | die blau**e** Jacke |\n| **das** | das grün**e** Hemd |\n\n✅ همه با **-e** تمام می‌شوند!",
+      "examples": [
+        { "de": "der weiße Schuh", "fa": "کفش سفید" },
+        { "de": "die gelbe Bluse", "fa": "بلوز زرد" },
+        { "de": "das graue T-Shirt", "fa": "تی‌شرت خاکستری" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام درست است؟",
+      "options": ["das rot Kleid", "das rote Kleid", "das roter Kleid", "das roten Kleid"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "بعد از das، صفت پسوند -e می‌گیرد: das rote Kleid" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die {0} Hose ist schön.",
+      "options": ["blau", "blaue", "blauer", "blauen"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "بعد از die، صفت پسوند -e می‌گیرد: die blaue Hose" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Der {0} Mantel gefällt mir.",
+      "options": ["schwarz", "schwarze", "schwarzer", "schwarzen"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "بعد از der، صفت پسوند -e می‌گیرد: der schwarze Mantel" }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "صفت با -e",
+      "instruction": "شکل درست صفت را انتخاب کنید",
+      "questions": [
+        { "prompt": "das ___ Hemd (weiß)", "left": "weiße", "right": "weißer", "correctSide": "left" },
+        { "prompt": "die ___ Jacke (grün)", "left": "grüner", "right": "grüne", "correctSide": "right" },
+        { "prompt": "der ___ Rock (rot)", "left": "rote", "right": "roter", "correctSide": "left" },
+        { "prompt": "das ___ T-Shirt (blau)", "left": "blaue", "right": "blauer", "correctSide": "left" },
+        { "prompt": "die ___ Schuhe (schwarz)", "left": "schwarze", "right": "schwarzen", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "ein weißes Hemd", "fa": "یک پیراهن سفید" },
+      "example": { "text": { "de": "Er trägt ein weißes Hemd.", "fa": "او یک پیراهن سفید می‌پوشد." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "eine grüne Jacke", "fa": "یک ژاکت سبز" },
+      "example": { "text": { "de": "Ich kaufe eine grüne Jacke.", "fa": "یک ژاکت سبز می‌خرم." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s8",
+      "title": "پسوند بعد از ein/eine",
+      "content": "🎨 **با ein/eine پسوند متفاوت است:**\n\n| جنسیت | ein/eine | پسوند صفت |\n|--------|----------|------------|\n| مذکر | ein | rot**er** Rock |\n| مونث | eine | grün**e** Jacke |\n| خنثی | ein | weiß**es** Hemd |\n\n📝 **خلاصه:**\n• ein + مذکر → **-er**\n• eine + مونث → **-e**\n• ein + خنثی → **-es**",
+      "examples": [
+        { "de": "ein roter Rock", "fa": "یک دامن قرمز" },
+        { "de": "eine blaue Hose", "fa": "یک شلوار آبی" },
+        { "de": "ein schwarzes Kleid", "fa": "یک لباس سیاه" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "«یک پیراهن سفید» به آلمانی چه می‌شود؟ (das Hemd)",
+      "options": ["ein weiße Hemd", "ein weißer Hemd", "ein weißes Hemd", "eine weiße Hemd"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین!", "incorrect": "das Hemd خنثی است، پس: ein weißes Hemd (پسوند -es)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sie trägt ein {0} Kleid.",
+      "options": ["schwarze", "schwarzer", "schwarzes", "schwarz"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "das Kleid خنثی است، با ein پسوند -es: ein schwarzes Kleid" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er kauft ein {0} Mantel.",
+      "options": ["braune", "brauner", "braunes", "braun"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "der Mantel مذکر است، با ein پسوند -er: ein brauner Mantel" }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "hell", "fa": "روشن" },
+      "example": { "text": { "de": "Die Farbe ist sehr hell.", "fa": "رنگ خیلی روشن است." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": { "de": "dunkel", "fa": "تیره" },
+      "example": { "text": { "de": "Ich mag dunkle Farben.", "fa": "رنگ‌های تیره را دوست دارم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-dunkel",
+      "word": "dunkel",
+      "translation": "تیره",
+      "syllables": ["dun", "kel"],
+      "distractors": ["don", "kal", "dan", "kol"]
+    },
+    {
+      "type": "new-word",
+      "id": "s11",
+      "word": { "de": "hellblau", "fa": "آبی روشن" },
+      "example": { "text": { "de": "Das hellblaue Hemd ist schön.", "fa": "پیراهن آبی روشن زیباست." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s12",
+      "word": { "de": "dunkelgrün", "fa": "سبز تیره" },
+      "example": { "text": { "de": "Ich trage eine dunkelgrüne Jacke.", "fa": "یک ژاکت سبز تیره می‌پوشم." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s13",
+      "title": "hell + رنگ / dunkel + رنگ",
+      "content": "🎨 **ترکیب رنگ‌ها:**\n\n**hell** (روشن) + رنگ:\n• hellblau = آبی روشن\n• hellgrün = سبز روشن\n• hellrot = قرمز روشن\n\n**dunkel** (تیره) + رنگ:\n• dunkelblau = آبی تیره\n• dunkelgrün = سبز تیره\n• dunkelrot = قرمز تیره\n\n📝 یک کلمه می‌شوند!",
+      "examples": [
+        { "de": "ein hellblaues T-Shirt", "fa": "یک تی‌شرت آبی روشن" },
+        { "de": "eine dunkelrote Jacke", "fa": "یک ژاکت قرمز تیره" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s14",
+      "word": { "de": "gefallen", "fa": "خوش آمدن" },
+      "example": { "text": { "de": "Das Kleid gefällt mir.", "fa": "لباس را دوست دارم." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s15",
+      "title": "gefallen - خوش آمدن",
+      "content": "❤️ **gefallen** = خوش آمدن (به کسی)\n\n• Das Kleid **gefällt mir**. = لباس را دوست دارم.\n• Die Schuhe **gefallen mir**. = کفش‌ها را دوست دارم.\n\n📝 **ساختار:**\nچیز + gefällt/gefallen + mir/dir/ihm/ihr\n\n⚠️ **جمع:** Die Schuhe gefallen mir. (نه: gefällt)",
+      "examples": [
+        { "de": "Gefällt dir das rote Kleid?", "fa": "لباس قرمز را دوست داری؟" },
+        { "de": "Die blaue Hose gefällt mir nicht.", "fa": "شلوار آبی را دوست ندارم." }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در فروشگاه لباس",
+      "context": "الی در فروشگاه لباس است",
+      "lines": [
+        { "speaker": "Verkäuferin", "text": { "de": "Kann ich Ihnen helfen?", "fa": "می‌توانم کمکتان کنم؟" } },
+        { "speaker": "Eli", "text": { "de": "Ja, ich suche ein Kleid.", "fa": "بله، دنبال یک لباس می‌گردم." } },
+        { "speaker": "Verkäuferin", "text": { "de": "Welche Farbe möchten Sie?", "fa": "چه رنگی می‌خواهید؟" } },
+        { "speaker": "Eli", "text": { "de": "Ich mag dunkle Farben. Haben Sie etwas in Dunkelblau?", "fa": "رنگ‌های تیره دوست دارم. آبی تیره دارید؟" } },
+        { "speaker": "Verkäuferin", "text": { "de": "Ja, hier ist ein dunkelblaues Kleid.", "fa": "بله، اینجا یک لباس آبی تیره است." } },
+        { "speaker": "Eli", "text": { "de": "Oh, das gefällt mir! Kann ich es anprobieren?", "fa": "اوه، دوستش دارم! می‌توانم امتحانش کنم؟" } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "الی چه رنگی دوست دارد؟", "options": ["روشن", "تیره", "سفید"], "correctIndex": 1 },
+        { "question": "لباس چه رنگی است؟", "options": ["آبی روشن", "آبی تیره", "سبز تیره"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "w1",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["mir.", "Kleid", "Das", "gefällt", "rote"],
+      "correctOrder": [2, 4, 1, 3, 0],
+      "correctSentence": { "de": "Das rote Kleid gefällt mir.", "fa": "لباس قرمز را دوست دارم." }
+    },
+    {
+      "type": "word-order",
+      "id": "w2",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["Hemd.", "weißes", "ein", "trägt", "Er"],
+      "correctOrder": [4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Er trägt ein weißes Hemd.", "fa": "او یک پیراهن سفید می‌پوشد." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "عبارات را با ترجمه جفت کنید",
+      "items": [
+        { "id": "i1", "text": "das rote Kleid" },
+        { "id": "i2", "text": "ein weißes Hemd" },
+        { "id": "i3", "text": "die blaue Hose" },
+        { "id": "i4", "text": "hellgrün" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "شلوار آبی" },
+        { "id": "m2", "text": "لباس قرمز" },
+        { "id": "m3", "text": "سبز روشن" },
+        { "id": "m4", "text": "یک پیراهن سفید" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m4"],
+        ["i3", "m1"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "«Das Kleid gefällt mir» یعنی چه؟",
+      "options": ["لباس مال من است", "لباس را دوست دارم", "لباس می‌خرم", "لباس می‌پوشم"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "gefallen = خوش آمدن، پس: لباس را دوست دارم" }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "رنگ‌های ترکیبی",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "hellblau", "left": "آبی روشن", "right": "آبی تیره", "correctSide": "left" },
+        { "prompt": "dunkelgrün", "left": "سبز روشن", "right": "سبز تیره", "correctSide": "right" },
+        { "prompt": "hellrot", "left": "قرمز روشن", "right": "قرمز تیره", "correctSide": "left" },
+        { "prompt": "dunkelblau", "left": "آبی روشن", "right": "آبی تیره", "correctSide": "right" },
+        { "prompt": "hell", "left": "روشن", "right": "تیره", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Das rote Kleid gefällt mir.",
+      "translation": "لباس قرمز را دوست دارم.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Er trägt ein weißes Hemd.",
+      "translation": "او یک پیراهن سفید می‌پوشد.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-3",
+      "targetText": "Ich mag dunkle Farben.",
+      "translation": "رنگ‌های تیره را دوست دارم.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "memory-match",
+      "id": "g3",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "das rote Kleid", "fa": "لباس قرمز" },
+        { "de": "die blaue Hose", "fa": "شلوار آبی" },
+        { "de": "hellblau", "fa": "آبی روشن" },
+        { "de": "dunkelgrün", "fa": "سبز تیره" },
+        { "de": "gefallen", "fa": "خوش آمدن" },
+        { "de": "hell", "fa": "روشن" }
+      ],
+      "timeLimit": 60
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "das rote Kleid", "fa": "لباس قرمز" },
+        { "de": "die blaue Hose", "fa": "شلوار آبی" },
+        { "de": "der schwarze Mantel", "fa": "پالتوی سیاه" },
+        { "de": "ein weißes Hemd", "fa": "یک پیراهن سفید" },
+        { "de": "hell", "fa": "روشن" },
+        { "de": "dunkel", "fa": "تیره" },
+        { "de": "hellblau", "fa": "آبی روشن" },
+        { "de": "dunkelgrün", "fa": "سبز تیره" },
+        { "de": "gefallen", "fa": "خوش آمدن" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما یاد گرفتید لباس‌ها را با رنگ توصیف کنید!\n\n🎨 **پسوند صفت بعد از der/die/das:**\nهمیشه **-e**: das rote Kleid, die blaue Hose\n\n🎨 **پسوند صفت بعد از ein/eine:**\n• مذکر: -er (ein roter Rock)\n• مونث: -e (eine grüne Jacke)\n• خنثی: -es (ein weißes Hemd)\n\n🌈 **رنگ‌های ترکیبی:**\nhell + رنگ = روشن\ndunkel + رنگ = تیره",
+      "xpEarned": 50,
+      "nextLessonId": "A1-M11-L04",
+      "vocabularyLearned": [
+        { "word": { "de": "das rote Kleid", "fa": "لباس قرمز" } },
+        { "word": { "de": "die blaue Hose", "fa": "شلوار آبی" } },
+        { "word": { "de": "der schwarze Mantel", "fa": "پالتوی سیاه" } },
+        { "word": { "de": "ein weißes Hemd", "fa": "یک پیراهن سفید" } },
+        { "word": { "de": "eine grüne Jacke", "fa": "یک ژاکت سبز" } },
+        { "word": { "de": "hell", "fa": "روشن" } },
+        { "word": { "de": "dunkel", "fa": "تیره" } },
+        { "word": { "de": "hellblau", "fa": "آبی روشن" } },
+        { "word": { "de": "dunkelgrün", "fa": "سبز تیره" } },
+        { "word": { "de": "gefallen", "fa": "خوش آمدن" } }
+      ]
+    }
+  ]
+}
