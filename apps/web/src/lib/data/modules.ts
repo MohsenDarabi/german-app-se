@@ -683,6 +683,12 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         title: "Dativ - متممی",
         description: "یاد بگیرید جملات موصولی بسازید با dem, der, denen به عنوان متمم.",
         path: "/learn/de-fa/A2/A2-M07-L03"
+      },
+      {
+        id: "A2-M07-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "تمرین ترکیبی همه ضمایر موصولی در Nominativ, Akkusativ و Dativ.",
+        path: "/learn/de-fa/A2/A2-M07-L04"
       }
     ]
   }

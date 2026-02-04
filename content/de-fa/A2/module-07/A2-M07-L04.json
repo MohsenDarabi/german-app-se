@@ -1,0 +1,378 @@
+{
+  "id": "A2-M07-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Relativsätze - Zusammenfassung", "fa": "جملات موصولی - جمع‌بندی" },
+  "description": "تمرین ترکیبی همه ضمایر موصولی در Nominativ, Akkusativ و Dativ",
+  "level": "A2",
+  "module": 7,
+  "lessonNumber": 4,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "der/die/das (Nominativ)", "fa": "که (فاعل)", "grammar": { "pos": "pronoun", "case": "nominativ" } },
+    { "de": "den/die/das (Akkusativ)", "fa": "که (مفعول)", "grammar": { "pos": "pronoun", "case": "akkusativ" } },
+    { "de": "dem/der/denen (Dativ)", "fa": "که (متمم)", "grammar": { "pos": "pronoun", "case": "dativ" } },
+    { "de": "besuchen", "fa": "ملاقات کردن", "grammar": { "pos": "verb", "infinitive": "besuchen" } },
+    { "de": "einladen", "fa": "دعوت کردن", "grammar": { "pos": "verb", "infinitive": "einladen" } },
+    { "de": "zeigen", "fa": "نشان دادن", "grammar": { "pos": "verb", "infinitive": "zeigen" } },
+    { "de": "erklären", "fa": "توضیح دادن", "grammar": { "pos": "verb", "infinitive": "erklären" } },
+    { "de": "schenken", "fa": "هدیه دادن", "grammar": { "pos": "verb", "infinitive": "schenken" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "مرور کامل ضمایر موصولی",
+      "content": "📝 **جدول کامل ضمایر موصولی:**\n\n| جنس | Nom. | Akk. | Dat. |\n|-----|------|------|------|\n| مذکر | der | den | dem |\n| مؤنث | die | die | der |\n| خنثی | das | das | dem |\n| جمع | die | die | denen |\n\n💡 نقش در جمله موصولی تعیین‌کننده است!",
+      "examples": [
+        { "de": "Der Mann, der kommt... (فاعل)", "fa": "مردی که می‌آید..." },
+        { "de": "Der Mann, den ich sehe... (مفعول)", "fa": "مردی که می‌بینم..." },
+        { "de": "Der Mann, dem ich helfe... (متمم)", "fa": "مردی که کمکش می‌کنم..." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "besuchen", "fa": "ملاقات کردن" },
+      "example": { "text": { "de": "Der Freund, den ich besuche...", "fa": "دوستی که ملاقاتش می‌کنم..." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "einladen", "fa": "دعوت کردن" },
+      "example": { "text": { "de": "Die Frau, die ich einlade...", "fa": "زنی که دعوتش می‌کنم..." } }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "Der Mann, ___ dort steht, ist mein Vater. (فاعل)",
+      "options": ["den", "der", "dem", "denen"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! فاعل + مذکر = der", "incorrect": "در Nominativ: der Mann = der" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "Der Mann, ___ ich kenne, ist nett. (مفعول)",
+      "options": ["der", "den", "dem", "denen"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! مفعول + مذکر = den", "incorrect": "در Akkusativ: der Mann = den" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "Der Mann, ___ ich helfe, ist alt. (متمم)",
+      "options": ["der", "den", "dem", "denen"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! متمم + مذکر = dem", "incorrect": "در Dativ: der Mann = dem" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید (فاعل)",
+      "sentence": "Die Frau, {0} dort singt, ist berühmt.",
+      "options": ["der", "die", "den", "dem"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "فاعل + مؤنث = die" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید (مفعول)",
+      "sentence": "Die Frau, {0} ich sehe, ist schön.",
+      "options": ["der", "die", "den", "dem"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "مفعول + مؤنث = die (تغییر نمی‌کند)" }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "besuchen",
+      "translation": "ملاقات کردن",
+      "syllables": ["be", "su", "chen"],
+      "distractors": ["ba", "sa", "chan", "si"]
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "معرفی دوستان",
+      "context": "در یک مهمانی",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Das ist der Freund, der in Berlin wohnt.", "fa": "این دوستی است که در برلین زندگی می‌کند." } },
+        { "speaker": "Ben", "text": { "de": "Und die Frau, die neben ihm steht?", "fa": "و زنی که کنارش ایستاده؟" } },
+        { "speaker": "Anna", "text": { "de": "Das ist seine Schwester, der ich gestern geholfen habe.", "fa": "این خواهرش است که دیروز کمکش کردم." } },
+        { "speaker": "Ben", "text": { "de": "Ah, die Schwester, die du mir beschrieben hast!", "fa": "آه، خواهری که برایم توصیف کردی!" } }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s4",
+      "title": "چطور تشخیص دهیم؟",
+      "content": "📝 **راهنمای انتخاب حالت:**\n\n**Nominativ (فاعل):**\nضمیر موصولی کار را انجام می‌دهد\n→ Der Mann, der **arbeitet**...\n\n**Akkusativ (مفعول):**\nفاعل جدید + فعل عادی\n→ Der Mann, den ich **sehe**...\n\n**Dativ (متمم):**\nفعل Dativ (helfen, danken, geben...)\n→ Der Mann, dem ich **helfe**...",
+      "examples": [
+        { "de": "Das Kind, das spielt... (Nom.)", "fa": "بچه‌ای که بازی می‌کند..." },
+        { "de": "Das Kind, das ich sehe... (Akk.)", "fa": "بچه‌ای که می‌بینم..." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "zeigen", "fa": "نشان دادن" },
+      "example": { "text": { "de": "Der Freund, dem ich das Foto zeige...", "fa": "دوستی که عکس را بهش نشان می‌دهم..." } }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["nett.", "ist", "wohnt,", "hier", "der", "Mann,", "Der"],
+      "correctOrder": [6, 5, 4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Der Mann, der hier wohnt, ist nett.", "fa": "مردی که اینجا زندگی می‌کند، مهربان است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["interessant.", "ist", "lese,", "ich", "das", "Buch,", "Das"],
+      "correctOrder": [6, 5, 4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Das Buch, das ich lese, ist interessant.", "fa": "کتابی که می‌خوانم، جالب است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید (متمم)",
+      "sentence": "Die Frau, {0} ich danke, lächelt.",
+      "options": ["die", "der", "den", "dem"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "متمم + مؤنث = der" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید (فاعل)",
+      "sentence": "Das Kind, {0} dort spielt, ist klein.",
+      "options": ["der", "die", "das", "dem"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "فاعل + خنثی = das" }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "einladen",
+      "translation": "دعوت کردن",
+      "syllables": ["ein", "la", "den"],
+      "distractors": ["an", "li", "dan", "on"]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "Nom., Akk. یا Dat.?",
+      "instruction": "ضمیر موصولی صحیح را انتخاب کنید",
+      "questions": [
+        { "prompt": "Der Mann, ___ kommt (فاعل)", "left": "der", "right": "den", "correctSide": "left" },
+        { "prompt": "Der Mann, ___ ich sehe (مفعول)", "left": "der", "right": "den", "correctSide": "right" },
+        { "prompt": "Der Mann, ___ ich helfe (متمم)", "left": "den", "right": "dem", "correctSide": "right" },
+        { "prompt": "Die Frau, ___ singt (فاعل)", "left": "die", "right": "der", "correctSide": "left" },
+        { "prompt": "Die Frau, ___ ich danke (متمم)", "left": "die", "right": "der", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در دانشگاه",
+      "context": "دانشجویان صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Kennst du den Professor, der heute vorträgt?", "fa": "استادی که امروز سخنرانی می‌کند را می‌شناسی؟" } },
+        { "speaker": "Tom", "text": { "de": "Ja! Das ist der Professor, den ich letztes Semester hatte.", "fa": "بله! این استادی است که ترم گذشته داشتم." } },
+        { "speaker": "Lisa", "text": { "de": "Und die Studentin, der er das Buch gibt?", "fa": "و دانشجویی که کتاب را بهش می‌دهد؟" } },
+        { "speaker": "Tom", "text": { "de": "Das ist Maria, die beste Studentin, die ich kenne!", "fa": "این ماریاست، بهترین دانشجویی که می‌شناسم!" } }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "erklären", "fa": "توضیح دادن" },
+      "example": { "text": { "de": "Der Lehrer, der das erklärt...", "fa": "معلمی که آن را توضیح می‌دهد..." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "schenken", "fa": "هدیه دادن" },
+      "example": { "text": { "de": "Die Freundin, der ich das Geschenk schenke...", "fa": "دوستی که هدیه را بهش می‌دهم..." } }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "Die Leute, ___ dort warten, sind meine Freunde. (فاعل جمع)",
+      "options": ["der", "die", "dem", "denen"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! فاعل + جمع = die", "incorrect": "جمع در Nominativ: die" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc5",
+      "question": "Die Leute, ___ ich schreibe, antworten schnell. (متمم جمع)",
+      "options": ["der", "die", "dem", "denen"],
+      "correctAnswerIndex": 3,
+      "feedback": { "correct": "آفرین! متمم + جمع = denen", "incorrect": "جمع در Dativ: denen" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Kinder, {0} ich die Geschichte erzähle, hören zu.",
+      "options": ["die", "der", "dem", "denen"],
+      "correctAnswers": [3],
+      "feedback": { "explanation": "متمم + جمع = denen" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Der Film, {0} ich gestern gesehen habe, war toll.",
+      "options": ["der", "den", "dem", "das"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "مفعول + مذکر = den" }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "erklären",
+      "translation": "توضیح دادن",
+      "syllables": ["er", "klä", "ren"],
+      "distractors": ["ar", "kla", "ran", "kli"]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "جمله را با حالت صحیح وصل کنید",
+      "items": [
+        { "id": "i1", "text": "der Mann, der kommt" },
+        { "id": "i2", "text": "der Mann, den ich sehe" },
+        { "id": "i3", "text": "der Mann, dem ich helfe" },
+        { "id": "i4", "text": "die Leute, denen ich schreibe" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "Nominativ (فاعل)" },
+        { "id": "m2", "text": "Akkusativ (مفعول)" },
+        { "id": "m3", "text": "Dativ (متمم مذکر)" },
+        { "id": "m4", "text": "Dativ (متمم جمع)" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"],
+        ["i4", "m4"]
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["glücklich.", "ist", "helfe,", "ich", "dem", "Kind,", "Das"],
+      "correctOrder": [6, 5, 4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Das Kind, dem ich helfe, ist glücklich.", "fa": "بچه‌ای که کمکش می‌کنم، خوشحال است." }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "schenken",
+      "translation": "هدیه دادن",
+      "syllables": ["schen", "ken"],
+      "distractors": ["schan", "kan", "schin", "kun"]
+    },
+    {
+      "type": "dialog",
+      "id": "d3",
+      "title": "خانه جدید",
+      "context": "درباره همسایه‌ها صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Maria", "text": { "de": "Die Nachbarn, die neben uns wohnen, sind nett.", "fa": "همسایه‌هایی که کنار ما زندگی می‌کنند، مهربان هستند." } },
+        { "speaker": "Peter", "text": { "de": "Das Haus, das sie gekauft haben, ist schön.", "fa": "خانه‌ای که خریدند، زیباست." } },
+        { "speaker": "Maria", "text": { "de": "Der Mann, dem ich geholfen habe, ist Arzt.", "fa": "مردی که کمکش کردم، دکتر است." } },
+        { "speaker": "Peter", "text": { "de": "Die Frau, die ich gestern getroffen habe, ist Lehrerin.", "fa": "زنی که دیروز ملاقات کردم، معلم است." } }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r2",
+      "title": "ترجمه سریع",
+      "instruction": "ضمیر موصولی صحیح را انتخاب کنید",
+      "questions": [
+        { "prompt": "کتابی که می‌خوانم (das Buch)", "left": "das", "right": "dem", "correctSide": "left" },
+        { "prompt": "زنی که ازش تشکر می‌کنم (die Frau)", "left": "die", "right": "der", "correctSide": "right" },
+        { "prompt": "مردمی که می‌شناسم (die Leute)", "left": "die", "right": "denen", "correctSide": "left" },
+        { "prompt": "بچه‌ای که بازی می‌کند (das Kind)", "left": "das", "right": "dem", "correctSide": "left" },
+        { "prompt": "مردی که کمکش می‌کنم (der Mann)", "left": "den", "right": "dem", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "ضمیر موصولی صحیح را انتخاب کنید",
+      "words": [
+        { "de": "der Tisch, ___ dort steht (فاعل)", "fa": "der", "options": ["der", "den", "dem", "das"], "correctIndex": 0 },
+        { "de": "der Tisch, ___ ich kaufe (مفعول)", "fa": "den", "options": ["der", "den", "dem", "das"], "correctIndex": 1 },
+        { "de": "die Lampe, ___ mir gefällt (متمم)", "fa": "die", "options": ["die", "der", "dem", "das"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo4",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["schnell.", "antworten", "schreibe,", "ich", "denen", "Leute,", "Die"],
+      "correctOrder": [6, 5, 4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Die Leute, denen ich schreibe, antworten schnell.", "fa": "مردمی که برایشان می‌نویسم، سریع جواب می‌دهند." }
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Der Mann, der dort steht, ist mein Vater.",
+      "translation": "مردی که آنجا ایستاده، پدرم است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Das Buch, das ich lese, ist interessant.",
+      "translation": "کتابی که می‌خوانم، جالب است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Die Frau, der ich helfe, ist dankbar.",
+      "translation": "زنی که کمکش می‌کنم، سپاسگزار است."
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "Nominativ مذکر", "fa": "der" },
+        { "de": "Akkusativ مذکر", "fa": "den" },
+        { "de": "Dativ مذکر", "fa": "dem" },
+        { "de": "Dativ جمع", "fa": "denen" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp1",
+      "title": "آفرین! 🎉",
+      "message": "شما جملات موصولی را کامل یاد گرفتید!",
+      "keyPoints": [
+        "Nominativ (فاعل): der, die, das, die",
+        "Akkusativ (مفعول): den, die, das, die",
+        "Dativ (متمم): dem, der, dem, denen",
+        "فقط مذکر در Akk. تغییر می‌کند: der → den",
+        "جمع در Dativ خاص است: denen",
+        "فعل به آخر جمله موصولی می‌رود"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "besuchen", "fa": "ملاقات کردن" } },
+        { "word": { "de": "einladen", "fa": "دعوت کردن" } },
+        { "word": { "de": "zeigen", "fa": "نشان دادن" } },
+        { "word": { "de": "erklären", "fa": "توضیح دادن" } },
+        { "word": { "de": "schenken", "fa": "هدیه دادن" } }
+      ]
+    }
+  ]
+}
