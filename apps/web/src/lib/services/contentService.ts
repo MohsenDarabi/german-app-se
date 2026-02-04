@@ -269,8 +269,36 @@ export async function loadLesson(lessonId: string): Promise<Lesson> {
   const currentState = get(state);
   const languagePair = currentState.languagePair;
 
-  // Check in-memory cache first
+  // Determine lesson level from ID (e.g., "A1-M01-L01" -> "A1")
+  const level = lessonId.split('-')[0];
   const cacheKey = `${languagePair}:${lessonId}`;
+
+  // In dev mode, try local content FIRST (skip caches to test changes before CDN upload)
+  if (dev) {
+    for (const moduleFolder of MODULE_FOLDERS) {
+      const url = `/content/${languagePair}/${level}/${moduleFolder}/${lessonId}.json`;
+      try {
+        // Use cache: 'no-store' to bypass browser HTTP cache and always get fresh content
+        const response = await fetch(url, { cache: 'no-store' });
+        if (response.ok) {
+          const json = await response.json();
+          const lesson = LessonSchema.parse(json);
+          lessonCache.set(cacheKey, lesson);
+          console.log(`ContentService: Loaded ${lessonId} from LOCAL (dev mode)`);
+          return lesson;
+        }
+      } catch (e) {
+        // Log any errors (not just 404) to help debug
+        if (e instanceof Error && !e.message.includes('404')) {
+          console.error(`ContentService: Error loading ${url}:`, e.message);
+        }
+        continue;
+      }
+    }
+    console.log(`ContentService: Local not found for ${lessonId}, trying caches/CDN...`);
+  }
+
+  // Check in-memory cache
   if (lessonCache.has(cacheKey)) {
     return lessonCache.get(cacheKey)!;
   }
@@ -281,29 +309,6 @@ export async function loadLesson(lessonId: string): Promise<Lesson> {
     const lesson = LessonSchema.parse(cached.data);
     lessonCache.set(cacheKey, lesson);
     return lesson;
-  }
-
-  // Determine lesson level from ID (e.g., "A1-M01-L01" -> "A1")
-  const level = lessonId.split('-')[0];
-
-  // In dev mode, try local content FIRST (to test changes before CDN upload)
-  if (dev) {
-    for (const moduleFolder of MODULE_FOLDERS) {
-      const url = `/content/${languagePair}/${level}/${moduleFolder}/${lessonId}.json`;
-      try {
-        const response = await fetch(url);
-        if (response.ok) {
-          const json = await response.json();
-          const lesson = LessonSchema.parse(json);
-          lessonCache.set(cacheKey, lesson);
-          console.log(`ContentService: Loaded ${lessonId} from LOCAL (dev mode)`);
-          return lesson;
-        }
-      } catch {
-        continue;
-      }
-    }
-    console.log(`ContentService: Local not found for ${lessonId}, trying CDN...`);
   }
 
   // Try CDN if enabled (production or local fallback failed)
