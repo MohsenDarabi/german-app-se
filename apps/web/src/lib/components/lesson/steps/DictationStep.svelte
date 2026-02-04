@@ -87,10 +87,13 @@
     });
   }
 
-  // Normalize text: lowercase, remove punctuation, trim
+  // Normalize text: remove punctuation, normalize whitespace (KEEP capitalization for German!)
+  // German capitalization rules are important:
+  // - First letter of sentence must be capital
+  // - All nouns must be capitalized
+  // - Formal "Sie" (you) must be capitalized (vs "sie" = they)
   function normalizeText(text: string): string {
     return text
-      .toLowerCase()
       .replace(/[.!?،؟]+/g, '') // Remove common punctuation (German and Persian)
       .replace(/\s+/g, ' ')     // Normalize whitespace
       .trim();                   // Trim AFTER punctuation removal to catch "auch !" → "auch " → "auch"
