@@ -320,8 +320,43 @@
       ]
     },
     {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Ich schwimme gern.",
+      "translation": "دوست دارم شنا کنم.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Hast du Lust?",
+      "translation": "میل داری؟",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-3",
+      "targetText": "Leider habe ich keine Zeit.",
+      "translation": "متأسفانه وقت ندارم.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "memory-match",
+      "id": "g4",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "gern", "fa": "با علاقه" },
+        { "de": "lieber", "fa": "ترجیحاً" },
+        { "de": "leider", "fa": "متأسفانه" },
+        { "de": "vielleicht", "fa": "شاید" },
+        { "de": "zusammen", "fa": "با هم" },
+        { "de": "gute Idee", "fa": "ایده خوب" }
+      ],
+      "timeLimit": 60
+    },
+    {
       "type": "vocab-check",
-      "id": "g3",
+      "id": "g5",
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [
