@@ -660,6 +660,19 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/A2/A2-M06-L04"
       }
     ]
+  },
+  {
+    id: "module-07",
+    title: "بخش ۷: جملات موصولی (Relativsätze)",
+    level: "A2",
+    lessons: [
+      {
+        id: "A2-M07-L01",
+        title: "Nominativ - فاعلی",
+        description: "یاد بگیرید جملات موصولی بسازید با der, die, das به عنوان فاعل.",
+        path: "/learn/de-fa/A2/A2-M07-L01"
+      }
+    ]
   }
 ];
 

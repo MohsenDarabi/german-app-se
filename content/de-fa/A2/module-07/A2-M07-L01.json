@@ -1,0 +1,379 @@
+{
+  "id": "A2-M07-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Relativsätze - Nominativ", "fa": "جملات موصولی - فاعلی" },
+  "description": "یاد بگیرید جملات موصولی بسازید با der, die, das به عنوان فاعل",
+  "level": "A2",
+  "module": 7,
+  "lessonNumber": 1,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "der (Relativpronomen)", "fa": "که (مذکر)", "grammar": { "pos": "pronoun", "case": "nominativ" } },
+    { "de": "die (Relativpronomen)", "fa": "که (مؤنث/جمع)", "grammar": { "pos": "pronoun", "case": "nominativ" } },
+    { "de": "das (Relativpronomen)", "fa": "که (خنثی)", "grammar": { "pos": "pronoun", "case": "nominativ" } },
+    { "de": "dort", "fa": "آنجا", "grammar": { "pos": "adverb" } },
+    { "de": "stehen", "fa": "ایستادن", "grammar": { "pos": "verb", "infinitive": "stehen" } },
+    { "de": "wohnen", "fa": "زندگی کردن", "grammar": { "pos": "verb", "infinitive": "wohnen" } },
+    { "de": "kennen", "fa": "شناختن", "grammar": { "pos": "verb", "infinitive": "kennen" } },
+    { "de": "neben", "fa": "کنار", "grammar": { "pos": "preposition" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "جملات موصولی چیست؟",
+      "content": "📝 **جملات موصولی (Relativsätze):**\n\nبرای توصیف یک اسم استفاده می‌شوند.\n\n• Der Mann, **der** dort steht, ist mein Vater.\n  (مردی **که** آنجا ایستاده، پدرم است.)\n\n💡 ضمیر موصولی با جنس اسم مطابقت دارد:\n• der → مذکر\n• die → مؤنث / جمع\n• das → خنثی",
+      "examples": [
+        { "de": "Die Frau, die dort steht, ist nett.", "fa": "زنی که آنجا ایستاده، مهربان است." },
+        { "de": "Das Kind, das dort spielt, ist klein.", "fa": "بچه‌ای که آنجا بازی می‌کند، کوچک است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "der (Relativpronomen)", "fa": "که (برای مذکر)" },
+      "example": { "text": { "de": "Der Mann, der dort steht...", "fa": "مردی که آنجا ایستاده..." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "die (Relativpronomen)", "fa": "که (برای مؤنث/جمع)" },
+      "example": { "text": { "de": "Die Frau, die dort wohnt...", "fa": "زنی که آنجا زندگی می‌کند..." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "das (Relativpronomen)", "fa": "که (برای خنثی)" },
+      "example": { "text": { "de": "Das Buch, das dort liegt...", "fa": "کتابی که آنجا افتاده..." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "ضمیر موصولی در Nominativ",
+      "content": "📝 **وقتی ضمیر موصولی فاعل است:**\n\n| جنس | ضمیر موصولی |\n|-----|-------------|\n| مذکر (der) | der |\n| مؤنث (die) | die |\n| خنثی (das) | das |\n| جمع (die) | die |\n\n⚠️ فعل به آخر جمله موصولی می‌رود!",
+      "examples": [
+        { "de": "Der Hund, der bellt, ist groß.", "fa": "سگی که پارس می‌کند، بزرگ است." },
+        { "de": "Die Katze, die schläft, ist süß.", "fa": "گربه‌ای که می‌خوابد، ناز است." }
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Relativsatz",
+      "translation": "جمله موصولی",
+      "syllables": ["Re", "la", "tiv", "satz"],
+      "distractors": ["Ra", "li", "tef", "sotz"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام ضمیر موصولی برای «der Mann» درست است؟",
+      "options": ["die", "das", "der", "den"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! der Mann → der (مذکر)", "incorrect": "der Mann مذکر است → der" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام ضمیر موصولی برای «die Frau» درست است؟",
+      "options": ["der", "die", "das", "den"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! die Frau → die (مؤنث)", "incorrect": "die Frau مؤنث است → die" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Der Mann, {0} dort steht, ist mein Vater.",
+      "options": ["der", "die", "das", "den"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "der Mann → der (مذکر، فاعل)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Frau, {0} neben mir wohnt, ist nett.",
+      "options": ["der", "die", "das", "den"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "die Frau → die (مؤنث، فاعل)" }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "dort", "fa": "آنجا" },
+      "example": { "text": { "de": "Der Mann, der dort steht...", "fa": "مردی که آنجا ایستاده..." } }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در مهمانی",
+      "context": "دو نفر در مهمانی صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Kennst du den Mann, der dort steht?", "fa": "مردی که آنجا ایستاده را می‌شناسی؟" } },
+        { "speaker": "Ben", "text": { "de": "Ja, das ist Tom. Er ist Arzt.", "fa": "بله، اون تام است. او دکتر است." } },
+        { "speaker": "Anna", "text": { "de": "Und die Frau, die neben ihm steht?", "fa": "و زنی که کنارش ایستاده؟" } },
+        { "speaker": "Ben", "text": { "de": "Das ist seine Frau. Sie arbeitet als Lehrerin.", "fa": "اون همسرشه. او معلم است." } }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "کدام ضمیر موصولی برای «das Kind» درست است؟",
+      "options": ["der", "die", "das", "den"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! das Kind → das (خنثی)", "incorrect": "das Kind خنثی است → das" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["groß.", "ist", "bellt,", "der", "Hund,", "Der"],
+      "correctOrder": [5, 4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Der Hund, der bellt, ist groß.", "fa": "سگی که پارس می‌کند، بزرگ است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["nett.", "ist", "lacht,", "die", "Frau,", "Die"],
+      "correctOrder": [5, 4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Die Frau, die lacht, ist nett.", "fa": "زنی که می‌خندد، مهربان است." }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "steht",
+      "translation": "ایستاده",
+      "syllables": ["steht"],
+      "distractors": ["stat", "stiht", "steet", "stahd"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das Kind, {0} dort spielt, ist mein Sohn.",
+      "options": ["der", "die", "das", "den"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "das Kind → das (خنثی، فاعل)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Leute, {0} dort warten, sind meine Freunde.",
+      "options": ["der", "die", "das", "den"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "die Leute (جمع) → die" }
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "neben", "fa": "کنار" },
+      "example": { "text": { "de": "Die Frau, die neben mir sitzt...", "fa": "زنی که کنار من نشسته..." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "kennen", "fa": "شناختن" },
+      "example": { "text": { "de": "Kennst du den Mann, der dort steht?", "fa": "مردی که آنجا ایستاده را می‌شناسی؟" } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "ترتیب کلمات در جمله موصولی",
+      "content": "📝 **فعل به آخر می‌رود:**\n\n• Der Mann, der dort **steht**, ist nett.\n• Die Frau, die Deutsch **spricht**, ist Lehrerin.\n• Das Auto, das schnell **fährt**, ist rot.\n\n⚠️ کاما قبل و بعد از جمله موصولی فراموش نشود!",
+      "examples": [
+        { "de": "Der Film, der heute läuft, ist gut.", "fa": "فیلمی که امروز پخش می‌شود، خوب است." },
+        { "de": "Die Pizza, die dort liegt, ist kalt.", "fa": "پیتزایی که آنجا افتاده، سرد است." }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "توصیف همسایه‌ها",
+      "context": "سارا درباره همسایه‌هایش صحبت می‌کند",
+      "lines": [
+        { "speaker": "Sara", "text": { "de": "Der Mann, der oben wohnt, ist sehr nett.", "fa": "مردی که بالا زندگی می‌کند، خیلی مهربان است." } },
+        { "speaker": "Tom", "text": { "de": "Und die Familie, die unten wohnt?", "fa": "و خانواده‌ای که پایین زندگی می‌کنند؟" } },
+        { "speaker": "Sara", "text": { "de": "Die Kinder, die dort spielen, sind laut.", "fa": "بچه‌هایی که آنجا بازی می‌کنند، سر و صدا دارند." } },
+        { "speaker": "Tom", "text": { "de": "Das Haus, das neben uns steht, ist leer.", "fa": "خانه‌ای که کنار ما قرار دارد، خالی است." } }
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "wohnt",
+      "translation": "زندگی می‌کند",
+      "syllables": ["wohnt"],
+      "distractors": ["wont", "wahnt", "wuhnt", "weint"]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "اسم را با ضمیر موصولی وصل کنید",
+      "items": [
+        { "id": "i1", "text": "der Mann" },
+        { "id": "i2", "text": "die Frau" },
+        { "id": "i3", "text": "das Kind" },
+        { "id": "i4", "text": "die Leute" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "der" },
+        { "id": "m2", "text": "die" },
+        { "id": "m3", "text": "das" },
+        { "id": "m4", "text": "die (جمع)" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"],
+        ["i4", "m4"]
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "ضمیر موصولی درست",
+      "instruction": "ضمیر موصولی صحیح را انتخاب کنید",
+      "questions": [
+        { "prompt": "der Hund, ___ bellt", "left": "der", "right": "die", "correctSide": "left" },
+        { "prompt": "die Katze, ___ schläft", "left": "der", "right": "die", "correctSide": "right" },
+        { "prompt": "das Auto, ___ fährt", "left": "das", "right": "der", "correctSide": "left" },
+        { "prompt": "die Kinder, ___ spielen", "left": "das", "right": "die", "correctSide": "right" },
+        { "prompt": "der Film, ___ läuft", "left": "der", "right": "die", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "«سگی که پارس می‌کند» به آلمانی چیست؟",
+      "options": ["Der Hund, die bellt", "Der Hund, der bellt", "Der Hund, das bellt", "Der Hund, den bellt"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! der Hund → der", "incorrect": "der Hund مذکر است → der" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc5",
+      "question": "«کتابی که روی میز است» به آلمانی چیست؟",
+      "options": ["Das Buch, der auf dem Tisch liegt", "Das Buch, die auf dem Tisch liegt", "Das Buch, das auf dem Tisch liegt", "Das Buch, den auf dem Tisch liegt"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! das Buch → das", "incorrect": "das Buch خنثی است → das" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Der Film, {0} heute läuft, ist interessant.",
+      "options": ["die", "der", "das", "den"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "der Film → der (مذکر، فاعل)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Musik, {0} spielt, ist schön.",
+      "options": ["der", "die", "das", "den"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "die Musik → die (مؤنث، فاعل)" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["rot.", "ist", "fährt,", "das", "Auto,", "Das"],
+      "correctOrder": [5, 4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Das Auto, das fährt, ist rot.", "fa": "ماشینی که حرکت می‌کند، قرمز است." }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "kennen",
+      "translation": "شناختن",
+      "syllables": ["ken", "nen"],
+      "distractors": ["kan", "nin", "kun", "nan"]
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "ضمیر موصولی صحیح را انتخاب کنید",
+      "words": [
+        { "de": "der Tisch", "fa": "der", "options": ["der", "die", "das", "den"], "correctIndex": 0 },
+        { "de": "die Lampe", "fa": "die", "options": ["der", "die", "das", "den"], "correctIndex": 1 },
+        { "de": "das Fenster", "fa": "das", "options": ["der", "die", "das", "den"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d3",
+      "title": "در کلاس",
+      "context": "معلم درباره دانش‌آموزان صحبت می‌کند",
+      "lines": [
+        { "speaker": "Lehrer", "text": { "de": "Der Schüler, der dort sitzt, ist neu.", "fa": "دانش‌آموزی که آنجا نشسته، جدید است." } },
+        { "speaker": "Lehrer", "text": { "de": "Die Schülerin, die neben ihm sitzt, hilft ihm.", "fa": "دانش‌آموزی که کنارش نشسته، کمکش می‌کند." } },
+        { "speaker": "Lehrer", "text": { "de": "Das ist schön!", "fa": "این خوب است!" } }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo4",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["Freunde.", "meine", "sind", "warten,", "die", "Leute,", "Die"],
+      "correctOrder": [6, 5, 4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Die Leute, die warten, sind meine Freunde.", "fa": "افرادی که منتظرند، دوستان من هستند." }
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Der Mann, der dort steht, ist nett.",
+      "translation": "مردی که آنجا ایستاده، مهربان است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Die Frau, die dort wohnt, ist Ärztin.",
+      "translation": "زنی که آنجا زندگی می‌کند، دکتر است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Das Kind, das spielt, ist glücklich.",
+      "translation": "بچه‌ای که بازی می‌کند، خوشحال است."
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "der Mann, der...", "fa": "مردی که..." },
+        { "de": "die Frau, die...", "fa": "زنی که..." },
+        { "de": "das Kind, das...", "fa": "بچه‌ای که..." },
+        { "de": "die Leute, die...", "fa": "مردمی که..." }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp1",
+      "title": "آفرین! 🎉",
+      "message": "جملات موصولی با ضمیر فاعلی را یاد گرفتید!",
+      "keyPoints": [
+        "ضمیر موصولی با جنس اسم مطابقت دارد",
+        "der Mann → der که",
+        "die Frau → die که",
+        "das Kind → das که",
+        "die Leute (جمع) → die که",
+        "فعل به آخر جمله موصولی می‌رود"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "der (Relativ)", "fa": "که (مذکر)" } },
+        { "word": { "de": "die (Relativ)", "fa": "که (مؤنث/جمع)" } },
+        { "word": { "de": "das (Relativ)", "fa": "که (خنثی)" } },
+        { "word": { "de": "dort", "fa": "آنجا" } },
+        { "word": { "de": "neben", "fa": "کنار" } }
+      ]
+    }
+  ]
+}
