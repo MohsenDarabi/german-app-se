@@ -497,6 +497,12 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         title: "Partizip II بی‌قاعده",
         description: "یاد بگیرید Partizip II فعل‌های بی‌قاعده را.",
         path: "/learn/de-fa/A2/A2-M01-L03"
+      },
+      {
+        id: "A2-M01-L04",
+        title: "Perfekt - جمع‌بندی",
+        description: "تمرین ترکیبی زمان گذشته با haben و sein.",
+        path: "/learn/de-fa/A2/A2-M01-L04"
       }
     ]
   }

@@ -1,0 +1,419 @@
+{
+  "id": "A2-M01-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Perfekt - Zusammenfassung", "fa": "Perfekt - جمع‌بندی" },
+  "description": "تمرین ترکیبی زمان گذشته با haben و sein",
+  "level": "A2",
+  "module": 1,
+  "lessonNumber": 4,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "zuerst", "fa": "اول", "grammar": { "pos": "adverb" } },
+    { "de": "dann", "fa": "بعد", "grammar": { "pos": "adverb" } },
+    { "de": "danach", "fa": "بعد از آن", "grammar": { "pos": "adverb" } },
+    { "de": "später", "fa": "بعداً", "grammar": { "pos": "adverb" } },
+    { "de": "am Ende", "fa": "در پایان", "grammar": { "pos": "phrase" } },
+    { "de": "heute Morgen", "fa": "امروز صبح", "grammar": { "pos": "phrase" } },
+    { "de": "letztes Jahr", "fa": "سال گذشته", "grammar": { "pos": "phrase" } },
+    { "de": "vor einer Woche", "fa": "یک هفته پیش", "grammar": { "pos": "phrase" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "جمع‌بندی Perfekt",
+      "content": "📝 **ساختار Perfekt:**\n**haben/sein** + **Partizip II**\n\n✅ **haben** برای:\n• اکثر فعل‌ها: machen, kaufen, essen, trinken...\n\n✅ **sein** برای:\n• حرکت: gehen, kommen, fahren, fliegen\n• تغییر حالت: aufwachen, einschlafen\n• sein, bleiben\n\n📝 **Partizip II:**\n• باقاعده: ge- + ریشه + -t (gemacht)\n• بی‌قاعده: ge- + ریشه تغییر یافته + -en (gegessen)",
+      "examples": [
+        { "de": "Ich habe gegessen und bin dann spazieren gegangen.", "fa": "غذا خوردم و بعد پیاده‌روی رفتم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "zuerst", "fa": "اول" },
+      "example": { "text": { "de": "Zuerst habe ich gefrühstückt.", "fa": "اول صبحانه خوردم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "dann", "fa": "بعد" },
+      "example": { "text": { "de": "Dann bin ich zur Arbeit gefahren.", "fa": "بعد به کار رفتم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "danach", "fa": "بعد از آن" },
+      "example": { "text": { "de": "Danach habe ich Mittagessen gegessen.", "fa": "بعد از آن ناهار خوردم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-zuerst",
+      "word": "zuerst",
+      "translation": "اول",
+      "syllables": ["zu", "erst"],
+      "distractors": ["za", "arst", "ze", "orst"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام فعل کمکی درست است؟ «Ich ___ nach Berlin gefahren.»",
+      "options": ["habe", "bin", "hat", "ist"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "fahren با sein می‌آید: bin gefahren" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Zuerst {0} ich aufgestanden, dann habe ich gefrühstückt.",
+      "options": ["bin", "habe", "ist", "hat"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "aufstehen (تغییر حالت) با sein می‌آید" }
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "später", "fa": "بعداً" },
+      "example": { "text": { "de": "Später habe ich einen Film gesehen.", "fa": "بعداً یک فیلم دیدم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "am Ende", "fa": "در پایان" },
+      "example": { "text": { "de": "Am Ende bin ich müde nach Hause gekommen.", "fa": "در پایان خسته به خانه آمدم." } }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "haben یا sein؟",
+      "instruction": "فعل کمکی درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "gegessen", "left": "habe", "right": "bin", "correctSide": "left" },
+        { "prompt": "gefahren", "left": "habe", "right": "bin", "correctSide": "right" },
+        { "prompt": "geschrieben", "left": "habe", "right": "bin", "correctSide": "left" },
+        { "prompt": "gekommen", "left": "habe", "right": "bin", "correctSide": "right" },
+        { "prompt": "getrunken", "left": "habe", "right": "bin", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "روز من",
+      "context": "الی روزش را توضیح می‌دهد",
+      "lines": [
+        { "speaker": "Tom", "text": { "de": "Was hast du heute gemacht?", "fa": "امروز چه کار کردی؟" } },
+        { "speaker": "Eli", "text": { "de": "Zuerst bin ich um 7 Uhr aufgestanden.", "fa": "اول ساعت ۷ بیدار شدم." } },
+        { "speaker": "Tom", "text": { "de": "Und dann?", "fa": "و بعد؟" } },
+        { "speaker": "Eli", "text": { "de": "Dann habe ich gefrühstückt und Kaffee getrunken.", "fa": "بعد صبحانه خوردم و قهوه نوشیدم." } },
+        { "speaker": "Tom", "text": { "de": "Bist du zur Arbeit gegangen?", "fa": "به کار رفتی؟" } },
+        { "speaker": "Eli", "text": { "de": "Ja, ich bin mit dem Bus gefahren. Danach habe ich 8 Stunden gearbeitet.", "fa": "بله، با اتوبوس رفتم. بعد از آن ۸ ساعت کار کردم." } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "الی ساعت چند بیدار شد؟", "options": ["۶", "۷", "۸"], "correctIndex": 1 },
+        { "question": "الی چطور به کار رفت؟", "options": ["پیاده", "با اتوبوس", "با ماشین"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Gestern {0} ich einen interessanten Film gesehen.",
+      "options": ["habe", "bin", "hat", "ist"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "sehen با haben می‌آید" }
+    },
+    {
+      "type": "word-order",
+      "id": "w1",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["gefrühstückt.", "habe", "Zuerst", "ich"],
+      "correctOrder": [2, 3, 1, 0],
+      "correctSentence": { "de": "Zuerst habe ich gefrühstückt.", "fa": "اول صبحانه خوردم." }
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "heute Morgen", "fa": "امروز صبح" },
+      "example": { "text": { "de": "Heute Morgen habe ich Sport gemacht.", "fa": "امروز صبح ورزش کردم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "letztes Jahr", "fa": "سال گذشته" },
+      "example": { "text": { "de": "Letztes Jahr bin ich nach Italien geflogen.", "fa": "سال گذشته به ایتالیا پرواز کردم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-danach",
+      "word": "danach",
+      "translation": "بعد از آن",
+      "syllables": ["da", "nach"],
+      "distractors": ["do", "noch", "de", "nich"]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "جملات را با ترجمه جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Ich habe gegessen." },
+        { "id": "i2", "text": "Ich bin gegangen." },
+        { "id": "i3", "text": "Er hat geschlafen." },
+        { "id": "i4", "text": "Sie ist geblieben." }
+      ],
+      "matches": [
+        { "id": "m1", "text": "او ماند." },
+        { "id": "m2", "text": "خوردم." },
+        { "id": "m3", "text": "رفتم." },
+        { "id": "m4", "text": "او خوابید." }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m3"],
+        ["i3", "m4"],
+        ["i4", "m1"]
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام Partizip II باقاعده است؟",
+      "options": ["gegessen", "getrunken", "gemacht", "gesehen"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین!", "incorrect": "gemacht باقاعده است: ge- + mach + -t" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Letztes Jahr {0} wir nach Spanien geflogen.",
+      "options": ["sind", "haben", "bin", "habe"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "fliegen با sein می‌آید: wir sind geflogen" }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "vor einer Woche", "fa": "یک هفته پیش" },
+      "example": { "text": { "de": "Vor einer Woche habe ich meinen Freund besucht.", "fa": "یک هفته پیش دوستم را دیدم." } }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "تعطیلات تابستانی",
+      "context": "همکاران درباره تعطیلات صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Was habt ihr letzten Sommer gemacht?", "fa": "تابستان گذشته چه کار کردید؟" } },
+        { "speaker": "Max", "text": { "de": "Ich bin nach Griechenland geflogen.", "fa": "به یونان پرواز کردم." } },
+        { "speaker": "Anna", "text": { "de": "Super! Was hast du dort gemacht?", "fa": "عالی! آنجا چه کار کردی؟" } },
+        { "speaker": "Max", "text": { "de": "Ich habe viel geschwommen und griechisches Essen gegessen.", "fa": "زیاد شنا کردم و غذای یونانی خوردم." } },
+        { "speaker": "Lisa", "text": { "de": "Ich bin zu Hause geblieben und habe viele Bücher gelesen.", "fa": "من در خانه ماندم و کتاب‌های زیادی خواندم." } },
+        { "speaker": "Anna", "text": { "de": "Das klingt auch schön!", "fa": "آن هم خوب به نظر می‌رسد!" } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "ماکس کجا رفت؟", "options": ["اسپانیا", "ایتالیا", "یونان"], "correctIndex": 2 },
+        { "question": "لیزا چه کار کرد؟", "options": ["سفر رفت", "کتاب خواند", "کار کرد"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "باقاعده یا بی‌قاعده؟",
+      "instruction": "Partizip II درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "kaufen →", "left": "gekauft", "right": "gekaufen", "correctSide": "left" },
+        { "prompt": "trinken →", "left": "getrinkt", "right": "getrunken", "correctSide": "right" },
+        { "prompt": "arbeiten →", "left": "gearbeitet", "right": "gearbeit", "correctSide": "left" },
+        { "prompt": "nehmen →", "left": "genehmt", "right": "genommen", "correctSide": "right" },
+        { "prompt": "spielen →", "left": "gespielt", "right": "gespielen", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "w2",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["gegangen.", "Kino", "ins", "sind", "Dann", "wir"],
+      "correctOrder": [4, 3, 5, 2, 1, 0],
+      "correctSentence": { "de": "Dann sind wir ins Kino gegangen.", "fa": "بعد به سینما رفتیم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Heute Morgen {0} ich lange geschlafen.",
+      "options": ["habe", "bin", "hat", "ist"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "schlafen با haben می‌آید" }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-spaeter",
+      "word": "später",
+      "translation": "بعداً",
+      "syllables": ["spä", "ter"],
+      "distractors": ["spa", "tar", "spe", "tur"]
+    },
+    {
+      "type": "matching",
+      "id": "m2",
+      "instruction": "کلمات زمان را با ترجمه جفت کنید",
+      "items": [
+        { "id": "i1", "text": "zuerst" },
+        { "id": "i2", "text": "dann" },
+        { "id": "i3", "text": "danach" },
+        { "id": "i4", "text": "am Ende" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "بعد" },
+        { "id": "m2", "text": "اول" },
+        { "id": "m3", "text": "در پایان" },
+        { "id": "m4", "text": "بعد از آن" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m1"],
+        ["i3", "m4"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "کدام جمله درست است؟",
+      "options": ["Ich habe nach Berlin gefahren.", "Ich bin nach Berlin gefahren.", "Ich habe nach Berlin gefahrt.", "Ich bin nach Berlin gefahrt."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "fahren با sein می‌آید و Partizip II آن gefahren است" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Vor einer Woche {0} ich meine Oma besucht.",
+      "options": ["habe", "bin", "hat", "ist"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "besuchen با haben می‌آید" }
+    },
+    {
+      "type": "word-order",
+      "id": "w3",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["getrunken.", "Kaffee", "habe", "Danach", "ich"],
+      "correctOrder": [3, 2, 4, 1, 0],
+      "correctSentence": { "de": "Danach habe ich Kaffee getrunken.", "fa": "بعد از آن قهوه نوشیدم." }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-letztes",
+      "word": "letztes",
+      "translation": "گذشته",
+      "syllables": ["letz", "tes"],
+      "distractors": ["latz", "tas", "lotz", "tis"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "«Zuerst bin ich aufgestanden, dann habe ich gefrühstückt» یعنی چه؟",
+      "options": ["اول صبحانه خوردم، بعد بیدار شدم", "اول بیدار شدم، بعد صبحانه خوردم", "همیشه صبحانه می‌خورم", "می‌خواهم صبحانه بخورم"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "zuerst = اول، dann = بعد" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Am Ende {0} wir müde nach Hause gekommen.",
+      "options": ["sind", "haben", "bin", "habe"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "kommen با sein می‌آید: wir sind gekommen" }
+    },
+    {
+      "type": "word-order",
+      "id": "w4",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["gelesen.", "Buch", "ein", "habe", "Später", "ich"],
+      "correctOrder": [4, 3, 5, 2, 1, 0],
+      "correctSentence": { "de": "Später habe ich ein Buch gelesen.", "fa": "بعداً یک کتاب خواندم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f7",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Gestern {0} sie viel gelaufen.",
+      "options": ["ist", "hat", "sind", "haben"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "laufen با sein می‌آید: sie ist gelaufen" }
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Zuerst habe ich gefrühstückt.",
+      "translation": "اول صبحانه خوردم.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Dann bin ich zur Arbeit gefahren.",
+      "translation": "بعد به کار رفتم.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-3",
+      "targetText": "Letztes Jahr sind wir nach Italien geflogen.",
+      "translation": "سال گذشته به ایتالیا پرواز کردیم.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "memory-match",
+      "id": "g3",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "zuerst", "fa": "اول" },
+        { "de": "dann", "fa": "بعد" },
+        { "de": "danach", "fa": "بعد از آن" },
+        { "de": "später", "fa": "بعداً" },
+        { "de": "am Ende", "fa": "در پایان" },
+        { "de": "gestern", "fa": "دیروز" }
+      ],
+      "timeLimit": 60
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "zuerst", "fa": "اول" },
+        { "de": "dann", "fa": "بعد" },
+        { "de": "danach", "fa": "بعد از آن" },
+        { "de": "später", "fa": "بعداً" },
+        { "de": "am Ende", "fa": "در پایان" },
+        { "de": "heute Morgen", "fa": "امروز صبح" },
+        { "de": "letztes Jahr", "fa": "سال گذشته" },
+        { "de": "vor einer Woche", "fa": "یک هفته پیش" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "تبریک! 🎉",
+      "message": "شما ماژول Perfekt را کامل کردید!\n\n📝 **جمع‌بندی:**\n\n**haben** + Partizip II:\n• اکثر فعل‌ها: gegessen, getrunken, gemacht...\n\n**sein** + Partizip II:\n• حرکت: gegangen, gefahren, geflogen...\n• تغییر: aufgestanden, eingeschlafen...\n\n⏰ **کلمات زمان:**\n• zuerst → dann → danach → später → am Ende\n• gestern, heute Morgen, letztes Jahr, vor einer Woche\n\n🏆 **ماژول ۱ کامل شد!**",
+      "xpEarned": 75,
+      "vocabularyLearned": [
+        { "word": { "de": "zuerst", "fa": "اول" } },
+        { "word": { "de": "dann", "fa": "بعد" } },
+        { "word": { "de": "danach", "fa": "بعد از آن" } },
+        { "word": { "de": "später", "fa": "بعداً" } },
+        { "word": { "de": "am Ende", "fa": "در پایان" } },
+        { "word": { "de": "heute Morgen", "fa": "امروز صبح" } },
+        { "word": { "de": "letztes Jahr", "fa": "سال گذشته" } },
+        { "word": { "de": "vor einer Woche", "fa": "یک هفته پیش" } }
+      ]
+    }
+  ]
+}
