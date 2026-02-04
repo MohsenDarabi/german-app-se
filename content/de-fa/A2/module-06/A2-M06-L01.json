@@ -1,0 +1,383 @@
+{
+  "id": "A2-M06-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Konjunktiv II - würde + Infinitiv", "fa": "شرطی - würde + مصدر" },
+  "description": "یاد بگیرید چطور با würde آرزوها و درخواست‌های مودبانه بیان کنید",
+  "level": "A2",
+  "module": 6,
+  "lessonNumber": 1,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "würde", "fa": "می‌شد (شرطی)", "grammar": { "pos": "verb", "tense": "konjunktiv II" } },
+    { "de": "gern", "fa": "با میل / دوست داشتن", "grammar": { "pos": "adverb" } },
+    { "de": "lieber", "fa": "ترجیحاً", "grammar": { "pos": "adverb" } },
+    { "de": "an deiner Stelle", "fa": "به جای تو", "grammar": { "pos": "phrase" } },
+    { "de": "bestellen", "fa": "سفارش دادن", "grammar": { "pos": "verb", "infinitive": "bestellen" } },
+    { "de": "vorschlagen", "fa": "پیشنهاد دادن", "grammar": { "pos": "verb", "infinitive": "vorschlagen" } },
+    { "de": "empfehlen", "fa": "توصیه کردن", "grammar": { "pos": "verb", "infinitive": "empfehlen" } },
+    { "de": "bitte", "fa": "لطفاً", "grammar": { "pos": "adverb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "Konjunktiv II چیست؟",
+      "content": "📝 **Konjunktiv II برای:**\n\n• آرزوها: Ich würde gern reisen.\n• درخواست مودبانه: Würden Sie bitte...?\n• موقعیت‌های فرضی: Was würdest du machen?\n\n💡 würde مثل «would» در انگلیسی است",
+      "examples": [
+        { "de": "Ich würde gern nach Berlin fahren.", "fa": "دوست دارم به برلین بروم." },
+        { "de": "Würden Sie mir helfen?", "fa": "می‌شود به من کمک کنید؟" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "würde", "fa": "می‌شد (شرطی)" },
+      "example": { "text": { "de": "Ich würde das machen.", "fa": "من آن را انجام می‌دادم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "gern", "fa": "با میل / دوست داشتن" },
+      "example": { "text": { "de": "Ich würde gern kommen.", "fa": "دوست دارم بیایم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "lieber", "fa": "ترجیحاً / بیشتر" },
+      "example": { "text": { "de": "Ich würde lieber bleiben.", "fa": "ترجیح می‌دهم بمانم." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "صرف würde",
+      "content": "📝 **صرف würde:**\n\n| ضمیر | würde |\n|------|-------|\n| ich | würde |\n| du | würdest |\n| er/sie/es | würde |\n| wir | würden |\n| ihr | würdet |\n| sie/Sie | würden |\n\n💡 ich و er/sie/es یکسان: **würde**",
+      "examples": [
+        { "de": "Ich würde gern reisen.", "fa": "دوست دارم سفر کنم." },
+        { "de": "Er würde lieber zu Hause bleiben.", "fa": "ترجیح می‌دهد در خانه بماند." }
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "würde",
+      "translation": "می‌شد",
+      "syllables": ["wür", "de"],
+      "distractors": ["wir", "da", "war", "di"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«من دوست دارم سفر کنم» به آلمانی چیست؟",
+      "options": ["Ich werde gern reisen.", "Ich würde gern reisen.", "Ich will gern reisen.", "Ich reise gern."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! würde gern + Infinitiv", "incorrect": "würde gern + مصدر برای آرزو" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام صرف würde برای «du» صحیح است؟",
+      "options": ["würde", "würdest", "würden", "würdet"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! du würdest", "incorrect": "du → würdest" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich {0} gern nach Berlin fahren.",
+      "options": ["würde", "werde", "will", "bin"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "würde gern برای آرزو" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Was {0} du machen?",
+      "options": ["würde", "würdest", "würden", "würdet"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "du → würdest" }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "an deiner Stelle", "fa": "به جای تو" },
+      "example": { "text": { "de": "An deiner Stelle würde ich gehen.", "fa": "به جای تو می‌رفتم." } }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "آخر هفته",
+      "context": "آنا و بن درباره آخر هفته صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Was würdest du am Wochenende machen?", "fa": "آخر هفته چه کار می‌کردی؟" } },
+        { "speaker": "Ben", "text": { "de": "Ich würde gern ins Kino gehen.", "fa": "دوست دارم به سینما بروم." } },
+        { "speaker": "Anna", "text": { "de": "Das würde ich auch gern machen!", "fa": "من هم دوست دارم این کار را بکنم!" } }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "«او دوست دارد در آلمان زندگی کند» به آلمانی چیست؟",
+      "options": ["Sie würden gern in Deutschland leben.", "Sie werde gern in Deutschland leben.", "Sie würde gern in Deutschland leben.", "Sie würdest gern in Deutschland leben."],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! er/sie/es würde", "incorrect": "سوم شخص مفرد: würde" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["lernen.", "Deutsch", "gern", "würde", "Ich"],
+      "correctOrder": [4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Ich würde gern Deutsch lernen.", "fa": "دوست دارم آلمانی یاد بگیرم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["machen?", "du", "würdest", "Was"],
+      "correctOrder": [3, 2, 1, 0],
+      "correctSentence": { "de": "Was würdest du machen?", "fa": "تو چه کار می‌کردی؟" }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "lieber",
+      "translation": "ترجیحاً",
+      "syllables": ["lie", "ber"],
+      "distractors": ["lei", "bar", "bir", "bor"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "درخواست مودبانه",
+      "content": "📝 **فرم‌های مودبانه:**\n\n• Ich würde gern... = دوست دارم...\n• Würden Sie bitte...? = لطفاً می‌شود...؟\n• Könnten Sie...? = آیا می‌توانید...؟\n\n💡 این فرم‌ها در رستوران و فروشگاه استفاده می‌شوند",
+      "examples": [
+        { "de": "Ich würde gern bestellen.", "fa": "دوست دارم سفارش بدهم." },
+        { "de": "Würden Sie bitte das Fenster öffnen?", "fa": "لطفاً پنجره را باز می‌کنید؟" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "کدام جمله مودبانه‌تر است؟",
+      "options": ["Gib mir einen Kaffee.", "Ich will einen Kaffee.", "Einen Kaffee!", "Ich würde gern einen Kaffee."],
+      "correctAnswerIndex": 3,
+      "feedback": { "correct": "آفرین! würde gern مودبانه‌ترین است", "incorrect": "würde gern مودبانه‌تر از will است" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Wir {0} gern nach Hause gehen.",
+      "options": ["würde", "würdest", "würden", "würdet"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "wir → würden" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} Sie bitte das Fenster öffnen?",
+      "options": ["Würde", "Würdest", "Werden", "Würden"],
+      "correctAnswers": [3],
+      "feedback": { "explanation": "Sie (محترمانه) → Würden" }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "bestellen", "fa": "سفارش دادن" },
+      "example": { "text": { "de": "Ich würde gern bestellen.", "fa": "دوست دارم سفارش بدهم." } }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در رستوران",
+      "context": "مهمان در رستوران سفارش می‌دهد",
+      "lines": [
+        { "speaker": "Kellner", "text": { "de": "Was darf es sein?", "fa": "چه میل دارید؟" } },
+        { "speaker": "Gast", "text": { "de": "Ich würde gern einen Kaffee bestellen.", "fa": "دوست دارم یک قهوه سفارش بدهم." } },
+        { "speaker": "Kellner", "text": { "de": "Möchten Sie noch etwas?", "fa": "چیز دیگری می‌خواهید؟" } },
+        { "speaker": "Gast", "text": { "de": "Ich würde auch gern ein Stück Kuchen.", "fa": "یک تکه کیک هم دوست دارم." } }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc5",
+      "question": "«ما دوست داریم در خانه بمانیم» به آلمانی چیست؟",
+      "options": ["Wir würden gern zu Hause bleiben.", "Wir würde gern zu Hause bleiben.", "Wir würdest gern zu Hause bleiben.", "Wir würdet gern zu Hause bleiben."],
+      "correctAnswerIndex": 0,
+      "feedback": { "correct": "آفرین! wir würden", "incorrect": "wir → würden" }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "vorschlagen", "fa": "پیشنهاد دادن" },
+      "example": { "text": { "de": "Was würdest du vorschlagen?", "fa": "تو چه پیشنهاد می‌دادی؟" } }
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": { "de": "empfehlen", "fa": "توصیه کردن" },
+      "example": { "text": { "de": "Ich würde dieses Restaurant empfehlen.", "fa": "این رستوران را توصیه می‌کردم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "bestellen",
+      "translation": "سفارش دادن",
+      "syllables": ["be", "stel", "len"],
+      "distractors": ["bis", "stal", "lan", "stil"]
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["gehen.", "ich", "würde", "Stelle", "deiner", "An"],
+      "correctOrder": [5, 4, 3, 2, 1, 0],
+      "correctSentence": { "de": "An deiner Stelle würde ich gehen.", "fa": "به جای تو می‌رفتم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ihr {0} das nicht machen.",
+      "options": ["würden", "würde", "würdest", "würdet"],
+      "correctAnswers": [3],
+      "feedback": { "explanation": "ihr → würdet" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sie {0} gern mehr Zeit haben.",
+      "options": ["würden", "würde", "würdet", "würdest"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "sie (جمع) → würden" }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "ضمیر را با صرف würde وصل کنید",
+      "items": [
+        { "id": "i1", "text": "ich" },
+        { "id": "i2", "text": "du" },
+        { "id": "i3", "text": "wir" },
+        { "id": "i4", "text": "ihr" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "würdest" },
+        { "id": "m2", "text": "würde" },
+        { "id": "m3", "text": "würdet" },
+        { "id": "m4", "text": "würden" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m1"],
+        ["i3", "m4"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "vorschlagen",
+      "translation": "پیشنهاد دادن",
+      "syllables": ["vor", "schla", "gen"],
+      "distractors": ["für", "schlu", "gan", "schlo"]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "صرف würde",
+      "instruction": "صرف صحیح را انتخاب کنید",
+      "questions": [
+        { "prompt": "ich →", "left": "würde", "right": "würden", "correctSide": "left" },
+        { "prompt": "du →", "left": "würdet", "right": "würdest", "correctSide": "right" },
+        { "prompt": "wir →", "left": "würden", "right": "würde", "correctSide": "left" },
+        { "prompt": "ihr →", "left": "würdest", "right": "würdet", "correctSide": "right" },
+        { "prompt": "sie (جمع) →", "left": "würden", "right": "würde", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d3",
+      "title": "مشاوره",
+      "context": "لیزا از تام مشاوره می‌خواهد",
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Ich habe ein Problem.", "fa": "من یک مشکل دارم." } },
+        { "speaker": "Tom", "text": { "de": "Was würdest du an meiner Stelle machen?", "fa": "به جای من چه کار می‌کردی؟" } },
+        { "speaker": "Lisa", "text": { "de": "Ich würde mit dem Chef sprechen.", "fa": "من با رئیس صحبت می‌کردم." } },
+        { "speaker": "Tom", "text": { "de": "Das würde ich auch vorschlagen.", "fa": "من هم آن را پیشنهاد می‌دادم." } }
+      ]
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی صحیح را انتخاب کنید",
+      "words": [
+        { "de": "würde gern", "fa": "دوست دارم (مودبانه)", "options": ["دوست دارم (مودبانه)", "باید", "می‌توانم", "می‌خواهم"], "correctIndex": 0 },
+        { "de": "an deiner Stelle", "fa": "به جای تو", "options": ["به جای تو", "در خانه تو", "برای تو", "با تو"], "correctIndex": 0 },
+        { "de": "lieber", "fa": "ترجیحاً", "options": ["ترجیحاً", "بهتر", "بیشتر", "کمتر"], "correctIndex": 0 }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo4",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["empfehlen.", "Restaurant", "dieses", "würde", "Ich"],
+      "correctOrder": [4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Ich würde dieses Restaurant empfehlen.", "fa": "این رستوران را توصیه می‌کردم." }
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich würde gern kommen.",
+      "translation": "دوست دارم بیایم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Was würdest du machen?",
+      "translation": "تو چه کار می‌کردی؟"
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Wir würden gern bleiben.",
+      "translation": "ما دوست داریم بمانیم."
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "ich würde", "fa": "من می‌شد" },
+        { "de": "du würdest", "fa": "تو می‌شدی" },
+        { "de": "wir würden", "fa": "ما می‌شدیم" },
+        { "de": "würde gern", "fa": "دوست دارم" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp1",
+      "title": "آفرین! 🎉",
+      "summary": "Konjunktiv II با würde + Infinitiv را یاد گرفتید",
+      "keyPoints": [
+        "würde + مصدر برای آرزوها و درخواست‌های مودبانه",
+        "ich/er/sie/es würde، du würdest، wir/sie würden، ihr würdet",
+        "würde gern = دوست دارم (مودبانه‌تر از will)",
+        "an deiner Stelle würde ich... = به جای تو..."
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "würde", "fa": "می‌شد (شرطی)" } },
+        { "word": { "de": "gern", "fa": "با میل" } },
+        { "word": { "de": "lieber", "fa": "ترجیحاً" } },
+        { "word": { "de": "bestellen", "fa": "سفارش دادن" } },
+        { "word": { "de": "vorschlagen", "fa": "پیشنهاد دادن" } }
+      ]
+    }
+  ]
+}

@@ -629,6 +629,19 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/A2/A2-M05-L04"
       }
     ]
+  },
+  {
+    id: "module-06",
+    title: "بخش ۶: شرطی (Konjunktiv II)",
+    level: "A2",
+    lessons: [
+      {
+        id: "A2-M06-L01",
+        title: "würde + Infinitiv",
+        description: "یاد بگیرید چطور با würde آرزوها و درخواست‌های مودبانه بیان کنید.",
+        path: "/learn/de-fa/A2/A2-M06-L01"
+      }
+    ]
   }
 ];
 
