@@ -76,6 +76,59 @@ const LANGUAGE_TTS_MAP: Record<string, string> = {
   'es': 'es-ES',
 };
 
+// Cache for loaded voices (Firefox requires waiting for voiceschanged event)
+let voicesLoaded = false;
+let voicesPromise: Promise<SpeechSynthesisVoice[]> | null = null;
+
+/**
+ * Get available TTS voices (handles Firefox's async loading)
+ * Firefox returns empty array on first getVoices() call - must wait for voiceschanged event
+ */
+function getVoicesAsync(): Promise<SpeechSynthesisVoice[]> {
+  if (!browser || !('speechSynthesis' in window)) {
+    return Promise.resolve([]);
+  }
+
+  // If already loaded, return immediately
+  const voices = speechSynthesis.getVoices();
+  if (voices.length > 0) {
+    voicesLoaded = true;
+    return Promise.resolve(voices);
+  }
+
+  // If already waiting, return existing promise
+  if (voicesPromise) {
+    return voicesPromise;
+  }
+
+  // Wait for voiceschanged event (Firefox needs this)
+  voicesPromise = new Promise((resolve) => {
+    const checkVoices = () => {
+      const v = speechSynthesis.getVoices();
+      if (v.length > 0) {
+        voicesLoaded = true;
+        resolve(v);
+      }
+    };
+
+    // Listen for voiceschanged event
+    speechSynthesis.addEventListener('voiceschanged', checkVoices, { once: true });
+
+    // Also try immediately in case voices are already loaded
+    checkVoices();
+
+    // Timeout fallback - resolve with empty array after 2 seconds
+    setTimeout(() => {
+      if (!voicesLoaded) {
+        console.warn('TTS voices not loaded after timeout, using default');
+        resolve([]);
+      }
+    }, 2000);
+  });
+
+  return voicesPromise;
+}
+
 /**
  * Get TTS language code from language pair
  * @param langPair - Language pair like 'de-fa', 'en-fa'
@@ -148,6 +201,7 @@ function extractGermanText(text: string): string {
 /**
  * Play text using TTS (async version with promise)
  * Supports multiple languages based on language pair.
+ * Handles Firefox's async voice loading requirement.
  *
  * @param text - Text to speak
  * @param rate - Speaking rate (0.5 to 2.0, default 0.9 for learners)
@@ -177,6 +231,9 @@ export async function playTextAsync(text: string, rate = 0.9, langPair = 'de-fa'
   const ttsLang = getTTSLanguage(langPair);
   const langPrefix = ttsLang.split('-')[0];
 
+  // Wait for voices to load (required for Firefox)
+  const voices = await getVoicesAsync();
+
   return new Promise((resolve) => {
     const utterance = new SpeechSynthesisUtterance(textToSpeak);
     utterance.lang = ttsLang;
@@ -184,7 +241,6 @@ export async function playTextAsync(text: string, rate = 0.9, langPair = 'de-fa'
     utterance.pitch = 1.0;
 
     // Try to find the best voice for this language
-    const voices = speechSynthesis.getVoices();
     const preferredVoice = voices.find(v =>
       v.lang.startsWith(langPrefix) && (v.name.includes('Neural') || v.name.includes('Enhanced'))
     ) || voices.find(v => v.lang.startsWith(langPrefix));
@@ -194,7 +250,10 @@ export async function playTextAsync(text: string, rate = 0.9, langPair = 'de-fa'
     }
 
     utterance.onend = () => resolve();
-    utterance.onerror = () => resolve(); // Resolve even on error
+    utterance.onerror = (e) => {
+      console.warn('TTS error:', e);
+      resolve(); // Resolve even on error
+    };
 
     speechSynthesis.speak(utterance);
   });

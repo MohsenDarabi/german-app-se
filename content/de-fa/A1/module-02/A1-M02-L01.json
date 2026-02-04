@@ -17,8 +17,8 @@
   "level": "A1",
   "module": 2,
   "lessonNumber": 1,
-  "totalSteps": 27,
-  "estimatedMinutes": 15,
+  "totalSteps": 36,
+  "estimatedMinutes": 18,
   "vocabulary": [
     {
       "de": "sein",
@@ -75,6 +75,18 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-sein",
+      "word": "sein",
+      "translation": "بودن",
+      "syllables": ["s", "ei", "n"],
+      "distractors": ["ie", "a", "e", "nn"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «sein» یعنی بودن. توجه کنید: «ei» صدای «آی» می‌دهد."
+      }
+    },
+    {
       "type": "new-word",
       "id": "s3",
       "word": {
@@ -86,6 +98,18 @@
           "de": "Ich bin Tom.",
           "fa": "من تام هستم."
         }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-ich-bin",
+      "word": "ich bin",
+      "translation": "من هستم",
+      "syllables": ["ich", "bin"],
+      "distractors": ["bist", "ist", "mich"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «ich bin» یعنی من هستم - صرف اول شخص فعل sein."
       }
     },
     {
@@ -103,6 +127,18 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-du-bist",
+      "word": "du bist",
+      "translation": "تو هستی",
+      "syllables": ["du", "bist"],
+      "distractors": ["bin", "ist", "dist"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «du bist» یعنی تو هستی - صرف دوم شخص فعل sein."
+      }
+    },
+    {
       "type": "new-word",
       "id": "s5",
       "word": {
@@ -117,6 +153,18 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-er-ist",
+      "word": "er ist",
+      "translation": "او (مرد) هست",
+      "syllables": ["er", "ist"],
+      "distractors": ["bin", "bist", "es"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «er ist» یعنی او (مرد) هست - صرف سوم شخص مذکر فعل sein."
+      }
+    },
+    {
       "type": "new-word",
       "id": "s6",
       "word": {
@@ -128,6 +176,18 @@
           "de": "Sie ist meine Freundin.",
           "fa": "او دوست من است."
         }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-sie-ist",
+      "word": "sie ist",
+      "translation": "او (زن) هست",
+      "syllables": ["sie", "ist"],
+      "distractors": ["bin", "bist", "es"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «sie ist» یعنی او (زن) هست - صرف سوم شخص مونث فعل sein."
       }
     },
     {
@@ -200,7 +260,7 @@
     },
     {
       "type": "syllable-spelling",
-      "id": "syllable-1",
+      "id": "syllable-haben",
       "word": "haben",
       "translation": "داشتن",
       "syllables": ["ha", "ben"],
@@ -225,6 +285,18 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-ich-habe",
+      "word": "ich habe",
+      "translation": "من دارم",
+      "syllables": ["ich", "ha", "be"],
+      "distractors": ["hast", "hat", "hab"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «ich habe» یعنی من دارم - صرف اول شخص فعل haben."
+      }
+    },
+    {
       "type": "new-word",
       "id": "s10",
       "word": {
@@ -236,6 +308,18 @@
           "de": "Du hast eine Schwester.",
           "fa": "تو یک خواهر داری."
         }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-du-hast",
+      "word": "du hast",
+      "translation": "تو داری",
+      "syllables": ["du", "hast"],
+      "distractors": ["habe", "hat", "has"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «du hast» یعنی تو داری - توجه: حرف b از haben حذف شده!"
       }
     },
     {
@@ -253,6 +337,18 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-er-hat",
+      "word": "er hat",
+      "translation": "او (مرد) دارد",
+      "syllables": ["er", "hat"],
+      "distractors": ["habe", "hast", "es"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «er hat» یعنی او (مرد) دارد - صرف سوم شخص فعل haben."
+      }
+    },
+    {
       "type": "new-word",
       "id": "s12",
       "word": {
@@ -264,6 +360,18 @@
           "de": "Sie hat viel Zeit.",
           "fa": "او وقت زیاد دارد."
         }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-sie-hat",
+      "word": "sie hat",
+      "translation": "او (زن) دارد",
+      "syllables": ["sie", "hat"],
+      "distractors": ["habe", "hast", "es"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «sie hat» یعنی او (زن) دارد - صرف سوم شخص مونث فعل haben."
       }
     },
     {
