@@ -283,6 +283,12 @@ const DE_FA_A1_MODULES: ModuleStub[] = [
         title: "خوردن و نوشیدن (Essen und Trinken)",
         description: "یاد بگیرید غذاها و نوشیدنی‌های پایه را به آلمانی بگویید.",
         path: "/learn/de-fa/A1/A1-M08-L01"
+      },
+      {
+        id: "A1-M08-L02",
+        title: "میوه و سبزیجات (Obst und Gemüse)",
+        description: "یاد بگیرید میوه‌ها و سبزیجات را به آلمانی بگویید.",
+        path: "/learn/de-fa/A1/A1-M08-L02"
       }
     ]
   }

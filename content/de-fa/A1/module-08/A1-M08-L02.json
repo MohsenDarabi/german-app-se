@@ -1,0 +1,667 @@
+{
+  "id": "A1-M08-L02",
+  "languagePair": "de-fa",
+  "source": {
+    "code": "de",
+    "name": "Deutsch"
+  },
+  "target": {
+    "code": "fa",
+    "name": "فارسی"
+  },
+  "title": {
+    "de": "Obst und Gemüse",
+    "fa": "میوه و سبزیجات"
+  },
+  "description": "یاد بگیرید میوه‌ها و سبزیجات را به آلمانی بگویید",
+  "level": "A1",
+  "module": 8,
+  "lessonNumber": 2,
+  "totalSteps": 40,
+  "estimatedMinutes": 19,
+  "vocabulary": [
+    { "de": "das Obst", "fa": "میوه", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "-" } } },
+    { "de": "das Gemüse", "fa": "سبزیجات", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "-" } } },
+    { "de": "der Apfel", "fa": "سیب", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Äpfel" } } },
+    { "de": "die Banane", "fa": "موز", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Bananen" } } },
+    { "de": "die Orange", "fa": "پرتقال", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Orangen" } } },
+    { "de": "die Tomate", "fa": "گوجه‌فرنگی", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Tomaten" } } },
+    { "de": "die Kartoffel", "fa": "سیب‌زمینی", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Kartoffeln" } } },
+    { "de": "die Gurke", "fa": "خیار", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Gurken" } } },
+    { "de": "der Salat", "fa": "سالاد/کاهو", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Salate" } } },
+    { "de": "die Zwiebel", "fa": "پیاز", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Zwiebeln" } } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "میوه و سبزیجات در آلمانی",
+      "content": "در این درس میوه‌ها و سبزیجات را یاد می‌گیریم:\n\n🍎 **میوه‌ها (Obst):**\n• der Apfel = سیب\n• die Banane = موز\n• die Orange = پرتقال\n\n🥬 **سبزیجات (Gemüse):**\n• die Tomate = گوجه‌فرنگی\n• die Kartoffel = سیب‌زمینی\n• die Gurke = خیار\n\n📝 **نکته:** Obst و Gemüse جمع ندارند! مثل «میوه» و «سبزی» در فارسی.",
+      "examples": [
+        {
+          "de": "Ich esse gern Obst.",
+          "fa": "دوست دارم میوه بخورم."
+        },
+        {
+          "de": "Gemüse ist gesund.",
+          "fa": "سبزیجات سالم است."
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": {
+        "de": "das Obst",
+        "fa": "میوه"
+      },
+      "example": {
+        "text": {
+          "de": "Obst ist gesund und lecker.",
+          "fa": "میوه سالم و خوشمزه است."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Obst",
+      "word": "Obst",
+      "translation": "میوه",
+      "syllables": ["Obst"],
+      "distractors": ["Abst", "Ubst", "Ebst", "Ibst"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": {
+        "de": "das Gemüse",
+        "fa": "سبزیجات"
+      },
+      "example": {
+        "text": {
+          "de": "Ich kaufe frisches Gemüse.",
+          "fa": "من سبزیجات تازه می‌خرم."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Gemuese",
+      "word": "Gemüse",
+      "translation": "سبزیجات",
+      "syllables": ["Ge", "mü", "se"],
+      "distractors": ["Ga", "ma", "sa", "Go"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": {
+        "de": "der Apfel",
+        "fa": "سیب"
+      },
+      "example": {
+        "text": {
+          "de": "Der Apfel ist rot und süß.",
+          "fa": "سیب قرمز و شیرین است."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Apfel",
+      "word": "Apfel",
+      "translation": "سیب",
+      "syllables": ["Ap", "fel"],
+      "distractors": ["Op", "fal", "Up", "ful"]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": {
+        "de": "die Banane",
+        "fa": "موز"
+      },
+      "example": {
+        "text": {
+          "de": "Affen essen gern Bananen.",
+          "fa": "میمون‌ها دوست دارند موز بخورند."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Banane",
+      "word": "Banane",
+      "translation": "موز",
+      "syllables": ["Ba", "na", "ne"],
+      "distractors": ["Bo", "no", "nu", "Be"]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": {
+        "de": "die Orange",
+        "fa": "پرتقال"
+      },
+      "example": {
+        "text": {
+          "de": "Ich trinke gern Orangensaft.",
+          "fa": "دوست دارم آب پرتقال بنوشم."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Orange",
+      "word": "Orange",
+      "translation": "پرتقال",
+      "syllables": ["O", "ran", "ge"],
+      "distractors": ["A", "run", "ga", "U"]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "میوه‌ها",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        {
+          "prompt": "Apfel",
+          "left": "سیب",
+          "right": "موز",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Banane",
+          "left": "سیب",
+          "right": "موز",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Orange",
+          "left": "پرتقال",
+          "right": "لیمو",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Obst",
+          "left": "میوه",
+          "right": "سبزیجات",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "سیب =",
+          "left": "Banane",
+          "right": "Apfel",
+          "correctSide": "right"
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": {
+        "de": "die Tomate",
+        "fa": "گوجه‌فرنگی"
+      },
+      "example": {
+        "text": {
+          "de": "Die Tomate ist rot.",
+          "fa": "گوجه‌فرنگی قرمز است."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Tomate",
+      "word": "Tomate",
+      "translation": "گوجه‌فرنگی",
+      "syllables": ["To", "ma", "te"],
+      "distractors": ["Ta", "mo", "tu", "Ti"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": {
+        "de": "die Kartoffel",
+        "fa": "سیب‌زمینی"
+      },
+      "example": {
+        "text": {
+          "de": "Ich esse gern Kartoffeln.",
+          "fa": "دوست دارم سیب‌زمینی بخورم."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Kartoffel",
+      "word": "Kartoffel",
+      "translation": "سیب‌زمینی",
+      "syllables": ["Kar", "tof", "fel"],
+      "distractors": ["Kor", "taf", "fal", "Kur"]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": {
+        "de": "die Gurke",
+        "fa": "خیار"
+      },
+      "example": {
+        "text": {
+          "de": "Eine Gurke ist grün und lang.",
+          "fa": "خیار سبز و دراز است."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Gurke",
+      "word": "Gurke",
+      "translation": "خیار",
+      "syllables": ["Gur", "ke"],
+      "distractors": ["Gar", "ka", "Gor", "ku"]
+    },
+    {
+      "type": "dialog",
+      "id": "s10",
+      "title": "مکالمه: در میوه‌فروشی",
+      "context": "الی در میوه‌فروشی خرید می‌کند",
+      "lines": [
+        {
+          "speaker": "Verkäufer",
+          "text": {
+            "de": "Guten Tag! Was möchten Sie?",
+            "fa": "روز بخیر! چه می‌خواهید؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Ich möchte Obst kaufen. Haben Sie Äpfel?",
+            "fa": "می‌خواهم میوه بخرم. سیب دارید؟"
+          }
+        },
+        {
+          "speaker": "Verkäufer",
+          "text": {
+            "de": "Ja, die Äpfel sind sehr frisch heute!",
+            "fa": "بله، سیب‌ها امروز خیلی تازه هستند!"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Gut, ich nehme ein Kilo Äpfel und Bananen.",
+            "fa": "خوب، یک کیلو سیب و موز می‌خواهم."
+          }
+        },
+        {
+          "speaker": "Verkäufer",
+          "text": {
+            "de": "Brauchen Sie auch Gemüse?",
+            "fa": "سبزیجات هم نیاز دارید؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Ja, ich brauche Tomaten und Gurken für Salat.",
+            "fa": "بله، گوجه و خیار برای سالاد می‌خواهم."
+          }
+        }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        {
+          "question": "الی چه میوه‌ای می‌خرد؟",
+          "options": ["فقط سیب", "سیب و موز", "پرتقال"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: ich nehme ein Kilo Äpfel und Bananen"
+        },
+        {
+          "question": "الی سبزیجات را برای چه می‌خواهد؟",
+          "options": ["سوپ", "سالاد", "ساندویچ"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: für Salat (برای سالاد)"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "سبزیجات",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        {
+          "prompt": "Tomate",
+          "left": "گوجه‌فرنگی",
+          "right": "سیب‌زمینی",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Kartoffel",
+          "left": "گوجه‌فرنگی",
+          "right": "سیب‌زمینی",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Gurke",
+          "left": "خیار",
+          "right": "هویج",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Gemüse",
+          "left": "میوه",
+          "right": "سبزیجات",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "خیار =",
+          "left": "Gurke",
+          "right": "Tomate",
+          "correctSide": "left"
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s11",
+      "word": {
+        "de": "der Salat",
+        "fa": "سالاد/کاهو"
+      },
+      "example": {
+        "text": {
+          "de": "Ich esse einen Salat zum Mittagessen.",
+          "fa": "ناهار سالاد می‌خورم."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Salat",
+      "word": "Salat",
+      "translation": "سالاد",
+      "syllables": ["Sa", "lat"],
+      "distractors": ["So", "lut", "Su", "lit"]
+    },
+    {
+      "type": "new-word",
+      "id": "s12",
+      "word": {
+        "de": "die Zwiebel",
+        "fa": "پیاز"
+      },
+      "example": {
+        "text": {
+          "de": "Zwiebeln machen mich weinen.",
+          "fa": "پیاز مرا به گریه می‌اندازد."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Zwiebel",
+      "word": "Zwiebel",
+      "translation": "پیاز",
+      "syllables": ["Zwie", "bel"],
+      "distractors": ["Zwia", "bal", "Zwio", "bul"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s13",
+      "title": "mögen و möchten",
+      "content": "برای گفتن «دوست داشتن» و «خواستن»:\n\n❤️ **mögen** (دوست داشتن):\n• Ich mag Äpfel. = سیب دوست دارم.\n• Magst du Bananen? = موز دوست داری؟\n\n🙋 **möchten** (می‌خواهم):\n• Ich möchte einen Apfel. = یک سیب می‌خواهم.\n• Möchtest du Kaffee? = قهوه می‌خواهی؟\n\n📝 **تفاوت:** mögen = دوست داشتن کلی، möchten = خواستن الان",
+      "examples": [
+        {
+          "de": "Ich mag Tomaten, aber ich möchte jetzt keine.",
+          "fa": "گوجه دوست دارم، ولی الان نمی‌خوام."
+        },
+        {
+          "de": "Magst du Salat?",
+          "fa": "سالاد دوست داری؟"
+        }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s14",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich {0} Bananen sehr gern.",
+      "options": [
+        "mag",
+        "möchte",
+        "esse",
+        "trinke"
+      ],
+      "correctAnswers": [0],
+      "feedback": {
+        "explanation": "**Ich mag** = دوست دارم (دوست داشتن کلی)"
+      },
+      "feedbackTip": {
+        "category": "verb-choice",
+        "tip": "mögen برای «دوست داشتن» چیزی به طور کلی استفاده می‌شود."
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s15",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich {0} jetzt einen Apfel kaufen.",
+      "options": [
+        "mag",
+        "möchte",
+        "esse",
+        "trinke"
+      ],
+      "correctAnswers": [1],
+      "feedback": {
+        "explanation": "**Ich möchte** = می‌خواهم (خواستن در این لحظه)"
+      },
+      "feedbackTip": {
+        "category": "verb-choice",
+        "tip": "möchten برای «خواستن» چیزی در این لحظه استفاده می‌شود."
+      }
+    },
+    {
+      "type": "matching",
+      "id": "s16",
+      "instruction": "کلمات آلمانی را با فارسی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Apfel" },
+        { "id": "i2", "text": "Tomate" },
+        { "id": "i3", "text": "Kartoffel" },
+        { "id": "i4", "text": "Zwiebel" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "گوجه‌فرنگی" },
+        { "id": "m2", "text": "سیب" },
+        { "id": "m3", "text": "پیاز" },
+        { "id": "m4", "text": "سیب‌زمینی" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m1"],
+        ["i3", "m4"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s17",
+      "question": "کدام یک میوه است؟",
+      "options": [
+        "die Kartoffel",
+        "die Zwiebel",
+        "die Banane",
+        "die Gurke"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": {
+        "correct": "آفرین! Banane (موز) میوه است.",
+        "incorrect": "Banane (موز) میوه است. Kartoffel، Zwiebel و Gurke سبزیجات هستند."
+      },
+      "feedbackTip": {
+        "category": "vocabulary",
+        "tip": "میوه‌ها (Obst): Apfel، Banane، Orange. سبزیجات (Gemüse): Tomate، Kartoffel، Gurke، Zwiebel"
+      }
+    },
+    {
+      "type": "dialog",
+      "id": "s18",
+      "title": "مکالمه: غذای سالم",
+      "context": "الی و تام درباره غذا صحبت می‌کنند",
+      "lines": [
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Was isst du gern, Eli?",
+            "fa": "چی دوست داری بخوری، الی؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Ich esse gern Obst und Gemüse. Ich mag besonders Äpfel und Tomaten.",
+            "fa": "دوست دارم میوه و سبزیجات بخورم. مخصوصاً سیب و گوجه دوست دارم."
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Das ist sehr gesund! Ich mag Kartoffeln und Salat.",
+            "fa": "این خیلی سالم است! من سیب‌زمینی و سالاد دوست دارم."
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Magst du Zwiebeln?",
+            "fa": "پیاز دوست داری؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Nein, ich mag keine Zwiebeln. Sie sind zu scharf.",
+            "fa": "نه، پیاز دوست ندارم. زیادی تند است."
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Ich auch nicht! Aber Gurken mag ich sehr.",
+            "fa": "من هم همینطور! ولی خیار خیلی دوست دارم."
+          }
+        }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        {
+          "question": "الی چه میوه‌ای دوست دارد؟",
+          "options": ["موز", "سیب", "پرتقال"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: Ich mag besonders Äpfel (مخصوصاً سیب دوست دارم)"
+        },
+        {
+          "question": "تام چرا پیاز دوست ندارد؟",
+          "options": ["بو می‌دهد", "زیادی تند است", "گران است"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: Sie sind zu scharf (زیادی تند است)"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g3",
+      "title": "مرور کلی",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        {
+          "prompt": "Obst",
+          "left": "میوه",
+          "right": "سبزیجات",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Gemüse",
+          "left": "میوه",
+          "right": "سبزیجات",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Salat",
+          "left": "سالاد",
+          "right": "سوپ",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "پیاز =",
+          "left": "Zwiebel",
+          "right": "Kartoffel",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "پرتقال =",
+          "left": "Banane",
+          "right": "Orange",
+          "correctSide": "right"
+        }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Ich mag Äpfel und Bananen.",
+      "translation": "سیب و موز دوست دارم.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Möchtest du einen Salat?",
+      "translation": "سالاد می‌خواهی؟",
+      "difficulty": "A1"
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "das Obst", "fa": "میوه" },
+        { "de": "das Gemüse", "fa": "سبزیجات" },
+        { "de": "der Apfel", "fa": "سیب" },
+        { "de": "die Banane", "fa": "موز" },
+        { "de": "die Orange", "fa": "پرتقال" },
+        { "de": "die Tomate", "fa": "گوجه‌فرنگی" },
+        { "de": "die Kartoffel", "fa": "سیب‌زمینی" },
+        { "de": "die Gurke", "fa": "خیار" },
+        { "de": "der Salat", "fa": "سالاد" },
+        { "de": "die Zwiebel", "fa": "پیاز" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما میوه‌ها و سبزیجات را یاد گرفتید:\n\n🍎 **میوه‌ها (Obst):**\n• der Apfel = سیب\n• die Banane = موز\n• die Orange = پرتقال\n\n🥬 **سبزیجات (Gemüse):**\n• die Tomate = گوجه‌فرنگی\n• die Kartoffel = سیب‌زمینی\n• die Gurke = خیار\n• der Salat = سالاد\n• die Zwiebel = پیاز\n\n📝 **فعل‌ها:**\n• mögen = دوست داشتن (Ich mag...)\n• möchten = خواستن (Ich möchte...)",
+      "xpEarned": 50,
+      "nextLessonId": "A1-M08-L03",
+      "vocabularyLearned": [
+        { "word": { "de": "das Obst", "fa": "میوه" } },
+        { "word": { "de": "das Gemüse", "fa": "سبزیجات" } },
+        { "word": { "de": "der Apfel", "fa": "سیب" } },
+        { "word": { "de": "die Banane", "fa": "موز" } },
+        { "word": { "de": "die Orange", "fa": "پرتقال" } },
+        { "word": { "de": "die Tomate", "fa": "گوجه‌فرنگی" } },
+        { "word": { "de": "die Kartoffel", "fa": "سیب‌زمینی" } },
+        { "word": { "de": "die Gurke", "fa": "خیار" } },
+        { "word": { "de": "der Salat", "fa": "سالاد" } },
+        { "word": { "de": "die Zwiebel", "fa": "پیاز" } }
+      ]
+    }
+  ]
+}
