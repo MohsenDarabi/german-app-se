@@ -51,6 +51,11 @@
   let isCorrect = false;
   let isPlaying = false;
 
+  // Capitalization teaching state
+  let hasUsedCapitalizationHint = false;
+  let isCapitalizationError = false;
+  let capitalizationHints: string[] = [];
+
   async function playAudio() {
     if (repeatCount >= maxRepeats || isPlaying) return;
 
@@ -67,15 +72,31 @@
   }
 
   function checkAnswer() {
-    // Normalize both strings for comparison (ignore punctuation and case)
+    // Normalize both strings for comparison (remove punctuation, keep case)
     const normalizedInput = normalizeText(userInput);
     const normalizedTarget = normalizeText(step.targetText);
 
     // Check for exact match (after normalization)
     isCorrect = normalizedInput === normalizedTarget;
 
-    // Track if only punctuation is different (for showing "پاسخ کامل")
-    const onlyPunctuationDiff = isCorrect && userInput.trim() !== step.targetText;
+    // Check if only capitalization is wrong (words are correct)
+    isCapitalizationError = !isCorrect &&
+      normalizedInput.toLowerCase() === normalizedTarget.toLowerCase();
+
+    // If capitalization error and haven't used the free hint yet, show teaching feedback
+    if (isCapitalizationError && !hasUsedCapitalizationHint) {
+      capitalizationHints = analyzeCapitalization(normalizedInput, normalizedTarget);
+      hasUsedCapitalizationHint = true;
+      showFeedback = true;
+      // Don't dispatch yet - give them a chance to fix it
+      return;
+    }
+
+    // Reset capitalization error state if they got it right or it's a different error
+    if (isCorrect || !isCapitalizationError) {
+      isCapitalizationError = false;
+      capitalizationHints = [];
+    }
 
     showFeedback = true;
 
@@ -85,6 +106,45 @@
       correctAnswer: step.targetText,
       allowContinue: isCorrect,
     });
+  }
+
+  // Analyze specific capitalization errors for teaching feedback
+  function analyzeCapitalization(input: string, target: string): string[] {
+    const hints: string[] = [];
+    const inputWords = input.split(/\s+/);
+    const targetWords = target.split(/\s+/);
+
+    // 1. First letter of sentence not capitalized
+    if (inputWords[0] && targetWords[0] &&
+        inputWords[0][0] !== targetWords[0][0] &&
+        inputWords[0].toLowerCase() === targetWords[0].toLowerCase()) {
+      hints.push(`جمله باید با حرف بزرگ شروع شود («${targetWords[0]}» نه «${inputWords[0]}»)`);
+    }
+
+    // 2. Formal "Sie" written as "sie"
+    for (let i = 0; i < inputWords.length; i++) {
+      if (inputWords[i]?.toLowerCase() === 'sie' && targetWords[i] === 'Sie') {
+        hints.push('«Sie» رسمی (شما) همیشه با حرف بزرگ نوشته می‌شود');
+        break; // Only show once
+      }
+    }
+
+    // 3. Other nouns not capitalized (check for words that should be capitalized)
+    for (let i = 0; i < inputWords.length; i++) {
+      const inputWord = inputWords[i];
+      const targetWord = targetWords[i];
+      if (inputWord && targetWord &&
+          /^[A-ZÄÖÜ]/.test(targetWord) && /^[a-zäöü]/.test(inputWord) &&
+          inputWord.toLowerCase() === targetWord.toLowerCase()) {
+        // Skip if already covered by sentence start
+        if (i === 0 && hints.some(h => h.includes('جمله باید'))) continue;
+        // Skip if it's "Sie"
+        if (targetWord === 'Sie') continue;
+        hints.push(`اسم‌ها در آلمانی با حرف بزرگ نوشته می‌شوند («${targetWord}» نه «${inputWord}»)`);
+      }
+    }
+
+    return hints;
   }
 
   // Normalize text: remove punctuation, normalize whitespace (KEEP capitalization for German!)
@@ -99,10 +159,19 @@
       .trim();                   // Trim AFTER punctuation removal to catch "auch !" → "auch " → "auch"
   }
 
-  function retry() {
+  function retry(keepInput = false) {
     showFeedback = false;
-    userInput = '';
+    if (!keepInput) {
+      userInput = '';
+    }
     isCorrect = false;
+    isCapitalizationError = false;
+    capitalizationHints = [];
+  }
+
+  function retryWithHint() {
+    // Keep the input so user can just fix capitalization
+    showFeedback = false;
   }
 
   function handleKeydown(event: KeyboardEvent) {
@@ -162,7 +231,8 @@
       placeholder="اینجا بنویسید..."
       class="dictation-input"
       class:correct={showFeedback && isCorrect}
-      class:wrong={showFeedback && !isCorrect}
+      class:almost={showFeedback && isCapitalizationError && capitalizationHints.length > 0}
+      class:wrong={showFeedback && !isCorrect && !isCapitalizationError}
       disabled={showFeedback && isCorrect}
       dir="ltr"
     />
@@ -181,7 +251,7 @@
 
   <!-- Feedback -->
   {#if showFeedback}
-    <div class="feedback" class:correct={isCorrect} class:wrong={!isCorrect}>
+    <div class="feedback" class:correct={isCorrect} class:almost={isCapitalizationError && capitalizationHints.length > 0} class:wrong={!isCorrect && !isCapitalizationError}>
       {#if isCorrect}
         <div class="feedback-header">
           <span class="feedback-icon">✅</span>
@@ -190,6 +260,23 @@
         {#if userInput.trim() !== step.targetText}
           <p class="correct-answer" dir="ltr">پاسخ کامل: <strong>{step.targetText}</strong></p>
         {/if}
+      {:else if isCapitalizationError && capitalizationHints.length > 0}
+        <!-- Teaching mode: capitalization hints -->
+        <div class="feedback-header">
+          <span class="feedback-icon">⚠️</span>
+          <p class="result almost-result">تقریباً درست!</p>
+        </div>
+        <div class="capitalization-hints">
+          <p class="hints-title">🔤 نکات املایی آلمانی:</p>
+          <ul class="hints-list">
+            {#each capitalizationHints as hint}
+              <li>{hint}</li>
+            {/each}
+          </ul>
+        </div>
+        <button class="retry-btn hint-retry" on:click={retryWithHint}>
+          ✏️ اصلاح کنید
+        </button>
       {:else}
         <div class="feedback-header">
           <span class="feedback-icon">❌</span>
@@ -197,7 +284,7 @@
         </div>
         <p class="correct-answer" dir="ltr">پاسخ صحیح: <strong>{step.targetText}</strong></p>
         <p class="translation-hint">معنی: {step.translation}</p>
-        <button class="retry-btn" on:click={retry}>
+        <button class="retry-btn" on:click={() => retry(false)}>
           🔄 تلاش مجدد
         </button>
       {/if}
@@ -337,6 +424,11 @@
     background: rgba(239, 68, 68, 0.05);
   }
 
+  .dictation-input.almost {
+    border-color: #fbbf24;
+    background: rgba(251, 191, 36, 0.05);
+  }
+
   .dictation-input::placeholder {
     color: var(--color-neutral-400, #a69b8a);
   }
@@ -383,6 +475,11 @@
     border: 2px solid var(--color-error-400, #f87171);
   }
 
+  .feedback.almost {
+    background: linear-gradient(135deg, rgba(251, 191, 36, 0.15), rgba(251, 191, 36, 0.05));
+    border: 2px solid #fbbf24;
+  }
+
   .feedback-header {
     display: flex;
     align-items: center;
@@ -407,6 +504,50 @@
 
   .feedback.wrong .result {
     color: var(--color-error-700, #b91c1c);
+  }
+
+  .feedback.almost .result {
+    color: #b45309;
+  }
+
+  .almost-result {
+    color: #b45309;
+  }
+
+  /* Capitalization hints */
+  .capitalization-hints {
+    text-align: right;
+    margin: var(--space-3, 0.75rem) 0;
+    padding: var(--space-3, 0.75rem);
+    background: rgba(251, 191, 36, 0.1);
+    border-radius: var(--radius-lg, 0.75rem);
+  }
+
+  .hints-title {
+    font-weight: var(--font-semibold, 600);
+    color: #92400e;
+    margin: 0 0 var(--space-2, 0.5rem) 0;
+  }
+
+  .hints-list {
+    margin: 0;
+    padding-right: var(--space-4, 1rem);
+    list-style-type: disc;
+  }
+
+  .hints-list li {
+    color: #78350f;
+    font-size: var(--text-sm, 0.875rem);
+    margin-bottom: var(--space-1, 0.25rem);
+    line-height: 1.5;
+  }
+
+  .hint-retry {
+    background: linear-gradient(135deg, #f59e0b, #d97706) !important;
+  }
+
+  .hint-retry:hover {
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3) !important;
   }
 
   .correct-answer {
@@ -481,6 +622,28 @@
   :global([data-theme="dark"]) .feedback.wrong {
     background: rgba(239, 68, 68, 0.15);
     border-color: #f87171;
+  }
+
+  :global([data-theme="dark"]) .feedback.almost {
+    background: rgba(251, 191, 36, 0.15);
+    border-color: #fbbf24;
+  }
+
+  :global([data-theme="dark"]) .feedback.almost .result,
+  :global([data-theme="dark"]) .almost-result {
+    color: #fcd34d;
+  }
+
+  :global([data-theme="dark"]) .capitalization-hints {
+    background: rgba(251, 191, 36, 0.1);
+  }
+
+  :global([data-theme="dark"]) .hints-title {
+    color: #fcd34d;
+  }
+
+  :global([data-theme="dark"]) .hints-list li {
+    color: #fef3c7;
   }
 
   :global([data-theme="dark"]) .feedback.correct .result {
