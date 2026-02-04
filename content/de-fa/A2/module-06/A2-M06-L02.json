@@ -1,0 +1,379 @@
+{
+  "id": "A2-M06-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Konjunktiv II - hätte und wäre", "fa": "شرطی - hätte و wäre" },
+  "description": "یاد بگیرید فرم شرطی haben و sein را برای آرزوها و موقعیت‌های فرضی",
+  "level": "A2",
+  "module": 6,
+  "lessonNumber": 2,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "hätte", "fa": "داشتم (شرطی)", "grammar": { "pos": "verb", "tense": "konjunktiv II", "infinitive": "haben" } },
+    { "de": "wäre", "fa": "بودم (شرطی)", "grammar": { "pos": "verb", "tense": "konjunktiv II", "infinitive": "sein" } },
+    { "de": "wenn", "fa": "اگر / وقتی", "grammar": { "pos": "conjunction" } },
+    { "de": "dann", "fa": "آنگاه / پس", "grammar": { "pos": "adverb" } },
+    { "de": "reich", "fa": "ثروتمند", "grammar": { "pos": "adjective" } },
+    { "de": "Zeit", "fa": "وقت / زمان", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "Geld", "fa": "پول", "grammar": { "pos": "noun", "gender": "neuter" } },
+    { "de": "schön", "fa": "زیبا / خوب", "grammar": { "pos": "adjective" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "hätte و wäre چیست؟",
+      "content": "📝 **فرم شرطی haben و sein:**\n\n• hätte = داشتم (شرطی) - از haben\n• wäre = بودم (شرطی) - از sein\n\n💡 این فرم‌ها طبیعی‌تر از «würde haben» و «würde sein» هستند",
+      "examples": [
+        { "de": "Ich hätte gern einen Kaffee.", "fa": "یک قهوه می‌خواستم." },
+        { "de": "Das wäre toll!", "fa": "عالی می‌شد!" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "hätte", "fa": "داشتم (شرطی)" },
+      "example": { "text": { "de": "Ich hätte gern mehr Zeit.", "fa": "کاش وقت بیشتری داشتم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "wäre", "fa": "بودم (شرطی)" },
+      "example": { "text": { "de": "Das wäre schön.", "fa": "خوب می‌شد." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s4",
+      "title": "صرف hätte",
+      "content": "📝 **صرف hätte:**\n\n| ضمیر | hätte |\n|------|-------|\n| ich | hätte |\n| du | hättest |\n| er/sie/es | hätte |\n| wir | hätten |\n| ihr | hättet |\n| sie/Sie | hätten |\n\n💡 ich و er/sie/es یکسان: **hätte**",
+      "examples": [
+        { "de": "Ich hätte gern ein Auto.", "fa": "کاش ماشین داشتم." },
+        { "de": "Hättest du Zeit?", "fa": "وقت داشتی؟" }
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "hätte",
+      "translation": "داشتم (شرطی)",
+      "syllables": ["hät", "te"],
+      "distractors": ["hat", "ta", "het", "tu"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«کاش وقت بیشتری داشتم» به آلمانی چیست؟",
+      "options": ["Ich habe mehr Zeit.", "Ich hätte gern mehr Zeit.", "Ich hatte mehr Zeit.", "Ich werde mehr Zeit haben."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! hätte gern برای آرزو", "incorrect": "hätte gern = کاش داشتم" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام صرف hätte برای «du» صحیح است؟",
+      "options": ["hätte", "hättest", "hätten", "hättet"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! du hättest", "incorrect": "du → hättest" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich {0} gern ein neues Handy.",
+      "options": ["hätte", "habe", "hatte", "haben"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "hätte gern برای آرزو" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "صرف wäre",
+      "content": "📝 **صرف wäre:**\n\n| ضمیر | wäre |\n|------|------|\n| ich | wäre |\n| du | wärst |\n| er/sie/es | wäre |\n| wir | wären |\n| ihr | wärt |\n| sie/Sie | wären |\n\n💡 ich و er/sie/es یکسان: **wäre**",
+      "examples": [
+        { "de": "Ich wäre gern in Deutschland.", "fa": "کاش در آلمان بودم." },
+        { "de": "Wärst du glücklich?", "fa": "خوشحال می‌شدی؟" }
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "wäre",
+      "translation": "بودم (شرطی)",
+      "syllables": ["wä", "re"],
+      "distractors": ["wa", "ri", "wo", "ra"]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "reich", "fa": "ثروتمند" },
+      "example": { "text": { "de": "Wenn ich reich wäre...", "fa": "اگر ثروتمند بودم..." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "wenn", "fa": "اگر / وقتی" },
+      "example": { "text": { "de": "Wenn ich Zeit hätte, würde ich kommen.", "fa": "اگر وقت داشتم، می‌آمدم." } }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "آرزوها",
+      "context": "آنا و بن درباره آرزوهایشان صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Wenn du reich wärst, was würdest du machen?", "fa": "اگر ثروتمند بودی، چه کار می‌کردی؟" } },
+        { "speaker": "Ben", "text": { "de": "Ich hätte gern ein großes Haus.", "fa": "کاش یک خانه بزرگ داشتم." } },
+        { "speaker": "Anna", "text": { "de": "Das wäre schön!", "fa": "خوب می‌شد!" } },
+        { "speaker": "Ben", "text": { "de": "Und du?", "fa": "و تو؟" } },
+        { "speaker": "Anna", "text": { "de": "Ich wäre gern immer auf Reisen.", "fa": "کاش همیشه در سفر بودم." } }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "«عالی می‌شد!» به آلمانی چیست؟",
+      "options": ["Das ist toll!", "Das war toll!", "Das wäre toll!", "Das wird toll!"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! wäre برای موقعیت فرضی", "incorrect": "wäre = می‌شد (شرطی)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Wenn ich Zeit {0}, würde ich dir helfen.",
+      "options": ["habe", "hätte", "hatte", "haben"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Wenn + hätte برای شرط فرضی" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das {0} wirklich toll!",
+      "options": ["ist", "war", "wäre", "wird"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "wäre برای موقعیت فرضی" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["Zeit.", "mehr", "gern", "hätte", "Ich"],
+      "correctOrder": [4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Ich hätte gern mehr Zeit.", "fa": "کاش وقت بیشتری داشتم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["schön!", "wäre", "Das"],
+      "correctOrder": [2, 1, 0],
+      "correctSentence": { "de": "Das wäre schön!", "fa": "خوب می‌شد!" }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "Geld", "fa": "پول" },
+      "example": { "text": { "de": "Wenn ich mehr Geld hätte...", "fa": "اگر پول بیشتری داشتم..." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "Zeit", "fa": "وقت / زمان" },
+      "example": { "text": { "de": "Ich hätte gern mehr Zeit.", "fa": "کاش وقت بیشتری داشتم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "reich",
+      "translation": "ثروتمند",
+      "syllables": ["reich"],
+      "distractors": ["raich", "rech", "riech", "rach"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "«اگر ثروتمند بودم» به آلمانی چیست؟",
+      "options": ["Wenn ich reich bin", "Wenn ich reich war", "Wenn ich reich werde", "Wenn ich reich wäre"],
+      "correctAnswerIndex": 3,
+      "feedback": { "correct": "آفرین! Wenn + wäre برای شرط فرضی", "incorrect": "wäre برای موقعیت غیرواقعی" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Wir {0} gern mehr Urlaub.",
+      "options": ["haben", "hatten", "hätten", "werden haben"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "wir → hätten" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er {0} gern Arzt.",
+      "options": ["ist", "war", "wäre", "wird"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "wäre برای آرزو" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در رستوران",
+      "context": "مهمان در رستوران سفارش می‌دهد",
+      "lines": [
+        { "speaker": "Kellner", "text": { "de": "Was hätten Sie gern?", "fa": "چه میل دارید؟" } },
+        { "speaker": "Gast", "text": { "de": "Ich hätte gern die Speisekarte.", "fa": "منو را می‌خواستم." } },
+        { "speaker": "Kellner", "text": { "de": "Bitte schön. Hier ist sie.", "fa": "بفرمایید. اینجاست." } },
+        { "speaker": "Gast", "text": { "de": "Das wäre alles, danke.", "fa": "همین بود، ممنون." } }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "ضمیر را با صرف hätte/wäre وصل کنید",
+      "items": [
+        { "id": "i1", "text": "ich hätte" },
+        { "id": "i2", "text": "du wärst" },
+        { "id": "i3", "text": "wir hätten" },
+        { "id": "i4", "text": "ihr wärt" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "من داشتم" },
+        { "id": "m2", "text": "تو بودی" },
+        { "id": "m3", "text": "ما داشتیم" },
+        { "id": "m4", "text": "شما بودید" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"],
+        ["i4", "m4"]
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "hätte یا wäre؟",
+      "instruction": "فعل صحیح را انتخاب کنید",
+      "questions": [
+        { "prompt": "Ich ___ gern ein Auto.", "left": "hätte", "right": "wäre", "correctSide": "left" },
+        { "prompt": "Das ___ toll!", "left": "hätte", "right": "wäre", "correctSide": "right" },
+        { "prompt": "Er ___ gern reich.", "left": "hätte", "right": "wäre", "correctSide": "right" },
+        { "prompt": "Wir ___ gern mehr Zeit.", "left": "hätten", "right": "wären", "correctSide": "left" },
+        { "prompt": "Sie ___ gern in Berlin.", "left": "hätte", "right": "wäre", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["kommen.", "würde", "ich", "hätte,", "Zeit", "Wenn", "ich"],
+      "correctOrder": [5, 6, 4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Wenn ich Zeit hätte, würde ich kommen.", "fa": "اگر وقت داشتم، می‌آمدم." }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "hätten",
+      "translation": "داشتیم (شرطی)",
+      "syllables": ["hät", "ten"],
+      "distractors": ["hat", "tan", "het", "tin"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc5",
+      "question": "«ما دوست داریم بیشتر تعطیلات داشته باشیم» به آلمانی چیست؟",
+      "options": ["Wir hätten gern mehr Urlaub.", "Wir haben gern mehr Urlaub.", "Wir hatten gern mehr Urlaub.", "Wir wären gern mehr Urlaub."],
+      "correctAnswerIndex": 0,
+      "feedback": { "correct": "آفرین! hätten برای آرزو داشتن چیزی", "incorrect": "hätten = داشتیم (شرطی)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d3",
+      "title": "اگر...",
+      "context": "دوستان درباره موقعیت‌های فرضی صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Wenn du ein Superheld wärst, was hättest du für eine Kraft?", "fa": "اگر ابرقهرمان بودی، چه قدرتی داشتی؟" } },
+        { "speaker": "Tom", "text": { "de": "Ich wäre gern unsichtbar!", "fa": "کاش نامرئی بودم!" } },
+        { "speaker": "Lisa", "text": { "de": "Das wäre cool! Und ich hätte gern Superkraft.", "fa": "باحال می‌شد! و من کاش قدرت خارق‌العاده داشتم." } }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} du gern berühmt?",
+      "options": ["Bist", "Warst", "Wärst", "Wirst"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "du → wärst (شرطی)" }
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی صحیح را انتخاب کنید",
+      "words": [
+        { "de": "hätte gern", "fa": "کاش داشتم", "options": ["کاش داشتم", "دارم", "داشتم", "خواهم داشت"], "correctIndex": 0 },
+        { "de": "wäre", "fa": "بودم (شرطی)", "options": ["هستم", "بودم (شرطی)", "بودم (گذشته)", "خواهم بود"], "correctIndex": 1 },
+        { "de": "wenn", "fa": "اگر", "options": ["اگر", "چون", "وقتی که", "زیرا"], "correctIndex": 0 }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo4",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["gern?", "Sie", "hätten", "Was"],
+      "correctOrder": [3, 2, 1, 0],
+      "correctSentence": { "de": "Was hätten Sie gern?", "fa": "چه میل دارید؟" }
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich hätte gern mehr Zeit.",
+      "translation": "کاش وقت بیشتری داشتم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Das wäre toll!",
+      "translation": "عالی می‌شد!"
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Wenn ich reich wäre...",
+      "translation": "اگر ثروتمند بودم..."
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "ich hätte", "fa": "من داشتم (شرطی)" },
+        { "de": "ich wäre", "fa": "من بودم (شرطی)" },
+        { "de": "wir hätten", "fa": "ما داشتیم (شرطی)" },
+        { "de": "das wäre toll", "fa": "عالی می‌شد" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp1",
+      "title": "آفرین! 🎉",
+      "message": "فرم شرطی haben و sein را یاد گرفتید!",
+      "keyPoints": [
+        "hätte = داشتم (شرطی) - از haben",
+        "wäre = بودم (شرطی) - از sein",
+        "Ich hätte gern... = کاش داشتم...",
+        "Das wäre schön/toll! = خوب/عالی می‌شد!",
+        "Wenn ich Zeit hätte... = اگر وقت داشتم..."
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "hätte", "fa": "داشتم (شرطی)" } },
+        { "word": { "de": "wäre", "fa": "بودم (شرطی)" } },
+        { "word": { "de": "wenn", "fa": "اگر" } },
+        { "word": { "de": "reich", "fa": "ثروتمند" } },
+        { "word": { "de": "Zeit", "fa": "وقت" } }
+      ]
+    }
+  ]
+}

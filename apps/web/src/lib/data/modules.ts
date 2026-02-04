@@ -640,6 +640,12 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         title: "würde + Infinitiv",
         description: "یاد بگیرید چطور با würde آرزوها و درخواست‌های مودبانه بیان کنید.",
         path: "/learn/de-fa/A2/A2-M06-L01"
+      },
+      {
+        id: "A2-M06-L02",
+        title: "hätte und wäre",
+        description: "یاد بگیرید فرم شرطی haben و sein را برای آرزوها و موقعیت‌های فرضی.",
+        path: "/learn/de-fa/A2/A2-M06-L02"
       }
     ]
   }
