@@ -598,6 +598,19 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/A2/A2-M04-L04"
       }
     ]
+  },
+  {
+    id: "module-05",
+    title: "بخش ۵: گذشته ساده (Präteritum)",
+    level: "A2",
+    lessons: [
+      {
+        id: "A2-M05-L01",
+        title: "sein und haben",
+        description: "یاد بگیرید گذشته ساده sein و haben را.",
+        path: "/learn/de-fa/A2/A2-M05-L01"
+      }
+    ]
   }
 ];
 
