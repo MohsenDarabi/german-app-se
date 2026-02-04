@@ -671,6 +671,12 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         title: "Nominativ - فاعلی",
         description: "یاد بگیرید جملات موصولی بسازید با der, die, das به عنوان فاعل.",
         path: "/learn/de-fa/A2/A2-M07-L01"
+      },
+      {
+        id: "A2-M07-L02",
+        title: "Akkusativ - مفعولی",
+        description: "یاد بگیرید جملات موصولی بسازید با den, die, das به عنوان مفعول.",
+        path: "/learn/de-fa/A2/A2-M07-L02"
       }
     ]
   }

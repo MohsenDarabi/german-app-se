@@ -1,0 +1,381 @@
+{
+  "id": "A2-M07-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Relativsätze - Akkusativ", "fa": "جملات موصولی - مفعولی" },
+  "description": "یاد بگیرید جملات موصولی بسازید با den, die, das به عنوان مفعول",
+  "level": "A2",
+  "module": 7,
+  "lessonNumber": 2,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "den (Relativpronomen)", "fa": "که (مذکر مفعولی)", "grammar": { "pos": "pronoun", "case": "akkusativ" } },
+    { "de": "die (Relativpronomen)", "fa": "که (مؤنث/جمع مفعولی)", "grammar": { "pos": "pronoun", "case": "akkusativ" } },
+    { "de": "das (Relativpronomen)", "fa": "که (خنثی مفعولی)", "grammar": { "pos": "pronoun", "case": "akkusativ" } },
+    { "de": "sehen", "fa": "دیدن", "grammar": { "pos": "verb", "infinitive": "sehen" } },
+    { "de": "lesen", "fa": "خواندن", "grammar": { "pos": "verb", "infinitive": "lesen" } },
+    { "de": "mögen", "fa": "دوست داشتن", "grammar": { "pos": "verb", "infinitive": "mögen" } },
+    { "de": "suchen", "fa": "جستجو کردن", "grammar": { "pos": "verb", "infinitive": "suchen" } },
+    { "de": "brauchen", "fa": "نیاز داشتن", "grammar": { "pos": "verb", "infinitive": "brauchen" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "ضمیر موصولی در Akkusativ",
+      "content": "📝 **وقتی ضمیر موصولی مفعول است:**\n\n| جنس | Nominativ | Akkusativ |\n|-----|-----------|----------|\n| مذکر | der | **den** |\n| مؤنث | die | die |\n| خنثی | das | das |\n| جمع | die | die |\n\n⚠️ فقط مذکر تغییر می‌کند: der → **den**",
+      "examples": [
+        { "de": "Der Mann, den ich kenne, ist nett.", "fa": "مردی که می‌شناسم، مهربان است." },
+        { "de": "Die Frau, die ich sehe, ist schön.", "fa": "زنی که می‌بینم، زیباست." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "den (Relativpronomen)", "fa": "که (مذکر مفعولی)" },
+      "example": { "text": { "de": "Der Mann, den ich kenne...", "fa": "مردی که می‌شناسم..." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "sehen", "fa": "دیدن" },
+      "example": { "text": { "de": "Die Frau, die ich sehe...", "fa": "زنی که می‌بینم..." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "lesen", "fa": "خواندن" },
+      "example": { "text": { "de": "Das Buch, das ich lese...", "fa": "کتابی که می‌خوانم..." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "تفاوت Nominativ و Akkusativ",
+      "content": "📝 **مقایسه:**\n\n**Nominativ (فاعل):**\nDer Mann, **der** dort steht...\n(مردی که آنجا **ایستاده**...)\n\n**Akkusativ (مفعول):**\nDer Mann, **den** ich **kenne**...\n(مردی که **می‌شناسم**...)\n\n💡 در Akkusativ، فاعل جدید (ich) در جمله موصولی هست",
+      "examples": [
+        { "de": "Der Hund, der bellt... (فاعل)", "fa": "سگی که پارس می‌کند..." },
+        { "de": "Der Hund, den ich sehe... (مفعول)", "fa": "سگی که می‌بینم..." }
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "sehen",
+      "translation": "دیدن",
+      "syllables": ["se", "hen"],
+      "distractors": ["sa", "han", "si", "hun"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«مردی که می‌شناسم» - کدام ضمیر موصولی درست است؟",
+      "options": ["der", "den", "die", "das"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! der Mann + مفعول = den", "incorrect": "مذکر در Akkusativ: der → den" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "«زنی که می‌بینم» - کدام ضمیر موصولی درست است؟",
+      "options": ["der", "den", "die", "das"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! die Frau → die (مؤنث تغییر نمی‌کند)", "incorrect": "مؤنث در Akkusativ هم die است" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Der Mann, {0} ich kenne, ist nett.",
+      "options": ["der", "den", "die", "das"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "der Mann + مفعول = den" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Frau, {0} ich sehe, ist schön.",
+      "options": ["der", "den", "die", "das"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "die Frau → die (تغییر نمی‌کند)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "درباره فیلم",
+      "context": "دو دوست درباره فیلم صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Der Film, den ich gestern gesehen habe, war toll!", "fa": "فیلمی که دیروز دیدم، عالی بود!" } },
+        { "speaker": "Ben", "text": { "de": "Welcher Film? Der Action-Film?", "fa": "کدام فیلم؟ فیلم اکشن؟" } },
+        { "speaker": "Anna", "text": { "de": "Nein, die Komödie, die du mir empfohlen hast.", "fa": "نه، کمدی‌ای که بهم پیشنهاد دادی." } },
+        { "speaker": "Ben", "text": { "de": "Ah, die mag ich auch!", "fa": "آه، من هم دوستش دارم!" } }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "mögen", "fa": "دوست داشتن" },
+      "example": { "text": { "de": "Die Musik, die ich mag...", "fa": "موسیقی‌ای که دوست دارم..." } }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "«کتابی که می‌خوانم» - کدام ضمیر موصولی درست است؟",
+      "options": ["der", "den", "die", "das"],
+      "correctAnswerIndex": 3,
+      "feedback": { "correct": "آفرین! das Buch → das (خنثی تغییر نمی‌کند)", "incorrect": "خنثی در Akkusativ هم das است" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["interessant.", "ist", "lese,", "ich", "das", "Buch,", "Das"],
+      "correctOrder": [6, 5, 4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Das Buch, das ich lese, ist interessant.", "fa": "کتابی که می‌خوانم، جالب است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["nett.", "ist", "kenne,", "ich", "den", "Mann,", "Der"],
+      "correctOrder": [6, 5, 4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Der Mann, den ich kenne, ist nett.", "fa": "مردی که می‌شناسم، مهربان است." }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "lesen",
+      "translation": "خواندن",
+      "syllables": ["le", "sen"],
+      "distractors": ["la", "san", "li", "sun"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das Buch, {0} ich lese, ist spannend.",
+      "options": ["der", "den", "die", "das"],
+      "correctAnswers": [3],
+      "feedback": { "explanation": "das Buch → das (خنثی)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Filme, {0} ich mag, sind lustig.",
+      "options": ["der", "den", "die", "das"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "die Filme (جمع) → die" }
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "suchen", "fa": "جستجو کردن" },
+      "example": { "text": { "de": "Das Auto, das ich suche...", "fa": "ماشینی که دنبالش می‌گردم..." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "brauchen", "fa": "نیاز داشتن" },
+      "example": { "text": { "de": "Die Hilfe, die ich brauche...", "fa": "کمکی که نیاز دارم..." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "خلاصه: فقط مذکر تغییر می‌کند",
+      "content": "📝 **به یاد داشته باشید:**\n\n| جنس | Nom. | Akk. |\n|-----|------|------|\n| مذکر | der | **den** |\n| مؤنث | die | die |\n| خنثی | das | das |\n| جمع | die | die |\n\n💡 فقط مذکر: der → **den**\nبقیه تغییر نمی‌کنند!",
+      "examples": [
+        { "de": "Der Kaffee, den ich trinke...", "fa": "قهوه‌ای که می‌نوشم..." },
+        { "de": "Die Pizza, die ich esse...", "fa": "پیتزایی که می‌خورم..." }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در کتابخانه",
+      "context": "دانشجو با کتابدار صحبت می‌کند",
+      "lines": [
+        { "speaker": "Student", "text": { "de": "Ich suche ein Buch.", "fa": "دنبال یک کتاب می‌گردم." } },
+        { "speaker": "Bibliothekar", "text": { "de": "Welches Buch?", "fa": "کدام کتاب؟" } },
+        { "speaker": "Student", "text": { "de": "Das Buch, das mein Professor empfohlen hat.", "fa": "کتابی که استادم پیشنهاد داده." } },
+        { "speaker": "Bibliothekar", "text": { "de": "Ah, der Roman, den alle lesen wollen!", "fa": "آه، رمانی که همه می‌خواهند بخوانند!" } },
+        { "speaker": "Student", "text": { "de": "Genau!", "fa": "دقیقاً!" } }
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "suchen",
+      "translation": "جستجو کردن",
+      "syllables": ["su", "chen"],
+      "distractors": ["sa", "chan", "so", "chin"]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "اسم را با ضمیر موصولی مفعولی وصل کنید",
+      "items": [
+        { "id": "i1", "text": "der Film (مفعول)" },
+        { "id": "i2", "text": "die Musik (مفعول)" },
+        { "id": "i3", "text": "das Lied (مفعول)" },
+        { "id": "i4", "text": "die Bücher (مفعول)" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "den" },
+        { "id": "m2", "text": "die" },
+        { "id": "m3", "text": "das" },
+        { "id": "m4", "text": "die (جمع)" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"],
+        ["i4", "m4"]
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "Nominativ یا Akkusativ؟",
+      "instruction": "ضمیر موصولی صحیح را انتخاب کنید",
+      "questions": [
+        { "prompt": "Der Mann, ___ dort steht (فاعل)", "left": "der", "right": "den", "correctSide": "left" },
+        { "prompt": "Der Mann, ___ ich kenne (مفعول)", "left": "der", "right": "den", "correctSide": "right" },
+        { "prompt": "Die Frau, ___ singt (فاعل)", "left": "die", "right": "den", "correctSide": "left" },
+        { "prompt": "Die Frau, ___ ich sehe (مفعول)", "left": "die", "right": "den", "correctSide": "left" },
+        { "prompt": "Das Kind, ___ ich höre (مفعول)", "left": "das", "right": "den", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "«قهوه‌ای که می‌نوشم» به آلمانی چیست؟",
+      "options": ["Der Kaffee, der ich trinke", "Der Kaffee, den ich trinke", "Der Kaffee, die ich trinke", "Der Kaffee, das ich trinke"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! der Kaffee + مفعول = den", "incorrect": "مذکر در Akkusativ: der → den" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc5",
+      "question": "«موسیقی‌ای که گوش می‌دهم» به آلمانی چیست؟",
+      "options": ["Die Musik, der ich höre", "Die Musik, den ich höre", "Die Musik, die ich höre", "Die Musik, das ich höre"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! die Musik → die (مؤنث تغییر نمی‌کند)", "incorrect": "مؤنث در Akkusativ هم die است" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Der Kaffee, {0} ich trinke, ist heiß.",
+      "options": ["der", "den", "die", "das"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "der Kaffee + مفعول = den" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Leute, {0} ich kenne, sind nett.",
+      "options": ["der", "den", "die", "das"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "die Leute (جمع) → die" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["heiß.", "ist", "trinke,", "ich", "den", "Kaffee,", "Der"],
+      "correctOrder": [6, 5, 4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Der Kaffee, den ich trinke, ist heiß.", "fa": "قهوه‌ای که می‌نوشم، داغ است." }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "brauchen",
+      "translation": "نیاز داشتن",
+      "syllables": ["brau", "chen"],
+      "distractors": ["brou", "chan", "brei", "chin"]
+    },
+    {
+      "type": "dialog",
+      "id": "d3",
+      "title": "خرید لباس",
+      "context": "در فروشگاه لباس",
+      "lines": [
+        { "speaker": "Kundin", "text": { "de": "Ich suche das Kleid, das im Schaufenster war.", "fa": "دنبال لباسی می‌گردم که در ویترین بود." } },
+        { "speaker": "Verkäufer", "text": { "de": "Das rote Kleid, das Sie meinen?", "fa": "لباس قرمزی که منظورتان است؟" } },
+        { "speaker": "Kundin", "text": { "de": "Ja! Und die Schuhe, die dazu passen.", "fa": "بله! و کفش‌هایی که بهش می‌آید." } },
+        { "speaker": "Verkäufer", "text": { "de": "Hier sind sie!", "fa": "اینجا هستند!" } }
+      ]
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "ضمیر موصولی مفعولی صحیح را انتخاب کنید",
+      "words": [
+        { "de": "der Tisch (مفعول)", "fa": "den", "options": ["der", "den", "die", "das"], "correctIndex": 1 },
+        { "de": "die Lampe (مفعول)", "fa": "die", "options": ["der", "den", "die", "das"], "correctIndex": 2 },
+        { "de": "das Fenster (مفعول)", "fa": "das", "options": ["der", "den", "die", "das"], "correctIndex": 3 }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo4",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["lustig.", "sind", "mag,", "ich", "die", "Filme,", "Die"],
+      "correctOrder": [6, 5, 4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Die Filme, die ich mag, sind lustig.", "fa": "فیلم‌هایی که دوست دارم، خنده‌دار هستند." }
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Der Mann, den ich kenne, ist nett.",
+      "translation": "مردی که می‌شناسم، مهربان است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Das Buch, das ich lese, ist gut.",
+      "translation": "کتابی که می‌خوانم، خوب است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Die Musik, die ich höre, ist schön.",
+      "translation": "موسیقی‌ای که گوش می‌دهم، زیباست."
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "der Mann, den ich...", "fa": "مردی که (مفعول)" },
+        { "de": "die Frau, die ich...", "fa": "زنی که (مفعول)" },
+        { "de": "das Buch, das ich...", "fa": "کتابی که (مفعول)" },
+        { "de": "die Leute, die ich...", "fa": "مردمی که (مفعول)" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp1",
+      "title": "آفرین! 🎉",
+      "message": "جملات موصولی با ضمیر مفعولی را یاد گرفتید!",
+      "keyPoints": [
+        "در Akkusativ فقط مذکر تغییر می‌کند",
+        "der → den (مذکر مفعولی)",
+        "die → die (مؤنث تغییر نمی‌کند)",
+        "das → das (خنثی تغییر نمی‌کند)",
+        "die → die (جمع تغییر نمی‌کند)",
+        "مثال: Der Mann, den ich kenne..."
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "den (Relativ)", "fa": "که (مذکر مفعولی)" } },
+        { "word": { "de": "sehen", "fa": "دیدن" } },
+        { "word": { "de": "lesen", "fa": "خواندن" } },
+        { "word": { "de": "suchen", "fa": "جستجو کردن" } },
+        { "word": { "de": "brauchen", "fa": "نیاز داشتن" } }
+      ]
+    }
+  ]
+}
