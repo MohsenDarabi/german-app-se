@@ -635,6 +635,37 @@ const rules = [
     }
   },
   {
+    name: 'syllable-spelling-no-ambiguous-distractors',
+    description: 'Syllable-spelling: distractors must not be substrings/prefixes of correct syllables',
+    check: (lesson) => {
+      const syllableSteps = lesson.steps?.filter(s => s.type === 'syllable-spelling') || [];
+      const issues = [];
+
+      for (const step of syllableSteps) {
+        if (!step.syllables || !step.distractors) continue;
+
+        for (const distractor of step.distractors) {
+          for (const syllable of step.syllables) {
+            // Check if distractor is substring of syllable or vice versa
+            // (but not if they're exactly equal - that would be caught by Zod)
+            if (distractor !== syllable) {
+              if (syllable.includes(distractor)) {
+                issues.push(`${step.id}: distractor "${distractor}" is substring of syllable "${syllable}" (ambiguous)`);
+              } else if (distractor.includes(syllable)) {
+                issues.push(`${step.id}: distractor "${distractor}" contains syllable "${syllable}" (ambiguous)`);
+              }
+            }
+          }
+        }
+      }
+
+      if (issues.length > 0) {
+        return { pass: false, error: issues.slice(0, 3).join('; ') + (issues.length > 3 ? ` (+${issues.length - 3} more)` : '') };
+      }
+      return { pass: true };
+    }
+  },
+  {
     name: 'no-english-in-persian',
     description: 'Persian content should not contain English words (except German vocabulary)',
     check: (lesson) => {

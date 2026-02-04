@@ -17,8 +17,8 @@
   "level": "A1",
   "module": 2,
   "lessonNumber": 3,
-  "totalSteps": 29,
-  "estimatedMinutes": 15,
+  "totalSteps": 38,
+  "estimatedMinutes": 18,
   "vocabulary": [
     { "de": "wir", "fa": "ما", "grammar": { "pos": "pronoun" } },
     { "de": "ihr", "fa": "شما (غیررسمی جمع)", "grammar": { "pos": "pronoun" } },
@@ -59,6 +59,18 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-wir",
+      "word": "wir",
+      "translation": "ما",
+      "syllables": ["w", "i", "r"],
+      "distractors": ["o", "ü", "v"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «wir» یعنی ما. توجه: w در آلمانی صدای «و» می‌دهد."
+      }
+    },
+    {
       "type": "new-word",
       "id": "s3",
       "word": {
@@ -70,6 +82,18 @@
           "de": "Wir machen Hausaufgaben.",
           "fa": "ما تکالیف انجام می‌دهیم."
         }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-wir-machen",
+      "word": "wir machen",
+      "translation": "ما انجام می‌دهیم",
+      "syllables": ["wir", "ma", "chen"],
+      "distractors": ["wen", "te", "wie"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «wir machen» - با wir پسوند -en می‌گیریم."
       }
     },
     {
@@ -87,6 +111,18 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-ihr",
+      "word": "ihr",
+      "translation": "شما (غیررسمی جمع)",
+      "syllables": ["i", "h", "r"],
+      "distractors": ["o", "a", "u"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «ihr» یعنی شما (غیررسمی). برای دوستان و خانواده استفاده می‌شود."
+      }
+    },
+    {
       "type": "new-word",
       "id": "s5",
       "word": {
@@ -98,6 +134,18 @@
           "de": "Ihr macht das gut!",
           "fa": "شما این کار را خوب انجام می‌دهید!"
         }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-ihr-macht",
+      "word": "ihr macht",
+      "translation": "شما انجام می‌دهید",
+      "syllables": ["ihr", "macht"],
+      "distractors": ["machen", "machst", "ir"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «ihr macht» - با ihr پسوند -t می‌گیریم."
       }
     },
     {
@@ -115,6 +163,18 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-sie",
+      "word": "sie",
+      "translation": "آن‌ها",
+      "syllables": ["s", "ie"],
+      "distractors": ["ei", "ö", "a"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «sie» (با s کوچک) یعنی آن‌ها. توجه: ie صدای «ای» می‌دهد."
+      }
+    },
+    {
       "type": "new-word",
       "id": "s7",
       "word": {
@@ -126,6 +186,18 @@
           "de": "Sie machen Sport.",
           "fa": "آن‌ها ورزش می‌کنند."
         }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-sie-machen",
+      "word": "sie machen",
+      "translation": "آن‌ها انجام می‌دهند",
+      "syllables": ["sie", "ma", "chen"],
+      "distractors": ["wen", "te", "Se"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «sie machen» - با sie (آن‌ها) پسوند -en می‌گیریم."
       }
     },
     {
@@ -201,6 +273,18 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-Sie",
+      "word": "Sie",
+      "translation": "شما (رسمی)",
+      "syllables": ["S", "ie"],
+      "distractors": ["s", "ei", "a"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «Sie» (با S بزرگ) یعنی شما (رسمی). همیشه با حرف بزرگ نوشته می‌شود!"
+      }
+    },
+    {
       "type": "grammar-tip",
       "id": "s10",
       "title": "Sie رسمی و sie جمع",
@@ -232,11 +316,11 @@
     },
     {
       "type": "syllable-spelling",
-      "id": "syllable-1",
+      "id": "syllable-zusammen",
       "word": "zusammen",
       "translation": "با هم",
       "syllables": ["zu", "sam", "men"],
-      "distractors": ["zus", "am", "nen"],
+      "distractors": ["ze", "um", "nen"],
       "instruction": "قطعات را کنار هم بگذارید",
       "feedbackTip": {
         "onCorrect": "آفرین! «zusammen» یعنی با هم - کلمه پرکاربردی است!"
@@ -254,6 +338,18 @@
           "de": "Alle spielen Fußball.",
           "fa": "همه فوتبال بازی می‌کنند."
         }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-alle",
+      "word": "alle",
+      "translation": "همه",
+      "syllables": ["al", "le"],
+      "distractors": ["el", "la", "li"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": {
+        "onCorrect": "آفرین! «alle» یعنی همه. توجه به حرف دوبل l کنید."
       }
     },
     {
