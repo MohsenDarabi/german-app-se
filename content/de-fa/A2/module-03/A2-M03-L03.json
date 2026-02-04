@@ -1,0 +1,421 @@
+{
+  "id": "A2-M03-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Reflexivverben mit Präpositionen", "fa": "فعل‌های انعکاسی با حروف اضافه" },
+  "description": "یاد بگیرید فعل‌های انعکاسی که با حروف اضافه خاص می‌آیند",
+  "level": "A2",
+  "module": 3,
+  "lessonNumber": 3,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "sich interessieren für", "fa": "علاقه‌مند بودن به", "grammar": { "pos": "verb", "reflexive": true, "preposition": "für" } },
+    { "de": "sich erinnern an", "fa": "به یاد آوردن", "grammar": { "pos": "verb", "reflexive": true, "preposition": "an" } },
+    { "de": "sich gewöhnen an", "fa": "عادت کردن به", "grammar": { "pos": "verb", "reflexive": true, "preposition": "an" } },
+    { "de": "sich konzentrieren auf", "fa": "تمرکز کردن روی", "grammar": { "pos": "verb", "reflexive": true, "preposition": "auf" } },
+    { "de": "sich kümmern um", "fa": "مراقبت کردن از", "grammar": { "pos": "verb", "reflexive": true, "preposition": "um" } },
+    { "de": "sich entscheiden für", "fa": "تصمیم گرفتن برای", "grammar": { "pos": "verb", "reflexive": true, "preposition": "für" } },
+    { "de": "sich vorbereiten auf", "fa": "آماده شدن برای", "grammar": { "pos": "verb", "reflexive": true, "preposition": "auf" } },
+    { "de": "sich bedanken für", "fa": "تشکر کردن از", "grammar": { "pos": "verb", "reflexive": true, "preposition": "für" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "Reflexivverben mit Präpositionen",
+      "content": "📝 بسیاری از فعل‌های انعکاسی با **حرف اضافه خاص** می‌آیند.\n\n**für** (برای):\n• sich interessieren **für** = علاقه‌مند بودن به\n• sich entscheiden **für** = تصمیم گرفتن برای\n\n**an** (به):\n• sich erinnern **an** = به یاد آوردن\n• sich gewöhnen **an** = عادت کردن به\n\n⚠️ این حروف اضافه را باید حفظ کنید!",
+      "examples": [
+        { "de": "Ich interessiere mich für Musik.", "fa": "به موسیقی علاقه‌مندم." },
+        { "de": "Er erinnert sich an den Urlaub.", "fa": "تعطیلات را به یاد می‌آورد." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "sich interessieren für", "fa": "علاقه‌مند بودن به" },
+      "example": { "text": { "de": "Ich interessiere mich für Sport.", "fa": "به ورزش علاقه‌مندم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "sich erinnern an", "fa": "به یاد آوردن" },
+      "example": { "text": { "de": "Erinnerst du dich an mich?", "fa": "مرا به یاد می‌آوری؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-interessieren",
+      "word": "interessieren",
+      "translation": "علاقه‌مند بودن",
+      "syllables": ["in", "te", "res", "sie", "ren"],
+      "distractors": ["un", "ta", "ras", "sau", "ran"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام حرف اضافه با «sich interessieren» می‌آید؟",
+      "options": ["an", "für", "auf", "um"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "sich interessieren FÜR" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich interessiere mich {0} Kunst.",
+      "options": ["für", "an", "auf", "um"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "sich interessieren FÜR + Akkusativ" }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "sich gewöhnen an", "fa": "عادت کردن به" },
+      "example": { "text": { "de": "Ich gewöhne mich an das Wetter.", "fa": "به آب و هوا عادت می‌کنم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "sich konzentrieren auf", "fa": "تمرکز کردن روی" },
+      "example": { "text": { "de": "Konzentrier dich auf die Arbeit!", "fa": "روی کار تمرکز کن!" } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s6",
+      "title": "auf و um",
+      "content": "📝 **auf** (روی):\n• sich konzentrieren **auf** = تمرکز کردن روی\n• sich vorbereiten **auf** = آماده شدن برای\n• sich freuen **auf** = منتظر بودن\n\n**um** (برای/از):\n• sich kümmern **um** = مراقبت کردن از\n\n💡 همه این حروف اضافه با **Akkusativ** می‌آیند.",
+      "examples": [
+        { "de": "Sie bereitet sich auf die Prüfung vor.", "fa": "برای امتحان آماده می‌شود." },
+        { "de": "Wer kümmert sich um die Kinder?", "fa": "چه کسی از بچه‌ها مراقبت می‌کند؟" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "sich kümmern um", "fa": "مراقبت کردن از" },
+      "example": { "text": { "de": "Sie kümmert sich um ihre Mutter.", "fa": "از مادرش مراقبت می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-erinnern",
+      "word": "erinnern",
+      "translation": "به یاد آوردن",
+      "syllables": ["er", "in", "nern"],
+      "distractors": ["ar", "un", "narn", "or"]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "حرف اضافه درست",
+      "instruction": "حرف اضافه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "sich interessieren ...", "left": "für", "right": "an", "correctSide": "left" },
+        { "prompt": "sich erinnern ...", "left": "für", "right": "an", "correctSide": "right" },
+        { "prompt": "sich konzentrieren ...", "left": "auf", "right": "um", "correctSide": "left" },
+        { "prompt": "sich kümmern ...", "left": "auf", "right": "um", "correctSide": "right" },
+        { "prompt": "sich gewöhnen ...", "left": "für", "right": "an", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "sich entscheiden für", "fa": "تصمیم گرفتن برای" },
+      "example": { "text": { "de": "Ich habe mich für das rote Kleid entschieden.", "fa": "لباس قرمز را انتخاب کردم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "sich vorbereiten auf", "fa": "آماده شدن برای" },
+      "example": { "text": { "de": "Wir bereiten uns auf die Reise vor.", "fa": "برای سفر آماده می‌شویم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": { "de": "sich bedanken für", "fa": "تشکر کردن از" },
+      "example": { "text": { "de": "Ich bedanke mich für Ihre Hilfe.", "fa": "از کمکتان تشکر می‌کنم." } }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "علایق",
+      "context": "دو دوست درباره علایقشان صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Wofür interessierst du dich?", "fa": "به چه چیزی علاقه‌مندی؟" } },
+        { "speaker": "Ben", "text": { "de": "Ich interessiere mich für Fotografie.", "fa": "به عکاسی علاقه‌مندم." } },
+        { "speaker": "Anna", "text": { "de": "Cool! Ich erinnere mich an deine Fotos.", "fa": "عالی! عکس‌هایت را به یاد می‌آورم." } },
+        { "speaker": "Ben", "text": { "de": "Danke! Und du? Bereitest du dich auf etwas vor?", "fa": "ممنون! و تو؟ برای چیزی آماده می‌شوی؟" } },
+        { "speaker": "Anna", "text": { "de": "Ja, ich bereite mich auf eine Prüfung vor.", "fa": "بله، برای یک امتحان آماده می‌شوم." } },
+        { "speaker": "Ben", "text": { "de": "Viel Erfolg! Konzentrier dich gut!", "fa": "موفق باشی! خوب تمرکز کن!" } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "بن به چه علاقه‌مند است؟", "options": ["موسیقی", "عکاسی", "ورزش"], "correctIndex": 1 },
+        { "question": "آنا برای چه آماده می‌شود؟", "options": ["سفر", "امتحان", "مهمانی"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er erinnert sich {0} seine Kindheit.",
+      "options": ["an", "für", "auf", "um"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "sich erinnern AN + Akkusativ" }
+    },
+    {
+      "type": "word-order",
+      "id": "w1",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["Sport.", "für", "mich", "interessiere", "Ich"],
+      "correctOrder": [4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Ich interessiere mich für Sport.", "fa": "به ورزش علاقه‌مندم." }
+    },
+    {
+      "type": "word-order",
+      "id": "w2",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["Arbeit!", "auf", "dich", "die", "Konzentrier"],
+      "correctOrder": [4, 2, 1, 3, 0],
+      "correctSentence": { "de": "Konzentrier dich auf die Arbeit!", "fa": "روی کار تمرکز کن!" }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "فعل را با حرف اضافه جفت کنید",
+      "items": [
+        { "id": "i1", "text": "sich interessieren" },
+        { "id": "i2", "text": "sich erinnern" },
+        { "id": "i3", "text": "sich konzentrieren" },
+        { "id": "i4", "text": "sich kümmern" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "an" },
+        { "id": "m2", "text": "für" },
+        { "id": "m3", "text": "um" },
+        { "id": "m4", "text": "auf" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m1"],
+        ["i3", "m4"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-konzentrieren",
+      "word": "konzentrieren",
+      "translation": "تمرکز کردن",
+      "syllables": ["kon", "zen", "trie", "ren"],
+      "distractors": ["kan", "zan", "tra", "ran"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "«sich kümmern um» یعنی چه؟",
+      "options": ["تمرکز کردن روی", "مراقبت کردن از", "علاقه‌مند بودن به", "عادت کردن به"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "sich kümmern um = مراقبت کردن از" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Wir bereiten uns {0} die Prüfung vor.",
+      "options": ["auf", "für", "an", "um"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "sich vorbereiten AUF + Akkusativ" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "مراقبت از حیوان",
+      "context": "مادر و دختر درباره گربه صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Mutter", "text": { "de": "Wer kümmert sich um die Katze?", "fa": "چه کسی از گربه مراقبت می‌کند؟" } },
+        { "speaker": "Lisa", "text": { "de": "Ich kümmere mich darum!", "fa": "من مراقبت می‌کنم!" } },
+        { "speaker": "Mutter", "text": { "de": "Gut. Hast du dich an die Verantwortung gewöhnt?", "fa": "خوب. به مسئولیت عادت کردی؟" } },
+        { "speaker": "Lisa", "text": { "de": "Ja, ich habe mich daran gewöhnt.", "fa": "بله، بهش عادت کردم." } },
+        { "speaker": "Mutter", "text": { "de": "Ich bedanke mich für deine Hilfe.", "fa": "از کمکت تشکر می‌کنم." } },
+        { "speaker": "Lisa", "text": { "de": "Gern geschehen! Ich interessiere mich für Tiere.", "fa": "خواهش می‌کنم! به حیوانات علاقه‌مندم." } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "چه کسی از گربه مراقبت می‌کند؟", "options": ["مادر", "لیزا", "پدر"], "correctIndex": 1 },
+        { "question": "لیزا به چه عادت کرده؟", "options": ["گربه", "مسئولیت", "مدرسه"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "ترجمه سریع",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "sich erinnern an", "left": "به یاد آوردن", "right": "فراموش کردن", "correctSide": "left" },
+        { "prompt": "sich gewöhnen an", "left": "ترسیدن از", "right": "عادت کردن به", "correctSide": "right" },
+        { "prompt": "sich vorbereiten auf", "left": "آماده شدن برای", "right": "تمام کردن", "correctSide": "left" },
+        { "prompt": "sich bedanken für", "left": "عذرخواهی کردن", "right": "تشکر کردن", "correctSide": "right" },
+        { "prompt": "sich entscheiden für", "left": "تصمیم گرفتن", "right": "پشیمان شدن", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sie hat sich {0} das blaue Auto entschieden.",
+      "options": ["für", "an", "auf", "um"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "sich entscheiden FÜR + Akkusativ" }
+    },
+    {
+      "type": "word-order",
+      "id": "w3",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["mich?", "an", "du", "Erinnerst", "dich"],
+      "correctOrder": [3, 4, 2, 1, 0],
+      "correctSentence": { "de": "Erinnerst du dich an mich?", "fa": "مرا به یاد می‌آوری؟" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "کدام جمله درست است؟",
+      "options": ["Ich interessiere mich an Sport.", "Ich interessiere mich für Sport.", "Ich interessiere mich auf Sport.", "Ich interessiere mich um Sport."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "sich interessieren FÜR" }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-kuemmern",
+      "word": "kümmern",
+      "translation": "مراقبت کردن",
+      "syllables": ["küm", "mern"],
+      "distractors": ["kam", "marn", "kom", "morn"]
+    },
+    {
+      "type": "matching",
+      "id": "m2",
+      "instruction": "فعل‌ها را با ترجمه جفت کنید",
+      "items": [
+        { "id": "i1", "text": "sich vorbereiten auf" },
+        { "id": "i2", "text": "sich bedanken für" },
+        { "id": "i3", "text": "sich entscheiden für" },
+        { "id": "i4", "text": "sich gewöhnen an" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "عادت کردن به" },
+        { "id": "m2", "text": "آماده شدن برای" },
+        { "id": "m3", "text": "تشکر کردن از" },
+        { "id": "m4", "text": "تصمیم گرفتن برای" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m3"],
+        ["i3", "m4"],
+        ["i4", "m1"]
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Kinder gewöhnen sich {0} die neue Schule.",
+      "options": ["an", "für", "auf", "um"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "sich gewöhnen AN + Akkusativ" }
+    },
+    {
+      "type": "word-order",
+      "id": "w4",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["Hilfe.", "für", "mich", "Ihre", "bedanke", "Ich"],
+      "correctOrder": [5, 4, 2, 1, 3, 0],
+      "correctSentence": { "de": "Ich bedanke mich für Ihre Hilfe.", "fa": "از کمکتان تشکر می‌کنم." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "«Wofür interessierst du dich?» یعنی چه؟",
+      "options": ["کجا می‌روی؟", "به چه علاقه‌مندی؟", "چه می‌خوری؟", "کی می‌آیی؟"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "wofür = به چه چیزی (برای چه)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Wir kümmern uns {0} den Garten.",
+      "options": ["um", "für", "an", "auf"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "sich kümmern UM + Akkusativ" }
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Ich interessiere mich für Musik.",
+      "translation": "به موسیقی علاقه‌مندم.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Erinnerst du dich an mich?",
+      "translation": "مرا به یاد می‌آوری؟",
+      "difficulty": "A2"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-3",
+      "targetText": "Ich bedanke mich für Ihre Hilfe.",
+      "translation": "از کمکتان تشکر می‌کنم.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "memory-match",
+      "id": "g3",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "sich interessieren für", "fa": "علاقه‌مند بودن به" },
+        { "de": "sich erinnern an", "fa": "به یاد آوردن" },
+        { "de": "sich konzentrieren auf", "fa": "تمرکز کردن روی" },
+        { "de": "sich kümmern um", "fa": "مراقبت کردن از" },
+        { "de": "sich vorbereiten auf", "fa": "آماده شدن برای" },
+        { "de": "sich gewöhnen an", "fa": "عادت کردن به" }
+      ],
+      "timeLimit": 60
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "sich interessieren für", "fa": "علاقه‌مند بودن به" },
+        { "de": "sich erinnern an", "fa": "به یاد آوردن" },
+        { "de": "sich gewöhnen an", "fa": "عادت کردن به" },
+        { "de": "sich konzentrieren auf", "fa": "تمرکز کردن روی" },
+        { "de": "sich kümmern um", "fa": "مراقبت کردن از" },
+        { "de": "sich entscheiden für", "fa": "تصمیم گرفتن برای" },
+        { "de": "sich vorbereiten auf", "fa": "آماده شدن برای" },
+        { "de": "sich bedanken für", "fa": "تشکر کردن از" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما فعل‌های انعکاسی با حروف اضافه را یاد گرفتید!\n\n📝 **حروف اضافه مهم:**\n\n**für:** sich interessieren, sich entscheiden, sich bedanken\n**an:** sich erinnern, sich gewöhnen\n**auf:** sich konzentrieren, sich vorbereiten, sich freuen\n**um:** sich kümmern\n\n⚠️ همه با **Akkusativ** می‌آیند!",
+      "xpEarned": 50,
+      "vocabularyLearned": [
+        { "word": { "de": "sich interessieren für", "fa": "علاقه‌مند بودن به" } },
+        { "word": { "de": "sich erinnern an", "fa": "به یاد آوردن" } },
+        { "word": { "de": "sich gewöhnen an", "fa": "عادت کردن به" } },
+        { "word": { "de": "sich konzentrieren auf", "fa": "تمرکز کردن روی" } },
+        { "word": { "de": "sich kümmern um", "fa": "مراقبت کردن از" } },
+        { "word": { "de": "sich entscheiden für", "fa": "تصمیم گرفتن برای" } },
+        { "word": { "de": "sich vorbereiten auf", "fa": "آماده شدن برای" } },
+        { "word": { "de": "sich bedanken für", "fa": "تشکر کردن از" } }
+      ]
+    }
+  ]
+}

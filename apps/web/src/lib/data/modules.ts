@@ -553,6 +553,12 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         title: "Gefühle - احساسات",
         description: "یاد بگیرید چطور درباره احساسات با فعل‌های انعکاسی صحبت کنید.",
         path: "/learn/de-fa/A2/A2-M03-L02"
+      },
+      {
+        id: "A2-M03-L03",
+        title: "mit Präpositionen - با حروف اضافه",
+        description: "یاد بگیرید فعل‌های انعکاسی که با حروف اضافه خاص می‌آیند.",
+        path: "/learn/de-fa/A2/A2-M03-L03"
       }
     ]
   }
