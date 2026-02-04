@@ -1,0 +1,422 @@
+{
+  "id": "A2-M03-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Reflexivverben - Zusammenfassung", "fa": "فعل‌های انعکاسی - جمع‌بندی" },
+  "description": "تمرین ترکیبی فعل‌های انعکاسی و ضمایر Dativ",
+  "level": "A2",
+  "module": 3,
+  "lessonNumber": 4,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "sich die Hände waschen", "fa": "دست‌هایش را شستن", "grammar": { "pos": "verb", "reflexive": true, "case": "dativ" } },
+    { "de": "sich die Haare kämmen", "fa": "موهایش را شانه زدن", "grammar": { "pos": "verb", "reflexive": true, "case": "dativ" } },
+    { "de": "sich etwas wünschen", "fa": "چیزی آرزو کردن", "grammar": { "pos": "verb", "reflexive": true, "case": "dativ" } },
+    { "de": "sich etwas kaufen", "fa": "چیزی برای خود خریدن", "grammar": { "pos": "verb", "reflexive": true, "case": "dativ" } },
+    { "de": "sich etwas vorstellen", "fa": "چیزی تصور کردن", "grammar": { "pos": "verb", "reflexive": true, "case": "dativ" } },
+    { "de": "sich Sorgen machen", "fa": "نگران بودن", "grammar": { "pos": "verb", "reflexive": true, "case": "dativ" } },
+    { "de": "sich Mühe geben", "fa": "تلاش کردن", "grammar": { "pos": "verb", "reflexive": true, "case": "dativ" } },
+    { "de": "sich etwas ansehen", "fa": "چیزی را نگاه کردن", "grammar": { "pos": "verb", "reflexive": true, "case": "dativ" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "Akkusativ oder Dativ?",
+      "content": "📝 **ضمایر انعکاسی دو نوع دارند:**\n\n**Akkusativ** (وقتی فعل مفعول دیگری ندارد):\n• Ich wasche **mich**. (خودم را می‌شویم)\n\n**Dativ** (وقتی مفعول دیگری هم هست):\n• Ich wasche **mir** die Hände. (دست‌هایم را می‌شویم)\n\n| فاعل | Akkusativ | Dativ |\n|------|-----------|-------|\n| ich | mich | mir |\n| du | dich | dir |\n| er/sie/es | sich | sich |\n| wir | uns | uns |\n| ihr | euch | euch |\n| sie/Sie | sich | sich |",
+      "examples": [
+        { "de": "Ich wasche mich.", "fa": "خودم را می‌شویم." },
+        { "de": "Ich wasche mir die Hände.", "fa": "دست‌هایم را می‌شویم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "sich die Hände waschen", "fa": "دست‌ها را شستن" },
+      "example": { "text": { "de": "Ich wasche mir die Hände.", "fa": "دست‌هایم را می‌شویم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "sich die Haare kämmen", "fa": "موها را شانه زدن" },
+      "example": { "text": { "de": "Sie kämmt sich die Haare.", "fa": "موهایش را شانه می‌زند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-waschen",
+      "word": "waschen",
+      "translation": "شستن",
+      "syllables": ["wa", "schen"],
+      "distractors": ["wo", "schan", "wu", "schon"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله درست است؟",
+      "options": ["Ich wasche mich die Hände.", "Ich wasche mir die Hände.", "Ich wasche sich die Hände.", "Ich wasche dich die Hände."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! با مفعول (die Hände) از Dativ استفاده می‌کنیم.", "incorrect": "وقتی مفعول دیگری داریم (die Hände)، از mir استفاده می‌کنیم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er wäscht {0} die Hände vor dem Essen.",
+      "options": ["sich", "mich", "dich", "uns"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "er → sich (Dativ و Akkusativ یکسان است)" }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "sich etwas wünschen", "fa": "چیزی آرزو کردن" },
+      "example": { "text": { "de": "Ich wünsche mir ein neues Handy.", "fa": "یک گوشی جدید آرزو می‌کنم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "sich etwas kaufen", "fa": "چیزی برای خود خریدن" },
+      "example": { "text": { "de": "Sie kauft sich ein Kleid.", "fa": "برای خودش یک لباس می‌خرد." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s6",
+      "title": "مرور: انواع فعل‌های انعکاسی",
+      "content": "📝 **سه نوع فعل انعکاسی یاد گرفتیم:**\n\n**۱. روزمره:**\nsich waschen, sich anziehen, sich duschen\n\n**۲. احساسات:**\nsich freuen, sich ärgern, sich fühlen\n\n**۳. با حرف اضافه:**\nsich interessieren für, sich erinnern an\n\n💡 همه با ضمیر انعکاسی می‌آیند!",
+      "examples": [
+        { "de": "Ich dusche mich.", "fa": "دوش می‌گیرم." },
+        { "de": "Ich freue mich.", "fa": "خوشحالم." },
+        { "de": "Ich interessiere mich für Musik.", "fa": "به موسیقی علاقه‌مندم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "sich Sorgen machen", "fa": "نگران بودن" },
+      "example": { "text": { "de": "Meine Mutter macht sich Sorgen.", "fa": "مادرم نگران است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-sorgen",
+      "word": "Sorgen",
+      "translation": "نگرانی",
+      "syllables": ["Sor", "gen"],
+      "distractors": ["Sar", "gan", "Sur", "gon"]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "Akkusativ یا Dativ؟",
+      "instruction": "ضمیر درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "Ich wasche ... (خودم را)", "left": "mich", "right": "mir", "correctSide": "left" },
+        { "prompt": "Ich wasche ... die Hände", "left": "mich", "right": "mir", "correctSide": "right" },
+        { "prompt": "Du kämmst ... die Haare", "left": "dich", "right": "dir", "correctSide": "right" },
+        { "prompt": "Er freut ...", "left": "sich", "right": "ihm", "correctSide": "left" },
+        { "prompt": "Ich wünsche ... ein Auto", "left": "mich", "right": "mir", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "sich Mühe geben", "fa": "تلاش کردن" },
+      "example": { "text": { "de": "Gib dir Mühe!", "fa": "تلاش کن!" } }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "sich etwas vorstellen", "fa": "چیزی تصور کردن" },
+      "example": { "text": { "de": "Ich kann mir das nicht vorstellen.", "fa": "نمی‌توانم تصورش کنم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": { "de": "sich etwas ansehen", "fa": "چیزی را نگاه کردن" },
+      "example": { "text": { "de": "Sieh dir das an!", "fa": "این را نگاه کن!" } }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "صبح یک روز عادی",
+      "context": "ماکس روتین صبحش را توضیح می‌دهد",
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Was machst du morgens?", "fa": "صبح‌ها چه کار می‌کنی؟" } },
+        { "speaker": "Max", "text": { "de": "Zuerst dusche ich mich.", "fa": "اول دوش می‌گیرم." } },
+        { "speaker": "Lisa", "text": { "de": "Und dann?", "fa": "و بعد؟" } },
+        { "speaker": "Max", "text": { "de": "Dann wasche ich mir das Gesicht und putze mir die Zähne.", "fa": "بعد صورتم را می‌شویم و مسواک می‌زنم." } },
+        { "speaker": "Lisa", "text": { "de": "Kämmst du dir auch die Haare?", "fa": "موهایت را هم شانه می‌زنی؟" } },
+        { "speaker": "Max", "text": { "de": "Ja, und dann ziehe ich mich an und freue mich auf den Tag!", "fa": "بله، و بعد لباس می‌پوشم و منتظر روز هستم!" } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "ماکس اول چه کار می‌کند؟", "options": ["لباس می‌پوشد", "دوش می‌گیرد", "مسواک می‌زند"], "correctIndex": 1 },
+        { "question": "ماکس منتظر چیست؟", "options": ["شب", "روز", "تعطیلات"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sie kämmt {0} die Haare.",
+      "options": ["sich", "ihr", "sie", "mich"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "sie → sich (Dativ)" }
+    },
+    {
+      "type": "word-order",
+      "id": "w1",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["Hände.", "mir", "die", "wasche", "Ich"],
+      "correctOrder": [4, 3, 1, 2, 0],
+      "correctSentence": { "de": "Ich wasche mir die Hände.", "fa": "دست‌هایم را می‌شویم." }
+    },
+    {
+      "type": "word-order",
+      "id": "w2",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["Sorgen.", "sich", "macht", "Mutter", "Meine"],
+      "correctOrder": [4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Meine Mutter macht sich Sorgen.", "fa": "مادرم نگران است." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "فعل‌ها را با ترجمه جفت کنید",
+      "items": [
+        { "id": "i1", "text": "sich Sorgen machen" },
+        { "id": "i2", "text": "sich Mühe geben" },
+        { "id": "i3", "text": "sich etwas wünschen" },
+        { "id": "i4", "text": "sich etwas vorstellen" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "تصور کردن" },
+        { "id": "m2", "text": "نگران بودن" },
+        { "id": "m3", "text": "تلاش کردن" },
+        { "id": "m4", "text": "آرزو کردن" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m3"],
+        ["i3", "m4"],
+        ["i4", "m1"]
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-vorstellen",
+      "word": "vorstellen",
+      "translation": "تصور کردن",
+      "syllables": ["vor", "stel", "len"],
+      "distractors": ["var", "stal", "lan", "vur"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "«Gib dir Mühe!» یعنی چه؟",
+      "options": ["بده!", "برو!", "تلاش کن!", "بخواب!"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین!", "incorrect": "sich Mühe geben = تلاش کردن" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich wünsche {0} einen schönen Urlaub.",
+      "options": ["mir", "mich", "sich", "dir"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "sich etwas wünschen با Dativ می‌آید: ich → mir" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "تولد",
+      "context": "آنا از هدیه تولدش صحبت می‌کند",
+      "lines": [
+        { "speaker": "Ben", "text": { "de": "Was wünschst du dir zum Geburtstag?", "fa": "برای تولدت چه آرزو می‌کنی؟" } },
+        { "speaker": "Anna", "text": { "de": "Ich wünsche mir ein neues Fahrrad.", "fa": "یک دوچرخه جدید آرزو می‌کنم." } },
+        { "speaker": "Ben", "text": { "de": "Kannst du dir das vorstellen?", "fa": "می‌توانی تصورش کنی؟" } },
+        { "speaker": "Anna", "text": { "de": "Ja! Ich freue mich schon darauf!", "fa": "بله! از الان منتظرشم!" } },
+        { "speaker": "Ben", "text": { "de": "Mach dir keine Sorgen, du bekommst es!", "fa": "نگران نباش، می‌گیریش!" } },
+        { "speaker": "Anna", "text": { "de": "Danke! Ich bedanke mich für deine Hilfe.", "fa": "ممنون! از کمکت تشکر می‌کنم." } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "آنا چه آرزو می‌کند؟", "options": ["گوشی", "دوچرخه", "کتاب"], "correctIndex": 1 },
+        { "question": "آنا چه احساسی دارد؟", "options": ["ناراحت", "خوشحال و منتظر", "عصبانی"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "مرور سریع",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "sich die Hände waschen", "left": "دست‌ها را شستن", "right": "پا را شستن", "correctSide": "left" },
+        { "prompt": "sich Sorgen machen", "left": "خوشحال بودن", "right": "نگران بودن", "correctSide": "right" },
+        { "prompt": "sich etwas wünschen", "left": "آرزو کردن", "right": "فراموش کردن", "correctSide": "left" },
+        { "prompt": "sich Mühe geben", "left": "تنبلی کردن", "right": "تلاش کردن", "correctSide": "right" },
+        { "prompt": "sich etwas vorstellen", "left": "تصور کردن", "right": "یادآوری کردن", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Kannst du {0} das vorstellen?",
+      "options": ["dir", "dich", "sich", "mir"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "sich etwas vorstellen با Dativ: du → dir" }
+    },
+    {
+      "type": "word-order",
+      "id": "w3",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["Mühe!", "dir", "Gib"],
+      "correctOrder": [2, 1, 0],
+      "correctSentence": { "de": "Gib dir Mühe!", "fa": "تلاش کن!" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "کدام جمله از Dativ استفاده می‌کند؟",
+      "options": ["Ich wasche mich.", "Ich freue mich.", "Ich wasche mir die Hände.", "Ich ärgere mich."],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! چون مفعول دیگری (die Hände) هم هست.", "incorrect": "وقتی مفعول دیگری داریم، از Dativ استفاده می‌کنیم." }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-wuenschen",
+      "word": "wünschen",
+      "translation": "آرزو کردن",
+      "syllables": ["wün", "schen"],
+      "distractors": ["wan", "schan", "won", "schon"]
+    },
+    {
+      "type": "matching",
+      "id": "m2",
+      "instruction": "جمله را با ترجمه جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Ich wasche mich." },
+        { "id": "i2", "text": "Ich wasche mir die Hände." },
+        { "id": "i3", "text": "Ich freue mich auf dich." },
+        { "id": "i4", "text": "Ich interessiere mich für Sport." }
+      ],
+      "matches": [
+        { "id": "m1", "text": "دست‌هایم را می‌شویم." },
+        { "id": "m2", "text": "خودم را می‌شویم." },
+        { "id": "m3", "text": "به ورزش علاقه‌مندم." },
+        { "id": "m4", "text": "منتظرتم." }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m1"],
+        ["i3", "m4"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sieh {0} das an!",
+      "options": ["dir", "dich", "sich", "mir"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "sich etwas ansehen با Dativ: du → dir" }
+    },
+    {
+      "type": "word-order",
+      "id": "w4",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["Handy.", "mir", "neues", "wünsche", "ein", "Ich"],
+      "correctOrder": [5, 3, 1, 4, 2, 0],
+      "correctSentence": { "de": "Ich wünsche mir ein neues Handy.", "fa": "یک گوشی جدید آرزو می‌کنم." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "«Mach dir keine Sorgen!» یعنی چه؟",
+      "options": ["عجله کن!", "نگران نباش!", "تلاش کن!", "برو!"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "sich Sorgen machen = نگران بودن" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Kinder putzen {0} die Zähne.",
+      "options": ["sich", "mir", "dir", "mich"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "die Kinder (sie) → sich (Dativ)" }
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Ich wasche mir die Hände.",
+      "translation": "دست‌هایم را می‌شویم.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Was wünschst du dir?",
+      "translation": "چه آرزو می‌کنی؟",
+      "difficulty": "A2"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-3",
+      "targetText": "Mach dir keine Sorgen!",
+      "translation": "نگران نباش!",
+      "difficulty": "A2"
+    },
+    {
+      "type": "memory-match",
+      "id": "g3",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "sich die Hände waschen", "fa": "دست‌ها را شستن" },
+        { "de": "sich Sorgen machen", "fa": "نگران بودن" },
+        { "de": "sich etwas wünschen", "fa": "آرزو کردن" },
+        { "de": "sich Mühe geben", "fa": "تلاش کردن" },
+        { "de": "sich etwas vorstellen", "fa": "تصور کردن" },
+        { "de": "sich etwas ansehen", "fa": "نگاه کردن" }
+      ],
+      "timeLimit": 60
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "sich die Hände waschen", "fa": "دست‌ها را شستن" },
+        { "de": "sich die Haare kämmen", "fa": "موها را شانه زدن" },
+        { "de": "sich etwas wünschen", "fa": "آرزو کردن" },
+        { "de": "sich etwas kaufen", "fa": "برای خود خریدن" },
+        { "de": "sich Sorgen machen", "fa": "نگران بودن" },
+        { "de": "sich Mühe geben", "fa": "تلاش کردن" },
+        { "de": "sich etwas vorstellen", "fa": "تصور کردن" },
+        { "de": "sich etwas ansehen", "fa": "نگاه کردن" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما فعل‌های انعکاسی را کامل یاد گرفتید!\n\n📝 **خلاصه:**\n\n**Akkusativ** (بدون مفعول دیگر):\nIch wasche **mich**.\n\n**Dativ** (با مفعول دیگر):\nIch wasche **mir** die Hände.\n\n**ضمایر:**\n| | Akk | Dat |\n|---|-----|-----|\n| ich | mich | mir |\n| du | dich | dir |\n| er/sie | sich | sich |",
+      "xpEarned": 50,
+      "vocabularyLearned": [
+        { "word": { "de": "sich die Hände waschen", "fa": "دست‌ها را شستن" } },
+        { "word": { "de": "sich die Haare kämmen", "fa": "موها را شانه زدن" } },
+        { "word": { "de": "sich etwas wünschen", "fa": "آرزو کردن" } },
+        { "word": { "de": "sich etwas kaufen", "fa": "برای خود خریدن" } },
+        { "word": { "de": "sich Sorgen machen", "fa": "نگران بودن" } },
+        { "word": { "de": "sich Mühe geben", "fa": "تلاش کردن" } },
+        { "word": { "de": "sich etwas vorstellen", "fa": "تصور کردن" } },
+        { "word": { "de": "sich etwas ansehen", "fa": "نگاه کردن" } }
+      ]
+    }
+  ]
+}

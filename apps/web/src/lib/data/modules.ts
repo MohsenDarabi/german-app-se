@@ -559,6 +559,12 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         title: "mit Präpositionen - با حروف اضافه",
         description: "یاد بگیرید فعل‌های انعکاسی که با حروف اضافه خاص می‌آیند.",
         path: "/learn/de-fa/A2/A2-M03-L03"
+      },
+      {
+        id: "A2-M03-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "تمرین ترکیبی فعل‌های انعکاسی و ضمایر Dativ.",
+        path: "/learn/de-fa/A2/A2-M03-L04"
       }
     ]
   }
