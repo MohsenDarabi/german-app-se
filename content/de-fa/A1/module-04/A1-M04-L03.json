@@ -17,8 +17,21 @@
   "level": "A1",
   "module": 4,
   "lessonNumber": 3,
-  "totalSteps": 26,
-  "estimatedMinutes": 15,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "die Männer", "fa": "مردها", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "Männer", "singular": "Mann" } } },
+    { "de": "die Frauen", "fa": "زن‌ها", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Frauen", "singular": "Frau" } } },
+    { "de": "die Kinder", "fa": "بچه‌ها", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "Kinder", "singular": "Kind" } } },
+    { "de": "die Bücher", "fa": "کتاب‌ها", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "Bücher", "singular": "Buch" } } },
+    { "de": "die Tische", "fa": "میزها", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "Tische", "singular": "Tisch" } } },
+    { "de": "die Stühle", "fa": "صندلی‌ها", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "Stühle", "singular": "Stuhl" } } },
+    { "de": "die Äpfel", "fa": "سیب‌ها", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "Äpfel", "singular": "Apfel" } } },
+    { "de": "die Bananen", "fa": "موزها", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Bananen", "singular": "Banane" } } },
+    { "de": "die Lampen", "fa": "چراغ‌ها", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Lampen", "singular": "Lampe" } } },
+    { "de": "die Türen", "fa": "درها", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Türen", "singular": "Tür" } } },
+    { "de": "die Fenster", "fa": "پنجره‌ها", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "Fenster", "singular": "Fenster" } } }
+  ],
   "steps": [
     {
       "type": "grammar-tip",
@@ -47,6 +60,16 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-maenner",
+      "word": "die Männer",
+      "translation": "مردها",
+      "syllables": ["die", "Män", "ner"],
+      "distractors": ["der", "Man", "nar"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": { "onCorrect": "آفرین! der Mann → die Männer (اوملاوت ä)" }
+    },
+    {
       "type": "new-word",
       "id": "s3",
       "word": {
@@ -61,6 +84,16 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-frauen",
+      "word": "die Frauen",
+      "translation": "زن‌ها",
+      "syllables": ["die", "Frau", "en"],
+      "distractors": ["der", "Fro", "an"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": { "onCorrect": "آفرین! die Frau → die Frauen (پسوند -en)" }
+    },
+    {
       "type": "new-word",
       "id": "s4",
       "word": {
@@ -73,6 +106,16 @@
           "fa": "بچه‌ها بازی می‌کنند."
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-kinder",
+      "word": "die Kinder",
+      "translation": "بچه‌ها",
+      "syllables": ["die", "Kin", "der"],
+      "distractors": ["das", "Ken", "dar"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": { "onCorrect": "آفرین! das Kind → die Kinder (پسوند -er)" }
     },
     {
       "type": "grammar-tip",
@@ -143,6 +186,16 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-buecher",
+      "word": "die Bücher",
+      "translation": "کتاب‌ها",
+      "syllables": ["die", "Bü", "cher"],
+      "distractors": ["das", "Bu", "char"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": { "onCorrect": "آفرین! das Buch → die Bücher (اوملاوت + پسوند -er)" }
+    },
+    {
       "type": "new-word",
       "id": "s7",
       "word": {
@@ -157,6 +210,16 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-tische",
+      "word": "die Tische",
+      "translation": "میزها",
+      "syllables": ["die", "Ti", "sche"],
+      "distractors": ["der", "Ta", "scha"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": { "onCorrect": "آفرین! der Tisch → die Tische (پسوند -e)" }
+    },
+    {
       "type": "new-word",
       "id": "s8",
       "word": {
@@ -169,6 +232,16 @@
           "fa": "صندلی‌ها نو هستند."
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-stuehle",
+      "word": "die Stühle",
+      "translation": "صندلی‌ها",
+      "syllables": ["die", "Stüh", "le"],
+      "distractors": ["der", "Stuh", "la"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": { "onCorrect": "آفرین! der Stuhl → die Stühle (اوملاوت + پسوند -e)" }
     },
     {
       "type": "dialog",
@@ -211,6 +284,30 @@
             "fa": "بچه‌ها صندلی بیشتر نیاز دارند!"
           }
         }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        {
+          "question": "چند تا کتاب دارند؟",
+          "options": ["پنج", "ده", "پانزده"],
+          "correctIndex": 1,
+          "explanation": "الکس گفت: «Wir haben zehn Bücher.»",
+          "relatedLineIndex": 1
+        },
+        {
+          "question": "چند تا میز دارند؟",
+          "options": ["سه", "پنج", "ده"],
+          "correctIndex": 1,
+          "explanation": "الکس گفت: «Fünf Tische und zehn Stühle.»",
+          "relatedLineIndex": 3
+        },
+        {
+          "question": "بچه‌ها به چه چیزی نیاز دارند؟",
+          "options": ["کتاب بیشتر", "صندلی بیشتر", "میز بیشتر"],
+          "correctIndex": 1,
+          "explanation": "لیزا گفت: «Die Kinder brauchen mehr Stühle!»",
+          "relatedLineIndex": 4
+        }
       ]
     },
     {
@@ -228,6 +325,16 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-aepfel",
+      "word": "die Äpfel",
+      "translation": "سیب‌ها",
+      "syllables": ["die", "Äp", "fel"],
+      "distractors": ["der", "Ap", "fal"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": { "onCorrect": "آفرین! der Apfel → die Äpfel (اوملاوت)" }
+    },
+    {
       "type": "new-word",
       "id": "s11",
       "word": {
@@ -240,6 +347,16 @@
           "fa": "موزها زرد هستند."
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-bananen",
+      "word": "die Bananen",
+      "translation": "موزها",
+      "syllables": ["die", "Ba", "na", "nen"],
+      "distractors": ["der", "Bo", "nu", "non"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": { "onCorrect": "آفرین! die Banane → die Bananen (پسوند -n)" }
     },
     {
       "type": "fill-in-blank",
@@ -257,6 +374,12 @@
       ],
       "feedback": {
         "explanation": "**Die** Kinder (همه جمع‌ها با die می‌آیند)"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! همه اسم‌های جمع در آلمانی با die می‌آیند.",
+        "onWrong": "دقت کنید: در جمع همیشه از die استفاده می‌کنیم، مهم نیست جنسیت مفرد چه بوده.",
+        "errorCategory": "wrong-article",
+        "highlights": ["die", "جمع"]
       }
     },
     {
@@ -275,6 +398,12 @@
       ],
       "feedback": {
         "explanation": "**Die** Bücher (همه جمع‌ها با die می‌آیند)"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! das Buch مفرد است، ولی die Bücher جمع - همه جمع‌ها die!",
+        "onWrong": "دقت کنید: Bücher جمع است پس حرف تعریف die می‌شود.",
+        "errorCategory": "wrong-article",
+        "highlights": ["die", "Bücher"]
       }
     },
     {
@@ -308,6 +437,16 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-lampen",
+      "word": "die Lampen",
+      "translation": "چراغ‌ها",
+      "syllables": ["die", "Lam", "pen"],
+      "distractors": ["der", "Lem", "pan"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": { "onCorrect": "آفرین! die Lampe → die Lampen (پسوند -n)" }
+    },
+    {
       "type": "new-word",
       "id": "s16",
       "word": {
@@ -320,6 +459,16 @@
           "fa": "درها باز هستند."
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-tueren",
+      "word": "die Türen",
+      "translation": "درها",
+      "syllables": ["die", "Tü", "ren"],
+      "distractors": ["der", "Tu", "ran"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": { "onCorrect": "آفرین! die Tür → die Türen (پسوند -en)" }
     },
     {
       "type": "rapid-fire",
@@ -372,6 +521,16 @@
           "fa": "پنجره‌ها تمیز هستند."
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-fenster",
+      "word": "die Fenster",
+      "translation": "پنجره‌ها",
+      "syllables": ["die", "Fens", "ter"],
+      "distractors": ["das", "Fans", "tar"],
+      "instruction": "قطعات را کنار هم بگذارید",
+      "feedbackTip": { "onCorrect": "آفرین! das Fenster → die Fenster (بدون تغییر!)" }
     },
     {
       "type": "grammar-tip",
@@ -446,6 +605,12 @@
       "feedback": {
         "correct": "آفرین! das Buch → die Bücher (با اوملاوت و -er)",
         "incorrect": "جواب درست: die Bücher (با اوملاوت و -er)"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! das Buch → die Bücher (u تبدیل به ü می‌شود + پسوند -er)",
+        "onWrong": "دقت کنید: Buch با اوملاوت Bücher می‌شود، نه Buchen!",
+        "errorCategory": "plural-form",
+        "highlights": ["Bücher", "اوملاوت"]
       }
     },
     {
@@ -485,6 +650,20 @@
           "correctSide": "right"
         }
       ]
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Die Kinder spielen.",
+      "translation": "بچه‌ها بازی می‌کنند.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Die Bücher sind interessant.",
+      "translation": "کتاب‌ها جالب هستند.",
+      "difficulty": "A1"
     },
     {
       "type": "vocab-check",
