@@ -320,6 +320,12 @@ const DE_FA_A1_MODULES: ModuleStub[] = [
         title: "مبلمان (Möbel)",
         description: "یاد بگیرید وسایل خانه و مبلمان را به آلمانی بگویید.",
         path: "/learn/de-fa/A1/A1-M09-L02"
+      },
+      {
+        id: "A1-M09-L03",
+        title: "آپارتمان من (Meine Wohnung)",
+        description: "یاد بگیرید چطور آپارتمان‌تان را توصیف کنید: صفات و حروف اضافه مکان.",
+        path: "/learn/de-fa/A1/A1-M09-L03"
       }
     ]
   }

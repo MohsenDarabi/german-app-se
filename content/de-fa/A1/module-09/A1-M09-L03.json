@@ -1,0 +1,696 @@
+{
+  "id": "A1-M09-L03",
+  "languagePair": "de-fa",
+  "source": {
+    "code": "de",
+    "name": "Deutsch"
+  },
+  "target": {
+    "code": "fa",
+    "name": "فارسی"
+  },
+  "title": {
+    "de": "Meine Wohnung",
+    "fa": "آپارتمان من"
+  },
+  "description": "یاد بگیرید چطور آپارتمانتان را توصیف کنید و از حروف اضافه مکان استفاده کنید",
+  "level": "A1",
+  "module": 9,
+  "lessonNumber": 3,
+  "totalSteps": 42,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "groß", "fa": "بزرگ", "grammar": { "pos": "adjective" } },
+    { "de": "klein", "fa": "کوچک", "grammar": { "pos": "adjective" } },
+    { "de": "hell", "fa": "روشن", "grammar": { "pos": "adjective" } },
+    { "de": "dunkel", "fa": "تاریک", "grammar": { "pos": "adjective" } },
+    { "de": "gemütlich", "fa": "راحت/دنج", "grammar": { "pos": "adjective" } },
+    { "de": "modern", "fa": "مدرن", "grammar": { "pos": "adjective" } },
+    { "de": "alt", "fa": "قدیمی", "grammar": { "pos": "adjective" } },
+    { "de": "neu", "fa": "نو/جدید", "grammar": { "pos": "adjective" } },
+    { "de": "neben", "fa": "کنار", "grammar": { "pos": "preposition" } },
+    { "de": "zwischen", "fa": "بین", "grammar": { "pos": "preposition" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "توصیف آپارتمان",
+      "content": "در این درس یاد می‌گیریم چطور آپارتمانمان را توصیف کنیم:\n\n📏 **اندازه:**\n• groß = بزرگ\n• klein = کوچک\n\n💡 **نور:**\n• hell = روشن\n• dunkel = تاریک\n\n🛋️ **حس و حال:**\n• gemütlich = راحت/دنج\n• modern = مدرن\n• alt = قدیمی\n• neu = نو\n\n📝 **ساختار:** Das Zimmer ist + صفت",
+      "examples": [
+        {
+          "de": "Meine Wohnung ist klein, aber gemütlich.",
+          "fa": "آپارتمانم کوچک، ولی راحت است."
+        },
+        {
+          "de": "Das Schlafzimmer ist hell und modern.",
+          "fa": "اتاق خواب روشن و مدرن است."
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": {
+        "de": "groß",
+        "fa": "بزرگ"
+      },
+      "example": {
+        "text": {
+          "de": "Das Wohnzimmer ist sehr groß.",
+          "fa": "اتاق نشیمن خیلی بزرگ است."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-gross",
+      "word": "groß",
+      "translation": "بزرگ",
+      "syllables": ["groß"],
+      "distractors": ["gros", "gruss", "grass", "gries"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": {
+        "de": "klein",
+        "fa": "کوچک"
+      },
+      "example": {
+        "text": {
+          "de": "Die Küche ist leider klein.",
+          "fa": "آشپزخانه متأسفانه کوچک است."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-klein",
+      "word": "klein",
+      "translation": "کوچک",
+      "syllables": ["klein"],
+      "distractors": ["klain", "klien", "kloin", "kleen"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": {
+        "de": "hell",
+        "fa": "روشن"
+      },
+      "example": {
+        "text": {
+          "de": "Das Zimmer ist hell und freundlich.",
+          "fa": "اتاق روشن و دلپذیر است."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-hell",
+      "word": "hell",
+      "translation": "روشن",
+      "syllables": ["hell"],
+      "distractors": ["hall", "hill", "holl", "hull"]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": {
+        "de": "dunkel",
+        "fa": "تاریک"
+      },
+      "example": {
+        "text": {
+          "de": "Das Bad ist etwas dunkel.",
+          "fa": "حمام کمی تاریک است."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-dunkel",
+      "word": "dunkel",
+      "translation": "تاریک",
+      "syllables": ["dun", "kel"],
+      "distractors": ["dan", "kal", "don", "kul"]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "صفات پایه",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        {
+          "prompt": "groß",
+          "left": "بزرگ",
+          "right": "کوچک",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "klein",
+          "left": "بزرگ",
+          "right": "کوچک",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "hell",
+          "left": "روشن",
+          "right": "تاریک",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "dunkel",
+          "left": "روشن",
+          "right": "تاریک",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "کوچک =",
+          "left": "groß",
+          "right": "klein",
+          "correctSide": "right"
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": {
+        "de": "gemütlich",
+        "fa": "راحت/دنج"
+      },
+      "example": {
+        "text": {
+          "de": "Mein Wohnzimmer ist sehr gemütlich.",
+          "fa": "اتاق نشیمنم خیلی دنج است."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-gemuetlich",
+      "word": "gemütlich",
+      "translation": "راحت/دنج",
+      "syllables": ["ge", "müt", "lich"],
+      "distractors": ["ga", "mat", "lach", "go"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": {
+        "de": "modern",
+        "fa": "مدرن"
+      },
+      "example": {
+        "text": {
+          "de": "Die Küche ist sehr modern.",
+          "fa": "آشپزخانه خیلی مدرن است."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-modern",
+      "word": "modern",
+      "translation": "مدرن",
+      "syllables": ["mo", "dern"],
+      "distractors": ["ma", "darn", "mu", "dirn"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": {
+        "de": "alt",
+        "fa": "قدیمی"
+      },
+      "example": {
+        "text": {
+          "de": "Das Haus ist alt, aber schön.",
+          "fa": "خانه قدیمی، ولی زیباست."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-alt",
+      "word": "alt",
+      "translation": "قدیمی",
+      "syllables": ["alt"],
+      "distractors": ["olt", "elt", "ult", "ilt"]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": {
+        "de": "neu",
+        "fa": "نو/جدید"
+      },
+      "example": {
+        "text": {
+          "de": "Wir haben eine neue Wohnung.",
+          "fa": "ما یک آپارتمان جدید داریم."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-neu",
+      "word": "neu",
+      "translation": "نو/جدید",
+      "syllables": ["neu"],
+      "distractors": ["nau", "noi", "nuu", "nei"]
+    },
+    {
+      "type": "dialog",
+      "id": "s10",
+      "title": "مکالمه: آپارتمان جدید",
+      "context": "الی آپارتمان جدیدش را توصیف می‌کند",
+      "lines": [
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Wie ist deine neue Wohnung?",
+            "fa": "آپارتمان جدیدت چطوره؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Sie ist nicht sehr groß, aber hell und gemütlich.",
+            "fa": "خیلی بزرگ نیست، ولی روشن و دنجه."
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Ist sie modern?",
+            "fa": "مدرنه؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Das Haus ist alt, aber die Wohnung ist renoviert und modern.",
+            "fa": "ساختمان قدیمیه، ولی آپارتمان بازسازی شده و مدرنه."
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Und die Küche?",
+            "fa": "و آشپزخانه؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Die Küche ist klein, aber praktisch. Ich bin zufrieden!",
+            "fa": "آشپزخانه کوچکه، ولی کاربردیه. راضیم!"
+          },
+          "mood": "happy"
+        }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        {
+          "question": "آپارتمان الی چه ویژگی‌هایی دارد؟",
+          "options": ["بزرگ و تاریک", "کوچک و مدرن", "روشن و دنج"],
+          "correctIndex": 2,
+          "explanation": "الی گفت: hell und gemütlich (روشن و دنج)"
+        },
+        {
+          "question": "ساختمان چطور است؟",
+          "options": ["جدید", "قدیمی", "مدرن"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: Das Haus ist alt (ساختمان قدیمی است)"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "صفات بیشتر",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        {
+          "prompt": "gemütlich",
+          "left": "دنج/راحت",
+          "right": "ناراحت",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "modern",
+          "left": "قدیمی",
+          "right": "مدرن",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "alt",
+          "left": "جدید",
+          "right": "قدیمی",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "neu",
+          "left": "جدید",
+          "right": "قدیمی",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "مدرن =",
+          "left": "alt",
+          "right": "modern",
+          "correctSide": "right"
+        }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s11",
+      "title": "حروف اضافه مکان",
+      "content": "برای گفتن «کجا» از این حروف اضافه استفاده می‌کنیم:\n\n📍 **مکان:**\n• in = در (in der Küche = در آشپزخانه)\n• auf = روی (auf dem Tisch = روی میز)\n• an = کنار/به (an der Wand = روی دیوار)\n• neben = کنار (neben dem Sofa = کنار کاناپه)\n• unter = زیر (unter dem Bett = زیر تخت)\n• über = بالای (über dem Tisch = بالای میز)\n• zwischen = بین (zwischen Tisch und Sofa = بین میز و کاناپه)\n\n📝 **نکته:** بعد از این حروف Dativ می‌آید!",
+      "examples": [
+        {
+          "de": "Die Lampe hängt über dem Tisch.",
+          "fa": "چراغ بالای میز آویزان است."
+        },
+        {
+          "de": "Das Bett steht neben dem Fenster.",
+          "fa": "تخت کنار پنجره است."
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s12",
+      "word": {
+        "de": "neben",
+        "fa": "کنار"
+      },
+      "example": {
+        "text": {
+          "de": "Der Schrank steht neben dem Bett.",
+          "fa": "کمد کنار تخت است."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-neben",
+      "word": "neben",
+      "translation": "کنار",
+      "syllables": ["ne", "ben"],
+      "distractors": ["na", "ban", "no", "bun"]
+    },
+    {
+      "type": "new-word",
+      "id": "s13",
+      "word": {
+        "de": "zwischen",
+        "fa": "بین"
+      },
+      "example": {
+        "text": {
+          "de": "Der Teppich liegt zwischen Sofa und Tisch.",
+          "fa": "فرش بین کاناپه و میز است."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-zwischen",
+      "word": "zwischen",
+      "translation": "بین",
+      "syllables": ["zwi", "schen"],
+      "distractors": ["zwa", "schan", "zwo", "schun"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s14",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das Bild hängt {0} der Wand.",
+      "options": [
+        "an",
+        "auf",
+        "unter",
+        "neben"
+      ],
+      "correctAnswers": [0],
+      "feedback": {
+        "explanation": "**An der Wand** = روی دیوار (عکس به دیوار وصل است)"
+      },
+      "feedbackTip": {
+        "category": "preposition",
+        "tip": "برای چیزهایی که به دیوار وصل هستند از an استفاده کنید."
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s15",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Katze schläft {0} dem Sofa.",
+      "options": [
+        "in",
+        "auf",
+        "an",
+        "zwischen"
+      ],
+      "correctAnswers": [1],
+      "feedback": {
+        "explanation": "**Auf dem Sofa** = روی کاناپه"
+      },
+      "feedbackTip": {
+        "category": "preposition",
+        "tip": "برای سطح افقی که چیزی رویش است از auf استفاده کنید."
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s16",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Der Stuhl steht {0} dem Tisch.",
+      "options": [
+        "auf",
+        "unter",
+        "neben",
+        "in"
+      ],
+      "correctAnswers": [2],
+      "feedback": {
+        "explanation": "**Neben dem Tisch** = کنار میز"
+      },
+      "feedbackTip": {
+        "category": "preposition",
+        "tip": "neben = کنار (در یک طرف)"
+      }
+    },
+    {
+      "type": "dialog",
+      "id": "s17",
+      "title": "مکالمه: کجا گذاشتی؟",
+      "context": "الی دنبال کلیدش می‌گردد",
+      "lines": [
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Tom, hast du meinen Schlüssel gesehen?",
+            "fa": "تام، کلیدم رو دیدی؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Liegt er auf dem Tisch?",
+            "fa": "روی میزه؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Nein, da ist er nicht.",
+            "fa": "نه، اونجا نیست."
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Vielleicht neben dem Fernseher?",
+            "fa": "شاید کنار تلویزیون؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Nein... Oh, da ist er! Unter dem Sofa!",
+            "fa": "نه... اوه، پیداش کردم! زیر کاناپه!"
+          },
+          "mood": "happy"
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Unter dem Sofa? Wie ist er dahin gekommen?",
+            "fa": "زیر کاناپه؟ چطور رفته اونجا؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Keine Ahnung! Vielleicht die Katze...",
+            "fa": "نمی‌دونم! شاید گربه..."
+          }
+        }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        {
+          "question": "کلید کجا بود؟",
+          "options": ["روی میز", "کنار تلویزیون", "زیر کاناپه"],
+          "correctIndex": 2,
+          "explanation": "الی گفت: Unter dem Sofa (زیر کاناپه)"
+        },
+        {
+          "question": "الی فکر می‌کند چه کسی کلید را آنجا برده؟",
+          "options": ["تام", "گربه", "خودش"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: Vielleicht die Katze (شاید گربه)"
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "s18",
+      "instruction": "حروف اضافه را با معنی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "auf" },
+        { "id": "i2", "text": "unter" },
+        { "id": "i3", "text": "neben" },
+        { "id": "i4", "text": "zwischen" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "زیر" },
+        { "id": "m2", "text": "روی" },
+        { "id": "m3", "text": "بین" },
+        { "id": "m4", "text": "کنار" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m1"],
+        ["i3", "m4"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s19",
+      "question": "کدام جمله درست است؟",
+      "options": [
+        "Die Lampe hängt auf der Decke.",
+        "Die Lampe hängt an der Decke.",
+        "Die Lampe hängt neben der Decke.",
+        "Die Lampe hängt unter der Decke."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": {
+        "correct": "آفرین! چراغ به سقف وصل است: an der Decke.",
+        "incorrect": "برای چیزهایی که به سقف یا دیوار وصل هستند از an استفاده می‌کنیم."
+      },
+      "feedbackTip": {
+        "category": "preposition",
+        "tip": "an = چسبیده/وصل به (دیوار، سقف)"
+      }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g3",
+      "title": "مرور کلی",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        {
+          "prompt": "neben",
+          "left": "کنار",
+          "right": "بین",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "zwischen",
+          "left": "کنار",
+          "right": "بین",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "gemütlich",
+          "left": "دنج",
+          "right": "مدرن",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "روشن =",
+          "left": "dunkel",
+          "right": "hell",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "قدیمی =",
+          "left": "alt",
+          "right": "neu",
+          "correctSide": "left"
+        }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Meine Wohnung ist klein aber gemütlich.",
+      "translation": "آپارتمانم کوچک ولی دنج است.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Das Buch liegt auf dem Tisch.",
+      "translation": "کتاب روی میز است.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "groß", "fa": "بزرگ" },
+        { "de": "klein", "fa": "کوچک" },
+        { "de": "hell", "fa": "روشن" },
+        { "de": "dunkel", "fa": "تاریک" },
+        { "de": "gemütlich", "fa": "دنج/راحت" },
+        { "de": "modern", "fa": "مدرن" },
+        { "de": "alt", "fa": "قدیمی" },
+        { "de": "neu", "fa": "نو/جدید" },
+        { "de": "neben", "fa": "کنار" },
+        { "de": "zwischen", "fa": "بین" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما یاد گرفتید چطور آپارتمان را توصیف کنید:\n\n📏 **صفات:**\n• groß ↔ klein (بزرگ ↔ کوچک)\n• hell ↔ dunkel (روشن ↔ تاریک)\n• alt ↔ neu (قدیمی ↔ نو)\n• modern, gemütlich\n\n📍 **حروف اضافه مکان:**\n• in = در\n• auf = روی\n• an = به/روی (دیوار)\n• neben = کنار\n• unter = زیر\n• über = بالای\n• zwischen = بین\n\n📝 **مثال:** Das Bett steht neben dem Fenster.",
+      "xpEarned": 50,
+      "nextLessonId": "A1-M09-L04",
+      "vocabularyLearned": [
+        { "word": { "de": "groß", "fa": "بزرگ" } },
+        { "word": { "de": "klein", "fa": "کوچک" } },
+        { "word": { "de": "hell", "fa": "روشن" } },
+        { "word": { "de": "dunkel", "fa": "تاریک" } },
+        { "word": { "de": "gemütlich", "fa": "دنج/راحت" } },
+        { "word": { "de": "modern", "fa": "مدرن" } },
+        { "word": { "de": "alt", "fa": "قدیمی" } },
+        { "word": { "de": "neu", "fa": "نو/جدید" } },
+        { "word": { "de": "neben", "fa": "کنار" } },
+        { "word": { "de": "zwischen", "fa": "بین" } }
+      ]
+    }
+  ]
+}
