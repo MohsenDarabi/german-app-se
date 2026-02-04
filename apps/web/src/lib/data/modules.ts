@@ -351,6 +351,12 @@ const DE_FA_A1_MODULES: ModuleStub[] = [
         title: "ورزش (Sport)",
         description: "یاد بگیرید درباره ورزش‌ها به آلمانی صحبت کنید.",
         path: "/learn/de-fa/A1/A1-M10-L02"
+      },
+      {
+        id: "A1-M10-L03",
+        title: "اوقات فراغت (Freizeit)",
+        description: "یاد بگیرید درباره فعالیت‌های اوقات فراغت به آلمانی صحبت کنید.",
+        path: "/learn/de-fa/A1/A1-M10-L03"
       }
     ]
   }
