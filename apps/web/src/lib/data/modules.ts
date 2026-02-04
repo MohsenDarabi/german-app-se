@@ -485,6 +485,12 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         title: "Perfekt با haben",
         description: "یاد بگیرید چطور درباره کارهایی که انجام دادید صحبت کنید.",
         path: "/learn/de-fa/A2/A2-M01-L01"
+      },
+      {
+        id: "A2-M01-L02",
+        title: "Perfekt با sein",
+        description: "یاد بگیرید چطور درباره حرکت و سفر در گذشته صحبت کنید.",
+        path: "/learn/de-fa/A2/A2-M01-L02"
       }
     ]
   }

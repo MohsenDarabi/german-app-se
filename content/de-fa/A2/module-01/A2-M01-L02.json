@@ -1,0 +1,421 @@
+{
+  "id": "A2-M01-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Perfekt mit sein", "fa": "زمان گذشته با sein" },
+  "description": "یاد بگیرید چطور درباره حرکت و سفر در گذشته صحبت کنید",
+  "level": "A2",
+  "module": 1,
+  "lessonNumber": 2,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "gegangen", "fa": "رفته", "grammar": { "pos": "verb", "form": "past participle" } },
+    { "de": "gekommen", "fa": "آمده", "grammar": { "pos": "verb", "form": "past participle" } },
+    { "de": "gefahren", "fa": "رانده/سفر کرده", "grammar": { "pos": "verb", "form": "past participle" } },
+    { "de": "geflogen", "fa": "پرواز کرده", "grammar": { "pos": "verb", "form": "past participle" } },
+    { "de": "geblieben", "fa": "مانده", "grammar": { "pos": "verb", "form": "past participle" } },
+    { "de": "gewesen", "fa": "بوده", "grammar": { "pos": "verb", "form": "past participle" } },
+    { "de": "gelaufen", "fa": "دویده", "grammar": { "pos": "verb", "form": "past participle" } },
+    { "de": "geschwommen", "fa": "شنا کرده", "grammar": { "pos": "verb", "form": "past participle" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "Perfekt با sein",
+      "content": "🚶 **برخی فعل‌ها با sein می‌آیند، نه haben!**\n\n📝 **ساختار:**\n**sein** + **Partizip II**\n\n• Ich **bin** nach Berlin **gefahren**.\n  = به برلین رفتم.\n\n• Er **ist** gekommen.\n  = او آمد.\n\n🎯 **کدام فعل‌ها با sein؟**\n• فعل‌های حرکت: gehen, kommen, fahren, fliegen\n• فعل‌های تغییر حالت: werden, aufwachen\n• sein و bleiben",
+      "examples": [
+        { "de": "Ich bin nach Hause gegangen.", "fa": "به خانه رفتم." },
+        { "de": "Wir sind mit dem Zug gefahren.", "fa": "با قطار رفتیم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "gegangen", "fa": "رفته (از gehen)" },
+      "example": { "text": { "de": "Ich bin ins Kino gegangen.", "fa": "به سینما رفتم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-gegangen",
+      "word": "gegangen",
+      "translation": "رفته",
+      "syllables": ["ge", "gan", "gen"],
+      "distractors": ["go", "gon", "gun", "gi"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "gekommen", "fa": "آمده (از kommen)" },
+      "example": { "text": { "de": "Sie ist spät gekommen.", "fa": "او دیر آمد." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "gefahren", "fa": "رانده/سفر کرده (از fahren)" },
+      "example": { "text": { "de": "Wir sind nach München gefahren.", "fa": "به مونیخ رفتیم." } }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«Ich bin nach Berlin gefahren» یعنی چه؟",
+      "options": ["به برلین می‌روم", "به برلین رفتم", "به برلین خواهم رفت", "در برلین هستم"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "bin...gefahren = رفتم (گذشته)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich {0} gestern ins Kino gegangen.",
+      "options": ["bin", "habe", "ist", "hat"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "gehen با sein می‌آید: ich bin gegangen" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "haben یا sein؟",
+      "content": "🤔 **چه وقت haben، چه وقت sein؟**\n\n✅ **sein** برای:\n• حرکت از A به B: gehen, kommen, fahren, fliegen, laufen\n• تغییر حالت: aufwachen, einschlafen, werden\n• sein, bleiben\n\n✅ **haben** برای:\n• بقیه فعل‌ها: machen, kaufen, lernen, essen, trinken...\n\n📝 **مثال‌ها:**\n• Ich **bin** gegangen. (حرکت)\n• Ich **habe** gegessen. (نه حرکت)",
+      "examples": [
+        { "de": "Er ist nach Hause gelaufen.", "fa": "او دوان دوان به خانه رفت." },
+        { "de": "Sie hat viel gegessen.", "fa": "او زیاد خورد." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "geflogen", "fa": "پرواز کرده (از fliegen)" },
+      "example": { "text": { "de": "Wir sind nach Paris geflogen.", "fa": "به پاریس پرواز کردیم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "geblieben", "fa": "مانده (از bleiben)" },
+      "example": { "text": { "de": "Ich bin zu Hause geblieben.", "fa": "در خانه ماندم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-gefahren",
+      "word": "gefahren",
+      "translation": "سفر کرده",
+      "syllables": ["ge", "fah", "ren"],
+      "distractors": ["ga", "foh", "ran", "fi"]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "haben یا sein؟",
+      "instruction": "فعل کمکی درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "gegangen", "left": "bin", "right": "habe", "correctSide": "left" },
+        { "prompt": "gekauft", "left": "bin", "right": "habe", "correctSide": "right" },
+        { "prompt": "gefahren", "left": "bin", "right": "habe", "correctSide": "left" },
+        { "prompt": "gelernt", "left": "bin", "right": "habe", "correctSide": "right" },
+        { "prompt": "gekommen", "left": "bin", "right": "habe", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "gewesen", "fa": "بوده (از sein)" },
+      "example": { "text": { "de": "Ich bin in Deutschland gewesen.", "fa": "در آلمان بودم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "gelaufen", "fa": "دویده (از laufen)" },
+      "example": { "text": { "de": "Er ist schnell gelaufen.", "fa": "او سریع دوید." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": { "de": "geschwommen", "fa": "شنا کرده (از schwimmen)" },
+      "example": { "text": { "de": "Wir sind im Meer geschwommen.", "fa": "در دریا شنا کردیم." } }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "تعطیلات",
+      "context": "الی و تام درباره تعطیلات صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Tom", "text": { "de": "Wo bist du im Urlaub gewesen?", "fa": "تعطیلات کجا بودی؟" } },
+        { "speaker": "Eli", "text": { "de": "Ich bin nach Spanien geflogen.", "fa": "به اسپانیا پرواز کردم." } },
+        { "speaker": "Tom", "text": { "de": "Super! Was hast du dort gemacht?", "fa": "عالی! آنجا چه کار کردی؟" } },
+        { "speaker": "Eli", "text": { "de": "Ich bin viel geschwommen und am Strand gelaufen.", "fa": "زیاد شنا کردم و در ساحل دویدم." } },
+        { "speaker": "Tom", "text": { "de": "Toll! Wie lange bist du geblieben?", "fa": "چه خوب! چند وقت ماندی؟" } },
+        { "speaker": "Eli", "text": { "de": "Eine Woche. Und du?", "fa": "یک هفته. و تو؟" } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "الی کجا رفته بود؟", "options": ["آلمان", "اسپانیا", "فرانسه"], "correctIndex": 1 },
+        { "question": "الی چند وقت ماند؟", "options": ["دو هفته", "یک هفته", "سه روز"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Wir {0} nach Paris geflogen.",
+      "options": ["sind", "haben", "bin", "hat"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "fliegen با sein می‌آید: wir sind geflogen" }
+    },
+    {
+      "type": "word-order",
+      "id": "w1",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["gegangen.", "Kino", "bin", "ins", "Ich"],
+      "correctOrder": [4, 2, 3, 1, 0],
+      "correctSentence": { "de": "Ich bin ins Kino gegangen.", "fa": "به سینما رفتم." }
+    },
+    {
+      "type": "word-order",
+      "id": "w2",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["gekommen?", "du", "Wann", "bist"],
+      "correctOrder": [2, 3, 1, 0],
+      "correctSentence": { "de": "Wann bist du gekommen?", "fa": "کی آمدی؟" }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "فعل‌ها را با Partizip II جفت کنید",
+      "items": [
+        { "id": "i1", "text": "gehen" },
+        { "id": "i2", "text": "kommen" },
+        { "id": "i3", "text": "fahren" },
+        { "id": "i4", "text": "fliegen" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "gefahren" },
+        { "id": "m2", "text": "gegangen" },
+        { "id": "m3", "text": "geflogen" },
+        { "id": "m4", "text": "gekommen" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m4"],
+        ["i3", "m1"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-gekommen",
+      "word": "gekommen",
+      "translation": "آمده",
+      "syllables": ["ge", "kom", "men"],
+      "distractors": ["ga", "kam", "man", "gi"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام فعل با sein می‌آید؟",
+      "options": ["kaufen", "lernen", "gehen", "machen"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین!", "incorrect": "gehen فعل حرکت است، پس با sein می‌آید." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er {0} zu Hause geblieben.",
+      "options": ["ist", "hat", "bin", "sind"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "bleiben با sein می‌آید: er ist geblieben" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "صبح امروز",
+      "context": "همکاران درباره صبح صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Wie bist du heute zur Arbeit gekommen?", "fa": "امروز چطور به محل کار آمدی؟" } },
+        { "speaker": "Max", "text": { "de": "Ich bin mit dem Bus gefahren. Und du?", "fa": "با اتوبوس آمدم. و تو؟" } },
+        { "speaker": "Anna", "text": { "de": "Ich bin gelaufen. Das Wetter war so schön!", "fa": "پیاده آمدم. هوا خیلی خوب بود!" } },
+        { "speaker": "Max", "text": { "de": "Wow, das ist weit! Wie lange hast du gebraucht?", "fa": "وای، دوره! چقدر طول کشید؟" } },
+        { "speaker": "Anna", "text": { "de": "Etwa 30 Minuten. Ich bin schnell gelaufen.", "fa": "حدود ۳۰ دقیقه. سریع رفتم." } },
+        { "speaker": "Max", "text": { "de": "Super! Das ist auch Sport.", "fa": "عالی! این هم ورزشه." } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "ماکس چطور به کار آمد؟", "options": ["پیاده", "با اتوبوس", "با ماشین"], "correctIndex": 1 },
+        { "question": "آنا چقدر پیاده‌روی کرد؟", "options": ["۱۰ دقیقه", "۳۰ دقیقه", "۱ ساعت"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "صرف sein در Perfekt",
+      "instruction": "صرف درست sein را انتخاب کنید",
+      "questions": [
+        { "prompt": "ich ...", "left": "bin", "right": "ist", "correctSide": "left" },
+        { "prompt": "du ...", "left": "bist", "right": "ist", "correctSide": "left" },
+        { "prompt": "er/sie ...", "left": "bin", "right": "ist", "correctSide": "right" },
+        { "prompt": "wir ...", "left": "sind", "right": "seid", "correctSide": "left" },
+        { "prompt": "ihr ...", "left": "sind", "right": "seid", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Kinder {0} im Park gelaufen.",
+      "options": ["sind", "haben", "ist", "hat"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "die Kinder = بچه‌ها (جمع) → sind" }
+    },
+    {
+      "type": "word-order",
+      "id": "w3",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["geflogen.", "Paris", "nach", "sind", "Wir"],
+      "correctOrder": [4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Wir sind nach Paris geflogen.", "fa": "به پاریس پرواز کردیم." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "«Sie ist spät gekommen» یعنی چه؟",
+      "options": ["او دیر می‌آید", "او دیر آمد", "او زود آمد", "او نیامد"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "ist gekommen = آمد (گذشته)" }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-geflogen",
+      "word": "geflogen",
+      "translation": "پرواز کرده",
+      "syllables": ["ge", "flo", "gen"],
+      "distractors": ["ga", "fla", "gun", "gi"]
+    },
+    {
+      "type": "matching",
+      "id": "m2",
+      "instruction": "جملات را با ترجمه جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Ich bin gegangen." },
+        { "id": "i2", "text": "Er ist gefahren." },
+        { "id": "i3", "text": "Wir sind geflogen." },
+        { "id": "i4", "text": "Sie ist geblieben." }
+      ],
+      "matches": [
+        { "id": "m1", "text": "او ماند." },
+        { "id": "m2", "text": "رفتم." },
+        { "id": "m3", "text": "پرواز کردیم." },
+        { "id": "m4", "text": "او رفت." }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m4"],
+        ["i3", "m3"],
+        ["i4", "m1"]
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Bist du schon in Deutschland {0}?",
+      "options": ["gewesen", "gegangen", "gefahren", "geblieben"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "sein → gewesen (بوده)" }
+    },
+    {
+      "type": "word-order",
+      "id": "w4",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["geblieben.", "Hause", "zu", "ist", "Er"],
+      "correctOrder": [4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Er ist zu Hause geblieben.", "fa": "او در خانه ماند." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "کدام جمله درست است؟",
+      "options": ["Ich habe nach Berlin gefahren.", "Ich bin nach Berlin gefahren.", "Ich habe nach Berlin gefahrt.", "Ich bin nach Berlin gefahrt."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "fahren با sein می‌آید: bin gefahren" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Gestern {0} ich viel geschwommen.",
+      "options": ["bin", "habe", "ist", "hat"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "schwimmen با sein می‌آید: ich bin geschwommen" }
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Ich bin nach Berlin gefahren.",
+      "translation": "به برلین رفتم.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Wann bist du gekommen?",
+      "translation": "کی آمدی؟",
+      "difficulty": "A2"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-3",
+      "targetText": "Wir sind im Meer geschwommen.",
+      "translation": "در دریا شنا کردیم.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "memory-match",
+      "id": "g3",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "gegangen", "fa": "رفته" },
+        { "de": "gekommen", "fa": "آمده" },
+        { "de": "gefahren", "fa": "سفر کرده" },
+        { "de": "geflogen", "fa": "پرواز کرده" },
+        { "de": "geblieben", "fa": "مانده" },
+        { "de": "geschwommen", "fa": "شنا کرده" }
+      ],
+      "timeLimit": 60
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "gegangen", "fa": "رفته" },
+        { "de": "gekommen", "fa": "آمده" },
+        { "de": "gefahren", "fa": "سفر کرده" },
+        { "de": "geflogen", "fa": "پرواز کرده" },
+        { "de": "geblieben", "fa": "مانده" },
+        { "de": "gewesen", "fa": "بوده" },
+        { "de": "gelaufen", "fa": "دویده" },
+        { "de": "geschwommen", "fa": "شنا کرده" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما زمان Perfekt با sein را یاد گرفتید!\n\n📝 **ساختار:**\n**sein** + **Partizip II**\n\n🚶 **فعل‌های با sein:**\n• حرکت: gehen, kommen, fahren, fliegen, laufen\n• تغییر حالت: aufwachen, einschlafen\n• sein → gewesen\n• bleiben → geblieben\n\n📊 **مقایسه:**\n• Ich **bin** gegangen. (حرکت)\n• Ich **habe** gegessen. (نه حرکت)",
+      "xpEarned": 50,
+      "vocabularyLearned": [
+        { "word": { "de": "gegangen", "fa": "رفته" } },
+        { "word": { "de": "gekommen", "fa": "آمده" } },
+        { "word": { "de": "gefahren", "fa": "سفر کرده" } },
+        { "word": { "de": "geflogen", "fa": "پرواز کرده" } },
+        { "word": { "de": "geblieben", "fa": "مانده" } },
+        { "word": { "de": "gewesen", "fa": "بوده" } },
+        { "word": { "de": "gelaufen", "fa": "دویده" } },
+        { "word": { "de": "geschwommen", "fa": "شنا کرده" } }
+      ]
+    }
+  ]
+}
