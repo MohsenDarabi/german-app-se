@@ -295,6 +295,12 @@ const DE_FA_A1_MODULES: ModuleStub[] = [
         title: "در رستوران (Im Restaurant)",
         description: "یاد بگیرید چطور در رستوران آلمانی سفارش بدهید.",
         path: "/learn/de-fa/A1/A1-M08-L03"
+      },
+      {
+        id: "A1-M08-L04",
+        title: "خرید کردن (Einkaufen)",
+        description: "یاد بگیرید چطور در سوپرمارکت آلمانی خرید کنید.",
+        path: "/learn/de-fa/A1/A1-M08-L04"
       }
     ]
   }
