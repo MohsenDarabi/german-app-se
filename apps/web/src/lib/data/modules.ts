@@ -528,6 +528,12 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         title: "برابری (so...wie)",
         description: "یاد بگیرید چطور بگویید دو چیز مثل هم هستند.",
         path: "/learn/de-fa/A2/A2-M02-L03"
+      },
+      {
+        id: "A2-M02-L04",
+        title: "مقایسه - جمع‌بندی",
+        description: "تمرین ترکیبی همه انواع مقایسه.",
+        path: "/learn/de-fa/A2/A2-M02-L04"
       }
     ]
   }

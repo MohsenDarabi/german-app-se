@@ -1,0 +1,420 @@
+{
+  "id": "A2-M02-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Vergleiche - Zusammenfassung", "fa": "مقایسه - جمع‌بندی" },
+  "description": "تمرین ترکیبی همه انواع مقایسه",
+  "level": "A2",
+  "module": 2,
+  "lessonNumber": 4,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "je...desto", "fa": "هر چه...آن‌قدر", "grammar": { "pos": "phrase" } },
+    { "de": "immer", "fa": "همیشه / هر چه بیشتر", "grammar": { "pos": "adverb" } },
+    { "de": "viel", "fa": "زیاد", "grammar": { "pos": "adverb" } },
+    { "de": "wenig", "fa": "کم", "grammar": { "pos": "adverb" } },
+    { "de": "etwas", "fa": "کمی", "grammar": { "pos": "adverb" } },
+    { "de": "noch", "fa": "هنوز / حتی", "grammar": { "pos": "adverb" } },
+    { "de": "weit", "fa": "دور / بسیار", "grammar": { "pos": "adverb" } },
+    { "de": "kaum", "fa": "به سختی", "grammar": { "pos": "adverb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "جمع‌بندی مقایسه",
+      "content": "📊 **سه نوع مقایسه در آلمانی:**\n\n1️⃣ **Komparativ** (تفضیلی):\nصفت + **-er** + **als**\n• größer **als** = بزرگ‌تر از\n\n2️⃣ **Superlativ** (عالی):\n**am** + صفت + **-sten**\n• **am** größ**ten** = بزرگ‌ترین\n\n3️⃣ **Gleichheit** (برابری):\n**so** + صفت + **wie**\n• **so** groß **wie** = به اندازه",
+      "examples": [
+        { "de": "Er ist größer als ich, aber nicht so groß wie sein Vater.", "fa": "او بزرگ‌تر از من است، ولی به اندازه پدرش نیست." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "je...desto", "fa": "هر چه...آن‌قدر" },
+      "example": { "text": { "de": "Je mehr ich lerne, desto besser verstehe ich.", "fa": "هر چه بیشتر یاد می‌گیرم، بهتر می‌فهمم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "immer", "fa": "همیشه / هر چه بیشتر" },
+      "example": { "text": { "de": "Es wird immer kälter.", "fa": "هوا هر چه سردتر می‌شود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-immer",
+      "word": "immer",
+      "translation": "همیشه",
+      "syllables": ["im", "mer"],
+      "distractors": ["am", "mar", "om", "mur"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام ساختار برای مقایسه برابری استفاده می‌شود؟",
+      "options": ["größer als", "am größten", "so groß wie", "groß"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین!", "incorrect": "برابری: so + صفت + wie" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Berlin ist größer {0} München.",
+      "options": ["als", "wie", "so", "am"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Komparativ با als می‌آید" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er ist so alt {0} ich.",
+      "options": ["wie", "als", "am", "von"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "برابری با wie می‌آید" }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "viel", "fa": "زیاد" },
+      "example": { "text": { "de": "Ich habe viel mehr Zeit als du.", "fa": "من زمان خیلی بیشتری از تو دارم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "etwas", "fa": "کمی" },
+      "example": { "text": { "de": "Sie ist etwas älter als ich.", "fa": "او کمی مسن‌تر از من است." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s6",
+      "title": "تقویت مقایسه",
+      "content": "💪 **تقویت Komparativ:**\n\n• **viel** + Komparativ = خیلی ...-تر\n  viel größer = خیلی بزرگ‌تر\n\n• **etwas** + Komparativ = کمی ...-تر\n  etwas älter = کمی مسن‌تر\n\n• **noch** + Komparativ = حتی ...-تر\n  noch besser = حتی بهتر\n\n• **immer** + Komparativ = هر چه ...-تر\n  immer schneller = هر چه سریع‌تر",
+      "examples": [
+        { "de": "Das ist viel besser als ich dachte.", "fa": "این خیلی بهتر از چیزی است که فکر می‌کردم." },
+        { "de": "Er läuft immer schneller.", "fa": "او هر چه سریع‌تر می‌دود." }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "als یا wie؟",
+      "instruction": "کلمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "größer ...", "left": "als", "right": "wie", "correctSide": "left" },
+        { "prompt": "so groß ...", "left": "als", "right": "wie", "correctSide": "right" },
+        { "prompt": "besser ...", "left": "als", "right": "wie", "correctSide": "left" },
+        { "prompt": "genauso gut ...", "left": "als", "right": "wie", "correctSide": "right" },
+        { "prompt": "schneller ...", "left": "als", "right": "wie", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "noch", "fa": "هنوز / حتی" },
+      "example": { "text": { "de": "Das ist noch besser!", "fa": "این حتی بهتر است!" } }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "wenig", "fa": "کم" },
+      "example": { "text": { "de": "Ich habe weniger Zeit als du.", "fa": "من زمان کمتری از تو دارم." } }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "مقایسه ماشین‌ها",
+      "context": "دو دوست درباره ماشین صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Tom", "text": { "de": "Welches Auto ist besser?", "fa": "کدام ماشین بهتر است؟" } },
+        { "speaker": "Eli", "text": { "de": "Das rote ist schneller als das blaue.", "fa": "قرمزی سریع‌تر از آبی است." } },
+        { "speaker": "Tom", "text": { "de": "Aber das blaue ist viel billiger.", "fa": "ولی آبی خیلی ارزان‌تر است." } },
+        { "speaker": "Eli", "text": { "de": "Stimmt. Und es ist genauso sicher wie das rote.", "fa": "درسته. و به اندازه قرمزی امن است." } },
+        { "speaker": "Tom", "text": { "de": "Welches ist am sparsamsten?", "fa": "کدام کم‌مصرف‌ترین است؟" } },
+        { "speaker": "Eli", "text": { "de": "Das blaue verbraucht am wenigsten Benzin.", "fa": "آبی کمترین بنزین مصرف می‌کند." } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "کدام ماشین سریع‌تر است؟", "options": ["آبی", "قرمز", "هر دو"], "correctIndex": 1 },
+        { "question": "کدام ماشین ارزان‌تر است؟", "options": ["آبی", "قرمز", "هر دو"], "correctIndex": 0 }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das ist {0} besser als ich dachte.",
+      "options": ["viel", "so", "am", "wie"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "viel + Komparativ = خیلی ...-تر" }
+    },
+    {
+      "type": "word-order",
+      "id": "w1",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["schnellsten.", "am", "läuft", "Er"],
+      "correctOrder": [3, 2, 1, 0],
+      "correctSentence": { "de": "Er läuft am schnellsten.", "fa": "او سریع‌ترین می‌دود." }
+    },
+    {
+      "type": "word-order",
+      "id": "w2",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["ich.", "älter", "ist", "als", "Sie", "etwas"],
+      "correctOrder": [4, 2, 5, 1, 3, 0],
+      "correctSentence": { "de": "Sie ist etwas älter als ich.", "fa": "او کمی مسن‌تر از من است." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "ساختارها را با معنی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "größer als" },
+        { "id": "i2", "text": "am größten" },
+        { "id": "i3", "text": "so groß wie" },
+        { "id": "i4", "text": "viel größer" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "بزرگ‌ترین" },
+        { "id": "m2", "text": "بزرگ‌تر از" },
+        { "id": "m3", "text": "خیلی بزرگ‌تر" },
+        { "id": "m4", "text": "به اندازه" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m1"],
+        ["i3", "m4"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-etwas",
+      "word": "etwas",
+      "translation": "کمی",
+      "syllables": ["et", "was"],
+      "distractors": ["at", "wes", "ot", "wis"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "«Je mehr ich lerne, desto besser verstehe ich» یعنی چه؟",
+      "options": ["بیشتر یاد می‌گیرم", "هر چه بیشتر یاد می‌گیرم، بهتر می‌فهمم", "بهتر می‌فهمم", "خیلی خوب یاد می‌گیرم"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "je...desto = هر چه...آن‌قدر" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Dieses Buch ist {0} interessantesten.",
+      "options": ["am", "als", "wie", "so"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Superlativ: am + صفت + -sten" }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "weit", "fa": "دور / بسیار" },
+      "example": { "text": { "de": "Das ist weit besser.", "fa": "این بسیار بهتر است." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": { "de": "kaum", "fa": "به سختی" },
+      "example": { "text": { "de": "Er ist kaum größer als ich.", "fa": "او به سختی بزرگ‌تر از من است." } }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "بهترین رستوران",
+      "context": "همکاران درباره غذا صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Welches Restaurant ist am besten?", "fa": "کدام رستوران بهترین است؟" } },
+        { "speaker": "Max", "text": { "de": "Das italienische ist besser als das chinesische.", "fa": "ایتالیایی بهتر از چینی است." } },
+        { "speaker": "Anna", "text": { "de": "Aber das chinesische ist billiger.", "fa": "ولی چینی ارزان‌تر است." } },
+        { "speaker": "Max", "text": { "de": "Ja, und genauso lecker wie das italienische.", "fa": "بله، و به خوشمزگی ایتالیایی است." } },
+        { "speaker": "Anna", "text": { "de": "Je öfter ich dort esse, desto mehr mag ich es.", "fa": "هر چه بیشتر آنجا غذا می‌خورم، بیشتر دوستش دارم." } },
+        { "speaker": "Max", "text": { "de": "Das chinesische wird immer besser!", "fa": "چینی هر چه بهتر می‌شود!" } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "کدام رستوران ارزان‌تر است؟", "options": ["ایتالیایی", "چینی", "هر دو"], "correctIndex": 1 },
+        { "question": "آنا درباره رستوران چینی چه می‌گوید؟", "options": ["بد است", "هر چه بیشتر دوستش دارد", "گران است"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "تقویت‌کننده‌ها",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "viel größer", "left": "خیلی بزرگ‌تر", "right": "کمی بزرگ‌تر", "correctSide": "left" },
+        { "prompt": "etwas älter", "left": "خیلی مسن‌تر", "right": "کمی مسن‌تر", "correctSide": "right" },
+        { "prompt": "noch besser", "left": "حتی بهتر", "right": "کمی بهتر", "correctSide": "left" },
+        { "prompt": "immer schneller", "left": "همیشه سریع", "right": "هر چه سریع‌تر", "correctSide": "right" },
+        { "prompt": "kaum größer", "left": "به سختی بزرگ‌تر", "right": "خیلی بزرگ‌تر", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Es wird {0} kälter.",
+      "options": ["immer", "so", "am", "wie"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "immer + Komparativ = هر چه ...-تر" }
+    },
+    {
+      "type": "word-order",
+      "id": "w3",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["ich.", "so", "wie", "groß", "ist", "Er"],
+      "correctOrder": [5, 4, 1, 3, 2, 0],
+      "correctSentence": { "de": "Er ist so groß wie ich.", "fa": "او به اندازه من قد دارد." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "کدام جمله درست است؟",
+      "options": ["Er ist viel größer wie ich.", "Er ist viel größer als ich.", "Er ist viel größer so ich.", "Er ist viel größer von ich."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "Komparativ با als می‌آید" }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-wenig",
+      "word": "wenig",
+      "translation": "کم",
+      "syllables": ["we", "nig"],
+      "distractors": ["wa", "neg", "wo", "nug"]
+    },
+    {
+      "type": "matching",
+      "id": "m2",
+      "instruction": "کلمات را با ترجمه جفت کنید",
+      "items": [
+        { "id": "i1", "text": "viel" },
+        { "id": "i2", "text": "etwas" },
+        { "id": "i3", "text": "noch" },
+        { "id": "i4", "text": "immer" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "کمی" },
+        { "id": "m2", "text": "زیاد/خیلی" },
+        { "id": "m3", "text": "همیشه/هر چه" },
+        { "id": "m4", "text": "هنوز/حتی" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m1"],
+        ["i3", "m4"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das ist {0} besser!",
+      "options": ["noch", "so", "wie", "als"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "noch + Komparativ = حتی ...-تر" }
+    },
+    {
+      "type": "word-order",
+      "id": "w4",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["dachte.", "als", "besser", "ich", "ist", "viel", "Das"],
+      "correctOrder": [6, 4, 5, 2, 1, 3, 0],
+      "correctSentence": { "de": "Das ist viel besser als ich dachte.", "fa": "این خیلی بهتر از چیزی است که فکر می‌کردم." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "«Es wird immer wärmer» یعنی چه؟",
+      "options": ["همیشه گرم است", "هوا هر چه گرم‌تر می‌شود", "خیلی گرم است", "گرم‌ترین است"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "immer + Komparativ = هر چه ...-تر می‌شود" }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-kaum",
+      "word": "kaum",
+      "translation": "به سختی",
+      "syllables": ["kaum"],
+      "distractors": ["koum", "keum", "kwam"]
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Das ist viel besser als ich dachte.",
+      "translation": "این خیلی بهتر از چیزی است که فکر می‌کردم.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Er ist genauso alt wie ich.",
+      "translation": "او دقیقاً هم‌سن من است.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-3",
+      "targetText": "Dieses Restaurant ist am besten.",
+      "translation": "این رستوران بهترین است.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "memory-match",
+      "id": "g3",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "viel", "fa": "زیاد/خیلی" },
+        { "de": "etwas", "fa": "کمی" },
+        { "de": "noch", "fa": "حتی" },
+        { "de": "immer", "fa": "هر چه" },
+        { "de": "kaum", "fa": "به سختی" },
+        { "de": "wenig", "fa": "کم" }
+      ],
+      "timeLimit": 60
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "je...desto", "fa": "هر چه...آن‌قدر" },
+        { "de": "immer", "fa": "همیشه / هر چه بیشتر" },
+        { "de": "viel", "fa": "زیاد" },
+        { "de": "wenig", "fa": "کم" },
+        { "de": "etwas", "fa": "کمی" },
+        { "de": "noch", "fa": "هنوز / حتی" },
+        { "de": "weit", "fa": "دور / بسیار" },
+        { "de": "kaum", "fa": "به سختی" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "تبریک! 🎉",
+      "message": "شما ماژول مقایسه را کامل کردید!\n\n📊 **جمع‌بندی:**\n\n1️⃣ **Komparativ:** صفت + -er + **als**\n2️⃣ **Superlativ:** **am** + صفت + -sten\n3️⃣ **Gleichheit:** **so** + صفت + **wie**\n\n💪 **تقویت‌کننده‌ها:**\n• **viel** größer = خیلی بزرگ‌تر\n• **etwas** älter = کمی مسن‌تر\n• **noch** besser = حتی بهتر\n• **immer** schneller = هر چه سریع‌تر\n\n🏆 **ماژول ۲ کامل شد!**",
+      "xpEarned": 75,
+      "vocabularyLearned": [
+        { "word": { "de": "je...desto", "fa": "هر چه...آن‌قدر" } },
+        { "word": { "de": "immer", "fa": "همیشه / هر چه بیشتر" } },
+        { "word": { "de": "viel", "fa": "زیاد" } },
+        { "word": { "de": "wenig", "fa": "کم" } },
+        { "word": { "de": "etwas", "fa": "کمی" } },
+        { "word": { "de": "noch", "fa": "هنوز / حتی" } },
+        { "word": { "de": "weit", "fa": "دور / بسیار" } },
+        { "word": { "de": "kaum", "fa": "به سختی" } }
+      ]
+    }
+  ]
+}
