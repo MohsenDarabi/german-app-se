@@ -419,6 +419,12 @@ const DE_FA_A1_MODULES: ModuleStub[] = [
         title: "برنامه روزانه (Tagesablauf)",
         description: "یاد بگیرید درباره برنامه روزانه‌تان با فعل‌های جداشدنی صحبت کنید.",
         path: "/learn/de-fa/A1/A1-M12-L03"
+      },
+      {
+        id: "A1-M12-L04",
+        title: "روز من (Mein Tag)",
+        description: "یاد بگیرید با کلمات ترتیبی روزتان را توصیف کنید.",
+        path: "/learn/de-fa/A1/A1-M12-L04"
       }
     ]
   }

@@ -1,0 +1,423 @@
+{
+  "id": "A1-M12-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Mein Tag", "fa": "روز من" },
+  "description": "یاد بگیرید با کلمات ترتیبی روزتان را توصیف کنید",
+  "level": "A1",
+  "module": 12,
+  "lessonNumber": 4,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "zuerst", "fa": "اول", "grammar": { "pos": "adverb" } },
+    { "de": "dann", "fa": "بعد/سپس", "grammar": { "pos": "adverb" } },
+    { "de": "danach", "fa": "بعد از آن", "grammar": { "pos": "adverb" } },
+    { "de": "später", "fa": "بعداً", "grammar": { "pos": "adverb" } },
+    { "de": "zum Schluss", "fa": "در آخر", "grammar": { "pos": "phrase" } },
+    { "de": "schließlich", "fa": "سرانجام", "grammar": { "pos": "adverb" } },
+    { "de": "zuletzt", "fa": "در پایان", "grammar": { "pos": "adverb" } },
+    { "de": "normalerweise", "fa": "معمولاً", "grammar": { "pos": "adverb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "کلمات ترتیبی (Reihenfolge)",
+      "content": "برای توصیف ترتیب کارها از این کلمات استفاده کنید:\n\n1️⃣ **zuerst** = اول\n2️⃣ **dann** = بعد/سپس\n3️⃣ **danach** = بعد از آن\n4️⃣ **später** = بعداً\n5️⃣ **zum Schluss** = در آخر\n\n📝 این کلمات معمولاً اول جمله می‌آیند:\n**Zuerst** stehe ich auf.\n**Dann** frühstücke ich.",
+      "examples": [
+        { "de": "Zuerst dusche ich, dann frühstücke ich.", "fa": "اول دوش می‌گیرم، بعد صبحانه می‌خورم." },
+        { "de": "Zum Schluss gehe ich ins Bett.", "fa": "در آخر به رختخواب می‌روم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "zuerst", "fa": "اول" },
+      "example": { "text": { "de": "Zuerst stehe ich auf.", "fa": "اول بلند می‌شوم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-zuerst",
+      "word": "zuerst",
+      "translation": "اول",
+      "syllables": ["zu", "erst"],
+      "distractors": ["za", "arst", "zo", "urst"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "dann", "fa": "بعد/سپس" },
+      "example": { "text": { "de": "Dann frühstücke ich.", "fa": "بعد صبحانه می‌خورم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "danach", "fa": "بعد از آن" },
+      "example": { "text": { "de": "Danach fahre ich zur Arbeit.", "fa": "بعد از آن به کار می‌روم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-danach",
+      "word": "danach",
+      "translation": "بعد از آن",
+      "syllables": ["da", "nach"],
+      "distractors": ["do", "noch", "du", "nech"]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "später", "fa": "بعداً" },
+      "example": { "text": { "de": "Später rufe ich dich an.", "fa": "بعداً بهت زنگ می‌زنم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "zum Schluss", "fa": "در آخر" },
+      "example": { "text": { "de": "Zum Schluss sehe ich fern.", "fa": "در آخر تلویزیون می‌بینم." } }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "کلمات ترتیبی",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "zuerst", "left": "اول", "right": "آخر", "correctSide": "left" },
+        { "prompt": "dann", "left": "قبل", "right": "بعد", "correctSide": "right" },
+        { "prompt": "danach", "left": "بعد از آن", "right": "قبل از آن", "correctSide": "left" },
+        { "prompt": "später", "left": "زودتر", "right": "بعداً", "correctSide": "right" },
+        { "prompt": "zum Schluss", "left": "در آخر", "right": "در اول", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "ترتیب کلمات با قیدهای ترتیبی",
+      "content": "📝 وقتی قید ترتیبی اول جمله باشد:\n\n**قید + فعل + فاعل + ...**\n\n• **Zuerst** stehe **ich** auf.\n• **Dann** dusche **ich**.\n• **Danach** frühstücke **ich**.\n\n⚠️ فعل همیشه در جایگاه دوم!\nفاعل بعد از فعل می‌آید.",
+      "examples": [
+        { "de": "Später kaufe ich ein.", "fa": "بعداً خرید می‌کنم." },
+        { "de": "Zum Schluss räume ich auf.", "fa": "در آخر مرتب می‌کنم." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله درست است؟",
+      "options": ["Zuerst ich stehe auf.", "Zuerst stehe ich auf.", "Ich zuerst stehe auf.", "Stehe zuerst ich auf."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! قید + فعل + فاعل", "incorrect": "وقتی قید اول باشد: قید + فعل + فاعل" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} stehe ich auf, dann dusche ich.",
+      "options": ["Zuerst", "Dann", "Danach", "Später"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "zuerst = اول (اولین کار)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "روز الی",
+      "context": "الی روزش را توصیف می‌کند",
+      "lines": [
+        { "speaker": "Tom", "text": { "de": "Eli, wie sieht dein Tag aus?", "fa": "الی، روزت چطور است؟" } },
+        { "speaker": "Eli", "text": { "de": "Zuerst stehe ich um 6 Uhr auf.", "fa": "اول ساعت ۶ بلند می‌شوم." } },
+        { "speaker": "Eli", "text": { "de": "Dann dusche ich und frühstücke.", "fa": "بعد دوش می‌گیرم و صبحانه می‌خورم." } },
+        { "speaker": "Eli", "text": { "de": "Danach fahre ich zur Arbeit.", "fa": "بعد از آن به کار می‌روم." } },
+        { "speaker": "Tom", "text": { "de": "Und nach der Arbeit?", "fa": "و بعد از کار؟" } },
+        { "speaker": "Eli", "text": { "de": "Später kaufe ich ein oder treffe Freunde.", "fa": "بعداً خرید می‌کنم یا دوستان را می‌بینم." } },
+        { "speaker": "Eli", "text": { "de": "Zum Schluss sehe ich fern und gehe ins Bett.", "fa": "در آخر تلویزیون می‌بینم و به رختخواب می‌روم." } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "الی اول چه کار می‌کند؟", "options": ["دوش می‌گیرد", "بلند می‌شود", "صبحانه می‌خورد"], "correctIndex": 1 },
+        { "question": "الی در آخر چه کار می‌کند؟", "options": ["خرید می‌کند", "کار می‌کند", "تلویزیون می‌بیند"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "normalerweise", "fa": "معمولاً" },
+      "example": { "text": { "de": "Normalerweise stehe ich früh auf.", "fa": "معمولاً زود بلند می‌شوم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-normalerweise",
+      "word": "normalerweise",
+      "translation": "معمولاً",
+      "syllables": ["nor", "ma", "ler", "wei", "se"],
+      "distractors": ["nar", "mo", "lor", "wai", "sa"]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "schließlich", "fa": "سرانجام" },
+      "example": { "text": { "de": "Schließlich bin ich müde.", "fa": "سرانجام خسته‌ام." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": { "de": "zuletzt", "fa": "در پایان" },
+      "example": { "text": { "de": "Zuletzt gehe ich schlafen.", "fa": "در پایان می‌خوابم." } }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich frühstücke, {0} fahre ich zur Arbeit.",
+      "options": ["danach", "zuerst", "zum Schluss", "normalerweise"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "danach = بعد از آن (بعد از صبحانه)" }
+    },
+    {
+      "type": "word-order",
+      "id": "w1",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["dusche", "Dann", "ich."],
+      "correctOrder": [1, 0, 2],
+      "correctSentence": { "de": "Dann dusche ich.", "fa": "بعد دوش می‌گیرم." }
+    },
+    {
+      "type": "word-order",
+      "id": "w2",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["kaufe", "Später", "ein.", "ich"],
+      "correctOrder": [1, 0, 3, 2],
+      "correctSentence": { "de": "Später kaufe ich ein.", "fa": "بعداً خرید می‌کنم." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "کلمات ترتیبی را با ترجمه جفت کنید",
+      "items": [
+        { "id": "i1", "text": "zuerst" },
+        { "id": "i2", "text": "dann" },
+        { "id": "i3", "text": "später" },
+        { "id": "i4", "text": "zum Schluss" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "بعداً" },
+        { "id": "m2", "text": "اول" },
+        { "id": "m3", "text": "در آخر" },
+        { "id": "m4", "text": "بعد/سپس" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m4"],
+        ["i3", "m1"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "آخر هفته تام",
+      "context": "تام درباره آخر هفته‌اش صحبت می‌کند",
+      "lines": [
+        { "speaker": "Eli", "text": { "de": "Was machst du normalerweise am Wochenende?", "fa": "معمولاً آخر هفته چه کار می‌کنی؟" } },
+        { "speaker": "Tom", "text": { "de": "Zuerst schlafe ich lange.", "fa": "اول زیاد می‌خوابم." } },
+        { "speaker": "Eli", "text": { "de": "Und dann?", "fa": "و بعد؟" } },
+        { "speaker": "Tom", "text": { "de": "Dann frühstücke ich gemütlich.", "fa": "بعد راحت صبحانه می‌خورم." } },
+        { "speaker": "Tom", "text": { "de": "Danach räume ich die Wohnung auf.", "fa": "بعد از آن آپارتمان را مرتب می‌کنم." } },
+        { "speaker": "Eli", "text": { "de": "Und abends?", "fa": "و شب؟" } },
+        { "speaker": "Tom", "text": { "de": "Später treffe ich Freunde oder gehe aus.", "fa": "بعداً دوستان را می‌بینم یا بیرون می‌روم." } },
+        { "speaker": "Tom", "text": { "de": "Zum Schluss sehe ich einen Film.", "fa": "در آخر یک فیلم می‌بینم." } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "تام اول چه کار می‌کند؟", "options": ["صبحانه می‌خورد", "زیاد می‌خوابد", "مرتب می‌کند"], "correctIndex": 1 },
+        { "question": "تام بعد از صبحانه چه کار می‌کند؟", "options": ["فیلم می‌بیند", "مرتب می‌کند", "بیرون می‌رود"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "«Danach fahre ich zur Arbeit» یعنی چه؟",
+      "options": ["اول به کار می‌روم", "بعد از آن به کار می‌روم", "در آخر به کار می‌روم", "معمولاً به کار می‌روم"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "danach = بعد از آن" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} gehe ich ins Bett.",
+      "options": ["Zum Schluss", "Zuerst", "Normalerweise", "Dann"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "zum Schluss = در آخر (آخرین کار روز)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} stehe ich um 7 Uhr auf.",
+      "options": ["Normalerweise", "Danach", "Zum Schluss", "Schließlich"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "normalerweise = معمولاً (عادت روزانه)" }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "ترتیب روز",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "normalerweise", "left": "معمولاً", "right": "گاهی", "correctSide": "left" },
+        { "prompt": "schließlich", "left": "ابتدا", "right": "سرانجام", "correctSide": "right" },
+        { "prompt": "zuletzt", "left": "در پایان", "right": "در ابتدا", "correctSide": "left" },
+        { "prompt": "Zuerst dusche ich.", "left": "اول دوش می‌گیرم", "right": "آخر دوش می‌گیرم", "correctSide": "left" },
+        { "prompt": "Dann frühstücke ich.", "left": "قبلاً صبحانه خوردم", "right": "بعد صبحانه می‌خورم", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "w3",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["räume", "Danach", "auf.", "ich", "die Wohnung"],
+      "correctOrder": [1, 0, 3, 4, 2],
+      "correctSentence": { "de": "Danach räume ich die Wohnung auf.", "fa": "بعد از آن آپارتمان را مرتب می‌کنم." }
+    },
+    {
+      "type": "word-order",
+      "id": "w4",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["gehe", "Zum Schluss", "ins Bett.", "ich"],
+      "correctOrder": [1, 0, 3, 2],
+      "correctSentence": { "de": "Zum Schluss gehe ich ins Bett.", "fa": "در آخر به رختخواب می‌روم." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "کدام کلمه به معنی «معمولاً» است؟",
+      "options": ["zuerst", "danach", "normalerweise", "schließlich"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین!", "incorrect": "normalerweise = معمولاً" }
+    },
+    {
+      "type": "matching",
+      "id": "m2",
+      "instruction": "جملات را با ترجمه جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Zuerst stehe ich auf." },
+        { "id": "i2", "text": "Dann dusche ich." },
+        { "id": "i3", "text": "Später kaufe ich ein." },
+        { "id": "i4", "text": "Zum Schluss schlafe ich." }
+      ],
+      "matches": [
+        { "id": "m1", "text": "بعد دوش می‌گیرم" },
+        { "id": "m2", "text": "اول بلند می‌شوم" },
+        { "id": "m3", "text": "در آخر می‌خوابم" },
+        { "id": "m4", "text": "بعداً خرید می‌کنم" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m1"],
+        ["i3", "m4"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-spaeter",
+      "word": "später",
+      "translation": "بعداً",
+      "syllables": ["spä", "ter"],
+      "distractors": ["spa", "tar", "spo", "tur"]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-schliesslich",
+      "word": "schließlich",
+      "translation": "سرانجام",
+      "syllables": ["schließ", "lich"],
+      "distractors": ["schliss", "lech", "schlass", "loch"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} treffe ich Freunde.",
+      "options": ["Später", "Zuerst", "Zum Schluss", "Normalerweise"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "später = بعداً (در طول روز)" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "کدام کلمه برای «آخرین کار» استفاده می‌شود؟",
+      "options": ["zuerst", "dann", "zum Schluss", "danach"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین!", "incorrect": "zum Schluss = در آخر (آخرین کار)" }
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Zuerst stehe ich auf.",
+      "translation": "اول بلند می‌شوم.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Dann frühstücke ich.",
+      "translation": "بعد صبحانه می‌خورم.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-3",
+      "targetText": "Zum Schluss gehe ich ins Bett.",
+      "translation": "در آخر به رختخواب می‌روم.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "memory-match",
+      "id": "g3",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "zuerst", "fa": "اول" },
+        { "de": "dann", "fa": "بعد" },
+        { "de": "danach", "fa": "بعد از آن" },
+        { "de": "später", "fa": "بعداً" },
+        { "de": "zum Schluss", "fa": "در آخر" },
+        { "de": "normalerweise", "fa": "معمولاً" }
+      ],
+      "timeLimit": 60
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "zuerst", "fa": "اول" },
+        { "de": "dann", "fa": "بعد/سپس" },
+        { "de": "danach", "fa": "بعد از آن" },
+        { "de": "später", "fa": "بعداً" },
+        { "de": "zum Schluss", "fa": "در آخر" },
+        { "de": "schließlich", "fa": "سرانجام" },
+        { "de": "zuletzt", "fa": "در پایان" },
+        { "de": "normalerweise", "fa": "معمولاً" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "تبریک!",
+      "message": "شما ماژول ۱۲ (فعل‌های جداشدنی) را کامل کردید!\n\n📝 **کلمات ترتیبی:**\n1️⃣ zuerst = اول\n2️⃣ dann = بعد\n3️⃣ danach = بعد از آن\n4️⃣ später = بعداً\n5️⃣ zum Schluss = در آخر\n\n🔄 **ترتیب جمله:**\nقید + فعل + فاعل\n**Zuerst** stehe **ich** auf.\n\n⏰ **یادآوری:**\nnormalerweise = معمولاً",
+      "xpEarned": 50,
+      "vocabularyLearned": [
+        { "word": { "de": "zuerst", "fa": "اول" } },
+        { "word": { "de": "dann", "fa": "بعد/سپس" } },
+        { "word": { "de": "danach", "fa": "بعد از آن" } },
+        { "word": { "de": "später", "fa": "بعداً" } },
+        { "word": { "de": "zum Schluss", "fa": "در آخر" } },
+        { "word": { "de": "schließlich", "fa": "سرانجام" } },
+        { "word": { "de": "zuletzt", "fa": "در پایان" } },
+        { "word": { "de": "normalerweise", "fa": "معمولاً" } }
+      ]
+    }
+  ]
+}
