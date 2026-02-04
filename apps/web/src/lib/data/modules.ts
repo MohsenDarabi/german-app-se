@@ -388,6 +388,12 @@ const DE_FA_A1_MODULES: ModuleStub[] = [
         title: "چه رنگی دارد؟ (Welche Farbe hat...?)",
         description: "یاد بگیرید لباس‌ها را با رنگ توصیف کنید.",
         path: "/learn/de-fa/A1/A1-M11-L03"
+      },
+      {
+        id: "A1-M11-L04",
+        title: "در فروشگاه لباس (Im Kleidungsgeschäft)",
+        description: "یاد بگیرید چطور در فروشگاه لباس آلمانی خرید کنید.",
+        path: "/learn/de-fa/A1/A1-M11-L04"
       }
     ]
   }

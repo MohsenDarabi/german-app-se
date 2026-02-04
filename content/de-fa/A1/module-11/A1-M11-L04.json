@@ -1,0 +1,393 @@
+{
+  "id": "A1-M11-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Im Kleidungsgeschäft", "fa": "در فروشگاه لباس" },
+  "description": "یاد بگیرید چطور در فروشگاه لباس خرید کنید",
+  "level": "A1",
+  "module": 11,
+  "lessonNumber": 4,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "die Größe", "fa": "سایز", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Größen" } } },
+    { "de": "anprobieren", "fa": "امتحان کردن (لباس)", "grammar": { "pos": "verb" } },
+    { "de": "passen", "fa": "اندازه بودن", "grammar": { "pos": "verb" } },
+    { "de": "kosten", "fa": "قیمت داشتن", "grammar": { "pos": "verb" } },
+    { "de": "kaufen", "fa": "خریدن", "grammar": { "pos": "verb" } },
+    { "de": "teuer", "fa": "گران", "grammar": { "pos": "adjective" } },
+    { "de": "billig", "fa": "ارزان", "grammar": { "pos": "adjective" } },
+    { "de": "die Umkleidekabine", "fa": "اتاق پرو", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Umkleidekabinen" } } },
+    { "de": "zu groß", "fa": "خیلی بزرگ", "grammar": { "pos": "phrase" } },
+    { "de": "zu klein", "fa": "خیلی کوچک", "grammar": { "pos": "phrase" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "خرید لباس (Im Kleidungsgeschäft)",
+      "content": "در این درس یاد می‌گیرید:\n\n🛍️ **عبارات کلیدی:**\n• Welche Größe haben Sie? = چه سایزی دارید؟\n• Kann ich das anprobieren? = می‌توانم امتحان کنم؟\n• Das passt mir (nicht). = اندازه‌ام هست (نیست).\n• Was kostet das? = این چقدر است؟\n\n💡 **سایزها:** S, M, L, XL یا 36, 38, 40...",
+      "examples": [
+        { "de": "Ich suche das in Größe M.", "fa": "این را سایز M می‌خواهم." },
+        { "de": "Das ist zu teuer.", "fa": "این خیلی گران است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "die Größe", "fa": "سایز" },
+      "example": { "text": { "de": "Welche Größe tragen Sie?", "fa": "چه سایزی می‌پوشید؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-groesse",
+      "word": "Größe",
+      "translation": "سایز",
+      "syllables": ["Grö", "ße"],
+      "distractors": ["Gro", "se", "Gra", "ssa"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "anprobieren", "fa": "امتحان کردن (لباس)" },
+      "example": { "text": { "de": "Kann ich das anprobieren?", "fa": "می‌توانم امتحانش کنم؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-anprobieren",
+      "word": "anprobieren",
+      "translation": "امتحان کردن",
+      "syllables": ["an", "pro", "bie", "ren"],
+      "distractors": ["om", "pra", "bai", "rim"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s4",
+      "title": "anprobieren - فعل جداشدنی",
+      "content": "👗 **anprobieren** یک فعل جداشدنی است:\n\n• Ich **probiere** das Kleid **an**.\n• **Probierst** du die Hose **an**?\n• Er **probiert** den Mantel **an**.\n\n📝 در سوال و جمله، **an** به آخر می‌رود.\n\n❓ **Kann ich ... anprobieren?**\nبا فعل کمکی، anprobieren کامل می‌ماند.",
+      "examples": [
+        { "de": "Ich probiere das rote Kleid an.", "fa": "لباس قرمز را امتحان می‌کنم." },
+        { "de": "Kann ich die Jacke anprobieren?", "fa": "می‌توانم ژاکت را امتحان کنم؟" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "passen", "fa": "اندازه بودن" },
+      "example": { "text": { "de": "Das Kleid passt mir gut.", "fa": "لباس اندازه‌ام است." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s6",
+      "title": "passen + Dativ",
+      "content": "👔 **passen** با ضمیر Dativ می‌آید:\n\n• Das passt **mir**. = اندازه من است.\n• Das passt **dir**. = اندازه تو است.\n• Das passt **ihm/ihr**. = اندازه او است.\n\n✅ **Das passt mir gut.** = خوب اندازه‌ام است.\n❌ **Das passt mir nicht.** = اندازه‌ام نیست.",
+      "examples": [
+        { "de": "Die Hose passt mir nicht.", "fa": "شلوار اندازه‌ام نیست." },
+        { "de": "Passt dir das Hemd?", "fa": "پیراهن اندازه‌ات است؟" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«Das passt mir nicht» یعنی چه؟",
+      "options": ["دوستش ندارم", "اندازه‌ام نیست", "خیلی گران است", "رنگش را دوست ندارم"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "passen = اندازه بودن، پس: اندازه‌ام نیست" }
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "zu groß", "fa": "خیلی بزرگ" },
+      "example": { "text": { "de": "Die Jacke ist zu groß.", "fa": "ژاکت خیلی بزرگ است." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "zu klein", "fa": "خیلی کوچک" },
+      "example": { "text": { "de": "Die Schuhe sind zu klein.", "fa": "کفش‌ها خیلی کوچک هستند." } }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das Hemd ist zu {0}. Haben Sie es in L?",
+      "options": ["groß", "klein", "teuer", "billig"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "اگر سایز بزرگ‌تر می‌خواهد، یعنی این خیلی کوچک است: zu klein" }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "سایز و اندازه",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "die Größe", "left": "سایز", "right": "رنگ", "correctSide": "left" },
+        { "prompt": "zu groß", "left": "خیلی کوچک", "right": "خیلی بزرگ", "correctSide": "right" },
+        { "prompt": "zu klein", "left": "خیلی کوچک", "right": "خیلی بزرگ", "correctSide": "left" },
+        { "prompt": "passen", "left": "اندازه بودن", "right": "خریدن", "correctSide": "left" },
+        { "prompt": "anprobieren", "left": "امتحان کردن", "right": "پوشیدن", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "kosten", "fa": "قیمت داشتن" },
+      "example": { "text": { "de": "Was kostet das Kleid?", "fa": "لباس چقدر است؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-kosten",
+      "word": "kosten",
+      "translation": "قیمت داشتن",
+      "syllables": ["kos", "ten"],
+      "distractors": ["kas", "tan", "kus", "tin"]
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": { "de": "teuer", "fa": "گران" },
+      "example": { "text": { "de": "Der Mantel ist sehr teuer.", "fa": "پالتو خیلی گران است." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s11",
+      "word": { "de": "billig", "fa": "ارزان" },
+      "example": { "text": { "de": "Das T-Shirt ist billig.", "fa": "تی‌شرت ارزان است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-billig",
+      "word": "billig",
+      "translation": "ارزان",
+      "syllables": ["bil", "lig"],
+      "distractors": ["bal", "lag", "bel", "log"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s12",
+      "title": "قیمت پرسیدن",
+      "content": "💰 **سه روش برای پرسیدن قیمت:**\n\n1. **Was kostet das?**\n   این چقدر است؟\n\n2. **Wie viel kostet das?**\n   این چقدر قیمت دارد؟\n\n3. **Was macht das?**\n   (در هنگام پرداخت) چقدر می‌شود؟\n\n📝 **پاسخ:**\nDas kostet 50 Euro. = این ۵۰ یورو است.",
+      "examples": [
+        { "de": "Was kostet die blaue Hose?", "fa": "شلوار آبی چقدر است؟" },
+        { "de": "Das kostet 39 Euro.", "fa": "این ۳۹ یورو است." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Was {0} das rote Kleid?",
+      "options": ["kostet", "kosten", "kauft", "passt"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "برای پرسیدن قیمت: Was kostet...?" }
+    },
+    {
+      "type": "new-word",
+      "id": "s13",
+      "word": { "de": "kaufen", "fa": "خریدن" },
+      "example": { "text": { "de": "Ich kaufe das blaue Hemd.", "fa": "پیراهن آبی را می‌خرم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s14",
+      "word": { "de": "die Umkleidekabine", "fa": "اتاق پرو" },
+      "example": { "text": { "de": "Wo ist die Umkleidekabine?", "fa": "اتاق پرو کجاست؟" } }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "خرید لباس",
+      "context": "الی در فروشگاه لباس است",
+      "lines": [
+        { "speaker": "Verkäuferin", "text": { "de": "Guten Tag! Kann ich Ihnen helfen?", "fa": "روز بخیر! می‌توانم کمکتان کنم؟" } },
+        { "speaker": "Eli", "text": { "de": "Ja, ich suche eine Jacke in Größe M.", "fa": "بله، دنبال یک ژاکت سایز M می‌گردم." } },
+        { "speaker": "Verkäuferin", "text": { "de": "Welche Farbe möchten Sie?", "fa": "چه رنگی می‌خواهید؟" } },
+        { "speaker": "Eli", "text": { "de": "Dunkelblau oder Schwarz.", "fa": "آبی تیره یا سیاه." } },
+        { "speaker": "Verkäuferin", "text": { "de": "Hier ist eine schöne dunkelblaue Jacke.", "fa": "اینجا یک ژاکت آبی تیره زیبا است." } },
+        { "speaker": "Eli", "text": { "de": "Kann ich sie anprobieren?", "fa": "می‌توانم امتحانش کنم؟" } },
+        { "speaker": "Verkäuferin", "text": { "de": "Natürlich! Die Umkleidekabine ist dort hinten.", "fa": "البته! اتاق پرو آنجا پشت است." } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "الی چه سایزی می‌خواهد؟", "options": ["S", "M", "L"], "correctIndex": 1 },
+        { "question": "الی چه رنگی می‌خواهد؟", "options": ["قرمز", "آبی تیره یا سیاه", "سبز"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "پرداخت",
+      "context": "الی ژاکت را امتحان کرده",
+      "lines": [
+        { "speaker": "Eli", "text": { "de": "Die Jacke passt mir gut. Was kostet sie?", "fa": "ژاکت اندازه‌ام است. چقدر است؟" } },
+        { "speaker": "Verkäuferin", "text": { "de": "Sie kostet 89 Euro.", "fa": "۸۹ یورو است." } },
+        { "speaker": "Eli", "text": { "de": "Das ist ein bisschen teuer. Haben Sie etwas Billigeres?", "fa": "کمی گران است. چیز ارزان‌تری دارید؟" } },
+        { "speaker": "Verkäuferin", "text": { "de": "Ja, diese hier kostet nur 59 Euro.", "fa": "بله، این فقط ۵۹ یورو است." } },
+        { "speaker": "Eli", "text": { "de": "Perfekt! Die nehme ich.", "fa": "عالی! این را می‌برم." } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "ژاکت اول چقدر است؟", "options": ["۵۹ یورو", "۸۹ یورو", "۹۹ یورو"], "correctIndex": 1 },
+        { "question": "الی کدام ژاکت را می‌خرد؟", "options": ["گران‌تر", "ارزان‌تر", "هیچکدام"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Hose passt {0} nicht. Sie ist zu klein.",
+      "options": ["mich", "mir", "ich", "mein"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "passen با Dativ می‌آید: passt mir" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich {0} die Jacke an.",
+      "options": ["probiere", "probieren", "anprobiere", "probiert"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "anprobieren جداشدنی است: Ich probiere ... an" }
+    },
+    {
+      "type": "word-order",
+      "id": "w1",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["anprobieren?", "ich", "das", "Kann"],
+      "correctOrder": [3, 1, 2, 0],
+      "correctSentence": { "de": "Kann ich das anprobieren?", "fa": "می‌توانم امتحانش کنم؟" }
+    },
+    {
+      "type": "word-order",
+      "id": "w2",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["mir", "Das", "passt", "gut."],
+      "correctOrder": [1, 2, 0, 3],
+      "correctSentence": { "de": "Das passt mir gut.", "fa": "این اندازه‌ام است." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "عبارات را با ترجمه جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Was kostet das?" },
+        { "id": "i2", "text": "Das passt mir nicht." },
+        { "id": "i3", "text": "zu teuer" },
+        { "id": "i4", "text": "anprobieren" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "امتحان کردن" },
+        { "id": "m2", "text": "این چقدر است؟" },
+        { "id": "m3", "text": "خیلی گران" },
+        { "id": "m4", "text": "اندازه‌ام نیست" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m4"],
+        ["i3", "m3"],
+        ["i4", "m1"]
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "برای پرسیدن قیمت چه می‌گوییم؟",
+      "options": ["Wie heißt das?", "Was kostet das?", "Wo ist das?", "Wie geht das?"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "Was kostet das? = این چقدر است؟" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "«Ich probiere das Kleid an» یعنی چه؟",
+      "options": ["لباس را می‌خرم", "لباس را امتحان می‌کنم", "لباس را می‌پوشم", "لباس را دوست دارم"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "anprobieren = امتحان کردن (لباس)" }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "خرید لباس",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "teuer", "left": "گران", "right": "ارزان", "correctSide": "left" },
+        { "prompt": "billig", "left": "گران", "right": "ارزان", "correctSide": "right" },
+        { "prompt": "kaufen", "left": "خریدن", "right": "فروختن", "correctSide": "left" },
+        { "prompt": "kosten", "left": "قیمت داشتن", "right": "خریدن", "correctSide": "left" },
+        { "prompt": "Umkleidekabine", "left": "صندوق", "right": "اتاق پرو", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Kann ich das anprobieren?",
+      "translation": "می‌توانم امتحانش کنم؟",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Das passt mir gut.",
+      "translation": "این اندازه‌ام است.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-3",
+      "targetText": "Was kostet das rote Kleid?",
+      "translation": "لباس قرمز چقدر است؟",
+      "difficulty": "A1"
+    },
+    {
+      "type": "memory-match",
+      "id": "g3",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "die Größe", "fa": "سایز" },
+        { "de": "anprobieren", "fa": "امتحان کردن" },
+        { "de": "passen", "fa": "اندازه بودن" },
+        { "de": "teuer", "fa": "گران" },
+        { "de": "billig", "fa": "ارزان" },
+        { "de": "kaufen", "fa": "خریدن" }
+      ],
+      "timeLimit": 60
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "die Größe", "fa": "سایز" },
+        { "de": "anprobieren", "fa": "امتحان کردن" },
+        { "de": "passen", "fa": "اندازه بودن" },
+        { "de": "kosten", "fa": "قیمت داشتن" },
+        { "de": "kaufen", "fa": "خریدن" },
+        { "de": "teuer", "fa": "گران" },
+        { "de": "billig", "fa": "ارزان" },
+        { "de": "zu groß", "fa": "خیلی بزرگ" },
+        { "de": "zu klein", "fa": "خیلی کوچک" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "تبریک!",
+      "message": "شما ماژول ۱۱ (لباس و رنگ‌ها) را کامل کردید!\n\n🛍️ **خرید لباس:**\n• Welche Größe? = چه سایزی؟\n• Kann ich das anprobieren? = می‌توانم امتحان کنم؟\n• Das passt mir (nicht). = اندازه‌ام هست (نیست).\n• Was kostet das? = چقدر است؟\n\n💰 **قیمت:**\nteuer = گران | billig = ارزان\n\n👔 **یادآوری:**\nzu groß = خیلی بزرگ\nzu klein = خیلی کوچک",
+      "xpEarned": 50,
+      "vocabularyLearned": [
+        { "word": { "de": "die Größe", "fa": "سایز" } },
+        { "word": { "de": "anprobieren", "fa": "امتحان کردن (لباس)" } },
+        { "word": { "de": "passen", "fa": "اندازه بودن" } },
+        { "word": { "de": "kosten", "fa": "قیمت داشتن" } },
+        { "word": { "de": "kaufen", "fa": "خریدن" } },
+        { "word": { "de": "teuer", "fa": "گران" } },
+        { "word": { "de": "billig", "fa": "ارزان" } },
+        { "word": { "de": "die Umkleidekabine", "fa": "اتاق پرو" } },
+        { "word": { "de": "zu groß", "fa": "خیلی بزرگ" } },
+        { "word": { "de": "zu klein", "fa": "خیلی کوچک" } }
+      ]
+    }
+  ]
+}
