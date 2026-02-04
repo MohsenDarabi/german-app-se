@@ -536,6 +536,19 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/A2/A2-M02-L04"
       }
     ]
+  },
+  {
+    id: "module-03",
+    title: "بخش ۳: فعل‌های انعکاسی (Reflexivverben)",
+    level: "A2",
+    lessons: [
+      {
+        id: "A2-M03-L01",
+        title: "sich waschen - خود را شستن",
+        description: "یاد بگیرید فعل‌هایی که با sich می‌آیند و ضمایر انعکاسی.",
+        path: "/learn/de-fa/A2/A2-M03-L01"
+      }
+    ]
   }
 ];
 

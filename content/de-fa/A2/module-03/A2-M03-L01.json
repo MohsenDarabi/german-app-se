@@ -1,0 +1,421 @@
+{
+  "id": "A2-M03-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Reflexivverben - sich waschen", "fa": "فعل‌های انعکاسی - خود را شستن" },
+  "description": "یاد بگیرید فعل‌هایی که با sich می‌آیند",
+  "level": "A2",
+  "module": 3,
+  "lessonNumber": 1,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "sich waschen", "fa": "خود را شستن", "grammar": { "pos": "verb", "reflexive": true } },
+    { "de": "sich anziehen", "fa": "لباس پوشیدن", "grammar": { "pos": "verb", "reflexive": true } },
+    { "de": "sich kämmen", "fa": "شانه زدن", "grammar": { "pos": "verb", "reflexive": true } },
+    { "de": "sich rasieren", "fa": "اصلاح کردن", "grammar": { "pos": "verb", "reflexive": true } },
+    { "de": "sich duschen", "fa": "دوش گرفتن", "grammar": { "pos": "verb", "reflexive": true } },
+    { "de": "sich schminken", "fa": "آرایش کردن", "grammar": { "pos": "verb", "reflexive": true } },
+    { "de": "sich die Zähne putzen", "fa": "مسواک زدن", "grammar": { "pos": "verb", "reflexive": true } },
+    { "de": "sich hinlegen", "fa": "دراز کشیدن", "grammar": { "pos": "verb", "reflexive": true } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "Reflexivverben - فعل‌های انعکاسی",
+      "content": "🪞 **Reflexivverben** فعل‌هایی هستند که با **sich** می‌آیند.\n\n📝 **ضمایر انعکاسی:**\n• ich wasche **mich**\n• du wäschst **dich**\n• er/sie/es wäscht **sich**\n• wir waschen **uns**\n• ihr wascht **euch**\n• sie/Sie waschen **sich**\n\n💡 این فعل‌ها نشان می‌دهند که فاعل کاری را روی خودش انجام می‌دهد.",
+      "examples": [
+        { "de": "Ich wasche mich.", "fa": "خودم را می‌شویم." },
+        { "de": "Er duscht sich.", "fa": "او دوش می‌گیرد." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "sich waschen", "fa": "خود را شستن" },
+      "example": { "text": { "de": "Ich wasche mich jeden Morgen.", "fa": "هر صبح خودم را می‌شویم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "sich duschen", "fa": "دوش گرفتن" },
+      "example": { "text": { "de": "Er duscht sich abends.", "fa": "او شب‌ها دوش می‌گیرد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-waschen",
+      "word": "waschen",
+      "translation": "شستن",
+      "syllables": ["wa", "schen"],
+      "distractors": ["wo", "schan", "we", "schun"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«Ich wasche mich» یعنی چه؟",
+      "options": ["من می‌شویم", "خودم را می‌شویم", "تو را می‌شویم", "او را می‌شویم"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "mich = خودم را (ضمیر انعکاسی)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich wasche {0} jeden Morgen.",
+      "options": ["mich", "dich", "sich", "uns"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "ich → mich" }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "sich anziehen", "fa": "لباس پوشیدن" },
+      "example": { "text": { "de": "Sie zieht sich schnell an.", "fa": "او سریع لباس می‌پوشد." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "sich kämmen", "fa": "شانه زدن" },
+      "example": { "text": { "de": "Er kämmt sich vor dem Spiegel.", "fa": "او جلوی آینه شانه می‌زند." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s6",
+      "title": "ضمایر انعکاسی",
+      "content": "📝 **جدول ضمایر انعکاسی:**\n\n| فاعل | ضمیر انعکاسی |\n|------|---------------|\n| ich | **mich** |\n| du | **dich** |\n| er/sie/es | **sich** |\n| wir | **uns** |\n| ihr | **euch** |\n| sie/Sie | **sich** |\n\n⚠️ توجه: سوم شخص همیشه **sich** است!",
+      "examples": [
+        { "de": "Du wäschst dich.", "fa": "تو خودت را می‌شویی." },
+        { "de": "Wir ziehen uns an.", "fa": "ما لباس می‌پوشیم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "sich rasieren", "fa": "اصلاح کردن" },
+      "example": { "text": { "de": "Mein Vater rasiert sich jeden Tag.", "fa": "پدرم هر روز اصلاح می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-duschen",
+      "word": "duschen",
+      "translation": "دوش گرفتن",
+      "syllables": ["du", "schen"],
+      "distractors": ["da", "schan", "do", "schun"]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "ضمیر انعکاسی",
+      "instruction": "ضمیر درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "ich wasche ...", "left": "mich", "right": "sich", "correctSide": "left" },
+        { "prompt": "du wäschst ...", "left": "mich", "right": "dich", "correctSide": "right" },
+        { "prompt": "er wäscht ...", "left": "sich", "right": "dich", "correctSide": "left" },
+        { "prompt": "wir waschen ...", "left": "euch", "right": "uns", "correctSide": "right" },
+        { "prompt": "sie waschen ...", "left": "sich", "right": "uns", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "sich schminken", "fa": "آرایش کردن" },
+      "example": { "text": { "de": "Sie schminkt sich für die Party.", "fa": "او برای مهمانی آرایش می‌کند." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "sich die Zähne putzen", "fa": "مسواک زدن" },
+      "example": { "text": { "de": "Ich putze mir die Zähne.", "fa": "مسواک می‌زنم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": { "de": "sich hinlegen", "fa": "دراز کشیدن" },
+      "example": { "text": { "de": "Ich lege mich aufs Sofa.", "fa": "روی مبل دراز می‌کشم." } }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "روتین صبح",
+      "context": "الی روتین صبحش را توضیح می‌دهد",
+      "lines": [
+        { "speaker": "Tom", "text": { "de": "Was machst du morgens?", "fa": "صبح‌ها چه کار می‌کنی؟" } },
+        { "speaker": "Eli", "text": { "de": "Zuerst dusche ich mich.", "fa": "اول دوش می‌گیرم." } },
+        { "speaker": "Tom", "text": { "de": "Und dann?", "fa": "و بعد؟" } },
+        { "speaker": "Eli", "text": { "de": "Dann ziehe ich mich an und kämme mich.", "fa": "بعد لباس می‌پوشم و شانه می‌زنم." } },
+        { "speaker": "Tom", "text": { "de": "Schminkst du dich auch?", "fa": "آرایش هم می‌کنی؟" } },
+        { "speaker": "Eli", "text": { "de": "Ja, ein bisschen. Und ich putze mir die Zähne.", "fa": "بله، کمی. و مسواک می‌زنم." } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "الی اول چه کار می‌کند؟", "options": ["لباس می‌پوشد", "دوش می‌گیرد", "آرایش می‌کند"], "correctIndex": 1 },
+        { "question": "الی آرایش می‌کند؟", "options": ["نه", "بله، کمی", "خیلی"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er duscht {0} jeden Abend.",
+      "options": ["sich", "mich", "dich", "uns"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "er → sich" }
+    },
+    {
+      "type": "word-order",
+      "id": "w1",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["mich.", "wasche", "Morgen", "Ich", "jeden"],
+      "correctOrder": [3, 1, 0, 4, 2],
+      "correctSentence": { "de": "Ich wasche mich jeden Morgen.", "fa": "هر صبح خودم را می‌شویم." }
+    },
+    {
+      "type": "word-order",
+      "id": "w2",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["an.", "schnell", "sich", "zieht", "Sie"],
+      "correctOrder": [4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Sie zieht sich schnell an.", "fa": "او سریع لباس می‌پوشد." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "فاعل را با ضمیر انعکاسی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "ich" },
+        { "id": "i2", "text": "du" },
+        { "id": "i3", "text": "er/sie" },
+        { "id": "i4", "text": "wir" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "dich" },
+        { "id": "m2", "text": "mich" },
+        { "id": "m3", "text": "uns" },
+        { "id": "m4", "text": "sich" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m1"],
+        ["i3", "m4"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-anziehen",
+      "word": "anziehen",
+      "translation": "پوشیدن",
+      "syllables": ["an", "zie", "hen"],
+      "distractors": ["on", "za", "hin", "un"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "ضمیر انعکاسی برای «wir» چیست؟",
+      "options": ["mich", "euch", "uns", "sich"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین!", "incorrect": "wir → uns" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Wir ziehen {0} warm an.",
+      "options": ["uns", "mich", "sich", "euch"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "wir → uns" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "قبل از خواب",
+      "context": "مادر با بچه‌ها صحبت می‌کند",
+      "lines": [
+        { "speaker": "Mutter", "text": { "de": "Kinder, habt ihr euch die Zähne geputzt?", "fa": "بچه‌ها، مسواک زدید؟" } },
+        { "speaker": "Tim", "text": { "de": "Ja, Mama! Ich habe mich auch gewaschen.", "fa": "بله، مامان! خودم را هم شستم." } },
+        { "speaker": "Mutter", "text": { "de": "Sehr gut! Und Lisa?", "fa": "خیلی خوب! و لیزا؟" } },
+        { "speaker": "Lisa", "text": { "de": "Ich ziehe mich gerade um.", "fa": "دارم لباسم را عوض می‌کنم." } },
+        { "speaker": "Mutter", "text": { "de": "Gut. Dann legt euch hin!", "fa": "خوب. پس دراز بکشید!" } },
+        { "speaker": "Kinder", "text": { "de": "Gute Nacht, Mama!", "fa": "شب بخیر، مامان!" } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "تیم چه کار کرده؟", "options": ["فقط مسواک زده", "خودش را شسته", "هیچ کدام"], "correctIndex": 1 },
+        { "question": "لیزا چه کار می‌کند؟", "options": ["می‌خوابد", "لباس عوض می‌کند", "مسواک می‌زند"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "فعل‌های انعکاسی",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "sich waschen", "left": "شستن", "right": "خود را شستن", "correctSide": "right" },
+        { "prompt": "sich duschen", "left": "دوش گرفتن", "right": "دوش دادن", "correctSide": "left" },
+        { "prompt": "sich anziehen", "left": "لباس درآوردن", "right": "لباس پوشیدن", "correctSide": "right" },
+        { "prompt": "sich kämmen", "left": "شانه زدن", "right": "موها را بریدن", "correctSide": "left" },
+        { "prompt": "sich rasieren", "left": "حمام کردن", "right": "اصلاح کردن", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Du musst {0} die Zähne putzen.",
+      "options": ["dir", "dich", "sich", "mir"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "sich die Zähne putzen با Dativ می‌آید: du → dir" }
+    },
+    {
+      "type": "word-order",
+      "id": "w3",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["sich.", "rasiert", "Tag", "jeden", "Er"],
+      "correctOrder": [4, 1, 0, 3, 2],
+      "correctSentence": { "de": "Er rasiert sich jeden Tag.", "fa": "او هر روز اصلاح می‌کند." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "«Sie schminkt sich» یعنی چه؟",
+      "options": ["او را آرایش می‌کند", "او آرایش می‌کند", "من آرایش می‌کنم", "آرایش کن"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "sich schminken = (خودش را) آرایش کردن" }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-kaemmen",
+      "word": "kämmen",
+      "translation": "شانه زدن",
+      "syllables": ["käm", "men"],
+      "distractors": ["kam", "man", "kom", "mun"]
+    },
+    {
+      "type": "matching",
+      "id": "m2",
+      "instruction": "فعل‌ها را با ترجمه جفت کنید",
+      "items": [
+        { "id": "i1", "text": "sich waschen" },
+        { "id": "i2", "text": "sich anziehen" },
+        { "id": "i3", "text": "sich hinlegen" },
+        { "id": "i4", "text": "sich schminken" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "لباس پوشیدن" },
+        { "id": "m2", "text": "خود را شستن" },
+        { "id": "m3", "text": "آرایش کردن" },
+        { "id": "m4", "text": "دراز کشیدن" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m1"],
+        ["i3", "m4"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ihr müsst {0} beeilen!",
+      "options": ["euch", "uns", "sich", "mich"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "ihr → euch" }
+    },
+    {
+      "type": "word-order",
+      "id": "w4",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["hin.", "Sofa", "aufs", "lege", "mich", "Ich"],
+      "correctOrder": [5, 3, 4, 2, 1, 0],
+      "correctSentence": { "de": "Ich lege mich aufs Sofa hin.", "fa": "روی مبل دراز می‌کشم." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "کدام جمله درست است؟",
+      "options": ["Ich wasche sich.", "Ich wasche mich.", "Ich wasche dich.", "Ich mich wasche."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "ich → mich" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sie kämmt {0} vor dem Spiegel.",
+      "options": ["sich", "mich", "dich", "uns"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "sie (او) → sich" }
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Ich wasche mich jeden Morgen.",
+      "translation": "هر صبح خودم را می‌شویم.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Er duscht sich abends.",
+      "translation": "او شب‌ها دوش می‌گیرد.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-3",
+      "targetText": "Wir ziehen uns warm an.",
+      "translation": "ما گرم لباس می‌پوشیم.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "memory-match",
+      "id": "g3",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "sich waschen", "fa": "خود را شستن" },
+        { "de": "sich duschen", "fa": "دوش گرفتن" },
+        { "de": "sich anziehen", "fa": "لباس پوشیدن" },
+        { "de": "sich kämmen", "fa": "شانه زدن" },
+        { "de": "sich rasieren", "fa": "اصلاح کردن" },
+        { "de": "sich schminken", "fa": "آرایش کردن" }
+      ],
+      "timeLimit": 60
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "sich waschen", "fa": "خود را شستن" },
+        { "de": "sich anziehen", "fa": "لباس پوشیدن" },
+        { "de": "sich kämmen", "fa": "شانه زدن" },
+        { "de": "sich rasieren", "fa": "اصلاح کردن" },
+        { "de": "sich duschen", "fa": "دوش گرفتن" },
+        { "de": "sich schminken", "fa": "آرایش کردن" },
+        { "de": "sich die Zähne putzen", "fa": "مسواک زدن" },
+        { "de": "sich hinlegen", "fa": "دراز کشیدن" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما فعل‌های انعکاسی را یاد گرفتید!\n\n📝 **ضمایر انعکاسی:**\n• ich → **mich**\n• du → **dich**\n• er/sie/es → **sich**\n• wir → **uns**\n• ihr → **euch**\n• sie/Sie → **sich**\n\n🪞 **فعل‌های انعکاسی مهم:**\n• sich waschen = خود را شستن\n• sich duschen = دوش گرفتن\n• sich anziehen = لباس پوشیدن\n• sich kämmen = شانه زدن",
+      "xpEarned": 50,
+      "vocabularyLearned": [
+        { "word": { "de": "sich waschen", "fa": "خود را شستن" } },
+        { "word": { "de": "sich anziehen", "fa": "لباس پوشیدن" } },
+        { "word": { "de": "sich kämmen", "fa": "شانه زدن" } },
+        { "word": { "de": "sich rasieren", "fa": "اصلاح کردن" } },
+        { "word": { "de": "sich duschen", "fa": "دوش گرفتن" } },
+        { "word": { "de": "sich schminken", "fa": "آرایش کردن" } },
+        { "word": { "de": "sich die Zähne putzen", "fa": "مسواک زدن" } },
+        { "word": { "de": "sich hinlegen", "fa": "دراز کشیدن" } }
+      ]
+    }
+  ]
+}
