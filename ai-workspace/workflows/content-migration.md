@@ -83,6 +83,24 @@ Based on **Miller's Chunking Theory**:
 
 **⚠️ DISTRACTORS ARE REQUIRED for all syllable-spelling exercises!**
 
+### ⚠️ CRITICAL: No Ambiguous Distractors
+
+**Distractors must NOT be substrings of correct syllables!**
+
+The validation script (`validate-lesson.js`) will reject:
+- Distractor that is a **substring** of a correct syllable
+- Distractor that **contains** a correct syllable
+
+| ❌ WRONG | Why | ✅ CORRECT |
+|----------|-----|-----------|
+| syllables: `["ie"]`, distractor: `"i"` | "i" is substring of "ie" | Use `"a"` or `"o"` instead |
+| syllables: `["ei"]`, distractor: `"i"` | "i" is substring of "ei" | Use `"o"` or `"u"` instead |
+| syllables: `["chen"]`, distractor: `"en"` | "en" is substring of "chen" | Use `"te"` or `"on"` instead |
+| syllables: `["sch"]`, distractor: `"ch"` | "ch" is substring of "sch" | Use `"tz"` or `"pf"` instead |
+| syllables: `["tsch"]`, distractor: `"sch"` | "sch" is substring of "tsch" | Use `"tc"` or `"st"` instead |
+
+**Why?** If a distractor is a prefix/substring of a correct syllable, the user could select the distractor PLUS another syllable to form the correct answer, making the exercise solvable incorrectly.
+
 ```
 new-word (introduce "Guten Morgen")
     ↓
@@ -1043,6 +1061,8 @@ When mixing Persian and German text:
 □ Task 1: Syllable-Spelling
   □ Every new-word has syllable-spelling immediately after
   □ Syllables correctly broken using German rules
+  □ Distractors included (REQUIRED)
+  □ No ambiguous distractors (no substrings of syllables!)
   □ Hint includes Persian count (۲ بخش) and meaning
 
 □ Task 2: Vocabulary Grammar

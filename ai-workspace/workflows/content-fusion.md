@@ -277,9 +277,22 @@ content/de-fa/{Level}/module-{NN}/{LessonID}.json
   "id": "syllable-1",
   "word": { "de": "Guten Morgen", "fa": "صبح بخیر" },
   "syllables": ["Gu", "ten", "Mor", "gen"],
+  "distractors": ["Go", "tan", "Mar", "gan"],
   "hint": "۴ بخش - سلام صبحگاهی"
 }
 ```
+
+**⚠️ CRITICAL: No Ambiguous Distractors!**
+
+Distractors must NOT be substrings of correct syllables:
+
+| ❌ WRONG | Why | ✅ CORRECT |
+|----------|-----|-----------|
+| syllables: `["ie"]`, distractor: `"i"` | "i" is substring of "ie" | Use `"a"` or `"o"` |
+| syllables: `["ei"]`, distractor: `"i"` | "i" is substring of "ei" | Use `"o"` or `"u"` |
+| syllables: `["chen"]`, distractor: `"en"` | "en" is substring of "chen" | Use `"te"` or `"on"` |
+
+The validation script (`validate-lesson.js`) automatically catches these issues.
 
 **Syllable Breaking Rules:**
 | Pattern | Example | Syllables |
@@ -610,6 +623,7 @@ git commit -m "feat: add lesson A1-M01-L02 with audio"
 ### New Features (REQUIRED)
 - [ ] **Vocabulary has grammar metadata** (pos, artikel for nouns, conjugation for verbs)
 - [ ] **Syllable-spelling after EVERY new-word step**
+- [ ] **Syllable-spelling distractors included** (no substrings of syllables!)
 - [ ] **All dialogs have 1-3 comprehension questions**
 - [ ] **All exercises have feedbackTip** with onCorrect/onWrong + errorCategory
 - [ ] **1-2 dictation steps** added

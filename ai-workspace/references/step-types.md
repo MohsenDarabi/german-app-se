@@ -369,6 +369,19 @@ Scaffolded spelling with syllable hints - reduces cognitive load. **REQUIRED** f
 - Include common misspellings: `"se"` vs correct `"sie"`
 - For compound words, use partial syllables: `"zehn"` → `"zeh"`, `"ehn"`
 
+**⚠️ CRITICAL: No Ambiguous Distractors!**
+
+Distractors must NOT be substrings of correct syllables (and vice versa):
+
+| ❌ WRONG | Why | ✅ CORRECT |
+|----------|-----|-----------|
+| syllables: `["ie"]`, distractor: `"i"` | "i" is substring of "ie" | Use `"a"` or `"o"` |
+| syllables: `["ei"]`, distractor: `"i"` | "i" is substring of "ei" | Use `"o"` or `"u"` |
+| syllables: `["chen"]`, distractor: `"en"` | "en" is substring of "chen" | Use `"te"` or `"on"` |
+| syllables: `["sch"]`, distractor: `"ch"` | "ch" is substring of "sch" | Use `"tz"` or `"pf"` |
+
+The validation script (`validate-lesson.js`) automatically catches these issues.
+
 **Audio Integration:**
 - Audio is automatically generated via `generate-audio.js`
 - Uses audioId pattern: `{step.id}-word` (e.g., `syllable-1-word`)
