@@ -259,7 +259,7 @@ export async function init(languagePair: string = 'de-fa'): Promise<void> {
 /**
  * Module folders to search for lessons (for local fallback)
  */
-const MODULE_FOLDERS = ['module-01', 'module-02', 'module-03', 'module-04', 'module-05', 'module-06', 'module-07', 'module-08', 'module-09', 'module-10', 'module-11', 'module-12'];
+const MODULE_FOLDERS = ['module-01', 'module-02', 'module-03', 'module-04', 'module-05', 'module-06', 'module-07', 'module-08', 'module-09', 'module-10', 'module-11', 'module-12', 'module-13', 'module-14', 'module-15'];
 
 /**
  * Load a lesson from CDN (with local fallback)
