@@ -545,6 +545,63 @@ curl -s "https://pub-a0290b06f1ea45d5b65ac647cc69df34.r2.dev/de-fa/content/A1/le
 
 ---
 
+### Issue: Lesson 404 Despite File Existing (Feb 2026)
+
+**Symptom:** Clicking a lesson in the app shows `{"message": "Lesson not found: A1-M02-L02"}` even though the JSON file exists and `validate-lesson.js` passes.
+
+**Root Cause:** `validate-lesson.js` does NOT catch all Zod schema errors!
+
+The lesson validator checks content rules (30 rules) but doesn't validate against the full Zod schema in `packages/content-model/src/index.ts`. When `LessonSchema.parse()` fails in `contentService.ts`, the error is caught and the lesson appears "not found".
+
+**Common Schema Errors (not caught by validate-lesson.js):**
+
+| Error Type | Wrong | Correct |
+|------------|-------|---------|
+| **Vocabulary format** | `"word": "Hallo"` | `"de": "Hallo"` |
+| **Vocabulary format** | `"translation": "سلام"` | `"fa": "سلام"` |
+| **errorCategory** | `"verb-conjugation"` | `"wrong-conjugation"` |
+| **errorCategory** | `"stem-change"` | `"wrong-conjugation"` |
+| **errorCategory** | `"grammar"` | Use specific: `"word-order"`, etc. |
+| **POS value** | `"pos": "article"` | `"pos": "particle"` |
+| **Conjugation key** | `"er/sie/es": "kommt"` | `"er_sie_es": "kommt"` |
+| **Conjugation field** | `"conjugation": {...}` | `"praesens": {...}` |
+| **Missing verb field** | (no infinitiv) | `"infinitiv": "kommen"` |
+
+**How to Debug:**
+
+1. Run Zod validation directly (catches what validate-lesson.js misses):
+   ```bash
+   node --experimental-strip-types -e "
+   import { LessonSchema } from './packages/content-model/src/index.ts';
+   import fs from 'fs';
+   const json = JSON.parse(fs.readFileSync('content/de-fa/A1/module-02/A1-M02-L02.json', 'utf8'));
+   try { LessonSchema.parse(json); console.log('✅ OK'); }
+   catch (e) { console.log('❌ Errors:', JSON.stringify(e.errors, null, 2)); }
+   "
+   ```
+
+2. Check browser console for the actual error:
+   ```
+   ContentService: Error loading /content/.../lesson.json: [{"code":"invalid_enum_value"...}]
+   ```
+
+**Valid errorCategory values (ONLY these 10):**
+```
+wrong-article | wrong-conjugation | wrong-case | word-order |
+spelling | vocabulary | comprehension | plural-form |
+negation | gender-agreement
+```
+
+**Valid POS values (ONLY these 10):**
+```
+noun | verb | adjective | adverb | preposition |
+pronoun | conjunction | interjection | phrase | particle
+```
+
+**Files Fixed:** Module-02 (L01-L05), Module-04 (L02)
+
+---
+
 ## Contributing
 
 Found a new debugging scenario? Add it here:
