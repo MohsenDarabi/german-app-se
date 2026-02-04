@@ -8,7 +8,7 @@
  * - Version checking for content updates
  */
 
-import { browser } from '$app/environment';
+import { browser, dev } from '$app/environment';
 import { writable, get } from 'svelte/store';
 import { PUBLIC_R2_URL } from '$env/static/public';
 import { LessonSchema, type Lesson } from '@pkg/content-model';
@@ -286,7 +286,27 @@ export async function loadLesson(lessonId: string): Promise<Lesson> {
   // Determine lesson level from ID (e.g., "A1-M01-L01" -> "A1")
   const level = lessonId.split('-')[0];
 
-  // Try CDN first if enabled
+  // In dev mode, try local content FIRST (to test changes before CDN upload)
+  if (dev) {
+    for (const moduleFolder of MODULE_FOLDERS) {
+      const url = `/content/${languagePair}/${level}/${moduleFolder}/${lessonId}.json`;
+      try {
+        const response = await fetch(url);
+        if (response.ok) {
+          const json = await response.json();
+          const lesson = LessonSchema.parse(json);
+          lessonCache.set(cacheKey, lesson);
+          console.log(`ContentService: Loaded ${lessonId} from LOCAL (dev mode)`);
+          return lesson;
+        }
+      } catch {
+        continue;
+      }
+    }
+    console.log(`ContentService: Local not found for ${lessonId}, trying CDN...`);
+  }
+
+  // Try CDN if enabled (production or local fallback failed)
   if (currentState.cdnEnabled && CDN_BASE) {
     try {
       const url = `${CDN_BASE}/${languagePair}/content/${level}/lessons/${lessonId}.json`;
@@ -307,7 +327,7 @@ export async function loadLesson(lessonId: string): Promise<Lesson> {
     }
   }
 
-  // Fall back to local content
+  // Fall back to local content (production only - dev already tried above)
   for (const moduleFolder of MODULE_FOLDERS) {
     const url = `/content/${languagePair}/${level}/${moduleFolder}/${lessonId}.json`;
 

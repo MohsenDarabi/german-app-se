@@ -506,35 +506,56 @@ Designer workflow is documented in `workflows/multimedia-tasks.md`
 
 ---
 
-## Step 10: Upload to Cloud (R2 CDN)
+## Step 10: Test Locally
 
-**IMPORTANT**: After generating audio and testing locally, upload content to cloud storage.
+**Dev mode automatically loads LOCAL content** (not CDN), so you can test immediately:
 
-### 10.1 Upload Lesson Content to R2
+```bash
+pnpm run dev
+# Navigate to http://localhost:5173/learn/de-fa/A1/A1-M01-L02
+# Console shows: "ContentService: Loaded A1-M01-L02 from LOCAL (dev mode)"
+```
+
+> **Note**: Local content is served via symlink: `apps/web/static/content -> content/`
+> If symlink is missing: `ln -sfn "$(pwd)/content" apps/web/static/content`
+
+---
+
+## Step 11: Upload to Cloud (R2 CDN)
+
+**IMPORTANT**: After testing locally, upload content to cloud storage for production.
+
+### 11.1 Upload Lesson Content to R2
 ```bash
 # Preview what will be uploaded
 node scripts/upload-content-to-r2.js --dry-run
 
 # Actually upload lessons
 node scripts/upload-content-to-r2.js
+
+# Flags:
+# --force    Re-upload all (ignore existing)
+# --lang=de-fa  Upload specific language pair only
 ```
 
-### 10.2 Upload Audio to R2
+### 11.2 Upload Audio to R2
 ```bash
 # Upload audio files (uses hash-based deduplication)
 node scripts/upload-to-r2.js --dry-run
 node scripts/upload-to-r2.js
 ```
 
-### 10.3 Verify Upload
+### 11.3 Verify Upload
 - Content URL: `https://pub-[id].r2.dev/de-fa/content/index.json`
 - Audio served from: `https://pub-[id].r2.dev/de-fa/audio/by-hash/`
 
-**Note**: Production app loads from CDN. Local dev server uses `apps/web/static/audio/` fallback.
+**Production vs Dev:**
+- **Dev mode**: Loads LOCAL content first (from `apps/web/static/content/`)
+- **Production**: Loads from CDN, falls back to local if CDN fails
 
 ---
 
-## Step 11: Update Progress & Commit
+## Step 12: Update Progress & Commit
 
 ```bash
 # 1. Update CURRENT_TASK.md (mark as completed)

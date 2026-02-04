@@ -1069,35 +1069,63 @@ pnpm run check
 
 ## After Migration
 
-### Generate Audio
+### 1. Validate Lesson (REQUIRED)
+
+```bash
+node scripts/validate-lesson.js content/de-fa/A1/module-XX/A1-MXX-LXX.json
+```
+
+### 2. Generate Audio (SKIP DURING BATCH MIGRATION)
 
 > **⏸️ SKIP FOR NOW**: Audio generation is paused during batch migration.
 > After all lessons are migrated, audio will be generated in bulk.
-> Just validate the lesson and commit.
 
 ```bash
-# SKIP THIS STEP DURING MIGRATION
-# cd /Volumes/External_ssd_mohsen/WorkspaceExtern/german-learning-app-main
+# Run this ONLY after batch migration is complete:
 # GOOGLE_APPLICATION_CREDENTIALS="./scripts/keys/gcp-tts-service-account.json" \
 #   node scripts/generate-audio.js --lesson=A1-M01-L03
 ```
 
-### Test in Browser
+### 3. Test Locally
+
+Dev mode automatically loads LOCAL content (not CDN), so you can test immediately:
 
 ```bash
 pnpm run dev
 # Navigate to http://localhost:5173/learn/de-fa/A1/A1-M01-L03
+# Console will show: "ContentService: Loaded A1-M01-L03 from LOCAL (dev mode)"
 ```
 
-### Upload to Cloud (R2)
+> **Note**: Local content is served via symlink: `apps/web/static/content -> content/`
+> If symlink is missing, create it: `ln -sfn "$(pwd)/content" apps/web/static/content`
+
+### 4. Commit Changes
 
 ```bash
-# Upload lesson content
+git add content/de-fa/...
+git commit -m "feat(content): migrate A1-MXX-LXX with all migration tasks"
+```
+
+### 5. Upload to Cloud (R2) - AFTER BATCH COMPLETE
+
+> **⚠️ UPLOAD ONLY AFTER ALL BATCH MIGRATIONS ARE DONE**
+> This uploads content to CDN for production use.
+
+```bash
+# Upload lesson content to CDN
 node scripts/upload-content-to-r2.js
 
-# Upload audio
+# Upload audio files to CDN (after audio generation)
 node scripts/upload-to-r2.js
+
+# Verify upload
+node scripts/upload-content-to-r2.js --dry-run
 ```
+
+**Flags:**
+- `--dry-run` - Preview what would upload without actually uploading
+- `--force` - Re-upload all files (ignore existing)
+- `--lang=de-fa` - Upload specific language pair only
 
 ---
 
