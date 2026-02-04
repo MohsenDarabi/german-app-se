@@ -1108,9 +1108,6 @@ pnpm run typecheck
 pnpm run check
 ```
 
-⚠️ **IMPORTANT**: `validate-lesson.js` does NOT catch all schema errors!
-Always run the Zod validation (step 3) before considering a migration complete.
-
 ---
 
 ## After Migration
@@ -1120,6 +1117,11 @@ Always run the Zod validation (step 3) before considering a migration complete.
 ```bash
 node scripts/validate-lesson.js content/de-fa/A1/module-XX/A1-MXX-LXX.json
 ```
+
+✅ This now includes **Zod schema validation** as Rule #0, catching:
+- Invalid `errorCategory` values (e.g., `verb-conjugation` → `wrong-conjugation`)
+- Wrong vocabulary format (e.g., `word`/`translation` → `de`/`fa`)
+- Missing required fields, invalid enums, etc.
 
 ### 2. Generate Audio (SKIP DURING BATCH MIGRATION)
 
