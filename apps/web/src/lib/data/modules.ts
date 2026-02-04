@@ -396,6 +396,19 @@ const DE_FA_A1_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/A1/A1-M11-L04"
       }
     ]
+  },
+  {
+    id: "module-12",
+    title: "بخش ۱۲: فعل‌های جداشدنی (Trennbare Verben)",
+    level: "A1",
+    lessons: [
+      {
+        id: "A1-M12-L01",
+        title: "فعل‌های جداشدنی (Trennbare Verben)",
+        description: "یاد بگیرید چطور فعل‌های جداشدنی آلمانی کار می‌کنند.",
+        path: "/learn/de-fa/A1/A1-M12-L01"
+      }
+    ]
   }
 ];
 

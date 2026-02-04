@@ -1,0 +1,399 @@
+{
+  "id": "A1-M12-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Trennbare Verben", "fa": "فعل‌های جداشدنی" },
+  "description": "یاد بگیرید چطور فعل‌های جداشدنی آلمانی کار می‌کنند",
+  "level": "A1",
+  "module": 12,
+  "lessonNumber": 1,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "aufstehen", "fa": "بلند شدن", "grammar": { "pos": "verb" } },
+    { "de": "ankommen", "fa": "رسیدن", "grammar": { "pos": "verb" } },
+    { "de": "abfahren", "fa": "حرکت کردن", "grammar": { "pos": "verb" } },
+    { "de": "einsteigen", "fa": "سوار شدن", "grammar": { "pos": "verb" } },
+    { "de": "aussteigen", "fa": "پیاده شدن", "grammar": { "pos": "verb" } },
+    { "de": "mitkommen", "fa": "همراه آمدن", "grammar": { "pos": "verb" } },
+    { "de": "zurückkommen", "fa": "برگشتن", "grammar": { "pos": "verb" } },
+    { "de": "der Zug", "fa": "قطار", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "Züge" } } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "فعل‌های جداشدنی (Trennbare Verben)",
+      "content": "در آلمانی بعضی فعل‌ها از دو بخش تشکیل شده‌اند:\n\n🔗 **پیشوند + فعل اصلی**\n• **auf** + stehen = aufstehen (بلند شدن)\n• **an** + kommen = ankommen (رسیدن)\n• **ab** + fahren = abfahren (حرکت کردن)\n\n⚠️ در جمله، پیشوند به **آخر** می‌رود:\n• Ich **stehe** um 7 Uhr **auf**.\n• Der Zug **kommt** um 10 Uhr **an**.",
+      "examples": [
+        { "de": "Ich stehe früh auf.", "fa": "من زود بلند می‌شوم." },
+        { "de": "Wann kommst du an?", "fa": "کی می‌رسی؟" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "aufstehen", "fa": "بلند شدن" },
+      "example": { "text": { "de": "Ich stehe um sieben Uhr auf.", "fa": "ساعت هفت بلند می‌شوم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-aufstehen",
+      "word": "aufstehen",
+      "translation": "بلند شدن",
+      "syllables": ["auf", "ste", "hen"],
+      "distractors": ["auf", "sta", "han", "ste"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s3",
+      "title": "aufstehen - صرف فعل",
+      "content": "🛏️ **aufstehen** = بلند شدن (از خواب/صندلی)\n\n| ضمیر | صرف |\n|------|------|\n| ich | stehe ... auf |\n| du | stehst ... auf |\n| er/sie/es | steht ... auf |\n| wir | stehen ... auf |\n| ihr | steht ... auf |\n| sie/Sie | stehen ... auf |\n\n📝 پیشوند **auf** همیشه به آخر جمله می‌رود!",
+      "examples": [
+        { "de": "Wann stehst du auf?", "fa": "کی بلند می‌شوی؟" },
+        { "de": "Er steht spät auf.", "fa": "او دیر بلند می‌شود." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«Ich stehe um 6 Uhr auf» یعنی چه؟",
+      "options": ["ساعت ۶ می‌خوابم", "ساعت ۶ بلند می‌شوم", "ساعت ۶ می‌رسم", "ساعت ۶ حرکت می‌کنم"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "aufstehen = بلند شدن" }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "ankommen", "fa": "رسیدن" },
+      "example": { "text": { "de": "Der Zug kommt um 10 Uhr an.", "fa": "قطار ساعت ۱۰ می‌رسد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-ankommen",
+      "word": "ankommen",
+      "translation": "رسیدن",
+      "syllables": ["an", "kom", "men"],
+      "distractors": ["un", "kam", "mun", "kon"]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "abfahren", "fa": "حرکت کردن" },
+      "example": { "text": { "de": "Der Bus fährt um 8 Uhr ab.", "fa": "اتوبوس ساعت ۸ حرکت می‌کند." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s6",
+      "title": "abfahren - فعل بی‌قاعده جداشدنی",
+      "content": "🚌 **abfahren** = حرکت کردن (وسیله نقلیه)\n\n⚠️ **fahren** یک فعل بی‌قاعده است:\n• ich **fahre** ... ab\n• du **fährst** ... ab (با تغییر ä)\n• er/sie **fährt** ... ab\n\n📝 هم پیشوند جدا می‌شود، هم ریشه تغییر می‌کند!",
+      "examples": [
+        { "de": "Wann fährt der Zug ab?", "fa": "قطار کی حرکت می‌کند؟" },
+        { "de": "Ich fahre morgen ab.", "fa": "فردا حرکت می‌کنم." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Der Zug {0} um 9 Uhr ab.",
+      "options": ["fährt", "fahrt", "fahren", "fährst"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "der Zug سوم شخص مفرد است: fährt ... ab" }
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "der Zug", "fa": "قطار" },
+      "example": { "text": { "de": "Der Zug nach Berlin fährt ab.", "fa": "قطار به برلین حرکت می‌کند." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "einsteigen", "fa": "سوار شدن" },
+      "example": { "text": { "de": "Bitte einsteigen!", "fa": "لطفاً سوار شوید!" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-einsteigen",
+      "word": "einsteigen",
+      "translation": "سوار شدن",
+      "syllables": ["ein", "stei", "gen"],
+      "distractors": ["ain", "stau", "gan", "gon"]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "aussteigen", "fa": "پیاده شدن" },
+      "example": { "text": { "de": "Ich steige am Hauptbahnhof aus.", "fa": "در ایستگاه اصلی پیاده می‌شوم." } }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "فعل‌های جداشدنی",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "aufstehen", "left": "بلند شدن", "right": "نشستن", "correctSide": "left" },
+        { "prompt": "ankommen", "left": "حرکت کردن", "right": "رسیدن", "correctSide": "right" },
+        { "prompt": "abfahren", "left": "حرکت کردن", "right": "رسیدن", "correctSide": "left" },
+        { "prompt": "einsteigen", "left": "پیاده شدن", "right": "سوار شدن", "correctSide": "right" },
+        { "prompt": "aussteigen", "left": "پیاده شدن", "right": "سوار شدن", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s10",
+      "title": "پیشوندهای جداشدنی",
+      "content": "🔤 **پیشوندهای رایج جداشدنی:**\n\n| پیشوند | معنی | مثال |\n|--------|------|------|\n| **auf** | بالا/باز | aufstehen, aufmachen |\n| **an** | به/روشن | ankommen, anrufen |\n| **ab** | از/دور | abfahren, abholen |\n| **ein** | داخل | einsteigen, einkaufen |\n| **aus** | بیرون | aussteigen, ausgehen |\n| **mit** | همراه | mitkommen, mitbringen |\n| **zurück** | برگشت | zurückkommen |",
+      "examples": [
+        { "de": "Kommst du mit?", "fa": "همراه می‌آیی؟" },
+        { "de": "Wann kommst du zurück?", "fa": "کی برمی‌گردی؟" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s11",
+      "word": { "de": "mitkommen", "fa": "همراه آمدن" },
+      "example": { "text": { "de": "Kommst du mit?", "fa": "همراه می‌آیی؟" } }
+    },
+    {
+      "type": "new-word",
+      "id": "s12",
+      "word": { "de": "zurückkommen", "fa": "برگشتن" },
+      "example": { "text": { "de": "Ich komme um 5 Uhr zurück.", "fa": "ساعت ۵ برمی‌گردم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-zurueck",
+      "word": "zurückkommen",
+      "translation": "برگشتن",
+      "syllables": ["zu", "rück", "kom", "men"],
+      "distractors": ["za", "ruck", "kam", "mun"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Wann kommst du {0}?",
+      "options": ["zurück", "mit", "an", "auf"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "zurückkommen = برگشتن → Wann kommst du zurück?" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در ایستگاه قطار",
+      "context": "الی و تام در ایستگاه قطار هستند",
+      "lines": [
+        { "speaker": "Eli", "text": { "de": "Wann fährt der Zug nach München ab?", "fa": "قطار به مونیخ کی حرکت می‌کند؟" } },
+        { "speaker": "Tom", "text": { "de": "Um 10 Uhr. Wir müssen jetzt einsteigen!", "fa": "ساعت ۱۰. باید الان سوار شویم!" } },
+        { "speaker": "Eli", "text": { "de": "Okay! Wann kommen wir an?", "fa": "باشه! کی می‌رسیم؟" } },
+        { "speaker": "Tom", "text": { "de": "Wir kommen um 14 Uhr in München an.", "fa": "ساعت ۱۴ به مونیخ می‌رسیم." } },
+        { "speaker": "Eli", "text": { "de": "Perfekt! Und wann fahren wir zurück?", "fa": "عالی! و کی برمی‌گردیم؟" } },
+        { "speaker": "Tom", "text": { "de": "Wir kommen morgen Abend zurück.", "fa": "فردا شب برمی‌گردیم." } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "قطار کی حرکت می‌کند؟", "options": ["ساعت ۸", "ساعت ۱۰", "ساعت ۱۴"], "correctIndex": 1 },
+        { "question": "کی به مونیخ می‌رسند؟", "options": ["ساعت ۱۰", "ساعت ۱۲", "ساعت ۱۴"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله درست است؟",
+      "options": ["Ich aufstehe um 7 Uhr.", "Ich stehe um 7 Uhr auf.", "Ich stehe auf um 7 Uhr.", "Ich auf stehe um 7 Uhr."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! پیشوند به آخر جمله می‌رود.", "incorrect": "در فعل جداشدنی، پیشوند به آخر جمله می‌رود: Ich stehe ... auf" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Der Bus {0} am Bahnhof an.",
+      "options": ["kommt", "kommen", "ankommt", "kommst"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "ankommen جداشدنی است: Der Bus kommt ... an" }
+    },
+    {
+      "type": "word-order",
+      "id": "w1",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["steht", "Er", "auf.", "früh"],
+      "correctOrder": [1, 0, 3, 2],
+      "correctSentence": { "de": "Er steht früh auf.", "fa": "او زود بلند می‌شود." }
+    },
+    {
+      "type": "word-order",
+      "id": "w2",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["fährt", "Wann", "ab?", "der Zug"],
+      "correctOrder": [1, 0, 3, 2],
+      "correctSentence": { "de": "Wann fährt der Zug ab?", "fa": "قطار کی حرکت می‌کند؟" }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "فعل‌ها را با ترجمه جفت کنید",
+      "items": [
+        { "id": "i1", "text": "aufstehen" },
+        { "id": "i2", "text": "ankommen" },
+        { "id": "i3", "text": "einsteigen" },
+        { "id": "i4", "text": "aussteigen" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "سوار شدن" },
+        { "id": "m2", "text": "بلند شدن" },
+        { "id": "m3", "text": "پیاده شدن" },
+        { "id": "m4", "text": "رسیدن" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m4"],
+        ["i3", "m1"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "صبح زود",
+      "context": "الی با تام تلفنی صحبت می‌کند",
+      "lines": [
+        { "speaker": "Tom", "text": { "de": "Hallo Eli! Wann stehst du morgen auf?", "fa": "سلام الی! فردا کی بلند می‌شوی؟" } },
+        { "speaker": "Eli", "text": { "de": "Ich stehe um 6 Uhr auf. Der Zug fährt um 7 ab.", "fa": "ساعت ۶ بلند می‌شوم. قطار ساعت ۷ حرکت می‌کند." } },
+        { "speaker": "Tom", "text": { "de": "Okay, ich komme um 6:30 bei dir an.", "fa": "باشه، ساعت ۶:۳۰ پیش تو می‌رسم." } },
+        { "speaker": "Eli", "text": { "de": "Super! Dann fahren wir zusammen zum Bahnhof.", "fa": "عالی! بعد با هم به ایستگاه می‌رویم." } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "الی کی بلند می‌شود؟", "options": ["ساعت ۵", "ساعت ۶", "ساعت ۷"], "correctIndex": 1 },
+        { "question": "تام کی می‌رسد؟", "options": ["ساعت ۶", "ساعت ۶:۳۰", "ساعت ۷"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Wir {0} am Hauptbahnhof aus.",
+      "options": ["steigen", "steigt", "einsteigen", "stehen"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "wir steigen ... aus (aussteigen = پیاده شدن)" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "«Kommst du mit?» یعنی چه؟",
+      "options": ["کی می‌رسی؟", "همراه می‌آیی؟", "کی برمی‌گردی؟", "کی حرکت می‌کنی؟"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "mitkommen = همراه آمدن → Kommst du mit? = همراه می‌آیی؟" }
+    },
+    {
+      "type": "word-order",
+      "id": "w3",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["ein.", "Bitte", "steigen", "Sie"],
+      "correctOrder": [1, 2, 3, 0],
+      "correctSentence": { "de": "Bitte steigen Sie ein.", "fa": "لطفاً سوار شوید." }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "پیشوندها",
+      "instruction": "معنی پیشوند را انتخاب کنید",
+      "questions": [
+        { "prompt": "auf-", "left": "بالا/باز", "right": "پایین/بسته", "correctSide": "left" },
+        { "prompt": "ein-", "left": "بیرون", "right": "داخل", "correctSide": "right" },
+        { "prompt": "aus-", "left": "بیرون", "right": "داخل", "correctSide": "left" },
+        { "prompt": "ab-", "left": "به سمت", "right": "از/دور", "correctSide": "right" },
+        { "prompt": "zurück-", "left": "برگشت", "right": "جلو", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich {0} morgen um 5 Uhr zurück.",
+      "options": ["komme", "kommen", "kommst", "kommt"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "ich komme ... zurück" }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-abfahren",
+      "word": "abfahren",
+      "translation": "حرکت کردن",
+      "syllables": ["ab", "fah", "ren"],
+      "distractors": ["op", "feh", "ran", "fob"]
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Ich stehe um sieben Uhr auf.",
+      "translation": "ساعت هفت بلند می‌شوم.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Der Zug kommt um zehn Uhr an.",
+      "translation": "قطار ساعت ده می‌رسد.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-3",
+      "targetText": "Wann fährst du ab?",
+      "translation": "کی حرکت می‌کنی؟",
+      "difficulty": "A1"
+    },
+    {
+      "type": "memory-match",
+      "id": "g3",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "aufstehen", "fa": "بلند شدن" },
+        { "de": "ankommen", "fa": "رسیدن" },
+        { "de": "abfahren", "fa": "حرکت کردن" },
+        { "de": "einsteigen", "fa": "سوار شدن" },
+        { "de": "aussteigen", "fa": "پیاده شدن" },
+        { "de": "mitkommen", "fa": "همراه آمدن" }
+      ],
+      "timeLimit": 60
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "aufstehen", "fa": "بلند شدن" },
+        { "de": "ankommen", "fa": "رسیدن" },
+        { "de": "abfahren", "fa": "حرکت کردن" },
+        { "de": "einsteigen", "fa": "سوار شدن" },
+        { "de": "aussteigen", "fa": "پیاده شدن" },
+        { "de": "mitkommen", "fa": "همراه آمدن" },
+        { "de": "zurückkommen", "fa": "برگشتن" },
+        { "de": "der Zug", "fa": "قطار" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما فعل‌های جداشدنی را یاد گرفتید!\n\n🔗 **قانون مهم:**\nدر جمله اصلی، پیشوند به **آخر** می‌رود:\n• Ich **stehe** um 7 Uhr **auf**.\n• Der Zug **fährt** um 10 **ab**.\n\n🚂 **فعل‌های مهم:**\n• aufstehen = بلند شدن\n• ankommen = رسیدن\n• abfahren = حرکت کردن\n• einsteigen = سوار شدن\n• aussteigen = پیاده شدن",
+      "xpEarned": 50,
+      "vocabularyLearned": [
+        { "word": { "de": "aufstehen", "fa": "بلند شدن" } },
+        { "word": { "de": "ankommen", "fa": "رسیدن" } },
+        { "word": { "de": "abfahren", "fa": "حرکت کردن" } },
+        { "word": { "de": "einsteigen", "fa": "سوار شدن" } },
+        { "word": { "de": "aussteigen", "fa": "پیاده شدن" } },
+        { "word": { "de": "mitkommen", "fa": "همراه آمدن" } },
+        { "word": { "de": "zurückkommen", "fa": "برگشتن" } },
+        { "word": { "de": "der Zug", "fa": "قطار" } }
+      ]
+    }
+  ]
+}
