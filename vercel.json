@@ -1,15 +1,10 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "cp -r content apps/web/content && cd apps/web && npx pnpm@10.18.2 run build",
+  "buildCommand": "cp -r content apps/web/content && cd apps/web && PUBLIC_R2_URL=https://pub-a0290b06f1ea45d5b65ac647cc69df34.r2.dev PUBLIC_SUPABASE_URL=https://placeholder.supabase.co PUBLIC_SUPABASE_ANON_KEY=placeholder npx pnpm@10.18.2 run build",
   "installCommand": "npx pnpm@10.18.2 install",
   "outputDirectory": "apps/web/build",
   "framework": null,
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
-  ],
-  "build": {
-    "env": {
-      "PUBLIC_R2_URL": "https://pub-a0290b06f1ea45d5b65ac647cc69df34.r2.dev"
-    }
-  }
+  ]
 }
