@@ -1,0 +1,363 @@
+{
+  "id": "A1-M10-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Hobbys", "fa": "سرگرمی‌ها" },
+  "description": "یاد بگیرید درباره سرگرمی‌های خود به آلمانی صحبت کنید",
+  "level": "A1",
+  "module": 10,
+  "lessonNumber": 1,
+  "totalSteps": 38,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "das Hobby", "fa": "سرگرمی", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "Hobbys" } } },
+    { "de": "lesen", "fa": "خواندن", "grammar": { "pos": "verb" } },
+    { "de": "Musik hören", "fa": "موسیقی گوش دادن", "grammar": { "pos": "verb" } },
+    { "de": "kochen", "fa": "آشپزی کردن", "grammar": { "pos": "verb" } },
+    { "de": "spielen", "fa": "بازی کردن", "grammar": { "pos": "verb" } },
+    { "de": "tanzen", "fa": "رقصیدن", "grammar": { "pos": "verb" } },
+    { "de": "malen", "fa": "نقاشی کردن", "grammar": { "pos": "verb" } },
+    { "de": "fotografieren", "fa": "عکاسی کردن", "grammar": { "pos": "verb" } },
+    { "de": "reisen", "fa": "سفر کردن", "grammar": { "pos": "verb" } },
+    { "de": "gern", "fa": "با علاقه", "grammar": { "pos": "adverb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "سرگرمی‌ها (Hobbys)",
+      "content": "در این درس یاد می‌گیرید:\n\n🎨 **سرگرمی‌های رایج:**\n• lesen = خواندن\n• Musik hören = موسیقی گوش دادن\n• kochen = آشپزی کردن\n• spielen = بازی کردن\n\n💡 **نکته مهم:**\nبرای گفتن «دوست دارم ... کنم» از **gern** استفاده می‌کنیم:\n• Ich lese gern. = دوست دارم بخوانم.",
+      "examples": [
+        { "de": "Was ist dein Hobby?", "fa": "سرگرمی‌ات چیست؟" },
+        { "de": "Ich lese gern Bücher.", "fa": "دوست دارم کتاب بخوانم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "das Hobby", "fa": "سرگرمی" },
+      "example": { "text": { "de": "Was ist dein Hobby?", "fa": "سرگرمی‌ات چیست؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-hobby",
+      "word": "Hobby",
+      "translation": "سرگرمی",
+      "syllables": ["Hob", "by"],
+      "distractors": ["Hab", "bi", "Hub", "be"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "lesen", "fa": "خواندن" },
+      "example": { "text": { "de": "Ich lese gern Bücher.", "fa": "دوست دارم کتاب بخوانم." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s4",
+      "title": "صرف فعل lesen",
+      "content": "🔤 **lesen** فعل نامنظم است:\n\nich lese\ndu **liest** (نه lesst!)\ner/sie/es **liest**\nwir lesen\nihr lest\nsie/Sie lesen\n\n⚠️ دقت کنید: du و er/sie/es تغییر می‌کنند: e → ie",
+      "examples": [
+        { "de": "Ich lese ein Buch.", "fa": "من کتاب می‌خوانم." },
+        { "de": "Sie liest die Zeitung.", "fa": "او روزنامه می‌خواند." }
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-lesen",
+      "word": "lesen",
+      "translation": "خواندن",
+      "syllables": ["le", "sen"],
+      "distractors": ["la", "san", "lo", "sun"]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "Musik hören", "fa": "موسیقی گوش دادن" },
+      "example": { "text": { "de": "Ich höre gern Musik.", "fa": "دوست دارم موسیقی گوش کنم." } }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«موسیقی گوش دادن» به آلمانی چه می‌شود؟",
+      "options": ["Musik spielen", "Musik hören", "Musik machen", "Musik singen"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "hören = گوش دادن، پس Musik hören = موسیقی گوش دادن" }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "kochen", "fa": "آشپزی کردن" },
+      "example": { "text": { "de": "Meine Mutter kocht gern.", "fa": "مادرم دوست دارد آشپزی کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-kochen",
+      "word": "kochen",
+      "translation": "آشپزی کردن",
+      "syllables": ["ko", "chen"],
+      "distractors": ["ka", "chan", "ku", "chin"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "spielen", "fa": "بازی کردن" },
+      "example": { "text": { "de": "Die Kinder spielen im Garten.", "fa": "بچه‌ها در باغ بازی می‌کنند." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s8",
+      "title": "spielen با سازها و ورزش‌ها",
+      "content": "🎸 **spielen** هم برای ساز و هم برای بازی استفاده می‌شود:\n\n**با ساز:**\n• Gitarre spielen = گیتار زدن\n• Klavier spielen = پیانو زدن\n\n**با ورزش/بازی:**\n• Fußball spielen = فوتبال بازی کردن\n• Tennis spielen = تنیس بازی کردن",
+      "examples": [
+        { "de": "Ich spiele Gitarre.", "fa": "من گیتار می‌زنم." },
+        { "de": "Er spielt Fußball.", "fa": "او فوتبال بازی می‌کند." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "tanzen", "fa": "رقصیدن" },
+      "example": { "text": { "de": "Sie tanzt sehr gut.", "fa": "او خیلی خوب می‌رقصد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-tanzen",
+      "word": "tanzen",
+      "translation": "رقصیدن",
+      "syllables": ["tan", "zen"],
+      "distractors": ["ten", "zan", "ton", "zin"]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "سرگرمی‌های پایه",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "lesen", "left": "خواندن", "right": "نوشتن", "correctSide": "left" },
+        { "prompt": "kochen", "left": "آشپزی کردن", "right": "خوردن", "correctSide": "left" },
+        { "prompt": "spielen", "left": "کار کردن", "right": "بازی کردن", "correctSide": "right" },
+        { "prompt": "tanzen", "left": "رقصیدن", "right": "خواندن", "correctSide": "left" },
+        { "prompt": "Musik hören", "left": "موسیقی ساختن", "right": "موسیقی گوش دادن", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": { "de": "malen", "fa": "نقاشی کردن" },
+      "example": { "text": { "de": "Das Kind malt ein Bild.", "fa": "کودک یک تصویر نقاشی می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-malen",
+      "word": "malen",
+      "translation": "نقاشی کردن",
+      "syllables": ["ma", "len"],
+      "distractors": ["me", "lan", "mo", "lin"]
+    },
+    {
+      "type": "new-word",
+      "id": "s11",
+      "word": { "de": "fotografieren", "fa": "عکاسی کردن" },
+      "example": { "text": { "de": "Ich fotografiere gern Landschaften.", "fa": "دوست دارم از مناظر عکاسی کنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-fotografieren",
+      "word": "fotografieren",
+      "translation": "عکاسی کردن",
+      "syllables": ["fo", "to", "gra", "fie", "ren"],
+      "distractors": ["fa", "ta", "gro", "fei", "ran"]
+    },
+    {
+      "type": "new-word",
+      "id": "s12",
+      "word": { "de": "reisen", "fa": "سفر کردن" },
+      "example": { "text": { "de": "Wir reisen gern nach Italien.", "fa": "دوست داریم به ایتالیا سفر کنیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-reisen",
+      "word": "reisen",
+      "translation": "سفر کردن",
+      "syllables": ["rei", "sen"],
+      "distractors": ["rai", "san", "rou", "sin"]
+    },
+    {
+      "type": "new-word",
+      "id": "s13",
+      "word": { "de": "gern", "fa": "با علاقه" },
+      "example": { "text": { "de": "Ich lese gern.", "fa": "دوست دارم بخوانم." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s14",
+      "title": "استفاده از gern",
+      "content": "💡 **gern** نشان می‌دهد که کاری را دوست دارید:\n\n• Ich koche **gern**. = دوست دارم آشپزی کنم.\n• Sie tanzt **gern**. = او دوست دارد برقصد.\n\n**جایگاه:** gern بعد از فعل می‌آید.\n\n⚠️ **nicht gern** = دوست ندارم:\n• Ich koche **nicht gern**. = دوست ندارم آشپزی کنم.",
+      "examples": [
+        { "de": "Ich spiele gern Fußball.", "fa": "دوست دارم فوتبال بازی کنم." },
+        { "de": "Er liest nicht gern.", "fa": "او دوست ندارد بخواند." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "«Ich koche gern» یعنی چه؟",
+      "options": ["من آشپزی می‌کنم", "دوست دارم آشپزی کنم", "باید آشپزی کنم", "می‌توانم آشپزی کنم"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "gern نشان‌دهنده علاقه است: دوست دارم آشپزی کنم" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich {0} gern Bücher.",
+      "options": ["lese", "liest", "lesen", "lest"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "با ich از lese استفاده می‌کنیم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sie {0} gern Klavier.",
+      "options": ["spielen", "spielt", "spiele", "spielst"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "با sie (او) از spielt استفاده می‌کنیم." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "درباره سرگرمی‌ها صحبت کردن",
+      "context": "تام و الی درباره سرگرمی‌هایشان صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Tom", "text": { "de": "Was machst du gern in deiner Freizeit?", "fa": "در وقت آزادت چه کار دوست داری بکنی؟" } },
+        { "speaker": "Eli", "text": { "de": "Ich lese gern und höre Musik. Und du?", "fa": "دوست دارم بخوانم و موسیقی گوش کنم. تو چی؟" } },
+        { "speaker": "Tom", "text": { "de": "Ich spiele gern Fußball und koche gern.", "fa": "دوست دارم فوتبال بازی کنم و آشپزی کنم." } },
+        { "speaker": "Eli", "text": { "de": "Kochst du oft?", "fa": "زیاد آشپزی می‌کنی؟" } },
+        { "speaker": "Tom", "text": { "de": "Ja, ich koche jeden Tag. Es macht Spaß!", "fa": "آره، هر روز آشپزی می‌کنم. خوشمزه‌ست!" } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "الی چه سرگرمی‌هایی دارد؟", "options": ["فوتبال و آشپزی", "خواندن و موسیقی", "نقاشی و رقص"], "correctIndex": 1 },
+        { "question": "تام هر روز چه کاری می‌کند؟", "options": ["فوتبال بازی می‌کند", "آشپزی می‌کند", "کتاب می‌خواند"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Was machst du {0} in deiner Freizeit?",
+      "options": ["gern", "gut", "viel", "oft"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "برای پرسیدن «چه کاری دوست داری بکنی» از gern استفاده می‌کنیم." }
+    },
+    {
+      "type": "word-order",
+      "id": "w1",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["gern.", "Ich", "Musik", "höre"],
+      "correctOrder": [1, 3, 2, 0],
+      "correctSentence": { "de": "Ich höre Musik gern.", "fa": "دوست دارم موسیقی گوش کنم." }
+    },
+    {
+      "type": "word-order",
+      "id": "w2",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["Hobby?", "dein", "ist", "Was"],
+      "correctOrder": [3, 2, 1, 0],
+      "correctSentence": { "de": "Was ist dein Hobby?", "fa": "سرگرمی‌ات چیست؟" }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "سرگرمی‌ها را با معنی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "lesen" },
+        { "id": "i2", "text": "kochen" },
+        { "id": "i3", "text": "tanzen" },
+        { "id": "i4", "text": "reisen" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "آشپزی کردن" },
+        { "id": "m2", "text": "خواندن" },
+        { "id": "m3", "text": "سفر کردن" },
+        { "id": "m4", "text": "رقصیدن" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m1"],
+        ["i3", "m4"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "مرور سرگرمی‌ها",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "malen", "left": "نقاشی کردن", "right": "عکاسی کردن", "correctSide": "left" },
+        { "prompt": "fotografieren", "left": "نقاشی کردن", "right": "عکاسی کردن", "correctSide": "right" },
+        { "prompt": "reisen", "left": "سفر کردن", "right": "رقصیدن", "correctSide": "left" },
+        { "prompt": "gern", "left": "با علاقه", "right": "سریع", "correctSide": "left" },
+        { "prompt": "Hobby", "left": "شغل", "right": "سرگرمی", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "کدام جمله درست است؟",
+      "options": ["Ich gern lese.", "Ich lese gern.", "Gern ich lese.", "Lese ich gern."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "جایگاه gern بعد از فعل است: Ich lese gern." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er {0} nicht gern.",
+      "options": ["tanzt", "tanzen", "tanze", "tanzst"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "با er از tanzt استفاده می‌کنیم." }
+    },
+    {
+      "type": "vocab-check",
+      "id": "g3",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "das Hobby", "fa": "سرگرمی" },
+        { "de": "lesen", "fa": "خواندن" },
+        { "de": "Musik hören", "fa": "موسیقی گوش دادن" },
+        { "de": "kochen", "fa": "آشپزی کردن" },
+        { "de": "spielen", "fa": "بازی کردن" },
+        { "de": "tanzen", "fa": "رقصیدن" },
+        { "de": "malen", "fa": "نقاشی کردن" },
+        { "de": "reisen", "fa": "سفر کردن" },
+        { "de": "gern", "fa": "با علاقه" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما یاد گرفتید درباره سرگرمی‌ها صحبت کنید!\n\n🎨 **سرگرمی‌ها:**\nlesen, Musik hören, kochen, spielen, tanzen, malen, fotografieren, reisen\n\n💡 **نکته کلیدی:**\nبرای گفتن «دوست دارم ... کنم» از **gern** استفاده کنید:\n• Ich lese **gern**. = دوست دارم بخوانم.",
+      "xpEarned": 50,
+      "nextLessonId": "A1-M10-L02",
+      "vocabularyLearned": [
+        { "word": { "de": "das Hobby", "fa": "سرگرمی" } },
+        { "word": { "de": "lesen", "fa": "خواندن" } },
+        { "word": { "de": "Musik hören", "fa": "موسیقی گوش دادن" } },
+        { "word": { "de": "kochen", "fa": "آشپزی کردن" } },
+        { "word": { "de": "spielen", "fa": "بازی کردن" } },
+        { "word": { "de": "tanzen", "fa": "رقصیدن" } },
+        { "word": { "de": "malen", "fa": "نقاشی کردن" } },
+        { "word": { "de": "fotografieren", "fa": "عکاسی کردن" } },
+        { "word": { "de": "reisen", "fa": "سفر کردن" } },
+        { "word": { "de": "gern", "fa": "با علاقه" } }
+      ]
+    }
+  ]
+}

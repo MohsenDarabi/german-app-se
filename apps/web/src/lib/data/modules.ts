@@ -334,6 +334,19 @@ const DE_FA_A1_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/A1/A1-M09-L04"
       }
     ]
+  },
+  {
+    id: "module-10",
+    title: "بخش ۱۰: سرگرمی‌ها (Hobbys und Freizeit)",
+    level: "A1",
+    lessons: [
+      {
+        id: "A1-M10-L01",
+        title: "سرگرمی‌ها (Hobbys)",
+        description: "یاد بگیرید درباره سرگرمی‌های خود به آلمانی صحبت کنید.",
+        path: "/learn/de-fa/A1/A1-M10-L01"
+      }
+    ]
   }
 ];
 
