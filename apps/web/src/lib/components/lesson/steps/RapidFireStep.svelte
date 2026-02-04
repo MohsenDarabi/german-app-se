@@ -141,7 +141,7 @@
       correctCount++;
       streak++;
       if (streak > maxStreak) maxStreak = streak;
-      score += step.basePoints * (streak > 1 ? streak : 1);
+      score += (step.basePoints || 10) * (streak > 1 ? streak : 1);
       showResult = 'correct';
     } else {
       streak = 0;
