@@ -326,6 +326,12 @@ const DE_FA_A1_MODULES: ModuleStub[] = [
         title: "آپارتمان من (Meine Wohnung)",
         description: "یاد بگیرید چطور آپارتمان‌تان را توصیف کنید: صفات و حروف اضافه مکان.",
         path: "/learn/de-fa/A1/A1-M09-L03"
+      },
+      {
+        id: "A1-M09-L04",
+        title: "جستجوی آپارتمان (Wohnungssuche)",
+        description: "یاد بگیرید چطور آپارتمان پیدا کنید و درباره اجاره صحبت کنید.",
+        path: "/learn/de-fa/A1/A1-M09-L04"
       }
     ]
   }
