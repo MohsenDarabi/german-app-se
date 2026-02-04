@@ -671,6 +671,33 @@ Or wait 1 hour for cache to expire.
 
 ---
 
+### Issue: New Module Lessons Return 404 (Feb 2026)
+
+**Symptom:** Created new lessons in `module-13` (or higher), validation passes, file exists, but browser shows `{"message": "Lesson not found: A1-M13-L01"}`.
+
+**Root Cause:** The `MODULE_FOLDERS` array in `contentService.ts` only listed modules up to `module-12`. The local content loader iterates through this array to find lessons, so any module not in the list won't be found.
+
+**Location:** `apps/web/src/lib/services/contentService.ts` line ~262
+
+```typescript
+// BEFORE (broken for module-13+)
+const MODULE_FOLDERS = ['module-01', 'module-02', ..., 'module-12'];
+
+// AFTER (fixed)
+const MODULE_FOLDERS = ['module-01', 'module-02', ..., 'module-12', 'module-13', 'module-14', 'module-15'];
+```
+
+**Fix:**
+1. Add new module folders to the `MODULE_FOLDERS` array
+2. Restart dev server
+
+**Prevention:** When creating new modules, always check that `MODULE_FOLDERS` includes the new module number.
+
+**Files Modified:**
+- `apps/web/src/lib/services/contentService.ts` - Added module-13, 14, 15 to MODULE_FOLDERS
+
+---
+
 ## Contributing
 
 Found a new debugging scenario? Add it here:
