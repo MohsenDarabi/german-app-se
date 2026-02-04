@@ -275,12 +275,18 @@ content/de-fa/{Level}/module-{NN}/{LessonID}.json
 {
   "type": "syllable-spelling",
   "id": "syllable-1",
-  "word": { "de": "Guten Morgen", "fa": "صبح بخیر" },
+  "word": "Guten Morgen",
+  "translation": "صبح بخیر",
   "syllables": ["Gu", "ten", "Mor", "gen"],
-  "distractors": ["Go", "tan", "Mar", "gan"],
-  "hint": "۴ بخش - سلام صبحگاهی"
+  "distractors": ["Go", "tan", "Mar", "gan"]
 }
 ```
+
+**⚠️ CRITICAL Fields:**
+- `word`: German word/phrase as **string** (NOT bilingual object!)
+- `translation`: Persian translation as **string** (REQUIRED!)
+- `syllables`: Array of syllable chunks
+- `distractors`: Array of wrong syllables (REQUIRED, no substrings of correct syllables!)
 
 **⚠️ CRITICAL: No Ambiguous Distractors!**
 
@@ -370,26 +376,39 @@ The validation script (`validate-lesson.js`) automatically catches these issues.
 {
   "type": "multiple-choice",
   "id": "s5",
-  "question": { "de": "Was bedeutet 'der Mann'?", "fa": "معنی 'der Mann' چیست؟" },
+  "question": "معنی «der Mann» چیست؟",
   "options": ["زن", "مرد", "بچه"],
-  "correctIndex": 1,
+  "correctAnswerIndex": 1,
   "feedbackTip": {
-    "onCorrect": "آفرین! «der Mann» یعنی مرد.",
-    "onWrong": "دقت کنید: «Mann» با حرف تعریف «der» همراه است.",
-    "errorCategory": "vocabulary",
-    "highlights": ["der Mann"]
+    "category": "vocabulary",
+    "tip": "«der Mann» یعنی مرد. «der» نشان‌دهنده جنس مذکر است."
   }
 }
 ```
 
-**Error Categories:**
+**FeedbackTip Schema:**
+```json
+{
+  "feedbackTip": {
+    "category": "error-category-id",
+    "tip": "Persian explanation shown on wrong answer"
+  }
+}
+```
+
+**Error Categories (ONLY these 10 values are valid):**
 | Category | Use When |
 |----------|----------|
 | `wrong-article` | der/die/das confusion |
 | `wrong-conjugation` | Verb form error |
+| `wrong-case` | Accusative/Dative error |
 | `word-order` | V2 position error |
 | `vocabulary` | Wrong word choice |
 | `spelling` | Spelling mistake |
+| `comprehension` | Didn't understand question |
+| `plural-form` | Plural error |
+| `negation` | nicht/kein error |
+| `gender-agreement` | Adjective gender error |
 
 ### dictation step (1-2 per lesson)
 

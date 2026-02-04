@@ -346,22 +346,25 @@ Scaffolded spelling with syllable hints - reduces cognitive load. **REQUIRED** f
   "word": "sieben",
   "translation": "هفت (۷)",
   "syllables": ["sie", "ben"],
-  "distractors": ["se", "bie", "bein"],
-  "instruction": "قطعات را کنار هم بگذارید",
-  "feedbackTip": {
-    "onCorrect": "آفرین! «sieben» با ie (ای) یعنی هفت."
-  }
+  "distractors": ["se", "bie", "bein"]
 }
 ```
 
 | Field | Required | Description |
 |-------|----------|-------------|
-| `word` | Yes | German word/phrase (string) |
-| `translation` | Yes | Persian translation |
-| `syllables` | Yes | Array of syllable chunks (correct pieces) |
-| `distractors` | **Yes** | 2-4 wrong syllables to increase challenge |
-| `instruction` | No | Persian instruction (default: "قطعات را کنار هم بگذارید") |
-| `feedbackTip` | No | Feedback object with `onCorrect`, `onWrong` |
+| `word` | **Yes** | German word/phrase as **STRING** (NOT bilingual object!) |
+| `translation` | **Yes** | Persian translation as **STRING** (REQUIRED!) |
+| `syllables` | **Yes** | Array of syllable chunks (correct pieces) |
+| `distractors` | **Yes** | 2-4 wrong syllables (no substrings of correct syllables!) |
+
+**⚠️ CRITICAL: Correct Format**
+```json
+// ✅ CORRECT
+{ "word": "Hallo", "translation": "سلام", ... }
+
+// ❌ WRONG (will cause validation error)
+{ "word": { "de": "Hallo", "fa": "سلام" }, ... }
+```
 
 **Distractors Guidelines:**
 - Use 2-4 distractors per word

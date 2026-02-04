@@ -470,13 +470,15 @@ Format: `{Persian number} بخش - {brief meaning}`
 ```json
 {
   "feedbackTip": {
-    "onCorrect": "آفرین! توضیح کوتاه چرا درست است.",
-    "onWrong": "دقت کنید: توضیح چرا اشتباه است و قانون صحیح.",
-    "errorCategory": "error-category-id",
-    "highlights": ["کلمات", "کلیدی"]
+    "category": "error-category-id",
+    "tip": "دقت کنید: توضیح چرا اشتباه است و قانون صحیح."
   }
 }
 ```
+
+**Fields:**
+- `category`: One of the valid error categories (see below)
+- `tip`: Persian explanation shown on wrong answer
 
 ### Error Categories (Complete List)
 
@@ -509,14 +511,12 @@ Format: `{Persian number} بخش - {brief meaning}`
 {
   "type": "multiple-choice",
   "id": "s5",
-  "question": { "de": "Was bedeutet 'der Mann'?", "fa": "معنی 'der Mann' چیست؟" },
+  "question": "معنی «der Mann» چیست؟",
   "options": ["زن", "مرد", "بچه"],
-  "correctIndex": 1,
+  "correctAnswerIndex": 1,
   "feedbackTip": {
-    "onCorrect": "آفرین! «der Mann» یعنی مرد. توجه کنید که «der» نشان‌دهنده جنس مذکر است.",
-    "onWrong": "دقت کنید: «Mann» یعنی مرد (نه زن). «Frau» یعنی زن.",
-    "errorCategory": "vocabulary",
-    "highlights": ["der Mann", "مرد"]
+    "category": "vocabulary",
+    "tip": "«der Mann» یعنی مرد. «der» نشان‌دهنده جنس مذکر است. «Frau» یعنی زن."
   }
 }
 ```
@@ -527,13 +527,13 @@ Format: `{Persian number} بخش - {brief meaning}`
 {
   "type": "fill-in-blank",
   "id": "s8",
-  "sentence": { "de": "Ich ___ aus Berlin.", "fa": "من اهل برلین ___." },
-  "blank": { "answer": "komme", "position": 1 },
+  "instruction": "جای خالی را پر کنید",
+  "sentence": "Ich {0} aus Berlin.",
+  "options": ["komme", "kommst", "kommt", "kommen"],
+  "correctAnswers": [0],
   "feedbackTip": {
-    "onCorrect": "آفرین! با «ich» فعل به «-e» ختم می‌شود: ich komme.",
-    "onWrong": "دقت کنید: با «ich» فعل باید «komme» باشد، نه «kommst» یا «kommt».",
-    "errorCategory": "wrong-conjugation",
-    "highlights": ["ich", "komme"]
+    "category": "wrong-conjugation",
+    "tip": "با «ich» فعل به «-e» ختم می‌شود: ich komme، نه «kommst» یا «kommt»."
   }
 }
 ```
@@ -544,14 +544,13 @@ Format: `{Persian number} بخش - {brief meaning}`
 {
   "type": "word-order",
   "id": "s10",
+  "instruction": "کلمات را مرتب کنید",
   "words": ["Ich", "aus", "Berlin", "komme"],
   "correctOrder": [0, 3, 1, 2],
-  "translation": { "fa": "من اهل برلین هستم." },
+  "correctSentence": { "de": "Ich komme aus Berlin.", "fa": "من اهل برلین هستم." },
   "feedbackTip": {
-    "onCorrect": "آفرین! فعل «komme» در جایگاه دوم قرار گرفت.",
-    "onWrong": "دقت کنید: در آلمانی فعل همیشه در جایگاه **دوم** است. ترتیب صحیح: Ich komme aus Berlin.",
-    "errorCategory": "word-order",
-    "highlights": ["komme", "جایگاه دوم"]
+    "category": "word-order",
+    "tip": "در آلمانی فعل همیشه در جایگاه **دوم** است. ترتیب صحیح: Ich komme aus Berlin."
   }
 }
 ```
@@ -562,13 +561,12 @@ Format: `{Persian number} بخش - {brief meaning}`
 {
   "type": "true-false",
   "id": "s12",
-  "statement": { "de": "«Frau» bedeutet Mann.", "fa": "«Frau» یعنی مرد." },
-  "isTrue": false,
+  "instruction": "درست یا غلط؟",
+  "statement": "کلمه «Frau» یعنی مرد.",
+  "correctAnswer": false,
   "feedbackTip": {
-    "onCorrect": "آفرین! «Frau» یعنی زن، نه مرد.",
-    "onWrong": "دقت کنید: «Frau» = زن، «Mann» = مرد. این دو را اشتباه نگیرید!",
-    "errorCategory": "vocabulary",
-    "highlights": ["Frau", "زن"]
+    "category": "vocabulary",
+    "tip": "«Frau» = زن، «Mann» = مرد. این دو را اشتباه نگیرید!"
   }
 }
 ```
