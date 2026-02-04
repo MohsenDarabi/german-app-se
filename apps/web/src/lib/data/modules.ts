@@ -590,6 +590,12 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         title: "bevor, nachdem, obwohl",
         description: "یاد بگیرید جملات زمانی و امتیازی بسازید.",
         path: "/learn/de-fa/A2/A2-M04-L03"
+      },
+      {
+        id: "A2-M04-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "تمرین ترکیبی همه حروف ربط پیرو.",
+        path: "/learn/de-fa/A2/A2-M04-L04"
       }
     ]
   }

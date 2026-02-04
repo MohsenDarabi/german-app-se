@@ -1,0 +1,421 @@
+{
+  "id": "A2-M04-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Nebensätze - Zusammenfassung", "fa": "جملات پیرو - جمع‌بندی" },
+  "description": "تمرین ترکیبی همه حروف ربط پیرو",
+  "level": "A2",
+  "module": 4,
+  "lessonNumber": 4,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "damit", "fa": "تا اینکه / برای اینکه", "grammar": { "pos": "conjunction", "type": "subordinating" } },
+    { "de": "seit", "fa": "از وقتی که", "grammar": { "pos": "conjunction", "type": "subordinating" } },
+    { "de": "solange", "fa": "تا زمانی که", "grammar": { "pos": "conjunction", "type": "subordinating" } },
+    { "de": "indem", "fa": "با اینکه / از طریق", "grammar": { "pos": "conjunction", "type": "subordinating" } },
+    { "de": "deshalb", "fa": "به همین دلیل", "grammar": { "pos": "adverb" } },
+    { "de": "deswegen", "fa": "به این خاطر", "grammar": { "pos": "adverb" } },
+    { "de": "außerdem", "fa": "علاوه بر این", "grammar": { "pos": "adverb" } },
+    { "de": "jedoch", "fa": "اما / ولی", "grammar": { "pos": "adverb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "مرور: قانون اصلی Nebensatz",
+      "content": "📝 **قانون طلایی:**\nدر جمله پیرو، **فعل به آخر می‌رود!**\n\n**حروف ربط پیرو که یاد گرفتیم:**\n\n| دلیل | weil | چون |\n| محتوا | dass | که |\n| شرط | wenn, falls, ob | اگر، آیا |\n| زمان | bevor, nachdem, während | قبل، بعد، در حین |\n| تضاد | obwohl | اگرچه |\n\n⚠️ همه این حروف فعل را به آخر می‌برند!",
+      "examples": [
+        { "de": "Ich lerne, weil ich es brauche.", "fa": "یاد می‌گیرم چون نیازش دارم." },
+        { "de": "Ich weiß, dass du kommst.", "fa": "می‌دانم که می‌آیی." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "damit", "fa": "تا اینکه / برای اینکه" },
+      "example": { "text": { "de": "Ich lerne Deutsch, damit ich in Deutschland arbeiten kann.", "fa": "آلمانی یاد می‌گیرم تا بتوانم در آلمان کار کنم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "seit", "fa": "از وقتی که" },
+      "example": { "text": { "de": "Seit ich hier wohne, fühle ich mich wohl.", "fa": "از وقتی اینجا زندگی می‌کنم، احساس خوبی دارم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-damit",
+      "word": "damit",
+      "translation": "برای اینکه",
+      "syllables": ["da", "mit"],
+      "distractors": ["do", "mat", "du", "mot"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "در جمله پیرو آلمانی، فعل کجاست؟",
+      "options": ["اول", "دوم", "وسط", "آخر"],
+      "correctAnswerIndex": 3,
+      "feedback": { "correct": "آفرین! قانون طلایی: فعل در Nebensatz به آخر می‌رود.", "incorrect": "در جمله پیرو، فعل همیشه در آخر است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich lerne Deutsch, {0} ich es brauche.",
+      "options": ["weil", "damit", "dass", "ob"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "weil = چون (دلیل)" }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "solange", "fa": "تا زمانی که" },
+      "example": { "text": { "de": "Solange du hier bist, bin ich glücklich.", "fa": "تا زمانی که اینجایی، خوشحالم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "deshalb", "fa": "به همین دلیل" },
+      "example": { "text": { "de": "Ich bin müde. Deshalb gehe ich schlafen.", "fa": "خسته‌ام. به همین دلیل می‌روم بخوابم." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s6",
+      "title": "حرف ربط یا قید؟",
+      "content": "📝 **تفاوت مهم:**\n\n**حروف ربط پیرو** → فعل آخر:\n• weil, dass, wenn, obwohl...\n• Ich komme nicht, **weil** ich krank **bin**.\n\n**قیدها** → فعل دوم:\n• deshalb, trotzdem, deswegen...\n• Ich bin krank. **Deshalb** **komme** ich nicht.\n\n⚠️ معنی شبیه است، اما ترتیب کلمات فرق دارد!",
+      "examples": [
+        { "de": "Ich komme nicht, weil ich müde bin.", "fa": "نمی‌آیم چون خسته‌ام. (weil = حرف ربط)" },
+        { "de": "Ich bin müde. Deshalb komme ich nicht.", "fa": "خسته‌ام. به همین دلیل نمی‌آیم. (deshalb = قید)" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "deswegen", "fa": "به این خاطر" },
+      "example": { "text": { "de": "Es regnet. Deswegen bleibe ich zu Hause.", "fa": "باران می‌آید. به این خاطر خانه می‌مانم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-deshalb",
+      "word": "deshalb",
+      "translation": "به همین دلیل",
+      "syllables": ["des", "halb"],
+      "distractors": ["das", "hilb", "dis", "holb"]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "حرف ربط یا قید؟",
+      "instruction": "نوع کلمه را مشخص کنید",
+      "questions": [
+        { "prompt": "weil", "left": "حرف ربط", "right": "قید", "correctSide": "left" },
+        { "prompt": "deshalb", "left": "حرف ربط", "right": "قید", "correctSide": "right" },
+        { "prompt": "obwohl", "left": "حرف ربط", "right": "قید", "correctSide": "left" },
+        { "prompt": "trotzdem", "left": "حرف ربط", "right": "قید", "correctSide": "right" },
+        { "prompt": "wenn", "left": "حرف ربط", "right": "قید", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "außerdem", "fa": "علاوه بر این" },
+      "example": { "text": { "de": "Er ist nett. Außerdem ist er intelligent.", "fa": "او مهربان است. علاوه بر این باهوش است." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "jedoch", "fa": "اما / ولی" },
+      "example": { "text": { "de": "Ich wollte kommen. Jedoch war ich krank.", "fa": "می‌خواستم بیایم. اما مریض بودم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": { "de": "indem", "fa": "با اینکه / از طریق" },
+      "example": { "text": { "de": "Ich lerne Deutsch, indem ich jeden Tag übe.", "fa": "آلمانی یاد می‌گیرم از طریق هر روز تمرین کردن." } }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "چرا آلمانی یاد می‌گیری؟",
+      "context": "دو دانشجو صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Tom", "text": { "de": "Warum lernst du Deutsch?", "fa": "چرا آلمانی یاد می‌گیری؟" } },
+        { "speaker": "Sara", "text": { "de": "Ich lerne Deutsch, weil ich in München studieren will.", "fa": "آلمانی یاد می‌گیرم چون می‌خواهم در مونیخ درس بخوانم." } },
+        { "speaker": "Tom", "text": { "de": "Das ist toll! Seit wann lernst du?", "fa": "عالیه! از کی یاد می‌گیری؟" } },
+        { "speaker": "Sara", "text": { "de": "Seit ich 18 bin. Deshalb kann ich schon gut sprechen.", "fa": "از ۱۸ سالگی. به همین دلیل خوب صحبت می‌کنم." } },
+        { "speaker": "Tom", "text": { "de": "Obwohl Deutsch schwer ist, macht es Spaß, oder?", "fa": "اگرچه آلمانی سخت است، ولی جالب است، نه؟" } },
+        { "speaker": "Sara", "text": { "de": "Ja! Ich übe jeden Tag, damit ich besser werde.", "fa": "بله! هر روز تمرین می‌کنم تا بهتر شوم." } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "سارا چرا آلمانی یاد می‌گیرد؟", "options": ["برای کار", "برای تحصیل", "برای سفر"], "correctIndex": 1 },
+        { "question": "سارا از کی آلمانی یاد می‌گیرد؟", "options": ["از بچگی", "از ۱۸ سالگی", "از پارسال"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich glaube, {0} er morgen kommt.",
+      "options": ["dass", "weil", "wenn", "ob"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "glauben + dass" }
+    },
+    {
+      "type": "word-order",
+      "id": "w1",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["kann.", "Deutsch,", "arbeiten", "ich", "lerne", "in", "Deutschland", "damit", "Ich"],
+      "correctOrder": [8, 4, 1, 7, 3, 6, 5, 2, 0],
+      "correctSentence": { "de": "Ich lerne Deutsch, damit ich in Deutschland arbeiten kann.", "fa": "آلمانی یاد می‌گیرم تا بتوانم در آلمان کار کنم." }
+    },
+    {
+      "type": "word-order",
+      "id": "w2",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["schlafen.", "Deshalb", "müde.", "gehe", "bin", "ich", "Ich"],
+      "correctOrder": [6, 4, 2, 1, 3, 5, 0],
+      "correctSentence": { "de": "Ich bin müde. Deshalb gehe ich schlafen.", "fa": "خسته‌ام. به همین دلیل می‌روم بخوابم." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "حرف ربط را با کاربرد جفت کنید",
+      "items": [
+        { "id": "i1", "text": "weil" },
+        { "id": "i2", "text": "dass" },
+        { "id": "i3", "text": "wenn" },
+        { "id": "i4", "text": "obwohl" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "شرط / زمان" },
+        { "id": "m2", "text": "دلیل" },
+        { "id": "m3", "text": "تضاد" },
+        { "id": "m4", "text": "محتوا" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m4"],
+        ["i3", "m1"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-ausserdem",
+      "word": "außerdem",
+      "translation": "علاوه بر این",
+      "syllables": ["au", "ßer", "dem"],
+      "distractors": ["ou", "sar", "dam", "eo"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله درست است؟",
+      "options": ["Ich bin müde. Weil gehe ich schlafen.", "Ich bin müde. Deshalb gehe ich schlafen.", "Ich bin müde. Deshalb ich gehe schlafen.", "Ich bin müde. Weil ich gehe schlafen."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! deshalb قید است، پس فعل دوم می‌آید.", "incorrect": "deshalb قید است: Deshalb GEHE ich..." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} ich hier wohne, fühle ich mich wohl.",
+      "options": ["Seit", "Weil", "Dass", "Ob"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "seit = از وقتی که" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "برنامه‌ریزی تعطیلات",
+      "context": "یک زوج برنامه‌ریزی می‌کنند",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Was machen wir im Urlaub?", "fa": "در تعطیلات چه کار کنیم؟" } },
+        { "speaker": "Max", "text": { "de": "Wenn das Wetter schön ist, können wir wandern.", "fa": "اگر هوا خوب باشد، می‌توانیم کوهنوردی کنیم." } },
+        { "speaker": "Anna", "text": { "de": "Gut. Aber falls es regnet, brauchen wir einen Plan B.", "fa": "خوب. اما در صورت باران، به برنامه جایگزین نیاز داریم." } },
+        { "speaker": "Max", "text": { "de": "Dann gehen wir ins Museum, obwohl ich das nicht so gern mag.", "fa": "آنگاه به موزه می‌رویم، اگرچه خیلی دوست ندارم." } },
+        { "speaker": "Anna", "text": { "de": "Außerdem sollten wir ein Restaurant reservieren.", "fa": "علاوه بر این باید یک رستوران رزرو کنیم." } },
+        { "speaker": "Max", "text": { "de": "Gute Idee! Ich mache das, bevor wir losfahren.", "fa": "ایده خوبیه! قبل از حرکت این کار را می‌کنم." } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "اگر هوا خوب باشد چه می‌کنند؟", "options": ["به موزه می‌روند", "کوهنوردی می‌کنند", "رستوران می‌روند"], "correctIndex": 1 },
+        { "question": "ماکس چه احساسی نسبت به موزه دارد؟", "options": ["خیلی دوست دارد", "خیلی دوست ندارد", "بی‌تفاوت است"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "ترجمه سریع",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "damit", "left": "برای اینکه", "right": "چون", "correctSide": "left" },
+        { "prompt": "seit", "left": "تا", "right": "از وقتی که", "correctSide": "right" },
+        { "prompt": "deshalb", "left": "به همین دلیل", "right": "اگرچه", "correctSide": "left" },
+        { "prompt": "außerdem", "left": "اما", "right": "علاوه بر این", "correctSide": "right" },
+        { "prompt": "jedoch", "left": "اما", "right": "چون", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich übe jeden Tag, {0} ich besser werde.",
+      "options": ["damit", "weil", "dass", "ob"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "damit = تا اینکه / برای اینکه (هدف)" }
+    },
+    {
+      "type": "word-order",
+      "id": "w3",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["wohne,", "hier", "ich", "wohl.", "Seit", "fühle", "mich", "ich"],
+      "correctOrder": [4, 2, 1, 0, 5, 7, 6, 3],
+      "correctSentence": { "de": "Seit ich hier wohne, fühle ich mich wohl.", "fa": "از وقتی اینجا زندگی می‌کنم، احساس خوبی دارم." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "«damit» چه زمانی استفاده می‌شود؟",
+      "options": ["برای دلیل", "برای هدف", "برای زمان", "برای تضاد"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! damit برای بیان هدف استفاده می‌شود.", "incorrect": "damit = تا اینکه / برای اینکه (هدف)" }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-jedoch",
+      "word": "jedoch",
+      "translation": "اما",
+      "syllables": ["je", "doch"],
+      "distractors": ["ja", "dach", "ju", "duch"]
+    },
+    {
+      "type": "matching",
+      "id": "m2",
+      "instruction": "جمله را کامل کنید",
+      "items": [
+        { "id": "i1", "text": "Ich lerne Deutsch, weil" },
+        { "id": "i2", "text": "Ich lerne Deutsch, damit" },
+        { "id": "i3", "text": "Ich lerne Deutsch, obwohl" },
+        { "id": "i4", "text": "Ich lerne Deutsch, wenn" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "ich Zeit habe." },
+        { "id": "m2", "text": "ich es brauche." },
+        { "id": "m3", "text": "ich in Deutschland arbeiten kann." },
+        { "id": "m4", "text": "es schwer ist." }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m3"],
+        ["i3", "m4"],
+        ["i4", "m1"]
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er ist nett. {0} ist er intelligent.",
+      "options": ["Außerdem", "Weil", "Obwohl", "Damit"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "außerdem = علاوه بر این (قید)" }
+    },
+    {
+      "type": "word-order",
+      "id": "w4",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["ist.", "schwer", "es", "obwohl", "macht", "Spaß,", "Deutsch", "Es"],
+      "correctOrder": [7, 4, 5, 3, 2, 1, 0],
+      "correctSentence": { "de": "Es macht Spaß, obwohl es schwer ist.", "fa": "جالب است، اگرچه سخت است." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "تفاوت «weil» و «deshalb» چیست؟",
+      "options": ["معنی متفاوت دارند", "weil حرف ربط است، deshalb قید", "deshalb رسمی‌تر است", "هر دو یکی هستند"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! weil فعل را به آخر می‌برد، deshalb نه.", "incorrect": "weil حرف ربط است (فعل آخر)، deshalb قید است (فعل دوم)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} du hier bist, bin ich glücklich.",
+      "options": ["Solange", "Deshalb", "Außerdem", "Jedoch"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "solange = تا زمانی که" }
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Ich lerne Deutsch, weil ich es brauche.",
+      "translation": "آلمانی یاد می‌گیرم چون نیازش دارم.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Ich bin müde. Deshalb gehe ich schlafen.",
+      "translation": "خسته‌ام. به همین دلیل می‌روم بخوابم.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-3",
+      "targetText": "Seit ich hier wohne, fühle ich mich wohl.",
+      "translation": "از وقتی اینجا زندگی می‌کنم، احساس خوبی دارم.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "memory-match",
+      "id": "g3",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "weil", "fa": "چون" },
+        { "de": "damit", "fa": "برای اینکه" },
+        { "de": "seit", "fa": "از وقتی که" },
+        { "de": "deshalb", "fa": "به همین دلیل" },
+        { "de": "außerdem", "fa": "علاوه بر این" },
+        { "de": "jedoch", "fa": "اما" }
+      ],
+      "timeLimit": 60
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "damit", "fa": "برای اینکه" },
+        { "de": "seit", "fa": "از وقتی که" },
+        { "de": "solange", "fa": "تا زمانی که" },
+        { "de": "indem", "fa": "از طریق" },
+        { "de": "deshalb", "fa": "به همین دلیل" },
+        { "de": "deswegen", "fa": "به این خاطر" },
+        { "de": "außerdem", "fa": "علاوه بر این" },
+        { "de": "jedoch", "fa": "اما" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما جملات پیرو را کامل یاد گرفتید!\n\n📝 **قانون طلایی:**\nدر Nebensatz، فعل به **آخر** می‌رود!\n\n**حروف ربط پیرو:**\nweil, dass, wenn, ob, falls, bevor, nachdem, während, obwohl, damit, seit...\n\n**قیدها (فعل دوم):**\ndeshalb, deswegen, trotzdem, außerdem, jedoch...\n\n⚠️ معنی شبیه، اما ترتیب کلمات متفاوت!",
+      "xpEarned": 50,
+      "vocabularyLearned": [
+        { "word": { "de": "damit", "fa": "برای اینکه" } },
+        { "word": { "de": "seit", "fa": "از وقتی که" } },
+        { "word": { "de": "solange", "fa": "تا زمانی که" } },
+        { "word": { "de": "indem", "fa": "از طریق" } },
+        { "word": { "de": "deshalb", "fa": "به همین دلیل" } },
+        { "word": { "de": "deswegen", "fa": "به این خاطر" } },
+        { "word": { "de": "außerdem", "fa": "علاوه بر این" } },
+        { "word": { "de": "jedoch", "fa": "اما" } }
+      ]
+    }
+  ]
+}
