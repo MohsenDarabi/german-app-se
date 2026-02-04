@@ -621,6 +621,12 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         title: "regelmäßige Verben - فعل‌های باقاعده",
         description: "یاد بگیرید گذشته ساده فعل‌های باقاعده را.",
         path: "/learn/de-fa/A2/A2-M05-L03"
+      },
+      {
+        id: "A2-M05-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "تمرین ترکیبی گذشته ساده با فعل‌های بی‌قاعده.",
+        path: "/learn/de-fa/A2/A2-M05-L04"
       }
     ]
   }
