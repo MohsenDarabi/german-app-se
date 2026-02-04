@@ -13,6 +13,57 @@
 
 const fs = require('fs');
 const path = require('path');
+const { execSync } = require('child_process');
+
+// Zod schema validation (runs as subprocess with TypeScript support)
+function validateZodSchema(lessonJson, filePath) {
+  const scriptDir = path.dirname(__filename);
+  const projectRoot = path.resolve(scriptDir, '..');
+
+  // Use the actual file path for validation (more reliable than passing JSON)
+  const absolutePath = path.resolve(filePath);
+
+  const validationScript = `
+    import { LessonSchema } from './packages/content-model/src/index.ts';
+    import fs from 'fs';
+    const json = JSON.parse(fs.readFileSync('${absolutePath.replace(/\\/g, '/')}', 'utf8'));
+    try {
+      LessonSchema.parse(json);
+      console.log(JSON.stringify({ valid: true }));
+    } catch (e) {
+      const errors = e.errors.map(err => ({
+        path: err.path.join('.'),
+        message: err.message,
+        received: err.received
+      }));
+      console.log(JSON.stringify({ valid: false, errors }));
+    }
+  `;
+
+  try {
+    const result = execSync(
+      `node --experimental-strip-types -e "${validationScript.replace(/"/g, '\\"').replace(/\n/g, ' ')}"`,
+      {
+        cwd: projectRoot,
+        encoding: 'utf-8',
+        stdio: ['pipe', 'pipe', 'pipe'],
+        maxBuffer: 10 * 1024 * 1024
+      }
+    );
+    return JSON.parse(result.trim());
+  } catch (e) {
+    // If the command fails, try to parse stdout for the JSON result
+    if (e.stdout) {
+      try {
+        return JSON.parse(e.stdout.trim());
+      } catch {}
+    }
+    return { valid: false, errors: [{ path: 'unknown', message: `Zod validation failed: ${e.message}` }] };
+  }
+}
+
+// Store current file path for Zod validation
+let currentFilePath = null;
 
 // Colors for terminal output
 const colors = {
@@ -29,6 +80,23 @@ function log(color, msg) {
 
 // Validation rules
 const rules = [
+  // ZOD SCHEMA VALIDATION (Rule #0 - catches type errors, invalid enums, missing fields)
+  {
+    name: 'zod-schema-valid',
+    description: 'Lesson passes Zod schema validation (catches errorCategory, vocabulary format, etc.)',
+    check: (lesson, filePath) => {
+      const result = validateZodSchema(lesson, filePath);
+      if (result.valid) {
+        return { pass: true };
+      }
+      // Format first 3 errors for display
+      const errorMsgs = result.errors.slice(0, 3).map(e => `${e.path}: ${e.message}`);
+      const moreCount = result.errors.length - 3;
+      const errorStr = errorMsgs.join('; ') + (moreCount > 0 ? ` (+${moreCount} more)` : '');
+      return { pass: false, error: errorStr };
+    }
+  },
+
   // Schema checks
   {
     name: 'has-required-fields',
@@ -667,7 +735,7 @@ function validateLesson(filePath) {
   const errors = [];
 
   for (const rule of rules) {
-    const result = rule.check(lesson);
+    const result = rule.check(lesson, filePath);
     if (result.pass) {
       passed++;
       log('green', `  ✓ ${rule.name}`);
