@@ -1,0 +1,380 @@
+{
+  "id": "A1-M12-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Tagesablauf", "fa": "برنامه روزانه" },
+  "description": "یاد بگیرید درباره برنامه روزانه‌تان با فعل‌های جداشدنی صحبت کنید",
+  "level": "A1",
+  "module": 12,
+  "lessonNumber": 3,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "morgens", "fa": "صبح‌ها", "grammar": { "pos": "adverb" } },
+    { "de": "mittags", "fa": "ظهرها", "grammar": { "pos": "adverb" } },
+    { "de": "abends", "fa": "شب‌ها", "grammar": { "pos": "adverb" } },
+    { "de": "nachts", "fa": "شب‌ها (دیروقت)", "grammar": { "pos": "adverb" } },
+    { "de": "um ... Uhr", "fa": "ساعت ...", "grammar": { "pos": "phrase" } },
+    { "de": "früh", "fa": "زود", "grammar": { "pos": "adverb" } },
+    { "de": "spät", "fa": "دیر", "grammar": { "pos": "adverb" } },
+    { "de": "der Tagesablauf", "fa": "برنامه روزانه", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "Tagesabläufe" } } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "برنامه روزانه (Tagesablauf)",
+      "content": "در این درس یاد می‌گیرید درباره برنامه روزانه صحبت کنید:\n\n🌅 **morgens** = صبح‌ها\n☀️ **mittags** = ظهرها\n🌆 **abends** = شب‌ها (اوایل شب)\n🌙 **nachts** = شب‌ها (دیروقت)\n\n⏰ **um ... Uhr** = ساعت ...\n• um 7 Uhr = ساعت ۷\n• um halb 8 = ساعت ۷:۳۰",
+      "examples": [
+        { "de": "Morgens stehe ich früh auf.", "fa": "صبح‌ها زود بلند می‌شوم." },
+        { "de": "Abends sehe ich fern.", "fa": "شب‌ها تلویزیون می‌بینم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "morgens", "fa": "صبح‌ها" },
+      "example": { "text": { "de": "Morgens trinke ich Kaffee.", "fa": "صبح‌ها قهوه می‌نوشم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "mittags", "fa": "ظهرها" },
+      "example": { "text": { "de": "Mittags esse ich in der Kantine.", "fa": "ظهرها در سلف غذا می‌خورم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "abends", "fa": "شب‌ها" },
+      "example": { "text": { "de": "Abends räume ich auf.", "fa": "شب‌ها مرتب می‌کنم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "nachts", "fa": "شب‌ها (دیروقت)" },
+      "example": { "text": { "de": "Nachts schlafe ich.", "fa": "شب‌ها می‌خوابم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-morgens",
+      "word": "morgens",
+      "translation": "صبح‌ها",
+      "syllables": ["mor", "gens"],
+      "distractors": ["mar", "gans", "mur", "gins"]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "اوقات روز",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "morgens", "left": "صبح‌ها", "right": "شب‌ها", "correctSide": "left" },
+        { "prompt": "abends", "left": "صبح‌ها", "right": "شب‌ها", "correctSide": "right" },
+        { "prompt": "mittags", "left": "ظهرها", "right": "صبح‌ها", "correctSide": "left" },
+        { "prompt": "nachts", "left": "ظهرها", "right": "شب دیروقت", "correctSide": "right" },
+        { "prompt": "früh", "left": "زود", "right": "دیر", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "früh", "fa": "زود" },
+      "example": { "text": { "de": "Ich stehe früh auf.", "fa": "زود بلند می‌شوم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "spät", "fa": "دیر" },
+      "example": { "text": { "de": "Er kommt spät nach Hause.", "fa": "دیر به خانه می‌آید." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s8",
+      "title": "ترتیب کلمات با زمان",
+      "content": "📝 در آلمانی، زمان می‌تواند اول جمله بیاید:\n\n**زمان + فعل + فاعل + ...**\n• **Morgens** stehe **ich** auf.\n• **Um 8 Uhr** fahre **ich** ab.\n• **Abends** sehe **ich** fern.\n\n⚠️ فعل همیشه در جایگاه دوم است!\nاگر زمان اول باشد، فاعل بعد از فعل می‌آید.",
+      "examples": [
+        { "de": "Mittags kaufe ich ein.", "fa": "ظهرها خرید می‌کنم." },
+        { "de": "Um 7 Uhr stehe ich auf.", "fa": "ساعت ۷ بلند می‌شوم." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله درست است؟",
+      "options": ["Morgens ich stehe auf.", "Morgens stehe ich auf.", "Ich morgens stehe auf.", "Stehe ich morgens auf."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! فعل در جایگاه دوم است.", "incorrect": "وقتی زمان اول جمله باشد: زمان + فعل + فاعل" }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "der Tagesablauf", "fa": "برنامه روزانه" },
+      "example": { "text": { "de": "Wie ist dein Tagesablauf?", "fa": "برنامه روزانه‌ات چطور است؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-tagesablauf",
+      "word": "Tagesablauf",
+      "translation": "برنامه روزانه",
+      "syllables": ["Ta", "ges", "ab", "lauf"],
+      "distractors": ["To", "gas", "ob", "louf"]
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "برنامه روزانه الی",
+      "context": "تام از الی درباره برنامه روزانه‌اش می‌پرسد",
+      "lines": [
+        { "speaker": "Tom", "text": { "de": "Eli, wie ist dein Tagesablauf?", "fa": "الی، برنامه روزانه‌ات چطور است؟" } },
+        { "speaker": "Eli", "text": { "de": "Morgens stehe ich um 6 Uhr auf.", "fa": "صبح‌ها ساعت ۶ بلند می‌شوم." } },
+        { "speaker": "Tom", "text": { "de": "Das ist früh! Und dann?", "fa": "این زود است! و بعد؟" } },
+        { "speaker": "Eli", "text": { "de": "Um 7 Uhr fahre ich zur Arbeit ab.", "fa": "ساعت ۷ به سمت کار حرکت می‌کنم." } },
+        { "speaker": "Tom", "text": { "de": "Wann kommst du zurück?", "fa": "کی برمی‌گردی؟" } },
+        { "speaker": "Eli", "text": { "de": "Ich komme um 18 Uhr zurück.", "fa": "ساعت ۱۸ برمی‌گردم." } },
+        { "speaker": "Tom", "text": { "de": "Und abends?", "fa": "و شب‌ها؟" } },
+        { "speaker": "Eli", "text": { "de": "Abends kaufe ich ein oder sehe fern.", "fa": "شب‌ها خرید می‌کنم یا تلویزیون می‌بینم." } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "الی کی بلند می‌شود؟", "options": ["ساعت ۵", "ساعت ۶", "ساعت ۷"], "correctIndex": 1 },
+        { "question": "الی کی به خانه برمی‌گردد؟", "options": ["ساعت ۱۶", "ساعت ۱۷", "ساعت ۱۸"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} stehe ich um 7 Uhr auf.",
+      "options": ["Morgens", "Morgen", "Morgend", "Am Morgens"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "morgens = صبح‌ها (قید زمان)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Um 8 Uhr {0} ich zur Arbeit ab.",
+      "options": ["fahre", "fährt", "fahren", "abfahre"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "abfahren جداشدنی: ich fahre ... ab" }
+    },
+    {
+      "type": "word-order",
+      "id": "w1",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["stehe", "Morgens", "auf.", "ich"],
+      "correctOrder": [1, 0, 3, 2],
+      "correctSentence": { "de": "Morgens stehe ich auf.", "fa": "صبح‌ها بلند می‌شوم." }
+    },
+    {
+      "type": "word-order",
+      "id": "w2",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["sehe", "Abends", "fern.", "ich"],
+      "correctOrder": [1, 0, 3, 2],
+      "correctSentence": { "de": "Abends sehe ich fern.", "fa": "شب‌ها تلویزیون می‌بینم." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s10",
+      "title": "um ... Uhr",
+      "content": "⏰ برای گفتن ساعت دقیق:\n\n**um + عدد + Uhr**\n• um 7 Uhr = ساعت ۷\n• um 12 Uhr = ساعت ۱۲\n• um 20 Uhr = ساعت ۲۰\n\n📝 مثال‌ها:\n• Ich stehe **um 6 Uhr** auf.\n• Der Film fängt **um 8 Uhr** an.\n• Wir kommen **um 10 Uhr** an.",
+      "examples": [
+        { "de": "Um wie viel Uhr stehst du auf?", "fa": "ساعت چند بلند می‌شوی؟" },
+        { "de": "Um 7 Uhr.", "fa": "ساعت ۷." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "«Um wie viel Uhr fängt der Film an?» یعنی چه؟",
+      "options": ["فیلم چقدر طول می‌کشد؟", "فیلم ساعت چند شروع می‌شود؟", "فیلم کجا نمایش داده می‌شود؟", "فیلم چه نام دارد؟"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "Um wie viel Uhr = ساعت چند" }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "اوقات روز را با ترجمه جفت کنید",
+      "items": [
+        { "id": "i1", "text": "morgens" },
+        { "id": "i2", "text": "mittags" },
+        { "id": "i3", "text": "abends" },
+        { "id": "i4", "text": "nachts" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "شب‌ها" },
+        { "id": "m2", "text": "صبح‌ها" },
+        { "id": "m3", "text": "شب دیروقت" },
+        { "id": "m4", "text": "ظهرها" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m4"],
+        ["i3", "m1"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "یک روز معمولی",
+      "context": "تام برنامه روزانه‌اش را توضیح می‌دهد",
+      "lines": [
+        { "speaker": "Tom", "text": { "de": "Ich stehe spät auf, um 9 Uhr.", "fa": "دیر بلند می‌شوم، ساعت ۹." } },
+        { "speaker": "Eli", "text": { "de": "Das ist spät! Arbeitest du nicht?", "fa": "این دیر است! کار نمی‌کنی؟" } },
+        { "speaker": "Tom", "text": { "de": "Doch, aber ich arbeite von zu Hause.", "fa": "چرا، ولی از خانه کار می‌کنم." } },
+        { "speaker": "Eli", "text": { "de": "Das ist praktisch! Wann fängst du an?", "fa": "این خوبه! کی شروع می‌کنی؟" } },
+        { "speaker": "Tom", "text": { "de": "Ich fange um 10 Uhr an und höre um 18 Uhr auf.", "fa": "ساعت ۱۰ شروع می‌کنم و ساعت ۱۸ تمام می‌کنم." } },
+        { "speaker": "Eli", "text": { "de": "Und abends?", "fa": "و شب‌ها؟" } },
+        { "speaker": "Tom", "text": { "de": "Abends rufe ich Freunde an oder gehe aus.", "fa": "شب‌ها به دوستان زنگ می‌زنم یا بیرون می‌روم." } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "تام کی بلند می‌شود؟", "options": ["ساعت ۷", "ساعت ۸", "ساعت ۹"], "correctIndex": 2 },
+        { "question": "تام کی کارش تمام می‌شود؟", "options": ["ساعت ۱۶", "ساعت ۱۷", "ساعت ۱۸"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} schlafe ich.",
+      "options": ["Nachts", "Nacht", "Nachten", "Am Nachts"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "nachts = شب‌ها (دیروقت)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Um wie viel Uhr {0} du auf?",
+      "options": ["stehst", "stehe", "steht", "stehen"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "du stehst ... auf" }
+    },
+    {
+      "type": "word-order",
+      "id": "w3",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["fängt", "Um 8 Uhr", "an.", "der Film"],
+      "correctOrder": [1, 0, 3, 2],
+      "correctSentence": { "de": "Um 8 Uhr fängt der Film an.", "fa": "ساعت ۸ فیلم شروع می‌شود." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "«Mittags esse ich in der Kantine» یعنی چه؟",
+      "options": ["صبح‌ها در سلف غذا می‌خورم", "ظهرها در سلف غذا می‌خورم", "شب‌ها در سلف غذا می‌خورم", "ظهرها در خانه غذا می‌خورم"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "mittags = ظهرها، Kantine = سلف" }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "فعل‌های جداشدنی با زمان",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "Ich stehe früh auf.", "left": "زود بلند می‌شوم", "right": "دیر بلند می‌شوم", "correctSide": "left" },
+        { "prompt": "Er kommt spät zurück.", "left": "زود برمی‌گردد", "right": "دیر برمی‌گردد", "correctSide": "right" },
+        { "prompt": "Der Zug fährt um 10 ab.", "left": "قطار ساعت ۱۰ می‌رسد", "right": "قطار ساعت ۱۰ حرکت می‌کند", "correctSide": "right" },
+        { "prompt": "Abends kaufe ich ein.", "left": "صبح خرید می‌کنم", "right": "شب خرید می‌کنم", "correctSide": "right" },
+        { "prompt": "Morgens rufe ich an.", "left": "صبح زنگ می‌زنم", "right": "شب زنگ می‌زنم", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-abends",
+      "word": "abends",
+      "translation": "شب‌ها",
+      "syllables": ["abends"],
+      "distractors": ["abands", "ebends", "abonds", "obends"]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-mittags",
+      "word": "mittags",
+      "translation": "ظهرها",
+      "syllables": ["mit", "tags"],
+      "distractors": ["mat", "tegs", "mot", "togs"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Wann {0} du mit der Arbeit auf?",
+      "options": ["hörst", "hört", "höre", "aufhörst"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "aufhören: du hörst ... auf" }
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Morgens stehe ich um sechs Uhr auf.",
+      "translation": "صبح‌ها ساعت شش بلند می‌شوم.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Abends sehe ich gern fern.",
+      "translation": "شب‌ها دوست دارم تلویزیون ببینم.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-3",
+      "targetText": "Um wie viel Uhr kommst du zurück?",
+      "translation": "ساعت چند برمی‌گردی؟",
+      "difficulty": "A1"
+    },
+    {
+      "type": "memory-match",
+      "id": "g3",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "morgens", "fa": "صبح‌ها" },
+        { "de": "mittags", "fa": "ظهرها" },
+        { "de": "abends", "fa": "شب‌ها" },
+        { "de": "nachts", "fa": "شب دیروقت" },
+        { "de": "früh", "fa": "زود" },
+        { "de": "spät", "fa": "دیر" }
+      ],
+      "timeLimit": 60
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "morgens", "fa": "صبح‌ها" },
+        { "de": "mittags", "fa": "ظهرها" },
+        { "de": "abends", "fa": "شب‌ها" },
+        { "de": "nachts", "fa": "شب دیروقت" },
+        { "de": "früh", "fa": "زود" },
+        { "de": "spät", "fa": "دیر" },
+        { "de": "um ... Uhr", "fa": "ساعت ..." },
+        { "de": "der Tagesablauf", "fa": "برنامه روزانه" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما یاد گرفتید درباره برنامه روزانه صحبت کنید!\n\n🌅 **اوقات روز:**\n• morgens = صبح‌ها\n• mittags = ظهرها\n• abends = شب‌ها\n• nachts = شب دیروقت\n\n⏰ **ساعت:**\n• um 7 Uhr = ساعت ۷\n• Um wie viel Uhr? = ساعت چند؟\n\n📝 **ترتیب جمله:**\nزمان + فعل + فاعل\n**Morgens** stehe **ich** auf.",
+      "xpEarned": 50,
+      "vocabularyLearned": [
+        { "word": { "de": "morgens", "fa": "صبح‌ها" } },
+        { "word": { "de": "mittags", "fa": "ظهرها" } },
+        { "word": { "de": "abends", "fa": "شب‌ها" } },
+        { "word": { "de": "nachts", "fa": "شب دیروقت" } },
+        { "word": { "de": "früh", "fa": "زود" } },
+        { "word": { "de": "spät", "fa": "دیر" } },
+        { "word": { "de": "um ... Uhr", "fa": "ساعت ..." } },
+        { "word": { "de": "der Tagesablauf", "fa": "برنامه روزانه" } }
+      ]
+    }
+  ]
+}

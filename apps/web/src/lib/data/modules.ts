@@ -413,6 +413,12 @@ const DE_FA_A1_MODULES: ModuleStub[] = [
         title: "زندگی روزمره (Alltag)",
         description: "یاد بگیرید فعل‌های جداشدنی روزمره مثل einkaufen و fernsehen.",
         path: "/learn/de-fa/A1/A1-M12-L02"
+      },
+      {
+        id: "A1-M12-L03",
+        title: "برنامه روزانه (Tagesablauf)",
+        description: "یاد بگیرید درباره برنامه روزانه‌تان با فعل‌های جداشدنی صحبت کنید.",
+        path: "/learn/de-fa/A1/A1-M12-L03"
       }
     ]
   }
