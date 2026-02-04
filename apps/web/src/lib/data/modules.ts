@@ -652,6 +652,12 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         title: "Modalverben - فعل‌های وجهی",
         description: "یاد بگیرید فرم شرطی فعل‌های وجهی را: könnte, müsste, sollte, dürfte.",
         path: "/learn/de-fa/A2/A2-M06-L03"
+      },
+      {
+        id: "A2-M06-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "تمرین ترکیبی همه فرم‌های Konjunktiv II.",
+        path: "/learn/de-fa/A2/A2-M06-L04"
       }
     ]
   }

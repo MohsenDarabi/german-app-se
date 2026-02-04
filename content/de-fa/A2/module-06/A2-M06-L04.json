@@ -1,0 +1,374 @@
+{
+  "id": "A2-M06-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Konjunktiv II - Zusammenfassung", "fa": "شرطی - جمع‌بندی" },
+  "description": "تمرین ترکیبی همه فرم‌های Konjunktiv II: würde, hätte, wäre, könnte, müsste, sollte",
+  "level": "A2",
+  "module": 6,
+  "lessonNumber": 4,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "würde", "fa": "می‌شد (شرطی)", "grammar": { "pos": "verb", "tense": "konjunktiv II" } },
+    { "de": "hätte", "fa": "داشتم (شرطی)", "grammar": { "pos": "verb", "tense": "konjunktiv II", "infinitive": "haben" } },
+    { "de": "wäre", "fa": "بودم (شرطی)", "grammar": { "pos": "verb", "tense": "konjunktiv II", "infinitive": "sein" } },
+    { "de": "könnte", "fa": "می‌توانستم", "grammar": { "pos": "verb", "tense": "konjunktiv II", "infinitive": "können" } },
+    { "de": "müsste", "fa": "باید (شرطی)", "grammar": { "pos": "verb", "tense": "konjunktiv II", "infinitive": "müssen" } },
+    { "de": "sollte", "fa": "بهتره", "grammar": { "pos": "verb", "tense": "konjunktiv II", "infinitive": "sollen" } },
+    { "de": "Traum", "fa": "رویا", "grammar": { "pos": "noun", "gender": "masculine" } },
+    { "de": "Wunsch", "fa": "آرزو", "grammar": { "pos": "noun", "gender": "masculine" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "مرور Konjunktiv II",
+      "content": "📝 **همه فرم‌های Konjunktiv II:**\n\n| فعل | شرطی | کاربرد |\n|-----|------|--------|\n| werden | würde | آرزو، فرضی |\n| haben | hätte | داشتن (شرطی) |\n| sein | wäre | بودن (شرطی) |\n| können | könnte | درخواست مودبانه |\n| müssen | müsste | باید نرم |\n| sollen | sollte | توصیه |",
+      "examples": [
+        { "de": "Ich würde gern reisen.", "fa": "دوست دارم سفر کنم." },
+        { "de": "Das wäre schön!", "fa": "خوب می‌شد!" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "Traum", "fa": "رویا" },
+      "example": { "text": { "de": "Das wäre mein Traum!", "fa": "این رویای من می‌شد!" } }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "Wunsch", "fa": "آرزو" },
+      "example": { "text": { "de": "Ich hätte einen Wunsch.", "fa": "یک آرزو داشتم." } }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام فعل برای «دوست دارم بیایم» مناسب است؟",
+      "options": ["Ich werde gern kommen.", "Ich würde gern kommen.", "Ich will gern kommen.", "Ich kann gern kommen."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! würde gern برای آرزوی مودبانه", "incorrect": "würde gern = دوست دارم (مودبانه)" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام فعل برای «کاش وقت داشتم» مناسب است؟",
+      "options": ["Ich habe Zeit.", "Ich hatte Zeit.", "Ich hätte Zeit.", "Ich werde Zeit haben."],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! hätte برای آرزوی داشتن", "incorrect": "hätte = داشتم (شرطی)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das {0} toll!",
+      "options": ["ist", "war", "wäre", "wird"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "wäre برای موقعیت فرضی" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} du mir bitte helfen?",
+      "options": ["Kannst", "Könntest", "Konntest", "Willst"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Könntest مودبانه‌ترین فرم درخواست" }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "würde",
+      "translation": "می‌شد",
+      "syllables": ["wür", "de"],
+      "distractors": ["wir", "da", "war", "di"]
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "آرزوها",
+      "context": "دوستان درباره آرزوهایشان صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Wenn du einen Wunsch hättest, was wäre das?", "fa": "اگر یک آرزو داشتی، چی بود؟" } },
+        { "speaker": "Ben", "text": { "de": "Ich würde gern um die Welt reisen.", "fa": "دوست دارم دور دنیا سفر کنم." } },
+        { "speaker": "Anna", "text": { "de": "Das wäre mein Traum!", "fa": "این رویای من می‌شد!" } },
+        { "speaker": "Ben", "text": { "de": "Wir könnten zusammen reisen.", "fa": "می‌تونیم با هم سفر کنیم." } },
+        { "speaker": "Anna", "text": { "de": "Ja! Aber wir müssten viel Geld sparen.", "fa": "آره! ولی باید کلی پول پس‌انداز کنیم." } }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["reisen.", "gern", "würde", "Ich"],
+      "correctOrder": [3, 2, 1, 0],
+      "correctSentence": { "de": "Ich würde gern reisen.", "fa": "دوست دارم سفر کنم." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s4",
+      "title": "کی از چه فرمی استفاده کنیم؟",
+      "content": "📝 **راهنمای انتخاب:**\n\n• **würde** + مصدر → آرزو، فرضی\n• **hätte** → داشتن چیزی (شرطی)\n• **wäre** → بودن چیزی/جایی (شرطی)\n• **könnte** → درخواست مودبانه، امکان\n• **sollte** → توصیه نرم\n• **müsste** → باید (نرم‌تر)",
+      "examples": [
+        { "de": "Ich würde gern helfen. (آرزو)", "fa": "دوست دارم کمک کنم." },
+        { "de": "Könntest du...? (درخواست)", "fa": "می‌تونی...؟" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "برای توصیه «بهتره بیشتر ورزش کنی» کدام فعل مناسب است؟",
+      "options": ["Du musst mehr Sport machen.", "Du solltest mehr Sport machen.", "Du kannst mehr Sport machen.", "Du wirst mehr Sport machen."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! solltest برای توصیه نرم", "incorrect": "solltest = بهتره (توصیه)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Wenn ich reich {0}, würde ich ein Haus kaufen.",
+      "options": ["bin", "war", "wäre", "werde"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "Wenn + wäre برای شرط فرضی" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Du {0} früher schlafen gehen.",
+      "options": ["musst", "solltest", "kannst", "willst"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "solltest برای توصیه دوستانه" }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "hätte",
+      "translation": "داشتم (شرطی)",
+      "syllables": ["hät", "te"],
+      "distractors": ["hat", "ta", "het", "tu"]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "موقعیت را با فعل مناسب وصل کنید",
+      "items": [
+        { "id": "i1", "text": "آرزو کردن" },
+        { "id": "i2", "text": "درخواست مودبانه" },
+        { "id": "i3", "text": "توصیه نرم" },
+        { "id": "i4", "text": "احتمال" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "würde gern" },
+        { "id": "m2", "text": "könntest du" },
+        { "id": "m3", "text": "solltest" },
+        { "id": "m4", "text": "dürfte" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"],
+        ["i4", "m4"]
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "فعل مناسب را انتخاب کن",
+      "instruction": "کدام فعل درست است؟",
+      "questions": [
+        { "prompt": "آرزو: Ich ___ gern kommen.", "left": "würde", "right": "werde", "correctSide": "left" },
+        { "prompt": "داشتن: Ich ___ gern mehr Zeit.", "left": "habe", "right": "hätte", "correctSide": "right" },
+        { "prompt": "بودن: Das ___ toll!", "left": "wäre", "right": "ist", "correctSide": "left" },
+        { "prompt": "درخواست: ___ du mir helfen?", "left": "Kannst", "right": "Könntest", "correctSide": "right" },
+        { "prompt": "توصیه: Du ___ mehr lernen.", "left": "solltest", "right": "musst", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در رستوران",
+      "context": "سفارش دادن مودبانه",
+      "lines": [
+        { "speaker": "Kellner", "text": { "de": "Was hätten Sie gern?", "fa": "چه میل دارید؟" } },
+        { "speaker": "Gast", "text": { "de": "Ich hätte gern die Speisekarte.", "fa": "منو را می‌خواستم." } },
+        { "speaker": "Kellner", "text": { "de": "Könnten Sie einen Moment warten?", "fa": "می‌توانید یک لحظه صبر کنید؟" } },
+        { "speaker": "Gast", "text": { "de": "Ja, natürlich. Das wäre kein Problem.", "fa": "بله، البته. مشکلی نیست." } }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["helfen?", "mir", "Sie", "Könnten"],
+      "correctOrder": [3, 2, 1, 0],
+      "correctSentence": { "de": "Könnten Sie mir helfen?", "fa": "می‌توانید کمکم کنید؟" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["Zeit.", "mehr", "gern", "hätte", "Ich"],
+      "correctOrder": [4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Ich hätte gern mehr Zeit.", "fa": "کاش وقت بیشتری داشتم." }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "wäre",
+      "translation": "بودم (شرطی)",
+      "syllables": ["wä", "re"],
+      "distractors": ["wa", "ri", "wo", "ra"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "«اگر وقت داشتم، می‌آمدم» به آلمانی چیست؟",
+      "options": ["Wenn ich Zeit habe, komme ich.", "Wenn ich Zeit hätte, würde ich kommen.", "Wenn ich Zeit hatte, kam ich.", "Wenn ich Zeit haben werde, werde ich kommen."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! hätte + würde برای شرط فرضی", "incorrect": "شرط فرضی: Wenn + hätte, würde + Infinitiv" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er {0} etwa 30 Jahre alt sein.",
+      "options": ["ist", "war", "dürfte", "muss"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "dürfte برای تخمین با احتمال بالا" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich {0} eigentlich jetzt gehen.",
+      "options": ["muss", "müsste", "kann", "will"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "müsste = باید (نرم‌تر)" }
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "eigentlich", "fa": "در واقع / اصلاً" },
+      "example": { "text": { "de": "Ich müsste eigentlich gehen.", "fa": "در واقع باید بروم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "vielleicht", "fa": "شاید" },
+      "example": { "text": { "de": "Das könnte vielleicht klappen.", "fa": "شاید جواب بدهد." } }
+    },
+    {
+      "type": "dialog",
+      "id": "d3",
+      "title": "برنامه‌ریزی تعطیلات",
+      "context": "زوج درباره تعطیلات صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Maria", "text": { "de": "Wohin würdest du gern reisen?", "fa": "دوست داری کجا سفر کنی؟" } },
+        { "speaker": "Thomas", "text": { "de": "Ich wäre gern am Strand.", "fa": "کاش کنار ساحل بودم." } },
+        { "speaker": "Maria", "text": { "de": "Das hätte ich mir denken können!", "fa": "می‌توانستم حدس بزنم!" } },
+        { "speaker": "Thomas", "text": { "de": "Wir sollten früh buchen.", "fa": "بهتره زود رزرو کنیم." } },
+        { "speaker": "Maria", "text": { "de": "Ja, das dürfte billiger sein.", "fa": "آره، احتمالاً ارزان‌تر می‌شه." } }
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "könnte",
+      "translation": "می‌توانستم",
+      "syllables": ["könn", "te"],
+      "distractors": ["kann", "ta", "kun", "tu"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc5",
+      "question": "کدام جمله برای احتمال بالا مناسب است؟",
+      "options": ["Das kann richtig sein.", "Das ist richtig.", "Das dürfte richtig sein.", "Das muss richtig sein."],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! dürfte برای احتمال بالا", "incorrect": "dürfte = احتمالاً (با اطمینان نسبی)" }
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "فعل مناسب را انتخاب کنید",
+      "words": [
+        { "de": "آرزو کردن", "fa": "würde gern", "options": ["würde gern", "muss", "kann", "will"], "correctIndex": 0 },
+        { "de": "درخواست مودبانه", "fa": "Könnten Sie...?", "options": ["Müssen Sie...?", "Können Sie...?", "Könnten Sie...?", "Wollen Sie...?"], "correctIndex": 2 },
+        { "de": "توصیه نرم", "fa": "solltest", "options": ["musst", "kannst", "willst", "solltest"], "correctIndex": 3 }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo4",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["kommen.", "ich", "würde", "hätte,", "Zeit", "Wenn", "ich"],
+      "correctOrder": [5, 6, 4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Wenn ich Zeit hätte, würde ich kommen.", "fa": "اگر وقت داشتم، می‌آمدم." }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r2",
+      "title": "ترجمه سریع",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "Ich würde gern", "left": "دوست دارم", "right": "باید", "correctSide": "left" },
+        { "prompt": "Das wäre toll", "left": "عالی بود", "right": "عالی می‌شد", "correctSide": "right" },
+        { "prompt": "Du solltest", "left": "بهتره", "right": "باید", "correctSide": "left" },
+        { "prompt": "Ich hätte gern", "left": "کاش داشتم", "right": "دارم", "correctSide": "left" },
+        { "prompt": "Könntest du", "left": "می‌توانی", "right": "می‌تونی (مودبانه)", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich würde gern nach Deutschland reisen.",
+      "translation": "دوست دارم به آلمان سفر کنم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Könnten Sie mir bitte helfen?",
+      "translation": "می‌توانید لطفاً کمکم کنید؟"
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Das wäre wirklich schön!",
+      "translation": "واقعاً خوب می‌شد!"
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "würde gern", "fa": "دوست دارم" },
+        { "de": "hätte gern", "fa": "کاش داشتم" },
+        { "de": "wäre", "fa": "می‌شد / بودم" },
+        { "de": "solltest", "fa": "بهتره" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp1",
+      "title": "آفرین! 🎉",
+      "message": "شما Konjunktiv II را کامل یاد گرفتید!",
+      "keyPoints": [
+        "würde + مصدر → آرزو و موقعیت فرضی",
+        "hätte → داشتن (شرطی)",
+        "wäre → بودن (شرطی)",
+        "könnte → درخواست مودبانه / احتمال",
+        "sollte → توصیه نرم",
+        "müsste → باید (نرم‌تر)",
+        "dürfte → احتمال بالا"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "würde", "fa": "می‌شد" } },
+        { "word": { "de": "hätte", "fa": "داشتم (شرطی)" } },
+        { "word": { "de": "wäre", "fa": "بودم (شرطی)" } },
+        { "word": { "de": "könnte", "fa": "می‌توانستم" } },
+        { "word": { "de": "sollte", "fa": "بهتره" } }
+      ]
+    }
+  ]
+}
