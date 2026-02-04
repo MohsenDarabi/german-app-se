@@ -1,0 +1,669 @@
+{
+  "id": "A1-M07-L04",
+  "languagePair": "de-fa",
+  "source": {
+    "code": "de",
+    "name": "Deutsch"
+  },
+  "target": {
+    "code": "fa",
+    "name": "فارسی"
+  },
+  "title": {
+    "de": "Das Familienfoto",
+    "fa": "عکس خانوادگی"
+  },
+  "description": "یاد بگیرید چطور عکس خانوادگی را توصیف کنید و از sein/ihr استفاده کنید",
+  "level": "A1",
+  "module": 7,
+  "lessonNumber": 4,
+  "totalSteps": 40,
+  "estimatedMinutes": 19,
+  "vocabulary": [
+    { "de": "das Foto", "fa": "عکس", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Fotos" } } },
+    { "de": "das Familienfoto", "fa": "عکس خانوادگی", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Familienfotos" } } },
+    { "de": "der Mann", "fa": "شوهر/مرد", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Männer" } } },
+    { "de": "die Frau", "fa": "زن/همسر", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Frauen" } } },
+    { "de": "verheiratet", "fa": "متأهل", "grammar": { "pos": "adjective" } },
+    { "de": "ledig", "fa": "مجرد", "grammar": { "pos": "adjective" } },
+    { "de": "geschieden", "fa": "مطلقه/طلاق گرفته", "grammar": { "pos": "adjective" } },
+    { "de": "sein", "fa": "...اش (مرد)", "grammar": { "pos": "pronoun" } },
+    { "de": "ihr", "fa": "...اش (زن)", "grammar": { "pos": "pronoun" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "توصیف عکس خانوادگی",
+      "content": "در این درس یاد می‌گیریم چطور عکس خانوادگی را توصیف کنیم:\n\n**معرفی افراد:**\n• Das ist mein Vater. = این پدرم است.\n• Das ist meine Mutter. = این مادرم است.\n\n**وضعیت تأهل:**\n• verheiratet = متأهل\n• ledig = مجرد\n• geschieden = مطلقه\n\n📝 **نکته:** در این درس sein (مال او-مرد) و ihr (مال او-زن) را هم یاد می‌گیریم!",
+      "examples": [
+        {
+          "de": "Schau mal, das ist mein Familienfoto!",
+          "fa": "ببین، این عکس خانوادگیم است!"
+        },
+        {
+          "de": "Mein Bruder ist verheiratet.",
+          "fa": "برادرم متأهل است."
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": {
+        "de": "das Foto",
+        "fa": "عکس"
+      },
+      "example": {
+        "text": {
+          "de": "Das ist ein schönes Foto.",
+          "fa": "این عکس قشنگی است."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Foto",
+      "word": "Foto",
+      "translation": "عکس",
+      "syllables": ["Fo", "to"],
+      "distractors": ["Fa", "ta", "Fu", "tu"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": {
+        "de": "das Familienfoto",
+        "fa": "عکس خانوادگی"
+      },
+      "example": {
+        "text": {
+          "de": "Wir machen ein Familienfoto.",
+          "fa": "ما یک عکس خانوادگی می‌گیریم."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Familienfoto",
+      "word": "Familienfoto",
+      "translation": "عکس خانوادگی",
+      "syllables": ["Fa", "mi", "li", "en", "fo", "to"],
+      "distractors": ["Fe", "mu", "lu", "an", "fu", "ta"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": {
+        "de": "der Mann",
+        "fa": "شوهر/مرد"
+      },
+      "example": {
+        "text": {
+          "de": "Das ist mein Mann.",
+          "fa": "این شوهرم است."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Mann",
+      "word": "Mann",
+      "translation": "شوهر/مرد",
+      "syllables": ["Mann"],
+      "distractors": ["Menn", "Munn", "Minn", "Monn"]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": {
+        "de": "die Frau",
+        "fa": "زن/همسر"
+      },
+      "example": {
+        "text": {
+          "de": "Das ist meine Frau.",
+          "fa": "این همسرم است."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Frau",
+      "word": "Frau",
+      "translation": "زن/همسر",
+      "syllables": ["Frau"],
+      "distractors": ["Freu", "Frou", "Friu", "Frao"]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "همسر",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        {
+          "prompt": "Mann",
+          "left": "شوهر/مرد",
+          "right": "زن/همسر",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Frau",
+          "left": "شوهر/مرد",
+          "right": "زن/همسر",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Foto",
+          "left": "عکس",
+          "right": "فیلم",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Familienfoto",
+          "left": "عکس دوستان",
+          "right": "عکس خانوادگی",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "شوهر =",
+          "left": "Frau",
+          "right": "Mann",
+          "correctSide": "right"
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": {
+        "de": "verheiratet",
+        "fa": "متأهل"
+      },
+      "example": {
+        "text": {
+          "de": "Meine Schwester ist verheiratet.",
+          "fa": "خواهرم متأهل است."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-verheiratet",
+      "word": "verheiratet",
+      "translation": "متأهل",
+      "syllables": ["ver", "hei", "ra", "tet"],
+      "distractors": ["vor", "hai", "ro", "tat"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": {
+        "de": "ledig",
+        "fa": "مجرد"
+      },
+      "example": {
+        "text": {
+          "de": "Mein Bruder ist noch ledig.",
+          "fa": "برادرم هنوز مجرد است."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-ledig",
+      "word": "ledig",
+      "translation": "مجرد",
+      "syllables": ["le", "dig"],
+      "distractors": ["la", "dag", "lo", "dug"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": {
+        "de": "geschieden",
+        "fa": "مطلقه/طلاق گرفته"
+      },
+      "example": {
+        "text": {
+          "de": "Mein Onkel ist geschieden.",
+          "fa": "عمویم طلاق گرفته است."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-geschieden",
+      "word": "geschieden",
+      "translation": "طلاق گرفته",
+      "syllables": ["ge", "schie", "den"],
+      "distractors": ["ga", "scha", "dan", "go"]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "وضعیت تأهل",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        {
+          "prompt": "verheiratet",
+          "left": "متأهل",
+          "right": "مجرد",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "ledig",
+          "left": "متأهل",
+          "right": "مجرد",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "geschieden",
+          "left": "متأهل",
+          "right": "طلاق گرفته",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "مجرد =",
+          "left": "ledig",
+          "right": "verheiratet",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "متأهل =",
+          "left": "ledig",
+          "right": "verheiratet",
+          "correctSide": "right"
+        }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "sein و ihr (مال او)",
+      "content": "تا حالا mein/meine (مال من) یاد گرفتیم. حالا:\n\n👨 **sein** = مال او (مرد):\n• sein Vater = پدرش (مرد)\n• seine Mutter = مادرش (مرد)\n\n👩 **ihr** = مال او (زن):\n• ihr Vater = پدرش (زن)\n• ihre Mutter = مادرش (زن)\n\n📝 **قاعده:** مثل mein/meine:\n• sein/ihr + مذکر/خنثی\n• seine/ihre + مونث/جمع",
+      "examples": [
+        {
+          "de": "Tom und sein Bruder spielen Fußball.",
+          "fa": "تام و برادرش فوتبال بازی می‌کنند."
+        },
+        {
+          "de": "Sara und ihre Schwester kochen.",
+          "fa": "سارا و خواهرش آشپزی می‌کنند."
+        }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "s10",
+      "title": "مکالمه: عکس خانوادگی",
+      "context": "الی عکس خانوادگی‌اش را به تام نشان می‌دهد",
+      "lines": [
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Schau mal, Tom! Das ist mein Familienfoto.",
+            "fa": "ببین، تام! این عکس خانوادگیم است."
+          },
+          "mood": "happy"
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Oh, schön! Wer ist das?",
+            "fa": "اوه، قشنگه! این کیه؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Das ist mein Bruder Ali. Er ist verheiratet.",
+            "fa": "این برادرم علی است. او متأهل است."
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Und wer ist die Frau neben ihm?",
+            "fa": "و این زن کنار او کیست؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Das ist seine Frau Mina. Und das ist sein Sohn.",
+            "fa": "این همسرش مینا است. و این پسرش است."
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Süß! Wie alt ist er?",
+            "fa": "ناز! چند سالشه؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Er ist drei Jahre alt.",
+            "fa": "سه ساله است."
+          }
+        }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        {
+          "question": "برادر الی متأهل است یا مجرد؟",
+          "options": ["مجرد", "متأهل", "طلاق گرفته"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: Er ist verheiratet (متأهل است)"
+        },
+        {
+          "question": "پسر علی چند ساله است؟",
+          "options": ["دو ساله", "سه ساله", "چهار ساله"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: Er ist drei Jahre alt (سه ساله است)"
+        }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s11",
+      "instruction": "جای خالی را پر کنید (sein یا seine)",
+      "sentence": "Tom liebt {0} Mutter sehr.",
+      "options": [
+        "sein",
+        "seine",
+        "ihr",
+        "ihre"
+      ],
+      "correctAnswers": [1],
+      "feedback": {
+        "explanation": "**Seine** Mutter = مادرش (تام مرد است، Mutter مونث است)"
+      },
+      "feedbackTip": {
+        "category": "wrong-possessive",
+        "tip": "تام مرد است پس از **sein/seine** استفاده می‌کنیم. Mutter مونث است پس **seine** درست است."
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s12",
+      "instruction": "جای خالی را پر کنید (ihr یا ihre)",
+      "sentence": "Sara besucht {0} Oma.",
+      "options": [
+        "sein",
+        "seine",
+        "ihr",
+        "ihre"
+      ],
+      "correctAnswers": [3],
+      "feedback": {
+        "explanation": "**Ihre** Oma = مامان‌بزرگش (سارا زن است، Oma مونث است)"
+      },
+      "feedbackTip": {
+        "category": "wrong-possessive",
+        "tip": "سارا زن است پس از **ihr/ihre** استفاده می‌کنیم. Oma مونث است پس **ihre** درست است."
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s13",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Max spielt mit {0} Bruder.",
+      "options": [
+        "sein",
+        "seinem",
+        "ihr",
+        "ihrem"
+      ],
+      "correctAnswers": [1],
+      "feedback": {
+        "explanation": "**Seinem** Bruder = با برادرش (mit + Dativ، ماکس مرد است)"
+      },
+      "feedbackTip": {
+        "category": "wrong-possessive",
+        "tip": "ماکس مرد است پس sein. بعد از mit حالت Dativ می‌آید: sein → seinem"
+      }
+    },
+    {
+      "type": "matching",
+      "id": "s14",
+      "instruction": "کلمات آلمانی را با فارسی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "verheiratet" },
+        { "id": "i2", "text": "ledig" },
+        { "id": "i3", "text": "geschieden" },
+        { "id": "i4", "text": "Familienfoto" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "مجرد" },
+        { "id": "m2", "text": "متأهل" },
+        { "id": "m3", "text": "عکس خانوادگی" },
+        { "id": "m4", "text": "طلاق گرفته" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m1"],
+        ["i3", "m4"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s15",
+      "question": "اگر درباره خواهر سارا صحبت می‌کنیم، کدام درست است؟",
+      "options": [
+        "sein Schwester",
+        "seine Schwester",
+        "ihr Schwester",
+        "ihre Schwester"
+      ],
+      "correctAnswerIndex": 3,
+      "feedback": {
+        "correct": "آفرین! سارا زن است پس ihr/ihre. Schwester مونث است پس ihre.",
+        "incorrect": "سارا زن است، پس از ihr/ihre استفاده می‌کنیم. Schwester مونث است (die Schwester) پس ihre درست است."
+      },
+      "feedbackTip": {
+        "category": "wrong-possessive",
+        "tip": "برای زن: ihr (مذکر/خنثی) یا ihre (مونث/جمع). Schwester مونث است → ihre Schwester"
+      }
+    },
+    {
+      "type": "dialog",
+      "id": "s16",
+      "title": "مکالمه: معرفی خانواده",
+      "context": "سارا خانواده‌اش را معرفی می‌کند",
+      "lines": [
+        {
+          "speaker": "Sara",
+          "text": {
+            "de": "Das ist meine Familie. Hier sind meine Eltern.",
+            "fa": "این خانواده‌ام است. اینجا والدینم هستند."
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Sind sie verheiratet?",
+            "fa": "آن‌ها متأهل هستند؟"
+          }
+        },
+        {
+          "speaker": "Sara",
+          "text": {
+            "de": "Nein, sie sind geschieden. Mein Vater wohnt jetzt in Hamburg.",
+            "fa": "نه، آن‌ها طلاق گرفته‌اند. پدرم الان در هامبورگ زندگی می‌کند."
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Und deine Mutter?",
+            "fa": "و مادرت؟"
+          }
+        },
+        {
+          "speaker": "Sara",
+          "text": {
+            "de": "Meine Mutter wohnt hier in Berlin mit mir und meiner Schwester.",
+            "fa": "مادرم اینجا در برلین با من و خواهرم زندگی می‌کند."
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Ist deine Schwester verheiratet?",
+            "fa": "خواهرت متأهل است؟"
+          }
+        },
+        {
+          "speaker": "Sara",
+          "text": {
+            "de": "Nein, sie ist noch ledig. Sie ist erst zwanzig.",
+            "fa": "نه، هنوز مجرد است. فقط بیست سالش است."
+          }
+        }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        {
+          "question": "والدین سارا چه وضعیتی دارند؟",
+          "options": ["متأهل", "مجرد", "طلاق گرفته"],
+          "correctIndex": 2,
+          "explanation": "سارا گفت: sie sind geschieden (طلاق گرفته‌اند)"
+        },
+        {
+          "question": "خواهر سارا متأهل است؟",
+          "options": ["بله", "نه، مجرد است", "طلاق گرفته"],
+          "correctIndex": 1,
+          "explanation": "سارا گفت: sie ist noch ledig (هنوز مجرد است)"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g3",
+      "title": "sein یا ihr؟",
+      "instruction": "درست را انتخاب کنید",
+      "questions": [
+        {
+          "prompt": "Tom → Vater",
+          "left": "sein Vater",
+          "right": "ihr Vater",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Sara → Mutter",
+          "left": "seine Mutter",
+          "right": "ihre Mutter",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Max → Schwester",
+          "left": "seine Schwester",
+          "right": "ihre Schwester",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Eli → Bruder",
+          "left": "sein Bruder",
+          "right": "ihr Bruder",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Frau Müller → Mann",
+          "left": "sein Mann",
+          "right": "ihr Mann",
+          "correctSide": "right"
+        }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s17",
+      "title": "خلاصه ضمایر ملکی",
+      "content": "**ضمایر ملکی در آلمانی:**\n\n| شخص | مذکر/خنثی | مونث/جمع |\n|-----|-----------|----------|\n| من | mein | meine |\n| تو | dein | deine |\n| او (مرد) | sein | seine |\n| او (زن) | ihr | ihre |\n\n📝 **مثال:**\n• mein Vater, meine Mutter\n• sein Vater, seine Mutter\n• ihr Vater, ihre Mutter",
+      "examples": [
+        {
+          "de": "Das ist mein Bruder und seine Frau.",
+          "fa": "این برادرم و همسرش است."
+        },
+        {
+          "de": "Maria liebt ihren Mann.",
+          "fa": "ماریا شوهرش را دوست دارد."
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s18",
+      "question": "کدام جمله درست است؟",
+      "options": [
+        "Mein Schwester ist ledig.",
+        "Meine Schwester ist ledig.",
+        "Meinen Schwester ist ledig.",
+        "Meiner Schwester ist ledig."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": {
+        "correct": "آفرین! Schwester مونث است پس meine درست است.",
+        "incorrect": "Schwester مونث است (die Schwester)، پس باید meine باشد."
+      },
+      "feedbackTip": {
+        "category": "wrong-article",
+        "tip": "برای اسم‌های مونث (die) از **meine** استفاده کنید."
+      }
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Das ist mein Familienfoto.",
+      "translation": "این عکس خانوادگیم است.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Mein Bruder ist verheiratet.",
+      "translation": "برادرم متأهل است.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "das Foto", "fa": "عکس" },
+        { "de": "das Familienfoto", "fa": "عکس خانوادگی" },
+        { "de": "der Mann", "fa": "شوهر/مرد" },
+        { "de": "die Frau", "fa": "زن/همسر" },
+        { "de": "verheiratet", "fa": "متأهل" },
+        { "de": "ledig", "fa": "مجرد" },
+        { "de": "geschieden", "fa": "طلاق گرفته" },
+        { "de": "sein/seine", "fa": "...اش (مرد)" },
+        { "de": "ihr/ihre", "fa": "...اش (زن)" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "تبریک! 🎉",
+      "message": "شما ماژول خانواده را کامل کردید!\n\n📸 **توصیف عکس:**\n• das Foto = عکس\n• das Familienfoto = عکس خانوادگی\n\n💑 **همسر:**\n• der Mann = شوهر\n• die Frau = همسر (زن)\n\n💍 **وضعیت تأهل:**\n• verheiratet = متأهل\n• ledig = مجرد\n• geschieden = طلاق گرفته\n\n👤 **ضمایر ملکی (مال او):**\n• sein/seine = مال او (مرد)\n• ihr/ihre = مال او (زن)\n\n🎯 حالا می‌توانید خانواده‌تان را به آلمانی معرفی کنید!",
+      "xpEarned": 75,
+      "nextLessonId": "A1-M08-L01",
+      "vocabularyLearned": [
+        { "word": { "de": "das Foto", "fa": "عکس" } },
+        { "word": { "de": "das Familienfoto", "fa": "عکس خانوادگی" } },
+        { "word": { "de": "der Mann", "fa": "شوهر/مرد" } },
+        { "word": { "de": "die Frau", "fa": "زن/همسر" } },
+        { "word": { "de": "verheiratet", "fa": "متأهل" } },
+        { "word": { "de": "ledig", "fa": "مجرد" } },
+        { "word": { "de": "geschieden", "fa": "طلاق گرفته" } },
+        { "word": { "de": "sein/seine", "fa": "...اش (مرد)" } },
+        { "word": { "de": "ihr/ihre", "fa": "...اش (زن)" } }
+      ]
+    }
+  ]
+}

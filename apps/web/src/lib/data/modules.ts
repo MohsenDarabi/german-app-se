@@ -264,6 +264,12 @@ const DE_FA_A1_MODULES: ModuleStub[] = [
         title: "خویشاوندان (Verwandte)",
         description: "یاد بگیرید کلمات عمو، خاله، پسرعمو و دیگر خویشاوندان را به آلمانی بگویید.",
         path: "/learn/de-fa/A1/A1-M07-L03"
+      },
+      {
+        id: "A1-M07-L04",
+        title: "عکس خانوادگی (Das Familienfoto)",
+        description: "یاد بگیرید چطور عکس خانوادگی را توصیف کنید و از sein/ihr استفاده کنید.",
+        path: "/learn/de-fa/A1/A1-M07-L04"
       }
     ]
   }
