@@ -1,0 +1,420 @@
+{
+  "id": "A1-M14-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Wo ist...? - Wegbeschreibung", "fa": "کجاست...؟ - مسیریابی" },
+  "description": "یاد بگیرید چطور آدرس بپرسید و مسیر را توضیح دهید",
+  "level": "A1",
+  "module": 14,
+  "lessonNumber": 1,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "links", "fa": "چپ", "grammar": { "pos": "adverb" } },
+    { "de": "rechts", "fa": "راست", "grammar": { "pos": "adverb" } },
+    { "de": "geradeaus", "fa": "مستقیم", "grammar": { "pos": "adverb" } },
+    { "de": "die Straße", "fa": "خیابان", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "die Ecke", "fa": "گوشه", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "der Bahnhof", "fa": "ایستگاه قطار", "grammar": { "pos": "noun", "gender": "masculine" } },
+    { "de": "neben", "fa": "کنار", "grammar": { "pos": "preposition" } },
+    { "de": "gegenüber", "fa": "روبروی", "grammar": { "pos": "preposition" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "پرسیدن آدرس",
+      "content": "🗺️ **پرسش‌های مهم برای مسیریابی:**\n\n• **Wo ist...?** = ...کجاست؟\n• **Wie komme ich zu...?** = چطور برسم به...؟\n• **Entschuldigung, ich suche...** = ببخشید، دنبال ... می‌گردم.\n\n📍 **جهت‌ها:**\n• **links** = چپ\n• **rechts** = راست\n• **geradeaus** = مستقیم",
+      "examples": [
+        { "de": "Wo ist der Bahnhof?", "fa": "ایستگاه قطار کجاست؟" },
+        { "de": "Gehen Sie geradeaus.", "fa": "مستقیم بروید." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "links", "fa": "چپ" },
+      "example": { "text": { "de": "Gehen Sie links.", "fa": "به چپ بروید." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "rechts", "fa": "راست" },
+      "example": { "text": { "de": "Die Bank ist rechts.", "fa": "بانک سمت راست است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-rechts",
+      "word": "rechts",
+      "translation": "راست",
+      "syllables": ["rechts"],
+      "distractors": ["rächts", "rächt", "rachts"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "geradeaus", "fa": "مستقیم" },
+      "example": { "text": { "de": "Gehen Sie geradeaus, dann links.", "fa": "مستقیم بروید، بعد به چپ." } }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«Gehen Sie links» یعنی چه؟",
+      "options": ["به راست بروید", "به چپ بروید", "مستقیم بروید", "برگردید"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "links = چپ" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Gehen Sie {0}, dann rechts.",
+      "options": ["geradeaus", "links", "hier", "dort"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "geradeaus = مستقیم" }
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "die Straße", "fa": "خیابان" },
+      "example": { "text": { "de": "Die erste Straße links.", "fa": "اولین خیابان سمت چپ." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "die Ecke", "fa": "گوشه" },
+      "example": { "text": { "de": "An der Ecke ist eine Apotheke.", "fa": "سر گوشه یک داروخانه است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-strasse",
+      "word": "Straße",
+      "translation": "خیابان",
+      "syllables": ["Stra", "ße"],
+      "distractors": ["Stro", "se", "Stre", "ssa"]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "جهت‌ها",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "links", "left": "چپ", "right": "راست", "correctSide": "left" },
+        { "prompt": "rechts", "left": "چپ", "right": "راست", "correctSide": "right" },
+        { "prompt": "geradeaus", "left": "مستقیم", "right": "برگشت", "correctSide": "left" },
+        { "prompt": "die Straße", "left": "میدان", "right": "خیابان", "correctSide": "right" },
+        { "prompt": "die Ecke", "left": "گوشه", "right": "پل", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "der Bahnhof", "fa": "ایستگاه قطار" },
+      "example": { "text": { "de": "Wo ist der Bahnhof?", "fa": "ایستگاه قطار کجاست؟" } }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "neben", "fa": "کنار" },
+      "example": { "text": { "de": "Die Post ist neben der Bank.", "fa": "پست کنار بانک است." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "gegenüber", "fa": "روبروی" },
+      "example": { "text": { "de": "Das Hotel ist gegenüber dem Bahnhof.", "fa": "هتل روبروی ایستگاه قطار است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-bahnhof",
+      "word": "Bahnhof",
+      "translation": "ایستگاه قطار",
+      "syllables": ["Bahn", "hof"],
+      "distractors": ["Ben", "haf", "Bon", "huf"]
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "پرسیدن آدرس",
+      "context": "الی در خیابان از یک نفر آدرس می‌پرسد",
+      "lines": [
+        { "speaker": "Eli", "text": { "de": "Entschuldigung, wo ist der Bahnhof?", "fa": "ببخشید، ایستگاه قطار کجاست؟" } },
+        { "speaker": "Mann", "text": { "de": "Gehen Sie geradeaus, dann die zweite Straße links.", "fa": "مستقیم بروید، بعد دومین خیابان سمت چپ." } },
+        { "speaker": "Eli", "text": { "de": "Geradeaus und dann links?", "fa": "مستقیم و بعد چپ؟" } },
+        { "speaker": "Mann", "text": { "de": "Ja, genau. Der Bahnhof ist neben dem Supermarkt.", "fa": "بله، دقیقاً. ایستگاه قطار کنار سوپرمارکت است." } },
+        { "speaker": "Eli", "text": { "de": "Vielen Dank!", "fa": "خیلی ممنون!" } },
+        { "speaker": "Mann", "text": { "de": "Bitte schön!", "fa": "خواهش می‌کنم!" } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "الی کجا می‌خواهد برود؟", "options": ["سوپرمارکت", "ایستگاه قطار", "بانک"], "correctIndex": 1 },
+        { "question": "ایستگاه قطار کنار چیست؟", "options": ["بانک", "هتل", "سوپرمارکت"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s10",
+      "title": "حرف اضافه‌های مکان",
+      "content": "📍 **حرف اضافه‌های مهم:**\n\n• **in** = در، داخل\n  in der Straße = در خیابان\n\n• **an** = کنار، در\n  an der Ecke = سر گوشه\n\n• **neben** = کنار\n  neben der Bank = کنار بانک\n\n• **gegenüber** = روبروی\n  gegenüber dem Hotel = روبروی هتل\n\n• **vor** = جلوی\n  vor dem Bahnhof = جلوی ایستگاه",
+      "examples": [
+        { "de": "Die Apotheke ist in der Hauptstraße.", "fa": "داروخانه در خیابان اصلی است." },
+        { "de": "Das Café ist vor dem Kino.", "fa": "کافه جلوی سینماست." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Bank ist {0} der Post.",
+      "options": ["neben", "links", "rechts", "geradeaus"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "neben = کنار" }
+    },
+    {
+      "type": "word-order",
+      "id": "w1",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["Bahnhof?", "ist", "der", "Wo"],
+      "correctOrder": [3, 1, 2, 0],
+      "correctSentence": { "de": "Wo ist der Bahnhof?", "fa": "ایستگاه قطار کجاست؟" }
+    },
+    {
+      "type": "word-order",
+      "id": "w2",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["links.", "Sie", "Gehen"],
+      "correctOrder": [2, 1, 0],
+      "correctSentence": { "de": "Gehen Sie links.", "fa": "به چپ بروید." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "جملات را با ترجمه جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Gehen Sie geradeaus." },
+        { "id": "i2", "text": "Die erste Straße rechts." },
+        { "id": "i3", "text": "An der Ecke." },
+        { "id": "i4", "text": "Gegenüber der Bank." }
+      ],
+      "matches": [
+        { "id": "m1", "text": "اولین خیابان سمت راست." },
+        { "id": "m2", "text": "مستقیم بروید." },
+        { "id": "m3", "text": "روبروی بانک." },
+        { "id": "m4", "text": "سر گوشه." }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m1"],
+        ["i3", "m4"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "«gegenüber» یعنی چه؟",
+      "options": ["کنار", "روبروی", "پشت", "جلوی"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "gegenüber = روبروی" }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-gegenueber",
+      "word": "gegenüber",
+      "translation": "روبروی",
+      "syllables": ["ge", "gen", "ü", "ber"],
+      "distractors": ["ga", "gun", "u", "bar"]
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در مرکز شهر",
+      "context": "تام دنبال یک داروخانه می‌گردد",
+      "lines": [
+        { "speaker": "Tom", "text": { "de": "Entschuldigung, ich suche eine Apotheke.", "fa": "ببخشید، دنبال یک داروخانه می‌گردم." } },
+        { "speaker": "Frau", "text": { "de": "Eine Apotheke? Ja, hier in der Nähe.", "fa": "یک داروخانه؟ بله، اینجا نزدیک است." } },
+        { "speaker": "Tom", "text": { "de": "Wie komme ich dahin?", "fa": "چطور برسم آنجا؟" } },
+        { "speaker": "Frau", "text": { "de": "Gehen Sie geradeaus bis zur Ampel.", "fa": "مستقیم بروید تا چراغ راهنمایی." } },
+        { "speaker": "Tom", "text": { "de": "Und dann?", "fa": "و بعد؟" } },
+        { "speaker": "Frau", "text": { "de": "Dann rechts. Die Apotheke ist an der Ecke.", "fa": "بعد به راست. داروخانه سر گوشه است." } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "تام دنبال چه می‌گردد؟", "options": ["بانک", "داروخانه", "سوپرمارکت"], "correctIndex": 1 },
+        { "question": "داروخانه کجاست؟", "options": ["کنار بانک", "سر گوشه", "روبروی هتل"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das Hotel ist {0} dem Bahnhof.",
+      "options": ["gegenüber", "links", "rechts", "geradeaus"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "gegenüber = روبروی" }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "حرف اضافه‌ها",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "neben", "left": "کنار", "right": "روبرو", "correctSide": "left" },
+        { "prompt": "gegenüber", "left": "کنار", "right": "روبروی", "correctSide": "right" },
+        { "prompt": "vor", "left": "جلوی", "right": "پشت", "correctSide": "left" },
+        { "prompt": "in", "left": "بیرون", "right": "در/داخل", "correctSide": "right" },
+        { "prompt": "an", "left": "در/کنار", "right": "دور از", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "w3",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["der Bank.", "ist", "neben", "Die Post"],
+      "correctOrder": [3, 1, 2, 0],
+      "correctSentence": { "de": "Die Post ist neben der Bank.", "fa": "پست کنار بانک است." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "برای پرسیدن «کجاست؟» از چه کلمه‌ای استفاده می‌کنیم؟",
+      "options": ["Was", "Wer", "Wo", "Wie"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین!", "incorrect": "Wo = کجا" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} ist die Apotheke?",
+      "options": ["Wo", "Was", "Wer", "Wie"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Wo = کجا" }
+    },
+    {
+      "type": "matching",
+      "id": "m2",
+      "instruction": "مکان‌ها را با ترجمه جفت کنید",
+      "items": [
+        { "id": "i1", "text": "der Bahnhof" },
+        { "id": "i2", "text": "die Straße" },
+        { "id": "i3", "text": "die Ecke" },
+        { "id": "i4", "text": "die Apotheke" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "گوشه" },
+        { "id": "m2", "text": "ایستگاه قطار" },
+        { "id": "m3", "text": "داروخانه" },
+        { "id": "m4", "text": "خیابان" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m4"],
+        ["i3", "m1"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-apotheke",
+      "word": "Apotheke",
+      "translation": "داروخانه",
+      "syllables": ["A", "po", "the", "ke"],
+      "distractors": ["O", "pa", "ta", "ka"]
+    },
+    {
+      "type": "word-order",
+      "id": "w4",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["geradeaus,", "links.", "Sie", "dann", "Gehen"],
+      "correctOrder": [4, 2, 0, 3, 1],
+      "correctSentence": { "de": "Gehen Sie geradeaus, dann links.", "fa": "مستقیم بروید، بعد به چپ." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Apotheke ist an der {0}.",
+      "options": ["Ecke", "Straße", "Bank", "Hotel"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "an der Ecke = سر گوشه" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "کدام جمله درست است؟",
+      "options": ["Wo der Bahnhof ist?", "Ist wo der Bahnhof?", "Wo ist der Bahnhof?", "Der Bahnhof wo ist?"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین!", "incorrect": "سؤال با Wo شروع می‌شود: Wo ist...?" }
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Wo ist der Bahnhof?",
+      "translation": "ایستگاه قطار کجاست؟",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Gehen Sie geradeaus.",
+      "translation": "مستقیم بروید.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-3",
+      "targetText": "Die Bank ist neben der Post.",
+      "translation": "بانک کنار پست است.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "memory-match",
+      "id": "g3",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "links", "fa": "چپ" },
+        { "de": "rechts", "fa": "راست" },
+        { "de": "geradeaus", "fa": "مستقیم" },
+        { "de": "neben", "fa": "کنار" },
+        { "de": "gegenüber", "fa": "روبروی" },
+        { "de": "die Ecke", "fa": "گوشه" }
+      ],
+      "timeLimit": 60
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "links", "fa": "چپ" },
+        { "de": "rechts", "fa": "راست" },
+        { "de": "geradeaus", "fa": "مستقیم" },
+        { "de": "die Straße", "fa": "خیابان" },
+        { "de": "die Ecke", "fa": "گوشه" },
+        { "de": "der Bahnhof", "fa": "ایستگاه قطار" },
+        { "de": "neben", "fa": "کنار" },
+        { "de": "gegenüber", "fa": "روبروی" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "تبریک! 🎉",
+      "message": "شما سطح A1 را تمام کردید!\n\n📍 **مسیریابی:**\n• Wo ist...? = ...کجاست؟\n• Gehen Sie links/rechts/geradeaus.\n\n📍 **حرف اضافه‌های مکان:**\n• **neben** = کنار\n• **gegenüber** = روبروی\n• **an der Ecke** = سر گوشه\n\n🏆 **A1 کامل شد!**\nشما حالا می‌توانید:\n✅ خود را معرفی کنید\n✅ درباره خانواده صحبت کنید\n✅ سفارش غذا بدهید\n✅ ساعت بگویید\n✅ آدرس بپرسید",
+      "xpEarned": 100,
+      "vocabularyLearned": [
+        { "word": { "de": "links", "fa": "چپ" } },
+        { "word": { "de": "rechts", "fa": "راست" } },
+        { "word": { "de": "geradeaus", "fa": "مستقیم" } },
+        { "word": { "de": "die Straße", "fa": "خیابان" } },
+        { "word": { "de": "die Ecke", "fa": "گوشه" } },
+        { "word": { "de": "der Bahnhof", "fa": "ایستگاه قطار" } },
+        { "word": { "de": "neben", "fa": "کنار" } },
+        { "word": { "de": "gegenüber", "fa": "روبروی" } }
+      ]
+    }
+  ]
+}

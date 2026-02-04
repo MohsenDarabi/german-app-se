@@ -458,6 +458,19 @@ const DE_FA_A1_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/A1/A1-M13-L04"
       }
     ]
+  },
+  {
+    id: "module-14",
+    title: "بخش ۱۴: مسیریابی (Wegbeschreibung)",
+    level: "A1",
+    lessons: [
+      {
+        id: "A1-M14-L01",
+        title: "کجاست؟ (Wo ist...?)",
+        description: "یاد بگیرید چطور آدرس بپرسید و مسیر را توضیح دهید.",
+        path: "/learn/de-fa/A1/A1-M14-L01"
+      }
+    ]
   }
 ];
 
