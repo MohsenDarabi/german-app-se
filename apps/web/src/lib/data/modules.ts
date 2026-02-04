@@ -444,6 +444,12 @@ const DE_FA_A1_MODULES: ModuleStub[] = [
         title: "باید و خواستن (müssen und wollen)",
         description: "یاد بگیرید چطور بگویید چه کارهایی باید انجام دهید یا می‌خواهید.",
         path: "/learn/de-fa/A1/A1-M13-L02"
+      },
+      {
+        id: "A1-M13-L03",
+        title: "اجازه (dürfen)",
+        description: "یاد بگیرید چطور درباره اجازه و ممنوعیت صحبت کنید.",
+        path: "/learn/de-fa/A1/A1-M13-L03"
       }
     ]
   }
