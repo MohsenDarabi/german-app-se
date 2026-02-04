@@ -269,7 +269,7 @@
         <div class="capitalization-hints">
           <p class="hints-title">🔤 نکات املایی آلمانی:</p>
           <ul class="hints-list">
-            {#each capitalizationHints as hint}
+            {#each capitalizationHints as hint, i (i)}
               <li>{hint}</li>
             {/each}
           </ul>
