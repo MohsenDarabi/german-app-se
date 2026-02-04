@@ -609,6 +609,12 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         title: "sein und haben",
         description: "یاد بگیرید گذشته ساده sein و haben را.",
         path: "/learn/de-fa/A2/A2-M05-L01"
+      },
+      {
+        id: "A2-M05-L02",
+        title: "Modalverben - فعل‌های وجهی",
+        description: "یاد بگیرید گذشته ساده فعل‌های وجهی را.",
+        path: "/learn/de-fa/A2/A2-M05-L02"
       }
     ]
   }

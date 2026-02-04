@@ -1,0 +1,421 @@
+{
+  "id": "A2-M05-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Präteritum - Modalverben", "fa": "گذشته ساده - فعل‌های وجهی" },
+  "description": "یاد بگیرید گذشته ساده فعل‌های وجهی را",
+  "level": "A2",
+  "module": 5,
+  "lessonNumber": 2,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "konnte", "fa": "می‌توانست", "grammar": { "pos": "verb", "tense": "präteritum", "infinitive": "können" } },
+    { "de": "musste", "fa": "مجبور بود", "grammar": { "pos": "verb", "tense": "präteritum", "infinitive": "müssen" } },
+    { "de": "wollte", "fa": "می‌خواست", "grammar": { "pos": "verb", "tense": "präteritum", "infinitive": "wollen" } },
+    { "de": "durfte", "fa": "اجازه داشت", "grammar": { "pos": "verb", "tense": "präteritum", "infinitive": "dürfen" } },
+    { "de": "sollte", "fa": "باید (می‌کرد)", "grammar": { "pos": "verb", "tense": "präteritum", "infinitive": "sollen" } },
+    { "de": "mochte", "fa": "دوست داشت", "grammar": { "pos": "verb", "tense": "präteritum", "infinitive": "mögen" } },
+    { "de": "leider", "fa": "متأسفانه", "grammar": { "pos": "adverb" } },
+    { "de": "damals", "fa": "آن زمان", "grammar": { "pos": "adverb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "Modalverben در Präteritum",
+      "content": "📝 **فعل‌های وجهی در گذشته:**\n\n| Infinitiv | Präteritum |\n|-----------|------------|\n| können | **konnte** |\n| müssen | **musste** |\n| wollen | **wollte** |\n| dürfen | **durfte** |\n| sollen | **sollte** |\n| mögen | **mochte** |\n\n⚠️ Umlaut (ä, ö, ü) در Präteritum حذف می‌شود!\nkönnen → k**o**nnte (نه könnte)",
+      "examples": [
+        { "de": "Ich konnte nicht kommen.", "fa": "نمی‌توانستم بیایم." },
+        { "de": "Er musste arbeiten.", "fa": "مجبور بود کار کند." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "konnte", "fa": "می‌توانست" },
+      "example": { "text": { "de": "Ich konnte nicht schlafen.", "fa": "نمی‌توانستم بخوابم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "musste", "fa": "مجبور بود" },
+      "example": { "text": { "de": "Sie musste früh aufstehen.", "fa": "مجبور بود زود بیدار شود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-konnte",
+      "word": "konnte",
+      "translation": "می‌توانست",
+      "syllables": ["konn", "te"],
+      "distractors": ["kann", "ta", "könn", "tu"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«Ich konnte nicht kommen» یعنی چه؟",
+      "options": ["نمی‌توانم بیایم", "نمی‌توانستم بیایم", "نمی‌خواستم بیایم", "نباید بیایم"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! konnte = می‌توانستم (گذشته)", "incorrect": "konnte = گذشته können" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich {0} gestern nicht kommen.",
+      "options": ["konnte", "kann", "könnte", "konnten"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "gestern → گذشته → konnte" }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "wollte", "fa": "می‌خواست" },
+      "example": { "text": { "de": "Er wollte nach Hause gehen.", "fa": "می‌خواست به خانه برود." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "durfte", "fa": "اجازه داشت" },
+      "example": { "text": { "de": "Ich durfte nicht rausgehen.", "fa": "اجازه نداشتم بیرون بروم." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s6",
+      "title": "صرف Modalverben در Präteritum",
+      "content": "📝 **صرف مثل sein و haben:**\n\nich/er/sie/es یکسان هستند!\n\n| فاعل | können | müssen |\n|------|--------|--------|\n| ich | konnte | musste |\n| du | konntest | musstest |\n| er/sie/es | konnte | musste |\n| wir | konnten | mussten |\n| ihr | konntet | musstet |\n| sie/Sie | konnten | mussten |",
+      "examples": [
+        { "de": "Wir konnten das verstehen.", "fa": "می‌توانستیم بفهمیم." },
+        { "de": "Sie mussten warten.", "fa": "مجبور بودند صبر کنند." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "sollte", "fa": "باید (می‌کرد)" },
+      "example": { "text": { "de": "Ich sollte mehr lernen.", "fa": "باید بیشتر درس می‌خواندم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-musste",
+      "word": "musste",
+      "translation": "مجبور بود",
+      "syllables": ["muss", "te"],
+      "distractors": ["mass", "ta", "miss", "tu"]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "گذشته Modalverben",
+      "instruction": "فرم گذشته را انتخاب کنید",
+      "questions": [
+        { "prompt": "können →", "left": "konnte", "right": "könnte", "correctSide": "left" },
+        { "prompt": "müssen →", "left": "müsste", "right": "musste", "correctSide": "right" },
+        { "prompt": "wollen →", "left": "wollte", "right": "würde", "correctSide": "left" },
+        { "prompt": "dürfen →", "left": "dürfte", "right": "durfte", "correctSide": "right" },
+        { "prompt": "sollen →", "left": "sollte", "right": "sollt", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "mochte", "fa": "دوست داشت" },
+      "example": { "text": { "de": "Sie mochte keine Schokolade.", "fa": "شکلات دوست نداشت." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "leider", "fa": "متأسفانه" },
+      "example": { "text": { "de": "Leider konnte ich nicht kommen.", "fa": "متأسفانه نتوانستم بیایم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": { "de": "damals", "fa": "آن زمان" },
+      "example": { "text": { "de": "Damals wollte ich Arzt werden.", "fa": "آن زمان می‌خواستم دکتر شوم." } }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "چرا نیامدی؟",
+      "context": "دو دوست درباره دیروز صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Warum konntest du gestern nicht kommen?", "fa": "چرا دیروز نتوانستی بیایی؟" } },
+        { "speaker": "Tom", "text": { "de": "Ich musste arbeiten.", "fa": "مجبور بودم کار کنم." } },
+        { "speaker": "Anna", "text": { "de": "Das ist schade. Wolltest du nicht frei nehmen?", "fa": "حیف شد. نمی‌خواستی مرخصی بگیری؟" } },
+        { "speaker": "Tom", "text": { "de": "Doch, aber ich durfte nicht.", "fa": "چرا، اما اجازه نداشتم." } },
+        { "speaker": "Anna", "text": { "de": "Das verstehe ich. Du solltest dich ausruhen.", "fa": "می‌فهمم. باید استراحت کنی." } },
+        { "speaker": "Tom", "text": { "de": "Ja, ich wollte wirklich kommen. Leider ging es nicht.", "fa": "بله، واقعاً می‌خواستم بیایم. متأسفانه نشد." } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "تام چرا نیامد؟", "options": ["مریض بود", "مجبور بود کار کند", "نمی‌خواست"], "correctIndex": 1 },
+        { "question": "تام می‌خواست بیاید؟", "options": ["نه", "بله", "معلوم نیست"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er {0} früh aufstehen.",
+      "options": ["musste", "muss", "müsste", "mussten"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "er → musste (گذشته)" }
+    },
+    {
+      "type": "word-order",
+      "id": "w1",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["kommen.", "nicht", "konnte", "Ich"],
+      "correctOrder": [3, 2, 1, 0],
+      "correctSentence": { "de": "Ich konnte nicht kommen.", "fa": "نتوانستم بیایم." }
+    },
+    {
+      "type": "word-order",
+      "id": "w2",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["gehen.", "Hause", "wollte", "nach", "Er"],
+      "correctOrder": [4, 2, 3, 1, 0],
+      "correctSentence": { "de": "Er wollte nach Hause gehen.", "fa": "می‌خواست به خانه برود." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "Infinitiv را با Präteritum جفت کنید",
+      "items": [
+        { "id": "i1", "text": "können" },
+        { "id": "i2", "text": "müssen" },
+        { "id": "i3", "text": "wollen" },
+        { "id": "i4", "text": "dürfen" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "musste" },
+        { "id": "m2", "text": "konnte" },
+        { "id": "m3", "text": "durfte" },
+        { "id": "m4", "text": "wollte" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m1"],
+        ["i3", "m4"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-wollte",
+      "word": "wollte",
+      "translation": "می‌خواست",
+      "syllables": ["woll", "te"],
+      "distractors": ["wall", "ta", "will", "tu"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "چرا «konnte» می‌گوییم و نه «könnte»؟",
+      "options": ["فرقی ندارد", "könnte غلط است", "Umlaut در Präteritum حذف می‌شود", "konnte رسمی‌تر است"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! در Präteritum، Umlaut حذف می‌شود: können → konnte", "incorrect": "در Präteritum، Umlaut حذف می‌شود (könnte = Konjunktiv II)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Wir {0} das nicht verstehen.",
+      "options": ["konnten", "konnte", "konntest", "konntet"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "wir → konnten" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "رویاهای بچگی",
+      "context": "دو دوست از بچگی صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Was wolltest du als Kind werden?", "fa": "بچه که بودی می‌خواستی چه کاره شوی؟" } },
+        { "speaker": "Max", "text": { "de": "Ich wollte Pilot werden.", "fa": "می‌خواستم خلبان شوم." } },
+        { "speaker": "Lisa", "text": { "de": "Konntest du damals schon gut sehen?", "fa": "آن زمان خوب می‌دیدی؟" } },
+        { "speaker": "Max", "text": { "de": "Nein, ich musste eine Brille tragen.", "fa": "نه، مجبور بودم عینک بزنم." } },
+        { "speaker": "Lisa", "text": { "de": "Dann durftest du nicht Pilot werden?", "fa": "پس اجازه نداشتی خلبان شوی؟" } },
+        { "speaker": "Max", "text": { "de": "Genau. Ich mochte aber auch Computer.", "fa": "دقیقاً. اما کامپیوتر هم دوست داشتم." } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "ماکس چه می‌خواست بشود؟", "options": ["دکتر", "خلبان", "معلم"], "correctIndex": 1 },
+        { "question": "چرا نتوانست خلبان شود؟", "options": ["پول نداشت", "عینک داشت", "نمی‌خواست"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "ترجمه سریع",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "konnte", "left": "می‌توانست", "right": "می‌تواند", "correctSide": "left" },
+        { "prompt": "musste", "left": "باید", "right": "مجبور بود", "correctSide": "right" },
+        { "prompt": "wollte", "left": "می‌خواست", "right": "می‌خواهد", "correctSide": "left" },
+        { "prompt": "durfte", "left": "اجازه دارد", "right": "اجازه داشت", "correctSide": "right" },
+        { "prompt": "sollte", "left": "باید (می‌کرد)", "right": "باید (بکند)", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Du {0} nicht rauchen.",
+      "options": ["durftest", "durfte", "durften", "durftet"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "du → durftest" }
+    },
+    {
+      "type": "word-order",
+      "id": "w3",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["lernen.", "mehr", "Ich", "sollte"],
+      "correctOrder": [2, 3, 1, 0],
+      "correctSentence": { "de": "Ich sollte mehr lernen.", "fa": "باید بیشتر درس می‌خواندم." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "«Sie mochte keine Schokolade» یعنی چه؟",
+      "options": ["شکلات دوست دارد", "شکلات دوست نداشت", "شکلات می‌خواهد", "شکلات نمی‌خواهد"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! mochte = دوست داشت (گذشته mögen)", "incorrect": "mochte = گذشته mögen" }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-durfte",
+      "word": "durfte",
+      "translation": "اجازه داشت",
+      "syllables": ["durf", "te"],
+      "distractors": ["darf", "ta", "dürf", "tu"]
+    },
+    {
+      "type": "matching",
+      "id": "m2",
+      "instruction": "جمله را با ترجمه جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Ich konnte nicht kommen." },
+        { "id": "i2", "text": "Er musste arbeiten." },
+        { "id": "i3", "text": "Sie wollte schlafen." },
+        { "id": "i4", "text": "Wir durften nicht rein." }
+      ],
+      "matches": [
+        { "id": "m1", "text": "می‌خواست بخوابد." },
+        { "id": "m2", "text": "نتوانستم بیایم." },
+        { "id": "m3", "text": "اجازه نداشتیم داخل شویم." },
+        { "id": "m4", "text": "مجبور بود کار کند." }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m4"],
+        ["i3", "m1"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Kinder {0} früh ins Bett gehen.",
+      "options": ["sollten", "sollte", "solltest", "solltet"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "die Kinder (sie) → sollten" }
+    },
+    {
+      "type": "word-order",
+      "id": "w4",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["werden.", "Arzt", "wollte", "Damals", "ich"],
+      "correctOrder": [3, 2, 4, 1, 0],
+      "correctSentence": { "de": "Damals wollte ich Arzt werden.", "fa": "آن زمان می‌خواستم دکتر شوم." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "کدام جمله درست است؟",
+      "options": ["Ich könnte gestern nicht kommen.", "Ich konnte gestern nicht kommen.", "Ich kann gestern nicht kommen.", "Ich kannte gestern nicht kommen."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "gestern → گذشته → konnte" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Als Kind {0} ich keine Tomaten.",
+      "options": ["mochte", "mag", "möchte", "mochten"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "als Kind = بچه که بودم → گذشته → mochte" }
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Ich konnte gestern nicht kommen.",
+      "translation": "دیروز نتوانستم بیایم.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Er musste viel arbeiten.",
+      "translation": "مجبور بود زیاد کار کند.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-3",
+      "targetText": "Wir wollten ins Kino gehen.",
+      "translation": "می‌خواستیم به سینما برویم.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "memory-match",
+      "id": "g3",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "konnte", "fa": "می‌توانست" },
+        { "de": "musste", "fa": "مجبور بود" },
+        { "de": "wollte", "fa": "می‌خواست" },
+        { "de": "durfte", "fa": "اجازه داشت" },
+        { "de": "sollte", "fa": "باید (می‌کرد)" },
+        { "de": "mochte", "fa": "دوست داشت" }
+      ],
+      "timeLimit": 60
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "konnte", "fa": "می‌توانست" },
+        { "de": "musste", "fa": "مجبور بود" },
+        { "de": "wollte", "fa": "می‌خواست" },
+        { "de": "durfte", "fa": "اجازه داشت" },
+        { "de": "sollte", "fa": "باید (می‌کرد)" },
+        { "de": "mochte", "fa": "دوست داشت" },
+        { "de": "leider", "fa": "متأسفانه" },
+        { "de": "damals", "fa": "آن زمان" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما Präteritum فعل‌های وجهی را یاد گرفتید!\n\n📝 **Modalverben در گذشته:**\n• können → **konnte**\n• müssen → **musste**\n• wollen → **wollte**\n• dürfen → **durfte**\n• sollen → **sollte**\n• mögen → **mochte**\n\n⚠️ Umlaut حذف می‌شود!\nkönnen → k**o**nnte",
+      "xpEarned": 50,
+      "vocabularyLearned": [
+        { "word": { "de": "konnte", "fa": "می‌توانست" } },
+        { "word": { "de": "musste", "fa": "مجبور بود" } },
+        { "word": { "de": "wollte", "fa": "می‌خواست" } },
+        { "word": { "de": "durfte", "fa": "اجازه داشت" } },
+        { "word": { "de": "sollte", "fa": "باید (می‌کرد)" } },
+        { "word": { "de": "mochte", "fa": "دوست داشت" } },
+        { "word": { "de": "leider", "fa": "متأسفانه" } },
+        { "word": { "de": "damals", "fa": "آن زمان" } }
+      ]
+    }
+  ]
+}
