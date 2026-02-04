@@ -258,6 +258,12 @@ const DE_FA_A1_MODULES: ModuleStub[] = [
         title: "پدربزرگ و مادربزرگ (Großeltern)",
         description: "یاد بگیرید کلمات پدربزرگ، مادربزرگ و نوه را به آلمانی بگویید.",
         path: "/learn/de-fa/A1/A1-M07-L02"
+      },
+      {
+        id: "A1-M07-L03",
+        title: "خویشاوندان (Verwandte)",
+        description: "یاد بگیرید کلمات عمو، خاله، پسرعمو و دیگر خویشاوندان را به آلمانی بگویید.",
+        path: "/learn/de-fa/A1/A1-M07-L03"
       }
     ]
   }

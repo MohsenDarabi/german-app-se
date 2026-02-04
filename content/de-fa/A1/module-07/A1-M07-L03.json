@@ -1,0 +1,629 @@
+{
+  "id": "A1-M07-L03",
+  "languagePair": "de-fa",
+  "source": {
+    "code": "de",
+    "name": "Deutsch"
+  },
+  "target": {
+    "code": "fa",
+    "name": "فارسی"
+  },
+  "title": {
+    "de": "Verwandte",
+    "fa": "خویشاوندان"
+  },
+  "description": "یاد بگیرید کلمات عمو، خاله، پسرعمو و دیگر خویشاوندان را به آلمانی بگویید",
+  "level": "A1",
+  "module": 7,
+  "lessonNumber": 3,
+  "totalSteps": 38,
+  "estimatedMinutes": 18,
+  "vocabulary": [
+    { "de": "die Verwandten", "fa": "خویشاوندان/فامیل", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Verwandten" } } },
+    { "de": "der Onkel", "fa": "عمو/دایی", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Onkel" } } },
+    { "de": "die Tante", "fa": "عمه/خاله", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Tanten" } } },
+    { "de": "der Cousin", "fa": "پسرعمو/پسرخاله", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Cousins" } } },
+    { "de": "die Cousine", "fa": "دخترعمو/دخترخاله", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Cousinen" } } },
+    { "de": "der Neffe", "fa": "برادرزاده/خواهرزاده (پسر)", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Neffen" } } },
+    { "de": "die Nichte", "fa": "برادرزاده/خواهرزاده (دختر)", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Nichten" } } },
+    { "de": "der Schwager", "fa": "شوهرخواهر/برادرشوهر", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Schwäger" } } },
+    { "de": "die Schwägerin", "fa": "زن‌برادر/خواهرشوهر", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Schwägerinnen" } } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "خویشاوندان در آلمانی",
+      "content": "در این درس با خویشاوندان آشنا می‌شویم:\n\n**عمو/دایی و عمه/خاله:**\n• der Onkel = عمو یا دایی\n• die Tante = عمه یا خاله\n\n**پسرعمو/دخترعمو:**\n• der Cousin = پسرعمو/پسرخاله\n• die Cousine = دخترعمو/دخترخاله\n\n📝 **نکته مهم:** در آلمانی فرقی بین عمو و دایی نیست! هر دو Onkel هستند.",
+      "examples": [
+        {
+          "de": "Mein Onkel wohnt in München.",
+          "fa": "عمویم در مونیخ زندگی می‌کند."
+        },
+        {
+          "de": "Meine Tante hat zwei Kinder.",
+          "fa": "خاله‌ام دو بچه دارد."
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": {
+        "de": "die Verwandten",
+        "fa": "خویشاوندان/فامیل"
+      },
+      "example": {
+        "text": {
+          "de": "Meine Verwandten kommen aus dem Iran.",
+          "fa": "خویشاوندانم از ایران هستند."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Verwandten",
+      "word": "Verwandten",
+      "translation": "خویشاوندان",
+      "syllables": ["Ver", "wand", "ten"],
+      "distractors": ["Vor", "wund", "tan", "Var"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": {
+        "de": "der Onkel",
+        "fa": "عمو/دایی"
+      },
+      "example": {
+        "text": {
+          "de": "Mein Onkel ist Arzt.",
+          "fa": "عمویم پزشک است."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Onkel",
+      "word": "Onkel",
+      "translation": "عمو/دایی",
+      "syllables": ["On", "kel"],
+      "distractors": ["An", "kal", "Un", "kol"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": {
+        "de": "die Tante",
+        "fa": "عمه/خاله"
+      },
+      "example": {
+        "text": {
+          "de": "Meine Tante backt guten Kuchen.",
+          "fa": "خاله‌ام کیک خوبی می‌پزد."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Tante",
+      "word": "Tante",
+      "translation": "عمه/خاله",
+      "syllables": ["Tan", "te"],
+      "distractors": ["Ten", "ta", "Ton", "tu"]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "عمو و خاله",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        {
+          "prompt": "Onkel",
+          "left": "عمو/دایی",
+          "right": "عمه/خاله",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Tante",
+          "left": "عمو/دایی",
+          "right": "عمه/خاله",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Verwandten",
+          "left": "خویشاوندان",
+          "right": "دوستان",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "عمو =",
+          "left": "Tante",
+          "right": "Onkel",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "خاله =",
+          "left": "Tante",
+          "right": "Onkel",
+          "correctSide": "left"
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": {
+        "de": "der Cousin",
+        "fa": "پسرعمو/پسرخاله"
+      },
+      "example": {
+        "text": {
+          "de": "Mein Cousin studiert in Berlin.",
+          "fa": "پسرعمویم در برلین درس می‌خواند."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Cousin",
+      "word": "Cousin",
+      "translation": "پسرعمو",
+      "syllables": ["Cou", "sin"],
+      "distractors": ["Ca", "san", "Cu", "sun"]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": {
+        "de": "die Cousine",
+        "fa": "دخترعمو/دخترخاله"
+      },
+      "example": {
+        "text": {
+          "de": "Meine Cousine ist fünfzehn Jahre alt.",
+          "fa": "دخترخاله‌ام پانزده ساله است."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Cousine",
+      "word": "Cousine",
+      "translation": "دخترعمو",
+      "syllables": ["Cou", "si", "ne"],
+      "distractors": ["Ca", "so", "na", "Cu"]
+    },
+    {
+      "type": "dialog",
+      "id": "s7",
+      "title": "مکالمه: فامیل",
+      "context": "الی و تام درباره خویشاوندان صحبت می‌کنند",
+      "lines": [
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Eli, hast du viele Verwandte?",
+            "fa": "الی، فامیل زیادی داری؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Ja, ich habe drei Onkel und vier Tanten!",
+            "fa": "بله، سه عمو/دایی و چهار عمه/خاله دارم!"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Wow! Und Cousins?",
+            "fa": "وای! و پسرعموها؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Ich habe fünf Cousins und drei Cousinen.",
+            "fa": "پنج پسرعمو/پسرخاله و سه دخترعمو/دخترخاله دارم."
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Das ist eine große Familie! Ich habe nur einen Onkel.",
+            "fa": "خانواده بزرگی است! من فقط یک عمو دارم."
+          }
+        }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        {
+          "question": "الی چند عمو/دایی دارد؟",
+          "options": ["دو تا", "سه تا", "چهار تا"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: ich habe drei Onkel (سه عمو/دایی)"
+        },
+        {
+          "question": "تام چند عمو دارد؟",
+          "options": ["یکی", "دو تا", "سه تا"],
+          "correctIndex": 0,
+          "explanation": "تام گفت: Ich habe nur einen Onkel (فقط یک عمو)"
+        }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s8",
+      "title": "تفاوت فارسی و آلمانی",
+      "content": "در فارسی خویشاوندان را دقیق‌تر مشخص می‌کنیم:\n\n🇮🇷 **فارسی:**\n• عمو = برادر پدر\n• دایی = برادر مادر\n• عمه = خواهر پدر\n• خاله = خواهر مادر\n\n🇩🇪 **آلمانی:**\n• Onkel = عمو یا دایی (هر دو!)\n• Tante = عمه یا خاله (هر دو!)\n\n📝 اگر می‌خواهید دقیق بگویید:\n• Onkel mütterlicherseits = دایی\n• Onkel väterlicherseits = عمو",
+      "examples": [
+        {
+          "de": "Mein Onkel mütterlicherseits heißt Ali.",
+          "fa": "داییم اسمش علی است."
+        },
+        {
+          "de": "Meine Tante väterlicherseits wohnt in Schiras.",
+          "fa": "عمه‌ام در شیراز زندگی می‌کند."
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": {
+        "de": "der Neffe",
+        "fa": "برادرزاده/خواهرزاده (پسر)"
+      },
+      "example": {
+        "text": {
+          "de": "Mein Neffe ist sehr klug.",
+          "fa": "برادرزاده‌ام خیلی باهوش است."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Neffe",
+      "word": "Neffe",
+      "translation": "برادرزاده (پسر)",
+      "syllables": ["Nef", "fe"],
+      "distractors": ["Naf", "fa", "Nof", "fu"]
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": {
+        "de": "die Nichte",
+        "fa": "برادرزاده/خواهرزاده (دختر)"
+      },
+      "example": {
+        "text": {
+          "de": "Meine Nichte geht in den Kindergarten.",
+          "fa": "خواهرزاده‌ام به مهدکودک می‌رود."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Nichte",
+      "word": "Nichte",
+      "translation": "خواهرزاده (دختر)",
+      "syllables": ["Nich", "te"],
+      "distractors": ["Nach", "ta", "Noch", "tu"]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "برادرزاده‌ها",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        {
+          "prompt": "Neffe",
+          "left": "برادرزاده پسر",
+          "right": "برادرزاده دختر",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Nichte",
+          "left": "برادرزاده پسر",
+          "right": "برادرزاده دختر",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Cousin",
+          "left": "پسرعمو",
+          "right": "دخترعمو",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Cousine",
+          "left": "پسرعمو",
+          "right": "دخترعمو",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "خواهرزاده دختر =",
+          "left": "Neffe",
+          "right": "Nichte",
+          "correctSide": "right"
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s11",
+      "word": {
+        "de": "der Schwager",
+        "fa": "شوهرخواهر/برادرشوهر"
+      },
+      "example": {
+        "text": {
+          "de": "Mein Schwager arbeitet bei BMW.",
+          "fa": "شوهرخواهرم در بی‌ام‌و کار می‌کند."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Schwager",
+      "word": "Schwager",
+      "translation": "شوهرخواهر",
+      "syllables": ["Schwa", "ger"],
+      "distractors": ["Schwo", "gar", "Schwu", "gur"]
+    },
+    {
+      "type": "new-word",
+      "id": "s12",
+      "word": {
+        "de": "die Schwägerin",
+        "fa": "زن‌برادر/خواهرشوهر"
+      },
+      "example": {
+        "text": {
+          "de": "Meine Schwägerin ist Lehrerin.",
+          "fa": "زن‌برادرم معلم است."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Schwaegerin",
+      "word": "Schwägerin",
+      "translation": "زن‌برادر",
+      "syllables": ["Schwä", "ge", "rin"],
+      "distractors": ["Schwa", "ga", "ran", "Schwo"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s13",
+      "instruction": "جای خالی را با mein یا meine پر کنید",
+      "sentence": "{0} Onkel wohnt in Hamburg.",
+      "options": [
+        "Mein",
+        "Meine",
+        "Meinen",
+        "Meiner"
+      ],
+      "correctAnswers": [0],
+      "feedback": {
+        "explanation": "**Mein** Onkel = عمویم (Onkel مذکر است)"
+      },
+      "feedbackTip": {
+        "category": "wrong-article",
+        "tip": "Onkel مذکر است (der Onkel)، پس **mein** درست است."
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s14",
+      "instruction": "جای خالی را با mein یا meine پر کنید",
+      "sentence": "{0} Tante kommt morgen.",
+      "options": [
+        "Mein",
+        "Meine",
+        "Meinen",
+        "Meiner"
+      ],
+      "correctAnswers": [1],
+      "feedback": {
+        "explanation": "**Meine** Tante = خاله‌ام (Tante مونث است)"
+      },
+      "feedbackTip": {
+        "category": "wrong-article",
+        "tip": "Tante مونث است (die Tante)، پس **meine** درست است."
+      }
+    },
+    {
+      "type": "matching",
+      "id": "s15",
+      "instruction": "کلمات آلمانی را با فارسی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Onkel" },
+        { "id": "i2", "text": "Tante" },
+        { "id": "i3", "text": "Cousin" },
+        { "id": "i4", "text": "Nichte" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "عمه/خاله" },
+        { "id": "m2", "text": "عمو/دایی" },
+        { "id": "m3", "text": "خواهرزاده دختر" },
+        { "id": "m4", "text": "پسرعمو" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m1"],
+        ["i3", "m4"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s16",
+      "question": "کدام جمله درست است؟",
+      "options": [
+        "Mein Cousine wohnt in Berlin.",
+        "Meine Cousine wohnt in Berlin.",
+        "Meinen Cousine wohnt in Berlin.",
+        "Meiner Cousine wohnt in Berlin."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": {
+        "correct": "آفرین! Cousine مونث است، پس meine درست است.",
+        "incorrect": "Cousine مونث است (die Cousine)، پس باید meine باشد."
+      },
+      "feedbackTip": {
+        "category": "wrong-article",
+        "tip": "برای اسم‌های مونث (die) از **meine** استفاده کنید: die Cousine → meine Cousine"
+      }
+    },
+    {
+      "type": "dialog",
+      "id": "s17",
+      "title": "مکالمه: مهمانی خانوادگی",
+      "context": "الی در مورد یک مهمانی خانوادگی صحبت می‌کند",
+      "lines": [
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Was machst du am Wochenende?",
+            "fa": "آخر هفته چه کار می‌کنی؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Wir haben eine Familienfeier. Alle Verwandten kommen!",
+            "fa": "ما یک مهمانی خانوادگی داریم. همه فامیل می‌آیند!"
+          },
+          "mood": "happy"
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Wer kommt alles?",
+            "fa": "همه کی‌ها می‌آیند؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Meine Tante mit meinem Cousin, mein Onkel mit meiner Cousine, und mein Schwager mit meiner Schwester.",
+            "fa": "خاله‌ام با پسرخاله‌ام، عمویم با دخترعمویم، و شوهرخواهرم با خواهرم."
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Das klingt toll! Viel Spaß!",
+            "fa": "عالی به نظر می‌رسد! خوش بگذره!"
+          }
+        }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        {
+          "question": "چرا خانواده الی جمع می‌شوند؟",
+          "options": ["تولد", "مهمانی خانوادگی", "عید"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: Wir haben eine Familienfeier (مهمانی خانوادگی)"
+        },
+        {
+          "question": "شوهرخواهر الی با که می‌آید؟",
+          "options": ["مادر الی", "خواهر الی", "برادر الی"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: mein Schwager mit meiner Schwester (شوهرخواهرم با خواهرم)"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g3",
+      "title": "مرور کلی",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        {
+          "prompt": "Verwandte",
+          "left": "خویشاوندان",
+          "right": "دوستان",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "mein Onkel",
+          "left": "عمویم",
+          "right": "خاله‌ام",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "meine Tante",
+          "left": "عمویم",
+          "right": "خاله‌ام",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Schwager",
+          "left": "شوهرخواهر",
+          "right": "زن‌برادر",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Schwägerin",
+          "left": "شوهرخواهر",
+          "right": "زن‌برادر",
+          "correctSide": "right"
+        }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Mein Onkel wohnt in Berlin.",
+      "translation": "عمویم در برلین زندگی می‌کند.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Meine Tante hat zwei Kinder.",
+      "translation": "خاله‌ام دو بچه دارد.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "die Verwandten", "fa": "خویشاوندان" },
+        { "de": "der Onkel", "fa": "عمو/دایی" },
+        { "de": "die Tante", "fa": "عمه/خاله" },
+        { "de": "der Cousin", "fa": "پسرعمو/پسرخاله" },
+        { "de": "die Cousine", "fa": "دخترعمو/دخترخاله" },
+        { "de": "der Neffe", "fa": "برادرزاده (پسر)" },
+        { "de": "die Nichte", "fa": "خواهرزاده (دختر)" },
+        { "de": "der Schwager", "fa": "شوهرخواهر" },
+        { "de": "die Schwägerin", "fa": "زن‌برادر" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما کلمات خویشاوندان را یاد گرفتید:\n\n👨‍👩‍👧 **عمو و خاله:**\n• der Onkel = عمو/دایی\n• die Tante = عمه/خاله\n\n👦👧 **بچه‌های عمو/خاله:**\n• der Cousin = پسرعمو/پسرخاله\n• die Cousine = دخترعمو/دخترخاله\n\n👶 **برادرزاده‌ها:**\n• der Neffe = برادرزاده پسر\n• die Nichte = خواهرزاده دختر\n\n💑 **از طریق ازدواج:**\n• der Schwager = شوهرخواهر\n• die Schwägerin = زن‌برادر\n\n📝 **نکته:** در آلمانی Onkel هم عمو است و هم دایی!",
+      "xpEarned": 50,
+      "nextLessonId": "A1-M07-L04",
+      "vocabularyLearned": [
+        { "word": { "de": "die Verwandten", "fa": "خویشاوندان" } },
+        { "word": { "de": "der Onkel", "fa": "عمو/دایی" } },
+        { "word": { "de": "die Tante", "fa": "عمه/خاله" } },
+        { "word": { "de": "der Cousin", "fa": "پسرعمو/پسرخاله" } },
+        { "word": { "de": "die Cousine", "fa": "دخترعمو/دخترخاله" } },
+        { "word": { "de": "der Neffe", "fa": "برادرزاده (پسر)" } },
+        { "word": { "de": "die Nichte", "fa": "خواهرزاده (دختر)" } },
+        { "word": { "de": "der Schwager", "fa": "شوهرخواهر" } },
+        { "word": { "de": "die Schwägerin", "fa": "زن‌برادر" } }
+      ]
+    }
+  ]
+}
