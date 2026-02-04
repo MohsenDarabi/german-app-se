@@ -1,0 +1,421 @@
+{
+  "id": "A2-M04-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Nebensätze mit weil und dass", "fa": "جملات پیرو با weil و dass" },
+  "description": "یاد بگیرید جملات پیرو با «چون» و «که» بسازید",
+  "level": "A2",
+  "module": 4,
+  "lessonNumber": 1,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "weil", "fa": "چون / زیرا", "grammar": { "pos": "conjunction", "type": "subordinating" } },
+    { "de": "dass", "fa": "که", "grammar": { "pos": "conjunction", "type": "subordinating" } },
+    { "de": "der Nebensatz", "fa": "جمله پیرو", "grammar": { "pos": "noun", "gender": "masculine" } },
+    { "de": "der Hauptsatz", "fa": "جمله اصلی", "grammar": { "pos": "noun", "gender": "masculine" } },
+    { "de": "glauben", "fa": "فکر کردن / باور داشتن", "grammar": { "pos": "verb" } },
+    { "de": "hoffen", "fa": "امیدوار بودن", "grammar": { "pos": "verb" } },
+    { "de": "wissen", "fa": "دانستن", "grammar": { "pos": "verb" } },
+    { "de": "denken", "fa": "فکر کردن", "grammar": { "pos": "verb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "Nebensätze - جملات پیرو",
+      "content": "📝 **Nebensatz** جمله‌ای است که به جمله اصلی وابسته است.\n\n⚠️ **قانون مهم:** در جمله پیرو، **فعل به آخر می‌رود!**\n\n**جمله اصلی:**\nIch bin müde.\n\n**جمله پیرو با weil:**\nIch bin müde, **weil** ich nicht geschlafen **habe**.\n(خسته‌ام **چون** نخوابیده‌**ام**.)\n\n💡 توجه کنید: habe به آخر رفت!",
+      "examples": [
+        { "de": "Ich lerne Deutsch, weil ich in Deutschland arbeiten will.", "fa": "آلمانی یاد می‌گیرم چون می‌خواهم در آلمان کار کنم." },
+        { "de": "Er sagt, dass er müde ist.", "fa": "او می‌گوید که خسته است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "weil", "fa": "چون / زیرا" },
+      "example": { "text": { "de": "Ich bleibe zu Hause, weil es regnet.", "fa": "خانه می‌مانم چون باران می‌آید." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "dass", "fa": "که" },
+      "example": { "text": { "de": "Ich weiß, dass du recht hast.", "fa": "می‌دانم که حق با توست." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-nebensatz",
+      "word": "Nebensatz",
+      "translation": "جمله پیرو",
+      "syllables": ["Ne", "ben", "satz"],
+      "distractors": ["Na", "ban", "sotz", "Nu"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "در جمله پیرو آلمانی، فعل کجا می‌رود؟",
+      "options": ["اول جمله", "دوم جمله", "آخر جمله", "فرقی نمی‌کند"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! در Nebensatz فعل به آخر می‌رود.", "incorrect": "در جمله پیرو، فعل به آخر جمله می‌رود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich bin müde, {0} ich nicht geschlafen habe.",
+      "options": ["weil", "dass", "und", "oder"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "weil = چون (دلیل)" }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "glauben", "fa": "فکر کردن / باور داشتن" },
+      "example": { "text": { "de": "Ich glaube, dass er kommt.", "fa": "فکر می‌کنم که او می‌آید." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "hoffen", "fa": "امیدوار بودن" },
+      "example": { "text": { "de": "Ich hoffe, dass das Wetter schön wird.", "fa": "امیدوارم که هوا خوب شود." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s6",
+      "title": "weil و dass",
+      "content": "📝 **weil** = چون (دلیل می‌دهد)\n**Warum?** → **weil**\n\n📝 **dass** = که (بعد از فعل‌هایی مثل:)\n• glauben (فکر کردن)\n• hoffen (امیدوار بودن)\n• wissen (دانستن)\n• sagen (گفتن)\n\n**مثال‌ها:**\nIch komme nicht, **weil** ich krank **bin**.\nIch glaube, **dass** er krank **ist**.",
+      "examples": [
+        { "de": "Warum lernst du Deutsch? - Weil ich es brauche.", "fa": "چرا آلمانی یاد می‌گیری؟ - چون نیازش دارم." },
+        { "de": "Ich hoffe, dass du kommst.", "fa": "امیدوارم که بیایی." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "wissen", "fa": "دانستن" },
+      "example": { "text": { "de": "Ich weiß, dass er Deutsch spricht.", "fa": "می‌دانم که او آلمانی صحبت می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-glauben",
+      "word": "glauben",
+      "translation": "باور داشتن",
+      "syllables": ["glau", "ben"],
+      "distractors": ["glo", "ban", "gle", "bon"]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "weil یا dass؟",
+      "instruction": "کلمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "Ich komme nicht, ... ich krank bin.", "left": "weil", "right": "dass", "correctSide": "left" },
+        { "prompt": "Ich glaube, ... er kommt.", "left": "weil", "right": "dass", "correctSide": "right" },
+        { "prompt": "Er ist müde, ... er viel gearbeitet hat.", "left": "weil", "right": "dass", "correctSide": "left" },
+        { "prompt": "Ich hoffe, ... das Wetter schön wird.", "left": "weil", "right": "dass", "correctSide": "right" },
+        { "prompt": "Sie weiß, ... ich Deutsch lerne.", "left": "weil", "right": "dass", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "denken", "fa": "فکر کردن" },
+      "example": { "text": { "de": "Ich denke, dass es regnen wird.", "fa": "فکر می‌کنم که باران می‌آید." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "der Nebensatz", "fa": "جمله پیرو" },
+      "example": { "text": { "de": "Der Nebensatz beginnt mit weil.", "fa": "جمله پیرو با weil شروع می‌شود." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": { "de": "der Hauptsatz", "fa": "جمله اصلی" },
+      "example": { "text": { "de": "Der Hauptsatz steht oft zuerst.", "fa": "جمله اصلی معمولاً اول می‌آید." } }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "چرا آلمانی یاد می‌گیری؟",
+      "context": "دو دوست درباره یادگیری زبان صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Tom", "text": { "de": "Warum lernst du Deutsch?", "fa": "چرا آلمانی یاد می‌گیری؟" } },
+        { "speaker": "Sara", "text": { "de": "Ich lerne Deutsch, weil ich in Berlin studieren will.", "fa": "آلمانی یاد می‌گیرم چون می‌خواهم در برلین درس بخوانم." } },
+        { "speaker": "Tom", "text": { "de": "Das ist toll! Glaubst du, dass es schwer ist?", "fa": "عالیه! فکر می‌کنی سخت است؟" } },
+        { "speaker": "Sara", "text": { "de": "Ich glaube, dass Grammatik schwer ist, aber ich hoffe, dass ich es schaffe.", "fa": "فکر می‌کنم گرامر سخت است، اما امیدوارم که موفق شوم." } },
+        { "speaker": "Tom", "text": { "de": "Ich weiß, dass du es schaffst!", "fa": "می‌دانم که موفق می‌شوی!" } },
+        { "speaker": "Sara", "text": { "de": "Danke! Das motiviert mich, weil ich manchmal Zweifel habe.", "fa": "ممنون! این انگیزه می‌دهد چون گاهی شک دارم." } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "سارا چرا آلمانی یاد می‌گیرد؟", "options": ["برای کار", "برای تحصیل در برلین", "برای سفر"], "correctIndex": 1 },
+        { "question": "سارا چه چیزی را سخت می‌داند؟", "options": ["تلفظ", "گرامر", "لغت"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich glaube, {0} er morgen kommt.",
+      "options": ["dass", "weil", "und", "aber"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "glauben + dass" }
+    },
+    {
+      "type": "word-order",
+      "id": "w1",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["bin.", "weil", "müde", "krank", "ich", "Ich", "bin,"],
+      "correctOrder": [5, 6, 3, 1, 4, 2, 0],
+      "correctSentence": { "de": "Ich bin krank, weil ich müde bin.", "fa": "مریضم چون خسته‌ام." }
+    },
+    {
+      "type": "word-order",
+      "id": "w2",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["kommt.", "dass", "glaube,", "er", "Ich"],
+      "correctOrder": [4, 2, 1, 3, 0],
+      "correctSentence": { "de": "Ich glaube, dass er kommt.", "fa": "فکر می‌کنم که او می‌آید." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "جمله اصلی را با جمله پیرو جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Ich bleibe zu Hause," },
+        { "id": "i2", "text": "Ich glaube," },
+        { "id": "i3", "text": "Er ist glücklich," },
+        { "id": "i4", "text": "Ich hoffe," }
+      ],
+      "matches": [
+        { "id": "m1", "text": "dass du kommst." },
+        { "id": "m2", "text": "weil es regnet." },
+        { "id": "m3", "text": "dass er recht hat." },
+        { "id": "m4", "text": "weil er Urlaub hat." }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m3"],
+        ["i3", "m4"],
+        ["i4", "m1"]
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-hoffen",
+      "word": "hoffen",
+      "translation": "امیدوار بودن",
+      "syllables": ["hof", "fen"],
+      "distractors": ["haf", "fan", "huf", "fon"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله درست است؟",
+      "options": ["Ich bin müde, weil ich bin krank.", "Ich bin müde, weil ich krank bin.", "Ich bin müde, weil krank ich bin.", "Ich bin müde, weil bin ich krank."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! فعل در جمله پیرو به آخر می‌رود.", "incorrect": "در جمله پیرو، فعل به آخر می‌رود: weil ich krank BIN" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich weiß, {0} sie Deutsch spricht.",
+      "options": ["dass", "weil", "und", "oder"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "wissen + dass" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در دفتر",
+      "context": "دو همکار صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Warum kommst du heute später?", "fa": "چرا امروز دیرتر می‌آیی؟" } },
+        { "speaker": "Max", "text": { "de": "Ich komme später, weil ich einen Arzttermin habe.", "fa": "دیرتر می‌آیم چون وقت دکتر دارم." } },
+        { "speaker": "Anna", "text": { "de": "Ich hoffe, dass alles in Ordnung ist.", "fa": "امیدوارم که همه چیز خوب باشد." } },
+        { "speaker": "Max", "text": { "de": "Danke! Ich denke, dass es nur eine Erkältung ist.", "fa": "ممنون! فکر می‌کنم فقط سرماخوردگی است." } },
+        { "speaker": "Anna", "text": { "de": "Gut. Ich sage dem Chef, dass du später kommst.", "fa": "خوب. به رئیس می‌گویم که دیرتر می‌آیی." } },
+        { "speaker": "Max", "text": { "de": "Das ist nett, weil ich keine Zeit habe, ihn anzurufen.", "fa": "لطف می‌کنی چون وقت ندارم زنگ بزنم." } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "ماکس چرا دیرتر می‌آید؟", "options": ["ترافیک", "وقت دکتر", "خواب مانده"], "correctIndex": 1 },
+        { "question": "ماکس فکر می‌کند چه مشکلی دارد؟", "options": ["سرماخوردگی", "سردرد", "دل‌درد"], "correctIndex": 0 }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "ترجمه سریع",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "weil", "left": "که", "right": "چون", "correctSide": "right" },
+        { "prompt": "dass", "left": "که", "right": "چون", "correctSide": "left" },
+        { "prompt": "glauben", "left": "دانستن", "right": "فکر کردن", "correctSide": "right" },
+        { "prompt": "hoffen", "left": "امیدوار بودن", "right": "ترسیدن", "correctSide": "left" },
+        { "prompt": "wissen", "left": "فراموش کردن", "right": "دانستن", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er kommt nicht, {0} er krank ist.",
+      "options": ["weil", "dass", "und", "aber"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "weil = چون (دلیل)" }
+    },
+    {
+      "type": "word-order",
+      "id": "w3",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["wird.", "hoffe,", "schön", "dass", "Wetter", "das", "Ich"],
+      "correctOrder": [6, 1, 3, 5, 4, 2, 0],
+      "correctSentence": { "de": "Ich hoffe, dass das Wetter schön wird.", "fa": "امیدوارم که هوا خوب شود." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "بعد از کدام فعل از «dass» استفاده می‌کنیم؟",
+      "options": ["kommen", "gehen", "glauben", "essen"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! Ich glaube, dass...", "incorrect": "glauben, hoffen, wissen, denken با dass می‌آیند." }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-wissen",
+      "word": "wissen",
+      "translation": "دانستن",
+      "syllables": ["wis", "sen"],
+      "distractors": ["was", "san", "wos", "son"]
+    },
+    {
+      "type": "matching",
+      "id": "m2",
+      "instruction": "فعل را با ترجمه جفت کنید",
+      "items": [
+        { "id": "i1", "text": "glauben" },
+        { "id": "i2", "text": "hoffen" },
+        { "id": "i3", "text": "wissen" },
+        { "id": "i4", "text": "denken" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "دانستن" },
+        { "id": "m2", "text": "باور داشتن" },
+        { "id": "m3", "text": "فکر کردن" },
+        { "id": "m4", "text": "امیدوار بودن" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m4"],
+        ["i3", "m1"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich denke, {0} es morgen regnet.",
+      "options": ["dass", "weil", "und", "oder"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "denken + dass" }
+    },
+    {
+      "type": "word-order",
+      "id": "w4",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["spricht.", "weiß,", "er", "dass", "Ich", "Deutsch"],
+      "correctOrder": [4, 1, 3, 2, 5, 0],
+      "correctSentence": { "de": "Ich weiß, dass er Deutsch spricht.", "fa": "می‌دانم که او آلمانی صحبت می‌کند." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "«Ich bleibe zu Hause, weil es regnet» یعنی چه؟",
+      "options": ["خانه می‌مانم اگر باران بیاید", "خانه می‌مانم چون باران می‌آید", "خانه می‌مانم وقتی باران بیاید", "خانه می‌مانم تا باران بیاید"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "weil = چون (دلیل)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sie sagt, {0} sie morgen kommt.",
+      "options": ["dass", "weil", "und", "aber"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "sagen + dass" }
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Ich bin müde, weil ich nicht geschlafen habe.",
+      "translation": "خسته‌ام چون نخوابیده‌ام.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Ich glaube, dass er kommt.",
+      "translation": "فکر می‌کنم که او می‌آید.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-3",
+      "targetText": "Ich hoffe, dass das Wetter schön wird.",
+      "translation": "امیدوارم که هوا خوب شود.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "memory-match",
+      "id": "g3",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "weil", "fa": "چون" },
+        { "de": "dass", "fa": "که" },
+        { "de": "glauben", "fa": "باور داشتن" },
+        { "de": "hoffen", "fa": "امیدوار بودن" },
+        { "de": "wissen", "fa": "دانستن" },
+        { "de": "denken", "fa": "فکر کردن" }
+      ],
+      "timeLimit": 60
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "weil", "fa": "چون / زیرا" },
+        { "de": "dass", "fa": "که" },
+        { "de": "der Nebensatz", "fa": "جمله پیرو" },
+        { "de": "der Hauptsatz", "fa": "جمله اصلی" },
+        { "de": "glauben", "fa": "باور داشتن" },
+        { "de": "hoffen", "fa": "امیدوار بودن" },
+        { "de": "wissen", "fa": "دانستن" },
+        { "de": "denken", "fa": "فکر کردن" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما جملات پیرو با weil و dass را یاد گرفتید!\n\n📝 **قانون مهم:**\nدر جمله پیرو، **فعل به آخر می‌رود!**\n\n**weil** = چون (دلیل)\nIch komme nicht, weil ich krank **bin**.\n\n**dass** = که (بعد از glauben, hoffen, wissen, denken, sagen)\nIch glaube, dass er **kommt**.",
+      "xpEarned": 50,
+      "vocabularyLearned": [
+        { "word": { "de": "weil", "fa": "چون / زیرا" } },
+        { "word": { "de": "dass", "fa": "که" } },
+        { "word": { "de": "der Nebensatz", "fa": "جمله پیرو" } },
+        { "word": { "de": "der Hauptsatz", "fa": "جمله اصلی" } },
+        { "word": { "de": "glauben", "fa": "باور داشتن" } },
+        { "word": { "de": "hoffen", "fa": "امیدوار بودن" } },
+        { "word": { "de": "wissen", "fa": "دانستن" } },
+        { "word": { "de": "denken", "fa": "فکر کردن" } }
+      ]
+    }
+  ]
+}
