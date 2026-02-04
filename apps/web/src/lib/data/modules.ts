@@ -303,6 +303,19 @@ const DE_FA_A1_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/A1/A1-M08-L04"
       }
     ]
+  },
+  {
+    id: "module-09",
+    title: "بخش ۹: مسکن (Wohnen)",
+    level: "A1",
+    lessons: [
+      {
+        id: "A1-M09-L01",
+        title: "آپارتمان (Die Wohnung)",
+        description: "یاد بگیرید اتاق‌های خانه را به آلمانی بگویید.",
+        path: "/learn/de-fa/A1/A1-M09-L01"
+      }
+    ]
   }
 ];
 

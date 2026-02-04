@@ -1,0 +1,667 @@
+{
+  "id": "A1-M09-L01",
+  "languagePair": "de-fa",
+  "source": {
+    "code": "de",
+    "name": "Deutsch"
+  },
+  "target": {
+    "code": "fa",
+    "name": "فارسی"
+  },
+  "title": {
+    "de": "Die Wohnung",
+    "fa": "آپارتمان"
+  },
+  "description": "یاد بگیرید اتاق‌های خانه را به آلمانی بگویید",
+  "level": "A1",
+  "module": 9,
+  "lessonNumber": 1,
+  "totalSteps": 40,
+  "estimatedMinutes": 19,
+  "vocabulary": [
+    { "de": "die Wohnung", "fa": "آپارتمان", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Wohnungen" } } },
+    { "de": "das Haus", "fa": "خانه", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Häuser" } } },
+    { "de": "das Zimmer", "fa": "اتاق", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Zimmer" } } },
+    { "de": "die Küche", "fa": "آشپزخانه", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Küchen" } } },
+    { "de": "das Bad", "fa": "حمام", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Bäder" } } },
+    { "de": "das Schlafzimmer", "fa": "اتاق خواب", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Schlafzimmer" } } },
+    { "de": "das Wohnzimmer", "fa": "اتاق نشیمن", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Wohnzimmer" } } },
+    { "de": "der Balkon", "fa": "بالکن", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Balkone" } } },
+    { "de": "der Flur", "fa": "راهرو", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Flure" } } },
+    { "de": "der Garten", "fa": "باغ/حیاط", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Gärten" } } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "خانه و آپارتمان در آلمانی",
+      "content": "در این درس با اتاق‌های خانه آشنا می‌شویم:\n\n🏠 **انواع مسکن:**\n• die Wohnung = آپارتمان\n• das Haus = خانه (ویلایی)\n\n🚪 **اتاق‌ها:**\n• das Zimmer = اتاق\n• die Küche = آشپزخانه\n• das Bad = حمام\n• das Schlafzimmer = اتاق خواب\n• das Wohnzimmer = اتاق نشیمن\n\n📝 **نکته:** در آلمان بیشتر مردم در آپارتمان (Wohnung) زندگی می‌کنند.",
+      "examples": [
+        {
+          "de": "Ich wohne in einer Wohnung.",
+          "fa": "من در یک آپارتمان زندگی می‌کنم."
+        },
+        {
+          "de": "Die Wohnung hat drei Zimmer.",
+          "fa": "آپارتمان سه اتاق دارد."
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": {
+        "de": "die Wohnung",
+        "fa": "آپارتمان"
+      },
+      "example": {
+        "text": {
+          "de": "Meine Wohnung ist klein aber gemütlich.",
+          "fa": "آپارتمانم کوچک ولی راحت است."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Wohnung",
+      "word": "Wohnung",
+      "translation": "آپارتمان",
+      "syllables": ["Woh", "nung"],
+      "distractors": ["Wah", "nang", "Weh", "ning"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": {
+        "de": "das Haus",
+        "fa": "خانه"
+      },
+      "example": {
+        "text": {
+          "de": "Das Haus hat einen Garten.",
+          "fa": "خانه یک باغ دارد."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Haus",
+      "word": "Haus",
+      "translation": "خانه",
+      "syllables": ["Haus"],
+      "distractors": ["Hous", "Heis", "Hius", "Heos"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": {
+        "de": "das Zimmer",
+        "fa": "اتاق"
+      },
+      "example": {
+        "text": {
+          "de": "Das Zimmer ist groß und hell.",
+          "fa": "اتاق بزرگ و روشن است."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Zimmer",
+      "word": "Zimmer",
+      "translation": "اتاق",
+      "syllables": ["Zim", "mer"],
+      "distractors": ["Zam", "mar", "Zum", "mur"]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": {
+        "de": "die Küche",
+        "fa": "آشپزخانه"
+      },
+      "example": {
+        "text": {
+          "de": "Ich koche in der Küche.",
+          "fa": "در آشپزخانه آشپزی می‌کنم."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Kueche",
+      "word": "Küche",
+      "translation": "آشپزخانه",
+      "syllables": ["Kü", "che"],
+      "distractors": ["Ka", "cha", "Ko", "chu"]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "خانه",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        {
+          "prompt": "Wohnung",
+          "left": "آپارتمان",
+          "right": "خانه ویلایی",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Haus",
+          "left": "آپارتمان",
+          "right": "خانه",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Zimmer",
+          "left": "اتاق",
+          "right": "طبقه",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Küche",
+          "left": "حمام",
+          "right": "آشپزخانه",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "آشپزخانه =",
+          "left": "Bad",
+          "right": "Küche",
+          "correctSide": "right"
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": {
+        "de": "das Bad",
+        "fa": "حمام"
+      },
+      "example": {
+        "text": {
+          "de": "Das Bad ist neben dem Schlafzimmer.",
+          "fa": "حمام کنار اتاق خواب است."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Bad",
+      "word": "Bad",
+      "translation": "حمام",
+      "syllables": ["Bad"],
+      "distractors": ["Bed", "Bud", "Bid", "Bod"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": {
+        "de": "das Schlafzimmer",
+        "fa": "اتاق خواب"
+      },
+      "example": {
+        "text": {
+          "de": "Mein Schlafzimmer ist sehr ruhig.",
+          "fa": "اتاق خوابم خیلی آرام است."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Schlafzimmer",
+      "word": "Schlafzimmer",
+      "translation": "اتاق خواب",
+      "syllables": ["Schlaf", "zim", "mer"],
+      "distractors": ["Schlof", "zam", "mar", "Schluf"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": {
+        "de": "das Wohnzimmer",
+        "fa": "اتاق نشیمن"
+      },
+      "example": {
+        "text": {
+          "de": "Wir sitzen im Wohnzimmer.",
+          "fa": "ما در اتاق نشیمن می‌نشینیم."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Wohnzimmer",
+      "word": "Wohnzimmer",
+      "translation": "اتاق نشیمن",
+      "syllables": ["Wohn", "zim", "mer"],
+      "distractors": ["Wahn", "zam", "mar", "Wehn"]
+    },
+    {
+      "type": "dialog",
+      "id": "s9",
+      "title": "مکالمه: آپارتمان جدید",
+      "context": "الی آپارتمان جدیدش را به تام نشان می‌دهد",
+      "lines": [
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Wow, deine neue Wohnung ist schön!",
+            "fa": "وای، آپارتمان جدیدت قشنگه!"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Danke! Komm, ich zeige dir alles.",
+            "fa": "ممنون! بیا، همه جا رو نشونت می‌دم."
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Wie viele Zimmer hat die Wohnung?",
+            "fa": "آپارتمان چند تا اتاق داره؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Drei Zimmer: ein Schlafzimmer, ein Wohnzimmer und ein Arbeitszimmer.",
+            "fa": "سه اتاق: یک اتاق خواب، یک اتاق نشیمن و یک اتاق کار."
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Und die Küche? Ist sie groß?",
+            "fa": "و آشپزخانه؟ بزرگه؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Die Küche ist klein, aber das Bad ist groß.",
+            "fa": "آشپزخانه کوچکه، ولی حمام بزرگه."
+          }
+        }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        {
+          "question": "آپارتمان الی چند اتاق دارد؟",
+          "options": ["دو اتاق", "سه اتاق", "چهار اتاق"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: Drei Zimmer (سه اتاق)"
+        },
+        {
+          "question": "آشپزخانه چطور است؟",
+          "options": ["بزرگ", "کوچک", "متوسط"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: Die Küche ist klein (آشپزخانه کوچک است)"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "اتاق‌ها",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        {
+          "prompt": "Bad",
+          "left": "حمام",
+          "right": "آشپزخانه",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Schlafzimmer",
+          "left": "اتاق نشیمن",
+          "right": "اتاق خواب",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Wohnzimmer",
+          "left": "اتاق نشیمن",
+          "right": "اتاق خواب",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "حمام =",
+          "left": "Küche",
+          "right": "Bad",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "اتاق خواب =",
+          "left": "Schlafzimmer",
+          "right": "Wohnzimmer",
+          "correctSide": "left"
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": {
+        "de": "der Balkon",
+        "fa": "بالکن"
+      },
+      "example": {
+        "text": {
+          "de": "Ich trinke Kaffee auf dem Balkon.",
+          "fa": "روی بالکن قهوه می‌نوشم."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Balkon",
+      "word": "Balkon",
+      "translation": "بالکن",
+      "syllables": ["Bal", "kon"],
+      "distractors": ["Bol", "kan", "Bel", "kun"]
+    },
+    {
+      "type": "new-word",
+      "id": "s11",
+      "word": {
+        "de": "der Flur",
+        "fa": "راهرو"
+      },
+      "example": {
+        "text": {
+          "de": "Die Schuhe stehen im Flur.",
+          "fa": "کفش‌ها در راهرو هستند."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Flur",
+      "word": "Flur",
+      "translation": "راهرو",
+      "syllables": ["Flur"],
+      "distractors": ["Flar", "Flor", "Flir", "Fler"]
+    },
+    {
+      "type": "new-word",
+      "id": "s12",
+      "word": {
+        "de": "der Garten",
+        "fa": "باغ/حیاط"
+      },
+      "example": {
+        "text": {
+          "de": "Die Kinder spielen im Garten.",
+          "fa": "بچه‌ها در باغ بازی می‌کنند."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Garten",
+      "word": "Garten",
+      "translation": "باغ",
+      "syllables": ["Gar", "ten"],
+      "distractors": ["Gor", "tan", "Gur", "tin"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s13",
+      "title": "شمارش اتاق‌ها در آلمانی",
+      "content": "در آگهی‌های آپارتمان، اتاق‌ها را اینطور می‌شمارند:\n\n🏠 **۲-Zimmer-Wohnung:**\n= ۱ اتاق خواب + ۱ اتاق نشیمن\n(آشپزخانه و حمام جدا حساب نمی‌شوند!)\n\n🏠 **۳-Zimmer-Wohnung:**\n= ۲ اتاق خواب + ۱ اتاق نشیمن\n\n📝 **نکته:** آشپزخانه و حمام همیشه هست، ولی جزو تعداد اتاق نیست!",
+      "examples": [
+        {
+          "de": "Ich suche eine 2-Zimmer-Wohnung.",
+          "fa": "دنبال یک آپارتمان ۲ اتاقه می‌گردم."
+        },
+        {
+          "de": "Die Wohnung hat 3 Zimmer, Küche und Bad.",
+          "fa": "آپارتمان ۳ اتاق، آشپزخانه و حمام دارد."
+        }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s14",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich koche in der {0}.",
+      "options": [
+        "Küche",
+        "Bad",
+        "Schlafzimmer",
+        "Balkon"
+      ],
+      "correctAnswers": [0],
+      "feedback": {
+        "explanation": "**In der Küche** = در آشپزخانه (جایی که آشپزی می‌کنیم)"
+      },
+      "feedbackTip": {
+        "category": "vocabulary",
+        "tip": "kochen (آشپزی کردن) → Küche (آشپزخانه)"
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s15",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich schlafe im {0}.",
+      "options": [
+        "Küche",
+        "Schlafzimmer",
+        "Balkon",
+        "Flur"
+      ],
+      "correctAnswers": [1],
+      "feedback": {
+        "explanation": "**Im Schlafzimmer** = در اتاق خواب (جایی که می‌خوابیم)"
+      },
+      "feedbackTip": {
+        "category": "vocabulary",
+        "tip": "schlafen (خوابیدن) → Schlafzimmer (اتاق خواب)"
+      }
+    },
+    {
+      "type": "dialog",
+      "id": "s16",
+      "title": "مکالمه: خانه یا آپارتمان؟",
+      "context": "الی و تام درباره محل زندگی صحبت می‌کنند",
+      "lines": [
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Wohnst du in einem Haus oder in einer Wohnung?",
+            "fa": "تو در خانه زندگی می‌کنی یا آپارتمان؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Ich wohne in einer Wohnung in der Stadt.",
+            "fa": "من در یک آپارتمان در شهر زندگی می‌کنم."
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Hat die Wohnung einen Balkon?",
+            "fa": "آپارتمان بالکن دارد؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Ja, einen kleinen Balkon. Aber keinen Garten.",
+            "fa": "بله، یک بالکن کوچک. ولی باغ ندارد."
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Meine Eltern wohnen in einem Haus mit Garten.",
+            "fa": "والدینم در یک خانه با باغ زندگی می‌کنند."
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Das ist schön! Ein Garten ist toll für Kinder.",
+            "fa": "چه خوب! باغ برای بچه‌ها عالی است."
+          }
+        }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        {
+          "question": "تام کجا زندگی می‌کند؟",
+          "options": ["در خانه با باغ", "در آپارتمان در شهر", "در روستا"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: Ich wohne in einer Wohnung in der Stadt"
+        },
+        {
+          "question": "والدین الی کجا زندگی می‌کنند؟",
+          "options": ["در آپارتمان", "در خانه با باغ", "در هتل"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: Meine Eltern wohnen in einem Haus mit Garten"
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "s17",
+      "instruction": "کلمات آلمانی را با فارسی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Küche" },
+        { "id": "i2", "text": "Bad" },
+        { "id": "i3", "text": "Balkon" },
+        { "id": "i4", "text": "Garten" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "حمام" },
+        { "id": "m2", "text": "آشپزخانه" },
+        { "id": "m3", "text": "باغ" },
+        { "id": "m4", "text": "بالکن" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m1"],
+        ["i3", "m4"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s18",
+      "question": "یک «۲-Zimmer-Wohnung» یعنی چه؟",
+      "options": [
+        "فقط ۲ اتاق، بدون آشپزخانه و حمام",
+        "۱ اتاق خواب + ۱ اتاق نشیمن + آشپزخانه + حمام",
+        "۲ اتاق خواب + آشپزخانه + حمام",
+        "۲ آشپزخانه + ۱ حمام"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": {
+        "correct": "آفرین! در آلمان آشپزخانه و حمام جدا حساب نمی‌شوند.",
+        "incorrect": "۲-Zimmer یعنی ۱ اتاق خواب + ۱ اتاق نشیمن. آشپزخانه و حمام همیشه هست ولی جزو تعداد اتاق نیست."
+      },
+      "feedbackTip": {
+        "category": "culture",
+        "tip": "در آلمان: تعداد Zimmer = اتاق‌های خواب + نشیمن. آشپزخانه و حمام جدا است."
+      }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g3",
+      "title": "مرور کلی",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        {
+          "prompt": "Wohnung",
+          "left": "آپارتمان",
+          "right": "خانه ویلایی",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Flur",
+          "left": "راهرو",
+          "right": "پله",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Garten",
+          "left": "پارکینگ",
+          "right": "باغ",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "بالکن =",
+          "left": "Balkon",
+          "right": "Terrasse",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "راهرو =",
+          "left": "Flur",
+          "right": "Treppe",
+          "correctSide": "left"
+        }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Meine Wohnung hat drei Zimmer.",
+      "translation": "آپارتمانم سه اتاق دارد.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Die Küche ist klein.",
+      "translation": "آشپزخانه کوچک است.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "die Wohnung", "fa": "آپارتمان" },
+        { "de": "das Haus", "fa": "خانه" },
+        { "de": "das Zimmer", "fa": "اتاق" },
+        { "de": "die Küche", "fa": "آشپزخانه" },
+        { "de": "das Bad", "fa": "حمام" },
+        { "de": "das Schlafzimmer", "fa": "اتاق خواب" },
+        { "de": "das Wohnzimmer", "fa": "اتاق نشیمن" },
+        { "de": "der Balkon", "fa": "بالکن" },
+        { "de": "der Flur", "fa": "راهرو" },
+        { "de": "der Garten", "fa": "باغ" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما اتاق‌های خانه را یاد گرفتید:\n\n🏠 **انواع مسکن:**\n• die Wohnung = آپارتمان\n• das Haus = خانه ویلایی\n\n🚪 **اتاق‌ها:**\n• das Zimmer = اتاق\n• die Küche = آشپزخانه\n• das Bad = حمام\n• das Schlafzimmer = اتاق خواب\n• das Wohnzimmer = اتاق نشیمن\n\n🌳 **فضاهای دیگر:**\n• der Balkon = بالکن\n• der Flur = راهرو\n• der Garten = باغ\n\n📝 **نکته:** ۲-Zimmer-Wohnung = ۱ خواب + ۱ نشیمن + آشپزخانه + حمام",
+      "xpEarned": 50,
+      "nextLessonId": "A1-M09-L02",
+      "vocabularyLearned": [
+        { "word": { "de": "die Wohnung", "fa": "آپارتمان" } },
+        { "word": { "de": "das Haus", "fa": "خانه" } },
+        { "word": { "de": "das Zimmer", "fa": "اتاق" } },
+        { "word": { "de": "die Küche", "fa": "آشپزخانه" } },
+        { "word": { "de": "das Bad", "fa": "حمام" } },
+        { "word": { "de": "das Schlafzimmer", "fa": "اتاق خواب" } },
+        { "word": { "de": "das Wohnzimmer", "fa": "اتاق نشیمن" } },
+        { "word": { "de": "der Balkon", "fa": "بالکن" } },
+        { "word": { "de": "der Flur", "fa": "راهرو" } },
+        { "word": { "de": "der Garten", "fa": "باغ" } }
+      ]
+    }
+  ]
+}
