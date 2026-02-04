@@ -1,0 +1,421 @@
+{
+  "id": "A2-M02-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Komparativ - Vergleiche", "fa": "صفت تفضیلی - مقایسه" },
+  "description": "یاد بگیرید چطور چیزها را با هم مقایسه کنید",
+  "level": "A2",
+  "module": 2,
+  "lessonNumber": 1,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "schneller", "fa": "سریع‌تر", "grammar": { "pos": "adjective", "form": "comparative" } },
+    { "de": "größer", "fa": "بزرگ‌تر", "grammar": { "pos": "adjective", "form": "comparative" } },
+    { "de": "kleiner", "fa": "کوچک‌تر", "grammar": { "pos": "adjective", "form": "comparative" } },
+    { "de": "älter", "fa": "مسن‌تر", "grammar": { "pos": "adjective", "form": "comparative" } },
+    { "de": "jünger", "fa": "جوان‌تر", "grammar": { "pos": "adjective", "form": "comparative" } },
+    { "de": "billiger", "fa": "ارزان‌تر", "grammar": { "pos": "adjective", "form": "comparative" } },
+    { "de": "teurer", "fa": "گران‌تر", "grammar": { "pos": "adjective", "form": "comparative" } },
+    { "de": "als", "fa": "از (در مقایسه)", "grammar": { "pos": "conjunction" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "Komparativ - صفت تفضیلی",
+      "content": "📊 **Komparativ** برای مقایسه دو چیز استفاده می‌شود.\n\n📝 **ساختار:**\nصفت + **-er** + **als**\n\n• schnell → schnell**er**\n  Das Auto ist schnell**er als** das Fahrrad.\n  = ماشین سریع‌تر از دوچرخه است.\n\n⚠️ صفت‌های کوتاه با a, o, u اغلب Umlaut می‌گیرند:\n• alt → **ä**lter\n• groß → gr**ö**ßer\n• jung → j**ü**nger",
+      "examples": [
+        { "de": "Ich bin älter als du.", "fa": "من مسن‌تر از تو هستم." },
+        { "de": "Berlin ist größer als München.", "fa": "برلین بزرگ‌تر از مونیخ است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "schneller", "fa": "سریع‌تر (از schnell)" },
+      "example": { "text": { "de": "Der Zug ist schneller als der Bus.", "fa": "قطار سریع‌تر از اتوبوس است." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "größer", "fa": "بزرگ‌تر (از groß)" },
+      "example": { "text": { "de": "Mein Bruder ist größer als ich.", "fa": "برادرم بزرگ‌تر از من است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-schneller",
+      "word": "schneller",
+      "translation": "سریع‌تر",
+      "syllables": ["schnel", "ler"],
+      "distractors": ["schnal", "lar", "schnol", "lir"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "als", "fa": "از (در مقایسه)" },
+      "example": { "text": { "de": "Er ist stärker als ich.", "fa": "او قوی‌تر از من است." } }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«Das Auto ist schneller als das Fahrrad» یعنی چه؟",
+      "options": ["ماشین سریع است", "ماشین سریع‌تر از دوچرخه است", "دوچرخه سریع‌تر از ماشین است", "ماشین و دوچرخه سریع هستند"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "schneller als = سریع‌تر از" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Berlin ist {0} als München.",
+      "options": ["größer", "groß", "größ", "großer"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "groß → größer (با Umlaut)" }
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "kleiner", "fa": "کوچک‌تر (از klein)" },
+      "example": { "text": { "de": "Meine Wohnung ist kleiner als deine.", "fa": "آپارتمان من کوچک‌تر از مال تو است." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "älter", "fa": "مسن‌تر (از alt)" },
+      "example": { "text": { "de": "Meine Mutter ist älter als mein Vater.", "fa": "مادرم مسن‌تر از پدرم است." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "jünger", "fa": "جوان‌تر (از jung)" },
+      "example": { "text": { "de": "Meine Schwester ist jünger als ich.", "fa": "خواهرم جوان‌تر از من است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-groesser",
+      "word": "größer",
+      "translation": "بزرگ‌تر",
+      "syllables": ["grö", "ßer"],
+      "distractors": ["gro", "ser", "gra", "zar"]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "Komparativ",
+      "instruction": "صفت تفضیلی درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "schnell →", "left": "schneller", "right": "schnellst", "correctSide": "left" },
+        { "prompt": "groß →", "left": "großer", "right": "größer", "correctSide": "right" },
+        { "prompt": "klein →", "left": "kleiner", "right": "kleinst", "correctSide": "left" },
+        { "prompt": "alt →", "left": "alter", "right": "älter", "correctSide": "right" },
+        { "prompt": "jung →", "left": "jünger", "right": "junger", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s8",
+      "title": "صفت‌های با Umlaut",
+      "content": "⚠️ **صفت‌های کوتاه** با a, o, u در Komparativ Umlaut می‌گیرند:\n\n| صفت | Komparativ | معنی |\n|-----|------------|------|\n| alt | **ä**lter | مسن‌تر |\n| jung | j**ü**nger | جوان‌تر |\n| groß | gr**ö**ßer | بزرگ‌تر |\n| kurz | k**ü**rzer | کوتاه‌تر |\n| lang | l**ä**nger | بلندتر |\n| warm | w**ä**rmer | گرم‌تر |\n| kalt | k**ä**lter | سردتر |",
+      "examples": [
+        { "de": "Der Winter ist kälter als der Herbst.", "fa": "زمستان سردتر از پاییز است." },
+        { "de": "Dein Haar ist länger als meins.", "fa": "موی تو بلندتر از مال من است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "billiger", "fa": "ارزان‌تر (از billig)" },
+      "example": { "text": { "de": "Dieses Handy ist billiger als das andere.", "fa": "این گوشی ارزان‌تر از آن یکی است." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": { "de": "teurer", "fa": "گران‌تر (از teuer)" },
+      "example": { "text": { "de": "Das Hotel ist teurer als die Pension.", "fa": "هتل گران‌تر از پانسیون است." } }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "خرید گوشی",
+      "context": "الی و تام در مغازه هستند",
+      "lines": [
+        { "speaker": "Eli", "text": { "de": "Welches Handy soll ich kaufen?", "fa": "کدام گوشی را بخرم؟" } },
+        { "speaker": "Tom", "text": { "de": "Dieses ist billiger als das andere.", "fa": "این ارزان‌تر از آن یکی است." } },
+        { "speaker": "Eli", "text": { "de": "Ja, aber das teurere hat eine bessere Kamera.", "fa": "بله، ولی گران‌تره دوربین بهتری دارد." } },
+        { "speaker": "Tom", "text": { "de": "Stimmt. Und der Bildschirm ist auch größer.", "fa": "درسته. و صفحه‌نمایش هم بزرگ‌تر است." } },
+        { "speaker": "Eli", "text": { "de": "Aber das billigere ist schneller.", "fa": "ولی ارزان‌تره سریع‌تر است." } },
+        { "speaker": "Tom", "text": { "de": "Das ist eine schwere Entscheidung!", "fa": "این تصمیم سختی است!" } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "کدام گوشی دوربین بهتری دارد؟", "options": ["ارزان‌تر", "گران‌تر", "هر دو"], "correctIndex": 1 },
+        { "question": "کدام گوشی سریع‌تر است؟", "options": ["ارزان‌تر", "گران‌تر", "هر دو"], "correctIndex": 0 }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Meine Schwester ist {0} als ich.",
+      "options": ["jünger", "jung", "jungerer", "jüng"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "jung → jünger (با Umlaut)" }
+    },
+    {
+      "type": "word-order",
+      "id": "w1",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["du.", "als", "bin", "älter", "Ich"],
+      "correctOrder": [4, 2, 3, 1, 0],
+      "correctSentence": { "de": "Ich bin älter als du.", "fa": "من مسن‌تر از تو هستم." }
+    },
+    {
+      "type": "word-order",
+      "id": "w2",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["Bus.", "der", "schneller", "ist", "Zug", "als", "Der"],
+      "correctOrder": [6, 4, 3, 2, 5, 1, 0],
+      "correctSentence": { "de": "Der Zug ist schneller als der Bus.", "fa": "قطار سریع‌تر از اتوبوس است." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "صفت‌ها را با Komparativ جفت کنید",
+      "items": [
+        { "id": "i1", "text": "schnell" },
+        { "id": "i2", "text": "groß" },
+        { "id": "i3", "text": "alt" },
+        { "id": "i4", "text": "jung" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "älter" },
+        { "id": "m2", "text": "schneller" },
+        { "id": "m3", "text": "jünger" },
+        { "id": "m4", "text": "größer" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m4"],
+        ["i3", "m1"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-aelter",
+      "word": "älter",
+      "translation": "مسن‌تر",
+      "syllables": ["äl", "ter"],
+      "distractors": ["al", "tar", "el", "tur"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "Komparativ از «klein» چیست؟",
+      "options": ["kleinst", "kleiner", "kleinerer", "klein"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "klein → kleiner (بدون Umlaut)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das Hotel ist {0} als die Pension.",
+      "options": ["teurer", "teuer", "teurerer", "teur"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "teuer → teurer" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "مقایسه شهرها",
+      "context": "دو دوست درباره شهرها صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Ich finde Berlin interessanter als Hamburg.", "fa": "فکر می‌کنم برلین جالب‌تر از هامبورگ است." } },
+        { "speaker": "Max", "text": { "de": "Ja, aber Hamburg ist schöner.", "fa": "بله، ولی هامبورگ زیباتر است." } },
+        { "speaker": "Anna", "text": { "de": "Berlin ist auch größer und hat mehr Museen.", "fa": "برلین بزرگ‌تر هم هست و موزه‌های بیشتری دارد." } },
+        { "speaker": "Max", "text": { "de": "Stimmt. Aber Hamburg ist sauberer.", "fa": "درسته. ولی هامبورگ تمیزتر است." } },
+        { "speaker": "Anna", "text": { "de": "Und das Leben in Hamburg ist teurer als in Berlin.", "fa": "و زندگی در هامبورگ گران‌تر از برلین است." } },
+        { "speaker": "Max", "text": { "de": "Das stimmt. Berlin ist billiger.", "fa": "درسته. برلین ارزان‌تر است." } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "کدام شهر بزرگ‌تر است؟", "options": ["هامبورگ", "برلین", "هر دو"], "correctIndex": 1 },
+        { "question": "کدام شهر گران‌تر است؟", "options": ["هامبورگ", "برلین", "هر دو"], "correctIndex": 0 }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "بیشتر Komparativ",
+      "instruction": "صفت تفضیلی درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "billig →", "left": "billiger", "right": "billigst", "correctSide": "left" },
+        { "prompt": "teuer →", "left": "teuerer", "right": "teurer", "correctSide": "right" },
+        { "prompt": "kalt →", "left": "kälter", "right": "kalter", "correctSide": "left" },
+        { "prompt": "warm →", "left": "warmer", "right": "wärmer", "correctSide": "right" },
+        { "prompt": "lang →", "left": "länger", "right": "langer", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Der Winter ist {0} als der Sommer.",
+      "options": ["kälter", "kalt", "kalter", "kält"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "kalt → kälter (با Umlaut)" }
+    },
+    {
+      "type": "word-order",
+      "id": "w3",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["andere.", "das", "billiger", "ist", "als", "Dieses Handy"],
+      "correctOrder": [5, 3, 2, 4, 1, 0],
+      "correctSentence": { "de": "Dieses Handy ist billiger als das andere.", "fa": "این گوشی ارزان‌تر از آن یکی است." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "کدام جمله درست است؟",
+      "options": ["Er ist groß als ich.", "Er ist größer als ich.", "Er ist großer als ich.", "Er ist größ als ich."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "groß → größer als" }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-juenger",
+      "word": "jünger",
+      "translation": "جوان‌تر",
+      "syllables": ["jün", "ger"],
+      "distractors": ["jun", "gar", "jen", "gur"]
+    },
+    {
+      "type": "matching",
+      "id": "m2",
+      "instruction": "جملات را با ترجمه جفت کنید",
+      "items": [
+        { "id": "i1", "text": "größer als" },
+        { "id": "i2", "text": "kleiner als" },
+        { "id": "i3", "text": "teurer als" },
+        { "id": "i4", "text": "billiger als" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "گران‌تر از" },
+        { "id": "m2", "text": "بزرگ‌تر از" },
+        { "id": "m3", "text": "ارزان‌تر از" },
+        { "id": "m4", "text": "کوچک‌تر از" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m4"],
+        ["i3", "m1"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Dein Haar ist {0} als meins.",
+      "options": ["länger", "lang", "langer", "läng"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "lang → länger (با Umlaut)" }
+    },
+    {
+      "type": "word-order",
+      "id": "w4",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["ich.", "als", "Schwester", "ist", "jünger", "Meine"],
+      "correctOrder": [5, 2, 3, 4, 1, 0],
+      "correctSentence": { "de": "Meine Schwester ist jünger als ich.", "fa": "خواهرم جوان‌تر از من است." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "«Mein Auto ist teurer als deins» یعنی چه؟",
+      "options": ["ماشین من گران است", "ماشین من گران‌تر از مال تو است", "ماشین تو گران‌تر است", "ماشین‌های ما گران هستند"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "teurer als = گران‌تر از" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Hamburg ist sauberer {0} Berlin.",
+      "options": ["als", "wie", "und", "oder"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "برای مقایسه از als استفاده می‌کنیم" }
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Ich bin älter als du.",
+      "translation": "من مسن‌تر از تو هستم.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Der Zug ist schneller als der Bus.",
+      "translation": "قطار سریع‌تر از اتوبوس است.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-3",
+      "targetText": "Berlin ist größer als München.",
+      "translation": "برلین بزرگ‌تر از مونیخ است.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "memory-match",
+      "id": "g3",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "schneller", "fa": "سریع‌تر" },
+        { "de": "größer", "fa": "بزرگ‌تر" },
+        { "de": "kleiner", "fa": "کوچک‌تر" },
+        { "de": "älter", "fa": "مسن‌تر" },
+        { "de": "jünger", "fa": "جوان‌تر" },
+        { "de": "teurer", "fa": "گران‌تر" }
+      ],
+      "timeLimit": 60
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "schneller", "fa": "سریع‌تر" },
+        { "de": "größer", "fa": "بزرگ‌تر" },
+        { "de": "kleiner", "fa": "کوچک‌تر" },
+        { "de": "älter", "fa": "مسن‌تر" },
+        { "de": "jünger", "fa": "جوان‌تر" },
+        { "de": "billiger", "fa": "ارزان‌تر" },
+        { "de": "teurer", "fa": "گران‌تر" },
+        { "de": "als", "fa": "از (در مقایسه)" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما Komparativ (صفت تفضیلی) را یاد گرفتید!\n\n📝 **ساختار Komparativ:**\nصفت + **-er** + **als**\n\n📝 **صفت‌های با Umlaut:**\n• alt → **ä**lter\n• jung → j**ü**nger\n• groß → gr**ö**ßer\n• kalt → k**ä**lter\n• warm → w**ä**rmer\n• lang → l**ä**nger\n\n📝 **بدون Umlaut:**\n• schnell → schneller\n• klein → kleiner\n• billig → billiger",
+      "xpEarned": 50,
+      "vocabularyLearned": [
+        { "word": { "de": "schneller", "fa": "سریع‌تر" } },
+        { "word": { "de": "größer", "fa": "بزرگ‌تر" } },
+        { "word": { "de": "kleiner", "fa": "کوچک‌تر" } },
+        { "word": { "de": "älter", "fa": "مسن‌تر" } },
+        { "word": { "de": "jünger", "fa": "جوان‌تر" } },
+        { "word": { "de": "billiger", "fa": "ارزان‌تر" } },
+        { "word": { "de": "teurer", "fa": "گران‌تر" } },
+        { "word": { "de": "als", "fa": "از (در مقایسه)" } }
+      ]
+    }
+  ]
+}

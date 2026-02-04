@@ -505,6 +505,19 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/A2/A2-M01-L04"
       }
     ]
+  },
+  {
+    id: "module-02",
+    title: "بخش ۲: مقایسه (Vergleiche)",
+    level: "A2",
+    lessons: [
+      {
+        id: "A2-M02-L01",
+        title: "صفت تفضیلی (Komparativ)",
+        description: "یاد بگیرید چطور چیزها را با هم مقایسه کنید.",
+        path: "/learn/de-fa/A2/A2-M02-L01"
+      }
+    ]
   }
 ];
 
