@@ -345,6 +345,12 @@ const DE_FA_A1_MODULES: ModuleStub[] = [
         title: "سرگرمی‌ها (Hobbys)",
         description: "یاد بگیرید درباره سرگرمی‌های خود به آلمانی صحبت کنید.",
         path: "/learn/de-fa/A1/A1-M10-L01"
+      },
+      {
+        id: "A1-M10-L02",
+        title: "ورزش (Sport)",
+        description: "یاد بگیرید درباره ورزش‌ها به آلمانی صحبت کنید.",
+        path: "/learn/de-fa/A1/A1-M10-L02"
       }
     ]
   }

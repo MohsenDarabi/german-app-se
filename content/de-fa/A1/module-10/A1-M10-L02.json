@@ -1,0 +1,350 @@
+{
+  "id": "A1-M10-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Sport", "fa": "ورزش" },
+  "description": "یاد بگیرید درباره ورزش‌ها به آلمانی صحبت کنید",
+  "level": "A1",
+  "module": 10,
+  "lessonNumber": 2,
+  "totalSteps": 38,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "der Sport", "fa": "ورزش", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "Sportarten" } } },
+    { "de": "der Fußball", "fa": "فوتبال", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "Fußbälle" } } },
+    { "de": "das Tennis", "fa": "تنیس", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "Tennis" } } },
+    { "de": "schwimmen", "fa": "شنا کردن", "grammar": { "pos": "verb" } },
+    { "de": "laufen", "fa": "دویدن", "grammar": { "pos": "verb" } },
+    { "de": "Rad fahren", "fa": "دوچرخه‌سواری کردن", "grammar": { "pos": "verb" } },
+    { "de": "der Basketball", "fa": "بسکتبال", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "Basketbälle" } } },
+    { "de": "das Yoga", "fa": "یوگا", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "Yoga" } } },
+    { "de": "der Sportler", "fa": "ورزشکار", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "Sportler" } } },
+    { "de": "fit", "fa": "تناسب اندام", "grammar": { "pos": "adjective" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "ورزش (Sport)",
+      "content": "در این درس یاد می‌گیرید:\n\n⚽ **ورزش‌های رایج:**\n• Fußball = فوتبال\n• Tennis = تنیس\n• schwimmen = شنا کردن\n• laufen = دویدن\n\n💡 **دو ساختار مهم:**\n• Fußball **spielen** = فوتبال بازی کردن\n• **schwimmen gehen** = رفتن برای شنا",
+      "examples": [
+        { "de": "Ich spiele gern Fußball.", "fa": "دوست دارم فوتبال بازی کنم." },
+        { "de": "Wir gehen schwimmen.", "fa": "ما می‌رویم شنا." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "der Sport", "fa": "ورزش" },
+      "example": { "text": { "de": "Sport ist gesund.", "fa": "ورزش سالم است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-sport",
+      "word": "Sport",
+      "translation": "ورزش",
+      "syllables": ["Sport"],
+      "distractors": ["Spart", "Spurt", "Spert", "Spirt"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "der Fußball", "fa": "فوتبال" },
+      "example": { "text": { "de": "Ich spiele Fußball.", "fa": "من فوتبال بازی می‌کنم." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s4",
+      "title": "ورزش‌ها با spielen",
+      "content": "⚽ برای ورزش‌های توپی از **spielen** استفاده می‌کنیم:\n\n• Fußball spielen = فوتبال بازی کردن\n• Tennis spielen = تنیس بازی کردن\n• Basketball spielen = بسکتبال بازی کردن\n• Volleyball spielen = والیبال بازی کردن\n\n⚠️ **بدون حرف تعریف:**\nIch spiele Fußball. (نه: Ich spiele den Fußball.)",
+      "examples": [
+        { "de": "Sie spielt Tennis.", "fa": "او تنیس بازی می‌کند." },
+        { "de": "Wir spielen Basketball.", "fa": "ما بسکتبال بازی می‌کنیم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "das Tennis", "fa": "تنیس" },
+      "example": { "text": { "de": "Spielst du Tennis?", "fa": "تنیس بازی می‌کنی؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-tennis",
+      "word": "Tennis",
+      "translation": "تنیس",
+      "syllables": ["Ten", "nis"],
+      "distractors": ["Tan", "nas", "Tin", "nus"]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "der Basketball", "fa": "بسکتبال" },
+      "example": { "text": { "de": "Er spielt gern Basketball.", "fa": "او دوست دارد بسکتبال بازی کند." } }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله درست است؟",
+      "options": ["Ich spiele den Fußball.", "Ich spiele Fußball.", "Ich Fußball spiele.", "Ich spielen Fußball."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "با ورزش‌ها حرف تعریف نمی‌آید: Ich spiele Fußball." }
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "schwimmen", "fa": "شنا کردن" },
+      "example": { "text": { "de": "Ich schwimme gern.", "fa": "دوست دارم شنا کنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-schwimmen",
+      "word": "schwimmen",
+      "translation": "شنا کردن",
+      "syllables": ["schwim", "men"],
+      "distractors": ["schwam", "man", "schwum", "min"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s8",
+      "title": "ورزش‌ها با gehen",
+      "content": "🏊 برای بعضی ورزش‌ها از **gehen + فعل** استفاده می‌کنیم:\n\n• schwimmen gehen = رفتن برای شنا\n• laufen gehen = رفتن برای دویدن\n• joggen gehen = رفتن برای دویدن آرام\n\n📝 **ساختار:**\nIch **gehe** schwimmen. = من می‌روم شنا.\n(فعل اصلی بدون تغییر در آخر می‌آید)",
+      "examples": [
+        { "de": "Ich gehe jeden Tag schwimmen.", "fa": "هر روز می‌روم شنا." },
+        { "de": "Gehst du morgen laufen?", "fa": "فردا می‌روی بدوی؟" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "laufen", "fa": "دویدن" },
+      "example": { "text": { "de": "Sie läuft jeden Morgen.", "fa": "او هر صبح می‌دود." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s10",
+      "title": "صرف فعل laufen",
+      "content": "🏃 **laufen** فعل نامنظم است:\n\nich laufe\ndu **läufst**\ner/sie/es **läuft**\nwir laufen\nihr lauft\nsie/Sie laufen\n\n⚠️ دقت کنید: a → ä در du و er/sie/es",
+      "examples": [
+        { "de": "Ich laufe schnell.", "fa": "من سریع می‌دوم." },
+        { "de": "Er läuft jeden Tag.", "fa": "او هر روز می‌دود." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sie {0} sehr schnell.",
+      "options": ["lauft", "läuft", "laufen", "läufst"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "با sie (او) از läuft استفاده می‌کنیم (a → ä)." }
+    },
+    {
+      "type": "new-word",
+      "id": "s11",
+      "word": { "de": "Rad fahren", "fa": "دوچرخه‌سواری کردن" },
+      "example": { "text": { "de": "Ich fahre gern Rad.", "fa": "دوست دارم دوچرخه‌سواری کنم." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s12",
+      "title": "Rad fahren - فعل جداشدنی",
+      "content": "🚴 **Rad fahren** یک فعل جداشدنی است:\n\n• Ich **fahre** gern **Rad**.\n• **Fährst** du oft **Rad**?\n\nدر جمله، Rad به آخر می‌رود و fahren صرف می‌شود.\n\n⚠️ **fahren** هم نامنظم است:\ndu fährst, er/sie/es fährt (a → ä)",
+      "examples": [
+        { "de": "Ich fahre jeden Tag Rad.", "fa": "هر روز دوچرخه‌سواری می‌کنم." },
+        { "de": "Fährst du gern Rad?", "fa": "دوست داری دوچرخه‌سواری کنی؟" }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "ورزش‌های پایه",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "Fußball", "left": "فوتبال", "right": "بسکتبال", "correctSide": "left" },
+        { "prompt": "schwimmen", "left": "دویدن", "right": "شنا کردن", "correctSide": "right" },
+        { "prompt": "laufen", "left": "دویدن", "right": "شنا کردن", "correctSide": "left" },
+        { "prompt": "Tennis", "left": "تنیس", "right": "والیبال", "correctSide": "left" },
+        { "prompt": "Rad fahren", "left": "دوچرخه‌سواری", "right": "رانندگی", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s13",
+      "word": { "de": "das Yoga", "fa": "یوگا" },
+      "example": { "text": { "de": "Sie macht jeden Morgen Yoga.", "fa": "او هر صبح یوگا انجام می‌دهد." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s14",
+      "title": "ورزش‌ها با machen",
+      "content": "🧘 برای بعضی ورزش‌ها از **machen** استفاده می‌کنیم:\n\n• Yoga machen = یوگا انجام دادن\n• Sport machen = ورزش کردن\n• Fitness machen = تمرین تناسب اندام کردن\n\n📝 **خلاصه:**\n• **spielen** → ورزش‌های توپی (Fußball, Tennis)\n• **gehen** → schwimmen, laufen\n• **machen** → Yoga, Sport, Fitness\n• **fahren** → Rad, Ski",
+      "examples": [
+        { "de": "Ich mache Sport.", "fa": "من ورزش می‌کنم." },
+        { "de": "Er macht Yoga.", "fa": "او یوگا انجام می‌دهد." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s15",
+      "word": { "de": "fit", "fa": "تناسب اندام" },
+      "example": { "text": { "de": "Sport hält fit.", "fa": "ورزش تناسب اندام می‌دهد." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s16",
+      "word": { "de": "der Sportler", "fa": "ورزشکار" },
+      "example": { "text": { "de": "Er ist ein guter Sportler.", "fa": "او ورزشکار خوبی است." } }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "درباره ورزش صحبت کردن",
+      "context": "تام و الی درباره ورزش صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Eli", "text": { "de": "Machst du Sport?", "fa": "ورزش می‌کنی؟" } },
+        { "speaker": "Tom", "text": { "de": "Ja, ich spiele Fußball und gehe schwimmen. Und du?", "fa": "آره، فوتبال بازی می‌کنم و می‌روم شنا. تو چی؟" } },
+        { "speaker": "Eli", "text": { "de": "Ich mache Yoga und fahre gern Rad.", "fa": "من یوگا انجام می‌دهم و دوست دارم دوچرخه‌سواری کنم." } },
+        { "speaker": "Tom", "text": { "de": "Wie oft machst du Yoga?", "fa": "چند وقت یکبار یوگا انجام می‌دهی؟" } },
+        { "speaker": "Eli", "text": { "de": "Dreimal pro Woche. Es ist sehr entspannend.", "fa": "سه بار در هفته. خیلی آرامش‌بخش است." } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "تام چه ورزش‌هایی انجام می‌دهد؟", "options": ["یوگا و دوچرخه‌سواری", "فوتبال و شنا", "تنیس و دویدن"], "correctIndex": 1 },
+        { "question": "الی چند بار در هفته یوگا می‌کند؟", "options": ["دو بار", "سه بار", "هر روز"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich {0} gern Fußball.",
+      "options": ["spiele", "mache", "gehe", "fahre"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "با ورزش‌های توپی از spielen استفاده می‌کنیم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Wir {0} morgen schwimmen.",
+      "options": ["spielen", "machen", "gehen", "fahren"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "برای شنا از gehen استفاده می‌کنیم: schwimmen gehen." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sie {0} jeden Tag Yoga.",
+      "options": ["spielt", "macht", "geht", "fährt"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "برای یوگا از machen استفاده می‌کنیم: Yoga machen." }
+    },
+    {
+      "type": "word-order",
+      "id": "w1",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["Fußball.", "gern", "Ich", "spiele"],
+      "correctOrder": [2, 3, 1, 0],
+      "correctSentence": { "de": "Ich spiele gern Fußball.", "fa": "دوست دارم فوتبال بازی کنم." }
+    },
+    {
+      "type": "word-order",
+      "id": "w2",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["schwimmen.", "Wir", "gehen", "morgen"],
+      "correctOrder": [1, 2, 3, 0],
+      "correctSentence": { "de": "Wir gehen morgen schwimmen.", "fa": "ما فردا می‌رویم شنا." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "ورزش‌ها را با فعل مناسب جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Fußball" },
+        { "id": "i2", "text": "schwimmen" },
+        { "id": "i3", "text": "Yoga" },
+        { "id": "i4", "text": "Rad" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "gehen" },
+        { "id": "m2", "text": "spielen" },
+        { "id": "m3", "text": "fahren" },
+        { "id": "m4", "text": "machen" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m1"],
+        ["i3", "m4"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "«Ich gehe schwimmen» یعنی چه؟",
+      "options": ["من شنا بلدم", "من می‌روم شنا", "من شنا می‌کنم", "من شنا دوست دارم"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "gehen + فعل = رفتن برای انجام آن کار" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "کدام جمله درست است؟",
+      "options": ["Er lauft schnell.", "Er läuft schnell.", "Er laufst schnell.", "Er läufst schnell."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "laufen نامنظم است: er läuft (a → ä)" }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "فعل‌های ورزشی",
+      "instruction": "فعل مناسب را انتخاب کنید",
+      "questions": [
+        { "prompt": "Tennis ___", "left": "spielen", "right": "machen", "correctSide": "left" },
+        { "prompt": "Yoga ___", "left": "spielen", "right": "machen", "correctSide": "right" },
+        { "prompt": "___ schwimmen", "left": "spielen", "right": "gehen", "correctSide": "right" },
+        { "prompt": "Rad ___", "left": "fahren", "right": "spielen", "correctSide": "left" },
+        { "prompt": "Basketball ___", "left": "spielen", "right": "gehen", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "vocab-check",
+      "id": "g3",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "der Sport", "fa": "ورزش" },
+        { "de": "der Fußball", "fa": "فوتبال" },
+        { "de": "das Tennis", "fa": "تنیس" },
+        { "de": "schwimmen", "fa": "شنا کردن" },
+        { "de": "laufen", "fa": "دویدن" },
+        { "de": "Rad fahren", "fa": "دوچرخه‌سواری" },
+        { "de": "das Yoga", "fa": "یوگا" },
+        { "de": "fit", "fa": "تناسب اندام" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما یاد گرفتید درباره ورزش صحبت کنید!\n\n⚽ **فعل‌ها با ورزش:**\n• **spielen** → Fußball, Tennis, Basketball\n• **gehen** → schwimmen, laufen\n• **machen** → Yoga, Sport, Fitness\n• **fahren** → Rad, Ski\n\n🏃 **فعل‌های نامنظم:**\n• laufen: du läufst, er läuft\n• fahren: du fährst, er fährt",
+      "xpEarned": 50,
+      "nextLessonId": "A1-M10-L03",
+      "vocabularyLearned": [
+        { "word": { "de": "der Sport", "fa": "ورزش" } },
+        { "word": { "de": "der Fußball", "fa": "فوتبال" } },
+        { "word": { "de": "das Tennis", "fa": "تنیس" } },
+        { "word": { "de": "schwimmen", "fa": "شنا کردن" } },
+        { "word": { "de": "laufen", "fa": "دویدن" } },
+        { "word": { "de": "Rad fahren", "fa": "دوچرخه‌سواری کردن" } },
+        { "word": { "de": "der Basketball", "fa": "بسکتبال" } },
+        { "word": { "de": "das Yoga", "fa": "یوگا" } },
+        { "word": { "de": "der Sportler", "fa": "ورزشکار" } },
+        { "word": { "de": "fit", "fa": "تناسب اندام" } }
+      ]
+    }
+  ]
+}
