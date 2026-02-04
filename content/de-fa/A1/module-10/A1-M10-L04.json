@@ -1,0 +1,358 @@
+{
+  "id": "A1-M10-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Was machst du gern?", "fa": "چه کاری دوست داری؟" },
+  "description": "یاد بگیرید درباره ترجیحات صحبت کنید و پیشنهاد بدهید",
+  "level": "A1",
+  "module": 10,
+  "lessonNumber": 4,
+  "totalSteps": 38,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "gern", "fa": "با علاقه", "grammar": { "pos": "adverb" } },
+    { "de": "lieber", "fa": "ترجیحاً", "grammar": { "pos": "adverb" } },
+    { "de": "am liebsten", "fa": "از همه بیشتر", "grammar": { "pos": "adverb" } },
+    { "de": "Hast du Lust?", "fa": "میل داری؟", "grammar": { "pos": "phrase" } },
+    { "de": "Wollen wir...?", "fa": "می‌خواهیم...؟", "grammar": { "pos": "phrase" } },
+    { "de": "gute Idee", "fa": "ایده خوب", "grammar": { "pos": "phrase" } },
+    { "de": "leider", "fa": "متأسفانه", "grammar": { "pos": "adverb" } },
+    { "de": "keine Zeit", "fa": "وقت ندارم", "grammar": { "pos": "phrase" } },
+    { "de": "vielleicht", "fa": "شاید", "grammar": { "pos": "adverb" } },
+    { "de": "zusammen", "fa": "با هم", "grammar": { "pos": "adverb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "ترجیحات و پیشنهادها",
+      "content": "در این درس یاد می‌گیرید:\n\n❤️ **بیان ترجیحات:**\n• gern = با علاقه\n• lieber = ترجیحاً (بیشتر دوست دارم)\n• am liebsten = از همه بیشتر\n\n💬 **پیشنهاد دادن:**\n• Hast du Lust? = میل داری؟\n• Wollen wir...? = می‌خواهیم...؟",
+      "examples": [
+        { "de": "Ich lese gern, aber ich schwimme lieber.", "fa": "دوست دارم بخوانم، ولی بیشتر دوست دارم شنا کنم." },
+        { "de": "Hast du Lust, ins Kino zu gehen?", "fa": "میل داری به سینما برویم؟" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "gern", "fa": "با علاقه" },
+      "example": { "text": { "de": "Ich koche gern.", "fa": "دوست دارم آشپزی کنم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "lieber", "fa": "ترجیحاً" },
+      "example": { "text": { "de": "Ich schwimme lieber.", "fa": "ترجیح می‌دهم شنا کنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-lieber",
+      "word": "lieber",
+      "translation": "ترجیحاً",
+      "syllables": ["lie", "ber"],
+      "distractors": ["lei", "bar", "loi", "bur"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "am liebsten", "fa": "از همه بیشتر" },
+      "example": { "text": { "de": "Am liebsten spiele ich Fußball.", "fa": "از همه بیشتر دوست دارم فوتبال بازی کنم." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "مقایسه ترجیحات",
+      "content": "📊 **سه درجه علاقه:**\n\n1. **gern** = دوست دارم\n   Ich lese gern.\n\n2. **lieber** = بیشتر دوست دارم\n   Ich schwimme lieber.\n\n3. **am liebsten** = از همه بیشتر دوست دارم\n   Am liebsten spiele ich Fußball.\n\n📝 **در مقایسه:**\nIch lese gern, aber ich schwimme **lieber**.",
+      "examples": [
+        { "de": "Sie tanzt gern, aber sie singt lieber.", "fa": "او دوست دارد برقصد، ولی بیشتر دوست دارد بخواند." },
+        { "de": "Am liebsten reise ich.", "fa": "از همه بیشتر دوست دارم سفر کنم." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام درجه علاقه بیشتر است؟",
+      "options": ["gern", "lieber", "am liebsten", "nicht gern"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین!", "incorrect": "am liebsten = از همه بیشتر (بالاترین درجه علاقه)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich koche gern, aber ich backe {0}.",
+      "options": ["gern", "lieber", "nicht", "auch"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "برای نشان دادن ترجیح بیشتر از lieber استفاده می‌کنیم." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "Hast du Lust?", "fa": "میل داری؟" },
+      "example": { "text": { "de": "Hast du Lust, Tennis zu spielen?", "fa": "میل داری تنیس بازی کنیم؟" } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "پیشنهاد با Hast du Lust?",
+      "content": "💬 **Hast du Lust, ... zu + فعل؟**\n\nمیل داری ...؟\n\n• Hast du Lust, **ins Kino zu gehen**?\n  میل داری به سینما برویم؟\n\n• Hast du Lust, **schwimmen zu gehen**?\n  میل داری برویم شنا؟\n\n• Hast du Lust, **Fußball zu spielen**?\n  میل داری فوتبال بازی کنیم؟",
+      "examples": [
+        { "de": "Hast du Lust, heute Abend auszugehen?", "fa": "میل داری امشب بیرون برویم؟" },
+        { "de": "Hast du Lust auf Kaffee?", "fa": "میل داری قهوه بخوری؟" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "Wollen wir...?", "fa": "می‌خواهیم...؟" },
+      "example": { "text": { "de": "Wollen wir ins Kino gehen?", "fa": "می‌خواهیم به سینما برویم؟" } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "پیشنهاد با Wollen wir...?",
+      "content": "💬 **Wollen wir + فعل؟**\n\nمی‌خواهیم ...؟ / بیا ...!\n\n• Wollen wir **spazieren gehen**?\n  بیا قدم بزنیم؟\n\n• Wollen wir **zusammen kochen**?\n  بیا با هم آشپزی کنیم؟\n\n📝 فعل اصلی به آخر جمله می‌رود.",
+      "examples": [
+        { "de": "Wollen wir morgen Tennis spielen?", "fa": "می‌خواهیم فردا تنیس بازی کنیم؟" },
+        { "de": "Wollen wir zusammen lernen?", "fa": "می‌خواهیم با هم درس بخوانیم؟" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": { "de": "gute Idee", "fa": "ایده خوب" },
+      "example": { "text": { "de": "Ja, gute Idee!", "fa": "آره، ایده خوبیه!" } }
+    },
+    {
+      "type": "new-word",
+      "id": "s11",
+      "word": { "de": "leider", "fa": "متأسفانه" },
+      "example": { "text": { "de": "Leider habe ich keine Zeit.", "fa": "متأسفانه وقت ندارم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-leider",
+      "word": "leider",
+      "translation": "متأسفانه",
+      "syllables": ["lei", "der"],
+      "distractors": ["lai", "dar", "loi", "dur"]
+    },
+    {
+      "type": "new-word",
+      "id": "s12",
+      "word": { "de": "keine Zeit", "fa": "وقت ندارم" },
+      "example": { "text": { "de": "Ich habe leider keine Zeit.", "fa": "متأسفانه وقت ندارم." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s13",
+      "title": "قبول یا رد پیشنهاد",
+      "content": "✅ **قبول کردن:**\n• Ja, gern! = آره، با کمال میل!\n• Ja, gute Idee! = آره، ایده خوبیه!\n• Ja, das klingt gut! = آره، خوب به نظر می‌رسه!\n\n❌ **رد کردن:**\n• Leider habe ich keine Zeit. = متأسفانه وقت ندارم.\n• Tut mir leid, ich kann nicht. = متأسفم، نمی‌توانم.\n• Vielleicht ein anderes Mal. = شاید یک وقت دیگر.",
+      "examples": [
+        { "de": "Hast du Lust? - Ja, gern!", "fa": "میل داری؟ - آره، با کمال میل!" },
+        { "de": "Wollen wir...? - Leider nicht.", "fa": "می‌خواهیم...؟ - متأسفانه نه." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s14",
+      "word": { "de": "vielleicht", "fa": "شاید" },
+      "example": { "text": { "de": "Vielleicht morgen?", "fa": "شاید فردا؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-vielleicht",
+      "word": "vielleicht",
+      "translation": "شاید",
+      "syllables": ["viel", "leicht"],
+      "distractors": ["vial", "laicht", "veil", "licht"]
+    },
+    {
+      "type": "new-word",
+      "id": "s15",
+      "word": { "de": "zusammen", "fa": "با هم" },
+      "example": { "text": { "de": "Wollen wir zusammen essen?", "fa": "می‌خواهیم با هم غذا بخوریم؟" } }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "ترجیحات",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "gern", "left": "با علاقه", "right": "ترجیحاً", "correctSide": "left" },
+        { "prompt": "lieber", "left": "با علاقه", "right": "ترجیحاً", "correctSide": "right" },
+        { "prompt": "am liebsten", "left": "از همه بیشتر", "right": "اصلاً نه", "correctSide": "left" },
+        { "prompt": "leider", "left": "خوشبختانه", "right": "متأسفانه", "correctSide": "right" },
+        { "prompt": "zusammen", "left": "با هم", "right": "تنها", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "دعوت به سینما",
+      "context": "تام از الی دعوت می‌کند",
+      "lines": [
+        { "speaker": "Tom", "text": { "de": "Hast du Lust, heute Abend ins Kino zu gehen?", "fa": "میل داری امشب به سینما برویم؟" } },
+        { "speaker": "Eli", "text": { "de": "Ja, gute Idee! Was läuft denn?", "fa": "آره، ایده خوبیه! چه فیلمی هست؟" } },
+        { "speaker": "Tom", "text": { "de": "Ein neuer Actionfilm. Magst du Actionfilme?", "fa": "یک فیلم اکشن جدید. فیلم اکشن دوست داری؟" } },
+        { "speaker": "Eli", "text": { "de": "Ich sehe gern Actionfilme, aber lieber sehe ich Komödien.", "fa": "فیلم اکشن دوست دارم، ولی بیشتر کمدی دوست دارم." } },
+        { "speaker": "Tom", "text": { "de": "Kein Problem! Es gibt auch eine Komödie.", "fa": "مشکلی نیست! یک کمدی هم هست." } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "الی چه نوع فیلمی بیشتر دوست دارد؟", "options": ["اکشن", "کمدی", "ترسناک"], "correctIndex": 1 },
+        { "question": "تام چه پیشنهادی می‌دهد؟", "options": ["رستوران رفتن", "سینما رفتن", "قدم زدن"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "رد پیشنهاد",
+      "context": "الی نمی‌تواند بیاید",
+      "lines": [
+        { "speaker": "Tom", "text": { "de": "Wollen wir morgen zusammen Tennis spielen?", "fa": "می‌خواهیم فردا با هم تنیس بازی کنیم؟" } },
+        { "speaker": "Eli", "text": { "de": "Tut mir leid, morgen habe ich leider keine Zeit.", "fa": "متأسفم، فردا متأسفانه وقت ندارم." } },
+        { "speaker": "Tom", "text": { "de": "Schade! Und am Samstag?", "fa": "حیف! و شنبه؟" } },
+        { "speaker": "Eli", "text": { "de": "Ja, am Samstag passt es! Um wie viel Uhr?", "fa": "آره، شنبه می‌شه! ساعت چند؟" } },
+        { "speaker": "Tom", "text": { "de": "Um 14 Uhr?", "fa": "ساعت ۱۴؟" } },
+        { "speaker": "Eli", "text": { "de": "Perfekt! Bis Samstag!", "fa": "عالی! تا شنبه!" } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "چرا الی فردا نمی‌تواند؟", "options": ["بیمار است", "وقت ندارد", "تنیس دوست ندارد"], "correctIndex": 1 },
+        { "question": "آن‌ها کی تنیس بازی می‌کنند؟", "options": ["فردا", "شنبه", "یکشنبه"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Hast du {0}, ins Kino zu gehen?",
+      "options": ["Zeit", "Lust", "gern", "lieber"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Hast du Lust = میل داری" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} habe ich keine Zeit.",
+      "options": ["Gern", "Lieber", "Leider", "Vielleicht"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "Leider = متأسفانه (برای رد کردن مودبانه)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} wir zusammen essen gehen?",
+      "options": ["Wollen", "Haben", "Können", "Machen"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Wollen wir...? = می‌خواهیم...؟ (برای پیشنهاد دادن)" }
+    },
+    {
+      "type": "word-order",
+      "id": "w1",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["liebsten", "Fußball.", "Am", "spiele", "ich"],
+      "correctOrder": [2, 0, 4, 3, 1],
+      "correctSentence": { "de": "Am liebsten spiele ich Fußball.", "fa": "از همه بیشتر دوست دارم فوتبال بازی کنم." }
+    },
+    {
+      "type": "word-order",
+      "id": "w2",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["Zeit.", "keine", "Leider", "ich", "habe"],
+      "correctOrder": [2, 4, 3, 1, 0],
+      "correctSentence": { "de": "Leider habe ich keine Zeit.", "fa": "متأسفانه وقت ندارم." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "عبارات را با معنی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Hast du Lust?" },
+        { "id": "i2", "text": "Gute Idee!" },
+        { "id": "i3", "text": "Leider nicht." },
+        { "id": "i4", "text": "zusammen" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "ایده خوب!" },
+        { "id": "m2", "text": "میل داری؟" },
+        { "id": "m3", "text": "با هم" },
+        { "id": "m4", "text": "متأسفانه نه." }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m1"],
+        ["i3", "m4"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "چطور مودبانه یک پیشنهاد را رد کنیم؟",
+      "options": ["Nein!", "Leider habe ich keine Zeit.", "Ich will nicht.", "Das ist langweilig."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "Leider habe ich keine Zeit مودبانه‌ترین پاسخ است." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "«Ich schwimme lieber als ich laufe» یعنی چه؟",
+      "options": ["شنا و دویدن هر دو را دوست دارم", "شنا را بیشتر از دویدن دوست دارم", "نه شنا نه دویدن را دوست دارم", "دویدن را بیشتر از شنا دوست دارم"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "lieber = بیشتر دوست دارم (ترجیح)" }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "پاسخ به پیشنهاد",
+      "instruction": "پاسخ مناسب را انتخاب کنید",
+      "questions": [
+        { "prompt": "قبول کردن:", "left": "Ja, gern!", "right": "Leider nicht.", "correctSide": "left" },
+        { "prompt": "رد کردن:", "left": "Gute Idee!", "right": "Keine Zeit.", "correctSide": "right" },
+        { "prompt": "شاید:", "left": "Vielleicht morgen?", "right": "Ja, perfekt!", "correctSide": "left" },
+        { "prompt": "موافقت:", "left": "Tut mir leid.", "right": "Das klingt gut!", "correctSide": "right" },
+        { "prompt": "عذرخواهی:", "left": "Tut mir leid.", "right": "Gute Idee!", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "vocab-check",
+      "id": "g3",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "gern", "fa": "با علاقه" },
+        { "de": "lieber", "fa": "ترجیحاً" },
+        { "de": "am liebsten", "fa": "از همه بیشتر" },
+        { "de": "Hast du Lust?", "fa": "میل داری؟" },
+        { "de": "Wollen wir...?", "fa": "می‌خواهیم...؟" },
+        { "de": "leider", "fa": "متأسفانه" },
+        { "de": "vielleicht", "fa": "شاید" },
+        { "de": "zusammen", "fa": "با هم" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "تبریک!",
+      "message": "شما ماژول ۱۰ (سرگرمی‌ها و اوقات فراغت) را کامل کردید!\n\n❤️ **درجات علاقه:**\ngern < lieber < am liebsten\n\n💬 **پیشنهاد دادن:**\n• Hast du Lust, ... zu ...?\n• Wollen wir ...?\n\n✅ **قبول:** Ja, gern! / Gute Idee!\n❌ **رد:** Leider habe ich keine Zeit.",
+      "xpEarned": 50,
+      "vocabularyLearned": [
+        { "word": { "de": "gern", "fa": "با علاقه" } },
+        { "word": { "de": "lieber", "fa": "ترجیحاً" } },
+        { "word": { "de": "am liebsten", "fa": "از همه بیشتر" } },
+        { "word": { "de": "Hast du Lust?", "fa": "میل داری؟" } },
+        { "word": { "de": "Wollen wir...?", "fa": "می‌خواهیم...؟" } },
+        { "word": { "de": "gute Idee", "fa": "ایده خوب" } },
+        { "word": { "de": "leider", "fa": "متأسفانه" } },
+        { "word": { "de": "keine Zeit", "fa": "وقت ندارم" } },
+        { "word": { "de": "vielleicht", "fa": "شاید" } },
+        { "word": { "de": "zusammen", "fa": "با هم" } }
+      ]
+    }
+  ]
+}

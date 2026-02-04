@@ -357,6 +357,12 @@ const DE_FA_A1_MODULES: ModuleStub[] = [
         title: "اوقات فراغت (Freizeit)",
         description: "یاد بگیرید درباره فعالیت‌های اوقات فراغت به آلمانی صحبت کنید.",
         path: "/learn/de-fa/A1/A1-M10-L03"
+      },
+      {
+        id: "A1-M10-L04",
+        title: "چه کاری دوست داری؟ (Was machst du gern?)",
+        description: "یاد بگیرید درباره ترجیحات صحبت کنید و پیشنهاد بدهید.",
+        path: "/learn/de-fa/A1/A1-M10-L04"
       }
     ]
   }
