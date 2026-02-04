@@ -547,6 +547,12 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         title: "sich waschen - خود را شستن",
         description: "یاد بگیرید فعل‌هایی که با sich می‌آیند و ضمایر انعکاسی.",
         path: "/learn/de-fa/A2/A2-M03-L01"
+      },
+      {
+        id: "A2-M03-L02",
+        title: "Gefühle - احساسات",
+        description: "یاد بگیرید چطور درباره احساسات با فعل‌های انعکاسی صحبت کنید.",
+        path: "/learn/de-fa/A2/A2-M03-L02"
       }
     ]
   }

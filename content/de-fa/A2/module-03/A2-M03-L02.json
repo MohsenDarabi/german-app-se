@@ -1,0 +1,421 @@
+{
+  "id": "A2-M03-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Reflexivverben - Gefühle", "fa": "فعل‌های انعکاسی - احساسات" },
+  "description": "یاد بگیرید چطور درباره احساسات با فعل‌های انعکاسی صحبت کنید",
+  "level": "A2",
+  "module": 3,
+  "lessonNumber": 2,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "sich freuen", "fa": "خوشحال شدن", "grammar": { "pos": "verb", "reflexive": true } },
+    { "de": "sich ärgern", "fa": "عصبانی شدن", "grammar": { "pos": "verb", "reflexive": true } },
+    { "de": "sich langweilen", "fa": "حوصله‌اش سر رفتن", "grammar": { "pos": "verb", "reflexive": true } },
+    { "de": "sich fühlen", "fa": "احساس کردن", "grammar": { "pos": "verb", "reflexive": true } },
+    { "de": "sich wundern", "fa": "تعجب کردن", "grammar": { "pos": "verb", "reflexive": true } },
+    { "de": "sich aufregen", "fa": "ناراحت شدن", "grammar": { "pos": "verb", "reflexive": true } },
+    { "de": "sich entspannen", "fa": "استراحت کردن", "grammar": { "pos": "verb", "reflexive": true } },
+    { "de": "sich beeilen", "fa": "عجله کردن", "grammar": { "pos": "verb", "reflexive": true } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "Reflexivverben für Gefühle - فعل‌های انعکاسی احساسات",
+      "content": "😊 بسیاری از فعل‌های مربوط به **احساسات** در آلمانی انعکاسی هستند.\n\n📝 **نمونه‌ها:**\n• sich freuen = خوشحال شدن\n• sich ärgern = عصبانی شدن\n• sich fühlen = احساس کردن\n\n💡 این فعل‌ها نشان می‌دهند که احساس درباره خود شخص است.",
+      "examples": [
+        { "de": "Ich freue mich.", "fa": "خوشحالم." },
+        { "de": "Er ärgert sich.", "fa": "او عصبانی است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "sich freuen", "fa": "خوشحال شدن" },
+      "example": { "text": { "de": "Ich freue mich sehr!", "fa": "خیلی خوشحالم!" } }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "sich ärgern", "fa": "عصبانی شدن" },
+      "example": { "text": { "de": "Sie ärgert sich über den Fehler.", "fa": "او از اشتباه عصبانی است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-freuen",
+      "word": "freuen",
+      "translation": "خوشحال شدن",
+      "syllables": ["freu", "en"],
+      "distractors": ["frau", "an", "frei", "on"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«Ich freue mich» یعنی چه؟",
+      "options": ["من می‌ترسم", "من خوشحالم", "من عصبانی‌ام", "من خسته‌ام"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "sich freuen = خوشحال شدن" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich freue {0} auf das Wochenende.",
+      "options": ["mich", "dich", "sich", "uns"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "ich → mich" }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "sich langweilen", "fa": "حوصله‌اش سر رفتن" },
+      "example": { "text": { "de": "Die Kinder langweilen sich.", "fa": "بچه‌ها حوصله‌شان سر رفته." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "sich fühlen", "fa": "احساس کردن" },
+      "example": { "text": { "de": "Wie fühlst du dich?", "fa": "چه احساسی داری؟" } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s6",
+      "title": "sich freuen auf / über",
+      "content": "📝 **sich freuen** با دو حرف اضافه می‌آید:\n\n• **sich freuen auf** + Akkusativ = منتظر چیزی بودن (آینده)\n  Ich freue mich **auf** den Urlaub.\n  (منتظر تعطیلات هستم.)\n\n• **sich freuen über** + Akkusativ = خوشحال بودن از چیزی (حال/گذشته)\n  Ich freue mich **über** das Geschenk.\n  (از هدیه خوشحالم.)",
+      "examples": [
+        { "de": "Ich freue mich auf dich!", "fa": "منتظرتم!" },
+        { "de": "Er freut sich über den Erfolg.", "fa": "او از موفقیت خوشحال است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "sich wundern", "fa": "تعجب کردن" },
+      "example": { "text": { "de": "Ich wundere mich über sein Verhalten.", "fa": "از رفتارش تعجب می‌کنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-aergern",
+      "word": "ärgern",
+      "translation": "عصبانی شدن",
+      "syllables": ["är", "gern"],
+      "distractors": ["or", "garn", "ur", "gorn"]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "ترجمه سریع",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "sich freuen", "left": "عصبانی شدن", "right": "خوشحال شدن", "correctSide": "right" },
+        { "prompt": "sich ärgern", "left": "عصبانی شدن", "right": "خوشحال شدن", "correctSide": "left" },
+        { "prompt": "sich langweilen", "left": "حوصله سر رفتن", "right": "عجله کردن", "correctSide": "left" },
+        { "prompt": "sich fühlen", "left": "دیدن", "right": "احساس کردن", "correctSide": "right" },
+        { "prompt": "sich wundern", "left": "تعجب کردن", "right": "ترسیدن", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "sich aufregen", "fa": "ناراحت شدن" },
+      "example": { "text": { "de": "Reg dich nicht auf!", "fa": "ناراحت نشو!" } }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "sich entspannen", "fa": "استراحت کردن" },
+      "example": { "text": { "de": "Am Wochenende entspanne ich mich.", "fa": "آخر هفته استراحت می‌کنم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": { "de": "sich beeilen", "fa": "عجله کردن" },
+      "example": { "text": { "de": "Beeil dich! Wir sind spät.", "fa": "عجله کن! دیر شده." } }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "چه احساسی داری؟",
+      "context": "لیزا و تام درباره احساساتشان صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Wie fühlst du dich heute?", "fa": "امروز چه احساسی داری؟" } },
+        { "speaker": "Tom", "text": { "de": "Ich fühle mich müde.", "fa": "احساس خستگی می‌کنم." } },
+        { "speaker": "Lisa", "text": { "de": "Warum? Was ist passiert?", "fa": "چرا؟ چه شده؟" } },
+        { "speaker": "Tom", "text": { "de": "Ich habe mich über die Arbeit geärgert.", "fa": "از کار عصبانی شدم." } },
+        { "speaker": "Lisa", "text": { "de": "Du musst dich entspannen!", "fa": "باید استراحت کنی!" } },
+        { "speaker": "Tom", "text": { "de": "Ja, du hast recht. Ich freue mich auf das Wochenende.", "fa": "بله، حق با توست. منتظر آخر هفته هستم." } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "تام چه احساسی دارد؟", "options": ["خوشحال", "خسته", "عصبانی"], "correctIndex": 1 },
+        { "question": "تام از چه عصبانی شده؟", "options": ["از کار", "از لیزا", "از آب و هوا"], "correctIndex": 0 }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er ärgert {0} über den Lärm.",
+      "options": ["sich", "mich", "dich", "uns"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "er → sich" }
+    },
+    {
+      "type": "word-order",
+      "id": "w1",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["mich.", "sehr", "Ich", "freue"],
+      "correctOrder": [2, 3, 0, 1],
+      "correctSentence": { "de": "Ich freue mich sehr.", "fa": "خیلی خوشحالم." }
+    },
+    {
+      "type": "word-order",
+      "id": "w2",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["dich?", "fühlst", "Wie", "du"],
+      "correctOrder": [2, 1, 3, 0],
+      "correctSentence": { "de": "Wie fühlst du dich?", "fa": "چه احساسی داری؟" }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "فعل‌ها را با ترجمه جفت کنید",
+      "items": [
+        { "id": "i1", "text": "sich freuen" },
+        { "id": "i2", "text": "sich ärgern" },
+        { "id": "i3", "text": "sich langweilen" },
+        { "id": "i4", "text": "sich beeilen" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "عجله کردن" },
+        { "id": "m2", "text": "خوشحال شدن" },
+        { "id": "m3", "text": "عصبانی شدن" },
+        { "id": "m4", "text": "حوصله سر رفتن" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m3"],
+        ["i3", "m4"],
+        ["i4", "m1"]
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-fuehlen",
+      "word": "fühlen",
+      "translation": "احساس کردن",
+      "syllables": ["füh", "len"],
+      "distractors": ["fah", "lan", "foh", "lun"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "«Beeil dich!» یعنی چه؟",
+      "options": ["آرام باش!", "عجله کن!", "بشین!", "برو!"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "sich beeilen = عجله کردن" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Wir langweilen {0} im Unterricht.",
+      "options": ["uns", "mich", "sich", "euch"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "wir → uns" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "عجله کن!",
+      "context": "مادر و پسرش صبح",
+      "lines": [
+        { "speaker": "Mutter", "text": { "de": "Max, beeil dich! Der Bus kommt!", "fa": "ماکس، عجله کن! اتوبوس می‌آید!" } },
+        { "speaker": "Max", "text": { "de": "Ich beeile mich ja!", "fa": "دارم عجله می‌کنم!" } },
+        { "speaker": "Mutter", "text": { "de": "Warum regst du dich auf?", "fa": "چرا ناراحت می‌شوی؟" } },
+        { "speaker": "Max", "text": { "de": "Ich ärgere mich, weil ich müde bin.", "fa": "عصبانی‌ام چون خسته‌ام." } },
+        { "speaker": "Mutter", "text": { "de": "Nach der Schule kannst du dich entspannen.", "fa": "بعد از مدرسه می‌توانی استراحت کنی." } },
+        { "speaker": "Max", "text": { "de": "Darauf freue ich mich!", "fa": "منتظرشم!" } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "چرا ماکس عصبانی است؟", "options": ["چون خسته است", "چون گرسنه است", "چون اتوبوس رفته"], "correctIndex": 0 },
+        { "question": "ماکس کی می‌تواند استراحت کند؟", "options": ["الان", "بعد از مدرسه", "فردا"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "ضمیر انعکاسی",
+      "instruction": "ضمیر درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "ich freue ...", "left": "mich", "right": "sich", "correctSide": "left" },
+        { "prompt": "du ärgerst ...", "left": "mich", "right": "dich", "correctSide": "right" },
+        { "prompt": "sie fühlt ...", "left": "sich", "right": "dich", "correctSide": "left" },
+        { "prompt": "wir langweilen ...", "left": "euch", "right": "uns", "correctSide": "right" },
+        { "prompt": "ihr beeilt ...", "left": "euch", "right": "uns", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Kinder freuen {0} auf Weihnachten.",
+      "options": ["sich", "mich", "dich", "uns"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "die Kinder (sie) → sich" }
+    },
+    {
+      "type": "word-order",
+      "id": "w3",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["auf!", "dich", "nicht", "Reg"],
+      "correctOrder": [3, 1, 2, 0],
+      "correctSentence": { "de": "Reg dich nicht auf!", "fa": "ناراحت نشو!" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "«Ich wundere mich» یعنی چه؟",
+      "options": ["می‌ترسم", "تعجب می‌کنم", "عجله می‌کنم", "استراحت می‌کنم"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "sich wundern = تعجب کردن" }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-beeilen",
+      "word": "beeilen",
+      "translation": "عجله کردن",
+      "syllables": ["be", "ei", "len"],
+      "distractors": ["ba", "au", "lan", "bo"]
+    },
+    {
+      "type": "matching",
+      "id": "m2",
+      "instruction": "جمله را با ترجمه جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Ich freue mich." },
+        { "id": "i2", "text": "Er ärgert sich." },
+        { "id": "i3", "text": "Sie langweilt sich." },
+        { "id": "i4", "text": "Wir entspannen uns." }
+      ],
+      "matches": [
+        { "id": "m1", "text": "حوصله‌اش سر رفته." },
+        { "id": "m2", "text": "خوشحالم." },
+        { "id": "m3", "text": "استراحت می‌کنیم." },
+        { "id": "m4", "text": "عصبانی است." }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m4"],
+        ["i3", "m1"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ihr müsst {0} beeilen!",
+      "options": ["euch", "uns", "sich", "mich"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "ihr → euch" }
+    },
+    {
+      "type": "word-order",
+      "id": "w4",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["mich.", "entspanne", "Wochenende", "Am", "ich"],
+      "correctOrder": [3, 2, 1, 4, 0],
+      "correctSentence": { "de": "Am Wochenende entspanne ich mich.", "fa": "آخر هفته استراحت می‌کنم." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "کدام جمله درست است؟",
+      "options": ["Ich freue sich.", "Ich freue mich.", "Ich mich freue.", "Ich freue dich."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "ich → mich" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sie wundert {0} über das Ergebnis.",
+      "options": ["sich", "mich", "dich", "uns"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "sie (او) → sich" }
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Ich freue mich sehr.",
+      "translation": "خیلی خوشحالم.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Wie fühlst du dich heute?",
+      "translation": "امروز چه احساسی داری؟",
+      "difficulty": "A2"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-3",
+      "targetText": "Beeil dich bitte!",
+      "translation": "لطفاً عجله کن!",
+      "difficulty": "A2"
+    },
+    {
+      "type": "memory-match",
+      "id": "g3",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "sich freuen", "fa": "خوشحال شدن" },
+        { "de": "sich ärgern", "fa": "عصبانی شدن" },
+        { "de": "sich langweilen", "fa": "حوصله سر رفتن" },
+        { "de": "sich fühlen", "fa": "احساس کردن" },
+        { "de": "sich entspannen", "fa": "استراحت کردن" },
+        { "de": "sich beeilen", "fa": "عجله کردن" }
+      ],
+      "timeLimit": 60
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "sich freuen", "fa": "خوشحال شدن" },
+        { "de": "sich ärgern", "fa": "عصبانی شدن" },
+        { "de": "sich langweilen", "fa": "حوصله سر رفتن" },
+        { "de": "sich fühlen", "fa": "احساس کردن" },
+        { "de": "sich wundern", "fa": "تعجب کردن" },
+        { "de": "sich aufregen", "fa": "ناراحت شدن" },
+        { "de": "sich entspannen", "fa": "استراحت کردن" },
+        { "de": "sich beeilen", "fa": "عجله کردن" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما فعل‌های انعکاسی احساسات را یاد گرفتید!\n\n😊 **فعل‌های احساسات:**\n• sich freuen = خوشحال شدن\n• sich ärgern = عصبانی شدن\n• sich fühlen = احساس کردن\n• sich langweilen = حوصله سر رفتن\n\n📝 **نکته مهم:**\n• sich freuen **auf** = منتظر بودن (آینده)\n• sich freuen **über** = خوشحال بودن از (حال/گذشته)",
+      "xpEarned": 50,
+      "vocabularyLearned": [
+        { "word": { "de": "sich freuen", "fa": "خوشحال شدن" } },
+        { "word": { "de": "sich ärgern", "fa": "عصبانی شدن" } },
+        { "word": { "de": "sich langweilen", "fa": "حوصله سر رفتن" } },
+        { "word": { "de": "sich fühlen", "fa": "احساس کردن" } },
+        { "word": { "de": "sich wundern", "fa": "تعجب کردن" } },
+        { "word": { "de": "sich aufregen", "fa": "ناراحت شدن" } },
+        { "word": { "de": "sich entspannen", "fa": "استراحت کردن" } },
+        { "word": { "de": "sich beeilen", "fa": "عجله کردن" } }
+      ]
+    }
+  ]
+}
