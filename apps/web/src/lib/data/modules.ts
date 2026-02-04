@@ -522,6 +522,12 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         title: "صفت عالی (Superlativ)",
         description: "یاد بگیرید چطور بگویید چیزی بهترین یا بیشترین است.",
         path: "/learn/de-fa/A2/A2-M02-L02"
+      },
+      {
+        id: "A2-M02-L03",
+        title: "برابری (so...wie)",
+        description: "یاد بگیرید چطور بگویید دو چیز مثل هم هستند.",
+        path: "/learn/de-fa/A2/A2-M02-L03"
       }
     ]
   }

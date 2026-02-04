@@ -1,0 +1,421 @@
+{
+  "id": "A2-M02-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "so...wie - Gleichheit", "fa": "so...wie - برابری" },
+  "description": "یاد بگیرید چطور بگویید دو چیز مثل هم هستند",
+  "level": "A2",
+  "module": 2,
+  "lessonNumber": 3,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "so...wie", "fa": "به اندازه / مثل", "grammar": { "pos": "phrase" } },
+    { "de": "genauso...wie", "fa": "دقیقاً مثل", "grammar": { "pos": "phrase" } },
+    { "de": "nicht so...wie", "fa": "نه به اندازه", "grammar": { "pos": "phrase" } },
+    { "de": "gleich", "fa": "برابر / یکسان", "grammar": { "pos": "adjective" } },
+    { "de": "ähnlich", "fa": "شبیه", "grammar": { "pos": "adjective" } },
+    { "de": "verschieden", "fa": "متفاوت", "grammar": { "pos": "adjective" } },
+    { "de": "fast", "fa": "تقریباً", "grammar": { "pos": "adverb" } },
+    { "de": "genau", "fa": "دقیقاً", "grammar": { "pos": "adverb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "so...wie - برابری",
+      "content": "⚖️ **so...wie** برای مقایسه برابر استفاده می‌شود.\n\n📝 **ساختار:**\n**so** + صفت + **wie**\n\n• Er ist **so** groß **wie** ich.\n  = او به اندازه من قد دارد.\n\n• Das Buch ist **so** interessant **wie** der Film.\n  = کتاب به اندازه فیلم جالب است.\n\n⚠️ تفاوت:\n• **als** = برای تفاوت (größer **als**)\n• **wie** = برای برابری (so groß **wie**)",
+      "examples": [
+        { "de": "Sie singt so schön wie ihre Mutter.", "fa": "او به زیبایی مادرش می‌خواند." },
+        { "de": "Mein Auto ist so alt wie deins.", "fa": "ماشین من به قدمت مال تو است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "so...wie", "fa": "به اندازه / مثل" },
+      "example": { "text": { "de": "Er ist so groß wie sein Vater.", "fa": "او به اندازه پدرش قد دارد." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "genauso...wie", "fa": "دقیقاً مثل" },
+      "example": { "text": { "de": "Sie ist genauso alt wie ich.", "fa": "او دقیقاً هم‌سن من است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-genauso",
+      "word": "genauso",
+      "translation": "دقیقاً مثل",
+      "syllables": ["ge", "nau", "so"],
+      "distractors": ["ga", "nou", "sa", "gi"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«Er ist so groß wie ich» یعنی چه؟",
+      "options": ["او بزرگ‌تر از من است", "او به اندازه من قد دارد", "او کوچک‌تر از من است", "او بزرگ است"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "so...wie = به اندازه / مثل" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das Buch ist {0} interessant wie der Film.",
+      "options": ["so", "als", "mehr", "am"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "برای برابری: so...wie" }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "nicht so...wie", "fa": "نه به اندازه" },
+      "example": { "text": { "de": "Das Auto ist nicht so schnell wie der Zug.", "fa": "ماشین به سرعت قطار نیست." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "gleich", "fa": "برابر / یکسان" },
+      "example": { "text": { "de": "Wir sind gleich alt.", "fa": "ما هم‌سن هستیم." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s6",
+      "title": "nicht so...wie - نابرابری",
+      "content": "⚖️ **nicht so...wie** برای بیان نابرابری استفاده می‌شود.\n\n📝 **ساختار:**\n**nicht so** + صفت + **wie**\n\n• Das Auto ist **nicht so** schnell **wie** der Zug.\n  = ماشین به سرعت قطار نیست.\n\n• Er ist **nicht so** alt **wie** ich.\n  = او به سن من نیست (جوان‌تر است).\n\n💡 این ساختار مؤدبانه‌تر از Komparativ است!",
+      "examples": [
+        { "de": "Deutsch ist nicht so schwer wie Chinesisch.", "fa": "آلمانی به سختی چینی نیست." },
+        { "de": "Heute ist nicht so kalt wie gestern.", "fa": "امروز به سردی دیروز نیست." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "ähnlich", "fa": "شبیه" },
+      "example": { "text": { "de": "Die Schwestern sehen sich ähnlich.", "fa": "خواهرها شبیه هم هستند." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "verschieden", "fa": "متفاوت" },
+      "example": { "text": { "de": "Unsere Meinungen sind verschieden.", "fa": "نظرات ما متفاوت است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-aehnlich",
+      "word": "ähnlich",
+      "translation": "شبیه",
+      "syllables": ["ähn", "lich"],
+      "distractors": ["ahn", "lech", "ohn", "lach"]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "als یا wie؟",
+      "instruction": "کلمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "so groß ...", "left": "wie", "right": "als", "correctSide": "left" },
+        { "prompt": "größer ...", "left": "wie", "right": "als", "correctSide": "right" },
+        { "prompt": "genauso alt ...", "left": "wie", "right": "als", "correctSide": "left" },
+        { "prompt": "schneller ...", "left": "wie", "right": "als", "correctSide": "right" },
+        { "prompt": "nicht so teuer ...", "left": "wie", "right": "als", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "دوقلوها",
+      "context": "الی درباره دوقلوها صحبت می‌کند",
+      "lines": [
+        { "speaker": "Tom", "text": { "de": "Sind das Zwillinge?", "fa": "این‌ها دوقلو هستند؟" } },
+        { "speaker": "Eli", "text": { "de": "Ja! Sie sind genauso alt wie du.", "fa": "بله! آن‌ها دقیقاً هم‌سن تو هستند." } },
+        { "speaker": "Tom", "text": { "de": "Sehen sie sich ähnlich?", "fa": "شبیه هم هستند؟" } },
+        { "speaker": "Eli", "text": { "de": "Ja, sehr! Anna ist so groß wie Maria.", "fa": "بله، خیلی! آنا به اندازه ماریا قد دارد." } },
+        { "speaker": "Tom", "text": { "de": "Und ihre Persönlichkeiten?", "fa": "و شخصیت‌هایشان؟" } },
+        { "speaker": "Eli", "text": { "de": "Die sind verschieden. Anna ist nicht so ruhig wie Maria.", "fa": "آن‌ها متفاوت است. آنا به آرامی ماریا نیست." } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "آنا و ماریا چه رابطه‌ای دارند؟", "options": ["خواهر", "دوقلو", "دوست"], "correctIndex": 1 },
+        { "question": "شخصیت‌های آن‌ها چطور است؟", "options": ["یکسان", "متفاوت", "معلوم نیست"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sie ist genauso alt {0} ich.",
+      "options": ["wie", "als", "so", "und"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "genauso...wie = دقیقاً مثل" }
+    },
+    {
+      "type": "word-order",
+      "id": "w1",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["ich.", "groß", "so", "wie", "ist", "Er"],
+      "correctOrder": [5, 4, 2, 1, 3, 0],
+      "correctSentence": { "de": "Er ist so groß wie ich.", "fa": "او به اندازه من قد دارد." }
+    },
+    {
+      "type": "word-order",
+      "id": "w2",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["Zug.", "schnell", "nicht", "der", "so", "ist", "wie", "Das Auto"],
+      "correctOrder": [7, 5, 2, 4, 1, 6, 3, 0],
+      "correctSentence": { "de": "Das Auto ist nicht so schnell wie der Zug.", "fa": "ماشین به سرعت قطار نیست." }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "fast", "fa": "تقریباً" },
+      "example": { "text": { "de": "Er ist fast so alt wie ich.", "fa": "او تقریباً هم‌سن من است." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": { "de": "genau", "fa": "دقیقاً" },
+      "example": { "text": { "de": "Das ist genau so, wie ich es wollte.", "fa": "این دقیقاً همان است که می‌خواستم." } }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "جملات را با ترجمه جفت کنید",
+      "items": [
+        { "id": "i1", "text": "so groß wie" },
+        { "id": "i2", "text": "größer als" },
+        { "id": "i3", "text": "nicht so groß wie" },
+        { "id": "i4", "text": "genauso groß wie" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "بزرگ‌تر از" },
+        { "id": "m2", "text": "به اندازه" },
+        { "id": "m3", "text": "دقیقاً به اندازه" },
+        { "id": "m4", "text": "نه به اندازه" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m1"],
+        ["i3", "m4"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "برای بیان برابری از کدام ساختار استفاده می‌کنیم؟",
+      "options": ["größer als", "so groß wie", "am größten", "groß"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "برای برابری: so...wie" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Heute ist {0} so warm wie gestern.",
+      "options": ["nicht", "mehr", "am", "als"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "nicht so...wie = نه به اندازه" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "مقایسه زبان‌ها",
+      "context": "دانشجوها درباره یادگیری زبان صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Ist Deutsch so schwer wie Chinesisch?", "fa": "آیا آلمانی به سختی چینی است؟" } },
+        { "speaker": "Max", "text": { "de": "Nein! Deutsch ist nicht so schwer wie Chinesisch.", "fa": "نه! آلمانی به سختی چینی نیست." } },
+        { "speaker": "Anna", "text": { "de": "Und Spanisch?", "fa": "و اسپانیایی؟" } },
+        { "speaker": "Max", "text": { "de": "Spanisch ist fast so einfach wie Englisch.", "fa": "اسپانیایی تقریباً به سادگی انگلیسی است." } },
+        { "speaker": "Anna", "text": { "de": "Welche Sprache lernst du am liebsten?", "fa": "کدام زبان را از همه بیشتر دوست داری یاد بگیری؟" } },
+        { "speaker": "Max", "text": { "de": "Deutsch! Es ist genauso interessant wie schwer.", "fa": "آلمانی! به اندازه‌ای که سخت است، جالب هم هست." } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "آیا آلمانی به سختی چینی است؟", "options": ["بله", "نه", "معلوم نیست"], "correctIndex": 1 },
+        { "question": "ماکس کدام زبان را دوست دارد؟", "options": ["چینی", "اسپانیایی", "آلمانی"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-verschieden",
+      "word": "verschieden",
+      "translation": "متفاوت",
+      "syllables": ["ver", "schie", "den"],
+      "distractors": ["vor", "scha", "dan", "vir"]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "مقایسه",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "gleich", "left": "برابر", "right": "متفاوت", "correctSide": "left" },
+        { "prompt": "ähnlich", "left": "متفاوت", "right": "شبیه", "correctSide": "right" },
+        { "prompt": "verschieden", "left": "متفاوت", "right": "یکسان", "correctSide": "left" },
+        { "prompt": "fast", "left": "دقیقاً", "right": "تقریباً", "correctSide": "right" },
+        { "prompt": "genau", "left": "دقیقاً", "right": "تقریباً", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Schwestern sehen sich {0}.",
+      "options": ["ähnlich", "verschieden", "gleich", "anders"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "sich ähnlich sehen = شبیه هم بودن" }
+    },
+    {
+      "type": "word-order",
+      "id": "w3",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["ich.", "alt", "genauso", "wie", "ist", "Sie"],
+      "correctOrder": [5, 4, 2, 1, 3, 0],
+      "correctSentence": { "de": "Sie ist genauso alt wie ich.", "fa": "او دقیقاً هم‌سن من است." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "«Wir sind gleich alt» یعنی چه؟",
+      "options": ["ما هم‌سن هستیم", "ما مسن‌تر هستیم", "ما جوان‌تر هستیم", "ما سن‌های متفاوتی داریم"],
+      "correctAnswerIndex": 0,
+      "feedback": { "correct": "آفرین!", "incorrect": "gleich alt = هم‌سن" }
+    },
+    {
+      "type": "matching",
+      "id": "m2",
+      "instruction": "کلمات را با ترجمه جفت کنید",
+      "items": [
+        { "id": "i1", "text": "gleich" },
+        { "id": "i2", "text": "ähnlich" },
+        { "id": "i3", "text": "verschieden" },
+        { "id": "i4", "text": "fast" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "شبیه" },
+        { "id": "m2", "text": "برابر" },
+        { "id": "m3", "text": "تقریباً" },
+        { "id": "m4", "text": "متفاوت" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m1"],
+        ["i3", "m4"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er ist {0} so alt wie ich.",
+      "options": ["fast", "mehr", "am", "als"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "fast so...wie = تقریباً به اندازه" }
+    },
+    {
+      "type": "word-order",
+      "id": "w4",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["verschieden.", "Meinungen", "sind", "Unsere"],
+      "correctOrder": [3, 1, 2, 0],
+      "correctSentence": { "de": "Unsere Meinungen sind verschieden.", "fa": "نظرات ما متفاوت است." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "کدام جمله درست است؟",
+      "options": ["Er ist so groß als ich.", "Er ist so groß wie ich.", "Er ist so größer wie ich.", "Er ist so groß von ich."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "ساختار: so + صفت + wie" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Deutsch ist nicht so schwer {0} Chinesisch.",
+      "options": ["wie", "als", "so", "von"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "nicht so...wie" }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-gleich",
+      "word": "gleich",
+      "translation": "برابر",
+      "syllables": ["gleich"],
+      "distractors": ["glaich", "glich", "gloich"]
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Er ist so groß wie ich.",
+      "translation": "او به اندازه من قد دارد.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Sie ist genauso alt wie du.",
+      "translation": "او دقیقاً هم‌سن تو است.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-3",
+      "targetText": "Das ist nicht so teuer wie ich dachte.",
+      "translation": "این به گرانی که فکر می‌کردم نیست.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "memory-match",
+      "id": "g3",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "so...wie", "fa": "به اندازه" },
+        { "de": "genauso...wie", "fa": "دقیقاً مثل" },
+        { "de": "gleich", "fa": "برابر" },
+        { "de": "ähnlich", "fa": "شبیه" },
+        { "de": "verschieden", "fa": "متفاوت" },
+        { "de": "fast", "fa": "تقریباً" }
+      ],
+      "timeLimit": 60
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "so...wie", "fa": "به اندازه / مثل" },
+        { "de": "genauso...wie", "fa": "دقیقاً مثل" },
+        { "de": "nicht so...wie", "fa": "نه به اندازه" },
+        { "de": "gleich", "fa": "برابر / یکسان" },
+        { "de": "ähnlich", "fa": "شبیه" },
+        { "de": "verschieden", "fa": "متفاوت" },
+        { "de": "fast", "fa": "تقریباً" },
+        { "de": "genau", "fa": "دقیقاً" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما ساختار so...wie را یاد گرفتید!\n\n📝 **ساختارهای مقایسه:**\n\n⚖️ **برابری:**\n• **so** + صفت + **wie**\n• **genauso** + صفت + **wie**\n\n⚖️ **نابرابری مؤدبانه:**\n• **nicht so** + صفت + **wie**\n\n📊 **مقایسه:**\n• größer **als** = بزرگ‌تر از (تفاوت)\n• so groß **wie** = به اندازه (برابری)\n• nicht so groß **wie** = نه به اندازه",
+      "xpEarned": 50,
+      "vocabularyLearned": [
+        { "word": { "de": "so...wie", "fa": "به اندازه / مثل" } },
+        { "word": { "de": "genauso...wie", "fa": "دقیقاً مثل" } },
+        { "word": { "de": "nicht so...wie", "fa": "نه به اندازه" } },
+        { "word": { "de": "gleich", "fa": "برابر / یکسان" } },
+        { "word": { "de": "ähnlich", "fa": "شبیه" } },
+        { "word": { "de": "verschieden", "fa": "متفاوت" } },
+        { "word": { "de": "fast", "fa": "تقریباً" } },
+        { "word": { "de": "genau", "fa": "دقیقاً" } }
+      ]
+    }
+  ]
+}
