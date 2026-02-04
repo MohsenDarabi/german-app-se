@@ -289,6 +289,12 @@ const DE_FA_A1_MODULES: ModuleStub[] = [
         title: "میوه و سبزیجات (Obst und Gemüse)",
         description: "یاد بگیرید میوه‌ها و سبزیجات را به آلمانی بگویید.",
         path: "/learn/de-fa/A1/A1-M08-L02"
+      },
+      {
+        id: "A1-M08-L03",
+        title: "در رستوران (Im Restaurant)",
+        description: "یاد بگیرید چطور در رستوران آلمانی سفارش بدهید.",
+        path: "/learn/de-fa/A1/A1-M08-L03"
       }
     ]
   }

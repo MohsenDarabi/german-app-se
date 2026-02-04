@@ -1,0 +1,767 @@
+{
+  "id": "A1-M08-L03",
+  "languagePair": "de-fa",
+  "source": {
+    "code": "de",
+    "name": "Deutsch"
+  },
+  "target": {
+    "code": "fa",
+    "name": "فارسی"
+  },
+  "title": {
+    "de": "Im Restaurant",
+    "fa": "در رستوران"
+  },
+  "description": "یاد بگیرید چطور در رستوران آلمانی سفارش بدهید",
+  "level": "A1",
+  "module": 8,
+  "lessonNumber": 3,
+  "totalSteps": 42,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "das Restaurant", "fa": "رستوران", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Restaurants" } } },
+    { "de": "die Speisekarte", "fa": "منو", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Speisekarten" } } },
+    { "de": "der Kellner", "fa": "پیشخدمت (مرد)", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Kellner" } } },
+    { "de": "die Kellnerin", "fa": "پیشخدمت (زن)", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Kellnerinnen" } } },
+    { "de": "bestellen", "fa": "سفارش دادن", "grammar": { "pos": "verb", "verb": { "infinitiv": "bestellen", "present": { "ich": "bestelle", "du": "bestellst", "er_sie_es": "bestellt", "wir": "bestellen", "ihr": "bestellt", "sie_Sie": "bestellen" } } } },
+    { "de": "die Rechnung", "fa": "صورتحساب", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Rechnungen" } } },
+    { "de": "das Hauptgericht", "fa": "غذای اصلی", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Hauptgerichte" } } },
+    { "de": "die Vorspeise", "fa": "پیش‌غذا", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Vorspeisen" } } },
+    { "de": "der Nachtisch", "fa": "دسر", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Nachtische" } } },
+    { "de": "bezahlen", "fa": "پرداخت کردن", "grammar": { "pos": "verb", "verb": { "infinitiv": "bezahlen", "present": { "ich": "bezahle", "du": "bezahlst", "er_sie_es": "bezahlt", "wir": "bezahlen", "ihr": "bezahlt", "sie_Sie": "bezahlen" } } } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "در رستوران آلمانی",
+      "content": "در این درس یاد می‌گیریم چطور در رستوران سفارش بدهیم:\n\n🍽️ **ساختار منو:**\n• die Vorspeise = پیش‌غذا\n• das Hauptgericht = غذای اصلی\n• der Nachtisch = دسر\n\n💬 **عبارات مهم:**\n• Ich möchte bestellen. = می‌خواهم سفارش بدهم.\n• Die Rechnung, bitte. = صورتحساب، لطفاً.\n\n📝 **نکته:** در آلمان معمولاً هر کس جداگانه پرداخت می‌کند!",
+      "examples": [
+        {
+          "de": "Kann ich bitte die Speisekarte haben?",
+          "fa": "می‌توانم منو را داشته باشم لطفاً؟"
+        },
+        {
+          "de": "Ich möchte bestellen.",
+          "fa": "می‌خواهم سفارش بدهم."
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": {
+        "de": "das Restaurant",
+        "fa": "رستوران"
+      },
+      "example": {
+        "text": {
+          "de": "Das Restaurant ist sehr gut.",
+          "fa": "رستوران خیلی خوب است."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Restaurant",
+      "word": "Restaurant",
+      "translation": "رستوران",
+      "syllables": ["Res", "tau", "rant"],
+      "distractors": ["Ras", "tou", "runt", "Ros"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": {
+        "de": "die Speisekarte",
+        "fa": "منو"
+      },
+      "example": {
+        "text": {
+          "de": "Kann ich die Speisekarte haben?",
+          "fa": "می‌توانم منو را داشته باشم؟"
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Speisekarte",
+      "word": "Speisekarte",
+      "translation": "منو",
+      "syllables": ["Spei", "se", "kar", "te"],
+      "distractors": ["Spai", "sa", "kor", "tu"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": {
+        "de": "der Kellner",
+        "fa": "پیشخدمت (مرد)"
+      },
+      "example": {
+        "text": {
+          "de": "Der Kellner bringt das Essen.",
+          "fa": "پیشخدمت غذا را می‌آورد."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Kellner",
+      "word": "Kellner",
+      "translation": "پیشخدمت",
+      "syllables": ["Kell", "ner"],
+      "distractors": ["Kall", "nar", "Koll", "nur"]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": {
+        "de": "die Kellnerin",
+        "fa": "پیشخدمت (زن)"
+      },
+      "example": {
+        "text": {
+          "de": "Die Kellnerin ist sehr freundlich.",
+          "fa": "پیشخدمت (زن) خیلی مهربان است."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Kellnerin",
+      "word": "Kellnerin",
+      "translation": "پیشخدمت (زن)",
+      "syllables": ["Kell", "ne", "rin"],
+      "distractors": ["Kall", "na", "ran", "Koll"]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "رستوران",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        {
+          "prompt": "Restaurant",
+          "left": "رستوران",
+          "right": "کافه",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Speisekarte",
+          "left": "صورتحساب",
+          "right": "منو",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Kellner",
+          "left": "پیشخدمت",
+          "right": "آشپز",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "منو =",
+          "left": "Rechnung",
+          "right": "Speisekarte",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "پیشخدمت زن =",
+          "left": "Kellner",
+          "right": "Kellnerin",
+          "correctSide": "right"
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": {
+        "de": "bestellen",
+        "fa": "سفارش دادن"
+      },
+      "example": {
+        "text": {
+          "de": "Ich möchte jetzt bestellen.",
+          "fa": "می‌خواهم الان سفارش بدهم."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-bestellen",
+      "word": "bestellen",
+      "translation": "سفارش دادن",
+      "syllables": ["be", "stel", "len"],
+      "distractors": ["ba", "stal", "lan", "bo"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": {
+        "de": "die Rechnung",
+        "fa": "صورتحساب"
+      },
+      "example": {
+        "text": {
+          "de": "Die Rechnung, bitte!",
+          "fa": "صورتحساب، لطفاً!"
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Rechnung",
+      "word": "Rechnung",
+      "translation": "صورتحساب",
+      "syllables": ["Rech", "nung"],
+      "distractors": ["Rach", "nang", "Roch", "ning"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": {
+        "de": "bezahlen",
+        "fa": "پرداخت کردن"
+      },
+      "example": {
+        "text": {
+          "de": "Ich möchte bezahlen.",
+          "fa": "می‌خواهم پرداخت کنم."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-bezahlen",
+      "word": "bezahlen",
+      "translation": "پرداخت کردن",
+      "syllables": ["be", "zah", "len"],
+      "distractors": ["ba", "zoh", "lan", "bo"]
+    },
+    {
+      "type": "dialog",
+      "id": "s9",
+      "title": "مکالمه: در رستوران (۱)",
+      "context": "الی و تام به رستوران می‌روند",
+      "lines": [
+        {
+          "speaker": "Kellner",
+          "text": {
+            "de": "Guten Abend! Haben Sie reserviert?",
+            "fa": "عصر بخیر! رزرو کرده‌اید؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Nein, haben Sie einen Tisch für zwei Personen?",
+            "fa": "نه، یک میز برای دو نفر دارید؟"
+          }
+        },
+        {
+          "speaker": "Kellner",
+          "text": {
+            "de": "Ja, natürlich. Kommen Sie bitte mit.",
+            "fa": "بله، البته. لطفاً همراهم بیایید."
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Können wir bitte die Speisekarte haben?",
+            "fa": "می‌توانیم منو را داشته باشیم لطفاً؟"
+          }
+        },
+        {
+          "speaker": "Kellner",
+          "text": {
+            "de": "Hier, bitte. Möchten Sie schon etwas trinken?",
+            "fa": "بفرمایید. می‌خواهید چیزی بنوشید؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Ja, ich hätte gern ein Wasser.",
+            "fa": "بله، یک آب می‌خواهم."
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Und für mich ein Bier, bitte.",
+            "fa": "و برای من یک آبجو، لطفاً."
+          }
+        }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        {
+          "question": "آیا الی و تام رزرو کرده بودند؟",
+          "options": ["بله", "نه", "معلوم نیست"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: Nein (نه)"
+        },
+        {
+          "question": "الی چه نوشیدنی سفارش داد؟",
+          "options": ["آبجو", "آب", "قهوه"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: ich hätte gern ein Wasser (یک آب می‌خواهم)"
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": {
+        "de": "die Vorspeise",
+        "fa": "پیش‌غذا"
+      },
+      "example": {
+        "text": {
+          "de": "Als Vorspeise nehme ich eine Suppe.",
+          "fa": "به عنوان پیش‌غذا سوپ می‌خورم."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Vorspeise",
+      "word": "Vorspeise",
+      "translation": "پیش‌غذا",
+      "syllables": ["Vor", "spei", "se"],
+      "distractors": ["Var", "spai", "sa", "Vur"]
+    },
+    {
+      "type": "new-word",
+      "id": "s11",
+      "word": {
+        "de": "das Hauptgericht",
+        "fa": "غذای اصلی"
+      },
+      "example": {
+        "text": {
+          "de": "Als Hauptgericht nehme ich Schnitzel.",
+          "fa": "به عنوان غذای اصلی شنیتسل می‌خورم."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Hauptgericht",
+      "word": "Hauptgericht",
+      "translation": "غذای اصلی",
+      "syllables": ["Haupt", "ge", "richt"],
+      "distractors": ["Hopt", "ga", "rucht", "Hipt"]
+    },
+    {
+      "type": "new-word",
+      "id": "s12",
+      "word": {
+        "de": "der Nachtisch",
+        "fa": "دسر"
+      },
+      "example": {
+        "text": {
+          "de": "Zum Nachtisch esse ich Eis.",
+          "fa": "برای دسر بستنی می‌خورم."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Nachtisch",
+      "word": "Nachtisch",
+      "translation": "دسر",
+      "syllables": ["Nach", "tisch"],
+      "distractors": ["Noch", "tusch", "Nich", "tasch"]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "بخش‌های منو",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        {
+          "prompt": "Vorspeise",
+          "left": "پیش‌غذا",
+          "right": "غذای اصلی",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Hauptgericht",
+          "left": "پیش‌غذا",
+          "right": "غذای اصلی",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Nachtisch",
+          "left": "دسر",
+          "right": "نوشیدنی",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "دسر =",
+          "left": "Vorspeise",
+          "right": "Nachtisch",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "bestellen",
+          "left": "سفارش دادن",
+          "right": "پرداخت کردن",
+          "correctSide": "left"
+        }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s13",
+      "title": "عبارات مفید در رستوران",
+      "content": "**سفارش دادن:**\n• Ich hätte gern... = ...می‌خواهم\n• Ich nehme... = ...می‌گیرم\n• Für mich... = برای من...\n\n**سوال از پیشخدمت:**\n• Was empfehlen Sie? = چه پیشنهاد می‌کنید؟\n• Haben Sie...? = ...دارید؟\n\n**پرداخت:**\n• Die Rechnung, bitte. = صورتحساب، لطفاً.\n• Zusammen oder getrennt? = با هم یا جدا؟\n• Getrennt, bitte. = جدا، لطفاً.",
+      "examples": [
+        {
+          "de": "Ich hätte gern ein Schnitzel mit Pommes.",
+          "fa": "یک شنیتسل با سیب‌زمینی سرخ‌کرده می‌خواهم."
+        },
+        {
+          "de": "Was empfehlen Sie?",
+          "fa": "چه پیشنهاد می‌کنید؟"
+        }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "s14",
+      "title": "مکالمه: سفارش دادن",
+      "context": "الی و تام سفارش می‌دهند",
+      "lines": [
+        {
+          "speaker": "Kellner",
+          "text": {
+            "de": "Möchten Sie bestellen?",
+            "fa": "می‌خواهید سفارش بدهید؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Ja, als Vorspeise nehme ich die Suppe.",
+            "fa": "بله، به عنوان پیش‌غذا سوپ می‌خورم."
+          }
+        },
+        {
+          "speaker": "Kellner",
+          "text": {
+            "de": "Und als Hauptgericht?",
+            "fa": "و به عنوان غذای اصلی؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Ich hätte gern das Schnitzel mit Salat.",
+            "fa": "شنیتسل با سالاد می‌خواهم."
+          }
+        },
+        {
+          "speaker": "Kellner",
+          "text": {
+            "de": "Sehr gut. Und für Sie?",
+            "fa": "بسیار خوب. و برای شما؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Für mich die Pizza, bitte. Ohne Vorspeise.",
+            "fa": "برای من پیتزا، لطفاً. بدون پیش‌غذا."
+          }
+        },
+        {
+          "speaker": "Kellner",
+          "text": {
+            "de": "Möchten Sie auch einen Nachtisch?",
+            "fa": "دسر هم می‌خواهید؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Nein, danke. Vielleicht später.",
+            "fa": "نه، ممنون. شاید بعداً."
+          }
+        }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        {
+          "question": "الی چه پیش‌غذایی سفارش داد؟",
+          "options": ["سالاد", "سوپ", "نان"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: als Vorspeise nehme ich die Suppe"
+        },
+        {
+          "question": "تام دسر سفارش داد؟",
+          "options": ["بله", "نه", "بعداً سفارش می‌دهد"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: Nein, danke (نه، ممنون)"
+        }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s15",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich möchte {0}.",
+      "options": [
+        "bestellen",
+        "bestellst",
+        "bestellt",
+        "bestellung"
+      ],
+      "correctAnswers": [0],
+      "feedback": {
+        "explanation": "**Ich möchte bestellen** = می‌خواهم سفارش بدهم (بعد از möchte مصدر می‌آید)"
+      },
+      "feedbackTip": {
+        "category": "verb-form",
+        "tip": "بعد از möchte همیشه مصدر فعل می‌آید: möchte + bestellen"
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s16",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die {0}, bitte!",
+      "options": [
+        "Speisekarte",
+        "Rechnung",
+        "Kellner",
+        "Restaurant"
+      ],
+      "correctAnswers": [1],
+      "feedback": {
+        "explanation": "**Die Rechnung, bitte!** = صورتحساب، لطفاً! (برای پرداخت)"
+      },
+      "feedbackTip": {
+        "category": "vocabulary",
+        "tip": "وقتی می‌خواهید پرداخت کنید می‌گویید: Die Rechnung, bitte!"
+      }
+    },
+    {
+      "type": "matching",
+      "id": "s17",
+      "instruction": "کلمات آلمانی را با فارسی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Vorspeise" },
+        { "id": "i2", "text": "Hauptgericht" },
+        { "id": "i3", "text": "Nachtisch" },
+        { "id": "i4", "text": "Rechnung" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "غذای اصلی" },
+        { "id": "m2", "text": "پیش‌غذا" },
+        { "id": "m3", "text": "صورتحساب" },
+        { "id": "m4", "text": "دسر" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m1"],
+        ["i3", "m4"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s18",
+      "question": "وقتی می‌خواهید صورتحساب بگیرید چه می‌گویید؟",
+      "options": [
+        "Die Speisekarte, bitte.",
+        "Die Rechnung, bitte.",
+        "Ich möchte bestellen.",
+        "Die Vorspeise, bitte."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": {
+        "correct": "آفرین! Die Rechnung, bitte یعنی صورتحساب، لطفاً.",
+        "incorrect": "برای گرفتن صورتحساب می‌گوییم: Die Rechnung, bitte!"
+      },
+      "feedbackTip": {
+        "category": "phrase",
+        "tip": "Die Rechnung = صورتحساب، Die Speisekarte = منو"
+      }
+    },
+    {
+      "type": "dialog",
+      "id": "s19",
+      "title": "مکالمه: پرداخت",
+      "context": "الی و تام می‌خواهند پرداخت کنند",
+      "lines": [
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Entschuldigung, können wir bitte bezahlen?",
+            "fa": "ببخشید، می‌توانیم پرداخت کنیم؟"
+          }
+        },
+        {
+          "speaker": "Kellner",
+          "text": {
+            "de": "Ja, natürlich. Zusammen oder getrennt?",
+            "fa": "بله، البته. با هم یا جدا؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Getrennt, bitte.",
+            "fa": "جدا، لطفاً."
+          }
+        },
+        {
+          "speaker": "Kellner",
+          "text": {
+            "de": "Also, die Suppe, das Schnitzel und ein Wasser... das macht 18 Euro 50.",
+            "fa": "خب، سوپ، شنیتسل و یک آب... می‌شود ۱۸ یورو و ۵۰ سنت."
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Hier, bitte. Stimmt so.",
+            "fa": "بفرمایید. بقیه‌اش مال شما."
+          }
+        },
+        {
+          "speaker": "Kellner",
+          "text": {
+            "de": "Vielen Dank! Und für Sie: Pizza und Bier... 15 Euro.",
+            "fa": "خیلی ممنون! و برای شما: پیتزا و آبجو... ۱۵ یورو."
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Hier sind 20 Euro. Der Rest ist für Sie.",
+            "fa": "اینجا ۲۰ یورو است. بقیه‌اش مال شما."
+          }
+        },
+        {
+          "speaker": "Kellner",
+          "text": {
+            "de": "Danke schön! Einen schönen Abend noch!",
+            "fa": "خیلی ممنون! شب خوبی داشته باشید!"
+          }
+        }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        {
+          "question": "الی و تام چطور پرداخت کردند؟",
+          "options": ["با هم", "جدا", "فقط الی پرداخت کرد"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: Getrennt, bitte (جدا، لطفاً)"
+        },
+        {
+          "question": "غذای الی چقدر شد؟",
+          "options": ["۱۵ یورو", "۱۸ یورو و ۵۰ سنت", "۲۰ یورو"],
+          "correctIndex": 1,
+          "explanation": "پیشخدمت گفت: das macht 18 Euro 50"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g3",
+      "title": "مرور کلی",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        {
+          "prompt": "bestellen",
+          "left": "سفارش دادن",
+          "right": "پرداخت کردن",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "bezahlen",
+          "left": "سفارش دادن",
+          "right": "پرداخت کردن",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Rechnung",
+          "left": "منو",
+          "right": "صورتحساب",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Speisekarte",
+          "left": "منو",
+          "right": "صورتحساب",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Kellner",
+          "left": "آشپز",
+          "right": "پیشخدمت",
+          "correctSide": "right"
+        }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Ich möchte bestellen.",
+      "translation": "می‌خواهم سفارش بدهم.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Die Rechnung, bitte.",
+      "translation": "صورتحساب، لطفاً.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "das Restaurant", "fa": "رستوران" },
+        { "de": "die Speisekarte", "fa": "منو" },
+        { "de": "der Kellner", "fa": "پیشخدمت (مرد)" },
+        { "de": "die Kellnerin", "fa": "پیشخدمت (زن)" },
+        { "de": "bestellen", "fa": "سفارش دادن" },
+        { "de": "die Rechnung", "fa": "صورتحساب" },
+        { "de": "die Vorspeise", "fa": "پیش‌غذا" },
+        { "de": "das Hauptgericht", "fa": "غذای اصلی" },
+        { "de": "der Nachtisch", "fa": "دسر" },
+        { "de": "bezahlen", "fa": "پرداخت کردن" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما یاد گرفتید چطور در رستوران سفارش بدهید:\n\n🍽️ **بخش‌های منو:**\n• die Vorspeise = پیش‌غذا\n• das Hauptgericht = غذای اصلی\n• der Nachtisch = دسر\n\n👨‍🍳 **افراد:**\n• der Kellner = پیشخدمت (مرد)\n• die Kellnerin = پیشخدمت (زن)\n\n💬 **عبارات مهم:**\n• Ich möchte bestellen. = می‌خواهم سفارش بدهم.\n• Die Rechnung, bitte. = صورتحساب، لطفاً.\n• Zusammen oder getrennt? = با هم یا جدا؟",
+      "xpEarned": 50,
+      "nextLessonId": "A1-M08-L04",
+      "vocabularyLearned": [
+        { "word": { "de": "das Restaurant", "fa": "رستوران" } },
+        { "word": { "de": "die Speisekarte", "fa": "منو" } },
+        { "word": { "de": "der Kellner", "fa": "پیشخدمت (مرد)" } },
+        { "word": { "de": "die Kellnerin", "fa": "پیشخدمت (زن)" } },
+        { "word": { "de": "bestellen", "fa": "سفارش دادن" } },
+        { "word": { "de": "die Rechnung", "fa": "صورتحساب" } },
+        { "word": { "de": "die Vorspeise", "fa": "پیش‌غذا" } },
+        { "word": { "de": "das Hauptgericht", "fa": "غذای اصلی" } },
+        { "word": { "de": "der Nachtisch", "fa": "دسر" } },
+        { "word": { "de": "bezahlen", "fa": "پرداخت کردن" } }
+      ]
+    }
+  ]
+}
