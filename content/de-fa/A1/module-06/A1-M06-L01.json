@@ -17,8 +17,18 @@
   "level": "A1",
   "module": 6,
   "lessonNumber": 1,
-  "totalSteps": 26,
-  "estimatedMinutes": 15,
+  "totalSteps": 38,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "die Uhr", "fa": "ساعت", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Uhren" } } },
+    { "de": "halb", "fa": "نیم", "grammar": { "pos": "adverb" } },
+    { "de": "Viertel", "fa": "ربع", "grammar": { "pos": "noun", "noun": { "artikel": "n" } } },
+    { "de": "nach", "fa": "بعد از", "grammar": { "pos": "preposition" } },
+    { "de": "vor", "fa": "قبل از", "grammar": { "pos": "preposition" } },
+    { "de": "um", "fa": "در ساعت", "grammar": { "pos": "preposition" } },
+    { "de": "früh", "fa": "زود", "grammar": { "pos": "adverb" } },
+    { "de": "spät", "fa": "دیر", "grammar": { "pos": "adverb" } }
+  ],
   "steps": [
     {
       "type": "grammar-tip",
@@ -51,6 +61,14 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-Uhr",
+      "word": "Uhr",
+      "translation": "ساعت",
+      "syllables": ["Uhr"],
+      "distractors": ["Ur", "Ohr", "Ahr"]
+    },
+    {
       "type": "new-word",
       "id": "s3",
       "word": {
@@ -63,6 +81,14 @@
           "fa": "ساعت دو و نیم است."
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-halb",
+      "word": "halb",
+      "translation": "نیم",
+      "syllables": ["halb"],
+      "distractors": ["holb", "hilb", "hulb"]
     },
     {
       "type": "grammar-tip",
@@ -159,7 +185,22 @@
             "fa": "خوب، تا اون موقع!"
           }
         }
-      ]
+      ],
+      "questions": [
+        {
+          "question": "الان ساعت چند است؟",
+          "options": ["Es ist zwei Uhr", "Es ist drei Uhr", "Es ist halb vier"],
+          "correctIndex": 1,
+          "explanation": "لیزا گفت: «Es ist drei Uhr.»"
+        },
+        {
+          "question": "کی همدیگر را ملاقات می‌کنند؟",
+          "options": ["Um drei Uhr", "Um halb vier", "Um vier Uhr"],
+          "correctIndex": 1,
+          "explanation": "لیزا پیشنهاد داد: «Um halb vier?»"
+        }
+      ],
+      "questionMode": "post-dialog"
     },
     {
       "type": "new-word",
@@ -176,6 +217,14 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-Viertel",
+      "word": "Viertel",
+      "translation": "ربع",
+      "syllables": ["Vier", "tel"],
+      "distractors": ["Viar", "tal", "Vior", "tol"]
+    },
+    {
       "type": "new-word",
       "id": "s7",
       "word": {
@@ -190,6 +239,14 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-nach",
+      "word": "nach",
+      "translation": "بعد از",
+      "syllables": ["nach"],
+      "distractors": ["noch", "nech", "nich"]
+    },
+    {
       "type": "new-word",
       "id": "s8",
       "word": {
@@ -202,6 +259,14 @@
           "fa": "ده دقیقه به چهار"
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-vor",
+      "word": "vor",
+      "translation": "قبل از",
+      "syllables": ["vor"],
+      "distractors": ["ver", "vir", "vur"]
     },
     {
       "type": "grammar-tip",
@@ -235,6 +300,10 @@
       ],
       "feedback": {
         "explanation": "Viertel **nach** drei = سه و ربع"
+      },
+      "feedbackTip": {
+        "category": "vocabulary",
+        "tip": "nach = بعد از. برای دقایق اول ساعت (۱ تا ۳۰) از nach استفاده کنید."
       }
     },
     {
@@ -253,6 +322,10 @@
       ],
       "feedback": {
         "explanation": "Viertel **vor** vier = ربع به چهار"
+      },
+      "feedbackTip": {
+        "category": "vocabulary",
+        "tip": "vor = قبل از. برای دقایق آخر ساعت (۳۱ تا ۵۹) از vor استفاده کنید."
       }
     },
     {
@@ -306,6 +379,14 @@
           "fa": "در چه ساعتی؟"
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-um",
+      "word": "um",
+      "translation": "در ساعت",
+      "syllables": ["um"],
+      "distractors": ["am", "im", "om"]
     },
     {
       "type": "grammar-tip",
@@ -364,7 +445,22 @@
             "fa": "زوده!"
           }
         }
-      ]
+      ],
+      "questions": [
+        {
+          "question": "الی ساعت چند بیدار می‌شود؟",
+          "options": ["Um sechs Uhr", "Um sieben Uhr", "Um halb acht"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: «Um sieben Uhr.»"
+        },
+        {
+          "question": "الی ساعت چند می‌رود سر کار؟",
+          "options": ["Um sieben Uhr", "Um halb acht", "Um acht Uhr"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: «Um halb acht.»"
+        }
+      ],
+      "questionMode": "post-dialog"
     },
     {
       "type": "new-word",
@@ -381,6 +477,14 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-frueh",
+      "word": "früh",
+      "translation": "زود",
+      "syllables": ["früh"],
+      "distractors": ["frah", "froh", "frih"]
+    },
+    {
       "type": "new-word",
       "id": "s16",
       "word": {
@@ -393,6 +497,14 @@
           "fa": "دیگه دیر شده."
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-spaet",
+      "word": "spät",
+      "translation": "دیر",
+      "syllables": ["spät"],
+      "distractors": ["spet", "spot", "spit"]
     },
     {
       "type": "grammar-tip",
@@ -471,6 +583,10 @@
       "feedback": {
         "correct": "آفرین! halb neun = 8:30 (نیم ساعت قبل از نه)",
         "incorrect": "halb به ساعت بعدی اشاره می‌کند: halb neun = 8:30"
+      },
+      "feedbackTip": {
+        "category": "vocabulary",
+        "tip": "halb همیشه به ساعت بعدی اشاره می‌کند! halb X = نیم ساعت قبل از X"
       }
     },
     {
@@ -510,6 +626,20 @@
           "correctSide": "left"
         }
       ]
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Wie spät ist es?",
+      "translation": "ساعت چنده؟",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Es ist halb vier.",
+      "translation": "ساعت سه و نیم است.",
+      "difficulty": "A1"
     },
     {
       "type": "vocab-check",

@@ -17,8 +17,20 @@
   "level": "A1",
   "module": 6,
   "lessonNumber": 4,
-  "totalSteps": 26,
-  "estimatedMinutes": 15,
+  "totalSteps": 42,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "der Morgen", "fa": "صبح", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Morgen" } } },
+    { "de": "der Abend", "fa": "عصر/شب", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Abende" } } },
+    { "de": "aufstehen", "fa": "بیدار شدن", "grammar": { "pos": "verb", "verb": { "infinitiv": "aufstehen", "praesens": { "ich": "stehe auf", "du": "stehst auf", "er_sie_es": "steht auf", "wir": "stehen auf", "ihr": "steht auf", "sie_Sie": "stehen auf" }, "separable": true, "prefix": "auf" } } },
+    { "de": "frühstücken", "fa": "صبحانه خوردن", "grammar": { "pos": "verb", "verb": { "infinitiv": "frühstücken", "praesens": { "ich": "frühstücke", "du": "frühstückst", "er_sie_es": "frühstückt", "wir": "frühstücken", "ihr": "frühstückt", "sie_Sie": "frühstücken" } } } },
+    { "de": "arbeiten", "fa": "کار کردن", "grammar": { "pos": "verb", "verb": { "infinitiv": "arbeiten", "praesens": { "ich": "arbeite", "du": "arbeitest", "er_sie_es": "arbeitet", "wir": "arbeiten", "ihr": "arbeitet", "sie_Sie": "arbeiten" } } } },
+    { "de": "schlafen", "fa": "خوابیدن", "grammar": { "pos": "verb", "verb": { "infinitiv": "schlafen", "praesens": { "ich": "schlafe", "du": "schläfst", "er_sie_es": "schläft", "wir": "schlafen", "ihr": "schlaft", "sie_Sie": "schlafen" } } } },
+    { "de": "duschen", "fa": "دوش گرفتن", "grammar": { "pos": "verb", "verb": { "infinitiv": "duschen", "praesens": { "ich": "dusche", "du": "duschst", "er_sie_es": "duscht", "wir": "duschen", "ihr": "duscht", "sie_Sie": "duschen" } } } },
+    { "de": "das Mittagessen", "fa": "ناهار", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Mittagessen" } } },
+    { "de": "das Abendessen", "fa": "شام", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Abendessen" } } },
+    { "de": "fernsehen", "fa": "تلویزیون دیدن", "grammar": { "pos": "verb", "verb": { "infinitiv": "fernsehen", "praesens": { "ich": "sehe fern", "du": "siehst fern", "er_sie_es": "sieht fern", "wir": "sehen fern", "ihr": "seht fern", "sie_Sie": "sehen fern" }, "separable": true, "prefix": "fern" } } }
+  ],
   "steps": [
     {
       "type": "grammar-tip",
@@ -51,6 +63,14 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-Morgen",
+      "word": "Morgen",
+      "translation": "صبح",
+      "syllables": ["Mor", "gen"],
+      "distractors": ["Mar", "gan", "Mur", "gon"]
+    },
+    {
       "type": "new-word",
       "id": "s3",
       "word": {
@@ -65,6 +85,14 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-Abend",
+      "word": "Abend",
+      "translation": "عصر/شب",
+      "syllables": ["A", "bend"],
+      "distractors": ["O", "band", "bund", "ond"]
+    },
+    {
       "type": "new-word",
       "id": "s4",
       "word": {
@@ -77,6 +105,14 @@
           "fa": "ساعت ۷ بیدار می‌شوم."
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-aufstehen",
+      "word": "aufstehen",
+      "translation": "بیدار شدن",
+      "syllables": ["auf", "ste", "hen"],
+      "distractors": ["of", "sta", "han", "ef"]
     },
     {
       "type": "grammar-tip",
@@ -147,6 +183,14 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-fruehstuecken",
+      "word": "frühstücken",
+      "translation": "صبحانه خوردن",
+      "syllables": ["früh", "stü", "cken"],
+      "distractors": ["frah", "sta", "kan", "stö"]
+    },
+    {
       "type": "new-word",
       "id": "s7",
       "word": {
@@ -161,6 +205,14 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-arbeiten",
+      "word": "arbeiten",
+      "translation": "کار کردن",
+      "syllables": ["ar", "bei", "ten"],
+      "distractors": ["er", "bai", "tan", "or"]
+    },
+    {
       "type": "new-word",
       "id": "s8",
       "word": {
@@ -173,6 +225,14 @@
           "fa": "ساعت ۲۳ می‌خوابم."
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-schlafen",
+      "word": "schlafen",
+      "translation": "خوابیدن",
+      "syllables": ["schla", "fen"],
+      "distractors": ["schlo", "fan", "schlu", "fon"]
     },
     {
       "type": "dialog",
@@ -215,6 +275,21 @@
             "fa": "دوش می‌گیرم و صبحانه می‌خورم."
           }
         }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        {
+          "question": "الی چه ساعتی بیدار می‌شود؟",
+          "options": ["Um 7 Uhr", "Um halb sieben", "Um 8 Uhr"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: Um halb sieben (شش و نیم)"
+        },
+        {
+          "question": "تام صبح چه کار می‌کند؟",
+          "options": ["فقط صبحانه می‌خورد", "دوش می‌گیرد و صبحانه می‌خورد", "فقط دوش می‌گیرد"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: Ich dusche und frühstücke (دوش می‌گیرم و صبحانه می‌خورم)"
+        }
       ]
     },
     {
@@ -232,6 +307,14 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-duschen",
+      "word": "duschen",
+      "translation": "دوش گرفتن",
+      "syllables": ["du", "schen"],
+      "distractors": ["da", "schan", "do", "schon"]
+    },
+    {
       "type": "fill-in-blank",
       "id": "s11",
       "instruction": "جمله را کامل کنید",
@@ -247,6 +330,10 @@
       ],
       "feedback": {
         "explanation": "Ich **stehe** um 7 Uhr **auf**. (aufstehen = بیدار شدن)"
+      },
+      "feedbackTip": {
+        "category": "wrong-conjugation",
+        "tip": "در فعل‌های جداشدنی، فعل اصلی صرف می‌شود و پیشوند به آخر جمله می‌رود: auf**stehen** → Ich **stehe** ... **auf**"
       }
     },
     {
@@ -265,6 +352,10 @@
       ],
       "feedback": {
         "explanation": "**Am** Morgen = صبح (am برای بخش‌های روز)"
+      },
+      "feedbackTip": {
+        "category": "vocabulary",
+        "tip": "حروف اضافه زمانی: **am** برای روزها و بخش‌های روز (am Montag, am Morgen)، **im** برای ماه‌ها و فصل‌ها (im Januar, im Winter)"
       }
     },
     {
@@ -282,6 +373,14 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-Mittagessen",
+      "word": "Mittagessen",
+      "translation": "ناهار",
+      "syllables": ["Mit", "tag", "es", "sen"],
+      "distractors": ["Mat", "tog", "as", "san"]
+    },
+    {
       "type": "new-word",
       "id": "s14",
       "word": {
@@ -294,6 +393,14 @@
           "fa": "ساعت ۱۹ شام می‌خورم."
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Abendessen",
+      "word": "Abendessen",
+      "translation": "شام",
+      "syllables": ["A", "bend", "es", "sen"],
+      "distractors": ["O", "band", "as", "san"]
     },
     {
       "type": "grammar-tip",
@@ -390,6 +497,21 @@
             "fa": "شب چیکار می‌کنی؟"
           }
         }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        {
+          "question": "الکس از چه ساعتی تا چه ساعتی کار می‌کند؟",
+          "options": ["از 9 تا 17", "از 8 تا 16", "از 7 تا 15"],
+          "correctIndex": 1,
+          "explanation": "الکس گفت: Von 8 bis 16 Uhr (از ۸ تا ۱۶)"
+        },
+        {
+          "question": "چرا الکس زود شروع می‌کند؟",
+          "options": ["ترافیک کم است", "زود تعطیل می‌شود", "نزدیک خانه است"],
+          "correctIndex": 1,
+          "explanation": "الکس گفت: Ich habe früh Feierabend (زود تعطیل می‌شم)"
+        }
       ]
     },
     {
@@ -405,6 +527,14 @@
           "fa": "شب‌ها تلویزیون می‌بینم."
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-fernsehen",
+      "word": "fernsehen",
+      "translation": "تلویزیون دیدن",
+      "syllables": ["fern", "se", "hen"],
+      "distractors": ["farn", "sa", "han", "si"]
     },
     {
       "type": "matching",
@@ -467,6 +597,10 @@
       "feedback": {
         "correct": "آفرین! Ich stehe auf. - پیشوند به آخر می‌رود!",
         "incorrect": "در فعل‌های جداشدنی، پیشوند به آخر جمله می‌رود: Ich stehe auf."
+      },
+      "feedbackTip": {
+        "category": "word-order",
+        "tip": "فعل‌های جداشدنی (trennbare Verben): پیشوند جدا می‌شود و به آخر جمله می‌رود. مثال: auf**stehen** → Ich **stehe** um 7 Uhr **auf**."
       }
     },
     {
@@ -506,6 +640,20 @@
           "correctSide": "left"
         }
       ]
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Ich stehe um sieben Uhr auf.",
+      "translation": "من ساعت هفت بیدار می‌شوم.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Am Morgen dusche ich.",
+      "translation": "صبح دوش می‌گیرم.",
+      "difficulty": "A1"
     },
     {
       "type": "vocab-check",

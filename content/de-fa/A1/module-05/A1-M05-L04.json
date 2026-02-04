@@ -17,8 +17,18 @@
   "level": "A1",
   "module": 5,
   "lessonNumber": 4,
-  "totalSteps": 26,
-  "estimatedMinutes": 15,
+  "totalSteps": 38,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "Warum", "fa": "چرا", "grammar": { "pos": "adverb" } },
+    { "de": "weil", "fa": "چون / به خاطر اینکه", "grammar": { "pos": "conjunction" } },
+    { "de": "Welcher", "fa": "کدام (مذکر)", "grammar": { "pos": "pronoun" } },
+    { "de": "Welche", "fa": "کدام (مونث/جمع)", "grammar": { "pos": "pronoun" } },
+    { "de": "Welches", "fa": "کدام (خنثی)", "grammar": { "pos": "pronoun" } },
+    { "de": "die Farbe", "fa": "رنگ", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Farben" } } },
+    { "de": "krank", "fa": "مریض", "grammar": { "pos": "adjective" } },
+    { "de": "praktisch", "fa": "کاربردی / عملی", "grammar": { "pos": "adjective" } }
+  ],
   "steps": [
     {
       "type": "grammar-tip",
@@ -51,6 +61,14 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-Warum",
+      "word": "Warum",
+      "translation": "چرا",
+      "syllables": ["Wa", "rum"],
+      "distractors": ["Wo", "ram", "We", "rim"]
+    },
+    {
       "type": "new-word",
       "id": "s3",
       "word": {
@@ -63,6 +81,14 @@
           "fa": "چون آلمانی یاد می‌گیرم."
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-weil",
+      "word": "weil",
+      "translation": "چون",
+      "syllables": ["weil"],
+      "distractors": ["wail", "wiel", "waal"]
     },
     {
       "type": "grammar-tip",
@@ -121,7 +147,22 @@
             "fa": "درسته!"
           }
         }
-      ]
+      ],
+      "questions": [
+        {
+          "question": "چرا الی آلمانی یاد می‌گیرد؟",
+          "options": ["Weil es praktisch ist", "Weil es schön ist", "Weil es einfach ist"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: «Weil ich es schön finde.»"
+        },
+        {
+          "question": "چرا الی فرانسوی یاد نمی‌گیرد؟",
+          "options": ["Weil es schwer ist", "Weil Deutsch praktischer ist", "Weil sie kein Interesse hat"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: «Weil Deutsch praktischer ist.»"
+        }
+      ],
+      "questionMode": "post-dialog"
     },
     {
       "type": "rapid-fire",
@@ -176,6 +217,14 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-Welcher",
+      "word": "Welcher",
+      "translation": "کدام (مذکر)",
+      "syllables": ["Wel", "cher"],
+      "distractors": ["Wal", "char", "Wol", "chor"]
+    },
+    {
       "type": "new-word",
       "id": "s7",
       "word": {
@@ -190,6 +239,14 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-Welche",
+      "word": "Welche",
+      "translation": "کدام (مونث)",
+      "syllables": ["Wel", "che"],
+      "distractors": ["Wal", "cha", "Wol", "cho"]
+    },
+    {
       "type": "new-word",
       "id": "s8",
       "word": {
@@ -202,6 +259,14 @@
           "fa": "کدام کتاب را می‌خوانی؟"
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Welches",
+      "word": "Welches",
+      "translation": "کدام (خنثی)",
+      "syllables": ["Wel", "ches"],
+      "distractors": ["Wal", "chas", "Wol", "chos"]
     },
     {
       "type": "grammar-tip",
@@ -235,6 +300,10 @@
       ],
       "feedback": {
         "explanation": "**Welches** Buch (das Buch = خنثی)"
+      },
+      "feedbackTip": {
+        "category": "wrong-article",
+        "tip": "das Buch خنثی است، پس Welches. (das → Welches)"
       }
     },
     {
@@ -253,6 +322,10 @@
       ],
       "feedback": {
         "explanation": "**Welche** Farbe (die Farbe = مونث)"
+      },
+      "feedbackTip": {
+        "category": "wrong-article",
+        "tip": "die Farbe مونث است، پس Welche. (die → Welche)"
       }
     },
     {
@@ -308,6 +381,14 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-Farbe",
+      "word": "Farbe",
+      "translation": "رنگ",
+      "syllables": ["Far", "be"],
+      "distractors": ["For", "ba", "Fir", "bo"]
+    },
+    {
       "type": "new-word",
       "id": "s13",
       "word": {
@@ -322,6 +403,14 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-krank",
+      "word": "krank",
+      "translation": "مریض",
+      "syllables": ["krank"],
+      "distractors": ["kronk", "krink", "krunk"]
+    },
+    {
       "type": "new-word",
       "id": "s14",
       "word": {
@@ -334,6 +423,14 @@
           "fa": "آلمانی کاربردی است."
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-praktisch",
+      "word": "praktisch",
+      "translation": "کاربردی",
+      "syllables": ["prak", "tisch"],
+      "distractors": ["prok", "tasch", "prik", "tosch"]
     },
     {
       "type": "dialog",
@@ -376,7 +473,22 @@
             "fa": "چون قرمز رنگ مورد علاقه‌ام است!"
           }
         }
-      ]
+      ],
+      "questions": [
+        {
+          "question": "الکس کدام تی‌شرت را دوست دارد؟",
+          "options": ["Das rote", "Das blaue", "Das grüne"],
+          "correctIndex": 1,
+          "explanation": "الکس گفت: «Das blaue.»"
+        },
+        {
+          "question": "چرا لیزا تی‌شرت قرمز را دوست دارد؟",
+          "options": ["Weil es billig ist", "Weil rot ihre Lieblingsfarbe ist", "Weil es schön ist"],
+          "correctIndex": 1,
+          "explanation": "لیزا گفت: «Weil rot meine Lieblingsfarbe ist!»"
+        }
+      ],
+      "questionMode": "post-dialog"
     },
     {
       "type": "matching",
@@ -439,6 +551,10 @@
       "feedback": {
         "correct": "آفرین! der → Welcher",
         "incorrect": "برای مذکر (der): Welcher"
+      },
+      "feedbackTip": {
+        "category": "wrong-article",
+        "tip": "قاعده: der → Welcher، die → Welche، das → Welches"
       }
     },
     {
@@ -511,7 +627,25 @@
       ],
       "feedback": {
         "explanation": "**weil** ich in Deutschland arbeiten möchte. (فعل به آخر می‌رود)"
+      },
+      "feedbackTip": {
+        "category": "word-order",
+        "tip": "بعد از weil فعل به آخر جمله می‌رود!"
       }
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Warum lernst du Deutsch?",
+      "translation": "چرا آلمانی یاد می‌گیری؟",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Weil ich es schön finde.",
+      "translation": "چون فکر می‌کنم زیباست.",
+      "difficulty": "A1"
     },
     {
       "type": "vocab-check",

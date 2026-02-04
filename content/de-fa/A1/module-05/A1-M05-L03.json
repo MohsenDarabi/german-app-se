@@ -17,8 +17,20 @@
   "level": "A1",
   "module": 5,
   "lessonNumber": 3,
-  "totalSteps": 26,
-  "estimatedMinutes": 15,
+  "totalSteps": 40,
+  "estimatedMinutes": 21,
+  "vocabulary": [
+    { "de": "Wann", "fa": "کی (زمان)", "grammar": { "pos": "adverb" } },
+    { "de": "Wie", "fa": "چطور", "grammar": { "pos": "adverb" } },
+    { "de": "Wie viel", "fa": "چقدر", "grammar": { "pos": "phrase" } },
+    { "de": "Wie lange", "fa": "چه مدت", "grammar": { "pos": "phrase" } },
+    { "de": "Wie oft", "fa": "چند وقت یکبار", "grammar": { "pos": "phrase" } },
+    { "de": "morgen", "fa": "فردا", "grammar": { "pos": "adverb" } },
+    { "de": "die Stunde", "fa": "ساعت (مدت)", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Stunden" } } },
+    { "de": "kosten", "fa": "قیمت داشتن", "grammar": { "pos": "verb", "verb": { "infinitiv": "kosten", "praesens": { "ich": "koste", "du": "kostest", "er_sie_es": "kostet", "wir": "kosten", "ihr": "kostet", "sie_Sie": "kosten" } } } },
+    { "de": "das Geld", "fa": "پول", "grammar": { "pos": "noun", "noun": { "artikel": "n" } } },
+    { "de": "der Euro", "fa": "یورو", "grammar": { "pos": "noun", "noun": { "artikel": "m" } } }
+  ],
   "steps": [
     {
       "type": "grammar-tip",
@@ -51,6 +63,14 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-Wann",
+      "word": "Wann",
+      "translation": "کی (زمان)",
+      "syllables": ["Wann"],
+      "distractors": ["Wenn", "Wonn", "Winn"]
+    },
+    {
       "type": "new-word",
       "id": "s3",
       "word": {
@@ -65,6 +85,14 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-Wie",
+      "word": "Wie",
+      "translation": "چطور",
+      "syllables": ["Wie"],
+      "distractors": ["Wia", "Wio", "Wiu"]
+    },
+    {
       "type": "new-word",
       "id": "s4",
       "word": {
@@ -77,6 +105,14 @@
           "fa": "این چقدر است؟"
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-viel",
+      "word": "viel",
+      "translation": "زیاد",
+      "syllables": ["viel"],
+      "distractors": ["vial", "viol", "veil"]
     },
     {
       "type": "dialog",
@@ -126,7 +162,22 @@
             "fa": "با اتوبوس."
           }
         }
-      ]
+      ],
+      "questions": [
+        {
+          "question": "الکس کی وقت دارد؟",
+          "options": ["Heute", "Morgen Nachmittag", "Abends"],
+          "correctIndex": 1,
+          "explanation": "الکس گفت: «Morgen Nachmittag.»"
+        },
+        {
+          "question": "چطور می‌روند؟",
+          "options": ["Mit dem Auto", "Mit dem Bus", "Zu Fuß"],
+          "correctIndex": 1,
+          "explanation": "الکس گفت: «Mit dem Bus.»"
+        }
+      ],
+      "questionMode": "post-dialog"
     },
     {
       "type": "rapid-fire",
@@ -181,6 +232,14 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-lange",
+      "word": "lange",
+      "translation": "طولانی",
+      "syllables": ["lan", "ge"],
+      "distractors": ["lon", "ga", "lin", "go"]
+    },
+    {
       "type": "new-word",
       "id": "s7",
       "word": {
@@ -193,6 +252,14 @@
           "fa": "چند وقت یکبار سینما می‌ری؟"
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-oft",
+      "word": "oft",
+      "translation": "اغلب",
+      "syllables": ["oft"],
+      "distractors": ["aft", "eft", "uft"]
     },
     {
       "type": "grammar-tip",
@@ -226,6 +293,10 @@
       ],
       "feedback": {
         "explanation": "**Wie spät** ist es? (ساعت چنده؟)"
+      },
+      "feedbackTip": {
+        "category": "vocabulary",
+        "tip": "Wie spät برای پرسیدن ساعت استفاده می‌شود."
       }
     },
     {
@@ -244,6 +315,10 @@
       ],
       "feedback": {
         "explanation": "**Wie alt** bist du? (چند سالته؟)"
+      },
+      "feedbackTip": {
+        "category": "vocabulary",
+        "tip": "Wie alt برای پرسیدن سن استفاده می‌شود، نه Wie viel!"
       }
     },
     {
@@ -261,6 +336,14 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-morgen",
+      "word": "morgen",
+      "translation": "فردا",
+      "syllables": ["mor", "gen"],
+      "distractors": ["mar", "gan", "mir", "gon"]
+    },
+    {
       "type": "new-word",
       "id": "s12",
       "word": {
@@ -275,6 +358,14 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-Stunde",
+      "word": "Stunde",
+      "translation": "ساعت",
+      "syllables": ["Stun", "de"],
+      "distractors": ["Stan", "da", "Ston", "di"]
+    },
+    {
       "type": "new-word",
       "id": "s13",
       "word": {
@@ -287,6 +378,14 @@
           "fa": "این چقدر است؟"
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-kosten",
+      "word": "kosten",
+      "translation": "قیمت داشتن",
+      "syllables": ["kos", "ten"],
+      "distractors": ["kas", "tan", "kis", "ton"]
     },
     {
       "type": "dialog",
@@ -336,7 +435,22 @@
             "fa": "تا ساعت هشت."
           }
         }
-      ]
+      ],
+      "questions": [
+        {
+          "question": "کتاب چند است؟",
+          "options": ["Fünf Euro", "Zehn Euro", "Zwanzig Euro"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: «Zehn Euro.»"
+        },
+        {
+          "question": "مغازه تا چه ساعتی باز است؟",
+          "options": ["Bis sieben Uhr", "Bis acht Uhr", "Bis neun Uhr"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: «Bis acht Uhr.»"
+        }
+      ],
+      "questionMode": "post-dialog"
     },
     {
       "type": "rapid-fire",
@@ -391,6 +505,14 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-Geld",
+      "word": "Geld",
+      "translation": "پول",
+      "syllables": ["Geld"],
+      "distractors": ["Gald", "Gild", "Gold"]
+    },
+    {
       "type": "new-word",
       "id": "s16",
       "word": {
@@ -403,6 +525,14 @@
           "fa": "این ده یورو است."
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Euro",
+      "word": "Euro",
+      "translation": "یورو",
+      "syllables": ["Eu", "ro"],
+      "distractors": ["Au", "ra", "Oi", "ri"]
     },
     {
       "type": "grammar-tip",
@@ -481,6 +611,10 @@
       "feedback": {
         "correct": "آفرین! Wie alt bist du? = چند سالته؟",
         "incorrect": "برای سن: Wie alt bist du? (چند سالته؟)"
+      },
+      "feedbackTip": {
+        "category": "vocabulary",
+        "tip": "Wie alt برای سن، نه Wie viel یا Wie lange!"
       }
     },
     {
@@ -520,6 +654,20 @@
           "correctSide": "left"
         }
       ]
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Wie viel kostet das?",
+      "translation": "این چقدر است؟",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Wann kommst du morgen?",
+      "translation": "فردا کی می‌آیی؟",
+      "difficulty": "A1"
     },
     {
       "type": "vocab-check",

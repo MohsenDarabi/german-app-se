@@ -17,8 +17,22 @@
   "level": "A1",
   "module": 5,
   "lessonNumber": 1,
-  "totalSteps": 26,
-  "estimatedMinutes": 15,
+  "totalSteps": 42,
+  "estimatedMinutes": 22,
+  "vocabulary": [
+    { "de": "Ja", "fa": "بله", "grammar": { "pos": "adverb" } },
+    { "de": "Nein", "fa": "نه", "grammar": { "pos": "adverb" } },
+    { "de": "verstehen", "fa": "فهمیدن", "grammar": { "pos": "verb", "verb": { "infinitiv": "verstehen", "praesens": { "ich": "verstehe", "du": "verstehst", "er_sie_es": "versteht", "wir": "verstehen", "ihr": "versteht", "sie_Sie": "verstehen" } } } },
+    { "de": "kennen", "fa": "شناختن", "grammar": { "pos": "verb", "verb": { "infinitiv": "kennen", "praesens": { "ich": "kenne", "du": "kennst", "er_sie_es": "kennt", "wir": "kennen", "ihr": "kennt", "sie_Sie": "kennen" } } } },
+    { "de": "mögen", "fa": "دوست داشتن", "grammar": { "pos": "verb", "verb": { "infinitiv": "mögen", "praesens": { "ich": "mag", "du": "magst", "er_sie_es": "mag", "wir": "mögen", "ihr": "mögt", "sie_Sie": "mögen" } } } },
+    { "de": "müde", "fa": "خسته", "grammar": { "pos": "adjective" } },
+    { "de": "fertig", "fa": "تمام / آماده", "grammar": { "pos": "adjective" } },
+    { "de": "die Zeit", "fa": "وقت / زمان", "grammar": { "pos": "noun", "noun": { "artikel": "f" } } },
+    { "de": "der Hunger", "fa": "گرسنگی", "grammar": { "pos": "noun", "noun": { "artikel": "m" } } },
+    { "de": "der Durst", "fa": "تشنگی", "grammar": { "pos": "noun", "noun": { "artikel": "m" } } },
+    { "de": "richtig", "fa": "درست", "grammar": { "pos": "adjective" } },
+    { "de": "gerne", "fa": "با کمال میل", "grammar": { "pos": "adverb" } }
+  ],
   "steps": [
     {
       "type": "grammar-tip",
@@ -51,6 +65,14 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-Ja",
+      "word": "Ja",
+      "translation": "بله",
+      "syllables": ["Ja"],
+      "distractors": ["Jo", "Je", "Ju"]
+    },
+    {
       "type": "new-word",
       "id": "s3",
       "word": {
@@ -63,6 +85,14 @@
           "fa": "نه، من از ایران نیستم."
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Nein",
+      "word": "Nein",
+      "translation": "نه",
+      "syllables": ["Nein"],
+      "distractors": ["Nain", "Noin", "Naun"]
     },
     {
       "type": "dialog",
@@ -105,7 +135,22 @@
             "fa": "بله، انگلیسی و فارسی صحبت می‌کنم."
           }
         }
-      ]
+      ],
+      "questions": [
+        {
+          "question": "تام اهل کجاست؟",
+          "options": ["Aus Iran", "Aus Berlin", "Aus England"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: «Ich komme aus Berlin.»"
+        },
+        {
+          "question": "تام انگلیسی صحبت می‌کند؟",
+          "options": ["Ja, fließend", "Ja, ein bisschen", "Nein"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: «Ja, ein bisschen.»"
+        }
+      ],
+      "questionMode": "post-dialog"
     },
     {
       "type": "rapid-fire",
@@ -160,6 +205,14 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-verstehen",
+      "word": "verstehen",
+      "translation": "فهمیدن",
+      "syllables": ["ver", "ste", "hen"],
+      "distractors": ["vor", "sta", "han", "sen"]
+    },
+    {
       "type": "new-word",
       "id": "s6",
       "word": {
@@ -174,6 +227,14 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-kennen",
+      "word": "kennen",
+      "translation": "شناختن",
+      "syllables": ["ken", "nen"],
+      "distractors": ["kan", "non", "kun", "nin"]
+    },
+    {
       "type": "new-word",
       "id": "s7",
       "word": {
@@ -186,6 +247,14 @@
           "fa": "قهوه دوست داری؟"
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-moegen",
+      "word": "mögen",
+      "translation": "دوست داشتن",
+      "syllables": ["mö", "gen"],
+      "distractors": ["ma", "gun", "mo", "gan"]
     },
     {
       "type": "grammar-tip",
@@ -219,6 +288,10 @@
       ],
       "feedback": {
         "explanation": "**Sprichst** du Deutsch? (فعل اول می‌آید)"
+      },
+      "feedbackTip": {
+        "category": "word-order",
+        "tip": "در سوال بله/خیر، فعل صرف‌شده اول جمله می‌آید، نه فاعل!"
       }
     },
     {
@@ -237,6 +310,10 @@
       ],
       "feedback": {
         "explanation": "**Kommt** er aus Berlin? (فعل با er: kommt)"
+      },
+      "feedbackTip": {
+        "category": "wrong-conjugation",
+        "tip": "فعل kommen با er/sie/es به kommt تبدیل می‌شود (نه kommst یا kommen)."
       }
     },
     {
@@ -254,6 +331,14 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-muede",
+      "word": "müde",
+      "translation": "خسته",
+      "syllables": ["mü", "de"],
+      "distractors": ["mo", "da", "mi", "du"]
+    },
+    {
       "type": "new-word",
       "id": "s12",
       "word": {
@@ -268,6 +353,14 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-fertig",
+      "word": "fertig",
+      "translation": "تمام / آماده",
+      "syllables": ["fer", "tig"],
+      "distractors": ["for", "tag", "fir", "teg"]
+    },
+    {
       "type": "new-word",
       "id": "s13",
       "word": {
@@ -280,6 +373,14 @@
           "fa": "وقت داری؟"
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Zeit",
+      "word": "Zeit",
+      "translation": "وقت / زمان",
+      "syllables": ["Zeit"],
+      "distractors": ["Zait", "Zoit", "Zeet"]
     },
     {
       "type": "rapid-fire",
@@ -360,7 +461,22 @@
             "fa": "بله، با کمال میل!"
           }
         }
-      ]
+      ],
+      "questions": [
+        {
+          "question": "الکس گرسنه است؟",
+          "options": ["Nein", "Ja, ein bisschen", "Ja, sehr"],
+          "correctIndex": 1,
+          "explanation": "الکس گفت: «Ja, ein bisschen.»"
+        },
+        {
+          "question": "لیزا چه می‌خواهد؟",
+          "options": ["Essen", "Einen Kaffee", "Wasser"],
+          "correctIndex": 1,
+          "explanation": "لیزا گفت: «Ja, gerne!» (به پیشنهاد قهوه)"
+        }
+      ],
+      "questionMode": "post-dialog"
     },
     {
       "type": "new-word",
@@ -377,6 +493,14 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-Hunger",
+      "word": "Hunger",
+      "translation": "گرسنگی",
+      "syllables": ["Hun", "ger"],
+      "distractors": ["Han", "gar", "Hin", "gur"]
+    },
+    {
       "type": "new-word",
       "id": "s16",
       "word": {
@@ -389,6 +513,14 @@
           "fa": "تشنه هستم."
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Durst",
+      "word": "Durst",
+      "translation": "تشنگی",
+      "syllables": ["Durst"],
+      "distractors": ["Darst", "Dorst", "Dirst"]
     },
     {
       "type": "grammar-tip",
@@ -467,6 +599,10 @@
       "feedback": {
         "correct": "آفرین! فعل اول، سپس فاعل: Sprichst du...?",
         "incorrect": "در سوال بله/خیر: فعل + فاعل + بقیه جمله"
+      },
+      "feedbackTip": {
+        "category": "word-order",
+        "tip": "در سوالات بله/خیر آلمانی، ترتیب همیشه: فعل صرف‌شده + فاعل + بقیه جمله"
       }
     },
     {
@@ -522,6 +658,14 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-richtig",
+      "word": "richtig",
+      "translation": "درست",
+      "syllables": ["rich", "tig"],
+      "distractors": ["rach", "tag", "roch", "teg"]
+    },
+    {
       "type": "new-word",
       "id": "s21",
       "word": {
@@ -534,6 +678,28 @@
           "fa": "بله، با کمال میل!"
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-gerne",
+      "word": "gerne",
+      "translation": "با کمال میل",
+      "syllables": ["ger", "ne"],
+      "distractors": ["gar", "na", "gir", "no"]
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Hast du Zeit?",
+      "translation": "وقت داری؟",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Ja, ich komme gerne.",
+      "translation": "بله، با کمال میل می‌آیم.",
+      "difficulty": "A1"
     },
     {
       "type": "vocab-check",

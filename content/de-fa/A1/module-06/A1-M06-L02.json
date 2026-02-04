@@ -17,8 +17,21 @@
   "level": "A1",
   "module": 6,
   "lessonNumber": 2,
-  "totalSteps": 26,
-  "estimatedMinutes": 15,
+  "totalSteps": 41,
+  "estimatedMinutes": 22,
+  "vocabulary": [
+    { "de": "der Montag", "fa": "دوشنبه", "grammar": { "pos": "noun", "noun": { "artikel": "m" } } },
+    { "de": "der Dienstag", "fa": "سه‌شنبه", "grammar": { "pos": "noun", "noun": { "artikel": "m" } } },
+    { "de": "der Mittwoch", "fa": "چهارشنبه", "grammar": { "pos": "noun", "noun": { "artikel": "m" } } },
+    { "de": "der Donnerstag", "fa": "پنج‌شنبه", "grammar": { "pos": "noun", "noun": { "artikel": "m" } } },
+    { "de": "der Freitag", "fa": "جمعه", "grammar": { "pos": "noun", "noun": { "artikel": "m" } } },
+    { "de": "der Samstag", "fa": "شنبه", "grammar": { "pos": "noun", "noun": { "artikel": "m" } } },
+    { "de": "der Sonntag", "fa": "یکشنبه", "grammar": { "pos": "noun", "noun": { "artikel": "m" } } },
+    { "de": "das Wochenende", "fa": "آخر هفته", "grammar": { "pos": "noun", "noun": { "artikel": "n" } } },
+    { "de": "heute", "fa": "امروز", "grammar": { "pos": "adverb" } },
+    { "de": "morgen", "fa": "فردا", "grammar": { "pos": "adverb" } },
+    { "de": "gestern", "fa": "دیروز", "grammar": { "pos": "adverb" } }
+  ],
   "steps": [
     {
       "type": "grammar-tip",
@@ -51,6 +64,14 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-Montag",
+      "word": "Montag",
+      "translation": "دوشنبه",
+      "syllables": ["Mon", "tag"],
+      "distractors": ["Man", "tog", "Mun", "teg"]
+    },
+    {
       "type": "new-word",
       "id": "s3",
       "word": {
@@ -63,6 +84,14 @@
           "fa": "سه‌شنبه آزاد هستم."
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Dienstag",
+      "word": "Dienstag",
+      "translation": "سه‌شنبه",
+      "syllables": ["Diens", "tag"],
+      "distractors": ["Dians", "tog", "Dions", "teg"]
     },
     {
       "type": "new-word",
@@ -79,6 +108,14 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-Mittwoch",
+      "word": "Mittwoch",
+      "translation": "چهارشنبه",
+      "syllables": ["Mitt", "woch"],
+      "distractors": ["Mett", "wach", "Mutt", "wich"]
+    },
+    {
       "type": "new-word",
       "id": "s5",
       "word": {
@@ -91,6 +128,14 @@
           "fa": "پنج‌شنبه شنا می‌روم."
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Donnerstag",
+      "word": "Donnerstag",
+      "translation": "پنج‌شنبه",
+      "syllables": ["Don", "ners", "tag"],
+      "distractors": ["Dan", "nars", "tog"]
     },
     {
       "type": "rapid-fire",
@@ -145,6 +190,14 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-Freitag",
+      "word": "Freitag",
+      "translation": "جمعه",
+      "syllables": ["Frei", "tag"],
+      "distractors": ["Frai", "tog", "Froi", "teg"]
+    },
+    {
       "type": "new-word",
       "id": "s7",
       "word": {
@@ -159,6 +212,14 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-Samstag",
+      "word": "Samstag",
+      "translation": "شنبه",
+      "syllables": ["Sams", "tag"],
+      "distractors": ["Sems", "tog", "Soms", "teg"]
+    },
+    {
       "type": "new-word",
       "id": "s8",
       "word": {
@@ -171,6 +232,14 @@
           "fa": "یکشنبه روز استراحت است."
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Sonntag",
+      "word": "Sonntag",
+      "translation": "یکشنبه",
+      "syllables": ["Sonn", "tag"],
+      "distractors": ["Sann", "tog", "Sunn", "teg"]
     },
     {
       "type": "dialog",
@@ -213,7 +282,22 @@
             "fa": "خوب! و شنبه؟"
           }
         }
-      ]
+      ],
+      "questions": [
+        {
+          "question": "امروز چه روزی است؟",
+          "options": ["Montag", "Mittwoch", "Freitag"],
+          "correctIndex": 1,
+          "explanation": "لیزا گفت: «Heute ist Mittwoch.»"
+        },
+        {
+          "question": "لیزا جمعه چه کار می‌کند؟",
+          "options": ["Sie arbeitet", "Sie geht ins Kino", "Sie bleibt zu Hause"],
+          "correctIndex": 1,
+          "explanation": "لیزا گفت: «Am Freitag gehe ich ins Kino.»"
+        }
+      ],
+      "questionMode": "post-dialog"
     },
     {
       "type": "grammar-tip",
@@ -246,6 +330,14 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-Wochenende",
+      "word": "Wochenende",
+      "translation": "آخر هفته",
+      "syllables": ["Wo", "chen", "en", "de"],
+      "distractors": ["Wa", "chan", "an", "da"]
+    },
+    {
       "type": "fill-in-blank",
       "id": "s12",
       "instruction": "جای خالی را پر کنید",
@@ -261,6 +353,10 @@
       ],
       "feedback": {
         "explanation": "**Am** Montag = دوشنبه (am برای روزها)"
+      },
+      "feedbackTip": {
+        "category": "vocabulary",
+        "tip": "am = an + dem. برای روزهای هفته از am استفاده کنید."
       }
     },
     {
@@ -279,6 +375,10 @@
       ],
       "feedback": {
         "explanation": "**Am** Wochenende = آخر هفته"
+      },
+      "feedbackTip": {
+        "category": "vocabulary",
+        "tip": "am برای Wochenende هم استفاده می‌شود (am Wochenende)."
       }
     },
     {
@@ -296,6 +396,14 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-heute",
+      "word": "heute",
+      "translation": "امروز",
+      "syllables": ["heu", "te"],
+      "distractors": ["hau", "ta", "hoi", "ti"]
+    },
+    {
       "type": "new-word",
       "id": "s15",
       "word": {
@@ -310,6 +418,14 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-morgen",
+      "word": "morgen",
+      "translation": "فردا",
+      "syllables": ["mor", "gen"],
+      "distractors": ["mar", "gan", "mir", "gon"]
+    },
+    {
       "type": "new-word",
       "id": "s16",
       "word": {
@@ -322,6 +438,14 @@
           "fa": "دیروز پنج‌شنبه بود."
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-gestern",
+      "word": "gestern",
+      "translation": "دیروز",
+      "syllables": ["ges", "tern"],
+      "distractors": ["gas", "tarn", "gis", "tirn"]
     },
     {
       "type": "rapid-fire",
@@ -402,7 +526,22 @@
             "fa": "عالی! ساعت چند؟"
           }
         }
-      ]
+      ],
+      "questions": [
+        {
+          "question": "الی فردا وقت دارد؟",
+          "options": ["Ja", "Nein", "Vielleicht"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: «Morgen? Nein, leider nicht.»"
+        },
+        {
+          "question": "کی قرار می‌گذارند؟",
+          "options": ["Morgen", "Übermorgen", "Nächste Woche"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: «Ja, übermorgen geht.»"
+        }
+      ],
+      "questionMode": "post-dialog"
     },
     {
       "type": "matching",
@@ -465,6 +604,10 @@
       "feedback": {
         "correct": "آفرین! Mittwoch = چهارشنبه (Mitte = میانه)",
         "incorrect": "Mittwoch از کلمه Mitte (میانه) آمده است."
+      },
+      "feedbackTip": {
+        "category": "vocabulary",
+        "tip": "Mitt = میانه، Woche = هفته. Mittwoch = میانه هفته = چهارشنبه!"
       }
     },
     {
@@ -520,6 +663,20 @@
           "correctSide": "left"
         }
       ]
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Heute ist Montag.",
+      "translation": "امروز دوشنبه است.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Am Wochenende habe ich frei.",
+      "translation": "آخر هفته آزاد هستم.",
+      "difficulty": "A1"
     },
     {
       "type": "vocab-check",
