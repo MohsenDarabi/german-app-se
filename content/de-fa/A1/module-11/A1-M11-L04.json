@@ -319,6 +319,22 @@
       ]
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-teuer",
+      "word": "teuer",
+      "translation": "گران",
+      "syllables": ["teu", "er"],
+      "distractors": ["tau", "ar", "toi", "ur"]
+    },
+    {
+      "type": "word-order",
+      "id": "w3",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["die", "probiere", "Hose", "Ich", "an."],
+      "correctOrder": [3, 1, 0, 2, 4],
+      "correctSentence": { "de": "Ich probiere die Hose an.", "fa": "شلوار را امتحان می‌کنم." }
+    },
+    {
       "type": "dictation",
       "id": "dictation-1",
       "targetText": "Kann ich das anprobieren?",
