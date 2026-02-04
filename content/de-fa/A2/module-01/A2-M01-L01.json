@@ -1,0 +1,421 @@
+{
+  "id": "A2-M01-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Perfekt mit haben", "fa": "زمان گذشته با haben" },
+  "description": "یاد بگیرید چطور درباره کارهایی که انجام دادید صحبت کنید",
+  "level": "A2",
+  "module": 1,
+  "lessonNumber": 1,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "gemacht", "fa": "انجام داده", "grammar": { "pos": "verb", "form": "past participle" } },
+    { "de": "gekauft", "fa": "خریده", "grammar": { "pos": "verb", "form": "past participle" } },
+    { "de": "gelernt", "fa": "یاد گرفته", "grammar": { "pos": "verb", "form": "past participle" } },
+    { "de": "gespielt", "fa": "بازی کرده", "grammar": { "pos": "verb", "form": "past participle" } },
+    { "de": "gekocht", "fa": "پخته", "grammar": { "pos": "verb", "form": "past participle" } },
+    { "de": "gearbeitet", "fa": "کار کرده", "grammar": { "pos": "verb", "form": "past participle" } },
+    { "de": "gestern", "fa": "دیروز", "grammar": { "pos": "adverb" } },
+    { "de": "letzte Woche", "fa": "هفته گذشته", "grammar": { "pos": "phrase" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "Perfekt - زمان گذشته",
+      "content": "🕐 **Perfekt** = زمان گذشته در آلمانی\n\nبرای صحبت درباره گذشته از **Perfekt** استفاده می‌کنیم:\n\n📝 **ساختار:**\n**haben** + **Partizip II** (اسم مفعول)\n\n• Ich **habe** Deutsch **gelernt**.\n  = آلمانی یاد گرفتم.\n\n• Er **hat** Fußball **gespielt**.\n  = فوتبال بازی کرد.\n\n⚠️ فعل کمکی (haben) صرف می‌شود، Partizip II در آخر می‌آید.",
+      "examples": [
+        { "de": "Ich habe gestern gearbeitet.", "fa": "دیروز کار کردم." },
+        { "de": "Was hast du gemacht?", "fa": "چه کار کردی؟" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "gemacht", "fa": "انجام داده (از machen)" },
+      "example": { "text": { "de": "Ich habe meine Hausaufgaben gemacht.", "fa": "تکالیفم را انجام دادم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-gemacht",
+      "word": "gemacht",
+      "translation": "انجام داده",
+      "syllables": ["ge", "macht"],
+      "distractors": ["ga", "mocht", "gi", "mucht"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "gekauft", "fa": "خریده (از kaufen)" },
+      "example": { "text": { "de": "Sie hat ein Buch gekauft.", "fa": "او یک کتاب خرید." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "gelernt", "fa": "یاد گرفته (از lernen)" },
+      "example": { "text": { "de": "Wir haben Deutsch gelernt.", "fa": "آلمانی یاد گرفتیم." } }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«Ich habe Deutsch gelernt» یعنی چه؟",
+      "options": ["آلمانی یاد می‌گیرم", "آلمانی یاد گرفتم", "آلمانی یاد خواهم گرفت", "آلمانی یاد بگیر"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "habe...gelernt = یاد گرفتم (گذشته)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich {0} gestern viel gearbeitet.",
+      "options": ["habe", "hat", "haben", "habt"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "ich habe (اول شخص مفرد)" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "ساختن Partizip II",
+      "content": "📝 **فعل‌های باقاعده:** ge- + ریشه + -t\n\n| فعل | Partizip II |\n|-----|-------------|\n| machen | **ge**mach**t** |\n| kaufen | **ge**kauf**t** |\n| lernen | **ge**lern**t** |\n| spielen | **ge**spiel**t** |\n| kochen | **ge**koch**t** |\n\n⚠️ فعل‌هایی که با -ieren تمام می‌شوند، ge- نمی‌گیرند:\n• telefonieren → telefon**iert**\n• studieren → stud**iert**",
+      "examples": [
+        { "de": "Ich habe telefoniert.", "fa": "تلفن زدم." },
+        { "de": "Er hat in Berlin studiert.", "fa": "در برلین تحصیل کرد." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "gespielt", "fa": "بازی کرده (از spielen)" },
+      "example": { "text": { "de": "Die Kinder haben im Park gespielt.", "fa": "بچه‌ها در پارک بازی کردند." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "gekocht", "fa": "پخته (از kochen)" },
+      "example": { "text": { "de": "Meine Mutter hat Reis gekocht.", "fa": "مادرم برنج پخت." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-gekauft",
+      "word": "gekauft",
+      "translation": "خریده",
+      "syllables": ["ge", "kauft"],
+      "distractors": ["ga", "kouft", "gi", "keuft"]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "Partizip II",
+      "instruction": "Partizip II درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "machen →", "left": "gemacht", "right": "gemachen", "correctSide": "left" },
+        { "prompt": "kaufen →", "left": "gekaufen", "right": "gekauft", "correctSide": "right" },
+        { "prompt": "lernen →", "left": "gelernt", "right": "gelarnt", "correctSide": "left" },
+        { "prompt": "spielen →", "left": "gespielen", "right": "gespielt", "correctSide": "right" },
+        { "prompt": "kochen →", "left": "gekocht", "right": "gekochen", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "gearbeitet", "fa": "کار کرده (از arbeiten)" },
+      "example": { "text": { "de": "Er hat den ganzen Tag gearbeitet.", "fa": "تمام روز کار کرد." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "gestern", "fa": "دیروز" },
+      "example": { "text": { "de": "Gestern habe ich Pizza gegessen.", "fa": "دیروز پیتزا خوردم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": { "de": "letzte Woche", "fa": "هفته گذشته" },
+      "example": { "text": { "de": "Letzte Woche habe ich viel gelernt.", "fa": "هفته گذشته زیاد یاد گرفتم." } }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "چه کار کردی؟",
+      "context": "تام از الی درباره دیروز می‌پرسد",
+      "lines": [
+        { "speaker": "Tom", "text": { "de": "Hey Eli! Was hast du gestern gemacht?", "fa": "سلام الی! دیروز چه کار کردی؟" } },
+        { "speaker": "Eli", "text": { "de": "Ich habe Deutsch gelernt und dann gekocht.", "fa": "آلمانی یاد گرفتم و بعد آشپزی کردم." } },
+        { "speaker": "Tom", "text": { "de": "Cool! Was hast du gekocht?", "fa": "عالی! چه پختی؟" } },
+        { "speaker": "Eli", "text": { "de": "Ich habe Pasta gemacht. Und du?", "fa": "پاستا درست کردم. تو چی؟" } },
+        { "speaker": "Tom", "text": { "de": "Ich habe Fußball gespielt.", "fa": "فوتبال بازی کردم." } },
+        { "speaker": "Eli", "text": { "de": "Schön! Hast du gewonnen?", "fa": "چه خوب! بردی؟" } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "الی دیروز چه کار کرد؟", "options": ["فوتبال بازی کرد", "آلمانی یاد گرفت", "خرید کرد"], "correctIndex": 1 },
+        { "question": "تام دیروز چه کار کرد؟", "options": ["آشپزی کرد", "فوتبال بازی کرد", "کار کرد"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er {0} gestern viel {1}.",
+      "options": ["hat", "gelernt"],
+      "correctAnswers": [0, 1],
+      "feedback": { "explanation": "Er hat...gelernt = او یاد گرفت" }
+    },
+    {
+      "type": "word-order",
+      "id": "w1",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["gelernt.", "habe", "Deutsch", "Ich"],
+      "correctOrder": [3, 1, 2, 0],
+      "correctSentence": { "de": "Ich habe Deutsch gelernt.", "fa": "آلمانی یاد گرفتم." }
+    },
+    {
+      "type": "word-order",
+      "id": "w2",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["gemacht?", "du", "hast", "Was"],
+      "correctOrder": [3, 2, 1, 0],
+      "correctSentence": { "de": "Was hast du gemacht?", "fa": "چه کار کردی؟" }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "فعل‌ها را با Partizip II جفت کنید",
+      "items": [
+        { "id": "i1", "text": "machen" },
+        { "id": "i2", "text": "kaufen" },
+        { "id": "i3", "text": "lernen" },
+        { "id": "i4", "text": "spielen" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "gelernt" },
+        { "id": "m2", "text": "gemacht" },
+        { "id": "m3", "text": "gespielt" },
+        { "id": "m4", "text": "gekauft" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m4"],
+        ["i3", "m1"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-gelernt",
+      "word": "gelernt",
+      "translation": "یاد گرفته",
+      "syllables": ["ge", "lernt"],
+      "distractors": ["ga", "larnt", "gi", "lurnt"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام Partizip II درست است برای «kochen»؟",
+      "options": ["gekochen", "gekocht", "kochte", "kochen"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "ge- + koch + -t = gekocht" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Wir {0} letzte Woche viel gearbeitet.",
+      "options": ["haben", "hat", "habe", "habt"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "wir haben (اول شخص جمع)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "آخر هفته",
+      "context": "همکاران درباره آخر هفته صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Was habt ihr am Wochenende gemacht?", "fa": "آخر هفته چه کار کردید؟" } },
+        { "speaker": "Max", "text": { "de": "Ich habe ein neues Buch gekauft und viel gelesen.", "fa": "یک کتاب جدید خریدم و زیاد خواندم." } },
+        { "speaker": "Lisa", "text": { "de": "Ich habe für die Prüfung gelernt.", "fa": "برای امتحان درس خواندم." } },
+        { "speaker": "Anna", "text": { "de": "Oh, das ist viel Arbeit! Und du, Tom?", "fa": "اوه، کار زیادی است! و تو، تام؟" } },
+        { "speaker": "Tom", "text": { "de": "Ich habe Tennis gespielt und danach gekocht.", "fa": "تنیس بازی کردم و بعدش آشپزی کردم." } },
+        { "speaker": "Anna", "text": { "de": "Super! Ich habe nur gearbeitet.", "fa": "عالی! من فقط کار کردم." } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "ماکس آخر هفته چه کار کرد؟", "options": ["تنیس بازی کرد", "کتاب خرید", "کار کرد"], "correctIndex": 1 },
+        { "question": "لیزا چه کار کرد؟", "options": ["آشپزی کرد", "درس خواند", "کتاب خرید"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "صرف haben در Perfekt",
+      "instruction": "صرف درست haben را انتخاب کنید",
+      "questions": [
+        { "prompt": "ich ...", "left": "habe", "right": "hat", "correctSide": "left" },
+        { "prompt": "du ...", "left": "hast", "right": "hat", "correctSide": "left" },
+        { "prompt": "er/sie ...", "left": "habe", "right": "hat", "correctSide": "right" },
+        { "prompt": "wir ...", "left": "haben", "right": "habt", "correctSide": "left" },
+        { "prompt": "ihr ...", "left": "haben", "right": "habt", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sie {0} ein Auto gekauft.",
+      "options": ["hat", "haben", "habe", "hast"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "sie (او - مؤنث) hat" }
+    },
+    {
+      "type": "word-order",
+      "id": "w3",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["gekocht.", "Mutter", "hat", "Meine"],
+      "correctOrder": [3, 1, 2, 0],
+      "correctSentence": { "de": "Meine Mutter hat gekocht.", "fa": "مادرم آشپزی کرد." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "«Gestern habe ich viel gearbeitet» یعنی چه؟",
+      "options": ["امروز زیاد کار می‌کنم", "دیروز زیاد کار کردم", "فردا زیاد کار می‌کنم", "همیشه زیاد کار می‌کنم"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "gestern = دیروز, habe gearbeitet = کار کردم" }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-gespielt",
+      "word": "gespielt",
+      "translation": "بازی کرده",
+      "syllables": ["ge", "spielt"],
+      "distractors": ["ga", "spalt", "gi", "spult"]
+    },
+    {
+      "type": "matching",
+      "id": "m2",
+      "instruction": "جملات را با ترجمه جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Ich habe gelernt." },
+        { "id": "i2", "text": "Er hat gekocht." },
+        { "id": "i3", "text": "Wir haben gespielt." },
+        { "id": "i4", "text": "Sie hat gekauft." }
+      ],
+      "matches": [
+        { "id": "m1", "text": "او آشپزی کرد." },
+        { "id": "m2", "text": "یاد گرفتم." },
+        { "id": "m3", "text": "او خرید." },
+        { "id": "m4", "text": "بازی کردیم." }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m1"],
+        ["i3", "m4"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Kinder {0} im Garten gespielt.",
+      "options": ["haben", "hat", "habe", "habt"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "die Kinder = بچه‌ها (جمع) → haben" }
+    },
+    {
+      "type": "word-order",
+      "id": "w4",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["gearbeitet.", "viel", "Woche", "Letzte", "habe", "ich"],
+      "correctOrder": [3, 2, 4, 5, 1, 0],
+      "correctSentence": { "de": "Letzte Woche habe ich viel gearbeitet.", "fa": "هفته گذشته زیاد کار کردم." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "کدام جمله درست است؟",
+      "options": ["Ich habe gelernt Deutsch.", "Ich Deutsch habe gelernt.", "Ich habe Deutsch gelernt.", "Ich gelernt habe Deutsch."],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین!", "incorrect": "Partizip II در آخر جمله می‌آید." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Habt ihr gestern Fußball {0}?",
+      "options": ["gespielt", "spielen", "spielt", "spielte"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Partizip II از spielen = gespielt" }
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Ich habe Deutsch gelernt.",
+      "translation": "آلمانی یاد گرفتم.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Was hast du gestern gemacht?",
+      "translation": "دیروز چه کار کردی؟",
+      "difficulty": "A2"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-3",
+      "targetText": "Wir haben Pizza gekocht.",
+      "translation": "پیتزا درست کردیم.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "memory-match",
+      "id": "g3",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "gemacht", "fa": "انجام داده" },
+        { "de": "gekauft", "fa": "خریده" },
+        { "de": "gelernt", "fa": "یاد گرفته" },
+        { "de": "gespielt", "fa": "بازی کرده" },
+        { "de": "gekocht", "fa": "پخته" },
+        { "de": "gearbeitet", "fa": "کار کرده" }
+      ],
+      "timeLimit": 60
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "gemacht", "fa": "انجام داده" },
+        { "de": "gekauft", "fa": "خریده" },
+        { "de": "gelernt", "fa": "یاد گرفته" },
+        { "de": "gespielt", "fa": "بازی کرده" },
+        { "de": "gekocht", "fa": "پخته" },
+        { "de": "gearbeitet", "fa": "کار کرده" },
+        { "de": "gestern", "fa": "دیروز" },
+        { "de": "letzte Woche", "fa": "هفته گذشته" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما زمان Perfekt با haben را یاد گرفتید!\n\n📝 **ساختار Perfekt:**\n**haben** + **Partizip II**\n\n📝 **ساختن Partizip II (فعل‌های باقاعده):**\n**ge-** + ریشه + **-t**\n\n| فعل | Partizip II |\n|-----|-------------|\n| machen | gemacht |\n| kaufen | gekauft |\n| lernen | gelernt |\n| spielen | gespielt |\n\n⏰ **کلمات زمان:**\n• gestern = دیروز\n• letzte Woche = هفته گذشته",
+      "xpEarned": 50,
+      "vocabularyLearned": [
+        { "word": { "de": "gemacht", "fa": "انجام داده" } },
+        { "word": { "de": "gekauft", "fa": "خریده" } },
+        { "word": { "de": "gelernt", "fa": "یاد گرفته" } },
+        { "word": { "de": "gespielt", "fa": "بازی کرده" } },
+        { "word": { "de": "gekocht", "fa": "پخته" } },
+        { "word": { "de": "gearbeitet", "fa": "کار کرده" } },
+        { "word": { "de": "gestern", "fa": "دیروز" } },
+        { "word": { "de": "letzte Woche", "fa": "هفته گذشته" } }
+      ]
+    }
+  ]
+}

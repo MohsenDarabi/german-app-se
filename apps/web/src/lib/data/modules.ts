@@ -474,7 +474,21 @@ const DE_FA_A1_MODULES: ModuleStub[] = [
   }
 ];
 
-const DE_FA_A2_MODULES: ModuleStub[] = [];
+const DE_FA_A2_MODULES: ModuleStub[] = [
+  {
+    id: "module-01",
+    title: "بخش ۱: زمان گذشته (Perfekt)",
+    level: "A2",
+    lessons: [
+      {
+        id: "A2-M01-L01",
+        title: "Perfekt با haben",
+        description: "یاد بگیرید چطور درباره کارهایی که انجام دادید صحبت کنید.",
+        path: "/learn/de-fa/A2/A2-M01-L01"
+      }
+    ]
+  }
+];
 
 // English (en-fa) modules
 const EN_FA_A1_MODULES: ModuleStub[] = [
