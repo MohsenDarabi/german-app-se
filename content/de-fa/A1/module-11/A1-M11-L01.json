@@ -1,0 +1,338 @@
+{
+  "id": "A1-M11-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Kleidung", "fa": "لباس" },
+  "description": "یاد بگیرید نام لباس‌ها را به آلمانی بگویید",
+  "level": "A1",
+  "module": 11,
+  "lessonNumber": 1,
+  "totalSteps": 38,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "die Kleidung", "fa": "لباس", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Kleidungen" } } },
+    { "de": "das Hemd", "fa": "پیراهن (مردانه)", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "Hemden" } } },
+    { "de": "die Hose", "fa": "شلوار", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Hosen" } } },
+    { "de": "das T-Shirt", "fa": "تی‌شرت", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "T-Shirts" } } },
+    { "de": "der Rock", "fa": "دامن", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "Röcke" } } },
+    { "de": "das Kleid", "fa": "پیراهن (زنانه)", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "Kleider" } } },
+    { "de": "die Jacke", "fa": "کاپشن/ژاکت", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Jacken" } } },
+    { "de": "der Mantel", "fa": "پالتو", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "Mäntel" } } },
+    { "de": "die Schuhe", "fa": "کفش‌ها" },
+    { "de": "tragen", "fa": "پوشیدن", "grammar": { "pos": "verb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "لباس (Kleidung)",
+      "content": "در این درس یاد می‌گیرید:\n\n👔 **لباس‌های بالاتنه:**\n• das Hemd = پیراهن (مردانه)\n• das T-Shirt = تی‌شرت\n• die Jacke = ژاکت/کاپشن\n\n👖 **لباس‌های پایین‌تنه:**\n• die Hose = شلوار\n• der Rock = دامن\n• das Kleid = پیراهن (زنانه)\n\n💡 **نکته:** هر لباس جنسیت دستوری خاص خود را دارد!",
+      "examples": [
+        { "de": "Ich trage ein Hemd.", "fa": "من پیراهن می‌پوشم." },
+        { "de": "Sie trägt ein Kleid.", "fa": "او پیراهن (زنانه) می‌پوشد." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "die Kleidung", "fa": "لباس" },
+      "example": { "text": { "de": "Ich kaufe neue Kleidung.", "fa": "لباس جدید می‌خرم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-kleidung",
+      "word": "Kleidung",
+      "translation": "لباس",
+      "syllables": ["Klei", "dung"],
+      "distractors": ["Klai", "dong", "Kloi", "dang"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "das Hemd", "fa": "پیراهن (مردانه)" },
+      "example": { "text": { "de": "Das Hemd ist weiß.", "fa": "پیراهن سفید است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-hemd",
+      "word": "Hemd",
+      "translation": "پیراهن",
+      "syllables": ["Hemd"],
+      "distractors": ["Hamd", "Himd", "Homd", "Humd"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "die Hose", "fa": "شلوار" },
+      "example": { "text": { "de": "Die Hose ist blau.", "fa": "شلوار آبی است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-hose",
+      "word": "Hose",
+      "translation": "شلوار",
+      "syllables": ["Ho", "se"],
+      "distractors": ["Ha", "sa", "Hu", "si"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«die Hose» چه جنسیتی دارد؟",
+      "options": ["مذکر (der)", "مونث (die)", "خنثی (das)", "جمع"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "die Hose مونث است." }
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "das T-Shirt", "fa": "تی‌شرت" },
+      "example": { "text": { "de": "Ich trage ein T-Shirt.", "fa": "تی‌شرت می‌پوشم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "der Rock", "fa": "دامن" },
+      "example": { "text": { "de": "Der Rock ist kurz.", "fa": "دامن کوتاه است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-rock",
+      "word": "Rock",
+      "translation": "دامن",
+      "syllables": ["Rock"],
+      "distractors": ["Rack", "Rick", "Ruck", "Reck"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "das Kleid", "fa": "پیراهن (زنانه)" },
+      "example": { "text": { "de": "Das Kleid ist sehr schön.", "fa": "پیراهن خیلی زیباست." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s8",
+      "title": "Hemd و Kleid",
+      "content": "👔👗 **تفاوت مهم:**\n\n• **das Hemd** = پیراهن مردانه (با دکمه)\n• **das Kleid** = پیراهن زنانه (یکپارچه)\n\nهر دو خنثی هستند (das)، ولی معنی متفاوت دارند!",
+      "examples": [
+        { "de": "Er trägt ein weißes Hemd.", "fa": "او پیراهن سفید می‌پوشد (مرد)." },
+        { "de": "Sie trägt ein rotes Kleid.", "fa": "او پیراهن قرمز می‌پوشد (زن)." }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "لباس‌های پایه",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "das Hemd", "left": "پیراهن مردانه", "right": "شلوار", "correctSide": "left" },
+        { "prompt": "die Hose", "left": "پیراهن", "right": "شلوار", "correctSide": "right" },
+        { "prompt": "der Rock", "left": "دامن", "right": "کفش", "correctSide": "left" },
+        { "prompt": "das Kleid", "left": "کاپشن", "right": "پیراهن زنانه", "correctSide": "right" },
+        { "prompt": "das T-Shirt", "left": "تی‌شرت", "right": "پالتو", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "die Jacke", "fa": "کاپشن/ژاکت" },
+      "example": { "text": { "de": "Zieh deine Jacke an!", "fa": "ژاکتت را بپوش!" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-jacke",
+      "word": "Jacke",
+      "translation": "کاپشن",
+      "syllables": ["Ja", "cke"],
+      "distractors": ["Jo", "ckö", "Ju", "cka"]
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": { "de": "der Mantel", "fa": "پالتو" },
+      "example": { "text": { "de": "Im Winter trage ich einen Mantel.", "fa": "در زمستان پالتو می‌پوشم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-mantel",
+      "word": "Mantel",
+      "translation": "پالتو",
+      "syllables": ["Man", "tel"],
+      "distractors": ["Mon", "tal", "Min", "tol"]
+    },
+    {
+      "type": "new-word",
+      "id": "s11",
+      "word": { "de": "die Schuhe", "fa": "کفش‌ها" },
+      "example": { "text": { "de": "Die Schuhe sind neu.", "fa": "کفش‌ها جدید هستند." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s12",
+      "title": "Schuhe همیشه جمع",
+      "content": "👟 **die Schuhe** معمولاً جمع استفاده می‌شود:\n\n• die Schuhe = کفش‌ها\n• der Schuh = یک لنگه کفش (به ندرت)\n\n📝 **مثال:**\nIch kaufe neue Schuhe. = کفش جدید می‌خرم.\n(نه: Ich kaufe einen neuen Schuh.)",
+      "examples": [
+        { "de": "Meine Schuhe sind schwarz.", "fa": "کفش‌هایم سیاه هستند." },
+        { "de": "Wo sind meine Schuhe?", "fa": "کفش‌هایم کجاست؟" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s13",
+      "word": { "de": "tragen", "fa": "پوشیدن" },
+      "example": { "text": { "de": "Was trägst du heute?", "fa": "امروز چه می‌پوشی؟" } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s14",
+      "title": "صرف فعل tragen",
+      "content": "👕 **tragen** فعل نامنظم است:\n\nich trage\ndu **trägst**\ner/sie/es **trägt**\nwir tragen\nihr tragt\nsie/Sie tragen\n\n⚠️ دقت کنید: a → ä در du و er/sie/es",
+      "examples": [
+        { "de": "Ich trage eine Jeans.", "fa": "من جین می‌پوشم." },
+        { "de": "Er trägt einen Anzug.", "fa": "او کت و شلوار می‌پوشد." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sie {0} ein schönes Kleid.",
+      "options": ["trage", "trägst", "trägt", "tragen"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "با sie (او) از trägt استفاده می‌کنیم (a → ä)." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich trage {0} Hemd.",
+      "options": ["ein", "eine", "einen", "der"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "das Hemd خنثی است، پس ein (بدون تغییر در Akkusativ)." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "امروز چه می‌پوشی؟",
+      "context": "الی و تام درباره لباس صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Eli", "text": { "de": "Was trägst du heute zur Arbeit?", "fa": "امروز برای کار چه می‌پوشی؟" } },
+        { "speaker": "Tom", "text": { "de": "Ich trage ein Hemd und eine Hose. Und du?", "fa": "پیراهن و شلوار می‌پوشم. تو چی؟" } },
+        { "speaker": "Eli", "text": { "de": "Ich trage ein Kleid und eine Jacke.", "fa": "پیراهن و ژاکت می‌پوشم." } },
+        { "speaker": "Tom", "text": { "de": "Welche Schuhe trägst du?", "fa": "چه کفشی می‌پوشی؟" } },
+        { "speaker": "Eli", "text": { "de": "Meine schwarzen Schuhe. Sie sind sehr bequem.", "fa": "کفش‌های سیاهم. خیلی راحت هستند." } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "تام چه می‌پوشد؟", "options": ["پیراهن و شلوار", "تی‌شرت و جین", "کت و شلوار"], "correctIndex": 0 },
+        { "question": "کفش‌های الی چه رنگی است؟", "options": ["قهوه‌ای", "سیاه", "سفید"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "w1",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["Hemd.", "ein", "Ich", "trage"],
+      "correctOrder": [2, 3, 1, 0],
+      "correctSentence": { "de": "Ich trage ein Hemd.", "fa": "من پیراهن می‌پوشم." }
+    },
+    {
+      "type": "word-order",
+      "id": "w2",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["schön.", "Kleid", "Das", "ist"],
+      "correctOrder": [2, 1, 3, 0],
+      "correctSentence": { "de": "Das Kleid ist schön.", "fa": "پیراهن زیباست." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "لباس‌ها را با ترجمه‌شان جفت کنید",
+      "items": [
+        { "id": "i1", "text": "das Hemd" },
+        { "id": "i2", "text": "die Hose" },
+        { "id": "i3", "text": "der Rock" },
+        { "id": "i4", "text": "die Jacke" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "پیراهن مردانه" },
+        { "id": "m2", "text": "شلوار" },
+        { "id": "m3", "text": "دامن" },
+        { "id": "m4", "text": "ژاکت/کاپشن" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"],
+        ["i4", "m4"]
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله درست است؟",
+      "options": ["Er tragt ein Hemd.", "Er trägt ein Hemd.", "Er trage ein Hemd.", "Er tragst ein Hemd."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "tragen نامنظم است: er trägt (a → ä)" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "«Ich trage eine Hose» یعنی چه؟",
+      "options": ["شلوار می‌خرم", "شلوار می‌پوشم", "شلوار دارم", "شلوار می‌خواهم"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "tragen = پوشیدن" }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "لباس‌های بیشتر",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "die Jacke", "left": "ژاکت/کاپشن", "right": "پالتو", "correctSide": "left" },
+        { "prompt": "der Mantel", "left": "ژاکت", "right": "پالتو", "correctSide": "right" },
+        { "prompt": "die Schuhe", "left": "کفش‌ها", "right": "جوراب‌ها", "correctSide": "left" },
+        { "prompt": "tragen", "left": "خریدن", "right": "پوشیدن", "correctSide": "right" },
+        { "prompt": "die Kleidung", "left": "لباس", "right": "کیف", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "vocab-check",
+      "id": "g3",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "die Kleidung", "fa": "لباس" },
+        { "de": "das Hemd", "fa": "پیراهن مردانه" },
+        { "de": "die Hose", "fa": "شلوار" },
+        { "de": "das T-Shirt", "fa": "تی‌شرت" },
+        { "de": "der Rock", "fa": "دامن" },
+        { "de": "das Kleid", "fa": "پیراهن زنانه" },
+        { "de": "die Jacke", "fa": "ژاکت/کاپشن" },
+        { "de": "der Mantel", "fa": "پالتو" },
+        { "de": "die Schuhe", "fa": "کفش‌ها" },
+        { "de": "tragen", "fa": "پوشیدن" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما یاد گرفتید نام لباس‌ها را به آلمانی بگویید!\n\n👔 **لباس‌ها و جنسیت:**\n• das Hemd, das T-Shirt, das Kleid (خنثی)\n• die Hose, die Jacke (مونث)\n• der Rock, der Mantel (مذکر)\n\n👕 **فعل tragen:**\nich trage, du trägst, er/sie trägt\n(a → ä در du و er/sie/es)",
+      "xpEarned": 50,
+      "nextLessonId": "A1-M11-L02",
+      "vocabularyLearned": [
+        { "word": { "de": "die Kleidung", "fa": "لباس" } },
+        { "word": { "de": "das Hemd", "fa": "پیراهن (مردانه)" } },
+        { "word": { "de": "die Hose", "fa": "شلوار" } },
+        { "word": { "de": "das T-Shirt", "fa": "تی‌شرت" } },
+        { "word": { "de": "der Rock", "fa": "دامن" } },
+        { "word": { "de": "das Kleid", "fa": "پیراهن (زنانه)" } },
+        { "word": { "de": "die Jacke", "fa": "کاپشن/ژاکت" } },
+        { "word": { "de": "der Mantel", "fa": "پالتو" } },
+        { "word": { "de": "die Schuhe", "fa": "کفش‌ها" } },
+        { "word": { "de": "tragen", "fa": "پوشیدن" } }
+      ]
+    }
+  ]
+}

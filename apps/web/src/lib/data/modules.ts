@@ -365,6 +365,19 @@ const DE_FA_A1_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/A1/A1-M10-L04"
       }
     ]
+  },
+  {
+    id: "module-11",
+    title: "بخش ۱۱: لباس و رنگ‌ها (Kleidung und Farben)",
+    level: "A1",
+    lessons: [
+      {
+        id: "A1-M11-L01",
+        title: "لباس (Kleidung)",
+        description: "یاد بگیرید نام لباس‌ها را به آلمانی بگویید.",
+        path: "/learn/de-fa/A1/A1-M11-L01"
+      }
+    ]
   }
 ];
 
