@@ -1071,11 +1071,15 @@ pnpm run check
 
 ### Generate Audio
 
-```bash
-cd /Volumes/External_ssd_mohsen/WorkspaceExtern/german-learning-app-main
+> **⏸️ SKIP FOR NOW**: Audio generation is paused during batch migration.
+> After all lessons are migrated, audio will be generated in bulk.
+> Just validate the lesson and commit.
 
-GOOGLE_APPLICATION_CREDENTIALS="./scripts/keys/gcp-tts-service-account.json" \
-  node scripts/generate-audio.js --lesson=A1-M01-L03
+```bash
+# SKIP THIS STEP DURING MIGRATION
+# cd /Volumes/External_ssd_mohsen/WorkspaceExtern/german-learning-app-main
+# GOOGLE_APPLICATION_CREDENTIALS="./scripts/keys/gcp-tts-service-account.json" \
+#   node scripts/generate-audio.js --lesson=A1-M01-L03
 ```
 
 ### Test in Browser

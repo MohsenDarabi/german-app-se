@@ -17,8 +17,80 @@
   "level": "A1",
   "module": 4,
   "lessonNumber": 1,
-  "totalSteps": 26,
-  "estimatedMinutes": 15,
+  "totalSteps": 42,
+  "estimatedMinutes": 18,
+  "vocabulary": [
+    {
+      "de": "der",
+      "fa": "حرف تعریف مذکر",
+      "grammar": { "pos": "particle" }
+    },
+    {
+      "de": "die",
+      "fa": "حرف تعریف مونث",
+      "grammar": { "pos": "particle" }
+    },
+    {
+      "de": "das",
+      "fa": "حرف تعریف خنثی",
+      "grammar": { "pos": "particle" }
+    },
+    {
+      "de": "der Mann",
+      "fa": "مرد",
+      "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "Männer" } }
+    },
+    {
+      "de": "die Frau",
+      "fa": "زن",
+      "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Frauen" } }
+    },
+    {
+      "de": "das Kind",
+      "fa": "بچه",
+      "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "Kinder" } }
+    },
+    {
+      "de": "der Tisch",
+      "fa": "میز",
+      "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "Tische" } }
+    },
+    {
+      "de": "die Lampe",
+      "fa": "چراغ",
+      "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Lampen" } }
+    },
+    {
+      "de": "das Buch",
+      "fa": "کتاب",
+      "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "Bücher" } }
+    },
+    {
+      "de": "der Stuhl",
+      "fa": "صندلی",
+      "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "Stühle" } }
+    },
+    {
+      "de": "die Tür",
+      "fa": "در",
+      "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Türen" } }
+    },
+    {
+      "de": "das Fenster",
+      "fa": "پنجره",
+      "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "Fenster" } }
+    },
+    {
+      "de": "groß",
+      "fa": "بزرگ",
+      "grammar": { "pos": "adjective" }
+    },
+    {
+      "de": "klein",
+      "fa": "کوچک",
+      "grammar": { "pos": "adjective" }
+    }
+  ],
   "steps": [
     {
       "type": "grammar-tip",
@@ -35,6 +107,19 @@
           "fa": "زن مهربان است."
         }
       ]
+    },
+    {
+      "type": "grammar-popup",
+      "id": "grammar-1",
+      "title": "نکته!",
+      "explanation": "هر اسم آلمانی یک **جنسیت** دارد:\n\n🔵 **der** = مذکر (masculine)\n🔴 **die** = مونث (feminine)\n🟢 **das** = خنثی (neuter)\n\n⚠️ جنسیت را باید با اسم حفظ کنید!",
+      "highlights": ["der", "die", "das"],
+      "examples": [
+        { "de": "der Mann", "fa": "مرد (مذکر)", "highlights": ["der"] },
+        { "de": "die Frau", "fa": "زن (مونث)", "highlights": ["die"] },
+        { "de": "das Kind", "fa": "بچه (خنثی)", "highlights": ["das"] }
+      ],
+      "grammarConcept": "article-gender"
     },
     {
       "type": "new-word",
@@ -93,6 +178,15 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-1",
+      "word": "der Mann",
+      "translation": "مرد",
+      "syllables": ["der", "Mann"],
+      "distractors": ["die", "das", "Menn", "Mon"],
+      "hint": "۲ بخش - حرف تعریف + اسم"
+    },
+    {
       "type": "new-word",
       "id": "s6",
       "word": {
@@ -107,6 +201,15 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-2",
+      "word": "die Frau",
+      "translation": "زن",
+      "syllables": ["die", "Frau"],
+      "distractors": ["der", "das", "Freo", "Frou"],
+      "hint": "۲ بخش - حرف تعریف + اسم"
+    },
+    {
       "type": "new-word",
       "id": "s7",
       "word": {
@@ -119,6 +222,15 @@
           "fa": "بچه بازی می‌کند."
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-3",
+      "word": "das Kind",
+      "translation": "بچه",
+      "syllables": ["das", "Kind"],
+      "distractors": ["der", "die", "Kend", "Kund"],
+      "hint": "۲ بخش - حرف تعریف + اسم"
     },
     {
       "type": "grammar-tip",
@@ -141,6 +253,7 @@
       "id": "g1",
       "title": "der، die یا das؟",
       "instruction": "حرف تعریف درست را انتخاب کنید",
+      "basePoints": 10,
       "questions": [
         {
           "prompt": "___ Mann",
@@ -189,6 +302,15 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-4",
+      "word": "der Tisch",
+      "translation": "میز",
+      "syllables": ["der", "Tisch"],
+      "distractors": ["die", "das", "Tesch", "Tasch"],
+      "hint": "۲ بخش - حرف تعریف + اسم"
+    },
+    {
       "type": "new-word",
       "id": "s10",
       "word": {
@@ -203,6 +325,15 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-5",
+      "word": "die Lampe",
+      "translation": "چراغ",
+      "syllables": ["die", "Lam", "pe"],
+      "distractors": ["der", "das", "Lem", "pa", "po"],
+      "hint": "۳ بخش - حرف تعریف + دو بخش اسم"
+    },
+    {
       "type": "new-word",
       "id": "s11",
       "word": {
@@ -215,6 +346,15 @@
           "fa": "کتاب جالب است."
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-6",
+      "word": "das Buch",
+      "translation": "کتاب",
+      "syllables": ["das", "Buch"],
+      "distractors": ["der", "die", "Bach", "Boch"],
+      "hint": "۲ بخش - حرف تعریف + اسم"
     },
     {
       "type": "dialog",
@@ -264,6 +404,23 @@
             "fa": "آره، و کتاب هم خوب است."
           }
         }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        {
+          "question": "چه چیزی روی میز است؟",
+          "options": ["صندلی", "چراغ", "پنجره"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: «Die Lampe ist schön!» (چراغ قشنگ است)",
+          "relatedLineIndex": 4
+        },
+        {
+          "question": "تام درباره کتاب چه گفت؟",
+          "options": ["جدید است", "خوب است", "بزرگ است"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: «das Buch ist auch gut» (کتاب هم خوب است)",
+          "relatedLineIndex": 5
+        }
       ]
     },
     {
@@ -281,6 +438,15 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-7",
+      "word": "der Stuhl",
+      "translation": "صندلی",
+      "syllables": ["der", "Stuhl"],
+      "distractors": ["die", "das", "Stohl", "Stahl"],
+      "hint": "۲ بخش - حرف تعریف + اسم"
+    },
+    {
       "type": "new-word",
       "id": "s14",
       "word": {
@@ -295,6 +461,15 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-8",
+      "word": "die Tür",
+      "translation": "در",
+      "syllables": ["die", "Tür"],
+      "distractors": ["der", "das", "Tur", "Ter"],
+      "hint": "۲ بخش - حرف تعریف + اسم"
+    },
+    {
       "type": "new-word",
       "id": "s15",
       "word": {
@@ -307,6 +482,22 @@
           "fa": "پنجره بزرگ است."
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-9",
+      "word": "das Fenster",
+      "translation": "پنجره",
+      "syllables": ["das", "Fens", "ter"],
+      "distractors": ["der", "die", "Fons", "tar", "Fins"],
+      "hint": "۳ بخش - حرف تعریف + دو بخش اسم"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Der Mann ist groß.",
+      "translation": "مرد بلند است.",
+      "difficulty": "A1"
     },
     {
       "type": "fill-in-blank",
@@ -324,6 +515,12 @@
       ],
       "feedback": {
         "explanation": "**Der** Tisch ist braun. (Tisch مذکر است)"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! «Tisch» مذکر است پس «der» می‌گیرد.",
+        "onWrong": "دقت کنید: «Tisch» مذکر است. حروف تعریف مذکر «der» است.",
+        "errorCategory": "wrong-article",
+        "highlights": ["der", "Tisch"]
       }
     },
     {
@@ -342,6 +539,36 @@
       ],
       "feedback": {
         "explanation": "**Das** Buch ist interessant. (Buch خنثی است)"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! «Buch» خنثی است پس «das» می‌گیرد.",
+        "onWrong": "دقت کنید: «Buch» خنثی است. حرف تعریف خنثی «das» است.",
+        "errorCategory": "wrong-article",
+        "highlights": ["das", "Buch"]
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s17b",
+      "instruction": "حرف تعریف درست را انتخاب کنید",
+      "sentence": "{0} Lampe ist neu.",
+      "options": [
+        "Der",
+        "Die",
+        "Das",
+        "Ein"
+      ],
+      "correctAnswers": [
+        1
+      ],
+      "feedback": {
+        "explanation": "**Die** Lampe ist neu. (Lampe مونث است)"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! «Lampe» مونث است پس «die» می‌گیرد.",
+        "onWrong": "دقت کنید: «Lampe» مونث است. حرف تعریف مونث «die» است.",
+        "errorCategory": "wrong-article",
+        "highlights": ["die", "Lampe"]
       }
     },
     {
@@ -358,6 +585,12 @@
       "feedback": {
         "correct": "آفرین! der Mann = مرد",
         "incorrect": "پاسخ صحیح: der Mann. (Frau = die، Kind = das، Lampe = die)"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! «Mann» (مرد) مذکر است و حرف تعریف آن «der» است.",
+        "onWrong": "دقت کنید: «Mann» تنها اسم مذکر در گزینه‌هاست. Frau و Lampe مونث (die) و Kind خنثی (das) هستند.",
+        "errorCategory": "wrong-article",
+        "highlights": ["der Mann"]
       }
     },
     {
@@ -408,10 +641,18 @@
       ]
     },
     {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Die Lampe ist schön.",
+      "translation": "چراغ قشنگ است.",
+      "difficulty": "A1"
+    },
+    {
       "type": "rapid-fire",
       "id": "g2",
       "title": "اشیاء اتاق",
       "instruction": "حرف تعریف درست را انتخاب کنید",
+      "basePoints": 10,
       "questions": [
         {
           "prompt": "___ Stuhl",
@@ -476,6 +717,15 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-10",
+      "word": "groß",
+      "translation": "بزرگ",
+      "syllables": ["groß"],
+      "distractors": ["gross", "gros", "grob"],
+      "hint": "۱ بخش - دقت کنید به ß"
+    },
+    {
       "type": "new-word",
       "id": "s22",
       "word": {
@@ -488,6 +738,15 @@
           "fa": "بچه کوچک است."
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-11",
+      "word": "klein",
+      "translation": "کوچک",
+      "syllables": ["klein"],
+      "distractors": ["klien", "kline", "klain"],
+      "hint": "۱ بخش - ei صدای آی می‌دهد"
     },
     {
       "type": "vocab-check",
