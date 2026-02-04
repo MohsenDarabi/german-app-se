@@ -272,6 +272,19 @@ const DE_FA_A1_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/A1/A1-M07-L04"
       }
     ]
+  },
+  {
+    id: "module-08",
+    title: "بخش ۸: غذا و نوشیدنی (Essen und Trinken)",
+    level: "A1",
+    lessons: [
+      {
+        id: "A1-M08-L01",
+        title: "خوردن و نوشیدن (Essen und Trinken)",
+        description: "یاد بگیرید غذاها و نوشیدنی‌های پایه را به آلمانی بگویید.",
+        path: "/learn/de-fa/A1/A1-M08-L01"
+      }
+    ]
   }
 ];
 

@@ -1,0 +1,667 @@
+{
+  "id": "A1-M08-L01",
+  "languagePair": "de-fa",
+  "source": {
+    "code": "de",
+    "name": "Deutsch"
+  },
+  "target": {
+    "code": "fa",
+    "name": "فارسی"
+  },
+  "title": {
+    "de": "Essen und Trinken",
+    "fa": "خوردن و نوشیدن"
+  },
+  "description": "یاد بگیرید غذاها و نوشیدنی‌های پایه را به آلمانی بگویید",
+  "level": "A1",
+  "module": 8,
+  "lessonNumber": 1,
+  "totalSteps": 40,
+  "estimatedMinutes": 19,
+  "vocabulary": [
+    { "de": "das Essen", "fa": "غذا", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Essen" } } },
+    { "de": "das Brot", "fa": "نان", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Brote" } } },
+    { "de": "das Brötchen", "fa": "نان کوچک/نان صبحانه", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Brötchen" } } },
+    { "de": "die Butter", "fa": "کره", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "-" } } },
+    { "de": "der Käse", "fa": "پنیر", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Käse" } } },
+    { "de": "die Wurst", "fa": "سوسیس/کالباس", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "die Würste" } } },
+    { "de": "das Ei", "fa": "تخم‌مرغ", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Eier" } } },
+    { "de": "das Wasser", "fa": "آب", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "die Wasser" } } },
+    { "de": "der Kaffee", "fa": "قهوه", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Kaffees" } } },
+    { "de": "der Tee", "fa": "چای", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "die Tees" } } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "غذا و نوشیدنی در آلمانی",
+      "content": "در این درس با غذاها و نوشیدنی‌های پایه آشنا می‌شویم:\n\n**صبحانه آلمانی:**\n• das Brot = نان\n• das Brötchen = نان کوچک\n• die Butter = کره\n• der Käse = پنیر\n\n**نوشیدنی‌ها:**\n• das Wasser = آب\n• der Kaffee = قهوه\n• der Tee = چای\n\n📝 **نکته:** صبحانه آلمانی معمولاً نان با کره و پنیر است!",
+      "examples": [
+        {
+          "de": "Ich esse Brot mit Käse.",
+          "fa": "من نان با پنیر می‌خورم."
+        },
+        {
+          "de": "Ich trinke Kaffee zum Frühstück.",
+          "fa": "من صبحانه قهوه می‌نوشم."
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": {
+        "de": "das Essen",
+        "fa": "غذا"
+      },
+      "example": {
+        "text": {
+          "de": "Das Essen ist lecker.",
+          "fa": "غذا خوشمزه است."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Essen",
+      "word": "Essen",
+      "translation": "غذا",
+      "syllables": ["Es", "sen"],
+      "distractors": ["As", "san", "Os", "sun"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": {
+        "de": "das Brot",
+        "fa": "نان"
+      },
+      "example": {
+        "text": {
+          "de": "Ich kaufe Brot beim Bäcker.",
+          "fa": "من نان از نانوایی می‌خرم."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Brot",
+      "word": "Brot",
+      "translation": "نان",
+      "syllables": ["Brot"],
+      "distractors": ["Brat", "Brut", "Brit", "Bret"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": {
+        "de": "das Brötchen",
+        "fa": "نان کوچک/نان صبحانه"
+      },
+      "example": {
+        "text": {
+          "de": "Zum Frühstück esse ich ein Brötchen.",
+          "fa": "صبحانه یک نان کوچک می‌خورم."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Broetchen",
+      "word": "Brötchen",
+      "translation": "نان کوچک",
+      "syllables": ["Bröt", "chen"],
+      "distractors": ["Brat", "chan", "Brut", "chin"]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": {
+        "de": "die Butter",
+        "fa": "کره"
+      },
+      "example": {
+        "text": {
+          "de": "Ich esse Brot mit Butter.",
+          "fa": "من نان با کره می‌خورم."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Butter",
+      "word": "Butter",
+      "translation": "کره",
+      "syllables": ["But", "ter"],
+      "distractors": ["Bat", "tar", "Bot", "tur"]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "نان و کره",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        {
+          "prompt": "Brot",
+          "left": "نان",
+          "right": "کره",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Butter",
+          "left": "نان",
+          "right": "کره",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Brötchen",
+          "left": "نان کوچک",
+          "right": "نان بزرگ",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Essen",
+          "left": "نوشیدنی",
+          "right": "غذا",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "کره =",
+          "left": "Brot",
+          "right": "Butter",
+          "correctSide": "right"
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": {
+        "de": "der Käse",
+        "fa": "پنیر"
+      },
+      "example": {
+        "text": {
+          "de": "Der Käse ist aus der Schweiz.",
+          "fa": "پنیر از سوئیس است."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Kaese",
+      "word": "Käse",
+      "translation": "پنیر",
+      "syllables": ["Kä", "se"],
+      "distractors": ["Ka", "sa", "Ko", "su"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": {
+        "de": "die Wurst",
+        "fa": "سوسیس/کالباس"
+      },
+      "example": {
+        "text": {
+          "de": "Die Wurst ist sehr lecker.",
+          "fa": "سوسیس خیلی خوشمزه است."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Wurst",
+      "word": "Wurst",
+      "translation": "سوسیس",
+      "syllables": ["Wurst"],
+      "distractors": ["Warst", "Wirst", "Werst", "Worst"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": {
+        "de": "das Ei",
+        "fa": "تخم‌مرغ"
+      },
+      "example": {
+        "text": {
+          "de": "Ich esse ein Ei zum Frühstück.",
+          "fa": "من صبحانه یک تخم‌مرغ می‌خورم."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Ei",
+      "word": "Ei",
+      "translation": "تخم‌مرغ",
+      "syllables": ["Ei"],
+      "distractors": ["Ai", "Oi", "Ui", "Au"]
+    },
+    {
+      "type": "dialog",
+      "id": "s9",
+      "title": "مکالمه: صبحانه",
+      "context": "الی و تام صبحانه می‌خورند",
+      "lines": [
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Guten Morgen, Eli! Was isst du zum Frühstück?",
+            "fa": "صبح بخیر، الی! صبحانه چی می‌خوری؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Ich esse ein Brötchen mit Butter und Käse.",
+            "fa": "یک نان کوچک با کره و پنیر می‌خورم."
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Lecker! Ich esse Brot mit Wurst und ein Ei.",
+            "fa": "خوشمزه! من نان با سوسیس و یک تخم‌مرغ می‌خورم."
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Magst du Käse nicht?",
+            "fa": "پنیر دوست نداری؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Doch, aber heute esse ich Wurst.",
+            "fa": "چرا، دوست دارم، ولی امروز سوسیس می‌خورم."
+          }
+        }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        {
+          "question": "الی صبحانه چه می‌خورد؟",
+          "options": ["نان با سوسیس", "نان کوچک با کره و پنیر", "تخم‌مرغ"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: Ich esse ein Brötchen mit Butter und Käse"
+        },
+        {
+          "question": "تام چه می‌خورد؟",
+          "options": ["پنیر", "نان با سوسیس و تخم‌مرغ", "فقط کره"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: Ich esse Brot mit Wurst und ein Ei"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "پنیر و سوسیس",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        {
+          "prompt": "Käse",
+          "left": "پنیر",
+          "right": "سوسیس",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Wurst",
+          "left": "پنیر",
+          "right": "سوسیس",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Ei",
+          "left": "تخم‌مرغ",
+          "right": "مرغ",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "پنیر =",
+          "left": "Wurst",
+          "right": "Käse",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "تخم‌مرغ =",
+          "left": "Ei",
+          "right": "Eier",
+          "correctSide": "left"
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": {
+        "de": "das Wasser",
+        "fa": "آب"
+      },
+      "example": {
+        "text": {
+          "de": "Ich trinke viel Wasser.",
+          "fa": "من آب زیاد می‌نوشم."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Wasser",
+      "word": "Wasser",
+      "translation": "آب",
+      "syllables": ["Was", "ser"],
+      "distractors": ["Wes", "sar", "Wos", "sur"]
+    },
+    {
+      "type": "new-word",
+      "id": "s11",
+      "word": {
+        "de": "der Kaffee",
+        "fa": "قهوه"
+      },
+      "example": {
+        "text": {
+          "de": "Ich trinke morgens Kaffee.",
+          "fa": "من صبح‌ها قهوه می‌نوشم."
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Kaffee",
+      "word": "Kaffee",
+      "translation": "قهوه",
+      "syllables": ["Kaf", "fee"],
+      "distractors": ["Kof", "faa", "Kuf", "fii"]
+    },
+    {
+      "type": "new-word",
+      "id": "s12",
+      "word": {
+        "de": "der Tee",
+        "fa": "چای"
+      },
+      "example": {
+        "text": {
+          "de": "Möchtest du Tee oder Kaffee?",
+          "fa": "چای می‌خواهی یا قهوه؟"
+        }
+      }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-Tee",
+      "word": "Tee",
+      "translation": "چای",
+      "syllables": ["Tee"],
+      "distractors": ["Taa", "Tii", "Too", "Tuu"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s13",
+      "title": "essen و trinken",
+      "content": "دو فعل مهم برای غذا:\n\n🍽️ **essen** (خوردن):\n• ich esse = من می‌خورم\n• du isst = تو می‌خوری\n• er/sie isst = او می‌خورد\n\n🥤 **trinken** (نوشیدن):\n• ich trinke = من می‌نوشم\n• du trinkst = تو می‌نوشی\n• er/sie trinkt = او می‌نوشد\n\n📝 **توجه:** essen فعل بی‌قاعده است: ich esse، du **isst** (نه esst!)",
+      "examples": [
+        {
+          "de": "Was isst du gern?",
+          "fa": "چی دوست داری بخوری؟"
+        },
+        {
+          "de": "Ich trinke gern Tee.",
+          "fa": "دوست دارم چای بنوشم."
+        }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s14",
+      "instruction": "جای خالی را با شکل درست فعل پر کنید",
+      "sentence": "Ich {0} gern Käse.",
+      "options": [
+        "esse",
+        "isst",
+        "esst",
+        "essen"
+      ],
+      "correctAnswers": [0],
+      "feedback": {
+        "explanation": "**Ich esse** = من می‌خورم"
+      },
+      "feedbackTip": {
+        "category": "verb-conjugation",
+        "tip": "فعل essen با ich: ich **esse**"
+      }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "s15",
+      "instruction": "جای خالی را با شکل درست فعل پر کنید",
+      "sentence": "Tom {0} Kaffee.",
+      "options": [
+        "trinke",
+        "trinkst",
+        "trinkt",
+        "trinken"
+      ],
+      "correctAnswers": [2],
+      "feedback": {
+        "explanation": "**Er trinkt** = او می‌نوشد"
+      },
+      "feedbackTip": {
+        "category": "verb-conjugation",
+        "tip": "فعل trinken با er/sie: er **trinkt**"
+      }
+    },
+    {
+      "type": "dialog",
+      "id": "s16",
+      "title": "مکالمه: نوشیدنی",
+      "context": "در کافه",
+      "lines": [
+        {
+          "speaker": "Kellner",
+          "text": {
+            "de": "Guten Tag! Was möchten Sie trinken?",
+            "fa": "روز بخیر! چه می‌نوشید؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Ich möchte einen Kaffee, bitte.",
+            "fa": "یک قهوه می‌خواهم، لطفاً."
+          }
+        },
+        {
+          "speaker": "Kellner",
+          "text": {
+            "de": "Mit Milch und Zucker?",
+            "fa": "با شیر و شکر؟"
+          }
+        },
+        {
+          "speaker": "Eli",
+          "text": {
+            "de": "Nur mit Milch, ohne Zucker.",
+            "fa": "فقط با شیر، بدون شکر."
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Und ich hätte gern einen Tee.",
+            "fa": "و من یک چای می‌خواهم."
+          }
+        },
+        {
+          "speaker": "Kellner",
+          "text": {
+            "de": "Schwarzer Tee oder grüner Tee?",
+            "fa": "چای سیاه یا چای سبز؟"
+          }
+        },
+        {
+          "speaker": "Tom",
+          "text": {
+            "de": "Schwarzer Tee, bitte.",
+            "fa": "چای سیاه، لطفاً."
+          }
+        }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        {
+          "question": "الی قهوه‌اش را چطور می‌خواهد؟",
+          "options": ["با شیر و شکر", "فقط با شیر", "بدون شیر و شکر"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: Nur mit Milch, ohne Zucker (فقط با شیر، بدون شکر)"
+        },
+        {
+          "question": "تام چه نوشیدنی سفارش می‌دهد؟",
+          "options": ["قهوه", "چای سبز", "چای سیاه"],
+          "correctIndex": 2,
+          "explanation": "تام گفت: Schwarzer Tee, bitte (چای سیاه، لطفاً)"
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "s17",
+      "instruction": "کلمات آلمانی را با فارسی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Wasser" },
+        { "id": "i2", "text": "Kaffee" },
+        { "id": "i3", "text": "Tee" },
+        { "id": "i4", "text": "Brot" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "قهوه" },
+        { "id": "m2", "text": "آب" },
+        { "id": "m3", "text": "نان" },
+        { "id": "m4", "text": "چای" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m1"],
+        ["i3", "m4"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "s18",
+      "question": "کدام جمله درست است؟",
+      "options": [
+        "Ich trinke Brot.",
+        "Ich esse Wasser.",
+        "Ich esse Käse.",
+        "Ich trinke Ei."
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": {
+        "correct": "آفرین! پنیر را می‌خوریم (essen)، نه می‌نوشیم (trinken).",
+        "incorrect": "essen برای غذا (جامد) و trinken برای نوشیدنی (مایع) استفاده می‌شود."
+      },
+      "feedbackTip": {
+        "category": "verb-choice",
+        "tip": "essen = خوردن (غذا)، trinken = نوشیدن (مایعات)"
+      }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g3",
+      "title": "نوشیدنی‌ها",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        {
+          "prompt": "Wasser",
+          "left": "آب",
+          "right": "قهوه",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "Kaffee",
+          "left": "چای",
+          "right": "قهوه",
+          "correctSide": "right"
+        },
+        {
+          "prompt": "Tee",
+          "left": "چای",
+          "right": "قهوه",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "آب =",
+          "left": "Wasser",
+          "right": "Kaffee",
+          "correctSide": "left"
+        },
+        {
+          "prompt": "چای =",
+          "left": "Kaffee",
+          "right": "Tee",
+          "correctSide": "right"
+        }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Ich esse Brot mit Käse.",
+      "translation": "من نان با پنیر می‌خورم.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Ich trinke gern Kaffee.",
+      "translation": "دوست دارم قهوه بنوشم.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "das Essen", "fa": "غذا" },
+        { "de": "das Brot", "fa": "نان" },
+        { "de": "das Brötchen", "fa": "نان کوچک" },
+        { "de": "die Butter", "fa": "کره" },
+        { "de": "der Käse", "fa": "پنیر" },
+        { "de": "die Wurst", "fa": "سوسیس" },
+        { "de": "das Ei", "fa": "تخم‌مرغ" },
+        { "de": "das Wasser", "fa": "آب" },
+        { "de": "der Kaffee", "fa": "قهوه" },
+        { "de": "der Tee", "fa": "چای" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما غذاها و نوشیدنی‌های پایه را یاد گرفتید:\n\n🍞 **غذاهای صبحانه:**\n• das Brot = نان\n• das Brötchen = نان کوچک\n• die Butter = کره\n• der Käse = پنیر\n• die Wurst = سوسیس\n• das Ei = تخم‌مرغ\n\n☕ **نوشیدنی‌ها:**\n• das Wasser = آب\n• der Kaffee = قهوه\n• der Tee = چای\n\n📝 **فعل‌ها:**\n• essen = خوردن (ich esse, du isst)\n• trinken = نوشیدن (ich trinke, du trinkst)",
+      "xpEarned": 50,
+      "nextLessonId": "A1-M08-L02",
+      "vocabularyLearned": [
+        { "word": { "de": "das Essen", "fa": "غذا" } },
+        { "word": { "de": "das Brot", "fa": "نان" } },
+        { "word": { "de": "das Brötchen", "fa": "نان کوچک" } },
+        { "word": { "de": "die Butter", "fa": "کره" } },
+        { "word": { "de": "der Käse", "fa": "پنیر" } },
+        { "word": { "de": "die Wurst", "fa": "سوسیس" } },
+        { "word": { "de": "das Ei", "fa": "تخم‌مرغ" } },
+        { "word": { "de": "das Wasser", "fa": "آب" } },
+        { "word": { "de": "der Kaffee", "fa": "قهوه" } },
+        { "word": { "de": "der Tee", "fa": "چای" } }
+      ]
+    }
+  ]
+}
