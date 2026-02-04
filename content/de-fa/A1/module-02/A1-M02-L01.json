@@ -21,31 +21,25 @@
   "estimatedMinutes": 15,
   "vocabulary": [
     {
-      "word": "sein",
-      "translation": "بودن",
-      "pos": "verb",
-      "verb": {
-        "type": "auxiliary",
-        "conjugation": {
-          "ich": "bin",
-          "du": "bist",
-          "er/sie/es": "ist"
-        },
-        "irregular": true
+      "de": "sein",
+      "fa": "بودن",
+      "grammar": {
+        "pos": "verb",
+        "verb": {
+          "infinitiv": "sein",
+          "praesens": { "ich": "bin", "du": "bist", "er_sie_es": "ist", "wir": "sind", "ihr": "seid", "sie_Sie": "sind" }
+        }
       }
     },
     {
-      "word": "haben",
-      "translation": "داشتن",
-      "pos": "verb",
-      "verb": {
-        "type": "auxiliary",
-        "conjugation": {
-          "ich": "habe",
-          "du": "hast",
-          "er/sie/es": "hat"
-        },
-        "irregular": true
+      "de": "haben",
+      "fa": "داشتن",
+      "grammar": {
+        "pos": "verb",
+        "verb": {
+          "infinitiv": "haben",
+          "praesens": { "ich": "habe", "du": "hast", "er_sie_es": "hat", "wir": "haben", "ihr": "habt", "sie_Sie": "haben" }
+        }
       }
     }
   ],
@@ -438,7 +432,7 @@
       "feedbackTip": {
         "onCorrect": "آفرین! ich bin = من هستم",
         "onWrong": "با ich از bin استفاده می‌کنیم: ich bin",
-        "errorCategory": "verb-conjugation"
+        "errorCategory": "wrong-conjugation"
       }
     },
     {
@@ -455,7 +449,7 @@
       "feedbackTip": {
         "onCorrect": "آفرین! du hast = تو داری",
         "onWrong": "با du از hast استفاده می‌کنیم: du hast",
-        "errorCategory": "verb-conjugation"
+        "errorCategory": "wrong-conjugation"
       }
     },
     {
@@ -475,7 +469,7 @@
       "feedbackTip": {
         "onCorrect": "آفرین! Sie ist aus Deutschland. = او از آلمان است.",
         "onWrong": "با sie (سوم شخص مفرد) از ist استفاده می‌کنیم",
-        "errorCategory": "verb-conjugation"
+        "errorCategory": "wrong-conjugation"
       }
     },
     {
@@ -495,7 +489,7 @@
       "feedbackTip": {
         "onCorrect": "آفرین! Er hat einen Bruder. = او یک برادر دارد.",
         "onWrong": "با er از hat استفاده می‌کنیم (فعل haben)",
-        "errorCategory": "verb-conjugation"
+        "errorCategory": "wrong-conjugation"
       }
     },
     {

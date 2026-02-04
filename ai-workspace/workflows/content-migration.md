@@ -209,6 +209,23 @@ Format: `{Persian number} بخش - {brief meaning}`
 
 ### Every vocabulary item MUST have a `grammar` field
 
+### ⚠️ CRITICAL: Required Field Names
+
+```json
+// ✅ CORRECT format
+{
+  "de": "German word",     // NOT "word"!
+  "fa": "Persian translation",  // NOT "translation"!
+  "grammar": { ... }
+}
+
+// ❌ WRONG format (will cause Zod schema error)
+{
+  "word": "German word",
+  "translation": "Persian translation"
+}
+```
+
 ### Part of Speech Values
 
 | POS | Value | Use For |
@@ -222,7 +239,7 @@ Format: `{Persian number} بخش - {brief meaning}`
 | Conjunction | `"conjunction"` | und, aber, oder |
 | Interjection | `"interjection"` | Ach!, Oh! |
 | Phrase | `"phrase"` | Multi-word expressions |
-| Particle | `"particle"` | Modal particles: doch, mal, ja, auch, eben |
+| Particle | `"particle"` | Modal particles (doch, mal), articles (ein, eine, der, die, das) |
 
 ### Noun Schema (REQUIRED for all nouns)
 
@@ -249,6 +266,8 @@ Format: `{Persian number} بخش - {brief meaning}`
 
 ### Verb Schema
 
+⚠️ **CRITICAL: Use underscores in conjugation keys, NOT slashes!**
+
 ```json
 {
   "de": "kommen",
@@ -256,19 +275,24 @@ Format: `{Persian number} بخش - {brief meaning}`
   "grammar": {
     "pos": "verb",
     "verb": {
-      "infinitiv": "kommen",
-      "praesens": {
+      "infinitiv": "kommen",      // REQUIRED for verbs
+      "praesens": {               // NOT "conjugation"!
         "ich": "komme",
         "du": "kommst",
-        "er_sie_es": "kommt",
+        "er_sie_es": "kommt",     // NOT "er/sie/es"!
         "wir": "kommen",
         "ihr": "kommt",
-        "sie_Sie": "kommen"
+        "sie_Sie": "kommen"       // NOT "sie/Sie"!
       }
     }
   }
 }
 ```
+
+**Common mistakes:**
+- ❌ `"conjugation": {...}` → ✅ `"praesens": {...}`
+- ❌ `"er/sie/es": "kommt"` → ✅ `"er_sie_es": "kommt"`
+- ❌ Missing `"infinitiv"` field → ✅ Always include it
 
 ### Common A1 Verb Conjugations
 
@@ -438,6 +462,8 @@ Format: `{Persian number} بخش - {brief meaning}`
 
 ### Error Categories (Complete List)
 
+⚠️ **ONLY these 10 values are valid. Anything else will cause Zod schema error!**
+
 | Category | Persian Label | When to Use | Example |
 |----------|---------------|-------------|---------|
 | `wrong-article` | حرف تعریف اشتباه | der/die/das confusion | Used "der Frau" instead of "die Frau" |
@@ -450,6 +476,14 @@ Format: `{Persian number} بخش - {brief meaning}`
 | `plural-form` | جمع/مفرد اشتباه | Plural error | "Mann" instead of "Männer" |
 | `negation` | منفی‌سازی اشتباه | nicht/kein error | Wrong negation word |
 | `gender-agreement` | تطابق جنسیت اشتباه | Adjective gender | "ein große Mann" |
+
+**❌ Invalid values (will cause errors):**
+- `verb-conjugation` → use `wrong-conjugation`
+- `stem-change` → use `wrong-conjugation`
+- `grammar` → use specific category like `wrong-article`, `wrong-conjugation`, etc.
+- `syntax` → use `word-order`
+- `pronunciation` → not supported
+- `article` → use `wrong-article`
 
 ### Example: Multiple Choice with FeedbackTip
 
@@ -1055,15 +1089,27 @@ When mixing Persian and German text:
 # 1. Validate JSON syntax
 cat content/de-fa/A1/module-01/A1-M01-L03.json | jq .
 
-# 2. Validate lesson schema
+# 2. Validate lesson content rules
 node scripts/validate-lesson.js content/de-fa/A1/module-01/A1-M01-L03.json
 
-# 3. Check TypeScript types
+# 3. Validate Zod schema (CRITICAL - catches vocabulary/errorCategory errors)
+node --experimental-strip-types -e "
+import { LessonSchema } from './packages/content-model/src/index.ts';
+import fs from 'fs';
+const json = JSON.parse(fs.readFileSync('content/de-fa/A1/module-01/A1-M01-L03.json', 'utf8'));
+try { LessonSchema.parse(json); console.log('✅ Zod schema OK'); }
+catch (e) { console.log('❌ Zod errors:', JSON.stringify(e.errors, null, 2)); }
+"
+
+# 4. Check TypeScript types
 pnpm run typecheck
 
-# 4. Run full validation
+# 5. Run full validation
 pnpm run check
 ```
+
+⚠️ **IMPORTANT**: `validate-lesson.js` does NOT catch all schema errors!
+Always run the Zod validation (step 3) before considering a migration complete.
 
 ---
 

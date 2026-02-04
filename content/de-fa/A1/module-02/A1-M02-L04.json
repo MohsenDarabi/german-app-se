@@ -21,58 +21,46 @@
   "estimatedMinutes": 15,
   "vocabulary": [
     {
-      "word": "essen",
-      "translation": "خوردن",
-      "pos": "verb",
-      "verb": {
-        "type": "stem-changing",
-        "stemChange": "e→i",
-        "conjugation": {
-          "ich": "esse",
-          "du": "isst",
-          "er/sie/es": "isst"
+      "de": "essen",
+      "fa": "خوردن",
+      "grammar": {
+        "pos": "verb",
+        "verb": {
+          "infinitiv": "essen",
+          "praesens": { "ich": "esse", "du": "isst", "er_sie_es": "isst", "wir": "essen", "ihr": "esst", "sie_Sie": "essen" }
         }
       }
     },
     {
-      "word": "lesen",
-      "translation": "خواندن",
-      "pos": "verb",
-      "verb": {
-        "type": "stem-changing",
-        "stemChange": "e→ie",
-        "conjugation": {
-          "ich": "lese",
-          "du": "liest",
-          "er/sie/es": "liest"
+      "de": "lesen",
+      "fa": "خواندن",
+      "grammar": {
+        "pos": "verb",
+        "verb": {
+          "infinitiv": "lesen",
+          "praesens": { "ich": "lese", "du": "liest", "er_sie_es": "liest", "wir": "lesen", "ihr": "lest", "sie_Sie": "lesen" }
         }
       }
     },
     {
-      "word": "schlafen",
-      "translation": "خوابیدن",
-      "pos": "verb",
-      "verb": {
-        "type": "stem-changing",
-        "stemChange": "a→ä",
-        "conjugation": {
-          "ich": "schlafe",
-          "du": "schläfst",
-          "er/sie/es": "schläft"
+      "de": "schlafen",
+      "fa": "خوابیدن",
+      "grammar": {
+        "pos": "verb",
+        "verb": {
+          "infinitiv": "schlafen",
+          "praesens": { "ich": "schlafe", "du": "schläfst", "er_sie_es": "schläft", "wir": "schlafen", "ihr": "schlaft", "sie_Sie": "schlafen" }
         }
       }
     },
     {
-      "word": "fahren",
-      "translation": "رفتن (با وسیله نقلیه)",
-      "pos": "verb",
-      "verb": {
-        "type": "stem-changing",
-        "stemChange": "a→ä",
-        "conjugation": {
-          "ich": "fahre",
-          "du": "fährst",
-          "er/sie/es": "fährt"
+      "de": "fahren",
+      "fa": "رفتن (با وسیله نقلیه)",
+      "grammar": {
+        "pos": "verb",
+        "verb": {
+          "infinitiv": "fahren",
+          "praesens": { "ich": "fahre", "du": "fährst", "er_sie_es": "fährt", "wir": "fahren", "ihr": "fahrt", "sie_Sie": "fahren" }
         }
       }
     }
@@ -516,7 +504,7 @@
       "feedbackTip": {
         "onCorrect": "آفرین! er isst (تغییر ریشه e→i در du و er/sie/es)",
         "onWrong": "essen تغییر ریشه دارد: e→i در du و er. پس: er isst",
-        "errorCategory": "stem-change"
+        "errorCategory": "wrong-conjugation"
       }
     },
     {
@@ -533,7 +521,7 @@
       "feedbackTip": {
         "onCorrect": "آفرین! du liest (تغییر ریشه e→ie)",
         "onWrong": "lesen تغییر ریشه دارد: e→ie در du و er. پس: du liest",
-        "errorCategory": "stem-change"
+        "errorCategory": "wrong-conjugation"
       }
     },
     {
@@ -553,7 +541,7 @@
       "feedbackTip": {
         "onCorrect": "آفرین! Das Kind schläft viel = بچه زیاد می‌خوابد (a→ä)",
         "onWrong": "schlafen تغییر ریشه دارد: a→ä در du و er. پس: das Kind schläft",
-        "errorCategory": "stem-change"
+        "errorCategory": "wrong-conjugation"
       }
     },
     {
@@ -573,7 +561,7 @@
       "feedbackTip": {
         "onCorrect": "آفرین! Mein Vater fährt = پدرم رانندگی می‌کند (a→ä)",
         "onWrong": "fahren تغییر ریشه دارد: a→ä در du و er. پس: mein Vater fährt",
-        "errorCategory": "stem-change"
+        "errorCategory": "wrong-conjugation"
       }
     },
     {

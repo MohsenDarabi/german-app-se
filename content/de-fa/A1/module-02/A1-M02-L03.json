@@ -20,38 +20,12 @@
   "totalSteps": 29,
   "estimatedMinutes": 15,
   "vocabulary": [
-    {
-      "word": "wir",
-      "translation": "ما",
-      "pos": "pronoun"
-    },
-    {
-      "word": "ihr",
-      "translation": "شما (غیررسمی جمع)",
-      "pos": "pronoun"
-    },
-    {
-      "word": "sie",
-      "translation": "آن‌ها",
-      "pos": "pronoun",
-      "note": "plural 'they'"
-    },
-    {
-      "word": "Sie",
-      "translation": "شما (رسمی)",
-      "pos": "pronoun",
-      "note": "formal you, always capitalized"
-    },
-    {
-      "word": "zusammen",
-      "translation": "با هم",
-      "pos": "adverb"
-    },
-    {
-      "word": "alle",
-      "translation": "همه",
-      "pos": "pronoun"
-    }
+    { "de": "wir", "fa": "ما", "grammar": { "pos": "pronoun" } },
+    { "de": "ihr", "fa": "شما (غیررسمی جمع)", "grammar": { "pos": "pronoun" } },
+    { "de": "sie", "fa": "آن‌ها", "grammar": { "pos": "pronoun" } },
+    { "de": "Sie", "fa": "شما (رسمی)", "grammar": { "pos": "pronoun" } },
+    { "de": "zusammen", "fa": "با هم", "grammar": { "pos": "adverb" } },
+    { "de": "alle", "fa": "همه", "grammar": { "pos": "pronoun" } }
   ],
   "steps": [
     {
@@ -418,7 +392,7 @@
       "feedbackTip": {
         "onCorrect": "آفرین! wir lernen = ما یاد می‌گیریم (پسوند -en)",
         "onWrong": "با wir از پسوند -en استفاده می‌کنیم: wir lernen",
-        "errorCategory": "verb-conjugation"
+        "errorCategory": "wrong-conjugation"
       }
     },
     {
@@ -435,7 +409,7 @@
       "feedbackTip": {
         "onCorrect": "آفرین! ihr spielt = شما بازی می‌کنید (پسوند -t)",
         "onWrong": "با ihr از پسوند -t استفاده می‌کنیم: ihr spielt",
-        "errorCategory": "verb-conjugation"
+        "errorCategory": "wrong-conjugation"
       }
     },
     {
@@ -455,7 +429,7 @@
       "feedbackTip": {
         "onCorrect": "آفرین! Wir arbeiten im Büro = ما در دفتر کار می‌کنیم.",
         "onWrong": "با wir از پسوند -en استفاده می‌کنیم: wir arbeiten",
-        "errorCategory": "verb-conjugation"
+        "errorCategory": "wrong-conjugation"
       }
     },
     {
@@ -475,7 +449,7 @@
       "feedbackTip": {
         "onCorrect": "آفرین! Sprechen Sie Deutsch? = آیا شما آلمانی صحبت می‌کنید؟",
         "onWrong": "با Sie رسمی از پسوند -en استفاده می‌کنیم: Sprechen Sie",
-        "errorCategory": "verb-conjugation"
+        "errorCategory": "wrong-conjugation"
       }
     },
     {

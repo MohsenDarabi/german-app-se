@@ -17,8 +17,97 @@
   "level": "A1",
   "module": 4,
   "lessonNumber": 2,
-  "totalSteps": 26,
   "estimatedMinutes": 15,
+  "vocabulary": [
+    {
+      "de": "ein",
+      "fa": "یک (مذکر/خنثی)",
+      "grammar": {
+        "pos": "particle",
+        "note": "حرف تعریف نامعین برای مذکر و خنثی"
+      }
+    },
+    {
+      "de": "eine",
+      "fa": "یک (مونث)",
+      "grammar": {
+        "pos": "particle",
+        "note": "حرف تعریف نامعین برای مونث"
+      }
+    },
+    {
+      "de": "Apfel",
+      "fa": "سیب",
+      "grammar": {
+        "pos": "noun",
+        "noun": { "artikel": "m", "plural": "Äpfel" }
+      }
+    },
+    {
+      "de": "Banane",
+      "fa": "موز",
+      "grammar": {
+        "pos": "noun",
+        "noun": { "artikel": "f", "plural": "Bananen" }
+      }
+    },
+    {
+      "de": "Brot",
+      "fa": "نان",
+      "grammar": {
+        "pos": "noun",
+        "noun": { "artikel": "n", "plural": "Brote" }
+      }
+    },
+    {
+      "de": "Hund",
+      "fa": "سگ",
+      "grammar": {
+        "pos": "noun",
+        "noun": { "artikel": "m", "plural": "Hunde" }
+      }
+    },
+    {
+      "de": "Katze",
+      "fa": "گربه",
+      "grammar": {
+        "pos": "noun",
+        "noun": { "artikel": "f", "plural": "Katzen" }
+      }
+    },
+    {
+      "de": "Vogel",
+      "fa": "پرنده",
+      "grammar": {
+        "pos": "noun",
+        "noun": { "artikel": "m", "plural": "Vögel" }
+      }
+    },
+    {
+      "de": "Auto",
+      "fa": "ماشین",
+      "grammar": {
+        "pos": "noun",
+        "noun": { "artikel": "n", "plural": "Autos" }
+      }
+    },
+    {
+      "de": "Tasche",
+      "fa": "کیف",
+      "grammar": {
+        "pos": "noun",
+        "noun": { "artikel": "f", "plural": "Taschen" }
+      }
+    },
+    {
+      "de": "Handy",
+      "fa": "موبایل",
+      "grammar": {
+        "pos": "noun",
+        "noun": { "artikel": "n", "plural": "Handys" }
+      }
+    }
+  ],
   "steps": [
     {
       "type": "grammar-tip",
@@ -37,6 +126,19 @@
       ]
     },
     {
+      "type": "grammar-popup",
+      "id": "grammar-1",
+      "title": "نکته!",
+      "explanation": "حرف تعریف نامعین بر اساس **جنسیت اسم** تغییر می‌کند:\n\n🔵 **der** (مذکر) → **ein**\n🟢 **das** (خنثی) → **ein**\n🔴 **die** (مونث) → **eine**\n\n⚠️ مذکر و خنثی هر دو «ein» می‌گیرند!",
+      "highlights": ["ein", "eine"],
+      "examples": [
+        { "de": "der Mann: ein Mann", "fa": "مرد: یک مرد", "highlights": ["ein"] },
+        { "de": "das Kind: ein Kind", "fa": "بچه: یک بچه", "highlights": ["ein"] },
+        { "de": "die Frau: eine Frau", "fa": "زن: یک زن", "highlights": ["eine"] }
+      ],
+      "grammarConcept": "indefinite-articles"
+    },
+    {
       "type": "new-word",
       "id": "s2",
       "word": {
@@ -51,6 +153,15 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-1",
+      "word": "ein",
+      "translation": "یک (مذکر/خنثی)",
+      "syllables": ["ein"],
+      "distractors": ["ien", "en", "an"],
+      "hint": "۱ بخش - ei صدای آی"
+    },
+    {
       "type": "new-word",
       "id": "s3",
       "word": {
@@ -63,6 +174,15 @@
           "fa": "یک زن"
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-2",
+      "word": "eine",
+      "translation": "یک (مونث)",
+      "syllables": ["ei", "ne"],
+      "distractors": ["ie", "na", "ni"],
+      "hint": "۲ بخش"
     },
     {
       "type": "grammar-tip",
@@ -89,6 +209,9 @@
       "id": "g1",
       "title": "ein یا eine؟",
       "instruction": "حرف تعریف نامعین درست را انتخاب کنید",
+      "timePerQuestion": 5,
+      "basePoints": 10,
+      "showStreak": true,
       "questions": [
         {
           "prompt": "___ Mann",
@@ -137,6 +260,15 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-3",
+      "word": "Apfel",
+      "translation": "سیب",
+      "syllables": ["Ap", "fel"],
+      "distractors": ["Ep", "fal", "fel"],
+      "hint": "۲ بخش"
+    },
+    {
       "type": "new-word",
       "id": "s6",
       "word": {
@@ -149,6 +281,15 @@
           "fa": "من یک موز می‌خورم."
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-4",
+      "word": "Banane",
+      "translation": "موز",
+      "syllables": ["Ba", "na", "ne"],
+      "distractors": ["Be", "no", "ni"],
+      "hint": "۳ بخش"
     },
     {
       "type": "new-word",
@@ -165,10 +306,23 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-5",
+      "word": "Brot",
+      "translation": "نان",
+      "syllables": ["Brot"],
+      "distractors": ["Brat", "Brut", "Brit"],
+      "hint": "۱ بخش"
+    },
+    {
       "type": "dialog",
       "id": "s8",
       "title": "مکالمه: در فروشگاه",
       "context": "الی در فروشگاه خرید می‌کند",
+      "scene": {
+        "location": "supermarket",
+        "description": { "de": "Im Supermarkt", "fa": "در سوپرمارکت" }
+      },
       "lines": [
         {
           "speaker": "Eli",
@@ -178,7 +332,7 @@
           }
         },
         {
-          "speaker": "Tom",
+          "speaker": "Verkäufer",
           "text": {
             "de": "Hier, ein Apfel.",
             "fa": "بفرمایید، یک سیب."
@@ -192,7 +346,7 @@
           }
         },
         {
-          "speaker": "Tom",
+          "speaker": "Verkäufer",
           "text": {
             "de": "Eine Banane, bitte schön!",
             "fa": "یک موز، بفرمایید!"
@@ -206,11 +360,28 @@
           }
         },
         {
-          "speaker": "Tom",
+          "speaker": "Verkäufer",
           "text": {
             "de": "Ja, hier ist ein Brot.",
             "fa": "بله، اینجا یک نان است."
           }
+        }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        {
+          "question": "الی چه میوه‌ای خواست؟",
+          "options": ["موز", "سیب", "پرتقال"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: «Ich möchte einen Apfel, bitte.»",
+          "relatedLineIndex": 0
+        },
+        {
+          "question": "کدام حرف تعریف برای Banane درست است؟",
+          "options": ["ein", "eine", "einer"],
+          "correctIndex": 1,
+          "explanation": "Banane مونث است (die Banane) پس: eine Banane",
+          "relatedLineIndex": 2
         }
       ]
     },
@@ -245,6 +416,15 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-6",
+      "word": "Hund",
+      "translation": "سگ",
+      "syllables": ["Hund"],
+      "distractors": ["Hand", "Hond", "Hend"],
+      "hint": "۱ بخش"
+    },
+    {
       "type": "new-word",
       "id": "s11",
       "word": {
@@ -257,6 +437,15 @@
           "fa": "من یک گربه دارم."
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-7",
+      "word": "Katze",
+      "translation": "گربه",
+      "syllables": ["Kat", "ze"],
+      "distractors": ["Ket", "za", "zi"],
+      "hint": "۲ بخش"
     },
     {
       "type": "new-word",
@@ -273,21 +462,28 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-8",
+      "word": "Vogel",
+      "translation": "پرنده",
+      "syllables": ["Vo", "gel"],
+      "distractors": ["Va", "gal", "gil"],
+      "hint": "۲ بخش"
+    },
+    {
       "type": "fill-in-blank",
       "id": "s13",
       "instruction": "حرف تعریف نامعین درست را انتخاب کنید",
       "sentence": "Das ist {0} Hund.",
-      "options": [
-        "ein",
-        "eine",
-        "der",
-        "die"
-      ],
-      "correctAnswers": [
-        0
-      ],
+      "options": ["ein", "eine", "der", "die"],
+      "correctAnswers": [0],
       "feedback": {
         "explanation": "**ein** Hund (Hund مذکر است: der Hund → ein Hund)"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! Hund مذکر است (der Hund) پس از ein استفاده می‌کنیم.",
+        "onWrong": "دقت کنید: Hund مذکر است (der Hund). برای مذکر از ein استفاده می‌کنیم.",
+        "errorCategory": "wrong-article"
       }
     },
     {
@@ -295,17 +491,15 @@
       "id": "s14",
       "instruction": "حرف تعریف نامعین درست را انتخاب کنید",
       "sentence": "Ich habe {0} Katze.",
-      "options": [
-        "ein",
-        "eine",
-        "das",
-        "die"
-      ],
-      "correctAnswers": [
-        1
-      ],
+      "options": ["ein", "eine", "das", "die"],
+      "correctAnswers": [1],
       "feedback": {
         "explanation": "**eine** Katze (Katze مونث است: die Katze → eine Katze)"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! Katze مونث است (die Katze) پس از eine استفاده می‌کنیم.",
+        "onWrong": "دقت کنید: Katze مونث است (die Katze). برای مونث از eine استفاده می‌کنیم.",
+        "errorCategory": "wrong-article"
       }
     },
     {
@@ -313,6 +507,9 @@
       "id": "g2",
       "title": "حیوانات",
       "instruction": "حرف تعریف نامعین درست را انتخاب کنید",
+      "timePerQuestion": 5,
+      "basePoints": 10,
+      "showStreak": true,
       "questions": [
         {
           "prompt": "___ Hund",
@@ -361,6 +558,15 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-9",
+      "word": "Auto",
+      "translation": "ماشین",
+      "syllables": ["Au", "to"],
+      "distractors": ["Ao", "ta", "ti"],
+      "hint": "۲ بخش - au صدای آو"
+    },
+    {
       "type": "new-word",
       "id": "s16",
       "word": {
@@ -373,6 +579,15 @@
           "fa": "این یک کیف است."
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-10",
+      "word": "Tasche",
+      "translation": "کیف",
+      "syllables": ["Ta", "sche"],
+      "distractors": ["Te", "sha", "shi"],
+      "hint": "۲ بخش - sch صدای ش"
     },
     {
       "type": "new-word",
@@ -389,6 +604,15 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-11",
+      "word": "Handy",
+      "translation": "موبایل",
+      "syllables": ["Han", "dy"],
+      "distractors": ["Hen", "di", "da"],
+      "hint": "۲ بخش"
+    },
+    {
       "type": "multiple-choice",
       "id": "s18",
       "question": "کدام جمله درست است؟",
@@ -402,6 +626,11 @@
       "feedback": {
         "correct": "آفرین! die Tasche → eine Tasche",
         "incorrect": "Tasche مونث است (die Tasche)، پس: eine Tasche"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! Tasche مونث است (die Tasche) پس از eine استفاده می‌کنیم.",
+        "onWrong": "دقت کنید: Tasche مونث است (die Tasche). قانون: die → eine",
+        "errorCategory": "wrong-article"
       }
     },
     {
@@ -409,43 +638,22 @@
       "id": "s19",
       "instruction": "اسم را با حرف تعریف نامعین جفت کنید",
       "items": [
-        {
-          "id": "i1",
-          "text": "Mann (der)"
-        },
-        {
-          "id": "i2",
-          "text": "Frau (die)"
-        },
-        {
-          "id": "i3",
-          "text": "Kind (das)"
-        }
+        { "id": "i1", "text": "Mann (der)" },
+        { "id": "i2", "text": "Frau (die)" },
+        { "id": "i3", "text": "Kind (das)" }
       ],
       "matches": [
-        {
-          "id": "m1",
-          "text": "ein"
-        },
-        {
-          "id": "m2",
-          "text": "eine"
-        }
+        { "id": "m1", "text": "ein" },
+        { "id": "m2", "text": "eine" }
       ],
-      "correctPairs": [
-        [
-          "i1",
-          "m1"
-        ],
-        [
-          "i2",
-          "m2"
-        ],
-        [
-          "i3",
-          "m1"
-        ]
-      ]
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m1"]]
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "ein Apfel",
+      "translation": "یک سیب",
+      "difficulty": "A1"
     },
     {
       "type": "grammar-tip",
@@ -468,6 +676,9 @@
       "id": "g3",
       "title": "مرور کلی",
       "instruction": "حرف تعریف نامعین درست را انتخاب کنید",
+      "timePerQuestion": 5,
+      "basePoints": 10,
+      "showStreak": true,
       "questions": [
         {
           "prompt": "___ Buch",
@@ -506,18 +717,23 @@
       "id": "s21",
       "instruction": "حرف تعریف درست را انتخاب کنید",
       "sentence": "Ich kaufe {0} Auto.",
-      "options": [
-        "ein",
-        "eine",
-        "einen",
-        "einer"
-      ],
-      "correctAnswers": [
-        0
-      ],
+      "options": ["ein", "eine", "einen", "einer"],
+      "correctAnswers": [0],
       "feedback": {
         "explanation": "**ein** Auto (Auto خنثی است: das Auto → ein Auto)"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! Auto خنثی است (das Auto) و خنثی هم مثل مذکر از ein استفاده می‌کند.",
+        "onWrong": "دقت کنید: Auto خنثی است (das Auto). قانون: das → ein",
+        "errorCategory": "wrong-article"
       }
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "eine Katze",
+      "translation": "یک گربه",
+      "difficulty": "A1"
     },
     {
       "type": "vocab-check",
@@ -525,50 +741,17 @@
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [
-        {
-          "de": "ein",
-          "fa": "یک (مذکر/خنثی)"
-        },
-        {
-          "de": "eine",
-          "fa": "یک (مونث)"
-        },
-        {
-          "de": "ein Apfel",
-          "fa": "یک سیب"
-        },
-        {
-          "de": "eine Banane",
-          "fa": "یک موز"
-        },
-        {
-          "de": "ein Brot",
-          "fa": "یک نان"
-        },
-        {
-          "de": "ein Hund",
-          "fa": "یک سگ"
-        },
-        {
-          "de": "eine Katze",
-          "fa": "یک گربه"
-        },
-        {
-          "de": "ein Vogel",
-          "fa": "یک پرنده"
-        },
-        {
-          "de": "ein Auto",
-          "fa": "یک ماشین"
-        },
-        {
-          "de": "eine Tasche",
-          "fa": "یک کیف"
-        },
-        {
-          "de": "ein Handy",
-          "fa": "یک موبایل"
-        }
+        { "de": "ein", "fa": "یک (مذکر/خنثی)" },
+        { "de": "eine", "fa": "یک (مونث)" },
+        { "de": "ein Apfel", "fa": "یک سیب" },
+        { "de": "eine Banane", "fa": "یک موز" },
+        { "de": "ein Brot", "fa": "یک نان" },
+        { "de": "ein Hund", "fa": "یک سگ" },
+        { "de": "eine Katze", "fa": "یک گربه" },
+        { "de": "ein Vogel", "fa": "یک پرنده" },
+        { "de": "ein Auto", "fa": "یک ماشین" },
+        { "de": "eine Tasche", "fa": "یک کیف" },
+        { "de": "ein Handy", "fa": "یک موبایل" }
       ]
     },
     {
@@ -579,72 +762,17 @@
       "xpEarned": 50,
       "nextLessonId": "A1-M04-L03",
       "vocabularyLearned": [
-        {
-          "word": {
-            "de": "ein",
-            "fa": "یک (مذکر/خنثی)"
-          }
-        },
-        {
-          "word": {
-            "de": "eine",
-            "fa": "یک (مونث)"
-          }
-        },
-        {
-          "word": {
-            "de": "ein Apfel",
-            "fa": "یک سیب"
-          }
-        },
-        {
-          "word": {
-            "de": "eine Banane",
-            "fa": "یک موز"
-          }
-        },
-        {
-          "word": {
-            "de": "ein Brot",
-            "fa": "یک نان"
-          }
-        },
-        {
-          "word": {
-            "de": "ein Hund",
-            "fa": "یک سگ"
-          }
-        },
-        {
-          "word": {
-            "de": "eine Katze",
-            "fa": "یک گربه"
-          }
-        },
-        {
-          "word": {
-            "de": "ein Vogel",
-            "fa": "یک پرنده"
-          }
-        },
-        {
-          "word": {
-            "de": "ein Auto",
-            "fa": "یک ماشین"
-          }
-        },
-        {
-          "word": {
-            "de": "eine Tasche",
-            "fa": "یک کیف"
-          }
-        },
-        {
-          "word": {
-            "de": "ein Handy",
-            "fa": "یک موبایل"
-          }
-        }
+        { "word": { "de": "ein", "fa": "یک (مذکر/خنثی)" } },
+        { "word": { "de": "eine", "fa": "یک (مونث)" } },
+        { "word": { "de": "ein Apfel", "fa": "یک سیب" } },
+        { "word": { "de": "eine Banane", "fa": "یک موز" } },
+        { "word": { "de": "ein Brot", "fa": "یک نان" } },
+        { "word": { "de": "ein Hund", "fa": "یک سگ" } },
+        { "word": { "de": "eine Katze", "fa": "یک گربه" } },
+        { "word": { "de": "ein Vogel", "fa": "یک پرنده" } },
+        { "word": { "de": "ein Auto", "fa": "یک ماشین" } },
+        { "word": { "de": "eine Tasche", "fa": "یک کیف" } },
+        { "word": { "de": "ein Handy", "fa": "یک موبایل" } }
       ]
     }
   ]

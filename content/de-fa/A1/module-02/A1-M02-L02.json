@@ -21,67 +21,58 @@
   "estimatedMinutes": 15,
   "vocabulary": [
     {
-      "word": "machen",
-      "translation": "انجام دادن / درست کردن",
-      "pos": "verb",
-      "verb": {
-        "type": "regular",
-        "conjugation": {
-          "ich": "mache",
-          "du": "machst",
-          "er/sie/es": "macht"
+      "de": "machen",
+      "fa": "انجام دادن / درست کردن",
+      "grammar": {
+        "pos": "verb",
+        "verb": {
+          "infinitiv": "machen",
+          "praesens": { "ich": "mache", "du": "machst", "er_sie_es": "macht", "wir": "machen", "ihr": "macht", "sie_Sie": "machen" }
         }
       }
     },
     {
-      "word": "spielen",
-      "translation": "بازی کردن",
-      "pos": "verb",
-      "verb": {
-        "type": "regular",
-        "conjugation": {
-          "ich": "spiele",
-          "du": "spielst",
-          "er/sie/es": "spielt"
+      "de": "spielen",
+      "fa": "بازی کردن",
+      "grammar": {
+        "pos": "verb",
+        "verb": {
+          "infinitiv": "spielen",
+          "praesens": { "ich": "spiele", "du": "spielst", "er_sie_es": "spielt", "wir": "spielen", "ihr": "spielt", "sie_Sie": "spielen" }
         }
       }
     },
     {
-      "word": "lernen",
-      "translation": "یاد گرفتن",
-      "pos": "verb",
-      "verb": {
-        "type": "regular",
-        "conjugation": {
-          "ich": "lerne",
-          "du": "lernst",
-          "er/sie/es": "lernt"
+      "de": "lernen",
+      "fa": "یاد گرفتن",
+      "grammar": {
+        "pos": "verb",
+        "verb": {
+          "infinitiv": "lernen",
+          "praesens": { "ich": "lerne", "du": "lernst", "er_sie_es": "lernt", "wir": "lernen", "ihr": "lernt", "sie_Sie": "lernen" }
         }
       }
     },
     {
-      "word": "arbeiten",
-      "translation": "کار کردن",
-      "pos": "verb",
-      "verb": {
-        "type": "regular",
-        "conjugation": {
-          "ich": "arbeite",
-          "du": "arbeitest",
-          "er/sie/es": "arbeitet"
-        },
-        "note": "stem ends in -t, needs extra -e-"
+      "de": "arbeiten",
+      "fa": "کار کردن",
+      "grammar": {
+        "pos": "verb",
+        "verb": {
+          "infinitiv": "arbeiten",
+          "praesens": { "ich": "arbeite", "du": "arbeitest", "er_sie_es": "arbeitet", "wir": "arbeiten", "ihr": "arbeitet", "sie_Sie": "arbeiten" }
+        }
       }
     },
     {
-      "word": "heute",
-      "translation": "امروز",
-      "pos": "adverb"
+      "de": "heute",
+      "fa": "امروز",
+      "grammar": { "pos": "adverb" }
     },
     {
-      "word": "jeden Tag",
-      "translation": "هر روز",
-      "pos": "phrase"
+      "de": "jeden Tag",
+      "fa": "هر روز",
+      "grammar": { "pos": "phrase" }
     }
   ],
   "steps": [
@@ -464,7 +455,7 @@
       "feedbackTip": {
         "onCorrect": "آفرین! du lernst = تو یاد می‌گیری (پسوند -st)",
         "onWrong": "با du از پسوند -st استفاده می‌کنیم: du lernst",
-        "errorCategory": "verb-conjugation"
+        "errorCategory": "wrong-conjugation"
       }
     },
     {
@@ -481,7 +472,7 @@
       "feedbackTip": {
         "onCorrect": "آفرین! er arbeitet = او کار می‌کند (با e اضافی چون ریشه به t ختم می‌شود)",
         "onWrong": "با er از پسوند -t استفاده می‌کنیم، ولی arbeiten چون به t ختم می‌شود e اضافی می‌گیرد: arbeitet",
-        "errorCategory": "verb-conjugation"
+        "errorCategory": "wrong-conjugation"
       }
     },
     {
@@ -501,7 +492,7 @@
       "feedbackTip": {
         "onCorrect": "آفرین! Ich spiele Fußball = من فوتبال بازی می‌کنم.",
         "onWrong": "با ich از پسوند -e استفاده می‌کنیم: ich spiele",
-        "errorCategory": "verb-conjugation"
+        "errorCategory": "wrong-conjugation"
       }
     },
     {
@@ -521,7 +512,7 @@
       "feedbackTip": {
         "onCorrect": "آفرین! Sie arbeitet im Büro = او در دفتر کار می‌کند.",
         "onWrong": "با sie (سوم شخص) از پسوند -t استفاده می‌کنیم، با e اضافی: arbeitet",
-        "errorCategory": "verb-conjugation"
+        "errorCategory": "wrong-conjugation"
       }
     },
     {

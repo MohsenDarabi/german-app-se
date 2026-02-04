@@ -21,44 +21,35 @@
   "estimatedMinutes": 15,
   "vocabulary": [
     {
-      "word": "können",
-      "translation": "توانستن",
-      "pos": "verb",
-      "verb": {
-        "type": "modal",
-        "conjugation": {
-          "ich": "kann",
-          "du": "kannst",
-          "er/sie/es": "kann",
-          "wir": "können"
+      "de": "können",
+      "fa": "توانستن",
+      "grammar": {
+        "pos": "verb",
+        "verb": {
+          "infinitiv": "können",
+          "praesens": { "ich": "kann", "du": "kannst", "er_sie_es": "kann", "wir": "können", "ihr": "könnt", "sie_Sie": "können" }
         }
       }
     },
     {
-      "word": "wollen",
-      "translation": "خواستن",
-      "pos": "verb",
-      "verb": {
-        "type": "modal",
-        "conjugation": {
-          "ich": "will",
-          "du": "willst",
-          "er/sie/es": "will",
-          "wir": "wollen"
+      "de": "wollen",
+      "fa": "خواستن",
+      "grammar": {
+        "pos": "verb",
+        "verb": {
+          "infinitiv": "wollen",
+          "praesens": { "ich": "will", "du": "willst", "er_sie_es": "will", "wir": "wollen", "ihr": "wollt", "sie_Sie": "wollen" }
         }
       }
     },
     {
-      "word": "müssen",
-      "translation": "باید / مجبور بودن",
-      "pos": "verb",
-      "verb": {
-        "type": "modal",
-        "conjugation": {
-          "ich": "muss",
-          "du": "musst",
-          "er/sie/es": "muss",
-          "wir": "müssen"
+      "de": "müssen",
+      "fa": "باید / مجبور بودن",
+      "grammar": {
+        "pos": "verb",
+        "verb": {
+          "infinitiv": "müssen",
+          "praesens": { "ich": "muss", "du": "musst", "er_sie_es": "muss", "wir": "müssen", "ihr": "müsst", "sie_Sie": "müssen" }
         }
       }
     }
@@ -525,7 +516,7 @@
       "feedbackTip": {
         "onCorrect": "آفرین! Er kann Gitarre spielen = او می‌تواند گیتار بزند.",
         "onWrong": "با er از kann استفاده می‌کنیم (ich و er یکسان هستند)",
-        "errorCategory": "verb-conjugation"
+        "errorCategory": "wrong-conjugation"
       }
     },
     {
@@ -545,7 +536,7 @@
       "feedbackTip": {
         "onCorrect": "آفرین! Wir wollen fahren = ما می‌خواهیم برویم.",
         "onWrong": "با wir از wollen استفاده می‌کنیم",
-        "errorCategory": "verb-conjugation"
+        "errorCategory": "wrong-conjugation"
       }
     },
     {
