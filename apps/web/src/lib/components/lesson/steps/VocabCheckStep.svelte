@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { VocabCheckStep, VocabCheckWord } from "$lib/content-model";
+  import type { VocabCheckStep, VocabCheckWord } from "@pkg/content-model";
   import { createEventDispatcher } from "svelte";
 
   export let step: VocabCheckStep;
@@ -31,6 +31,11 @@
   $: currentWord = words[currentIndex];
   $: progress = (currentIndex / words.length) * 100;
   $: totalChecked = easyCount + mediumCount + hardCount;
+
+  // Access extended step properties (may exist in content but not in schema type)
+  $: stepAny = step as unknown as Record<string, unknown>;
+  $: showExamples = stepAny.showExamples as boolean;
+  $: currentWordExample = currentWord ? (currentWord as unknown as Record<string, unknown>).example as string : undefined;
 
   function revealWord() {
     if (currentWord) {
@@ -114,10 +119,10 @@
           <span class="persian-word" dir="rtl">{currentWord?.fa}</span>
           <span class="flag">🇮🇷</span>
 
-          {#if step.showExamples && currentWord?.example}
+          {#if showExamples && currentWordExample}
             <div class="example">
               <span class="example-label">مثال:</span>
-              <span class="example-text">{currentWord.example}</span>
+              <span class="example-text">{currentWordExample}</span>
             </div>
           {/if}
         </div>

@@ -1,3 +1,7 @@
+<script lang="ts">
+  // Component type declarations for SvelteKit
+</script>
+
 <footer class="footer">
   <div class="footer-content">
     <span class="brand">Deutschlern</span>

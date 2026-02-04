@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { RapidFireStep, RapidFireQuestion } from "$lib/content-model";
+  import type { RapidFireStep, RapidFireQuestion } from "@pkg/content-model";
   import { createEventDispatcher, onMount, onDestroy } from "svelte";
 
   export let step: RapidFireStep;
@@ -32,6 +32,11 @@
   $: progress = (currentIndex / totalQuestions) * 100;
   $: cardRotation = isDragging ? (currentX - startX) / 15 : 0;
   $: cardTranslateX = isDragging ? currentX - startX : 0;
+
+  // Access extended step properties (may exist in content but not in schema type)
+  $: stepAny = step as unknown as Record<string, unknown>;
+  $: basePoints = (stepAny.basePoints as number) || 10;
+  $: showStreak = stepAny.showStreak as boolean;
 
   onMount(() => {
     // Add document-level mouse listeners for drag tracking
@@ -141,7 +146,7 @@
       correctCount++;
       streak++;
       if (streak > maxStreak) maxStreak = streak;
-      score += (step.basePoints || 10) * (streak > 1 ? streak : 1);
+      score += basePoints * (streak > 1 ? streak : 1);
       showResult = 'correct';
     } else {
       streak = 0;
@@ -272,7 +277,7 @@
           <span class="stat-value">{score}</span>
           <span class="stat-icon">⭐</span>
         </div>
-        {#if step.showStreak && streak > 0}
+        {#if showStreak && streak > 0}
           <div class="stat streak" class:fire={streak >= 3}>
             <span class="stat-value">{streak}</span>
             <span class="stat-icon">{getFireEmoji(streak) || '🎯'}</span>

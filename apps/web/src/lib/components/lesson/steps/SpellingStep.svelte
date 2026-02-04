@@ -17,6 +17,14 @@
   let canRetry = false;
   let showHint = false;
 
+  // Access extended step properties (may exist in content but not in schema type)
+  $: stepAny = step as unknown as Record<string, unknown>;
+  $: phonetic = stepAny.phonetic as string;
+  $: showImage = stepAny.showImage as boolean;
+  $: includeDistractors = stepAny.includeDistractors as boolean;
+  $: distractorCount = (stepAny.distractorCount as number) || 2;
+  $: stepLetters = stepAny.letters as string[];
+
   const DISTRACTOR_LETTERS = 'ÄÖÜABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
   onMount(() => {
@@ -29,17 +37,16 @@
 
     // Add distractor letters if enabled
     let allLetters = [...wordLetters];
-    if (step.includeDistractors) {
-      const count = step.distractorCount || 2;
-      for (let i = 0; i < count; i++) {
+    if (includeDistractors) {
+      for (let i = 0; i < distractorCount; i++) {
         const randomIndex = Math.floor(Math.random() * DISTRACTOR_LETTERS.length);
         allLetters.push(DISTRACTOR_LETTERS[randomIndex]);
       }
     }
 
     // Override with provided letters if available
-    if (step.letters && step.letters.length > 0) {
-      allLetters = [...step.letters];
+    if (stepLetters && stepLetters.length > 0) {
+      allLetters = [...stepLetters];
     }
 
     // Shuffle and create letter objects
@@ -136,18 +143,18 @@
   <!-- Translation hint -->
   <div class="hint-section">
     <p class="translation" dir="rtl">{step.translation}</p>
-    {#if step.phonetic}
+    {#if phonetic}
       <button class="hint-toggle" on:click={() => showHint = !showHint}>
         {showHint ? 'پنهان کردن تلفظ' : 'نمایش تلفظ'}
       </button>
       {#if showHint}
-        <p class="phonetic">[{step.phonetic}]</p>
+        <p class="phonetic">[{phonetic}]</p>
       {/if}
     {/if}
   </div>
 
   <!-- Image if provided -->
-  {#if step.showImage && step.image}
+  {#if showImage && step.image}
     <div class="image-container">
       <img src={step.image} alt={step.word} />
     </div>

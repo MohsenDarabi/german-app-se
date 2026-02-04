@@ -51,7 +51,7 @@
     const now = new Date();
 
     // Count by SRS level (Leitner boxes)
-    const byLevel = {
+    const byLevel: Record<number, number> = {
       0: 0, // New/Learning
       1: 0, // Box 1 (1 day)
       2: 0, // Box 2 (3 days)

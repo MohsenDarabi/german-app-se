@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { SpeedChallengeStep } from "$lib/content-model";
+  import type { SpeedChallengeStep } from "@pkg/content-model";
   import { createEventDispatcher, onMount, onDestroy } from "svelte";
 
   export let step: SpeedChallengeStep;

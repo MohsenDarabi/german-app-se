@@ -12,8 +12,7 @@
   import TrueFalseStep from "./steps/TrueFalseStep.svelte";
   import SpeedChallengeStep from "./steps/SpeedChallengeStep.svelte";
   import CompletionStep from "./steps/CompletionStep.svelte";
-  import ListenAndChooseStep from "./steps/ListenAndChooseStep.svelte";
-  import FormalityChoiceStep from "./steps/FormalityChoiceStep.svelte";
+  // ListenAndChooseStep and FormalityChoiceStep removed - not in schema, no content uses them
   import MemoryMatchStep from "./steps/MemoryMatchStep.svelte";
   import WordHuntStep from "./steps/WordHuntStep.svelte";
   import RapidFireStep from "./steps/RapidFireStep.svelte";
@@ -28,10 +27,13 @@
 
   export let step: LessonStep;
   export let lessonId: string = '';
+
+  // For unknown step types, get the type safely
+  $: unknownStepType = (step as unknown as { type: string }).type;
 </script>
 
 <div class="step-wrapper">
-  {#if step.type === "word-quiz" || step.type === "multiple-choice"}
+  {#if step.type === "multiple-choice"}
     <WordQuizStep {step} {lessonId} on:answer />
   {:else if step.type === "new-word"}
     <NewWordStep {step} {lessonId} />
@@ -55,21 +57,12 @@
     <SpeedChallengeStep {step} {lessonId} on:answer />
   {:else if step.type === "completion"}
     <CompletionStep {step} {lessonId} on:answer />
-  {:else if step.type === "listen-and-choose"}
-    <ListenAndChooseStep {step} {lessonId} on:answer />
-  {:else if step.type === "formality-choice"}
-    <FormalityChoiceStep {step} {lessonId} on:answer />
   {:else if step.type === "memory-match"}
     <MemoryMatchStep {step} {lessonId} on:answer />
   {:else if step.type === "word-hunt"}
     <WordHuntStep {step} {lessonId} on:answer />
   {:else if step.type === "rapid-fire"}
     <RapidFireStep {step} {lessonId} on:answer />
-  {:else if step.type === "chat-simulator"}
-    <!-- Chat simulator disabled - will be replaced by AI chatbot -->
-    <div class="disabled-step" dir="rtl">
-      <p>این قابلیت به زودی با چت‌بات هوشمند جایگزین می‌شود.</p>
-    </div>
   {:else if step.type === "vocab-check"}
     <VocabCheckStep {step} {lessonId} on:answer />
   {:else if step.type === "syllable-spelling"}
@@ -84,7 +77,7 @@
     <StoryStep {step} {lessonId} on:answer />
   {:else}
     <div class="unknown-step">
-      <p>Unknown step type: {step.type}</p>
+      <p>Unknown step type: {unknownStepType}</p>
       <pre>{JSON.stringify(step, null, 2)}</pre>
     </div>
   {/if}
@@ -110,13 +103,5 @@
     border-radius: 0.5rem;
     overflow: auto;
     font-size: 0.85rem;
-  }
-  .disabled-step {
-    padding: 2rem;
-    background: #f8fafc;
-    border: 2px dashed #cbd5e1;
-    border-radius: 0.75rem;
-    text-align: center;
-    color: #64748b;
   }
 </style>

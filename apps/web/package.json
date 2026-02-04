@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint .",
-    "typecheck": "echo 'skipping: use svelte-check when pre-existing errors are fixed'",
+    "typecheck": "svelte-kit sync && svelte-check --threshold error",
     "test": "vitest",
     "rebuild": "./scripts/rebuild.sh"
   },

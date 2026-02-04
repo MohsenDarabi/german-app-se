@@ -22,7 +22,7 @@
 
   // Smart pre-caching: preload next lesson when near completion
   let preloadTriggered = false;
-  $: if (browser && !preloadTriggered && $lessonStore.currentStepIndex >= $lessonStore.lesson?.steps?.length - 2) {
+  $: if (browser && !preloadTriggered && $lessonStore.currentIndex >= ($lessonStore.lesson?.steps?.length ?? 0) - 2) {
     preloadTriggered = true;
     contentService.preloadNextLesson(data.lessonId);
   }
@@ -124,7 +124,7 @@
 
       // Skip wrong answer tracking for steps that don't work well with review format
       // Only save wrong answers when we have actual answer data to review later
-      if (!skipReviewStepTypes.includes($currentStep.type) && (userAnswer || correctAnswer)) {
+      if ($currentStep && !skipReviewStepTypes.includes($currentStep.type) && (userAnswer || correctAnswer)) {
         await saveWrongAnswer({
           lessonId: data.lesson.id,
           stepId: $currentStep.id,

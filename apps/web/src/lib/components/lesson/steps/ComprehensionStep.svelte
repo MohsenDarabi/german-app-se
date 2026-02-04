@@ -40,10 +40,23 @@
     isCorrect: false
   };
 
+  // Access extended step properties (may exist in content but not in schema type)
+  $: stepAny = step as unknown as Record<string, unknown>;
+  $: showTranslationToggle = stepAny.showTranslationToggle as boolean;
+  $: allowReplay = stepAny.allowReplay as boolean;
+  $: mediaAutoPlay = step.media ? (step.media as unknown as Record<string, unknown>).autoPlay as boolean : false;
+
+  // Helper to get question's extended properties
+  $: questionAny = currentQuestion as unknown as Record<string, unknown>;
+  $: questionTranslation = questionAny.questionTranslation as string;
+  $: questionExplanation = questionAny.explanation as string;
+  // Schema uses correctIndex, but legacy may use correctAnswerIndex
+  $: correctAnswerIdx = currentQuestion.correctIndex ?? (questionAny.correctAnswerIndex as number);
+
   function selectOption(optionIndex: number) {
     if (currentAnswerState.isAnswered) return;
 
-    const isCorrect = optionIndex === currentQuestion.correctAnswerIndex;
+    const isCorrect = optionIndex === correctAnswerIdx;
 
     answerStates[currentQuestionIndex] = {
       selectedIndex: optionIndex,
@@ -99,7 +112,7 @@
           <audio
             controls
             src={step.media.url}
-            autoplay={step.media.autoPlay}
+            autoplay={mediaAutoPlay}
           >
             Your browser does not support audio.
           </audio>
@@ -110,7 +123,7 @@
           <video
             controls
             src={step.media.url}
-            autoplay={step.media.autoPlay}
+            autoplay={mediaAutoPlay}
           >
             Your browser does not support video.
           </video>
@@ -123,7 +136,7 @@
   <div class="passage-section">
     <div class="passage-header">
       <span class="passage-label">متن</span>
-      {#if step.showTranslationToggle}
+      {#if showTranslationToggle}
         <button class="translation-toggle" on:click={toggleTranslation}>
           {showTranslation ? 'پنهان کردن ترجمه' : 'نمایش ترجمه'}
         </button>
@@ -136,7 +149,7 @@
         <p class="passage-text persian" dir="rtl">{step.passage.fa}</p>
       {/if}
 
-      {#if step.allowReplay && !step.media}
+      {#if allowReplay && !step.media}
         <div class="audio-row">
           <AudioButton
             text={step.passage.de}
@@ -171,8 +184,8 @@
         <p class="question-text">
           <BiDiText text={currentQuestion.question} />
         </p>
-        {#if currentQuestion.questionTranslation && !currentAnswerState.isAnswered}
-          <p class="question-translation" dir="rtl">{currentQuestion.questionTranslation}</p>
+        {#if questionTranslation && !currentAnswerState.isAnswered}
+          <p class="question-translation" dir="rtl">{questionTranslation}</p>
         {/if}
 
         <div class="options-list">
@@ -180,7 +193,7 @@
             <button
               class="option-btn"
               class:selected={currentAnswerState.selectedIndex === i}
-              class:correct={currentAnswerState.isAnswered && i === currentQuestion.correctAnswerIndex}
+              class:correct={currentAnswerState.isAnswered && i === correctAnswerIdx}
               class:wrong={currentAnswerState.isAnswered && currentAnswerState.selectedIndex === i && !currentAnswerState.isCorrect}
               disabled={currentAnswerState.isAnswered}
               on:click={() => selectOption(i)}
@@ -197,11 +210,11 @@
             {#if currentAnswerState.isCorrect}
               <p class="feedback-text">آفرین! درست است</p>
             {:else}
-              <p class="feedback-text">پاسخ صحیح: {currentQuestion.options[currentQuestion.correctAnswerIndex]}</p>
+              <p class="feedback-text">پاسخ صحیح: {currentQuestion.options[correctAnswerIdx]}</p>
             {/if}
 
-            {#if currentQuestion.explanation}
-              <p class="explanation">{currentQuestion.explanation}</p>
+            {#if questionExplanation}
+              <p class="explanation">{questionExplanation}</p>
             {/if}
 
             <div class="action-buttons">

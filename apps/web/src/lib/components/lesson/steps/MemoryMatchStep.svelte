@@ -30,9 +30,12 @@
 
   $: totalPairs = step.pairs.length;
   $: totalCards = totalPairs * 2;
-  // Calculate columns to minimize rows while keeping reasonable card size
-  // Prefer wider grids to avoid scrolling
-  $: columns = step.columns || (totalCards <= 6 ? 3 : totalCards <= 8 ? 4 : totalCards <= 12 ? 4 : 5);
+  // Access extended step properties (may exist in content but not in schema type)
+  // Using unknown cast to avoid template expression issues
+  $: stepAny = step as unknown as Record<string, unknown>;
+  $: columns = (stepAny.columns as number) || (totalCards <= 6 ? 3 : totalCards <= 8 ? 4 : totalCards <= 12 ? 4 : 5);
+  $: stepInstruction = (stepAny.instruction as string) || 'کارت‌های همسان را پیدا کنید!';
+  $: showAttempts = stepAny.showAttempts as boolean;
 
   onMount(() => {
     initGame();
@@ -172,11 +175,11 @@
 
 <div class="memory-container">
   <!-- Header -->
-  <h2 class="instruction" dir="rtl">{step.instruction || 'کارت‌های همسان را پیدا کنید!'}</h2>
+  <h2 class="instruction" dir="rtl">{stepInstruction}</h2>
 
   <!-- Stats bar -->
   <div class="stats-bar">
-    {#if step.showAttempts}
+    {#if showAttempts}
       <div class="stat">
         <span class="stat-icon">🎯</span>
         <span class="stat-value">{attempts}</span>

@@ -8,16 +8,18 @@
   let isOnline = true;
   let isAuthenticated = false;
   let checkInterval: number;
+  let authUnsubscribe: (() => void) | null = null;
 
-  onMount(async () => {
+  onMount(() => {
     // Check initial online status
     if (typeof navigator !== 'undefined') {
       isOnline = navigator.onLine;
     }
 
-    // Check authentication status
-    const { data: { session } } = await supabase.auth.getSession();
-    isAuthenticated = !!session;
+    // Check authentication status (async but we don't await)
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      isAuthenticated = !!session;
+    });
 
     // Get initial sync time
     lastSyncTime = syncEngine.getLastSyncTime();
@@ -38,10 +40,11 @@
     const { data: authListener } = supabase.auth.onAuthStateChange((_, session) => {
       isAuthenticated = !!session;
     });
+    authUnsubscribe = () => authListener.subscription.unsubscribe();
 
     return () => {
       if (checkInterval) clearInterval(checkInterval);
-      authListener.subscription.unsubscribe();
+      if (authUnsubscribe) authUnsubscribe();
     };
   });
 

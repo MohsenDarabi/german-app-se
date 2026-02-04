@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { WordHuntStep } from "$lib/content-model";
+  import type { WordHuntStep } from "@pkg/content-model";
   import { createEventDispatcher, onMount } from "svelte";
 
   export let step: WordHuntStep;
@@ -35,8 +35,18 @@
   let timerInterval: ReturnType<typeof setInterval> | null = null;
   let selectionStart: Cell | null = null;
 
-  $: totalWords = step.words.length;
-  $: gridSize = step.gridSize || 6;
+  // Access extended step properties (may exist in content but not in schema type)
+  $: stepAny = step as unknown as Record<string, unknown>;
+  // Use targetWords from schema, with fallback for legacy "words" property
+  $: words = step.targetWords || (stepAny.words as unknown[]) || [];
+  $: totalWords = words.length;
+  // gridSize can be { rows, cols } object or legacy number
+  $: gridSizeObj = step.gridSize || { rows: 6, cols: 6 };
+  $: gridRows = typeof gridSizeObj === 'number' ? gridSizeObj : gridSizeObj.rows;
+  $: gridCols = typeof gridSizeObj === 'number' ? gridSizeObj : gridSizeObj.cols;
+  // Extended properties
+  $: showHints = stepAny.showHints as boolean;
+  $: directions = (stepAny.directions as string[]) || ['horizontal', 'vertical'];
 
   // German letter frequencies for filling empty cells
   const GERMAN_LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZÄÖÜ';
@@ -62,8 +72,8 @@
 
   function generateGrid() {
     // Initialize empty grid
-    grid = Array(gridSize).fill(null).map((_, row) =>
-      Array(gridSize).fill(null).map((_, col) => ({
+    grid = Array(gridRows).fill(null).map((_, row) =>
+      Array(gridCols).fill(null).map((_, col) => ({
         letter: '',
         row,
         col,
@@ -76,7 +86,8 @@
     placedWords = [];
 
     // Sort words by length (longest first for better placement)
-    const sortedWords = [...step.words].sort((a, b) => b.word.length - a.word.length);
+    // Handle both old format (array of objects with word/translation) and new format (array of strings)
+    const sortedWords = [...words].map(w => typeof w === 'string' ? { word: w, translation: '' } : w).sort((a, b) => b.word.length - a.word.length);
 
     // Try to place each word
     for (const wordInfo of sortedWords) {
@@ -88,8 +99,8 @@
     }
 
     // Fill empty cells with random German letters
-    for (let row = 0; row < gridSize; row++) {
-      for (let col = 0; col < gridSize; col++) {
+    for (let row = 0; row < gridRows; row++) {
+      for (let col = 0; col < gridCols; col++) {
         if (!grid[row][col].letter) {
           grid[row][col].letter = GERMAN_LETTERS[Math.floor(Math.random() * GERMAN_LETTERS.length)];
         }
@@ -98,7 +109,6 @@
   }
 
   function placeWord(word: string, translation: string): boolean {
-    const directions = step.directions || ['horizontal', 'vertical'];
     const maxAttempts = 100;
 
     for (let attempt = 0; attempt < maxAttempts; attempt++) {
@@ -106,8 +116,8 @@
       const { dRow, dCol } = getDirectionDelta(direction);
 
       // Calculate valid starting positions
-      const maxRow = gridSize - (dRow > 0 ? word.length : 1);
-      const maxCol = gridSize - (dCol > 0 ? word.length : 1);
+      const maxRow = gridRows - (dRow > 0 ? word.length : 1);
+      const maxCol = gridCols - (dCol > 0 ? word.length : 1);
       const minRow = dRow < 0 ? word.length - 1 : 0;
       const minCol = dCol < 0 ? word.length - 1 : 0;
 
@@ -124,7 +134,7 @@
         const row = startRow + i * dRow;
         const col = startCol + i * dCol;
 
-        if (row < 0 || row >= gridSize || col < 0 || col >= gridSize) {
+        if (row < 0 || row >= gridRows || col < 0 || col >= gridCols) {
           canPlace = false;
           break;
         }
@@ -232,7 +242,7 @@
     for (let i = 0; i <= distance; i++) {
       const row = start.row + i * dRow;
       const col = start.col + i * dCol;
-      if (row >= 0 && row < gridSize && col >= 0 && col < gridSize) {
+      if (row >= 0 && row < gridRows && col >= 0 && col < gridCols) {
         cells.push(grid[row][col]);
       }
     }
@@ -321,7 +331,7 @@
 
   function getHintClass(word: PlacedWord): string {
     if (word.found) return '';
-    if (!step.showHints) return '';
+    if (!showHints) return '';
 
     // Highlight first letter position
     const firstCell = word.cells[0];
@@ -365,7 +375,7 @@
   <!-- Grid -->
   <div
     class="grid-container"
-    style="--grid-size: {gridSize}"
+    style="--grid-size: {gridCols}"
   >
     {#each grid as row, rowIdx (rowIdx)}
       {#each row as cell, colIdx (`${rowIdx}:${colIdx}`)}
@@ -373,7 +383,7 @@
           class="grid-cell"
           class:selected={cell.selected}
           class:found={cell.found}
-          class:hint={step.showHints && placedWords.some(w => !w.found && w.cells[0]?.row === rowIdx && w.cells[0]?.col === colIdx)}
+          class:hint={showHints && placedWords.some(w => !w.found && w.cells[0]?.row === rowIdx && w.cells[0]?.col === colIdx)}
           on:click={() => handleCellClick(cell)}
           disabled={gameComplete || timeOut}
         >

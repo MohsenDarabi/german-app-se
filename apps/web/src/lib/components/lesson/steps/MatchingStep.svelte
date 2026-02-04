@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { MatchingStep } from "$lib/content-model";
+  import type { MatchingStep } from "@pkg/content-model";
   import { createEventDispatcher } from "svelte";
   import BiDiText from "$lib/components/ui/BiDiText.svelte";
 
