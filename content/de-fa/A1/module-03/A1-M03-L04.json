@@ -17,8 +17,87 @@
   "level": "A1",
   "module": 3,
   "lessonNumber": 4,
-  "totalSteps": 26,
   "estimatedMinutes": 15,
+  "vocabulary": [
+    {
+      "de": "sondern",
+      "fa": "بلکه",
+      "grammar": {
+        "pos": "conjunction",
+        "note": "فقط بعد از جمله منفی می‌آید"
+      }
+    },
+    {
+      "de": "noch",
+      "fa": "هنوز",
+      "grammar": {
+        "pos": "adverb"
+      }
+    },
+    {
+      "de": "noch nicht",
+      "fa": "هنوز نه",
+      "grammar": {
+        "pos": "phrase"
+      }
+    },
+    {
+      "de": "schon",
+      "fa": "دیگر / قبلاً",
+      "grammar": {
+        "pos": "adverb"
+      }
+    },
+    {
+      "de": "immer",
+      "fa": "همیشه",
+      "grammar": {
+        "pos": "adverb"
+      }
+    },
+    {
+      "de": "nie",
+      "fa": "هرگز",
+      "grammar": {
+        "pos": "adverb"
+      }
+    },
+    {
+      "de": "manchmal",
+      "fa": "گاهی",
+      "grammar": {
+        "pos": "adverb"
+      }
+    },
+    {
+      "de": "oft",
+      "fa": "اغلب",
+      "grammar": {
+        "pos": "adverb"
+      }
+    },
+    {
+      "de": "nur",
+      "fa": "فقط",
+      "grammar": {
+        "pos": "adverb"
+      }
+    },
+    {
+      "de": "wirklich",
+      "fa": "واقعاً",
+      "grammar": {
+        "pos": "adverb"
+      }
+    },
+    {
+      "de": "fertig",
+      "fa": "تمام / آماده",
+      "grammar": {
+        "pos": "adjective"
+      }
+    }
+  ],
   "steps": [
     {
       "type": "grammar-tip",
@@ -49,6 +128,15 @@
           "fa": "نه من، بلکه تو!"
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-1",
+      "word": "sondern",
+      "translation": "بلکه",
+      "syllables": ["son", "dern"],
+      "hint": "۲ بخش",
+      "distractors": ["san", "sin", "dirn"]
     },
     {
       "type": "grammar-tip",
@@ -95,11 +183,20 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-2",
+      "word": "noch nicht",
+      "translation": "هنوز نه",
+      "syllables": ["noch", "nicht"],
+      "hint": "۲ کلمه",
+      "distractors": ["nach", "nocht", "nischt"]
+    },
+    {
       "type": "new-word",
       "id": "s6",
       "word": {
         "de": "schon",
-        "fa": "قبلاً / دیگر"
+        "fa": "دیگر / قبلاً"
       },
       "example": {
         "text": {
@@ -107,6 +204,15 @@
           "fa": "دیگر تمام کردم."
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-3",
+      "word": "schon",
+      "translation": "دیگر / قبلاً",
+      "syllables": ["sch", "on"],
+      "hint": "۲ بخش - توجه به sch",
+      "distractors": ["scho", "son", "schan"]
     },
     {
       "type": "grammar-tip",
@@ -129,6 +235,9 @@
       "id": "g1",
       "title": "noch یا schon؟",
       "instruction": "کلمه مناسب را انتخاب کنید",
+      "timePerQuestion": 5,
+      "basePoints": 10,
+      "showStreak": true,
       "questions": [
         {
           "prompt": "Ich bin ___ müde. (هنوز)",
@@ -177,6 +286,15 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-4",
+      "word": "immer",
+      "translation": "همیشه",
+      "syllables": ["im", "mer"],
+      "hint": "۲ بخش",
+      "distractors": ["em", "mir", "imer"]
+    },
+    {
       "type": "new-word",
       "id": "s9",
       "word": {
@@ -203,6 +321,15 @@
           "fa": "گاهی خسته‌ام."
         }
       }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-5",
+      "word": "manchmal",
+      "translation": "گاهی",
+      "syllables": ["manch", "mal"],
+      "hint": "۲ بخش",
+      "distractors": ["mench", "mol", "mahl"]
     },
     {
       "type": "new-word",
@@ -266,6 +393,23 @@
             "fa": "نه، هنوز نه کاملاً!"
           }
         }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        {
+          "question": "الی چه نوشیدنی می‌نوشد؟",
+          "options": ["قهوه", "چای", "آب"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: «Ich trinke nie Kaffee, sondern nur Tee.»",
+          "relatedLineIndex": 2
+        },
+        {
+          "question": "تام چند وقت یکبار قهوه می‌نوشد؟",
+          "options": ["هرگز", "گاهی", "اغلب"],
+          "correctIndex": 2,
+          "explanation": "تام گفت: «Ich trinke oft Kaffee.»",
+          "relatedLineIndex": 3
+        }
       ]
     },
     {
@@ -297,21 +441,28 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-6",
+      "word": "wirklich",
+      "translation": "واقعاً",
+      "syllables": ["wirk", "lich"],
+      "hint": "۲ بخش",
+      "distractors": ["werk", "lech", "wich"]
+    },
+    {
       "type": "fill-in-blank",
       "id": "s15",
       "instruction": "جای خالی را پر کنید",
       "sentence": "Das ist nicht rot, {0} blau.",
-      "options": [
-        "aber",
-        "sondern",
-        "und",
-        "oder"
-      ],
-      "correctAnswers": [
-        1
-      ],
+      "options": ["aber", "sondern", "und", "oder"],
+      "correctAnswers": [1],
       "feedback": {
         "explanation": "Das ist nicht rot, **sondern** blau. (بعد از منفی + جایگزین = sondern)"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! nicht + جایگزین = sondern",
+        "onWrong": "دقت کنید: وقتی چیزی را رد می‌کنید و جایگزین می‌دهید، از sondern استفاده کنید.",
+        "errorCategory": "grammar"
       }
     },
     {
@@ -319,17 +470,15 @@
       "id": "s16",
       "instruction": "جای خالی را پر کنید",
       "sentence": "Ich bin müde, {0} ich arbeite.",
-      "options": [
-        "aber",
-        "sondern",
-        "und",
-        "oder"
-      ],
-      "correctAnswers": [
-        0
-      ],
+      "options": ["aber", "sondern", "und", "oder"],
+      "correctAnswers": [0],
       "feedback": {
         "explanation": "Ich bin müde, **aber** ich arbeite. (اضافه کردن متضاد = aber)"
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! وقتی دو چیز متضاد را کنار هم می‌گذارید (بدون رد کردن) از aber استفاده کنید.",
+        "onWrong": "دقت کنید: اینجا جمله منفی نیست، پس از aber استفاده می‌کنیم.",
+        "errorCategory": "grammar"
       }
     },
     {
@@ -337,17 +486,15 @@
       "id": "s17",
       "instruction": "جای خالی را پر کنید",
       "sentence": "Er ist {0} nicht hier.",
-      "options": [
-        "noch",
-        "schon",
-        "immer",
-        "nie"
-      ],
-      "correctAnswers": [
-        0
-      ],
+      "options": ["noch", "schon", "immer", "nie"],
+      "correctAnswers": [0],
       "feedback": {
         "explanation": "Er ist **noch** nicht hier. = او هنوز اینجا نیست."
+      },
+      "feedbackTip": {
+        "onCorrect": "آفرین! noch nicht = هنوز نه",
+        "onWrong": "دقت کنید: noch nicht یک عبارت ثابت است به معنی «هنوز نه».",
+        "errorCategory": "vocabulary"
       }
     },
     {
@@ -364,6 +511,11 @@
       "feedback": {
         "correct": "آفرین! بعد از nicht + جایگزین = sondern",
         "incorrect": "پاسخ صحیح: Ich trinke nicht Tee, sondern Kaffee."
+      },
+      "feedbackTip": {
+        "onCorrect": "عالی! nicht ... sondern = نه ... بلکه",
+        "onWrong": "یادتان باشد: sondern فقط بعد از جمله منفی می‌آید و جایگزین می‌دهد.",
+        "errorCategory": "grammar"
       }
     },
     {
@@ -371,53 +523,25 @@
       "id": "s19",
       "instruction": "کلمه آلمانی را با معنی جفت کنید",
       "items": [
-        {
-          "id": "i1",
-          "text": "immer"
-        },
-        {
-          "id": "i2",
-          "text": "nie"
-        },
-        {
-          "id": "i3",
-          "text": "manchmal"
-        }
+        { "id": "i1", "text": "immer" },
+        { "id": "i2", "text": "nie" },
+        { "id": "i3", "text": "manchmal" }
       ],
       "matches": [
-        {
-          "id": "m1",
-          "text": "همیشه"
-        },
-        {
-          "id": "m2",
-          "text": "هرگز"
-        },
-        {
-          "id": "m3",
-          "text": "گاهی"
-        }
+        { "id": "m1", "text": "همیشه" },
+        { "id": "m2", "text": "هرگز" },
+        { "id": "m3", "text": "گاهی" }
       ],
-      "correctPairs": [
-        [
-          "i1",
-          "m1"
-        ],
-        [
-          "i2",
-          "m2"
-        ],
-        [
-          "i3",
-          "m3"
-        ]
-      ]
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"]]
     },
     {
       "type": "rapid-fire",
       "id": "g2",
       "title": "aber یا sondern؟",
       "instruction": "کلمه مناسب را انتخاب کنید",
+      "timePerQuestion": 5,
+      "basePoints": 10,
+      "showStreak": true,
       "questions": [
         {
           "prompt": "Er ist klein, ___ stark.",
@@ -482,55 +606,45 @@
       }
     },
     {
+      "type": "syllable-spelling",
+      "id": "syllable-7",
+      "word": "fertig",
+      "translation": "تمام / آماده",
+      "syllables": ["fer", "tig"],
+      "hint": "۲ بخش",
+      "distractors": ["far", "teg", "fir"]
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Ich bin noch nicht fertig.",
+      "translation": "هنوز تمام نکردم.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Das ist nicht rot, sondern blau.",
+      "translation": "این قرمز نیست، بلکه آبی است.",
+      "difficulty": "A1"
+    },
+    {
       "type": "vocab-check",
       "id": "g3",
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [
-        {
-          "de": "sondern",
-          "fa": "بلکه"
-        },
-        {
-          "de": "noch",
-          "fa": "هنوز"
-        },
-        {
-          "de": "noch nicht",
-          "fa": "هنوز نه"
-        },
-        {
-          "de": "schon",
-          "fa": "دیگر / قبلاً"
-        },
-        {
-          "de": "immer",
-          "fa": "همیشه"
-        },
-        {
-          "de": "nie",
-          "fa": "هرگز"
-        },
-        {
-          "de": "manchmal",
-          "fa": "گاهی"
-        },
-        {
-          "de": "oft",
-          "fa": "اغلب"
-        },
-        {
-          "de": "nur",
-          "fa": "فقط"
-        },
-        {
-          "de": "wirklich",
-          "fa": "واقعاً"
-        },
-        {
-          "de": "fertig",
-          "fa": "تمام / آماده"
-        }
+        { "de": "sondern", "fa": "بلکه" },
+        { "de": "noch", "fa": "هنوز" },
+        { "de": "noch nicht", "fa": "هنوز نه" },
+        { "de": "schon", "fa": "دیگر / قبلاً" },
+        { "de": "immer", "fa": "همیشه" },
+        { "de": "nie", "fa": "هرگز" },
+        { "de": "manchmal", "fa": "گاهی" },
+        { "de": "oft", "fa": "اغلب" },
+        { "de": "nur", "fa": "فقط" },
+        { "de": "wirklich", "fa": "واقعاً" },
+        { "de": "fertig", "fa": "تمام / آماده" }
       ]
     },
     {
@@ -541,72 +655,17 @@
       "xpEarned": 50,
       "nextLessonId": "A1-M04-L01",
       "vocabularyLearned": [
-        {
-          "word": {
-            "de": "sondern",
-            "fa": "بلکه"
-          }
-        },
-        {
-          "word": {
-            "de": "noch",
-            "fa": "هنوز"
-          }
-        },
-        {
-          "word": {
-            "de": "noch nicht",
-            "fa": "هنوز نه"
-          }
-        },
-        {
-          "word": {
-            "de": "schon",
-            "fa": "دیگر / قبلاً"
-          }
-        },
-        {
-          "word": {
-            "de": "immer",
-            "fa": "همیشه"
-          }
-        },
-        {
-          "word": {
-            "de": "nie",
-            "fa": "هرگز"
-          }
-        },
-        {
-          "word": {
-            "de": "manchmal",
-            "fa": "گاهی"
-          }
-        },
-        {
-          "word": {
-            "de": "oft",
-            "fa": "اغلب"
-          }
-        },
-        {
-          "word": {
-            "de": "nur",
-            "fa": "فقط"
-          }
-        },
-        {
-          "word": {
-            "de": "wirklich",
-            "fa": "واقعاً"
-          }
-        },
-        {
-          "word": {
-            "de": "fertig",
-            "fa": "تمام / آماده"
-          }
-        }
+        { "word": { "de": "sondern", "fa": "بلکه" } },
+        { "word": { "de": "noch", "fa": "هنوز" } },
+        { "word": { "de": "noch nicht", "fa": "هنوز نه" } },
+        { "word": { "de": "schon", "fa": "دیگر / قبلاً" } },
+        { "word": { "de": "immer", "fa": "همیشه" } },
+        { "word": { "de": "nie", "fa": "هرگز" } },
+        { "word": { "de": "manchmal", "fa": "گاهی" } },
+        { "word": { "de": "oft", "fa": "اغلب" } },
+        { "word": { "de": "nur", "fa": "فقط" } },
+        { "word": { "de": "wirklich", "fa": "واقعاً" } },
+        { "word": { "de": "fertig", "fa": "تمام / آماده" } }
       ]
     }
   ]
