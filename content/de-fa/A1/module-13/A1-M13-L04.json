@@ -1,0 +1,423 @@
+{
+  "id": "A1-M13-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "mögen und möchten", "fa": "دوست داشتن و خواستن" },
+  "description": "یاد بگیرید چطور بگویید چه چیزهایی دوست دارید و چه می‌خواهید",
+  "level": "A1",
+  "module": 13,
+  "lessonNumber": 4,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "mögen", "fa": "دوست داشتن", "grammar": { "pos": "verb" } },
+    { "de": "möchten", "fa": "خواستن (مؤدبانه)", "grammar": { "pos": "verb" } },
+    { "de": "der Kaffee", "fa": "قهوه", "grammar": { "pos": "noun", "gender": "masculine" } },
+    { "de": "der Tee", "fa": "چای", "grammar": { "pos": "noun", "gender": "masculine" } },
+    { "de": "die Musik", "fa": "موسیقی", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "das Essen", "fa": "غذا", "grammar": { "pos": "noun", "gender": "neuter" } },
+    { "de": "gern", "fa": "با میل", "grammar": { "pos": "adverb" } },
+    { "de": "lieber", "fa": "ترجیحاً", "grammar": { "pos": "adverb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "mögen - دوست داشتن",
+      "content": "**mögen** = دوست داشتن\n\n🎯 برای بیان علاقه به چیزی:\n• Ich **mag** Kaffee. = قهوه دوست دارم.\n• **Magst** du Musik? = موسیقی دوست داری؟\n\n📝 **صرف mögen:**\n• ich **mag**\n• du **magst**\n• er/sie/es **mag**\n• wir **mögen**\n• ihr **mögt**\n• sie/Sie **mögen**",
+      "examples": [
+        { "de": "Ich mag dich.", "fa": "دوستت دارم." },
+        { "de": "Magst du Tee?", "fa": "چای دوست داری؟" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "mögen", "fa": "دوست داشتن" },
+      "example": { "text": { "de": "Ich mag Schokolade.", "fa": "شکلات دوست دارم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-moegen",
+      "word": "mögen",
+      "translation": "دوست داشتن",
+      "syllables": ["mö", "gen"],
+      "distractors": ["ma", "gan", "me", "gun"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "der Kaffee", "fa": "قهوه" },
+      "example": { "text": { "de": "Ich mag Kaffee sehr.", "fa": "قهوه خیلی دوست دارم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "der Tee", "fa": "چای" },
+      "example": { "text": { "de": "Magst du Tee oder Kaffee?", "fa": "چای دوست داری یا قهوه؟" } }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«Ich mag Musik» یعنی چه؟",
+      "options": ["موسیقی می‌شنوم", "موسیقی دوست دارم", "موسیقی می‌خواهم", "موسیقی می‌توانم"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "mögen = دوست داشتن" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich {0} Kaffee.",
+      "options": ["mag", "magst", "mögen", "mögt"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "ich mag (اول شخص مفرد)" }
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "die Musik", "fa": "موسیقی" },
+      "example": { "text": { "de": "Ich mag klassische Musik.", "fa": "موسیقی کلاسیک دوست دارم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "das Essen", "fa": "غذا" },
+      "example": { "text": { "de": "Ich mag deutsches Essen.", "fa": "غذای آلمانی دوست دارم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-kaffee",
+      "word": "Kaffee",
+      "translation": "قهوه",
+      "syllables": ["Kaf", "fee"],
+      "distractors": ["Kof", "faa", "Kef", "fie"]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "چیزهایی که دوست داریم",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "mögen", "left": "دوست داشتن", "right": "باید", "correctSide": "left" },
+        { "prompt": "der Kaffee", "left": "چای", "right": "قهوه", "correctSide": "right" },
+        { "prompt": "der Tee", "left": "چای", "right": "قهوه", "correctSide": "left" },
+        { "prompt": "die Musik", "left": "موسیقی", "right": "فیلم", "correctSide": "left" },
+        { "prompt": "das Essen", "left": "نوشیدنی", "right": "غذا", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "möchten - می‌خواهم (مؤدبانه)",
+      "content": "**möchten** = می‌خواهم (شکل مؤدبانه)\n\n🎯 برای درخواست مؤدبانه:\n• Ich **möchte** einen Kaffee. = یک قهوه می‌خواهم.\n• **Möchtest** du Tee? = چای می‌خواهی؟\n\n📝 **صرف möchten:**\n• ich **möchte**\n• du **möchtest**\n• er/sie/es **möchte**\n• wir **möchten**\n• ihr **möchtet**\n• sie/Sie **möchten**\n\n⚠️ تفاوت:\n• **mögen** = دوست داشتن (علاقه)\n• **möchten** = خواستن (درخواست مؤدبانه)",
+      "examples": [
+        { "de": "Ich möchte bestellen.", "fa": "می‌خواهم سفارش بدهم." },
+        { "de": "Möchten Sie Kaffee?", "fa": "قهوه می‌خواهید؟" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "möchten", "fa": "خواستن (مؤدبانه)" },
+      "example": { "text": { "de": "Ich möchte zahlen, bitte.", "fa": "می‌خواهم حساب کنم، لطفاً." } }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "برای سفارش مؤدبانه در رستوران از کدام فعل استفاده می‌کنیم؟",
+      "options": ["mögen", "müssen", "möchten", "können"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین!", "incorrect": "möchten برای درخواست مؤدبانه: Ich möchte..." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} du einen Tee?",
+      "options": ["Möchtest", "Magst", "Möchte", "Mag"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Möchtest du...? = می‌خواهی...؟ (درخواست)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در کافه",
+      "context": "الی در کافه سفارش می‌دهد",
+      "lines": [
+        { "speaker": "Kellner", "text": { "de": "Guten Tag! Was möchten Sie?", "fa": "روز بخیر! چه می‌خواهید؟" } },
+        { "speaker": "Eli", "text": { "de": "Ich möchte einen Kaffee, bitte.", "fa": "یک قهوه می‌خواهم، لطفاً." } },
+        { "speaker": "Kellner", "text": { "de": "Mit Milch?", "fa": "با شیر؟" } },
+        { "speaker": "Eli", "text": { "de": "Ja, bitte. Ich mag Kaffee mit Milch.", "fa": "بله، لطفاً. قهوه با شیر دوست دارم." } },
+        { "speaker": "Kellner", "text": { "de": "Möchten Sie auch etwas essen?", "fa": "چیزی هم برای خوردن می‌خواهید؟" } },
+        { "speaker": "Eli", "text": { "de": "Nein, danke. Ich mag keinen Kuchen.", "fa": "نه، ممنون. کیک دوست ندارم." } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "الی چه می‌خواهد؟", "options": ["چای", "قهوه", "کیک"], "correctIndex": 1 },
+        { "question": "الی قهوه را چطور دوست دارد؟", "options": ["بدون شیر", "با شیر", "سرد"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "gern", "fa": "با میل" },
+      "example": { "text": { "de": "Ich trinke gern Kaffee.", "fa": "با میل قهوه می‌نوشم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": { "de": "lieber", "fa": "ترجیحاً" },
+      "example": { "text": { "de": "Ich trinke lieber Tee.", "fa": "ترجیحاً چای می‌نوشم." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s11",
+      "title": "gern و lieber",
+      "content": "📊 **بیان علاقه با gern و lieber:**\n\n• **gern** = با میل / دوست داشتن\n  Ich trinke **gern** Kaffee. = با میل قهوه می‌نوشم.\n\n• **lieber** = ترجیحاً / بیشتر دوست داشتن\n  Ich trinke **lieber** Tee. = ترجیحاً چای می‌نوشم.\n\n⚠️ تفاوت:\n• **mögen** + اسم: Ich **mag** Kaffee.\n• **gern** + فعل: Ich **trinke gern** Kaffee.\n\nهر دو معنی یکسان دارند!",
+      "examples": [
+        { "de": "Ich esse gern Pizza.", "fa": "با میل پیتزا می‌خورم." },
+        { "de": "Ich esse lieber Pasta.", "fa": "ترجیحاً پاستا می‌خورم." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Du {0} Musik, oder?",
+      "options": ["magst", "mag", "mögen", "mögt"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "du magst (دوم شخص مفرد)" }
+    },
+    {
+      "type": "word-order",
+      "id": "w1",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["Kaffee.", "möchte", "einen", "Ich"],
+      "correctOrder": [3, 1, 2, 0],
+      "correctSentence": { "de": "Ich möchte einen Kaffee.", "fa": "یک قهوه می‌خواهم." }
+    },
+    {
+      "type": "word-order",
+      "id": "w2",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["Musik?", "du", "Magst"],
+      "correctOrder": [2, 1, 0],
+      "correctSentence": { "de": "Magst du Musik?", "fa": "موسیقی دوست داری؟" }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "جملات را با ترجمه جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Ich mag Kaffee." },
+        { "id": "i2", "text": "Ich möchte Kaffee." },
+        { "id": "i3", "text": "Magst du Tee?" },
+        { "id": "i4", "text": "Möchtest du Tee?" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "چای دوست داری؟" },
+        { "id": "m2", "text": "قهوه دوست دارم." },
+        { "id": "m3", "text": "چای می‌خواهی؟" },
+        { "id": "m4", "text": "قهوه می‌خواهم." }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m4"],
+        ["i3", "m1"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-musik",
+      "word": "Musik",
+      "translation": "موسیقی",
+      "syllables": ["Mu", "sik"],
+      "distractors": ["Ma", "sek", "Mo", "sak"]
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "ترجیحات غذایی",
+      "context": "تام و الی درباره غذا صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Tom", "text": { "de": "Magst du italienisches Essen?", "fa": "غذای ایتالیایی دوست داری؟" } },
+        { "speaker": "Eli", "text": { "de": "Ja, ich mag Pizza sehr!", "fa": "بله، پیتزا خیلی دوست دارم!" } },
+        { "speaker": "Tom", "text": { "de": "Ich auch! Aber ich mag lieber Pasta.", "fa": "من هم! ولی پاستا بیشتر دوست دارم." } },
+        { "speaker": "Eli", "text": { "de": "Möchtest du heute Abend essen gehen?", "fa": "می‌خواهی امشب شام بریم بیرون؟" } },
+        { "speaker": "Tom", "text": { "de": "Ja, gern! Ich möchte das neue Restaurant probieren.", "fa": "بله، با کمال میل! می‌خواهم رستوران جدید را امتحان کنم." } },
+        { "speaker": "Eli", "text": { "de": "Super! Um wie viel Uhr?", "fa": "عالی! ساعت چند؟" } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "تام چه غذایی بیشتر دوست دارد؟", "options": ["پیتزا", "پاستا", "سالاد"], "correctIndex": 1 },
+        { "question": "آن‌ها می‌خواهند چه کار کنند؟", "options": ["در خانه غذا بخورند", "به رستوران بروند", "پیتزا سفارش بدهند"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Wir {0} italienisches Essen.",
+      "options": ["mögen", "mag", "magst", "mögt"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "wir mögen (اول شخص جمع)" }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "صرف mögen",
+      "instruction": "صرف درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "ich ...", "left": "mag", "right": "mögen", "correctSide": "left" },
+        { "prompt": "du ...", "left": "mag", "right": "magst", "correctSide": "right" },
+        { "prompt": "er/sie ...", "left": "mag", "right": "magst", "correctSide": "left" },
+        { "prompt": "wir ...", "left": "mögt", "right": "mögen", "correctSide": "right" },
+        { "prompt": "ihr ...", "left": "mögt", "right": "mögen", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "«Ich trinke gern Tee» یعنی چه؟",
+      "options": ["چای می‌نوشم", "با میل چای می‌نوشم", "چای می‌خواهم", "چای باید بنوشم"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "gern = با میل / دوست داشتن" }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-essen",
+      "word": "Essen",
+      "translation": "غذا",
+      "syllables": ["Es", "sen"],
+      "distractors": ["As", "san", "Os", "sun"]
+    },
+    {
+      "type": "word-order",
+      "id": "w3",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["Kaffee.", "gern", "trinke", "Ich"],
+      "correctOrder": [3, 2, 1, 0],
+      "correctSentence": { "de": "Ich trinke gern Kaffee.", "fa": "با میل قهوه می‌نوشم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er {0} einen Tee, bitte.",
+      "options": ["möchte", "möchten", "möchtest", "möchtet"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "er möchte (سوم شخص مفرد)" }
+    },
+    {
+      "type": "matching",
+      "id": "m2",
+      "instruction": "فعل‌های وجهی را با معنی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "können" },
+        { "id": "i2", "text": "müssen" },
+        { "id": "i3", "text": "dürfen" },
+        { "id": "i4", "text": "mögen" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "دوست داشتن" },
+        { "id": "m2", "text": "توانستن" },
+        { "id": "m3", "text": "باید" },
+        { "id": "m4", "text": "اجازه داشتن" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m3"],
+        ["i3", "m4"],
+        ["i4", "m1"]
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "کدام جمله درست است؟",
+      "options": ["Ich mag gern Kaffee.", "Ich trinke mag Kaffee.", "Ich trinke gern Kaffee.", "Ich gern trinke Kaffee."],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین!", "incorrect": "gern با فعل می‌آید: Ich trinke gern Kaffee." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} Sie bestellen?",
+      "options": ["Möchten", "Mögen", "Möchte", "Mag"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Möchten Sie...? = می‌خواهید...؟ (مؤدبانه)" }
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Ich mag Kaffee.",
+      "translation": "قهوه دوست دارم.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Möchtest du Tee?",
+      "translation": "چای می‌خواهی؟",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-3",
+      "targetText": "Ich trinke gern Kaffee.",
+      "translation": "با میل قهوه می‌نوشم.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "memory-match",
+      "id": "g3",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "mögen", "fa": "دوست داشتن" },
+        { "de": "möchten", "fa": "خواستن" },
+        { "de": "der Kaffee", "fa": "قهوه" },
+        { "de": "der Tee", "fa": "چای" },
+        { "de": "die Musik", "fa": "موسیقی" },
+        { "de": "das Essen", "fa": "غذا" }
+      ],
+      "timeLimit": 60
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "mögen", "fa": "دوست داشتن" },
+        { "de": "möchten", "fa": "خواستن (مؤدبانه)" },
+        { "de": "der Kaffee", "fa": "قهوه" },
+        { "de": "der Tee", "fa": "چای" },
+        { "de": "die Musik", "fa": "موسیقی" },
+        { "de": "das Essen", "fa": "غذا" },
+        { "de": "gern", "fa": "با میل" },
+        { "de": "lieber", "fa": "ترجیحاً" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما فعل‌های وجهی mögen و möchten را یاد گرفتید!\n\n📝 **صرف mögen:**\n• ich/er **mag**\n• du **magst**\n• wir/sie **mögen**\n• ihr **mögt**\n\n📝 **صرف möchten:**\n• ich/er **möchte**\n• du **möchtest**\n• wir/sie **möchten**\n• ihr **möchtet**\n\n🎯 **تفاوت:**\n• **mögen** = دوست داشتن (علاقه)\n• **möchten** = خواستن (درخواست مؤدبانه)\n• **gern** + فعل = با میل",
+      "xpEarned": 50,
+      "vocabularyLearned": [
+        { "word": { "de": "mögen", "fa": "دوست داشتن" } },
+        { "word": { "de": "möchten", "fa": "خواستن (مؤدبانه)" } },
+        { "word": { "de": "der Kaffee", "fa": "قهوه" } },
+        { "word": { "de": "der Tee", "fa": "چای" } },
+        { "word": { "de": "die Musik", "fa": "موسیقی" } },
+        { "word": { "de": "das Essen", "fa": "غذا" } },
+        { "word": { "de": "gern", "fa": "با میل" } },
+        { "word": { "de": "lieber", "fa": "ترجیحاً" } }
+      ]
+    }
+  ]
+}

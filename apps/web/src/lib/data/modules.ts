@@ -450,6 +450,12 @@ const DE_FA_A1_MODULES: ModuleStub[] = [
         title: "اجازه (dürfen)",
         description: "یاد بگیرید چطور درباره اجازه و ممنوعیت صحبت کنید.",
         path: "/learn/de-fa/A1/A1-M13-L03"
+      },
+      {
+        id: "A1-M13-L04",
+        title: "دوست داشتن (mögen und möchten)",
+        description: "یاد بگیرید چطور بگویید چه چیزهایی دوست دارید و چه می‌خواهید.",
+        path: "/learn/de-fa/A1/A1-M13-L04"
       }
     ]
   }
