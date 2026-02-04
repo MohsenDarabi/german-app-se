@@ -615,6 +615,12 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         title: "Modalverben - فعل‌های وجهی",
         description: "یاد بگیرید گذشته ساده فعل‌های وجهی را.",
         path: "/learn/de-fa/A2/A2-M05-L02"
+      },
+      {
+        id: "A2-M05-L03",
+        title: "regelmäßige Verben - فعل‌های باقاعده",
+        description: "یاد بگیرید گذشته ساده فعل‌های باقاعده را.",
+        path: "/learn/de-fa/A2/A2-M05-L03"
       }
     ]
   }
