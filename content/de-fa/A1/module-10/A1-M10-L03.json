@@ -311,8 +311,43 @@
       ]
     },
     {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Ich sehe gern fern.",
+      "translation": "دوست دارم تلویزیون ببینم.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Am Wochenende gehe ich ins Kino.",
+      "translation": "آخر هفته به سینما می‌روم.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-3",
+      "targetText": "Wir treffen oft Freunde.",
+      "translation": "ما اغلب با دوستان ملاقات می‌کنیم.",
+      "difficulty": "A1"
+    },
+    {
+      "type": "memory-match",
+      "id": "g4",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "fernsehen", "fa": "تلویزیون دیدن" },
+        { "de": "ausgehen", "fa": "بیرون رفتن" },
+        { "de": "faulenzen", "fa": "استراحت کردن" },
+        { "de": "spazieren", "fa": "قدم زدن" },
+        { "de": "Wochenende", "fa": "آخر هفته" },
+        { "de": "oft", "fa": "اغلب" }
+      ],
+      "timeLimit": 60
+    },
+    {
       "type": "vocab-check",
-      "id": "g3",
+      "id": "g5",
       "title": "خودارزیابی",
       "instruction": "این کلمات را چقدر یاد گرفتید؟",
       "words": [
