@@ -578,6 +578,12 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         title: "weil und dass - چون و که",
         description: "یاد بگیرید جملات پیرو با weil و dass بسازید.",
         path: "/learn/de-fa/A2/A2-M04-L01"
+      },
+      {
+        id: "A2-M04-L02",
+        title: "wenn - اگر / وقتی",
+        description: "یاد بگیرید جملات شرطی و زمانی با wenn بسازید.",
+        path: "/learn/de-fa/A2/A2-M04-L02"
       }
     ]
   }

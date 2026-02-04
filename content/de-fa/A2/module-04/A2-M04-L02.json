@@ -1,0 +1,421 @@
+{
+  "id": "A2-M04-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Nebensätze mit wenn", "fa": "جملات پیرو با wenn" },
+  "description": "یاد بگیرید جملات شرطی و زمانی با wenn بسازید",
+  "level": "A2",
+  "module": 4,
+  "lessonNumber": 2,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "wenn", "fa": "اگر / وقتی", "grammar": { "pos": "conjunction", "type": "subordinating" } },
+    { "de": "immer wenn", "fa": "هر وقت", "grammar": { "pos": "conjunction", "type": "subordinating" } },
+    { "de": "ob", "fa": "آیا / که آیا", "grammar": { "pos": "conjunction", "type": "subordinating" } },
+    { "de": "falls", "fa": "در صورتی که", "grammar": { "pos": "conjunction", "type": "subordinating" } },
+    { "de": "dann", "fa": "آنگاه / پس", "grammar": { "pos": "adverb" } },
+    { "de": "sonst", "fa": "وگرنه", "grammar": { "pos": "adverb" } },
+    { "de": "vielleicht", "fa": "شاید", "grammar": { "pos": "adverb" } },
+    { "de": "bestimmt", "fa": "حتماً", "grammar": { "pos": "adverb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "wenn - اگر / وقتی",
+      "content": "📝 **wenn** دو معنی دارد:\n\n**۱. شرطی (اگر):**\n**Wenn** es regnet, bleibe ich zu Hause.\n(اگر باران بیاید، خانه می‌مانم.)\n\n**۲. زمانی (وقتی):**\n**Wenn** ich nach Hause komme, esse ich.\n(وقتی به خانه می‌آیم، غذا می‌خورم.)\n\n⚠️ فعل در جمله wenn به آخر می‌رود!",
+      "examples": [
+        { "de": "Wenn ich Zeit habe, lese ich.", "fa": "اگر وقت داشته باشم، کتاب می‌خوانم." },
+        { "de": "Ich freue mich, wenn du kommst.", "fa": "خوشحال می‌شوم وقتی بیایی." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "wenn", "fa": "اگر / وقتی" },
+      "example": { "text": { "de": "Wenn es regnet, nehme ich einen Regenschirm.", "fa": "اگر باران بیاید، چتر می‌برم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "immer wenn", "fa": "هر وقت" },
+      "example": { "text": { "de": "Immer wenn ich ihn sehe, lächelt er.", "fa": "هر وقت او را می‌بینم، لبخند می‌زند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-regnet",
+      "word": "regnet",
+      "translation": "باران می‌آید",
+      "syllables": ["reg", "net"],
+      "distractors": ["rag", "nat", "rog", "not"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«Wenn es regnet» یعنی چه؟",
+      "options": ["چون باران می‌آید", "اگر باران بیاید", "تا باران بیاید", "بعد از باران"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین!", "incorrect": "wenn = اگر / وقتی" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} ich Zeit habe, gehe ich ins Kino.",
+      "options": ["Wenn", "Weil", "Dass", "Und"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "wenn = اگر" }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "ob", "fa": "آیا / که آیا" },
+      "example": { "text": { "de": "Ich weiß nicht, ob er kommt.", "fa": "نمی‌دانم آیا می‌آید." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "falls", "fa": "در صورتی که" },
+      "example": { "text": { "de": "Falls du Fragen hast, ruf mich an.", "fa": "در صورتی که سوال داری، زنگ بزن." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s6",
+      "title": "ترتیب کلمات با wenn",
+      "content": "📝 **دو ترتیب ممکن:**\n\n**۱. جمله اصلی اول:**\nIch bleibe zu Hause, **wenn** es **regnet**.\n\n**۲. wenn اول (جمله پیرو اول):**\n**Wenn** es **regnet**, bleibe ich zu Hause.\n\n⚠️ وقتی wenn اول می‌آید، جمله اصلی با **فعل** شروع می‌شود!",
+      "examples": [
+        { "de": "Wenn ich müde bin, schlafe ich.", "fa": "وقتی خسته‌ام، می‌خوابم." },
+        { "de": "Ich schlafe, wenn ich müde bin.", "fa": "می‌خوابم وقتی خسته‌ام." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "dann", "fa": "آنگاه / پس" },
+      "example": { "text": { "de": "Wenn es regnet, dann bleibe ich zu Hause.", "fa": "اگر باران بیاید، آنگاه خانه می‌مانم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-vielleicht",
+      "word": "vielleicht",
+      "translation": "شاید",
+      "syllables": ["viel", "leicht"],
+      "distractors": ["vial", "lacht", "voll", "licht"]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g1",
+      "title": "ترجمه سریع",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "wenn", "left": "چون", "right": "اگر/وقتی", "correctSide": "right" },
+        { "prompt": "ob", "left": "آیا", "right": "چون", "correctSide": "left" },
+        { "prompt": "immer wenn", "left": "هر وقت", "right": "هرگز", "correctSide": "left" },
+        { "prompt": "falls", "left": "چون", "right": "در صورتی که", "correctSide": "right" },
+        { "prompt": "dann", "left": "آنگاه", "right": "هرگز", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "sonst", "fa": "وگرنه" },
+      "example": { "text": { "de": "Beeil dich, sonst kommst du zu spät!", "fa": "عجله کن، وگرنه دیر می‌رسی!" } }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "vielleicht", "fa": "شاید" },
+      "example": { "text": { "de": "Vielleicht kommt er morgen.", "fa": "شاید فردا بیاید." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": { "de": "bestimmt", "fa": "حتماً" },
+      "example": { "text": { "de": "Er kommt bestimmt.", "fa": "حتماً می‌آید." } }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "برنامه آخر هفته",
+      "context": "دو دوست درباره آخر هفته صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Was machst du am Wochenende?", "fa": "آخر هفته چه کار می‌کنی؟" } },
+        { "speaker": "Tom", "text": { "de": "Wenn das Wetter schön ist, gehe ich wandern.", "fa": "اگر هوا خوب باشد، کوهنوردی می‌روم." } },
+        { "speaker": "Anna", "text": { "de": "Und wenn es regnet?", "fa": "و اگر باران بیاید؟" } },
+        { "speaker": "Tom", "text": { "de": "Dann bleibe ich zu Hause und lese ein Buch.", "fa": "آنگاه خانه می‌مانم و کتاب می‌خوانم." } },
+        { "speaker": "Anna", "text": { "de": "Ich weiß nicht, ob ich Zeit habe.", "fa": "نمی‌دانم آیا وقت دارم." } },
+        { "speaker": "Tom", "text": { "de": "Falls du Zeit hast, ruf mich an!", "fa": "در صورتی که وقت داری، زنگ بزن!" } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "تام اگر هوا خوب باشد چه می‌کند؟", "options": ["خانه می‌ماند", "کوهنوردی می‌رود", "کتاب می‌خواند"], "correctIndex": 1 },
+        { "question": "آنا چه چیزی نمی‌داند؟", "options": ["آیا وقت دارد", "آیا باران می‌آید", "آیا تام می‌رود"], "correctIndex": 0 }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich weiß nicht, {0} er heute kommt.",
+      "options": ["ob", "wenn", "weil", "dass"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "ob = آیا (سوال غیرمستقیم)" }
+    },
+    {
+      "type": "word-order",
+      "id": "w1",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["habe,", "Zeit", "ich", "Wenn", "Kino.", "gehe", "ins", "ich"],
+      "correctOrder": [3, 2, 1, 0, 5, 7, 6, 4],
+      "correctSentence": { "de": "Wenn ich Zeit habe, gehe ich ins Kino.", "fa": "اگر وقت داشته باشم، به سینما می‌روم." }
+    },
+    {
+      "type": "word-order",
+      "id": "w2",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["regnet.", "Hause,", "bleibe", "zu", "ich", "es", "wenn", "Ich"],
+      "correctOrder": [7, 2, 4, 3, 1, 6, 5, 0],
+      "correctSentence": { "de": "Ich bleibe zu Hause, wenn es regnet.", "fa": "خانه می‌مانم اگر باران بیاید." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "جمله اصلی را با جمله پیرو جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Ich gehe spazieren," },
+        { "id": "i2", "text": "Ich weiß nicht," },
+        { "id": "i3", "text": "Ruf mich an," },
+        { "id": "i4", "text": "Ich freue mich," }
+      ],
+      "matches": [
+        { "id": "m1", "text": "ob er kommt." },
+        { "id": "m2", "text": "wenn das Wetter schön ist." },
+        { "id": "m3", "text": "wenn du kommst." },
+        { "id": "m4", "text": "falls du Fragen hast." }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m1"],
+        ["i3", "m4"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-bestimmt",
+      "word": "bestimmt",
+      "translation": "حتماً",
+      "syllables": ["be", "stimmt"],
+      "distractors": ["ba", "stammt", "bo", "stummt"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله درست است؟",
+      "options": ["Wenn ich habe Zeit, gehe ich ins Kino.", "Wenn ich Zeit habe, gehe ich ins Kino.", "Wenn Zeit ich habe, gehe ich ins Kino.", "Wenn ich Zeit habe, ich gehe ins Kino."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! فعل در جمله wenn به آخر می‌رود.", "incorrect": "در جمله wenn، فعل به آخر می‌رود: wenn ich Zeit HABE" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} wenn ich ihn sehe, lächelt er.",
+      "options": ["Immer", "Weil", "Dass", "Ob"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "immer wenn = هر وقت" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در دفتر",
+      "context": "رئیس با کارمند صحبت می‌کند",
+      "lines": [
+        { "speaker": "Chef", "text": { "de": "Können Sie morgen früher kommen?", "fa": "می‌توانید فردا زودتر بیایید؟" } },
+        { "speaker": "Mitarbeiter", "text": { "de": "Wenn es nötig ist, komme ich früher.", "fa": "اگر لازم باشد، زودتر می‌آیم." } },
+        { "speaker": "Chef", "text": { "de": "Gut. Falls Sie Probleme haben, sagen Sie Bescheid.", "fa": "خوب. در صورتی که مشکلی دارید، خبر بدهید." } },
+        { "speaker": "Mitarbeiter", "text": { "de": "Ich weiß nicht, ob der Zug so früh fährt.", "fa": "نمی‌دانم آیا قطار این‌قدر زود حرکت می‌کند." } },
+        { "speaker": "Chef", "text": { "de": "Dann nehmen Sie vielleicht das Auto.", "fa": "پس شاید با ماشین بیایید." } },
+        { "speaker": "Mitarbeiter", "text": { "de": "Ja, das mache ich bestimmt.", "fa": "بله، حتماً این کار را می‌کنم." } }
+      ],
+      "questionMode": "post-dialog",
+      "questions": [
+        { "question": "کارمند چه می‌گوید؟", "options": ["نمی‌تواند بیاید", "اگر لازم باشد می‌آید", "فردا نمی‌آید"], "correctIndex": 1 },
+        { "question": "کارمند درباره چه چیزی مطمئن نیست؟", "options": ["ساعت قطار", "آدرس", "نام رئیس"], "correctIndex": 0 }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "g2",
+      "title": "wenn یا ob؟",
+      "instruction": "کلمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "... es regnet, bleibe ich zu Hause.", "left": "Wenn", "right": "Ob", "correctSide": "left" },
+        { "prompt": "Ich weiß nicht, ... er kommt.", "left": "wenn", "right": "ob", "correctSide": "right" },
+        { "prompt": "... ich Zeit habe, lese ich.", "left": "Wenn", "right": "Ob", "correctSide": "left" },
+        { "prompt": "Frag ihn, ... er morgen Zeit hat.", "left": "wenn", "right": "ob", "correctSide": "right" },
+        { "prompt": "... du Hunger hast, iss etwas!", "left": "Wenn", "right": "Ob", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} du Fragen hast, ruf mich an.",
+      "options": ["Falls", "Ob", "Weil", "Dass"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "falls = در صورتی که" }
+    },
+    {
+      "type": "word-order",
+      "id": "w3",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["kommt.", "nicht,", "weiß", "er", "ob", "Ich"],
+      "correctOrder": [5, 2, 1, 4, 3, 0],
+      "correctSentence": { "de": "Ich weiß nicht, ob er kommt.", "fa": "نمی‌دانم آیا می‌آید." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "«ob» چه زمانی استفاده می‌شود؟",
+      "options": ["برای دلیل", "برای سوال غیرمستقیم", "برای زمان", "برای مکان"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! ob برای سوالات غیرمستقیم استفاده می‌شود.", "incorrect": "ob = آیا (سوال غیرمستقیم)" }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syllable-wandern",
+      "word": "wandern",
+      "translation": "کوهنوردی کردن",
+      "syllables": ["wan", "dern"],
+      "distractors": ["won", "darn", "win", "dorn"]
+    },
+    {
+      "type": "matching",
+      "id": "m2",
+      "instruction": "کلمات را با ترجمه جفت کنید",
+      "items": [
+        { "id": "i1", "text": "wenn" },
+        { "id": "i2", "text": "ob" },
+        { "id": "i3", "text": "sonst" },
+        { "id": "i4", "text": "bestimmt" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "آیا" },
+        { "id": "m2", "text": "اگر/وقتی" },
+        { "id": "m3", "text": "حتماً" },
+        { "id": "m4", "text": "وگرنه" }
+      ],
+      "correctPairs": [
+        ["i1", "m2"],
+        ["i2", "m1"],
+        ["i3", "m4"],
+        ["i4", "m3"]
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Beeil dich, {0} kommst du zu spät!",
+      "options": ["sonst", "wenn", "ob", "weil"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "sonst = وگرنه" }
+    },
+    {
+      "type": "word-order",
+      "id": "w4",
+      "instruction": "کلمات را مرتب کنید تا جمله درست شود",
+      "words": ["sehe,", "ihn", "Immer", "ich", "lächelt", "wenn", "er."],
+      "correctOrder": [2, 5, 3, 1, 0, 4, 6],
+      "correctSentence": { "de": "Immer wenn ich ihn sehe, lächelt er.", "fa": "هر وقت او را می‌بینم، لبخند می‌زند." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "«Wenn es regnet, dann bleibe ich zu Hause» - کلمه dann چه نقشی دارد؟",
+      "options": ["اجباری است", "اختیاری برای تأکید", "معنی را عوض می‌کند", "غلط است"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! dann اختیاری است و فقط تأکید می‌کند.", "incorrect": "dann اختیاری است و برای تأکید استفاده می‌شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er kommt {0} morgen.",
+      "options": ["bestimmt", "wenn", "ob", "weil"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "bestimmt = حتماً" }
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-1",
+      "targetText": "Wenn es regnet, bleibe ich zu Hause.",
+      "translation": "اگر باران بیاید، خانه می‌مانم.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-2",
+      "targetText": "Ich weiß nicht, ob er kommt.",
+      "translation": "نمی‌دانم آیا می‌آید.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "dictation",
+      "id": "dictation-3",
+      "targetText": "Falls du Fragen hast, ruf mich an.",
+      "translation": "در صورتی که سوال داری، زنگ بزن.",
+      "difficulty": "A2"
+    },
+    {
+      "type": "memory-match",
+      "id": "g3",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "wenn", "fa": "اگر/وقتی" },
+        { "de": "ob", "fa": "آیا" },
+        { "de": "falls", "fa": "در صورتی که" },
+        { "de": "dann", "fa": "آنگاه" },
+        { "de": "sonst", "fa": "وگرنه" },
+        { "de": "bestimmt", "fa": "حتماً" }
+      ],
+      "timeLimit": 60
+    },
+    {
+      "type": "vocab-check",
+      "id": "g4",
+      "title": "خودارزیابی",
+      "instruction": "این کلمات را چقدر یاد گرفتید؟",
+      "words": [
+        { "de": "wenn", "fa": "اگر / وقتی" },
+        { "de": "immer wenn", "fa": "هر وقت" },
+        { "de": "ob", "fa": "آیا" },
+        { "de": "falls", "fa": "در صورتی که" },
+        { "de": "dann", "fa": "آنگاه" },
+        { "de": "sonst", "fa": "وگرنه" },
+        { "de": "vielleicht", "fa": "شاید" },
+        { "de": "bestimmt", "fa": "حتماً" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "done",
+      "title": "آفرین!",
+      "message": "شما جملات پیرو با wenn را یاد گرفتید!\n\n📝 **wenn** = اگر / وقتی\nWenn es regnet, bleibe ich zu Hause.\n\n📝 **ob** = آیا (سوال غیرمستقیم)\nIch weiß nicht, ob er kommt.\n\n📝 **falls** = در صورتی که\nFalls du Fragen hast, ruf mich an.\n\n⚠️ فعل در جمله پیرو به آخر می‌رود!",
+      "xpEarned": 50,
+      "vocabularyLearned": [
+        { "word": { "de": "wenn", "fa": "اگر / وقتی" } },
+        { "word": { "de": "immer wenn", "fa": "هر وقت" } },
+        { "word": { "de": "ob", "fa": "آیا" } },
+        { "word": { "de": "falls", "fa": "در صورتی که" } },
+        { "word": { "de": "dann", "fa": "آنگاه" } },
+        { "word": { "de": "sonst", "fa": "وگرنه" } },
+        { "word": { "de": "vielleicht", "fa": "شاید" } },
+        { "word": { "de": "bestimmt", "fa": "حتماً" } }
+      ]
+    }
+  ]
+}
