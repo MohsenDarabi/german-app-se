@@ -8,7 +8,7 @@
   "level": "A2",
   "module": 3,
   "lessonNumber": 1,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "sich waschen", "fa": "خود را شستن", "grammar": { "pos": "verb", "reflexive": true } },
@@ -148,10 +148,9 @@
         { "speaker": "Tom", "text": { "de": "Schminkst du dich auch?", "fa": "آرایش هم می‌کنی؟" } },
         { "speaker": "Eli", "text": { "de": "Ja, ein bisschen. Und ich putze mir die Zähne.", "fa": "بله، کمی. و مسواک می‌زنم." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "الی اول چه کار می‌کند؟", "options": ["لباس می‌پوشد", "دوش می‌گیرد", "آرایش می‌کند"], "correctIndex": 1 },
-        { "question": "الی آرایش می‌کند؟", "options": ["نه", "بله، کمی", "خیلی"], "correctIndex": 1 }
+        { "question": "الی اول چه کار می‌کند؟", "options": ["لباس می‌پوشد", "دوش می‌گیرد", "آرایش می‌کند"], "correctIndex": 1, "explanation": "الی گفت: Zuerst dusche ich mich" },
+        { "question": "الی آرایش می‌کند؟", "options": ["نه", "بله، کمی", "خیلی"], "correctIndex": 1, "explanation": "الی گفت: Ja, ein bisschen" }
       ]
     },
     {
@@ -240,10 +239,9 @@
         { "speaker": "Mutter", "text": { "de": "Gut. Dann legt euch hin!", "fa": "خوب. پس دراز بکشید!" } },
         { "speaker": "Kinder", "text": { "de": "Gute Nacht, Mama!", "fa": "شب بخیر، مامان!" } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "تیم چه کار کرده؟", "options": ["فقط مسواک زده", "خودش را شسته", "هیچ کدام"], "correctIndex": 1 },
-        { "question": "لیزا چه کار می‌کند؟", "options": ["می‌خوابد", "لباس عوض می‌کند", "مسواک می‌زند"], "correctIndex": 1 }
+        { "question": "تیم چه کار کرده؟", "options": ["فقط مسواک زده", "خودش را شسته", "هیچ کدام"], "correctIndex": 1, "explanation": "تیم گفت: Ich habe mich auch gewaschen" },
+        { "question": "لیزا چه کار می‌کند؟", "options": ["می‌خوابد", "لباس عوض می‌کند", "مسواک می‌زند"], "correctIndex": 1, "explanation": "لیزا گفت: Ich ziehe mich gerade um" }
       ]
     },
     {
@@ -399,6 +397,31 @@
         { "de": "sich die Zähne putzen", "fa": "مسواک زدن" },
         { "de": "sich hinlegen", "fa": "دراز کشیدن" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "ضمیر انعکاسی برای ich و du یکسان است: mich.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! ich → mich اما du → dich" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "در سوم شخص مفرد و جمع، ضمیر انعکاسی همیشه sich است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! er/sie/es و sie/Sie همه با sich می‌آیند." }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "من هر روز دوش می‌گیرم.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4}.",
+      "options": ["Ich", "dusche", "mich", "jeden", "Tag"],
+      "correctAnswers": [0, 1, 2, 3, 4],
+      "correctTranslation": { "de": "Ich dusche mich jeden Tag.", "fa": "من هر روز دوش می‌گیرم." }
     },
     {
       "type": "completion",

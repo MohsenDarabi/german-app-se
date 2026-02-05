@@ -8,7 +8,7 @@
   "level": "A2",
   "module": 2,
   "lessonNumber": 4,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "je...desto", "fa": "هر چه...آن‌قدر", "grammar": { "pos": "phrase" } },
@@ -136,10 +136,9 @@
         { "speaker": "Tom", "text": { "de": "Welches ist am sparsamsten?", "fa": "کدام کم‌مصرف‌ترین است؟" } },
         { "speaker": "Eli", "text": { "de": "Das blaue verbraucht am wenigsten Benzin.", "fa": "آبی کمترین بنزین مصرف می‌کند." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "کدام ماشین سریع‌تر است؟", "options": ["آبی", "قرمز", "هر دو"], "correctIndex": 1 },
-        { "question": "کدام ماشین ارزان‌تر است؟", "options": ["آبی", "قرمز", "هر دو"], "correctIndex": 0 }
+        { "question": "کدام ماشین سریع‌تر است؟", "options": ["آبی", "قرمز", "هر دو"], "correctIndex": 1, "explanation": "الی گفت: Das rote ist schneller als das blaue" },
+        { "question": "کدام ماشین ارزان‌تر است؟", "options": ["آبی", "قرمز", "هر دو"], "correctIndex": 0, "explanation": "تام گفت: das blaue ist viel billiger" }
       ]
     },
     {
@@ -240,10 +239,9 @@
         { "speaker": "Anna", "text": { "de": "Je öfter ich dort esse, desto mehr mag ich es.", "fa": "هر چه بیشتر آنجا غذا می‌خورم، بیشتر دوستش دارم." } },
         { "speaker": "Max", "text": { "de": "Das chinesische wird immer besser!", "fa": "چینی هر چه بهتر می‌شود!" } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "کدام رستوران ارزان‌تر است؟", "options": ["ایتالیایی", "چینی", "هر دو"], "correctIndex": 1 },
-        { "question": "آنا درباره رستوران چینی چه می‌گوید؟", "options": ["بد است", "هر چه بیشتر دوستش دارد", "گران است"], "correctIndex": 1 }
+        { "question": "کدام رستوران ارزان‌تر است؟", "options": ["ایتالیایی", "چینی", "هر دو"], "correctIndex": 1, "explanation": "آنا گفت: das chinesische ist billiger" },
+        { "question": "آنا درباره رستوران چینی چه می‌گوید؟", "options": ["بد است", "هر چه بیشتر دوستش دارد", "گران است"], "correctIndex": 1, "explanation": "آنا گفت: Je öfter ich dort esse, desto mehr mag ich es" }
       ]
     },
     {
@@ -398,6 +396,31 @@
         { "de": "weit", "fa": "دور / بسیار" },
         { "de": "kaum", "fa": "به سختی" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای تقویت Komparativ می‌توانیم از viel یا etwas استفاده کنیم.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! viel größer = خیلی بزرگ‌تر، etwas älter = کمی مسن‌تر" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "immer + Komparativ معنی «هر چه ...-تر» می‌دهد.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! مثال: Es wird immer kälter = هوا هر چه سردتر می‌شود" }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "این خیلی بهتر است.",
+      "sentenceTemplate": "{0} {1} {2} {3}.",
+      "options": ["Das", "ist", "viel", "besser"],
+      "correctAnswers": [0, 1, 2, 3],
+      "correctTranslation": { "de": "Das ist viel besser.", "fa": "این خیلی بهتر است." }
     },
     {
       "type": "completion",

@@ -8,7 +8,7 @@
   "level": "A2",
   "module": 3,
   "lessonNumber": 3,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "sich interessieren für", "fa": "علاقه‌مند بودن به", "grammar": { "pos": "verb", "reflexive": true, "preposition": "für" } },
@@ -148,10 +148,9 @@
         { "speaker": "Anna", "text": { "de": "Ja, ich bereite mich auf eine Prüfung vor.", "fa": "بله، برای یک امتحان آماده می‌شوم." } },
         { "speaker": "Ben", "text": { "de": "Viel Erfolg! Konzentrier dich gut!", "fa": "موفق باشی! خوب تمرکز کن!" } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "بن به چه علاقه‌مند است؟", "options": ["موسیقی", "عکاسی", "ورزش"], "correctIndex": 1 },
-        { "question": "آنا برای چه آماده می‌شود؟", "options": ["سفر", "امتحان", "مهمانی"], "correctIndex": 1 }
+        { "question": "بن به چه علاقه‌مند است؟", "options": ["موسیقی", "عکاسی", "ورزش"], "correctIndex": 1, "explanation": "بن گفت: Ich interessiere mich für Fotografie" },
+        { "question": "آنا برای چه آماده می‌شود؟", "options": ["سفر", "امتحان", "مهمانی"], "correctIndex": 1, "explanation": "آنا گفت: ich bereite mich auf eine Prüfung vor" }
       ]
     },
     {
@@ -240,10 +239,9 @@
         { "speaker": "Mutter", "text": { "de": "Ich bedanke mich für deine Hilfe.", "fa": "از کمکت تشکر می‌کنم." } },
         { "speaker": "Lisa", "text": { "de": "Gern geschehen! Ich interessiere mich für Tiere.", "fa": "خواهش می‌کنم! به حیوانات علاقه‌مندم." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "چه کسی از گربه مراقبت می‌کند؟", "options": ["مادر", "لیزا", "پدر"], "correctIndex": 1 },
-        { "question": "لیزا به چه عادت کرده؟", "options": ["گربه", "مسئولیت", "مدرسه"], "correctIndex": 1 }
+        { "question": "چه کسی از گربه مراقبت می‌کند؟", "options": ["مادر", "لیزا", "پدر"], "correctIndex": 1, "explanation": "لیزا گفت: Ich kümmere mich darum!" },
+        { "question": "لیزا به چه عادت کرده؟", "options": ["گربه", "مسئولیت", "مدرسه"], "correctIndex": 1, "explanation": "مادر پرسید: Hast du dich an die Verantwortung gewöhnt?" }
       ]
     },
     {
@@ -399,6 +397,31 @@
         { "de": "sich vorbereiten auf", "fa": "آماده شدن برای" },
         { "de": "sich bedanken für", "fa": "تشکر کردن از" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "sich interessieren با حرف اضافه an می‌آید.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! sich interessieren FÜR + Akkusativ" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "همه حروف اضافه‌ای که با فعل‌های انعکاسی می‌آیند، Akkusativ می‌گیرند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! für، an، auf و um همه با Akkusativ می‌آیند." }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "به موسیقی علاقه‌مندم.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4}.",
+      "options": ["Ich", "interessiere", "mich", "für", "Musik"],
+      "correctAnswers": [0, 1, 2, 3, 4],
+      "correctTranslation": { "de": "Ich interessiere mich für Musik.", "fa": "به موسیقی علاقه‌مندم." }
     },
     {
       "type": "completion",

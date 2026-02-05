@@ -8,7 +8,7 @@
   "level": "A2",
   "module": 3,
   "lessonNumber": 4,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "sich die Hände waschen", "fa": "دست‌هایش را شستن", "grammar": { "pos": "verb", "reflexive": true, "case": "dativ" } },
@@ -149,10 +149,9 @@
         { "speaker": "Lisa", "text": { "de": "Kämmst du dir auch die Haare?", "fa": "موهایت را هم شانه می‌زنی؟" } },
         { "speaker": "Max", "text": { "de": "Ja, und dann ziehe ich mich an und freue mich auf den Tag!", "fa": "بله، و بعد لباس می‌پوشم و منتظر روز هستم!" } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "ماکس اول چه کار می‌کند؟", "options": ["لباس می‌پوشد", "دوش می‌گیرد", "مسواک می‌زند"], "correctIndex": 1 },
-        { "question": "ماکس منتظر چیست؟", "options": ["شب", "روز", "تعطیلات"], "correctIndex": 1 }
+        { "question": "ماکس اول چه کار می‌کند؟", "options": ["لباس می‌پوشد", "دوش می‌گیرد", "مسواک می‌زند"], "correctIndex": 1, "explanation": "ماکس گفت: Zuerst dusche ich mich" },
+        { "question": "ماکس منتظر چیست؟", "options": ["شب", "روز", "تعطیلات"], "correctIndex": 1, "explanation": "ماکس گفت: freue mich auf den Tag" }
       ]
     },
     {
@@ -241,10 +240,9 @@
         { "speaker": "Ben", "text": { "de": "Mach dir keine Sorgen, du bekommst es!", "fa": "نگران نباش، می‌گیریش!" } },
         { "speaker": "Anna", "text": { "de": "Danke! Ich bedanke mich für deine Hilfe.", "fa": "ممنون! از کمکت تشکر می‌کنم." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "آنا چه آرزو می‌کند؟", "options": ["گوشی", "دوچرخه", "کتاب"], "correctIndex": 1 },
-        { "question": "آنا چه احساسی دارد؟", "options": ["ناراحت", "خوشحال و منتظر", "عصبانی"], "correctIndex": 1 }
+        { "question": "آنا چه آرزو می‌کند؟", "options": ["گوشی", "دوچرخه", "کتاب"], "correctIndex": 1, "explanation": "آنا گفت: Ich wünsche mir ein neues Fahrrad" },
+        { "question": "آنا چه احساسی دارد؟", "options": ["ناراحت", "خوشحال و منتظر", "عصبانی"], "correctIndex": 1, "explanation": "آنا گفت: Ich freue mich schon darauf!" }
       ]
     },
     {
@@ -400,6 +398,31 @@
         { "de": "sich etwas vorstellen", "fa": "تصور کردن" },
         { "de": "sich etwas ansehen", "fa": "نگاه کردن" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "وقتی مفعول دیگری در جمله هست، از ضمیر انعکاسی Akkusativ استفاده می‌کنیم.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! وقتی مفعول دیگری هست، از Dativ استفاده می‌کنیم: Ich wasche mir die Hände." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "ضمیر انعکاسی Dativ برای سوم شخص همان sich است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! er/sie/es و sie/Sie در Dativ و Akkusativ هر دو sich است." }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "دست‌هایم را می‌شویم.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4}.",
+      "options": ["Ich", "wasche", "mir", "die", "Hände"],
+      "correctAnswers": [0, 1, 2, 3, 4],
+      "correctTranslation": { "de": "Ich wasche mir die Hände.", "fa": "دست‌هایم را می‌شویم." }
     },
     {
       "type": "completion",

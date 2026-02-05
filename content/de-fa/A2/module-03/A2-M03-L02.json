@@ -8,7 +8,7 @@
   "level": "A2",
   "module": 3,
   "lessonNumber": 2,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "sich freuen", "fa": "خوشحال شدن", "grammar": { "pos": "verb", "reflexive": true } },
@@ -148,10 +148,9 @@
         { "speaker": "Lisa", "text": { "de": "Du musst dich entspannen!", "fa": "باید استراحت کنی!" } },
         { "speaker": "Tom", "text": { "de": "Ja, du hast recht. Ich freue mich auf das Wochenende.", "fa": "بله، حق با توست. منتظر آخر هفته هستم." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "تام چه احساسی دارد؟", "options": ["خوشحال", "خسته", "عصبانی"], "correctIndex": 1 },
-        { "question": "تام از چه عصبانی شده؟", "options": ["از کار", "از لیزا", "از آب و هوا"], "correctIndex": 0 }
+        { "question": "تام چه احساسی دارد؟", "options": ["خوشحال", "خسته", "عصبانی"], "correctIndex": 1, "explanation": "تام گفت: Ich fühle mich müde" },
+        { "question": "تام از چه عصبانی شده؟", "options": ["از کار", "از لیزا", "از آب و هوا"], "correctIndex": 0, "explanation": "تام گفت: Ich habe mich über die Arbeit geärgert" }
       ]
     },
     {
@@ -240,10 +239,9 @@
         { "speaker": "Mutter", "text": { "de": "Nach der Schule kannst du dich entspannen.", "fa": "بعد از مدرسه می‌توانی استراحت کنی." } },
         { "speaker": "Max", "text": { "de": "Darauf freue ich mich!", "fa": "منتظرشم!" } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "چرا ماکس عصبانی است؟", "options": ["چون خسته است", "چون گرسنه است", "چون اتوبوس رفته"], "correctIndex": 0 },
-        { "question": "ماکس کی می‌تواند استراحت کند؟", "options": ["الان", "بعد از مدرسه", "فردا"], "correctIndex": 1 }
+        { "question": "چرا ماکس عصبانی است؟", "options": ["چون خسته است", "چون گرسنه است", "چون اتوبوس رفته"], "correctIndex": 0, "explanation": "ماکس گفت: Ich ärgere mich, weil ich müde bin" },
+        { "question": "ماکس کی می‌تواند استراحت کند؟", "options": ["الان", "بعد از مدرسه", "فردا"], "correctIndex": 1, "explanation": "مادر گفت: Nach der Schule kannst du dich entspannen" }
       ]
     },
     {
@@ -399,6 +397,31 @@
         { "de": "sich entspannen", "fa": "استراحت کردن" },
         { "de": "sich beeilen", "fa": "عجله کردن" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "sich freuen auf برای چیزهای گذشته استفاده می‌شود.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! sich freuen auf برای آینده است. sich freuen über برای حال/گذشته است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "فعل‌های احساسات مثل sich freuen و sich ärgern انعکاسی هستند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! بسیاری از فعل‌های احساسات در آلمانی با sich می‌آیند." }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "خیلی خوشحالم.",
+      "sentenceTemplate": "{0} {1} {2} {3}.",
+      "options": ["Ich", "freue", "mich", "sehr"],
+      "correctAnswers": [0, 1, 2, 3],
+      "correctTranslation": { "de": "Ich freue mich sehr.", "fa": "خیلی خوشحالم." }
     },
     {
       "type": "completion",

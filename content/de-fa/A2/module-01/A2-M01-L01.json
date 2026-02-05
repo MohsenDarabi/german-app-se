@@ -8,7 +8,7 @@
   "level": "A2",
   "module": 1,
   "lessonNumber": 1,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "gemacht", "fa": "انجام داده", "grammar": { "pos": "verb", "form": "past participle" } },
@@ -148,10 +148,9 @@
         { "speaker": "Tom", "text": { "de": "Ich habe Fußball gespielt.", "fa": "فوتبال بازی کردم." } },
         { "speaker": "Eli", "text": { "de": "Schön! Hast du gewonnen?", "fa": "چه خوب! بردی؟" } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "الی دیروز چه کار کرد؟", "options": ["فوتبال بازی کرد", "آلمانی یاد گرفت", "خرید کرد"], "correctIndex": 1 },
-        { "question": "تام دیروز چه کار کرد؟", "options": ["آشپزی کرد", "فوتبال بازی کرد", "کار کرد"], "correctIndex": 1 }
+        { "question": "الی دیروز چه کار کرد؟", "options": ["فوتبال بازی کرد", "آلمانی یاد گرفت", "خرید کرد"], "correctIndex": 1, "explanation": "الی گفت: Ich habe Deutsch gelernt und dann gekocht" },
+        { "question": "تام دیروز چه کار کرد؟", "options": ["آشپزی کرد", "فوتبال بازی کرد", "کار کرد"], "correctIndex": 1, "explanation": "تام گفت: Ich habe Fußball gespielt" }
       ]
     },
     {
@@ -240,10 +239,9 @@
         { "speaker": "Tom", "text": { "de": "Ich habe Tennis gespielt und danach gekocht.", "fa": "تنیس بازی کردم و بعدش آشپزی کردم." } },
         { "speaker": "Anna", "text": { "de": "Super! Ich habe nur gearbeitet.", "fa": "عالی! من فقط کار کردم." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "ماکس آخر هفته چه کار کرد؟", "options": ["تنیس بازی کرد", "کتاب خرید", "کار کرد"], "correctIndex": 1 },
-        { "question": "لیزا چه کار کرد؟", "options": ["آشپزی کرد", "درس خواند", "کتاب خرید"], "correctIndex": 1 }
+        { "question": "ماکس آخر هفته چه کار کرد؟", "options": ["تنیس بازی کرد", "کتاب خرید", "کار کرد"], "correctIndex": 1, "explanation": "ماکس گفت: Ich habe ein neues Buch gekauft" },
+        { "question": "لیزا چه کار کرد؟", "options": ["آشپزی کرد", "درس خواند", "کتاب خرید"], "correctIndex": 1, "explanation": "لیزا گفت: Ich habe für die Prüfung gelernt" }
       ]
     },
     {
@@ -399,6 +397,31 @@
         { "de": "gestern", "fa": "دیروز" },
         { "de": "letzte Woche", "fa": "هفته گذشته" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در زمان Perfekt، فعل کمکی haben در آخر جمله می‌آید.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! Partizip II در آخر می‌آید. haben صرف‌شده در جایگاه فعل (دوم) می‌آید." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "Partizip II فعل‌های باقاعده با ge- شروع و با -t تمام می‌شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! مثال: machen → gemacht, kaufen → gekauft" }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "آلمانی یاد گرفتم.",
+      "sentenceTemplate": "{0} {1} {2} {3}.",
+      "options": ["Ich", "habe", "Deutsch", "gelernt"],
+      "correctAnswers": [0, 1, 2, 3],
+      "correctTranslation": { "de": "Ich habe Deutsch gelernt.", "fa": "آلمانی یاد گرفتم." }
     },
     {
       "type": "completion",

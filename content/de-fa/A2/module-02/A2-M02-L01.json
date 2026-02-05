@@ -8,7 +8,7 @@
   "level": "A2",
   "module": 2,
   "lessonNumber": 1,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "schneller", "fa": "سریع‌تر", "grammar": { "pos": "adjective", "form": "comparative" } },
@@ -148,10 +148,9 @@
         { "speaker": "Eli", "text": { "de": "Aber das billigere ist schneller.", "fa": "ولی ارزان‌تره سریع‌تر است." } },
         { "speaker": "Tom", "text": { "de": "Das ist eine schwere Entscheidung!", "fa": "این تصمیم سختی است!" } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "کدام گوشی دوربین بهتری دارد؟", "options": ["ارزان‌تر", "گران‌تر", "هر دو"], "correctIndex": 1 },
-        { "question": "کدام گوشی سریع‌تر است؟", "options": ["ارزان‌تر", "گران‌تر", "هر دو"], "correctIndex": 0 }
+        { "question": "کدام گوشی دوربین بهتری دارد؟", "options": ["ارزان‌تر", "گران‌تر", "هر دو"], "correctIndex": 1, "explanation": "الی گفت: das teurere hat eine bessere Kamera" },
+        { "question": "کدام گوشی سریع‌تر است؟", "options": ["ارزان‌تر", "گران‌تر", "هر دو"], "correctIndex": 0, "explanation": "الی گفت: das billigere ist schneller" }
       ]
     },
     {
@@ -240,10 +239,9 @@
         { "speaker": "Anna", "text": { "de": "Und das Leben in Hamburg ist teurer als in Berlin.", "fa": "و زندگی در هامبورگ گران‌تر از برلین است." } },
         { "speaker": "Max", "text": { "de": "Das stimmt. Berlin ist billiger.", "fa": "درسته. برلین ارزان‌تر است." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "کدام شهر بزرگ‌تر است؟", "options": ["هامبورگ", "برلین", "هر دو"], "correctIndex": 1 },
-        { "question": "کدام شهر گران‌تر است؟", "options": ["هامبورگ", "برلین", "هر دو"], "correctIndex": 0 }
+        { "question": "کدام شهر بزرگ‌تر است؟", "options": ["هامبورگ", "برلین", "هر دو"], "correctIndex": 1, "explanation": "آنا گفت: Berlin ist auch größer" },
+        { "question": "کدام شهر گران‌تر است؟", "options": ["هامبورگ", "برلین", "هر دو"], "correctIndex": 0, "explanation": "آنا گفت: das Leben in Hamburg ist teurer als in Berlin" }
       ]
     },
     {
@@ -399,6 +397,31 @@
         { "de": "teurer", "fa": "گران‌تر" },
         { "de": "als", "fa": "از (در مقایسه)" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای ساختن Komparativ همیشه فقط -er اضافه می‌کنیم.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! بعضی صفت‌ها Umlaut هم می‌گیرند: alt → älter" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای مقایسه دو چیز از als استفاده می‌کنیم.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! مثال: Ich bin älter als du." }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "من مسن‌تر از تو هستم.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4}.",
+      "options": ["Ich", "bin", "älter", "als", "du"],
+      "correctAnswers": [0, 1, 2, 3, 4],
+      "correctTranslation": { "de": "Ich bin älter als du.", "fa": "من مسن‌تر از تو هستم." }
     },
     {
       "type": "completion",

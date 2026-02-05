@@ -8,7 +8,7 @@
   "level": "A2",
   "module": 1,
   "lessonNumber": 2,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "gegangen", "fa": "رفته", "grammar": { "pos": "verb", "form": "past participle" } },
@@ -148,10 +148,9 @@
         { "speaker": "Tom", "text": { "de": "Toll! Wie lange bist du geblieben?", "fa": "چه خوب! چند وقت ماندی؟" } },
         { "speaker": "Eli", "text": { "de": "Eine Woche. Und du?", "fa": "یک هفته. و تو؟" } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "الی کجا رفته بود؟", "options": ["آلمان", "اسپانیا", "فرانسه"], "correctIndex": 1 },
-        { "question": "الی چند وقت ماند؟", "options": ["دو هفته", "یک هفته", "سه روز"], "correctIndex": 1 }
+        { "question": "الی کجا رفته بود؟", "options": ["آلمان", "اسپانیا", "فرانسه"], "correctIndex": 1, "explanation": "الی گفت: Ich bin nach Spanien geflogen" },
+        { "question": "الی چند وقت ماند؟", "options": ["دو هفته", "یک هفته", "سه روز"], "correctIndex": 1, "explanation": "الی گفت: Eine Woche" }
       ]
     },
     {
@@ -240,10 +239,9 @@
         { "speaker": "Anna", "text": { "de": "Etwa 30 Minuten. Ich bin schnell gelaufen.", "fa": "حدود ۳۰ دقیقه. سریع رفتم." } },
         { "speaker": "Max", "text": { "de": "Super! Das ist auch Sport.", "fa": "عالی! این هم ورزشه." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "ماکس چطور به کار آمد؟", "options": ["پیاده", "با اتوبوس", "با ماشین"], "correctIndex": 1 },
-        { "question": "آنا چقدر پیاده‌روی کرد؟", "options": ["۱۰ دقیقه", "۳۰ دقیقه", "۱ ساعت"], "correctIndex": 1 }
+        { "question": "ماکس چطور به کار آمد؟", "options": ["پیاده", "با اتوبوس", "با ماشین"], "correctIndex": 1, "explanation": "ماکس گفت: Ich bin mit dem Bus gefahren" },
+        { "question": "آنا چقدر پیاده‌روی کرد؟", "options": ["۱۰ دقیقه", "۳۰ دقیقه", "۱ ساعت"], "correctIndex": 1, "explanation": "آنا گفت: Etwa 30 Minuten" }
       ]
     },
     {
@@ -399,6 +397,31 @@
         { "de": "gelaufen", "fa": "دویده" },
         { "de": "geschwommen", "fa": "شنا کرده" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "همه فعل‌ها در زمان Perfekt با haben می‌آیند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! فعل‌های حرکت مثل gehen، fahren، fliegen با sein می‌آیند." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "فعل bleiben (ماندن) با sein می‌آید.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! Ich bin zu Hause geblieben." }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "به برلین رفتم.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4}.",
+      "options": ["Ich", "bin", "nach", "Berlin", "gefahren"],
+      "correctAnswers": [0, 1, 2, 3, 4],
+      "correctTranslation": { "de": "Ich bin nach Berlin gefahren.", "fa": "به برلین رفتم." }
     },
     {
       "type": "completion",

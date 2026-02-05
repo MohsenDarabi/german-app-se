@@ -8,7 +8,7 @@
   "level": "A2",
   "module": 1,
   "lessonNumber": 4,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "zuerst", "fa": "اول", "grammar": { "pos": "adverb" } },
@@ -111,10 +111,9 @@
         { "speaker": "Tom", "text": { "de": "Bist du zur Arbeit gegangen?", "fa": "به کار رفتی؟" } },
         { "speaker": "Eli", "text": { "de": "Ja, ich bin mit dem Bus gefahren. Danach habe ich 8 Stunden gearbeitet.", "fa": "بله، با اتوبوس رفتم. بعد از آن ۸ ساعت کار کردم." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "الی ساعت چند بیدار شد؟", "options": ["۶", "۷", "۸"], "correctIndex": 1 },
-        { "question": "الی چطور به کار رفت؟", "options": ["پیاده", "با اتوبوس", "با ماشین"], "correctIndex": 1 }
+        { "question": "الی ساعت چند بیدار شد؟", "options": ["۶", "۷", "۸"], "correctIndex": 1, "explanation": "الی گفت: Zuerst bin ich um 7 Uhr aufgestanden" },
+        { "question": "الی چطور به کار رفت؟", "options": ["پیاده", "با اتوبوس", "با ماشین"], "correctIndex": 1, "explanation": "الی گفت: ich bin mit dem Bus gefahren" }
       ]
     },
     {
@@ -213,10 +212,9 @@
         { "speaker": "Lisa", "text": { "de": "Ich bin zu Hause geblieben und habe viele Bücher gelesen.", "fa": "من در خانه ماندم و کتاب‌های زیادی خواندم." } },
         { "speaker": "Anna", "text": { "de": "Das klingt auch schön!", "fa": "آن هم خوب به نظر می‌رسد!" } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "ماکس کجا رفت؟", "options": ["اسپانیا", "ایتالیا", "یونان"], "correctIndex": 2 },
-        { "question": "لیزا چه کار کرد؟", "options": ["سفر رفت", "کتاب خواند", "کار کرد"], "correctIndex": 1 }
+        { "question": "ماکس کجا رفت؟", "options": ["اسپانیا", "ایتالیا", "یونان"], "correctIndex": 2, "explanation": "ماکس گفت: Letztes Jahr bin ich nach Griechenland geflogen" },
+        { "question": "لیزا چه کار کرد؟", "options": ["سفر رفت", "کتاب خواند", "کار کرد"], "correctIndex": 1, "explanation": "لیزا گفت: Ich habe viele Bücher gelesen" }
       ]
     },
     {
@@ -397,6 +395,31 @@
         { "de": "letztes Jahr", "fa": "سال گذشته" },
         { "de": "vor einer Woche", "fa": "یک هفته پیش" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "کلمه zuerst به معنی «در پایان» است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! zuerst = اول/ابتدا. am Ende = در پایان" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای توصیف ترتیب اتفاقات از zuerst، dann، danach استفاده می‌کنیم.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! zuerst → dann → danach → später → am Ende" }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "اول صبحانه خوردم، بعد به کار رفتم.",
+      "sentenceTemplate": "{0} {1} {2} {3}, {4} {5} {6} {7} {8}.",
+      "options": ["Zuerst", "habe", "ich", "gefrühstückt", "dann", "bin", "ich", "zur", "Arbeit"],
+      "correctAnswers": [0, 1, 2, 3, 4, 5, 6, 7, 8],
+      "correctTranslation": { "de": "Zuerst habe ich gefrühstückt, dann bin ich zur Arbeit.", "fa": "اول صبحانه خوردم، بعد به کار رفتم." }
     },
     {
       "type": "completion",

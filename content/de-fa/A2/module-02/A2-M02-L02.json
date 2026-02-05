@@ -8,7 +8,7 @@
   "level": "A2",
   "module": 2,
   "lessonNumber": 2,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "am schnellsten", "fa": "سریع‌ترین", "grammar": { "pos": "adjective", "form": "superlative" } },
@@ -148,10 +148,9 @@
         { "speaker": "Anna", "text": { "de": "Was isst du dort am liebsten?", "fa": "آنجا از همه بیشتر چه می‌خوری؟" } },
         { "speaker": "Max", "text": { "de": "Am liebsten esse ich Spaghetti!", "fa": "از همه بیشتر اسپاگتی می‌خورم!" } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "کدام رستوران بهترین است؟", "options": ["چینی", "ایتالیایی", "آلمانی"], "correctIndex": 1 },
-        { "question": "ماکس از همه بیشتر چه می‌خورد؟", "options": ["پیتزا", "سالاد", "اسپاگتی"], "correctIndex": 2 }
+        { "question": "کدام رستوران بهترین است؟", "options": ["چینی", "ایتالیایی", "آلمانی"], "correctIndex": 1, "explanation": "ماکس گفت: Ich finde das italienische am besten" },
+        { "question": "ماکس از همه بیشتر چه می‌خورد؟", "options": ["پیتزا", "سالاد", "اسپاگتی"], "correctIndex": 2, "explanation": "ماکس گفت: Am liebsten esse ich Spaghetti!" }
       ]
     },
     {
@@ -240,10 +239,9 @@
         { "speaker": "Tom", "text": { "de": "Wer kocht am besten in der Familie?", "fa": "چه کسی در خانواده بهترین آشپزی می‌کند؟" } },
         { "speaker": "Eli", "text": { "de": "Meine Mutter kocht am besten!", "fa": "مادرم بهترین آشپزی می‌کند!" } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "مادربزرگ الی چند ساله است؟", "options": ["۷۵", "۸۵", "۹۵"], "correctIndex": 1 },
-        { "question": "چه کسی بهترین آشپزی می‌کند؟", "options": ["پدر", "مادربزرگ", "مادر"], "correctIndex": 2 }
+        { "question": "مادربزرگ الی چند ساله است؟", "options": ["۷۵", "۸۵", "۹۵"], "correctIndex": 1, "explanation": "الی گفت: Sie ist 85" },
+        { "question": "چه کسی بهترین آشپزی می‌کند؟", "options": ["پدر", "مادربزرگ", "مادر"], "correctIndex": 2, "explanation": "الی گفت: Meine Mutter kocht am besten!" }
       ]
     },
     {
@@ -399,6 +397,31 @@
         { "de": "am liebsten", "fa": "از همه بیشتر دوست داشتن" },
         { "de": "am meisten", "fa": "بیشترین" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "Superlativ از gut می‌شود am gutsten.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! gut بی‌قاعده است: gut → besser → am besten" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای ساختن Superlativ از am + صفت + -sten استفاده می‌کنیم.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! مثال: am schnellsten، am größten" }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "او سریع‌ترین می‌دود.",
+      "sentenceTemplate": "{0} {1} {2} {3}.",
+      "options": ["Er", "läuft", "am", "schnellsten"],
+      "correctAnswers": [0, 1, 2, 3],
+      "correctTranslation": { "de": "Er läuft am schnellsten.", "fa": "او سریع‌ترین می‌دود." }
     },
     {
       "type": "completion",

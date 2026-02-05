@@ -8,7 +8,7 @@
   "level": "A2",
   "module": 1,
   "lessonNumber": 3,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "gegessen", "fa": "خورده", "grammar": { "pos": "verb", "form": "past participle" } },
@@ -148,10 +148,9 @@
         { "speaker": "Tom", "text": { "de": "Nein, aber ich habe die Nachrichten im Handy gesehen.", "fa": "نه، ولی اخبار را در گوشی دیدم." } },
         { "speaker": "Eli", "text": { "de": "Gut! Hast du auch meine Nachricht gelesen?", "fa": "خوب! پیام من را هم خواندی؟" } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "الی چه خورده؟", "options": ["سیب", "نان", "پیتزا"], "correctIndex": 1 },
-        { "question": "تام اخبار را کجا دیده؟", "options": ["تلویزیون", "روزنامه", "گوشی"], "correctIndex": 2 }
+        { "question": "الی چه خورده؟", "options": ["سیب", "نان", "پیتزا"], "correctIndex": 1, "explanation": "الی گفت: Ich habe nur ein Brötchen gegessen" },
+        { "question": "تام اخبار را کجا دیده؟", "options": ["تلویزیون", "روزنامه", "گوشی"], "correctIndex": 2, "explanation": "تام گفت: Ich habe die Nachrichten auf dem Handy gesehen" }
       ]
     },
     {
@@ -240,10 +239,9 @@
         { "speaker": "Anna", "text": { "de": "Ja! Ich habe sie gefunden! Danke!", "fa": "بله! پیداشان کردم! ممنون!" } },
         { "speaker": "Max", "text": { "de": "Super! Wo waren sie?", "fa": "عالی! کجا بودند؟" } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "آنا چه چیزی گم کرده بود؟", "options": ["گوشی", "کلید", "کیف"], "correctIndex": 1 },
-        { "question": "آنا کلیدها را پیدا کرد؟", "options": ["بله", "نه", "معلوم نیست"], "correctIndex": 0 }
+        { "question": "آنا چه چیزی گم کرده بود؟", "options": ["گوشی", "کلید", "کیف"], "correctIndex": 1, "explanation": "آنا گفت: Ich habe meine Schlüssel verloren" },
+        { "question": "آنا کلیدها را پیدا کرد؟", "options": ["بله", "نه", "معلوم نیست"], "correctIndex": 0, "explanation": "آنا گفت: Ich habe sie unter dem Sofa gefunden!" }
       ]
     },
     {
@@ -399,6 +397,31 @@
         { "de": "genommen", "fa": "گرفته" },
         { "de": "gefunden", "fa": "پیدا کرده" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "Partizip II فعل‌های بی‌قاعده همیشه با ge- شروع و با -t تمام می‌شود.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! فعل‌های بی‌قاعده اغلب با -en تمام می‌شوند: gegessen، getrunken" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "فعل‌های بی‌قاعده را باید حفظ کرد چون الگوی مشخصی ندارند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! essen → gegessen، trinken → getrunken، sehen → gesehen" }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "پیتزا خوردم.",
+      "sentenceTemplate": "{0} {1} {2} {3}.",
+      "options": ["Ich", "habe", "Pizza", "gegessen"],
+      "correctAnswers": [0, 1, 2, 3],
+      "correctTranslation": { "de": "Ich habe Pizza gegessen.", "fa": "پیتزا خوردم." }
     },
     {
       "type": "completion",

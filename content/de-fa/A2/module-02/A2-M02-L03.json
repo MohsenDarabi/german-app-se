@@ -8,7 +8,7 @@
   "level": "A2",
   "module": 2,
   "lessonNumber": 3,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "so...wie", "fa": "به اندازه / مثل", "grammar": { "pos": "phrase" } },
@@ -136,10 +136,9 @@
         { "speaker": "Tom", "text": { "de": "Und ihre Persönlichkeiten?", "fa": "و شخصیت‌هایشان؟" } },
         { "speaker": "Eli", "text": { "de": "Die sind verschieden. Anna ist nicht so ruhig wie Maria.", "fa": "آن‌ها متفاوت است. آنا به آرامی ماریا نیست." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "آنا و ماریا چه رابطه‌ای دارند؟", "options": ["خواهر", "دوقلو", "دوست"], "correctIndex": 1 },
-        { "question": "شخصیت‌های آن‌ها چطور است؟", "options": ["یکسان", "متفاوت", "معلوم نیست"], "correctIndex": 1 }
+        { "question": "آنا و ماریا چه رابطه‌ای دارند؟", "options": ["خواهر", "دوقلو", "دوست"], "correctIndex": 1, "explanation": "تام پرسید: Sind das Zwillinge? و الی گفت: Ja!" },
+        { "question": "شخصیت‌های آن‌ها چطور است؟", "options": ["یکسان", "متفاوت", "معلوم نیست"], "correctIndex": 1, "explanation": "الی گفت: Die sind verschieden" }
       ]
     },
     {
@@ -232,10 +231,9 @@
         { "speaker": "Anna", "text": { "de": "Welche Sprache lernst du am liebsten?", "fa": "کدام زبان را از همه بیشتر دوست داری یاد بگیری؟" } },
         { "speaker": "Max", "text": { "de": "Deutsch! Es ist genauso interessant wie schwer.", "fa": "آلمانی! به اندازه‌ای که سخت است، جالب هم هست." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "آیا آلمانی به سختی چینی است؟", "options": ["بله", "نه", "معلوم نیست"], "correctIndex": 1 },
-        { "question": "ماکس کدام زبان را دوست دارد؟", "options": ["چینی", "اسپانیایی", "آلمانی"], "correctIndex": 2 }
+        { "question": "آیا آلمانی به سختی چینی است؟", "options": ["بله", "نه", "معلوم نیست"], "correctIndex": 1, "explanation": "ماکس گفت: Deutsch ist nicht so schwer wie Chinesisch" },
+        { "question": "ماکس کدام زبان را دوست دارد؟", "options": ["چینی", "اسپانیایی", "آلمانی"], "correctIndex": 2, "explanation": "ماکس گفت: Deutsch!" }
       ]
     },
     {
@@ -399,6 +397,31 @@
         { "de": "fast", "fa": "تقریباً" },
         { "de": "genau", "fa": "دقیقاً" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای مقایسه برابری از als استفاده می‌کنیم.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! برای برابری از wie استفاده می‌کنیم: so groß wie" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "nicht so...wie روش مؤدبانه‌تری برای بیان تفاوت است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! به جای گفتن kleiner als می‌توان گفت nicht so groß wie" }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "او به اندازه من قد دارد.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4} {5}.",
+      "options": ["Er", "ist", "so", "groß", "wie", "ich"],
+      "correctAnswers": [0, 1, 2, 3, 4, 5],
+      "correctTranslation": { "de": "Er ist so groß wie ich.", "fa": "او به اندازه من قد دارد." }
     },
     {
       "type": "completion",
