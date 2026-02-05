@@ -1,0 +1,430 @@
+{
+  "id": "A2-M15-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Zusammenfassung: Indirekte Fragen", "fa": "جمع‌بندی: سوالات غیرمستقیم" },
+  "description": "تمرین ترکیبی همه انواع سوالات غیرمستقیم: با ob، با کلمات پرسشی، و ساختارهای مودبانه",
+  "level": "A2",
+  "module": 15,
+  "lessonNumber": 4,
+  "totalSteps": 44,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "ob", "fa": "آیا (در جملات غیرمستقیم)", "grammar": { "pos": "conjunction" } },
+    { "de": "wissen", "fa": "دانستن", "grammar": { "pos": "verb" } },
+    { "de": "fragen", "fa": "پرسیدن", "grammar": { "pos": "verb" } },
+    { "de": "könnten", "fa": "می‌توانستید (مودبانه)", "grammar": { "pos": "verb" } },
+    { "de": "würden", "fa": "می‌خواستید (مودبانه)", "grammar": { "pos": "verb" } },
+    { "de": "sagen", "fa": "گفتن", "grammar": { "pos": "verb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "مرور سوالات غیرمستقیم",
+      "content": "📝 **سه نوع سوال غیرمستقیم:**\n\n**۱. با ob (سوالات بله/خیر):**\n• Ich weiß nicht, **ob** er kommt.\n\n**۲. با کلمات پرسشی (W-Fragen):**\n• Ich frage, **wann** er kommt.\n\n**۳. ساختارهای مودبانه:**\n• **Könnten Sie** mir sagen, wo...?\n• **Wissen Sie**, ob...?\n\n💡 در همه این‌ها، فعل در آخر جمله فرعی می‌آید!",
+      "examples": [
+        { "de": "Ich weiß nicht, ob das stimmt.", "fa": "نمی‌دانم آیا این درست است." },
+        { "de": "Sag mir, wann du kommst.", "fa": "بگو کی می‌آیی." },
+        { "de": "Könnten Sie mir sagen, wo das ist?", "fa": "می‌توانید بگویید این کجاست؟" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "ob", "fa": "آیا (در جملات غیرمستقیم)" },
+      "example": { "text": { "de": "Ich weiß nicht, ob er kommt.", "fa": "نمی‌دانم آیا او می‌آید." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "ob",
+      "translation": "آیا",
+      "syllables": ["ob"],
+      "distractors": ["ab", "ub", "eb"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "wissen", "fa": "دانستن" },
+      "example": { "text": { "de": "Wissen Sie, wo der Bahnhof ist?", "fa": "می‌دانید ایستگاه قطار کجاست؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "wissen",
+      "translation": "دانستن",
+      "syllables": ["wis", "sen"],
+      "distractors": ["was", "san", "son"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "fragen", "fa": "پرسیدن" },
+      "example": { "text": { "de": "Darf ich fragen, wie spät es ist?", "fa": "می‌توانم بپرسم ساعت چند است؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "fragen",
+      "translation": "پرسیدن",
+      "syllables": ["fra", "gen"],
+      "distractors": ["fre", "gan", "gon"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله درست است؟",
+      "options": ["Ich möchte wissen, wann der Zug kommt.", "Ich möchte wissen, wann kommt der Zug.", "Ich möchte wissen, der Zug wann kommt.", "Ich möchte wissen, kommt wann der Zug."],
+      "correctAnswerIndex": 0,
+      "feedback": { "correct": "آفرین! فعل در آخر جمله فرعی می‌آید", "incorrect": "در سوالات غیرمستقیم، فعل به آخر می‌رود" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Können Sie mir sagen, {0} das Museum öffnet?",
+      "options": ["wann", "ob", "dass", "weil"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "wann برای پرسیدن زمان استفاده می‌شود" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در دفتر اطلاعات",
+      "context": "یک گردشگر از کارمند سوال می‌پرسد",
+      "lines": [
+        { "speaker": "Tourist", "text": { "de": "Entschuldigung, könnten Sie mir sagen, wo das Rathaus ist?", "fa": "ببخشید، می‌توانید بگویید شهرداری کجاست؟" } },
+        { "speaker": "Angestellter", "text": { "de": "Natürlich. Das Rathaus ist am Marktplatz.", "fa": "البته. شهرداری در میدان بازار است." } },
+        { "speaker": "Tourist", "text": { "de": "Wissen Sie auch, ob es heute geöffnet ist?", "fa": "می‌دانید آیا امروز باز است؟" } },
+        { "speaker": "Angestellter", "text": { "de": "Ich glaube, es ist bis 18 Uhr geöffnet.", "fa": "فکر می‌کنم تا ساعت ۱۸ باز است." } }
+      ],
+      "questions": [
+        { "question": "گردشگر درباره چه مکانی می‌پرسد؟", "options": ["موزه", "شهرداری", "ایستگاه"], "correctIndex": 1, "explanation": "گفت: wo das Rathaus ist" },
+        { "question": "گردشگر می‌خواهد بداند آیا امروز ...؟", "options": ["باز است", "بسته است", "تعطیل است"], "correctIndex": 0, "explanation": "پرسید: ob es heute geöffnet ist" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["ist?", "Bahnhof", "der", "wo", "sagen,", "mir", "Sie", "Könnten"],
+      "correctOrder": [7, 6, 5, 4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Könnten Sie mir sagen, wo der Bahnhof ist?", "fa": "می‌توانید بگویید ایستگاه قطار کجاست؟" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در سوالات غیرمستقیم، فعل در ابتدای جمله فرعی می‌آید.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! فعل در آخر جمله فرعی می‌آید." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "ob در برابر کلمات پرسشی",
+      "content": "📝 **کی از ob و کی از کلمات پرسشی استفاده کنیم؟**\n\n**ob برای سوالات بله/خیر:**\n• Kommt er? = Ich frage, **ob** er kommt.\n\n**کلمات پرسشی برای سوالات باز:**\n• Wann kommt er? = Ich frage, **wann** er kommt.\n• Wo ist das? = Ich weiß nicht, **wo** das ist.\n\n💡 هر دو نوع: فعل در آخر!",
+      "examples": [
+        { "de": "Hast du Zeit? = Ich frage, ob du Zeit hast.", "fa": "وقت داری؟ = می‌پرسم آیا وقت داری." },
+        { "de": "Wann hast du Zeit? = Ich frage, wann du Zeit hast.", "fa": "کی وقت داری؟ = می‌پرسم کی وقت داری." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "könnten", "fa": "می‌توانستید (مودبانه)" },
+      "example": { "text": { "de": "Könnten Sie mir helfen?", "fa": "می‌توانید به من کمک کنید؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "könnten",
+      "translation": "می‌توانستید",
+      "syllables": ["könn", "ten"],
+      "distractors": ["kann", "tan", "kun"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "würden", "fa": "می‌خواستید (مودبانه)" },
+      "example": { "text": { "de": "Würden Sie mir bitte sagen, wie ich zum Hotel komme?", "fa": "لطفاً می‌گویید چطور به هتل بروم؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "würden",
+      "translation": "می‌خواستید",
+      "syllables": ["wür", "den"],
+      "distractors": ["wer", "dan", "wir"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام گزینه برای تبدیل این سوال به غیرمستقیم درست است؟",
+      "options": ["das Restaurant ob teuer ist.", "ob das Restaurant teuer ist.", "ob ist das Restaurant teuer.", "teuer ob das Restaurant ist."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! ob + فاعل + ... + فعل", "incorrect": "برای سوالات بله/خیر از ob استفاده می‌شود و فعل در آخر می‌آید" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Wissen Sie, {0} der Bus nach Berlin fährt?",
+      "options": ["ob", "wann", "wo", "wie"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "ob برای سوالات بله/خیر: آیا اتوبوس می‌رود؟" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در رستوران",
+      "context": "یک مهمان مودبانه سوال می‌پرسد",
+      "lines": [
+        { "speaker": "Gast", "text": { "de": "Entschuldigung, dürfte ich fragen, ob Sie vegetarische Gerichte haben?", "fa": "ببخشید، می‌توانم بپرسم آیا غذای گیاهی دارید؟" } },
+        { "speaker": "Kellner", "text": { "de": "Ja, natürlich. Möchten Sie wissen, welche Gerichte vegetarisch sind?", "fa": "بله، البته. می‌خواهید بدانید کدام غذاها گیاهی هستند؟" } },
+        { "speaker": "Gast", "text": { "de": "Ja, bitte. Und könnten Sie mir sagen, wie lange die Zubereitung dauert?", "fa": "بله، لطفاً. و می‌توانید بگویید آماده شدن چقدر طول می‌کشد؟" } },
+        { "speaker": "Kellner", "text": { "de": "Etwa 15 Minuten.", "fa": "حدود ۱۵ دقیقه." } }
+      ],
+      "questions": [
+        { "question": "مهمان می‌پرسد آیا ...؟", "options": ["غذای گیاهی دارند", "غذا گران است", "رزرو لازم است"], "correctIndex": 0, "explanation": "پرسید: ob Sie vegetarische Gerichte haben" },
+        { "question": "مهمان می‌خواهد بداند ...؟", "options": ["قیمت غذا", "زمان آماده شدن", "ساعت کاری"], "correctIndex": 1, "explanation": "پرسید: wie lange die Zubereitung dauert" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["kommt.", "morgen", "er", "ob", "nicht,", "weiß", "Ich"],
+      "correctOrder": [6, 5, 4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Ich weiß nicht, ob er morgen kommt.", "fa": "نمی‌دانم آیا او فردا می‌آید." }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "می‌توانید بگویید کتابخانه کجاست؟",
+      "sentenceTemplate": "{0} {1} mir sagen, {2} die Bibliothek {3}?",
+      "options": ["ist", "Können", "wo", "Sie"],
+      "correctAnswers": [1, 3, 2, 0],
+      "correctTranslation": { "de": "Können Sie mir sagen, wo die Bibliothek ist?", "fa": "می‌توانید بگویید کتابخانه کجاست؟" }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "کلمه پرسشی را با معنی وصل کنید",
+      "items": [
+        { "id": "i1", "text": "ob" },
+        { "id": "i2", "text": "wann" },
+        { "id": "i3", "text": "wo" },
+        { "id": "i4", "text": "wie" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "آیا (بله/خیر)" },
+        { "id": "m2", "text": "کی (زمان)" },
+        { "id": "m3", "text": "کجا (مکان)" },
+        { "id": "m4", "text": "چطور (چگونگی)" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "sagen", "fa": "گفتن" },
+      "example": { "text": { "de": "Können Sie mir sagen, wie viel das kostet?", "fa": "می‌توانید بگویید این چقدر است؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "sagen",
+      "translation": "گفتن",
+      "syllables": ["sa", "gen"],
+      "distractors": ["se", "gan", "gon"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "کدام جمله مودبانه‌تر است؟",
+      "options": ["Wie spät ist es?", "Sag mir die Uhrzeit!", "Könnten Sie mir sagen, wie spät es ist?", "Die Uhrzeit, bitte!"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! با Könnten Sie و سوال غیرمستقیم مودبانه‌ترین است", "incorrect": "سوال غیرمستقیم با Konjunktiv II مودبانه‌ترین است" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} Sie mir bitte sagen, wo die Toilette ist?",
+      "options": ["Könnten", "Können", "Kannst", "Konnten"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Könnten مودبانه‌ترین شکل است (Konjunktiv II)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d3",
+      "title": "در فرودگاه",
+      "context": "یک مسافر اطلاعات می‌خواهد",
+      "lines": [
+        { "speaker": "Reisender", "text": { "de": "Entschuldigung, wissen Sie, wann der Flug nach München geht?", "fa": "ببخشید، می‌دانید پرواز به مونیخ کی است؟" } },
+        { "speaker": "Mitarbeiter", "text": { "de": "Um 14:30 Uhr. Möchten Sie auch wissen, von welchem Gate?", "fa": "ساعت ۱۴:۳۰. می‌خواهید بدانید از کدام گیت؟" } },
+        { "speaker": "Reisender", "text": { "de": "Ja, bitte. Und könnten Sie mir sagen, ob der Flug pünktlich ist?", "fa": "بله، لطفاً. و می‌توانید بگویید آیا پرواز به موقع است؟" } },
+        { "speaker": "Mitarbeiter", "text": { "de": "Ja, der Flug ist pünktlich. Gate B12.", "fa": "بله، پرواز به موقع است. گیت B12." } }
+      ],
+      "questions": [
+        { "question": "مسافر می‌پرسد پرواز کی ...؟", "options": ["می‌رود", "می‌رسد", "تأخیر دارد"], "correctIndex": 0, "explanation": "پرسید: wann der Flug geht" },
+        { "question": "آیا پرواز به موقع است؟", "options": ["بله", "خیر", "معلوم نیست"], "correctIndex": 0, "explanation": "کارمند گفت: der Flug ist pünktlich" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["komme?", "Flughafen", "zum", "ich", "wie", "sagen,", "bitte", "mir", "Sie", "Würden"],
+      "correctOrder": [9, 8, 7, 6, 5, 4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Würden Sie mir bitte sagen, wie ich zum Flughafen komme?", "fa": "لطفاً می‌گویید چطور به فرودگاه بروم؟" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "Könnten Sie mir sagen مودبانه‌تر از Sagen Sie mir است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! با Konjunktiv II (könnten) مودبانه‌تر به نظر می‌رسد." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "ساختارهای مودبانه",
+      "content": "📝 **ساختارهای مودبانه برای سوال غیرمستقیم:**\n\n• **Könnten Sie mir sagen, ...?**\n  می‌توانید بگویید ...؟\n\n• **Wissen Sie, ...?**\n  می‌دانید ...؟\n\n• **Ich möchte wissen, ...**\n  می‌خواهم بدانم ...\n\n• **Dürfte ich fragen, ...?**\n  اجازه دارم بپرسم ...؟\n\n💡 همه این‌ها سوال را مودبانه‌تر می‌کنند!",
+      "examples": [
+        { "de": "Könnten Sie mir sagen, wo das ist?", "fa": "می‌توانید بگویید این کجاست؟" },
+        { "de": "Wissen Sie, ob das stimmt?", "fa": "می‌دانید آیا این درست است؟" },
+        { "de": "Dürfte ich fragen, wie Sie heißen?", "fa": "اجازه دارم بپرسم اسمتان چیست؟" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich möchte wissen, {0} das Konzert beginnt.",
+      "options": ["wann", "ob", "dass", "weil"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "wann برای پرسیدن زمان: کی شروع می‌شود؟" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Können Sie mir sagen, {0} ich ein Taxi rufen kann?",
+      "options": ["wie", "ob", "wann", "wo"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "wie برای پرسیدن چگونگی: چطور تاکسی بگیرم؟" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "Wo ist das Hotel? را به صورت غیرمستقیم بگویید:",
+      "options": ["Wissen Sie, wo ist das Hotel?", "Wissen Sie, das Hotel wo ist?", "Wissen Sie, ist wo das Hotel?", "Wissen Sie, wo das Hotel ist?"],
+      "correctAnswerIndex": 3,
+      "feedback": { "correct": "آفرین! wo das Hotel ist - فعل آخر است", "incorrect": "در سوال غیرمستقیم فعل به آخر می‌رود" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo4",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["ist.", "gekommen", "nicht", "er", "warum", "nicht,", "verstehe", "Ich"],
+      "correctOrder": [7, 6, 5, 4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Ich verstehe nicht, warum er nicht gekommen ist.", "fa": "نمی‌فهمم چرا او نیامده است." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "می‌دانید آیا فروشگاه امروز باز است؟",
+      "sentenceTemplate": "{0} {1}, {2} das Geschäft heute geöffnet {3}?",
+      "options": ["ist", "Sie", "ob", "Wissen"],
+      "correctAnswers": [3, 1, 2, 0],
+      "correctTranslation": { "de": "Wissen Sie, ob das Geschäft heute geöffnet ist?", "fa": "می‌دانید آیا فروشگاه امروز باز است؟" }
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Könnten Sie mir sagen, wo der Ausgang ist?",
+      "translation": "می‌توانید بگویید خروجی کجاست؟"
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Ich weiß nicht, ob er morgen kommt.",
+      "translation": "نمی‌دانم آیا او فردا می‌آید."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Wissen Sie, wann der Zug nach Berlin fährt?",
+      "translation": "می‌دانید قطار به برلین کی حرکت می‌کند؟"
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "سوال مستقیم یا غیرمستقیم؟",
+      "instruction": "تعیین کنید سوال مستقیم است یا غیرمستقیم",
+      "questions": [
+        { "prompt": "Wo ist das?", "left": "مستقیم", "right": "غیرمستقیم", "correctSide": "left" },
+        { "prompt": "Ich frage, ob das stimmt.", "left": "مستقیم", "right": "غیرمستقیم", "correctSide": "right" },
+        { "prompt": "Wann kommst du?", "left": "مستقیم", "right": "غیرمستقیم", "correctSide": "left" },
+        { "prompt": "Wissen Sie, wie spät es ist?", "left": "مستقیم", "right": "غیرمستقیم", "correctSide": "right" },
+        { "prompt": "Ist das teuer?", "left": "مستقیم", "right": "غیرمستقیم", "correctSide": "left" },
+        { "prompt": "Ich möchte wissen, wo das ist.", "left": "مستقیم", "right": "غیرمستقیم", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "Wissen Sie, wo ...?", "fa": "می‌دانید کجا ...؟" },
+        { "de": "Ich frage, ob ...", "fa": "می‌پرسم آیا ..." },
+        { "de": "Könnten Sie sagen, wann ...?", "fa": "می‌توانید بگویید کی ...؟" },
+        { "de": "Ich weiß nicht, wie ...", "fa": "نمی‌دانم چطور ..." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Dürfte ich {0}, ob Sie einen Moment Zeit haben?",
+      "options": ["fragen", "sagen", "wissen", "können"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Dürfte ich fragen = اجازه دارم بپرسم" }
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "ob", "fa": "آیا", "options": ["آیا", "چه وقت", "کجا", "چطور"], "correctIndex": 0 },
+        { "de": "könnten", "fa": "می‌توانستید", "options": ["می‌توانستید", "می‌خواستید", "باید", "اجازه داشتن"], "correctIndex": 0 },
+        { "de": "wissen", "fa": "دانستن", "options": ["گفتن", "دانستن", "پرسیدن", "فهمیدن"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp1",
+      "title": "تبریک! 🎉",
+      "message": "شما بخش سوالات غیرمستقیم را کامل کردید!",
+      "keyPoints": [
+        "ob برای سوالات بله/خیر غیرمستقیم",
+        "کلمات پرسشی (wann، wo، wie، warum) برای سوالات باز",
+        "فعل همیشه در آخر جمله فرعی می‌آید",
+        "Könnten Sie، Wissen Sie برای سوالات مودبانه",
+        "Dürfte ich fragen برای اجازه گرفتن مودبانه"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "ob", "fa": "آیا" } },
+        { "word": { "de": "wissen", "fa": "دانستن" } },
+        { "word": { "de": "fragen", "fa": "پرسیدن" } },
+        { "word": { "de": "könnten", "fa": "می‌توانستید" } },
+        { "word": { "de": "würden", "fa": "می‌خواستید" } },
+        { "word": { "de": "sagen", "fa": "گفتن" } }
+      ]
+    }
+  ]
+}

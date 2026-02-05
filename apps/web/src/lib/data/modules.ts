@@ -908,6 +908,37 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/A2/A2-M14-L04"
       }
     ]
+  },
+  {
+    id: "module-15",
+    title: "بخش ۱۵: سوالات غیرمستقیم (Indirekte Fragen)",
+    level: "A2",
+    lessons: [
+      {
+        id: "A2-M15-L01",
+        title: "Indirekte Fragen mit ob - سوالات با ob",
+        description: "یاد بگیرید چطور سوالات بله/خیر را به صورت غیرمستقیم بپرسید.",
+        path: "/learn/de-fa/A2/A2-M15-L01"
+      },
+      {
+        id: "A2-M15-L02",
+        title: "Indirekte W-Fragen - سوالات با کلمات پرسشی",
+        description: "یاد بگیرید چطور سوالات با wer، was، wo، wann، wie را به صورت غیرمستقیم بپرسید.",
+        path: "/learn/de-fa/A2/A2-M15-L02"
+      },
+      {
+        id: "A2-M15-L03",
+        title: "Höfliche Fragen - سوالات مودبانه",
+        description: "یاد بگیرید چطور با könnten، würden و dürfte سوالات مودبانه بپرسید.",
+        path: "/learn/de-fa/A2/A2-M15-L03"
+      },
+      {
+        id: "A2-M15-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "تمرین ترکیبی همه انواع سوالات غیرمستقیم.",
+        path: "/learn/de-fa/A2/A2-M15-L04"
+      }
+    ]
   }
 ];
 

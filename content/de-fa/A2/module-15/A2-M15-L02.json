@@ -1,0 +1,479 @@
+{
+  "id": "A2-M15-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Indirekte W-Fragen", "fa": "سوالات غیرمستقیم با کلمات پرسشی" },
+  "description": "یاد بگیرید چطور سوالات با wer، was، wo، wann، wie را به صورت غیرمستقیم بپرسید",
+  "level": "A2",
+  "module": 15,
+  "lessonNumber": 2,
+  "totalSteps": 44,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "wer", "fa": "چه کسی", "grammar": { "pos": "pronoun" } },
+    { "de": "was", "fa": "چه چیزی", "grammar": { "pos": "pronoun" } },
+    { "de": "wo", "fa": "کجا", "grammar": { "pos": "adverb" } },
+    { "de": "wann", "fa": "کی / چه وقت", "grammar": { "pos": "adverb" } },
+    { "de": "wie", "fa": "چطور / چگونه", "grammar": { "pos": "adverb" } },
+    { "de": "warum", "fa": "چرا", "grammar": { "pos": "adverb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "سوالات غیرمستقیم با W",
+      "content": "📝 **Indirekte W-Fragen**\n\nوقتی سوال با کلمه پرسشی شروع می‌شود، از همان کلمه استفاده می‌کنیم:\n\n**سوال مستقیم:**\n• **Wo** wohnt er? (کجا زندگی می‌کند؟)\n\n**سوال غیرمستقیم:**\n• Ich weiß nicht, **wo** er wohnt.\n• نمی‌دانم **کجا** زندگی می‌کند.\n\n💡 کلمه پرسشی می‌ماند، اما فعل به آخر می‌رود!\n💡 ob فقط برای سوالات بله/خیر است!",
+      "examples": [
+        { "de": "Wer ist das? = Ich frage, wer das ist.", "fa": "این کیست؟ = می‌پرسم این کیست." },
+        { "de": "Was machst du? = Sag mir, was du machst.", "fa": "چه کار می‌کنی؟ = بگو چه کار می‌کنی." },
+        { "de": "Wann kommst du? = Ich weiß nicht, wann du kommst.", "fa": "کی می‌آیی؟ = نمی‌دانم کی می‌آیی." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "wer", "fa": "چه کسی / کی" },
+      "example": { "text": { "de": "Ich weiß nicht, wer das ist.", "fa": "نمی‌دانم این کیست." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "jemand",
+      "translation": "کسی",
+      "syllables": ["je", "mand"],
+      "distractors": ["ja", "mund", "mind"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "was", "fa": "چه / چه چیزی" },
+      "example": { "text": { "de": "Sag mir, was du willst.", "fa": "بگو چه می‌خواهی." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "etwas",
+      "translation": "چیزی",
+      "syllables": ["et", "was"],
+      "distractors": ["at", "wes", "wos"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "wo", "fa": "کجا" },
+      "example": { "text": { "de": "Weißt du, wo der Bahnhof ist?", "fa": "می‌دانی ایستگاه قطار کجاست؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "irgendwo",
+      "translation": "یک جایی",
+      "syllables": ["ir", "gend", "wo"],
+      "distractors": ["er", "gand", "wa"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "ترتیب کلمات",
+      "content": "📝 **ترتیب کلمات در سوال غیرمستقیم**\n\n**سوال مستقیم:**\n• **Wo** wohnst du? (فعل دوم)\n• **Wann** kommt er? (فعل دوم)\n\n**سوال غیرمستقیم:**\n• Ich frage, **wo** du wohnst. (فعل آخر)\n• Sag mir, **wann** er kommt. (فعل آخر)\n\n**ساختار:**\nجمله اصلی + کلمه پرسشی + فاعل + ... + **فعل**\n\n💡 مثل ob، فعل به آخر می‌رود!",
+      "examples": [
+        { "de": "Wie heißt du? = Ich frage, wie du heißt.", "fa": "اسمت چیست؟ = می‌پرسم اسمت چیست." },
+        { "de": "Warum lachst du? = Sag mir, warum du lachst.", "fa": "چرا می‌خندی؟ = بگو چرا می‌خندی." },
+        { "de": "Woher kommst du? = Ich weiß nicht, woher du kommst.", "fa": "اهل کجایی؟ = نمی‌دانم اهل کجایی." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«نمی‌دانم کجا زندگی می‌کند» به آلمانی چیست؟",
+      "options": ["Ich weiß nicht, wo wohnt er.", "Ich weiß nicht, wo er wohnt.", "Ich weiß nicht, er wo wohnt.", "Ich weiß nicht, wohnt er wo."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! wo er wohnt - فعل آخر است", "incorrect": "در سوال غیرمستقیم، فعل به آخر می‌رود" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "«بگو چه می‌خواهی» به آلمانی چیست؟",
+      "options": ["Sag mir, was willst du.", "Sag mir, was du willst.", "Sag mir, du was willst.", "Sag mir, willst du was."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! was du willst - فعل آخر است", "incorrect": "بعد از کلمه پرسشی: فاعل + ... + فعل (آخر)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich weiß nicht, {0} der Bahnhof ist.",
+      "options": ["ob", "wo", "wer", "was"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "wo = کجا (سوال درباره مکان)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sag mir, {0} du morgen machst.",
+      "options": ["ob", "wo", "was", "wer"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "was = چه (سوال درباره کار/چیز)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "گمشده",
+      "context": "آنا و تام دنبال کلید می‌گردند",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Weißt du, wo meine Schlüssel sind?", "fa": "می‌دانی کلیدهایم کجاست؟" } },
+        { "speaker": "Tom", "text": { "de": "Nein. Ich weiß nicht, wo du sie hingelegt hast.", "fa": "نه. نمی‌دانم کجا گذاشتی‌شان." } },
+        { "speaker": "Anna", "text": { "de": "Ich frage mich, wer sie genommen hat.", "fa": "از خودم می‌پرسم چه کسی برداشته." } },
+        { "speaker": "Tom", "text": { "de": "Überleg mal, wann du sie zuletzt gesehen hast.", "fa": "فکر کن آخرین بار کی دیدی‌شان." } },
+        { "speaker": "Anna", "text": { "de": "Ah! Ich weiß jetzt, wo sie sind - in meiner Tasche!", "fa": "آها! حالا می‌دانم کجا هستند - توی کیفم!" } }
+      ],
+      "questions": [
+        {
+          "question": "آنا دنبال چه چیزی می‌گردد؟",
+          "options": ["کیف", "کلید", "موبایل"],
+          "correctIndex": 1,
+          "explanation": "آنا گفت: wo meine Schlüssel sind"
+        },
+        {
+          "question": "کلیدها کجا بودند؟",
+          "options": ["روی میز", "توی کیف", "توی جیب"],
+          "correctIndex": 1,
+          "explanation": "آنا گفت: in meiner Tasche"
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "wann", "fa": "کی / چه وقت" },
+      "example": { "text": { "de": "Ich weiß nicht, wann er kommt.", "fa": "نمی‌دانم کی می‌آید." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "irgendwann",
+      "translation": "یک وقتی",
+      "syllables": ["ir", "gend", "wann"],
+      "distractors": ["er", "gand", "wenn"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "wie", "fa": "چطور / چگونه" },
+      "example": { "text": { "de": "Kannst du mir sagen, wie das funktioniert?", "fa": "می‌توانی بگویی این چطور کار می‌کند؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "irgendwie",
+      "translation": "یک جوری",
+      "syllables": ["ir", "gend", "wie"],
+      "distractors": ["er", "gand", "wia"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s8",
+      "title": "ob یا کلمه پرسشی؟",
+      "content": "📝 **کی از ob و کی از کلمه پرسشی استفاده کنیم؟**\n\n**ob = برای سوالات بله/خیر:**\n• Kommt er? = Ich frage, **ob** er kommt.\n• Hast du Zeit? = Sag mir, **ob** du Zeit hast.\n\n**کلمه پرسشی = برای سوالات با W:**\n• **Wann** kommt er? = Ich frage, **wann** er kommt.\n• **Wo** wohnst du? = Sag mir, **wo** du wohnst.\n\n💡 اگر سوال اصلی با کلمه پرسشی شروع شود، همان را استفاده کنید!",
+      "examples": [
+        { "de": "Ist das richtig? = ob das richtig ist", "fa": "درست است؟ = آیا درست است" },
+        { "de": "Was ist das? = was das ist", "fa": "این چیست؟ = این چیست" },
+        { "de": "Warum weinst du? = warum du weinst", "fa": "چرا گریه می‌کنی؟ = چرا گریه می‌کنی" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["wohnt.", "wo", "nicht,", "er", "weiß", "Ich"],
+      "correctOrder": [5, 4, 2, 1, 3, 0],
+      "correctSentence": { "de": "Ich weiß nicht, wo er wohnt.", "fa": "نمی‌دانم کجا زندگی می‌کند." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["willst.", "was", "mir,", "du", "Sag"],
+      "correctOrder": [4, 2, 1, 3, 0],
+      "correctSentence": { "de": "Sag mir, was du willst.", "fa": "بگو چه می‌خواهی." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "برای سوال «Wann kommt der Zug?» کدام غیرمستقیم درست است؟",
+      "options": ["...ob der Zug kommt", "...wann kommt der Zug", "...wann der Zug kommt", "...der Zug wann kommt"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! wann der Zug kommt - کلمه پرسشی می‌ماند، فعل آخر", "incorrect": "کلمه پرسشی wann می‌ماند و فعل به آخر می‌رود" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "برای سوال «Kommt der Zug?» کدام غیرمستقیم درست است؟",
+      "options": ["...wann der Zug kommt", "...ob kommt der Zug", "...ob der Zug kommt", "...der Zug ob kommt"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! سوال بله/خیر پس ob der Zug kommt", "incorrect": "سوال بله/خیر با ob غیرمستقیم می‌شود" }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "warum", "fa": "چرا" },
+      "example": { "text": { "de": "Ich verstehe nicht, warum du traurig bist.", "fa": "نمی‌فهمم چرا ناراحتی." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "warum",
+      "translation": "چرا",
+      "syllables": ["wa", "rum"],
+      "distractors": ["wo", "rom", "rim"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich weiß nicht, {0} er so spät kommt.",
+      "options": ["ob", "wo", "warum", "wer"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "warum = چرا (سوال درباره دلیل)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Kannst du mir sagen, {0} das funktioniert?",
+      "options": ["ob", "wie", "was", "wann"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "wie = چطور (سوال درباره روش)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "مصاحبه",
+      "context": "لیزا و ماکس درباره مصاحبه صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Weißt du, wann deine Prüfung ist?", "fa": "می‌دانی امتحانت کی است؟" } },
+        { "speaker": "Max", "text": { "de": "Ja, aber ich weiß nicht, wie ich mich vorbereiten soll.", "fa": "بله، اما نمی‌دانم چطور آماده شوم." } },
+        { "speaker": "Lisa", "text": { "de": "Frag den Lehrer, was du lernen musst.", "fa": "از معلم بپرس چه باید یاد بگیری." } },
+        { "speaker": "Max", "text": { "de": "Gute Idee! Ich frage auch, wo die Prüfung stattfindet.", "fa": "ایده خوبی! می‌پرسم امتحان کجا برگزار می‌شود." } },
+        { "speaker": "Lisa", "text": { "de": "Sag mir Bescheid, wann du fertig bist.", "fa": "خبرم کن کی تمام شدی." } }
+      ],
+      "questions": [
+        {
+          "question": "ماکس نمی‌داند چطور چه کار کند؟",
+          "options": ["بخوابد", "آماده شود", "برود"],
+          "correctIndex": 1,
+          "explanation": "ماکس گفت: wie ich mich vorbereiten soll"
+        },
+        {
+          "question": "ماکس می‌خواهد بداند امتحان کجاست؟",
+          "options": ["بله", "نه", "مطمئن نیست"],
+          "correctIndex": 0,
+          "explanation": "ماکس گفت: wo die Prüfung stattfindet"
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "سوال مستقیم را با غیرمستقیم وصل کنید",
+      "items": [
+        { "id": "i1", "text": "Wo ist er?" },
+        { "id": "i2", "text": "Was machst du?" },
+        { "id": "i3", "text": "Wann kommst du?" },
+        { "id": "i4", "text": "Warum lachst du?" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "...wo er ist" },
+        { "id": "m2", "text": "...was du machst" },
+        { "id": "m3", "text": "...wann du kommst" },
+        { "id": "m4", "text": "...warum du lachst" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"],
+        ["i4", "m4"]
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "ob یا کلمه پرسشی؟",
+      "instruction": "این سوال با ob غیرمستقیم می‌شود یا با کلمه پرسشی؟",
+      "questions": [
+        { "prompt": "Kommt er?", "left": "ob", "right": "کلمه پرسشی", "correctSide": "left" },
+        { "prompt": "Wann kommt er?", "left": "ob", "right": "کلمه پرسشی", "correctSide": "right" },
+        { "prompt": "Hast du Zeit?", "left": "ob", "right": "کلمه پرسشی", "correctSide": "left" },
+        { "prompt": "Wo wohnst du?", "left": "ob", "right": "کلمه پرسشی", "correctSide": "right" },
+        { "prompt": "Ist das richtig?", "left": "ob", "right": "کلمه پرسشی", "correctSide": "left" },
+        { "prompt": "Warum weinst du?", "left": "ob", "right": "کلمه پرسشی", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["kommt.", "wann", "nicht,", "er", "weiß", "Ich"],
+      "correctOrder": [5, 4, 2, 1, 3, 0],
+      "correctSentence": { "de": "Ich weiß nicht, wann er kommt.", "fa": "نمی‌دانم کی می‌آید." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo4",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["funktioniert.", "wie", "mir,", "das", "sagen,", "du", "Kannst"],
+      "correctOrder": [6, 5, 4, 2, 1, 3, 0],
+      "correctSentence": { "de": "Kannst du mir sagen, wie das funktioniert.", "fa": "می‌توانی بگویی این چطور کار می‌کند." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich frage mich, {0} das gemacht hat.",
+      "options": ["ob", "wo", "was", "wer"],
+      "correctAnswers": [3],
+      "feedback": { "explanation": "wer = چه کسی (سوال درباره شخص)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Weißt du, {0} viel das kostet?",
+      "options": ["ob", "wie", "was", "wann"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "wie viel = چقدر (سوال درباره مقدار/قیمت)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d3",
+      "title": "رستوران جدید",
+      "context": "الی و تام درباره رستوران جدید صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Eli", "text": { "de": "Weißt du, wo das neue Restaurant ist?", "fa": "می‌دانی رستوران جدید کجاست؟" } },
+        { "speaker": "Tom", "text": { "de": "Ja, aber ich weiß nicht, wann es geöffnet hat.", "fa": "بله، اما نمی‌دانم کی باز است." } },
+        { "speaker": "Eli", "text": { "de": "Ich frage mich, wie teuer es ist.", "fa": "از خودم می‌پرسم چقدر گران است." } },
+        { "speaker": "Tom", "text": { "de": "Frag mal, was sie als Spezialität haben.", "fa": "بپرس غذای مخصوص‌شان چیست." } },
+        { "speaker": "Eli", "text": { "de": "Gute Idee! Ich schaue, wer dort arbeitet.", "fa": "ایده خوبی! نگاه می‌کنم چه کسی آنجا کار می‌کند." } }
+      ],
+      "questions": [
+        {
+          "question": "تام نمی‌داند رستوران کی باز است؟",
+          "options": ["بله", "نه", "مطمئن نیست"],
+          "correctIndex": 0,
+          "explanation": "تام گفت: ich weiß nicht, wann es geöffnet hat"
+        },
+        {
+          "question": "الی می‌خواهد بداند رستوران چطور است؟",
+          "options": ["چقدر گران است", "چقدر بزرگ است", "چقدر قدیمی است"],
+          "correctIndex": 0,
+          "explanation": "الی گفت: wie teuer es ist"
+        }
+      ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای سوال «Wo wohnst du?» از ob استفاده می‌کنیم.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! سوال با wo شروع می‌شود، پس از wo استفاده می‌کنیم نه ob."
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "در سوال غیرمستقیم با کلمه پرسشی، فعل به آخر می‌رود.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! مثل ob، در سوالات غیرمستقیم با کلمه پرسشی هم فعل به آخر می‌رود."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "نمی‌دانم کجا زندگی می‌کند.",
+      "sentenceTemplate": "Ich weiß nicht, {0} {1} {2}.",
+      "options": ["wohnt", "er", "wo"],
+      "correctAnswers": [2, 1, 0],
+      "correctTranslation": {
+        "de": "Ich weiß nicht, wo er wohnt.",
+        "fa": "نمی‌دانم کجا زندگی می‌کند."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "بگو چه می‌خواهی.",
+      "sentenceTemplate": "Sag mir, {0} {1} {2}.",
+      "options": ["willst", "du", "was"],
+      "correctAnswers": [2, 1, 0],
+      "correctTranslation": {
+        "de": "Sag mir, was du willst.",
+        "fa": "بگو چه می‌خواهی."
+      }
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "wo", "fa": "کجا", "options": ["کی", "چرا", "کجا", "چه"], "correctIndex": 2 },
+        { "de": "wann", "fa": "کی / چه وقت", "options": ["کجا", "کی", "چرا", "چطور"], "correctIndex": 1 },
+        { "de": "warum", "fa": "چرا", "options": ["چطور", "کجا", "کی", "چرا"], "correctIndex": 3 }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich weiß nicht, wo er wohnt.",
+      "translation": "نمی‌دانم کجا زندگی می‌کند."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Sag mir, was du willst.",
+      "translation": "بگو چه می‌خواهی."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Ich frage, wann er kommt.",
+      "translation": "می‌پرسم کی می‌آید."
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "wo", "fa": "کجا" },
+        { "de": "wann", "fa": "کی" },
+        { "de": "was", "fa": "چه" },
+        { "de": "warum", "fa": "چرا" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp1",
+      "title": "آفرین! 🎉",
+      "message": "سوالات غیرمستقیم با کلمات پرسشی را یاد گرفتید!",
+      "keyPoints": [
+        "سوالات با کلمه پرسشی: همان کلمه می‌ماند",
+        "wo, was, wer, wann, wie, warum, woher, wohin...",
+        "فعل به آخر جمله پیرو می‌رود",
+        "ob فقط برای سوالات بله/خیر است",
+        "ساختار: جمله اصلی + کلمه پرسشی + فاعل + ... + فعل"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "wer", "fa": "چه کسی" } },
+        { "word": { "de": "was", "fa": "چه" } },
+        { "word": { "de": "wo", "fa": "کجا" } },
+        { "word": { "de": "wann", "fa": "کی" } },
+        { "word": { "de": "wie", "fa": "چطور" } },
+        { "word": { "de": "warum", "fa": "چرا" } }
+      ]
+    }
+  ]
+}
