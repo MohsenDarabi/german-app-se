@@ -8,7 +8,7 @@
   "level": "A2",
   "module": 8,
   "lessonNumber": 4,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "organisiert", "fa": "سازمان‌دهی شده", "grammar": { "pos": "verb", "infinitive": "organisieren" } },
@@ -118,6 +118,20 @@
         { "speaker": "Chef", "text": { "de": "Und die Einladungen?", "fa": "و دعوت‌نامه‌ها؟" } },
         { "speaker": "Ben", "text": { "de": "Die werden gerade geschickt.", "fa": "آن‌ها الان فرستاده می‌شوند." } },
         { "speaker": "Chef", "text": { "de": "Das Catering muss noch organisiert werden.", "fa": "پذیرایی هنوز باید سازمان‌دهی شود." } }
+      ],
+      "questions": [
+        {
+          "question": "اتاق رزرو شده است؟",
+          "options": ["بله، قبلاً", "نه، هنوز نه", "امکان ندارد"],
+          "correctIndex": 0,
+          "explanation": "آنا گفت: Der Raum ist schon reserviert worden"
+        },
+        {
+          "question": "دعوت‌نامه‌ها چه وضعیتی دارند؟",
+          "options": ["قبلاً فرستاده شده‌اند", "الان فرستاده می‌شوند", "هنوز آماده نشده‌اند"],
+          "correctIndex": 1,
+          "explanation": "بن گفت: Die werden gerade geschickt"
+        }
       ]
     },
     {
@@ -203,6 +217,20 @@
         { "speaker": "Ben", "text": { "de": "Nein, er ist noch nicht gelesen worden.", "fa": "نه، هنوز خوانده نشده است." } },
         { "speaker": "Anna", "text": { "de": "Der muss bis morgen überprüft werden.", "fa": "این باید تا فردا بررسی شود." } },
         { "speaker": "Ben", "text": { "de": "Okay, das wird heute noch gemacht.", "fa": "باشه، این امروز انجام می‌شود." } }
+      ],
+      "questions": [
+        {
+          "question": "آیا گزارش خوانده شده است؟",
+          "options": ["بله، قبلاً", "نه، هنوز نه", "در حال خوانده شدن است"],
+          "correctIndex": 1,
+          "explanation": "بن گفت: er ist noch nicht gelesen worden"
+        },
+        {
+          "question": "گزارش تا چه زمانی باید بررسی شود؟",
+          "options": ["تا امروز", "تا فردا", "تا هفته آینده"],
+          "correctIndex": 1,
+          "explanation": "آنا گفت: Der muss bis morgen überprüft werden"
+        }
       ]
     },
     {
@@ -311,6 +339,20 @@
         { "speaker": "Mitarbeiter", "text": { "de": "Nein, das kann leider nicht gemacht werden.", "fa": "نه، متأسفانه این امکان ندارد." } },
         { "speaker": "Kunde", "text": { "de": "Ist die Bestellung schon bearbeitet worden?", "fa": "سفارش قبلاً پردازش شده است؟" } },
         { "speaker": "Mitarbeiter", "text": { "de": "Ja, sie ist heute Morgen bearbeitet worden.", "fa": "بله، امروز صبح پردازش شده است." } }
+      ],
+      "questions": [
+        {
+          "question": "بسته چه زمانی تحویل داده می‌شود؟",
+          "options": ["امروز", "فردا", "هفته آینده"],
+          "correctIndex": 1,
+          "explanation": "کارمند گفت: Es wird morgen geliefert"
+        },
+        {
+          "question": "آیا سفارش پردازش شده است؟",
+          "options": ["بله، امروز صبح", "نه، هنوز نه", "فردا پردازش می‌شود"],
+          "correctIndex": 0,
+          "explanation": "کارمند گفت: sie ist heute Morgen bearbeitet worden"
+        }
       ]
     },
     {
@@ -358,6 +400,38 @@
         { "de": "muss gemacht werden", "fa": "باید انجام شود" },
         { "de": "kann gemacht werden", "fa": "می‌تواند انجام شود" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در Passiv Präsens از werden + Partizip II استفاده می‌کنیم.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! مثال: Das wird gemacht"
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "در Passiv با Modalverb، فعل werden قبل از Partizip II می‌آید.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! werden بعد از Partizip II می‌آید: muss gemacht werden"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "کنفرانس سازمان‌دهی می‌شود.",
+      "sentenceTemplate": "{0} {1} {2} {3}.",
+      "options": ["wird", "Die", "organisiert", "Konferenz"],
+      "correctAnswers": [1, 3, 0, 2],
+      "correctTranslation": {
+        "de": "Die Konferenz wird organisiert.",
+        "fa": "کنفرانس سازمان‌دهی می‌شود."
+      }
     },
     {
       "type": "completion",

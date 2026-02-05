@@ -8,7 +8,7 @@
   "level": "A2",
   "module": 8,
   "lessonNumber": 2,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "können", "fa": "توانستن", "grammar": { "pos": "verb", "infinitive": "können" } },
@@ -116,6 +116,20 @@
         { "speaker": "Anna", "text": { "de": "Die E-Mails müssen beantwortet werden.", "fa": "ایمیل‌ها باید جواب داده شوند." } },
         { "speaker": "Chef", "text": { "de": "Und der Bericht?", "fa": "و گزارش؟" } },
         { "speaker": "Anna", "text": { "de": "Der kann morgen geschrieben werden.", "fa": "آن می‌تواند فردا نوشته شود." } }
+      ],
+      "questions": [
+        {
+          "question": "امروز چه کاری باید انجام شود؟",
+          "options": ["گزارش باید نوشته شود", "ایمیل‌ها باید جواب داده شوند", "جلسه باید برگزار شود"],
+          "correctIndex": 1,
+          "explanation": "آنا گفت: Die E-Mails müssen beantwortet werden"
+        },
+        {
+          "question": "گزارش چه زمانی می‌تواند نوشته شود؟",
+          "options": ["امروز", "فردا", "هفته آینده"],
+          "correctIndex": 1,
+          "explanation": "آنا گفت: Der kann morgen geschrieben werden"
+        }
       ]
     },
     {
@@ -200,6 +214,20 @@
         { "speaker": "Mechaniker", "text": { "de": "Nein, das kann erst morgen gemacht werden.", "fa": "نه، این فقط فردا می‌تواند انجام شود." } },
         { "speaker": "Kunde", "text": { "de": "Muss ich dann ein anderes Auto mieten?", "fa": "پس باید ماشین دیگری اجاره کنم؟" } },
         { "speaker": "Mechaniker", "text": { "de": "Ja, das sollte getan werden.", "fa": "بله، این باید انجام شود." } }
+      ],
+      "questions": [
+        {
+          "question": "ماشین چه زمانی می‌تواند تعمیر شود؟",
+          "options": ["امروز", "فردا", "هفته آینده"],
+          "correctIndex": 1,
+          "explanation": "مکانیک گفت: das kann erst morgen gemacht werden"
+        },
+        {
+          "question": "مکانیک چه پیشنهادی داد؟",
+          "options": ["صبر کند", "ماشین دیگری اجاره کند", "پیاده برود"],
+          "correctIndex": 1,
+          "explanation": "مکانیک گفت: das sollte getan werden (اجاره ماشین)"
+        }
       ]
     },
     {
@@ -313,6 +341,20 @@
         { "speaker": "Vermieter", "text": { "de": "Im Haus darf nicht geraucht werden.", "fa": "در خانه سیگار کشیدن ممنوع است." } },
         { "speaker": "Mieter", "text": { "de": "Kann die Wohnung gestrichen werden?", "fa": "آپارتمان می‌تواند رنگ شود؟" } },
         { "speaker": "Vermieter", "text": { "de": "Ja, aber das muss mit mir besprochen werden.", "fa": "بله، اما این باید با من صحبت شود." } }
+      ],
+      "questions": [
+        {
+          "question": "در خانه چه چیزی ممنوع است؟",
+          "options": ["موسیقی گوش دادن", "سیگار کشیدن", "پنجره باز کردن"],
+          "correctIndex": 1,
+          "explanation": "صاحب‌خانه گفت: Im Haus darf nicht geraucht werden"
+        },
+        {
+          "question": "برای رنگ کردن آپارتمان چه باید کرد؟",
+          "options": ["اجازه لازم نیست", "با صاحب‌خانه صحبت کرد", "ممنوع است"],
+          "correctIndex": 1,
+          "explanation": "صاحب‌خانه گفت: das muss mit mir besprochen werden"
+        }
       ]
     },
     {
@@ -360,6 +402,38 @@
         { "de": "darf nicht geöffnet werden", "fa": "اجازه ندارد باز شود" },
         { "de": "soll erledigt werden", "fa": "باید انجام شود (توصیه)" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در مجهول با Modalverb، فعل werden در آخر جمله می‌آید.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! مثال: Das muss gemacht werden."
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "darf nicht ... werden به معنی «مجبور نیست» است.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! darf nicht = ممنوع است / اجازه ندارد"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "این باید انجام شود.",
+      "sentenceTemplate": "{0} {1} {2} {3}.",
+      "options": ["muss", "Das", "gemacht", "werden"],
+      "correctAnswers": [1, 0, 2, 3],
+      "correctTranslation": {
+        "de": "Das muss gemacht werden.",
+        "fa": "این باید انجام شود."
+      }
     },
     {
       "type": "completion",

@@ -8,7 +8,7 @@
   "level": "A2",
   "module": 8,
   "lessonNumber": 3,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "worden", "fa": "شده (کمکی مجهول گذشته)", "grammar": { "pos": "verb", "infinitive": "werden" } },
@@ -116,6 +116,20 @@
         { "speaker": "Ben", "text": { "de": "Ja, er ist gestern fertig geschrieben worden.", "fa": "بله، دیروز تمام نوشته شده است." } },
         { "speaker": "Anna", "text": { "de": "Und die Kunden? Sind sie informiert worden?", "fa": "و مشتریان؟ آن‌ها اطلاع داده شده‌اند؟" } },
         { "speaker": "Ben", "text": { "de": "Ja, alle sind per E-Mail informiert worden.", "fa": "بله، همه با ایمیل اطلاع داده شده‌اند." } }
+      ],
+      "questions": [
+        {
+          "question": "گزارش چه زمانی نوشته شده است؟",
+          "options": ["امروز", "دیروز", "هفته قبل"],
+          "correctIndex": 1,
+          "explanation": "بن گفت: er ist gestern fertig geschrieben worden"
+        },
+        {
+          "question": "مشتریان چطور اطلاع داده شده‌اند؟",
+          "options": ["با تلفن", "با ایمیل", "با نامه"],
+          "correctIndex": 1,
+          "explanation": "بن گفت: alle sind per E-Mail informiert worden"
+        }
       ]
     },
     {
@@ -200,6 +214,20 @@
         { "speaker": "Gast", "text": { "de": "Ja, aber das Essen ist noch nicht gebracht worden.", "fa": "بله، اما غذا هنوز آورده نشده است." } },
         { "speaker": "Kellner", "text": { "de": "Entschuldigung. Das Essen wird gerade zubereitet.", "fa": "ببخشید. غذا الان آماده می‌شود." } },
         { "speaker": "Gast", "text": { "de": "Kein Problem. Ist der Wein schon bestellt worden?", "fa": "مشکلی نیست. شراب سفارش داده شده است؟" } }
+      ],
+      "questions": [
+        {
+          "question": "آیا غذا آورده شده است؟",
+          "options": ["بله، آورده شده", "نه، هنوز نه", "غذایی سفارش نداده‌اند"],
+          "correctIndex": 1,
+          "explanation": "مهمان گفت: das Essen ist noch nicht gebracht worden"
+        },
+        {
+          "question": "غذا الان چه وضعیتی دارد؟",
+          "options": ["آماده است", "در حال آماده شدن است", "لغو شده است"],
+          "correctIndex": 1,
+          "explanation": "پیشخدمت گفت: Das Essen wird gerade zubereitet"
+        }
       ]
     },
     {
@@ -312,6 +340,20 @@
         { "speaker": "Anna", "text": { "de": "Ja, es ist gestern fertiggestellt worden.", "fa": "بله، دیروز تکمیل شده است." } },
         { "speaker": "Chef", "text": { "de": "Sind alle Dokumente überprüft worden?", "fa": "همه مدارک بررسی شده‌اند؟" } },
         { "speaker": "Ben", "text": { "de": "Ja, sie sind alle kontrolliert worden.", "fa": "بله، همه کنترل شده‌اند." } }
+      ],
+      "questions": [
+        {
+          "question": "پروژه چه زمانی تکمیل شده است؟",
+          "options": ["امروز", "دیروز", "هفته قبل"],
+          "correctIndex": 1,
+          "explanation": "آنا گفت: es ist gestern fertiggestellt worden"
+        },
+        {
+          "question": "آیا مدارک بررسی شده‌اند؟",
+          "options": ["بله، همه", "فقط بعضی‌ها", "نه، هنوز نه"],
+          "correctIndex": 0,
+          "explanation": "بن گفت: sie sind alle kontrolliert worden"
+        }
       ]
     },
     {
@@ -359,6 +401,38 @@
         { "de": "ist geschrieben worden", "fa": "نوشته شده است" },
         { "de": "sind eingeladen worden", "fa": "دعوت شده‌اند" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در Passiv Perfekt از sein + Partizip II + worden استفاده می‌کنیم.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! مثال: Das Auto ist repariert worden"
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "در Passiv Perfekt از geworden استفاده می‌کنیم.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! از worden استفاده می‌کنیم، نه geworden"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "ماشین تعمیر شده است.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4}.",
+      "options": ["ist", "Das", "repariert", "Auto", "worden"],
+      "correctAnswers": [1, 3, 0, 2, 4],
+      "correctTranslation": {
+        "de": "Das Auto ist repariert worden.",
+        "fa": "ماشین تعمیر شده است."
+      }
     },
     {
       "type": "completion",

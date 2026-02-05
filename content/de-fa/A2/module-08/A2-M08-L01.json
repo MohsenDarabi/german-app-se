@@ -8,7 +8,7 @@
   "level": "A2",
   "module": 8,
   "lessonNumber": 1,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "werden", "fa": "شدن (کمکی مجهول)", "grammar": { "pos": "verb", "infinitive": "werden" } },
@@ -117,6 +117,20 @@
         { "speaker": "Verkäufer", "text": { "de": "Der Laden wird um 9 Uhr geöffnet.", "fa": "فروشگاه ساعت ۹ باز می‌شود." } },
         { "speaker": "Kunde", "text": { "de": "Und wann wird er geschlossen?", "fa": "و کی بسته می‌شود؟" } },
         { "speaker": "Verkäufer", "text": { "de": "Er wird um 18 Uhr geschlossen.", "fa": "ساعت ۱۸ بسته می‌شود." } }
+      ],
+      "questions": [
+        {
+          "question": "فروشگاه چه ساعتی باز می‌شود؟",
+          "options": ["ساعت ۸", "ساعت ۹", "ساعت ۱۰"],
+          "correctIndex": 1,
+          "explanation": "فروشنده گفت: Der Laden wird um 9 Uhr geöffnet"
+        },
+        {
+          "question": "فروشگاه چه ساعتی بسته می‌شود؟",
+          "options": ["ساعت ۱۷", "ساعت ۱۸", "ساعت ۱۹"],
+          "correctIndex": 1,
+          "explanation": "فروشنده گفت: Er wird um 18 Uhr geschlossen"
+        }
       ]
     },
     {
@@ -201,6 +215,20 @@
         { "speaker": "Kellner", "text": { "de": "Das Essen wird in zehn Minuten serviert.", "fa": "غذا در ده دقیقه سرو می‌شود." } },
         { "speaker": "Gast", "text": { "de": "Wird hier auch Kaffee gemacht?", "fa": "اینجا قهوه هم درست می‌شود؟" } },
         { "speaker": "Kellner", "text": { "de": "Ja, der Kaffee wird frisch zubereitet.", "fa": "بله، قهوه تازه آماده می‌شود." } }
+      ],
+      "questions": [
+        {
+          "question": "غذا چه زمانی سرو می‌شود؟",
+          "options": ["در پنج دقیقه", "در ده دقیقه", "در بیست دقیقه"],
+          "correctIndex": 1,
+          "explanation": "پیشخدمت گفت: Das Essen wird in zehn Minuten serviert"
+        },
+        {
+          "question": "قهوه چطور آماده می‌شود؟",
+          "options": ["تازه آماده می‌شود", "از قبل آماده است", "از ماشین در می‌آید"],
+          "correctIndex": 0,
+          "explanation": "پیشخدمت گفت: der Kaffee wird frisch zubereitet"
+        }
       ]
     },
     {
@@ -313,6 +341,20 @@
         { "speaker": "Ben", "text": { "de": "Ein neues Krankenhaus wird gebaut.", "fa": "یک بیمارستان جدید ساخته می‌شود." } },
         { "speaker": "Anna", "text": { "de": "Wann wird es fertig?", "fa": "کی تمام می‌شود؟" } },
         { "speaker": "Ben", "text": { "de": "Es wird nächstes Jahr eröffnet.", "fa": "سال آینده افتتاح می‌شود." } }
+      ],
+      "questions": [
+        {
+          "question": "چه چیزی ساخته می‌شود؟",
+          "options": ["یک مدرسه جدید", "یک بیمارستان جدید", "یک هتل جدید"],
+          "correctIndex": 1,
+          "explanation": "بن گفت: Ein neues Krankenhaus wird gebaut"
+        },
+        {
+          "question": "ساختمان کی افتتاح می‌شود؟",
+          "options": ["امسال", "سال آینده", "دو سال دیگر"],
+          "correctIndex": 1,
+          "explanation": "بن گفت: Es wird nächstes Jahr eröffnet"
+        }
       ]
     },
     {
@@ -360,6 +402,38 @@
         { "de": "wird geschlossen", "fa": "بسته می‌شود" },
         { "de": "wird gebaut", "fa": "ساخته می‌شود" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای ساخت مجهول در زمان حال از werden + Partizip II استفاده می‌کنیم.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! مثال: Das Auto wird repariert"
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "در مجهول، فعل werden همیشه به صورت wird صرف می‌شود.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! werden بر اساس فاعل صرف می‌شود: ich werde, du wirst, er wird..."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "ماشین تعمیر می‌شود.",
+      "sentenceTemplate": "{0} {1} {2} {3}.",
+      "options": ["wird", "Das", "Auto", "repariert"],
+      "correctAnswers": [1, 2, 0, 3],
+      "correctTranslation": {
+        "de": "Das Auto wird repariert.",
+        "fa": "ماشین تعمیر می‌شود."
+      }
     },
     {
       "type": "completion",
