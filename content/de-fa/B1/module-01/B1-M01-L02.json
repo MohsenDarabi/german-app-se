@@ -1,0 +1,411 @@
+{
+  "id": "B1-M01-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "N-Deklination: Weitere Beispiele", "fa": "صرف-N: نمونه‌های بیشتر" },
+  "description": "اسم‌های بیشتری با صرف-N یاد بگیرید: der Nachbar, der Experte, der Polizist و غیره",
+  "level": "B1",
+  "module": 1,
+  "lessonNumber": 2,
+  "totalSteps": 44,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "der Nachbar", "fa": "همسایه", "grammar": { "pos": "noun", "gender": "masculine", "nDeklination": true, "plural": "Nachbarn" } },
+    { "de": "der Experte", "fa": "متخصص", "grammar": { "pos": "noun", "gender": "masculine", "nDeklination": true, "plural": "Experten" } },
+    { "de": "der Polizist", "fa": "پلیس", "grammar": { "pos": "noun", "gender": "masculine", "nDeklination": true, "plural": "Polizisten" } },
+    { "de": "der Journalist", "fa": "روزنامه‌نگار", "grammar": { "pos": "noun", "gender": "masculine", "nDeklination": true, "plural": "Journalisten" } },
+    { "de": "der Patient", "fa": "بیمار", "grammar": { "pos": "noun", "gender": "masculine", "nDeklination": true, "plural": "Patienten" } },
+    { "de": "der Tourist", "fa": "توریست", "grammar": { "pos": "noun", "gender": "masculine", "nDeklination": true, "plural": "Touristen" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "مرور: پسوندهای N-Deklination",
+      "content": "📝 **اسم‌های N-Deklination سه گروه اصلی دارند:**\n\n**۱. ختم به -e:**\n• der Jung**e** → den/dem/des Jung**en**\n• der Expert**e** → den/dem/des Expert**en**\n\n**۲. ختم به -ist, -ent, -ant:**\n• der Poliz**ist** → den/dem/des Polizist**en**\n• der Pati**ent** → den/dem/des Patient**en**\n• der Journal**ist** → den/dem/des Journalist**en**\n\n**۳. برخی اسم‌های خاص:**\n• der Nachbar → den/dem/des Nachbar**n**\n• der Bauer → den/dem/des Bauer**n**",
+      "examples": [
+        { "de": "Ich frage den Experten.", "fa": "از متخصص می‌پرسم." },
+        { "de": "Der Polizist hilft dem Touristen.", "fa": "پلیس به توریست کمک می‌کند." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "der Nachbar", "fa": "همسایه" },
+      "example": { "text": { "de": "Mein Nachbar ist sehr freundlich.", "fa": "همسایه‌ام خیلی مهربان است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Nachbar",
+      "translation": "همسایه",
+      "syllables": ["Nach", "bar"],
+      "distractors": ["Nech", "bor", "ber"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "der Experte", "fa": "متخصص" },
+      "example": { "text": { "de": "Der Experte erklärt das Problem.", "fa": "متخصص مشکل را توضیح می‌دهد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Experte",
+      "translation": "متخصص",
+      "syllables": ["Ex", "per", "te"],
+      "distractors": ["Ax", "par", "ta"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام شکل Akkusativ «der Nachbar» درست است؟",
+      "options": ["den Nachbar", "den Nachbarn", "dem Nachbarn", "des Nachbarn"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! در Akkusativ: den Nachbarn", "incorrect": "در N-Deklination، Akkusativ پسوند -n می‌گیرد: den Nachbarn" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید (Akkusativ)",
+      "sentence": "Ich besuche den {0}.",
+      "options": ["Nachbar", "Nachbarn", "Nachbars", "Nachbare"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "در Akkusativ: den Nachbarn" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در آپارتمان",
+      "scene": {
+        "location": "apartment",
+        "description": { "de": "Im Treppenhaus", "fa": "در راه‌پله" }
+      },
+      "lines": [
+        { "speaker": "Eli", "text": { "de": "Kennst du den neuen Nachbarn?", "fa": "همسایه جدید را می‌شناسی؟" }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Ja, ich habe dem Nachbarn gestern geholfen.", "fa": "بله، دیروز به همسایه کمک کردم." }, "mood": "happy" },
+        { "speaker": "Eli", "text": { "de": "Was macht er beruflich?", "fa": "شغلش چیست؟" }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Er ist Experte für Computer.", "fa": "او متخصص کامپیوتر است." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "تام به چه کسی کمک کرد؟", "options": ["به الی", "به همسایه", "به متخصص"], "correctIndex": 1, "explanation": "تام گفت: Ich habe dem Nachbarn geholfen" },
+        { "question": "همسایه جدید چه کاره است؟", "options": ["معلم", "متخصص کامپیوتر", "پزشک"], "correctIndex": 1, "explanation": "تام گفت: Er ist Experte für Computer" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["den Nachbarn.", "Ich", "besuche"],
+      "correctOrder": [1, 2, 0],
+      "correctSentence": { "de": "Ich besuche den Nachbarn.", "fa": "به همسایه سر می‌زنم." }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "der Polizist", "fa": "پلیس" },
+      "example": { "text": { "de": "Der Polizist regelt den Verkehr.", "fa": "پلیس ترافیک را کنترل می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Polizist",
+      "translation": "پلیس",
+      "syllables": ["Po", "li", "zist"],
+      "distractors": ["Pa", "lo", "zest"]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "der Journalist", "fa": "روزنامه‌نگار" },
+      "example": { "text": { "de": "Der Journalist schreibt einen Artikel.", "fa": "روزنامه‌نگار مقاله‌ای می‌نویسد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "Journalist",
+      "translation": "روزنامه‌نگار",
+      "syllables": ["Jour", "na", "list"],
+      "distractors": ["Jor", "no", "lest"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s6",
+      "title": "پسوند -ist در N-Deklination",
+      "content": "📝 **اسم‌های ختم به -ist همیشه N-Deklination هستند:**\n\n| Nominativ | Akkusativ | Dativ | Genitiv |\n|-----------|-----------|-------|----------|\n| der Poliz**ist** | den Polizist**en** | dem Polizist**en** | des Polizist**en** |\n| der Journal**ist** | den Journalist**en** | dem Journalist**en** | des Journalist**en** |\n| der Tour**ist** | den Tourist**en** | dem Tourist**en** | des Tourist**en** |\n\n💡 **توجه:** این اسم‌ها معمولاً شغل یا ملیت را نشان می‌دهند.",
+      "examples": [
+        { "de": "Ich frage den Polizisten nach dem Weg.", "fa": "از پلیس مسیر را می‌پرسم." },
+        { "de": "Der Journalist interviewt den Touristen.", "fa": "روزنامه‌نگار با توریست مصاحبه می‌کند." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام شکل Dativ «der Journalist» درست است؟",
+      "options": ["dem Journalist", "dem Journalisten", "den Journalisten", "des Journalisten"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! در Dativ: dem Journalisten", "incorrect": "در N-Deklination، Dativ پسوند -en می‌گیرد: dem Journalisten" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید (Dativ)",
+      "sentence": "Der Tourist dankt dem {0}.",
+      "options": ["Polizist", "Polizisten", "Polizistes", "Polizister"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "در Dativ: dem Polizisten" }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "پسوند -ist سریع",
+      "instruction": "شکل درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "Akk.: den ___", "left": "Polizist", "right": "Polizisten", "correctSide": "right" },
+        { "prompt": "Dat.: dem ___", "left": "Journalist", "right": "Journalisten", "correctSide": "right" },
+        { "prompt": "Gen.: des ___", "left": "Touristen", "right": "Tourists", "correctSide": "left" },
+        { "prompt": "Akk.: den ___", "left": "Experten", "right": "Experte", "correctSide": "left" },
+        { "prompt": "Dat.: dem ___", "left": "Nachbar", "right": "Nachbarn", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "der Patient", "fa": "بیمار" },
+      "example": { "text": { "de": "Der Arzt untersucht den Patienten.", "fa": "پزشک بیمار را معاینه می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "Patient",
+      "translation": "بیمار",
+      "syllables": ["Pa", "ti", "ent"],
+      "distractors": ["Po", "to", "ant"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "der Tourist", "fa": "توریست" },
+      "example": { "text": { "de": "Der Tourist fotografiert die Stadt.", "fa": "توریست از شهر عکس می‌گیرد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Tourist",
+      "translation": "توریست",
+      "syllables": ["Tou", "rist"],
+      "distractors": ["Tau", "rest", "rast"]
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در بیمارستان",
+      "scene": {
+        "location": "hospital",
+        "description": { "de": "Im Krankenhaus", "fa": "در بیمارستان" }
+      },
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Wie geht es dem Patienten?", "fa": "حال بیمار چطور است؟" }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Es geht dem Patienten schon besser.", "fa": "حال بیمار بهتر شده." }, "mood": "happy" },
+        { "speaker": "Lisa", "text": { "de": "Hat der Arzt den Patienten untersucht?", "fa": "آیا پزشک بیمار را معاینه کرده؟" }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Ja, die Diagnose des Patienten ist gut.", "fa": "بله، تشخیص بیمار خوب است." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "حال بیمار چطور است؟", "options": ["بد", "بهتر شده", "تغییری نکرده"], "correctIndex": 1, "explanation": "تام گفت: Es geht dem Patienten schon besser" },
+        { "question": "تشخیص بیمار چگونه است؟", "options": ["بد", "نامشخص", "خوب"], "correctIndex": 2, "explanation": "تام گفت: die Diagnose des Patienten ist gut" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید (Genitiv)",
+      "sentence": "Die Behandlung des {0} dauert lange.",
+      "options": ["Patient", "Patienten", "Patientes", "Patients"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "در Genitiv: des Patienten (بدون -s اضافه)" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "اسم‌های ختم به -ist در ژنیتیو پسوند -s می‌گیرند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! اسم‌های N-Deklination در ژنیتیو پسوند -en می‌گیرند، نه -s. مثال: des Journalisten (نه Journalists)" }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "Nominativ را با Dativ وصل کنید",
+      "items": [
+        { "id": "i1", "text": "der Nachbar" },
+        { "id": "i2", "text": "der Polizist" },
+        { "id": "i3", "text": "der Patient" },
+        { "id": "i4", "text": "der Tourist" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "dem Nachbarn" },
+        { "id": "m2", "text": "dem Polizisten" },
+        { "id": "m3", "text": "dem Patienten" },
+        { "id": "m4", "text": "dem Touristen" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "dialog",
+      "id": "d3",
+      "title": "در خیابان",
+      "scene": {
+        "location": "street",
+        "description": { "de": "Auf der Straße", "fa": "در خیابان" }
+      },
+      "lines": [
+        { "speaker": "Eli", "text": { "de": "Entschuldigung, ich suche den Polizisten.", "fa": "ببخشید، دنبال پلیس می‌گردم." }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Welchen Polizisten meinen Sie?", "fa": "منظورتان کدام پلیس است؟" }, "mood": "neutral" },
+        { "speaker": "Eli", "text": { "de": "Den Polizisten, der dem Touristen geholfen hat.", "fa": "پلیسی که به توریست کمک کرد." }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Ah, der steht dort drüben!", "fa": "آه، آنجا ایستاده!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "الی دنبال چه کسی می‌گردد؟", "options": ["توریست", "پلیس", "همسایه"], "correctIndex": 1, "explanation": "الی گفت: ich suche den Polizisten" },
+        { "question": "پلیس به چه کسی کمک کرده بود؟", "options": ["به الی", "به تام", "به توریست"], "correctIndex": 2, "explanation": "الی گفت: der dem Touristen geholfen hat" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["dem Touristen.", "hilft", "Der Polizist"],
+      "correctOrder": [2, 1, 0],
+      "correctSentence": { "de": "Der Polizist hilft dem Touristen.", "fa": "پلیس به توریست کمک می‌کند." }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "پزشک بیمار را معاینه می‌کند.",
+      "sentenceTemplate": "Der Arzt untersucht {0} {1}.",
+      "options": ["den", "Patienten", "dem", "Patient"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Der Arzt untersucht den Patienten.", "fa": "پزشک بیمار را معاینه می‌کند." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Der Journalist interviewt den {0}.",
+      "options": ["Experte", "Experten", "Expertes", "Experte"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "در Akkusativ: den Experten" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Meinung des {0} ist wichtig.",
+      "options": ["Journalist", "Journalisten", "Journalistes", "Journalists"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "در Genitiv: des Journalisten (بدون -s اضافه)" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "پسوند -ent در N-Deklination",
+      "content": "📝 **اسم‌های ختم به -ent هم N-Deklination هستند:**\n\n• der Stud**ent** → den/dem/des Student**en**\n• der Pati**ent** → den/dem/des Patient**en**\n• der Assis**tent** → den/dem/des Assistent**en**\n• der Präsid**ent** → den/dem/des Präsident**en**\n\n💡 **نکته:** همه این اسم‌ها از ریشه لاتین هستند و معمولاً شغل یا نقش را نشان می‌دهند.",
+      "examples": [
+        { "de": "Ich kenne den Präsidenten.", "fa": "رئیس‌جمهور را می‌شناسم." },
+        { "de": "Die Arbeit des Assistenten ist gut.", "fa": "کار دستیار خوب است." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "کدام اسم N-Deklination نیست؟",
+      "options": ["der Tourist", "der Arzt", "der Patient", "der Journalist"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! der Arzt اسم معمولی است: den Arzt, dem Arzt, des Arztes", "incorrect": "der Arzt معمولی است و در ژنیتیو -es می‌گیرد: des Arztes" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "«der Nachbar» در Akkusativ می‌شود «den Nachbarn».",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! der Nachbar → den Nachbarn (با پسوند -n)" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["des Experten", "Die Analyse", "korrekt.", "ist"],
+      "correctOrder": [1, 0, 3, 2],
+      "correctSentence": { "de": "Die Analyse des Experten ist korrekt.", "fa": "تحلیل متخصص درست است." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "به همسایه کمک می‌کنم.",
+      "sentenceTemplate": "Ich helfe {0} {1}.",
+      "options": ["dem", "Nachbarn", "den", "Nachbar"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Ich helfe dem Nachbarn.", "fa": "به همسایه کمک می‌کنم." }
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich frage den Polizisten.",
+      "translation": "از پلیس می‌پرسم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Der Arzt hilft dem Patienten.",
+      "translation": "پزشک به بیمار کمک می‌کند."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Die Frage des Journalisten ist interessant.",
+      "translation": "سوال روزنامه‌نگار جالب است."
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "der Nachbar", "fa": "همسایه" },
+        { "de": "der Experte", "fa": "متخصص" },
+        { "de": "der Polizist", "fa": "پلیس" },
+        { "de": "der Tourist", "fa": "توریست" }
+      ]
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "شکل Akkusativ درست را انتخاب کنید",
+      "words": [
+        { "de": "der Nachbar", "fa": "همسایه → Akk.", "options": ["den Nachbar", "den Nachbarn", "dem Nachbarn", "des Nachbarn"], "correctIndex": 1 },
+        { "de": "der Journalist", "fa": "روزنامه‌نگار → Akk.", "options": ["den Journalist", "den Journalisten", "dem Journalisten", "des Journalisten"], "correctIndex": 1 },
+        { "de": "der Patient", "fa": "بیمار → Akk.", "options": ["den Patient", "den Patienten", "dem Patienten", "des Patienten"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp1",
+      "title": "آفرین! 🎉",
+      "message": "شما نمونه‌های بیشتری از N-Deklination یاد گرفتید!",
+      "keyPoints": [
+        "اسم‌های ختم به -ist: der Polizist, der Journalist, der Tourist → den/dem/des ...en",
+        "اسم‌های ختم به -ent: der Patient, der Student → den/dem/des ...en",
+        "اسم‌های ختم به -e: der Experte → den/dem/des Experten",
+        "برخی اسم‌های خاص: der Nachbar → den/dem/des Nachbarn",
+        "در ژنیتیو پسوند -s اضافه نمی‌گیرند: des Patienten (نه Patients)"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "der Nachbar", "fa": "همسایه" } },
+        { "word": { "de": "der Experte", "fa": "متخصص" } },
+        { "word": { "de": "der Polizist", "fa": "پلیس" } },
+        { "word": { "de": "der Journalist", "fa": "روزنامه‌نگار" } },
+        { "word": { "de": "der Patient", "fa": "بیمار" } },
+        { "word": { "de": "der Tourist", "fa": "توریست" } }
+      ]
+    }
+  ]
+}

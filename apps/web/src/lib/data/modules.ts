@@ -1046,6 +1046,24 @@ const DE_FA_B1_MODULES: ModuleStub[] = [
         title: "N-Deklination: Einführung - معرفی",
         description: "یاد بگیرید اسم‌های مذکر ضعیف را که در همه حالات (به جز Nominativ) پسوند -(e)n می‌گیرند.",
         path: "/learn/de-fa/B1/B1-M01-L01"
+      },
+      {
+        id: "B1-M01-L02",
+        title: "N-Deklination: Weitere Beispiele - نمونه‌های بیشتر",
+        description: "اسم‌های بیشتری با صرف-N یاد بگیرید: der Nachbar, der Experte, der Polizist و غیره.",
+        path: "/learn/de-fa/B1/B1-M01-L02"
+      },
+      {
+        id: "B1-M01-L03",
+        title: "N-Deklination: Ausnahmen - استثناها",
+        description: "استثناهای N-Deklination را یاد بگیرید: das Herz، der Name، der Buchstabe و غیره.",
+        path: "/learn/de-fa/B1/B1-M01-L03"
+      },
+      {
+        id: "B1-M01-L04",
+        title: "N-Deklination: Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل N-Deklination: همه قوانین، استثناها و تمرین‌های ترکیبی.",
+        path: "/learn/de-fa/B1/B1-M01-L04"
       }
     ]
   }

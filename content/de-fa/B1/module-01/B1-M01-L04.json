@@ -1,0 +1,413 @@
+{
+  "id": "B1-M01-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "N-Deklination: Zusammenfassung", "fa": "صرف-N: جمع‌بندی" },
+  "description": "مرور کامل N-Deklination: همه قوانین، استثناها و تمرین‌های ترکیبی",
+  "level": "B1",
+  "module": 1,
+  "lessonNumber": 4,
+  "totalSteps": 44,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "der Praktikant", "fa": "کارآموز", "grammar": { "pos": "noun", "gender": "masculine", "nDeklination": true, "plural": "Praktikanten" } },
+    { "de": "der Absolvent", "fa": "فارغ‌التحصیل", "grammar": { "pos": "noun", "gender": "masculine", "nDeklination": true, "plural": "Absolventen" } },
+    { "de": "der Demonstrant", "fa": "تظاهرکننده", "grammar": { "pos": "noun", "gender": "masculine", "nDeklination": true, "plural": "Demonstranten" } },
+    { "de": "der Prinz", "fa": "شاهزاده", "grammar": { "pos": "noun", "gender": "masculine", "nDeklination": true, "plural": "Prinzen" } },
+    { "de": "der Franzose", "fa": "فرانسوی (مرد)", "grammar": { "pos": "noun", "gender": "masculine", "nDeklination": true, "plural": "Franzosen" } },
+    { "de": "der Zeuge", "fa": "شاهد", "grammar": { "pos": "noun", "gender": "masculine", "nDeklination": true, "plural": "Zeugen" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "مرور کامل N-Deklination",
+      "content": "📝 **خلاصه قوانین N-Deklination:**\n\n**۱. کدام اسم‌ها؟**\n• اسم‌های مذکر (der) که:\n  - به **-e** ختم می‌شوند: der Junge, der Kollege\n  - به **-ent, -ant, -ist** ختم می‌شوند: der Student, der Praktikant, der Tourist\n  - برخی اسم‌های خاص: der Mensch, der Herr, der Nachbar\n• تنها اسم خنثی: **das Herz**\n\n**۲. چه تغییری؟**\n| حالت | تغییر |\n|------|-------|\n| Nom. | بدون تغییر |\n| Akk. | + (e)n |\n| Dat. | + (e)n |\n| Gen. | + (e)n یا (e)ns |\n\n**۳. استثنا در ژنیتیو:**\nder Name, der Gedanke, der Glaube, der Wille, das Herz → **-ns**",
+      "examples": [
+        { "de": "Ich kenne den Studenten.", "fa": "دانشجو را می‌شناسم." },
+        { "de": "Die Bedeutung des Namens ist schön.", "fa": "معنی نام زیباست." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "der Praktikant", "fa": "کارآموز" },
+      "example": { "text": { "de": "Der Praktikant lernt viel.", "fa": "کارآموز چیزهای زیادی یاد می‌گیرد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Praktikant",
+      "translation": "کارآموز",
+      "syllables": ["Prak", "ti", "kant"],
+      "distractors": ["Prek", "ta", "kent"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "der Absolvent", "fa": "فارغ‌التحصیل" },
+      "example": { "text": { "de": "Der Absolvent sucht einen Job.", "fa": "فارغ‌التحصیل دنبال کار می‌گردد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Absolvent",
+      "translation": "فارغ‌التحصیل",
+      "syllables": ["Ab", "sol", "vent"],
+      "distractors": ["Eb", "sal", "vant"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام شکل Akkusativ «der Praktikant» درست است؟",
+      "options": ["den Praktikant", "den Praktikanten", "dem Praktikanten", "des Praktikanten"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! در Akkusativ: den Praktikanten", "incorrect": "اسم‌های ختم به -ant در Akkusativ پسوند -en می‌گیرند: den Praktikanten" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید (Dativ)",
+      "sentence": "Ich helfe dem {0}.",
+      "options": ["Absolvent", "Absolventen", "Absolventes", "Absolvents"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "در Dativ: dem Absolventen" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در شرکت",
+      "scene": {
+        "location": "office",
+        "description": { "de": "In der Firma", "fa": "در شرکت" }
+      },
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Kennst du den neuen Praktikanten?", "fa": "کارآموز جدید را می‌شناسی؟" }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Ja, ich habe dem Praktikanten alles gezeigt.", "fa": "بله، همه چیز را به کارآموز نشان دادم." }, "mood": "happy" },
+        { "speaker": "Lisa", "text": { "de": "Die Arbeit des Absolventen ist sehr gut.", "fa": "کار فارغ‌التحصیل خیلی خوب است." }, "mood": "happy" },
+        { "speaker": "Tom", "text": { "de": "Er war früher Student an unserer Universität.", "fa": "او قبلاً دانشجوی دانشگاه ما بود." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "تام به چه کسی همه چیز را نشان داد؟", "options": ["به لیسا", "به کارآموز", "به فارغ‌التحصیل"], "correctIndex": 1, "explanation": "تام گفت: Ich habe dem Praktikanten alles gezeigt" },
+        { "question": "کار چه کسی خیلی خوب است؟", "options": ["کارآموز", "دانشجو", "فارغ‌التحصیل"], "correctIndex": 2, "explanation": "لیسا گفت: Die Arbeit des Absolventen ist sehr gut" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "der Franzose", "fa": "فرانسوی (مرد)" },
+      "example": { "text": { "de": "Der Franzose spricht gut Deutsch.", "fa": "مرد فرانسوی آلمانی خوب صحبت می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Franzose",
+      "translation": "فرانسوی",
+      "syllables": ["Fran", "zo", "se"],
+      "distractors": ["Fren", "za", "si"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "ملیت‌ها در N-Deklination",
+      "content": "📝 **اسم‌های ملیت مذکر که به -e ختم می‌شوند:**\n\n| Nominativ | Akkusativ | Dativ | Genitiv |\n|-----------|-----------|-------|----------|\n| der Franzos**e** | den Franzos**en** | dem Franzos**en** | des Franzos**en** |\n| der Chines**e** | den Chines**en** | dem Chines**en** | des Chines**en** |\n| der Portugies**e** | den Portugies**en** | dem Portugies**en** | des Portugies**en** |\n| der Ire | den Ir**en** | dem Ir**en** | des Ir**en** |\n\n💡 **توجه:** این‌ها همه N-Deklination هستند!\nولی: der Deutsche → مثل صفت صرف می‌شود (متفاوت!)",
+      "examples": [
+        { "de": "Ich kenne den Franzosen.", "fa": "مرد فرانسوی را می‌شناسم." },
+        { "de": "Die Kultur des Chinesen ist interessant.", "fa": "فرهنگ مرد چینی جالب است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "der Zeuge", "fa": "شاهد" },
+      "example": { "text": { "de": "Der Zeuge hat alles gesehen.", "fa": "شاهد همه چیز را دیده است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "Zeuge",
+      "translation": "شاهد",
+      "syllables": ["Zeu", "ge"],
+      "distractors": ["Zou", "ga", "gi"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام شکل Genitiv «der Zeuge» درست است؟",
+      "options": ["des Zeuge", "des Zeugen", "des Zeuges", "des Zeugens"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! در Genitiv: des Zeugen", "incorrect": "der Zeuge در ژنیتیو -n می‌گیرد: des Zeugen (معمولی N-Dekl.)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید (Akkusativ)",
+      "sentence": "Die Polizei befragt den {0}.",
+      "options": ["Zeuge", "Zeugen", "Zeuges", "Zeuger"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "در Akkusativ: den Zeugen" }
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "der Prinz", "fa": "شاهزاده" },
+      "example": { "text": { "de": "Der Prinz wohnt im Schloss.", "fa": "شاهزاده در قصر زندگی می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "Prinz",
+      "translation": "شاهزاده",
+      "syllables": ["Prinz"],
+      "distractors": ["Pranz", "Prenz", "Pronz"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s8",
+      "title": "اسم‌های خاص N-Deklination",
+      "content": "📝 **چند اسم خاص که به -e ختم نمی‌شوند ولی N-Deklination دارند:**\n\n| Nominativ | Akkusativ | Dativ | Genitiv |\n|-----------|-----------|-------|----------|\n| der **Prinz** | den Prinz**en** | dem Prinz**en** | des Prinz**en** |\n| der **Bär** | den Bär**en** | dem Bär**en** | des Bär**en** |\n| der **Graf** | den Graf**en** | dem Graf**en** | des Graf**en** |\n| der **Held** | den Held**en** | dem Held**en** | des Held**en** |\n\n💡 **قانون ساده:** این اسم‌ها معمولاً موجودات زنده (انسان یا حیوان) هستند.",
+      "examples": [
+        { "de": "Die Geschichte des Prinzen ist bekannt.", "fa": "داستان شاهزاده معروف است." },
+        { "de": "Ich fotografiere den Bären.", "fa": "از خرس عکس می‌گیرم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "der Demonstrant", "fa": "تظاهرکننده" },
+      "example": { "text": { "de": "Der Demonstrant trägt ein Schild.", "fa": "تظاهرکننده تابلو حمل می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Demonstrant",
+      "translation": "تظاهرکننده",
+      "syllables": ["De", "mon", "strant"],
+      "distractors": ["Da", "man", "strunt"]
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در خیابان",
+      "scene": {
+        "location": "street",
+        "description": { "de": "Auf der Straße", "fa": "در خیابان" }
+      },
+      "lines": [
+        { "speaker": "Eli", "text": { "de": "Hast du den Demonstranten gesehen?", "fa": "تظاهرکننده را دیدی؟" }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Ja, ich habe mit dem Demonstranten gesprochen.", "fa": "بله، با تظاهرکننده صحبت کردم." }, "mood": "neutral" },
+        { "speaker": "Eli", "text": { "de": "Die Forderungen des Demonstranten sind klar.", "fa": "خواسته‌های تظاهرکننده واضح است." }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Der Franzose neben ihm hat auch protestiert.", "fa": "مرد فرانسوی کنارش هم اعتراض کرد." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "تام با چه کسی صحبت کرد؟", "options": ["با الی", "با تظاهرکننده", "با مرد فرانسوی"], "correctIndex": 1, "explanation": "تام گفت: Ich habe mit dem Demonstranten gesprochen" },
+        { "question": "چه کسی هم اعتراض کرد؟", "options": ["الی", "تام", "مرد فرانسوی"], "correctIndex": 2, "explanation": "تام گفت: Der Franzose neben ihm hat auch protestiert" }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "Nominativ را با Genitiv وصل کنید",
+      "items": [
+        { "id": "i1", "text": "der Student" },
+        { "id": "i2", "text": "der Name" },
+        { "id": "i3", "text": "das Herz" },
+        { "id": "i4", "text": "der Prinz" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "des Studenten" },
+        { "id": "m2", "text": "des Namens" },
+        { "id": "m3", "text": "des Herzens" },
+        { "id": "m4", "text": "des Prinzen" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "N-Deklination سریع",
+      "instruction": "شکل درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "Akk.: den ___", "left": "Student", "right": "Studenten", "correctSide": "right" },
+        { "prompt": "Dat.: dem ___", "left": "Praktikanten", "right": "Praktikant", "correctSide": "left" },
+        { "prompt": "Gen.: des ___", "left": "Namens", "right": "Namen", "correctSide": "left" },
+        { "prompt": "Akk.: den ___", "left": "Franzosen", "right": "Franzose", "correctSide": "left" },
+        { "prompt": "Gen.: des ___", "left": "Herzens", "right": "Herzen", "correctSide": "left" },
+        { "prompt": "Dat.: dem ___", "left": "Zeuge", "right": "Zeugen", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "همه اسم‌های N-Deklination مذکر (der) هستند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! «das Herz» تنها اسم خنثی با N-Deklination است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "ژنیتیو «der Name» می‌شود «des Namens» (با -ns).",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! der Name یکی از استثناهاست که در ژنیتیو -ns می‌گیرد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich frage den {0} nach dem Weg.",
+      "options": ["Polizist", "Polizisten", "Polizistes", "Polizists"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "در Akkusativ: den Polizisten" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Aussage des {0} war wichtig.",
+      "options": ["Zeuge", "Zeugen", "Zeuges", "Zeugens"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "در Genitiv: des Zeugen (N-Dekl. معمولی با -n)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Kraft des {0} ist stark.",
+      "options": ["Wille", "Willen", "Willens", "Willes"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "در Genitiv: des Willens (استثنا با -ns)" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["dem Studenten.", "Der Professor", "hilft"],
+      "correctOrder": [1, 2, 0],
+      "correctSentence": { "de": "Der Professor hilft dem Studenten.", "fa": "استاد به دانشجو کمک می‌کند." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["des Praktikanten", "Die Arbeit", "gut.", "ist"],
+      "correctOrder": [1, 0, 3, 2],
+      "correctSentence": { "de": "Die Arbeit des Praktikanten ist gut.", "fa": "کار کارآموز خوب است." }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "از شاهد می‌پرسم.",
+      "sentenceTemplate": "Ich frage {0} {1}.",
+      "options": ["den", "Zeugen", "dem", "Zeuge"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Ich frage den Zeugen.", "fa": "از شاهد می‌پرسم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "داستان شاهزاده جالب است.",
+      "sentenceTemplate": "Die Geschichte {0} {1} ist interessant.",
+      "options": ["des", "Prinzen", "den", "Prinz"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Die Geschichte des Prinzen ist interessant.", "fa": "داستان شاهزاده جالب است." }
+    },
+    {
+      "type": "dialog",
+      "id": "d3",
+      "title": "مرور نهایی",
+      "scene": {
+        "location": "school",
+        "description": { "de": "In der Sprachschule", "fa": "در مدرسه زبان" }
+      },
+      "lines": [
+        { "speaker": "Eli", "text": { "de": "Hast du den Namen des Studenten notiert?", "fa": "نام دانشجو را یادداشت کردی؟" }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Ja, ich habe auch dem Kollegen Bescheid gesagt.", "fa": "بله، به همکار هم خبر دادم." }, "mood": "happy" },
+        { "speaker": "Eli", "text": { "de": "Das liegt mir am Herzen.", "fa": "این برایم مهم است." }, "mood": "happy" },
+        { "speaker": "Tom", "text": { "de": "Ich weiß, du hilfst jedem Menschen gern.", "fa": "می‌دانم، تو با میل به همه کمک می‌کنی." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "تام به چه کسی خبر داد؟", "options": ["به دانشجو", "به همکار", "به الی"], "correctIndex": 1, "explanation": "تام گفت: Ich habe auch dem Kollegen Bescheid gesagt" },
+        { "question": "چه چیزی برای الی مهم است؟", "options": ["نام دانشجو", "کمک به دیگران", "همکار"], "correctIndex": 1, "explanation": "الی گفت: Das liegt mir am Herzen و تام گفت: du hilfst jedem Menschen gern" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "کدام اسم N-Deklination نیست؟",
+      "options": ["der Junge", "der Lehrer", "der Kollege", "der Student"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! der Lehrer معمولی است: den Lehrer, dem Lehrer, des Lehrers", "incorrect": "der Lehrer معمولی است. در ژنیتیو -s می‌گیرد: des Lehrers (نه des Lehreren)" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "کدام یک در ژنیتیو -ns می‌گیرد (نه فقط -n)؟",
+      "options": ["der Kollege", "der Gedanke", "der Student", "der Zeuge"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! der Gedanke → des Gedankens", "incorrect": "فقط اسم‌های خاص مثل der Name, der Gedanke, der Glaube, der Wille در ژنیتیو -ns می‌گیرند." }
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich frage den Studenten.",
+      "translation": "از دانشجو می‌پرسم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Die Arbeit des Kollegen ist gut.",
+      "translation": "کار همکار خوب است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Das liegt mir am Herzen.",
+      "translation": "این برایم مهم است."
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "der Praktikant", "fa": "کارآموز" },
+        { "de": "der Franzose", "fa": "فرانسوی" },
+        { "de": "der Zeuge", "fa": "شاهد" },
+        { "de": "der Prinz", "fa": "شاهزاده" }
+      ]
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "شکل درست را انتخاب کنید",
+      "words": [
+        { "de": "der Praktikant", "fa": "کارآموز → Dat.", "options": ["dem Praktikant", "dem Praktikanten", "den Praktikanten", "des Praktikanten"], "correctIndex": 1 },
+        { "de": "der Name", "fa": "نام → Gen.", "options": ["des Name", "des Namen", "des Namens", "des Names"], "correctIndex": 2 },
+        { "de": "der Zeuge", "fa": "شاهد → Akk.", "options": ["den Zeuge", "den Zeugen", "dem Zeugen", "des Zeugen"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp1",
+      "title": "تبریک! 🎉",
+      "message": "شما بخش N-Deklination را با موفقیت تکمیل کردید!",
+      "keyPoints": [
+        "اسم‌های N-Deklination: مذکرهای ختم به -e، -ent، -ant، -ist و برخی خاص",
+        "تغییر: در Akk./Dat./Gen. پسوند -(e)n می‌گیرند",
+        "در Nominativ تغییری ندارند",
+        "استثناهای ژنیتیو با -ns: der Name, der Gedanke, der Glaube, der Wille",
+        "das Herz: تنها اسم خنثی با N-Deklination (Dat: dem Herzen, Gen: des Herzens)",
+        "ملیت‌ها: der Franzose → den/dem/des Franzosen"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "der Praktikant", "fa": "کارآموز" } },
+        { "word": { "de": "der Absolvent", "fa": "فارغ‌التحصیل" } },
+        { "word": { "de": "der Demonstrant", "fa": "تظاهرکننده" } },
+        { "word": { "de": "der Prinz", "fa": "شاهزاده" } },
+        { "word": { "de": "der Franzose", "fa": "فرانسوی (مرد)" } },
+        { "word": { "de": "der Zeuge", "fa": "شاهد" } }
+      ]
+    }
+  ]
+}

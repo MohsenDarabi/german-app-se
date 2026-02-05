@@ -95,7 +95,7 @@ function findLessonFiles(dir, lessons = []) {
 
     if (item.isDirectory()) {
       findLessonFiles(fullPath, lessons);
-    } else if (item.name.match(/^A[12]-M\d+-L\d+\.json$/)) {
+    } else if (item.name.match(/^(A[12]|B[12])-M\d+-L\d+\.json$/)) {
       lessons.push(fullPath);
     }
   }
