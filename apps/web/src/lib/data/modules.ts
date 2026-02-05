@@ -714,6 +714,12 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         title: "Passiv Perfekt - مجهول زمان گذشته",
         description: "یاد بگیرید چطور بگویید کاری انجام شده است با sein + Partizip II + worden.",
         path: "/learn/de-fa/A2/A2-M08-L03"
+      },
+      {
+        id: "A2-M08-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "تمرین ترکیبی همه فرم‌های مجهول: Präsens, Perfekt و با Modalverben.",
+        path: "/learn/de-fa/A2/A2-M08-L04"
       }
     ]
   }

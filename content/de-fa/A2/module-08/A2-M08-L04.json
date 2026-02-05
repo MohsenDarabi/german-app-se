@@ -1,0 +1,383 @@
+{
+  "id": "A2-M08-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Passiv Zusammenfassung", "fa": "جمع‌بندی مجهول" },
+  "description": "تمرین ترکیبی همه فرم‌های مجهول: Präsens, Perfekt و با Modalverben",
+  "level": "A2",
+  "module": 8,
+  "lessonNumber": 4,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "organisiert", "fa": "سازمان‌دهی شده", "grammar": { "pos": "verb", "infinitive": "organisieren" } },
+    { "de": "reserviert", "fa": "رزرو شده", "grammar": { "pos": "verb", "infinitive": "reservieren" } },
+    { "de": "geliefert", "fa": "تحویل داده شده", "grammar": { "pos": "verb", "infinitive": "liefern" } },
+    { "de": "unterschrieben", "fa": "امضا شده", "grammar": { "pos": "verb", "infinitive": "unterschreiben" } },
+    { "de": "überprüft", "fa": "بررسی شده", "grammar": { "pos": "verb", "infinitive": "überprüfen" } },
+    { "de": "akzeptiert", "fa": "پذیرفته شده", "grammar": { "pos": "verb", "infinitive": "akzeptieren" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "سه فرم مجهول",
+      "content": "📝 **مرور سه فرم Passiv:**\n\n**۱. Präsens:** werden + Partizip II\n→ Das Auto **wird** repariert.\n  (ماشین تعمیر می‌شود.)\n\n**۲. Perfekt:** sein + Partizip II + worden\n→ Das Auto **ist** repariert **worden**.\n  (ماشین تعمیر شده است.)\n\n**۳. Mit Modalverb:** Modalverb + Partizip II + werden\n→ Das Auto **muss** repariert **werden**.\n  (ماشین باید تعمیر شود.)",
+      "examples": [
+        { "de": "Die Tür wird geöffnet.", "fa": "در باز می‌شود." },
+        { "de": "Die Tür ist geöffnet worden.", "fa": "در باز شده است." },
+        { "de": "Die Tür muss geöffnet werden.", "fa": "در باید باز شود." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "organisiert", "fa": "سازمان‌دهی شده" },
+      "example": { "text": { "de": "Die Konferenz wird organisiert.", "fa": "کنفرانس سازمان‌دهی می‌شود." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "reserviert", "fa": "رزرو شده" },
+      "example": { "text": { "de": "Der Tisch ist reserviert worden.", "fa": "میز رزرو شده است." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "geliefert", "fa": "تحویل داده شده" },
+      "example": { "text": { "de": "Das Paket muss geliefert werden.", "fa": "بسته باید تحویل داده شود." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "کدام فرم را استفاده کنیم؟",
+      "content": "📝 **انتخاب فرم مناسب:**\n\n**Präsens** = الان در حال انجام\n→ Die E-Mail wird geschrieben.\n\n**Perfekt** = قبلاً انجام شده\n→ Die E-Mail ist geschrieben worden.\n\n**Mit Modalverb** = ضرورت / امکان\n→ Die E-Mail muss geschrieben werden.\n→ Die E-Mail kann geschrieben werden.",
+      "examples": [
+        { "de": "Das Essen wird gerade gekocht.", "fa": "غذا الان پخته می‌شود." },
+        { "de": "Das Essen ist schon gekocht worden.", "fa": "غذا قبلاً پخته شده است." },
+        { "de": "Das Essen muss noch gekocht werden.", "fa": "غذا هنوز باید پخته شود." }
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "organisiert",
+      "translation": "سازمان‌دهی شده",
+      "syllables": ["or", "ga", "ni", "siert"],
+      "distractors": ["ar", "go", "ne", "ziert"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله به معنی «الان انجام می‌شود» است؟",
+      "options": ["Das wird gemacht.", "Das ist gemacht worden.", "Das muss gemacht werden.", "Das wurde gemacht."],
+      "correctAnswerIndex": 0,
+      "feedback": { "correct": "آفرین! Präsens = wird + Partizip II", "incorrect": "Präsens برای الان: wird + Partizip II" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله به معنی «قبلاً انجام شده» است؟",
+      "options": ["Das wird gemacht.", "Das ist gemacht worden.", "Das muss gemacht werden.", "Das kann gemacht werden."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! Perfekt = ist + Partizip II + worden", "incorrect": "Perfekt برای گذشته: ist + Partizip II + worden" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید (الان در حال انجام)",
+      "sentence": "Der Brief {0} geschrieben.",
+      "options": ["wird", "ist", "muss", "worden"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Präsens: wird + Partizip II" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید (قبلاً انجام شده)",
+      "sentence": "Der Brief ist geschrieben {0}.",
+      "options": ["werden", "worden", "wird", "geworden"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Perfekt: ist + Partizip II + worden" }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "unterschrieben", "fa": "امضا شده" },
+      "example": { "text": { "de": "Der Vertrag muss unterschrieben werden.", "fa": "قرارداد باید امضا شود." } }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "برنامه‌ریزی رویداد",
+      "context": "تیم درباره آماده‌سازی صحبت می‌کند",
+      "lines": [
+        { "speaker": "Chef", "text": { "de": "Wie steht es mit der Konferenz?", "fa": "وضعیت کنفرانس چطور است؟" } },
+        { "speaker": "Anna", "text": { "de": "Der Raum ist schon reserviert worden.", "fa": "اتاق قبلاً رزرو شده است." } },
+        { "speaker": "Chef", "text": { "de": "Und die Einladungen?", "fa": "و دعوت‌نامه‌ها؟" } },
+        { "speaker": "Ben", "text": { "de": "Die werden gerade geschickt.", "fa": "آن‌ها الان فرستاده می‌شوند." } },
+        { "speaker": "Chef", "text": { "de": "Das Catering muss noch organisiert werden.", "fa": "پذیرایی هنوز باید سازمان‌دهی شود." } }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "«باید انجام شود» به آلمانی چیست؟",
+      "options": ["wird gemacht", "ist gemacht worden", "muss gemacht werden", "wurde gemacht"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! Mit Modalverb: muss + Partizip II + werden", "incorrect": "با Modalverb: muss + Partizip II + werden" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید (Präsens)",
+      "words": ["organisiert.", "wird", "Konferenz", "Die"],
+      "correctOrder": [3, 2, 1, 0],
+      "correctSentence": { "de": "Die Konferenz wird organisiert.", "fa": "کنفرانس سازمان‌دهی می‌شود." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید (Perfekt)",
+      "words": ["worden.", "reserviert", "ist", "Tisch", "Der"],
+      "correctOrder": [4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Der Tisch ist reserviert worden.", "fa": "میز رزرو شده است." }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "reserviert",
+      "translation": "رزرو شده",
+      "syllables": ["re", "ser", "viert"],
+      "distractors": ["ra", "sar", "fiert", "virt"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "überprüft", "fa": "بررسی شده" },
+      "example": { "text": { "de": "Die Dokumente sind überprüft worden.", "fa": "مدارک بررسی شده‌اند." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "akzeptiert", "fa": "پذیرفته شده" },
+      "example": { "text": { "de": "Der Vorschlag kann akzeptiert werden.", "fa": "پیشنهاد می‌تواند پذیرفته شود." } }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید (ضرورت)",
+      "sentence": "Der Vertrag {0} unterschrieben werden.",
+      "options": ["wird", "ist", "muss", "worden"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "ضرورت: muss + Partizip II + werden" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید (امکان)",
+      "sentence": "Das Paket {0} morgen geliefert werden.",
+      "options": ["wird", "ist", "kann", "worden"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "امکان: kann + Partizip II + werden" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "نفی در مجهول",
+      "content": "📝 **نفی کردن جملات مجهول:**\n\n**Präsens:** nicht قبل از Partizip II\n→ Das wird **nicht** gemacht.\n\n**Perfekt:** nicht قبل از Partizip II\n→ Das ist **nicht** gemacht worden.\n\n**Mit Modalverb:** nicht قبل از Partizip II\n→ Das muss **nicht** gemacht werden.\n→ Das darf **nicht** gemacht werden.",
+      "examples": [
+        { "de": "Die Tür wird nicht geöffnet.", "fa": "در باز نمی‌شود." },
+        { "de": "Das ist noch nicht erledigt worden.", "fa": "این هنوز انجام نشده است." },
+        { "de": "Das darf nicht vergessen werden.", "fa": "این نباید فراموش شود." }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در شرکت",
+      "context": "درباره وظایف صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Ist der Bericht schon überprüft worden?", "fa": "گزارش قبلاً بررسی شده است؟" } },
+        { "speaker": "Ben", "text": { "de": "Nein, er ist noch nicht gelesen worden.", "fa": "نه، هنوز خوانده نشده است." } },
+        { "speaker": "Anna", "text": { "de": "Der muss bis morgen überprüft werden.", "fa": "این باید تا فردا بررسی شود." } },
+        { "speaker": "Ben", "text": { "de": "Okay, das wird heute noch gemacht.", "fa": "باشه، این امروز انجام می‌شود." } }
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "geliefert",
+      "translation": "تحویل داده شده",
+      "syllables": ["ge", "lie", "fert"],
+      "distractors": ["ga", "lei", "fart", "la"]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "جمله را با زمان صحیح وصل کنید",
+      "items": [
+        { "id": "i1", "text": "wird repariert" },
+        { "id": "i2", "text": "ist repariert worden" },
+        { "id": "i3", "text": "muss repariert werden" },
+        { "id": "i4", "text": "kann repariert werden" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "الان تعمیر می‌شود" },
+        { "id": "m2", "text": "قبلاً تعمیر شده" },
+        { "id": "m3", "text": "باید تعمیر شود" },
+        { "id": "m4", "text": "می‌تواند تعمیر شود" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"],
+        ["i4", "m4"]
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "انتخاب فرم صحیح",
+      "instruction": "فرم مناسب مجهول را انتخاب کنید",
+      "questions": [
+        { "prompt": "الان: Das ___ gemacht.", "left": "wird", "right": "ist ... worden", "correctSide": "left" },
+        { "prompt": "قبلاً: Das ___ gemacht worden.", "left": "wird", "right": "ist", "correctSide": "right" },
+        { "prompt": "باید: Das ___ gemacht werden.", "left": "muss", "right": "ist", "correctSide": "left" },
+        { "prompt": "می‌تواند: Das ___ repariert werden.", "left": "wird", "right": "kann", "correctSide": "right" },
+        { "prompt": "شده است: Das ist repariert ___.", "left": "werden", "right": "worden", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "«بسته هنوز تحویل نشده است» به آلمانی چیست؟",
+      "options": ["Das Paket wird nicht geliefert.", "Das Paket ist noch nicht geliefert worden.", "Das Paket muss nicht geliefert werden.", "Das Paket kann nicht geliefert werden."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! noch nicht + Perfekt", "incorrect": "هنوز نشده = ist noch nicht + Partizip II + worden" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc5",
+      "question": "کدام جمله درست است برای «قرارداد الان امضا می‌شود»؟",
+      "options": ["Der Vertrag ist unterschrieben worden.", "Der Vertrag muss unterschrieben werden.", "Der Vertrag wird unterschrieben.", "Der Vertrag wurde unterschrieben."],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! Präsens: wird + unterschrieben", "incorrect": "الان = Präsens: wird + Partizip II" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Dokumente sind {0} worden.",
+      "options": ["überprüfen", "überprüft", "überprüft wird", "zu überprüfen"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Perfekt: sind + Partizip II + worden" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Der Vorschlag {0} akzeptiert werden.",
+      "options": ["wird", "ist", "kann", "worden"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "امکان: kann + Partizip II + werden" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید (mit Modalverb)",
+      "words": ["werden.", "geliefert", "muss", "Paket", "Das"],
+      "correctOrder": [4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Das Paket muss geliefert werden.", "fa": "بسته باید تحویل داده شود." }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "unterschrieben",
+      "translation": "امضا شده",
+      "syllables": ["un", "ter", "schrie", "ben"],
+      "distractors": ["an", "tar", "schra", "ban"]
+    },
+    {
+      "type": "dialog",
+      "id": "d3",
+      "title": "تحویل بسته",
+      "context": "درباره سفارش آنلاین صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Kunde", "text": { "de": "Wann wird mein Paket geliefert?", "fa": "بسته من کی تحویل داده می‌شود؟" } },
+        { "speaker": "Mitarbeiter", "text": { "de": "Es wird morgen geliefert.", "fa": "فردا تحویل داده می‌شود." } },
+        { "speaker": "Kunde", "text": { "de": "Kann es auch heute geliefert werden?", "fa": "می‌تواند امروز هم تحویل داده شود؟" } },
+        { "speaker": "Mitarbeiter", "text": { "de": "Nein, das kann leider nicht gemacht werden.", "fa": "نه، متأسفانه این امکان ندارد." } },
+        { "speaker": "Kunde", "text": { "de": "Ist die Bestellung schon bearbeitet worden?", "fa": "سفارش قبلاً پردازش شده است؟" } },
+        { "speaker": "Mitarbeiter", "text": { "de": "Ja, sie ist heute Morgen bearbeitet worden.", "fa": "بله، امروز صبح پردازش شده است." } }
+      ]
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "فرم صحیح مجهول را انتخاب کنید",
+      "words": [
+        { "de": "الان", "fa": "Präsens", "options": ["wird gemacht", "ist gemacht worden", "muss gemacht werden", "wurde gemacht"], "correctIndex": 0 },
+        { "de": "قبلاً", "fa": "Perfekt", "options": ["wird repariert", "ist repariert worden", "kann repariert werden", "wurde repariert"], "correctIndex": 1 },
+        { "de": "ضرورت", "fa": "Modalverb", "options": ["wird geschrieben", "ist geschrieben worden", "muss geschrieben werden", "wurde geschrieben"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo4",
+      "instruction": "کلمات را مرتب کنید (نفی)",
+      "words": ["worden.", "gemacht", "nicht", "ist", "Das"],
+      "correctOrder": [4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Das ist nicht gemacht worden.", "fa": "این انجام نشده است." }
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Die Konferenz wird organisiert.",
+      "translation": "کنفرانس سازمان‌دهی می‌شود."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Der Tisch ist reserviert worden.",
+      "translation": "میز رزرو شده است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Das Paket muss geliefert werden.",
+      "translation": "بسته باید تحویل داده شود."
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "wird gemacht", "fa": "الان انجام می‌شود" },
+        { "de": "ist gemacht worden", "fa": "انجام شده است" },
+        { "de": "muss gemacht werden", "fa": "باید انجام شود" },
+        { "de": "kann gemacht werden", "fa": "می‌تواند انجام شود" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp1",
+      "title": "آفرین! 🎉",
+      "message": "همه فرم‌های مجهول (Passiv) را یاد گرفتید!",
+      "keyPoints": [
+        "Präsens: werden + Partizip II (الان)",
+        "Perfekt: sein + Partizip II + worden (قبلاً)",
+        "Mit Modalverb: muss/kann/soll/darf + Partizip II + werden",
+        "نفی: nicht قبل از Partizip II",
+        "worden نه geworden در Passiv Perfekt!"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "organisiert", "fa": "سازمان‌دهی شده" } },
+        { "word": { "de": "reserviert", "fa": "رزرو شده" } },
+        { "word": { "de": "geliefert", "fa": "تحویل داده شده" } },
+        { "word": { "de": "unterschrieben", "fa": "امضا شده" } },
+        { "word": { "de": "überprüft", "fa": "بررسی شده" } }
+      ]
+    }
+  ]
+}
