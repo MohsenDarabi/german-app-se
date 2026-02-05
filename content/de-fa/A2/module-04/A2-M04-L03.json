@@ -8,7 +8,7 @@
   "level": "A2",
   "module": 4,
   "lessonNumber": 3,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "bevor", "fa": "قبل از اینکه", "grammar": { "pos": "conjunction", "type": "subordinating" } },
@@ -148,10 +148,9 @@
         { "speaker": "Tom", "text": { "de": "Wow! Obwohl du müde bist?", "fa": "وای! اگرچه خسته‌ای؟" } },
         { "speaker": "Lisa", "text": { "de": "Ja! Während ich esse, höre ich Nachrichten.", "fa": "بله! در حالی که غذا می‌خورم، اخبار گوش می‌دهم." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "لیزا بعد از بیدار شدن چه می‌کند؟", "options": ["ورزش می‌کند", "دوش می‌گیرد", "صبحانه می‌خورد"], "correctIndex": 1 },
-        { "question": "لیزا در حین غذا خوردن چه می‌کند؟", "options": ["کتاب می‌خواند", "اخبار گوش می‌دهد", "تلویزیون می‌بیند"], "correctIndex": 1 }
+        { "question": "لیزا بعد از بیدار شدن چه می‌کند؟", "options": ["ورزش می‌کند", "دوش می‌گیرد", "صبحانه می‌خورد"], "correctIndex": 1, "explanation": "لیزا گفت: Nachdem ich aufgestanden bin, dusche ich" },
+        { "question": "لیزا در حین غذا خوردن چه می‌کند؟", "options": ["کتاب می‌خواند", "اخبار گوش می‌دهد", "تلویزیون می‌بیند"], "correctIndex": 1, "explanation": "لیزا گفت: Während ich esse, höre ich Nachrichten" }
       ]
     },
     {
@@ -240,10 +239,9 @@
         { "speaker": "Anna", "text": { "de": "Du bist müde? Trotzdem willst du kommen?", "fa": "خسته‌ای؟ با این حال می‌خواهی بیایی؟" } },
         { "speaker": "Max", "text": { "de": "Ja! Bevor ich schlafe, möchte ich dich sehen.", "fa": "بله! قبل از خواب، می‌خواهم ببینمت." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "ماکس کی می‌آید؟", "options": ["فردا", "به محض تمام شدن کار", "بعد از خواب"], "correctIndex": 1 },
-        { "question": "ماکس چه احساسی دارد؟", "options": ["خسته است اما می‌آید", "خسته نیست", "نمی‌خواهد بیاید"], "correctIndex": 0 }
+        { "question": "ماکس کی می‌آید؟", "options": ["فردا", "به محض تمام شدن کار", "بعد از خواب"], "correctIndex": 1, "explanation": "ماکس گفت: Sobald ich mit der Arbeit fertig bin" },
+        { "question": "ماکس چه احساسی دارد؟", "options": ["خسته است اما می‌آید", "خسته نیست", "نمی‌خواهد بیاید"], "correctIndex": 0, "explanation": "ماکس گفت: Obwohl ich müde bin, komme ich gern" }
       ]
     },
     {
@@ -399,6 +397,31 @@
         { "de": "trotzdem", "fa": "با این حال" },
         { "de": "zuerst", "fa": "اول" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "nachdem برای اتفاقی که قبل از اتفاق دیگر رخ داده استفاده می‌شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! Nachdem ich gegessen habe, trinke ich Kaffee = بعد از خوردن، قهوه می‌نوشم." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "obwohl و trotzdem هر دو حرف ربط هستند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! obwohl حرف ربط است (فعل به آخر می‌رود)، اما trotzdem قید است (فعل جایگاه دوم)." }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "قبل از صبحانه، ورزش می‌کنم.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4}.",
+      "options": ["Bevor", "ich", "frühstücke,", "mache", "ich Sport"],
+      "correctAnswers": [0, 1, 2, 3, 4],
+      "correctTranslation": { "de": "Bevor ich frühstücke, mache ich Sport.", "fa": "قبل از صبحانه، ورزش می‌کنم." }
     },
     {
       "type": "completion",

@@ -8,7 +8,7 @@
   "level": "A2",
   "module": 4,
   "lessonNumber": 1,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "weil", "fa": "چون / زیرا", "grammar": { "pos": "conjunction", "type": "subordinating" } },
@@ -148,10 +148,9 @@
         { "speaker": "Tom", "text": { "de": "Ich weiß, dass du es schaffst!", "fa": "می‌دانم که موفق می‌شوی!" } },
         { "speaker": "Sara", "text": { "de": "Danke! Das motiviert mich, weil ich manchmal Zweifel habe.", "fa": "ممنون! این انگیزه می‌دهد چون گاهی شک دارم." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "سارا چرا آلمانی یاد می‌گیرد؟", "options": ["برای کار", "برای تحصیل در برلین", "برای سفر"], "correctIndex": 1 },
-        { "question": "سارا چه چیزی را سخت می‌داند؟", "options": ["تلفظ", "گرامر", "لغت"], "correctIndex": 1 }
+        { "question": "سارا چرا آلمانی یاد می‌گیرد؟", "options": ["برای کار", "برای تحصیل در برلین", "برای سفر"], "correctIndex": 1, "explanation": "سارا گفت: weil ich in Berlin studieren will" },
+        { "question": "سارا چه چیزی را سخت می‌داند؟", "options": ["تلفظ", "گرامر", "لغت"], "correctIndex": 1, "explanation": "سارا گفت: Ich glaube, dass Grammatik schwer ist" }
       ]
     },
     {
@@ -240,10 +239,9 @@
         { "speaker": "Anna", "text": { "de": "Gut. Ich sage dem Chef, dass du später kommst.", "fa": "خوب. به رئیس می‌گویم که دیرتر می‌آیی." } },
         { "speaker": "Max", "text": { "de": "Das ist nett, weil ich keine Zeit habe, ihn anzurufen.", "fa": "لطف می‌کنی چون وقت ندارم زنگ بزنم." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "ماکس چرا دیرتر می‌آید؟", "options": ["ترافیک", "وقت دکتر", "خواب مانده"], "correctIndex": 1 },
-        { "question": "ماکس فکر می‌کند چه مشکلی دارد؟", "options": ["سرماخوردگی", "سردرد", "دل‌درد"], "correctIndex": 0 }
+        { "question": "ماکس چرا دیرتر می‌آید؟", "options": ["ترافیک", "وقت دکتر", "خواب مانده"], "correctIndex": 1, "explanation": "ماکس گفت: weil ich einen Arzttermin habe" },
+        { "question": "ماکس فکر می‌کند چه مشکلی دارد؟", "options": ["سرماخوردگی", "سردرد", "دل‌درد"], "correctIndex": 0, "explanation": "ماکس گفت: dass es nur eine Erkältung ist" }
       ]
     },
     {
@@ -399,6 +397,31 @@
         { "de": "wissen", "fa": "دانستن" },
         { "de": "denken", "fa": "فکر کردن" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جملات پیرو با weil و dass، فعل به آخر جمله می‌رود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! مثال: Ich bin müde, weil ich nicht geschlafen habe." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "weil برای بیان نتیجه استفاده می‌شود.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! weil برای بیان دلیل (چون) استفاده می‌شود. برای نتیجه از deshalb استفاده می‌کنیم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "فکر می‌کنم که او می‌آید.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4}.",
+      "options": ["Ich", "glaube,", "dass", "er", "kommt"],
+      "correctAnswers": [0, 1, 2, 3, 4],
+      "correctTranslation": { "de": "Ich glaube, dass er kommt.", "fa": "فکر می‌کنم که او می‌آید." }
     },
     {
       "type": "completion",

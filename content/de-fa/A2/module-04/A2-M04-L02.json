@@ -8,7 +8,7 @@
   "level": "A2",
   "module": 4,
   "lessonNumber": 2,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "wenn", "fa": "اگر / وقتی", "grammar": { "pos": "conjunction", "type": "subordinating" } },
@@ -148,10 +148,9 @@
         { "speaker": "Anna", "text": { "de": "Ich weiß nicht, ob ich Zeit habe.", "fa": "نمی‌دانم آیا وقت دارم." } },
         { "speaker": "Tom", "text": { "de": "Falls du Zeit hast, ruf mich an!", "fa": "در صورتی که وقت داری، زنگ بزن!" } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "تام اگر هوا خوب باشد چه می‌کند؟", "options": ["خانه می‌ماند", "کوهنوردی می‌رود", "کتاب می‌خواند"], "correctIndex": 1 },
-        { "question": "آنا چه چیزی نمی‌داند؟", "options": ["آیا وقت دارد", "آیا باران می‌آید", "آیا تام می‌رود"], "correctIndex": 0 }
+        { "question": "تام اگر هوا خوب باشد چه می‌کند؟", "options": ["خانه می‌ماند", "کوهنوردی می‌رود", "کتاب می‌خواند"], "correctIndex": 1, "explanation": "تام گفت: Wenn das Wetter schön ist, gehe ich wandern" },
+        { "question": "آنا چه چیزی نمی‌داند؟", "options": ["آیا وقت دارد", "آیا باران می‌آید", "آیا تام می‌رود"], "correctIndex": 0, "explanation": "آنا گفت: Ich weiß nicht, ob ich Zeit habe" }
       ]
     },
     {
@@ -240,10 +239,9 @@
         { "speaker": "Chef", "text": { "de": "Dann nehmen Sie vielleicht das Auto.", "fa": "پس شاید با ماشین بیایید." } },
         { "speaker": "Mitarbeiter", "text": { "de": "Ja, das mache ich bestimmt.", "fa": "بله، حتماً این کار را می‌کنم." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "کارمند چه می‌گوید؟", "options": ["نمی‌تواند بیاید", "اگر لازم باشد می‌آید", "فردا نمی‌آید"], "correctIndex": 1 },
-        { "question": "کارمند درباره چه چیزی مطمئن نیست؟", "options": ["ساعت قطار", "آدرس", "نام رئیس"], "correctIndex": 0 }
+        { "question": "کارمند چه می‌گوید؟", "options": ["نمی‌تواند بیاید", "اگر لازم باشد می‌آید", "فردا نمی‌آید"], "correctIndex": 1, "explanation": "کارمند گفت: Falls Sie mich brauchen, komme ich" },
+        { "question": "کارمند درباره چه چیزی مطمئن نیست؟", "options": ["ساعت قطار", "آدرس", "نام رئیس"], "correctIndex": 0, "explanation": "کارمند گفت: Ich weiß nicht, ob der Zug pünktlich ist" }
       ]
     },
     {
@@ -399,6 +397,31 @@
         { "de": "vielleicht", "fa": "شاید" },
         { "de": "bestimmt", "fa": "حتماً" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "wenn هم می‌تواند به معنی اگر و هم وقتی باشد.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! wenn = اگر (شرطی) یا وقتی (زمانی)." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "ob برای سوالات مستقیم استفاده می‌شود.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! ob برای سوالات غیرمستقیم استفاده می‌شود. مثال: Ich weiß nicht, ob er kommt." }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "اگر وقت داشته باشم، به سینما می‌روم.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4} {5} {6} {7}.",
+      "options": ["Wenn", "ich", "Zeit", "habe,", "gehe", "ich", "ins", "Kino"],
+      "correctAnswers": [0, 1, 2, 3, 4, 5, 6, 7],
+      "correctTranslation": { "de": "Wenn ich Zeit habe, gehe ich ins Kino.", "fa": "اگر وقت داشته باشم، به سینما می‌روم." }
     },
     {
       "type": "completion",

@@ -8,7 +8,7 @@
   "level": "A2",
   "module": 4,
   "lessonNumber": 4,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "damit", "fa": "تا اینکه / برای اینکه", "grammar": { "pos": "conjunction", "type": "subordinating" } },
@@ -148,10 +148,9 @@
         { "speaker": "Tom", "text": { "de": "Obwohl Deutsch schwer ist, macht es Spaß, oder?", "fa": "اگرچه آلمانی سخت است، ولی جالب است، نه؟" } },
         { "speaker": "Sara", "text": { "de": "Ja! Ich übe jeden Tag, damit ich besser werde.", "fa": "بله! هر روز تمرین می‌کنم تا بهتر شوم." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "سارا چرا آلمانی یاد می‌گیرد؟", "options": ["برای کار", "برای تحصیل", "برای سفر"], "correctIndex": 1 },
-        { "question": "سارا از کی آلمانی یاد می‌گیرد؟", "options": ["از بچگی", "از ۱۸ سالگی", "از پارسال"], "correctIndex": 1 }
+        { "question": "سارا چرا آلمانی یاد می‌گیرد؟", "options": ["برای کار", "برای تحصیل", "برای سفر"], "correctIndex": 1, "explanation": "سارا گفت: weil ich in München studieren will" },
+        { "question": "سارا از کی آلمانی یاد می‌گیرد؟", "options": ["از بچگی", "از ۱۸ سالگی", "از پارسال"], "correctIndex": 1, "explanation": "سارا گفت: Seit ich 18 bin" }
       ]
     },
     {
@@ -240,10 +239,9 @@
         { "speaker": "Anna", "text": { "de": "Außerdem sollten wir ein Restaurant reservieren.", "fa": "علاوه بر این باید یک رستوران رزرو کنیم." } },
         { "speaker": "Max", "text": { "de": "Gute Idee! Ich mache das, bevor wir losfahren.", "fa": "ایده خوبیه! قبل از حرکت این کار را می‌کنم." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "اگر هوا خوب باشد چه می‌کنند؟", "options": ["به موزه می‌روند", "کوهنوردی می‌کنند", "رستوران می‌روند"], "correctIndex": 1 },
-        { "question": "ماکس چه احساسی نسبت به موزه دارد؟", "options": ["خیلی دوست دارد", "خیلی دوست ندارد", "بی‌تفاوت است"], "correctIndex": 1 }
+        { "question": "اگر هوا خوب باشد چه می‌کنند؟", "options": ["به موزه می‌روند", "کوهنوردی می‌کنند", "رستوران می‌روند"], "correctIndex": 1, "explanation": "ماکس گفت: Wenn das Wetter schön ist, können wir wandern" },
+        { "question": "ماکس چه احساسی نسبت به موزه دارد؟", "options": ["خیلی دوست دارد", "خیلی دوست ندارد", "بی‌تفاوت است"], "correctIndex": 1, "explanation": "ماکس گفت: obwohl ich das nicht so gern mag" }
       ]
     },
     {
@@ -399,6 +397,31 @@
         { "de": "außerdem", "fa": "علاوه بر این" },
         { "de": "jedoch", "fa": "اما" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جملات پیرو آلمانی (Nebensatz)، فعل به آخر جمله می‌رود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! حروف ربط پیرو مثل weil, dass, wenn فعل را به آخر می‌فرستند." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "deshalb یک حرف ربط است و فعل را به آخر می‌فرستد.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! deshalb یک قید است. با deshalb فعل در جایگاه دوم می‌ماند. برای فرستادن فعل به آخر از weil استفاده کنید." }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "آلمانی یاد می‌گیرم چون در آلمان کار می‌خواهم.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4} {5} {6} {7}.",
+      "options": ["Ich", "lerne", "Deutsch,", "weil", "ich", "in", "Deutschland", "arbeiten will"],
+      "correctAnswers": [0, 1, 2, 3, 4, 5, 6, 7],
+      "correctTranslation": { "de": "Ich lerne Deutsch, weil ich in Deutschland arbeiten will.", "fa": "آلمانی یاد می‌گیرم چون در آلمان کار می‌خواهم." }
     },
     {
       "type": "completion",
