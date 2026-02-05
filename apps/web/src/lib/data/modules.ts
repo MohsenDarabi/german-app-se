@@ -1097,6 +1097,37 @@ const DE_FA_B1_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/B1/B1-M02-L04"
       }
     ]
+  },
+  {
+    id: "module-03",
+    title: "بخش ۳: کنیونکتیو ۱ (Konjunktiv I)",
+    level: "B1",
+    lessons: [
+      {
+        id: "B1-M03-L01",
+        title: "Konjunktiv I: Bildung - ساختار",
+        description: "یاد بگیرید چطور Konjunktiv I را بسازید: er sage, sie habe, es sei.",
+        path: "/learn/de-fa/B1/B1-M03-L01"
+      },
+      {
+        id: "B1-M03-L02",
+        title: "Indirekte Rede - نقل قول غیرمستقیم",
+        description: "یاد بگیرید چطور گفته‌های دیگران را با Konjunktiv I نقل کنید.",
+        path: "/learn/de-fa/B1/B1-M03-L02"
+      },
+      {
+        id: "B1-M03-L03",
+        title: "Ersatzformen - شکل‌های جایگزین",
+        description: "یاد بگیرید چه زمانی از Konjunktiv II به جای Konjunktiv I استفاده کنید.",
+        path: "/learn/de-fa/B1/B1-M03-L03"
+      },
+      {
+        id: "B1-M03-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل Konjunktiv I: ساختار، نقل قول غیرمستقیم و شکل‌های جایگزین.",
+        path: "/learn/de-fa/B1/B1-M03-L04"
+      }
+    ]
   }
 ];
 

@@ -1,6 +1,6 @@
 # Project Status
 
-> Last updated: 2026-02-05
+> Last updated: 2026-02-06
 
 ---
 
@@ -8,7 +8,7 @@
 
 **Create B1 lessons - lesson by lesson, wait for user test after each**
 
-Current: `B1-M02` (Partizipien als Adjektive) - **COMPLETE - READY FOR USER TEST**
+Current: `B1-M03` (Konjunktiv I) - **MODULE COMPLETE - READY FOR USER TEST**
 
 ---
 
@@ -26,7 +26,7 @@ Current: `B1-M02` (Partizipien als Adjektive) - **COMPLETE - READY FOR USER TEST
 |-------|---------|---------|--------|
 | A1 | 14 | 56+ | Complete |
 | A2 | 18 | 72 | **Complete** ✅ |
-| B1 | 2 | 8 | **Module 2 Complete** ✅ |
+| B1 | 3 | 12 | Module 3 complete |
 
 ### A2 Completion (2026-02-05)
 
@@ -59,8 +59,9 @@ Current: `B1-M02` (Partizipien als Adjektive) - **COMPLETE - READY FOR USER TEST
 |--------|-------|---------|--------|
 | M01 | N-Deklination | 4/4 | ✅ Complete |
 | M02 | Partizipien als Adjektive | 4/4 | ✅ Complete |
+| M03 | Konjunktiv I | 4/4 | ✅ Complete |
 
-**Total B1: 8 lessons**
+**Total B1: 12 lessons**
 
 ---
 
@@ -86,10 +87,26 @@ Current: `B1-M02` (Partizipien als Adjektive) - **COMPLETE - READY FOR USER TEST
 
 ---
 
+## B1 Module 3: Konjunktiv I (Subjunctive I / Reported Speech)
+
+| Lesson | Title | Status |
+|--------|-------|--------|
+| B1-M03-L01 | Konjunktiv I: Bildung | ✅ Complete |
+| B1-M03-L02 | Indirekte Rede | ✅ Complete |
+| B1-M03-L03 | Ersatzformen | ✅ Complete |
+| B1-M03-L04 | Zusammenfassung | ✅ Complete |
+
+---
+
 ## Recent Changes
 
 | Date | Change |
 |------|--------|
+| 2026-02-06 | **B1 Module 3 (Konjunktiv I) COMPLETE - 4 lessons!** |
+| 2026-02-06 | Created B1-M03-L04 (Zusammenfassung) |
+| 2026-02-05 | Created B1-M03-L03 (Ersatzformen) |
+| 2026-02-05 | Created B1-M03-L02 (Indirekte Rede) |
+| 2026-02-05 | Created B1-M03-L01 (Konjunktiv I: Bildung) |
 | 2026-02-05 | **B1 Module 2 (Partizipien als Adjektive) COMPLETE - 4 lessons!** |
 | 2026-02-05 | Created B1-M02-L04 (Zusammenfassung) |
 | 2026-02-05 | Created B1-M02-L03 (Erweiterte Partizipien) |
@@ -106,6 +123,7 @@ Current: `B1-M02` (Partizipien als Adjektive) - **COMPLETE - READY FOR USER TEST
 1. [x] Complete A2 curriculum (72 lessons)
 2. [x] Complete B1 Module 1 (N-Deklination) - 4 lessons
 3. [x] Complete B1 Module 2 (Partizipien als Adjektive) - 4 lessons
-4. [ ] **User tests B1-M02 lessons**
-5. [ ] Plan B1 Module 3 topic
-6. [ ] Continue B1 curriculum development
+4. [x] Complete B1 Module 3 (Konjunktiv I) - 4 lessons
+5. [ ] **User tests B1-M03 lessons**
+6. [ ] Plan B1 Module 4 topic
+7. [ ] Continue B1 curriculum development

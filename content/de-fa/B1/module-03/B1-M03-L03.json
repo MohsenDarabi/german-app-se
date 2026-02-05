@@ -1,0 +1,491 @@
+{
+  "id": "B1-M03-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Ersatzformen", "fa": "شکل‌های جایگزین" },
+  "description": "یاد بگیرید چه زمانی از Konjunktiv II به جای Konjunktiv I استفاده کنید",
+  "level": "B1",
+  "module": 3,
+  "lessonNumber": 3,
+  "totalSteps": 44,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "die Ersatzform", "fa": "شکل جایگزین", "grammar": { "pos": "noun", "gender": "f", "plural": "die Ersatzformen" } },
+    { "de": "identisch", "fa": "یکسان/مشابه", "grammar": { "pos": "adjective" } },
+    { "de": "verwechseln", "fa": "اشتباه گرفتن", "grammar": { "pos": "verb", "conjugation": "regular" } },
+    { "de": "eindeutig", "fa": "واضح/روشن", "grammar": { "pos": "adjective" } },
+    { "de": "vermeiden", "fa": "اجتناب کردن", "grammar": { "pos": "verb", "conjugation": "irregular" } },
+    { "de": "ersetzen", "fa": "جایگزین کردن", "grammar": { "pos": "verb", "conjugation": "regular" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "مشکل: Konjunktiv I = Indikativ",
+      "content": "📝 **گاهی Konjunktiv I با Indikativ یکی است:**\n\n**مثال با haben:**\n| شخص | Indikativ | Konjunktiv I |\n|------|-----------|-------------|\n| ich | habe | habe ❌ یکی! |\n| er/sie | hat | habe ✓ متفاوت |\n| wir | haben | haben ❌ یکی! |\n| sie (جمع) | haben | haben ❌ یکی! |\n\n**مشکل چیست؟**\n• وقتی Konj. I = Ind. است، مشخص نیست که نقل قول است یا نه!\n• Sie sagen, sie haben Zeit. (Indikativ یا Konjunktiv I؟)\n\n**راه‌حل:**\n✓ از **Konjunktiv II** استفاده کنید!\n• Sie sagen, sie **hätten** Zeit. (واضح است که نقل قول است)",
+      "examples": [
+        { "de": "Sie sagen, sie hätten keine Zeit. (نه: haben)", "fa": "آن‌ها می‌گویند وقت ندارند." },
+        { "de": "Ich sagte, ich käme morgen. (نه: komme)", "fa": "گفتم فردا می‌آیم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "die Ersatzform", "fa": "شکل جایگزین" },
+      "example": { "text": { "de": "Konjunktiv II ist die Ersatzform für Konjunktiv I.", "fa": "کنیونکتیو ۲ شکل جایگزین کنیونکتیو ۱ است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Ersatzform",
+      "translation": "شکل جایگزین",
+      "syllables": ["Er", "satz", "form"],
+      "distractors": ["Ar", "sotz", "farm"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "identisch", "fa": "یکسان/مشابه" },
+      "example": { "text": { "de": "Die Formen sind identisch.", "fa": "شکل‌ها یکسان هستند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "identisch",
+      "translation": "یکسان",
+      "syllables": ["i", "den", "tisch"],
+      "distractors": ["a", "dan", "tusch"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s4",
+      "title": "قانون جایگزینی",
+      "content": "📝 **قانون ساده:**\n\n**وقتی Konjunktiv I = Indikativ:**\n↓\n**از Konjunktiv II استفاده کن!**\n\n**جدول کامل haben:**\n| شخص | Konj. I | = Ind.? | جایگزین |\n|------|---------|---------|--------|\n| ich | habe | ✓ | **hätte** |\n| du | habest | ✗ | - |\n| er/sie | habe | ✗ | - |\n| wir | haben | ✓ | **hätten** |\n| ihr | habet | ✗ | - |\n| sie/Sie | haben | ✓ | **hätten** |\n\n💡 **نکته:** سوم شخص مفرد (er/sie/es) معمولاً نیاز به جایگزین ندارد!",
+      "examples": [
+        { "de": "Wir sagen, wir hätten Hunger. (نه: haben)", "fa": "ما می‌گوییم گرسنه هستیم." },
+        { "de": "Sie behaupten, sie wüssten alles. (نه: wissen)", "fa": "آن‌ها ادعا می‌کنند همه چیز را می‌دانند." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "چرا از Konjunktiv II به جای Konjunktiv I استفاده می‌کنیم؟",
+      "options": ["چون زیباتر است", "چون Konjunktiv I با Indikativ یکی است", "چون آسان‌تر است", "چون رسمی‌تر است"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! وقتی Konjunktiv I = Indikativ است، از Konjunktiv II استفاده می‌کنیم تا واضح باشد.", "incorrect": "وقتی Konjunktiv I با Indikativ یکی است، از Konjunktiv II استفاده می‌کنیم." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام شخص معمولاً نیاز به جایگزین ندارد؟",
+      "options": ["ich", "wir", "er/sie/es", "sie (جمع)"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! سوم شخص مفرد (er/sie/es) معمولاً با Indikativ فرق دارد: er habe (نه hat)", "incorrect": "سوم شخص مفرد معمولاً نیاز به جایگزین ندارد چون با Indikativ فرق دارد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "شکل درست را انتخاب کنید (Ersatzform اگر لازم است)",
+      "sentence": "Sie sagen, sie {0} keine Zeit. (haben)",
+      "options": ["haben", "hätten", "habe", "hat"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "sie haben (Konj. I) = sie haben (Ind.)، پس جایگزین: sie hätten" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "شکل درست را انتخاب کنید",
+      "sentence": "Er sagt, er {0} müde. (sein)",
+      "options": ["ist", "sei", "wäre", "sind"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "er sei با er ist فرق دارد، پس نیازی به جایگزین نیست: er sei" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "گزارش جلسه",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Nach dem Meeting", "fa": "بعد از جلسه" }
+      },
+      "lines": [
+        { "speaker": "Chef", "text": { "de": "Was haben die Kunden gesagt?", "fa": "مشتریان چه گفتند؟" }, "mood": "neutral" },
+        { "speaker": "Eli", "text": { "de": "Sie sagten, sie hätten Interesse am Produkt.", "fa": "گفتند به محصول علاقه‌مند هستند." }, "mood": "neutral" },
+        { "speaker": "Chef", "text": { "de": "Warum 'hätten' und nicht 'haben'?", "fa": "چرا hätten و نه haben؟" }, "mood": "confused" },
+        { "speaker": "Eli", "text": { "de": "Weil 'sie haben' im Konjunktiv I gleich wie im Indikativ ist.", "fa": "چون sie haben در کنیونکتیو ۱ مثل اخباری است." }, "mood": "neutral" },
+        { "speaker": "Chef", "text": { "de": "Ah, also benutzen wir Konjunktiv II als Ersatz!", "fa": "آها، پس از کنیونکتیو ۲ به عنوان جایگزین استفاده می‌کنیم!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "مشتریان چه گفتند؟", "options": ["علاقه ندارند", "علاقه‌مند هستند", "نظری ندارند"], "correctIndex": 1, "explanation": "الی گفت: sie hätten Interesse" },
+        { "question": "چرا از hätten استفاده شد؟", "options": ["زیباتر است", "Konjunktiv I = Indikativ", "رسمی‌تر است"], "correctIndex": 1, "explanation": "چون sie haben در هر دو وجه یکی است" }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "جدول کامل sein",
+      "content": "📝 **فعل sein - مقایسه:**\n\n| شخص | Indikativ | Konj. I | Konj. II |\n|------|-----------|---------|----------|\n| ich | bin | sei | wäre |\n| du | bist | seist | wärst |\n| er/sie | ist | sei | wäre |\n| wir | sind | seien | wären |\n| ihr | seid | seiet | wärt |\n| sie/Sie | sind | seien | wären |\n\n**خبر خوب:** تمام شکل‌های Konjunktiv I از sein با Indikativ فرق دارند!\n\n✓ ich sei (نه bin)\n✓ er sei (نه ist)\n✓ wir seien (نه sind)\n\n💡 **نتیجه:** برای sein معمولاً نیازی به Ersatzform نیست!",
+      "examples": [
+        { "de": "Er sagt, er sei krank. (Konj. I کافی است)", "fa": "او می‌گوید مریض است." },
+        { "de": "Sie sagen, sie seien müde. (Konj. I کافی است)", "fa": "آن‌ها می‌گویند خسته‌اند." }
+      ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای فعل sein همیشه باید از Konjunktiv II استفاده کنیم.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! شکل‌های Konjunktiv I از sein با Indikativ فرق دارند، پس نیازی به جایگزین نیست." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "وقتی Konjunktiv I با Indikativ یکی است، از Konjunktiv II استفاده می‌کنیم.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! این قانون اصلی Ersatzform است." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "verwechseln", "fa": "اشتباه گرفتن" },
+      "example": { "text": { "de": "Man kann die Formen leicht verwechseln.", "fa": "می‌توان شکل‌ها را به راحتی اشتباه گرفت." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "verwechseln",
+      "translation": "اشتباه گرفتن",
+      "syllables": ["ver", "wech", "seln"],
+      "distractors": ["var", "wach", "saln"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "فعل‌های پرکاربرد و جایگزین‌ها",
+      "content": "📝 **جدول مرجع:**\n\n| فعل | ich (Konj. I = Ind.) | جایگزین |\n|-----|---------------------|--------|\n| haben | habe = habe | **hätte** |\n| werden | werde = werde | **würde** |\n| können | könne ≠ kann | - |\n| müssen | müsse ≠ muss | - |\n| wollen | wolle ≠ will | - |\n| wissen | wisse ≠ weiß | - |\n\n**برای wir/sie (جمع):**\n| فعل | Konj. I = Ind. | جایگزین |\n|-----|----------------|--------|\n| haben | haben = haben | **hätten** |\n| kommen | kommen = kommen | **kämen** |\n| gehen | gehen = gehen | **gingen** |\n| sehen | sehen = sehen | **sähen** |\n\n💡 **نکته:** فعل‌های مودال در سوم شخص مفرد معمولاً نیاز به جایگزین ندارند!",
+      "examples": [
+        { "de": "Ich sagte, ich würde kommen. (نه: werde)", "fa": "گفتم می‌آیم." },
+        { "de": "Sie meinten, sie kämen später. (نه: kommen)", "fa": "گفتند دیرتر می‌آیند." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "شکل درست را انتخاب کنید",
+      "sentence": "Ich sagte, ich {0} morgen kommen. (werden)",
+      "options": ["werde", "würde", "wurde", "wird"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "ich werde (Konj. I) = ich werde (Ind.)، پس جایگزین: ich würde" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "شکل درست را انتخاب کنید",
+      "sentence": "Er sagt, er {0} das Problem. (können)",
+      "options": ["kann", "könne", "könnte", "konnte"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "er könne با er kann فرق دارد، پس Konjunktiv I کافی است" }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "Konjunktiv I را با Ersatzform (Konjunktiv II) جفت کنید",
+      "items": [
+        { "id": "i1", "text": "ich habe (= Ind.)" },
+        { "id": "i2", "text": "wir haben (= Ind.)" },
+        { "id": "i3", "text": "ich werde (= Ind.)" },
+        { "id": "i4", "text": "sie kommen (= Ind.)" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "ich hätte" },
+        { "id": "m2", "text": "wir hätten" },
+        { "id": "m3", "text": "ich würde" },
+        { "id": "m4", "text": "sie kämen" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["hätten keine Zeit.", "sie", "Sie sagten,"],
+      "correctOrder": [2, 1, 0],
+      "correctSentence": { "de": "Sie sagten, sie hätten keine Zeit.", "fa": "آن‌ها گفتند وقت ندارند." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["würde morgen kommen.", "ich", "Ich sagte,"],
+      "correctOrder": [2, 1, 0],
+      "correctSentence": { "de": "Ich sagte, ich würde morgen kommen.", "fa": "گفتم فردا می‌آیم." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در کلاس آلمانی",
+      "scene": {
+        "location": "classroom",
+        "description": { "de": "Im Deutschkurs", "fa": "در کلاس آلمانی" }
+      },
+      "lines": [
+        { "speaker": "Lehrer", "text": { "de": "Wie bildet man die indirekte Rede für 'wir'?", "fa": "نقل قول غیرمستقیم برای wir چطور ساخته می‌شود؟" }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Wir benutzen Konjunktiv I: 'wir haben'?", "fa": "از کنیونکتیو ۱ استفاده می‌کنیم: wir haben؟" }, "mood": "confused" },
+        { "speaker": "Lehrer", "text": { "de": "Aber 'wir haben' ist gleich wie Indikativ!", "fa": "اما wir haben مثل اخباری است!" }, "mood": "neutral" },
+        { "speaker": "Eli", "text": { "de": "Deshalb benutzen wir Konjunktiv II: 'wir hätten'!", "fa": "به همین دلیل از کنیونکتیو ۲ استفاده می‌کنیم: wir hätten!" }, "mood": "happy" },
+        { "speaker": "Lehrer", "text": { "de": "Genau! Das ist die Ersatzform.", "fa": "دقیقاً! این شکل جایگزین است." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "چرا wir haben مشکل دارد؟", "options": ["سخت است", "با Indikativ یکی است", "غلط است"], "correctIndex": 1, "explanation": "wir haben در هر دو وجه یکی است" },
+        { "question": "راه‌حل چیست؟", "options": ["از Indikativ استفاده کن", "از Konjunktiv II استفاده کن", "جمله را عوض کن"], "correctIndex": 1, "explanation": "از Konjunktiv II به عنوان جایگزین استفاده می‌کنیم" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "eindeutig", "fa": "واضح/روشن" },
+      "example": { "text": { "de": "Die Form muss eindeutig sein.", "fa": "شکل باید واضح باشد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "eindeutig",
+      "translation": "واضح",
+      "syllables": ["ein", "deu", "tig"],
+      "distractors": ["an", "dai", "tug"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "شکل درست را انتخاب کنید",
+      "sentence": "Die Mitarbeiter sagten, sie {0} mehr Geld. (brauchen)",
+      "options": ["brauchen", "bräuchten", "brauche", "brauchten"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "sie brauchen (Konj. I) = sie brauchen (Ind.)، پس جایگزین: sie bräuchten" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "شکل درست را انتخاب کنید",
+      "sentence": "Er behauptet, er {0} alles. (wissen)",
+      "options": ["weiß", "wisse", "wüsste", "wusste"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "er wisse با er weiß فرق دارد، پس Konjunktiv I کافی است" }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: گزارش روزنامه",
+      "passage": {
+        "de": "Die Gewerkschaft teilte mit, die Arbeiter hätten bessere Bedingungen verdient. Der Sprecher sagte, sie bräuchten höhere Löhne. Die Firma erklärte jedoch, sie könne die Forderungen nicht erfüllen. Der Chef betonte, das Unternehmen sei in einer schwierigen Lage. Er meinte, alle müssten Kompromisse machen.",
+        "fa": "اتحادیه اعلام کرد که کارگران شرایط بهتری را لایق بوده‌اند. سخنگو گفت آن‌ها به دستمزد بالاتر نیاز دارند. اما شرکت توضیح داد که نمی‌تواند خواسته‌ها را برآورده کند. رئیس تأکید کرد که شرکت در وضعیت سختی است. او گفت همه باید سازش کنند."
+      },
+      "questions": [
+        { "question": "اتحادیه چه گفت؟", "options": ["کارگران راضی هستند", "کارگران شرایط بهتری لایق‌اند", "کارگران باید کمتر کار کنند"], "correctIndex": 1, "explanation": "متن گفت: die Arbeiter hätten bessere Bedingungen verdient" },
+        { "question": "چرا از hätten استفاده شده؟", "options": ["رسمی‌تر است", "Konjunktiv I = Indikativ", "گذشته است"], "correctIndex": 1, "explanation": "sie haben = sie haben، پس از hätten (Ersatzform) استفاده شده" },
+        { "question": "شرکت چه گفت؟", "options": ["می‌تواند کمک کند", "نمی‌تواند خواسته‌ها را برآورده کند", "موافق است"], "correctIndex": 1, "explanation": "متن گفت: sie könne die Forderungen nicht erfüllen" },
+        { "question": "چرا در این جمله könne استفاده شده؟", "options": ["Konjunktiv I = Indikativ", "Konjunktiv I با Indikativ فرق دارد", "اشتباه است"], "correctIndex": 1, "explanation": "sie könne با sie kann فرق دارد، پس نیازی به جایگزین نیست" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "vermeiden", "fa": "اجتناب کردن" },
+      "example": { "text": { "de": "Wir wollen Verwechslungen vermeiden.", "fa": "می‌خواهیم از اشتباه گرفتن اجتناب کنیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "vermeiden",
+      "translation": "اجتناب کردن",
+      "syllables": ["ver", "mei", "den"],
+      "distractors": ["var", "mai", "dan"]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "Ersatzform لازم است؟",
+      "instruction": "آیا به Konjunktiv II نیاز است؟",
+      "questions": [
+        { "prompt": "er habe", "left": "نیاز نیست", "right": "نیاز است", "correctSide": "left" },
+        { "prompt": "ich habe", "left": "نیاز نیست", "right": "نیاز است", "correctSide": "right" },
+        { "prompt": "sie (جمع) haben", "left": "نیاز نیست", "right": "نیاز است", "correctSide": "right" },
+        { "prompt": "er sei", "left": "نیاز نیست", "right": "نیاز است", "correctSide": "left" },
+        { "prompt": "wir seien", "left": "نیاز نیست", "right": "نیاز است", "correctSide": "left" },
+        { "prompt": "ich werde", "left": "نیاز نیست", "right": "نیاز است", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "آن‌ها گفتند وقت ندارند.",
+      "sentenceTemplate": "Sie sagten, sie {0} keine Zeit.",
+      "options": ["haben", "hätten", "habe", "hatten"],
+      "correctAnswers": [0],
+      "correctTranslation": { "de": "Sie sagten, sie hätten keine Zeit.", "fa": "آن‌ها گفتند وقت ندارند." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "او می‌گوید مریض است.",
+      "sentenceTemplate": "Er sagt, er {0} krank.",
+      "options": ["ist", "sei", "wäre", "war"],
+      "correctAnswers": [0],
+      "correctTranslation": { "de": "Er sagt, er sei krank.", "fa": "او می‌گوید مریض است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "فعل‌های مودال در سوم شخص مفرد معمولاً نیاز به Ersatzform دارند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! فعل‌های مودال در سوم شخص مفرد با Indikativ فرق دارند: er könne (نه kann), er müsse (نه muss)" }
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die Verhandlung", "fa": "مذاکره" },
+      "characters": ["Chef", "Mitarbeiter"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Die Mitarbeiter trafen sich mit dem Chef.", "fa": "کارمندان با رئیس ملاقات کردند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Mitarbeiter",
+          "text": { "de": "Wir sagten, wir bräuchten mehr Urlaub.", "fa": "گفتیم به مرخصی بیشتر نیاز داریم." },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "چرا از bräuchten استفاده شد؟",
+          "options": ["رسمی‌تر است", "wir brauchen = Indikativ", "گذشته است"],
+          "correctIndex": 1,
+          "explanation": "wir brauchen در هر دو وجه یکی است، پس از Konjunktiv II استفاده شد"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Chef",
+          "text": { "de": "Ich erklärte, das Unternehmen sei in einer schwierigen Phase.", "fa": "توضیح دادم که شرکت در مرحله سختی است." },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "چرا اینجا sei درست است؟",
+          "options": ["es sei با es ist فرق دارد", "زیباتر است", "اشتباه است"],
+          "correctIndex": 0,
+          "explanation": "das Unternehmen sei با ist فرق دارد، پس نیازی به جایگزین نیست"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Mitarbeiter",
+          "text": { "de": "Am Ende einigten wir uns. Wir meinten, wir hätten einen guten Kompromiss gefunden.",
+           "fa": "در نهایت به توافق رسیدیم. گفتیم به سازش خوبی رسیده‌ایم." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "نتیجه مذاکره چه بود؟",
+          "options": ["شکست خورد", "به توافق رسیدند", "ادامه دارد"],
+          "correctIndex": 1,
+          "explanation": "متن گفت: wir hätten einen guten Kompromiss gefunden"
+        }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["kämen später.", "sie", "Sie meinten,"],
+      "correctOrder": [2, 1, 0],
+      "correctSentence": { "de": "Sie meinten, sie kämen später.", "fa": "آن‌ها گفتند دیرتر می‌آیند." }
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Sie sagten, sie hätten keine Zeit.",
+      "translation": "آن‌ها گفتند وقت ندارند."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Ich meinte, ich würde kommen.",
+      "translation": "گفتم می‌آیم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Er sagt, er sei krank.",
+      "translation": "او می‌گوید مریض است."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "ich habe (Ersatzform)", "options": ["hätte", "habe"], "correctAnswerIndex": 0 },
+        { "question": "er sei (Ersatzform?)", "options": ["لازم نیست", "wäre"], "correctAnswerIndex": 0 },
+        { "question": "wir haben (Ersatzform)", "options": ["hätten", "haben"], "correctAnswerIndex": 0 },
+        { "question": "sie kommen (Ersatzform)", "options": ["kämen", "kommen"], "correctAnswerIndex": 0 },
+        { "question": "er habe (Ersatzform?)", "options": ["لازم نیست", "hätte"], "correctAnswerIndex": 0 },
+        { "question": "ich werde (Ersatzform)", "options": ["würde", "werde"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "ich habe", "fa": "ich hätte" },
+        { "de": "wir haben", "fa": "wir hätten" },
+        { "de": "ich werde", "fa": "ich würde" },
+        { "de": "sie kommen", "fa": "sie kämen" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی Ersatzformen",
+      "instruction": "شکل‌های Konjunktiv II را پیدا کنید",
+      "targetWords": ["hätte", "hätten", "würde", "kämen", "wären", "bräuchten"],
+      "gridSize": { "rows": 8, "cols": 8 },
+      "timeLimit": 90
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "Ersatzform", "fa": "شکل ___", "options": ["اصلی", "جایگزین", "قدیمی", "جدید"], "correctIndex": 1 },
+        { "de": "identisch", "fa": "___", "options": ["متفاوت", "یکسان", "بزرگ", "کوچک"], "correctIndex": 1 },
+        { "de": "vermeiden", "fa": "___", "options": ["انجام دادن", "اجتناب کردن", "شروع کردن", "تمام کردن"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp2",
+      "title": "آفرین! 🎉",
+      "message": "شما شکل‌های جایگزین (Ersatzformen) را یاد گرفتید!",
+      "keyPoints": [
+        "وقتی Konjunktiv I = Indikativ است، از Konjunktiv II استفاده کنید",
+        "بیشتر برای ich، wir و sie (جمع) لازم است",
+        "سوم شخص مفرد (er/sie/es) معمولاً نیاز به جایگزین ندارد",
+        "فعل sein: تمام شکل‌ها با Indikativ فرق دارند (نیاز به جایگزین نیست)",
+        "مثال: ich habe = ich habe، پس: ich hätte",
+        "مثال: sie kommen = sie kommen، پس: sie kämen"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "die Ersatzform", "fa": "شکل جایگزین" } },
+        { "word": { "de": "identisch", "fa": "یکسان" } },
+        { "word": { "de": "verwechseln", "fa": "اشتباه گرفتن" } },
+        { "word": { "de": "eindeutig", "fa": "واضح" } },
+        { "word": { "de": "vermeiden", "fa": "اجتناب کردن" } },
+        { "word": { "de": "ersetzen", "fa": "جایگزین کردن" } }
+      ]
+    }
+  ]
+}
