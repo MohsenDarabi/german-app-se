@@ -1066,6 +1066,37 @@ const DE_FA_B1_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/B1/B1-M01-L04"
       }
     ]
+  },
+  {
+    id: "module-02",
+    title: "بخش ۲: صفات فعلی (Partizipien als Adjektive)",
+    level: "B1",
+    lessons: [
+      {
+        id: "B1-M02-L01",
+        title: "Partizip I als Adjektiv - صفت فاعلی",
+        description: "یاد بگیرید چطور از Partizip I به عنوان صفت استفاده کنید: der schlafende Hund.",
+        path: "/learn/de-fa/B1/B1-M02-L01"
+      },
+      {
+        id: "B1-M02-L02",
+        title: "Partizip II als Adjektiv - صفت مفعولی",
+        description: "یاد بگیرید چطور از Partizip II به عنوان صفت استفاده کنید: das gekochte Ei.",
+        path: "/learn/de-fa/B1/B1-M02-L02"
+      },
+      {
+        id: "B1-M02-L03",
+        title: "Erweiterte Partizipien - صفات فعلی گسترده",
+        description: "یاد بگیرید چطور صفات فعلی را گسترش دهید: der auf dem Sofa schlafende Hund.",
+        path: "/learn/de-fa/B1/B1-M02-L03"
+      },
+      {
+        id: "B1-M02-L04",
+        title: "Zusammenfassung - جمع‌بندی صفات فعلی",
+        description: "مرور کامل Partizip I، Partizip II و ساختارهای گسترده.",
+        path: "/learn/de-fa/B1/B1-M02-L04"
+      }
+    ]
   }
 ];
 

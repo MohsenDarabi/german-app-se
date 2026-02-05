@@ -8,7 +8,7 @@
 
 **Create B1 lessons - lesson by lesson, wait for user test after each**
 
-Current lesson: `B1-M01-L04` (N-Deklination: Zusammenfassung) - **MODULE 1 COMPLETE!**
+Current: `B1-M02` (Partizipien als Adjektive) - **COMPLETE - READY FOR USER TEST**
 
 ---
 
@@ -26,7 +26,7 @@ Current lesson: `B1-M01-L04` (N-Deklination: Zusammenfassung) - **MODULE 1 COMPL
 |-------|---------|---------|--------|
 | A1 | 14 | 56+ | Complete |
 | A2 | 18 | 72 | **Complete** ✅ |
-| B1 | 1 | 4 | Module 1 complete |
+| B1 | 2 | 8 | **Module 2 Complete** ✅ |
 
 ### A2 Completion (2026-02-05)
 
@@ -58,6 +58,9 @@ Current lesson: `B1-M01-L04` (N-Deklination: Zusammenfassung) - **MODULE 1 COMPL
 | Module | Topic | Lessons | Status |
 |--------|-------|---------|--------|
 | M01 | N-Deklination | 4/4 | ✅ Complete |
+| M02 | Partizipien als Adjektive | 4/4 | ✅ Complete |
+
+**Total B1: 8 lessons**
 
 ---
 
@@ -72,16 +75,27 @@ Current lesson: `B1-M01-L04` (N-Deklination: Zusammenfassung) - **MODULE 1 COMPL
 
 ---
 
+## B1 Module 2: Partizipien als Adjektive (Participles as Adjectives)
+
+| Lesson | Title | Status |
+|--------|-------|--------|
+| B1-M02-L01 | Partizip I als Adjektiv | ✅ Complete |
+| B1-M02-L02 | Partizip II als Adjektiv | ✅ Complete |
+| B1-M02-L03 | Erweiterte Partizipien | ✅ Complete |
+| B1-M02-L04 | Zusammenfassung | ✅ Complete |
+
+---
+
 ## Recent Changes
 
 | Date | Change |
 |------|--------|
+| 2026-02-05 | **B1 Module 2 (Partizipien als Adjektive) COMPLETE - 4 lessons!** |
+| 2026-02-05 | Created B1-M02-L04 (Zusammenfassung) |
+| 2026-02-05 | Created B1-M02-L03 (Erweiterte Partizipien) |
+| 2026-02-05 | Created B1-M02-L02 (Partizip II als Adjektiv) |
+| 2026-02-05 | Created B1-M02-L01 (Partizip I als Adjektiv) |
 | 2026-02-05 | **B1 Module 1 (N-Deklination) COMPLETE - 4 lessons!** |
-| 2026-02-05 | Created B1-M01-L04 (N-Deklination: Zusammenfassung) |
-| 2026-02-05 | Created B1-M01-L03 (N-Deklination: Ausnahmen) - das Herz, der Name, etc. |
-| 2026-02-05 | Created B1-M01-L02 (N-Deklination: Weitere Beispiele) |
-| 2026-02-05 | Fixed upload script to include B1 lessons |
-| 2026-02-05 | Created B1-M01-L01 (N-Deklination intro) |
 | 2026-02-05 | Completed A2 Module 18 (Genitiv) - A2 curriculum complete! |
 | 2026-02-05 | Added B1 support to modules.ts |
 
@@ -91,6 +105,7 @@ Current lesson: `B1-M01-L04` (N-Deklination: Zusammenfassung) - **MODULE 1 COMPL
 
 1. [x] Complete A2 curriculum (72 lessons)
 2. [x] Complete B1 Module 1 (N-Deklination) - 4 lessons
-3. [ ] **User tests B1-M01 lessons**
-4. [ ] Plan B1 Module 2 topic
-5. [ ] Continue B1 curriculum development
+3. [x] Complete B1 Module 2 (Partizipien als Adjektive) - 4 lessons
+4. [ ] **User tests B1-M02 lessons**
+5. [ ] Plan B1 Module 3 topic
+6. [ ] Continue B1 curriculum development

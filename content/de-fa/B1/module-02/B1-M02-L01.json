@@ -1,0 +1,412 @@
+{
+  "id": "B1-M02-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Partizip I als Adjektiv", "fa": "صفت فاعلی (Partizip I)" },
+  "description": "یاد بگیرید چطور از Partizip I به عنوان صفت استفاده کنید: der schlafende Hund، das weinende Kind",
+  "level": "B1",
+  "module": 2,
+  "lessonNumber": 1,
+  "totalSteps": 44,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "schlafend", "fa": "در حال خوابیدن", "grammar": { "pos": "adjective", "type": "partizip1", "baseVerb": "schlafen" } },
+    { "de": "weinend", "fa": "در حال گریه کردن", "grammar": { "pos": "adjective", "type": "partizip1", "baseVerb": "weinen" } },
+    { "de": "lächelnd", "fa": "در حال لبخند زدن", "grammar": { "pos": "adjective", "type": "partizip1", "baseVerb": "lächeln" } },
+    { "de": "singend", "fa": "در حال آواز خواندن", "grammar": { "pos": "adjective", "type": "partizip1", "baseVerb": "singen" } },
+    { "de": "spielend", "fa": "در حال بازی کردن", "grammar": { "pos": "adjective", "type": "partizip1", "baseVerb": "spielen" } },
+    { "de": "wartend", "fa": "در حال انتظار", "grammar": { "pos": "adjective", "type": "partizip1", "baseVerb": "warten" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "Partizip I چیست؟",
+      "content": "📝 **Partizip I (صفت فاعلی) نشان می‌دهد که عمل در حال انجام است:**\n\n**ساختار:**\nفعل مصدر + **d** = Partizip I\n\n| فعل | Partizip I |\n|-----|------------|\n| schlaf**en** | schlaf**end** |\n| wein**en** | wein**end** |\n| sing**en** | sing**end** |\n| spiel**en** | spiel**end** |\n\n**کاربرد به عنوان صفت:**\n• der schlafend**e** Hund = سگی که **دارد می‌خوابد**\n• das weinend**e** Kind = کودکی که **دارد گریه می‌کند**\n\n💡 **نکته:** وقتی Partizip I صفت می‌شود، پایانه صفت می‌گیرد!",
+      "examples": [
+        { "de": "Der schlafende Hund liegt auf dem Sofa.", "fa": "سگ در حال خواب روی مبل دراز کشیده." },
+        { "de": "Ich sehe das spielende Kind.", "fa": "کودک در حال بازی را می‌بینم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "schlafend", "fa": "در حال خوابیدن" },
+      "example": { "text": { "de": "Der schlafende Hund träumt.", "fa": "سگ در حال خواب خواب می‌بیند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "schlafend",
+      "translation": "در حال خوابیدن",
+      "syllables": ["schla", "fend"],
+      "distractors": ["schlo", "fund", "fand"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "weinend", "fa": "در حال گریه کردن" },
+      "example": { "text": { "de": "Das weinende Kind braucht Trost.", "fa": "کودک در حال گریه به آرامش نیاز دارد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "weinend",
+      "translation": "در حال گریه کردن",
+      "syllables": ["wei", "nend"],
+      "distractors": ["wai", "nand", "nund"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s4",
+      "title": "پایانه‌های صفت با Partizip I",
+      "content": "📝 **Partizip I مثل هر صفت دیگری صرف می‌شود:**\n\n**با حرف تعریف معرفه (der, die, das):**\n| حالت | مذکر | مونث | خنثی |\n|------|------|------|------|\n| Nom. | der schlafend**e** | die schlafend**e** | das schlafend**e** |\n| Akk. | den schlafend**en** | die schlafend**e** | das schlafend**e** |\n| Dat. | dem schlafend**en** | der schlafend**en** | dem schlafend**en** |\n\n**با حرف تعریف نکره (ein, eine):**\n| حالت | مذکر | مونث | خنثی |\n|------|------|------|------|\n| Nom. | ein schlafend**er** | eine schlafend**e** | ein schlafend**es** |\n| Akk. | einen schlafend**en** | eine schlafend**e** | ein schlafend**es** |",
+      "examples": [
+        { "de": "Ich sehe den spielenden Jungen.", "fa": "پسر در حال بازی را می‌بینم." },
+        { "de": "Ein weinendes Kind steht dort.", "fa": "یک کودک در حال گریه آنجا ایستاده." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام شکل درست است؟ «___ Hund schläft.»",
+      "options": ["Der schlafend", "Der schlafende", "Der schlafenden", "Der schlafender"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! در Nominativ مذکر با der: schlafende", "incorrect": "با der در Nominativ پایانه -e می‌گیرد: der schlafende Hund" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید (Nominativ)",
+      "sentence": "Das {0} Kind braucht Hilfe.",
+      "options": ["weinend", "weinende", "weinenden", "weinender"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "با das در Nominativ: das weinende Kind" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در پارک",
+      "scene": {
+        "location": "park",
+        "description": { "de": "Im Park", "fa": "در پارک" }
+      },
+      "lines": [
+        { "speaker": "Eli", "text": { "de": "Siehst du den spielenden Hund?", "fa": "سگ در حال بازی را می‌بینی؟" }, "mood": "happy" },
+        { "speaker": "Tom", "text": { "de": "Ja! Und dort ist ein schlafendes Kind.", "fa": "بله! و آنجا یک کودک در حال خواب است." }, "mood": "neutral" },
+        { "speaker": "Eli", "text": { "de": "Die lächelnde Frau ist seine Mutter.", "fa": "زن در حال لبخند مادرش است." }, "mood": "happy" },
+        { "speaker": "Tom", "text": { "de": "Eine schöne Szene mit spielenden Kindern.", "fa": "صحنه زیبایی با کودکان در حال بازی." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "سگ چه کار می‌کند؟", "options": ["می‌خوابد", "بازی می‌کند", "گریه می‌کند"], "correctIndex": 1, "explanation": "الی گفت: den spielenden Hund (سگ در حال بازی)" },
+        { "question": "زن در حال لبخند کیست؟", "options": ["خواهر کودک", "مادر کودک", "معلم کودک"], "correctIndex": 1, "explanation": "الی گفت: Die lächelnde Frau ist seine Mutter" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "lächelnd", "fa": "در حال لبخند زدن" },
+      "example": { "text": { "de": "Die lächelnde Frau grüßt mich.", "fa": "زن در حال لبخند به من سلام می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "lächelnd",
+      "translation": "در حال لبخند زدن",
+      "syllables": ["lä", "chelnd"],
+      "distractors": ["la", "chulnd", "chelnt"]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "singend", "fa": "در حال آواز خواندن" },
+      "example": { "text": { "de": "Der singende Vogel sitzt im Baum.", "fa": "پرنده در حال آواز روی درخت نشسته." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "singend",
+      "translation": "در حال آواز خواندن",
+      "syllables": ["sin", "gend"],
+      "distractors": ["san", "gand", "gunt"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام شکل درست است؟ «Ich höre einen ___ Vogel.»",
+      "options": ["singend", "singende", "singenden", "singender"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! در Akkusativ مذکر با einen: singenden", "incorrect": "با einen در Akkusativ پایانه -en می‌گیرد: einen singenden Vogel" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید (Akkusativ)",
+      "sentence": "Ich sehe die {0} Kinder.",
+      "options": ["spielend", "spielende", "spielenden", "spielender"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "با die در Akkusativ جمع: die spielenden Kinder" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "تفاوت Partizip I و Relativsatz",
+      "content": "📝 **Partizip I = خلاصه جمله موصولی:**\n\n| Partizip I | جمله موصولی |\n|------------|-------------|\n| der **schlafende** Hund | der Hund, **der schläft** |\n| das **weinende** Kind | das Kind, **das weint** |\n| die **singenden** Vögel | die Vögel, **die singen** |\n\n💡 **نکته مهم:**\nPartizip I همیشه یک عمل **در حال انجام** و **همزمان** را نشان می‌دهد.\n\n**مثال:**\n• Der schlafende Hund träumt.\n= Der Hund, der (gerade) schläft, träumt.\n= سگ که (الان) دارد می‌خوابد، خواب می‌بیند.",
+      "examples": [
+        { "de": "Die lachenden Kinder = die Kinder, die lachen", "fa": "کودکان در حال خندیدن = کودکانی که می‌خندند" },
+        { "de": "Ein bellender Hund = ein Hund, der bellt", "fa": "سگ در حال پارس کردن = سگی که پارس می‌کند" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "spielend", "fa": "در حال بازی کردن" },
+      "example": { "text": { "de": "Die spielenden Kinder sind laut.", "fa": "کودکان در حال بازی پر سر و صدا هستند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "spielend",
+      "translation": "در حال بازی کردن",
+      "syllables": ["spie", "lend"],
+      "distractors": ["spei", "lund", "lant"]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "wartend", "fa": "در حال انتظار" },
+      "example": { "text": { "de": "Die wartenden Gäste werden ungeduldig.", "fa": "مهمانان در حال انتظار بی‌صبر می‌شوند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "wartend",
+      "translation": "در حال انتظار",
+      "syllables": ["war", "tend"],
+      "distractors": ["wer", "tand", "tunt"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید (Dativ)",
+      "sentence": "Ich helfe dem {0} Kind.",
+      "options": ["weinend", "weinende", "weinenden", "weinender"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "با dem در Dativ: dem weinenden Kind" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در ایستگاه قطار",
+      "scene": {
+        "location": "station",
+        "description": { "de": "Am Bahnhof", "fa": "در ایستگاه قطار" }
+      },
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Siehst du die wartenden Leute?", "fa": "آدم‌های در حال انتظار را می‌بینی؟" }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Ja, ein lesender Mann sitzt dort.", "fa": "بله، مردی در حال کتاب خواندن آنجا نشسته." }, "mood": "neutral" },
+        { "speaker": "Lisa", "text": { "de": "Und eine telefonierende Frau steht daneben.", "fa": "و زنی در حال تلفن زدن کنارش ایستاده." }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Der ankommende Zug ist unser Zug!", "fa": "قطار در حال رسیدن، قطار ماست!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "مرد چه کار می‌کند؟", "options": ["تلفن می‌زند", "کتاب می‌خواند", "می‌خوابد"], "correctIndex": 1, "explanation": "تام گفت: ein lesender Mann (مردی در حال کتاب خواندن)" },
+        { "question": "زن چه کار می‌کند؟", "options": ["کتاب می‌خواند", "می‌خوابد", "تلفن می‌زند"], "correctIndex": 2, "explanation": "لیسا گفت: eine telefonierende Frau (زنی در حال تلفن زدن)" }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "فعل را با Partizip I وصل کنید",
+      "items": [
+        { "id": "i1", "text": "schlafen" },
+        { "id": "i2", "text": "weinen" },
+        { "id": "i3", "text": "singen" },
+        { "id": "i4", "text": "spielen" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "schlafend" },
+        { "id": "m2", "text": "weinend" },
+        { "id": "m3", "text": "singend" },
+        { "id": "m4", "text": "spielend" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "Partizip I با اضافه کردن -d به مصدر ساخته می‌شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! schlafen + d = schlafend" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "Partizip I به عنوان صفت، پایانه صفت نمی‌گیرد.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! Partizip I وقتی صفت می‌شود، مثل هر صفت دیگری پایانه می‌گیرد: der schlafende Hund" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["spielende Kind.", "Ich", "sehe", "das"],
+      "correctOrder": [1, 2, 3, 0],
+      "correctSentence": { "de": "Ich sehe das spielende Kind.", "fa": "کودک در حال بازی را می‌بینم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["lächelnde Frau", "Die", "ist", "nett."],
+      "correctOrder": [1, 0, 2, 3],
+      "correctSentence": { "de": "Die lächelnde Frau ist nett.", "fa": "زن در حال لبخند مهربان است." }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "پرنده در حال آواز را می‌شنوم.",
+      "sentenceTemplate": "Ich höre {0} {1} Vogel.",
+      "options": ["den", "singenden", "der", "singende"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Ich höre den singenden Vogel.", "fa": "پرنده در حال آواز را می‌شنوم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "به کودک در حال گریه کمک می‌کنم.",
+      "sentenceTemplate": "Ich helfe {0} {1} Kind.",
+      "options": ["dem", "weinenden", "das", "weinende"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Ich helfe dem weinenden Kind.", "fa": "به کودک در حال گریه کمک می‌کنم." }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "Partizip I سریع",
+      "instruction": "شکل درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "der ___ Hund (Nom.)", "left": "schlafend", "right": "schlafende", "correctSide": "right" },
+        { "prompt": "das ___ Kind (Nom.)", "left": "weinende", "right": "weinenden", "correctSide": "left" },
+        { "prompt": "den ___ Vogel (Akk.)", "left": "singenden", "right": "singende", "correctSide": "left" },
+        { "prompt": "die ___ Kinder (Akk.)", "left": "spielende", "right": "spielenden", "correctSide": "right" },
+        { "prompt": "dem ___ Mann (Dat.)", "left": "wartenden", "right": "wartende", "correctSide": "left" },
+        { "prompt": "eine ___ Frau (Nom.)", "left": "lächelnde", "right": "lächelnden", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ein {0} Hund ist gefährlich.",
+      "options": ["bellend", "bellende", "bellenden", "bellender"],
+      "correctAnswers": [3],
+      "feedback": { "explanation": "با ein مذکر در Nominativ: ein bellender Hund" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich spreche mit der {0} Kollegin.",
+      "options": ["telefonierend", "telefonierende", "telefonierenden", "telefonierender"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "با der مونث در Dativ: der telefonierenden Kollegin" }
+    },
+    {
+      "type": "dialog",
+      "id": "d3",
+      "title": "در کافه",
+      "scene": {
+        "location": "cafe",
+        "description": { "de": "Im Café", "fa": "در کافه" }
+      },
+      "lines": [
+        { "speaker": "Eli", "text": { "de": "Kennst du den lesenden Mann dort?", "fa": "مرد در حال کتاب خواندن آنجا را می‌شناسی؟" }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Ja, das ist ein arbeitender Student.", "fa": "بله، او یک دانشجوی شاغل است." }, "mood": "neutral" },
+        { "speaker": "Eli", "text": { "de": "Die schlafende Katze neben ihm ist süß!", "fa": "گربه در حال خواب کنارش خیلی ناز است!" }, "mood": "happy" },
+        { "speaker": "Tom", "text": { "de": "Eine träumende Katze!", "fa": "یک گربه در حال خواب دیدن!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "مرد چه کار می‌کند؟", "options": ["می‌خوابد", "کتاب می‌خواند", "قهوه می‌نوشد"], "correctIndex": 1, "explanation": "الی گفت: den lesenden Mann (مرد در حال کتاب خواندن)" },
+        { "question": "گربه چه کار می‌کند؟", "options": ["بازی می‌کند", "غذا می‌خورد", "می‌خوابد"], "correctIndex": 2, "explanation": "الی گفت: Die schlafende Katze (گربه در حال خواب)" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "Partizip I فعل «laufen» چیست؟",
+      "options": ["laufend", "gelaufen", "läufend", "laufende"],
+      "correctAnswerIndex": 0,
+      "feedback": { "correct": "آفرین! laufen + d = laufend", "incorrect": "Partizip I = مصدر + d: laufend" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "کدام گزینه معنی «der schlafende Hund» را می‌دهد؟",
+      "options": ["سگی که خوابید", "سگی که دارد می‌خوابد", "سگی که خواهد خوابید", "سگ خوابیده"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! Partizip I نشان‌دهنده عمل در حال انجام است.", "incorrect": "Partizip I = عمل در حال انجام: سگی که دارد می‌خوابد" }
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Der schlafende Hund träumt.",
+      "translation": "سگ در حال خواب خواب می‌بیند."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Ich sehe die spielenden Kinder.",
+      "translation": "کودکان در حال بازی را می‌بینم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Die lächelnde Frau ist nett.",
+      "translation": "زن در حال لبخند مهربان است."
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "schlafend", "fa": "در حال خوابیدن" },
+        { "de": "weinend", "fa": "در حال گریه کردن" },
+        { "de": "singend", "fa": "در حال آواز خواندن" },
+        { "de": "spielend", "fa": "در حال بازی کردن" }
+      ]
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "شکل درست Partizip I را انتخاب کنید",
+      "words": [
+        { "de": "schlafen", "fa": "خوابیدن → Part. I", "options": ["schlafend", "geschlafen", "schlafende", "schläfend"], "correctIndex": 0 },
+        { "de": "der ___ Hund (Nom.)", "fa": "سگ در حال خواب", "options": ["schlafend", "schlafende", "schlafenden", "schlafender"], "correctIndex": 1 },
+        { "de": "ein ___ Kind (Nom.)", "fa": "کودک در حال گریه", "options": ["weinend", "weinende", "weinenden", "weinendes"], "correctIndex": 3 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp1",
+      "title": "آفرین! 🎉",
+      "message": "شما Partizip I را به عنوان صفت یاد گرفتید!",
+      "keyPoints": [
+        "Partizip I = مصدر + d: schlafen → schlafend",
+        "نشان‌دهنده عمل در حال انجام است",
+        "به عنوان صفت، پایانه صفت می‌گیرد: der schlafende Hund",
+        "معادل جمله موصولی: der schlafende Hund = der Hund, der schläft",
+        "پایانه‌ها مثل صفت معمولی: -e, -en, -er, -es"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "schlafend", "fa": "در حال خوابیدن" } },
+        { "word": { "de": "weinend", "fa": "در حال گریه کردن" } },
+        { "word": { "de": "lächelnd", "fa": "در حال لبخند زدن" } },
+        { "word": { "de": "singend", "fa": "در حال آواز خواندن" } },
+        { "word": { "de": "spielend", "fa": "در حال بازی کردن" } },
+        { "word": { "de": "wartend", "fa": "در حال انتظار" } }
+      ]
+    }
+  ]
+}

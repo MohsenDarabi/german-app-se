@@ -1,0 +1,498 @@
+{
+  "id": "B1-M02-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Zusammenfassung: Partizipien als Adjektive", "fa": "جمع‌بندی: صفات فعلی" },
+  "description": "مرور کامل صفات فعلی: Partizip I، Partizip II و ساختارهای گسترده",
+  "level": "B1",
+  "module": 2,
+  "lessonNumber": 4,
+  "totalSteps": 44,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "das Partizip", "fa": "صفت فعلی/وجه وصفی", "grammar": { "pos": "noun", "gender": "n", "plural": "die Partizipien" } },
+    { "de": "die Endung", "fa": "پایانه/پسوند", "grammar": { "pos": "noun", "gender": "f", "plural": "die Endungen" } },
+    { "de": "erweitert", "fa": "گسترده/توسعه‌یافته", "grammar": { "pos": "adjective" } },
+    { "de": "verkürzt", "fa": "کوتاه‌شده/خلاصه", "grammar": { "pos": "adjective" } },
+    { "de": "der Relativsatz", "fa": "جمله موصولی", "grammar": { "pos": "noun", "gender": "m", "plural": "die Relativsätze" } },
+    { "de": "gleichzeitig", "fa": "همزمان", "grammar": { "pos": "adjective" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "مرور کلی: صفات فعلی",
+      "content": "📝 **در این بخش یاد گرفتید:**\n\n**۱. Partizip I (صفت فاعلی)**\n• ساخت: Infinitiv + d + پایانه صفت\n• معنی: عمل در حال انجام\n• مثال: schlafend = در حال خواب\n\n**۲. Partizip II (صفت مفعولی)**\n• ساخت: ge- + ریشه + t/en + پایانه صفت\n• معنی: عمل تمام شده\n• مثال: gekocht = پخته شده\n\n**۳. صفات فعلی گسترده**\n• ساخت: حرف تعریف + گسترش + Partizip + اسم\n• مثال: der auf dem Sofa schlafende Hund\n\n💡 **نکته کلیدی:** صفات فعلی همیشه پایانه صفت می‌گیرند!",
+      "examples": [
+        { "de": "der schlafende Hund (Partizip I)", "fa": "سگ در حال خواب" },
+        { "de": "das gekochte Essen (Partizip II)", "fa": "غذای پخته شده" },
+        { "de": "der im Park spielende Junge", "fa": "پسری که در پارک بازی می‌کند" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "das Partizip", "fa": "صفت فعلی/وجه وصفی" },
+      "example": { "text": { "de": "Das Partizip I zeigt eine laufende Handlung.", "fa": "صفت فعلی اول نشان‌دهنده عمل در حال انجام است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Partizip",
+      "translation": "صفت فعلی",
+      "syllables": ["Par", "ti", "zip"],
+      "distractors": ["Per", "to", "zep"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "die Endung", "fa": "پایانه/پسوند" },
+      "example": { "text": { "de": "Die Endung hängt vom Artikel ab.", "fa": "پایانه به حرف تعریف بستگی دارد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Endung",
+      "translation": "پایانه",
+      "syllables": ["En", "dung"],
+      "distractors": ["An", "dong", "ding"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s4",
+      "title": "مقایسه Partizip I و Partizip II",
+      "content": "📝 **تفاوت اصلی:**\n\n| | Partizip I | Partizip II |\n|---|---|---|\n| **معنی** | در حال انجام | تمام شده |\n| **ساخت** | Infinitiv + d | ge- + ریشه + t/en |\n| **مثال** | schlafend | geschlafen |\n| **ترجمه** | در حال خواب | خوابیده |\n\n**مقایسه در جمله:**\n• Der schlafende Hund = سگی که دارد می‌خوابد (الان)\n• Der eingeschlafene Hund = سگی که خوابیده (قبلاً)\n\n💡 **راهنما:** Partizip I = -ing در انگلیسی | Partizip II = -ed در انگلیسی",
+      "examples": [
+        { "de": "Das weinende Kind (P1) - Das getröstete Kind (P2)", "fa": "کودک گریان - کودک آرام شده" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام گزینه Partizip I است؟",
+      "options": ["gekocht", "geschrieben", "spielend", "geöffnet"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! spielend = در حال بازی (Infinitiv + d)", "incorrect": "Partizip I با -d ساخته می‌شود: spielend" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام گزینه Partizip II است؟",
+      "options": ["lachend", "weinend", "singend", "gebrochen"],
+      "correctAnswerIndex": 3,
+      "feedback": { "correct": "آفرین! gebrochen = شکسته شده (ge- + broch + en)", "incorrect": "Partizip II با ge- شروع می‌شود: gebrochen" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "Partizip I یا Partizip II؟",
+      "sentence": "Der {0} Hund bellt nicht. (schlafen)",
+      "options": ["schlafen", "schlafende", "geschlafene", "schlafender"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "عمل در حال انجام → Partizip I: der schlafende Hund" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "Partizip I یا Partizip II؟",
+      "sentence": "Das {0} Buch liegt auf dem Tisch. (öffnen)",
+      "options": ["öffnende", "geöffnete", "öffnen", "geöffnet"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "کتاب قبلاً باز شده → Partizip II: das geöffnete Buch" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "مرور در کلاس",
+      "scene": {
+        "location": "classroom",
+        "description": { "de": "Im Deutschkurs", "fa": "در کلاس آلمانی" }
+      },
+      "lines": [
+        { "speaker": "Lehrer", "text": { "de": "Was ist der Unterschied zwischen Partizip I und II?", "fa": "تفاوت بین صفت فعلی اول و دوم چیست؟" }, "mood": "neutral" },
+        { "speaker": "Eli", "text": { "de": "Partizip I zeigt eine laufende Handlung.", "fa": "صفت فعلی اول نشان‌دهنده عمل در حال انجام است." }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Und Partizip II zeigt eine abgeschlossene Handlung.", "fa": "و صفت فعلی دوم نشان‌دهنده عمل تمام شده است." }, "mood": "neutral" },
+        { "speaker": "Lehrer", "text": { "de": "Sehr gut! Gebt mir ein Beispiel.", "fa": "خیلی خوب! یک مثال بدهید." }, "mood": "happy" },
+        { "speaker": "Eli", "text": { "de": "Der singende Vogel und das gesungene Lied.", "fa": "پرنده در حال آواز و آهنگ خوانده شده." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "Partizip I چه چیزی را نشان می‌دهد؟", "options": ["عمل تمام شده", "عمل در حال انجام", "عمل آینده"], "correctIndex": 1, "explanation": "الی گفت: Partizip I zeigt eine laufende Handlung" },
+        { "question": "مثال الی برای Partizip I چه بود؟", "options": ["das gesungene Lied", "der singende Vogel", "der geschriebene Brief"], "correctIndex": 1, "explanation": "الی گفت: Der singende Vogel" }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "Partizip I را با Partizip II جفت کنید",
+      "items": [
+        { "id": "i1", "text": "schlafend (P1)" },
+        { "id": "i2", "text": "kochend (P1)" },
+        { "id": "i3", "text": "schreibend (P1)" },
+        { "id": "i4", "text": "spielend (P1)" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "eingeschlafen (P2)" },
+        { "id": "m2", "text": "gekocht (P2)" },
+        { "id": "m3", "text": "geschrieben (P2)" },
+        { "id": "m4", "text": "gespielt (P2)" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "Partizip I یا II؟",
+      "instruction": "نوع صفت فعلی را تشخیص دهید",
+      "questions": [
+        { "prompt": "weinend", "left": "Partizip I", "right": "Partizip II", "correctSide": "left" },
+        { "prompt": "gekocht", "left": "Partizip I", "right": "Partizip II", "correctSide": "right" },
+        { "prompt": "lachend", "left": "Partizip I", "right": "Partizip II", "correctSide": "left" },
+        { "prompt": "geschrieben", "left": "Partizip I", "right": "Partizip II", "correctSide": "right" },
+        { "prompt": "singend", "left": "Partizip I", "right": "Partizip II", "correctSide": "left" },
+        { "prompt": "geöffnet", "left": "Partizip I", "right": "Partizip II", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "پایانه‌های صفت فعلی",
+      "content": "📝 **صفات فعلی مثل صفت‌های عادی صرف می‌شوند:**\n\n**با حرف تعریف معین (der/die/das):**\n| | مذکر | مؤنث | خنثی | جمع |\n|---|---|---|---|---|\n| Nom | -e | -e | -e | -en |\n| Akk | -en | -e | -e | -en |\n| Dat | -en | -en | -en | -en |\n\n**مثال‌ها:**\n• der schlafend**e** Hund (Nom)\n• den schlafend**en** Hund (Akk)\n• dem schlafend**en** Hund (Dat)\n\n💡 **قانون ساده:** بعد از der/die/das معمولاً -e یا -en!",
+      "examples": [
+        { "de": "Ich sehe den spielenden Jungen.", "fa": "من پسر در حال بازی را می‌بینم." },
+        { "de": "Die weinende Frau braucht Hilfe.", "fa": "زن گریان به کمک نیاز دارد." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "پایانه درست را انتخاب کنید",
+      "sentence": "Ich höre den singend{0} Vogel.",
+      "options": ["e", "en", "er", "es"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "den + مذکر Akkusativ → پایانه -en: den singenden Vogel" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "پایانه درست را انتخاب کنید",
+      "sentence": "Die lachend{0} Kinder spielen im Garten.",
+      "options": ["e", "en", "er", "es"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "die + جمع Nominativ → پایانه -en: die lachenden Kinder" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["schlafende Katze", "Die", "liegt auf dem Sofa."],
+      "correctOrder": [1, 0, 2],
+      "correctSentence": { "de": "Die schlafende Katze liegt auf dem Sofa.", "fa": "گربه در حال خواب روی مبل دراز کشیده." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["geschriebenen Brief.", "den gestern", "Ich lese"],
+      "correctOrder": [2, 1, 0],
+      "correctSentence": { "de": "Ich lese den gestern geschriebenen Brief.", "fa": "من نامه‌ای که دیروز نوشته شده را می‌خوانم." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "erweitert", "fa": "گسترده/توسعه‌یافته" },
+      "example": { "text": { "de": "Das ist ein erweitertes Partizip.", "fa": "این یک صفت فعلی گسترده است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "erweitert",
+      "translation": "گسترده",
+      "syllables": ["er", "wei", "tert"],
+      "distractors": ["ar", "wai", "tart"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s6b",
+      "title": "صفات فعلی گسترده = جمله موصولی کوتاه شده",
+      "content": "📝 **هر صفت فعلی گسترده = یک جمله موصولی:**\n\n| صفت فعلی گسترده | جمله موصولی |\n|-----------------|-------------|\n| der **schlafende** Hund | der Hund, **der schläft** |\n| das **gekochte** Essen | das Essen, **das gekocht wurde** |\n| der **im Park spielende** Junge | der Junge, **der im Park spielt** |\n\n**چرا از صفت فعلی گسترده استفاده کنیم؟**\n✓ کوتاه‌تر و فشرده‌تر\n✓ در نوشتار رسمی رایج\n✓ در روزنامه‌ها و متون علمی\n\n**چرا از جمله موصولی استفاده کنیم؟**\n✓ در مکالمه طبیعی‌تر\n✓ فهمیدنش آسان‌تر",
+      "examples": [
+        { "de": "Der vor dem Haus parkende Wagen = Der Wagen, der vor dem Haus parkt", "fa": "ماشینی که جلوی خانه پارک کرده" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "«der im Garten spielende Junge» معادل کدام جمله موصولی است؟",
+      "options": ["der Junge, der im Garten gespielt hat", "der Junge, der im Garten spielt", "der Junge, der im Garten spielen wird", "der Junge, der im Garten spielte"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! Partizip I نشان‌دهنده عمل در حال انجام است: der Junge, der im Garten spielt", "incorrect": "Partizip I = عمل در حال انجام → der Junge, der im Garten spielt" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "«das von Mama gekochte Essen» معادل کدام جمله موصولی است؟",
+      "options": ["das Essen, das Mama kocht", "das Essen, das Mama kochen wird", "das Essen, das von Mama gekocht wurde", "das Essen, das Mama kochend ist"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! Partizip II نشان‌دهنده عمل تمام شده است: das Essen, das von Mama gekocht wurde", "incorrect": "Partizip II = عمل تمام شده → das Essen, das von Mama gekocht wurde" }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "کودک گریان به مادرش نگاه می‌کند.",
+      "sentenceTemplate": "Das {0} Kind schaut seine Mutter an.",
+      "options": ["weinende", "geweinte", "weinen", "weinenden"],
+      "correctAnswers": [0],
+      "correctTranslation": { "de": "Das weinende Kind schaut seine Mutter an.", "fa": "کودک گریان به مادرش نگاه می‌کند." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "من کتاب خوانده شده را پس می‌دهم.",
+      "sentenceTemplate": "Ich gebe das {0} Buch zurück.",
+      "options": ["lesende", "gelesene", "lesen", "gelesenen"],
+      "correctAnswers": [1],
+      "correctTranslation": { "de": "Ich gebe das gelesene Buch zurück.", "fa": "من کتاب خوانده شده را پس می‌دهم." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در کتابخانه",
+      "scene": {
+        "location": "library",
+        "description": { "de": "In der Bibliothek", "fa": "در کتابخانه" }
+      },
+      "lines": [
+        { "speaker": "Eli", "text": { "de": "Siehst du den am Fenster sitzenden Mann?", "fa": "مردی که کنار پنجره نشسته را می‌بینی؟" }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Ja, er liest ein gerade erschienenes Buch.", "fa": "بله، او کتابی که تازه منتشر شده را می‌خواند." }, "mood": "neutral" },
+        { "speaker": "Eli", "text": { "de": "Die neben ihm liegenden Bücher sind alle ausgeliehen.", "fa": "کتاب‌هایی که کنارش هستند همه امانت گرفته شده‌اند." }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Er muss ein fleißig studierender Student sein!", "fa": "او باید یک دانشجوی سخت‌کوش باشد!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "مرد کجا نشسته؟", "options": ["کنار در", "کنار پنجره", "وسط کتابخانه"], "correctIndex": 1, "explanation": "الی گفت: den am Fenster sitzenden Mann" },
+        { "question": "کتاب‌های کنار مرد چطور هستند؟", "options": ["جدید", "امانت گرفته شده", "قدیمی"], "correctIndex": 1, "explanation": "الی گفت: Die neben ihm liegenden Bücher sind alle ausgeliehen" }
+      ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "Partizip I با ge- شروع می‌شود.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! Partizip I با Infinitiv + d ساخته می‌شود (spielend). Partizip II با ge- شروع می‌شود (gespielt)." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "صفات فعلی مثل صفت‌های عادی پایانه می‌گیرند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! صفات فعلی دقیقاً مثل صفت‌های عادی صرف می‌شوند: der schlafende Hund, den schlafenden Hund" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "صفات فعلی گسترده بیشتر در مکالمه روزمره استفاده می‌شوند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! صفات فعلی گسترده بیشتر در نوشتار رسمی، روزنامه‌ها و متون علمی استفاده می‌شوند. در مکالمه از جمله موصولی استفاده می‌شود." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: خبر روزنامه",
+      "passage": {
+        "de": "Der gestern Abend im Stadtpark gefundene Hund wurde heute seinem überglücklichen Besitzer zurückgegeben. Der drei Tage lang vermisste Vierbeiner war in gutem Zustand. Die den Hund findenden Spaziergänger brachten ihn zur Polizei. Der dankbare Besitzer bedankte sich bei allen helfenden Personen.",
+        "fa": "سگی که دیشب در پارک شهر پیدا شد امروز به صاحب بسیار خوشحالش برگردانده شد. این چهارپای سه روز گمشده در وضعیت خوبی بود. پیاده‌روهایی که سگ را پیدا کردند او را به پلیس بردند. صاحب سپاسگزار از همه افراد کمک‌کننده تشکر کرد."
+      },
+      "questions": [
+        { "question": "سگ کجا پیدا شد؟", "options": ["در خیابان", "در پارک شهر", "در خانه"], "correctIndex": 1, "explanation": "متن گفت: der im Stadtpark gefundene Hund" },
+        { "question": "سگ چند روز گم بود؟", "options": ["یک روز", "دو روز", "سه روز"], "correctIndex": 2, "explanation": "متن گفت: Der drei Tage lang vermisste Vierbeiner" },
+        { "question": "چه کسی سگ را به پلیس برد؟", "options": ["صاحب", "پیاده‌روها", "همسایه‌ها"], "correctIndex": 1, "explanation": "متن گفت: Die den Hund findenden Spaziergänger brachten ihn zur Polizei" },
+        { "question": "صاحب از چه کسانی تشکر کرد؟", "options": ["پلیس", "افراد کمک‌کننده", "دامپزشک"], "correctIndex": 1, "explanation": "متن گفت: bedankte sich bei allen helfenden Personen" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "Partizip I یا Partizip II؟",
+      "sentence": "Die {0} Tür ist gefährlich. (öffnen - در حال باز شدن)",
+      "options": ["öffnende", "geöffnete", "öffnen", "geöffnet"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "عمل در حال انجام → Partizip I: die sich öffnende Tür (دری که دارد باز می‌شود)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "Partizip I یا Partizip II؟",
+      "sentence": "Ich esse das frisch {0} Brot. (backen - تازه پخته شده)",
+      "options": ["backende", "gebackene", "backen", "gebacken"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "عمل تمام شده → Partizip II: das frisch gebackene Brot (نانی که تازه پخته شده)" }
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Ein Tag im Zoo", "fa": "یک روز در باغ وحش" },
+      "characters": ["Eli", "Tom"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Eli und Tom besuchen den neu eröffneten Zoo.", "fa": "الی و تام از باغ وحش تازه افتتاح شده دیدن می‌کنند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Eli",
+          "text": { "de": "Sieh mal, die schlafenden Löwen!", "fa": "ببین، شیرهای در حال خواب!" },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "شیرها چه کار می‌کنند؟",
+          "options": ["می‌دوند", "می‌خوابند", "غذا می‌خورند"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: die schlafenden Löwen (شیرهای در حال خواب)"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Tom",
+          "text": { "de": "Und dort die im Wasser spielenden Pinguine!", "fa": "و آنجا پنگوئن‌هایی که در آب بازی می‌کنند!" },
+          "mood": "happy"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Sie kaufen das gerade frisch gepresste Orangensaft.", "fa": "آن‌ها آب پرتقال تازه فشرده شده را می‌خرند." }
+        },
+        {
+          "type": "question",
+          "question": "آب پرتقال چطور است؟",
+          "options": ["قدیمی", "تازه فشرده شده", "سرد"],
+          "correctIndex": 1,
+          "explanation": "متن گفت: das gerade frisch gepresste Orangensaft"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Eli",
+          "text": { "de": "Ein toll verbrachter Tag!", "fa": "یک روز عالی سپری شده!" },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "روز چطور بود؟",
+          "options": ["خسته‌کننده", "عالی", "بد"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: Ein toll verbrachter Tag (یک روز عالی سپری شده)"
+        }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["bellenden Hunde", "Die laut", "wecken die Nachbarn."],
+      "correctOrder": [1, 0, 2],
+      "correctSentence": { "de": "Die laut bellenden Hunde wecken die Nachbarn.", "fa": "سگ‌هایی که بلند پارس می‌کنند همسایه‌ها را بیدار می‌کنند." }
+    },
+    {
+      "type": "translation",
+      "id": "tr3",
+      "sourceText": "مردی که کنار پنجره نشسته کتاب می‌خواند.",
+      "sentenceTemplate": "Der am Fenster {0} Mann liest ein Buch.",
+      "options": ["sitzende", "gesessene", "sitzen", "sitzenden"],
+      "correctAnswers": [0],
+      "correctTranslation": { "de": "Der am Fenster sitzende Mann liest ein Buch.", "fa": "مردی که کنار پنجره نشسته کتاب می‌خواند." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f7",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die von meiner Oma {0} Suppe schmeckt am besten.",
+      "options": ["kochende", "gekochte", "kochen", "gekocht"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "سوپ قبلاً پخته شده → Partizip II: die gekochte Suppe" }
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Der schlafende Hund träumt.",
+      "translation": "سگ در حال خواب خواب می‌بیند."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Das gekochte Essen ist lecker.",
+      "translation": "غذای پخته شده خوشمزه است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Die im Park spielenden Kinder sind laut.",
+      "translation": "کودکانی که در پارک بازی می‌کنند پر سر و صدا هستند."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت نهایی!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "schlafend", "options": ["Partizip I", "Partizip II"], "correctAnswerIndex": 0 },
+        { "question": "gekocht", "options": ["Partizip I", "Partizip II"], "correctAnswerIndex": 1 },
+        { "question": "der weinende Mann", "options": ["مرد گریان", "مرد خندان"], "correctAnswerIndex": 0 },
+        { "question": "das geschriebene Buch", "options": ["کتاب نوشته شده", "کتاب در حال نوشتن"], "correctAnswerIndex": 0 },
+        { "question": "spielend", "options": ["Partizip I", "Partizip II"], "correctAnswerIndex": 0 },
+        { "question": "geöffnet", "options": ["Partizip I", "Partizip II"], "correctAnswerIndex": 1 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "schlafend", "fa": "در حال خواب (P1)" },
+        { "de": "geschlafen", "fa": "خوابیده (P2)" },
+        { "de": "kochend", "fa": "در حال پختن (P1)" },
+        { "de": "gekocht", "fa": "پخته شده (P2)" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی صفات فعلی",
+      "instruction": "صفات فعلی را در جدول پیدا کنید",
+      "targetWords": ["schlafend", "weinend", "gekocht", "geschrieben", "spielend", "geöffnet"],
+      "gridSize": { "rows": 8, "cols": 8 },
+      "timeLimit": 90
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "Partizip I", "fa": "صفت فعلی ___ ?", "options": ["اول (عمل در حال انجام)", "دوم (عمل تمام شده)", "سوم", "چهارم"], "correctIndex": 0 },
+        { "de": "Partizip II", "fa": "صفت فعلی ___ ?", "options": ["اول (عمل در حال انجام)", "دوم (عمل تمام شده)", "سوم", "چهارم"], "correctIndex": 1 },
+        { "de": "erweitert", "fa": "___", "options": ["ساده", "گسترده", "کوتاه", "بلند"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp2",
+      "title": "تبریک! 🎉",
+      "message": "شما بخش صفات فعلی (Partizipien als Adjektive) را کامل کردید!",
+      "keyPoints": [
+        "Partizip I = Infinitiv + d (عمل در حال انجام): spielend, schlafend",
+        "Partizip II = ge- + ریشه + t/en (عمل تمام شده): gespielt, geschlafen",
+        "صفات فعلی پایانه صفت می‌گیرند: der schlafende Hund, das gekochte Essen",
+        "صفات فعلی گسترده = جمله موصولی کوتاه شده",
+        "ترتیب گسترده: حرف تعریف + گسترش + Partizip + اسم",
+        "در نوشتار رسمی از صفات فعلی گسترده استفاده می‌شود"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "das Partizip", "fa": "صفت فعلی" } },
+        { "word": { "de": "die Endung", "fa": "پایانه" } },
+        { "word": { "de": "erweitert", "fa": "گسترده" } },
+        { "word": { "de": "verkürzt", "fa": "کوتاه‌شده" } },
+        { "word": { "de": "der Relativsatz", "fa": "جمله موصولی" } },
+        { "word": { "de": "gleichzeitig", "fa": "همزمان" } }
+      ]
+    }
+  ]
+}
