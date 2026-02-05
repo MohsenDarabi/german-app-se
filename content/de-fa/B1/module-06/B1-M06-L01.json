@@ -1,0 +1,511 @@
+{
+  "id": "B1-M06-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Konjunktiv II Vergangenheit: hätte + Partizip II", "fa": "کنیونکتیو ۲ گذشته: hätte + صفت مفعولی" },
+  "description": "یاد بگیرید چگونه با hätte و صفت مفعولی درباره کارهایی که می‌توانستند اتفاق بیفتند ولی نیفتادند صحبت کنید",
+  "level": "B1",
+  "module": 6,
+  "lessonNumber": 1,
+  "totalSteps": 45,
+  "estimatedMinutes": 25,
+  "vocabulary": [
+    { "de": "die Vergangenheit", "fa": "گذشته", "grammar": { "pos": "noun", "gender": "f", "plural": "die Vergangenheiten" } },
+    { "de": "irreal", "fa": "غیرواقعی", "grammar": { "pos": "adjective" } },
+    { "de": "die Bedingung", "fa": "شرط", "grammar": { "pos": "noun", "gender": "f", "plural": "die Bedingungen" } },
+    { "de": "bedauern", "fa": "متأسف بودن/افسوس خوردن", "grammar": { "pos": "verb", "conjugation": "regular" } },
+    { "de": "verpassen", "fa": "از دست دادن", "grammar": { "pos": "verb", "conjugation": "regular" } },
+    { "de": "die Gelegenheit", "fa": "فرصت", "grammar": { "pos": "noun", "gender": "f", "plural": "die Gelegenheiten" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "کنیونکتیو ۲ گذشته با hätte",
+      "content": "**Konjunktiv II Vergangenheit با hätte**\n\nوقتی می‌خواهیم درباره کاری که **می‌توانست اتفاق بیفتد ولی نیفتاد** صحبت کنیم، از این ساختار استفاده می‌کنیم.\n\n**ساختار:**\n```\nhätte + Partizip II\n```\n\n**معنی:** کاری که انجام نشد (اما ای کاش انجام می‌شد)\n\n**مقایسه با انگلیسی:** would have done\n\n**مثال:**\n- Ich **hätte** das **gemacht**. (من این کار را می‌کردم.)\n- Er **hätte** mehr **gelernt**. (او بیشتر درس می‌خواند.)\n\n**نکته مهم:** این ساختار برای افعالی استفاده می‌شود که در Perfekt با haben می‌آیند.",
+      "examples": [
+        { "de": "Ich hätte dir geholfen.", "fa": "من بهت کمک می‌کردم. (اما نکردم)" },
+        { "de": "Sie hätte das Buch gelesen.", "fa": "او کتاب را می‌خواند. (اما نخواند)" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "die Vergangenheit", "fa": "گذشته" },
+      "example": { "text": { "de": "In der Vergangenheit hätte ich vieles anders gemacht.", "fa": "در گذشته خیلی چیزها را متفاوت انجام می‌دادم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Vergangenheit",
+      "translation": "گذشته",
+      "syllables": ["Ver", "gan", "gen", "heit"],
+      "distractors": ["Vor", "gon", "kan", "hait"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "irreal", "fa": "غیرواقعی" },
+      "example": { "text": { "de": "Konjunktiv II drückt irreale Situationen aus.", "fa": "کنیونکتیو ۲ موقعیت‌های غیرواقعی را بیان می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "irreal",
+      "translation": "غیرواقعی",
+      "syllables": ["ir", "re", "al"],
+      "distractors": ["ar", "ra", "ol", "ul"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s4",
+      "title": "صرف hätte",
+      "content": "**صرف hätte (کنیونکتیو ۲ از haben):**\n\n| ضمیر | hätte |\n|------|-------|\n| ich | hätte |\n| du | hättest |\n| er/sie/es | hätte |\n| wir | hätten |\n| ihr | hättet |\n| sie/Sie | hätten |\n\n**نکته:** hätte شکل کنیونکتیو ۲ فعل haben است.\n\n**فرق با Perfekt:**\n- Perfekt: Ich **habe** gemacht.\n- Konjunktiv II: Ich **hätte** gemacht.\n\n**ترجمه:**\n- Perfekt: من انجام دادم (واقعی)\n- Konjunktiv II: من انجام می‌دادم (غیرواقعی)",
+      "examples": [
+        { "de": "Du hättest anrufen sollen.", "fa": "تو باید زنگ می‌زدی." },
+        { "de": "Wir hätten das früher gewusst.", "fa": "ما این را زودتر می‌فهمیدیم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "die Bedingung", "fa": "شرط" },
+      "example": { "text": { "de": "Unter einer Bedingung hätte ich zugesagt.", "fa": "تحت یک شرط قبول می‌کردم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Bedingung",
+      "translation": "شرط",
+      "syllables": ["Be", "din", "gung"],
+      "distractors": ["Ba", "dan", "gang", "kung"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله بیان‌کننده یک موقعیت غیرواقعی در گذشته است؟",
+      "options": ["Ich habe das gemacht.", "Ich hätte das gemacht.", "Ich mache das.", "Ich werde das machen."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! hätte + Partizip II موقعیت غیرواقعی در گذشته را بیان می‌کند.", "incorrect": "hätte + Partizip II موقعیت غیرواقعی در گذشته را بیان می‌کند: Ich hätte das gemacht." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "صرف hätte برای wir چیست؟",
+      "options": ["hätte", "hättest", "hätten", "hättet"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! wir hätten درست است.", "incorrect": "صرف درست: wir hätten" }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "bedauern", "fa": "متأسف بودن/افسوس خوردن" },
+      "example": { "text": { "de": "Ich bedauere, dass ich das nicht gemacht hätte.", "fa": "متأسفم که این کار را نکردم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "bedauern",
+      "translation": "متأسف بودن",
+      "syllables": ["be", "dau", "ern"],
+      "distractors": ["ba", "deu", "orn", "arn"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "شکل درست hätte را انتخاب کنید",
+      "sentence": "Ich {0} dir geholfen, aber ich hatte keine Zeit.",
+      "options": ["habe", "hätte", "hatte", "werde"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "برای بیان موقعیت غیرواقعی در گذشته از hätte استفاده می‌کنیم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "شکل درست hätte را انتخاب کنید",
+      "sentence": "Du {0} früher aufstehen sollen.",
+      "options": ["hast", "hattest", "hättest", "wirst"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "du hättest: شکل کنیونکتیو ۲ برای du" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "کاربردهای hätte + Partizip II",
+      "content": "**کاربردهای اصلی:**\n\n**۱. بیان پشیمانی:**\n- Ich hätte das nicht gesagt.\n- (ای کاش آن را نگفته بودم.)\n\n**۲. جملات شرطی غیرواقعی:**\n- Wenn ich Zeit gehabt hätte, hätte ich geholfen.\n- (اگر وقت داشتم، کمک می‌کردم.)\n\n**۳. بیان فرصت از دست رفته:**\n- Ich hätte die Gelegenheit nutzen sollen.\n- (باید از فرصت استفاده می‌کردم.)\n\n**۴. انتقاد مؤدبانه:**\n- Du hättest mich fragen können.\n- (می‌توانستی از من بپرسی.)\n\n**نکته:** در جمله شرطی، hätte هم در بخش شرط و هم در بخش نتیجه می‌آید.",
+      "examples": [
+        { "de": "Wenn ich das gewusst hätte, hätte ich anders gehandelt.", "fa": "اگر این را می‌دانستم، متفاوت عمل می‌کردم." },
+        { "de": "Ich hätte das Angebot annehmen sollen.", "fa": "باید پیشنهاد را قبول می‌کردم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "verpassen", "fa": "از دست دادن" },
+      "example": { "text": { "de": "Ich hätte den Zug fast verpasst.", "fa": "تقریباً قطار را از دست می‌دادم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "verpassen",
+      "translation": "از دست دادن",
+      "syllables": ["ver", "pas", "sen"],
+      "distractors": ["vor", "pis", "son", "van"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "شکل درست hätte را انتخاب کنید",
+      "sentence": "Wir {0} das Spiel gewonnen, wenn wir besser gespielt hätten.",
+      "options": ["haben", "hatten", "hätten", "werden"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "wir hätten: شکل کنیونکتیو ۲ برای wir" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "شکل درست hätte را انتخاب کنید",
+      "sentence": "Er {0} mehr lernen sollen.",
+      "options": ["hat", "hatte", "hätte", "wird"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "er hätte: شکل کنیونکتیو ۲ برای er" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "پشیمانی از فرصت از دست رفته",
+      "scene": {
+        "location": "cafe",
+        "description": { "de": "Zwei Freunde im Café", "fa": "دو دوست در کافه" }
+      },
+      "lines": [
+        { "speaker": "Maria", "text": { "de": "Du siehst traurig aus. Was ist los?", "fa": "ناراحت به نظر می‌رسی. چی شده؟" }, "mood": "confused" },
+        { "speaker": "Thomas", "text": { "de": "Ich hätte das Jobangebot annehmen sollen.", "fa": "باید پیشنهاد کار را قبول می‌کردم." }, "mood": "sad" },
+        { "speaker": "Maria", "text": { "de": "Welches Angebot meinst du?", "fa": "منظورت کدام پیشنهاد است؟" }, "mood": "neutral" },
+        { "speaker": "Thomas", "text": { "de": "Die Stelle in München. Wenn ich sie angenommen hätte, hätte ich jetzt einen tollen Job.", "fa": "موقعیت شغلی در مونیخ. اگر قبول کرده بودم، الان یک کار عالی داشتم." }, "mood": "sad" },
+        { "speaker": "Maria", "text": { "de": "Du hättest es nicht wissen können. Mach dir keine Vorwürfe.", "fa": "نمی‌توانستی بدانی. خودت را سرزنش نکن." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "توماس از چه چیزی پشیمان است؟", "options": ["از قبول نکردن پیشنهاد کار", "از رفتن به مونیخ", "از دیدن ماریا"], "correctIndex": 0, "explanation": "توماس گفت: Ich hätte das Jobangebot annehmen sollen" },
+        { "question": "ماریا به توماس چه گفت؟", "options": ["باید زودتر تصمیم می‌گرفتی", "خودت را سرزنش نکن", "فوراً برو مونیخ"], "correctIndex": 1, "explanation": "ماریا گفت: Mach dir keine Vorwürfe" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "die Gelegenheit", "fa": "فرصت" },
+      "example": { "text": { "de": "Ich hätte die Gelegenheit nutzen sollen.", "fa": "باید از فرصت استفاده می‌کردم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Gelegenheit",
+      "translation": "فرصت",
+      "syllables": ["Ge", "le", "gen", "heit"],
+      "distractors": ["Ga", "la", "gan", "hait"]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["hätte", "gesagt", "das", "Ich", "nicht"],
+      "correctOrder": [3, 0, 2, 4, 1],
+      "correctSentence": { "de": "Ich hätte das nicht gesagt.", "fa": "من این را نمی‌گفتم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["mehr", "Du", "hättest", "sollen", "lernen"],
+      "correctOrder": [1, 2, 4, 0, 3],
+      "correctSentence": { "de": "Du hättest mehr lernen sollen.", "fa": "تو باید بیشتر درس می‌خواندی." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["geholfen", "Wir", "hätten", "dir"],
+      "correctOrder": [1, 2, 3, 0],
+      "correctSentence": { "de": "Wir hätten dir geholfen.", "fa": "ما بهت کمک می‌کردیم." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "ساختار hätte + Partizip II برای بیان موقعیت‌های غیرواقعی در گذشته استفاده می‌شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! این ساختار نشان می‌دهد کاری که می‌توانست اتفاق بیفتد ولی نیفتاد." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "جمله Ich habe das gemacht یک موقعیت غیرواقعی در گذشته را بیان می‌کند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! habe نشان‌دهنده Perfekt است (واقعی). برای غیرواقعی باید hätte باشد." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "صرف hätte برای ich و er/sie/es یکسان است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! هر دو ich hätte و er/sie/es hätte هستند." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "شکل درست hätte را انتخاب کنید",
+      "sentence": "Ihr {0} früher kommen können.",
+      "options": ["habt", "hattet", "hättet", "werdet"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "ihr hättet: شکل کنیونکتیو ۲ برای ihr" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "شکل درست hätte را انتخاب کنید",
+      "sentence": "Sie {0} das besser machen sollen. (formal)",
+      "options": ["haben", "hatten", "hätten", "werden"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "Sie hätten: شکل کنیونکتیو ۲ برای Sie (رسمی)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در مصاحبه کاری",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Nach einem Vorstellungsgespräch", "fa": "بعد از یک مصاحبه کاری" }
+      },
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Wie war das Vorstellungsgespräch?", "fa": "مصاحبه چطور بود؟" }, "mood": "neutral" },
+        { "speaker": "Stefan", "text": { "de": "Nicht so gut. Ich hätte mich besser vorbereiten sollen.", "fa": "خیلی خوب نبود. باید بهتر آماده می‌شدم." }, "mood": "sad" },
+        { "speaker": "Lisa", "text": { "de": "Was ist passiert?", "fa": "چی شد؟" }, "mood": "confused" },
+        { "speaker": "Stefan", "text": { "de": "Ich hätte mehr über die Firma recherchiert haben sollen. Die Fragen haben mich überrascht.", "fa": "باید بیشتر درباره شرکت تحقیق می‌کردم. سؤالات غافلگیرم کردند." }, "mood": "sad" },
+        { "speaker": "Lisa", "text": { "de": "Beim nächsten Mal wirst du es besser machen!", "fa": "دفعه بعد بهتر عمل خواهی کرد!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "استفان از چه چیزی پشیمان است؟", "options": ["از رفتن به مصاحبه", "از آماده نشدن کافی", "از پرسیدن سؤال"], "correctIndex": 1, "explanation": "استفان گفت: Ich hätte mich besser vorbereiten sollen" },
+        { "question": "چه چیزی استفان را غافلگیر کرد؟", "options": ["مکان مصاحبه", "سؤالات", "حقوق"], "correctIndex": 1, "explanation": "استفان گفت: Die Fragen haben mich überrascht" }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "جمله‌های آلمانی را با ترجمه فارسی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Ich hätte das gemacht." },
+        { "id": "i2", "text": "Du hättest fragen sollen." },
+        { "id": "i3", "text": "Wir hätten gewonnen." },
+        { "id": "i4", "text": "Sie hätte geholfen." }
+      ],
+      "matches": [
+        { "id": "m1", "text": "من این کار را می‌کردم." },
+        { "id": "m2", "text": "تو باید می‌پرسیدی." },
+        { "id": "m3", "text": "ما برنده می‌شدیم." },
+        { "id": "m4", "text": "او کمک می‌کرد." }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "من باید زودتر می‌آمدم.",
+      "sentenceTemplate": "Ich {0} früher kommen {1}.",
+      "options": ["hätte", "sollen", "habe", "können"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Ich hätte früher kommen sollen.", "fa": "من باید زودتر می‌آمدم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "اگر وقت داشتم، کمک می‌کردم.",
+      "sentenceTemplate": "Wenn ich Zeit gehabt hätte, {0} ich {1}.",
+      "options": ["hätte", "geholfen", "habe", "helfen"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Wenn ich Zeit gehabt hätte, hätte ich geholfen.", "fa": "اگر وقت داشتم، کمک می‌کردم." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: پشیمانی‌ها",
+      "passage": {
+        "de": "Letzte Woche hatte ich eine wichtige Prüfung. Leider habe ich sie nicht bestanden. Jetzt denke ich: Ich hätte mehr lernen sollen. Ich hätte früher mit dem Lernen anfangen sollen. Wenn ich weniger Zeit mit Spielen verbracht hätte, hätte ich die Prüfung bestanden. Mein Freund hat mir gesagt: Du hättest mich um Hilfe bitten können. Er hat recht. Beim nächsten Mal werde ich es anders machen.",
+        "fa": "هفته گذشته یک امتحان مهم داشتم. متأسفانه قبول نشدم. حالا فکر می‌کنم: باید بیشتر درس می‌خواندم. باید زودتر شروع به خواندن می‌کردم. اگر وقت کمتری را صرف بازی کرده بودم، امتحان را قبول می‌شدم. دوستم به من گفت: می‌توانستی از من کمک بخواهی. او حق دارد. دفعه بعد متفاوت عمل خواهم کرد."
+      },
+      "questions": [
+        { "question": "گوینده چه چیزی را پشیمان است؟", "options": ["رفتن به امتحان", "کم درس خواندن", "کمک خواستن از دوست"], "correctIndex": 1, "explanation": "گوینده گفت: Ich hätte mehr lernen sollen" },
+        { "question": "دوست گوینده چه گفت؟", "options": ["امتحان سخت بود", "می‌توانستی از من کمک بخواهی", "دفعه بعد موفق می‌شوی"], "correctIndex": 1, "explanation": "دوست گفت: Du hättest mich um Hilfe bitten können" },
+        { "question": "گوینده وقتش را چگونه گذرانده بود؟", "options": ["با کار کردن", "با بازی کردن", "با ورزش کردن"], "correctIndex": 1, "explanation": "گوینده گفت: Wenn ich weniger Zeit mit Spielen verbracht hätte" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die verpasste Gelegenheit", "fa": "فرصت از دست رفته" },
+      "characters": ["Anna", "Ben"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Anna denkt an ihre Vergangenheit und spricht mit Ben.", "fa": "آنا به گذشته‌اش فکر می‌کند و با بن صحبت می‌کند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Weißt du, ich bereue etwas.", "fa": "می‌دانی، من از یک چیز پشیمانم." },
+          "mood": "sad"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Ben",
+          "text": { "de": "Was denn?", "fa": "از چی؟" },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Vor zwei Jahren hätte ich nach Japan reisen können. Aber ich hatte Angst.", "fa": "دو سال پیش می‌توانستم به ژاپن سفر کنم. ولی ترسیدم." },
+          "mood": "sad"
+        },
+        {
+          "type": "question",
+          "question": "آنا از چه چیزی پشیمان است؟",
+          "options": ["از رفتن به ژاپن", "از نرفتن به ژاپن", "از صحبت با بن"],
+          "correctIndex": 1,
+          "explanation": "آنا گفت که می‌توانست برود ولی نرفت: hätte ich reisen können"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Ben",
+          "text": { "de": "Das verstehe ich. Aber du hättest es nicht wissen können, wie es gewesen wäre.", "fa": "این را درک می‌کنم. ولی نمی‌توانستی بدانی چطور می‌شد." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Du hast recht. Wenn ich die Chance nochmal hätte, würde ich es tun.", "fa": "حق با توست. اگر دوباره فرصت داشتم، این کار را می‌کردم." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "بن به آنا چه گفت؟",
+          "options": ["باید می‌رفتی", "نمی‌توانستی نتیجه را بدانی", "دیگر فرصت نداری"],
+          "correctIndex": 1,
+          "explanation": "بن گفت: du hättest es nicht wissen können"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Ben",
+          "text": { "de": "Vielleicht bekommst du noch eine Gelegenheit!", "fa": "شاید هنوز یک فرصت پیش بیاید!" },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "آنا اگر دوباره فرصت داشت چه می‌کرد؟",
+          "options": ["باز هم نمی‌رفت", "به ژاپن می‌رفت", "با بن مشورت می‌کرد"],
+          "correctIndex": 1,
+          "explanation": "آنا گفت: würde ich es tun"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع",
+      "instruction": "صرف درست hätte را انتخاب کنید",
+      "questions": [
+        { "prompt": "ich ___", "left": "hätte", "right": "hättest", "correctSide": "left" },
+        { "prompt": "du ___", "left": "hätte", "right": "hättest", "correctSide": "right" },
+        { "prompt": "er ___", "left": "hätte", "right": "hätten", "correctSide": "left" },
+        { "prompt": "wir ___", "left": "hättet", "right": "hätten", "correctSide": "right" },
+        { "prompt": "ihr ___", "left": "hättet", "right": "hätten", "correctSide": "left" },
+        { "prompt": "sie (plural) ___", "left": "hätte", "right": "hätten", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich hätte das nicht gesagt.",
+      "translation": "من این را نمی‌گفتم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Du hättest früher kommen sollen.",
+      "translation": "تو باید زودتر می‌آمدی."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Wir hätten die Gelegenheit nutzen sollen.",
+      "translation": "ما باید از فرصت استفاده می‌کردیم."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "ich hätte به فارسی:", "options": ["من داشتم", "من می‌داشتم (غیرواقعی)"], "correctAnswerIndex": 1 },
+        { "question": "du hättest به فارسی:", "options": ["تو داشتی", "تو می‌داشتی (غیرواقعی)"], "correctAnswerIndex": 1 },
+        { "question": "hätte + Partizip II نشان‌دهنده:", "options": ["گذشته واقعی", "گذشته غیرواقعی"], "correctAnswerIndex": 1 },
+        { "question": "Ich hätte geholfen یعنی:", "options": ["من کمک کردم", "من کمک می‌کردم (ولی نکردم)"], "correctAnswerIndex": 1 },
+        { "question": "کدام پشیمانی را نشان می‌دهد؟", "options": ["Ich habe gelernt", "Ich hätte gelernt"], "correctAnswerIndex": 1 },
+        { "question": "wir hätten gemacht یعنی:", "options": ["ما انجام دادیم", "ما انجام می‌دادیم (ولی ندادیم)"], "correctAnswerIndex": 1 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "ich hätte", "fa": "من می‌داشتم" },
+        { "de": "du hättest", "fa": "تو می‌داشتی" },
+        { "de": "wir hätten", "fa": "ما می‌داشتیم" },
+        { "de": "ihr hättet", "fa": "شما می‌داشتید" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات مربوط به این درس را پیدا کنید",
+      "targetWords": ["hätte", "hättest", "hätten", "hättet", "irreal", "Bedingung"],
+      "gridSize": { "rows": 8, "cols": 8 },
+      "timeLimit": 90
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "die Vergangenheit", "fa": "___", "options": ["آینده", "گذشته", "حال", "همیشه"], "correctIndex": 1 },
+        { "de": "verpassen", "fa": "___", "options": ["گرفتن", "دادن", "از دست دادن", "پیدا کردن"], "correctIndex": 2 },
+        { "de": "die Gelegenheit", "fa": "___", "options": ["مشکل", "سؤال", "فرصت", "جواب"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما کنیونکتیو ۲ گذشته با hätte را یاد گرفتید!",
+      "keyPoints": [
+        "ساختار: hätte + Partizip II",
+        "صرف: ich/er hätte, du hättest, wir/sie hätten, ihr hättet",
+        "کاربرد: موقعیت‌های غیرواقعی در گذشته، پشیمانی، انتقاد مؤدبانه",
+        "جملات شرطی: Wenn ich Zeit gehabt hätte, hätte ich geholfen.",
+        "این ساختار برای افعالی است که در Perfekt با haben می‌آیند"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "die Vergangenheit", "fa": "گذشته" } },
+        { "word": { "de": "irreal", "fa": "غیرواقعی" } },
+        { "word": { "de": "die Bedingung", "fa": "شرط" } },
+        { "word": { "de": "bedauern", "fa": "متأسف بودن/افسوس خوردن" } },
+        { "word": { "de": "verpassen", "fa": "از دست دادن" } },
+        { "word": { "de": "die Gelegenheit", "fa": "فرصت" } }
+      ]
+    }
+  ]
+}

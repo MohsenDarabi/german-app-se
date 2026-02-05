@@ -1190,6 +1190,37 @@ const DE_FA_B1_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/B1/B1-M05-L04"
       }
     ]
+  },
+  {
+    id: "module-06",
+    title: "بخش ۶: کنیونکتیو ۲ گذشته (Konjunktiv II Vergangenheit)",
+    level: "B1",
+    lessons: [
+      {
+        id: "B1-M06-L01",
+        title: "hätte + Partizip II",
+        description: "یاد بگیرید چطور با hätte + Partizip II درباره موقعیت‌های غیرواقعی در گذشته صحبت کنید.",
+        path: "/learn/de-fa/B1/B1-M06-L01"
+      },
+      {
+        id: "B1-M06-L02",
+        title: "wäre + Partizip II",
+        description: "یاد بگیرید چطور با wäre + Partizip II برای فعل‌های حرکتی و تغییر حالت صحبت کنید.",
+        path: "/learn/de-fa/B1/B1-M06-L02"
+      },
+      {
+        id: "B1-M06-L03",
+        title: "Irreale Bedingungssätze - جملات شرطی غیرواقعی",
+        description: "یاد بگیرید چطور جملات شرطی غیرواقعی در گذشته بسازید: با wenn و بدون wenn.",
+        path: "/learn/de-fa/B1/B1-M06-L03"
+      },
+      {
+        id: "B1-M06-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل Konjunktiv II Vergangenheit: hätte/wäre + Partizip II و جملات شرطی.",
+        path: "/learn/de-fa/B1/B1-M06-L04"
+      }
+    ]
   }
 ];
 

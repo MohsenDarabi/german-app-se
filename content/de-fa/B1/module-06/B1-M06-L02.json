@@ -1,0 +1,499 @@
+{
+  "id": "B1-M06-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Konjunktiv II Vergangenheit: wäre + Partizip II", "fa": "کنیونکتیو ۲ گذشته: wäre + صفت مفعولی" },
+  "description": "یادگیری ساختار کنیونکتیو ۲ گذشته با wäre برای افعالی که در Perfekt با sein صرف می‌شوند: افعال حرکتی و تغییر حالت",
+  "level": "B1",
+  "module": 6,
+  "lessonNumber": 2,
+  "totalSteps": 45,
+  "estimatedMinutes": 22,
+  "vocabulary": [
+    { "de": "die Bewegung", "fa": "حرکت", "grammar": { "pos": "noun", "gender": "f", "plural": "die Bewegungen" } },
+    { "de": "der Zustand", "fa": "حالت/وضعیت", "grammar": { "pos": "noun", "gender": "m", "plural": "die Zustände" } },
+    { "de": "geschehen", "fa": "اتفاق افتادن", "grammar": { "pos": "verb", "conjugation": "irregular", "auxiliary": "sein" } },
+    { "de": "ankommen", "fa": "رسیدن", "grammar": { "pos": "verb", "conjugation": "irregular", "separable": true, "auxiliary": "sein" } },
+    { "de": "zurückkehren", "fa": "برگشتن", "grammar": { "pos": "verb", "conjugation": "regular", "separable": true, "auxiliary": "sein" } },
+    { "de": "stattfinden", "fa": "برگزار شدن", "grammar": { "pos": "verb", "conjugation": "irregular", "separable": true, "auxiliary": "haben" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "کنیونکتیو ۲ گذشته با wäre چیست؟",
+      "content": "در این درس یاد می‌گیرید چگونه درباره اتفاقاتی صحبت کنید که در گذشته می‌توانستند رخ دهند ولی نداند.\n\n**ساختار:** wäre + Partizip II (صفت مفعولی)\n\n**چه موقع از wäre استفاده می‌کنیم؟**\nوقتی فعل در زمان Perfekt با **sein** صرف می‌شود:\n- افعال حرکتی: gehen, kommen, fahren, fliegen, laufen\n- افعال تغییر حالت: werden, sterben, einschlafen\n- افعال ماندن: bleiben, sein\n- رویدادها: passieren, geschehen\n\n**مثال:**\nIch bin gekommen. (من آمدم)\nIch wäre gekommen. (می‌آمدم / اگر آمده بودم)",
+      "examples": [
+        { "de": "Ich wäre gekommen.", "fa": "می‌آمدم. / اگر آمده بودم." },
+        { "de": "Er wäre gefahren.", "fa": "او می‌رفت. / اگر رفته بود." },
+        { "de": "Wir wären geblieben.", "fa": "ما می‌ماندیم. / اگر مانده بودیم." }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s2",
+      "title": "صرف wäre در همه ضمایر",
+      "content": "**صرف wäre:**\n\n| ضمیر | wäre |\n|------|------|\n| ich | wäre |\n| du | wär(e)st |\n| er/sie/es | wäre |\n| wir | wären |\n| ihr | wär(e)t |\n| sie/Sie | wären |\n\n**نکته:** در محاوره، e میانی حذف می‌شود: wärst، wärt\n\n**مثال‌های کامل:**\n- Ich **wäre** gegangen. (من می‌رفتم)\n- Du **wärst** geflogen. (تو پرواز می‌کردی)\n- Er **wäre** gestorben. (او می‌مرد)\n- Wir **wären** angekommen. (ما می‌رسیدیم)",
+      "examples": [
+        { "de": "Du wärst rechtzeitig angekommen.", "fa": "تو به موقع می‌رسیدی." },
+        { "de": "Sie wären früher zurückgekehrt.", "fa": "آن‌ها زودتر برمی‌گشتند." }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s3",
+      "title": "قاعده طلایی: haben یا sein؟",
+      "content": "**چگونه بفهمیم با hätte یا wäre؟**\n\nبه زمان Perfekt نگاه کنید:\n\n| Perfekt | Konjunktiv II Vergangenheit |\n|---------|-----------------------------|\n| Ich **habe** gemacht. | Ich **hätte** gemacht. |\n| Ich **bin** gegangen. | Ich **wäre** gegangen. |\n\n**افعال مهم با sein (و wäre):**\n- gehen, kommen, fahren, fliegen, laufen\n- rennen, schwimmen, reisen, wandern\n- bleiben, sein, werden\n- sterben, einschlafen, aufwachen\n- passieren, geschehen, ankommen\n\n**یادآوری:** اکثر افعال با haben هستند. فقط افعال حرکت، تغییر حالت و sein/bleiben/werden با sein می‌آیند.",
+      "examples": [
+        { "de": "Ich habe gearbeitet. = Ich hätte gearbeitet.", "fa": "کار کردم = کار می‌کردم" },
+        { "de": "Ich bin gereist. = Ich wäre gereist.", "fa": "سفر کردم = سفر می‌کردم" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "die Bewegung", "fa": "حرکت" },
+      "example": { "text": { "de": "Die Bewegung der Erde um die Sonne dauert ein Jahr.", "fa": "حرکت زمین به دور خورشید یک سال طول می‌کشد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Bewegung",
+      "translation": "حرکت",
+      "syllables": ["Be", "we", "gung"],
+      "distractors": ["Ba", "wi", "gang"]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "der Zustand", "fa": "حالت/وضعیت" },
+      "example": { "text": { "de": "Der Zustand des Patienten hat sich verbessert.", "fa": "وضعیت بیمار بهتر شده است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Zustand",
+      "translation": "حالت/وضعیت",
+      "syllables": ["Zu", "stand"],
+      "distractors": ["Za", "stund", "stond"]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "geschehen", "fa": "اتفاق افتادن" },
+      "example": { "text": { "de": "Was ist hier geschehen?", "fa": "اینجا چه اتفاقی افتاده است؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "geschehen",
+      "translation": "اتفاق افتادن",
+      "syllables": ["ge", "sche", "hen"],
+      "distractors": ["ga", "scha", "hon"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام فعل در Konjunktiv II Vergangenheit با wäre می‌آید؟",
+      "options": ["machen", "schreiben", "gehen", "lesen"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! gehen فعل حرکتی است و در Perfekt با sein می‌آید.", "incorrect": "gehen یک فعل حرکتی است که در Perfekt با sein صرف می‌شود: Ich bin gegangen، پس Ich wäre gegangen." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "جمله درست کدام است؟",
+      "options": ["Ich hätte gefahren.", "Ich wäre gefahren.", "Ich wäre fahren.", "Ich hätte fahren."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! fahren با sein می‌آید، پس wäre gefahren درست است.", "incorrect": "fahren یک فعل حرکتی است: Ich bin gefahren، پس Ich wäre gefahren." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Wenn ich Zeit gehabt hätte, {0} ich gekommen.",
+      "options": ["hätte", "wäre", "würde", "habe"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "kommen با sein می‌آید: Ich bin gekommen، پس در Konjunktiv II: Ich wäre gekommen." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er {0} schneller gelaufen, wenn er trainiert hätte.",
+      "options": ["hätte", "wäre", "würde", "ist"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "laufen با sein می‌آید: Er ist gelaufen، پس Er wäre gelaufen." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Wir {0} früher angekommen, aber der Zug hatte Verspätung.",
+      "options": ["hätten", "wären", "würden", "sind"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "ankommen با sein می‌آید: Wir sind angekommen، پس Wir wären angekommen." }
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "ankommen", "fa": "رسیدن" },
+      "example": { "text": { "de": "Der Zug ist pünktlich angekommen.", "fa": "قطار به موقع رسید." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "ankommen",
+      "translation": "رسیدن",
+      "syllables": ["an", "kom", "men"],
+      "distractors": ["ab", "kam", "mun"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "zurückkehren", "fa": "برگشتن" },
+      "example": { "text": { "de": "Sie ist nach Hause zurückgekehrt.", "fa": "او به خانه برگشت." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "zurückkehren",
+      "translation": "برگشتن",
+      "syllables": ["zu", "rück", "keh", "ren"],
+      "distractors": ["za", "rack", "kah", "run"]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["gekommen.", "wäre", "Ich", "früher"],
+      "correctOrder": [2, 1, 3, 0],
+      "correctSentence": { "de": "Ich wäre früher gekommen.", "fa": "زودتر می‌آمدم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["geflogen,", "Er wäre", "nach Berlin", "hätte.", "wenn er Geld gehabt"],
+      "correctOrder": [1, 2, 0, 4, 3],
+      "correctSentence": { "de": "Er wäre nach Berlin geflogen, wenn er Geld gehabt hätte.", "fa": "اگر پول داشت، به برلین پرواز می‌کرد." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["geblieben.", "länger", "wären", "Wir"],
+      "correctOrder": [3, 2, 1, 0],
+      "correctSentence": { "de": "Wir wären länger geblieben.", "fa": "ما بیشتر می‌ماندیم." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "فعل bleiben در Konjunktiv II Vergangenheit با hätte می‌آید.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! bleiben با sein می‌آید: Ich bin geblieben، پس Ich wäre geblieben." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "افعال حرکتی مانند gehen, fahren, fliegen در Konjunktiv II Vergangenheit با wäre می‌آیند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! این افعال در Perfekt با sein هستند، پس در Konjunktiv II با wäre می‌آیند." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "جمله Ich wäre geschlafen از نظر گرامری درست است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! schlafen با haben می‌آید: Ich habe geschlafen، پس Ich hätte geschlafen درست است. (ولی einschlafen با sein: Ich bin eingeschlafen)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "سفری که انجام نشد",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Eli und Tom im Büro", "fa": "الی و تام در دفتر کار" }
+      },
+      "lines": [
+        { "speaker": "Eli", "text": { "de": "Schade, dass du nicht nach Italien gefahren bist.", "fa": "حیف که به ایتالیا نرفتی." }, "mood": "sad" },
+        { "speaker": "Tom", "text": { "de": "Ja, ich wäre so gern gefahren! Aber ich musste arbeiten.", "fa": "آره، خیلی دوست داشتم برم! ولی باید کار می‌کردم." }, "mood": "sad" },
+        { "speaker": "Eli", "text": { "de": "Wenn du frei gehabt hättest, wärst du sicher geflogen, oder?", "fa": "اگر آزاد بودی، حتماً پرواز می‌کردی، نه؟" }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Ja, und ich wäre zwei Wochen geblieben.", "fa": "آره، و دو هفته می‌ماندم." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "چرا تام به ایتالیا نرفت؟", "options": ["پول نداشت", "باید کار می‌کرد", "بیمار بود"], "correctIndex": 1, "explanation": "تام گفت: Ich musste arbeiten (باید کار می‌کردم)" },
+        { "question": "تام چند وقت می‌ماند؟", "options": ["یک هفته", "دو هفته", "سه هفته"], "correctIndex": 1, "explanation": "تام گفت: Ich wäre zwei Wochen geblieben" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Wenn das Wetter besser gewesen wäre, {0} wir gewandert.",
+      "options": ["hätten", "wären", "würden", "werden"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "wandern با sein می‌آید: Wir sind gewandert، پس Wir wären gewandert." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sie {0} nicht gestorben, wenn die Ärzte schneller gekommen wären.",
+      "options": ["hätte", "wäre", "würde", "hat"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "sterben با sein می‌آید: Sie ist gestorben، پس Sie wäre gestorben." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ohne den Unfall {0} nichts Schlimmes passiert.",
+      "options": ["hätte", "wäre", "würde", "ist"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "passieren با sein می‌آید: Es ist passiert، پس Es wäre passiert." }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "stattfinden", "fa": "برگزار شدن" },
+      "example": { "text": { "de": "Das Konzert hat gestern stattgefunden.", "fa": "کنسرت دیروز برگزار شد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "stattfinden",
+      "translation": "برگزار شدن",
+      "syllables": ["statt", "fin", "den"],
+      "distractors": ["stad", "fan", "dun"]
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "کنفرانسی که از دست رفت",
+      "scene": {
+        "location": "cafe",
+        "description": { "de": "Im Café nach der Arbeit", "fa": "در کافه بعد از کار" }
+      },
+      "lines": [
+        { "speaker": "Eli", "text": { "de": "Bist du zur Konferenz gegangen?", "fa": "به کنفرانس رفتی؟" }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Nein, leider nicht. Ich wäre gern gekommen, aber mein Zug hatte Verspätung.", "fa": "نه، متأسفانه. دوست داشتم بیام، ولی قطارم تأخیر داشت." }, "mood": "sad" },
+        { "speaker": "Eli", "text": { "de": "Das ist schade! Wenn du geflogen wärst, wärst du pünktlich angekommen.", "fa": "حیف شد! اگر پرواز کرده بودی، به موقع می‌رسیدی." }, "mood": "sad" },
+        { "speaker": "Tom", "text": { "de": "Ja, das stimmt. Beim nächsten Mal werde ich fliegen.", "fa": "آره، درسته. دفعه بعد پرواز می‌کنم." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "چرا تام به کنفرانس نرسید؟", "options": ["بیمار بود", "قطارش تأخیر داشت", "آدرس را گم کرد"], "correctIndex": 1, "explanation": "تام گفت: mein Zug hatte Verspätung (قطارم تأخیر داشت)" },
+        { "question": "الی چه پیشنهادی داد؟", "options": ["با ماشین برود", "پرواز کند", "زودتر برود"], "correctIndex": 1, "explanation": "الی گفت: Wenn du geflogen wärst (اگر پرواز کرده بودی)" }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "جمله‌های Perfekt و Konjunktiv II را جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Ich bin gefahren." },
+        { "id": "i2", "text": "Er ist gekommen." },
+        { "id": "i3", "text": "Wir sind geblieben." },
+        { "id": "i4", "text": "Sie ist gelaufen." }
+      ],
+      "matches": [
+        { "id": "m1", "text": "Ich wäre gefahren." },
+        { "id": "m2", "text": "Er wäre gekommen." },
+        { "id": "m3", "text": "Wir wären geblieben." },
+        { "id": "m4", "text": "Sie wäre gelaufen." }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "اگر زودتر آمده بودم، او را می‌دیدم.",
+      "sentenceTemplate": "Wenn ich früher {0}, hätte ich ihn {1}.",
+      "options": ["gekommen wäre", "gesehen", "kommen würde", "sehen"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Wenn ich früher gekommen wäre, hätte ich ihn gesehen.", "fa": "اگر زودتر آمده بودم، او را می‌دیدم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "ما با هواپیما می‌رفتیم، اگر بلیط ارزان‌تر بود.",
+      "sentenceTemplate": "Wir {0} geflogen, wenn das Ticket {1} gewesen wäre.",
+      "options": ["wären", "billiger", "hätten", "teurer"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Wir wären geflogen, wenn das Ticket billiger gewesen wäre.", "fa": "ما با هواپیما می‌رفتیم، اگر بلیط ارزان‌تر بود." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: سفر ناتمام",
+      "passage": {
+        "de": "Letztes Jahr wollten wir nach Japan reisen. Leider ist mein Vater krank geworden und wir konnten nicht fliegen. Wenn er gesund geblieben wäre, wären wir nach Tokio geflogen. Wir wären zwei Wochen geblieben und hätten viele Sehenswürdigkeiten besucht. Mein Vater wäre sicher gern gekommen, denn er liebt japanisches Essen. Vielleicht reisen wir nächstes Jahr.",
+        "fa": "سال گذشته می‌خواستیم به ژاپن سفر کنیم. متأسفانه پدرم بیمار شد و نتوانستیم پرواز کنیم. اگر او سالم می‌ماند، به توکیو پرواز می‌کردیم. دو هفته می‌ماندیم و از خیلی جاهای دیدنی بازدید می‌کردیم. پدرم حتماً دوست داشت بیاید، چون غذای ژاپنی را دوست دارد. شاید سال آینده سفر کنیم."
+      },
+      "questions": [
+        { "question": "چرا سفر انجام نشد؟", "options": ["پول نداشتند", "پدر بیمار شد", "پرواز کنسل شد"], "correctIndex": 1, "explanation": "متن گفت: mein Vater ist krank geworden" },
+        { "question": "چند وقت می‌ماندند؟", "options": ["یک هفته", "دو هفته", "سه هفته"], "correctIndex": 1, "explanation": "متن گفت: Wir wären zwei Wochen geblieben" },
+        { "question": "پدر چه غذایی دوست دارد؟", "options": ["چینی", "ژاپنی", "ایتالیایی"], "correctIndex": 1, "explanation": "متن گفت: er liebt japanisches Essen" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der verpasste Flug", "fa": "پروازی که از دست رفت" },
+      "characters": ["Eli", "Tom"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Eli wollte ihre Schwester in Paris besuchen.", "fa": "الی می‌خواست خواهرش را در پاریس ببیند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Eli",
+          "text": { "de": "Ich habe meinen Flug verpasst! Ich bin zu spät aufgestanden.", "fa": "پروازم را از دست دادم! دیر بیدار شدم." },
+          "mood": "sad"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Tom",
+          "text": { "de": "Oh nein! Wenn du früher aufgestanden wärst, wärst du rechtzeitig angekommen.", "fa": "وای نه! اگر زودتر بیدار شده بودی، به موقع می‌رسیدی." },
+          "mood": "surprised"
+        },
+        {
+          "type": "question",
+          "question": "چه اتفاقی برای الی افتاد؟",
+          "options": ["پروازش کنسل شد", "پروازش را از دست داد", "بیمار شد"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: Ich habe meinen Flug verpasst"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Eli",
+          "text": { "de": "Ich wäre auch mit dem Zug gefahren, aber es gab keine Tickets mehr.", "fa": "با قطار هم می‌رفتم، ولی بلیط نبود." },
+          "mood": "sad"
+        },
+        {
+          "type": "question",
+          "question": "چرا الی با قطار نرفت؟",
+          "options": ["بلیط گران بود", "بلیط نبود", "قطار تأخیر داشت"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: es gab keine Tickets mehr"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Tom",
+          "text": { "de": "Schade. Deine Schwester wäre bestimmt traurig gewesen.", "fa": "حیف. خواهرت حتماً ناراحت شده." },
+          "mood": "sad"
+        },
+        {
+          "type": "question",
+          "question": "خواهر الی چه احساسی داشت؟",
+          "options": ["خوشحال", "ناراحت", "عصبانی"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: Deine Schwester wäre bestimmt traurig gewesen"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: hätte یا wäre؟",
+      "instruction": "فعل کمکی درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "gehen", "left": "hätte", "right": "wäre", "correctSide": "right" },
+        { "prompt": "machen", "left": "hätte", "right": "wäre", "correctSide": "left" },
+        { "prompt": "kommen", "left": "hätte", "right": "wäre", "correctSide": "right" },
+        { "prompt": "schreiben", "left": "hätte", "right": "wäre", "correctSide": "left" },
+        { "prompt": "bleiben", "left": "hätte", "right": "wäre", "correctSide": "right" },
+        { "prompt": "arbeiten", "left": "hätte", "right": "wäre", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich wäre gern gekommen.",
+      "translation": "دوست داشتم بیایم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Wir wären früher angekommen.",
+      "translation": "ما زودتر می‌رسیدیم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Sie wäre nach Berlin geflogen.",
+      "translation": "او به برلین پرواز می‌کرد."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "gehen با کدام می‌آید؟", "options": ["hätte", "wäre"], "correctAnswerIndex": 1 },
+        { "question": "fahren با کدام می‌آید؟", "options": ["hätte", "wäre"], "correctAnswerIndex": 1 },
+        { "question": "schreiben با کدام می‌آید؟", "options": ["hätte", "wäre"], "correctAnswerIndex": 0 },
+        { "question": "bleiben با کدام می‌آید؟", "options": ["hätte", "wäre"], "correctAnswerIndex": 1 },
+        { "question": "lesen با کدام می‌آید؟", "options": ["hätte", "wäre"], "correctAnswerIndex": 0 },
+        { "question": "sterben با کدام می‌آید؟", "options": ["hätte", "wäre"], "correctAnswerIndex": 1 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "Ich wäre gekommen.", "fa": "می‌آمدم." },
+        { "de": "Er wäre gefahren.", "fa": "می‌رفت." },
+        { "de": "Wir wären geblieben.", "fa": "می‌ماندیم." },
+        { "de": "Sie wäre gelaufen.", "fa": "می‌دوید." }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "افعال حرکتی را پیدا کنید",
+      "targetWords": ["gehen", "kommen", "fahren", "fliegen", "laufen", "bleiben"],
+      "gridSize": { "rows": 8, "cols": 8 },
+      "timeLimit": 90
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "die Bewegung", "fa": "___", "options": ["سکون", "حرکت", "صدا", "نور"], "correctIndex": 1 },
+        { "de": "der Zustand", "fa": "___", "options": ["حرکت", "زمان", "حالت", "مکان"], "correctIndex": 2 },
+        { "de": "zurückkehren", "fa": "___", "options": ["رفتن", "آمدن", "ماندن", "برگشتن"], "correctIndex": 3 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp2",
+      "title": "تبریک! درس کنیونکتیو ۲ گذشته با wäre تمام شد!",
+      "message": "شما یاد گرفتید چگونه درباره اتفاقات گذشته‌ای که نیفتادند صحبت کنید!",
+      "keyPoints": [
+        "ساختار: wäre + Partizip II برای افعالی که با sein می‌آیند",
+        "افعال حرکتی (gehen, kommen, fahren, fliegen, laufen) با wäre",
+        "افعال تغییر حالت (werden, sterben, einschlafen) با wäre",
+        "افعال sein, bleiben با wäre",
+        "قاعده طلایی: اگر در Perfekt با sein است، در Konjunktiv II با wäre است",
+        "صرف wäre: ich wäre, du wärst, er wäre, wir wären, ihr wärt, sie wären"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "die Bewegung", "fa": "حرکت" } },
+        { "word": { "de": "der Zustand", "fa": "حالت/وضعیت" } },
+        { "word": { "de": "geschehen", "fa": "اتفاق افتادن" } },
+        { "word": { "de": "ankommen", "fa": "رسیدن" } },
+        { "word": { "de": "zurückkehren", "fa": "برگشتن" } },
+        { "word": { "de": "stattfinden", "fa": "برگزار شدن" } }
+      ]
+    }
+  ]
+}

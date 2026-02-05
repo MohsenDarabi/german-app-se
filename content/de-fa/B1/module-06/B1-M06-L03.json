@@ -1,0 +1,497 @@
+{
+  "id": "B1-M06-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Irreale Bedingungssätze der Vergangenheit", "fa": "جملات شرطی غیرواقعی در گذشته" },
+  "description": "یاد بگیرید چطور با استفاده از Konjunktiv II در گذشته، درباره شرایط غیرواقعی و نتایج فرضی صحبت کنید",
+  "level": "B1",
+  "module": 6,
+  "lessonNumber": 3,
+  "totalSteps": 45,
+  "estimatedMinutes": 22,
+  "vocabulary": [
+    { "de": "der Bedingungssatz", "fa": "جمله شرطی", "grammar": { "pos": "noun", "gender": "m", "plural": "die Bedingungssätze" } },
+    { "de": "bestehen", "fa": "قبول شدن (در امتحان)", "grammar": { "pos": "verb", "conjugation": "irregular", "präteritum": "bestand", "perfekt": "hat bestanden" } },
+    { "de": "scheitern", "fa": "شکست خوردن", "grammar": { "pos": "verb", "conjugation": "regular", "perfekt": "ist gescheitert" } },
+    { "de": "verhindern", "fa": "جلوگیری کردن", "grammar": { "pos": "verb", "conjugation": "regular", "perfekt": "hat verhindert" } },
+    { "de": "die Folge", "fa": "نتیجه/پیامد", "grammar": { "pos": "noun", "gender": "f", "plural": "die Folgen" } },
+    { "de": "andernfalls", "fa": "در غیر این صورت", "grammar": { "pos": "adverb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "ساختار جملات شرطی غیرواقعی در گذشته",
+      "content": "برای صحبت درباره شرایطی که **در گذشته اتفاق نیفتاد** و نتایج فرضی آن‌ها، از **Konjunktiv II Vergangenheit** استفاده می‌کنیم.\n\n**ساختار اصلی:**\nWenn + ... + Konjunktiv II Vergangenheit, Konjunktiv II Vergangenheit\n\n**Konjunktiv II Vergangenheit:**\n• hätte + Partizip II (برای اکثر فعل‌ها)\n• wäre + Partizip II (برای فعل‌های حرکتی و تغییر حالت)\n\n**در بند wenn:** فعل در **آخر** جمله\n**در بند اصلی:** فعل در **جایگاه اول یا دوم**",
+      "examples": [
+        { "de": "Wenn ich mehr gelernt hätte, hätte ich die Prüfung bestanden.", "fa": "اگر بیشتر درس خوانده بودم، امتحان را قبول می‌شدم." },
+        { "de": "Wenn er gekommen wäre, hätten wir gefeiert.", "fa": "اگر او آمده بود، جشن می‌گرفتیم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "der Bedingungssatz", "fa": "جمله شرطی" },
+      "example": { "text": { "de": "Ein Bedingungssatz hat eine Bedingung und eine Folge.", "fa": "یک جمله شرطی یک شرط و یک نتیجه دارد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Bedingungssatz",
+      "translation": "جمله شرطی",
+      "syllables": ["Be", "din", "gungs", "satz"],
+      "distractors": ["Ba", "dan", "gongs", "setz"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "bestehen", "fa": "قبول شدن (در امتحان)" },
+      "example": { "text": { "de": "Wenn ich mehr gelernt hätte, hätte ich die Prüfung bestanden.", "fa": "اگر بیشتر درس خوانده بودم، امتحان را قبول می‌شدم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "bestehen",
+      "translation": "قبول شدن",
+      "syllables": ["be", "ste", "hen"],
+      "distractors": ["ba", "sta", "han", "hon"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "scheitern", "fa": "شکست خوردن" },
+      "example": { "text": { "de": "Das Projekt wäre gescheitert, wenn wir nicht geholfen hätten.", "fa": "پروژه شکست می‌خورد، اگر ما کمک نکرده بودیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "scheitern",
+      "translation": "شکست خوردن",
+      "syllables": ["schei", "tern"],
+      "distractors": ["schi", "tarn", "torn", "schau"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "برای ساختن Konjunktiv II Vergangenheit با فعل lernen از چه فعل کمکی استفاده می‌کنیم؟",
+      "options": ["wäre", "hätte", "würde", "sei"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! lernen با hätte می‌آید: gelernt hätte", "incorrect": "فعل lernen با hätte می‌آید چون فعل حرکتی نیست." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Wenn ich das gewusst {0}, hätte ich anders gehandelt.",
+      "options": ["hätte", "wäre", "würde", "habe"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "wissen با hätte می‌آید: gewusst hätte" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "جملات شرطی بدون wenn (فعل در جایگاه اول)",
+      "content": "می‌توانیم **wenn** را حذف کنیم. در این حالت، فعل به **جایگاه اول** می‌آید.\n\n**با wenn:**\nWenn ich mehr Zeit gehabt hätte, wäre ich gekommen.\n\n**بدون wenn:**\n**Hätte** ich mehr Zeit gehabt, wäre ich gekommen.\n\n**توجه:**\n• این ساختار رسمی‌تر و ادبی‌تر است\n• فعل کمکی (hätte/wäre) به ابتدای جمله می‌آید\n• Partizip II در آخر بند شرط باقی می‌ماند",
+      "examples": [
+        { "de": "Hätte ich mehr gelernt, hätte ich bestanden.", "fa": "اگر بیشتر درس خوانده بودم، قبول می‌شدم." },
+        { "de": "Wäre er nicht gekommen, hätten wir gewartet.", "fa": "اگر او نیامده بود، ما صبر می‌کردیم." }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "پشیمانی از امتحان",
+      "scene": {
+        "location": "university",
+        "description": { "de": "Nach der Prüfung an der Universität", "fa": "بعد از امتحان در دانشگاه" }
+      },
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Ich habe die Prüfung nicht bestanden.", "fa": "امتحان را قبول نشدم." }, "mood": "sad" },
+        { "speaker": "Tom", "text": { "de": "Das tut mir leid. Was ist passiert?", "fa": "متأسفم. چه اتفاقی افتاد؟" }, "mood": "sad" },
+        { "speaker": "Lisa", "text": { "de": "Wenn ich mehr gelernt hätte, hätte ich bestanden.", "fa": "اگر بیشتر درس خوانده بودم، قبول می‌شدم." }, "mood": "sad" },
+        { "speaker": "Tom", "text": { "de": "Hätte ich von deinen Problemen gewusst, hätte ich dir geholfen.", "fa": "اگر از مشکلاتت می‌دانستم، کمکت می‌کردم." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "چرا لیزا امتحان را قبول نشد؟", "options": ["بیمار بود", "کم درس خوانده بود", "سوالات سخت بود"], "correctIndex": 1, "explanation": "لیزا گفت: Wenn ich mehr gelernt hätte" },
+        { "question": "تام از چه ساختاری استفاده کرد؟", "options": ["با wenn", "بدون wenn", "جمله ساده"], "correctIndex": 1, "explanation": "تام گفت: Hätte ich... gewusst (بدون wenn، فعل اول)" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "verhindern", "fa": "جلوگیری کردن" },
+      "example": { "text": { "de": "Wenn wir schneller reagiert hätten, hätten wir den Unfall verhindert.", "fa": "اگر سریع‌تر واکنش نشان داده بودیم، از تصادف جلوگیری می‌کردیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "verhindern",
+      "translation": "جلوگیری کردن",
+      "syllables": ["ver", "hin", "dern"],
+      "distractors": ["vor", "han", "dorn", "dar"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "die Folge", "fa": "نتیجه/پیامد" },
+      "example": { "text": { "de": "Die Folge wäre schlimm gewesen.", "fa": "نتیجه بد می‌شد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "Folge",
+      "translation": "نتیجه",
+      "syllables": ["Fol", "ge"],
+      "distractors": ["Ful", "ga", "Fal"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله صحیح است؟",
+      "options": [
+        "Wenn ich gekommen wäre, hätte ich dich gesehen.",
+        "Wenn ich gekommen hätte, wäre ich dich gesehen.",
+        "Wenn ich gekommen wäre, wäre ich dich gesehen.",
+        "Wenn ich gekommen hätte, hätte ich dich gesehen."
+      ],
+      "correctAnswerIndex": 0,
+      "feedback": { "correct": "آفرین! kommen با wäre و sehen با hätte می‌آید.", "incorrect": "kommen فعل حرکتی است (wäre)، sehen با hätte می‌آید." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Wenn er früher {0}, hätten wir noch Zeit gehabt.",
+      "options": ["gekommen wäre", "gekommen hätte", "kommen würde", "kam"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "kommen فعل حرکتی است، پس با wäre می‌آید: gekommen wäre" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} ich das vorher gewusst, hätte ich nicht unterschrieben.",
+      "options": ["Hätte", "Wäre", "Wenn", "Hat"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "بدون wenn، فعل کمکی به اول جمله می‌آید: Hätte ich... gewusst" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s8",
+      "title": "ترکیب hätte و wäre در یک جمله",
+      "content": "در یک جمله شرطی می‌توانیم **هم hätte و هم wäre** داشته باشیم. انتخاب بستگی به **نوع فعل** دارد.\n\n**hätte + Partizip II:**\nاکثر فعل‌ها (lernen, arbeiten, sagen, machen, ...)\n\n**wäre + Partizip II:**\nفعل‌های حرکتی: gehen, kommen, fahren, fliegen, ...\nفعل‌های تغییر حالت: werden, sterben, einschlafen, ...\nفعل‌های sein و bleiben\n\n**مثال ترکیبی:**\nWenn ich **gefahren wäre**, hätte ich den Zug **erreicht**.",
+      "examples": [
+        { "de": "Wenn sie nach Berlin geflogen wäre, hätte sie ihren Freund besucht.", "fa": "اگر به برلین پرواز کرده بود، دوستش را دیدن می‌کرد." },
+        { "de": "Wäre ich nicht eingeschlafen, hätte ich den Film gesehen.", "fa": "اگر خوابم نبرده بود، فیلم را می‌دیدم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "andernfalls", "fa": "در غیر این صورت" },
+      "example": { "text": { "de": "Ich musste lernen, andernfalls wäre ich durchgefallen.", "fa": "باید درس می‌خواندم، در غیر این صورت رد می‌شدم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "andernfalls",
+      "translation": "در غیر این صورت",
+      "syllables": ["an", "dern", "falls"],
+      "distractors": ["un", "darn", "fells", "on"]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["die Prüfung bestanden.", "mehr gelernt hätte,", "Wenn ich", "hätte ich"],
+      "correctOrder": [2, 1, 3, 0],
+      "correctSentence": { "de": "Wenn ich mehr gelernt hätte, hätte ich die Prüfung bestanden.", "fa": "اگر بیشتر درس خوانده بودم، امتحان را قبول می‌شدم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["hätte ich dir geholfen.", "Hätte ich", "das gewusst,"],
+      "correctOrder": [1, 2, 0],
+      "correctSentence": { "de": "Hätte ich das gewusst, hätte ich dir geholfen.", "fa": "اگر این را می‌دانستم، کمکت می‌کردم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["hätten wir gefeiert.", "gekommen wäre,", "Wenn er"],
+      "correctOrder": [2, 1, 0],
+      "correctSentence": { "de": "Wenn er gekommen wäre, hätten wir gefeiert.", "fa": "اگر او آمده بود، جشن می‌گرفتیم." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در ساختار بدون wenn، فعل کمکی به جایگاه اول می‌آید.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! مثال: Hätte ich gewusst... به جای Wenn ich gewusst hätte..." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "فعل kommen با hätte می‌آید چون فعل حرکتی است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! فعل‌های حرکتی مثل kommen با wäre می‌آیند: wäre gekommen" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "جمله «Wenn ich Zeit gehabt hätte» درباره گذشته غیرواقعی صحبت می‌کند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! این جمله یعنی من وقت نداشتم و این شرایط واقعی نبود." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "تصادف اتفاق نیفتاد",
+      "scene": {
+        "location": "street",
+        "description": { "de": "Nach einem Beinahe-Unfall", "fa": "بعد از یک تصادف نزدیک" }
+      },
+      "lines": [
+        { "speaker": "Fahrer", "text": { "de": "Das war knapp! Wenn ich nicht gebremst hätte, wäre ein Unfall passiert.", "fa": "نزدیک بود! اگر ترمز نزده بودم، تصادف می‌شد." }, "mood": "surprised" },
+        { "speaker": "Beifahrer", "text": { "de": "Wäre der andere Fahrer langsamer gefahren, hätte es kein Problem gegeben.", "fa": "اگر راننده دیگر آهسته‌تر رانده بود، مشکلی پیش نمی‌آمد." }, "mood": "neutral" },
+        { "speaker": "Fahrer", "text": { "de": "Hätten wir den Unfall nicht verhindert, wären die Folgen schlimm gewesen.", "fa": "اگر از تصادف جلوگیری نکرده بودیم، نتایج بد می‌شد." }, "mood": "neutral" },
+        { "speaker": "Beifahrer", "text": { "de": "Gut, dass du so schnell reagiert hast!", "fa": "خوب شد که اینقدر سریع واکنش نشان دادی!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "چرا تصادف نشد؟", "options": ["راننده ترمز زد", "راننده دیگر ایستاد", "جاده خالی بود"], "correctIndex": 0, "explanation": "راننده گفت: Wenn ich nicht gebremst hätte" },
+        { "question": "در جمله سوم کدام ساختار استفاده شده؟", "options": ["با wenn", "بدون wenn", "جمله ساده"], "correctIndex": 1, "explanation": "Hätten wir... verhindert (بدون wenn، فعل اول)" }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "فعل کمکی درست را با فعل جور کنید",
+      "items": [
+        { "id": "i1", "text": "lernen" },
+        { "id": "i2", "text": "kommen" },
+        { "id": "i3", "text": "fahren" },
+        { "id": "i4", "text": "arbeiten" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "hätte gelernt" },
+        { "id": "m2", "text": "wäre gekommen" },
+        { "id": "m3", "text": "wäre gefahren" },
+        { "id": "m4", "text": "hätte gearbeitet" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "اگر بیشتر تمرین کرده بودم، بهتر می‌شدم.",
+      "sentenceTemplate": "Wenn ich mehr geübt {0}, {1} ich besser geworden.",
+      "options": ["hätte", "wäre"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Wenn ich mehr geübt hätte, wäre ich besser geworden.", "fa": "اگر بیشتر تمرین کرده بودم، بهتر می‌شدم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "اگر او آمده بود، خوشحال می‌شدم.",
+      "sentenceTemplate": "{0} er gekommen, hätte ich mich gefreut.",
+      "options": ["Wäre", "Hätte", "Wenn", "War"],
+      "correctAnswers": [0],
+      "correctTranslation": { "de": "Wäre er gekommen, hätte ich mich gefreut.", "fa": "اگر او آمده بود، خوشحال می‌شدم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Wenn sie rechtzeitig {0}, hätte sie den Zug erreicht.",
+      "options": ["losgefahren wäre", "losgefahren hätte", "losfährt", "losfahren würde"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "losfahren فعل حرکتی است، پس: losgefahren wäre" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} wir das Problem früher erkannt, hätten wir es verhindert.",
+      "options": ["Hätten", "Wären", "Wenn", "Haben"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "erkennen با hätte می‌آید. بدون wenn، فعل اول: Hätten wir..." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Wenn das Projekt {0}, hätten wir viel Geld verloren.",
+      "options": ["gescheitert wäre", "gescheitert hätte", "scheitern würde", "gescheitert"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "scheitern با wäre می‌آید چون فعل تغییر حالت است: gescheitert wäre" }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: تصمیمات زندگی",
+      "passage": {
+        "de": "Manchmal denke ich an die Vergangenheit und frage mich: Was wäre passiert, wenn ich andere Entscheidungen getroffen hätte? Wenn ich nach dem Abitur nicht studiert hätte, hätte ich vielleicht eine Ausbildung gemacht. Wäre ich nach Berlin gezogen, hätte ich meine Frau nie kennengelernt. Hätte ich den Job in München angenommen, wäre unser Leben ganz anders verlaufen. Aber ich bereue nichts. Wenn ich alles noch einmal machen könnte, würde ich dieselben Entscheidungen treffen.",
+        "fa": "گاهی به گذشته فکر می‌کنم و از خودم می‌پرسم: اگر تصمیمات دیگری گرفته بودم، چه می‌شد؟ اگر بعد از دیپلم درس نخوانده بودم، شاید کارآموزی می‌کردم. اگر به برلین رفته بودم، هرگز همسرم را نمی‌شناختم. اگر شغل مونیخ را قبول کرده بودم، زندگیمان کاملاً متفاوت می‌شد. اما پشیمان نیستم. اگر می‌توانستم همه چیز را از نو انجام دهم، همان تصمیمات را می‌گرفتم."
+      },
+      "questions": [
+        { "question": "نویسنده اگر درس نخوانده بود، چه می‌کرد؟", "options": ["به برلین می‌رفت", "کارآموزی می‌کرد", "ازدواج می‌کرد"], "correctIndex": 1, "explanation": "نوشت: hätte ich vielleicht eine Ausbildung gemacht" },
+        { "question": "کجا همسرش را شناخت؟", "options": ["در برلین", "در مونیخ", "نه برلین"], "correctIndex": 2, "explanation": "نوشت: Wäre ich nach Berlin gezogen, hätte ich meine Frau nie kennengelernt" },
+        { "question": "آیا نویسنده پشیمان است؟", "options": ["بله", "خیر", "مشخص نیست"], "correctIndex": 1, "explanation": "نوشت: ich bereue nichts" },
+        { "question": "چه نوع جملاتی در متن استفاده شده؟", "options": ["شرطی واقعی", "شرطی غیرواقعی گذشته", "شرطی حال"], "correctIndex": 1, "explanation": "همه جملات با hätte/wäre + Partizip II هستند" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die verpasste Chance", "fa": "فرصت از دست رفته" },
+      "characters": ["Anna", "Max"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Anna und Max sprechen über eine verpasste Gelegenheit.", "fa": "آنا و ماکس درباره یک فرصت از دست رفته صحبت می‌کنند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Wenn ich den Flug nicht verpasst hätte, wäre ich jetzt in Paris.", "fa": "اگر پرواز را از دست نداده بودم، الان در پاریس بودم." },
+          "mood": "sad"
+        },
+        {
+          "type": "question",
+          "question": "چرا آنا در پاریس نیست؟",
+          "options": ["پرواز کنسل شد", "پرواز را از دست داد", "بیمار شد"],
+          "correctIndex": 1,
+          "explanation": "آنا گفت: Wenn ich den Flug nicht verpasst hätte"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Max",
+          "text": { "de": "Wärst du früher losgefahren, hättest du ihn erreicht.", "fa": "اگر زودتر راه افتاده بودی، می‌رسیدی." },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "ماکس از چه ساختاری استفاده کرد؟",
+          "options": ["با wenn", "بدون wenn", "جمله ساده"],
+          "correctIndex": 1,
+          "explanation": "Wärst du... losgefahren (بدون wenn)"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Du hast recht. Hätte ich besser geplant, wäre das nicht passiert.", "fa": "حق با توست. اگر بهتر برنامه‌ریزی کرده بودم، این اتفاق نمی‌افتاد." },
+          "mood": "sad"
+        },
+        {
+          "type": "question",
+          "question": "آنا چه درسی گرفت؟",
+          "options": ["باید زودتر بیدار شود", "باید بهتر برنامه‌ریزی کند", "باید قطار برود"],
+          "correctIndex": 1,
+          "explanation": "آنا گفت: Hätte ich besser geplant"
+        }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Wenn ich mehr Zeit gehabt hätte, wäre ich gekommen.",
+      "translation": "اگر وقت بیشتری داشتم، می‌آمدم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Hätte ich das gewusst, hätte ich anders gehandelt.",
+      "translation": "اگر این را می‌دانستم، متفاوت عمل می‌کردم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Wäre er nicht gekommen, hätten wir gewartet.",
+      "translation": "اگر او نیامده بود، ما صبر می‌کردیم."
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع",
+      "instruction": "hätte یا wäre؟",
+      "questions": [
+        { "prompt": "lernen", "left": "hätte", "right": "wäre", "correctSide": "left" },
+        { "prompt": "kommen", "left": "hätte", "right": "wäre", "correctSide": "right" },
+        { "prompt": "fahren", "left": "hätte", "right": "wäre", "correctSide": "right" },
+        { "prompt": "arbeiten", "left": "hätte", "right": "wäre", "correctSide": "left" },
+        { "prompt": "bleiben", "left": "hätte", "right": "wäre", "correctSide": "right" },
+        { "prompt": "verhindern", "left": "hätte", "right": "wäre", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "gehen + Konj. II Verg.", "options": ["wäre gegangen", "hätte gegangen"], "correctAnswerIndex": 0 },
+        { "question": "sagen + Konj. II Verg.", "options": ["wäre gesagt", "hätte gesagt"], "correctAnswerIndex": 1 },
+        { "question": "fliegen + Konj. II Verg.", "options": ["wäre geflogen", "hätte geflogen"], "correctAnswerIndex": 0 },
+        { "question": "bestehen + Konj. II Verg.", "options": ["wäre bestanden", "hätte bestanden"], "correctAnswerIndex": 1 },
+        { "question": "scheitern + Konj. II Verg.", "options": ["wäre gescheitert", "hätte gescheitert"], "correctAnswerIndex": 0 },
+        { "question": "verhindern + Konj. II Verg.", "options": ["wäre verhindert", "hätte verhindert"], "correctAnswerIndex": 1 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "hätte gelernt", "fa": "درس خوانده بودم" },
+        { "de": "wäre gekommen", "fa": "آمده بودم" },
+        { "de": "hätte bestanden", "fa": "قبول شده بودم" },
+        { "de": "wäre gescheitert", "fa": "شکست خورده بودم" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات مربوط به جملات شرطی را پیدا کنید",
+      "targetWords": ["wenn", "hätte", "wäre", "Folge", "bestehen", "scheitern"],
+      "gridSize": { "rows": 8, "cols": 8 },
+      "timeLimit": 90
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "der Bedingungssatz", "fa": "___", "options": ["جمله پرسشی", "جمله شرطی", "جمله امری", "جمله خبری"], "correctIndex": 1 },
+        { "de": "verhindern", "fa": "___", "options": ["کمک کردن", "جلوگیری کردن", "شروع کردن", "تمام کردن"], "correctIndex": 1 },
+        { "de": "andernfalls", "fa": "___", "options": ["همچنین", "بنابراین", "در غیر این صورت", "به هر حال"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما جملات شرطی غیرواقعی در گذشته را یاد گرفتید!",
+      "keyPoints": [
+        "Konjunktiv II Vergangenheit: hätte/wäre + Partizip II",
+        "hätte برای اکثر فعل‌ها (lernen, arbeiten, machen, ...)",
+        "wäre برای فعل‌های حرکتی (kommen, fahren, gehen) و تغییر حالت (werden, sterben)",
+        "با wenn: Wenn ich gelernt hätte, ... (فعل در آخر)",
+        "بدون wenn: Hätte ich gelernt, ... (فعل در اول)",
+        "می‌توان hätte و wäre را در یک جمله ترکیب کرد"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "der Bedingungssatz", "fa": "جمله شرطی" } },
+        { "word": { "de": "bestehen", "fa": "قبول شدن (در امتحان)" } },
+        { "word": { "de": "scheitern", "fa": "شکست خوردن" } },
+        { "word": { "de": "verhindern", "fa": "جلوگیری کردن" } },
+        { "word": { "de": "die Folge", "fa": "نتیجه/پیامد" } },
+        { "word": { "de": "andernfalls", "fa": "در غیر این صورت" } }
+      ]
+    }
+  ]
+}

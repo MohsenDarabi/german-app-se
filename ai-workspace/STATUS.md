@@ -8,7 +8,7 @@
 
 **Create B1 lessons - lesson by lesson, wait for user test after each**
 
-Current: `B1-M05` (Relativsätze mit Präpositionen) - **MODULE COMPLETE - READY FOR USER TEST**
+Current: `B1-M06` (Konjunktiv II Vergangenheit) - **MODULE COMPLETE - READY FOR USER TEST**
 
 ---
 
@@ -26,7 +26,7 @@ Current: `B1-M05` (Relativsätze mit Präpositionen) - **MODULE COMPLETE - READY
 |-------|---------|---------|--------|
 | A1 | 14 | 56+ | Complete |
 | A2 | 18 | 72 | **Complete** ✅ |
-| B1 | 5 | 20 | Module 5 complete |
+| B1 | 6 | 24 | Module 6 complete |
 
 ### A2 Completion (2026-02-05)
 
@@ -62,8 +62,9 @@ Current: `B1-M05` (Relativsätze mit Präpositionen) - **MODULE COMPLETE - READY
 | M03 | Konjunktiv I | 4/4 | ✅ Complete |
 | M04 | Doppelkonnektoren | 4/4 | ✅ Complete |
 | M05 | Relativsätze mit Präpositionen | 4/4 | ✅ Complete |
+| M06 | Konjunktiv II Vergangenheit | 4/4 | ✅ Complete |
 
-**Total B1: 20 lessons**
+**Total B1: 24 lessons**
 
 ---
 
@@ -122,10 +123,23 @@ Current: `B1-M05` (Relativsätze mit Präpositionen) - **MODULE COMPLETE - READY
 
 ---
 
+## B1 Module 6: Konjunktiv II Vergangenheit (Past Subjunctive II)
+
+| Lesson | Title | Status |
+|--------|-------|--------|
+| B1-M06-L01 | hätte + Partizip II | ✅ Complete |
+| B1-M06-L02 | wäre + Partizip II | ✅ Complete |
+| B1-M06-L03 | Irreale Bedingungssätze der Vergangenheit | ✅ Complete |
+| B1-M06-L04 | Zusammenfassung | ✅ Complete |
+
+---
+
 ## Recent Changes
 
 | Date | Change |
 |------|--------|
+| 2026-02-06 | **B1 Module 6 (Konjunktiv II Vergangenheit) COMPLETE - 4 lessons!** |
+| 2026-02-06 | Created B1-M06-L01 to L04 in parallel |
 | 2026-02-06 | **B1 Module 5 (Relativsätze mit Präpositionen) COMPLETE - 4 lessons!** |
 | 2026-02-06 | Created B1-M05-L01 to L04 in parallel |
 | 2026-02-06 | **B1 Module 4 (Doppelkonnektoren) COMPLETE - 4 lessons!** |
@@ -157,6 +171,7 @@ Current: `B1-M05` (Relativsätze mit Präpositionen) - **MODULE COMPLETE - READY
 4. [x] Complete B1 Module 3 (Konjunktiv I) - 4 lessons
 5. [x] Complete B1 Module 4 (Doppelkonnektoren) - 4 lessons
 6. [x] Complete B1 Module 5 (Relativsätze mit Präpositionen) - 4 lessons
-7. [ ] **User tests B1-M05 lessons**
-8. [ ] Plan B1 Module 6 topic
-9. [ ] Continue B1 curriculum development
+7. [x] Complete B1 Module 6 (Konjunktiv II Vergangenheit) - 4 lessons
+8. [ ] **User tests B1-M06 lessons**
+9. [ ] Plan B1 Module 7 topic
+10. [ ] Continue B1 curriculum development
