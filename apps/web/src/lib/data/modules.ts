@@ -691,6 +691,19 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/A2/A2-M07-L04"
       }
     ]
+  },
+  {
+    id: "module-08",
+    title: "بخش ۸: مجهول (Passiv)",
+    level: "A2",
+    lessons: [
+      {
+        id: "A2-M08-L01",
+        title: "Passiv Präsens - مجهول زمان حال",
+        description: "یاد بگیرید چطور جملات مجهول بسازید با werden + Partizip II.",
+        path: "/learn/de-fa/A2/A2-M08-L01"
+      }
+    ]
   }
 ];
 
