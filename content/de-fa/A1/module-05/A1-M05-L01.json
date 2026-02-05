@@ -17,7 +17,7 @@
   "level": "A1",
   "module": 5,
   "lessonNumber": 1,
-  "totalSteps": 42,
+  "totalSteps": 43,
   "estimatedMinutes": 22,
   "vocabulary": [
     {
@@ -283,8 +283,7 @@
           "correctIndex": 1,
           "explanation": "تام گفت: «Ja, ein bisschen.»"
         }
-      ],
-      "questionMode": "post-dialog"
+      ]
     },
     {
       "type": "rapid-fire",
@@ -664,8 +663,7 @@
           "correctIndex": 1,
           "explanation": "لیزا گفت: «Ja, gerne!» (به پیشنهاد قهوه)"
         }
-      ],
-      "questionMode": "post-dialog"
+      ]
     },
     {
       "type": "new-word",
@@ -1007,6 +1005,38 @@
           "fa": "با کمال میل"
         }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "In einer Ja/Nein-Frage steht das Verb an erster Stelle.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! در سوالات بله/خیر آلمانی، فعل اول جمله می‌آید: Kommst du? (نه: Du kommst?)"
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "«Doch» benutzt man als Antwort auf eine negative Frage.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! وقتی سوال منفی باشد و جواب مثبت، از «doch» استفاده می‌کنیم: Kommst du nicht? - Doch!"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "وقت داری؟",
+      "sentenceTemplate": "{0} {1} {2}?",
+      "options": ["Hast", "du", "Zeit"],
+      "correctAnswers": [0, 1, 2],
+      "correctTranslation": {
+        "de": "Hast du Zeit?",
+        "fa": "وقت داری؟"
+      }
     },
     {
       "type": "completion",

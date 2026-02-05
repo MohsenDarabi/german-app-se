@@ -17,7 +17,7 @@
   "level": "A1",
   "module": 5,
   "lessonNumber": 4,
-  "totalSteps": 38,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     {
@@ -235,8 +235,7 @@
           "correctIndex": 1,
           "explanation": "الی گفت: «Weil Deutsch praktischer ist.»"
         }
-      ],
-      "questionMode": "post-dialog"
+      ]
     },
     {
       "type": "rapid-fire",
@@ -615,8 +614,7 @@
           "correctIndex": 1,
           "explanation": "لیزا گفت: «Weil rot meine Lieblingsfarbe ist!»"
         }
-      ],
-      "questionMode": "post-dialog"
+      ]
     },
     {
       "type": "matching",
@@ -846,6 +844,38 @@
           "fa": "کاربردی"
         }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "Nach «weil» steht das Verb am Ende.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! بعد از «weil» فعل به آخر جمله می‌رود: Ich lerne Deutsch, weil ich es mag."
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "«Welches» benutzt man für feminine Nomen.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! «Welches» برای اسم‌های خنثی (das) استفاده می‌شود. برای مونث (die) از «Welche» استفاده کنید."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "چرا آلمانی یاد می‌گیری؟",
+      "sentenceTemplate": "{0} {1} {2} {3}?",
+      "options": ["Warum", "lernst", "du", "Deutsch"],
+      "correctAnswers": [0, 1, 2, 3],
+      "correctTranslation": {
+        "de": "Warum lernst du Deutsch?",
+        "fa": "چرا آلمانی یاد می‌گیری؟"
+      }
     },
     {
       "type": "completion",

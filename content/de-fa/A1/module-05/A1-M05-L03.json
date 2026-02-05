@@ -17,7 +17,7 @@
   "level": "A1",
   "module": 5,
   "lessonNumber": 3,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 21,
   "vocabulary": [
     {
@@ -283,8 +283,7 @@
           "correctIndex": 1,
           "explanation": "الکس گفت: «Mit dem Bus.»"
         }
-      ],
-      "questionMode": "post-dialog"
+      ]
     },
     {
       "type": "rapid-fire",
@@ -602,8 +601,7 @@
           "correctIndex": 1,
           "explanation": "الی گفت: «Bis acht Uhr.»"
         }
-      ],
-      "questionMode": "post-dialog"
+      ]
     },
     {
       "type": "rapid-fire",
@@ -927,6 +925,38 @@
           "fa": "یورو"
         }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "«Wie viel» benutzt man für zählbare Dinge.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! «Wie viel» برای چیزهای غیرقابل شمارش (مثل پول، وقت) و «Wie viele» برای چیزهای قابل شمارش (مثل کتاب‌ها) استفاده می‌شود."
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "«Wie alt bist du?» fragt nach dem Alter.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! Wie alt برای پرسیدن سن استفاده می‌شود: چند سالته؟"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "این چقدر است؟",
+      "sentenceTemplate": "{0} {1} {2} {3}?",
+      "options": ["Wie", "viel", "kostet", "das"],
+      "correctAnswers": [0, 1, 2, 3],
+      "correctTranslation": {
+        "de": "Wie viel kostet das?",
+        "fa": "این چقدر است؟"
+      }
     },
     {
       "type": "completion",

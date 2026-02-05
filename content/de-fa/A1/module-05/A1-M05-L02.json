@@ -17,7 +17,7 @@
   "level": "A1",
   "module": 5,
   "lessonNumber": 2,
-  "totalSteps": 41,
+  "totalSteps": 43,
   "estimatedMinutes": 22,
   "vocabulary": [
     {
@@ -293,8 +293,7 @@
           "correctIndex": 2,
           "explanation": "لیزا گفت: «Ich wohne in München.»"
         }
-      ],
-      "questionMode": "post-dialog"
+      ]
     },
     {
       "type": "rapid-fire",
@@ -614,8 +613,7 @@
           "correctIndex": 1,
           "explanation": "الی گفت: «Einen deutschen Film!»"
         }
-      ],
-      "questionMode": "post-dialog"
+      ]
     },
     {
       "type": "rapid-fire",
@@ -967,6 +965,38 @@
           "fa": "سینما"
         }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "«Wer» fragt nach einer Person, «Was» fragt nach einer Sache.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! Wer برای شخص (کی؟) و Was برای شیء یا کار (چی؟) استفاده می‌شود."
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "«Wohin» fragt nach dem aktuellen Ort.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! Wohin برای مقصد است (به کجا؟). Wo برای مکان فعلی است (کجا؟)."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "از کجا هستی؟",
+      "sentenceTemplate": "{0} {1} {2}?",
+      "options": ["Woher", "kommst", "du"],
+      "correctAnswers": [0, 1, 2],
+      "correctTranslation": {
+        "de": "Woher kommst du?",
+        "fa": "از کجا هستی؟"
+      }
     },
     {
       "type": "completion",
