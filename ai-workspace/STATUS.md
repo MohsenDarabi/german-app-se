@@ -8,7 +8,7 @@
 
 **Create B1 lessons - lesson by lesson, wait for user test after each**
 
-Current: `B1-M03` (Konjunktiv I) - **MODULE COMPLETE - READY FOR USER TEST**
+Current: `B1-M04` (Doppelkonnektoren) - **MODULE COMPLETE - READY FOR USER TEST**
 
 ---
 
@@ -26,7 +26,7 @@ Current: `B1-M03` (Konjunktiv I) - **MODULE COMPLETE - READY FOR USER TEST**
 |-------|---------|---------|--------|
 | A1 | 14 | 56+ | Complete |
 | A2 | 18 | 72 | **Complete** ✅ |
-| B1 | 3 | 12 | Module 3 complete |
+| B1 | 4 | 16 | Module 4 complete |
 
 ### A2 Completion (2026-02-05)
 
@@ -60,8 +60,9 @@ Current: `B1-M03` (Konjunktiv I) - **MODULE COMPLETE - READY FOR USER TEST**
 | M01 | N-Deklination | 4/4 | ✅ Complete |
 | M02 | Partizipien als Adjektive | 4/4 | ✅ Complete |
 | M03 | Konjunktiv I | 4/4 | ✅ Complete |
+| M04 | Doppelkonnektoren | 4/4 | ✅ Complete |
 
-**Total B1: 12 lessons**
+**Total B1: 16 lessons**
 
 ---
 
@@ -98,10 +99,26 @@ Current: `B1-M03` (Konjunktiv I) - **MODULE COMPLETE - READY FOR USER TEST**
 
 ---
 
+## B1 Module 4: Doppelkonnektoren (Double Connectors)
+
+| Lesson | Title | Status |
+|--------|-------|--------|
+| B1-M04-L01 | je...desto/umso | ✅ Complete |
+| B1-M04-L02 | sowohl...als auch, weder...noch | ✅ Complete |
+| B1-M04-L03 | entweder...oder, nicht nur...sondern auch | ✅ Complete |
+| B1-M04-L04 | Zusammenfassung | ✅ Complete |
+
+---
+
 ## Recent Changes
 
 | Date | Change |
 |------|--------|
+| 2026-02-06 | **B1 Module 4 (Doppelkonnektoren) COMPLETE - 4 lessons!** |
+| 2026-02-06 | Created B1-M04-L04 (Zusammenfassung) |
+| 2026-02-06 | Created B1-M04-L03 (entweder...oder / nicht nur...sondern auch) |
+| 2026-02-06 | Created B1-M04-L02 (sowohl...als auch / weder...noch) |
+| 2026-02-06 | Created B1-M04-L01 (je...desto/umso) |
 | 2026-02-06 | **B1 Module 3 (Konjunktiv I) COMPLETE - 4 lessons!** |
 | 2026-02-06 | Created B1-M03-L04 (Zusammenfassung) |
 | 2026-02-05 | Created B1-M03-L03 (Ersatzformen) |
@@ -124,6 +141,7 @@ Current: `B1-M03` (Konjunktiv I) - **MODULE COMPLETE - READY FOR USER TEST**
 2. [x] Complete B1 Module 1 (N-Deklination) - 4 lessons
 3. [x] Complete B1 Module 2 (Partizipien als Adjektive) - 4 lessons
 4. [x] Complete B1 Module 3 (Konjunktiv I) - 4 lessons
-5. [ ] **User tests B1-M03 lessons**
-6. [ ] Plan B1 Module 4 topic
-7. [ ] Continue B1 curriculum development
+5. [x] Complete B1 Module 4 (Doppelkonnektoren) - 4 lessons
+6. [ ] **User tests B1-M04 lessons**
+7. [ ] Plan B1 Module 5 topic
+8. [ ] Continue B1 curriculum development

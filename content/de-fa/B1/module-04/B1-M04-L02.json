@@ -1,0 +1,492 @@
+{
+  "id": "B1-M04-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "sowohl...als auch / weder...noch", "fa": "هم...هم / نه...نه" },
+  "description": "یاد بگیرید چطور با sowohl...als auch (هم...هم) و weder...noch (نه...نه) دو چیز را به هم ربط دهید",
+  "level": "B1",
+  "module": 4,
+  "lessonNumber": 2,
+  "totalSteps": 44,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "sowohl", "fa": "هم (بخش اول)", "grammar": { "pos": "conjunction" } },
+    { "de": "als auch", "fa": "هم (بخش دوم)", "grammar": { "pos": "conjunction" } },
+    { "de": "weder", "fa": "نه (بخش اول)", "grammar": { "pos": "conjunction" } },
+    { "de": "noch", "fa": "نه (بخش دوم)", "grammar": { "pos": "conjunction" } },
+    { "de": "außerdem", "fa": "علاوه بر این", "grammar": { "pos": "adverb" } },
+    { "de": "gleichzeitig", "fa": "همزمان", "grammar": { "pos": "adverb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "sowohl...als auch: هم...هم",
+      "content": "📝 **sowohl...als auch = هم...هم (both...and)**\n\nبرای بیان اینکه دو چیز هر دو درست هستند:\n\n**ساختار:**\n```\nsowohl + A + als auch + B\n```\n\n**مثال‌ها:**\n• Ich spreche **sowohl** Deutsch **als auch** Englisch.\n• من **هم** آلمانی **هم** انگلیسی صحبت می‌کنم.\n\n• Sie ist **sowohl** intelligent **als auch** fleißig.\n• او **هم** باهوش است **هم** سخت‌کوش.\n\n**نکته:** ترتیب کلمات معمولی است، فعل تغییر نمی‌کند!",
+      "examples": [
+        { "de": "Er kann sowohl Klavier als auch Gitarre spielen.", "fa": "او هم پیانو هم گیتار می‌تواند بزند." },
+        { "de": "Das Essen war sowohl lecker als auch gesund.", "fa": "غذا هم خوشمزه بود هم سالم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "sowohl", "fa": "هم (بخش اول)" },
+      "example": { "text": { "de": "Sowohl ich als auch du.", "fa": "هم من هم تو." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "sowohl",
+      "translation": "هم",
+      "syllables": ["so", "wohl"],
+      "distractors": ["sa", "wahl", "weil"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "als auch", "fa": "هم (بخش دوم)" },
+      "example": { "text": { "de": "Sowohl heute als auch morgen.", "fa": "هم امروز هم فردا." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "auch",
+      "translation": "هم/نیز",
+      "syllables": ["auch"],
+      "distractors": ["ach", "och", "ich"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "sowohl...als auch چه معنی می‌دهد؟",
+      "options": ["یا...یا", "هم...هم", "نه...نه", "اگرچه...اما"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! sowohl...als auch یعنی هم...هم (both...and)", "incorrect": "sowohl...als auch یعنی هم...هم، مثل: Ich mag sowohl Kaffee als auch Tee." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er spricht {0} Deutsch als auch Französisch.",
+      "options": ["sowohl", "weder", "entweder", "nicht"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "sowohl...als auch برای بیان هم...هم: Er spricht sowohl Deutsch als auch Französisch." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sie ist sowohl Ärztin {0} Mutter.",
+      "options": ["als auch", "und noch", "oder auch", "aber auch"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "sowohl همیشه با als auch می‌آید: sowohl Ärztin als auch Mutter" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در مصاحبه کاری",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Bewerbungsgespräch", "fa": "در مصاحبه استخدامی" }
+      },
+      "lines": [
+        { "speaker": "Chef", "text": { "de": "Welche Sprachen sprechen Sie?", "fa": "چه زبان‌هایی صحبت می‌کنید؟" }, "mood": "neutral" },
+        { "speaker": "Eli", "text": { "de": "Ich spreche sowohl Deutsch als auch Englisch fließend.", "fa": "من هم آلمانی هم انگلیسی روان صحبت می‌کنم." }, "mood": "happy" },
+        { "speaker": "Chef", "text": { "de": "Sehr gut! Und Ihre Stärken?", "fa": "خیلی خوب! و نقاط قوت شما؟" }, "mood": "happy" },
+        { "speaker": "Eli", "text": { "de": "Ich bin sowohl teamfähig als auch selbstständig.", "fa": "من هم کار تیمی بلدم هم مستقل کار می‌کنم." }, "mood": "happy" },
+        { "speaker": "Chef", "text": { "de": "Perfekt! Das brauchen wir.", "fa": "عالی! این را نیاز داریم." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "الی چه زبان‌هایی صحبت می‌کند؟", "options": ["فقط آلمانی", "فقط انگلیسی", "هم آلمانی هم انگلیسی"], "correctIndex": 2, "explanation": "الی گفت: sowohl Deutsch als auch Englisch" },
+        { "question": "نقاط قوت الی چیست؟", "options": ["فقط کار تیمی", "هم کار تیمی هم مستقل", "فقط مستقل"], "correctIndex": 1, "explanation": "الی گفت: sowohl teamfähig als auch selbstständig" }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s4",
+      "title": "weder...noch: نه...نه",
+      "content": "📝 **weder...noch = نه...نه (neither...nor)**\n\nبرای بیان اینکه هیچکدام از دو چیز درست نیست:\n\n**ساختار:**\n```\nweder + A + noch + B\n```\n\n**مثال‌ها:**\n• Ich trinke **weder** Kaffee **noch** Tee.\n• من **نه** قهوه می‌خورم **نه** چای.\n\n• Er ist **weder** reich **noch** arm.\n• او **نه** پولدار است **نه** فقیر.\n\n**نکته مهم:** weder...noch منفی است، پس به nicht یا kein نیاز نیست!",
+      "examples": [
+        { "de": "Sie hat weder Zeit noch Geld.", "fa": "او نه وقت دارد نه پول." },
+        { "de": "Das Wetter ist weder warm noch kalt.", "fa": "هوا نه گرم است نه سرد." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "weder", "fa": "نه (بخش اول)" },
+      "example": { "text": { "de": "Weder ich noch du.", "fa": "نه من نه تو." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "weder",
+      "translation": "نه",
+      "syllables": ["we", "der"],
+      "distractors": ["wa", "dar", "dir"]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "noch", "fa": "نه (بخش دوم) / هنوز" },
+      "example": { "text": { "de": "Weder heute noch morgen.", "fa": "نه امروز نه فردا." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "noch",
+      "translation": "نه/هنوز",
+      "syllables": ["noch"],
+      "distractors": ["nach", "nuch", "nich"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "weder...noch چه معنی می‌دهد؟",
+      "options": ["هم...هم", "یا...یا", "نه...نه", "نه تنها...بلکه"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! weder...noch یعنی نه...نه (neither...nor)", "incorrect": "weder...noch یعنی نه...نه، مثل: Ich mag weder Fisch noch Fleisch." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sie trinkt {0} Alkohol noch Kaffee.",
+      "options": ["weder", "sowohl", "entweder", "nicht"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "weder...noch برای بیان نه...نه: Sie trinkt weder Alkohol noch Kaffee." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er kann weder schwimmen {0} Fahrrad fahren.",
+      "options": ["noch", "als auch", "oder", "und"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "weder همیشه با noch می‌آید: weder schwimmen noch Fahrrad fahren" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جمله با weder...noch به nicht یا kein نیاز نیست.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! weder...noch خودش منفی است: Ich habe weder Zeit noch Geld. (نه: Ich habe nicht weder...)" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["als auch Tee.", "Kaffee", "Ich trinke sowohl"],
+      "correctOrder": [2, 1, 0],
+      "correctSentence": { "de": "Ich trinke sowohl Kaffee als auch Tee.", "fa": "من هم قهوه هم چای می‌خورم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["noch Geld.", "Zeit", "Sie hat weder"],
+      "correctOrder": [2, 1, 0],
+      "correctSentence": { "de": "Sie hat weder Zeit noch Geld.", "fa": "او نه وقت دارد نه پول." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "معنی مناسب را پیدا کنید",
+      "items": [
+        { "id": "i1", "text": "sowohl...als auch" },
+        { "id": "i2", "text": "weder...noch" },
+        { "id": "i3", "text": "sowohl A als auch B" },
+        { "id": "i4", "text": "weder A noch B" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "هم...هم" },
+        { "id": "m2", "text": "نه...نه" },
+        { "id": "m3", "text": "هم A هم B" },
+        { "id": "m4", "text": "نه A نه B" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "außerdem", "fa": "علاوه بر این" },
+      "example": { "text": { "de": "Außerdem spreche ich auch Spanisch.", "fa": "علاوه بر این، اسپانیایی هم صحبت می‌کنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "außerdem",
+      "translation": "علاوه بر این",
+      "syllables": ["au", "ßer", "dem"],
+      "distractors": ["ei", "ßar", "dam"]
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در رستوران",
+      "scene": {
+        "location": "restaurant",
+        "description": { "de": "Im Restaurant", "fa": "در رستوران" }
+      },
+      "lines": [
+        { "speaker": "Kellner", "text": { "de": "Was möchten Sie trinken?", "fa": "چه می‌خواهید بنوشید؟" }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Ich trinke weder Alkohol noch Kaffee.", "fa": "من نه الکل می‌خورم نه قهوه." }, "mood": "neutral" },
+        { "speaker": "Kellner", "text": { "de": "Wir haben sowohl Tee als auch Saft.", "fa": "ما هم چای داریم هم آبمیوه." }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Dann nehme ich einen Orangensaft, bitte.", "fa": "پس یک آب پرتقال می‌خواهم، لطفاً." }, "mood": "happy" },
+        { "speaker": "Kellner", "text": { "de": "Sehr gerne!", "fa": "با کمال میل!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "تام چه چیزهایی نمی‌خورد؟", "options": ["چای و آبمیوه", "الکل و قهوه", "همه چیز"], "correctIndex": 1, "explanation": "تام گفت: Ich trinke weder Alkohol noch Kaffee" },
+        { "question": "رستوران چه نوشیدنی‌هایی دارد؟", "options": ["فقط چای", "فقط آبمیوه", "هم چای هم آبمیوه"], "correctIndex": 2, "explanation": "گارسون گفت: sowohl Tee als auch Saft" }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s8",
+      "title": "مقایسه: sowohl...als auch و weder...noch",
+      "content": "📝 **مقایسه دو ساختار:**\n\n| ساختار | معنی | مثبت/منفی |\n|--------|------|----------|\n| sowohl...als auch | هم...هم | مثبت ✓ |\n| weder...noch | نه...نه | منفی ✗ |\n\n**مثال‌های مقایسه‌ای:**\n\n✓ **مثبت:**\n• Ich mag **sowohl** Pizza **als auch** Pasta.\n• من **هم** پیتزا دوست دارم **هم** پاستا.\n\n✗ **منفی:**\n• Ich mag **weder** Pizza **noch** Pasta.\n• من **نه** پیتزا دوست دارم **نه** پاستا.\n\n**نکته:** هر دو ساختار برای ربط دادن دو چیز مشابه استفاده می‌شوند!",
+      "examples": [
+        { "de": "Sie kann sowohl singen als auch tanzen.", "fa": "او هم آواز می‌خواند هم می‌رقصد." },
+        { "de": "Er kann weder singen noch tanzen.", "fa": "او نه آواز می‌خواند نه می‌رقصد." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "sowohl...als auch یا weder...noch؟",
+      "sentence": "Das Hotel ist {0} billig {1} zentral. Es ist teuer und weit weg.",
+      "options": ["weder", "noch"],
+      "correctAnswers": [0, 1],
+      "feedback": { "explanation": "هتل نه ارزان است نه مرکزی: weder billig noch zentral" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "sowohl...als auch یا weder...noch؟",
+      "sentence": "Das Restaurant bietet {0} vegetarische {1} vegane Gerichte an.",
+      "options": ["sowohl", "als auch"],
+      "correctAnswers": [0, 1],
+      "feedback": { "explanation": "رستوران هم غذای گیاهی دارد هم وگان: sowohl vegetarische als auch vegane" }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "او هم باهوش است هم مهربان.",
+      "sentenceTemplate": "Sie ist {0} intelligent als auch freundlich.",
+      "options": ["sowohl", "weder", "entweder", "nicht"],
+      "correctAnswers": [0],
+      "correctTranslation": { "de": "Sie ist sowohl intelligent als auch freundlich.", "fa": "او هم باهوش است هم مهربان." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "من نه گوشت می‌خورم نه ماهی.",
+      "sentenceTemplate": "Ich esse {0} Fleisch noch Fisch.",
+      "options": ["weder", "sowohl", "entweder", "nicht"],
+      "correctAnswers": [0],
+      "correctTranslation": { "de": "Ich esse weder Fleisch noch Fisch.", "fa": "من نه گوشت می‌خورم نه ماهی." }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "gleichzeitig", "fa": "همزمان" },
+      "example": { "text": { "de": "Sie arbeitet und studiert gleichzeitig.", "fa": "او همزمان کار می‌کند و درس می‌خواند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "gleichzeitig",
+      "translation": "همزمان",
+      "syllables": ["gleich", "zei", "tig"],
+      "distractors": ["glaich", "zai", "tag"]
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: آگهی استخدام",
+      "passage": {
+        "de": "Wir suchen einen Mitarbeiter, der sowohl Erfahrung als auch Motivation hat. Der Kandidat sollte sowohl Deutsch als auch Englisch sprechen können. Wir bieten sowohl ein gutes Gehalt als auch flexible Arbeitszeiten. Wir akzeptieren weder Bewerber ohne Abschluss noch Bewerber ohne Berufserfahrung. Die Stelle ist weder befristet noch Teilzeit - es ist eine unbefristete Vollzeitstelle.",
+        "fa": "ما به دنبال همکاری هستیم که هم تجربه داشته باشد هم انگیزه. کاندیدا باید هم آلمانی هم انگلیسی صحبت کند. ما هم حقوق خوب ارائه می‌دهیم هم ساعات کاری انعطاف‌پذیر. ما نه متقاضیان بدون مدرک می‌پذیریم نه متقاضیان بدون تجربه کاری. این موقعیت نه موقت است نه پاره‌وقت - یک موقعیت تمام‌وقت دائمی است."
+      },
+      "questions": [
+        { "question": "کاندیدا باید چه ویژگی‌هایی داشته باشد؟", "options": ["فقط تجربه", "فقط انگیزه", "هم تجربه هم انگیزه"], "correctIndex": 2, "explanation": "متن گفت: sowohl Erfahrung als auch Motivation" },
+        { "question": "چه زبان‌هایی لازم است؟", "options": ["فقط آلمانی", "فقط انگلیسی", "هم آلمانی هم انگلیسی"], "correctIndex": 2, "explanation": "متن گفت: sowohl Deutsch als auch Englisch" },
+        { "question": "چه کسانی پذیرفته نمی‌شوند؟", "options": ["فقط بدون مدرک", "نه بدون مدرک نه بدون تجربه", "همه پذیرفته می‌شوند"], "correctIndex": 1, "explanation": "متن گفت: weder Bewerber ohne Abschluss noch Bewerber ohne Berufserfahrung" }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع",
+      "instruction": "جواب درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "هم...هم =", "left": "sowohl...als auch", "right": "weder...noch", "correctSide": "left" },
+        { "prompt": "نه...نه =", "left": "sowohl...als auch", "right": "weder...noch", "correctSide": "right" },
+        { "prompt": "sowohl A ___ B", "left": "als auch", "right": "noch", "correctSide": "left" },
+        { "prompt": "weder A ___ B", "left": "als auch", "right": "noch", "correctSide": "right" },
+        { "prompt": "weder...noch منفی است؟", "left": "بله", "right": "خیر", "correctSide": "left" },
+        { "prompt": "sowohl...als auch مثبت است؟", "left": "بله", "right": "خیر", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["als auch freundlich.", "intelligent", "Er ist sowohl"],
+      "correctOrder": [2, 1, 0],
+      "correctSentence": { "de": "Er ist sowohl intelligent als auch freundlich.", "fa": "او هم باهوش است هم مهربان." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "sowohl همیشه با als auch می‌آید.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! sowohl همیشه با als auch استفاده می‌شود: sowohl...als auch" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "weder همیشه با oder می‌آید.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! weder همیشه با noch می‌آید: weder...noch (نه با oder)" }
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die Wohnungssuche", "fa": "جستجوی آپارتمان" },
+      "characters": ["Eli", "Makler"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Eli sucht eine neue Wohnung.", "fa": "الی دنبال آپارتمان جدید می‌گردد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Eli",
+          "text": { "de": "Ich suche eine Wohnung, die sowohl groß als auch günstig ist.", "fa": "من دنبال آپارتمانی می‌گردم که هم بزرگ باشد هم ارزان." },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "الی چه نوع آپارتمانی می‌خواهد؟",
+          "options": ["فقط بزرگ", "فقط ارزان", "هم بزرگ هم ارزان"],
+          "correctIndex": 2,
+          "explanation": "الی گفت: sowohl groß als auch günstig"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Makler",
+          "text": { "de": "Diese Wohnung ist leider weder groß noch günstig.", "fa": "این آپارتمان متأسفانه نه بزرگ است نه ارزان." },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "این آپارتمان چطور است؟",
+          "options": ["هم بزرگ هم ارزان", "نه بزرگ نه ارزان", "بزرگ ولی گران"],
+          "correctIndex": 1,
+          "explanation": "مشاور گفت: weder groß noch günstig"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Makler",
+          "text": { "de": "Aber sie hat sowohl einen Balkon als auch einen Garten!", "fa": "ولی هم بالکن دارد هم باغچه!" },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "آپارتمان چه امکاناتی دارد؟",
+          "options": ["فقط بالکن", "فقط باغچه", "هم بالکن هم باغچه"],
+          "correctIndex": 2,
+          "explanation": "مشاور گفت: sowohl einen Balkon als auch einen Garten"
+        }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich spreche sowohl Deutsch als auch Englisch.",
+      "translation": "من هم آلمانی هم انگلیسی صحبت می‌کنم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Er trinkt weder Kaffee noch Tee.",
+      "translation": "او نه قهوه می‌خورد نه چای."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Das Essen war sowohl lecker als auch gesund.",
+      "translation": "غذا هم خوشمزه بود هم سالم."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "هم...هم", "options": ["sowohl...als auch", "weder...noch"], "correctAnswerIndex": 0 },
+        { "question": "نه...نه", "options": ["sowohl...als auch", "weder...noch"], "correctAnswerIndex": 1 },
+        { "question": "sowohl + ?", "options": ["als auch", "noch"], "correctAnswerIndex": 0 },
+        { "question": "weder + ?", "options": ["als auch", "noch"], "correctAnswerIndex": 1 },
+        { "question": "منفی کدام است؟", "options": ["sowohl...als auch", "weder...noch"], "correctAnswerIndex": 1 },
+        { "question": "مثبت کدام است؟", "options": ["sowohl...als auch", "weder...noch"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "sowohl...als auch", "fa": "هم...هم" },
+        { "de": "weder...noch", "fa": "نه...نه" },
+        { "de": "außerdem", "fa": "علاوه بر این" },
+        { "de": "gleichzeitig", "fa": "همزمان" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات ربط دوتایی را پیدا کنید",
+      "targetWords": ["sowohl", "als", "auch", "weder", "noch"],
+      "gridSize": { "rows": 8, "cols": 8 },
+      "timeLimit": 90
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "sowohl...als auch", "fa": "___...___", "options": ["نه...نه", "هم...هم", "یا...یا", "اگر...پس"], "correctIndex": 1 },
+        { "de": "weder...noch", "fa": "___...___", "options": ["هم...هم", "نه...نه", "یا...یا", "چون...پس"], "correctIndex": 1 },
+        { "de": "außerdem", "fa": "___", "options": ["اما", "چون", "علاوه بر این", "بنابراین"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp2",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما sowohl...als auch و weder...noch را یاد گرفتید!",
+      "keyPoints": [
+        "sowohl...als auch = هم...هم (both...and) - مثبت",
+        "weder...noch = نه...نه (neither...nor) - منفی",
+        "sowohl همیشه با als auch می‌آید",
+        "weder همیشه با noch می‌آید",
+        "در weder...noch به nicht یا kein نیاز نیست"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "sowohl", "fa": "هم (بخش اول)" } },
+        { "word": { "de": "als auch", "fa": "هم (بخش دوم)" } },
+        { "word": { "de": "weder", "fa": "نه (بخش اول)" } },
+        { "word": { "de": "noch", "fa": "نه (بخش دوم)" } },
+        { "word": { "de": "außerdem", "fa": "علاوه بر این" } },
+        { "word": { "de": "gleichzeitig", "fa": "همزمان" } }
+      ]
+    }
+  ]
+}

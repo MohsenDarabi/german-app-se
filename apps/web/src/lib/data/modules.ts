@@ -1128,6 +1128,37 @@ const DE_FA_B1_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/B1/B1-M03-L04"
       }
     ]
+  },
+  {
+    id: "module-04",
+    title: "بخش ۴: کلمات ربط دوتایی (Doppelkonnektoren)",
+    level: "B1",
+    lessons: [
+      {
+        id: "B1-M04-L01",
+        title: "je...desto/umso - هرچه...هرچه",
+        description: "یاد بگیرید چطور با je...desto/umso رابطه تناسبی بیان کنید.",
+        path: "/learn/de-fa/B1/B1-M04-L01"
+      },
+      {
+        id: "B1-M04-L02",
+        title: "sowohl...als auch / weder...noch",
+        description: "یاد بگیرید چطور با sowohl...als auch (هم...هم) و weder...noch (نه...نه) صحبت کنید.",
+        path: "/learn/de-fa/B1/B1-M04-L02"
+      },
+      {
+        id: "B1-M04-L03",
+        title: "entweder...oder / nicht nur...sondern auch",
+        description: "یاد بگیرید چطور با entweder...oder (یا...یا) و nicht nur...sondern auch (نه تنها...بلکه) صحبت کنید.",
+        path: "/learn/de-fa/B1/B1-M04-L03"
+      },
+      {
+        id: "B1-M04-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل همه کلمات ربط دوتایی: je...desto، sowohl...als auch، weder...noch، entweder...oder، nicht nur...sondern auch",
+        path: "/learn/de-fa/B1/B1-M04-L04"
+      }
+    ]
   }
 ];
 

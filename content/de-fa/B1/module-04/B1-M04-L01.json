@@ -1,0 +1,486 @@
+{
+  "id": "B1-M04-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "je...desto/umso", "fa": "هرچه...هرچه" },
+  "description": "یاد بگیرید چطور با je...desto/umso رابطه تناسبی بیان کنید: هرچه بیشتر، هرچه بهتر",
+  "level": "B1",
+  "module": 4,
+  "lessonNumber": 1,
+  "totalSteps": 44,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "je", "fa": "هرچه (در ابتدای جمله اول)", "grammar": { "pos": "conjunction" } },
+    { "de": "desto", "fa": "هرچه (در ابتدای جمله دوم)", "grammar": { "pos": "conjunction" } },
+    { "de": "umso", "fa": "هرچه (مترادف desto)", "grammar": { "pos": "conjunction" } },
+    { "de": "die Übung", "fa": "تمرین", "grammar": { "pos": "noun", "gender": "f", "plural": "die Übungen" } },
+    { "de": "üben", "fa": "تمرین کردن", "grammar": { "pos": "verb", "conjugation": "regular" } },
+    { "de": "sich verbessern", "fa": "بهتر شدن/پیشرفت کردن", "grammar": { "pos": "verb", "conjugation": "regular", "reflexive": true } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "ساختار je...desto/umso",
+      "content": "📝 **je...desto/umso: هرچه...هرچه**\n\nاین ساختار برای بیان رابطه تناسبی استفاده می‌شود:\n\n**ساختار:**\n```\nJe + صفت تفضیلی + فعل در آخر, desto/umso + صفت تفضیلی + فعل + فاعل\n```\n\n**مثال:**\n• Je mehr ich lerne, **desto** besser verstehe ich.\n• هرچه بیشتر یاد می‌گیرم، بهتر می‌فهمم.\n\n**نکته مهم:**\n• جمله با je: فعل در **آخر** (جمله پیرو)\n• جمله با desto: فعل در **جایگاه دوم**\n• desto و umso کاملاً یکسان هستند!",
+      "examples": [
+        { "de": "Je älter man wird, desto weiser wird man.", "fa": "هرچه آدم پیرتر می‌شود، عاقل‌تر می‌شود." },
+        { "de": "Je mehr du übst, umso besser wirst du.", "fa": "هرچه بیشتر تمرین کنی، بهتر می‌شوی." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "je", "fa": "هرچه (جمله اول)" },
+      "example": { "text": { "de": "Je schneller, desto besser.", "fa": "هرچه سریع‌تر، بهتر." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "je",
+      "translation": "هرچه",
+      "syllables": ["je"],
+      "distractors": ["ja", "jo", "ju"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "desto", "fa": "هرچه (جمله دوم)" },
+      "example": { "text": { "de": "Je mehr, desto besser.", "fa": "هرچه بیشتر، بهتر." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "desto",
+      "translation": "هرچه",
+      "syllables": ["des", "to"],
+      "distractors": ["das", "ta", "do"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "در ساختار je...desto، فعل در جمله je کجا قرار می‌گیرد؟",
+      "options": ["در جایگاه اول", "در جایگاه دوم", "در آخر جمله", "هر جایی"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! جمله je یک جمله پیرو است، پس فعل در آخر می‌آید.", "incorrect": "جمله je یک جمله پیرو (Nebensatz) است، پس فعل در آخر قرار می‌گیرد." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام گزینه با desto یکسان است؟",
+      "options": ["je", "umso", "weil", "dass"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! desto و umso کاملاً مترادف هستند.", "incorrect": "desto و umso مترادف هستند و می‌توان از هر دو استفاده کرد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} mehr ich esse, desto dicker werde ich.",
+      "options": ["Je", "Desto", "Umso", "Weil"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Je در ابتدای جمله اول می‌آید: Je mehr ich esse..." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Je länger ich warte, {0} nervöser werde ich.",
+      "options": ["je", "desto", "weil", "dass"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "desto در ابتدای جمله دوم می‌آید: ...desto nervöser werde ich." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در کلاس آلمانی",
+      "scene": {
+        "location": "classroom",
+        "description": { "de": "Im Deutschkurs", "fa": "در کلاس آلمانی" }
+      },
+      "lines": [
+        { "speaker": "Lehrer", "text": { "de": "Heute lernen wir je...desto. Wer kennt ein Beispiel?", "fa": "امروز je...desto یاد می‌گیریم. کی یک مثال می‌داند؟" }, "mood": "neutral" },
+        { "speaker": "Eli", "text": { "de": "Je mehr ich übe, desto besser werde ich!", "fa": "هرچه بیشتر تمرین کنم، بهتر می‌شوم!" }, "mood": "happy" },
+        { "speaker": "Lehrer", "text": { "de": "Perfekt! Und wo steht das Verb in der je-Klausel?", "fa": "عالی! و فعل در جمله je کجاست؟" }, "mood": "happy" },
+        { "speaker": "Tom", "text": { "de": "Am Ende! Weil es ein Nebensatz ist.", "fa": "در آخر! چون جمله پیرو است." }, "mood": "neutral" },
+        { "speaker": "Lehrer", "text": { "de": "Genau richtig!", "fa": "کاملاً درست!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "الی چه مثالی زد؟", "options": ["درباره غذا", "درباره تمرین", "درباره خواب"], "correctIndex": 1, "explanation": "الی گفت: Je mehr ich übe, desto besser werde ich" },
+        { "question": "فعل در جمله je کجا قرار می‌گیرد؟", "options": ["اول", "دوم", "آخر"], "correctIndex": 2, "explanation": "تام گفت: Am Ende! Weil es ein Nebensatz ist." }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s4",
+      "title": "ترتیب کلمات در je...desto",
+      "content": "📝 **ترتیب کلمات:**\n\n**جمله je (جمله پیرو):**\n```\nJe + صفت تفضیلی + ... + فعل\n```\nمثال: Je **mehr** ich **lerne**\n\n**جمله desto (جمله اصلی):**\n```\ndesto + صفت تفضیلی + فعل + فاعل + ...\n```\nمثال: desto **besser** **verstehe** **ich**\n\n**نکته:** بعد از desto، فعل فوراً می‌آید (جایگاه دوم)!",
+      "examples": [
+        { "de": "Je früher du aufstehst, desto mehr schaffst du.", "fa": "هرچه زودتر بیدار شوی، بیشتر انجام می‌دهی." },
+        { "de": "Je billiger das Produkt, desto schlechter die Qualität.", "fa": "هرچه محصول ارزان‌تر، کیفیت بدتر." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "umso", "fa": "هرچه (مترادف desto)" },
+      "example": { "text": { "de": "Je früher, umso besser.", "fa": "هرچه زودتر، بهتر." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "umso",
+      "translation": "هرچه",
+      "syllables": ["um", "so"],
+      "distractors": ["am", "sa", "im"]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["desto müder bin ich.", "ich arbeite,", "Je länger"],
+      "correctOrder": [2, 1, 0],
+      "correctSentence": { "de": "Je länger ich arbeite, desto müder bin ich.", "fa": "هرچه بیشتر کار کنم، خسته‌تر می‌شوم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["umso glücklicher werde ich.", "verdiene,", "Je mehr ich"],
+      "correctOrder": [2, 1, 0],
+      "correctSentence": { "de": "Je mehr ich verdiene, umso glücklicher werde ich.", "fa": "هرچه بیشتر درآمد داشته باشم، خوشحال‌تر می‌شوم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "شکل درست صفت را انتخاب کنید",
+      "sentence": "Je {0} das Auto, desto teurer die Versicherung.",
+      "options": ["schnell", "schneller", "am schnellsten", "schnellste"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "در ساختار je...desto همیشه از صفت تفضیلی (Komparativ) استفاده می‌شود: schneller" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "شکل درست صفت را انتخاب کنید",
+      "sentence": "Je kälter es wird, desto {0} brauchen wir Heizung.",
+      "options": ["mehr", "viel", "am meisten", "meist"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "در ساختار je...desto همیشه از صفت تفضیلی استفاده می‌شود: mehr (تفضیلی viel)" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در ساختار je...desto، می‌توان umso را به جای desto استفاده کرد.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! desto و umso کاملاً مترادف هستند و می‌توان از هر دو استفاده کرد." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جمله desto، فعل در آخر قرار می‌گیرد.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! در جمله desto، فعل در جایگاه دوم قرار می‌گیرد: desto besser verstehe ich" }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "die Übung", "fa": "تمرین" },
+      "example": { "text": { "de": "Übung macht den Meister.", "fa": "تمرین استاد می‌سازد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "Übung",
+      "translation": "تمرین",
+      "syllables": ["Ü", "bung"],
+      "distractors": ["U", "bang", "bing"]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "جمله je را با جمله desto مناسب جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Je mehr ich lerne," },
+        { "id": "i2", "text": "Je älter ich werde," },
+        { "id": "i3", "text": "Je früher ich aufstehe," },
+        { "id": "i4", "text": "Je teurer das Hotel," }
+      ],
+      "matches": [
+        { "id": "m1", "text": "desto besser verstehe ich." },
+        { "id": "m2", "text": "desto weiser werde ich." },
+        { "id": "m3", "text": "desto mehr schaffe ich." },
+        { "id": "m4", "text": "desto komfortabler ist es." }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "üben", "fa": "تمرین کردن" },
+      "example": { "text": { "de": "Ich übe jeden Tag Deutsch.", "fa": "هر روز آلمانی تمرین می‌کنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "üben",
+      "translation": "تمرین کردن",
+      "syllables": ["ü", "ben"],
+      "distractors": ["u", "ban", "bin"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s8",
+      "title": "صفات تفضیلی رایج در je...desto",
+      "content": "📝 **صفات تفضیلی پرکاربرد:**\n\n| صفت | تفضیلی | معنی |\n|-----|--------|------|\n| viel | **mehr** | بیشتر |\n| gut | **besser** | بهتر |\n| wenig | **weniger** | کمتر |\n| groß | **größer** | بزرگ‌تر |\n| schnell | **schneller** | سریع‌تر |\n| alt | **älter** | پیرتر/قدیمی‌تر |\n| jung | **jünger** | جوان‌تر |\n| teuer | **teurer** | گران‌تر |\n| billig | **billiger** | ارزان‌تر |\n\n**مثال‌ها:**\n• Je **mehr**, desto **besser**. (هرچه بیشتر، بهتر)\n• Je **älter**, desto **weiser**. (هرچه پیرتر، عاقل‌تر)",
+      "examples": [
+        { "de": "Je weniger ich schlafe, desto müder bin ich.", "fa": "هرچه کمتر بخوابم، خسته‌تر هستم." },
+        { "de": "Je größer das Haus, desto höher die Miete.", "fa": "هرچه خانه بزرگ‌تر، اجاره بالاتر." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Je {0} du lernst, desto {1} werden deine Noten.",
+      "options": ["mehr", "besser"],
+      "correctAnswers": [0, 1],
+      "feedback": { "explanation": "Je mehr du lernst, desto besser werden deine Noten. (هرچه بیشتر یاد بگیری، نمراتت بهتر می‌شوند)" }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "هرچه زودتر بیایی، بهتر است.",
+      "sentenceTemplate": "Je {0} du kommst, desto besser.",
+      "options": ["früher", "später", "schneller", "langsamer"],
+      "correctAnswers": [0],
+      "correctTranslation": { "de": "Je früher du kommst, desto besser.", "fa": "هرچه زودتر بیایی، بهتر است." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "هرچه بیشتر کار کنم، کمتر وقت آزاد دارم.",
+      "sentenceTemplate": "Je mehr ich arbeite, desto {0} Freizeit habe ich.",
+      "options": ["weniger", "mehr", "besser", "schlechter"],
+      "correctAnswers": [0],
+      "correctTranslation": { "de": "Je mehr ich arbeite, desto weniger Freizeit habe ich.", "fa": "هرچه بیشتر کار کنم، کمتر وقت آزاد دارم." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "گفتگو درباره زبان‌آموزی",
+      "scene": {
+        "location": "cafe",
+        "description": { "de": "Im Café", "fa": "در کافه" }
+      },
+      "lines": [
+        { "speaker": "Eli", "text": { "de": "Ich lerne jetzt seit einem Jahr Deutsch.", "fa": "الان یک سال است که آلمانی یاد می‌گیرم." }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Und wie geht es dir damit?", "fa": "و چطور پیش می‌رود؟" }, "mood": "neutral" },
+        { "speaker": "Eli", "text": { "de": "Je mehr ich übe, desto sicherer fühle ich mich.", "fa": "هرچه بیشتر تمرین می‌کنم، احساس اطمینان بیشتری دارم." }, "mood": "happy" },
+        { "speaker": "Tom", "text": { "de": "Das stimmt! Je länger man lernt, desto einfacher wird es.", "fa": "درسته! هرچه بیشتر یاد بگیری، آسان‌تر می‌شود." }, "mood": "happy" },
+        { "speaker": "Eli", "text": { "de": "Genau! Übung macht den Meister.", "fa": "دقیقاً! تمرین استاد می‌سازد." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "الی چه مدت آلمانی یاد می‌گیرد؟", "options": ["شش ماه", "یک سال", "دو سال"], "correctIndex": 1, "explanation": "الی گفت: Ich lerne jetzt seit einem Jahr Deutsch" },
+        { "question": "با تمرین بیشتر چه اتفاقی می‌افتد؟", "options": ["سخت‌تر می‌شود", "احساس اطمینان بیشتر", "خسته‌تر می‌شود"], "correctIndex": 1, "explanation": "الی گفت: Je mehr ich übe, desto sicherer fühle ich mich" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "sich verbessern", "fa": "بهتر شدن/پیشرفت کردن" },
+      "example": { "text": { "de": "Mein Deutsch verbessert sich.", "fa": "آلمانی من بهتر می‌شود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "verbessern",
+      "translation": "بهتر کردن",
+      "syllables": ["ver", "bes", "sern"],
+      "distractors": ["vor", "bas", "sarn"]
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: نکات یادگیری زبان",
+      "passage": {
+        "de": "Experten sagen: Je früher man mit dem Sprachenlernen beginnt, desto leichter fällt es. Aber auch Erwachsene können erfolgreich lernen. Je mehr Zeit man investiert, desto schneller macht man Fortschritte. Je öfter man die Sprache benutzt, desto natürlicher wird sie. Und je mehr Fehler man macht, desto mehr lernt man daraus!",
+        "fa": "کارشناسان می‌گویند: هرچه زودتر یادگیری زبان را شروع کنی، آسان‌تر است. اما بزرگسالان هم می‌توانند با موفقیت یاد بگیرند. هرچه بیشتر وقت بگذاری، سریع‌تر پیشرفت می‌کنی. هرچه بیشتر از زبان استفاده کنی، طبیعی‌تر می‌شود. و هرچه بیشتر اشتباه کنی، بیشتر یاد می‌گیری!"
+      },
+      "questions": [
+        { "question": "چه وقت یادگیری زبان آسان‌تر است؟", "options": ["وقتی زودتر شروع کنی", "وقتی دیرتر شروع کنی", "فرقی نمی‌کند"], "correctIndex": 0, "explanation": "متن گفت: Je früher man beginnt, desto leichter fällt es" },
+        { "question": "با سرمایه‌گذاری بیشتر وقت چه می‌شود؟", "options": ["پیشرفت کندتر", "پیشرفت سریع‌تر", "بدون تغییر"], "correctIndex": 1, "explanation": "متن گفت: Je mehr Zeit man investiert, desto schneller macht man Fortschritte" },
+        { "question": "اشتباه کردن چه تأثیری دارد؟", "options": ["منفی است", "بیشتر یاد می‌گیری", "مهم نیست"], "correctIndex": 1, "explanation": "متن گفت: Je mehr Fehler man macht, desto mehr lernt man daraus" }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع je...desto",
+      "instruction": "جواب درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "Je ___ ich lerne, ...", "left": "mehr", "right": "viel", "correctSide": "left" },
+        { "prompt": "..., desto ___ verstehe ich.", "left": "gut", "right": "besser", "correctSide": "right" },
+        { "prompt": "فعل در جمله je:", "left": "آخر", "right": "دوم", "correctSide": "left" },
+        { "prompt": "فعل در جمله desto:", "left": "آخر", "right": "دوم", "correctSide": "right" },
+        { "prompt": "desto = ?", "left": "umso", "right": "weil", "correctSide": "left" },
+        { "prompt": "Je älter, desto ___", "left": "weiser", "right": "weise", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Je {0} das Wetter ist, desto mehr Menschen gehen in den Park.",
+      "options": ["schön", "schöner", "am schönsten", "schönste"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "در ساختار je...desto همیشه صفت تفضیلی: schöner" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["desto besser schmeckt es.", "das Essen ist,", "Je frischer"],
+      "correctOrder": [2, 1, 0],
+      "correctSentence": { "de": "Je frischer das Essen ist, desto besser schmeckt es.", "fa": "هرچه غذا تازه‌تر باشد، بهتر مزه می‌دهد." }
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die Sprachschule", "fa": "آموزشگاه زبان" },
+      "characters": ["Lehrer", "Schüler"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "In der Sprachschule gibt der Lehrer Tipps.", "fa": "در آموزشگاه زبان، معلم نکاتی می‌دهد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lehrer",
+          "text": { "de": "Je mehr ihr sprecht, desto flüssiger wird euer Deutsch.", "fa": "هرچه بیشتر صحبت کنید، آلمانی‌تان روان‌تر می‌شود." },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "با صحبت کردن بیشتر چه می‌شود؟",
+          "options": ["سخت‌تر می‌شود", "روان‌تر می‌شود", "فراموش می‌شود"],
+          "correctIndex": 1,
+          "explanation": "معلم گفت: desto flüssiger wird euer Deutsch"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lehrer",
+          "text": { "de": "Und je öfter ihr Fehler macht, desto mehr lernt ihr!", "fa": "و هرچه بیشتر اشتباه کنید، بیشتر یاد می‌گیرید!" },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "معلم درباره اشتباهات چه گفت؟",
+          "options": ["اشتباه نکنید", "از اشتباه یاد می‌گیرید", "اشتباه بد است"],
+          "correctIndex": 1,
+          "explanation": "معلم گفت: Je öfter ihr Fehler macht, desto mehr lernt ihr"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Schüler",
+          "text": { "de": "Also: Je mehr wir üben, desto besser werden wir!", "fa": "پس: هرچه بیشتر تمرین کنیم، بهتر می‌شویم!" },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "نتیجه‌گیری شاگرد چه بود؟",
+          "options": ["تمرین مهم نیست", "تمرین بیشتر، پیشرفت بیشتر", "کافی است"],
+          "correctIndex": 1,
+          "explanation": "شاگرد گفت: Je mehr wir üben, desto besser werden wir"
+        }
+      ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "در ساختار je...desto، همیشه از صفت تفضیلی (Komparativ) استفاده می‌شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! در هر دو بخش je و desto باید از صفت تفضیلی استفاده کرد: Je mehr, desto besser (نه: Je viel, desto gut)" }
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Je mehr ich übe, desto besser werde ich.",
+      "translation": "هرچه بیشتر تمرین کنم، بهتر می‌شوم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Je älter man wird, desto weiser wird man.",
+      "translation": "هرچه آدم پیرتر می‌شود، عاقل‌تر می‌شود."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "Je + فعل کجا؟", "options": ["آخر", "دوم"], "correctAnswerIndex": 0 },
+        { "question": "desto + فعل کجا؟", "options": ["آخر", "دوم"], "correctAnswerIndex": 1 },
+        { "question": "desto = ?", "options": ["umso", "weil"], "correctAnswerIndex": 0 },
+        { "question": "Je mehr, desto ___", "options": ["besser", "gut"], "correctAnswerIndex": 0 },
+        { "question": "Je ___, desto weiser", "options": ["älter", "alt"], "correctAnswerIndex": 0 },
+        { "question": "صفت در je...desto:", "options": ["تفضیلی", "عالی"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "je", "fa": "هرچه (جمله اول)" },
+        { "de": "desto", "fa": "هرچه (جمله دوم)" },
+        { "de": "umso", "fa": "مترادف desto" },
+        { "de": "Komparativ", "fa": "صفت تفضیلی" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات مربوط به je...desto را پیدا کنید",
+      "targetWords": ["je", "desto", "umso", "mehr", "besser", "älter"],
+      "gridSize": { "rows": 8, "cols": 8 },
+      "timeLimit": 90
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "je...desto", "fa": "هرچه...___", "options": ["اما", "هرچه", "چون", "که"], "correctIndex": 1 },
+        { "de": "üben", "fa": "___ کردن", "options": ["تمرین", "خواب", "غذا", "کار"], "correctIndex": 0 },
+        { "de": "sich verbessern", "fa": "___ شدن", "options": ["بدتر", "بهتر", "کوچک‌تر", "بزرگ‌تر"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp2",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما ساختار je...desto/umso را یاد گرفتید!",
+      "keyPoints": [
+        "je...desto/umso برای بیان رابطه تناسبی: هرچه...هرچه",
+        "در جمله je، فعل در آخر قرار می‌گیرد (جمله پیرو)",
+        "در جمله desto، فعل در جایگاه دوم قرار می‌گیرد",
+        "desto و umso کاملاً مترادف هستند",
+        "همیشه از صفت تفضیلی (Komparativ) استفاده می‌شود"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "je", "fa": "هرچه (جمله اول)" } },
+        { "word": { "de": "desto", "fa": "هرچه (جمله دوم)" } },
+        { "word": { "de": "umso", "fa": "مترادف desto" } },
+        { "word": { "de": "die Übung", "fa": "تمرین" } },
+        { "word": { "de": "üben", "fa": "تمرین کردن" } },
+        { "word": { "de": "sich verbessern", "fa": "بهتر شدن" } }
+      ]
+    }
+  ]
+}
