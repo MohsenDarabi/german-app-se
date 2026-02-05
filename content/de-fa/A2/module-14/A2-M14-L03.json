@@ -1,0 +1,480 @@
+{
+  "id": "A2-M14-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Verben mit Präpositionen", "fa": "فعل‌ها با حروف اضافه" },
+  "description": "یاد بگیرید فعل‌هایی که با حروف اضافه خاص می‌آیند: warten auf، denken an، sich freuen über",
+  "level": "A2",
+  "module": 14,
+  "lessonNumber": 3,
+  "totalSteps": 44,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "warten auf", "fa": "منتظر ... بودن", "grammar": { "pos": "verb", "case": "Akkusativ" } },
+    { "de": "denken an", "fa": "فکر کردن به", "grammar": { "pos": "verb", "case": "Akkusativ" } },
+    { "de": "sich freuen auf", "fa": "مشتاق بودن", "grammar": { "pos": "verb", "case": "Akkusativ" } },
+    { "de": "sich freuen über", "fa": "خوشحال بودن از", "grammar": { "pos": "verb", "case": "Akkusativ" } },
+    { "de": "träumen von", "fa": "رویای ... دیدن", "grammar": { "pos": "verb", "case": "Dativ" } },
+    { "de": "Angst haben vor", "fa": "ترسیدن از", "grammar": { "pos": "verb", "case": "Dativ" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "فعل با حرف اضافه",
+      "content": "📝 **Verben mit Präpositionen**\n\nبعضی فعل‌ها همیشه با یک حرف اضافه خاص می‌آیند:\n\n**با Akkusativ:**\n• warten **auf** = منتظر ... بودن\n• denken **an** = فکر کردن به\n• sich freuen **auf** = مشتاق بودن\n• sich freuen **über** = خوشحال بودن از\n\n**با Dativ:**\n• träumen **von** = رویای ... دیدن\n• Angst haben **vor** = ترسیدن از\n\n💡 این حروف اضافه را باید با فعل حفظ کنید!",
+      "examples": [
+        { "de": "Ich warte auf den Bus.", "fa": "منتظر اتوبوس هستم." },
+        { "de": "Ich denke an dich.", "fa": "به تو فکر می‌کنم." },
+        { "de": "Ich freue mich auf das Wochenende.", "fa": "مشتاق آخر هفته هستم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "warten auf", "fa": "منتظر ... بودن" },
+      "example": { "text": { "de": "Ich warte auf meinen Freund.", "fa": "منتظر دوستم هستم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "warten",
+      "translation": "منتظر بودن",
+      "syllables": ["war", "ten"],
+      "distractors": ["wer", "tan", "tin"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "denken an", "fa": "فکر کردن به" },
+      "example": { "text": { "de": "Ich denke oft an meine Familie.", "fa": "اغلب به خانواده‌ام فکر می‌کنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "denken",
+      "translation": "فکر کردن",
+      "syllables": ["den", "ken"],
+      "distractors": ["dan", "kan", "kin"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "sich freuen auf", "fa": "مشتاق بودن (برای آینده)" },
+      "example": { "text": { "de": "Ich freue mich auf die Ferien.", "fa": "مشتاق تعطیلات هستم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "freuen",
+      "translation": "خوشحال شدن",
+      "syllables": ["freu", "en"],
+      "distractors": ["frau", "an", "on"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "auf یا über؟",
+      "content": "📝 **sich freuen auf vs. über**\n\n**sich freuen auf + Akk.**\n= مشتاق چیزی بودن (در آینده)\n• Ich freue mich **auf** die Party.\n= مشتاق مهمانی هستم. (هنوز نیامده)\n\n**sich freuen über + Akk.**\n= خوشحال بودن از چیزی (الان/گذشته)\n• Ich freue mich **über** das Geschenk.\n= از هدیه خوشحالم. (الان دارمش)\n\n💡 auf = آینده، über = حال/گذشته",
+      "examples": [
+        { "de": "Ich freue mich auf meinen Geburtstag.", "fa": "مشتاق تولدم هستم. (هنوز نیامده)" },
+        { "de": "Ich freue mich über die gute Note.", "fa": "از نمره خوب خوشحالم. (الان گرفتم)" },
+        { "de": "Wir freuen uns auf den Urlaub.", "fa": "مشتاق تعطیلات هستیم." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«منتظر اتوبوس هستم» به آلمانی چیست؟",
+      "options": ["Ich warte an den Bus.", "Ich warte auf den Bus.", "Ich warte für den Bus.", "Ich warte von dem Bus."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! warten auf + Akk. = منتظر ... بودن", "incorrect": "warten auf + Akkusativ = منتظر ... بودن" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "«به تو فکر می‌کنم» به آلمانی چیست؟",
+      "options": ["Ich denke auf dich.", "Ich denke über dich.", "Ich denke an dich.", "Ich denke von dir."],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! denken an + Akk. = فکر کردن به", "incorrect": "denken an + Akkusativ = فکر کردن به" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich warte {0} meinen Freund.",
+      "options": ["an", "auf", "über", "von"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "warten auf + Akk. = منتظر ... بودن" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich denke oft {0} meine Familie.",
+      "options": ["auf", "an", "über", "von"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "denken an + Akk. = فکر کردن به" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "انتظار",
+      "context": "آنا و تام در ایستگاه اتوبوس هستند",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Auf wen wartest du?", "fa": "منتظر کی هستی؟" } },
+        { "speaker": "Tom", "text": { "de": "Ich warte auf meine Schwester.", "fa": "منتظر خواهرم هستم." } },
+        { "speaker": "Anna", "text": { "de": "Freust du dich auf das Konzert heute Abend?", "fa": "مشتاق کنسرت امشب هستی؟" } },
+        { "speaker": "Tom", "text": { "de": "Ja, sehr! Ich denke die ganze Zeit daran.", "fa": "بله، خیلی! همه‌اش به آن فکر می‌کنم." } },
+        { "speaker": "Anna", "text": { "de": "Ich freue mich auch sehr darauf!", "fa": "من هم خیلی مشتاقم!" } }
+      ],
+      "questions": [
+        {
+          "question": "تام منتظر کیست؟",
+          "options": ["دوستش", "خواهرش", "مادرش"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: Ich warte auf meine Schwester"
+        },
+        {
+          "question": "آن‌ها مشتاق چه چیزی هستند؟",
+          "options": ["سفر", "کنسرت", "مهمانی"],
+          "correctIndex": 1,
+          "explanation": "آنا گفت: Freust du dich auf das Konzert"
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "sich freuen über", "fa": "خوشحال بودن از (حال/گذشته)" },
+      "example": { "text": { "de": "Ich freue mich über das Geschenk.", "fa": "از هدیه خوشحالم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "Geschenk",
+      "translation": "هدیه",
+      "syllables": ["Ge", "schenk"],
+      "distractors": ["Go", "schank", "schonk"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "träumen von", "fa": "رویای ... دیدن" },
+      "example": { "text": { "de": "Ich träume von einer Weltreise.", "fa": "رویای سفر دور دنیا را دارم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "träumen",
+      "translation": "خواب دیدن",
+      "syllables": ["träu", "men"],
+      "distractors": ["trou", "man", "mon"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s8",
+      "title": "فعل‌های بیشتر",
+      "content": "📝 **فعل‌های بیشتر با حروف اضافه**\n\n**با Akkusativ:**\n• sich interessieren **für** = علاقه‌مند بودن به\n• bitten **um** = درخواست کردن\n• sprechen **über** = صحبت کردن درباره\n\n**با Dativ:**\n• träumen **von** = رویای ... دیدن\n• Angst haben **vor** = ترسیدن از\n• erzählen **von** = تعریف کردن از\n\n💡 حرف اضافه را همراه فعل حفظ کنید!",
+      "examples": [
+        { "de": "Ich interessiere mich für Musik.", "fa": "به موسیقی علاقه‌مندم." },
+        { "de": "Er hat Angst vor Spinnen.", "fa": "از عنکبوت می‌ترسد." },
+        { "de": "Sie erzählt von ihrer Reise.", "fa": "از سفرش تعریف می‌کند." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Bus.", "den", "warte", "auf", "Ich"],
+      "correctOrder": [4, 2, 3, 1, 0],
+      "correctSentence": { "de": "Ich warte auf den Bus.", "fa": "منتظر اتوبوس هستم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["dich.", "denke", "an", "Ich"],
+      "correctOrder": [3, 1, 2, 0],
+      "correctSentence": { "de": "Ich denke an dich.", "fa": "به تو فکر می‌کنم." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "برای چیزی در آینده که مشتاقش هستید، کدام درست است؟",
+      "options": ["sich freuen über", "sich freuen auf", "sich freuen von", "sich freuen an"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! sich freuen auf = مشتاق بودن (آینده)", "incorrect": "auf برای آینده، über برای حال/گذشته" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "«از هدیه خوشحالم» به آلمانی چیست؟",
+      "options": ["Ich freue mich auf das Geschenk.", "Ich freue mich über das Geschenk.", "Ich freue mich von dem Geschenk.", "Ich freue mich an das Geschenk."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! sich freuen über = خوشحال بودن از (الان)", "incorrect": "über برای چیزی که الان دارید یا اتفاق افتاده" }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "Angst haben vor", "fa": "ترسیدن از" },
+      "example": { "text": { "de": "Ich habe Angst vor Hunden.", "fa": "از سگ‌ها می‌ترسم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Angst",
+      "translation": "ترس",
+      "syllables": ["Angst"],
+      "distractors": ["Anst", "Ungst", "Engst"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich freue mich {0} das Wochenende.",
+      "options": ["über", "auf", "an", "von"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "sich freuen auf = مشتاق بودن (آخر هفته هنوز نیامده)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er hat Angst {0} Spinnen.",
+      "options": ["auf", "an", "von", "vor"],
+      "correctAnswers": [3],
+      "feedback": { "explanation": "Angst haben vor + Dat. = ترسیدن از" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "رویاها",
+      "context": "لیزا و ماکس درباره رویاهایشان صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Wovon träumst du?", "fa": "رویای چه چیزی را داری؟" } },
+        { "speaker": "Max", "text": { "de": "Ich träume von einer Weltreise.", "fa": "رویای سفر دور دنیا را دارم." } },
+        { "speaker": "Lisa", "text": { "de": "Das klingt toll! Hast du Angst vor dem Fliegen?", "fa": "عالی به نظر می‌رسد! از پرواز می‌ترسی؟" } },
+        { "speaker": "Max", "text": { "de": "Nein, ich freue mich immer auf Flugreisen.", "fa": "نه، همیشه مشتاق سفر هوایی هستم." } },
+        { "speaker": "Lisa", "text": { "de": "Ich interessiere mich auch für Reisen.", "fa": "من هم به سفر علاقه‌مندم." } }
+      ],
+      "questions": [
+        {
+          "question": "ماکس رویای چه چیزی را دارد؟",
+          "options": ["خانه بزرگ", "سفر دور دنیا", "ماشین جدید"],
+          "correctIndex": 1,
+          "explanation": "ماکس گفت: Ich träume von einer Weltreise"
+        },
+        {
+          "question": "ماکس از پرواز می‌ترسد؟",
+          "options": ["بله", "نه", "کمی"],
+          "correctIndex": 1,
+          "explanation": "ماکس گفت: Nein, ich freue mich immer auf Flugreisen"
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "فعل را با حرف اضافه درست وصل کنید",
+      "items": [
+        { "id": "i1", "text": "warten" },
+        { "id": "i2", "text": "denken" },
+        { "id": "i3", "text": "träumen" },
+        { "id": "i4", "text": "Angst haben" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "auf" },
+        { "id": "m2", "text": "an" },
+        { "id": "m3", "text": "von" },
+        { "id": "m4", "text": "vor" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"],
+        ["i4", "m4"]
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "کدام حرف اضافه؟",
+      "instruction": "این فعل با کدام حرف اضافه می‌آید؟",
+      "questions": [
+        { "prompt": "warten ...", "left": "auf", "right": "an", "correctSide": "left" },
+        { "prompt": "denken ...", "left": "auf", "right": "an", "correctSide": "right" },
+        { "prompt": "träumen ...", "left": "von", "right": "auf", "correctSide": "left" },
+        { "prompt": "Angst haben ...", "left": "von", "right": "vor", "correctSide": "right" },
+        { "prompt": "sich freuen ... (آینده)", "left": "auf", "right": "über", "correctSide": "left" },
+        { "prompt": "sich freuen ... (حال)", "left": "auf", "right": "über", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Geschenk.", "das", "mich", "freue", "über", "Ich"],
+      "correctOrder": [5, 3, 2, 4, 1, 0],
+      "correctSentence": { "de": "Ich freue mich über das Geschenk.", "fa": "از هدیه خوشحالم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo4",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Weltreise.", "von", "einer", "träume", "Ich"],
+      "correctOrder": [4, 3, 1, 2, 0],
+      "correctSentence": { "de": "Ich träume von einer Weltreise.", "fa": "رویای سفر دور دنیا را دارم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich interessiere mich {0} Sport.",
+      "options": ["auf", "an", "für", "von"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "sich interessieren für + Akk. = علاقه‌مند بودن به" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sie erzählt {0} ihrer Reise.",
+      "options": ["über", "an", "von", "auf"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "erzählen von + Dat. = تعریف کردن از" }
+    },
+    {
+      "type": "dialog",
+      "id": "d3",
+      "title": "علایق",
+      "context": "الی و تام درباره علایقشان صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Eli", "text": { "de": "Wofür interessierst du dich?", "fa": "به چه چیزی علاقه‌مندی؟" } },
+        { "speaker": "Tom", "text": { "de": "Ich interessiere mich für Fotografie.", "fa": "به عکاسی علاقه‌مندم." } },
+        { "speaker": "Eli", "text": { "de": "Cool! Ich freue mich über deine Fotos.", "fa": "باحال! از عکس‌هایت خوشحالم." } },
+        { "speaker": "Tom", "text": { "de": "Danke! Ich denke oft an neue Motive.", "fa": "ممنون! اغلب به موضوعات جدید فکر می‌کنم." } },
+        { "speaker": "Eli", "text": { "de": "Ich warte schon auf deine nächste Ausstellung!", "fa": "منتظر نمایشگاه بعدی‌ات هستم!" } }
+      ],
+      "questions": [
+        {
+          "question": "تام به چه چیزی علاقه‌مند است؟",
+          "options": ["موسیقی", "عکاسی", "ورزش"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: Ich interessiere mich für Fotografie"
+        },
+        {
+          "question": "الی منتظر چیست؟",
+          "options": ["عکس‌های جدید", "نمایشگاه بعدی", "سفر"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: Ich warte schon auf deine nächste Ausstellung"
+        }
+      ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "warten auf با Akkusativ می‌آید.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! warten auf + Akkusativ = منتظر ... بودن"
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "sich freuen auf برای چیزی که الان دارید استفاده می‌شود.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! auf برای آینده، über برای حال/گذشته"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "منتظر دوستم هستم.",
+      "sentenceTemplate": "Ich {0} {1} meinen Freund.",
+      "options": ["auf", "warte"],
+      "correctAnswers": [1, 0],
+      "correctTranslation": {
+        "de": "Ich warte auf meinen Freund.",
+        "fa": "منتظر دوستم هستم."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "مشتاق تعطیلات هستم.",
+      "sentenceTemplate": "Ich {0} {1} auf die Ferien.",
+      "options": ["mich", "freue"],
+      "correctAnswers": [1, 0],
+      "correctTranslation": {
+        "de": "Ich freue mich auf die Ferien.",
+        "fa": "مشتاق تعطیلات هستم."
+      }
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "warten auf", "fa": "منتظر بودن", "options": ["فکر کردن به", "منتظر بودن", "ترسیدن از", "خواب دیدن"], "correctIndex": 1 },
+        { "de": "denken an", "fa": "فکر کردن به", "options": ["منتظر بودن", "ترسیدن از", "فکر کردن به", "علاقه‌مند بودن"], "correctIndex": 2 },
+        { "de": "träumen von", "fa": "رویا دیدن", "options": ["ترسیدن از", "رویا دیدن", "منتظر بودن", "فکر کردن به"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich warte auf den Bus.",
+      "translation": "منتظر اتوبوس هستم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Ich freue mich auf das Wochenende.",
+      "translation": "مشتاق آخر هفته هستم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Ich denke oft an dich.",
+      "translation": "اغلب به تو فکر می‌کنم."
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "warten auf", "fa": "منتظر بودن" },
+        { "de": "denken an", "fa": "فکر کردن به" },
+        { "de": "träumen von", "fa": "رویا دیدن" },
+        { "de": "Angst haben vor", "fa": "ترسیدن از" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp1",
+      "title": "آفرین! 🎉",
+      "message": "فعل‌ها با حروف اضافه را یاد گرفتید!",
+      "keyPoints": [
+        "warten auf + Akk. = منتظر ... بودن",
+        "denken an + Akk. = فکر کردن به",
+        "sich freuen auf + Akk. = مشتاق بودن (آینده)",
+        "sich freuen über + Akk. = خوشحال بودن از (حال)",
+        "träumen von + Dat. = رویای ... دیدن",
+        "Angst haben vor + Dat. = ترسیدن از"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "warten auf", "fa": "منتظر بودن" } },
+        { "word": { "de": "denken an", "fa": "فکر کردن به" } },
+        { "word": { "de": "sich freuen auf", "fa": "مشتاق بودن" } },
+        { "word": { "de": "sich freuen über", "fa": "خوشحال بودن از" } },
+        { "word": { "de": "träumen von", "fa": "رویا دیدن" } },
+        { "word": { "de": "Angst haben vor", "fa": "ترسیدن از" } }
+      ]
+    }
+  ]
+}

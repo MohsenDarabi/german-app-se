@@ -877,6 +877,37 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/A2/A2-M13-L04"
       }
     ]
+  },
+  {
+    id: "module-14",
+    title: "بخش ۱۴: حروف اضافه (Präpositionen)",
+    level: "A2",
+    lessons: [
+      {
+        id: "A2-M14-L01",
+        title: "Wechselpräpositionen - حروف اضافه دوگانه",
+        description: "یاد بگیرید حروف اضافه‌ای که هم با Akkusativ و هم با Dativ می‌آیند.",
+        path: "/learn/de-fa/A2/A2-M14-L01"
+      },
+      {
+        id: "A2-M14-L02",
+        title: "Temporale Präpositionen - حروف اضافه زمانی",
+        description: "یاد بگیرید حروف اضافه زمانی: vor، nach، seit، bis، während، ab.",
+        path: "/learn/de-fa/A2/A2-M14-L02"
+      },
+      {
+        id: "A2-M14-L03",
+        title: "Verben mit Präpositionen - فعل‌ها با حروف اضافه",
+        description: "یاد بگیرید فعل‌هایی که با حروف اضافه خاص می‌آیند: warten auf، denken an، sich freuen über.",
+        path: "/learn/de-fa/A2/A2-M14-L03"
+      },
+      {
+        id: "A2-M14-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور همه حروف اضافه: Wechselpräpositionen، زمانی و فعل‌ها با حروف اضافه.",
+        path: "/learn/de-fa/A2/A2-M14-L04"
+      }
+    ]
   }
 ];
 

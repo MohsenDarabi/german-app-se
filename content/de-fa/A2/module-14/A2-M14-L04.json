@@ -1,0 +1,479 @@
+{
+  "id": "A2-M14-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Präpositionen - Zusammenfassung", "fa": "حروف اضافه - جمع‌بندی" },
+  "description": "مرور همه حروف اضافه: Wechselpräpositionen، زمانی و فعل‌ها با حروف اضافه",
+  "level": "A2",
+  "module": 14,
+  "lessonNumber": 4,
+  "totalSteps": 44,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "in", "fa": "در / به داخل", "grammar": { "pos": "preposition" } },
+    { "de": "auf", "fa": "روی / به روی", "grammar": { "pos": "preposition" } },
+    { "de": "vor", "fa": "جلوی / قبل از", "grammar": { "pos": "preposition" } },
+    { "de": "nach", "fa": "بعد از", "grammar": { "pos": "preposition" } },
+    { "de": "seit", "fa": "از (زمان)", "grammar": { "pos": "preposition" } },
+    { "de": "warten auf", "fa": "منتظر بودن", "grammar": { "pos": "verb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "مرور حروف اضافه",
+      "content": "📝 **سه نوع حرف اضافه یاد گرفتید:**\n\n**۱. Wechselpräpositionen (دوگانه):**\nan, auf, hinter, in, neben, über, unter, vor, zwischen\n• Wohin? (حرکت) = Akkusativ\n• Wo? (مکان) = Dativ\n\n**۲. Temporale (زمانی):**\nvor, nach, seit, bis, während, ab\n\n**۳. Verben mit Präpositionen:**\nwarten auf, denken an, sich freuen auf/über...\n\n💡 حرف اضافه را همراه حالت (Akk./Dat.) حفظ کنید!",
+      "examples": [
+        { "de": "Ich gehe in die Küche. (Akk.)", "fa": "به آشپزخانه می‌روم. (حرکت)" },
+        { "de": "Nach der Arbeit gehe ich nach Hause.", "fa": "بعد از کار به خانه می‌روم." },
+        { "de": "Ich warte auf den Bus.", "fa": "منتظر اتوبوس هستم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "in", "fa": "در / به داخل" },
+      "example": { "text": { "de": "Ich bin in der Küche. Ich gehe in die Küche.", "fa": "در آشپزخانه‌ام. به آشپزخانه می‌روم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "hinein",
+      "translation": "به داخل",
+      "syllables": ["hin", "ein"],
+      "distractors": ["han", "aun", "oun"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "auf", "fa": "روی / به روی" },
+      "example": { "text": { "de": "Das Buch liegt auf dem Tisch. Ich lege es auf den Tisch.", "fa": "کتاب روی میز است. روی میز می‌گذارمش." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "darauf",
+      "translation": "روی آن",
+      "syllables": ["da", "rauf"],
+      "distractors": ["do", "rouf", "rief"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "vor", "fa": "جلوی / قبل از / پیش" },
+      "example": { "text": { "de": "Vor dem Essen wasche ich meine Hände. Vor einer Stunde war ich zu Hause.", "fa": "قبل از غذا دست‌هایم را می‌شویم. یک ساعت پیش خانه بودم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "vorher",
+      "translation": "قبلاً",
+      "syllables": ["vor", "her"],
+      "distractors": ["ver", "har", "hor"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "Akkusativ یا Dativ؟",
+      "content": "📝 **قانون طلایی Wechselpräpositionen:**\n\n**Akkusativ (حرکت - Wohin?):**\n• Ich gehe in **den** Park.\n• Er legt das Buch auf **den** Tisch.\n• Sie hängt das Bild an **die** Wand.\n\n**Dativ (مکان - Wo?):**\n• Ich bin in **dem** (im) Park.\n• Das Buch liegt auf **dem** Tisch.\n• Das Bild hängt an **der** Wand.\n\n💡 فعل‌های حرکتی: gehen, legen, stellen, setzen\n💡 فعل‌های مکانی: sein, liegen, stehen, sitzen",
+      "examples": [
+        { "de": "Ich setze mich auf den Stuhl. (Akk.)", "fa": "روی صندلی می‌نشینم. (حرکت)" },
+        { "de": "Ich sitze auf dem Stuhl. (Dat.)", "fa": "روی صندلی نشسته‌ام. (مکان)" },
+        { "de": "Die Katze läuft hinter das Sofa. (Akk.)", "fa": "گربه پشت مبل می‌رود. (حرکت)" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«به آشپزخانه می‌روم» به آلمانی چیست؟",
+      "options": ["Ich gehe in der Küche.", "Ich gehe in die Küche.", "Ich bin in die Küche.", "Ich bin in der Küche."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! gehen = حرکت، پس Akkusativ: in die Küche", "incorrect": "حرکت (Wohin?) نیاز به Akkusativ دارد" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "«بعد از کار به خانه می‌روم» به آلمانی چیست؟",
+      "options": ["Vor der Arbeit gehe ich nach Hause.", "Nach der Arbeit gehe ich nach Hause.", "Seit der Arbeit gehe ich nach Hause.", "Bis der Arbeit gehe ich nach Hause."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! nach = بعد از", "incorrect": "nach + Dativ = بعد از" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich gehe in {0} Park.",
+      "options": ["dem", "den", "der", "das"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "gehen = حرکت، Park = مذکر، پس Akkusativ: den Park" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das Buch liegt auf {0} Tisch.",
+      "options": ["den", "dem", "der", "die"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "liegen = مکان، Tisch = مذکر، پس Dativ: dem Tisch" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "برنامه روز",
+      "context": "آنا و تام درباره برنامه‌شان صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Was machst du vor der Arbeit?", "fa": "قبل از کار چه کار می‌کنی؟" } },
+        { "speaker": "Tom", "text": { "de": "Ich gehe in den Park und jogge.", "fa": "به پارک می‌روم و می‌دوم." } },
+        { "speaker": "Anna", "text": { "de": "Und nach der Arbeit?", "fa": "و بعد از کار؟" } },
+        { "speaker": "Tom", "text": { "de": "Dann warte ich auf meine Freundin. Wir gehen ins Kino.", "fa": "بعد منتظر دوست‌دخترم می‌شوم. به سینما می‌رویم." } },
+        { "speaker": "Anna", "text": { "de": "Toll! Ich freue mich auf das Wochenende.", "fa": "عالی! مشتاق آخر هفته هستم." } }
+      ],
+      "questions": [
+        {
+          "question": "تام قبل از کار کجا می‌رود؟",
+          "options": ["به سینما", "به پارک", "به رستوران"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: Ich gehe in den Park"
+        },
+        {
+          "question": "تام بعد از کار منتظر کیست؟",
+          "options": ["دوستش", "دوست‌دخترش", "خواهرش"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: Dann warte ich auf meine Freundin"
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "nach", "fa": "بعد از" },
+      "example": { "text": { "de": "Nach dem Essen trinke ich Kaffee.", "fa": "بعد از غذا قهوه می‌نوشم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "nachher",
+      "translation": "بعداً",
+      "syllables": ["nach", "her"],
+      "distractors": ["nech", "har", "hor"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "seit", "fa": "از (تا حالا ادامه دارد)" },
+      "example": { "text": { "de": "Seit zwei Jahren lerne ich Deutsch.", "fa": "از دو سال پیش آلمانی یاد می‌گیرم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "seitdem",
+      "translation": "از آن موقع",
+      "syllables": ["seit", "dem"],
+      "distractors": ["sait", "dam", "dom"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s8",
+      "title": "فعل‌ها با حروف اضافه",
+      "content": "📝 **مهم‌ترین فعل‌ها با حروف اضافه:**\n\n**با Akkusativ:**\n• warten **auf** = منتظر بودن\n• denken **an** = فکر کردن به\n• sich freuen **auf** = مشتاق بودن (آینده)\n• sich freuen **über** = خوشحال بودن از (حال)\n\n**با Dativ:**\n• träumen **von** = رویا دیدن\n• Angst haben **vor** = ترسیدن از\n\n💡 این ترکیب‌ها را باید حفظ کنید!",
+      "examples": [
+        { "de": "Ich warte auf den Bus.", "fa": "منتظر اتوبوس هستم." },
+        { "de": "Ich denke an dich.", "fa": "به تو فکر می‌کنم." },
+        { "de": "Er hat Angst vor Hunden.", "fa": "از سگ‌ها می‌ترسد." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Küche.", "die", "gehe", "in", "Ich"],
+      "correctOrder": [4, 2, 3, 1, 0],
+      "correctSentence": { "de": "Ich gehe in die Küche.", "fa": "به آشپزخانه می‌روم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Arbeit", "der", "gehe", "Nach", "Hause.", "ich", "nach"],
+      "correctOrder": [3, 1, 0, 2, 5, 6, 4],
+      "correctSentence": { "de": "Nach der Arbeit gehe ich nach Hause.", "fa": "بعد از کار به خانه می‌روم." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "«منتظر اتوبوس هستم» به آلمانی چیست؟",
+      "options": ["Ich warte an den Bus.", "Ich warte auf den Bus.", "Ich warte für den Bus.", "Ich warte von dem Bus."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! warten auf + Akk.", "incorrect": "warten auf + Akkusativ = منتظر بودن" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "کدام جمله برای «از دو سال پیش آلمانی یاد می‌گیرم» درست است؟",
+      "options": ["Vor zwei Jahren lerne ich Deutsch.", "Nach zwei Jahren lerne ich Deutsch.", "Seit zwei Jahren lerne ich Deutsch.", "Bis zwei Jahren lerne ich Deutsch."],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! seit = از (هنوز ادامه دارد)", "incorrect": "seit برای چیزی که در گذشته شروع شده و هنوز ادامه دارد" }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "warten auf", "fa": "منتظر ... بودن" },
+      "example": { "text": { "de": "Ich warte auf meinen Freund.", "fa": "منتظر دوستم هستم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "warten",
+      "translation": "منتظر بودن",
+      "syllables": ["war", "ten"],
+      "distractors": ["wer", "tan", "tin"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} zwei Jahren wohne ich in Berlin.",
+      "options": ["Vor", "Nach", "Seit", "Bis"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "seit = از (هنوز در برلین زندگی می‌کنم)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich warte {0} den Bus.",
+      "options": ["an", "auf", "über", "von"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "warten auf + Akk. = منتظر بودن" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در رستوران",
+      "context": "لیزا و ماکس در رستوران هستند",
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Setz dich auf den Stuhl neben mir.", "fa": "روی صندلی کنار من بنشین." } },
+        { "speaker": "Max", "text": { "de": "Danke! Seit wann bist du hier?", "fa": "ممنون! از کی اینجایی؟" } },
+        { "speaker": "Lisa", "text": { "de": "Seit einer halben Stunde. Ich habe auf dich gewartet.", "fa": "از نیم ساعت پیش. منتظرت بودم." } },
+        { "speaker": "Max", "text": { "de": "Entschuldigung! Ich habe an die Zeit nicht gedacht.", "fa": "ببخشید! به زمان فکر نکردم." } },
+        { "speaker": "Lisa", "text": { "de": "Kein Problem. Ich freue mich, dass du da bist!", "fa": "مشکلی نیست. خوشحالم که اینجایی!" } }
+      ],
+      "questions": [
+        {
+          "question": "لیزا از کی در رستوران است؟",
+          "options": ["از یک ساعت پیش", "از نیم ساعت پیش", "از ده دقیقه پیش"],
+          "correctIndex": 1,
+          "explanation": "لیزا گفت: Seit einer halben Stunde"
+        },
+        {
+          "question": "ماکس به چه چیزی فکر نکرد؟",
+          "options": ["به غذا", "به زمان", "به لیزا"],
+          "correctIndex": 1,
+          "explanation": "ماکس گفت: Ich habe an die Zeit nicht gedacht"
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "حرف اضافه را با معنی وصل کنید",
+      "items": [
+        { "id": "i1", "text": "vor" },
+        { "id": "i2", "text": "nach" },
+        { "id": "i3", "text": "seit" },
+        { "id": "i4", "text": "bis" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "قبل از / جلوی" },
+        { "id": "m2", "text": "بعد از" },
+        { "id": "m3", "text": "از (تا حالا)" },
+        { "id": "m4", "text": "تا" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"],
+        ["i4", "m4"]
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "Akkusativ یا Dativ؟",
+      "instruction": "این جمله چه حالتی می‌خواهد؟",
+      "questions": [
+        { "prompt": "Ich gehe in ... Park.", "left": "Akkusativ", "right": "Dativ", "correctSide": "left" },
+        { "prompt": "Ich bin in ... Park.", "left": "Akkusativ", "right": "Dativ", "correctSide": "right" },
+        { "prompt": "Er legt das Buch auf ... Tisch.", "left": "Akkusativ", "right": "Dativ", "correctSide": "left" },
+        { "prompt": "Das Buch liegt auf ... Tisch.", "left": "Akkusativ", "right": "Dativ", "correctSide": "right" },
+        { "prompt": "warten auf ...", "left": "Akkusativ", "right": "Dativ", "correctSide": "left" },
+        { "prompt": "Angst haben vor ...", "left": "Akkusativ", "right": "Dativ", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Bus.", "den", "warte", "auf", "Ich"],
+      "correctOrder": [4, 2, 3, 1, 0],
+      "correctSentence": { "de": "Ich warte auf den Bus.", "fa": "منتظر اتوبوس هستم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo4",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Jahren", "ich", "zwei", "Seit", "Deutsch.", "lerne"],
+      "correctOrder": [3, 2, 0, 5, 1, 4],
+      "correctSentence": { "de": "Seit zwei Jahren lerne ich Deutsch.", "fa": "از دو سال پیش آلمانی یاد می‌گیرم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich freue mich {0} das Wochenende.",
+      "options": ["über", "auf", "an", "von"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "sich freuen auf = مشتاق بودن (آینده)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} dem Essen wasche ich meine Hände.",
+      "options": ["Nach", "Vor", "Seit", "Bis"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "vor dem Essen = قبل از غذا" }
+    },
+    {
+      "type": "dialog",
+      "id": "d3",
+      "title": "آخر هفته",
+      "context": "الی و تام درباره آخر هفته صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Eli", "text": { "de": "Freust du dich auf das Wochenende?", "fa": "مشتاق آخر هفته هستی؟" } },
+        { "speaker": "Tom", "text": { "de": "Ja, sehr! Ich träume von einem Tag am Strand.", "fa": "بله، خیلی! رویای یک روز در ساحل را دارم." } },
+        { "speaker": "Eli", "text": { "de": "Ich auch! Nach der stressigen Woche brauche ich Erholung.", "fa": "من هم! بعد از هفته پراسترس به استراحت نیاز دارم." } },
+        { "speaker": "Tom", "text": { "de": "Seit Montag denke ich nur an den Samstag.", "fa": "از دوشنبه فقط به شنبه فکر می‌کنم." } },
+        { "speaker": "Eli", "text": { "de": "Ich freue mich schon über die Sonne!", "fa": "از همین الان از آفتاب خوشحالم!" } }
+      ],
+      "questions": [
+        {
+          "question": "تام رویای چه چیزی را دارد؟",
+          "options": ["کوهنوردی", "یک روز در ساحل", "سفر به پاریس"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: Ich träume von einem Tag am Strand"
+        },
+        {
+          "question": "تام از کی به شنبه فکر می‌کند؟",
+          "options": ["از یکشنبه", "از دوشنبه", "از جمعه"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: Seit Montag denke ich nur an den Samstag"
+        }
+      ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "Wechselpräpositionen با Akkusativ برای حرکت و با Dativ برای مکان استفاده می‌شوند.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! Wohin? (حرکت) = Akkusativ، Wo? (مکان) = Dativ"
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "seit برای چیزی استفاده می‌شود که تمام شده است.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! seit برای چیزی که در گذشته شروع شده و هنوز ادامه دارد"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "به آشپزخانه می‌روم.",
+      "sentenceTemplate": "Ich {0} {1} {2} Küche.",
+      "options": ["die", "gehe", "in"],
+      "correctAnswers": [1, 2, 0],
+      "correctTranslation": {
+        "de": "Ich gehe in die Küche.",
+        "fa": "به آشپزخانه می‌روم."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "منتظر دوستم هستم.",
+      "sentenceTemplate": "Ich {0} {1} meinen Freund.",
+      "options": ["auf", "warte"],
+      "correctAnswers": [1, 0],
+      "correctTranslation": {
+        "de": "Ich warte auf meinen Freund.",
+        "fa": "منتظر دوستم هستم."
+      }
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "in (+ Akk.)", "fa": "به داخل", "options": ["از", "به داخل", "روی", "کنار"], "correctIndex": 1 },
+        { "de": "seit", "fa": "از (تا حالا)", "options": ["تا", "بعد از", "از (تا حالا)", "قبل از"], "correctIndex": 2 },
+        { "de": "warten auf", "fa": "منتظر بودن", "options": ["فکر کردن به", "ترسیدن از", "منتظر بودن", "رویا دیدن"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich gehe in die Küche.",
+      "translation": "به آشپزخانه می‌روم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Nach der Arbeit gehe ich nach Hause.",
+      "translation": "بعد از کار به خانه می‌روم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Ich warte auf den Bus.",
+      "translation": "منتظر اتوبوس هستم."
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "in + Akk.", "fa": "به داخل (حرکت)" },
+        { "de": "in + Dat.", "fa": "در (مکان)" },
+        { "de": "vor", "fa": "قبل از / جلوی" },
+        { "de": "nach", "fa": "بعد از" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp1",
+      "title": "آفرین! 🎉",
+      "message": "همه حروف اضافه را یاد گرفتید!",
+      "keyPoints": [
+        "Wechselpräpositionen: Wohin? = Akk., Wo? = Dat.",
+        "an, auf, hinter, in, neben, über, unter, vor, zwischen",
+        "زمانی: vor (قبل)، nach (بعد)، seit (از)، bis (تا)",
+        "فعل‌ها: warten auf، denken an، sich freuen auf/über",
+        "legen/liegen، stellen/stehen، setzen/sitzen"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "in", "fa": "در / به داخل" } },
+        { "word": { "de": "auf", "fa": "روی" } },
+        { "word": { "de": "vor", "fa": "جلوی / قبل از" } },
+        { "word": { "de": "nach", "fa": "بعد از" } },
+        { "word": { "de": "seit", "fa": "از (تا حالا)" } },
+        { "word": { "de": "warten auf", "fa": "منتظر بودن" } }
+      ]
+    }
+  ]
+}

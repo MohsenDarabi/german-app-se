@@ -1,0 +1,479 @@
+{
+  "id": "A2-M14-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Wechselpräpositionen", "fa": "حروف اضافه دوگانه" },
+  "description": "یاد بگیرید حروف اضافه‌ای که هم با Akkusativ و هم با Dativ می‌آیند: an، auf، in، vor، hinter",
+  "level": "A2",
+  "module": 14,
+  "lessonNumber": 1,
+  "totalSteps": 44,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "an", "fa": "کنار / به", "grammar": { "pos": "preposition" } },
+    { "de": "auf", "fa": "روی / به روی", "grammar": { "pos": "preposition" } },
+    { "de": "in", "fa": "در / به داخل", "grammar": { "pos": "preposition" } },
+    { "de": "vor", "fa": "جلوی", "grammar": { "pos": "preposition" } },
+    { "de": "hinter", "fa": "پشت", "grammar": { "pos": "preposition" } },
+    { "de": "neben", "fa": "کنار", "grammar": { "pos": "preposition" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "حروف اضافه دوگانه",
+      "content": "📝 **Wechselpräpositionen = حروف اضافه دوگانه**\n\n۹ حرف اضافه هستند که هم با Akkusativ و هم با Dativ می‌آیند:\n\n**an, auf, hinter, in, neben, über, unter, vor, zwischen**\n\n**قانون طلایی:**\n• **Wohin?** (به کجا؟) - حرکت - **Akkusativ**\n• **Wo?** (کجا؟) - مکان ثابت - **Dativ**\n\n💡 اگر حرکت و جابجایی باشد = Akkusativ\n💡 اگر جای ثابت باشد = Dativ",
+      "examples": [
+        { "de": "Ich gehe in die Küche. (Wohin?)", "fa": "به آشپزخانه می‌روم. (حرکت - Akkusativ)" },
+        { "de": "Ich bin in der Küche. (Wo?)", "fa": "در آشپزخانه هستم. (مکان - Dativ)" },
+        { "de": "Er legt das Buch auf den Tisch.", "fa": "کتاب را روی میز می‌گذارد. (حرکت - Akkusativ)" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "in", "fa": "در / به داخل" },
+      "example": { "text": { "de": "Ich gehe in den Park. Ich bin im Park.", "fa": "به پارک می‌روم. در پارک هستم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "hinein",
+      "translation": "به داخل",
+      "syllables": ["hin", "ein"],
+      "distractors": ["han", "aun", "oun"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "auf", "fa": "روی / به روی" },
+      "example": { "text": { "de": "Ich lege das Buch auf den Tisch. Das Buch liegt auf dem Tisch.", "fa": "کتاب را روی میز می‌گذارم. کتاب روی میز است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "darauf",
+      "translation": "روی آن",
+      "syllables": ["da", "rauf"],
+      "distractors": ["do", "rouf", "rief"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "an", "fa": "کنار / به (دیوار)" },
+      "example": { "text": { "de": "Ich hänge das Bild an die Wand. Das Bild hängt an der Wand.", "fa": "عکس را به دیوار می‌زنم. عکس روی دیوار است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "daran",
+      "translation": "به آن",
+      "syllables": ["da", "ran"],
+      "distractors": ["do", "ren", "rin"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "Akkusativ یا Dativ؟",
+      "content": "📝 **چطور تشخیص بدهیم؟**\n\n**Akkusativ (حرکت - Wohin?):**\n• Ich **gehe** in **den** Park.\n• Er **legt** das Buch auf **den** Tisch.\n• Sie **hängt** das Bild an **die** Wand.\n\n**Dativ (مکان - Wo?):**\n• Ich **bin** in **dem** (im) Park.\n• Das Buch **liegt** auf **dem** Tisch.\n• Das Bild **hängt** an **der** Wand.\n\n💡 فعل‌های حرکتی: gehen, legen, stellen, hängen, setzen\n💡 فعل‌های مکانی: sein, liegen, stehen, hängen, sitzen",
+      "examples": [
+        { "de": "Ich stelle die Vase auf den Tisch.", "fa": "گلدان را روی میز می‌گذارم. (حرکت)" },
+        { "de": "Die Vase steht auf dem Tisch.", "fa": "گلدان روی میز است. (مکان)" },
+        { "de": "Er setzt sich auf den Stuhl.", "fa": "روی صندلی می‌نشیند. (حرکت)" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«به آشپزخانه می‌روم» به آلمانی چیست؟",
+      "options": ["Ich gehe in der Küche.", "Ich gehe in die Küche.", "Ich bin in die Küche.", "Ich bin in der Küche."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! gehen = حرکت - Akkusativ - die Küche", "incorrect": "حرکت (Wohin?) - Akkusativ: in die Küche" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "«کتاب روی میز است» به آلمانی چیست؟",
+      "options": ["Das Buch liegt auf den Tisch.", "Das Buch liegt auf dem Tisch.", "Das Buch legt auf dem Tisch.", "Das Buch legt auf den Tisch."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! liegen = مکان ثابت - Dativ - dem Tisch", "incorrect": "مکان (Wo?) - Dativ: auf dem Tisch" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich gehe in {0} Park.",
+      "options": ["dem", "den", "der", "das"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "gehen = حرکت - Akkusativ: in den Park (Park مذکر است)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das Bild hängt an {0} Wand.",
+      "options": ["die", "der", "den", "dem"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "hängen (آویزان بودن) = مکان - Dativ: an der Wand (Wand مونث است)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در خانه",
+      "context": "آنا و تام درباره وسایل خانه صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Wo ist mein Handy?", "fa": "موبایلم کجاست؟" } },
+        { "speaker": "Tom", "text": { "de": "Es liegt auf dem Tisch.", "fa": "روی میز است." } },
+        { "speaker": "Anna", "text": { "de": "Nein, da ist es nicht. Ich lege es immer auf den Tisch.", "fa": "نه، آنجا نیست. همیشه روی میز می‌گذارمش." } },
+        { "speaker": "Tom", "text": { "de": "Schau mal in der Tasche!", "fa": "توی کیف نگاه کن!" } },
+        { "speaker": "Anna", "text": { "de": "Ah ja! Es ist in der Tasche.", "fa": "آها بله! توی کیف است." } }
+      ],
+      "questions": [
+        {
+          "question": "تام اول گفت موبایل کجاست؟",
+          "options": ["توی کیف", "روی میز", "توی اتاق"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: Es liegt auf dem Tisch"
+        },
+        {
+          "question": "موبایل کجا بود؟",
+          "options": ["روی میز", "توی کیف", "توی آشپزخانه"],
+          "correctIndex": 1,
+          "explanation": "آنا گفت: Es ist in der Tasche"
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "vor", "fa": "جلوی" },
+      "example": { "text": { "de": "Ich stelle mich vor das Haus. Ich stehe vor dem Haus.", "fa": "جلوی خانه می‌ایستم. جلوی خانه ایستاده‌ام." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "davor",
+      "translation": "جلوی آن",
+      "syllables": ["da", "vor"],
+      "distractors": ["do", "ver", "vir"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "hinter", "fa": "پشت" },
+      "example": { "text": { "de": "Die Katze läuft hinter das Sofa. Die Katze sitzt hinter dem Sofa.", "fa": "گربه پشت مبل می‌رود. گربه پشت مبل نشسته." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "hinter",
+      "translation": "پشت",
+      "syllables": ["hin", "ter"],
+      "distractors": ["han", "tar", "tir"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s8",
+      "title": "فعل‌های جفت",
+      "content": "📝 **فعل‌های حرکتی و مکانی**\n\nبرای هر فعل حرکتی یک فعل مکانی وجود دارد:\n\n| حرکت (Akk.) | مکان (Dat.) |\n|-------------|-------------|\n| **legen** (گذاشتن) | **liegen** (خوابیده بودن) |\n| **stellen** (ایستاده گذاشتن) | **stehen** (ایستاده بودن) |\n| **setzen** (نشاندن) | **sitzen** (نشسته بودن) |\n| **hängen** (آویزان کردن) | **hängen** (آویزان بودن) |\n\n💡 فعل‌های حرکتی باقاعده‌اند، فعل‌های مکانی بی‌قاعده!",
+      "examples": [
+        { "de": "Ich lege das Buch. - Das Buch liegt.", "fa": "کتاب را می‌گذارم. - کتاب خوابیده است." },
+        { "de": "Ich stelle die Vase. - Die Vase steht.", "fa": "گلدان را می‌گذارم. - گلدان ایستاده است." },
+        { "de": "Ich setze das Kind. - Das Kind sitzt.", "fa": "بچه را می‌نشانم. - بچه نشسته است." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Küche.", "die", "gehe", "in", "Ich"],
+      "correctOrder": [4, 2, 3, 1, 0],
+      "correctSentence": { "de": "Ich gehe in die Küche.", "fa": "به آشپزخانه می‌روم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Tisch.", "dem", "liegt", "auf", "Buch", "Das"],
+      "correctOrder": [5, 4, 2, 3, 1, 0],
+      "correctSentence": { "de": "Das Buch liegt auf dem Tisch.", "fa": "کتاب روی میز است." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "کدام فعل برای «گذاشتن چیزی روی میز» (حرکت) استفاده می‌شود؟",
+      "options": ["liegen", "legen", "stehen", "sitzen"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! legen = گذاشتن (حرکت)", "incorrect": "legen = گذاشتن (حرکتی)، liegen = خوابیده بودن (مکانی)" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "کدام فعل برای «کتاب روی میز است» (مکان) استفاده می‌شود؟",
+      "options": ["legen", "liegen", "stellen", "setzen"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! liegen = خوابیده بودن (مکان)", "incorrect": "liegen = خوابیده بودن (مکانی)" }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "neben", "fa": "کنار" },
+      "example": { "text": { "de": "Ich setze mich neben dich. Ich sitze neben dir.", "fa": "کنار تو می‌نشینم. کنار تو نشسته‌ام." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "daneben",
+      "translation": "کنار آن",
+      "syllables": ["da", "ne", "ben"],
+      "distractors": ["do", "na", "bon"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Katze läuft hinter {0} Sofa.",
+      "options": ["dem", "das", "der", "die"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "laufen = حرکت - Akkusativ: hinter das Sofa (Sofa خنثی است)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Der Hund sitzt vor {0} Tür.",
+      "options": ["die", "der", "den", "dem"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "sitzen = مکان - Dativ: vor der Tür (Tür مونث است)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "جابجایی",
+      "context": "لیزا و ماکس در حال مرتب کردن اتاق هستند",
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Wohin soll ich die Lampe stellen?", "fa": "چراغ را کجا بگذارم؟" } },
+        { "speaker": "Max", "text": { "de": "Stell sie neben das Sofa!", "fa": "کنار مبل بگذار!" } },
+        { "speaker": "Lisa", "text": { "de": "Und das Bild? Soll ich es an die Wand hängen?", "fa": "و عکس؟ به دیوار بزنم؟" } },
+        { "speaker": "Max", "text": { "de": "Ja, häng es über das Sofa!", "fa": "بله، بالای مبل بزن!" } },
+        { "speaker": "Lisa", "text": { "de": "Jetzt steht die Lampe neben dem Sofa und das Bild hängt über dem Sofa.", "fa": "حالا چراغ کنار مبل است و عکس بالای مبل است." } }
+      ],
+      "questions": [
+        {
+          "question": "چراغ را کجا گذاشتند؟",
+          "options": ["روی میز", "کنار مبل", "پشت در"],
+          "correctIndex": 1,
+          "explanation": "ماکس گفت: Stell sie neben das Sofa"
+        },
+        {
+          "question": "عکس را کجا زدند؟",
+          "options": ["کنار پنجره", "روی میز", "بالای مبل"],
+          "correctIndex": 2,
+          "explanation": "ماکس گفت: häng es über das Sofa"
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "فعل حرکتی را با فعل مکانی وصل کنید",
+      "items": [
+        { "id": "i1", "text": "legen" },
+        { "id": "i2", "text": "stellen" },
+        { "id": "i3", "text": "setzen" },
+        { "id": "i4", "text": "hängen (کردن)" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "liegen" },
+        { "id": "m2", "text": "stehen" },
+        { "id": "m3", "text": "sitzen" },
+        { "id": "m4", "text": "hängen (بودن)" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"],
+        ["i4", "m4"]
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "Akkusativ یا Dativ؟",
+      "instruction": "این جمله Akkusativ می‌خواهد یا Dativ؟",
+      "questions": [
+        { "prompt": "Ich gehe in ... Park.", "left": "Akkusativ", "right": "Dativ", "correctSide": "left" },
+        { "prompt": "Ich bin in ... Park.", "left": "Akkusativ", "right": "Dativ", "correctSide": "right" },
+        { "prompt": "Er legt das Buch auf ... Tisch.", "left": "Akkusativ", "right": "Dativ", "correctSide": "left" },
+        { "prompt": "Das Buch liegt auf ... Tisch.", "left": "Akkusativ", "right": "Dativ", "correctSide": "right" },
+        { "prompt": "Sie hängt das Bild an ... Wand.", "left": "Akkusativ", "right": "Dativ", "correctSide": "left" },
+        { "prompt": "Das Bild hängt an ... Wand.", "left": "Akkusativ", "right": "Dativ", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Wand.", "die", "Bild", "an", "hänge", "das", "Ich"],
+      "correctOrder": [6, 4, 5, 2, 3, 1, 0],
+      "correctSentence": { "de": "Ich hänge das Bild an die Wand.", "fa": "عکس را به دیوار می‌زنم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo4",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Sofa.", "dem", "sitzt", "vor", "Katze", "Die"],
+      "correctOrder": [5, 4, 2, 3, 1, 0],
+      "correctSentence": { "de": "Die Katze sitzt vor dem Sofa.", "fa": "گربه جلوی مبل نشسته." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich {0} mich auf den Stuhl.",
+      "options": ["sitze", "setze", "stehe", "stelle"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "setzen = نشاندن/نشستن (حرکت) - auf den Stuhl (Akkusativ)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Vase {0} auf dem Tisch.",
+      "options": ["stellt", "steht", "legt", "liegt"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "stehen = ایستاده بودن (مکان) - auf dem Tisch (Dativ)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d3",
+      "title": "گربه کجاست؟",
+      "context": "الی گربه‌اش را پیدا نمی‌کند",
+      "lines": [
+        { "speaker": "Eli", "text": { "de": "Wo ist meine Katze?", "fa": "گربه‌ام کجاست؟" } },
+        { "speaker": "Tom", "text": { "de": "Schau mal unter dem Bett!", "fa": "زیر تخت نگاه کن!" } },
+        { "speaker": "Eli", "text": { "de": "Nein, sie ist nicht unter dem Bett.", "fa": "نه، زیر تخت نیست." } },
+        { "speaker": "Tom", "text": { "de": "Vielleicht ist sie hinter dem Schrank gelaufen.", "fa": "شاید پشت کمد رفته باشد." } },
+        { "speaker": "Eli", "text": { "de": "Ja! Sie sitzt hinter dem Schrank!", "fa": "بله! پشت کمد نشسته!" } }
+      ],
+      "questions": [
+        {
+          "question": "تام اول گفت کجا نگاه کند؟",
+          "options": ["پشت کمد", "زیر تخت", "روی میز"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: Schau mal unter dem Bett"
+        },
+        {
+          "question": "گربه کجا بود؟",
+          "options": ["زیر تخت", "روی مبل", "پشت کمد"],
+          "correctIndex": 2,
+          "explanation": "الی گفت: Sie sitzt hinter dem Schrank"
+        }
+      ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "وقتی از حرکت (Wohin?) صحبت می‌کنیم، از Akkusativ استفاده می‌کنیم.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! Wohin? (به کجا؟) = حرکت = Akkusativ"
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "فعل liegen برای حرکت استفاده می‌شود.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! liegen = خوابیده بودن (مکان). برای حرکت از legen استفاده می‌کنیم."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "به پارک می‌روم.",
+      "sentenceTemplate": "Ich {0} {1} {2} Park.",
+      "options": ["den", "gehe", "in"],
+      "correctAnswers": [1, 2, 0],
+      "correctTranslation": {
+        "de": "Ich gehe in den Park.",
+        "fa": "به پارک می‌روم."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "کتاب روی میز است.",
+      "sentenceTemplate": "Das Buch {0} {1} {2} Tisch.",
+      "options": ["dem", "liegt", "auf"],
+      "correctAnswers": [1, 2, 0],
+      "correctTranslation": {
+        "de": "Das Buch liegt auf dem Tisch.",
+        "fa": "کتاب روی میز است."
+      }
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "legen", "fa": "گذاشتن (خواباندن)", "options": ["ایستاده بودن", "گذاشتن", "نشستن", "آویزان بودن"], "correctIndex": 1 },
+        { "de": "stehen", "fa": "ایستاده بودن", "options": ["گذاشتن", "نشستن", "ایستاده بودن", "خوابیده بودن"], "correctIndex": 2 },
+        { "de": "sitzen", "fa": "نشسته بودن", "options": ["نشاندن", "نشسته بودن", "گذاشتن", "ایستادن"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich gehe in die Küche.",
+      "translation": "به آشپزخانه می‌روم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Das Buch liegt auf dem Tisch.",
+      "translation": "کتاب روی میز است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Ich hänge das Bild an die Wand.",
+      "translation": "عکس را به دیوار می‌زنم."
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "legen", "fa": "گذاشتن" },
+        { "de": "liegen", "fa": "خوابیده بودن" },
+        { "de": "stellen", "fa": "ایستاده گذاشتن" },
+        { "de": "stehen", "fa": "ایستاده بودن" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp1",
+      "title": "آفرین! 🎉",
+      "message": "حروف اضافه دوگانه را یاد گرفتید!",
+      "keyPoints": [
+        "Wechselpräpositionen: an, auf, hinter, in, neben, über, unter, vor, zwischen",
+        "Wohin? (حرکت) - Akkusativ",
+        "Wo? (مکان) - Dativ",
+        "legen/liegen, stellen/stehen, setzen/sitzen, hängen/hängen",
+        "فعل‌های حرکتی باقاعده، فعل‌های مکانی بی‌قاعده"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "in", "fa": "در / به داخل" } },
+        { "word": { "de": "auf", "fa": "روی" } },
+        { "word": { "de": "an", "fa": "کنار / به" } },
+        { "word": { "de": "vor", "fa": "جلوی" } },
+        { "word": { "de": "hinter", "fa": "پشت" } },
+        { "word": { "de": "neben", "fa": "کنار" } }
+      ]
+    }
+  ]
+}
