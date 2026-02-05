@@ -17,7 +17,7 @@
   "level": "A1",
   "module": 2,
   "lessonNumber": 3,
-  "totalSteps": 38,
+  "totalSteps": 43,
   "estimatedMinutes": 18,
   "vocabulary": [
     {
@@ -583,8 +583,7 @@
           "explanation": "الکس گفت: «Ja, sie spielen auch» یعنی آره، آن‌ها هم بازی می‌کنند.",
           "relatedLineIndex": 3
         }
-      ],
-      "questionMode": "post-dialog"
+      ]
     },
     {
       "type": "multiple-choice",
@@ -847,6 +846,38 @@
           "fa": "همه"
         }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "Wir lernen Deutsch.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "جمله درست است. با wir پسوند -en می‌گیریم: wir lernen."
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf4",
+      "instruction": "درست یا غلط؟",
+      "statement": "Ihr spielen Fußball.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "جمله غلط است. فرم درست: «Ihr spielt Fußball» - با ihr پسوند -t می‌گیریم، نه -en."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "ما با هم کار می‌کنیم.",
+      "sentenceTemplate": "{0} {1} {2}.",
+      "options": ["Wir", "arbeiten", "zusammen"],
+      "correctAnswers": [0, 1, 2],
+      "correctTranslation": {
+        "de": "Wir arbeiten zusammen.",
+        "fa": "ما با هم کار می‌کنیم."
+      }
     },
     {
       "type": "completion",

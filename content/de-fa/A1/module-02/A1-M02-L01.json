@@ -17,7 +17,7 @@
   "level": "A1",
   "module": 2,
   "lessonNumber": 1,
-  "totalSteps": 36,
+  "totalSteps": 43,
   "estimatedMinutes": 18,
   "vocabulary": [
     {
@@ -622,8 +622,7 @@
           "explanation": "تام گفت: «Ich bin sehr hungrig» یعنی خیلی گرسنه‌ام.",
           "relatedLineIndex": 5
         }
-      ],
-      "questionMode": "post-dialog"
+      ]
     },
     {
       "type": "multiple-choice",
@@ -872,6 +871,38 @@
           "fa": "او (زن) دارد"
         }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "Er bin müde.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "جمله غلط است. فرم درست: «Er ist müde» - با er از ist استفاده می‌کنیم، نه bin."
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "Sie hat zwei Kinder.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "جمله درست است. «Sie hat» یعنی او دارد - صرف سوم شخص فعل haben."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "او دوست من است.",
+      "sentenceTemplate": "{0} {1} {2} {3}.",
+      "options": ["Er", "ist", "mein", "Freund"],
+      "correctAnswers": [0, 1, 2, 3],
+      "correctTranslation": {
+        "de": "Er ist mein Freund.",
+        "fa": "او دوست من است."
+      }
     },
     {
       "type": "completion",

@@ -17,7 +17,7 @@
   "level": "A1",
   "module": 2,
   "lessonNumber": 4,
-  "totalSteps": 41,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     {
@@ -751,8 +751,7 @@
           "explanation": "تام گفت: «Morgens schlafe ich lange» یعنی صبح‌ها زیاد می‌خوابم.",
           "relatedLineIndex": 3
         }
-      ],
-      "questionMode": "post-dialog"
+      ]
     },
     {
       "type": "multiple-choice",
@@ -976,6 +975,38 @@
           "fa": "تو می‌روی"
         }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "Er isst Pizza.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "جمله درست است. فعل essen تغییر ریشه دارد: e→i در du و er/sie/es. پس: er isst."
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "Du fahrst Auto.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "جمله غلط است. فرم درست: «Du fährst Auto» - فعل fahren تغییر ریشه دارد: a→ä در du و er/sie/es."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "او یک کتاب می‌خواند.",
+      "sentenceTemplate": "{0} {1} {2} {3}.",
+      "options": ["Er", "liest", "ein", "Buch"],
+      "correctAnswers": [0, 1, 2, 3],
+      "correctTranslation": {
+        "de": "Er liest ein Buch.",
+        "fa": "او یک کتاب می‌خواند."
+      }
     },
     {
       "type": "completion",

@@ -17,7 +17,7 @@
   "level": "A1",
   "module": 2,
   "lessonNumber": 2,
-  "totalSteps": 37,
+  "totalSteps": 43,
   "estimatedMinutes": 18,
   "vocabulary": [
     {
@@ -612,8 +612,7 @@
           "explanation": "الی گفت: «Ich spiele jeden Tag» یعنی هر روز (گیتار) می‌زنم.",
           "relatedLineIndex": 4
         }
-      ],
-      "questionMode": "post-dialog"
+      ]
     },
     {
       "type": "multiple-choice",
@@ -908,6 +907,38 @@
           "fa": "هر روز"
         }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "Ich spiele Fußball.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "جمله درست است. با ich پسوند -e می‌گیریم: ich spiele."
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "Du arbeitest viel.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "جمله درست است. فعل arbeiten چون ریشه‌اش به t ختم می‌شود، e اضافی می‌گیرد: du arbeitest."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "من هر روز آلمانی یاد می‌گیرم.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4}.",
+      "options": ["Ich", "lerne", "jeden", "Tag", "Deutsch"],
+      "correctAnswers": [0, 1, 2, 3, 4],
+      "correctTranslation": {
+        "de": "Ich lerne jeden Tag Deutsch.",
+        "fa": "من هر روز آلمانی یاد می‌گیرم."
+      }
     },
     {
       "type": "completion",
