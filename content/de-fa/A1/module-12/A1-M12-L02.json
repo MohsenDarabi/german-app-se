@@ -8,7 +8,7 @@
   "level": "A1",
   "module": 12,
   "lessonNumber": 2,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "einkaufen", "fa": "خرید کردن", "grammar": { "pos": "verb" } },
@@ -174,10 +174,9 @@
         { "speaker": "Eli", "text": { "de": "Abends sehe ich fern. Rufst du mich später an?", "fa": "شب تلویزیون می‌بینم. بعداً بهم زنگ می‌زنی؟" } },
         { "speaker": "Tom", "text": { "de": "Ja, ich rufe dich um 8 Uhr an!", "fa": "بله، ساعت ۸ بهت زنگ می‌زنم!" } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "الی اول چه کار می‌کند؟", "options": ["خرید می‌کند", "مرتب می‌کند", "تلویزیون می‌بیند"], "correctIndex": 1 },
-        { "question": "تام کی زنگ می‌زند؟", "options": ["ساعت ۶", "ساعت ۷", "ساعت ۸"], "correctIndex": 2 }
+        { "question": "الی اول چه کار می‌کند؟", "options": ["خرید می‌کند", "مرتب می‌کند", "تلویزیون می‌بیند"], "correctIndex": 1, "explanation": "الی گفت: Zuerst räume ich meine Wohnung auf" },
+        { "question": "تام کی زنگ می‌زند؟", "options": ["ساعت ۶", "ساعت ۷", "ساعت ۸"], "correctIndex": 2, "explanation": "تام گفت: ich rufe dich um 8 Uhr an" }
       ]
     },
     {
@@ -278,10 +277,9 @@
         { "speaker": "Eli", "text": { "de": "Ich habe eingekauft und mein Zimmer aufgeräumt.", "fa": "خرید کردم و اتاقم را مرتب کردم." } },
         { "speaker": "Tom", "text": { "de": "Super! Der Film fängt gleich an.", "fa": "عالی! فیلم الان شروع می‌شود." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "چرا تام می‌خواهد در بسته شود؟", "options": ["هوا گرم است", "هوا سرد است", "صدا می‌آید"], "correctIndex": 1 },
-        { "question": "الی امروز چه کار کرده؟", "options": ["خرید و مرتب کردن", "تلویزیون دیدن", "زنگ زدن"], "correctIndex": 0 }
+        { "question": "چرا تام می‌خواهد در بسته شود؟", "options": ["هوا گرم است", "هوا سرد است", "صدا می‌آید"], "correctIndex": 1, "explanation": "تام گفت: Es ist kalt" },
+        { "question": "الی امروز چه کار کرده؟", "options": ["خرید و مرتب کردن", "تلویزیون دیدن", "زنگ زدن"], "correctIndex": 0, "explanation": "الی گفت: Ich habe eingekauft und mein Zimmer aufgeräumt" }
       ]
     },
     {
@@ -389,6 +387,31 @@
         { "de": "anfangen", "fa": "شروع کردن" },
         { "de": "aufhören", "fa": "تمام کردن" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در فعل fernsehen، تغییر e به ie اتفاق می‌افتد: du siehst fern.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! sehen بی‌قاعده است: du siehst، er sieht" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "aufmachen یعنی «بستن» است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! aufmachen = باز کردن، zumachen = بستن" }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "در سوپرمارکت خرید می‌کنم.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4}.",
+      "options": ["Ich", "kaufe", "im", "Supermarkt", "ein"],
+      "correctAnswers": [0, 1, 2, 3, 4],
+      "correctTranslation": { "de": "Ich kaufe im Supermarkt ein.", "fa": "در سوپرمارکت خرید می‌کنم." }
     },
     {
       "type": "completion",

@@ -8,7 +8,7 @@
   "level": "A1",
   "module": 12,
   "lessonNumber": 3,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "morgens", "fa": "صبح‌ها", "grammar": { "pos": "adverb" } },
@@ -135,10 +135,9 @@
         { "speaker": "Tom", "text": { "de": "Und abends?", "fa": "و شب‌ها؟" } },
         { "speaker": "Eli", "text": { "de": "Abends kaufe ich ein oder sehe fern.", "fa": "شب‌ها خرید می‌کنم یا تلویزیون می‌بینم." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "الی کی بلند می‌شود؟", "options": ["ساعت ۵", "ساعت ۶", "ساعت ۷"], "correctIndex": 1 },
-        { "question": "الی کی به خانه برمی‌گردد؟", "options": ["ساعت ۱۶", "ساعت ۱۷", "ساعت ۱۸"], "correctIndex": 2 }
+        { "question": "الی کی بلند می‌شود؟", "options": ["ساعت ۵", "ساعت ۶", "ساعت ۷"], "correctIndex": 1, "explanation": "الی گفت: Morgens stehe ich um 6 Uhr auf" },
+        { "question": "الی کی به خانه برمی‌گردد؟", "options": ["ساعت ۱۶", "ساعت ۱۷", "ساعت ۱۸"], "correctIndex": 2, "explanation": "الی گفت: Ich komme um 18 Uhr zurück" }
       ]
     },
     {
@@ -230,10 +229,9 @@
         { "speaker": "Eli", "text": { "de": "Und abends?", "fa": "و شب‌ها؟" } },
         { "speaker": "Tom", "text": { "de": "Abends rufe ich Freunde an oder gehe aus.", "fa": "شب‌ها به دوستان زنگ می‌زنم یا بیرون می‌روم." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "تام کی بلند می‌شود؟", "options": ["ساعت ۷", "ساعت ۸", "ساعت ۹"], "correctIndex": 2 },
-        { "question": "تام کی کارش تمام می‌شود؟", "options": ["ساعت ۱۶", "ساعت ۱۷", "ساعت ۱۸"], "correctIndex": 2 }
+        { "question": "تام کی بلند می‌شود؟", "options": ["ساعت ۷", "ساعت ۸", "ساعت ۹"], "correctIndex": 2, "explanation": "تام گفت: Ich stehe spät auf, um 9 Uhr" },
+        { "question": "تام کی کارش تمام می‌شود؟", "options": ["ساعت ۱۶", "ساعت ۱۷", "ساعت ۱۸"], "correctIndex": 2, "explanation": "تام گفت: höre um 18 Uhr auf" }
       ]
     },
     {
@@ -405,6 +403,31 @@
         { "de": "um ... Uhr", "fa": "ساعت ..." },
         { "de": "der Tagesablauf", "fa": "برنامه روزانه" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "وقتی زمان اول جمله باشد، فاعل بعد از فعل می‌آید.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! Morgens stehe ich auf - فاعل (ich) بعد از فعل (stehe) آمده." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "morgens یعنی «شب‌ها» است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! morgens = صبح‌ها، abends = شب‌ها" }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "صبح‌ها بلند می‌شوم.",
+      "sentenceTemplate": "{0} {1} {2} {3}.",
+      "options": ["Morgens", "stehe", "ich", "auf"],
+      "correctAnswers": [0, 1, 2, 3],
+      "correctTranslation": { "de": "Morgens stehe ich auf.", "fa": "صبح‌ها بلند می‌شوم." }
     },
     {
       "type": "completion",

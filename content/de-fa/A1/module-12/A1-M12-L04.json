@@ -8,7 +8,7 @@
   "level": "A1",
   "module": 12,
   "lessonNumber": 4,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "zuerst", "fa": "اول", "grammar": { "pos": "adverb" } },
@@ -131,10 +131,9 @@
         { "speaker": "Eli", "text": { "de": "Später kaufe ich ein oder treffe Freunde.", "fa": "بعداً خرید می‌کنم یا دوستان را می‌بینم." } },
         { "speaker": "Eli", "text": { "de": "Zum Schluss sehe ich fern und gehe ins Bett.", "fa": "در آخر تلویزیون می‌بینم و به رختخواب می‌روم." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "الی اول چه کار می‌کند؟", "options": ["دوش می‌گیرد", "بلند می‌شود", "صبحانه می‌خورد"], "correctIndex": 1 },
-        { "question": "الی در آخر چه کار می‌کند؟", "options": ["خرید می‌کند", "کار می‌کند", "تلویزیون می‌بیند"], "correctIndex": 2 }
+        { "question": "الی اول چه کار می‌کند؟", "options": ["دوش می‌گیرد", "بلند می‌شود", "صبحانه می‌خورد"], "correctIndex": 1, "explanation": "الی گفت: Zuerst stehe ich um 6 Uhr auf" },
+        { "question": "الی در آخر چه کار می‌کند؟", "options": ["خرید می‌کند", "کار می‌کند", "تلویزیون می‌بیند"], "correctIndex": 2, "explanation": "الی گفت: Zum Schluss sehe ich fern" }
       ]
     },
     {
@@ -226,10 +225,9 @@
         { "speaker": "Tom", "text": { "de": "Später treffe ich Freunde oder gehe aus.", "fa": "بعداً دوستان را می‌بینم یا بیرون می‌روم." } },
         { "speaker": "Tom", "text": { "de": "Zum Schluss sehe ich einen Film.", "fa": "در آخر یک فیلم می‌بینم." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "تام اول چه کار می‌کند؟", "options": ["صبحانه می‌خورد", "زیاد می‌خوابد", "مرتب می‌کند"], "correctIndex": 1 },
-        { "question": "تام بعد از صبحانه چه کار می‌کند؟", "options": ["فیلم می‌بیند", "مرتب می‌کند", "بیرون می‌رود"], "correctIndex": 1 }
+        { "question": "تام اول چه کار می‌کند؟", "options": ["صبحانه می‌خورد", "زیاد می‌خوابد", "مرتب می‌کند"], "correctIndex": 1, "explanation": "تام گفت: Zuerst schlafe ich lange" },
+        { "question": "تام بعد از صبحانه چه کار می‌کند؟", "options": ["فیلم می‌بیند", "مرتب می‌کند", "بیرون می‌رود"], "correctIndex": 1, "explanation": "تام گفت: Danach räume ich die Wohnung auf" }
       ]
     },
     {
@@ -401,6 +399,31 @@
         { "de": "zuletzt", "fa": "در پایان" },
         { "de": "normalerweise", "fa": "معمولاً" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "zuerst برای اولین کار و zum Schluss برای آخرین کار استفاده می‌شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! zuerst = اول، zum Schluss = در آخر" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "dann و danach هر دو به معنی «قبل از» هستند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! dann = بعد، danach = بعد از آن (هر دو برای «بعد»)" }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "اول بلند می‌شوم.",
+      "sentenceTemplate": "{0} {1} {2} {3}.",
+      "options": ["Zuerst", "stehe", "ich", "auf"],
+      "correctAnswers": [0, 1, 2, 3],
+      "correctTranslation": { "de": "Zuerst stehe ich auf.", "fa": "اول بلند می‌شوم." }
     },
     {
       "type": "completion",

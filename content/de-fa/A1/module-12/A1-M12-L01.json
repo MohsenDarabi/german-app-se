@@ -8,7 +8,7 @@
   "level": "A1",
   "module": 12,
   "lessonNumber": 1,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "aufstehen", "fa": "بلند شدن", "grammar": { "pos": "verb" } },
@@ -193,10 +193,9 @@
         { "speaker": "Eli", "text": { "de": "Perfekt! Und wann fahren wir zurück?", "fa": "عالی! و کی برمی‌گردیم؟" } },
         { "speaker": "Tom", "text": { "de": "Wir kommen morgen Abend zurück.", "fa": "فردا شب برمی‌گردیم." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "قطار کی حرکت می‌کند؟", "options": ["ساعت ۸", "ساعت ۱۰", "ساعت ۱۴"], "correctIndex": 1 },
-        { "question": "کی به مونیخ می‌رسند؟", "options": ["ساعت ۱۰", "ساعت ۱۲", "ساعت ۱۴"], "correctIndex": 2 }
+        { "question": "قطار کی حرکت می‌کند؟", "options": ["ساعت ۸", "ساعت ۱۰", "ساعت ۱۴"], "correctIndex": 1, "explanation": "تام گفت: Um 10 Uhr" },
+        { "question": "کی به مونیخ می‌رسند؟", "options": ["ساعت ۱۰", "ساعت ۱۲", "ساعت ۱۴"], "correctIndex": 2, "explanation": "تام گفت: Wir kommen um 14 Uhr in München an" }
       ]
     },
     {
@@ -266,10 +265,9 @@
         { "speaker": "Tom", "text": { "de": "Okay, ich komme um 6:30 bei dir an.", "fa": "باشه، ساعت ۶:۳۰ پیش تو می‌رسم." } },
         { "speaker": "Eli", "text": { "de": "Super! Dann fahren wir zusammen zum Bahnhof.", "fa": "عالی! بعد با هم به ایستگاه می‌رویم." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "الی کی بلند می‌شود؟", "options": ["ساعت ۵", "ساعت ۶", "ساعت ۷"], "correctIndex": 1 },
-        { "question": "تام کی می‌رسد؟", "options": ["ساعت ۶", "ساعت ۶:۳۰", "ساعت ۷"], "correctIndex": 1 }
+        { "question": "الی کی بلند می‌شود؟", "options": ["ساعت ۵", "ساعت ۶", "ساعت ۷"], "correctIndex": 1, "explanation": "الی گفت: Ich stehe um 6 Uhr auf" },
+        { "question": "تام کی می‌رسد؟", "options": ["ساعت ۶", "ساعت ۶:۳۰", "ساعت ۷"], "correctIndex": 1, "explanation": "تام گفت: ich komme um 6:30 bei dir an" }
       ]
     },
     {
@@ -377,6 +375,31 @@
         { "de": "zurückkommen", "fa": "برگشتن" },
         { "de": "der Zug", "fa": "قطار" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در فعل‌های جداشدنی، پیشوند به آخر جمله می‌رود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! Ich stehe um 7 Uhr auf - پیشوند auf به آخر رفته." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "einsteigen یعنی «پیاده شدن» است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! einsteigen = سوار شدن، aussteigen = پیاده شدن" }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "ساعت هفت بلند می‌شوم.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4} {5}.",
+      "options": ["Ich", "stehe", "um", "sieben", "Uhr", "auf"],
+      "correctAnswers": [0, 1, 2, 3, 4, 5],
+      "correctTranslation": { "de": "Ich stehe um sieben Uhr auf.", "fa": "ساعت هفت بلند می‌شوم." }
     },
     {
       "type": "completion",
