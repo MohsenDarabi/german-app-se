@@ -17,6 +17,7 @@
   "level": "A1",
   "module": 3,
   "lessonNumber": 4,
+  "totalSteps": 43,
   "estimatedMinutes": 18,
   "vocabulary": [
     {
@@ -483,8 +484,7 @@
           }
         }
       ],
-      "questionMode": "post-dialog",
-      "questions": [
+            "questions": [
         {
           "question": "الی چه نوشیدنی می‌نوشد؟",
           "options": [
@@ -892,6 +892,38 @@
           "fa": "تمام / آماده"
         }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "«sondern» فقط بعد از جمله منفی می‌آید.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! nicht ... sondern = نه ... بلکه"
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "«noch nicht» یعنی «دیگر نه».",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! «noch nicht» یعنی «هنوز نه». «دیگر» = schon."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "هنوز تمام نکردم.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4}.",
+      "options": ["Ich", "bin", "noch", "nicht", "fertig"],
+      "correctAnswers": [0, 1, 2, 3, 4],
+      "correctTranslation": {
+        "de": "Ich bin noch nicht fertig.",
+        "fa": "هنوز تمام نکردم."
+      }
     },
     {
       "type": "completion",

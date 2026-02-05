@@ -17,7 +17,7 @@
   "level": "A1",
   "module": 3,
   "lessonNumber": 1,
-  "totalSteps": 32,
+  "totalSteps": 43,
   "estimatedMinutes": 18,
   "vocabulary": [
     {
@@ -507,8 +507,7 @@
           "mood": "happy"
         }
       ],
-      "questionMode": "post-dialog",
-      "questions": [
+            "questions": [
         {
           "question": "چرا تام امروز نمی‌تواند بیاید؟",
           "options": [
@@ -939,6 +938,38 @@
           "fa": "بعداً"
         }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جمله «Ich bin nicht müde»، کلمه «nicht» قبل از صفت می‌آید.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! وقتی صفت داریم، nicht قبل از صفت می‌آید."
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "«nein» و «nicht» یکسان استفاده می‌شوند.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! nein پاسخ به سوال است، nicht برای منفی کردن فعل در جمله استفاده می‌شود."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "نمی‌آیم.",
+      "sentenceTemplate": "{0} {1} {2}.",
+      "options": ["Ich", "komme", "nicht"],
+      "correctAnswers": [0, 1, 2],
+      "correctTranslation": {
+        "de": "Ich komme nicht.",
+        "fa": "نمی‌آیم."
+      }
     },
     {
       "type": "completion",
