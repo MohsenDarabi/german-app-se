@@ -1,0 +1,417 @@
+{
+  "id": "A2-M18-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Genitiv: Zusammenfassung", "fa": "ژنیتیو: جمع‌بندی" },
+  "description": "مرور کامل حالت ژنیتیو: ساختار، حروف اضافه و جایگزین‌ها",
+  "level": "A2",
+  "module": 18,
+  "lessonNumber": 4,
+  "totalSteps": 44,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "des Mannes", "fa": "مرد (ژنیتیو)", "grammar": { "pos": "noun", "gender": "masculine" } },
+    { "de": "der Frau", "fa": "زن (ژنیتیو)", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "wegen", "fa": "به خاطر", "grammar": { "pos": "preposition" } },
+    { "de": "trotz", "fa": "با وجود", "grammar": { "pos": "preposition" } },
+    { "de": "während", "fa": "در طول", "grammar": { "pos": "preposition" } },
+    { "de": "von + Dativ", "fa": "جایگزین محاوره‌ای ژنیتیو", "grammar": { "pos": "phrase" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "مرور ژنیتیو: حروف تعریف",
+      "content": "📝 **حروف تعریف ژنیتیو:**\n\n| جنس | معرفه | نکره |\n|------|-------|-------|\n| مذکر | **des** + s/es | **eines** + s/es |\n| مونث | **der** | **einer** |\n| خنثی | **des** + s/es | **eines** + s/es |\n| جمع | **der** | - |\n\n**پسوند اسم مذکر/خنثی:**\n• معمولاً **-s**: des Vater**s**, des Auto**s**\n• **-es** برای اسم‌های تک‌هجایی یا ختم به s, ß, x, z, sch:\n  des Mann**es**, des Haus**es**, des Tisch**es**",
+      "examples": [
+        { "de": "das Auto des Mannes", "fa": "ماشین مرد" },
+        { "de": "die Tasche der Frau", "fa": "کیف زن" },
+        { "de": "das Spielzeug des Kindes", "fa": "اسباب‌بازی کودک" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام شکل ژنیتیو «der Vater» درست است؟",
+      "options": ["des Vater", "des Vaters", "der Vaters", "dem Vater"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! مذکر در ژنیتیو: des + اسم + s", "incorrect": "مذکر در ژنیتیو: des + اسم + s → des Vaters" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das ist das Haus {0} Familie.",
+      "options": ["der", "des", "dem", "die"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Familie مونث است، پس در ژنیتیو: der Familie" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Farbe {0} Autos ist blau.",
+      "options": ["des", "der", "dem", "das"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Auto خنثی است، پس در ژنیتیو: des Autos" }
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "des Mannes", "fa": "مرد (ژنیتیو)" },
+      "example": { "text": { "de": "Das ist das Auto des Mannes.", "fa": "این ماشین مرد است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Mannes",
+      "translation": "مرد (ژنیتیو)",
+      "syllables": ["Man", "nes"],
+      "distractors": ["Mon", "nas", "nis"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "der Frau", "fa": "زن (ژنیتیو)" },
+      "example": { "text": { "de": "Das ist die Tasche der Frau.", "fa": "این کیف زن است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Genitiv",
+      "translation": "ژنیتیو",
+      "syllables": ["Ge", "ni", "tiv"],
+      "distractors": ["Ga", "na", "tav"]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["des Kindes.", "Spielzeug", "Das ist", "das"],
+      "correctOrder": [2, 3, 1, 0],
+      "correctSentence": { "de": "Das ist das Spielzeug des Kindes.", "fa": "این اسباب‌بازی کودک است." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s4",
+      "title": "مرور: حروف اضافه با ژنیتیو",
+      "content": "📝 **چهار حرف اضافه مهم که با ژنیتیو می‌آیند:**\n\n| حرف اضافه | معنی | مثال |\n|-----------|-------|-------|\n| **wegen** | به خاطر | wegen **des Regens** |\n| **trotz** | با وجود | trotz **der Kälte** |\n| **während** | در طول | während **des Films** |\n| **(an)statt** | به جای | statt **des Autos** |\n\n💡 این حروف اضافه همیشه با ژنیتیو می‌آیند!",
+      "examples": [
+        { "de": "Wegen des Wetters bleiben wir zu Hause.", "fa": "به خاطر آب و هوا در خانه می‌مانیم." },
+        { "de": "Trotz der Müdigkeit arbeitet er weiter.", "fa": "با وجود خستگی به کارش ادامه می‌دهد." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله درست است؟",
+      "options": ["Wegen der Regen...", "Wegen des Regens...", "Wegen dem Regen...", "Wegen den Regen..."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! wegen با ژنیتیو: des Regens", "incorrect": "wegen با ژنیتیو می‌آید. Regen مذکر است: des Regens" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Trotz {0} Kälte gehen wir spazieren.",
+      "options": ["der", "des", "dem", "die"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Kälte مونث است، پس در ژنیتیو: der Kälte" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Während {0} Unterrichts dürfen wir nicht essen.",
+      "options": ["des", "der", "dem", "den"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Unterricht مذکر است، پس در ژنیتیو: des Unterrichts" }
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "wegen", "fa": "به خاطر" },
+      "example": { "text": { "de": "Wegen des Staus kam ich zu spät.", "fa": "به خاطر ترافیک دیر رسیدم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "wegen",
+      "translation": "به خاطر",
+      "syllables": ["we", "gen"],
+      "distractors": ["wa", "gan", "gin"]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "trotz", "fa": "با وجود" },
+      "example": { "text": { "de": "Trotz des Problems hat er Erfolg.", "fa": "با وجود مشکل موفق است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "trotz",
+      "translation": "با وجود",
+      "syllables": ["trotz"],
+      "distractors": ["troz", "trozt", "traz"]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "حرف اضافه را با معنی درست وصل کنید",
+      "items": [
+        { "id": "i1", "text": "wegen" },
+        { "id": "i2", "text": "trotz" },
+        { "id": "i3", "text": "während" },
+        { "id": "i4", "text": "statt" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "به خاطر" },
+        { "id": "m2", "text": "با وجود" },
+        { "id": "m3", "text": "در طول" },
+        { "id": "m4", "text": "به جای" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "برنامه‌ریزی",
+      "context": "دو دوست درباره سفر صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Wegen des schlechten Wetters können wir nicht wandern.", "fa": "به خاطر هوای بد نمی‌توانیم پیاده‌روی کنیم." } },
+        { "speaker": "Tom", "text": { "de": "Statt der Wanderung können wir ins Museum gehen.", "fa": "به جای پیاده‌روی می‌توانیم به موزه برویم." } },
+        { "speaker": "Lisa", "text": { "de": "Gute Idee! Während des Besuchs lernen wir etwas.", "fa": "ایده خوبی! در طول بازدید چیزی یاد می‌گیریم." } },
+        { "speaker": "Tom", "text": { "de": "Trotz des Regens wird es ein guter Tag!", "fa": "با وجود باران روز خوبی خواهد بود!" } }
+      ],
+      "questions": [
+        { "question": "چرا نمی‌توانند پیاده‌روی کنند؟", "options": ["خسته‌اند", "هوا بد است", "موزه بسته است"], "correctIndex": 1, "explanation": "لیزا گفت: Wegen des schlechten Wetters" },
+        { "question": "به جای پیاده‌روی چه می‌کنند؟", "options": ["در خانه می‌مانند", "به موزه می‌روند", "فیلم می‌بینند"], "correctIndex": 1, "explanation": "تام گفت: Statt der Wanderung können wir ins Museum gehen" }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "مرور: von + Dativ به جای ژنیتیو",
+      "content": "📝 **در محاوره می‌توان از von + Dativ استفاده کرد:**\n\n| ژنیتیو (رسمی) | von + Dativ (محاوره) |\n|---------------|---------------------|\n| das Auto **des Mannes** | das Auto **von dem Mann** |\n| die Tasche **der Frau** | die Tasche **von der Frau** |\n\n**کی فقط von استفاده کنیم:**\n• با اسامی خاص: das Buch **von Peter**\n• با ضمایر: ein Freund **von mir**\n\n💡 **یادآوری:** vom = von + dem",
+      "examples": [
+        { "de": "Das ist ein Freund von mir.", "fa": "این یکی از دوستان من است." },
+        { "de": "Das Ende vom Film war toll.", "fa": "پایان فیلم عالی بود." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "کدام شکل برای محاوره مناسب‌تر است؟",
+      "options": ["das Auto des Vaters", "das Auto von meinem Vater", "das Auto vom Vaters", "das Auto der Vater"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! در محاوره: von meinem Vater", "incorrect": "در محاوره از von + Dativ استفاده می‌کنیم" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید (محاوره)",
+      "sentence": "Das ist ein Freund von {0}.",
+      "options": ["mir", "ich", "mein", "meiner"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "von با Dativ می‌آید: von mir" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das ist das Buch von {0}.",
+      "options": ["Peter", "Peters", "dem Peter", "des Peter"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "با اسامی خاص از von + اسم ساده استفاده می‌کنیم" }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "während", "fa": "در طول" },
+      "example": { "text": { "de": "Während der Pause trinke ich Kaffee.", "fa": "در طول استراحت قهوه می‌نوشم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "während",
+      "translation": "در طول",
+      "syllables": ["wäh", "rend"],
+      "distractors": ["wah", "rand", "rind"]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "von + Dativ", "fa": "جایگزین محاوره‌ای ژنیتیو" },
+      "example": { "text": { "de": "Das Haus von meinem Vater ist groß.", "fa": "خانه پدرم بزرگ است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Dativ",
+      "translation": "داتیو",
+      "syllables": ["Da", "tiv"],
+      "distractors": ["Do", "tav", "tef"]
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["des Regens", "bleiben wir", "Wegen", "zu Hause."],
+      "correctOrder": [2, 0, 1, 3],
+      "correctSentence": { "de": "Wegen des Regens bleiben wir zu Hause.", "fa": "به خاطر باران در خانه می‌مانیم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["von mir.", "Freund", "ein", "Das ist"],
+      "correctOrder": [3, 2, 1, 0],
+      "correctSentence": { "de": "Das ist ein Freund von mir.", "fa": "این یکی از دوستان من است." }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "به خاطر ترافیک دیر رسیدم.",
+      "sentenceTemplate": "Wegen {0} {1} bin ich spät angekommen.",
+      "options": ["des", "Verkehrs", "dem", "Verkehr"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Wegen des Verkehrs bin ich spät angekommen.", "fa": "به خاطر ترافیک دیر رسیدم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "این ماشین برادرم است. (محاوره)",
+      "sentenceTemplate": "Das ist das Auto von {0} {1}.",
+      "options": ["meinem", "Bruder", "mein", "Bruders"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Das ist das Auto von meinem Bruder.", "fa": "این ماشین برادرم است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در ژنیتیو، اسم‌های مونث پسوند -s نمی‌گیرند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! فقط اسم‌های مذکر و خنثی پسوند -s یا -es می‌گیرند." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "بعد از حروف اضافه wegen, trotz, während می‌توان از von + Dativ استفاده کرد.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! این حروف اضافه همیشه با ژنیتیو می‌آیند، نه von + Dativ." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در دفتر",
+      "context": "همکاران صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Wessen Laptop ist das?", "fa": "این لپ‌تاپ کیست؟" } },
+        { "speaker": "Tom", "text": { "de": "Das ist der Laptop von meinem Chef.", "fa": "این لپ‌تاپ رئیسم است." } },
+        { "speaker": "Anna", "text": { "de": "Und die Dokumente des Projekts?", "fa": "و اسناد پروژه؟" } },
+        { "speaker": "Tom", "text": { "de": "Die sind auf dem Tisch der Sekretärin.", "fa": "روی میز منشی است." } }
+      ],
+      "questions": [
+        { "question": "لپ‌تاپ مال کیست؟", "options": ["آنا", "تام", "رئیس تام"], "correctIndex": 2, "explanation": "تام گفت: von meinem Chef" },
+        { "question": "اسناد کجاست؟", "options": ["روی میز رئیس", "روی میز منشی", "در کیف تام"], "correctIndex": 1, "explanation": "تام گفت: auf dem Tisch der Sekretärin" }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m2",
+      "instruction": "ژنیتیو را با von + Dativ معادل وصل کنید",
+      "items": [
+        { "id": "i1", "text": "des Mannes" },
+        { "id": "i2", "text": "der Frau" },
+        { "id": "i3", "text": "des Kindes" },
+        { "id": "i4", "text": "der Eltern" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "von dem Mann" },
+        { "id": "m2", "text": "von der Frau" },
+        { "id": "m3", "text": "von dem Kind" },
+        { "id": "m4", "text": "von den Eltern" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Das ist das Auto des Vaters.",
+      "translation": "این ماشین پدر است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Wegen des Regens bleiben wir zu Hause.",
+      "translation": "به خاطر باران در خانه می‌مانیم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Das ist ein Freund von mir.",
+      "translation": "این یکی از دوستان من است."
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون نهایی ژنیتیو",
+      "instruction": "گزینه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "___ Mannes (مذکر)", "left": "des", "right": "der", "correctSide": "left" },
+        { "prompt": "___ Frau (مونث)", "left": "des", "right": "der", "correctSide": "right" },
+        { "prompt": "به خاطر", "left": "wegen", "right": "trotz", "correctSide": "left" },
+        { "prompt": "با وجود", "left": "während", "right": "trotz", "correctSide": "right" },
+        { "prompt": "کتاب پتر (محاوره)", "left": "Peters Buch", "right": "von Peter", "correctSide": "right" },
+        { "prompt": "یکی از ما", "left": "von uns", "right": "unserer", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "des Mannes", "fa": "مرد (ژنیتیو)" },
+        { "de": "der Frau", "fa": "زن (ژنیتیو)" },
+        { "de": "wegen", "fa": "به خاطر" },
+        { "de": "trotz", "fa": "با وجود" }
+      ]
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "شکل درست را انتخاب کنید",
+      "words": [
+        { "de": "ماشین پدر (رسمی)", "fa": "das Auto ...", "options": ["des Vaters", "von dem Vater", "der Vater", "dem Vaters"], "correctIndex": 0 },
+        { "de": "به خاطر باران", "fa": "... des Regens", "options": ["trotz", "wegen", "während", "statt"], "correctIndex": 1 },
+        { "de": "یکی از دوستانم", "fa": "ein Freund ...", "options": ["meiner", "von mir", "mir", "mein"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp1",
+      "title": "تبریک! 🎉🎊",
+      "message": "شما ماژول ژنیتیو را با موفقیت تمام کردید!",
+      "keyPoints": [
+        "ژنیتیو برای نشان دادن مالکیت: des Mannes, der Frau",
+        "مذکر/خنثی: des + اسم + s/es",
+        "مونث/جمع: der + اسم",
+        "حروف اضافه ژنیتیو: wegen, trotz, während, statt",
+        "در محاوره: von + Dativ به جای ژنیتیو",
+        "با اسامی خاص و ضمایر: فقط von (von Peter, von mir)",
+        "سوال مالکیت: Wessen ...?"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "des Mannes", "fa": "مرد (ژنیتیو)" } },
+        { "word": { "de": "der Frau", "fa": "زن (ژنیتیو)" } },
+        { "word": { "de": "wegen", "fa": "به خاطر" } },
+        { "word": { "de": "trotz", "fa": "با وجود" } },
+        { "word": { "de": "während", "fa": "در طول" } },
+        { "word": { "de": "von + Dativ", "fa": "جایگزین محاوره‌ای ژنیتیو" } }
+      ]
+    }
+  ]
+}

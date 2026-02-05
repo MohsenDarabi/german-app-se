@@ -1,0 +1,431 @@
+{
+  "id": "A2-M18-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Genitiv: Bildung", "fa": "ژنیتیو: ساختار" },
+  "description": "یاد بگیرید حالت ژنیتیو (مالکیت) را با حروف تعریف des, der و پسوندهای -s/-es",
+  "level": "A2",
+  "module": 18,
+  "lessonNumber": 1,
+  "totalSteps": 44,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "des Mannes", "fa": "مرد (ژنیتیو)", "grammar": { "pos": "noun", "gender": "masculine" } },
+    { "de": "der Frau", "fa": "زن (ژنیتیو)", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "des Kindes", "fa": "کودک (ژنیتیو)", "grammar": { "pos": "noun", "gender": "neuter" } },
+    { "de": "der Eltern", "fa": "والدین (ژنیتیو)", "grammar": { "pos": "noun" } },
+    { "de": "das Auto des Vaters", "fa": "ماشین پدر", "grammar": { "pos": "phrase" } },
+    { "de": "die Tasche der Mutter", "fa": "کیف مادر", "grammar": { "pos": "phrase" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "حالت ژنیتیو چیست؟",
+      "content": "📝 **ژنیتیو (Genitiv) برای نشان دادن مالکیت استفاده می‌شود:**\n\n**در فارسی:** کتاب **پدر** = کتاب متعلق به پدر\n**در آلمانی:** das Buch **des Vaters** = کتاب پدر\n\n**حروف تعریف ژنیتیو:**\n| جنس | معرفه | نکره |\n|------|-------|-------|\n| مذکر | **des** | **eines** |\n| مونث | **der** | **einer** |\n| خنثی | **des** | **eines** |\n| جمع | **der** | - |\n\n💡 در ژنیتیو، اسم‌های مذکر و خنثی پسوند **-s** یا **-es** می‌گیرند!",
+      "examples": [
+        { "de": "das Auto des Mannes", "fa": "ماشین مرد" },
+        { "de": "die Tasche der Frau", "fa": "کیف زن" },
+        { "de": "das Zimmer des Kindes", "fa": "اتاق کودک" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "des Mannes", "fa": "مرد (ژنیتیو)" },
+      "example": { "text": { "de": "Das ist das Auto des Mannes.", "fa": "این ماشین مرد است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Mannes",
+      "translation": "مرد (ژنیتیو)",
+      "syllables": ["Man", "nes"],
+      "distractors": ["Mon", "nas", "nis"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "der Frau", "fa": "زن (ژنیتیو)" },
+      "example": { "text": { "de": "Das ist die Tasche der Frau.", "fa": "این کیف زن است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Genitiv",
+      "translation": "ژنیتیو",
+      "syllables": ["Ge", "ni", "tiv"],
+      "distractors": ["Ga", "na", "tav"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "des Kindes", "fa": "کودک (ژنیتیو)" },
+      "example": { "text": { "de": "Das Spielzeug des Kindes ist neu.", "fa": "اسباب‌بازی کودک جدید است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Kindes",
+      "translation": "کودک (ژنیتیو)",
+      "syllables": ["Kin", "des"],
+      "distractors": ["Kan", "das", "dis"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«ماشین پدر» به آلمانی چیست؟",
+      "options": ["das Auto der Vater", "das Auto des Vaters", "das Auto dem Vater", "das Auto den Vater"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! مذکر در ژنیتیو: des + اسم + s", "incorrect": "در ژنیتیو مذکر از des استفاده می‌کنیم و اسم پسوند -s می‌گیرد" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das ist das Haus {0} Familie.",
+      "options": ["der", "des", "dem", "den"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Familie مونث است، پس در ژنیتیو: der Familie" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در دفتر",
+      "context": "همکاران درباره وسایل صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Wessen Laptop ist das?", "fa": "این لپ‌تاپ کیست؟" } },
+        { "speaker": "Tom", "text": { "de": "Das ist der Laptop des Chefs.", "fa": "این لپ‌تاپ رئیس است." } },
+        { "speaker": "Anna", "text": { "de": "Und die Tasche der Kollegin?", "fa": "و کیف همکار؟" } },
+        { "speaker": "Tom", "text": { "de": "Die liegt auf dem Tisch des Büros.", "fa": "روی میز دفتر است." } }
+      ],
+      "questions": [
+        { "question": "لپ‌تاپ مال کیست؟", "options": ["آنا", "تام", "رئیس"], "correctIndex": 2, "explanation": "تام گفت: der Laptop des Chefs" },
+        { "question": "کیف کجاست؟", "options": ["روی صندلی", "روی میز دفتر", "در کیف"], "correctIndex": 1, "explanation": "تام گفت: auf dem Tisch des Büros" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["des Mannes.", "Hund", "Das ist", "der"],
+      "correctOrder": [2, 3, 1, 0],
+      "correctSentence": { "de": "Das ist der Hund des Mannes.", "fa": "این سگ مرد است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در ژنیتیو، اسم‌های مونث پسوند -s نمی‌گیرند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! فقط اسم‌های مذکر و خنثی پسوند -s یا -es می‌گیرند" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "پسوند -s یا -es؟",
+      "content": "📝 **کی از -s و کی از -es استفاده کنیم؟**\n\n**-es** برای اسم‌هایی که به این حروف ختم می‌شوند:\n• -s, -ß, -x, -z: das Haus → des Haus**es**\n• -sch: der Tisch → des Tisch**es**\n• تک‌هجایی: der Mann → des Mann**es** (یا Manns)\n\n**-s** برای بقیه اسم‌ها:\n• der Vater → des Vater**s**\n• das Auto → des Auto**s**\n• der Computer → des Computer**s**\n\n💡 برای اسم‌های تک‌هجایی، هر دو شکل درست است: des Manns / des Mannes",
+      "examples": [
+        { "de": "des Hauses", "fa": "خانه (ژنیتیو)" },
+        { "de": "des Vaters", "fa": "پدر (ژنیتیو)" },
+        { "de": "des Tisches", "fa": "میز (ژنیتیو)" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "der Eltern", "fa": "والدین (ژنیتیو)" },
+      "example": { "text": { "de": "Das Haus der Eltern ist groß.", "fa": "خانه والدین بزرگ است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "Eltern",
+      "translation": "والدین",
+      "syllables": ["El", "tern"],
+      "distractors": ["Al", "tarn", "tirn"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "das Auto des Vaters", "fa": "ماشین پدر" },
+      "example": { "text": { "de": "Das Auto des Vaters ist rot.", "fa": "ماشین پدر قرمز است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "Vaters",
+      "translation": "پدر (ژنیتیو)",
+      "syllables": ["Va", "ters"],
+      "distractors": ["Vo", "tars", "tirs"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام شکل ژنیتیو «das Haus» درست است؟",
+      "options": ["des Haus", "des Hauses", "der Haus", "dem Hauses"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! Haus به -s ختم می‌شود، پس -es می‌گیرد", "incorrect": "اسم‌هایی که به -s ختم می‌شوند، پسوند -es می‌گیرند" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Farbe {0} Autos ist blau.",
+      "options": ["des", "der", "dem", "den"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Auto خنثی است، پس در ژنیتیو: des Autos" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "عکس خانوادگی",
+      "context": "دو دوست به عکس نگاه می‌کنند",
+      "lines": [
+        { "speaker": "Maria", "text": { "de": "Wer ist das auf dem Foto?", "fa": "این کی در عکس است؟" } },
+        { "speaker": "Lisa", "text": { "de": "Das ist der Bruder meines Vaters.", "fa": "این برادر پدرم است." } },
+        { "speaker": "Maria", "text": { "de": "Und das Haus im Hintergrund?", "fa": "و خانه در پس‌زمینه؟" } },
+        { "speaker": "Lisa", "text": { "de": "Das ist das Haus meiner Großeltern.", "fa": "این خانه پدربزرگ و مادربزرگم است." } }
+      ],
+      "questions": [
+        { "question": "مرد در عکس کیست؟", "options": ["پدر لیزا", "عموی لیزا", "پدربزرگ لیزا"], "correctIndex": 1, "explanation": "لیزا گفت: der Bruder meines Vaters (برادر پدرم = عمو)" },
+        { "question": "خانه مال کیست؟", "options": ["والدین لیزا", "پدربزرگ و مادربزرگ لیزا", "عموی لیزا"], "correctIndex": 1, "explanation": "لیزا گفت: das Haus meiner Großeltern" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["groß.", "ist", "der Eltern", "Das Haus"],
+      "correctOrder": [3, 2, 1, 0],
+      "correctSentence": { "de": "Das Haus der Eltern ist groß.", "fa": "خانه والدین بزرگ است." }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "این کتاب معلم است.",
+      "sentenceTemplate": "Das ist das Buch {0} {1}.",
+      "options": ["des", "Lehrers", "der", "Lehrer"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Das ist das Buch des Lehrers.", "fa": "این کتاب معلم است." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "اسم را با شکل ژنیتیو درست وصل کنید",
+      "items": [
+        { "id": "i1", "text": "der Mann" },
+        { "id": "i2", "text": "die Frau" },
+        { "id": "i3", "text": "das Kind" },
+        { "id": "i4", "text": "die Kinder (جمع)" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "des Mannes" },
+        { "id": "m2", "text": "der Frau" },
+        { "id": "m3", "text": "des Kindes" },
+        { "id": "m4", "text": "der Kinder" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "die Tasche der Mutter", "fa": "کیف مادر" },
+      "example": { "text": { "de": "Die Tasche der Mutter ist schwarz.", "fa": "کیف مادر سیاه است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Mutter",
+      "translation": "مادر",
+      "syllables": ["Mut", "ter"],
+      "distractors": ["Mat", "tar", "tir"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "ژنیتیو جمع چگونه ساخته می‌شود؟",
+      "options": ["des + اسم", "der + اسم", "dem + اسم", "den + اسم"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! جمع در ژنیتیو همیشه der می‌گیرد", "incorrect": "جمع در ژنیتیو: der + اسم (بدون پسوند اضافه)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Namen {0} Kinder sind Anna und Tom.",
+      "options": ["der", "des", "den", "dem"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Kinder جمع است، پس در ژنیتیو: der Kinder" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das Büro {0} Chefs ist im zweiten Stock.",
+      "options": ["des", "der", "dem", "den"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Chef مذکر است، پس در ژنیتیو: des Chefs" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "سوال با wessen",
+      "content": "📝 **برای پرسیدن مالکیت از wessen استفاده می‌کنیم:**\n\n• **Wessen** Auto ist das? - این ماشین کیست؟\n• Das ist das Auto **des Mannes**. - این ماشین مرد است.\n\n• **Wessen** Tasche ist das? - این کیف کیست؟\n• Das ist die Tasche **der Frau**. - این کیف زن است.\n\n💡 wessen = مال چه کسی / کیست\n(مثل whose در انگلیسی)",
+      "examples": [
+        { "de": "Wessen Buch ist das?", "fa": "این کتاب کیست؟" },
+        { "de": "Wessen Kinder sind das?", "fa": "این‌ها بچه‌های کی هستند؟" }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d3",
+      "title": "اشیاء گمشده",
+      "context": "در کلاس زبان",
+      "lines": [
+        { "speaker": "Lehrer", "text": { "de": "Wessen Stift ist das?", "fa": "این خودکار کیست؟" } },
+        { "speaker": "Schüler", "text": { "de": "Das ist der Stift des Schülers neben mir.", "fa": "این خودکار دانش‌آموز کنار من است." } },
+        { "speaker": "Lehrer", "text": { "de": "Und wessen Bücher liegen hier?", "fa": "و کتاب‌های کی اینجاست؟" } },
+        { "speaker": "Schüler", "text": { "de": "Das sind die Bücher der Studentin aus Italien.", "fa": "این‌ها کتاب‌های دانشجوی ایتالیایی است." } }
+      ],
+      "questions": [
+        { "question": "خودکار مال کیست؟", "options": ["معلم", "دانش‌آموز کناری", "دانشجوی ایتالیایی"], "correctIndex": 1, "explanation": "دانش‌آموز گفت: des Schülers neben mir" },
+        { "question": "کتاب‌ها مال کیست؟", "options": ["معلم", "دانش‌آموز کناری", "دانشجوی ایتالیایی"], "correctIndex": 2, "explanation": "دانش‌آموز گفت: der Studentin aus Italien" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["das?", "ist", "Auto", "Wessen"],
+      "correctOrder": [3, 2, 1, 0],
+      "correctSentence": { "de": "Wessen Auto ist das?", "fa": "این ماشین کیست؟" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo4",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["des Lehrers.", "Buch", "ist", "Das", "das"],
+      "correctOrder": [3, 1, 4, 2, 0],
+      "correctSentence": { "de": "Das ist das Buch des Lehrers.", "fa": "این کتاب معلم است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای پرسیدن مالکیت در آلمانی از کلمه «wer» استفاده می‌کنیم.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! از wessen استفاده می‌کنیم. wer = کی (فاعل)، wessen = مال کی" }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "این ماشین کیست؟",
+      "sentenceTemplate": "{0} {1} ist das?",
+      "options": ["Wessen", "Auto", "Wer", "Das"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Wessen Auto ist das?", "fa": "این ماشین کیست؟" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "کدام جمله درست است؟",
+      "options": ["Das ist das Auto des Frau.", "Das ist das Auto der Frau.", "Das ist das Auto dem Frau.", "Das ist das Auto die Frau."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! Frau مونث است، پس der Frau", "incorrect": "اسم‌های مونث در ژنیتیو der می‌گیرند" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das ist der Hund {0} Nachbarn.",
+      "options": ["des", "der", "dem", "den"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Nachbar مذکر است، پس در ژنیتیو: des Nachbarn" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Tür {0} Hauses ist offen.",
+      "options": ["des", "der", "dem", "den"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Haus خنثی است، پس در ژنیتیو: des Hauses" }
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Das ist das Auto des Vaters.",
+      "translation": "این ماشین پدر است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Wessen Buch ist das?",
+      "translation": "این کتاب کیست؟"
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Das Haus der Familie ist groß.",
+      "translation": "خانه خانواده بزرگ است."
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "حرف تعریف ژنیتیو",
+      "instruction": "حرف تعریف درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "___ Mannes (مذکر)", "left": "des", "right": "der", "correctSide": "left" },
+        { "prompt": "___ Frau (مونث)", "left": "des", "right": "der", "correctSide": "right" },
+        { "prompt": "___ Kindes (خنثی)", "left": "des", "right": "der", "correctSide": "left" },
+        { "prompt": "___ Kinder (جمع)", "left": "des", "right": "der", "correctSide": "right" },
+        { "prompt": "___ Hauses (خنثی)", "left": "des", "right": "der", "correctSide": "left" },
+        { "prompt": "___ Eltern (جمع)", "left": "des", "right": "der", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "des Mannes", "fa": "مرد (ژنیتیو)" },
+        { "de": "der Frau", "fa": "زن (ژنیتیو)" },
+        { "de": "des Kindes", "fa": "کودک (ژنیتیو)" },
+        { "de": "der Kinder", "fa": "کودکان (ژنیتیو)" }
+      ]
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "شکل ژنیتیو درست را انتخاب کنید",
+      "words": [
+        { "de": "der Vater", "fa": "پدر (ژنیتیو؟)", "options": ["des Vater", "des Vaters", "der Vaters", "dem Vater"], "correctIndex": 1 },
+        { "de": "die Mutter", "fa": "مادر (ژنیتیو؟)", "options": ["des Mutter", "der Mutters", "der Mutter", "dem Mutter"], "correctIndex": 2 },
+        { "de": "das Haus", "fa": "خانه (ژنیتیو؟)", "options": ["des Haus", "des Hauses", "der Hauses", "dem Haus"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp1",
+      "title": "آفرین! 🎉",
+      "message": "شما ساختار ژنیتیو را یاد گرفتید!",
+      "keyPoints": [
+        "ژنیتیو برای نشان دادن مالکیت استفاده می‌شود",
+        "مذکر و خنثی: des + اسم + s/es",
+        "مونث: der + اسم (بدون تغییر)",
+        "جمع: der + اسم (بدون تغییر)",
+        "پسوند -es برای اسم‌های تک‌هجایی یا ختم به -s, -ß, -x, -z, -sch",
+        "سوال مالکیت: Wessen ...?"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "des Mannes", "fa": "مرد (ژنیتیو)" } },
+        { "word": { "de": "der Frau", "fa": "زن (ژنیتیو)" } },
+        { "word": { "de": "des Kindes", "fa": "کودک (ژنیتیو)" } },
+        { "word": { "de": "der Eltern", "fa": "والدین (ژنیتیو)" } },
+        { "word": { "de": "das Auto des Vaters", "fa": "ماشین پدر" } },
+        { "word": { "de": "die Tasche der Mutter", "fa": "کیف مادر" } }
+      ]
+    }
+  ]
+}

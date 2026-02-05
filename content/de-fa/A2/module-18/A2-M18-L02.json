@@ -1,0 +1,430 @@
+{
+  "id": "A2-M18-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Genitiv mit Präpositionen", "fa": "ژنیتیو با حروف اضافه" },
+  "description": "یاد بگیرید حروف اضافه‌ای که با ژنیتیو می‌آیند: wegen, trotz, während, statt",
+  "level": "A2",
+  "module": 18,
+  "lessonNumber": 2,
+  "totalSteps": 44,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "wegen", "fa": "به خاطر / به دلیل", "grammar": { "pos": "preposition" } },
+    { "de": "trotz", "fa": "با وجود / علیرغم", "grammar": { "pos": "preposition" } },
+    { "de": "während", "fa": "در طول / در حین", "grammar": { "pos": "preposition" } },
+    { "de": "(an)statt", "fa": "به جای", "grammar": { "pos": "preposition" } },
+    { "de": "wegen des Regens", "fa": "به خاطر باران", "grammar": { "pos": "phrase" } },
+    { "de": "trotz der Kälte", "fa": "با وجود سرما", "grammar": { "pos": "phrase" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "حروف اضافه با ژنیتیو",
+      "content": "📝 **چهار حرف اضافه مهم که با ژنیتیو می‌آیند:**\n\n| حرف اضافه | معنی |\n|-----------|-------|\n| **wegen** | به خاطر، به دلیل |\n| **trotz** | با وجود، علیرغم |\n| **während** | در طول، در حین |\n| **(an)statt** | به جای |\n\n💡 بعد از این حروف اضافه، اسم در حالت **ژنیتیو** می‌آید!\n\n**مثال:**\n• wegen **des Regens** - به خاطر باران\n• trotz **der Kälte** - با وجود سرما",
+      "examples": [
+        { "de": "Wegen des Wetters bleiben wir zu Hause.", "fa": "به خاطر آب و هوا در خانه می‌مانیم." },
+        { "de": "Trotz der Müdigkeit arbeitet er weiter.", "fa": "با وجود خستگی به کارش ادامه می‌دهد." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "wegen", "fa": "به خاطر / به دلیل" },
+      "example": { "text": { "de": "Wegen des Regens bleibe ich zu Hause.", "fa": "به خاطر باران در خانه می‌مانم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "wegen",
+      "translation": "به خاطر / به دلیل",
+      "syllables": ["we", "gen"],
+      "distractors": ["wa", "gan", "gin"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "trotz", "fa": "با وجود / علیرغم" },
+      "example": { "text": { "de": "Trotz der Kälte gehen wir spazieren.", "fa": "با وجود سرما قدم می‌زنیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "trotz",
+      "translation": "با وجود / علیرغم",
+      "syllables": ["trotz"],
+      "distractors": ["troz", "trozt", "traz"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "während", "fa": "در طول / در حین" },
+      "example": { "text": { "de": "Während des Essens sprechen wir nicht.", "fa": "در حین غذا صحبت نمی‌کنیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "während",
+      "translation": "در طول / در حین",
+      "syllables": ["wäh", "rend"],
+      "distractors": ["wah", "rand", "rind"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله درست است؟",
+      "options": ["Wegen der Regen bleibe ich.", "Wegen des Regens bleibe ich.", "Wegen dem Regen bleibe ich.", "Wegen den Regen bleibe ich."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! wegen با ژنیتیو می‌آید: des Regens", "incorrect": "wegen با ژنیتیو می‌آید. Regen مذکر است، پس: des Regens" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Wegen {0} Wetters fahren wir nicht.",
+      "options": ["des", "der", "dem", "das"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Wetter خنثی است، پس در ژنیتیو: des Wetters" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "برنامه‌ها عوض شد",
+      "context": "دو دوست درباره آخر هفته صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Kommst du morgen zur Party?", "fa": "فردا به مهمانی می‌آیی؟" } },
+        { "speaker": "Tom", "text": { "de": "Nein, wegen meiner Prüfung muss ich lernen.", "fa": "نه، به خاطر امتحانم باید درس بخوانم." } },
+        { "speaker": "Lisa", "text": { "de": "Schade! Trotz des Lernens kannst du eine Pause machen.", "fa": "حیف! با وجود درس خواندن می‌توانی استراحت کنی." } },
+        { "speaker": "Tom", "text": { "de": "Während der Prüfungswoche habe ich keine Zeit.", "fa": "در طول هفته امتحانات وقت ندارم." } }
+      ],
+      "questions": [
+        { "question": "چرا تام به مهمانی نمی‌رود؟", "options": ["مریض است", "به خاطر امتحان", "مسافرت می‌رود"], "correctIndex": 1, "explanation": "تام گفت: wegen meiner Prüfung" },
+        { "question": "تام چه وقت وقت ندارد؟", "options": ["آخر هفته", "در طول هفته امتحانات", "فردا"], "correctIndex": 1, "explanation": "تام گفت: Während der Prüfungswoche" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["des Wetters", "Wegen", "wir", "fahren", "nicht."],
+      "correctOrder": [1, 0, 2, 3, 4],
+      "correctSentence": { "de": "Wegen des Wetters fahren wir nicht.", "fa": "به خاطر آب و هوا رانندگی نمی‌کنیم." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "بعد از حرف اضافه wegen، اسم در حالت ژنیتیو می‌آید.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! wegen یکی از حروف اضافه‌ای است که با ژنیتیو می‌آید." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "trotz - با وجود",
+      "content": "📝 **trotz برای بیان تضاد استفاده می‌شود:**\n\n• Trotz **des Regens** gehen wir spazieren.\n  با وجود باران قدم می‌زنیم.\n\n• Trotz **der Müdigkeit** arbeitet sie weiter.\n  با وجود خستگی به کارش ادامه می‌دهد.\n\n💡 trotz = با وجود این‌که... ولی...\n\n**یادآوری:**\n| جنس | ژنیتیو |\n|-----|--------|\n| مذکر | trotz **des** + اسم + s/es |\n| مونث | trotz **der** + اسم |\n| خنثی | trotz **des** + اسم + s/es |\n| جمع | trotz **der** + اسم |",
+      "examples": [
+        { "de": "Trotz des Problems hat er Erfolg.", "fa": "با وجود مشکل موفق است." },
+        { "de": "Trotz der Hitze arbeiten wir.", "fa": "با وجود گرما کار می‌کنیم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "(an)statt", "fa": "به جای" },
+      "example": { "text": { "de": "Statt des Autos nehme ich das Fahrrad.", "fa": "به جای ماشین دوچرخه می‌گیرم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "anstatt",
+      "translation": "به جای",
+      "syllables": ["an", "statt"],
+      "distractors": ["en", "stet", "stot"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "«با وجود سرما» به آلمانی چیست؟",
+      "options": ["trotz der Kälte", "trotz des Kälte", "trotz die Kälte", "trotz dem Kälte"],
+      "correctAnswerIndex": 0,
+      "feedback": { "correct": "آفرین! Kälte مونث است، پس: trotz der Kälte", "incorrect": "Kälte مونث است، پس در ژنیتیو: der Kälte" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Trotz {0} Müdigkeit arbeitet er weiter.",
+      "options": ["der", "des", "dem", "die"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Müdigkeit مونث است، پس در ژنیتیو: der Müdigkeit" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Während {0} Unterrichts dürfen wir nicht essen.",
+      "options": ["des", "der", "dem", "den"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Unterricht مذکر است، پس در ژنیتیو: des Unterrichts" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "جایگزین‌ها",
+      "context": "در رستوران",
+      "lines": [
+        { "speaker": "Kellner", "text": { "de": "Was möchten Sie trinken?", "fa": "چه می‌خواهید بنوشید؟" } },
+        { "speaker": "Gast", "text": { "de": "Statt des Kaffees nehme ich einen Tee.", "fa": "به جای قهوه چای می‌گیرم." } },
+        { "speaker": "Kellner", "text": { "de": "Und zum Essen?", "fa": "و برای غذا؟" } },
+        { "speaker": "Gast", "text": { "de": "Statt des Fleisches möchte ich Fisch.", "fa": "به جای گوشت ماهی می‌خواهم." } }
+      ],
+      "questions": [
+        { "question": "مهمان به جای قهوه چه می‌خواهد؟", "options": ["آب", "چای", "آبمیوه"], "correctIndex": 1, "explanation": "مهمان گفت: Statt des Kaffees nehme ich einen Tee." },
+        { "question": "مهمان به جای گوشت چه می‌خواهد؟", "options": ["مرغ", "سبزیجات", "ماهی"], "correctIndex": 2, "explanation": "مهمان گفت: Statt des Fleisches möchte ich Fisch." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["der Kälte", "gehen wir", "Trotz", "spazieren."],
+      "correctOrder": [2, 0, 1, 3],
+      "correctSentence": { "de": "Trotz der Kälte gehen wir spazieren.", "fa": "با وجود سرما قدم می‌زنیم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "در طول سفر بسیار خوابیدم.",
+      "sentenceTemplate": "Während {0} {1} habe ich viel geschlafen.",
+      "options": ["der", "Reise", "des", "Reises"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Während der Reise habe ich viel geschlafen.", "fa": "در طول سفر بسیار خوابیدم." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "حرف اضافه را با معنی درست وصل کنید",
+      "items": [
+        { "id": "i1", "text": "wegen" },
+        { "id": "i2", "text": "trotz" },
+        { "id": "i3", "text": "während" },
+        { "id": "i4", "text": "statt" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "به خاطر" },
+        { "id": "m2", "text": "با وجود" },
+        { "id": "m3", "text": "در طول" },
+        { "id": "m4", "text": "به جای" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "wegen des Regens", "fa": "به خاطر باران" },
+      "example": { "text": { "de": "Wegen des Regens ist das Spiel abgesagt.", "fa": "به خاطر باران بازی لغو شده." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "Regens",
+      "translation": "باران (ژنیتیو)",
+      "syllables": ["Re", "gens"],
+      "distractors": ["Ra", "gans", "gins"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "trotz der Kälte", "fa": "با وجود سرما" },
+      "example": { "text": { "de": "Trotz der Kälte geht er ohne Jacke.", "fa": "با وجود سرما بدون کت می‌رود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Kälte",
+      "translation": "سرما",
+      "syllables": ["Käl", "te"],
+      "distractors": ["Kal", "ta", "ti"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "کدام حرف اضافه معنی «در طول» می‌دهد؟",
+      "options": ["wegen", "trotz", "während", "statt"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! während = در طول / در حین", "incorrect": "während معنی «در طول» یا «در حین» می‌دهد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Statt {0} Autos fahre ich mit dem Fahrrad.",
+      "options": ["des", "der", "dem", "das"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Auto خنثی است، پس در ژنیتیو: des Autos" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Wegen {0} Erkältung bleibt sie zu Hause.",
+      "options": ["der", "des", "dem", "die"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Erkältung مونث است، پس در ژنیتیو: der Erkältung" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "während - در طول",
+      "content": "📝 **während برای بیان زمان استفاده می‌شود:**\n\n• Während **des Films** esse ich Popcorn.\n  در طول فیلم پاپ‌کورن می‌خورم.\n\n• Während **der Pause** trinke ich Kaffee.\n  در طول استراحت قهوه می‌نوشم.\n\n💡 **während** هم می‌تواند حرف اضافه باشد (+ Genitiv) و هم حرف ربط (+ Nebensatz).\n\n**به عنوان حرف اضافه:**\nWährend des Unterrichts...\n\n**به عنوان حرف ربط:**\nWährend ich esse, lese ich.",
+      "examples": [
+        { "de": "Während des Sommers fahren wir ans Meer.", "fa": "در طول تابستان به دریا می‌رویم." },
+        { "de": "Während der Nacht schlafen alle.", "fa": "در طول شب همه می‌خوابند." }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d3",
+      "title": "توضیح غیبت",
+      "context": "دانش‌آموز با معلم صحبت می‌کند",
+      "lines": [
+        { "speaker": "Lehrer", "text": { "de": "Warum waren Sie gestern nicht hier?", "fa": "چرا دیروز اینجا نبودید؟" } },
+        { "speaker": "Schüler", "text": { "de": "Wegen meiner Krankheit konnte ich nicht kommen.", "fa": "به خاطر بیماری‌ام نتوانستم بیایم." } },
+        { "speaker": "Lehrer", "text": { "de": "Trotz der Abwesenheit müssen Sie die Aufgabe machen.", "fa": "با وجود غیبت باید تکلیف را انجام دهید." } },
+        { "speaker": "Schüler", "text": { "de": "Ja, während des Wochenendes werde ich alles nachholen.", "fa": "بله، در طول آخر هفته همه چیز را جبران خواهم کرد." } }
+      ],
+      "questions": [
+        { "question": "چرا دانش‌آموز دیروز غایب بود؟", "options": ["مسافرت بود", "مریض بود", "خواب مانده بود"], "correctIndex": 1, "explanation": "دانش‌آموز گفت: Wegen meiner Krankheit" },
+        { "question": "دانش‌آموز چه وقت تکلیف را انجام می‌دهد؟", "options": ["امشب", "در طول آخر هفته", "فردا"], "correctIndex": 1, "explanation": "دانش‌آموز گفت: während des Wochenendes" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["des Unterrichts", "dürfen wir", "Während", "nicht sprechen."],
+      "correctOrder": [2, 0, 1, 3],
+      "correctSentence": { "de": "Während des Unterrichts dürfen wir nicht sprechen.", "fa": "در طول درس اجازه صحبت کردن نداریم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo4",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["des Kaffees", "Statt", "einen Tee.", "nehme ich"],
+      "correctOrder": [1, 0, 3, 2],
+      "correctSentence": { "de": "Statt des Kaffees nehme ich einen Tee.", "fa": "به جای قهوه چای می‌گیرم." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "حرف اضافه statt معنی «به جای» می‌دهد و با ژنیتیو می‌آید.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! statt (یا anstatt) معنی «به جای» می‌دهد و با ژنیتیو می‌آید." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "به خاطر ترافیک دیر رسیدم.",
+      "sentenceTemplate": "Wegen {0} {1} bin ich spät angekommen.",
+      "options": ["des", "Verkehrs", "der", "Verkehr"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Wegen des Verkehrs bin ich spät angekommen.", "fa": "به خاطر ترافیک دیر رسیدم." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "کدام جمله درست است؟",
+      "options": ["Trotz des Regens gehe ich spazieren.", "Trotz der Regen gehe ich spazieren.", "Trotz dem Regen gehe ich spazieren.", "Trotz den Regen gehe ich spazieren."],
+      "correctAnswerIndex": 0,
+      "feedback": { "correct": "آفرین! Regen مذکر است، پس: trotz des Regens", "incorrect": "trotz با ژنیتیو می‌آید. Regen مذکر است، پس: des Regens" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Während {0} Ferien fahren wir nach Italien.",
+      "options": ["der", "des", "dem", "den"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Ferien جمع است، پس در ژنیتیو: der Ferien" }
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Wegen des Regens bleiben wir zu Hause.",
+      "translation": "به خاطر باران در خانه می‌مانیم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Trotz der Kälte gehen wir spazieren.",
+      "translation": "با وجود سرما قدم می‌زنیم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Während des Essens sprechen wir nicht.",
+      "translation": "در حین غذا صحبت نمی‌کنیم."
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "حرف اضافه درست",
+      "instruction": "حرف اضافه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "به خاطر (because of)", "left": "wegen", "right": "trotz", "correctSide": "left" },
+        { "prompt": "با وجود (despite)", "left": "während", "right": "trotz", "correctSide": "right" },
+        { "prompt": "در طول (during)", "left": "während", "right": "statt", "correctSide": "left" },
+        { "prompt": "به جای (instead of)", "left": "wegen", "right": "statt", "correctSide": "right" },
+        { "prompt": "___ des Regens (به خاطر باران)", "left": "wegen", "right": "trotz", "correctSide": "left" },
+        { "prompt": "___ der Kälte (با وجود سرما)", "left": "während", "right": "trotz", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "wegen", "fa": "به خاطر" },
+        { "de": "trotz", "fa": "با وجود" },
+        { "de": "während", "fa": "در طول" },
+        { "de": "statt", "fa": "به جای" }
+      ]
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "جمله درست را انتخاب کنید",
+      "words": [
+        { "de": "wegen + باران", "fa": "به خاطر باران", "options": ["wegen des Regens", "wegen der Regen", "wegen dem Regen", "wegen den Regen"], "correctIndex": 0 },
+        { "de": "trotz + سرما", "fa": "با وجود سرما", "options": ["trotz des Kälte", "trotz der Kälte", "trotz die Kälte", "trotz dem Kälte"], "correctIndex": 1 },
+        { "de": "während + فیلم", "fa": "در طول فیلم", "options": ["während der Films", "während dem Film", "während des Films", "während den Film"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp1",
+      "title": "آفرین! 🎉",
+      "message": "شما حروف اضافه ژنیتیو را یاد گرفتید!",
+      "keyPoints": [
+        "wegen = به خاطر / به دلیل",
+        "trotz = با وجود / علیرغم",
+        "während = در طول / در حین",
+        "(an)statt = به جای",
+        "همه این حروف اضافه با ژنیتیو می‌آیند",
+        "مذکر/خنثی: des + اسم + s/es",
+        "مونث/جمع: der + اسم"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "wegen", "fa": "به خاطر / به دلیل" } },
+        { "word": { "de": "trotz", "fa": "با وجود / علیرغم" } },
+        { "word": { "de": "während", "fa": "در طول / در حین" } },
+        { "word": { "de": "(an)statt", "fa": "به جای" } },
+        { "word": { "de": "wegen des Regens", "fa": "به خاطر باران" } },
+        { "word": { "de": "trotz der Kälte", "fa": "با وجود سرما" } }
+      ]
+    }
+  ]
+}

@@ -1001,6 +1001,37 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/A2/A2-M17-L04"
       }
     ]
+  },
+  {
+    id: "module-18",
+    title: "بخش ۱۸: حالت ژنیتیو (Genitiv)",
+    level: "A2",
+    lessons: [
+      {
+        id: "A2-M18-L01",
+        title: "Genitiv: Bildung - ساختار ژنیتیو",
+        description: "یاد بگیرید حالت ژنیتیو (مالکیت) را با حروف تعریف des, der و پسوندهای -s/-es.",
+        path: "/learn/de-fa/A2/A2-M18-L01"
+      },
+      {
+        id: "A2-M18-L02",
+        title: "Genitiv mit Präpositionen - ژنیتیو با حروف اضافه",
+        description: "یاد بگیرید حروف اضافه‌ای که با ژنیتیو می‌آیند: wegen, trotz, während, statt.",
+        path: "/learn/de-fa/A2/A2-M18-L02"
+      },
+      {
+        id: "A2-M18-L03",
+        title: "Genitiv vs. von + Dativ - ژنیتیو در مقابل von",
+        description: "یاد بگیرید چه وقت می‌توان از von + Dativ به جای ژنیتیو استفاده کرد.",
+        path: "/learn/de-fa/A2/A2-M18-L03"
+      },
+      {
+        id: "A2-M18-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل حالت ژنیتیو: ساختار، حروف اضافه و جایگزین‌ها.",
+        path: "/learn/de-fa/A2/A2-M18-L04"
+      }
+    ]
   }
 ];
 
