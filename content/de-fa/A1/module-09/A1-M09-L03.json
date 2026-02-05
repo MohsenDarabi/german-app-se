@@ -17,7 +17,7 @@
   "level": "A1",
   "module": 9,
   "lessonNumber": 3,
-  "totalSteps": 42,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     {
@@ -432,7 +432,6 @@
           "mood": "happy"
         }
       ],
-      "questionMode": "post-dialog",
       "questions": [
         {
           "question": "آپارتمان الی چه ویژگی‌هایی دارد؟",
@@ -693,7 +692,6 @@
           }
         }
       ],
-      "questionMode": "post-dialog",
       "questions": [
         {
           "question": "کلید کجا بود؟",
@@ -927,6 +925,31 @@
           "fa": "بین"
         }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "«gemütlich» به معنی تاریک است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "gemütlich یعنی دنج/راحت. تاریک = dunkel" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "«neben» یعنی کنار.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست است. neben = کنار. مثال: neben dem Tisch = کنار میز" }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "آپارتمانم کوچک ولی دنج است.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4} {5}",
+      "options": ["Meine", "Wohnung", "ist", "klein", "aber", "gemütlich."],
+      "correctAnswers": [0, 1, 2, 3, 4, 5],
+      "correctTranslation": { "de": "Meine Wohnung ist klein aber gemütlich.", "fa": "آپارتمانم کوچک ولی دنج است." }
     },
     {
       "type": "completion",

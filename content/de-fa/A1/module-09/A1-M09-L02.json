@@ -17,7 +17,7 @@
   "level": "A1",
   "module": 9,
   "lessonNumber": 2,
-  "totalSteps": 42,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     {
@@ -441,7 +441,6 @@
           }
         }
       ],
-      "questionMode": "post-dialog",
       "questions": [
         {
           "question": "الی چند صندلی نیاز دارد؟",
@@ -710,7 +709,6 @@
           }
         }
       ],
-      "questionMode": "post-dialog",
       "questions": [
         {
           "question": "اتاق نشیمن الی چطور است؟",
@@ -944,6 +942,31 @@
           "fa": "یخچال"
         }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای میز و صندلی از فعل «stehen» استفاده می‌کنیم.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست است. مبلمانی که روی پا می‌ایستد با stehen می‌آید: Der Tisch steht." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "«Kühlschrank» به معنی تلویزیون است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "Kühlschrank یخچال است. تلویزیون = Fernseher" }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "کاناپه در اتاق نشیمن است.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4}",
+      "options": ["Das", "Sofa", "steht", "im", "Wohnzimmer."],
+      "correctAnswers": [0, 1, 2, 3, 4],
+      "correctTranslation": { "de": "Das Sofa steht im Wohnzimmer.", "fa": "کاناپه در اتاق نشیمن است." }
     },
     {
       "type": "completion",

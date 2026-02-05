@@ -8,7 +8,7 @@
   "level": "A1",
   "module": 9,
   "lessonNumber": 4,
-  "totalSteps": 36,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "die Miete", "fa": "اجاره", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Mieten" } } },
@@ -240,9 +240,8 @@
         { "speaker": "Vermieter", "text": { "de": "Passt Ihnen Samstag um 14 Uhr?", "fa": "شنبه ساعت ۱۴ مناسب است؟" } },
         { "speaker": "Anna", "text": { "de": "Ja, das passt mir. Vielen Dank!", "fa": "بله، برایم مناسب است. خیلی ممنون!" } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "آنا چرا زنگ می‌زند؟", "options": ["می‌خواهد شکایت کند", "می‌خواهد درباره آگهی سوال کند", "می‌خواهد چیزی بخرد"], "correctIndex": 1 }
+        { "question": "آنا چرا زنگ می‌زند؟", "options": ["می‌خواهد شکایت کند", "می‌خواهد درباره آگهی سوال کند", "می‌خواهد چیزی بخرد"], "correctIndex": 1, "explanation": "آنا گفت: «ich rufe wegen der Anzeige an»" }
       ]
     },
     {
@@ -266,9 +265,8 @@
         { "speaker": "Anna", "text": { "de": "Und wie hoch ist die Kaution?", "fa": "و ودیعه چقدر است؟" } },
         { "speaker": "Vermieter", "text": { "de": "Zwei Monatsmieten, also 1300 Euro.", "fa": "دو ماه اجاره، یعنی ۱۳۰۰ یورو." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "«Wie hoch ist die Miete?» یعنی چه؟", "options": ["آپارتمان چند طبقه است؟", "اجاره چقدر است؟", "آپارتمان چند متر است؟"], "correctIndex": 1 }
+        { "question": "«Wie hoch ist die Miete?» یعنی چه؟", "options": ["آپارتمان چند طبقه است؟", "اجاره چقدر است؟", "آپارتمان چند متر است؟"], "correctIndex": 1, "explanation": "Wie hoch ist die Miete? = اجاره چقدر است؟" }
       ]
     },
     {
@@ -368,6 +366,31 @@
         { "de": "frei", "fa": "خالی" },
         { "de": "besichtigen", "fa": "بازدید کردن" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "«die Kaution» به معنی اجاره ماهانه است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "Kaution ودیعه است. اجاره ماهانه = die Miete" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "«frei» یعنی آپارتمان خالی و در دسترس است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست است. frei = خالی/در دسترس. Ist die Wohnung noch frei? = آیا آپارتمان هنوز خالی است؟" }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "من دنبال آپارتمان می‌گردم.",
+      "sentenceTemplate": "{0} {1} {2} {3}",
+      "options": ["Ich", "suche", "eine", "Wohnung."],
+      "correctAnswers": [0, 1, 2, 3],
+      "correctTranslation": { "de": "Ich suche eine Wohnung.", "fa": "من دنبال آپارتمان می‌گردم." }
     },
     {
       "type": "completion",

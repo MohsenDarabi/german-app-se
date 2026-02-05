@@ -17,7 +17,7 @@
   "level": "A1",
   "module": 9,
   "lessonNumber": 1,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 19,
   "vocabulary": [
     {
@@ -445,7 +445,6 @@
           }
         }
       ],
-      "questionMode": "post-dialog",
       "questions": [
         {
           "question": "آپارتمان الی چند اتاق دارد؟",
@@ -705,7 +704,6 @@
           }
         }
       ],
-      "questionMode": "post-dialog",
       "questions": [
         {
           "question": "تام کجا زندگی می‌کند؟",
@@ -939,6 +937,31 @@
           "fa": "باغ"
         }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "«Zimmer» به معنی آشپزخانه است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "Zimmer به معنی اتاق است. آشپزخانه = Küche" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "در آگهی‌های آلمان، آشپزخانه و حمام جزو تعداد اتاق‌ها حساب نمی‌شوند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست است. ۲-Zimmer-Wohnung یعنی ۱ اتاق خواب + ۱ نشیمن + آشپزخانه + حمام" }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "آپارتمانم سه اتاق دارد.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4}",
+      "options": ["Meine", "Wohnung", "hat", "drei", "Zimmer."],
+      "correctAnswers": [0, 1, 2, 3, 4],
+      "correctTranslation": { "de": "Meine Wohnung hat drei Zimmer.", "fa": "آپارتمانم سه اتاق دارد." }
     },
     {
       "type": "completion",
