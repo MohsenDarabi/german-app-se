@@ -8,7 +8,7 @@
   "level": "A2",
   "module": 5,
   "lessonNumber": 2,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "konnte", "fa": "می‌توانست", "grammar": { "pos": "verb", "tense": "präteritum", "infinitive": "können" } },
@@ -148,10 +148,9 @@
         { "speaker": "Anna", "text": { "de": "Das verstehe ich. Du solltest dich ausruhen.", "fa": "می‌فهمم. باید استراحت کنی." } },
         { "speaker": "Tom", "text": { "de": "Ja, ich wollte wirklich kommen. Leider ging es nicht.", "fa": "بله، واقعاً می‌خواستم بیایم. متأسفانه نشد." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "تام چرا نیامد؟", "options": ["مریض بود", "مجبور بود کار کند", "نمی‌خواست"], "correctIndex": 1 },
-        { "question": "تام می‌خواست بیاید؟", "options": ["نه", "بله", "معلوم نیست"], "correctIndex": 1 }
+        { "question": "تام چرا نیامد؟", "options": ["مریض بود", "مجبور بود کار کند", "نمی‌خواست"], "correctIndex": 1, "explanation": "تام گفت: Ich musste arbeiten" },
+        { "question": "تام می‌خواست بیاید؟", "options": ["نه", "بله", "معلوم نیست"], "correctIndex": 1, "explanation": "تام گفت: Ja, ich wollte wirklich kommen" }
       ]
     },
     {
@@ -240,10 +239,9 @@
         { "speaker": "Lisa", "text": { "de": "Dann durftest du nicht Pilot werden?", "fa": "پس اجازه نداشتی خلبان شوی؟" } },
         { "speaker": "Max", "text": { "de": "Genau. Ich mochte aber auch Computer.", "fa": "دقیقاً. اما کامپیوتر هم دوست داشتم." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "ماکس چه می‌خواست بشود؟", "options": ["دکتر", "خلبان", "معلم"], "correctIndex": 1 },
-        { "question": "چرا نتوانست خلبان شود؟", "options": ["پول نداشت", "عینک داشت", "نمی‌خواست"], "correctIndex": 1 }
+        { "question": "ماکس چه می‌خواست بشود؟", "options": ["دکتر", "خلبان", "معلم"], "correctIndex": 1, "explanation": "ماکس گفت: Ich wollte Pilot werden" },
+        { "question": "چرا نتوانست خلبان شود؟", "options": ["پول نداشت", "عینک داشت", "نمی‌خواست"], "correctIndex": 1, "explanation": "ماکس گفت: ich musste eine Brille tragen" }
       ]
     },
     {
@@ -399,6 +397,31 @@
         { "de": "leider", "fa": "متأسفانه" },
         { "de": "damals", "fa": "آن زمان" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در Präteritum فعل‌های وجهی، Umlaut حذف می‌شود: können → konnte",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! در گذشته ساده، Umlaut حذف می‌شود: können → konnte, müssen → musste" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "könnte گذشته ساده können است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! könnte فرم Konjunktiv II است. گذشته ساده können = konnte (بدون Umlaut)." }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "نتوانستم بیایم.",
+      "sentenceTemplate": "{0} {1} {2} {3}.",
+      "options": ["Ich", "konnte", "nicht", "kommen"],
+      "correctAnswers": [0, 1, 2, 3],
+      "correctTranslation": { "de": "Ich konnte nicht kommen.", "fa": "نتوانستم بیایم." }
     },
     {
       "type": "completion",

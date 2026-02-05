@@ -8,7 +8,7 @@
   "level": "A2",
   "module": 5,
   "lessonNumber": 4,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "ging", "fa": "رفت", "grammar": { "pos": "verb", "tense": "präteritum", "infinitive": "gehen" } },
@@ -148,10 +148,9 @@
         { "speaker": "Lisa", "text": { "de": "Wie war der Film?", "fa": "فیلم چطور بود؟" } },
         { "speaker": "Tom", "text": { "de": "Super! Danach gab es Pizza. Wir blieben bis 11 Uhr.", "fa": "عالی! بعدش پیتزا بود. تا ساعت ۱۱ ماندیم." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "تام کجا رفت؟", "options": ["رستوران", "سینما", "پارک"], "correctIndex": 1 },
-        { "question": "آنا کی آمد؟", "options": ["ساعت ۶", "ساعت ۷", "ساعت ۸"], "correctIndex": 1 }
+        { "question": "تام کجا رفت؟", "options": ["رستوران", "سینما", "پارک"], "correctIndex": 1, "explanation": "تام گفت: Ich ging ins Kino" },
+        { "question": "آنا کی آمد؟", "options": ["ساعت ۶", "ساعت ۷", "ساعت ۸"], "correctIndex": 1, "explanation": "تام گفت: Sie kam um 7 Uhr" }
       ]
     },
     {
@@ -240,10 +239,9 @@
         { "speaker": "Erzähler", "text": { "de": "Sie gab ihrer Mutter das Gold.", "fa": "طلا را به مادرش داد." } },
         { "speaker": "Erzähler", "text": { "de": "Sie waren alle sehr glücklich.", "fa": "همه خیلی خوشحال بودند." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "دختر چه پیدا کرد؟", "options": ["کلید", "گنج", "کتاب"], "correctIndex": 1 },
-        { "question": "دختر طلا را به کی داد؟", "options": ["پدرش", "مادرش", "دوستش"], "correctIndex": 1 }
+        { "question": "دختر چه پیدا کرد؟", "options": ["کلید", "گنج", "کتاب"], "correctIndex": 1, "explanation": "راوی گفت: fand sie einen Schatz" },
+        { "question": "دختر طلا را به کی داد؟", "options": ["پدرش", "مادرش", "دوستش"], "correctIndex": 1, "explanation": "راوی گفت: Sie gab ihrer Mutter das Gold" }
       ]
     },
     {
@@ -399,6 +397,31 @@
         { "de": "blieb", "fa": "ماند" },
         { "de": "schrieb", "fa": "نوشت" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "فعل‌های بی‌قاعده در Präteritum ریشه‌شان تغییر می‌کند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! مثال: gehen → ging, kommen → kam (ریشه تغییر می‌کند)" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "Präteritum فعل gehen = gehte است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! gehen بی‌قاعده است: gehen → ging (نه gehte)" }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "به خانه رفتم.",
+      "sentenceTemplate": "{0} {1} {2} {3}.",
+      "options": ["Ich", "ging", "nach", "Hause"],
+      "correctAnswers": [0, 1, 2, 3],
+      "correctTranslation": { "de": "Ich ging nach Hause.", "fa": "به خانه رفتم." }
     },
     {
       "type": "completion",

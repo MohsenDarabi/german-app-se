@@ -8,7 +8,7 @@
   "level": "A2",
   "module": 5,
   "lessonNumber": 3,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "machte", "fa": "کرد / ساخت", "grammar": { "pos": "verb", "tense": "präteritum", "infinitive": "machen" } },
@@ -148,10 +148,9 @@
         { "speaker": "Tom", "text": { "de": "Kauftest du auch etwas?", "fa": "چیزی هم خریدی؟" } },
         { "speaker": "Lisa", "text": { "de": "Ja, ich kaufte ein Buch. Es kostete nur zehn Euro.", "fa": "بله، یک کتاب خریدم. فقط ده یورو هزینه داشت." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "لیزا چه کار کرد؟", "options": ["کل روز خوابید", "کل روز کار کرد", "کل روز درس خواند"], "correctIndex": 1 },
-        { "question": "کتاب چقدر بود؟", "options": ["پنج یورو", "ده یورو", "بیست یورو"], "correctIndex": 1 }
+        { "question": "لیزا چه کار کرد؟", "options": ["کل روز خوابید", "کل روز کار کرد", "کل روز درس خواند"], "correctIndex": 1, "explanation": "لیزا گفت: Ich arbeitete den ganzen Tag" },
+        { "question": "کتاب چقدر بود؟", "options": ["پنج یورو", "ده یورو", "بیست یورو"], "correctIndex": 1, "explanation": "لیزا گفت: Es kostete nur zehn Euro" }
       ]
     },
     {
@@ -240,10 +239,9 @@
         { "speaker": "Opa", "text": { "de": "Ja! Wir spielten jeden Tag draußen.", "fa": "بله! هر روز بیرون بازی می‌کردیم." } },
         { "speaker": "Kind", "text": { "de": "Das klingt schön!", "fa": "خوب به نظر می‌رسد!" } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "پدربزرگ کجا زندگی می‌کرد؟", "options": ["شهر", "روستا", "خارج"], "correctIndex": 1 },
-        { "question": "پدربزرگ کجا کار می‌کرد؟", "options": ["دفتر", "مزرعه", "کارخانه"], "correctIndex": 1 }
+        { "question": "پدربزرگ کجا زندگی می‌کرد؟", "options": ["شهر", "روستا", "خارج"], "correctIndex": 1, "explanation": "پدربزرگ گفت: Früher wohnte ich auf dem Land" },
+        { "question": "پدربزرگ کجا کار می‌کرد؟", "options": ["دفتر", "مزرعه", "کارخانه"], "correctIndex": 1, "explanation": "پدربزرگ گفت: Ich arbeitete auf dem Bauernhof" }
       ]
     },
     {
@@ -399,6 +397,31 @@
         { "de": "wohnte", "fa": "زندگی کرد" },
         { "de": "sagte", "fa": "گفت" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "فعل‌های باقاعده در Präteritum پسوند -te می‌گیرند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! فرمول: ریشه + te + شناسه. مثال: machen → machte" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "فعل arbeiten در Präteritum می‌شود arbeit-te.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! چون ریشه به -t ختم می‌شود، -ete اضافه می‌شود: arbeiten → arbeitete" }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "دیروز فوتبال بازی کردم.",
+      "sentenceTemplate": "{0} {1} {2} {3}.",
+      "options": ["Gestern", "spielte", "ich", "Fußball"],
+      "correctAnswers": [0, 1, 2, 3],
+      "correctTranslation": { "de": "Gestern spielte ich Fußball.", "fa": "دیروز فوتبال بازی کردم." }
     },
     {
       "type": "completion",

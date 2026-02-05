@@ -8,7 +8,7 @@
   "level": "A2",
   "module": 5,
   "lessonNumber": 1,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "war", "fa": "بود (ich/er/sie/es)", "grammar": { "pos": "verb", "tense": "präteritum", "infinitive": "sein" } },
@@ -148,10 +148,9 @@
         { "speaker": "Anna", "text": { "de": "Hattest du Spaß?", "fa": "خوش گذشت؟" } },
         { "speaker": "Tom", "text": { "de": "Ja! Ich hatte viel Spaß. Das Essen war fantastisch.", "fa": "بله! خیلی خوش گذشت. غذا عالی بود." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "تام کجا بود؟", "options": ["آلمان", "اسپانیا", "ایتالیا"], "correctIndex": 1 },
-        { "question": "هوا چطور بود؟", "options": ["سرد", "گرم", "بارانی"], "correctIndex": 1 }
+        { "question": "تام کجا بود؟", "options": ["آلمان", "اسپانیا", "ایتالیا"], "correctIndex": 1, "explanation": "تام گفت: Ich war in Spanien" },
+        { "question": "هوا چطور بود؟", "options": ["سرد", "گرم", "بارانی"], "correctIndex": 1, "explanation": "تام گفت: Es war sehr heiß!" }
       ]
     },
     {
@@ -250,10 +249,9 @@
         { "speaker": "Opa", "text": { "de": "Wir hatten viel Zeit zum Spielen draußen.", "fa": "وقت زیادی برای بازی بیرون داشتیم." } },
         { "speaker": "Kind", "text": { "de": "Das war bestimmt schön!", "fa": "حتماً خوب بود!" } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "قبلاً چه چیزی نداشتند؟", "options": ["تلویزیون", "اینترنت و گوشی", "ماشین"], "correctIndex": 1 },
-        { "question": "چه چیزی داشتند؟", "options": ["وقت برای بازی", "کامپیوتر", "بازی ویدیویی"], "correctIndex": 0 }
+        { "question": "قبلاً چه چیزی نداشتند؟", "options": ["تلویزیون", "اینترنت و گوشی", "ماشین"], "correctIndex": 1, "explanation": "پدربزرگ گفت: Wir hatten kein Internet und kein Handy" },
+        { "question": "چه چیزی داشتند؟", "options": ["وقت برای بازی", "کامپیوتر", "بازی ویدیویی"], "correctIndex": 0, "explanation": "پدربزرگ گفت: Wir hatten viel Zeit zum Spielen draußen" }
       ]
     },
     {
@@ -409,6 +407,31 @@
         { "de": "gestern", "fa": "دیروز" },
         { "de": "früher", "fa": "قبلاً" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در آلمانی war و hatte در مکالمه روزمره بیشتر از bin gewesen و habe gehabt استفاده می‌شوند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! war و hatte کوتاه‌تر و طبیعی‌تر هستند." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "صرف sein برای ich و du در Präteritum یکسان است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! ich war ولی du warst. صرف ich و er/sie/es یکسان است (هر دو war)." }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "دیروز خسته بودم.",
+      "sentenceTemplate": "{0} {1} {2} {3}.",
+      "options": ["Ich", "war", "gestern", "müde"],
+      "correctAnswers": [0, 1, 2, 3],
+      "correctTranslation": { "de": "Ich war gestern müde.", "fa": "دیروز خسته بودم." }
     },
     {
       "type": "completion",
