@@ -8,7 +8,7 @@
   "level": "A1",
   "module": 10,
   "lessonNumber": 3,
-  "totalSteps": 38,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "die Freizeit", "fa": "اوقات فراغت", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Freizeiten" } } },
@@ -218,10 +218,9 @@
         { "speaker": "Eli", "text": { "de": "Am Sonntag faulenze ich und sehe fern. Und du?", "fa": "یکشنبه استراحت می‌کنم و تلویزیون می‌بینم. تو چی؟" } },
         { "speaker": "Tom", "text": { "de": "Ich gehe mit meiner Familie spazieren.", "fa": "با خانواده‌ام قدم می‌زنم." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "الی شنبه چه کار می‌کند؟", "options": ["استراحت می‌کند", "به سینما می‌رود", "قدم می‌زند"], "correctIndex": 1 },
-        { "question": "تام با چه کسی قدم می‌زند؟", "options": ["با دوستان", "با خانواده", "تنها"], "correctIndex": 1 }
+        { "question": "الی شنبه چه کار می‌کند؟", "options": ["استراحت می‌کند", "به سینما می‌رود", "قدم می‌زند"], "correctIndex": 1, "explanation": "الی گفت: «Am Samstag gehe ich ins Kino und treffe Freunde»" },
+        { "question": "تام با چه کسی قدم می‌زند؟", "options": ["با دوستان", "با خانواده", "تنها"], "correctIndex": 1, "explanation": "تام گفت: «Ich gehe mit meiner Familie spazieren»" }
       ]
     },
     {
@@ -360,6 +359,31 @@
         { "de": "faulenzen", "fa": "استراحت کردن" },
         { "de": "oft", "fa": "اغلب" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "«fernsehen» یک فعل جداشدنی است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست است. fernsehen جدا می‌شود: Ich sehe fern." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "«oft» یعنی «هرگز».",
+      "correctAnswer": false,
+      "feedback": { "explanation": "oft یعنی «اغلب». nie یعنی «هرگز»." }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "دوست دارم تلویزیون ببینم.",
+      "sentenceTemplate": "{0} {1} {2} {3}",
+      "options": ["Ich", "sehe", "gern", "fern."],
+      "correctAnswers": [0, 1, 2, 3],
+      "correctTranslation": { "de": "Ich sehe gern fern.", "fa": "دوست دارم تلویزیون ببینم." }
     },
     {
       "type": "completion",

@@ -8,7 +8,7 @@
   "level": "A1",
   "module": 10,
   "lessonNumber": 4,
-  "totalSteps": 38,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "gern", "fa": "با علاقه", "grammar": { "pos": "adverb" } },
@@ -199,10 +199,9 @@
         { "speaker": "Eli", "text": { "de": "Ich sehe gern Actionfilme, aber lieber sehe ich Komödien.", "fa": "فیلم اکشن دوست دارم، ولی بیشتر کمدی دوست دارم." } },
         { "speaker": "Tom", "text": { "de": "Kein Problem! Es gibt auch eine Komödie.", "fa": "مشکلی نیست! یک کمدی هم هست." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "الی چه نوع فیلمی بیشتر دوست دارد؟", "options": ["اکشن", "کمدی", "ترسناک"], "correctIndex": 1 },
-        { "question": "تام چه پیشنهادی می‌دهد؟", "options": ["رستوران رفتن", "سینما رفتن", "قدم زدن"], "correctIndex": 1 }
+        { "question": "الی چه نوع فیلمی بیشتر دوست دارد؟", "options": ["اکشن", "کمدی", "ترسناک"], "correctIndex": 1, "explanation": "الی گفت: «lieber sehe ich Komödien»" },
+        { "question": "تام چه پیشنهادی می‌دهد؟", "options": ["رستوران رفتن", "سینما رفتن", "قدم زدن"], "correctIndex": 1, "explanation": "تام گفت: «Hast du Lust, heute Abend ins Kino zu gehen?»" }
       ]
     },
     {
@@ -218,10 +217,9 @@
         { "speaker": "Tom", "text": { "de": "Um 14 Uhr?", "fa": "ساعت ۱۴؟" } },
         { "speaker": "Eli", "text": { "de": "Perfekt! Bis Samstag!", "fa": "عالی! تا شنبه!" } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "چرا الی فردا نمی‌تواند؟", "options": ["بیمار است", "وقت ندارد", "تنیس دوست ندارد"], "correctIndex": 1 },
-        { "question": "آن‌ها کی تنیس بازی می‌کنند؟", "options": ["فردا", "شنبه", "یکشنبه"], "correctIndex": 1 }
+        { "question": "چرا الی فردا نمی‌تواند؟", "options": ["بیمار است", "وقت ندارد", "تنیس دوست ندارد"], "correctIndex": 1, "explanation": "الی گفت: «morgen habe ich leider keine Zeit»" },
+        { "question": "آن‌ها کی تنیس بازی می‌کنند؟", "options": ["فردا", "شنبه", "یکشنبه"], "correctIndex": 1, "explanation": "الی گفت: «am Samstag passt es»" }
       ]
     },
     {
@@ -369,6 +367,31 @@
         { "de": "vielleicht", "fa": "شاید" },
         { "de": "zusammen", "fa": "با هم" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "«lieber» درجه علاقه بیشتری از «gern» دارد.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست است. ترتیب: gern < lieber < am liebsten" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای پیشنهاد دادن می‌توانیم بگوییم: «Hast du Lust?»",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست است. Hast du Lust, ...? = میل داری...؟" }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "متأسفانه وقت ندارم.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4}",
+      "options": ["Leider", "habe", "ich", "keine", "Zeit."],
+      "correctAnswers": [0, 1, 2, 3, 4],
+      "correctTranslation": { "de": "Leider habe ich keine Zeit.", "fa": "متأسفانه وقت ندارم." }
     },
     {
       "type": "completion",

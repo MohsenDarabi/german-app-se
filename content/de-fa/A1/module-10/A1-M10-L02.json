@@ -8,7 +8,7 @@
   "level": "A1",
   "module": 10,
   "lessonNumber": 2,
-  "totalSteps": 38,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "der Sport", "fa": "ورزش", "grammar": { "pos": "noun", "noun": { "artikel": "m", "plural": "Sportarten" } } },
@@ -209,10 +209,9 @@
         { "speaker": "Tom", "text": { "de": "Wie oft machst du Yoga?", "fa": "چند وقت یکبار یوگا انجام می‌دهی؟" } },
         { "speaker": "Eli", "text": { "de": "Dreimal pro Woche. Es ist sehr entspannend.", "fa": "سه بار در هفته. خیلی آرامش‌بخش است." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "تام چه ورزش‌هایی انجام می‌دهد؟", "options": ["یوگا و دوچرخه‌سواری", "فوتبال و شنا", "تنیس و دویدن"], "correctIndex": 1 },
-        { "question": "الی چند بار در هفته یوگا می‌کند؟", "options": ["دو بار", "سه بار", "هر روز"], "correctIndex": 1 }
+        { "question": "تام چه ورزش‌هایی انجام می‌دهد؟", "options": ["یوگا و دوچرخه‌سواری", "فوتبال و شنا", "تنیس و دویدن"], "correctIndex": 1, "explanation": "تام گفت: «ich spiele Fußball und gehe schwimmen»" },
+        { "question": "الی چند بار در هفته یوگا می‌کند؟", "options": ["دو بار", "سه بار", "هر روز"], "correctIndex": 1, "explanation": "الی گفت: «Dreimal pro Woche»" }
       ]
     },
     {
@@ -360,6 +359,31 @@
         { "de": "das Yoga", "fa": "یوگا" },
         { "de": "fit", "fa": "تناسب اندام" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای فوتبال و تنیس از فعل «spielen» استفاده می‌کنیم.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست است. ورزش‌های توپی با spielen می‌آیند: Fußball spielen, Tennis spielen" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای شنا می‌گوییم: «Ich spiele schwimmen».",
+      "correctAnswer": false,
+      "feedback": { "explanation": "برای شنا از gehen استفاده می‌کنیم: Ich gehe schwimmen." }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "ما فردا می‌رویم شنا.",
+      "sentenceTemplate": "{0} {1} {2} {3}",
+      "options": ["Wir", "gehen", "morgen", "schwimmen."],
+      "correctAnswers": [0, 1, 2, 3],
+      "correctTranslation": { "de": "Wir gehen morgen schwimmen.", "fa": "ما فردا می‌رویم شنا." }
     },
     {
       "type": "completion",

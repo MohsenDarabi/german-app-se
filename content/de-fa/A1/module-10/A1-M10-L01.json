@@ -8,7 +8,7 @@
   "level": "A1",
   "module": 10,
   "lessonNumber": 1,
-  "totalSteps": 38,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "das Hobby", "fa": "سرگرمی", "grammar": { "pos": "noun", "noun": { "artikel": "n", "plural": "Hobbys" } } },
@@ -238,10 +238,9 @@
         { "speaker": "Eli", "text": { "de": "Kochst du oft?", "fa": "زیاد آشپزی می‌کنی؟" } },
         { "speaker": "Tom", "text": { "de": "Ja, ich koche jeden Tag. Es macht Spaß!", "fa": "آره، هر روز آشپزی می‌کنم. خوشمزه‌ست!" } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "الی چه سرگرمی‌هایی دارد؟", "options": ["فوتبال و آشپزی", "خواندن و موسیقی", "نقاشی و رقص"], "correctIndex": 1 },
-        { "question": "تام هر روز چه کاری می‌کند؟", "options": ["فوتبال بازی می‌کند", "آشپزی می‌کند", "کتاب می‌خواند"], "correctIndex": 1 }
+        { "question": "الی چه سرگرمی‌هایی دارد؟", "options": ["فوتبال و آشپزی", "خواندن و موسیقی", "نقاشی و رقص"], "correctIndex": 1, "explanation": "الی گفت: «Ich lese gern und höre Musik»" },
+        { "question": "تام هر روز چه کاری می‌کند؟", "options": ["فوتبال بازی می‌کند", "آشپزی می‌کند", "کتاب می‌خواند"], "correctIndex": 1, "explanation": "تام گفت: «ich koche jeden Tag»" }
       ]
     },
     {
@@ -373,6 +372,31 @@
         { "de": "reisen", "fa": "سفر کردن" },
         { "de": "gern", "fa": "با علاقه" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "«gern» بعد از فعل در جمله قرار می‌گیرد.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست است. مثال: Ich lese gern. (نه: Ich gern lese.)" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "«lesen» یک فعل منظم است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "lesen نامنظم است: du liest, er liest (e → ie)" }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "دوست دارم موسیقی گوش کنم.",
+      "sentenceTemplate": "{0} {1} {2} {3}",
+      "options": ["Ich", "höre", "gern", "Musik."],
+      "correctAnswers": [0, 1, 3, 2],
+      "correctTranslation": { "de": "Ich höre Musik gern.", "fa": "دوست دارم موسیقی گوش کنم." }
     },
     {
       "type": "completion",
