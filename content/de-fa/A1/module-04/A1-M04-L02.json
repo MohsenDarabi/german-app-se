@@ -17,6 +17,7 @@
   "level": "A1",
   "module": 4,
   "lessonNumber": 2,
+  "totalSteps": 43,
   "estimatedMinutes": 15,
   "vocabulary": [
     {
@@ -452,8 +453,7 @@
           }
         }
       ],
-      "questionMode": "post-dialog",
-      "questions": [
+            "questions": [
         {
           "question": "الی چه میوه‌ای خواست؟",
           "options": [
@@ -1001,6 +1001,38 @@
           "fa": "یک موبایل"
         }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای اسم‌های مذکر و خنثی هر دو از «ein» استفاده می‌کنیم.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! der/das → ein، ولی die → eine"
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "«eine Apfel» درست است.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! Apfel مذکر است (der Apfel) پس: ein Apfel"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "من یک گربه دارم.",
+      "sentenceTemplate": "{0} {1} {2} {3}.",
+      "options": ["Ich", "habe", "eine", "Katze"],
+      "correctAnswers": [0, 1, 2, 3],
+      "correctTranslation": {
+        "de": "Ich habe eine Katze.",
+        "fa": "من یک گربه دارم."
+      }
     },
     {
       "type": "completion",

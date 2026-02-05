@@ -17,7 +17,7 @@
   "level": "A1",
   "module": 4,
   "lessonNumber": 4,
-  "totalSteps": 38,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     {
@@ -400,8 +400,7 @@
           }
         }
       ],
-      "questionMode": "post-dialog",
-      "questions": [
+            "questions": [
         {
           "question": "تام چه چیزی نیاز دارد؟",
           "options": [
@@ -914,6 +913,38 @@
           "fa": "چای"
         }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در حالت مفعولی، فقط مذکر تغییر می‌کند: der → den",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! die و das تغییر نمی‌کنند، فقط der → den و ein → einen"
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "«Ich sehe das Kind» درست است.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! Kind خنثی است (das) و در مفعولی تغییر نمی‌کند."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "من مرد را می‌بینم.",
+      "sentenceTemplate": "{0} {1} {2} {3}.",
+      "options": ["Ich", "sehe", "den", "Mann"],
+      "correctAnswers": [0, 1, 2, 3],
+      "correctTranslation": {
+        "de": "Ich sehe den Mann.",
+        "fa": "من مرد را می‌بینم."
+      }
     },
     {
       "type": "completion",
