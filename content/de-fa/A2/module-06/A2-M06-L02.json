@@ -8,7 +8,7 @@
   "level": "A2",
   "module": 6,
   "lessonNumber": 2,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "hätte", "fa": "داشتم (شرطی)", "grammar": { "pos": "verb", "tense": "konjunktiv II", "infinitive": "haben" } },
@@ -127,6 +127,20 @@
         { "speaker": "Anna", "text": { "de": "Das wäre schön!", "fa": "خوب می‌شد!" } },
         { "speaker": "Ben", "text": { "de": "Und du?", "fa": "و تو؟" } },
         { "speaker": "Anna", "text": { "de": "Ich wäre gern immer auf Reisen.", "fa": "کاش همیشه در سفر بودم." } }
+      ],
+      "questions": [
+        {
+          "question": "بن اگر ثروتمند بود چه می‌خواست؟",
+          "options": ["یک خانه بزرگ", "همیشه در سفر باشد", "ماشین گران"],
+          "correctIndex": 0,
+          "explanation": "بن گفت: Ich hätte gern ein großes Haus"
+        },
+        {
+          "question": "آرزوی آنا چیست؟",
+          "options": ["همیشه در سفر باشد", "خانه بزرگ داشته باشد", "ثروتمند باشد"],
+          "correctIndex": 0,
+          "explanation": "آنا گفت: Ich wäre gern immer auf Reisen"
+        }
       ]
     },
     {
@@ -227,6 +241,20 @@
         { "speaker": "Gast", "text": { "de": "Ich hätte gern die Speisekarte.", "fa": "منو را می‌خواستم." } },
         { "speaker": "Kellner", "text": { "de": "Bitte schön. Hier ist sie.", "fa": "بفرمایید. اینجاست." } },
         { "speaker": "Gast", "text": { "de": "Das wäre alles, danke.", "fa": "همین بود، ممنون." } }
+      ],
+      "questions": [
+        {
+          "question": "مهمان چه درخواستی دارد؟",
+          "options": ["منوی غذا", "قهوه", "صورتحساب"],
+          "correctIndex": 0,
+          "explanation": "مهمان گفت: Ich hätte gern die Speisekarte (منو)"
+        },
+        {
+          "question": "مهمان در آخر چه گفت؟",
+          "options": ["همین بود، ممنون", "غذا می‌خواهم", "صورتحساب لطفاً"],
+          "correctIndex": 0,
+          "explanation": "مهمان گفت: Das wäre alles, danke"
+        }
       ]
     },
     {
@@ -298,6 +326,20 @@
         { "speaker": "Lisa", "text": { "de": "Wenn du ein Superheld wärst, was hättest du für eine Kraft?", "fa": "اگر ابرقهرمان بودی، چه قدرتی داشتی؟" } },
         { "speaker": "Tom", "text": { "de": "Ich wäre gern unsichtbar!", "fa": "کاش نامرئی بودم!" } },
         { "speaker": "Lisa", "text": { "de": "Das wäre cool! Und ich hätte gern Superkraft.", "fa": "باحال می‌شد! و من کاش قدرت خارق‌العاده داشتم." } }
+      ],
+      "questions": [
+        {
+          "question": "تام اگر ابرقهرمان بود چه قدرتی می‌خواست؟",
+          "options": ["نامرئی بودن", "قدرت خارق‌العاده", "پرواز کردن"],
+          "correctIndex": 0,
+          "explanation": "تام گفت: Ich wäre gern unsichtbar!"
+        },
+        {
+          "question": "لیزا چه قدرتی می‌خواست؟",
+          "options": ["قدرت خارق‌العاده", "نامرئی بودن", "سرعت زیاد"],
+          "correctIndex": 0,
+          "explanation": "لیزا گفت: ich hätte gern Superkraft"
+        }
       ]
     },
     {
@@ -354,6 +396,31 @@
         { "de": "wir hätten", "fa": "ما داشتیم (شرطی)" },
         { "de": "das wäre toll", "fa": "عالی می‌شد" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "hätte فرم شرطی فعل haben است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! hätte = داشتم (شرطی از haben). مثال: Ich hätte gern mehr Zeit." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای بیان «کاش ماشین داشتم» از wäre استفاده می‌کنیم.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! برای داشتن چیزی از hätte استفاده می‌کنیم: Ich hätte gern ein Auto. از wäre برای بودن استفاده می‌شود." }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "اگر وقت داشتم، می‌آمدم.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4} {5} {6}.",
+      "options": ["Wenn", "ich", "Zeit", "hätte,", "würde", "ich", "kommen"],
+      "correctAnswers": [0, 1, 2, 3, 4, 5, 6],
+      "correctTranslation": { "de": "Wenn ich Zeit hätte, würde ich kommen.", "fa": "اگر وقت داشتم، می‌آمدم." }
     },
     {
       "type": "completion",

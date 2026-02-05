@@ -8,7 +8,7 @@
   "level": "A2",
   "module": 6,
   "lessonNumber": 3,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "könnte", "fa": "می‌توانستم / شاید", "grammar": { "pos": "verb", "tense": "konjunktiv II", "infinitive": "können" } },
@@ -117,6 +117,20 @@
         { "speaker": "Chef", "text": { "de": "Ja, natürlich. Was gibt es?", "fa": "بله، البته. چی شده؟" } },
         { "speaker": "Mitarbeiter", "text": { "de": "Ich müsste diese E-Mail überprüfen.", "fa": "باید این ایمیل را بررسی کنم." } },
         { "speaker": "Chef", "text": { "de": "Kein Problem. Das könnte ich machen.", "fa": "مشکلی نیست. می‌توانم انجام بدهم." } }
+      ],
+      "questions": [
+        {
+          "question": "کارمند چه درخواستی دارد؟",
+          "options": ["کمک برای بررسی ایمیل", "مرخصی", "افزایش حقوق"],
+          "correctIndex": 0,
+          "explanation": "کارمند گفت: Ich müsste diese E-Mail überprüfen"
+        },
+        {
+          "question": "واکنش رئیس چیست؟",
+          "options": ["موافقت می‌کند", "رد می‌کند", "می‌گوید بعداً"],
+          "correctIndex": 0,
+          "explanation": "رئیس گفت: Kein Problem. Das könnte ich machen"
+        }
       ]
     },
     {
@@ -202,6 +216,20 @@
         { "speaker": "Arzt", "text": { "de": "Sie müssten zwei Liter pro Tag trinken.", "fa": "باید روزی دو لیتر بنوشید." } },
         { "speaker": "Patient", "text": { "de": "Das könnte schwer sein.", "fa": "شاید سخت باشد." } },
         { "speaker": "Arzt", "text": { "de": "Sie könnten auch Tee trinken.", "fa": "می‌توانید چای هم بنوشید." } }
+      ],
+      "questions": [
+        {
+          "question": "توصیه پزشک چیست؟",
+          "options": ["نوشیدن آب بیشتر", "استراحت بیشتر", "ورزش کردن"],
+          "correctIndex": 0,
+          "explanation": "پزشک گفت: Sie sollten mehr Wasser trinken"
+        },
+        {
+          "question": "بیمار فکر می‌کند این کار چطور است؟",
+          "options": ["شاید سخت باشد", "آسان است", "غیرممکن است"],
+          "correctIndex": 0,
+          "explanation": "بیمار گفت: Das könnte schwer sein"
+        }
       ]
     },
     {
@@ -310,6 +338,20 @@
         { "speaker": "Tom", "text": { "de": "Ja, das dürfte Spaß machen!", "fa": "آره، احتمالاً خوش می‌گذره!" } },
         { "speaker": "Lisa", "text": { "de": "Aber wir sollten früh gehen.", "fa": "ولی بهتره زود بریم." } },
         { "speaker": "Tom", "text": { "de": "Stimmt. Ich müsste vorher noch einkaufen.", "fa": "درسته. قبلش باید خرید کنم." } }
+      ],
+      "questions": [
+        {
+          "question": "لیزا چه پیشنهادی می‌دهد؟",
+          "options": ["رفتن به سینما", "رفتن به رستوران", "ماندن در خانه"],
+          "correctIndex": 0,
+          "explanation": "لیزا گفت: Wir könnten ins Kino gehen"
+        },
+        {
+          "question": "تام قبل از رفتن چه کاری باید انجام دهد؟",
+          "options": ["خرید کردن", "تماس گرفتن", "استراحت کردن"],
+          "correctIndex": 0,
+          "explanation": "تام گفت: Ich müsste vorher noch einkaufen"
+        }
       ]
     },
     {
@@ -365,6 +407,31 @@
         { "de": "sollte", "fa": "بهتره" },
         { "de": "dürfte", "fa": "احتمالاً" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "könntest du مودبانه‌تر از kannst du است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! Konjunktiv II (könntest) مودبانه‌تر است. مثال: Könntest du mir helfen?" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "dürfte برای گرفتن اجازه استفاده می‌شود.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! dürfte برای بیان احتمال بالا استفاده می‌شود، نه اجازه. مثال: Das dürfte richtig sein (احتمالاً درست است)." }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "می‌تونی کمکم کنی؟",
+      "sentenceTemplate": "{0} {1} {2} {3}?",
+      "options": ["Könntest", "du", "mir", "helfen"],
+      "correctAnswers": [0, 1, 2, 3],
+      "correctTranslation": { "de": "Könntest du mir helfen?", "fa": "می‌تونی کمکم کنی؟" }
     },
     {
       "type": "completion",

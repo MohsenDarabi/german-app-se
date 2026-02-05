@@ -8,7 +8,7 @@
   "level": "A2",
   "module": 6,
   "lessonNumber": 4,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "würde", "fa": "می‌شد (شرطی)", "grammar": { "pos": "verb", "tense": "konjunktiv II" } },
@@ -96,6 +96,20 @@
         { "speaker": "Anna", "text": { "de": "Das wäre mein Traum!", "fa": "این رویای من می‌شد!" } },
         { "speaker": "Ben", "text": { "de": "Wir könnten zusammen reisen.", "fa": "می‌تونیم با هم سفر کنیم." } },
         { "speaker": "Anna", "text": { "de": "Ja! Aber wir müssten viel Geld sparen.", "fa": "آره! ولی باید کلی پول پس‌انداز کنیم." } }
+      ],
+      "questions": [
+        {
+          "question": "آرزوی بن چیست؟",
+          "options": ["سفر دور دنیا", "خانه بزرگ", "ماشین گران"],
+          "correctIndex": 0,
+          "explanation": "بن گفت: Ich würde gern um die Welt reisen"
+        },
+        {
+          "question": "آنا چه مشکلی را مطرح می‌کند؟",
+          "options": ["باید پول پس‌انداز کنند", "وقت ندارند", "اجازه ندارند"],
+          "correctIndex": 0,
+          "explanation": "آنا گفت: wir müssten viel Geld sparen"
+        }
       ]
     },
     {
@@ -196,6 +210,20 @@
         { "speaker": "Gast", "text": { "de": "Ich hätte gern die Speisekarte.", "fa": "منو را می‌خواستم." } },
         { "speaker": "Kellner", "text": { "de": "Könnten Sie einen Moment warten?", "fa": "می‌توانید یک لحظه صبر کنید؟" } },
         { "speaker": "Gast", "text": { "de": "Ja, natürlich. Das wäre kein Problem.", "fa": "بله، البته. مشکلی نیست." } }
+      ],
+      "questions": [
+        {
+          "question": "مهمان چه درخواستی دارد؟",
+          "options": ["منوی غذا", "صورتحساب", "قهوه"],
+          "correctIndex": 0,
+          "explanation": "مهمان گفت: Ich hätte gern die Speisekarte"
+        },
+        {
+          "question": "گارسون از مهمان چه می‌خواهد؟",
+          "options": ["یک لحظه صبر کند", "سفارش بدهد", "بپردازد"],
+          "correctIndex": 0,
+          "explanation": "گارسون گفت: Könnten Sie einen Moment warten?"
+        }
       ]
     },
     {
@@ -271,6 +299,20 @@
         { "speaker": "Maria", "text": { "de": "Das hätte ich mir denken können!", "fa": "می‌توانستم حدس بزنم!" } },
         { "speaker": "Thomas", "text": { "de": "Wir sollten früh buchen.", "fa": "بهتره زود رزرو کنیم." } },
         { "speaker": "Maria", "text": { "de": "Ja, das dürfte billiger sein.", "fa": "آره، احتمالاً ارزان‌تر می‌شه." } }
+      ],
+      "questions": [
+        {
+          "question": "توماس دوست دارد کجا باشد؟",
+          "options": ["کنار ساحل", "در کوه", "در شهر"],
+          "correctIndex": 0,
+          "explanation": "توماس گفت: Ich wäre gern am Strand"
+        },
+        {
+          "question": "چرا باید زود رزرو کنند؟",
+          "options": ["احتمالاً ارزان‌تر است", "جا نمی‌ماند", "هوا بهتر است"],
+          "correctIndex": 0,
+          "explanation": "ماریا گفت: das dürfte billiger sein"
+        }
       ]
     },
     {
@@ -347,6 +389,31 @@
         { "de": "wäre", "fa": "می‌شد / بودم" },
         { "de": "solltest", "fa": "بهتره" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "würde + مصدر برای بیان آرزو و موقعیت فرضی استفاده می‌شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! würde gern + Infinitiv برای آرزو. مثال: Ich würde gern reisen." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "solltest برای دستور قوی استفاده می‌شود.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! solltest برای توصیه نرم است. برای دستور قوی از musst استفاده می‌کنیم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "اگر وقت داشتم، می‌آمدم.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4} {5} {6}.",
+      "options": ["Wenn", "ich", "Zeit", "hätte,", "würde", "ich", "kommen"],
+      "correctAnswers": [0, 1, 2, 3, 4, 5, 6],
+      "correctTranslation": { "de": "Wenn ich Zeit hätte, würde ich kommen.", "fa": "اگر وقت داشتم، می‌آمدم." }
     },
     {
       "type": "completion",

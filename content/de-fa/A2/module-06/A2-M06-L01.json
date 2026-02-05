@@ -8,7 +8,7 @@
   "level": "A2",
   "module": 6,
   "lessonNumber": 1,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "würde", "fa": "می‌شد (شرطی)", "grammar": { "pos": "verb", "tense": "konjunktiv II" } },
@@ -116,6 +116,20 @@
         { "speaker": "Anna", "text": { "de": "Was würdest du am Wochenende machen?", "fa": "آخر هفته چه کار می‌کردی؟" } },
         { "speaker": "Ben", "text": { "de": "Ich würde gern ins Kino gehen.", "fa": "دوست دارم به سینما بروم." } },
         { "speaker": "Anna", "text": { "de": "Das würde ich auch gern machen!", "fa": "من هم دوست دارم این کار را بکنم!" } }
+      ],
+      "questions": [
+        {
+          "question": "بن آخر هفته چه کاری دوست دارد انجام دهد؟",
+          "options": ["به سینما برود", "در خانه بماند", "سفر کند"],
+          "correctIndex": 0,
+          "explanation": "بن گفت: Ich würde gern ins Kino gehen"
+        },
+        {
+          "question": "آنا نظرش درباره رفتن به سینما چیست؟",
+          "options": ["علاقه‌ای ندارد", "او هم دوست دارد", "برنامه دیگری دارد"],
+          "correctIndex": 1,
+          "explanation": "آنا گفت: Das würde ich auch gern machen!"
+        }
       ]
     },
     {
@@ -202,6 +216,20 @@
         { "speaker": "Gast", "text": { "de": "Ich würde gern einen Kaffee bestellen.", "fa": "دوست دارم یک قهوه سفارش بدهم." } },
         { "speaker": "Kellner", "text": { "de": "Möchten Sie noch etwas?", "fa": "چیز دیگری می‌خواهید؟" } },
         { "speaker": "Gast", "text": { "de": "Ich würde auch gern ein Stück Kuchen.", "fa": "یک تکه کیک هم دوست دارم." } }
+      ],
+      "questions": [
+        {
+          "question": "مهمان چه چیزی سفارش می‌دهد؟",
+          "options": ["قهوه و کیک", "چای و کیک", "فقط قهوه"],
+          "correctIndex": 0,
+          "explanation": "مهمان گفت: einen Kaffee و ein Stück Kuchen"
+        },
+        {
+          "question": "مهمان چگونه سفارش می‌دهد؟",
+          "options": ["با فرم مودبانه würde gern", "با دستور مستقیم", "با فرم will"],
+          "correctIndex": 0,
+          "explanation": "مهمان از würde gern استفاده کرد که فرم مودبانه است"
+        }
       ]
     },
     {
@@ -312,6 +340,20 @@
         { "speaker": "Tom", "text": { "de": "Was würdest du an meiner Stelle machen?", "fa": "به جای من چه کار می‌کردی؟" } },
         { "speaker": "Lisa", "text": { "de": "Ich würde mit dem Chef sprechen.", "fa": "من با رئیس صحبت می‌کردم." } },
         { "speaker": "Tom", "text": { "de": "Das würde ich auch vorschlagen.", "fa": "من هم آن را پیشنهاد می‌دادم." } }
+      ],
+      "questions": [
+        {
+          "question": "لیزا چه پیشنهادی می‌دهد؟",
+          "options": ["صحبت با رئیس", "ترک کار", "استراحت کردن"],
+          "correctIndex": 0,
+          "explanation": "لیزا گفت: Ich würde mit dem Chef sprechen"
+        },
+        {
+          "question": "تام با پیشنهاد لیزا موافق است؟",
+          "options": ["بله، موافق است", "خیر، مخالف است", "مطمئن نیست"],
+          "correctIndex": 0,
+          "explanation": "تام گفت: Das würde ich auch vorschlagen (من هم پیشنهاد می‌دادم)"
+        }
       ]
     },
     {
@@ -359,6 +401,31 @@
         { "de": "wir würden", "fa": "ما می‌شدیم" },
         { "de": "würde gern", "fa": "دوست دارم" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "würde gern برای بیان آرزوها و درخواست‌های مودبانه استفاده می‌شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! würde gern + Infinitiv برای بیان مودبانه آرزوها است. مثال: Ich würde gern reisen." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "صرف würde برای ich و du یکسان است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! ich würde ولی du würdest. صرف ich و er/sie/es یکسان است." }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "دوست دارم به سینما بروم.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4} {5}.",
+      "options": ["Ich", "würde", "gern", "ins", "Kino", "gehen"],
+      "correctAnswers": [0, 1, 2, 3, 4, 5],
+      "correctTranslation": { "de": "Ich würde gern ins Kino gehen.", "fa": "دوست دارم به سینما بروم." }
     },
     {
       "type": "completion",
