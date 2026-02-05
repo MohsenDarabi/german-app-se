@@ -722,6 +722,19 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/A2/A2-M08-L04"
       }
     ]
+  },
+  {
+    id: "module-09",
+    title: "بخش ۹: صرف صفت (Adjektivdeklination)",
+    level: "A2",
+    lessons: [
+      {
+        id: "A2-M09-L01",
+        title: "Mit bestimmtem Artikel - با حرف تعریف معرفه",
+        description: "یاد بگیرید چطور صفات با der, die, das تغییر می‌کنند.",
+        path: "/learn/de-fa/A2/A2-M09-L01"
+      }
+    ]
   }
 ];
 
