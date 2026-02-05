@@ -1,0 +1,396 @@
+{
+  "id": "A2-M09-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Adjektivdeklination ohne Artikel", "fa": "صرف صفت بدون حرف تعریف" },
+  "description": "یاد بگیرید چطور صفات بدون حرف تعریف تغییر می‌کنند",
+  "level": "A2",
+  "module": 9,
+  "lessonNumber": 3,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "frisch", "fa": "تازه", "grammar": { "pos": "adjective" } },
+    { "de": "heiß", "fa": "داغ", "grammar": { "pos": "adjective" } },
+    { "de": "süß", "fa": "شیرین", "grammar": { "pos": "adjective" } },
+    { "de": "lecker", "fa": "خوشمزه", "grammar": { "pos": "adjective" } },
+    { "de": "stark", "fa": "قوی", "grammar": { "pos": "adjective" } },
+    { "de": "schwach", "fa": "ضعیف", "grammar": { "pos": "adjective" } },
+    { "de": "gut", "fa": "خوب", "grammar": { "pos": "adjective" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "صفت بدون حرف تعریف",
+      "content": "📝 **بدون Artikel:**\n\nوقتی حرف تعریف نیست، صفت **همه اطلاعات** را نشان می‌دهد:\n\n• **با Artikel:** das kalte Wasser\n• **بدون Artikel:** kalt**es** Wasser\n\n💡 پایانه‌ها شبیه حرف تعریف معرفه هستند!\n\n⚠️ این فرم بیشتر با اسم‌های غیرقابل شمارش و جمع استفاده می‌شود.",
+      "examples": [
+        { "de": "Ich trinke kaltes Wasser.", "fa": "آب سرد می‌نوشم." },
+        { "de": "Frische Luft ist gesund.", "fa": "هوای تازه سالم است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "frisch", "fa": "تازه" },
+      "example": { "text": { "de": "Frisches Brot schmeckt gut.", "fa": "نان تازه خوشمزه است." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "heiß", "fa": "داغ" },
+      "example": { "text": { "de": "Heißer Kaffee wärmt.", "fa": "قهوه داغ گرم می‌کند." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "süß", "fa": "شیرین" },
+      "example": { "text": { "de": "Süßer Tee schmeckt mir.", "fa": "چای شیرین به من می‌چسبد." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "پایانه‌ها در Nominativ",
+      "content": "📝 **Nominativ بدون Artikel:**\n\n| جنس | پایانه | مثال |\n|-----|--------|------|\n| مذکر | -er | groß**er** Mann |\n| مونث | -e | groß**e** Frau |\n| خنثی | -es | groß**es** Kind |\n| جمع | -e | groß**e** Kinder |\n\n💡 پایانه‌ها = پایانه حرف تعریف معرفه (der, die, das)",
+      "examples": [
+        { "de": "Kalter Wind weht.", "fa": "باد سرد می‌وزد." },
+        { "de": "Frische Milch ist lecker.", "fa": "شیر تازه خوشمزه است." },
+        { "de": "Kleine Kinder spielen.", "fa": "بچه‌های کوچک بازی می‌کنند." }
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "frisches",
+      "translation": "تازه",
+      "syllables": ["fri", "sches"],
+      "distractors": ["fra", "schas", "fro", "schis"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«قهوه داغ» (Nominativ، بدون Artikel) به آلمانی چیست؟",
+      "options": ["heiße Kaffee", "heißer Kaffee", "heißes Kaffee", "heißen Kaffee"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! Kaffee مذکر است: heißer", "incorrect": "Kaffee مذکر است، Nominativ بدون Artikel: -er" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "«آب سرد» (Nominativ، بدون Artikel) به آلمانی چیست؟",
+      "options": ["kalter Wasser", "kalte Wasser", "kaltes Wasser", "kalten Wasser"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! Wasser خنثی است: kaltes", "incorrect": "Wasser خنثی است، Nominativ بدون Artikel: -es" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید (Nominativ)",
+      "sentence": "{0} Brot schmeckt gut.",
+      "options": ["Frischer", "Frische", "Frisches", "Frischen"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "Brot خنثی است: Frisches Brot" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید (Nominativ)",
+      "sentence": "{0} Luft ist gesund.",
+      "options": ["Frischer", "Frische", "Frisches", "Frischen"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Luft مونث است: Frische Luft" }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "lecker", "fa": "خوشمزه" },
+      "example": { "text": { "de": "Leckeres Essen macht glücklich.", "fa": "غذای خوشمزه خوشحال می‌کند." } }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در نانوایی",
+      "context": "خرید نان و شیرینی",
+      "lines": [
+        { "speaker": "Kunde", "text": { "de": "Haben Sie frisches Brot?", "fa": "نان تازه دارید؟" } },
+        { "speaker": "Bäcker", "text": { "de": "Ja, frisches Brot ist gerade fertig.", "fa": "بله، نان تازه تازه آماده شده." } },
+        { "speaker": "Kunde", "text": { "de": "Und süße Brötchen?", "fa": "و نان‌های شیرین؟" } },
+        { "speaker": "Bäcker", "text": { "de": "Süße Brötchen haben wir auch.", "fa": "نان‌های شیرین هم داریم." } }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "پایانه‌ها در Akkusativ",
+      "content": "📝 **Akkusativ بدون Artikel:**\n\n| جنس | Nominativ | Akkusativ |\n|-----|-----------|------------|\n| مذکر | großer Mann | groß**en** Mann |\n| مونث | große Frau | große Frau |\n| خنثی | großes Kind | großes Kind |\n| جمع | große Kinder | große Kinder |\n\n💡 فقط **مذکر** تغییر می‌کند: **-en**",
+      "examples": [
+        { "de": "Ich trinke heißen Tee.", "fa": "چای داغ می‌نوشم." },
+        { "de": "Ich esse frisches Obst.", "fa": "میوه تازه می‌خورم." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "«چای داغ می‌نوشم» به آلمانی چیست؟",
+      "options": ["Ich trinke heißer Tee.", "Ich trinke heiße Tee.", "Ich trinke heißen Tee.", "Ich trinke heißes Tee."],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! Tee مذکر، Akkusativ: heißen", "incorrect": "Tee مذکر است، Akkusativ بدون Artikel: -en" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["gut.", "schmeckt", "Brot", "Frisches"],
+      "correctOrder": [3, 2, 1, 0],
+      "correctSentence": { "de": "Frisches Brot schmeckt gut.", "fa": "نان تازه خوشمزه است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Kaffee.", "trinke", "heißen", "Ich"],
+      "correctOrder": [3, 1, 2, 0],
+      "correctSentence": { "de": "Ich trinke heißen Kaffee.", "fa": "من قهوه داغ می‌نوشم." }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "heißer",
+      "translation": "داغ",
+      "syllables": ["hei", "ßer"],
+      "distractors": ["ha", "sar", "ho", "sir"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "stark", "fa": "قوی" },
+      "example": { "text": { "de": "Starker Kaffee weckt auf.", "fa": "قهوه قوی بیدار می‌کند." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "schwach", "fa": "ضعیف" },
+      "example": { "text": { "de": "Schwacher Tee ist gesund.", "fa": "چای ضعیف سالم است." } }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید (Akkusativ)",
+      "sentence": "Ich esse {0} Obst.",
+      "options": ["frischer", "frische", "frisches", "frischen"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "Obst خنثی است: frisches Obst" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید (Akkusativ)",
+      "sentence": "Sie trinkt {0} Milch.",
+      "options": ["kalter", "kalte", "kaltes", "kalten"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Milch مونث است: kalte Milch" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s10",
+      "title": "پایانه‌ها در Dativ",
+      "content": "📝 **Dativ بدون Artikel:**\n\n| جنس | Dativ |\n|-----|-------|\n| مذکر | groß**em** Mann |\n| مونث | groß**er** Frau |\n| خنثی | groß**em** Kind |\n| جمع | groß**en** Kindern |\n\n💡 مذکر/خنثی: **-em** / مونث: **-er** / جمع: **-en**",
+      "examples": [
+        { "de": "Mit frischem Brot.", "fa": "با نان تازه." },
+        { "de": "Mit kalter Milch.", "fa": "با شیر سرد." },
+        { "de": "Mit kleinen Kindern.", "fa": "با بچه‌های کوچک." }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "صبحانه",
+      "context": "درباره صبحانه صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Was isst du zum Frühstück?", "fa": "صبحانه چه می‌خوری؟" } },
+        { "speaker": "Ben", "text": { "de": "Frisches Brot mit Butter.", "fa": "نان تازه با کره." } },
+        { "speaker": "Anna", "text": { "de": "Trinkst du starken Kaffee?", "fa": "قهوه قوی می‌نوشی؟" } },
+        { "speaker": "Ben", "text": { "de": "Nein, ich bevorzuge schwachen Tee.", "fa": "نه، چای ضعیف ترجیح می‌دهم." } }
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "starker",
+      "translation": "قوی",
+      "syllables": ["star", "ker"],
+      "distractors": ["stor", "kar", "stir", "kor"]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "جنس را با پایانه Nominativ وصل کنید",
+      "items": [
+        { "id": "i1", "text": "___ Kaffee (مذکر)" },
+        { "id": "i2", "text": "___ Milch (مونث)" },
+        { "id": "i3", "text": "___ Wasser (خنثی)" },
+        { "id": "i4", "text": "___ Kinder (جمع)" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "heißer" },
+        { "id": "m2", "text": "kalte" },
+        { "id": "m3", "text": "kaltes" },
+        { "id": "m4", "text": "kleine" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"],
+        ["i4", "m4"]
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "پایانه صحیح بدون Artikel",
+      "instruction": "پایانه صحیح صفت را انتخاب کنید",
+      "questions": [
+        { "prompt": "frisch___ Brot (خنثی, Nom.)", "left": "-er", "right": "-es", "correctSide": "right" },
+        { "prompt": "heiß___ Kaffee (مذکر, Nom.)", "left": "-er", "right": "-es", "correctSide": "left" },
+        { "prompt": "kalt___ Milch (مونث, Nom.)", "left": "-e", "right": "-er", "correctSide": "left" },
+        { "prompt": "stark___ Tee (مذکر, Akk.)", "left": "-er", "right": "-en", "correctSide": "right" },
+        { "prompt": "mit frisch___ Brot (خنثی, Dat.)", "left": "-em", "right": "-en", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s11",
+      "word": { "de": "gut", "fa": "خوب" },
+      "example": { "text": { "de": "Guten Morgen!", "fa": "صبح بخیر!" } }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "«با نان تازه» به آلمانی چیست؟",
+      "options": ["mit frischer Brot", "mit frische Brot", "mit frischem Brot", "mit frischen Brot"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! Brot خنثی، Dativ: mit frischem", "incorrect": "Brot خنثی است، Dativ بدون Artikel: -em" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc5",
+      "question": "«صبح بخیر» به آلمانی چیست؟",
+      "options": ["Guter Morgen!", "Gute Morgen!", "Gutes Morgen!", "Guten Morgen!"],
+      "correctAnswerIndex": 3,
+      "feedback": { "correct": "آفرین! Morgen مذکر، Akkusativ: Guten", "incorrect": "Morgen مذکر است، در این عبارت Akkusativ: Guten" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید (Dativ)",
+      "sentence": "Mit {0} Milch schmeckt es besser.",
+      "options": ["kalter", "kalte", "kaltem", "kalten"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Milch مونث است، Dativ: kalter Milch" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید (Akkusativ)",
+      "sentence": "Ich wünsche dir {0} Appetit!",
+      "options": ["guter", "gute", "gutes", "guten"],
+      "correctAnswers": [3],
+      "feedback": { "explanation": "Appetit مذکر است، Akkusativ: guten Appetit" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["gesund.", "ist", "Luft", "Frische"],
+      "correctOrder": [3, 2, 1, 0],
+      "correctSentence": { "de": "Frische Luft ist gesund.", "fa": "هوای تازه سالم است." }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "leckeres",
+      "translation": "خوشمزه",
+      "syllables": ["le", "cke", "res"],
+      "distractors": ["la", "cka", "ras", "ris"]
+    },
+    {
+      "type": "dialog",
+      "id": "d3",
+      "title": "عبارات روزمره",
+      "context": "احوال‌پرسی و آرزوها",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Guten Morgen!", "fa": "صبح بخیر!" } },
+        { "speaker": "Ben", "text": { "de": "Guten Morgen! Wie geht es dir?", "fa": "صبح بخیر! حالت چطوره؟" } },
+        { "speaker": "Anna", "text": { "de": "Gut, danke. Guten Appetit!", "fa": "خوب، ممنون. نوش جان!" } },
+        { "speaker": "Ben", "text": { "de": "Danke! Schönen Tag noch!", "fa": "ممنون! روز خوبی داشته باشی!" } }
+      ]
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "پایانه صحیح را انتخاب کنید",
+      "words": [
+        { "de": "___ Wasser (Nom.)", "fa": "kalt", "options": ["kalter", "kalte", "kaltes", "kalten"], "correctIndex": 2 },
+        { "de": "___ Kaffee (Akk.)", "fa": "heiß", "options": ["heißer", "heiße", "heißes", "heißen"], "correctIndex": 3 },
+        { "de": "mit ___ Brot (Dat.)", "fa": "frisch", "options": ["frischer", "frische", "frischem", "frischen"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo4",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Appetit!", "Guten"],
+      "correctOrder": [1, 0],
+      "correctSentence": { "de": "Guten Appetit!", "fa": "نوش جان!" }
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Frisches Brot schmeckt gut.",
+      "translation": "نان تازه خوشمزه است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Ich trinke heißen Kaffee.",
+      "translation": "من قهوه داغ می‌نوشم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Guten Morgen!",
+      "translation": "صبح بخیر!"
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "heißer Kaffee", "fa": "قهوه داغ (مذکر)" },
+        { "de": "kalte Milch", "fa": "شیر سرد (مونث)" },
+        { "de": "frisches Brot", "fa": "نان تازه (خنثی)" },
+        { "de": "kleine Kinder", "fa": "بچه‌های کوچک (جمع)" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp1",
+      "title": "آفرین! 🎉",
+      "message": "صرف صفت بدون حرف تعریف را یاد گرفتید!",
+      "keyPoints": [
+        "Nominativ: -er (m), -e (f), -es (n), -e (pl)",
+        "Akkusativ مذکر: -en، بقیه مثل Nominativ",
+        "Dativ: -em (m/n), -er (f), -en (pl)",
+        "عبارات مهم: Guten Morgen, Guten Appetit",
+        "با اسم‌های غیرقابل شمارش: frisches Brot, kaltes Wasser"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "frisch", "fa": "تازه" } },
+        { "word": { "de": "heiß", "fa": "داغ" } },
+        { "word": { "de": "süß", "fa": "شیرین" } },
+        { "word": { "de": "stark", "fa": "قوی" } },
+        { "word": { "de": "gut", "fa": "خوب" } }
+      ]
+    }
+  ]
+}

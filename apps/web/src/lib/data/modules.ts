@@ -739,6 +739,12 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         title: "Mit unbestimmtem Artikel - با حرف تعریف نکره",
         description: "یاد بگیرید چطور صفات با ein, eine تغییر می‌کنند.",
         path: "/learn/de-fa/A2/A2-M09-L02"
+      },
+      {
+        id: "A2-M09-L03",
+        title: "Ohne Artikel - بدون حرف تعریف",
+        description: "یاد بگیرید چطور صفات بدون حرف تعریف تغییر می‌کنند.",
+        path: "/learn/de-fa/A2/A2-M09-L03"
       }
     ]
   }
