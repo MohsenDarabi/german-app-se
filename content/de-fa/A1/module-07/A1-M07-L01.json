@@ -17,7 +17,7 @@
   "level": "A1",
   "module": 7,
   "lessonNumber": 1,
-  "totalSteps": 38,
+  "totalSteps": 43,
   "estimatedMinutes": 18,
   "vocabulary": [
     {
@@ -399,8 +399,7 @@
           }
         }
       ],
-      "questionMode": "post-dialog",
-      "questions": [
+            "questions": [
         {
           "question": "الی چند خواهر برادر دارد؟",
           "options": [
@@ -719,8 +718,7 @@
           }
         }
       ],
-      "questionMode": "post-dialog",
-      "questions": [
+            "questions": [
         {
           "question": "اسم برادر الی چیست؟",
           "options": [
@@ -870,6 +868,38 @@
           "fa": "دختر (فرزند)"
         }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "Das Wort «Bruder» ist maskulin (der Bruder).",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست است! Bruder مذکر است: **der** Bruder"
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "Für «Mutter» sagt man «mein Mutter» auf Deutsch.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! Mutter مونث است پس می‌گوییم: **meine** Mutter (نه mein)"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "این خانواده‌ام است.",
+      "sentenceTemplate": "{0} {1} {2} {3}.",
+      "options": ["Das", "ist", "meine", "Familie"],
+      "correctAnswers": [0, 1, 2, 3],
+      "correctTranslation": {
+        "de": "Das ist meine Familie.",
+        "fa": "این خانواده‌ام است."
+      }
     },
     {
       "type": "completion",

@@ -17,7 +17,7 @@
   "level": "A1",
   "module": 7,
   "lessonNumber": 2,
-  "totalSteps": 36,
+  "totalSteps": 43,
   "estimatedMinutes": 17,
   "vocabulary": [
     {
@@ -359,8 +359,7 @@
           }
         }
       ],
-      "questionMode": "post-dialog",
-      "questions": [
+            "questions": [
         {
           "question": "مامان‌بزرگ الی کجا زندگی می‌کند؟",
           "options": [
@@ -695,8 +694,7 @@
           }
         }
       ],
-      "questionMode": "post-dialog",
-      "questions": [
+            "questions": [
         {
           "question": "خانم مولر چند نوه دارد؟",
           "options": [
@@ -842,6 +840,38 @@
           "fa": "نوه (دختر)"
         }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "«Oma» ist ein formelles Wort für Großmutter.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! Oma صمیمی است، Großmutter رسمی است"
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "Das Wort «Enkelin» bedeutet «نوه دختر».",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست است! die Enkelin = نوه دختر"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "مامان‌بزرگم در برلین زندگی می‌کند.",
+      "sentenceTemplate": "{0} {1} {2} in Berlin.",
+      "options": ["Meine", "Oma", "wohnt"],
+      "correctAnswers": [0, 1, 2],
+      "correctTranslation": {
+        "de": "Meine Oma wohnt in Berlin.",
+        "fa": "مامان‌بزرگم در برلین زندگی می‌کند."
+      }
     },
     {
       "type": "completion",
