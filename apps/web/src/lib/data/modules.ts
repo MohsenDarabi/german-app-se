@@ -815,6 +815,37 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/A2/A2-M11-L04"
       }
     ]
+  },
+  {
+    id: "module-12",
+    title: "بخش ۱۲: مصدر با zu (Infinitiv mit zu)",
+    level: "A2",
+    lessons: [
+      {
+        id: "A2-M12-L01",
+        title: "Infinitiv mit zu - مصدر با zu",
+        description: "یاد بگیرید چطور از zu + Infinitiv با فعل‌هایی مثل versuchen، beginnen و vergessen استفاده کنید.",
+        path: "/learn/de-fa/A2/A2-M12-L01"
+      },
+      {
+        id: "A2-M12-L02",
+        title: "Verben mit zu + Infinitiv - فعل‌ها با zu",
+        description: "فعل‌های بیشتر با zu + Infinitiv: hoffen، planen، erlauben، verbieten، empfehlen، bitten.",
+        path: "/learn/de-fa/A2/A2-M12-L02"
+      },
+      {
+        id: "A2-M12-L03",
+        title: "um...zu, ohne...zu, anstatt...zu",
+        description: "یاد بگیرید چطور هدف، نبود عمل و جایگزینی را با zu + Infinitiv بیان کنید.",
+        path: "/learn/de-fa/A2/A2-M12-L03"
+      },
+      {
+        id: "A2-M12-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "تمرین ترکیبی همه مباحث zu + Infinitiv: فعل‌ها، um...zu، ohne...zu، anstatt...zu.",
+        path: "/learn/de-fa/A2/A2-M12-L04"
+      }
+    ]
   }
 ];
 

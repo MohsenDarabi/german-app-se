@@ -1,0 +1,460 @@
+{
+  "id": "A2-M12-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "um...zu, ohne...zu, anstatt...zu", "fa": "برای اینکه، بدون اینکه، به‌جای اینکه" },
+  "description": "یاد بگیرید چطور هدف، نبود عمل و جایگزینی را با zu + Infinitiv بیان کنید",
+  "level": "A2",
+  "module": 12,
+  "lessonNumber": 3,
+  "totalSteps": 42,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "um...zu", "fa": "برای اینکه / به منظور", "grammar": { "pos": "conjunction" } },
+    { "de": "ohne...zu", "fa": "بدون اینکه", "grammar": { "pos": "conjunction" } },
+    { "de": "anstatt...zu", "fa": "به‌جای اینکه", "grammar": { "pos": "conjunction" } },
+    { "de": "statt...zu", "fa": "به‌جای اینکه", "grammar": { "pos": "conjunction" } },
+    { "de": "sparen", "fa": "پس‌انداز کردن", "grammar": { "pos": "verb" } },
+    { "de": "abnehmen", "fa": "لاغر شدن / کم کردن", "grammar": { "pos": "verb", "separable": true } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "um...zu = برای اینکه",
+      "content": "📝 **um...zu برای بیان هدف:**\n\n**ساختار:** um + ... + zu + Infinitiv\n\n• Ich lerne Deutsch, **um** in Deutschland **zu arbeiten**.\n→ آلمانی یاد می‌گیرم **برای اینکه** در آلمان کار کنم.\n\n• Er spart Geld, **um** ein Auto **zu kaufen**.\n→ پول پس‌انداز می‌کند **برای اینکه** ماشین بخرد.\n\n💡 um...zu = به منظور / برای اینکه",
+      "examples": [
+        { "de": "Ich gehe ins Fitnessstudio, um fit zu bleiben.", "fa": "به باشگاه می‌روم برای اینکه سالم بمانم." },
+        { "de": "Sie lernt Englisch, um im Ausland zu studieren.", "fa": "انگلیسی یاد می‌گیرد برای اینکه در خارج تحصیل کند." },
+        { "de": "Wir fahren früh los, um pünktlich anzukommen.", "fa": "زود راه می‌افتیم برای اینکه سر وقت برسیم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "um...zu", "fa": "برای اینکه / به منظور" },
+      "example": { "text": { "de": "Ich arbeite viel, um Geld zu verdienen.", "fa": "زیاد کار می‌کنم برای اینکه پول در بیاورم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "verdienen",
+      "translation": "درآوردن (پول)",
+      "syllables": ["ver", "die", "nen"],
+      "distractors": ["vor", "da", "nan"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "sparen", "fa": "پس‌انداز کردن" },
+      "example": { "text": { "de": "Ich spare Geld, um zu reisen.", "fa": "پول پس‌انداز می‌کنم برای اینکه سفر کنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "sparen",
+      "translation": "پس‌انداز کردن",
+      "syllables": ["spa", "ren"],
+      "distractors": ["spo", "ran", "run"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«آلمانی یاد می‌گیرم برای اینکه در آلمان کار کنم» به آلمانی چیست؟",
+      "options": ["Ich lerne Deutsch, um in Deutschland zu arbeiten.", "Ich lerne Deutsch, für in Deutschland arbeiten.", "Ich lerne Deutsch, zu in Deutschland arbeiten.", "Ich lerne Deutsch, in Deutschland um zu arbeiten."],
+      "correctAnswerIndex": 0,
+      "feedback": { "correct": "آفرین! um + ... + zu + Infinitiv", "incorrect": "ساختار: um + ... + zu + Infinitiv در آخر" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله درست است؟",
+      "options": ["Er spart, um zu ein Auto kaufen.", "Er spart, um ein Auto zu kaufen.", "Er spart, ein Auto um zu kaufen.", "Er spart, zu kaufen um ein Auto."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! um + مفعول + zu + Infinitiv", "incorrect": "ساختار: um + ... + zu + Infinitiv (فعل در آخر)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich gehe ins Fitnessstudio, {0} fit zu bleiben.",
+      "options": ["um", "für", "zu", "ohne"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "um...zu = برای اینکه" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sie lernt Deutsch, um in Deutschland {0}.",
+      "options": ["studieren", "zu studieren", "studiert", "studierte"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "um + ... + zu + Infinitiv" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "چرا آلمانی یاد می‌گیری؟",
+      "context": "لیزا و تام درباره یادگیری زبان صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Warum lernst du Deutsch?", "fa": "چرا آلمانی یاد می‌گیری؟" } },
+        { "speaker": "Tom", "text": { "de": "Ich lerne Deutsch, um in Berlin zu arbeiten.", "fa": "آلمانی یاد می‌گیرم برای اینکه در برلین کار کنم." } },
+        { "speaker": "Lisa", "text": { "de": "Interessant! Ich lerne es, um deutsche Bücher zu lesen.", "fa": "جالب! من یاد می‌گیرم برای اینکه کتاب‌های آلمانی بخوانم." } },
+        { "speaker": "Tom", "text": { "de": "Das ist auch ein guter Grund!", "fa": "این هم دلیل خوبی است!" } }
+      ],
+      "questions": [
+        {
+          "question": "تام چرا آلمانی یاد می‌گیرد؟",
+          "options": ["برای سفر", "برای کار در برلین", "برای خواندن کتاب"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: um in Berlin zu arbeiten"
+        },
+        {
+          "question": "لیزا چرا آلمانی یاد می‌گیرد؟",
+          "options": ["برای کار", "برای سفر", "برای خواندن کتاب"],
+          "correctIndex": 2,
+          "explanation": "لیزا گفت: um deutsche Bücher zu lesen"
+        }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "ohne...zu = بدون اینکه",
+      "content": "📝 **ohne...zu برای بیان نبود عمل:**\n\n**ساختار:** ohne + ... + zu + Infinitiv\n\n• Er geht, **ohne** etwas **zu sagen**.\n→ می‌رود **بدون اینکه** چیزی بگوید.\n\n• Sie isst, **ohne** die Hände **zu waschen**.\n→ غذا می‌خورد **بدون اینکه** دست‌هایش را بشوید.\n\n💡 ohne...zu = بدون اینکه (عمل انجام نمی‌شود)",
+      "examples": [
+        { "de": "Er fährt, ohne den Sicherheitsgurt anzulegen.", "fa": "رانندگی می‌کند بدون اینکه کمربند ببندد." },
+        { "de": "Sie kauft das Kleid, ohne es anzuprobieren.", "fa": "لباس را می‌خرد بدون اینکه امتحان کند." },
+        { "de": "Ich kann nicht schlafen, ohne Musik zu hören.", "fa": "نمی‌توانم بخوابم بدون اینکه موسیقی گوش کنم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "ohne...zu", "fa": "بدون اینکه" },
+      "example": { "text": { "de": "Er ging, ohne sich zu verabschieden.", "fa": "رفت بدون اینکه خداحافظی کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "verabschieden",
+      "translation": "خداحافظی کردن",
+      "syllables": ["ver", "ab", "schie", "den"],
+      "distractors": ["vor", "ob", "scha", "dan"]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["sagen.", "zu", "etwas", "ohne", "geht,", "Er"],
+      "correctOrder": [5, 4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Er geht, ohne etwas zu sagen.", "fa": "می‌رود بدون اینکه چیزی بگوید." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["arbeiten.", "zu", "in Deutschland", "um", "Deutsch,", "Ich lerne"],
+      "correctOrder": [5, 4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Ich lerne Deutsch, um in Deutschland zu arbeiten.", "fa": "آلمانی یاد می‌گیرم برای اینکه در آلمان کار کنم." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "«رفت بدون اینکه خداحافظی کند» به آلمانی چیست؟",
+      "options": ["Er ging, ohne zu verabschieden.", "Er ging, ohne sich zu verabschieden.", "Er ging, ohne verabschieden zu.", "Er ging, zu verabschieden ohne."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! sich verabschieden انعکاسی است", "incorrect": "ohne + ... + zu + Infinitiv (sich verabschieden انعکاسی است)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sie isst, {0} die Hände zu waschen.",
+      "options": ["um", "ohne", "anstatt", "für"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "ohne...zu = بدون اینکه" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "anstatt...zu = به‌جای اینکه",
+      "content": "📝 **anstatt...zu (یا statt...zu) برای جایگزینی:**\n\n**ساختار:** anstatt/statt + ... + zu + Infinitiv\n\n• Er spielt, **anstatt zu lernen**.\n→ بازی می‌کند **به‌جای اینکه** درس بخواند.\n\n• Sie fährt mit dem Bus, **statt zu Fuß zu gehen**.\n→ با اتوبوس می‌رود **به‌جای اینکه** پیاده برود.\n\n💡 anstatt = statt (هر دو درست هستند)",
+      "examples": [
+        { "de": "Er schläft, anstatt zu arbeiten.", "fa": "می‌خوابد به‌جای اینکه کار کند." },
+        { "de": "Sie liest, statt fernzusehen.", "fa": "کتاب می‌خواند به‌جای اینکه تلویزیون ببیند." },
+        { "de": "Ich koche selbst, anstatt Essen zu bestellen.", "fa": "خودم آشپزی می‌کنم به‌جای اینکه غذا سفارش بدهم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "anstatt...zu", "fa": "به‌جای اینکه" },
+      "example": { "text": { "de": "Er spielt, anstatt zu lernen.", "fa": "بازی می‌کند به‌جای اینکه درس بخواند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "anstatt",
+      "translation": "به‌جای",
+      "syllables": ["an", "statt"],
+      "distractors": ["un", "stadt", "stett"]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "abnehmen", "fa": "لاغر شدن / کم کردن" },
+      "example": { "text": { "de": "Ich mache Sport, um abzunehmen.", "fa": "ورزش می‌کنم برای اینکه لاغر شوم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "abnehmen",
+      "translation": "لاغر شدن",
+      "syllables": ["ab", "neh", "men"],
+      "distractors": ["ob", "nah", "man"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er spielt, {0} zu lernen.",
+      "options": ["um", "ohne", "anstatt", "mit"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "anstatt...zu = به‌جای اینکه" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich mache Sport, um {0}.",
+      "options": ["abnehmen", "abzunehmen", "nehme ab", "abgenommen"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "فعل جداشدنی: ab + zu + nehmen = abzunehmen" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "عادت‌های بد",
+      "context": "آنا و ماکس درباره عادت‌ها صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Was macht dein Bruder?", "fa": "برادرت چه کار می‌کند؟" } },
+        { "speaker": "Max", "text": { "de": "Er spielt Computerspiele, anstatt zu lernen.", "fa": "بازی کامپیوتری می‌کند به‌جای اینکه درس بخواند." } },
+        { "speaker": "Anna", "text": { "de": "Oh nein! Und er geht zur Schule, ohne die Hausaufgaben zu machen?", "fa": "اوه نه! و به مدرسه می‌رود بدون اینکه تکالیف را انجام دهد؟" } },
+        { "speaker": "Max", "text": { "de": "Ja, leider. Meine Eltern sind nicht glücklich.", "fa": "بله، متأسفانه. پدر و مادرم خوشحال نیستند." } }
+      ],
+      "questions": [
+        {
+          "question": "برادر ماکس چه کار می‌کند؟",
+          "options": ["درس می‌خواند", "بازی می‌کند به‌جای درس خواندن", "کار می‌کند"],
+          "correctIndex": 1,
+          "explanation": "ماکس گفت: anstatt zu lernen"
+        },
+        {
+          "question": "برادر ماکس چه کاری نمی‌کند؟",
+          "options": ["به مدرسه نمی‌رود", "تکالیف را انجام نمی‌دهد", "بازی نمی‌کند"],
+          "correctIndex": 1,
+          "explanation": "آنا گفت: ohne die Hausaufgaben zu machen"
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "ساختار آلمانی را با معنی فارسی وصل کنید",
+      "items": [
+        { "id": "i1", "text": "um...zu" },
+        { "id": "i2", "text": "ohne...zu" },
+        { "id": "i3", "text": "anstatt...zu" },
+        { "id": "i4", "text": "statt...zu" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "برای اینکه" },
+        { "id": "m2", "text": "بدون اینکه" },
+        { "id": "m3", "text": "به‌جای اینکه" },
+        { "id": "m4", "text": "به‌جای اینکه (مترادف)" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"],
+        ["i4", "m4"]
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "کدام ساختار؟",
+      "instruction": "برای این معنی کدام ساختار درست است؟",
+      "questions": [
+        { "prompt": "برای اینکه (هدف)", "left": "um...zu", "right": "ohne...zu", "correctSide": "left" },
+        { "prompt": "بدون اینکه", "left": "um...zu", "right": "ohne...zu", "correctSide": "right" },
+        { "prompt": "به‌جای اینکه", "left": "anstatt...zu", "right": "um...zu", "correctSide": "left" },
+        { "prompt": "به منظور", "left": "um...zu", "right": "anstatt...zu", "correctSide": "left" },
+        { "prompt": "عمل انجام نشده", "left": "ohne...zu", "right": "um...zu", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["lernen.", "zu", "anstatt", "spielt,", "Er"],
+      "correctOrder": [4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Er spielt, anstatt zu lernen.", "fa": "بازی می‌کند به‌جای اینکه درس بخواند." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo4",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["abzunehmen.", "Sport,", "mache", "um", "Ich"],
+      "correctOrder": [4, 2, 1, 3, 0],
+      "correctSentence": { "de": "Ich mache Sport, um abzunehmen.", "fa": "ورزش می‌کنم برای اینکه لاغر شوم." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "کدام جمله درست است؟",
+      "options": ["Sie liest, statt zu fernsehen.", "Sie liest, statt fernsehen zu.", "Sie liest, zu statt fernsehen.", "Sie liest, fernsehen statt zu."],
+      "correctAnswerIndex": 0,
+      "feedback": { "correct": "آفرین! statt + zu + Infinitiv", "incorrect": "ساختار: statt + zu + Infinitiv" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er fährt mit dem Auto, {0} mit dem Bus zu fahren.",
+      "options": ["um", "ohne", "statt", "für"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "statt...zu = به‌جای اینکه" }
+    },
+    {
+      "type": "dialog",
+      "id": "d3",
+      "title": "برنامه‌ها",
+      "context": "الی و تام درباره برنامه‌هایشان صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Eli", "text": { "de": "Ich spare Geld, um ein neues Handy zu kaufen.", "fa": "پول پس‌انداز می‌کنم برای اینکه موبایل جدید بخرم." } },
+        { "speaker": "Tom", "text": { "de": "Ich gebe mein Geld aus, ohne zu sparen!", "fa": "من پولم را خرج می‌کنم بدون اینکه پس‌انداز کنم!" } },
+        { "speaker": "Eli", "text": { "de": "Das ist nicht gut! Du solltest sparen, statt alles auszugeben.", "fa": "این خوب نیست! باید پس‌انداز کنی به‌جای اینکه همه را خرج کنی." } },
+        { "speaker": "Tom", "text": { "de": "Du hast recht. Ich werde es versuchen.", "fa": "حق با توست. سعی می‌کنم." } }
+      ],
+      "questions": [
+        {
+          "question": "الی چرا پس‌انداز می‌کند؟",
+          "options": ["برای سفر", "برای موبایل جدید", "برای ماشین"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: um ein neues Handy zu kaufen"
+        },
+        {
+          "question": "مشکل تام چیست؟",
+          "options": ["پول ندارد", "پس‌انداز نمی‌کند", "کار نمی‌کند"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: ohne zu sparen"
+        }
+      ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "um...zu برای بیان هدف استفاده می‌شود.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! um...zu = برای اینکه / به منظور"
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "anstatt و statt معنی متفاوتی دارند.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! anstatt = statt (هر دو یعنی به‌جای اینکه)"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "آلمانی یاد می‌گیرم برای اینکه در آلمان کار کنم.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4} {5}.",
+      "options": ["arbeiten", "zu", "um in Deutschland", "Ich", "Deutsch,", "lerne"],
+      "correctAnswers": [3, 5, 4, 2, 1, 0],
+      "correctTranslation": {
+        "de": "Ich lerne Deutsch, um in Deutschland zu arbeiten.",
+        "fa": "آلمانی یاد می‌گیرم برای اینکه در آلمان کار کنم."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "می‌رود بدون اینکه چیزی بگوید.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4}.",
+      "options": ["sagen", "zu", "ohne etwas", "geht,", "Er"],
+      "correctAnswers": [4, 3, 2, 1, 0],
+      "correctTranslation": {
+        "de": "Er geht, ohne etwas zu sagen.",
+        "fa": "می‌رود بدون اینکه چیزی بگوید."
+      }
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "um...zu", "fa": "برای اینکه", "options": ["بدون اینکه", "برای اینکه", "به‌جای اینکه", "وقتی که"], "correctIndex": 1 },
+        { "de": "ohne...zu", "fa": "بدون اینکه", "options": ["برای اینکه", "به‌جای اینکه", "بدون اینکه", "اگر که"], "correctIndex": 2 },
+        { "de": "anstatt...zu", "fa": "به‌جای اینکه", "options": ["برای اینکه", "به‌جای اینکه", "بدون اینکه", "چون که"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich lerne Deutsch, um in Deutschland zu arbeiten.",
+      "translation": "آلمانی یاد می‌گیرم برای اینکه در آلمان کار کنم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Er geht, ohne etwas zu sagen.",
+      "translation": "می‌رود بدون اینکه چیزی بگوید."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Sie liest, anstatt fernzusehen.",
+      "translation": "کتاب می‌خواند به‌جای اینکه تلویزیون ببیند."
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "um...zu", "fa": "برای اینکه (هدف)" },
+        { "de": "ohne...zu", "fa": "بدون اینکه" },
+        { "de": "anstatt...zu", "fa": "به‌جای اینکه" },
+        { "de": "statt...zu", "fa": "به‌جای اینکه (مترادف)" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp1",
+      "title": "آفرین! 🎉",
+      "message": "ساختارهای um...zu، ohne...zu و anstatt...zu را یاد گرفتید!",
+      "keyPoints": [
+        "um...zu = برای اینکه / به منظور (هدف)",
+        "ohne...zu = بدون اینکه (نبود عمل)",
+        "anstatt...zu = statt...zu = به‌جای اینکه (جایگزینی)",
+        "فعل جداشدنی: um + ... + abzunehmen",
+        "zu + Infinitiv همیشه در آخر جمله"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "um...zu", "fa": "برای اینکه" } },
+        { "word": { "de": "ohne...zu", "fa": "بدون اینکه" } },
+        { "word": { "de": "anstatt...zu", "fa": "به‌جای اینکه" } },
+        { "word": { "de": "sparen", "fa": "پس‌انداز کردن" } },
+        { "word": { "de": "abnehmen", "fa": "لاغر شدن" } }
+      ]
+    }
+  ]
+}

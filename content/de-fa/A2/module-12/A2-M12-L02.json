@@ -1,0 +1,478 @@
+{
+  "id": "A2-M12-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Verben mit zu + Infinitiv", "fa": "فعل‌ها با zu + مصدر" },
+  "description": "فعل‌های بیشتری که با zu + Infinitiv می‌آیند: hoffen، planen، erlauben، verbieten",
+  "level": "A2",
+  "module": 12,
+  "lessonNumber": 2,
+  "totalSteps": 44,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "hoffen", "fa": "امیدوار بودن", "grammar": { "pos": "verb" } },
+    { "de": "planen", "fa": "برنامه‌ریزی کردن", "grammar": { "pos": "verb" } },
+    { "de": "erlauben", "fa": "اجازه دادن", "grammar": { "pos": "verb" } },
+    { "de": "verbieten", "fa": "ممنوع کردن", "grammar": { "pos": "verb" } },
+    { "de": "empfehlen", "fa": "توصیه کردن", "grammar": { "pos": "verb" } },
+    { "de": "bitten", "fa": "خواهش کردن", "grammar": { "pos": "verb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "فعل‌های بیشتر با zu + Infinitiv",
+      "content": "📝 **فعل‌های رایج با zu + Infinitiv:**\n\n| فعل | معنی |\n|-----|------|\n| hoffen | امیدوار بودن |\n| planen | برنامه‌ریزی کردن |\n| erlauben | اجازه دادن |\n| verbieten | ممنوع کردن |\n| empfehlen | توصیه کردن |\n| bitten | خواهش کردن |\n\n💡 همه این فعل‌ها با **zu + Infinitiv** در آخر جمله می‌آیند!",
+      "examples": [
+        { "de": "Ich hoffe, dich zu sehen.", "fa": "امیدوارم تو را ببینم." },
+        { "de": "Wir planen, nach Berlin zu fahren.", "fa": "برنامه داریم به برلین برویم." },
+        { "de": "Er erlaubt mir, zu gehen.", "fa": "او به من اجازه می‌دهد بروم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "hoffen", "fa": "امیدوار بودن" },
+      "example": { "text": { "de": "Ich hoffe, bald Urlaub zu haben.", "fa": "امیدوارم به‌زودی تعطیلات داشته باشم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "hoffen",
+      "translation": "امیدوار بودن",
+      "syllables": ["hof", "fen"],
+      "distractors": ["haf", "fan", "fin"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "planen", "fa": "برنامه‌ریزی کردن" },
+      "example": { "text": { "de": "Wir planen, ein Haus zu kaufen.", "fa": "برنامه داریم خانه بخریم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "planen",
+      "translation": "برنامه‌ریزی کردن",
+      "syllables": ["pla", "nen"],
+      "distractors": ["plo", "nan", "nun"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "erlauben", "fa": "اجازه دادن" },
+      "example": { "text": { "de": "Der Chef erlaubt uns, früher zu gehen.", "fa": "رئیس به ما اجازه می‌دهد زودتر برویم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "erlauben",
+      "translation": "اجازه دادن",
+      "syllables": ["er", "lau", "ben"],
+      "distractors": ["ar", "lou", "bon"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "erlauben و verbieten با Dativ",
+      "content": "📝 **ساختار خاص:**\n\nerlauben و verbieten به شخص **Dativ** نیاز دارند:\n\n• Er erlaubt **mir**, zu gehen.\n→ او به **من** اجازه می‌دهد بروم.\n\n• Sie verbietet **ihm**, zu rauchen.\n→ او به **او** ممنوع می‌کند سیگار بکشد.\n\n💡 mir، dir، ihm، ihr، uns، euch، ihnen",
+      "examples": [
+        { "de": "Die Mutter erlaubt dem Kind, zu spielen.", "fa": "مادر به بچه اجازه می‌دهد بازی کند." },
+        { "de": "Der Arzt verbietet mir, Alkohol zu trinken.", "fa": "دکتر به من ممنوع می‌کند الکل بنوشم." },
+        { "de": "Erlaubst du mir, hier zu sitzen?", "fa": "به من اجازه می‌دهی اینجا بنشینم؟" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«امیدوارم تو را ببینم» به آلمانی چیست؟",
+      "options": ["Ich hoffe, dich zu sehen.", "Ich hoffe, dich sehen zu.", "Ich hoffe, zu dich sehen.", "Ich hoffe, sehen dich zu."],
+      "correctAnswerIndex": 0,
+      "feedback": { "correct": "آفرین! hoffen + zu + Infinitiv", "incorrect": "ساختار: hoffen + zu + Infinitiv در آخر" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله درست است؟",
+      "options": ["Er erlaubt mich, zu gehen.", "Er erlaubt mir, zu gehen.", "Er erlaubt ich, zu gehen.", "Er erlaubt mein, zu gehen."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! erlauben + Dativ (mir)", "incorrect": "erlauben به Dativ نیاز دارد: mir، dir، ihm..." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich hoffe, dich bald {0}.",
+      "options": ["sehen", "zu sehen", "sehe", "gesehen"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "hoffen + zu + Infinitiv" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Wir planen, nächstes Jahr nach Japan {0}.",
+      "options": ["reisen", "zu reisen", "reise", "gereist"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "planen + zu + Infinitiv" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "برنامه تعطیلات",
+      "context": "آنا و تام درباره تعطیلات صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Was planst du für den Sommer?", "fa": "برای تابستان چه برنامه‌ای داری؟" } },
+        { "speaker": "Tom", "text": { "de": "Ich plane, nach Spanien zu fliegen.", "fa": "برنامه دارم به اسپانیا پرواز کنم." } },
+        { "speaker": "Anna", "text": { "de": "Toll! Ich hoffe, auch Urlaub zu bekommen.", "fa": "عالی! امیدوارم من هم تعطیلات بگیرم." } },
+        { "speaker": "Tom", "text": { "de": "Erlaubt dir dein Chef, zwei Wochen frei zu nehmen?", "fa": "رئیست به تو اجازه می‌دهد دو هفته مرخصی بگیری؟" } },
+        { "speaker": "Anna", "text": { "de": "Ich hoffe es!", "fa": "امیدوارم!" } }
+      ],
+      "questions": [
+        {
+          "question": "تام کجا می‌خواهد برود؟",
+          "options": ["ایتالیا", "اسپانیا", "فرانسه"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: Ich plane, nach Spanien zu fliegen"
+        },
+        {
+          "question": "آنا چه امیدی دارد؟",
+          "options": ["به اسپانیا برود", "تعطیلات بگیرد", "کار کند"],
+          "correctIndex": 1,
+          "explanation": "آنا گفت: Ich hoffe, auch Urlaub zu bekommen"
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "verbieten", "fa": "ممنوع کردن" },
+      "example": { "text": { "de": "Der Lehrer verbietet uns, im Unterricht zu essen.", "fa": "معلم به ما ممنوع می‌کند در کلاس غذا بخوریم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "verbieten",
+      "translation": "ممنوع کردن",
+      "syllables": ["ver", "bie", "ten"],
+      "distractors": ["vor", "bea", "tan"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "bitten و empfehlen",
+      "content": "📝 **bitten (خواهش کردن):**\n\n• Ich **bitte** dich, mir **zu helfen**.\n→ از تو خواهش می‌کنم به من کمک کنی.\n\n📝 **empfehlen (توصیه کردن):**\n\n• Der Arzt **empfiehlt** mir, Sport **zu machen**.\n→ دکتر به من توصیه می‌کند ورزش کنم.\n\n💡 bitten + Akkusativ (dich، ihn)\n💡 empfehlen + Dativ (mir، dir)",
+      "examples": [
+        { "de": "Ich bitte dich, leise zu sein.", "fa": "از تو خواهش می‌کنم ساکت باشی." },
+        { "de": "Sie empfiehlt uns, das Buch zu lesen.", "fa": "او به ما توصیه می‌کند کتاب را بخوانیم." },
+        { "de": "Darf ich Sie bitten, zu warten?", "fa": "می‌توانم از شما خواهش کنم صبر کنید؟" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["sehen.", "zu", "dich", "hoffe,", "Ich"],
+      "correctOrder": [4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Ich hoffe, dich zu sehen.", "fa": "امیدوارم تو را ببینم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["gehen.", "zu", "mir,", "erlaubt", "Er"],
+      "correctOrder": [4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Er erlaubt mir, zu gehen.", "fa": "او به من اجازه می‌دهد بروم." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "«دکتر به من ممنوع می‌کند سیگار بکشم» به آلمانی چیست؟",
+      "options": ["Der Arzt verbietet mich, zu rauchen.", "Der Arzt verbietet mir, zu rauchen.", "Der Arzt verbietet ich, zu rauchen.", "Der Arzt mir verbietet, zu rauchen."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! verbieten + Dativ (mir)", "incorrect": "verbieten به Dativ نیاز دارد: mir، dir، ihm..." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "کدام فعل با Akkusativ می‌آید (نه Dativ)؟",
+      "options": ["erlauben", "verbieten", "bitten", "empfehlen"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! bitten + Akkusativ (Ich bitte dich)", "incorrect": "bitten با Akkusativ می‌آید: Ich bitte dich (نه dir)" }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "empfehlen", "fa": "توصیه کردن" },
+      "example": { "text": { "de": "Ich empfehle dir, mehr zu schlafen.", "fa": "به تو توصیه می‌کنم بیشتر بخوابی." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "empfehlen",
+      "translation": "توصیه کردن",
+      "syllables": ["emp", "feh", "len"],
+      "distractors": ["amp", "fah", "lan"]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "bitten", "fa": "خواهش کردن" },
+      "example": { "text": { "de": "Ich bitte dich, mir zu helfen.", "fa": "از تو خواهش می‌کنم به من کمک کنی." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "bitten",
+      "translation": "خواهش کردن",
+      "syllables": ["bit", "ten"],
+      "distractors": ["bat", "tan", "tin"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید (Dativ یا Akkusativ؟)",
+      "sentence": "Der Lehrer verbietet {0}, laut zu sprechen.",
+      "options": ["uns", "wir", "unser", "unsere"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "verbieten + Dativ: uns" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید (Dativ یا Akkusativ؟)",
+      "sentence": "Ich bitte {0}, mir zu helfen.",
+      "options": ["dich", "dir", "du", "dein"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "bitten + Akkusativ: dich" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "توصیه دکتر",
+      "context": "مریض و دکتر",
+      "lines": [
+        { "speaker": "Arzt", "text": { "de": "Ich empfehle Ihnen, mehr Wasser zu trinken.", "fa": "به شما توصیه می‌کنم آب بیشتر بنوشید." } },
+        { "speaker": "Patient", "text": { "de": "Okay, und was soll ich noch machen?", "fa": "باشه، و چه کار دیگری باید بکنم؟" } },
+        { "speaker": "Arzt", "text": { "de": "Ich verbiete Ihnen, Alkohol zu trinken.", "fa": "به شما ممنوع می‌کنم الکل بنوشید." } },
+        { "speaker": "Patient", "text": { "de": "Verstanden. Darf ich Sport machen?", "fa": "فهمیدم. می‌توانم ورزش کنم؟" } },
+        { "speaker": "Arzt", "text": { "de": "Ja, ich erlaube Ihnen, leichten Sport zu machen.", "fa": "بله، به شما اجازه می‌دهم ورزش سبک انجام دهید." } }
+      ],
+      "questions": [
+        {
+          "question": "دکتر چه چیزی را ممنوع می‌کند؟",
+          "options": ["آب نوشیدن", "الکل نوشیدن", "ورزش کردن"],
+          "correctIndex": 1,
+          "explanation": "دکتر گفت: Ich verbiete Ihnen, Alkohol zu trinken"
+        },
+        {
+          "question": "دکتر چه نوع ورزشی را اجازه می‌دهد؟",
+          "options": ["ورزش سنگین", "ورزش سبک", "هیچ ورزشی"],
+          "correctIndex": 1,
+          "explanation": "دکتر گفت: leichten Sport zu machen"
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "فعل آلمانی را با معنی فارسی وصل کنید",
+      "items": [
+        { "id": "i1", "text": "hoffen" },
+        { "id": "i2", "text": "planen" },
+        { "id": "i3", "text": "erlauben" },
+        { "id": "i4", "text": "verbieten" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "امیدوار بودن" },
+        { "id": "m2", "text": "برنامه‌ریزی کردن" },
+        { "id": "m3", "text": "اجازه دادن" },
+        { "id": "m4", "text": "ممنوع کردن" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"],
+        ["i4", "m4"]
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "Dativ یا Akkusativ؟",
+      "instruction": "این فعل با کدام حالت می‌آید؟",
+      "questions": [
+        { "prompt": "erlauben ___", "left": "Dativ (mir)", "right": "Akkusativ (mich)", "correctSide": "left" },
+        { "prompt": "bitten ___", "left": "Dativ (dir)", "right": "Akkusativ (dich)", "correctSide": "right" },
+        { "prompt": "verbieten ___", "left": "Dativ (ihm)", "right": "Akkusativ (ihn)", "correctSide": "left" },
+        { "prompt": "empfehlen ___", "left": "Dativ (ihr)", "right": "Akkusativ (sie)", "correctSide": "left" },
+        { "prompt": "bitten ___", "left": "Dativ (uns)", "right": "Akkusativ (uns)", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["trinken.", "zu", "Alkohol", "mir,", "verbietet", "Der Arzt"],
+      "correctOrder": [5, 4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Der Arzt verbietet mir, Alkohol zu trinken.", "fa": "دکتر به من ممنوع می‌کند الکل بنوشم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo4",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["helfen.", "zu", "mir", "dich,", "bitte", "Ich"],
+      "correctOrder": [5, 4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Ich bitte dich, mir zu helfen.", "fa": "از تو خواهش می‌کنم به من کمک کنی." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sie empfiehlt {0}, mehr Sport zu machen.",
+      "options": ["mir", "mich", "ich", "mein"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "empfehlen + Dativ: mir" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Wir planen, ein neues Auto {0}.",
+      "options": ["kaufen", "zu kaufen", "kaufe", "gekauft"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "planen + zu + Infinitiv" }
+    },
+    {
+      "type": "dialog",
+      "id": "d3",
+      "title": "خواهش",
+      "context": "در دفتر کار",
+      "lines": [
+        { "speaker": "Max", "text": { "de": "Darf ich dich bitten, mir zu helfen?", "fa": "می‌توانم از تو خواهش کنم به من کمک کنی؟" } },
+        { "speaker": "Lisa", "text": { "de": "Natürlich! Was brauchst du?", "fa": "البته! چه نیاز داری؟" } },
+        { "speaker": "Max", "text": { "de": "Ich plane, eine Präsentation zu machen.", "fa": "برنامه دارم یک ارائه آماده کنم." } },
+        { "speaker": "Lisa", "text": { "de": "Ich empfehle dir, Bilder zu benutzen.", "fa": "به تو توصیه می‌کنم از عکس استفاده کنی." } },
+        { "speaker": "Max", "text": { "de": "Gute Idee! Danke!", "fa": "ایده خوبی! ممنون!" } }
+      ],
+      "questions": [
+        {
+          "question": "ماکس چه برنامه‌ای دارد؟",
+          "options": ["نامه بنویسد", "ارائه آماده کند", "گزارش بخواند"],
+          "correctIndex": 1,
+          "explanation": "ماکس گفت: Ich plane, eine Präsentation zu machen"
+        },
+        {
+          "question": "لیزا چه توصیه‌ای می‌کند؟",
+          "options": ["از عکس استفاده کند", "بیشتر بخواند", "زودتر شروع کند"],
+          "correctIndex": 0,
+          "explanation": "لیزا گفت: Ich empfehle dir, Bilder zu benutzen"
+        }
+      ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "فعل bitten با Dativ می‌آید: Ich bitte dir.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! bitten با Akkusativ می‌آید: Ich bitte dich (نه dir)"
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "فعل‌های erlauben، verbieten و empfehlen همه با Dativ می‌آیند.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! erlauben mir، verbieten mir، empfehlen mir - همه Dativ"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "امیدوارم به‌زودی تو را ببینم.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4} {5}.",
+      "options": ["sehen", "zu", "hoffe,", "bald", "Ich", "dich"],
+      "correctAnswers": [4, 2, 5, 3, 1, 0],
+      "correctTranslation": {
+        "de": "Ich hoffe, dich bald zu sehen.",
+        "fa": "امیدوارم به‌زودی تو را ببینم."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "او به من اجازه می‌دهد بروم.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4}.",
+      "options": ["gehen", "zu", "erlaubt", "Er", "mir,"],
+      "correctAnswers": [3, 2, 4, 1, 0],
+      "correctTranslation": {
+        "de": "Er erlaubt mir, zu gehen.",
+        "fa": "او به من اجازه می‌دهد بروم."
+      }
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "hoffen", "fa": "امیدوار بودن", "options": ["برنامه‌ریزی کردن", "امیدوار بودن", "ممنوع کردن", "توصیه کردن"], "correctIndex": 1 },
+        { "de": "verbieten", "fa": "ممنوع کردن", "options": ["اجازه دادن", "خواهش کردن", "ممنوع کردن", "برنامه‌ریزی کردن"], "correctIndex": 2 },
+        { "de": "bitten", "fa": "خواهش کردن", "options": ["خواهش کردن", "امیدوار بودن", "توصیه کردن", "اجازه دادن"], "correctIndex": 0 }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich hoffe, dich zu sehen.",
+      "translation": "امیدوارم تو را ببینم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Er erlaubt mir, zu gehen.",
+      "translation": "او به من اجازه می‌دهد بروم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Ich bitte dich, mir zu helfen.",
+      "translation": "از تو خواهش می‌کنم به من کمک کنی."
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "hoffen", "fa": "امیدوار بودن" },
+        { "de": "planen", "fa": "برنامه‌ریزی کردن" },
+        { "de": "erlauben", "fa": "اجازه دادن" },
+        { "de": "verbieten", "fa": "ممنوع کردن" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp1",
+      "title": "آفرین! 🎉",
+      "message": "فعل‌های بیشتری با zu + Infinitiv یاد گرفتید!",
+      "keyPoints": [
+        "hoffen، planen + zu + Infinitiv",
+        "erlauben، verbieten، empfehlen + Dativ + zu + Infinitiv",
+        "bitten + Akkusativ + zu + Infinitiv",
+        "erlauben mir (نه mich)، bitten dich (نه dir)",
+        "zu + Infinitiv همیشه در آخر جمله"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "hoffen", "fa": "امیدوار بودن" } },
+        { "word": { "de": "planen", "fa": "برنامه‌ریزی کردن" } },
+        { "word": { "de": "erlauben", "fa": "اجازه دادن" } },
+        { "word": { "de": "verbieten", "fa": "ممنوع کردن" } },
+        { "word": { "de": "empfehlen", "fa": "توصیه کردن" } },
+        { "word": { "de": "bitten", "fa": "خواهش کردن" } }
+      ]
+    }
+  ]
+}

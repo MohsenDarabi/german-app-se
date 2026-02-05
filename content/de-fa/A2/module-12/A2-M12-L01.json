@@ -1,0 +1,477 @@
+{
+  "id": "A2-M12-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Infinitiv mit zu", "fa": "مصدر با zu" },
+  "description": "یاد بگیرید چطور از zu + Infinitiv در آلمانی استفاده کنید",
+  "level": "A2",
+  "module": 12,
+  "lessonNumber": 1,
+  "totalSteps": 44,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "versuchen", "fa": "تلاش کردن / سعی کردن", "grammar": { "pos": "verb" } },
+    { "de": "beginnen", "fa": "شروع کردن", "grammar": { "pos": "verb" } },
+    { "de": "anfangen", "fa": "شروع کردن", "grammar": { "pos": "verb", "separable": true } },
+    { "de": "aufhören", "fa": "تمام کردن / دست برداشتن", "grammar": { "pos": "verb", "separable": true } },
+    { "de": "vergessen", "fa": "فراموش کردن", "grammar": { "pos": "verb" } },
+    { "de": "versprechen", "fa": "قول دادن", "grammar": { "pos": "verb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "zu + Infinitiv چیست؟",
+      "content": "📝 **ساختار zu + Infinitiv:**\n\nدر آلمانی بعضی فعل‌ها با **zu + Infinitiv** می‌آیند:\n\n• Ich versuche**, zu lernen**.\n→ سعی می‌کنم یاد بگیرم.\n\n• Er beginnt**, zu arbeiten**.\n→ شروع می‌کند به کار کردن.\n\n💡 **zu + Infinitiv** همیشه در آخر جمله قرار می‌گیرد!",
+      "examples": [
+        { "de": "Ich versuche, Deutsch zu lernen.", "fa": "سعی می‌کنم آلمانی یاد بگیرم." },
+        { "de": "Er beginnt, das Buch zu lesen.", "fa": "شروع می‌کند کتاب را بخواند." },
+        { "de": "Sie hofft, dich zu sehen.", "fa": "امیدوار است تو را ببیند." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "versuchen", "fa": "تلاش کردن / سعی کردن" },
+      "example": { "text": { "de": "Ich versuche, früh aufzustehen.", "fa": "سعی می‌کنم زود بیدار شوم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "versuchen",
+      "translation": "تلاش کردن",
+      "syllables": ["ver", "su", "chen"],
+      "distractors": ["vor", "sa", "chan"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "beginnen", "fa": "شروع کردن" },
+      "example": { "text": { "de": "Wir beginnen, Deutsch zu sprechen.", "fa": "شروع می‌کنیم آلمانی صحبت کنیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "beginnen",
+      "translation": "شروع کردن",
+      "syllables": ["be", "gin", "nen"],
+      "distractors": ["ba", "gan", "non"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "anfangen", "fa": "شروع کردن" },
+      "example": { "text": { "de": "Er fängt an, zu kochen.", "fa": "شروع می‌کند به آشپزی کردن." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "anfangen",
+      "translation": "شروع کردن",
+      "syllables": ["an", "fan", "gen"],
+      "distractors": ["un", "fen", "gon"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "کاما قبل از zu",
+      "content": "📝 **قانون کاما:**\n\nمعمولاً قبل از **zu + Infinitiv** کاما می‌گذاریم:\n\n• Ich versuche**,** zu lernen. ✓\n• Er hofft**,** zu kommen. ✓\n\n💡 کاما به خوانایی جمله کمک می‌کند.\n\n⚠️ اما اگر جمله کوتاه باشد، کاما اختیاری است:\n• Ich versuche zu lernen. (هم درست است)",
+      "examples": [
+        { "de": "Ich versuche, mehr Sport zu machen.", "fa": "سعی می‌کنم بیشتر ورزش کنم." },
+        { "de": "Er beginnt, das Auto zu reparieren.", "fa": "شروع می‌کند ماشین را تعمیر کند." },
+        { "de": "Ich hoffe zu kommen.", "fa": "امیدوارم بیایم." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله درست است؟",
+      "options": ["Ich versuche zu Deutsch lernen.", "Ich versuche, Deutsch zu lernen.", "Ich versuche, zu Deutsch lernen.", "Ich versuche, Deutsch lernen zu."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! zu قبل از Infinitiv می‌آید", "incorrect": "zu + Infinitiv: zu قبل از فعل مصدر می‌آید" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "«سعی می‌کنم بخوابم» به آلمانی چیست؟",
+      "options": ["Ich versuche zu schlafen.", "Ich versuche schlafen zu.", "Ich zu schlafen versuche.", "Ich schlafen versuche zu."],
+      "correctAnswerIndex": 0,
+      "feedback": { "correct": "آفرین! zu + schlafen = zu schlafen", "incorrect": "ساختار: versuchen + zu + Infinitiv" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er beginnt, das Buch {0} lesen.",
+      "options": ["zu", "für", "mit", "von"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "beginnen + zu + Infinitiv" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich versuche, früh {0}.",
+      "options": ["aufstehen", "aufzustehen", "zu aufstehen", "stehe auf"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "فعل جداشدنی: zu در وسط می‌آید → aufzustehen" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "یادگیری زبان",
+      "context": "آنا و ماکس درباره یادگیری صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Was machst du gerade?", "fa": "الان چه کار می‌کنی؟" } },
+        { "speaker": "Max", "text": { "de": "Ich versuche, Spanisch zu lernen.", "fa": "سعی می‌کنم اسپانیایی یاد بگیرم." } },
+        { "speaker": "Anna", "text": { "de": "Toll! Wann hast du angefangen?", "fa": "عالی! کی شروع کردی؟" } },
+        { "speaker": "Max", "text": { "de": "Ich habe letzte Woche begonnen, jeden Tag zu üben.", "fa": "هفته پیش شروع کردم هر روز تمرین کنم." } },
+        { "speaker": "Anna", "text": { "de": "Vergiss nicht, auch zu sprechen!", "fa": "فراموش نکن حرف هم بزنی!" } }
+      ],
+      "questions": [
+        {
+          "question": "ماکس چه زبانی یاد می‌گیرد؟",
+          "options": ["آلمانی", "اسپانیایی", "فرانسوی"],
+          "correctIndex": 1,
+          "explanation": "ماکس گفت: Ich versuche, Spanisch zu lernen"
+        },
+        {
+          "question": "ماکس کی شروع کرد؟",
+          "options": ["امروز", "هفته پیش", "ماه پیش"],
+          "correctIndex": 1,
+          "explanation": "ماکس گفت: Ich habe letzte Woche begonnen"
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "aufhören", "fa": "تمام کردن / دست برداشتن" },
+      "example": { "text": { "de": "Er hört auf, zu rauchen.", "fa": "دست از سیگار کشیدن برمی‌دارد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "aufhören",
+      "translation": "دست برداشتن",
+      "syllables": ["auf", "hö", "ren"],
+      "distractors": ["aus", "ha", "ran"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "فعل‌های جداشدنی با zu",
+      "content": "📝 **فعل‌های جداشدنی + zu:**\n\nبا فعل‌های جداشدنی، **zu** بین پیشوند و فعل می‌آید:\n\n| فعل | با zu |\n|-----|-------|\n| aufstehen | auf**zu**stehen |\n| anfangen | an**zu**fangen |\n| aufhören | auf**zu**hören |\n| einschlafen | ein**zu**schlafen |\n\n💡 **zu** یک کلمه می‌شود با فعل!",
+      "examples": [
+        { "de": "Ich versuche, früh aufzustehen.", "fa": "سعی می‌کنم زود بیدار شوم." },
+        { "de": "Er beginnt, anzufangen.", "fa": "شروع می‌کند شروع کند." },
+        { "de": "Sie hofft, einzuschlafen.", "fa": "امیدوار است بخوابد." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["lernen.", "zu", "Deutsch", "versuche,", "Ich"],
+      "correctOrder": [4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Ich versuche, Deutsch zu lernen.", "fa": "سعی می‌کنم آلمانی یاد بگیرم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["aufzustehen.", "früh", "beginnt,", "Er"],
+      "correctOrder": [3, 2, 1, 0],
+      "correctSentence": { "de": "Er beginnt, früh aufzustehen.", "fa": "شروع می‌کند زود بیدار شود." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "کدام شکل درست «aufstehen» با zu است؟",
+      "options": ["zu aufstehen", "aufstehen zu", "aufzustehen", "auf zu stehen"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! zu بین پیشوند و فعل می‌آید", "incorrect": "فعل جداشدنی + zu: پیشوند + zu + فعل = aufzustehen" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "«شروع می‌کنم به کار کردن» به آلمانی چیست؟",
+      "options": ["Ich fange an zu arbeiten.", "Ich fange zu arbeiten an.", "Ich zu arbeiten anfange.", "Ich arbeiten anfange zu."],
+      "correctAnswerIndex": 0,
+      "feedback": { "correct": "آفرین! anfangen (جداشدنی) + zu arbeiten", "incorrect": "anfangen جداشدنی است: Ich fange an + zu + Infinitiv" }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "vergessen", "fa": "فراموش کردن" },
+      "example": { "text": { "de": "Vergiss nicht, mich anzurufen!", "fa": "فراموش نکن به من زنگ بزنی!" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "vergessen",
+      "translation": "فراموش کردن",
+      "syllables": ["ver", "ges", "sen"],
+      "distractors": ["vor", "gas", "san"]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "versprechen", "fa": "قول دادن" },
+      "example": { "text": { "de": "Ich verspreche, pünktlich zu sein.", "fa": "قول می‌دهم سر وقت باشم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "versprechen",
+      "translation": "قول دادن",
+      "syllables": ["ver", "spre", "chen"],
+      "distractors": ["vor", "spra", "chan"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Vergiss nicht, das Fenster {0}!",
+      "options": ["zu schließen", "schließen zu", "zuzuschließen", "schließen"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "schließen جداشدنی نیست: zu schließen" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sie verspricht, mir {0}.",
+      "options": ["helfen", "zu helfen", "hilft", "geholfen"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "versprechen + zu + Infinitiv" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "قول‌ها",
+      "context": "تام و لیزا درباره عادت‌ها صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Tom", "text": { "de": "Ich habe aufgehört, zu rauchen.", "fa": "دست از سیگار کشیدن برداشتم." } },
+        { "speaker": "Lisa", "text": { "de": "Wirklich? Das ist toll!", "fa": "واقعاً؟ عالیه!" } },
+        { "speaker": "Tom", "text": { "de": "Ja, ich versuche auch, mehr Sport zu machen.", "fa": "بله، سعی می‌کنم بیشتر هم ورزش کنم." } },
+        { "speaker": "Lisa", "text": { "de": "Vergiss nicht, genug zu schlafen!", "fa": "فراموش نکن به اندازه کافی بخوابی!" } },
+        { "speaker": "Tom", "text": { "de": "Ich verspreche, es zu versuchen.", "fa": "قول می‌دهم سعی کنم." } }
+      ],
+      "questions": [
+        {
+          "question": "تام چه کاری را ترک کرده؟",
+          "options": ["ورزش", "سیگار کشیدن", "خوابیدن"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: Ich habe aufgehört, zu rauchen"
+        },
+        {
+          "question": "تام چه قولی می‌دهد؟",
+          "options": ["بیشتر بخوابد", "سعی کند", "ورزش نکند"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: Ich verspreche, es zu versuchen"
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "فعل آلمانی را با معنی فارسی وصل کنید",
+      "items": [
+        { "id": "i1", "text": "versuchen" },
+        { "id": "i2", "text": "beginnen" },
+        { "id": "i3", "text": "aufhören" },
+        { "id": "i4", "text": "vergessen" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "سعی کردن" },
+        { "id": "m2", "text": "شروع کردن" },
+        { "id": "m3", "text": "دست برداشتن" },
+        { "id": "m4", "text": "فراموش کردن" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"],
+        ["i4", "m4"]
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "جداشدنی یا نه؟",
+      "instruction": "آیا این فعل جداشدنی است؟",
+      "questions": [
+        { "prompt": "aufstehen", "left": "جداشدنی", "right": "غیر جداشدنی", "correctSide": "left" },
+        { "prompt": "lernen", "left": "جداشدنی", "right": "غیر جداشدنی", "correctSide": "right" },
+        { "prompt": "anfangen", "left": "جداشدنی", "right": "غیر جداشدنی", "correctSide": "left" },
+        { "prompt": "vergessen", "left": "جداشدنی", "right": "غیر جداشدنی", "correctSide": "right" },
+        { "prompt": "einschlafen", "left": "جداشدنی", "right": "غیر جداشدنی", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["anzurufen.", "nicht,", "mich", "Vergiss"],
+      "correctOrder": [3, 1, 2, 0],
+      "correctSentence": { "de": "Vergiss nicht, mich anzurufen.", "fa": "فراموش نکن به من زنگ بزنی." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo4",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["sein.", "pünktlich", "zu", "verspreche,", "Ich"],
+      "correctOrder": [4, 3, 1, 2, 0],
+      "correctSentence": { "de": "Ich verspreche, pünktlich zu sein.", "fa": "قول می‌دهم سر وقت باشم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er hört auf, {0}.",
+      "options": ["zu rauchen", "rauchen zu", "raucht", "geraucht"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "aufhören + zu + Infinitiv" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich fange an, Klavier {0}.",
+      "options": ["spielen", "zu spielen", "spiele", "gespielt"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "anfangen + zu + Infinitiv" }
+    },
+    {
+      "type": "dialog",
+      "id": "d3",
+      "title": "برنامه‌ها",
+      "context": "الی و ماکس درباره برنامه‌هایشان صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Eli", "text": { "de": "Ich beginne morgen, Yoga zu machen.", "fa": "فردا شروع می‌کنم یوگا انجام دهم." } },
+        { "speaker": "Max", "text": { "de": "Super! Ich versuche auch, fit zu bleiben.", "fa": "عالی! من هم سعی می‌کنم سالم بمانم." } },
+        { "speaker": "Eli", "text": { "de": "Vergiss nicht, viel Wasser zu trinken!", "fa": "فراموش نکن آب زیاد بخوری!" } },
+        { "speaker": "Max", "text": { "de": "Ja, ich verspreche, darauf zu achten.", "fa": "بله، قول می‌دهم حواسم باشد." } }
+      ],
+      "questions": [
+        {
+          "question": "الی فردا چه کاری شروع می‌کند؟",
+          "options": ["شنا", "یوگا", "دویدن"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: Ich beginne morgen, Yoga zu machen"
+        },
+        {
+          "question": "ماکس چه قولی می‌دهد؟",
+          "options": ["بیشتر بخوابد", "حواسش باشد", "ورزش کند"],
+          "correctIndex": 1,
+          "explanation": "ماکس گفت: Ich verspreche, darauf zu achten"
+        }
+      ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جمله Ich versuche, Deutsch zu lernen، کلمه zu قبل از فعل مصدر (lernen) قرار می‌گیرد.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! zu + Infinitiv: zu lernen"
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای فعل جداشدنی aufstehen، شکل با zu می‌شود: zu aufstehen.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! فعل جداشدنی: zu بین پیشوند و فعل → aufzustehen"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "سعی می‌کنم آلمانی یاد بگیرم.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4}.",
+      "options": ["lernen", "zu", "versuche,", "Ich", "Deutsch"],
+      "correctAnswers": [3, 2, 4, 1, 0],
+      "correctTranslation": {
+        "de": "Ich versuche, Deutsch zu lernen.",
+        "fa": "سعی می‌کنم آلمانی یاد بگیرم."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "فراموش نکن به من زنگ بزنی!",
+      "sentenceTemplate": "{0} {1} {2} {3}",
+      "options": ["anzurufen!", "nicht,", "mich", "Vergiss"],
+      "correctAnswers": [3, 1, 2, 0],
+      "correctTranslation": {
+        "de": "Vergiss nicht, mich anzurufen!",
+        "fa": "فراموش نکن به من زنگ بزنی!"
+      }
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "versuchen", "fa": "سعی کردن", "options": ["شروع کردن", "سعی کردن", "قول دادن", "تمام کردن"], "correctIndex": 1 },
+        { "de": "aufhören", "fa": "دست برداشتن", "options": ["شروع کردن", "فراموش کردن", "دست برداشتن", "قول دادن"], "correctIndex": 2 },
+        { "de": "versprechen", "fa": "قول دادن", "options": ["سعی کردن", "قول دادن", "فراموش کردن", "شروع کردن"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich versuche, Deutsch zu lernen.",
+      "translation": "سعی می‌کنم آلمانی یاد بگیرم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Er beginnt, das Buch zu lesen.",
+      "translation": "شروع می‌کند کتاب را بخواند."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Vergiss nicht, mich anzurufen!",
+      "translation": "فراموش نکن به من زنگ بزنی!"
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "versuchen", "fa": "سعی کردن" },
+        { "de": "beginnen", "fa": "شروع کردن" },
+        { "de": "aufhören", "fa": "دست برداشتن" },
+        { "de": "vergessen", "fa": "فراموش کردن" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp1",
+      "title": "آفرین! 🎉",
+      "message": "ساختار zu + Infinitiv را یاد گرفتید!",
+      "keyPoints": [
+        "ساختار: فعل اصلی + zu + Infinitiv",
+        "zu + Infinitiv در آخر جمله قرار می‌گیرد",
+        "فعل جداشدنی: zu بین پیشوند و فعل → aufzustehen",
+        "فعل‌های مهم: versuchen، beginnen، anfangen، aufhören، vergessen، versprechen",
+        "معمولاً قبل از zu کاما می‌گذاریم"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "versuchen", "fa": "سعی کردن" } },
+        { "word": { "de": "beginnen", "fa": "شروع کردن" } },
+        { "word": { "de": "anfangen", "fa": "شروع کردن" } },
+        { "word": { "de": "aufhören", "fa": "دست برداشتن" } },
+        { "word": { "de": "vergessen", "fa": "فراموش کردن" } },
+        { "word": { "de": "versprechen", "fa": "قول دادن" } }
+      ]
+    }
+  ]
+}
