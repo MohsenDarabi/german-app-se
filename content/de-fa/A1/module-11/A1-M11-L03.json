@@ -8,7 +8,7 @@
   "level": "A1",
   "module": 11,
   "lessonNumber": 3,
-  "totalSteps": 39,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "das rote Kleid", "fa": "لباس قرمز", "grammar": { "pos": "phrase" } },
@@ -245,10 +245,9 @@
         { "speaker": "Verkäuferin", "text": { "de": "Ja, hier ist ein dunkelblaues Kleid.", "fa": "بله، اینجا یک لباس آبی تیره است." } },
         { "speaker": "Eli", "text": { "de": "Oh, das gefällt mir! Kann ich es anprobieren?", "fa": "اوه، دوستش دارم! می‌توانم امتحانش کنم؟" } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "الی چه رنگی دوست دارد؟", "options": ["روشن", "تیره", "سفید"], "correctIndex": 1 },
-        { "question": "لباس چه رنگی است؟", "options": ["آبی روشن", "آبی تیره", "سبز تیره"], "correctIndex": 1 }
+        { "question": "الی چه رنگی دوست دارد؟", "options": ["روشن", "تیره", "سفید"], "correctIndex": 1, "explanation": "الی گفت: Ich mag dunkle Farben" },
+        { "question": "لباس چه رنگی است؟", "options": ["آبی روشن", "آبی تیره", "سبز تیره"], "correctIndex": 1, "explanation": "فروشنده گفت: ein dunkelblaues Kleid" }
       ]
     },
     {
@@ -262,10 +261,9 @@
         { "speaker": "Tom", "text": { "de": "Und was denkst du über den schwarzen Mantel?", "fa": "و درباره پالتوی سیاه چه فکر می‌کنی؟" } },
         { "speaker": "Eli", "text": { "de": "Der ist zu dunkel. Ich mag hellere Farben.", "fa": "خیلی تیره است. رنگ‌های روشن‌تر را دوست دارم." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "الی کدام لباس را بیشتر دوست دارد؟", "options": ["لباس قرمز", "شلوار آبی", "پالتوی سیاه"], "correctIndex": 1 },
-        { "question": "چرا الی پالتو را دوست ندارد؟", "options": ["خیلی گران است", "خیلی تیره است", "خیلی بزرگ است"], "correctIndex": 1 }
+        { "question": "الی کدام لباس را بیشتر دوست دارد؟", "options": ["لباس قرمز", "شلوار آبی", "پالتوی سیاه"], "correctIndex": 1, "explanation": "الی گفت: die blaue Hose gefällt mir besser" },
+        { "question": "چرا الی پالتو را دوست ندارد؟", "options": ["خیلی گران است", "خیلی تیره است", "خیلی بزرگ است"], "correctIndex": 1, "explanation": "الی گفت: Der ist zu dunkel" }
       ]
     },
     {
@@ -379,6 +377,31 @@
         { "de": "dunkelgrün", "fa": "سبز تیره" },
         { "de": "gefallen", "fa": "خوش آمدن" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "بعد از der/die/das صفت همیشه پسوند -e می‌گیرد.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! das rote Kleid, die blaue Hose, der schwarze Mantel" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "hellblau به معنی «آبی تیره» است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! hellblau = آبی روشن، dunkelblau = آبی تیره" }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "لباس قرمز را دوست دارم.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4}.",
+      "options": ["Das", "rote", "Kleid", "gefällt", "mir"],
+      "correctAnswers": [0, 1, 2, 3, 4],
+      "correctTranslation": { "de": "Das rote Kleid gefällt mir.", "fa": "لباس قرمز را دوست دارم." }
     },
     {
       "type": "completion",

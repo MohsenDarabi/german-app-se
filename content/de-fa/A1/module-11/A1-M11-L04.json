@@ -8,7 +8,7 @@
   "level": "A1",
   "module": 11,
   "lessonNumber": 4,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "die Größe", "fa": "سایز", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Größen" } } },
@@ -208,10 +208,9 @@
         { "speaker": "Eli", "text": { "de": "Kann ich sie anprobieren?", "fa": "می‌توانم امتحانش کنم؟" } },
         { "speaker": "Verkäuferin", "text": { "de": "Natürlich! Die Umkleidekabine ist dort hinten.", "fa": "البته! اتاق پرو آنجا پشت است." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "الی چه سایزی می‌خواهد؟", "options": ["S", "M", "L"], "correctIndex": 1 },
-        { "question": "الی چه رنگی می‌خواهد؟", "options": ["قرمز", "آبی تیره یا سیاه", "سبز"], "correctIndex": 1 }
+        { "question": "الی چه سایزی می‌خواهد؟", "options": ["S", "M", "L"], "correctIndex": 1, "explanation": "الی گفت: «ich suche eine Jacke in Größe M»" },
+        { "question": "الی چه رنگی می‌خواهد؟", "options": ["قرمز", "آبی تیره یا سیاه", "سبز"], "correctIndex": 1, "explanation": "الی گفت: «Dunkelblau oder Schwarz»" }
       ]
     },
     {
@@ -226,10 +225,9 @@
         { "speaker": "Verkäuferin", "text": { "de": "Ja, diese hier kostet nur 59 Euro.", "fa": "بله، این فقط ۵۹ یورو است." } },
         { "speaker": "Eli", "text": { "de": "Perfekt! Die nehme ich.", "fa": "عالی! این را می‌برم." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "ژاکت اول چقدر است؟", "options": ["۵۹ یورو", "۸۹ یورو", "۹۹ یورو"], "correctIndex": 1 },
-        { "question": "الی کدام ژاکت را می‌خرد؟", "options": ["گران‌تر", "ارزان‌تر", "هیچکدام"], "correctIndex": 1 }
+        { "question": "ژاکت اول چقدر است؟", "options": ["۵۹ یورو", "۸۹ یورو", "۹۹ یورو"], "correctIndex": 1, "explanation": "فروشنده گفت: «Sie kostet 89 Euro»" },
+        { "question": "الی کدام ژاکت را می‌خرد؟", "options": ["گران‌تر", "ارزان‌تر", "هیچکدام"], "correctIndex": 1, "explanation": "الی ژاکت ارزان‌تر (۵۹ یورو) را انتخاب کرد: «diese hier kostet nur 59 Euro»" }
       ]
     },
     {
@@ -385,6 +383,31 @@
         { "de": "zu groß", "fa": "خیلی بزرگ" },
         { "de": "zu klein", "fa": "خیلی کوچک" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "«anprobieren» یعنی لباس خریدن.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "anprobieren یعنی امتحان کردن لباس، نه خریدن. kaufen یعنی خریدن." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای پرسیدن قیمت می‌گوییم: «Was kostet das?»",
+      "correctAnswer": true,
+      "feedback": { "explanation": "Was kostet das? = این چقدر است؟ سوال استاندارد برای پرسیدن قیمت است." }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "می‌توانم این کت را امتحان کنم؟",
+      "sentenceTemplate": "{0} {1} {2} {3} {4}",
+      "options": ["Kann", "ich", "die Jacke", "anprobieren?", "kaufen?"],
+      "correctAnswers": [0, 1, 2, 3],
+      "correctTranslation": { "de": "Kann ich die Jacke anprobieren?", "fa": "می‌توانم این کت را امتحان کنم؟" }
     },
     {
       "type": "completion",

@@ -8,7 +8,7 @@
   "level": "A1",
   "module": 11,
   "lessonNumber": 1,
-  "totalSteps": 39,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "die Kleidung", "fa": "لباس", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Kleidungen" } } },
@@ -222,10 +222,9 @@
         { "speaker": "Tom", "text": { "de": "Welche Schuhe trägst du?", "fa": "چه کفشی می‌پوشی؟" } },
         { "speaker": "Eli", "text": { "de": "Meine schwarzen Schuhe. Sie sind sehr bequem.", "fa": "کفش‌های سیاهم. خیلی راحت هستند." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "تام چه می‌پوشد؟", "options": ["پیراهن و شلوار", "تی‌شرت و جین", "کت و شلوار"], "correctIndex": 0 },
-        { "question": "کفش‌های الی چه رنگی است؟", "options": ["قهوه‌ای", "سیاه", "سفید"], "correctIndex": 1 }
+        { "question": "تام چه می‌پوشد؟", "options": ["پیراهن و شلوار", "تی‌شرت و جین", "کت و شلوار"], "correctIndex": 0, "explanation": "تام گفت: Ich trage ein Hemd und eine Hose" },
+        { "question": "کفش‌های الی چه رنگی است؟", "options": ["قهوه‌ای", "سیاه", "سفید"], "correctIndex": 1, "explanation": "الی گفت: Meine schwarzen Schuhe" }
       ]
     },
     {
@@ -366,6 +365,31 @@
         { "de": "die Schuhe", "fa": "کفش‌ها" },
         { "de": "tragen", "fa": "پوشیدن" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "فعل tragen در سوم شخص به trägt تغییر می‌کند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! tragen → er/sie trägt (a → ä)" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "das Hemd و das Kleid هر دو پیراهن زنانه هستند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! das Hemd = پیراهن مردانه، das Kleid = پیراهن زنانه" }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "من پیراهن می‌پوشم.",
+      "sentenceTemplate": "{0} {1} {2} {3}.",
+      "options": ["Ich", "trage", "ein", "Hemd"],
+      "correctAnswers": [0, 1, 2, 3],
+      "correctTranslation": { "de": "Ich trage ein Hemd.", "fa": "من پیراهن می‌پوشم." }
     },
     {
       "type": "completion",

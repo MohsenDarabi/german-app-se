@@ -8,7 +8,7 @@
   "level": "A1",
   "module": 11,
   "lessonNumber": 2,
-  "totalSteps": 42,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "die Farbe", "fa": "رنگ", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Farben" } } },
@@ -231,10 +231,9 @@
         { "speaker": "Verkäufer", "text": { "de": "Ja, wir haben Blau, Rot und Grün.", "fa": "بله، آبی، قرمز و سبز داریم." } },
         { "speaker": "Eli", "text": { "de": "Ich nehme das blaue Kleid.", "fa": "لباس آبی را می‌برم." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "الی دنبال چه چیزی می‌گردد؟", "options": ["پیراهن", "لباس", "کفش"], "correctIndex": 1 },
-        { "question": "الی چه رنگی انتخاب می‌کند؟", "options": ["قرمز", "سبز", "آبی"], "correctIndex": 2 }
+        { "question": "الی دنبال چه چیزی می‌گردد؟", "options": ["پیراهن", "لباس", "کفش"], "correctIndex": 1, "explanation": "الی گفت: ich suche ein Kleid" },
+        { "question": "الی چه رنگی انتخاب می‌کند؟", "options": ["قرمز", "سبز", "آبی"], "correctIndex": 2, "explanation": "الی گفت: Ich nehme das blaue Kleid" }
       ]
     },
     {
@@ -364,6 +363,31 @@
         { "de": "orange", "fa": "نارنجی" },
         { "de": "lila", "fa": "بنفش" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای پرسیدن رنگ از Welche Farbe استفاده می‌کنیم.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! Welche Farbe hat das? = این چه رنگی دارد؟" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "schwarz به معنی «سفید» است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! schwarz = سیاه، weiß = سفید" }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "پیراهن آبی است.",
+      "sentenceTemplate": "{0} {1} {2} {3}.",
+      "options": ["Das", "Hemd", "ist", "blau"],
+      "correctAnswers": [0, 1, 2, 3],
+      "correctTranslation": { "de": "Das Hemd ist blau.", "fa": "پیراهن آبی است." }
     },
     {
       "type": "completion",
