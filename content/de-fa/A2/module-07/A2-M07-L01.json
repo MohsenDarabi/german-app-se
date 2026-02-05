@@ -8,7 +8,7 @@
   "level": "A2",
   "module": 7,
   "lessonNumber": 1,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "der (Relativpronomen)", "fa": "که (مذکر)", "grammar": { "pos": "pronoun", "case": "nominativ" } },
@@ -117,6 +117,20 @@
         { "speaker": "Ben", "text": { "de": "Ja, das ist Tom. Er ist Arzt.", "fa": "بله، اون تام است. او دکتر است." } },
         { "speaker": "Anna", "text": { "de": "Und die Frau, die neben ihm steht?", "fa": "و زنی که کنارش ایستاده؟" } },
         { "speaker": "Ben", "text": { "de": "Das ist seine Frau. Sie arbeitet als Lehrerin.", "fa": "اون همسرشه. او معلم است." } }
+      ],
+      "questions": [
+        {
+          "question": "تام چه شغلی دارد؟",
+          "options": ["معلم", "دکتر", "مهندس"],
+          "correctIndex": 1,
+          "explanation": "بن گفت: Er ist Arzt"
+        },
+        {
+          "question": "همسر تام چه کار می‌کند؟",
+          "options": ["دکتر است", "معلم است", "پرستار است"],
+          "correctIndex": 1,
+          "explanation": "بن گفت: Sie arbeitet als Lehrerin"
+        }
       ]
     },
     {
@@ -201,6 +215,20 @@
         { "speaker": "Tom", "text": { "de": "Und die Familie, die unten wohnt?", "fa": "و خانواده‌ای که پایین زندگی می‌کنند؟" } },
         { "speaker": "Sara", "text": { "de": "Die Kinder, die dort spielen, sind laut.", "fa": "بچه‌هایی که آنجا بازی می‌کنند، سر و صدا دارند." } },
         { "speaker": "Tom", "text": { "de": "Das Haus, das neben uns steht, ist leer.", "fa": "خانه‌ای که کنار ما قرار دارد، خالی است." } }
+      ],
+      "questions": [
+        {
+          "question": "همسایه بالا چطور است؟",
+          "options": ["خیلی مهربان", "خیلی بد", "خیلی ساکت"],
+          "correctIndex": 0,
+          "explanation": "سارا گفت: Der Mann, der oben wohnt, ist sehr nett"
+        },
+        {
+          "question": "بچه‌های طبقه پایین چطور هستند؟",
+          "options": ["ساکت", "پر سر و صدا", "خجالتی"],
+          "correctIndex": 1,
+          "explanation": "سارا گفت: Die Kinder, die dort spielen, sind laut"
+        }
       ]
     },
     {
@@ -316,6 +344,20 @@
         { "speaker": "Lehrer", "text": { "de": "Der Schüler, der dort sitzt, ist neu.", "fa": "دانش‌آموزی که آنجا نشسته، جدید است." } },
         { "speaker": "Lehrer", "text": { "de": "Die Schülerin, die neben ihm sitzt, hilft ihm.", "fa": "دانش‌آموزی که کنارش نشسته، کمکش می‌کند." } },
         { "speaker": "Lehrer", "text": { "de": "Das ist schön!", "fa": "این خوب است!" } }
+      ],
+      "questions": [
+        {
+          "question": "دانش‌آموز جدید کجا نشسته؟",
+          "options": ["جلو", "آنجا", "عقب"],
+          "correctIndex": 1,
+          "explanation": "معلم گفت: Der Schüler, der dort sitzt, ist neu"
+        },
+        {
+          "question": "دانش‌آموز دختر چه کاری انجام می‌دهد؟",
+          "options": ["به دانش‌آموز جدید کمک می‌کند", "می‌خوابد", "کتاب می‌خواند"],
+          "correctIndex": 0,
+          "explanation": "معلم گفت: Die Schülerin, die neben ihm sitzt, hilft ihm"
+        }
       ]
     },
     {
@@ -353,6 +395,38 @@
         { "de": "das Kind, das...", "fa": "بچه‌ای که..." },
         { "de": "die Leute, die...", "fa": "مردمی که..." }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "ضمیر موصولی برای اسم مذکر در Nominativ برابر der است.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! مثال: Der Mann, der dort steht..."
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جمله موصولی، فعل در جایگاه دوم می‌آید.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! فعل به آخر جمله موصولی می‌رود: der Mann, der dort steht"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "مردی که آنجا ایستاده، مهربان است.",
+      "sentenceTemplate": "{0} {1}, {2} {3} {4}, {5} {6}.",
+      "options": ["dort", "Der", "ist", "steht", "der", "nett", "Mann"],
+      "correctAnswers": [1, 6, 4, 0, 3, 2, 5],
+      "correctTranslation": {
+        "de": "Der Mann, der dort steht, ist nett.",
+        "fa": "مردی که آنجا ایستاده، مهربان است."
+      }
     },
     {
       "type": "completion",

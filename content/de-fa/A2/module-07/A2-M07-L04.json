@@ -8,7 +8,7 @@
   "level": "A2",
   "module": 7,
   "lessonNumber": 4,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "der/die/das (Nominativ)", "fa": "که (فاعل)", "grammar": { "pos": "pronoun", "case": "nominativ" } },
@@ -104,6 +104,20 @@
         { "speaker": "Ben", "text": { "de": "Und die Frau, die neben ihm steht?", "fa": "و زنی که کنارش ایستاده؟" } },
         { "speaker": "Anna", "text": { "de": "Das ist seine Schwester, der ich gestern geholfen habe.", "fa": "این خواهرش است که دیروز کمکش کردم." } },
         { "speaker": "Ben", "text": { "de": "Ah, die Schwester, die du mir beschrieben hast!", "fa": "آه، خواهری که برایم توصیف کردی!" } }
+      ],
+      "questions": [
+        {
+          "question": "دوست آنا کجا زندگی می‌کند؟",
+          "options": ["مونیخ", "برلین", "هامبورگ"],
+          "correctIndex": 1,
+          "explanation": "آنا گفت: der Freund, der in Berlin wohnt"
+        },
+        {
+          "question": "آنا به چه کسی کمک کرده؟",
+          "options": ["دوستش", "خواهر دوستش", "برادر دوستش"],
+          "correctIndex": 1,
+          "explanation": "آنا گفت: seine Schwester, der ich gestern geholfen habe"
+        }
       ]
     },
     {
@@ -187,6 +201,20 @@
         { "speaker": "Tom", "text": { "de": "Ja! Das ist der Professor, den ich letztes Semester hatte.", "fa": "بله! این استادی است که ترم گذشته داشتم." } },
         { "speaker": "Lisa", "text": { "de": "Und die Studentin, der er das Buch gibt?", "fa": "و دانشجویی که کتاب را بهش می‌دهد؟" } },
         { "speaker": "Tom", "text": { "de": "Das ist Maria, die beste Studentin, die ich kenne!", "fa": "این ماریاست، بهترین دانشجویی که می‌شناسم!" } }
+      ],
+      "questions": [
+        {
+          "question": "تام استاد را از کجا می‌شناسد؟",
+          "options": ["از ترم گذشته", "از تلویزیون", "از کتابخانه"],
+          "correctIndex": 0,
+          "explanation": "تام گفت: der Professor, den ich letztes Semester hatte"
+        },
+        {
+          "question": "ماریا کیست؟",
+          "options": ["یک استاد", "بهترین دانشجو", "دوست تام"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: Maria, die beste Studentin, die ich kenne"
+        }
       ]
     },
     {
@@ -292,6 +320,20 @@
         { "speaker": "Peter", "text": { "de": "Das Haus, das sie gekauft haben, ist schön.", "fa": "خانه‌ای که خریدند، زیباست." } },
         { "speaker": "Maria", "text": { "de": "Der Mann, dem ich geholfen habe, ist Arzt.", "fa": "مردی که کمکش کردم، دکتر است." } },
         { "speaker": "Peter", "text": { "de": "Die Frau, die ich gestern getroffen habe, ist Lehrerin.", "fa": "زنی که دیروز ملاقات کردم، معلم است." } }
+      ],
+      "questions": [
+        {
+          "question": "همسایه‌ها چطور هستند؟",
+          "options": ["بداخلاق", "مهربان", "ساکت"],
+          "correctIndex": 1,
+          "explanation": "ماریا گفت: Die Nachbarn... sind nett"
+        },
+        {
+          "question": "مردی که ماریا کمکش کرده چه شغلی دارد؟",
+          "options": ["معلم", "دکتر", "مهندس"],
+          "correctIndex": 1,
+          "explanation": "ماریا گفت: Der Mann, dem ich geholfen habe, ist Arzt"
+        }
       ]
     },
     {
@@ -352,6 +394,38 @@
         { "de": "Dativ مذکر", "fa": "dem" },
         { "de": "Dativ جمع", "fa": "denen" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "ضمیر موصولی جمع در Dativ برابر denen است.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! مثال: Die Leute, denen ich helfe..."
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "در Akkusativ، همه ضمایر موصولی تغییر می‌کنند.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! فقط مذکر تغییر می‌کند: der → den"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "کتابی که می‌خوانم، جالب است.",
+      "sentenceTemplate": "{0} {1}, {2} {3} {4}, {5} {6}.",
+      "options": ["ich", "Das", "ist", "lese", "das", "interessant", "Buch"],
+      "correctAnswers": [1, 6, 4, 0, 3, 2, 5],
+      "correctTranslation": {
+        "de": "Das Buch, das ich lese, ist interessant.",
+        "fa": "کتابی که می‌خوانم، جالب است."
+      }
     },
     {
       "type": "completion",

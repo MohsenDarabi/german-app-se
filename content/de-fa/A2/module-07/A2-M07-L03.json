@@ -8,7 +8,7 @@
   "level": "A2",
   "module": 7,
   "lessonNumber": 3,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "dem (Relativpronomen)", "fa": "که (مذکر/خنثی متممی)", "grammar": { "pos": "pronoun", "case": "dativ" } },
@@ -117,6 +117,20 @@
         { "speaker": "Ben", "text": { "de": "Ja, das ist Tom. Er ist neu hier.", "fa": "بله، اون تام است. او اینجا جدید است." } },
         { "speaker": "Anna", "text": { "de": "Die Kollegin, der er das Projekt erklärt hat, ist seine Chefin.", "fa": "همکاری که پروژه را برایش توضیح داده، رئیسش است." } },
         { "speaker": "Ben", "text": { "de": "Ah, interessant!", "fa": "آه، جالب است!" } }
+      ],
+      "questions": [
+        {
+          "question": "تام کیست؟",
+          "options": ["همکار جدید", "رئیس آنا", "دوست قدیمی"],
+          "correctIndex": 0,
+          "explanation": "بن گفت: das ist Tom. Er ist neu hier"
+        },
+        {
+          "question": "رئیس تام کیست؟",
+          "options": ["آنا", "بن", "همکاری که پروژه را برایش توضیح داده"],
+          "correctIndex": 2,
+          "explanation": "آنا گفت: Die Kollegin, der er das Projekt erklärt hat, ist seine Chefin"
+        }
       ]
     },
     {
@@ -201,6 +215,20 @@
         { "speaker": "Tom", "text": { "de": "Was war es?", "fa": "چی بود؟" } },
         { "speaker": "Lisa", "text": { "de": "Ein Buch, das ihm gefällt.", "fa": "یک کتاب که خوشش می‌آید." } },
         { "speaker": "Tom", "text": { "de": "Die Freundin, der du letztes Jahr geholfen hast, ist auch eingeladen.", "fa": "دوستی که پارسال کمکش کردی، هم دعوت شده." } }
+      ],
+      "questions": [
+        {
+          "question": "هدیه چه بود؟",
+          "options": ["یک لباس", "یک کتاب", "یک ساعت"],
+          "correctIndex": 1,
+          "explanation": "لیزا گفت: Ein Buch, das ihm gefällt"
+        },
+        {
+          "question": "دوست چه احساسی داشت؟",
+          "options": ["ناراحت بود", "خیلی خوشحال بود", "تعجب کرده بود"],
+          "correctIndex": 1,
+          "explanation": "لیزا گفت: war sehr glücklich"
+        }
       ]
     },
     {
@@ -307,6 +335,20 @@
         { "speaker": "Peter", "text": { "de": "Das ist schön von dir.", "fa": "این از تو خوب است." } },
         { "speaker": "Maria", "text": { "de": "Der Mann, dem sie früher geholfen hat, besucht sie oft.", "fa": "مردی که قبلاً کمکش می‌کرده، اغلب بهش سر می‌زند." } },
         { "speaker": "Peter", "text": { "de": "Das zeigt, dass Freundlichkeit zurückkommt.", "fa": "این نشان می‌دهد که مهربانی برمی‌گردد." } }
+      ],
+      "questions": [
+        {
+          "question": "ماریا به چه کسی کمک می‌کند؟",
+          "options": ["یک پیرزن", "یک پیرمرد", "همسایه جوان"],
+          "correctIndex": 0,
+          "explanation": "ماریا گفت: Die alte Frau, der ich jeden Tag helfe"
+        },
+        {
+          "question": "پیرزن چه احساسی دارد؟",
+          "options": ["ناراحت است", "خیلی سپاسگزار است", "عصبانی است"],
+          "correctIndex": 1,
+          "explanation": "ماریا گفت: ist sehr dankbar"
+        }
       ]
     },
     {
@@ -354,6 +396,38 @@
         { "de": "dem ich gebe", "fa": "که بهش می‌دهم (خنثی)" },
         { "de": "denen ich schreibe", "fa": "که برایشان می‌نویسم (جمع)" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "ضمیر موصولی مذکر در Dativ برابر dem است.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! مثال: Der Mann, dem ich helfe..."
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "ضمیر موصولی جمع در Dativ برابر die است.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! جمع در Dativ: denen - مثال: Die Leute, denen ich helfe..."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "مردی که کمکش می‌کنم، پیر است.",
+      "sentenceTemplate": "{0} {1}, {2} {3} {4}, {5} {6}.",
+      "options": ["ich", "Der", "ist", "helfe", "dem", "alt", "Mann"],
+      "correctAnswers": [1, 6, 4, 0, 3, 2, 5],
+      "correctTranslation": {
+        "de": "Der Mann, dem ich helfe, ist alt.",
+        "fa": "مردی که کمکش می‌کنم، پیر است."
+      }
     },
     {
       "type": "completion",

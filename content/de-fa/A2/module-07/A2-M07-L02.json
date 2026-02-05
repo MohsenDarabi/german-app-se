@@ -8,7 +8,7 @@
   "level": "A2",
   "module": 7,
   "lessonNumber": 2,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "den (Relativpronomen)", "fa": "که (مذکر مفعولی)", "grammar": { "pos": "pronoun", "case": "akkusativ" } },
@@ -111,6 +111,20 @@
         { "speaker": "Ben", "text": { "de": "Welcher Film? Der Action-Film?", "fa": "کدام فیلم؟ فیلم اکشن؟" } },
         { "speaker": "Anna", "text": { "de": "Nein, die Komödie, die du mir empfohlen hast.", "fa": "نه، کمدی‌ای که بهم پیشنهاد دادی." } },
         { "speaker": "Ben", "text": { "de": "Ah, die mag ich auch!", "fa": "آه، من هم دوستش دارم!" } }
+      ],
+      "questions": [
+        {
+          "question": "آنا کدام فیلم را دیده؟",
+          "options": ["فیلم اکشن", "فیلم کمدی", "فیلم ترسناک"],
+          "correctIndex": 1,
+          "explanation": "آنا گفت: die Komödie, die du mir empfohlen hast"
+        },
+        {
+          "question": "چه کسی فیلم را پیشنهاد داده بود؟",
+          "options": ["آنا", "بن", "دوست دیگری"],
+          "correctIndex": 1,
+          "explanation": "آنا گفت: die du mir empfohlen hast (تو به من پیشنهاد دادی)"
+        }
       ]
     },
     {
@@ -202,6 +216,20 @@
         { "speaker": "Student", "text": { "de": "Das Buch, das mein Professor empfohlen hat.", "fa": "کتابی که استادم پیشنهاد داده." } },
         { "speaker": "Bibliothekar", "text": { "de": "Ah, der Roman, den alle lesen wollen!", "fa": "آه، رمانی که همه می‌خواهند بخوانند!" } },
         { "speaker": "Student", "text": { "de": "Genau!", "fa": "دقیقاً!" } }
+      ],
+      "questions": [
+        {
+          "question": "دانشجو دنبال چه کتابی می‌گردد؟",
+          "options": ["کتابی که دوستش پیشنهاد داده", "کتابی که استادش پیشنهاد داده", "کتابی که در تلویزیون دیده"],
+          "correctIndex": 1,
+          "explanation": "دانشجو گفت: Das Buch, das mein Professor empfohlen hat"
+        },
+        {
+          "question": "این کتاب چه ویژگی‌ای دارد؟",
+          "options": ["خیلی قدیمی است", "همه می‌خواهند بخوانند", "خیلی گران است"],
+          "correctIndex": 1,
+          "explanation": "کتابدار گفت: der Roman, den alle lesen wollen"
+        }
       ]
     },
     {
@@ -308,6 +336,20 @@
         { "speaker": "Verkäufer", "text": { "de": "Das rote Kleid, das Sie meinen?", "fa": "لباس قرمزی که منظورتان است؟" } },
         { "speaker": "Kundin", "text": { "de": "Ja! Und die Schuhe, die dazu passen.", "fa": "بله! و کفش‌هایی که بهش می‌آید." } },
         { "speaker": "Verkäufer", "text": { "de": "Hier sind sie!", "fa": "اینجا هستند!" } }
+      ],
+      "questions": [
+        {
+          "question": "مشتری دنبال چه لباسی می‌گردد؟",
+          "options": ["لباسی که در ویترین بود", "لباسی که دوستش داشت", "لباسی که ارزان است"],
+          "correctIndex": 0,
+          "explanation": "مشتری گفت: das Kleid, das im Schaufenster war"
+        },
+        {
+          "question": "رنگ لباس چیست؟",
+          "options": ["آبی", "قرمز", "سبز"],
+          "correctIndex": 1,
+          "explanation": "فروشنده گفت: Das rote Kleid"
+        }
       ]
     },
     {
@@ -355,6 +397,38 @@
         { "de": "das Buch, das ich...", "fa": "کتابی که (مفعول)" },
         { "de": "die Leute, die ich...", "fa": "مردمی که (مفعول)" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در Akkusativ، ضمیر موصولی مذکر از der به den تغییر می‌کند.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! مثال: Der Mann, den ich kenne..."
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "در Akkusativ، ضمیر موصولی مؤنث از die به den تغییر می‌کند.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! مؤنث تغییر نمی‌کند: Die Frau, die ich sehe..."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "مردی که می‌شناسم، مهربان است.",
+      "sentenceTemplate": "{0} {1}, {2} {3} {4}, {5} {6}.",
+      "options": ["ich", "Der", "ist", "kenne", "den", "nett", "Mann"],
+      "correctAnswers": [1, 6, 4, 0, 3, 2, 5],
+      "correctTranslation": {
+        "de": "Der Mann, den ich kenne, ist nett.",
+        "fa": "مردی که می‌شناسم، مهربان است."
+      }
     },
     {
       "type": "completion",
