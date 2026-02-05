@@ -1,0 +1,486 @@
+{
+  "id": "A2-M11-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Futur I oder Präsens?", "fa": "آینده یا حال؟" },
+  "description": "تفاوت استفاده از Futur I و Präsens برای آینده، و بیان حدس با werden",
+  "level": "A2",
+  "module": 11,
+  "lessonNumber": 3,
+  "totalSteps": 45,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "wohl", "fa": "احتمالاً / حتماً", "grammar": { "pos": "adverb" } },
+    { "de": "sicher", "fa": "مطمئن / حتماً", "grammar": { "pos": "adjective" } },
+    { "de": "vermutlich", "fa": "احتمالاً / ظاهراً", "grammar": { "pos": "adverb" } },
+    { "de": "hoffentlich", "fa": "امیدوارم / انشاالله", "grammar": { "pos": "adverb" } },
+    { "de": "irgendwann", "fa": "یک وقتی / یک زمانی", "grammar": { "pos": "adverb" } },
+    { "de": "eines Tages", "fa": "یک روزی", "grammar": { "pos": "phrase" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "Präsens برای آینده",
+      "content": "📝 **در آلمانی محاوره‌ای:**\n\nوقتی زمان مشخص است، می‌توانیم از **Präsens** برای آینده استفاده کنیم!\n\n• Ich **komme** morgen. (= Ich werde morgen kommen)\n→ فردا می‌آیم.\n\n• Wir **fahren** nächste Woche. (= Wir werden fahren)\n→ هفته آینده می‌رویم.\n\n💡 اگر کلمه زمان (morgen، nächste Woche) باشد، Präsens کافی است!",
+      "examples": [
+        { "de": "Ich fliege morgen nach Berlin.", "fa": "فردا به برلین پرواز می‌کنم." },
+        { "de": "Er kommt heute Abend.", "fa": "او امشب می‌آید." },
+        { "de": "Wir heiraten im Juni.", "fa": "ما در ژوئن ازدواج می‌کنیم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "wohl", "fa": "احتمالاً / حتماً" },
+      "example": { "text": { "de": "Er wird wohl krank sein.", "fa": "او احتمالاً مریض است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "wohl",
+      "translation": "احتمالاً",
+      "syllables": ["wohl"],
+      "distractors": ["wahl", "wohl", "will"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "sicher", "fa": "مطمئن / حتماً" },
+      "example": { "text": { "de": "Das wird sicher gut.", "fa": "این حتماً خوب خواهد بود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "sicher",
+      "translation": "مطمئن",
+      "syllables": ["si", "cher"],
+      "distractors": ["sa", "char", "cho"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "vermutlich", "fa": "احتمالاً / ظاهراً" },
+      "example": { "text": { "de": "Sie wird vermutlich später kommen.", "fa": "او احتمالاً دیرتر می‌آید." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "vermutlich",
+      "translation": "احتمالاً",
+      "syllables": ["ver", "mut", "lich"],
+      "distractors": ["vor", "mat", "lech"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "Futur I برای حدس زدن",
+      "content": "📝 **werden برای بیان حدس (درباره حال!):**\n\n**ساختار:** werden + wohl/sicher + Infinitiv\n\n• Er **wird wohl** krank **sein**.\n→ او احتمالاً مریض است. (حدس درباره الان)\n\n• Sie **wird sicher** schlafen.\n→ او حتماً خوابیده است. (حدس درباره الان)\n\n💡 این Futur درباره حال است، نه آینده!",
+      "examples": [
+        { "de": "Er wird wohl zu Hause sein.", "fa": "او احتمالاً خانه است." },
+        { "de": "Das wird schon stimmen.", "fa": "این حتماً درست است." },
+        { "de": "Sie wird vermutlich arbeiten.", "fa": "او احتمالاً دارد کار می‌کند." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله درباره حدس (نه آینده) است؟",
+      "options": ["Ich werde morgen kommen.", "Er wird wohl krank sein.", "Wir werden heiraten.", "Sie wird studieren."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! wohl نشان می‌دهد که این حدس است", "incorrect": "werden + wohl = حدس درباره حال" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "«فردا می‌آیم» به آلمانی (با Präsens) چیست؟",
+      "options": ["Ich werde morgen kommen.", "Ich komme morgen.", "Ich kam morgen.", "Ich bin morgen gekommen."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! با کلمه زمان، Präsens کافی است", "incorrect": "وقتی زمان مشخص است (morgen)، می‌توانیم از Präsens استفاده کنیم" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید (حدس)",
+      "sentence": "Er {0} wohl müde sein.",
+      "options": ["werde", "wirst", "wird", "werden"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "er wird wohl... = او احتمالاً..." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید (Präsens برای آینده)",
+      "sentence": "Ich {0} morgen nach München.",
+      "options": ["fahre", "werde fahren", "fuhr", "gefahren"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "با morgen، Präsens کافی است: Ich fahre" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "کجاست؟",
+      "context": "الی و تام درباره لیزا صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Eli", "text": { "de": "Wo ist Lisa? Sie ist nicht hier.", "fa": "لیزا کجاست؟ اینجا نیست." } },
+        { "speaker": "Tom", "text": { "de": "Sie wird wohl noch arbeiten.", "fa": "احتمالاً هنوز دارد کار می‌کند." } },
+        { "speaker": "Eli", "text": { "de": "Oder sie wird krank sein.", "fa": "یا شاید مریض است." } },
+        { "speaker": "Tom", "text": { "de": "Nein, sie kommt sicher bald.", "fa": "نه، حتماً به‌زودی می‌آید." } },
+        { "speaker": "Eli", "text": { "de": "Ich hoffe, es geht ihr gut.", "fa": "امیدوارم حالش خوب باشد." } }
+      ],
+      "questions": [
+        {
+          "question": "تام فکر می‌کند لیزا چه کار می‌کند؟",
+          "options": ["می‌خوابد", "کار می‌کند", "غذا می‌خورد"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: Sie wird wohl noch arbeiten"
+        },
+        {
+          "question": "جملات تام و الی درباره چه زمانی هستند؟",
+          "options": ["آینده", "گذشته", "حال (حدس)"],
+          "correctIndex": 2,
+          "explanation": "werden + wohl = حدس درباره حال"
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "hoffentlich", "fa": "امیدوارم / انشاالله" },
+      "example": { "text": { "de": "Hoffentlich wird es nicht regnen.", "fa": "امیدوارم باران نبارد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "hoffentlich",
+      "translation": "امیدوارم",
+      "syllables": ["hof", "fent", "lich"],
+      "distractors": ["haf", "fant", "lech"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "کی Futur I لازم است؟",
+      "content": "📝 **Futur I استفاده کنید وقتی:**\n\n**۱. زمان نامشخص است:**\n• Ich **werde** irgendwann heiraten.\n→ یک روزی ازدواج خواهم کرد.\n\n**۲. می‌خواهید تأکید کنید:**\n• Ich **werde** das machen!\n→ این کار را خواهم کرد! (قول)\n\n**۳. حدس می‌زنید:**\n• Er **wird wohl** schlafen.\n→ او احتمالاً خوابیده است.",
+      "examples": [
+        { "de": "Eines Tages werde ich berühmt sein.", "fa": "یک روزی مشهور خواهم شد." },
+        { "de": "Ich werde dir helfen, versprochen!", "fa": "بهت کمک خواهم کرد، قول!" },
+        { "de": "Das wird schon klappen.", "fa": "این حتماً جواب می‌دهد." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["sein.", "wohl", "Er", "wird", "krank"],
+      "correctOrder": [2, 3, 1, 4, 0],
+      "correctSentence": { "de": "Er wird wohl krank sein.", "fa": "او احتمالاً مریض است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Berlin.", "fliege", "morgen", "Ich", "nach"],
+      "correctOrder": [3, 1, 2, 4, 0],
+      "correctSentence": { "de": "Ich fliege morgen nach Berlin.", "fa": "فردا به برلین پرواز می‌کنم." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "کدام جمله با Präsens درست است؟",
+      "options": ["Ich komme irgendwann.", "Ich komme morgen.", "Ich komme eines Tages.", "Ich komme in der Zukunft."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! morgen مشخص است، پس Präsens کافی است", "incorrect": "Präsens برای آینده فقط با زمان مشخص (morgen، nächste Woche)" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "«امیدوارم» به آلمانی چیست؟",
+      "options": ["vielleicht", "wahrscheinlich", "hoffentlich", "bestimmt"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! hoffentlich = امیدوارم", "incorrect": "hoffentlich = امیدوارم / انشاالله" }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "irgendwann", "fa": "یک وقتی / یک زمانی" },
+      "example": { "text": { "de": "Ich werde irgendwann nach Japan reisen.", "fa": "یک وقتی به ژاپن سفر خواهم کرد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "irgendwann",
+      "translation": "یک وقتی",
+      "syllables": ["ir", "gend", "wann"],
+      "distractors": ["ar", "gand", "wenn"]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "eines Tages", "fa": "یک روزی" },
+      "example": { "text": { "de": "Eines Tages werde ich reich sein.", "fa": "یک روزی ثروتمند خواهم شد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Tages",
+      "translation": "روز",
+      "syllables": ["Ta", "ges"],
+      "distractors": ["To", "gas", "gis"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید (زمان نامشخص)",
+      "sentence": "Ich {0} irgendwann heiraten.",
+      "options": ["heirate", "werde heiraten", "heiratete", "geheiratet"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "irgendwann = زمان نامشخص، پس Futur I لازم است" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das {0} sicher funktionieren.",
+      "options": ["werde", "wirst", "wird", "werden"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "das wird sicher... = این حتماً..." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "رویاها",
+      "context": "لیزا و الکس درباره آینده صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Was willst du eines Tages machen?", "fa": "یک روزی می‌خواهی چه کار کنی؟" } },
+        { "speaker": "Alex", "text": { "de": "Ich werde irgendwann ein Buch schreiben.", "fa": "یک وقتی یک کتاب خواهم نوشت." } },
+        { "speaker": "Lisa", "text": { "de": "Das klingt toll! Worum wird es gehen?", "fa": "عالی به نظر می‌رسد! درباره چی خواهد بود؟" } },
+        { "speaker": "Alex", "text": { "de": "Vermutlich über meine Reisen.", "fa": "احتمالاً درباره سفرهایم." } },
+        { "speaker": "Lisa", "text": { "de": "Das wird sicher ein Erfolg!", "fa": "این حتماً موفق خواهد بود!" } }
+      ],
+      "questions": [
+        {
+          "question": "الکس چه برنامه‌ای دارد؟",
+          "options": ["سفر کردن", "نوشتن کتاب", "تحصیل کردن"],
+          "correctIndex": 1,
+          "explanation": "الکس گفت: Ich werde irgendwann ein Buch schreiben"
+        },
+        {
+          "question": "چرا الکس از Futur I استفاده کرد؟",
+          "options": ["زمان مشخص است", "زمان نامشخص است (irgendwann)", "درباره گذشته است"],
+          "correctIndex": 1,
+          "explanation": "irgendwann = زمان نامشخص، پس Futur I لازم است"
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "کلمه آلمانی را با معنی فارسی وصل کنید",
+      "items": [
+        { "id": "i1", "text": "wohl" },
+        { "id": "i2", "text": "hoffentlich" },
+        { "id": "i3", "text": "irgendwann" },
+        { "id": "i4", "text": "eines Tages" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "احتمالاً" },
+        { "id": "m2", "text": "امیدوارم" },
+        { "id": "m3", "text": "یک وقتی" },
+        { "id": "m4", "text": "یک روزی" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"],
+        ["i4", "m4"]
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "Futur یا Präsens؟",
+      "instruction": "برای این زمان‌ها کدام بهتر است؟",
+      "questions": [
+        { "prompt": "morgen", "left": "Präsens", "right": "Futur I", "correctSide": "left" },
+        { "prompt": "irgendwann", "left": "Präsens", "right": "Futur I", "correctSide": "right" },
+        { "prompt": "nächste Woche", "left": "Präsens", "right": "Futur I", "correctSide": "left" },
+        { "prompt": "eines Tages", "left": "Präsens", "right": "Futur I", "correctSide": "right" },
+        { "prompt": "heute Abend", "left": "Präsens", "right": "Futur I", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["schreiben.", "werde", "ein Buch", "Ich", "irgendwann"],
+      "correctOrder": [3, 1, 4, 2, 0],
+      "correctSentence": { "de": "Ich werde irgendwann ein Buch schreiben.", "fa": "یک وقتی یک کتاب خواهم نوشت." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo4",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["regnen.", "es", "Hoffentlich", "nicht", "wird"],
+      "correctOrder": [2, 4, 1, 3, 0],
+      "correctSentence": { "de": "Hoffentlich wird es nicht regnen.", "fa": "امیدوارم باران نبارد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} wird es nicht regnen.",
+      "options": ["Wohl", "Hoffentlich", "Vermutlich", "Sicher"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Hoffentlich = امیدوارم" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Wir {0} nächsten Monat umziehen.",
+      "options": ["ziehen um", "werden umziehen", "umgezogen", "umziehen werden"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "nächsten Monat = زمان مشخص، Präsens کافی است" }
+    },
+    {
+      "type": "dialog",
+      "id": "d3",
+      "title": "برنامه هفته",
+      "context": "تام و الی درباره برنامه‌هایشان صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Tom", "text": { "de": "Was machst du am Samstag?", "fa": "شنبه چه کار می‌کنی؟" } },
+        { "speaker": "Eli", "text": { "de": "Ich besuche meine Großeltern.", "fa": "به دیدن پدربزرگ و مادربزرگم می‌روم." } },
+        { "speaker": "Tom", "text": { "de": "Und am Sonntag?", "fa": "و یکشنبه؟" } },
+        { "speaker": "Eli", "text": { "de": "Am Sonntag lerne ich für die Prüfung.", "fa": "یکشنبه برای امتحان درس می‌خوانم." } },
+        { "speaker": "Tom", "text": { "de": "Das wird sicher gut gehen!", "fa": "این حتماً خوب پیش خواهد رفت!" } }
+      ],
+      "questions": [
+        {
+          "question": "الی شنبه چه کار می‌کند؟",
+          "options": ["درس می‌خواند", "به دیدن پدربزرگ و مادربزرگش می‌رود", "کار می‌کند"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: Ich besuche meine Großeltern"
+        },
+        {
+          "question": "چرا الی از Präsens استفاده کرد؟",
+          "options": ["درباره گذشته است", "زمان مشخص است (am Samstag)", "حدس می‌زند"],
+          "correctIndex": 1,
+          "explanation": "am Samstag = زمان مشخص، پس Präsens کافی است"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc5",
+      "question": "کدام جمله حدس درباره حال است؟",
+      "options": ["Ich komme morgen.", "Er wird wohl schlafen.", "Wir fahren nächste Woche.", "Sie studiert Medizin."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! werden + wohl = حدس درباره حال", "incorrect": "werden + wohl/sicher = حدس درباره الان" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در آلمانی محاوره‌ای، می‌توانیم از Präsens برای آینده استفاده کنیم اگر زمان مشخص باشد.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! Ich komme morgen = Ich werde morgen kommen"
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "جمله Er wird wohl krank sein درباره آینده است.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! werden + wohl = حدس درباره حال (او احتمالاً الان مریض است)"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "او احتمالاً خانه است.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4}.",
+      "options": ["wohl", "Er", "sein", "zu Hause", "wird"],
+      "correctAnswers": [1, 4, 0, 3, 2],
+      "correctTranslation": {
+        "de": "Er wird wohl zu Hause sein.",
+        "fa": "او احتمالاً خانه است."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "یک روزی مشهور خواهم شد.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4}.",
+      "options": ["werde", "berühmt", "Eines Tages", "sein", "ich"],
+      "correctAnswers": [2, 0, 4, 1, 3],
+      "correctTranslation": {
+        "de": "Eines Tages werde ich berühmt sein.",
+        "fa": "یک روزی مشهور خواهم شد."
+      }
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Er wird wohl krank sein.",
+      "translation": "او احتمالاً مریض است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Ich fliege morgen nach Berlin.",
+      "translation": "فردا به برلین پرواز می‌کنم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Hoffentlich wird es nicht regnen.",
+      "translation": "امیدوارم باران نبارد."
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "wohl", "fa": "احتمالاً", "options": ["امیدوارم", "احتمالاً", "یک روزی", "حتماً"], "correctIndex": 1 },
+        { "de": "hoffentlich", "fa": "امیدوارم", "options": ["امیدوارم", "احتمالاً", "شاید", "حتماً"], "correctIndex": 0 },
+        { "de": "irgendwann", "fa": "یک وقتی", "options": ["فردا", "دیروز", "یک وقتی", "همیشه"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "wohl", "fa": "احتمالاً (حدس)" },
+        { "de": "hoffentlich", "fa": "امیدوارم" },
+        { "de": "irgendwann", "fa": "یک وقتی" },
+        { "de": "eines Tages", "fa": "یک روزی" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp1",
+      "title": "آفرین! 🎉",
+      "message": "تفاوت Futur I و Präsens را یاد گرفتید!",
+      "keyPoints": [
+        "Präsens برای آینده: زمان مشخص (morgen، nächste Woche)",
+        "Futur I: زمان نامشخص (irgendwann، eines Tages)",
+        "Futur I برای حدس: werden + wohl/sicher + sein",
+        "hoffentlich = امیدوارم",
+        "wohl = احتمالاً (برای حدس)"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "wohl", "fa": "احتمالاً" } },
+        { "word": { "de": "sicher", "fa": "حتماً" } },
+        { "word": { "de": "vermutlich", "fa": "احتمالاً" } },
+        { "word": { "de": "hoffentlich", "fa": "امیدوارم" } },
+        { "word": { "de": "irgendwann", "fa": "یک وقتی" } },
+        { "word": { "de": "eines Tages", "fa": "یک روزی" } }
+      ]
+    }
+  ]
+}

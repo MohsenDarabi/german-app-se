@@ -1,0 +1,487 @@
+{
+  "id": "A2-M11-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Futur I - Pläne und Vorhersagen", "fa": "آینده - برنامه‌ها و پیش‌بینی‌ها" },
+  "description": "استفاده از Futur I برای برنامه‌ریزی و پیش‌بینی: Ich werde studieren, Es wird regnen",
+  "level": "A2",
+  "module": 11,
+  "lessonNumber": 2,
+  "totalSteps": 45,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "planen", "fa": "برنامه‌ریزی کردن", "grammar": { "pos": "verb" } },
+    { "de": "der Plan", "fa": "برنامه / نقشه", "grammar": { "pos": "noun", "gender": "masculine" } },
+    { "de": "vorhaben", "fa": "قصد داشتن", "grammar": { "pos": "verb", "separable": true } },
+    { "de": "wahrscheinlich", "fa": "احتمالاً", "grammar": { "pos": "adverb" } },
+    { "de": "bestimmt", "fa": "حتماً / قطعاً", "grammar": { "pos": "adverb" } },
+    { "de": "vielleicht", "fa": "شاید", "grammar": { "pos": "adverb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "Futur I برای برنامه‌ها",
+      "content": "📝 **برای صحبت درباره برنامه‌های آینده:**\n\n**ساختار:** werden + Infinitiv\n\n• Ich **werde** nächstes Jahr **studieren**.\n→ سال آینده تحصیل خواهم کرد.\n\n💡 برای برنامه‌های قطعی از Futur I استفاده کنید\n💡 کلمات زمان: nächstes Jahr، in zwei Wochen، am Wochenende",
+      "examples": [
+        { "de": "Wir werden im Sommer heiraten.", "fa": "ما تابستان ازدواج خواهیم کرد." },
+        { "de": "Sie wird nächsten Monat umziehen.", "fa": "او ماه آینده اسباب‌کشی خواهد کرد." },
+        { "de": "Ich werde am Wochenende lernen.", "fa": "آخر هفته درس خواهم خواند." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "planen", "fa": "برنامه‌ریزی کردن" },
+      "example": { "text": { "de": "Ich plane eine Reise.", "fa": "من یک سفر برنامه‌ریزی می‌کنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "planen",
+      "translation": "برنامه‌ریزی کردن",
+      "syllables": ["pla", "nen"],
+      "distractors": ["plo", "nan", "len"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "der Plan", "fa": "برنامه / نقشه" },
+      "example": { "text": { "de": "Was ist dein Plan für morgen?", "fa": "برنامه‌ات برای فردا چیست؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Plan",
+      "translation": "برنامه",
+      "syllables": ["Plan"],
+      "distractors": ["Plen", "Plon", "Plin"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "vorhaben", "fa": "قصد داشتن" },
+      "example": { "text": { "de": "Was hast du heute vor?", "fa": "امروز چه قصدی داری؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "vorhaben",
+      "translation": "قصد داشتن",
+      "syllables": ["vor", "ha", "ben"],
+      "distractors": ["var", "ho", "ban"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "Futur I برای پیش‌بینی",
+      "content": "📝 **برای پیش‌بینی آینده:**\n\n**با کلمات احتمال:**\n• wahrscheinlich (احتمالاً)\n• bestimmt (حتماً)\n• vielleicht (شاید)\n\n**مثال:**\n• Es **wird** wahrscheinlich **regnen**.\n→ احتمالاً باران خواهد بارید.\n\n💡 werden + احتمال + Infinitiv",
+      "examples": [
+        { "de": "Das wird bestimmt klappen.", "fa": "این حتماً جواب خواهد داد." },
+        { "de": "Sie wird wahrscheinlich kommen.", "fa": "او احتمالاً خواهد آمد." },
+        { "de": "Es wird vielleicht schneien.", "fa": "شاید برف ببارد." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«ما تابستان سفر خواهیم کرد» به آلمانی چیست؟",
+      "options": ["Wir werden im Sommer reisen.", "Wir reisen werden im Sommer.", "Wir werden im Sommer gereist.", "Wir im Sommer werden reisen."],
+      "correctAnswerIndex": 0,
+      "feedback": { "correct": "آفرین! werden + زمان + Infinitiv در آخر", "incorrect": "ساختار: Subjekt + werden + ... + Infinitiv" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله پیش‌بینی را بیان می‌کند؟",
+      "options": ["Ich fahre morgen.", "Ich werde morgen fahren.", "Ich bin gefahren.", "Ich fahre gern."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! Futur I برای پیش‌بینی", "incorrect": "برای پیش‌بینی از werden + Infinitiv استفاده می‌کنیم" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Es {0} morgen wahrscheinlich regnen.",
+      "options": ["werde", "wirst", "wird", "werden"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "es wird (برای آب و هوا)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sie (جمع) {0} nächstes Jahr heiraten.",
+      "options": ["werde", "wirst", "wird", "werden"],
+      "correctAnswers": [3],
+      "feedback": { "explanation": "sie (جمع) werden" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "برنامه آخر هفته",
+      "context": "الی و تام درباره آخر هفته صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Eli", "text": { "de": "Was hast du am Wochenende vor?", "fa": "آخر هفته چه قصدی داری؟" } },
+        { "speaker": "Tom", "text": { "de": "Ich werde meine Freunde besuchen.", "fa": "به دیدن دوستانم خواهم رفت." } },
+        { "speaker": "Eli", "text": { "de": "Das klingt gut! Wann wirst du zurückkommen?", "fa": "خوب به نظر می‌رسد! کی برمی‌گردی؟" } },
+        { "speaker": "Tom", "text": { "de": "Ich werde wahrscheinlich am Sonntag zurück sein.", "fa": "احتمالاً یکشنبه برمی‌گردم." } },
+        { "speaker": "Eli", "text": { "de": "Viel Spaß! Es wird bestimmt schön.", "fa": "خوش بگذره! حتماً قشنگ خواهد بود." } }
+      ],
+      "questions": [
+        {
+          "question": "تام آخر هفته چه کار خواهد کرد؟",
+          "options": ["کار می‌کند", "به دیدن دوستانش می‌رود", "سفر می‌کند"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: Ich werde meine Freunde besuchen"
+        },
+        {
+          "question": "تام کی برمی‌گردد؟",
+          "options": ["شنبه", "احتمالاً یکشنبه", "دوشنبه"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: wahrscheinlich am Sonntag"
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "wahrscheinlich", "fa": "احتمالاً" },
+      "example": { "text": { "de": "Er wird wahrscheinlich spät kommen.", "fa": "او احتمالاً دیر خواهد آمد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "wahrscheinlich",
+      "translation": "احتمالاً",
+      "syllables": ["wahr", "schein", "lich"],
+      "distractors": ["war", "schien", "lech"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "Futur I در سوالات",
+      "content": "📝 **سوال با Futur I:**\n\n**سوال بله/خیر:**\n**Werden** + Subjekt + ... + Infinitiv?\n• **Wirst** du morgen **kommen**?\n\n**سوال با W-Wort:**\nW-Wort + **werden** + Subjekt + ... + Infinitiv?\n• **Wann wirst** du **ankommen**?\n\n💡 werden در جایگاه دوم (یا اول در سوال بله/خیر)",
+      "examples": [
+        { "de": "Wird es morgen regnen?", "fa": "آیا فردا باران می‌بارد؟" },
+        { "de": "Was wirst du studieren?", "fa": "چه رشته‌ای تحصیل خواهی کرد؟" },
+        { "de": "Wohin werdet ihr reisen?", "fa": "کجا سفر خواهید کرد؟" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["heiraten.", "werden", "im Sommer", "Wir"],
+      "correctOrder": [3, 1, 2, 0],
+      "correctSentence": { "de": "Wir werden im Sommer heiraten.", "fa": "ما تابستان ازدواج خواهیم کرد." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["regnen?", "es", "Wird", "morgen"],
+      "correctOrder": [2, 1, 3, 0],
+      "correctSentence": { "de": "Wird es morgen regnen?", "fa": "آیا فردا باران می‌بارد؟" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "«احتمالاً باران خواهد بارید» به آلمانی چیست؟",
+      "options": ["Es regnet wahrscheinlich.", "Es wird wahrscheinlich regnen.", "Es wahrscheinlich wird regnen.", "Es regnen wird wahrscheinlich."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! Es wird + احتمال + Infinitiv", "incorrect": "ساختار: Es wird wahrscheinlich regnen" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "کدام کلمه به معنی «حتماً» است؟",
+      "options": ["wahrscheinlich", "vielleicht", "bestimmt", "hoffentlich"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! bestimmt = حتماً", "incorrect": "bestimmt = حتماً / قطعاً" }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "bestimmt", "fa": "حتماً / قطعاً" },
+      "example": { "text": { "de": "Das wird bestimmt gut.", "fa": "این حتماً خوب خواهد بود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "bestimmt",
+      "translation": "حتماً",
+      "syllables": ["be", "stimmt"],
+      "distractors": ["ba", "stammt", "stummt"]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "vielleicht", "fa": "شاید" },
+      "example": { "text": { "de": "Vielleicht werde ich kommen.", "fa": "شاید بیایم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "vielleicht",
+      "translation": "شاید",
+      "syllables": ["viel", "leicht"],
+      "distractors": ["vial", "licht", "leicht"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das {0} bestimmt klappen.",
+      "options": ["werde", "wirst", "wird", "werden"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "das wird (خنثی)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} du mir helfen?",
+      "options": ["Werde", "Wirst", "Wird", "Werden"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Wirst du...? (سوال)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "پیش‌بینی آب و هوا",
+      "context": "لیزا و الکس درباره آب و هوا صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Wie wird das Wetter morgen?", "fa": "فردا هوا چطور خواهد بود؟" } },
+        { "speaker": "Alex", "text": { "de": "Es wird wahrscheinlich sonnig sein.", "fa": "احتمالاً آفتابی خواهد بود." } },
+        { "speaker": "Lisa", "text": { "de": "Und am Wochenende?", "fa": "و آخر هفته؟" } },
+        { "speaker": "Alex", "text": { "de": "Am Wochenende wird es vielleicht regnen.", "fa": "آخر هفته شاید باران ببارد." } },
+        { "speaker": "Lisa", "text": { "de": "Dann werde ich heute wandern gehen!", "fa": "پس امروز پیاده‌روی می‌روم!" } }
+      ],
+      "questions": [
+        {
+          "question": "فردا هوا چطور خواهد بود؟",
+          "options": ["بارانی", "احتمالاً آفتابی", "برفی"],
+          "correctIndex": 1,
+          "explanation": "الکس گفت: Es wird wahrscheinlich sonnig sein"
+        },
+        {
+          "question": "آخر هفته چه اتفاقی می‌افتد؟",
+          "options": ["آفتابی است", "شاید باران ببارد", "برف می‌بارد"],
+          "correctIndex": 1,
+          "explanation": "الکس گفت: vielleicht regnen"
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "کلمه آلمانی را با معنی فارسی وصل کنید",
+      "items": [
+        { "id": "i1", "text": "wahrscheinlich" },
+        { "id": "i2", "text": "bestimmt" },
+        { "id": "i3", "text": "vielleicht" },
+        { "id": "i4", "text": "planen" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "احتمالاً" },
+        { "id": "m2", "text": "حتماً" },
+        { "id": "m3", "text": "شاید" },
+        { "id": "m4", "text": "برنامه‌ریزی کردن" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"],
+        ["i4", "m4"]
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "درجه اطمینان",
+      "instruction": "کدام کلمه اطمینان بیشتری دارد؟",
+      "questions": [
+        { "prompt": "اطمینان بیشتر", "left": "bestimmt", "right": "vielleicht", "correctSide": "left" },
+        { "prompt": "اطمینان کمتر", "left": "bestimmt", "right": "vielleicht", "correctSide": "right" },
+        { "prompt": "اطمینان متوسط", "left": "wahrscheinlich", "right": "bestimmt", "correctSide": "left" },
+        { "prompt": "قطعی‌ترین", "left": "vielleicht", "right": "bestimmt", "correctSide": "right" },
+        { "prompt": "کمترین اطمینان", "left": "vielleicht", "right": "wahrscheinlich", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["studieren?", "wirst", "Was", "du"],
+      "correctOrder": [2, 1, 3, 0],
+      "correctSentence": { "de": "Was wirst du studieren?", "fa": "چه رشته‌ای تحصیل خواهی کرد؟" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo4",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["kommen.", "wahrscheinlich", "wird", "Sie"],
+      "correctOrder": [3, 2, 1, 0],
+      "correctSentence": { "de": "Sie wird wahrscheinlich kommen.", "fa": "او احتمالاً خواهد آمد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Wohin {0} ihr reisen?",
+      "options": ["werde", "wirst", "werdet", "werden"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "ihr werdet" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das Wetter {0} schön sein.",
+      "options": ["werde", "wirst", "wird", "werden"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "Das Wetter (خنثی) → wird" }
+    },
+    {
+      "type": "dialog",
+      "id": "d3",
+      "title": "برنامه‌های شغلی",
+      "context": "تام و الی درباره آینده شغلی صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Tom", "text": { "de": "Was sind deine Pläne für die Zukunft?", "fa": "برنامه‌هایت برای آینده چیست؟" } },
+        { "speaker": "Eli", "text": { "de": "Ich werde eine eigene Firma gründen.", "fa": "من شرکت خودم را تأسیس خواهم کرد." } },
+        { "speaker": "Tom", "text": { "de": "Das ist ein großer Plan! Wann wirst du anfangen?", "fa": "این برنامه بزرگی است! کی شروع خواهی کرد؟" } },
+        { "speaker": "Eli", "text": { "de": "Ich werde in zwei Jahren anfangen.", "fa": "دو سال دیگر شروع خواهم کرد." } },
+        { "speaker": "Tom", "text": { "de": "Das wird bestimmt erfolgreich!", "fa": "حتماً موفق خواهد بود!" } }
+      ],
+      "questions": [
+        {
+          "question": "الی چه برنامه‌ای دارد؟",
+          "options": ["سفر کردن", "تأسیس شرکت", "تحصیل کردن"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: Ich werde eine eigene Firma gründen"
+        },
+        {
+          "question": "الی کی شروع خواهد کرد؟",
+          "options": ["سال آینده", "دو سال دیگر", "ماه آینده"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: in zwei Jahren"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc5",
+      "question": "«چه زمانی خواهی رسید؟» به آلمانی چیست؟",
+      "options": ["Wann wirst du ankommen?", "Wann du wirst ankommen?", "Wirst wann du ankommen?", "Wann ankommen wirst du?"],
+      "correctAnswerIndex": 0,
+      "feedback": { "correct": "آفرین! W-Wort + werden + Subjekt + Infinitiv", "incorrect": "سوال: Wann wirst du ankommen?" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "کلمه bestimmt نشان‌دهنده اطمینان بالا است.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! bestimmt = حتماً / قطعاً (اطمینان بالا)"
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "کلمه vielleicht نشان‌دهنده اطمینان بالا است.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! vielleicht = شاید (اطمینان پایین)"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "احتمالاً فردا باران خواهد بارید.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4}.",
+      "options": ["morgen", "Es", "wahrscheinlich", "regnen", "wird"],
+      "correctAnswers": [1, 4, 2, 0, 3],
+      "correctTranslation": {
+        "de": "Es wird wahrscheinlich morgen regnen.",
+        "fa": "احتمالاً فردا باران خواهد بارید."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "این حتماً خوب خواهد بود.",
+      "sentenceTemplate": "{0} {1} {2} {3}.",
+      "options": ["wird", "Das", "gut", "bestimmt"],
+      "correctAnswers": [1, 0, 3, 2],
+      "correctTranslation": {
+        "de": "Das wird bestimmt gut.",
+        "fa": "این حتماً خوب خواهد بود."
+      }
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Wir werden im Sommer heiraten.",
+      "translation": "ما تابستان ازدواج خواهیم کرد."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Es wird wahrscheinlich regnen.",
+      "translation": "احتمالاً باران خواهد بارید."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Was wirst du studieren?",
+      "translation": "چه رشته‌ای تحصیل خواهی کرد؟"
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "wahrscheinlich", "fa": "احتمالاً", "options": ["حتماً", "احتمالاً", "شاید", "هرگز"], "correctIndex": 1 },
+        { "de": "bestimmt", "fa": "حتماً", "options": ["شاید", "احتمالاً", "حتماً", "هرگز"], "correctIndex": 2 },
+        { "de": "vielleicht", "fa": "شاید", "options": ["حتماً", "احتمالاً", "همیشه", "شاید"], "correctIndex": 3 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "wahrscheinlich", "fa": "احتمالاً" },
+        { "de": "bestimmt", "fa": "حتماً" },
+        { "de": "vielleicht", "fa": "شاید" },
+        { "de": "planen", "fa": "برنامه‌ریزی کردن" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp1",
+      "title": "آفرین! 🎉",
+      "message": "استفاده از Futur I برای برنامه‌ها و پیش‌بینی‌ها را یاد گرفتید!",
+      "keyPoints": [
+        "برنامه‌ها: Ich werde im Sommer reisen",
+        "پیش‌بینی: Es wird regnen",
+        "bestimmt = حتماً (اطمینان بالا)",
+        "wahrscheinlich = احتمالاً (اطمینان متوسط)",
+        "vielleicht = شاید (اطمینان پایین)",
+        "سوال: Wann wirst du kommen?"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "planen", "fa": "برنامه‌ریزی کردن" } },
+        { "word": { "de": "der Plan", "fa": "برنامه" } },
+        { "word": { "de": "vorhaben", "fa": "قصد داشتن" } },
+        { "word": { "de": "wahrscheinlich", "fa": "احتمالاً" } },
+        { "word": { "de": "bestimmt", "fa": "حتماً" } },
+        { "word": { "de": "vielleicht", "fa": "شاید" } }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,485 @@
+{
+  "id": "A2-M11-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Futur I - Die Zukunft", "fa": "زمان آینده" },
+  "description": "یادگیری زمان آینده در آلمانی با werden: Ich werde lernen, Du wirst kommen",
+  "level": "A2",
+  "module": 11,
+  "lessonNumber": 1,
+  "totalSteps": 45,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "werden", "fa": "خواهد شد / شدن", "grammar": { "pos": "verb", "type": "auxiliary" } },
+    { "de": "die Zukunft", "fa": "آینده", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "bald", "fa": "به‌زودی", "grammar": { "pos": "adverb" } },
+    { "de": "später", "fa": "بعداً", "grammar": { "pos": "adverb" } },
+    { "de": "morgen", "fa": "فردا", "grammar": { "pos": "adverb" } },
+    { "de": "nächste Woche", "fa": "هفته آینده", "grammar": { "pos": "phrase" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "زمان آینده (Futur I)",
+      "content": "📝 **برای صحبت درباره آینده:**\n\n**ساختار:** werden + Infinitiv (در آخر جمله)\n\n• Ich **werde** morgen **kommen**.\n→ من فردا خواهم آمد.\n\n💡 werden مثل «خواهم» در فارسی عمل می‌کند\n💡 فعل اصلی به شکل مصدر در آخر می‌آید",
+      "examples": [
+        { "de": "Ich werde Deutsch lernen.", "fa": "من آلمانی یاد خواهم گرفت." },
+        { "de": "Er wird morgen kommen.", "fa": "او فردا خواهد آمد." },
+        { "de": "Wir werden eine Reise machen.", "fa": "ما یک سفر خواهیم کرد." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "werden", "fa": "خواهد شد / شدن" },
+      "example": { "text": { "de": "Ich werde Arzt.", "fa": "من پزشک خواهم شد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "werden",
+      "translation": "خواهد شد",
+      "syllables": ["wer", "den"],
+      "distractors": ["war", "dan", "wir"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "die Zukunft", "fa": "آینده" },
+      "example": { "text": { "de": "In der Zukunft werde ich reisen.", "fa": "در آینده سفر خواهم کرد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Zukunft",
+      "translation": "آینده",
+      "syllables": ["Zu", "kunft"],
+      "distractors": ["Za", "kanft", "konft"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "bald", "fa": "به‌زودی" },
+      "example": { "text": { "de": "Ich werde bald fertig sein.", "fa": "به‌زودی تمام خواهم کرد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "bald",
+      "translation": "به‌زودی",
+      "syllables": ["bald"],
+      "distractors": ["beld", "bild", "bold"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "صرف werden",
+      "content": "📝 **صرف فعل werden:**\n\n| ضمیر | werden |\n|------|--------|\n| ich | **werde** |\n| du | **wirst** |\n| er/sie/es | **wird** |\n| wir | **werden** |\n| ihr | **werdet** |\n| sie/Sie | **werden** |\n\n⚠️ du wirst و er/sie/es wird تغییر دارند!",
+      "examples": [
+        { "de": "Du wirst das verstehen.", "fa": "تو این را خواهی فهمید." },
+        { "de": "Sie wird morgen kommen.", "fa": "او فردا خواهد آمد." },
+        { "de": "Wir werden zusammen essen.", "fa": "ما با هم غذا خواهیم خورد." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«من خواهم آمد» به آلمانی چیست؟",
+      "options": ["Ich komme werden.", "Ich werde kommen.", "Ich werden kommen.", "Ich wird kommen."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! ich werde + Infinitiv", "incorrect": "با ich: werde + فعل مصدر در آخر" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام صرف werden برای «du» درست است؟",
+      "options": ["du werde", "du wirst", "du wird", "du werden"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! du wirst", "incorrect": "du wirst (با تغییر e به i)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich {0} morgen kommen.",
+      "options": ["werde", "wirst", "wird", "werden"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "ich werde" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er {0} Deutsch lernen.",
+      "options": ["werde", "wirst", "wird", "werden"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "er/sie/es wird" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "برنامه‌های آینده",
+      "context": "الی و تام درباره آینده صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Eli", "text": { "de": "Was wirst du morgen machen?", "fa": "فردا چه کار خواهی کرد؟" } },
+        { "speaker": "Tom", "text": { "de": "Ich werde meine Eltern besuchen.", "fa": "من به دیدن والدینم خواهم رفت." } },
+        { "speaker": "Eli", "text": { "de": "Wann wirst du zurückkommen?", "fa": "کی برمی‌گردی؟" } },
+        { "speaker": "Tom", "text": { "de": "Ich werde am Abend zurück sein.", "fa": "عصر برمی‌گردم." } },
+        { "speaker": "Eli", "text": { "de": "Gut! Dann werden wir zusammen essen.", "fa": "خوب! پس با هم غذا می‌خوریم." } }
+      ],
+      "questions": [
+        {
+          "question": "تام فردا چه کار خواهد کرد؟",
+          "options": ["کار می‌کند", "به دیدن والدینش می‌رود", "سفر می‌کند"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: Ich werde meine Eltern besuchen"
+        },
+        {
+          "question": "تام کی برمی‌گردد؟",
+          "options": ["صبح", "عصر", "فردا"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: Ich werde am Abend zurück sein"
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "später", "fa": "بعداً" },
+      "example": { "text": { "de": "Ich werde später anrufen.", "fa": "بعداً زنگ خواهم زد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "später",
+      "translation": "بعداً",
+      "syllables": ["spä", "ter"],
+      "distractors": ["spa", "tar", "spe"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "جایگاه فعل در Futur I",
+      "content": "📝 **ترتیب کلمات:**\n\n**جمله ساده:**\nSubjekt + **werden** + ... + **Infinitiv**\n\n• Ich **werde** morgen Deutsch **lernen**.\n\n**سوال:**\n**Werden** + Subjekt + ... + **Infinitiv**?\n\n• **Wirst** du morgen **kommen**?\n\n💡 werden در جایگاه دوم، Infinitiv در آخر",
+      "examples": [
+        { "de": "Wir werden nächste Woche umziehen.", "fa": "ما هفته آینده اسباب‌کشی خواهیم کرد." },
+        { "de": "Wirst du mir helfen?", "fa": "آیا به من کمک خواهی کرد؟" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["lernen.", "werde", "Deutsch", "Ich"],
+      "correctOrder": [3, 1, 2, 0],
+      "correctSentence": { "de": "Ich werde Deutsch lernen.", "fa": "من آلمانی یاد خواهم گرفت." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["kommen?", "du", "Wirst", "morgen"],
+      "correctOrder": [2, 1, 3, 0],
+      "correctSentence": { "de": "Wirst du morgen kommen?", "fa": "آیا فردا خواهی آمد؟" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "کدام صرف werden برای «wir» درست است؟",
+      "options": ["wir werde", "wir wirst", "wir wird", "wir werden"],
+      "correctAnswerIndex": 3,
+      "feedback": { "correct": "آفرین! wir werden", "incorrect": "wir werden (مثل مصدر)" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "فعل Infinitiv در Futur I کجا قرار می‌گیرد؟",
+      "options": ["اول جمله", "بعد از werden", "آخر جمله", "قبل از werden"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! Infinitiv همیشه در آخر جمله", "incorrect": "در Futur I فعل مصدر در آخر جمله می‌آید" }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "morgen", "fa": "فردا" },
+      "example": { "text": { "de": "Morgen werde ich früh aufstehen.", "fa": "فردا زود بیدار خواهم شد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "morgen",
+      "translation": "فردا",
+      "syllables": ["mor", "gen"],
+      "distractors": ["mar", "gan", "mur"]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "nächste Woche", "fa": "هفته آینده" },
+      "example": { "text": { "de": "Nächste Woche werde ich verreisen.", "fa": "هفته آینده سفر خواهم کرد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "nächste",
+      "translation": "آینده",
+      "syllables": ["näch", "ste"],
+      "distractors": ["nach", "sta", "noch"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Wir {0} nächste Woche umziehen.",
+      "options": ["werde", "wirst", "wird", "werden"],
+      "correctAnswers": [3],
+      "feedback": { "explanation": "wir werden" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Du {0} das verstehen.",
+      "options": ["werde", "wirst", "wird", "werden"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "du wirst" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "برنامه تعطیلات",
+      "context": "لیزا و الکس درباره تعطیلات صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Wohin wirst du in den Ferien fahren?", "fa": "تعطیلات کجا خواهی رفت؟" } },
+        { "speaker": "Alex", "text": { "de": "Ich werde nach Spanien fliegen.", "fa": "من به اسپانیا پرواز خواهم کرد." } },
+        { "speaker": "Lisa", "text": { "de": "Toll! Wie lange wirst du dort bleiben?", "fa": "عالی! چند وقت آنجا خواهی ماند؟" } },
+        { "speaker": "Alex", "text": { "de": "Ich werde zwei Wochen dort sein.", "fa": "دو هفته آنجا خواهم بود." } },
+        { "speaker": "Lisa", "text": { "de": "Das wird bestimmt schön!", "fa": "حتماً قشنگ خواهد بود!" } }
+      ],
+      "questions": [
+        {
+          "question": "الکس کجا خواهد رفت؟",
+          "options": ["ایتالیا", "اسپانیا", "فرانسه"],
+          "correctIndex": 1,
+          "explanation": "الکس گفت: Ich werde nach Spanien fliegen"
+        },
+        {
+          "question": "الکس چند وقت خواهد ماند؟",
+          "options": ["یک هفته", "دو هفته", "سه هفته"],
+          "correctIndex": 1,
+          "explanation": "الکس گفت: Ich werde zwei Wochen dort sein"
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "ضمیر را با صرف werden وصل کنید",
+      "items": [
+        { "id": "i1", "text": "ich" },
+        { "id": "i2", "text": "du" },
+        { "id": "i3", "text": "er/sie/es" },
+        { "id": "i4", "text": "wir" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "werde" },
+        { "id": "m2", "text": "wirst" },
+        { "id": "m3", "text": "wird" },
+        { "id": "m4", "text": "werden" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"],
+        ["i4", "m4"]
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "صرف werden",
+      "instruction": "صرف درست werden را انتخاب کنید",
+      "questions": [
+        { "prompt": "ich ___", "left": "werde", "right": "wirst", "correctSide": "left" },
+        { "prompt": "du ___", "left": "werde", "right": "wirst", "correctSide": "right" },
+        { "prompt": "er ___", "left": "wird", "right": "werden", "correctSide": "left" },
+        { "prompt": "wir ___", "left": "wird", "right": "werden", "correctSide": "right" },
+        { "prompt": "sie (جمع) ___", "left": "wird", "right": "werden", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["fliegen.", "werde", "nach Spanien", "Ich"],
+      "correctOrder": [3, 1, 2, 0],
+      "correctSentence": { "de": "Ich werde nach Spanien fliegen.", "fa": "من به اسپانیا پرواز خواهم کرد." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo4",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["bleiben?", "dort", "Wie lange", "du", "wirst"],
+      "correctOrder": [2, 4, 3, 1, 0],
+      "correctSentence": { "de": "Wie lange wirst du dort bleiben?", "fa": "چند وقت آنجا خواهی ماند؟" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sie (مفرد) {0} morgen ankommen.",
+      "options": ["werde", "wirst", "wird", "werden"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "sie (مفرد) wird" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ihr {0} das Buch lesen.",
+      "options": ["werde", "wirst", "werdet", "werden"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "ihr werdet" }
+    },
+    {
+      "type": "dialog",
+      "id": "d3",
+      "title": "آینده شغلی",
+      "context": "تام و الی درباره آینده صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Tom", "text": { "de": "Was wirst du nach dem Studium machen?", "fa": "بعد از تحصیل چه کار خواهی کرد؟" } },
+        { "speaker": "Eli", "text": { "de": "Ich werde als Ingenieur arbeiten.", "fa": "به عنوان مهندس کار خواهم کرد." } },
+        { "speaker": "Tom", "text": { "de": "Wo wirst du wohnen?", "fa": "کجا زندگی خواهی کرد؟" } },
+        { "speaker": "Eli", "text": { "de": "Ich werde wahrscheinlich nach Berlin ziehen.", "fa": "احتمالاً به برلین نقل مکان خواهم کرد." } },
+        { "speaker": "Tom", "text": { "de": "Das wird bestimmt eine tolle Erfahrung!", "fa": "حتماً تجربه عالی خواهد بود!" } }
+      ],
+      "questions": [
+        {
+          "question": "الی بعد از تحصیل چه کار خواهد کرد؟",
+          "options": ["معلم می‌شود", "مهندس می‌شود", "پزشک می‌شود"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: Ich werde als Ingenieur arbeiten"
+        },
+        {
+          "question": "الی کجا زندگی خواهد کرد؟",
+          "options": ["مونیخ", "هامبورگ", "برلین"],
+          "correctIndex": 2,
+          "explanation": "الی گفت: Ich werde wahrscheinlich nach Berlin ziehen"
+        }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc5",
+      "question": "«آن‌ها خواهند آمد» به آلمانی چیست؟",
+      "options": ["Sie wird kommen.", "Sie wirst kommen.", "Sie werden kommen.", "Sie werde kommen."],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! sie (جمع) werden", "incorrect": "sie (جمع) werden kommen" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در Futur I فعل مصدر (Infinitiv) در آخر جمله قرار می‌گیرد.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! Ich werde morgen kommen. (kommen در آخر)"
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "صرف werden برای ich و wir یکسان است.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! ich werde، اما wir werden"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "من فردا خواهم آمد.",
+      "sentenceTemplate": "{0} {1} {2} {3}.",
+      "options": ["morgen", "werde", "kommen", "Ich"],
+      "correctAnswers": [3, 1, 0, 2],
+      "correctTranslation": {
+        "de": "Ich werde morgen kommen.",
+        "fa": "من فردا خواهم آمد."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "ما با هم غذا خواهیم خورد.",
+      "sentenceTemplate": "{0} {1} {2} {3}.",
+      "options": ["essen", "Wir", "zusammen", "werden"],
+      "correctAnswers": [1, 3, 2, 0],
+      "correctTranslation": {
+        "de": "Wir werden zusammen essen.",
+        "fa": "ما با هم غذا خواهیم خورد."
+      }
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich werde morgen kommen.",
+      "translation": "من فردا خواهم آمد."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Wirst du mir helfen?",
+      "translation": "آیا به من کمک خواهی کرد؟"
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Sie wird nach Berlin ziehen.",
+      "translation": "او به برلین نقل مکان خواهد کرد."
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "صرف درست werden را انتخاب کنید",
+      "words": [
+        { "de": "ich", "fa": "من", "options": ["werde", "wirst", "wird", "werden"], "correctIndex": 0 },
+        { "de": "du", "fa": "تو", "options": ["werde", "wirst", "wird", "werden"], "correctIndex": 1 },
+        { "de": "er", "fa": "او", "options": ["werde", "wirst", "wird", "werden"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "ich werde", "fa": "من خواهم" },
+        { "de": "du wirst", "fa": "تو خواهی" },
+        { "de": "er wird", "fa": "او خواهد" },
+        { "de": "wir werden", "fa": "ما خواهیم" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp1",
+      "title": "آفرین! 🎉",
+      "message": "زمان آینده (Futur I) در آلمانی را یاد گرفتید!",
+      "keyPoints": [
+        "ساختار: werden + Infinitiv (در آخر جمله)",
+        "ich werde، du wirst، er/sie/es wird",
+        "wir werden، ihr werdet، sie/Sie werden",
+        "فعل مصدر همیشه در آخر جمله می‌آید",
+        "کلمات زمان: morgen، bald، später، nächste Woche"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "werden", "fa": "خواهد شد" } },
+        { "word": { "de": "die Zukunft", "fa": "آینده" } },
+        { "word": { "de": "bald", "fa": "به‌زودی" } },
+        { "word": { "de": "später", "fa": "بعداً" } },
+        { "word": { "de": "morgen", "fa": "فردا" } },
+        { "word": { "de": "nächste Woche", "fa": "هفته آینده" } }
+      ]
+    }
+  ]
+}

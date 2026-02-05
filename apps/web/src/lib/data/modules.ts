@@ -784,6 +784,37 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/A2/A2-M10-L04"
       }
     ]
+  },
+  {
+    id: "module-11",
+    title: "بخش ۱۱: زمان آینده (Futur)",
+    level: "A2",
+    lessons: [
+      {
+        id: "A2-M11-L01",
+        title: "Futur I - زمان آینده",
+        description: "یاد بگیرید چطور با werden درباره آینده صحبت کنید.",
+        path: "/learn/de-fa/A2/A2-M11-L01"
+      },
+      {
+        id: "A2-M11-L02",
+        title: "Pläne und Vorhersagen - برنامه‌ها و پیش‌بینی‌ها",
+        description: "یاد بگیرید چطور برنامه‌ها و پیش‌بینی‌ها را با Futur I بیان کنید.",
+        path: "/learn/de-fa/A2/A2-M11-L02"
+      },
+      {
+        id: "A2-M11-L03",
+        title: "Futur I oder Präsens? - آینده یا حال؟",
+        description: "یاد بگیرید چه وقت از Futur I و چه وقت از Präsens برای آینده استفاده کنید.",
+        path: "/learn/de-fa/A2/A2-M11-L03"
+      },
+      {
+        id: "A2-M11-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "تمرین ترکیبی همه مباحث Futur I: ساختار werden، برنامه‌ها، پیش‌بینی‌ها و حدس‌ها.",
+        path: "/learn/de-fa/A2/A2-M11-L04"
+      }
+    ]
   }
 ];
 
