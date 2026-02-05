@@ -8,7 +8,7 @@
   "level": "A2",
   "module": 9,
   "lessonNumber": 4,
-  "totalSteps": 40,
+  "totalSteps": 44,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "interessant", "fa": "جالب", "grammar": { "pos": "adjective" } },
@@ -117,6 +117,20 @@
         { "speaker": "Verkäufer", "text": { "de": "Das neue Buch hier ist sehr gut.", "fa": "این کتاب جدید خیلی خوب است." } },
         { "speaker": "Kunde", "text": { "de": "Ist es ein schweres Buch?", "fa": "کتاب سختی است؟" } },
         { "speaker": "Verkäufer", "text": { "de": "Nein, leichte Lektüre für den Urlaub.", "fa": "نه، مطالعه سبک برای تعطیلات." } }
+      ],
+      "questions": [
+        {
+          "question": "مشتری چه نوع کتابی می‌خواهد؟",
+          "options": ["کتاب سخت", "کتاب جالب", "کتاب قدیمی"],
+          "correctIndex": 1,
+          "explanation": "مشتری گفت: ein interessantes Buch (یک کتاب جالب)"
+        },
+        {
+          "question": "کتاب برای چه مناسب است؟",
+          "options": ["کار", "تعطیلات", "مدرسه"],
+          "correctIndex": 1,
+          "explanation": "فروشنده گفت: für den Urlaub (برای تعطیلات)"
+        }
       ]
     },
     {
@@ -213,6 +227,20 @@
         { "speaker": "Guide", "text": { "de": "Ja, und das moderne Museum ist interessant.", "fa": "بله، و موزه مدرن جالب است." } },
         { "speaker": "Tourist", "text": { "de": "Gibt es hier traditionelles Essen?", "fa": "اینجا غذای سنتی هست؟" } },
         { "speaker": "Guide", "text": { "de": "In dem kleinen Restaurant dort.", "fa": "در آن رستوران کوچک آنجا." } }
+      ],
+      "questions": [
+        {
+          "question": "موزه چطور توصیف شد؟",
+          "options": ["قدیمی", "مدرن", "کوچک"],
+          "correctIndex": 1,
+          "explanation": "راهنما گفت: das moderne Museum (موزه مدرن)"
+        },
+        {
+          "question": "غذای سنتی کجا پیدا می‌شود؟",
+          "options": ["در موزه", "در رستوران کوچک", "در ساختمان قدیمی"],
+          "correctIndex": 1,
+          "explanation": "راهنما گفت: In dem kleinen Restaurant (در رستوران کوچک)"
+        }
       ]
     },
     {
@@ -319,7 +347,65 @@
         { "speaker": "Ben", "text": { "de": "Nein, ich suche ein billiges Handy.", "fa": "نه، دنبال یک موبایل ارزان می‌گردم." } },
         { "speaker": "Anna", "text": { "de": "Gute Qualität ist wichtig.", "fa": "کیفیت خوب مهم است." } },
         { "speaker": "Ben", "text": { "de": "Ja, aber mit kleinem Budget.", "fa": "بله، اما با بودجه کم." } }
+      ],
+      "questions": [
+        {
+          "question": "بن چه نوع موبایلی می‌خواهد؟",
+          "options": ["موبایل جدید", "موبایل ارزان", "موبایل بزرگ"],
+          "correctIndex": 1,
+          "explanation": "بن گفت: ein billiges Handy (یک موبایل ارزان)"
+        },
+        {
+          "question": "مشکل بن چیست؟",
+          "options": ["وقت ندارد", "بودجه کم دارد", "موبایل پیدا نمی‌کند"],
+          "correctIndex": 1,
+          "explanation": "بن گفت: mit kleinem Budget (با بودجه کم)"
+        }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "با حرف تعریف معرفه (der/die/das) صفت در Nominativ همیشه پایانه -e می‌گیرد.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! der große Mann، die große Frau، das große Kind - همه -e می‌گیرند."
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "با ein در Nominativ، صفت برای مذکر پایانه -e می‌گیرد.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! با ein مذکر: ein großer Mann (پایانه -er نه -e)"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "فیلم جدید جالب است.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4}.",
+      "options": ["neue", "Der", "Film", "interessant", "ist"],
+      "correctAnswers": [1, 0, 2, 4, 3],
+      "correctTranslation": {
+        "de": "Der neue Film ist interessant.",
+        "fa": "فیلم جدید جالب است."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "من یک کتاب جالب می‌خوانم.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4}.",
+      "options": ["interessantes", "Ich", "lese", "ein", "Buch"],
+      "correctAnswers": [1, 2, 3, 0, 4],
+      "correctTranslation": {
+        "de": "Ich lese ein interessantes Buch.",
+        "fa": "من یک کتاب جالب می‌خوانم."
+      }
     },
     {
       "type": "vocab-check",
