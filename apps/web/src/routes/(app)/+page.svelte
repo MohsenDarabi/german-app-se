@@ -14,6 +14,7 @@
   $: modules = getAllModulesForLanguage($selectedPair);
   $: A1_MODULES = modules.A1;
   $: A2_MODULES = modules.A2;
+  $: B1_MODULES = modules.B1;
   $: languageName = $currentLanguagePack?.name.target || 'آلمانی';
 
   // Fix BiDi for mixed Persian/German titles - wrap parenthesized text in LTR
@@ -59,7 +60,7 @@
   const levelXP = 100;
 
   // Combine all lessons for sequential unlocking
-  $: allLessons = [...A1_MODULES, ...A2_MODULES].flatMap(m => m.lessons);
+  $: allLessons = [...A1_MODULES, ...A2_MODULES, ...B1_MODULES].flatMap(m => m.lessons);
 
   // --- Collapsible Modules ---
   let expandedModules: Set<string> = new Set();
@@ -133,7 +134,8 @@
     // Smart defaults: expand module with current/next lesson
     const allModules = [
       ...A1_MODULES.map((m, i) => ({ ...m, id: `a1-${i}` })),
-      ...A2_MODULES.map((m, i) => ({ ...m, id: `a2-${i}` }))
+      ...A2_MODULES.map((m, i) => ({ ...m, id: `a2-${i}` })),
+      ...B1_MODULES.map((m, i) => ({ ...m, id: `b1-${i}` }))
     ];
 
     for (const module of allModules) {
@@ -223,7 +225,7 @@
   <header class="header">
     <div class="header-top">
       <h1 class="title">مسیر یادگیری شما</h1>
-      <p class="subtitle">{languageName} سطح A1 و A2</p>
+      <p class="subtitle">{languageName} سطح A1، A2 و B1</p>
     </div>
 
     <!-- XP Bar + Streak Row -->
@@ -429,6 +431,91 @@
       {/key}
     </div>
   </div>
+
+  <!-- B1 Level -->
+  {#if B1_MODULES.length > 0}
+  <div class="level-section">
+    <h2 class="level-title">
+      <span class="level-badge b1">B1</span>
+      سطح متوسط
+    </h2>
+    <div class="timeline">
+      {#key [progressMap, $devMode]}
+        {#each B1_MODULES as module, moduleIndex (moduleIndex)}
+          {@const moduleId = `b1-${moduleIndex}`}
+          {@const stats = getModuleStats(module, 'b1', moduleIndex)}
+          {@const isExpanded = expandedModules.has(moduleId)}
+          <div class="module-section">
+            <button
+              class="module-header"
+              class:expanded={isExpanded}
+              on:click={() => toggleModule(moduleId)}
+            >
+              <h3 class="module-title">{@html fixBiDiTitle(module.title)}</h3>
+              <div class="module-stats">
+                <span class="stats-text">{stats.completed}/{stats.total}</span>
+                {#if stats.completed === stats.total}
+                  <span class="stats-icon">✅</span>
+                {:else if stats.hasCurrentLesson}
+                  <span class="stats-icon current">▶️</span>
+                {/if}
+              </div>
+              <span class="chevron" class:expanded={isExpanded}>‹</span>
+            </button>
+
+            <div class="lessons-list" class:collapsed={!isExpanded}>
+              {#each module.lessons as lesson, lessonIndex (lesson.id)}
+                {@const a1TotalLessons = A1_MODULES.reduce((sum, m) => sum + m.lessons.length, 0)}
+                {@const a2TotalLessons = A2_MODULES.reduce((sum, m) => sum + m.lessons.length, 0)}
+                {@const globalIndex = a1TotalLessons + a2TotalLessons + B1_MODULES.slice(0, moduleIndex).reduce((sum, m) => sum + m.lessons.length, 0) + lessonIndex}
+                {@const b1LessonNum = B1_MODULES.slice(0, moduleIndex).reduce((sum, m) => sum + m.lessons.length, 0) + lessonIndex + 1}
+                {@const status = getLessonStatus(lesson.id, globalIndex)}
+                {@const progress = progressMap?.get(lesson.id)}
+                {@const isLocked = status === 'locked'}
+
+              <div
+                class="lesson-card"
+                class:locked={isLocked}
+                class:completed={status === 'completed'}
+                class:in-progress={status === 'in-progress'}
+              >
+                <div class="lesson-icon" class:completed={status === 'completed'} class:in-progress={status === 'in-progress'}>
+                  <span class="lesson-num">{b1LessonNum}</span>
+                  <span class="status-icon">{getIcon(status)}</span>
+                </div>
+                <div class="lesson-info">
+                  <h3>{@html fixBiDiTitle(lesson.title)}</h3>
+                  <p>{lesson.description}</p>
+                </div>
+                <div class="lesson-action">
+                  {#if isLocked}
+                    <button class="action-btn locked-btn" disabled>
+                      {getButtonText(status, progress)}
+                    </button>
+                  {:else if status === 'completed' || status === 'in-progress'}
+                    <div class="action-group">
+                      <a href={lesson.path} class="action-btn" class:completed={status === 'completed'}>
+                        {getButtonText(status, progress)}
+                      </a>
+                      <button class="reset-btn" on:click={() => handleResetLesson(lesson.id)}>
+                        بازنشانی
+                      </button>
+                    </div>
+                  {:else}
+                    <a href={lesson.path} class="action-btn primary">
+                      {getButtonText(status, progress)}
+                    </a>
+                  {/if}
+                </div>
+              </div>
+              {/each}
+            </div>
+          </div>
+        {/each}
+      {/key}
+    </div>
+  </div>
+  {/if}
 </div>
 
 <!-- Dev Mode Toggle (only visible in development) -->
@@ -624,6 +711,11 @@
   .level-badge.a2 {
     background: linear-gradient(135deg, var(--color-xp-500, #4f46e5), var(--color-xp-600, #4338ca));
     box-shadow: 0 2px 8px rgba(79, 70, 229, 0.3);
+  }
+
+  .level-badge.b1 {
+    background: linear-gradient(135deg, var(--color-gem-500, #059669), var(--color-gem-600, #047857));
+    box-shadow: 0 2px 8px rgba(5, 150, 105, 0.3);
   }
 
   /* Timeline */

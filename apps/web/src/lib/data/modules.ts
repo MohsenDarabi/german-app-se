@@ -1035,6 +1035,22 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
   }
 ];
 
+const DE_FA_B1_MODULES: ModuleStub[] = [
+  {
+    id: "module-01",
+    title: "بخش ۱: صرف-N (N-Deklination)",
+    level: "B1",
+    lessons: [
+      {
+        id: "B1-M01-L01",
+        title: "N-Deklination: Einführung - معرفی",
+        description: "یاد بگیرید اسم‌های مذکر ضعیف را که در همه حالات (به جز Nominativ) پسوند -(e)n می‌گیرند.",
+        path: "/learn/de-fa/B1/B1-M01-L01"
+      }
+    ]
+  }
+];
+
 // English (en-fa) modules
 const EN_FA_A1_MODULES: ModuleStub[] = [
   {
@@ -1055,31 +1071,34 @@ const EN_FA_A1_MODULES: ModuleStub[] = [
 const EN_FA_A2_MODULES: ModuleStub[] = [];
 
 // Module data registry by language pair
-const MODULE_DATA: Record<string, { A1: ModuleStub[]; A2: ModuleStub[] }> = {
+const MODULE_DATA: Record<string, { A1: ModuleStub[]; A2: ModuleStub[]; B1: ModuleStub[] }> = {
   'de-fa': {
     A1: DE_FA_A1_MODULES,
     A2: DE_FA_A2_MODULES,
+    B1: DE_FA_B1_MODULES,
   },
   'en-fa': {
     A1: EN_FA_A1_MODULES,
     A2: EN_FA_A2_MODULES,
+    B1: [],
   },
 };
 
 /**
  * Get all modules for a specific language pair
  */
-export function getAllModulesForLanguage(languagePair: string): { A1: ModuleStub[]; A2: ModuleStub[] } {
-  return MODULE_DATA[languagePair] || { A1: [], A2: [] };
+export function getAllModulesForLanguage(languagePair: string): { A1: ModuleStub[]; A2: ModuleStub[]; B1: ModuleStub[] } {
+  return MODULE_DATA[languagePair] || { A1: [], A2: [], B1: [] };
 }
 
 /**
  * Get modules for a specific language pair and level
  */
-export function getModulesForLevel(languagePair: string, level: 'A1' | 'A2'): ModuleStub[] {
+export function getModulesForLevel(languagePair: string, level: 'A1' | 'A2' | 'B1'): ModuleStub[] {
   return MODULE_DATA[languagePair]?.[level] || [];
 }
 
 // Backward compatibility exports (for existing code that imports these directly)
 export const A1_MODULES = DE_FA_A1_MODULES;
 export const A2_MODULES = DE_FA_A2_MODULES;
+export const B1_MODULES = DE_FA_B1_MODULES;

@@ -166,19 +166,28 @@ export function getRegistryStats(): {
 export function resolveMedia(assetIdOrPath: string | undefined): string | null {
   if (!assetIdOrPath) return null;
 
-  // If it starts with /, it's already a path
+  // If it starts with /, it's already a direct path - return as-is
+  // These are served from static/ folder and bundled with the app build.
+  // IMPORTANT: Character avatars and other static assets use direct paths
+  // to remain available OFFLINE (no CDN dependency). Do not change this behavior.
   if (assetIdOrPath.startsWith('/')) {
-    // Even for direct paths, use CDN if enabled
-    if (isCdnEnabled() && assetIdOrPath.startsWith('/images/')) {
-      // Extract asset-like ID from path for CDN lookup
-      // This is a fallback for direct paths
-      return getImageUrl(assetIdOrPath);
-    }
     return assetIdOrPath;
   }
 
-  // Otherwise, try to resolve as asset ID
-  return resolveAsset(assetIdOrPath);
+  // Otherwise, try to resolve as asset ID from registry
+  const resolved = resolveAsset(assetIdOrPath);
+  if (resolved) return resolved;
+
+  // If not in registry, try CDN shared manifest lookup
+  if (isCdnEnabled()) {
+    const cdnUrl = getImageUrl(assetIdOrPath);
+    // getImageUrl returns fallback for unknown IDs, check if it's a real match
+    if (!cdnUrl.includes('/images/greetings/')) {
+      return cdnUrl;
+    }
+  }
+
+  return null;
 }
 
 export { typedRegistry as registry };
