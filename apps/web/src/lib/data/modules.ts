@@ -745,6 +745,12 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         title: "Ohne Artikel - بدون حرف تعریف",
         description: "یاد بگیرید چطور صفات بدون حرف تعریف تغییر می‌کنند.",
         path: "/learn/de-fa/A2/A2-M09-L03"
+      },
+      {
+        id: "A2-M09-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "تمرین ترکیبی همه پایانه‌های صفت: با der/die/das، با ein/eine و بدون حرف تعریف.",
+        path: "/learn/de-fa/A2/A2-M09-L04"
       }
     ]
   }

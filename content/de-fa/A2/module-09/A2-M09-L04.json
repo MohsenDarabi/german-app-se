@@ -1,0 +1,391 @@
+{
+  "id": "A2-M09-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Adjektivdeklination Zusammenfassung", "fa": "جمع‌بندی صرف صفت" },
+  "description": "تمرین ترکیبی همه پایانه‌های صفت: با der/die/das، با ein/eine و بدون حرف تعریف",
+  "level": "A2",
+  "module": 9,
+  "lessonNumber": 4,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "interessant", "fa": "جالب", "grammar": { "pos": "adjective" } },
+    { "de": "wichtig", "fa": "مهم", "grammar": { "pos": "adjective" } },
+    { "de": "schwer", "fa": "سخت / سنگین", "grammar": { "pos": "adjective" } },
+    { "de": "leicht", "fa": "آسان / سبک", "grammar": { "pos": "adjective" } },
+    { "de": "modern", "fa": "مدرن", "grammar": { "pos": "adjective" } },
+    { "de": "traditionell", "fa": "سنتی", "grammar": { "pos": "adjective" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "سه الگوی صرف صفت",
+      "content": "📝 **مرور سه الگو:**\n\n**۱. با der/die/das:**\n→ der große Mann, die große Frau\n\n**۲. با ein/eine:**\n→ ein großer Mann, eine große Frau\n\n**۳. بدون Artikel:**\n→ großer Mann, große Frau\n\n💡 قانون کلی: یکی باید جنس را نشان دهد!",
+      "examples": [
+        { "de": "Der neue Film ist gut.", "fa": "فیلم جدید خوب است." },
+        { "de": "Ein neuer Film kommt.", "fa": "یک فیلم جدید می‌آید." },
+        { "de": "Neuer Film im Kino.", "fa": "فیلم جدید در سینما." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "interessant", "fa": "جالب" },
+      "example": { "text": { "de": "Das ist ein interessantes Buch.", "fa": "این یک کتاب جالب است." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "wichtig", "fa": "مهم" },
+      "example": { "text": { "de": "Die wichtige Nachricht kam.", "fa": "خبر مهم آمد." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "schwer", "fa": "سخت / سنگین" },
+      "example": { "text": { "de": "Das ist eine schwere Aufgabe.", "fa": "این یک کار سخت است." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "جدول مقایسه Nominativ",
+      "content": "📝 **Nominativ - مقایسه:**\n\n| جنس | der/die/das | ein/eine | بدون |\n|-----|-------------|----------|------|\n| مذکر | der groß**e** | ein groß**er** | groß**er** |\n| مونث | die groß**e** | eine groß**e** | groß**e** |\n| خنثی | das groß**e** | ein groß**es** | groß**es** |\n| جمع | die groß**en** | — | groß**e** |\n\n💡 با der/die/das همیشه **-e** (جمع: -en)",
+      "examples": [
+        { "de": "Der alte Mann sitzt.", "fa": "مرد پیر نشسته است." },
+        { "de": "Ein alter Mann sitzt.", "fa": "یک مرد پیر نشسته است." },
+        { "de": "Alter Mann sitzt dort.", "fa": "مرد پیری آنجا نشسته است." }
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "interessant",
+      "translation": "جالب",
+      "syllables": ["in", "te", "res", "sant"],
+      "distractors": ["un", "ta", "ras", "zant"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله درست است؟",
+      "options": ["Der interessanter Film.", "Der interessante Film.", "Der interessantes Film.", "Der interessanten Film."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! با der: صفت + e", "incorrect": "با der در Nominativ: صفت + e" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله درست است؟",
+      "options": ["Ein interessante Film.", "Ein interessanter Film.", "Ein interessantes Film.", "Ein interessanten Film."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! با ein + مذکر: صفت + er", "incorrect": "با ein + مذکر Nominativ: صفت + er" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید (با der)",
+      "sentence": "Der {0} Computer funktioniert gut.",
+      "options": ["neuer", "neue", "neues", "neuen"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "با der: صفت + e" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید (با ein)",
+      "sentence": "Das ist ein {0} Computer.",
+      "options": ["neuer", "neue", "neues", "neuen"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "با ein + مذکر: صفت + er" }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "leicht", "fa": "آسان / سبک" },
+      "example": { "text": { "de": "Das ist eine leichte Frage.", "fa": "این یک سوال آسان است." } }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در کتاب‌فروشی",
+      "context": "درباره کتاب‌ها صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Kunde", "text": { "de": "Ich suche ein interessantes Buch.", "fa": "دنبال یک کتاب جالب می‌گردم." } },
+        { "speaker": "Verkäufer", "text": { "de": "Das neue Buch hier ist sehr gut.", "fa": "این کتاب جدید خیلی خوب است." } },
+        { "speaker": "Kunde", "text": { "de": "Ist es ein schweres Buch?", "fa": "کتاب سختی است؟" } },
+        { "speaker": "Verkäufer", "text": { "de": "Nein, leichte Lektüre für den Urlaub.", "fa": "نه، مطالعه سبک برای تعطیلات." } }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "جدول مقایسه Akkusativ",
+      "content": "📝 **Akkusativ - مقایسه:**\n\n| جنس | der/die/das | ein/eine | بدون |\n|-----|-------------|----------|------|\n| مذکر | den groß**en** | einen groß**en** | groß**en** |\n| مونث | die groß**e** | eine groß**e** | groß**e** |\n| خنثی | das groß**e** | ein groß**es** | groß**es** |\n\n💡 فقط مذکر تغییر می‌کند: همیشه **-en**",
+      "examples": [
+        { "de": "Ich sehe den alten Mann.", "fa": "مرد پیر را می‌بینم." },
+        { "de": "Ich sehe einen alten Mann.", "fa": "یک مرد پیر را می‌بینم." },
+        { "de": "Ich trinke heißen Tee.", "fa": "چای داغ می‌نوشم." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "«یک کتاب جالب می‌خوانم» به آلمانی چیست؟",
+      "options": ["Ich lese ein interessanter Buch.", "Ich lese ein interessante Buch.", "Ich lese ein interessantes Buch.", "Ich lese einen interessantes Buch."],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! Buch خنثی، ein + es", "incorrect": "Buch خنثی است: ein interessantes Buch" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["gut.", "ist", "Film", "neue", "Der"],
+      "correctOrder": [4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Der neue Film ist gut.", "fa": "فیلم جدید خوب است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Buch.", "interessantes", "ein", "ist", "Das"],
+      "correctOrder": [4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Das ist ein interessantes Buch.", "fa": "این یک کتاب جالب است." }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "wichtige",
+      "translation": "مهم",
+      "syllables": ["wich", "ti", "ge"],
+      "distractors": ["wach", "ta", "ga", "to"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "modern", "fa": "مدرن" },
+      "example": { "text": { "de": "Das moderne Gebäude ist schön.", "fa": "ساختمان مدرن زیباست." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "traditionell", "fa": "سنتی" },
+      "example": { "text": { "de": "Traditionelles Essen schmeckt gut.", "fa": "غذای سنتی خوشمزه است." } }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید (Akkusativ با den)",
+      "sentence": "Ich sehe den {0} Mann.",
+      "options": ["alter", "alte", "altes", "alten"],
+      "correctAnswers": [3],
+      "feedback": { "explanation": "با den (مذکر Akkusativ): صفت + en" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید (Akkusativ بدون Artikel)",
+      "sentence": "Ich trinke {0} Kaffee.",
+      "options": ["starker", "starke", "starkes", "starken"],
+      "correctAnswers": [3],
+      "feedback": { "explanation": "Kaffee مذکر، Akkusativ بدون Artikel: صفت + en" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s10",
+      "title": "جدول مقایسه Dativ",
+      "content": "📝 **Dativ - مقایسه:**\n\n| جنس | der/die/das | ein/eine | بدون |\n|-----|-------------|----------|------|\n| مذکر | dem groß**en** | einem groß**en** | groß**em** |\n| مونث | der groß**en** | einer groß**en** | groß**er** |\n| خنثی | dem groß**en** | einem groß**en** | groß**em** |\n\n💡 با Artikel: همیشه **-en**\n💡 بدون Artikel: **-em** (m/n), **-er** (f)",
+      "examples": [
+        { "de": "Mit dem alten Auto.", "fa": "با ماشین قدیمی." },
+        { "de": "Mit einem alten Auto.", "fa": "با یک ماشین قدیمی." },
+        { "de": "Mit altem Auto.", "fa": "با ماشین قدیمی." }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "توصیف شهر",
+      "context": "گردشگر و راهنما",
+      "lines": [
+        { "speaker": "Tourist", "text": { "de": "Die alten Gebäude sind schön.", "fa": "ساختمان‌های قدیمی زیبا هستند." } },
+        { "speaker": "Guide", "text": { "de": "Ja, und das moderne Museum ist interessant.", "fa": "بله، و موزه مدرن جالب است." } },
+        { "speaker": "Tourist", "text": { "de": "Gibt es hier traditionelles Essen?", "fa": "اینجا غذای سنتی هست؟" } },
+        { "speaker": "Guide", "text": { "de": "In dem kleinen Restaurant dort.", "fa": "در آن رستوران کوچک آنجا." } }
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "modernen",
+      "translation": "مدرن",
+      "syllables": ["mo", "der", "nen"],
+      "distractors": ["ma", "dar", "nan", "dir"]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "نوع حرف تعریف را با پایانه وصل کنید",
+      "items": [
+        { "id": "i1", "text": "der ___ Mann (Nom.)" },
+        { "id": "i2", "text": "ein ___ Kind (Nom.)" },
+        { "id": "i3", "text": "___ Kaffee (Nom. بدون)" },
+        { "id": "i4", "text": "den ___ Mann (Akk.)" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "alte" },
+        { "id": "m2", "text": "kleines" },
+        { "id": "m3", "text": "heißer" },
+        { "id": "m4", "text": "alten" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"],
+        ["i4", "m4"]
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "پایانه صحیح",
+      "instruction": "پایانه صحیح صفت را انتخاب کنید",
+      "questions": [
+        { "prompt": "der neu___ Film (Nom.)", "left": "-e", "right": "-er", "correctSide": "left" },
+        { "prompt": "ein neu___ Film (Nom.)", "left": "-e", "right": "-er", "correctSide": "right" },
+        { "prompt": "das groß___ Haus (Nom.)", "left": "-e", "right": "-es", "correctSide": "left" },
+        { "prompt": "ein groß___ Haus (Nom.)", "left": "-e", "right": "-es", "correctSide": "right" },
+        { "prompt": "den alt___ Mann (Akk.)", "left": "-e", "right": "-en", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "«با یک دوست خوب» به آلمانی چیست؟",
+      "options": ["mit ein guter Freund", "mit einem guter Freund", "mit einem guten Freund", "mit einen guten Freund"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! Dativ با einem: صفت + en", "incorrect": "Dativ با einem: صفت + en" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc5",
+      "question": "«غذای سنتی خوشمزه است» (بدون Artikel) به آلمانی چیست؟",
+      "options": ["Traditionelle Essen schmeckt gut.", "Traditioneller Essen schmeckt gut.", "Traditionelles Essen schmeckt gut.", "Traditionellen Essen schmeckt gut."],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! Essen خنثی، بدون Artikel: -es", "incorrect": "Essen خنثی است، Nominativ بدون Artikel: -es" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید (Dativ با dem)",
+      "sentence": "In dem {0} Restaurant essen wir.",
+      "options": ["kleiner", "kleine", "kleines", "kleinen"],
+      "correctAnswers": [3],
+      "feedback": { "explanation": "با dem (Dativ): صفت + en" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید (بدون Artikel)",
+      "sentence": "{0} Wetter heute!",
+      "options": ["Schöner", "Schöne", "Schönes", "Schönen"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "Wetter خنثی، Nominativ بدون Artikel: -es" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Freund.", "guten", "einem", "mit", "Ich komme"],
+      "correctOrder": [4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Ich komme mit einem guten Freund.", "fa": "من با یک دوست خوب می‌آیم." }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "traditionell",
+      "translation": "سنتی",
+      "syllables": ["tra", "di", "tio", "nell"],
+      "distractors": ["tre", "da", "tia", "nall"]
+    },
+    {
+      "type": "dialog",
+      "id": "d3",
+      "title": "مقایسه",
+      "context": "درباره انتخاب صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Kaufst du das neue Handy?", "fa": "موبایل جدید را می‌خری؟" } },
+        { "speaker": "Ben", "text": { "de": "Nein, ich suche ein billiges Handy.", "fa": "نه، دنبال یک موبایل ارزان می‌گردم." } },
+        { "speaker": "Anna", "text": { "de": "Gute Qualität ist wichtig.", "fa": "کیفیت خوب مهم است." } },
+        { "speaker": "Ben", "text": { "de": "Ja, aber mit kleinem Budget.", "fa": "بله، اما با بودجه کم." } }
+      ]
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "پایانه صحیح را انتخاب کنید",
+      "words": [
+        { "de": "der ___ Film (Nom.)", "fa": "neu", "options": ["neue", "neuer", "neues", "neuen"], "correctIndex": 0 },
+        { "de": "ein ___ Film (Nom.)", "fa": "neu", "options": ["neue", "neuer", "neues", "neuen"], "correctIndex": 1 },
+        { "de": "___ Kaffee (Nom., بدون)", "fa": "heiß", "options": ["heiße", "heißer", "heißes", "heißen"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo4",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["gut.", "schmeckt", "Essen", "Traditionelles"],
+      "correctOrder": [3, 2, 1, 0],
+      "correctSentence": { "de": "Traditionelles Essen schmeckt gut.", "fa": "غذای سنتی خوشمزه است." }
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Der neue Film ist interessant.",
+      "translation": "فیلم جدید جالب است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Ich kaufe ein neues Auto.",
+      "translation": "من یک ماشین جدید می‌خرم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Frisches Brot schmeckt gut.",
+      "translation": "نان تازه خوشمزه است."
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "der neue Film", "fa": "فیلم جدید (با der)" },
+        { "de": "ein neuer Film", "fa": "یک فیلم جدید (با ein)" },
+        { "de": "neuer Film", "fa": "فیلم جدید (بدون Artikel)" },
+        { "de": "den neuen Film", "fa": "فیلم جدید (Akkusativ)" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp1",
+      "title": "آفرین! 🎉",
+      "message": "همه الگوهای صرف صفت را یاد گرفتید!",
+      "keyPoints": [
+        "با der/die/das: معمولاً -e (جمع/Dativ: -en)",
+        "با ein/eine: مذکر -er، خنثی -es، مونث -e",
+        "بدون Artikel: پایانه = پایانه حرف تعریف",
+        "Akkusativ مذکر: همیشه -en",
+        "Dativ با Artikel: همیشه -en"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "interessant", "fa": "جالب" } },
+        { "word": { "de": "wichtig", "fa": "مهم" } },
+        { "word": { "de": "schwer", "fa": "سخت / سنگین" } },
+        { "word": { "de": "leicht", "fa": "آسان / سبک" } },
+        { "word": { "de": "modern", "fa": "مدرن" } }
+      ]
+    }
+  ]
+}
