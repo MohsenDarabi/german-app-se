@@ -17,7 +17,7 @@
   "level": "A1",
   "module": 8,
   "lessonNumber": 2,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 19,
   "vocabulary": [
     {
@@ -479,8 +479,7 @@
           }
         }
       ],
-      "questionMode": "post-dialog",
-      "questions": [
+            "questions": [
         {
           "question": "الی چه میوه‌ای می‌خرد؟",
           "options": [
@@ -789,8 +788,7 @@
           }
         }
       ],
-      "questionMode": "post-dialog",
-      "questions": [
+            "questions": [
         {
           "question": "الی چه میوه‌ای دوست دارد؟",
           "options": [
@@ -944,6 +942,38 @@
           "fa": "پیاز"
         }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "Das Wort «Apfel» ist maskulin (der Apfel).",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست است! Apfel مذکر است: **der** Apfel"
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "«Kartoffel» ist ein Obst.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! سیب‌زمینی سبزیجات است نه میوه: Kartoffel ist **Gemüse**, kein Obst"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "سیب و موز دوست دارم.",
+      "sentenceTemplate": "{0} {1} {2} und {3}.",
+      "options": ["Ich", "mag", "Äpfel", "Bananen"],
+      "correctAnswers": [0, 1, 2, 3],
+      "correctTranslation": {
+        "de": "Ich mag Äpfel und Bananen.",
+        "fa": "سیب و موز دوست دارم."
+      }
     },
     {
       "type": "completion",

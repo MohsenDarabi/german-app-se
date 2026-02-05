@@ -17,7 +17,7 @@
   "level": "A1",
   "module": 8,
   "lessonNumber": 1,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 19,
   "vocabulary": [
     {
@@ -435,8 +435,7 @@
           }
         }
       ],
-      "questionMode": "post-dialog",
-      "questions": [
+            "questions": [
         {
           "question": "الی صبحانه چه می‌خورد؟",
           "options": [
@@ -702,8 +701,7 @@
           }
         }
       ],
-      "questionMode": "post-dialog",
-      "questions": [
+            "questions": [
         {
           "question": "الی قهوه‌اش را چطور می‌خواهد؟",
           "options": [
@@ -936,6 +934,38 @@
           "fa": "چای"
         }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "Das Wort «Brot» ist neutrum (das Brot).",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست است! Brot خنثی است: **das** Brot"
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "Man sagt «Ich trinke Käse» auf Deutsch.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! پنیر را می‌خوریم نه می‌نوشیم: Ich **esse** Käse (نه trinke)"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "من صبحانه نان با پنیر می‌خورم.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4} zum Frühstück.",
+      "options": ["Ich", "esse", "Brot", "mit", "Käse"],
+      "correctAnswers": [0, 1, 2, 3, 4],
+      "correctTranslation": {
+        "de": "Ich esse Brot mit Käse zum Frühstück.",
+        "fa": "من صبحانه نان با پنیر می‌خورم."
+      }
     },
     {
       "type": "completion",

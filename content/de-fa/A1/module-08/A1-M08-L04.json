@@ -17,7 +17,7 @@
   "level": "A1",
   "module": 8,
   "lessonNumber": 4,
-  "totalSteps": 42,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     {
@@ -491,8 +491,7 @@
           }
         }
       ],
-      "questionMode": "post-dialog",
-      "questions": [
+            "questions": [
         {
           "question": "الی چند نان کوچک خرید؟",
           "options": [
@@ -735,8 +734,7 @@
           }
         }
       ],
-      "questionMode": "post-dialog",
-      "questions": [
+            "questions": [
         {
           "question": "چقدر شیر می‌خواهند؟",
           "options": [
@@ -969,6 +967,38 @@
           "fa": "قیمت"
         }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "Das Verb «einkaufen» ist ein trennbares Verb.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست است! einkaufen فعل جداشدنی است: Ich **kaufe** im Supermarkt **ein**"
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "In Deutschland sind Plastiktüten im Supermarkt kostenlos.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! در آلمان کیسه‌های پلاستیکی رایگان نیستند: Eine Tüte kostet Geld"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "من در سوپرمارکت خرید می‌کنم.",
+      "sentenceTemplate": "{0} {1} im Supermarkt {2}.",
+      "options": ["Ich", "kaufe", "ein"],
+      "correctAnswers": [0, 1, 2],
+      "correctTranslation": {
+        "de": "Ich kaufe im Supermarkt ein.",
+        "fa": "من در سوپرمارکت خرید می‌کنم."
+      }
     },
     {
       "type": "completion",

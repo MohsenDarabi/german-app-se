@@ -17,7 +17,7 @@
   "level": "A1",
   "module": 8,
   "lessonNumber": 3,
-  "totalSteps": 42,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     {
@@ -472,8 +472,7 @@
           }
         }
       ],
-      "questionMode": "post-dialog",
-      "questions": [
+            "questions": [
         {
           "question": "آیا الی و تام رزرو کرده بودند؟",
           "options": [
@@ -705,8 +704,7 @@
           }
         }
       ],
-      "questionMode": "post-dialog",
-      "questions": [
+            "questions": [
         {
           "question": "الی چه پیش‌غذایی سفارش داد؟",
           "options": [
@@ -915,8 +913,7 @@
           }
         }
       ],
-      "questionMode": "post-dialog",
-      "questions": [
+            "questions": [
         {
           "question": "الی و تام چطور پرداخت کردند؟",
           "options": [
@@ -1070,6 +1067,38 @@
           "fa": "پرداخت کردن"
         }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "«Die Rechnung» bedeutet «صورتحساب».",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست است! die Rechnung = صورتحساب"
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "Der Nachtisch kommt vor dem Hauptgericht.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! دسر بعد از غذای اصلی می‌آید: Der Nachtisch kommt **nach** dem Hauptgericht"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "می‌خواهم سفارش بدهم.",
+      "sentenceTemplate": "{0} {1} {2}.",
+      "options": ["Ich", "möchte", "bestellen"],
+      "correctAnswers": [0, 1, 2],
+      "correctTranslation": {
+        "de": "Ich möchte bestellen.",
+        "fa": "می‌خواهم سفارش بدهم."
+      }
     },
     {
       "type": "completion",
