@@ -8,7 +8,7 @@
   "level": "A1",
   "module": 13,
   "lessonNumber": 4,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "mögen", "fa": "دوست داشتن", "grammar": { "pos": "verb" } },
@@ -153,10 +153,9 @@
         { "speaker": "Kellner", "text": { "de": "Möchten Sie auch etwas essen?", "fa": "چیزی هم برای خوردن می‌خواهید؟" } },
         { "speaker": "Eli", "text": { "de": "Nein, danke. Ich mag keinen Kuchen.", "fa": "نه، ممنون. کیک دوست ندارم." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "الی چه می‌خواهد؟", "options": ["چای", "قهوه", "کیک"], "correctIndex": 1 },
-        { "question": "الی قهوه را چطور دوست دارد؟", "options": ["بدون شیر", "با شیر", "سرد"], "correctIndex": 1 }
+        { "question": "الی چه می‌خواهد؟", "options": ["چای", "قهوه", "کیک"], "correctIndex": 1, "explanation": "الی گفت: Ich möchte einen Kaffee, bitte" },
+        { "question": "الی قهوه را چطور دوست دارد؟", "options": ["بدون شیر", "با شیر", "سرد"], "correctIndex": 1, "explanation": "الی گفت: Ich mag Kaffee mit Milch" }
       ]
     },
     {
@@ -250,10 +249,9 @@
         { "speaker": "Tom", "text": { "de": "Ja, gern! Ich möchte das neue Restaurant probieren.", "fa": "بله، با کمال میل! می‌خواهم رستوران جدید را امتحان کنم." } },
         { "speaker": "Eli", "text": { "de": "Super! Um wie viel Uhr?", "fa": "عالی! ساعت چند؟" } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "تام چه غذایی بیشتر دوست دارد؟", "options": ["پیتزا", "پاستا", "سالاد"], "correctIndex": 1 },
-        { "question": "آن‌ها می‌خواهند چه کار کنند؟", "options": ["در خانه غذا بخورند", "به رستوران بروند", "پیتزا سفارش بدهند"], "correctIndex": 1 }
+        { "question": "تام چه غذایی بیشتر دوست دارد؟", "options": ["پیتزا", "پاستا", "سالاد"], "correctIndex": 1, "explanation": "تام گفت: ich mag lieber Pasta" },
+        { "question": "آن‌ها می‌خواهند چه کار کنند؟", "options": ["در خانه غذا بخورند", "به رستوران بروند", "پیتزا سفارش بدهند"], "correctIndex": 1, "explanation": "تام گفت: Ich möchte das neue Restaurant probieren" }
       ]
     },
     {
@@ -401,6 +399,31 @@
         { "de": "gern", "fa": "با میل" },
         { "de": "lieber", "fa": "ترجیحاً" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "mögen برای بیان علاقه به چیزی استفاده می‌شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! mögen = دوست داشتن: Ich mag Kaffee." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "möchten برای درخواست رسمی و مؤدبانه استفاده می‌شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! möchten برای درخواست مؤدبانه است: Ich möchte einen Kaffee, bitte." }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "قهوه دوست دارم.",
+      "sentenceTemplate": "{0} {1} {2}.",
+      "options": ["Ich", "mag", "Kaffee"],
+      "correctAnswers": [0, 1, 2],
+      "correctTranslation": { "de": "Ich mag Kaffee.", "fa": "قهوه دوست دارم." }
     },
     {
       "type": "completion",

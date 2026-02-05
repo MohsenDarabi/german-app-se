@@ -8,7 +8,7 @@
   "level": "A1",
   "module": 13,
   "lessonNumber": 2,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "müssen", "fa": "باید/مجبور بودن", "grammar": { "pos": "verb" } },
@@ -145,10 +145,9 @@
         { "speaker": "Eli", "text": { "de": "Cool! Ich will auch ins Kino!", "fa": "عالی! من هم می‌خواهم به سینما بروم!" } },
         { "speaker": "Tom", "text": { "de": "Super! Aber ich muss um 22 Uhr zu Hause sein.", "fa": "عالی! ولی باید ساعت ۲۲ خانه باشم." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "تام اول چه کار باید بکند؟", "options": ["به سینما برود", "کار کند", "بخوابد"], "correctIndex": 1 },
-        { "question": "تام کی باید خانه باشد؟", "options": ["ساعت ۲۰", "ساعت ۲۱", "ساعت ۲۲"], "correctIndex": 2 }
+        { "question": "تام اول چه کار باید بکند؟", "options": ["به سینما برود", "کار کند", "بخوابد"], "correctIndex": 1, "explanation": "تام گفت: Ich muss zuerst arbeiten" },
+        { "question": "تام کی باید خانه باشد؟", "options": ["ساعت ۲۰", "ساعت ۲۱", "ساعت ۲۲"], "correctIndex": 2, "explanation": "تام گفت: ich muss um 22 Uhr zu Hause sein" }
       ]
     },
     {
@@ -251,10 +250,9 @@
         { "speaker": "Tom", "text": { "de": "Am Sonntag will ich Freunde treffen.", "fa": "یکشنبه می‌خواهم دوستان را ببینم." } },
         { "speaker": "Eli", "text": { "de": "Super! Ich will auch mitkommen!", "fa": "عالی! من هم می‌خواهم بیایم!" } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "الی آخر هفته چه می‌خواهد؟", "options": ["کار کند", "زیاد بخوابد", "درس بخواند"], "correctIndex": 1 },
-        { "question": "تام شنبه چه باید بکند؟", "options": ["کار کند", "بخوابد", "دوستان را ببیند"], "correctIndex": 0 }
+        { "question": "الی آخر هفته چه می‌خواهد؟", "options": ["کار کند", "زیاد بخوابد", "درس بخواند"], "correctIndex": 1, "explanation": "الی گفت: Ich will lange schlafen!" },
+        { "question": "تام شنبه چه باید بکند؟", "options": ["کار کند", "بخوابد", "دوستان را ببیند"], "correctIndex": 0, "explanation": "تام گفت: ich muss am Samstag arbeiten" }
       ]
     },
     {
@@ -400,6 +398,31 @@
         { "de": "heute", "fa": "امروز" },
         { "de": "jetzt", "fa": "الان" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "müssen برای بیان اجبار و ضرورت استفاده می‌شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! müssen = باید: Ich muss arbeiten." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "wollen برای بیان اجبار استفاده می‌شود.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! wollen = خواستن (تمایل)، نه اجبار: Ich will schlafen." }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "امروز باید کار کنم.",
+      "sentenceTemplate": "{0} {1} {2} {3}.",
+      "options": ["Ich", "muss", "heute", "arbeiten"],
+      "correctAnswers": [0, 1, 2, 3],
+      "correctTranslation": { "de": "Ich muss heute arbeiten.", "fa": "امروز باید کار کنم." }
     },
     {
       "type": "completion",

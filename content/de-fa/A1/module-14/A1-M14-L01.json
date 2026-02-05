@@ -8,7 +8,7 @@
   "level": "A1",
   "module": 14,
   "lessonNumber": 1,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "links", "fa": "چپ", "grammar": { "pos": "adverb" } },
@@ -146,10 +146,9 @@
         { "speaker": "Eli", "text": { "de": "Vielen Dank!", "fa": "خیلی ممنون!" } },
         { "speaker": "Mann", "text": { "de": "Bitte schön!", "fa": "خواهش می‌کنم!" } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "الی کجا می‌خواهد برود؟", "options": ["سوپرمارکت", "ایستگاه قطار", "بانک"], "correctIndex": 1 },
-        { "question": "ایستگاه قطار کنار چیست؟", "options": ["بانک", "هتل", "سوپرمارکت"], "correctIndex": 2 }
+        { "question": "الی کجا می‌خواهد برود؟", "options": ["سوپرمارکت", "ایستگاه قطار", "بانک"], "correctIndex": 1, "explanation": "الی پرسید: wo ist der Bahnhof?" },
+        { "question": "ایستگاه قطار کنار چیست؟", "options": ["بانک", "هتل", "سوپرمارکت"], "correctIndex": 2, "explanation": "مرد گفت: Der Bahnhof ist neben dem Supermarkt" }
       ]
     },
     {
@@ -239,10 +238,9 @@
         { "speaker": "Tom", "text": { "de": "Und dann?", "fa": "و بعد؟" } },
         { "speaker": "Frau", "text": { "de": "Dann rechts. Die Apotheke ist an der Ecke.", "fa": "بعد به راست. داروخانه سر گوشه است." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "تام دنبال چه می‌گردد؟", "options": ["بانک", "داروخانه", "سوپرمارکت"], "correctIndex": 1 },
-        { "question": "داروخانه کجاست؟", "options": ["کنار بانک", "سر گوشه", "روبروی هتل"], "correctIndex": 1 }
+        { "question": "تام دنبال چه می‌گردد؟", "options": ["بانک", "داروخانه", "سوپرمارکت"], "correctIndex": 1, "explanation": "تام گفت: ich suche eine Apotheke" },
+        { "question": "داروخانه کجاست؟", "options": ["کنار بانک", "سر گوشه", "روبروی هتل"], "correctIndex": 1, "explanation": "زن گفت: Die Apotheke ist an der Ecke" }
       ]
     },
     {
@@ -398,6 +396,31 @@
         { "de": "neben", "fa": "کنار" },
         { "de": "gegenüber", "fa": "روبروی" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای پرسیدن مکان از Was استفاده می‌کنیم.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! برای پرسیدن مکان از Wo استفاده می‌کنیم: Wo ist der Bahnhof?" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "gegenüber به معنی روبروی است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! مثال: Das Hotel ist gegenüber dem Bahnhof." }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "ایستگاه قطار کجاست؟",
+      "sentenceTemplate": "{0} {1} {2} {3}?",
+      "options": ["Wo", "ist", "der", "Bahnhof"],
+      "correctAnswers": [0, 1, 2, 3],
+      "correctTranslation": { "de": "Wo ist der Bahnhof?", "fa": "ایستگاه قطار کجاست؟" }
     },
     {
       "type": "completion",

@@ -8,7 +8,7 @@
   "level": "A1",
   "module": 13,
   "lessonNumber": 3,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "dürfen", "fa": "اجازه داشتن", "grammar": { "pos": "verb" } },
@@ -145,10 +145,9 @@
         { "speaker": "Eli", "text": { "de": "Super! Und darf man hier essen?", "fa": "عالی! و اینجا غذا خوردن مجاز است؟" } },
         { "speaker": "Wächter", "text": { "de": "Nein, essen und trinken ist verboten.", "fa": "نه، غذا خوردن و نوشیدن ممنوع است." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "آیا عکس گرفتن مجاز است؟", "options": ["بله", "نه", "فقط با فلش"], "correctIndex": 1 },
-        { "question": "چه کاری مجاز است؟", "options": ["عکس گرفتن", "غذا خوردن", "نقاشی کردن"], "correctIndex": 2 }
+        { "question": "آیا عکس گرفتن مجاز است؟", "options": ["بله", "نه", "فقط با فلش"], "correctIndex": 1, "explanation": "نگهبان گفت: Nein, das ist verboten" },
+        { "question": "چه کاری مجاز است؟", "options": ["عکس گرفتن", "غذا خوردن", "نقاشی کردن"], "correctIndex": 2, "explanation": "نگهبان گفت: Ja, zeichnen ist erlaubt" }
       ]
     },
     {
@@ -235,10 +234,9 @@
         { "speaker": "Eli", "text": { "de": "Okay. Und darf ich rauchen?", "fa": "باشه. و اجازه دارم سیگار بکشم؟" } },
         { "speaker": "Vermieter", "text": { "de": "Nein, rauchen ist in der Wohnung verboten.", "fa": "نه، سیگار کشیدن در آپارتمان ممنوع است." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "بعد از ساعت ۲۲ چه چیزی ممنوع است؟", "options": ["موسیقی", "بلند بودن", "حرف زدن"], "correctIndex": 1 },
-        { "question": "آیا حیوان خانگی مجاز است؟", "options": ["بله", "نه", "فقط گربه"], "correctIndex": 1 }
+        { "question": "بعد از ساعت ۲۲ چه چیزی ممنوع است؟", "options": ["موسیقی", "بلند بودن", "حرف زدن"], "correctIndex": 1, "explanation": "صاحبخانه گفت: nach 22 Uhr darfst du nicht laut sein" },
+        { "question": "آیا حیوان خانگی مجاز است؟", "options": ["بله", "نه", "فقط گربه"], "correctIndex": 1, "explanation": "صاحبخانه گفت: Haustiere sind leider verboten" }
       ]
     },
     {
@@ -402,6 +400,31 @@
       "options": ["dürfen", "darf", "darfst", "dürft"],
       "correctAnswers": [0],
       "feedback": { "explanation": "wir dürfen (اول شخص جمع)" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای پرسیدن اجازه از dürfen استفاده می‌کنیم: Darf ich...?",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! dürfen برای اجازه است: Darf ich hier parken?" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "verboten یعنی «مجاز» است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! verboten = ممنوع، erlaubt = مجاز" }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "اجازه دارم اینجا پارک کنم؟",
+      "sentenceTemplate": "{0} {1} {2} {3}?",
+      "options": ["Darf", "ich", "hier", "parken"],
+      "correctAnswers": [0, 1, 2, 3],
+      "correctTranslation": { "de": "Darf ich hier parken?", "fa": "اجازه دارم اینجا پارک کنم؟" }
     },
     {
       "type": "completion",

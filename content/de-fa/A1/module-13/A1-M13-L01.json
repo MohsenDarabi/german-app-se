@@ -8,7 +8,7 @@
   "level": "A1",
   "module": 13,
   "lessonNumber": 1,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "können", "fa": "توانستن", "grammar": { "pos": "verb" } },
@@ -151,10 +151,9 @@
         { "speaker": "Eli", "text": { "de": "Nein, aber ich kann Gitarre spielen.", "fa": "نه، ولی می‌توانم گیتار بزنم." } },
         { "speaker": "Tom", "text": { "de": "Cool! Ich kann leider kein Instrument spielen.", "fa": "عالی! متأسفانه من هیچ سازی نمی‌توانم بزنم." } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "تام چه کاری خوب بلد است؟", "options": ["پیانو زدن", "شنا کردن", "گیتار زدن"], "correctIndex": 1 },
-        { "question": "الی چه سازی می‌زند؟", "options": ["پیانو", "گیتار", "هیچکدام"], "correctIndex": 1 }
+        { "question": "تام چه کاری خوب بلد است؟", "options": ["پیانو زدن", "شنا کردن", "گیتار زدن"], "correctIndex": 1, "explanation": "تام گفت: ich kann sehr gut schwimmen" },
+        { "question": "الی چه سازی می‌زند؟", "options": ["پیانو", "گیتار", "هیچکدام"], "correctIndex": 1, "explanation": "الی گفت: ich kann Gitarre spielen" }
       ]
     },
     {
@@ -235,10 +234,9 @@
         { "speaker": "Lehrer", "text": { "de": "Sehr gut! Könnt ihr auch Deutsch sprechen?", "fa": "خیلی خوب! آلمانی هم بلدید صحبت کنید؟" } },
         { "speaker": "Eli", "text": { "de": "Ja, wir können ein bisschen Deutsch sprechen!", "fa": "بله، کمی آلمانی بلدیم!" } }
       ],
-      "questionMode": "post-dialog",
       "questions": [
-        { "question": "الی چه کاری خوب بلد است؟", "options": ["شنا کردن", "آشپزی کردن", "دوچرخه‌سواری"], "correctIndex": 1 },
-        { "question": "تام چه کارهایی بلد است؟", "options": ["آشپزی و شنا", "دوچرخه‌سواری و شنا", "پیانو و گیتار"], "correctIndex": 1 }
+        { "question": "الی چه کاری خوب بلد است؟", "options": ["شنا کردن", "آشپزی کردن", "دوچرخه‌سواری"], "correctIndex": 1, "explanation": "الی گفت: Ich kann gut kochen" },
+        { "question": "تام چه کارهایی بلد است؟", "options": ["آشپزی و شنا", "دوچرخه‌سواری و شنا", "پیانو و گیتار"], "correctIndex": 1, "explanation": "تام گفت: Ich kann Fahrrad fahren und schwimmen" }
       ]
     },
     {
@@ -401,6 +399,31 @@
         { "de": "Klavier spielen", "fa": "پیانو زدن" },
         { "de": "gut", "fa": "خوب" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جمله با können، فعل اصلی به آخر جمله می‌رود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! Ich kann gut schwimmen - فعل schwimmen در آخر می‌آید." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "صرف können برای ich و er یکسان است: ich kann, er kann",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! هر دو kann می‌گیرند: ich kann, er/sie/es kann" }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "می‌توانی شنا کنی؟",
+      "sentenceTemplate": "{0} {1} {2}?",
+      "options": ["Kannst", "du", "schwimmen"],
+      "correctAnswers": [0, 1, 2],
+      "correctTranslation": { "de": "Kannst du schwimmen?", "fa": "می‌توانی شنا کنی؟" }
     },
     {
       "type": "completion",
