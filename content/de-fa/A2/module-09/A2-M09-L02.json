@@ -1,0 +1,397 @@
+{
+  "id": "A2-M09-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Adjektivdeklination mit unbestimmtem Artikel", "fa": "صرف صفت با حرف تعریف نکره" },
+  "description": "یاد بگیرید چطور صفات با ein, eine تغییر می‌کنند",
+  "level": "A2",
+  "module": 9,
+  "lessonNumber": 2,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "jung", "fa": "جوان", "grammar": { "pos": "adjective" } },
+    { "de": "lang", "fa": "بلند / طولانی", "grammar": { "pos": "adjective" } },
+    { "de": "kurz", "fa": "کوتاه", "grammar": { "pos": "adjective" } },
+    { "de": "warm", "fa": "گرم", "grammar": { "pos": "adjective" } },
+    { "de": "kalt", "fa": "سرد", "grammar": { "pos": "adjective" } },
+    { "de": "schnell", "fa": "سریع", "grammar": { "pos": "adjective" } },
+    { "de": "langsam", "fa": "آهسته", "grammar": { "pos": "adjective" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "تفاوت با حرف تعریف معرفه",
+      "content": "📝 **ein/eine vs. der/die/das:**\n\nبا **ein/eine** صفت باید جنس را نشان دهد:\n\n**با der:** der groß**e** Mann\n**با ein:** ein groß**er** Mann\n\n💡 چون ein جنس را نشان نمی‌دهد، صفت این کار را می‌کند!",
+      "examples": [
+        { "de": "der neue Film, ein neuer Film", "fa": "فیلم جدید، یک فیلم جدید" },
+        { "de": "das kleine Kind, ein kleines Kind", "fa": "بچه کوچک، یک بچه کوچک" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "jung", "fa": "جوان" },
+      "example": { "text": { "de": "Ein junger Mann.", "fa": "یک مرد جوان." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "lang", "fa": "بلند / طولانی" },
+      "example": { "text": { "de": "Eine lange Straße.", "fa": "یک خیابان بلند." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "kurz", "fa": "کوتاه" },
+      "example": { "text": { "de": "Ein kurzer Weg.", "fa": "یک راه کوتاه." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "پایانه‌ها در Nominativ",
+      "content": "📝 **Nominativ با ein/eine:**\n\n| جنس | حرف تعریف + صفت + اسم |\n|-----|------------------------|\n| مذکر | ein groß**er** Mann |\n| مونث | eine groß**e** Frau |\n| خنثی | ein groß**es** Kind |\n\n💡 مذکر: **-er** / مونث: **-e** / خنثی: **-es**\n\n⚠️ جمع با ein وجود ندارد!",
+      "examples": [
+        { "de": "Ein neuer Computer ist teuer.", "fa": "یک کامپیوتر جدید گران است." },
+        { "de": "Eine kleine Wohnung ist billig.", "fa": "یک آپارتمان کوچک ارزان است." },
+        { "de": "Ein altes Haus steht dort.", "fa": "یک خانه قدیمی آنجا است." }
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "junger",
+      "translation": "جوان",
+      "syllables": ["jun", "ger"],
+      "distractors": ["jan", "gar", "jon", "gir"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«یک مرد بزرگ» (Nominativ) به آلمانی چیست؟",
+      "options": ["ein große Mann", "ein großer Mann", "ein großes Mann", "ein großen Mann"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! مذکر Nominativ با ein: صفت + er", "incorrect": "مذکر با ein در Nominativ: صفت + er" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "«یک بچه کوچک» (Nominativ) به آلمانی چیست؟",
+      "options": ["ein kleiner Kind", "ein kleine Kind", "ein kleines Kind", "ein kleinen Kind"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! خنثی Nominativ با ein: صفت + es", "incorrect": "خنثی با ein در Nominativ: صفت + es" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید (Nominativ)",
+      "sentence": "Ein {0} Auto fährt schnell.",
+      "options": ["schnelle", "schneller", "schnelles", "schnellen"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "ein + Auto (خنثی) = صفت + es" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید (Nominativ)",
+      "sentence": "Eine {0} Frau kommt.",
+      "options": ["junger", "junge", "junges", "jungen"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "eine + Frau (مونث) = صفت + e" }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "warm", "fa": "گرم" },
+      "example": { "text": { "de": "Ein warmer Tag.", "fa": "یک روز گرم." } }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در کافه",
+      "context": "سفارش می‌دهند",
+      "lines": [
+        { "speaker": "Kellner", "text": { "de": "Was möchten Sie?", "fa": "چه میل دارید؟" } },
+        { "speaker": "Gast", "text": { "de": "Ich möchte einen heißen Kaffee.", "fa": "یک قهوه داغ می‌خواهم." } },
+        { "speaker": "Kellner", "text": { "de": "Und dazu?", "fa": "و همراهش؟" } },
+        { "speaker": "Gast", "text": { "de": "Eine kleine Torte, bitte.", "fa": "یک کیک کوچک، لطفاً." } },
+        { "speaker": "Kellner", "text": { "de": "Ein warmes Croissant haben wir auch.", "fa": "یک کروسان گرم هم داریم." } }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "پایانه‌ها در Akkusativ",
+      "content": "📝 **Akkusativ با ein/eine:**\n\n| جنس | Nominativ | Akkusativ |\n|-----|-----------|------------|\n| مذکر | ein großer Mann | einen groß**en** Mann |\n| مونث | eine große Frau | eine große Frau |\n| خنثی | ein großes Kind | ein großes Kind |\n\n💡 فقط **مذکر** تغییر می‌کند: einen + صفت**-en**",
+      "examples": [
+        { "de": "Ich sehe einen jungen Mann.", "fa": "یک مرد جوان را می‌بینم." },
+        { "de": "Ich kaufe ein neues Handy.", "fa": "یک موبایل جدید می‌خرم." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "«یک ماشین سریع می‌خرم» به آلمانی چیست؟",
+      "options": ["Ich kaufe ein schneller Auto.", "Ich kaufe ein schnelles Auto.", "Ich kaufe einen schnellen Auto.", "Ich kaufe ein schnellen Auto."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! Auto خنثی است، Akkusativ = ein schnelles", "incorrect": "Auto خنثی است: ein schnelles Auto" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["ist.", "Mann", "junger", "Das", "ein"],
+      "correctOrder": [3, 4, 2, 1, 0],
+      "correctSentence": { "de": "Das ist ein junger Mann.", "fa": "این یک مرد جوان است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Buch.", "lese", "interessantes", "ein", "Ich"],
+      "correctOrder": [4, 1, 3, 2, 0],
+      "correctSentence": { "de": "Ich lese ein interessantes Buch.", "fa": "من یک کتاب جالب می‌خوانم." }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "kleines",
+      "translation": "کوچک",
+      "syllables": ["klei", "nes"],
+      "distractors": ["kla", "nas", "klo", "nis"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "kalt", "fa": "سرد" },
+      "example": { "text": { "de": "Ein kaltes Getränk.", "fa": "یک نوشیدنی سرد." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "schnell", "fa": "سریع" },
+      "example": { "text": { "de": "Ein schnelles Auto.", "fa": "یک ماشین سریع." } }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید (Akkusativ)",
+      "sentence": "Ich suche einen {0} Job.",
+      "options": ["guter", "gute", "gutes", "guten"],
+      "correctAnswers": [3],
+      "feedback": { "explanation": "einen + Job (مذکر Akkusativ) = صفت + en" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید (Akkusativ)",
+      "sentence": "Sie trinkt eine {0} Limonade.",
+      "options": ["kalter", "kalte", "kaltes", "kalten"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "eine + Limonade (مونث Akkusativ) = صفت + e" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s10",
+      "title": "پایانه‌ها در Dativ",
+      "content": "📝 **Dativ با ein/eine:**\n\nدر Dativ همه **-en** می‌گیرند:\n\n| جنس | Dativ |\n|-----|-------|\n| مذکر | einem groß**en** Mann |\n| مونث | einer groß**en** Frau |\n| خنثی | einem groß**en** Kind |\n\n💡 Dativ = همیشه **-en** (مثل حرف تعریف معرفه)",
+      "examples": [
+        { "de": "Ich helfe einem alten Mann.", "fa": "به یک مرد پیر کمک می‌کنم." },
+        { "de": "Sie gibt einer kleinen Katze Milch.", "fa": "او به یک گربه کوچک شیر می‌دهد." }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "جستجوی آپارتمان",
+      "context": "درباره آپارتمان صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Makler", "text": { "de": "Ich zeige Ihnen eine schöne Wohnung.", "fa": "یک آپارتمان زیبا به شما نشان می‌دهم." } },
+        { "speaker": "Kunde", "text": { "de": "Hat sie einen großen Balkon?", "fa": "بالکن بزرگ دارد؟" } },
+        { "speaker": "Makler", "text": { "de": "Ja, mit einem kleinen Garten.", "fa": "بله، با یک باغچه کوچک." } },
+        { "speaker": "Kunde", "text": { "de": "Perfekt! Ich suche eine ruhige Gegend.", "fa": "عالی! دنبال یک منطقه آرام می‌گردم." } }
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "warmen",
+      "translation": "گرم",
+      "syllables": ["war", "men"],
+      "distractors": ["wor", "man", "wir", "mon"]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "جنس را با پایانه Nominativ وصل کنید",
+      "items": [
+        { "id": "i1", "text": "ein ___ Mann (مذکر)" },
+        { "id": "i2", "text": "eine ___ Frau (مونث)" },
+        { "id": "i3", "text": "ein ___ Kind (خنثی)" },
+        { "id": "i4", "text": "einen ___ Mann (Akk.)" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "großer" },
+        { "id": "m2", "text": "große" },
+        { "id": "m3", "text": "großes" },
+        { "id": "m4", "text": "großen" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"],
+        ["i4", "m4"]
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "پایانه صحیح با ein/eine",
+      "instruction": "پایانه صحیح صفت را انتخاب کنید",
+      "questions": [
+        { "prompt": "ein neu___ Computer (Nom.)", "left": "-er", "right": "-es", "correctSide": "left" },
+        { "prompt": "eine klein___ Katze (Nom.)", "left": "-e", "right": "-er", "correctSide": "left" },
+        { "prompt": "ein groß___ Haus (Nom.)", "left": "-er", "right": "-es", "correctSide": "right" },
+        { "prompt": "einen alt___ Mann (Akk.)", "left": "-er", "right": "-en", "correctSide": "right" },
+        { "prompt": "einem jung___ Kind (Dat.)", "left": "-es", "right": "-en", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s11",
+      "word": { "de": "langsam", "fa": "آهسته" },
+      "example": { "text": { "de": "Ein langsamer Zug.", "fa": "یک قطار آهسته." } }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "«به یک دوست خوب کمک می‌کنم» به آلمانی چیست؟",
+      "options": ["Ich helfe ein guter Freund.", "Ich helfe einem guter Freund.", "Ich helfe einem guten Freund.", "Ich helfe einen guten Freund."],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! مذکر Dativ: einem + صفت-en", "incorrect": "Dativ مذکر: einem + صفت + en" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc5",
+      "question": "کدام جمله درست است؟",
+      "options": ["Das ist eine schöner Blume.", "Das ist eine schöne Blume.", "Das ist eine schönes Blume.", "Das ist ein schöne Blume."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! Blume مونث: eine schöne", "incorrect": "Blume مونث است: eine + صفت + e" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید (Dativ)",
+      "sentence": "Er wohnt in einem {0} Haus.",
+      "options": ["alter", "alte", "altes", "alten"],
+      "correctAnswers": [3],
+      "feedback": { "explanation": "einem + Haus (خنثی Dativ) = صفت + en" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید (Nominativ)",
+      "sentence": "Ein {0} Tag beginnt.",
+      "options": ["neuer", "neue", "neues", "neuen"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "ein + Tag (مذکر Nominativ) = صفت + er" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Freund.", "guten", "helfe", "einem", "Ich"],
+      "correctOrder": [4, 2, 3, 1, 0],
+      "correctSentence": { "de": "Ich helfe einem guten Freund.", "fa": "من به یک دوست خوب کمک می‌کنم." }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "schnelles",
+      "translation": "سریع",
+      "syllables": ["schnel", "les"],
+      "distractors": ["schnal", "las", "schnol", "lis"]
+    },
+    {
+      "type": "dialog",
+      "id": "d3",
+      "title": "خرید لباس",
+      "context": "در فروشگاه لباس",
+      "lines": [
+        { "speaker": "Verkäufer", "text": { "de": "Kann ich Ihnen helfen?", "fa": "می‌توانم کمکتان کنم؟" } },
+        { "speaker": "Kunde", "text": { "de": "Ich suche einen warmen Pullover.", "fa": "دنبال یک پلیور گرم می‌گردم." } },
+        { "speaker": "Verkäufer", "text": { "de": "Hier ist ein schöner Pullover.", "fa": "اینجا یک پلیور زیبا هست." } },
+        { "speaker": "Kunde", "text": { "de": "Haben Sie auch eine lange Hose?", "fa": "شلوار بلند هم دارید؟" } },
+        { "speaker": "Verkäufer", "text": { "de": "Ja, in einem dunklen Blau.", "fa": "بله، به رنگ آبی تیره." } }
+      ]
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "پایانه صحیح را انتخاب کنید",
+      "words": [
+        { "de": "ein ___ Mann (Nom.)", "fa": "jung", "options": ["junger", "junge", "junges", "jungen"], "correctIndex": 0 },
+        { "de": "ein ___ Kind (Nom.)", "fa": "klein", "options": ["kleiner", "kleine", "kleines", "kleinen"], "correctIndex": 2 },
+        { "de": "einen ___ Film (Akk.)", "fa": "gut", "options": ["guter", "gute", "gutes", "guten"], "correctIndex": 3 }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo4",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Jacke.", "lange", "kaufe", "eine", "Ich"],
+      "correctOrder": [4, 2, 3, 1, 0],
+      "correctSentence": { "de": "Ich kaufe eine lange Jacke.", "fa": "من یک ژاکت بلند می‌خرم." }
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ein junger Mann kommt.",
+      "translation": "یک مرد جوان می‌آید."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Ich kaufe ein neues Auto.",
+      "translation": "من یک ماشین جدید می‌خرم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Sie wohnt in einer kleinen Wohnung.",
+      "translation": "او در یک آپارتمان کوچک زندگی می‌کند."
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "ein großer Mann", "fa": "یک مرد بزرگ (مذکر)" },
+        { "de": "eine große Frau", "fa": "یک زن بزرگ (مونث)" },
+        { "de": "ein großes Kind", "fa": "یک بچه بزرگ (خنثی)" },
+        { "de": "einen großen Mann", "fa": "یک مرد بزرگ (مفعول)" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp1",
+      "title": "آفرین! 🎉",
+      "message": "صرف صفت با حرف تعریف نکره را یاد گرفتید!",
+      "keyPoints": [
+        "Nominativ مذکر: ein + صفت-er",
+        "Nominativ مونث: eine + صفت-e",
+        "Nominativ خنثی: ein + صفت-es",
+        "Akkusativ مذکر: einen + صفت-en",
+        "Dativ: همیشه -en"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "jung", "fa": "جوان" } },
+        { "word": { "de": "lang", "fa": "بلند / طولانی" } },
+        { "word": { "de": "kurz", "fa": "کوتاه" } },
+        { "word": { "de": "warm", "fa": "گرم" } },
+        { "word": { "de": "kalt", "fa": "سرد" } }
+      ]
+    }
+  ]
+}

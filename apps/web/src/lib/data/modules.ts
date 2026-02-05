@@ -733,6 +733,12 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         title: "Mit bestimmtem Artikel - با حرف تعریف معرفه",
         description: "یاد بگیرید چطور صفات با der, die, das تغییر می‌کنند.",
         path: "/learn/de-fa/A2/A2-M09-L01"
+      },
+      {
+        id: "A2-M09-L02",
+        title: "Mit unbestimmtem Artikel - با حرف تعریف نکره",
+        description: "یاد بگیرید چطور صفات با ein, eine تغییر می‌کنند.",
+        path: "/learn/de-fa/A2/A2-M09-L02"
       }
     ]
   }
