@@ -17,7 +17,7 @@
   "level": "A1",
   "module": 6,
   "lessonNumber": 1,
-  "totalSteps": 38,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     {
@@ -274,8 +274,7 @@
           "correctIndex": 1,
           "explanation": "لیزا پیشنهاد داد: «Um halb vier?»"
         }
-      ],
-      "questionMode": "post-dialog"
+      ]
     },
     {
       "type": "new-word",
@@ -568,8 +567,7 @@
           "correctIndex": 1,
           "explanation": "الی گفت: «Um halb acht.»"
         }
-      ],
-      "questionMode": "post-dialog"
+      ]
     },
     {
       "type": "new-word",
@@ -833,6 +831,38 @@
           "fa": "دیر"
         }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "«halb drei» bedeutet 3:30 Uhr.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! «halb drei» یعنی ۲:۳۰ (نیم ساعت قبل از سه). در آلمانی halb به ساعت بعدی اشاره می‌کند."
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "Für eine Uhrzeit benutzt man «um»: um drei Uhr.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! برای بیان ساعت دقیق از «um» استفاده می‌کنیم: um drei Uhr = ساعت سه."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "ساعت سه و ربع است.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4}.",
+      "options": ["Es", "ist", "Viertel", "nach", "drei"],
+      "correctAnswers": [0, 1, 2, 3, 4],
+      "correctTranslation": {
+        "de": "Es ist Viertel nach drei.",
+        "fa": "ساعت سه و ربع است."
+      }
     },
     {
       "type": "completion",

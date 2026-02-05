@@ -17,7 +17,7 @@
   "level": "A1",
   "module": 6,
   "lessonNumber": 3,
-  "totalSteps": 42,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     {
@@ -426,8 +426,7 @@
           }
         }
       ],
-      "questionMode": "post-dialog",
-      "questions": [
+            "questions": [
         {
           "question": "تولد تام در چه ماهی است؟",
           "options": [
@@ -703,8 +702,7 @@
           }
         }
       ],
-      "questionMode": "post-dialog",
-      "questions": [
+            "questions": [
         {
           "question": "الی کدام فصل را دوست دارد؟",
           "options": [
@@ -947,6 +945,38 @@
           "fa": "زمستان"
         }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "Für Monate benutzt man «im»: im Januar.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! برای ماه‌ها از «im» استفاده می‌کنیم: im Januar, im Februar, ..."
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "Die Jahreszeiten sind feminin (die).",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! فصل‌ها در آلمانی مذکر هستند: der Frühling, der Sommer, der Herbst, der Winter."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "من عاشق تابستانم.",
+      "sentenceTemplate": "{0} {1} {2} {3}.",
+      "options": ["Ich", "liebe", "den", "Sommer"],
+      "correctAnswers": [0, 1, 2, 3],
+      "correctTranslation": {
+        "de": "Ich liebe den Sommer.",
+        "fa": "من عاشق تابستانم."
+      }
     },
     {
       "type": "completion",

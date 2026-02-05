@@ -17,7 +17,7 @@
   "level": "A1",
   "module": 6,
   "lessonNumber": 4,
-  "totalSteps": 42,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     {
@@ -473,8 +473,7 @@
           }
         }
       ],
-      "questionMode": "post-dialog",
-      "questions": [
+            "questions": [
         {
           "question": "الی چه ساعتی بیدار می‌شود؟",
           "options": [
@@ -731,8 +730,7 @@
           }
         }
       ],
-      "questionMode": "post-dialog",
-      "questions": [
+            "questions": [
         {
           "question": "الکس از چه ساعتی تا چه ساعتی کار می‌کند؟",
           "options": [
@@ -984,6 +982,38 @@
           "fa": "شام"
         }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "Bei trennbaren Verben geht das Präfix ans Ende: «Ich stehe auf.»",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! در فعل‌های جداشدنی، پیشوند به آخر جمله می‌رود: aufstehen → Ich stehe auf."
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "«Der Morgen» und «der Abend» sind feminin.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! Morgen و Abend هر دو مذکر هستند: der Morgen, der Abend."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "من ساعت هفت بیدار می‌شوم.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4} {5}.",
+      "options": ["Ich", "stehe", "um", "sieben", "Uhr", "auf"],
+      "correctAnswers": [0, 1, 2, 3, 4, 5],
+      "correctTranslation": {
+        "de": "Ich stehe um sieben Uhr auf.",
+        "fa": "من ساعت هفت بیدار می‌شوم."
+      }
     },
     {
       "type": "completion",

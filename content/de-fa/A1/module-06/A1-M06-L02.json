@@ -17,7 +17,7 @@
   "level": "A1",
   "module": 6,
   "lessonNumber": 2,
-  "totalSteps": 41,
+  "totalSteps": 43,
   "estimatedMinutes": 22,
   "vocabulary": [
     {
@@ -450,8 +450,7 @@
           "correctIndex": 1,
           "explanation": "لیزا گفت: «Am Freitag gehe ich ins Kino.»"
         }
-      ],
-      "questionMode": "post-dialog"
+      ]
     },
     {
       "type": "grammar-tip",
@@ -736,8 +735,7 @@
           "correctIndex": 1,
           "explanation": "الی گفت: «Ja, übermorgen geht.»"
         }
-      ],
-      "questionMode": "post-dialog"
+      ]
     },
     {
       "type": "matching",
@@ -957,6 +955,38 @@
           "fa": "دیروز"
         }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "Alle Wochentage sind maskulin (der).",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! همه روزهای هفته در آلمانی مذکر هستند: der Montag, der Dienstag, ..."
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "«Im Montag» ist richtig.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! برای روزهای هفته از «am» استفاده می‌کنیم: am Montag (نه im Montag)."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "امروز دوشنبه است.",
+      "sentenceTemplate": "{0} {1} {2}.",
+      "options": ["Heute", "ist", "Montag"],
+      "correctAnswers": [0, 1, 2],
+      "correctTranslation": {
+        "de": "Heute ist Montag.",
+        "fa": "امروز دوشنبه است."
+      }
     },
     {
       "type": "completion",
