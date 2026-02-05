@@ -1,0 +1,460 @@
+{
+  "id": "A2-M10-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Komparativ - Vergleiche", "fa": "صفت تفضیلی - مقایسه" },
+  "description": "یادگیری ساخت صفت تفضیلی در آلمانی: größer, kleiner, besser و استفاده از als برای مقایسه",
+  "level": "A2",
+  "module": 10,
+  "lessonNumber": 1,
+  "totalSteps": 42,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "größer", "fa": "بزرگ‌تر", "grammar": { "pos": "adjective", "form": "comparative" } },
+    { "de": "kleiner", "fa": "کوچک‌تر", "grammar": { "pos": "adjective", "form": "comparative" } },
+    { "de": "schneller", "fa": "سریع‌تر", "grammar": { "pos": "adjective", "form": "comparative" } },
+    { "de": "langsamer", "fa": "کندتر / آهسته‌تر", "grammar": { "pos": "adjective", "form": "comparative" } },
+    { "de": "besser", "fa": "بهتر", "grammar": { "pos": "adjective", "form": "comparative" } },
+    { "de": "älter", "fa": "مسن‌تر / قدیمی‌تر", "grammar": { "pos": "adjective", "form": "comparative" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "صفت تفضیلی (Komparativ)",
+      "content": "📝 **برای مقایسه دو چیز:**\n\n**قانون اصلی:** صفت + **-er**\n\n• schnell → schnell**er** (سریع‌تر)\n• klein → klein**er** (کوچک‌تر)\n• billig → billig**er** (ارزان‌تر)\n\n💡 مثل فارسی که «-تر» اضافه می‌کنیم!",
+      "examples": [
+        { "de": "Das Auto ist schneller.", "fa": "این ماشین سریع‌تر است." },
+        { "de": "Mein Bruder ist größer.", "fa": "برادرم بزرگ‌تر است." },
+        { "de": "Diese Tasche ist billiger.", "fa": "این کیف ارزان‌تر است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "größer", "fa": "بزرگ‌تر" },
+      "example": { "text": { "de": "Berlin ist größer als München.", "fa": "برلین از مونیخ بزرگ‌تر است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "größer",
+      "translation": "بزرگ‌تر",
+      "syllables": ["grö", "ßer"],
+      "distractors": ["gra", "ser", "zer"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "kleiner", "fa": "کوچک‌تر" },
+      "example": { "text": { "de": "Meine Wohnung ist kleiner.", "fa": "آپارتمان من کوچک‌تر است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "kleiner",
+      "translation": "کوچک‌تر",
+      "syllables": ["klei", "ner"],
+      "distractors": ["kla", "nar", "ker"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "schneller", "fa": "سریع‌تر" },
+      "example": { "text": { "de": "Der Zug ist schneller als der Bus.", "fa": "قطار از اتوبوس سریع‌تر است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl-schneller",
+      "word": "schneller",
+      "translation": "سریع‌تر",
+      "syllables": ["schnel", "ler"],
+      "distractors": ["schnal", "lar", "lan"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "مقایسه با als",
+      "content": "📝 **برای مقایسه از als استفاده می‌کنیم:**\n\n**ساختار:** A ist [صفت تفضیلی] **als** B\n\n💡 als = از (در مقایسه)\n\n⚠️ نکته: بعد از als حالت Nominativ می‌آید",
+      "examples": [
+        { "de": "Tom ist älter als Lisa.", "fa": "تام از لیزا بزرگ‌تر است." },
+        { "de": "Das Buch ist teurer als die Zeitschrift.", "fa": "کتاب از مجله گران‌تر است." },
+        { "de": "Ich laufe schneller als du.", "fa": "من از تو سریع‌تر می‌دوم." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«سریع‌تر» به آلمانی چیست؟",
+      "options": ["schnell", "schneller", "schnellst", "am schnellsten"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! schnell + er = schneller", "incorrect": "صفت تفضیلی: صفت + er → schneller" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله درست است؟",
+      "options": ["Berlin ist größer wie München.", "Berlin ist größer als München.", "Berlin ist größer von München.", "Berlin ist größer zu München."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! برای مقایسه از als استفاده می‌کنیم", "incorrect": "در مقایسه: größer als (نه wie یا von)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das Auto ist {0} als das Fahrrad.",
+      "options": ["schnell", "schneller", "schnellste", "schnellen"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "برای مقایسه: schneller (سریع‌تر)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Mein Haus ist {0} als dein Haus.",
+      "options": ["groß", "größer", "größte", "großer"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "صفت تفضیلی groß → größer (با Umlaut)" }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "langsamer", "fa": "کندتر / آهسته‌تر" },
+      "example": { "text": { "de": "Die Schnecke ist langsamer als der Hase.", "fa": "حلزون از خرگوش کندتر است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "langsamer",
+      "translation": "کندتر",
+      "syllables": ["lang", "sa", "mer"],
+      "distractors": ["lon", "se", "mar"]
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "مقایسه شهرها",
+      "context": "الی و تام درباره شهرها صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Eli", "text": { "de": "Ich war letzte Woche in Hamburg.", "fa": "هفته گذشته هامبورگ بودم." } },
+        { "speaker": "Tom", "text": { "de": "Ist Hamburg größer als Köln?", "fa": "آیا هامبورگ از کلن بزرگ‌تر است؟" } },
+        { "speaker": "Eli", "text": { "de": "Ja, aber Berlin ist noch größer.", "fa": "بله، اما برلین از آن هم بزرگ‌تر است." } },
+        { "speaker": "Tom", "text": { "de": "Und ist Hamburg teurer als Köln?", "fa": "و آیا هامبورگ از کلن گران‌تر است؟" } },
+        { "speaker": "Eli", "text": { "de": "Ja, die Mieten sind viel höher.", "fa": "بله، اجاره‌ها خیلی بالاتر هستند." } }
+      ],
+      "questions": [
+        {
+          "question": "کدام شهر بزرگ‌تر است؟",
+          "options": ["کلن", "هامبورگ", "مونیخ"],
+          "correctIndex": 1,
+          "explanation": "الی گفت هامبورگ از کلن بزرگ‌تر است: Hamburg größer als Köln"
+        },
+        {
+          "question": "بزرگ‌ترین شهر کدام است؟",
+          "options": ["هامبورگ", "کلن", "برلین"],
+          "correctIndex": 2,
+          "explanation": "الی گفت: Berlin ist noch größer (برلین از همه بزرگ‌تر)"
+        }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "صفات با Umlaut",
+      "content": "📝 **برخی صفات تک‌هجایی در تفضیلی Umlaut می‌گیرند:**\n\n| پایه | تفضیلی |\n|------|--------|\n| alt (قدیمی) | **ä**lter |\n| groß (بزرگ) | gr**ö**ßer |\n| jung (جوان) | j**ü**nger |\n| kalt (سرد) | k**ä**lter |\n| warm (گرم) | w**ä**rmer |\n\n💡 a → ä، o → ö، u → ü",
+      "examples": [
+        { "de": "Mein Vater ist älter als meine Mutter.", "fa": "پدرم از مادرم مسن‌تر است." },
+        { "de": "Im Winter ist es kälter.", "fa": "در زمستان سردتر است." },
+        { "de": "Die Suppe ist wärmer.", "fa": "سوپ گرم‌تر است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "älter", "fa": "مسن‌تر / قدیمی‌تر" },
+      "example": { "text": { "de": "Mein Opa ist älter als mein Vater.", "fa": "پدربزرگم از پدرم مسن‌تر است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "älter",
+      "translation": "مسن‌تر",
+      "syllables": ["äl", "ter"],
+      "distractors": ["al", "tar", "el"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "«سردتر» به آلمانی چیست؟",
+      "options": ["kalter", "kälter", "kalterer", "kälterer"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! kalt → kälter (با Umlaut)", "incorrect": "صفات تک‌هجایی با a: kalt → kälter" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["als", "älter", "du.", "bin", "Ich"],
+      "correctOrder": [4, 3, 1, 0, 2],
+      "correctSentence": { "de": "Ich bin älter als du.", "fa": "من از تو بزرگ‌ترم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["schneller.", "ist", "Zug", "Der", "viel"],
+      "correctOrder": [3, 2, 1, 4, 0],
+      "correctSentence": { "de": "Der Zug ist viel schneller.", "fa": "قطار خیلی سریع‌تر است." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "صفات بی‌قاعده",
+      "content": "📝 **این صفات شکل خاص دارند:**\n\n| پایه | تفضیلی |\n|------|--------|\n| gut (خوب) | **besser** |\n| viel (زیاد) | **mehr** |\n| gern (با میل) | **lieber** |\n| hoch (بلند) | **höher** |\n| nah (نزدیک) | **näher** |\n\n⚠️ این‌ها را باید حفظ کنید!",
+      "examples": [
+        { "de": "Dieses Restaurant ist besser.", "fa": "این رستوران بهتر است." },
+        { "de": "Ich trinke lieber Tee.", "fa": "من ترجیح می‌دهم چای بنوشم." },
+        { "de": "Er verdient mehr Geld.", "fa": "او پول بیشتری درمی‌آورد." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": { "de": "besser", "fa": "بهتر" },
+      "example": { "text": { "de": "Heute geht es mir besser.", "fa": "امروز حالم بهتر است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "besser",
+      "translation": "بهتر",
+      "syllables": ["bes", "ser"],
+      "distractors": ["bas", "sar", "zer"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "«بهتر» به آلمانی چیست؟",
+      "options": ["guter", "besser", "bester", "mehr gut"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! gut → besser (بی‌قاعده)", "incorrect": "gut یک صفت بی‌قاعده است: gut → besser" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc5",
+      "question": "«بیشتر / زیادتر» به آلمانی چیست؟",
+      "options": ["vieler", "mehr", "mehrer", "vielen"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! viel → mehr (بی‌قاعده)", "incorrect": "viel بی‌قاعده است: viel → mehr" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Dieses Buch ist {0} als das andere.",
+      "options": ["gut", "besser", "bester", "guter"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "gut → besser (بی‌قاعده)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich esse {0} Pizza als Pasta.",
+      "options": ["gern", "lieber", "liebst", "gerner"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "gern → lieber (ترجیح دادن)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "انتخاب رستوران",
+      "context": "لیزا و الکس می‌خواهند شام بخورند",
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Wohin gehen wir essen?", "fa": "کجا برویم غذا بخوریم؟" } },
+        { "speaker": "Alex", "text": { "de": "Das italienische Restaurant ist besser.", "fa": "رستوران ایتالیایی بهتر است." } },
+        { "speaker": "Lisa", "text": { "de": "Aber das chinesische ist billiger.", "fa": "اما رستوران چینی ارزان‌تر است." } },
+        { "speaker": "Alex", "text": { "de": "Das stimmt. Und es ist auch näher.", "fa": "درسته. و نزدیک‌تر هم هست." } },
+        { "speaker": "Lisa", "text": { "de": "Okay, dann gehen wir zum Chinesen!", "fa": "باشه، پس بریم چینی!" } }
+      ],
+      "questions": [
+        {
+          "question": "کدام رستوران بهتر است؟",
+          "options": ["چینی", "ایتالیایی", "آلمانی"],
+          "correctIndex": 1,
+          "explanation": "الکس گفت: Das italienische Restaurant ist besser"
+        },
+        {
+          "question": "چرا رستوران چینی را انتخاب کردند؟",
+          "options": ["بهتر است", "ارزان‌تر و نزدیک‌تر است", "غذایش خوشمزه‌تر است"],
+          "correctIndex": 1,
+          "explanation": "لیزا گفت billiger و الکس گفت näher"
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "صفت پایه را با تفضیلی وصل کنید",
+      "items": [
+        { "id": "i1", "text": "gut" },
+        { "id": "i2", "text": "groß" },
+        { "id": "i3", "text": "alt" },
+        { "id": "i4", "text": "viel" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "besser" },
+        { "id": "m2", "text": "größer" },
+        { "id": "m3", "text": "älter" },
+        { "id": "m4", "text": "mehr" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"],
+        ["i4", "m4"]
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "صفت تفضیلی",
+      "instruction": "شکل تفضیلی درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "schnell →", "left": "schneller", "right": "schnellerer", "correctSide": "left" },
+        { "prompt": "kalt →", "left": "kalter", "right": "kälter", "correctSide": "right" },
+        { "prompt": "gut →", "left": "guter", "right": "besser", "correctSide": "right" },
+        { "prompt": "klein →", "left": "kleiner", "right": "kleinner", "correctSide": "left" },
+        { "prompt": "jung →", "left": "junger", "right": "jünger", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Restaurant.", "besser", "als", "Das chinesische", "ist", "das italienische"],
+      "correctOrder": [3, 4, 1, 2, 5, 0],
+      "correctSentence": { "de": "Das chinesische ist besser als das italienische Restaurant.", "fa": "رستوران چینی از ایتالیایی بهتر است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Meine Schwester ist {0} als ich.",
+      "options": ["jung", "jünger", "jungerer", "jüngerer"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "jung → jünger (با Umlaut)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Der Berg ist {0} als das Haus.",
+      "options": ["hoch", "hoher", "höher", "höchst"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "hoch → höher (بی‌قاعده)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d3",
+      "title": "خرید لباس",
+      "context": "تام و الی در فروشگاه هستند",
+      "lines": [
+        { "speaker": "Tom", "text": { "de": "Welches T-Shirt gefällt dir besser?", "fa": "کدام تی‌شرت بیشتر خوشت می‌آید؟" } },
+        { "speaker": "Eli", "text": { "de": "Das blaue ist schöner als das rote.", "fa": "آبی از قرمز قشنگ‌تر است." } },
+        { "speaker": "Tom", "text": { "de": "Aber das rote ist billiger.", "fa": "اما قرمز ارزان‌تر است." } },
+        { "speaker": "Eli", "text": { "de": "Qualität ist wichtiger als der Preis!", "fa": "کیفیت از قیمت مهم‌تر است!" } }
+      ],
+      "questions": [
+        {
+          "question": "کدام تی‌شرت قشنگ‌تر است؟",
+          "options": ["قرمز", "آبی", "سبز"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: Das blaue ist schöner als das rote"
+        },
+        {
+          "question": "به نظر الی چه چیزی مهم‌تر است؟",
+          "options": ["قیمت", "رنگ", "کیفیت"],
+          "correctIndex": 2,
+          "explanation": "الی گفت: Qualität ist wichtiger als der Preis"
+        }
+      ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای ساختن صفت تفضیلی در آلمانی، پایانه -er به صفت اضافه می‌شود.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! schnell → schneller، klein → kleiner"
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "صفت تفضیلی gut برابر با guter است.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! gut یک صفت بی‌قاعده است: gut → besser"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "برلین از مونیخ بزرگ‌تر است.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4}.",
+      "options": ["als", "ist", "Berlin", "München", "größer"],
+      "correctAnswers": [2, 1, 4, 0, 3],
+      "correctTranslation": {
+        "de": "Berlin ist größer als München.",
+        "fa": "برلین از مونیخ بزرگ‌تر است."
+      }
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Das Auto ist schneller als das Fahrrad.",
+      "translation": "ماشین از دوچرخه سریع‌تر است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Mein Bruder ist älter als ich.",
+      "translation": "برادرم از من بزرگ‌تر است."
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "größer", "fa": "بزرگ‌تر" },
+        { "de": "kleiner", "fa": "کوچک‌تر" },
+        { "de": "schneller", "fa": "سریع‌تر" },
+        { "de": "besser", "fa": "بهتر" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp1",
+      "title": "آفرین! 🎉",
+      "message": "صفت تفضیلی در آلمانی را یاد گرفتید!",
+      "keyPoints": [
+        "صفت + er = تفضیلی (schneller، kleiner)",
+        "صفات تک‌هجایی اغلب Umlaut می‌گیرند (alt → älter)",
+        "برای مقایسه از als استفاده می‌کنیم",
+        "صفات بی‌قاعده: gut → besser، viel → mehr",
+        "gern → lieber (ترجیح دادن)"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "größer", "fa": "بزرگ‌تر" } },
+        { "word": { "de": "kleiner", "fa": "کوچک‌تر" } },
+        { "word": { "de": "schneller", "fa": "سریع‌تر" } },
+        { "word": { "de": "langsamer", "fa": "کندتر" } },
+        { "word": { "de": "besser", "fa": "بهتر" } },
+        { "word": { "de": "älter", "fa": "مسن‌تر" } }
+      ]
+    }
+  ]
+}

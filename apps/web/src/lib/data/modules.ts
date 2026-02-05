@@ -753,6 +753,37 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/A2/A2-M09-L04"
       }
     ]
+  },
+  {
+    id: "module-10",
+    title: "بخش ۱۰: مقایسه پیشرفته (Komparativ und Superlativ)",
+    level: "A2",
+    lessons: [
+      {
+        id: "A2-M10-L01",
+        title: "Komparativ - صفت تفضیلی",
+        description: "یاد بگیرید چطور چیزها را با صفت تفضیلی مقایسه کنید: größer، besser، schneller.",
+        path: "/learn/de-fa/A2/A2-M10-L01"
+      },
+      {
+        id: "A2-M10-L02",
+        title: "Superlativ - صفت عالی",
+        description: "یاد بگیرید چطور بگویید چیزی بهترین یا بیشترین است: am besten، am größten.",
+        path: "/learn/de-fa/A2/A2-M10-L02"
+      },
+      {
+        id: "A2-M10-L03",
+        title: "Gleichheit - برابری",
+        description: "یاد بگیرید چطور بگویید دو چیز مثل هم هستند: so...wie، genauso...wie.",
+        path: "/learn/de-fa/A2/A2-M10-L03"
+      },
+      {
+        id: "A2-M10-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "تمرین ترکیبی همه انواع مقایسه: تفضیلی، عالی و برابری.",
+        path: "/learn/de-fa/A2/A2-M10-L04"
+      }
+    ]
   }
 ];
 
