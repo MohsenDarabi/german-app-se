@@ -1,0 +1,385 @@
+{
+  "id": "A2-M08-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Passiv mit Modalverben", "fa": "مجهول با فعل‌های وجهی" },
+  "description": "یاد بگیرید چطور مجهول را با können, müssen, sollen ترکیب کنید",
+  "level": "A2",
+  "module": 8,
+  "lessonNumber": 2,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "können", "fa": "توانستن", "grammar": { "pos": "verb", "infinitive": "können" } },
+    { "de": "müssen", "fa": "باید", "grammar": { "pos": "verb", "infinitive": "müssen" } },
+    { "de": "sollen", "fa": "باید (توصیه)", "grammar": { "pos": "verb", "infinitive": "sollen" } },
+    { "de": "dürfen", "fa": "اجازه داشتن", "grammar": { "pos": "verb", "infinitive": "dürfen" } },
+    { "de": "erledigt", "fa": "انجام شده", "grammar": { "pos": "verb", "infinitive": "erledigen" } },
+    { "de": "bezahlt", "fa": "پرداخت شده", "grammar": { "pos": "verb", "infinitive": "bezahlen" } },
+    { "de": "geändert", "fa": "تغییر داده شده", "grammar": { "pos": "verb", "infinitive": "ändern" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "مجهول با فعل‌های وجهی",
+      "content": "📝 **Passiv + Modalverb:**\n\nوقتی می‌خواهید بگویید کاری «باید انجام شود» یا «می‌تواند انجام شود»:\n\n**ساختار:** Modalverb + Partizip II + werden\n\n• Das **muss** gemacht **werden**.\n  (این باید انجام شود.)\n\n• Das **kann** repariert **werden**.\n  (این می‌تواند تعمیر شود.)",
+      "examples": [
+        { "de": "Das Auto muss repariert werden.", "fa": "ماشین باید تعمیر شود." },
+        { "de": "Die Rechnung kann bezahlt werden.", "fa": "صورت‌حساب می‌تواند پرداخت شود." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "muss ... werden", "fa": "باید ... شود" },
+      "example": { "text": { "de": "Das muss gemacht werden.", "fa": "این باید انجام شود." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "kann ... werden", "fa": "می‌تواند ... شود" },
+      "example": { "text": { "de": "Das kann geändert werden.", "fa": "این می‌تواند تغییر کند." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "soll ... werden", "fa": "باید (توصیه) ... شود" },
+      "example": { "text": { "de": "Das soll erledigt werden.", "fa": "این باید انجام شود." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "ترتیب کلمات",
+      "content": "📝 **ترتیب در جمله اصلی:**\n\nModalverb در جایگاه دوم، بقیه در آخر:\n\n| جایگاه ۱ | جایگاه ۲ | میانه | آخر |\n|----------|----------|-------|-----|\n| Das Auto | muss | heute | repariert werden. |\n| Die Tür | kann | nicht | geöffnet werden. |\n\n💡 werden همیشه آخرین کلمه است!",
+      "examples": [
+        { "de": "Die Arbeit muss heute erledigt werden.", "fa": "کار باید امروز انجام شود." },
+        { "de": "Das Fenster kann nicht geöffnet werden.", "fa": "پنجره نمی‌تواند باز شود." }
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "erledigt",
+      "translation": "انجام شده",
+      "syllables": ["er", "le", "digt"],
+      "distractors": ["ar", "la", "degt", "li"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«این باید انجام شود» به آلمانی چیست؟",
+      "options": ["Das muss machen.", "Das wird gemacht muss.", "Das muss gemacht werden.", "Das gemacht werden muss."],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! muss + Partizip II + werden", "incorrect": "ساختار: Modalverb + Partizip II + werden" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله درست است؟",
+      "options": ["Das kann werden repariert.", "Das kann repariert werden.", "Das repariert werden kann.", "Das werden kann repariert."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! kann + repariert + werden", "incorrect": "ترتیب: Modalverb + Partizip II + werden" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das Auto muss repariert {0}.",
+      "options": ["wird", "werden", "wurde", "worden"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "با Modalverb: muss + Partizip II + werden" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Rechnung {0} bezahlt werden.",
+      "options": ["muss", "wird", "ist", "hat"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "باید پرداخت شود: muss bezahlt werden" }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "darf ... werden", "fa": "اجازه دارد ... شود" },
+      "example": { "text": { "de": "Hier darf nicht geraucht werden.", "fa": "اینجا اجازه سیگار کشیدن نیست." } }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در دفتر کار",
+      "context": "همکاران درباره وظایف صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Chef", "text": { "de": "Was muss heute noch erledigt werden?", "fa": "امروز چه چیزی باید انجام شود؟" } },
+        { "speaker": "Anna", "text": { "de": "Die E-Mails müssen beantwortet werden.", "fa": "ایمیل‌ها باید جواب داده شوند." } },
+        { "speaker": "Chef", "text": { "de": "Und der Bericht?", "fa": "و گزارش؟" } },
+        { "speaker": "Anna", "text": { "de": "Der kann morgen geschrieben werden.", "fa": "آن می‌تواند فردا نوشته شود." } }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "«اینجا سیگار کشیدن ممنوع است» به آلمانی چیست؟",
+      "options": ["Hier wird nicht geraucht.", "Hier darf nicht geraucht werden.", "Hier muss nicht geraucht werden.", "Hier kann nicht geraucht werden."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! darf nicht = ممنوع", "incorrect": "darf nicht = اجازه ندارد = ممنوع" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["werden.", "muss", "gemacht", "Das"],
+      "correctOrder": [3, 1, 2, 0],
+      "correctSentence": { "de": "Das muss gemacht werden.", "fa": "این باید انجام شود." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["werden.", "repariert", "kann", "Auto", "Das"],
+      "correctOrder": [4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Das Auto kann repariert werden.", "fa": "ماشین می‌تواند تعمیر شود." }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "bezahlt",
+      "translation": "پرداخت شده",
+      "syllables": ["be", "zahlt"],
+      "distractors": ["ba", "zalt", "bi", "zahlet"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "erledigt", "fa": "انجام شده" },
+      "example": { "text": { "de": "Die Arbeit muss erledigt werden.", "fa": "کار باید انجام شود." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "bezahlt", "fa": "پرداخت شده" },
+      "example": { "text": { "de": "Die Rechnung muss bezahlt werden.", "fa": "صورت‌حساب باید پرداخت شود." } }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Hier darf nicht {0} werden.",
+      "options": ["geraucht", "rauchen", "raucht", "gerauchen"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Partizip II: geraucht" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Tür kann nicht {0} werden.",
+      "options": ["öffnen", "geöffnet", "öffnet", "geöffnen"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Partizip II: geöffnet" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "تفاوت müssen و sollen",
+      "content": "📝 **müssen vs. sollen در مجهول:**\n\n**muss ... werden** = ضرورت قطعی\n→ Das muss heute gemacht werden.\n  (این حتماً باید امروز انجام شود.)\n\n**soll ... werden** = توصیه / انتظار\n→ Das soll bis morgen fertig werden.\n  (انتظار می‌رود تا فردا تمام شود.)\n\n💡 sollen معمولاً از طرف کس دیگری می‌آید",
+      "examples": [
+        { "de": "Der Brief muss geschickt werden.", "fa": "نامه باید فرستاده شود. (ضروری)" },
+        { "de": "Der Brief soll heute geschickt werden.", "fa": "نامه باید امروز فرستاده شود. (توصیه)" }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در تعمیرگاه",
+      "context": "درباره تعمیر ماشین صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Kunde", "text": { "de": "Kann das Auto heute repariert werden?", "fa": "ماشین می‌تواند امروز تعمیر شود؟" } },
+        { "speaker": "Mechaniker", "text": { "de": "Nein, das kann erst morgen gemacht werden.", "fa": "نه، این فقط فردا می‌تواند انجام شود." } },
+        { "speaker": "Kunde", "text": { "de": "Muss ich dann ein anderes Auto mieten?", "fa": "پس باید ماشین دیگری اجاره کنم؟" } },
+        { "speaker": "Mechaniker", "text": { "de": "Ja, das sollte getan werden.", "fa": "بله، این باید انجام شود." } }
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "geändert",
+      "translation": "تغییر داده شده",
+      "syllables": ["ge", "än", "dert"],
+      "distractors": ["ga", "an", "dart", "en"]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "معنی را با جمله آلمانی وصل کنید",
+      "items": [
+        { "id": "i1", "text": "باید انجام شود" },
+        { "id": "i2", "text": "می‌تواند تعمیر شود" },
+        { "id": "i3", "text": "اجازه ندارد باز شود" },
+        { "id": "i4", "text": "باید پرداخت شود" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "muss gemacht werden" },
+        { "id": "m2", "text": "kann repariert werden" },
+        { "id": "m3", "text": "darf nicht geöffnet werden" },
+        { "id": "m4", "text": "muss bezahlt werden" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"],
+        ["i4", "m4"]
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "Modalverb صحیح",
+      "instruction": "فعل وجهی مناسب را انتخاب کنید",
+      "questions": [
+        { "prompt": "ضروری است: ___ gemacht werden", "left": "muss", "right": "kann", "correctSide": "left" },
+        { "prompt": "امکان دارد: ___ repariert werden", "left": "muss", "right": "kann", "correctSide": "right" },
+        { "prompt": "ممنوع است: ___ nicht geraucht werden", "left": "darf", "right": "muss", "correctSide": "left" },
+        { "prompt": "توصیه می‌شود: ___ erledigt werden", "left": "kann", "right": "soll", "correctSide": "right" },
+        { "prompt": "قادر است: ___ geöffnet werden", "left": "kann", "right": "soll", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": { "de": "geändert", "fa": "تغییر داده شده" },
+      "example": { "text": { "de": "Das kann geändert werden.", "fa": "این می‌تواند تغییر کند." } }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "«کار باید امروز انجام شود» به آلمانی چیست؟",
+      "options": ["Die Arbeit wird heute erledigt.", "Die Arbeit muss heute erledigt werden.", "Die Arbeit kann heute erledigt.", "Die Arbeit heute erledigt werden muss."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! muss + Partizip II + werden", "incorrect": "muss + erledigt + werden" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc5",
+      "question": "کدام جمله به معنی «نمی‌تواند باز شود» است؟",
+      "options": ["Das wird nicht geöffnet.", "Das darf nicht geöffnet werden.", "Das kann nicht geöffnet werden.", "Das muss nicht geöffnet werden."],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! kann nicht = نمی‌تواند", "incorrect": "kann nicht = امکان ندارد" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Der Termin {0} geändert werden.",
+      "options": ["wird", "kann", "ist", "hat"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "می‌تواند تغییر کند: kann geändert werden" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das Paket soll morgen {0} werden.",
+      "options": ["geschickt", "schicken", "schickt", "geschicken"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Partizip II: geschickt" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["werden.", "bezahlt", "muss", "Rechnung", "Die"],
+      "correctOrder": [4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Die Rechnung muss bezahlt werden.", "fa": "صورت‌حساب باید پرداخت شود." }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "geschickt",
+      "translation": "فرستاده شده",
+      "syllables": ["ge", "schickt"],
+      "distractors": ["ga", "schikt", "gi", "schiekt"]
+    },
+    {
+      "type": "dialog",
+      "id": "d3",
+      "title": "قوانین خانه",
+      "context": "صاحب‌خانه قوانین را توضیح می‌دهد",
+      "lines": [
+        { "speaker": "Vermieter", "text": { "de": "Hier muss einiges beachtet werden.", "fa": "اینجا چند چیز باید رعایت شود." } },
+        { "speaker": "Mieter", "text": { "de": "Was darf nicht gemacht werden?", "fa": "چه چیزی اجازه ندارد انجام شود؟" } },
+        { "speaker": "Vermieter", "text": { "de": "Im Haus darf nicht geraucht werden.", "fa": "در خانه سیگار کشیدن ممنوع است." } },
+        { "speaker": "Mieter", "text": { "de": "Kann die Wohnung gestrichen werden?", "fa": "آپارتمان می‌تواند رنگ شود؟" } },
+        { "speaker": "Vermieter", "text": { "de": "Ja, aber das muss mit mir besprochen werden.", "fa": "بله، اما این باید با من صحبت شود." } }
+      ]
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "فرم صحیح را انتخاب کنید",
+      "words": [
+        { "de": "باید انجام شود", "fa": "muss ... werden", "options": ["muss gemacht werden", "wird gemacht müssen", "muss machen werden", "gemacht werden muss"], "correctIndex": 0 },
+        { "de": "می‌تواند تغییر کند", "fa": "kann ... werden", "options": ["kann ändern werden", "wird geändert können", "kann geändert werden", "geändert werden kann"], "correctIndex": 2 },
+        { "de": "اجازه ندارد باز شود", "fa": "darf nicht ... werden", "options": ["darf öffnen nicht werden", "darf nicht geöffnet werden", "wird nicht geöffnet dürfen", "nicht geöffnet werden darf"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo4",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["werden.", "geraucht", "nicht", "darf", "Hier"],
+      "correctOrder": [4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Hier darf nicht geraucht werden.", "fa": "اینجا سیگار کشیدن ممنوع است." }
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Das muss gemacht werden.",
+      "translation": "این باید انجام شود."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Das kann repariert werden.",
+      "translation": "این می‌تواند تعمیر شود."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Hier darf nicht geraucht werden.",
+      "translation": "اینجا سیگار کشیدن ممنوع است."
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "muss gemacht werden", "fa": "باید انجام شود" },
+        { "de": "kann geändert werden", "fa": "می‌تواند تغییر کند" },
+        { "de": "darf nicht geöffnet werden", "fa": "اجازه ندارد باز شود" },
+        { "de": "soll erledigt werden", "fa": "باید انجام شود (توصیه)" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp1",
+      "title": "آفرین! 🎉",
+      "message": "مجهول با فعل‌های وجهی را یاد گرفتید!",
+      "keyPoints": [
+        "ساختار: Modalverb + Partizip II + werden",
+        "muss ... werden = باید ... شود",
+        "kann ... werden = می‌تواند ... شود",
+        "darf nicht ... werden = ممنوع است",
+        "soll ... werden = توصیه می‌شود"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "muss ... werden", "fa": "باید ... شود" } },
+        { "word": { "de": "kann ... werden", "fa": "می‌تواند ... شود" } },
+        { "word": { "de": "darf ... werden", "fa": "اجازه دارد ... شود" } },
+        { "word": { "de": "soll ... werden", "fa": "باید (توصیه) ... شود" } },
+        { "word": { "de": "erledigt", "fa": "انجام شده" } }
+      ]
+    }
+  ]
+}

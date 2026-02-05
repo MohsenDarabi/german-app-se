@@ -702,6 +702,12 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         title: "Passiv Präsens - مجهول زمان حال",
         description: "یاد بگیرید چطور جملات مجهول بسازید با werden + Partizip II.",
         path: "/learn/de-fa/A2/A2-M08-L01"
+      },
+      {
+        id: "A2-M08-L02",
+        title: "Passiv mit Modalverben - مجهول با فعل‌های وجهی",
+        description: "یاد بگیرید چطور مجهول را با können, müssen, sollen ترکیب کنید.",
+        path: "/learn/de-fa/A2/A2-M08-L02"
       }
     ]
   }
