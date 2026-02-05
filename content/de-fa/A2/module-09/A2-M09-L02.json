@@ -8,7 +8,7 @@
   "level": "A2",
   "module": 9,
   "lessonNumber": 2,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "jung", "fa": "جوان", "grammar": { "pos": "adjective" } },
@@ -118,6 +118,20 @@
         { "speaker": "Kellner", "text": { "de": "Und dazu?", "fa": "و همراهش؟" } },
         { "speaker": "Gast", "text": { "de": "Eine kleine Torte, bitte.", "fa": "یک کیک کوچک، لطفاً." } },
         { "speaker": "Kellner", "text": { "de": "Ein warmes Croissant haben wir auch.", "fa": "یک کروسان گرم هم داریم." } }
+      ],
+      "questions": [
+        {
+          "question": "مهمان چه چیزی سفارش داد؟",
+          "options": ["قهوه سرد و کیک بزرگ", "قهوه داغ و کیک کوچک", "چای گرم و کروسان"],
+          "correctIndex": 1,
+          "explanation": "مهمان گفت: einen heißen Kaffee و eine kleine Torte"
+        },
+        {
+          "question": "پیشخدمت چه پیشنهادی داد؟",
+          "options": ["یک کروسان گرم", "یک قهوه سرد", "یک کیک بزرگ"],
+          "correctIndex": 0,
+          "explanation": "پیشخدمت گفت: Ein warmes Croissant haben wir auch"
+        }
       ]
     },
     {
@@ -212,6 +226,20 @@
         { "speaker": "Kunde", "text": { "de": "Hat sie einen großen Balkon?", "fa": "بالکن بزرگ دارد؟" } },
         { "speaker": "Makler", "text": { "de": "Ja, mit einem kleinen Garten.", "fa": "بله، با یک باغچه کوچک." } },
         { "speaker": "Kunde", "text": { "de": "Perfekt! Ich suche eine ruhige Gegend.", "fa": "عالی! دنبال یک منطقه آرام می‌گردم." } }
+      ],
+      "questions": [
+        {
+          "question": "آپارتمان چه چیزی دارد؟",
+          "options": ["یک بالکن بزرگ و باغچه کوچک", "یک پارکینگ بزرگ", "یک اتاق کوچک"],
+          "correctIndex": 0,
+          "explanation": "مشاور گفت: einen großen Balkon و einem kleinen Garten"
+        },
+        {
+          "question": "مشتری چه نوع منطقه‌ای می‌خواهد؟",
+          "options": ["یک منطقه شلوغ", "یک منطقه آرام", "یک منطقه مرکزی"],
+          "correctIndex": 1,
+          "explanation": "مشتری گفت: Ich suche eine ruhige Gegend"
+        }
       ]
     },
     {
@@ -325,6 +353,20 @@
         { "speaker": "Verkäufer", "text": { "de": "Hier ist ein schöner Pullover.", "fa": "اینجا یک پلیور زیبا هست." } },
         { "speaker": "Kunde", "text": { "de": "Haben Sie auch eine lange Hose?", "fa": "شلوار بلند هم دارید؟" } },
         { "speaker": "Verkäufer", "text": { "de": "Ja, in einem dunklen Blau.", "fa": "بله، به رنگ آبی تیره." } }
+      ],
+      "questions": [
+        {
+          "question": "مشتری دنبال چه چیزی می‌گردد؟",
+          "options": ["یک کت گرم", "یک پلیور گرم", "یک کفش سرد"],
+          "correctIndex": 1,
+          "explanation": "مشتری گفت: Ich suche einen warmen Pullover"
+        },
+        {
+          "question": "شلوار به چه رنگی موجود است؟",
+          "options": ["قرمز روشن", "سبز تیره", "آبی تیره"],
+          "correctIndex": 2,
+          "explanation": "فروشنده گفت: in einem dunklen Blau (آبی تیره)"
+        }
       ]
     },
     {
@@ -372,6 +414,38 @@
         { "de": "ein großes Kind", "fa": "یک بچه بزرگ (خنثی)" },
         { "de": "einen großen Mann", "fa": "یک مرد بزرگ (مفعول)" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "با ein در Nominativ، صفت مذکر پایانه -er می‌گیرد.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! مثال: ein großer Mann"
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "در Dativ با eine، صفت پایانه -e می‌گیرد.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! در Dativ همیشه -en: einer großen Frau"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "یک مرد جوان را می‌بینم.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4}.",
+      "options": ["Ich", "jungen", "sehe", "einen", "Mann"],
+      "correctAnswers": [0, 2, 3, 1, 4],
+      "correctTranslation": {
+        "de": "Ich sehe einen jungen Mann.",
+        "fa": "یک مرد جوان را می‌بینم."
+      }
     },
     {
       "type": "completion",

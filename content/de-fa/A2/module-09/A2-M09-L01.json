@@ -8,7 +8,7 @@
   "level": "A2",
   "module": 9,
   "lessonNumber": 1,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "groß", "fa": "بزرگ", "grammar": { "pos": "adjective" } },
@@ -117,6 +117,20 @@
         { "speaker": "Verkäufer", "text": { "de": "Der neue Laptop ist hier.", "fa": "لپ‌تاپ جدید اینجاست." } },
         { "speaker": "Kunde", "text": { "de": "Und die kleine Tasche?", "fa": "و کیف کوچک؟" } },
         { "speaker": "Verkäufer", "text": { "de": "Die kleine Tasche ist dort drüben.", "fa": "کیف کوچک آن طرف است." } }
+      ],
+      "questions": [
+        {
+          "question": "مشتری چه چیزی می‌خواهد؟",
+          "options": ["لپ‌تاپ قدیمی", "لپ‌تاپ جدید", "کیف بزرگ"],
+          "correctIndex": 1,
+          "explanation": "مشتری گفت: den neuen Laptop (لپ‌تاپ جدید)"
+        },
+        {
+          "question": "کیف کوچک کجاست؟",
+          "options": ["اینجا", "آن طرف", "ندارند"],
+          "correctIndex": 1,
+          "explanation": "فروشنده گفت: dort drüben (آن طرف)"
+        }
       ]
     },
     {
@@ -211,6 +225,20 @@
         { "speaker": "Ben", "text": { "de": "Ja, und der große Tisch passt gut.", "fa": "بله، و میز بزرگ خوب جا می‌شود." } },
         { "speaker": "Anna", "text": { "de": "Ich sitze gern auf dem bequemen Sofa.", "fa": "دوست دارم روی مبل راحت بنشینم." } },
         { "speaker": "Ben", "text": { "de": "Die alten Möbel haben wir verkauft.", "fa": "مبلمان قدیمی را فروختیم." } }
+      ],
+      "questions": [
+        {
+          "question": "مبل جدید چطور است؟",
+          "options": ["گران", "راحت", "کوچک"],
+          "correctIndex": 1,
+          "explanation": "آنا گفت: sehr bequem (خیلی راحت)"
+        },
+        {
+          "question": "با مبلمان قدیمی چه کار کردند؟",
+          "options": ["نگه داشتند", "فروختند", "هدیه دادند"],
+          "correctIndex": 1,
+          "explanation": "بن گفت: haben wir verkauft (فروختیم)"
+        }
       ]
     },
     {
@@ -323,7 +351,43 @@
         { "speaker": "Guide", "text": { "de": "Ja, und der große Marktplatz ist berühmt.", "fa": "بله، و میدان بزرگ معروف است." } },
         { "speaker": "Tourist", "text": { "de": "Ich möchte die alten Kirchen sehen.", "fa": "می‌خواهم کلیساهای قدیمی را ببینم." } },
         { "speaker": "Guide", "text": { "de": "In der alten Stadt gibt es viele.", "fa": "در شهر قدیمی خیلی هست." } }
+      ],
+      "questions": [
+        {
+          "question": "شهرداری چطور توصیف شد؟",
+          "options": ["جدید و مدرن", "قدیمی و زیبا", "کوچک و ساده"],
+          "correctIndex": 1,
+          "explanation": "گردشگر گفت: Das alte Rathaus ist sehr schön"
+        },
+        {
+          "question": "گردشگر چه چیزی می‌خواهد ببیند؟",
+          "options": ["میدان بزرگ", "کلیساهای قدیمی", "شهرداری"],
+          "correctIndex": 1,
+          "explanation": "گردشگر گفت: die alten Kirchen sehen"
+        }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "با حرف تعریف معرفه (der/die/das)، صفت در Dativ پایانه -en می‌گیرد.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! در Dativ همه جنس‌ها -en می‌گیرند: dem großen Mann، der großen Frau، dem großen Kind"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "من مرد پیر را می‌بینم.",
+      "sentenceTemplate": "{0} {1} {2} {3} {4}.",
+      "options": ["sehe", "Ich", "alten", "den", "Mann"],
+      "correctAnswers": [1, 0, 3, 2, 4],
+      "correctTranslation": {
+        "de": "Ich sehe den alten Mann.",
+        "fa": "من مرد پیر را می‌بینم."
+      }
     },
     {
       "type": "vocab-check",

@@ -8,7 +8,7 @@
   "level": "A2",
   "module": 9,
   "lessonNumber": 3,
-  "totalSteps": 40,
+  "totalSteps": 43,
   "estimatedMinutes": 20,
   "vocabulary": [
     { "de": "frisch", "fa": "تازه", "grammar": { "pos": "adjective" } },
@@ -117,6 +117,20 @@
         { "speaker": "Bäcker", "text": { "de": "Ja, frisches Brot ist gerade fertig.", "fa": "بله، نان تازه تازه آماده شده." } },
         { "speaker": "Kunde", "text": { "de": "Und süße Brötchen?", "fa": "و نان‌های شیرین؟" } },
         { "speaker": "Bäcker", "text": { "de": "Süße Brötchen haben wir auch.", "fa": "نان‌های شیرین هم داریم." } }
+      ],
+      "questions": [
+        {
+          "question": "مشتری چه چیزی می‌خواهد؟",
+          "options": ["نان تازه و نان شیرین", "کیک و شکلات", "قهوه و شیر"],
+          "correctIndex": 0,
+          "explanation": "مشتری گفت: frisches Brot و süße Brötchen"
+        },
+        {
+          "question": "نان تازه آماده است؟",
+          "options": ["نه، هنوز نه", "بله، تازه آماده شده", "فردا آماده می‌شود"],
+          "correctIndex": 1,
+          "explanation": "نانوا گفت: frisches Brot ist gerade fertig (تازه آماده شده)"
+        }
       ]
     },
     {
@@ -212,6 +226,20 @@
         { "speaker": "Ben", "text": { "de": "Frisches Brot mit Butter.", "fa": "نان تازه با کره." } },
         { "speaker": "Anna", "text": { "de": "Trinkst du starken Kaffee?", "fa": "قهوه قوی می‌نوشی؟" } },
         { "speaker": "Ben", "text": { "de": "Nein, ich bevorzuge schwachen Tee.", "fa": "نه، چای ضعیف ترجیح می‌دهم." } }
+      ],
+      "questions": [
+        {
+          "question": "بن صبحانه چه می‌خورد؟",
+          "options": ["نان تازه با کره", "تخم‌مرغ و سوسیس", "میوه و ماست"],
+          "correctIndex": 0,
+          "explanation": "بن گفت: Frisches Brot mit Butter"
+        },
+        {
+          "question": "بن چه نوشیدنی‌ای ترجیح می‌دهد؟",
+          "options": ["قهوه قوی", "چای ضعیف", "شیر سرد"],
+          "correctIndex": 1,
+          "explanation": "بن گفت: ich bevorzuge schwachen Tee"
+        }
       ]
     },
     {
@@ -324,6 +352,20 @@
         { "speaker": "Ben", "text": { "de": "Guten Morgen! Wie geht es dir?", "fa": "صبح بخیر! حالت چطوره؟" } },
         { "speaker": "Anna", "text": { "de": "Gut, danke. Guten Appetit!", "fa": "خوب، ممنون. نوش جان!" } },
         { "speaker": "Ben", "text": { "de": "Danke! Schönen Tag noch!", "fa": "ممنون! روز خوبی داشته باشی!" } }
+      ],
+      "questions": [
+        {
+          "question": "آنا چه آرزویی برای بن کرد؟",
+          "options": ["شب بخیر", "نوش جان", "خداحافظ"],
+          "correctIndex": 1,
+          "explanation": "آنا گفت: Guten Appetit! (نوش جان)"
+        },
+        {
+          "question": "بن چه آرزویی برای آنا کرد؟",
+          "options": ["روز خوب", "شب خوب", "سفر خوب"],
+          "correctIndex": 0,
+          "explanation": "بن گفت: Schönen Tag noch! (روز خوبی داشته باشی)"
+        }
       ]
     },
     {
@@ -371,6 +413,38 @@
         { "de": "frisches Brot", "fa": "نان تازه (خنثی)" },
         { "de": "kleine Kinder", "fa": "بچه‌های کوچک (جمع)" }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "بدون حرف تعریف، صفت پایانه حرف تعریف معرفه را می‌گیرد.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! مثال: der = -er، das = -es"
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "در Akkusativ بدون حرف تعریف، همه جنس‌ها تغییر می‌کنند.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! فقط مذکر تغییر می‌کند: heißen Kaffee"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "قهوه داغ می‌نوشم.",
+      "sentenceTemplate": "{0} {1} {2} {3}.",
+      "options": ["heißen", "trinke", "Kaffee", "Ich"],
+      "correctAnswers": [3, 1, 0, 2],
+      "correctTranslation": {
+        "de": "Ich trinke heißen Kaffee.",
+        "fa": "قهوه داغ می‌نوشم."
+      }
     },
     {
       "type": "completion",
