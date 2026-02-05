@@ -17,7 +17,7 @@
   "level": "A1",
   "module": 1,
   "lessonNumber": 7,
-  "totalSteps": 23,
+  "totalSteps": 43,
   "estimatedMinutes": 15,
   "vocabulary": [
     {
@@ -471,8 +471,7 @@
           }
         }
       ],
-      "questionMode": "post-dialog",
-      "questions": [
+            "questions": [
         {
           "question": "الی چند قهوه سفارش داد؟",
           "options": [
@@ -750,6 +749,38 @@
           "fa": "ده (۱۰)"
         }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf-new1",
+      "instruction": "درست یا غلط؟",
+      "statement": "عدد \"fünf\" یعنی چهار.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! fünf یعنی پنج (۵). چهار به آلمانی vier است."
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf-new2",
+      "instruction": "درست یا غلط؟",
+      "statement": "ترتیب اعداد: eins, zwei, drei, vier, fünf",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! ترتیب اعداد ۱ تا ۵: eins (۱), zwei (۲), drei (۳), vier (۴), fünf (۵)"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr-new1",
+      "sourceText": "سه قهوه، لطفاً!",
+      "sentenceTemplate": "{0} Kaffee, {1}!",
+      "options": ["bitte", "Drei", "Zwei", "danke"],
+      "correctAnswers": [1, 0],
+      "correctTranslation": {
+        "de": "Drei Kaffee, bitte!",
+        "fa": "سه قهوه، لطفاً!"
+      }
     },
     {
       "type": "completion",

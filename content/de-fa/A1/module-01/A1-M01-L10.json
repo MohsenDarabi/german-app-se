@@ -17,7 +17,7 @@
   "level": "A1",
   "module": 1,
   "lessonNumber": 10,
-  "totalSteps": 22,
+  "totalSteps": 43,
   "estimatedMinutes": 15,
   "vocabulary": [
     {
@@ -354,8 +354,7 @@
           }
         }
       ],
-      "questionMode": "post-dialog",
-      "questions": [
+            "questions": [
         {
           "question": "شماره موبایل تام با چه رقمی شروع می‌شود؟",
           "options": [
@@ -559,8 +558,7 @@
           }
         }
       ],
-      "questionMode": "post-dialog",
-      "questions": [
+            "questions": [
         {
           "question": "چه کسی تماس گرفت؟",
           "options": [
@@ -728,6 +726,38 @@
           "fa": "پیش‌شماره"
         }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf-new1",
+      "instruction": "درست یا غلط؟",
+      "statement": "\"null\" در آلمانی یعنی صفر.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! null (تلفظ: نُول) یعنی صفر (۰). شماره تلفن‌های آلمانی معمولاً با null شروع می‌شوند."
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf-new2",
+      "instruction": "درست یا غلط؟",
+      "statement": "فعل \"anrufen\" جداشدنی است و \"an\" در آخر جمله می‌آید.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! anrufen جداشدنی است: Ich rufe dich an. (بهت زنگ می‌زنم)"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr-new1",
+      "sourceText": "شماره تلفنت چیست؟",
+      "sentenceTemplate": "Was ist deine {0}?",
+      "options": ["Telefonnummer", "Handy", "Vorwahl", "Nummer"],
+      "correctAnswers": [0],
+      "correctTranslation": {
+        "de": "Was ist deine Telefonnummer?",
+        "fa": "شماره تلفنت چیست؟"
+      }
     },
     {
       "type": "completion",

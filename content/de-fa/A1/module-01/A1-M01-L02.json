@@ -16,6 +16,7 @@
   "level": "A1",
   "module": 1,
   "lessonNumber": 2,
+  "totalSteps": 43,
   "estimatedMinutes": 15,
   "vocabulary": [
     {
@@ -415,7 +416,6 @@
           "mood": "neutral"
         }
       ],
-      "questionMode": "post-dialog",
       "questions": [
         {
           "question": "حال الی چطور بود؟",
@@ -613,6 +613,38 @@
           "fa": "تو چطوری؟"
         }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf-new1",
+      "instruction": "درست یا غلط؟",
+      "statement": "\"Es geht\" یعنی حالم عالیه!",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! Es geht یعنی «ای بدک نیست» - نه خوب نه بد. برای گفتن «حالم خوبه» از Mir geht's gut استفاده می‌کنیم."
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf-new2",
+      "instruction": "درست یا غلط؟",
+      "statement": "بعد از جواب دادن به \"Wie geht's?\" با \"Und dir?\" از طرف مقابل می‌پرسیم.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! Und dir? یعنی «تو چطوری؟» و بعد از جواب دادن به سوال احوالپرسی استفاده می‌شود."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr-new1",
+      "sourceText": "حالم بده. تو چطوری؟",
+      "sentenceTemplate": "Mir geht's {0}. {1} dir?",
+      "options": ["Und", "schlecht", "gut", "Wie"],
+      "correctAnswers": [1, 0],
+      "correctTranslation": {
+        "de": "Mir geht's schlecht. Und dir?",
+        "fa": "حالم بده. تو چطوری؟"
+      }
     },
     {
       "type": "completion",

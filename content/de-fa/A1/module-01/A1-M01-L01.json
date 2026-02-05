@@ -16,6 +16,7 @@
   "level": "A1",
   "module": 1,
   "lessonNumber": 1,
+  "totalSteps": 43,
   "estimatedMinutes": 12,
   "vocabulary": [
     {
@@ -560,7 +561,6 @@
           "mood": "neutral"
         }
       ],
-      "questionMode": "post-dialog",
       "questions": [
         {
           "question": "چه کسی اول سلام کرد؟",
@@ -661,6 +661,38 @@
           "fa": "خواهش می‌کنم"
         }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf-new1",
+      "instruction": "درست یا غلط؟",
+      "statement": "\"Guten Tag\" رسمی‌تر از \"Hallo\" است.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! Guten Tag رسمی‌تر است و در موقعیت‌های رسمی مانند ملاقات با همکاران یا افراد ناشناس استفاده می‌شود."
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf-new2",
+      "instruction": "درست یا غلط؟",
+      "statement": "\"Tschüss\" و \"Auf Wiedersehen\" هر دو برای خداحافظی استفاده می‌شوند.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! هر دو برای خداحافظی هستند. Tschüss خودمانی‌تر و Auf Wiedersehen رسمی‌تر است."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr-new1",
+      "sourceText": "سلام! ممنون! خداحافظ!",
+      "sentenceTemplate": "{0}! {1}! {2}!",
+      "options": ["Tschüss", "Danke", "Hallo", "Bitte"],
+      "correctAnswers": [2, 1, 0],
+      "correctTranslation": {
+        "de": "Hallo! Danke! Tschüss!",
+        "fa": "سلام! ممنون! خداحافظ!"
+      }
     },
     {
       "type": "completion",

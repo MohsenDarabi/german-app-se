@@ -16,6 +16,7 @@
   "level": "A1",
   "module": 1,
   "lessonNumber": 3,
+  "totalSteps": 43,
   "estimatedMinutes": 15,
   "vocabulary": [
     {
@@ -489,7 +490,6 @@
           "mood": "excited"
         }
       ],
-      "questionMode": "post-dialog",
       "questions": [
         {
           "question": "تام اهل کجاست؟",
@@ -726,6 +726,38 @@
           "fa": "من در... زندگی می‌کنم"
         }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf-new1",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای گفتن «من اهل آلمان هستم» می‌گوییم: Ich komme aus Deutschland.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! برای بیشتر کشورها از aus بدون حرف تعریف استفاده می‌کنیم: aus Deutschland، aus Frankreich."
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf-new2",
+      "instruction": "درست یا غلط؟",
+      "statement": "\"Wo wohnst du?\" یعنی اهل کجایی؟",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! Wo wohnst du? یعنی «کجا زندگی می‌کنی؟». برای پرسیدن اصلیت از Woher kommst du? استفاده می‌کنیم."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr-new1",
+      "sourceText": "من در برلین زندگی می‌کنم.",
+      "sentenceTemplate": "{0} {1} in Berlin.",
+      "options": ["wohne", "Ich", "komme", "Du"],
+      "correctAnswers": [1, 0],
+      "correctTranslation": {
+        "de": "Ich wohne in Berlin.",
+        "fa": "من در برلین زندگی می‌کنم."
+      }
     },
     {
       "type": "completion",

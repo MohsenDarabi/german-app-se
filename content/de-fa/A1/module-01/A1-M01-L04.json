@@ -16,6 +16,7 @@
   "level": "A1",
   "module": 1,
   "lessonNumber": 4,
+  "totalSteps": 43,
   "estimatedMinutes": 15,
   "vocabulary": [
     {
@@ -441,7 +442,6 @@
           "mood": "happy"
         }
       ],
-      "questionMode": "post-dialog",
       "questions": [
         {
           "question": "تام چه زبان‌هایی صحبت می‌کند؟",
@@ -676,6 +676,38 @@
           "fa": "زبان انگلیسی"
         }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf-new1",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای سوال بله/خیر در آلمانی، جای فعل و فاعل را عوض می‌کنیم.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! مثلاً: Du sprichst Deutsch → Sprichst du Deutsch? فعل به ابتدا می‌آید."
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf-new2",
+      "instruction": "درست یا غلط؟",
+      "statement": "\"lernen\" و \"sprechen\" هر دو فعل منظم هستند.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! lernen منظم است (ich lerne, du lernst) اما sprechen بی‌قاعده است (ich spreche, du sprichst - توجه به تغییر e به i)."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr-new1",
+      "sourceText": "من آلمانی یاد می‌گیرم و انگلیسی صحبت می‌کنم.",
+      "sentenceTemplate": "Ich {0} Deutsch und {1} Englisch.",
+      "options": ["spreche", "lerne", "lernst", "sprichst"],
+      "correctAnswers": [1, 0],
+      "correctTranslation": {
+        "de": "Ich lerne Deutsch und spreche Englisch.",
+        "fa": "من آلمانی یاد می‌گیرم و انگلیسی صحبت می‌کنم."
+      }
     },
     {
       "type": "completion",

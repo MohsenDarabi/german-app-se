@@ -16,6 +16,7 @@
   "level": "A1",
   "module": 1,
   "lessonNumber": 6,
+  "totalSteps": 43,
   "estimatedMinutes": 15,
   "vocabulary": [
     {
@@ -439,8 +440,7 @@
       "feedback": {
         "explanation": "در این مکالمه الی و تام با هم آشنا می‌شوند. آن‌ها اسم، اصالت (aus) و محل زندگی (in) را می‌پرسند. توجه کنید که «jetzt» یعنی «الان»."
       },
-      "questionMode": "post-dialog",
-      "questions": [
+            "questions": [
         {
           "question": "تام اهل کجاست؟",
           "options": ["آلمان", "ایران", "برلین"],
@@ -735,6 +735,38 @@
           "fa": "شهر"
         }
       ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf-new1",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای گفتن اهلیت از «aus» و برای محل زندگی از «in» استفاده می‌کنیم.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! aus برای مبدأ/اصلیت (Ich komme aus...) و in برای محل زندگی (Ich wohne in...) استفاده می‌شود."
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf-new2",
+      "instruction": "درست یا غلط؟",
+      "statement": "\"die Stadt\" یعنی کشور.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! die Stadt یعنی شهر، نه کشور. کشور به آلمانی das Land است."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr-new1",
+      "sourceText": "کجا زندگی می‌کنی؟ من در برلین زندگی می‌کنم.",
+      "sentenceTemplate": "Wo {0} du? Ich {1} in Berlin.",
+      "options": ["wohne", "wohnst", "komme", "kommst"],
+      "correctAnswers": [1, 0],
+      "correctTranslation": {
+        "de": "Wo wohnst du? Ich wohne in Berlin.",
+        "fa": "کجا زندگی می‌کنی؟ من در برلین زندگی می‌کنم."
+      }
     },
     {
       "type": "completion",
