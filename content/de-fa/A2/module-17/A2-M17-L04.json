@@ -1,0 +1,429 @@
+{
+  "id": "A2-M17-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Zusammenfassung: Reflexive Verben", "fa": "جمع‌بندی: فعل‌های انعکاسی" },
+  "description": "مرور کامل فعل‌های انعکاسی با ضمایر آکوزاتیو و داتیو",
+  "level": "A2",
+  "module": 17,
+  "lessonNumber": 4,
+  "totalSteps": 44,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "sich anziehen", "fa": "لباس پوشیدن", "grammar": { "pos": "verb" } },
+    { "de": "sich umziehen", "fa": "لباس عوض کردن", "grammar": { "pos": "verb" } },
+    { "de": "sich hinsetzen", "fa": "نشستن", "grammar": { "pos": "verb" } },
+    { "de": "sich vorbereiten", "fa": "آماده شدن", "grammar": { "pos": "verb" } },
+    { "de": "sich etwas leisten", "fa": "استطاعت داشتن", "grammar": { "pos": "verb" } },
+    { "de": "sich etwas leihen", "fa": "قرض گرفتن", "grammar": { "pos": "verb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "مرور: ضمایر انعکاسی",
+      "content": "📝 **خلاصه ضمایر انعکاسی:**\n\n| شخص | آکوزاتیو | داتیو |\n|------|----------|-------|\n| ich | mich | mir |\n| du | dich | dir |\n| er/sie/es | sich | sich |\n| wir | uns | uns |\n| ihr | euch | euch |\n| sie/Sie | sich | sich |\n\n💡 **کی آکوزاتیو، کی داتیو؟**\n• بدون مفعول دیگر → آکوزاتیو\n• با مفعول مستقیم → داتیو",
+      "examples": [
+        { "de": "Ich wasche mich. (آکوزاتیو)", "fa": "خودم را می‌شویم." },
+        { "de": "Ich wasche mir die Hände. (داتیو)", "fa": "دست‌هایم را می‌شویم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "sich anziehen", "fa": "لباس پوشیدن" },
+      "example": { "text": { "de": "Ich ziehe mich schnell an.", "fa": "سریع لباس می‌پوشم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "anziehen",
+      "translation": "لباس پوشیدن",
+      "syllables": ["an", "zie", "hen"],
+      "distractors": ["un", "za", "hin"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "sich umziehen", "fa": "لباس عوض کردن" },
+      "example": { "text": { "de": "Nach dem Sport ziehe ich mich um.", "fa": "بعد از ورزش لباسم را عوض می‌کنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "umziehen",
+      "translation": "لباس عوض کردن",
+      "syllables": ["um", "zie", "hen"],
+      "distractors": ["am", "za", "han"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "sich hinsetzen", "fa": "نشستن" },
+      "example": { "text": { "de": "Bitte setzen Sie sich hin!", "fa": "لطفاً بنشینید!" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "hinsetzen",
+      "translation": "نشستن",
+      "syllables": ["hin", "set", "zen"],
+      "distractors": ["han", "sat", "zan"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله درست است؟",
+      "options": ["Ich ziehe mich die Jacke an.", "Ich ziehe mir die Jacke an.", "Ich ziehe sich die Jacke an.", "Ich ziehe dich die Jacke an."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! با مفعول (die Jacke) از داتیو mir استفاده می‌کنیم", "incorrect": "وقتی مفعول مستقیم داریم، ضمیر داتیو می‌شود" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er zieht {0} schnell an.",
+      "options": ["sich", "mich", "mir", "dich"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "بدون مفعول دیگر = آکوزاتیو: er → sich" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "آماده شدن برای مهمانی",
+      "context": "زن و شوهر برای مهمانی آماده می‌شوند",
+      "lines": [
+        { "speaker": "Frau", "text": { "de": "Ich muss mich noch umziehen. Und du?", "fa": "باید هنوز لباسم را عوض کنم. و تو؟" } },
+        { "speaker": "Mann", "text": { "de": "Ich habe mich schon angezogen. Ich warte auf dich.", "fa": "من لباسم را پوشیدم. منتظرت هستم." } },
+        { "speaker": "Frau", "text": { "de": "Kannst du dir vorstellen, wie schön die Party wird?", "fa": "می‌توانی تصور کنی مهمانی چقدر قشنگ می‌شود؟" } },
+        { "speaker": "Mann", "text": { "de": "Ja! Ich freue mich sehr darauf.", "fa": "بله! خیلی منتظرش هستم." } }
+      ],
+      "questions": [
+        { "question": "زن چه باید بکند؟", "options": ["دوش بگیرد", "لباس عوض کند", "غذا بخورد"], "correctIndex": 1, "explanation": "زن گفت: Ich muss mich noch umziehen" },
+        { "question": "مرد چه احساسی دارد؟", "options": ["خوشحال است", "ناراحت است", "خسته است"], "correctIndex": 0, "explanation": "مرد گفت: Ich freue mich sehr darauf" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["hin!", "sich", "Setzen", "Sie"],
+      "correctOrder": [2, 3, 1, 0],
+      "correctSentence": { "de": "Setzen Sie sich hin!", "fa": "بنشینید!" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جمله «Ich ziehe mich an»، ضمیر mich آکوزاتیو است چون مفعول دیگری نداریم.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! بدون مفعول مستقیم دیگر، ضمیر آکوزاتیو است" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "فعل‌های انعکاسی با حروف اضافه",
+      "content": "📝 **فعل‌های انعکاسی رایج با حروف اضافه:**\n\n• sich freuen **auf** + Akk. (منتظر بودن)\n• sich freuen **über** + Akk. (خوشحال بودن از)\n• sich interessieren **für** + Akk. (علاقه داشتن به)\n• sich erinnern **an** + Akk. (به یاد آوردن)\n• sich vorbereiten **auf** + Akk. (آماده شدن برای)\n• sich entschuldigen **für** + Akk. (عذرخواهی کردن بابت)\n\n💡 این فعل‌ها همه با آکوزاتیو انعکاسی می‌آیند!",
+      "examples": [
+        { "de": "Ich bereite mich auf die Prüfung vor.", "fa": "برای امتحان آماده می‌شوم." },
+        { "de": "Er erinnert sich an den Urlaub.", "fa": "تعطیلات را به یاد می‌آورد." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "sich vorbereiten", "fa": "آماده شدن" },
+      "example": { "text": { "de": "Ich bereite mich auf die Prüfung vor.", "fa": "برای امتحان آماده می‌شوم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "vorbereiten",
+      "translation": "آماده شدن",
+      "syllables": ["vor", "be", "rei", "ten"],
+      "distractors": ["var", "ba", "rau", "tan"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "sich etwas leisten", "fa": "استطاعت داشتن" },
+      "example": { "text": { "de": "Ich kann mir das nicht leisten.", "fa": "استطاعت این را ندارم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "leisten",
+      "translation": "استطاعت داشتن",
+      "syllables": ["lei", "sten"],
+      "distractors": ["lau", "stan", "stin"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "«من برای امتحان آماده می‌شوم» به آلمانی چیست؟",
+      "options": ["Ich bereite mir auf die Prüfung vor.", "Ich bereite mich auf die Prüfung vor.", "Ich bereite sich auf die Prüfung vor.", "Ich bereite dich auf die Prüfung vor."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! sich vorbereiten با آکوزاتیو: ich → mich", "incorrect": "sich vorbereiten auf با آکوزاتیو می‌آید" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Kannst du {0} das leisten?",
+      "options": ["dir", "dich", "sich", "mir"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "sich etwas leisten با داتیو: du → dir" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "برنامه‌ریزی تعطیلات",
+      "context": "دو دوست درباره تعطیلات صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Ich interessiere mich für eine Reise nach Italien.", "fa": "به سفر به ایتالیا علاقه‌مندم." } },
+        { "speaker": "Tom", "text": { "de": "Das klingt toll! Kannst du dir das leisten?", "fa": "عالی به نظر می‌رسد! استطاعتش را داری؟" } },
+        { "speaker": "Anna", "text": { "de": "Ich muss mir das noch überlegen. Und ich muss mich gut vorbereiten.", "fa": "باید هنوز درباره‌اش فکر کنم. و باید خوب آماده شوم." } },
+        { "speaker": "Tom", "text": { "de": "Ich wünsche mir auch einen Urlaub!", "fa": "من هم آرزوی تعطیلات دارم!" } }
+      ],
+      "questions": [
+        { "question": "آنا به چه علاقه دارد؟", "options": ["سفر به آلمان", "سفر به ایتالیا", "سفر به فرانسه"], "correctIndex": 1, "explanation": "آنا گفت: eine Reise nach Italien" },
+        { "question": "آنا باید چه کار کند؟", "options": ["فقط فکر کند", "فکر کند و آماده شود", "فقط آماده شود"], "correctIndex": 1, "explanation": "آنا گفت: überlegen و vorbereiten" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["vor.", "die Prüfung", "auf", "mich", "bereite", "Ich"],
+      "correctOrder": [5, 4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Ich bereite mich auf die Prüfung vor.", "fa": "برای امتحان آماده می‌شوم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "او به یاد آوردن سفر را دوست دارد.",
+      "sentenceTemplate": "{0} {1} gern {2} die Reise.",
+      "options": ["Er", "sich", "erinnert", "an"],
+      "correctAnswers": [0, 2, 1],
+      "correctTranslation": { "de": "Er erinnert sich gern an die Reise.", "fa": "او دوست دارد سفر را به یاد آورد." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "فعل انعکاسی را با حرف اضافه درست وصل کنید",
+      "items": [
+        { "id": "i1", "text": "sich vorbereiten ..." },
+        { "id": "i2", "text": "sich interessieren ..." },
+        { "id": "i3", "text": "sich erinnern ..." },
+        { "id": "i4", "text": "sich freuen ... (خوشحال)" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "auf" },
+        { "id": "m2", "text": "für" },
+        { "id": "m3", "text": "an" },
+        { "id": "m4", "text": "über" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "sich etwas leihen", "fa": "قرض گرفتن" },
+      "example": { "text": { "de": "Kann ich mir dein Buch leihen?", "fa": "می‌توانم کتابت را قرض بگیرم؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "leihen",
+      "translation": "قرض گرفتن",
+      "syllables": ["lei", "hen"],
+      "distractors": ["lau", "han", "hin"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "کدام ضمیر داتیو برای «wir» درست است؟",
+      "options": ["mich", "uns", "euch", "sich"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! wir → uns (در داتیو و آکوزاتیو یکسان)", "incorrect": "wir → uns در هر دو حالت" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sie haben {0} sehr über das Geschenk gefreut.",
+      "options": ["sich", "mich", "uns", "euch"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "sie (آن‌ها) → sich" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich leihe {0} sein Auto.",
+      "options": ["mir", "mich", "sich", "dir"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "sich etwas leihen با داتیو: ich → mir" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "فعل‌های انعکاسی در Perfekt",
+      "content": "📝 **فعل‌های انعکاسی در Perfekt با haben:**\n\n• Ich **habe** mich geduscht.\n• Du **hast** dich beeilt.\n• Er **hat** sich gefreut.\n• Wir **haben** uns vorbereitet.\n\n**با داتیو هم همین‌طور:**\n• Ich **habe** mir die Hände gewaschen.\n• Sie **hat** sich ein Kleid gekauft.\n\n💡 ضمیر انعکاسی بعد از haben می‌آید!",
+      "examples": [
+        { "de": "Ich habe mich auf die Prüfung vorbereitet.", "fa": "برای امتحان آماده شدم." },
+        { "de": "Hast du dir das überlegt?", "fa": "درباره‌اش فکر کردی؟" }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d3",
+      "title": "بعد از امتحان",
+      "context": "دانش‌آموزان بعد از امتحان صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Hast du dich gut auf die Prüfung vorbereitet?", "fa": "برای امتحان خوب آماده شدی؟" } },
+        { "speaker": "Max", "text": { "de": "Ja, ich habe mir viel Zeit genommen.", "fa": "بله، وقت زیادی گذاشتم." } },
+        { "speaker": "Lisa", "text": { "de": "Ich habe mich auch sehr angestrengt.", "fa": "من هم خیلی تلاش کردم." } },
+        { "speaker": "Max", "text": { "de": "Jetzt können wir uns ausruhen!", "fa": "حالا می‌توانیم استراحت کنیم!" } }
+      ],
+      "questions": [
+        { "question": "ماکس چه کرده؟", "options": ["وقت زیادی گذاشته", "کم خوانده", "نخوانده"], "correctIndex": 0, "explanation": "ماکس گفت: Ich habe mir viel Zeit genommen" },
+        { "question": "حالا چه می‌توانند بکنند؟", "options": ["بیشتر بخوانند", "استراحت کنند", "دوباره امتحان بدهند"], "correctIndex": 1, "explanation": "ماکس گفت: Jetzt können wir uns ausruhen" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["gewaschen.", "die Hände", "mir", "habe", "Ich"],
+      "correctOrder": [4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Ich habe mir die Hände gewaschen.", "fa": "دست‌هایم را شستم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo4",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["gefreut.", "sehr", "sich", "hat", "Sie"],
+      "correctOrder": [4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Sie hat sich sehr gefreut.", "fa": "او خیلی خوشحال شد." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "فعل‌های انعکاسی در Perfekt با sein می‌آیند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! فعل‌های انعکاسی در Perfekt با haben می‌آیند" }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "ما برای مهمانی آماده شدیم.",
+      "sentenceTemplate": "{0} {1} {2} auf die Party vorbereitet.",
+      "options": ["Wir", "uns", "haben"],
+      "correctAnswers": [0, 2, 1],
+      "correctTranslation": { "de": "Wir haben uns auf die Party vorbereitet.", "fa": "ما برای مهمانی آماده شدیم." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "کدام جمله غلط است؟",
+      "options": ["Ich habe mich geduscht.", "Er hat sich gefreut.", "Wir sind uns ausgeruht.", "Du hast dich beeilt."],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! فعل‌های انعکاسی با haben می‌آیند، نه sein", "incorrect": "فعل‌های انعکاسی در Perfekt با haben می‌آیند" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Habt ihr {0} auf die Reise vorbereitet?",
+      "options": ["euch", "sich", "uns", "mich"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "ihr → euch" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er hat {0} ein neues Handy gekauft.",
+      "options": ["sich", "mich", "mir", "dir"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "sich etwas kaufen با داتیو: er → sich (در داتیو و آکوزاتیو یکسان)" }
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich ziehe mich schnell an.",
+      "translation": "سریع لباس می‌پوشم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Hast du dich gut vorbereitet?",
+      "translation": "خوب آماده شدی؟"
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Wir haben uns sehr gefreut.",
+      "translation": "ما خیلی خوشحال شدیم."
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "مرور کلی",
+      "instruction": "ضمیر درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "Ich dusche ___.", "left": "mich", "right": "mir", "correctSide": "left" },
+        { "prompt": "Du wäschst ___ die Hände.", "left": "dich", "right": "dir", "correctSide": "right" },
+        { "prompt": "Er freut ___ auf die Party.", "left": "sich", "right": "ihm", "correctSide": "left" },
+        { "prompt": "Wir wünschen ___ ein Auto.", "left": "uns", "right": "euch", "correctSide": "left" },
+        { "prompt": "Ihr zieht ___ an.", "left": "uns", "right": "euch", "correctSide": "right" },
+        { "prompt": "Sie kaufen ___ Bücher.", "left": "mich", "right": "sich", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "sich anziehen", "fa": "لباس پوشیدن" },
+        { "de": "sich vorbereiten", "fa": "آماده شدن" },
+        { "de": "sich etwas leisten", "fa": "استطاعت داشتن" },
+        { "de": "sich etwas leihen", "fa": "قرض گرفتن" }
+      ]
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "sich umziehen", "fa": "لباس عوض کردن", "options": ["لباس پوشیدن", "لباس عوض کردن", "لباس درآوردن", "لباس شستن"], "correctIndex": 1 },
+        { "de": "sich hinsetzen", "fa": "نشستن", "options": ["ایستادن", "دراز کشیدن", "نشستن", "دویدن"], "correctIndex": 2 },
+        { "de": "sich etwas leisten", "fa": "استطاعت داشتن", "options": ["خریدن", "استطاعت داشتن", "فروختن", "قرض دادن"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp1",
+      "title": "تبریک! 🎉",
+      "message": "شما بخش فعل‌های انعکاسی را کامل کردید!",
+      "keyPoints": [
+        "ضمایر آکوزاتیو: mich, dich, sich, uns, euch, sich",
+        "ضمایر داتیو: mir, dir, sich, uns, euch, sich",
+        "بدون مفعول = آکوزاتیو | با مفعول = داتیو",
+        "فعل‌ها با حروف اضافه: auf, über, für, an",
+        "در Perfekt با haben: Ich habe mich gefreut",
+        "uns و euch در هر دو حالت یکسان هستند"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "sich anziehen", "fa": "لباس پوشیدن" } },
+        { "word": { "de": "sich umziehen", "fa": "لباس عوض کردن" } },
+        { "word": { "de": "sich hinsetzen", "fa": "نشستن" } },
+        { "word": { "de": "sich vorbereiten", "fa": "آماده شدن" } },
+        { "word": { "de": "sich etwas leisten", "fa": "استطاعت داشتن" } },
+        { "word": { "de": "sich etwas leihen", "fa": "قرض گرفتن" } }
+      ]
+    }
+  ]
+}

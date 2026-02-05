@@ -970,6 +970,37 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/A2/A2-M16-L04"
       }
     ]
+  },
+  {
+    id: "module-17",
+    title: "بخش ۱۷: فعل‌های انعکاسی (Reflexive Verben)",
+    level: "A2",
+    lessons: [
+      {
+        id: "A2-M17-L01",
+        title: "Reflexivpronomen - ضمایر انعکاسی",
+        description: "یاد بگیرید ضمایر انعکاسی (mich, dich, sich, uns, euch) را برای فعل‌های بازتابی.",
+        path: "/learn/de-fa/A2/A2-M17-L01"
+      },
+      {
+        id: "A2-M17-L02",
+        title: "Reflexive Verben mit Akkusativ - فعل‌های انعکاسی با آکوزاتیو",
+        description: "یاد بگیرید فعل‌های انعکاسی رایج که با ضمیر آکوزاتیو می‌آیند.",
+        path: "/learn/de-fa/A2/A2-M17-L02"
+      },
+      {
+        id: "A2-M17-L03",
+        title: "Reflexive Verben mit Dativ - فعل‌های انعکاسی با داتیو",
+        description: "یاد بگیرید فعل‌های انعکاسی که با ضمیر داتیو (mir, dir, sich) می‌آیند.",
+        path: "/learn/de-fa/A2/A2-M17-L03"
+      },
+      {
+        id: "A2-M17-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل فعل‌های انعکاسی با ضمایر آکوزاتیو و داتیو.",
+        path: "/learn/de-fa/A2/A2-M17-L04"
+      }
+    ]
   }
 ];
 
