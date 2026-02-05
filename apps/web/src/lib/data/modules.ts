@@ -708,6 +708,12 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         title: "Passiv mit Modalverben - مجهول با فعل‌های وجهی",
         description: "یاد بگیرید چطور مجهول را با können, müssen, sollen ترکیب کنید.",
         path: "/learn/de-fa/A2/A2-M08-L02"
+      },
+      {
+        id: "A2-M08-L03",
+        title: "Passiv Perfekt - مجهول زمان گذشته",
+        description: "یاد بگیرید چطور بگویید کاری انجام شده است با sein + Partizip II + worden.",
+        path: "/learn/de-fa/A2/A2-M08-L03"
       }
     ]
   }

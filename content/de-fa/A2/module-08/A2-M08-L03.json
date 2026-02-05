@@ -1,0 +1,384 @@
+{
+  "id": "A2-M08-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Passiv Perfekt", "fa": "مجهول زمان گذشته" },
+  "description": "یاد بگیرید چطور بگویید کاری انجام شده است با sein + Partizip II + worden",
+  "level": "A2",
+  "module": 8,
+  "lessonNumber": 3,
+  "totalSteps": 40,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "worden", "fa": "شده (کمکی مجهول گذشته)", "grammar": { "pos": "verb", "infinitive": "werden" } },
+    { "de": "geschrieben", "fa": "نوشته شده", "grammar": { "pos": "verb", "infinitive": "schreiben" } },
+    { "de": "gelesen", "fa": "خوانده شده", "grammar": { "pos": "verb", "infinitive": "lesen" } },
+    { "de": "gegessen", "fa": "خورده شده", "grammar": { "pos": "verb", "infinitive": "essen" } },
+    { "de": "getrunken", "fa": "نوشیده شده", "grammar": { "pos": "verb", "infinitive": "trinken" } },
+    { "de": "eingeladen", "fa": "دعوت شده", "grammar": { "pos": "verb", "infinitive": "einladen" } },
+    { "de": "informiert", "fa": "اطلاع داده شده", "grammar": { "pos": "verb", "infinitive": "informieren" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "مجهول در زمان گذشته",
+      "content": "📝 **Passiv Perfekt:**\n\nوقتی می‌خواهید بگویید کاری «انجام شده است»:\n\n**ساختار:** sein + Partizip II + worden\n\n• Das Auto **ist** repariert **worden**.\n  (ماشین تعمیر شده است.)\n\n• Die Tür **ist** geöffnet **worden**.\n  (در باز شده است.)\n\n💡 worden نه geworden!",
+      "examples": [
+        { "de": "Das Buch ist gelesen worden.", "fa": "کتاب خوانده شده است." },
+        { "de": "Die E-Mail ist geschickt worden.", "fa": "ایمیل فرستاده شده است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "ist ... worden", "fa": "... شده است" },
+      "example": { "text": { "de": "Das ist gemacht worden.", "fa": "این انجام شده است." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "geschrieben", "fa": "نوشته شده" },
+      "example": { "text": { "de": "Der Brief ist geschrieben worden.", "fa": "نامه نوشته شده است." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "gelesen", "fa": "خوانده شده" },
+      "example": { "text": { "de": "Das Buch ist gelesen worden.", "fa": "کتاب خوانده شده است." } }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "صرف sein در Passiv Perfekt",
+      "content": "📝 **صرف sein:**\n\n| ضمیر | sein |\n|------|------|\n| ich | bin |\n| du | bist |\n| er/sie/es | ist |\n| wir | sind |\n| ihr | seid |\n| sie/Sie | sind |\n\n+ **Partizip II** + **worden**\n\n→ Ich **bin** eingeladen **worden**.\n  (من دعوت شده‌ام.)",
+      "examples": [
+        { "de": "Ich bin gefragt worden.", "fa": "از من پرسیده شده است." },
+        { "de": "Wir sind informiert worden.", "fa": "ما اطلاع داده شده‌ایم." }
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "worden",
+      "translation": "شده",
+      "syllables": ["wor", "den"],
+      "distractors": ["war", "dan", "wer", "don"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«ماشین تعمیر شده است» به آلمانی چیست؟",
+      "options": ["Das Auto wird repariert.", "Das Auto ist repariert worden.", "Das Auto hat repariert worden.", "Das Auto wurde repariert worden."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! ist + Partizip II + worden", "incorrect": "Passiv Perfekt: sein + Partizip II + worden" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله درست است؟",
+      "options": ["Das Buch ist gelesen geworden.", "Das Buch ist gelesen worden.", "Das Buch hat gelesen worden.", "Das Buch wird gelesen worden."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! worden نه geworden", "incorrect": "در Passiv Perfekt از worden استفاده می‌کنیم، نه geworden" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das Auto ist repariert {0}.",
+      "options": ["werden", "worden", "geworden", "wird"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Passiv Perfekt: ist + Partizip II + worden" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Der Brief {0} geschrieben worden.",
+      "options": ["hat", "ist", "wird", "war"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Passiv Perfekt با sein: ist geschrieben worden" }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "eingeladen", "fa": "دعوت شده" },
+      "example": { "text": { "de": "Ich bin eingeladen worden.", "fa": "من دعوت شده‌ام." } }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "بعد از جلسه",
+      "context": "همکاران درباره کارهای انجام شده صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Ist der Bericht geschrieben worden?", "fa": "گزارش نوشته شده است؟" } },
+        { "speaker": "Ben", "text": { "de": "Ja, er ist gestern fertig geschrieben worden.", "fa": "بله، دیروز تمام نوشته شده است." } },
+        { "speaker": "Anna", "text": { "de": "Und die Kunden? Sind sie informiert worden?", "fa": "و مشتریان؟ آن‌ها اطلاع داده شده‌اند؟" } },
+        { "speaker": "Ben", "text": { "de": "Ja, alle sind per E-Mail informiert worden.", "fa": "بله، همه با ایمیل اطلاع داده شده‌اند." } }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "«من دعوت شده‌ام» به آلمانی چیست؟",
+      "options": ["Ich werde eingeladen.", "Ich bin eingeladen worden.", "Ich habe eingeladen worden.", "Ich wurde eingeladen worden."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! ich bin + eingeladen + worden", "incorrect": "Passiv Perfekt: bin + Partizip II + worden" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["worden.", "repariert", "ist", "Auto", "Das"],
+      "correctOrder": [4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Das Auto ist repariert worden.", "fa": "ماشین تعمیر شده است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["worden.", "gelesen", "ist", "Buch", "Das"],
+      "correctOrder": [4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Das Buch ist gelesen worden.", "fa": "کتاب خوانده شده است." }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "geschrieben",
+      "translation": "نوشته شده",
+      "syllables": ["ge", "schrie", "ben"],
+      "distractors": ["ga", "schra", "ban", "schro"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "informiert", "fa": "اطلاع داده شده" },
+      "example": { "text": { "de": "Wir sind informiert worden.", "fa": "ما اطلاع داده شده‌ایم." } }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "gegessen", "fa": "خورده شده" },
+      "example": { "text": { "de": "Der Kuchen ist gegessen worden.", "fa": "کیک خورده شده است." } }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Gäste {0} eingeladen worden.",
+      "options": ["haben", "sind", "werden", "waren"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "die Gäste (جمع) → sind eingeladen worden" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich {0} gefragt worden.",
+      "options": ["habe", "bin", "werde", "war"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "ich → bin gefragt worden" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "تفاوت Präsens و Perfekt",
+      "content": "📝 **مقایسه Passiv Präsens و Perfekt:**\n\n**Präsens:** werden + Partizip II\n→ Das Auto **wird** repariert.\n  (ماشین تعمیر می‌شود.) - الان\n\n**Perfekt:** sein + Partizip II + worden\n→ Das Auto **ist** repariert **worden**.\n  (ماشین تعمیر شده است.) - تمام شده\n\n💡 Präsens = در حال انجام\n💡 Perfekt = انجام شده",
+      "examples": [
+        { "de": "Die Tür wird geöffnet. (الان)", "fa": "در باز می‌شود." },
+        { "de": "Die Tür ist geöffnet worden. (قبلاً)", "fa": "در باز شده است." }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در رستوران",
+      "context": "درباره سفارش صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Kellner", "text": { "de": "Ist Ihre Bestellung aufgenommen worden?", "fa": "سفارش شما گرفته شده است؟" } },
+        { "speaker": "Gast", "text": { "de": "Ja, aber das Essen ist noch nicht gebracht worden.", "fa": "بله، اما غذا هنوز آورده نشده است." } },
+        { "speaker": "Kellner", "text": { "de": "Entschuldigung. Das Essen wird gerade zubereitet.", "fa": "ببخشید. غذا الان آماده می‌شود." } },
+        { "speaker": "Gast", "text": { "de": "Kein Problem. Ist der Wein schon bestellt worden?", "fa": "مشکلی نیست. شراب سفارش داده شده است؟" } }
+      ]
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "eingeladen",
+      "translation": "دعوت شده",
+      "syllables": ["ein", "ge", "la", "den"],
+      "distractors": ["an", "ga", "le", "dan"]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "Präsens را با Perfekt وصل کنید",
+      "items": [
+        { "id": "i1", "text": "wird gemacht" },
+        { "id": "i2", "text": "wird gelesen" },
+        { "id": "i3", "text": "wird geschrieben" },
+        { "id": "i4", "text": "wird eingeladen" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "ist gemacht worden" },
+        { "id": "m2", "text": "ist gelesen worden" },
+        { "id": "m3", "text": "ist geschrieben worden" },
+        { "id": "m4", "text": "ist eingeladen worden" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"],
+        ["i4", "m4"]
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "صرف sein در Passiv Perfekt",
+      "instruction": "صرف صحیح sein را انتخاب کنید",
+      "questions": [
+        { "prompt": "ich ___ gefragt worden", "left": "bin", "right": "ist", "correctSide": "left" },
+        { "prompt": "er ___ eingeladen worden", "left": "bin", "right": "ist", "correctSide": "right" },
+        { "prompt": "wir ___ informiert worden", "left": "sind", "right": "ist", "correctSide": "left" },
+        { "prompt": "du ___ gerufen worden", "left": "bist", "right": "ist", "correctSide": "left" },
+        { "prompt": "sie (جمع) ___ bezahlt worden", "left": "ist", "right": "sind", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": { "de": "getrunken", "fa": "نوشیده شده" },
+      "example": { "text": { "de": "Der Kaffee ist getrunken worden.", "fa": "قهوه نوشیده شده است." } }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "«ما اطلاع داده شده‌ایم» به آلمانی چیست؟",
+      "options": ["Wir werden informiert.", "Wir sind informiert worden.", "Wir haben informiert worden.", "Wir wurden informiert worden."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! wir sind + informiert + worden", "incorrect": "Passiv Perfekt: sind + Partizip II + worden" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc5",
+      "question": "کدام جمله به معنی «کیک خورده شده است» است؟",
+      "options": ["Der Kuchen wird gegessen.", "Der Kuchen ist gegessen worden.", "Der Kuchen hat gegessen worden.", "Der Kuchen wurde gegessen."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! ist + gegessen + worden", "incorrect": "Passiv Perfekt: ist + Partizip II + worden" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die E-Mail ist {0} worden.",
+      "options": ["schicken", "geschickt", "schickt", "geschicken"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Partizip II: geschickt" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Der Wein ist {0} worden.",
+      "options": ["trinken", "getrunken", "trinkt", "getrinken"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Partizip II: getrunken" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["worden.", "informiert", "sind", "Wir"],
+      "correctOrder": [3, 2, 1, 0],
+      "correctSentence": { "de": "Wir sind informiert worden.", "fa": "ما اطلاع داده شده‌ایم." }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "getrunken",
+      "translation": "نوشیده شده",
+      "syllables": ["ge", "trun", "ken"],
+      "distractors": ["ga", "tran", "kan", "trin"]
+    },
+    {
+      "type": "dialog",
+      "id": "d3",
+      "title": "پروژه تمام شد",
+      "context": "تیم درباره پروژه صحبت می‌کند",
+      "lines": [
+        { "speaker": "Chef", "text": { "de": "Ist das Projekt abgeschlossen worden?", "fa": "پروژه تمام شده است؟" } },
+        { "speaker": "Anna", "text": { "de": "Ja, es ist gestern fertiggestellt worden.", "fa": "بله، دیروز تکمیل شده است." } },
+        { "speaker": "Chef", "text": { "de": "Sind alle Dokumente überprüft worden?", "fa": "همه مدارک بررسی شده‌اند؟" } },
+        { "speaker": "Ben", "text": { "de": "Ja, sie sind alle kontrolliert worden.", "fa": "بله، همه کنترل شده‌اند." } }
+      ]
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "فرم Passiv Perfekt صحیح را انتخاب کنید",
+      "words": [
+        { "de": "reparieren", "fa": "ist ... worden", "options": ["ist repariert worden", "wird repariert worden", "hat repariert worden", "ist repariert geworden"], "correctIndex": 0 },
+        { "de": "schreiben", "fa": "ist ... worden", "options": ["ist schreiben worden", "ist geschrieben geworden", "ist geschrieben worden", "wird geschrieben worden"], "correctIndex": 2 },
+        { "de": "einladen", "fa": "sind ... worden", "options": ["sind eingeladen geworden", "werden eingeladen worden", "haben eingeladen worden", "sind eingeladen worden"], "correctIndex": 3 }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo4",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["worden.", "eingeladen", "bin", "Ich"],
+      "correctOrder": [3, 2, 1, 0],
+      "correctSentence": { "de": "Ich bin eingeladen worden.", "fa": "من دعوت شده‌ام." }
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Das Auto ist repariert worden.",
+      "translation": "ماشین تعمیر شده است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Der Brief ist geschrieben worden.",
+      "translation": "نامه نوشته شده است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Wir sind informiert worden.",
+      "translation": "ما اطلاع داده شده‌ایم."
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "ist gemacht worden", "fa": "انجام شده است" },
+        { "de": "ist gelesen worden", "fa": "خوانده شده است" },
+        { "de": "ist geschrieben worden", "fa": "نوشته شده است" },
+        { "de": "sind eingeladen worden", "fa": "دعوت شده‌اند" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp1",
+      "title": "آفرین! 🎉",
+      "message": "مجهول زمان گذشته (Passiv Perfekt) را یاد گرفتید!",
+      "keyPoints": [
+        "ساختار: sein + Partizip II + worden",
+        "worden نه geworden!",
+        "ich bin, du bist, er ist + Partizip II + worden",
+        "wir/sie/Sie sind + Partizip II + worden",
+        "Das Auto ist repariert worden. (ماشین تعمیر شده است.)"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "ist ... worden", "fa": "... شده است" } },
+        { "word": { "de": "geschrieben", "fa": "نوشته شده" } },
+        { "word": { "de": "gelesen", "fa": "خوانده شده" } },
+        { "word": { "de": "eingeladen", "fa": "دعوت شده" } },
+        { "word": { "de": "informiert", "fa": "اطلاع داده شده" } }
+      ]
+    }
+  ]
+}
