@@ -1,0 +1,479 @@
+{
+  "id": "A2-M13-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "außerdem, sonst, also", "fa": "علاوه بر این، وگرنه، پس" },
+  "description": "یاد بگیرید چطور اضافه کردن، هشدار و نتیجه‌گیری را با کلمات ربط بیان کنید",
+  "level": "A2",
+  "module": 13,
+  "lessonNumber": 3,
+  "totalSteps": 44,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "außerdem", "fa": "علاوه بر این / همچنین", "grammar": { "pos": "adverb" } },
+    { "de": "sonst", "fa": "وگرنه / در غیر این صورت", "grammar": { "pos": "adverb" } },
+    { "de": "also", "fa": "پس / بنابراین", "grammar": { "pos": "adverb" } },
+    { "de": "jedoch", "fa": "اما / با این حال", "grammar": { "pos": "adverb" } },
+    { "de": "nämlich", "fa": "یعنی / چون", "grammar": { "pos": "adverb" } },
+    { "de": "schließlich", "fa": "سرانجام / در نهایت", "grammar": { "pos": "adverb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "außerdem = علاوه بر این",
+      "content": "📝 **außerdem = علاوه بر این / همچنین**\n\nبرای اضافه کردن اطلاعات:\n\n• Ich spreche Deutsch. **Außerdem** spreche ich Englisch.\n→ آلمانی صحبت می‌کنم. **علاوه بر این** انگلیسی هم صحبت می‌کنم.\n\n• Das Hotel ist schön. **Außerdem** ist es billig.\n→ هتل زیباست. **همچنین** ارزان است.\n\n💡 außerdem برای افزودن نکته جدید استفاده می‌شود",
+      "examples": [
+        { "de": "Ich mag Fußball. Außerdem spiele ich Tennis.", "fa": "فوتبال دوست دارم. علاوه بر این تنیس هم بازی می‌کنم." },
+        { "de": "Er ist intelligent. Außerdem ist er fleißig.", "fa": "باهوش است. همچنین سخت‌کوش است." },
+        { "de": "Das Essen ist lecker. Außerdem ist es gesund.", "fa": "غذا خوشمزه است. علاوه بر این سالم است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "außerdem", "fa": "علاوه بر این / همچنین" },
+      "example": { "text": { "de": "Ich lerne Deutsch. Außerdem lerne ich Spanisch.", "fa": "آلمانی یاد می‌گیرم. علاوه بر این اسپانیایی هم یاد می‌گیرم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "außerdem",
+      "translation": "علاوه بر این",
+      "syllables": ["au", "ßer", "dem"],
+      "distractors": ["ou", "ser", "dam"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "sonst", "fa": "وگرنه / در غیر این صورت" },
+      "example": { "text": { "de": "Beeil dich, sonst kommen wir zu spät!", "fa": "عجله کن، وگرنه دیر می‌رسیم!" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "sonst",
+      "translation": "وگرنه",
+      "syllables": ["sonst"],
+      "distractors": ["sanst", "sunst", "sinst"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "also", "fa": "پس / بنابراین" },
+      "example": { "text": { "de": "Du bist müde. Also solltest du schlafen.", "fa": "خسته‌ای. پس باید بخوابی." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "also",
+      "translation": "پس",
+      "syllables": ["al", "so"],
+      "distractors": ["ol", "sa", "su"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "sonst = وگرنه",
+      "content": "📝 **sonst = وگرنه / در غیر این صورت**\n\nبرای هشدار یا نتیجه منفی:\n\n• Lern fleißig, **sonst** bestehst du nicht.\n→ خوب درس بخوان، **وگرنه** قبول نمی‌شوی.\n\n• Nimm einen Regenschirm, **sonst** wirst du nass.\n→ چتر ببر، **وگرنه** خیس می‌شوی.\n\n💡 sonst نتیجه منفی را نشان می‌دهد اگر کاری انجام نشود",
+      "examples": [
+        { "de": "Fahr langsam, sonst gibt es einen Unfall.", "fa": "آهسته برو، وگرنه تصادف می‌شود." },
+        { "de": "Iss etwas, sonst wirst du hungrig.", "fa": "چیزی بخور، وگرنه گرسنه می‌شوی." },
+        { "de": "Ruf mich an, sonst vergesse ich es.", "fa": "به من زنگ بزن، وگرنه فراموش می‌کنم." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«آلمانی صحبت می‌کنم. علاوه بر این انگلیسی هم صحبت می‌کنم» به آلمانی چیست؟",
+      "options": ["Ich spreche Deutsch. Sonst spreche ich Englisch.", "Ich spreche Deutsch. Außerdem spreche ich Englisch.", "Ich spreche Deutsch. Also spreche ich Englisch.", "Ich spreche Deutsch. Trotzdem spreche ich Englisch."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! außerdem = علاوه بر این", "incorrect": "außerdem = علاوه بر این / همچنین" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "«عجله کن، وگرنه دیر می‌رسیم» به آلمانی چیست؟",
+      "options": ["Beeil dich, außerdem kommen wir zu spät.", "Beeil dich, also kommen wir zu spät.", "Beeil dich, sonst kommen wir zu spät.", "Beeil dich, deshalb kommen wir zu spät."],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! sonst = وگرنه", "incorrect": "sonst = وگرنه / در غیر این صورت" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich mag Musik. {0} spiele ich Gitarre.",
+      "options": ["Sonst", "Außerdem", "Trotzdem", "Deshalb"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "außerdem = علاوه بر این (افزودن نکته)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Nimm einen Mantel, {0} wird dir kalt.",
+      "options": ["außerdem", "sonst", "also", "dennoch"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "sonst = وگرنه (هشدار)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "برنامه سفر",
+      "context": "آنا و تام درباره سفر صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Ich fahre nächste Woche nach Paris.", "fa": "هفته آینده به پاریس می‌روم." } },
+        { "speaker": "Tom", "text": { "de": "Toll! Was willst du dort machen?", "fa": "عالی! می‌خواهی آنجا چه کار کنی؟" } },
+        { "speaker": "Anna", "text": { "de": "Ich besuche den Eiffelturm. Außerdem gehe ich ins Louvre.", "fa": "از برج ایفل دیدن می‌کنم. علاوه بر این به لوور می‌روم." } },
+        { "speaker": "Tom", "text": { "de": "Vergiss nicht zu reservieren, sonst bekommst du keine Tickets!", "fa": "فراموش نکن رزرو کنی، وگرنه بلیت گیرت نمی‌آید!" } },
+        { "speaker": "Anna", "text": { "de": "Guter Tipp! Also mache ich das heute noch.", "fa": "نکته خوبی! پس همین امروز انجامش می‌دهم." } }
+      ],
+      "questions": [
+        {
+          "question": "آنا کجا می‌رود؟",
+          "options": ["لندن", "پاریس", "برلین"],
+          "correctIndex": 1,
+          "explanation": "آنا گفت: Ich fahre nächste Woche nach Paris"
+        },
+        {
+          "question": "تام چه هشداری می‌دهد؟",
+          "options": ["پول ببرد", "رزرو کند", "زود برود"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: sonst bekommst du keine Tickets"
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "jedoch", "fa": "اما / با این حال" },
+      "example": { "text": { "de": "Das Wetter ist schön. Jedoch ist es kalt.", "fa": "هوا خوب است. اما سرد است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "jedoch",
+      "translation": "اما",
+      "syllables": ["je", "doch"],
+      "distractors": ["ja", "dach", "dich"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "نتیجه‌گیری: پس / بنابراین",
+      "content": "📝 **also = پس / بنابراین**\n\nبرای نتیجه‌گیری از چیزی:\n\n• Du bist müde. **Also** geh schlafen!\n→ خسته‌ای. **پس** برو بخواب!\n\n• Es regnet. **Also** bleiben wir zu Hause.\n→ باران می‌بارد. **پس** خانه می‌مانیم.\n\n💡 also شبیه deshalb است اما بیشتر در محاوره استفاده می‌شود",
+      "examples": [
+        { "de": "Du hast recht. Also machen wir das so.", "fa": "حق با توست. پس همین‌طور انجام می‌دهیم." },
+        { "de": "Er kommt nicht. Also gehen wir ohne ihn.", "fa": "نمی‌آید. پس بدون او می‌رویم." },
+        { "de": "Das Essen ist fertig. Also können wir essen.", "fa": "غذا آماده است. پس می‌توانیم بخوریم." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Englisch.", "ich", "Außerdem", "spreche"],
+      "correctOrder": [2, 3, 1, 0],
+      "correctSentence": { "de": "Außerdem spreche ich Englisch.", "fa": "علاوه بر این انگلیسی صحبت می‌کنم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["spät.", "zu", "kommen", "sonst", "wir"],
+      "correctOrder": [3, 2, 4, 1, 0],
+      "correctSentence": { "de": "sonst kommen wir zu spät.", "fa": "وگرنه دیر می‌رسیم." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "کدام کلمه برای افزودن اطلاعات استفاده می‌شود؟",
+      "options": ["sonst", "außerdem", "trotzdem", "deshalb"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! außerdem = علاوه بر این", "incorrect": "außerdem = علاوه بر این / همچنین" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "کدام کلمه برای هشدار استفاده می‌شود؟",
+      "options": ["außerdem", "also", "sonst", "dennoch"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! sonst = وگرنه (هشدار)", "incorrect": "sonst = وگرنه / در غیر این صورت" }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "nämlich", "fa": "یعنی / چون" },
+      "example": { "text": { "de": "Ich kann nicht kommen. Ich bin nämlich krank.", "fa": "نمی‌توانم بیایم. چون مریضم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "nämlich",
+      "translation": "یعنی",
+      "syllables": ["näm", "lich"],
+      "distractors": ["nam", "loch", "lech"]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "schließlich", "fa": "سرانجام / در نهایت" },
+      "example": { "text": { "de": "Er hat lange gesucht. Schließlich hat er es gefunden.", "fa": "زیاد گشت. سرانجام پیدایش کرد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "schließlich",
+      "translation": "سرانجام",
+      "syllables": ["schließ", "lich"],
+      "distractors": ["schlaß", "loch", "lech"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Du bist müde. {0} geh schlafen!",
+      "options": ["Außerdem", "Sonst", "Also", "Jedoch"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "also = پس (نتیجه‌گیری)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich kann nicht kommen. Ich bin {0} krank.",
+      "options": ["außerdem", "sonst", "nämlich", "schließlich"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "nämlich = چون / یعنی (توضیح)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "مشکل",
+      "context": "لیزا و ماکس درباره مشکلی صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Ich habe ein Problem.", "fa": "مشکلی دارم." } },
+        { "speaker": "Max", "text": { "de": "Was ist los?", "fa": "چه شده؟" } },
+        { "speaker": "Lisa", "text": { "de": "Mein Auto ist kaputt. Außerdem habe ich kein Geld für die Reparatur.", "fa": "ماشینم خراب است. علاوه بر این پول تعمیر ندارم." } },
+        { "speaker": "Max", "text": { "de": "Das ist schlecht. Also musst du mit dem Bus fahren.", "fa": "بد است. پس باید با اتوبوس بروی." } },
+        { "speaker": "Lisa", "text": { "de": "Ja, ich habe keine andere Wahl.", "fa": "بله، چاره دیگری ندارم." } }
+      ],
+      "questions": [
+        {
+          "question": "مشکل لیزا چیست؟",
+          "options": ["بیمار است", "ماشینش خراب است", "کارش را از دست داده"],
+          "correctIndex": 1,
+          "explanation": "لیزا گفت: Mein Auto ist kaputt"
+        },
+        {
+          "question": "ماکس چه پیشنهادی می‌دهد؟",
+          "options": ["ماشین بخرد", "با اتوبوس برود", "پیاده برود"],
+          "correctIndex": 1,
+          "explanation": "ماکس گفت: Also musst du mit dem Bus fahren"
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "کلمه آلمانی را با معنی فارسی وصل کنید",
+      "items": [
+        { "id": "i1", "text": "außerdem" },
+        { "id": "i2", "text": "sonst" },
+        { "id": "i3", "text": "also" },
+        { "id": "i4", "text": "jedoch" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "علاوه بر این" },
+        { "id": "m2", "text": "وگرنه" },
+        { "id": "m3", "text": "پس" },
+        { "id": "m4", "text": "اما" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"],
+        ["i4", "m4"]
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "کدام کلمه؟",
+      "instruction": "برای این معنی کدام کلمه درست است؟",
+      "questions": [
+        { "prompt": "علاوه بر این", "left": "außerdem", "right": "sonst", "correctSide": "left" },
+        { "prompt": "وگرنه", "left": "also", "right": "sonst", "correctSide": "right" },
+        { "prompt": "پس (نتیجه)", "left": "also", "right": "außerdem", "correctSide": "left" },
+        { "prompt": "همچنین", "left": "außerdem", "right": "sonst", "correctSide": "left" },
+        { "prompt": "در غیر این صورت", "left": "also", "right": "sonst", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["schlafen!", "geh", "Also"],
+      "correctOrder": [2, 1, 0],
+      "correctSentence": { "de": "Also geh schlafen!", "fa": "پس برو بخواب!" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo4",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["gefunden.", "es", "hat", "Schließlich", "er"],
+      "correctOrder": [3, 2, 4, 1, 0],
+      "correctSentence": { "de": "Schließlich hat er es gefunden.", "fa": "سرانجام پیدایش کرد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er hat lange gesucht. {0} hat er es gefunden.",
+      "options": ["Außerdem", "Sonst", "Schließlich", "Jedoch"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "schließlich = سرانجام / در نهایت" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das Wetter ist schön. {0} ist es kalt.",
+      "options": ["Außerdem", "Sonst", "Also", "Jedoch"],
+      "correctAnswers": [3],
+      "feedback": { "explanation": "jedoch = اما / با این حال (تضاد)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d3",
+      "title": "توصیه",
+      "context": "الی و تام درباره سلامتی صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Eli", "text": { "de": "Ich esse zu viel Süßes.", "fa": "زیاد شیرینی می‌خورم." } },
+        { "speaker": "Tom", "text": { "de": "Das ist nicht gesund. Also solltest du weniger essen.", "fa": "این سالم نیست. پس باید کمتر بخوری." } },
+        { "speaker": "Eli", "text": { "de": "Ich weiß. Außerdem trinke ich zu wenig Wasser.", "fa": "می‌دانم. علاوه بر این کم آب می‌نوشم." } },
+        { "speaker": "Tom", "text": { "de": "Trink mehr, sonst bekommst du Kopfschmerzen!", "fa": "بیشتر بنوش، وگرنه سردرد می‌گیری!" } },
+        { "speaker": "Eli", "text": { "de": "Du hast recht. Ich ändere meine Gewohnheiten.", "fa": "حق با توست. عادت‌هایم را عوض می‌کنم." } }
+      ],
+      "questions": [
+        {
+          "question": "مشکل الی چیست؟",
+          "options": ["کم می‌خورد", "زیاد شیرینی می‌خورد", "زیاد آب می‌نوشد"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: Ich esse zu viel Süßes"
+        },
+        {
+          "question": "تام چه هشداری می‌دهد؟",
+          "options": ["چاق می‌شود", "سردرد می‌گیرد", "مریض می‌شود"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: sonst bekommst du Kopfschmerzen"
+        }
+      ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "außerdem برای افزودن اطلاعات جدید استفاده می‌شود.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! außerdem = علاوه بر این / همچنین"
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "sonst برای نشان دادن نتیجه مثبت استفاده می‌شود.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! sonst برای هشدار و نتیجه منفی استفاده می‌شود (وگرنه)"
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "آلمانی صحبت می‌کنم. علاوه بر این انگلیسی هم صحبت می‌کنم.",
+      "sentenceTemplate": "Ich spreche Deutsch. {0} {1} {2} {3}.",
+      "options": ["Englisch", "ich", "Außerdem", "spreche"],
+      "correctAnswers": [2, 3, 1, 0],
+      "correctTranslation": {
+        "de": "Ich spreche Deutsch. Außerdem spreche ich Englisch.",
+        "fa": "آلمانی صحبت می‌کنم. علاوه بر این انگلیسی هم صحبت می‌کنم."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "عجله کن، وگرنه دیر می‌رسیم!",
+      "sentenceTemplate": "Beeil dich, {0} {1} {2} {3} {4}!",
+      "options": ["spät", "zu", "kommen", "sonst", "wir"],
+      "correctAnswers": [3, 2, 4, 1, 0],
+      "correctTranslation": {
+        "de": "Beeil dich, sonst kommen wir zu spät!",
+        "fa": "عجله کن، وگرنه دیر می‌رسیم!"
+      }
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "außerdem", "fa": "علاوه بر این", "options": ["وگرنه", "علاوه بر این", "پس", "اما"], "correctIndex": 1 },
+        { "de": "sonst", "fa": "وگرنه", "options": ["علاوه بر این", "پس", "وگرنه", "سرانجام"], "correctIndex": 2 },
+        { "de": "also", "fa": "پس", "options": ["پس", "وگرنه", "علاوه بر این", "یعنی"], "correctIndex": 0 }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich spreche Deutsch. Außerdem spreche ich Englisch.",
+      "translation": "آلمانی صحبت می‌کنم. علاوه بر این انگلیسی هم صحبت می‌کنم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Beeil dich, sonst kommen wir zu spät!",
+      "translation": "عجله کن، وگرنه دیر می‌رسیم!"
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Du bist müde. Also geh schlafen!",
+      "translation": "خسته‌ای. پس برو بخواب!"
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "außerdem", "fa": "علاوه بر این" },
+        { "de": "sonst", "fa": "وگرنه" },
+        { "de": "also", "fa": "پس" },
+        { "de": "jedoch", "fa": "اما" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp1",
+      "title": "آفرین! 🎉",
+      "message": "کلمات ربط بیشتری یاد گرفتید!",
+      "keyPoints": [
+        "außerdem = علاوه بر این / همچنین (افزودن)",
+        "sonst = وگرنه (هشدار، نتیجه منفی)",
+        "also = پس / بنابراین (نتیجه‌گیری)",
+        "jedoch = اما (تضاد ملایم)",
+        "nämlich = یعنی / چون (توضیح)",
+        "schließlich = سرانجام (پایان)"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "außerdem", "fa": "علاوه بر این" } },
+        { "word": { "de": "sonst", "fa": "وگرنه" } },
+        { "word": { "de": "also", "fa": "پس" } },
+        { "word": { "de": "jedoch", "fa": "اما" } },
+        { "word": { "de": "nämlich", "fa": "یعنی" } },
+        { "word": { "de": "schließlich", "fa": "سرانجام" } }
+      ]
+    }
+  ]
+}

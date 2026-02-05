@@ -846,6 +846,37 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/A2/A2-M12-L04"
       }
     ]
+  },
+  {
+    id: "module-13",
+    title: "بخش ۱۳: کلمات ربط (Konnektoren)",
+    level: "A2",
+    lessons: [
+      {
+        id: "A2-M13-L01",
+        title: "deshalb, deswegen, darum - به همین دلیل",
+        description: "یاد بگیرید چطور نتیجه و دلیل را با کلمات ربط بیان کنید.",
+        path: "/learn/de-fa/A2/A2-M13-L01"
+      },
+      {
+        id: "A2-M13-L02",
+        title: "trotzdem, dennoch - با این حال",
+        description: "یاد بگیرید چطور تضاد و استثنا را با کلمات ربط بیان کنید.",
+        path: "/learn/de-fa/A2/A2-M13-L02"
+      },
+      {
+        id: "A2-M13-L03",
+        title: "außerdem, sonst, also - علاوه بر این، وگرنه، پس",
+        description: "یاد بگیرید چطور اضافه کردن، هشدار و نتیجه‌گیری را با کلمات ربط بیان کنید.",
+        path: "/learn/de-fa/A2/A2-M13-L03"
+      },
+      {
+        id: "A2-M13-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور همه کلمات ربط: deshalb، trotzdem، außerdem، sonst، also و بیشتر.",
+        path: "/learn/de-fa/A2/A2-M13-L04"
+      }
+    ]
   }
 ];
 

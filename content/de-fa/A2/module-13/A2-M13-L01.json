@@ -1,0 +1,476 @@
+{
+  "id": "A2-M13-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "deshalb, deswegen, darum", "fa": "به همین دلیل، بنابراین" },
+  "description": "یاد بگیرید چطور نتیجه و دلیل را با کلمات ربط بیان کنید",
+  "level": "A2",
+  "module": 13,
+  "lessonNumber": 1,
+  "totalSteps": 44,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "deshalb", "fa": "به همین دلیل / بنابراین", "grammar": { "pos": "adverb" } },
+    { "de": "deswegen", "fa": "به همین دلیل / بنابراین", "grammar": { "pos": "adverb" } },
+    { "de": "darum", "fa": "به همین دلیل / بنابراین", "grammar": { "pos": "adverb" } },
+    { "de": "daher", "fa": "بنابراین / از این رو", "grammar": { "pos": "adverb" } },
+    { "de": "müde", "fa": "خسته", "grammar": { "pos": "adjective" } },
+    { "de": "krank", "fa": "مریض / بیمار", "grammar": { "pos": "adjective" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "کلمات ربط نتیجه",
+      "content": "📝 **deshalb، deswegen، darum = به همین دلیل / بنابراین**\n\nاین کلمات نتیجه را نشان می‌دهند:\n\n• Ich bin müde. **Deshalb** gehe ich schlafen.\n→ خسته‌ام. **به همین دلیل** می‌روم بخوابم.\n\n• Es regnet. **Deswegen** bleibe ich zu Hause.\n→ باران می‌بارد. **بنابراین** خانه می‌مانم.\n\n💡 هر سه کلمه معنی یکسان دارند!",
+      "examples": [
+        { "de": "Er ist krank. Deshalb bleibt er zu Hause.", "fa": "او مریض است. به همین دلیل خانه می‌ماند." },
+        { "de": "Ich habe Hunger. Deswegen esse ich.", "fa": "گرسنه‌ام. بنابراین غذا می‌خورم." },
+        { "de": "Sie hat keine Zeit. Darum kommt sie nicht.", "fa": "او وقت ندارد. به همین دلیل نمی‌آید." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "deshalb", "fa": "به همین دلیل / بنابراین" },
+      "example": { "text": { "de": "Ich bin müde. Deshalb gehe ich ins Bett.", "fa": "خسته‌ام. به همین دلیل می‌روم بخوابم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "deshalb",
+      "translation": "به همین دلیل",
+      "syllables": ["des", "halb"],
+      "distractors": ["das", "holb", "hilb"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "deswegen", "fa": "به همین دلیل / بنابراین" },
+      "example": { "text": { "de": "Es ist kalt. Deswegen ziehe ich eine Jacke an.", "fa": "هوا سرد است. بنابراین ژاکت می‌پوشم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "deswegen",
+      "translation": "بنابراین",
+      "syllables": ["des", "we", "gen"],
+      "distractors": ["das", "wa", "gan"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "darum", "fa": "به همین دلیل / بنابراین" },
+      "example": { "text": { "de": "Sie liebt ihn. Darum heiratet sie ihn.", "fa": "او را دوست دارد. به همین دلیل با او ازدواج می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "darum",
+      "translation": "به همین دلیل",
+      "syllables": ["da", "rum"],
+      "distractors": ["do", "rom", "rim"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "ترتیب کلمات با deshalb",
+      "content": "📝 **ترتیب کلمات:**\n\nبعد از deshalb/deswegen/darum، فعل در جایگاه دوم می‌آید:\n\n• Ich bin müde. **Deshalb gehe** ich schlafen.\n→ [کانکتور] + [فعل] + [فاعل]\n\n• Es regnet. **Deswegen bleibe** ich zu Hause.\n\n💡 این کلمات در Position 1 هستند، پس فعل در Position 2!",
+      "examples": [
+        { "de": "Er hat Fieber. Deshalb geht er zum Arzt.", "fa": "او تب دارد. به همین دلیل به دکتر می‌رود." },
+        { "de": "Sie lernt viel. Deswegen besteht sie die Prüfung.", "fa": "او زیاد درس می‌خواند. بنابراین امتحان را پاس می‌کند." },
+        { "de": "Wir haben Urlaub. Darum fahren wir ans Meer.", "fa": "تعطیلات داریم. به همین دلیل به دریا می‌رویم." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله درست است؟",
+      "options": ["Ich bin müde. Deshalb ich gehe schlafen.", "Ich bin müde. Deshalb gehe ich schlafen.", "Ich bin müde. Deshalb schlafen ich gehe.", "Ich bin müde. Ich deshalb gehe schlafen."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! بعد از deshalb فعل در جایگاه دوم می‌آید", "incorrect": "بعد از deshalb: فعل + فاعل (Deshalb gehe ich)" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "«باران می‌بارد. بنابراین خانه می‌مانم» به آلمانی چیست؟",
+      "options": ["Es regnet. Deswegen ich bleibe zu Hause.", "Es regnet. Deswegen bleibe ich zu Hause.", "Es regnet. Ich deswegen bleibe zu Hause.", "Es regnet. Bleibe deswegen ich zu Hause."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! Deswegen bleibe ich...", "incorrect": "ترتیب: Deswegen + فعل + فاعل" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich habe Hunger. {0} esse ich etwas.",
+      "options": ["Deshalb", "Weil", "Dass", "Ob"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "deshalb = به همین دلیل (نتیجه)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er ist krank. Deswegen {0} er zu Hause.",
+      "options": ["bleibt", "bleiben", "bleibe", "bleibst"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "er bleibt (سوم شخص مفرد)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "چرا دیر آمدی؟",
+      "context": "آنا و تام در دفتر کار",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Du bist heute spät. Was ist passiert?", "fa": "امروز دیر آمدی. چه شده؟" } },
+        { "speaker": "Tom", "text": { "de": "Der Bus kam nicht. Deshalb bin ich zu spät.", "fa": "اتوبوس نیامد. به همین دلیل دیر کردم." } },
+        { "speaker": "Anna", "text": { "de": "Das ist ärgerlich!", "fa": "این آزاردهنده است!" } },
+        { "speaker": "Tom", "text": { "de": "Ja, deswegen nehme ich morgen das Auto.", "fa": "بله، بنابراین فردا ماشین می‌آورم." } },
+        { "speaker": "Anna", "text": { "de": "Gute Idee!", "fa": "ایده خوبی!" } }
+      ],
+      "questions": [
+        {
+          "question": "چرا تام دیر کرد؟",
+          "options": ["ماشینش خراب شد", "اتوبوس نیامد", "دیر بیدار شد"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: Der Bus kam nicht"
+        },
+        {
+          "question": "تام فردا چه کار می‌کند؟",
+          "options": ["با اتوبوس می‌آید", "با ماشین می‌آید", "پیاده می‌آید"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: deswegen nehme ich morgen das Auto"
+        }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "daher", "fa": "بنابراین / از این رو" },
+      "example": { "text": { "de": "Er ist Vegetarier. Daher isst er kein Fleisch.", "fa": "او گیاه‌خوار است. بنابراین گوشت نمی‌خورد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "daher",
+      "translation": "بنابراین",
+      "syllables": ["da", "her"],
+      "distractors": ["do", "har", "hir"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "تفاوت weil و deshalb",
+      "content": "📝 **weil vs deshalb:**\n\n**weil** = چون (دلیل)\n• Ich bleibe zu Hause, **weil** es regnet.\n→ خانه می‌مانم **چون** باران می‌بارد.\n\n**deshalb** = بنابراین (نتیجه)\n• Es regnet. **Deshalb** bleibe ich zu Hause.\n→ باران می‌بارد. **بنابراین** خانه می‌مانم.\n\n💡 weil = دلیل (فعل در آخر)\n💡 deshalb = نتیجه (فعل در جایگاه دوم)",
+      "examples": [
+        { "de": "Ich bin müde, weil ich wenig geschlafen habe.", "fa": "خسته‌ام چون کم خوابیدم." },
+        { "de": "Ich habe wenig geschlafen. Deshalb bin ich müde.", "fa": "کم خوابیدم. به همین دلیل خسته‌ام." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["schlafen.", "ich", "Deshalb", "gehe"],
+      "correctOrder": [2, 3, 1, 0],
+      "correctSentence": { "de": "Deshalb gehe ich schlafen.", "fa": "به همین دلیل می‌روم بخوابم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Hause.", "zu", "bleibe", "Deswegen", "ich"],
+      "correctOrder": [3, 2, 4, 1, 0],
+      "correctSentence": { "de": "Deswegen bleibe ich zu Hause.", "fa": "بنابراین خانه می‌مانم." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "کدام کلمه برای نشان دادن نتیجه استفاده می‌شود؟",
+      "options": ["weil", "dass", "deshalb", "ob"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! deshalb = به همین دلیل (نتیجه)", "incorrect": "deshalb/deswegen/darum برای نتیجه استفاده می‌شوند" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "deshalb، deswegen و darum چه تفاوتی دارند؟",
+      "options": ["معنی متفاوت دارند", "معنی یکسان دارند", "deshalb رسمی‌تر است", "darum قدیمی است"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! هر سه معنی یکسان دارند", "incorrect": "deshalb = deswegen = darum (همه یعنی به همین دلیل)" }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "müde", "fa": "خسته" },
+      "example": { "text": { "de": "Ich bin müde. Deshalb trinke ich Kaffee.", "fa": "خسته‌ام. به همین دلیل قهوه می‌نوشم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "müde",
+      "translation": "خسته",
+      "syllables": ["mü", "de"],
+      "distractors": ["ma", "da", "di"]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "krank", "fa": "مریض / بیمار" },
+      "example": { "text": { "de": "Sie ist krank. Darum geht sie zum Arzt.", "fa": "او مریض است. به همین دلیل به دکتر می‌رود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "krank",
+      "translation": "مریض",
+      "syllables": ["krank"],
+      "distractors": ["krunk", "kronk", "krink"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sie hat Kopfschmerzen. {0} nimmt sie eine Tablette.",
+      "options": ["Weil", "Darum", "Dass", "Wenn"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "darum = به همین دلیل (نتیجه)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er ist Vegetarier. Daher {0} er kein Fleisch.",
+      "options": ["isst", "esse", "essen", "esst"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "er isst (سوم شخص مفرد)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "برنامه‌ریزی",
+      "context": "لیزا و ماکس درباره آخر هفته صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Morgen ist das Wetter schön.", "fa": "فردا هوا خوب است." } },
+        { "speaker": "Max", "text": { "de": "Super! Deshalb können wir wandern gehen.", "fa": "عالی! به همین دلیل می‌توانیم پیاده‌روی برویم." } },
+        { "speaker": "Lisa", "text": { "de": "Gute Idee! Ich bin aber ein bisschen müde.", "fa": "ایده خوبی! اما کمی خسته‌ام." } },
+        { "speaker": "Max", "text": { "de": "Deswegen solltest du heute früh schlafen.", "fa": "بنابراین باید امشب زود بخوابی." } },
+        { "speaker": "Lisa", "text": { "de": "Du hast recht!", "fa": "حق با توست!" } }
+      ],
+      "questions": [
+        {
+          "question": "چرا می‌توانند پیاده‌روی بروند؟",
+          "options": ["چون تعطیل است", "چون هوا خوب است", "چون وقت دارند"],
+          "correctIndex": 1,
+          "explanation": "گفتند: Morgen ist das Wetter schön"
+        },
+        {
+          "question": "ماکس چه پیشنهادی به لیزا می‌دهد؟",
+          "options": ["قهوه بنوشد", "زود بخوابد", "ورزش کند"],
+          "correctIndex": 1,
+          "explanation": "ماکس گفت: Deswegen solltest du heute früh schlafen"
+        }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "کلمه آلمانی را با معنی فارسی وصل کنید",
+      "items": [
+        { "id": "i1", "text": "deshalb" },
+        { "id": "i2", "text": "deswegen" },
+        { "id": "i3", "text": "darum" },
+        { "id": "i4", "text": "daher" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "به همین دلیل" },
+        { "id": "m2", "text": "بنابراین" },
+        { "id": "m3", "text": "به همین خاطر" },
+        { "id": "m4", "text": "از این رو" }
+      ],
+      "correctPairs": [
+        ["i1", "m1"],
+        ["i2", "m2"],
+        ["i3", "m3"],
+        ["i4", "m4"]
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "weil یا deshalb؟",
+      "instruction": "کدام برای این جمله مناسب است؟",
+      "questions": [
+        { "prompt": "Ich bin müde, ___ ich wenig geschlafen habe.", "left": "weil", "right": "deshalb", "correctSide": "left" },
+        { "prompt": "Ich habe wenig geschlafen. ___ bin ich müde.", "left": "Weil", "right": "Deshalb", "correctSide": "right" },
+        { "prompt": "Er bleibt zu Hause, ___ er krank ist.", "left": "weil", "right": "deshalb", "correctSide": "left" },
+        { "prompt": "Er ist krank. ___ bleibt er zu Hause.", "left": "Weil", "right": "Darum", "correctSide": "right" },
+        { "prompt": "Sie lernt viel, ___ sie die Prüfung bestehen will.", "left": "weil", "right": "deswegen", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Arzt.", "zum", "geht", "Darum", "sie"],
+      "correctOrder": [3, 2, 4, 1, 0],
+      "correctSentence": { "de": "Darum geht sie zum Arzt.", "fa": "به همین دلیل به دکتر می‌رود." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo4",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Fleisch.", "kein", "isst", "Daher", "er"],
+      "correctOrder": [3, 2, 4, 1, 0],
+      "correctSentence": { "de": "Daher isst er kein Fleisch.", "fa": "بنابراین گوشت نمی‌خورد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das Essen ist lecker. {0} esse ich viel.",
+      "options": ["Deshalb", "Weil", "Dass", "Obwohl"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "deshalb = به همین دلیل (نتیجه)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich habe kein Geld. Deswegen {0} ich nicht einkaufen.",
+      "options": ["kann", "können", "kannst", "könnt"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "ich kann (اول شخص مفرد)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d3",
+      "title": "تصمیم",
+      "context": "الی و تام درباره شغل صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Eli", "text": { "de": "Ich mag meinen Job nicht mehr.", "fa": "دیگر شغلم را دوست ندارم." } },
+        { "speaker": "Tom", "text": { "de": "Deshalb solltest du einen neuen Job suchen.", "fa": "به همین دلیل باید دنبال شغل جدید بگردی." } },
+        { "speaker": "Eli", "text": { "de": "Ja, aber ich habe Angst.", "fa": "بله، اما می‌ترسم." } },
+        { "speaker": "Tom", "text": { "de": "Das verstehe ich. Darum ist es wichtig, gut zu planen.", "fa": "می‌فهمم. به همین دلیل مهم است خوب برنامه‌ریزی کنی." } }
+      ],
+      "questions": [
+        {
+          "question": "مشکل الی چیست؟",
+          "options": ["شغل ندارد", "شغلش را دوست ندارد", "پول ندارد"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: Ich mag meinen Job nicht mehr"
+        },
+        {
+          "question": "تام چه توصیه‌ای می‌کند؟",
+          "options": ["صبر کند", "شغل جدید پیدا کند", "بیشتر کار کند"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: Deshalb solltest du einen neuen Job suchen"
+        }
+      ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "بعد از deshalb، فعل در جایگاه دوم قرار می‌گیرد.",
+      "correctAnswer": true,
+      "feedback": {
+        "explanation": "درست! Deshalb gehe ich... (فعل در Position 2)"
+      }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "deshalb و weil معنی یکسان دارند و می‌توان جایگزین هم استفاده کرد.",
+      "correctAnswer": false,
+      "feedback": {
+        "explanation": "غلط! weil = چون (دلیل)، deshalb = بنابراین (نتیجه). ساختار جمله هم متفاوت است."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "خسته‌ام. به همین دلیل می‌روم بخوابم.",
+      "sentenceTemplate": "Ich bin müde. {0} {1} {2} {3}.",
+      "options": ["schlafen", "ich", "Deshalb", "gehe"],
+      "correctAnswers": [2, 3, 1, 0],
+      "correctTranslation": {
+        "de": "Ich bin müde. Deshalb gehe ich schlafen.",
+        "fa": "خسته‌ام. به همین دلیل می‌روم بخوابم."
+      }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "باران می‌بارد. بنابراین خانه می‌مانم.",
+      "sentenceTemplate": "Es regnet. {0} {1} {2} {3} {4}.",
+      "options": ["Hause", "ich", "zu", "Deswegen", "bleibe"],
+      "correctAnswers": [3, 4, 1, 2, 0],
+      "correctTranslation": {
+        "de": "Es regnet. Deswegen bleibe ich zu Hause.",
+        "fa": "باران می‌بارد. بنابراین خانه می‌مانم."
+      }
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "deshalb", "fa": "به همین دلیل", "options": ["چون", "به همین دلیل", "اگر", "وقتی"], "correctIndex": 1 },
+        { "de": "müde", "fa": "خسته", "options": ["گرسنه", "تشنه", "خسته", "خوشحال"], "correctIndex": 2 },
+        { "de": "krank", "fa": "مریض", "options": ["سالم", "مریض", "خسته", "گرسنه"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich bin müde. Deshalb gehe ich schlafen.",
+      "translation": "خسته‌ام. به همین دلیل می‌روم بخوابم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Es regnet. Deswegen bleibe ich zu Hause.",
+      "translation": "باران می‌بارد. بنابراین خانه می‌مانم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Er ist krank. Darum geht er zum Arzt.",
+      "translation": "او مریض است. به همین دلیل به دکتر می‌رود."
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "deshalb", "fa": "به همین دلیل" },
+        { "de": "deswegen", "fa": "بنابراین" },
+        { "de": "darum", "fa": "به همین خاطر" },
+        { "de": "daher", "fa": "از این رو" }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp1",
+      "title": "آفرین! 🎉",
+      "message": "کلمات ربط نتیجه را یاد گرفتید!",
+      "keyPoints": [
+        "deshalb = deswegen = darum = daher (همه یعنی به همین دلیل)",
+        "این کلمات نتیجه را نشان می‌دهند",
+        "بعد از این کلمات: فعل + فاعل (Deshalb gehe ich)",
+        "تفاوت با weil: weil = دلیل، deshalb = نتیجه",
+        "weil: فعل در آخر / deshalb: فعل در جایگاه دوم"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "deshalb", "fa": "به همین دلیل" } },
+        { "word": { "de": "deswegen", "fa": "بنابراین" } },
+        { "word": { "de": "darum", "fa": "به همین دلیل" } },
+        { "word": { "de": "daher", "fa": "از این رو" } },
+        { "word": { "de": "müde", "fa": "خسته" } },
+        { "word": { "de": "krank", "fa": "مریض" } }
+      ]
+    }
+  ]
+}
