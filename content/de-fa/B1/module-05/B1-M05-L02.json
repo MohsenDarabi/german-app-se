@@ -1,0 +1,498 @@
+{
+  "id": "B1-M05-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Relativsätze mit Dativ-Präpositionen", "fa": "جملات موصولی با حروف اضافه داتیو" },
+  "description": "یاد بگیرید چطور جملات موصولی با حروف اضافه داتیو بسازید: mit dem, bei der, von denen و غیره",
+  "level": "B1",
+  "module": 5,
+  "lessonNumber": 2,
+  "totalSteps": 45,
+  "estimatedMinutes": 25,
+  "vocabulary": [
+    { "de": "der Kollege", "fa": "همکار", "grammar": { "pos": "noun", "gender": "m", "note": "n-Deklination" } },
+    { "de": "die Zusammenarbeit", "fa": "همکاری", "grammar": { "pos": "noun", "gender": "f" } },
+    { "de": "stammen aus", "fa": "اهل بودن از", "grammar": { "pos": "verb", "separable": false } },
+    { "de": "gehören zu", "fa": "تعلق داشتن به", "grammar": { "pos": "verb", "separable": false } },
+    { "de": "teilnehmen an", "fa": "شرکت کردن در", "grammar": { "pos": "verb", "separable": true } },
+    { "de": "zufrieden mit", "fa": "راضی از", "grammar": { "pos": "adjective" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "جملات موصولی با حروف اضافه داتیو",
+      "content": "**جملات موصولی با حروف اضافه داتیو**\n\nوقتی حرف اضافه‌ای که داتیو می‌گیرد با ضمیر موصولی بیاید:\n\n**ساختار:**\n```\nPräposition + Relativpronomen (Dativ)\n```\n\n**حروف اضافه داتیو:**\nmit, bei, nach, aus, von, zu, seit, außer, gegenüber\n\n**مثال:**\n- Das ist der Kollege, **mit dem** ich arbeite.\n- این همکاری است که **با او** کار می‌کنم.\n\n**نکته مهم:** حرف اضافه قبل از ضمیر موصولی می‌آید!",
+      "examples": [
+        { "de": "Die Stadt, aus der ich komme, ist klein.", "fa": "شهری که از آن می‌آیم، کوچک است." },
+        { "de": "Der Mann, von dem ich spreche, ist mein Chef.", "fa": "مردی که درباره‌اش صحبت می‌کنم، رئیسم است." }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s2",
+      "title": "ضمایر موصولی داتیو",
+      "content": "**جدول ضمایر موصولی داتیو:**\n\n| جنس | ضمیر موصولی |\n|-----|------------|\n| مذکر (m) | **dem** |\n| مونث (f) | **der** |\n| خنثی (n) | **dem** |\n| جمع (pl) | **denen** |\n\n**توجه ویژه:** ضمیر موصولی جمع در داتیو **denen** است، نه den!\n\n**مثال‌ها:**\n- Der Kollege, mit **dem**... (مذکر)\n- Die Frau, bei **der**... (مونث)\n- Das Kind, von **dem**... (خنثی)\n- Die Leute, bei **denen**... (جمع)",
+      "examples": [
+        { "de": "Die Freunde, mit denen ich reise, sind nett.", "fa": "دوستانی که با آنها سفر می‌کنم، مهربان هستند." },
+        { "de": "Das ist das Projekt, an dem wir arbeiten.", "fa": "این پروژه‌ای است که روی آن کار می‌کنیم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "der Kollege", "fa": "همکار (مرد)" },
+      "example": { "text": { "de": "Das ist mein Kollege, mit dem ich jeden Tag arbeite.", "fa": "این همکار من است که هر روز با او کار می‌کنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Kollege",
+      "translation": "همکار",
+      "syllables": ["Kol", "le", "ge"],
+      "distractors": ["Kal", "la", "ga"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "die Zusammenarbeit", "fa": "همکاری" },
+      "example": { "text": { "de": "Die Zusammenarbeit, bei der wir erfolgreich waren, dauerte zwei Jahre.", "fa": "همکاری که در آن موفق بودیم، دو سال طول کشید." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Zusammenarbeit",
+      "translation": "همکاری",
+      "syllables": ["Zu", "sam", "men", "ar", "beit"],
+      "distractors": ["Za", "som", "man", "er"]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "stammen aus", "fa": "اهل بودن از" },
+      "example": { "text": { "de": "Die Stadt, aus der ich stamme, liegt im Süden.", "fa": "شهری که از آن هستم، در جنوب قرار دارد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "stammen",
+      "translation": "اهل بودن",
+      "syllables": ["stam", "men"],
+      "distractors": ["stem", "mon", "stan"]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "gehören zu", "fa": "تعلق داشتن به" },
+      "example": { "text": { "de": "Das Team, zu dem ich gehöre, ist sehr professionell.", "fa": "تیمی که به آن تعلق دارم، خیلی حرفه‌ای است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "gehören",
+      "translation": "تعلق داشتن",
+      "syllables": ["ge", "hö", "ren"],
+      "distractors": ["ga", "ha", "ran"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "teilnehmen an", "fa": "شرکت کردن در" },
+      "example": { "text": { "de": "Das ist die Konferenz, an der ich teilnehme.", "fa": "این کنفرانسی است که در آن شرکت می‌کنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "teilnehmen",
+      "translation": "شرکت کردن",
+      "syllables": ["teil", "neh", "men"],
+      "distractors": ["taal", "nah", "man"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "zufrieden mit", "fa": "راضی از" },
+      "example": { "text": { "de": "Das Ergebnis, mit dem ich zufrieden bin, war unerwartet.", "fa": "نتیجه‌ای که از آن راضی هستم، غیرمنتظره بود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "zufrieden",
+      "translation": "راضی",
+      "syllables": ["zu", "frie", "den"],
+      "distractors": ["za", "frei", "dan"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام ضمیر موصولی داتیو برای اسم‌های مذکر درست است؟",
+      "options": ["den", "dem", "der", "denen"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! ضمیر موصولی داتیو برای مذکر dem است.", "incorrect": "ضمیر موصولی داتیو برای مذکر dem است، مثل: der Mann, mit dem..." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام ضمیر موصولی داتیو برای جمع درست است؟",
+      "options": ["den", "dem", "der", "denen"],
+      "correctAnswerIndex": 3,
+      "feedback": { "correct": "آفرین! ضمیر موصولی داتیو برای جمع denen است.", "incorrect": "ضمیر موصولی داتیو برای جمع denen است (نه den!)، مثل: die Leute, mit denen..." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "ضمیر موصولی مناسب را انتخاب کنید",
+      "sentence": "Das ist der Kollege, mit {0} ich zusammenarbeite.",
+      "options": ["dem", "der", "denen", "den"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "der Kollege مذکر است، پس در داتیو: mit dem" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "ضمیر موصولی مناسب را انتخاب کنید",
+      "sentence": "Die Stadt, aus {0} ich komme, ist sehr schön.",
+      "options": ["der", "dem", "denen", "die"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "die Stadt مونث است، پس در داتیو: aus der" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "ضمیر موصولی مناسب را انتخاب کنید",
+      "sentence": "Die Freunde, bei {0} ich wohne, sind sehr nett.",
+      "options": ["denen", "dem", "der", "den"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "die Freunde جمع است، پس در داتیو: bei denen" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "ضمیر موصولی مناسب را انتخاب کنید",
+      "sentence": "Das Projekt, an {0} wir arbeiten, ist wichtig.",
+      "options": ["dem", "der", "denen", "das"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "das Projekt خنثی است، پس در داتیو: an dem" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "ضمیر موصولی مناسب را انتخاب کنید",
+      "sentence": "Die Firma, bei {0} ich arbeite, ist international.",
+      "options": ["der", "dem", "denen", "die"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "die Firma مونث است، پس در داتیو: bei der" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "ضمیر موصولی مناسب را انتخاب کنید",
+      "sentence": "Der Chef, von {0} ich viel gelernt habe, ist pensioniert.",
+      "options": ["dem", "der", "denen", "den"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "der Chef مذکر است، پس در داتیو: von dem" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["mit dem ich arbeite.", "der Kollege,", "Das ist"],
+      "correctOrder": [2, 1, 0],
+      "correctSentence": { "de": "Das ist der Kollege, mit dem ich arbeite.", "fa": "این همکاری است که با او کار می‌کنم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["aus der ich stamme.", "klein.", "Die Stadt,", "ist"],
+      "correctOrder": [2, 0, 3, 1],
+      "correctSentence": { "de": "Die Stadt, aus der ich stamme, ist klein.", "fa": "شهری که از آن هستم، کوچک است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["bei denen ich war,", "Die Leute,", "waren freundlich."],
+      "correctOrder": [1, 0, 2],
+      "correctSentence": { "de": "Die Leute, bei denen ich war, waren freundlich.", "fa": "مردمی که پیش آنها بودم، مهربان بودند." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جملات موصولی با حرف اضافه، حرف اضافه بعد از ضمیر موصولی می‌آید.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! حرف اضافه قبل از ضمیر موصولی می‌آید: mit dem, bei der, von denen و غیره." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "ضمیر موصولی داتیو برای جمع denen است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! در داتیو جمع از denen استفاده می‌کنیم: die Leute, mit denen..." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "mit, bei, nach, aus, von, zu همه حروف اضافه داتیو هستند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! همه این حروف اضافه همیشه داتیو می‌گیرند." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در محل کار",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Büro einer großen Firma", "fa": "در دفتر یک شرکت بزرگ" }
+      },
+      "lines": [
+        { "speaker": "Sara", "text": { "de": "Kennst du den neuen Kollegen?", "fa": "همکار جدید را می‌شناسی؟" }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Ja, das ist der Kollege, mit dem ich am Projekt arbeite.", "fa": "بله، این همکاری است که با او روی پروژه کار می‌کنم." }, "mood": "neutral" },
+        { "speaker": "Sara", "text": { "de": "Und bist du zufrieden mit der Zusammenarbeit?", "fa": "و از همکاری راضی هستی؟" }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Sehr! Er kommt aus einer Stadt, aus der auch meine Frau stammt.", "fa": "خیلی! او از شهری می‌آید که همسرم هم از آنجاست." }, "mood": "happy" },
+        { "speaker": "Sara", "text": { "de": "Oh, das ist ja ein lustiger Zufall!", "fa": "اوه، چه تصادف جالبی!" }, "mood": "surprised" }
+      ],
+      "questions": [
+        { "question": "تام با چه کسی روی پروژه کار می‌کند؟", "options": ["با سارا", "با همکار جدید", "با همسرش"], "correctIndex": 1, "explanation": "تام گفت: der Kollege, mit dem ich am Projekt arbeite" },
+        { "question": "همکار جدید از کجا می‌آید؟", "options": ["از شهر همسر تام", "از برلین", "از خارج از کشور"], "correctIndex": 0, "explanation": "تام گفت: aus einer Stadt, aus der auch meine Frau stammt" }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "درباره شهر",
+      "scene": {
+        "location": "cafe",
+        "description": { "de": "In einem Café in München", "fa": "در یک کافه در مونیخ" }
+      },
+      "lines": [
+        { "speaker": "Eli", "text": { "de": "Aus welcher Stadt kommst du eigentlich?", "fa": "راستی از کدام شهر هستی؟" }, "mood": "neutral" },
+        { "speaker": "Max", "text": { "de": "Ich komme aus Hamburg. Das ist die Stadt, in der ich aufgewachsen bin.", "fa": "من از هامبورگ هستم. این شهری است که در آن بزرگ شدم." }, "mood": "neutral" },
+        { "speaker": "Eli", "text": { "de": "Hamburg kenne ich! Das ist die Stadt, von der alle sagen, sie ist wunderschön.", "fa": "هامبورگ را می‌شناسم! این شهری است که همه می‌گویند زیباست." }, "mood": "happy" },
+        { "speaker": "Max", "text": { "de": "Ja, und die Menschen, bei denen ich dort gelebt habe, waren sehr herzlich.", "fa": "بله، و مردمی که پیش آنها زندگی کردم، خیلی صمیمی بودند." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "مکس کجا بزرگ شده است؟", "options": ["مونیخ", "هامبورگ", "برلین"], "correctIndex": 1, "explanation": "مکس گفت: die Stadt, in der ich aufgewachsen bin" },
+        { "question": "مردم هامبورگ چطور بودند؟", "options": ["سرد", "صمیمی", "بی‌تفاوت"], "correctIndex": 1, "explanation": "مکس گفت: die Menschen waren sehr herzlich" }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "حرف اضافه و ضمیر موصولی را با جنس اسم مطابقت دهید",
+      "items": [
+        { "id": "i1", "text": "mit dem" },
+        { "id": "i2", "text": "bei der" },
+        { "id": "i3", "text": "von dem" },
+        { "id": "i4", "text": "zu denen" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "مذکر (der Mann)" },
+        { "id": "m2", "text": "مونث (die Frau)" },
+        { "id": "m3", "text": "خنثی (das Kind)" },
+        { "id": "m4", "text": "جمع (die Leute)" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "این همکاری است که با او کار می‌کنم.",
+      "sentenceTemplate": "Das ist {0} Kollege, {1} {2} ich arbeite.",
+      "options": ["der", "mit", "dem", "bei", "den"],
+      "correctAnswers": [0, 1, 2],
+      "correctTranslation": { "de": "Das ist der Kollege, mit dem ich arbeite.", "fa": "این همکاری است که با او کار می‌کنم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "دوستانی که با آنها سفر می‌کنم، مهربان هستند.",
+      "sentenceTemplate": "Die Freunde, {0} {1} ich reise, sind nett.",
+      "options": ["mit", "denen", "bei", "dem", "der"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Die Freunde, mit denen ich reise, sind nett.", "fa": "دوستانی که با آنها سفر می‌کنم، مهربان هستند." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "نکته: فعل در آخر جمله موصولی",
+      "content": "**ترتیب کلمات در جمله موصولی:**\n\nدر جمله موصولی، فعل به آخر جمله می‌رود:\n\n**ساختار:**\n```\nPräposition + Relativpronomen + ... + Verb\n```\n\n**مثال‌ها:**\n- Der Kollege, mit dem ich **arbeite**.\n- Die Stadt, aus der ich **komme**.\n- Die Leute, bei denen ich **wohne**.\n\n**مقایسه با جمله ساده:**\n- Ich **arbeite** mit dem Kollegen.\n- Ich **komme** aus der Stadt.\n\nدر جمله موصولی فعل به آخر می‌رود!",
+      "examples": [
+        { "de": "Das Projekt, an dem wir seit Monaten arbeiten, ist fast fertig.", "fa": "پروژه‌ای که ماه‌هاست روی آن کار می‌کنیم، تقریباً تمام شده." },
+        { "de": "Die Konferenz, an der ich teilnehme, beginnt morgen.", "fa": "کنفرانسی که در آن شرکت می‌کنم، فردا شروع می‌شود." }
+      ]
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: آگهی استخدام",
+      "passage": {
+        "de": "Wir suchen einen Mitarbeiter, mit dem wir langfristig zusammenarbeiten können. Die Firma, bei der Sie arbeiten werden, ist ein internationales Unternehmen. Das Team, zu dem Sie gehören werden, besteht aus fünf Personen. Die Kollegen, mit denen Sie zusammenarbeiten, kommen aus verschiedenen Ländern. Die Projekte, an denen Sie teilnehmen werden, sind sehr interessant. Bewerber, mit denen wir zufrieden sind, bekommen einen unbefristeten Vertrag.",
+        "fa": "ما به دنبال همکاری هستیم که بتوانیم بلندمدت با او همکاری کنیم. شرکتی که در آن کار خواهید کرد، یک شرکت بین‌المللی است. تیمی که به آن تعلق خواهید داشت، از پنج نفر تشکیل شده است. همکارانی که با آنها کار خواهید کرد، از کشورهای مختلف هستند. پروژه‌هایی که در آنها شرکت خواهید کرد، بسیار جالب هستند. متقاضیانی که از آنها راضی هستیم، قرارداد دائمی می‌گیرند."
+      },
+      "questions": [
+        { "question": "تیم چند نفره است؟", "options": ["سه نفر", "پنج نفر", "ده نفر"], "correctIndex": 1, "explanation": "متن گفت: Das Team besteht aus fünf Personen." },
+        { "question": "همکاران از کجا هستند؟", "options": ["فقط آلمان", "کشورهای مختلف", "فقط اروپا"], "correctIndex": 1, "explanation": "متن گفت: Die Kollegen kommen aus verschiedenen Ländern." },
+        { "question": "چه کسانی قرارداد دائمی می‌گیرند؟", "options": ["همه متقاضیان", "متقاضیانی که شرکت از آنها راضی است", "فقط آلمانی‌ها"], "correctIndex": 1, "explanation": "متن گفت: Bewerber, mit denen wir zufrieden sind" },
+        { "question": "شرکت چه نوع شرکتی است؟", "options": ["محلی", "ملی", "بین‌المللی"], "correctIndex": 2, "explanation": "متن گفت: ein internationales Unternehmen" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der neue Job", "fa": "شغل جدید" },
+      "characters": ["Mina", "Chef"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Mina hat einen neuen Job bei einer großen Firma.", "fa": "مینا شغل جدیدی در یک شرکت بزرگ پیدا کرده است." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Chef",
+          "text": { "de": "Willkommen! Das ist das Team, zu dem Sie gehören werden.", "fa": "خوش آمدید! این تیمی است که به آن تعلق خواهید داشت." },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Mina",
+          "text": { "de": "Vielen Dank! Ich freue mich auf die Kollegen, mit denen ich arbeiten werde.", "fa": "خیلی ممنون! مشتاق همکارانی هستم که با آنها کار خواهم کرد." },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "مینا مشتاق چه چیزی است؟",
+          "options": ["حقوق", "همکاران جدید", "تعطیلات"],
+          "correctIndex": 1,
+          "explanation": "مینا گفت: die Kollegen, mit denen ich arbeiten werde"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Chef",
+          "text": { "de": "Das Projekt, an dem Sie teilnehmen werden, ist sehr wichtig.", "fa": "پروژه‌ای که در آن شرکت خواهید کرد، خیلی مهم است." },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "پروژه چگونه توصیف شده است؟",
+          "options": ["ساده", "بسیار مهم", "کوتاه"],
+          "correctIndex": 1,
+          "explanation": "رئیس گفت: Das Projekt ist sehr wichtig."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Mina",
+          "text": { "de": "Das klingt toll! Ich bin sehr zufrieden mit der Stelle, auf die ich mich beworben habe.", "fa": "عالی به نظر می‌رسد! از موقعیتی که برایش درخواست دادم خیلی راضی هستم." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "مینا از چه چیزی راضی است؟",
+          "options": ["دفتر کار", "موقعیت شغلی", "ساعت کاری"],
+          "correctIndex": 1,
+          "explanation": "مینا گفت: zufrieden mit der Stelle"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع",
+      "instruction": "ضمیر موصولی داتیو درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "مذکر (m)", "left": "dem", "right": "der", "correctSide": "left" },
+        { "prompt": "مونث (f)", "left": "dem", "right": "der", "correctSide": "right" },
+        { "prompt": "خنثی (n)", "left": "dem", "right": "denen", "correctSide": "left" },
+        { "prompt": "جمع (pl)", "left": "den", "right": "denen", "correctSide": "right" },
+        { "prompt": "der Mann, mit ___", "left": "dem", "right": "der", "correctSide": "left" },
+        { "prompt": "die Leute, bei ___", "left": "dem", "right": "denen", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Das ist der Kollege, mit dem ich arbeite.",
+      "translation": "این همکاری است که با او کار می‌کنم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Die Stadt, aus der ich komme, ist klein.",
+      "translation": "شهری که از آن می‌آیم، کوچک است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Die Freunde, bei denen ich wohne, sind nett.",
+      "translation": "دوستانی که پیش آنها زندگی می‌کنم، مهربان هستند."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "مذکر داتیو", "options": ["dem", "der", "denen"], "correctAnswerIndex": 0 },
+        { "question": "مونث داتیو", "options": ["dem", "der", "denen"], "correctAnswerIndex": 1 },
+        { "question": "جمع داتیو", "options": ["dem", "den", "denen"], "correctAnswerIndex": 2 },
+        { "question": "mit + مذکر", "options": ["mit dem", "mit der", "mit denen"], "correctAnswerIndex": 0 },
+        { "question": "bei + جمع", "options": ["bei dem", "bei der", "bei denen"], "correctAnswerIndex": 2 },
+        { "question": "aus + مونث", "options": ["aus dem", "aus der", "aus denen"], "correctAnswerIndex": 1 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "der Kollege", "fa": "همکار" },
+        { "de": "die Zusammenarbeit", "fa": "همکاری" },
+        { "de": "zufrieden mit", "fa": "راضی از" },
+        { "de": "gehören zu", "fa": "تعلق داشتن به" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "ضمایر موصولی داتیو و حروف اضافه را پیدا کنید",
+      "targetWords": ["dem", "der", "denen", "mit", "bei", "aus"],
+      "gridSize": { "rows": 8, "cols": 8 },
+      "timeLimit": 90
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "der Kollege", "fa": "___", "options": ["دوست", "همکار", "رئیس", "مشتری"], "correctIndex": 1 },
+        { "de": "zufrieden mit", "fa": "___", "options": ["عصبانی از", "راضی از", "خسته از", "ناراحت از"], "correctIndex": 1 },
+        { "de": "gehören zu", "fa": "___", "options": ["رفتن به", "تعلق داشتن به", "دیدن", "شنیدن از"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp2",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما جملات موصولی با حروف اضافه داتیو را یاد گرفتید!",
+      "keyPoints": [
+        "حروف اضافه داتیو: mit, bei, nach, aus, von, zu, seit, außer, gegenüber",
+        "ضمیر موصولی داتیو: dem (مذکر)، der (مونث)، dem (خنثی)، denen (جمع)",
+        "حرف اضافه قبل از ضمیر موصولی می‌آید: mit dem, bei der, von denen",
+        "فعل در آخر جمله موصولی قرار می‌گیرد",
+        "توجه: جمع داتیو denen است، نه den!"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "der Kollege", "fa": "همکار" } },
+        { "word": { "de": "die Zusammenarbeit", "fa": "همکاری" } },
+        { "word": { "de": "stammen aus", "fa": "اهل بودن از" } },
+        { "word": { "de": "gehören zu", "fa": "تعلق داشتن به" } },
+        { "word": { "de": "teilnehmen an", "fa": "شرکت کردن در" } },
+        { "word": { "de": "zufrieden mit", "fa": "راضی از" } }
+      ]
+    }
+  ]
+}

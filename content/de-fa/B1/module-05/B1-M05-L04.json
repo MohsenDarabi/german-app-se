@@ -1,0 +1,498 @@
+{
+  "id": "B1-M05-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Zusammenfassung: Relativsätze mit Präpositionen", "fa": "جمع‌بندی: جملات موصولی با حروف اضافه" },
+  "description": "مرور کامل جملات موصولی با حروف اضافه: حروف اضافه آکوزاتیو، داتیو و دوحالتی با ضمایر موصولی مناسب",
+  "level": "B1",
+  "module": 5,
+  "lessonNumber": 4,
+  "totalSteps": 45,
+  "estimatedMinutes": 22,
+  "vocabulary": [
+    { "de": "zusammenfassen", "fa": "خلاصه کردن", "grammar": { "pos": "verb", "conjugation": "irregular", "separable": true } },
+    { "de": "die Regel", "fa": "قانون/قاعده", "grammar": { "pos": "noun", "gender": "f", "plural": "die Regeln" } },
+    { "de": "anwenden", "fa": "به کار بردن", "grammar": { "pos": "verb", "conjugation": "irregular", "separable": true } },
+    { "de": "unterscheiden", "fa": "تشخیص دادن/فرق گذاشتن", "grammar": { "pos": "verb", "conjugation": "irregular" } },
+    { "de": "der Fall", "fa": "حالت (گرامری)", "grammar": { "pos": "noun", "gender": "m", "plural": "die Fälle" } },
+    { "de": "kombinieren", "fa": "ترکیب کردن", "grammar": { "pos": "verb", "conjugation": "regular" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "مرور کلی: جملات موصولی با حروف اضافه",
+      "content": "📝 **در این بخش یاد گرفتید:**\n\n| نوع حرف اضافه | حروف اضافه | حالت ضمیر موصولی |\n|---------------|------------|------------------|\n| آکوزاتیو | für, gegen, ohne, um, durch | den, die, das, die |\n| داتیو | mit, bei, nach, aus, von, zu | dem, der, dem, denen |\n| دوحالتی | an, auf, in, über, unter, vor, hinter, neben, zwischen | داتیو (کجا؟) یا آکوزاتیو (به کجا؟) |\n\n**ساختار:** حرف اضافه + ضمیر موصولی در ابتدای جمله موصولی\n**فعل:** در انتهای جمله موصولی",
+      "examples": [
+        { "de": "Das ist der Mann, für den ich arbeite.", "fa": "این آن مردی است که برایش کار می‌کنم." },
+        { "de": "Das ist die Frau, mit der ich spreche.", "fa": "این آن زنی است که با او صحبت می‌کنم." }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s2",
+      "title": "انتخاب حالت: قاعده طلایی",
+      "content": "📝 **چگونه حالت را انتخاب کنیم؟**\n\n**قاعده ساده:**\n1. **حرف اضافه آکوزاتیو** (für, gegen, ohne, um, durch) = همیشه آکوزاتیو\n2. **حرف اضافه داتیو** (mit, bei, nach, aus, von, zu) = همیشه داتیو\n3. **حرف اضافه دوحالتی** = بستگی به معنی فعل دارد:\n   • کجا؟ (مکان ثابت) = داتیو\n   • به کجا؟ (حرکت) = آکوزاتیو\n\n**جدول ضمایر:**\n| جنس | آکوزاتیو | داتیو |\n|-----|----------|-------|\n| مذکر | den | dem |\n| مؤنث | die | der |\n| خنثی | das | dem |\n| جمع | die | denen |",
+      "examples": [
+        { "de": "Der Stuhl, auf dem ich sitze... (کجا؟ داتیو)", "fa": "صندلی که رویش نشسته‌ام..." },
+        { "de": "Der Stuhl, auf den ich mich setze... (به کجا؟ آکوزاتیو)", "fa": "صندلی که رویش می‌نشینم..." }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s3",
+      "title": "ترتیب کلمات در جمله موصولی",
+      "content": "📝 **ترتیب در جمله موصولی با حرف اضافه:**\n\n**ساختار:**\n`... اسم, حرف اضافه + ضمیر موصولی + ... + فعل.`\n\n**مثال:**\nDas ist **der Mann**, **für den** ich **arbeite**.\n\n| بخش | توضیح |\n|-----|-------|\n| der Mann | اسم اصلی (مذکر) |\n| für | حرف اضافه آکوزاتیو |\n| den | ضمیر موصولی آکوزاتیو مذکر |\n| arbeite | فعل در انتها |\n\n**نکته مهم:** فعل همیشه در انتهای جمله موصولی می‌آید!",
+      "examples": [
+        { "de": "Die Stadt, in der ich wohne, ist groß.", "fa": "شهری که در آن زندگی می‌کنم، بزرگ است." },
+        { "de": "Das Buch, über das wir sprechen, ist interessant.", "fa": "کتابی که درباره‌اش صحبت می‌کنیم، جالب است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "zusammenfassen", "fa": "خلاصه کردن" },
+      "example": { "text": { "de": "Ich fasse die Regeln zusammen.", "fa": "قواعد را خلاصه می‌کنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "zusammenfassen",
+      "translation": "خلاصه کردن",
+      "syllables": ["zu", "sam", "men", "fas", "sen"],
+      "distractors": ["za", "sum", "fen"]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "die Regel", "fa": "قانون/قاعده" },
+      "example": { "text": { "de": "Die Regel ist einfach zu verstehen.", "fa": "این قاعده ساده است برای فهمیدن." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Regel",
+      "translation": "قانون/قاعده",
+      "syllables": ["Re", "gel"],
+      "distractors": ["Ra", "gol", "gal"]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "anwenden", "fa": "به کار بردن" },
+      "example": { "text": { "de": "Man muss die Regel richtig anwenden.", "fa": "باید قاعده را درست به کار برد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "anwenden",
+      "translation": "به کار بردن",
+      "syllables": ["an", "wen", "den"],
+      "distractors": ["ob", "wor", "dun"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "حرف اضافه für با کدام حالت استفاده می‌شود؟",
+      "options": ["داتیو", "آکوزاتیو", "هر دو", "ژنتیو"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! für همیشه آکوزاتیو می‌گیرد.", "incorrect": "für یک حرف اضافه آکوزاتیو است و همیشه آکوزاتیو می‌گیرد." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "حرف اضافه mit با کدام حالت استفاده می‌شود؟",
+      "options": ["آکوزاتیو", "ژنتیو", "داتیو", "نومیناتیو"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! mit همیشه داتیو می‌گیرد.", "incorrect": "mit یک حرف اضافه داتیو است و همیشه داتیو می‌گیرد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "ضمیر موصولی مناسب را انتخاب کنید (آکوزاتیو)",
+      "sentence": "Das ist der Mann, für {0} ich arbeite.",
+      "options": ["den", "dem", "der", "die"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "für آکوزاتیو می‌گیرد و Mann مذکر است، پس den درست است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "ضمیر موصولی مناسب را انتخاب کنید (داتیو)",
+      "sentence": "Das ist die Kollegin, mit {0} ich zusammenarbeite.",
+      "options": ["der", "die", "dem", "den"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "mit داتیو می‌گیرد و Kollegin مؤنث است، پس der درست است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "ضمیر موصولی مناسب را انتخاب کنید (دوحالتی با مکان)",
+      "sentence": "Das Haus, in {0} wir wohnen, ist alt.",
+      "options": ["dem", "das", "die", "den"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "wohnen یعنی کجا؟ پس داتیو است. Haus خنثی است، پس dem درست است." }
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "unterscheiden", "fa": "تشخیص دادن/فرق گذاشتن" },
+      "example": { "text": { "de": "Man muss Akkusativ und Dativ unterscheiden.", "fa": "باید آکوزاتیو و داتیو را تشخیص داد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "unterscheiden",
+      "translation": "تشخیص دادن",
+      "syllables": ["un", "ter", "schei", "den"],
+      "distractors": ["om", "tor", "scha", "dob"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "der Fall", "fa": "حالت (گرامری)" },
+      "example": { "text": { "de": "Der Akkusativ ist ein Fall.", "fa": "آکوزاتیو یک حالت گرامری است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "Fall",
+      "translation": "حالت (گرامری)",
+      "syllables": ["Fall"],
+      "distractors": ["Fell", "Foll", "Full"]
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "مرور در کلاس گرامر",
+      "scene": {
+        "location": "classroom",
+        "description": { "de": "Im Deutschkurs", "fa": "در کلاس آلمانی" }
+      },
+      "lines": [
+        { "speaker": "Lehrer", "text": { "de": "Heute wiederholen wir Relativsätze mit Präpositionen. Wer kann mir ein Beispiel mit für geben?", "fa": "امروز جملات موصولی با حروف اضافه را مرور می‌کنیم. کی می‌تواند با für مثال بزند؟" }, "mood": "neutral" },
+        { "speaker": "Eli", "text": { "de": "Das ist die Firma, für die ich arbeite.", "fa": "این شرکتی است که برایش کار می‌کنم." }, "mood": "happy" },
+        { "speaker": "Lehrer", "text": { "de": "Ausgezeichnet! Und mit einer Dativ-Präposition?", "fa": "عالی! و با یک حرف اضافه داتیو؟" }, "mood": "happy" },
+        { "speaker": "Tom", "text": { "de": "Das ist der Freund, mit dem ich oft telefoniere.", "fa": "این دوستی است که با او زیاد تلفن می‌زنم." }, "mood": "happy" },
+        { "speaker": "Lehrer", "text": { "de": "Perfekt! Ihr habt das Thema gut verstanden.", "fa": "عالی! شما موضوع را خوب فهمیدید." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "الی از کدام حرف اضافه استفاده کرد؟", "options": ["mit", "für", "bei"], "correctIndex": 1, "explanation": "الی گفت: für die ich arbeite" },
+        { "question": "تام با چه کسی تلفن می‌زند؟", "options": ["معلم", "الی", "دوستش"], "correctIndex": 2, "explanation": "تام گفت: der Freund, mit dem ich oft telefoniere" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "ضمیر موصولی مناسب را انتخاب کنید",
+      "sentence": "Das ist das Thema, über {0} wir diskutieren.",
+      "options": ["das", "dem", "den", "der"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "über آکوزاتیو می‌گیرد و Thema خنثی است، پس das درست است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "ضمیر موصولی مناسب را انتخاب کنید",
+      "sentence": "Die Leute, von {0} ich erzähle, sind nett.",
+      "options": ["denen", "die", "den", "dem"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "von داتیو می‌گیرد و Leute جمع است، پس denen درست است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "ضمیر موصولی مناسب را انتخاب کنید",
+      "sentence": "Der Tisch, auf {0} das Buch liegt, ist neu.",
+      "options": ["dem", "den", "das", "der"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "liegen یعنی کجا؟ پس داتیو است. Tisch مذکر است، پس dem درست است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["für die ich", "Das ist die Firma,", "arbeite."],
+      "correctOrder": [1, 0, 2],
+      "correctSentence": { "de": "Das ist die Firma, für die ich arbeite.", "fa": "این شرکتی است که برایش کار می‌کنم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["wir wohnen,", "ist schön.", "Die Stadt, in der"],
+      "correctOrder": [2, 0, 1],
+      "correctSentence": { "de": "Die Stadt, in der wir wohnen, ist schön.", "fa": "شهری که در آن زندگی می‌کنیم زیباست." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["ich denke,", "Das ist der Plan,", "an den"],
+      "correctOrder": [1, 2, 0],
+      "correctSentence": { "de": "Das ist der Plan, an den ich denke.", "fa": "این برنامه‌ای است که به آن فکر می‌کنم." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "حروف اضافه für، gegen، ohne، um و durch همیشه آکوزاتیو می‌گیرند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! این پنج حرف اضافه همیشه آکوزاتیو می‌گیرند." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جمله موصولی، فعل در جایگاه دوم می‌آید.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! در جمله موصولی، فعل همیشه در انتهای جمله می‌آید." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "با حروف اضافه دوحالتی، فعل مشخص می‌کند که داتیو یا آکوزاتیو استفاده شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! اگر فعل حرکت نشان دهد آکوزاتیو، اگر مکان ثابت نشان دهد داتیو." }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "kombinieren", "fa": "ترکیب کردن" },
+      "example": { "text": { "de": "Man kann Präpositionen mit Relativpronomen kombinieren.", "fa": "می‌توان حروف اضافه را با ضمایر موصولی ترکیب کرد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "kombinieren",
+      "translation": "ترکیب کردن",
+      "syllables": ["kom", "bi", "nie", "ren"],
+      "distractors": ["kam", "ba", "no", "ran"]
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "جستجوی آپارتمان",
+      "scene": {
+        "location": "living_room",
+        "description": { "de": "Zu Hause beim Frühstück", "fa": "در خانه هنگام صبحانه" }
+      },
+      "lines": [
+        { "speaker": "Eli", "text": { "de": "Ich suche eine Wohnung, in der ich ruhig arbeiten kann.", "fa": "دنبال آپارتمانی می‌گردم که در آن بتوانم آرام کار کنم." }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Und ich brauche einen Balkon, auf dem ich sitzen kann.", "fa": "و من به بالکنی نیاز دارم که روی آن بتوانم بنشینم." }, "mood": "neutral" },
+        { "speaker": "Eli", "text": { "de": "Wir brauchen auch Nachbarn, mit denen wir gut auskommen.", "fa": "همچنین به همسایه‌هایی نیاز داریم که با آن‌ها کنار بیاییم." }, "mood": "happy" },
+        { "speaker": "Tom", "text": { "de": "Und eine Küche, ohne die ich nicht kochen kann!", "fa": "و آشپزخانه‌ای که بدون آن نتوانم آشپزی کنم!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "الی چه نوع آپارتمانی می‌خواهد؟", "options": ["بزرگ", "آرام", "ارزان"], "correctIndex": 1, "explanation": "الی گفت: in der ich ruhig arbeiten kann" },
+        { "question": "تام روی بالکن چه می‌خواهد بکند؟", "options": ["بخوابد", "بنشیند", "غذا بخورد"], "correctIndex": 1, "explanation": "تام گفت: auf dem ich sitzen kann" }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "حرف اضافه را با حالت درست جفت کنید",
+      "items": [
+        { "id": "i1", "text": "für, gegen, ohne" },
+        { "id": "i2", "text": "mit, bei, von" },
+        { "id": "i3", "text": "auf (کجا؟)" },
+        { "id": "i4", "text": "auf (به کجا؟)" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "آکوزاتیو: den, die, das, die" },
+        { "id": "m2", "text": "داتیو: dem, der, dem, denen" },
+        { "id": "m3", "text": "داتیو (مکان ثابت)" },
+        { "id": "m4", "text": "آکوزاتیو (حرکت)" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "این مردی است که برایش کار می‌کنم.",
+      "sentenceTemplate": "Das ist der Mann, {0} {1} ich arbeite.",
+      "options": ["für", "den", "dem", "mit"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Das ist der Mann, für den ich arbeite.", "fa": "این مردی است که برایش کار می‌کنم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "این دوستانی هستند که با آن‌ها سفر می‌کنم.",
+      "sentenceTemplate": "Das sind die Freunde, {0} {1} ich reise.",
+      "options": ["mit", "denen", "die", "für"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Das sind die Freunde, mit denen ich reise.", "fa": "این دوستانی هستند که با آن‌ها سفر می‌کنم." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: معرفی شرکت",
+      "passage": {
+        "de": "Unsere Firma ist ein Unternehmen, für das viele Menschen arbeiten. Wir haben Kollegen, mit denen man gut zusammenarbeiten kann. Das Büro, in dem wir sitzen, ist modern und hell. Die Projekte, an denen wir arbeiten, sind interessant. Die Kunden, von denen wir hören, sind zufrieden.",
+        "fa": "شرکت ما بنگاهی است که افراد زیادی برایش کار می‌کنند. همکارانی داریم که می‌توان با آن‌ها خوب همکاری کرد. دفتری که در آن نشسته‌ایم مدرن و روشن است. پروژه‌هایی که روی آن‌ها کار می‌کنیم جالب هستند. مشتریانی که از آن‌ها خبر می‌گیریم راضی هستند."
+      },
+      "questions": [
+        { "question": "دفتر چگونه است؟", "options": ["قدیمی و تاریک", "مدرن و روشن", "کوچک و ساده"], "correctIndex": 1, "explanation": "متن گفت: Das Büro, in dem wir sitzen, ist modern und hell" },
+        { "question": "مشتریان چگونه هستند؟", "options": ["ناراضی", "راضی", "بی‌تفاوت"], "correctIndex": 1, "explanation": "متن گفت: Die Kunden, von denen wir hören, sind zufrieden" },
+        { "question": "پروژه‌ها چگونه هستند؟", "options": ["خسته‌کننده", "جالب", "آسان"], "correctIndex": 1, "explanation": "متن گفت: Die Projekte, an denen wir arbeiten, sind interessant" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die perfekte Wohnung", "fa": "آپارتمان کامل" },
+      "characters": ["Eli", "Makler"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Eli sucht eine neue Wohnung.", "fa": "الی دنبال آپارتمان جدید می‌گردد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Eli",
+          "text": { "de": "Ich suche eine Wohnung, in der ich ruhig schlafen kann.", "fa": "دنبال آپارتمانی می‌گردم که در آن آرام بخوابم." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Makler",
+          "text": { "de": "Ich habe eine Wohnung, für die Sie sich interessieren werden!", "fa": "آپارتمانی دارم که به آن علاقه‌مند خواهید شد!" },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "الی چه نوع آپارتمانی می‌خواهد؟",
+          "options": ["بزرگ", "آرام برای خواب", "ارزان"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: in der ich ruhig schlafen kann"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Makler",
+          "text": { "de": "Es gibt einen Balkon, auf dem Sie frühstücken können, und Nachbarn, mit denen Sie sich gut verstehen werden.", "fa": "بالکنی هست که روی آن صبحانه بخورید، و همسایه‌هایی که با آن‌ها خوب کنار می‌آیید." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "روی بالکن چه کاری می‌توان کرد؟",
+          "options": ["کار کردن", "صبحانه خوردن", "خوابیدن"],
+          "correctIndex": 1,
+          "explanation": "مشاور گفت: auf dem Sie frühstücken können"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Eli",
+          "text": { "de": "Perfekt! Aber gibt es einen Keller, ohne den ich nicht leben kann?", "fa": "عالی! ولی زیرزمینی هست که بدون آن نتوانم زندگی کنم؟" },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "الی به چه چیزی نیاز دارد؟",
+          "options": ["پارکینگ", "زیرزمین", "باغ"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: einen Keller, ohne den ich nicht leben kann"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: حالت درست",
+      "instruction": "حالت درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "für + مذکر", "left": "den", "right": "dem", "correctSide": "left" },
+        { "prompt": "mit + مؤنث", "left": "die", "right": "der", "correctSide": "right" },
+        { "prompt": "auf (کجا؟) + خنثی", "left": "dem", "right": "das", "correctSide": "left" },
+        { "prompt": "von + جمع", "left": "die", "right": "denen", "correctSide": "right" },
+        { "prompt": "ohne + مؤنث", "left": "die", "right": "der", "correctSide": "left" },
+        { "prompt": "bei + مذکر", "left": "den", "right": "dem", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Das ist der Mann, für den ich arbeite.",
+      "translation": "این مردی است که برایش کار می‌کنم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Die Frau, mit der ich spreche, ist nett.",
+      "translation": "زنی که با او صحبت می‌کنم مهربان است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Das Haus, in dem wir wohnen, ist groß.",
+      "translation": "خانه‌ای که در آن زندگی می‌کنیم بزرگ است."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش نهایی!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "für همیشه چه حالتی می‌گیرد؟", "options": ["آکوزاتیو", "داتیو"], "correctAnswerIndex": 0 },
+        { "question": "mit همیشه چه حالتی می‌گیرد؟", "options": ["آکوزاتیو", "داتیو"], "correctAnswerIndex": 1 },
+        { "question": "مذکر + آکوزاتیو =", "options": ["den", "dem"], "correctAnswerIndex": 0 },
+        { "question": "مؤنث + داتیو =", "options": ["die", "der"], "correctAnswerIndex": 1 },
+        { "question": "جمع + داتیو =", "options": ["die", "denen"], "correctAnswerIndex": 1 },
+        { "question": "در جمله موصولی فعل کجاست؟", "options": ["جایگاه دوم", "انتها"], "correctAnswerIndex": 1 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "für + Mann", "fa": "für den" },
+        { "de": "mit + Frau", "fa": "mit der" },
+        { "de": "in + Haus (کجا)", "fa": "in dem" },
+        { "de": "von + Leute", "fa": "von denen" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی حروف اضافه",
+      "instruction": "همه حروف اضافه را پیدا کنید",
+      "targetWords": ["für", "mit", "bei", "von", "auf", "in"],
+      "gridSize": { "rows": 8, "cols": 8 },
+      "timeLimit": 90
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "zusammenfassen", "fa": "___", "options": ["جدا کردن", "خلاصه کردن", "شروع کردن", "تمام کردن"], "correctIndex": 1 },
+        { "de": "unterscheiden", "fa": "___", "options": ["ترکیب کردن", "تشخیص دادن", "فراموش کردن", "یاد گرفتن"], "correctIndex": 1 },
+        { "de": "anwenden", "fa": "___", "options": ["به کار بردن", "نوشتن", "خواندن", "شنیدن"], "correctIndex": 0 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp2",
+      "title": "تبریک! بخش جملات موصولی با حروف اضافه تمام شد!",
+      "message": "شما همه قواعد جملات موصولی با حروف اضافه را یاد گرفتید!",
+      "keyPoints": [
+        "حروف اضافه آکوزاتیو (für, gegen, ohne, um, durch) همیشه ضمیر آکوزاتیو می‌گیرند: den, die, das, die",
+        "حروف اضافه داتیو (mit, bei, nach, aus, von, zu) همیشه ضمیر داتیو می‌گیرند: dem, der, dem, denen",
+        "حروف اضافه دوحالتی (an, auf, in, über, ...) بستگی به فعل دارند: کجا؟ = داتیو، به کجا؟ = آکوزاتیو",
+        "ساختار: حرف اضافه + ضمیر موصولی در ابتدای جمله موصولی",
+        "فعل همیشه در انتهای جمله موصولی می‌آید",
+        "جنس و تعداد اسم اصلی تعیین‌کننده ضمیر موصولی است"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "zusammenfassen", "fa": "خلاصه کردن" } },
+        { "word": { "de": "die Regel", "fa": "قانون/قاعده" } },
+        { "word": { "de": "anwenden", "fa": "به کار بردن" } },
+        { "word": { "de": "unterscheiden", "fa": "تشخیص دادن" } },
+        { "word": { "de": "der Fall", "fa": "حالت (گرامری)" } },
+        { "word": { "de": "kombinieren", "fa": "ترکیب کردن" } }
+      ]
+    }
+  ]
+}

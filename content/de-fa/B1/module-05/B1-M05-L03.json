@@ -1,0 +1,492 @@
+{
+  "id": "B1-M05-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Relativsätze mit Wechselpräpositionen", "fa": "جملات موصولی با حروف اضافه دوگانه" },
+  "description": "یاد بگیرید چطور جملات موصولی با حروف اضافه دوگانه (Wechselpräpositionen) بسازید و فرق Dativ و Akkusativ را تشخیص دهید",
+  "level": "B1",
+  "module": 5,
+  "lessonNumber": 3,
+  "totalSteps": 45,
+  "estimatedMinutes": 22,
+  "vocabulary": [
+    { "de": "die Wechselpräposition", "fa": "حرف اضافه دوگانه", "grammar": { "pos": "noun", "gender": "f", "plural": "die Wechselpräpositionen" } },
+    { "de": "der Ort", "fa": "مکان", "grammar": { "pos": "noun", "gender": "m", "plural": "die Orte" } },
+    { "de": "die Richtung", "fa": "جهت", "grammar": { "pos": "noun", "gender": "f", "plural": "die Richtungen" } },
+    { "de": "liegen", "fa": "قرار داشتن (خوابیده)", "grammar": { "pos": "verb", "conjugation": "irregular", "präteritum": "lag", "perfekt": "hat gelegen" } },
+    { "de": "stellen", "fa": "گذاشتن (ایستاده)", "grammar": { "pos": "verb", "conjugation": "regular" } },
+    { "de": "hängen", "fa": "آویزان بودن/کردن", "grammar": { "pos": "verb", "conjugation": "irregular/regular" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "جملات موصولی با حروف اضافه دوگانه",
+      "content": "در این درس یاد می‌گیریم چطور جملات موصولی با **Wechselpräpositionen** (حروف اضافه دوگانه) بسازیم.\n\n**حروف اضافه دوگانه:**\nan, auf, hinter, in, neben, über, unter, vor, zwischen\n\nاین حروف اضافه می‌توانند با **Dativ** یا **Akkusativ** بیایند:\n\n**Dativ** = مکان (Wo?) کجا؟\n**Akkusativ** = جهت (Wohin?) به کجا؟\n\nدر جملات موصولی، **فعل** تعیین می‌کند که کدام حالت استفاده شود!",
+      "examples": [
+        { "de": "Der Tisch, auf dem das Buch liegt...", "fa": "میزی که کتاب روی آن قرار دارد..." },
+        { "de": "Der Tisch, auf den ich das Buch lege...", "fa": "میزی که کتاب را روی آن می‌گذارم..." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "die Wechselpräposition", "fa": "حرف اضافه دوگانه" },
+      "example": { "text": { "de": "\"Auf\" ist eine Wechselpräposition.", "fa": "\"auf\" یک حرف اضافه دوگانه است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Wechselpräposition",
+      "translation": "حرف اضافه دوگانه",
+      "syllables": ["Wech", "sel", "prä", "po", "si", "tion"],
+      "distractors": ["Wach", "sal", "pre", "pa"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "der Ort", "fa": "مکان" },
+      "example": { "text": { "de": "Der Ort, an dem wir wohnen, ist schön.", "fa": "مکانی که در آن زندگی می‌کنیم، زیباست." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Ort",
+      "translation": "مکان",
+      "syllables": ["Ort"],
+      "distractors": ["Art", "Urt", "Ert"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "die Richtung", "fa": "جهت" },
+      "example": { "text": { "de": "Die Richtung, in die wir gehen, ist richtig.", "fa": "جهتی که به آن می‌رویم، درست است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Richtung",
+      "translation": "جهت",
+      "syllables": ["Rich", "tung"],
+      "distractors": ["Rach", "tang", "ting"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "Dativ در جملات موصولی: Wo? کجا؟",
+      "content": "وقتی فعل **مکان** را توصیف می‌کند (Wo? کجا؟)، از **Dativ** استفاده می‌کنیم.\n\n**ضمایر موصولی با Dativ:**\n- der/das: dem\n- die: der\n- die (جمع): denen\n\n**فعل‌های مکان:**\nliegen, stehen, sitzen, hängen, sein\n\n**مثال‌ها:**\n- Der Tisch, **auf dem** das Buch liegt... (روی میز)\n- Das Zimmer, **in dem** ich schlafe... (در اتاق)\n- Die Wand, **an der** das Bild hängt... (روی دیوار)",
+      "examples": [
+        { "de": "Das Haus, in dem wir wohnen, ist alt.", "fa": "خانه‌ای که در آن زندگی می‌کنیم، قدیمی است." },
+        { "de": "Der Stuhl, auf dem du sitzt, ist neu.", "fa": "صندلی‌ای که روی آن نشسته‌ای، نو است." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام سوال برای حالت Dativ در Wechselpräpositionen مناسب است؟",
+      "options": ["Wohin? به کجا؟", "Wo? کجا؟", "Wann? کی؟", "Warum? چرا؟"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! Wo? (کجا؟) نشان‌دهنده مکان است و با Dativ می‌آید.", "incorrect": "سوال Wo? (کجا؟) برای مکان استفاده می‌شود و با Dativ می‌آید." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "در جمله موصولی \"Der Tisch, auf ___ das Buch liegt\" کدام ضمیر درست است؟",
+      "options": ["den", "dem", "der", "die"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! liegen فعل مکان است، پس Dativ: auf dem", "incorrect": "liegen فعل مکان است (Wo?)، پس از Dativ استفاده می‌کنیم: dem" }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "liegen", "fa": "قرار داشتن (خوابیده)" },
+      "example": { "text": { "de": "Das Buch liegt auf dem Tisch.", "fa": "کتاب روی میز قرار دارد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "liegen",
+      "translation": "قرار داشتن",
+      "syllables": ["lie", "gen"],
+      "distractors": ["lei", "gan", "gon"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "ضمیر موصولی درست را انتخاب کنید",
+      "sentence": "Der Schrank, in {0} die Bücher stehen, ist groß.",
+      "options": ["dem", "den", "der", "die"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "stehen فعل مکان است (Wo?). Schrank مذکر است، پس: in dem" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "ضمیر موصولی درست را انتخاب کنید",
+      "sentence": "Die Tasche, in {0} mein Handy ist, liegt dort.",
+      "options": ["der", "dem", "die", "den"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "sein فعل مکان است (Wo?). Tasche مونث است، پس: in der" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "ضمیر موصولی درست را انتخاب کنید",
+      "sentence": "Das Regal, auf {0} die Vasen stehen, ist aus Holz.",
+      "options": ["dem", "den", "das", "der"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "stehen فعل مکان است (Wo?). Regal خنثی است، پس: auf dem" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "توصیف اتاق",
+      "scene": {
+        "location": "bedroom",
+        "description": { "de": "Im Schlafzimmer", "fa": "در اتاق خواب" }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Wo ist mein Handy?", "fa": "موبایلم کجاست؟" }, "mood": "confused" },
+        { "speaker": "Max", "text": { "de": "Der Tisch, auf dem es lag, ist dort drüben.", "fa": "میزی که روی آن بود، آن‌طرف است." }, "mood": "neutral" },
+        { "speaker": "Anna", "text": { "de": "Das Regal, in dem ich es normalerweise lege, ist leer.", "fa": "قفسه‌ای که معمولاً توش می‌گذارم، خالی است." }, "mood": "confused" },
+        { "speaker": "Max", "text": { "de": "Schau mal in die Schublade, in der deine Sachen liegen!", "fa": "تو کشویی که وسایلت هست نگاه کن!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "موبایل روی چه چیزی بود؟", "options": ["روی قفسه", "روی میز", "در کشو"], "correctIndex": 1, "explanation": "ماکس گفت: Der Tisch, auf dem es lag" },
+        { "question": "آنا معمولاً موبایل را کجا می‌گذارد؟", "options": ["روی میز", "در قفسه", "در کشو"], "correctIndex": 1, "explanation": "آنا گفت: Das Regal, in dem ich es normalerweise lege" }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "Akkusativ در جملات موصولی: Wohin? به کجا؟",
+      "content": "وقتی فعل **جهت/حرکت** را توصیف می‌کند (Wohin? به کجا؟)، از **Akkusativ** استفاده می‌کنیم.\n\n**ضمایر موصولی با Akkusativ:**\n- der: den\n- das: das\n- die: die\n- die (جمع): die\n\n**فعل‌های جهت:**\nlegen, stellen, setzen, hängen, gehen, fahren\n\n**مثال‌ها:**\n- Der Tisch, **auf den** ich das Buch lege... (روی میز می‌گذارم)\n- Das Zimmer, **in das** ich gehe... (به اتاق می‌روم)\n- Die Wand, **an die** ich das Bild hänge... (روی دیوار آویزان می‌کنم)",
+      "examples": [
+        { "de": "Der Schrank, in den ich die Bücher stelle, ist neu.", "fa": "کمدی که کتاب‌ها را توش می‌گذارم، نو است." },
+        { "de": "Die Stadt, in die wir fahren, ist weit.", "fa": "شهری که به آن می‌رویم، دور است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "stellen", "fa": "گذاشتن (ایستاده)" },
+      "example": { "text": { "de": "Ich stelle die Vase auf den Tisch.", "fa": "گلدان را روی میز می‌گذارم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "stellen",
+      "translation": "گذاشتن",
+      "syllables": ["stel", "len"],
+      "distractors": ["stal", "lan", "lon"]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "hängen", "fa": "آویزان بودن/کردن" },
+      "example": { "text": { "de": "Das Bild hängt an der Wand.", "fa": "تابلو روی دیوار آویزان است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "hängen",
+      "translation": "آویزان بودن",
+      "syllables": ["hän", "gen"],
+      "distractors": ["han", "gan", "hon"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "ضمیر موصولی درست را انتخاب کنید (جهت/حرکت)",
+      "sentence": "Der Tisch, auf {0} ich das Glas stelle, ist rund.",
+      "options": ["den", "dem", "der", "das"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "stellen فعل جهت است (Wohin?). Tisch مذکر است، پس: auf den" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "ضمیر موصولی درست را انتخاب کنید (جهت/حرکت)",
+      "sentence": "Die Wand, an {0} ich das Bild hänge, ist weiß.",
+      "options": ["die", "der", "dem", "den"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "hängen (کردن) فعل جهت است (Wohin?). Wand مونث است، پس: an die" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "ضمیر موصولی درست را انتخاب کنید (جهت/حرکت)",
+      "sentence": "Das Zimmer, in {0} ich gehe, ist dunkel.",
+      "options": ["das", "dem", "den", "der"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "gehen فعل جهت است (Wohin?). Zimmer خنثی است، پس: in das" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["ist alt.", "in dem wir wohnen,", "Das Haus,"],
+      "correctOrder": [2, 1, 0],
+      "correctSentence": { "de": "Das Haus, in dem wir wohnen, ist alt.", "fa": "خانه‌ای که در آن زندگی می‌کنیم، قدیمی است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["ist weit.", "in die wir fahren,", "Die Stadt,"],
+      "correctOrder": [2, 1, 0],
+      "correctSentence": { "de": "Die Stadt, in die wir fahren, ist weit.", "fa": "شهری که به آن می‌رویم، دور است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["ist groß.", "auf dem die Bücher liegen,", "Der Tisch,"],
+      "correctOrder": [2, 1, 0],
+      "correctSentence": { "de": "Der Tisch, auf dem die Bücher liegen, ist groß.", "fa": "میزی که کتاب‌ها روی آن هستند، بزرگ است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "فعل liegen نشان‌دهنده مکان است و با Dativ می‌آید.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! liegen یعنی قرار داشتن (Wo?) و با Dativ می‌آید." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "فعل legen نشان‌دهنده جهت است و با Akkusativ می‌آید.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! legen یعنی گذاشتن (Wohin?) و با Akkusativ می‌آید." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جمله \"Der Tisch, auf dem das Buch liegt\" از Akkusativ استفاده شده.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! dem نشان‌دهنده Dativ است. liegen فعل مکان است، پس Dativ درست است." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "اسباب‌کشی",
+      "scene": {
+        "location": "apartment",
+        "description": { "de": "In der neuen Wohnung", "fa": "در آپارتمان جدید" }
+      },
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Wo soll das Sofa hin?", "fa": "مبل کجا بذارم؟" }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Der Platz, an den wir es stellen, ist neben dem Fenster.", "fa": "جایی که می‌گذاریمش، کنار پنجره است." }, "mood": "neutral" },
+        { "speaker": "Lisa", "text": { "de": "Und die Lampe, die ich aufhänge?", "fa": "و لامپی که آویزان می‌کنم؟" }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Die Ecke, in die du sie hängst, ist perfekt!", "fa": "گوشه‌ای که توش آویزان می‌کنی، عالیه!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "مبل کجا گذاشته می‌شود؟", "options": ["کنار در", "کنار پنجره", "وسط اتاق"], "correctIndex": 1, "explanation": "تام گفت: Der Platz... ist neben dem Fenster" },
+        { "question": "در جمله تام چه حالتی استفاده شده؟", "options": ["Dativ", "Akkusativ", "Nominativ"], "correctIndex": 1, "explanation": "stellen فعل جهت است، پس Akkusativ: an den" }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "فعل‌ها را با ترجمه درست جور کنید",
+      "items": [
+        { "id": "i1", "text": "liegen" },
+        { "id": "i2", "text": "legen" },
+        { "id": "i3", "text": "hängen (بودن)" },
+        { "id": "i4", "text": "hängen (کردن)" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "قرار داشتن (Wo?)" },
+        { "id": "m2", "text": "گذاشتن (Wohin?)" },
+        { "id": "m3", "text": "آویزان بودن (Wo?)" },
+        { "id": "m4", "text": "آویزان کردن (Wohin?)" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "میزی که کتاب روی آن قرار دارد، بزرگ است.",
+      "sentenceTemplate": "Der Tisch, auf {0} das Buch liegt, ist groß.",
+      "options": ["dem", "den", "der", "das"],
+      "correctAnswers": [0],
+      "correctTranslation": { "de": "Der Tisch, auf dem das Buch liegt, ist groß.", "fa": "میزی که کتاب روی آن قرار دارد، بزرگ است." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "اتاقی که به آن می‌روم، تاریک است.",
+      "sentenceTemplate": "Das Zimmer, in {0} ich gehe, ist dunkel.",
+      "options": ["das", "dem", "den", "die"],
+      "correctAnswers": [0],
+      "correctTranslation": { "de": "Das Zimmer, in das ich gehe, ist dunkel.", "fa": "اتاقی که به آن می‌روم، تاریک است." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: توصیف آپارتمان",
+      "passage": {
+        "de": "Meine neue Wohnung ist sehr schön. Das Schlafzimmer, in dem ich schlafe, hat ein großes Fenster. Der Schrank, in den ich meine Kleidung lege, ist aus Holz. Die Küche, in der ich koche, ist modern. Der Balkon, auf dem ich frühstücke, hat eine tolle Aussicht. Die Wand, an die ich mein Lieblingsbild hänge, ist weiß.",
+        "fa": "آپارتمان جدیدم خیلی زیباست. اتاق خوابی که در آن می‌خوابم، پنجره بزرگی دارد. کمدی که لباس‌هایم را توش می‌گذارم، چوبی است. آشپزخانه‌ای که در آن آشپزی می‌کنم، مدرن است. بالکنی که روی آن صبحانه می‌خورم، منظره عالی دارد. دیواری که تابلوی محبوبم را روی آن آویزان می‌کنم، سفید است."
+      },
+      "questions": [
+        { "question": "اتاق خواب چه ویژگی دارد؟", "options": ["کوچک است", "پنجره بزرگ دارد", "تاریک است"], "correctIndex": 1, "explanation": "متن گفت: hat ein großes Fenster" },
+        { "question": "کمد از چه جنسی است؟", "options": ["فلزی", "چوبی", "پلاستیکی"], "correctIndex": 1, "explanation": "متن گفت: ist aus Holz" },
+        { "question": "در جمله \"in dem ich schlafe\" چه حالتی استفاده شده؟", "options": ["Akkusativ", "Dativ", "Genitiv"], "correctIndex": 1, "explanation": "schlafen فعل مکان است (Wo?)، پس Dativ: in dem" },
+        { "question": "در جمله \"an die ich... hänge\" چه حالتی استفاده شده؟", "options": ["Dativ", "Akkusativ", "Nominativ"], "correctIndex": 1, "explanation": "hängen (آویزان کردن) فعل جهت است (Wohin?)، پس Akkusativ: an die" }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع",
+      "instruction": "Dativ یا Akkusativ؟",
+      "questions": [
+        { "prompt": "liegen (قرار داشتن)", "left": "Dativ", "right": "Akkusativ", "correctSide": "left" },
+        { "prompt": "legen (گذاشتن)", "left": "Dativ", "right": "Akkusativ", "correctSide": "right" },
+        { "prompt": "stehen (ایستادن)", "left": "Dativ", "right": "Akkusativ", "correctSide": "left" },
+        { "prompt": "stellen (قرار دادن)", "left": "Dativ", "right": "Akkusativ", "correctSide": "right" },
+        { "prompt": "Wo? کجا؟", "left": "Dativ", "right": "Akkusativ", "correctSide": "left" },
+        { "prompt": "Wohin? به کجا؟", "left": "Dativ", "right": "Akkusativ", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Das neue Büro", "fa": "دفتر کار جدید" },
+      "characters": ["Chef", "Mitarbeiter"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Ein Mitarbeiter zeigt seinem Chef das neue Büro.", "fa": "یک کارمند دفتر کار جدید را به رئیسش نشان می‌دهد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Mitarbeiter",
+          "text": { "de": "Der Schreibtisch, an dem ich arbeite, ist sehr bequem.", "fa": "میز کاری که پشتش کار می‌کنم، خیلی راحت است." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "چه حالتی در جمله استفاده شده؟",
+          "options": ["Akkusativ", "Dativ", "Genitiv"],
+          "correctIndex": 1,
+          "explanation": "arbeiten فعل مکان است (Wo?)، پس Dativ: an dem"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Chef",
+          "text": { "de": "Und die Wand, an die Sie die Bilder hängen?", "fa": "و دیواری که عکس‌ها را روش آویزان می‌کنید؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "چرا از Akkusativ استفاده شده؟",
+          "options": ["چون hängen فعل مکان است", "چون hängen فعل جهت است", "چون Wand مذکر است"],
+          "correctIndex": 1,
+          "explanation": "hängen (آویزان کردن) فعل جهت است (Wohin?)، پس Akkusativ: an die"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Mitarbeiter",
+          "text": { "de": "Die ist perfekt für meine Familienfotos!", "fa": "برای عکس‌های خانوادگی‌ام عالیه!" },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "کارمند چه چیزی روی دیوار آویزان می‌کند؟",
+          "options": ["نقاشی", "عکس‌های خانوادگی", "تقویم"],
+          "correctIndex": 1,
+          "explanation": "کارمند گفت: Familienfotos"
+        }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Der Tisch, auf dem das Buch liegt, ist groß.",
+      "translation": "میزی که کتاب روی آن قرار دارد، بزرگ است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Das Zimmer, in das ich gehe, ist dunkel.",
+      "translation": "اتاقی که به آن می‌روم، تاریک است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Die Wand, an der das Bild hängt, ist weiß.",
+      "translation": "دیواری که تابلو روی آن آویزان است، سفید است."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "liegen = ?", "options": ["Dativ", "Akkusativ"], "correctAnswerIndex": 0 },
+        { "question": "legen = ?", "options": ["Dativ", "Akkusativ"], "correctAnswerIndex": 1 },
+        { "question": "auf dem = ?", "options": ["Dativ", "Akkusativ"], "correctAnswerIndex": 0 },
+        { "question": "auf den = ?", "options": ["Dativ", "Akkusativ"], "correctAnswerIndex": 1 },
+        { "question": "Wo? = ?", "options": ["Dativ", "Akkusativ"], "correctAnswerIndex": 0 },
+        { "question": "Wohin? = ?", "options": ["Dativ", "Akkusativ"], "correctAnswerIndex": 1 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "liegen", "fa": "قرار داشتن (Dativ)" },
+        { "de": "legen", "fa": "گذاشتن (Akkusativ)" },
+        { "de": "auf dem", "fa": "روی (Dativ)" },
+        { "de": "auf den", "fa": "روی (Akkusativ)" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "حروف اضافه دوگانه را پیدا کنید",
+      "targetWords": ["auf", "in", "an", "unter", "über", "neben"],
+      "gridSize": { "rows": 8, "cols": 8 },
+      "timeLimit": 90
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "liegen", "fa": "___", "options": ["گذاشتن", "قرار داشتن", "رفتن", "آمدن"], "correctIndex": 1 },
+        { "de": "stellen", "fa": "___", "options": ["ایستادن", "نشستن", "گذاشتن (ایستاده)", "خوابیدن"], "correctIndex": 2 },
+        { "de": "Wechselpräposition", "fa": "___", "options": ["فعل", "حرف اضافه دوگانه", "صفت", "قید"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما جملات موصولی با حروف اضافه دوگانه را یاد گرفتید!",
+      "keyPoints": [
+        "Wechselpräpositionen: an, auf, hinter, in, neben, über, unter, vor, zwischen",
+        "Wo? (کجا؟) = Dativ: liegen, stehen, sitzen, hängen, sein",
+        "Wohin? (به کجا؟) = Akkusativ: legen, stellen, setzen, hängen, gehen",
+        "ضمایر موصولی Dativ: dem (مذکر/خنثی), der (مونث), denen (جمع)",
+        "ضمایر موصولی Akkusativ: den (مذکر), das (خنثی), die (مونث/جمع)",
+        "فعل تعیین می‌کند که کدام حالت استفاده شود!"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "die Wechselpräposition", "fa": "حرف اضافه دوگانه" } },
+        { "word": { "de": "der Ort", "fa": "مکان" } },
+        { "word": { "de": "die Richtung", "fa": "جهت" } },
+        { "word": { "de": "liegen", "fa": "قرار داشتن (خوابیده)" } },
+        { "word": { "de": "stellen", "fa": "گذاشتن (ایستاده)" } },
+        { "word": { "de": "hängen", "fa": "آویزان بودن/کردن" } }
+      ]
+    }
+  ]
+}

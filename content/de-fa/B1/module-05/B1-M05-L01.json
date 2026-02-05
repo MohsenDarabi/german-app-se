@@ -1,0 +1,497 @@
+{
+  "id": "B1-M05-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Relativsätze mit Akkusativ-Präpositionen", "fa": "جملات موصولی با حروف اضافه آکوزاتیو" },
+  "description": "یاد بگیرید چطور جملات موصولی با حروف اضافه آکوزاتیو بسازید: für, gegen, ohne, um, durch, bis",
+  "level": "B1",
+  "module": 5,
+  "lessonNumber": 1,
+  "totalSteps": 45,
+  "estimatedMinutes": 22,
+  "vocabulary": [
+    { "de": "die Präposition", "fa": "حرف اضافه", "grammar": { "pos": "noun", "gender": "f", "plural": "die Präpositionen" } },
+    { "de": "das Relativpronomen", "fa": "ضمیر موصولی", "grammar": { "pos": "noun", "gender": "n", "plural": "die Relativpronomen" } },
+    { "de": "der Bezug", "fa": "ارتباط/ارجاع", "grammar": { "pos": "noun", "gender": "m", "plural": "die Bezüge" } },
+    { "de": "sich beziehen auf", "fa": "ارجاع دادن به", "grammar": { "pos": "verb", "conjugation": "irregular", "reflexive": true } },
+    { "de": "abhängig", "fa": "وابسته", "grammar": { "pos": "adjective" } },
+    { "de": "bestimmen", "fa": "تعیین کردن", "grammar": { "pos": "verb", "conjugation": "regular" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "جملات موصولی با حروف اضافه آکوزاتیو",
+      "content": "**جملات موصولی با حروف اضافه آکوزاتیو**\n\nدر آلمانی، وقتی یک جمله موصولی با حرف اضافه شروع می‌شود، حرف اضافه **قبل از** ضمیر موصولی می‌آید.\n\n**حروف اضافه آکوزاتیو:**\n- für (برای)\n- gegen (علیه/مقابل)\n- ohne (بدون)\n- um (دور/حول)\n- durch (از طریق)\n- bis (تا)\n\n**ساختار:**\n```\nPräposition + Relativpronomen (Akkusativ)\n```\n\n**مثال:**\nDas ist der Mann, **für den** ich arbeite.\nاین آن مردی است که برایش کار می‌کنم.",
+      "examples": [
+        { "de": "Das ist der Freund, für den ich das Geschenk gekauft habe.", "fa": "این آن دوستی است که برایش هدیه خریدم." },
+        { "de": "Die Firma, gegen die wir spielen, ist sehr stark.", "fa": "شرکتی که مقابلش بازی می‌کنیم، خیلی قوی است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "die Präposition", "fa": "حرف اضافه" },
+      "example": { "text": { "de": "Eine Präposition bestimmt den Kasus.", "fa": "یک حرف اضافه حالت را تعیین می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Präposition",
+      "translation": "حرف اضافه",
+      "syllables": ["Prä", "po", "si", "tion"],
+      "distractors": ["Pro", "pa", "su", "tan"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "das Relativpronomen", "fa": "ضمیر موصولی" },
+      "example": { "text": { "de": "Das Relativpronomen leitet den Nebensatz ein.", "fa": "ضمیر موصولی جمله پیرو را شروع می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Relativpronomen",
+      "translation": "ضمیر موصولی",
+      "syllables": ["Re", "la", "tiv", "pro", "no", "men"],
+      "distractors": ["Ra", "li", "taf", "pra"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s4",
+      "title": "جدول ضمایر موصولی آکوزاتیو",
+      "content": "**ضمایر موصولی در آکوزاتیو:**\n\n| جنس | ضمیر موصولی |\n|-----|-------------|\n| مذکر (der) | **den** |\n| مؤنث (die) | **die** |\n| خنثی (das) | **das** |\n| جمع (die) | **die** |\n\n**با حروف اضافه:**\n- für **den** Mann (برای مرد)\n- für **die** Frau (برای زن)\n- für **das** Kind (برای بچه)\n- für **die** Leute (برای مردم)\n\n**نکته مهم:** جنس ضمیر موصولی از کلمه‌ای که به آن اشاره می‌کند، گرفته می‌شود، نه از حرف اضافه!",
+      "examples": [
+        { "de": "Der Mann, für den ich koche, ist mein Vater.", "fa": "مردی که برایش آشپزی می‌کنم، پدرم است." },
+        { "de": "Die Frau, ohne die ich nicht leben kann, ist meine Mutter.", "fa": "زنی که بدون او نمی‌توانم زندگی کنم، مادرم است." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "در جمله موصولی با حرف اضافه، حرف اضافه کجا قرار می‌گیرد؟",
+      "options": ["بعد از ضمیر موصولی", "قبل از ضمیر موصولی", "در آخر جمله", "قبل از فعل"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! حرف اضافه همیشه قبل از ضمیر موصولی می‌آید.", "incorrect": "حرف اضافه همیشه قبل از ضمیر موصولی قرار می‌گیرد: für den, gegen die, ohne das" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام گزینه ضمیر موصولی آکوزاتیو مذکر است؟",
+      "options": ["der", "den", "dem", "des"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! den ضمیر موصولی آکوزاتیو مذکر است.", "incorrect": "ضمیر موصولی آکوزاتیو مذکر den است (نه der که نومیناتیو است)." }
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "der Bezug", "fa": "ارتباط/ارجاع" },
+      "example": { "text": { "de": "Der Bezug zum Hauptwort ist wichtig.", "fa": "ارتباط با کلمه اصلی مهم است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Bezug",
+      "translation": "ارتباط",
+      "syllables": ["Be", "zug"],
+      "distractors": ["Ba", "zig", "zag"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "ضمیر موصولی درست را انتخاب کنید",
+      "sentence": "Das ist der Kollege, für {0} ich das Projekt mache.",
+      "options": ["der", "den", "dem", "des"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Kollege مذکر است و für آکوزاتیو می‌خواهد، پس: für den" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "ضمیر موصولی درست را انتخاب کنید",
+      "sentence": "Die Stadt, durch {0} wir gefahren sind, war schön.",
+      "options": ["der", "die", "das", "den"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Stadt مؤنث است و durch آکوزاتیو می‌خواهد. آکوزاتیو مؤنث: die" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در دفتر کار",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Büro", "fa": "در دفتر کار" }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Kennst du den neuen Chef?", "fa": "رئیس جدید را می‌شناسی؟" }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Ja! Das ist der Mann, für den ich früher gearbeitet habe.", "fa": "بله! این همان مردی است که قبلاً برایش کار می‌کردم." }, "mood": "happy" },
+        { "speaker": "Anna", "text": { "de": "Wirklich? Und wie ist er?", "fa": "واقعاً؟ و چطور آدمی است؟" }, "mood": "surprised" },
+        { "speaker": "Tom", "text": { "de": "Er ist der Chef, ohne den ich heute nicht hier wäre.", "fa": "او رئیسی است که بدون او امروز اینجا نبودم." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "تام قبلاً برای چه کسی کار می‌کرد؟", "options": ["آنا", "رئیس جدید", "یک دوست"], "correctIndex": 1, "explanation": "تام گفت: für den ich früher gearbeitet habe" },
+        { "question": "تام درباره رئیس چه نظری دارد؟", "options": ["او را دوست ندارد", "بدون او موفق نمی‌شد", "او را نمی‌شناسد"], "correctIndex": 1, "explanation": "تام گفت: ohne den ich heute nicht hier wäre" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "sich beziehen auf", "fa": "ارجاع دادن به" },
+      "example": { "text": { "de": "Das Pronomen bezieht sich auf das Nomen.", "fa": "ضمیر به اسم ارجاع می‌دهد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "beziehen",
+      "translation": "ارجاع دادن",
+      "syllables": ["be", "zie", "hen"],
+      "distractors": ["ba", "za", "han"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "ضمیر موصولی درست را انتخاب کنید",
+      "sentence": "Das Problem, gegen {0} wir kämpfen, ist groß.",
+      "options": ["der", "die", "das", "den"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "Problem خنثی است و gegen آکوزاتیو می‌خواهد. آکوزاتیو خنثی: das" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "ضمیر موصولی درست را انتخاب کنید",
+      "sentence": "Die Leute, ohne {0} ich nicht leben kann, sind meine Familie.",
+      "options": ["der", "den", "die", "das"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "Leute جمع است و ohne آکوزاتیو می‌خواهد. آکوزاتیو جمع: die" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["für den", "Das ist der Arzt,", "ich arbeite."],
+      "correctOrder": [1, 0, 2],
+      "correctSentence": { "de": "Das ist der Arzt, für den ich arbeite.", "fa": "این پزشکی است که برایش کار می‌کنم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["gegen die", "Die Mannschaft,", "ist sehr gut.", "wir spielen,"],
+      "correctOrder": [1, 0, 3, 2],
+      "correctSentence": { "de": "Die Mannschaft, gegen die wir spielen, ist sehr gut.", "fa": "تیمی که مقابلش بازی می‌کنیم، خیلی خوب است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "حروف اضافه für, gegen, ohne, um, durch همیشه آکوزاتیو می‌خواهند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! این حروف اضافه همیشه با آکوزاتیو می‌آیند." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جمله Der Mann, für der ich arbeite، ضمیر موصولی درست است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! باید für den باشد چون für آکوزاتیو می‌خواهد و آکوزاتیو مذکر den است." }
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "abhängig", "fa": "وابسته" },
+      "example": { "text": { "de": "Der Kasus ist von der Präposition abhängig.", "fa": "حالت به حرف اضافه وابسته است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "abhängig",
+      "translation": "وابسته",
+      "syllables": ["ab", "hän", "gig"],
+      "distractors": ["ob", "han", "gag"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s8",
+      "title": "نکات پیشرفته",
+      "content": "**نکات مهم:**\n\n**۱. ترتیب کلمات:**\nدر جمله موصولی، فعل در **آخر** قرار می‌گیرد:\n- Der Mann, für den ich **arbeite**\n- Die Firma, gegen die wir **spielen**\n\n**۲. جنس ضمیر موصولی:**\nجنس از کلمه‌ای که ضمیر به آن اشاره می‌کند، تعیین می‌شود:\n- **Der** Freund, für **den**... (مذکر)\n- **Die** Freundin, für **die**... (مؤنث)\n\n**۳. حروف اضافه آکوزاتیو:**\nبه خاطر بسپارید: **FUGODO**\n- **F**ür\n- **U**m\n- **G**egen\n- **O**hne\n- **D**urch\n- **b**is (**O**)",
+      "examples": [
+        { "de": "Das Buch, durch das ich viel gelernt habe, ist interessant.", "fa": "کتابی که از طریق آن زیاد یاد گرفتم، جالب است." },
+        { "de": "Der Tisch, um den wir sitzen, ist rund.", "fa": "میزی که دورش نشسته‌ایم، گرد است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "bestimmen", "fa": "تعیین کردن" },
+      "example": { "text": { "de": "Die Präposition bestimmt den Kasus.", "fa": "حرف اضافه حالت را تعیین می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "bestimmen",
+      "translation": "تعیین کردن",
+      "syllables": ["be", "stim", "men"],
+      "distractors": ["ba", "stam", "mon"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "ضمیر موصولی درست را انتخاب کنید",
+      "sentence": "Das Thema, um {0} es in diesem Buch geht, ist Liebe.",
+      "options": ["der", "die", "das", "den"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "Thema خنثی است و um آکوزاتیو می‌خواهد. آکوزاتیو خنثی: das" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "ضمیر موصولی درست را انتخاب کنید",
+      "sentence": "Der Weg, bis {0} wir gegangen sind, war lang.",
+      "options": ["der", "die", "das", "den"],
+      "correctAnswers": [3],
+      "feedback": { "explanation": "Weg مذکر است و bis آکوزاتیو می‌خواهد. آکوزاتیو مذکر: den" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در کلاس آلمانی",
+      "scene": {
+        "location": "classroom",
+        "description": { "de": "Im Deutschkurs", "fa": "در کلاس آلمانی" }
+      },
+      "lines": [
+        { "speaker": "Lehrer", "text": { "de": "Heute üben wir Relativsätze mit Akkusativ-Präpositionen.", "fa": "امروز جملات موصولی با حروف اضافه آکوزاتیو تمرین می‌کنیم." }, "mood": "neutral" },
+        { "speaker": "Schüler", "text": { "de": "Können Sie ein Beispiel mit für geben?", "fa": "می‌توانید یک مثال با für بدهید؟" }, "mood": "neutral" },
+        { "speaker": "Lehrer", "text": { "de": "Natürlich! Der Kollege, für den ich das mache, ist nett.", "fa": "البته! همکاری که برایش این کار را می‌کنم، مهربان است." }, "mood": "happy" },
+        { "speaker": "Schüler", "text": { "de": "Ah, also für plus den, weil Kollege maskulin ist!", "fa": "آها، پس für به اضافه den، چون Kollege مذکر است!" }, "mood": "happy" },
+        { "speaker": "Lehrer", "text": { "de": "Genau richtig! Du hast es verstanden.", "fa": "دقیقاً درست! فهمیدی." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "چرا از den استفاده شد؟", "options": ["چون für داتیو می‌خواهد", "چون Kollege مذکر است و für آکوزاتیو می‌خواهد", "چون جمع است"], "correctIndex": 1, "explanation": "für آکوزاتیو می‌خواهد و Kollege مذکر است، پس: für den" },
+        { "question": "معلم چه موضوعی تدریس می‌کند؟", "options": ["ضمایر شخصی", "جملات موصولی با آکوزاتیو", "صفات"], "correctIndex": 1, "explanation": "معلم گفت: Relativsätze mit Akkusativ-Präpositionen" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["ohne die", "Die Freundin,", "ist meine beste Freundin.", "ich nicht leben kann,"],
+      "correctOrder": [1, 0, 3, 2],
+      "correctSentence": { "de": "Die Freundin, ohne die ich nicht leben kann, ist meine beste Freundin.", "fa": "دوستی که بدون او نمی‌توانم زندگی کنم، بهترین دوستم است." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "جمله اصلی را با جمله موصولی درست جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Der Mann, für ___" },
+        { "id": "i2", "text": "Die Frau, gegen ___" },
+        { "id": "i3", "text": "Das Buch, durch ___" },
+        { "id": "i4", "text": "Die Kinder, ohne ___" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "den ich arbeite" },
+        { "id": "m2", "text": "die wir spielen" },
+        { "id": "m3", "text": "das ich viel gelernt habe" },
+        { "id": "m4", "text": "die ich nicht verreisen will" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "جنس ضمیر موصولی از حرف اضافه تعیین می‌شود.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! جنس ضمیر موصولی از کلمه‌ای که ضمیر به آن اشاره می‌کند تعیین می‌شود، نه از حرف اضافه." }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "این مردی است که برایش کار می‌کنم.",
+      "sentenceTemplate": "Das ist der Mann, {0} {1} ich arbeite.",
+      "options": ["für", "den", "der", "gegen"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Das ist der Mann, für den ich arbeite.", "fa": "این مردی است که برایش کار می‌کنم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "شرکتی که علیه‌اش بازی می‌کنیم قوی است.",
+      "sentenceTemplate": "Die Firma, {0} {1} wir spielen, ist stark.",
+      "options": ["gegen", "die", "der", "ohne"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Die Firma, gegen die wir spielen, ist stark.", "fa": "شرکتی که علیه‌اش بازی می‌کنیم قوی است." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: حروف اضافه و ضمایر موصولی",
+      "passage": {
+        "de": "In der deutschen Sprache gibt es verschiedene Präpositionen. Einige Präpositionen, wie für, gegen, ohne, um und durch, verlangen immer den Akkusativ. Wenn wir einen Relativsatz mit diesen Präpositionen bilden, steht die Präposition vor dem Relativpronomen. Das Relativpronomen bekommt sein Geschlecht vom Bezugswort, nicht von der Präposition. Zum Beispiel: Der Mann, für den ich arbeite, ist nett. Hier ist den maskulin, weil Mann maskulin ist.",
+        "fa": "در زبان آلمانی حروف اضافه مختلفی وجود دارد. برخی حروف اضافه، مانند für، gegen، ohne، um و durch، همیشه آکوزاتیو می‌خواهند. وقتی یک جمله موصولی با این حروف اضافه می‌سازیم، حرف اضافه قبل از ضمیر موصولی قرار می‌گیرد. ضمیر موصولی جنس خود را از کلمه مرجع می‌گیرد، نه از حرف اضافه. مثلاً: مردی که برایش کار می‌کنم، مهربان است. اینجا den مذکر است، چون Mann مذکر است."
+      },
+      "questions": [
+        { "question": "کدام حروف اضافه همیشه آکوزاتیو می‌خواهند؟", "options": ["mit, bei, nach", "für, gegen, ohne, um, durch", "in, an, auf"], "correctIndex": 1, "explanation": "متن گفت: für, gegen, ohne, um und durch verlangen immer den Akkusativ" },
+        { "question": "حرف اضافه کجا قرار می‌گیرد؟", "options": ["بعد از ضمیر موصولی", "قبل از ضمیر موصولی", "در آخر جمله"], "correctIndex": 1, "explanation": "متن گفت: die Präposition steht vor dem Relativpronomen" },
+        { "question": "جنس ضمیر موصولی از کجا تعیین می‌شود؟", "options": ["از حرف اضافه", "از کلمه مرجع", "از فعل"], "correctIndex": 1, "explanation": "متن گفت: Das Relativpronomen bekommt sein Geschlecht vom Bezugswort" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die neue Arbeit", "fa": "کار جدید" },
+      "characters": ["Lisa", "Max"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Lisa erzählt Max von ihrer neuen Arbeit.", "fa": "لیزا از کار جدیدش به مکس می‌گوید." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Ich habe einen neuen Job! Der Chef, für den ich arbeite, ist sehr nett.", "fa": "یک کار جدید دارم! رئیسی که برایش کار می‌کنم، خیلی مهربان است." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "لیزا درباره رئیسش چه گفت؟",
+          "options": ["او سخت‌گیر است", "او مهربان است", "او را نمی‌شناسد"],
+          "correctIndex": 1,
+          "explanation": "لیزا گفت: Der Chef, für den ich arbeite, ist sehr nett"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Max",
+          "text": { "de": "Super! Und die Kollegen, mit denen du arbeitest?", "fa": "عالی! و همکارانی که باهاشان کار می‌کنی؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Die Kollegen, ohne die ich den Job nicht gefunden hätte, sind auch toll!", "fa": "همکارانی که بدون آنها این کار را پیدا نمی‌کردم، هم عالی هستند!" },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "همکاران چه کمکی به لیزا کردند؟",
+          "options": ["هیچ کمکی نکردند", "کمک کردند کار پیدا کند", "او را اخراج کردند"],
+          "correctIndex": 1,
+          "explanation": "لیزا گفت: ohne die ich den Job nicht gefunden hätte"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Max",
+          "text": { "de": "Ich freue mich für dich! Das Projekt, an dem du arbeitest, klingt interessant.", "fa": "خوشحالم برایت! پروژه‌ای که روی آن کار می‌کنی، جالب به نظر می‌رسد." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "مکس درباره پروژه لیزا چه نظری دارد؟",
+          "options": ["کسل‌کننده است", "جالب است", "سخت است"],
+          "correctIndex": 1,
+          "explanation": "مکس گفت: Das Projekt klingt interessant"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع",
+      "instruction": "ضمیر موصولی درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "Der Mann, für ___", "left": "den", "right": "der", "correctSide": "left" },
+        { "prompt": "Die Frau, gegen ___", "left": "der", "right": "die", "correctSide": "right" },
+        { "prompt": "Das Kind, ohne ___", "left": "das", "right": "dem", "correctSide": "left" },
+        { "prompt": "Die Leute, für ___", "left": "den", "right": "die", "correctSide": "right" },
+        { "prompt": "Der Weg, durch ___", "left": "den", "right": "der", "correctSide": "left" },
+        { "prompt": "Das Thema, um ___", "left": "dem", "right": "das", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Das ist der Mann, für den ich arbeite.",
+      "translation": "این مردی است که برایش کار می‌کنم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Die Firma, gegen die wir spielen, ist stark.",
+      "translation": "شرکتی که علیه‌اش بازی می‌کنیم قوی است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Der Freund, ohne den ich nicht leben kann.",
+      "translation": "دوستی که بدون او نمی‌توانم زندگی کنم."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "für + مذکر = ?", "options": ["für den", "für der"], "correctAnswerIndex": 0 },
+        { "question": "gegen + مؤنث = ?", "options": ["gegen der", "gegen die"], "correctAnswerIndex": 1 },
+        { "question": "ohne + خنثی = ?", "options": ["ohne das", "ohne dem"], "correctAnswerIndex": 0 },
+        { "question": "um + مذکر = ?", "options": ["um der", "um den"], "correctAnswerIndex": 1 },
+        { "question": "durch + جمع = ?", "options": ["durch die", "durch den"], "correctAnswerIndex": 0 },
+        { "question": "حرف اضافه + ضمیر موصولی:", "options": ["Präposition + Pronomen", "Pronomen + Präposition"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "für den", "fa": "برای (مذکر)" },
+        { "de": "gegen die", "fa": "علیه (مؤنث)" },
+        { "de": "ohne das", "fa": "بدون (خنثی)" },
+        { "de": "durch die", "fa": "از طریق (جمع)" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "حروف اضافه آکوزاتیو را پیدا کنید",
+      "targetWords": ["für", "gegen", "ohne", "durch", "um", "bis"],
+      "gridSize": { "rows": 8, "cols": 8 },
+      "timeLimit": 90
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "die Präposition", "fa": "___", "options": ["فعل", "حرف اضافه", "صفت", "اسم"], "correctIndex": 1 },
+        { "de": "abhängig", "fa": "___", "options": ["مستقل", "وابسته", "آزاد", "قوی"], "correctIndex": 1 },
+        { "de": "bestimmen", "fa": "___ کردن", "options": ["تعیین", "تمرین", "بازی", "صحبت"], "correctIndex": 0 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp2",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما جملات موصولی با حروف اضافه آکوزاتیو را یاد گرفتید!",
+      "keyPoints": [
+        "حروف اضافه آکوزاتیو: für, gegen, ohne, um, durch, bis",
+        "حرف اضافه قبل از ضمیر موصولی می‌آید: für den, gegen die",
+        "جنس ضمیر موصولی از کلمه مرجع تعیین می‌شود",
+        "آکوزاتیو: den (مذکر), die (مؤنث), das (خنثی), die (جمع)",
+        "فعل در جمله موصولی در آخر قرار می‌گیرد"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "die Präposition", "fa": "حرف اضافه" } },
+        { "word": { "de": "das Relativpronomen", "fa": "ضمیر موصولی" } },
+        { "word": { "de": "der Bezug", "fa": "ارتباط/ارجاع" } },
+        { "word": { "de": "sich beziehen auf", "fa": "ارجاع دادن به" } },
+        { "word": { "de": "abhängig", "fa": "وابسته" } },
+        { "word": { "de": "bestimmen", "fa": "تعیین کردن" } }
+      ]
+    }
+  ]
+}

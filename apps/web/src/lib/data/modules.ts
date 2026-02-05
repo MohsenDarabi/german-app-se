@@ -1159,6 +1159,37 @@ const DE_FA_B1_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/B1/B1-M04-L04"
       }
     ]
+  },
+  {
+    id: "module-05",
+    title: "بخش ۵: جملات موصولی با حروف اضافه (Relativsätze mit Präpositionen)",
+    level: "B1",
+    lessons: [
+      {
+        id: "B1-M05-L01",
+        title: "Relativsätze mit Akkusativ-Präpositionen",
+        description: "یاد بگیرید جملات موصولی با حروف اضافه آکوزاتیو بسازید: für den, gegen die, ohne das",
+        path: "/learn/de-fa/B1/B1-M05-L01"
+      },
+      {
+        id: "B1-M05-L02",
+        title: "Relativsätze mit Dativ-Präpositionen",
+        description: "یاد بگیرید جملات موصولی با حروف اضافه داتیو بسازید: mit dem, bei der, von denen",
+        path: "/learn/de-fa/B1/B1-M05-L02"
+      },
+      {
+        id: "B1-M05-L03",
+        title: "Relativsätze mit Wechselpräpositionen",
+        description: "یاد بگیرید جملات موصولی با حروف اضافه دوگانه بسازید: auf dem (Wo?) یا auf den (Wohin?)",
+        path: "/learn/de-fa/B1/B1-M05-L03"
+      },
+      {
+        id: "B1-M05-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل جملات موصولی با همه انواع حروف اضافه: آکوزاتیو، داتیو و دوگانه",
+        path: "/learn/de-fa/B1/B1-M05-L04"
+      }
+    ]
   }
 ];
 

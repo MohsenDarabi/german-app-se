@@ -8,7 +8,7 @@
 
 **Create B1 lessons - lesson by lesson, wait for user test after each**
 
-Current: `B1-M04` (Doppelkonnektoren) - **MODULE COMPLETE - READY FOR USER TEST**
+Current: `B1-M05` (Relativsätze mit Präpositionen) - **MODULE COMPLETE - READY FOR USER TEST**
 
 ---
 
@@ -26,7 +26,7 @@ Current: `B1-M04` (Doppelkonnektoren) - **MODULE COMPLETE - READY FOR USER TEST*
 |-------|---------|---------|--------|
 | A1 | 14 | 56+ | Complete |
 | A2 | 18 | 72 | **Complete** ✅ |
-| B1 | 4 | 16 | Module 4 complete |
+| B1 | 5 | 20 | Module 5 complete |
 
 ### A2 Completion (2026-02-05)
 
@@ -61,8 +61,9 @@ Current: `B1-M04` (Doppelkonnektoren) - **MODULE COMPLETE - READY FOR USER TEST*
 | M02 | Partizipien als Adjektive | 4/4 | ✅ Complete |
 | M03 | Konjunktiv I | 4/4 | ✅ Complete |
 | M04 | Doppelkonnektoren | 4/4 | ✅ Complete |
+| M05 | Relativsätze mit Präpositionen | 4/4 | ✅ Complete |
 
-**Total B1: 16 lessons**
+**Total B1: 20 lessons**
 
 ---
 
@@ -110,10 +111,23 @@ Current: `B1-M04` (Doppelkonnektoren) - **MODULE COMPLETE - READY FOR USER TEST*
 
 ---
 
+## B1 Module 5: Relativsätze mit Präpositionen (Relative Clauses with Prepositions)
+
+| Lesson | Title | Status |
+|--------|-------|--------|
+| B1-M05-L01 | Akkusativ-Präpositionen (für, gegen, ohne, um) | ✅ Complete |
+| B1-M05-L02 | Dativ-Präpositionen (mit, bei, nach, aus, von, zu) | ✅ Complete |
+| B1-M05-L03 | Wechselpräpositionen (an, auf, in, über, unter) | ✅ Complete |
+| B1-M05-L04 | Zusammenfassung | ✅ Complete |
+
+---
+
 ## Recent Changes
 
 | Date | Change |
 |------|--------|
+| 2026-02-06 | **B1 Module 5 (Relativsätze mit Präpositionen) COMPLETE - 4 lessons!** |
+| 2026-02-06 | Created B1-M05-L01 to L04 in parallel |
 | 2026-02-06 | **B1 Module 4 (Doppelkonnektoren) COMPLETE - 4 lessons!** |
 | 2026-02-06 | Created B1-M04-L04 (Zusammenfassung) |
 | 2026-02-06 | Created B1-M04-L03 (entweder...oder / nicht nur...sondern auch) |
@@ -142,6 +156,7 @@ Current: `B1-M04` (Doppelkonnektoren) - **MODULE COMPLETE - READY FOR USER TEST*
 3. [x] Complete B1 Module 2 (Partizipien als Adjektive) - 4 lessons
 4. [x] Complete B1 Module 3 (Konjunktiv I) - 4 lessons
 5. [x] Complete B1 Module 4 (Doppelkonnektoren) - 4 lessons
-6. [ ] **User tests B1-M04 lessons**
-7. [ ] Plan B1 Module 5 topic
-8. [ ] Continue B1 curriculum development
+6. [x] Complete B1 Module 5 (Relativsätze mit Präpositionen) - 4 lessons
+7. [ ] **User tests B1-M05 lessons**
+8. [ ] Plan B1 Module 6 topic
+9. [ ] Continue B1 curriculum development
