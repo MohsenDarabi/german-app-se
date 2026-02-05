@@ -1,0 +1,429 @@
+{
+  "id": "A2-M16-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Zusammenfassung: Plusquamperfekt", "fa": "جمع‌بندی: ماضی بعید" },
+  "description": "تمرین ترکیبی ماضی بعید با hatte و war، فعل‌های حرکتی و غیرحرکتی، و کاربرد با nachdem و bevor",
+  "level": "A2",
+  "module": 16,
+  "lessonNumber": 4,
+  "totalSteps": 44,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "nachdem", "fa": "بعد از اینکه", "grammar": { "pos": "conjunction" } },
+    { "de": "bevor", "fa": "قبل از اینکه", "grammar": { "pos": "conjunction" } },
+    { "de": "als", "fa": "وقتی که (گذشته)", "grammar": { "pos": "conjunction" } },
+    { "de": "schon", "fa": "قبلاً", "grammar": { "pos": "adverb" } },
+    { "de": "bereits", "fa": "از پیش", "grammar": { "pos": "adverb" } },
+    { "de": "noch nicht", "fa": "هنوز نه", "grammar": { "pos": "adverb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "مرور Plusquamperfekt",
+      "content": "📝 **دو ساختار Plusquamperfekt:**\n\n**با hatte (اکثر فعل‌ها):**\n• Ich **hatte** gegessen. (خورده بودم)\n• Sie **hatte** gelesen. (خوانده بود)\n\n**با war (فعل‌های حرکتی/تغییر حالت):**\n• Er **war** gegangen. (رفته بود)\n• Sie **war** aufgestanden. (بلند شده بود)\n\n💡 همان قانون Perfekt: فعل‌هایی که با haben می‌آیند = hatte، فعل‌هایی که با sein می‌آیند = war",
+      "examples": [
+        { "de": "Ich hatte das Buch gelesen.", "fa": "من کتاب را خوانده بودم." },
+        { "de": "Er war nach Berlin gefahren.", "fa": "او به برلین رفته بود." },
+        { "de": "Wir hatten lange gewartet.", "fa": "ما مدت زیادی صبر کرده بودیم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "nachdem", "fa": "بعد از اینکه" },
+      "example": { "text": { "de": "Nachdem ich gegessen hatte, ging ich spazieren.", "fa": "بعد از اینکه غذا خورده بودم، رفتم قدم بزنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "nachdem",
+      "translation": "بعد از اینکه",
+      "syllables": ["nach", "dem"],
+      "distractors": ["noch", "dam", "den"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "bevor", "fa": "قبل از اینکه" },
+      "example": { "text": { "de": "Bevor er kam, hatte ich aufgeräumt.", "fa": "قبل از اینکه بیاید، تمیز کرده بودم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "bevor",
+      "translation": "قبل از اینکه",
+      "syllables": ["be", "vor"],
+      "distractors": ["ba", "für", "ver"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "als", "fa": "وقتی که (برای گذشته)" },
+      "example": { "text": { "de": "Als ich ankam, war er schon gegangen.", "fa": "وقتی رسیدم، او قبلاً رفته بود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "als",
+      "translation": "وقتی که",
+      "syllables": ["als"],
+      "distractors": ["als", "ols", "els"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله درست است؟",
+      "options": ["Nachdem ich gegessen habe, ging ich.", "Nachdem ich gegessen hatte, ging ich.", "Nachdem ich esse, ging ich.", "Nachdem ich aß, ging ich."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! بعد از nachdem برای گذشته، Plusquamperfekt می‌آید", "incorrect": "با nachdem برای گذشته، Plusquamperfekt استفاده می‌شود" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Nachdem er das Buch gelesen {0}, gab er es mir.",
+      "options": ["hatte", "war", "hat", "ist"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "lesen با haben می‌آید: hatte gelesen = خوانده بود" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "روز پرمشغله",
+      "context": "آنا درباره روزش توضیح می‌دهد",
+      "lines": [
+        { "speaker": "Tom", "text": { "de": "Wie war dein Tag?", "fa": "روزت چطور بود؟" } },
+        { "speaker": "Anna", "text": { "de": "Sehr beschäftigt! Nachdem ich aufgestanden war, hatte ich schnell gefrühstückt.", "fa": "خیلی پرمشغله! بعد از اینکه بلند شده بودم، سریع صبحانه خورده بودم." } },
+        { "speaker": "Tom", "text": { "de": "Und dann?", "fa": "و بعد؟" } },
+        { "speaker": "Anna", "text": { "de": "Bevor ich zur Arbeit gefahren war, hatte ich noch eingekauft.", "fa": "قبل از اینکه به کار رفته بودم، خرید هم کرده بودم." } }
+      ],
+      "questions": [
+        { "question": "آنا بعد از بلند شدن چه کرده بود؟", "options": ["خرید کرده بود", "صبحانه خورده بود", "به کار رفته بود"], "correctIndex": 1, "explanation": "آنا گفت: hatte ich schnell gefrühstückt" },
+        { "question": "آنا قبل از رفتن به کار چه کرده بود؟", "options": ["خرید کرده بود", "صبحانه خورده بود", "ورزش کرده بود"], "correctIndex": 0, "explanation": "آنا گفت: hatte ich noch eingekauft" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["spazieren.", "gegessen", "ging", "hatte,", "ich", "Nachdem", "ich"],
+      "correctOrder": [5, 6, 3, 4, 2, 1, 0],
+      "correctSentence": { "de": "Nachdem ich hatte, ich ging gegessen spazieren.", "fa": "بعد از اینکه غذا خورده بودم، رفتم قدم بزنم." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جمله با nachdem، Plusquamperfekt در جمله فرعی می‌آید.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! Nachdem ich gegessen HATTE, ging ich. - Plusquamperfekt در جمله فرعی" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "nachdem، bevor، als",
+      "content": "📝 **استفاده از Plusquamperfekt با این کلمات:**\n\n**nachdem (بعد از اینکه):**\n• **Nachdem** ich gegessen **hatte**, ging ich.\n• Plusquamperfekt در جمله فرعی!\n\n**bevor (قبل از اینکه):**\n• **Bevor** er kam, **hatte** ich aufgeräumt.\n• Plusquamperfekt در جمله اصلی!\n\n**als (وقتی که):**\n• **Als** ich ankam, **war** er schon gegangen.\n• Plusquamperfekt برای عمل قبلی!",
+      "examples": [
+        { "de": "Nachdem sie angekommen war, rief sie mich an.", "fa": "بعد از اینکه رسیده بود، به من زنگ زد." },
+        { "de": "Bevor ich schlief, hatte ich gelesen.", "fa": "قبل از خوابیدن، کتاب خوانده بودم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "schon", "fa": "قبلاً / از قبل" },
+      "example": { "text": { "de": "Er hatte das schon gewusst.", "fa": "او آن را از قبل می‌دانست." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "schon",
+      "translation": "قبلاً",
+      "syllables": ["schon"],
+      "distractors": ["schön", "schein", "schun"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "bereits", "fa": "از پیش / قبلاً" },
+      "example": { "text": { "de": "Sie hatte das bereits erledigt.", "fa": "او آن را از پیش انجام داده بود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "bereits",
+      "translation": "از پیش",
+      "syllables": ["be", "reits"],
+      "distractors": ["ba", "raits", "rait"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "«وقتی رسیدم، او رفته بود» به آلمانی چیست؟",
+      "options": ["Als ich ankam, war er gegangen.", "Als ich ankam, ist er gegangen.", "Als ich ankam, hatte er gegangen.", "Als ich ankam, hat er gegangen."],
+      "correctAnswerIndex": 0,
+      "feedback": { "correct": "آفرین! gehen با war می‌آید: war gegangen", "incorrect": "gehen فعل حرکتی است و با war می‌آید" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Als ich ankam, {0} sie schon nach Hause gefahren.",
+      "options": ["war", "hatte", "ist", "hat"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "fahren فعل حرکتی است: war gefahren = رفته بود" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "مهمانی غافلگیرانه",
+      "context": "دوستان درباره مهمانی صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Wie war die Überraschungsparty?", "fa": "مهمانی غافلگیرانه چطور بود؟" } },
+        { "speaker": "Max", "text": { "de": "Super! Als Tom ankam, hatten wir alles vorbereitet.", "fa": "عالی! وقتی تام رسید، همه چیز را آماده کرده بودیم." } },
+        { "speaker": "Lisa", "text": { "de": "Hatte er etwas geahnt?", "fa": "چیزی فهمیده بود؟" } },
+        { "speaker": "Max", "text": { "de": "Nein! Bevor er die Tür öffnete, waren wir alle versteckt.", "fa": "نه! قبل از اینکه در را باز کند، همه قایم شده بودیم." } }
+      ],
+      "questions": [
+        { "question": "وقتی تام رسید، دوستان چه کرده بودند؟", "options": ["رفته بودند", "همه چیز را آماده کرده بودند", "غذا می‌خوردند"], "correctIndex": 1, "explanation": "ماکس گفت: hatten wir alles vorbereitet" },
+        { "question": "قبل از باز کردن در، دوستان کجا بودند؟", "options": ["بیرون", "قایم شده بودند", "آشپزخانه"], "correctIndex": 1, "explanation": "ماکس گفت: waren wir alle versteckt" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["gegangen.", "schon", "er", "war", "ankam,", "ich", "Als"],
+      "correctOrder": [6, 5, 4, 2, 3, 1, 0],
+      "correctSentence": { "de": "Als ich ankam, er war schon gegangen.", "fa": "وقتی رسیدم، او قبلاً رفته بود." }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "بعد از اینکه غذا خورده بودم، رفتم بیرون.",
+      "sentenceTemplate": "{0} ich gegessen {1}, {2} ich raus.",
+      "options": ["ging", "Nachdem", "hatte"],
+      "correctAnswers": [1, 2, 0],
+      "correctTranslation": { "de": "Nachdem ich gegessen hatte, ging ich raus.", "fa": "بعد از اینکه غذا خورده بودم، رفتم بیرون." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "جمله را با معنی درست وصل کنید",
+      "items": [
+        { "id": "i1", "text": "Nachdem ich..." },
+        { "id": "i2", "text": "Bevor er kam,..." },
+        { "id": "i3", "text": "Als ich ankam,..." },
+        { "id": "i4", "text": "Er hatte schon..." }
+      ],
+      "matches": [
+        { "id": "m1", "text": "بعد از اینکه من..." },
+        { "id": "m2", "text": "قبل از اینکه بیاید،..." },
+        { "id": "m3", "text": "وقتی رسیدم،..." },
+        { "id": "m4", "text": "او قبلاً... کرده بود" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "noch nicht", "fa": "هنوز نه" },
+      "example": { "text": { "de": "Ich hatte noch nicht gegessen.", "fa": "هنوز غذا نخورده بودم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "noch",
+      "translation": "هنوز",
+      "syllables": ["noch"],
+      "distractors": ["nach", "nuch", "nech"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "کدام فعل کمکی درست است؟ «او به خانه رسیده بود»",
+      "options": ["Sie hatte nach Hause angekommen.", "Sie war nach Hause angekommen.", "Sie ist nach Hause angekommen.", "Sie hat nach Hause angekommen."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! ankommen فعل حرکتی است و با war می‌آید", "incorrect": "ankommen فعل حرکتی است و در Plusquamperfekt با war می‌آید" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Bevor ich schlief, {0} ich noch gelesen.",
+      "options": ["hatte", "war", "habe", "bin"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "lesen با haben می‌آید: hatte gelesen = خوانده بودم" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Nachdem wir angekommen {0}, gingen wir ins Hotel.",
+      "options": ["waren", "hatten", "sind", "haben"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "ankommen فعل حرکتی است: waren angekommen = رسیده بودیم" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "خلاصه: hatte یا war؟",
+      "content": "📝 **قانون ساده برای انتخاب:**\n\n**با hatte:**\n• اکثر فعل‌ها: essen, trinken, lesen, schreiben, machen, arbeiten, lernen, kaufen, sehen...\n\n**با war:**\n• فعل‌های حرکت: gehen, kommen, fahren, fliegen, laufen, schwimmen, reisen\n• فعل‌های تغییر حالت: aufstehen, einschlafen, aufwachen, sterben, werden\n• sein و bleiben\n\n💡 سوال کلیدی: آیا فعل حرکت یا تغییر حالت است؟ بله = war، نه = hatte",
+      "examples": [
+        { "de": "Er hatte viel gearbeitet. (کار = غیرحرکتی)", "fa": "او زیاد کار کرده بود." },
+        { "de": "Er war nach Hause gegangen. (رفتن = حرکتی)", "fa": "او به خانه رفته بود." }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d3",
+      "title": "امتحان",
+      "context": "دانش‌آموزان بعد از امتحان صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Sara", "text": { "de": "Wie war die Prüfung?", "fa": "امتحان چطور بود؟" } },
+        { "speaker": "Tim", "text": { "de": "Schwer! Ich hatte nicht genug gelernt.", "fa": "سخت! کافی نخوانده بودم." } },
+        { "speaker": "Sara", "text": { "de": "Ich auch nicht. Bevor die Prüfung begann, war ich sehr nervös gewesen.", "fa": "من هم نه. قبل از شروع امتحان، خیلی استرس داشتم." } },
+        { "speaker": "Tim", "text": { "de": "Nachdem ich alle Fragen beantwortet hatte, war ich erleichtert.", "fa": "بعد از اینکه همه سوالات را جواب داده بودم، راحت شدم." } }
+      ],
+      "questions": [
+        { "question": "تیم چقدر درس خوانده بود؟", "options": ["کافی", "کافی نخوانده بود", "خیلی زیاد"], "correctIndex": 1, "explanation": "تیم گفت: nicht genug gelernt" },
+        { "question": "تیم بعد از جواب دادن سوالات چه حسی داشت؟", "options": ["استرس", "راحت شد", "ناراحت"], "correctIndex": 1, "explanation": "تیم گفت: war ich erleichtert" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["aufgeräumt.", "er", "hatte", "kam,", "ich", "Bevor"],
+      "correctOrder": [5, 4, 3, 1, 2, 0],
+      "correctSentence": { "de": "Bevor ich kam, er hatte aufgeräumt.", "fa": "قبل از اینکه بیایم، او تمیز کرده بود." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo4",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["gefahren.", "Berlin", "nach", "war", "Sie", "schon"],
+      "correctOrder": [4, 3, 5, 2, 1, 0],
+      "correctSentence": { "de": "Sie war schon nach Berlin gefahren.", "fa": "او قبلاً به برلین رفته بود." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "Plusquamperfekt برای عملی استفاده می‌شود که قبل از عمل دیگری در گذشته انجام شده.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! Plusquamperfekt = ماضی بعید، برای گذشته‌ی دورتر" }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "وقتی رسیدیم، فیلم شروع شده بود.",
+      "sentenceTemplate": "{0} wir ankamen, {1} der Film schon {2}.",
+      "options": ["Als", "begonnen", "hatte"],
+      "correctAnswers": [0, 2, 1],
+      "correctTranslation": { "de": "Als wir ankamen, hatte der Film schon begonnen.", "fa": "وقتی رسیدیم، فیلم شروع شده بود." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "کدام جمله از نظر معنی با بقیه فرق دارد؟",
+      "options": ["Nachdem ich gegessen hatte, ging ich.", "Ich hatte gegessen, dann ging ich.", "Bevor ich ging, hatte ich gegessen.", "Ich ging, dann hatte ich gegessen."],
+      "correctAnswerIndex": 3,
+      "feedback": { "correct": "آفرین! در این جمله ترتیب زمانی اشتباه است - اول رفتم، بعد خوردم؟", "incorrect": "Plusquamperfekt برای عمل قبلی است، نه بعدی" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Kinder {0} schon eingeschlafen, als ich nach Hause kam.",
+      "options": ["waren", "hatten", "sind", "haben"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "einschlafen فعل تغییر حالت است: waren eingeschlafen = خوابیده بودند" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Nachdem ich den Brief geschrieben {0}, schickte ich ihn ab.",
+      "options": ["hatte", "war", "habe", "bin"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "schreiben با haben می‌آید: hatte geschrieben = نوشته بودم" }
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Nachdem ich gegessen hatte, ging ich spazieren.",
+      "translation": "بعد از اینکه غذا خورده بودم، رفتم قدم بزنم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Als ich ankam, war er schon gegangen.",
+      "translation": "وقتی رسیدم، او قبلاً رفته بود."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Bevor sie kam, hatte ich alles vorbereitet.",
+      "translation": "قبل از اینکه بیاید، همه چیز را آماده کرده بودم."
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "hatte یا war؟",
+      "instruction": "فعل کمکی درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "___ gelesen (خوانده بود)", "left": "hatte", "right": "war", "correctSide": "left" },
+        { "prompt": "___ gegangen (رفته بود)", "left": "hatte", "right": "war", "correctSide": "right" },
+        { "prompt": "___ gegessen (خورده بود)", "left": "hatte", "right": "war", "correctSide": "left" },
+        { "prompt": "___ angekommen (رسیده بود)", "left": "hatte", "right": "war", "correctSide": "right" },
+        { "prompt": "___ geschrieben (نوشته بود)", "left": "hatte", "right": "war", "correctSide": "left" },
+        { "prompt": "___ aufgestanden (بلند شده بود)", "left": "hatte", "right": "war", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "nachdem", "fa": "بعد از اینکه" },
+        { "de": "bevor", "fa": "قبل از اینکه" },
+        { "de": "als", "fa": "وقتی که" },
+        { "de": "schon", "fa": "قبلاً" }
+      ]
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "nachdem", "fa": "بعد از اینکه", "options": ["قبل از اینکه", "بعد از اینکه", "وقتی که", "اگر"], "correctIndex": 1 },
+        { "de": "bevor", "fa": "قبل از اینکه", "options": ["قبل از اینکه", "بعد از اینکه", "چون", "اگرچه"], "correctIndex": 0 },
+        { "de": "schon", "fa": "قبلاً", "options": ["هنوز", "قبلاً", "فردا", "همیشه"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp1",
+      "title": "تبریک! 🎉",
+      "message": "شما بخش Plusquamperfekt را کامل کردید!",
+      "keyPoints": [
+        "Plusquamperfekt = ماضی بعید (گذشته‌ی دورتر)",
+        "hatte + Partizip II برای اکثر فعل‌ها",
+        "war + Partizip II برای فعل‌های حرکتی و تغییر حالت",
+        "با nachdem: Plusquamperfekt در جمله فرعی",
+        "با bevor/als: Plusquamperfekt برای عمل قبلی"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "nachdem", "fa": "بعد از اینکه" } },
+        { "word": { "de": "bevor", "fa": "قبل از اینکه" } },
+        { "word": { "de": "als", "fa": "وقتی که" } },
+        { "word": { "de": "schon", "fa": "قبلاً" } },
+        { "word": { "de": "bereits", "fa": "از پیش" } },
+        { "word": { "de": "noch nicht", "fa": "هنوز نه" } }
+      ]
+    }
+  ]
+}

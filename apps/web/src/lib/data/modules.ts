@@ -939,6 +939,37 @@ const DE_FA_A2_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/A2/A2-M15-L04"
       }
     ]
+  },
+  {
+    id: "module-16",
+    title: "بخش ۱۶: ماضی بعید (Plusquamperfekt)",
+    level: "A2",
+    lessons: [
+      {
+        id: "A2-M16-L01",
+        title: "Plusquamperfekt: Bildung - ساختار",
+        description: "یاد بگیرید چطور ماضی بعید را با hatte/war + Partizip II بسازید.",
+        path: "/learn/de-fa/A2/A2-M16-L01"
+      },
+      {
+        id: "A2-M16-L02",
+        title: "Plusquamperfekt mit haben - با haben",
+        description: "یاد بگیرید چطور ماضی بعید را با hatte + Partizip II برای اکثر فعل‌ها بسازید.",
+        path: "/learn/de-fa/A2/A2-M16-L02"
+      },
+      {
+        id: "A2-M16-L03",
+        title: "Plusquamperfekt mit sein - با sein",
+        description: "یاد بگیرید چطور ماضی بعید را با war + Partizip II برای فعل‌های حرکتی بسازید.",
+        path: "/learn/de-fa/A2/A2-M16-L03"
+      },
+      {
+        id: "A2-M16-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "تمرین ترکیبی ماضی بعید با hatte و war و کاربرد با nachdem و bevor.",
+        path: "/learn/de-fa/A2/A2-M16-L04"
+      }
+    ]
   }
 ];
 

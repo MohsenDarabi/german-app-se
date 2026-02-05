@@ -1,0 +1,429 @@
+{
+  "id": "A2-M16-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Plusquamperfekt mit sein", "fa": "ماضی بعید با sein" },
+  "description": "یاد بگیرید چطور ماضی بعید را با war + Partizip II برای فعل‌های حرکتی و تغییر حالت بسازید",
+  "level": "A2",
+  "module": 16,
+  "lessonNumber": 3,
+  "totalSteps": 44,
+  "estimatedMinutes": 20,
+  "vocabulary": [
+    { "de": "gegangen", "fa": "رفته", "grammar": { "pos": "verb" } },
+    { "de": "gekommen", "fa": "آمده", "grammar": { "pos": "verb" } },
+    { "de": "gefahren", "fa": "رانده / رفته (با وسیله)", "grammar": { "pos": "verb" } },
+    { "de": "geflogen", "fa": "پرواز کرده", "grammar": { "pos": "verb" } },
+    { "de": "aufgestanden", "fa": "بلند شده", "grammar": { "pos": "verb" } },
+    { "de": "eingeschlafen", "fa": "خوابیده", "grammar": { "pos": "verb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "Plusquamperfekt با sein",
+      "content": "📝 **فعل‌های حرکتی و تغییر حالت با war + Partizip II می‌آیند:**\n\n**صرف war:**\n• ich **war** | du **warst** | er/sie/es **war**\n• wir **waren** | ihr **wart** | sie/Sie **waren**\n\n**مثال‌ها:**\n• Er **war** nach Berlin **gefahren**. (به برلین رفته بود)\n• Sie **war** schon **aufgestanden**. (بلند شده بود)\n\n💡 همان فعل‌هایی که در Perfekt با sein می‌آیند!",
+      "examples": [
+        { "de": "Ich war nach Hause gegangen.", "fa": "من به خانه رفته بودم." },
+        { "de": "Sie war früh aufgewacht.", "fa": "او زود بیدار شده بود." },
+        { "de": "Wir waren angekommen.", "fa": "ما رسیده بودیم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "gegangen", "fa": "رفته (Partizip II از gehen)" },
+      "example": { "text": { "de": "Er war schon gegangen.", "fa": "او قبلاً رفته بود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "gegangen",
+      "translation": "رفته",
+      "syllables": ["ge", "gan", "gen"],
+      "distractors": ["gu", "gon", "gun"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "gekommen", "fa": "آمده (Partizip II از kommen)" },
+      "example": { "text": { "de": "Sie war gerade gekommen.", "fa": "او تازه آمده بود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "gekommen",
+      "translation": "آمده",
+      "syllables": ["ge", "kom", "men"],
+      "distractors": ["ga", "kam", "man"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "gefahren", "fa": "رانده / رفته با وسیله (Partizip II از fahren)" },
+      "example": { "text": { "de": "Wir waren mit dem Zug gefahren.", "fa": "ما با قطار رفته بودیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "gefahren",
+      "translation": "رفته با وسیله",
+      "syllables": ["ge", "fah", "ren"],
+      "distractors": ["ga", "für", "ran"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«او به برلین رفته بود» به آلمانی چیست؟",
+      "options": ["Sie hatte nach Berlin gefahren.", "Sie war nach Berlin gefahren.", "Sie ist nach Berlin gefahren.", "Sie hat nach Berlin gefahren."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! fahren فعل حرکتی است و با war می‌آید", "incorrect": "فعل‌های حرکتی در Plusquamperfekt با war می‌آیند" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er {0} schon nach Hause gegangen.",
+      "options": ["war", "hatte", "ist", "hat"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "gehen فعل حرکتی است: war gegangen = رفته بود" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در فرودگاه",
+      "context": "دو دوست درباره سفر صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Warst du schon mal in Paris?", "fa": "تا حالا پاریس رفته بودی؟" } },
+        { "speaker": "Tom", "text": { "de": "Ja, ich war letztes Jahr dorthin geflogen.", "fa": "بله، سال گذشته به آنجا پرواز کرده بودم." } },
+        { "speaker": "Anna", "text": { "de": "Toll! War deine Schwester auch mitgekommen?", "fa": "عالی! خواهرت هم آمده بود؟" } },
+        { "speaker": "Tom", "text": { "de": "Nein, sie war zu Hause geblieben.", "fa": "نه، او در خانه مانده بود." } }
+      ],
+      "questions": [
+        { "question": "تام چطور به پاریس رفته بود؟", "options": ["با قطار", "با هواپیما", "با ماشین"], "correctIndex": 1, "explanation": "تام گفت: ich war dorthin geflogen" },
+        { "question": "خواهر تام چه کرده بود؟", "options": ["به پاریس رفته بود", "در خانه مانده بود", "به کار رفته بود"], "correctIndex": 1, "explanation": "تام گفت: sie war zu Hause geblieben" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["angekommen.", "war", "spät", "Er"],
+      "correctOrder": [3, 1, 2, 0],
+      "correctSentence": { "de": "Er war spät angekommen.", "fa": "او دیر رسیده بود." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "فعل kommen در Plusquamperfekt با hatte می‌آید.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! kommen فعل حرکتی است و با war می‌آید: war gekommen" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "فعل‌های رایج با war",
+      "content": "📝 **فعل‌هایی که با war + Partizip II می‌آیند:**\n\n**فعل‌های حرکتی:**\n• **gehen** → war gegangen (رفته بودم)\n• **kommen** → war gekommen (آمده بودم)\n• **fahren** → war gefahren (رفته بودم)\n• **fliegen** → war geflogen (پرواز کرده بودم)\n• **laufen** → war gelaufen (دویده بودم)\n\n**فعل‌های تغییر حالت:**\n• **aufstehen** → war aufgestanden (بلند شده بودم)\n• **einschlafen** → war eingeschlafen (خوابیده بودم)\n• **werden** → war geworden (شده بودم)\n• **sterben** → war gestorben (مرده بود)",
+      "examples": [
+        { "de": "Sie war früh aufgestanden.", "fa": "او زود بلند شده بود." },
+        { "de": "Das Kind war eingeschlafen.", "fa": "بچه خوابیده بود." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "geflogen", "fa": "پرواز کرده (Partizip II از fliegen)" },
+      "example": { "text": { "de": "Sie war nach New York geflogen.", "fa": "او به نیویورک پرواز کرده بود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "geflogen",
+      "translation": "پرواز کرده",
+      "syllables": ["ge", "flo", "gen"],
+      "distractors": ["ga", "flu", "gan"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "aufgestanden", "fa": "بلند شده (Partizip II از aufstehen)" },
+      "example": { "text": { "de": "Ich war um 6 Uhr aufgestanden.", "fa": "من ساعت ۶ بلند شده بودم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "aufgestanden",
+      "translation": "بلند شده",
+      "syllables": ["auf", "ge", "stan", "den"],
+      "distractors": ["ab", "ga", "sten", "dan"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله درست است؟",
+      "options": ["Bevor ich aufgestanden hatte, ...", "Bevor ich aufgestanden war, ...", "Bevor ich aufgestanden bin, ...", "Bevor ich aufgestanden habe, ..."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! aufstehen فعل تغییر حالت است و با war می‌آید", "incorrect": "aufstehen فعل تغییر حالت است و در Plusquamperfekt با war می‌آید" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Kinder {0} schon eingeschlafen.",
+      "options": ["waren", "hatten", "sind", "haben"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "einschlafen فعل تغییر حالت است: waren eingeschlafen = خوابیده بودند" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "صبح دیر",
+      "context": "ماریا توضیح می‌دهد چرا دیر رسیده",
+      "lines": [
+        { "speaker": "Chef", "text": { "de": "Warum sind Sie so spät gekommen?", "fa": "چرا اینقدر دیر آمدید؟" } },
+        { "speaker": "Maria", "text": { "de": "Es tut mir leid. Ich war zu spät aufgestanden.", "fa": "متأسفم. دیر بلند شده بودم." } },
+        { "speaker": "Chef", "text": { "de": "War der Bus auch zu spät gekommen?", "fa": "اتوبوس هم دیر آمده بود؟" } },
+        { "speaker": "Maria", "text": { "de": "Ja, und ich war zur Haltestelle gelaufen, aber er war schon abgefahren.", "fa": "بله، و به ایستگاه دویده بودم، اما قبلاً رفته بود." } }
+      ],
+      "questions": [
+        { "question": "چرا ماریا دیر رسید؟", "options": ["دیر بلند شده بود", "مریض بود", "ترافیک بود"], "correctIndex": 0, "explanation": "ماریا گفت: Ich war zu spät aufgestanden" },
+        { "question": "اتوبوس چه شده بود؟", "options": ["دیر آمده بود", "قبلاً رفته بود", "خراب شده بود"], "correctIndex": 1, "explanation": "ماریا گفت: er war schon abgefahren" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["gefahren.", "Berlin", "nach", "waren", "Wir"],
+      "correctOrder": [4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Wir waren nach Berlin gefahren.", "fa": "ما به برلین رفته بودیم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "او زود آمده بود.",
+      "sentenceTemplate": "{0} {1} früh {2}.",
+      "options": ["Sie", "gekommen", "war"],
+      "correctAnswers": [0, 2, 1],
+      "correctTranslation": { "de": "Sie war früh gekommen.", "fa": "او زود آمده بود." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "مصدر را با Partizip II وصل کنید",
+      "items": [
+        { "id": "i1", "text": "gehen" },
+        { "id": "i2", "text": "kommen" },
+        { "id": "i3", "text": "fahren" },
+        { "id": "i4", "text": "fliegen" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "gegangen" },
+        { "id": "m2", "text": "gekommen" },
+        { "id": "m3", "text": "gefahren" },
+        { "id": "m4", "text": "geflogen" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "eingeschlafen", "fa": "خوابیده (Partizip II از einschlafen)" },
+      "example": { "text": { "de": "Das Baby war schnell eingeschlafen.", "fa": "نوزاد زود خوابیده بود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "eingeschlafen",
+      "translation": "خوابیده",
+      "syllables": ["ein", "ge", "schla", "fen"],
+      "distractors": ["an", "ga", "schlu", "fan"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "کدام فعل با war + Partizip II نمی‌آید؟",
+      "options": ["gehen", "kommen", "essen", "fahren"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! essen فعل حرکتی نیست و با hatte می‌آید", "incorrect": "فقط فعل‌های حرکتی و تغییر حالت با war می‌آیند" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Als ich ankam, {0} sie schon gegangen.",
+      "options": ["war", "hatte", "ist", "hat"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "gehen فعل حرکتی است: war gegangen = رفته بود" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Nachdem er aufgewacht {0}, frühstückte er.",
+      "options": ["war", "hatte", "ist", "hat"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "aufwachen فعل تغییر حالت است: war aufgewacht = بیدار شده بود" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "hatte یا war؟ چطور تشخیص دهیم",
+      "content": "📝 **قانون ساده:**\n\n**با war:**\n• فعل‌های حرکت از A به B: gehen, kommen, fahren, fliegen, laufen\n• فعل‌های تغییر حالت: aufstehen, einschlafen, aufwachen, sterben, werden\n• فعل‌های sein و bleiben\n\n**با hatte:**\n• بقیه فعل‌ها! (essen, trinken, lesen, schreiben, machen, arbeiten, ...)\n\n💡 همان قانون Perfekt است!",
+      "examples": [
+        { "de": "Er war gelaufen. (حرکت)", "fa": "او دویده بود." },
+        { "de": "Er hatte gearbeitet. (غیرحرکتی)", "fa": "او کار کرده بود." }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d3",
+      "title": "تعطیلات",
+      "context": "دوستان درباره تعطیلات صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Wohin wart ihr in den Ferien gefahren?", "fa": "تعطیلات کجا رفته بودید؟" } },
+        { "speaker": "Max", "text": { "de": "Wir waren nach Spanien geflogen.", "fa": "ما به اسپانیا پرواز کرده بودیم." } },
+        { "speaker": "Lisa", "text": { "de": "Toll! Wart ihr auch ans Meer gegangen?", "fa": "عالی! به دریا هم رفته بودید؟" } },
+        { "speaker": "Max", "text": { "de": "Ja, jeden Tag! Einmal war ich sogar bis zur Insel geschwommen.", "fa": "بله، هر روز! یک بار حتی تا جزیره شنا کرده بودم." } }
+      ],
+      "questions": [
+        { "question": "ماکس و خانواده‌اش کجا رفته بودند؟", "options": ["ایتالیا", "اسپانیا", "فرانسه"], "correctIndex": 1, "explanation": "ماکس گفت: nach Spanien geflogen" },
+        { "question": "ماکس تا کجا شنا کرده بود؟", "options": ["ساحل", "جزیره", "قایق"], "correctIndex": 1, "explanation": "ماکس گفت: bis zur Insel geschwommen" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["eingeschlafen.", "war", "schnell", "Kind", "Das"],
+      "correctOrder": [4, 3, 1, 2, 0],
+      "correctSentence": { "de": "Das Kind war schnell eingeschlafen.", "fa": "بچه زود خوابیده بود." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo4",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["aufgestanden.", "früh", "war", "Sie"],
+      "correctOrder": [3, 2, 1, 0],
+      "correctSentence": { "de": "Sie war früh aufgestanden.", "fa": "او زود بلند شده بود." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "فعل bleiben در Plusquamperfekt با war می‌آید.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! bleiben با sein می‌آید: war geblieben = مانده بود" }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "ما رسیده بودیم.",
+      "sentenceTemplate": "{0} {1} {2}.",
+      "options": ["Wir", "angekommen", "waren"],
+      "correctAnswers": [0, 2, 1],
+      "correctTranslation": { "de": "Wir waren angekommen.", "fa": "ما رسیده بودیم." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "کدام فعل کمکی برای schwimmen در Plusquamperfekt استفاده می‌شود؟",
+      "options": ["hatte", "war", "ist", "hat"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! schwimmen فعل حرکتی است و با war می‌آید", "incorrect": "schwimmen حرکت از A به B است، پس با war می‌آید" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Der Zug {0} schon abgefahren.",
+      "options": ["war", "hatte", "ist", "hat"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "abfahren فعل حرکتی است: war abgefahren = حرکت کرده بود" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sie {0} den ganzen Tag zu Hause geblieben.",
+      "options": ["war", "hatte", "ist", "hat"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "bleiben با sein می‌آید: war geblieben = مانده بود" }
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Er war nach Berlin gefahren.",
+      "translation": "او به برلین رفته بود."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Sie war früh aufgestanden.",
+      "translation": "او زود بلند شده بود."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Wir waren schon angekommen.",
+      "translation": "ما قبلاً رسیده بودیم."
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "hatte یا war؟",
+      "instruction": "فعل کمکی درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "___ gegangen (رفته بود)", "left": "hatte", "right": "war", "correctSide": "right" },
+        { "prompt": "___ gegessen (خورده بود)", "left": "hatte", "right": "war", "correctSide": "left" },
+        { "prompt": "___ gekommen (آمده بود)", "left": "hatte", "right": "war", "correctSide": "right" },
+        { "prompt": "___ gelesen (خوانده بود)", "left": "hatte", "right": "war", "correctSide": "left" },
+        { "prompt": "___ geflogen (پرواز کرده بود)", "left": "hatte", "right": "war", "correctSide": "right" },
+        { "prompt": "___ geschrieben (نوشته بود)", "left": "hatte", "right": "war", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "war gegangen", "fa": "رفته بودم" },
+        { "de": "war gekommen", "fa": "آمده بودم" },
+        { "de": "war gefahren", "fa": "رفته بودم (با وسیله)" },
+        { "de": "war aufgestanden", "fa": "بلند شده بودم" }
+      ]
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "gegangen", "fa": "رفته", "options": ["آمده", "رفته", "دویده", "پرواز کرده"], "correctIndex": 1 },
+        { "de": "gekommen", "fa": "آمده", "options": ["آمده", "رفته", "مانده", "شده"], "correctIndex": 0 },
+        { "de": "aufgestanden", "fa": "بلند شده", "options": ["خوابیده", "نشسته", "بلند شده", "افتاده"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp1",
+      "title": "آفرین! 🎉",
+      "message": "شما Plusquamperfekt با sein را یاد گرفتید!",
+      "keyPoints": [
+        "فعل‌های حرکتی با war + Partizip II می‌آیند",
+        "فعل‌های تغییر حالت هم با war می‌آیند",
+        "صرف: ich/er/sie war, du warst, wir/sie waren, ihr wart",
+        "فعل‌های حرکتی: gehen, kommen, fahren, fliegen, laufen, schwimmen",
+        "فعل‌های تغییر حالت: aufstehen, einschlafen, aufwachen, werden, sterben"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "gegangen", "fa": "رفته" } },
+        { "word": { "de": "gekommen", "fa": "آمده" } },
+        { "word": { "de": "gefahren", "fa": "رفته با وسیله" } },
+        { "word": { "de": "geflogen", "fa": "پرواز کرده" } },
+        { "word": { "de": "aufgestanden", "fa": "بلند شده" } },
+        { "word": { "de": "eingeschlafen", "fa": "خوابیده" } }
+      ]
+    }
+  ]
+}
