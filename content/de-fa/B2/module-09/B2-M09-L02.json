@@ -1,0 +1,520 @@
+{
+  "id": "B2-M09-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Verbalperiphrasen: Modalitätsverben", "fa": "ترکیبات فعلی: افعال وجهی‌نما" },
+  "description": "یاد بگیرید چگونه از افعال scheinen zu، drohen zu، pflegen zu و versprechen zu برای بیان نگرش گوینده نسبت به عمل (احتمال، عادت، ظاهر) استفاده کنید. این افعال نه فقط معنی واژگانی، بلکه معنی دستوری‌شده (grammatikalisiert) نیز دارند.",
+  "level": "B2",
+  "module": 9,
+  "lessonNumber": 2,
+  "totalSteps": 45,
+  "estimatedMinutes": 40,
+  "vocabulary": [
+    { "de": "scheinen zu", "fa": "به نظر می‌رسد که...", "grammar": { "pos": "verb" } },
+    { "de": "drohen zu", "fa": "در خطر ... بودن / تهدید به ... کردن", "grammar": { "pos": "verb" } },
+    { "de": "pflegen zu", "fa": "عادت داشتن به...", "grammar": { "pos": "verb" } },
+    { "de": "versprechen zu", "fa": "قول دادن / نوید دادن", "grammar": { "pos": "verb" } },
+    { "de": "offenbar", "fa": "ظاهراً، آشکارا", "grammar": { "pos": "adverb" } },
+    { "de": "gewöhnlich", "fa": "معمولاً، عادتاً", "grammar": { "pos": "adverb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "افعال وجهی‌نما (Modalitätsverben) چیست؟",
+      "content": "**Modalitätsverben = افعالی که نگرش گوینده را بیان می‌کنند**\n\nبرخی افعال آلمانی وقتی با «zu + Infinitiv» بیایند، معنی دستوری‌شده پیدا می‌کنند:\n\n| فعل | معنی واژگانی | معنی دستوری‌شده |\n|-----|--------------|------------------|\n| **scheinen** | درخشیدن | به نظر رسیدن |\n| **drohen** | تهدید کردن | در خطر بودن |\n| **pflegen** | مراقبت کردن | عادت داشتن |\n| **versprechen** | قول دادن | نوید دادن |\n\n**ساختار:**\n```\nSubjekt + Modalitätsverb + zu + Infinitiv\n```\n\n**مثال:**\n- Die Sonne **scheint**. = خورشید **می‌درخشد**. (واژگانی)\n- Er **scheint** müde **zu sein**. = او **به نظر می‌رسد** که خسته **باشد**. (دستوری‌شده)\n\n**نکته برای فارسی‌زبانان:**\nاین ساختارها شبیه «به نظر می‌رسد که...» یا «در خطر ... است» در فارسی هستند.",
+      "examples": [
+        { "de": "Er scheint krank zu sein.", "fa": "او به نظر می‌رسد که مریض باشد." },
+        { "de": "Das Projekt droht zu scheitern.", "fa": "پروژه در خطر شکست است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "scheinen zu", "fa": "به نظر می‌رسد که..." },
+      "example": { "text": { "de": "Sie scheint glücklich zu sein.", "fa": "او به نظر می‌رسد که خوشحال باشد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "scheinen",
+      "translation": "به نظر رسیدن",
+      "syllables": ["schei", "nen"],
+      "distractors": ["schi", "nan", "schau"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "drohen zu", "fa": "در خطر ... بودن" },
+      "example": { "text": { "de": "Die Firma droht bankrott zu gehen.", "fa": "شرکت در خطر ورشکستگی است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "drohen",
+      "translation": "تهدید کردن / در خطر بودن",
+      "syllables": ["dro", "hen"],
+      "distractors": ["dru", "han", "drei"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "pflegen zu", "fa": "عادت داشتن به..." },
+      "example": { "text": { "de": "Er pflegt früh aufzustehen.", "fa": "او عادت دارد زود بیدار شود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "pflegen",
+      "translation": "عادت داشتن / مراقبت کردن",
+      "syllables": ["pfle", "gen"],
+      "distractors": ["bla", "gan", "plu"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "scheinen zu: بیان ظاهر و احتمال",
+      "content": "**scheinen zu = به نظر می‌رسد که...**\n\nاین ساختار بیان می‌کند که گوینده از شواهد ظاهری نتیجه‌گیری می‌کند:\n\n**معنی واژگانی:**\n- Die Sonne **scheint**. = خورشید می‌درخشد.\n\n**معنی دستوری‌شده:**\n- Er **scheint** zu **schlafen**. = او **به نظر می‌رسد** که بخوابد.\n- Sie **scheint** beschäftigt **zu sein**. = او **به نظر می‌رسد** که مشغول باشد.\n\n**ساختار:**\n```\nSubjekt + scheint/scheinen + zu + Infinitiv\n```\n\n**مقایسه با قیدها:**\n| ساختار | معادل |\n|--------|-------|\n| Er scheint müde zu sein. | Er ist offenbar/anscheinend müde. |\n| Das scheint zu funktionieren. | Das funktioniert anscheinend. |\n\n**نکته:**\nscheinen zu برای بیان تخمین محتاطانه استفاده می‌شود - گوینده ۱۰۰٪ مطمئن نیست.",
+      "examples": [
+        { "de": "Das Problem scheint gelöst zu sein.", "fa": "مشکل به نظر می‌رسد که حل شده باشد." },
+        { "de": "Er scheint nicht zu verstehen.", "fa": "به نظر می‌رسد که او نمی‌فهمد." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "versprechen zu", "fa": "نوید دادن، قول دادن" },
+      "example": { "text": { "de": "Das Wetter verspricht schön zu werden.", "fa": "هوا نوید می‌دهد که خوب شود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "versprechen",
+      "translation": "قول دادن / نوید دادن",
+      "syllables": ["ver", "spre", "chen"],
+      "distractors": ["vor", "spra", "chan"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "offenbar", "fa": "ظاهراً، آشکارا" },
+      "example": { "text": { "de": "Er ist offenbar krank.", "fa": "او ظاهراً مریض است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "offenbar",
+      "translation": "ظاهراً",
+      "syllables": ["of", "fen", "bar"],
+      "distractors": ["auf", "fan", "ber"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "gewöhnlich", "fa": "معمولاً، عادتاً" },
+      "example": { "text": { "de": "Er steht gewöhnlich früh auf.", "fa": "او معمولاً زود بیدار می‌شود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "gewöhnlich",
+      "translation": "معمولاً",
+      "syllables": ["ge", "wöhn", "lich"],
+      "distractors": ["ga", "wan", "lach"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "drohen zu و versprechen zu: آینده منفی و مثبت",
+      "content": "**drohen zu = در خطر ... بودن (آینده منفی)**\n\n**معنی واژگانی:**\n- Er **droht** mir. = او مرا **تهدید می‌کند**.\n\n**معنی دستوری‌شده:**\n- Das Haus **droht** einzustürzen. = خانه **در خطر فروریختن** است.\n- Der Plan **droht** zu scheitern. = برنامه **در خطر شکست** است.\n\n---\n\n**versprechen zu = نوید دادن (آینده مثبت)**\n\n**معنی واژگانی:**\n- Er **verspricht** es. = او آن را **قول می‌دهد**.\n\n**معنی دستوری‌شده:**\n- Das **verspricht** interessant **zu werden**. = این **نوید می‌دهد** که جالب **شود**.\n- Die Ernte **verspricht** gut **zu sein**. = محصول **نوید می‌دهد** که خوب **باشد**.\n\n**مقایسه:**\n| drohen zu | versprechen zu |\n|-----------|----------------|\n| آینده منفی | آینده مثبت |\n| در خطر بودن | نوید دادن |\n| Das droht zu scheitern. | Das verspricht erfolgreich zu werden. |",
+      "examples": [
+        { "de": "Die Verhandlungen drohen zu scheitern.", "fa": "مذاکرات در خطر شکست هستند." },
+        { "de": "Der Abend verspricht schön zu werden.", "fa": "شب نوید می‌دهد که زیبا شود." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "در جمله «Er scheint müde zu sein» گوینده چه می‌گوید؟",
+      "options": [
+        "مطمئن است که او خسته است",
+        "از ظاهر نتیجه می‌گیرد که احتمالاً خسته است",
+        "او واقعاً می‌درخشد",
+        "او باید خسته باشد"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! scheinen zu بیان می‌کند که گوینده از شواهد ظاهری نتیجه‌گیری می‌کند.", "incorrect": "scheinen zu معنی «به نظر می‌رسد که...» دارد - گوینده از ظاهر نتیجه‌گیری می‌کند." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله معنی «در خطر ... بودن» دارد؟",
+      "options": [
+        "Er droht mir mit Konsequenzen.",
+        "Das Projekt droht zu scheitern.",
+        "Er scheint müde zu sein.",
+        "Sie pflegt früh aufzustehen."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "درست! drohen zu + Infinitiv = در خطر چیزی بودن.", "incorrect": "drohen + zu + Infinitiv معنی «در خطر ... بودن» دارد، نه «تهدید کردن»." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "فعل مناسب را انتخاب کنید",
+      "sentence": "Er {0} nicht zu verstehen, was ich sage.",
+      "options": ["scheint", "droht", "pflegt", "verspricht"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "scheint درست است: او به نظر می‌رسد که نمی‌فهمد - استنتاج از ظاهر." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "فعل مناسب را انتخاب کنید",
+      "sentence": "Die Brücke {0} einzustürzen.",
+      "options": ["scheint", "droht", "pflegt", "verspricht"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "droht درست است: پل در خطر فروریختن است - آینده منفی." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "فعل مناسب را انتخاب کنید",
+      "sentence": "Er {0} jeden Morgen um 6 Uhr aufzustehen.",
+      "options": ["scheint", "droht", "pflegt", "verspricht"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "pflegt درست است: او عادت دارد هر روز ساعت ۶ بیدار شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Das Wetter {0} schön zu werden.",
+      "options": ["scheint", "droht", "pflegt", "verspricht"],
+      "correctAnswers": [3],
+      "feedback": { "explanation": "verspricht درست است: هوا نوید می‌دهد که خوب شود - آینده مثبت." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "گزینه مناسب را انتخاب کنید",
+      "sentence": "Die Situation {0} sich zu verschlechtern.",
+      "options": ["scheint", "droht", "pflegt", "verspricht"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "droht درست است: وضعیت در خطر بدتر شدن است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Sie {0} beschäftigt zu sein.",
+      "options": ["scheint", "droht", "pflegt", "verspricht"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "scheint درست است: او به نظر می‌رسد که مشغول باشد." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "نگرانی درباره یک پروژه",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Zwei Projektmanager besprechen den Status eines Projekts.", "fa": "دو مدیر پروژه وضعیت یک پروژه را بررسی می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Martin", "text": { "de": "Wie läuft das Projekt?", "fa": "پروژه چطور پیش می‌رود؟" }, "mood": "neutral" },
+        { "speaker": "Sarah", "text": { "de": "Nicht gut. Es droht den Zeitplan zu überschreiten.", "fa": "خوب نیست. در خطر است که از برنامه زمانی عقب بیفتد." }, "mood": "sad" },
+        { "speaker": "Martin", "text": { "de": "Das Team scheint überarbeitet zu sein.", "fa": "به نظر می‌رسد که تیم بیش از حد کار کرده است." }, "mood": "confused" },
+        { "speaker": "Sarah", "text": { "de": "Ja, und der Kunde pflegt immer neue Anforderungen zu stellen.", "fa": "بله، و مشتری عادت دارد همیشه خواسته‌های جدید مطرح کند." }, "mood": "angry" },
+        { "speaker": "Martin", "text": { "de": "Aber das neue Tool verspricht uns Zeit zu sparen.", "fa": "اما ابزار جدید نوید می‌دهد که وقتمان را ذخیره کند." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "چرا Sarah گفت «droht zu überschreiten»؟", "options": ["چون پروژه تمام شده", "چون در خطر تاخیر است", "چون مطمئن است تاخیر می‌افتد"], "correctIndex": 1, "explanation": "drohen zu بیان می‌کند که چیزی منفی ممکن است اتفاق بیفتد." },
+        { "question": "Martin چرا از «scheint» استفاده کرد؟", "options": ["چون مطمئن است", "چون از ظاهر نتیجه‌گیری کرد", "چون درخشان است"], "correctIndex": 1, "explanation": "scheinen zu = از شواهد ظاهری نتیجه‌گیری کردن." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["scheint", "zu", "Er", "schlafen"],
+      "correctOrder": [2, 0, 1, 3],
+      "correctSentence": { "de": "Er scheint zu schlafen.", "fa": "به نظر می‌رسد که او خوابیده است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["Projekt", "droht", "scheitern", "Das", "zu"],
+      "correctOrder": [3, 1, 4, 2],
+      "correctSentence": { "de": "Das Projekt droht zu scheitern.", "fa": "پروژه در خطر شکست است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["pflegt", "aufzustehen", "Sie", "früh"],
+      "correctOrder": [2, 0, 3, 1],
+      "correctSentence": { "de": "Sie pflegt früh aufzustehen.", "fa": "او عادت دارد زود بیدار شود." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جمله «Die Sonne scheint» فعل scheinen معنی دستوری‌شده دارد.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! در این جمله scheint معنی واژگانی دارد (خورشید می‌درخشد). معنی دستوری‌شده فقط با zu + Infinitiv می‌آید." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "«drohen zu» برای بیان آینده منفی (خطر) استفاده می‌شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! drohen zu بیان می‌کند که چیز بدی ممکن است اتفاق بیفتد: Das droht zu scheitern." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "«pflegen zu» و «gewöhnlich» معنی مشابهی دارند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! هر دو بیان عادت می‌کنند: Er pflegt früh aufzustehen = Er steht gewöhnlich früh auf." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "پیش‌بینی آب و هوا",
+      "scene": {
+        "location": "park",
+        "description": { "de": "Zwei Freunde planen ein Picknick.", "fa": "دو دوست برای پیک‌نیک برنامه‌ریزی می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Wie wird das Wetter morgen?", "fa": "فردا هوا چطور می‌شود؟" }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Das Wetter verspricht schön zu werden!", "fa": "هوا نوید می‌دهد که خوب شود!" }, "mood": "excited" },
+        { "speaker": "Lisa", "text": { "de": "Bist du sicher? Es scheint aber bewölkt zu sein.", "fa": "مطمئنی؟ اما به نظر می‌رسد که ابری باشد." }, "mood": "confused" },
+        { "speaker": "Tom", "text": { "de": "Das Picknick droht nicht zu scheitern! Der Wetterbericht sagt sonnig.", "fa": "پیک‌نیک در خطر شکست نیست! گزارش هوا آفتابی گفته." }, "mood": "happy" },
+        { "speaker": "Lisa", "text": { "de": "Na gut, ich pflege dir zu vertrauen.", "fa": "باشه، من عادت دارم بهت اعتماد کنم." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "Tom چرا از «verspricht» استفاده کرد؟", "options": ["چون قول داد", "چون هوا نوید می‌دهد که خوب شود", "چون مطمئن است"], "correctIndex": 1, "explanation": "versprechen zu برای آینده مثبت استفاده می‌شود: نوید دادن." },
+        { "question": "Lisa چرا از «pflege zu vertrauen» استفاده کرد؟", "options": ["چون اولین بار است", "چون این عادتش است", "چون مجبور است"], "correctIndex": 1, "explanation": "pflegen zu = عادت داشتن." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "افعال را با معنای دستوری‌شده جفت کنید",
+      "items": [
+        { "id": "i1", "text": "scheinen zu" },
+        { "id": "i2", "text": "drohen zu" },
+        { "id": "i3", "text": "pflegen zu" },
+        { "id": "i4", "text": "versprechen zu" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "به نظر می‌رسد که..." },
+        { "id": "m2", "text": "در خطر ... بودن" },
+        { "id": "m3", "text": "عادت داشتن به..." },
+        { "id": "m4", "text": "نوید دادن" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "او به نظر می‌رسد که خوشحال باشد.",
+      "sentenceTemplate": "Sie {0} glücklich zu {1}.",
+      "options": ["scheint", "droht", "sein", "werden", "pflegt"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Sie scheint glücklich zu sein.", "fa": "او به نظر می‌رسد که خوشحال باشد." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "پروژه در خطر شکست است.",
+      "sentenceTemplate": "Das Projekt {0} zu {1}.",
+      "options": ["droht", "scheint", "scheitern", "gelingen", "verspricht"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Das Projekt droht zu scheitern.", "fa": "پروژه در خطر شکست است." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: تغییرات اقلیمی",
+      "passage": {
+        "de": "Der Klimawandel und seine Folgen\n\nDie Klimakrise scheint immer ernster zu werden. Wissenschaftler warnen: Die Temperaturen drohen bis 2050 um 2 Grad zu steigen. Das verspricht nichts Gutes für die Zukunft.\n\nViele Regionen pflegen im Sommer unter Hitzewellen zu leiden. Diese Situation droht sich zu verschlechtern. Die Gletscher scheinen schneller zu schmelzen als erwartet.\n\nAber es gibt auch Hoffnung. Die erneuerbaren Energien versprechen eine Lösung zu bieten. Viele Länder pflegen jetzt mehr in grüne Technologien zu investieren. Die Situation scheint sich langsam zu verbessern.",
+        "fa": "تغییرات اقلیمی و پیامدهای آن\n\nبحران اقلیمی به نظر می‌رسد که هر روز جدی‌تر شود. دانشمندان هشدار می‌دهند: دماها در خطر هستند که تا ۲۰۵۰ ۲ درجه افزایش یابند. این نوید چیز خوبی برای آینده نمی‌دهد.\n\nبسیاری از مناطق عادت دارند در تابستان از موج‌های گرما رنج ببرند. این وضعیت در خطر بدتر شدن است. یخچال‌های طبیعی به نظر می‌رسد که سریع‌تر از انتظار ذوب شوند.\n\nاما امید هم وجود دارد. انرژی‌های تجدیدپذیر نوید می‌دهند که راه‌حلی ارائه دهند. بسیاری از کشورها عادت دارند الان بیشتر در فناوری‌های سبز سرمایه‌گذاری کنند. وضعیت به نظر می‌رسد که آهسته بهتر شود."
+      },
+      "questions": [
+        { "question": "متن چه نوع آینده‌ای برای افزایش دما پیش‌بینی می‌کند؟", "options": ["مثبت", "منفی (در خطر)", "خنثی"], "correctIndex": 1, "explanation": "از «drohen zu steigen» استفاده شده که نشان‌دهنده آینده منفی است." },
+        { "question": "چرا نویسنده از «versprechen» برای انرژی‌های تجدیدپذیر استفاده کرد؟", "options": ["چون قول داده‌اند", "چون نوید امیدبخشی می‌دهند", "چون درخشان هستند"], "correctIndex": 1, "explanation": "versprechen zu = نوید دادن - آینده مثبت." },
+        { "question": "کدام ساختار بیان عادت می‌کند؟", "options": ["scheinen zu", "drohen zu", "pflegen zu"], "correctIndex": 2, "explanation": "pflegen zu = عادت داشتن به چیزی." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der neue Mitarbeiter", "fa": "کارمند جدید" },
+      "characters": ["Chef", "Anna"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Der Chef spricht mit Anna über den neuen Mitarbeiter.", "fa": "رئیس با آنا درباره کارمند جدید صحبت می‌کند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Chef",
+          "text": { "de": "Was denkst du über Max?", "fa": "درباره ماکس چه فکر می‌کنی؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Er scheint sehr kompetent zu sein.", "fa": "او به نظر می‌رسد که خیلی کارآمد باشد." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "چرا Anna از «scheint» استفاده کرد؟",
+          "options": ["چون مطمئن است", "چون از برداشتش می‌گوید", "چون ماکس می‌درخشد"],
+          "correctIndex": 1,
+          "explanation": "scheinen zu = از شواهد ظاهری نتیجه‌گیری کردن."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Chef",
+          "text": { "de": "Aber er droht oft zu spät zu kommen.", "fa": "اما او اغلب در خطر دیر آمدن است." },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Das stimmt. Er pflegt immer den letzten Bus zu nehmen.", "fa": "درسته. او عادت دارد همیشه آخرین اتوبوس را بگیرد." },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "معنی «pflegt zu nehmen» چیست؟",
+          "options": ["قول می‌دهد بگیرد", "در خطر گرفتن است", "عادت دارد بگیرد"],
+          "correctIndex": 2,
+          "explanation": "pflegen zu = عادت داشتن."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Chef",
+          "text": { "de": "Aber seine Arbeit verspricht hervorragend zu werden!", "fa": "اما کارش نوید می‌دهد که عالی شود!" },
+          "mood": "excited"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Anna lächelt. Manchmal ist Pünktlichkeit nicht alles.", "fa": "آنا لبخند می‌زند. گاهی وقت‌شناسی همه چیز نیست." }
+        },
+        {
+          "type": "question",
+          "question": "رئیس از کدام ساختار برای بیان آینده مثبت استفاده کرد؟",
+          "options": ["scheinen zu", "drohen zu", "versprechen zu"],
+          "correctIndex": 2,
+          "explanation": "versprechen zu = نوید دادن - آینده مثبت."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: افعال وجهی‌نما",
+      "instruction": "معنی دستوری‌شده کدام است؟",
+      "questions": [
+        { "prompt": "scheinen zu", "left": "به نظر رسیدن", "right": "درخشیدن", "correctSide": "left" },
+        { "prompt": "drohen zu", "left": "تهدید کردن", "right": "در خطر بودن", "correctSide": "right" },
+        { "prompt": "pflegen zu", "left": "عادت داشتن", "right": "مراقبت کردن", "correctSide": "left" },
+        { "prompt": "versprechen zu", "left": "قول دادن (به کسی)", "right": "نوید دادن", "correctSide": "right" },
+        { "prompt": "Die Sonne scheint.", "left": "واژگانی", "right": "دستوری‌شده", "correctSide": "left" },
+        { "prompt": "Er scheint zu schlafen.", "left": "واژگانی", "right": "دستوری‌شده", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Er scheint müde zu sein.",
+      "translation": "او به نظر می‌رسد که خسته باشد."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Das Projekt droht zu scheitern.",
+      "translation": "پروژه در خطر شکست است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Sie pflegt früh aufzustehen.",
+      "translation": "او عادت دارد زود بیدار شود."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: افعال وجهی‌نما",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "scheinen zu = ?", "options": ["به نظر رسیدن", "تهدید کردن"], "correctAnswerIndex": 0 },
+        { "question": "drohen zu = ?", "options": ["عادت داشتن", "در خطر بودن"], "correctAnswerIndex": 1 },
+        { "question": "pflegen zu = ?", "options": ["عادت داشتن", "نوید دادن"], "correctAnswerIndex": 0 },
+        { "question": "versprechen zu = ?", "options": ["در خطر بودن", "نوید دادن"], "correctAnswerIndex": 1 },
+        { "question": "آینده منفی = ?", "options": ["drohen zu", "versprechen zu"], "correctAnswerIndex": 0 },
+        { "question": "آینده مثبت = ?", "options": ["drohen zu", "versprechen zu"], "correctAnswerIndex": 1 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: افعال و معانی",
+      "pairs": [
+        { "de": "scheinen zu", "fa": "به نظر رسیدن" },
+        { "de": "drohen zu", "fa": "در خطر بودن" },
+        { "de": "pflegen zu", "fa": "عادت داشتن" },
+        { "de": "versprechen zu", "fa": "نوید دادن" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی افعال وجهی‌نما",
+      "instruction": "افعال مربوط به این درس را پیدا کنید",
+      "targetWords": ["SCHEINEN", "DROHEN", "PFLEGEN", "VERSPRECHEN", "OFFENBAR"],
+      "gridSize": { "rows": 10, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی دستوری‌شده را انتخاب کنید",
+      "words": [
+        { "de": "scheinen zu", "fa": "به نظر رسیدن", "options": ["درخشیدن", "به نظر رسیدن", "نوید دادن", "تهدید کردن"], "correctIndex": 1 },
+        { "de": "drohen zu", "fa": "در خطر بودن", "options": ["به نظر رسیدن", "عادت داشتن", "در خطر بودن", "قول دادن"], "correctIndex": 2 },
+        { "de": "pflegen zu", "fa": "عادت داشتن", "options": ["مراقبت کردن", "عادت داشتن", "درخشیدن", "نوید دادن"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما افعال وجهی‌نما (Modalitätsverben) را یاد گرفتید!",
+      "keyPoints": [
+        "scheinen zu = به نظر می‌رسد که... (از شواهد ظاهری نتیجه‌گیری)",
+        "drohen zu = در خطر ... بودن (آینده منفی)",
+        "pflegen zu = عادت داشتن به... (مانند gewöhnlich)",
+        "versprechen zu = نوید دادن (آینده مثبت)",
+        "این افعال دو معنی دارند: واژگانی و دستوری‌شده",
+        "معنی دستوری‌شده فقط با «zu + Infinitiv» می‌آید"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "scheinen zu", "fa": "به نظر می‌رسد که..." } },
+        { "word": { "de": "drohen zu", "fa": "در خطر ... بودن" } },
+        { "word": { "de": "pflegen zu", "fa": "عادت داشتن به..." } },
+        { "word": { "de": "versprechen zu", "fa": "نوید دادن" } },
+        { "word": { "de": "offenbar", "fa": "ظاهراً، آشکارا" } },
+        { "word": { "de": "gewöhnlich", "fa": "معمولاً، عادتاً" } }
+      ]
+    }
+  ]
+}

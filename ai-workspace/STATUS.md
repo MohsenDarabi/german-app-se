@@ -8,7 +8,7 @@
 
 **Create B1 lessons - lesson by lesson, wait for user test after each**
 
-Current: `B2-M08` (Textverknüpfung) - **MODULE COMPLETE - READY FOR USER TEST**
+Current: `B2-M09` (Verbalperiphrasen) - **MODULE COMPLETE - READY FOR USER TEST**
 
 ---
 
@@ -27,7 +27,7 @@ Current: `B2-M08` (Textverknüpfung) - **MODULE COMPLETE - READY FOR USER TEST**
 | A1 | 14 | 56+ | Complete |
 | A2 | 18 | 72 | **Complete** ✅ |
 | B1 | 20 | 80 | **Complete** ✅ |
-| B2 | 8 | 32 | Module 8 complete |
+| B2 | 9 | 36 | Module 9 complete |
 
 ### A2 Completion (2026-02-05)
 
@@ -315,8 +315,9 @@ Current: `B2-M08` (Textverknüpfung) - **MODULE COMPLETE - READY FOR USER TEST**
 | M06 | Komplexe Attribute | 4/4 | ✅ Complete |
 | M07 | Subjektive Modalverben | 4/4 | ✅ Complete |
 | M08 | Textverknüpfung | 4/4 | ✅ Complete |
+| M09 | Verbalperiphrasen | 4/4 | ✅ Complete |
 
-**Total B2: 32 lessons**
+**Total B2: 36 lessons**
 
 ---
 
@@ -405,6 +406,17 @@ Current: `B2-M08` (Textverknüpfung) - **MODULE COMPLETE - READY FOR USER TEST**
 | B2-M08-L02 | Pronominaladverbien (dafür, dagegen, damit) | ✅ Complete |
 | B2-M08-L03 | Verweisende Ausdrücke (Ersteres/Letzteres, wie erwähnt) | ✅ Complete |
 | B2-M08-L04 | Zusammenfassung | ✅ Complete |
+
+---
+
+## B2 Module 9: Verbalperiphrasen (Verbal Periphrases)
+
+| Lesson | Title | Status |
+|--------|-------|--------|
+| B2-M09-L01 | Aspektuelle Verben (anfangen zu, aufhören zu, fortfahren zu) | ✅ Complete |
+| B2-M09-L02 | Modalitätsverben (scheinen zu, drohen zu, pflegen zu) | ✅ Complete |
+| B2-M09-L03 | Zustandsausdrücke (im Begriff sein, dabei sein, imstande sein) | ✅ Complete |
+| B2-M09-L04 | Zusammenfassung | ✅ Complete |
 
 ---
 

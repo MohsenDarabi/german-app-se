@@ -1907,6 +1907,37 @@ const DE_FA_B2_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/B2/B2-M08-L04"
       }
     ]
+  },
+  {
+    id: "module-09",
+    title: "بخش ۹: Verbalperiphrasen",
+    level: "B2",
+    lessons: [
+      {
+        id: "B2-M09-L01",
+        title: "Aspektuelle Verben - فعل‌های جنبه‌ای",
+        description: "یاد بگیرید فعل‌های شروع، ادامه و پایان: anfangen zu، aufhören zu، fortfahren zu.",
+        path: "/learn/de-fa/B2/B2-M09-L01"
+      },
+      {
+        id: "B2-M09-L02",
+        title: "Modalitätsverben - فعل‌های وجهی",
+        description: "یاد بگیرید فعل‌های وجهی: scheinen zu، drohen zu، pflegen zu، versprechen zu.",
+        path: "/learn/de-fa/B2/B2-M09-L02"
+      },
+      {
+        id: "B2-M09-L03",
+        title: "Zustandsausdrücke - عبارات حالت",
+        description: "یاد بگیرید عبارات حالت: im Begriff sein، dabei sein، imstande sein.",
+        path: "/learn/de-fa/B2/B2-M09-L03"
+      },
+      {
+        id: "B2-M09-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل ساختارهای فعلی پیچیده: جنبه‌ای، وجهی و حالت.",
+        path: "/learn/de-fa/B2/B2-M09-L04"
+      }
+    ]
   }
 ];
 

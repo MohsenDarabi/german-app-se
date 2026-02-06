@@ -1,0 +1,520 @@
+{
+  "id": "B2-M09-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Verbalperiphrasen: Aspektuelle Verben", "fa": "ساختارهای فعلی: افعال نمایانگر وجه" },
+  "description": "یاد بگیرید چگونه از افعال نمایانگر وجه آلمانی (anfangen zu، aufhören zu، fortfahren zu، weitermachen mit) برای بیان شروع، ادامه و پایان یک عمل استفاده کنید. این مفهوم در فارسی هم وجود دارد اما به شکل متفاوتی بیان می‌شود.",
+  "level": "B2",
+  "module": 9,
+  "lessonNumber": 1,
+  "totalSteps": 45,
+  "estimatedMinutes": 40,
+  "vocabulary": [
+    { "de": "anfangen zu", "fa": "شروع کردن به", "grammar": { "pos": "verb" } },
+    { "de": "beginnen zu", "fa": "آغاز کردن به", "grammar": { "pos": "verb" } },
+    { "de": "aufhören zu", "fa": "دست برداشتن از، متوقف کردن", "grammar": { "pos": "verb" } },
+    { "de": "fortfahren zu", "fa": "ادامه دادن به", "grammar": { "pos": "verb" } },
+    { "de": "weitermachen mit", "fa": "ادامه دادن با", "grammar": { "pos": "verb" } },
+    { "de": "der Aspekt", "fa": "وجه، جنبه", "grammar": { "pos": "noun", "gender": "masculine" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "افعال نمایانگر وجه (Aspektuelle Verben)",
+      "content": "**Verbalperiphrasen: Aspektuelle Verben**\n\nدر آلمانی، برای بیان مراحل مختلف یک عمل (شروع، ادامه، پایان) از افعال خاصی استفاده می‌شود که با «zu + Infinitiv» یا «mit + Nomen» ترکیب می‌شوند.\n\n**چهار فعل اصلی:**\n\n| فعل آلمانی | معنی فارسی | ساختار |\n|------------|------------|--------|\n| **anfangen zu** | شروع کردن به | + Infinitiv |\n| **beginnen zu** | آغاز کردن به | + Infinitiv |\n| **aufhören zu** | دست برداشتن از | + Infinitiv |\n| **fortfahren zu** | ادامه دادن به | + Infinitiv |\n| **weitermachen mit** | ادامه دادن با | + Nomen/Gerund |\n\n**نکته برای فارسی‌زبانان:**\nدر فارسی هم این مفاهیم وجود دارد: «شروع کردن»، «ادامه دادن»، «دست برداشتن». تفاوت اصلی این است که در آلمانی فعل دوم به شکل مصدر با «zu» می‌آید، در حالی که در فارسی معمولاً از «به» یا ساختارهای دیگر استفاده می‌شود.",
+      "examples": [
+        { "de": "Ich fange an zu lernen.", "fa": "من شروع می‌کنم به یادگیری." },
+        { "de": "Er hört auf zu rauchen.", "fa": "او دست از سیگار کشیدن برمی‌دارد." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "anfangen zu", "fa": "شروع کردن به" },
+      "example": { "text": { "de": "Wir fangen an, das Projekt zu planen.", "fa": "ما شروع می‌کنیم به برنامه‌ریزی پروژه." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "anfangen",
+      "translation": "شروع کردن",
+      "syllables": ["an", "fan", "gen"],
+      "distractors": ["auf", "fen", "gon", "un"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "beginnen zu", "fa": "آغاز کردن به" },
+      "example": { "text": { "de": "Sie beginnt zu verstehen.", "fa": "او شروع می‌کند به درک کردن." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "beginnen",
+      "translation": "آغاز کردن",
+      "syllables": ["be", "gin", "nen"],
+      "distractors": ["ba", "gun", "non", "nin"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "aufhören zu", "fa": "دست برداشتن از، متوقف کردن" },
+      "example": { "text": { "de": "Hör auf zu schreien!", "fa": "دست از داد زدن بردار!" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "aufhören",
+      "translation": "دست برداشتن، متوقف کردن",
+      "syllables": ["auf", "hö", "ren"],
+      "distractors": ["ab", "hu", "ran", "ron"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "anfangen/beginnen در مقابل aufhören",
+      "content": "**شروع در مقابل پایان**\n\n**anfangen zu / beginnen zu** = شروع کردن به\n> Ich **fange an**, Deutsch **zu lernen**.\n> من شروع می‌کنم به یادگیری آلمانی.\n\n**aufhören zu** = دست برداشتن از، متوقف کردن\n> Ich **höre auf** zu **rauchen**.\n> من دست از سیگار کشیدن برمی‌دارم.\n\n**ساختار جمله:**\n\n| جمله اصلی | ساختار |\n|-----------|--------|\n| فعل کمکی در جایگاه دوم | پیشوند جدا شده در انتها |\n| Ich fange ... an | ... zu lernen |\n| Er hört ... auf | ... zu arbeiten |\n\n**نکته مهم:**\nدر جملات فرعی، تمام اجزای فعل به انتها می‌روند:\n> ..., weil ich **anfange**, Deutsch **zu lernen**.\n> ..., چون من شروع می‌کنم به یادگیری آلمانی.",
+      "examples": [
+        { "de": "Sie fängt an zu arbeiten.", "fa": "او شروع می‌کند به کار کردن." },
+        { "de": "Wir hören auf zu streiten.", "fa": "ما دست از دعوا کردن برمی‌داریم." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله به معنای «او شروع کرد به خواندن» است؟",
+      "options": [
+        "Er hört auf zu lesen.",
+        "Er fängt an zu lesen.",
+        "Er fährt fort zu lesen.",
+        "Er macht weiter mit Lesen."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! «anfangen zu» به معنای شروع کردن به است.", "incorrect": "«anfangen zu» به معنای شروع کردن به است. aufhören یعنی متوقف کردن." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "در جمله «Ich höre auf zu rauchen» فعل «aufhören» چه معنایی دارد؟",
+      "options": [
+        "شروع کردن",
+        "ادامه دادن",
+        "دست برداشتن، متوقف کردن",
+        "یادگیری"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "درست! «aufhören» به معنای دست برداشتن یا متوقف کردن است.", "incorrect": "«aufhören» به معنای دست برداشتن یا متوقف کردن است، نه شروع کردن یا ادامه دادن." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "fortfahren zu", "fa": "ادامه دادن به" },
+      "example": { "text": { "de": "Er fährt fort, seine Geschichte zu erzählen.", "fa": "او ادامه می‌دهد به تعریف داستانش." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "fortfahren",
+      "translation": "ادامه دادن",
+      "syllables": ["fort", "fah", "ren"],
+      "distractors": ["furt", "feh", "ran", "far"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "weitermachen mit", "fa": "ادامه دادن با" },
+      "example": { "text": { "de": "Wir machen mit dem Projekt weiter.", "fa": "ما با پروژه ادامه می‌دهیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "weitermachen",
+      "translation": "ادامه دادن",
+      "syllables": ["wei", "ter", "ma", "chen"],
+      "distractors": ["wai", "tar", "mo", "kan"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "der Aspekt", "fa": "وجه، جنبه" },
+      "example": { "text": { "de": "Der aspektuelle Charakter des Verbs ist wichtig.", "fa": "ویژگی وجهی فعل مهم است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Aspekt",
+      "translation": "وجه، جنبه",
+      "syllables": ["As", "pekt"],
+      "distractors": ["Es", "pakt", "pukt", "Os"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "fortfahren zu در مقابل weitermachen mit",
+      "content": "**دو روش برای بیان ادامه دادن**\n\n**fortfahren zu + Infinitiv** (رسمی‌تر)\n> Er **fährt fort**, das Buch **zu lesen**.\n> او ادامه می‌دهد به خواندن کتاب.\n\n**weitermachen mit + Nomen** (محاوره‌ای‌تر)\n> Er **macht** mit dem Lesen **weiter**.\n> او با خواندن ادامه می‌دهد.\n\n**تفاوت‌های کلیدی:**\n\n| ویژگی | fortfahren zu | weitermachen mit |\n|-------|---------------|------------------|\n| سبک | رسمی، مکتوب | محاوره‌ای |\n| ساختار | + zu + Infinitiv | + mit + Nomen |\n| کاربرد | گزارش، سخنرانی | گفتگوی روزمره |\n\n**نکته برای فارسی‌زبانان:**\nدر فارسی هم این تفاوت سبک وجود دارد: «ادامه می‌دهد به...» رسمی‌تر است و «با... ادامه می‌دهد» محاوره‌ای‌تر.",
+      "examples": [
+        { "de": "Der Professor fährt fort, seinen Vortrag zu halten.", "fa": "استاد ادامه می‌دهد به ارائه سخنرانی‌اش." },
+        { "de": "Lass uns mit der Arbeit weitermachen!", "fa": "بیا با کار ادامه بدهیم!" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "فعل مناسب را انتخاب کنید",
+      "sentence": "Ich {0} an, Deutsch zu lernen.",
+      "options": ["fange", "höre", "fahre", "mache"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "fange an درست است. anfangen zu به معنای شروع کردن به است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Er {0} auf zu rauchen. (او دست از سیگار کشیدن برداشت)",
+      "options": ["hört", "fängt", "fährt", "macht"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "hört auf درست است. aufhören zu به معنای دست برداشتن از است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "فعل صحیح را انتخاب کنید",
+      "sentence": "Sie {0} fort, ihre Arbeit zu erledigen.",
+      "options": ["fährt", "fängt", "hört", "macht"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "fährt fort درست است. fortfahren zu به معنای ادامه دادن به است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را با anfangen zu مرتب کنید",
+      "words": ["an", "zu", "Ich", "fange", "lernen"],
+      "correctOrder": [2, 3, 0, 1, 4],
+      "correctSentence": { "de": "Ich fange an zu lernen.", "fa": "من شروع می‌کنم به یادگیری." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["auf", "Er", "rauchen", "hört", "zu"],
+      "correctOrder": [1, 3, 0, 4, 2],
+      "correctSentence": { "de": "Er hört auf zu rauchen.", "fa": "او دست از سیگار کشیدن برمی‌دارد." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله را با weitermachen مرتب کنید",
+      "words": ["weiter", "Arbeit", "mit", "machen", "Wir", "der"],
+      "correctOrder": [4, 3, 2, 5, 1, 0],
+      "correctSentence": { "de": "Wir machen mit der Arbeit weiter.", "fa": "ما با کار ادامه می‌دهیم." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "فعل anfangen و beginnen هر دو به معنای شروع کردن هستند و به شکل مشابه استفاده می‌شوند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! anfangen zu و beginnen zu هر دو به معنای شروع کردن به هستند و ساختار مشابهی دارند." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "فعل aufhören به معنای ادامه دادن است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! aufhören به معنای دست برداشتن/متوقف کردن است، نه ادامه دادن. fortfahren و weitermachen به معنای ادامه دادن هستند." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "weitermachen mit با اسم (Nomen) استفاده می‌شود، نه با مصدر (Infinitiv).",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! weitermachen mit + Nomen استفاده می‌شود، مثل: mit der Arbeit weitermachen. در مقابل، fortfahren zu + Infinitiv استفاده می‌شود." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در دفتر کار",
+      "scene": {
+        "location": "office",
+        "description": { "de": "In einem Büro sprechen zwei Kollegen.", "fa": "در یک دفتر دو همکار صحبت می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Markus", "text": { "de": "Ich fange heute an, an dem neuen Projekt zu arbeiten.", "fa": "من امروز شروع می‌کنم به کار روی پروژه جدید." }, "mood": "excited" },
+        { "speaker": "Julia", "text": { "de": "Super! Ich habe gestern aufgehört, den Bericht zu schreiben.", "fa": "عالی! من دیروز دست از نوشتن گزارش برداشتم." }, "mood": "neutral" },
+        { "speaker": "Markus", "text": { "de": "Warum? Ist er fertig?", "fa": "چرا؟ تمام شد؟" }, "mood": "confused" },
+        { "speaker": "Julia", "text": { "de": "Nein, aber ich fahre heute fort, ihn zu schreiben.", "fa": "نه، اما امروز ادامه می‌دهم به نوشتنش." }, "mood": "neutral" },
+        { "speaker": "Markus", "text": { "de": "Gut. Lass uns mit der Arbeit weitermachen!", "fa": "خوب. بیا با کار ادامه بدهیم!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "مارکوس امروز چه کاری شروع می‌کند؟", "options": ["نوشتن گزارش", "کار روی پروژه جدید", "خواندن ایمیل"], "correctIndex": 1, "explanation": "مارکوس گفت: Ich fange an, an dem neuen Projekt zu arbeiten." },
+        { "question": "یولیا چرا دیروز دست از نوشتن گزارش برداشت؟", "options": ["گزارش تمام شد", "گزارش تمام نشده بود", "وقت نداشت"], "correctIndex": 1, "explanation": "یولیا گفت گزارش تمام نشده و امروز ادامه می‌دهد." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "فعل مناسب را انتخاب کنید",
+      "sentence": "Wir {0} weiter mit dem Spiel.",
+      "options": ["machen", "fangen", "hören", "fahren"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "machen weiter درست است. weitermachen mit به معنای ادامه دادن با است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Sie beginnt, das Problem {0} verstehen. (او شروع می‌کند به درک مشکل)",
+      "options": ["zu", "mit", "für", "an"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "zu درست است. beginnen zu + Infinitiv ساختار صحیح است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "حرف اضافه مناسب را انتخاب کنید",
+      "sentence": "Er macht {0} dem Projekt weiter.",
+      "options": ["mit", "zu", "an", "auf"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "mit درست است. weitermachen mit + Nomen ساختار صحیح است." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در کلاس زبان",
+      "scene": {
+        "location": "language classroom",
+        "description": { "de": "In einer Sprachschule.", "fa": "در یک مدرسه زبان." }
+      },
+      "lines": [
+        { "speaker": "Lehrer", "text": { "de": "Wann haben Sie angefangen, Deutsch zu lernen?", "fa": "شما کی شروع کردید به یادگیری آلمانی؟" }, "mood": "neutral" },
+        { "speaker": "Schüler", "text": { "de": "Ich habe vor einem Jahr begonnen.", "fa": "من یک سال پیش شروع کردم." }, "mood": "neutral" },
+        { "speaker": "Lehrer", "text": { "de": "Und haben Sie jemals aufgehört zu üben?", "fa": "و آیا هیچوقت دست از تمرین کردن برداشتید؟" }, "mood": "confused" },
+        { "speaker": "Schüler", "text": { "de": "Nein, ich fahre jeden Tag fort zu üben!", "fa": "نه، من هر روز ادامه می‌دهم به تمرین کردن!" }, "mood": "happy" },
+        { "speaker": "Lehrer", "text": { "de": "Ausgezeichnet! Machen Sie so weiter!", "fa": "عالی! همینطور ادامه بدهید!" }, "mood": "excited" }
+      ],
+      "questions": [
+        { "question": "دانش‌آموز کی شروع کرد به یادگیری آلمانی؟", "options": ["دو سال پیش", "یک سال پیش", "شش ماه پیش"], "correctIndex": 1, "explanation": "دانش‌آموز گفت: Ich habe vor einem Jahr begonnen." },
+        { "question": "آیا دانش‌آموز دست از تمرین برداشت؟", "options": ["بله", "نه، هر روز ادامه می‌دهد", "گاهی اوقات"], "correctIndex": 1, "explanation": "دانش‌آموز گفت: Ich fahre jeden Tag fort zu üben!" }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "افعال نمایانگر وجه را با معانی‌شان جفت کنید",
+      "items": [
+        { "id": "i1", "text": "anfangen zu" },
+        { "id": "i2", "text": "aufhören zu" },
+        { "id": "i3", "text": "fortfahren zu" },
+        { "id": "i4", "text": "weitermachen mit" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "شروع کردن به" },
+        { "id": "m2", "text": "دست برداشتن از" },
+        { "id": "m3", "text": "ادامه دادن به (رسمی)" },
+        { "id": "m4", "text": "ادامه دادن با (محاوره‌ای)" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "من شروع می‌کنم به یادگیری آلمانی.",
+      "sentenceTemplate": "Ich {0} an, Deutsch zu {1}.",
+      "options": ["fange", "höre", "lernen", "sprechen", "fahre", "üben"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Ich fange an, Deutsch zu lernen.", "fa": "من شروع می‌کنم به یادگیری آلمانی." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "او دست از سیگار کشیدن برداشت.",
+      "sentenceTemplate": "Er {0} auf zu {1}.",
+      "options": ["hört", "fängt", "rauchen", "arbeiten", "fährt", "trinken"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Er hört auf zu rauchen.", "fa": "او دست از سیگار کشیدن برداشت." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: تغییر عادات",
+      "passage": {
+        "de": "Maria hat vor drei Monaten angefangen, gesünder zu leben. Sie hat aufgehört, Fast Food zu essen und hat begonnen, jeden Tag Sport zu machen.\n\nAm Anfang war es schwer, aber sie ist fortgefahren, ihre neuen Gewohnheiten zu pflegen. Jetzt macht sie mit ihrem gesunden Lebensstil weiter und fühlt sich viel besser.\n\nIhr Arzt sagt, sie soll so weitermachen und nicht aufhören, sich um ihre Gesundheit zu kümmern.",
+        "fa": "ماریا سه ماه پیش شروع کرد به زندگی سالم‌تر. او دست از خوردن فست فود برداشت و شروع کرد به ورزش کردن هر روز.\n\nاول سخت بود، اما او ادامه داد به مراقبت از عادات جدیدش. الان با سبک زندگی سالمش ادامه می‌دهد و احساس خیلی بهتری دارد.\n\nدکترش می‌گوید باید همینطور ادامه بدهد و دست از مراقبت از سلامتش برندارد."
+      },
+      "questions": [
+        { "question": "ماریا کی شروع کرد به زندگی سالم‌تر؟", "options": ["یک ماه پیش", "سه ماه پیش", "یک سال پیش"], "correctIndex": 1, "explanation": "در متن گفته شده: vor drei Monaten angefangen (سه ماه پیش شروع کرد)." },
+        { "question": "ماریا دست از چه چیزی برداشت؟", "options": ["ورزش کردن", "خوردن فست فود", "کار کردن"], "correctIndex": 1, "explanation": "ماریا aufgehört, Fast Food zu essen - دست از خوردن فست فود برداشت." },
+        { "question": "دکتر به ماریا چه توصیه‌ای کرد؟", "options": ["دست از ورزش بردارد", "همینطور ادامه بدهد", "بیشتر استراحت کند"], "correctIndex": 1, "explanation": "دکتر گفت: sie soll so weitermachen - باید همینطور ادامه بدهد." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die neue Gewohnheit", "fa": "عادت جدید" },
+      "characters": ["Thomas", "Lisa"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Thomas sitzt im Café und schreibt in sein Tagebuch.", "fa": "توماس در کافه نشسته و در دفتر خاطراتش می‌نویسد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Hey Thomas! Was machst du?", "fa": "سلام توماس! چه کار می‌کنی؟" },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Thomas",
+          "text": { "de": "Ich habe angefangen, Tagebuch zu schreiben.", "fa": "من شروع کردم به نوشتن دفتر خاطرات." },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "توماس چه کار جدیدی شروع کرده؟",
+          "options": ["نقاشی کردن", "نوشتن دفتر خاطرات", "خواندن کتاب"],
+          "correctIndex": 1,
+          "explanation": "توماس گفت: Ich habe angefangen, Tagebuch zu schreiben."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Toll! Wann hast du damit angefangen?", "fa": "عالی! کی شروع کردی؟" },
+          "mood": "excited"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Thomas",
+          "text": { "de": "Vor einer Woche. Und ich höre nicht auf! Ich fahre jeden Tag fort zu schreiben.", "fa": "یک هفته پیش. و دست برنمی‌دارم! هر روز ادامه می‌دهم به نوشتن." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "توماس چند وقت است که دفتر خاطرات می‌نویسد؟",
+          "options": ["یک ماه", "یک هفته", "یک روز"],
+          "correctIndex": 1,
+          "explanation": "توماس گفت: Vor einer Woche - یک هفته پیش."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Super! Mach weiter so!", "fa": "عالی! همینطور ادامه بده!" },
+          "mood": "excited"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Thomas lächelt und macht mit dem Schreiben weiter.", "fa": "توماس لبخند می‌زند و با نوشتن ادامه می‌دهد." }
+        },
+        {
+          "type": "question",
+          "question": "در پایان داستان توماس چه کرد؟",
+          "options": ["دست از نوشتن برداشت", "با نوشتن ادامه داد", "از کافه رفت"],
+          "correctIndex": 1,
+          "explanation": "در متن گفته شده: macht mit dem Schreiben weiter - با نوشتن ادامه می‌دهد."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: افعال نمایانگر وجه",
+      "instruction": "معنی درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "anfangen zu", "left": "شروع کردن", "right": "متوقف کردن", "correctSide": "left" },
+        { "prompt": "aufhören zu", "left": "ادامه دادن", "right": "دست برداشتن", "correctSide": "right" },
+        { "prompt": "fortfahren zu", "left": "ادامه دادن", "right": "شروع کردن", "correctSide": "left" },
+        { "prompt": "weitermachen mit", "left": "متوقف کردن", "right": "ادامه دادن", "correctSide": "right" },
+        { "prompt": "beginnen zu", "left": "آغاز کردن", "right": "پایان دادن", "correctSide": "left" },
+        { "prompt": "Ich fange an zu lernen.", "left": "شروع می‌کنم به یادگیری", "right": "دست از یادگیری برمی‌دارم", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich fange an zu lernen.",
+      "translation": "من شروع می‌کنم به یادگیری."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Er hört auf zu rauchen.",
+      "translation": "او دست از سیگار کشیدن برمی‌دارد."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Wir machen mit der Arbeit weiter.",
+      "translation": "ما با کار ادامه می‌دهیم."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: افعال نمایانگر وجه",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "anfangen zu یعنی؟", "options": ["شروع کردن به", "متوقف کردن"], "correctAnswerIndex": 0 },
+        { "question": "aufhören zu یعنی؟", "options": ["ادامه دادن", "دست برداشتن از"], "correctAnswerIndex": 1 },
+        { "question": "fortfahren zu یعنی؟", "options": ["ادامه دادن به", "شروع کردن"], "correctAnswerIndex": 0 },
+        { "question": "weitermachen با چه حرف اضافه‌ای می‌آید؟", "options": ["zu", "mit"], "correctAnswerIndex": 1 },
+        { "question": "کدام رسمی‌تر است؟", "options": ["fortfahren zu", "weitermachen mit"], "correctAnswerIndex": 0 },
+        { "question": "beginnen zu به چه معناست؟", "options": ["پایان دادن", "آغاز کردن"], "correctAnswerIndex": 1 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: افعال نمایانگر وجه",
+      "pairs": [
+        { "de": "anfangen zu", "fa": "شروع کردن به" },
+        { "de": "aufhören zu", "fa": "دست برداشتن از" },
+        { "de": "fortfahren zu", "fa": "ادامه دادن به" },
+        { "de": "weitermachen mit", "fa": "ادامه دادن با" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی افعال نمایانگر وجه",
+      "instruction": "افعال آلمانی مربوط به وجه را پیدا کنید",
+      "targetWords": ["anfangen", "beginnen", "aufhören", "fortfahren", "weitermachen"],
+      "gridSize": { "rows": 10, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "anfangen zu", "fa": "شروع کردن به", "options": ["متوقف کردن", "شروع کردن به", "ادامه دادن", "پایان دادن"], "correctIndex": 1 },
+        { "de": "aufhören zu", "fa": "دست برداشتن از", "options": ["شروع کردن", "ادامه دادن", "دست برداشتن از", "یادگیری"], "correctIndex": 2 },
+        { "de": "fortfahren zu", "fa": "ادامه دادن به", "options": ["رفتن", "ادامه دادن به", "شروع کردن", "متوقف کردن"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما افعال نمایانگر وجه آلمانی را یاد گرفتید!",
+      "keyPoints": [
+        "anfangen zu / beginnen zu - شروع کردن به، آغاز کردن به (+ Infinitiv)",
+        "aufhören zu - دست برداشتن از، متوقف کردن (+ Infinitiv)",
+        "fortfahren zu - ادامه دادن به (رسمی، + Infinitiv)",
+        "weitermachen mit - ادامه دادن با (محاوره‌ای، + Nomen)",
+        "در جملات اصلی پیشوند جداشدنی به انتها می‌رود: Ich fange an zu lernen",
+        "این افعال برای بیان مراحل مختلف یک عمل (شروع، ادامه، پایان) استفاده می‌شوند"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "anfangen zu", "fa": "شروع کردن به" } },
+        { "word": { "de": "beginnen zu", "fa": "آغاز کردن به" } },
+        { "word": { "de": "aufhören zu", "fa": "دست برداشتن از، متوقف کردن" } },
+        { "word": { "de": "fortfahren zu", "fa": "ادامه دادن به" } },
+        { "word": { "de": "weitermachen mit", "fa": "ادامه دادن با" } },
+        { "word": { "de": "der Aspekt", "fa": "وجه، جنبه" } }
+      ]
+    }
+  ]
+}

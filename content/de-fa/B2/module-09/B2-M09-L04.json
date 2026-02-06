@@ -1,0 +1,537 @@
+{
+  "id": "B2-M09-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Verbalperiphrasen: Zusammenfassung", "fa": "ساخت‌های محیطی فعلی: جمع‌بندی" },
+  "description": "مرور جامع تمام ساخت‌های محیطی فعلی در آلمانی: افعال وجهی (anfangen/beginnen zu, aufhören zu, fortfahren zu)، افعال حالتی (scheinen zu, drohen zu, pflegen zu, versprechen zu)، و عبارات حالتی (im Begriff sein, dabei sein, imstande sein). تمرکز بر ترکیب و استفاده صحیح در متن.",
+  "level": "B2",
+  "module": 9,
+  "lessonNumber": 4,
+  "totalSteps": 45,
+  "estimatedMinutes": 45,
+  "vocabulary": [
+    { "de": "die Verbalperiphrase", "fa": "ساخت محیطی فعلی", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "das Aspektverb", "fa": "فعل وجهی/جنبه‌ای", "grammar": { "pos": "noun", "gender": "neuter" } },
+    { "de": "die Modalität", "fa": "حالت، وجه", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "die Zustandsbeschreibung", "fa": "توصیف حالت", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "fortfahren", "fa": "ادامه دادن", "grammar": { "pos": "verb" } },
+    { "de": "imstande sein", "fa": "قادر بودن، توانا بودن", "grammar": { "pos": "phrase" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "مرور کلی: ساخت‌های محیطی فعلی",
+      "content": "**Verbalperiphrasen = ساخت‌های محیطی فعلی**\n\nدر این ماژول سه دسته ساخت فعلی یاد گرفتیم:\n\n**1. Aspektverben (افعال وجهی) - مراحل عمل:**\n- anfangen/beginnen zu = شروع کردن به\n- aufhören zu = دست برداشتن از\n- fortfahren zu = ادامه دادن به\n\n**2. Modalitätsverben (افعال حالتی) - نگرش گوینده:**\n- scheinen zu = به نظر می‌رسد که\n- drohen zu = در خطر است که\n- pflegen zu = عادت داشتن به\n- versprechen zu = نوید دادن، قول دادن\n\n**3. Zustandsausdrücke (عبارات حالتی) - وضعیت فاعل:**\n- im Begriff sein zu = در شرف بودن\n- dabei sein zu = مشغول بودن به\n- imstande sein zu = قادر بودن به\n\n**ساختار مشترک:** همه با **zu + Infinitiv** می‌آیند!",
+      "examples": [
+        { "de": "Er fängt an zu arbeiten. (شروع)", "fa": "او شروع می‌کند به کار کردن." },
+        { "de": "Er scheint müde zu sein. (به نظر)", "fa": "به نظر می‌رسد که خسته است." },
+        { "de": "Er ist dabei zu kochen. (مشغول)", "fa": "او مشغول آشپزی است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "die Verbalperiphrase", "fa": "ساخت محیطی فعلی" },
+      "example": { "text": { "de": "Eine Verbalperiphrase besteht aus einem Hilfsverb und einem Infinitiv.", "fa": "یک ساخت محیطی فعلی از یک فعل کمکی و یک مصدر تشکیل شده است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Verbalperiphrase",
+      "translation": "ساخت محیطی فعلی",
+      "syllables": ["Ver", "bal", "pe", "ri", "phra", "se"],
+      "distractors": ["Vor", "bol", "pa", "pre", "fro"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "das Aspektverb", "fa": "فعل وجهی/جنبه‌ای" },
+      "example": { "text": { "de": "Aspektverben wie 'anfangen' oder 'aufhören' beschreiben Phasen einer Handlung.", "fa": "افعال وجهی مانند 'anfangen' یا 'aufhören' مراحل یک عمل را توصیف می‌کنند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Aspektverb",
+      "translation": "فعل وجهی",
+      "syllables": ["As", "pekt", "verb"],
+      "distractors": ["Es", "pakt", "varb", "vorp"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "die Modalität", "fa": "حالت، وجه" },
+      "example": { "text": { "de": "Die Modalität drückt die Einstellung des Sprechers aus.", "fa": "حالت، نگرش گوینده را بیان می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Modalität",
+      "translation": "حالت، وجه",
+      "syllables": ["Mo", "da", "li", "tät"],
+      "distractors": ["Ma", "do", "la", "tet", "tot"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "افعال وجهی: anfangen, aufhören, fortfahren",
+      "content": "**Aspektverben = افعال وجهی**\n\nاین افعال **مراحل یک عمل** را توصیف می‌کنند:\n\n**anfangen/beginnen zu (شروع کردن به):**\n- Er fängt an zu lesen. = او شروع می‌کند به خواندن.\n- Sie beginnt zu verstehen. = او شروع می‌کند به فهمیدن.\n\n**aufhören zu (دست برداشتن از):**\n- Er hört auf zu rauchen. = او سیگار را ترک می‌کند.\n- Es hörte auf zu regnen. = باران بند آمد.\n\n**fortfahren zu (ادامه دادن به):**\n- Sie fährt fort zu erklären. = او ادامه می‌دهد توضیح دادن را.\n- Er fuhr fort zu arbeiten. = او به کار کردن ادامه داد.\n\n**نکته برای فارسی‌زبانان:**\nدر فارسی از «شروع کردن به»، «دست برداشتن از» و «ادامه دادن» استفاده می‌کنیم - ساختار مشابه آلمانی است!",
+      "examples": [
+        { "de": "Die Kinder fangen an zu spielen.", "fa": "بچه‌ها شروع می‌کنند به بازی کردن." },
+        { "de": "Er hat aufgehört zu trinken.", "fa": "او نوشیدن را ترک کرده است." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام فعل برای بیان «دست برداشتن از» استفاده می‌شود؟",
+      "options": [
+        "anfangen zu",
+        "aufhören zu",
+        "fortfahren zu",
+        "beginnen zu"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! aufhören zu = دست برداشتن از، ترک کردن.", "incorrect": "aufhören zu = دست برداشتن از. anfangen/beginnen zu = شروع کردن. fortfahren zu = ادامه دادن." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "فعل وجهی مناسب را انتخاب کنید (شروع)",
+      "sentence": "Das Baby {0} zu laufen.",
+      "options": ["hört auf", "fährt fort", "fängt an", "scheint"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "anfangen zu = شروع کردن به. نوزاد شروع می‌کند به راه رفتن." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "فعل وجهی مناسب را انتخاب کنید (پایان)",
+      "sentence": "Nach dem Essen {0} der Regen {1} fallen.",
+      "options": ["hörte", "auf", "an", "fort"],
+      "correctAnswers": [0, 1],
+      "feedback": { "explanation": "aufhören zu = دست برداشتن، بند آمدن. باران بند آمد." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "fortfahren", "fa": "ادامه دادن" },
+      "example": { "text": { "de": "Trotz der Unterbrechung fuhr sie fort zu sprechen.", "fa": "علی‌رغم وقفه، او به صحبت کردن ادامه داد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "fortfahren",
+      "translation": "ادامه دادن",
+      "syllables": ["fort", "fah", "ren"],
+      "distractors": ["furt", "feh", "ran", "far"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s6b",
+      "title": "افعال حالتی: scheinen, drohen, pflegen, versprechen",
+      "content": "**Modalitätsverben = افعال حالتی**\n\nاین افعال **نگرش یا ارزیابی گوینده** را نشان می‌دهند:\n\n**scheinen zu (به نظر می‌رسد که):**\n- Er scheint glücklich zu sein. = به نظر می‌رسد خوشحال است.\n- Das Projekt scheint erfolgreich zu sein. = پروژه به نظر موفق می‌آید.\n\n**drohen zu (در خطر بودن، تهدید شدن):**\n- Das Haus droht einzustürzen. = خانه در خطر فرو ریختن است.\n- Die Situation droht zu eskalieren. = وضعیت در خطر بدتر شدن است.\n\n**pflegen zu (عادت داشتن):**\n- Er pflegt früh aufzustehen. = او عادت دارد زود بیدار شود.\n- Sie pflegt sonntags zu kochen. = او عادت دارد یکشنبه‌ها آشپزی کند.\n\n**versprechen zu (نوید دادن، وعده دادن):**\n- Der Tag verspricht schön zu werden. = روز نوید زیبا شدن می‌دهد.\n- Die Ernte verspricht gut zu werden. = محصول نوید خوب بودن می‌دهد.\n\n**نکته:** این افعال معنای اصلی خود را کمی تغییر می‌دهند!",
+      "examples": [
+        { "de": "Die Verhandlungen scheinen erfolgreich zu sein.", "fa": "به نظر می‌رسد مذاکرات موفقیت‌آمیز هستند." },
+        { "de": "Das Wetter droht schlecht zu werden.", "fa": "هوا در خطر بد شدن است." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "«Der Turm droht einzustürzen» به چه معناست؟",
+      "options": [
+        "برج تهدید می‌کند که فرو بریزد",
+        "برج در خطر فرو ریختن است",
+        "برج قول می‌دهد فرو بریزد",
+        "برج به نظر می‌رسد فرو می‌ریزد"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "درست! drohen zu در این معنا = در خطر بودن، نه تهدید کردن.", "incorrect": "drohen zu = در خطر بودن (نه تهدید کردن). برج در خطر فرو ریختن است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "فعل حالتی مناسب را انتخاب کنید (ظاهر)",
+      "sentence": "Sie {0} müde zu sein. Hat sie schlecht geschlafen?",
+      "options": ["droht", "pflegt", "scheint", "verspricht"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "scheinen zu = به نظر رسیدن. به نظر می‌رسد که خسته است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "فعل حالتی مناسب را انتخاب کنید (عادت)",
+      "sentence": "Mein Großvater {0} jeden Morgen spazieren zu gehen.",
+      "options": ["droht", "pflegt", "scheint", "verspricht"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "pflegen zu = عادت داشتن. پدربزرگم عادت دارد هر صبح پیاده‌روی کند." }
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "die Zustandsbeschreibung", "fa": "توصیف حالت" },
+      "example": { "text": { "de": "Eine Zustandsbeschreibung zeigt, in welcher Situation sich jemand befindet.", "fa": "توصیف حالت نشان می‌دهد که کسی در چه وضعیتی قرار دارد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "Zustandsbeschreibung",
+      "translation": "توصیف حالت",
+      "syllables": ["Zu", "stands", "be", "schrei", "bung"],
+      "distractors": ["Za", "stonds", "ba", "schrai", "bang"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "imstande sein", "fa": "قادر بودن، توانا بودن" },
+      "example": { "text": { "de": "Nur wenige Menschen sind imstande, fünf Sprachen zu sprechen.", "fa": "فقط تعداد کمی از مردم قادرند پنج زبان صحبت کنند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "imstande",
+      "translation": "قادر، توانا",
+      "syllables": ["im", "stan", "de"],
+      "distractors": ["em", "ston", "da", "stun"]
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "مکالمه در محل کار",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Büro, Projektbesprechung", "fa": "در دفتر، جلسه پروژه" }
+      },
+      "lines": [
+        { "speaker": "Chef", "text": { "de": "Wie steht es mit dem Projekt? Sind Sie dabei, es abzuschließen?", "fa": "پروژه در چه وضعیتی است؟ مشغول تمام کردنش هستید؟" }, "mood": "neutral" },
+        { "speaker": "Mitarbeiter", "text": { "de": "Ja, wir sind im Begriff, den letzten Teil fertigzustellen.", "fa": "بله، در شرف تکمیل آخرین بخش هستیم." }, "mood": "happy" },
+        { "speaker": "Chef", "text": { "de": "Gut. Aber ich höre, dass das Budget droht überschritten zu werden.", "fa": "خوب. ولی می‌شنوم بودجه در خطر تجاوز است." }, "mood": "confused" },
+        { "speaker": "Mitarbeiter", "text": { "de": "Das scheint ein Missverständnis zu sein. Wir fahren fort, sparsam zu arbeiten.", "fa": "به نظر می‌رسد سوءتفاهم است. ما به صرفه‌جویی ادامه می‌دهیم." }, "mood": "neutral" },
+        { "speaker": "Chef", "text": { "de": "Sind Sie imstande, bis Freitag einen Bericht vorzulegen?", "fa": "آیا قادرید تا جمعه گزارش ارائه دهید؟" }, "mood": "neutral" },
+        { "speaker": "Mitarbeiter", "text": { "de": "Natürlich! Wir fangen gleich an, daran zu arbeiten.", "fa": "البته! همین الان شروع می‌کنیم به کار روی آن." }, "mood": "excited" }
+      ],
+      "questions": [
+        { "question": "کارمند با «im Begriff sein» چه می‌گوید؟", "options": ["قادر بودن", "در شرف انجام بودن", "مشغول بودن"], "correctIndex": 1, "explanation": "im Begriff sein zu = در شرف بودن. در شرف تکمیل آخرین بخش هستیم." },
+        { "question": "چه چیزی «droht»؟", "options": ["پروژه", "بودجه", "کارمند"], "correctIndex": 1, "explanation": "das Budget droht überschritten zu werden = بودجه در خطر تجاوز است." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را مرتب کنید (شروع کردن)",
+      "words": ["zu arbeiten", "Er", "an", "fängt"],
+      "correctOrder": [1, 3, 2, 0],
+      "correctSentence": { "de": "Er fängt an zu arbeiten.", "fa": "او شروع می‌کند به کار کردن." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را مرتب کنید (به نظر رسیدن)",
+      "words": ["zu sein", "müde", "Sie", "scheint"],
+      "correctOrder": [2, 3, 1, 0],
+      "correctSentence": { "de": "Sie scheint müde zu sein.", "fa": "به نظر می‌رسد که او خسته است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله را مرتب کنید (در شرف بودن)",
+      "words": ["zu gehen", "im Begriff", "Wir", "sind"],
+      "correctOrder": [2, 3, 1, 0],
+      "correctSentence": { "de": "Wir sind im Begriff zu gehen.", "fa": "ما در شرف رفتن هستیم." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "«fortfahren zu» به معنای شروع کردن است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! fortfahren zu = ادامه دادن به. anfangen/beginnen zu = شروع کردن به." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "«drohen zu» در ساخت محیطی به معنای «در خطر بودن» است، نه «تهدید کردن».",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! در این ساخت، drohen zu = در خطر بودن. مثال: Das Haus droht einzustürzen = خانه در خطر فرو ریختن است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "«dabei sein zu» و «im Begriff sein zu» دقیقاً یک معنی دارند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! dabei sein zu = مشغول بودن به (در حال انجام). im Begriff sein zu = در شرف بودن (هنوز شروع نشده، الان می‌خواهد شروع شود)." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "عبارت حالتی مناسب را انتخاب کنید (مشغول بودن)",
+      "sentence": "Er ist {0}, das Abendessen zuzubereiten.",
+      "options": ["im Begriff", "dabei", "imstande", "fortfahren"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "dabei sein zu = مشغول بودن به. او مشغول آماده کردن شام است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "عبارت حالتی مناسب را انتخاب کنید (توانایی)",
+      "sentence": "Nur Experten sind {0}, dieses Problem zu lösen.",
+      "options": ["im Begriff", "dabei", "imstande", "pflegen"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "imstande sein zu = قادر بودن به. فقط کارشناسان قادرند این مشکل را حل کنند." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "صحبت درباره تغییرات زندگی",
+      "scene": {
+        "location": "cafe",
+        "description": { "de": "Im Café, Gespräch zwischen Freunden", "fa": "در کافه، گفتگو بین دوستان" }
+      },
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Ich habe gehört, du bist dabei umzuziehen?", "fa": "شنیدم مشغول نقل مکان هستی؟" }, "mood": "surprised" },
+        { "speaker": "Max", "text": { "de": "Ja, ich bin im Begriff, meine Wohnung zu verkaufen.", "fa": "آره، در شرف فروش آپارتمانم هستم." }, "mood": "neutral" },
+        { "speaker": "Lisa", "text": { "de": "Wirklich? Du scheinst ja sehr beschäftigt zu sein!", "fa": "واقعاً؟ به نظر می‌رسد خیلی سرت شلوغ است!" }, "mood": "confused" },
+        { "speaker": "Max", "text": { "de": "Stimmt. Aber die neue Wohnung verspricht viel besser zu sein.", "fa": "درسته. ولی آپارتمان جدید نوید خیلی بهتر بودن می‌دهد." }, "mood": "happy" },
+        { "speaker": "Lisa", "text": { "de": "Ich hoffe, die Sache droht nicht zu teuer zu werden.", "fa": "امیدوارم قضیه در خطر خیلی گران شدن نباشد." }, "mood": "neutral" },
+        { "speaker": "Max", "text": { "de": "Nein, ich pflege immer gut zu planen. Ich höre nie auf zu sparen!", "fa": "نه، من همیشه عادت دارم خوب برنامه‌ریزی کنم. هیچ‌وقت پس‌انداز را ترک نمی‌کنم!" }, "mood": "excited" }
+      ],
+      "questions": [
+        { "question": "ماکس الان چه کاری انجام می‌دهد؟", "options": ["می‌خرد", "می‌فروشد", "می‌سازد"], "correctIndex": 1, "explanation": "im Begriff sein zu verkaufen = در شرف فروختن. ماکس در شرف فروش آپارتمانش است." },
+        { "question": "ماکس با «pflege ... zu planen» چه می‌گوید؟", "options": ["قول می‌دهم برنامه‌ریزی کنم", "عادت دارم برنامه‌ریزی کنم", "در خطر برنامه‌ریزی هستم"], "correctIndex": 1, "explanation": "pflegen zu = عادت داشتن به. ماکس عادت دارد خوب برنامه‌ریزی کند." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "ساخت فعلی را با معنای فارسی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "anfangen zu" },
+        { "id": "i2", "text": "aufhören zu" },
+        { "id": "i3", "text": "scheinen zu" },
+        { "id": "i4", "text": "drohen zu" },
+        { "id": "i5", "text": "im Begriff sein" },
+        { "id": "i6", "text": "imstande sein" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "شروع کردن به" },
+        { "id": "m2", "text": "دست برداشتن از" },
+        { "id": "m3", "text": "به نظر رسیدن" },
+        { "id": "m4", "text": "در خطر بودن" },
+        { "id": "m5", "text": "در شرف بودن" },
+        { "id": "m6", "text": "قادر بودن" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "او شروع کرد به یادگیری آلمانی.",
+      "sentenceTemplate": "Er {0} an, Deutsch zu {1}.",
+      "options": ["fing", "hörte", "lernen", "sprechen"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Er fing an, Deutsch zu lernen.", "fa": "او شروع کرد به یادگیری آلمانی." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "به نظر می‌رسد که او خوشحال است.",
+      "sentenceTemplate": "Sie {0} glücklich zu {1}.",
+      "options": ["scheint", "droht", "sein", "werden"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Sie scheint glücklich zu sein.", "fa": "به نظر می‌رسد که او خوشحال است." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: گزارش روزنامه",
+      "passage": {
+        "de": "Die Wirtschaftslage: Die Inflation scheint sich zu stabilisieren. Experten haben aufgehört, von einer Krise zu sprechen. Die Regierung ist dabei, neue Maßnahmen einzuführen. Allerdings droht die Arbeitslosigkeit leicht zu steigen. Unternehmen fangen an, wieder zu investieren. Die Situation verspricht besser zu werden, aber nur wenige sind imstande, genaue Prognosen zu machen. Der Minister pflegt optimistisch zu sein und ist im Begriff, einen neuen Plan vorzustellen.",
+        "fa": "وضعیت اقتصادی: به نظر می‌رسد تورم در حال تثبیت است. کارشناسان دست از صحبت درباره بحران برداشته‌اند. دولت مشغول معرفی اقدامات جدید است. البته بیکاری در خطر افزایش جزئی است. شرکت‌ها شروع کرده‌اند به سرمایه‌گذاری مجدد. وضعیت نوید بهتر شدن می‌دهد، ولی تعداد کمی قادرند پیش‌بینی دقیق کنند. وزیر عادت دارد خوش‌بین باشد و در شرف ارائه طرح جدید است."
+      },
+      "questions": [
+        { "question": "چه چیزی «droht»؟", "options": ["تورم", "بیکاری", "سرمایه‌گذاری"], "correctIndex": 1, "explanation": "die Arbeitslosigkeit droht zu steigen = بیکاری در خطر افزایش است." },
+        { "question": "شرکت‌ها چه کاری را شروع کرده‌اند؟", "options": ["اخراج کارکنان", "سرمایه‌گذاری مجدد", "صادرات"], "correctIndex": 1, "explanation": "Unternehmen fangen an, wieder zu investieren = شرکت‌ها شروع کرده‌اند به سرمایه‌گذاری مجدد." },
+        { "question": "وزیر چه عادتی دارد؟", "options": ["بدبین بودن", "خوش‌بین بودن", "ساکت بودن"], "correctIndex": 1, "explanation": "Der Minister pflegt optimistisch zu sein = وزیر عادت دارد خوش‌بین باشد." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der neue Job", "fa": "شغل جدید" },
+      "characters": ["Anna", "Klaus"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Anna erzählt Klaus von ihrer neuen Arbeitsstelle.", "fa": "آنا به کلاوس درباره محل کار جدیدش می‌گوید." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Klaus",
+          "text": { "de": "Und? Wie läuft der neue Job? Du scheinst ja zufrieden zu sein!", "fa": "خب؟ کار جدید چطور پیش می‌رود؟ به نظر راضی می‌آیی!" },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Ja, ich fange gerade an, mich einzuarbeiten.", "fa": "آره، تازه دارم شروع می‌کنم به آشنا شدن با کار." },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "آنا الان در چه مرحله‌ای است؟",
+          "options": ["کارش تمام شده", "تازه شروع کرده", "می‌خواهد ترک کند"],
+          "correctIndex": 1,
+          "explanation": "fange an zu = شروع کردن به. آنا تازه شروع کرده به آشنا شدن با کار."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Klaus",
+          "text": { "de": "Und die Kollegen? Fahren sie fort, nett zu dir zu sein?", "fa": "و همکاران؟ به مهربان بودن با تو ادامه می‌دهند؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Absolut! Ich bin dabei, neue Freundschaften zu schließen.", "fa": "کاملاً! مشغول بستن دوستی‌های جدید هستم." },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "«dabei sein» در جمله آنا چه معنایی دارد؟",
+          "options": ["در شرف بودن", "مشغول بودن", "قادر بودن"],
+          "correctIndex": 1,
+          "explanation": "dabei sein zu = مشغول بودن به. آنا مشغول بستن دوستی‌های جدید است."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Klaus",
+          "text": { "de": "Aber ich höre, das Projekt droht zu scheitern?", "fa": "ولی می‌شنوم پروژه در خطر شکست است؟" },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Früher vielleicht. Aber wir sind jetzt imstande, das zu ändern.", "fa": "قبلاً شاید. ولی الان قادریم آن را تغییر دهیم." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "آنا با «imstande sein» چه می‌گوید؟",
+          "options": ["مشغول تغییر هستیم", "قادر به تغییر هستیم", "در شرف تغییر هستیم"],
+          "correctIndex": 1,
+          "explanation": "imstande sein zu = قادر بودن به. آنا می‌گوید تیمش قادر است وضعیت را تغییر دهد."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: ساخت‌های محیطی فعلی",
+      "instruction": "معنی درست را انتخاب کنید!",
+      "questions": [
+        { "prompt": "anfangen zu →", "left": "شروع کردن", "right": "تمام کردن", "correctSide": "left" },
+        { "prompt": "aufhören zu →", "left": "ادامه دادن", "right": "دست برداشتن", "correctSide": "right" },
+        { "prompt": "scheinen zu →", "left": "به نظر رسیدن", "right": "در خطر بودن", "correctSide": "left" },
+        { "prompt": "drohen zu →", "left": "قول دادن", "right": "در خطر بودن", "correctSide": "right" },
+        { "prompt": "im Begriff sein →", "left": "در شرف بودن", "right": "مشغول بودن", "correctSide": "left" },
+        { "prompt": "imstande sein →", "left": "عادت داشتن", "right": "قادر بودن", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Er fängt an zu arbeiten.",
+      "translation": "او شروع می‌کند به کار کردن."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Sie scheint glücklich zu sein.",
+      "translation": "به نظر می‌رسد که او خوشحال است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Wir sind dabei, das Problem zu lösen.",
+      "translation": "ما مشغول حل کردن مشکل هستیم."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: ساخت‌های محیطی فعلی",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "anfangen zu =", "options": ["شروع کردن به", "تمام کردن"], "correctAnswerIndex": 0 },
+        { "question": "fortfahren zu =", "options": ["دست برداشتن از", "ادامه دادن به"], "correctAnswerIndex": 1 },
+        { "question": "scheinen zu =", "options": ["به نظر رسیدن", "در خطر بودن"], "correctAnswerIndex": 0 },
+        { "question": "pflegen zu =", "options": ["نوید دادن", "عادت داشتن"], "correctAnswerIndex": 1 },
+        { "question": "dabei sein zu =", "options": ["در شرف بودن", "مشغول بودن"], "correctAnswerIndex": 1 },
+        { "question": "im Begriff sein zu =", "options": ["در شرف بودن", "قادر بودن"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: ساخت‌های فعلی",
+      "pairs": [
+        { "de": "anfangen zu", "fa": "شروع کردن به" },
+        { "de": "aufhören zu", "fa": "دست برداشتن از" },
+        { "de": "scheinen zu", "fa": "به نظر رسیدن" },
+        { "de": "imstande sein", "fa": "قادر بودن" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "افعال ساخت‌های محیطی را پیدا کنید",
+      "targetWords": ["anfangen", "aufhören", "scheinen", "drohen", "pflegen", "fortfahren"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "die Verbalperiphrase", "fa": "ساخت محیطی فعلی", "options": ["اسم فعل", "ساخت محیطی فعلی", "زمان فعل", "صرف فعل"], "correctIndex": 1 },
+        { "de": "fortfahren", "fa": "ادامه دادن", "options": ["شروع کردن", "ادامه دادن", "تمام کردن", "توقف کردن"], "correctIndex": 1 },
+        { "de": "imstande sein", "fa": "قادر بودن", "options": ["مجبور بودن", "قادر بودن", "مشغول بودن", "در شرف بودن"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! جمع‌بندی ساخت‌های محیطی فعلی تمام شد!",
+      "message": "شما تمام ساخت‌های محیطی فعلی در آلمانی را مرور کردید!",
+      "keyPoints": [
+        "**Aspektverben (افعال وجهی - مراحل عمل):**",
+        "anfangen/beginnen zu = شروع کردن به",
+        "aufhören zu = دست برداشتن از",
+        "fortfahren zu = ادامه دادن به",
+        "**Modalitätsverben (افعال حالتی - نگرش گوینده):**",
+        "scheinen zu = به نظر می‌رسد که",
+        "drohen zu = در خطر است که",
+        "pflegen zu = عادت داشتن به",
+        "versprechen zu = نوید دادن",
+        "**Zustandsausdrücke (عبارات حالتی - وضعیت فاعل):**",
+        "im Begriff sein zu = در شرف بودن",
+        "dabei sein zu = مشغول بودن به",
+        "imstande sein zu = قادر بودن به",
+        "**نکته:** همه با zu + Infinitiv می‌آیند!"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "die Verbalperiphrase", "fa": "ساخت محیطی فعلی" } },
+        { "word": { "de": "das Aspektverb", "fa": "فعل وجهی" } },
+        { "word": { "de": "die Modalität", "fa": "حالت، وجه" } },
+        { "word": { "de": "die Zustandsbeschreibung", "fa": "توصیف حالت" } },
+        { "word": { "de": "fortfahren", "fa": "ادامه دادن" } },
+        { "word": { "de": "imstande sein", "fa": "قادر بودن" } }
+      ]
+    }
+  ]
+}
