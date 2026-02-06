@@ -1252,6 +1252,37 @@ const DE_FA_B1_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/B1/B1-M07-L04"
       }
     ]
+  },
+  {
+    id: "module-08",
+    title: "بخش ۸: مجهول پیشرفته (Passiv Erweiterung)",
+    level: "B1",
+    lessons: [
+      {
+        id: "B1-M08-L01",
+        title: "Passiv mit Modalverben - مجهول با افعال وجهی",
+        description: "یاد بگیرید چطور مجهول را با kann, muss, soll ترکیب کنید: Das kann gemacht werden.",
+        path: "/learn/de-fa/B1/B1-M08-L01"
+      },
+      {
+        id: "B1-M08-L02",
+        title: "Passiv Präteritum - مجهول گذشته ساده",
+        description: "یاد بگیرید چطور مجهول گذشته ساده بسازید: wurde/wurden + Partizip II.",
+        path: "/learn/de-fa/B1/B1-M08-L02"
+      },
+      {
+        id: "B1-M08-L03",
+        title: "Passiv mit von und durch - مجهول با عامل",
+        description: "یاد بگیرید چه وقت از von (برای افراد) و durch (برای وسیله) استفاده کنید.",
+        path: "/learn/de-fa/B1/B1-M08-L03"
+      },
+      {
+        id: "B1-M08-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل مجهول پیشرفته: با افعال وجهی، گذشته ساده و عامل‌ها.",
+        path: "/learn/de-fa/B1/B1-M08-L04"
+      }
+    ]
   }
 ];
 

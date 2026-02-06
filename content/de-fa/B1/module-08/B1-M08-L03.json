@@ -1,0 +1,510 @@
+{
+  "id": "B1-M08-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Passiv mit von und durch", "fa": "مجهول با von و durch" },
+  "description": "یاد بگیرید چگونه در جملات مجهول از von برای شخص و از durch برای وسیله یا علت استفاده کنید",
+  "level": "B1",
+  "module": 8,
+  "lessonNumber": 3,
+  "totalSteps": 45,
+  "estimatedMinutes": 22,
+  "vocabulary": [
+    { "de": "der Autor", "fa": "نویسنده", "grammar": { "pos": "noun", "gender": "m" } },
+    { "de": "der Künstler", "fa": "هنرمند", "grammar": { "pos": "noun", "gender": "m" } },
+    { "de": "die Maßnahme", "fa": "اقدام", "grammar": { "pos": "noun", "gender": "f" } },
+    { "de": "das Erdbeben", "fa": "زلزله", "grammar": { "pos": "noun", "gender": "n" } },
+    { "de": "die Explosion", "fa": "انفجار", "grammar": { "pos": "noun", "gender": "f" } },
+    { "de": "der Beschluss", "fa": "تصمیم", "grammar": { "pos": "noun", "gender": "m" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "von و durch در جملات مجهول",
+      "content": "در جملات مجهول آلمانی، وقتی می‌خواهیم بگوییم **چه کسی** یا **چه چیزی** عمل را انجام داده، از دو حرف اضافه استفاده می‌کنیم:\n\n**von + حالت Dativ** = برای **اشخاص** یا **سازمان‌ها**\n• Das Buch wurde **von dem Autor** geschrieben.\n• کتاب توسط نویسنده نوشته شد.\n\n**durch + حالت Akkusativ** = برای **وسایل**، **علت‌ها** یا **رویدادها**\n• Das Haus wurde **durch das Erdbeben** zerstört.\n• خانه توسط زلزله ویران شد.\n\n**نکته مهم:**\nاغلب در جملات مجهول، عامل ذکر نمی‌شود چون مهم نیست یا مشخص نیست.",
+      "examples": [
+        { "de": "Das Gemälde wurde von dem Künstler gemalt.", "fa": "نقاشی توسط هنرمند کشیده شد." },
+        { "de": "Die Stadt wurde durch einen Brand zerstört.", "fa": "شهر توسط آتش‌سوزی ویران شد." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "der Autor", "fa": "نویسنده" },
+      "example": { "text": { "de": "Das Buch wurde von dem Autor signiert.", "fa": "کتاب توسط نویسنده امضا شد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Autor",
+      "translation": "نویسنده",
+      "syllables": ["Au", "tor"],
+      "distractors": ["Aw", "ter", "tar"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "der Künstler", "fa": "هنرمند" },
+      "example": { "text": { "de": "Das Bild wurde von dem Künstler gemalt.", "fa": "تصویر توسط هنرمند نقاشی شد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Künstler",
+      "translation": "هنرمند",
+      "syllables": ["Künst", "ler"],
+      "distractors": ["Kanst", "lar", "lir"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "die Maßnahme", "fa": "اقدام" },
+      "example": { "text": { "de": "Die Maßnahme wurde von der Regierung beschlossen.", "fa": "اقدام توسط دولت تصویب شد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Maßnahme",
+      "translation": "اقدام",
+      "syllables": ["Maß", "nah", "me"],
+      "distractors": ["Mas", "ner", "mo"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام حرف اضافه برای نشان دادن شخص در جمله مجهول استفاده می‌شود؟",
+      "options": [
+        "durch + Akkusativ",
+        "von + Dativ",
+        "mit + Dativ",
+        "für + Akkusativ"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! von + Dativ برای اشخاص و سازمان‌ها استفاده می‌شود.", "incorrect": "برای اشخاص از von + Dativ استفاده می‌کنیم: von dem Arzt, von der Firma" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Der Brief wurde {0} meiner Mutter geschrieben.",
+      "options": ["von", "durch", "mit", "für"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "چون مادر یک شخص است، از von استفاده می‌کنیم." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "تفاوت von و durch",
+      "content": "**von** را برای **عامل فعال** (کسی که عمدا کاری انجام می‌دهد) استفاده می‌کنیم:\n• Das Essen wurde **von der Köchin** zubereitet.\n• غذا توسط آشپز آماده شد.\n\n**durch** را برای **وسیله یا علت** (چیزی که باعث اتفاقی می‌شود) استفاده می‌کنیم:\n• Die Nachricht wurde **durch das Radio** verbreitet.\n• خبر از طریق رادیو پخش شد.\n\n**مقایسه:**\n• Das Fenster wurde **von dem Kind** zerbrochen. (بچه عمدا شکست)\n• Das Fenster wurde **durch den Sturm** zerbrochen. (طوفان باعث شکستن شد)\n\n**نکته:**\nvon = توسط چه کسی (فاعل)\ndurch = به وسیله چه چیزی (وسیله یا علت)",
+      "examples": [
+        { "de": "Das Dokument wurde von dem Direktor unterschrieben.", "fa": "سند توسط مدیر امضا شد." },
+        { "de": "Die Information wurde durch E-Mail gesendet.", "fa": "اطلاعات از طریق ایمیل ارسال شد." }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "خبر در روزنامه",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Büro einer Zeitung", "fa": "در دفتر یک روزنامه" }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Hast du den Artikel gelesen?", "fa": "مقاله را خواندی؟" }, "mood": "neutral" },
+        { "speaker": "Max", "text": { "de": "Ja, er wurde von einem bekannten Journalisten geschrieben.", "fa": "بله، توسط یک روزنامه‌نگار معروف نوشته شده." }, "mood": "happy" },
+        { "speaker": "Anna", "text": { "de": "Das Foto wurde durch einen Unfall beschädigt.", "fa": "عکس به خاطر یک تصادف آسیب دیده." }, "mood": "sad" },
+        { "speaker": "Max", "text": { "de": "Schade! Aber die Nachricht wurde schon durch soziale Medien verbreitet.", "fa": "حیف! اما خبر از طریق شبکه‌های اجتماعی پخش شده." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "مقاله توسط چه کسی نوشته شده؟", "options": ["یک دانشجو", "یک روزنامه‌نگار معروف", "آنا"], "correctIndex": 1, "explanation": "ماکس گفت: von einem bekannten Journalisten" },
+        { "question": "عکس چگونه آسیب دید؟", "options": ["توسط آب", "توسط یک تصادف", "توسط ماکس"], "correctIndex": 1, "explanation": "آنا گفت: durch einen Unfall beschädigt" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "das Erdbeben", "fa": "زلزله" },
+      "example": { "text": { "de": "Das Gebäude wurde durch das Erdbeben zerstört.", "fa": "ساختمان توسط زلزله ویران شد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "Erdbeben",
+      "translation": "زلزله",
+      "syllables": ["Erd", "be", "ben"],
+      "distractors": ["Ard", "ba", "bon"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "die Explosion", "fa": "انفجار" },
+      "example": { "text": { "de": "Die Fabrik wurde durch eine Explosion beschädigt.", "fa": "کارخانه توسط انفجار آسیب دید." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "Explosion",
+      "translation": "انفجار",
+      "syllables": ["Ex", "plo", "sion"],
+      "distractors": ["Ax", "pla", "zon"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله درست است؟",
+      "options": [
+        "Das Haus wurde von dem Erdbeben zerstört.",
+        "Das Haus wurde durch das Erdbeben zerstört.",
+        "Das Haus wurde mit dem Erdbeben zerstört.",
+        "Das Haus wurde für das Erdbeben zerstört."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! زلزله یک رویداد طبیعی است، پس از durch استفاده می‌کنیم.", "incorrect": "زلزله یک رویداد است نه یک شخص، پس از durch + Akkusativ استفاده می‌کنیم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Brücke wurde {0} die Explosion zerstört.",
+      "options": ["von", "durch", "mit", "für"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "انفجار یک رویداد است، پس از durch استفاده می‌کنیم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das Gemälde wurde {0} einem berühmten Künstler gemalt.",
+      "options": ["durch", "von", "mit", "für"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "هنرمند یک شخص است، پس از von استفاده می‌کنیم." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s8",
+      "title": "عامل اختیاری در جملات مجهول",
+      "content": "در بسیاری از جملات مجهول، **عامل ذکر نمی‌شود** زیرا:\n\n**۱. عامل مشخص نیست:**\n• Das Auto wurde gestohlen. (ماشین دزدیده شد.)\n• نمی‌دانیم چه کسی دزدید.\n\n**۲. عامل مهم نیست:**\n• Die Straße wird repariert. (خیابان تعمیر می‌شود.)\n• مهم نیست چه کسی تعمیر می‌کند.\n\n**۳. عامل واضح است:**\n• Er wurde verhaftet. (او دستگیر شد.)\n• واضح است که پلیس دستگیر کرد.\n\n**نکته:**\nدر فارسی هم معمولاً در جملات مجهول فاعل حذف می‌شود.",
+      "examples": [
+        { "de": "Die Tür wurde geöffnet.", "fa": "در باز شد. (نمی‌دانیم چه کسی)" },
+        { "de": "Das Buch wurde von dem Autor geschrieben.", "fa": "کتاب توسط نویسنده نوشته شد. (عامل مهم است)" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "der Beschluss", "fa": "تصمیم" },
+      "example": { "text": { "de": "Der Beschluss wurde von dem Parlament gefasst.", "fa": "تصمیم توسط پارلمان گرفته شد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Beschluss",
+      "translation": "تصمیم",
+      "syllables": ["Be", "schluss"],
+      "distractors": ["Ba", "schloss", "schruss"]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["wurde", "Das Buch", "geschrieben.", "von dem Autor"],
+      "correctOrder": [1, 0, 3, 2],
+      "correctSentence": { "de": "Das Buch wurde von dem Autor geschrieben.", "fa": "کتاب توسط نویسنده نوشته شد." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["durch das Feuer", "Das Gebäude", "wurde", "zerstört."],
+      "correctOrder": [1, 2, 0, 3],
+      "correctSentence": { "de": "Das Gebäude wurde durch das Feuer zerstört.", "fa": "ساختمان توسط آتش ویران شد." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Die Maßnahme", "beschlossen.", "von der Regierung", "wurde"],
+      "correctOrder": [0, 3, 2, 1],
+      "correctSentence": { "de": "Die Maßnahme wurde von der Regierung beschlossen.", "fa": "اقدام توسط دولت تصویب شد." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای نشان دادن شخص در جمله مجهول از durch استفاده می‌کنیم.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! برای شخص از von + Dativ استفاده می‌کنیم. durch برای وسیله یا علت است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جمله Das Haus wurde durch das Erdbeben zerstört از durch استفاده شده چون زلزله یک رویداد طبیعی است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! زلزله یک رویداد یا علت است، نه یک شخص، پس از durch استفاده می‌کنیم." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جملات مجهول آلمانی همیشه باید عامل ذکر شود.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! عامل در جملات مجهول اغلب حذف می‌شود، به‌ویژه وقتی مشخص یا مهم نیست." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "گفتگو درباره یک تصادف",
+      "scene": {
+        "location": "street",
+        "description": { "de": "Auf der Straße nach einem Unfall", "fa": "در خیابان بعد از یک تصادف" }
+      },
+      "lines": [
+        { "speaker": "Polizist", "text": { "de": "Was ist hier passiert?", "fa": "اینجا چه اتفاقی افتاده؟" }, "mood": "neutral" },
+        { "speaker": "Zeuge", "text": { "de": "Das Auto wurde durch einen Stein beschädigt.", "fa": "ماشین توسط یک سنگ آسیب دید." }, "mood": "surprised" },
+        { "speaker": "Polizist", "text": { "de": "Wurde der Fahrer verletzt?", "fa": "راننده آسیب دید؟" }, "mood": "confused" },
+        { "speaker": "Zeuge", "text": { "de": "Ja, er wurde von einem Arzt behandelt.", "fa": "بله، توسط یک دکتر درمان شد." }, "mood": "sad" },
+        { "speaker": "Polizist", "text": { "de": "Gut, der Bericht wird von mir geschrieben.", "fa": "خوب، گزارش توسط من نوشته می‌شود." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "ماشین چگونه آسیب دید؟", "options": ["توسط یک راننده", "توسط یک سنگ", "توسط پلیس"], "correctIndex": 1, "explanation": "شاهد گفت: durch einen Stein" },
+        { "question": "چه کسی راننده را درمان کرد؟", "options": ["پلیس", "شاهد", "یک دکتر"], "correctIndex": 2, "explanation": "شاهد گفت: von einem Arzt behandelt" }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "جملات را با ترجمه درست جور کنید",
+      "items": [
+        { "id": "i1", "text": "von dem Autor" },
+        { "id": "i2", "text": "durch das Erdbeben" },
+        { "id": "i3", "text": "von der Regierung" },
+        { "id": "i4", "text": "durch einen Unfall" },
+        { "id": "i5", "text": "von dem Künstler" },
+        { "id": "i6", "text": "durch die Explosion" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "توسط نویسنده" },
+        { "id": "m2", "text": "توسط زلزله" },
+        { "id": "m3", "text": "توسط دولت" },
+        { "id": "m4", "text": "توسط یک تصادف" },
+        { "id": "m5", "text": "توسط هنرمند" },
+        { "id": "m6", "text": "توسط انفجار" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "نامه توسط مادرم نوشته شد.",
+      "sentenceTemplate": "Der Brief wurde {0} meiner Mutter geschrieben.",
+      "options": ["von", "durch", "mit", "für"],
+      "correctAnswers": [0],
+      "correctTranslation": { "de": "Der Brief wurde von meiner Mutter geschrieben.", "fa": "نامه توسط مادرم نوشته شد." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "خانه توسط آتش ویران شد.",
+      "sentenceTemplate": "Das Haus wurde {0} das Feuer zerstört.",
+      "options": ["durch", "von", "mit", "für"],
+      "correctAnswers": [0],
+      "correctTranslation": { "de": "Das Haus wurde durch das Feuer zerstört.", "fa": "خانه توسط آتش ویران شد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Der Beschluss wurde {0} dem Parlament gefasst.",
+      "options": ["von", "durch", "mit", "für"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "پارلمان یک سازمان است که مانند شخص عمل می‌کند، پس از von استفاده می‌کنیم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Information wurde {0} E-Mail gesendet.",
+      "options": ["durch", "von", "mit", "für"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "ایمیل یک وسیله ارتباطی است، پس از durch استفاده می‌کنیم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das Problem wurde {0} harte Arbeit gelöst.",
+      "options": ["durch", "von", "mit", "für"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "کار سخت یک وسیله یا روش است، پس از durch استفاده می‌کنیم." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: گزارش خبری",
+      "passage": {
+        "de": "Gestern wurde ein altes Gebäude durch ein starkes Erdbeben beschädigt. Die Fenster wurden durch die Erschütterung zerbrochen. Die verletzten Menschen wurden von den Rettungskräften gerettet und von Ärzten behandelt. Die Maßnahmen wurden von der Regierung schnell beschlossen. Die Nachricht wurde durch alle Medien verbreitet.",
+        "fa": "دیروز یک ساختمان قدیمی توسط یک زلزله شدید آسیب دید. پنجره‌ها توسط لرزش شکسته شدند. افراد مجروح توسط نیروهای امدادی نجات یافتند و توسط پزشکان درمان شدند. اقدامات توسط دولت سریع تصویب شدند. خبر از طریق همه رسانه‌ها پخش شد."
+      },
+      "questions": [
+        { "question": "ساختمان چگونه آسیب دید؟", "options": ["توسط آتش", "توسط زلزله", "توسط انفجار"], "correctIndex": 1, "explanation": "در متن آمده: durch ein starkes Erdbeben" },
+        { "question": "چه کسانی مجروحان را نجات دادند؟", "options": ["پلیس", "نیروهای امدادی", "مردم"], "correctIndex": 1, "explanation": "در متن آمده: von den Rettungskräften gerettet" },
+        { "question": "خبر چگونه پخش شد؟", "options": ["فقط توسط روزنامه", "از طریق همه رسانه‌ها", "فقط توسط رادیو"], "correctIndex": 1, "explanation": "در متن آمده: durch alle Medien verbreitet" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der berühmte Künstler", "fa": "هنرمند معروف" },
+      "characters": ["Journalist", "Künstler"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Ein Journalist besucht einen berühmten Künstler in seinem Atelier.", "fa": "یک روزنامه‌نگار از یک هنرمند معروف در آتلیه‌اش دیدن می‌کند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Journalist",
+          "text": { "de": "Dieses Gemälde ist wunderschön! Von wem wurde es gemalt?", "fa": "این نقاشی بسیار زیباست! توسط چه کسی کشیده شده؟" },
+          "mood": "excited"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Künstler",
+          "text": { "de": "Es wurde von mir gemalt, aber es wurde durch einen Zufall berühmt.", "fa": "توسط من کشیده شده، اما به طور تصادفی معروف شد." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "چه کسی نقاشی را کشید؟",
+          "options": ["روزنامه‌نگار", "هنرمند", "نامشخص"],
+          "correctIndex": 1,
+          "explanation": "هنرمند گفت: von mir gemalt"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Journalist",
+          "text": { "de": "Was für ein Zufall?", "fa": "چه تصادفی؟" },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Künstler",
+          "text": { "de": "Es wurde durch eine Ausstellung entdeckt und von einem Sammler gekauft.", "fa": "در یک نمایشگاه کشف شد و توسط یک کلکسیونر خریداری شد." },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Journalist",
+          "text": { "de": "Ihr Erfolg wurde also durch Talent und Glück erreicht!", "fa": "پس موفقیت شما از طریق استعداد و شانس به دست آمد!" },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "نقاشی چگونه معروف شد؟",
+          "options": ["توسط تبلیغات", "از طریق یک نمایشگاه", "توسط اینترنت"],
+          "correctIndex": 1,
+          "explanation": "هنرمند گفت: durch eine Ausstellung entdeckt"
+        }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Das Buch wurde von dem Autor geschrieben.",
+      "translation": "کتاب توسط نویسنده نوشته شد."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Das Haus wurde durch das Erdbeben zerstört.",
+      "translation": "خانه توسط زلزله ویران شد."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Die Maßnahme wurde von der Regierung beschlossen.",
+      "translation": "اقدام توسط دولت تصویب شد."
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع",
+      "instruction": "von یا durch؟ سریع تصمیم بگیرید!",
+      "questions": [
+        { "prompt": "der Arzt (دکتر)", "left": "von", "right": "durch", "correctSide": "left" },
+        { "prompt": "das Feuer (آتش)", "left": "von", "right": "durch", "correctSide": "right" },
+        { "prompt": "die Regierung (دولت)", "left": "von", "right": "durch", "correctSide": "left" },
+        { "prompt": "der Unfall (تصادف)", "left": "von", "right": "durch", "correctSide": "right" },
+        { "prompt": "der Künstler (هنرمند)", "left": "von", "right": "durch", "correctSide": "left" },
+        { "prompt": "die Explosion (انفجار)", "left": "von", "right": "durch", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "برای شخص در مجهول؟", "options": ["von + Dativ", "durch + Akkusativ"], "correctAnswerIndex": 0 },
+        { "question": "برای وسیله در مجهول؟", "options": ["von + Dativ", "durch + Akkusativ"], "correctAnswerIndex": 1 },
+        { "question": "Das Buch wurde ___ dem Autor geschrieben.", "options": ["von", "durch"], "correctAnswerIndex": 0 },
+        { "question": "Die Stadt wurde ___ das Feuer zerstört.", "options": ["von", "durch"], "correctAnswerIndex": 1 },
+        { "question": "Der Brief wurde ___ meiner Mutter geschrieben.", "options": ["von", "durch"], "correctAnswerIndex": 0 },
+        { "question": "Die Nachricht wurde ___ E-Mail gesendet.", "options": ["von", "durch"], "correctAnswerIndex": 1 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "der Autor", "fa": "نویسنده" },
+        { "de": "der Künstler", "fa": "هنرمند" },
+        { "de": "das Erdbeben", "fa": "زلزله" },
+        { "de": "die Explosion", "fa": "انفجار" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات درس را پیدا کنید",
+      "targetWords": ["Autor", "Künstler", "Erdbeben", "Explosion", "Beschluss"],
+      "gridSize": { "rows": 8, "cols": 8 },
+      "timeLimit": 90
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "der Autor", "fa": "___", "options": ["هنرمند", "نویسنده", "دکتر", "معلم"], "correctIndex": 1 },
+        { "de": "das Erdbeben", "fa": "___", "options": ["آتش‌سوزی", "سیل", "زلزله", "طوفان"], "correctIndex": 2 },
+        { "de": "die Maßnahme", "fa": "___", "options": ["تصمیم", "اقدام", "قانون", "برنامه"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما استفاده از von و durch در جملات مجهول را یاد گرفتید!",
+      "keyPoints": [
+        "von + Dativ برای اشخاص و سازمان‌ها: von dem Arzt, von der Regierung",
+        "durch + Akkusativ برای وسایل، علت‌ها و رویدادها: durch das Feuer, durch einen Unfall",
+        "von = توسط چه کسی (فاعل فعال)",
+        "durch = به وسیله چه چیزی (وسیله یا علت)",
+        "عامل در جملات مجهول اغلب حذف می‌شود وقتی مشخص یا مهم نیست"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "der Autor", "fa": "نویسنده" } },
+        { "word": { "de": "der Künstler", "fa": "هنرمند" } },
+        { "word": { "de": "die Maßnahme", "fa": "اقدام" } },
+        { "word": { "de": "das Erdbeben", "fa": "زلزله" } },
+        { "word": { "de": "die Explosion", "fa": "انفجار" } },
+        { "word": { "de": "der Beschluss", "fa": "تصمیم" } }
+      ]
+    }
+  ]
+}

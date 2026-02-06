@@ -1,0 +1,518 @@
+{
+  "id": "B1-M08-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Passiv Präteritum", "fa": "مجهول در گذشته ساده" },
+  "description": "یاد بگیرید چگونه جملات مجهول در زمان گذشته ساده بسازید: wurde gemacht, wurde gebaut, wurde geschrieben",
+  "level": "B1",
+  "module": 8,
+  "lessonNumber": 2,
+  "totalSteps": 45,
+  "estimatedMinutes": 25,
+  "vocabulary": [
+    { "de": "errichten", "fa": "ساختن/برپا کردن", "grammar": { "pos": "verb" } },
+    { "de": "zerstören", "fa": "نابود کردن/ویران کردن", "grammar": { "pos": "verb" } },
+    { "de": "entdecken", "fa": "کشف کردن", "grammar": { "pos": "verb" } },
+    { "de": "erfinden", "fa": "اختراع کردن", "grammar": { "pos": "verb" } },
+    { "de": "gründen", "fa": "تأسیس کردن/بنیان گذاشتن", "grammar": { "pos": "verb" } },
+    { "de": "veröffentlichen", "fa": "منتشر کردن", "grammar": { "pos": "verb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "مجهول در گذشته ساده چیست؟",
+      "content": "**Passiv Präteritum (مجهول در گذشته ساده)**\n\nوقتی می‌خواهیم بگوییم کاری در گذشته انجام شد (بدون تأکید بر فاعل)، از مجهول گذشته ساده استفاده می‌کنیم.\n\n**ساختار:**\n```\nwurde/wurden + Partizip II\n```\n\n**مثال‌ها:**\n- Das Haus **wurde gebaut**. (خانه ساخته شد.)\n- Die Bücher **wurden geschrieben**. (کتاب‌ها نوشته شدند.)\n\n**کاربرد:**\n- در اخبار و گزارش‌ها\n- در متون تاریخی\n- در نوشتار رسمی",
+      "examples": [
+        { "de": "Das Museum wurde 1920 eröffnet.", "fa": "موزه در سال ۱۹۲۰ افتتاح شد." },
+        { "de": "Die Stadt wurde im Krieg zerstört.", "fa": "شهر در جنگ ویران شد." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "errichten", "fa": "ساختن/برپا کردن" },
+      "example": { "text": { "de": "Das Denkmal wurde 1945 errichtet.", "fa": "بنای یادبود در سال ۱۹۴۵ برپا شد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "errichten",
+      "translation": "ساختن/برپا کردن",
+      "syllables": ["er", "rich", "ten"],
+      "distractors": ["ar", "roch", "tan", "tin"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "zerstören", "fa": "نابود کردن/ویران کردن" },
+      "example": { "text": { "de": "Die Brücke wurde im Zweiten Weltkrieg zerstört.", "fa": "پل در جنگ جهانی دوم ویران شد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "zerstören",
+      "translation": "ویران کردن",
+      "syllables": ["zer", "stö", "ren"],
+      "distractors": ["zar", "sta", "ron", "rin"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "entdecken", "fa": "کشف کردن" },
+      "example": { "text": { "de": "Amerika wurde 1492 entdeckt.", "fa": "آمریکا در سال ۱۴۹۲ کشف شد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "entdecken",
+      "translation": "کشف کردن",
+      "syllables": ["ent", "de", "cken"],
+      "distractors": ["ant", "da", "kon", "kan"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله به معنی «خانه ساخته شد» است؟",
+      "options": ["Das Haus wurde gebaut.", "Das Haus wird gebaut.", "Das Haus ist gebaut worden.", "Das Haus baut."],
+      "correctAnswerIndex": 0,
+      "feedback": { "correct": "آفرین! wurde + Partizip II برای مجهول گذشته ساده", "incorrect": "wurde gebaut = ساخته شد (مجهول گذشته ساده)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das Buch {0} im Jahr 2000 veröffentlicht.",
+      "options": ["wurde", "wird", "ist", "hat"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "برای مجهول گذشته ساده از wurde استفاده می‌کنیم" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در موزه",
+      "context": "دو دوست در موزه تاریخ قدم می‌زنند",
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Wann wurde dieses Schloss gebaut?", "fa": "این قصر کی ساخته شد؟" }, "mood": "confused" },
+        { "speaker": "Max", "text": { "de": "Es wurde im 18. Jahrhundert errichtet.", "fa": "در قرن هجدهم برپا شد." }, "mood": "neutral" },
+        { "speaker": "Anna", "text": { "de": "Wurde es im Krieg zerstört?", "fa": "در جنگ ویران شد؟" }, "mood": "sad" },
+        { "speaker": "Max", "text": { "de": "Ja, aber es wurde später wieder aufgebaut.", "fa": "بله، اما بعداً دوباره بازسازی شد." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "قصر در چه قرنی ساخته شد؟", "options": ["قرن ۱۷", "قرن ۱۸", "قرن ۱۹"], "correctIndex": 1, "explanation": "ماکس گفت: im 18. Jahrhundert" },
+        { "question": "چه اتفاقی برای قصر در جنگ افتاد؟", "options": ["فروخته شد", "ویران شد", "تعمیر شد"], "correctIndex": 1, "explanation": "قصر در جنگ zerstört (ویران) شد" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["wurde", "Das", "gebaut.", "Haus"],
+      "correctOrder": [1, 3, 0, 2],
+      "correctSentence": { "de": "Das Haus wurde gebaut.", "fa": "خانه ساخته شد." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای ساخت مجهول گذشته ساده از wurde یا wurden به همراه Partizip II استفاده می‌کنیم.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! wurde/wurden + Partizip II = مجهول گذشته ساده" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "صرف فعل werden در گذشته ساده",
+      "content": "**صرف werden در Präteritum**\n\nفعل کمکی werden در گذشته ساده به صورت زیر صرف می‌شود:\n\n| ضمیر | صرف |\n|------|-----|\n| ich | **wurde** |\n| du | **wurdest** |\n| er/sie/es | **wurde** |\n| wir | **wurden** |\n| ihr | **wurdet** |\n| sie/Sie | **wurden** |\n\n**نکته:** برای مفرد از wurde و برای جمع از wurden استفاده می‌شود.\n\n**مثال:**\n- Ich **wurde** eingeladen. (من دعوت شدم.)\n- Wir **wurden** informiert. (ما مطلع شدیم.)",
+      "examples": [
+        { "de": "Du wurdest gefragt.", "fa": "از تو پرسیده شد." },
+        { "de": "Die Gäste wurden begrüßt.", "fa": "مهمانان خوشامد گفته شدند." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "erfinden", "fa": "اختراع کردن" },
+      "example": { "text": { "de": "Das Telefon wurde von Alexander Graham Bell erfunden.", "fa": "تلفن توسط الکساندر گراهام بل اختراع شد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "erfinden",
+      "translation": "اختراع کردن",
+      "syllables": ["er", "fin", "den"],
+      "distractors": ["ar", "fan", "dan", "don"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "gründen", "fa": "تأسیس کردن/بنیان گذاشتن" },
+      "example": { "text": { "de": "Die Universität wurde 1386 gegründet.", "fa": "دانشگاه در سال ۱۳۸۶ تأسیس شد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "gründen",
+      "translation": "تأسیس کردن",
+      "syllables": ["grün", "den"],
+      "distractors": ["gran", "dan", "din", "gron"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام گزینه برای جمع درست است؟ «کتاب‌ها نوشته شدند.»",
+      "options": ["Die Bücher wurde geschrieben.", "Die Bücher wurden geschrieben.", "Die Bücher wird geschrieben.", "Die Bücher werden geschrieben."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! برای فاعل جمع از wurden استفاده می‌کنیم", "incorrect": "Die Bücher (جمع) → wurden (نه wurde)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Firma {0} 1950 gegründet.",
+      "options": ["wurde", "wurden", "wurdest", "wurdet"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Die Firma (مفرد) → wurde" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Viele Erfindungen {0} im 20. Jahrhundert gemacht.",
+      "options": ["wurde", "wurden", "wurdest", "wurdet"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Viele Erfindungen (جمع) → wurden" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "درس تاریخ",
+      "context": "معلم و دانش‌آموز درباره تاریخ صحبت می‌کنند",
+      "lines": [
+        { "speaker": "Lehrer", "text": { "de": "Wann wurde das Penicillin entdeckt?", "fa": "پنی‌سیلین چه زمانی کشف شد؟" }, "mood": "neutral" },
+        { "speaker": "Schüler", "text": { "de": "Es wurde 1928 von Alexander Fleming entdeckt.", "fa": "در سال ۱۹۲۸ توسط الکساندر فلمینگ کشف شد." }, "mood": "happy" },
+        { "speaker": "Lehrer", "text": { "de": "Richtig! Und wann wurde das erste Auto erfunden?", "fa": "درست! و اولین اتومبیل کی اختراع شد؟" }, "mood": "excited" },
+        { "speaker": "Schüler", "text": { "de": "Das erste Auto wurde 1886 von Karl Benz erfunden.", "fa": "اولین اتومبیل در سال ۱۸۸۶ توسط کارل بنز اختراع شد." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "پنی‌سیلین توسط چه کسی کشف شد؟", "options": ["کارل بنز", "الکساندر فلمینگ", "آلبرت انیشتین"], "correctIndex": 1, "explanation": "دانش‌آموز گفت: von Alexander Fleming" },
+        { "question": "اولین اتومبیل چه سالی اختراع شد؟", "options": ["۱۸۸۶", "۱۹۲۸", "۱۹۰۰"], "correctIndex": 0, "explanation": "دانش‌آموز گفت: 1886" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["entdeckt.", "Amerika", "1492", "wurde"],
+      "correctOrder": [1, 3, 2, 0],
+      "correctSentence": { "de": "Amerika wurde 1492 entdeckt.", "fa": "آمریکا در سال ۱۴۹۲ کشف شد." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جمله Das Telefon wurde erfunden از wurden استفاده می‌شود چون Telefon مفرد است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! چون Telefon مفرد است، از wurde استفاده می‌شود (نه wurden)" }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "فعل را با Partizip II درست وصل کنید",
+      "items": [
+        { "id": "i1", "text": "errichten" },
+        { "id": "i2", "text": "zerstören" },
+        { "id": "i3", "text": "entdecken" },
+        { "id": "i4", "text": "erfinden" },
+        { "id": "i5", "text": "gründen" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "errichtet" },
+        { "id": "m2", "text": "zerstört" },
+        { "id": "m3", "text": "entdeckt" },
+        { "id": "m4", "text": "erfunden" },
+        { "id": "m5", "text": "gegründet" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "کتاب در سال ۲۰۱۰ منتشر شد.",
+      "sentenceTemplate": "Das Buch {0} 2010 {1}.",
+      "options": ["wurde", "veröffentlicht", "wird", "veröffentlichen"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Das Buch wurde 2010 veröffentlicht.", "fa": "کتاب در سال ۲۰۱۰ منتشر شد." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s8",
+      "title": "تفاوت Passiv Präteritum و Passiv Perfekt",
+      "content": "**Passiv Präteritum یا Passiv Perfekt؟**\n\nهر دو برای بیان عمل انجام‌شده در گذشته استفاده می‌شوند:\n\n**Passiv Präteritum:**\n- Das Buch **wurde geschrieben**.\n- استفاده در نوشتار، اخبار، متون رسمی\n\n**Passiv Perfekt:**\n- Das Buch **ist geschrieben worden**.\n- استفاده در مکالمه روزمره\n\n**نکته:** در زبان نوشتاری و رسمی، Passiv Präteritum رایج‌تر است!\n\n**تفاوت ساختاری:**\n- Präteritum: wurde + Partizip II\n- Perfekt: ist/sind + Partizip II + worden",
+      "examples": [
+        { "de": "Die Stadt wurde 1945 zerstört. (نوشتاری)", "fa": "شهر در سال ۱۹۴۵ ویران شد." },
+        { "de": "Die Stadt ist 1945 zerstört worden. (گفتاری)", "fa": "شهر در سال ۱۹۴۵ ویران شده است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "veröffentlichen", "fa": "منتشر کردن" },
+      "example": { "text": { "de": "Der Roman wurde letztes Jahr veröffentlicht.", "fa": "رمان سال گذشته منتشر شد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "veröffentlichen",
+      "translation": "منتشر کردن",
+      "syllables": ["ver", "öf", "fent", "li", "chen"],
+      "distractors": ["vor", "af", "font", "la", "kon"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Du {0} zum Essen eingeladen.",
+      "options": ["wurdest", "wurde", "wurden", "wurdet"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "برای du از wurdest استفاده می‌شود" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ihr {0} nicht informiert.",
+      "options": ["wurdet", "wurde", "wurden", "wurdest"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "برای ihr از wurdet استفاده می‌شود" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Berliner Mauer {0} 1989 geöffnet.",
+      "options": ["wurde", "wurden", "wurdest", "wurdet"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Die Berliner Mauer (مفرد) → wurde" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["gegründet.", "Die", "wurde", "1949", "Bundesrepublik"],
+      "correctOrder": [1, 4, 2, 3, 0],
+      "correctSentence": { "de": "Die Bundesrepublik wurde 1949 gegründet.", "fa": "جمهوری فدرال در سال ۱۹۴۹ تأسیس شد." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "Passiv Präteritum بیشتر در زبان نوشتاری و اخبار استفاده می‌شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! Passiv Präteritum در نوشتار رسمی، اخبار و متون تاریخی رایج‌تر است." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "شرکت در سال ۱۹۹۰ تأسیس شد.",
+      "sentenceTemplate": "Die Firma {0} 1990 {1}.",
+      "options": ["wurde", "gegründet", "wird", "gründen"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Die Firma wurde 1990 gegründet.", "fa": "شرکت در سال ۱۹۹۰ تأسیس شد." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: تاریخ برلین",
+      "passage": {
+        "de": "Berlin hat eine bewegte Geschichte. Die Stadt wurde im 13. Jahrhundert gegründet. Im Zweiten Weltkrieg wurden viele Gebäude zerstört. Nach dem Krieg wurde die Stadt geteilt. Die Berliner Mauer wurde 1961 errichtet. Sie trennte Ost- und West-Berlin. 1989 wurde die Mauer geöffnet und ein Jahr später wurde Deutschland wiedervereinigt. Heute ist Berlin die Hauptstadt und viele neue Gebäude wurden gebaut.",
+        "fa": "برلین تاریخ پرتلاطمی دارد. این شهر در قرن سیزدهم تأسیس شد. در جنگ جهانی دوم بسیاری از ساختمان‌ها ویران شدند. پس از جنگ، شهر تقسیم شد. دیوار برلین در سال ۱۹۶۱ برپا شد. این دیوار برلین شرقی و غربی را جدا می‌کرد. در سال ۱۹۸۹ دیوار باز شد و یک سال بعد آلمان دوباره متحد شد. امروز برلین پایتخت است و ساختمان‌های جدید زیادی ساخته شده‌اند."
+      },
+      "questions": [
+        { "question": "برلین در چه قرنی تأسیس شد؟", "options": ["قرن ۱۲", "قرن ۱۳", "قرن ۱۴"], "correctIndex": 1, "explanation": "متن گفت: im 13. Jahrhundert gegründet" },
+        { "question": "دیوار برلین چه سالی ساخته شد؟", "options": ["۱۹۴۵", "۱۹۶۱", "۱۹۸۹"], "correctIndex": 1, "explanation": "متن گفت: Die Berliner Mauer wurde 1961 errichtet" },
+        { "question": "چه اتفاقی در سال ۱۹۸۹ افتاد؟", "options": ["دیوار ساخته شد", "دیوار باز شد", "شهر تقسیم شد"], "correctIndex": 1, "explanation": "متن گفت: 1989 wurde die Mauer geöffnet" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die alte Bibliothek", "fa": "کتابخانه قدیمی" },
+      "characters": ["Oma", "Enkel"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Oma und ihr Enkel besuchen eine alte Bibliothek.", "fa": "مادربزرگ و نوه‌اش از یک کتابخانه قدیمی بازدید می‌کنند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Enkel",
+          "text": { "de": "Oma, wann wurde diese Bibliothek gebaut?", "fa": "مادربزرگ، این کتابخانه کی ساخته شد؟" },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Oma",
+          "text": { "de": "Sie wurde vor 200 Jahren errichtet.", "fa": "۲۰۰ سال پیش برپا شد." },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Enkel",
+          "text": { "de": "Wurde sie im Krieg zerstört?", "fa": "در جنگ ویران شد؟" },
+          "mood": "sad"
+        },
+        {
+          "type": "question",
+          "question": "کتابخانه چند سال پیش ساخته شد؟",
+          "options": ["۱۰۰ سال", "۲۰۰ سال", "۳۰۰ سال"],
+          "correctIndex": 1,
+          "explanation": "مادربزرگ گفت: vor 200 Jahren"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Oma",
+          "text": { "de": "Nein, sie wurde gerettet. Aber viele Bücher wurden gestohlen.", "fa": "نه، نجات یافت. اما خیلی از کتاب‌ها دزدیده شدند." },
+          "mood": "sad"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Enkel",
+          "text": { "de": "Das ist traurig. Wurden sie jemals gefunden?", "fa": "غم‌انگیز است. هیچ‌وقت پیدا شدند؟" },
+          "mood": "sad"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Oma",
+          "text": { "de": "Einige wurden Jahre später in einem anderen Land entdeckt.", "fa": "بعضی‌ها سال‌ها بعد در کشور دیگری کشف شدند." },
+          "mood": "surprised"
+        },
+        {
+          "type": "question",
+          "question": "چه اتفاقی برای کتاب‌ها افتاد؟",
+          "options": ["سوختند", "دزدیده شدند", "فروخته شدند"],
+          "correctIndex": 1,
+          "explanation": "مادربزرگ گفت: viele Bücher wurden gestohlen"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Enkel",
+          "text": { "de": "Toll! Dann wurden sie zurückgebracht?", "fa": "عالی! پس برگردانده شدند؟" },
+          "mood": "excited"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Oma",
+          "text": { "de": "Ja! Letztes Jahr wurde eine Ausstellung darüber eröffnet.", "fa": "بله! سال گذشته یک نمایشگاه درباره آن افتتاح شد." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "سال گذشته چه اتفاقی افتاد؟",
+          "options": ["کتابخانه بسته شد", "نمایشگاه افتتاح شد", "کتاب‌ها سوختند"],
+          "correctIndex": 1,
+          "explanation": "مادربزرگ گفت: eine Ausstellung wurde eröffnet"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع",
+      "instruction": "شکل درست wurde/wurden را انتخاب کنید",
+      "questions": [
+        { "prompt": "Das Buch ___", "left": "wurde", "right": "wurden", "correctSide": "left" },
+        { "prompt": "Die Bücher ___", "left": "wurde", "right": "wurden", "correctSide": "right" },
+        { "prompt": "Die Stadt ___", "left": "wurde", "right": "wurden", "correctSide": "left" },
+        { "prompt": "Viele Häuser ___", "left": "wurde", "right": "wurden", "correctSide": "right" },
+        { "prompt": "Der Film ___", "left": "wurde", "right": "wurden", "correctSide": "left" },
+        { "prompt": "Die Briefe ___", "left": "wurde", "right": "wurden", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Das Haus wurde gebaut.",
+      "translation": "خانه ساخته شد."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Die Stadt wurde zerstört.",
+      "translation": "شهر ویران شد."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Amerika wurde entdeckt.",
+      "translation": "آمریکا کشف شد."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "Das Buch ___ geschrieben.", "options": ["wurde", "wurden"], "correctAnswerIndex": 0 },
+        { "question": "Die Filme ___ produziert.", "options": ["wurde", "wurden"], "correctAnswerIndex": 1 },
+        { "question": "er/sie/es → ___", "options": ["wurde", "wurden"], "correctAnswerIndex": 0 },
+        { "question": "wir → ___", "options": ["wurde", "wurden"], "correctAnswerIndex": 1 },
+        { "question": "Die Mauer ___ errichtet.", "options": ["wurde", "wurden"], "correctAnswerIndex": 0 },
+        { "question": "Viele Entdeckungen ___ gemacht.", "options": ["wurde", "wurden"], "correctAnswerIndex": 1 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "errichten", "fa": "برپا کردن" },
+        { "de": "zerstören", "fa": "ویران کردن" },
+        { "de": "entdecken", "fa": "کشف کردن" },
+        { "de": "erfinden", "fa": "اختراع کردن" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "افعال این درس را پیدا کنید",
+      "targetWords": ["errichten", "zerstören", "entdecken", "erfinden", "gründen"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "errichten", "fa": "___", "options": ["ویران کردن", "برپا کردن", "کشف کردن", "منتشر کردن"], "correctIndex": 1 },
+        { "de": "entdecken", "fa": "___", "options": ["اختراع کردن", "تأسیس کردن", "کشف کردن", "ویران کردن"], "correctIndex": 2 },
+        { "de": "veröffentlichen", "fa": "___", "options": ["منتشر کردن", "برپا کردن", "اختراع کردن", "تأسیس کردن"], "correctIndex": 0 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما مجهول در گذشته ساده (Passiv Präteritum) را یاد گرفتید!",
+      "keyPoints": [
+        "ساختار: wurde/wurden + Partizip II",
+        "مفرد: wurde (ich, du, er/sie/es)",
+        "جمع: wurden (wir, ihr, sie/Sie)",
+        "du → wurdest, ihr → wurdet",
+        "کاربرد در اخبار، متون تاریخی و نوشتار رسمی",
+        "تفاوت با Passiv Perfekt: wurde gemacht (نوشتاری) - ist gemacht worden (گفتاری)"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "errichten", "fa": "ساختن/برپا کردن" } },
+        { "word": { "de": "zerstören", "fa": "نابود کردن/ویران کردن" } },
+        { "word": { "de": "entdecken", "fa": "کشف کردن" } },
+        { "word": { "de": "erfinden", "fa": "اختراع کردن" } },
+        { "word": { "de": "gründen", "fa": "تأسیس کردن" } },
+        { "word": { "de": "veröffentlichen", "fa": "منتشر کردن" } }
+      ]
+    }
+  ]
+}

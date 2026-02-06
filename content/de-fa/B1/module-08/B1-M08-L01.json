@@ -1,0 +1,516 @@
+{
+  "id": "B1-M08-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Passiv mit Modalverben", "fa": "مجهول با افعال کمکی وجهی" },
+  "description": "یاد بگیرید چگونه جملات مجهول را با افعال کمکی مانند kann, muss, soll, darf بسازید: Das kann gemacht werden, Das muss erledigt werden",
+  "level": "B1",
+  "module": 8,
+  "lessonNumber": 1,
+  "totalSteps": 45,
+  "estimatedMinutes": 25,
+  "vocabulary": [
+    { "de": "erledigen", "fa": "انجام دادن/به پایان رساندن", "grammar": { "pos": "verb", "conjugation": "regular" } },
+    { "de": "reparieren", "fa": "تعمیر کردن", "grammar": { "pos": "verb", "conjugation": "regular" } },
+    { "de": "überprüfen", "fa": "بررسی کردن/کنترل کردن", "grammar": { "pos": "verb", "conjugation": "regular" } },
+    { "de": "genehmigen", "fa": "تأیید کردن/تصویب کردن", "grammar": { "pos": "verb", "conjugation": "regular" } },
+    { "de": "bearbeiten", "fa": "پردازش کردن/ویرایش کردن", "grammar": { "pos": "verb", "conjugation": "regular" } },
+    { "de": "verschieben", "fa": "به تعویق انداختن/جابجا کردن", "grammar": { "pos": "verb", "conjugation": "regular" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "مجهول با افعال کمکی وجهی چیست؟",
+      "content": "**Passiv mit Modalverben (مجهول با افعال کمکی وجهی)**\n\nدر آلمانی می‌توانیم جملات مجهول را با افعال کمکی وجهی (können, müssen, sollen, dürfen) ترکیب کنیم.\n\n**ساختار:**\n```\nفاعل + فعل کمکی وجهی صرف‌شده + Partizip II + werden\n```\n\n**معلوم:**\n- Man kann das Problem lösen.\n- می‌توان این مشکل را حل کرد.\n\n**مجهول:**\n- Das Problem kann gelöst werden.\n- این مشکل می‌تواند حل شود.\n\n**نکته:** در مجهول با فعل کمکی، werden همیشه در آخر جمله می‌آید!",
+      "examples": [
+        { "de": "Das muss heute erledigt werden.", "fa": "این باید امروز انجام شود." },
+        { "de": "Der Computer kann repariert werden.", "fa": "کامپیوتر می‌تواند تعمیر شود." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "erledigen", "fa": "انجام دادن/به پایان رساندن" },
+      "example": { "text": { "de": "Die Arbeit muss schnell erledigt werden.", "fa": "کار باید سریع انجام شود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "erledigen",
+      "translation": "انجام دادن",
+      "syllables": ["er", "le", "di", "gen"],
+      "distractors": ["ar", "lo", "du", "gan"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "reparieren", "fa": "تعمیر کردن" },
+      "example": { "text": { "de": "Das Auto kann morgen repariert werden.", "fa": "ماشین می‌تواند فردا تعمیر شود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "reparieren",
+      "translation": "تعمیر کردن",
+      "syllables": ["re", "pa", "rie", "ren"],
+      "distractors": ["ra", "po", "rue", "ron"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s4",
+      "title": "معنی افعال کمکی وجهی در مجهول",
+      "content": "**افعال کمکی وجهی و معانی‌شان:**\n\n| فعل کمکی | معنی | مثال مجهول |\n|----------|------|------------|\n| **können** | امکان | Das kann gemacht werden. (این می‌تواند انجام شود) |\n| **müssen** | ضرورت | Das muss erledigt werden. (این باید انجام شود) |\n| **sollen** | توصیه/وظیفه | Das soll überprüft werden. (این باید بررسی شود) |\n| **dürfen** | اجازه | Das darf nicht verschoben werden. (این نباید به تعویق بیفتد) |\n\n**تفاوت müssen و sollen:**\n- **müssen** = اجبار قوی (باید حتماً)\n- **sollen** = انتظار یا توصیه (باید، بهتر است)",
+      "examples": [
+        { "de": "Der Antrag muss genehmigt werden.", "fa": "درخواست باید تأیید شود. (اجباری)" },
+        { "de": "Der Antrag soll heute bearbeitet werden.", "fa": "درخواست باید امروز پردازش شود. (توصیه)" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "überprüfen", "fa": "بررسی کردن/کنترل کردن" },
+      "example": { "text": { "de": "Die Dokumente sollen überprüft werden.", "fa": "مدارک باید بررسی شوند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "überprüfen",
+      "translation": "بررسی کردن",
+      "syllables": ["ü", "ber", "prü", "fen"],
+      "distractors": ["o", "bor", "pro", "fan"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "ساختار مجهول با فعل کمکی وجهی چگونه است؟",
+      "options": [
+        "Modalverb + werden + Partizip II",
+        "Partizip II + Modalverb + werden",
+        "Modalverb + Partizip II + werden",
+        "werden + Modalverb + Partizip II"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! ساختار درست: فعل کمکی صرف‌شده + Partizip II + werden", "incorrect": "ساختار درست: Modalverb (صرف‌شده) + Partizip II + werden" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله به شکل مجهول با فعل کمکی درست است؟",
+      "options": [
+        "Das Problem werden gelöst kann.",
+        "Das Problem kann gelöst werden.",
+        "Das Problem kann werden gelöst.",
+        "Gelöst werden kann das Problem."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! kann در جایگاه دوم و werden در آخر می‌آید.", "incorrect": "جایگاه درست: Das Problem kann gelöst werden." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "genehmigen", "fa": "تأیید کردن/تصویب کردن" },
+      "example": { "text": { "de": "Der Plan muss vom Chef genehmigt werden.", "fa": "برنامه باید توسط رئیس تأیید شود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "genehmigen",
+      "translation": "تأیید کردن",
+      "syllables": ["ge", "neh", "mi", "gen"],
+      "distractors": ["ga", "noh", "mu", "gan"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "فعل کمکی مناسب را انتخاب کنید",
+      "sentence": "Das Auto {0} heute repariert werden. Es ist sehr wichtig!",
+      "options": ["kann", "muss", "darf", "soll"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "چون خیلی مهم است، باید حتماً (muss) تعمیر شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "شکل درست جمله مجهول را کامل کنید",
+      "sentence": "Die E-Mail kann morgen {0} werden.",
+      "options": ["bearbeiten", "bearbeitet", "bearbeitete", "bearbeitend"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "در مجهول با فعل کمکی از Partizip II (bearbeitet) استفاده می‌کنیم." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "تبدیل معلوم به مجهول با فعل کمکی",
+      "content": "**مقایسه معلوم و مجهول:**\n\n**معلوم با فعل کمکی:**\n- Man kann das Formular ausfüllen.\n- Man muss die Rechnung bezahlen.\n- Man soll den Bericht schreiben.\n\n**مجهول با فعل کمکی:**\n- Das Formular **kann** ausgefüllt **werden**.\n- Die Rechnung **muss** bezahlt **werden**.\n- Der Bericht **soll** geschrieben **werden**.\n\n**نکته کلیدی:**\n- مفعول معلوم = فاعل مجهول\n- فعل اصلی تبدیل به Partizip II می‌شود\n- werden به آخر جمله می‌رود",
+      "examples": [
+        { "de": "Man muss das Problem lösen. Das Problem muss gelöst werden.", "fa": "باید مشکل را حل کرد. مشکل باید حل شود." },
+        { "de": "Man kann die Tür öffnen. Die Tür kann geöffnet werden.", "fa": "می‌توان در را باز کرد. در می‌تواند باز شود." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "bearbeiten", "fa": "پردازش کردن/ویرایش کردن" },
+      "example": { "text": { "de": "Der Antrag kann online bearbeitet werden.", "fa": "درخواست می‌تواند آنلاین پردازش شود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "bearbeiten",
+      "translation": "پردازش کردن",
+      "syllables": ["be", "ar", "bei", "ten"],
+      "distractors": ["ba", "or", "bau", "tan"]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "verschieben", "fa": "به تعویق انداختن/جابجا کردن" },
+      "example": { "text": { "de": "Das Meeting darf nicht verschoben werden.", "fa": "جلسه نباید به تعویق بیفتد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "verschieben",
+      "translation": "به تعویق انداختن",
+      "syllables": ["ver", "schie", "ben"],
+      "distractors": ["vor", "schee", "bon", "ban"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "sentence": "Der Termin darf nicht {0} werden.",
+      "options": ["verschieben", "verschoben", "verschiebt", "verschiebte"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "در مجهول از Partizip II استفاده می‌کنیم: verschoben" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Die Dokumente {0} noch heute überprüft {1}.",
+      "options": ["müssen", "werden", "können", "sollen"],
+      "correctAnswers": [0, 1],
+      "feedback": { "explanation": "Die Dokumente müssen noch heute überprüft werden." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در محل کار",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Büro, während einer Besprechung", "fa": "در دفتر، در یک جلسه" }
+      },
+      "lines": [
+        { "speaker": "Frau Schmidt", "text": { "de": "Was muss heute noch erledigt werden?", "fa": "چه کاری باید امروز انجام شود؟" }, "mood": "neutral" },
+        { "speaker": "Herr Weber", "text": { "de": "Die Berichte müssen fertig geschrieben werden.", "fa": "گزارش‌ها باید کامل نوشته شوند." }, "mood": "neutral" },
+        { "speaker": "Frau Schmidt", "text": { "de": "Und wann kann der neue Antrag genehmigt werden?", "fa": "و درخواست جدید کی می‌تواند تأیید شود؟" }, "mood": "confused" },
+        { "speaker": "Herr Weber", "text": { "de": "Das soll bis Freitag bearbeitet werden.", "fa": "این باید تا جمعه پردازش شود." }, "mood": "happy" },
+        { "speaker": "Frau Schmidt", "text": { "de": "Gut. Und die Präsentation darf nicht verschoben werden!", "fa": "خوب. و ارائه نباید به تعویق بیفتد!" }, "mood": "excited" }
+      ],
+      "questions": [
+        { "question": "چه چیزی باید امروز انجام شود؟", "options": ["ارائه", "گزارش‌ها", "جلسه"], "correctIndex": 1, "explanation": "Die Berichte müssen fertig geschrieben werden." },
+        { "question": "درخواست جدید تا چه زمانی باید پردازش شود؟", "options": ["امروز", "فردا", "جمعه"], "correctIndex": 2, "explanation": "Das soll bis Freitag bearbeitet werden." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["werden", "kann", "Das", "gemacht"],
+      "correctOrder": [2, 1, 3, 0],
+      "correctSentence": { "de": "Das kann gemacht werden.", "fa": "این می‌تواند انجام شود." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["repariert", "Auto", "werden", "muss", "Das"],
+      "correctOrder": [4, 3, 0, 2],
+      "correctSentence": { "de": "Das Auto muss repariert werden.", "fa": "ماشین باید تعمیر شود." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["werden", "Die", "sollen", "Unterlagen", "überprüft"],
+      "correctOrder": [1, 3, 2, 4, 0],
+      "correctSentence": { "de": "Die Unterlagen sollen überprüft werden.", "fa": "مدارک باید بررسی شوند." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در مجهول با فعل کمکی وجهی، werden در جایگاه دوم جمله می‌آید.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! werden در آخر جمله می‌آید. فعل کمکی (kann, muss, soll) در جایگاه دوم است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "جمله Das muss erledigt werden یعنی این باید انجام شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! muss = باید، erledigt werden = انجام شود" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جمله Der Plan kann geändert werden، فعل اصلی geändert است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! geändert (Partizip II از ändern) فعل اصلی است که به شکل مجهول آمده." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جمله معلوم را به مجهول تبدیل کنید",
+      "sentence": "Man muss die Rechnung bezahlen. Die Rechnung muss {0} werden.",
+      "options": ["bezahlen", "bezahlt", "bezahlte", "bezahlend"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "در مجهول از Partizip II استفاده می‌کنیم: bezahlt" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "فعل کمکی مناسب را انتخاب کنید",
+      "sentence": "Diese Aufgabe {0} nicht verschoben werden. Es ist verboten!",
+      "options": ["kann", "muss", "darf", "soll"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "darf nicht = اجازه نیست، نباید (ممنوعیت)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "تعمیرات",
+      "scene": {
+        "location": "garage",
+        "description": { "de": "In einer Autowerkstatt", "fa": "در تعمیرگاه ماشین" }
+      },
+      "lines": [
+        { "speaker": "Kunde", "text": { "de": "Kann mein Auto heute noch repariert werden?", "fa": "ماشینم می‌تواند امروز تعمیر شود؟" }, "mood": "confused" },
+        { "speaker": "Mechaniker", "text": { "de": "Das muss erst überprüft werden.", "fa": "این باید اول بررسی شود." }, "mood": "neutral" },
+        { "speaker": "Kunde", "text": { "de": "Wie lange dauert das?", "fa": "چقدر طول می‌کشد؟" }, "mood": "surprised" },
+        { "speaker": "Mechaniker", "text": { "de": "Die Bremsen können schnell repariert werden. Aber der Motor muss genauer untersucht werden.", "fa": "ترمزها می‌توانند سریع تعمیر شوند. اما موتور باید دقیق‌تر بررسی شود." }, "mood": "happy" },
+        { "speaker": "Kunde", "text": { "de": "Okay, das soll so schnell wie möglich erledigt werden.", "fa": "باشه، این باید هرچه سریع‌تر انجام شود." }, "mood": "excited" }
+      ],
+      "questions": [
+        { "question": "چه چیزی باید اول بررسی شود؟", "options": ["ترمزها", "موتور", "ماشین"], "correctIndex": 2, "explanation": "مکانیک گفت: Das muss erst überprüft werden (ماشین)" },
+        { "question": "چه چیزی می‌تواند سریع تعمیر شود؟", "options": ["موتور", "ترمزها", "همه چیز"], "correctIndex": 1, "explanation": "Die Bremsen können schnell repariert werden." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "جمله معلوم را با معادل مجهولش جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Man kann das Problem lösen." },
+        { "id": "i2", "text": "Man muss die Arbeit erledigen." },
+        { "id": "i3", "text": "Man soll den Plan genehmigen." },
+        { "id": "i4", "text": "Man darf das nicht verschieben." }
+      ],
+      "matches": [
+        { "id": "m1", "text": "Das Problem kann gelöst werden." },
+        { "id": "m2", "text": "Die Arbeit muss erledigt werden." },
+        { "id": "m3", "text": "Der Plan soll genehmigt werden." },
+        { "id": "m4", "text": "Das darf nicht verschoben werden." }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "این باید امروز انجام شود.",
+      "sentenceTemplate": "Das {0} heute {1} werden.",
+      "options": ["muss", "erledigt", "kann", "repariert"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Das muss heute erledigt werden.", "fa": "این باید امروز انجام شود." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "ماشین می‌تواند فردا تعمیر شود.",
+      "sentenceTemplate": "Das Auto {0} morgen {1} werden.",
+      "options": ["kann", "repariert", "muss", "erledigt"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Das Auto kann morgen repariert werden.", "fa": "ماشین می‌تواند فردا تعمیر شود." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: قوانین اداری",
+      "passage": {
+        "de": "In unserem Büro gibt es neue Regeln. Alle Anträge müssen innerhalb von drei Tagen bearbeitet werden. Die Dokumente sollen von zwei Personen überprüft werden. Wichtige Entscheidungen können nur vom Abteilungsleiter genehmigt werden. Termine dürfen nicht ohne Erlaubnis verschoben werden. Wenn ein Problem entsteht, muss es sofort dem Chef gemeldet werden. Diese Regeln sollen ab nächster Woche befolgt werden.",
+        "fa": "در دفتر ما قوانین جدیدی وجود دارد. همه درخواست‌ها باید ظرف سه روز پردازش شوند. مدارک باید توسط دو نفر بررسی شوند. تصمیمات مهم فقط توسط رئیس بخش می‌توانند تأیید شوند. قرارها بدون اجازه نباید به تعویق بیفتند. اگر مشکلی پیش آمد، باید فوراً به رئیس گزارش داده شود. این قوانین باید از هفته آینده رعایت شوند."
+      },
+      "questions": [
+        { "question": "درخواست‌ها ظرف چند روز باید پردازش شوند؟", "options": ["یک روز", "سه روز", "یک هفته"], "correctIndex": 1, "explanation": "Alle Anträge müssen innerhalb von drei Tagen bearbeitet werden." },
+        { "question": "چه کسی می‌تواند تصمیمات مهم را تأیید کند؟", "options": ["همه کارمندان", "رئیس بخش", "مدیر عامل"], "correctIndex": 1, "explanation": "Wichtige Entscheidungen können nur vom Abteilungsleiter genehmigt werden." },
+        { "question": "قرارها چه زمانی می‌توانند به تعویق بیفتند؟", "options": ["هر زمان", "با اجازه", "هرگز"], "correctIndex": 1, "explanation": "Termine dürfen nicht ohne Erlaubnis verschoben werden." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Das neue Projekt", "fa": "پروژه جدید" },
+      "characters": ["Lena", "Markus"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Lena und Markus besprechen ein neues Projekt im Büro.", "fa": "لنا و مارکوس در مورد یک پروژه جدید در دفتر صحبت می‌کنند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lena",
+          "text": { "de": "Der Projektplan muss bis nächste Woche fertig gemacht werden.", "fa": "برنامه پروژه باید تا هفته آینده آماده شود." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Markus",
+          "text": { "de": "Kann das nicht verschoben werden? Ich habe viel zu tun!", "fa": "نمی‌شود به تعویق بیفتد؟ من کار زیادی دارم!" },
+          "mood": "confused"
+        },
+        {
+          "type": "question",
+          "question": "مارکوس چه پیشنهادی دارد؟",
+          "options": ["شروع سریع‌تر", "به تعویق انداختن", "لغو پروژه"],
+          "correctIndex": 1,
+          "explanation": "مارکوس پرسید: Kann das nicht verschoben werden?"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lena",
+          "text": { "de": "Nein, das darf nicht verschoben werden. Der Chef wartet darauf.", "fa": "نه، این نباید به تعویق بیفتد. رئیس منتظر آن است." },
+          "mood": "surprised"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Markus",
+          "text": { "de": "Na gut. Dann soll die Arbeit aufgeteilt werden.", "fa": "باشه. پس کار باید تقسیم شود." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "چرا پروژه نمی‌تواند به تعویق بیفتد؟",
+          "options": ["پول کم است", "رئیس منتظر است", "تعطیلات نزدیک است"],
+          "correctIndex": 1,
+          "explanation": "لنا گفت: Der Chef wartet darauf."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lena",
+          "text": { "de": "Einverstanden! Du erstellst den Zeitplan, und der Rest kann von mir erledigt werden.", "fa": "موافقم! تو برنامه زمانی را درست کن، و بقیه می‌تواند توسط من انجام شود." },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "کار چگونه تقسیم می‌شود؟",
+          "options": ["همه کار را لنا انجام می‌دهد", "مارکوس برنامه زمانی و لنا بقیه", "همه کار را مارکوس انجام می‌دهد"],
+          "correctIndex": 1,
+          "explanation": "لنا گفت: Du erstellst den Zeitplan, und der Rest kann von mir erledigt werden."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع",
+      "instruction": "شکل درست مجهول را انتخاب کنید",
+      "questions": [
+        { "prompt": "Das kann ... werden", "left": "gemacht", "right": "machen", "correctSide": "left" },
+        { "prompt": "Die Arbeit muss ... werden", "left": "erledigen", "right": "erledigt", "correctSide": "right" },
+        { "prompt": "Der Plan soll ... werden", "left": "genehmigt", "right": "genehmigen", "correctSide": "left" },
+        { "prompt": "Das darf nicht ... werden", "left": "verschoben", "right": "verschieben", "correctSide": "left" },
+        { "prompt": "Die Dokumente können ... werden", "left": "überprüft", "right": "überprüfen", "correctSide": "left" },
+        { "prompt": "Die E-Mail muss ... werden", "left": "bearbeiten", "right": "bearbeitet", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Das muss heute erledigt werden.",
+      "translation": "این باید امروز انجام شود."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Der Plan kann geändert werden.",
+      "translation": "برنامه می‌تواند تغییر کند."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Die Dokumente sollen überprüft werden.",
+      "translation": "مدارک باید بررسی شوند."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "kann ... werden = ?", "options": ["می‌تواند ... شود", "باید ... شود"], "correctAnswerIndex": 0 },
+        { "question": "muss ... werden = ?", "options": ["می‌تواند ... شود", "باید ... شود"], "correctAnswerIndex": 1 },
+        { "question": "erledigt werden = ?", "options": ["انجام شود", "تعمیر شود"], "correctAnswerIndex": 0 },
+        { "question": "repariert werden = ?", "options": ["بررسی شود", "تعمیر شود"], "correctAnswerIndex": 1 },
+        { "question": "darf nicht ... werden = ?", "options": ["نباید ... شود", "می‌تواند ... شود"], "correctAnswerIndex": 0 },
+        { "question": "genehmigt werden = ?", "options": ["تأیید شود", "به تعویق بیفتد"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "erledigt werden", "fa": "انجام شود" },
+        { "de": "repariert werden", "fa": "تعمیر شود" },
+        { "de": "überprüft werden", "fa": "بررسی شود" },
+        { "de": "genehmigt werden", "fa": "تأیید شود" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "افعال این درس را پیدا کنید",
+      "targetWords": ["erledigen", "reparieren", "genehmigen", "bearbeiten", "verschieben"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "erledigen", "fa": "___", "options": ["تعمیر کردن", "انجام دادن", "بررسی کردن", "تأیید کردن"], "correctIndex": 1 },
+        { "de": "reparieren", "fa": "___", "options": ["انجام دادن", "تأیید کردن", "تعمیر کردن", "به تعویق انداختن"], "correctIndex": 2 },
+        { "de": "verschieben", "fa": "___", "options": ["پردازش کردن", "بررسی کردن", "تأیید کردن", "به تعویق انداختن"], "correctIndex": 3 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما ساختار مجهول با افعال کمکی وجهی را یاد گرفتید!",
+      "keyPoints": [
+        "ساختار: فعل کمکی + Partizip II + werden",
+        "können: امکان (Das kann gemacht werden)",
+        "müssen: ضرورت (Das muss erledigt werden)",
+        "sollen: توصیه (Das soll überprüft werden)",
+        "dürfen: اجازه (Das darf nicht verschoben werden)",
+        "werden همیشه در آخر جمله می‌آید"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "erledigen", "fa": "انجام دادن/به پایان رساندن" } },
+        { "word": { "de": "reparieren", "fa": "تعمیر کردن" } },
+        { "word": { "de": "überprüfen", "fa": "بررسی کردن/کنترل کردن" } },
+        { "word": { "de": "genehmigen", "fa": "تأیید کردن/تصویب کردن" } },
+        { "word": { "de": "bearbeiten", "fa": "پردازش کردن/ویرایش کردن" } },
+        { "word": { "de": "verschieben", "fa": "به تعویق انداختن/جابجا کردن" } }
+      ]
+    }
+  ]
+}
