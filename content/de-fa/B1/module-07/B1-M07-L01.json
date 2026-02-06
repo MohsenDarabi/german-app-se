@@ -1,0 +1,513 @@
+{
+  "id": "B1-M07-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "da-Komposita mit Akkusativ-Präpositionen", "fa": "ترکیبات da با حروف اضافه مفعولی" },
+  "description": "یاد بگیرید چگونه از ترکیبات da (dafür, dagegen, darauf, darum, dadurch, darüber) به جای حرف اضافه + das/es استفاده کنید",
+  "level": "B1",
+  "module": 7,
+  "lessonNumber": 1,
+  "totalSteps": 45,
+  "estimatedMinutes": 25,
+  "vocabulary": [
+    { "de": "dafür", "fa": "برای آن", "grammar": { "pos": "adverb" } },
+    { "de": "dagegen", "fa": "علیه آن/در مقابل آن", "grammar": { "pos": "adverb" } },
+    { "de": "darauf", "fa": "روی آن/برای آن", "grammar": { "pos": "adverb" } },
+    { "de": "darum", "fa": "به همین دلیل/درباره آن", "grammar": { "pos": "adverb" } },
+    { "de": "dadurch", "fa": "از طریق آن/به این وسیله", "grammar": { "pos": "adverb" } },
+    { "de": "darüber", "fa": "درباره آن/روی آن", "grammar": { "pos": "adverb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "ترکیبات da چیست؟",
+      "content": "**da-Komposita (ترکیبات da)**\n\nدر آلمانی وقتی می‌خواهیم به یک چیز (نه شخص) اشاره کنیم که قبلاً ذکر شده، به جای تکرار حرف اضافه + das یا es، از ترکیب da + حرف اضافه استفاده می‌کنیم.\n\n**ساختار:**\n```\nda + حرف اضافه = ترکیب جدید\n```\n\n**مثال:**\n- für das Buch → **dafür** (برای آن کتاب)\n- gegen den Plan → **dagegen** (علیه آن برنامه)\n\n**نکته مهم:** این ترکیبات فقط برای اشیاء و مفاهیم استفاده می‌شوند، نه برای اشخاص!\n\n**برای اشخاص:**\n- für ihn (برای او مرد)\n- für sie (برای او زن)",
+      "examples": [
+        { "de": "Ich interessiere mich für das Thema. Ich interessiere mich dafür.", "fa": "من به این موضوع علاقه‌مندم. من به آن علاقه‌مندم." },
+        { "de": "Warten Sie auf den Bus? Ja, ich warte darauf.", "fa": "منتظر اتوبوس هستید؟ بله، منتظر آن هستم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "dafür", "fa": "برای آن" },
+      "example": { "text": { "de": "Ich bin dafür, dass wir früher anfangen.", "fa": "من موافقم که زودتر شروع کنیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "dafür",
+      "translation": "برای آن",
+      "syllables": ["da", "für"],
+      "distractors": ["do", "fer", "für", "fa"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "dagegen", "fa": "علیه آن/در مقابل آن" },
+      "example": { "text": { "de": "Ich habe nichts dagegen.", "fa": "من مخالفتی ندارم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "dagegen",
+      "translation": "علیه آن",
+      "syllables": ["da", "ge", "gen"],
+      "distractors": ["ga", "gi", "gon", "ten"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s4",
+      "title": "قاعده r اضافی",
+      "content": "**قاعده مهم: افزودن r**\n\nوقتی حرف اضافه با حرف صدادار (a, e, i, o, u) شروع می‌شود، بین da و حرف اضافه یک **r** اضافه می‌کنیم.\n\n**بدون r (حرف اضافه با بی‌صدا شروع می‌شود):**\n- da + für = dafür\n- da + gegen = dagegen\n- da + durch = dadurch\n\n**با r (حرف اضافه با صدادار شروع می‌شود):**\n- da + auf = da**r**auf\n- da + über = da**r**über\n- da + um = da**r**um\n\n**چرا r؟** برای سهولت در تلفظ!",
+      "examples": [
+        { "de": "Ich freue mich darauf.", "fa": "من مشتاق آن هستم." },
+        { "de": "Wir sprechen darüber.", "fa": "ما درباره آن صحبت می‌کنیم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "darauf", "fa": "روی آن/برای آن" },
+      "example": { "text": { "de": "Ich freue mich darauf, dich zu sehen.", "fa": "مشتاقم که تو را ببینم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "darauf",
+      "translation": "روی آن",
+      "syllables": ["dar", "auf"],
+      "distractors": ["dor", "oof", "ouf", "ief"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام ترکیب درست است؟ da + auf = ?",
+      "options": ["daauf", "darauf", "dauf", "daüf"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! چون auf با صدادار شروع می‌شود، r اضافه می‌کنیم: darauf", "incorrect": "وقتی حرف اضافه با صدادار شروع شود، r اضافه می‌کنیم: da + r + auf = darauf" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام گزینه معادل für das Projekt است؟",
+      "options": ["darfür", "dafür", "fürdas", "fürda"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! da + für = dafür", "incorrect": "da + für = dafür (بدون r چون für با بی‌صدا شروع می‌شود)" }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "darum", "fa": "به همین دلیل/درباره آن" },
+      "example": { "text": { "de": "Darum geht es in diesem Buch.", "fa": "کتاب درباره همین است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "darum",
+      "translation": "به همین دلیل",
+      "syllables": ["dar", "um"],
+      "distractors": ["dom", "rom", "om", "im"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "ترکیب da مناسب را انتخاب کنید",
+      "sentence": "Ich interessiere mich für Musik. Ich interessiere mich {0}.",
+      "options": ["dagegen", "dafür", "darum", "darauf"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "sich interessieren für → dafür (برای آن)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "ترکیب da مناسب را انتخاب کنید",
+      "sentence": "Wir warten auf den Bus. Wir warten {0}.",
+      "options": ["dafür", "dagegen", "darauf", "darum"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "warten auf → darauf (منتظر آن)" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "ترکیبات da با افعال",
+      "content": "**ترکیبات da با افعال پرکاربرد**\n\nبسیاری از افعال آلمانی با حرف اضافه خاصی می‌آیند. وقتی به چیزی (نه شخصی) اشاره می‌کنیم:\n\n| فعل | ترکیب da |\n|-----|----------|\n| warten auf | darauf warten |\n| sich freuen auf | sich darauf freuen |\n| denken an | daran denken |\n| sich interessieren für | sich dafür interessieren |\n| sprechen über | darüber sprechen |\n| träumen von | davon träumen |\n\n**نکته:** حرف اضافه همان می‌ماند، فقط das/es با da جایگزین می‌شود.\n\n**مثال:**\n- Ich denke an das Treffen. → Ich denke **daran**.\n- Wir sprechen über das Problem. → Wir sprechen **darüber**.",
+      "examples": [
+        { "de": "Ich träume davon, nach Berlin zu reisen.", "fa": "رویای سفر به برلین را دارم." },
+        { "de": "Hast du daran gedacht?", "fa": "به آن فکر کردی؟" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "dadurch", "fa": "از طریق آن/به این وسیله" },
+      "example": { "text": { "de": "Dadurch habe ich viel gelernt.", "fa": "از این طریق خیلی یاد گرفتم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "dadurch",
+      "translation": "از طریق آن",
+      "syllables": ["da", "durch"],
+      "distractors": ["do", "dorch", "duch", "dirch"]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "darüber", "fa": "درباره آن/روی آن" },
+      "example": { "text": { "de": "Wir müssen darüber sprechen.", "fa": "باید درباره آن صحبت کنیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "darüber",
+      "translation": "درباره آن",
+      "syllables": ["dar", "ü", "ber"],
+      "distractors": ["dor", "ber", "bor", "ir"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "ترکیب da مناسب را انتخاب کنید",
+      "sentence": "Er hat nichts {0} gesagt. Er hat das Thema nicht erwähnt.",
+      "options": ["dafür", "darüber", "dagegen", "darauf"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "sprechen/sagen über → darüber (درباره آن)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "ترکیب da مناسب را انتخاب کنید",
+      "sentence": "Bist du {0} oder {1}? (موافق یا مخالف)",
+      "options": ["dafür", "dagegen", "darauf", "darum"],
+      "correctAnswers": [0, 1],
+      "feedback": { "explanation": "dafür = موافق، dagegen = مخالف" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "بحث درباره یک پروژه",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Büro bei einer Besprechung", "fa": "در دفتر در یک جلسه" }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Was hältst du von dem neuen Projekt?", "fa": "نظرت درباره پروژه جدید چیه؟" }, "mood": "neutral" },
+        { "speaker": "Max", "text": { "de": "Ich bin dafür. Es klingt interessant.", "fa": "من موافقم. جالب به نظر می‌رسد." }, "mood": "happy" },
+        { "speaker": "Anna", "text": { "de": "Und was ist mit den Kosten? Hast du darüber nachgedacht?", "fa": "و هزینه‌ها چی؟ به آن فکر کردی؟" }, "mood": "confused" },
+        { "speaker": "Max", "text": { "de": "Ja, ich habe daran gedacht. Wir können dadurch sogar Geld sparen.", "fa": "بله، به آن فکر کردم. حتی می‌توانیم از این طریق پول پس‌انداز کنیم." }, "mood": "excited" },
+        { "speaker": "Anna", "text": { "de": "Dann bin ich auch nicht dagegen.", "fa": "پس من هم مخالف نیستم." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "نظر ماکس درباره پروژه چیست؟", "options": ["مخالف است", "موافق است", "نظری ندارد"], "correctIndex": 1, "explanation": "ماکس گفت: Ich bin dafür" },
+        { "question": "آنا درباره چه چیزی سؤال کرد؟", "options": ["زمان", "هزینه‌ها", "مکان"], "correctIndex": 1, "explanation": "آنا پرسید: Was ist mit den Kosten? Hast du darüber nachgedacht?" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["dafür", "bin", "Ich"],
+      "correctOrder": [2, 1, 0],
+      "correctSentence": { "de": "Ich bin dafür.", "fa": "من موافقم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["freue", "darauf", "mich", "Ich"],
+      "correctOrder": [3, 0, 2, 1],
+      "correctSentence": { "de": "Ich freue mich darauf.", "fa": "من مشتاق آن هستم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["sprechen", "müssen", "darüber", "Wir"],
+      "correctOrder": [3, 1, 2, 0],
+      "correctSentence": { "de": "Wir müssen darüber sprechen.", "fa": "ما باید درباره آن صحبت کنیم." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "ترکیبات da را می‌توان برای اشاره به اشخاص استفاده کرد.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! ترکیبات da فقط برای اشیاء و مفاهیم استفاده می‌شوند. برای اشخاص از حرف اضافه + ضمیر استفاده می‌کنیم: für ihn, auf sie" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "وقتی حرف اضافه با صدادار شروع شود، بین da و حرف اضافه r می‌گذاریم: darauf, darüber, darum",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! da + auf = darauf، da + über = darüber، da + um = darum" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "دو جمله Ich warte auf den Bus و Ich warte darauf معنی یکسان دارند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! darauf جایگزین auf den Bus می‌شود وقتی مشخص است منظور چیست." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "ترکیب da مناسب را انتخاب کنید",
+      "sentence": "{0} habe ich viel Zeit gespart.",
+      "options": ["Darauf", "Dadurch", "Dafür", "Dagegen"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Dadurch = از این طریق، به این وسیله" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "ترکیب da مناسب را انتخاب کنید",
+      "sentence": "Es geht {0}, eine Lösung zu finden.",
+      "options": ["dafür", "dagegen", "darauf", "darum"],
+      "correctAnswers": [3],
+      "feedback": { "explanation": "Es geht darum = موضوع این است که، صحبت از این است که" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "منتظر تعطیلات",
+      "scene": {
+        "location": "cafe",
+        "description": { "de": "Im Café", "fa": "در کافه" }
+      },
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Freust du dich auf den Urlaub?", "fa": "مشتاق تعطیلات هستی؟" }, "mood": "happy" },
+        { "speaker": "Tom", "text": { "de": "Ja, ich freue mich sehr darauf!", "fa": "بله، خیلی مشتاقم!" }, "mood": "excited" },
+        { "speaker": "Lisa", "text": { "de": "Hast du schon alles dafür gepackt?", "fa": "همه چیز را برای آن بسته‌بندی کردی؟" }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Fast. Ich muss noch darüber nachdenken, was ich mitnehme.", "fa": "تقریباً. باید هنوز فکر کنم چه چیزهایی ببرم." }, "mood": "confused" },
+        { "speaker": "Lisa", "text": { "de": "Dadurch wird der Urlaub besser geplant!", "fa": "از این طریق تعطیلات بهتر برنامه‌ریزی می‌شود!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "تام مشتاق چیست؟", "options": ["کار", "تعطیلات", "خرید"], "correctIndex": 1, "explanation": "تام گفت: ich freue mich sehr darauf (درباره Urlaub)" },
+        { "question": "تام باید درباره چه چیزی فکر کند؟", "options": ["پول", "چیزهایی که ببرد", "هتل"], "correctIndex": 1, "explanation": "تام گفت: was ich mitnehme" }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "فعل را با ترکیب da مناسب جفت کنید",
+      "items": [
+        { "id": "i1", "text": "warten auf" },
+        { "id": "i2", "text": "sich freuen auf" },
+        { "id": "i3", "text": "sprechen über" },
+        { "id": "i4", "text": "sich interessieren für" },
+        { "id": "i5", "text": "nichts haben gegen" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "darauf warten" },
+        { "id": "m2", "text": "sich darauf freuen" },
+        { "id": "m3", "text": "darüber sprechen" },
+        { "id": "m4", "text": "sich dafür interessieren" },
+        { "id": "m5", "text": "nichts dagegen haben" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "من مشتاق آن هستم.",
+      "sentenceTemplate": "Ich {0} mich {1}.",
+      "options": ["freue", "darauf", "dafür", "warte"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Ich freue mich darauf.", "fa": "من مشتاق آن هستم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "ما باید درباره آن صحبت کنیم.",
+      "sentenceTemplate": "Wir {0} {1} sprechen.",
+      "options": ["müssen", "darüber", "dafür", "können"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Wir müssen darüber sprechen.", "fa": "ما باید درباره آن صحبت کنیم." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: ترکیبات da در متن",
+      "passage": {
+        "de": "Nächste Woche haben wir ein wichtiges Meeting. Ich freue mich darauf, weil wir über das neue Projekt sprechen werden. Einige Kollegen sind dafür, andere dagegen. Es geht darum, ob wir mehr Geld investieren sollen. Dadurch könnten wir schneller wachsen, aber es gibt auch Risiken. Wir müssen darüber diskutieren und eine gemeinsame Entscheidung treffen.",
+        "fa": "هفته آینده یک جلسه مهم داریم. من مشتاق آن هستم، چون درباره پروژه جدید صحبت خواهیم کرد. بعضی همکاران موافقند، بعضی مخالف. موضوع این است که آیا باید پول بیشتری سرمایه‌گذاری کنیم. از این طریق می‌توانیم سریع‌تر رشد کنیم، اما ریسک‌هایی هم وجود دارد. باید درباره آن بحث کنیم و یک تصمیم مشترک بگیریم."
+      },
+      "questions": [
+        { "question": "گوینده مشتاق چیست؟", "options": ["تعطیلات", "جلسه هفته آینده", "پروژه قدیمی"], "correctIndex": 1, "explanation": "گوینده گفت: Ich freue mich darauf (درباره Meeting)" },
+        { "question": "موضوع بحث چیست؟", "options": ["استخدام کارمند جدید", "سرمایه‌گذاری بیشتر", "تعطیلی شرکت"], "correctIndex": 1, "explanation": "متن گفت: Es geht darum, ob wir mehr Geld investieren sollen" },
+        { "question": "نتیجه سرمایه‌گذاری بیشتر چیست؟", "options": ["رشد سریع‌تر", "ورشکستگی", "تعطیلی"], "correctIndex": 0, "explanation": "متن گفت: Dadurch könnten wir schneller wachsen" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die Entscheidung", "fa": "تصمیم" },
+      "characters": ["Mia", "Jonas"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Mia und Jonas sitzen im Park und sprechen über die Zukunft.", "fa": "میا و یوناس در پارک نشسته‌اند و درباره آینده صحبت می‌کنند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Mia",
+          "text": { "de": "Ich habe ein Jobangebot in München bekommen.", "fa": "یک پیشنهاد کار در مونیخ گرفتم." },
+          "mood": "surprised"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Jonas",
+          "text": { "de": "Wow! Was denkst du darüber?", "fa": "وای! نظرت چیه؟" },
+          "mood": "excited"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Mia",
+          "text": { "de": "Ich bin noch nicht sicher. Es geht darum, ob ich meine Familie hier verlassen will.", "fa": "هنوز مطمئن نیستم. موضوع این است که آیا می‌خواهم خانواده‌ام را اینجا ترک کنم." },
+          "mood": "confused"
+        },
+        {
+          "type": "question",
+          "question": "میا چه پیشنهادی گرفته؟",
+          "options": ["پیشنهاد ازدواج", "پیشنهاد کار", "پیشنهاد سفر"],
+          "correctIndex": 1,
+          "explanation": "میا گفت: Ich habe ein Jobangebot bekommen"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Jonas",
+          "text": { "de": "Hast du dafür oder dagegen Gründe?", "fa": "دلایلی برای یا علیه آن داری؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Mia",
+          "text": { "de": "Dadurch könnte ich mehr verdienen. Aber ich warte noch darauf, was mein Herz sagt.", "fa": "از این طریق می‌توانم بیشتر درآمد داشته باشم. اما هنوز منتظرم قلبم چه می‌گوید." },
+          "mood": "sad"
+        },
+        {
+          "type": "question",
+          "question": "میا منتظر چیست؟",
+          "options": ["جواب شرکت", "نظر قلبش", "پول بیشتر"],
+          "correctIndex": 1,
+          "explanation": "میا گفت: ich warte noch darauf, was mein Herz sagt"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Jonas",
+          "text": { "de": "Egal wie du dich entscheidest, ich bin dafür!", "fa": "هر طور تصمیم بگیری، من موافقم!" },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "یوناس چه واکنشی نشان داد؟",
+          "options": ["مخالفت کرد", "حمایت کرد", "ناراحت شد"],
+          "correctIndex": 1,
+          "explanation": "یوناس گفت: ich bin dafür (موافقم/حمایت می‌کنم)"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع",
+      "instruction": "ترکیب da درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "für das → ?", "left": "dafür", "right": "darfür", "correctSide": "left" },
+        { "prompt": "gegen das → ?", "left": "dargegen", "right": "dagegen", "correctSide": "right" },
+        { "prompt": "auf das → ?", "left": "darauf", "right": "daauf", "correctSide": "left" },
+        { "prompt": "über das → ?", "left": "daüber", "right": "darüber", "correctSide": "right" },
+        { "prompt": "um das → ?", "left": "darum", "right": "daum", "correctSide": "left" },
+        { "prompt": "durch das → ?", "left": "dardurch", "right": "dadurch", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich freue mich darauf.",
+      "translation": "من مشتاق آن هستم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Wir müssen darüber sprechen.",
+      "translation": "ما باید درباره آن صحبت کنیم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Bist du dafür oder dagegen?",
+      "translation": "تو موافقی یا مخالف؟"
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "warten auf → ?", "options": ["dafür", "darauf"], "correctAnswerIndex": 1 },
+        { "question": "sprechen über → ?", "options": ["darüber", "daüber"], "correctAnswerIndex": 0 },
+        { "question": "sich interessieren für → ?", "options": ["dafür", "darfür"], "correctAnswerIndex": 0 },
+        { "question": "nichts haben gegen → ?", "options": ["dargegen", "dagegen"], "correctAnswerIndex": 1 },
+        { "question": "sein für (موافق) → ?", "options": ["dafür", "darauf"], "correctAnswerIndex": 0 },
+        { "question": "sparen durch → ?", "options": ["dadurch", "dardurch"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "dafür", "fa": "برای آن" },
+        { "de": "dagegen", "fa": "علیه آن" },
+        { "de": "darauf", "fa": "روی آن" },
+        { "de": "darüber", "fa": "درباره آن" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "ترکیبات da این درس را پیدا کنید",
+      "targetWords": ["dafür", "dagegen", "darauf", "darum", "dadurch", "darüber"],
+      "gridSize": { "rows": 8, "cols": 8 },
+      "timeLimit": 90
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "dafür", "fa": "___", "options": ["علیه آن", "برای آن", "روی آن", "درباره آن"], "correctIndex": 1 },
+        { "de": "darauf", "fa": "___", "options": ["برای آن", "علیه آن", "روی آن/منتظر آن", "از طریق آن"], "correctIndex": 2 },
+        { "de": "dadurch", "fa": "___", "options": ["درباره آن", "به همین دلیل", "از طریق آن", "برای آن"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما ترکیبات da با حروف اضافه مفعولی را یاد گرفتید!",
+      "keyPoints": [
+        "ترکیبات da: da + حرف اضافه (برای اشیاء، نه اشخاص)",
+        "قاعده r: وقتی حرف اضافه با صدادار شروع شود، r اضافه می‌شود: darauf, darüber, darum",
+        "بدون r: dafür, dagegen, dadurch",
+        "کاربرد با افعال: warten auf → darauf warten",
+        "برای اشخاص از حرف اضافه + ضمیر استفاده کنید: für ihn, auf sie"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "dafür", "fa": "برای آن" } },
+        { "word": { "de": "dagegen", "fa": "علیه آن/در مقابل آن" } },
+        { "word": { "de": "darauf", "fa": "روی آن/برای آن" } },
+        { "word": { "de": "darum", "fa": "به همین دلیل/درباره آن" } },
+        { "word": { "de": "dadurch", "fa": "از طریق آن/به این وسیله" } },
+        { "word": { "de": "darüber", "fa": "درباره آن/روی آن" } }
+      ]
+    }
+  ]
+}

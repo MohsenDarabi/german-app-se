@@ -8,7 +8,7 @@
 
 **Create B1 lessons - lesson by lesson, wait for user test after each**
 
-Current: `B1-M06` (Konjunktiv II Vergangenheit) - **MODULE COMPLETE - READY FOR USER TEST**
+Current: `B1-M07` (Präpositionaladverbien) - **MODULE COMPLETE - READY FOR USER TEST**
 
 ---
 
@@ -26,7 +26,7 @@ Current: `B1-M06` (Konjunktiv II Vergangenheit) - **MODULE COMPLETE - READY FOR 
 |-------|---------|---------|--------|
 | A1 | 14 | 56+ | Complete |
 | A2 | 18 | 72 | **Complete** ✅ |
-| B1 | 6 | 24 | Module 6 complete |
+| B1 | 7 | 28 | Module 7 complete |
 
 ### A2 Completion (2026-02-05)
 
@@ -63,8 +63,9 @@ Current: `B1-M06` (Konjunktiv II Vergangenheit) - **MODULE COMPLETE - READY FOR 
 | M04 | Doppelkonnektoren | 4/4 | ✅ Complete |
 | M05 | Relativsätze mit Präpositionen | 4/4 | ✅ Complete |
 | M06 | Konjunktiv II Vergangenheit | 4/4 | ✅ Complete |
+| M07 | Präpositionaladverbien | 4/4 | ✅ Complete |
 
-**Total B1: 24 lessons**
+**Total B1: 28 lessons**
 
 ---
 
@@ -134,10 +135,23 @@ Current: `B1-M06` (Konjunktiv II Vergangenheit) - **MODULE COMPLETE - READY FOR 
 
 ---
 
+## B1 Module 7: Präpositionaladverbien (Pronominal Adverbs)
+
+| Lesson | Title | Status |
+|--------|-------|--------|
+| B1-M07-L01 | da-Komposita mit Akkusativ (dafür, dagegen, darauf) | ✅ Complete |
+| B1-M07-L02 | da-Komposita mit Dativ (damit, davon, dabei) | ✅ Complete |
+| B1-M07-L03 | wo-Komposita (wofür, worauf, womit) | ✅ Complete |
+| B1-M07-L04 | Zusammenfassung | ✅ Complete |
+
+---
+
 ## Recent Changes
 
 | Date | Change |
 |------|--------|
+| 2026-02-06 | **B1 Module 7 (Präpositionaladverbien) COMPLETE - 4 lessons!** |
+| 2026-02-06 | Created B1-M07-L01 to L04 in parallel |
 | 2026-02-06 | **B1 Module 6 (Konjunktiv II Vergangenheit) COMPLETE - 4 lessons!** |
 | 2026-02-06 | Created B1-M06-L01 to L04 in parallel |
 | 2026-02-06 | **B1 Module 5 (Relativsätze mit Präpositionen) COMPLETE - 4 lessons!** |
@@ -172,6 +186,7 @@ Current: `B1-M06` (Konjunktiv II Vergangenheit) - **MODULE COMPLETE - READY FOR 
 5. [x] Complete B1 Module 4 (Doppelkonnektoren) - 4 lessons
 6. [x] Complete B1 Module 5 (Relativsätze mit Präpositionen) - 4 lessons
 7. [x] Complete B1 Module 6 (Konjunktiv II Vergangenheit) - 4 lessons
-8. [ ] **User tests B1-M06 lessons**
-9. [ ] Plan B1 Module 7 topic
-10. [ ] Continue B1 curriculum development
+8. [x] Complete B1 Module 7 (Präpositionaladverbien) - 4 lessons
+9. [ ] **User tests B1-M07 lessons**
+10. [ ] Plan B1 Module 8 topic
+11. [ ] Continue B1 curriculum development

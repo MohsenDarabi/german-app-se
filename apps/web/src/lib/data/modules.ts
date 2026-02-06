@@ -1221,6 +1221,37 @@ const DE_FA_B1_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/B1/B1-M06-L04"
       }
     ]
+  },
+  {
+    id: "module-07",
+    title: "بخش ۷: قیدهای حرف اضافه‌ای (Präpositionaladverbien)",
+    level: "B1",
+    lessons: [
+      {
+        id: "B1-M07-L01",
+        title: "da-Komposita mit Akkusativ - ترکیبات da با آکوزاتیو",
+        description: "یاد بگیرید ترکیبات da با حروف اضافه آکوزاتیو: dafür, dagegen, darauf, darum, dadurch.",
+        path: "/learn/de-fa/B1/B1-M07-L01"
+      },
+      {
+        id: "B1-M07-L02",
+        title: "da-Komposita mit Dativ - ترکیبات da با داتیو",
+        description: "یاد بگیرید ترکیبات da با حروف اضافه داتیو: damit, davon, dabei, danach, davor, dazu.",
+        path: "/learn/de-fa/B1/B1-M07-L02"
+      },
+      {
+        id: "B1-M07-L03",
+        title: "wo-Komposita - ترکیبات wo برای سوال",
+        description: "یاد بگیرید ترکیبات wo برای سوالات: wofür, worauf, womit, wovon, worüber.",
+        path: "/learn/de-fa/B1/B1-M07-L03"
+      },
+      {
+        id: "B1-M07-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل قیدهای حرف اضافه‌ای: ترکیبات da و wo برای اشیا در مقابل افراد.",
+        path: "/learn/de-fa/B1/B1-M07-L04"
+      }
+    ]
   }
 ];
 

@@ -1,0 +1,517 @@
+{
+  "id": "B1-M07-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "wo-Komposita (Fragewörter)", "fa": "ترکیبات wo- (کلمات پرسشی)" },
+  "description": "یاد بگیرید چطور با استفاده از wo-Komposita درباره اشیاء و مفاهیم سؤال کنید",
+  "level": "B1",
+  "module": 7,
+  "lessonNumber": 3,
+  "totalSteps": 45,
+  "estimatedMinutes": 22,
+  "vocabulary": [
+    { "de": "wofür", "fa": "برای چه چیزی", "grammar": { "pos": "adverb" } },
+    { "de": "wogegen", "fa": "علیه چه چیزی", "grammar": { "pos": "adverb" } },
+    { "de": "worauf", "fa": "روی چه چیزی", "grammar": { "pos": "adverb" } },
+    { "de": "womit", "fa": "با چه چیزی", "grammar": { "pos": "adverb" } },
+    { "de": "wovon", "fa": "از چه چیزی", "grammar": { "pos": "adverb" } },
+    { "de": "worüber", "fa": "درباره چه چیزی", "grammar": { "pos": "adverb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "wo-Komposita چیست؟",
+      "content": "وقتی می‌خواهیم درباره **اشیاء یا مفاهیم** (نه افراد) سؤال کنیم، از **wo + حرف اضافه** استفاده می‌کنیم.\n\n**ساختار:**\n• wo + حرف اضافه = کلمه پرسشی\n• اگر حرف اضافه با مصوت شروع شود، **r** اضافه می‌شود\n\n**مثال‌ها:**\n• wo + für = **wofür** (برای چه چیزی)\n• wo + mit = **womit** (با چه چیزی)\n• wo + **r** + auf = **worauf** (روی چه چیزی)\n• wo + **r** + über = **worüber** (درباره چه چیزی)\n\n**توجه مهم:**\nبرای **افراد** از wo-Komposita استفاده نمی‌کنیم:\n• für wen (برای چه کسی) - نه wofür\n• mit wem (با چه کسی) - نه womit",
+      "examples": [
+        { "de": "Wofür interessierst du dich?", "fa": "به چه چیزی علاقه‌مندی؟" },
+        { "de": "Für wen interessierst du dich?", "fa": "به چه کسی علاقه‌مندی؟" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "wofür", "fa": "برای چه چیزی" },
+      "example": { "text": { "de": "Wofür brauchst du das Geld?", "fa": "پول را برای چه چیزی لازم داری؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "wofür",
+      "translation": "برای چه چیزی",
+      "syllables": ["wo", "für"],
+      "distractors": ["wa", "far", "fer"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "wogegen", "fa": "علیه چه چیزی" },
+      "example": { "text": { "de": "Wogegen protestieren sie?", "fa": "علیه چه چیزی اعتراض می‌کنند؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "wogegen",
+      "translation": "علیه چه چیزی",
+      "syllables": ["wo", "ge", "gen"],
+      "distractors": ["wa", "ga", "gan", "gon"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "worauf", "fa": "روی چه چیزی" },
+      "example": { "text": { "de": "Worauf wartest du?", "fa": "منتظر چه چیزی هستی؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "worauf",
+      "translation": "روی چه چیزی",
+      "syllables": ["wo", "rauf"],
+      "distractors": ["wa", "rof", "rief", "reuf"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "چرا می‌گوییم worauf و نه woauf؟",
+      "options": [
+        "چون auf فعل است",
+        "چون auf با مصوت شروع می‌شود، r اضافه می‌کنیم",
+        "چون r همیشه اضافه می‌شود",
+        "چون wo ضمیر است"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! وقتی حرف اضافه با مصوت شروع شود (a, e, i, o, u)، r اضافه می‌کنیم.", "incorrect": "وقتی حرف اضافه با مصوت شروع شود (مثل auf)، r اضافه می‌کنیم: wo + r + auf = worauf" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} hast du das Geld ausgegeben?",
+      "options": ["Wofür", "Für wen", "Womit", "Worauf"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Geld ausgeben für etwas - پول خرج کردن برای چیزی: Wofür" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "wo-Komposita در سؤالات مستقیم و غیرمستقیم",
+      "content": "از wo-Komposita هم در **سؤالات مستقیم** و هم در **سؤالات غیرمستقیم** استفاده می‌کنیم.\n\n**سؤال مستقیم:**\n• **Worüber** spricht er? (درباره چه چیزی صحبت می‌کند؟)\n• **Womit** arbeitest du? (با چه چیزی کار می‌کنی؟)\n\n**سؤال غیرمستقیم:**\n• Ich frage mich, **worüber** er spricht.\n• Weißt du, **womit** er arbeitet?\n\n**توجه:** در سؤال غیرمستقیم، فعل به **آخر** می‌رود.",
+      "examples": [
+        { "de": "Wovon träumst du?", "fa": "درباره چه چیزی رویا می‌بینی؟ (مستقیم)" },
+        { "de": "Ich möchte wissen, wovon du träumst.", "fa": "می‌خواهم بدانم درباره چه چیزی رویا می‌بینی. (غیرمستقیم)" }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "گفتگو در محل کار",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Büro bei der Arbeit", "fa": "در دفتر کار" }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Woran arbeitest du gerade?", "fa": "الان روی چه چیزی کار می‌کنی؟" }, "mood": "neutral" },
+        { "speaker": "Max", "text": { "de": "An einem neuen Projekt. Und du?", "fa": "روی یک پروژه جدید. و تو؟" }, "mood": "happy" },
+        { "speaker": "Anna", "text": { "de": "Ich frage mich, wofür der Chef das Budget braucht.", "fa": "دارم فکر می‌کنم رئیس بودجه را برای چه چیزی لازم دارد." }, "mood": "confused" },
+        { "speaker": "Max", "text": { "de": "Worüber macht er sich Sorgen?", "fa": "نگران چه چیزی است؟" }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "ماکس روی چه چیزی کار می‌کند؟", "options": ["گزارش", "پروژه جدید", "بودجه"], "correctIndex": 1, "explanation": "ماکس گفت: An einem neuen Projekt" },
+        { "question": "آنا نگران چیست؟", "options": ["پروژه", "بودجه رئیس", "کار خودش"], "correctIndex": 1, "explanation": "آنا گفت: wofür der Chef das Budget braucht" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "womit", "fa": "با چه چیزی" },
+      "example": { "text": { "de": "Womit kann ich Ihnen helfen?", "fa": "با چه چیزی می‌توانم کمکتان کنم؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "womit",
+      "translation": "با چه چیزی",
+      "syllables": ["wo", "mit"],
+      "distractors": ["wa", "mat", "mut", "mot"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "wovon", "fa": "از چه چیزی" },
+      "example": { "text": { "de": "Wovon sprichst du?", "fa": "از چه چیزی صحبت می‌کنی؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "wovon",
+      "translation": "از چه چیزی",
+      "syllables": ["wo", "von"],
+      "distractors": ["wa", "van", "ven", "fun"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله درست است؟ (می‌خواهیم بپرسیم: با چه کسی صحبت کردی؟)",
+      "options": [
+        "Womit hast du gesprochen?",
+        "Mit wem hast du gesprochen?",
+        "Wovon hast du gesprochen?",
+        "Von wem hast du gesprochen?"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! برای افراد از mit wem استفاده می‌کنیم، نه womit.", "incorrect": "برای افراد از حرف اضافه + wem استفاده می‌کنیم: mit wem (با چه کسی)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} hast du dich entschieden?",
+      "options": ["Wofür", "Für wen", "Wogegen", "Worauf"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "sich entscheiden für etwas - تصمیم گرفتن برای چیزی: Wofür" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Weißt du, {0} er sich beschwert hat?",
+      "options": ["worüber", "über wen", "wovon", "von wem"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "sich beschweren über etwas - شکایت کردن از چیزی (نه شخص): worüber" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s8",
+      "title": "پاسخ به wo-Komposita با da-Komposita",
+      "content": "به سؤالات wo-Komposita معمولاً با **da-Komposita** پاسخ می‌دهیم.\n\n**ساختار مشابه:**\n• da + حرف اضافه (اگر با مصوت شروع شود، r اضافه می‌شود)\n\n**سؤال و جواب:**\n• **Wofür** brauchst du das? - **Dafür** brauche ich es.\n• **Worauf** wartest du? - **Darauf** warte ich.\n• **Womit** arbeitest du? - **Damit** arbeite ich.\n\n**نکته:**\nda-Komposita به معنی «به آن، برای آن، با آن، ...» است و به یک چیز (نه شخص) اشاره می‌کند.",
+      "examples": [
+        { "de": "Worüber denkst du nach? - Darüber denke ich nach.", "fa": "به چه چیزی فکر می‌کنی؟ - به آن فکر می‌کنم." },
+        { "de": "Wovon träumst du? - Davon träume ich.", "fa": "درباره چه چیزی رویا می‌بینی؟ - درباره آن رویا می‌بینم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "worüber", "fa": "درباره چه چیزی" },
+      "example": { "text": { "de": "Worüber hast du dich gefreut?", "fa": "از چه چیزی خوشحال شدی؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "worüber",
+      "translation": "درباره چه چیزی",
+      "syllables": ["wo", "rü", "ber"],
+      "distractors": ["wa", "ra", "bor", "ru"]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["interessierst", "Wofür", "dich", "du"],
+      "correctOrder": [1, 0, 3, 2],
+      "correctSentence": { "de": "Wofür interessierst du dich?", "fa": "به چه چیزی علاقه‌مندی؟" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["er spricht.", "worüber", "Ich weiß nicht,"],
+      "correctOrder": [2, 1, 0],
+      "correctSentence": { "de": "Ich weiß nicht, worüber er spricht.", "fa": "نمی‌دانم درباره چه چیزی صحبت می‌کند." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["wartest", "Worauf", "du"],
+      "correctOrder": [1, 0, 2],
+      "correctSentence": { "de": "Worauf wartest du?", "fa": "منتظر چه چیزی هستی؟" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای سؤال درباره افراد از wo-Komposita استفاده می‌کنیم.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! برای افراد از حرف اضافه + wem یا wen استفاده می‌کنیم: mit wem, für wen" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "در worüber حرف r اضافه شده چون über با مصوت شروع می‌شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! وقتی حرف اضافه با مصوت (ü در über) شروع شود، r اضافه می‌کنیم: wo + r + über = worüber" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "به سؤال Worauf wartest du? می‌توان با Darauf پاسخ داد.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! da-Komposita برای پاسخ به wo-Komposita استفاده می‌شود: Worauf? - Darauf" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "برنامه‌ریزی تعطیلات",
+      "scene": {
+        "location": "cafe",
+        "description": { "de": "In einem Café", "fa": "در یک کافه" }
+      },
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Worauf freust du dich am meisten im Urlaub?", "fa": "بیشتر از همه منتظر چه چیزی در تعطیلات هستی؟" }, "mood": "excited" },
+        { "speaker": "Tom", "text": { "de": "Auf das Meer. Und du?", "fa": "دریا. و تو؟" }, "mood": "happy" },
+        { "speaker": "Lisa", "text": { "de": "Wovon träumst du noch?", "fa": "دیگر درباره چه چیزی رویا می‌بینی؟" }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Davon, neue Städte zu entdecken. Womit fahren wir eigentlich?", "fa": "از کشف شهرهای جدید. راستی با چه چیزی می‌رویم؟" }, "mood": "happy" },
+        { "speaker": "Lisa", "text": { "de": "Mit dem Zug. Das ist umweltfreundlicher.", "fa": "با قطار. این محیط‌زیست‌دوست‌تر است." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "تام منتظر چه چیزی است؟", "options": ["کوه", "دریا", "جنگل"], "correctIndex": 1, "explanation": "تام گفت: Auf das Meer" },
+        { "question": "آنها با چه وسیله‌ای سفر می‌کنند؟", "options": ["ماشین", "هواپیما", "قطار"], "correctIndex": 2, "explanation": "لیزا گفت: Mit dem Zug" }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "wo-Komposita را با معنی فارسی جور کنید",
+      "items": [
+        { "id": "i1", "text": "wofür" },
+        { "id": "i2", "text": "womit" },
+        { "id": "i3", "text": "worauf" },
+        { "id": "i4", "text": "worüber" },
+        { "id": "i5", "text": "wovon" },
+        { "id": "i6", "text": "wogegen" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "برای چه چیزی" },
+        { "id": "m2", "text": "با چه چیزی" },
+        { "id": "m3", "text": "روی چه چیزی" },
+        { "id": "m4", "text": "درباره چه چیزی" },
+        { "id": "m5", "text": "از چه چیزی" },
+        { "id": "m6", "text": "علیه چه چیزی" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "به چه چیزی فکر می‌کنی؟",
+      "sentenceTemplate": "{0} denkst du?",
+      "options": ["Woran", "An wen", "Worauf", "Womit"],
+      "correctAnswers": [0],
+      "correctTranslation": { "de": "Woran denkst du?", "fa": "به چه چیزی فکر می‌کنی؟" }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "نمی‌دانم با چه چیزی باید شروع کنم.",
+      "sentenceTemplate": "Ich weiß nicht, {0} ich anfangen soll.",
+      "options": ["womit", "mit wem", "wofür", "worauf"],
+      "correctAnswers": [0],
+      "correctTranslation": { "de": "Ich weiß nicht, womit ich anfangen soll.", "fa": "نمی‌دانم با چه چیزی باید شروع کنم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} protestieren die Leute?",
+      "options": ["Wogegen", "Gegen wen", "Worauf", "Wofür"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "protestieren gegen etwas - اعتراض کردن علیه چیزی: Wogegen" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Kannst du mir sagen, {0} du dich freust?",
+      "options": ["worauf", "auf wen", "wofür", "womit"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "sich freuen auf etwas - منتظر چیزی بودن (با خوشحالی): worauf" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} hängt das Ergebnis ab?",
+      "options": ["Wovon", "Von wem", "Worauf", "Womit"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "abhängen von etwas - بستگی داشتن به چیزی: Wovon" }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: مصاحبه شغلی",
+      "passage": {
+        "de": "In einem Vorstellungsgespräch stellte der Personalchef viele Fragen: Wofür interessieren Sie sich? Womit haben Sie in Ihrer letzten Stelle gearbeitet? Worauf legen Sie bei einem Job besonderen Wert? Die Bewerberin antwortete selbstbewusst: Ich interessiere mich dafür, neue Technologien zu lernen. Damit habe ich täglich gearbeitet. Darauf lege ich besonderen Wert, dass ich mich weiterentwickeln kann.",
+        "fa": "در یک مصاحبه شغلی، مدیر کارگزینی سؤالات زیادی پرسید: به چه چیزی علاقه‌مندید؟ در شغل قبلی با چه چیزی کار کرده‌اید؟ در یک شغل به چه چیزی اهمیت ویژه می‌دهید؟ متقاضی با اعتماد به نفس پاسخ داد: علاقه‌مندم که فناوری‌های جدید یاد بگیرم. روزانه با آن‌ها کار کرده‌ام. به این اهمیت ویژه می‌دهم که بتوانم پیشرفت کنم."
+      },
+      "questions": [
+        { "question": "مدیر کارگزینی چه نوع سؤالاتی پرسید؟", "options": ["سؤالات شخصی", "سؤالات با wo-Komposita", "سؤالات بله و خیر"], "correctIndex": 1, "explanation": "سؤالات با wofür, womit, worauf بودند" },
+        { "question": "متقاضی به چه چیزی علاقه‌مند است؟", "options": ["پول", "فناوری‌های جدید", "سفر"], "correctIndex": 1, "explanation": "گفت: neue Technologien zu lernen" },
+        { "question": "متقاضی چگونه به سؤالات پاسخ داد؟", "options": ["با wo-Komposita", "با da-Komposita", "با جملات ساده"], "correctIndex": 1, "explanation": "با dafür, damit, darauf پاسخ داد" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Das Rätsel", "fa": "معما" },
+      "characters": ["Lehrer", "Schüler"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Der Lehrer stellt ein Rätsel.", "fa": "معلم یک معما مطرح می‌کند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lehrer",
+          "text": { "de": "Ich denke an etwas. Woraus ist es gemacht?", "fa": "به چیزی فکر می‌کنم. از چه چیزی ساخته شده؟" },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Schüler",
+          "text": { "de": "Aus Holz?", "fa": "از چوب؟" },
+          "mood": "confused"
+        },
+        {
+          "type": "question",
+          "question": "معلم از چه نوع سؤالی استفاده کرد؟",
+          "options": ["با wo-Komposita", "با حرف اضافه + wem", "سؤال بله و خیر"],
+          "correctIndex": 0,
+          "explanation": "معلم پرسید: Woraus - یک wo-Kompositum"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lehrer",
+          "text": { "de": "Nein. Wofür benutzt man es jeden Tag?", "fa": "نه. هر روز برای چه چیزی استفاده می‌شود؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Schüler",
+          "text": { "de": "Wofür? Hmm... zum Schreiben?", "fa": "برای چه چیزی؟ هوم... برای نوشتن؟" },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lehrer",
+          "text": { "de": "Genau! Es ist ein Stift. Womit schreibst du?", "fa": "دقیقاً! یک خودکار است. با چه چیزی می‌نویسی؟" },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Schüler",
+          "text": { "de": "Damit!", "fa": "با آن!" },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "جواب معما چه بود؟",
+          "options": ["کتاب", "خودکار", "کاغذ"],
+          "correctIndex": 1,
+          "explanation": "معلم گفت: Es ist ein Stift"
+        }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Wofür interessierst du dich?",
+      "translation": "به چه چیزی علاقه‌مندی؟"
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Worauf wartest du?",
+      "translation": "منتظر چه چیزی هستی؟"
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Ich weiß nicht, worüber er spricht.",
+      "translation": "نمی‌دانم درباره چه چیزی صحبت می‌کند."
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع",
+      "instruction": "wo-Komposita یا حرف اضافه + wem؟",
+      "questions": [
+        { "prompt": "سؤال درباره یک شیء", "left": "wo-Komposita", "right": "حرف اضافه + wem", "correctSide": "left" },
+        { "prompt": "سؤال درباره یک شخص", "left": "wo-Komposita", "right": "حرف اضافه + wem", "correctSide": "right" },
+        { "prompt": "برای چه چیزی؟", "left": "wofür", "right": "für wen", "correctSide": "left" },
+        { "prompt": "با چه کسی؟", "left": "womit", "right": "mit wem", "correctSide": "right" },
+        { "prompt": "از چه چیزی؟", "left": "wovon", "right": "von wem", "correctSide": "left" },
+        { "prompt": "درباره چه کسی؟", "left": "worüber", "right": "über wen", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "wo + für = ?", "options": ["wofür", "worfür"], "correctAnswerIndex": 0 },
+        { "question": "wo + auf = ?", "options": ["woauf", "worauf"], "correctAnswerIndex": 1 },
+        { "question": "wo + mit = ?", "options": ["womit", "wormit"], "correctAnswerIndex": 0 },
+        { "question": "wo + über = ?", "options": ["woüber", "worüber"], "correctAnswerIndex": 1 },
+        { "question": "wo + von = ?", "options": ["wovon", "worvon"], "correctAnswerIndex": 0 },
+        { "question": "wo + gegen = ?", "options": ["wogegen", "worgegen"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "wofür", "fa": "برای چه چیزی" },
+        { "de": "womit", "fa": "با چه چیزی" },
+        { "de": "worauf", "fa": "روی چه چیزی" },
+        { "de": "worüber", "fa": "درباره چه چیزی" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "wo-Komposita را پیدا کنید",
+      "targetWords": ["wofür", "womit", "worauf", "worüber", "wovon", "wogegen"],
+      "gridSize": { "rows": 8, "cols": 8 },
+      "timeLimit": 90
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "wofür", "fa": "___", "options": ["با چه چیزی", "برای چه چیزی", "از چه چیزی", "روی چه چیزی"], "correctIndex": 1 },
+        { "de": "worauf", "fa": "___", "options": ["درباره چه چیزی", "علیه چه چیزی", "روی چه چیزی", "با چه چیزی"], "correctIndex": 2 },
+        { "de": "worüber", "fa": "___", "options": ["درباره چه چیزی", "برای چه چیزی", "از چه چیزی", "با چه چیزی"], "correctIndex": 0 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما wo-Komposita را یاد گرفتید!",
+      "keyPoints": [
+        "wo-Komposita برای سؤال درباره اشیاء و مفاهیم (نه افراد)",
+        "ساختار: wo + حرف اضافه (wofür, womit, wogegen, ...)",
+        "اگر حرف اضافه با مصوت شروع شود، r اضافه می‌شود (worauf, worüber, woran)",
+        "برای افراد از حرف اضافه + wem یا wen استفاده کنید (mit wem, für wen)",
+        "در سؤالات غیرمستقیم، فعل به آخر می‌رود",
+        "پاسخ با da-Komposita: Worauf? - Darauf"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "wofür", "fa": "برای چه چیزی" } },
+        { "word": { "de": "wogegen", "fa": "علیه چه چیزی" } },
+        { "word": { "de": "worauf", "fa": "روی چه چیزی" } },
+        { "word": { "de": "womit", "fa": "با چه چیزی" } },
+        { "word": { "de": "wovon", "fa": "از چه چیزی" } },
+        { "word": { "de": "worüber", "fa": "درباره چه چیزی" } }
+      ]
+    }
+  ]
+}

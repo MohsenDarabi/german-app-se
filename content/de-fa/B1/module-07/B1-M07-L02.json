@@ -1,0 +1,517 @@
+{
+  "id": "B1-M07-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "da-Komposita mit Dativ-Präpositionen", "fa": "ترکیبات da با حروف اضافه مفعولی" },
+  "description": "یاد بگیرید چگونه با ترکیبات da (damit, davon, dabei, danach, davor, dazu) به اشیاء و مفاهیم انتزاعی اشاره کنید",
+  "level": "B1",
+  "module": 7,
+  "lessonNumber": 2,
+  "totalSteps": 45,
+  "estimatedMinutes": 25,
+  "vocabulary": [
+    { "de": "damit", "fa": "با آن/برای این که", "grammar": { "pos": "adverb" } },
+    { "de": "davon", "fa": "از آن/درباره آن", "grammar": { "pos": "adverb" } },
+    { "de": "dabei", "fa": "همراه با آن/در این حین", "grammar": { "pos": "adverb" } },
+    { "de": "danach", "fa": "بعد از آن/سپس", "grammar": { "pos": "adverb" } },
+    { "de": "davor", "fa": "قبل از آن/جلوی آن", "grammar": { "pos": "adverb" } },
+    { "de": "dazu", "fa": "به آن/علاوه بر آن", "grammar": { "pos": "adverb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "ترکیبات da چیست؟",
+      "content": "**da-Komposita (ترکیبات da)**\n\nوقتی می‌خواهیم به **یک چیز یا مفهوم انتزاعی** (نه یک شخص) اشاره کنیم، از ترکیب **da + حرف اضافه** استفاده می‌کنیم.\n\n**ساختار:**\n```\nda + حرف اضافه = ضمیر اشاره به چیز\n```\n\n**مثال:**\n- mit dem Buch → **damit** (با آن)\n- von der Idee → **davon** (از آن)\n\n**نکته مهم:** برای اشاره به **اشخاص** از ضمیر + حرف اضافه استفاده می‌کنیم:\n- mit ihm (با او) - نه damit\n- von ihr (از او) - نه davon\n\n**این درس:** ترکیبات da با حروف اضافه Dativ",
+      "examples": [
+        { "de": "Ich träume von einer Reise. Ich träume davon.", "fa": "من آرزوی یک سفر دارم. من آرزویش را دارم." },
+        { "de": "Er hilft mir mit dem Problem. Er hilft mir damit.", "fa": "او در حل مشکل کمکم می‌کند. او در این کار کمکم می‌کند." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "damit", "fa": "با آن/برای این که" },
+      "example": { "text": { "de": "Ich habe ein Problem damit.", "fa": "من با آن مشکل دارم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "damit",
+      "translation": "با آن",
+      "syllables": ["da", "mit"],
+      "distractors": ["do", "mat", "dit", "miet"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "davon", "fa": "از آن/درباره آن" },
+      "example": { "text": { "de": "Ich habe schon davon gehört.", "fa": "من قبلاً درباره آن شنیده‌ام." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "davon",
+      "translation": "از آن",
+      "syllables": ["da", "von"],
+      "distractors": ["do", "van", "fon", "ven"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s4",
+      "title": "damit و davon با افعال",
+      "content": "**damit - با آن**\n\nبرای افعالی که با **mit** می‌آیند:\n- anfangen mit → **damit** anfangen (با آن شروع کردن)\n- aufhören mit → **damit** aufhören (از آن دست برداشتن)\n- rechnen mit → **damit** rechnen (روی آن حساب کردن)\n\n**davon - از آن**\n\nبرای افعالی که با **von** می‌آیند:\n- träumen von → **davon** träumen (آرزوی آن را داشتن)\n- sprechen von → **davon** sprechen (درباره آن صحبت کردن)\n- abhängen von → **davon** abhängen (به آن بستگی داشتن)\n\n**نکته:** ترکیب da معمولاً در ابتدای جمله یا بعد از فعل می‌آید.",
+      "examples": [
+        { "de": "Ich fange damit an.", "fa": "من با آن شروع می‌کنم." },
+        { "de": "Davon habe ich noch nie gehört.", "fa": "درباره آن هرگز نشنیده‌ام." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "dabei", "fa": "همراه با آن/در این حین" },
+      "example": { "text": { "de": "Ich war dabei, als es passierte.", "fa": "من آنجا بودم وقتی اتفاق افتاد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "dabei",
+      "translation": "همراه با آن",
+      "syllables": ["da", "bei"],
+      "distractors": ["do", "bai", "bay", "die"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام گزینه برای اشاره به یک چیز (نه شخص) درست است؟",
+      "options": ["Ich spreche mit ihm.", "Ich rechne damit.", "Ich gehe zu ihr.", "Ich warte auf ihn."],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! damit برای اشاره به چیزها استفاده می‌شود.", "incorrect": "damit برای اشاره به چیزها (نه اشخاص) استفاده می‌شود: Ich rechne damit." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "träumen von به چه ترکیب da تبدیل می‌شود؟",
+      "options": ["damit träumen", "davon träumen", "dabei träumen", "danach träumen"],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! träumen von → davon träumen", "incorrect": "träumen von → davon träumen (von → davon)" }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "danach", "fa": "بعد از آن/سپس" },
+      "example": { "text": { "de": "Zuerst esse ich, danach gehe ich spazieren.", "fa": "اول غذا می‌خورم، بعد از آن قدم می‌زنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "danach",
+      "translation": "بعد از آن",
+      "syllables": ["da", "nach"],
+      "distractors": ["do", "nech", "nuch", "noch"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "ترکیب da مناسب را انتخاب کنید",
+      "sentence": "Ich habe von dem Film gehört. Ich habe schon {0} gehört.",
+      "options": ["damit", "davon", "dabei", "danach"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "hören von → davon hören (درباره چیزی شنیدن)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "ترکیب da مناسب را انتخاب کنید",
+      "sentence": "Er fängt mit der Arbeit an. Er fängt {0} an.",
+      "options": ["damit", "davon", "dabei", "dazu"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "anfangen mit → damit anfangen (با چیزی شروع کردن)" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "dabei, danach, davor, dazu",
+      "content": "**dabei - همراه با آن/در این حین**\n- sein bei → **dabei** sein (حضور داشتن)\n- bleiben bei → **dabei** bleiben (به آن پایبند ماندن)\n\n**danach - بعد از آن**\n- fragen nach → **danach** fragen (درباره آن پرسیدن)\n- suchen nach → **danach** suchen (به دنبال آن گشتن)\n\n**davor - قبل از آن/جلوی آن**\n- warnen vor → **davor** warnen (درباره آن هشدار دادن)\n- Angst haben vor → **davor** Angst haben (از آن ترسیدن)\n\n**dazu - به آن/علاوه بر آن**\n- gehören zu → **dazu** gehören (به آن تعلق داشتن)\n- kommen zu → **dazu** kommen (به آن رسیدن)",
+      "examples": [
+        { "de": "Ich war dabei.", "fa": "من آنجا بودم." },
+        { "de": "Davor habe ich Angst.", "fa": "من از آن می‌ترسم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "davor", "fa": "قبل از آن/جلوی آن" },
+      "example": { "text": { "de": "Ich habe davor gewarnt.", "fa": "من درباره آن هشدار داده بودم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "davor",
+      "translation": "قبل از آن",
+      "syllables": ["da", "vor"],
+      "distractors": ["do", "ver", "vur", "fur"]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "dazu", "fa": "به آن/علاوه بر آن" },
+      "example": { "text": { "de": "Was sagst du dazu?", "fa": "نظرت درباره آن چیست؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "dazu",
+      "translation": "به آن",
+      "syllables": ["da", "zu"],
+      "distractors": ["do", "ze", "zi", "zo"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "ترکیب da مناسب را انتخاب کنید",
+      "sentence": "Ich habe Angst vor Spinnen. Ich habe {0} Angst.",
+      "options": ["damit", "davon", "davor", "danach"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "Angst haben vor → davor Angst haben (از چیزی ترسیدن)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "ترکیب da مناسب را انتخاب کنید",
+      "sentence": "Das gehört zu meinem Job. Das gehört {0}.",
+      "options": ["damit", "dazu", "dabei", "danach"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "gehören zu → dazu gehören (به چیزی تعلق داشتن)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "صحبت درباره کار",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Zwei Kollegen im Büro", "fa": "دو همکار در دفتر" }
+      },
+      "lines": [
+        { "speaker": "Mia", "text": { "de": "Hast du schon mit dem neuen Projekt angefangen?", "fa": "آیا پروژه جدید را شروع کرده‌ای؟" }, "mood": "neutral" },
+        { "speaker": "Lukas", "text": { "de": "Ja, ich habe gestern damit angefangen.", "fa": "بله، دیروز شروعش کردم." }, "mood": "happy" },
+        { "speaker": "Mia", "text": { "de": "Und wie läuft es? Hast du Probleme damit?", "fa": "و چطور پیش می‌رود؟ آیا مشکلی با آن داری؟" }, "mood": "neutral" },
+        { "speaker": "Lukas", "text": { "de": "Nein, aber ich muss noch mehr davon lernen.", "fa": "نه، ولی باید بیشتر یادش بگیرم." }, "mood": "neutral" },
+        { "speaker": "Mia", "text": { "de": "Ich kann dir dabei helfen!", "fa": "من می‌توانم کمکت کنم!" }, "mood": "excited" }
+      ],
+      "questions": [
+        { "question": "لوکاس کی پروژه را شروع کرد؟", "options": ["امروز", "دیروز", "هفته پیش"], "correctIndex": 1, "explanation": "لوکاس گفت: ich habe gestern damit angefangen" },
+        { "question": "میا چه پیشنهادی داد؟", "options": ["کمک کردن", "استراحت کردن", "رفتن به خانه"], "correctIndex": 0, "explanation": "میا گفت: Ich kann dir dabei helfen" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["damit", "Ich", "angefangen", "habe"],
+      "correctOrder": [1, 3, 0, 2],
+      "correctSentence": { "de": "Ich habe damit angefangen.", "fa": "من شروعش کردم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["gehört", "davon", "schon", "Ich", "habe"],
+      "correctOrder": [3, 4, 2, 1, 0],
+      "correctSentence": { "de": "Ich habe schon davon gehört.", "fa": "من قبلاً درباره آن شنیده‌ام." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["davor", "Angst", "habe", "Ich"],
+      "correctOrder": [3, 2, 0, 1],
+      "correctSentence": { "de": "Ich habe davor Angst.", "fa": "من از آن می‌ترسم." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "ترکیبات da برای اشاره به اشخاص استفاده می‌شوند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! ترکیبات da برای چیزها و مفاهیم استفاده می‌شوند. برای اشخاص از ضمیر استفاده می‌کنیم: mit ihm, von ihr" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "damit از ترکیب da + mit ساخته شده است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! da + mit = damit" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای گفتن با او (مرد) باید بگوییم damit.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! برای اشخاص از ضمیر استفاده می‌کنیم: mit ihm (با او). damit فقط برای چیزها است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "ترکیب da مناسب را انتخاب کنید",
+      "sentence": "Zuerst mache ich Hausaufgaben. {0} gehe ich ins Kino.",
+      "options": ["Damit", "Davon", "Danach", "Dabei"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "danach = بعد از آن، سپس" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "ترکیب da مناسب را انتخاب کنید",
+      "sentence": "Er war {0}, als wir das besprachen.",
+      "options": ["damit", "davon", "dabei", "dazu"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "dabei sein = حضور داشتن، آنجا بودن" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "برنامه‌ریزی برای آخر هفته",
+      "scene": {
+        "location": "home",
+        "description": { "de": "Ein Paar plant das Wochenende", "fa": "یک زوج برای آخر هفته برنامه‌ریزی می‌کنند" }
+      },
+      "lines": [
+        { "speaker": "Emma", "text": { "de": "Was machen wir am Samstag?", "fa": "شنبه چه کار کنیم؟" }, "mood": "neutral" },
+        { "speaker": "Felix", "text": { "de": "Ich habe eine Idee. Was hältst du davon?", "fa": "یک ایده دارم. نظرت چیست؟" }, "mood": "excited" },
+        { "speaker": "Emma", "text": { "de": "Sag mal! Ich bin neugierig.", "fa": "بگو! کنجکاوم." }, "mood": "excited" },
+        { "speaker": "Felix", "text": { "de": "Wir könnten wandern gehen. Und danach essen wir in einem Restaurant.", "fa": "می‌توانیم پیاده‌روی برویم. و بعد از آن در یک رستوران غذا بخوریم." }, "mood": "happy" },
+        { "speaker": "Emma", "text": { "de": "Tolle Idee! Ich freue mich schon darauf!", "fa": "ایده عالی! منتظرش هستم!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "فلیکس چه پیشنهادی داد؟", "options": ["به سینما رفتن", "پیاده‌روی رفتن", "در خانه ماندن"], "correctIndex": 1, "explanation": "فلیکس گفت: Wir könnten wandern gehen" },
+        { "question": "بعد از پیاده‌روی چه می‌کنند؟", "options": ["به خانه می‌روند", "در رستوران غذا می‌خورند", "فیلم می‌بینند"], "correctIndex": 1, "explanation": "فلیکس گفت: danach essen wir in einem Restaurant" }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "فعل را با ترکیب da مناسب جفت کنید",
+      "items": [
+        { "id": "i1", "text": "anfangen mit" },
+        { "id": "i2", "text": "träumen von" },
+        { "id": "i3", "text": "Angst haben vor" },
+        { "id": "i4", "text": "gehören zu" },
+        { "id": "i5", "text": "fragen nach" },
+        { "id": "i6", "text": "sein bei" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "damit anfangen" },
+        { "id": "m2", "text": "davon träumen" },
+        { "id": "m3", "text": "davor Angst haben" },
+        { "id": "m4", "text": "dazu gehören" },
+        { "id": "m5", "text": "danach fragen" },
+        { "id": "m6", "text": "dabei sein" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "من قبلاً درباره آن شنیده‌ام.",
+      "sentenceTemplate": "Ich habe schon {0} {1}.",
+      "options": ["davon", "gehört", "damit", "gesehen"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Ich habe schon davon gehört.", "fa": "من قبلاً درباره آن شنیده‌ام." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "من از آن می‌ترسم.",
+      "sentenceTemplate": "Ich habe {0} {1}.",
+      "options": ["davor", "Angst", "damit", "Freude"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Ich habe davor Angst.", "fa": "من از آن می‌ترسم." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: روز کاری",
+      "passage": {
+        "de": "Heute hatte ich viel zu tun. Zuerst habe ich mit dem neuen Projekt angefangen. Ich habe drei Stunden damit gearbeitet. Danach hatte ich eine Besprechung. Mein Chef hat davon gesprochen, dass wir mehr Kunden brauchen. Ich hatte eine Idee dazu und habe sie vorgestellt. Meine Kollegen waren dabei und haben zugehört. Davor hatte ich ein bisschen Angst, aber es ist gut gelaufen!",
+        "fa": "امروز کار زیادی داشتم. اول پروژه جدید را شروع کردم. سه ساعت رویش کار کردم. بعد از آن یک جلسه داشتم. رئیسم درباره این صحبت کرد که به مشتری‌های بیشتری نیاز داریم. من یک ایده داشتم و آن را ارائه دادم. همکارانم آنجا بودند و گوش دادند. قبلش کمی می‌ترسیدم، ولی خوب پیش رفت!"
+      },
+      "questions": [
+        { "question": "گوینده چند ساعت روی پروژه کار کرد؟", "options": ["دو ساعت", "سه ساعت", "چهار ساعت"], "correctIndex": 1, "explanation": "گوینده گفت: Ich habe drei Stunden damit gearbeitet" },
+        { "question": "رئیس درباره چه صحبت کرد؟", "options": ["پروژه جدید", "نیاز به مشتری بیشتر", "تعطیلات"], "correctIndex": 1, "explanation": "گوینده گفت: dass wir mehr Kunden brauchen" },
+        { "question": "گوینده قبل از ارائه ایده چه احساسی داشت؟", "options": ["خوشحالی", "کمی ترس", "خستگی"], "correctIndex": 1, "explanation": "گوینده گفت: Davor hatte ich ein bisschen Angst" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Das neue Hobby", "fa": "سرگرمی جدید" },
+      "characters": ["Nina", "Max"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Nina erzählt Max von ihrem neuen Hobby.", "fa": "نینا از سرگرمی جدیدش به مکس می‌گوید." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Nina",
+          "text": { "de": "Ich habe mit Yoga angefangen!", "fa": "یوگا را شروع کرده‌ام!" },
+          "mood": "excited"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Max",
+          "text": { "de": "Echt? Wie lange machst du das schon?", "fa": "جدی؟ چند وقت است این کار را می‌کنی؟" },
+          "mood": "surprised"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Nina",
+          "text": { "de": "Seit einem Monat. Ich habe damit angefangen, weil ich gestresst war.", "fa": "از یک ماه پیش. شروعش کردم چون استرس داشتم." },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "نینا چرا یوگا را شروع کرد؟",
+          "options": ["چون دوستش پیشنهاد داد", "چون استرس داشت", "چون ورزش دوست دارد"],
+          "correctIndex": 1,
+          "explanation": "نینا گفت: weil ich gestresst war"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Max",
+          "text": { "de": "Und hilft es? Ich habe schon davon gehört, dass Yoga gut ist.", "fa": "و کمک می‌کند؟ شنیده‌ام که یوگا خوب است." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Nina",
+          "text": { "de": "Ja, sehr! Danach fühle ich mich immer entspannt.", "fa": "بله، خیلی! بعدش همیشه احساس آرامش می‌کنم." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "نینا بعد از یوگا چه احساسی دارد؟",
+          "options": ["خسته", "آرام", "گرسنه"],
+          "correctIndex": 1,
+          "explanation": "نینا گفت: Danach fühle ich mich immer entspannt"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Max",
+          "text": { "de": "Vielleicht sollte ich auch damit anfangen!", "fa": "شاید من هم باید شروعش کنم!" },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "مکس چه تصمیمی گرفت؟",
+          "options": ["یوگا را امتحان نمی‌کند", "شاید یوگا را شروع کند", "به جای یوگا می‌دود"],
+          "correctIndex": 1,
+          "explanation": "مکس گفت: Vielleicht sollte ich auch damit anfangen"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع",
+      "instruction": "ترکیب da درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "sprechen von", "left": "damit", "right": "davon", "correctSide": "right" },
+        { "prompt": "anfangen mit", "left": "damit", "right": "davon", "correctSide": "left" },
+        { "prompt": "Angst haben vor", "left": "davor", "right": "danach", "correctSide": "left" },
+        { "prompt": "gehören zu", "left": "dabei", "right": "dazu", "correctSide": "right" },
+        { "prompt": "fragen nach", "left": "danach", "right": "dazu", "correctSide": "left" },
+        { "prompt": "sein bei", "left": "dabei", "right": "damit", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich habe schon davon gehört.",
+      "translation": "من قبلاً درباره آن شنیده‌ام."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Er hat damit angefangen.",
+      "translation": "او شروعش کرد."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Danach gehen wir nach Hause.",
+      "translation": "بعد از آن به خانه می‌رویم."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "damit به فارسی:", "options": ["از آن", "با آن"], "correctAnswerIndex": 1 },
+        { "question": "davon به فارسی:", "options": ["از آن", "با آن"], "correctAnswerIndex": 0 },
+        { "question": "anfangen mit → ...", "options": ["damit", "davon"], "correctAnswerIndex": 0 },
+        { "question": "träumen von → ...", "options": ["damit", "davon"], "correctAnswerIndex": 1 },
+        { "question": "Angst haben vor → ...", "options": ["davor", "danach"], "correctAnswerIndex": 0 },
+        { "question": "gehören zu → ...", "options": ["dabei", "dazu"], "correctAnswerIndex": 1 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "damit", "fa": "با آن" },
+        { "de": "davon", "fa": "از آن" },
+        { "de": "dabei", "fa": "همراه با آن" },
+        { "de": "danach", "fa": "بعد از آن" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "ترکیبات da را پیدا کنید",
+      "targetWords": ["damit", "davon", "dabei", "danach", "davor", "dazu"],
+      "gridSize": { "rows": 8, "cols": 8 },
+      "timeLimit": 90
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "damit", "fa": "___", "options": ["از آن", "با آن", "بعد از آن", "قبل از آن"], "correctIndex": 1 },
+        { "de": "davon", "fa": "___", "options": ["با آن", "از آن", "به آن", "همراه با آن"], "correctIndex": 1 },
+        { "de": "danach", "fa": "___", "options": ["قبل از آن", "با آن", "بعد از آن", "از آن"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما ترکیبات da با حروف اضافه مفعولی را یاد گرفتید!",
+      "keyPoints": [
+        "damit = با آن (از mit)",
+        "davon = از آن (از von)",
+        "dabei = همراه با آن (از bei)",
+        "danach = بعد از آن (از nach)",
+        "davor = قبل از آن (از vor)",
+        "dazu = به آن (از zu)",
+        "ترکیبات da فقط برای چیزها استفاده می‌شوند - برای اشخاص از ضمیر استفاده کنید"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "damit", "fa": "با آن" } },
+        { "word": { "de": "davon", "fa": "از آن" } },
+        { "word": { "de": "dabei", "fa": "همراه با آن" } },
+        { "word": { "de": "danach", "fa": "بعد از آن" } },
+        { "word": { "de": "davor", "fa": "قبل از آن" } },
+        { "word": { "de": "dazu", "fa": "به آن" } }
+      ]
+    }
+  ]
+}
