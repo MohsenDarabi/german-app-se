@@ -1,0 +1,534 @@
+{
+  "id": "B1-M13-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Nomen-Verb-Verbindungen: machen, haben, nehmen", "fa": "ترکیبات اسم-فعل: machen، haben، nehmen" },
+  "description": "یاد بگیرید چگونه از ترکیبات ثابت اسم-فعل (Funktionsverbgefüge) استفاده کنید. این عبارات در آلمانی بسیار رایج هستند و به جای افعال ساده استفاده می‌شوند.",
+  "level": "B1",
+  "module": 13,
+  "lessonNumber": 1,
+  "totalSteps": 45,
+  "estimatedMinutes": 25,
+  "vocabulary": [
+    { "de": "der Fehler", "fa": "اشتباه", "grammar": { "pos": "noun", "gender": "masculine", "plural": "die Fehler" } },
+    { "de": "der Fortschritt", "fa": "پیشرفت", "grammar": { "pos": "noun", "gender": "masculine", "plural": "die Fortschritte" } },
+    { "de": "der Vorschlag", "fa": "پیشنهاد", "grammar": { "pos": "noun", "gender": "masculine", "plural": "die Vorschläge" } },
+    { "de": "der Abschied", "fa": "خداحافظی", "grammar": { "pos": "noun", "gender": "masculine", "plural": "die Abschiede" } },
+    { "de": "die Rücksicht", "fa": "ملاحظه، رعایت", "grammar": { "pos": "noun", "gender": "feminine", "plural": "die Rücksichten" } },
+    { "de": "der Einfluss", "fa": "تأثیر، نفوذ", "grammar": { "pos": "noun", "gender": "masculine", "plural": "die Einflüsse" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "ترکیبات اسم-فعل چیست؟",
+      "content": "**Nomen-Verb-Verbindungen (NVV)**\n\nدر آلمانی، بسیاری از مفاهیم با ترکیب **اسم + فعل کمکی** بیان می‌شوند، نه با یک فعل ساده.\n\n**چرا آلمانی‌ها اینطور می‌گویند؟**\n- دقیق‌تر و رسمی‌تر است\n- در متون اداری و علمی رایج است\n- معنای ظریف‌تری دارد\n\n**مقایسه:**\n- sich sorgen → **sich Sorgen machen** (نگران شدن)\n- beeinflussen → **Einfluss haben** (تأثیر داشتن)\n- vorschlagen → **einen Vorschlag machen** (پیشنهاد دادن)\n\n**نکته:** سه فعل اصلی: **machen**, **haben**, **nehmen**",
+      "examples": [
+        { "de": "Ich mache einen Vorschlag.", "fa": "من پیشنهاد می‌دهم." },
+        { "de": "Sie hat Recht.", "fa": "او حق دارد." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "der Fehler", "fa": "اشتباه" },
+      "example": { "text": { "de": "Ich habe einen Fehler gemacht.", "fa": "من اشتباه کردم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Fehler",
+      "translation": "اشتباه",
+      "syllables": ["Feh", "ler"],
+      "distractors": ["Fah", "lor", "lar"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "der Fortschritt", "fa": "پیشرفت" },
+      "example": { "text": { "de": "Du machst große Fortschritte!", "fa": "تو پیشرفت زیادی می‌کنی!" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Fortschritt",
+      "translation": "پیشرفت",
+      "syllables": ["Fort", "schritt"],
+      "distractors": ["Furt", "schrat", "schrott"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "der Vorschlag", "fa": "پیشنهاد" },
+      "example": { "text": { "de": "Ich möchte einen Vorschlag machen.", "fa": "می‌خواهم پیشنهادی بدهم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Vorschlag",
+      "translation": "پیشنهاد",
+      "syllables": ["Vor", "schlag"],
+      "distractors": ["Ver", "schlug", "schlog"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "ترکیبات با machen",
+      "content": "**فعل machen در ترکیبات ثابت:**\n\n**۱. einen Fehler machen** = اشتباه کردن\n- Jeder **macht** mal **einen Fehler**.\n  (همه گاهی اشتباه می‌کنند.)\n\n**۲. Fortschritte machen** = پیشرفت کردن\n- Sie **macht** große **Fortschritte** im Deutschkurs.\n  (او در کلاس آلمانی پیشرفت زیادی می‌کند.)\n\n**۳. sich Sorgen machen** = نگران شدن\n- Ich **mache** mir **Sorgen** um dich.\n  (نگران تو هستم.)\n\n**۴. einen Vorschlag machen** = پیشنهاد دادن\n- Darf ich **einen Vorschlag machen**?\n  (می‌توانم پیشنهادی بدهم؟)\n\n**توجه:** حرف تعریف (einen/große) مهم است!",
+      "examples": [
+        { "de": "Sie macht sich Sorgen.", "fa": "او نگران است." },
+        { "de": "Mach keinen Fehler!", "fa": "اشتباه نکن!" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام عبارت به معنی «پیشرفت کردن» است؟",
+      "options": [
+        "einen Fehler machen",
+        "Fortschritte machen",
+        "sich Sorgen machen",
+        "einen Vorschlag machen"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! Fortschritte machen یعنی پیشرفت کردن.", "incorrect": "Fortschritte machen به معنی پیشرفت کردن است." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "وقتی می‌خواهید بگویید «نگران شدن»، از کدام ترکیب استفاده می‌کنید؟",
+      "options": [
+        "Recht haben",
+        "Platz nehmen",
+        "sich Sorgen machen",
+        "Abschied nehmen"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "درست! sich Sorgen machen یعنی نگران شدن.", "incorrect": "sich Sorgen machen به معنی نگران شدن است." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "der Abschied", "fa": "خداحافظی" },
+      "example": { "text": { "de": "Wir müssen Abschied nehmen.", "fa": "باید خداحافظی کنیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "Abschied",
+      "translation": "خداحافظی",
+      "syllables": ["Ab", "schied"],
+      "distractors": ["Ob", "schad", "scheid"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "sentence": "Ich habe einen {0} gemacht. (اشتباه کردم)",
+      "options": ["Fortschritt", "Fehler", "Vorschlag", "Abschied"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "einen Fehler machen = اشتباه کردن" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "sentence": "Sie macht sich {0} um ihre Kinder. (نگران است)",
+      "options": ["Fehler", "Sorgen", "Vorschläge", "Fortschritte"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "sich Sorgen machen = نگران شدن" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "ترکیبات با haben و nehmen",
+      "content": "**فعل haben در ترکیبات ثابت:**\n\n- **Angst haben** = ترسیدن\n- **Recht haben** = حق داشتن\n- **Zeit haben** = وقت داشتن\n- **Einfluss haben** = تأثیر داشتن\n\n**فعل nehmen در ترکیبات ثابت:**\n\n- **Abschied nehmen** = خداحافظی کردن\n- **Rücksicht nehmen** = رعایت کردن، ملاحظه کردن\n- **Platz nehmen** = نشستن\n- **Stellung nehmen** = اظهارنظر کردن\n\n**تفاوت با فارسی:**\n- فارسی: نشستن (یک فعل)\n- آلمانی: Platz nehmen (جا گرفتن = نشستن)",
+      "examples": [
+        { "de": "Nehmen Sie bitte Platz!", "fa": "لطفاً بنشینید!" },
+        { "de": "Du hast Recht.", "fa": "حق با توست." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "die Rücksicht", "fa": "ملاحظه، رعایت" },
+      "example": { "text": { "de": "Er nimmt keine Rücksicht auf andere.", "fa": "او ملاحظه دیگران را نمی‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "Rücksicht",
+      "translation": "ملاحظه",
+      "syllables": ["Rück", "sicht"],
+      "distractors": ["Ruck", "sucht", "sacht"]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "der Einfluss", "fa": "تأثیر، نفوذ" },
+      "example": { "text": { "de": "Sie hat großen Einfluss auf das Team.", "fa": "او تأثیر زیادی روی تیم دارد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Einfluss",
+      "translation": "تأثیر",
+      "syllables": ["Ein", "fluss"],
+      "distractors": ["An", "floss", "fliss"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "sentence": "Bitte nehmen Sie {0}! (لطفاً بنشینید)",
+      "options": ["Abschied", "Rücksicht", "Platz", "Stellung"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "Platz nehmen = نشستن" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "sentence": "Er hat {0} auf seine Familie. (تأثیر دارد)",
+      "options": ["Angst", "Zeit", "Einfluss", "Recht"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "Einfluss haben auf = تأثیر داشتن بر" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در جلسه کاری",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Büro bei einer Besprechung", "fa": "در دفتر کار در یک جلسه" }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Darf ich einen Vorschlag machen?", "fa": "می‌توانم پیشنهادی بدهم؟" }, "mood": "neutral" },
+        { "speaker": "Max", "text": { "de": "Ja, natürlich! Nehmen Sie bitte Platz.", "fa": "بله، البته! لطفاً بنشینید." }, "mood": "happy" },
+        { "speaker": "Anna", "text": { "de": "Ich mache mir Sorgen um das Projekt.", "fa": "نگران پروژه هستم." }, "mood": "confused" },
+        { "speaker": "Max", "text": { "de": "Da haben Sie Recht. Aber wir machen Fortschritte.", "fa": "حق با شماست. اما داریم پیشرفت می‌کنیم." }, "mood": "neutral" },
+        { "speaker": "Anna", "text": { "de": "Wir müssen mehr Rücksicht auf die Kunden nehmen.", "fa": "باید بیشتر ملاحظه مشتریان را بکنیم." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "آنا چه احساسی دارد؟", "options": ["خوشحال", "نگران", "عصبانی"], "correctIndex": 1, "explanation": "آنا گفت: Ich mache mir Sorgen um das Projekt." },
+        { "question": "ماکس چه جوابی به نگرانی آنا داد؟", "options": ["او اشتباه می‌کند", "حق با اوست", "مهم نیست"], "correctIndex": 1, "explanation": "ماکس گفت: Da haben Sie Recht." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["gemacht", "Fehler", "Ich", "einen", "habe"],
+      "correctOrder": [2, 4, 3, 1, 0],
+      "correctSentence": { "de": "Ich habe einen Fehler gemacht", "fa": "من اشتباه کردم" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Platz", "bitte", "Sie", "Nehmen"],
+      "correctOrder": [3, 2, 1, 0],
+      "correctSentence": { "de": "Nehmen Sie bitte Platz", "fa": "لطفاً بنشینید" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Sorgen", "sich", "Sie", "Machen", "nicht"],
+      "correctOrder": [3, 2, 1, 4, 0],
+      "correctSentence": { "de": "Machen Sie sich nicht Sorgen", "fa": "نگران نباشید" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "Platz nehmen به معنی «جا گرفتن» یا «نشستن» است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! Platz nehmen یعنی نشستن (به معنای تحت‌اللفظی: جا گرفتن)." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "Angst haben به معنی «عصبانی بودن» است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! Angst haben یعنی ترسیدن، نه عصبانی بودن." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "ترکیبات اسم-فعل در متون رسمی و اداری بیشتر استفاده می‌شوند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! این ترکیبات در زبان رسمی رایج‌تر هستند." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "sentence": "Du hast völlig {0}. (کاملاً حق داری)",
+      "options": ["Angst", "Recht", "Zeit", "Einfluss"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Recht haben = حق داشتن" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "sentence": "Wir müssen {0} nehmen. (باید خداحافظی کنیم)",
+      "options": ["Platz", "Rücksicht", "Abschied", "Stellung"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "Abschied nehmen = خداحافظی کردن" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "خداحافظی",
+      "scene": {
+        "location": "airport",
+        "description": { "de": "Am Flughafen", "fa": "در فرودگاه" }
+      },
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Jetzt muss ich leider Abschied nehmen.", "fa": "متأسفانه الان باید خداحافظی کنم." }, "mood": "sad" },
+        { "speaker": "Tom", "text": { "de": "Ich werde dich vermissen. Hast du Angst vor dem Flug?", "fa": "دلم برایت تنگ می‌شود. از پرواز می‌ترسی؟" }, "mood": "sad" },
+        { "speaker": "Lisa", "text": { "de": "Nein, keine Angst. Aber mach dir keine Sorgen!", "fa": "نه، نمی‌ترسم. اما نگران نباش!" }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Du hast Recht. Du wirst Fortschritte im Studium machen!", "fa": "حق با توست. در تحصیلات پیشرفت خواهی کرد!" }, "mood": "happy" },
+        { "speaker": "Lisa", "text": { "de": "Danke! Du hattest immer großen Einfluss auf mich.", "fa": "ممنون! همیشه تأثیر زیادی روی من داشتی." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "لیزا کجا می‌رود؟", "options": ["به خانه", "به تحصیل", "به کار"], "correctIndex": 1, "explanation": "تام گفت: Du wirst Fortschritte im Studium machen!" },
+        { "question": "لیزا از پرواز می‌ترسد؟", "options": ["بله", "نه", "معلوم نیست"], "correctIndex": 1, "explanation": "لیزا گفت: Nein, keine Angst." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "ترکیب آلمانی را با معنی فارسی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "einen Fehler machen" },
+        { "id": "i2", "text": "Fortschritte machen" },
+        { "id": "i3", "text": "Abschied nehmen" },
+        { "id": "i4", "text": "Rücksicht nehmen" },
+        { "id": "i5", "text": "Einfluss haben" },
+        { "id": "i6", "text": "Recht haben" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "اشتباه کردن" },
+        { "id": "m2", "text": "پیشرفت کردن" },
+        { "id": "m3", "text": "خداحافظی کردن" },
+        { "id": "m4", "text": "ملاحظه کردن" },
+        { "id": "m5", "text": "تأثیر داشتن" },
+        { "id": "m6", "text": "حق داشتن" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "من اشتباه کردم.",
+      "sentenceTemplate": "Ich {0} einen {1} gemacht.",
+      "options": ["Fehler", "habe", "bin", "Fortschritt"],
+      "correctAnswers": [1, 0],
+      "correctTranslation": { "de": "Ich habe einen Fehler gemacht.", "fa": "من اشتباه کردم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "لطفاً بنشینید!",
+      "sentenceTemplate": "Bitte {0} Sie {1}!",
+      "options": ["nehmen", "Platz", "machen", "Rücksicht"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Bitte nehmen Sie Platz!", "fa": "لطفاً بنشینید!" }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: ایمیل رسمی",
+      "passage": {
+        "de": "Sehr geehrte Frau Müller,\n\nich möchte einen Vorschlag machen. Unser Team macht große Fortschritte, aber wir müssen mehr Rücksicht auf die Kunden nehmen. Ich habe Angst, dass wir einen Fehler machen, wenn wir zu schnell arbeiten. Haben Sie Zeit für ein Gespräch? Ich würde gern Stellung zu diesem Thema nehmen.\n\nMit freundlichen Grüßen,\nThomas Schmidt",
+        "fa": "خانم مولر عزیز،\n\nمی‌خواهم پیشنهادی بدهم. تیم ما پیشرفت زیادی می‌کند، اما باید بیشتر ملاحظه مشتریان را بکنیم. می‌ترسم اگر خیلی سریع کار کنیم، اشتباه کنیم. آیا وقت برای یک گفتگو دارید؟ می‌خواهم درباره این موضوع اظهارنظر کنم.\n\nبا احترام،\nتوماس اشمیت"
+      },
+      "questions": [
+        { "question": "توماس چه می‌خواهد؟", "options": ["استعفا دادن", "پیشنهاد دادن", "شکایت کردن"], "correctIndex": 1, "explanation": "توماس گفت: ich möchte einen Vorschlag machen." },
+        { "question": "تیم چه وضعیتی دارد؟", "options": ["پیشرفت می‌کند", "عقب‌مانده است", "مشکل دارد"], "correctIndex": 0, "explanation": "توماس گفت: Unser Team macht große Fortschritte." },
+        { "question": "توماس از چه چیزی می‌ترسد؟", "options": ["از رئیس", "از اشتباه کردن", "از مشتریان"], "correctIndex": 1, "explanation": "توماس گفت: Ich habe Angst, dass wir einen Fehler machen." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der neue Job", "fa": "کار جدید" },
+      "characters": ["Sara", "Klaus"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Sara hat einen neuen Job. Es ist ihr erster Tag.", "fa": "سارا کار جدیدی دارد. امروز روز اول اوست." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Klaus",
+          "text": { "de": "Willkommen! Nehmen Sie bitte Platz.", "fa": "خوش آمدید! لطفاً بنشینید." },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sara",
+          "text": { "de": "Danke! Ich habe ein bisschen Angst, Fehler zu machen.", "fa": "ممنون! کمی می‌ترسم اشتباه کنم." },
+          "mood": "confused"
+        },
+        {
+          "type": "question",
+          "question": "سارا چه احساسی دارد؟",
+          "options": ["خوشحال", "کمی نگران", "عصبانی"],
+          "correctIndex": 1,
+          "explanation": "سارا گفت: Ich habe ein bisschen Angst."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Klaus",
+          "text": { "de": "Machen Sie sich keine Sorgen! Jeder macht am Anfang Fehler.", "fa": "نگران نباشید! همه اول اشتباه می‌کنند." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sara",
+          "text": { "de": "Da haben Sie Recht. Ich werde mein Bestes geben.", "fa": "حق با شماست. تمام تلاشم را می‌کنم." },
+          "mood": "happy"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Nach drei Monaten macht Sara große Fortschritte.", "fa": "بعد از سه ماه، سارا پیشرفت زیادی می‌کند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Klaus",
+          "text": { "de": "Sara, Sie machen wirklich große Fortschritte!", "fa": "سارا، واقعاً پیشرفت زیادی می‌کنید!" },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "سارا بعد از سه ماه چطور است؟",
+          "options": ["هنوز اشتباه می‌کند", "پیشرفت زیادی کرده", "می‌خواهد برود"],
+          "correctIndex": 1,
+          "explanation": "کلاوس گفت: Sie machen wirklich große Fortschritte!"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sara",
+          "text": { "de": "Danke! Sie haben großen Einfluss auf meine Entwicklung.", "fa": "ممنون! شما تأثیر زیادی روی پیشرفت من داشتید." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "کلاوس چه نقشی در موفقیت سارا داشت؟",
+          "options": ["هیچ نقشی نداشت", "تأثیر زیادی داشت", "مانع شد"],
+          "correctIndex": 1,
+          "explanation": "سارا گفت: Sie haben großen Einfluss auf meine Entwicklung."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع",
+      "instruction": "ترکیب درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "اشتباه کردن", "left": "Fehler machen", "right": "Fehler nehmen", "correctSide": "left" },
+        { "prompt": "نشستن", "left": "Platz haben", "right": "Platz nehmen", "correctSide": "right" },
+        { "prompt": "حق داشتن", "left": "Recht haben", "right": "Recht machen", "correctSide": "left" },
+        { "prompt": "خداحافظی کردن", "left": "Abschied machen", "right": "Abschied nehmen", "correctSide": "right" },
+        { "prompt": "نگران شدن", "left": "Sorgen machen", "right": "Sorgen nehmen", "correctSide": "left" },
+        { "prompt": "تأثیر داشتن", "left": "Einfluss nehmen", "right": "Einfluss haben", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich habe einen Fehler gemacht.",
+      "translation": "من اشتباه کردم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Nehmen Sie bitte Platz!",
+      "translation": "لطفاً بنشینید!"
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Du hast Recht.",
+      "translation": "حق با توست."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "پیشرفت کردن = Fortschritte ...", "options": ["haben", "machen"], "correctAnswerIndex": 1 },
+        { "question": "حق داشتن = Recht ...", "options": ["haben", "nehmen"], "correctAnswerIndex": 0 },
+        { "question": "نشستن = Platz ...", "options": ["machen", "nehmen"], "correctAnswerIndex": 1 },
+        { "question": "نگران شدن = sich Sorgen ...", "options": ["machen", "haben"], "correctAnswerIndex": 0 },
+        { "question": "خداحافظی کردن = Abschied ...", "options": ["nehmen", "machen"], "correctAnswerIndex": 0 },
+        { "question": "تأثیر داشتن = Einfluss ...", "options": ["nehmen", "haben"], "correctAnswerIndex": 1 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "einen Fehler machen", "fa": "اشتباه کردن" },
+        { "de": "Fortschritte machen", "fa": "پیشرفت کردن" },
+        { "de": "Platz nehmen", "fa": "نشستن" },
+        { "de": "Recht haben", "fa": "حق داشتن" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات مربوط به این درس را پیدا کنید",
+      "targetWords": ["Fehler", "Fortschritt", "Vorschlag", "Abschied", "Rücksicht", "Einfluss"],
+      "gridSize": { "rows": 12, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "einen Fehler machen", "fa": "اشتباه کردن", "options": ["پیشرفت کردن", "اشتباه کردن", "نشستن", "ترسیدن"], "correctIndex": 1 },
+        { "de": "Rücksicht nehmen", "fa": "ملاحظه کردن", "options": ["خداحافظی کردن", "نشستن", "ملاحظه کردن", "اظهارنظر کردن"], "correctIndex": 2 },
+        { "de": "Einfluss haben", "fa": "تأثیر داشتن", "options": ["حق داشتن", "تأثیر داشتن", "وقت داشتن", "ترسیدن"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما ترکیبات اسم-فعل با machen، haben و nehmen را یاد گرفتید!",
+      "keyPoints": [
+        "einen Fehler machen = اشتباه کردن",
+        "Fortschritte machen = پیشرفت کردن",
+        "sich Sorgen machen = نگران شدن",
+        "einen Vorschlag machen = پیشنهاد دادن",
+        "Angst haben = ترسیدن",
+        "Recht haben = حق داشتن",
+        "Einfluss haben = تأثیر داشتن",
+        "Abschied nehmen = خداحافظی کردن",
+        "Rücksicht nehmen = ملاحظه کردن",
+        "Platz nehmen = نشستن"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "der Fehler", "fa": "اشتباه" } },
+        { "word": { "de": "der Fortschritt", "fa": "پیشرفت" } },
+        { "word": { "de": "der Vorschlag", "fa": "پیشنهاد" } },
+        { "word": { "de": "der Abschied", "fa": "خداحافظی" } },
+        { "word": { "de": "die Rücksicht", "fa": "ملاحظه، رعایت" } },
+        { "word": { "de": "der Einfluss", "fa": "تأثیر، نفوذ" } }
+      ]
+    }
+  ]
+}

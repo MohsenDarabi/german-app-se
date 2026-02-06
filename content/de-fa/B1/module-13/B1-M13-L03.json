@@ -1,0 +1,510 @@
+{
+  "id": "B1-M13-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Nomen-Verb-Verbindungen: treffen, führen, kommen", "fa": "ترکیبات اسم-فعل: treffen، führen، kommen" },
+  "description": "یاد بگیرید چگونه از ترکیبات ثابت اسم-فعل (Funktionsverbgefüge) با افعال treffen، führen و kommen استفاده کنید",
+  "level": "B1",
+  "module": 13,
+  "lessonNumber": 3,
+  "totalSteps": 45,
+  "estimatedMinutes": 25,
+  "vocabulary": [
+    { "de": "die Entscheidung", "fa": "تصمیم", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "die Wahl", "fa": "انتخاب", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "die Vorbereitung", "fa": "آمادگی، آماده‌سازی", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "das Gespräch", "fa": "گفتگو، مکالمه", "grammar": { "pos": "noun", "gender": "neuter" } },
+    { "de": "das Ergebnis", "fa": "نتیجه", "grammar": { "pos": "noun", "gender": "neuter" } },
+    { "de": "die Maßnahme", "fa": "اقدام، تدبیر", "grammar": { "pos": "noun", "gender": "feminine" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "ترکیبات اسم-فعل (Nomen-Verb-Verbindungen) چیستند؟",
+      "content": "**ترکیبات اسم-فعل** یا **Funktionsverbgefüge** عباراتی ثابت هستند که از یک **فعل + اسم** تشکیل شده‌اند و معنای خاصی دارند.\n\n**چرا مهم هستند؟**\n- در زبان رسمی و نوشتاری بسیار رایج هستند\n- نمی‌توان کلمات را جداگانه ترجمه کرد\n- باید به صورت یک واحد یاد گرفته شوند\n\n**سه فعل مهم این درس:**\n- **treffen** - eine Entscheidung treffen (تصمیم گرفتن)\n- **führen** - ein Gespräch führen (گفتگو کردن)\n- **kommen** - zu einem Ergebnis kommen (به نتیجه رسیدن)\n\n**نکته برای فارسی‌زبانان:**\nدر فارسی هم چنین ترکیباتی داریم: «تصمیم گرفتن» به جای «تصمیم‌گیری کردن»",
+      "examples": [
+        { "de": "Wir müssen eine Entscheidung treffen.", "fa": "ما باید یک تصمیم بگیریم." },
+        { "de": "Können wir ein Gespräch führen?", "fa": "می‌توانیم گفتگو کنیم؟" },
+        { "de": "Wir sind zu einem Ergebnis gekommen.", "fa": "ما به یک نتیجه رسیدیم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "die Entscheidung", "fa": "تصمیم" },
+      "example": { "text": { "de": "Ich muss eine wichtige Entscheidung treffen.", "fa": "باید یک تصمیم مهم بگیرم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Entscheidung",
+      "translation": "تصمیم",
+      "syllables": ["Ent", "schei", "dung"],
+      "distractors": ["Ant", "schau", "dong", "End"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "die Wahl", "fa": "انتخاب" },
+      "example": { "text": { "de": "Du hast die Wahl getroffen.", "fa": "تو انتخاب کردی." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Wahl",
+      "translation": "انتخاب",
+      "syllables": ["Wahl"],
+      "distractors": ["Wal", "Wohl", "Wall", "Weil"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "die Vorbereitung", "fa": "آمادگی، آماده‌سازی" },
+      "example": { "text": { "de": "Wir treffen die Vorbereitungen für die Reise.", "fa": "ما آمادگی‌های سفر را انجام می‌دهیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Vorbereitung",
+      "translation": "آمادگی، آماده‌سازی",
+      "syllables": ["Vor", "be", "rei", "tung"],
+      "distractors": ["Ver", "ba", "rau", "tang"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام ترکیب به معنی «تصمیم گرفتن» است؟",
+      "options": [
+        "eine Entscheidung führen",
+        "eine Entscheidung treffen",
+        "eine Entscheidung kommen",
+        "eine Entscheidung machen"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! eine Entscheidung treffen به معنی تصمیم گرفتن است.", "incorrect": "ترکیب درست eine Entscheidung treffen است، نه führen یا kommen یا machen." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Wir müssen eine wichtige Entscheidung {0}.",
+      "options": ["führen", "treffen", "kommen", "machen"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "eine Entscheidung treffen = تصمیم گرفتن. treffen در این ترکیب به معنی «گرفتن» است." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "ترکیبات با فعل treffen",
+      "content": "فعل **treffen** در ترکیبات اسم-فعل معمولاً به معنی «گرفتن» یا «انجام دادن» است:\n\n**ترکیبات مهم با treffen:**\n- **eine Entscheidung treffen** = تصمیم گرفتن\n- **eine Wahl treffen** = انتخاب کردن\n- **Vorbereitungen treffen** = آمادگی‌ها را انجام دادن\n- **Maßnahmen treffen** = اقدامات را انجام دادن\n\n**ساختار:**\nاسم + treffen (صرف‌شده)\n\n**نکته:**\ntreffen به تنهایی یعنی «ملاقات کردن» یا «برخورد کردن»، اما در این ترکیبات معنی متفاوتی دارد.",
+      "examples": [
+        { "de": "Die Regierung trifft Maßnahmen gegen die Krise.", "fa": "دولت اقداماتی علیه بحران انجام می‌دهد." },
+        { "de": "Hast du schon eine Wahl getroffen?", "fa": "آیا تا حالا انتخاب کردی؟" }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "تصمیم‌گیری در محل کار",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Zwei Kollegen besprechen ein wichtiges Projekt.", "fa": "دو همکار درباره یک پروژه مهم صحبت می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Peter", "text": { "de": "Wir müssen bald eine Entscheidung treffen.", "fa": "ما باید زود یک تصمیم بگیریم." }, "mood": "neutral" },
+        { "speaker": "Anna", "text": { "de": "Ja, aber wir sollten erst alle Vorbereitungen treffen.", "fa": "بله، ولی اول باید همه آمادگی‌ها را انجام دهیم." }, "mood": "neutral" },
+        { "speaker": "Peter", "text": { "de": "Stimmt. Welche Maßnahmen treffen wir zuerst?", "fa": "درسته. اول چه اقداماتی انجام دهیم؟" }, "mood": "confused" },
+        { "speaker": "Anna", "text": { "de": "Lass uns ein Gespräch mit dem Chef führen.", "fa": "بیا با رئیس گفتگو کنیم." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "پتر و آنا باید چه کاری انجام دهند؟", "options": ["یک سفر بروند", "یک تصمیم بگیرند", "به خانه بروند"], "correctIndex": 1, "explanation": "پتر گفت: Wir müssen bald eine Entscheidung treffen (باید زود تصمیم بگیریم)" },
+        { "question": "آنا پیشنهاد داد با چه کسی صحبت کنند؟", "options": ["با مشتری", "با رئیس", "با همکار دیگر"], "correctIndex": 1, "explanation": "آنا گفت: Lass uns ein Gespräch mit dem Chef führen (بیا با رئیس گفتگو کنیم)" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "das Gespräch", "fa": "گفتگو، مکالمه" },
+      "example": { "text": { "de": "Wir führen ein wichtiges Gespräch.", "fa": "ما یک گفتگوی مهم داریم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "Gespräch",
+      "translation": "گفتگو، مکالمه",
+      "syllables": ["Ge", "spräch"],
+      "distractors": ["Ga", "sprach", "spruch", "sprech"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "das Ergebnis", "fa": "نتیجه" },
+      "example": { "text": { "de": "Wir sind zu einem guten Ergebnis gekommen.", "fa": "ما به یک نتیجه خوب رسیدیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "Ergebnis",
+      "translation": "نتیجه",
+      "syllables": ["Er", "geb", "nis"],
+      "distractors": ["Ar", "gab", "nas", "nus"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Können wir ein offenes Gespräch {0}?",
+      "options": ["treffen", "führen", "kommen", "machen"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "ein Gespräch führen = گفتگو کردن. führen در این ترکیب به معنی «داشتن» یا «انجام دادن» است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Nach langer Diskussion sind wir zu einem Ergebnis {0}.",
+      "options": ["getroffen", "geführt", "gekommen", "gemacht"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "zu einem Ergebnis kommen = به نتیجه رسیدن. kommen در این ترکیب به معنی «رسیدن» است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["treffen.", "eine", "müssen", "Wir", "Entscheidung"],
+      "correctOrder": [3, 2, 1, 4, 0],
+      "correctSentence": { "de": "Wir müssen eine Entscheidung treffen.", "fa": "ما باید یک تصمیم بگیریم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["führen?", "ein", "wir", "Können", "Gespräch"],
+      "correctOrder": [3, 2, 1, 4, 0],
+      "correctSentence": { "de": "Können wir ein Gespräch führen?", "fa": "می‌توانیم گفتگو کنیم؟" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "ترکیب «eine Entscheidung machen» در زبان آلمانی درست است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! در آلمانی می‌گوییم eine Entscheidung treffen نه machen. این یک ترکیب ثابت است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "ein Gespräch führen به معنی «گفتگو کردن» است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! ein Gespräch führen یعنی گفتگو کردن یا مکالمه داشتن." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s8",
+      "title": "ترکیبات با führen و kommen",
+      "content": "**ترکیبات مهم با führen:**\n- **ein Gespräch führen** = گفتگو کردن\n- **Krieg führen** = جنگیدن، جنگ کردن\n- **zu Ende führen** = به پایان رساندن\n- **Regie führen** = کارگردانی کردن\n\n**ترکیبات مهم با kommen:**\n- **zu einem Ergebnis kommen** = به نتیجه رسیدن\n- **zur Ruhe kommen** = آرام شدن\n- **in Frage kommen** = مطرح بودن، امکان داشتن\n- **zu Wort kommen** = فرصت صحبت پیدا کردن\n\n**نکته:**\nدر ترکیبات با kommen معمولاً از حرف اضافه **zu** یا **in** استفاده می‌شود.",
+      "examples": [
+        { "de": "Er führt das Projekt zu Ende.", "fa": "او پروژه را به پایان می‌رساند." },
+        { "de": "Kommt diese Option in Frage?", "fa": "آیا این گزینه مطرح است؟" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "die Maßnahme", "fa": "اقدام، تدبیر" },
+      "example": { "text": { "de": "Die Regierung trifft wichtige Maßnahmen.", "fa": "دولت اقدامات مهمی انجام می‌دهد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Maßnahme",
+      "translation": "اقدام، تدبیر",
+      "syllables": ["Maß", "nah", "me"],
+      "distractors": ["Mas", "neh", "ma", "Mes"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام ترکیب به معنی «به نتیجه رسیدن» است؟",
+      "options": [
+        "zu einem Ergebnis treffen",
+        "zu einem Ergebnis führen",
+        "zu einem Ergebnis kommen",
+        "zu einem Ergebnis machen"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! zu einem Ergebnis kommen به معنی «به نتیجه رسیدن» است.", "incorrect": "ترکیب درست zu einem Ergebnis kommen است." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "جلسه کاری",
+      "scene": {
+        "location": "meeting_room",
+        "description": { "de": "Das Team bespricht die Ergebnisse eines Projekts.", "fa": "تیم درباره نتایج یک پروژه صحبت می‌کند." }
+      },
+      "lines": [
+        { "speaker": "Chef", "text": { "de": "Sind wir zu einem Ergebnis gekommen?", "fa": "آیا به نتیجه‌ای رسیدیم؟" }, "mood": "neutral" },
+        { "speaker": "Maria", "text": { "de": "Ja, wir haben eine Wahl getroffen.", "fa": "بله، ما انتخاب کردیم." }, "mood": "happy" },
+        { "speaker": "Chef", "text": { "de": "Gut. Welche Maßnahmen treffen wir jetzt?", "fa": "خوب. الان چه اقداماتی انجام دهیم؟" }, "mood": "neutral" },
+        { "speaker": "Maria", "text": { "de": "Wir sollten das Projekt zu Ende führen.", "fa": "باید پروژه را به پایان برسانیم." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "تیم به چه نتیجه‌ای رسید؟", "options": ["پروژه را لغو کردند", "انتخاب کردند", "جلسه را تمام کردند"], "correctIndex": 1, "explanation": "ماریا گفت: wir haben eine Wahl getroffen (ما انتخاب کردیم)" },
+        { "question": "ماریا پیشنهاد داد چه کار کنند؟", "options": ["پروژه جدید شروع کنند", "پروژه را به پایان برسانند", "استراحت کنند"], "correctIndex": 1, "explanation": "ماریا گفت: das Projekt zu Ende führen (پروژه را به پایان رساندن)" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Kommt diese Lösung in {0}?",
+      "options": ["Frage", "Ruhe", "Wort", "Ende"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "in Frage kommen = مطرح بودن، امکان داشتن. آیا این راه‌حل مطرح است؟" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Nach dem Stress muss ich zur {0} kommen.",
+      "options": ["Frage", "Ruhe", "Wort", "Ende"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "zur Ruhe kommen = آرام شدن. بعد از استرس باید آرام شوم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["gekommen.", "Ergebnis", "einem", "zu", "Wir", "sind"],
+      "correctOrder": [4, 5, 3, 2, 1, 0],
+      "correctSentence": { "de": "Wir sind zu einem Ergebnis gekommen.", "fa": "ما به یک نتیجه رسیدیم." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "zu Wort kommen به معنی «فرصت صحبت پیدا کردن» است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! zu Wort kommen یعنی فرصت صحبت پیدا کردن یا اجازه صحبت داشتن." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "ترکیب آلمانی را با معنی فارسی جور کنید",
+      "items": [
+        { "id": "i1", "text": "eine Entscheidung treffen" },
+        { "id": "i2", "text": "ein Gespräch führen" },
+        { "id": "i3", "text": "zu einem Ergebnis kommen" },
+        { "id": "i4", "text": "Maßnahmen treffen" },
+        { "id": "i5", "text": "zur Ruhe kommen" },
+        { "id": "i6", "text": "in Frage kommen" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "تصمیم گرفتن" },
+        { "id": "m2", "text": "گفتگو کردن" },
+        { "id": "m3", "text": "به نتیجه رسیدن" },
+        { "id": "m4", "text": "اقدامات انجام دادن" },
+        { "id": "m5", "text": "آرام شدن" },
+        { "id": "m6", "text": "مطرح بودن" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "ما باید یک تصمیم مهم بگیریم.",
+      "sentenceTemplate": "Wir müssen eine wichtige Entscheidung {0}.",
+      "options": ["führen", "treffen", "kommen", "machen"],
+      "correctAnswers": [1],
+      "correctTranslation": { "de": "Wir müssen eine wichtige Entscheidung treffen.", "fa": "ما باید یک تصمیم مهم بگیریم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "آیا می‌توانیم گفتگو کنیم؟",
+      "sentenceTemplate": "Können wir ein Gespräch {0}?",
+      "options": ["treffen", "führen", "kommen", "machen"],
+      "correctAnswers": [1],
+      "correctTranslation": { "de": "Können wir ein Gespräch führen?", "fa": "آیا می‌توانیم گفتگو کنیم؟" }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: جلسه شرکت",
+      "passage": {
+        "de": "In der Firma gab es ein wichtiges Meeting. Der Chef sagte: \"Wir müssen eine Entscheidung treffen. Zuerst sollten wir ein Gespräch führen und alle Meinungen hören. Jeder soll zu Wort kommen.\" Nach zwei Stunden Diskussion kam das Team zu einem Ergebnis. Sie trafen die Wahl, ein neues Produkt zu entwickeln. Jetzt treffen sie die Vorbereitungen für das Projekt. Die Firma trifft auch Maßnahmen, um das Budget zu sichern.",
+        "fa": "در شرکت یک جلسه مهم برگزار شد. رئیس گفت: «ما باید تصمیم بگیریم. اول باید گفتگو کنیم و همه نظرات را بشنویم. همه باید فرصت صحبت داشته باشند.» بعد از دو ساعت بحث، تیم به نتیجه رسید. آنها تصمیم گرفتند یک محصول جدید توسعه دهند. حالا آمادگی‌های پروژه را انجام می‌دهند. شرکت همچنین اقداماتی برای تأمین بودجه انجام می‌دهد."
+      },
+      "questions": [
+        { "question": "رئیس چه کاری می‌خواست انجام دهند؟", "options": ["استراحت کنند", "تصمیم بگیرند", "خانه بروند"], "correctIndex": 1, "explanation": "رئیس گفت: Wir müssen eine Entscheidung treffen" },
+        { "question": "تیم به چه نتیجه‌ای رسید؟", "options": ["شرکت را ببندند", "محصول جدید توسعه دهند", "کارمندان را اخراج کنند"], "correctIndex": 1, "explanation": "آنها تصمیم گرفتند: ein neues Produkt zu entwickeln" },
+        { "question": "شرکت چه اقداماتی انجام می‌دهد؟", "options": ["برای تعطیلات", "برای تأمین بودجه", "برای استخدام"], "correctIndex": 1, "explanation": "متن می‌گوید: Maßnahmen, um das Budget zu sichern" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die große Entscheidung", "fa": "تصمیم بزرگ" },
+      "characters": ["Thomas", "Lisa"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Thomas und Lisa sind Geschäftspartner und müssen eine wichtige Entscheidung treffen.", "fa": "توماس و لیزا شریک کاری هستند و باید یک تصمیم مهم بگیرند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Thomas",
+          "text": { "de": "Wir müssen endlich eine Entscheidung treffen.", "fa": "ما باید بالاخره یک تصمیم بگیریم." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Ja, aber können wir zuerst ein ruhiges Gespräch führen?", "fa": "بله، ولی می‌توانیم اول یک گفتگوی آرام داشته باشیم؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "لیزا چه پیشنهادی داد؟",
+          "options": ["تصمیم سریع بگیرند", "اول گفتگو کنند", "پروژه را لغو کنند"],
+          "correctIndex": 1,
+          "explanation": "لیزا گفت: können wir zuerst ein ruhiges Gespräch führen"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Thomas",
+          "text": { "de": "Welche Maßnahmen sollten wir treffen?", "fa": "چه اقداماتی باید انجام دهیم؟" },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Zuerst sollten wir alle Vorbereitungen treffen.", "fa": "اول باید همه آمادگی‌ها را انجام دهیم." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Thomas",
+          "text": { "de": "Gut, und dann kommen wir hoffentlich zu einem guten Ergebnis.", "fa": "خوب، و بعد امیدواریم به یک نتیجه خوب برسیم." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "توماس امیدوار است به چه چیزی برسند؟",
+          "options": ["به پول زیاد", "به یک نتیجه خوب", "به تعطیلات"],
+          "correctIndex": 1,
+          "explanation": "توماس گفت: zu einem guten Ergebnis kommen"
+        }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Wir müssen eine Entscheidung treffen.",
+      "translation": "ما باید یک تصمیم بگیریم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Können wir ein Gespräch führen?",
+      "translation": "آیا می‌توانیم گفتگو کنیم؟"
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Wir sind zu einem Ergebnis gekommen.",
+      "translation": "ما به یک نتیجه رسیدیم."
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع",
+      "instruction": "کدام فعل درست است؟",
+      "questions": [
+        { "prompt": "eine Entscheidung ___", "left": "treffen", "right": "führen", "correctSide": "left" },
+        { "prompt": "ein Gespräch ___", "left": "treffen", "right": "führen", "correctSide": "right" },
+        { "prompt": "zu einem Ergebnis ___", "left": "treffen", "right": "kommen", "correctSide": "right" },
+        { "prompt": "Maßnahmen ___", "left": "treffen", "right": "kommen", "correctSide": "left" },
+        { "prompt": "zur Ruhe ___", "left": "führen", "right": "kommen", "correctSide": "right" },
+        { "prompt": "eine Wahl ___", "left": "treffen", "right": "führen", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "eine Entscheidung treffen", "options": ["گفتگو کردن", "تصمیم گرفتن", "به نتیجه رسیدن"], "correctAnswerIndex": 1 },
+        { "question": "ein Gespräch führen", "options": ["گفتگو کردن", "تصمیم گرفتن", "آرام شدن"], "correctAnswerIndex": 0 },
+        { "question": "zu einem Ergebnis kommen", "options": ["مطرح بودن", "آرام شدن", "به نتیجه رسیدن"], "correctAnswerIndex": 2 },
+        { "question": "Maßnahmen treffen", "options": ["اقدامات انجام دادن", "گفتگو کردن", "انتخاب کردن"], "correctAnswerIndex": 0 },
+        { "question": "zur Ruhe kommen", "options": ["به نتیجه رسیدن", "آرام شدن", "صحبت کردن"], "correctAnswerIndex": 1 },
+        { "question": "in Frage kommen", "options": ["مطرح بودن", "تصمیم گرفتن", "گفتگو کردن"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "die Entscheidung", "fa": "تصمیم" },
+        { "de": "das Gespräch", "fa": "گفتگو" },
+        { "de": "das Ergebnis", "fa": "نتیجه" },
+        { "de": "die Maßnahme", "fa": "اقدام" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات این درس را پیدا کنید",
+      "targetWords": ["Entscheidung", "Gespräch", "Ergebnis", "Maßnahme", "Vorbereitung"],
+      "gridSize": { "rows": 12, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "In der Diskussion sollte jeder zu {0} kommen.",
+      "options": ["Frage", "Ruhe", "Wort", "Ende"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "zu Wort kommen = فرصت صحبت پیدا کردن. در بحث همه باید فرصت صحبت داشته باشند." }
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "die Entscheidung", "fa": "تصمیم", "options": ["گفتگو", "تصمیم", "نتیجه", "اقدام"], "correctIndex": 1 },
+        { "de": "das Ergebnis", "fa": "نتیجه", "options": ["تصمیم", "گفتگو", "نتیجه", "انتخاب"], "correctIndex": 2 },
+        { "de": "die Maßnahme", "fa": "اقدام", "options": ["آمادگی", "اقدام", "گفتگو", "انتخاب"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما ترکیبات اسم-فعل با treffen، führen و kommen را یاد گرفتید و می‌توانید در موقعیت‌های رسمی از آنها استفاده کنید!",
+      "keyPoints": [
+        "treffen: eine Entscheidung/Wahl/Vorbereitungen/Maßnahmen treffen",
+        "führen: ein Gespräch führen, zu Ende führen, Regie führen",
+        "kommen: zu einem Ergebnis kommen, zur Ruhe kommen, in Frage kommen, zu Wort kommen",
+        "این ترکیبات ثابت هستند و نباید تغییر داده شوند",
+        "در زبان رسمی و نوشتاری بسیار رایج هستند"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "die Entscheidung", "fa": "تصمیم" } },
+        { "word": { "de": "die Wahl", "fa": "انتخاب" } },
+        { "word": { "de": "die Vorbereitung", "fa": "آمادگی" } },
+        { "word": { "de": "das Gespräch", "fa": "گفتگو" } },
+        { "word": { "de": "das Ergebnis", "fa": "نتیجه" } },
+        { "word": { "de": "die Maßnahme", "fa": "اقدام" } }
+      ]
+    }
+  ]
+}

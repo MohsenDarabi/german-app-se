@@ -1407,6 +1407,37 @@ const DE_FA_B1_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/B1/B1-M12-L04"
       }
     ]
+  },
+  {
+    id: "module-13",
+    title: "بخش ۱۳: ترکیبات اسم-فعل (Nomen-Verb-Verbindungen)",
+    level: "B1",
+    lessons: [
+      {
+        id: "B1-M13-L01",
+        title: "machen, haben, nehmen - ترکیبات پایه",
+        description: "یاد بگیرید ترکیبات ثابت با machen، haben و nehmen: Fehler machen، Angst haben، Abschied nehmen.",
+        path: "/learn/de-fa/B1/B1-M13-L01"
+      },
+      {
+        id: "B1-M13-L02",
+        title: "stellen, geben, bringen - ترکیبات رسمی",
+        description: "یاد بگیرید ترکیبات با stellen، geben و bringen: Frage stellen، Bescheid geben، zum Ausdruck bringen.",
+        path: "/learn/de-fa/B1/B1-M13-L02"
+      },
+      {
+        id: "B1-M13-L03",
+        title: "treffen, führen, kommen - ترکیبات پیشرفته",
+        description: "یاد بگیرید ترکیبات با treffen، führen و kommen: Entscheidung treffen، Gespräch führen، zu Wort kommen.",
+        path: "/learn/de-fa/B1/B1-M13-L03"
+      },
+      {
+        id: "B1-M13-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل همه ترکیبات اسم-فعل: machen، haben، nehmen، stellen، geben، bringen، treffen، führen، kommen.",
+        path: "/learn/de-fa/B1/B1-M13-L04"
+      }
+    ]
   }
 ];
 

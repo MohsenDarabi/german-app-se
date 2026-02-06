@@ -1,0 +1,516 @@
+{
+  "id": "B1-M13-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Nomen-Verb-Verbindungen: stellen, geben, bringen", "fa": "ترکیب‌های اسم-فعل: stellen، geben، bringen" },
+  "description": "یاد بگیرید چگونه از ترکیب‌های ثابت اسم-فعل (Funktionsverbgefüge) با فعل‌های stellen، geben و bringen استفاده کنید. این ترکیب‌ها در زبان رسمی و نوشتاری آلمانی بسیار رایج هستند.",
+  "level": "B1",
+  "module": 13,
+  "lessonNumber": 2,
+  "totalSteps": 45,
+  "estimatedMinutes": 25,
+  "vocabulary": [
+    { "de": "die Frage", "fa": "سؤال، پرسش", "grammar": { "pos": "noun", "gender": "f" } },
+    { "de": "der Antrag", "fa": "درخواست، تقاضا", "grammar": { "pos": "noun", "gender": "m" } },
+    { "de": "die Verfügung", "fa": "اختیار، دسترسی", "grammar": { "pos": "noun", "gender": "f" } },
+    { "de": "der Bescheid", "fa": "اطلاع، خبر", "grammar": { "pos": "noun", "gender": "m" } },
+    { "de": "die Auskunft", "fa": "اطلاعات، راهنمایی", "grammar": { "pos": "noun", "gender": "f" } },
+    { "de": "der Ausdruck", "fa": "بیان، عبارت", "grammar": { "pos": "noun", "gender": "m" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "Funktionsverbgefüge چیست؟",
+      "content": "**Funktionsverbgefüge (ترکیب‌های فعل-اسم ثابت)**\n\nدر آلمانی، برخی فعل‌ها با اسم‌های خاص ترکیب می‌شوند و **معنای ثابت** ایجاد می‌کنند.\n\n**سه فعل مهم:**\n- **stellen** - قرار دادن → ترکیب‌های درخواست\n- **geben** - دادن → ترکیب‌های اطلاع‌رسانی\n- **bringen** - آوردن → ترکیب‌های تغییر وضعیت\n\n**مثال:**\n- eine Frage **stellen** (سؤال پرسیدن) ≠ stellen به تنهایی\n- Bescheid **geben** (خبر دادن) ≠ geben به تنهایی\n\n**نکته فارسی:** این ترکیب‌ها مثل «سؤال کردن»، «خبر دادن» در فارسی هستند که فعل + اسم ترکیب ثابت می‌سازند.",
+      "examples": [
+        { "de": "Ich stelle eine Frage.", "fa": "من یک سؤال می‌پرسم." },
+        { "de": "Er gibt mir Bescheid.", "fa": "او به من خبر می‌دهد." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "die Frage", "fa": "سؤال، پرسش" },
+      "example": { "text": { "de": "Darf ich eine Frage stellen?", "fa": "می‌توانم یک سؤال بپرسم؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Frage",
+      "translation": "سؤال",
+      "syllables": ["Fra", "ge"],
+      "distractors": ["Fro", "gi", "ga"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "der Antrag", "fa": "درخواست، تقاضا (رسمی)" },
+      "example": { "text": { "de": "Sie müssen einen Antrag stellen.", "fa": "شما باید یک درخواست بدهید." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Antrag",
+      "translation": "درخواست",
+      "syllables": ["An", "trag"],
+      "distractors": ["On", "treg", "tag"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "die Verfügung", "fa": "اختیار، دسترسی" },
+      "example": { "text": { "de": "Das Buch steht zur Verfügung.", "fa": "کتاب در دسترس است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Verfügung",
+      "translation": "اختیار",
+      "syllables": ["Ver", "fü", "gung"],
+      "distractors": ["Vor", "fu", "gang"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام ترکیب به معنی «سؤال پرسیدن» است؟",
+      "options": [
+        "eine Frage geben",
+        "eine Frage stellen",
+        "eine Frage bringen",
+        "eine Frage machen"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! eine Frage stellen یعنی سؤال پرسیدن.", "incorrect": "ترکیب صحیح eine Frage stellen است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را با فعل مناسب پر کنید",
+      "sentence": "Ich möchte eine Frage {0}.",
+      "options": ["stellen", "geben", "bringen", "machen"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "eine Frage stellen یعنی سؤال پرسیدن." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در اداره",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Bürgeramt. Frau Müller braucht einen neuen Pass.", "fa": "در اداره شهرداری. خانم مولر به پاسپورت جدید نیاز دارد." }
+      },
+      "lines": [
+        { "speaker": "Beamter", "text": { "de": "Guten Tag! Wie kann ich Ihnen helfen?", "fa": "روز بخیر! چگونه می‌توانم کمکتان کنم؟" }, "mood": "neutral" },
+        { "speaker": "Frau Müller", "text": { "de": "Ich möchte einen Antrag auf einen neuen Pass stellen.", "fa": "می‌خواهم درخواست پاسپورت جدید بدهم." }, "mood": "neutral" },
+        { "speaker": "Beamter", "text": { "de": "Kein Problem. Haben Sie Ihren Ausweis dabei?", "fa": "مشکلی نیست. کارت شناسایی‌تان همراهتان هست؟" }, "mood": "neutral" },
+        { "speaker": "Frau Müller", "text": { "de": "Ja. Können Sie mir Bescheid geben, wann der Pass fertig ist?", "fa": "بله. می‌توانید به من خبر دهید کی پاسپورت آماده می‌شود؟" }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "خانم مولر چه می‌خواهد انجام دهد؟", "options": ["سؤال بپرسد", "درخواست پاسپورت بدهد", "شکایت کند"], "correctIndex": 1, "explanation": "او گفت: Ich möchte einen Antrag auf einen neuen Pass stellen." },
+        { "question": "خانم مولر چه درخواستی از کارمند دارد؟", "options": ["کمک مالی", "خبر دادن زمان آماده شدن پاسپورت", "تخفیف"], "correctIndex": 1, "explanation": "او گفت: Können Sie mir Bescheid geben?" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["stellen.", "Antrag", "einen", "muss", "Er"],
+      "correctOrder": [4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Er muss einen Antrag stellen.", "fa": "او باید یک درخواست بدهد." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "ترکیب «eine Frage stellen» به معنی «یک سؤال پرسیدن» است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! eine Frage stellen یعنی سؤال پرسیدن." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "ترکیب‌های مهم با stellen",
+      "content": "**stellen - ترکیب‌های رایج**\n\n**۱. eine Frage stellen**\n= سؤال پرسیدن\n- Darf ich **eine Frage stellen**?\n\n**۲. einen Antrag stellen**\n= درخواست دادن (رسمی)\n- Ich **stelle einen Antrag** auf Urlaub.\n\n**۳. zur Verfügung stellen**\n= در اختیار گذاشتن\n- Die Firma **stellt** uns einen Laptop **zur Verfügung**.\n\n**۴. in Frage stellen**\n= زیر سؤال بردن\n- Er **stellt** meine Entscheidung **in Frage**.\n\n**نکته:** در این ترکیب‌ها، فعل stellen معنای اصلی خود (قرار دادن) را ندارد!",
+      "examples": [
+        { "de": "Sie stellt viele Fragen.", "fa": "او سؤالات زیادی می‌پرسد." },
+        { "de": "Ich stelle einen Antrag auf Visum.", "fa": "من درخواست ویزا می‌دهم." },
+        { "de": "Das Büro stellt Computer zur Verfügung.", "fa": "دفتر کامپیوتر در اختیار می‌گذارد." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "der Bescheid", "fa": "اطلاع، خبر (رسمی)" },
+      "example": { "text": { "de": "Geben Sie mir bitte Bescheid!", "fa": "لطفاً به من خبر دهید!" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "Bescheid",
+      "translation": "خبر",
+      "syllables": ["Be", "scheid"],
+      "distractors": ["Ba", "schied", "schad"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "die Auskunft", "fa": "اطلاعات، راهنمایی" },
+      "example": { "text": { "de": "Können Sie mir Auskunft geben?", "fa": "می‌توانید به من اطلاعات بدهید؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "Auskunft",
+      "translation": "اطلاعات",
+      "syllables": ["Aus", "kunft"],
+      "distractors": ["Ous", "konft", "kuft"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "«Bescheid geben» به چه معنی است؟",
+      "options": [
+        "تصمیم گرفتن",
+        "خبر دادن، اطلاع دادن",
+        "سؤال پرسیدن",
+        "کمک کردن"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! Bescheid geben یعنی خبر دادن.", "incorrect": "Bescheid geben به معنی خبر دادن یا اطلاع دادن است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Bitte geben Sie mir {0}!",
+      "options": ["Bescheid", "Frage", "Antrag", "Verfügung"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Bescheid geben یعنی خبر دادن." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در محل کار",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Büro. Thomas fragt seine Chefin nach Informationen.", "fa": "در دفتر. توماس از رئیسش اطلاعاتی می‌خواهد." }
+      },
+      "lines": [
+        { "speaker": "Thomas", "text": { "de": "Frau Schmidt, können Sie mir Auskunft über das neue Projekt geben?", "fa": "خانم اشمیت، می‌توانید در مورد پروژه جدید اطلاعات بدهید؟" }, "mood": "neutral" },
+        { "speaker": "Frau Schmidt", "text": { "de": "Natürlich. Ich gebe Ihnen gerne Bescheid, wenn ich mehr weiß.", "fa": "البته. با کمال میل خبرتان می‌دهم وقتی بیشتر بدانم." }, "mood": "happy" },
+        { "speaker": "Thomas", "text": { "de": "Vielen Dank. Ich möchte auch meine Bedenken zum Ausdruck bringen.", "fa": "خیلی ممنون. همچنین می‌خواهم نگرانی‌هایم را بیان کنم." }, "mood": "neutral" },
+        { "speaker": "Frau Schmidt", "text": { "de": "Das ist wichtig. Ich gebe mir Mühe, alles zu klären.", "fa": "این مهم است. تلاش می‌کنم همه چیز را روشن کنم." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "توماس چه می‌خواهد؟", "options": ["ترفیع", "اطلاعات درباره پروژه", "مرخصی"], "correctIndex": 1, "explanation": "او گفت: Können Sie mir Auskunft über das neue Projekt geben?" },
+        { "question": "خانم اشمیت چه قولی می‌دهد؟", "options": ["پاداش می‌دهد", "خبر می‌دهد", "استعفا می‌دهد"], "correctIndex": 1, "explanation": "او گفت: Ich gebe Ihnen gerne Bescheid." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Bescheid.", "Sie", "mir", "Geben", "bitte"],
+      "correctOrder": [3, 4, 2, 1, 0],
+      "correctSentence": { "de": "Geben Sie mir bitte Bescheid.", "fa": "لطفاً به من خبر دهید." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "ترکیب «sich Mühe geben» به معنی «تلاش کردن» است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! sich Mühe geben یعنی تلاش کردن، زحمت کشیدن." }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "der Ausdruck", "fa": "بیان، عبارت" },
+      "example": { "text": { "de": "Sie bringt ihre Freude zum Ausdruck.", "fa": "او خوشحالی‌اش را بیان می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Ausdruck",
+      "translation": "بیان",
+      "syllables": ["Aus", "druck"],
+      "distractors": ["Ous", "drok", "druk"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "فعل مناسب را انتخاب کنید",
+      "sentence": "Er {0} seine Meinung zum Ausdruck.",
+      "options": ["bringt", "stellt", "gibt", "macht"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "zum Ausdruck bringen یعنی بیان کردن." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Wir müssen das Problem in Ordnung {0}.",
+      "options": ["bringen", "stellen", "geben", "machen"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "in Ordnung bringen یعنی درست کردن، مرتب کردن." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "ترکیب‌های مهم با geben و bringen",
+      "content": "**geben - ترکیب‌های رایج**\n\n**۱. Bescheid geben** = خبر دادن\n**۲. Auskunft geben** = اطلاعات دادن\n**۳. Anlass geben** = دلیل دادن، باعث شدن\n**۴. sich Mühe geben** = تلاش کردن\n\n---\n\n**bringen - ترکیب‌های رایج**\n\n**۱. zum Ausdruck bringen** = بیان کردن\n**۲. in Ordnung bringen** = درست کردن\n**۳. zur Sprache bringen** = مطرح کردن\n**۴. in Erfahrung bringen** = فهمیدن، پی بردن\n\n**نکته:** با bringen معمولاً حرف اضافه zu یا in می‌آید!",
+      "examples": [
+        { "de": "Ich gebe mir Mühe.", "fa": "من تلاش می‌کنم." },
+        { "de": "Er bringt das Thema zur Sprache.", "fa": "او موضوع را مطرح می‌کند." },
+        { "de": "Wir bringen alles in Ordnung.", "fa": "ما همه چیز را درست می‌کنیم." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Ausdruck.", "zum", "Meinung", "ihre", "Sie", "bringt"],
+      "correctOrder": [5, 4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Sie bringt ihre Meinung zum Ausdruck.", "fa": "او نظرش را بیان می‌کند." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "ترکیب «zur Sprache bringen» به معنی «صحبت کردن» نیست، بلکه به معنی «مطرح کردن یک موضوع» است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! zur Sprache bringen یعنی یک موضوع را مطرح کردن، نه فقط صحبت کردن." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "ترکیب مناسب را انتخاب کنید",
+      "sentence": "Ich möchte dieses Thema zur Sprache {0}.",
+      "options": ["bringen", "stellen", "geben", "machen"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "zur Sprache bringen یعنی مطرح کردن." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Firma stellt uns ein Auto zur {0}.",
+      "options": ["Verfügung", "Frage", "Ordnung", "Sprache"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "zur Verfügung stellen یعنی در اختیار گذاشتن." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "ترکیب‌ها را با معنی فارسی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "eine Frage stellen" },
+        { "id": "i2", "text": "Bescheid geben" },
+        { "id": "i3", "text": "zum Ausdruck bringen" },
+        { "id": "i4", "text": "in Ordnung bringen" },
+        { "id": "i5", "text": "zur Verfügung stellen" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "سؤال پرسیدن" },
+        { "id": "m2", "text": "خبر دادن" },
+        { "id": "m3", "text": "بیان کردن" },
+        { "id": "m4", "text": "درست کردن" },
+        { "id": "m5", "text": "در اختیار گذاشتن" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "می‌توانم یک سؤال بپرسم؟",
+      "sentenceTemplate": "Darf ich eine {0} {1}?",
+      "options": ["Frage", "stellen", "geben", "Antrag"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Darf ich eine Frage stellen?", "fa": "می‌توانم یک سؤال بپرسم؟" }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "لطفاً به من خبر دهید.",
+      "sentenceTemplate": "Bitte {0} Sie mir {1}.",
+      "options": ["geben", "Bescheid", "stellen", "Frage"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Bitte geben Sie mir Bescheid.", "fa": "لطفاً به من خبر دهید." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: ترکیب‌های اسم-فعل",
+      "passage": {
+        "de": "Herr Weber arbeitet bei einer großen Firma. Heute muss er einen wichtigen Antrag stellen. Er braucht mehr Informationen, also fragt er seine Kollegin: 'Können Sie mir Auskunft über das neue System geben?' Die Kollegin antwortet: 'Natürlich! Ich gebe Ihnen sofort Bescheid.' Später möchte Herr Weber seine Bedenken zum Ausdruck bringen. In der Besprechung bringt er das Thema zur Sprache. Der Chef gibt sich Mühe, alles in Ordnung zu bringen.",
+        "fa": "آقای وبر در یک شرکت بزرگ کار می‌کند. امروز باید یک درخواست مهم بدهد. او به اطلاعات بیشتری نیاز دارد، پس از همکارش می‌پرسد: «می‌توانید در مورد سیستم جدید اطلاعات بدهید؟» همکار جواب می‌دهد: «البته! فوراً خبرتان می‌دهم.» بعداً آقای وبر می‌خواهد نگرانی‌هایش را بیان کند. در جلسه موضوع را مطرح می‌کند. رئیس تلاش می‌کند همه چیز را درست کند."
+      },
+      "questions": [
+        { "question": "آقای وبر امروز چه باید انجام دهد؟", "options": ["سؤال بپرسد", "درخواست بدهد", "استعفا بدهد"], "correctIndex": 1, "explanation": "متن گفت: Er muss einen wichtigen Antrag stellen." },
+        { "question": "همکار چه قولی می‌دهد؟", "options": ["کمک مالی", "خبر دادن", "ترفیع"], "correctIndex": 1, "explanation": "همکار گفت: Ich gebe Ihnen sofort Bescheid." },
+        { "question": "رئیس چه تلاشی می‌کند؟", "options": ["همه چیز را درست کند", "اخراج کند", "جلسه را لغو کند"], "correctIndex": 0, "explanation": "متن گفت: Der Chef gibt sich Mühe, alles in Ordnung zu bringen." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die schwierige Bewerbung", "fa": "درخواست شغلی دشوار" },
+      "characters": ["Lisa", "Max"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Lisa möchte sich bei einer neuen Firma bewerben.", "fa": "لیزا می‌خواهد برای یک شرکت جدید درخواست شغلی بدهد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Max, ich muss einen Antrag auf die neue Stelle stellen.", "fa": "ماکس، باید درخواست برای موقعیت جدید بدهم." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Max",
+          "text": { "de": "Hast du alle Informationen? Ich kann dir Auskunft geben.", "fa": "همه اطلاعات را داری؟ می‌توانم راهنماییت کنم." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "لیزا چه می‌خواهد انجام دهد؟",
+          "options": ["سؤال بپرسد", "درخواست شغلی بدهد", "استعفا بدهد"],
+          "correctIndex": 1,
+          "explanation": "لیزا گفت: Ich muss einen Antrag auf die neue Stelle stellen."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Danke! Ich möchte meine Stärken gut zum Ausdruck bringen.", "fa": "ممنون! می‌خواهم نقاط قوتم را خوب بیان کنم." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Max",
+          "text": { "de": "Gib dir Mühe! Und gib mir Bescheid, wie es läuft.", "fa": "تلاشت را بکن! و به من خبر بده چطور پیش می‌رود." },
+          "mood": "happy"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Eine Woche später bekommt Lisa gute Nachrichten.", "fa": "یک هفته بعد لیزا خبر خوبی می‌گیرد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Max! Sie haben mir die Stelle angeboten!", "fa": "ماکس! موقعیت را به من پیشنهاد دادند!" },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "ماکس از لیزا چه خواست؟",
+          "options": ["کمک مالی", "خبر دادن از نتیجه", "استعفا"],
+          "correctIndex": 1,
+          "explanation": "ماکس گفت: Gib mir Bescheid, wie es läuft."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع",
+      "instruction": "فعل مناسب را انتخاب کنید!",
+      "questions": [
+        { "prompt": "eine Frage ___", "left": "stellen", "right": "geben", "correctSide": "left" },
+        { "prompt": "Bescheid ___", "left": "stellen", "right": "geben", "correctSide": "right" },
+        { "prompt": "zum Ausdruck ___", "left": "bringen", "right": "stellen", "correctSide": "left" },
+        { "prompt": "einen Antrag ___", "left": "stellen", "right": "bringen", "correctSide": "left" },
+        { "prompt": "in Ordnung ___", "left": "geben", "right": "bringen", "correctSide": "right" },
+        { "prompt": "zur Verfügung ___", "left": "stellen", "right": "geben", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Darf ich eine Frage stellen?",
+      "translation": "می‌توانم یک سؤال بپرسم؟"
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Bitte geben Sie mir Bescheid.",
+      "translation": "لطفاً به من خبر دهید."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Er bringt seine Meinung zum Ausdruck.",
+      "translation": "او نظرش را بیان می‌کند."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "eine Frage ___", "options": ["stellen", "geben", "bringen"], "correctAnswerIndex": 0 },
+        { "question": "Bescheid ___", "options": ["stellen", "geben", "bringen"], "correctAnswerIndex": 1 },
+        { "question": "zum Ausdruck ___", "options": ["stellen", "geben", "bringen"], "correctAnswerIndex": 2 },
+        { "question": "einen Antrag ___", "options": ["stellen", "geben", "bringen"], "correctAnswerIndex": 0 },
+        { "question": "in Ordnung ___", "options": ["stellen", "geben", "bringen"], "correctAnswerIndex": 2 },
+        { "question": "sich Mühe ___", "options": ["stellen", "geben", "bringen"], "correctAnswerIndex": 1 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "Frage stellen", "fa": "سؤال پرسیدن" },
+        { "de": "Bescheid geben", "fa": "خبر دادن" },
+        { "de": "zum Ausdruck bringen", "fa": "بیان کردن" },
+        { "de": "in Ordnung bringen", "fa": "درست کردن" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات مربوط به ترکیب‌های اسم-فعل را پیدا کنید",
+      "targetWords": ["Frage", "Antrag", "Bescheid", "Auskunft", "Ausdruck", "Ordnung"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "die Frage", "fa": "سؤال", "options": ["جواب", "سؤال", "مشکل", "راه‌حل"], "correctIndex": 1 },
+        { "de": "der Antrag", "fa": "درخواست", "options": ["درخواست", "پاسخ", "سؤال", "نظر"], "correctIndex": 0 },
+        { "de": "der Bescheid", "fa": "خبر، اطلاع", "options": ["سؤال", "خبر، اطلاع", "درخواست", "بیان"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما ترکیب‌های اسم-فعل با stellen، geben و bringen را یاد گرفتید!",
+      "keyPoints": [
+        "stellen: eine Frage stellen (سؤال پرسیدن)، einen Antrag stellen (درخواست دادن)",
+        "stellen: zur Verfügung stellen (در اختیار گذاشتن)، in Frage stellen (زیر سؤال بردن)",
+        "geben: Bescheid geben (خبر دادن)، Auskunft geben (اطلاعات دادن)",
+        "geben: sich Mühe geben (تلاش کردن)، Anlass geben (باعث شدن)",
+        "bringen: zum Ausdruck bringen (بیان کردن)، in Ordnung bringen (درست کردن)",
+        "bringen: zur Sprache bringen (مطرح کردن)، in Erfahrung bringen (فهمیدن)",
+        "این ترکیب‌ها در زبان رسمی و نوشتاری آلمانی بسیار رایج هستند!"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "die Frage", "fa": "سؤال" } },
+        { "word": { "de": "der Antrag", "fa": "درخواست" } },
+        { "word": { "de": "die Verfügung", "fa": "اختیار" } },
+        { "word": { "de": "der Bescheid", "fa": "خبر" } },
+        { "word": { "de": "die Auskunft", "fa": "اطلاعات" } },
+        { "word": { "de": "der Ausdruck", "fa": "بیان" } }
+      ]
+    }
+  ]
+}
