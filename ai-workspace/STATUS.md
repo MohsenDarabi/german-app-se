@@ -8,7 +8,7 @@
 
 **Create B1 lessons - lesson by lesson, wait for user test after each**
 
-Current: `B1-M18` (Irreale Vergleichssätze) - **MODULE COMPLETE - READY FOR USER TEST**
+Current: `B1-M19` (Passiversatzformen) - **MODULE COMPLETE - READY FOR USER TEST**
 
 ---
 
@@ -26,7 +26,7 @@ Current: `B1-M18` (Irreale Vergleichssätze) - **MODULE COMPLETE - READY FOR USE
 |-------|---------|---------|--------|
 | A1 | 14 | 56+ | Complete |
 | A2 | 18 | 72 | **Complete** ✅ |
-| B1 | 18 | 72 | Module 18 complete |
+| B1 | 19 | 76 | Module 19 complete |
 
 ### A2 Completion (2026-02-05)
 
@@ -75,8 +75,9 @@ Current: `B1-M18` (Irreale Vergleichssätze) - **MODULE COMPLETE - READY FOR USE
 | M16 | Temporale Nebensätze | 4/4 | ✅ Complete |
 | M17 | Wortbildung | 4/4 | ✅ Complete |
 | M18 | Irreale Vergleichssätze | 4/4 | ✅ Complete |
+| M19 | Passiversatzformen | 4/4 | ✅ Complete |
 
-**Total B1: 72 lessons**
+**Total B1: 76 lessons**
 
 ---
 
@@ -278,10 +279,23 @@ Current: `B1-M18` (Irreale Vergleichssätze) - **MODULE COMPLETE - READY FOR USE
 
 ---
 
+## B1 Module 19: Passiversatzformen (Passive Alternatives)
+
+| Lesson | Title | Status |
+|--------|-------|--------|
+| B1-M19-L01 | sein + zu + Infinitiv (necessity/possibility) | ✅ Complete |
+| B1-M19-L02 | sich lassen + Infinitiv (possibility) | ✅ Complete |
+| B1-M19-L03 | Adjektive auf -bar, -lich, -abel | ✅ Complete |
+| B1-M19-L04 | Zusammenfassung | ✅ Complete |
+
+---
+
 ## Recent Changes
 
 | Date | Change |
 |------|--------|
+| 2026-02-06 | **B1 Module 19 (Passiversatzformen) COMPLETE - 4 lessons!** |
+| 2026-02-06 | Created B1-M19-L01 to L04 in parallel |
 | 2026-02-06 | **B1 Module 18 (Irreale Vergleichssätze) COMPLETE - 4 lessons!** |
 | 2026-02-06 | Created B1-M18-L01 to L04 in parallel |
 | 2026-02-06 | **B1 Module 17 (Wortbildung) COMPLETE - 4 lessons!** |
@@ -352,6 +366,7 @@ Current: `B1-M18` (Irreale Vergleichssätze) - **MODULE COMPLETE - READY FOR USE
 17. [x] Complete B1 Module 16 (Temporale Nebensätze) - 4 lessons
 18. [x] Complete B1 Module 17 (Wortbildung) - 4 lessons
 19. [x] Complete B1 Module 18 (Irreale Vergleichssätze) - 4 lessons
-20. [ ] **User tests B1-M18 lessons**
-21. [ ] Plan B1 Module 19 topic
-22. [ ] Continue B1 curriculum development
+20. [x] Complete B1 Module 19 (Passiversatzformen) - 4 lessons
+21. [ ] **User tests B1-M19 lessons**
+22. [ ] Plan B1 Module 20 topic
+23. [ ] Continue B1 curriculum development

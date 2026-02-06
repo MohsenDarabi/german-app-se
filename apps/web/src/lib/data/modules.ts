@@ -1593,6 +1593,37 @@ const DE_FA_B1_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/B1/B1-M18-L04"
       }
     ]
+  },
+  {
+    id: "module-19",
+    title: "بخش ۱۹: جایگزین‌های مجهول (Passiversatzformen)",
+    level: "B1",
+    lessons: [
+      {
+        id: "B1-M19-L01",
+        title: "sein + zu + Infinitiv - ساختار اول",
+        description: "یاد بگیرید ساختار sein + zu + Infinitiv برای بیان ضرورت یا امکان به جای مجهول.",
+        path: "/learn/de-fa/B1/B1-M19-L01"
+      },
+      {
+        id: "B1-M19-L02",
+        title: "sich lassen + Infinitiv - ساختار دوم",
+        description: "یاد بگیرید ساختار sich lassen + Infinitiv برای بیان امکان به جای مجهول.",
+        path: "/learn/de-fa/B1/B1-M19-L02"
+      },
+      {
+        id: "B1-M19-L03",
+        title: "Adjektive auf -bar, -lich, -abel - صفات",
+        description: "یاد بگیرید صفات با پسوند -bar، -lich، -abel برای بیان امکان: machbar، verständlich، akzeptabel.",
+        path: "/learn/de-fa/B1/B1-M19-L03"
+      },
+      {
+        id: "B1-M19-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل جایگزین‌های مجهول: sein + zu، sich lassen و صفات -bar/-lich/-abel.",
+        path: "/learn/de-fa/B1/B1-M19-L04"
+      }
+    ]
   }
 ];
 
