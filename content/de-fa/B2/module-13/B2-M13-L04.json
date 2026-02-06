@@ -1,0 +1,531 @@
+{
+  "id": "B2-M13-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Finalsätze: Zusammenfassung", "fa": "جملات هدف: جمع‌بندی" },
+  "description": "مرور جامع تمام عبارات هدف در آلمانی: damit (جمله فرعی هدف با فاعل متفاوت، فعل آخر)، um...zu (مصدر هدفی با فاعل یکسان)، و عبارات رسمی zwecks، zum Zweck، mit dem Ziel، in der Absicht. تمرکز بر قاعده فاعل یکسان: um...zu در مقابل damit، تفاوت بین هدف (damit) و نتیجه (sodass)، و تفاوت سطوح رسمیت.",
+  "level": "B2",
+  "module": 13,
+  "lessonNumber": 4,
+  "totalSteps": 45,
+  "estimatedMinutes": 45,
+  "vocabulary": [
+    { "de": "der Finalsatz", "fa": "جمله هدف", "grammar": { "pos": "noun", "gender": "masculine" } },
+    { "de": "der Zweck", "fa": "هدف، مقصود", "grammar": { "pos": "noun", "gender": "masculine" } },
+    { "de": "die Absicht", "fa": "قصد، نیت", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "zwecks", "fa": "به منظور (رسمی)", "grammar": { "pos": "preposition" } },
+    { "de": "in der Absicht", "fa": "با قصد (رسمی)", "grammar": { "pos": "phrase" } },
+    { "de": "mit dem Ziel", "fa": "با هدف (رسمی)", "grammar": { "pos": "phrase" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "مرور کلی: جملات هدف در آلمانی",
+      "content": "**Finalsätze = جملات هدف**\n\nجملات هدف نشان می‌دهند که یک عمل **برای چه منظوری** انجام می‌شود. در این ماژول سه دسته یاد گرفتیم:\n\n**1. حرف ربط تبعی (فعل در آخر):**\n- **damit** = تا اینکه، به این منظور که\n- فاعل جمله اصلی و فرعی **متفاوت** است\n\n**2. ساختار مصدری (um...zu):**\n- **um...zu + Infinitiv** = برای اینکه، به منظور\n- فاعل جمله اصلی و مصدر **یکسان** است\n\n**3. عبارات رسمی:**\n- **zwecks + Genitiv** = به منظور (اداری)\n- **zum Zweck + Genitiv** = به منظور (رسمی)\n- **mit dem Ziel + Genitiv** = با هدف (رسمی)\n- **in der Absicht + zu** = با قصد (حقوقی)\n\n**تفاوت کلیدی با sodass (نتیجه):**\n- damit = هدف (می‌خواهیم اتفاق بیفتد)\n- sodass = نتیجه (اتفاق افتاده)",
+      "examples": [
+        { "de": "Ich lerne, damit meine Eltern stolz sind. (فاعل متفاوت)", "fa": "درس می‌خوانم تا والدینم افتخار کنند." },
+        { "de": "Ich lerne, um die Prüfung zu bestehen. (فاعل یکسان)", "fa": "درس می‌خوانم برای قبول شدن در امتحان." },
+        { "de": "Zwecks Klärung bitten wir um ein Gespräch. (رسمی)", "fa": "به منظور روشن شدن خواهشمند گفتگو هستیم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "der Finalsatz", "fa": "جمله هدف" },
+      "example": { "text": { "de": "Ein Finalsatz drückt einen Zweck oder eine Absicht aus.", "fa": "یک جمله هدف، یک مقصود یا قصد را بیان می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Finalsatz",
+      "translation": "جمله هدف",
+      "syllables": ["Fi", "nal", "satz"],
+      "distractors": ["Fa", "nel", "sotz"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "der Zweck", "fa": "هدف، مقصود" },
+      "example": { "text": { "de": "Der Zweck dieses Projekts ist die Verbesserung der Umwelt.", "fa": "هدف این پروژه بهبود محیط زیست است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Zweck",
+      "translation": "هدف، مقصود",
+      "syllables": ["Zweck"],
+      "distractors": ["Zwick", "Zwack", "Zwuck"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "die Absicht", "fa": "قصد، نیت" },
+      "example": { "text": { "de": "Er handelte in der Absicht, ihr zu helfen.", "fa": "او با قصد کمک به او عمل کرد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Absicht",
+      "translation": "قصد، نیت",
+      "syllables": ["Ab", "sicht"],
+      "distractors": ["Ob", "sacht", "sucht"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "قاعده فاعل یکسان: um...zu در مقابل damit",
+      "content": "**قاعده طلایی:**\n\n| ساختار | کی استفاده شود؟ |\n|--------|------------------|\n| **um...zu** | فاعل جمله اصلی = فاعل مصدر |\n| **damit** | فاعل جمله اصلی ≠ فاعل جمله فرعی |\n\n**مثال با فاعل یکسان (um...zu):**\n- **Ich** lerne, um (**ich**) die Prüfung zu bestehen.\n- من درس می‌خوانم برای قبول شدن.\n\n**مثال با فاعل متفاوت (damit):**\n- **Ich** lerne, damit **meine Eltern** stolz sind.\n- من درس می‌خوانم تا والدینم افتخار کنند.\n\n**خطای رایج:**\n❌ Ich lerne, um meine Eltern stolz zu sein.\n✅ Ich lerne, damit meine Eltern stolz sind.\n\n**نکته:**\nدر damit فعل به آخر جمله فرعی می‌رود:\n- damit + فاعل + ... + **فعل (آخر)**",
+      "examples": [
+        { "de": "Er spart Geld, um ein Auto zu kaufen. (فاعل یکسان: او)", "fa": "او پول پس‌انداز می‌کند برای خریدن ماشین." },
+        { "de": "Er spart Geld, damit seine Tochter studieren kann. (فاعل متفاوت)", "fa": "او پول پس‌انداز می‌کند تا دخترش بتواند تحصیل کند." },
+        { "de": "Sie arbeitet hart, um erfolgreich zu werden. (فاعل یکسان)", "fa": "او سخت کار می‌کند برای موفق شدن." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله از نظر دستوری صحیح است؟",
+      "options": [
+        "Ich lerne, um meine Eltern stolz zu sein.",
+        "Ich lerne, damit meine Eltern stolz sind.",
+        "Ich lerne, damit ich die Prüfung zu bestehen.",
+        "Ich lerne, um meine Eltern stolz sind."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! چون فاعل متفاوت است (من/والدین)، باید از damit استفاده کنیم.", "incorrect": "وقتی فاعل جمله اصلی و فرعی متفاوت است، از damit استفاده می‌کنیم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "ساختار مناسب را انتخاب کنید (فاعل یکسان)",
+      "sentence": "Sie geht ins Fitnessstudio, {0} fit zu bleiben.",
+      "options": ["damit", "um", "sodass", "weil"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "um...zu = برای (فاعل یکسان). او به باشگاه می‌رود برای اینکه (خودش) فیت بماند." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "ساختار مناسب را انتخاب کنید (فاعل متفاوت)",
+      "sentence": "Ich spreche langsam, {0} alle mich verstehen.",
+      "options": ["um", "damit", "sodass", "obwohl"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "damit = تا اینکه (فاعل متفاوت: من/همه). من آهسته صحبت می‌کنم تا همه متوجه شوند." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "zwecks", "fa": "به منظور (رسمی)" },
+      "example": { "text": { "de": "Zwecks Terminvereinbarung rufen Sie bitte an.", "fa": "به منظور هماهنگی وقت لطفاً تماس بگیرید." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "zwecks",
+      "translation": "به منظور",
+      "syllables": ["zwecks"],
+      "distractors": ["zwacks", "zwicks", "zwocks"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s8",
+      "title": "تفاوت هدف (damit) و نتیجه (sodass)",
+      "content": "**تفاوت کلیدی:**\n\n| damit (هدف) | sodass (نتیجه) |\n|-------------|----------------|\n| قصد/هدف | نتیجه واقعی |\n| می‌خواهیم اتفاق بیفتد | اتفاق افتاده |\n| ممکن است نشود | قطعاً شده |\n\n**مثال:**\n- Er lernt, **damit** er die Prüfung besteht.\n  (هدف: می‌خواهد قبول شود)\n- Er lernte viel, **sodass** er die Prüfung bestand.\n  (نتیجه: قبول شد)\n\n**نکته زمانی:**\n- damit اغلب با زمان حال یا آینده\n- sodass اغلب با زمان گذشته\n\n**ترتیب کلمات:**\nهر دو حرف ربط تبعی هستند → فعل در آخر",
+      "examples": [
+        { "de": "Sie übt, damit sie besser wird. (هدف)", "fa": "او تمرین می‌کند تا بهتر شود." },
+        { "de": "Sie übte, sodass sie besser wurde. (نتیجه)", "fa": "او تمرین کرد، به طوری که بهتر شد." },
+        { "de": "Er spart, damit er reisen kann. (هدف)", "fa": "او پس‌انداز می‌کند تا بتواند سفر کند." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله هدف (نه نتیجه) را بیان می‌کند؟",
+      "options": [
+        "Er trainierte hart, sodass er den Marathon schaffte.",
+        "Er trainiert hart, damit er den Marathon schafft.",
+        "Er trainierte hart. Folglich schaffte er den Marathon.",
+        "Er war so fit, dass er den Marathon schaffte."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "درست! damit = تا اینکه (هدف). او تمرین می‌کند تا ماراتن را تمام کند.", "incorrect": "damit = هدف/قصد، sodass = نتیجه واقعی." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "حرف ربط مناسب را انتخاب کنید (نتیجه)",
+      "sentence": "Er arbeitete so hart, {0} er erschöpft war.",
+      "options": ["damit", "um", "dass", "obwohl"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "so + صفت/قید + dass = آنقدر ... که (نتیجه). آنقدر سخت کار کرد که خسته شد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "عبارت رسمی مناسب را انتخاب کنید",
+      "sentence": "{0} des geplanten Umbaus bleibt das Büro geschlossen.",
+      "options": ["Damit", "Um", "Zwecks", "Sodass"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "Zwecks + Genitiv = به منظور (رسمی اداری). به منظور بازسازی برنامه‌ریزی شده دفتر تعطیل است." }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "in der Absicht", "fa": "با قصد (رسمی)" },
+      "example": { "text": { "de": "Er handelte in der Absicht, den Vertrag zu erfüllen.", "fa": "او با قصد اجرای قرارداد عمل کرد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "Absicht",
+      "translation": "قصد",
+      "syllables": ["Ab", "sicht"],
+      "distractors": ["Ob", "sucht", "sacht"]
+    },
+    {
+      "type": "new-word",
+      "id": "s10",
+      "word": { "de": "mit dem Ziel", "fa": "با هدف (رسمی)" },
+      "example": { "text": { "de": "Die Verhandlungen wurden mit dem Ziel einer Einigung geführt.", "fa": "مذاکرات با هدف رسیدن به توافق انجام شد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Ziel",
+      "translation": "هدف",
+      "syllables": ["Ziel"],
+      "distractors": ["Zael", "Zul", "Zel"]
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "بحث درباره یادگیری زبان",
+      "scene": {
+        "location": "cafe",
+        "description": { "de": "Im Café, Gespräch zwischen Kollegen", "fa": "در کافه، گفتگو بین همکاران" }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Warum lernst du Spanisch?", "fa": "چرا اسپانیایی یاد می‌گیری؟" }, "mood": "neutral" },
+        { "speaker": "Markus", "text": { "de": "Ich lerne Spanisch, um in Südamerika zu arbeiten.", "fa": "اسپانیایی یاد می‌گیرم برای کار کردن در آمریکای جنوبی." }, "mood": "excited" },
+        { "speaker": "Anna", "text": { "de": "Und ich lerne Französisch, damit meine Kinder auch davon profitieren.", "fa": "و من فرانسوی یاد می‌گیرم تا بچه‌هایم هم از آن بهره ببرند." }, "mood": "happy" },
+        { "speaker": "Markus", "text": { "de": "Das ist klug! Du denkst an die Zukunft, damit deine Familie besser dasteht.", "fa": "این عاقلانه است! تو به آینده فکر می‌کنی تا خانواده‌ات وضعیت بهتری داشته باشد." }, "mood": "happy" },
+        { "speaker": "Anna", "text": { "de": "Genau. Mein Chef lernt auch Chinesisch, um Geschäfte in Asien zu machen.", "fa": "دقیقاً. رئیسم هم چینی یاد می‌گیرد برای تجارت در آسیا." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "مارکوس با «um...zu» چه هدفی را بیان می‌کند؟", "options": ["سفر به اروپا", "کار در آمریکای جنوبی", "یادگیری فرانسوی"], "correctIndex": 1, "explanation": "um...zu = برای (فاعل یکسان). او برای کار کردن در آمریکای جنوبی اسپانیایی یاد می‌گیرد." },
+        { "question": "آنا چرا از «damit» استفاده کرد؟", "options": ["فاعل یکسان است", "فاعل متفاوت است (او/بچه‌هایش)", "نتیجه را بیان می‌کند"], "correctIndex": 1, "explanation": "damit = تا اینکه. فاعل متفاوت است: آنا یاد می‌گیرد، ولی بچه‌ها بهره می‌برند." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را مرتب کنید (um...zu)",
+      "words": ["um Deutsch", "Er geht zur Schule,", "zu lernen"],
+      "correctOrder": [1, 0, 2],
+      "correctSentence": { "de": "Er geht zur Schule, um Deutsch zu lernen.", "fa": "او به مدرسه می‌رود برای یادگیری آلمانی." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را مرتب کنید (damit - فعل آخر)",
+      "words": ["verstehen können", "damit alle ihn", "Er spricht langsam,"],
+      "correctOrder": [2, 1, 0],
+      "correctSentence": { "de": "Er spricht langsam, damit alle ihn verstehen können.", "fa": "او آهسته صحبت می‌کند تا همه بتوانند او را بفهمند." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله را مرتب کنید (عبارت رسمی)",
+      "words": ["der Qualitätssicherung", "Zwecks", "führen wir Kontrollen durch"],
+      "correctOrder": [1, 0, 2],
+      "correctSentence": { "de": "Zwecks der Qualitätssicherung führen wir Kontrollen durch.", "fa": "به منظور تضمین کیفیت، کنترل‌هایی انجام می‌دهیم." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "وقتی فاعل جمله اصلی و فرعی یکسان است، می‌توان از um...zu استفاده کرد.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! um...zu فقط وقتی استفاده می‌شود که فاعل هر دو بخش یکسان باشد." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "damit و sodass هر دو هدف را بیان می‌کنند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! damit = هدف/قصد، ولی sodass = نتیجه واقعی." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "zwecks یک حرف اضافه رسمی است که با Genitiv می‌آید.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! zwecks + Genitiv = به منظور (در متون اداری و رسمی)." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "ساختار مناسب را انتخاب کنید",
+      "sentence": "Wir treffen uns früher, {0} wir pünktlich ankommen.",
+      "options": ["um", "damit", "sodass", "zwecks"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "damit = تا اینکه (فاعل یکسان «ما»، ولی damit هم می‌توان استفاده کرد). البته um...zu هم درست است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "ساختار مناسب را انتخاب کنید (متن حقوقی)",
+      "sentence": "{0} der Schadensbegrenzung wurden sofortige Maßnahmen ergriffen.",
+      "options": ["Damit", "Um", "Mit dem Ziel", "Sodass"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "Mit dem Ziel + Genitiv = با هدف (رسمی حقوقی). با هدف محدود کردن خسارت اقدامات فوری انجام شد." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "جلسه کاری",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Besprechungsraum, formelle Sitzung", "fa": "در اتاق جلسه، نشست رسمی" }
+      },
+      "lines": [
+        { "speaker": "Herr Müller", "text": { "de": "Zwecks der Projektplanung bitte ich um Ihre Aufmerksamkeit.", "fa": "به منظور برنامه‌ریزی پروژه توجه شما را خواهانم." }, "mood": "neutral" },
+        { "speaker": "Frau Schmidt", "text": { "de": "Wir haben das Budget erhöht, damit das Team mehr Ressourcen hat.", "fa": "بودجه را افزایش دادیم تا تیم منابع بیشتری داشته باشد." }, "mood": "neutral" },
+        { "speaker": "Herr Müller", "text": { "de": "Gut. Mit dem Ziel einer termingerechten Lieferung müssen wir effizient arbeiten.", "fa": "خوب. با هدف تحویل به موقع باید کارآمد کار کنیم." }, "mood": "excited" },
+        { "speaker": "Frau Schmidt", "text": { "de": "Ich schlage vor, dass jeder Überstunden macht, um die Deadline einzuhalten.", "fa": "پیشنهاد می‌کنم هر کس اضافه‌کاری کند برای رعایت ددلاین." }, "mood": "neutral" },
+        { "speaker": "Herr Müller", "text": { "de": "In der Absicht, die Qualität zu sichern, werde ich persönlich kontrollieren.", "fa": "با قصد تضمین کیفیت، شخصاً کنترل خواهم کرد." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "آقای مولر با «zwecks» چه می‌گوید؟", "options": ["به منظور برنامه‌ریزی پروژه", "نتیجه پروژه", "مشکل پروژه"], "correctIndex": 0, "explanation": "zwecks = به منظور (رسمی). او برای برنامه‌ریزی پروژه توجه می‌خواهد." },
+        { "question": "کدام عبارت رسمی‌ترین است؟", "options": ["damit", "um...zu", "in der Absicht"], "correctIndex": 2, "explanation": "in der Absicht = با قصد. این عبارت در متون حقوقی و رسمی استفاده می‌شود." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "ساختار را با کاربرد و سطح رسمیت جفت کنید",
+      "items": [
+        { "id": "i1", "text": "um...zu" },
+        { "id": "i2", "text": "damit" },
+        { "id": "i3", "text": "zwecks" },
+        { "id": "i4", "text": "mit dem Ziel" },
+        { "id": "i5", "text": "in der Absicht" },
+        { "id": "i6", "text": "sodass" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "مصدری: فاعل یکسان" },
+        { "id": "m2", "text": "حرف ربط: فاعل متفاوت" },
+        { "id": "m3", "text": "حرف اضافه: اداری" },
+        { "id": "m4", "text": "عبارت: رسمی" },
+        { "id": "m5", "text": "عبارت: حقوقی" },
+        { "id": "m6", "text": "نتیجه (نه هدف)" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "من زود بیدار می‌شوم برای اینکه به موقع برسم.",
+      "sentenceTemplate": "Ich stehe früh auf, {0} pünktlich {1} kommen.",
+      "options": ["um", "damit", "zu", "kann"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Ich stehe früh auf, um pünktlich zu kommen.", "fa": "من زود بیدار می‌شوم برای اینکه به موقع برسم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "او آهسته صحبت می‌کند تا بچه‌ها بفهمند.",
+      "sentenceTemplate": "Er spricht langsam, {0} die Kinder ihn {1}.",
+      "options": ["damit", "um", "verstehen", "zu verstehen"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Er spricht langsam, damit die Kinder ihn verstehen.", "fa": "او آهسته صحبت می‌کند تا بچه‌ها بفهمند." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: نامه اداری",
+      "passage": {
+        "de": "Sehr geehrte Damen und Herren,\n\nzwecks der Überprüfung Ihrer Unterlagen bitten wir Sie um einen Termin. Mit dem Ziel einer schnellen Bearbeitung sollten Sie alle Dokumente mitbringen. Wir haben zusätzliches Personal eingestellt, damit die Wartezeiten kürzer werden. Bitte kommen Sie pünktlich, um Verzögerungen zu vermeiden. In der Absicht, Ihnen bestmöglich zu helfen, stehen wir Ihnen jederzeit zur Verfügung.\n\nMit freundlichen Grüßen",
+        "fa": "خانم‌ها و آقایان محترم،\n\nبه منظور بررسی مدارک شما خواهشمند وقت ملاقات هستیم. با هدف پردازش سریع باید تمام مدارک را بیاورید. ما کارکنان اضافی استخدام کردیم تا زمان انتظار کوتاه‌تر شود. لطفاً به موقع بیایید برای جلوگیری از تأخیر. با قصد کمک بهتر به شما، همیشه در خدمت هستیم.\n\nبا احترام"
+      },
+      "questions": [
+        { "question": "نامه با «zwecks» چه می‌گوید؟", "options": ["به منظور بررسی مدارک", "نتیجه بررسی", "مشکل مدارک"], "correctIndex": 0, "explanation": "zwecks = به منظور (اداری). به منظور بررسی مدارک وقت می‌خواهند." },
+        { "question": "چرا از «damit» استفاده شده؟", "options": ["فاعل یکسان است", "فاعل متفاوت است (ما/زمان انتظار)", "نتیجه را بیان می‌کند"], "correctIndex": 1, "explanation": "damit = تا اینکه. ما کارکنان استخدام کردیم (فاعل: ما)، تا زمان انتظار کوتاه شود (فاعل: زمان)." },
+        { "question": "«um Verzögerungen zu vermeiden» یعنی چه؟", "options": ["برای ایجاد تأخیر", "برای جلوگیری از تأخیر", "به دلیل تأخیر"], "correctIndex": 1, "explanation": "um...zu = برای. برای جلوگیری از تأخیر به موقع بیایید." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Das Bewerbungsgespräch", "fa": "مصاحبه شغلی" },
+      "characters": ["Lisa", "Herr Weber"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Lisa hat ein Vorstellungsgespräch bei einer großen Firma.", "fa": "لیزا یک مصاحبه شغلی در یک شرکت بزرگ دارد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Herr Weber",
+          "text": { "de": "Warum bewerben Sie sich bei uns?", "fa": "چرا پیش ما درخواست دادید؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Ich bewerbe mich, um meine Karriere voranzubringen.", "fa": "درخواست دادم برای پیشبرد کارم." },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "لیزا با «um...zu» چه می‌گوید؟",
+          "options": ["نتیجه درخواست", "هدف درخواست: پیشرفت شغلی", "دلیل ترک شغل قبلی"],
+          "correctIndex": 1,
+          "explanation": "um...zu = برای (هدف). او برای پیشبرد کارش درخواست داده."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Herr Weber",
+          "text": { "de": "Wir suchen jemanden, damit unser Team internationaler wird.", "fa": "ما دنبال کسی هستیم تا تیمم بین‌المللی‌تر شود." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Ich spreche drei Sprachen. Mit dem Ziel der internationalen Expansion kann ich helfen.", "fa": "من سه زبان صحبت می‌کنم. با هدف گسترش بین‌المللی می‌توانم کمک کنم." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "آقای وبر چرا از «damit» استفاده کرد؟",
+          "options": ["هدف با فاعل متفاوت (ما/تیم)", "نتیجه واقعی", "عبارت رسمی"],
+          "correctIndex": 0,
+          "explanation": "damit = تا اینکه. فاعل متفاوت: ما دنبال کسی هستیم، تا تیم بین‌المللی‌تر شود."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Herr Weber",
+          "text": { "de": "Sehr gut! In der Absicht, Sie einzustellen, möchte ich ein zweites Gespräch vorschlagen.", "fa": "بسیار خوب! با قصد استخدام شما، می‌خواهم جلسه دوم پیشنهاد کنم." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "«in der Absicht» در چه سطحی استفاده می‌شود؟",
+          "options": ["محاوره‌ای", "خنثی", "رسمی/حقوقی"],
+          "correctIndex": 2,
+          "explanation": "in der Absicht = با قصد. این عبارت در متون رسمی و حقوقی استفاده می‌شود."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: جملات هدف",
+      "instruction": "ساختار درست را انتخاب کنید!",
+      "questions": [
+        { "prompt": "فاعل یکسان →", "left": "um...zu", "right": "damit", "correctSide": "left" },
+        { "prompt": "فاعل متفاوت →", "left": "um...zu", "right": "damit", "correctSide": "right" },
+        { "prompt": "رسمی اداری →", "left": "zwecks", "right": "damit", "correctSide": "left" },
+        { "prompt": "نتیجه واقعی →", "left": "damit", "right": "sodass", "correctSide": "right" },
+        { "prompt": "حقوقی رسمی →", "left": "in der Absicht", "right": "um...zu", "correctSide": "left" },
+        { "prompt": "فعل در آخر →", "left": "damit", "right": "folglich", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich lerne Deutsch, um in Deutschland zu arbeiten.",
+      "translation": "آلمانی یاد می‌گیرم برای کار کردن در آلمان."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Er spricht langsam, damit alle ihn verstehen.",
+      "translation": "او آهسته صحبت می‌کند تا همه بفهمند."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Zwecks der Terminvereinbarung rufen Sie bitte an.",
+      "translation": "به منظور هماهنگی وقت لطفاً تماس بگیرید."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: جملات هدف",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "um...zu =", "options": ["برای (فاعل یکسان)", "تا (فاعل متفاوت)"], "correctAnswerIndex": 0 },
+        { "question": "damit =", "options": ["تا اینکه (فاعل متفاوت)", "به طوری که (نتیجه)"], "correctAnswerIndex": 0 },
+        { "question": "zwecks =", "options": ["به منظور (رسمی)", "بنابراین"], "correctAnswerIndex": 0 },
+        { "question": "sodass =", "options": ["به طوری که (نتیجه)", "تا اینکه (هدف)"], "correctAnswerIndex": 0 },
+        { "question": "in der Absicht =", "options": ["با قصد (حقوقی)", "به دلیل"], "correctAnswerIndex": 0 },
+        { "question": "mit dem Ziel =", "options": ["با هدف (رسمی)", "به علت"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: جملات هدف",
+      "pairs": [
+        { "de": "um...zu", "fa": "برای (مصدری)" },
+        { "de": "damit", "fa": "تا اینکه" },
+        { "de": "zwecks", "fa": "به منظور" },
+        { "de": "in der Absicht", "fa": "با قصد" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات کلیدی جملات هدف را پیدا کنید",
+      "targetWords": ["damit", "zwecks", "Absicht", "Ziel", "Zweck", "sodass"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "der Finalsatz", "fa": "جمله هدف", "options": ["جمله نتیجه", "جمله هدف", "جمله شرطی", "جمله زمانی"], "correctIndex": 1 },
+        { "de": "der Zweck", "fa": "هدف، مقصود", "options": ["نتیجه", "مقصود", "علت", "شرط"], "correctIndex": 1 },
+        { "de": "die Absicht", "fa": "قصد، نیت", "options": ["دلیل", "قصد", "پایان", "شروع"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! جمع‌بندی جملات هدف تمام شد!",
+      "message": "شما تمام انواع جملات هدف در آلمانی را مرور کردید!",
+      "keyPoints": [
+        "**ساختار مصدری (فاعل یکسان):**",
+        "um...zu + Infinitiv = برای",
+        "**حرف ربط تبعی (فاعل متفاوت):**",
+        "damit + فعل آخر = تا اینکه",
+        "**عبارات رسمی:**",
+        "zwecks + Genitiv = به منظور (اداری)",
+        "mit dem Ziel + Genitiv = با هدف (رسمی)",
+        "in der Absicht + zu = با قصد (حقوقی)",
+        "**تفاوت با نتیجه:**",
+        "damit = هدف (می‌خواهیم اتفاق بیفتد)",
+        "sodass = نتیجه (اتفاق افتاده)",
+        "**قاعده طلایی:**",
+        "فاعل یکسان → um...zu",
+        "فاعل متفاوت → damit"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "der Finalsatz", "fa": "جمله هدف" } },
+        { "word": { "de": "der Zweck", "fa": "هدف، مقصود" } },
+        { "word": { "de": "die Absicht", "fa": "قصد، نیت" } },
+        { "word": { "de": "zwecks", "fa": "به منظور (رسمی)" } },
+        { "word": { "de": "in der Absicht", "fa": "با قصد (رسمی)" } },
+        { "word": { "de": "mit dem Ziel", "fa": "با هدف (رسمی)" } }
+      ]
+    }
+  ]
+}

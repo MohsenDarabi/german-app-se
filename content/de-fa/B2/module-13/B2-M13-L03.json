@@ -1,0 +1,515 @@
+{
+  "id": "B2-M13-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Finalsätze: Formale Finalausdrücke", "fa": "جملات هدفی: عبارات رسمی هدف" },
+  "description": "یاد بگیرید چگونه از عبارات رسمی هدف مانند «zwecks + Genitiv»، «zum Zweck + Genitiv»، «zu dem Zweck, dass...»، «mit dem Ziel, zu...» و «in der Absicht, zu...» در متون رسمی و اداری استفاده کنید. این ساختارها جایگزین رسمی‌تر «damit» و «um...zu» هستند.",
+  "level": "B2",
+  "module": 13,
+  "lessonNumber": 3,
+  "totalSteps": 45,
+  "estimatedMinutes": 40,
+  "vocabulary": [
+    { "de": "zwecks", "fa": "به منظور، برای (+ مضاف‌الیه)", "grammar": { "pos": "preposition", "case": "genitive" } },
+    { "de": "der Zweck", "fa": "هدف، منظور", "grammar": { "pos": "noun", "gender": "masculine" } },
+    { "de": "das Ziel", "fa": "هدف، مقصد", "grammar": { "pos": "noun", "gender": "neuter" } },
+    { "de": "die Absicht", "fa": "قصد، نیت", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "beabsichtigen", "fa": "قصد داشتن", "grammar": { "pos": "verb" } },
+    { "de": "die Genehmigung", "fa": "مجوز، اجازه", "grammar": { "pos": "noun", "gender": "feminine" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "عبارات رسمی هدف (Formale Finalausdrücke)",
+      "content": "**عبارات رسمی هدف در آلمانی**\n\nدر متون رسمی، اداری و علمی آلمانی، به جای «damit» و «um...zu» از عبارات رسمی‌تری استفاده می‌شود:\n\n| عبارت | معنی فارسی | سبک |\n|-------|------------|-----|\n| zwecks + Genitiv | به منظورِ | بسیار رسمی/اداری |\n| zum Zweck + Genitiv | به منظورِ | رسمی |\n| zu dem Zweck, dass... | به این منظور که... | رسمی |\n| mit dem Ziel, zu... | با هدف... | رسمی/نوشتاری |\n| in der Absicht, zu... | با قصد... | رسمی/حقوقی |\n\n**نکته برای فارسی‌زبانان:**\nاین عبارات شبیه «به منظورِ»، «با هدفِ» و «با قصدِ» در فارسی رسمی هستند که در نامه‌های اداری و متون حقوقی استفاده می‌شوند.",
+      "examples": [
+        { "de": "Zwecks Klärung des Problems vereinbaren wir einen Termin.", "fa": "به منظور روشن‌سازی مشکل، یک قرار ملاقات تعیین می‌کنیم." },
+        { "de": "Er reiste in der Absicht, neue Kontakte zu knüpfen.", "fa": "او با قصد برقراری ارتباطات جدید سفر کرد." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "zwecks", "fa": "به منظور، برای (+ مضاف‌الیه)" },
+      "example": { "text": { "de": "Zwecks Überprüfung der Unterlagen bitten wir um Geduld.", "fa": "به منظور بررسی مدارک، خواهشمندیم صبور باشید." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "zwecks",
+      "translation": "به منظور، برای",
+      "syllables": ["zwecks"],
+      "distractors": ["zwacks", "zwicks", "zwoks"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "der Zweck", "fa": "هدف، منظور" },
+      "example": { "text": { "de": "Der Zweck dieser Maßnahme ist klar definiert.", "fa": "هدف این اقدام به وضوح تعریف شده است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Zweck",
+      "translation": "هدف، منظور",
+      "syllables": ["Zweck"],
+      "distractors": ["Zwack", "Zwick", "Zwock"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "das Ziel", "fa": "هدف، مقصد" },
+      "example": { "text": { "de": "Mit dem Ziel, die Qualität zu verbessern, wurden neue Standards eingeführt.", "fa": "با هدف بهبود کیفیت، استانداردهای جدیدی معرفی شدند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Ziel",
+      "translation": "هدف، مقصد",
+      "syllables": ["Ziel"],
+      "distractors": ["Zeel", "Zial", "Zul"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "zwecks + Genitiv: ساختار اداری",
+      "content": "**zwecks + Genitiv**\n\nاین ساختار بسیار رسمی است و بیشتر در نامه‌های اداری، قراردادها و اسناد رسمی استفاده می‌شود:\n\n> **zwecks** + اسم در حالت Genitiv\n\n**مثال‌ها:**\n\n| آلمانی | فارسی |\n|--------|-------|\n| zwecks **Klärung** | به منظور روشن‌سازی |\n| zwecks **Überprüfung** | به منظور بررسی |\n| zwecks **Genehmigung** | به منظور صدور مجوز |\n| zwecks **Abrechnung** | به منظور تسویه‌حساب |\n\n**ساختار جمله:**\n> **Zwecks** Klärung des Falls bitten wir um Ihre Stellungnahme.\n> **به منظور** روشن‌سازی پرونده، خواهشمندیم نظر خود را اعلام فرمایید.\n\n**نکته:** «zwecks» همیشه با Genitiv می‌آید و معادل غیررسمی آن «um...zu» است.",
+      "examples": [
+        { "de": "Zwecks Bearbeitung Ihres Antrags benötigen wir weitere Dokumente.", "fa": "به منظور رسیدگی به درخواست شما، به مدارک بیشتری نیاز داریم." },
+        { "de": "Zwecks Terminvereinbarung rufen Sie uns bitte an.", "fa": "به منظور تعیین وقت، لطفاً با ما تماس بگیرید." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله از «zwecks» به درستی استفاده کرده است؟",
+      "options": [
+        "Zwecks wir die Prüfung bestehen.",
+        "Zwecks Überprüfung der Daten bitten wir um Geduld.",
+        "Zwecks dass wir lernen.",
+        "Er kam zwecks zu arbeiten."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! «zwecks» همیشه با اسم در حالت Genitiv می‌آید: zwecks Überprüfung (به منظور بررسی).", "incorrect": "«zwecks» باید با اسم در حالت Genitiv بیاید، نه با جمله یا مصدر." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "die Absicht", "fa": "قصد، نیت" },
+      "example": { "text": { "de": "Er handelte in der Absicht, anderen zu helfen.", "fa": "او با قصد کمک به دیگران عمل کرد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "Absicht",
+      "translation": "قصد، نیت",
+      "syllables": ["Ab", "sicht"],
+      "distractors": ["Ob", "sucht", "Ab", "sacht"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "beabsichtigen", "fa": "قصد داشتن" },
+      "example": { "text": { "de": "Wir beabsichtigen, das Projekt bis Ende des Jahres abzuschließen.", "fa": "ما قصد داریم پروژه را تا پایان سال به اتمام برسانیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "beabsichtigen",
+      "translation": "قصد داشتن",
+      "syllables": ["be", "ab", "sich", "ti", "gen"],
+      "distractors": ["ba", "ob", "sach", "ta"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "die Genehmigung", "fa": "مجوز، اجازه" },
+      "example": { "text": { "de": "Zwecks Genehmigung des Bauvorhabens müssen Sie diesen Antrag einreichen.", "fa": "به منظور صدور مجوز پروژه ساختمانی، باید این درخواست را ارائه دهید." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Genehmigung",
+      "translation": "مجوز، اجازه",
+      "syllables": ["Ge", "neh", "mi", "gung"],
+      "distractors": ["Ga", "nah", "mu", "gang"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "mit dem Ziel / in der Absicht + zu + Infinitiv",
+      "content": "**mit dem Ziel, zu... / in der Absicht, zu...**\n\nاین ساختارها با مصدر به کار می‌روند و رسمی‌تر از «um...zu» هستند:\n\n**ساختار:**\n> mit dem Ziel, ... **zu** + مصدر\n> in der Absicht, ... **zu** + مصدر\n\n**مثال‌ها:**\n\n| آلمانی | فارسی |\n|--------|-------|\n| **Mit dem Ziel**, die Effizienz **zu steigern**, wurden neue Maßnahmen ergriffen. | **با هدف** افزایش بهره‌وری، اقدامات جدیدی اتخاذ شد. |\n| **In der Absicht**, das Unternehmen **zu retten**, verkaufte er seine Anteile. | **با قصد** نجات شرکت، سهام خود را فروخت. |\n\n**تفاوت با um...zu:**\n- **um...zu**: محاوره‌ای و خنثی\n- **mit dem Ziel, zu...**: رسمی، تأکید بر هدف\n- **in der Absicht, zu...**: رسمی/حقوقی، تأکید بر قصد و نیت",
+      "examples": [
+        { "de": "Mit dem Ziel, Kosten zu sparen, wurden einige Abteilungen zusammengelegt.", "fa": "با هدف صرفه‌جویی در هزینه‌ها، برخی بخش‌ها ادغام شدند." },
+        { "de": "In der Absicht, die Wahrheit herauszufinden, startete er eine Untersuchung.", "fa": "با قصد کشف حقیقت، تحقیقی را آغاز کرد." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام عبارت برای متون حقوقی مناسب‌تر است؟",
+      "options": [
+        "um etwas zu machen",
+        "damit er etwas macht",
+        "in der Absicht, etwas zu tun",
+        "weil er etwas machen will"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "درست! «in der Absicht, zu...» در متون حقوقی و رسمی برای بیان قصد و نیت استفاده می‌شود.", "incorrect": "«in der Absicht, zu...» رسمی‌ترین گزینه است و در متون حقوقی کاربرد دارد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "عبارت مناسب را انتخاب کنید",
+      "sentence": "{0} Klärung der Angelegenheit bitten wir um Ihre Stellungnahme.",
+      "options": ["Zwecks", "Damit", "Weil", "Obwohl"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "«Zwecks» درست است: به منظور روشن‌سازی موضوع، خواهشمندیم نظر خود را اعلام فرمایید." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Er reiste nach Berlin {0} dem Ziel, neue Geschäftspartner zu finden.",
+      "options": ["mit", "zu", "in", "für"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "«mit dem Ziel» درست است: او با هدف یافتن شرکای تجاری جدید به برلین سفر کرد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "{0} der Absicht, das Problem zu lösen, berief er eine Sitzung ein.",
+      "options": ["In", "Mit", "Zu", "Bei"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "«In der Absicht» درست است: با قصد حل مشکل، او یک جلسه تشکیل داد." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["Zwecks", "der", "Daten", "Überprüfung", "bitten", "Geduld", "wir", "um"],
+      "correctOrder": [0, 3, 1, 2, 4, 6, 7, 5],
+      "correctSentence": { "de": "Zwecks Überprüfung der Daten bitten wir um Geduld.", "fa": "به منظور بررسی داده‌ها، خواهشمندیم صبور باشید." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["Mit", "Ziel", "dem", "Effizienz", "steigern", "zu", "die", "neue", "Maßnahmen", "wurden", "ergriffen"],
+      "correctOrder": [0, 2, 1, 6, 3, 5, 4, 9, 7, 8, 10],
+      "correctSentence": { "de": "Mit dem Ziel, die Effizienz zu steigern, wurden neue Maßnahmen ergriffen.", "fa": "با هدف افزایش بهره‌وری، اقدامات جدیدی اتخاذ شد." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["In", "Absicht", "der", "helfen", "zu", "handelte", "anderen", "er"],
+      "correctOrder": [0, 2, 1, 6, 4, 3, 5, 7],
+      "correctSentence": { "de": "In der Absicht, anderen zu helfen, handelte er.", "fa": "با قصد کمک به دیگران، او عمل کرد." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "«zwecks» همیشه با اسم در حالت Genitiv به کار می‌رود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! «zwecks» یک حرف اضافه است که همیشه Genitiv می‌گیرد: zwecks Klärung (به منظور روشن‌سازی)." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "«in der Absicht, zu...» محاوره‌ای‌تر از «um...zu» است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! «in der Absicht, zu...» رسمی‌تر از «um...zu» است و در متون حقوقی و اداری استفاده می‌شود." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "بعد از «mit dem Ziel» می‌توان از «zu + Infinitiv» استفاده کرد.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! «mit dem Ziel, zu + Infinitiv» یک ساختار رایج است: mit dem Ziel, die Qualität zu verbessern." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "جلسه اداری",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Der Abteilungsleiter spricht mit seiner Mitarbeiterin über ein neues Projekt.", "fa": "رئیس بخش با همکارش درباره یک پروژه جدید صحبت می‌کند." }
+      },
+      "lines": [
+        { "speaker": "Herr Weber", "text": { "de": "Zwecks Verbesserung unserer Prozesse haben wir ein neues Projekt gestartet.", "fa": "به منظور بهبود فرآیندهایمان، یک پروژه جدید راه‌اندازی کرده‌ایم." }, "mood": "neutral" },
+        { "speaker": "Frau Klein", "text": { "de": "Mit dem Ziel, die Effizienz zu steigern?", "fa": "با هدف افزایش بهره‌وری؟" }, "mood": "confused" },
+        { "speaker": "Herr Weber", "text": { "de": "Genau. Und in der Absicht, Kosten zu sparen.", "fa": "دقیقاً. و با قصد صرفه‌جویی در هزینه‌ها." }, "mood": "neutral" },
+        { "speaker": "Frau Klein", "text": { "de": "Zum Zweck der Kostensenkung also?", "fa": "پس به منظور کاهش هزینه‌ها؟" }, "mood": "neutral" },
+        { "speaker": "Herr Weber", "text": { "de": "Richtig. Zu dem Zweck, dass wir wettbewerbsfähiger werden.", "fa": "درست. به این منظور که رقابتی‌تر شویم." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "هدف اصلی پروژه جدید چیست؟", "options": ["استخدام نیروی جدید", "بهبود فرآیندها", "تعطیلی شرکت"], "correctIndex": 1, "explanation": "آقای وبر گفت: Zwecks Verbesserung unserer Prozesse haben wir ein neues Projekt gestartet" },
+        { "question": "چرا می‌خواهند هزینه‌ها را کاهش دهند؟", "options": ["برای افزایش حقوق", "برای رقابتی‌تر شدن", "برای تعطیلات"], "correctIndex": 1, "explanation": "آقای وبر گفت: Zu dem Zweck, dass wir wettbewerbsfähiger werden" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "عبارت مناسب را انتخاب کنید",
+      "sentence": "Zum {0} der Qualitätssicherung wurden neue Standards eingeführt.",
+      "options": ["Zweck", "Ziel", "Absicht", "Grund"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "«Zum Zweck» درست است: به منظور تضمین کیفیت، استانداردهای جدیدی معرفی شدند." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Zu dem Zweck, {0} die Mitarbeiter besser informiert werden, findet eine Schulung statt.",
+      "options": ["dass", "weil", "obwohl", "wenn"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "«dass» درست است: به این منظور که کارکنان بهتر آگاه شوند، یک دوره آموزشی برگزار می‌شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Er handelte in guter {0}, anderen zu helfen.",
+      "options": ["Absicht", "Zweck", "Ziel", "Grund"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "«Absicht» درست است: او با نیت خوب برای کمک به دیگران عمل کرد. (in guter Absicht = با نیت خوب)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "مشاوره حقوقی",
+      "scene": {
+        "location": "law office",
+        "description": { "de": "Ein Anwalt berät seinen Mandanten über die Vertragsformulierung.", "fa": "یک وکیل درباره تنظیم قرارداد به موکلش مشاوره می‌دهد." }
+      },
+      "lines": [
+        { "speaker": "Anwalt", "text": { "de": "Zwecks Klarstellung müssen wir diesen Paragraphen umformulieren.", "fa": "به منظور روشن‌سازی، باید این ماده را بازنویسی کنیم." }, "mood": "neutral" },
+        { "speaker": "Mandant", "text": { "de": "In welcher Absicht wurde dieser Vertrag ursprünglich geschrieben?", "fa": "این قرارداد در اصل با چه قصدی نوشته شده بود؟" }, "mood": "confused" },
+        { "speaker": "Anwalt", "text": { "de": "Zum Zweck des Schutzes beider Parteien.", "fa": "به منظور حفاظت از هر دو طرف." }, "mood": "neutral" },
+        { "speaker": "Mandant", "text": { "de": "Und mit dem Ziel, Streitigkeiten zu vermeiden?", "fa": "و با هدف جلوگیری از اختلافات؟" }, "mood": "neutral" },
+        { "speaker": "Anwalt", "text": { "de": "Genau. Zu dem Zweck, dass beide Seiten zufrieden sind.", "fa": "دقیقاً. به این منظور که هر دو طرف راضی باشند." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "چرا باید ماده قرارداد بازنویسی شود؟", "options": ["برای افزایش قیمت", "برای روشن‌سازی", "برای لغو قرارداد"], "correctIndex": 1, "explanation": "وکیل گفت: Zwecks Klarstellung müssen wir diesen Paragraphen umformulieren" },
+        { "question": "هدف اصلی قرارداد چیست؟", "options": ["حفاظت از یک طرف", "حفاظت از هر دو طرف", "سود بیشتر"], "correctIndex": 1, "explanation": "وکیل گفت: Zum Zweck des Schutzes beider Parteien" }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "عبارات آلمانی را با معانی فارسی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "zwecks + Genitiv" },
+        { "id": "i2", "text": "mit dem Ziel, zu..." },
+        { "id": "i3", "text": "in der Absicht, zu..." },
+        { "id": "i4", "text": "zu dem Zweck, dass..." }
+      ],
+      "matches": [
+        { "id": "m1", "text": "به منظورِ (+ اسم)" },
+        { "id": "m2", "text": "با هدف (+ مصدر)" },
+        { "id": "m3", "text": "با قصد (+ مصدر)" },
+        { "id": "m4", "text": "به این منظور که (+ جمله)" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "به منظور بررسی مدارک، لطفاً صبور باشید.",
+      "sentenceTemplate": "{0} Überprüfung der Unterlagen bitten wir um {1}.",
+      "options": ["Zwecks", "Damit", "Geduld", "Zeit", "Weil", "Hilfe"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Zwecks Überprüfung der Unterlagen bitten wir um Geduld.", "fa": "به منظور بررسی مدارک، لطفاً صبور باشید." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "با هدف بهبود کیفیت، اقدامات جدیدی اتخاذ شد.",
+      "sentenceTemplate": "Mit dem {0}, die Qualität zu verbessern, wurden neue {1} ergriffen.",
+      "options": ["Ziel", "Grund", "Maßnahmen", "Probleme", "Absicht", "Fragen"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Mit dem Ziel, die Qualität zu verbessern, wurden neue Maßnahmen ergriffen.", "fa": "با هدف بهبود کیفیت، اقدامات جدیدی اتخاذ شد." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: نامه اداری",
+      "passage": {
+        "de": "Sehr geehrte Damen und Herren,\n\nzwecks Bearbeitung Ihres Antrags auf Baugenehmigung benötigen wir weitere Unterlagen. Mit dem Ziel, den Prozess zu beschleunigen, bitten wir Sie, die folgenden Dokumente einzureichen.\n\nIn der Absicht, Ihnen entgegenzukommen, verlängern wir die Frist um zwei Wochen. Zu dem Zweck, dass alle erforderlichen Informationen vorliegen, fügen wir eine Checkliste bei.\n\nZum Zweck der Qualitätssicherung wird Ihr Antrag von mehreren Sachbearbeitern geprüft.\n\nMit freundlichen Grüßen,\nDas Bauamt",
+        "fa": "خانم‌ها و آقایان محترم،\n\nبه منظور رسیدگی به درخواست مجوز ساخت شما، به مدارک بیشتری نیاز داریم. با هدف تسریع فرآیند، از شما می‌خواهیم مدارک زیر را ارائه دهید.\n\nبا قصد همراهی با شما، مهلت را دو هفته تمدید می‌کنیم. به این منظور که تمام اطلاعات لازم موجود باشد، یک چک‌لیست پیوست می‌کنیم.\n\nبه منظور تضمین کیفیت، درخواست شما توسط چندین کارشناس بررسی خواهد شد.\n\nبا احترام،\nاداره ساختمان"
+      },
+      "questions": [
+        { "question": "چرا مهلت تمدید شده است؟", "options": ["برای افزایش هزینه‌ها", "برای همراهی با متقاضی", "برای تعطیلات"], "correctIndex": 1, "explanation": "در نامه گفته شده: In der Absicht, Ihnen entgegenzukommen, verlängern wir die Frist" },
+        { "question": "درخواست توسط چند نفر بررسی می‌شود؟", "options": ["یک کارشناس", "چندین کارشناس", "هیچ‌کس"], "correctIndex": 1, "explanation": "در نامه گفته شده: wird Ihr Antrag von mehreren Sachbearbeitern geprüft" },
+        { "question": "هدف از پیوست کردن چک‌لیست چیست؟", "options": ["افزایش کاغذبازی", "تکمیل اطلاعات لازم", "لغو درخواست"], "correctIndex": 1, "explanation": "در نامه گفته شده: Zu dem Zweck, dass alle erforderlichen Informationen vorliegen" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Das Startup-Projekt", "fa": "پروژه استارتاپ" },
+      "characters": ["Dr. Hoffmann", "Frau Lehmann"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Dr. Hoffmann und Frau Lehmann besprechen die Gründung eines neuen Unternehmens.", "fa": "دکتر هافمن و خانم لمان درباره تأسیس یک شرکت جدید بحث می‌کنند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Dr. Hoffmann",
+          "text": { "de": "Mit dem Ziel, den Markt zu erobern, müssen wir innovativ sein.", "fa": "با هدف فتح بازار، باید نوآور باشیم." },
+          "mood": "excited"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Frau Lehmann",
+          "text": { "de": "Zwecks Finanzierung haben wir bereits Investoren kontaktiert.", "fa": "به منظور تأمین مالی، قبلاً با سرمایه‌گذاران تماس گرفته‌ایم." },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "هدف اصلی آنها چیست؟",
+          "options": ["تعطیلی شرکت", "فتح بازار", "کاهش نیرو"],
+          "correctIndex": 1,
+          "explanation": "دکتر هافمن گفت: Mit dem Ziel, den Markt zu erobern"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Dr. Hoffmann",
+          "text": { "de": "In der Absicht, die besten Talente anzuziehen, bieten wir attraktive Gehälter.", "fa": "با قصد جذب بهترین استعدادها، حقوق‌های جذابی پیشنهاد می‌دهیم." },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Frau Lehmann",
+          "text": { "de": "Zu dem Zweck, dass wir wettbewerbsfähig bleiben.", "fa": "به این منظور که رقابتی بمانیم." },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "چرا حقوق‌های جذاب پیشنهاد می‌دهند؟",
+          "options": ["برای کاهش هزینه", "برای جذب استعدادها", "برای تعطیلی"],
+          "correctIndex": 1,
+          "explanation": "دکتر هافمن گفت: In der Absicht, die besten Talente anzuziehen"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Zum Zweck der Expansion planten sie, in andere Länder zu expandieren.", "fa": "به منظور گسترش، برنامه‌ریزی کردند که به کشورهای دیگر گسترش یابند." }
+        },
+        {
+          "type": "question",
+          "question": "برنامه نهایی آنها چیست؟",
+          "options": ["بستن شرکت", "گسترش به کشورهای دیگر", "فقط در آلمان فعالیت"],
+          "correctIndex": 1,
+          "explanation": "در متن گفته شده: Zum Zweck der Expansion planten sie, in andere Länder zu expandieren"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: عبارات رسمی هدف",
+      "instruction": "پاسخ درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "zwecks به چه معناست؟", "left": "به دلیل", "right": "به منظور", "correctSide": "right" },
+        { "prompt": "کدام رسمی‌تر است؟", "left": "um...zu", "right": "zwecks", "correctSide": "right" },
+        { "prompt": "zwecks با چه حالتی می‌آید؟", "left": "Genitiv", "right": "Dativ", "correctSide": "left" },
+        { "prompt": "mit dem Ziel یعنی؟", "left": "با هدف", "right": "بدون هدف", "correctSide": "left" },
+        { "prompt": "in der Absicht کجا استفاده می‌شود؟", "left": "محاوره روزمره", "right": "متون حقوقی", "correctSide": "right" },
+        { "prompt": "die Absicht یعنی؟", "left": "قصد، نیت", "right": "اشتباه", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Zwecks Klärung der Angelegenheit bitten wir um Ihre Stellungnahme.",
+      "translation": "به منظور روشن‌سازی موضوع، خواهشمندیم نظر خود را اعلام فرمایید."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Mit dem Ziel, die Qualität zu verbessern, wurden neue Standards eingeführt.",
+      "translation": "با هدف بهبود کیفیت، استانداردهای جدیدی معرفی شدند."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "In der Absicht, Kosten zu sparen, wurden einige Abteilungen zusammengelegt.",
+      "translation": "با قصد صرفه‌جویی در هزینه‌ها، برخی بخش‌ها ادغام شدند."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: عبارات رسمی هدف",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "zwecks یعنی؟", "options": ["به منظور", "به دلیل"], "correctAnswerIndex": 0 },
+        { "question": "zwecks با چه حالتی می‌آید؟", "options": ["Genitiv", "Dativ"], "correctAnswerIndex": 0 },
+        { "question": "کدام رسمی‌ترین است؟", "options": ["zwecks", "um...zu"], "correctAnswerIndex": 0 },
+        { "question": "die Absicht یعنی؟", "options": ["قصد", "اشتباه"], "correctAnswerIndex": 0 },
+        { "question": "mit dem Ziel یعنی؟", "options": ["با هدف", "بدون هدف"], "correctAnswerIndex": 0 },
+        { "question": "کدام برای متون حقوقی است؟", "options": ["in der Absicht", "damit"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: عبارات رسمی هدف",
+      "pairs": [
+        { "de": "zwecks", "fa": "به منظور" },
+        { "de": "mit dem Ziel", "fa": "با هدف" },
+        { "de": "in der Absicht", "fa": "با قصد" },
+        { "de": "die Genehmigung", "fa": "مجوز" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات عبارات رسمی",
+      "instruction": "کلمات آلمانی این درس را پیدا کنید",
+      "targetWords": ["zwecks", "Ziel", "Absicht", "Genehmigung"],
+      "gridSize": { "rows": 10, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "zwecks", "fa": "به منظور، برای", "options": ["به دلیل", "به منظور، برای", "قبل از اینکه", "اگر"], "correctIndex": 1 },
+        { "de": "die Absicht", "fa": "قصد، نیت", "options": ["اشتباه", "قصد، نیت", "سوال", "جواب"], "correctIndex": 1 },
+        { "de": "die Genehmigung", "fa": "مجوز، اجازه", "options": ["ممنوعیت", "مجوز، اجازه", "مشکل", "سوال"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما عبارات رسمی هدف در آلمانی را یاد گرفتید! این ساختارها در متون اداری، حقوقی و علمی کاربرد دارند.",
+      "keyPoints": [
+        "zwecks + Genitiv = به منظورِ (بسیار رسمی، اداری)",
+        "zum Zweck + Genitiv = به منظورِ (رسمی)",
+        "zu dem Zweck, dass... = به این منظور که... (رسمی)",
+        "mit dem Ziel, zu... = با هدف (رسمی، تأکید بر هدف)",
+        "in der Absicht, zu... = با قصد (رسمی، حقوقی)",
+        "این عبارات جایگزین رسمی‌تر damit و um...zu هستند",
+        "در نامه‌های اداری، قراردادها و متون علمی استفاده می‌شوند"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "zwecks", "fa": "به منظور، برای" } },
+        { "word": { "de": "der Zweck", "fa": "هدف، منظور" } },
+        { "word": { "de": "das Ziel", "fa": "هدف، مقصد" } },
+        { "word": { "de": "die Absicht", "fa": "قصد، نیت" } },
+        { "word": { "de": "beabsichtigen", "fa": "قصد داشتن" } },
+        { "word": { "de": "die Genehmigung", "fa": "مجوز، اجازه" } }
+      ]
+    }
+  ]
+}

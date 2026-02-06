@@ -1,0 +1,520 @@
+{
+  "id": "B2-M13-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Finalsätze: um...zu (Infinitivkonstruktion)", "fa": "جملات هدف: برای اینکه (با مصدر)" },
+  "description": "یاد بگیرید چگونه با ساختار «um...zu + Infinitiv» هدف یا قصد را بیان کنید. این ساختار معادل «برای اینکه» یا «به منظور» در فارسی است. قانون مهم: وقتی فاعل هر دو جمله یکسان است از um...zu و وقتی فاعل‌ها متفاوت هستند از damit استفاده می‌کنیم.",
+  "level": "B2",
+  "module": 13,
+  "lessonNumber": 2,
+  "totalSteps": 45,
+  "estimatedMinutes": 40,
+  "vocabulary": [
+    { "de": "um...zu + Infinitiv", "fa": "برای اینکه، به منظور (فاعل یکسان)", "grammar": { "pos": "conjunction" } },
+    { "de": "damit", "fa": "برای اینکه (فاعل متفاوت)", "grammar": { "pos": "conjunction" } },
+    { "de": "der Zweck", "fa": "هدف، مقصود", "grammar": { "pos": "noun", "gender": "masculine" } },
+    { "de": "das Ziel", "fa": "هدف، مقصد", "grammar": { "pos": "noun", "gender": "neuter" } },
+    { "de": "beabsichtigen", "fa": "قصد داشتن", "grammar": { "pos": "verb" } },
+    { "de": "anstreben", "fa": "در پی چیزی بودن، دنبال کردن", "grammar": { "pos": "verb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "ساختار um...zu چیست؟",
+      "content": "**جملات هدف با um...zu + Infinitiv = Finalsätze**\n\nوقتی می‌خواهید بگویید **برای چه هدفی** کاری انجام می‌دهید، از این ساختار استفاده کنید.\n\n**ساختار:**\n```\nHauptsatz + , um + ... + zu + Infinitiv\n```\n\n**مثال‌ها:**\n| آلمانی | فارسی |\n|--------|-------|\n| Ich lerne Deutsch, **um** in Deutschland **zu arbeiten**. | آلمانی یاد می‌گیرم **برای اینکه** در آلمان **کار کنم**. |\n| Sie spart Geld, **um** ein Auto **zu kaufen**. | پول پس‌انداز می‌کند **برای اینکه** ماشین **بخرد**. |\n\n**قانون طلایی:**\n- **فاعل یکسان** → um...zu (ساده‌تر)\n- **فاعل متفاوت** → damit (جمله کامل با فعل در انتها)\n\n**نکته برای فارسی‌زبانان:**\nدر فارسی می‌گوییم «برای اینکه» یا «به منظور». در آلمانی وقتی فاعل یکسان است، نیازی به تکرار فاعل نیست.",
+      "examples": [
+        { "de": "Er trainiert jeden Tag, um fit zu bleiben.", "fa": "هر روز تمرین می‌کند برای اینکه سالم بماند." },
+        { "de": "Wir fahren früh los, um den Stau zu vermeiden.", "fa": "زود راه می‌افتیم برای اینکه از ترافیک فرار کنیم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "um...zu + Infinitiv", "fa": "برای اینکه، به منظور (فاعل یکسان)" },
+      "example": { "text": { "de": "Ich lerne Deutsch, um in Deutschland zu studieren.", "fa": "آلمانی یاد می‌گیرم برای اینکه در آلمان تحصیل کنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Infinitiv",
+      "translation": "مصدر (فعل بدون صرف)",
+      "syllables": ["In", "fi", "ni", "tiv"],
+      "distractors": ["An", "fe", "na", "tef"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "damit", "fa": "برای اینکه (فاعل متفاوت)" },
+      "example": { "text": { "de": "Ich erkläre es langsam, damit du es verstehst.", "fa": "آهسته توضیح می‌دهم برای اینکه تو بفهمی." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "damit",
+      "translation": "برای اینکه",
+      "syllables": ["da", "mit"],
+      "distractors": ["de", "mat", "mot"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "der Zweck", "fa": "هدف، مقصود" },
+      "example": { "text": { "de": "Der Zweck dieser Übung ist, Grammatik zu lernen.", "fa": "هدف این تمرین، یادگیری گرامر است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Zweck",
+      "translation": "هدف",
+      "syllables": ["Zweck"],
+      "distractors": ["Zwick", "Zwack", "Zwock"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "um...zu یا damit؟ قانون فاعل",
+      "content": "**قانون اصلی:**\n\n| فاعل‌ها | ساختار | مثال |\n|---------|--------|------|\n| **یکسان** | um...zu | Ich spare, um ein Auto zu kaufen. |\n| **متفاوت** | damit | Ich spare, damit mein Sohn studieren kann. |\n\n**مقایسه کامل:**\n\n**فاعل یکسان (Ich...Ich):**\n```\nIch lerne Deutsch, um in Berlin zu arbeiten.\n↓\nمن آلمانی یاد می‌گیرم برای اینکه (من) در برلین کار کنم.\n```\n\n**فاعل متفاوت (Ich...du):**\n```\nIch erkläre es, damit du es verstehst.\n↓\nتوضیح می‌دهم برای اینکه (تو) بفهمی.\n```\n\n**نکته مهم:**\nدر جمله um...zu فاعل حذف می‌شود چون با جمله اصلی یکسان است. در damit فاعل جدید باید ذکر شود و فعل به انتها می‌رود.",
+      "examples": [
+        { "de": "Sie geht früh schlafen, um morgen fit zu sein.", "fa": "زود می‌خوابد برای اینکه فردا سرحال باشد. (فاعل یکسان: Sie)" },
+        { "de": "Sie geht früh schlafen, damit die Kinder auch schlafen.", "fa": "زود می‌خوابد برای اینکه بچه‌ها هم بخوابند. (فاعل متفاوت: Sie و Kinder)" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "das Ziel", "fa": "هدف، مقصد" },
+      "example": { "text": { "de": "Mein Ziel ist, Arzt zu werden.", "fa": "هدف من این است که پزشک شوم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "Ziel",
+      "translation": "هدف",
+      "syllables": ["Ziel"],
+      "distractors": ["Zial", "Zeel", "Zul"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "beabsichtigen", "fa": "قصد داشتن" },
+      "example": { "text": { "de": "Ich beabsichtige, nächstes Jahr nach Deutschland zu ziehen.", "fa": "قصد دارم سال آینده به آلمان نقل مکان کنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "beabsichtigen",
+      "translation": "قصد داشتن",
+      "syllables": ["be", "ab", "sich", "ti", "gen"],
+      "distractors": ["ba", "ob", "sech", "to"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "anstreben", "fa": "در پی چیزی بودن، دنبال کردن" },
+      "example": { "text": { "de": "Er strebt eine Karriere als Manager an.", "fa": "او در پی یک شغل مدیریتی است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "anstreben",
+      "translation": "دنبال کردن",
+      "syllables": ["an", "stre", "ben"],
+      "distractors": ["on", "stra", "bon"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "جایگاه zu در افعال جداشدنی",
+      "content": "**قانون zu در افعال جداشدنی (trennbare Verben):**\n\nدر افعال جداشدنی، «zu» بین پیشوند و بن فعل قرار می‌گیرد.\n\n**ساختار:**\n```\nPräfix + zu + Verbstamm = aufzustehen, anzurufen, mitzumachen\n```\n\n**مثال‌ها:**\n| فعل | um...zu |\n|-----|--------|\n| aufstehen | um früh **aufzustehen** |\n| anrufen | um dich **anzurufen** |\n| einkaufen | um Lebensmittel **einzukaufen** |\n| mitbringen | um Geschenke **mitzubringen** |\n\n**جمله کامل:**\n- Ich stehe früh auf, **um** genug Zeit **zu haben**.\n- Er geht ins Geschäft, **um** Brot **einzukaufen**.\n- Sie nimmt Urlaub, **um** Zeit mit der Familie **zu verbringen**.\n\n**نکته:** در افعال معمولی (غیر جداشدنی) zu قبل از فعل می‌آید: **zu arbeiten**, **zu lernen**.",
+      "examples": [
+        { "de": "Ich bin früh aufgestanden, um den Sonnenaufgang zu sehen.", "fa": "زود بلند شدم برای اینکه طلوع آفتاب را ببینم." },
+        { "de": "Er fährt in die Stadt, um seine Freunde abzuholen.", "fa": "به شهر می‌رود برای اینکه دوستانش را ببرد." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله از نظر گرامری صحیح است؟",
+      "options": [
+        "Ich lerne Deutsch, um ich in Deutschland arbeiten.",
+        "Ich lerne Deutsch, um in Deutschland zu arbeiten.",
+        "Ich lerne Deutsch, um zu arbeiten in Deutschland.",
+        "Ich lerne Deutsch, zu um in Deutschland arbeiten."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! ساختار صحیح: um + ... + zu + Infinitiv. فاعل در um...zu حذف می‌شود.", "incorrect": "ساختار صحیح: um + ... + zu + Infinitiv. مثال: um in Deutschland zu arbeiten." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله باید با «damit» (نه um...zu) ساخته شود؟",
+      "options": [
+        "Ich spare Geld. Ich will ein Auto kaufen.",
+        "Ich erkläre es langsam. Du sollst es verstehen.",
+        "Er trainiert jeden Tag. Er will fit bleiben.",
+        "Sie lernt Deutsch. Sie will in Berlin studieren."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "درست! چون فاعل‌ها متفاوت هستند (Ich → du)، باید از damit استفاده کنیم: Ich erkläre es langsam, damit du es verstehst.", "incorrect": "وقتی فاعل دو جمله متفاوت است، از damit استفاده می‌کنیم. در این گزینه فاعل Ich و du متفاوت هستند." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "sentence": "Ich lerne jeden Tag, {0} mein Deutsch zu verbessern.",
+      "options": ["damit", "um", "weil", "obwohl"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "فاعل یکسان است (Ich...Ich)، پس از «um» استفاده می‌کنیم: um mein Deutsch zu verbessern." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Sie geht früh schlafen, {0} morgen fit zu sein.",
+      "options": ["damit", "um", "weil", "dass"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "فاعل یکسان است (Sie...Sie)، پس: um morgen fit zu sein." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "گزینه مناسب را انتخاب کنید",
+      "sentence": "Ich spreche langsam, {0} du mich verstehst.",
+      "options": ["um", "damit", "weil", "obwohl"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "فاعل‌ها متفاوت هستند (Ich → du)، پس از «damit» استفاده می‌کنیم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Er geht ins Fitnessstudio, um Sport {0} treiben.",
+      "options": ["zu", "damit", "um", "für"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "در ساختار um...zu، «zu» قبل از مصدر می‌آید: um Sport zu treiben." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "sentence": "Ich stehe früh auf, um den Bus nicht {0}.",
+      "options": ["verpassen", "zu verpassen", "verpassen zu", "verpasst"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "در ساختار um...zu، مصدر با zu می‌آید: um den Bus nicht zu verpassen." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Sie fährt in die Stadt, um Lebensmittel {0}.",
+      "options": ["einkaufen", "einzukaufen", "kaufen ein", "zu einkaufen"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "در افعال جداشدنی، zu بین پیشوند و بن فعل قرار می‌گیرد: einzukaufen." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "گفتگو: برنامه‌های آینده",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Zwei Kollegen sprechen über ihre Pläne.", "fa": "دو همکار درباره برنامه‌هایشان صحبت می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Warum lernst du eigentlich Spanisch?", "fa": "چرا داری اسپانیایی یاد می‌گیری؟" }, "mood": "neutral" },
+        { "speaker": "Klaus", "text": { "de": "Ich lerne Spanisch, um nächstes Jahr nach Spanien zu ziehen.", "fa": "اسپانیایی یاد می‌گیرم برای اینکه سال آینده به اسپانیا نقل مکان کنم." }, "mood": "excited" },
+        { "speaker": "Anna", "text": { "de": "Wow! Und arbeitest du dort?", "fa": "وای! و آنجا کار می‌کنی؟" }, "mood": "surprised" },
+        { "speaker": "Klaus", "text": { "de": "Ja, ich habe einen Job gefunden, um dort als Ingenieur zu arbeiten.", "fa": "بله، یک کار پیدا کردم برای اینکه آنجا به عنوان مهندس کار کنم." }, "mood": "happy" },
+        { "speaker": "Anna", "text": { "de": "Viel Erfolg! Ich drücke dir die Daumen.", "fa": "موفق باشی! برایت آرزوی موفقیت می‌کنم." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "کلاوس چرا اسپانیایی یاد می‌گیرد؟", "options": ["برای تعطیلات", "برای نقل مکان به اسپانیا", "برای امتحان"], "correctIndex": 1, "explanation": "کلاوس گفت: «um nächstes Jahr nach Spanien zu ziehen» - برای اینکه سال آینده به اسپانیا نقل مکان کنم." },
+        { "question": "کلاوس از کدام ساختار برای بیان هدف استفاده کرد؟", "options": ["weil...deshalb", "um...zu", "damit"], "correctIndex": 1, "explanation": "کلاوس گفت: «um...zu ziehen» و «um...zu arbeiten» چون فاعل یکسان است." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["lerne", "ich", "Deutsch", "um", "zu arbeiten", "in Deutschland"],
+      "correctOrder": [1, 0, 2, 3, 5, 4],
+      "correctSentence": { "de": "Ich lerne Deutsch, um in Deutschland zu arbeiten.", "fa": "آلمانی یاد می‌گیرم برای اینکه در آلمان کار کنم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["fährt", "sie", "um", "in die Stadt", "einzukaufen", "Lebensmittel"],
+      "correctOrder": [1, 0, 3, 2, 5, 4],
+      "correctSentence": { "de": "Sie fährt in die Stadt, um Lebensmittel einzukaufen.", "fa": "به شهر می‌رود برای اینکه مواد غذایی بخرد." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["Geld", "er", "um", "spart", "zu kaufen", "ein Haus"],
+      "correctOrder": [1, 3, 0, 2, 5, 4],
+      "correctSentence": { "de": "Er spart Geld, um ein Haus zu kaufen.", "fa": "پول پس‌انداز می‌کند برای اینکه خانه بخرد." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در ساختار um...zu فاعل جمله دوم ذکر می‌شود.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! در um...zu فاعل حذف می‌شود چون با جمله اصلی یکسان است. مثال: Ich lerne, um zu verstehen (نه: um ich zu verstehen)." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "وقتی فاعل دو جمله متفاوت است، باید از damit استفاده کنیم.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! فاعل متفاوت → damit. مثال: Ich erkläre es, damit du verstehst. (Ich ≠ du)" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "در افعال جداشدنی، zu قبل از کل فعل می‌آید: zu aufstehen.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! در افعال جداشدنی، zu بین پیشوند و بن فعل قرار می‌گیرد: aufzustehen (نه: zu aufstehen)." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "گفتگوی دانشگاهی",
+      "scene": {
+        "location": "university",
+        "description": { "de": "Zwei Studenten sprechen über ihre Motivation.", "fa": "دو دانشجو درباره انگیزه‌هایشان صحبت می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Warum hast du Medizin gewählt?", "fa": "چرا پزشکی انتخاب کردی؟" }, "mood": "neutral" },
+        { "speaker": "Max", "text": { "de": "Ich studiere Medizin, um Menschen zu helfen.", "fa": "پزشکی می‌خوانم برای اینکه به مردم کمک کنم." }, "mood": "happy" },
+        { "speaker": "Lisa", "text": { "de": "Das ist ein schönes Ziel! Und du arbeitest auch im Krankenhaus?", "fa": "این هدف قشنگی است! و در بیمارستان هم کار می‌کنی؟" }, "mood": "surprised" },
+        { "speaker": "Max", "text": { "de": "Ja, ich arbeite dort, um praktische Erfahrung zu sammeln.", "fa": "بله، آنجا کار می‌کنم برای اینکه تجربه عملی کسب کنم." }, "mood": "excited" },
+        { "speaker": "Lisa", "text": { "de": "Ich erkläre meinen Eltern alles, damit sie meine Berufswahl verstehen.", "fa": "همه چیز را برای والدینم توضیح می‌دهم برای اینکه آن‌ها انتخاب شغلی‌ام را بفهمند." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "ماکس چرا پزشکی می‌خواند؟", "options": ["برای پول", "برای کمک به مردم", "برای والدینش"], "correctIndex": 1, "explanation": "ماکس گفت: «um Menschen zu helfen» - برای اینکه به مردم کمک کنم." },
+        { "question": "لیزا چرا از damit استفاده کرد؟", "options": ["چون فاعل یکسان است", "چون فاعل متفاوت است", "چون جمله منفی است"], "correctIndex": 1, "explanation": "لیزا گفت: «damit sie...verstehen» چون فاعل‌ها متفاوت هستند: Ich → sie (والدین)." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "جمله‌های آلمانی را با ترجمه فارسی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "um...zu + Infinitiv" },
+        { "id": "i2", "text": "damit + Nebensatz" },
+        { "id": "i3", "text": "der Zweck" },
+        { "id": "i4", "text": "beabsichtigen" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "برای اینکه (فاعل یکسان)" },
+        { "id": "m2", "text": "برای اینکه (فاعل متفاوت)" },
+        { "id": "m3", "text": "هدف، مقصود" },
+        { "id": "m4", "text": "قصد داشتن" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "آلمانی یاد می‌گیرم برای اینکه در آلمان کار کنم.",
+      "sentenceTemplate": "Ich lerne Deutsch, {0} in Deutschland {1} arbeiten.",
+      "options": ["um", "zu", "damit", "weil"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Ich lerne Deutsch, um in Deutschland zu arbeiten.", "fa": "آلمانی یاد می‌گیرم برای اینکه در آلمان کار کنم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "زود بلند می‌شوم برای اینکه اتوبوس را از دست ندهم.",
+      "sentenceTemplate": "Ich stehe früh auf, {0} den Bus nicht {1} verpassen.",
+      "options": ["um", "zu", "damit", "weil"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Ich stehe früh auf, um den Bus nicht zu verpassen.", "fa": "زود بلند می‌شوم برای اینکه اتوبوس را از دست ندهم." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: نامه انگیزشی",
+      "passage": {
+        "de": "Motivationsschreiben\n\nSehr geehrte Damen und Herren,\n\nich bewerbe mich um ein Praktikum bei Ihrer Firma, um praktische Erfahrung zu sammeln. Ich studiere Informatik, um später als Softwareentwickler zu arbeiten.\n\nIch habe Deutsch gelernt, um in Deutschland studieren zu können. Jetzt möchte ich bei Ihnen arbeiten, um meine Kenntnisse zu erweitern.\n\nIch bin bereit, hart zu arbeiten, damit das Projekt erfolgreich wird. Ich hoffe, dass Sie mir diese Chance geben, damit ich mein Potenzial zeigen kann.\n\nMit freundlichen Grüßen\nAli Hosseini",
+        "fa": "نامه انگیزشی\n\nبا احترام،\n\nبرای کارآموزی در شرکت شما درخواست می‌دهم برای اینکه تجربه عملی کسب کنم. انفورماتیک می‌خوانم برای اینکه بعداً به عنوان توسعه‌دهنده نرم‌افزار کار کنم.\n\nآلمانی یاد گرفتم برای اینکه بتوانم در آلمان تحصیل کنم. حالا می‌خواهم پیش شما کار کنم برای اینکه دانشم را گسترش دهم.\n\nآماده‌ام سخت کار کنم برای اینکه پروژه موفق شود. امیدوارم این فرصت را به من بدهید برای اینکه بتوانم پتانسیلم را نشان دهم.\n\nبا احترام\nعلی حسینی"
+      },
+      "questions": [
+        { "question": "علی چرا می‌خواهد کارآموزی کند؟", "options": ["برای پول", "برای تجربه عملی", "برای مهاجرت"], "correctIndex": 1, "explanation": "متن می‌گوید: «um praktische Erfahrung zu sammeln»" },
+        { "question": "کدام جمله با damit ساخته شده؟", "options": ["um praktische Erfahrung zu sammeln", "damit das Projekt erfolgreich wird", "um meine Kenntnisse zu erweitern"], "correctIndex": 1, "explanation": "«damit das Projekt erfolgreich wird» چون فاعل متفاوت است (Ich → Projekt)" },
+        { "question": "علی چرا آلمانی یاد گرفت؟", "options": ["برای کار در ایران", "برای تحصیل در آلمان", "برای سفر"], "correctIndex": 1, "explanation": "«um in Deutschland studieren zu können» - برای اینکه بتواند در آلمان تحصیل کند" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der Traum vom Studium", "fa": "رویای تحصیل" },
+      "characters": ["Sara", "Mutter"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Sara sitzt am Schreibtisch und lernt Deutsch.", "fa": "سارا پشت میز نشسته و آلمانی یاد می‌گیرد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Mutter",
+          "text": { "de": "Warum lernst du so viel Deutsch?", "fa": "چرا اینقدر آلمانی یاد می‌گیری؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sara",
+          "text": { "de": "Ich lerne Deutsch, um in Deutschland zu studieren, Mama!", "fa": "آلمانی یاد می‌گیرم برای اینکه در آلمان تحصیل کنم، مامان!" },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "سارا از کدام ساختار استفاده کرد؟",
+          "options": ["weil...deshalb", "um...zu", "damit"],
+          "correctIndex": 1,
+          "explanation": "سارا گفت: «um in Deutschland zu studieren» چون فاعل یکسان است."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Mutter",
+          "text": { "de": "Und was machst du dort?", "fa": "و آنجا چه کار می‌کنی؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sara",
+          "text": { "de": "Ich will Medizin studieren, um später als Ärztin zu arbeiten.", "fa": "می‌خواهم پزشکی بخوانم برای اینکه بعداً به عنوان پزشک کار کنم." },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Mutter",
+          "text": { "de": "Ich arbeite hart, damit du studieren kannst.", "fa": "من سخت کار می‌کنم برای اینکه تو بتوانی تحصیل کنی." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "مادر چرا از damit استفاده کرد؟",
+          "options": ["چون فاعل یکسان است", "چون فاعل متفاوت است", "چون جمله سوالی است"],
+          "correctIndex": 1,
+          "explanation": "مادر گفت: «damit du studieren kannst» چون فاعل‌ها متفاوت هستند: Ich → du."
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Sara umarmt ihre Mutter und lächelt.", "fa": "سارا مادرش را در آغوش می‌گیرد و لبخند می‌زند." }
+        },
+        {
+          "type": "question",
+          "question": "هدف نهایی سارا چیست؟",
+          "options": ["معلم شدن", "پزشک شدن", "مهندس شدن"],
+          "correctIndex": 1,
+          "explanation": "سارا گفت: «um später als Ärztin zu arbeiten» - برای اینکه بعداً به عنوان پزشک کار کنم."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: um...zu یا damit؟",
+      "instruction": "برای هر جمله تصمیم بگیرید: um...zu یا damit؟",
+      "questions": [
+        { "prompt": "Ich lerne, ... Arzt zu werden.", "left": "um", "right": "damit", "correctSide": "left" },
+        { "prompt": "Ich erkläre, ... du verstehst.", "left": "um", "right": "damit", "correctSide": "right" },
+        { "prompt": "Sie spart, ... ein Auto zu kaufen.", "left": "um", "right": "damit", "correctSide": "left" },
+        { "prompt": "Er arbeitet, ... seine Familie leben kann.", "left": "um", "right": "damit", "correctSide": "right" },
+        { "prompt": "Wir fahren früh, ... pünktlich zu sein.", "left": "um", "right": "damit", "correctSide": "left" },
+        { "prompt": "Ich spreche langsam, ... alle verstehen.", "left": "um", "right": "damit", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich lerne Deutsch, um in Deutschland zu arbeiten.",
+      "translation": "آلمانی یاد می‌گیرم برای اینکه در آلمان کار کنم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Sie spart Geld, um ein neues Auto zu kaufen.",
+      "translation": "پول پس‌انداز می‌کند برای اینکه ماشین نو بخرد."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Er steht früh auf, um den Bus nicht zu verpassen.",
+      "translation": "زود بلند می‌شود برای اینکه اتوبوس را از دست ندهد."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: جملات هدف",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "um...zu = ?", "options": ["برای اینکه", "چون"], "correctAnswerIndex": 0 },
+        { "question": "فاعل یکسان = ؟", "options": ["um...zu", "damit"], "correctAnswerIndex": 0 },
+        { "question": "فاعل متفاوت = ؟", "options": ["um...zu", "damit"], "correctAnswerIndex": 1 },
+        { "question": "aufzustehen یعنی:", "options": ["بلند شدن (مصدر با zu)", "نشستن"], "correctAnswerIndex": 0 },
+        { "question": "der Zweck = ?", "options": ["هدف", "علت"], "correctAnswerIndex": 0 },
+        { "question": "beabsichtigen = ?", "options": ["قصد داشتن", "تمام کردن"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: ساختارها و کاربردها",
+      "pairs": [
+        { "de": "um...zu", "fa": "فاعل یکسان" },
+        { "de": "damit", "fa": "فاعل متفاوت" },
+        { "de": "der Zweck", "fa": "هدف" },
+        { "de": "beabsichtigen", "fa": "قصد داشتن" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات کلیدی",
+      "instruction": "کلمات این درس را پیدا کنید",
+      "targetWords": ["UMZU", "DAMIT", "ZWECK", "ZIEL", "INFINITIV"],
+      "gridSize": { "rows": 10, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "um...zu", "fa": "برای اینکه (فاعل یکسان)", "options": ["چون", "برای اینکه (فاعل یکسان)", "با اینکه", "قبل از"], "correctIndex": 1 },
+        { "de": "der Zweck", "fa": "هدف", "options": ["علت", "هدف", "نتیجه", "پایان"], "correctIndex": 1 },
+        { "de": "beabsichtigen", "fa": "قصد داشتن", "options": ["تمام کردن", "قصد داشتن", "شروع کردن", "فراموش کردن"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما ساختار جملات هدف «um...zu + Infinitiv» را یاد گرفتید!",
+      "keyPoints": [
+        "um...zu + Infinitiv = برای اینکه (هدف/قصد)",
+        "فاعل یکسان → um...zu (ساده‌تر)",
+        "فاعل متفاوت → damit (جمله کامل با فعل در انتها)",
+        "در افعال جداشدنی: zu بین پیشوند و بن فعل → aufzustehen",
+        "مثال: Ich lerne Deutsch, um in Deutschland zu arbeiten.",
+        "مثال: Ich erkläre es, damit du verstehst. (فاعل متفاوت)"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "um...zu + Infinitiv", "fa": "برای اینکه، به منظور (فاعل یکسان)" } },
+        { "word": { "de": "damit", "fa": "برای اینکه (فاعل متفاوت)" } },
+        { "word": { "de": "der Zweck", "fa": "هدف، مقصود" } },
+        { "word": { "de": "das Ziel", "fa": "هدف، مقصد" } },
+        { "word": { "de": "beabsichtigen", "fa": "قصد داشتن" } },
+        { "word": { "de": "anstreben", "fa": "در پی چیزی بودن، دنبال کردن" } }
+      ]
+    }
+  ]
+}

@@ -2031,6 +2031,37 @@ const DE_FA_B2_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/B2/B2-M12-L04"
       }
     ]
+  },
+  {
+    id: "module-13",
+    title: "بخش ۱۳: Finalsätze",
+    level: "B2",
+    lessons: [
+      {
+        id: "B2-M13-L01",
+        title: "damit - برای اینکه",
+        description: "یاد بگیرید جملات هدفی با damit برای فاعل‌های مختلف.",
+        path: "/learn/de-fa/B2/B2-M13-L01"
+      },
+      {
+        id: "B2-M13-L02",
+        title: "um...zu - برای اینکه",
+        description: "یاد بگیرید ساختار um...zu برای فاعل یکسان.",
+        path: "/learn/de-fa/B2/B2-M13-L02"
+      },
+      {
+        id: "B2-M13-L03",
+        title: "Formale Finalausdrücke - عبارات هدفی رسمی",
+        description: "یاد بگیرید عبارات رسمی: zwecks، zum Zweck، mit dem Ziel.",
+        path: "/learn/de-fa/B2/B2-M13-L03"
+      },
+      {
+        id: "B2-M13-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل جملات هدفی: damit، um...zu و عبارات رسمی.",
+        path: "/learn/de-fa/B2/B2-M13-L04"
+      }
+    ]
   }
 ];
 

@@ -8,7 +8,7 @@
 
 **Create B1 lessons - lesson by lesson, wait for user test after each**
 
-Current: `B2-M12` (Konsekutivsätze) - **MODULE COMPLETE - READY FOR USER TEST**
+Current: `B2-M13` (Finalsätze) - **MODULE COMPLETE - READY FOR USER TEST**
 
 ---
 
@@ -27,7 +27,7 @@ Current: `B2-M12` (Konsekutivsätze) - **MODULE COMPLETE - READY FOR USER TEST**
 | A1 | 14 | 56+ | Complete |
 | A2 | 18 | 72 | **Complete** ✅ |
 | B1 | 20 | 80 | **Complete** ✅ |
-| B2 | 12 | 48 | Module 12 complete |
+| B2 | 13 | 52 | Module 13 complete |
 
 ### A2 Completion (2026-02-05)
 
@@ -319,8 +319,9 @@ Current: `B2-M12` (Konsekutivsätze) - **MODULE COMPLETE - READY FOR USER TEST**
 | M10 | Modalsätze | 4/4 | ✅ Complete |
 | M11 | Konzessivsätze | 4/4 | ✅ Complete |
 | M12 | Konsekutivsätze | 4/4 | ✅ Complete |
+| M13 | Finalsätze | 4/4 | ✅ Complete |
 
-**Total B2: 48 lessons**
+**Total B2: 52 lessons**
 
 ---
 
@@ -453,6 +454,17 @@ Current: `B2-M12` (Konsekutivsätze) - **MODULE COMPLETE - READY FOR USER TEST**
 | B2-M12-L02 | so...dass (intensified result) | ✅ Complete |
 | B2-M12-L03 | folglich, infolgedessen, demzufolge (consecutive adverbs) | ✅ Complete |
 | B2-M12-L04 | Zusammenfassung | ✅ Complete |
+
+---
+
+## B2 Module 13: Finalsätze (Purpose Clauses)
+
+| Lesson | Title | Status |
+|--------|-------|--------|
+| B2-M13-L01 | damit (so that - different subjects) | ✅ Complete |
+| B2-M13-L02 | um...zu (in order to - same subject) | ✅ Complete |
+| B2-M13-L03 | zwecks, zum Zweck, mit dem Ziel (formal purpose) | ✅ Complete |
+| B2-M13-L04 | Zusammenfassung | ✅ Complete |
 
 ---
 
