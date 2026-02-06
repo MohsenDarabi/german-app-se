@@ -1,0 +1,532 @@
+{
+  "id": "B2-M03-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Konjunktiv I in der Presse: Grundlagen", "fa": "وجه التزامی یک در مطبوعات: مبانی" },
+  "description": "یاد بگیرید چگونه از Konjunktiv I برای گزارش غیرمستقیم در روزنامه‌ها و متون خبری استفاده می‌شود. این ساختار نشان‌دهنده فاصله‌گیری و بی‌طرفی روزنامه‌نگار است.",
+  "level": "B2",
+  "module": 3,
+  "lessonNumber": 1,
+  "totalSteps": 45,
+  "estimatedMinutes": 30,
+  "vocabulary": [
+    { "de": "berichten", "fa": "گزارش دادن", "grammar": { "pos": "verb" } },
+    { "de": "mitteilen", "fa": "اعلام کردن، اطلاع دادن", "grammar": { "pos": "verb" } },
+    { "de": "erklären", "fa": "توضیح دادن، اظهار کردن", "grammar": { "pos": "verb" } },
+    { "de": "laut", "fa": "طبق، بر اساس", "grammar": { "pos": "preposition" } },
+    { "de": "zufolge", "fa": "به گفته، بنا به", "grammar": { "pos": "preposition" } },
+    { "de": "die indirekte Rede", "fa": "نقل قول غیرمستقیم", "grammar": { "pos": "noun", "gender": "feminine" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "Konjunktiv I چیست؟",
+      "content": "**Konjunktiv I (وجه التزامی یک)**\n\nKonjunktiv I وجه خاصی در آلمانی است که برای **نقل قول غیرمستقیم** استفاده می‌شود. این وجه به‌ویژه در:\n\n- روزنامه‌ها و خبرگزاری‌ها\n- متون علمی و رسمی\n- گزارش‌های خبری\n\n**چرا استفاده می‌شود؟**\n\n1. **فاصله‌گیری**: روزنامه‌نگار نشان می‌دهد که این حرف خودش نیست\n2. **بی‌طرفی**: نظر شخصی بیان نمی‌شود\n3. **رسمیت**: متن حرفه‌ای به نظر می‌رسد\n\n**مثال:**\n- مستقیم: Der Minister sagt: «Ich **bin** zufrieden.»\n- غیرمستقیم: Der Minister sagte, er **sei** zufrieden.\n\n**نکته مهم:** در فارسی معادل دقیقی ندارد، اما مفهوم آن شبیه به «گفته می‌شود که...» است.",
+      "examples": [
+        { "de": "Die Regierung erklärt, sie habe neue Pläne.", "fa": "دولت اعلام می‌کند که برنامه‌های جدیدی دارد." },
+        { "de": "Der Sprecher sagte, die Lage sei unter Kontrolle.", "fa": "سخنگو گفت که وضعیت تحت کنترل است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "berichten", "fa": "گزارش دادن" },
+      "example": { "text": { "de": "Die Zeitung berichtet, der Präsident sei angekommen.", "fa": "روزنامه گزارش می‌دهد که رئیس‌جمهور رسیده است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "berichten",
+      "translation": "گزارش دادن",
+      "syllables": ["be", "rich", "ten"],
+      "distractors": ["ba", "roch", "tan"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "mitteilen", "fa": "اعلام کردن، اطلاع دادن" },
+      "example": { "text": { "de": "Die Regierung teilte mit, sie habe entschieden.", "fa": "دولت اعلام کرد که تصمیم گرفته است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "mitteilen",
+      "translation": "اعلام کردن",
+      "syllables": ["mit", "tei", "len"],
+      "distractors": ["mat", "tai", "lan"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "erklären", "fa": "توضیح دادن، اظهار کردن" },
+      "example": { "text": { "de": "Der Minister erklärte, er wolle zurücktreten.", "fa": "وزیر اظهار کرد که می‌خواهد استعفا دهد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "erklären",
+      "translation": "توضیح دادن",
+      "syllables": ["er", "klä", "ren"],
+      "distractors": ["ar", "klo", "ran"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "ساختن Konjunktiv I",
+      "content": "**ساختار Konjunktiv I از ریشه مصدر + پایانه‌ها:**\n\n| شخص | پایانه | sein (بودن) | haben (داشتن) |\n|-----|--------|-------------|---------------|\n| ich | -e | sei | habe |\n| du | -est | seiest | habest |\n| er/sie/es | -e | **sei** | **habe** |\n| wir | -en | seien | haben |\n| ihr | -et | seiet | habet |\n| sie/Sie | -en | seien | haben |\n\n**افعال مودال (Modal verbs):**\n\n| Infinitiv | Konjunktiv I (er/sie/es) |\n|-----------|-------------------------|\n| können | **könne** |\n| wollen | **wolle** |\n| müssen | **müsse** |\n| sollen | **solle** |\n| dürfen | **dürfe** |\n| mögen | **möge** |\n\n**نکته کلیدی:** سوم شخص مفرد (er/sie/es) بیشترین استفاده را در مطبوعات دارد!",
+      "examples": [
+        { "de": "Er sagte, er sei müde.", "fa": "او گفت که خسته است." },
+        { "de": "Sie meinte, sie habe keine Zeit.", "fa": "او گفت که وقت ندارد." },
+        { "de": "Der Chef erklärte, er könne nicht kommen.", "fa": "رئیس گفت که نمی‌تواند بیاید." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "Konjunktiv I از فعل 'sein' برای سوم شخص مفرد (er/sie/es) چیست؟",
+      "options": [
+        "ist",
+        "wäre",
+        "sei",
+        "war"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! sei صورت Konjunktiv I از sein است.", "incorrect": "Konjunktiv I از sein برای er/sie/es برابر است با: sei" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "چرا روزنامه‌ها از Konjunktiv I استفاده می‌کنند؟",
+      "options": [
+        "چون زیباتر است",
+        "برای فاصله‌گیری و بی‌طرفی",
+        "چون راحت‌تر تلفظ می‌شود",
+        "فقط در آلمان جنوبی استفاده می‌شود"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "دقیقاً! Konjunktiv I نشان‌دهنده فاصله‌گیری و بی‌طرفی است.", "incorrect": "روزنامه‌ها از Konjunktiv I برای نشان دادن فاصله‌گیری (Distanzierung) و بی‌طرفی (Objektivität) استفاده می‌کنند." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "laut", "fa": "طبق، بر اساس" },
+      "example": { "text": { "de": "Laut dem Bericht sei die Wirtschaft gewachsen.", "fa": "طبق گزارش، اقتصاد رشد کرده است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "laut",
+      "translation": "طبق",
+      "syllables": ["laut"],
+      "distractors": ["lout", "leut", "loot"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "zufolge", "fa": "به گفته، بنا به" },
+      "example": { "text": { "de": "Dem Minister zufolge sei alles in Ordnung.", "fa": "به گفته وزیر، همه چیز مرتب است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "zufolge",
+      "translation": "به گفته",
+      "syllables": ["zu", "fol", "ge"],
+      "distractors": ["za", "fal", "ga"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "die indirekte Rede", "fa": "نقل قول غیرمستقیم" },
+      "example": { "text": { "de": "In der indirekten Rede benutzt man oft den Konjunktiv I.", "fa": "در نقل قول غیرمستقیم اغلب از Konjunktiv I استفاده می‌شود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "indirekte",
+      "translation": "غیرمستقیم",
+      "syllables": ["in", "di", "rek", "te"],
+      "distractors": ["an", "da", "rok", "ta"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "Konjunktiv I درست را انتخاب کنید",
+      "sentence": "Der Minister sagte, er {0} zufrieden mit dem Ergebnis.",
+      "options": ["ist", "sei", "war", "wäre"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "در نقل قول غیرمستقیم از Konjunktiv I استفاده می‌شود: er sei (نه er ist)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "Konjunktiv I درست را انتخاب کنید",
+      "sentence": "Die Regierung teilte mit, sie {0} neue Maßnahmen ergriffen.",
+      "options": ["hat", "habe", "hatte", "hätte"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Konjunktiv I از haben برای sie = habe. در Perfekt: sie habe ... ergriffen" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "Konjunktiv I درست را انتخاب کنید",
+      "sentence": "Der Sprecher erklärte, er {0} morgen abreisen.",
+      "options": ["will", "wolle", "wollte", "würde"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Konjunktiv I از wollen برای er = wolle" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "سیگنال‌های نقل قول غیرمستقیم",
+      "content": "**عبارات معمول در روزنامه‌ها:**\n\nافعال گزارشی:\n- sagte / erklärte / meinte / betonte (گفت / اظهار کرد / نظر داشت / تأکید کرد)\n- berichtete / teilte mit / gab bekannt (گزارش داد / اعلام کرد / اطلاع داد)\n\nحروف اضافه:\n- **laut** + Dativ: laut dem Bericht\n- **zufolge** + Dativ (پس از اسم): dem Minister zufolge\n- **nach** + Dativ: nach Angaben der Regierung\n\n**ساختار معمول روزنامه‌ای:**\n\n| ساختار | مثال |\n|--------|------|\n| X sagte, ... | Der Präsident sagte, er sei optimistisch. |\n| Laut X ... | Laut dem Bericht habe die Firma Gewinn gemacht. |\n| X zufolge ... | Dem Sprecher zufolge sei alles planmäßig. |\n| Nach Angaben von X ... | Nach Angaben der Polizei gebe es keine Verletzten. |\n\n**نکته:** این عبارات نشان می‌دهند که اطلاعات از منبع دیگری است.",
+      "examples": [
+        { "de": "Laut der Studie sei Kaffee gesund.", "fa": "طبق مطالعه، قهوه سالم است." },
+        { "de": "Dem Experten zufolge könne man optimistisch sein.", "fa": "به گفته کارشناس، می‌توان خوش‌بین بود." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} dem Bericht sei die Arbeitslosigkeit gesunken.",
+      "options": ["Laut", "Zufolge", "Mit", "Von"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "laut + Dativ در ابتدای جمله می‌آید: Laut dem Bericht" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Der Kanzlerin {0} müsse man mehr investieren.",
+      "options": ["laut", "zufolge", "nach", "mit"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "zufolge بعد از اسم می‌آید: dem/der ... zufolge" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "Konjunktiv I درست را انتخاب کنید",
+      "sentence": "Die Wissenschaftler berichten, es {0} einen neuen Durchbruch.",
+      "options": ["gibt", "gebe", "gab", "gäbe"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Konjunktiv I از geben برای es = gebe" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در دفتر روزنامه",
+      "scene": {
+        "location": "newspaper office",
+        "description": { "de": "In der Redaktion einer deutschen Zeitung", "fa": "در دفتر تحریریه یک روزنامه آلمانی" }
+      },
+      "lines": [
+        { "speaker": "Redakteur", "text": { "de": "Wie soll ich dieses Zitat schreiben?", "fa": "این نقل قول را چطور بنویسم؟" }, "mood": "confused" },
+        { "speaker": "Chefredakteurin", "text": { "de": "Benutzen Sie immer Konjunktiv I für indirekte Rede.", "fa": "همیشه برای نقل قول غیرمستقیم از Konjunktiv I استفاده کنید." }, "mood": "neutral" },
+        { "speaker": "Redakteur", "text": { "de": "Also schreibe ich: 'Der Minister sagte, er sei zufrieden'?", "fa": "پس می‌نویسم: «وزیر گفت که راضی است»؟" }, "mood": "surprised" },
+        { "speaker": "Chefredakteurin", "text": { "de": "Genau! So zeigen wir Distanz zum Gesagten.", "fa": "دقیقاً! اینطور فاصله‌مان را از گفته نشان می‌دهیم." }, "mood": "happy" },
+        { "speaker": "Redakteur", "text": { "de": "Verstanden. Das wirkt professioneller.", "fa": "فهمیدم. این حرفه‌ای‌تر به نظر می‌رسد." }, "mood": "excited" }
+      ],
+      "questions": [
+        { "question": "چرا روزنامه‌نگار باید از Konjunktiv I استفاده کند؟", "options": ["چون ساده‌تر است", "برای نشان دادن فاصله از گفته", "چون رئیسش گفته"], "correctIndex": 1, "explanation": "Konjunktiv I نشان‌دهنده Distanz (فاصله‌گیری) از گفته است." },
+        { "question": "استفاده از Konjunktiv I چه تأثیری دارد؟", "options": ["متن را پیچیده‌تر می‌کند", "متن را حرفه‌ای‌تر می‌کند", "خواننده را گیج می‌کند"], "correctIndex": 1, "explanation": "استفاده از Konjunktiv I متن را professioneller (حرفه‌ای‌تر) می‌کند." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله خبری را مرتب کنید",
+      "words": ["zufrieden", "sagte", "Minister", "sei", "Der", "er"],
+      "correctOrder": [4, 2, 1, 5, 3, 0],
+      "correctSentence": { "de": "Der Minister sagte, er sei zufrieden.", "fa": "وزیر گفت که راضی است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله خبری را مرتب کنید",
+      "words": ["habe", "Regierung", "mit", "entschieden", "Die", "sie", "teilte"],
+      "correctOrder": [4, 1, 6, 2, 5, 0, 3],
+      "correctSentence": { "de": "Die Regierung teilte mit, sie habe entschieden.", "fa": "دولت اعلام کرد که تصمیم گرفته است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله خبری را مرتب کنید",
+      "words": ["könne", "dem", "Laut", "man", "optimistisch", "Bericht", "sein"],
+      "correctOrder": [2, 5, 1, 3, 4, 0, 6],
+      "correctSentence": { "de": "Laut dem Bericht könne man optimistisch sein.", "fa": "طبق گزارش می‌توان خوش‌بین بود." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "Konjunktiv I فقط در زبان محاوره استفاده می‌شود.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! Konjunktiv I در متون رسمی، روزنامه‌ها و نوشتار خبری استفاده می‌شود، نه زبان محاوره." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "Konjunktiv I از sein برای سوم شخص مفرد 'sei' است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! er/sie/es sei صورت Konjunktiv I از sein است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "وقتی روزنامه‌نگار از Konjunktiv I استفاده می‌کند، نظر شخصی‌اش را بیان می‌کند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! Konjunktiv I دقیقاً برعکس است - نشان می‌دهد که این نظر شخصی نیست و از منبع دیگری نقل شده." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "تحلیل خبر",
+      "scene": {
+        "location": "university",
+        "description": { "de": "Im Deutschkurs an der Universität", "fa": "در کلاس آلمانی دانشگاه" }
+      },
+      "lines": [
+        { "speaker": "Professor", "text": { "de": "Lesen Sie diese Schlagzeile: 'Minister sagt, Wirtschaft sei stabil'.", "fa": "این تیتر را بخوانید: «وزیر می‌گوید اقتصاد باثبات است»." }, "mood": "neutral" },
+        { "speaker": "Studentin", "text": { "de": "Warum steht da 'sei' und nicht 'ist'?", "fa": "چرا 'sei' نوشته نه 'ist'؟" }, "mood": "confused" },
+        { "speaker": "Professor", "text": { "de": "Das ist Konjunktiv I. Die Zeitung distanziert sich von der Aussage.", "fa": "این Konjunktiv I است. روزنامه از این گفته فاصله می‌گیرد." }, "mood": "happy" },
+        { "speaker": "Student", "text": { "de": "Also sagt die Zeitung nicht, ob es wahr ist?", "fa": "پس روزنامه نمی‌گوید که آیا این درست است؟" }, "mood": "surprised" },
+        { "speaker": "Professor", "text": { "de": "Richtig! Die Zeitung berichtet nur, was der Minister gesagt hat.", "fa": "درست است! روزنامه فقط گزارش می‌دهد که وزیر چه گفته." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "چرا روزنامه 'sei' نوشته نه 'ist'؟", "options": ["اشتباه چاپی است", "برای فاصله‌گیری از گفته", "چون گرامر قدیمی است"], "correctIndex": 1, "explanation": "Konjunktiv I نشان‌دهنده Distanzierung (فاصله‌گیری) از گفته است." },
+        { "question": "آیا روزنامه تأیید می‌کند که گفته وزیر درست است؟", "options": ["بله", "خیر، فقط گزارش می‌دهد", "فقط گاهی"], "correctIndex": 1, "explanation": "روزنامه فقط گزارش می‌دهد (berichtet) که وزیر چه گفته، نه اینکه درست است یا نه." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "Indikativ را با Konjunktiv I جفت کنید",
+      "items": [
+        { "id": "i1", "text": "er ist" },
+        { "id": "i2", "text": "sie hat" },
+        { "id": "i3", "text": "er kann" },
+        { "id": "i4", "text": "sie will" },
+        { "id": "i5", "text": "er muss" },
+        { "id": "i6", "text": "es gibt" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "er sei" },
+        { "id": "m2", "text": "sie habe" },
+        { "id": "m3", "text": "er könne" },
+        { "id": "m4", "text": "sie wolle" },
+        { "id": "m5", "text": "er müsse" },
+        { "id": "m6", "text": "es gebe" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "وزیر گفت که خوش‌بین است.",
+      "sentenceTemplate": "Der Minister sagte, er {0} optimistisch.",
+      "options": ["ist", "sei", "war", "wäre"],
+      "correctAnswers": [1],
+      "correctTranslation": { "de": "Der Minister sagte, er sei optimistisch.", "fa": "وزیر گفت که خوش‌بین است." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "دولت اعلام کرد که تصمیم جدیدی گرفته است.",
+      "sentenceTemplate": "Die Regierung teilte mit, sie {0} eine neue Entscheidung getroffen.",
+      "options": ["hat", "habe", "hatte", "hätte"],
+      "correctAnswers": [1],
+      "correctTranslation": { "de": "Die Regierung teilte mit, sie habe eine neue Entscheidung getroffen.", "fa": "دولت اعلام کرد که تصمیم جدیدی گرفته است." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: خبر روزنامه",
+      "passage": {
+        "de": "Berlin - Der Bundeskanzler erklärte gestern in einer Pressekonferenz, die wirtschaftliche Lage sei stabil. Laut dem Regierungssprecher habe die Regierung alle notwendigen Maßnahmen ergriffen.\n\nDer Finanzminister betonte, man müsse weiterhin vorsichtig sein. Er sagte, die Inflation könne in den nächsten Monaten sinken. Dem Wirtschaftsexperten zufolge sei dies jedoch nicht sicher.\n\nDie Opposition kritisierte die Aussagen. Ein Sprecher meinte, die Regierung wolle die Probleme nicht sehen. Nach Angaben der Gewerkschaft gebe es weiterhin Sorgen um Arbeitsplätze.",
+        "fa": "برلین - صدراعظم دیروز در یک کنفرانس مطبوعاتی اعلام کرد که وضعیت اقتصادی باثبات است. طبق گفته سخنگوی دولت، دولت تمام اقدامات لازم را انجام داده است.\n\nوزیر دارایی تأکید کرد که باید همچنان محتاط بود. او گفت که تورم ممکن است در ماه‌های آینده کاهش یابد. به گفته کارشناس اقتصادی، این اما قطعی نیست.\n\nاپوزیسیون از این اظهارات انتقاد کرد. یک سخنگو گفت که دولت نمی‌خواهد مشکلات را ببیند. بنا به گفته اتحادیه، همچنان نگرانی‌هایی درباره مشاغل وجود دارد."
+      },
+      "questions": [
+        { "question": "چند بار در این متن از Konjunktiv I استفاده شده؟", "options": ["۳ بار", "۶ بار", "۹ بار"], "correctIndex": 2, "explanation": "۹ صورت Konjunktiv I: sei, habe, müsse, könne, sei, wolle, gebe و غیره" },
+        { "question": "کدام عبارت نشان‌دهنده منبع خبر است؟", "options": ["کلمه 'gestern'", "عبارت 'laut dem Regierungssprecher'", "کلمه 'Berlin'"], "correctIndex": 1, "explanation": "'Laut dem Regierungssprecher' نشان می‌دهد که اطلاعات از سخنگوی دولت است." },
+        { "question": "چرا روزنامه همه جا از Konjunktiv I استفاده کرده؟", "options": ["چون گرامر آلمانی ایجاب می‌کند", "برای نشان دادن بی‌طرفی و فاصله‌گیری", "چون ساده‌تر است"], "correctIndex": 1, "explanation": "روزنامه با Konjunktiv I نشان می‌دهد که فقط گزارش می‌دهد و نظر شخصی ندارد." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der erste Zeitungsartikel", "fa": "اولین مقاله روزنامه‌ای" },
+      "characters": ["Nadia", "Herr Schmidt"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Nadia ist Journalistik-Studentin. Heute schreibt sie ihren ersten Artikel für die Uni-Zeitung.", "fa": "نادیا دانشجوی روزنامه‌نگاری است. امروز اولین مقاله‌اش را برای روزنامه دانشگاه می‌نویسد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Nadia",
+          "text": { "de": "Herr Schmidt, ich habe ein Interview mit dem Dekan geführt.", "fa": "آقای اشمیت، من با رئیس دانشکده مصاحبه کردم." },
+          "mood": "excited"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Herr Schmidt",
+          "text": { "de": "Sehr gut! Wie wollen Sie sein Zitat schreiben?", "fa": "خیلی خوب! می‌خواهید نقل قولش را چطور بنویسید؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Nadia",
+          "text": { "de": "Er sagte: 'Die Uni ist die beste in der Region.'", "fa": "او گفت: «دانشگاه بهترین در منطقه است.»" },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "این نقل قول مستقیم است یا غیرمستقیم؟",
+          "options": ["مستقیم (با گیومه)", "غیرمستقیم (با Konjunktiv I)"],
+          "correctIndex": 0,
+          "explanation": "این نقل قول مستقیم است چون با گیومه نوشته شده."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Herr Schmidt",
+          "text": { "de": "Für einen Zeitungsartikel sollten Sie indirekte Rede benutzen.", "fa": "برای یک مقاله روزنامه‌ای باید از نقل قول غیرمستقیم استفاده کنید." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Nadia",
+          "text": { "de": "Also schreibe ich: 'Der Dekan sagte, die Uni sei die beste in der Region'?", "fa": "پس می‌نویسم: «رئیس دانشکده گفت که دانشگاه بهترین در منطقه است»؟" },
+          "mood": "surprised"
+        },
+        {
+          "type": "question",
+          "question": "کدام فعل به Konjunktiv I تبدیل شد؟",
+          "options": ["sagte → sage", "ist → sei", "schreibe → schreibe"],
+          "correctIndex": 1,
+          "explanation": "ist (Indikativ) به sei (Konjunktiv I) تبدیل شد."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Herr Schmidt",
+          "text": { "de": "Perfekt! So zeigen Sie journalistische Distanz.", "fa": "عالی! اینطور فاصله روزنامه‌نگاری نشان می‌دهید." },
+          "mood": "happy"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Nadia lernt, dass Konjunktiv I ein wichtiges Werkzeug für Journalisten ist.", "fa": "نادیا یاد می‌گیرد که Konjunktiv I ابزار مهمی برای روزنامه‌نگاران است." }
+        },
+        {
+          "type": "question",
+          "question": "چرا Konjunktiv I برای روزنامه‌نگاران مهم است؟",
+          "options": ["برای نوشتن ساده‌تر", "برای نشان دادن فاصله حرفه‌ای", "برای جذب خوانندگان بیشتر"],
+          "correctIndex": 1,
+          "explanation": "Konjunktiv I 'journalistische Distanz' (فاصله روزنامه‌نگاری) نشان می‌دهد."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: Konjunktiv I بسازید!",
+      "instruction": "کدام Konjunktiv I درست است؟",
+      "questions": [
+        { "prompt": "sein (er) →", "left": "sei", "right": "wäre", "correctSide": "left" },
+        { "prompt": "haben (sie) →", "left": "hätte", "right": "habe", "correctSide": "right" },
+        { "prompt": "können (er) →", "left": "könne", "right": "könnte", "correctSide": "left" },
+        { "prompt": "wollen (sie) →", "left": "wollte", "right": "wolle", "correctSide": "right" },
+        { "prompt": "müssen (er) →", "left": "müsse", "right": "müsste", "correctSide": "left" },
+        { "prompt": "geben (es) →", "left": "gäbe", "right": "gebe", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Der Minister sagte, er sei zufrieden.",
+      "translation": "وزیر گفت که راضی است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Die Regierung teilte mit, sie habe entschieden.",
+      "translation": "دولت اعلام کرد که تصمیم گرفته است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Laut dem Bericht sei die Lage stabil.",
+      "translation": "طبق گزارش، وضعیت باثبات است."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: Konjunktiv I!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "Konjunktiv I از 'sein' برای 'er':", "options": ["sei", "wäre"], "correctAnswerIndex": 0 },
+        { "question": "Konjunktiv I از 'haben' برای 'sie':", "options": ["habe", "hätte"], "correctAnswerIndex": 0 },
+        { "question": "Konjunktiv I از 'können' برای 'er':", "options": ["könne", "könnte"], "correctAnswerIndex": 0 },
+        { "question": "کدام در روزنامه‌ها رایج‌تر است؟", "options": ["Konjunktiv I", "Konjunktiv II"], "correctAnswerIndex": 0 },
+        { "question": "'laut dem Bericht' یعنی:", "options": ["طبق گزارش", "در گزارش"], "correctAnswerIndex": 0 },
+        { "question": "Konjunktiv I نشان‌دهنده چیست؟", "options": ["فاصله‌گیری", "تأیید"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: Indikativ و Konjunktiv I",
+      "pairs": [
+        { "de": "er ist", "fa": "er sei" },
+        { "de": "sie hat", "fa": "sie habe" },
+        { "de": "er kann", "fa": "er könne" },
+        { "de": "sie will", "fa": "sie wolle" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات مربوط به Konjunktiv I را پیدا کنید",
+      "targetWords": ["berichten", "mitteilen", "erklaeren", "laut", "zufolge", "indirekte"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "berichten", "fa": "گزارش دادن", "options": ["پرسیدن", "گزارش دادن", "خواندن", "نوشتن"], "correctIndex": 1 },
+        { "de": "mitteilen", "fa": "اعلام کردن", "options": ["تقسیم کردن", "اعلام کردن", "شنیدن", "دیدن"], "correctIndex": 1 },
+        { "de": "laut", "fa": "طبق", "options": ["بلند", "طبق", "آرام", "سریع"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما مبانی Konjunktiv I در مطبوعات آلمانی را یاد گرفتید!",
+      "keyPoints": [
+        "Konjunktiv I برای نقل قول غیرمستقیم در روزنامه‌ها استفاده می‌شود",
+        "ساختار: ریشه مصدر + پایانه‌های خاص (sei, habe, könne, wolle, müsse)",
+        "سوم شخص مفرد (er/sie/es) رایج‌ترین صورت است: er sei, sie habe",
+        "Konjunktiv I نشان‌دهنده فاصله‌گیری و بی‌طرفی است",
+        "سیگنال‌های رایج: sagte, erklärte, laut, zufolge",
+        "ساختار: Der Minister sagte, er sei zufrieden.",
+        "روزنامه با Konjunktiv I می‌گوید: «این حرف من نیست، فقط گزارش می‌دهم»"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "berichten", "fa": "گزارش دادن" } },
+        { "word": { "de": "mitteilen", "fa": "اعلام کردن" } },
+        { "word": { "de": "erklären", "fa": "توضیح دادن، اظهار کردن" } },
+        { "word": { "de": "laut", "fa": "طبق، بر اساس" } },
+        { "word": { "de": "zufolge", "fa": "به گفته، بنا به" } },
+        { "word": { "de": "die indirekte Rede", "fa": "نقل قول غیرمستقیم" } }
+      ]
+    }
+  ]
+}

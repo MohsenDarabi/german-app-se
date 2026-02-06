@@ -8,7 +8,7 @@
 
 **Create B1 lessons - lesson by lesson, wait for user test after each**
 
-Current: `B2-M02` (Nominaler Stil) - **MODULE COMPLETE - READY FOR USER TEST**
+Current: `B2-M03` (Konjunktiv I in der Presse) - **MODULE COMPLETE - READY FOR USER TEST**
 
 ---
 
@@ -27,7 +27,7 @@ Current: `B2-M02` (Nominaler Stil) - **MODULE COMPLETE - READY FOR USER TEST**
 | A1 | 14 | 56+ | Complete |
 | A2 | 18 | 72 | **Complete** ✅ |
 | B1 | 20 | 80 | **Complete** ✅ |
-| B2 | 2 | 8 | Module 2 complete |
+| B2 | 3 | 12 | Module 3 complete |
 
 ### A2 Completion (2026-02-05)
 
@@ -309,8 +309,9 @@ Current: `B2-M02` (Nominaler Stil) - **MODULE COMPLETE - READY FOR USER TEST**
 |--------|-------|---------|--------|
 | M01 | Erweiterte Partizipialkonstruktionen | 4/4 | ✅ Complete |
 | M02 | Nominaler Stil | 4/4 | ✅ Complete |
+| M03 | Konjunktiv I in der Presse | 4/4 | ✅ Complete |
 
-**Total B2: 8 lessons**
+**Total B2: 12 lessons**
 
 ---
 
@@ -336,10 +337,23 @@ Current: `B2-M02` (Nominaler Stil) - **MODULE COMPLETE - READY FOR USER TEST**
 
 ---
 
+## B2 Module 3: Konjunktiv I in der Presse (Subjunctive I in Journalism)
+
+| Lesson | Title | Status |
+|--------|-------|--------|
+| B2-M03-L01 | Grundlagen des Konjunktiv I (basics for indirect speech) | ✅ Complete |
+| B2-M03-L02 | Ersatzformen mit Konjunktiv II (replacement forms) | ✅ Complete |
+| B2-M03-L03 | Redeeinleitungen (speech introduction phrases: laut, zufolge) | ✅ Complete |
+| B2-M03-L04 | Zusammenfassung | ✅ Complete |
+
+---
+
 ## Recent Changes
 
 | Date | Change |
 |------|--------|
+| 2026-02-06 | **B2 Module 3 (Konjunktiv I in der Presse) COMPLETE - 4 lessons!** |
+| 2026-02-06 | Created B2-M03-L01 to L04 in parallel |
 | 2026-02-06 | **B2 Module 2 (Nominaler Stil) COMPLETE - 4 lessons!** |
 | 2026-02-06 | Created B2-M02-L01 to L04 in parallel |
 | 2026-02-06 | **B2 Module 1 (Erweiterte Partizipialkonstruktionen) COMPLETE - 4 lessons!** |

@@ -1721,6 +1721,37 @@ const DE_FA_B2_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/B2/B2-M02-L04"
       }
     ]
+  },
+  {
+    id: "module-03",
+    title: "بخش ۳: Konjunktiv I در مطبوعات",
+    level: "B2",
+    lessons: [
+      {
+        id: "B2-M03-L01",
+        title: "Grundlagen des Konjunktiv I - مبانی وجه التزامی یک",
+        description: "یاد بگیرید وجه التزامی یک برای نقل قول غیرمستقیم: er sei، sie habe، man könne.",
+        path: "/learn/de-fa/B2/B2-M03-L01"
+      },
+      {
+        id: "B2-M03-L02",
+        title: "Ersatzformen mit Konjunktiv II - فرم‌های جایگزین",
+        description: "یاد بگیرید وقتی Konjunktiv I = Indikativ است، از Konjunktiv II استفاده کنید: hätten، würden.",
+        path: "/learn/de-fa/B2/B2-M03-L02"
+      },
+      {
+        id: "B2-M03-L03",
+        title: "Redeeinleitungen - عبارات معرفی نقل قول",
+        description: "یاد بگیرید عبارات معرفی منبع: laut dem Bericht، Experten zufolge، wie X mitteilte.",
+        path: "/learn/de-fa/B2/B2-M03-L03"
+      },
+      {
+        id: "B2-M03-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل Konjunktiv I در مطبوعات: فرم‌ها، جایگزین‌ها و عبارات نقل قول.",
+        path: "/learn/de-fa/B2/B2-M03-L04"
+      }
+    ]
   }
 ];
 

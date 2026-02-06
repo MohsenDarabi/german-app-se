@@ -1,0 +1,527 @@
+{
+  "id": "B2-M03-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Konjunktiv I in der Presse: Redeeinleitungen", "fa": "وجه التزامی یک در مطبوعات: عبارات نقل قول" },
+  "description": "یاد بگیرید چگونه از عبارات نقل قول در اخبار و مطبوعات آلمانی استفاده کنید - ساختارهایی مانند laut، zufolge و افعال گزارش‌دهی مانند berichten، mitteilen، erklären.",
+  "level": "B2",
+  "module": 3,
+  "lessonNumber": 3,
+  "totalSteps": 45,
+  "estimatedMinutes": 30,
+  "vocabulary": [
+    { "de": "berichten", "fa": "گزارش دادن، خبر دادن", "grammar": { "pos": "verb" } },
+    { "de": "mitteilen", "fa": "اطلاع دادن، اعلام کردن", "grammar": { "pos": "verb" } },
+    { "de": "erklären", "fa": "توضیح دادن، اظهار کردن", "grammar": { "pos": "verb" } },
+    { "de": "betonen", "fa": "تأکید کردن", "grammar": { "pos": "verb" } },
+    { "de": "behaupten", "fa": "ادعا کردن، مدعی شدن", "grammar": { "pos": "verb" } },
+    { "de": "fordern", "fa": "خواستار شدن، مطالبه کردن", "grammar": { "pos": "verb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "نقل قول در مطبوعات آلمانی",
+      "content": "**Redeeinleitungen = عبارات نقل قول**\n\nدر مطبوعات آلمانی، برای نقل قول غیرمستقیم از ساختارهای خاصی استفاده می‌شود:\n\n**1. laut + Dativ (حرف اضافه)**\n- laut dem Bericht = بر اساس گزارش\n- laut Angaben der Polizei = طبق اطلاعات پلیس\n\n**2. zufolge + Dativ (پس‌اضافه)**\n- dem Bericht zufolge = بر اساس گزارش\n- Experten zufolge = به گفته کارشناسان\n\n**3. افعال گزارش‌دهی + Konjunktiv I**\n- Er sagte, er sei krank. = او گفت که مریض است.\n- Sie berichtete, es habe Probleme gegeben. = او گزارش داد که مشکلاتی وجود داشته.\n\n**نکته مهم:** در مطبوعات، Konjunktiv I نشان می‌دهد که خبرنگار مسئولیت صحت خبر را نمی‌پذیرد!",
+      "examples": [
+        { "de": "Laut dem Sprecher sei die Situation stabil.", "fa": "به گفته سخنگو، وضعیت پایدار است." },
+        { "de": "Dem Bericht zufolge habe es Probleme gegeben.", "fa": "بر اساس گزارش، مشکلاتی وجود داشته است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "berichten", "fa": "گزارش دادن، خبر دادن" },
+      "example": { "text": { "de": "Die Zeitung berichtet, der Minister sei zurückgetreten.", "fa": "روزنامه گزارش می‌دهد که وزیر استعفا داده است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "berichten",
+      "translation": "گزارش دادن",
+      "syllables": ["be", "rich", "ten"],
+      "distractors": ["ba", "roch", "tan"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "mitteilen", "fa": "اطلاع دادن، اعلام کردن" },
+      "example": { "text": { "de": "Das Ministerium teilte mit, die Verhandlungen seien erfolgreich.", "fa": "وزارتخانه اعلام کرد که مذاکرات موفقیت‌آمیز بوده است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "mitteilen",
+      "translation": "اعلام کردن",
+      "syllables": ["mit", "tei", "len"],
+      "distractors": ["mat", "tai", "lan"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "erklären", "fa": "توضیح دادن، اظهار کردن" },
+      "example": { "text": { "de": "Der Präsident erklärte, man werde alle Maßnahmen ergreifen.", "fa": "رئیس‌جمهور اظهار کرد که همه اقدامات انجام خواهد شد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "erklären",
+      "translation": "توضیح دادن",
+      "syllables": ["er", "klä", "ren"],
+      "distractors": ["ar", "kla", "ran"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "laut + Dativ",
+      "content": "**laut + Dativ = بر اساس، طبق**\n\n'laut' یک حرف اضافه است که با Dativ می‌آید:\n\n| ترکیب | معنی |\n|-------|------|\n| laut dem Bericht | بر اساس گزارش |\n| laut der Studie | طبق مطالعه |\n| laut den Angaben | بر اساس اطلاعات |\n| laut Experten | به گفته کارشناسان |\n\n**ساختار در جمله:**\n- **Laut dem Sprecher** sei die Lage unter Kontrolle.\n- Die Preise steigen, **laut Angaben** der Regierung.\n\n**نکته:** وقتی اسم بدون آرتیکل می‌آید (مثل Experten)، laut با Genitiv یا Dativ هر دو صحیح است:\n- laut Experten ✓\n- laut der Experten ✓",
+      "examples": [
+        { "de": "Laut dem Polizeibericht gab es keine Verletzten.", "fa": "بر اساس گزارش پلیس، مجروحی نبوده است." },
+        { "de": "Laut Angaben des Unternehmens steigt der Umsatz.", "fa": "طبق اطلاعات شرکت، فروش افزایش می‌یابد." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله صحیح است؟",
+      "options": [
+        "Laut der Bericht sei alles in Ordnung.",
+        "Laut dem Bericht sei alles in Ordnung.",
+        "Laut den Bericht sei alles in Ordnung.",
+        "Laut des Berichts sei alles in Ordnung."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! laut + Dativ: laut dem Bericht (der Bericht → dem Bericht)", "incorrect": "laut با Dativ می‌آید: der Bericht → dem Bericht" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "'zufolge' کجا در جمله می‌آید؟",
+      "options": [
+        "قبل از اسم",
+        "بعد از اسم",
+        "آخر جمله",
+        "فرقی نمی‌کند"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "درست! zufolge یک پس‌اضافه (Postposition) است و بعد از اسم می‌آید: dem Bericht zufolge", "incorrect": "zufolge یک پس‌اضافه است و بعد از اسم (با Dativ) می‌آید: dem Bericht zufolge" }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "betonen", "fa": "تأکید کردن" },
+      "example": { "text": { "de": "Die Kanzlerin betonte, die Zusammenarbeit sei wichtig.", "fa": "صدراعظم تأکید کرد که همکاری مهم است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "betonen",
+      "translation": "تأکید کردن",
+      "syllables": ["be", "to", "nen"],
+      "distractors": ["ba", "ta", "nan"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "behaupten", "fa": "ادعا کردن، مدعی شدن" },
+      "example": { "text": { "de": "Der Angeklagte behauptet, er sei unschuldig.", "fa": "متهم ادعا می‌کند که بی‌گناه است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "behaupten",
+      "translation": "ادعا کردن",
+      "syllables": ["be", "haup", "ten"],
+      "distractors": ["ba", "houp", "tan"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "fordern", "fa": "خواستار شدن، مطالبه کردن" },
+      "example": { "text": { "de": "Die Opposition fordert, der Minister solle zurücktreten.", "fa": "اپوزیسیون خواستار استعفای وزیر است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "fordern",
+      "translation": "خواستار شدن",
+      "syllables": ["for", "dern"],
+      "distractors": ["far", "dorn", "dran"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "حرف اضافه یا پس‌اضافه مناسب را انتخاب کنید",
+      "sentence": "{0} dem Polizeibericht sei der Fahrer unverletzt.",
+      "options": ["Laut", "Zufolge", "Nach", "Mit"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "laut + Dativ قبل از اسم می‌آید: Laut dem Polizeibericht" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "پس‌اضافه مناسب را انتخاب کنید",
+      "sentence": "Dem Bericht {0} habe es keine Verletzten gegeben.",
+      "options": ["laut", "zufolge", "nach", "gemäß"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "zufolge بعد از اسم (با Dativ) می‌آید: dem Bericht zufolge" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "فعل گزارش‌دهی مناسب را انتخاب کنید",
+      "sentence": "Der Sprecher {0}, die Verhandlungen seien erfolgreich gewesen.",
+      "options": ["berichtete", "forderte", "betonte", "behauptete"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "berichten = گزارش دادن. برای انتقال یک خبر، berichten مناسب‌ترین است." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "تفاوت افعال گزارش‌دهی",
+      "content": "**افعال گزارش‌دهی و تفاوت‌های ظریف آنها:**\n\n| فعل | معنی | کاربرد |\n|-----|------|--------|\n| **berichten** | گزارش دادن | خبر خنثی و واقعی |\n| **mitteilen** | اعلام کردن | بیانیه رسمی |\n| **erklären** | اظهار کردن | توضیح با جزئیات |\n| **betonen** | تأکید کردن | تأکید روی نکته مهم |\n| **behaupten** | ادعا کردن | بیان چیزی که شاید درست نباشد |\n| **fordern** | خواستار شدن | درخواست یا مطالبه |\n\n**ساختار:**\n- X berichtete, **dass** ... (با dass)\n- X berichtete, ... **+ Konjunktiv I** (بدون dass)\n- **Wie** X mitteilte, ... (در ابتدای جمله)\n\n**مثال:**\n- Wie der Minister mitteilte, werde das Gesetz geändert.\n- Der Minister erklärte, dass das Gesetz geändert werde.",
+      "examples": [
+        { "de": "Der Chef betonte, Pünktlichkeit sei wichtig.", "fa": "رئیس تأکید کرد که وقت‌شناسی مهم است." },
+        { "de": "Die Partei fordert, die Steuern sollten gesenkt werden.", "fa": "حزب خواستار کاهش مالیات‌ها است." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["dem", "zufolge", "Bericht", "Probleme", "es", "gegeben", "habe"],
+      "correctOrder": [0, 2, 1, 4, 6, 3, 5],
+      "correctSentence": { "de": "Dem Bericht zufolge habe es Probleme gegeben", "fa": "بر اساس گزارش، مشکلاتی وجود داشته است" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["Laut", "Sprecher", "dem", "stabil", "sei", "die", "Situation"],
+      "correctOrder": [0, 2, 1, 4, 5, 6, 3],
+      "correctSentence": { "de": "Laut dem Sprecher sei die Situation stabil", "fa": "به گفته سخنگو، وضعیت پایدار است" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["mitteilte", "der", "Minister", "Wie", "werde", "geändert", "das", "Gesetz"],
+      "correctOrder": [3, 1, 2, 0, 4, 6, 7, 5],
+      "correctSentence": { "de": "Wie der Minister mitteilte werde das Gesetz geändert", "fa": "همان‌طور که وزیر اعلام کرد، قانون تغییر خواهد کرد" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "'laut' یک حرف اضافه است که قبل از اسم می‌آید.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! laut + Dativ قبل از اسم می‌آید: laut dem Bericht" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "'zufolge' قبل از اسم می‌آید.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! zufolge یک پس‌اضافه (Postposition) است و بعد از اسم می‌آید: dem Bericht zufolge" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "'behaupten' برای بیان چیزی استفاده می‌شود که شاید درست نباشد.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! behaupten (ادعا کردن) زمانی استفاده می‌شود که گوینده مطمئن از صحت خبر نیست یا می‌خواهد فاصله بگذارد." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در دفتر روزنامه",
+      "scene": {
+        "location": "office",
+        "description": { "de": "In der Redaktion einer Zeitung", "fa": "در تحریریه یک روزنامه" }
+      },
+      "lines": [
+        { "speaker": "Chefredakteur", "text": { "de": "Was haben Sie über den Unfall herausgefunden?", "fa": "درباره تصادف چه چیزی فهمیدید؟" }, "mood": "neutral" },
+        { "speaker": "Reporterin", "text": { "de": "Laut dem Polizeibericht sei der Fahrer unverletzt.", "fa": "بر اساس گزارش پلیس، راننده آسیب ندیده است." }, "mood": "neutral" },
+        { "speaker": "Chefredakteur", "text": { "de": "Und was sagt das Krankenhaus?", "fa": "و بیمارستان چه می‌گوید؟" }, "mood": "neutral" },
+        { "speaker": "Reporterin", "text": { "de": "Der Sprecher des Krankenhauses teilte mit, alle Patienten seien stabil.", "fa": "سخنگوی بیمارستان اعلام کرد که همه بیماران وضعیت پایداری دارند." }, "mood": "neutral" },
+        { "speaker": "Chefredakteur", "text": { "de": "Gut. Vergessen Sie nicht, Konjunktiv I zu benutzen!", "fa": "خوب است. فراموش نکنید از وجه التزامی یک استفاده کنید!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "چه ساختاری برای نقل قول از گزارش پلیس استفاده شد؟", "options": ["dem Bericht zufolge", "laut dem Polizeibericht", "der Bericht sagt"], "correctIndex": 1, "explanation": "خبرنگار گفت: 'Laut dem Polizeibericht sei...'" },
+        { "question": "چرا سردبیر تأکید کرد که از Konjunktiv I استفاده شود؟", "options": ["چون زیباتر است", "چون در مطبوعات استاندارد است", "چون ساده‌تر است"], "correctIndex": 1, "explanation": "Konjunktiv I در مطبوعات نشان می‌دهد که خبرنگار مسئولیت صحت خبر را نمی‌پذیرد." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "فعل گزارش‌دهی مناسب را انتخاب کنید",
+      "sentence": "Die Kanzlerin {0}, die internationale Zusammenarbeit sei unverzichtbar.",
+      "options": ["berichtete", "betonte", "behauptete", "forderte"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "betonen = تأکید کردن. وقتی شخصی روی نکته مهمی تأکید می‌کند، betonen مناسب است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "فعل گزارش‌دهی مناسب را انتخاب کنید",
+      "sentence": "Der Angeklagte {0}, er habe nichts gewusst.",
+      "options": ["berichtete", "mitteilte", "behauptet", "fordert"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "behaupten = ادعا کردن. وقتی کسی چیزی می‌گوید که شاید درست نباشد، behaupten مناسب است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "ساختار نقل قول مناسب را انتخاب کنید",
+      "sentence": "{0} zufolge werde die Regierung neue Maßnahmen ergreifen.",
+      "options": ["Laut Experten", "Experten", "Die Experten", "Nach Experten"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "zufolge بعد از اسم می‌آید: Experten zufolge (نه 'Laut Experten zufolge')" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "بحث درباره اخبار",
+      "scene": {
+        "location": "living room",
+        "description": { "de": "Zu Hause beim Fernsehen", "fa": "در خانه هنگام تماشای تلویزیون" }
+      },
+      "lines": [
+        { "speaker": "Maria", "text": { "de": "Hast du die Nachrichten gesehen? Der Minister sei zurückgetreten.", "fa": "اخبار را دیدی؟ گویا وزیر استعفا داده است." }, "mood": "surprised" },
+        { "speaker": "Thomas", "text": { "de": "Ja, die Opposition fordert, dass auch der Staatssekretär gehen solle.", "fa": "بله، اپوزیسیون خواستار رفتن معاون وزیر هم هست." }, "mood": "neutral" },
+        { "speaker": "Maria", "text": { "de": "Laut dem Regierungssprecher sei alles unter Kontrolle.", "fa": "به گفته سخنگوی دولت، همه چیز تحت کنترل است." }, "mood": "confused" },
+        { "speaker": "Thomas", "text": { "de": "Das behaupten sie immer! Experten zufolge könnte es weitere Rücktritte geben.", "fa": "آنها همیشه همین را ادعا می‌کنند! به گفته کارشناسان، ممکن است استعفاهای بیشتری باشد." }, "mood": "angry" },
+        { "speaker": "Maria", "text": { "de": "Der Journalist betonte, die Krise sei noch nicht vorbei.", "fa": "خبرنگار تأکید کرد که بحران هنوز تمام نشده است." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "اپوزیسیون چه چیزی می‌خواهد؟", "options": ["استعفای وزیر", "استعفای معاون وزیر", "انتخابات جدید"], "correctIndex": 1, "explanation": "اپوزیسیون fordert (خواستار است) که معاون وزیر هم برود." },
+        { "question": "کدام فعل برای بیان شک استفاده شد؟", "options": ["berichten", "fordern", "behaupten"], "correctIndex": 2, "explanation": "توماس گفت: 'Das behaupten sie immer!' که نشان‌دهنده شک اوست." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "افعال گزارش‌دهی را با معنی فارسی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "berichten" },
+        { "id": "i2", "text": "mitteilen" },
+        { "id": "i3", "text": "erklären" },
+        { "id": "i4", "text": "betonen" },
+        { "id": "i5", "text": "behaupten" },
+        { "id": "i6", "text": "fordern" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "گزارش دادن" },
+        { "id": "m2", "text": "اعلام کردن" },
+        { "id": "m3", "text": "توضیح دادن" },
+        { "id": "m4", "text": "تأکید کردن" },
+        { "id": "m5", "text": "ادعا کردن" },
+        { "id": "m6", "text": "خواستار شدن" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "بر اساس گزارش، وضعیت پایدار است.",
+      "sentenceTemplate": "{0} dem Bericht {1} die Situation stabil.",
+      "options": ["Laut", "Zufolge", "sei", "ist"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Laut dem Bericht sei die Situation stabil.", "fa": "بر اساس گزارش، وضعیت پایدار است." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "به گفته کارشناسان، قیمت‌ها افزایش خواهد یافت.",
+      "sentenceTemplate": "Experten {0} {1} die Preise steigen.",
+      "options": ["laut", "zufolge", "werden", "würden"],
+      "correctAnswers": [1, 2],
+      "correctTranslation": { "de": "Experten zufolge werden die Preise steigen.", "fa": "به گفته کارشناسان، قیمت‌ها افزایش خواهد یافت." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: مقاله خبری",
+      "passage": {
+        "de": "BERLIN - Die Bundesregierung hat gestern neue Klimaschutzmaßnahmen angekündigt. Laut dem Umweltminister seien die neuen Regeln notwendig, um die Klimaziele zu erreichen.\n\nDem Bericht zufolge sollen die CO2-Emissionen bis 2030 um 55 Prozent reduziert werden. Die Industrie fordert jedoch längere Übergangsfristen.\n\nWie die Kanzlerin mitteilte, werde es keine Ausnahmen geben. 'Der Klimawandel wartet nicht', betonte sie. Die Opposition behauptet hingegen, die Maßnahmen seien nicht ausreichend.\n\nExperten zufolge könnte der neue Plan positive Auswirkungen auf die Umwelt haben. Der Wirtschaftsminister erklärte, man werde die Industrie unterstützen.",
+        "fa": "برلین - دولت فدرال دیروز اقدامات جدید حفاظت از آب و هوا را اعلام کرد. به گفته وزیر محیط زیست، قوانین جدید برای رسیدن به اهداف اقلیمی ضروری هستند.\n\nبر اساس گزارش، انتشار CO2 تا سال 2030 باید 55 درصد کاهش یابد. با این حال، صنعت خواستار دوره‌های انتقالی طولانی‌تر است.\n\nهمان‌طور که صدراعظم اعلام کرد، استثنایی وجود نخواهد داشت. او تأکید کرد: «تغییرات اقلیمی صبر نمی‌کند.» اپوزیسیون در مقابل ادعا می‌کند که اقدامات کافی نیستند.\n\nبه گفته کارشناسان، برنامه جدید می‌تواند تأثیرات مثبتی بر محیط زیست داشته باشد. وزیر اقتصاد توضیح داد که از صنعت حمایت خواهد شد."
+      },
+      "questions": [
+        { "question": "کدام ساختار نقل قول در این متن استفاده نشده است؟", "options": ["laut + Dativ", "zufolge", "gemäß"], "correctIndex": 2, "explanation": "در متن از laut dem Umweltminister، dem Bericht zufolge و Experten zufolge استفاده شده، اما gemäß نه." },
+        { "question": "اپوزیسیون چه می‌گوید؟", "options": ["اقدامات خوب هستند", "اقدامات کافی نیستند", "اقدامات لازم نیستند"], "correctIndex": 1, "explanation": "متن می‌گوید: Die Opposition behauptet, die Maßnahmen seien nicht ausreichend." },
+        { "question": "چرا از 'behauptet' برای نظر اپوزیسیون استفاده شده؟", "options": ["چون نظر رسمی است", "چون نویسنده با آن موافق نیست یا مطمئن نیست", "چون ساده‌تر است"], "correctIndex": 1, "explanation": "behaupten نشان می‌دهد که نویسنده فاصله می‌گذارد و صحت ادعا را تأیید نمی‌کند." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die Nachrichtensendung", "fa": "برنامه خبری" },
+      "characters": ["Moderatorin", "Reporter"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Die Abendnachrichten beginnen.", "fa": "اخبار شب شروع می‌شود." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Moderatorin",
+          "text": { "de": "Guten Abend. Laut dem Innenministerium sei die Sicherheitslage stabil.", "fa": "عصر بخیر. به گفته وزارت کشور، وضعیت امنیتی پایدار است." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Reporter",
+          "text": { "de": "Dem Polizeibericht zufolge habe es heute mehrere Demonstrationen gegeben.", "fa": "بر اساس گزارش پلیس، امروز چندین تظاهرات برگزار شده است." },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "کدام ساختار نقل قول در جمله خبرنگار استفاده شد؟",
+          "options": ["laut + Dativ", "zufolge (پس‌اضافه)", "wie X mitteilte"],
+          "correctIndex": 1,
+          "explanation": "خبرنگار گفت: 'Dem Polizeibericht zufolge' - zufolge بعد از اسم می‌آید."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Moderatorin",
+          "text": { "de": "Wie die Regierung mitteilte, werde man alle Maßnahmen ergreifen.", "fa": "همان‌طور که دولت اعلام کرد، همه اقدامات انجام خواهد شد." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Reporter",
+          "text": { "de": "Die Opposition fordert jedoch, der Minister solle zurücktreten.", "fa": "با این حال، اپوزیسیون خواستار استعفای وزیر است." },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "'fordern' در این جمله چه معنایی دارد؟",
+          "options": ["گزارش دادن", "خواستار شدن، مطالبه کردن", "توضیح دادن"],
+          "correctIndex": 1,
+          "explanation": "fordern = خواستار شدن. اپوزیسیون استعفای وزیر را مطالبه می‌کند."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Moderatorin",
+          "text": { "de": "Experten zufolge könnte die Krise noch Wochen dauern.", "fa": "به گفته کارشناسان، بحران ممکن است هفته‌ها ادامه یابد." },
+          "mood": "neutral"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Die Nachrichten gehen weiter.", "fa": "اخبار ادامه می‌یابد." }
+        },
+        {
+          "type": "question",
+          "question": "چرا در مطبوعات از Konjunktiv I استفاده می‌شود؟",
+          "options": ["چون زیباتر است", "تا خبرنگار مسئولیت صحت خبر را نپذیرد", "چون ساده‌تر است"],
+          "correctIndex": 1,
+          "explanation": "Konjunktiv I در مطبوعات نشان می‌دهد که این نقل قول است و خبرنگار صحت آن را تضمین نمی‌کند."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: افعال گزارش‌دهی",
+      "instruction": "معنی درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "berichten =", "left": "گزارش دادن", "right": "ادعا کردن", "correctSide": "left" },
+        { "prompt": "behaupten =", "left": "تأکید کردن", "right": "ادعا کردن", "correctSide": "right" },
+        { "prompt": "betonen =", "left": "تأکید کردن", "right": "اعلام کردن", "correctSide": "left" },
+        { "prompt": "fordern =", "left": "گزارش دادن", "right": "خواستار شدن", "correctSide": "right" },
+        { "prompt": "mitteilen =", "left": "اعلام کردن", "right": "ادعا کردن", "correctSide": "left" },
+        { "prompt": "erklären =", "left": "خواستار شدن", "right": "توضیح دادن", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Laut dem Bericht sei die Situation stabil.",
+      "translation": "بر اساس گزارش، وضعیت پایدار است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Dem Sprecher zufolge habe es keine Probleme gegeben.",
+      "translation": "به گفته سخنگو، مشکلی وجود نداشته است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Die Opposition fordert, der Minister solle zurücktreten.",
+      "translation": "اپوزیسیون خواستار استعفای وزیر است."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: نقل قول در مطبوعات",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "laut + Dativ کجا می‌آید؟", "options": ["قبل از اسم", "بعد از اسم"], "correctAnswerIndex": 0 },
+        { "question": "zufolge کجا می‌آید؟", "options": ["قبل از اسم", "بعد از اسم"], "correctAnswerIndex": 1 },
+        { "question": "behaupten =", "options": ["ادعا کردن", "گزارش دادن"], "correctAnswerIndex": 0 },
+        { "question": "betonen =", "options": ["اعلام کردن", "تأکید کردن"], "correctAnswerIndex": 1 },
+        { "question": "fordern =", "options": ["خواستار شدن", "توضیح دادن"], "correctAnswerIndex": 0 },
+        { "question": "Konjunktiv I در مطبوعات چه کاربردی دارد؟", "options": ["نقل قول غیرمستقیم", "آرزو"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: افعال گزارش‌دهی",
+      "pairs": [
+        { "de": "berichten", "fa": "گزارش دادن" },
+        { "de": "mitteilen", "fa": "اعلام کردن" },
+        { "de": "betonen", "fa": "تأکید کردن" },
+        { "de": "behaupten", "fa": "ادعا کردن" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "افعال گزارش‌دهی را پیدا کنید",
+      "targetWords": ["berichten", "mitteilen", "erklären", "betonen", "behaupten", "fordern"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "berichten", "fa": "گزارش دادن", "options": ["ادعا کردن", "گزارش دادن", "تأکید کردن", "خواستار شدن"], "correctIndex": 1 },
+        { "de": "behaupten", "fa": "ادعا کردن", "options": ["اعلام کردن", "توضیح دادن", "ادعا کردن", "گزارش دادن"], "correctIndex": 2 },
+        { "de": "fordern", "fa": "خواستار شدن", "options": ["خواستار شدن", "تأکید کردن", "اعلام کردن", "گزارش دادن"], "correctIndex": 0 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما عبارات نقل قول در مطبوعات آلمانی را یاد گرفتید!",
+      "keyPoints": [
+        "laut + Dativ قبل از اسم می‌آید: laut dem Bericht",
+        "zufolge + Dativ بعد از اسم می‌آید (پس‌اضافه): dem Bericht zufolge",
+        "berichten = گزارش دادن (خبر خنثی)",
+        "mitteilen = اعلام کردن (بیانیه رسمی)",
+        "erklären = توضیح دادن (با جزئیات)",
+        "betonen = تأکید کردن (روی نکته مهم)",
+        "behaupten = ادعا کردن (شاید درست نباشد)",
+        "fordern = خواستار شدن (درخواست یا مطالبه)",
+        "Konjunktiv I در مطبوعات نشان می‌دهد که خبرنگار مسئولیت صحت خبر را نمی‌پذیرد"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "berichten", "fa": "گزارش دادن" } },
+        { "word": { "de": "mitteilen", "fa": "اعلام کردن" } },
+        { "word": { "de": "erklären", "fa": "توضیح دادن" } },
+        { "word": { "de": "betonen", "fa": "تأکید کردن" } },
+        { "word": { "de": "behaupten", "fa": "ادعا کردن" } },
+        { "word": { "de": "fordern", "fa": "خواستار شدن" } }
+      ]
+    }
+  ]
+}

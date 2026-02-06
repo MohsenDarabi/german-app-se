@@ -1,0 +1,525 @@
+{
+  "id": "B2-M03-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Zusammenfassung: Konjunktiv I in der Presse", "fa": "جمع‌بندی: وجه التزامی یک در مطبوعات" },
+  "description": "مرور جامع همه فرم‌های Konjunktiv I برای روزنامه‌نگاری: فرم‌های پایه، جایگزینی با Konjunktiv II، عبارات معرفی نقل قول (laut, zufolge)، خواندن متون خبری اصیل و نوشتن خلاصه‌ای از گفته‌های دیگران.",
+  "level": "B2",
+  "module": 3,
+  "lessonNumber": 4,
+  "totalSteps": 45,
+  "estimatedMinutes": 35,
+  "vocabulary": [
+    { "de": "die Berichterstattung", "fa": "گزارش‌دهی خبری", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "laut", "fa": "طبق، به گفته", "grammar": { "pos": "preposition" } },
+    { "de": "zufolge", "fa": "بنا به، طبق", "grammar": { "pos": "preposition" } },
+    { "de": "die Ersatzform", "fa": "فرم جایگزین", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "die Distanzierung", "fa": "فاصله‌گذاری", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "wiedergeben", "fa": "بازگو کردن، نقل کردن", "grammar": { "pos": "verb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "مرور Konjunktiv I در مطبوعات",
+      "content": "**Konjunktiv I = وجه التزامی یک**\n\nKonjunktiv I برای نقل غیرمستقیم گفتار دیگران استفاده می‌شود، به‌ویژه در:\n- **روزنامه‌ها و خبرگزاری‌ها**\n- **گزارش‌های رسمی**\n- **متون علمی**\n\n**فرم‌های پایه:**\n\n| فعل | Konjunktiv I | معنی |\n|-----|--------------|------|\n| sein | sei | باشد (گفته می‌شود) |\n| haben | habe | داشته باشد |\n| können | könne | بتواند |\n| wollen | wolle | بخواهد |\n| müssen | müsse | باید |\n| geben | gebe | وجود داشته باشد |\n\n**چرا Konjunktiv I؟**\n- نشان می‌دهد که این **نظر گوینده نیست**\n- **فاصله‌گذاری** (Distanzierung) از محتوا\n- **عینیت** روزنامه‌نگاری",
+      "examples": [
+        { "de": "Der Minister sagte, er sei zufrieden.", "fa": "وزیر گفت که راضی است. (نقل غیرمستقیم)" },
+        { "de": "Die Regierung behauptet, es gebe keine Probleme.", "fa": "دولت ادعا می‌کند که مشکلی وجود ندارد." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "die Berichterstattung", "fa": "گزارش‌دهی خبری" },
+      "example": { "text": { "de": "Die Berichterstattung über die Wahl war objektiv.", "fa": "گزارش‌دهی درباره انتخابات عینی بود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Berichterstattung",
+      "translation": "گزارش‌دهی خبری",
+      "syllables": ["Be", "richt", "er", "stat", "tung"],
+      "distractors": ["Ba", "racht", "ar", "stut"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "laut", "fa": "طبق، به گفته" },
+      "example": { "text": { "de": "Laut dem Sprecher sei die Lage unter Kontrolle.", "fa": "طبق گفته سخنگو، وضعیت تحت کنترل است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "laut",
+      "translation": "طبق، به گفته",
+      "syllables": ["laut"],
+      "distractors": ["lout", "leut", "lot"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "zufolge", "fa": "بنا به، طبق" },
+      "example": { "text": { "de": "Dem Bericht zufolge habe die Firma expandiert.", "fa": "بنا به این گزارش، شرکت توسعه یافته است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "zufolge",
+      "translation": "بنا به، طبق",
+      "syllables": ["zu", "fol", "ge"],
+      "distractors": ["zo", "ful", "ga"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "Ersatzformen: جایگزینی با Konjunktiv II",
+      "content": "**وقتی Konjunktiv I = Indikativ → از Konjunktiv II استفاده کنید!**\n\nمشکل: بعضی فرم‌های Konjunktiv I با Indikativ یکسان هستند:\n\n| ضمیر | Indikativ | Konj. I | مشکل؟ |\n|------|-----------|---------|--------|\n| ich | habe | habe | ✅ یکسان! |\n| wir | haben | haben | ✅ یکسان! |\n| sie (جمع) | haben | haben | ✅ یکسان! |\n\n**راه حل: استفاده از Konjunktiv II**\n\n| اصل (Konj. I) | جایگزین (Konj. II) |\n|---------------|--------------------|\n| sie haben (یکسان!) | sie **hätten** |\n| wir können (یکسان!) | wir **könnten** |\n| ich weiß (یکسان!) | ich **wüsste** |\n| sie werden (یکسان!) | sie **würden** |\n\n**مثال:**\n- ❌ Sie sagen, sie haben Probleme. (نامشخص: نقل قول یا واقعیت؟)\n- ✅ Sie sagen, sie **hätten** Probleme. (واضح: نقل قول است)",
+      "examples": [
+        { "de": "Die Politiker behaupten, sie hätten keine Fehler gemacht.", "fa": "سیاستمداران ادعا می‌کنند که اشتباهی نکرده‌اند." },
+        { "de": "Die Experten meinen, die Zahlen würden steigen.", "fa": "کارشناسان معتقدند که ارقام افزایش خواهند یافت." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "چرا در روزنامه‌نگاری از Konjunktiv I استفاده می‌شود؟",
+      "options": [
+        "برای زیباتر شدن متن",
+        "برای فاصله‌گذاری و نشان دادن نقل قول",
+        "برای کوتاه‌تر شدن جمله",
+        "برای رسمی‌تر شدن"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! Konjunktiv I نشان می‌دهد که این نظر روزنامه‌نگار نیست و فاصله‌گذاری (Distanzierung) ایجاد می‌کند.", "incorrect": "Konjunktiv I برای فاصله‌گذاری از محتوا و نشان دادن نقل غیرمستقیم استفاده می‌شود." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله از Ersatzform (فرم جایگزین) درست استفاده کرده است؟",
+      "options": [
+        "Sie sagen, sie haben keine Zeit.",
+        "Sie sagen, sie hätten keine Zeit.",
+        "Sie sagen, sie hatten keine Zeit.",
+        "Sie sagen, sie habe keine Zeit."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "دقیقاً! چون 'sie haben' در Konjunktiv I و Indikativ یکسان است، از 'hätten' (Konjunktiv II) استفاده می‌کنیم.", "incorrect": "'sie haben' در Konj. I = Indikativ است، پس باید از Konj. II (hätten) استفاده شود." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "die Ersatzform", "fa": "فرم جایگزین" },
+      "example": { "text": { "de": "Bei 'wir haben' braucht man die Ersatzform 'wir hätten'.", "fa": "برای 'wir haben' به فرم جایگزین 'wir hätten' نیاز داریم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "Ersatzform",
+      "translation": "فرم جایگزین",
+      "syllables": ["Er", "satz", "form"],
+      "distractors": ["Ar", "sotz", "furm"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "die Distanzierung", "fa": "فاصله‌گذاری" },
+      "example": { "text": { "de": "Die Distanzierung vom Inhalt ist im Journalismus wichtig.", "fa": "فاصله‌گذاری از محتوا در روزنامه‌نگاری مهم است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "Distanzierung",
+      "translation": "فاصله‌گذاری",
+      "syllables": ["Dis", "tan", "zie", "rung"],
+      "distractors": ["Das", "ton", "za", "rang"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "wiedergeben", "fa": "بازگو کردن، نقل کردن" },
+      "example": { "text": { "de": "Der Journalist gibt die Aussage des Ministers wieder.", "fa": "روزنامه‌نگار گفته وزیر را بازگو می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "wiedergeben",
+      "translation": "بازگو کردن",
+      "syllables": ["wie", "der", "ge", "ben"],
+      "distractors": ["wa", "dar", "ga", "ban"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "Konjunktiv I درست را انتخاب کنید",
+      "sentence": "Der Sprecher sagte, die Situation {0} unter Kontrolle.",
+      "options": ["ist", "sei", "war", "wäre"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "'sei' فرم Konjunktiv I از 'sein' است که برای نقل غیرمستقیم استفاده می‌شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "Ersatzform درست را انتخاب کنید (Konj. I = Indikativ)",
+      "sentence": "Die Experten behaupten, sie {0} genug Beweise.",
+      "options": ["haben", "hätten", "habe", "hat"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "'sie haben' در Konj. I = Indikativ است، پس از Ersatzform 'hätten' (Konj. II) استفاده می‌کنیم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "حرف اضافه معرفی منبع را انتخاب کنید",
+      "sentence": "{0} dem Bericht sei die Wirtschaft gewachsen.",
+      "options": ["Laut", "Weil", "Obwohl", "Da"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "'laut + Dativ' برای معرفی منبع استفاده می‌شود: laut dem Bericht = طبق گزارش" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "عبارات معرفی منبع",
+      "content": "**Redeeinleitungen = عبارات معرفی نقل قول**\n\nدر روزنامه‌نگاری، همیشه منبع اطلاعات ذکر می‌شود:\n\n**۱. با حرف اضافه:**\n\n| عبارت | حالت | مثال |\n|-------|------|------|\n| **laut** | + Dativ | Laut dem Minister sei... |\n| **zufolge** | Dativ + | Dem Minister zufolge sei... |\n| **nach** | + Dativ | Nach Angaben der Polizei... |\n\n**۲. با فعل:**\n\n| فعل | ساختار | معنی |\n|-----|--------|------|\n| berichten | Die Zeitung berichtet, ... | گزارش دادن |\n| mitteilen | Das Ministerium teilt mit, ... | اعلام کردن |\n| behaupten | Er behauptet, ... | ادعا کردن |\n| erklären | Sie erklärt, ... | توضیح دادن |\n\n**نکته مهم:**\n- 'laut' قبل از منبع می‌آید: **Laut** dem Sprecher...\n- 'zufolge' بعد از منبع می‌آید: Dem Sprecher **zufolge**...",
+      "examples": [
+        { "de": "Laut Polizeibericht sei niemand verletzt worden.", "fa": "طبق گزارش پلیس، کسی زخمی نشده است." },
+        { "de": "Dem Unternehmen zufolge habe es keine Entlassungen gegeben.", "fa": "بنا به گفته شرکت، اخراجی صورت نگرفته است." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "ترتیب درست 'zufolge' را انتخاب کنید",
+      "sentence": "{0} habe die Regierung neue Maßnahmen beschlossen.",
+      "options": ["Dem Bericht zufolge", "Zufolge dem Bericht", "Der Bericht zufolge", "Zufolge der Bericht"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "'zufolge' بعد از اسم (در Dativ) می‌آید: Dem Bericht zufolge (نه قبل از آن!)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "فعل معرفی نقل قول را انتخاب کنید",
+      "sentence": "Die Regierung {0}, es gebe keine Krise.",
+      "options": ["behauptet", "ist", "hat", "wird"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "'behaupten' (ادعا کردن) فعلی رایج برای معرفی نقل غیرمستقیم است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "Konjunktiv I صحیح برای نقل غیرمستقیم",
+      "sentence": "Der Politiker erklärt, er {0} alles getan.",
+      "options": ["habe", "hat", "hatte", "haben"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "'er habe' فرم Konjunktiv I است که برای سوم شخص مفرد در نقل قول استفاده می‌شود." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در تحریریه روزنامه",
+      "scene": {
+        "location": "office",
+        "description": { "de": "In der Redaktion einer Zeitung", "fa": "در تحریریه یک روزنامه" }
+      },
+      "lines": [
+        { "speaker": "Redakteur", "text": { "de": "Du hast geschrieben: 'Der Minister sagt, er hat keine Fehler gemacht.'", "fa": "تو نوشتی: «وزیر می‌گوید که اشتباهی نکرده است.»" }, "mood": "neutral" },
+        { "speaker": "Journalist", "text": { "de": "Ja, das hat er wörtlich gesagt.", "fa": "بله، او دقیقاً همین را گفت." }, "mood": "confused" },
+        { "speaker": "Redakteur", "text": { "de": "Aber wir brauchen Distanzierung! Schreib: 'Er habe keine Fehler gemacht.'", "fa": "ولی ما به فاصله‌گذاری نیاز داریم! بنویس: «او اشتباهی نکرده باشد.»" }, "mood": "neutral" },
+        { "speaker": "Journalist", "text": { "de": "Ah, Konjunktiv I! Damit zeigen wir, dass es seine Aussage ist, nicht unsere.", "fa": "آها، وجه التزامی یک! با این کار نشان می‌دهیم که این گفته اوست، نه نظر ما." }, "mood": "excited" },
+        { "speaker": "Redakteur", "text": { "de": "Genau. Das ist die journalistische Objektivität.", "fa": "دقیقاً. این همان عینیت روزنامه‌نگاری است." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "چرا سردبیر خواست جمله تغییر کند؟", "options": ["چون دستور زبان غلط بود", "برای فاصله‌گذاری و عینیت", "چون خیلی طولانی بود"], "correctIndex": 1, "explanation": "Konjunktiv I برای 'Distanzierung' (فاصله‌گذاری) و نشان دادن اینکه این نظر روزنامه نیست استفاده می‌شود." },
+        { "question": "تفاوت 'hat gemacht' و 'habe gemacht' چیست؟", "options": ["هیچ تفاوتی", "اولی واقعیت، دومی نقل قول", "اولی گذشته، دومی حال"], "correctIndex": 1, "explanation": "'hat gemacht' (Indikativ) واقعیت را بیان می‌کند، 'habe gemacht' (Konj. I) نقل قول است." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله خبری با Konjunktiv I را مرتب کنید",
+      "words": ["sei", "Lage", "Sprecher", "die", "sagte", "unter", "Der", "Kontrolle"],
+      "correctOrder": [6, 2, 4, 3, 1, 0, 5, 7],
+      "correctSentence": { "de": "Der Sprecher sagte, die Lage sei unter Kontrolle.", "fa": "سخنگو گفت که وضعیت تحت کنترل است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله با 'zufolge' را مرتب کنید",
+      "words": ["zufolge", "Regierung", "habe", "der", "keine", "Entlassungen", "es", "gegeben"],
+      "correctOrder": [3, 1, 0, 6, 2, 4, 5, 7],
+      "correctSentence": { "de": "Der Regierung zufolge habe es keine Entlassungen gegeben.", "fa": "بنا به گفته دولت، اخراجی صورت نگرفته است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله با 'laut' را مرتب کنید",
+      "words": ["sei", "Laut", "Studie", "Umweltverschmutzung", "gestiegen", "die", "der"],
+      "correctOrder": [1, 6, 2, 0, 5, 3, 4],
+      "correctSentence": { "de": "Laut der Studie sei die Umweltverschmutzung gestiegen.", "fa": "طبق این مطالعه، آلودگی محیط زیست افزایش یافته است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "Konjunktiv I نشان می‌دهد که روزنامه‌نگار با محتوا موافق است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! Konjunktiv I فاصله‌گذاری (Distanzierung) ایجاد می‌کند و نشان می‌دهد که این نظر روزنامه‌نگار نیست." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "وقتی Konjunktiv I و Indikativ یکسان هستند، از Konjunktiv II به عنوان جایگزین استفاده می‌کنیم.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! مثلاً 'sie haben' (Konj. I = Indikativ) جایگزین می‌شود با 'sie hätten' (Konj. II)." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "'zufolge' قبل از اسم می‌آید: 'zufolge dem Bericht'.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! 'zufolge' بعد از اسم می‌آید: 'Dem Bericht zufolge'. برعکس 'laut' که قبل می‌آید." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "کلاس روزنامه‌نگاری",
+      "scene": {
+        "location": "university",
+        "description": { "de": "Journalistik-Seminar an der Universität", "fa": "سمینار روزنامه‌نگاری در دانشگاه" }
+      },
+      "lines": [
+        { "speaker": "Dozentin", "text": { "de": "Heute üben wir das Schreiben von Pressemitteilungen.", "fa": "امروز نوشتن بیانیه‌های مطبوعاتی را تمرین می‌کنیم." }, "mood": "neutral" },
+        { "speaker": "Student", "text": { "de": "Wann benutze ich 'laut' und wann 'zufolge'?", "fa": "کی از 'laut' و کی از 'zufolge' استفاده کنم؟" }, "mood": "confused" },
+        { "speaker": "Dozentin", "text": { "de": "'Laut' steht vor der Quelle: 'Laut dem Minister'. 'Zufolge' steht danach: 'dem Minister zufolge'.", "fa": "'laut' قبل از منبع می‌آید: 'طبق گفته وزیر'. 'zufolge' بعد می‌آید: 'بنا به گفته وزیر'." }, "mood": "happy" },
+        { "speaker": "Studentin", "text": { "de": "Und wenn Konjunktiv I wie Indikativ aussieht?", "fa": "و اگر Konjunktiv I مثل Indikativ به نظر برسد؟" }, "mood": "confused" },
+        { "speaker": "Dozentin", "text": { "de": "Dann nehmen wir die Ersatzform: 'hätten' statt 'haben', 'würden' statt 'werden'.", "fa": "آنوقت از فرم جایگزین استفاده می‌کنیم: 'hätten' به جای 'haben'، 'würden' به جای 'werden'." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "تفاوت 'laut' و 'zufolge' در چیست؟", "options": ["معنی متفاوت دارند", "جایگاه متفاوت دارند", "حالت متفاوت می‌گیرند"], "correctIndex": 1, "explanation": "'laut' قبل از منبع و 'zufolge' بعد از منبع می‌آید." },
+        { "question": "Ersatzform چه زمانی لازم است؟", "options": ["همیشه", "وقتی Konj. I = Indikativ", "وقتی جمله طولانی است"], "correctIndex": 1, "explanation": "وقتی Konjunktiv I با Indikativ یکسان به نظر می‌رسد، از Konjunktiv II به عنوان جایگزین استفاده می‌کنیم." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "فعل‌های معرفی نقل قول را با معنی فارسی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "berichten" },
+        { "id": "i2", "text": "behaupten" },
+        { "id": "i3", "text": "mitteilen" },
+        { "id": "i4", "text": "erklären" },
+        { "id": "i5", "text": "betonen" },
+        { "id": "i6", "text": "wiedergeben" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "گزارش دادن" },
+        { "id": "m2", "text": "ادعا کردن" },
+        { "id": "m3", "text": "اعلام کردن" },
+        { "id": "m4", "text": "توضیح دادن" },
+        { "id": "m5", "text": "تأکید کردن" },
+        { "id": "m6", "text": "بازگو کردن" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "طبق گفته سخنگو، جلسه لغو شده است.",
+      "sentenceTemplate": "{0} dem Sprecher {1} die Sitzung abgesagt worden.",
+      "options": ["Laut", "Zufolge", "sei", "ist"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Laut dem Sprecher sei die Sitzung abgesagt worden.", "fa": "طبق گفته سخنگو، جلسه لغو شده است." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "سیاستمداران ادعا می‌کنند که راه‌حلی پیدا کرده‌اند.",
+      "sentenceTemplate": "Die Politiker behaupten, sie {0} eine Lösung {1}.",
+      "options": ["hätten", "haben", "gefunden", "finden"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Die Politiker behaupten, sie hätten eine Lösung gefunden.", "fa": "سیاستمداران ادعا می‌کنند که راه‌حلی پیدا کرده‌اند." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: مقاله خبری",
+      "passage": {
+        "de": "Berlin (dpa) - Laut einem Bericht des Umweltministeriums sei die Luftqualität in deutschen Städten deutlich besser geworden. Der Sprecher des Ministeriums erklärte, die Maßnahmen der letzten Jahre hätten Wirkung gezeigt.\n\nDem Bericht zufolge seien die Stickoxidwerte um 20 Prozent gesunken. Die Regierung betonte, sie wolle weitere Verbesserungen erreichen. Kritiker behaupten jedoch, die Zahlen seien geschönt. Es gebe weiterhin Probleme in Großstädten.\n\nDer Umweltminister kündigte an, man werde neue Programme starten. Experten zufolge müsse mehr in den öffentlichen Nahverkehr investiert werden. Die Diskussion über Fahrverbote sei noch nicht beendet, hieß es aus Regierungskreisen.",
+        "fa": "برلین (خبرگزاری آلمان) - طبق گزارش وزارت محیط زیست، کیفیت هوا در شهرهای آلمان به طور چشمگیری بهتر شده است. سخنگوی وزارت توضیح داد که اقدامات سال‌های اخیر اثر خود را نشان داده‌اند.\n\nبنا به این گزارش، مقادیر اکسید نیتروژن ۲۰ درصد کاهش یافته است. دولت تأکید کرد که می‌خواهد به بهبودهای بیشتری دست یابد. با این حال، منتقدان ادعا می‌کنند که ارقام آراسته شده‌اند. مشکلاتی در شهرهای بزرگ همچنان وجود دارد.\n\nوزیر محیط زیست اعلام کرد که برنامه‌های جدیدی آغاز خواهند شد. به گفته کارشناسان، باید سرمایه‌گذاری بیشتری در حمل و نقل عمومی صورت گیرد. بحث درباره ممنوعیت رانندگی هنوز تمام نشده است."
+      },
+      "questions": [
+        { "question": "چند بار از Konjunktiv I یا Ersatzform در این متن استفاده شده؟", "options": ["۳-۴ بار", "۷-۸ بار", "۱۰+ بار"], "correctIndex": 2, "explanation": "بیش از ۱۰ بار: sei, hätten, seien, wolle, seien, gebe, werde, müsse, sei و..." },
+        { "question": "چرا از 'hätten' به جای 'haben' استفاده شده؟", "options": ["چون زمان گذشته است", "چون Konj. I = Indikativ است", "چون شرطی است"], "correctIndex": 1, "explanation": "'sie haben' در Konj. I مثل Indikativ است، پس از Ersatzform 'hätten' استفاده شده." },
+        { "question": "کدام عبارت معرفی منبع در متن نیامده؟", "options": ["laut", "nach Angaben", "zufolge"], "correctIndex": 1, "explanation": "'laut' و 'zufolge' در متن آمده‌اند، ولی 'nach Angaben' نیامده است." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die erste Pressekonferenz", "fa": "اولین کنفرانس مطبوعاتی" },
+      "characters": ["Julia", "Redakteur"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Julia ist eine junge Journalistin. Sie besucht ihre erste Pressekonferenz.", "fa": "یولیا روزنامه‌نگار جوانی است. او به اولین کنفرانس مطبوعاتی‌اش می‌رود." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Julia",
+          "text": { "de": "Der Minister hat gesagt: 'Wir haben alles unter Kontrolle.'", "fa": "وزیر گفت: «ما همه چیز را تحت کنترل داریم.»" },
+          "mood": "excited"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Redakteur",
+          "text": { "de": "Gut, aber wie schreibst du das für die Zeitung?", "fa": "خوب، ولی این را چطور برای روزنامه می‌نویسی؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "Julia چگونه باید این نقل قول را بنویسد؟",
+          "options": ["Der Minister sagte, sie haben alles unter Kontrolle.", "Der Minister sagte, man habe alles unter Kontrolle.", "Der Minister sagte, wir haben alles unter Kontrolle."],
+          "correctIndex": 1,
+          "explanation": "در نقل غیرمستقیم از Konjunktiv I استفاده می‌شود و 'wir' به 'man' تغییر می‌کند: 'man habe'"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Julia",
+          "text": { "de": "Also: 'Der Minister erklärte, man habe alles unter Kontrolle.'", "fa": "پس: «وزیر توضیح داد که همه چیز تحت کنترل است.»" },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Redakteur",
+          "text": { "de": "Perfekt! Und vergiss nicht 'laut dem Minister' als Alternative.", "fa": "عالی! و 'طبق گفته وزیر' را به عنوان جایگزین فراموش نکن." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "کدام جمله از 'laut' درست استفاده کرده؟",
+          "options": ["Laut dem Minister habe man alles unter Kontrolle.", "Dem Minister laut habe man alles unter Kontrolle.", "Der Minister laut habe man alles unter Kontrolle."],
+          "correctIndex": 0,
+          "explanation": "'laut' قبل از منبع (در Dativ) می‌آید: Laut dem Minister..."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Julia",
+          "text": { "de": "Jetzt verstehe ich den Unterschied zwischen direkter und indirekter Rede!", "fa": "حالا تفاوت نقل قول مستقیم و غیرمستقیم را می‌فهمم!" },
+          "mood": "excited"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Julia schreibt ihren ersten professionellen Artikel mit korrekter indirekter Rede.", "fa": "یولیا اولین مقاله حرفه‌ای‌اش را با نقل قول غیرمستقیم صحیح می‌نویسد." }
+        },
+        {
+          "type": "question",
+          "question": "چرا استفاده از Konjunktiv I در روزنامه‌نگاری مهم است؟",
+          "options": ["چون قانون است", "برای عینیت و فاصله‌گذاری از محتوا", "چون زیباتر است"],
+          "correctIndex": 1,
+          "explanation": "Konjunktiv I عینیت (Objektivität) و فاصله‌گذاری (Distanzierung) ایجاد می‌کند."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: Konjunktiv I",
+      "instruction": "کدام فرم درست است؟",
+      "questions": [
+        { "prompt": "er (sein):", "left": "sei", "right": "ist", "correctSide": "left" },
+        { "prompt": "sie (haben - جمع):", "left": "haben", "right": "hätten", "correctSide": "right" },
+        { "prompt": "es (geben):", "left": "gibt", "right": "gebe", "correctSide": "right" },
+        { "prompt": "er (können):", "left": "kann", "right": "könne", "correctSide": "right" },
+        { "prompt": "wir (wollen):", "left": "wollen", "right": "wollten", "correctSide": "right" },
+        { "prompt": "sie (müssen - مفرد):", "left": "müsse", "right": "muss", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Laut dem Sprecher sei die Situation unter Kontrolle.",
+      "translation": "طبق گفته سخنگو، وضعیت تحت کنترل است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Die Experten behaupten, sie hätten neue Erkenntnisse.",
+      "translation": "کارشناسان ادعا می‌کنند که یافته‌های جدیدی دارند."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Dem Bericht zufolge habe die Wirtschaft sich erholt.",
+      "translation": "بنا به این گزارش، اقتصاد بهبود یافته است."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: Konjunktiv I در مطبوعات",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "Konjunktiv I از 'sein' (er):", "options": ["sei", "ist"], "correctAnswerIndex": 0 },
+        { "question": "'laut' کجا می‌آید؟", "options": ["قبل از منبع", "بعد از منبع"], "correctAnswerIndex": 0 },
+        { "question": "'zufolge' کجا می‌آید؟", "options": ["قبل از منبع", "بعد از منبع"], "correctAnswerIndex": 1 },
+        { "question": "Ersatzform برای 'sie haben':", "options": ["hätten", "haben"], "correctAnswerIndex": 0 },
+        { "question": "هدف Konjunktiv I در روزنامه:", "options": ["فاصله‌گذاری", "زیبایی"], "correctAnswerIndex": 0 },
+        { "question": "'behaupten' یعنی:", "options": ["ادعا کردن", "گزارش دادن"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: Konjunktiv I",
+      "pairs": [
+        { "de": "er sei", "fa": "او باشد (نقل قول)" },
+        { "de": "sie hätten", "fa": "آنها داشته باشند (جایگزین)" },
+        { "de": "laut dem Bericht", "fa": "طبق گزارش" },
+        { "de": "zufolge", "fa": "بنا به (بعد از اسم)" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات مربوط به نقل قول غیرمستقیم را پیدا کنید",
+      "targetWords": ["Konjunktiv", "berichten", "behaupten", "zufolge", "Distanzierung", "Ersatzform"],
+      "gridSize": { "rows": 12, "cols": 12 },
+      "timeLimit": 150
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "die Berichterstattung", "fa": "گزارش‌دهی خبری", "options": ["خبرخوانی", "گزارش‌دهی خبری", "نقد و بررسی", "تفسیر"], "correctIndex": 1 },
+        { "de": "die Distanzierung", "fa": "فاصله‌گذاری", "options": ["نزدیکی", "فاصله‌گذاری", "تأیید", "موافقت"], "correctIndex": 1 },
+        { "de": "wiedergeben", "fa": "بازگو کردن", "options": ["دوباره دادن", "بازگو کردن", "برگرداندن", "تکرار کردن"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس جمع‌بندی تمام شد!",
+      "message": "شما همه مفاهیم Konjunktiv I در مطبوعات را مرور کردید!",
+      "keyPoints": [
+        "Konjunktiv I برای نقل غیرمستقیم در روزنامه‌نگاری استفاده می‌شود",
+        "فرم‌های پایه: sei, habe, könne, wolle, müsse, gebe",
+        "Ersatzform: وقتی Konj. I = Indikativ → از Konj. II استفاده کنید (hätten, würden)",
+        "laut + Dativ قبل از منبع: Laut dem Minister...",
+        "Dativ + zufolge بعد از منبع: Dem Minister zufolge...",
+        "فعل‌های معرفی: berichten, behaupten, mitteilen, erklären, betonen",
+        "هدف: فاصله‌گذاری (Distanzierung) و عینیت روزنامه‌نگاری"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "die Berichterstattung", "fa": "گزارش‌دهی خبری" } },
+        { "word": { "de": "laut", "fa": "طبق، به گفته" } },
+        { "word": { "de": "zufolge", "fa": "بنا به، طبق" } },
+        { "word": { "de": "die Ersatzform", "fa": "فرم جایگزین" } },
+        { "word": { "de": "die Distanzierung", "fa": "فاصله‌گذاری" } },
+        { "word": { "de": "wiedergeben", "fa": "بازگو کردن، نقل کردن" } }
+      ]
+    }
+  ]
+}

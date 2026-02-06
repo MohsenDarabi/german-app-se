@@ -1,0 +1,524 @@
+{
+  "id": "B2-M03-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Konjunktiv I: Ersatzformen mit Konjunktiv II", "fa": "وجه التزامی یک: فرم‌های جایگزین با وجه التزامی دو" },
+  "description": "یاد بگیرید چه زمانی باید از Konjunktiv II به جای Konjunktiv I استفاده کنید - وقتی فرم Konjunktiv I با اخباری یکسان است.",
+  "level": "B2",
+  "module": 3,
+  "lessonNumber": 2,
+  "totalSteps": 45,
+  "estimatedMinutes": 30,
+  "vocabulary": [
+    { "de": "die Ersatzform", "fa": "فرم جایگزین", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "identisch", "fa": "یکسان، مشابه", "grammar": { "pos": "adjective" } },
+    { "de": "die Verwechslung", "fa": "اشتباه گرفتن، خلط", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "eindeutig", "fa": "واضح، صریح", "grammar": { "pos": "adjective" } },
+    { "de": "ersetzen", "fa": "جایگزین کردن", "grammar": { "pos": "verb" } },
+    { "de": "die Klarheit", "fa": "وضوح، شفافیت", "grammar": { "pos": "noun", "gender": "feminine" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "مشکل: وقتی Konjunktiv I = Indikativ",
+      "content": "**مشکل اصلی در Konjunktiv I**\n\nبرخی فرم‌های Konjunktiv I با فرم‌های Indikativ (اخباری) یکسان هستند!\n\n| Indikativ | Konjunktiv I | یکسان؟ |\n|-----------|--------------|--------|\n| sie **haben** | sie **haben** | بله! |\n| wir **kommen** | wir **kommen** | بله! |\n| sie **sagen** | sie **sagen** | بله! |\n\n**مثال مشکل:**\n- Er sagt, sie **haben** kein Geld. (اخباری یا التزامی؟)\n- آیا این نقل قول غیرمستقیم است یا جمله مستقیم؟\n\n**قاعده مهم:**\nبرای وضوح، از **Konjunktiv II** به جای Konjunktiv I استفاده می‌کنیم!",
+      "examples": [
+        { "de": "sie haben wird zu sie hätten", "fa": "sie haben تبدیل می‌شود به sie hätten" },
+        { "de": "wir kommen wird zu wir kämen", "fa": "wir kommen تبدیل می‌شود به wir kämen" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "die Ersatzform", "fa": "فرم جایگزین" },
+      "example": { "text": { "de": "Die Ersatzform mit Konjunktiv II verhindert Verwechslungen.", "fa": "فرم جایگزین با وجه التزامی دو از اشتباه گرفتن جلوگیری می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Ersatzform",
+      "translation": "فرم جایگزین",
+      "syllables": ["Er", "satz", "form"],
+      "distractors": ["Ar", "sotz", "ferm"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "identisch", "fa": "یکسان، مشابه" },
+      "example": { "text": { "de": "Die Formen 'sie haben' sind im Indikativ und Konjunktiv I identisch.", "fa": "فرم‌های 'sie haben' در اخباری و التزامی یکسان هستند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "identisch",
+      "translation": "یکسان",
+      "syllables": ["i", "den", "tisch"],
+      "distractors": ["o", "dan", "tasch"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "die Verwechslung", "fa": "اشتباه گرفتن، خلط" },
+      "example": { "text": { "de": "Um Verwechslungen zu vermeiden, benutzt man Konjunktiv II.", "fa": "برای جلوگیری از اشتباه گرفتن، از التزامی دو استفاده می‌کنیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Verwechslung",
+      "translation": "اشتباه گرفتن",
+      "syllables": ["Ver", "wechs", "lung"],
+      "distractors": ["Vor", "wachs", "lang"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "قاعده جایگزینی: Ersatzregel",
+      "content": "**قاعده جایگزینی (Ersatzregel)**\n\nاگر فرم Konjunktiv I با Indikativ یکسان باشد، از Konjunktiv II استفاده کنید!\n\n**کدام فرم‌ها معمولا مشکل‌ساز هستند؟**\n\n| ضمیر | مشکل | جایگزین با Konj. II |\n|------|------|----------------------|\n| wir | wir haben = wir haben | wir **hätten** |\n| sie (جمع) | sie kommen = sie kommen | sie **kämen** |\n| Sie (رسمی) | Sie sagen = Sie sagen | Sie **würden sagen** |\n\n**فرم‌های er/sie/es معمولا مشکل ندارند:**\n- er sagt (Ind.) ≠ er sage (Konj. I) ✓\n- sie kommt (Ind.) ≠ sie komme (Konj. I) ✓\n- es gibt (Ind.) ≠ es gebe (Konj. I) ✓\n\n**نتیجه:** سوم شخص مفرد (er/sie/es) معمولا فرم خاص خودش را دارد!",
+      "examples": [
+        { "de": "Er sagt, sie hätten keine Zeit. (نه: sie haben)", "fa": "او می‌گوید آنها وقت نداشته باشند." },
+        { "de": "Sie behauptet, wir wären zu spät. (نه: wir sind = wir seien)", "fa": "او ادعا می‌کند ما دیر کرده باشیم." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "چرا گاهی باید از Konjunktiv II به جای Konjunktiv I استفاده کنیم؟",
+      "options": [
+        "چون Konjunktiv II زیباتر است",
+        "چون فرم Konjunktiv I با Indikativ یکسان است",
+        "چون Konjunktiv I وجود ندارد",
+        "چون همیشه باید Konjunktiv II بنویسیم"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! وقتی فرم‌ها یکسان باشند، برای وضوح از Konjunktiv II استفاده می‌کنیم.", "incorrect": "هدف اصلی جلوگیری از ابهام است: وقتی Konj. I = Indikativ، از Konj. II استفاده می‌کنیم." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام فرم معمولا نیاز به جایگزینی ندارد؟",
+      "options": [
+        "wir haben",
+        "sie (جمع) kommen",
+        "er sage",
+        "Sie (رسمی) sagen"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "دقیقا! er sage فرم متفاوتی از er sagt دارد، پس نیازی به جایگزینی نیست.", "incorrect": "فرم‌های سوم شخص مفرد (er/sie/es) معمولا متفاوت هستند: er sagt ≠ er sage" }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "eindeutig", "fa": "واضح، صریح" },
+      "example": { "text": { "de": "Die Verwendung von Konjunktiv II macht den Satz eindeutig.", "fa": "استفاده از وجه التزامی دو جمله را واضح می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "eindeutig",
+      "translation": "واضح",
+      "syllables": ["ein", "deu", "tig"],
+      "distractors": ["an", "doi", "tag"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "ersetzen", "fa": "جایگزین کردن" },
+      "example": { "text": { "de": "Man kann Konjunktiv I durch Konjunktiv II ersetzen.", "fa": "می‌توان التزامی یک را با التزامی دو جایگزین کرد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "ersetzen",
+      "translation": "جایگزین کردن",
+      "syllables": ["er", "set", "zen"],
+      "distractors": ["ar", "sot", "zan"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "die Klarheit", "fa": "وضوح، شفافیت" },
+      "example": { "text": { "de": "Für mehr Klarheit verwendet man die Ersatzform.", "fa": "برای وضوح بیشتر از فرم جایگزین استفاده می‌شود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Klarheit",
+      "translation": "وضوح",
+      "syllables": ["Klar", "heit"],
+      "distractors": ["Klor", "hat"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "فرم جایگزین درست را انتخاب کنید (Konjunktiv II به جای Konjunktiv I)",
+      "sentence": "Der Reporter sagt, die Politiker {0} keine Lösung gefunden. (haben → Ersatzform)",
+      "options": ["haben", "hätten", "hatten", "gehabt"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "چون 'sie haben' در Konjunktiv I و Indikativ یکسان است، از Konjunktiv II (hätten) استفاده می‌کنیم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "فرم جایگزین درست را انتخاب کنید",
+      "sentence": "Er behauptet, wir {0} zu spät gekommen. (sein → Ersatzform)",
+      "options": ["sind", "seien", "wären", "waren"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "'wir seien' کمتر رایج است و 'wir sind' با Indikativ یکسان است، پس از 'wir wären' (Konj. II) استفاده می‌کنیم." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "würde + Infinitiv به عنوان جایگزین",
+      "content": "**würde + Infinitiv**\n\nیک گزینه دیگر برای جایگزینی: **würde + Infinitiv**\n\nاین فرم خیلی رایج است، مخصوصا در زبان محاوره:\n\n| Konjunktiv I | Konjunktiv II | würde + Infinitiv |\n|--------------|---------------|-------------------|\n| sie kommen (=Ind.) | sie kämen | sie **würden kommen** |\n| wir gehen (=Ind.) | wir gingen | wir **würden gehen** |\n| sie arbeiten (=Ind.) | sie arbeiteten | sie **würden arbeiten** |\n\n**کدام را انتخاب کنیم؟**\n\n1. **فعل‌های پرکاربرد:** Konjunktiv II ترجیح داده می‌شود\n   - hätten, wären, kämen, gäben\n\n2. **فعل‌های کمتر رایج:** würde + Infinitiv\n   - würden arbeiten, würden studieren\n\n**توجه:** 'würde' + sein/haben به ندرت استفاده می‌شود!\n- نگویید: würde sein ❌ → بگویید: wäre ✓\n- نگویید: würde haben ❌ → بگویید: hätte ✓",
+      "examples": [
+        { "de": "Er sagt, sie würden morgen kommen.", "fa": "او می‌گوید آنها فردا می‌آیند (نقل قول غیرمستقیم)." },
+        { "de": "Sie meint, wir würden das nicht verstehen.", "fa": "او فکر می‌کند ما این را نمی‌فهمیم." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "فرم جایگزین مناسب را انتخاب کنید",
+      "sentence": "Die Zeitung schreibt, die Arbeiter {0} streiken. (wollen → Ersatzform)",
+      "options": ["wollen", "wollten", "würden wollen", "wollend"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "'sie wollen' در Indikativ و Konj. I یکسان است. از Konjunktiv II (wollten) استفاده می‌کنیم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "فرم جایگزین مناسب را انتخاب کنید",
+      "sentence": "Er berichtet, sie {0} bald nach Hause gehen. (werden → Ersatzform)",
+      "options": ["werden", "würden", "wurden", "werdend"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "'sie werden' در Indikativ و Konj. I یکسان است. از 'würden' (Konj. II) استفاده می‌کنیم." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در دفتر روزنامه",
+      "scene": {
+        "location": "office",
+        "description": { "de": "In der Redaktion einer Zeitung", "fa": "در تحریریه یک روزنامه" }
+      },
+      "lines": [
+        { "speaker": "Chefredakteur", "text": { "de": "Wie schreiben wir dieses Zitat in indirekter Rede?", "fa": "این نقل قول را چطور به صورت غیرمستقیم بنویسیم؟" }, "mood": "neutral" },
+        { "speaker": "Journalist", "text": { "de": "Der Minister sagte: 'Wir haben keine Fehler gemacht.'", "fa": "وزیر گفت: «ما اشتباه نکرده‌ایم.»" }, "mood": "neutral" },
+        { "speaker": "Chefredakteur", "text": { "de": "Hmm, 'sie haben' ist im Konjunktiv I identisch mit dem Indikativ.", "fa": "هوم، 'sie haben' در التزامی یک با اخباری یکسان است." }, "mood": "confused" },
+        { "speaker": "Journalist", "text": { "de": "Dann benutzen wir die Ersatzform: 'Er sagte, sie hätten keine Fehler gemacht.'", "fa": "پس از فرم جایگزین استفاده می‌کنیم: «او گفت آنها اشتباه نکرده باشند.»" }, "mood": "happy" },
+        { "speaker": "Chefredakteur", "text": { "de": "Genau! So ist der Satz eindeutig als indirekte Rede erkennbar.", "fa": "دقیقا! اینطوری جمله به وضوح به عنوان نقل قول غیرمستقیم شناخته می‌شود." }, "mood": "excited" }
+      ],
+      "questions": [
+        { "question": "چرا 'sie haben' مشکل‌ساز است؟", "options": ["چون تلفظ سختی دارد", "چون با Indikativ یکسان است", "چون گرامر غلط است"], "correctIndex": 1, "explanation": "'sie haben' در Konjunktiv I و Indikativ یکسان است، پس ابهام ایجاد می‌کند." },
+        { "question": "فرم جایگزین چه بود؟", "options": ["sie haben", "sie hatten", "sie hätten"], "correctIndex": 2, "explanation": "از Konjunktiv II (hätten) به عنوان فرم جایگزین استفاده شد." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله با Ersatzform را مرتب کنید",
+      "words": ["hätten", "sagt,", "Er", "Zeit", "keine", "sie"],
+      "correctOrder": [2, 1, 5, 0, 4, 3],
+      "correctSentence": { "de": "Er sagt, sie hätten keine Zeit", "fa": "او می‌گوید آنها وقت نداشته باشند" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله با Ersatzform را مرتب کنید",
+      "words": ["wären", "behauptet,", "Sie", "wir", "spät", "zu"],
+      "correctOrder": [2, 1, 3, 0, 5, 4],
+      "correctSentence": { "de": "Sie behauptet, wir wären zu spät", "fa": "او ادعا می‌کند ما دیر کرده باشیم" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله با würde + Infinitiv را مرتب کنید",
+      "words": ["kommen", "meint,", "Er", "würden", "morgen", "sie"],
+      "correctOrder": [2, 1, 5, 3, 4, 0],
+      "correctSentence": { "de": "Er meint, sie würden morgen kommen", "fa": "او فکر می‌کند آنها فردا می‌آیند" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "فرم‌های er/sie/es در Konjunktiv I معمولا با Indikativ متفاوت هستند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! er sage ≠ er sagt، بنابراین معمولا نیاز به جایگزینی نیست." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "می‌توان گفت: Er sagt, sie würde sein müde. (او می‌گوید او خسته باشد)",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! با sein از 'wäre' استفاده می‌کنیم، نه 'würde sein'. صحیح: Er sagt, sie wäre müde." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "'wir haben' در Konjunktiv I و Indikativ یکسان است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! 'wir haben' در هر دو حالت یکسان است، بنابراین از 'wir hätten' (Konj. II) استفاده می‌کنیم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "فرم درست Konjunktiv را انتخاب کنید",
+      "sentence": "Die Nachricht berichtet, der Präsident {0} eine Rede gehalten. (haben → سوم شخص مفرد)",
+      "options": ["hat", "habe", "hätte", "haben"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "برای سوم شخص مفرد (er/sie/es)، Konjunktiv I (habe) متفاوت از Indikativ (hat) است، پس نیازی به جایگزینی نیست." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "فرم درست را انتخاب کنید",
+      "sentence": "Man sagt, die Experten {0} sich nicht einig. (sein → جمع)",
+      "options": ["sind", "seien", "wären", "waren"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "'sie seien' کمتر رایج است. برای وضوح بیشتر از Konjunktiv II (wären) استفاده می‌کنیم." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "درس گرامر در کلاس",
+      "scene": {
+        "location": "classroom",
+        "description": { "de": "Im Deutschkurs für Fortgeschrittene", "fa": "در کلاس آلمانی سطح پیشرفته" }
+      },
+      "lines": [
+        { "speaker": "Lehrerin", "text": { "de": "Heute lernen wir die Ersatzregel für Konjunktiv I.", "fa": "امروز قاعده جایگزینی برای التزامی یک را یاد می‌گیریم." }, "mood": "neutral" },
+        { "speaker": "Student", "text": { "de": "Warum brauchen wir überhaupt eine Ersatzform?", "fa": "اصلا چرا به فرم جایگزین نیاز داریم؟" }, "mood": "confused" },
+        { "speaker": "Lehrerin", "text": { "de": "Weil manche Formen identisch mit dem Indikativ sind!", "fa": "چون بعضی فرم‌ها با اخباری یکسان هستند!" }, "mood": "happy" },
+        { "speaker": "Studentin", "text": { "de": "Also wenn 'sie haben' gleich aussieht, nehmen wir 'sie hätten'?", "fa": "پس وقتی 'sie haben' یکسان به نظر می‌رسد، از 'sie hätten' استفاده می‌کنیم؟" }, "mood": "surprised" },
+        { "speaker": "Lehrerin", "text": { "de": "Genau! Oder 'sie würden haben', aber 'hätten' ist eleganter.", "fa": "دقیقا! یا 'sie würden haben'، اما 'hätten' زیباتر است." }, "mood": "excited" }
+      ],
+      "questions": [
+        { "question": "چرا به فرم جایگزین نیاز داریم؟", "options": ["چون Konjunktiv I خیلی سخت است", "چون بعضی فرم‌ها با Indikativ یکسان هستند", "چون Konjunktiv II زیباتر است"], "correctIndex": 1, "explanation": "وقتی فرم‌های Konjunktiv I با Indikativ یکسان باشند، ابهام ایجاد می‌شود." },
+        { "question": "کدام فرم 'زیباتر' (eleganter) توصیف شد؟", "options": ["würden haben", "hätten", "haben"], "correctIndex": 1, "explanation": "معلم گفت 'hätten' زیباتر از 'würden haben' است." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "فرم‌های Konjunktiv I را با فرم‌های جایگزین (Konjunktiv II) جفت کنید",
+      "items": [
+        { "id": "i1", "text": "sie haben (Konj. I = Ind.)" },
+        { "id": "i2", "text": "wir kommen (Konj. I = Ind.)" },
+        { "id": "i3", "text": "sie sind (Konj. I = Ind.)" },
+        { "id": "i4", "text": "wir gehen (Konj. I = Ind.)" },
+        { "id": "i5", "text": "sie wollen (Konj. I = Ind.)" },
+        { "id": "i6", "text": "wir können (Konj. I = Ind.)" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "sie hätten" },
+        { "id": "m2", "text": "wir kämen" },
+        { "id": "m3", "text": "sie wären" },
+        { "id": "m4", "text": "wir gingen / würden gehen" },
+        { "id": "m5", "text": "sie wollten" },
+        { "id": "m6", "text": "wir könnten" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "او می‌گوید آنها پول نداشته باشند. (نقل قول غیرمستقیم)",
+      "sentenceTemplate": "Er sagt, sie {0} kein Geld.",
+      "options": ["haben", "hätten", "hatten", "gehabt"],
+      "correctAnswers": [1],
+      "correctTranslation": { "de": "Er sagt, sie hätten kein Geld.", "fa": "او می‌گوید آنها پول نداشته باشند." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "روزنامه می‌نویسد کارگران اعتصاب خواهند کرد. (نقل قول غیرمستقیم)",
+      "sentenceTemplate": "Die Zeitung schreibt, die Arbeiter {0} streiken.",
+      "options": ["werden", "würden", "wurden", "werdend"],
+      "correctAnswers": [1],
+      "correctTranslation": { "de": "Die Zeitung schreibt, die Arbeiter würden streiken.", "fa": "روزنامه می‌نویسد کارگران اعتصاب خواهند کرد." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: گزارش خبری",
+      "passage": {
+        "de": "Der Regierungssprecher gab heute eine Pressekonferenz. Er sagte, die Minister hätten lange diskutiert. Sie wären sich am Ende einig geworden. Die Opposition behauptet jedoch, die Regierung würde die Wahrheit verschweigen. Ein Journalist fragte, ob die Bürger mehr Informationen bekommen würden. Der Sprecher antwortete, man werde bald mehr mitteilen.\n\nInteressant ist die Wahl der Verbformen: Bei 'sie haben' und 'sie sind' wurden die Ersatzformen 'hätten' und 'wären' verwendet. Bei 'man wird' war keine Ersatzform nötig, da 'man werde' eindeutig Konjunktiv I ist.",
+        "fa": "سخنگوی دولت امروز یک کنفرانس مطبوعاتی داد. او گفت وزرا طولانی بحث کرده باشند. آنها در نهایت به توافق رسیده باشند. اما اپوزیسیون ادعا می‌کند دولت حقیقت را پنهان می‌کند. یک خبرنگار پرسید آیا شهروندان اطلاعات بیشتری دریافت خواهند کرد. سخنگو پاسخ داد به زودی اطلاعات بیشتری اعلام خواهد شد.\n\nانتخاب فرم‌های فعلی جالب است: برای 'sie haben' و 'sie sind' از فرم‌های جایگزین 'hätten' و 'wären' استفاده شد. برای 'man wird' نیازی به فرم جایگزین نبود، چون 'man werde' به وضوح التزامی یک است."
+      },
+      "questions": [
+        { "question": "چرا از 'hätten' به جای 'haben' استفاده شد؟", "options": ["چون زیباتر است", "چون 'sie haben' با Indikativ یکسان است", "چون اشتباه تایپی بود"], "correctIndex": 1, "explanation": "'sie haben' در Konjunktiv I و Indikativ یکسان است، پس از Ersatzform (hätten) استفاده شد." },
+        { "question": "چرا برای 'man werde' نیازی به جایگزینی نبود؟", "options": ["چون 'man werde' با 'man wird' متفاوت است", "چون 'werden' استثنا است", "چون سخنگو اشتباه کرد"], "correctIndex": 0, "explanation": "'man werde' (Konj. I) با 'man wird' (Indikativ) متفاوت است، پس واضح است." },
+        { "question": "اپوزیسیون از کدام فرم استفاده کرد؟", "options": ["würde verschweigen", "verschweige", "verschwiegen hätte"], "correctIndex": 0, "explanation": "در متن آمده: 'die Regierung würde die Wahrheit verschweigen' - از würde + Infinitiv استفاده شد." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die Pressekonferenz", "fa": "کنفرانس مطبوعاتی" },
+      "characters": ["Anna", "Markus"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Anna arbeitet als Journalistin. Sie muss einen Artikel über die Pressekonferenz schreiben.", "fa": "آنا به عنوان خبرنگار کار می‌کند. او باید مقاله‌ای درباره کنفرانس مطبوعاتی بنویسد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Markus, hilf mir bitte! Wie schreibe ich das in indirekter Rede?", "fa": "مارکوس، لطفا کمکم کن! این را چطور به صورت غیرمستقیم بنویسم؟" },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Markus",
+          "text": { "de": "Was hat der Minister gesagt?", "fa": "وزیر چه گفت؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Er sagte: 'Wir haben das Problem gelöst.'", "fa": "او گفت: «ما مشکل را حل کرده‌ایم.»" },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "چه مشکلی با 'wir haben' در نقل قول غیرمستقیم وجود دارد؟",
+          "options": ["هیچ مشکلی نیست", "با Indikativ یکسان است", "تلفظ سختی دارد"],
+          "correctIndex": 1,
+          "explanation": "'wir haben' در Konjunktiv I و Indikativ یکسان است، پس ابهام ایجاد می‌کند."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Markus",
+          "text": { "de": "Ah, 'wir haben' ist problematisch. Schreib: 'Er sagte, sie hätten das Problem gelöst.'", "fa": "آها، 'wir haben' مشکل‌ساز است. بنویس: «او گفت آنها مشکل را حل کرده باشند.»" },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Und wenn er sagt: 'Der Plan wird funktionieren'?", "fa": "و اگر او بگوید: «این برنامه جواب خواهد داد»؟" },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Markus",
+          "text": { "de": "'Er werde' ist eindeutig Konjunktiv I. Also: 'Er sagte, der Plan werde funktionieren.'", "fa": "'er werde' به وضوح التزامی یک است. پس: «او گفت برنامه جواب خواهد داد.»" },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "چرا برای 'der Plan werde funktionieren' نیاز به جایگزینی نبود؟",
+          "options": ["چون 'werde' با 'wird' متفاوت است", "چون برنامه مهم بود", "چون مارکوس اشتباه کرد"],
+          "correctIndex": 0,
+          "explanation": "'werde' (Konj. I) با 'wird' (Indikativ) متفاوت است، پس واضح و بدون ابهام است."
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Anna versteht jetzt die Ersatzregel und schreibt ihren Artikel.", "fa": "آنا حالا قاعده جایگزینی را می‌فهمد و مقاله‌اش را می‌نویسد." }
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: آیا جایگزینی لازم است؟",
+      "instruction": "کدام فرم نیاز به جایگزینی دارد؟",
+      "questions": [
+        { "prompt": "er sage", "left": "نیاز ندارد", "right": "نیاز دارد", "correctSide": "left" },
+        { "prompt": "sie haben", "left": "نیاز ندارد", "right": "نیاز دارد", "correctSide": "right" },
+        { "prompt": "es gebe", "left": "نیاز ندارد", "right": "نیاز دارد", "correctSide": "left" },
+        { "prompt": "wir kommen", "left": "نیاز ندارد", "right": "نیاز دارد", "correctSide": "right" },
+        { "prompt": "sie komme", "left": "نیاز ندارد", "right": "نیاز دارد", "correctSide": "left" },
+        { "prompt": "Sie (رسمی) sagen", "left": "نیاز ندارد", "right": "نیاز دارد", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Er sagt, sie hätten keine Zeit.",
+      "translation": "او می‌گوید آنها وقت نداشته باشند."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Sie behauptet, wir wären zu spät gekommen.",
+      "translation": "او ادعا می‌کند ما دیر آمده باشیم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Die Zeitung schreibt, die Politiker würden streiten.",
+      "translation": "روزنامه می‌نویسد سیاستمداران دعوا می‌کنند."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: فرم‌های جایگزین!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "Ersatzform برای 'sie haben':", "options": ["hätten", "hatten"], "correctAnswerIndex": 0 },
+        { "question": "Ersatzform برای 'wir sind':", "options": ["waren", "wären"], "correctAnswerIndex": 1 },
+        { "question": "آیا 'er sage' نیاز به جایگزینی دارد؟", "options": ["بله", "خیر"], "correctAnswerIndex": 1 },
+        { "question": "کدام زیباتر است برای haben؟", "options": ["hätten", "würden haben"], "correctAnswerIndex": 0 },
+        { "question": "Ersatzform برای 'sie kommen':", "options": ["kämen", "gekommen"], "correctAnswerIndex": 0 },
+        { "question": "'würde sein' درست است؟", "options": ["بله", "خیر، wäre"], "correctAnswerIndex": 1 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: فرم اصلی و جایگزین",
+      "pairs": [
+        { "de": "sie haben (Konj. I)", "fa": "sie hätten (Ersatz)" },
+        { "de": "wir kommen (Konj. I)", "fa": "wir kämen (Ersatz)" },
+        { "de": "sie sind (Konj. I)", "fa": "sie wären (Ersatz)" },
+        { "de": "wir gehen (Konj. I)", "fa": "wir gingen (Ersatz)" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات مربوط به این درس را پیدا کنید",
+      "targetWords": ["Ersatzform", "identisch", "Verwechslung", "eindeutig", "ersetzen", "Klarheit"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "die Ersatzform", "fa": "فرم جایگزین", "options": ["فرم اصلی", "فرم جایگزین", "فرم گذشته", "فرم آینده"], "correctIndex": 1 },
+        { "de": "identisch", "fa": "یکسان", "options": ["متفاوت", "یکسان", "بهتر", "بدتر"], "correctIndex": 1 },
+        { "de": "eindeutig", "fa": "واضح", "options": ["مبهم", "پیچیده", "واضح", "سخت"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما یاد گرفتید چه زمانی از فرم‌های جایگزین (Ersatzformen) در Konjunktiv I استفاده کنید!",
+      "keyPoints": [
+        "اگر Konjunktiv I = Indikativ، از Konjunktiv II استفاده کنید",
+        "sie haben (Ind. = Konj. I) → sie hätten (Ersatzform)",
+        "wir kommen (Ind. = Konj. I) → wir kämen (Ersatzform)",
+        "فرم‌های er/sie/es معمولا مشکل ندارند: er sage ≠ er sagt",
+        "würde + Infinitiv هم گزینه است، اما hätten/wären زیباتر هستند",
+        "نگویید: würde sein/haben - بگویید: wäre/hätte",
+        "این قاعده برای وضوح در نقل قول غیرمستقیم ضروری است"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "die Ersatzform", "fa": "فرم جایگزین" } },
+        { "word": { "de": "identisch", "fa": "یکسان، مشابه" } },
+        { "word": { "de": "die Verwechslung", "fa": "اشتباه گرفتن، خلط" } },
+        { "word": { "de": "eindeutig", "fa": "واضح، صریح" } },
+        { "word": { "de": "ersetzen", "fa": "جایگزین کردن" } },
+        { "word": { "de": "die Klarheit", "fa": "وضوح، شفافیت" } }
+      ]
+    }
+  ]
+}
