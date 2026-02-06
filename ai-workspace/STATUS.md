@@ -8,7 +8,7 @@
 
 **Create B1 lessons - lesson by lesson, wait for user test after each**
 
-Current: `B2-M13` (Finalsätze) - **MODULE COMPLETE - READY FOR USER TEST**
+Current: `B2-M14` (Konditionalsätze ohne wenn) - **MODULE COMPLETE - READY FOR USER TEST**
 
 ---
 
@@ -27,7 +27,7 @@ Current: `B2-M13` (Finalsätze) - **MODULE COMPLETE - READY FOR USER TEST**
 | A1 | 14 | 56+ | Complete |
 | A2 | 18 | 72 | **Complete** ✅ |
 | B1 | 20 | 80 | **Complete** ✅ |
-| B2 | 13 | 52 | Module 13 complete |
+| B2 | 14 | 56 | Module 14 complete |
 
 ### A2 Completion (2026-02-05)
 
@@ -320,8 +320,9 @@ Current: `B2-M13` (Finalsätze) - **MODULE COMPLETE - READY FOR USER TEST**
 | M11 | Konzessivsätze | 4/4 | ✅ Complete |
 | M12 | Konsekutivsätze | 4/4 | ✅ Complete |
 | M13 | Finalsätze | 4/4 | ✅ Complete |
+| M14 | Konditionalsätze ohne wenn | 4/4 | ✅ Complete |
 
-**Total B2: 52 lessons**
+**Total B2: 56 lessons**
 
 ---
 
@@ -465,6 +466,17 @@ Current: `B2-M13` (Finalsätze) - **MODULE COMPLETE - READY FOR USER TEST**
 | B2-M13-L02 | um...zu (in order to - same subject) | ✅ Complete |
 | B2-M13-L03 | zwecks, zum Zweck, mit dem Ziel (formal purpose) | ✅ Complete |
 | B2-M13-L04 | Zusammenfassung | ✅ Complete |
+
+---
+
+## B2 Module 14: Konditionalsätze ohne wenn (Conditionals without wenn)
+
+| Lesson | Title | Status |
+|--------|-------|--------|
+| B2-M14-L01 | Inversion (Hätte ich..., würde ich...) | ✅ Complete |
+| B2-M14-L02 | falls, sofern, vorausgesetzt (alternative conjunctions) | ✅ Complete |
+| B2-M14-L03 | es sei denn, andernfalls, sonst (negative conditions) | ✅ Complete |
+| B2-M14-L04 | Zusammenfassung | ✅ Complete |
 
 ---
 

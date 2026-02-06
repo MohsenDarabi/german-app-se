@@ -1,0 +1,509 @@
+{
+  "id": "B2-M14-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Konditionalsätze ohne wenn: Inversion", "fa": "جملات شرطی بدون wenn: وارونگی" },
+  "description": "یاد بگیرید چگونه جملات شرطی را بدون حرف ربط «wenn» و با استفاده از وارونگی (فعل در جایگاه اول) بسازید. این ساختار رسمی‌تر و ادبی‌تر از استفاده از «wenn» است و در نوشتار و زبان رسمی کاربرد دارد.",
+  "level": "B2",
+  "module": 14,
+  "lessonNumber": 1,
+  "totalSteps": 45,
+  "estimatedMinutes": 45,
+  "vocabulary": [
+    { "de": "die Inversion", "fa": "وارونگی، جابجایی", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "die Bedingung", "fa": "شرط، شرایط", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "der Konjunktiv", "fa": "وجه التزامی", "grammar": { "pos": "noun", "gender": "masculine" } },
+    { "de": "vorausgesetzt", "fa": "به شرط اینکه", "grammar": { "pos": "conjunction" } },
+    { "de": "angenommen", "fa": "فرض کنیم که", "grammar": { "pos": "conjunction" } },
+    { "de": "gesetzt den Fall", "fa": "در صورتی که", "grammar": { "pos": "phrase" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "جملات شرطی بدون wenn: وارونگی",
+      "content": "**Konditionalsätze ohne wenn: Inversion**\n\nدر آلمانی می‌توان جملات شرطی را **بدون استفاده از wenn** ساخت. در این حالت، **فعل به جایگاه اول** می‌آید و جای فاعل و فعل عوض می‌شود.\n\n**ساختار:**\n> **فعل** + فاعل + ... , جمله اصلی\n\n**مقایسه:**\n> ✅ **Wenn** ich Zeit **hätte**, würde ich dir helfen.\n> ✅ **Hätte** ich Zeit, würde ich dir helfen.\n\nهر دو جمله یک معنی دارند: «اگر وقت داشتم، کمکت می‌کردم.»\n\n**نکته مهم برای فارسی‌زبانان:**\n- این ساختار در فارسی معادل مستقیم ندارد\n- در فارسی همیشه «اگر» لازم است، اما در آلمانی می‌توان آن را حذف کرد\n- این سبک **رسمی‌تر** و **ادبی‌تر** است\n- بیشتر در نوشتار، سخنرانی‌ها و متون رسمی دیده می‌شود",
+      "examples": [
+        { "de": "Hätte ich mehr Geld, würde ich ein Haus kaufen.", "fa": "اگر پول بیشتری داشتم، خانه‌ای می‌خریدم." },
+        { "de": "Wäre ich du, würde ich das nicht tun.", "fa": "اگر جای تو بودم، این کار را نمی‌کردم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "die Inversion", "fa": "وارونگی، جابجایی" },
+      "example": { "text": { "de": "Bei der Inversion steht das Verb an erster Stelle.", "fa": "در وارونگی، فعل در جایگاه اول قرار می‌گیرد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Inversion",
+      "translation": "وارونگی، جابجایی",
+      "syllables": ["In", "ver", "si", "on"],
+      "distractors": ["Im", "var", "su", "an"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "die Bedingung", "fa": "شرط، شرایط" },
+      "example": { "text": { "de": "Unter einer Bedingung helfe ich dir.", "fa": "تحت یک شرط کمکت می‌کنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Bedingung",
+      "translation": "شرط، شرایط",
+      "syllables": ["Be", "din", "gung"],
+      "distractors": ["Ba", "dun", "gang", "dong"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "der Konjunktiv", "fa": "وجه التزامی" },
+      "example": { "text": { "de": "Im Konjunktiv II drückt man irreale Situationen aus.", "fa": "در وجه التزامی دوم، موقعیت‌های غیرواقعی بیان می‌شوند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Konjunktiv",
+      "translation": "وجه التزامی",
+      "syllables": ["Kon", "junk", "tiv"],
+      "distractors": ["Kan", "jonk", "tav", "jen"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "انواع جملات شرطی با وارونگی",
+      "content": "**وارونگی با Konjunktiv II (غیرواقعی)**\n\nبیشترین کاربرد وارونگی با **Konjunktiv II** است برای بیان شرایط غیرواقعی:\n\n**ساختار:**\n> **Hätte/Wäre/Könnte** + فاعل + ... , würde + Infinitiv\n\n**مثال‌ها:**\n> **Hätte** ich Zeit, **würde** ich kommen.\n> اگر وقت داشتم، می‌آمدم.\n\n> **Wäre** das Wetter besser, **würden** wir spazieren gehen.\n> اگر هوا بهتر بود، قدم می‌زدیم.\n\n> **Könnte** ich fliegen, **würde** ich nach Paris reisen.\n> اگر می‌توانستم پرواز کنم، به پاریس سفر می‌کردم.\n\n**جدول افعال پرکاربرد:**\n\n| haben | sein | können | wissen |\n|-------|------|--------|--------|\n| hätte | wäre | könnte | wüsste |\n\n**نکته:** این ساختار بیشتر در زبان نوشتاری و رسمی کاربرد دارد.",
+      "examples": [
+        { "de": "Wüsste ich die Antwort, würde ich sie dir sagen.", "fa": "اگر جواب را می‌دانستم، بهت می‌گفتم." },
+        { "de": "Könnte ich Deutsch sprechen, würde ich in Berlin arbeiten.", "fa": "اگر می‌توانستم آلمانی صحبت کنم، در برلین کار می‌کردم." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله با وارونگی (بدون wenn) نوشته شده است؟",
+      "options": [
+        "Wenn ich reich wäre, würde ich reisen.",
+        "Wäre ich reich, würde ich reisen.",
+        "Ich wäre reich, wenn ich reisen würde.",
+        "Ich würde reisen, wenn ich reich wäre."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! در این جمله فعل «wäre» در ابتدا آمده و wenn حذف شده است.", "incorrect": "در ساختار وارونگی، فعل در ابتدای جمله شرطی قرار می‌گیرد و wenn حذف می‌شود." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "جمله «Hätte ich mehr Zeit, würde ich Sport machen» به چه معناست؟",
+      "options": [
+        "وقت بیشتری داشتم و ورزش کردم.",
+        "اگر وقت بیشتری داشتم، ورزش می‌کردم.",
+        "وقت کمی دارم اما ورزش می‌کنم.",
+        "زمانی که وقت داشتم، ورزش کردم."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "درست! این جمله شرطی غیرواقعی است: شرطی که در حال حاضر برقرار نیست.", "incorrect": "این یک جمله شرطی با Konjunktiv II است که شرایط غیرواقعی را بیان می‌کند." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "vorausgesetzt", "fa": "به شرط اینکه" },
+      "example": { "text": { "de": "Ich komme mit, vorausgesetzt, dass ich Zeit habe.", "fa": "همراهی می‌کنم، به شرط اینکه وقت داشته باشم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "vorausgesetzt",
+      "translation": "به شرط اینکه",
+      "syllables": ["vo", "raus", "ge", "setzt"],
+      "distractors": ["va", "rois", "ga", "satzt"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "angenommen", "fa": "فرض کنیم که" },
+      "example": { "text": { "de": "Angenommen, du hättest eine Million Euro, was würdest du tun?", "fa": "فرض کنیم یک میلیون یورو داشتی، چه می‌کردی؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "angenommen",
+      "translation": "فرض کنیم که",
+      "syllables": ["an", "ge", "nom", "men"],
+      "distractors": ["un", "ga", "nam", "mun"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "gesetzt den Fall", "fa": "در صورتی که" },
+      "example": { "text": { "de": "Gesetzt den Fall, es regnet, bleiben wir zu Hause.", "fa": "در صورتی که باران ببارد، در خانه می‌مانیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Fall",
+      "translation": "مورد، صورت",
+      "syllables": ["Fall"],
+      "distractors": ["Fell", "Full", "Fill", "Foll"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "وارونگی با زمان گذشته و حال",
+      "content": "**وارونگی در زمان‌های مختلف**\n\n**۱. با Plusquamperfekt (گذشته دور):**\n> **Hätte** ich das **gewusst**, wäre ich nicht gekommen.\n> اگر این را می‌دانستم، نمی‌آمدم.\n\n**۲. با Konjunktiv II ساده (حال/آینده):**\n> **Wäre** ich gesund, **ginge** ich zur Arbeit.\n> اگر سالم بودم، سر کار می‌رفتم.\n\n**۳. با افعال کمکی:**\n> **Sollte** es regnen, bleiben wir drinnen.\n> اگر باران ببارد، داخل می‌مانیم.\n\n**نکته:** ساختار با «sollte» برای شرایط ممکن در آینده استفاده می‌شود و کمتر رسمی است.\n\n**جدول مقایسه:**\n\n| نوع | مثال | کاربرد |\n|-----|------|--------|\n| Hätte/Wäre | غیرواقعی حال | رایج‌ترین |\n| Hätte + Partizip II | غیرواقعی گذشته | برای گذشته |\n| Sollte | احتمالی آینده | کمتر رسمی |",
+      "examples": [
+        { "de": "Hätten wir das früher erfahren, hätten wir anders gehandelt.", "fa": "اگر زودتر می‌فهمیدیم، طور دیگری عمل می‌کردیم." },
+        { "de": "Sollte jemand anrufen, nimm bitte die Nachricht auf.", "fa": "اگر کسی زنگ زد، لطفاً پیغام بگیر." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جمله شرطی را با وارونگی کامل کنید",
+      "sentence": "{0} ich reich, würde ich eine Weltreise machen.",
+      "options": ["Wäre", "Wenn", "Hätte", "Bin"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Wäre درست است. «اگر ثروتمند بودم» با فعل sein در Konjunktiv II ساخته می‌شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "فعل مناسب را انتخاب کنید",
+      "sentence": "{0} sie früher aufgestanden, hätte sie den Zug nicht verpasst.",
+      "options": ["Wäre", "Hätte", "Würde", "Konnte"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Wäre درست است. فعل aufstehen با sein صرف می‌شود، پس از «wäre» استفاده می‌کنیم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Könnte ich fliegen, {0} ich in die Karibik reisen.",
+      "options": ["würde", "werde", "will", "kann"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "würde درست است. در جمله اصلی شرطی غیرواقعی، از würde + Infinitiv استفاده می‌کنیم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله شرطی را با وارونگی مرتب کنید",
+      "words": ["Hätte", "ich", "Zeit", "würde", "dir", "helfen", "ich"],
+      "correctOrder": [0, 1, 2, 3, 6, 4, 5],
+      "correctSentence": { "de": "Hätte ich Zeit, würde ich dir helfen.", "fa": "اگر وقت داشتم، کمکت می‌کردم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را به ترتیب درست مرتب کنید",
+      "words": ["Wäre", "besser", "das", "Wetter", "gingen", "spazieren", "wir"],
+      "correctOrder": [0, 2, 3, 1, 4, 6, 5],
+      "correctSentence": { "de": "Wäre das Wetter besser, gingen wir spazieren.", "fa": "اگر هوا بهتر بود، قدم می‌زدیم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله شرطی بدون wenn را بسازید",
+      "words": ["Wüsste", "die", "Antwort", "würde", "ich", "sagen", "ich", "sie", "dir"],
+      "correctOrder": [0, 4, 1, 2, 3, 6, 7, 8, 5],
+      "correctSentence": { "de": "Wüsste ich die Antwort, würde ich sie dir sagen.", "fa": "اگر جواب را می‌دانستم، بهت می‌گفتم." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جملات شرطی با وارونگی، فعل در جایگاه اول قرار می‌گیرد.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! در وارونگی، فعل به ابتدای جمله می‌آید و wenn حذف می‌شود." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "ساختار وارونگی فقط با Konjunktiv II استفاده می‌شود و با زمان واقعی کاربرد ندارد.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! وارونگی با «sollte» برای شرایط واقعی و ممکن در آینده هم استفاده می‌شود." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "ساختار وارونگی رسمی‌تر و ادبی‌تر از استفاده از wenn است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! این ساختار بیشتر در نوشتار رسمی و متون ادبی دیده می‌شود." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "گفتگو در دفتر کار",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Zwei Kollegen sprechen über eine verpasste Gelegenheit.", "fa": "دو همکار درباره یک فرصت از دست رفته صحبت می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Herr Weber", "text": { "de": "Hätten wir das Angebot früher bekommen, hätten wir es angenommen.", "fa": "اگر پیشنهاد را زودتر دریافت کرده بودیم، قبولش می‌کردیم." }, "mood": "sad" },
+        { "speaker": "Frau Klein", "text": { "de": "Ja, das stimmt. Wäre die E-Mail nicht im Spam gelandet, hätten wir reagiert.", "fa": "بله، درسته. اگر ایمیل در اسپم نمی‌افتاد، واکنش نشان می‌دادیم." }, "mood": "confused" },
+        { "speaker": "Herr Weber", "text": { "de": "Könnten wir die Zeit zurückdrehen, würden wir den Spam-Ordner öfter checken.", "fa": "اگر می‌توانستیم زمان را به عقب برگردانیم، پوشه اسپم را بیشتر چک می‌کردیم." }, "mood": "neutral" },
+        { "speaker": "Frau Klein", "text": { "de": "Sollte so etwas noch einmal passieren, werde ich den Chef sofort informieren.", "fa": "اگر چنین چیزی دوباره اتفاق بیفتد، فوراً رئیس را مطلع می‌کنم." }, "mood": "neutral" },
+        { "speaker": "Herr Weber", "text": { "de": "Gute Idee. Wären wir vorsichtiger gewesen, wäre das nicht passiert.", "fa": "فکر خوبیه. اگر محتاط‌تر بودیم، این اتفاق نمی‌افتاد." }, "mood": "sad" }
+      ],
+      "questions": [
+        { "question": "چرا پیشنهاد را قبول نکردند؟", "options": ["پیشنهاد بد بود", "ایمیل در اسپم افتاده بود", "رئیس مخالف بود"], "correctIndex": 1, "explanation": "خانم کلاین گفت: Wäre die E-Mail nicht im Spam gelandet..." },
+        { "question": "خانم کلاین در آینده چه کار می‌کند؟", "options": ["ایمیل‌ها را حذف می‌کند", "رئیس را فوراً مطلع می‌کند", "شرکت را ترک می‌کند"], "correctIndex": 1, "explanation": "خانم کلاین گفت: werde ich den Chef sofort informieren." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جمله شرطی گذشته را کامل کنید",
+      "sentence": "{0} wir das gewusst, wären wir nicht gegangen.",
+      "options": ["Hätten", "Haben", "Wären", "Werden"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Hätten درست است. برای شرایط غیرواقعی گذشته با فعل haben از «hätten» استفاده می‌کنیم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "فعل درست را انتخاب کنید",
+      "sentence": "Sollte es morgen {0}, bleiben wir zu Hause.",
+      "options": ["regnen", "geregnet", "regnete", "regne"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "regnen (مصدر) درست است. بعد از sollte فعل به صورت مصدر می‌آید." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Wäre ich an deiner {0}, würde ich vorsichtiger sein.",
+      "options": ["Stelle", "Platz", "Ort", "Position"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Stelle درست است. عبارت «an deiner Stelle» یعنی «جای تو»." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "گفتگو در دانشگاه",
+      "scene": {
+        "location": "university",
+        "description": { "de": "Zwei Studenten sprechen über ihre Zukunftspläne.", "fa": "دو دانشجو درباره برنامه‌های آینده‌شان صحبت می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Mina", "text": { "de": "Hätte ich mehr Zeit, würde ich ein Auslandssemester machen.", "fa": "اگر وقت بیشتری داشتم، یک ترم تحصیلی خارج از کشور می‌رفتم." }, "mood": "neutral" },
+        { "speaker": "Sami", "text": { "de": "Wäre Geld kein Problem, würde ich sofort nach Japan gehen.", "fa": "اگر پول مشکل نبود، فوراً به ژاپن می‌رفتم." }, "mood": "excited" },
+        { "speaker": "Mina", "text": { "de": "Könntest du Japanisch, wäre das einfacher.", "fa": "اگر ژاپنی بلد بودی، راحت‌تر بود." }, "mood": "happy" },
+        { "speaker": "Sami", "text": { "de": "Stimmt! Wüsste ich die Sprache, hätte ich keine Angst.", "fa": "درسته! اگر زبان را بلد بودم، نمی‌ترسیدم." }, "mood": "neutral" },
+        { "speaker": "Mina", "text": { "de": "Sollte ich ein Stipendium bekommen, fliege ich nach Deutschland.", "fa": "اگر بورسیه بگیرم، به آلمان پرواز می‌کنم." }, "mood": "excited" }
+      ],
+      "questions": [
+        { "question": "سامی کجا می‌خواهد برود؟", "options": ["آلمان", "ژاپن", "فرانسه"], "correctIndex": 1, "explanation": "سامی گفت: würde ich sofort nach Japan gehen." },
+        { "question": "مینا در صورت گرفتن بورسیه کجا می‌رود؟", "options": ["ژاپن", "آلمان", "انگلیس"], "correctIndex": 1, "explanation": "مینا گفت: fliege ich nach Deutschland." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "جملات با wenn را با معادل وارونگی‌شان جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Wenn ich Zeit hätte" },
+        { "id": "i2", "text": "Wenn er reich wäre" },
+        { "id": "i3", "text": "Wenn sie kommen könnte" },
+        { "id": "i4", "text": "Wenn wir das wüssten" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "Hätte ich Zeit" },
+        { "id": "m2", "text": "Wäre er reich" },
+        { "id": "m3", "text": "Könnte sie kommen" },
+        { "id": "m4", "text": "Wüssten wir das" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "اگر پول بیشتری داشتم، یک ماشین جدید می‌خریدم.",
+      "sentenceTemplate": "{0} ich mehr Geld, {1} ich ein neues Auto kaufen.",
+      "options": ["Hätte", "Habe", "würde", "werde", "Wäre", "könnte"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Hätte ich mehr Geld, würde ich ein neues Auto kaufen.", "fa": "اگر پول بیشتری داشتم، یک ماشین جدید می‌خریدم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "اگر جای تو بودم، این کار را نمی‌کردم.",
+      "sentenceTemplate": "{0} ich du, {1} ich das nicht tun.",
+      "options": ["Wäre", "Hätte", "würde", "werde", "Könnte", "kann"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Wäre ich du, würde ich das nicht tun.", "fa": "اگر جای تو بودم، این کار را نمی‌کردم." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: تصمیمات زندگی",
+      "passage": {
+        "de": "Herr Ahmadi denkt oft über sein Leben nach. Hätte er in seiner Jugend mehr gelernt, wäre er heute vielleicht Professor. Wäre er mutiger gewesen, hätte er sein eigenes Unternehmen gegründet.\n\nAber er bereut nichts. Wäre sein Leben anders verlaufen, hätte er seine Frau nie kennengelernt. Hätte er in einer anderen Stadt gelebt, wären seine Kinder woanders aufgewachsen.\n\nSollte er die Chance bekommen, etwas zu ändern, würde er trotzdem nichts anders machen. Denn wäre alles anders, wäre er nicht der Mensch, der er heute ist.",
+        "fa": "آقای احمدی اغلب به زندگی‌اش فکر می‌کند. اگر در جوانی بیشتر درس خوانده بود، شاید امروز استاد بود. اگر شجاع‌تر بود، شرکت خودش را تأسیس کرده بود.\n\nاما هیچ چیز را پشیمان نیست. اگر زندگی‌اش متفاوت بود، هرگز همسرش را نمی‌شناخت. اگر در شهر دیگری زندگی کرده بود، بچه‌هایش جای دیگری بزرگ شده بودند.\n\nاگر فرصتی برای تغییر پیدا کند، با این حال هیچ چیز را تغییر نمی‌دهد. چون اگر همه چیز متفاوت بود، آن انسانی که امروز هست نبود."
+      },
+      "questions": [
+        { "question": "اگر آقای احمدی بیشتر درس خوانده بود، چه می‌شد؟", "options": ["مهندس می‌شد", "استاد می‌شد", "پزشک می‌شد"], "correctIndex": 1, "explanation": "در متن گفته شده: wäre er heute vielleicht Professor." },
+        { "question": "چرا آقای احمدی چیزی را تغییر نمی‌دهد؟", "options": ["چون نمی‌تواند", "چون دیگر دیر است", "چون دیگر آن انسان نمی‌شد که هست"], "correctIndex": 2, "explanation": "در متن گفته شده: wäre er nicht der Mensch, der er heute ist." },
+        { "question": "اگر در شهر دیگری زندگی کرده بود، چه اتفاقی می‌افتاد؟", "options": ["بیشتر کار می‌کرد", "بچه‌ها جای دیگر بزرگ می‌شدند", "همسرش را زودتر می‌شناخت"], "correctIndex": 1, "explanation": "در متن گفته شده: wären seine Kinder woanders aufgewachsen." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die verpasste Chance", "fa": "فرصت از دست رفته" },
+      "characters": ["Maryam", "Reza"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Maryam und Reza sitzen in einem Café und sprechen über die Vergangenheit.", "fa": "مریم و رضا در کافه نشسته‌اند و درباره گذشته صحبت می‌کنند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Maryam",
+          "text": { "de": "Hätte ich das Jobangebot angenommen, wäre ich jetzt in Berlin.", "fa": "اگر پیشنهاد شغلی را قبول کرده بودم، الان در برلین بودم." },
+          "mood": "sad"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Reza",
+          "text": { "de": "Wärst du nach Berlin gegangen, hätten wir uns nie kennengelernt!", "fa": "اگر به برلین رفته بودی، ما هیچوقت همدیگر را نمی‌شناختیم!" },
+          "mood": "surprised"
+        },
+        {
+          "type": "question",
+          "question": "چرا مریم به برلین نرفت؟",
+          "options": ["پیشنهاد را قبول نکرد", "ویزا نگرفت", "پول نداشت"],
+          "correctIndex": 0,
+          "explanation": "مریم گفت: Hätte ich das Jobangebot angenommen - یعنی پیشنهاد را قبول نکرد."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Maryam",
+          "text": { "de": "Stimmt. Wäre ich gegangen, wäre mein Leben ganz anders.", "fa": "درسته. اگر رفته بودم، زندگی‌ام کاملاً متفاوت بود." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Reza",
+          "text": { "de": "Könntest du die Zeit zurückdrehen, würdest du anders entscheiden?", "fa": "اگر می‌توانستی زمان را برگردانی، تصمیم دیگری می‌گرفتی؟" },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Maryam",
+          "text": { "de": "Nein. Hätte ich Berlin gewählt, hätte ich dich nicht.", "fa": "نه. اگر برلین را انتخاب کرده بودم، تو را نداشتم." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "مریم در نهایت از تصمیمش پشیمان است؟",
+          "options": ["بله، بسیار پشیمان است", "نه، چون رضا را دارد", "معلوم نیست"],
+          "correctIndex": 1,
+          "explanation": "مریم گفت: Hätte ich Berlin gewählt, hätte ich dich nicht - یعنی خوشحال است که رضا را دارد."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: وارونگی",
+      "instruction": "پاسخ درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "Hätte ich Zeit = ?", "left": "وقت داشتم", "right": "اگر وقت داشتم", "correctSide": "right" },
+        { "prompt": "کدام رسمی‌تر است؟", "left": "Wenn ich...", "right": "Hätte ich...", "correctSide": "right" },
+        { "prompt": "Wäre ich du = ?", "left": "اگر جای تو بودم", "right": "من تو هستم", "correctSide": "left" },
+        { "prompt": "در وارونگی، فعل کجاست؟", "left": "جایگاه اول", "right": "جایگاه دوم", "correctSide": "left" },
+        { "prompt": "die Inversion یعنی؟", "left": "وارونگی", "right": "شرط", "correctSide": "left" },
+        { "prompt": "Sollte es regnen = ?", "left": "اگر باران ببارد", "right": "چون باران می‌بارد", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Hätte ich mehr Zeit, würde ich mehr Sport treiben.",
+      "translation": "اگر وقت بیشتری داشتم، بیشتر ورزش می‌کردم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Wäre ich reich, würde ich um die Welt reisen.",
+      "translation": "اگر ثروتمند بودم، دور دنیا سفر می‌کردم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Könnten wir fliegen, bräuchten wir kein Auto.",
+      "translation": "اگر می‌توانستیم پرواز کنیم، به ماشین نیاز نداشتیم."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: جملات شرطی با وارونگی",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "Hätte ich یعنی؟", "options": ["اگر داشتم", "داشتم"], "correctAnswerIndex": 0 },
+        { "question": "Wäre er یعنی؟", "options": ["اگر او بود", "او بود"], "correctAnswerIndex": 0 },
+        { "question": "فعل در وارونگی کجاست؟", "options": ["اول", "دوم"], "correctAnswerIndex": 0 },
+        { "question": "die Bedingung یعنی؟", "options": ["شرط", "نتیجه"], "correctAnswerIndex": 0 },
+        { "question": "کدام رسمی‌تر است؟", "options": ["وارونگی", "با wenn"], "correctAnswerIndex": 0 },
+        { "question": "Sollte es regnen چه نوع شرطی است؟", "options": ["احتمالی آینده", "غیرواقعی گذشته"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: واژگان وارونگی",
+      "pairs": [
+        { "de": "die Inversion", "fa": "وارونگی" },
+        { "de": "die Bedingung", "fa": "شرط" },
+        { "de": "der Konjunktiv", "fa": "وجه التزامی" },
+        { "de": "vorausgesetzt", "fa": "به شرط اینکه" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات مربوط به وارونگی",
+      "instruction": "کلمات آلمانی مربوط به این درس را پیدا کنید",
+      "targetWords": ["Inversion", "Bedingung", "Konjunktiv", "vorausgesetzt", "angenommen"],
+      "gridSize": { "rows": 10, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "die Inversion", "fa": "وارونگی، جابجایی", "options": ["نتیجه", "وارونگی، جابجایی", "علت", "شباهت"], "correctIndex": 1 },
+        { "de": "die Bedingung", "fa": "شرط، شرایط", "options": ["نظر", "شرط، شرایط", "قانون", "روش"], "correctIndex": 1 },
+        { "de": "vorausgesetzt", "fa": "به شرط اینکه", "options": ["بدون اینکه", "به شرط اینکه", "قبل از اینکه", "بعد از اینکه"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما جملات شرطی بدون wenn با وارونگی را یاد گرفتید!",
+      "keyPoints": [
+        "وارونگی: فعل به جایگاه اول می‌آید و wenn حذف می‌شود",
+        "ساختار: Hätte/Wäre/Könnte + فاعل + ... , würde + Infinitiv",
+        "این سبک رسمی‌تر و ادبی‌تر از wenn است",
+        "با Konjunktiv II برای شرایط غیرواقعی استفاده می‌شود",
+        "با sollte برای شرایط احتمالی آینده کاربرد دارد",
+        "die Inversion = وارونگی، die Bedingung = شرط"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "die Inversion", "fa": "وارونگی، جابجایی" } },
+        { "word": { "de": "die Bedingung", "fa": "شرط، شرایط" } },
+        { "word": { "de": "der Konjunktiv", "fa": "وجه التزامی" } },
+        { "word": { "de": "vorausgesetzt", "fa": "به شرط اینکه" } },
+        { "word": { "de": "angenommen", "fa": "فرض کنیم که" } },
+        { "word": { "de": "gesetzt den Fall", "fa": "در صورتی که" } }
+      ]
+    }
+  ]
+}

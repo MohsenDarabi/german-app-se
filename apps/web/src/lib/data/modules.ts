@@ -2062,6 +2062,37 @@ const DE_FA_B2_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/B2/B2-M13-L04"
       }
     ]
+  },
+  {
+    id: "module-14",
+    title: "بخش ۱۴: Konditionalsätze ohne wenn",
+    level: "B2",
+    lessons: [
+      {
+        id: "B2-M14-L01",
+        title: "Inversion - جابجایی فعل",
+        description: "یاد بگیرید جملات شرطی با جابجایی فعل بدون wenn.",
+        path: "/learn/de-fa/B2/B2-M14-L01"
+      },
+      {
+        id: "B2-M14-L02",
+        title: "falls, sofern, vorausgesetzt - حروف ربط جایگزین",
+        description: "یاد بگیرید حروف ربط شرطی: falls، sofern، vorausgesetzt dass.",
+        path: "/learn/de-fa/B2/B2-M14-L02"
+      },
+      {
+        id: "B2-M14-L03",
+        title: "es sei denn, andernfalls, sonst - شرط منفی",
+        description: "یاد بگیرید عبارات شرط منفی: es sei denn، andernfalls، sonst.",
+        path: "/learn/de-fa/B2/B2-M14-L03"
+      },
+      {
+        id: "B2-M14-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل جملات شرطی بدون wenn: جابجایی، حروف ربط و شرط منفی.",
+        path: "/learn/de-fa/B2/B2-M14-L04"
+      }
+    ]
   }
 ];
 

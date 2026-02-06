@@ -1,0 +1,531 @@
+{
+  "id": "B2-M14-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Konditionalsätze ohne wenn: Zusammenfassung", "fa": "جملات شرطی بدون wenn: جمع‌بندی" },
+  "description": "مرور جامع تمام ساختارهای شرطی بدون wenn در آلمانی: معکوس‌سازی (Hätte ich..., würde ich...) با فعل در ابتدا، حروف ربط جایگزین falls، sofern، vorausgesetzt dass با فعل در انتها، و شرط‌های منفی es sei denn، andernfalls، sonst. تمرکز بر تفاوت ترتیب کلمات، سطوح رسمیت، و تفاوت‌های معنایی بین عبارات مختلف.",
+  "level": "B2",
+  "module": 14,
+  "lessonNumber": 4,
+  "totalSteps": 45,
+  "estimatedMinutes": 45,
+  "vocabulary": [
+    { "de": "falls", "fa": "در صورتی که، اگر", "grammar": { "pos": "conjunction" } },
+    { "de": "sofern", "fa": "به شرطی که، مشروط به", "grammar": { "pos": "conjunction" } },
+    { "de": "vorausgesetzt, dass", "fa": "به فرض اینکه، با فرض اینکه", "grammar": { "pos": "phrase" } },
+    { "de": "es sei denn", "fa": "مگر اینکه", "grammar": { "pos": "phrase" } },
+    { "de": "andernfalls", "fa": "در غیر این صورت", "grammar": { "pos": "adverb" } },
+    { "de": "sonst", "fa": "وگرنه", "grammar": { "pos": "adverb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "مرور کلی: جملات شرطی بدون wenn",
+      "content": "**Konditionalsätze ohne wenn = جملات شرطی بدون wenn**\n\nدر این ماژول سه روش اصلی برای بیان شرط بدون «wenn» یاد گرفتیم:\n\n**1. معکوس‌سازی (Inversion) - فعل در ابتدا:**\n- **Hätte ich Zeit, würde ich kommen.**\n- فعل کمکی در ابتدای جمله (بدون wenn)\n- سطح: کتبی، ادبی، رسمی\n\n**2. حروف ربط جایگزین - فعل در انتها:**\n- **falls** = در صورتی که\n- **sofern** = به شرطی که (رسمی)\n- **vorausgesetzt, dass** = به فرض اینکه\n- ساختار: مثل wenn، فعل به انتها می‌رود\n\n**3. شرط‌های منفی:**\n- **es sei denn** = مگر اینکه (استثنا)\n- **andernfalls** = در غیر این صورت (قید)\n- **sonst** = وگرنه (محاوره‌ای)\n\n**نکته کلیدی برای فارسی‌زبانان:**\nترتیب کلمات مهم است! معکوس‌سازی و حروف ربط ساختار متفاوت دارند.",
+      "examples": [
+        { "de": "Hätte ich Geld, würde ich reisen. (معکوس‌سازی: فعل ابتدا)", "fa": "اگر پول داشتم، سفر می‌کردم." },
+        { "de": "Falls es regnet, bleibe ich zu Hause. (falls: فعل آخر)", "fa": "در صورتی که باران ببارد، خانه می‌مانم." },
+        { "de": "Ich komme, es sei denn, ich bin krank. (استثنا)", "fa": "می‌آیم، مگر اینکه مریض باشم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "falls", "fa": "در صورتی که، اگر" },
+      "example": { "text": { "de": "Falls du Fragen hast, ruf mich an.", "fa": "در صورتی که سوالی داری، زنگ بزن." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "falls",
+      "translation": "در صورتی که، اگر",
+      "syllables": ["falls"],
+      "distractors": ["fells", "folls", "fulls"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "sofern", "fa": "به شرطی که، مشروط به" },
+      "example": { "text": { "de": "Sofern das Wetter gut ist, gehen wir wandern.", "fa": "به شرطی که هوا خوب باشد، پیاده‌روی می‌رویم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "sofern",
+      "translation": "به شرطی که، مشروط به",
+      "syllables": ["so", "fern"],
+      "distractors": ["sa", "forn", "su", "farn"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "vorausgesetzt, dass", "fa": "به فرض اینکه، با فرض اینکه" },
+      "example": { "text": { "de": "Vorausgesetzt, dass alle einverstanden sind, beginnen wir.", "fa": "به فرض اینکه همه موافق باشند، شروع می‌کنیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "vorausgesetzt",
+      "translation": "به فرض اینکه",
+      "syllables": ["vo", "raus", "ge", "setzt"],
+      "distractors": ["va", "rous", "ga", "sotzt"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "معکوس‌سازی در مقابل حروف ربط: تفاوت ترتیب کلمات",
+      "content": "**تفاوت کلیدی: ترتیب کلمات**\n\n**1. معکوس‌سازی (بدون wenn):**\n```\nفعل کمکی + فاعل + ... + فعل اصلی, جمله نتیجه\n```\n> **Hätte** ich Zeit, würde ich helfen.\n> فعل «Hätte» در ابتدا، بدون wenn\n\n**2. حروف ربط (falls, sofern, vorausgesetzt dass):**\n```\nحرف ربط + فاعل + ... + فعل (آخر)\n```\n> **Falls** ich Zeit **habe**, helfe ich.\n> فعل «habe» در انتها مثل جمله فرعی عادی\n\n**جدول مقایسه:**\n\n| ساختار | مثال | جایگاه فعل |\n|--------|------|------------|\n| معکوس‌سازی | **Hätte** ich... | فعل در ابتدا |\n| falls/sofern | Falls ich... **habe** | فعل در انتها |\n| wenn | Wenn ich... **habe** | فعل در انتها |\n\n**نکته:** معکوس‌سازی رسمی‌تر و ادبی‌تر است.",
+      "examples": [
+        { "de": "Wäre ich reich, würde ich eine Weltreise machen. (معکوس‌سازی)", "fa": "اگر ثروتمند بودم، سفر دور دنیا می‌کردم." },
+        { "de": "Falls ich reich bin, mache ich eine Weltreise. (falls)", "fa": "در صورتی که ثروتمند باشم، سفر دور دنیا می‌کنم." },
+        { "de": "Sofern das Budget reicht, kaufen wir es. (sofern)", "fa": "به شرطی که بودجه کافی باشد، می‌خریم." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله از نظر ترتیب کلمات صحیح است؟",
+      "options": [
+        "Hätte ich Zeit habe, würde ich kommen.",
+        "Hätte ich Zeit, würde ich kommen.",
+        "Falls hätte ich Zeit, würde ich kommen.",
+        "Wenn hätte ich Zeit, würde ich kommen."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! در معکوس‌سازی، فعل کمکی در ابتدا قرار می‌گیرد و wenn حذف می‌شود.", "incorrect": "در معکوس‌سازی، فقط فعل کمکی در ابتدا می‌آید و wenn حذف می‌شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "ساختار مناسب را انتخاب کنید (حرف ربط جایگزین wenn)",
+      "sentence": "{0} du morgen kommst, rufe ich dich an.",
+      "options": ["Falls", "Hätte", "Wäre", "Sei"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Falls = در صورتی که. این حرف ربط مثل wenn عمل می‌کند و فعل به انتها می‌رود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "ساختار مناسب را انتخاب کنید (رسمی)",
+      "sentence": "{0} alle Bedingungen erfüllt sind, erhalten Sie die Genehmigung.",
+      "options": ["Falls", "Sofern", "Sonst", "Wäre"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Sofern = به شرطی که. این حرف ربط رسمی‌تر از falls است و در متون اداری استفاده می‌شود." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "es sei denn", "fa": "مگر اینکه" },
+      "example": { "text": { "de": "Ich komme pünktlich, es sei denn, der Zug hat Verspätung.", "fa": "به موقع می‌آیم، مگر اینکه قطار تأخیر داشته باشد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "andernfalls",
+      "translation": "در غیر این صورت",
+      "syllables": ["an", "dern", "falls"],
+      "distractors": ["on", "dorn", "fells", "un"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "andernfalls", "fa": "در غیر این صورت" },
+      "example": { "text": { "de": "Bezahlen Sie rechtzeitig, andernfalls erheben wir Gebühren.", "fa": "به موقع پرداخت کنید، در غیر این صورت هزینه اضافی دریافت می‌کنیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "sonst",
+      "translation": "وگرنه",
+      "syllables": ["sonst"],
+      "distractors": ["sanst", "sunst", "sost"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "sonst", "fa": "وگرنه" },
+      "example": { "text": { "de": "Beeil dich, sonst verpasst du den Bus!", "fa": "عجله کن، وگرنه اتوبوس را از دست می‌دهی!" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Bedingung",
+      "translation": "شرط",
+      "syllables": ["Be", "din", "gung"],
+      "distractors": ["Ba", "don", "gang", "dun"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "شرط‌های منفی: es sei denn, andernfalls, sonst",
+      "content": "**سه روش برای بیان شرط منفی/استثنا:**\n\n**1. es sei denn = مگر اینکه (استثنا)**\n```\nجمله اصلی, es sei denn + جمله فرعی (فعل صرف‌شده آخر یا اول)\n```\n> Ich komme, **es sei denn**, ich bin krank.\n> می‌آیم، **مگر اینکه** مریض باشم.\n\n**2. andernfalls = در غیر این صورت (قید رسمی)**\n```\nجمله اول. Andernfalls + فعل + فاعل...\n```\n> Bezahlen Sie pünktlich. **Andernfalls** erheben wir Gebühren.\n> به موقع پرداخت کنید. **در غیر این صورت** هزینه اضافی دریافت می‌کنیم.\n\n**3. sonst = وگرنه (محاوره‌ای)**\n```\nجمله امری/اول, sonst + جمله نتیجه\n```\n> Beeil dich, **sonst** verpasst du den Bus!\n> عجله کن، **وگرنه** اتوبوس را از دست می‌دهی!\n\n**سطوح رسمیت:**\n| عبارت | سطح | کاربرد |\n|-------|-----|--------|\n| es sei denn | رسمی/ادبی | نوشتاری |\n| andernfalls | رسمی | اداری |\n| sonst | محاوره‌ای | روزمره |",
+      "examples": [
+        { "de": "Das Konzert findet statt, es sei denn, es regnet stark. (رسمی)", "fa": "کنسرت برگزار می‌شود، مگر اینکه باران شدید ببارد." },
+        { "de": "Melden Sie sich an. Andernfalls können Sie nicht teilnehmen. (اداری)", "fa": "ثبت‌نام کنید. در غیر این صورت نمی‌توانید شرکت کنید." },
+        { "de": "Iss dein Gemüse, sonst gibt es keinen Nachtisch! (محاوره‌ای)", "fa": "سبزیجاتت را بخور، وگرنه دسر نیست!" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام عبارت برای متن اداری مناسب‌تر است؟",
+      "options": [
+        "sonst",
+        "oder",
+        "andernfalls",
+        "aber"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "درست! andernfalls رسمی‌تر است و در متون اداری استفاده می‌شود.", "incorrect": "andernfalls = در غیر این صورت، مناسب متون رسمی و اداری است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "عبارت مناسب را انتخاب کنید (استثنا)",
+      "sentence": "Wir fahren morgen ans Meer, {0} es schneit.",
+      "options": ["falls", "es sei denn", "andernfalls", "sofern"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "es sei denn = مگر اینکه. فردا به دریا می‌رویم، مگر اینکه برف ببارد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "عبارت مناسب را انتخاب کنید (محاوره‌ای)",
+      "sentence": "Zieh eine Jacke an, {0} erkältest du dich!",
+      "options": ["andernfalls", "es sei denn", "sonst", "sofern"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "sonst = وگرنه. این عبارت محاوره‌ای است. کاپشن بپوش، وگرنه سرما می‌خوری!" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "جلسه برنامه‌ریزی",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Besprechungsraum, Projektplanung", "fa": "در اتاق جلسه، برنامه‌ریزی پروژه" }
+      },
+      "lines": [
+        { "speaker": "Frau Weber", "text": { "de": "Sofern das Budget genehmigt wird, können wir nächste Woche beginnen.", "fa": "به شرطی که بودجه تصویب شود، می‌توانیم هفته آینده شروع کنیم." }, "mood": "neutral" },
+        { "speaker": "Herr Braun", "text": { "de": "Wäre das Budget größer, könnten wir mehr Personal einstellen.", "fa": "اگر بودجه بیشتر بود، می‌توانستیم نیروی بیشتری استخدام کنیم." }, "mood": "neutral" },
+        { "speaker": "Frau Weber", "text": { "de": "Das stimmt. Andernfalls müssen wir mit dem aktuellen Team arbeiten.", "fa": "درست است. در غیر این صورت باید با تیم فعلی کار کنیم." }, "mood": "neutral" },
+        { "speaker": "Herr Braun", "text": { "de": "Vorausgesetzt, dass alle Überstunden machen können, schaffen wir es.", "fa": "به فرض اینکه همه بتوانند اضافه‌کاری کنند، موفق می‌شویم." }, "mood": "excited" },
+        { "speaker": "Frau Weber", "text": { "de": "Falls jemand ausfällt, müssen wir den Zeitplan anpassen.", "fa": "در صورتی که کسی نتواند، باید برنامه زمانی را تغییر دهیم." }, "mood": "confused" }
+      ],
+      "questions": [
+        { "question": "خانم وبر با «sofern» چه شرطی بیان می‌کند؟", "options": ["تصویب بودجه", "استخدام نیرو", "اضافه‌کاری"], "correctIndex": 0, "explanation": "sofern = به شرطی که. شرط شروع هفته آینده: تصویب بودجه." },
+        { "question": "آقای براون با «Wäre...» چه نوع جمله‌ای ساخته؟", "options": ["شرطی واقعی", "شرطی غیرواقعی (معکوس‌سازی)", "جمله امری"], "correctIndex": 1, "explanation": "Wäre das Budget größer = معکوس‌سازی. این یک شرط غیرواقعی است (بودجه بیشتر نیست)." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را مرتب کنید (معکوس‌سازی)",
+      "words": ["würde ich helfen", "Hätte ich", "Zeit,"],
+      "correctOrder": [1, 2, 0],
+      "correctSentence": { "de": "Hätte ich Zeit, würde ich helfen.", "fa": "اگر وقت داشتم، کمک می‌کردم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را مرتب کنید (falls - فعل آخر)",
+      "words": ["rufst du mich an", "Falls du", "Hilfe brauchst,"],
+      "correctOrder": [1, 2, 0],
+      "correctSentence": { "de": "Falls du Hilfe brauchst, rufst du mich an.", "fa": "در صورتی که کمک نیاز داری، به من زنگ بزن." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله را مرتب کنید (es sei denn)",
+      "words": ["es regnet", "Wir gehen spazieren,", "es sei denn,"],
+      "correctOrder": [1, 2, 0],
+      "correctSentence": { "de": "Wir gehen spazieren, es sei denn, es regnet.", "fa": "پیاده‌روی می‌رویم، مگر اینکه باران ببارد." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در معکوس‌سازی (Inversion)، فعل کمکی در ابتدای جمله قرار می‌گیرد و wenn حذف می‌شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! مثال: Hätte ich Zeit... (نه: Wenn hätte ich...)" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "falls و sofern هر دو به یک معنی هستند و تفاوتی در سطح رسمیت ندارند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! sofern رسمی‌تر از falls است و بیشتر در متون اداری استفاده می‌شود." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "sonst و andernfalls هر دو «در غیر این صورت» معنی می‌دهند، ولی sonst محاوره‌ای‌تر است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! sonst = وگرنه (محاوره‌ای)، andernfalls = در غیر این صورت (رسمی)." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "ساختار مناسب را انتخاب کنید (شرط رسمی)",
+      "sentence": "{0} alle Dokumente vollständig sind, wird der Antrag bearbeitet.",
+      "options": ["Sonst", "Vorausgesetzt, dass", "Andernfalls", "Wäre"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Vorausgesetzt, dass = به فرض اینکه. این ساختار رسمی برای بیان شرط در متون اداری استفاده می‌شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "ساختار مناسب را انتخاب کنید (معکوس‌سازی)",
+      "sentence": "{0} ich reich, würde ich eine Villa kaufen.",
+      "options": ["Falls", "Sofern", "Wäre", "Wenn"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "Wäre ich reich = اگر ثروتمند بودم. این معکوس‌سازی است: فعل کمکی در ابتدا، بدون wenn." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "برنامه‌ریزی سفر",
+      "scene": {
+        "location": "home",
+        "description": { "de": "Zu Hause, Urlaubsplanung", "fa": "در خانه، برنامه‌ریزی تعطیلات" }
+      },
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Wären die Flüge billiger, würden wir nach Japan fliegen.", "fa": "اگر پروازها ارزان‌تر بود، به ژاپن پرواز می‌کردیم." }, "mood": "sad" },
+        { "speaker": "Tom", "text": { "de": "Falls wir früh buchen, bekommen wir vielleicht einen Rabatt.", "fa": "در صورتی که زود رزرو کنیم، شاید تخفیف بگیریم." }, "mood": "excited" },
+        { "speaker": "Lisa", "text": { "de": "Stimmt! Aber wir müssen uns schnell entscheiden, sonst sind die Plätze weg.", "fa": "درسته! ولی باید سریع تصمیم بگیریم، وگرنه جاها تمام می‌شود." }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Ich buche heute, es sei denn, du willst noch andere Hotels vergleichen.", "fa": "امروز رزرو می‌کنم، مگر اینکه بخواهی هتل‌های دیگر را مقایسه کنی." }, "mood": "happy" },
+        { "speaker": "Lisa", "text": { "de": "Nein, ich vertraue dir. Sofern es ein gutes Frühstück gibt, bin ich zufrieden!", "fa": "نه، بهت اعتماد دارم. به شرطی که صبحانه خوب داشته باشد، راضی‌ام!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "لیزا با «Wären...» چه نوع شرطی بیان می‌کند؟", "options": ["شرط واقعی", "شرط غیرواقعی (معکوس‌سازی)", "استثنا"], "correctIndex": 1, "explanation": "Wären die Flüge billiger = معکوس‌سازی برای شرط غیرواقعی (پروازها ارزان نیستند)." },
+        { "question": "تام با «es sei denn» چه می‌گوید؟", "options": ["یک استثنا: مگر اینکه لیزا بخواهد مقایسه کند", "یک شرط واقعی", "یک نتیجه"], "correctIndex": 0, "explanation": "es sei denn = مگر اینکه. امروز رزرو می‌کنم، مگر اینکه بخواهی مقایسه کنی." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "ساختار را با کاربرد و سطح رسمیت جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Hätte ich..., würde ich..." },
+        { "id": "i2", "text": "falls" },
+        { "id": "i3", "text": "sofern" },
+        { "id": "i4", "text": "vorausgesetzt, dass" },
+        { "id": "i5", "text": "es sei denn" },
+        { "id": "i6", "text": "sonst" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "معکوس‌سازی (ادبی، رسمی)" },
+        { "id": "m2", "text": "در صورتی که (خنثی)" },
+        { "id": "m3", "text": "به شرطی که (رسمی)" },
+        { "id": "m4", "text": "به فرض اینکه (رسمی)" },
+        { "id": "m5", "text": "مگر اینکه (استثنا)" },
+        { "id": "m6", "text": "وگرنه (محاوره‌ای)" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "اگر وقت داشتم، به تو کمک می‌کردم.",
+      "sentenceTemplate": "{0} ich Zeit, {1} ich dir helfen.",
+      "options": ["Hätte", "Falls", "würde", "werde", "Wäre", "habe"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Hätte ich Zeit, würde ich dir helfen.", "fa": "اگر وقت داشتم، به تو کمک می‌کردم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "به موقع بیا، وگرنه شروع می‌کنیم.",
+      "sentenceTemplate": "Komm pünktlich, {0} fangen wir ohne dich {1}.",
+      "options": ["sonst", "andernfalls", "an", "auf", "es sei denn", "ein"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Komm pünktlich, sonst fangen wir ohne dich an.", "fa": "به موقع بیا، وگرنه بدون تو شروع می‌کنیم." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: قوانین شرکت",
+      "passage": {
+        "de": "Liebe Mitarbeiter,\n\nwir möchten Sie über die neuen Arbeitszeitregelungen informieren.\n\nSofern Sie Überstunden machen müssen, informieren Sie bitte vorher Ihren Vorgesetzten. Vorausgesetzt, dass die Überstunden genehmigt wurden, werden diese bezahlt.\n\nFalls Sie krank sind, melden Sie sich bitte bis 9 Uhr. Andernfalls gilt dies als unentschuldigtes Fehlen.\n\nWären Homeoffice-Tage möglich, würden wir diese einführen. Es sei denn, die technischen Voraussetzungen fehlen.\n\nZiehen Sie sich warm an, sonst erkälten Sie sich in den klimatisierten Räumen!\n\nMit freundlichen Grüßen",
+        "fa": "همکاران عزیز،\n\nمی‌خواهیم شما را از مقررات جدید ساعت کاری مطلع کنیم.\n\nبه شرطی که باید اضافه‌کاری کنید، لطفاً قبلاً مدیرتان را مطلع کنید. به فرض اینکه اضافه‌کاری تأیید شده باشد، پرداخت می‌شود.\n\nدر صورتی که بیمار هستید، لطفاً تا ساعت ۹ اطلاع دهید. در غیر این صورت این غیبت غیرموجه محسوب می‌شود.\n\nاگر روزهای دورکاری ممکن بود، آن‌ها را معرفی می‌کردیم. مگر اینکه پیش‌نیازهای فنی وجود نداشته باشد.\n\nلباس گرم بپوشید، وگرنه در اتاق‌های تهویه‌شده سرما می‌خورید!\n\nبا احترام"
+      },
+      "questions": [
+        { "question": "برای اضافه‌کاری چه شرطی لازم است؟", "options": ["اطلاع قبلی به مدیر", "پرداخت فوری", "تأیید همکاران"], "correctIndex": 0, "explanation": "Sofern Sie Überstunden machen müssen, informieren Sie bitte vorher Ihren Vorgesetzten." },
+        { "question": "اگر تا ساعت ۹ اطلاع ندهید چه می‌شود؟", "options": ["جریمه می‌شوید", "غیبت غیرموجه محسوب می‌شود", "مرخصی گرفته می‌شود"], "correctIndex": 1, "explanation": "Andernfalls gilt dies als unentschuldigtes Fehlen = در غیر این صورت غیبت غیرموجه محسوب می‌شود." },
+        { "question": "چرا از «Wären» استفاده شده؟", "options": ["چون دورکاری فعلاً ممکن نیست (شرط غیرواقعی)", "چون دورکاری امکان‌پذیر است", "برای سوال پرسیدن"], "correctIndex": 0, "explanation": "Wären Homeoffice-Tage möglich = معکوس‌سازی برای شرط غیرواقعی (فعلاً ممکن نیست)." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die wichtige Präsentation", "fa": "ارائه مهم" },
+      "characters": ["Anna", "Max"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Anna bereitet sich auf eine wichtige Präsentation vor.", "fa": "آنا برای یک ارائه مهم آماده می‌شود." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Hätte ich mehr Zeit gehabt, hätte ich die Präsentation besser vorbereitet.", "fa": "اگر وقت بیشتری داشتم، ارائه را بهتر آماده می‌کردم." },
+          "mood": "sad"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Max",
+          "text": { "de": "Falls du Hilfe brauchst, kann ich dir bei den Folien helfen.", "fa": "در صورتی که کمک نیاز داری، می‌توانم با اسلایدها کمکت کنم." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "آنا با «Hätte ich...» چه نوع جمله‌ای ساخته؟",
+          "options": ["شرط واقعی", "شرط غیرواقعی (معکوس‌سازی)", "جمله خبری"],
+          "correctIndex": 1,
+          "explanation": "Hätte ich mehr Zeit gehabt = معکوس‌سازی برای شرط غیرواقعی در گذشته."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Danke! Ich muss die Präsentation bis 14 Uhr fertig haben, sonst ist es zu spät.", "fa": "ممنون! باید ارائه را تا ساعت ۱۴ تمام کنم، وگرنه دیر می‌شود." },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Max",
+          "text": { "de": "Wir schaffen das! Vorausgesetzt, dass der Computer nicht abstürzt.", "fa": "موفق می‌شویم! به فرض اینکه کامپیوتر خراب نشود." },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "ماکس با «vorausgesetzt, dass» چه می‌گوید؟",
+          "options": ["یک نتیجه", "یک شرط: اگر کامپیوتر خراب نشود", "یک استثنا"],
+          "correctIndex": 1,
+          "explanation": "vorausgesetzt, dass = به فرض اینکه. شرط موفقیت: خراب نشدن کامپیوتر."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Die Präsentation ist fertig, es sei denn, ich habe etwas vergessen.", "fa": "ارائه آماده است، مگر اینکه چیزی فراموش کرده باشم." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "آنا با «es sei denn» چه بیان می‌کند؟",
+          "options": ["یک شرط واقعی", "یک استثنا: مگر اینکه فراموش کرده باشد", "یک نتیجه قطعی"],
+          "correctIndex": 1,
+          "explanation": "es sei denn = مگر اینکه. استثنا: ارائه آماده است مگر چیزی فراموش شده باشد."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: جملات شرطی بدون wenn",
+      "instruction": "ساختار درست را انتخاب کنید!",
+      "questions": [
+        { "prompt": "معکوس‌سازی = فعل کجا؟", "left": "در ابتدا", "right": "در انتها", "correctSide": "left" },
+        { "prompt": "falls/sofern = فعل کجا؟", "left": "در ابتدا", "right": "در انتها", "correctSide": "right" },
+        { "prompt": "رسمی‌تر کدام است؟", "left": "falls", "right": "sofern", "correctSide": "right" },
+        { "prompt": "محاوره‌ای‌تر کدام است؟", "left": "sonst", "right": "andernfalls", "correctSide": "left" },
+        { "prompt": "مگر اینکه = ؟", "left": "es sei denn", "right": "falls", "correctSide": "left" },
+        { "prompt": "Hätte ich Zeit, würde... = ؟", "left": "معکوس‌سازی", "right": "حرف ربط", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Hätte ich mehr Geld, würde ich eine Weltreise machen.",
+      "translation": "اگر پول بیشتری داشتم، سفر دور دنیا می‌کردم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Falls du Fragen hast, kannst du mich jederzeit anrufen.",
+      "translation": "در صورتی که سوالی داری، می‌توانی هر وقت زنگ بزنی."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Ich komme pünktlich, es sei denn, der Zug hat Verspätung.",
+      "translation": "به موقع می‌آیم، مگر اینکه قطار تأخیر داشته باشد."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: جملات شرطی بدون wenn",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "falls =", "options": ["در صورتی که", "وگرنه"], "correctAnswerIndex": 0 },
+        { "question": "sofern =", "options": ["به شرطی که (رسمی)", "مگر اینکه"], "correctAnswerIndex": 0 },
+        { "question": "es sei denn =", "options": ["مگر اینکه", "در غیر این صورت"], "correctAnswerIndex": 0 },
+        { "question": "andernfalls =", "options": ["در غیر این صورت (رسمی)", "وگرنه"], "correctAnswerIndex": 0 },
+        { "question": "sonst =", "options": ["وگرنه (محاوره‌ای)", "به فرض اینکه"], "correctAnswerIndex": 0 },
+        { "question": "Hätte ich... = ", "options": ["معکوس‌سازی", "حرف ربط"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: جملات شرطی",
+      "pairs": [
+        { "de": "falls", "fa": "در صورتی که" },
+        { "de": "sofern", "fa": "به شرطی که" },
+        { "de": "es sei denn", "fa": "مگر اینکه" },
+        { "de": "andernfalls", "fa": "در غیر این صورت" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات کلیدی جملات شرطی بدون wenn را پیدا کنید",
+      "targetWords": ["falls", "sofern", "sonst", "andernfalls", "vorausgesetzt"],
+      "gridSize": { "rows": 10, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "falls", "fa": "در صورتی که، اگر", "options": ["وگرنه", "در صورتی که", "مگر اینکه", "با اینکه"], "correctIndex": 1 },
+        { "de": "sofern", "fa": "به شرطی که، مشروط به", "options": ["وگرنه", "به شرطی که", "چون", "اگرچه"], "correctIndex": 1 },
+        { "de": "andernfalls", "fa": "در غیر این صورت", "options": ["همچنین", "در غیر این صورت", "به علاوه", "سپس"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! جمع‌بندی جملات شرطی بدون wenn تمام شد!",
+      "message": "شما تمام انواع جملات شرطی بدون wenn در آلمانی را مرور کردید!",
+      "keyPoints": [
+        "**معکوس‌سازی (Inversion):**",
+        "Hätte ich..., würde ich... = فعل در ابتدا، بدون wenn",
+        "سطح: ادبی، رسمی، کتبی",
+        "**حروف ربط جایگزین (فعل در انتها):**",
+        "falls = در صورتی که (خنثی)",
+        "sofern = به شرطی که (رسمی)",
+        "vorausgesetzt, dass = به فرض اینکه (رسمی)",
+        "**شرط‌های منفی/استثنا:**",
+        "es sei denn = مگر اینکه (استثنا)",
+        "andernfalls = در غیر این صورت (رسمی)",
+        "sonst = وگرنه (محاوره‌ای)",
+        "**تفاوت کلیدی:**",
+        "معکوس‌سازی: فعل در ابتدا",
+        "حروف ربط: فعل در انتها (مثل wenn)"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "falls", "fa": "در صورتی که، اگر" } },
+        { "word": { "de": "sofern", "fa": "به شرطی که، مشروط به" } },
+        { "word": { "de": "vorausgesetzt, dass", "fa": "به فرض اینکه، با فرض اینکه" } },
+        { "word": { "de": "es sei denn", "fa": "مگر اینکه" } },
+        { "word": { "de": "andernfalls", "fa": "در غیر این صورت" } },
+        { "word": { "de": "sonst", "fa": "وگرنه" } }
+      ]
+    }
+  ]
+}

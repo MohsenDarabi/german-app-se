@@ -1,0 +1,518 @@
+{
+  "id": "B2-M14-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Konditionalsätze ohne wenn: Negative Bedingungen", "fa": "جملات شرطی بدون wenn: شرایط منفی" },
+  "description": "یاد بگیرید چگونه از عبارات «es sei denn» (مگر اینکه)، «andernfalls» (در غیر این صورت)، «sonst» (وگرنه) و «wenn nicht» (اگر نه) برای بیان شرایط منفی و استثناها در آلمانی استفاده کنید. این ساختارها به شما امکان می‌دهند جملات شرطی پیچیده‌تری بسازید.",
+  "level": "B2",
+  "module": 14,
+  "lessonNumber": 3,
+  "totalSteps": 45,
+  "estimatedMinutes": 40,
+  "vocabulary": [
+    { "de": "es sei denn", "fa": "مگر اینکه", "grammar": { "pos": "conjunction", "clause": "subjunctive" } },
+    { "de": "andernfalls", "fa": "در غیر این صورت", "grammar": { "pos": "adverb", "position": "V2" } },
+    { "de": "sonst", "fa": "وگرنه، در غیر این صورت", "grammar": { "pos": "adverb", "position": "V2" } },
+    { "de": "wenn nicht", "fa": "اگر نه، اگر... نباشد", "grammar": { "pos": "conjunction" } },
+    { "de": "die Ausnahme", "fa": "استثنا", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "voraussetzen", "fa": "پیش‌فرض گرفتن، فرض کردن", "grammar": { "pos": "verb", "separable": false } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "شرایط منفی در آلمانی (Negative Bedingungen)",
+      "content": "**بیان شرایط منفی و استثناها**\n\nدر آلمانی چندین راه برای بیان «مگر اینکه» و «در غیر این صورت» وجود دارد:\n\n| عبارت | معنی فارسی | ساختار |\n|-------|------------|--------|\n| es sei denn | مگر اینکه | + Nebensatz (فعل آخر) |\n| andernfalls | در غیر این صورت | + Hauptsatz (فعل دوم) |\n| sonst | وگرنه، در غیر این صورت | + Hauptsatz (فعل دوم) |\n| wenn nicht | اگر نه | + Nebensatz (فعل آخر) |\n\n**نکته برای فارسی‌زبانان:**\n- «es sei denn» معادل «مگر اینکه» است و استثنایی را بیان می‌کند\n- «andernfalls» و «sonst» هر دو به معنی «در غیر این صورت» هستند، اما «andernfalls» رسمی‌تر است",
+      "examples": [
+        { "de": "Ich komme, es sei denn, es regnet.", "fa": "می‌آیم، مگر اینکه باران ببارد." },
+        { "de": "Beeil dich, sonst verpasst du den Zug.", "fa": "عجله کن، وگرنه قطار را از دست می‌دهی." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "es sei denn", "fa": "مگر اینکه" },
+      "example": { "text": { "de": "Er wird kommen, es sei denn, er ist krank.", "fa": "او خواهد آمد، مگر اینکه مریض باشد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "es sei denn",
+      "translation": "مگر اینکه",
+      "syllables": ["es", "sei", "denn"],
+      "distractors": ["ist", "sai", "dann"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "andernfalls", "fa": "در غیر این صورت" },
+      "example": { "text": { "de": "Bitte zahlen Sie rechtzeitig, andernfalls entstehen zusätzliche Kosten.", "fa": "لطفاً به موقع پرداخت کنید، در غیر این صورت هزینه‌های اضافی ایجاد می‌شود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "andernfalls",
+      "translation": "در غیر این صورت",
+      "syllables": ["an", "dern", "falls"],
+      "distractors": ["on", "dorn", "fells"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "sonst", "fa": "وگرنه، در غیر این صورت" },
+      "example": { "text": { "de": "Mach deine Hausaufgaben, sonst darfst du nicht spielen.", "fa": "تکالیفت را انجام بده، وگرنه اجازه بازی نداری." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "sonst",
+      "translation": "وگرنه",
+      "syllables": ["sonst"],
+      "distractors": ["sanst", "sunst", "seinst"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "es sei denn + Nebensatz: ساختار استثنا",
+      "content": "**es sei denn + Nebensatz**\n\n«es sei denn» یعنی «مگر اینکه» و یک استثنا به جمله اصلی اضافه می‌کند. بعد از آن جمله فرعی با فعل در آخر می‌آید:\n\n> جمله اصلی + **es sei denn,** + (فاعل) + ... + **فعل**\n\n**مثال‌ها:**\n\n| آلمانی | فارسی |\n|--------|-------|\n| Ich gehe spazieren, **es sei denn**, es **regnet**. | پیاده‌روی می‌روم، **مگر اینکه** باران **ببارد**. |\n| Sie kommt mit, **es sei denn**, sie **hat** keine Zeit. | او هم می‌آید، **مگر اینکه** وقت **نداشته باشد**. |\n| Wir fahren morgen, **es sei denn**, das Auto **ist** kaputt. | فردا می‌رویم، **مگر اینکه** ماشین **خراب باشد**. |\n\n**نکته مهم:** فعل در جمله بعد از «es sei denn» به آخر می‌رود (مثل همه جملات فرعی آلمانی).",
+      "examples": [
+        { "de": "Er schläft früh, es sei denn, er hat viel zu tun.", "fa": "او زود می‌خوابد، مگر اینکه کار زیادی داشته باشد." },
+        { "de": "Wir treffen uns um 8, es sei denn, du rufst vorher an.", "fa": "ساعت ۸ همدیگر را می‌بینیم، مگر اینکه قبلش زنگ بزنی." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله از «es sei denn» به درستی استفاده کرده است؟",
+      "options": [
+        "Es sei denn, ich komme morgen.",
+        "Ich komme morgen, es sei denn, ich bin krank.",
+        "Ich komme es sei denn morgen.",
+        "Es sei denn ich komme, morgen bin krank."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! «es sei denn» بعد از جمله اصلی می‌آید و فعل در جمله فرعی به آخر می‌رود.", "incorrect": "«es sei denn» باید بعد از جمله اصلی بیاید: Ich komme, es sei denn, ich bin krank." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "wenn nicht", "fa": "اگر نه، اگر... نباشد" },
+      "example": { "text": { "de": "Wenn nicht bald Hilfe kommt, schaffen wir es nicht.", "fa": "اگر به زودی کمک نرسد، موفق نمی‌شویم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "wenn nicht",
+      "translation": "اگر نه",
+      "syllables": ["wenn", "nicht"],
+      "distractors": ["wann", "nacht", "wein"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "die Ausnahme", "fa": "استثنا" },
+      "example": { "text": { "de": "Diese Regel gilt immer, mit einer Ausnahme.", "fa": "این قاعده همیشه صدق می‌کند، با یک استثنا." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "Ausnahme",
+      "translation": "استثنا",
+      "syllables": ["Aus", "nah", "me"],
+      "distractors": ["Eis", "neh", "ma"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "voraussetzen", "fa": "پیش‌فرض گرفتن، فرض کردن" },
+      "example": { "text": { "de": "Das setzt voraus, dass Sie Erfahrung haben.", "fa": "این فرض بر این است که شما تجربه دارید." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "voraussetzen",
+      "translation": "پیش‌فرض گرفتن",
+      "syllables": ["vo", "raus", "set", "zen"],
+      "distractors": ["va", "reis", "sot", "zon"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "andernfalls / sonst + Hauptsatz: ساختار هشدار",
+      "content": "**andernfalls / sonst + Hauptsatz**\n\n«andernfalls» و «sonst» هر دو به معنی «در غیر این صورت» هستند و با جمله اصلی (Hauptsatz) می‌آیند. فعل در جایگاه دوم قرار می‌گیرد:\n\n> جمله اول، **andernfalls/sonst** + **فعل** + ...\n\n**مقایسه:**\n\n| andernfalls (رسمی) | sonst (محاوره‌ای) |\n|-------------------|------------------|\n| متون رسمی، اداری | گفتگوی روزمره |\n| نامه‌ها، قراردادها | بین دوستان |\n\n**مثال‌ها:**\n\n| رسمی | محاوره‌ای |\n|------|----------|\n| Unterschreiben Sie heute, **andernfalls** verfällt das Angebot. | Unterschreib schnell, **sonst** ist das Angebot weg. |\n| امروز امضا کنید، **در غیر این صورت** پیشنهاد منقضی می‌شود. | سریع امضا کن، **وگرنه** پیشنهاد از بین می‌رود. |",
+      "examples": [
+        { "de": "Bitte bestätigen Sie rechtzeitig, andernfalls wird Ihre Reservierung storniert.", "fa": "لطفاً به موقع تأیید کنید، در غیر این صورت رزرو شما لغو می‌شود." },
+        { "de": "Iss dein Gemüse, sonst gibt es keinen Nachtisch.", "fa": "سبزیجاتت را بخور، وگرنه دسر نیست." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام عبارت برای متون رسمی مناسب‌تر است؟",
+      "options": [
+        "sonst",
+        "oder",
+        "andernfalls",
+        "also"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "درست! «andernfalls» رسمی‌تر از «sonst» است و در نامه‌ها و قراردادها استفاده می‌شود.", "incorrect": "«andernfalls» رسمی‌ترین گزینه برای بیان «در غیر این صورت» در متون اداری است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "عبارت مناسب را انتخاب کنید",
+      "sentence": "Ich komme zur Party, {0} ich muss arbeiten.",
+      "options": ["es sei denn", "andernfalls", "obwohl", "damit"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "«es sei denn» درست است: به مهمانی می‌آیم، مگر اینکه مجبور به کار باشم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Beeil dich, {0} verpasst du den Bus.",
+      "options": ["sonst", "es sei denn", "weil", "obwohl"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "«sonst» درست است: عجله کن، وگرنه اتوبوس را از دست می‌دهی." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Bitte zahlen Sie bis morgen, {0} entstehen Mahngebühren.",
+      "options": ["andernfalls", "es sei denn", "damit", "weil"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "«andernfalls» درست است: لطفاً تا فردا پرداخت کنید، در غیر این صورت هزینه یادآوری ایجاد می‌شود." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["nicht", "Wetter", "gehe", "es", "sei", "wird", "Ich", "besser", "denn", "aus", "das"],
+      "correctOrder": [6, 2, 0, 9, 3, 4, 8, 10, 1, 5, 7],
+      "correctSentence": { "de": "Ich gehe nicht aus, es sei denn, das Wetter wird besser.", "fa": "بیرون نمی‌روم، مگر اینکه هوا بهتر شود." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["Mach", "Hausaufgaben", "deine", "sonst", "du", "darfst", "spielen", "nicht"],
+      "correctOrder": [0, 2, 1, 3, 5, 4, 7, 6],
+      "correctSentence": { "de": "Mach deine Hausaufgaben, sonst darfst du nicht spielen.", "fa": "تکالیفت را انجام بده، وگرنه اجازه بازی نداری." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["Wir", "können", "beginnen", "wenn", "nicht", "alle", "sind", "da"],
+      "correctOrder": [0, 1, 2, 3, 4, 5, 7, 6],
+      "correctSentence": { "de": "Wir können beginnen, wenn nicht alle da sind.", "fa": "می‌توانیم شروع کنیم، اگر همه حاضر نباشند." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "بعد از «es sei denn» فعل به آخر جمله می‌رود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! «es sei denn» یک جمله فرعی (Nebensatz) می‌سازد، پس فعل به آخر می‌رود: es sei denn, er kommt." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "«andernfalls» و «sonst» دقیقاً یک معنی دارند و در همه موقعیت‌ها قابل جایگزینی هستند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! هر دو به معنی «در غیر این صورت» هستند، اما «andernfalls» رسمی‌تر است و در متون اداری استفاده می‌شود، در حالی که «sonst» محاوره‌ای‌تر است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "بعد از «sonst» فعل در جایگاه دوم قرار می‌گیرد.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! «sonst» یک قید است و با جمله اصلی (Hauptsatz) می‌آید، پس فعل در جایگاه دوم است: sonst verpasst du den Zug." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "برنامه‌ریزی سفر",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Zwei Kollegen planen eine Geschäftsreise.", "fa": "دو همکار یک سفر کاری را برنامه‌ریزی می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Herr Fischer", "text": { "de": "Wir fliegen morgen früh, es sei denn, der Flug wird gestrichen.", "fa": "فردا صبح پرواز می‌کنیم، مگر اینکه پرواز کنسل شود." }, "mood": "neutral" },
+        { "speaker": "Frau Berger", "text": { "de": "Sollten wir nicht einen Ersatzplan haben?", "fa": "آیا نباید یک برنامه جایگزین داشته باشیم؟" }, "mood": "confused" },
+        { "speaker": "Herr Fischer", "text": { "de": "Ja, andernfalls könnten wir den Termin verpassen.", "fa": "بله، در غیر این صورت ممکن است قرار را از دست بدهیم." }, "mood": "neutral" },
+        { "speaker": "Frau Berger", "text": { "de": "Ich buche einen Zug, sonst haben wir keine Alternative.", "fa": "یک قطار رزرو می‌کنم، وگرنه جایگزینی نداریم." }, "mood": "neutral" },
+        { "speaker": "Herr Fischer", "text": { "de": "Gute Idee! Wenn nicht alles klappt, haben wir wenigstens Plan B.", "fa": "ایده خوبی است! اگر همه چیز درست نشود، حداقل برنامه B داریم." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "چه چیزی ممکن است باعث تغییر برنامه شود؟", "options": ["بیماری همکار", "کنسل شدن پرواز", "تعطیلی اداره"], "correctIndex": 1, "explanation": "آقای فیشر گفت: es sei denn, der Flug wird gestrichen" },
+        { "question": "خانم برگر چه کاری انجام می‌دهد؟", "options": ["هتل رزرو می‌کند", "قطار رزرو می‌کند", "ماشین اجاره می‌کند"], "correctIndex": 1, "explanation": "خانم برگر گفت: Ich buche einen Zug, sonst haben wir keine Alternative" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "عبارت مناسب را انتخاب کنید",
+      "sentence": "Das Projekt wird erfolgreich sein, {0} es gibt unvorhergesehene Probleme.",
+      "options": ["es sei denn", "sonst", "andernfalls", "weil"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "«es sei denn» درست است: پروژه موفق خواهد بود، مگر اینکه مشکلات پیش‌بینی نشده‌ای وجود داشته باشد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Schick mir die Unterlagen heute, {0} kann ich den Bericht nicht fertigstellen.",
+      "options": ["sonst", "es sei denn", "obwohl", "damit"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "«sonst» درست است: مدارک را امروز برایم بفرست، وگرنه نمی‌توانم گزارش را تمام کنم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "{0} du dich nicht anstrengst, wirst du die Prüfung nicht bestehen.",
+      "options": ["Wenn nicht", "Es sei denn", "Andernfalls", "Sonst"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "«Wenn nicht» درست است: اگر تلاش نکنی، امتحان را قبول نمی‌شوی." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "قرارداد اجاره",
+      "scene": {
+        "location": "real estate office",
+        "description": { "de": "Ein Vermieter erklärt einem Mieter die Vertragsbedingungen.", "fa": "یک صاحب‌خانه شرایط قرارداد را برای یک مستأجر توضیح می‌دهد." }
+      },
+      "lines": [
+        { "speaker": "Vermieter", "text": { "de": "Die Miete muss bis zum 5. des Monats bezahlt werden.", "fa": "اجاره باید تا پنجم هر ماه پرداخت شود." }, "mood": "neutral" },
+        { "speaker": "Mieter", "text": { "de": "Und wenn ich mal später zahle?", "fa": "و اگر یک بار دیرتر پرداخت کنم؟" }, "mood": "confused" },
+        { "speaker": "Vermieter", "text": { "de": "Andernfalls werden Mahngebühren fällig.", "fa": "در غیر این صورت هزینه یادآوری اعمال می‌شود." }, "mood": "neutral" },
+        { "speaker": "Mieter", "text": { "de": "Das verstehe ich. Gibt es Ausnahmen?", "fa": "متوجه شدم. آیا استثنایی وجود دارد؟" }, "mood": "neutral" },
+        { "speaker": "Vermieter", "text": { "de": "Ja, es sei denn, Sie informieren mich vorher.", "fa": "بله، مگر اینکه از قبل به من اطلاع دهید." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "اجاره تا چه تاریخی باید پرداخت شود؟", "options": ["پنجم هر ماه", "اول هر ماه", "پانزدهم هر ماه"], "correctIndex": 0, "explanation": "صاحب‌خانه گفت: Die Miete muss bis zum 5. des Monats bezahlt werden" },
+        { "question": "چه زمانی استثنا وجود دارد؟", "options": ["هیچ‌وقت", "اگر از قبل اطلاع دهد", "اگر بیمار باشد"], "correctIndex": 1, "explanation": "صاحب‌خانه گفت: es sei denn, Sie informieren mich vorher" }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "عبارات آلمانی را با معانی فارسی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "es sei denn" },
+        { "id": "i2", "text": "andernfalls" },
+        { "id": "i3", "text": "sonst" },
+        { "id": "i4", "text": "wenn nicht" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "مگر اینکه" },
+        { "id": "m2", "text": "در غیر این صورت (رسمی)" },
+        { "id": "m3", "text": "وگرنه (محاوره‌ای)" },
+        { "id": "m4", "text": "اگر نه" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "فردا می‌آیم، مگر اینکه کار داشته باشم.",
+      "sentenceTemplate": "Ich komme morgen, {0} ich {1} arbeiten muss.",
+      "options": ["es sei denn", "sonst", "andernfalls", "noch", "weil", "obwohl"],
+      "correctAnswers": [0, 3],
+      "correctTranslation": { "de": "Ich komme morgen, es sei denn, ich muss noch arbeiten.", "fa": "فردا می‌آیم، مگر اینکه هنوز باید کار کنم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "عجله کن، وگرنه قطار را از دست می‌دهی.",
+      "sentenceTemplate": "Beeil dich, {0} {1} du den Zug.",
+      "options": ["sonst", "andernfalls", "verpasst", "nimmst", "es sei denn", "fährst"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Beeil dich, sonst verpasst du den Zug.", "fa": "عجله کن، وگرنه قطار را از دست می‌دهی." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: قوانین شرکت",
+      "passage": {
+        "de": "Sehr geehrte Mitarbeiter,\n\nhiermit möchten wir Sie über die neuen Richtlinien informieren.\n\nDie Arbeitszeit beginnt um 9 Uhr, es sei denn, Sie haben eine Gleitzeitvereinbarung. Andernfalls müssen Sie pünktlich erscheinen.\n\nBitte melden Sie sich krank bis spätestens 8 Uhr, sonst gilt Ihr Fehlen als unentschuldigt. Wenn nicht rechtzeitig informiert wird, werden entsprechende Maßnahmen eingeleitet.\n\nDie Mittagspause dauert 45 Minuten, es sei denn, Sie arbeiten Teilzeit. Überstunden werden vergütet, andernfalls können Sie Freizeitausgleich nehmen.\n\nMit freundlichen Grüßen,\nDie Personalabteilung",
+        "fa": "کارکنان گرامی،\n\nبدینوسیله می‌خواهیم شما را از راهنمای جدید مطلع کنیم.\n\nساعت کاری از ساعت ۹ شروع می‌شود، مگر اینکه توافق ساعت کاری شناور داشته باشید. در غیر این صورت باید به موقع حاضر شوید.\n\nلطفاً تا حداکثر ساعت ۸ بیماری خود را اعلام کنید، وگرنه غیبت شما بدون عذر محسوب می‌شود. اگر به موقع اطلاع داده نشود، اقدامات مناسب انجام خواهد شد.\n\nاستراحت ناهار ۴۵ دقیقه است، مگر اینکه پاره‌وقت کار کنید. اضافه‌کاری پرداخت می‌شود، در غیر این صورت می‌توانید مرخصی جبرانی بگیرید.\n\nبا احترام،\nبخش منابع انسانی"
+      },
+      "questions": [
+        { "question": "چه کسی می‌تواند ساعت کاری متفاوتی داشته باشد؟", "options": ["همه کارکنان", "کسانی که توافق ساعت شناور دارند", "فقط مدیران"], "correctIndex": 1, "explanation": "در نامه گفته شده: es sei denn, Sie haben eine Gleitzeitvereinbarung" },
+        { "question": "اگر به موقع بیماری اعلام نشود چه اتفاقی می‌افتد؟", "options": ["هیچ اتفاقی", "غیبت بدون عذر محسوب می‌شود", "جریمه نقدی"], "correctIndex": 1, "explanation": "در نامه گفته شده: sonst gilt Ihr Fehlen als unentschuldigt" },
+        { "question": "به جای پرداخت اضافه‌کاری چه گزینه‌ای وجود دارد؟", "options": ["هیچ گزینه‌ای", "مرخصی جبرانی", "ترفیع"], "correctIndex": 1, "explanation": "در نامه گفته شده: andernfalls können Sie Freizeitausgleich nehmen" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die verpasste Gelegenheit", "fa": "فرصت از دست رفته" },
+      "characters": ["Thomas", "Anna"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Thomas hat ein wichtiges Vorstellungsgespräch.", "fa": "توماس یک مصاحبه کاری مهم دارد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Steh früh auf, sonst kommst du zu spät!", "fa": "زود بیدار شو، وگرنه دیر می‌رسی!" },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Thomas",
+          "text": { "de": "Keine Sorge, ich schaffe das, es sei denn, der Verkehr ist schlimm.", "fa": "نگران نباش، موفق می‌شوم، مگر اینکه ترافیک بد باشد." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "آنا به توماس چه هشداری می‌دهد؟",
+          "options": ["زود بخواب", "زود بیدار شو", "زنگ بزن"],
+          "correctIndex": 1,
+          "explanation": "آنا گفت: Steh früh auf, sonst kommst du zu spät"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Am nächsten Morgen ist Thomas verschlafen.", "fa": "صبح روز بعد، توماس خواب مانده است." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Thomas",
+          "text": { "de": "Wenn nicht jetzt ein Taxi kommt, verpasse ich alles!", "fa": "اگر الان تاکسی نیاید، همه چیز را از دست می‌دهم!" },
+          "mood": "surprised"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Ruf sie an, andernfalls denken sie, du kommst nicht.", "fa": "به آنها زنگ بزن، در غیر این صورت فکر می‌کنند نمی‌آیی." },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "آنا چه پیشنهادی می‌دهد؟",
+          "options": ["تاکسی بگیرد", "زنگ بزند", "پیاده برود"],
+          "correctIndex": 1,
+          "explanation": "آنا گفت: Ruf sie an, andernfalls denken sie, du kommst nicht"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Thomas rief an und bekam einen neuen Termin.", "fa": "توماس زنگ زد و یک قرار جدید گرفت." }
+        },
+        {
+          "type": "question",
+          "question": "داستان چگونه تمام شد؟",
+          "options": ["توماس شغل را از دست داد", "توماس قرار جدید گرفت", "توماس به موقع رسید"],
+          "correctIndex": 1,
+          "explanation": "در پایان گفته شده: Thomas rief an und bekam einen neuen Termin"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: شرایط منفی",
+      "instruction": "پاسخ درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "es sei denn به چه معناست؟", "left": "بدون اینکه", "right": "مگر اینکه", "correctSide": "right" },
+        { "prompt": "کدام رسمی‌تر است؟", "left": "andernfalls", "right": "sonst", "correctSide": "left" },
+        { "prompt": "بعد از es sei denn فعل کجاست؟", "left": "آخر", "right": "دوم", "correctSide": "left" },
+        { "prompt": "sonst یعنی؟", "left": "وگرنه", "right": "چون", "correctSide": "left" },
+        { "prompt": "بعد از andernfalls فعل کجاست؟", "left": "آخر", "right": "دوم", "correctSide": "right" },
+        { "prompt": "wenn nicht یعنی؟", "left": "وقتی که", "right": "اگر نه", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich komme zur Party, es sei denn, ich muss arbeiten.",
+      "translation": "به مهمانی می‌آیم، مگر اینکه مجبور به کار باشم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Beeil dich, sonst verpasst du den Zug.",
+      "translation": "عجله کن، وگرنه قطار را از دست می‌دهی."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Bitte bestätigen Sie rechtzeitig, andernfalls wird Ihre Reservierung storniert.",
+      "translation": "لطفاً به موقع تأیید کنید، در غیر این صورت رزرو شما لغو می‌شود."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: شرایط منفی",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "es sei denn یعنی؟", "options": ["مگر اینکه", "چون"], "correctAnswerIndex": 0 },
+        { "question": "sonst یعنی؟", "options": ["وگرنه", "پس"], "correctAnswerIndex": 0 },
+        { "question": "کدام رسمی‌تر است؟", "options": ["andernfalls", "sonst"], "correctAnswerIndex": 0 },
+        { "question": "wenn nicht یعنی؟", "options": ["اگر نه", "چه وقت"], "correctAnswerIndex": 0 },
+        { "question": "بعد از es sei denn فعل کجاست؟", "options": ["آخر جمله", "جایگاه دوم"], "correctAnswerIndex": 0 },
+        { "question": "die Ausnahme یعنی؟", "options": ["استثنا", "قانون"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: شرایط منفی",
+      "pairs": [
+        { "de": "es sei denn", "fa": "مگر اینکه" },
+        { "de": "andernfalls", "fa": "در غیر این صورت" },
+        { "de": "sonst", "fa": "وگرنه" },
+        { "de": "die Ausnahme", "fa": "استثنا" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات شرایط منفی",
+      "instruction": "کلمات آلمانی این درس را پیدا کنید",
+      "targetWords": ["sonst", "denn", "Ausnahme", "falls"],
+      "gridSize": { "rows": 10, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "es sei denn", "fa": "مگر اینکه", "options": ["چون", "مگر اینکه", "وقتی که", "قبل از اینکه"], "correctIndex": 1 },
+        { "de": "andernfalls", "fa": "در غیر این صورت", "options": ["در این صورت", "در غیر این صورت", "به همین دلیل", "علاوه بر این"], "correctIndex": 1 },
+        { "de": "die Ausnahme", "fa": "استثنا", "options": ["قانون", "استثنا", "مثال", "دلیل"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما شرایط منفی و استثناها در آلمانی را یاد گرفتید! این ساختارها به شما کمک می‌کنند جملات شرطی پیچیده‌تری بسازید.",
+      "keyPoints": [
+        "es sei denn = مگر اینکه (+ Nebensatz، فعل آخر)",
+        "andernfalls = در غیر این صورت (رسمی، + Hauptsatz، فعل دوم)",
+        "sonst = وگرنه (محاوره‌ای، + Hauptsatz، فعل دوم)",
+        "wenn nicht = اگر نه (+ Nebensatz، فعل آخر)",
+        "es sei denn برای بیان استثنا استفاده می‌شود (مثل «مگر اینکه» در فارسی)",
+        "andernfalls در متون رسمی و sonst در گفتگوی روزمره کاربرد دارند"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "es sei denn", "fa": "مگر اینکه" } },
+        { "word": { "de": "andernfalls", "fa": "در غیر این صورت" } },
+        { "word": { "de": "sonst", "fa": "وگرنه" } },
+        { "word": { "de": "wenn nicht", "fa": "اگر نه" } },
+        { "word": { "de": "die Ausnahme", "fa": "استثنا" } },
+        { "word": { "de": "voraussetzen", "fa": "پیش‌فرض گرفتن" } }
+      ]
+    }
+  ]
+}

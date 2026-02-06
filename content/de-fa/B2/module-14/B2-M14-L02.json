@@ -1,0 +1,520 @@
+{
+  "id": "B2-M14-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Konditionalsätze ohne wenn: Alternative Konjunktionen", "fa": "جملات شرطی بدون wenn: حروف ربط جایگزین" },
+  "description": "یاد بگیرید چگونه با حروف ربط جایگزین مانند «falls»، «sofern»، «vorausgesetzt, dass» و «unter der Bedingung, dass» جملات شرطی بسازید. این ساختارها معادل «اگر»، «به شرط اینکه» و «در صورتی که» در فارسی هستند. همه این حروف ربط جمله‌های پیرو می‌سازند (فعل در انتها).",
+  "level": "B2",
+  "module": 14,
+  "lessonNumber": 2,
+  "totalSteps": 45,
+  "estimatedMinutes": 40,
+  "vocabulary": [
+    { "de": "falls", "fa": "اگر، در صورتی که (با تردید بیشتر از wenn)", "grammar": { "pos": "conjunction" } },
+    { "de": "sofern", "fa": "به شرط اینکه، تا جایی که (رسمی)", "grammar": { "pos": "conjunction" } },
+    { "de": "vorausgesetzt, dass", "fa": "به فرض اینکه، با فرض اینکه", "grammar": { "pos": "conjunction" } },
+    { "de": "unter der Bedingung, dass", "fa": "به شرط اینکه، با این شرط که", "grammar": { "pos": "conjunction" } },
+    { "de": "gesetzt den Fall, dass", "fa": "در صورتی که، فرض کنیم که (بسیار رسمی)", "grammar": { "pos": "conjunction" } },
+    { "de": "die Voraussetzung", "fa": "پیش‌شرط، پیش‌نیاز", "grammar": { "pos": "noun", "gender": "feminine" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "حروف ربط شرطی جایگزین wenn",
+      "content": "**جملات شرطی با حروف ربط جایگزین = Konditionalsätze**\n\nعلاوه بر «wenn» حروف ربط دیگری هم برای بیان شرط وجود دارند که هر کدام ظرافت معنایی خاصی دارند.\n\n**حروف ربط جایگزین:**\n| حرف ربط | معنی | کاربرد |\n|---------|------|--------|\n| **falls** | اگر، در صورتی که | تردید بیشتر از wenn |\n| **sofern** | به شرط اینکه | رسمی، شرط محدودکننده |\n| **vorausgesetzt, dass** | با فرض اینکه | پیش‌شرط مهم |\n| **unter der Bedingung, dass** | به شرط اینکه | رسمی، قراردادی |\n| **gesetzt den Fall, dass** | فرض کنیم که | بسیار رسمی |\n\n**نکته کلیدی:**\nهمه این حروف ربط **جمله پیرو** می‌سازند و **فعل به انتها** می‌رود.\n\n**مثال:**\n- **Falls** es regnet, **bleiben** wir zu Hause. (اگر باران ببارد، خانه می‌مانیم.)\n- **Sofern** du Zeit **hast**, können wir uns treffen. (به شرط اینکه وقت داشته باشی...)",
+      "examples": [
+        { "de": "Falls du Fragen hast, kannst du mich anrufen.", "fa": "اگر سوالی داشتی، می‌توانی به من زنگ بزنی." },
+        { "de": "Sofern das Wetter gut ist, machen wir einen Ausflug.", "fa": "به شرط اینکه هوا خوب باشد، به گردش می‌رویم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "falls", "fa": "اگر، در صورتی که (با تردید بیشتر از wenn)" },
+      "example": { "text": { "de": "Falls du Zeit hast, ruf mich bitte an.", "fa": "اگر وقت داشتی، لطفاً به من زنگ بزن." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "falls",
+      "translation": "اگر، در صورتی که",
+      "syllables": ["falls"],
+      "distractors": ["fells", "fulls", "folls"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "sofern", "fa": "به شرط اینکه، تا جایی که (رسمی)" },
+      "example": { "text": { "de": "Sofern keine Einwände bestehen, können wir fortfahren.", "fa": "به شرط اینکه اعتراضی نباشد، می‌توانیم ادامه دهیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "sofern",
+      "translation": "به شرط اینکه",
+      "syllables": ["so", "fern"],
+      "distractors": ["se", "farn", "firn"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "vorausgesetzt, dass", "fa": "با فرض اینکه، به فرض اینکه" },
+      "example": { "text": { "de": "Vorausgesetzt, dass alle einverstanden sind, starten wir morgen.", "fa": "با فرض اینکه همه موافق باشند، فردا شروع می‌کنیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "vorausgesetzt",
+      "translation": "با فرض اینکه",
+      "syllables": ["vo", "raus", "ge", "setzt"],
+      "distractors": ["va", "reus", "ga", "sitzt"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "تفاوت falls و wenn",
+      "content": "**falls vs wenn - تفاوت ظریف:**\n\n| ویژگی | wenn | falls |\n|-------|------|-------|\n| احتمال وقوع | بالا یا معمولی | کمتر، نامطمئن |\n| کاربرد | شرط عادی | شرط احتمالی |\n| حس | «هر وقت که» | «اگر احیاناً» |\n\n**مثال‌ها:**\n\n**wenn** (احتمال بالا):\n```\nWenn ich nach Hause komme, esse ich.\n↓\nوقتی به خانه می‌رسم، غذا می‌خورم. (عادت)\n```\n\n**falls** (احتمال کمتر):\n```\nFalls ich Zeit habe, besuche ich dich.\n↓\nاگر وقت داشته باشم، به دیدنت می‌آیم. (نامطمئن)\n```\n\n**نکته برای فارسی‌زبانان:**\nدر فارسی هر دو را «اگر» ترجمه می‌کنیم، اما falls نشان‌دهنده عدم اطمینان بیشتر است.",
+      "examples": [
+        { "de": "Falls es regnen sollte, nehmen Sie einen Regenschirm mit.", "fa": "اگر احیاناً باران ببارد، چتر ببرید." },
+        { "de": "Falls Sie Fragen haben, wenden Sie sich an uns.", "fa": "در صورتی که سوالی دارید، با ما تماس بگیرید." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "unter der Bedingung, dass", "fa": "به شرط اینکه، با این شرط که" },
+      "example": { "text": { "de": "Ich helfe dir, unter der Bedingung, dass du mir auch hilfst.", "fa": "کمکت می‌کنم، به شرط اینکه تو هم به من کمک کنی." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "Bedingung",
+      "translation": "شرط",
+      "syllables": ["Be", "din", "gung"],
+      "distractors": ["Ba", "den", "gang"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "gesetzt den Fall, dass", "fa": "در صورتی که، فرض کنیم که (بسیار رسمی)" },
+      "example": { "text": { "de": "Gesetzt den Fall, dass der Vertrag unterschrieben wird, beginnen wir nächste Woche.", "fa": "در صورتی که قرارداد امضا شود، هفته آینده شروع می‌کنیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "gesetzt",
+      "translation": "فرض شده",
+      "syllables": ["ge", "setzt"],
+      "distractors": ["ga", "sitzt", "satzt"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "die Voraussetzung", "fa": "پیش‌شرط، پیش‌نیاز" },
+      "example": { "text": { "de": "Die Voraussetzung für den Job ist ein Universitätsabschluss.", "fa": "پیش‌شرط این شغل، مدرک دانشگاهی است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Voraussetzung",
+      "translation": "پیش‌شرط",
+      "syllables": ["Vo", "raus", "set", "zung"],
+      "distractors": ["Va", "reus", "sat", "zong"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "sofern و vorausgesetzt, dass - شرط‌های رسمی",
+      "content": "**sofern و vorausgesetzt, dass:**\n\nاین دو حرف ربط در متون رسمی و اداری کاربرد زیادی دارند.\n\n**sofern** = به شرط اینکه (محدودیت):\n```\nSofern Sie die Gebühren bezahlen, erhalten Sie die Bescheinigung.\n↓\nبه شرط اینکه هزینه‌ها را بپردازید، گواهی دریافت می‌کنید.\n```\n\n**vorausgesetzt, dass** = با فرض اینکه (پیش‌شرط):\n```\nVorausgesetzt, dass Sie alle Unterlagen haben, dauert es nur einen Tag.\n↓\nبا فرض اینکه همه مدارک را داشته باشید، فقط یک روز طول می‌کشد.\n```\n\n**تفاوت:**\n- **sofern**: شرط لازم برای انجام کار\n- **vorausgesetzt, dass**: فرضیه‌ای که باید درست باشد\n\n**نکته ساختاری:**\nدر هر دو، فعل به انتهای جمله پیرو می‌رود.",
+      "examples": [
+        { "de": "Sofern der Chef zustimmt, können wir das Projekt starten.", "fa": "به شرط اینکه رئیس موافقت کند، می‌توانیم پروژه را شروع کنیم." },
+        { "de": "Vorausgesetzt, dass das Budget ausreicht, werden wir expandieren.", "fa": "با فرض اینکه بودجه کافی باشد، گسترش خواهیم داد." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام حرف ربط برای بیان شرط با تردید بیشتر از wenn مناسب است؟",
+      "options": [
+        "weil",
+        "falls",
+        "obwohl",
+        "damit"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! falls نشان‌دهنده تردید و عدم اطمینان بیشتر نسبت به wenn است.", "incorrect": "falls برای شرط‌هایی با تردید بیشتر استفاده می‌شود، مثلاً: Falls du Zeit hast... (اگر وقت داشتی...)" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله صحیح است؟",
+      "options": [
+        "Sofern du kommst, ich freue mich.",
+        "Sofern du kommst, freue ich mich.",
+        "Sofern kommst du, freue ich mich.",
+        "Du kommst sofern, freue ich mich."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "درست! پس از جمله پیرو با sofern، فعل جمله اصلی در جایگاه اول قرار می‌گیرد.", "incorrect": "در جمله با sofern، جمله پیرو اول می‌آید و سپس جمله اصلی با فعل در جایگاه اول." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "sentence": "{0} du Hilfe brauchst, kannst du mich jederzeit anrufen.",
+      "options": ["Weil", "Falls", "Damit", "Obwohl"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "falls برای شرط‌های احتمالی استفاده می‌شود: اگر کمک لازم داشتی..." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "{0} keine Einwände bestehen, können wir beginnen.",
+      "options": ["Sofern", "Weil", "Obwohl", "Damit"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "sofern به معنی «به شرط اینکه» است: به شرط اینکه اعتراضی نباشد..." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "گزینه مناسب را انتخاب کنید",
+      "sentence": "Vorausgesetzt, {0} alle zustimmen, starten wir morgen.",
+      "options": ["wenn", "dass", "ob", "weil"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "بعد از vorausgesetzt همیشه dass می‌آید: Vorausgesetzt, dass..." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Unter der {0}, dass Sie die Regeln befolgen, dürfen Sie teilnehmen.",
+      "options": ["Bedingung", "Voraussetzung", "Folge", "Ursache"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "unter der Bedingung, dass یک عبارت ثابت است به معنی «به شرط اینکه»." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "sentence": "Gesetzt den {0}, dass der Zug Verspätung hat, nehmen wir das Taxi.",
+      "options": ["Fall", "Grund", "Zweck", "Satz"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "gesetzt den Fall, dass عبارت ثابتی است به معنی «در صورتی که»." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Die {0} für diesen Kurs ist ein B1-Zertifikat.",
+      "options": ["Voraussetzung", "Bedingung", "Hoffnung", "Meinung"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Voraussetzung به معنی «پیش‌شرط» یا «پیش‌نیاز» است." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "گفتگو: مصاحبه کاری",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Ein Vorstellungsgespräch in einem großen Unternehmen.", "fa": "یک مصاحبه کاری در یک شرکت بزرگ." }
+      },
+      "lines": [
+        { "speaker": "Personalleiterin", "text": { "de": "Können Sie bald anfangen?", "fa": "می‌توانید به زودی شروع کنید؟" }, "mood": "neutral" },
+        { "speaker": "Bewerber", "text": { "de": "Falls ich den Job bekomme, kann ich nächsten Monat anfangen.", "fa": "اگر این شغل را بگیرم، می‌توانم ماه آینده شروع کنم." }, "mood": "excited" },
+        { "speaker": "Personalleiterin", "text": { "de": "Gut. Sofern Sie alle Unterlagen einreichen, informieren wir Sie bald.", "fa": "خوب است. به شرط اینکه همه مدارک را تحویل دهید، به زودی اطلاع می‌دهیم." }, "mood": "neutral" },
+        { "speaker": "Bewerber", "text": { "de": "Vorausgesetzt, dass ich akzeptiert werde, kündige ich sofort meinen alten Job.", "fa": "با فرض اینکه پذیرفته شوم، فوراً شغل قبلی‌ام را ترک می‌کنم." }, "mood": "happy" },
+        { "speaker": "Personalleiterin", "text": { "de": "Wir melden uns, sobald wir entschieden haben.", "fa": "به محض تصمیم‌گیری با شما تماس می‌گیریم." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "متقاضی کی می‌تواند شروع کند؟", "options": ["همین هفته", "ماه آینده", "سال آینده"], "correctIndex": 1, "explanation": "او گفت: «Falls ich den Job bekomme, kann ich nächsten Monat anfangen.»" },
+        { "question": "چه شرطی برای اطلاع‌رسانی گذاشته شد؟", "options": ["پرداخت هزینه", "تحویل مدارک", "امضای قرارداد"], "correctIndex": 1, "explanation": "مدیر گفت: «Sofern Sie alle Unterlagen einreichen...»" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["du", "Falls", "hast", "Zeit", "ruf", "mich", "an"],
+      "correctOrder": [1, 0, 3, 2, 4, 5, 6],
+      "correctSentence": { "de": "Falls du Zeit hast, ruf mich an.", "fa": "اگر وقت داشتی، به من زنگ بزن." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["Sofern", "zustimmt", "der Chef", "wir", "können", "beginnen"],
+      "correctOrder": [0, 2, 1, 4, 3, 5],
+      "correctSentence": { "de": "Sofern der Chef zustimmt, können wir beginnen.", "fa": "به شرط اینکه رئیس موافقت کند، می‌توانیم شروع کنیم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["Vorausgesetzt", "sind", "dass", "alle", "einverstanden", "starten", "wir"],
+      "correctOrder": [0, 2, 3, 4, 1, 5, 6],
+      "correctSentence": { "de": "Vorausgesetzt, dass alle einverstanden sind, starten wir.", "fa": "با فرض اینکه همه موافق باشند، شروع می‌کنیم." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "falls نسبت به wenn تردید و عدم اطمینان بیشتری را نشان می‌دهد.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! falls برای شرط‌هایی استفاده می‌شود که احتمال وقوعشان کمتر یا نامطمئن‌تر است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جمله با sofern، فعل جمله پیرو به انتها می‌رود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! sofern یک حرف ربط پیروساز است و فعل به انتهای جمله پیرو می‌رود: Sofern du kommst..." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "vorausgesetzt, dass در مکالمات روزمره غیررسمی بیشتر استفاده می‌شود.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! vorausgesetzt, dass یک عبارت رسمی است و بیشتر در متون اداری و رسمی کاربرد دارد." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "گفتگو: قرارداد اجاره",
+      "scene": {
+        "location": "apartment",
+        "description": { "de": "Ein Gespräch zwischen Vermieter und Mieter.", "fa": "گفتگو بین موجر و مستاجر." }
+      },
+      "lines": [
+        { "speaker": "Vermieter", "text": { "de": "Sie können einziehen, unter der Bedingung, dass Sie die Kaution zahlen.", "fa": "می‌توانید نقل مکان کنید، به شرط اینکه ودیعه را بپردازید." }, "mood": "neutral" },
+        { "speaker": "Mieter", "text": { "de": "Kein Problem. Sofern der Mietvertrag in Ordnung ist, unterschreibe ich sofort.", "fa": "مشکلی نیست. به شرط اینکه قرارداد اجاره درست باشد، فوراً امضا می‌کنم." }, "mood": "happy" },
+        { "speaker": "Vermieter", "text": { "de": "Gesetzt den Fall, dass Sie Haustiere haben wollen, müssen Sie extra zahlen.", "fa": "در صورتی که حیوان خانگی بخواهید، باید اضافه بپردازید." }, "mood": "neutral" },
+        { "speaker": "Mieter", "text": { "de": "Falls ich später eine Katze nehme, informiere ich Sie.", "fa": "اگر بعداً گربه بگیرم، به شما اطلاع می‌دهم." }, "mood": "neutral" },
+        { "speaker": "Vermieter", "text": { "de": "Einverstanden. Vorausgesetzt, dass alles klar ist, können wir unterschreiben.", "fa": "موافقم. با فرض اینکه همه چیز روشن است، می‌توانیم امضا کنیم." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "شرط اصلی برای نقل مکان چیست؟", "options": ["داشتن حیوان خانگی", "پرداخت ودیعه", "امضای فوری"], "correctIndex": 1, "explanation": "موجر گفت: «unter der Bedingung, dass Sie die Kaution zahlen»" },
+        { "question": "کدام حرف ربط برای شرط حیوان خانگی استفاده شد؟", "options": ["falls", "sofern", "gesetzt den Fall, dass"], "correctIndex": 2, "explanation": "موجر گفت: «Gesetzt den Fall, dass Sie Haustiere haben wollen...»" }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "حروف ربط آلمانی را با معانی فارسی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "falls" },
+        { "id": "i2", "text": "sofern" },
+        { "id": "i3", "text": "vorausgesetzt, dass" },
+        { "id": "i4", "text": "unter der Bedingung, dass" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "اگر (با تردید بیشتر)" },
+        { "id": "m2", "text": "به شرط اینکه (رسمی)" },
+        { "id": "m3", "text": "با فرض اینکه" },
+        { "id": "m4", "text": "به این شرط که" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "اگر وقت داشته باشی، به من زنگ بزن.",
+      "sentenceTemplate": "{0} du Zeit hast, ruf mich an.",
+      "options": ["Falls", "Weil", "Obwohl", "Damit"],
+      "correctAnswers": [0],
+      "correctTranslation": { "de": "Falls du Zeit hast, ruf mich an.", "fa": "اگر وقت داشته باشی، به من زنگ بزن." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "به شرط اینکه همه موافق باشند، فردا شروع می‌کنیم.",
+      "sentenceTemplate": "{0}, dass alle einverstanden sind, starten wir morgen.",
+      "options": ["Vorausgesetzt", "Weil", "Obwohl", "Damit"],
+      "correctAnswers": [0],
+      "correctTranslation": { "de": "Vorausgesetzt, dass alle einverstanden sind, starten wir morgen.", "fa": "به شرط اینکه همه موافق باشند، فردا شروع می‌کنیم." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: قوانین شرکت",
+      "passage": {
+        "de": "Betriebsordnung\n\nSehr geehrte Mitarbeiter,\n\nSofern Sie pünktlich erscheinen und Ihre Aufgaben erfüllen, erhalten Sie einen Bonus am Jahresende.\n\nFalls Sie Überstunden machen müssen, informieren Sie bitte vorher Ihren Vorgesetzten. Unter der Bedingung, dass die Überstunden genehmigt werden, bekommen Sie eine zusätzliche Vergütung.\n\nVorausgesetzt, dass Sie mindestens ein Jahr bei uns arbeiten, haben Sie Anspruch auf Fortbildungen. Gesetzt den Fall, dass Sie eine Fortbildung im Ausland wünschen, müssen Sie einen Antrag stellen.\n\nMit freundlichen Grüßen\nDie Geschäftsleitung",
+        "fa": "آیین‌نامه شرکت\n\nکارکنان محترم،\n\nبه شرط اینکه به موقع حاضر شوید و وظایفتان را انجام دهید، پاداش پایان سال دریافت می‌کنید.\n\nاگر مجبور به اضافه‌کاری شدید، لطفاً قبلاً به مافوقتان اطلاع دهید. به شرط اینکه اضافه‌کاری تأیید شود، حق‌الزحمه اضافی دریافت می‌کنید.\n\nبا فرض اینکه حداقل یک سال نزد ما کار کنید، حق شرکت در دوره‌های آموزشی را دارید. در صورتی که دوره آموزشی در خارج بخواهید، باید درخواست بدهید.\n\nبا احترام\nمدیریت"
+      },
+      "questions": [
+        { "question": "شرط دریافت پاداش پایان سال چیست؟", "options": ["فقط حضور به موقع", "حضور به موقع و انجام وظایف", "یک سال کار"], "correctIndex": 1, "explanation": "متن می‌گوید: «Sofern Sie pünktlich erscheinen und Ihre Aufgaben erfüllen...»" },
+        { "question": "کدام حرف ربط برای شرط اضافه‌کاری استفاده شد؟", "options": ["falls", "sofern", "vorausgesetzt, dass"], "correctIndex": 0, "explanation": "«Falls Sie Überstunden machen müssen...» - برای شرط احتمالی از falls استفاده شده." },
+        { "question": "شرط شرکت در دوره آموزشی چیست؟", "options": ["درخواست دادن", "حداقل یک سال کار", "تأیید مدیر"], "correctIndex": 1, "explanation": "«Vorausgesetzt, dass Sie mindestens ein Jahr bei uns arbeiten...»" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die Jobsuche", "fa": "جستجوی کار" },
+      "characters": ["Maryam", "Freundin"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Maryam sucht seit Wochen einen neuen Job.", "fa": "مریم هفته‌هاست دنبال کار جدید می‌گردد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Freundin",
+          "text": { "de": "Hast du schon eine Antwort bekommen?", "fa": "جوابی گرفتی؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Maryam",
+          "text": { "de": "Ja! Falls ich das Vorstellungsgespräch bestehe, bekomme ich den Job.", "fa": "بله! اگر از مصاحبه قبول شوم، کار را می‌گیرم." },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "مریم از کدام حرف ربط استفاده کرد؟",
+          "options": ["wenn", "falls", "sofern"],
+          "correctIndex": 1,
+          "explanation": "مریم گفت: «Falls ich das Vorstellungsgespräch bestehe...» - نشان‌دهنده عدم اطمینان."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Freundin",
+          "text": { "de": "Super! Und was sind die Bedingungen?", "fa": "عالی! و شرایط چیه؟" },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Maryam",
+          "text": { "de": "Sofern ich Deutsch C1 habe, zahlen sie mehr Gehalt.", "fa": "به شرط اینکه آلمانی سطح C1 داشته باشم، حقوق بیشتری می‌دهند." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Maryam",
+          "text": { "de": "Vorausgesetzt, dass ich die Probezeit bestehe, bekomme ich einen unbefristeten Vertrag.", "fa": "با فرض اینکه دوره آزمایشی را بگذرانم، قرارداد دائم می‌گیرم." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "شرط گرفتن قرارداد دائم چیست؟",
+          "options": ["داشتن C1", "گذراندن دوره آزمایشی", "مصاحبه"],
+          "correctIndex": 1,
+          "explanation": "مریم گفت: «Vorausgesetzt, dass ich die Probezeit bestehe...»"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Maryam ist optimistisch und bereitet sich gut vor.", "fa": "مریم خوش‌بین است و خودش را خوب آماده می‌کند." }
+        },
+        {
+          "type": "question",
+          "question": "کدام حرف ربط رسمی‌تر است؟",
+          "options": ["falls", "sofern", "wenn"],
+          "correctIndex": 1,
+          "explanation": "sofern رسمی‌تر از falls و wenn است و بیشتر در متون اداری استفاده می‌شود."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: حروف ربط شرطی",
+      "instruction": "برای هر جمله حرف ربط مناسب را انتخاب کنید",
+      "questions": [
+        { "prompt": "... du Zeit hast, ruf mich an. (تردید)", "left": "Falls", "right": "Weil", "correctSide": "left" },
+        { "prompt": "... alle einverstanden sind, starten wir. (پیش‌شرط)", "left": "Vorausgesetzt, dass", "right": "Obwohl", "correctSide": "left" },
+        { "prompt": "... Sie bezahlen, bekommen Sie die Ware. (شرط)", "left": "Damit", "right": "Sofern", "correctSide": "right" },
+        { "prompt": "... der Zug kommt, fahren wir mit dem Taxi. (فرض)", "left": "Gesetzt den Fall, dass", "right": "Weil", "correctSide": "left" },
+        { "prompt": "... Sie die Kaution zahlen, können Sie einziehen. (شرط)", "left": "Unter der Bedingung, dass", "right": "Obwohl", "correctSide": "left" },
+        { "prompt": "کدام رسمی‌تر است؟", "left": "falls", "right": "sofern", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Falls du Fragen hast, kannst du mich anrufen.",
+      "translation": "اگر سوالی داشتی، می‌توانی به من زنگ بزنی."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Sofern das Wetter gut ist, machen wir einen Ausflug.",
+      "translation": "به شرط اینکه هوا خوب باشد، به گردش می‌رویم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Vorausgesetzt, dass alle einverstanden sind, starten wir morgen.",
+      "translation": "با فرض اینکه همه موافق باشند، فردا شروع می‌کنیم."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: حروف ربط شرطی",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "falls = ?", "options": ["اگر (با تردید)", "چون"], "correctAnswerIndex": 0 },
+        { "question": "sofern = ?", "options": ["به شرط اینکه", "با اینکه"], "correctAnswerIndex": 0 },
+        { "question": "کدام رسمی‌تر است؟", "options": ["falls", "sofern"], "correctAnswerIndex": 1 },
+        { "question": "vorausgesetzt, dass = ?", "options": ["با فرض اینکه", "به خاطر اینکه"], "correctAnswerIndex": 0 },
+        { "question": "die Voraussetzung = ?", "options": ["پیش‌شرط", "نتیجه"], "correctAnswerIndex": 0 },
+        { "question": "die Bedingung = ?", "options": ["شرط", "علت"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: حروف ربط و معانی",
+      "pairs": [
+        { "de": "falls", "fa": "اگر (با تردید)" },
+        { "de": "sofern", "fa": "به شرط اینکه" },
+        { "de": "vorausgesetzt, dass", "fa": "با فرض اینکه" },
+        { "de": "die Bedingung", "fa": "شرط" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات کلیدی",
+      "instruction": "کلمات این درس را پیدا کنید",
+      "targetWords": ["FALLS", "SOFERN", "BEDINGUNG", "VORAUSSETZUNG"],
+      "gridSize": { "rows": 10, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "falls", "fa": "اگر (با تردید)", "options": ["چون", "اگر (با تردید)", "با اینکه", "برای اینکه"], "correctIndex": 1 },
+        { "de": "sofern", "fa": "به شرط اینکه", "options": ["با اینکه", "به شرط اینکه", "چون", "قبل از"], "correctIndex": 1 },
+        { "de": "die Voraussetzung", "fa": "پیش‌شرط", "options": ["نتیجه", "پیش‌شرط", "علت", "هدف"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما حروف ربط شرطی جایگزین wenn را یاد گرفتید!",
+      "keyPoints": [
+        "falls = اگر (با تردید بیشتر از wenn)",
+        "sofern = به شرط اینکه (رسمی)",
+        "vorausgesetzt, dass = با فرض اینکه (پیش‌شرط)",
+        "unter der Bedingung, dass = به شرط اینکه (قراردادی)",
+        "gesetzt den Fall, dass = فرض کنیم که (بسیار رسمی)",
+        "همه این حروف ربط جمله پیرو می‌سازند (فعل در انتها)"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "falls", "fa": "اگر، در صورتی که (با تردید بیشتر)" } },
+        { "word": { "de": "sofern", "fa": "به شرط اینکه، تا جایی که (رسمی)" } },
+        { "word": { "de": "vorausgesetzt, dass", "fa": "با فرض اینکه، به فرض اینکه" } },
+        { "word": { "de": "unter der Bedingung, dass", "fa": "به شرط اینکه، با این شرط که" } },
+        { "word": { "de": "gesetzt den Fall, dass", "fa": "در صورتی که، فرض کنیم که" } },
+        { "word": { "de": "die Voraussetzung", "fa": "پیش‌شرط، پیش‌نیاز" } }
+      ]
+    }
+  ]
+}
