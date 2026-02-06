@@ -1624,6 +1624,37 @@ const DE_FA_B1_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/B1/B1-M19-L04"
       }
     ]
+  },
+  {
+    id: "module-20",
+    title: "بخش ۲۰: کاربرد ذهنی افعال کمکی (Subjektiver Gebrauch der Modalverben)",
+    level: "B1",
+    lessons: [
+      {
+        id: "B1-M20-L01",
+        title: "müssen und können - حدس و احتمال",
+        description: "یاد بگیرید استفاده ذهنی از müssen و können برای بیان حدس و احتمال.",
+        path: "/learn/de-fa/B1/B1-M20-L01"
+      },
+      {
+        id: "B1-M20-L02",
+        title: "dürfte, sollte, mag - درجات احتمال",
+        description: "یاد بگیرید dürfte، sollte و mag برای بیان درجات مختلف احتمال.",
+        path: "/learn/de-fa/B1/B1-M20-L02"
+      },
+      {
+        id: "B1-M20-L03",
+        title: "Vermutungen über die Vergangenheit - حدس درباره گذشته",
+        description: "یاد بگیرید حدس زدن درباره گذشته: Modal + Partizip II + haben/sein.",
+        path: "/learn/de-fa/B1/B1-M20-L03"
+      },
+      {
+        id: "B1-M20-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل کاربرد ذهنی افعال کمکی: müssen، dürfte، können، mag و حدس درباره گذشته.",
+        path: "/learn/de-fa/B1/B1-M20-L04"
+      }
+    ]
   }
 ];
 

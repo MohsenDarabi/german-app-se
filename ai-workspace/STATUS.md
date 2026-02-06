@@ -8,7 +8,7 @@
 
 **Create B1 lessons - lesson by lesson, wait for user test after each**
 
-Current: `B1-M19` (Passiversatzformen) - **MODULE COMPLETE - READY FOR USER TEST**
+Current: `B1-M20` (Subjektiver Gebrauch der Modalverben) - **MODULE COMPLETE - READY FOR USER TEST**
 
 ---
 
@@ -26,7 +26,7 @@ Current: `B1-M19` (Passiversatzformen) - **MODULE COMPLETE - READY FOR USER TEST
 |-------|---------|---------|--------|
 | A1 | 14 | 56+ | Complete |
 | A2 | 18 | 72 | **Complete** ✅ |
-| B1 | 19 | 76 | Module 19 complete |
+| B1 | 20 | 80 | Module 20 complete |
 
 ### A2 Completion (2026-02-05)
 
@@ -76,8 +76,9 @@ Current: `B1-M19` (Passiversatzformen) - **MODULE COMPLETE - READY FOR USER TEST
 | M17 | Wortbildung | 4/4 | ✅ Complete |
 | M18 | Irreale Vergleichssätze | 4/4 | ✅ Complete |
 | M19 | Passiversatzformen | 4/4 | ✅ Complete |
+| M20 | Subjektiver Gebrauch der Modalverben | 4/4 | ✅ Complete |
 
-**Total B1: 76 lessons**
+**Total B1: 80 lessons**
 
 ---
 
@@ -290,10 +291,23 @@ Current: `B1-M19` (Passiversatzformen) - **MODULE COMPLETE - READY FOR USER TEST
 
 ---
 
+## B1 Module 20: Subjektiver Gebrauch der Modalverben (Subjective Modal Verbs)
+
+| Lesson | Title | Status |
+|--------|-------|--------|
+| B1-M20-L01 | müssen und können (assumptions ~99% / ~50%) | ✅ Complete |
+| B1-M20-L02 | dürfte, sollte, mag (probability levels) | ✅ Complete |
+| B1-M20-L03 | Vermutungen über die Vergangenheit (past assumptions) | ✅ Complete |
+| B1-M20-L04 | Zusammenfassung | ✅ Complete |
+
+---
+
 ## Recent Changes
 
 | Date | Change |
 |------|--------|
+| 2026-02-06 | **B1 Module 20 (Subjektiver Gebrauch der Modalverben) COMPLETE - 4 lessons!** |
+| 2026-02-06 | Created B1-M20-L01 to L04 in parallel |
 | 2026-02-06 | **B1 Module 19 (Passiversatzformen) COMPLETE - 4 lessons!** |
 | 2026-02-06 | Created B1-M19-L01 to L04 in parallel |
 | 2026-02-06 | **B1 Module 18 (Irreale Vergleichssätze) COMPLETE - 4 lessons!** |
@@ -367,6 +381,7 @@ Current: `B1-M19` (Passiversatzformen) - **MODULE COMPLETE - READY FOR USER TEST
 18. [x] Complete B1 Module 17 (Wortbildung) - 4 lessons
 19. [x] Complete B1 Module 18 (Irreale Vergleichssätze) - 4 lessons
 20. [x] Complete B1 Module 19 (Passiversatzformen) - 4 lessons
-21. [ ] **User tests B1-M19 lessons**
-22. [ ] Plan B1 Module 20 topic
-23. [ ] Continue B1 curriculum development
+21. [x] Complete B1 Module 20 (Subjektiver Gebrauch der Modalverben) - 4 lessons
+22. [ ] **User tests B1-M20 lessons**
+23. [ ] Plan B1 Module 21 topic
+24. [ ] Continue B1 curriculum development

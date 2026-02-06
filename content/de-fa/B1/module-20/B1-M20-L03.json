@@ -1,0 +1,524 @@
+{
+  "id": "B1-M20-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Vermutungen über die Vergangenheit", "fa": "حدس و گمان درباره گذشته" },
+  "description": "یاد بگیرید چگونه با استفاده از افعال مودال و Partizip II درباره گذشته حدس بزنید: Er muss krank gewesen sein.",
+  "level": "B1",
+  "module": 20,
+  "lessonNumber": 3,
+  "totalSteps": 45,
+  "estimatedMinutes": 25,
+  "vocabulary": [
+    { "de": "die Vermutung", "fa": "حدس، گمان", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "wahrscheinlich", "fa": "احتمالاً", "grammar": { "pos": "adverb" } },
+    { "de": "möglicherweise", "fa": "احتمالاً، شاید", "grammar": { "pos": "adverb" } },
+    { "de": "gewesen", "fa": "بوده (Partizip II از sein)", "grammar": { "pos": "verb" } },
+    { "de": "vergessen", "fa": "فراموش کردن", "grammar": { "pos": "verb" } },
+    { "de": "offensichtlich", "fa": "آشکارا، واضحاً", "grammar": { "pos": "adverb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "حدس زدن درباره گذشته با افعال مودال",
+      "content": "**Vermutungen über die Vergangenheit**\n\nدر آلمانی برای بیان حدس درباره گذشته از این ساختار استفاده می‌کنیم:\n\n**Modal + Partizip II + haben/sein**\n\n**مقایسه:**\n- **حال:** Er muss krank **sein**. (حتماً مریض **است**.)\n- **گذشته:** Er muss krank **gewesen sein**. (حتماً مریض **بوده است**.)\n\n**ساختار کلی:**\n| Modal | ... | Partizip II | haben/sein |\n|-------|-----|-------------|------------|\n| Er muss | das | gewusst | haben. |\n| Sie kann | schon | gegangen | sein. |\n\n**نکته مهم:** فعل مودال در جایگاه دوم می‌ماند و بقیه به آخر جمله می‌رود.",
+      "examples": [
+        { "de": "Er muss das vergessen haben.", "fa": "حتماً این را فراموش کرده است." },
+        { "de": "Sie kann schon angekommen sein.", "fa": "شاید قبلاً رسیده باشد." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "die Vermutung", "fa": "حدس، گمان" },
+      "example": { "text": { "de": "Das ist nur eine Vermutung, keine Tatsache.", "fa": "این فقط یک حدس است، نه واقعیت." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Vermutung",
+      "translation": "حدس، گمان",
+      "syllables": ["Ver", "mu", "tung"],
+      "distractors": ["Fer", "mo", "tong"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "wahrscheinlich", "fa": "احتمالاً" },
+      "example": { "text": { "de": "Er ist wahrscheinlich zu spät aufgestanden.", "fa": "احتمالاً دیر از خواب بیدار شده است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "wahrscheinlich",
+      "translation": "احتمالاً",
+      "syllables": ["wahr", "schein", "lich"],
+      "distractors": ["war", "schien", "lech"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "möglicherweise", "fa": "احتمالاً، شاید" },
+      "example": { "text": { "de": "Sie hat möglicherweise den Bus verpasst.", "fa": "شاید اتوبوس را از دست داده باشد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "möglicherweise",
+      "translation": "احتمالاً، شاید",
+      "syllables": ["mög", "li", "cher", "wei", "se"],
+      "distractors": ["mag", "le", "wai"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "درجات احتمال با افعال مودال",
+      "content": "**افعال مودال مختلف = درجات احتمال مختلف**\n\n**۱. müssen (قطعیت بالا ≈ ۹۵٪)**\n- Er **muss** krank gewesen sein.\n- حتماً مریض بوده است. (تقریباً مطمئنم)\n\n**۲. dürfen (احتمال بالا ≈ ۸۰٪)**\n- Das **dürfte** nicht einfach gewesen sein.\n- احتمالاً آسان نبوده است. (فکر می‌کنم)\n\n**۳. können (احتمال ≈ ۵۰٪)**\n- Sie **kann** das vergessen haben.\n- شاید این را فراموش کرده باشد. (ممکن است)\n\n**۴. mögen (احتمال ≈ ۳۰٪)**\n- Das **mag** wahr gewesen sein.\n- شاید درست بوده باشد. (کم‌احتمال)\n\n**نکته:** برای گذشته همیشه از Konjunktiv II فعل dürfen (dürfte) استفاده می‌کنیم.",
+      "examples": [
+        { "de": "Er muss den Zug verpasst haben.", "fa": "حتماً قطار را از دست داده است. (مطمئنم)" },
+        { "de": "Das dürfte schwer gewesen sein.", "fa": "احتمالاً سخت بوده است. (فکر می‌کنم)" },
+        { "de": "Sie kann verschlafen haben.", "fa": "شاید خواب مانده باشد. (ممکن است)" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله حدس درباره گذشته را بیان می‌کند؟",
+      "options": [
+        "Er muss krank sein. (مریض است)",
+        "Er muss krank gewesen sein. (مریض بوده است)",
+        "Er war krank. (مریض بود)",
+        "Er wird krank sein. (مریض خواهد بود)"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! Modal + Partizip II + sein/haben = حدس درباره گذشته", "incorrect": "برای حدس درباره گذشته از ساختار Modal + Partizip II + sein/haben استفاده می‌کنیم." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام فعل مودال بیشترین درجه قطعیت را دارد؟",
+      "options": [
+        "können (شاید)",
+        "mögen (شاید - کم‌احتمال)",
+        "müssen (حتماً)",
+        "dürfen (احتمالاً)"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "بله! müssen نشان‌دهنده بالاترین درجه قطعیت است.", "incorrect": "müssen = حتماً، نشان‌دهنده قطعیت بالاست." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "gewesen", "fa": "بوده (Partizip II از sein)" },
+      "example": { "text": { "de": "Er muss müde gewesen sein.", "fa": "حتماً خسته بوده است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "gewesen",
+      "translation": "بوده",
+      "syllables": ["ge", "we", "sen"],
+      "distractors": ["ga", "wa", "san"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er muss den Schlüssel {0} haben. (حتماً کلید را فراموش کرده است - vergessen)",
+      "options": ["vergessen", "vergaß", "vergisst", "vergesst"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "در این ساختار از Partizip II استفاده می‌کنیم: vergessen" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sie kann schon nach Hause {0} sein. (شاید قبلاً به خانه رفته باشد - gehen)",
+      "options": ["gegangen", "ging", "geht", "gehen"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "gehen با sein: gegangen sein" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das {0} nicht einfach gewesen sein. (احتمالاً آسان نبوده است)",
+      "options": ["dürfte", "dürfen", "darfst", "darf"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "برای احتمال بالا از dürfte (Konjunktiv II) استفاده می‌کنیم." }
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "vergessen", "fa": "فراموش کردن" },
+      "example": { "text": { "de": "Sie muss den Termin vergessen haben.", "fa": "حتماً قرار ملاقات را فراموش کرده است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "vergessen",
+      "translation": "فراموش کردن",
+      "syllables": ["ver", "ges", "sen"],
+      "distractors": ["fer", "gas", "san"]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["muss", "gewesen", "Er", "sein", "krank"],
+      "correctOrder": [2, 0, 4, 1, 3],
+      "correctSentence": { "de": "Er muss krank gewesen sein", "fa": "حتماً مریض بوده است" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["haben", "kann", "das", "Sie", "vergessen"],
+      "correctOrder": [3, 1, 2, 4, 0],
+      "correctSentence": { "de": "Sie kann das vergessen haben", "fa": "شاید این را فراموش کرده باشد" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["sein", "dürfte", "einfach", "gewesen", "Das", "nicht"],
+      "correctOrder": [4, 1, 5, 2, 3, 0],
+      "correctSentence": { "de": "Das dürfte nicht einfach gewesen sein", "fa": "احتمالاً آسان نبوده است" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s8",
+      "title": "ترتیب کلمات در جملات پیرو",
+      "content": "**Wortstellung in Nebensätzen**\n\nدر جملات پیرو (بعد از weil, dass, obwohl...)، فعل مودال به آخر می‌رود:\n\n**جمله اصلی:**\nEr **muss** krank **gewesen sein**.\n\n**جمله پیرو:**\n..., weil er krank **gewesen sein muss**.\n\n**ترتیب در جمله پیرو:**\n| weil | ... | Partizip II | haben/sein | Modal |\n|------|-----|-------------|------------|-------|\n| weil | er | verschlafen | haben | muss |\n| obwohl | sie | gekommen | sein | kann |\n\n**مثال‌ها:**\nIch glaube, **dass** er den Zug verpasst haben **muss**.\n(فکر می‌کنم حتماً قطار را از دست داده است.)\n\nSie ist traurig, **weil** er sie vergessen haben **kann**.\n(غمگین است چون شاید او را فراموش کرده باشد.)",
+      "examples": [
+        { "de": "Ich denke, dass er müde gewesen sein muss.", "fa": "فکر می‌کنم حتماً خسته بوده است." },
+        { "de": "Obwohl sie krank gewesen sein kann, ist sie gekommen.", "fa": "با اینکه شاید مریض بوده، آمده است." }
+      ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جمله «Er muss krank gewesen sein» فعل sein نشان‌دهنده Perfekt است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! این sein بخشی از ساختار حدس درباره گذشته است (Infinitiv)، نه Perfekt. مقایسه: Er ist krank gewesen (Perfekt) vs. Er muss krank gewesen sein (حدس)." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای حدس درباره گذشته با فعل‌هایی مثل gehen از haben استفاده می‌کنیم.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! مثل Perfekt، فعل‌های حرکتی با sein می‌آیند: Er muss gegangen sein (نه: haben)." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "müssen قطعیت بیشتری از können نشان می‌دهد.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! müssen (≈۹۵٪ مطمئن) > können (≈۵۰٪ احتمال)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "چرا لیزا نیامد؟",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Büro - Lisa ist nicht da.", "fa": "در دفتر - لیزا حضور ندارد." }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Lisa ist heute nicht gekommen. Weißt du warum?", "fa": "لیزا امروز نیامده. می‌دانی چرا؟" }, "mood": "confused" },
+        { "speaker": "Max", "text": { "de": "Sie muss krank gewesen sein. Sie hat gestern gehustet.", "fa": "حتماً مریض بوده. دیروز سرفه می‌کرد." }, "mood": "neutral" },
+        { "speaker": "Anna", "text": { "de": "Oder sie kann verschlafen haben. Das passiert manchmal.", "fa": "یا شاید خواب مانده باشد. گاهی اتفاق می‌افتد." }, "mood": "neutral" },
+        { "speaker": "Max", "text": { "de": "Das dürfte nicht der Grund sein. Sie steht immer früh auf.", "fa": "احتمالاً دلیلش این نیست. همیشه زود بیدار می‌شود." }, "mood": "surprised" },
+        { "speaker": "Anna", "text": { "de": "Dann muss sie wirklich krank sein.", "fa": "پس حتماً واقعاً مریض است." }, "mood": "sad" }
+      ],
+      "questions": [
+        { "question": "چرا Max فکر می‌کند لیزا مریض بوده؟", "options": ["چون دیر بیدار شده", "چون دیروز سرفه می‌کرد", "چون تلفنش خاموش است"], "correctIndex": 1, "explanation": "Max گفت: Sie hat gestern gehustet (دیروز سرفه می‌کرد)." },
+        { "question": "کدام جمله بیشترین قطعیت را دارد؟", "options": ["Sie kann verschlafen haben", "Sie muss krank gewesen sein", "Das dürfte nicht der Grund sein"], "correctIndex": 1, "explanation": "muss بالاترین درجه قطعیت را دارد." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich glaube, dass er den Bus verpasst {0} muss. (فکر می‌کنم حتماً اتوبوس را از دست داده است)",
+      "options": ["haben", "hat", "hatte", "sein"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "در جمله پیرو: ... verpasst haben muss (فعل‌های با Akkusativ با haben)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er {0} das nicht gewusst haben. (شاید این را نمی‌دانسته است)",
+      "options": ["kann", "muss", "können", "müssen"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "kann = شاید (احتمال متوسط)" }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "offensichtlich", "fa": "آشکارا، واضحاً" },
+      "example": { "text": { "de": "Er hat offensichtlich nicht zugehört.", "fa": "واضحاً گوش نداده است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "offensichtlich",
+      "translation": "آشکارا، واضحاً",
+      "syllables": ["of", "fen", "sicht", "lich"],
+      "distractors": ["ef", "fan", "secht"]
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "آپارتمان خالی",
+      "scene": {
+        "location": "apartment",
+        "description": { "de": "Vor einer leeren Wohnung", "fa": "جلوی یک آپارتمان خالی" }
+      },
+      "lines": [
+        { "speaker": "Tom", "text": { "de": "Die Wohnung ist leer. Wo sind die Nachbarn?", "fa": "آپارتمان خالی است. همسایه‌ها کجا هستند؟" }, "mood": "confused" },
+        { "speaker": "Sara", "text": { "de": "Sie müssen umgezogen sein. Ich habe letzte Woche Kartons gesehen.", "fa": "حتماً اسباب‌کشی کرده‌اند. هفته پیش کارتن‌ها را دیدم." }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Das dürfte schnell gegangen sein. Vor drei Tagen waren sie noch da.", "fa": "احتمالاً سریع انجام شده. سه روز پیش هنوز اینجا بودند." }, "mood": "surprised" },
+        { "speaker": "Sara", "text": { "de": "Sie können Hilfe gehabt haben. Mit Freunden geht es schneller.", "fa": "شاید کمک داشته‌اند. با دوستان سریع‌تر انجام می‌شود." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "چرا Sara فکر می‌کند همسایه‌ها اسباب‌کشی کرده‌اند؟", "options": ["چون کارتن‌ها را دیده بود", "چون تلفن زده بودند", "چون نامه گذاشته بودند"], "correctIndex": 0, "explanation": "Sara گفت: Ich habe letzte Woche Kartons gesehen." },
+        { "question": "کدام جمله احتمال متوسط را نشان می‌دهد؟", "options": ["Sie müssen umgezogen sein", "Das dürfte schnell gegangen sein", "Sie können Hilfe gehabt haben"], "correctIndex": 2, "explanation": "können نشان‌دهنده احتمال متوسط (≈۵۰٪) است." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das {0} sehr schwer gewesen sein. (احتمالاً خیلی سخت بوده است)",
+      "options": ["dürfte", "kann", "darfst", "könnte"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "dürfte = احتمالاً (احتمال بالا، حدود ۸۰٪)" }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "جملات آلمانی را با معانی فارسی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Er muss das gewusst haben." },
+        { "id": "i2", "text": "Sie kann verschlafen haben." },
+        { "id": "i3", "text": "Das dürfte nicht einfach gewesen sein." },
+        { "id": "i4", "text": "Er mag recht gehabt haben." },
+        { "id": "i5", "text": "Sie muss müde gewesen sein." },
+        { "id": "i6", "text": "Das kann passiert sein." }
+      ],
+      "matches": [
+        { "id": "m1", "text": "حتماً این را می‌دانسته است." },
+        { "id": "m2", "text": "شاید خواب مانده باشد." },
+        { "id": "m3", "text": "احتمالاً آسان نبوده است." },
+        { "id": "m4", "text": "شاید حق داشته باشد (کم‌احتمال)." },
+        { "id": "m5", "text": "حتماً خسته بوده است." },
+        { "id": "m6", "text": "شاید اتفاق افتاده باشد." }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "حتماً قطار را از دست داده است.",
+      "sentenceTemplate": "Er {0} den Zug verpasst {1}.",
+      "options": ["muss", "haben", "kann", "sein"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Er muss den Zug verpasst haben.", "fa": "حتماً قطار را از دست داده است." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "شاید قبلاً به خانه رفته باشد.",
+      "sentenceTemplate": "Sie {0} schon nach Hause gegangen {1}.",
+      "options": ["kann", "sein", "muss", "haben"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Sie kann schon nach Hause gegangen sein.", "fa": "شاید قبلاً به خانه رفته باشد." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: راز غیبت",
+      "passage": {
+        "de": "Gestern ist etwas Seltsames passiert. Mein Freund Thomas war nicht in der Arbeit. Er hat nicht angerufen und nicht geschrieben.\n\nIch habe mir Sorgen gemacht. Er muss krank gewesen sein, dachte ich. Oder er kann einen Unfall gehabt haben. Das dürfte aber nicht der Fall gewesen sein, weil sein Auto vor der Wohnung stand.\n\nSpäter habe ich erfahren, dass er sein Handy vergessen hatte. Er konnte niemanden erreichen. Das muss sehr stressig gewesen sein!\n\nAm nächsten Tag war alles klar: Er hatte einen wichtigen Termin beim Arzt vergessen und musste dringend hin.",
+        "fa": "دیروز اتفاق عجیبی افتاد. دوستم توماس سر کار نبود. نه زنگ زد و نه پیام داد.\n\nنگران شدم. فکر کردم حتماً مریض بوده است. یا شاید تصادف کرده باشد. اما احتمالاً این نبوده، چون ماشینش جلوی آپارتمانش بود.\n\nبعداً فهمیدم که موبایلش را فراموش کرده بود. نتوانسته بود به کسی زنگ بزند. حتماً خیلی استرس‌زا بوده!\n\nروز بعد همه چیز روشن شد: یک قرار مهم پزشکی را فراموش کرده بود و مجبور شد فوری برود."
+      },
+      "questions": [
+        { "question": "چرا راوی فکر کرد توماس تصادف نکرده؟", "options": ["چون زنگ زده بود", "چون ماشینش جلوی خانه بود", "چون همسایه‌ها گفتند"], "correctIndex": 1, "explanation": "ماشین توماس جلوی آپارتمانش بود، پس احتمال تصادف کم بود." },
+        { "question": "چرا توماس نتوانست زنگ بزند؟", "options": ["مریض بود", "تصادف کرده بود", "موبایلش را فراموش کرده بود"], "correctIndex": 2, "explanation": "او موبایلش را فراموش کرده بود." },
+        { "question": "دلیل واقعی غیبت توماس چه بود؟", "options": ["بیماری", "قرار پزشکی فراموش‌شده", "مشکل با ماشین"], "correctIndex": 1, "explanation": "یک قرار مهم پزشکی را فراموش کرده بود." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der verschwundene Kuchen", "fa": "کیک ناپدید شده" },
+      "characters": ["Mutter", "Sohn Tim", "Tochter Lisa"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Mutter hat einen Schokoladenkuchen gebacken. Als sie zurückkommt, ist er weg.", "fa": "مادر یک کیک شکلاتی پخته بود. وقتی برمی‌گردد، کیک نیست." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Mutter",
+          "text": { "de": "Wo ist mein Kuchen? Er muss hier gewesen sein!", "fa": "کیک من کجاست؟ حتماً اینجا بوده!" },
+          "mood": "angry"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sohn Tim",
+          "text": { "de": "Ich war es nicht! Lisa kann ihn gegessen haben.", "fa": "من نبودم! شاید لیزا خورده باشد." },
+          "mood": "surprised"
+        },
+        {
+          "type": "question",
+          "question": "Tim از کدام ساختار برای حدس استفاده کرد؟",
+          "options": ["muss + Partizip II + haben", "kann + Partizip II + haben", "dürfte + Partizip II + haben"],
+          "correctIndex": 1,
+          "explanation": "Tim گفت: Lisa kann ihn gegessen haben (شاید لیزا خورده باشد)."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Tochter Lisa",
+          "text": { "de": "Ich nicht! Papa dürfte ihn mitgenommen haben.", "fa": "من نه! احتمالاً بابا برده باشد." },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Mutter",
+          "text": { "de": "Hmm, er muss auf der Arbeit gewesen sein... Warte, was ist das?", "fa": "هوم، حتماً سر کار بوده... صبر کن، این چیست؟" },
+          "mood": "confused"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Mutter sieht Schokolade auf Tims Mund.", "fa": "مادر شکلات روی دهان Tim را می‌بیند." }
+        },
+        {
+          "type": "question",
+          "question": "چه کسی واقعاً کیک را خورده بود؟",
+          "options": ["Lisa", "Papa", "Tim"],
+          "correctIndex": 2,
+          "explanation": "شکلات روی دهان Tim نشان می‌دهد که او کیک را خورده بود."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Mutter",
+          "text": { "de": "Tim! Du musst den Kuchen gegessen haben! Da ist Schokolade auf deinem Mund!", "fa": "تیم! حتماً تو کیک را خورده‌ای! شکلات روی دهانت است!" },
+          "mood": "angry"
+        },
+        {
+          "type": "question",
+          "question": "چرا مادر از muss استفاده کرد؟",
+          "options": ["چون مطمئن نبود", "چون شواهد قطعی داشت", "چون می‌خواست سؤال کند"],
+          "correctIndex": 1,
+          "explanation": "muss نشان‌دهنده قطعیت بالاست - مادر شکلات را روی دهان Tim دید."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: درجه احتمال",
+      "instruction": "کدام درجه احتمال را نشان می‌دهد؟",
+      "questions": [
+        { "prompt": "muss ... haben", "left": "حتماً (۹۵٪)", "right": "شاید (۵۰٪)", "correctSide": "left" },
+        { "prompt": "kann ... haben", "left": "حتماً (۹۵٪)", "right": "شاید (۵۰٪)", "correctSide": "right" },
+        { "prompt": "dürfte ... sein", "left": "احتمالاً (۸۰٪)", "right": "کم‌احتمال (۳۰٪)", "correctSide": "left" },
+        { "prompt": "mag ... haben", "left": "احتمالاً (۸۰٪)", "right": "کم‌احتمال (۳۰٪)", "correctSide": "right" },
+        { "prompt": "muss ... gewesen sein", "left": "حدس گذشته", "right": "حدس حال", "correctSide": "left" },
+        { "prompt": "muss ... sein (بدون Partizip)", "left": "حدس گذشته", "right": "حدس حال", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Er muss krank gewesen sein.",
+      "translation": "حتماً مریض بوده است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Sie kann das vergessen haben.",
+      "translation": "شاید این را فراموش کرده باشد."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Das dürfte nicht einfach gewesen sein.",
+      "translation": "احتمالاً آسان نبوده است."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "حدس گذشته: Modal + ... + haben/sein", "options": ["Partizip II", "Infinitiv"], "correctAnswerIndex": 0 },
+        { "question": "بیشترین قطعیت:", "options": ["müssen", "können"], "correctAnswerIndex": 0 },
+        { "question": "احتمال متوسط:", "options": ["müssen", "können"], "correctAnswerIndex": 1 },
+        { "question": "gehen در حدس گذشته با:", "options": ["haben", "sein"], "correctAnswerIndex": 1 },
+        { "question": "Konjunktiv II از dürfen:", "options": ["dürfte", "darfte"], "correctAnswerIndex": 0 },
+        { "question": "Er muss müde ___ sein.", "options": ["gewesen", "war"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "muss ... haben", "fa": "حتماً ... کرده است" },
+        { "de": "kann ... sein", "fa": "شاید ... باشد" },
+        { "de": "dürfte ... gewesen sein", "fa": "احتمالاً ... بوده است" },
+        { "de": "mag ... gehabt haben", "fa": "شاید ... داشته باشد (کم‌احتمال)" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات مربوط به این درس را پیدا کنید",
+      "targetWords": ["Vermutung", "gewesen", "vergessen", "wahrscheinlich", "müssen", "können"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "die Vermutung", "fa": "حدس", "options": ["واقعیت", "حدس", "مشکل", "سؤال"], "correctIndex": 1 },
+        { "de": "wahrscheinlich", "fa": "احتمالاً", "options": ["قطعاً", "احتمالاً", "هرگز", "همیشه"], "correctIndex": 1 },
+        { "de": "offensichtlich", "fa": "آشکارا", "options": ["پنهانی", "آشکارا", "شاید", "کم‌احتمال"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما یاد گرفتید چگونه با افعال مودال درباره گذشته حدس بزنید!",
+      "keyPoints": [
+        "ساختار: Modal + Partizip II + haben/sein",
+        "müssen = حتماً (قطعیت بالا ≈ ۹۵٪)",
+        "dürfte = احتمالاً (احتمال بالا ≈ ۸۰٪)",
+        "können = شاید (احتمال متوسط ≈ ۵۰٪)",
+        "mögen = شاید (کم‌احتمال ≈ ۳۰٪)",
+        "در جمله پیرو: ... Partizip II + haben/sein + Modal"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "die Vermutung", "fa": "حدس، گمان" } },
+        { "word": { "de": "wahrscheinlich", "fa": "احتمالاً" } },
+        { "word": { "de": "möglicherweise", "fa": "احتمالاً، شاید" } },
+        { "word": { "de": "gewesen", "fa": "بوده (Partizip II از sein)" } },
+        { "word": { "de": "vergessen", "fa": "فراموش کردن" } },
+        { "word": { "de": "offensichtlich", "fa": "آشکارا، واضحاً" } }
+      ]
+    }
+  ]
+}
