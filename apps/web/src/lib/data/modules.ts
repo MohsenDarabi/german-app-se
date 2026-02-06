@@ -1531,6 +1531,37 @@ const DE_FA_B1_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/B1/B1-M16-L04"
       }
     ]
+  },
+  {
+    id: "module-17",
+    title: "بخش ۱۷: ساختار واژه (Wortbildung)",
+    level: "B1",
+    lessons: [
+      {
+        id: "B1-M17-L01",
+        title: "Verbpräfixe - پیشوندهای فعل",
+        description: "یاد بگیرید پیشوندهای جداشدنی (ab-، auf-) و جدانشدنی (be-، ver-) و تأثیر آن‌ها بر معنی.",
+        path: "/learn/de-fa/B1/B1-M17-L01"
+      },
+      {
+        id: "B1-M17-L02",
+        title: "Substantivbildung - ساخت اسم",
+        description: "یاد بگیرید پسوندهای اسم‌ساز: -ung، -heit، -keit، -schaft، -nis و جنسیت آن‌ها.",
+        path: "/learn/de-fa/B1/B1-M17-L02"
+      },
+      {
+        id: "B1-M17-L03",
+        title: "Adjektive und Komposita - صفت و ترکیبات",
+        description: "یاد بگیرید پسوندهای صفت‌ساز (-lich، -ig، -bar) و کلمات مرکب آلمانی.",
+        path: "/learn/de-fa/B1/B1-M17-L03"
+      },
+      {
+        id: "B1-M17-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل ساختار واژه: پیشوندها، پسوندها، کلمات مرکب و استراتژی‌های یادگیری.",
+        path: "/learn/de-fa/B1/B1-M17-L04"
+      }
+    ]
   }
 ];
 

@@ -1,0 +1,506 @@
+{
+  "id": "B1-M17-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Wortbildung: Zusammenfassung", "fa": "واژه‌سازی: جمع‌بندی" },
+  "description": "مرور جامع تمام الگوهای واژه‌سازی آلمانی: پیشوندهای فعلی (جداشدنی مانند ab-, an-, auf- و جدانشدنی مانند be-, ver-, er-)، پسوندهای اسمی (-ung, -heit/-keit, -schaft, -nis, -er/-in)، پسوندهای صفتی (-lich, -ig, -bar, -los, -voll)، و کلمات مرکب. راهبردهای درک کلمات ناآشنا از طریق تحلیل اجزای واژه.",
+  "level": "B1",
+  "module": 17,
+  "lessonNumber": 4,
+  "totalSteps": 45,
+  "estimatedMinutes": 25,
+  "vocabulary": [
+    { "de": "die Wortbildung", "fa": "واژه‌سازی", "grammar": { "pos": "noun", "gender": "feminine", "plural": "die Wortbildungen" } },
+    { "de": "der Wortstamm", "fa": "ریشه کلمه", "grammar": { "pos": "noun", "gender": "masculine", "plural": "die Wortstämme" } },
+    { "de": "erkennen", "fa": "تشخیص دادن، شناختن", "grammar": { "pos": "verb", "conjugation": "erkennt, erkannte, hat erkannt" } },
+    { "de": "zerlegen", "fa": "تجزیه کردن، از هم جدا کردن", "grammar": { "pos": "verb", "conjugation": "zerlegt, zerlegte, hat zerlegt" } },
+    { "de": "erschließen", "fa": "استنباط کردن، حدس زدن", "grammar": { "pos": "verb", "conjugation": "erschließt, erschloss, hat erschlossen" } },
+    { "de": "der Wortschatz", "fa": "گنجینه لغات، واژگان", "grammar": { "pos": "noun", "gender": "masculine", "plural": "-" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "مرور کلی: واژه‌سازی در آلمانی",
+      "content": "**Wortbildung - واژه‌سازی**\n\nدر آلمانی چهار روش اصلی برای ساختن کلمات جدید داریم:\n\n| روش | مثال | توضیح |\n|-----|------|-------|\n| **پیشوند فعلی** | verstehen | پیشوند + فعل |\n| **پسوند اسمی** | die Übung | فعل/صفت + پسوند |\n| **پسوند صفتی** | verständlich | اسم/فعل + پسوند |\n| **ترکیب** | das Hausaufgabe | اسم + اسم |\n\n**چرا مهم است؟**\nبا شناخت این الگوها می‌توانید معنی کلمات ناآشنا را حدس بزنید و واژگان خود را گسترش دهید!",
+      "examples": [
+        { "de": "spielen wird zu abspielen, bespielen, vorspielen", "fa": "بازی کردن می‌شود: پخش کردن، بازی کردن روی، نمایش دادن" },
+        { "de": "frei wird zu die Freiheit wird zu freiheitlich", "fa": "آزاد می‌شود آزادی می‌شود مربوط به آزادی" }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s2",
+      "title": "پیشوندهای جداشدنی و جدانشدنی",
+      "content": "**Trennbare vs untrennbare Vorsilben**\n\n**پیشوندهای جداشدنی (Trennbar):**\n- ab-, an-, auf-, aus-, ein-, mit-, vor-, zu-\n- در جمله اصلی جدا می‌شوند: Ich **stehe** früh **auf**.\n\n**پیشوندهای جدانشدنی (Untrennbar):**\n- be-, emp-, ent-, er-, ge-, miss-, ver-, zer-\n- هرگز جدا نمی‌شوند: Ich **verstehe** das.\n- بدون ge- در Partizip II: verstanden (نه geverstanden)\n\n**راهنمای تشخیص:**\nپیشوندهای جداشدنی معمولاً تأکید دارند و معنی مستقل دارند.",
+      "examples": [
+        { "de": "aufmachen (trennbar) - Ich mache die Tür auf.", "fa": "باز کردن - من در را باز می‌کنم." },
+        { "de": "verstehen (untrennbar) - Ich verstehe dich.", "fa": "فهمیدن - من تو را می‌فهمم." }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s3",
+      "title": "پسوندها و جنسیت اسم",
+      "content": "**Suffixe und Genus**\n\n**پسوندهای مؤنث (die):**\n| پسوند | مثال |\n|-------|------|\n| -ung | die Bildung, die Übung |\n| -heit | die Freiheit, die Gesundheit |\n| -keit | die Möglichkeit, die Schwierigkeit |\n| -schaft | die Freundschaft, die Wirtschaft |\n| -in | die Lehrerin, die Ärztin |\n\n**پسوندهای خنثی (das):**\n| پسوند | مثال |\n|-------|------|\n| -nis | das Ergebnis, das Ereignis |\n| -chen | das Mädchen, das Häuschen |\n\n**پسوندهای مذکر (der):**\n| پسوند | مثال |\n|-------|------|\n| -er | der Lehrer, der Arbeiter |\n| -ling | der Lehrling, der Frühling |",
+      "examples": [
+        { "de": "üben wird zu die Übung (مؤنث با -ung)", "fa": "تمرین کردن می‌شود تمرین" },
+        { "de": "frei wird zu die Freiheit (مؤنث با -heit)", "fa": "آزاد می‌شود آزادی" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "die Wortbildung", "fa": "واژه‌سازی" },
+      "example": { "text": { "de": "Die Wortbildung ist ein wichtiger Teil der deutschen Grammatik.", "fa": "واژه‌سازی بخش مهمی از دستور زبان آلمانی است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Wortbildung",
+      "translation": "واژه‌سازی",
+      "syllables": ["Wort", "bil", "dung"],
+      "distractors": ["Vort", "bel", "dong", "ding"]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "der Wortstamm", "fa": "ریشه کلمه" },
+      "example": { "text": { "de": "Der Wortstamm von 'Freundschaft' ist 'Freund'.", "fa": "ریشه کلمه 'دوستی' کلمه 'دوست' است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Wortstamm",
+      "translation": "ریشه کلمه",
+      "syllables": ["Wort", "stamm"],
+      "distractors": ["Vort", "stomm", "stem", "Wart"]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "erkennen", "fa": "تشخیص دادن، شناختن" },
+      "example": { "text": { "de": "Kannst du das Muster erkennen?", "fa": "آیا می‌توانی الگو را تشخیص دهی؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "erkennen",
+      "translation": "تشخیص دادن",
+      "syllables": ["er", "ken", "nen"],
+      "distractors": ["ar", "kan", "nan", "nen"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام پیشوند جداشدنی است؟",
+      "options": [
+        "ver-",
+        "be-",
+        "auf-",
+        "er-"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! auf- یک پیشوند جداشدنی است: aufstehen → Ich stehe auf.", "incorrect": "auf- پیشوند جداشدنی است. پیشوندهای ver-, be-, er- جدانشدنی هستند." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "پسوند -ung چه جنسیتی به اسم می‌دهد؟",
+      "options": [
+        "مذکر (der)",
+        "مؤنث (die)",
+        "خنثی (das)",
+        "بستگی به کلمه دارد"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! همه اسم‌های با -ung مؤنث هستند: die Übung, die Bildung, die Wohnung", "incorrect": "اسم‌های با پسوند -ung همیشه مؤنث (die) هستند." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "پسوند مناسب را انتخاب کنید",
+      "sentence": "frei wird zu die Frei{0} (آزادی)",
+      "options": ["-ung", "-heit", "-schaft", "-nis"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "frei + -heit = die Freiheit (آزادی). صفت‌های ساده معمولاً با -heit اسم می‌سازند." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "پسوند مناسب را انتخاب کنید",
+      "sentence": "üben wird zu die Üb{0} (تمرین)",
+      "options": ["-heit", "-ung", "-keit", "-schaft"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "üben + -ung = die Übung (تمرین). فعل‌ها معمولاً با -ung اسم می‌سازند." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "پسوند مناسب را انتخاب کنید",
+      "sentence": "möglich wird zu die Möglich{0} (امکان)",
+      "options": ["-heit", "-ung", "-keit", "-schaft"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "möglich + -keit = die Möglichkeit. صفت‌های با -ig, -lich, -bar با -keit اسم می‌سازند." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "گفتگو: یادگیری واژگان جدید",
+      "scene": {
+        "location": "classroom",
+        "description": { "de": "Im Deutschkurs", "fa": "در کلاس آلمانی" }
+      },
+      "lines": [
+        { "speaker": "Lehrer", "text": { "de": "Heute lernen wir, wie man neue Wörter verstehen kann.", "fa": "امروز یاد می‌گیریم چگونه کلمات جدید را بفهمیم." }, "mood": "neutral" },
+        { "speaker": "Sara", "text": { "de": "Wie kann ich die Bedeutung eines unbekannten Wortes erschließen?", "fa": "چگونه می‌توانم معنی یک کلمه ناآشنا را حدس بزنم؟" }, "mood": "confused" },
+        { "speaker": "Lehrer", "text": { "de": "Zerlege das Wort in seine Teile! Zum Beispiel: 'Hausaufgabe' = Haus + Aufgabe.", "fa": "کلمه را به اجزایش تجزیه کن! مثلاً: 'تکلیف خانه' = خانه + تکلیف." }, "mood": "happy" },
+        { "speaker": "Sara", "text": { "de": "Ah, ich erkenne jetzt den Wortstamm und die Vorsilbe!", "fa": "آها، حالا ریشه کلمه و پیشوند را تشخیص می‌دهم!" }, "mood": "excited" }
+      ],
+      "questions": [
+        { "question": "معلم چه روشی را برای فهم کلمات جدید پیشنهاد کرد؟", "options": ["حفظ کردن", "تجزیه کلمه به اجزا", "استفاده از فرهنگ لغت"], "correctIndex": 1, "explanation": "معلم گفت: Zerlege das Wort in seine Teile!" },
+        { "question": "سارا چه چیزی را در کلمه تشخیص داد؟", "options": ["ریشه و پیشوند", "جنسیت", "جمع کلمه"], "correctIndex": 0, "explanation": "سارا گفت: ich erkenne jetzt den Wortstamm und die Vorsilbe!" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "zerlegen", "fa": "تجزیه کردن، از هم جدا کردن" },
+      "example": { "text": { "de": "Man kann das Wort in Vorsilbe und Stamm zerlegen.", "fa": "می‌توان کلمه را به پیشوند و ریشه تجزیه کرد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "zerlegen",
+      "translation": "تجزیه کردن",
+      "syllables": ["zer", "le", "gen"],
+      "distractors": ["zar", "la", "gan", "gar"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "erschließen", "fa": "استنباط کردن، حدس زدن" },
+      "example": { "text": { "de": "Die Bedeutung kann man aus dem Kontext erschließen.", "fa": "معنی را می‌توان از متن استنباط کرد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "erschließen",
+      "translation": "استنباط کردن",
+      "syllables": ["er", "schlie", "ßen"],
+      "distractors": ["ar", "schlo", "sen", "schla"]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "der Wortschatz", "fa": "گنجینه لغات، واژگان" },
+      "example": { "text": { "de": "Mit Wortbildung kann man seinen Wortschatz schnell erweitern.", "fa": "با واژه‌سازی می‌توان واژگان خود را سریع گسترش داد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Wortschatz",
+      "translation": "گنجینه لغات",
+      "syllables": ["Wort", "schatz"],
+      "distractors": ["Vort", "schetz", "schotz", "Wart"]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["erkennen.", "Die Vorsilbe", "kann man", "leicht"],
+      "correctOrder": [1, 2, 3, 0],
+      "correctSentence": { "de": "Die Vorsilbe kann man leicht erkennen.", "fa": "پیشوند را می‌توان به راحتی تشخیص داد." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["ich", "in Teile.", "Das Wort", "zerlege"],
+      "correctOrder": [2, 3, 0, 1],
+      "correctSentence": { "de": "Das Wort zerlege ich in Teile.", "fa": "کلمه را به اجزا تجزیه می‌کنم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["die Bedeutung", "Man kann", "aus dem Stamm", "erschließen."],
+      "correctOrder": [1, 0, 2, 3],
+      "correctSentence": { "de": "Man kann die Bedeutung aus dem Stamm erschließen.", "fa": "می‌توان معنی را از ریشه استنباط کرد." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "پیشوند ver- جداشدنی است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! ver- جدانشدنی است: verstehen, vergessen. هرگز جدا نمی‌شود." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "همه اسم‌های با پسوند -ung مؤنث (die) هستند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! پسوند -ung همیشه اسم مؤنث می‌سازد: die Übung, die Bildung, die Wohnung." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "در کلمات مرکب، جنسیت از آخرین کلمه گرفته می‌شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! در کلمات مرکب، آخرین جزء جنسیت را تعیین می‌کند: das Haus + die Aufgabe = die Hausaufgabe (مؤنث)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "گفتگو: کلمات مرکب",
+      "scene": {
+        "location": "cafe",
+        "description": { "de": "Im Café", "fa": "در کافه" }
+      },
+      "lines": [
+        { "speaker": "Tom", "text": { "de": "Deutsche Wörter sind manchmal so lang! Zum Beispiel 'Krankenversicherung'.", "fa": "کلمات آلمانی گاهی خیلی طولانی هستند! مثلاً 'بیمه درمانی'." }, "mood": "confused" },
+        { "speaker": "Eli", "text": { "de": "Zerlege es: Kranken + Versicherung. 'Kranken' kommt von 'krank'.", "fa": "تجزیه‌اش کن: بیمار + بیمه. 'بیمار' از 'مریض' می‌آید." }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Und 'Versicherung' hat die Vorsilbe 'ver-' und den Stamm 'sicher'!", "fa": "و 'بیمه' پیشوند 'ver-' و ریشه 'مطمئن' دارد!" }, "mood": "excited" },
+        { "speaker": "Eli", "text": { "de": "Genau! So kann man jeden langen Begriff verstehen.", "fa": "دقیقاً! اینطوری می‌توان هر اصطلاح طولانی را فهمید." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "کلمه Krankenversicherung از چه اجزایی تشکیل شده؟", "options": ["Krank + Versicherung", "Kranken + Versicherung", "Kranke + Sicherung"], "correctIndex": 1, "explanation": "الی گفت: Kranken + Versicherung" },
+        { "question": "ریشه کلمه Versicherung چیست؟", "options": ["ver", "sicher", "ung"], "correctIndex": 1, "explanation": "تام گفت: den Stamm 'sicher'" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "پسوند صفت‌ساز مناسب را انتخاب کنید",
+      "sentence": "Dieses Buch ist verständ{0}. (این کتاب قابل فهم است.)",
+      "options": ["-ig", "-lich", "-bar", "-los"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "verstehen + -lich = verständlich (قابل فهم). پسوند -lich معنی 'مانند' یا 'قابل' می‌دهد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "پسوند صفت‌ساز مناسب را انتخاب کنید",
+      "sentence": "Diese Aufgabe ist mach{0}. (این تکلیف انجام‌دادنی است.)",
+      "options": ["-lich", "-ig", "-bar", "-voll"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "machen + -bar = machbar (انجام‌دادنی). پسوند -bar معنی 'قابل' می‌دهد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "پسوند صفت‌ساز مناسب را انتخاب کنید",
+      "sentence": "Der Himmel ist wolk{0}. (آسمان ابری است.)",
+      "options": ["-lich", "-ig", "-bar", "-los"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "die Wolke + -ig = wolkig (ابری). پسوند -ig معنی 'دارای' می‌دهد." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "پسوند را با معنی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "-bar" },
+        { "id": "i2", "text": "-los" },
+        { "id": "i3", "text": "-voll" },
+        { "id": "i4", "text": "-lich" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "قابل (essbar = خوردنی)" },
+        { "id": "m2", "text": "بدون (arbeitslos = بیکار)" },
+        { "id": "m3", "text": "پر از (hoffnungsvoll = پرامید)" },
+        { "id": "m4", "text": "مانند (freundlich = دوستانه)" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "می‌توانم معنی این کلمه را از ریشه‌اش حدس بزنم.",
+      "sentenceTemplate": "Ich kann die Bedeutung dieses Wortes aus dem {0} {1}.",
+      "options": ["Stamm", "Vorsilbe", "erschließen", "erkennen"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Ich kann die Bedeutung dieses Wortes aus dem Stamm erschließen.", "fa": "می‌توانم معنی این کلمه را از ریشه‌اش حدس بزنم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "با واژه‌سازی می‌توانی واژگانت را گسترش دهی.",
+      "sentenceTemplate": "Mit {0} kannst du deinen {1} erweitern.",
+      "options": ["Wortbildung", "Wortstamm", "Wortschatz", "Vorsilbe"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Mit Wortbildung kannst du deinen Wortschatz erweitern.", "fa": "با واژه‌سازی می‌توانی واژگانت را گسترش دهی." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: راهبردهای واژه‌سازی",
+      "passage": {
+        "de": "Die deutsche Sprache ist bekannt für ihre langen Wörter. Aber keine Angst! Mit den richtigen Strategien kann man jedes Wort verstehen. Erstens: Zerlege das Wort in seine Teile. 'Krankenversicherung' besteht aus 'Kranken' und 'Versicherung'. Zweitens: Erkenne die Vorsilben und Nachsilben. Das Präfix 'un-' bedeutet 'nicht': unfreundlich = nicht freundlich. Das Suffix '-los' bedeutet 'ohne': arbeitslos = ohne Arbeit. Drittens: Denke an verwandte Wörter. 'Versicherung' kommt von 'sicher', also geht es um Sicherheit. Mit diesen Strategien kannst du deinen Wortschatz schnell erweitern!",
+        "fa": "زبان آلمانی به خاطر کلمات طولانی‌اش معروف است. اما نگران نباشید! با راهبردهای درست می‌توان هر کلمه‌ای را فهمید. اول: کلمه را به اجزایش تجزیه کنید. 'بیمه درمانی' از 'بیمار' و 'بیمه' تشکیل شده. دوم: پیشوندها و پسوندها را تشخیص دهید. پیشوند 'un-' یعنی 'نه': غیردوستانه = نه دوستانه. پسوند '-los' یعنی 'بدون': بیکار = بدون کار. سوم: به کلمات مرتبط فکر کنید. 'بیمه' از 'مطمئن' می‌آید، پس درباره امنیت است. با این راهبردها می‌توانید واژگان خود را سریع گسترش دهید!"
+      },
+      "questions": [
+        { "question": "اولین راهبرد برای فهم کلمات طولانی چیست؟", "options": ["حفظ کردن", "تجزیه به اجزا", "نادیده گرفتن"], "correctIndex": 1, "explanation": "متن گفت: Zerlege das Wort in seine Teile." },
+        { "question": "پیشوند un- چه معنایی دارد؟", "options": ["با", "بدون", "نه/غیر"], "correctIndex": 2, "explanation": "متن گفت: Das Präfix 'un-' bedeutet 'nicht'" },
+        { "question": "پسوند -los چه معنایی می‌دهد؟", "options": ["پر از", "بدون", "مانند"], "correctIndex": 1, "explanation": "متن گفت: Das Suffix '-los' bedeutet 'ohne'" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Das Rätsel des langen Wortes", "fa": "معمای کلمه طولانی" },
+      "characters": ["Mina", "Lehrer"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Mina sitzt im Deutschkurs und sieht ein sehr langes Wort an der Tafel.", "fa": "مینا در کلاس آلمانی نشسته و کلمه خیلی طولانی روی تخته را می‌بیند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Mina",
+          "text": { "de": "Was bedeutet 'Geschwindigkeitsbegrenzung'? Das ist unmöglich zu lernen!", "fa": "معنی 'محدودیت سرعت' چیست؟ یادگیری این غیرممکن است!" },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lehrer",
+          "text": { "de": "Zerlege es! Geschwindigkeit + Begrenzung.", "fa": "تجزیه‌اش کن! سرعت + محدودیت." },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "معلم چه راهنمایی کرد؟",
+          "options": ["حفظ کن", "تجزیه کن", "فراموش کن"],
+          "correctIndex": 1,
+          "explanation": "معلم گفت: Zerlege es!"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Mina",
+          "text": { "de": "'Geschwindigkeit' hat 'geschwind' als Stamm - das heißt 'schnell'!", "fa": "'سرعت' ریشه 'geschwind' دارد - یعنی 'تند'!" },
+          "mood": "excited"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lehrer",
+          "text": { "de": "Und 'Begrenzung' kommt von 'Grenze' - die Grenze der Geschwindigkeit!", "fa": "و 'محدودیت' از 'مرز' می‌آید - مرز سرعت!" },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "ریشه کلمه Geschwindigkeit چیست؟",
+          "options": ["Grenze", "geschwind", "Begrenzung"],
+          "correctIndex": 1,
+          "explanation": "مینا گفت: 'geschwind' als Stamm"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Mina lächelt. Jetzt kann sie jedes lange Wort verstehen!", "fa": "مینا لبخند می‌زند. حالا می‌تواند هر کلمه طولانی را بفهمد!" }
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: نوع پیشوند",
+      "instruction": "آیا این پیشوند جداشدنی است یا جدانشدنی؟",
+      "questions": [
+        { "prompt": "ver-", "left": "جداشدنی", "right": "جدانشدنی", "correctSide": "right" },
+        { "prompt": "auf-", "left": "جداشدنی", "right": "جدانشدنی", "correctSide": "left" },
+        { "prompt": "be-", "left": "جداشدنی", "right": "جدانشدنی", "correctSide": "right" },
+        { "prompt": "an-", "left": "جداشدنی", "right": "جدانشدنی", "correctSide": "left" },
+        { "prompt": "er-", "left": "جداشدنی", "right": "جدانشدنی", "correctSide": "right" },
+        { "prompt": "ab-", "left": "جداشدنی", "right": "جدانشدنی", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Die Wortbildung hilft beim Verstehen.",
+      "translation": "واژه‌سازی در فهمیدن کمک می‌کند."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Man kann den Wortstamm erkennen.",
+      "translation": "می‌توان ریشه کلمه را تشخیص داد."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Mein Wortschatz wird größer.",
+      "translation": "واژگان من بزرگتر می‌شود."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: واژه‌سازی",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "die Wortbildung = ?", "options": ["واژه‌سازی", "ریشه کلمه", "واژگان"], "correctAnswerIndex": 0 },
+        { "question": "der Wortstamm = ?", "options": ["پسوند", "ریشه کلمه", "پیشوند"], "correctAnswerIndex": 1 },
+        { "question": "erkennen = ?", "options": ["تجزیه کردن", "تشخیص دادن", "حدس زدن"], "correctAnswerIndex": 1 },
+        { "question": "zerlegen = ?", "options": ["تجزیه کردن", "ترکیب کردن", "فهمیدن"], "correctAnswerIndex": 0 },
+        { "question": "-bar = ?", "options": ["بدون", "قابل", "پر از"], "correctAnswerIndex": 1 },
+        { "question": "-los = ?", "options": ["بدون", "با", "مانند"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "die Wortbildung", "fa": "واژه‌سازی" },
+        { "de": "der Wortstamm", "fa": "ریشه کلمه" },
+        { "de": "erkennen", "fa": "تشخیص دادن" },
+        { "de": "der Wortschatz", "fa": "واژگان" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات مربوط به واژه‌سازی را پیدا کنید",
+      "targetWords": ["Stamm", "Vorsilbe", "Suffix", "Bildung", "Wort", "Teil"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "erschließen", "fa": "___", "options": ["تجزیه کردن", "استنباط کردن", "تشخیص دادن"], "correctIndex": 1 },
+        { "de": "zerlegen", "fa": "___", "options": ["ترکیب کردن", "فهمیدن", "تجزیه کردن"], "correctIndex": 2 },
+        { "de": "der Wortschatz", "fa": "___", "options": ["ریشه کلمه", "واژگان", "واژه‌سازی"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp2",
+      "title": "تبریک! بخش واژه‌سازی تمام شد!",
+      "message": "شما همه الگوهای واژه‌سازی آلمانی را یاد گرفتید!",
+      "keyPoints": [
+        "پیشوندهای جداشدنی: ab-, an-, auf-, aus-, ein-, vor-, zu- (در جمله جدا می‌شوند)",
+        "پیشوندهای جدانشدنی: be-, emp-, ent-, er-, ge-, ver-, zer- (هرگز جدا نمی‌شوند)",
+        "پسوند -ung, -heit, -keit, -schaft → اسم مؤنث (die)",
+        "پسوند -nis → معمولاً خنثی (das)",
+        "پسوند -er, -ling → اسم مذکر (der)",
+        "پسوند -bar = قابل، -los = بدون، -voll = پر از، -lich = مانند",
+        "در کلمات مرکب، آخرین جزء جنسیت را تعیین می‌کند",
+        "راهبرد: کلمه را تجزیه کن → اجزا را بشناس → معنی را حدس بزن"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "die Wortbildung", "fa": "واژه‌سازی" } },
+        { "word": { "de": "der Wortstamm", "fa": "ریشه کلمه" } },
+        { "word": { "de": "erkennen", "fa": "تشخیص دادن" } },
+        { "word": { "de": "zerlegen", "fa": "تجزیه کردن" } },
+        { "word": { "de": "erschließen", "fa": "استنباط کردن" } },
+        { "word": { "de": "der Wortschatz", "fa": "واژگان" } }
+      ]
+    }
+  ]
+}

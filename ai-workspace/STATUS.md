@@ -8,7 +8,7 @@
 
 **Create B1 lessons - lesson by lesson, wait for user test after each**
 
-Current: `B1-M16` (Temporale Nebensätze) - **MODULE COMPLETE - READY FOR USER TEST**
+Current: `B1-M17` (Wortbildung) - **MODULE COMPLETE - READY FOR USER TEST**
 
 ---
 
@@ -26,7 +26,7 @@ Current: `B1-M16` (Temporale Nebensätze) - **MODULE COMPLETE - READY FOR USER T
 |-------|---------|---------|--------|
 | A1 | 14 | 56+ | Complete |
 | A2 | 18 | 72 | **Complete** ✅ |
-| B1 | 16 | 64 | Module 16 complete |
+| B1 | 17 | 68 | Module 17 complete |
 
 ### A2 Completion (2026-02-05)
 
@@ -73,8 +73,9 @@ Current: `B1-M16` (Temporale Nebensätze) - **MODULE COMPLETE - READY FOR USER T
 | M14 | Adjektive mit Präpositionen | 4/4 | ✅ Complete |
 | M15 | Erweiterte Nebensätze | 4/4 | ✅ Complete |
 | M16 | Temporale Nebensätze | 4/4 | ✅ Complete |
+| M17 | Wortbildung | 4/4 | ✅ Complete |
 
-**Total B1: 64 lessons**
+**Total B1: 68 lessons**
 
 ---
 
@@ -254,10 +255,23 @@ Current: `B1-M16` (Temporale Nebensätze) - **MODULE COMPLETE - READY FOR USER T
 
 ---
 
+## B1 Module 17: Wortbildung (Word Formation)
+
+| Lesson | Title | Status |
+|--------|-------|--------|
+| B1-M17-L01 | Verbpräfixe (separable vs inseparable) | ✅ Complete |
+| B1-M17-L02 | Substantivbildung (-ung, -heit, -keit, -schaft) | ✅ Complete |
+| B1-M17-L03 | Adjektive + Komposita (-lich, -ig, -bar, compounds) | ✅ Complete |
+| B1-M17-L04 | Zusammenfassung | ✅ Complete |
+
+---
+
 ## Recent Changes
 
 | Date | Change |
 |------|--------|
+| 2026-02-06 | **B1 Module 17 (Wortbildung) COMPLETE - 4 lessons!** |
+| 2026-02-06 | Created B1-M17-L01 to L04 in parallel |
 | 2026-02-06 | **B1 Module 16 (Temporale Nebensätze) COMPLETE - 4 lessons!** |
 | 2026-02-06 | Created B1-M16-L01 to L04 in parallel |
 | 2026-02-06 | **B1 Module 15 (Erweiterte Nebensätze) COMPLETE - 4 lessons!** |
@@ -322,6 +336,7 @@ Current: `B1-M16` (Temporale Nebensätze) - **MODULE COMPLETE - READY FOR USER T
 15. [x] Complete B1 Module 14 (Adjektive mit Präpositionen) - 4 lessons
 16. [x] Complete B1 Module 15 (Erweiterte Nebensätze) - 4 lessons
 17. [x] Complete B1 Module 16 (Temporale Nebensätze) - 4 lessons
-18. [ ] **User tests B1-M16 lessons**
-19. [ ] Plan B1 Module 17 topic
-20. [ ] Continue B1 curriculum development
+18. [x] Complete B1 Module 17 (Wortbildung) - 4 lessons
+19. [ ] **User tests B1-M17 lessons**
+20. [ ] Plan B1 Module 18 topic
+21. [ ] Continue B1 curriculum development

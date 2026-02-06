@@ -1,0 +1,505 @@
+{
+  "id": "B1-M17-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Wortbildung: Adjektive und Komposita", "fa": "ساخت واژه: صفت‌ها و کلمات مرکب" },
+  "description": "یاد بگیرید چگونه با پسوندها صفت بسازید و کلمات مرکب آلمانی را بشناسید",
+  "level": "B1",
+  "module": 17,
+  "lessonNumber": 3,
+  "totalSteps": 45,
+  "estimatedMinutes": 25,
+  "vocabulary": [
+    { "de": "das Kompositum", "fa": "کلمه مرکب", "grammar": { "pos": "noun", "gender": "neuter", "plural": "Komposita" } },
+    { "de": "zusammensetzen", "fa": "کنار هم گذاشتن، ترکیب کردن", "grammar": { "pos": "verb" } },
+    { "de": "das Grundwort", "fa": "کلمه پایه", "grammar": { "pos": "noun", "gender": "neuter" } },
+    { "de": "das Bestimmungswort", "fa": "کلمه تعیین‌کننده", "grammar": { "pos": "noun", "gender": "neuter" } },
+    { "de": "die Fuge", "fa": "عنصر اتصال", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "endlos", "fa": "بی‌پایان", "grammar": { "pos": "adjective" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "ساخت صفت با پسوندها در آلمانی",
+      "content": "در آلمانی می‌توانیم با افزودن پسوند به اسم یا فعل، صفت بسازیم:\n\n**پسوندهای رایج:**\n\n**-lich** = مانند، -وار (شبیه فارسی «-انه»)\n- freund + lich = **freundlich** (دوستانه)\n- mög + lich = **möglich** (ممکن)\n\n**-ig** = دارای کیفیت (شبیه فارسی «-ی»)\n- Ruhe + ig = **ruhig** (آرام)\n- Sonne + ig = **sonnig** (آفتابی)\n\n**-bar** = قابل (شبیه فارسی «-پذیر»)\n- essen + bar = **essbar** (خوردنی)\n- lesen + bar = **lesbar** (خواندنی)\n\n**نکته برای فارسی‌زبانان:**\nدر فارسی هم پسوندهای مشابهی داریم: «-انه» (دوستانه)، «-ی» (آفتابی)، «-پذیر» (خوردنی).",
+      "examples": [
+        { "de": "Sie ist sehr freundlich.", "fa": "او خیلی مهربان است." },
+        { "de": "Das Wetter ist heute sonnig.", "fa": "هوا امروز آفتابی است." },
+        { "de": "Diese Pilze sind nicht essbar.", "fa": "این قارچ‌ها خوردنی نیستند." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "das Kompositum", "fa": "کلمه مرکب" },
+      "example": { "text": { "de": "\"Haustür\" ist ein Kompositum aus \"Haus\" und \"Tür\".", "fa": "«Haustür» کلمه مرکبی از «Haus» و «Tür» است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Kompositum",
+      "translation": "کلمه مرکب",
+      "syllables": ["Kom", "po", "si", "tum"],
+      "distractors": ["Kam", "pa", "se", "tom"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "zusammensetzen", "fa": "کنار هم گذاشتن، ترکیب کردن" },
+      "example": { "text": { "de": "Wir setzen zwei Wörter zusammen.", "fa": "ما دو کلمه را کنار هم می‌گذاریم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "zusammensetzen",
+      "translation": "ترکیب کردن",
+      "syllables": ["zu", "sam", "men", "set", "zen"],
+      "distractors": ["za", "som", "mon", "zet"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "das Grundwort", "fa": "کلمه پایه" },
+      "example": { "text": { "de": "Das Grundwort bestimmt den Artikel.", "fa": "کلمه پایه، حرف تعریف را مشخص می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Grundwort",
+      "translation": "کلمه پایه",
+      "syllables": ["Grund", "wort"],
+      "distractors": ["Grand", "wert", "wart", "Grond"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "پسوند «-lich» چه معنایی به کلمه می‌دهد؟",
+      "options": [
+        "بدون چیزی",
+        "پر از چیزی",
+        "مانند، شبیه",
+        "قابل انجام"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! -lich معنای «مانند» یا «شبیه» می‌دهد، مثل freundlich (دوستانه).", "incorrect": "-lich معنای «مانند» یا «شبیه» می‌دهد، مثل freundlich (دوستانه)." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "کدام پسوند برای ساختن صفت «آفتابی» (sonnig) استفاده شده؟",
+      "sentence": "Sonne + {0} = sonnig",
+      "options": ["-lich", "-ig", "-bar", "-los"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "پسوند -ig برای بیان «دارای کیفیت» استفاده می‌شود: sonnig یعنی دارای آفتاب." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "پسوندهای -los و -voll",
+      "content": "دو پسوند متضاد در آلمانی:\n\n**-los** = بدون (شبیه فارسی «بی-»)\n- arbeits + los = **arbeitslos** (بیکار)\n- hoffnungs + los = **hoffnungslos** (ناامید)\n- kosten + los = **kostenlos** (رایگان)\n- end + los = **endlos** (بی‌پایان)\n\n**-voll** = پر از (شبیه فارسی «پر-» یا «-ناک»)\n- wunder + voll = **wundervoll** (شگفت‌انگیز)\n- liebe + voll = **liebevoll** (پر از عشق، مهربان)\n- hoffnungs + voll = **hoffnungsvoll** (پرامید)\n\n**نکته:**\nگاهی بین کلمه و پسوند یک «s» اضافه می‌شود (Fugen-s):\n- Hoffnung + **s** + los = hoffnungslos",
+      "examples": [
+        { "de": "Der Film war endlos lang.", "fa": "فیلم بی‌نهایت طولانی بود." },
+        { "de": "Sie ist eine liebevolle Mutter.", "fa": "او مادری مهربان است." },
+        { "de": "Das Konzert war kostenlos.", "fa": "کنسرت رایگان بود." }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "گفتگو درباره یادگیری زبان",
+      "scene": {
+        "location": "classroom",
+        "description": { "de": "Im Deutschkurs sprechen zwei Lernende über Wortbildung.", "fa": "در کلاس آلمانی دو زبان‌آموز درباره ساخت واژه صحبت می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Mina", "text": { "de": "Ich finde die deutsche Wortbildung wundervoll!", "fa": "من ساخت واژه آلمانی را شگفت‌انگیز می‌دانم!" }, "mood": "excited" },
+        { "speaker": "Ali", "text": { "de": "Ja, aber manchmal ist es hoffnungslos schwer.", "fa": "آره، ولی گاهی به طرز ناامیدکننده‌ای سخت است." }, "mood": "confused" },
+        { "speaker": "Mina", "text": { "de": "Sei nicht so! Es ist machbar, wenn man übt.", "fa": "اینطور نباش! اگر تمرین کنی، شدنی است." }, "mood": "happy" },
+        { "speaker": "Ali", "text": { "de": "Du hast recht. Das ist sehr freundlich von dir!", "fa": "حق با توست. خیلی مهربانی!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "مینا ساخت واژه آلمانی را چگونه توصیف می‌کند؟", "options": ["سخت", "شگفت‌انگیز", "ناامیدکننده"], "correctIndex": 1, "explanation": "مینا گفت: wundervoll (شگفت‌انگیز)" },
+        { "question": "علی چه احساسی درباره یادگیری دارد؟", "options": ["خیلی آسان است", "گاهی خیلی سخت است", "کاملاً غیرممکن است"], "correctIndex": 1, "explanation": "علی گفت: manchmal ist es hoffnungslos schwer" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "das Bestimmungswort", "fa": "کلمه تعیین‌کننده" },
+      "example": { "text": { "de": "Bei \"Haustür\" ist \"Haus\" das Bestimmungswort.", "fa": "در «Haustür» کلمه «Haus» تعیین‌کننده است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "Bestimmungswort",
+      "translation": "کلمه تعیین‌کننده",
+      "syllables": ["Be", "stim", "mungs", "wort"],
+      "distractors": ["Ba", "stem", "mangs", "wert"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "die Fuge", "fa": "عنصر اتصال، درز" },
+      "example": { "text": { "de": "Das \"s\" in \"Lieblingslied\" ist eine Fuge.", "fa": "حرف «s» در «Lieblingslied» یک عنصر اتصال است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "Fuge",
+      "translation": "عنصر اتصال",
+      "syllables": ["Fu", "ge"],
+      "distractors": ["Fa", "ga", "go", "Fe"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "صفت مناسب را انتخاب کنید",
+      "sentence": "Diese Beeren sind nicht {0}. Du darfst sie nicht essen!",
+      "options": ["freundlich", "essbar", "sonnig", "endlos"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "essbar (خوردنی) - این توت‌ها خوردنی نیستند. نباید آنها را بخوری!" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "صفت مناسب را انتخاب کنید",
+      "sentence": "Er ist seit drei Monaten {0} und sucht eine neue Stelle.",
+      "options": ["arbeitslos", "wundervoll", "lesbar", "täglich"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "arbeitslos (بیکار) - او سه ماه است که بیکار است و دنبال کار جدید می‌گردد." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["ist", "Das", "Kompositum", "zusammengesetzt.", "aus", "zwei", "Wörtern", "ein"],
+      "correctOrder": [1, 7, 2, 0, 4, 5, 6, 3],
+      "correctSentence": { "de": "Das ein Kompositum ist aus zwei Wörtern zusammengesetzt.", "fa": "یک کلمه مرکب از دو واژه ترکیب شده است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "پسوند -bar معنای «قابل انجام» می‌دهد، مثل essbar (خوردنی) و lesbar (خواندنی).",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! -bar شبیه پسوند «-پذیر» در فارسی است و معنای «قابل» می‌دهد." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "پسوندهای -los و -voll هر دو معنای یکسانی دارند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! -los یعنی «بدون» (مثل بیکار) و -voll یعنی «پر از» (مثل شگفت‌انگیز). این دو متضاد هستند." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s8",
+      "title": "کلمات مرکب (Komposita) در آلمانی",
+      "content": "آلمانی به ساختن کلمات مرکب بسیار معروف است!\n\n**ساختار کلمه مرکب:**\n**Bestimmungswort** (تعیین‌کننده) + **Grundwort** (پایه)\n\n**مثال:**\nHaus + Tür = **Haustür** (درب خانه)\nBrief + Kasten = **Briefkasten** (صندوق پست)\nHand + Schuh = **Handschuh** (دستکش)\n\n**قاعده طلایی:**\n کلمه آخر (Grundwort) جنس کل کلمه مرکب را تعیین می‌کند:\n- der Schuh → **der** Handschuh\n- die Tür → **die** Haustür\n- der Kasten → **der** Briefkasten\n\n**عناصر اتصال (Fugenelemente):**\nگاهی یک حرف یا هجا بین دو کلمه قرار می‌گیرد:\n- Liebling + **s** + Lied = **Lieblingslied** (آهنگ مورد علاقه)\n- Arbeit + **s** + los = **arbeitslos** (بیکار)",
+      "examples": [
+        { "de": "Der Hausschuh ist bequem.", "fa": "دمپایی راحت است." },
+        { "de": "Mein Lieblingsbuch ist spannend.", "fa": "کتاب مورد علاقه‌ام هیجان‌انگیز است." },
+        { "de": "Der Briefkasten ist voll.", "fa": "صندوق پست پر است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "endlos", "fa": "بی‌پایان، بی‌انتها" },
+      "example": { "text": { "de": "Die Wüste scheint endlos zu sein.", "fa": "بیابان به نظر بی‌پایان می‌رسد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "endlos",
+      "translation": "بی‌پایان",
+      "syllables": ["end", "los"],
+      "distractors": ["and", "las", "lus", "ond"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "در کلمه مرکب «Haustür» کدام کلمه جنس را تعیین می‌کند؟",
+      "options": [
+        "Haus (کلمه اول)",
+        "Tür (کلمه آخر)",
+        "هر دو با هم",
+        "کلمه‌ای که حرف تعریف der دارد"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! کلمه آخر (Grundwort) جنس را تعیین می‌کند: die Tür → die Haustür", "incorrect": "کلمه آخر (Grundwort) جنس را تعیین می‌کند: die Tür → die Haustür" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "خرید در فروشگاه",
+      "scene": {
+        "location": "store",
+        "description": { "de": "Im Geschäft sucht ein Kunde etwas.", "fa": "در فروشگاه یک مشتری دنبال چیزی می‌گردد." }
+      },
+      "lines": [
+        { "speaker": "Kunde", "text": { "de": "Haben Sie Handschuhe?", "fa": "دستکش دارید؟" }, "mood": "neutral" },
+        { "speaker": "Verkäufer", "text": { "de": "Ja, die sind kostenlos heute!", "fa": "بله، امروز رایگان هستند!" }, "mood": "happy" },
+        { "speaker": "Kunde", "text": { "de": "Wundervoll! Ich brauche auch Hausschuhe.", "fa": "عالی! دمپایی هم لازم دارم." }, "mood": "excited" },
+        { "speaker": "Verkäufer", "text": { "de": "Die Auswahl ist riesig - fast endlos!", "fa": "انتخاب بسیار زیاد است - تقریباً بی‌پایان!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "دستکش‌ها چه ویژگی‌ای دارند؟", "options": ["گران هستند", "رایگان هستند", "ناموجود هستند"], "correctIndex": 1, "explanation": "فروشنده گفت: kostenlos (رایگان)" },
+        { "question": "فروشنده تنوع را چگونه توصیف کرد؟", "options": ["کم", "متوسط", "تقریباً بی‌پایان"], "correctIndex": 2, "explanation": "فروشنده گفت: fast endlos (تقریباً بی‌پایان)" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "sentence": "Das {0} bestimmt den Artikel des Kompositums.",
+      "options": ["Bestimmungswort", "Grundwort", "Fuge", "Kompositum"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Grundwort (کلمه پایه) جنس کلمه مرکب را تعیین می‌کند." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "کدام صفت مناسب است؟",
+      "sentence": "Sie ist immer {0} und hilft allen gern.",
+      "options": ["hoffnungslos", "arbeitslos", "liebevoll", "endlos"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "liebevoll (مهربان، پر از عشق) - او همیشه مهربان است و با کمال میل به همه کمک می‌کند." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Lieblingslied", "Mein", "traurig.", "aber", "schön", "ist"],
+      "correctOrder": [1, 0, 5, 4, 3, 2],
+      "correctSentence": { "de": "Mein Lieblingslied ist schön aber traurig.", "fa": "آهنگ مورد علاقه‌ام زیبا ولی غمگین است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["ist", "Diese", "lesbar.", "Schrift", "nicht", "gut"],
+      "correctOrder": [1, 3, 0, 4, 5, 2],
+      "correctSentence": { "de": "Diese Schrift ist nicht gut lesbar.", "fa": "این خط به خوبی خوانا نیست." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "در کلمه «Lieblingslied» حرف «s» یک عنصر اتصال (Fuge) است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! Liebling + s + Lied = Lieblingslied. این «s» یک Fugen-s است که دو کلمه را به هم وصل می‌کند." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "پسوند را با معنای آن جور کنید",
+      "items": [
+        { "id": "i1", "text": "-lich" },
+        { "id": "i2", "text": "-ig" },
+        { "id": "i3", "text": "-bar" },
+        { "id": "i4", "text": "-los" },
+        { "id": "i5", "text": "-voll" },
+        { "id": "i6", "text": "Grundwort" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "مانند، -انه" },
+        { "id": "m2", "text": "دارای کیفیت، -ی" },
+        { "id": "m3", "text": "قابل، -پذیر" },
+        { "id": "m4", "text": "بدون، بی-" },
+        { "id": "m5", "text": "پر از" },
+        { "id": "m6", "text": "تعیین‌کننده جنس" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "این کتاب خوانا نیست.",
+      "sentenceTemplate": "Dieses Buch ist nicht {0}.",
+      "options": ["essbar", "lesbar", "machbar", "trinkbar"],
+      "correctAnswers": [1],
+      "correctTranslation": { "de": "Dieses Buch ist nicht lesbar.", "fa": "این کتاب خوانا نیست." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "او یک مادر مهربان است.",
+      "sentenceTemplate": "Sie ist eine {0} Mutter.",
+      "options": ["hoffnungslose", "liebevolle", "arbeitslose", "endlose"],
+      "correctAnswers": [1],
+      "correctTranslation": { "de": "Sie ist eine liebevolle Mutter.", "fa": "او یک مادر مهربان است." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: زبان آلمانی و کلمات مرکب",
+      "passage": {
+        "de": "Die deutsche Sprache ist für ihre langen Wörter bekannt. Das liegt an den Komposita. Ein Kompositum besteht aus mindestens zwei Wörtern: dem Bestimmungswort und dem Grundwort. Das Grundwort steht immer am Ende und bestimmt den Artikel. Zwischen den Wörtern kann eine Fuge stehen, zum Beispiel ein \"s\". Das macht das Wort manchmal lesbarer. Für Deutschlerner ist das am Anfang hoffnungslos schwer, aber mit Übung wird es machbar!",
+        "fa": "زبان آلمانی به کلمات طولانی‌اش معروف است. این به خاطر کلمات مرکب است. یک کلمه مرکب حداقل از دو کلمه تشکیل شده: کلمه تعیین‌کننده و کلمه پایه. کلمه پایه همیشه در آخر قرار دارد و حرف تعریف را مشخص می‌کند. بین کلمات ممکن است یک عنصر اتصال باشد، مثلاً یک «s». این گاهی کلمه را خواناتر می‌کند. برای زبان‌آموزان آلمانی اول به طرز ناامیدکننده‌ای سخت است، ولی با تمرین شدنی می‌شود!"
+      },
+      "questions": [
+        { "question": "چرا زبان آلمانی کلمات طولانی دارد؟", "options": ["به خاطر حروف بزرگ", "به خاطر کلمات مرکب", "به خاطر گرامر پیچیده"], "correctIndex": 1, "explanation": "متن می‌گوید: Das liegt an den Komposita" },
+        { "question": "کدام کلمه در کلمه مرکب حرف تعریف را تعیین می‌کند؟", "options": ["کلمه اول", "کلمه آخر (Grundwort)", "هر دو با هم"], "correctIndex": 1, "explanation": "متن می‌گوید: Das Grundwort bestimmt den Artikel" },
+        { "question": "یادگیری کلمات مرکب برای زبان‌آموزان چگونه است؟", "options": ["از اول آسان", "اول سخت ولی با تمرین شدنی", "همیشه غیرممکن"], "correctIndex": 1, "explanation": "متن می‌گوید: am Anfang hoffnungslos schwer, aber mit Übung wird es machbar" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Das wundervolle Geschenk", "fa": "هدیه شگفت‌انگیز" },
+      "characters": ["Sara", "Oma"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Sara besucht ihre Oma. Sie hat ein Geschenk dabei.", "fa": "سارا به دیدن مادربزرگش می‌رود. یک هدیه همراهش دارد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sara",
+          "text": { "de": "Oma, ich habe ein wundervolles Geschenk für dich!", "fa": "مادربزرگ، یک هدیه شگفت‌انگیز برایت دارم!" },
+          "mood": "excited"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Oma",
+          "text": { "de": "Ach, wie liebevoll von dir! Was ist es denn?", "fa": "آه، چقدر مهربانی! چیه؟" },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "سارا هدیه‌اش را چگونه توصیف می‌کند؟",
+          "options": ["کوچک", "شگفت‌انگیز", "گران"],
+          "correctIndex": 1,
+          "explanation": "سارا گفت: wundervoll (شگفت‌انگیز)"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Sara gibt ihr ein selbstgemachtes Buch mit Familienfotos.", "fa": "سارا یک کتاب دست‌ساز با عکس‌های خانوادگی به او می‌دهد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Oma",
+          "text": { "de": "Ein Fotobuch! Das ist mein neues Lieblingsbuch!", "fa": "یک آلبوم عکس! این کتاب مورد علاقه جدیدم است!" },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "«Fotobuch» از چه کلماتی ساخته شده؟",
+          "options": ["Foto + Buch", "Fotos + Buch", "Foto + Bücher"],
+          "correctIndex": 0,
+          "explanation": "Fotobuch یک کلمه مرکب از Foto (عکس) + Buch (کتاب) است."
+        }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Das Grundwort bestimmt den Artikel.",
+      "translation": "کلمه پایه حرف تعریف را تعیین می‌کند."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Sie ist eine liebevolle Mutter.",
+      "translation": "او یک مادر مهربان است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Das Konzert war kostenlos.",
+      "translation": "کنسرت رایگان بود."
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع",
+      "instruction": "ترجمه درست را انتخاب کنید!",
+      "questions": [
+        { "prompt": "freundlich", "left": "دوستانه", "right": "دشمنانه", "correctSide": "left" },
+        { "prompt": "hoffnungslos", "left": "پرامید", "right": "ناامید", "correctSide": "right" },
+        { "prompt": "essbar", "left": "خوردنی", "right": "نوشیدنی", "correctSide": "left" },
+        { "prompt": "kostenlos", "left": "گران", "right": "رایگان", "correctSide": "right" },
+        { "prompt": "wundervoll", "left": "شگفت‌انگیز", "right": "عادی", "correctSide": "left" },
+        { "prompt": "endlos", "left": "محدود", "right": "بی‌پایان", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "دوستانه → ?", "options": ["ruhig", "freundlich", "traurig"], "correctAnswerIndex": 1 },
+        { "question": "بیکار → ?", "options": ["arbeitslos", "hoffnungslos", "kostenlos"], "correctAnswerIndex": 0 },
+        { "question": "خوردنی → ?", "options": ["trinkbar", "lesbar", "essbar"], "correctAnswerIndex": 2 },
+        { "question": "رایگان → ?", "options": ["endlos", "kostenlos", "liebevoll"], "correctAnswerIndex": 1 },
+        { "question": "شگفت‌انگیز → ?", "options": ["wundervoll", "hoffnungsvoll", "liebevoll"], "correctAnswerIndex": 0 },
+        { "question": "بی‌پایان → ?", "options": ["machbar", "lesbar", "endlos"], "correctAnswerIndex": 2 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "freundlich", "fa": "دوستانه" },
+        { "de": "essbar", "fa": "خوردنی" },
+        { "de": "arbeitslos", "fa": "بیکار" },
+        { "de": "wundervoll", "fa": "شگفت‌انگیز" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات این درس را پیدا کنید",
+      "targetWords": ["freundlich", "sonnig", "essbar", "endlos", "liebevoll", "kostenlos"],
+      "gridSize": { "rows": 12, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "sentence": "Das \"s\" zwischen \"Liebling\" und \"Lied\" heißt {0}.",
+      "options": ["Grundwort", "Bestimmungswort", "Fuge", "Kompositum"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "Fuge (عنصر اتصال) - حرف «s» بین دو کلمه یک Fugen-s است." }
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "Kompositum", "fa": "کلمه مرکب", "options": ["کلمه ساده", "کلمه مرکب", "حرف اضافه", "صفت"], "correctIndex": 1 },
+        { "de": "Grundwort", "fa": "کلمه پایه", "options": ["کلمه اول", "کلمه پایه", "کلمه مرکب", "پسوند"], "correctIndex": 1 },
+        { "de": "liebevoll", "fa": "مهربان", "options": ["ناامید", "بیکار", "مهربان", "رایگان"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما ساخت صفت با پسوندها و کلمات مرکب آلمانی را یاد گرفتید. حالا می‌توانید کلمات جدید را بهتر بفهمید و حتی خودتان بسازید!",
+      "keyPoints": [
+        "پسوند -lich معنای «مانند» می‌دهد (freundlich = دوستانه)",
+        "پسوند -ig معنای «دارای» می‌دهد (sonnig = آفتابی)",
+        "پسوند -bar معنای «قابل» می‌دهد (essbar = خوردنی)",
+        "پسوند -los معنای «بدون» می‌دهد (arbeitslos = بیکار)",
+        "پسوند -voll معنای «پر از» می‌دهد (wundervoll = شگفت‌انگیز)",
+        "در کلمات مرکب، کلمه آخر (Grundwort) جنس را تعیین می‌کند"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "das Kompositum", "fa": "کلمه مرکب" } },
+        { "word": { "de": "zusammensetzen", "fa": "ترکیب کردن" } },
+        { "word": { "de": "das Grundwort", "fa": "کلمه پایه" } },
+        { "word": { "de": "das Bestimmungswort", "fa": "کلمه تعیین‌کننده" } },
+        { "word": { "de": "die Fuge", "fa": "عنصر اتصال" } },
+        { "word": { "de": "endlos", "fa": "بی‌پایان" } }
+      ]
+    }
+  ]
+}

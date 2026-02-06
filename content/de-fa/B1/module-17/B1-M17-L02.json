@@ -1,0 +1,511 @@
+{
+  "id": "B1-M17-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Wortbildung: Substantivbildung", "fa": "ساخت واژه: ساختن اسم با پسوند" },
+  "description": "یاد بگیرید چگونه با استفاده از پسوندهای مختلف مانند -ung، -heit، -keit، -schaft و -nis از فعل‌ها و صفت‌ها اسم بسازید. این مهارت دایره لغات شما را به شدت افزایش می‌دهد.",
+  "level": "B1",
+  "module": 17,
+  "lessonNumber": 2,
+  "totalSteps": 45,
+  "estimatedMinutes": 25,
+  "vocabulary": [
+    { "de": "das Suffix", "fa": "پسوند", "grammar": { "pos": "noun", "gender": "neuter" } },
+    { "de": "bilden", "fa": "ساختن، تشکیل دادن", "grammar": { "pos": "verb" } },
+    { "de": "ableiten", "fa": "مشتق کردن، استخراج کردن", "grammar": { "pos": "verb" } },
+    { "de": "das Substantiv", "fa": "اسم (در دستور زبان)", "grammar": { "pos": "noun", "gender": "neuter" } },
+    { "de": "weiblich", "fa": "مؤنث", "grammar": { "pos": "adjective" } },
+    { "de": "männlich", "fa": "مذکر", "grammar": { "pos": "adjective" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "ساختن اسم با پسوند (Substantivbildung mit Suffixen)",
+      "content": "**Substantivbildung - ساختن اسم**\n\nدر آلمانی می‌توانید از فعل‌ها و صفت‌ها اسم‌های جدید بسازید. این کار با افزودن **پسوند** (Suffix) انجام می‌شود.\n\n**چرا مهم است؟**\n- دایره لغات شما را چند برابر می‌کند\n- الگوهای قابل پیش‌بینی دارد\n- جنسیت اسم را تعیین می‌کند\n\n**پسوندهای مهم:**\n- **-ung** (از فعل → اسم مؤنث)\n- **-heit/-keit** (از صفت → اسم مؤنث)\n- **-schaft** (انتزاعی/جمعی → اسم مؤنث)\n- **-nis** (نتیجه/حالت → اسم خنثی)\n- **-er/-in** (شخص انجام‌دهنده → مذکر/مؤنث)\n\n**نکته کلیدی:** جنسیت اسم را پسوند تعیین می‌کند!",
+      "examples": [
+        { "de": "üben wird zu die Übung", "fa": "üben می‌شود die Übung (تمرین کردن می‌شود تمرین)" },
+        { "de": "frei wird zu die Freiheit", "fa": "frei می‌شود die Freiheit (آزاد می‌شود آزادی)" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "die Übung", "fa": "تمرین" },
+      "example": { "text": { "de": "Übung macht den Meister.", "fa": "تمرین استاد می‌سازد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Übung",
+      "translation": "تمرین",
+      "syllables": ["Ü", "bung"],
+      "distractors": ["U", "bang", "bong"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "die Bedeutung", "fa": "معنی، اهمیت" },
+      "example": { "text": { "de": "Was ist die Bedeutung dieses Wortes?", "fa": "معنی این کلمه چیست؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Bedeutung",
+      "translation": "معنی",
+      "syllables": ["Be", "deu", "tung"],
+      "distractors": ["Bi", "doi", "tang"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "die Freiheit", "fa": "آزادی" },
+      "example": { "text": { "de": "Freiheit ist ein wichtiger Wert.", "fa": "آزادی یک ارزش مهم است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Freiheit",
+      "translation": "آزادی",
+      "syllables": ["Frei", "heit"],
+      "distractors": ["Fro", "hait", "hat"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام پسوند از فعل اسم مؤنث می‌سازد؟",
+      "options": [
+        "-nis",
+        "-er",
+        "-ung",
+        "-chen"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! پسوند -ung از فعل اسم مؤنث (die) می‌سازد.", "incorrect": "پسوند -ung از فعل اسم مؤنث می‌سازد: üben می‌شود die Übung" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را با پسوند مناسب پر کنید",
+      "sentence": "bedeuten wird zu die Bedeut{0}",
+      "options": ["-ung", "-heit", "-keit", "-schaft"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "پسوند -ung به فعل bedeuten اضافه می‌شود: bedeuten می‌شود die Bedeutung" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "گفتگو درباره یادگیری زبان",
+      "scene": {
+        "location": "classroom",
+        "description": { "de": "Im Deutschkurs. Lisa und Ahmed sprechen über Wortbildung.", "fa": "در کلاس آلمانی. لیزا و احمد درباره ساخت واژه صحبت می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Ahmed, wie merkst du dir die vielen deutschen Wörter?", "fa": "احمد، چطور این همه کلمه آلمانی را حفظ می‌کنی؟" }, "mood": "confused" },
+        { "speaker": "Ahmed", "text": { "de": "Ich lerne die Suffixe! Dann verstehe ich die Wortbildung.", "fa": "پسوندها را یاد می‌گیرم! اینطوری ساخت واژه را می‌فهمم." }, "mood": "happy" },
+        { "speaker": "Lisa", "text": { "de": "Kannst du mir ein Beispiel geben?", "fa": "می‌توانی یک مثال بزنی؟" }, "mood": "neutral" },
+        { "speaker": "Ahmed", "text": { "de": "Klar! Aus 'üben' wird 'die Übung'. Das Suffix -ung macht feminine Nomen.", "fa": "البته! از üben می‌شود die Übung. پسوند -ung اسم مؤنث می‌سازد." }, "mood": "excited" }
+      ],
+      "questions": [
+        { "question": "احمد چگونه کلمات را یاد می‌گیرد؟", "options": ["با حفظ کردن", "با یادگیری پسوندها", "با نوشتن"], "correctIndex": 1, "explanation": "احمد گفت: Ich lerne die Suffixe!" },
+        { "question": "پسوند -ung چه نوع اسمی می‌سازد؟", "options": ["مذکر", "مؤنث", "خنثی"], "correctIndex": 1, "explanation": "احمد گفت: Das Suffix -ung macht feminine Nomen." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Meister.", "den", "macht", "Übung"],
+      "correctOrder": [3, 2, 1, 0],
+      "correctSentence": { "de": "Übung macht den Meister.", "fa": "تمرین استاد می‌سازد." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "اسم‌هایی که با پسوند -ung ساخته می‌شوند همیشه مؤنث (die) هستند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! همه اسم‌های با پسوند -ung مؤنث هستند: die Übung, die Bedeutung, die Entscheidung" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "پسوندهای -heit و -keit",
+      "content": "**-heit و -keit - از صفت به اسم**\n\nاین پسوندها از صفت اسم **مؤنث** می‌سازند:\n\n**-heit** بعد از:\n- صامت‌ها: frei می‌شود die Freiheit\n- کلمات با -en, -er, -el: offen می‌شود die Offenheit\n\n**-keit** بعد از:\n- صفت‌های با -ig, -lich, -sam, -bar:\n  - möglich می‌شود die Möglichkeit\n  - schwierig می‌شود die Schwierigkeit\n  - freundlich می‌شود die Freundlichkeit\n\n**معادل فارسی:** مثل پسوند «-ی» در فارسی:\n- آزاد می‌شود آزادی (frei به Freiheit)\n- زیبا می‌شود زیبایی (schön به Schönheit)",
+      "examples": [
+        { "de": "schön wird zu die Schönheit", "fa": "schön می‌شود die Schönheit (زیبا می‌شود زیبایی)" },
+        { "de": "möglich wird zu die Möglichkeit", "fa": "möglich می‌شود die Möglichkeit (ممکن می‌شود امکان)" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "die Möglichkeit", "fa": "امکان، احتمال" },
+      "example": { "text": { "de": "Es gibt viele Möglichkeiten.", "fa": "امکانات زیادی وجود دارد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "Möglichkeit",
+      "translation": "امکان",
+      "syllables": ["Mög", "lich", "keit"],
+      "distractors": ["Mug", "lach", "kait"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "die Schwierigkeit", "fa": "دشواری، مشکل" },
+      "example": { "text": { "de": "Die Schwierigkeit liegt im Detail.", "fa": "دشواری در جزئیات است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "Schwierigkeit",
+      "translation": "دشواری",
+      "syllables": ["Schwie", "rig", "keit"],
+      "distractors": ["Schwa", "rag", "kait"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "چرا می‌گوییم «die Möglichkeit» و نه «die Möglichheit»؟",
+      "options": [
+        "چون möglich با -lich تمام می‌شود",
+        "چون استثنا است",
+        "چون مذکر است",
+        "فرقی نمی‌کند"
+      ],
+      "correctAnswerIndex": 0,
+      "feedback": { "correct": "آفرین! صفت‌های با -lich پسوند -keit می‌گیرند.", "incorrect": "صفت‌هایی که با -ig, -lich, -sam, -bar تمام می‌شوند پسوند -keit می‌گیرند." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "پسوند مناسب را انتخاب کنید",
+      "sentence": "schön wird zu die Schön{0}",
+      "options": ["-heit", "-keit", "-ung", "-schaft"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "schön با صامت تمام می‌شود، پس پسوند -heit می‌گیرد: die Schönheit" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "صحبت درباره امکانات",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Büro. Sarah und Max besprechen ein Projekt.", "fa": "در دفتر. سارا و مکس درباره یک پروژه بحث می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Sarah", "text": { "de": "Welche Möglichkeiten haben wir?", "fa": "چه امکاناتی داریم؟" }, "mood": "neutral" },
+        { "speaker": "Max", "text": { "de": "Die Schwierigkeit ist das Budget.", "fa": "مشکل بودجه است." }, "mood": "sad" },
+        { "speaker": "Sarah", "text": { "de": "Gibt es keine andere Möglichkeit?", "fa": "امکان دیگری نیست؟" }, "mood": "confused" },
+        { "speaker": "Max", "text": { "de": "Doch, aber wir brauchen mehr Freiheit bei der Planung.", "fa": "چرا، ولی آزادی بیشتری در برنامه‌ریزی نیاز داریم." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "مشکل اصلی چیست؟", "options": ["زمان", "بودجه", "کارمندان"], "correctIndex": 1, "explanation": "مکس گفت: Die Schwierigkeit ist das Budget." },
+        { "question": "آن‌ها به چه چیزی نیاز دارند؟", "options": ["پول بیشتر", "آزادی بیشتر در برنامه‌ریزی", "کارمند بیشتر"], "correctIndex": 1, "explanation": "مکس گفت: Wir brauchen mehr Freiheit bei der Planung." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Möglichkeiten.", "viele", "es", "gibt"],
+      "correctOrder": [2, 3, 1, 0],
+      "correctSentence": { "de": "Es gibt viele Möglichkeiten.", "fa": "امکانات زیادی وجود دارد." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "صفت‌هایی که با -ig تمام می‌شوند پسوند -heit می‌گیرند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! صفت‌های با -ig پسوند -keit می‌گیرند: schwierig می‌شود die Schwierigkeit" }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "die Freundschaft", "fa": "دوستی" },
+      "example": { "text": { "de": "Unsere Freundschaft ist mir wichtig.", "fa": "دوستی ما برایم مهم است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Freundschaft",
+      "translation": "دوستی",
+      "syllables": ["Freund", "schaft"],
+      "distractors": ["Frond", "shaft", "schoft"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "پسوند مناسب را انتخاب کنید",
+      "sentence": "Freund wird zu die Freund{0}",
+      "options": ["-schaft", "-heit", "-ung", "-keit"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "پسوند -schaft برای روابط و مفاهیم جمعی استفاده می‌شود: Freund می‌شود die Freundschaft" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جنسیت درست را انتخاب کنید",
+      "sentence": "{0} Ergebnis war überraschend.",
+      "options": ["Das", "Die", "Der", "Den"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "اسم‌های با پسوند -nis خنثی (das) هستند: das Ergebnis" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "پسوندهای -schaft و -nis",
+      "content": "**-schaft - روابط و مفاهیم جمعی**\n\nاز اسم یا صفت اسم **مؤنث** می‌سازد:\n- Freund می‌شود die Freundschaft (دوستی)\n- Gesellschaft جامعه\n- Wissenschaft علم\n\n**-nis - نتیجه یا حالت**\n\nاز فعل یا صفت اسم **خنثی** می‌سازد:\n- das Ergebnis (نتیجه) از ergeben\n- das Erlebnis (تجربه) از erleben\n- das Geheimnis (راز) از geheim\n\n**خلاصه جنسیت:**\n-ung, -heit, -keit, -schaft: die (مؤنث)\n-nis: das (خنثی)\n-er: der (مذکر)",
+      "examples": [
+        { "de": "die Gesellschaft (جامعه)", "fa": "die Gesellschaft" },
+        { "de": "das Ergebnis (نتیجه)", "fa": "das Ergebnis" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["wichtig.", "mir", "ist", "Freundschaft", "Unsere"],
+      "correctOrder": [4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Unsere Freundschaft ist mir wichtig.", "fa": "دوستی ما برایم مهم است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "اسم‌های با پسوند -nis همیشه خنثی (das) هستند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! اسم‌های با -nis خنثی هستند: das Ergebnis, das Erlebnis, das Geheimnis" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "sentence": "Die {0} zeigt, dass wir richtig lagen.",
+      "options": ["Ergebnis", "Entscheidung", "Möglichkeit", "Freiheit"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "das Ergebnis به معنی «نتیجه» است: نتیجه نشان می‌دهد که درست گفتیم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "پسوند مناسب را انتخاب کنید",
+      "sentence": "lehren wird zu der Lehr{0}",
+      "options": ["-er", "-ung", "-heit", "-keit"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "پسوند -er برای شخص انجام‌دهنده کار استفاده می‌شود: lehren می‌شود der Lehrer (معلم)" }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "کلمات آلمانی را با معنی فارسی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "die Übung" },
+        { "id": "i2", "text": "die Freiheit" },
+        { "id": "i3", "text": "die Freundschaft" },
+        { "id": "i4", "text": "das Ergebnis" },
+        { "id": "i5", "text": "die Möglichkeit" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "تمرین" },
+        { "id": "m2", "text": "آزادی" },
+        { "id": "m3", "text": "دوستی" },
+        { "id": "m4", "text": "نتیجه" },
+        { "id": "m5", "text": "امکان" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "تمرین استاد می‌سازد.",
+      "sentenceTemplate": "{0} macht den {1}.",
+      "options": ["Übung", "Meister", "Lehrer", "Bedeutung"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Übung macht den Meister.", "fa": "تمرین استاد می‌سازد." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "دوستی ما مهم است.",
+      "sentenceTemplate": "Unsere {0} ist {1}.",
+      "options": ["Freundschaft", "wichtig", "Gesellschaft", "schön"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Unsere Freundschaft ist wichtig.", "fa": "دوستی ما مهم است." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: ساختن واژه",
+      "passage": {
+        "de": "Die deutsche Sprache hat viele Möglichkeiten zur Wortbildung. Mit dem Suffix -ung können Sie aus Verben Nomen bilden: üben wird zu Übung, bedeuten zu Bedeutung. Die Suffixe -heit und -keit machen aus Adjektiven feminine Nomen: frei wird zu Freiheit, möglich zu Möglichkeit. Das Suffix -schaft zeigt Beziehungen und Gruppen: Freund wird zu Freundschaft. Und mit -nis entstehen neutrale Nomen: erleben wird zu Erlebnis. Diese Regeln sind sehr nützlich für das Deutschlernen!",
+        "fa": "زبان آلمانی امکانات زیادی برای ساختن واژه دارد. با پسوند -ung می‌توانید از فعل‌ها اسم بسازید: üben می‌شود Übung، bedeuten می‌شود Bedeutung. پسوندهای -heit و -keit از صفت‌ها اسم مؤنث می‌سازند: frei می‌شود Freiheit، möglich می‌شود Möglichkeit. پسوند -schaft روابط و گروه‌ها را نشان می‌دهد: Freund می‌شود Freundschaft. و با -nis اسم‌های خنثی ساخته می‌شود: erleben می‌شود Erlebnis. این قواعد برای یادگیری آلمانی بسیار مفید هستند!"
+      },
+      "questions": [
+        { "question": "پسوند -ung چه کاری انجام می‌دهد؟", "options": ["از صفت اسم می‌سازد", "از فعل اسم می‌سازد", "از اسم صفت می‌سازد"], "correctIndex": 1, "explanation": "متن گفت: Mit dem Suffix -ung können Sie aus Verben Nomen bilden." },
+        { "question": "اسم‌های با -nis چه جنسیتی دارند؟", "options": ["مؤنث", "مذکر", "خنثی"], "correctIndex": 2, "explanation": "متن گفت: Mit -nis entstehen neutrale Nomen." },
+        { "question": "پسوند -schaft چه چیزی را نشان می‌دهد؟", "options": ["زمان", "روابط و گروه‌ها", "مکان"], "correctIndex": 1, "explanation": "متن گفت: Das Suffix -schaft zeigt Beziehungen und Gruppen." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die Bedeutung der Wörter", "fa": "معنای کلمات" },
+      "characters": ["Nina", "Thomas"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Nina und Thomas sitzen in der Bibliothek und lernen Deutsch.", "fa": "نینا و توماس در کتابخانه نشسته‌اند و آلمانی یاد می‌گیرند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Nina",
+          "text": { "de": "Thomas, ich verstehe die Wortbildung nicht.", "fa": "توماس، ساختن واژه را نمی‌فهمم." },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Thomas",
+          "text": { "de": "Das ist keine Schwierigkeit! Die Suffixe haben klare Regeln.", "fa": "این دشواری ندارد! پسوندها قواعد روشنی دارند." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "نینا چه مشکلی دارد؟",
+          "options": ["دستور زبان را نمی‌فهمد", "ساختن واژه را نمی‌فهمد", "تلفظ را نمی‌فهمد"],
+          "correctIndex": 1,
+          "explanation": "نینا گفت: Ich verstehe die Wortbildung nicht."
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Thomas erklärt ihr die wichtigsten Suffixe.", "fa": "توماس مهم‌ترین پسوندها را برایش توضیح می‌دهد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Thomas",
+          "text": { "de": "Aus 'entscheiden' wird 'die Entscheidung'. Verstehst du?", "fa": "از entscheiden می‌شود die Entscheidung. می‌فهمی؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Nina",
+          "text": { "de": "Ja! Und aus 'frei' wird 'die Freiheit'!", "fa": "آره! و از frei می‌شود die Freiheit!" },
+          "mood": "excited"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Die Möglichkeit, neue Wörter zu verstehen, macht Nina glücklich.", "fa": "امکان فهمیدن کلمات جدید نینا را خوشحال می‌کند." }
+        },
+        {
+          "type": "question",
+          "question": "نینا چه چیزی یاد گرفت؟",
+          "options": ["چگونه با پسوند اسم بسازد", "چگونه فعل صرف کند", "چگونه جمله بسازد"],
+          "correctIndex": 0,
+          "explanation": "نینا فهمید که از frei می‌شود die Freiheit."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع",
+      "instruction": "جنسیت درست را انتخاب کنید!",
+      "questions": [
+        { "prompt": "die Übung", "left": "درست", "right": "غلط", "correctSide": "left" },
+        { "prompt": "der Ergebnis", "left": "درست", "right": "غلط", "correctSide": "right" },
+        { "prompt": "die Freundschaft", "left": "درست", "right": "غلط", "correctSide": "left" },
+        { "prompt": "das Möglichkeit", "left": "درست", "right": "غلط", "correctSide": "right" },
+        { "prompt": "die Freiheit", "left": "درست", "right": "غلط", "correctSide": "left" },
+        { "prompt": "das Geheimnis", "left": "درست", "right": "غلط", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Übung macht den Meister.",
+      "translation": "تمرین استاد می‌سازد."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Die Möglichkeit gibt es immer.",
+      "translation": "این امکان همیشه وجود دارد."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Unsere Freundschaft ist wichtig.",
+      "translation": "دوستی ما مهم است."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "die Übung", "options": ["تمرین", "آزادی", "دوستی"], "correctAnswerIndex": 0 },
+        { "question": "die Freiheit", "options": ["امکان", "آزادی", "دشواری"], "correctAnswerIndex": 1 },
+        { "question": "die Möglichkeit", "options": ["امکان", "زیبایی", "نتیجه"], "correctAnswerIndex": 0 },
+        { "question": "das Ergebnis", "options": ["تجربه", "راز", "نتیجه"], "correctAnswerIndex": 2 },
+        { "question": "die Freundschaft", "options": ["جامعه", "دوستی", "علم"], "correctAnswerIndex": 1 },
+        { "question": "die Bedeutung", "options": ["معنی", "تمرین", "آزادی"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "die Übung", "fa": "تمرین" },
+        { "de": "die Freiheit", "fa": "آزادی" },
+        { "de": "die Möglichkeit", "fa": "امکان" },
+        { "de": "die Freundschaft", "fa": "دوستی" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات مربوط به ساختن اسم را پیدا کنید",
+      "targetWords": ["Übung", "Freiheit", "Möglichkeit", "Freundschaft", "Ergebnis", "Bedeutung"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "die Übung", "fa": "تمرین", "options": ["آزادی", "تمرین", "دوستی", "نتیجه"], "correctIndex": 1 },
+        { "de": "die Schwierigkeit", "fa": "دشواری", "options": ["امکان", "زیبایی", "دشواری", "راز"], "correctIndex": 2 },
+        { "de": "das Ergebnis", "fa": "نتیجه", "options": ["تجربه", "نتیجه", "دوستی", "آزادی"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما ساختن اسم با پسوند (Substantivbildung mit Suffixen) را یاد گرفتید!",
+      "keyPoints": [
+        "-ung: از فعل اسم مؤنث می‌سازد (üben → die Übung)",
+        "-heit: از صفت اسم مؤنث می‌سازد (frei → die Freiheit)",
+        "-keit: بعد از -ig, -lich, -sam, -bar (möglich → die Möglichkeit)",
+        "-schaft: برای روابط و مفاهیم جمعی (Freund → die Freundschaft)",
+        "-nis: اسم خنثی می‌سازد (erleben → das Erlebnis)",
+        "-er/-in: شخص انجام‌دهنده (lehren → der Lehrer/die Lehrerin)"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "die Übung", "fa": "تمرین" } },
+        { "word": { "de": "die Bedeutung", "fa": "معنی" } },
+        { "word": { "de": "die Freiheit", "fa": "آزادی" } },
+        { "word": { "de": "die Möglichkeit", "fa": "امکان" } },
+        { "word": { "de": "die Schwierigkeit", "fa": "دشواری" } },
+        { "word": { "de": "die Freundschaft", "fa": "دوستی" } }
+      ]
+    }
+  ]
+}
