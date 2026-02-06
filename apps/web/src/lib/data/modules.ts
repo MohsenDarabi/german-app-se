@@ -1438,6 +1438,37 @@ const DE_FA_B1_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/B1/B1-M13-L04"
       }
     ]
+  },
+  {
+    id: "module-14",
+    title: "بخش ۱۴: صفات با حروف اضافه (Adjektive mit Präpositionen)",
+    level: "B1",
+    lessons: [
+      {
+        id: "B1-M14-L01",
+        title: "Akkusativ-Präpositionen - صفات با آکوزاتیو",
+        description: "یاد بگیرید صفات با حروف اضافه آکوزاتیو: stolz auf، verantwortlich für، glücklich über.",
+        path: "/learn/de-fa/B1/B1-M14-L01"
+      },
+      {
+        id: "B1-M14-L02",
+        title: "Dativ-Präpositionen - صفات با داتیو",
+        description: "یاد بگیرید صفات با حروف اضافه داتیو: zufrieden mit، abhängig von، interessiert an.",
+        path: "/learn/de-fa/B1/B1-M14-L02"
+      },
+      {
+        id: "B1-M14-L03",
+        title: "Genitiv und Sonderfälle - ژنیتیو و موارد خاص",
+        description: "یاد بگیرید صفات با ژنیتیو و جفت‌های خاص: sicher، bewusst، böse auf vs böse mit.",
+        path: "/learn/de-fa/B1/B1-M14-L03"
+      },
+      {
+        id: "B1-M14-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل صفات با حروف اضافه: آکوزاتیو، داتیو، ژنیتیو و اشتباهات رایج.",
+        path: "/learn/de-fa/B1/B1-M14-L04"
+      }
+    ]
   }
 ];
 

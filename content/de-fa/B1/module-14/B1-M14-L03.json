@@ -1,0 +1,506 @@
+{
+  "id": "B1-M14-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Adjektive mit Genitiv und Sonderfälle", "fa": "صفات با مفعول Genitiv و موارد خاص" },
+  "description": "یاد بگیرید چگونه از صفات با حالت Genitiv و صفاتی که با حروف اضافه مختلف معانی متفاوت دارند استفاده کنید",
+  "level": "B1",
+  "module": 14,
+  "lessonNumber": 3,
+  "totalSteps": 45,
+  "estimatedMinutes": 25,
+  "vocabulary": [
+    { "de": "sicher", "fa": "مطمئن، امن", "grammar": { "pos": "adjective" } },
+    { "de": "bewusst", "fa": "آگاه، هوشیار", "grammar": { "pos": "adjective" } },
+    { "de": "würdig", "fa": "شایسته، لایق", "grammar": { "pos": "adjective" } },
+    { "de": "schuldig", "fa": "مقصر، گناهکار", "grammar": { "pos": "adjective" } },
+    { "de": "frei", "fa": "آزاد، رها", "grammar": { "pos": "adjective" } },
+    { "de": "fertig", "fa": "آماده، تمام‌شده", "grammar": { "pos": "adjective" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "صفات با حالت Genitiv چیستند؟",
+      "content": "برخی صفات در آلمانی به جای حرف اضافه، مستقیماً با **حالت Genitiv** می‌آیند. این ساختار رسمی‌تر و ادبی‌تر است.\n\n**صفات مهم با Genitiv:**\n- **sicher** + Genitiv = مطمئن از\n- **bewusst** + Genitiv = آگاه از\n- **würdig** + Genitiv = شایسته‌ی\n- **schuldig** + Genitiv = مقصر\n\n**ساختار:**\nفاعل + sein + صفت + اسم در حالت Genitiv\n\n**نکته برای فارسی‌زبانان:**\nدر فارسی معمولاً از «از» استفاده می‌کنیم، ولی در آلمانی حالت Genitiv جایگزین حرف اضافه می‌شود.",
+      "examples": [
+        { "de": "Ich bin mir dessen sicher.", "fa": "من از این موضوع مطمئن هستم." },
+        { "de": "Sie ist sich ihrer Fehler bewusst.", "fa": "او از اشتباهاتش آگاه است." },
+        { "de": "Er ist des Lobes würdig.", "fa": "او شایسته‌ی تحسین است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "sicher", "fa": "مطمئن، امن" },
+      "example": { "text": { "de": "Ich bin mir meiner Sache sicher.", "fa": "من از کارم مطمئن هستم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "sicher",
+      "translation": "مطمئن، امن",
+      "syllables": ["si", "cher"],
+      "distractors": ["sa", "char", "schi", "ker"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "bewusst", "fa": "آگاه، هوشیار" },
+      "example": { "text": { "de": "Er ist sich seiner Verantwortung bewusst.", "fa": "او از مسئولیتش آگاه است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "bewusst",
+      "translation": "آگاه، هوشیار",
+      "syllables": ["be", "wusst"],
+      "distractors": ["ba", "wust", "wist", "bu"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "würdig", "fa": "شایسته، لایق" },
+      "example": { "text": { "de": "Sie ist dieser Auszeichnung würdig.", "fa": "او شایسته‌ی این جایزه است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "würdig",
+      "translation": "شایسته، لایق",
+      "syllables": ["wür", "dig"],
+      "distractors": ["wur", "dug", "wer", "dag"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله درست است؟ (sicher + Genitiv)",
+      "options": [
+        "Ich bin sicher von der Antwort.",
+        "Ich bin mir der Antwort sicher.",
+        "Ich bin sicher für die Antwort.",
+        "Ich bin sicher mit der Antwort."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! sicher با Genitiv می‌آید: Ich bin mir der Antwort sicher.", "incorrect": "sicher در این ساختار با Genitiv می‌آید، نه با حرف اضافه." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را با شکل Genitiv پر کنید",
+      "sentence": "Ich bin mir {0} Sache sicher.",
+      "options": ["meine", "meiner", "meinem", "meinen"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Sache مؤنث است، پس در Genitiv می‌شود meiner Sache." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "صفات schuldig و würdig با Genitiv",
+      "content": "**schuldig** (مقصر) و **würdig** (شایسته) هم با Genitiv می‌آیند:\n\n**schuldig + Genitiv:**\n- Er ist des Mordes schuldig. (او مقصر قتل است)\n- Sie ist keiner Schuld schuldig. (او مقصر هیچ گناهی نیست)\n\n**würdig + Genitiv:**\n- Das Buch ist der Lektüre würdig. (این کتاب ارزش خواندن دارد)\n- Er ist dieser Ehre würdig. (او شایسته‌ی این افتخار است)\n\n**نکته:**\nدر زبان محاوره، گاهی از wert به جای würdig استفاده می‌شود:\n- Das ist es nicht wert. (این ارزشش را ندارد)",
+      "examples": [
+        { "de": "Der Angeklagte ist des Diebstahls schuldig.", "fa": "متهم مقصر دزدی است." },
+        { "de": "Diese Arbeit ist der Anerkennung würdig.", "fa": "این کار شایسته‌ی قدردانی است." }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در دادگاه",
+      "scene": {
+        "location": "courtroom",
+        "description": { "de": "Ein Richter spricht das Urteil.", "fa": "یک قاضی حکم را اعلام می‌کند." }
+      },
+      "lines": [
+        { "speaker": "Richter", "text": { "de": "Sind Sie sich Ihrer Aussage bewusst?", "fa": "آیا از اظهاراتتان آگاه هستید؟" }, "mood": "neutral" },
+        { "speaker": "Angeklagter", "text": { "de": "Ja, ich bin mir dessen vollkommen bewusst.", "fa": "بله، من کاملاً از آن آگاه هستم." }, "mood": "neutral" },
+        { "speaker": "Richter", "text": { "de": "Das Gericht hat entschieden: Sie sind des Betrugs schuldig.", "fa": "دادگاه تصمیم گرفت: شما مقصر کلاهبرداری هستید." }, "mood": "neutral" },
+        { "speaker": "Anwalt", "text": { "de": "Mein Mandant ist keiner Schuld schuldig!", "fa": "موکل من مقصر هیچ گناهی نیست!" }, "mood": "angry" }
+      ],
+      "questions": [
+        { "question": "متهم از چه چیزی آگاه است؟", "options": ["از قانون", "از اظهاراتش", "از وکیلش"], "correctIndex": 1, "explanation": "متهم گفت: Ich bin mir dessen bewusst (من از آن آگاه هستم)" },
+        { "question": "قاضی متهم را مقصر چه چیزی دانست؟", "options": ["دزدی", "کلاهبرداری", "قتل"], "correctIndex": 1, "explanation": "قاضی گفت: Sie sind des Betrugs schuldig (شما مقصر کلاهبرداری هستید)" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "schuldig", "fa": "مقصر، گناهکار" },
+      "example": { "text": { "de": "Er ist des Verbrechens schuldig.", "fa": "او مقصر جرم است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "schuldig",
+      "translation": "مقصر، گناهکار",
+      "syllables": ["schul", "dig"],
+      "distractors": ["schol", "dag", "skul", "dug"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "frei", "fa": "آزاد، رها" },
+      "example": { "text": { "de": "Ich bin frei von Sorgen.", "fa": "من از نگرانی‌ها آزاد هستم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "frei",
+      "translation": "آزاد، رها",
+      "syllables": ["frei"],
+      "distractors": ["frai", "frey", "fry", "fro"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sie ist sich {0} Verantwortung bewusst.",
+      "options": ["ihre", "ihrer", "ihrem", "ihren"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Verantwortung مؤنث است، پس در Genitiv می‌شود ihrer Verantwortung." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Der Angeklagte ist {0} Diebstahls schuldig.",
+      "options": ["der", "des", "dem", "den"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Diebstahl مذکر است، پس در Genitiv می‌شود des Diebstahls." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["bewusst.", "sich", "Folgen", "der", "ist", "Er"],
+      "correctOrder": [5, 4, 1, 3, 2, 0],
+      "correctSentence": { "de": "Er ist sich der Folgen bewusst.", "fa": "او از عواقب آگاه است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["würdig.", "Preises", "des", "ist", "Sie", "nicht"],
+      "correctOrder": [4, 3, 5, 2, 1, 0],
+      "correctSentence": { "de": "Sie ist nicht des Preises würdig.", "fa": "او شایسته‌ی این جایزه نیست." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "صفت sicher همیشه با حرف اضافه von می‌آید.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! sicher در ساختار رسمی با Genitiv می‌آید: Ich bin mir der Sache sicher." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "صفت bewusst به معنای «آگاه» با Genitiv استفاده می‌شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! bewusst + Genitiv: Sie ist sich ihrer Fehler bewusst." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s8",
+      "title": "صفات با حروف اضافه مختلف - معانی متفاوت",
+      "content": "برخی صفات با حروف اضافه مختلف معانی متفاوتی پیدا می‌کنند:\n\n**böse:**\n- böse **auf** + Akk = عصبانی از (شخص)\n- böse **mit** + Dat = ناراحت از (عمل کسی)\n\n**frei:**\n- frei **von** + Dat = رها از، عاری از\n- frei **für** + Akk = آزاد برای (وقت داشتن)\n\n**fertig:**\n- fertig **mit** + Dat = تمام کردن چیزی\n- fertig **für** + Akk = آماده برای\n\n**این تفاوت‌ها را به خاطر بسپارید!**",
+      "examples": [
+        { "de": "Ich bin böse auf dich.", "fa": "من از تو عصبانی هستم." },
+        { "de": "Ich bin böse mit dir.", "fa": "من از رفتارت ناراحتم." },
+        { "de": "Das Wasser ist frei von Schadstoffen.", "fa": "آب عاری از مواد مضر است." },
+        { "de": "Ich bin frei für ein Treffen.", "fa": "من برای یک ملاقات وقت دارم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "fertig", "fa": "آماده، تمام‌شده" },
+      "example": { "text": { "de": "Ich bin fertig mit der Arbeit.", "fa": "کارم را تمام کردم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "fertig",
+      "translation": "آماده، تمام‌شده",
+      "syllables": ["fer", "tig"],
+      "distractors": ["far", "tag", "fir", "teg"]
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "بحث بین دوستان",
+      "scene": {
+        "location": "living_room",
+        "description": { "de": "Zwei Freunde haben einen kleinen Streit.", "fa": "دو دوست یک بحث کوچک دارند." }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Bist du böse auf mich?", "fa": "آیا از من عصبانی هستی؟" }, "mood": "sad" },
+        { "speaker": "Max", "text": { "de": "Nein, ich bin nicht böse auf dich, aber böse mit dir.", "fa": "نه، من از تو عصبانی نیستم، ولی از رفتارت ناراحتم." }, "mood": "neutral" },
+        { "speaker": "Anna", "text": { "de": "Was meinst du damit?", "fa": "منظورت چیست؟" }, "mood": "confused" },
+        { "speaker": "Max", "text": { "de": "Du hast mein Geheimnis verraten. Ich bin fertig mit dieser Diskussion.", "fa": "تو رازم را فاش کردی. من این بحث را تمام کردم." }, "mood": "angry" }
+      ],
+      "questions": [
+        { "question": "مکس از آنا عصبانی است یا از رفتارش ناراحت؟", "options": ["از آنا عصبانی است", "از رفتار آنا ناراحت است", "هر دو"], "correctIndex": 1, "explanation": "مکس گفت: böse mit dir - یعنی از رفتار ناراحت است، نه از خود شخص" },
+        { "question": "آنا چه کار کرد؟", "options": ["دروغ گفت", "راز مکس را فاش کرد", "دیر آمد"], "correctIndex": 1, "explanation": "مکس گفت: Du hast mein Geheimnis verraten (تو رازم را فاش کردی)" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله به معنای «من از نگرانی‌ها رها هستم» است؟",
+      "options": [
+        "Ich bin frei für Sorgen.",
+        "Ich bin frei von Sorgen.",
+        "Ich bin frei mit Sorgen.",
+        "Ich bin frei auf Sorgen."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! frei von = رها از، عاری از", "incorrect": "frei von به معنای «رها از» است، نه frei für که یعنی «آزاد برای»." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Bist du fertig {0} den Hausaufgaben?",
+      "options": ["von", "mit", "für", "auf"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "fertig mit = تمام کردن چیزی. fertig mit den Hausaufgaben = تکالیف را تمام کردن" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sie ist böse {0} ihren Bruder.",
+      "options": ["von", "mit", "für", "auf"],
+      "correctAnswers": [3],
+      "feedback": { "explanation": "böse auf + Akk = عصبانی از شخص. böse auf ihren Bruder = از برادرش عصبانی" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Prüfung.", "die", "für", "fertig", "Ich", "bin"],
+      "correctOrder": [4, 5, 3, 2, 1, 0],
+      "correctSentence": { "de": "Ich bin fertig für die Prüfung.", "fa": "من برای امتحان آماده هستم." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "böse auf و böse mit دقیقاً یک معنی دارند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! böse auf = عصبانی از شخص، ولی böse mit = ناراحت از رفتار شخص." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "عبارت آلمانی را با معنی فارسی جور کنید",
+      "items": [
+        { "id": "i1", "text": "frei von" },
+        { "id": "i2", "text": "frei für" },
+        { "id": "i3", "text": "fertig mit" },
+        { "id": "i4", "text": "fertig für" },
+        { "id": "i5", "text": "böse auf" },
+        { "id": "i6", "text": "böse mit" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "رها از، عاری از" },
+        { "id": "m2", "text": "آزاد برای (وقت داشتن)" },
+        { "id": "m3", "text": "تمام کردن چیزی" },
+        { "id": "m4", "text": "آماده برای" },
+        { "id": "m5", "text": "عصبانی از شخص" },
+        { "id": "m6", "text": "ناراحت از رفتار" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "من از اشتباهاتم آگاه هستم.",
+      "sentenceTemplate": "Ich bin mir meiner {0} bewusst.",
+      "options": ["Fehler", "Antwort", "Sache", "Arbeit"],
+      "correctAnswers": [0],
+      "correctTranslation": { "de": "Ich bin mir meiner Fehler bewusst.", "fa": "من از اشتباهاتم آگاه هستم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "او شایسته‌ی این جایزه است.",
+      "sentenceTemplate": "Er ist dieses {0} würdig.",
+      "options": ["Preis", "Preises", "Preise", "Preisen"],
+      "correctAnswers": [1],
+      "correctTranslation": { "de": "Er ist dieses Preises würdig.", "fa": "او شایسته‌ی این جایزه است." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: پایان یک رابطه",
+      "passage": {
+        "de": "Maria und Thomas waren fünf Jahre zusammen. Thomas war sich der Probleme in ihrer Beziehung nie bewusst. Maria war böse auf Thomas, weil er nie Zeit für sie hatte. Er war immer mit der Arbeit beschäftigt. Maria sagte: \"Ich bin frei von falschen Hoffnungen. Ich bin fertig mit dieser Beziehung.\" Thomas fragte: \"Bin ich schuldig an diesem Ende?\" Maria antwortete: \"Du bist dir deiner Fehler nicht bewusst gewesen. Unsere Liebe war dieser Mühe nicht würdig.\"",
+        "fa": "ماریا و توماس پنج سال با هم بودند. توماس هرگز از مشکلات رابطه‌شان آگاه نبود. ماریا از توماس عصبانی بود، چون هیچ‌وقت برای او وقت نداشت. او همیشه مشغول کار بود. ماریا گفت: «من از امیدهای واهی رها هستم. این رابطه را تمام کردم.» توماس پرسید: «آیا من مقصر این پایان هستم؟» ماریا جواب داد: «تو از اشتباهاتت آگاه نبودی. عشق ما ارزش این زحمت را نداشت.»"
+      },
+      "questions": [
+        { "question": "توماس از چه چیزی آگاه نبود؟", "options": ["از عشق ماریا", "از مشکلات رابطه", "از کار زیاد"], "correctIndex": 1, "explanation": "متن می‌گوید: Thomas war sich der Probleme nie bewusst" },
+        { "question": "ماریا چرا از توماس عصبانی بود؟", "options": ["چون وقت نداشت", "چون دروغ گفت", "چون پول نداشت"], "correctIndex": 0, "explanation": "ماریا böse auf Thomas بود چون er nie Zeit für sie hatte" },
+        { "question": "ماریا گفت از چه چیزی رها است؟", "options": ["از عشق", "از امیدهای واهی", "از کار"], "correctIndex": 1, "explanation": "ماریا گفت: frei von falschen Hoffnungen" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Das Urteil", "fa": "حکم دادگاه" },
+      "characters": ["Richter", "Angeklagter", "Anwalt"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Im Gerichtssaal wartet der Angeklagte auf das Urteil.", "fa": "در سالن دادگاه، متهم منتظر حکم است." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Richter",
+          "text": { "de": "Herr Müller, sind Sie sich der Schwere Ihrer Tat bewusst?", "fa": "آقای مولر، آیا از سنگینی عملتان آگاه هستید؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Angeklagter",
+          "text": { "de": "Ja, ich bin mir dessen voll bewusst.", "fa": "بله، من کاملاً از آن آگاه هستم." },
+          "mood": "sad"
+        },
+        {
+          "type": "question",
+          "question": "متهم چه احساسی دارد؟",
+          "options": ["خوشحال است", "از عملش آگاه است", "عصبانی است"],
+          "correctIndex": 1,
+          "explanation": "متهم گفت: Ich bin mir dessen voll bewusst"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anwalt",
+          "text": { "de": "Mein Mandant ist keiner bösen Absicht schuldig!", "fa": "موکل من مقصر هیچ نیت بدی نیست!" },
+          "mood": "angry"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Richter",
+          "text": { "de": "Das Gericht entscheidet: Sie sind des Betrugs schuldig, aber der Milde würdig.", "fa": "دادگاه تصمیم می‌گیرد: شما مقصر کلاهبرداری هستید، ولی شایسته‌ی ملایمت." },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "حکم دادگاه چه بود؟",
+          "options": ["تبرئه کامل", "مقصر ولی شایسته ملایمت", "حبس ابد"],
+          "correctIndex": 1,
+          "explanation": "قاضی گفت: schuldig, aber der Milde würdig"
+        }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich bin mir meiner Fehler bewusst.",
+      "translation": "من از اشتباهاتم آگاه هستم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Er ist des Lobes würdig.",
+      "translation": "او شایسته‌ی تحسین است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Sie ist frei von Sorgen.",
+      "translation": "او از نگرانی‌ها رها است."
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع",
+      "instruction": "کدام حرف اضافه یا حالت درست است؟",
+      "questions": [
+        { "prompt": "sicher + ___", "left": "von", "right": "Genitiv", "correctSide": "right" },
+        { "prompt": "bewusst + ___", "left": "Genitiv", "right": "für", "correctSide": "left" },
+        { "prompt": "frei ___ Sorgen", "left": "für", "right": "von", "correctSide": "right" },
+        { "prompt": "fertig ___ der Arbeit", "left": "mit", "right": "von", "correctSide": "left" },
+        { "prompt": "böse ___ dich (عصبانی)", "left": "mit", "right": "auf", "correctSide": "right" },
+        { "prompt": "würdig + ___", "left": "Genitiv", "right": "von", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "sicher + Genitiv", "options": ["رها از", "مطمئن از", "آماده برای"], "correctAnswerIndex": 1 },
+        { "question": "bewusst + Genitiv", "options": ["آگاه از", "شایسته", "مقصر"], "correctAnswerIndex": 0 },
+        { "question": "frei von", "options": ["رها از", "آزاد برای", "تمام کردن"], "correctAnswerIndex": 0 },
+        { "question": "fertig mit", "options": ["آماده برای", "تمام کردن", "رها از"], "correctAnswerIndex": 1 },
+        { "question": "böse auf", "options": ["ناراحت از رفتار", "عصبانی از شخص", "آزاد برای"], "correctAnswerIndex": 1 },
+        { "question": "würdig + Genitiv", "options": ["مقصر", "آگاه", "شایسته"], "correctAnswerIndex": 2 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "sicher", "fa": "مطمئن" },
+        { "de": "bewusst", "fa": "آگاه" },
+        { "de": "würdig", "fa": "شایسته" },
+        { "de": "schuldig", "fa": "مقصر" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات این درس را پیدا کنید",
+      "targetWords": ["sicher", "bewusst", "würdig", "schuldig", "frei", "fertig"],
+      "gridSize": { "rows": 12, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das Produkt ist {0} Schadstoffen frei.",
+      "options": ["von", "mit", "für", "auf"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "frei von = عاری از. frei von Schadstoffen = عاری از مواد مضر" }
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "bewusst + Genitiv", "fa": "آگاه از", "options": ["مطمئن از", "آگاه از", "شایسته", "مقصر"], "correctIndex": 1 },
+        { "de": "frei von", "fa": "رها از", "options": ["آزاد برای", "رها از", "تمام کردن", "عصبانی از"], "correctIndex": 1 },
+        { "de": "fertig für", "fa": "آماده برای", "options": ["تمام کردن", "رها از", "آماده برای", "آگاه از"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما صفات با حالت Genitiv و صفات با حروف اضافه مختلف را یاد گرفتید. حالا می‌توانید تفاوت‌های ظریف معنایی را درک کنید!",
+      "keyPoints": [
+        "sicher, bewusst, würdig, schuldig با Genitiv می‌آیند",
+        "böse auf = عصبانی از شخص، böse mit = ناراحت از رفتار",
+        "frei von = رها از، frei für = آزاد برای",
+        "fertig mit = تمام کردن، fertig für = آماده برای",
+        "حروف اضافه مختلف معانی متفاوتی ایجاد می‌کنند"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "sicher", "fa": "مطمئن" } },
+        { "word": { "de": "bewusst", "fa": "آگاه" } },
+        { "word": { "de": "würdig", "fa": "شایسته" } },
+        { "word": { "de": "schuldig", "fa": "مقصر" } },
+        { "word": { "de": "frei", "fa": "آزاد" } },
+        { "word": { "de": "fertig", "fa": "آماده" } }
+      ]
+    }
+  ]
+}

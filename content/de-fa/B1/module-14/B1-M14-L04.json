@@ -1,0 +1,509 @@
+{
+  "id": "B1-M14-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Adjektive mit Präpositionen: Zusammenfassung", "fa": "صفت‌ها با حروف اضافه: جمع‌بندی" },
+  "description": "مرور جامع تمام صفت‌ها با حروف اضافه آلمانی: ترکیبات با Akkusativ (stolz auf, neugierig auf, verantwortlich für)، Dativ (zufrieden mit, abhängig von, interessiert an) و Genitiv (sicher, bewusst). تفاوت با انگلیسی و اشتباهات رایج.",
+  "level": "B1",
+  "module": 14,
+  "lessonNumber": 4,
+  "totalSteps": 45,
+  "estimatedMinutes": 25,
+  "vocabulary": [
+    { "de": "die Präposition", "fa": "حرف اضافه", "grammar": { "pos": "noun", "gender": "feminine", "plural": "die Präpositionen" } },
+    { "de": "der Fall", "fa": "حالت (دستوری)", "grammar": { "pos": "noun", "gender": "masculine", "plural": "die Fälle" } },
+    { "de": "kombinieren", "fa": "ترکیب کردن", "grammar": { "pos": "verb", "conjugation": "regular" } },
+    { "de": "verwechseln", "fa": "اشتباه گرفتن", "grammar": { "pos": "verb", "conjugation": "regular" } },
+    { "de": "unterscheiden", "fa": "تشخیص دادن، تفاوت قائل شدن", "grammar": { "pos": "verb", "conjugation": "irregular" } },
+    { "de": "merken", "fa": "به یاد سپردن، متوجه شدن", "grammar": { "pos": "verb", "conjugation": "regular" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "مرور کلی: صفت‌ها با حروف اضافه",
+      "content": "**Adjektive mit Präpositionen**\n\nبسیاری از صفت‌های آلمانی با حروف اضافه خاصی می‌آیند که حالت دستوری را مشخص می‌کنند:\n\n| حالت | حرف اضافه | مثال |\n|------|-----------|------|\n| **Akkusativ** | auf, für, über | stolz auf (مفتخر به) |\n| **Dativ** | mit, von, an, bei | zufrieden mit (راضی از) |\n| **Genitiv** | + Gen | sicher (مطمئن از) |\n\n**نکته مهم:** حرف اضافه در آلمانی اغلب با انگلیسی فرق دارد!\n- proud **of** = stolz **auf** (نه *stolz von)",
+      "examples": [
+        { "de": "Ich bin stolz auf dich.", "fa": "من به تو افتخار می‌کنم." },
+        { "de": "Sie ist zufrieden mit dem Ergebnis.", "fa": "او از نتیجه راضی است." }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s2",
+      "title": "صفت‌ها با Akkusativ",
+      "content": "**صفت‌ها با auf + Akkusativ:**\n- **stolz auf** = مفتخر به\n- **neugierig auf** = کنجکاو نسبت به\n- **gespannt auf** = مشتاق\n- **böse auf** = عصبانی از\n- **eifersüchtig auf** = حسود نسبت به\n\n**صفت‌ها با für + Akkusativ:**\n- **verantwortlich für** = مسئول\n- **dankbar für** = سپاسگزار بابت\n- **bereit für** = آماده برای\n\n**صفت‌ها با über + Akkusativ:**\n- **glücklich über** = خوشحال از\n- **traurig über** = غمگین از\n- **erstaunt über** = متعجب از",
+      "examples": [
+        { "de": "Er ist verantwortlich für das Projekt.", "fa": "او مسئول پروژه است." },
+        { "de": "Ich bin neugierig auf deine Antwort.", "fa": "من کنجکاو جواب تو هستم." }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s3",
+      "title": "صفت‌ها با Dativ و Genitiv",
+      "content": "**صفت‌ها با mit + Dativ:**\n- **zufrieden mit** = راضی از\n- **verheiratet mit** = متاهل با\n- **verwandt mit** = فامیل با\n- **einverstanden mit** = موافق با\n\n**صفت‌ها با von + Dativ:**\n- **abhängig von** = وابسته به\n- **überzeugt von** = متقاعد از\n\n**صفت‌ها با an + Dativ:**\n- **interessiert an** = علاقه‌مند به\n- **reich an** = غنی از\n\n**صفت‌ها با bei + Dativ:**\n- **beliebt bei** = محبوب نزد\n\n**صفت‌ها با Genitiv:**\n- **sicher + Gen** = مطمئن از\n- **bewusst + Gen** = آگاه از",
+      "examples": [
+        { "de": "Das Ergebnis ist abhängig von der Qualität.", "fa": "نتیجه وابسته به کیفیت است." },
+        { "de": "Ich bin mir der Gefahr bewusst.", "fa": "من از خطر آگاهم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "die Präposition", "fa": "حرف اضافه" },
+      "example": { "text": { "de": "Jedes Adjektiv braucht eine bestimmte Präposition.", "fa": "هر صفتی به یک حرف اضافه خاص نیاز دارد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Präposition",
+      "translation": "حرف اضافه",
+      "syllables": ["Prä", "po", "si", "tion"],
+      "distractors": ["Pre", "pa", "so", "tun"]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "der Fall", "fa": "حالت (دستوری)" },
+      "example": { "text": { "de": "Die Präposition bestimmt den Fall.", "fa": "حرف اضافه حالت را تعیین می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Fall",
+      "translation": "حالت (دستوری)",
+      "syllables": ["Fall"],
+      "distractors": ["Fell", "Foll", "Full"]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "kombinieren", "fa": "ترکیب کردن" },
+      "example": { "text": { "de": "Man muss Adjektive mit Präpositionen richtig kombinieren.", "fa": "باید صفت‌ها را با حروف اضافه درست ترکیب کرد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "kombinieren",
+      "translation": "ترکیب کردن",
+      "syllables": ["kom", "bi", "nie", "ren"],
+      "distractors": ["kam", "ba", "nu", "ran"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام حرف اضافه با stolz می‌آید؟",
+      "options": [
+        "stolz von",
+        "stolz auf",
+        "stolz mit",
+        "stolz für"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! stolz auf + Akkusativ = مفتخر به", "incorrect": "stolz auf + Akkusativ = مفتخر به (نه *stolz von مثل انگلیسی proud of)" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام ترکیب درست است؟",
+      "options": [
+        "zufrieden von",
+        "zufrieden für",
+        "zufrieden mit",
+        "zufrieden auf"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! zufrieden mit + Dativ = راضی از", "incorrect": "zufrieden mit + Dativ = راضی از" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "حرف اضافه مناسب را انتخاب کنید",
+      "sentence": "Ich bin stolz {0} meine Kinder. (به بچه‌هایم افتخار می‌کنم.)",
+      "options": ["von", "auf", "mit", "für"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "stolz auf + Akkusativ = مفتخر به" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "حرف اضافه مناسب را انتخاب کنید",
+      "sentence": "Er ist verantwortlich {0} das Team. (او مسئول تیم است.)",
+      "options": ["auf", "mit", "für", "von"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "verantwortlich für + Akkusativ = مسئول" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "حرف اضافه مناسب را انتخاب کنید",
+      "sentence": "Sie ist zufrieden {0} ihrer Arbeit. (از کارش راضی است.)",
+      "options": ["auf", "mit", "für", "an"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "zufrieden mit + Dativ = راضی از" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "گفتگو: در محل کار",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Büro", "fa": "در دفتر کار" }
+      },
+      "lines": [
+        { "speaker": "Herr Meier", "text": { "de": "Ich bin sehr zufrieden mit dem Projekt.", "fa": "من از پروژه خیلی راضی هستم." }, "mood": "happy" },
+        { "speaker": "Frau Klein", "text": { "de": "Wir sind stolz auf unser Team.", "fa": "ما به تیممان افتخار می‌کنیم." }, "mood": "happy" },
+        { "speaker": "Herr Meier", "text": { "de": "Wer ist verantwortlich für die Präsentation?", "fa": "چه کسی مسئول ارائه است؟" }, "mood": "neutral" },
+        { "speaker": "Frau Klein", "text": { "de": "Herr Schmidt. Er ist sehr interessiert an diesem Thema.", "fa": "آقای اشمیت. او خیلی به این موضوع علاقه‌مند است." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "آقای مایر از چه راضی است؟", "options": ["تیم", "پروژه", "ارائه"], "correctIndex": 1, "explanation": "آقای مایر گفت: Ich bin sehr zufrieden mit dem Projekt." },
+        { "question": "چه کسی مسئول ارائه است؟", "options": ["خانم کلاین", "آقای اشمیت", "آقای مایر"], "correctIndex": 1, "explanation": "خانم کلاین گفت: Herr Schmidt ist verantwortlich für die Präsentation." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "verwechseln", "fa": "اشتباه گرفتن" },
+      "example": { "text": { "de": "Verwechseln Sie nicht auf und über!", "fa": "auf و über را اشتباه نگیرید!" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "verwechseln",
+      "translation": "اشتباه گرفتن",
+      "syllables": ["ver", "wech", "seln"],
+      "distractors": ["vor", "wach", "saln"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "unterscheiden", "fa": "تشخیص دادن، تفاوت قائل شدن" },
+      "example": { "text": { "de": "Man muss zwischen auf, an und über unterscheiden.", "fa": "باید بین auf، an و über تفاوت قائل شد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "unterscheiden",
+      "translation": "تشخیص دادن",
+      "syllables": ["un", "ter", "schei", "den"],
+      "distractors": ["an", "tar", "scha", "dan"]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "merken", "fa": "به یاد سپردن، متوجه شدن" },
+      "example": { "text": { "de": "Merken Sie sich die richtige Präposition!", "fa": "حرف اضافه درست را به یاد بسپارید!" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "merken",
+      "translation": "به یاد سپردن",
+      "syllables": ["mer", "ken"],
+      "distractors": ["mar", "kan", "mir"]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["auf", "bin", "stolz", "Ich", "dich."],
+      "correctOrder": [3, 1, 2, 0, 4],
+      "correctSentence": { "de": "Ich bin stolz auf dich.", "fa": "من به تو افتخار می‌کنم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["interessiert", "Sie", "an", "ist", "Kunst."],
+      "correctOrder": [1, 3, 0, 2, 4],
+      "correctSentence": { "de": "Sie ist interessiert an Kunst.", "fa": "او به هنر علاقه‌مند است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["von", "abhängig", "Wetter.", "ist", "Das Ergebnis", "dem"],
+      "correctOrder": [4, 3, 1, 0, 5, 2],
+      "correctSentence": { "de": "Das Ergebnis ist abhängig von dem Wetter.", "fa": "نتیجه وابسته به آب و هوا است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در آلمانی می‌گوییم «stolz von» مثل انگلیسی «proud of».",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! در آلمانی می‌گوییم stolz auf (نه stolz von). حروف اضافه آلمانی اغلب با انگلیسی فرق دارند." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "صفت «zufrieden» با حرف اضافه «mit» و حالت Dativ می‌آید.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! zufrieden mit + Dativ = راضی از" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "صفت‌های «interessiert» و «reich» هر دو با حرف اضافه «an» می‌آیند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! interessiert an + Dativ (علاقه‌مند به) و reich an + Dativ (غنی از)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "گفتگو: احساسات و نظرات",
+      "scene": {
+        "location": "cafe",
+        "description": { "de": "Im Café", "fa": "در کافه" }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Ich bin so dankbar für deine Hilfe!", "fa": "خیلی ممنون کمکت هستم!" }, "mood": "happy" },
+        { "speaker": "Max", "text": { "de": "Kein Problem! Ich bin immer bereit für neue Herausforderungen.", "fa": "مشکلی نیست! من همیشه آماده چالش‌های جدید هستم." }, "mood": "neutral" },
+        { "speaker": "Anna", "text": { "de": "Bist du nicht böse auf mich?", "fa": "از دست من عصبانی نیستی؟" }, "mood": "confused" },
+        { "speaker": "Max", "text": { "de": "Nein, überhaupt nicht! Ich bin glücklich über deinen Erfolg.", "fa": "نه، اصلاً! من از موفقیتت خوشحالم." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "آنا از چه چیزی ممنون است؟", "options": ["موفقیت", "کمک ماکس", "چالش جدید"], "correctIndex": 1, "explanation": "آنا گفت: Ich bin so dankbar für deine Hilfe!" },
+        { "question": "ماکس از چه چیزی خوشحال است؟", "options": ["موفقیت آنا", "چالش جدید", "کمک کردن"], "correctIndex": 0, "explanation": "ماکس گفت: Ich bin glücklich über deinen Erfolg." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "حرف اضافه مناسب را انتخاب کنید",
+      "sentence": "Das Kind ist neugierig {0} die Geschenke. (بچه کنجکاو هدیه‌ها است.)",
+      "options": ["für", "auf", "von", "mit"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "neugierig auf + Akkusativ = کنجکاو نسبت به" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "حرف اضافه مناسب را انتخاب کنید",
+      "sentence": "Er ist {0} seiner Freundin verheiratet. (او با دوست‌دخترش ازدواج کرده.)",
+      "options": ["auf", "von", "mit", "für"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "verheiratet mit + Dativ = متاهل با" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "حرف اضافه مناسب را انتخاب کنید",
+      "sentence": "Sie ist {0} allen sehr beliebt. (او نزد همه خیلی محبوب است.)",
+      "options": ["auf", "bei", "für", "an"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "beliebt bei + Dativ = محبوب نزد" }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "صفت را با حرف اضافه صحیح جفت کنید",
+      "items": [
+        { "id": "i1", "text": "stolz" },
+        { "id": "i2", "text": "zufrieden" },
+        { "id": "i3", "text": "abhängig" },
+        { "id": "i4", "text": "interessiert" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "auf + Akk" },
+        { "id": "m2", "text": "mit + Dat" },
+        { "id": "m3", "text": "von + Dat" },
+        { "id": "m4", "text": "an + Dat" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "من از نتیجه راضی هستم.",
+      "sentenceTemplate": "Ich bin zufrieden {0} dem Ergebnis.",
+      "options": ["für", "mit", "auf", "von"],
+      "correctAnswers": [1],
+      "correctTranslation": { "de": "Ich bin zufrieden mit dem Ergebnis.", "fa": "من از نتیجه راضی هستم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "او مسئول این پروژه است.",
+      "sentenceTemplate": "Er ist verantwortlich {0} dieses Projekt.",
+      "options": ["mit", "auf", "für", "von"],
+      "correctAnswers": [2],
+      "correctTranslation": { "de": "Er ist verantwortlich für dieses Projekt.", "fa": "او مسئول این پروژه است." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: تفاوت با انگلیسی",
+      "passage": {
+        "de": "Im Deutschen und Englischen benutzen viele Adjektive unterschiedliche Präpositionen. Zum Beispiel sagt man im Englischen 'proud of', aber im Deutschen 'stolz auf'. Ebenso sagt man 'interested in' auf Englisch, aber 'interessiert an' auf Deutsch. Diese Unterschiede muss man sich gut merken! Auch 'responsible for' entspricht 'verantwortlich für' - hier ist die Präposition gleich. Aber 'satisfied with' wird zu 'zufrieden mit', und 'dependent on' wird zu 'abhängig von'. Viele Deutschlernende verwechseln diese Präpositionen, weil sie an ihre Muttersprache denken.",
+        "fa": "در آلمانی و انگلیسی بسیاری از صفت‌ها حروف اضافه متفاوتی دارند. مثلاً در انگلیسی می‌گویند «مفتخر از» اما در آلمانی stolz auf. همچنین در انگلیسی می‌گویند «علاقه‌مند در» اما در آلمانی interessiert an. این تفاوت‌ها را باید خوب به یاد سپرد! همچنین «مسئول برای» معادل verantwortlich für است - اینجا حرف اضافه یکسان است. اما «راضی با» می‌شود zufrieden mit و «وابسته روی» می‌شود abhängig von. بسیاری از زبان‌آموزان آلمانی این حروف اضافه را اشتباه می‌گیرند چون به زبان مادری‌شان فکر می‌کنند."
+      },
+      "questions": [
+        { "question": "چرا زبان‌آموزان حروف اضافه را اشتباه می‌گیرند؟", "options": ["چون سخت هستند", "چون به زبان مادری‌شان فکر می‌کنند", "چون یکسان هستند"], "correctIndex": 1, "explanation": "متن گفت: weil sie an ihre Muttersprache denken." },
+        { "question": "کدام ترکیب در آلمانی و انگلیسی حرف اضافه یکسان دارد؟", "options": ["stolz auf / proud of", "verantwortlich für / responsible for", "zufrieden mit / satisfied with"], "correctIndex": 1, "explanation": "متن گفت: 'responsible for' entspricht 'verantwortlich für' - hier ist die Präposition gleich." },
+        { "question": "dependent on به آلمانی چه می‌شود؟", "options": ["abhängig auf", "abhängig von", "abhängig mit"], "correctIndex": 1, "explanation": "متن گفت: 'dependent on' wird zu 'abhängig von'." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Das Vorstellungsgespräch", "fa": "مصاحبه شغلی" },
+      "characters": ["Eli", "Chefin"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Eli hat ein wichtiges Vorstellungsgespräch.", "fa": "الی یک مصاحبه شغلی مهم دارد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Chefin",
+          "text": { "de": "Sind Sie interessiert an einer Vollzeitstelle?", "fa": "آیا به کار تمام‌وقت علاقه‌مند هستید؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Eli",
+          "text": { "de": "Ja, ich bin sehr dankbar für diese Gelegenheit.", "fa": "بله، من بسیار سپاسگزار این فرصت هستم." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "الی از چه چیزی سپاسگزار است؟",
+          "options": ["کار تمام‌وقت", "این فرصت", "حقوق بالا"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: Ich bin sehr dankbar für diese Gelegenheit."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Chefin",
+          "text": { "de": "Wir sind stolz auf unser Team. Sie wären verantwortlich für die Kundenkommunikation.", "fa": "ما به تیممان افتخار می‌کنیم. شما مسئول ارتباط با مشتریان خواهید بود." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Eli",
+          "text": { "de": "Ich bin bereit für diese Aufgabe. Ich bin überzeugt von meinen Fähigkeiten.", "fa": "من برای این وظیفه آماده‌ام. من از توانایی‌هایم مطمئنم." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "الی مسئول چه چیزی خواهد بود؟",
+          "options": ["ارتباط با مشتریان", "مدیریت تیم", "حسابداری"],
+          "correctIndex": 0,
+          "explanation": "رئیس گفت: Sie wären verantwortlich für die Kundenkommunikation."
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Eli bekommt den Job und ist sehr glücklich über den Erfolg!", "fa": "الی کار را می‌گیرد و از موفقیتش بسیار خوشحال است!" }
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: کدام حرف اضافه؟",
+      "instruction": "حرف اضافه صحیح را برای هر صفت انتخاب کنید",
+      "questions": [
+        { "prompt": "stolz ___", "left": "auf", "right": "von", "correctSide": "left" },
+        { "prompt": "zufrieden ___", "left": "für", "right": "mit", "correctSide": "right" },
+        { "prompt": "verantwortlich ___", "left": "für", "right": "mit", "correctSide": "left" },
+        { "prompt": "interessiert ___", "left": "an", "right": "auf", "correctSide": "left" },
+        { "prompt": "abhängig ___", "left": "auf", "right": "von", "correctSide": "right" },
+        { "prompt": "dankbar ___", "left": "für", "right": "mit", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich bin stolz auf dich.",
+      "translation": "من به تو افتخار می‌کنم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Sie ist zufrieden mit dem Ergebnis.",
+      "translation": "او از نتیجه راضی است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Er ist verantwortlich für das Projekt.",
+      "translation": "او مسئول پروژه است."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: صفت‌ها با حروف اضافه",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "stolz ___", "options": ["auf", "von", "mit"], "correctAnswerIndex": 0 },
+        { "question": "zufrieden ___", "options": ["für", "mit", "auf"], "correctAnswerIndex": 1 },
+        { "question": "interessiert ___", "options": ["auf", "für", "an"], "correctAnswerIndex": 2 },
+        { "question": "abhängig ___", "options": ["von", "auf", "mit"], "correctAnswerIndex": 0 },
+        { "question": "beliebt ___", "options": ["auf", "bei", "von"], "correctAnswerIndex": 1 },
+        { "question": "die Präposition =?", "options": ["حرف اضافه", "صفت", "فعل"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "die Präposition", "fa": "حرف اضافه" },
+        { "de": "der Fall", "fa": "حالت" },
+        { "de": "kombinieren", "fa": "ترکیب کردن" },
+        { "de": "verwechseln", "fa": "اشتباه گرفتن" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "صفت‌های این درس را پیدا کنید",
+      "targetWords": ["stolz", "zufrieden", "dankbar", "interessiert", "abhängig", "beliebt"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "die Präposition", "fa": "___", "options": ["حرف اضافه", "صفت", "ضمیر"], "correctIndex": 0 },
+        { "de": "verwechseln", "fa": "___", "options": ["تشخیص دادن", "اشتباه گرفتن", "ترکیب کردن"], "correctIndex": 1 },
+        { "de": "unterscheiden", "fa": "___", "options": ["تشخیص دادن", "به یاد سپردن", "ترکیب کردن"], "correctIndex": 0 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp2",
+      "title": "تبریک! بخش صفت‌ها با حروف اضافه تمام شد!",
+      "message": "شما تمام صفت‌های آلمانی با حروف اضافه را یاد گرفتید!",
+      "keyPoints": [
+        "صفت‌ها با auf + Akkusativ: stolz auf، neugierig auf",
+        "صفت‌ها با für + Akkusativ: verantwortlich für، dankbar für",
+        "صفت‌ها با über + Akkusativ: glücklich über، traurig über",
+        "صفت‌ها با mit + Dativ: zufrieden mit، verheiratet mit",
+        "صفت‌ها با von + Dativ: abhängig von، überzeugt von",
+        "صفت‌ها با an + Dativ: interessiert an، reich an",
+        "صفت‌ها با bei + Dativ: beliebt bei",
+        "صفت‌ها با Genitiv: sicher + Gen، bewusst + Gen",
+        "حروف اضافه آلمانی اغلب با انگلیسی فرق دارند!",
+        "proud of = stolz auf (نه stolz von)",
+        "satisfied with = zufrieden mit"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "die Präposition", "fa": "حرف اضافه" } },
+        { "word": { "de": "der Fall", "fa": "حالت (دستوری)" } },
+        { "word": { "de": "kombinieren", "fa": "ترکیب کردن" } },
+        { "word": { "de": "verwechseln", "fa": "اشتباه گرفتن" } },
+        { "word": { "de": "unterscheiden", "fa": "تشخیص دادن، تفاوت قائل شدن" } },
+        { "word": { "de": "merken", "fa": "به یاد سپردن، متوجه شدن" } }
+      ]
+    }
+  ]
+}

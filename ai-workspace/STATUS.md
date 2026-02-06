@@ -8,7 +8,7 @@
 
 **Create B1 lessons - lesson by lesson, wait for user test after each**
 
-Current: `B1-M13` (Nomen-Verb-Verbindungen) - **MODULE COMPLETE - READY FOR USER TEST**
+Current: `B1-M14` (Adjektive mit Präpositionen) - **MODULE COMPLETE - READY FOR USER TEST**
 
 ---
 
@@ -26,7 +26,7 @@ Current: `B1-M13` (Nomen-Verb-Verbindungen) - **MODULE COMPLETE - READY FOR USER
 |-------|---------|---------|--------|
 | A1 | 14 | 56+ | Complete |
 | A2 | 18 | 72 | **Complete** ✅ |
-| B1 | 13 | 52 | Module 13 complete |
+| B1 | 14 | 56 | Module 14 complete |
 
 ### A2 Completion (2026-02-05)
 
@@ -70,8 +70,9 @@ Current: `B1-M13` (Nomen-Verb-Verbindungen) - **MODULE COMPLETE - READY FOR USER
 | M11 | Futur II | 4/4 | ✅ Complete |
 | M12 | Modalpartikeln | 4/4 | ✅ Complete |
 | M13 | Nomen-Verb-Verbindungen | 4/4 | ✅ Complete |
+| M14 | Adjektive mit Präpositionen | 4/4 | ✅ Complete |
 
-**Total B1: 52 lessons**
+**Total B1: 56 lessons**
 
 ---
 
@@ -218,10 +219,23 @@ Current: `B1-M13` (Nomen-Verb-Verbindungen) - **MODULE COMPLETE - READY FOR USER
 
 ---
 
+## B1 Module 14: Adjektive mit Präpositionen (Adjectives with Prepositions)
+
+| Lesson | Title | Status |
+|--------|-------|--------|
+| B1-M14-L01 | Akkusativ (stolz auf, verantwortlich für, glücklich über) | ✅ Complete |
+| B1-M14-L02 | Dativ (zufrieden mit, abhängig von, interessiert an) | ✅ Complete |
+| B1-M14-L03 | Genitiv + Sonderfälle (sicher, bewusst, böse auf/mit) | ✅ Complete |
+| B1-M14-L04 | Zusammenfassung | ✅ Complete |
+
+---
+
 ## Recent Changes
 
 | Date | Change |
 |------|--------|
+| 2026-02-06 | **B1 Module 14 (Adjektive mit Präpositionen) COMPLETE - 4 lessons!** |
+| 2026-02-06 | Created B1-M14-L01 to L04 in parallel |
 | 2026-02-06 | **B1 Module 13 (Nomen-Verb-Verbindungen) COMPLETE - 4 lessons!** |
 | 2026-02-06 | Created B1-M13-L01 to L04 in parallel |
 | 2026-02-06 | **B1 Module 12 (Modalpartikeln) COMPLETE - 4 lessons!** |
@@ -277,6 +291,7 @@ Current: `B1-M13` (Nomen-Verb-Verbindungen) - **MODULE COMPLETE - READY FOR USER
 12. [x] Complete B1 Module 11 (Futur II) - 4 lessons
 13. [x] Complete B1 Module 12 (Modalpartikeln) - 4 lessons
 14. [x] Complete B1 Module 13 (Nomen-Verb-Verbindungen) - 4 lessons
-15. [ ] **User tests B1-M13 lessons**
-16. [ ] Plan B1 Module 14 topic
-17. [ ] Continue B1 curriculum development
+15. [x] Complete B1 Module 14 (Adjektive mit Präpositionen) - 4 lessons
+16. [ ] **User tests B1-M14 lessons**
+17. [ ] Plan B1 Module 15 topic
+18. [ ] Continue B1 curriculum development

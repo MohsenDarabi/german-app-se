@@ -1,0 +1,516 @@
+{
+  "id": "B1-M14-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Adjektive mit Dativ-Präpositionen", "fa": "صفت‌های همراه با حروف اضافه داتیو" },
+  "description": "یاد بگیرید کدام صفت‌های آلمانی با حروف اضافه داتیو (mit، von، an، bei، zu) به کار می‌روند. این ترکیب‌ها در مکالمات روزمره و نوشتار رسمی بسیار کاربرد دارند.",
+  "level": "B1",
+  "module": 14,
+  "lessonNumber": 2,
+  "totalSteps": 45,
+  "estimatedMinutes": 25,
+  "vocabulary": [
+    { "de": "zufrieden", "fa": "راضی، خشنود", "grammar": { "pos": "adjective" } },
+    { "de": "verheiratet", "fa": "متأهل", "grammar": { "pos": "adjective" } },
+    { "de": "abhängig", "fa": "وابسته", "grammar": { "pos": "adjective" } },
+    { "de": "überzeugt", "fa": "مطمئن، متقاعد", "grammar": { "pos": "adjective" } },
+    { "de": "begeistert", "fa": "مشتاق، شیفته", "grammar": { "pos": "adjective" } },
+    { "de": "beliebt", "fa": "محبوب", "grammar": { "pos": "adjective" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "صفت‌های همراه با حروف اضافه داتیو",
+      "content": "**Adjektive mit Dativ-Präpositionen**\n\nدر آلمانی، برخی صفت‌ها همیشه با حروف اضافه خاصی می‌آیند که **داتیو** (Dativ) می‌گیرند.\n\n**حروف اضافه داتیو با صفت:**\n- **mit** - با\n- **von** - از\n- **an** - به (+ Dativ)\n- **bei** - نزد، پیش\n- **zu** - به، برای\n\n**نکته مهم:** حرف اضافه بعد از صفت می‌آید و اسم بعد از آن در حالت داتیو است.\n\n**مثال:**\n- Ich bin zufrieden **mit** dem Ergebnis.\n- Er ist abhängig **von** seinen Eltern.\n\n**نکته فارسی:** در فارسی هم داریم: «راضی از»، «وابسته به» - اما حروف اضافه متفاوت است!",
+      "examples": [
+        { "de": "Ich bin zufrieden mit meiner Arbeit.", "fa": "من از کارم راضی هستم." },
+        { "de": "Sie ist begeistert von dem Film.", "fa": "او از فیلم شیفته شده است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "zufrieden", "fa": "راضی، خشنود" },
+      "example": { "text": { "de": "Bist du zufrieden mit deinem neuen Job?", "fa": "آیا از شغل جدیدت راضی هستی؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "zufrieden",
+      "translation": "راضی",
+      "syllables": ["zu", "frie", "den"],
+      "distractors": ["za", "fro", "don"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "verheiratet", "fa": "متأهل" },
+      "example": { "text": { "de": "Er ist mit einer Ärztin verheiratet.", "fa": "او با یک پزشک (زن) ازدواج کرده است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "verheiratet",
+      "translation": "متأهل",
+      "syllables": ["ver", "hei", "ra", "tet"],
+      "distractors": ["vor", "hai", "ro", "tot"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "abhängig", "fa": "وابسته" },
+      "example": { "text": { "de": "Kinder sind von ihren Eltern abhängig.", "fa": "کودکان به والدینشان وابسته هستند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "abhängig",
+      "translation": "وابسته",
+      "syllables": ["ab", "hän", "gig"],
+      "distractors": ["ob", "han", "geg"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام حرف اضافه با صفت «zufrieden» می‌آید؟",
+      "options": [
+        "zufrieden von",
+        "zufrieden mit",
+        "zufrieden an",
+        "zufrieden bei"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! zufrieden mit یعنی راضی از.", "incorrect": "ترکیب صحیح zufrieden mit است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را با حرف اضافه مناسب پر کنید",
+      "sentence": "Ich bin zufrieden {0} meinem Leben.",
+      "options": ["mit", "von", "an", "bei"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "zufrieden mit یعنی راضی از چیزی." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "گفتگو درباره ازدواج",
+      "scene": {
+        "location": "cafe",
+        "description": { "de": "Im Café. Anna und Lisa sprechen über Beziehungen.", "fa": "در کافه. آنا و لیزا درباره روابط صحبت می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Weißt du, dass Thomas verheiratet ist?", "fa": "می‌دانی که توماس متأهل است؟" }, "mood": "neutral" },
+        { "speaker": "Lisa", "text": { "de": "Ja! Er ist mit einer Lehrerin verheiratet.", "fa": "آره! او با یک معلم (زن) ازدواج کرده." }, "mood": "happy" },
+        { "speaker": "Anna", "text": { "de": "Ist er zufrieden mit seinem Leben?", "fa": "آیا از زندگی‌اش راضی است؟" }, "mood": "neutral" },
+        { "speaker": "Lisa", "text": { "de": "Ja, er ist sehr glücklich. Er ist nicht mehr abhängig von seinen Eltern.", "fa": "آره، خیلی خوشحال است. دیگر به والدینش وابسته نیست." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "توماس با چه کسی ازدواج کرده؟", "options": ["پزشک", "معلم", "مهندس"], "correctIndex": 1, "explanation": "لیزا گفت: Er ist mit einer Lehrerin verheiratet." },
+        { "question": "آیا توماس هنوز به والدینش وابسته است؟", "options": ["بله", "خیر", "نمی‌دانیم"], "correctIndex": 1, "explanation": "لیزا گفت: Er ist nicht mehr abhängig von seinen Eltern." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["verheiratet.", "Ärztin", "einer", "mit", "ist", "Er"],
+      "correctOrder": [5, 4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Er ist mit einer Ärztin verheiratet.", "fa": "او با یک پزشک (زن) ازدواج کرده است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "صفت «abhängig» با حرف اضافه «von» به کار می‌رود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! abhängig von یعنی وابسته به." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "صفت‌های مهم با «mit»",
+      "content": "**Adjektive mit «mit» (+ Dativ)**\n\n**۱. zufrieden mit**\n= راضی از\n- Ich bin **zufrieden mit** dem Ergebnis.\n\n**۲. verheiratet mit**\n= ازدواج کرده با\n- Sie ist **verheiratet mit** einem Arzt.\n\n**۳. befreundet mit**\n= دوست بودن با\n- Er ist **befreundet mit** meinem Bruder.\n\n**۴. beschäftigt mit**\n= مشغول به\n- Ich bin **beschäftigt mit** meiner Arbeit.\n\n**۵. einverstanden mit**\n= موافق با\n- Bist du **einverstanden mit** dem Plan?\n\n**نکته:** همه این صفت‌ها داتیو می‌گیرند!",
+      "examples": [
+        { "de": "Ich bin befreundet mit Anna.", "fa": "من با آنا دوست هستم." },
+        { "de": "Er ist beschäftigt mit einem Projekt.", "fa": "او مشغول یک پروژه است." },
+        { "de": "Sind Sie einverstanden mit dem Preis?", "fa": "آیا با قیمت موافق هستید؟" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "überzeugt", "fa": "مطمئن، متقاعد" },
+      "example": { "text": { "de": "Ich bin überzeugt von seiner Ehrlichkeit.", "fa": "من از صداقت او مطمئن هستم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "überzeugt",
+      "translation": "متقاعد",
+      "syllables": ["ü", "ber", "zeugt"],
+      "distractors": ["o", "bar", "zoigt"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "begeistert", "fa": "مشتاق، شیفته" },
+      "example": { "text": { "de": "Sie ist begeistert von der neuen Idee.", "fa": "او از ایده جدید شیفته شده است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "begeistert",
+      "translation": "شیفته",
+      "syllables": ["be", "geis", "tert"],
+      "distractors": ["ba", "gais", "tort"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "«überzeugt von» به چه معنی است؟",
+      "options": [
+        "ناراحت از",
+        "مطمئن از، متقاعد از",
+        "راضی از",
+        "خسته از"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! überzeugt von یعنی مطمئن از چیزی.", "incorrect": "überzeugt von به معنی مطمئن از یا متقاعد از است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sie ist begeistert {0} dem Konzert.",
+      "options": ["von", "mit", "an", "zu"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "begeistert von یعنی شیفته چیزی." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در محل کار",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Büro. Der Chef spricht mit seinem Team.", "fa": "در دفتر. رئیس با تیمش صحبت می‌کند." }
+      },
+      "lines": [
+        { "speaker": "Chef", "text": { "de": "Ich bin sehr begeistert von Ihrer Arbeit!", "fa": "من از کار شما خیلی شیفته شده‌ام!" }, "mood": "happy" },
+        { "speaker": "Maria", "text": { "de": "Danke! Ich bin auch überzeugt von unserem Projekt.", "fa": "ممنون! من هم به پروژه‌مان ایمان دارم." }, "mood": "happy" },
+        { "speaker": "Chef", "text": { "de": "Sind alle einverstanden mit dem neuen Plan?", "fa": "آیا همه با برنامه جدید موافق هستند؟" }, "mood": "neutral" },
+        { "speaker": "Team", "text": { "de": "Ja! Wir sind zufrieden mit der Entscheidung.", "fa": "بله! ما از تصمیم راضی هستیم." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "رئیس از چه چیزی شیفته شده؟", "options": ["برنامه جدید", "کار تیم", "دفتر جدید"], "correctIndex": 1, "explanation": "رئیس گفت: Ich bin sehr begeistert von Ihrer Arbeit!" },
+        { "question": "تیم از چه راضی است؟", "options": ["حقوق", "تصمیم", "تعطیلات"], "correctIndex": 1, "explanation": "تیم گفت: Wir sind zufrieden mit der Entscheidung." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Ehrlichkeit.", "seiner", "von", "überzeugt", "bin", "Ich"],
+      "correctOrder": [5, 4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Ich bin überzeugt von seiner Ehrlichkeit.", "fa": "من از صداقت او مطمئن هستم." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "صفت «begeistert» با حرف اضافه «mit» به کار می‌رود.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! begeistert با «von» به کار می‌رود: begeistert von." }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "beliebt", "fa": "محبوب" },
+      "example": { "text": { "de": "Der Lehrer ist sehr beliebt bei den Schülern.", "fa": "معلم نزد دانش‌آموزان خیلی محبوب است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "beliebt",
+      "translation": "محبوب",
+      "syllables": ["be", "liebt"],
+      "distractors": ["ba", "lobt", "labt"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "حرف اضافه مناسب را انتخاب کنید",
+      "sentence": "Er ist sehr beliebt {0} seinen Kollegen.",
+      "options": ["bei", "mit", "von", "an"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "beliebt bei یعنی محبوب نزد کسی." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich bin müde {0} der langen Reise.",
+      "options": ["von", "mit", "bei", "zu"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "müde von یعنی خسته از چیزی." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "صفت‌های مهم با «an»، «bei» و «zu»",
+      "content": "**Adjektive mit «an» (+ Dativ)**\n\n**۱. interessiert an**\n= علاقه‌مند به\n- Ich bin **interessiert an** Kunst.\n\n**۲. reich an**\n= غنی از\n- Das Land ist **reich an** Öl.\n\n**۳. arm an**\n= فقیر از نظر\n- Die Region ist **arm an** Wasser.\n\n---\n\n**Adjektive mit «bei»**\n\n**beliebt bei** = محبوب نزد\n**bekannt bei** = شناخته شده نزد\n\n---\n\n**Adjektive mit «zu»**\n\n**bereit zu** = آماده برای\n**fähig zu** = قادر به\n**freundlich zu** = مهربان با\n\n**نکته:** «an» با داتیو فقط با صفت می‌آید (نه با آکوزاتیو که در فعل‌هاست).",
+      "examples": [
+        { "de": "Ich bin interessiert an diesem Job.", "fa": "من به این شغل علاقه‌مند هستم." },
+        { "de": "Sie ist bereit zu helfen.", "fa": "او آماده کمک کردن است." },
+        { "de": "Er ist immer freundlich zu allen.", "fa": "او همیشه با همه مهربان است." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Schülern.", "den", "bei", "beliebt", "ist", "Er"],
+      "correctOrder": [5, 4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Er ist beliebt bei den Schülern.", "fa": "او نزد دانش‌آموزان محبوب است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "صفت «interessiert» با حرف اضافه «an» به کار می‌رود و بعد از آن داتیو می‌آید.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! interessiert an + Dativ: Ich bin interessiert an diesem Thema." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "ترکیب مناسب را انتخاب کنید",
+      "sentence": "Sie ist sehr freundlich {0} den Kindern.",
+      "options": ["zu", "mit", "von", "bei"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "freundlich zu یعنی مهربان با کسی." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das Land ist reich {0} natürlichen Ressourcen.",
+      "options": ["an", "von", "mit", "bei"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "reich an یعنی غنی از چیزی." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "صفت‌ها را با حرف اضافه درست جفت کنید",
+      "items": [
+        { "id": "i1", "text": "zufrieden" },
+        { "id": "i2", "text": "abhängig" },
+        { "id": "i3", "text": "interessiert" },
+        { "id": "i4", "text": "beliebt" },
+        { "id": "i5", "text": "bereit" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "mit" },
+        { "id": "m2", "text": "von" },
+        { "id": "m3", "text": "an" },
+        { "id": "m4", "text": "bei" },
+        { "id": "m5", "text": "zu" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "من از کارم راضی هستم.",
+      "sentenceTemplate": "Ich bin {0} {1} meiner Arbeit.",
+      "options": ["zufrieden", "mit", "von", "abhängig"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Ich bin zufrieden mit meiner Arbeit.", "fa": "من از کارم راضی هستم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "او به این موضوع علاقه‌مند است.",
+      "sentenceTemplate": "Er ist {0} {1} diesem Thema.",
+      "options": ["interessiert", "an", "mit", "begeistert"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Er ist interessiert an diesem Thema.", "fa": "او به این موضوع علاقه‌مند است." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: صفت‌ها با حروف اضافه",
+      "passage": {
+        "de": "Michael arbeitet bei einer großen Firma. Er ist sehr zufrieden mit seinem Job und beliebt bei seinen Kollegen. Seine Chefin ist begeistert von seiner Arbeit. Michael ist immer freundlich zu allen und bereit zu helfen. Er ist auch sehr interessiert an neuen Projekten. Sein Erfolg macht ihn nicht abhängig von der Meinung anderer. Er ist überzeugt von seinen Fähigkeiten.",
+        "fa": "میشائل در یک شرکت بزرگ کار می‌کند. او از شغلش خیلی راضی است و نزد همکارانش محبوب است. رئیسش از کار او شیفته شده است. میشائل همیشه با همه مهربان است و آماده کمک کردن است. او همچنین به پروژه‌های جدید خیلی علاقه‌مند است. موفقیتش او را به نظر دیگران وابسته نمی‌کند. او از توانایی‌هایش مطمئن است."
+      },
+      "questions": [
+        { "question": "میشائل از چه راضی است؟", "options": ["حقوقش", "شغلش", "خانه‌اش"], "correctIndex": 1, "explanation": "متن گفت: Er ist sehr zufrieden mit seinem Job." },
+        { "question": "میشائل نزد چه کسانی محبوب است؟", "options": ["مشتریان", "همکاران", "خانواده"], "correctIndex": 1, "explanation": "متن گفت: beliebt bei seinen Kollegen." },
+        { "question": "رئیس از چه شیفته شده؟", "options": ["شخصیت میشائل", "کار میشائل", "ایده‌های میشائل"], "correctIndex": 1, "explanation": "متن گفت: Die Chefin ist begeistert von seiner Arbeit." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der neue Mitarbeiter", "fa": "همکار جدید" },
+      "characters": ["Peter", "Sandra"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Peter ist neu in der Firma. Er ist verheiratet mit einer Musikerin.", "fa": "پیتر در شرکت تازه‌وارد است. او با یک موسیقیدان ازدواج کرده است." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sandra",
+          "text": { "de": "Hallo Peter! Bist du zufrieden mit deinem neuen Büro?", "fa": "سلام پیتر! از دفتر جدیدت راضی هستی؟" },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Peter",
+          "text": { "de": "Ja, sehr! Ich bin auch begeistert von dem Team.", "fa": "آره، خیلی! از تیم هم شیفته شده‌ام." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "پیتر از چه شیفته شده؟",
+          "options": ["دفتر", "تیم", "حقوق"],
+          "correctIndex": 1,
+          "explanation": "پیتر گفت: Ich bin begeistert von dem Team."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sandra",
+          "text": { "de": "Super! Du bist schon jetzt beliebt bei allen.", "fa": "عالی! تو الان هم نزد همه محبوب هستی." },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Peter",
+          "text": { "de": "Danke! Ich bin interessiert an dem neuen Projekt.", "fa": "ممنون! من به پروژه جدید علاقه‌مند هستم." },
+          "mood": "neutral"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Peter ist überzeugt von seiner Entscheidung, hier zu arbeiten.", "fa": "پیتر از تصمیمش برای کار کردن اینجا مطمئن است." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sandra",
+          "text": { "de": "Wir sind alle bereit, dir zu helfen!", "fa": "همه ما آماده‌ایم به تو کمک کنیم!" },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "پیتر به چه علاقه‌مند است؟",
+          "options": ["پروژه جدید", "تعطیلات", "ترفیع"],
+          "correctIndex": 0,
+          "explanation": "پیتر گفت: Ich bin interessiert an dem neuen Projekt."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع",
+      "instruction": "حرف اضافه مناسب را انتخاب کنید!",
+      "questions": [
+        { "prompt": "zufrieden ___", "left": "mit", "right": "von", "correctSide": "left" },
+        { "prompt": "abhängig ___", "left": "mit", "right": "von", "correctSide": "right" },
+        { "prompt": "begeistert ___", "left": "von", "right": "an", "correctSide": "left" },
+        { "prompt": "interessiert ___", "left": "bei", "right": "an", "correctSide": "right" },
+        { "prompt": "beliebt ___", "left": "bei", "right": "zu", "correctSide": "left" },
+        { "prompt": "bereit ___", "left": "mit", "right": "zu", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich bin zufrieden mit meinem Leben.",
+      "translation": "من از زندگی‌ام راضی هستم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Er ist abhängig von seinen Eltern.",
+      "translation": "او به والدینش وابسته است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Sie ist begeistert von der Idee.",
+      "translation": "او از این ایده شیفته شده است."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "zufrieden ___", "options": ["mit", "von", "an"], "correctAnswerIndex": 0 },
+        { "question": "verheiratet ___", "options": ["von", "mit", "bei"], "correctAnswerIndex": 1 },
+        { "question": "abhängig ___", "options": ["mit", "an", "von"], "correctAnswerIndex": 2 },
+        { "question": "überzeugt ___", "options": ["von", "mit", "zu"], "correctAnswerIndex": 0 },
+        { "question": "beliebt ___", "options": ["an", "bei", "mit"], "correctAnswerIndex": 1 },
+        { "question": "interessiert ___", "options": ["an", "von", "bei"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "zufrieden mit", "fa": "راضی از" },
+        { "de": "abhängig von", "fa": "وابسته به" },
+        { "de": "begeistert von", "fa": "شیفته از" },
+        { "de": "beliebt bei", "fa": "محبوب نزد" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "صفت‌های مربوط به این درس را پیدا کنید",
+      "targetWords": ["zufrieden", "verheiratet", "abhängig", "überzeugt", "begeistert", "beliebt"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "zufrieden", "fa": "راضی", "options": ["ناراحت", "راضی", "خسته", "شیفته"], "correctIndex": 1 },
+        { "de": "abhängig", "fa": "وابسته", "options": ["وابسته", "آزاد", "محبوب", "متقاعد"], "correctIndex": 0 },
+        { "de": "begeistert", "fa": "شیفته", "options": ["راضی", "خسته", "شیفته", "وابسته"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما صفت‌های همراه با حروف اضافه داتیو را یاد گرفتید!",
+      "keyPoints": [
+        "mit: zufrieden mit (راضی از)، verheiratet mit (ازدواج کرده با)، befreundet mit (دوست با)",
+        "mit: beschäftigt mit (مشغول به)، einverstanden mit (موافق با)",
+        "von: abhängig von (وابسته به)، überzeugt von (مطمئن از)، begeistert von (شیفته از)",
+        "von: müde von (خسته از)",
+        "an: interessiert an (علاقه‌مند به)، reich an (غنی از)، arm an (فقیر از نظر)",
+        "bei: beliebt bei (محبوب نزد)، bekannt bei (شناخته شده نزد)",
+        "zu: bereit zu (آماده برای)، fähig zu (قادر به)، freundlich zu (مهربان با)"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "zufrieden", "fa": "راضی" } },
+        { "word": { "de": "verheiratet", "fa": "متأهل" } },
+        { "word": { "de": "abhängig", "fa": "وابسته" } },
+        { "word": { "de": "überzeugt", "fa": "متقاعد" } },
+        { "word": { "de": "begeistert", "fa": "شیفته" } },
+        { "word": { "de": "beliebt", "fa": "محبوب" } }
+      ]
+    }
+  ]
+}
