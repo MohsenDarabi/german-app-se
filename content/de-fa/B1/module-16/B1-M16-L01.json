@@ -1,0 +1,532 @@
+{
+  "id": "B1-M16-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Temporale Nebensätze: als und wenn", "fa": "جملات پیرو زمانی: als و wenn" },
+  "description": "یاد بگیرید چه موقع از als و چه موقع از wenn برای بیان زمان استفاده کنید. این تفاوت در آلمانی بسیار مهم است.",
+  "level": "B1",
+  "module": 16,
+  "lessonNumber": 1,
+  "totalSteps": 45,
+  "estimatedMinutes": 25,
+  "vocabulary": [
+    { "de": "einmalig", "fa": "یک‌باره، یک‌بار", "grammar": { "pos": "adjective" } },
+    { "de": "wiederholt", "fa": "مکرر، تکراری", "grammar": { "pos": "adjective" } },
+    { "de": "damals", "fa": "آن زمان، در آن موقع", "grammar": { "pos": "adverb" } },
+    { "de": "jedes Mal", "fa": "هر بار", "grammar": { "pos": "adverb" } },
+    { "de": "immer wenn", "fa": "هر وقت که", "grammar": { "pos": "conjunction" } },
+    { "de": "sobald", "fa": "به محض اینکه", "grammar": { "pos": "conjunction" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "تفاوت als و wenn چیست؟",
+      "content": "**Temporale Nebensätze (جملات پیرو زمانی)**\n\nدر آلمانی دو حرف ربط برای بیان «وقتی که» وجود دارد:\n\n**als** = برای رویدادهای **یک‌بار** در **گذشته**\n- Als ich Kind war... (وقتی بچه بودم...)\n- Als ich nach Deutschland kam... (وقتی به آلمان آمدم...)\n\n**wenn** = برای رویدادهای **تکراری** یا **حال/آینده**\n- Wenn ich Zeit habe... (وقتی وقت دارم...)\n- Immer wenn es regnete... (هر وقت باران می‌آمد...)\n\n**نکته کلیدی:**\n- als = einmalig in der Vergangenheit (یک‌بار در گذشته)\n- wenn = wiederholt oder Gegenwart/Zukunft (تکراری یا حال/آینده)\n\n**مثل فارسی:** هر دو معنی «وقتی که» می‌دهند، ولی در آلمانی باید تفاوت را رعایت کنید!",
+      "examples": [
+        { "de": "Als ich 18 wurde, machte ich den Führerschein.", "fa": "وقتی ۱۸ ساله شدم، گواهینامه گرفتم." },
+        { "de": "Wenn ich müde bin, trinke ich Kaffee.", "fa": "وقتی خسته‌ام، قهوه می‌نوشم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "einmalig", "fa": "یک‌باره، یک‌بار" },
+      "example": { "text": { "de": "Das war ein einmaliges Erlebnis.", "fa": "آن یک تجربه یک‌باره بود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "einmalig",
+      "translation": "یک‌باره",
+      "syllables": ["ein", "ma", "lig"],
+      "distractors": ["an", "mo", "lek"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "wiederholt", "fa": "مکرر، تکراری" },
+      "example": { "text": { "de": "Das passiert wiederholt.", "fa": "این مکرراً اتفاق می‌افتد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "wiederholt",
+      "translation": "مکرر",
+      "syllables": ["wie", "der", "holt"],
+      "distractors": ["wa", "dar", "halt"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "damals", "fa": "آن زمان، در آن موقع" },
+      "example": { "text": { "de": "Damals wohnte ich in Berlin.", "fa": "آن زمان در برلین زندگی می‌کردم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "damals",
+      "translation": "آن زمان",
+      "syllables": ["da", "mals"],
+      "distractors": ["do", "mols", "mels"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "als - فقط برای گذشته یک‌باره",
+      "content": "**als (وقتی که) - برای رویدادهای یک‌باره در گذشته**\n\nاز als استفاده می‌کنیم وقتی:\n1. رویداد **فقط یک بار** اتفاق افتاده\n2. در **گذشته** بوده\n\n**ساختار:**\nals + ... + **Verb (آخر)**\n\n**مثال‌ها:**\n- **Als** ich ein Kind **war**, spielte ich viel.\n  (وقتی بچه بودم، زیاد بازی می‌کردم.)\n\n- **Als** wir uns **kennenlernten**, war es Sommer.\n  (وقتی همدیگر را شناختیم، تابستان بود.)\n\n**اشتباه رایج:**\n❌ Wenn ich Kind war... (غلط!)\n✅ Als ich Kind war... (درست!)\n\nچون بچه بودن یک دوره یک‌باره در گذشته بود!",
+      "examples": [
+        { "de": "Als ich 10 Jahre alt war, zogen wir um.", "fa": "وقتی ۱۰ ساله بودم، نقل مکان کردیم." },
+        { "de": "Als der Film anfing, wurde es still.", "fa": "وقتی فیلم شروع شد، سکوت شد." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله با als درست است؟",
+      "options": [
+        "Als ich jeden Tag zur Schule ging...",
+        "Als ich geboren wurde...",
+        "Als ich immer Kaffee trinke...",
+        "Als ich morgen komme..."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! تولد یک رویداد یک‌باره در گذشته است.", "incorrect": "als فقط برای رویدادهای یک‌باره در گذشته است. تولد (geboren werden) یک‌باره است!" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "چرا می‌گوییم «Als ich Kind war» و نه «Wenn ich Kind war»؟",
+      "options": [
+        "چون هر دو درست است",
+        "چون بچه بودن یک دوره یک‌باره در گذشته بود",
+        "چون wenn فقط برای آینده است",
+        "چون als رسمی‌تر است"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "دقیقاً! بچه بودن یک‌بار اتفاق افتاده، پس از als استفاده می‌کنیم.", "incorrect": "بچه بودن یک دوره یک‌باره در گذشته بود، بنابراین از als استفاده می‌کنیم." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "jedes Mal", "fa": "هر بار" },
+      "example": { "text": { "de": "Jedes Mal wenn ich komme, freut sie sich.", "fa": "هر بار که می‌آیم، خوشحال می‌شود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "jedes Mal",
+      "translation": "هر بار",
+      "syllables": ["je", "des", "Mal"],
+      "distractors": ["ja", "dos", "Mol"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} ich nach Berlin kam, war ich 20 Jahre alt. (وقتی به برلین آمدم)",
+      "options": ["Wenn", "Als", "Weil", "Ob"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "آمدن به برلین یک رویداد یک‌باره در گذشته است، پس از als استفاده می‌کنیم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Als ich Student {0}, wohnte ich in einer WG. (وقتی دانشجو بودم)",
+      "options": ["war", "bin", "wäre", "sein"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "در جملات پیرو زمانی، فعل به آخر می‌رود. گذشته ich → war." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "wenn - برای تکراری یا حال/آینده",
+      "content": "**wenn (وقتی که، هر وقت) - برای رویدادهای تکراری یا حال/آینده**\n\nاز wenn استفاده می‌کنیم وقتی:\n1. رویداد **تکراری** است (حتی در گذشته!)\n2. رویداد در **حال** یا **آینده** است\n3. رویداد **شرطی** است\n\n**ساختار:**\nwenn + ... + **Verb (آخر)**\n\n**مثال‌های تکراری در گذشته:**\n- **Immer wenn** er kam, brachte er Blumen.\n  (هر وقت می‌آمد، گل می‌آورد.)\n\n**مثال‌های حال:**\n- **Wenn** ich müde **bin**, trinke ich Kaffee.\n  (وقتی خسته‌ام، قهوه می‌نوشم.)\n\n**مثال‌های آینده:**\n- **Wenn** du morgen **kommst**, gehen wir essen.\n  (وقتی فردا بیایی، می‌رویم غذا بخوریم.)",
+      "examples": [
+        { "de": "Wenn das Telefon klingelt, gehe ich nicht ran.", "fa": "وقتی تلفن زنگ می‌زند، جواب نمی‌دهم." },
+        { "de": "Jedes Mal wenn ich sie sah, lächelte sie.", "fa": "هر بار که او را می‌دیدم، لبخند می‌زد." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "immer wenn", "fa": "هر وقت که" },
+      "example": { "text": { "de": "Immer wenn es regnet, bleibe ich zu Hause.", "fa": "هر وقت باران می‌بارد، خانه می‌مانم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "immer wenn",
+      "translation": "هر وقت که",
+      "syllables": ["im", "mer", "wenn"],
+      "distractors": ["am", "mar", "wann"]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "sobald", "fa": "به محض اینکه" },
+      "example": { "text": { "de": "Sobald ich ankomme, rufe ich dich an.", "fa": "به محض اینکه برسم، بهت زنگ می‌زنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "sobald",
+      "translation": "به محض اینکه",
+      "syllables": ["so", "bald"],
+      "distractors": ["sa", "bold", "beld"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} ich Zeit habe, lese ich ein Buch. (وقتی وقت دارم)",
+      "options": ["Als", "Wenn", "Weil", "Dass"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "این یک عادت تکراری در حال است، پس از wenn استفاده می‌کنیم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Immer wenn er mich {0}, fragte er nach dir. (هر وقت مرا می‌دید)",
+      "options": ["sehen", "sieht", "sah", "gesehen"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "جمله در گذشته است (fragte) و فعل در جمله پیرو هم گذشته: er sah." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "خاطرات کودکی",
+      "scene": {
+        "location": "living room",
+        "description": { "de": "Oma und Enkel im Wohnzimmer", "fa": "مادربزرگ و نوه در اتاق نشیمن" }
+      },
+      "lines": [
+        { "speaker": "Enkel", "text": { "de": "Oma, wie war es früher?", "fa": "مادربزرگ، قدیم‌ها چطور بود؟" }, "mood": "neutral" },
+        { "speaker": "Oma", "text": { "de": "Als ich jung war, gab es kein Internet.", "fa": "وقتی جوان بودم، اینترنت نبود." }, "mood": "neutral" },
+        { "speaker": "Enkel", "text": { "de": "Was habt ihr gemacht?", "fa": "چه کار می‌کردید؟" }, "mood": "confused" },
+        { "speaker": "Oma", "text": { "de": "Immer wenn wir uns langweilten, gingen wir raus spielen.", "fa": "هر وقت حوصله‌مان سر می‌رفت، می‌رفتیم بیرون بازی." }, "mood": "happy" },
+        { "speaker": "Enkel", "text": { "de": "Das klingt schön!", "fa": "خوب به نظر می‌رسد!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "مادربزرگ از چه دوره‌ای صحبت می‌کند؟", "options": ["آینده", "جوانی‌اش", "دیروز"], "correctIndex": 1, "explanation": "مادربزرگ گفت: Als ich jung war." },
+        { "question": "چرا در جمله دوم مادربزرگ از «immer wenn» استفاده شد؟", "options": ["رویداد یک‌باره بود", "رویداد تکراری بود", "رویداد در آینده است"], "correctIndex": 1, "explanation": "بیرون رفتن برای بازی یک عادت تکراری بود: Immer wenn wir uns langweilten." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["war", "ich", "Als", "ging", "Kind", "oft", "ich", "schwimmen"],
+      "correctOrder": [2, 1, 4, 0, 6, 5, 7, 3],
+      "correctSentence": { "de": "Als ich Kind war ich oft schwimmen ging", "fa": "وقتی بچه بودم اغلب شنا می‌رفتم" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["regnet", "es", "Wenn", "Regenschirm", "ich", "nehme", "einen"],
+      "correctOrder": [2, 1, 0, 5, 4, 6, 3],
+      "correctSentence": { "de": "Wenn es regnet nehme ich einen Regenschirm", "fa": "وقتی باران می‌بارد چتر می‌برم" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["kam", "er", "Immer", "wenn", "Geschenke", "brachte", "er"],
+      "correctOrder": [2, 3, 1, 0, 5, 6, 4],
+      "correctSentence": { "de": "Immer wenn er kam brachte er Geschenke", "fa": "هر وقت می‌آمد هدیه می‌آورد" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای رویدادهای تکراری در گذشته از als استفاده می‌کنیم.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! برای رویدادهای تکراری (حتی در گذشته) از wenn استفاده می‌کنیم: Immer wenn..." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "جمله «Als ich geboren wurde» درست است چون تولد یک رویداد یک‌باره در گذشته است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! تولد فقط یک بار اتفاق می‌افتد، پس از als استفاده می‌کنیم." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای بیان آینده می‌توانیم از wenn استفاده کنیم.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! wenn برای حال، آینده و رویدادهای تکراری استفاده می‌شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} du morgen kommst, zeige ich dir die Stadt. (وقتی فردا بیایی)",
+      "options": ["Als", "Wenn", "Weil", "Ob"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "این جمله در آینده است، پس از wenn استفاده می‌کنیم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} ich 18 wurde, durfte ich Auto fahren. (وقتی ۱۸ ساله شدم)",
+      "options": ["Wenn", "Als", "Weil", "Dass"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "۱۸ ساله شدن یک رویداد یک‌باره در گذشته است، پس از als استفاده می‌کنیم." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "برنامه برای فردا",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Zwei Kollegen im Büro", "fa": "دو همکار در دفتر" }
+      },
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Was machst du, wenn du morgen frei hast?", "fa": "وقتی فردا آزاد باشی، چه کار می‌کنی؟" }, "mood": "neutral" },
+        { "speaker": "Max", "text": { "de": "Wenn das Wetter schön ist, gehe ich wandern.", "fa": "اگر هوا خوب باشد، می‌روم پیاده‌روی." }, "mood": "happy" },
+        { "speaker": "Lisa", "text": { "de": "Und wenn es regnet?", "fa": "و اگر باران ببارد؟" }, "mood": "confused" },
+        { "speaker": "Max", "text": { "de": "Dann bleibe ich zu Hause. Als ich letztes Mal im Regen wanderte, wurde ich krank.", "fa": "پس خانه می‌مانم. دفعه قبل که زیر باران پیاده‌روی کردم، مریض شدم." }, "mood": "sad" },
+        { "speaker": "Lisa", "text": { "de": "Gute Idee! Sobald du dich entscheidest, sag mir Bescheid.", "fa": "ایده خوبی! به محض اینکه تصمیم گرفتی، بهم بگو." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "چرا ماکس در جمله آخر از als استفاده کرد؟", "options": ["چون رویداد تکراری بود", "چون رویداد یک‌باره در گذشته بود", "چون در آینده است"], "correctIndex": 1, "explanation": "مریض شدن دفعه قبل یک رویداد یک‌باره در گذشته بود: Als ich letztes Mal wanderte." },
+        { "question": "sobald به چه معناست؟", "options": ["اگر", "به محض اینکه", "قبل از اینکه"], "correctIndex": 1, "explanation": "sobald یعنی «به محض اینکه» و مثل wenn فعل را به آخر می‌برد." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "کلمات آلمانی را با معانی فارسی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "als" },
+        { "id": "i2", "text": "wenn" },
+        { "id": "i3", "text": "einmalig" },
+        { "id": "i4", "text": "wiederholt" },
+        { "id": "i5", "text": "damals" },
+        { "id": "i6", "text": "sobald" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "وقتی که (یک‌باره گذشته)" },
+        { "id": "m2", "text": "وقتی که (تکراری/آینده)" },
+        { "id": "m3", "text": "یک‌باره" },
+        { "id": "m4", "text": "مکرر، تکراری" },
+        { "id": "m5", "text": "آن زمان" },
+        { "id": "m6", "text": "به محض اینکه" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "وقتی بچه بودم، در ایران زندگی می‌کردم.",
+      "sentenceTemplate": "{0} ich Kind {1}, lebte ich im Iran.",
+      "options": ["Als", "war", "Wenn", "bin"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Als ich Kind war, lebte ich im Iran.", "fa": "وقتی بچه بودم، در ایران زندگی می‌کردم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "هر وقت وقت دارم، کتاب می‌خوانم.",
+      "sentenceTemplate": "{0} ich Zeit {1}, lese ich ein Buch.",
+      "options": ["Wenn", "Als", "habe", "hatte"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Wenn ich Zeit habe, lese ich ein Buch.", "fa": "هر وقت وقت دارم، کتاب می‌خوانم." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: خاطرات مهاجرت",
+      "passage": {
+        "de": "Als ich 2015 nach Deutschland kam, konnte ich kein Wort Deutsch. Damals war alles neu und schwierig für mich. Immer wenn ich einkaufen ging, brauchte ich Hilfe. Jedes Mal wenn jemand mit mir sprach, verstand ich nichts.\n\nAber ich gab nicht auf. Wenn ich Zeit hatte, lernte ich Vokabeln. Sobald ich ein neues Wort hörte, schrieb ich es auf. Nach zwei Jahren konnte ich schon gut Deutsch sprechen. Als ich meine erste Arbeit bekam, war ich sehr stolz.",
+        "fa": "وقتی در سال ۲۰۱۵ به آلمان آمدم، هیچ کلمه آلمانی بلد نبودم. آن زمان همه چیز برایم جدید و سخت بود. هر وقت می‌رفتم خرید، به کمک نیاز داشتم. هر بار که کسی با من حرف می‌زد، چیزی نمی‌فهمیدم.\n\nاما تسلیم نشدم. وقتی وقت داشتم، لغت یاد می‌گرفتم. به محض اینکه کلمه جدیدی می‌شنیدم، یادداشت می‌کردم. بعد از دو سال دیگر می‌توانستم خوب آلمانی صحبت کنم. وقتی اولین کارم را گرفتم، خیلی افتخار کردم."
+      },
+      "questions": [
+        { "question": "چرا نویسنده در جمله اول از als استفاده کرده؟", "options": ["چون تکراری بود", "چون آمدن به آلمان یک‌بار بود", "چون در آینده است"], "correctIndex": 1, "explanation": "آمدن به آلمان یک رویداد یک‌باره در گذشته بود: Als ich kam." },
+        { "question": "چرا برای خرید رفتن از «immer wenn» استفاده شده؟", "options": ["یک‌بار خرید رفت", "چندین بار خرید رفت", "هنوز خرید نرفته"], "correctIndex": 1, "explanation": "خرید رفتن یک عمل تکراری بود: Immer wenn ich einkaufen ging." },
+        { "question": "sobald در متن به چه معناست؟", "options": ["قبل از اینکه", "به محض اینکه", "بعد از اینکه"], "correctIndex": 1, "explanation": "sobald یعنی «به محض اینکه»: Sobald ich ein neues Wort hörte." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die erste Liebe", "fa": "اولین عشق" },
+      "characters": ["Anna", "Lisa"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Anna und Lisa sitzen im Café und reden über alte Zeiten.", "fa": "آنا و لیزا در کافه نشسته‌اند و از گذشته حرف می‌زنند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Erinnerst du dich an deine erste Liebe?", "fa": "اولین عشقت یادت هست؟" },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Ja, als ich 16 war, verliebte ich mich zum ersten Mal.", "fa": "آره، وقتی ۱۶ ساله بودم، برای اولین بار عاشق شدم." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "چرا آنا از als استفاده کرد؟",
+          "options": ["چون عاشق شدن تکراری بود", "چون ۱۶ سالگی یک زمان یک‌باره در گذشته بود", "چون هنوز عاشق است"],
+          "correctIndex": 1,
+          "explanation": "۱۶ سالگی و اولین عشق یک رویداد یک‌باره در گذشته بود."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Wie hast du ihn kennengelernt?", "fa": "چطور باهاش آشنا شدی؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Immer wenn ich in der Bibliothek war, sah ich ihn dort.", "fa": "هر وقت در کتابخانه بودم، او را آنجا می‌دیدم." },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Jedes Mal wenn unsere Blicke sich trafen, lächelte er.", "fa": "هر بار که نگاه‌هایمان به هم می‌افتاد، لبخند می‌زد." },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "چرا در این دو جمله از wenn استفاده شده؟",
+          "options": ["چون در آینده بود", "چون تکراری بود", "چون یک‌باره بود"],
+          "correctIndex": 1,
+          "explanation": "دیدن در کتابخانه و لبخند زدن تکراری بودند: Immer wenn / Jedes Mal wenn."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Und wann habt ihr zum ersten Mal gesprochen?", "fa": "و کی برای اولین بار حرف زدید؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Als ich einmal meine Bücher fallen ließ, half er mir.", "fa": "یک بار که کتاب‌هایم افتاد، کمکم کرد." },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "چرا در آخرین جمله آنا از als استفاده شد؟",
+          "options": ["چون افتادن کتاب‌ها یک بار اتفاق افتاد", "چون تکراری بود", "چون در آینده است"],
+          "correctIndex": 0,
+          "explanation": "این رویداد خاص (کتاب‌ها افتادن) یک‌بار اتفاق افتاد: Als ich einmal..."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: als یا wenn؟",
+      "instruction": "انتخاب کنید!",
+      "questions": [
+        { "prompt": "_____ ich Kind war (بچه بودم)", "left": "als", "right": "wenn", "correctSide": "left" },
+        { "prompt": "Immer _____ es regnet (هر وقت باران می‌بارد)", "left": "als", "right": "wenn", "correctSide": "right" },
+        { "prompt": "_____ du morgen kommst (وقتی فردا بیایی)", "left": "als", "right": "wenn", "correctSide": "right" },
+        { "prompt": "_____ ich geboren wurde (وقتی به دنیا آمدم)", "left": "als", "right": "wenn", "correctSide": "left" },
+        { "prompt": "Jedes Mal _____ ich sie sehe (هر بار که می‌بینمش)", "left": "als", "right": "wenn", "correctSide": "right" },
+        { "prompt": "_____ der Krieg 1945 endete (وقتی جنگ تمام شد)", "left": "als", "right": "wenn", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Als ich Kind war, spielte ich jeden Tag draußen.",
+      "translation": "وقتی بچه بودم، هر روز بیرون بازی می‌کردم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Immer wenn ich müde bin, trinke ich Kaffee.",
+      "translation": "هر وقت خسته‌ام، قهوه می‌نوشم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Sobald du ankommst, ruf mich an.",
+      "translation": "به محض اینکه رسیدی، بهم زنگ بزن."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "_____ ich 18 wurde (یک‌باره گذشته)", "options": ["Als", "Wenn"], "correctAnswerIndex": 0 },
+        { "question": "Immer _____ es schneit (تکراری)", "options": ["als", "wenn"], "correctAnswerIndex": 1 },
+        { "question": "_____ du morgen Zeit hast (آینده)", "options": ["Als", "Wenn"], "correctAnswerIndex": 1 },
+        { "question": "_____ wir uns trafen (اولین ملاقات)", "options": ["Als", "Wenn"], "correctAnswerIndex": 0 },
+        { "question": "Jedes Mal _____ ich esse (تکراری)", "options": ["als", "wenn"], "correctAnswerIndex": 1 },
+        { "question": "یک‌باره در گذشته = _____", "options": ["als", "wenn"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "als", "fa": "یک‌باره گذشته" },
+        { "de": "wenn", "fa": "تکراری/حال/آینده" },
+        { "de": "immer wenn", "fa": "هر وقت که" },
+        { "de": "sobald", "fa": "به محض اینکه" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات مربوط به این درس را پیدا کنید",
+      "targetWords": ["als", "wenn", "damals", "einmalig", "wiederholt", "sobald"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "einmalig", "fa": "یک‌باره", "options": ["تکراری", "یک‌باره", "همیشه", "هرگز"], "correctIndex": 1 },
+        { "de": "damals", "fa": "آن زمان", "options": ["الان", "آن زمان", "فردا", "همیشه"], "correctIndex": 1 },
+        { "de": "sobald", "fa": "به محض اینکه", "options": ["قبل از", "به محض اینکه", "بعد از", "چون"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما تفاوت als و wenn را یاد گرفتید!",
+      "keyPoints": [
+        "als = فقط برای رویدادهای یک‌باره در گذشته",
+        "wenn = برای رویدادهای تکراری یا حال/آینده",
+        "Immer wenn / Jedes Mal wenn = هر وقت که (تکراری)",
+        "sobald = به محض اینکه",
+        "در جملات پیرو زمانی: فعل به آخر می‌رود",
+        "اشتباه رایج: استفاده از wenn برای رویدادهای یک‌باره گذشته"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "einmalig", "fa": "یک‌باره، یک‌بار" } },
+        { "word": { "de": "wiederholt", "fa": "مکرر، تکراری" } },
+        { "word": { "de": "damals", "fa": "آن زمان، در آن موقع" } },
+        { "word": { "de": "jedes Mal", "fa": "هر بار" } },
+        { "word": { "de": "immer wenn", "fa": "هر وقت که" } },
+        { "word": { "de": "sobald", "fa": "به محض اینکه" } }
+      ]
+    }
+  ]
+}

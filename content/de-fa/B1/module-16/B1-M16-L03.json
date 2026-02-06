@@ -1,0 +1,502 @@
+{
+  "id": "B1-M16-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Temporale Nebensätze: seitdem, bis, sobald", "fa": "جملات پیرو زمانی: seitdem, bis, sobald" },
+  "description": "یاد بگیرید چگونه با seitdem، bis و sobald جملات پیرو زمانی بسازید",
+  "level": "B1",
+  "module": 16,
+  "lessonNumber": 3,
+  "totalSteps": 45,
+  "estimatedMinutes": 25,
+  "vocabulary": [
+    { "de": "seitdem", "fa": "از آن زمان، از وقتی که", "grammar": { "pos": "conjunction" } },
+    { "de": "solange", "fa": "تا وقتی که، مادامی که", "grammar": { "pos": "conjunction" } },
+    { "de": "inzwischen", "fa": "در این میان، در این فاصله", "grammar": { "pos": "adverb" } },
+    { "de": "endlich", "fa": "بالاخره، سرانجام", "grammar": { "pos": "adverb" } },
+    { "de": "sofort", "fa": "فوراً، بلافاصله", "grammar": { "pos": "adverb" } },
+    { "de": "warten", "fa": "صبر کردن، منتظر ماندن", "grammar": { "pos": "verb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "جملات پیرو زمانی با seitdem، bis، sobald",
+      "content": "در آلمانی برای بیان روابط زمانی خاص از حروف ربط زیر استفاده می‌کنیم:\n\n**1. seitdem / seit** = از وقتی که، از آن زمان\n- بیان شروع یک وضعیت که تا الان ادامه دارد\n- Seitdem ich hier wohne, fühle ich mich wohl.\n\n**2. bis** = تا، تا وقتی که\n- بیان پایان یک عمل یا انتظار\n- Ich warte, bis du kommst.\n\n**3. sobald** = به محض اینکه، همین که\n- بیان فوری بودن عمل\n- Sobald ich fertig bin, rufe ich dich an.\n\n**نکته برای فارسی‌زبانان:**\nدر فارسی هم از «از وقتی که»، «تا» و «همین که» استفاده می‌کنیم. تفاوت اصلی این است که در آلمانی فعل در جمله پیرو به آخر می‌رود.",
+      "examples": [
+        { "de": "Seitdem er arbeitet, hat er weniger Zeit.", "fa": "از وقتی که کار می‌کند، وقت کمتری دارد." },
+        { "de": "Warte hier, bis ich zurückkomme.", "fa": "اینجا صبر کن تا برگردم." },
+        { "de": "Sobald es regnet, gehen wir nach Hause.", "fa": "همین که باران ببارد، می‌رویم خانه." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "seitdem", "fa": "از آن زمان، از وقتی که" },
+      "example": { "text": { "de": "Seitdem ich Deutsch lerne, verstehe ich mehr.", "fa": "از وقتی که آلمانی یاد می‌گیرم، بیشتر می‌فهمم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "seitdem",
+      "translation": "از آن زمان، از وقتی که",
+      "syllables": ["seit", "dem"],
+      "distractors": ["sait", "dam", "dom", "set"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "solange", "fa": "تا وقتی که، مادامی که" },
+      "example": { "text": { "de": "Solange du hier bist, helfe ich dir.", "fa": "تا وقتی که اینجا هستی، کمکت می‌کنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "solange",
+      "translation": "تا وقتی که، مادامی که",
+      "syllables": ["so", "lan", "ge"],
+      "distractors": ["sa", "lon", "ga", "len"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "inzwischen", "fa": "در این میان، در این فاصله" },
+      "example": { "text": { "de": "Ich koche. Kannst du inzwischen den Tisch decken?", "fa": "من غذا می‌پزم. می‌توانی در این فاصله میز را بچینی؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "inzwischen",
+      "translation": "در این میان، در این فاصله",
+      "syllables": ["in", "zwi", "schen"],
+      "distractors": ["un", "zwa", "scho", "zwe"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام حرف ربط برای «از وقتی که» استفاده می‌شود؟",
+      "options": [
+        "bis",
+        "sobald",
+        "seitdem",
+        "solange"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! seitdem برای بیان «از وقتی که» استفاده می‌شود.", "incorrect": "seitdem برای بیان شروع یک وضعیت که تا الان ادامه دارد استفاده می‌شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را با کلمه مناسب پر کنید",
+      "sentence": "{0} ich in Deutschland lebe, spreche ich besser Deutsch.",
+      "options": ["Bis", "Seitdem", "Sobald", "Solange"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Seitdem برای بیان شروع یک وضعیت که تا الان ادامه دارد: از وقتی که در آلمان زندگی می‌کنم، بهتر آلمانی صحبت می‌کنم." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "تفاوت seit (حرف اضافه) و seitdem (حرف ربط)",
+      "content": "**seit** = حرف اضافه (با اسم یا زمان می‌آید)\n- Ich wohne hier **seit** drei Jahren.\n- من سه سال است که اینجا زندگی می‌کنم.\n\n**seitdem / seit** = حرف ربط (با جمله کامل می‌آید)\n- **Seitdem** ich hier wohne, bin ich glücklich.\n- از وقتی که اینجا زندگی می‌کنم، خوشحالم.\n\n**نکته مهم:**\n- بعد از حرف اضافه seit: اسم یا عدد\n- بعد از حرف ربط seitdem: جمله کامل با فعل در آخر\n\n**مقایسه:**\n- Seit **einem Jahr** (اسم) lerne ich Deutsch.\n- **Seitdem** ich **lerne** (جمله), mache ich Fortschritte.",
+      "examples": [
+        { "de": "Seit zwei Monaten arbeite ich hier.", "fa": "دو ماه است که اینجا کار می‌کنم." },
+        { "de": "Seitdem ich arbeite, habe ich weniger Freizeit.", "fa": "از وقتی که کار می‌کنم، وقت آزاد کمتری دارم." }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "گفتگو درباره تغییرات زندگی",
+      "scene": {
+        "location": "cafe",
+        "description": { "de": "Zwei Freunde treffen sich nach langer Zeit.", "fa": "دو دوست بعد از مدت‌ها همدیگر را می‌بینند." }
+      },
+      "lines": [
+        { "speaker": "Mina", "text": { "de": "Hallo Ali! Wie geht es dir?", "fa": "سلام علی! حالت چطوره؟" }, "mood": "happy" },
+        { "speaker": "Ali", "text": { "de": "Gut! Seitdem ich einen neuen Job habe, bin ich sehr zufrieden.", "fa": "خوب! از وقتی که کار جدید دارم، خیلی راضی‌ام." }, "mood": "happy" },
+        { "speaker": "Mina", "text": { "de": "Das freut mich! Ich warte, bis ich meine Prüfung bestehe. Dann suche ich auch einen Job.", "fa": "خوشحالم! صبر می‌کنم تا امتحانم را پاس کنم. بعد من هم دنبال کار می‌گردم." }, "mood": "neutral" },
+        { "speaker": "Ali", "text": { "de": "Sobald du bereit bist, sag mir Bescheid. Ich helfe dir gern!", "fa": "همین که آماده شدی، خبرم کن. با کمال میل کمکت می‌کنم!" }, "mood": "excited" }
+      ],
+      "questions": [
+        { "question": "علی از چه زمانی راضی است؟", "options": ["از وقتی که دوستش را دید", "از وقتی که کار جدید دارد", "از وقتی که امتحان داد"], "correctIndex": 1, "explanation": "علی گفت: Seitdem ich einen neuen Job habe" },
+        { "question": "مینا منتظر چه چیزی است؟", "options": ["منتظر است تا امتحانش را پاس کند", "منتظر است تا علی بیاید", "منتظر است تا کار پیدا کند"], "correctIndex": 0, "explanation": "مینا گفت: bis ich meine Prüfung bestehe" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "endlich", "fa": "بالاخره، سرانجام" },
+      "example": { "text": { "de": "Endlich ist der Sommer da!", "fa": "بالاخره تابستان رسید!" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "endlich",
+      "translation": "بالاخره، سرانجام",
+      "syllables": ["end", "lich"],
+      "distractors": ["and", "lech", "lach", "ind"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "sofort", "fa": "فوراً، بلافاصله" },
+      "example": { "text": { "de": "Sobald er anruft, antworte ich sofort.", "fa": "همین که زنگ بزند، فوراً جواب می‌دهم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "sofort",
+      "translation": "فوراً، بلافاصله",
+      "syllables": ["so", "fort"],
+      "distractors": ["sa", "fart", "furt", "fu"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich warte hier, {0} du zurückkommst.",
+      "options": ["seitdem", "bis", "sobald", "solange"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "bis برای بیان پایان انتظار: اینجا صبر می‌کنم تا برگردی." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} ich die Nachricht bekomme, rufe ich dich an.",
+      "options": ["Seitdem", "Bis", "Sobald", "Solange"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "Sobald برای بیان فوریت: همین که پیام را بگیرم، زنگ می‌زنم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["wohne,", "ich", "hier", "Seitdem", "mich", "ich", "wohl.", "fühle"],
+      "correctOrder": [3, 1, 2, 0, 7, 5, 4, 6],
+      "correctSentence": { "de": "Seitdem ich hier wohne, fühle ich mich wohl.", "fa": "از وقتی که اینجا زندگی می‌کنم، احساس خوبی دارم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["fertig", "sobald", "an.", "ich", "rufe", "dich", "bin,", "Ich"],
+      "correctOrder": [7, 4, 5, 2, 1, 3, 0, 6],
+      "correctSentence": { "de": "Ich rufe dich an, sobald ich fertig bin.", "fa": "زنگ می‌زنم، همین که کارم تمام شود." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "seitdem برای بیان عملی که در گذشته شروع شده و تا الان ادامه دارد استفاده می‌شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! seitdem برای بیان شروع یک وضعیت که تا الان ادامه دارد استفاده می‌شود." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "bis و sobald هر دو برای بیان فوریت استفاده می‌شوند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! bis برای بیان پایان انتظار (تا) و sobald برای بیان فوریت (همین که) استفاده می‌شود." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s8",
+      "title": "solange - تا وقتی که، مادامی که",
+      "content": "**solange** = تا وقتی که، مادامی که\n\nبرای بیان دو عمل همزمان استفاده می‌شود:\n- یک عمل تا زمانی که عمل دیگر ادامه دارد، انجام می‌شود.\n\n**ساختار:**\nsolange + فاعل + ... + فعل (در آخر)\n\n**مثال‌ها:**\n- **Solange** du lernst, störe ich dich nicht.\n- مادامی که درس می‌خوانی، مزاحمت نمی‌شوم.\n\n**تفاوت با bis:**\n- **bis** = تا یک نقطه پایان (انتظار برای پایان)\n- **solange** = در طول مدت (همزمانی)\n\n**مقایسه:**\n- Warte, **bis** ich komme. (صبر کن تا بیایم)\n- **Solange** ich hier bin, hilfst du mir. (تا وقتی اینجا هستم، کمکم کن)",
+      "examples": [
+        { "de": "Solange es regnet, bleiben wir drinnen.", "fa": "تا وقتی که باران می‌بارد، داخل می‌مانیم." },
+        { "de": "Solange ich lebe, vergesse ich dich nicht.", "fa": "تا وقتی که زنده‌ام، فراموشت نمی‌کنم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "warten", "fa": "صبر کردن، منتظر ماندن" },
+      "example": { "text": { "de": "Ich warte, bis der Bus kommt.", "fa": "صبر می‌کنم تا اتوبوس بیاید." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "warten",
+      "translation": "صبر کردن، منتظر ماندن",
+      "syllables": ["war", "ten"],
+      "distractors": ["wer", "tan", "ton", "wor"]
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "برنامه‌ریزی برای آخر هفته",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Zwei Kollegen planen das Wochenende.", "fa": "دو همکار برای آخر هفته برنامه‌ریزی می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Thomas", "text": { "de": "Was machst du am Wochenende?", "fa": "آخر هفته چه کار می‌کنی؟" }, "mood": "neutral" },
+        { "speaker": "Sara", "text": { "de": "Solange das Wetter schön ist, gehe ich wandern.", "fa": "تا وقتی که هوا خوب باشد، می‌روم پیاده‌روی." }, "mood": "happy" },
+        { "speaker": "Thomas", "text": { "de": "Gute Idee! Ich bleibe zu Hause, bis meine Schwester kommt.", "fa": "فکر خوبی است! من خانه می‌مانم تا خواهرم بیاید." }, "mood": "neutral" },
+        { "speaker": "Sara", "text": { "de": "Sobald sie da ist, rufst du mich an?", "fa": "همین که رسید، بهم زنگ می‌زنی؟" }, "mood": "excited" }
+      ],
+      "questions": [
+        { "question": "سارا چه زمانی پیاده‌روی می‌رود؟", "options": ["وقتی خواهرش بیاید", "تا وقتی که هوا خوب باشد", "همین که کارش تمام شود"], "correctIndex": 1, "explanation": "سارا گفت: Solange das Wetter schön ist" },
+        { "question": "توماس تا چه زمانی خانه می‌ماند؟", "options": ["تا خواهرش بیاید", "تا هوا خوب شود", "تا سارا زنگ بزند"], "correctIndex": 0, "explanation": "توماس گفت: bis meine Schwester kommt" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله درست است؟",
+      "options": [
+        "Seitdem ich hier bin, ich fühle mich gut.",
+        "Seitdem ich hier bin, fühle ich mich gut.",
+        "Seitdem ich bin hier, fühle ich mich gut.",
+        "Seitdem hier ich bin, fühle ich mich gut."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! در جمله پیرو فعل به آخر می‌رود و جمله اصلی با فعل شروع می‌شود.", "incorrect": "در جمله پیرو با seitdem، فعل در آخر جمله پیرو قرار می‌گیرد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} du hier bist, muss ich keine Angst haben.",
+      "options": ["Seitdem", "Bis", "Sobald", "Solange"],
+      "correctAnswers": [3],
+      "feedback": { "explanation": "Solange برای بیان همزمانی: تا وقتی که اینجا هستی، نباید بترسم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Wir haben gewartet, {0} der Zug kam.",
+      "options": ["seitdem", "bis", "sobald", "solange"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "bis برای بیان پایان انتظار: صبر کردیم تا قطار آمد." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["ich", "Solange", "störe", "nicht.", "lernst,", "du", "dich"],
+      "correctOrder": [1, 5, 4, 2, 0, 6, 3],
+      "correctSentence": { "de": "Solange du lernst, störe ich dich nicht.", "fa": "تا وقتی که درس می‌خوانی، مزاحمت نمی‌شوم." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جملات با seitdem، bis و sobald فعل جمله پیرو در آخر قرار می‌گیرد.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! این حروف ربط فرعی هستند و فعل را به آخر جمله پیرو می‌برند." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "عبارت آلمانی را با معنی فارسی جور کنید",
+      "items": [
+        { "id": "i1", "text": "seitdem" },
+        { "id": "i2", "text": "bis" },
+        { "id": "i3", "text": "sobald" },
+        { "id": "i4", "text": "solange" },
+        { "id": "i5", "text": "endlich" },
+        { "id": "i6", "text": "sofort" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "از وقتی که" },
+        { "id": "m2", "text": "تا" },
+        { "id": "m3", "text": "همین که" },
+        { "id": "m4", "text": "تا وقتی که (مادامی که)" },
+        { "id": "m5", "text": "بالاخره" },
+        { "id": "m6", "text": "فوراً" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "از وقتی که او را می‌شناسم، خوشحالم.",
+      "sentenceTemplate": "{0} ich ihn kenne, bin ich glücklich.",
+      "options": ["Bis", "Seitdem", "Sobald", "Solange"],
+      "correctAnswers": [1],
+      "correctTranslation": { "de": "Seitdem ich ihn kenne, bin ich glücklich.", "fa": "از وقتی که او را می‌شناسم، خوشحالم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "همین که برسم، خبرت می‌کنم.",
+      "sentenceTemplate": "{0} ich ankomme, sage ich dir Bescheid.",
+      "options": ["Bis", "Seitdem", "Sobald", "Solange"],
+      "correctAnswers": [2],
+      "correctTranslation": { "de": "Sobald ich ankomme, sage ich dir Bescheid.", "fa": "همین که برسم، خبرت می‌کنم." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: زندگی جدید",
+      "passage": {
+        "de": "Leila ist vor zwei Jahren nach Deutschland gekommen. Seitdem sie hier lebt, hat sich viel verändert. Am Anfang war es schwer. Sie musste warten, bis sie einen Sprachkurs fand. Sobald sie Deutsch lernte, fühlte sie sich besser. Solange sie studiert, wohnt sie bei ihrer Tante. Inzwischen spricht sie gut Deutsch und hat viele Freunde gefunden. Endlich ist sie glücklich in ihrer neuen Heimat.",
+        "fa": "لیلا دو سال پیش به آلمان آمد. از وقتی که اینجا زندگی می‌کند، چیزهای زیادی تغییر کرده. اول سخت بود. باید صبر می‌کرد تا کلاس زبان پیدا کند. همین که شروع به یادگیری آلمانی کرد، احساس بهتری پیدا کرد. تا وقتی که درس می‌خواند، پیش خاله‌اش زندگی می‌کند. در این میان آلمانی خوب صحبت می‌کند و دوستان زیادی پیدا کرده. بالاخره در خانه جدیدش خوشحال است."
+      },
+      "questions": [
+        { "question": "لیلا از چه زمانی در آلمان زندگی می‌کند؟", "options": ["یک سال پیش", "دو سال پیش", "سه سال پیش"], "correctIndex": 1, "explanation": "متن می‌گوید: vor zwei Jahren" },
+        { "question": "لیلا تا چه زمانی پیش خاله‌اش می‌ماند؟", "options": ["تا کار پیدا کند", "تا وقتی که درس می‌خواند", "تا آلمانی یاد بگیرد"], "correctIndex": 1, "explanation": "متن می‌گوید: Solange sie studiert" },
+        { "question": "لیلا چه زمانی احساس بهتری پیدا کرد؟", "options": ["همین که شروع به یادگیری آلمانی کرد", "وقتی کار پیدا کرد", "وقتی دوست پیدا کرد"], "correctIndex": 0, "explanation": "متن می‌گوید: Sobald sie Deutsch lernte" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der lange Weg", "fa": "راه طولانی" },
+      "characters": ["Reza", "Mutter"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Reza ist Student in Deutschland. Er vermisst seine Familie im Iran.", "fa": "رضا دانشجو در آلمان است. دلش برای خانواده‌اش در ایران تنگ شده." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Reza",
+          "text": { "de": "Seitdem ich hier bin, denke ich jeden Tag an euch.", "fa": "از وقتی که اینجا هستم، هر روز به شما فکر می‌کنم." },
+          "mood": "sad"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Mutter",
+          "text": { "de": "Wir warten, bis du uns besuchst. Sobald du Zeit hast, komm!", "fa": "صبر می‌کنیم تا به دیدنمان بیایی. همین که وقت داشتی، بیا!" },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "رضا از چه زمانی به خانواده‌اش فکر می‌کند؟",
+          "options": ["از وقتی که درسش تمام شد", "از وقتی که در آلمان است", "از وقتی که کار پیدا کرد"],
+          "correctIndex": 1,
+          "explanation": "رضا گفت: Seitdem ich hier bin"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Reza arbeitet hart. Solange er studiert, hat er wenig Freizeit.", "fa": "رضا سخت کار می‌کند. تا وقتی که درس می‌خواند، وقت آزاد کمی دارد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Reza",
+          "text": { "de": "Solange ich hier bin, lerne ich so viel wie möglich.", "fa": "تا وقتی که اینجا هستم، هر چقدر بتوانم یاد می‌گیرم." },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "رضا تا چه زمانی وقت آزاد کمی دارد؟",
+          "options": ["تا کار پیدا کند", "تا وقتی که درس می‌خواند", "تا برگردد ایران"],
+          "correctIndex": 1,
+          "explanation": "متن می‌گوید: Solange er studiert, hat er wenig Freizeit"
+        }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Seitdem ich Deutsch lerne, verstehe ich mehr.",
+      "translation": "از وقتی که آلمانی یاد می‌گیرم، بیشتر می‌فهمم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Warte hier, bis ich zurückkomme.",
+      "translation": "اینجا صبر کن تا برگردم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Sobald es regnet, gehen wir nach Hause.",
+      "translation": "همین که باران ببارد، می‌رویم خانه."
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع",
+      "instruction": "ترجمه درست را انتخاب کنید!",
+      "questions": [
+        { "prompt": "seitdem", "left": "از وقتی که", "right": "همین که", "correctSide": "left" },
+        { "prompt": "bis", "left": "تا وقتی که", "right": "تا", "correctSide": "right" },
+        { "prompt": "sobald", "left": "همین که", "right": "از وقتی که", "correctSide": "left" },
+        { "prompt": "solange", "left": "بالاخره", "right": "مادامی که", "correctSide": "right" },
+        { "prompt": "endlich", "left": "بالاخره", "right": "فوراً", "correctSide": "left" },
+        { "prompt": "sofort", "left": "بالاخره", "right": "فوراً", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "از وقتی که → ?", "options": ["bis", "seitdem", "sobald"], "correctAnswerIndex": 1 },
+        { "question": "تا → ?", "options": ["seitdem", "solange", "bis"], "correctAnswerIndex": 2 },
+        { "question": "همین که → ?", "options": ["sobald", "seitdem", "solange"], "correctAnswerIndex": 0 },
+        { "question": "مادامی که → ?", "options": ["bis", "sobald", "solange"], "correctAnswerIndex": 2 },
+        { "question": "بالاخره → ?", "options": ["sofort", "endlich", "inzwischen"], "correctAnswerIndex": 1 },
+        { "question": "فوراً → ?", "options": ["endlich", "inzwischen", "sofort"], "correctAnswerIndex": 2 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "seitdem", "fa": "از وقتی که" },
+        { "de": "bis", "fa": "تا" },
+        { "de": "sobald", "fa": "همین که" },
+        { "de": "solange", "fa": "مادامی که" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات این درس را پیدا کنید",
+      "targetWords": ["seitdem", "bis", "sobald", "solange", "endlich", "sofort"],
+      "gridSize": { "rows": 12, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er hat gewartet, {0} sie endlich kam.",
+      "options": ["seitdem", "bis", "sobald", "solange"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "bis برای بیان پایان انتظار: صبر کرد تا بالاخره آمد." }
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "seitdem", "fa": "از وقتی که", "options": ["تا", "از وقتی که", "همین که", "مادامی که"], "correctIndex": 1 },
+        { "de": "inzwischen", "fa": "در این میان", "options": ["بالاخره", "فوراً", "در این میان", "همیشه"], "correctIndex": 2 },
+        { "de": "warten", "fa": "صبر کردن", "options": ["رفتن", "آمدن", "صبر کردن", "گفتن"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما جملات پیرو زمانی با seitdem، bis، sobald و solange را یاد گرفتید. حالا می‌توانید روابط زمانی پیچیده‌تری را بیان کنید!",
+      "keyPoints": [
+        "seitdem برای شروع وضعیتی که تا الان ادامه دارد (از وقتی که)",
+        "bis برای بیان پایان انتظار (تا)",
+        "sobald برای بیان فوریت (همین که)",
+        "solange برای بیان همزمانی (مادامی که، تا وقتی که)",
+        "در همه این جملات پیرو، فعل در آخر قرار می‌گیرد"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "seitdem", "fa": "از وقتی که" } },
+        { "word": { "de": "solange", "fa": "مادامی که" } },
+        { "word": { "de": "inzwischen", "fa": "در این میان" } },
+        { "word": { "de": "endlich", "fa": "بالاخره" } },
+        { "word": { "de": "sofort", "fa": "فوراً" } },
+        { "word": { "de": "warten", "fa": "صبر کردن" } }
+      ]
+    }
+  ]
+}

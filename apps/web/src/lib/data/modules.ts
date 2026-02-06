@@ -1500,6 +1500,37 @@ const DE_FA_B1_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/B1/B1-M15-L04"
       }
     ]
+  },
+  {
+    id: "module-16",
+    title: "بخش ۱۶: جملات زمانی (Temporale Nebensätze)",
+    level: "B1",
+    lessons: [
+      {
+        id: "B1-M16-L01",
+        title: "als und wenn - وقتی که",
+        description: "یاد بگیرید تفاوت als (یک‌بار در گذشته) و wenn (مکرر یا حال/آینده).",
+        path: "/learn/de-fa/B1/B1-M16-L01"
+      },
+      {
+        id: "B1-M16-L02",
+        title: "während, bevor, nachdem - در حین، قبل، بعد",
+        description: "یاد بگیرید جملات همزمان و متوالی با während، bevor و nachdem.",
+        path: "/learn/de-fa/B1/B1-M16-L02"
+      },
+      {
+        id: "B1-M16-L03",
+        title: "seitdem, bis, sobald - از وقتی، تا، به محض",
+        description: "یاد بگیرید جملات مدت‌دار با seitdem، bis، sobald و solange.",
+        path: "/learn/de-fa/B1/B1-M16-L03"
+      },
+      {
+        id: "B1-M16-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل جملات زمانی: als، wenn، während، bevor، nachdem، seitdem، bis، sobald.",
+        path: "/learn/de-fa/B1/B1-M16-L04"
+      }
+    ]
   }
 ];
 

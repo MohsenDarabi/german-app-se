@@ -1,0 +1,511 @@
+{
+  "id": "B1-M16-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Temporale Nebensätze: während, bevor, nachdem", "fa": "جملات پیرو زمانی: در حین، قبل از، بعد از" },
+  "description": "یاد بگیرید چگونه با während، bevor و nachdem رویدادهای همزمان و متوالی را در جملات آلمانی بیان کنید. این ساختارها برای بیان ترتیب زمانی بسیار مهم هستند.",
+  "level": "B1",
+  "module": 16,
+  "lessonNumber": 2,
+  "totalSteps": 45,
+  "estimatedMinutes": 25,
+  "vocabulary": [
+    { "de": "während", "fa": "در حین، هنگامی که", "grammar": { "pos": "conjunction" } },
+    { "de": "bevor", "fa": "قبل از اینکه", "grammar": { "pos": "conjunction" } },
+    { "de": "nachdem", "fa": "بعد از اینکه", "grammar": { "pos": "conjunction" } },
+    { "de": "gleichzeitig", "fa": "همزمان", "grammar": { "pos": "adverb" } },
+    { "de": "vorher", "fa": "قبلاً، پیش از آن", "grammar": { "pos": "adverb" } },
+    { "de": "nachher", "fa": "بعداً، پس از آن", "grammar": { "pos": "adverb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "جملات پیرو زمانی (Temporale Nebensätze)",
+      "content": "**Temporale Nebensätze - جملات پیرو زمانی**\n\nاین جملات برای بیان ترتیب زمانی و همزمانی رویدادها استفاده می‌شوند.\n\n**حروف ربط اصلی:**\n- **während** - در حین، هنگامی که (همزمانی)\n- **bevor** - قبل از اینکه (قبل از عمل)\n- **nachdem** - بعد از اینکه (بعد از عمل)\n\n**نکته مهم:** فعل در جمله پیرو به **آخر** می‌رود!\n\n**ساختار:**\nWährend ich koche, hört er Musik.\n(در حین آشپزی من، او موسیقی گوش می‌دهد.)\n\n**مقایسه با فارسی:** در فارسی هم «در حین»، «قبل از اینکه» و «بعد از اینکه» همین نقش را دارند.",
+      "examples": [
+        { "de": "Während ich lese, trinke ich Tee.", "fa": "در حین خواندن، چای می‌نوشم." },
+        { "de": "Bevor ich gehe, räume ich auf.", "fa": "قبل از رفتن، مرتب می‌کنم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "während", "fa": "در حین، هنگامی که" },
+      "example": { "text": { "de": "Während ich koche, hört er Musik.", "fa": "در حین آشپزی من، او موسیقی گوش می‌دهد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "während",
+      "translation": "در حین",
+      "syllables": ["wäh", "rend"],
+      "distractors": ["weh", "rand", "rind"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "bevor", "fa": "قبل از اینکه" },
+      "example": { "text": { "de": "Bevor ich schlafe, lese ich ein Buch.", "fa": "قبل از خوابیدن، کتاب می‌خوانم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "bevor",
+      "translation": "قبل از اینکه",
+      "syllables": ["be", "vor"],
+      "distractors": ["ba", "fur", "vur"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "nachdem", "fa": "بعد از اینکه" },
+      "example": { "text": { "de": "Nachdem ich gegessen hatte, ging ich spazieren.", "fa": "بعد از اینکه غذا خوردم، رفتم قدم بزنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "nachdem",
+      "translation": "بعد از اینکه",
+      "syllables": ["nach", "dem"],
+      "distractors": ["noch", "dam", "nim"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام حرف ربط برای بیان همزمانی دو عمل استفاده می‌شود؟",
+      "options": [
+        "bevor",
+        "nachdem",
+        "während",
+        "weil"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! während برای بیان همزمانی استفاده می‌شود.", "incorrect": "während برای بیان همزمانی دو عمل استفاده می‌شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را با حرف ربط مناسب پر کنید",
+      "sentence": "{0} ich koche, hört mein Mann Musik.",
+      "options": ["Während", "Bevor", "Nachdem", "Weil"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Während به معنی «در حین» است و همزمانی را نشان می‌دهد." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "گفتگو درباره برنامه روزانه",
+      "scene": {
+        "location": "kitchen",
+        "description": { "de": "In der Küche. Anna und Peter planen ihren Tag.", "fa": "در آشپزخانه. آنا و پیتر روزشان را برنامه‌ریزی می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Was machst du, während ich beim Arzt bin?", "fa": "وقتی من پیش دکتر هستم، تو چه کار می‌کنی؟" }, "mood": "neutral" },
+        { "speaker": "Peter", "text": { "de": "Während du dort bist, räume ich die Wohnung auf.", "fa": "در حین حضور تو آنجا، من خانه را مرتب می‌کنم." }, "mood": "happy" },
+        { "speaker": "Anna", "text": { "de": "Toll! Und bevor ich gehe, koche ich das Mittagessen.", "fa": "عالی! و قبل از رفتنم، ناهار درست می‌کنم." }, "mood": "happy" },
+        { "speaker": "Peter", "text": { "de": "Danke! Nachdem du gekocht hast, esse ich sofort.", "fa": "ممنون! بعد از اینکه پختی، فوراً می‌خورم." }, "mood": "excited" }
+      ],
+      "questions": [
+        { "question": "پیتر در حین غیبت آنا چه می‌کند؟", "options": ["می‌خوابد", "خانه را مرتب می‌کند", "ناهار درست می‌کند"], "correctIndex": 1, "explanation": "پیتر گفت: Während du dort bist, räume ich die Wohnung auf." },
+        { "question": "آنا قبل از رفتن چه کار می‌کند؟", "options": ["خانه را مرتب می‌کند", "ناهار درست می‌کند", "می‌خوابد"], "correctIndex": 1, "explanation": "آنا گفت: Bevor ich gehe, koche ich das Mittagessen." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Musik.", "hört", "er", "koche,", "ich", "Während"],
+      "correctOrder": [5, 4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Während ich koche, hört er Musik.", "fa": "در حین آشپزی من، او موسیقی گوش می‌دهد." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جملات با «während» فعل در جمله پیرو به آخر می‌رود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! در همه جملات پیرو با حروف ربط während، bevor و nachdem فعل به آخر می‌رود." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "نکته مهم: nachdem و تغییر زمان",
+      "content": "**nachdem و تغییر زمان فعل**\n\n**نکته کلیدی:** فعل در جمله با nachdem باید یک زمان **قبل‌تر** از جمله اصلی باشد!\n\n**ترکیب‌های رایج:**\n\n۱. **Plusquamperfekt + Präteritum:**\nNachdem ich **gegessen hatte**, **ging** ich spazieren.\n(بعد از اینکه غذا خورده بودم، رفتم قدم بزنم.)\n\n۲. **Perfekt + Präsens:**\nNachdem ich **gegessen habe**, **gehe** ich spazieren.\n(بعد از اینکه غذا خورده‌ام، می‌روم قدم بزنم.)\n\n**مقایسه با bevor:**\nبا bevor هر دو جمله معمولاً **زمان یکسان** دارند:\nBevor ich **gehe**, **räume** ich auf.\n(قبل از اینکه بروم، مرتب می‌کنم.)",
+      "examples": [
+        { "de": "Nachdem ich aufgestanden war, frühstückte ich.", "fa": "بعد از اینکه بیدار شده بودم، صبحانه خوردم." },
+        { "de": "Bevor ich zur Arbeit gehe, trinke ich Kaffee.", "fa": "قبل از رفتن به سر کار، قهوه می‌نوشم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "gleichzeitig", "fa": "همزمان" },
+      "example": { "text": { "de": "Ich kann nicht gleichzeitig essen und telefonieren.", "fa": "نمی‌توانم همزمان غذا بخورم و تلفن کنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "gleichzeitig",
+      "translation": "همزمان",
+      "syllables": ["gleich", "zei", "tig"],
+      "distractors": ["glich", "zai", "tag"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "vorher", "fa": "قبلاً، پیش از آن" },
+      "example": { "text": { "de": "Ich habe vorher nicht gewusst, dass du kommst.", "fa": "قبلاً نمی‌دانستم که می‌آیی." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "vorher",
+      "translation": "قبلاً",
+      "syllables": ["vor", "her"],
+      "distractors": ["fur", "har", "hir"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام ترکیب زمانی برای جملات با «nachdem» درست است؟",
+      "options": [
+        "Präsens + Präsens",
+        "Plusquamperfekt + Präteritum",
+        "Futur + Präsens",
+        "Präteritum + Plusquamperfekt"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! در جملات با nachdem، زمان جمله پیرو باید قبل‌تر باشد.", "incorrect": "با nachdem، زمان جمله پیرو باید یک مرحله قبل‌تر از جمله اصلی باشد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} ich gefrühstückt hatte, ging ich zur Arbeit.",
+      "options": ["Nachdem", "Während", "Bevor", "Weil"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Nachdem به معنی «بعد از اینکه» است. زمان Plusquamperfekt نشان می‌دهد که عمل قبلاً انجام شده." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در دفتر",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Büro. Lisa und Thomas sprechen über ihre Aufgaben.", "fa": "در دفتر. لیزا و توماس درباره وظایفشان صحبت می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Thomas, kannst du den Bericht schicken, bevor du nach Hause gehst?", "fa": "توماس، می‌توانی گزارش را بفرستی قبل از اینکه بروی خانه؟" }, "mood": "neutral" },
+        { "speaker": "Thomas", "text": { "de": "Natürlich! Nachdem ich die E-Mails beantwortet habe, schicke ich ihn.", "fa": "البته! بعد از اینکه ایمیل‌ها را جواب دادم، می‌فرستمش." }, "mood": "happy" },
+        { "speaker": "Lisa", "text": { "de": "Kannst du gleichzeitig auch die Präsentation vorbereiten?", "fa": "می‌توانی همزمان ارائه را هم آماده کنی؟" }, "mood": "confused" },
+        { "speaker": "Thomas", "text": { "de": "Das ist schwer. Während ich den Bericht schreibe, kann ich nicht an der Präsentation arbeiten.", "fa": "سخت است. در حین نوشتن گزارش، نمی‌توانم روی ارائه کار کنم." }, "mood": "sad" }
+      ],
+      "questions": [
+        { "question": "توماس چه زمانی گزارش را می‌فرستد؟", "options": ["قبل از جواب دادن ایمیل‌ها", "بعد از جواب دادن ایمیل‌ها", "همزمان با جواب دادن ایمیل‌ها"], "correctIndex": 1, "explanation": "توماس گفت: Nachdem ich die E-Mails beantwortet habe, schicke ich ihn." },
+        { "question": "چرا توماس نمی‌تواند ارائه را آماده کند؟", "options": ["وقت ندارد", "در حین نوشتن گزارش نمی‌تواند", "نمی‌داند چگونه"], "correctIndex": 1, "explanation": "توماس گفت: Während ich den Bericht schreibe, kann ich nicht an der Präsentation arbeiten." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["auf.", "räume", "gehe,", "ich", "ich", "Bevor"],
+      "correctOrder": [5, 4, 2, 3, 1, 0],
+      "correctSentence": { "de": "Bevor ich gehe, räume ich auf.", "fa": "قبل از رفتن، مرتب می‌کنم." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "با «bevor» هر دو جمله می‌توانند زمان یکسان داشته باشند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! برخلاف nachdem، با bevor معمولاً هر دو جمله زمان یکسان دارند." }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "nachher", "fa": "بعداً، پس از آن" },
+      "example": { "text": { "de": "Ich mache jetzt Sport und esse nachher.", "fa": "الان ورزش می‌کنم و بعداً غذا می‌خورم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "nachher",
+      "translation": "بعداً",
+      "syllables": ["nach", "her"],
+      "distractors": ["noch", "har", "hir"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "حرف ربط مناسب را انتخاب کنید",
+      "sentence": "{0} du ins Bett gehst, putz dir die Zähne!",
+      "options": ["Bevor", "Nachdem", "Während", "Weil"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Bevor به معنی «قبل از اینکه» است: قبل از خوابیدن دندان‌هایت را مسواک بزن!" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} ich fernsehe, esse ich Popcorn.",
+      "options": ["Während", "Bevor", "Nachdem", "Obwohl"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Während نشان‌دهنده همزمانی دو عمل است: در حین تماشای تلویزیون پاپ‌کورن می‌خورم." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "während با دو معنی",
+      "content": "**während - دو معنی مختلف**\n\n**۱. معنی زمانی (همزمانی):**\nWährend ich koche, hört er Musik.\n(در حین آشپزی من، او موسیقی گوش می‌دهد.)\n\n**۲. معنی تضادی (در حالی که):**\nWährend er viel arbeitet, ist er arm.\n(در حالی که زیاد کار می‌کند، فقیر است.)\n\n**چگونه تشخیص دهیم؟**\n- اگر دو عمل همزمان هستند → معنی زمانی\n- اگر دو چیز متضاد هستند → معنی تضادی\n\n**مقایسه:**\nWährend ich lerne, hört er Musik. (زمانی - همزمانی)\nWährend ich arm bin, ist er reich. (تضادی - مقایسه)",
+      "examples": [
+        { "de": "Während ich schlafe, arbeitet er.", "fa": "در حین خواب من، او کار می‌کند. (زمانی)" },
+        { "de": "Während sie fleißig ist, ist er faul.", "fa": "در حالی که او سخت‌کوش است، او تنبل است. (تضادی)" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["spazieren.", "ging", "ich", "hatte,", "gegessen", "ich", "Nachdem"],
+      "correctOrder": [6, 5, 4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Nachdem ich gegessen hatte, ging ich spazieren.", "fa": "بعد از اینکه غذا خورده بودم، رفتم قدم بزنم." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "«während» فقط معنی زمانی دارد و نمی‌تواند تضاد را نشان دهد.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! während می‌تواند هم معنی زمانی (همزمانی) و هم معنی تضادی (در حالی که) داشته باشد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "ترکیب مناسب را انتخاب کنید",
+      "sentence": "{0} er angekommen war, rief er mich an.",
+      "options": ["Nachdem", "Bevor", "Während", "Weil"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Nachdem با Plusquamperfekt (angekommen war) نشان می‌دهد که عمل قبلاً تمام شده بود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich dusche mich, {0} ich frühstücke.",
+      "options": ["bevor", "nachdem", "während", "obwohl"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "bevor به معنی «قبل از اینکه»: دوش می‌گیرم قبل از اینکه صبحانه بخورم." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "جملات را با معنی درست جفت کنید",
+      "items": [
+        { "id": "i1", "text": "während" },
+        { "id": "i2", "text": "bevor" },
+        { "id": "i3", "text": "nachdem" },
+        { "id": "i4", "text": "gleichzeitig" },
+        { "id": "i5", "text": "vorher" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "در حین، هنگامی که" },
+        { "id": "m2", "text": "قبل از اینکه" },
+        { "id": "m3", "text": "بعد از اینکه" },
+        { "id": "m4", "text": "همزمان" },
+        { "id": "m5", "text": "قبلاً، پیش از آن" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "قبل از خوابیدن، کتاب می‌خوانم.",
+      "sentenceTemplate": "{0} ich {1}, lese ich ein Buch.",
+      "options": ["Bevor", "schlafe", "Während", "esse"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Bevor ich schlafe, lese ich ein Buch.", "fa": "قبل از خوابیدن، کتاب می‌خوانم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "بعد از اینکه غذا خوردم، می‌روم قدم بزنم.",
+      "sentenceTemplate": "{0} ich gegessen {1}, gehe ich spazieren.",
+      "options": ["Nachdem", "habe", "Bevor", "bin"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Nachdem ich gegessen habe, gehe ich spazieren.", "fa": "بعد از اینکه غذا خوردم، می‌روم قدم بزنم." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: برنامه روزانه",
+      "passage": {
+        "de": "Mein Tag beginnt früh. Bevor ich zur Arbeit gehe, frühstücke ich und lese die Nachrichten. Während ich frühstücke, höre ich Radio. Nachdem ich gefrühstückt habe, putze ich mir die Zähne. Während ich zur Arbeit fahre, höre ich einen Podcast. Bevor ich ins Büro gehe, kaufe ich mir einen Kaffee. Nachdem ich angekommen bin, überprüfe ich meine E-Mails. Gleichzeitig trinke ich meinen Kaffee. Mein Arbeitstag ist gut organisiert!",
+        "fa": "روز من زود شروع می‌شود. قبل از رفتن به سر کار، صبحانه می‌خورم و اخبار می‌خوانم. در حین صبحانه خوردن، رادیو گوش می‌دهم. بعد از صبحانه خوردن، دندان‌هایم را مسواک می‌زنم. در حین رفتن به سر کار، پادکست گوش می‌دهم. قبل از رفتن به دفتر، برای خودم قهوه می‌خرم. بعد از رسیدن، ایمیل‌هایم را چک می‌کنم. همزمان قهوه‌ام را می‌نوشم. روز کاری من خوب سازماندهی شده!"
+      },
+      "questions": [
+        { "question": "نویسنده قبل از رفتن به کار چه می‌کند؟", "options": ["می‌خوابد", "صبحانه می‌خورد و اخبار می‌خواند", "ورزش می‌کند"], "correctIndex": 1, "explanation": "متن گفت: Bevor ich zur Arbeit gehe, frühstücke ich und lese die Nachrichten." },
+        { "question": "نویسنده در حین صبحانه خوردن چه می‌کند؟", "options": ["تلویزیون تماشا می‌کند", "رادیو گوش می‌دهد", "روزنامه می‌خواند"], "correctIndex": 1, "explanation": "متن گفت: Während ich frühstücke, höre ich Radio." },
+        { "question": "نویسنده بعد از رسیدن به دفتر چه می‌کند؟", "options": ["قهوه می‌خرد", "ایمیل‌ها را چک می‌کند", "صبحانه می‌خورد"], "correctIndex": 1, "explanation": "متن گفت: Nachdem ich angekommen bin, überprüfe ich meine E-Mails." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der perfekte Morgen", "fa": "صبح عالی" },
+      "characters": ["Maria", "Klaus"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Es ist Montagmorgen. Maria und Klaus wachen auf.", "fa": "صبح دوشنبه است. ماریا و کلاوس بیدار می‌شوند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Maria",
+          "text": { "de": "Klaus, während du duschst, mache ich Kaffee.", "fa": "کلاوس، در حین دوش گرفتن تو، من قهوه درست می‌کنم." },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Klaus",
+          "text": { "de": "Perfekt! Und bevor ich zur Arbeit gehe, möchte ich frühstücken.", "fa": "عالی! و قبل از رفتن به سر کار، می‌خواهم صبحانه بخورم." },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "ماریا در حین دوش گرفتن کلاوس چه می‌کند؟",
+          "options": ["می‌خوابد", "قهوه درست می‌کند", "صبحانه می‌خورد"],
+          "correctIndex": 1,
+          "explanation": "ماریا گفت: Während du duschst, mache ich Kaffee."
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Nachdem Klaus geduscht hatte, setzten sie sich an den Tisch.", "fa": "بعد از اینکه کلاوس دوش گرفت، نشستند سر میز." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Maria",
+          "text": { "de": "Nachdem wir gefrühstückt haben, müssen wir schnell losfahren.", "fa": "بعد از صبحانه خوردن، باید سریع راه بیفتیم." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Klaus",
+          "text": { "de": "Ja, aber vorher muss ich noch meine Tasche packen!", "fa": "آره، ولی قبلش باید کیفم را ببندم!" },
+          "mood": "confused"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Klaus packt schnell seine Tasche. Gleichzeitig trinkt er seinen Kaffee.", "fa": "کلاوس سریع کیفش را می‌بندد. همزمان قهوه‌اش را می‌نوشد." }
+        },
+        {
+          "type": "question",
+          "question": "کلاوس قبل از راه افتادن چه باید بکند؟",
+          "options": ["دوش بگیرد", "کیفش را ببندد", "صبحانه بخورد"],
+          "correctIndex": 1,
+          "explanation": "کلاوس گفت: Vorher muss ich noch meine Tasche packen!"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع",
+      "instruction": "حرف ربط یا قید درست را انتخاب کنید!",
+      "questions": [
+        { "prompt": "همزمانی دو عمل", "left": "während", "right": "nachdem", "correctSide": "left" },
+        { "prompt": "بعد از اتمام عمل", "left": "bevor", "right": "nachdem", "correctSide": "right" },
+        { "prompt": "قبل از انجام عمل", "left": "bevor", "right": "während", "correctSide": "left" },
+        { "prompt": "نیاز به تغییر زمان فعل دارد", "left": "bevor", "right": "nachdem", "correctSide": "right" },
+        { "prompt": "قید به معنی قبلاً", "left": "vorher", "right": "nachher", "correctSide": "left" },
+        { "prompt": "قید به معنی بعداً", "left": "vorher", "right": "nachher", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Während ich koche, hört er Musik.",
+      "translation": "در حین آشپزی من، او موسیقی گوش می‌دهد."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Bevor ich schlafe, lese ich ein Buch.",
+      "translation": "قبل از خوابیدن، کتاب می‌خوانم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Nachdem ich gegessen habe, gehe ich spazieren.",
+      "translation": "بعد از اینکه غذا خوردم، می‌روم قدم بزنم."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "während", "options": ["در حین", "قبل از", "بعد از"], "correctAnswerIndex": 0 },
+        { "question": "bevor", "options": ["بعد از", "قبل از", "همزمان"], "correctAnswerIndex": 1 },
+        { "question": "nachdem", "options": ["بعد از اینکه", "قبل از اینکه", "هنگامی که"], "correctAnswerIndex": 0 },
+        { "question": "gleichzeitig", "options": ["جداگانه", "همزمان", "بعداً"], "correctAnswerIndex": 1 },
+        { "question": "vorher", "options": ["قبلاً", "بعداً", "همزمان"], "correctAnswerIndex": 0 },
+        { "question": "nachher", "options": ["قبلاً", "بعداً", "همزمان"], "correctAnswerIndex": 1 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "während", "fa": "در حین" },
+        { "de": "bevor", "fa": "قبل از" },
+        { "de": "nachdem", "fa": "بعد از" },
+        { "de": "gleichzeitig", "fa": "همزمان" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات مربوط به جملات زمانی را پیدا کنید",
+      "targetWords": ["während", "bevor", "nachdem", "vorher", "nachher", "gleichzeitig"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "während", "fa": "در حین", "options": ["قبل از", "در حین", "بعد از", "همزمان"], "correctIndex": 1 },
+        { "de": "bevor", "fa": "قبل از اینکه", "options": ["بعد از اینکه", "در حین", "قبل از اینکه", "همزمان"], "correctIndex": 2 },
+        { "de": "nachdem", "fa": "بعد از اینکه", "options": ["قبل از اینکه", "بعد از اینکه", "در حین", "همزمان"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما جملات پیرو زمانی (Temporale Nebensätze) را یاد گرفتید!",
+      "keyPoints": [
+        "während: در حین، هنگامی که - برای همزمانی دو عمل",
+        "bevor: قبل از اینکه - هر دو جمله زمان یکسان دارند",
+        "nachdem: بعد از اینکه - نیاز به تغییر زمان فعل دارد",
+        "با nachdem: Plusquamperfekt + Präteritum یا Perfekt + Präsens",
+        "während می‌تواند معنی تضادی هم داشته باشد (در حالی که)",
+        "قیدها: gleichzeitig (همزمان)، vorher (قبلاً)، nachher (بعداً)"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "während", "fa": "در حین" } },
+        { "word": { "de": "bevor", "fa": "قبل از اینکه" } },
+        { "word": { "de": "nachdem", "fa": "بعد از اینکه" } },
+        { "word": { "de": "gleichzeitig", "fa": "همزمان" } },
+        { "word": { "de": "vorher", "fa": "قبلاً" } },
+        { "word": { "de": "nachher", "fa": "بعداً" } }
+      ]
+    }
+  ]
+}
