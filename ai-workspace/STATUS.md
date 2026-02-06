@@ -8,7 +8,7 @@
 
 **Create B1 lessons - lesson by lesson, wait for user test after each**
 
-Current: `B2-M06` (Komplexe Attribute) - **MODULE COMPLETE - READY FOR USER TEST**
+Current: `B2-M07` (Subjektive Modalverben) - **MODULE COMPLETE - READY FOR USER TEST**
 
 ---
 
@@ -27,7 +27,7 @@ Current: `B2-M06` (Komplexe Attribute) - **MODULE COMPLETE - READY FOR USER TEST
 | A1 | 14 | 56+ | Complete |
 | A2 | 18 | 72 | **Complete** ✅ |
 | B1 | 20 | 80 | **Complete** ✅ |
-| B2 | 6 | 24 | Module 6 complete |
+| B2 | 7 | 28 | Module 7 complete |
 
 ### A2 Completion (2026-02-05)
 
@@ -313,8 +313,9 @@ Current: `B2-M06` (Komplexe Attribute) - **MODULE COMPLETE - READY FOR USER TEST
 | M04 | Passiv-Alternativen | 4/4 | ✅ Complete |
 | M05 | Konnektoren für Argumentation | 4/4 | ✅ Complete |
 | M06 | Komplexe Attribute | 4/4 | ✅ Complete |
+| M07 | Subjektive Modalverben | 4/4 | ✅ Complete |
 
-**Total B2: 24 lessons**
+**Total B2: 28 lessons**
 
 ---
 
@@ -384,10 +385,23 @@ Current: `B2-M06` (Komplexe Attribute) - **MODULE COMPLETE - READY FOR USER TEST
 
 ---
 
+## B2 Module 7: Subjektive Modalverben (Epistemic Modals)
+
+| Lesson | Title | Status |
+|--------|-------|--------|
+| B2-M07-L01 | müssen & können (certainty and possibility) | ✅ Complete |
+| B2-M07-L02 | dürfen & sollen (probability and hearsay) | ✅ Complete |
+| B2-M07-L03 | wollen & mögen (doubt and concession) | ✅ Complete |
+| B2-M07-L04 | Zusammenfassung | ✅ Complete |
+
+---
+
 ## Recent Changes
 
 | Date | Change |
 |------|--------|
+| 2026-02-06 | **B2 Module 7 (Subjektive Modalverben) COMPLETE - 4 lessons!** |
+| 2026-02-06 | Created B2-M07-L01 to L04 in parallel |
 | 2026-02-06 | **B2 Module 6 (Komplexe Attribute) COMPLETE - 4 lessons!** |
 | 2026-02-06 | Created B2-M06-L01 to L04 in parallel |
 | 2026-02-06 | **B2 Module 5 (Konnektoren für Argumentation) COMPLETE - 4 lessons!** |

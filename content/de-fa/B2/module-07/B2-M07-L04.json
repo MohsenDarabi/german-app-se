@@ -1,0 +1,528 @@
+{
+  "id": "B2-M07-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Subjektive Bedeutung der Modalverben: Zusammenfassung", "fa": "معنای ذهنی افعال مودال: جمع‌بندی" },
+  "description": "مرور جامع تمام کاربردهای معرفتی (epistemic) افعال مودال در آلمانی: müssen (اطمینان ۱۰۰٪)، dürfte (احتمال ۹۰٪)، können/könnte (امکان)، sollen (نقل قول)، wollen (تردید در ادعا)، mögen (تسلیم). مقیاس احتمال از بالا به پایین.",
+  "level": "B2",
+  "module": 7,
+  "lessonNumber": 4,
+  "totalSteps": 45,
+  "estimatedMinutes": 40,
+  "vocabulary": [
+    { "de": "die Vermutung", "fa": "گمان، حدس", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "die Wahrscheinlichkeit", "fa": "احتمال", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "die Gewissheit", "fa": "اطمینان، یقین", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "behaupten", "fa": "ادعا کردن", "grammar": { "pos": "verb" } },
+    { "de": "bezweifeln", "fa": "شک کردن", "grammar": { "pos": "verb" } },
+    { "de": "angeblich", "fa": "ظاهراً، به قول خودش", "grammar": { "pos": "adverb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "مقیاس احتمال با افعال مودال",
+      "content": "**Subjektive Modalverben = افعال مودال معرفتی**\n\nافعال مودال در آلمانی دو کاربرد دارند:\n1. **عینی (objektiv):** توانایی، اجازه، وظیفه\n2. **ذهنی (subjektiv):** حدس، احتمال، تردید\n\n**مقیاس احتمال از بالا به پایین:**\n\n| فعل | درجه اطمینان | مثال |\n|-----|-------------|------|\n| **müssen** | ۱۰۰٪ مطمئن | Er muss krank sein |\n| **dürfte** | ~۹۰٪ احتمال | Er dürfte zu Hause sein |\n| **kann/könnte** | امکان | Das kann stimmen |\n| **mag** | تسلیم | Das mag stimmen |\n| **sollen** | نقل قول | Er soll reich sein |\n| **wollen** | تردید در ادعا | Er will Arzt sein |\n\n**نکته برای فارسی‌زبانان:**\nدر فارسی از «باید»، «شاید»، «ظاهراً» و «انگار» استفاده می‌کنیم. در آلمانی، افعال مودال این نقش‌ها را ایفا می‌کنند.",
+      "examples": [
+        { "de": "Er muss krank sein. (100%)", "fa": "او حتماً مریض است." },
+        { "de": "Das dürfte stimmen. (~90%)", "fa": "این احتمالاً درست است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "die Vermutung", "fa": "گمان، حدس" },
+      "example": { "text": { "de": "Ich habe eine Vermutung, wer der Täter sein könnte.", "fa": "من حدسی دارم که چه کسی ممکن است مجرم باشد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Vermutung",
+      "translation": "گمان، حدس",
+      "syllables": ["Ver", "mu", "tung"],
+      "distractors": ["Vor", "mo", "tang", "mü"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "die Wahrscheinlichkeit", "fa": "احتمال" },
+      "example": { "text": { "de": "Die Wahrscheinlichkeit ist hoch, dass er kommt.", "fa": "احتمال زیاد است که او بیاید." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Wahrscheinlichkeit",
+      "translation": "احتمال",
+      "syllables": ["Wahr", "schein", "lich", "keit"],
+      "distractors": ["War", "schien", "lech", "kait"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "die Gewissheit", "fa": "اطمینان، یقین" },
+      "example": { "text": { "de": "Mit Gewissheit kann ich sagen, dass er unschuldig ist.", "fa": "با اطمینان می‌توانم بگویم که او بی‌گناه است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Gewissheit",
+      "translation": "اطمینان، یقین",
+      "syllables": ["Ge", "wiss", "heit"],
+      "distractors": ["Ga", "woss", "hait", "wes"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "müssen و dürfte: اطمینان بالا",
+      "content": "**müssen (۱۰۰٪ اطمینان) - باید/حتماً**\n\nوقتی از شواهد منطقی مطمئن هستیم:\n- Er antwortet nicht. Er **muss** krank **sein**.\n- جواب نمی‌دهد. **حتماً** مریض است.\n\n**dürfte (~۹۰٪ احتمال) - احتمالاً**\n\nوقتی خیلی مطمئن هستیم ولی ۱۰۰٪ نه:\n- Es ist 18 Uhr. Er **dürfte** zu Hause **sein**.\n- ساعت ۱۸ است. او **احتمالاً** خانه است.\n\n**ساختار:**\n`Modalverb + Infinitiv (در آخر)`\n\n| عینی | ذهنی |\n|------|------|\n| Er muss arbeiten. (باید کار کند) | Er muss krank sein. (حتماً مریض است) |\n| Er darf gehen. (اجازه رفتن دارد) | Er dürfte schlafen. (احتمالاً خوابیده) |\n\n**نکته:** dürfte از dürfen ساخته شده ولی معنای متفاوتی دارد!",
+      "examples": [
+        { "de": "Sie muss müde sein, sie gähnt ständig.", "fa": "او حتماً خسته است، مدام خمیازه می‌کشد." },
+        { "de": "Das dürfte richtig sein.", "fa": "این احتمالاً درست است." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«Er muss krank sein» به چه معناست؟",
+      "options": [
+        "او باید مریض شود",
+        "او مجبور است مریض باشد",
+        "او حتماً مریض است (۱۰۰٪ مطمئنم)",
+        "او شاید مریض باشد"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! müssen در معنای ذهنی نشان‌دهنده اطمینان کامل است.", "incorrect": "müssen در معنای ذهنی = حتماً، یقیناً (۱۰۰٪ اطمینان)" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله احتمال حدود ۹۰٪ را نشان می‌دهد؟",
+      "options": [
+        "Er muss zu Hause sein.",
+        "Er dürfte zu Hause sein.",
+        "Er könnte zu Hause sein.",
+        "Er soll zu Hause sein."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "درست! dürfte نشان‌دهنده احتمال بالا (حدود ۹۰٪) است.", "incorrect": "dürfte = احتمالاً (۹۰٪)، müssen = حتماً (۱۰۰٪)، könnte = شاید، sollen = نقل قول" }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "behaupten", "fa": "ادعا کردن" },
+      "example": { "text": { "de": "Er behauptet, reich zu sein, aber ich glaube ihm nicht.", "fa": "او ادعا می‌کند که ثروتمند است، ولی من باورش نمی‌کنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "behaupten",
+      "translation": "ادعا کردن",
+      "syllables": ["be", "haup", "ten"],
+      "distractors": ["ba", "houp", "tan", "hop"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "bezweifeln", "fa": "شک کردن" },
+      "example": { "text": { "de": "Ich bezweifle, dass er die Wahrheit sagt.", "fa": "شک دارم که او حقیقت را می‌گوید." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "bezweifeln",
+      "translation": "شک کردن",
+      "syllables": ["be", "zwei", "feln"],
+      "distractors": ["ba", "zwai", "flen", "faln"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "angeblich", "fa": "ظاهراً، به قول خودش" },
+      "example": { "text": { "de": "Er ist angeblich Millionär.", "fa": "ظاهراً او میلیونر است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "angeblich",
+      "translation": "ظاهراً",
+      "syllables": ["an", "geb", "lich"],
+      "distractors": ["en", "gab", "lech", "gob"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "فعل مودال مناسب را انتخاب کنید (اطمینان ۱۰۰٪)",
+      "sentence": "Das Licht ist an. Sie {0} zu Hause sein.",
+      "options": ["kann", "dürfte", "muss", "soll"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "müssen = اطمینان کامل. چراغ روشن است، پس حتماً خانه است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "فعل مودال مناسب را انتخاب کنید (احتمال ۹۰٪)",
+      "sentence": "Es ist 22 Uhr. Die Kinder {0} schon schlafen.",
+      "options": ["müssen", "dürften", "könnten", "sollen"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "dürften = احتمال بالا (~۹۰٪). ساعت ۲۲ است، بچه‌ها احتمالاً خوابیده‌اند." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "können/könnte و mag: امکان و تسلیم",
+      "content": "**können (امکان - شاید)**\n\nوقتی چیزی ممکن است ولی مطمئن نیستیم:\n- Das **kann** stimmen. = این **ممکن است** درست باشد.\n- Er **kann** krank sein. = **شاید** مریض باشد.\n\n**könnte (امکان ضعیف‌تر - شاید)**\n\nاحتمال کمتر از kann:\n- Das **könnte** ein Problem sein. = این **می‌تواند** مشکل باشد.\n- Er **könnte** recht haben. = **شاید** حق با او باشد.\n\n**mögen (تسلیم - چه بسا)**\n\nپذیرش یک احتمال حتی اگر مخالف باشیم:\n- Das **mag** stimmen, aber... = این **چه بسا** درست باشد، ولی...\n- Er **mag** klug sein, aber... = او **شاید** باهوش باشد، ولی...\n\n**مقایسه:**\n| kann/könnte | mag |\n|-------------|-----|\n| امکان عادی | تسلیم + تردید |\n| Das kann stimmen. | Das mag stimmen, aber ich glaube es nicht. |",
+      "examples": [
+        { "de": "Das könnte die Lösung sein.", "fa": "این می‌تواند راه‌حل باشد." },
+        { "de": "Das mag teuer sein, aber es lohnt sich.", "fa": "شاید گران باشد، ولی ارزشش را دارد." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "فعل مودال مناسب را انتخاب کنید (امکان)",
+      "sentence": "Niemand weiß es genau. Das {0} richtig sein.",
+      "options": ["muss", "dürfte", "kann", "soll"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "können = امکان. کسی دقیق نمی‌داند، پس ممکن است درست باشد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جمله را کامل کنید (تسلیم با تردید)",
+      "sentence": "Das {0} wahr sein, aber ich glaube es trotzdem nicht.",
+      "options": ["muss", "dürfte", "mag", "will"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "mögen = تسلیم. شاید درست باشد، ولی باور نمی‌کنم." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "بحث درباره یک شایعه",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Büro, Kaffeepause", "fa": "در دفتر، استراحت قهوه" }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Hast du gehört? Der Chef soll kündigen wollen!", "fa": "شنیدی؟ ظاهراً رئیس می‌خواهد استعفا بدهد!" }, "mood": "surprised" },
+        { "speaker": "Max", "text": { "de": "Das kann nicht stimmen! Er ist doch erst ein Jahr hier.", "fa": "این نمی‌تواند درست باشد! او فقط یک سال است که اینجاست." }, "mood": "confused" },
+        { "speaker": "Anna", "text": { "de": "Es dürfte aber wahr sein. Ich habe es von seiner Sekretärin gehört.", "fa": "ولی احتمالاً درست است. از منشی‌اش شنیدم." }, "mood": "neutral" },
+        { "speaker": "Max", "text": { "de": "Das mag sein, aber ich glaube es erst, wenn ich es selbst höre.", "fa": "شاید، ولی باور نمی‌کنم تا خودم نشنوم." }, "mood": "neutral" },
+        { "speaker": "Anna", "text": { "de": "Na ja, er muss einen guten Grund haben, wenn es stimmt.", "fa": "خب، اگر درست باشد، حتماً دلیل خوبی دارد." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "آنا از کجا خبر را شنیده؟", "options": ["از رئیس", "از منشی رئیس", "از ماکس"], "correctIndex": 1, "explanation": "آنا گفت: Ich habe es von seiner Sekretärin gehört." },
+        { "question": "ماکس با «Das mag sein» چه می‌گوید؟", "options": ["کاملاً موافقم", "می‌پذیرم ولی شک دارم", "اصلاً باور نمی‌کنم"], "correctIndex": 1, "explanation": "mag نشان‌دهنده تسلیم با تردید است: شاید، ولی..." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را مرتب کنید (اطمینان ۱۰۰٪)",
+      "words": ["sein", "Er", "krank", "muss"],
+      "correctOrder": [1, 3, 2, 0],
+      "correctSentence": { "de": "Er muss krank sein.", "fa": "او حتماً مریض است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را مرتب کنید (احتمال ۹۰٪)",
+      "words": ["sein", "Sie", "zu Hause", "dürfte"],
+      "correctOrder": [1, 3, 2, 0],
+      "correctSentence": { "de": "Sie dürfte zu Hause sein.", "fa": "او احتمالاً خانه است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله را مرتب کنید (نقل قول)",
+      "words": ["reich", "Er", "sein", "soll"],
+      "correctOrder": [1, 3, 0, 2],
+      "correctSentence": { "de": "Er soll reich sein.", "fa": "ظاهراً او ثروتمند است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "«müssen» در معنای ذهنی نشان‌دهنده اطمینان ۱۰۰٪ است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! Er muss krank sein = او حتماً مریض است (۱۰۰٪ مطمئنم)." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "«sollen» در معنای ذهنی نشان‌دهنده وظیفه است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! sollen در معنای ذهنی = نقل قول (شنیده‌ام که...). معنای عینی آن وظیفه است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "«wollen» در معنای ذهنی نشان‌دهنده تردید در ادعای کسی است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! Er will Arzt sein = او ادعا می‌کند پزشک است (و من شک دارم)." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "فعل مودال مناسب را انتخاب کنید (نقل قول)",
+      "sentence": "Man sagt, er {0} sehr reich sein.",
+      "options": ["muss", "dürfte", "soll", "will"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "sollen = نقل قول (می‌گویند که...). Man sagt = sollen استفاده می‌شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "فعل مودال مناسب را انتخاب کنید (تردید در ادعا)",
+      "sentence": "Er {0} fünf Sprachen sprechen, aber ich glaube ihm nicht.",
+      "options": ["muss", "dürfte", "soll", "will"],
+      "correctAnswers": [3],
+      "feedback": { "explanation": "wollen = او ادعا می‌کند (و من شک دارم). Er will ... = به قول خودش..." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "همه افعال مودال در یک مکالمه",
+      "scene": {
+        "location": "living room",
+        "description": { "de": "Zu Hause, Familienabend", "fa": "در خانه، شب خانوادگی" }
+      },
+      "lines": [
+        { "speaker": "Mutter", "text": { "de": "Wo ist denn Opa? Er sollte schon da sein.", "fa": "پدربزرگ کجاست؟ باید تا حالا می‌رسید." }, "mood": "confused" },
+        { "speaker": "Vater", "text": { "de": "Er muss im Stau stehen. Die Autobahn ist heute voll.", "fa": "حتماً توی ترافیک گیر کرده. امروز بزرگراه شلوغ است." }, "mood": "neutral" },
+        { "speaker": "Sohn", "text": { "de": "Er dürfte bald kommen. Er hat vor 30 Minuten angerufen.", "fa": "احتمالاً به‌زودی می‌رسد. ۳۰ دقیقه پیش زنگ زد." }, "mood": "neutral" },
+        { "speaker": "Tochter", "text": { "de": "Das könnte aber auch ein Unfall sein...", "fa": "ولی ممکن است تصادف کرده باشد..." }, "mood": "sad" },
+        { "speaker": "Mutter", "text": { "de": "Das mag möglich sein, aber mach dir keine Sorgen.", "fa": "شاید، ولی نگران نباش." }, "mood": "neutral" },
+        { "speaker": "Vater", "text": { "de": "Er will ja immer pünktlich sein, aber der Verkehr...", "fa": "او همیشه ادعای وقت‌شناسی دارد، ولی ترافیک..." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "چرا پدر مطمئن است که پدربزرگ در ترافیک است؟", "options": ["چون زنگ زد", "چون بزرگراه شلوغ است", "چون تصادف کرده"], "correctIndex": 1, "explanation": "پدر گفت: Die Autobahn ist heute voll - بزرگراه شلوغ است، پس حتماً (muss) در ترافیک است." },
+        { "question": "پسر با «dürfte» چه می‌گوید؟", "options": ["مطمئنم می‌رسد", "احتمالاً می‌رسد", "شاید نرسد"], "correctIndex": 1, "explanation": "dürfte = احتمال بالا (~۹۰٪). ۳۰ دقیقه پیش زنگ زد، پس احتمالاً به‌زودی می‌رسد." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "فعل مودال را با معنای ذهنی‌اش جفت کنید",
+      "items": [
+        { "id": "i1", "text": "müssen" },
+        { "id": "i2", "text": "dürfte" },
+        { "id": "i3", "text": "können/könnte" },
+        { "id": "i4", "text": "sollen" },
+        { "id": "i5", "text": "wollen" },
+        { "id": "i6", "text": "mögen" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "اطمینان ۱۰۰٪ (حتماً)" },
+        { "id": "m2", "text": "احتمال ~۹۰٪" },
+        { "id": "m3", "text": "امکان (شاید)" },
+        { "id": "m4", "text": "نقل قول (ظاهراً)" },
+        { "id": "m5", "text": "تردید در ادعا" },
+        { "id": "m6", "text": "تسلیم (چه بسا)" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "او حتماً خسته است.",
+      "sentenceTemplate": "Er {0} müde {1}.",
+      "options": ["muss", "dürfte", "sein", "ist"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Er muss müde sein.", "fa": "او حتماً خسته است." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "ظاهراً او پزشک است.",
+      "sentenceTemplate": "Er {0} Arzt {1}.",
+      "options": ["soll", "will", "sein", "ist"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Er soll Arzt sein.", "fa": "ظاهراً او پزشک است." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: گزارش پلیس",
+      "passage": {
+        "de": "Ein mysteriöser Einbruch: Die Polizei untersucht einen Einbruch in der Bankstraße. Der Täter muss ein Profi gewesen sein, keine Spuren, keine Fingerabdrücke. Er dürfte durch das Fenster eingestiegen sein, denn es war offen. Die gestohlene Summe soll über 100.000 Euro betragen. Der Verdächtige will zur Tatzeit im Ausland gewesen sein, aber die Polizei bezweifelt das. Das mag stimmen, aber er hat kein Alibi. Die Ermittlungen könnten noch Wochen dauern.",
+        "fa": "یک سرقت مرموز: پلیس در حال بررسی یک سرقت در خیابان بانک است. سارق حتماً یک حرفه‌ای بوده - نه ردی، نه اثر انگشتی. احتمالاً از پنجره وارد شده، چون باز بوده. ظاهراً مبلغ سرقت‌شده بیش از ۱۰۰٬۰۰۰ یورو است. مظنون ادعا می‌کند در زمان جرم در خارج بوده، ولی پلیس شک دارد. شاید درست باشد، ولی آلیبی ندارد. تحقیقات ممکن است هفته‌ها طول بکشد."
+      },
+      "questions": [
+        { "question": "پلیس چقدر مطمئن است که سارق حرفه‌ای بوده؟", "options": ["۵۰٪", "۹۰٪", "۱۰۰٪"], "correctIndex": 2, "explanation": "muss = ۱۰۰٪ اطمینان. Der Täter muss ein Profi gewesen sein." },
+        { "question": "مبلغ سرقت از کجا شنیده شده؟", "options": ["از پلیس مستقیم", "از نقل قول دیگران", "از خود سارق"], "correctIndex": 1, "explanation": "sollen = نقل قول. Die gestohlene Summe soll... (شنیده شده که...)" },
+        { "question": "پلیس به ادعای مظنون چه واکنشی دارد؟", "options": ["کاملاً باور می‌کند", "شک دارد", "مطمئن است دروغ است"], "correctIndex": 1, "explanation": "wollen + bezweifeln: مظنون ادعا می‌کند ولی پلیس شک دارد." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der geheimnisvolle Nachbar", "fa": "همسایه مرموز" },
+      "characters": ["Lisa", "Tom"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Lisa und Tom sprechen über ihren neuen Nachbarn.", "fa": "لیزا و تام درباره همسایه جدیدشان صحبت می‌کنند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Hast du den neuen Nachbarn gesehen? Er soll Millionär sein!", "fa": "همسایه جدید را دیدی؟ ظاهراً میلیونر است!" },
+          "mood": "excited"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Tom",
+          "text": { "de": "Wirklich? Er muss reich sein, sein Auto kostet mindestens 200.000 Euro.", "fa": "واقعاً؟ حتماً ثروتمند است، ماشینش حداقل ۲۰۰٬۰۰۰ یورو قیمت دارد." },
+          "mood": "surprised"
+        },
+        {
+          "type": "question",
+          "question": "تام چرا مطمئن است همسایه ثروتمند است؟",
+          "options": ["چون شنیده", "چون ماشین گران دارد", "چون خودش گفته"],
+          "correctIndex": 1,
+          "explanation": "تام از شواهد عینی (ماشین گران) استفاده کرد، پس muss گفت."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Er will früher Arzt gewesen sein, aber jetzt arbeitet er nicht mehr.", "fa": "ادعا می‌کند قبلاً پزشک بوده، ولی الان دیگر کار نمی‌کند." },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Tom",
+          "text": { "de": "Das mag stimmen. Er dürfte über 60 sein, also vielleicht Rentner?", "fa": "شاید درست باشد. احتمالاً بیش از ۶۰ سالش است، پس شاید بازنشسته؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "لیزا با «will ... gewesen sein» چه می‌گوید؟",
+          "options": ["مطمئنم پزشک بوده", "ادعا می‌کند پزشک بوده (شک دارم)", "شنیدم پزشک بوده"],
+          "correctIndex": 1,
+          "explanation": "wollen = ادعا کردن (با تردید گوینده). او ادعا می‌کند، ولی لیزا مطمئن نیست."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Das könnte sein. Aber warum zieht ein Millionär in unsere kleine Straße?", "fa": "ممکن است. ولی چرا یک میلیونر به خیابان کوچک ما نقل مکان می‌کند?" },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Tom",
+          "text": { "de": "Vielleicht sucht er Ruhe. Reiche Leute mögen Privatsphäre.", "fa": "شاید آرامش می‌خواهد. آدم‌های ثروتمند حریم خصوصی دوست دارند." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "تام با «dürfte über 60 sein» چه می‌گوید؟",
+          "options": ["حتماً بیش از ۶۰ سالش است", "احتمالاً بیش از ۶۰ سالش است", "شاید ۶۰ سالش باشد"],
+          "correctIndex": 1,
+          "explanation": "dürfte = احتمال بالا (~۹۰٪). تام تقریباً مطمئن است ولی نه ۱۰۰٪."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: فعل مودال درست",
+      "instruction": "کدام فعل مناسب‌تر است؟",
+      "questions": [
+        { "prompt": "۱۰۰٪ مطمئنم → Er ___ krank sein", "left": "muss", "right": "könnte", "correctSide": "left" },
+        { "prompt": "شنیدم که... → Er ___ reich sein", "left": "will", "right": "soll", "correctSide": "right" },
+        { "prompt": "او ادعا می‌کند → Er ___ Arzt sein", "left": "will", "right": "soll", "correctSide": "left" },
+        { "prompt": "احتمالاً (~۹۰٪) → Es ___ stimmen", "left": "dürfte", "right": "kann", "correctSide": "left" },
+        { "prompt": "شاید (امکان) → Das ___ richtig sein", "left": "muss", "right": "kann", "correctSide": "right" },
+        { "prompt": "می‌پذیرم ولی... → Das ___ sein", "left": "mag", "right": "muss", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Er muss krank sein.",
+      "translation": "او حتماً مریض است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Sie dürfte zu Hause sein.",
+      "translation": "او احتمالاً خانه است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Er soll sehr reich sein.",
+      "translation": "ظاهراً او خیلی ثروتمند است."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: افعال مودال معرفتی",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "müssen (ذهنی) =", "options": ["حتماً ۱۰۰٪", "شاید ۵۰٪"], "correctAnswerIndex": 0 },
+        { "question": "dürfte =", "options": ["احتمالاً ~۹۰٪", "ادعا می‌کند"], "correctAnswerIndex": 0 },
+        { "question": "sollen (ذهنی) =", "options": ["وظیفه", "نقل قول (ظاهراً)"], "correctAnswerIndex": 1 },
+        { "question": "wollen (ذهنی) =", "options": ["خواستن", "ادعا کردن (با شک)"], "correctAnswerIndex": 1 },
+        { "question": "können/könnte =", "options": ["امکان (شاید)", "اطمینان (حتماً)"], "correctAnswerIndex": 0 },
+        { "question": "mögen (ذهنی) =", "options": ["دوست داشتن", "تسلیم (چه بسا)"], "correctAnswerIndex": 1 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: جمله و معنی",
+      "pairs": [
+        { "de": "Er muss reich sein.", "fa": "حتماً ثروتمند است" },
+        { "de": "Er dürfte kommen.", "fa": "احتمالاً می‌آید" },
+        { "de": "Er soll klug sein.", "fa": "ظاهراً باهوش است" },
+        { "de": "Er will Arzt sein.", "fa": "ادعا می‌کند پزشک است" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "افعال مودال و کلمات مرتبط را پیدا کنید",
+      "targetWords": ["müssen", "dürfte", "können", "sollen", "wollen", "mögen"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "die Vermutung", "fa": "گمان، حدس", "options": ["اطمینان", "گمان", "تردید", "ادعا"], "correctIndex": 1 },
+        { "de": "behaupten", "fa": "ادعا کردن", "options": ["شک کردن", "پرسیدن", "ادعا کردن", "گفتن"], "correctIndex": 2 },
+        { "de": "angeblich", "fa": "ظاهراً", "options": ["حتماً", "ظاهراً", "قطعاً", "واقعاً"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! جمع‌بندی افعال مودال معرفتی تمام شد!",
+      "message": "شما تمام کاربردهای ذهنی/معرفتی افعال مودال آلمانی را مرور کردید!",
+      "keyPoints": [
+        "**müssen (۱۰۰٪):** Er muss krank sein = حتماً مریض است",
+        "**dürfte (~۹۰٪):** Er dürfte kommen = احتمالاً می‌آید",
+        "**können/könnte (امکان):** Das kann stimmen = شاید درست باشد",
+        "**sollen (نقل قول):** Er soll reich sein = ظاهراً ثروتمند است",
+        "**wollen (ادعا با شک):** Er will Arzt sein = ادعا می‌کند پزشک است",
+        "**mögen (تسلیم):** Das mag sein = چه بسا درست باشد، ولی...",
+        "**ساختار:** Modalverb + Infinitiv در آخر جمله"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "die Vermutung", "fa": "گمان، حدس" } },
+        { "word": { "de": "die Wahrscheinlichkeit", "fa": "احتمال" } },
+        { "word": { "de": "die Gewissheit", "fa": "اطمینان، یقین" } },
+        { "word": { "de": "behaupten", "fa": "ادعا کردن" } },
+        { "word": { "de": "bezweifeln", "fa": "شک کردن" } },
+        { "word": { "de": "angeblich", "fa": "ظاهراً، به قول خودش" } }
+      ]
+    }
+  ]
+}

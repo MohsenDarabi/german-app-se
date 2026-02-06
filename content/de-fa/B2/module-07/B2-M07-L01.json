@@ -1,0 +1,520 @@
+{
+  "id": "B2-M07-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Subjektive Bedeutung der Modalverben: müssen & können", "fa": "معنای ذهنی افعال وجهی: müssen و können" },
+  "description": "یاد بگیرید چگونه از افعال وجهی müssen و können برای بیان احتمال و حدس استفاده کنید. این کاربرد «معرفتی» (epistemisch) در متون آلمانی بسیار رایج است و با کاربرد عادی (توانایی/اجبار) تفاوت دارد.",
+  "level": "B2",
+  "module": 7,
+  "lessonNumber": 1,
+  "totalSteps": 45,
+  "estimatedMinutes": 40,
+  "vocabulary": [
+    { "de": "müssen (epistemisch)", "fa": "باید (حتماً، یقیناً)", "grammar": { "pos": "verb" } },
+    { "de": "können (epistemisch)", "fa": "ممکن است، شاید", "grammar": { "pos": "verb" } },
+    { "de": "wahrscheinlich", "fa": "احتمالاً", "grammar": { "pos": "adverb" } },
+    { "de": "vermutlich", "fa": "به احتمال زیاد، ظاهراً", "grammar": { "pos": "adverb" } },
+    { "de": "offensichtlich", "fa": "آشکارا، به وضوح", "grammar": { "pos": "adverb" } },
+    { "de": "unmöglich", "fa": "غیرممکن", "grammar": { "pos": "adjective" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "معنای عینی در مقابل ذهنی افعال وجهی",
+      "content": "**دو کاربرد افعال وجهی**\n\nافعال وجهی در آلمانی دو نوع معنی دارند:\n\n**۱. معنای عینی (objektiv):**\n- بیان توانایی، اجازه، اجبار واقعی\n- Er **muss** arbeiten = او **باید** کار کند (اجبار)\n- Er **kann** schwimmen = او **می‌تواند** شنا کند (توانایی)\n\n**۲. معنای ذهنی (subjektiv/epistemisch):**\n- بیان حدس، احتمال، نتیجه‌گیری گوینده\n- Er **muss** krank sein = او **حتماً** مریض است (۹۵٪ مطمئنم)\n- Er **kann** krank sein = او **ممکن است** مریض باشد (شاید)\n\n**نکته برای فارسی‌زبانان:**\nدر فارسی هم «باید» می‌تواند حدس را نشان دهد:\n- «باید الان رسیده باشد» = احتمالاً رسیده است\n- این دقیقاً همان کاربرد müssen در معنای ذهنی است!",
+      "examples": [
+        { "de": "Er muss müde sein. (Er sieht sehr müde aus.)", "fa": "او حتماً خسته است. (خیلی خسته به نظر می‌رسد.)" },
+        { "de": "Das kann wahr sein. (Ich bin nicht sicher.)", "fa": "این ممکن است درست باشد. (مطمئن نیستم.)" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "wahrscheinlich", "fa": "احتمالاً" },
+      "example": { "text": { "de": "Er ist wahrscheinlich krank.", "fa": "او احتمالاً مریض است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "wahrscheinlich",
+      "translation": "احتمالاً",
+      "syllables": ["wahr", "schein", "lich"],
+      "distractors": ["war", "schien", "lach", "lich"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "vermutlich", "fa": "به احتمال زیاد، ظاهراً" },
+      "example": { "text": { "de": "Sie ist vermutlich im Büro.", "fa": "او به احتمال زیاد در دفتر است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "vermutlich",
+      "translation": "به احتمال زیاد",
+      "syllables": ["ver", "mut", "lich"],
+      "distractors": ["vor", "mat", "lach", "var"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "offensichtlich", "fa": "آشکارا، به وضوح" },
+      "example": { "text": { "de": "Er ist offensichtlich nervös.", "fa": "او آشکارا عصبی است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "offensichtlich",
+      "translation": "آشکارا",
+      "syllables": ["of", "fen", "sicht", "lich"],
+      "distractors": ["auf", "fan", "sucht", "lach"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "müssen در معنای ذهنی: یقین منطقی",
+      "content": "**müssen معرفتی = یقین منطقی (۹۰-۹۵٪)**\n\nوقتی از شواهد نتیجه‌گیری می‌کنید:\n\n| عینی (اجبار) | ذهنی (یقین) |\n|--------------|-------------|\n| Er **muss** früh aufstehen. | Er **muss** müde sein. |\n| او **باید** زود بلند شود. | او **حتماً** خسته است. |\n| (قانون/الزام) | (از قیافه‌اش معلوم است) |\n\n**ساختار:**\n```\nSubjekt + muss/müssen + Infinitiv + sein/haben\n```\n\n**مثال‌های رایج:**\n- Das **muss** ein Fehler **sein**. = این حتماً اشتباه است.\n- Sie **muss** das gewusst **haben**. = او حتماً این را می‌دانست.\n- Es **muss** geregnet **haben**. = حتماً باران آمده بود.\n\n**چگونه تشخیص دهیم؟**\n- اگر فعل اصلی sein/haben باشد → معمولاً ذهنی\n- اگر از شواهد نتیجه‌گیری شود → ذهنی",
+      "examples": [
+        { "de": "Er muss reich sein. (Er fährt einen Porsche.)", "fa": "او حتماً پولدار است. (پورشه سوار می‌شود.)" },
+        { "de": "Sie muss die E-Mail bekommen haben.", "fa": "او حتماً ایمیل را دریافت کرده است." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "در جمله «Er muss krank sein» کدام معنی منظور است؟",
+      "options": [
+        "او مجبور است مریض باشد (اجبار)",
+        "او حتماً مریض است (حدس با یقین بالا)",
+        "او می‌خواهد مریض باشد",
+        "او باید مریض شود (توصیه)"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! muss + sein معمولاً معنای ذهنی دارد: حدس با یقین بالا.", "incorrect": "وقتی muss با sein/haben ترکیب می‌شود، معمولاً معنای ذهنی (حدس) دارد." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "درجه یقین در «Er muss müde sein» چقدر است؟",
+      "options": [
+        "حدود ۱۰-۲۰٪ (شاید)",
+        "حدود ۵۰٪ (ممکن است)",
+        "حدود ۹۰-۹۵٪ (حتماً)",
+        "۱۰۰٪ (قطعاً)"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "درست! müssen ذهنی نشان‌دهنده یقین بالا (۹۰-۹۵٪) است.", "incorrect": "müssen ذهنی درجه یقین بالایی دارد، حدود ۹۰-۹۵٪." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "unmöglich", "fa": "غیرممکن" },
+      "example": { "text": { "de": "Das ist unmöglich! Das kann nicht stimmen.", "fa": "این غیرممکن است! این نمی‌تواند درست باشد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "unmöglich",
+      "translation": "غیرممکن",
+      "syllables": ["un", "mög", "lich"],
+      "distractors": ["an", "mag", "lach", "on"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "möglicherweise", "fa": "احتمالاً، شاید" },
+      "example": { "text": { "de": "Er kommt möglicherweise später.", "fa": "او احتمالاً بعداً می‌آید." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "möglicherweise",
+      "translation": "احتمالاً",
+      "syllables": ["mög", "li", "cher", "wei", "se"],
+      "distractors": ["mag", "le", "char", "wai"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "eventuell", "fa": "احتمالاً، شاید" },
+      "example": { "text": { "de": "Sie kommt eventuell morgen.", "fa": "او شاید فردا بیاید." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "eventuell",
+      "translation": "احتمالاً، شاید",
+      "syllables": ["e", "ven", "tu", "ell"],
+      "distractors": ["a", "van", "to", "all"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "können در معنای ذهنی: امکان و عدم امکان",
+      "content": "**können معرفتی = امکان (۳۰-۵۰٪)**\n\n**۱. können مثبت (امکان):**\n- Das **kann** wahr **sein** = این ممکن است درست باشد\n- Er **kann** recht **haben** = ممکن است حق با او باشد\n\n**۲. können منفی (عدم امکان = یقین منفی):**\n- Das **kann nicht** stimmen = این نمی‌تواند درست باشد (غیرممکن!)\n- Er **kann nicht** der Täter **sein** = او نمی‌تواند مجرم باشد\n\n**مقایسه درجات یقین:**\n\n| ساختار | درجه یقین | مثال |\n|--------|-----------|------|\n| muss...sein | ۹۰-۹۵٪ | Er muss krank sein. |\n| kann...sein | ۳۰-۵۰٪ | Er kann krank sein. |\n| kann nicht...sein | ۹۵-۱۰۰٪ منفی | Er kann nicht krank sein. |\n\n**نکته مهم:**\n- «kann nicht» خیلی قوی‌تر از «vielleicht nicht» است\n- «kann nicht» = غیرممکن است، باورم نمی‌شود",
+      "examples": [
+        { "de": "Das kann ein Zufall sein.", "fa": "این ممکن است تصادفی باشد." },
+        { "de": "Das kann nicht wahr sein!", "fa": "این نمی‌تواند درست باشد! (غیرممکن!)" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "فعل وجهی مناسب را انتخاب کنید (معنای ذهنی)",
+      "sentence": "Er sieht sehr müde aus. Er {0} die ganze Nacht gearbeitet haben.",
+      "options": ["muss", "kann", "will", "soll"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "muss درست است چون از شواهد (خسته به نظر می‌رسد) با یقین بالا نتیجه می‌گیریم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "فعل وجهی مناسب را انتخاب کنید",
+      "sentence": "Ich bin nicht sicher, aber das {0} ein Fehler sein.",
+      "options": ["muss", "kann", "will", "darf"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "kann درست است چون گوینده مطمئن نیست: «Ich bin nicht sicher» = امکان، نه یقین." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Er ist erst 20 Jahre alt. Er {0} der Chef sein!",
+      "options": ["muss", "kann nicht", "kann", "muss nicht"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "kann nicht درست است: غیرممکن است که یک نفر ۲۰ ساله رئیس باشد (از نظر گوینده)." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را با فعل وجهی ذهنی مرتب کنید",
+      "words": ["sein", "Sie", "muss", "Ärztin"],
+      "correctOrder": [1, 2, 3, 0],
+      "correctSentence": { "de": "Sie muss Ärztin sein.", "fa": "او حتماً دکتر است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["kann", "wahr", "Das", "sein", "nicht"],
+      "correctOrder": [2, 0, 4, 3, 1],
+      "correctSentence": { "de": "Das kann nicht wahr sein.", "fa": "این نمی‌تواند درست باشد." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله را با Perfekt مرتب کنید",
+      "words": ["haben", "muss", "Er", "vergessen", "es"],
+      "correctOrder": [2, 1, 4, 3, 0],
+      "correctSentence": { "de": "Er muss es vergessen haben.", "fa": "او حتماً آن را فراموش کرده است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جمله «Er muss reich sein» معنی این است که او مجبور است پولدار باشد.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! این جمله معنای ذهنی دارد: از شواهد نتیجه می‌گیریم که او حتماً پولدار است (مثلاً ماشین گرانی دارد)." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "«kann nicht» در معنای ذهنی نشان‌دهنده عدم امکان یا غیرممکن بودن است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! «Das kann nicht stimmen» یعنی غیرممکن است که درست باشد، باورم نمی‌شود!" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "درجه یقین در müssen ذهنی (حدود ۹۰٪) بیشتر از können ذهنی (حدود ۴۰٪) است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! müssen = یقین بالا (حتماً)، können = امکان (شاید)." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "حدس زدن درباره یک همکار",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Büro sprechen zwei Kollegen.", "fa": "در دفتر دو همکار صحبت می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Thomas ist heute nicht gekommen. Weißt du, warum?", "fa": "توماس امروز نیامده. می‌دانی چرا؟" }, "mood": "confused" },
+        { "speaker": "Max", "text": { "de": "Er muss krank sein. Gestern hat er schon gehustet.", "fa": "او حتماً مریض است. دیروز هم سرفه می‌کرد." }, "mood": "neutral" },
+        { "speaker": "Anna", "text": { "de": "Das kann sein. Oder er kann einen Arzttermin haben.", "fa": "ممکن است. یا شاید وقت دکتر داشته باشد." }, "mood": "neutral" },
+        { "speaker": "Max", "text": { "de": "Er kann nicht im Urlaub sein - er hat letzte Woche Urlaub genommen.", "fa": "نمی‌تواند در مرخصی باشد - هفته پیش مرخصی گرفت." }, "mood": "surprised" },
+        { "speaker": "Anna", "text": { "de": "Stimmt. Er muss wirklich krank sein.", "fa": "درسته. او واقعاً حتماً مریض است." }, "mood": "sad" }
+      ],
+      "questions": [
+        { "question": "ماکس چرا فکر می‌کند توماس مریض است؟", "options": ["زنگ زد و گفت", "دیروز سرفه می‌کرد", "در تقویم نوشته"], "correctIndex": 1, "explanation": "ماکس از شواهد (سرفه دیروز) نتیجه گرفت: Er muss krank sein." },
+        { "question": "چرا توماس نمی‌تواند در مرخصی باشد؟", "options": ["هفته پیش مرخصی گرفت", "مرخصی ندارد", "درخواست نداده"], "correctIndex": 0, "explanation": "ماکس گفت: Er hat letzte Woche Urlaub genommen." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "گزینه مناسب را انتخاب کنید",
+      "sentence": "Das Licht ist an. Jemand {0} zu Hause sein.",
+      "options": ["kann nicht", "muss", "will", "darf"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "muss درست است: از شواهد (چراغ روشن است) با یقین بالا نتیجه می‌گیریم کسی خانه است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "گزینه مناسب را انتخاب کنید",
+      "sentence": "Er sagt, er ist 150 Jahre alt. Das {0} wahr sein!",
+      "options": ["muss", "kann", "kann nicht", "muss nicht"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "kann nicht درست است: غیرممکن است کسی ۱۵۰ سال داشته باشد!" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "گزینه مناسب را انتخاب کنید",
+      "sentence": "Ich weiß es nicht genau, aber er {0} in München wohnen.",
+      "options": ["muss", "kann", "kann nicht", "will"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "kann درست است چون گوینده مطمئن نیست: «Ich weiß es nicht genau»." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "راز یک نامه",
+      "scene": {
+        "location": "living room",
+        "description": { "de": "Lisa findet einen mysteriösen Brief.", "fa": "لیزا یک نامه مرموز پیدا می‌کند." }
+      },
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Schau mal! Dieser Brief hat keine Absenderadresse.", "fa": "نگاه کن! این نامه آدرس فرستنده ندارد." }, "mood": "surprised" },
+        { "speaker": "Tom", "text": { "de": "Das muss von jemandem sein, der anonym bleiben will.", "fa": "این حتماً از کسی است که می‌خواهد ناشناس بماند." }, "mood": "confused" },
+        { "speaker": "Lisa", "text": { "de": "Es kann von meiner Tante sein. Sie schreibt manchmal so.", "fa": "ممکن است از عمه‌ام باشد. او گاهی اینطور می‌نویسد." }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Das kann nicht sein! Die Handschrift ist ganz anders.", "fa": "این نمی‌تواند باشد! دست‌خط کاملاً فرق دارد." }, "mood": "excited" },
+        { "speaker": "Lisa", "text": { "de": "Du hast recht. Es muss jemand anders sein.", "fa": "حق با توست. حتماً کس دیگری است." }, "mood": "confused" }
+      ],
+      "questions": [
+        { "question": "تام چرا فکر می‌کند فرستنده می‌خواهد ناشناس بماند؟", "options": ["نامه امضا ندارد", "آدرس فرستنده ندارد", "با رمز نوشته شده"], "correctIndex": 1, "explanation": "لیزا گفت: Dieser Brief hat keine Absenderadresse." },
+        { "question": "چرا نامه نمی‌تواند از عمه لیزا باشد؟", "options": ["عمه نامه نمی‌نویسد", "دست‌خط فرق دارد", "عمه در سفر است"], "correctIndex": 1, "explanation": "تام گفت: Die Handschrift ist ganz anders." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "جملات را با درجه یقین صحیح جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Er muss reich sein." },
+        { "id": "i2", "text": "Er kann reich sein." },
+        { "id": "i3", "text": "Er kann nicht reich sein." },
+        { "id": "i4", "text": "Er ist wahrscheinlich reich." }
+      ],
+      "matches": [
+        { "id": "m1", "text": "یقین بالا (۹۰-۹۵٪)" },
+        { "id": "m2", "text": "امکان (۳۰-۵۰٪)" },
+        { "id": "m3", "text": "غیرممکن (عدم امکان)" },
+        { "id": "m4", "text": "احتمال (۶۰-۷۰٪)" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "او حتماً این را فراموش کرده است.",
+      "sentenceTemplate": "Er {0} das {1} haben.",
+      "options": ["muss", "kann", "vergessen", "verstanden", "soll", "gewusst"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Er muss das vergessen haben.", "fa": "او حتماً این را فراموش کرده است." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "این نمی‌تواند درست باشد!",
+      "sentenceTemplate": "Das {0} nicht {1} sein!",
+      "options": ["kann", "muss", "wahr", "falsch", "darf", "richtig"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Das kann nicht wahr sein!", "fa": "این نمی‌تواند درست باشد!" }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: یک جرم مرموز",
+      "passage": {
+        "de": "Die Polizei untersucht einen Einbruch. Der Kommissar denkt laut nach:\n\n«Der Täter muss ein Profi sein. Die Alarmanlage wurde perfekt deaktiviert. Er kann nicht allein gearbeitet haben - das war zu komplex für eine Person.\n\nDer Einbruch muss zwischen 2 und 4 Uhr passiert sein. Die Nachbarn haben nichts gehört. Das kann bedeuten, dass der Täter sehr leise war.\n\nDer Hausbesitzer kann der Täter nicht sein - er war im Ausland. Aber er muss jemanden gekannt haben, der den Code wusste. Das kann kein Zufall sein.»",
+        "fa": "پلیس یک سرقت را بررسی می‌کند. کمیسر بلند فکر می‌کند:\n\n«مجرم حتماً یک حرفه‌ای است. سیستم هشدار به طور کامل غیرفعال شد. او نمی‌تواند تنها کار کرده باشد - این برای یک نفر خیلی پیچیده بود.\n\nسرقت حتماً بین ساعت ۲ و ۴ اتفاق افتاده است. همسایه‌ها چیزی نشنیدند. این ممکن است به این معنی باشد که مجرم خیلی ساکت بود.\n\nصاحب‌خانه نمی‌تواند مجرم باشد - او در خارج از کشور بود. اما او حتماً کسی را می‌شناخته که رمز را می‌دانست. این نمی‌تواند تصادفی باشد.»"
+      },
+      "questions": [
+        { "question": "چرا کمیسر فکر می‌کند مجرم حرفه‌ای است؟", "options": ["اثر انگشت نداشت", "سیستم هشدار را کامل غیرفعال کرد", "دوربین را خاموش کرد"], "correctIndex": 1, "explanation": "کمیسر گفت: Die Alarmanlage wurde perfekt deaktiviert." },
+        { "question": "چرا صاحب‌خانه نمی‌تواند مجرم باشد؟", "options": ["آلیبی ندارد", "در خارج از کشور بود", "رمز را نمی‌دانست"], "correctIndex": 1, "explanation": "کمیسر گفت: er war im Ausland." },
+        { "question": "چند فعل وجهی در معنای ذهنی در این متن استفاده شده؟", "options": ["۳", "۵", "۷"], "correctIndex": 2, "explanation": "۷ مورد: muss sein (۲×)، kann nicht (۳×)، muss passiert sein، kann bedeuten، muss gekannt haben" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Das verschwundene Paket", "fa": "بسته گمشده" },
+      "characters": ["Sara", "Jan"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Sara wartet auf ein wichtiges Paket.", "fa": "سارا منتظر یک بسته مهم است." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sara",
+          "text": { "de": "Mein Paket ist nicht angekommen! Es muss verloren gegangen sein!", "fa": "بسته‌ام نرسیده! حتماً گم شده!" },
+          "mood": "angry"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Jan",
+          "text": { "de": "Beruhige dich. Es kann bei einem Nachbarn sein.", "fa": "آرام باش. ممکن است پیش یک همسایه باشد." },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "سارا از کدام فعل وجهی ذهنی استفاده کرد؟",
+          "options": ["kann", "muss", "will"],
+          "correctIndex": 1,
+          "explanation": "سارا گفت «muss verloren gegangen sein» - یقین بالا."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sara",
+          "text": { "de": "Das kann nicht sein! Ich habe alle gefragt.", "fa": "این نمی‌تواند باشد! از همه پرسیدم." },
+          "mood": "sad"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Jan",
+          "text": { "de": "Moment... Das muss die Lieferung sein, die ich angenommen habe!", "fa": "صبر کن... این حتماً همان تحویلی است که من گرفتم!" },
+          "mood": "surprised"
+        },
+        {
+          "type": "question",
+          "question": "چرا بسته گم نشده بود؟",
+          "options": ["همسایه گرفته بود", "یان آن را گرفته بود", "هنوز نرسیده بود"],
+          "correctIndex": 1,
+          "explanation": "یان گفت: die Lieferung, die ich angenommen habe."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sara",
+          "text": { "de": "Du musst mir das sofort sagen! Ich war so besorgt!", "fa": "باید فوراً بهم بگویی! خیلی نگران بودم!" },
+          "mood": "angry"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Jan gibt Sara das Paket und alles ist wieder gut.", "fa": "یان بسته را به سارا می‌دهد و همه چیز درست می‌شود." }
+        },
+        {
+          "type": "question",
+          "question": "در آخرین جمله سارا، «musst» معنای عینی یا ذهنی دارد؟",
+          "options": ["ذهنی (حدس)", "عینی (الزام)", "هر دو"],
+          "correctIndex": 1,
+          "explanation": "«Du musst mir das sagen» = تو باید بگویی (الزام/درخواست قوی)، نه حدس."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: عینی یا ذهنی؟",
+      "instruction": "معنای فعل وجهی کدام است؟",
+      "questions": [
+        { "prompt": "Er muss jeden Tag arbeiten.", "left": "عینی (اجبار)", "right": "ذهنی (حدس)", "correctSide": "left" },
+        { "prompt": "Er muss krank sein.", "left": "عینی (اجبار)", "right": "ذهنی (حدس)", "correctSide": "right" },
+        { "prompt": "Sie kann gut schwimmen.", "left": "عینی (توانایی)", "right": "ذهنی (امکان)", "correctSide": "left" },
+        { "prompt": "Das kann wahr sein.", "left": "عینی (توانایی)", "right": "ذهنی (امکان)", "correctSide": "right" },
+        { "prompt": "Er kann nicht lügen.", "left": "عینی (ناتوانی)", "right": "ذهنی (غیرممکن)", "correctSide": "left" },
+        { "prompt": "Das kann nicht stimmen!", "left": "عینی (ناتوانی)", "right": "ذهنی (غیرممکن)", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Er muss sehr müde sein.",
+      "translation": "او حتماً خیلی خسته است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Das kann nicht wahr sein!",
+      "translation": "این نمی‌تواند درست باشد!"
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Sie muss das vergessen haben.",
+      "translation": "او حتماً آن را فراموش کرده است."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: افعال وجهی ذهنی!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "müssen ذهنی چه درجه یقینی دارد؟", "options": ["۳۰-۵۰٪", "۹۰-۹۵٪"], "correctAnswerIndex": 1 },
+        { "question": "können ذهنی چه معنایی دارد؟", "options": ["توانایی", "امکان/احتمال"], "correctAnswerIndex": 1 },
+        { "question": "«kann nicht» یعنی...؟", "options": ["شاید نه", "غیرممکن است"], "correctAnswerIndex": 1 },
+        { "question": "«Er muss reich sein» یعنی...؟", "options": ["باید پولدار شود", "حتماً پولدار است"], "correctAnswerIndex": 1 },
+        { "question": "کدام معنای ذهنی است؟", "options": ["Er kann schwimmen", "Er kann krank sein"], "correctAnswerIndex": 1 },
+        { "question": "ساختار رایج ذهنی؟", "options": ["muss + Infinitiv", "muss + sein/haben"], "correctAnswerIndex": 1 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: ساختار و معنا",
+      "pairs": [
+        { "de": "muss...sein", "fa": "حتماً است (۹۵٪)" },
+        { "de": "kann...sein", "fa": "ممکن است (۴۰٪)" },
+        { "de": "kann nicht...sein", "fa": "غیرممکن است" },
+        { "de": "wahrscheinlich", "fa": "احتمالاً" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی قیدهای احتمال",
+      "instruction": "قیدهای مربوط به احتمال را پیدا کنید",
+      "targetWords": ["wahrscheinlich", "vermutlich", "offensichtlich", "unmöglich", "eventuell"],
+      "gridSize": { "rows": 10, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "muss...sein (ذهنی)", "fa": "حتماً است", "options": ["باید باشد", "حتماً است", "می‌تواند باشد", "شاید باشد"], "correctIndex": 1 },
+        { "de": "kann nicht...sein", "fa": "غیرممکن است", "options": ["نمی‌تواند (توانایی)", "غیرممکن است", "شاید نباشد", "نباید باشد"], "correctIndex": 1 },
+        { "de": "wahrscheinlich", "fa": "احتمالاً", "options": ["حتماً", "احتمالاً", "غیرممکن", "قطعاً نه"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما معنای ذهنی (معرفتی) افعال وجهی müssen و können را یاد گرفتید!",
+      "keyPoints": [
+        "müssen ذهنی = یقین بالا (۹۰-۹۵٪): Er muss krank sein = حتماً مریض است",
+        "können ذهنی = امکان (۳۰-۵۰٪): Das kann wahr sein = ممکن است درست باشد",
+        "kann nicht = غیرممکن: Das kann nicht stimmen! = غیرممکن است درست باشد!",
+        "تشخیص: اگر با sein/haben ترکیب شود، معمولاً ذهنی است",
+        "در فارسی هم «باید» برای حدس استفاده می‌شود: «باید رسیده باشد»",
+        "برای Perfekt ذهنی: muss/kann + Partizip II + haben/sein"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "müssen (epistemisch)", "fa": "باید (حتماً، یقیناً)" } },
+        { "word": { "de": "können (epistemisch)", "fa": "ممکن است، شاید" } },
+        { "word": { "de": "wahrscheinlich", "fa": "احتمالاً" } },
+        { "word": { "de": "vermutlich", "fa": "به احتمال زیاد، ظاهراً" } },
+        { "word": { "de": "offensichtlich", "fa": "آشکارا، به وضوح" } },
+        { "word": { "de": "unmöglich", "fa": "غیرممکن" } }
+      ]
+    }
+  ]
+}

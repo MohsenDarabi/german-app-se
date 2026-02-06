@@ -1845,6 +1845,37 @@ const DE_FA_B2_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/B2/B2-M06-L04"
       }
     ]
+  },
+  {
+    id: "module-07",
+    title: "بخش ۷: Subjektive Modalverben",
+    level: "B2",
+    lessons: [
+      {
+        id: "B2-M07-L01",
+        title: "müssen & können - قطعیت و امکان",
+        description: "یاد بگیرید استفاده ذهنی از müssen و können برای بیان احتمال.",
+        path: "/learn/de-fa/B2/B2-M07-L01"
+      },
+      {
+        id: "B2-M07-L02",
+        title: "dürfen & sollen - احتمال و نقل قول",
+        description: "یاد بگیرید dürfte برای احتمال بالا و sollen برای شنیده‌ها.",
+        path: "/learn/de-fa/B2/B2-M07-L02"
+      },
+      {
+        id: "B2-M07-L03",
+        title: "wollen & mögen - ادعا و پذیرش",
+        description: "یاد بگیرید wollen برای شک در ادعا و mögen برای پذیرش احتمال.",
+        path: "/learn/de-fa/B2/B2-M07-L03"
+      },
+      {
+        id: "B2-M07-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل افعال کمکی ذهنی با مقیاس احتمال.",
+        path: "/learn/de-fa/B2/B2-M07-L04"
+      }
+    ]
   }
 ];
 

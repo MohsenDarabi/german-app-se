@@ -1,0 +1,524 @@
+{
+  "id": "B2-M07-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Subjektive Bedeutung der Modalverben: wollen & mögen", "fa": "معنای ذهنی افعال کمکی وجهی: wollen و mögen" },
+  "description": "یاد بگیرید چگونه از wollen برای بیان شک به ادعای کسی و از mögen برای پذیرش احتمال استفاده کنید - کاربرد epistemic این افعال در زبان آلمانی",
+  "level": "B2",
+  "module": 7,
+  "lessonNumber": 3,
+  "totalSteps": 45,
+  "estimatedMinutes": 35,
+  "vocabulary": [
+    { "de": "wollen (subjektiv)", "fa": "ادعا کردن (با تردید)", "grammar": { "pos": "verb" } },
+    { "de": "mögen (subjektiv)", "fa": "ممکن است، شاید (پذیرش)", "grammar": { "pos": "verb" } },
+    { "de": "die Behauptung", "fa": "ادعا، اظهار", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "bezweifeln", "fa": "شک کردن، تردید داشتن", "grammar": { "pos": "verb" } },
+    { "de": "einräumen", "fa": "پذیرفتن، قبول کردن", "grammar": { "pos": "verb" } },
+    { "de": "die Vermutung", "fa": "گمان، حدس", "grammar": { "pos": "noun", "gender": "feminine" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "معنای ذهنی (epistemic) افعال کمکی وجهی: wollen و mögen",
+      "content": "**Subjektive Modalverben: wollen & mögen**\n\nدر این درس با دو کاربرد ویژه آشنا می‌شوید:\n\n**۱. wollen = ادعا کردن (با شک گوینده)**\nوقتی کسی چیزی ادعا می‌کند اما گوینده شک دارد:\n\n| جمله | معنی |\n|------|------|\n| Er **will** Arzt **sein**. | او ادعا می‌کند پزشک است. (من شک دارم) |\n| Sie **will** das nicht **gewusst haben**. | او ادعا می‌کند این را نمی‌دانسته. (باور نمی‌کنم) |\n\n**۲. mögen = پذیرش احتمال (concession)**\nوقتی گوینده احتمالی را می‌پذیرد:\n\n| جمله | معنی |\n|------|------|\n| Das **mag** stimmen. | این شاید درست باشد. (می‌پذیرم) |\n| Er **mag** recht **haben**. | شاید حق با او باشد. |\n\n**نکته مهم:** این کاربردها با معنای معمولی «خواستن» و «دوست داشتن» متفاوت است!",
+      "examples": [
+        { "de": "Er will ein Experte sein. (Ich bezweifle das.)", "fa": "او ادعا می‌کند متخصص است. (من شک دارم.)" },
+        { "de": "Das mag richtig sein. (Ich akzeptiere die Möglichkeit.)", "fa": "این شاید درست باشد. (من این احتمال را می‌پذیرم.)" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "wollen (subjektiv)", "fa": "ادعا کردن (با تردید)" },
+      "example": { "text": { "de": "Er will nichts davon gewusst haben.", "fa": "او ادعا می‌کند که چیزی از آن نمی‌دانسته." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Behauptung",
+      "translation": "ادعا",
+      "syllables": ["Be", "haup", "tung"],
+      "distractors": ["Ba", "houp", "tang"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "mögen (subjektiv)", "fa": "ممکن است، شاید (پذیرش)" },
+      "example": { "text": { "de": "Das mag sein, aber ich bin nicht überzeugt.", "fa": "شاید همینطور باشد، اما من قانع نشدم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Vermutung",
+      "translation": "گمان، حدس",
+      "syllables": ["Ver", "mu", "tung"],
+      "distractors": ["Vor", "mo", "tang"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "die Behauptung", "fa": "ادعا، اظهار" },
+      "example": { "text": { "de": "Seine Behauptung ist schwer zu beweisen.", "fa": "اثبات ادعای او سخت است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "bezweifeln",
+      "translation": "شک کردن",
+      "syllables": ["be", "zwei", "feln"],
+      "distractors": ["ba", "zwai", "faln"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "wollen: بیان شک به ادعای دیگران",
+      "content": "**Wollen = ادعا کردن (با شک گوینده)**\n\nوقتی از wollen به صورت ذهنی استفاده می‌کنیم، نشان می‌دهیم که:\n- کسی چیزی ادعا می‌کند\n- ما به این ادعا **شک داریم**\n\n**ساختار در زمان حال:**\nSubjekt + **will** + ... + **Infinitiv**\n\n| آلمانی | معنی |\n|--------|------|\n| Er **will** reich **sein**. | او ادعا می‌کند ثروتمند است. |\n| Sie **will** die Wahrheit **sagen**. | او ادعا می‌کند حقیقت را می‌گوید. |\n\n**ساختار در گذشته:**\nSubjekt + **will** + ... + **Partizip II** + **haben/sein**\n\n| آلمانی | معنی |\n|--------|------|\n| Er **will** das Geld **gefunden haben**. | او ادعا می‌کند پول را پیدا کرده. |\n| Sie **will** dort **gewesen sein**. | او ادعا می‌کند آنجا بوده. |\n\n**نکته:** این ساختار اغلب در اخبار و گزارش‌های رسمی استفاده می‌شود.",
+      "examples": [
+        { "de": "Der Angeklagte will unschuldig sein.", "fa": "متهم ادعا می‌کند بی‌گناه است. (قاضی شک دارد)" },
+        { "de": "Er will den ganzen Tag gearbeitet haben.", "fa": "او ادعا می‌کند تمام روز کار کرده. (من باور نمی‌کنم)" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "جمله «Er will Arzt sein» در معنای ذهنی چه مفهومی دارد؟",
+      "options": [
+        "او می‌خواهد پزشک شود",
+        "او ادعا می‌کند پزشک است (اما من شک دارم)",
+        "او پزشک خواهد شد",
+        "او باید پزشک باشد"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! wollen در معنای ذهنی نشان‌دهنده ادعایی است که گوینده به آن شک دارد.", "incorrect": "در معنای ذهنی، wollen یعنی «ادعا کردن» و گوینده به این ادعا شک دارد." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "bezweifeln", "fa": "شک کردن، تردید داشتن" },
+      "example": { "text": { "de": "Ich bezweifle, dass er die Wahrheit sagt.", "fa": "من شک دارم که او حقیقت را بگوید." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "einräumen",
+      "translation": "پذیرفتن",
+      "syllables": ["ein", "räu", "men"],
+      "distractors": ["an", "rou", "man"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "فعل مناسب را انتخاب کنید",
+      "sentence": "Der Verdächtige {0} nichts gestohlen haben.",
+      "options": ["will", "mag", "muss", "soll"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "will در معنای ذهنی: مظنون ادعا می‌کند چیزی ندزدیده (اما ما شک داریم)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "ساختار درست را انتخاب کنید",
+      "sentence": "Sie will die ganze Nacht {0}.",
+      "options": ["gearbeitet haben", "arbeiten", "gearbeitet", "arbeitet"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "برای گذشته: will + Partizip II + haben = ادعا می‌کند که... کرده" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "mögen: پذیرش احتمال (Konzession)",
+      "content": "**Mögen = شاید، ممکن است (پذیرش احتمال)**\n\nوقتی از mögen به صورت ذهنی استفاده می‌کنیم:\n- احتمالی را **می‌پذیریم**\n- اما معمولاً **اما/ولی** در ادامه می‌آید\n\n**ساختار در زمان حال:**\nSubjekt + **mag** + ... + **Infinitiv**\n\n| آلمانی | معنی |\n|--------|------|\n| Das **mag** stimmen. | این شاید درست باشد. |\n| Er **mag** recht **haben**. | شاید حق با او باشد. |\n\n**ساختار در گذشته:**\nSubjekt + **mag** + ... + **Partizip II** + **haben/sein**\n\n| آلمانی | معنی |\n|--------|------|\n| Er **mag** das **gesagt haben**. | شاید او این را گفته باشد. |\n| Das **mag** früher **anders gewesen sein**. | شاید قبلاً فرق داشته. |\n\n**کاربرد معمول با aber:**\nDas mag stimmen, **aber** ich bin nicht überzeugt.\n(شاید درست باشد، **اما** من قانع نشدم.)",
+      "examples": [
+        { "de": "Das mag wahr sein, aber es ändert nichts.", "fa": "شاید درست باشد، اما چیزی عوض نمی‌کند." },
+        { "de": "Er mag das Problem erkannt haben, aber er hat nichts getan.", "fa": "شاید مشکل را تشخیص داده باشد، اما کاری نکرده." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "جمله «Das mag stimmen» چه معنایی دارد؟",
+      "options": [
+        "این باید درست باشد",
+        "این قطعاً درست است",
+        "شاید درست باشد (می‌پذیرم این احتمال را)",
+        "این درست نیست"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "درست! mögen در معنای ذهنی نشان‌دهنده پذیرش یک احتمال است.", "incorrect": "mögen در این کاربرد یعنی «شاید» - گوینده احتمال را می‌پذیرد." }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "einräumen", "fa": "پذیرفتن، قبول کردن" },
+      "example": { "text": { "de": "Ich räume ein, dass das möglich ist.", "fa": "می‌پذیرم که این ممکن است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "subjektiv",
+      "translation": "ذهنی",
+      "syllables": ["sub", "jek", "tiv"],
+      "distractors": ["sab", "jak", "tef"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "فعل مناسب را انتخاب کنید",
+      "sentence": "Das {0} richtig sein, aber ich brauche mehr Beweise.",
+      "options": ["mag", "will", "muss", "soll"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "mag برای پذیرش احتمال: شاید درست باشد، اما به شواهد بیشتری نیاز دارم" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "ساختار درست را انتخاب کنید",
+      "sentence": "Er mag das Problem {0}, aber er hat es nicht gelöst.",
+      "options": ["erkannt haben", "erkennen", "erkannt", "erkennt"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "برای گذشته: mag + Partizip II + haben = شاید... کرده باشد" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["will", "Er", "sein", "Arzt"],
+      "correctOrder": [1, 0, 3, 2],
+      "correctSentence": { "de": "Er will Arzt sein", "fa": "او ادعا می‌کند پزشک است" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["mag", "Das", "stimmen"],
+      "correctOrder": [1, 0, 2],
+      "correctSentence": { "de": "Das mag stimmen", "fa": "شاید درست باشد" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["haben", "Sie", "gewusst", "das", "will", "nicht"],
+      "correctOrder": [1, 4, 3, 5, 2, 0],
+      "correctSentence": { "de": "Sie will das nicht gewusst haben", "fa": "او ادعا می‌کند این را نمی‌دانسته" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "وقتی می‌گوییم «Er will reich sein» در معنای ذهنی، یعنی ما به ادعای او شک داریم.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! wollen در معنای ذهنی نشان‌دهنده شک گوینده به ادعای فاعل است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "جمله «Das mag stimmen» نشان می‌دهد که گوینده قطعاً این موضوع را قبول دارد.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! mögen فقط احتمال را می‌پذیرد، نه قطعیت. معمولاً با aber ادامه پیدا می‌کند." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای بیان ادعا در گذشته با wollen، از ساختار «will + Partizip II + haben/sein» استفاده می‌کنیم.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! مثلاً: Er will das gesehen haben = او ادعا می‌کند آن را دیده" }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "die Vermutung", "fa": "گمان، حدس" },
+      "example": { "text": { "de": "Meine Vermutung ist, dass er lügt.", "fa": "گمان من این است که او دروغ می‌گوید." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Konzession",
+      "translation": "پذیرش، امتیاز دادن",
+      "syllables": ["Kon", "zes", "si", "on"],
+      "distractors": ["Kan", "zas", "so", "an"]
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در دادگاه",
+      "scene": {
+        "location": "courtroom",
+        "description": { "de": "Im Gerichtssaal während einer Verhandlung", "fa": "در سالن دادگاه در جریان محاکمه" }
+      },
+      "lines": [
+        { "speaker": "Richter", "text": { "de": "Der Angeklagte will zur Tatzeit zu Hause gewesen sein.", "fa": "متهم ادعا می‌کند در زمان جرم در خانه بوده." }, "mood": "neutral" },
+        { "speaker": "Staatsanwalt", "text": { "de": "Das mag sein, aber wir haben Zeugen, die etwas anderes sagen.", "fa": "شاید همینطور باشد، اما شاهدانی داریم که چیز دیگری می‌گویند." }, "mood": "neutral" },
+        { "speaker": "Verteidiger", "text": { "de": "Mein Mandant will nichts von dem Einbruch gewusst haben.", "fa": "موکل من ادعا می‌کند از سرقت چیزی نمی‌دانسته." }, "mood": "neutral" },
+        { "speaker": "Richter", "text": { "de": "Das mag wahr sein. Haben Sie Beweise?", "fa": "شاید درست باشد. آیا مدرکی دارید؟" }, "mood": "confused" },
+        { "speaker": "Verteidiger", "text": { "de": "Ja, Euer Ehren. Hier ist das Alibi.", "fa": "بله، جناب قاضی. این آلیبی است." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "متهم چه ادعایی دارد؟", "options": ["در خانه بوده", "در محل جرم بوده", "شاهد بوده"], "correctIndex": 0, "explanation": "قاضی گفت: Der Angeklagte will zur Tatzeit zu Hause gewesen sein" },
+        { "question": "دادستان چه واکنشی نشان داد؟", "options": ["کاملاً قبول کرد", "کاملاً رد کرد", "احتمال را پذیرفت اما شواهد مخالف دارد"], "correctIndex": 2, "explanation": "دادستان گفت: Das mag sein, aber wir haben Zeugen - پذیرش با aber" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "فعل مناسب را انتخاب کنید",
+      "sentence": "Die Zeugin {0} den Täter nicht erkannt haben.",
+      "options": ["will", "mag", "muss", "darf"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "will: شاهد ادعا می‌کند مجرم را نشناخته (ما به این ادعا شک داریم)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "فعل مناسب را انتخاب کنید",
+      "sentence": "Das {0} ein Missverständnis gewesen sein, aber es hat Konsequenzen.",
+      "options": ["mag", "will", "muss", "soll"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "mag: شاید سوءتفاهم بوده باشد (پذیرش احتمال)، اما عواقبی دارد" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "بحث در محل کار",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Büro während einer Diskussion über ein Projekt", "fa": "در دفتر در جریان بحث درباره یک پروژه" }
+      },
+      "lines": [
+        { "speaker": "Chef", "text": { "de": "Herr Müller will das Projekt allein abgeschlossen haben.", "fa": "آقای مولر ادعا می‌کند پروژه را به تنهایی تمام کرده." }, "mood": "surprised" },
+        { "speaker": "Kollegin", "text": { "de": "Das mag zum Teil stimmen, aber das Team hat auch viel geholfen.", "fa": "شاید تا حدی درست باشد، اما تیم هم خیلی کمک کرده." }, "mood": "neutral" },
+        { "speaker": "Chef", "text": { "de": "Er will auch am Wochenende gearbeitet haben.", "fa": "او همچنین ادعا می‌کند آخر هفته هم کار کرده." }, "mood": "confused" },
+        { "speaker": "Kollegin", "text": { "de": "Das mag sein. Ich kann es nicht bestätigen.", "fa": "شاید همینطور باشد. من نمی‌توانم تأیید کنم." }, "mood": "neutral" },
+        { "speaker": "Chef", "text": { "de": "Wir brauchen mehr Transparenz im Team.", "fa": "به شفافیت بیشتری در تیم نیاز داریم." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "آقای مولر چه ادعایی دارد؟", "options": ["تیم کمک نکرده", "پروژه را تنها تمام کرده", "آخر هفته استراحت کرده"], "correctIndex": 1, "explanation": "رئیس گفت: Herr Müller will das Projekt allein abgeschlossen haben" },
+        { "question": "همکار چگونه با ادعای کار آخر هفته برخورد کرد؟", "options": ["تأیید کرد", "رد کرد", "احتمال را پذیرفت اما تأیید نکرد"], "correctIndex": 2, "explanation": "همکار گفت: Das mag sein. Ich kann es nicht bestätigen." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "جملات آلمانی را با معنای فارسی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Er will Arzt sein." },
+        { "id": "i2", "text": "Das mag stimmen." },
+        { "id": "i3", "text": "Sie will nichts gesehen haben." },
+        { "id": "i4", "text": "Das mag früher anders gewesen sein." },
+        { "id": "i5", "text": "Er will reich sein." },
+        { "id": "i6", "text": "Sie mag recht haben." }
+      ],
+      "matches": [
+        { "id": "m1", "text": "او ادعا می‌کند پزشک است. (شک)" },
+        { "id": "m2", "text": "شاید درست باشد. (پذیرش)" },
+        { "id": "m3", "text": "او ادعا می‌کند چیزی ندیده. (شک)" },
+        { "id": "m4", "text": "شاید قبلاً فرق داشته. (پذیرش)" },
+        { "id": "m5", "text": "او ادعا می‌کند ثروتمند است. (شک)" },
+        { "id": "m6", "text": "شاید حق با او باشد. (پذیرش)" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "او ادعا می‌کند متخصص است.",
+      "sentenceTemplate": "Er {0} Experte {1}.",
+      "options": ["will", "mag", "sein", "haben"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Er will Experte sein.", "fa": "او ادعا می‌کند متخصص است." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "شاید درست باشد، اما من مطمئن نیستم.",
+      "sentenceTemplate": "Das {0} stimmen, aber ich bin nicht {1}.",
+      "options": ["mag", "will", "sicher", "richtig"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Das mag stimmen, aber ich bin nicht sicher.", "fa": "شاید درست باشد، اما من مطمئن نیستم." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: گزارش خبری",
+      "passage": {
+        "de": "Der Politiker will von dem Skandal nichts gewusst haben. Er behauptet, dass er zur fraglichen Zeit im Urlaub war. Das mag stimmen, aber Journalisten haben Fotos gefunden, die etwas anderes zeigen.\n\nSeine Assistentin will ebenfalls keine Informationen gehabt haben. Das mag glaubwürdig klingen, aber mehrere Zeugen sagen aus, dass sie regelmäßig bei den Treffen dabei war.\n\nDer Fall wird weiter untersucht. Die Wahrheit mag eines Tages ans Licht kommen.",
+        "fa": "سیاستمدار ادعا می‌کند از رسوایی چیزی نمی‌دانسته. او ادعا می‌کند در زمان مورد نظر در تعطیلات بوده. شاید درست باشد، اما روزنامه‌نگاران عکس‌هایی پیدا کرده‌اند که چیز دیگری نشان می‌دهد.\n\nدستیار او نیز ادعا می‌کند اطلاعاتی نداشته. شاید باورپذیر به نظر برسد، اما چندین شاهد اظهار می‌کنند که او مرتباً در جلسات حضور داشته.\n\nپرونده همچنان در دست بررسی است. شاید روزی حقیقت آشکار شود."
+      },
+      "questions": [
+        { "question": "سیاستمدار چه ادعایی دارد؟", "options": ["از رسوایی خبر داشته", "در تعطیلات بوده و نمی‌دانسته", "با روزنامه‌نگاران مصاحبه کرده"], "correctIndex": 1, "explanation": "متن می‌گوید: Der Politiker will von dem Skandal nichts gewusst haben - ادعای بی‌خبری" },
+        { "question": "چرا ادعای دستیار زیر سؤال است؟", "options": ["عکس دارند", "شاهدان او را در جلسات دیده‌اند", "اعتراف کرده"], "correctIndex": 1, "explanation": "متن می‌گوید: mehrere Zeugen sagen aus, dass sie bei den Treffen dabei war" },
+        { "question": "کدام فعل کمکی وجهی برای بیان شک استفاده شده؟", "options": ["mögen", "wollen", "sollen"], "correctIndex": 1, "explanation": "wollen برای ادعاهایی که گوینده به آنها شک دارد: will nichts gewusst haben" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der mysteriöse Zeuge", "fa": "شاهد مرموز" },
+      "characters": ["Kommissar Weber", "Zeuge Hoffmann"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Kommissar Weber verhört einen Zeugen in einem Kriminalfall.", "fa": "کمیسر وبر شاهدی را در یک پرونده جنایی بازجویی می‌کند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Kommissar Weber",
+          "text": { "de": "Herr Hoffmann, Sie wollen den Verdächtigen nicht kennen?", "fa": "آقای هافمن، شما ادعا می‌کنید مظنون را نمی‌شناسید؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Zeuge Hoffmann",
+          "text": { "de": "Ja, ich habe ihn nie gesehen.", "fa": "بله، من هرگز او را ندیده‌ام." },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "کمیسر چگونه ادعای شاهد را بیان کرد؟",
+          "options": ["با mögen (پذیرش)", "با wollen (شک)", "با müssen (اطمینان)"],
+          "correctIndex": 1,
+          "explanation": "کمیسر از wollen استفاده کرد که نشان‌دهنده شک به ادعا است"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Kommissar Weber",
+          "text": { "de": "Das mag sein. Aber Ihre Telefondaten zeigen etwas anderes.", "fa": "شاید همینطور باشد. اما داده‌های تلفن شما چیز دیگری نشان می‌دهد." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Zeuge Hoffmann",
+          "text": { "de": "Ich will davon nichts gewusst haben!", "fa": "من ادعا می‌کنم از آن چیزی نمی‌دانستم!" },
+          "mood": "surprised"
+        },
+        {
+          "type": "question",
+          "question": "کمیسر چگونه با ادعای شاهد برخورد کرد؟",
+          "options": ["کاملاً رد کرد", "کاملاً پذیرفت", "احتمال را پذیرفت اما مدرک مخالف آورد"],
+          "correctIndex": 2,
+          "explanation": "کمیسر گفت Das mag sein (پذیرش احتمال) اما مدرک مخالف (Telefondaten) آورد"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Kommissar Weber",
+          "text": { "de": "Sie mögen unschuldig sein. Aber das muss das Gericht entscheiden.", "fa": "شاید بی‌گناه باشید. اما دادگاه باید تصمیم بگیرد." },
+          "mood": "neutral"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Der Fall bleibt kompliziert. Die Wahrheit ist noch nicht klar.", "fa": "پرونده همچنان پیچیده است. حقیقت هنوز روشن نیست." }
+        },
+        {
+          "type": "question",
+          "question": "چه افعال کمکی وجهی ذهنی در این داستان استفاده شد؟",
+          "options": ["فقط wollen", "فقط mögen", "هم wollen هم mögen"],
+          "correctIndex": 2,
+          "explanation": "هر دو استفاده شد: wollen برای ادعا با شک، mögen برای پذیرش احتمال"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: wollen یا mögen؟",
+      "instruction": "کدام فعل برای این مفهوم مناسب است؟",
+      "questions": [
+        { "prompt": "ادعا کردن (با شک)", "left": "wollen", "right": "mögen", "correctSide": "left" },
+        { "prompt": "پذیرش احتمال", "left": "wollen", "right": "mögen", "correctSide": "right" },
+        { "prompt": "Er ___ Arzt sein (ادعا)", "left": "will", "right": "mag", "correctSide": "left" },
+        { "prompt": "Das ___ stimmen (شاید)", "left": "will", "right": "mag", "correctSide": "right" },
+        { "prompt": "شک گوینده به ادعا", "left": "wollen", "right": "mögen", "correctSide": "left" },
+        { "prompt": "معمولاً با aber می‌آید", "left": "wollen", "right": "mögen", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Er will Arzt sein.",
+      "translation": "او ادعا می‌کند پزشک است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Das mag stimmen, aber ich bin nicht sicher.",
+      "translation": "شاید درست باشد، اما من مطمئن نیستم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Sie will nichts davon gewusst haben.",
+      "translation": "او ادعا می‌کند از آن چیزی نمی‌دانسته."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: افعال ذهنی!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "wollen در معنای ذهنی =", "options": ["ادعا کردن (با شک)", "خواستن"], "correctAnswerIndex": 0 },
+        { "question": "mögen در معنای ذهنی =", "options": ["دوست داشتن", "شاید (پذیرش)"], "correctAnswerIndex": 1 },
+        { "question": "Er will reich sein =", "options": ["می‌خواهد ثروتمند شود", "ادعا می‌کند ثروتمند است"], "correctAnswerIndex": 1 },
+        { "question": "Das mag wahr sein =", "options": ["این درست است", "شاید درست باشد"], "correctAnswerIndex": 1 },
+        { "question": "گذشته با wollen:", "options": ["will + Partizip II + haben", "wollte + Infinitiv"], "correctAnswerIndex": 0 },
+        { "question": "mögen معمولاً با چه کلمه‌ای می‌آید؟", "options": ["und", "aber"], "correctAnswerIndex": 1 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: جملات و معنا",
+      "pairs": [
+        { "de": "Er will Experte sein", "fa": "ادعا می‌کند متخصص است" },
+        { "de": "Das mag richtig sein", "fa": "شاید درست باشد" },
+        { "de": "Sie will das nicht gewusst haben", "fa": "ادعا می‌کند نمی‌دانسته" },
+        { "de": "Er mag recht haben", "fa": "شاید حق با او باشد" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات مربوط به این درس را پیدا کنید",
+      "targetWords": ["wollen", "mögen", "Behauptung", "bezweifeln", "Vermutung", "einräumen"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "wollen (subjektiv)", "fa": "ادعا کردن", "options": ["خواستن", "ادعا کردن (با شک)", "باید", "می‌تواند"], "correctIndex": 1 },
+        { "de": "mögen (subjektiv)", "fa": "شاید", "options": ["دوست داشتن", "شاید (پذیرش احتمال)", "باید", "می‌خواهد"], "correctIndex": 1 },
+        { "de": "die Behauptung", "fa": "ادعا", "options": ["سؤال", "ادعا", "پاسخ", "دلیل"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما معنای ذهنی (epistemic) افعال wollen و mögen را یاد گرفتید!",
+      "keyPoints": [
+        "wollen (ذهنی) = ادعا کردن، وقتی گوینده شک دارد: Er will Arzt sein",
+        "mögen (ذهنی) = شاید، پذیرش احتمال: Das mag stimmen",
+        "برای گذشته با wollen: will + Partizip II + haben/sein",
+        "برای گذشته با mögen: mag + Partizip II + haben/sein",
+        "mögen معمولاً با aber می‌آید: Das mag stimmen, aber...",
+        "این کاربردها در اخبار، دادگاه و گزارش‌های رسمی بسیار متداول است"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "wollen (subjektiv)", "fa": "ادعا کردن (با تردید)" } },
+        { "word": { "de": "mögen (subjektiv)", "fa": "ممکن است، شاید (پذیرش)" } },
+        { "word": { "de": "die Behauptung", "fa": "ادعا، اظهار" } },
+        { "word": { "de": "bezweifeln", "fa": "شک کردن، تردید داشتن" } },
+        { "word": { "de": "einräumen", "fa": "پذیرفتن، قبول کردن" } },
+        { "word": { "de": "die Vermutung", "fa": "گمان، حدس" } }
+      ]
+    }
+  ]
+}
