@@ -8,7 +8,7 @@
 
 **Create B1 lessons - lesson by lesson, wait for user test after each**
 
-Current: `B2-M11` (Konzessivsätze) - **MODULE COMPLETE - READY FOR USER TEST**
+Current: `B2-M12` (Konsekutivsätze) - **MODULE COMPLETE - READY FOR USER TEST**
 
 ---
 
@@ -27,7 +27,7 @@ Current: `B2-M11` (Konzessivsätze) - **MODULE COMPLETE - READY FOR USER TEST**
 | A1 | 14 | 56+ | Complete |
 | A2 | 18 | 72 | **Complete** ✅ |
 | B1 | 20 | 80 | **Complete** ✅ |
-| B2 | 11 | 44 | Module 11 complete |
+| B2 | 12 | 48 | Module 12 complete |
 
 ### A2 Completion (2026-02-05)
 
@@ -318,8 +318,9 @@ Current: `B2-M11` (Konzessivsätze) - **MODULE COMPLETE - READY FOR USER TEST**
 | M09 | Verbalperiphrasen | 4/4 | ✅ Complete |
 | M10 | Modalsätze | 4/4 | ✅ Complete |
 | M11 | Konzessivsätze | 4/4 | ✅ Complete |
+| M12 | Konsekutivsätze | 4/4 | ✅ Complete |
 
-**Total B2: 44 lessons**
+**Total B2: 48 lessons**
 
 ---
 
@@ -441,6 +442,17 @@ Current: `B2-M11` (Konzessivsätze) - **MODULE COMPLETE - READY FOR USER TEST**
 | B2-M11-L02 | trotzdem, dennoch, gleichwohl (nevertheless - adverbs) | ✅ Complete |
 | B2-M11-L03 | wenn auch, selbst wenn, auch wenn (even if) | ✅ Complete |
 | B2-M11-L04 | Zusammenfassung | ✅ Complete |
+
+---
+
+## B2 Module 12: Konsekutivsätze (Consecutive Clauses)
+
+| Lesson | Title | Status |
+|--------|-------|--------|
+| B2-M12-L01 | sodass / so dass (result clause) | ✅ Complete |
+| B2-M12-L02 | so...dass (intensified result) | ✅ Complete |
+| B2-M12-L03 | folglich, infolgedessen, demzufolge (consecutive adverbs) | ✅ Complete |
+| B2-M12-L04 | Zusammenfassung | ✅ Complete |
 
 ---
 

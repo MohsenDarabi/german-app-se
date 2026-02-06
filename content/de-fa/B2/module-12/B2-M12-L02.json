@@ -1,0 +1,514 @@
+{
+  "id": "B2-M12-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Konsekutivsätze: so...dass (Intensivierte Folgesätze)", "fa": "جملات نتیجه‌ای تشدیدی: آنقدر...که" },
+  "description": "یاد بگیرید چگونه با ساختار «so + صفت/قید + dass» نتیجه‌ای تشدیدشده را بیان کنید. این ساختار معادل «آنقدر...که» در فارسی است. همچنین با «solch + اسم + dass» برای اسم‌ها آشنا می‌شوید.",
+  "level": "B2",
+  "module": 12,
+  "lessonNumber": 2,
+  "totalSteps": 45,
+  "estimatedMinutes": 40,
+  "vocabulary": [
+    { "de": "so...dass", "fa": "آنقدر...که (با صفت/قید)", "grammar": { "pos": "conjunction" } },
+    { "de": "solch", "fa": "چنین، این‌چنین (با اسم)", "grammar": { "pos": "pronoun" } },
+    { "de": "derart", "fa": "به طوری، چنان (رسمی)", "grammar": { "pos": "adverb" } },
+    { "de": "dermaßen", "fa": "تا این حد، تا این اندازه", "grammar": { "pos": "adverb" } },
+    { "de": "die Folge", "fa": "نتیجه، پیامد", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "die Intensität", "fa": "شدت، تشدید", "grammar": { "pos": "noun", "gender": "feminine" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "ساختار so...dass چیست؟",
+      "content": "**جملات نتیجه‌ای تشدیدی = Konsekutivsätze mit so...dass**\n\nوقتی می‌خواهید بگویید چیزی **آنقدر** [صفت] بود **که** نتیجه‌ای خاص داشت، از این ساختار استفاده کنید.\n\n**ساختار:**\n```\nSubjekt + Verb + so + Adjektiv/Adverb + , dass + Nebensatz (V-End)\n```\n\n**مثال‌ها:**\n| آلمانی | فارسی |\n|--------|-------|\n| Er war **so** müde, **dass** er sofort einschlief. | **آنقدر** خسته بود **که** فوراً خوابش برد. |\n| Sie singt **so** schön, **dass** alle zuhören. | **آنقدر** زیبا می‌خواند **که** همه گوش می‌دهند. |\n\n**نکته برای فارسی‌زبانان:**\nدر فارسی می‌گوییم «آنقدر...که» یا «چنان...که». این دقیقاً معادل «so...dass» در آلمانی است.",
+      "examples": [
+        { "de": "Das Buch war so spannend, dass ich es nicht weglegen konnte.", "fa": "کتاب آنقدر هیجان‌انگیز بود که نتوانستم زمینش بگذارم." },
+        { "de": "Er sprach so schnell, dass niemand ihn verstand.", "fa": "آنقدر سریع صحبت کرد که هیچ‌کس نفهمید." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "so...dass", "fa": "آنقدر...که (با صفت/قید)" },
+      "example": { "text": { "de": "Es war so kalt, dass der See gefror.", "fa": "آنقدر سرد بود که دریاچه یخ زد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "sodass",
+      "translation": "به طوری که",
+      "syllables": ["so", "dass"],
+      "distractors": ["za", "dos", "doss"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "solch", "fa": "چنین، این‌چنین (با اسم)" },
+      "example": { "text": { "de": "Es war solch ein Lärm, dass ich nicht schlafen konnte.", "fa": "چنین سر و صدایی بود که نتوانستم بخوابم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "solch",
+      "translation": "چنین",
+      "syllables": ["solch"],
+      "distractors": ["selch", "sulch", "salch"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "derart", "fa": "به طوری، چنان (رسمی)" },
+      "example": { "text": { "de": "Er war derart überrascht, dass er kein Wort sagen konnte.", "fa": "چنان متعجب شد که نتوانست یک کلمه هم بگوید." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "derart",
+      "translation": "چنان",
+      "syllables": ["der", "art"],
+      "distractors": ["dar", "ert", "ort"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "جایگاه فعل در جمله dass",
+      "content": "**قانون مهم: فعل در انتهای جمله dass**\n\n«dass» یک حرف ربط فرعی‌ساز است، پس فعل به **انتها** می‌رود.\n\n**ساختار دقیق:**\n```\nHauptsatz: Subject + Verb + so + Adj/Adv\nNebensatz: , dass + Subject + ... + Verb (ENDE)\n```\n\n**مقایسه:**\n| ✅ درست | ❌ غلط |\n|---------|--------|\n| ...dass er sofort **einschlief**. | ...dass er **einschlief** sofort. |\n| ...dass niemand ihn **verstand**. | ...dass niemand **verstand** ihn. |\n\n**با فعل کمکی:**\n- ...dass ich nicht schlafen **konnte**.\n- ...dass er das Buch lesen **wollte**.\n\n**نکته:** در فارسی هم ترتیب کلمات در جمله «که» تغییر می‌کند، اما در آلمانی این قانون سخت‌گیرانه‌تر است.",
+      "examples": [
+        { "de": "Sie war so glücklich, dass sie vor Freude weinte.", "fa": "آنقدر خوشحال بود که از خوشحالی گریه کرد." },
+        { "de": "Der Film war so langweilig, dass viele Zuschauer einschliefen.", "fa": "فیلم آنقدر خسته‌کننده بود که خیلی از تماشاگران خوابشان برد." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "dermaßen", "fa": "تا این حد، تا این اندازه" },
+      "example": { "text": { "de": "Sie war dermaßen wütend, dass sie das Zimmer verließ.", "fa": "تا این حد عصبانی بود که اتاق را ترک کرد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "dermaßen",
+      "translation": "تا این حد",
+      "syllables": ["der", "ma", "ßen"],
+      "distractors": ["dar", "me", "sen"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "die Folge", "fa": "نتیجه، پیامد" },
+      "example": { "text": { "de": "Die Folge war, dass alle Termine verschoben wurden.", "fa": "نتیجه این بود که همه قرارها جابجا شد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "Folge",
+      "translation": "نتیجه",
+      "syllables": ["Fol", "ge"],
+      "distractors": ["Fel", "ga", "go"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "die Intensität", "fa": "شدت، تشدید" },
+      "example": { "text": { "de": "Die Intensität des Sturms war so groß, dass Bäume umfielen.", "fa": "شدت طوفان آنقدر زیاد بود که درخت‌ها افتادند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Intensität",
+      "translation": "شدت",
+      "syllables": ["In", "ten", "si", "tät"],
+      "distractors": ["An", "tan", "so", "tet"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "solch + اسم + dass",
+      "content": "**وقتی می‌خواهید با اسم از این ساختار استفاده کنید:**\n\n**ساختار با solch:**\n```\nEs war solch ein(e) + Nomen + , dass + Nebensatz\n```\n\n**مثال‌ها:**\n| آلمانی | فارسی |\n|--------|-------|\n| Es war **solch ein Lärm**, dass... | **چنان سر و صدایی** بود که... |\n| Es herrschte **solch eine Hitze**, dass... | **چنان گرمایی** حاکم بود که... |\n\n**جایگزین‌ها:**\n- **so ein(e)** (محاوره‌ای): Es war **so ein Chaos**, dass...\n- **solch** (رسمی): Es war **solch ein Chaos**, dass...\n\n**مقایسه با صفت:**\n| با صفت | با اسم |\n|--------|--------|\n| Es war **so** laut, dass... | Es war **solch** ein Lärm, dass... |\n| Der Sturm war **so** stark, dass... | Es war **solch** ein Sturm, dass... |",
+      "examples": [
+        { "de": "Es war solch eine Überraschung, dass alle sprachlos waren.", "fa": "چنان غافلگیری بود که همه مات و مبهوت ماندند." },
+        { "de": "Es herrschte solch eine Stille, dass man eine Nadel fallen hören konnte.", "fa": "چنان سکوتی حاکم بود که می‌شد صدای افتادن سوزن را شنید." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله از نظر گرامری صحیح است؟",
+      "options": [
+        "Er war so müde, dass einschlief er sofort.",
+        "Er war so müde, dass er sofort einschlief.",
+        "Er war müde so, dass er sofort einschlief.",
+        "Er so müde war, dass er sofort einschlief."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! فعل در جمله dass به انتها می‌رود: ...dass er sofort einschlief.", "incorrect": "در جمله dass فعل به انتها می‌رود. ساختار صحیح: ...dass er sofort einschlief." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "برای اسم‌ها از کدام ساختار استفاده می‌کنیم؟",
+      "options": [
+        "so + Nomen + dass",
+        "solch ein(e) + Nomen + dass",
+        "derart + Nomen + dass",
+        "dass + Nomen + so"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "درست! برای اسم‌ها از solch ein(e) استفاده می‌کنیم: Es war solch ein Lärm, dass...", "incorrect": "برای اسم‌ها از solch ein(e) استفاده می‌کنیم، نه so. مثال: Es war solch ein Lärm, dass..." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "sentence": "Das Essen war {0} scharf, dass ich Wasser trinken musste.",
+      "options": ["solch", "so", "weil", "obwohl"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "«so» با صفت استفاده می‌شود: so scharf, dass... (آنقدر تند که...)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Es war {0} ein Gewitter, dass alle Flüge gestrichen wurden.",
+      "options": ["so", "solch", "weil", "damit"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "«solch» با اسم استفاده می‌شود: solch ein Gewitter, dass... (چنان طوفانی که...)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "گزینه مناسب را انتخاب کنید",
+      "sentence": "Sie sprach so leise, {0} niemand sie hören konnte.",
+      "options": ["weil", "obwohl", "dass", "wenn"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "«dass» حرف ربط نتیجه است: so leise, dass... (آنقدر آرام که...)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Der Film war so langweilig, dass ich {0}.",
+      "options": ["eingeschlafen bin", "einschlafe bin", "bin eingeschlafen", "schlafen ein"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "در جمله dass فعل کمکی به انتها می‌رود: ...dass ich eingeschlafen bin." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "sentence": "Er war {0} überrascht, dass er kein Wort sagen konnte.",
+      "options": ["derart", "obwohl", "weil", "damit"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "«derart» معادل رسمی «so» است: derart überrascht, dass... (چنان متعجب که...)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Die Prüfung war {0} schwer, dass die Hälfte der Studenten durchfiel.",
+      "options": ["weil", "dermaßen", "obwohl", "dass"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "«dermaßen» یعنی «تا این حد»: dermaßen schwer, dass... (تا این حد سخت که...)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "گفتگو: کنسرت دیشب",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Zwei Kollegen sprechen über ein Konzert.", "fa": "دو همکار درباره یک کنسرت صحبت می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Maria", "text": { "de": "Wie war das Konzert gestern?", "fa": "کنسرت دیشب چطور بود؟" }, "mood": "neutral" },
+        { "speaker": "Klaus", "text": { "de": "Es war so laut, dass ich heute noch Ohrenschmerzen habe!", "fa": "آنقدر بلند بود که هنوز گوشم درد می‌کند!" }, "mood": "surprised" },
+        { "speaker": "Maria", "text": { "de": "Oh je! Und die Musik?", "fa": "اوه! و موسیقی چطور بود؟" }, "mood": "confused" },
+        { "speaker": "Klaus", "text": { "de": "Die Band war so gut, dass alle getanzt haben.", "fa": "گروه آنقدر خوب بود که همه رقصیدند." }, "mood": "excited" },
+        { "speaker": "Maria", "text": { "de": "Es herrschte also solch eine Stimmung, dass es unvergesslich war?", "fa": "پس چنان فضایی بود که فراموش‌نشدنی شد؟" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "کلاوس چه ساختاری برای توصیف صدای بلند استفاده کرد؟", "options": ["weil...deshalb", "so...dass", "obwohl...trotzdem"], "correctIndex": 1, "explanation": "کلاوس گفت: «Es war so laut, dass ich heute noch Ohrenschmerzen habe.»" },
+        { "question": "ماریا برای توصیف فضا از چه کلمه‌ای استفاده کرد؟", "options": ["so", "solch", "weil"], "correctIndex": 1, "explanation": "ماریا گفت: «solch eine Stimmung» چون بعد از آن اسم آمده." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["war", "so", "Er", "dass", "müde", "einschlief", "er", "sofort"],
+      "correctOrder": [2, 0, 1, 4, 3, 6, 7, 5],
+      "correctSentence": { "de": "Er war so müde, dass er sofort einschlief.", "fa": "آنقدر خسته بود که فوراً خوابش برد." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["schnell", "so", "fuhr", "Sie", "dass", "bekam", "einen Strafzettel", "sie"],
+      "correctOrder": [3, 2, 1, 0, 4, 7, 6, 5],
+      "correctSentence": { "de": "Sie fuhr so schnell, dass sie einen Strafzettel bekam.", "fa": "آنقدر تند رانندگی کرد که جریمه خورد." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["solch", "Es", "ein Chaos", "war", "dass", "niemand", "wusste", "was zu tun ist"],
+      "correctOrder": [1, 3, 0, 2, 4, 5, 7, 6],
+      "correctSentence": { "de": "Es war solch ein Chaos, dass niemand was zu tun ist wusste.", "fa": "چنان هرج و مرجی بود که کسی نمی‌دانست چه کار کند." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جمله «so...dass» فعل جمله dass به انتها می‌رود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! dass حرف ربط فرعی‌ساز است و فعل را به انتها می‌برد." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای اسم‌ها از «so ein» به جای «solch ein» استفاده می‌کنیم.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "هر دو ممکن است! «so ein» محاوره‌ای‌تر و «solch ein» رسمی‌تر است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "«derart» و «dermaßen» معادل‌های رسمی‌تر «so» هستند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! هر دو کلمه در متون رسمی و ادبی به جای «so» استفاده می‌شوند." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "گفتگوی دانشگاهی",
+      "scene": {
+        "location": "university",
+        "description": { "de": "Zwei Studenten besprechen die Prüfungsergebnisse.", "fa": "دو دانشجو درباره نتایج امتحان صحبت می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Hast du die Ergebnisse gesehen?", "fa": "نتایج رو دیدی؟" }, "mood": "neutral" },
+        { "speaker": "Max", "text": { "de": "Ja! Die Prüfung war derart schwer, dass 70% durchgefallen sind.", "fa": "آره! امتحان چنان سخت بود که ۷۰٪ رد شدند." }, "mood": "surprised" },
+        { "speaker": "Lisa", "text": { "de": "Es herrschte solch eine Panik, dass einige früher gegangen sind.", "fa": "چنان ترسی حاکم بود که بعضی‌ها زودتر رفتند." }, "mood": "sad" },
+        { "speaker": "Max", "text": { "de": "Der Professor hat so schnell geredet, dass ich nichts verstanden habe.", "fa": "استاد آنقدر سریع حرف زد که هیچی نفهمیدم." }, "mood": "confused" },
+        { "speaker": "Lisa", "text": { "de": "Hoffentlich wird die Nachprüfung einfacher!", "fa": "امیدوارم امتحان مجدد آسان‌تر باشه!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "ماکس از کدام ساختار تشدیدی رسمی استفاده کرد؟", "options": ["so...dass", "derart...dass", "solch...dass"], "correctIndex": 1, "explanation": "ماکس گفت: «Die Prüfung war derart schwer, dass...» که رسمی‌تر از so است." },
+        { "question": "لیزا برای توصیف «ترس» از چه ساختاری استفاده کرد؟", "options": ["so eine Panik", "solch eine Panik", "derart Panik"], "correctIndex": 1, "explanation": "لیزا گفت: «solch eine Panik» چون بعد از آن اسم آمده." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "کلمات را با معانی درست جفت کنید",
+      "items": [
+        { "id": "i1", "text": "so...dass" },
+        { "id": "i2", "text": "solch ein(e)" },
+        { "id": "i3", "text": "derart" },
+        { "id": "i4", "text": "dermaßen" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "آنقدر...که (با صفت/قید)" },
+        { "id": "m2", "text": "چنین (با اسم)" },
+        { "id": "m3", "text": "چنان (رسمی)" },
+        { "id": "m4", "text": "تا این حد" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "آنقدر خسته بود که فوراً خوابش برد.",
+      "sentenceTemplate": "Er war {0} müde, {1} er sofort einschlief.",
+      "options": ["so", "dass", "weil", "obwohl"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Er war so müde, dass er sofort einschlief.", "fa": "آنقدر خسته بود که فوراً خوابش برد." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "چنان سر و صدایی بود که نتوانستم بخوابم.",
+      "sentenceTemplate": "Es war {0} ein Lärm, {1} ich nicht schlafen konnte.",
+      "options": ["solch", "dass", "so", "weil"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Es war solch ein Lärm, dass ich nicht schlafen konnte.", "fa": "چنان سر و صدایی بود که نتوانستم بخوابم." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: گزارش آب و هوا",
+      "passage": {
+        "de": "Extremwetter in Deutschland\n\nDie Temperaturen waren gestern so hoch, dass mehrere Hitzerekorde gebrochen wurden. In München war es derart heiß, dass die Schwimmbäder überfüllt waren.\n\nEs herrschte solch eine Dürre, dass die Bauern um ihre Ernte fürchteten. Die Meteorologen warnen: Der Sommer wird dermaßen trocken, dass Wasserknappheit droht.\n\nDie Intensität der Hitzewelle war so stark, dass viele Menschen gesundheitliche Probleme bekamen. Die Folge: Die Krankenhäuser meldeten einen Anstieg der Notfälle.",
+        "fa": "هوای شدید در آلمان\n\nدماها دیروز آنقدر بالا بود که چندین رکورد گرما شکسته شد. در مونیخ چنان گرم بود که استخرها پر شده بودند.\n\nچنان خشکسالی حاکم بود که کشاورزان نگران محصولشان بودند. هواشناسان هشدار می‌دهند: تابستان تا این حد خشک خواهد بود که کمبود آب تهدید می‌کند.\n\nشدت موج گرما آنقدر زیاد بود که بسیاری از مردم مشکلات سلامتی پیدا کردند. نتیجه: بیمارستان‌ها افزایش موارد اورژانسی را گزارش کردند."
+      },
+      "questions": [
+        { "question": "چرا استخرها پر بودند؟", "options": ["چون تعطیلات بود", "چون آنقدر گرم بود", "چون ارزان بودند"], "correctIndex": 1, "explanation": "متن می‌گوید: «Es war derart heiß, dass die Schwimmbäder überfüllt waren.»" },
+        { "question": "کدام ساختار برای توصیف خشکسالی استفاده شد؟", "options": ["so...dass", "solch eine...dass", "weil...deshalb"], "correctIndex": 1, "explanation": "«Es herrschte solch eine Dürre, dass...» - برای اسم از solch استفاده شد." },
+        { "question": "نتیجه (die Folge) موج گرما چه بود؟", "options": ["کمبود آب", "افزایش موارد اورژانسی", "تعطیلی مدارس"], "correctIndex": 1, "explanation": "«Die Folge: Die Krankenhäuser meldeten einen Anstieg der Notfälle.»" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der perfekte Urlaub", "fa": "تعطیلات عالی" },
+      "characters": ["Anna", "Tom"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Anna und Tom sind gerade aus dem Urlaub zurückgekehrt.", "fa": "آنا و تام تازه از تعطیلات برگشته‌اند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Das Hotel war so schön, dass ich gar nicht mehr weg wollte!", "fa": "هتل آنقدر زیبا بود که اصلاً نمی‌خواستم بروم!" },
+          "mood": "excited"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Tom",
+          "text": { "de": "Und das Essen war derart lecker, dass ich fünf Kilo zugenommen habe!", "fa": "و غذا چنان خوشمزه بود که پنج کیلو اضافه کردم!" },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "تام از کدام ساختار تشدیدی استفاده کرد؟",
+          "options": ["so...dass", "derart...dass", "solch...dass"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: «derart lecker, dass...» که رسمی‌تر از so است."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Es herrschte solch eine Ruhe, dass ich endlich richtig schlafen konnte.", "fa": "چنان آرامشی حاکم بود که بالاخره توانستم درست بخوابم." },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Tom",
+          "text": { "de": "Wir haben so viel erlebt, dass ich alles vergessen habe!", "fa": "آنقدر چیز تجربه کردیم که همه چیز یادم رفته!" },
+          "mood": "confused"
+        },
+        {
+          "type": "question",
+          "question": "آنا برای توصیف «آرامش» از چه ساختاری استفاده کرد؟",
+          "options": ["so eine Ruhe", "solch eine Ruhe", "derart Ruhe"],
+          "correctIndex": 1,
+          "explanation": "آنا گفت: «solch eine Ruhe» چون بعد از آن اسم (Ruhe) آمده."
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Sie beschlossen, nächstes Jahr wieder dorthin zu fahren.", "fa": "تصمیم گرفتند سال آینده دوباره به آنجا بروند." }
+        },
+        {
+          "type": "question",
+          "question": "چه ساختارهایی در این داستان استفاده شد؟",
+          "options": ["فقط so...dass", "so...dass و derart...dass و solch...dass", "فقط weil...deshalb"],
+          "correctIndex": 1,
+          "explanation": "هر سه ساختار استفاده شد: so...dass، derart...dass، و solch...dass."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: کدام ساختار؟",
+      "instruction": "برای صفت یا اسم کدام درست است؟",
+      "questions": [
+        { "prompt": "müde (صفت)", "left": "so...dass", "right": "solch...dass", "correctSide": "left" },
+        { "prompt": "ein Lärm (اسم)", "left": "so...dass", "right": "solch...dass", "correctSide": "right" },
+        { "prompt": "schön (صفت)", "left": "so...dass", "right": "solch...dass", "correctSide": "left" },
+        { "prompt": "eine Hitze (اسم)", "left": "so...dass", "right": "solch...dass", "correctSide": "right" },
+        { "prompt": "schnell (قید)", "left": "so...dass", "right": "solch...dass", "correctSide": "left" },
+        { "prompt": "ein Chaos (اسم)", "left": "so...dass", "right": "solch...dass", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Er war so müde, dass er sofort einschlief.",
+      "translation": "آنقدر خسته بود که فوراً خوابش برد."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Das Essen war so scharf, dass ich viel Wasser trank.",
+      "translation": "غذا آنقدر تند بود که خیلی آب خوردم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Es war solch ein Lärm, dass niemand schlafen konnte.",
+      "translation": "چنان سر و صدایی بود که کسی نتوانست بخوابد."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: جملات نتیجه‌ای",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "so...dass = ?", "options": ["آنقدر...که", "چون"], "correctAnswerIndex": 0 },
+        { "question": "برای اسم چه استفاده می‌کنیم؟", "options": ["so", "solch"], "correctAnswerIndex": 1 },
+        { "question": "فعل در جمله dass کجاست؟", "options": ["انتها", "جایگاه دوم"], "correctAnswerIndex": 0 },
+        { "question": "derart = ?", "options": ["چنان (رسمی)", "چون"], "correctAnswerIndex": 0 },
+        { "question": "die Folge = ?", "options": ["نتیجه", "علت"], "correctAnswerIndex": 0 },
+        { "question": "dermaßen = ?", "options": ["تا این حد", "بعداً"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: ساختارها و معانی",
+      "pairs": [
+        { "de": "so...dass", "fa": "آنقدر...که (صفت)" },
+        { "de": "solch ein(e)", "fa": "چنین (اسم)" },
+        { "de": "derart", "fa": "چنان (رسمی)" },
+        { "de": "dermaßen", "fa": "تا این حد" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات کلیدی",
+      "instruction": "کلمات این درس را پیدا کنید",
+      "targetWords": ["SODASS", "SOLCH", "DERART", "FOLGE", "INTENSITÄT"],
+      "gridSize": { "rows": 10, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "so...dass", "fa": "آنقدر...که", "options": ["چون", "آنقدر...که", "با اینکه", "قبل از"], "correctIndex": 1 },
+        { "de": "die Folge", "fa": "نتیجه", "options": ["علت", "نتیجه", "شروع", "پایان"], "correctIndex": 1 },
+        { "de": "dermaßen", "fa": "تا این حد", "options": ["بعداً", "تا این حد", "قبلاً", "همیشه"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما ساختار جملات نتیجه‌ای تشدیدی «so...dass» را یاد گرفتید!",
+      "keyPoints": [
+        "so + صفت/قید + dass = آنقدر...که (نتیجه تشدیدی)",
+        "solch ein(e) + اسم + dass = چنین...که (برای اسم‌ها)",
+        "derart و dermaßen = جایگزین‌های رسمی so",
+        "در جمله dass فعل به انتها می‌رود (V-End)",
+        "مثال: Er war so müde, dass er einschlief.",
+        "مثال: Es war solch ein Lärm, dass niemand schlief."
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "so...dass", "fa": "آنقدر...که (با صفت/قید)" } },
+        { "word": { "de": "solch", "fa": "چنین، این‌چنین (با اسم)" } },
+        { "word": { "de": "derart", "fa": "به طوری، چنان (رسمی)" } },
+        { "word": { "de": "dermaßen", "fa": "تا این حد، تا این اندازه" } },
+        { "word": { "de": "die Folge", "fa": "نتیجه، پیامد" } },
+        { "word": { "de": "die Intensität", "fa": "شدت، تشدید" } }
+      ]
+    }
+  ]
+}

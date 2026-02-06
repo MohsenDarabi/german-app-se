@@ -1,0 +1,531 @@
+{
+  "id": "B2-M12-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Konsekutivsätze: Zusammenfassung", "fa": "جملات نتیجه‌ای: جمع‌بندی" },
+  "description": "مرور جامع تمام عبارات نتیجه‌ای در آلمانی: حرف ربط تبعی sodass/so dass (فعل آخر)، ساختار so + صفت/قید + dass (نتیجه تشدیدی)، و قیدهای نتیجه‌ای folglich, infolgedessen, demzufolge, somit (جایگاه V2). تمرکز بر تفاوت بین نتیجه (sodass) و هدف (damit)، تفاوت ترتیب کلمات، و سطوح رسمیت.",
+  "level": "B2",
+  "module": 12,
+  "lessonNumber": 4,
+  "totalSteps": 45,
+  "estimatedMinutes": 45,
+  "vocabulary": [
+    { "de": "der Konsekutivsatz", "fa": "جمله نتیجه‌ای", "grammar": { "pos": "noun", "gender": "masculine" } },
+    { "de": "die Folge", "fa": "نتیجه، پیامد", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "die Konsequenz", "fa": "نتیجه، عاقبت", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "folglich", "fa": "بنابراین، در نتیجه", "grammar": { "pos": "adverb" } },
+    { "de": "infolgedessen", "fa": "در نتیجه این (رسمی)", "grammar": { "pos": "adverb" } },
+    { "de": "demzufolge", "fa": "بر اساس این، بنابراین", "grammar": { "pos": "adverb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "مرور کلی: جملات نتیجه‌ای در آلمانی",
+      "content": "**Konsekutivsätze = جملات نتیجه‌ای**\n\nجملات نتیجه‌ای نشان می‌دهند که یک عمل **نتیجه یا پیامد** عمل دیگری است. در این ماژول سه دسته یاد گرفتیم:\n\n**1. حرف ربط تبعی (فعل در آخر):**\n- **sodass / so dass** = به طوری که، طوری که\n\n**2. ساختار تشدیدی (so + صفت/قید + dass):**\n- **so müde, dass...** = آنقدر خسته که...\n- **so schnell, dass...** = آنقدر سریع که...\n\n**3. قیدهای نتیجه‌ای (فعل در جایگاه دوم V2):**\n- **folglich** = بنابراین (رایج)\n- **infolgedessen** = در نتیجه این (رسمی)\n- **demzufolge** = بر اساس این (رسمی)\n- **somit** = بنابراین، پس\n\n**تفاوت کلیدی:**\n- حرف ربط تبعی → فعل **آخر** جمله فرعی\n- قیدها → فعل **جایگاه دوم** (V2)",
+      "examples": [
+        { "de": "Er arbeitete hart, sodass er erfolgreich wurde. (فعل در آخر)", "fa": "او سخت کار کرد، به طوری که موفق شد." },
+        { "de": "Er war so müde, dass er sofort einschlief. (تشدیدی)", "fa": "او آنقدر خسته بود که فوراً خوابش برد." },
+        { "de": "Es regnete. Folglich blieben wir zu Hause. (V2)", "fa": "باران می‌بارید. بنابراین در خانه ماندیم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "der Konsekutivsatz", "fa": "جمله نتیجه‌ای" },
+      "example": { "text": { "de": "Ein Konsekutivsatz drückt eine Folge oder ein Ergebnis aus.", "fa": "یک جمله نتیجه‌ای یک پیامد یا نتیجه را بیان می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Konsekutivsatz",
+      "translation": "جمله نتیجه‌ای",
+      "syllables": ["Kon", "se", "ku", "tiv", "satz"],
+      "distractors": ["Kan", "so", "ka", "taf"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "die Folge", "fa": "نتیجه، پیامد" },
+      "example": { "text": { "de": "Als Folge seiner Entscheidung verlor er seinen Job.", "fa": "در نتیجه تصمیمش، شغلش را از دست داد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Folge",
+      "translation": "نتیجه، پیامد",
+      "syllables": ["Fol", "ge"],
+      "distractors": ["Fal", "ga", "go", "Fel"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "die Konsequenz", "fa": "نتیجه، عاقبت" },
+      "example": { "text": { "de": "Jede Handlung hat ihre Konsequenzen.", "fa": "هر عملی عاقبت خود را دارد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Konsequenz",
+      "translation": "نتیجه، عاقبت",
+      "syllables": ["Kon", "se", "quenz"],
+      "distractors": ["Kan", "so", "kwenz", "quanz"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "حرف ربط sodass/so dass: نتیجه ساده",
+      "content": "**sodass / so dass = به طوری که**\n\n**ساختار:**\n- جمله اصلی + **sodass** + فاعل + ... + **فعل (آخر)**\n\n**دو نوشتار:**\n| نوشتار | کاربرد |\n|--------|--------|\n| **sodass** | رایج‌تر، یکپارچه |\n| **so dass** | قدیمی‌تر، جداگانه |\n\n**مثال‌ها:**\n- Er sprach laut, **sodass** alle ihn **hören konnten**.\n- Sie trainierte hart, **so dass** sie den Marathon **schaffte**.\n\n**تفاوت با damit (هدف):**\n| sodass (نتیجه) | damit (هدف) |\n|----------------|-------------|\n| نتیجه واقعی | هدف/قصد |\n| اتفاق افتاده | می‌خواهیم اتفاق بیفتد |\n\n**مثال:**\n- Er sprach laut, **sodass** alle ihn hörten. (نتیجه: شنیدند)\n- Er sprach laut, **damit** alle ihn hören. (هدف: بشنوند)",
+      "examples": [
+        { "de": "Es regnete stark, sodass die Straßen überflutet wurden.", "fa": "باران شدید بارید، به طوری که خیابان‌ها سیل زده شدند." },
+        { "de": "Sie war krank, sodass sie nicht zur Arbeit gehen konnte.", "fa": "او مریض بود، به طوری که نتوانست سر کار برود." },
+        { "de": "Der Lärm war so laut, dass ich nicht schlafen konnte.", "fa": "سر و صدا آنقدر بلند بود که نتوانستم بخوابم." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله نتیجه واقعی (نه هدف) را بیان می‌کند؟",
+      "options": [
+        "Er lernte fleißig, damit er die Prüfung besteht.",
+        "Er lernte fleißig, sodass er die Prüfung bestand.",
+        "Er lernte fleißig, um die Prüfung zu bestehen.",
+        "Er lernte fleißig, weil er die Prüfung bestehen wollte."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! sodass نتیجه واقعی را بیان می‌کند (امتحان را قبول شد).", "incorrect": "sodass = نتیجه واقعی. damit/um...zu = هدف/قصد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "حرف ربط مناسب را انتخاب کنید (نتیجه واقعی)",
+      "sentence": "Er trainierte jeden Tag, {0} er die Meisterschaft gewann.",
+      "options": ["damit", "sodass", "weil", "obwohl"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "sodass = به طوری که (نتیجه واقعی). او هر روز تمرین کرد و در نتیجه مسابقات را برد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "حرف ربط مناسب را انتخاب کنید (هدف)",
+      "sentence": "Er trainiert jeden Tag, {0} er die Meisterschaft gewinnt.",
+      "options": ["sodass", "damit", "folglich", "infolgedessen"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "damit = تا اینکه (هدف). او هر روز تمرین می‌کند تا مسابقات را ببرد." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "folglich", "fa": "بنابراین، در نتیجه" },
+      "example": { "text": { "de": "Er hat nicht gelernt. Folglich ist er durchgefallen.", "fa": "او درس نخوانده بود. بنابراین رد شد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "folglich",
+      "translation": "بنابراین",
+      "syllables": ["folg", "lich"],
+      "distractors": ["falg", "lech", "fulg", "loch"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "قیدهای نتیجه‌ای: folglich, infolgedessen, demzufolge, somit",
+      "content": "**قیدهای نتیجه‌ای = Konsekutive Adverbien**\n\nاین‌ها **قید** هستند، نه حرف ربط! پس فعل در **جایگاه دوم (V2)**.\n\n| قید | معنی | سطح |\n|-----|------|-----|\n| **folglich** | بنابراین | خنثی |\n| **somit** | بنابراین، پس | خنثی |\n| **demzufolge** | بر اساس این | رسمی |\n| **infolgedessen** | در نتیجه این | بسیار رسمی |\n\n**ساختار:**\n- جمله اول. **قید** + **فعل** + فاعل + ...\n\n**مقایسه با حرف ربط:**\n| حرف ربط (آخر) | قید (V2) |\n|---------------|----------|\n| ..., sodass er kam. | Er kam. Folglich ... |\n| فعل در آخر جمله فرعی | فعل بعد از قید |\n\n**نکته مهم:**\nقیدها دو جمله مستقل را به هم وصل می‌کنند، حرف ربط یک جمله فرعی می‌سازد.",
+      "examples": [
+        { "de": "Es war spät. Folglich gingen wir nach Hause.", "fa": "دیر بود. بنابراین به خانه رفتیم." },
+        { "de": "Die Straße war gesperrt. Infolgedessen mussten wir umfahren.", "fa": "خیابان بسته بود. در نتیجه این مجبور شدیم دور بزنیم." },
+        { "de": "Er hat gelogen. Demzufolge vertraue ich ihm nicht mehr.", "fa": "او دروغ گفته بود. بر اساس این دیگر به او اعتماد نمی‌کنم." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله از نظر ترتیب کلمات با قید «folglich» صحیح است؟",
+      "options": [
+        "Es regnete. Folglich wir blieben zu Hause.",
+        "Es regnete. Folglich blieben wir zu Hause.",
+        "Es regnete, folglich blieben wir zu Hause.",
+        "Es regnete folglich wir blieben zu Hause."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "درست! بعد از قید (folglich) فعل در جایگاه دوم قرار می‌گیرد.", "incorrect": "قیدها (folglich, somit) ترتیب V2 دارند: قید + فعل + فاعل." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "قید مناسب را انتخاب کنید (متن رسمی)",
+      "sentence": "Die Verhandlungen scheiterten. {0} wurde das Projekt abgesagt.",
+      "options": ["folglich", "infolgedessen", "sodass", "damit"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "infolgedessen = در نتیجه این (بسیار رسمی). برای متون رسمی و حقوقی مناسب است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "قید مناسب را انتخاب کنید (محاوره‌ای)",
+      "sentence": "Ich hatte Kopfschmerzen. {0} bin ich früher gegangen.",
+      "options": ["infolgedessen", "demzufolge", "somit", "obwohl"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "somit = بنابراین، پس (خنثی). برای مکالمه روزمره مناسب است." }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "infolgedessen", "fa": "در نتیجه این (رسمی)" },
+      "example": { "text": { "de": "Die Kosten stiegen. Infolgedessen musste das Budget erhöht werden.", "fa": "هزینه‌ها افزایش یافت. در نتیجه این بودجه باید افزایش می‌یافت." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "infolgedessen",
+      "translation": "در نتیجه این",
+      "syllables": ["in", "fol", "ge", "des", "sen"],
+      "distractors": ["an", "ful", "ga", "das"]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "demzufolge", "fa": "بر اساس این، بنابراین" },
+      "example": { "text": { "de": "Laut dem Bericht war er schuldig. Demzufolge wurde er verurteilt.", "fa": "طبق گزارش او مقصر بود. بر اساس این محکوم شد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "demzufolge",
+      "translation": "بر اساس این",
+      "syllables": ["dem", "zu", "fol", "ge"],
+      "distractors": ["dam", "zo", "ful", "ga"]
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "بحث درباره پروژه شرکت",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Büro, Projektbesprechung", "fa": "در دفتر، جلسه پروژه" }
+      },
+      "lines": [
+        { "speaker": "Frau Weber", "text": { "de": "Das Budget wurde gekürzt, sodass wir einige Funktionen streichen mussten.", "fa": "بودجه کاهش یافت، به طوری که مجبور شدیم برخی امکانات را حذف کنیم." }, "mood": "neutral" },
+        { "speaker": "Herr Bauer", "text": { "de": "Ja, infolgedessen haben wir auch die Deadline verschoben.", "fa": "بله، در نتیجه این ددلاین را هم عقب انداختیم." }, "mood": "neutral" },
+        { "speaker": "Frau Weber", "text": { "de": "Der Kunde war so unzufrieden, dass er fast den Vertrag gekündigt hat.", "fa": "مشتری آنقدر ناراضی بود که تقریباً قرارداد را لغو کرد." }, "mood": "sad" },
+        { "speaker": "Herr Bauer", "text": { "de": "Folglich müssen wir die Qualität verbessern, damit er zufrieden ist.", "fa": "بنابراین باید کیفیت را بهبود دهیم تا راضی باشد." }, "mood": "neutral" },
+        { "speaker": "Frau Weber", "text": { "de": "Somit ist klar: Wir brauchen mehr Ressourcen.", "fa": "بنابراین واضح است: ما به منابع بیشتری نیاز داریم." }, "mood": "excited" }
+      ],
+      "questions": [
+        { "question": "خانم وبر با «sodass» چه می‌گوید؟", "options": ["بودجه افزایش یافت", "به دلیل کاهش بودجه امکانات حذف شد", "همه چیز خوب است"], "correctIndex": 1, "explanation": "sodass = به طوری که (نتیجه). کاهش بودجه منجر به حذف امکانات شد." },
+        { "question": "آقای باور با «infolgedessen» چه می‌گوید؟", "options": ["ددلاین زودتر شد", "در نتیجه ددلاین عقب افتاد", "ددلاین تغییر نکرد"], "correctIndex": 1, "explanation": "infolgedessen = در نتیجه این. ددلاین عقب انداخته شد." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را مرتب کنید (sodass - فعل آخر)",
+      "words": ["nicht kommen", "krank war,", "Er war so", "dass er", "konnte"],
+      "correctOrder": [2, 1, 3, 0, 4],
+      "correctSentence": { "de": "Er war so krank, dass er nicht kommen konnte.", "fa": "او آنقدر مریض بود که نتوانست بیاید." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را مرتب کنید (folglich - V2)",
+      "words": ["Folglich", "Es war kalt.", "eine Jacke", "zog ich", "an"],
+      "correctOrder": [1, 0, 3, 2, 4],
+      "correctSentence": { "de": "Es war kalt. Folglich zog ich eine Jacke an.", "fa": "هوا سرد بود. بنابراین ژاکت پوشیدم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله را مرتب کنید (so + صفت + dass)",
+      "words": ["dass alle", "interessant,", "Der Film war so", "ihn empfahlen"],
+      "correctOrder": [2, 1, 0, 3],
+      "correctSentence": { "de": "Der Film war so interessant, dass alle ihn empfahlen.", "fa": "فیلم آنقدر جالب بود که همه آن را توصیه کردند." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "بعد از «sodass» فعل در آخر جمله فرعی قرار می‌گیرد.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! sodass حرف ربط تبعی است و فعل را به آخر می‌برد." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "«folglich» و «sodass» هر دو ترتیب کلمات یکسانی دارند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! sodass حرف ربط است (فعل آخر)، ولی folglich قید است (فعل V2)." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "«damit» هدف را بیان می‌کند، ولی «sodass» نتیجه واقعی را.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! damit = تا اینکه (هدف/قصد)، sodass = به طوری که (نتیجه واقعی)." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "ساختار تشدیدی مناسب را انتخاب کنید",
+      "sentence": "Das Buch war {0} spannend, {1} ich es in einer Nacht las.",
+      "options": ["so", "dass", "sodass", "damit"],
+      "correctAnswers": [0, 1],
+      "feedback": { "explanation": "so + صفت + dass = آنقدر ... که. کتاب آنقدر هیجان‌انگیز بود که در یک شب خواندم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "قید رسمی مناسب را انتخاب کنید",
+      "sentence": "Die Studie enthielt Fehler. {0} wurden die Ergebnisse angezweifelt.",
+      "options": ["somit", "demzufolge", "sodass", "obwohl"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "demzufolge = بر اساس این (رسمی). در متون علمی برای بیان نتیجه منطقی استفاده می‌شود." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "گفتگو درباره آب و هوا",
+      "scene": {
+        "location": "park",
+        "description": { "de": "Im Park, Gespräch zwischen Freunden", "fa": "در پارک، گفتگو بین دوستان" }
+      },
+      "lines": [
+        { "speaker": "Lena", "text": { "de": "Es hat so stark geregnet, dass der Fluss über die Ufer getreten ist.", "fa": "آنقدر شدید باران بارید که رودخانه از کناره‌هایش سرریز شد." }, "mood": "surprised" },
+        { "speaker": "Paul", "text": { "de": "Ja, infolgedessen wurden mehrere Straßen gesperrt.", "fa": "بله، در نتیجه این چندین خیابان بسته شد." }, "mood": "neutral" },
+        { "speaker": "Lena", "text": { "de": "Folglich konnte ich gestern nicht zur Arbeit fahren.", "fa": "بنابراین دیروز نتوانستم سر کار بروم." }, "mood": "sad" },
+        { "speaker": "Paul", "text": { "de": "Der Wetterbericht sagte Regen voraus, sodass ich zu Hause geblieben bin.", "fa": "پیش‌بینی هوا باران گفته بود، به طوری که در خانه ماندم." }, "mood": "happy" },
+        { "speaker": "Lena", "text": { "de": "Somit warst du klüger als ich!", "fa": "بنابراین تو از من باهوش‌تر بودی!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "لنا با «so stark ... dass» چه می‌گوید؟", "options": ["باران کم بود", "باران آنقدر شدید بود که رودخانه سرریز شد", "هوا آفتابی بود"], "correctIndex": 1, "explanation": "so + صفت + dass = آنقدر ... که. باران شدید باعث سرریز شدن رودخانه شد." },
+        { "question": "پاول با «sodass» چه نتیجه‌ای را بیان می‌کند؟", "options": ["به دلیل پیش‌بینی هوا در خانه ماند", "سر کار رفت", "باران را دوست داشت"], "correctIndex": 0, "explanation": "sodass = به طوری که. پیش‌بینی باران نتیجه‌اش این بود که در خانه ماند." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "ساختار را با نوع و سطح رسمیت جفت کنید",
+      "items": [
+        { "id": "i1", "text": "sodass" },
+        { "id": "i2", "text": "so + Adj + dass" },
+        { "id": "i3", "text": "folglich" },
+        { "id": "i4", "text": "somit" },
+        { "id": "i5", "text": "infolgedessen" },
+        { "id": "i6", "text": "demzufolge" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "حرف ربط: نتیجه ساده" },
+        { "id": "m2", "text": "حرف ربط: نتیجه تشدیدی" },
+        { "id": "m3", "text": "قید: خنثی/رایج" },
+        { "id": "m4", "text": "قید: خنثی" },
+        { "id": "m5", "text": "قید: بسیار رسمی" },
+        { "id": "m6", "text": "قید: رسمی/علمی" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "او آنقدر خسته بود که زود خوابید.",
+      "sentenceTemplate": "Er war {0} müde, {1} er früh einschlief.",
+      "options": ["so", "dass", "sodass", "damit"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Er war so müde, dass er früh einschlief.", "fa": "او آنقدر خسته بود که زود خوابید." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "هوا سرد بود. بنابراین کت پوشیدم.",
+      "sentenceTemplate": "Es war kalt. {0} {1} ich einen Mantel an.",
+      "options": ["Folglich", "sodass", "zog", "ziehen"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Es war kalt. Folglich zog ich einen Mantel an.", "fa": "هوا سرد بود. بنابراین کت پوشیدم." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: مقاله درباره تغییرات اقلیمی",
+      "passage": {
+        "de": "Die globalen Temperaturen steigen, sodass Extremwetterereignisse häufiger werden. Die Gletscher schmelzen so schnell, dass der Meeresspiegel steigt. Infolgedessen sind Küstenstädte bedroht. Folglich müssen Regierungen handeln. Somit ist klar: Ohne Maßnahmen werden die Konsequenzen verheerend sein. Experten warnen, dass wir schnell handeln müssen, damit künftige Generationen eine lebenswerte Welt haben. Demzufolge fordern sie strengere Klimagesetze.",
+        "fa": "دماهای جهانی در حال افزایش است، به طوری که رویدادهای آب و هوایی شدید بیشتر می‌شوند. یخچال‌های طبیعی آنقدر سریع ذوب می‌شوند که سطح دریا بالا می‌رود. در نتیجه این شهرهای ساحلی در خطر هستند. بنابراین دولت‌ها باید اقدام کنند. پس واضح است: بدون اقدامات، عواقب ویرانگر خواهد بود. کارشناسان هشدار می‌دهند که باید سریع عمل کنیم تا نسل‌های آینده دنیایی قابل زندگی داشته باشند. بر اساس این قوانین سخت‌گیرانه‌تر اقلیمی را خواستار هستند."
+      },
+      "questions": [
+        { "question": "متن با «sodass» درباره دماها چه می‌گوید؟", "options": ["افزایش دما منجر به رویدادهای شدید می‌شود", "دماها کاهش می‌یابد", "هیچ تغییری نیست"], "correctIndex": 0, "explanation": "sodass = به طوری که. افزایش دما نتیجه‌اش رویدادهای شدیدتر است." },
+        { "question": "«so schnell, dass» در متن چه چیزی را توصیف می‌کند؟", "options": ["سرعت رشد", "سرعت ذوب یخچال‌ها و بالا رفتن سطح دریا", "سرعت اقدامات دولت"], "correctIndex": 1, "explanation": "so + قید + dass = آنقدر سریع که. یخچال‌ها آنقدر سریع ذوب می‌شوند که سطح دریا بالا می‌رود." },
+        { "question": "تفاوت «sodass» و «damit» در متن چیست؟", "options": ["هر دو یکسانند", "sodass = نتیجه، damit = هدف", "damit = نتیجه، sodass = هدف"], "correctIndex": 1, "explanation": "sodass نتیجه واقعی را بیان می‌کند، damit هدف مورد نظر را (نسل‌های آینده)." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die verschobene Reise", "fa": "سفر به تعویق افتاده" },
+      "characters": ["Maria", "Thomas"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Maria und Thomas wollten nach Italien reisen.", "fa": "ماریا و توماس می‌خواستند به ایتالیا سفر کنند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Maria",
+          "text": { "de": "Der Flug wurde gestrichen, sodass wir nicht fliegen können.", "fa": "پرواز لغو شد، به طوری که نمی‌توانیم پرواز کنیم." },
+          "mood": "sad"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Thomas",
+          "text": { "de": "Das ist so ärgerlich, dass ich am liebsten schreien würde!", "fa": "این آنقدر عصبانی‌کننده است که دلم می‌خواهد فریاد بزنم!" },
+          "mood": "angry"
+        },
+        {
+          "type": "question",
+          "question": "ماریا با «sodass» چه می‌گوید؟",
+          "options": ["پرواز به موقع است", "لغو پرواز نتیجه‌اش عدم توانایی پرواز است", "پرواز خوب بود"],
+          "correctIndex": 1,
+          "explanation": "sodass = به طوری که. لغو پرواز نتیجه‌اش این است که نمی‌توانند بروند."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Maria",
+          "text": { "de": "Folglich müssen wir den Zug nehmen.", "fa": "بنابراین باید قطار بگیریم." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Thomas",
+          "text": { "de": "Das dauert so lange, dass wir einen Tag verlieren.", "fa": "این آنقدر طول می‌کشد که یک روز از دست می‌دهیم." },
+          "mood": "sad"
+        },
+        {
+          "type": "question",
+          "question": "«folglich» چه نوع کلمه‌ای است؟",
+          "options": ["حرف ربط (فعل آخر)", "قید (فعل V2)", "حرف اضافه"],
+          "correctIndex": 1,
+          "explanation": "folglich قید است و فعل بعد از آن در جایگاه دوم قرار می‌گیرد."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Maria",
+          "text": { "de": "Somit haben wir mehr Zeit, die Landschaft zu genießen!", "fa": "بنابراین وقت بیشتری داریم تا از منظره لذت ببریم!" },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "ماریا با «somit» چه نگرشی نشان می‌دهد؟",
+          "options": ["عصبانیت", "ناامیدی", "نگاه مثبت به وضعیت"],
+          "correctIndex": 2,
+          "explanation": "او با somit نتیجه مثبت را بیان می‌کند: وقت بیشتر برای لذت بردن."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: جملات نتیجه‌ای",
+      "instruction": "نوع ساختار را انتخاب کنید!",
+      "questions": [
+        { "prompt": "sodass →", "left": "حرف ربط (فعل آخر)", "right": "قید (V2)", "correctSide": "left" },
+        { "prompt": "folglich →", "left": "حرف ربط (فعل آخر)", "right": "قید (V2)", "correctSide": "right" },
+        { "prompt": "so + Adj + dass →", "left": "نتیجه تشدیدی", "right": "هدف", "correctSide": "left" },
+        { "prompt": "infolgedessen →", "left": "حرف ربط", "right": "قید (رسمی)", "correctSide": "right" },
+        { "prompt": "damit →", "left": "هدف/قصد", "right": "نتیجه واقعی", "correctSide": "left" },
+        { "prompt": "demzufolge →", "left": "حرف ربط", "right": "قید (رسمی)", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Er war so müde, dass er sofort einschlief.",
+      "translation": "او آنقدر خسته بود که فوراً خوابش برد."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Es regnete stark. Folglich blieben wir zu Hause.",
+      "translation": "باران شدید بارید. بنابراین در خانه ماندیم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Der Preis stieg, sodass viele es nicht kaufen konnten.",
+      "translation": "قیمت بالا رفت، به طوری که بسیاری نتوانستند آن را بخرند."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: جملات نتیجه‌ای",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "sodass =", "options": ["به طوری که (حرف ربط)", "بنابراین (قید)"], "correctAnswerIndex": 0 },
+        { "question": "folglich =", "options": ["بنابراین (قید)", "به طوری که (حرف ربط)"], "correctAnswerIndex": 0 },
+        { "question": "infolgedessen =", "options": ["در نتیجه این (رسمی)", "تا اینکه (هدف)"], "correctAnswerIndex": 0 },
+        { "question": "damit =", "options": ["تا اینکه (هدف)", "به طوری که (نتیجه)"], "correctAnswerIndex": 0 },
+        { "question": "so müde, dass =", "options": ["آنقدر خسته که (تشدیدی)", "بنابراین خسته"], "correctAnswerIndex": 0 },
+        { "question": "demzufolge =", "options": ["بر اساس این (رسمی)", "اگرچه"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: جملات نتیجه‌ای",
+      "pairs": [
+        { "de": "sodass", "fa": "به طوری که" },
+        { "de": "folglich", "fa": "بنابراین" },
+        { "de": "infolgedessen", "fa": "در نتیجه این" },
+        { "de": "demzufolge", "fa": "بر اساس این" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات کلیدی جملات نتیجه‌ای را پیدا کنید",
+      "targetWords": ["sodass", "folglich", "somit", "infolgedessen", "demzufolge", "dass"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "der Konsekutivsatz", "fa": "جمله نتیجه‌ای", "options": ["جمله شرطی", "جمله نتیجه‌ای", "جمله علّی", "جمله زمانی"], "correctIndex": 1 },
+        { "de": "die Folge", "fa": "نتیجه، پیامد", "options": ["علت", "نتیجه", "شرط", "زمان"], "correctIndex": 1 },
+        { "de": "die Konsequenz", "fa": "نتیجه، عاقبت", "options": ["شروع", "عاقبت", "دلیل", "هدف"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! جمع‌بندی جملات نتیجه‌ای تمام شد!",
+      "message": "شما تمام انواع جملات نتیجه‌ای در آلمانی را مرور کردید!",
+      "keyPoints": [
+        "**حرف ربط تبعی (فعل آخر):**",
+        "sodass / so dass = به طوری که (نتیجه ساده)",
+        "so + صفت/قید + dass = آنقدر ... که (نتیجه تشدیدی)",
+        "**قیدهای نتیجه‌ای (ترتیب V2):**",
+        "folglich = بنابراین (رایج)",
+        "somit = بنابراین، پس (خنثی)",
+        "infolgedessen = در نتیجه این (بسیار رسمی)",
+        "demzufolge = بر اساس این (رسمی)",
+        "**تفاوت کلیدی با damit:**",
+        "sodass = نتیجه واقعی (اتفاق افتاده)",
+        "damit = هدف/قصد (می‌خواهیم اتفاق بیفتد)",
+        "**ترتیب کلمات:**",
+        "حروف ربط → فعل در آخر جمله فرعی",
+        "قیدها → فعل در جایگاه دوم (V2)"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "der Konsekutivsatz", "fa": "جمله نتیجه‌ای" } },
+        { "word": { "de": "die Folge", "fa": "نتیجه، پیامد" } },
+        { "word": { "de": "die Konsequenz", "fa": "نتیجه، عاقبت" } },
+        { "word": { "de": "folglich", "fa": "بنابراین" } },
+        { "word": { "de": "infolgedessen", "fa": "در نتیجه این (رسمی)" } },
+        { "word": { "de": "demzufolge", "fa": "بر اساس این" } }
+      ]
+    }
+  ]
+}

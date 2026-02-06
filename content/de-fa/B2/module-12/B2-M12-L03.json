@@ -1,0 +1,516 @@
+{
+  "id": "B2-M12-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Konsekutivsätze: Konsekutive Adverbien", "fa": "جملات نتیجه‌ای: قیدهای نتیجه‌ساز" },
+  "description": "یاد بگیرید چگونه از قیدهای «folglich»، «infolgedessen»، «demzufolge»، «somit» و «demnach» برای بیان نتیجه در متون رسمی استفاده کنید. این قیدها در نتیجه، بنابراین و از این رو معنی می‌دهند و جملات اصلی را به هم متصل می‌کنند.",
+  "level": "B2",
+  "module": 12,
+  "lessonNumber": 3,
+  "totalSteps": 45,
+  "estimatedMinutes": 40,
+  "vocabulary": [
+    { "de": "folglich", "fa": "در نتیجه، بنابراین", "grammar": { "pos": "adverb" } },
+    { "de": "infolgedessen", "fa": "در نتیجه این", "grammar": { "pos": "adverb" } },
+    { "de": "demzufolge", "fa": "بر این اساس، از این رو", "grammar": { "pos": "adverb" } },
+    { "de": "somit", "fa": "بدین ترتیب، پس", "grammar": { "pos": "adverb" } },
+    { "de": "demnach", "fa": "بر اساس این، بنابراین", "grammar": { "pos": "adverb" } },
+    { "de": "die Schlussfolgerung", "fa": "نتیجه‌گیری", "grammar": { "pos": "noun", "gender": "feminine" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "قیدهای نتیجه‌ساز (Konsekutive Adverbien)",
+      "content": "**Konsekutive Adverbien: folglich, infolgedessen, demzufolge, somit, demnach**\n\nدر آلمانی برای بیان نتیجه یک اتفاق از قیدهای نتیجه‌ساز استفاده می‌شود. این قیدها رسمی‌تر از «sodass» هستند و بیشتر در متون نوشتاری، علمی و رسمی به کار می‌روند.\n\n**پنج قید اصلی:**\n\n| قید | معنی فارسی | سبک |\n|-----|------------|-----|\n| folglich | در نتیجه، بنابراین | رسمی |\n| infolgedessen | در نتیجه این | بسیار رسمی |\n| demzufolge | بر این اساس | رسمی/علمی |\n| somit | بدین ترتیب، پس | رسمی |\n| demnach | بر اساس این | رسمی |\n\n**نکته مهم:**\nاین قیدها دو جمله اصلی را به هم متصل می‌کنند و **فعل در جایگاه دوم (V2)** قرار می‌گیرد:\n\n> Es regnete stark. **Folglich** **blieben** wir zu Hause.\n> باران شدید بارید. **در نتیجه** خانه **ماندیم**.",
+      "examples": [
+        { "de": "Er war krank. Folglich konnte er nicht arbeiten.", "fa": "او مریض بود. در نتیجه نتوانست کار کند." },
+        { "de": "Die Preise stiegen. Infolgedessen kauften weniger Menschen.", "fa": "قیمت‌ها بالا رفت. در نتیجه این، افراد کمتری خرید کردند." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "folglich", "fa": "در نتیجه، بنابراین" },
+      "example": { "text": { "de": "Es gab keinen Strom. Folglich fiel die Heizung aus.", "fa": "برق نبود. در نتیجه گرمایش از کار افتاد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "folglich",
+      "translation": "در نتیجه، بنابراین",
+      "syllables": ["folg", "lich"],
+      "distractors": ["fulg", "lach", "flog"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "infolgedessen", "fa": "در نتیجه این" },
+      "example": { "text": { "de": "Der Zug hatte Verspätung. Infolgedessen verpasste ich meinen Termin.", "fa": "قطار تاخیر داشت. در نتیجه این، قرار ملاقاتم را از دست دادم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "infolgedessen",
+      "translation": "در نتیجه این",
+      "syllables": ["in", "fol", "ge", "des", "sen"],
+      "distractors": ["un", "ful", "ga", "das"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "demzufolge", "fa": "بر این اساس، از این رو" },
+      "example": { "text": { "de": "Die Studie zeigt klare Ergebnisse. Demzufolge müssen wir handeln.", "fa": "مطالعه نتایج روشنی نشان می‌دهد. بر این اساس باید اقدام کنیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "demzufolge",
+      "translation": "بر این اساس، از این رو",
+      "syllables": ["dem", "zu", "fol", "ge"],
+      "distractors": ["dam", "zo", "ful", "ga"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "تفاوت قیدهای نتیجه‌ساز با sodass",
+      "content": "**قیدها در مقابل sodass**\n\nتفاوت اصلی در ساختار جمله است:\n\n**sodass** (حرف ربط - یک جمله مرکب)\n> Es regnete stark, **sodass** wir zu Hause **blieben**.\n> باران شدید بارید، **طوری که** خانه **ماندیم**.\n\n(فعل در انتهای جمله فرعی)\n\n**folglich** (قید - دو جمله مستقل)\n> Es regnete stark. **Folglich** **blieben** wir zu Hause.\n> باران شدید بارید. **در نتیجه** خانه **ماندیم**.\n\n(فعل در جایگاه دوم)\n\n**جدول مقایسه:**\n\n| ویژگی | sodass | قیدهای نتیجه‌ساز |\n|-------|--------|------------------|\n| نوع | حرف ربط | قید |\n| جمله | یک جمله مرکب | دو جمله مستقل |\n| جایگاه فعل | در انتها | در جایگاه دوم |\n| سبک | محاوره‌ای/نوشتاری | رسمی/علمی |\n\n**نکته برای فارسی‌زبانان:**\nقیدهای نتیجه‌ساز آلمانی شبیه «در نتیجه» و «بنابراین» در فارسی هستند که جملات مستقل را به هم وصل می‌کنند.",
+      "examples": [
+        { "de": "Er hatte kein Geld, sodass er nicht einkaufen konnte.", "fa": "پول نداشت، طوری که نتوانست خرید کند." },
+        { "de": "Er hatte kein Geld. Folglich konnte er nicht einkaufen.", "fa": "پول نداشت. در نتیجه نتوانست خرید کند." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله از قید نتیجه‌ساز به درستی استفاده کرده است؟",
+      "options": [
+        "Er war müde, folglich er schlief.",
+        "Er war müde. Folglich schlief er.",
+        "Er war müde folglich schlief er.",
+        "Er war müde, sodass folglich schlief."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! قید «folglich» دو جمله مستقل را به هم متصل می‌کند و فعل در جایگاه دوم است.", "incorrect": "قیدهای نتیجه‌ساز دو جمله مستقل را متصل می‌کنند. فعل بعد از قید در جایگاه دوم است." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "somit", "fa": "بدین ترتیب، پس" },
+      "example": { "text": { "de": "Alle haben zugestimmt. Somit ist die Entscheidung gefallen.", "fa": "همه موافقت کردند. بدین ترتیب تصمیم گرفته شد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "somit",
+      "translation": "بدین ترتیب، پس",
+      "syllables": ["so", "mit"],
+      "distractors": ["sa", "mat", "su"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "demnach", "fa": "بر اساس این، بنابراین" },
+      "example": { "text": { "de": "Die Regeln sind klar. Demnach müssen wir uns daran halten.", "fa": "قوانین روشن هستند. بر اساس این باید به آنها پایبند باشیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "demnach",
+      "translation": "بر اساس این، بنابراین",
+      "syllables": ["dem", "nach"],
+      "distractors": ["dam", "nuch", "dom"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "die Schlussfolgerung", "fa": "نتیجه‌گیری" },
+      "example": { "text": { "de": "Die Schlussfolgerung ist klar: Wir müssen handeln.", "fa": "نتیجه‌گیری روشن است: ما باید اقدام کنیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Schlussfolgerung",
+      "translation": "نتیجه‌گیری",
+      "syllables": ["Schluss", "fol", "ge", "rung"],
+      "distractors": ["Schloss", "ful", "ga", "rang"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "جایگاه قیدهای نتیجه‌ساز در جمله",
+      "content": "**جایگاه قیدها در جمله**\n\nقیدهای نتیجه‌ساز می‌توانند در جایگاه‌های مختلف جمله قرار بگیرند:\n\n**۱. در ابتدای جمله (رایج‌ترین)**\n> **Folglich** **muss** er mehr arbeiten.\n> **در نتیجه** او باید بیشتر کار **کند**.\n\n**۲. بعد از فعل**\n> Er **muss** **folglich** mehr arbeiten.\n> او باید **در نتیجه** بیشتر کار کند.\n\n**۳. در وسط جمله**\n> Er hat **somit** recht.\n> او **بدین ترتیب** حق دارد.\n\n**نکته مهم:**\nوقتی قید در ابتدای جمله است، فعل بلافاصله بعد از آن می‌آید (جایگاه V2).\n\n**مقایسه سبک‌ها:**\n| قید | کاربرد اصلی |\n|-----|-------------|\n| folglich | گزارش‌ها، مقالات |\n| infolgedessen | متون حقوقی، رسمی |\n| demzufolge | تحقیقات علمی |\n| somit | نتیجه‌گیری‌های منطقی |\n| demnach | استدلال‌های رسمی |",
+      "examples": [
+        { "de": "Demzufolge ist die Theorie falsch.", "fa": "بر این اساس نظریه اشتباه است." },
+        { "de": "Die Theorie ist demzufolge falsch.", "fa": "نظریه بر این اساس اشتباه است." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام قید برای متون حقوقی و بسیار رسمی مناسب‌تر است؟",
+      "options": [
+        "folglich",
+        "somit",
+        "infolgedessen",
+        "demnach"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "درست! «infolgedessen» بسیار رسمی است و در متون حقوقی و اداری به کار می‌رود.", "incorrect": "«infolgedessen» رسمی‌ترین قید است. folglich، somit و demnach نیز رسمی هستند اما کمتر از infolgedessen." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "قید مناسب را انتخاب کنید",
+      "sentence": "Das Experiment war erfolgreich. {0} können wir weitermachen.",
+      "options": ["Folglich", "Weil", "Obwohl", "Damit"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "«Folglich» درست است چون نتیجه آزمایش موفق را بیان می‌کند: در نتیجه می‌توانیم ادامه دهیم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "قید مناسب را انتخاب کنید",
+      "sentence": "Die Daten bestätigen unsere Hypothese. {0} ist unsere Theorie richtig.",
+      "options": ["Demzufolge", "Weil", "Obwohl", "Falls"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "«Demzufolge» درست است: داده‌ها فرضیه ما را تایید می‌کنند. بر این اساس نظریه ما درست است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Der Vertrag wurde unterschrieben. {0} ist die Vereinbarung gültig.",
+      "options": ["Somit", "Weil", "Obwohl", "Wenn"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "«Somit» درست است: قرارداد امضا شد. بدین ترتیب توافق معتبر است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["krank", "Er", "war", "konnte", "Folglich", "arbeiten", "nicht", "er"],
+      "correctOrder": [1, 2, 0, 4, 3, 7, 6, 5],
+      "correctSentence": { "de": "Er war krank. Folglich konnte er nicht arbeiten.", "fa": "او مریض بود. در نتیجه نتوانست کار کند." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["Infolgedessen", "mussten", "Prüfung", "Die", "wurde", "abgesagt", "warten", "wir"],
+      "correctOrder": [3, 2, 5, 4, 0, 1, 7, 6],
+      "correctSentence": { "de": "Die Prüfung wurde abgesagt. Infolgedessen mussten wir warten.", "fa": "امتحان لغو شد. در نتیجه این، مجبور شدیم صبر کنیم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["Die", "stimmen", "Demnach", "richtig", "ist", "Zahlen", "die", "Rechnung"],
+      "correctOrder": [0, 5, 1, 2, 4, 6, 7, 3],
+      "correctSentence": { "de": "Die Zahlen stimmen. Demnach ist die Rechnung richtig.", "fa": "اعداد درست هستند. بر اساس این، صورتحساب درست است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "قیدهای نتیجه‌ساز مانند «folglich» دو جمله اصلی مستقل را به هم متصل می‌کنند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! قیدهای نتیجه‌ساز دو جمله مستقل را متصل می‌کنند، برخلاف «sodass» که یک جمله مرکب می‌سازد." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "بعد از «folglich» فعل به انتهای جمله می‌رود.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! بعد از قیدهای نتیجه‌ساز، فعل در جایگاه دوم (V2) قرار می‌گیرد، نه در انتها." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "«infolgedessen» محاوره‌ای‌تر از «folglich» است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! «infolgedessen» رسمی‌تر از «folglich» است و بیشتر در متون حقوقی و اداری استفاده می‌شود." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "جلسه کاری",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Zwei Kollegen besprechen die Quartalszahlen.", "fa": "دو همکار درباره ارقام فصلی صحبت می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Herr Müller", "text": { "de": "Die Verkaufszahlen sind um 20% gestiegen.", "fa": "ارقام فروش ۲۰ درصد افزایش یافته است." }, "mood": "happy" },
+        { "speaker": "Frau Schmidt", "text": { "de": "Folglich haben wir das Quartalsziel erreicht.", "fa": "در نتیجه ما به هدف فصلی رسیدیم." }, "mood": "excited" },
+        { "speaker": "Herr Müller", "text": { "de": "Ja, und somit können wir das Budget für nächstes Jahr erhöhen.", "fa": "بله، و بدین ترتیب می‌توانیم بودجه سال آینده را افزایش دهیم." }, "mood": "happy" },
+        { "speaker": "Frau Schmidt", "text": { "de": "Infolgedessen sollten wir mehr Personal einstellen.", "fa": "در نتیجه این باید نیروی بیشتری استخدام کنیم." }, "mood": "neutral" },
+        { "speaker": "Herr Müller", "text": { "de": "Demnach brauchen wir einen neuen Einstellungsplan.", "fa": "بر اساس این به یک برنامه استخدام جدید نیاز داریم." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "ارقام فروش چقدر افزایش یافته؟", "options": ["۱۰ درصد", "۲۰ درصد", "۳۰ درصد"], "correctIndex": 1, "explanation": "آقای مولر گفت: Die Verkaufszahlen sind um 20% gestiegen" },
+        { "question": "نتیجه افزایش فروش چیست؟", "options": ["کاهش بودجه", "رسیدن به هدف فصلی", "اخراج کارکنان"], "correctIndex": 1, "explanation": "خانم اشمیت گفت: Folglich haben wir das Quartalsziel erreicht" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "قید مناسب را انتخاب کنید",
+      "sentence": "Die Firma hat Verluste gemacht. {0} muss sie Kosten sparen.",
+      "options": ["Infolgedessen", "Weil", "Obwohl", "Damit"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "«Infolgedessen» درست است: شرکت زیان کرده. در نتیجه این باید هزینه‌ها را کاهش دهد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "قید مناسب را انتخاب کنید",
+      "sentence": "Alle Beweise sprechen dagegen. {0} ist der Angeklagte unschuldig.",
+      "options": ["Demnach", "Weil", "Als", "Bevor"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "«Demnach» درست است: همه شواهد برخلاف آن هستند. بر اساس این، متهم بی‌گناه است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "قید مناسب را انتخاب کنید",
+      "sentence": "Er hat alle Prüfungen bestanden. {0} hat er sein Diplom erhalten.",
+      "options": ["Somit", "Obwohl", "Falls", "Bevor"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "«Somit» درست است: او همه امتحانات را قبول شده. بدین ترتیب دیپلمش را دریافت کرده." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "سمینار علمی",
+      "scene": {
+        "location": "university",
+        "description": { "de": "Ein Professor präsentiert seine Forschungsergebnisse.", "fa": "یک استاد نتایج تحقیقاتش را ارائه می‌دهد." }
+      },
+      "lines": [
+        { "speaker": "Professor", "text": { "de": "Unsere Experimente zeigen eindeutige Ergebnisse.", "fa": "آزمایش‌های ما نتایج قطعی نشان می‌دهند." }, "mood": "neutral" },
+        { "speaker": "Professor", "text": { "de": "Demzufolge müssen wir die alte Theorie überdenken.", "fa": "بر این اساس باید نظریه قدیمی را بازنگری کنیم." }, "mood": "neutral" },
+        { "speaker": "Student", "text": { "de": "Und was bedeutet das für die Praxis?", "fa": "و این برای عمل چه معنایی دارد؟" }, "mood": "confused" },
+        { "speaker": "Professor", "text": { "de": "Folglich müssen neue Behandlungsmethoden entwickelt werden.", "fa": "در نتیجه باید روش‌های درمانی جدید توسعه یابد." }, "mood": "neutral" },
+        { "speaker": "Student", "text": { "de": "Somit war diese Forschung sehr wichtig!", "fa": "بدین ترتیب این تحقیق بسیار مهم بود!" }, "mood": "excited" }
+      ],
+      "questions": [
+        { "question": "نتایج آزمایش‌ها چگونه بود؟", "options": ["نامشخص", "قطعی", "متناقض"], "correctIndex": 1, "explanation": "استاد گفت: Unsere Experimente zeigen eindeutige Ergebnisse" },
+        { "question": "چه کاری باید انجام شود؟", "options": ["نظریه قدیمی تایید شود", "روش‌های درمانی جدید توسعه یابد", "تحقیقات متوقف شود"], "correctIndex": 1, "explanation": "استاد گفت: Folglich müssen neue Behandlungsmethoden entwickelt werden" }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "قیدهای آلمانی را با معانی فارسی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "folglich" },
+        { "id": "i2", "text": "infolgedessen" },
+        { "id": "i3", "text": "demzufolge" },
+        { "id": "i4", "text": "somit" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "در نتیجه، بنابراین" },
+        { "id": "m2", "text": "در نتیجه این (بسیار رسمی)" },
+        { "id": "m3", "text": "بر این اساس، از این رو" },
+        { "id": "m4", "text": "بدین ترتیب، پس" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "قطار تاخیر داشت. در نتیجه دیر رسیدم.",
+      "sentenceTemplate": "Der Zug hatte Verspätung. {0} kam ich {1} an.",
+      "options": ["Folglich", "Weil", "spät", "früh", "Obwohl", "schnell"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Der Zug hatte Verspätung. Folglich kam ich spät an.", "fa": "قطار تاخیر داشت. در نتیجه دیر رسیدم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "همه موافقت کردند. بدین ترتیب تصمیم گرفته شد.",
+      "sentenceTemplate": "Alle stimmten zu. {0} wurde die {1} getroffen.",
+      "options": ["Somit", "Obwohl", "Entscheidung", "Frage", "Weil", "Problem"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Alle stimmten zu. Somit wurde die Entscheidung getroffen.", "fa": "همه موافقت کردند. بدین ترتیب تصمیم گرفته شد." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: گزارش علمی",
+      "passage": {
+        "de": "Die Klimadaten der letzten Jahrzehnte zeigen einen deutlichen Temperaturanstieg. Infolgedessen schmelzen die Gletscher schneller als erwartet. Die Meeresspiegel steigen, und somit sind viele Küstenstädte gefährdet.\n\nDie Wissenschaftler sind sich einig: Demzufolge müssen wir unsere CO2-Emissionen drastisch reduzieren. Folglich hat die Regierung neue Umweltgesetze beschlossen. Demnach sollen bis 2030 alle Kohlekraftwerke geschlossen werden.\n\nDie Schlussfolgerung ist klar: Wir müssen jetzt handeln, um die schlimmsten Folgen des Klimawandels zu verhindern.",
+        "fa": "داده‌های آب و هوایی دهه‌های اخیر افزایش دمای قابل توجهی را نشان می‌دهند. در نتیجه این، یخچال‌های طبیعی سریع‌تر از انتظار ذوب می‌شوند. سطح دریاها بالا می‌رود و بدین ترتیب بسیاری از شهرهای ساحلی در خطر هستند.\n\nدانشمندان متفق‌القول هستند: بر این اساس باید انتشار CO2 خود را به شدت کاهش دهیم. در نتیجه دولت قوانین زیست‌محیطی جدیدی تصویب کرده است. بر اساس این، همه نیروگاه‌های زغال‌سنگی تا سال ۲۰۳۰ باید تعطیل شوند.\n\nnتیجه‌گیری روشن است: ما باید اکنون اقدام کنیم تا از بدترین پیامدهای تغییرات آب و هوایی جلوگیری کنیم."
+      },
+      "questions": [
+        { "question": "نتیجه افزایش دما چیست؟", "options": ["یخچال‌ها سریع‌تر ذوب می‌شوند", "دما کاهش می‌یابد", "برف بیشتر می‌بارد"], "correctIndex": 0, "explanation": "در متن گفته شده: Infolgedessen schmelzen die Gletscher schneller als erwartet" },
+        { "question": "دولت چه اقدامی کرده است؟", "options": ["نیروگاه‌های جدید ساخته", "قوانین زیست‌محیطی جدید تصویب کرده", "هیچ اقدامی نکرده"], "correctIndex": 1, "explanation": "در متن گفته شده: Folglich hat die Regierung neue Umweltgesetze beschlossen" },
+        { "question": "تا چه سالی نیروگاه‌های زغال‌سنگی باید تعطیل شوند؟", "options": ["۲۰۲۵", "۲۰۳۰", "۲۰۵۰"], "correctIndex": 1, "explanation": "در متن گفته شده: Demnach sollen bis 2030 alle Kohlekraftwerke geschlossen werden" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die Forschungsreise", "fa": "سفر تحقیقاتی" },
+      "characters": ["Dr. Becker", "Anna"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Dr. Becker und seine Assistentin Anna untersuchen ein neues Phänomen.", "fa": "دکتر بکر و دستیارش آنا یک پدیده جدید را بررسی می‌کنند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Dr. Becker",
+          "text": { "de": "Die Proben zeigen unerwartete Ergebnisse.", "fa": "نمونه‌ها نتایج غیرمنتظره‌ای نشان می‌دهند." },
+          "mood": "surprised"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Folglich müssen wir die Experimente wiederholen.", "fa": "در نتیجه باید آزمایش‌ها را تکرار کنیم." },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "نتایج آزمایش چگونه بود؟",
+          "options": ["طبق انتظار", "غیرمنتظره", "بی‌نتیجه"],
+          "correctIndex": 1,
+          "explanation": "دکتر بکر گفت: Die Proben zeigen unerwartete Ergebnisse"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Dr. Becker",
+          "text": { "de": "Genau. Und somit haben wir eine neue Entdeckung gemacht!", "fa": "دقیقاً. و بدین ترتیب ما یک کشف جدید کردیم!" },
+          "mood": "excited"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Infolgedessen müssen wir einen Artikel veröffentlichen.", "fa": "در نتیجه این باید یک مقاله منتشر کنیم." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "چه کاری باید انجام دهند؟",
+          "options": ["آزمایش‌ها را متوقف کنند", "مقاله منتشر کنند", "نتایج را پنهان کنند"],
+          "correctIndex": 1,
+          "explanation": "آنا گفت: Infolgedessen müssen wir einen Artikel veröffentlichen"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Demnach wurde ihre Forschung weltberühmt.", "fa": "بر اساس این، تحقیقات آنها جهانی شهرت یافت." }
+        },
+        {
+          "type": "question",
+          "question": "نتیجه نهایی تحقیقات چه بود؟",
+          "options": ["شکست خورد", "جهانی شهرت یافت", "فراموش شد"],
+          "correctIndex": 1,
+          "explanation": "در متن گفته شده: Demnach wurde ihre Forschung weltberühmt"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: قیدهای نتیجه‌ساز",
+      "instruction": "پاسخ درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "folglich یعنی؟", "left": "چون", "right": "در نتیجه", "correctSide": "right" },
+        { "prompt": "کدام رسمی‌تر است؟", "left": "folglich", "right": "infolgedessen", "correctSide": "right" },
+        { "prompt": "somit یعنی؟", "left": "بدین ترتیب", "right": "قبل از این", "correctSide": "left" },
+        { "prompt": "فعل بعد از قید کجاست؟", "left": "در انتها", "right": "جایگاه دوم", "correctSide": "right" },
+        { "prompt": "demzufolge کجا استفاده می‌شود؟", "left": "متون علمی", "right": "محاوره روزمره", "correctSide": "left" },
+        { "prompt": "demnach یعنی؟", "left": "بر اساس این", "right": "قبل از اینکه", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Er war krank. Folglich blieb er zu Hause.",
+      "translation": "او مریض بود. در نتیجه خانه ماند."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Die Daten sind klar. Demzufolge müssen wir handeln.",
+      "translation": "داده‌ها روشن هستند. بر این اساس باید اقدام کنیم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Alle stimmten zu. Somit ist die Sache erledigt.",
+      "translation": "همه موافقت کردند. بدین ترتیب موضوع تمام شد."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: قیدهای نتیجه‌ساز",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "folglich یعنی؟", "options": ["در نتیجه", "چون"], "correctAnswerIndex": 0 },
+        { "question": "فعل بعد از قید کجاست؟", "options": ["جایگاه دوم", "در انتها"], "correctAnswerIndex": 0 },
+        { "question": "کدام رسمی‌ترین است؟", "options": ["infolgedessen", "folglich"], "correctAnswerIndex": 0 },
+        { "question": "somit یعنی؟", "options": ["بدین ترتیب", "قبلاً"], "correctAnswerIndex": 0 },
+        { "question": "demzufolge کجا استفاده می‌شود؟", "options": ["متون علمی", "محاوره"], "correctAnswerIndex": 0 },
+        { "question": "demnach یعنی؟", "options": ["بر اساس این", "پیش از این"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: قیدهای نتیجه‌ساز",
+      "pairs": [
+        { "de": "folglich", "fa": "در نتیجه" },
+        { "de": "infolgedessen", "fa": "در نتیجه این" },
+        { "de": "demzufolge", "fa": "بر این اساس" },
+        { "de": "somit", "fa": "بدین ترتیب" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات قیدهای نتیجه‌ساز",
+      "instruction": "قیدهای آلمانی این درس را پیدا کنید",
+      "targetWords": ["folglich", "somit", "demnach", "Schlussfolgerung"],
+      "gridSize": { "rows": 10, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "folglich", "fa": "در نتیجه، بنابراین", "options": ["چون", "در نتیجه، بنابراین", "قبل از اینکه", "اگر"], "correctIndex": 1 },
+        { "de": "infolgedessen", "fa": "در نتیجه این", "options": ["به همین دلیل", "در نتیجه این", "پیش از این", "بدون اینکه"], "correctIndex": 1 },
+        { "de": "die Schlussfolgerung", "fa": "نتیجه‌گیری", "options": ["سوال", "نتیجه‌گیری", "مقدمه", "توضیح"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما قیدهای نتیجه‌ساز «folglich»، «infolgedessen»، «demzufolge»، «somit» و «demnach» را یاد گرفتید!",
+      "keyPoints": [
+        "folglich = در نتیجه، بنابراین (رسمی)",
+        "infolgedessen = در نتیجه این (بسیار رسمی، متون حقوقی)",
+        "demzufolge = بر این اساس (متون علمی)",
+        "somit = بدین ترتیب، پس (نتیجه‌گیری منطقی)",
+        "demnach = بر اساس این (استدلال رسمی)",
+        "این قیدها دو جمله اصلی را متصل می‌کنند (نه یک جمله مرکب)",
+        "فعل بعد از قید در جایگاه دوم (V2) قرار می‌گیرد",
+        "این ساختارها رسمی‌تر از «sodass» هستند و در متون نوشتاری به کار می‌روند"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "folglich", "fa": "در نتیجه، بنابراین" } },
+        { "word": { "de": "infolgedessen", "fa": "در نتیجه این" } },
+        { "word": { "de": "demzufolge", "fa": "بر این اساس، از این رو" } },
+        { "word": { "de": "somit", "fa": "بدین ترتیب، پس" } },
+        { "word": { "de": "demnach", "fa": "بر اساس این، بنابراین" } },
+        { "word": { "de": "die Schlussfolgerung", "fa": "نتیجه‌گیری" } }
+      ]
+    }
+  ]
+}

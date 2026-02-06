@@ -1,0 +1,521 @@
+{
+  "id": "B2-M12-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Konsekutivsätze: sodass / so dass", "fa": "جملات نتیجه‌ای: به طوری که" },
+  "description": "یاد بگیرید چگونه از «sodass» یا «so dass» برای بیان نتیجه و پیامد استفاده کنید. این ساختار معادل «به طوری که» یا «در نتیجه» در فارسی است و نتیجه یک عمل را بیان می‌کند، نه هدف آن را.",
+  "level": "B2",
+  "module": 12,
+  "lessonNumber": 1,
+  "totalSteps": 45,
+  "estimatedMinutes": 40,
+  "vocabulary": [
+    { "de": "sodass", "fa": "به طوری که، در نتیجه", "grammar": { "pos": "conjunction" } },
+    { "de": "so dass", "fa": "به طوری که (نگارش جداگانه)", "grammar": { "pos": "conjunction" } },
+    { "de": "die Folge", "fa": "نتیجه، پیامد", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "die Konsequenz", "fa": "عاقبت، نتیجه", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "infolgedessen", "fa": "در نتیجه آن", "grammar": { "pos": "adverb" } },
+    { "de": "folglich", "fa": "بنابراین، پس", "grammar": { "pos": "adverb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "جملات نتیجه‌ای با sodass",
+      "content": "**Konsekutivsätze mit sodass / so dass**\n\nدر آلمانی برای بیان **نتیجه** یا **پیامد** یک عمل از «sodass» یا «so dass» استفاده می‌شود. این ساختار نشان می‌دهد که چه اتفاقی **در نتیجه** عمل اصلی افتاده است.\n\n**معنی:**\n> sodass = به طوری که، در نتیجه\n\n**ساختار:**\n> جمله اصلی + **sodass** + فاعل + ... + **فعل در انتها**\n\n**مثال:**\n> Er arbeitete hart, **sodass** er die Prüfung **bestand**.\n> او سخت کار کرد، **به طوری که** امتحان را قبول شد.\n\n**نکته برای فارسی‌زبانان:**\n- در فارسی: «به طوری که» یا «در نتیجه»\n- تفاوت اصلی: در آلمانی فعل جمله فرعی به انتها می‌رود\n- **مهم:** این ساختار **نتیجه** را بیان می‌کند، نه **هدف** را! (هدف = damit)",
+      "examples": [
+        { "de": "Sie sprach laut, sodass alle sie hören konnten.", "fa": "او بلند صحبت کرد، به طوری که همه توانستند بشنوند." },
+        { "de": "Es regnete stark, sodass das Spiel abgesagt wurde.", "fa": "باران شدید بارید، به طوری که بازی لغو شد." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "sodass", "fa": "به طوری که، در نتیجه" },
+      "example": { "text": { "de": "Er war sehr müde, sodass er früh ins Bett ging.", "fa": "او خیلی خسته بود، به طوری که زود به رختخواب رفت." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "sodass",
+      "translation": "به طوری که، در نتیجه",
+      "syllables": ["so", "dass"],
+      "distractors": ["sa", "dos", "doss", "su"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "die Folge", "fa": "نتیجه، پیامد" },
+      "example": { "text": { "de": "Die Folge war, dass er seinen Job verlor.", "fa": "نتیجه این بود که شغلش را از دست داد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Folge",
+      "translation": "نتیجه، پیامد",
+      "syllables": ["Fol", "ge"],
+      "distractors": ["Fel", "ga", "gu", "Fal"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "die Konsequenz", "fa": "عاقبت، نتیجه" },
+      "example": { "text": { "de": "Er muss die Konsequenzen tragen.", "fa": "او باید عواقب را تحمل کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Konsequenz",
+      "translation": "عاقبت، نتیجه",
+      "syllables": ["Kon", "se", "quenz"],
+      "distractors": ["Kan", "sa", "kwenz", "qunz"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "تفاوت sodass با damit",
+      "content": "**sodass در مقابل damit**\n\nبسیاری از زبان‌آموزان این دو را اشتباه می‌گیرند، اما تفاوت مهمی دارند:\n\n**sodass = نتیجه (واقعی)**\n> Er sprach laut, **sodass** alle ihn hörten.\n> او بلند صحبت کرد، **به طوری که** همه شنیدند.\n> (این اتفاق **افتاد** - واقعیت است)\n\n**damit = هدف (قصد)**\n> Er sprach laut, **damit** alle ihn hören **können**.\n> او بلند صحبت کرد، **تا** همه بتوانند بشنوند.\n> (این **هدف** بود - ممکن است نشنیده باشند)\n\n**جدول مقایسه:**\n\n| ویژگی | sodass | damit |\n|-------|--------|-------|\n| معنی | به طوری که | تا، برای اینکه |\n| بیان | نتیجه واقعی | هدف/قصد |\n| فعل | Indikativ | معمولاً Konjunktiv یا können |\n| زمان | گذشته/حال | آینده/احتمالی |\n\n**نکته:** وقتی از گذشته صحبت می‌کنید و نتیجه واقعی را بیان می‌کنید، از sodass استفاده کنید.",
+      "examples": [
+        { "de": "Sie lernte fleißig, sodass sie die beste Note bekam.", "fa": "او با پشتکار درس خواند، به طوری که بهترین نمره را گرفت. (نتیجه)" },
+        { "de": "Sie lernte fleißig, damit sie die beste Note bekommt.", "fa": "او با پشتکار درس می‌خواند، تا بهترین نمره را بگیرد. (هدف)" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله نتیجه واقعی را بیان می‌کند؟",
+      "options": [
+        "Er arbeitete hart, damit er befördert wird.",
+        "Er arbeitete hart, sodass er befördert wurde.",
+        "Er arbeitete hart, weil er befördert werden wollte.",
+        "Er arbeitete hart, obwohl er müde war."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! «sodass er befördert wurde» نتیجه واقعی را بیان می‌کند: ترفیع گرفت.", "incorrect": "«sodass» نتیجه واقعی را بیان می‌کند. «damit» هدف، «weil» علت، و «obwohl» تضاد است." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام نوشتار صحیح است؟",
+      "options": [
+        "فقط sodass درست است",
+        "فقط so dass درست است",
+        "هر دو sodass و so dass درست هستند",
+        "هیچ‌کدام درست نیست"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "درست! هر دو نوشتار «sodass» و «so dass» صحیح هستند. sodass امروزه رایج‌تر است.", "incorrect": "هر دو نوشتار sodass و so dass در آلمانی صحیح و رسمی هستند." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "infolgedessen", "fa": "در نتیجه آن" },
+      "example": { "text": { "de": "Es regnete stark. Infolgedessen wurde das Konzert abgesagt.", "fa": "باران شدید بارید. در نتیجه آن، کنسرت لغو شد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "infolgedessen",
+      "translation": "در نتیجه آن",
+      "syllables": ["in", "fol", "ge", "des", "sen"],
+      "distractors": ["an", "fel", "ga", "das"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "folglich", "fa": "بنابراین، پس" },
+      "example": { "text": { "de": "Er war krank. Folglich konnte er nicht zur Arbeit kommen.", "fa": "او مریض بود. بنابراین نتوانست سر کار بیاید." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "folglich",
+      "translation": "بنابراین، پس",
+      "syllables": ["folg", "lich"],
+      "distractors": ["falg", "lech", "lich", "forg"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "derart", "fa": "آنچنان، چنان" },
+      "example": { "text": { "de": "Er war derart müde, dass er sofort einschlief.", "fa": "او آنچنان خسته بود که فوراً خوابش برد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "derart",
+      "translation": "آنچنان، چنان",
+      "syllables": ["der", "art"],
+      "distractors": ["dar", "ort", "ert", "dir"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "ساختار so...dass",
+      "content": "**ساختار تأکیدی: so + صفت/قید + dass**\n\nوقتی می‌خواهید روی شدت صفت یا قید تأکید کنید، از ساختار جداگانه استفاده کنید:\n\n**ساختار:**\n> so + **صفت/قید** + ... + dass + جمله فرعی\n\n**مثال‌ها:**\n> Er war **so** müde, **dass** er einschlief.\n> او **آنقدر** خسته بود **که** خوابش برد.\n\n> Sie sprach **so** schnell, **dass** niemand sie verstand.\n> او **آنقدر** سریع صحبت کرد **که** هیچ‌کس نفهمید.\n\n**مقایسه:**\n\n| ساختار | کاربرد | مثال |\n|--------|--------|------|\n| sodass | نتیجه ساده | Er arbeitete hart, sodass er Erfolg hatte. |\n| so...dass | تأکید بر شدت | Er war so fleißig, dass alle staunten. |\n\n**قیدهای مشابه:**\n- **derart...dass** = آنچنان...که (رسمی‌تر)\n- **dermaßen...dass** = به آن حد...که (بسیار رسمی)",
+      "examples": [
+        { "de": "Das Essen war so scharf, dass ich Wasser trinken musste.", "fa": "غذا آنقدر تند بود که مجبور شدم آب بخورم." },
+        { "de": "Er lief derart schnell, dass niemand ihn einholen konnte.", "fa": "او آنچنان سریع دوید که هیچ‌کس نتوانست به او برسد." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "حرف ربط مناسب را انتخاب کنید",
+      "sentence": "Sie übte jeden Tag, {0} sie die Prüfung bestand.",
+      "options": ["sodass", "damit", "weil", "obwohl"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "sodass درست است چون نتیجه واقعی را بیان می‌کند: امتحان را قبول شد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Er war {0} nervös, dass er kein Wort sagen konnte.",
+      "options": ["so", "sodass", "damit", "weil"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "so درست است. ساختار so...dass برای تأکید بر شدت: آنقدر عصبی بود که نتوانست حرف بزند." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "فعل صحیح را انتخاب کنید",
+      "sentence": "Das Konzert war so laut, dass meine Ohren {0}.",
+      "options": ["schmerzten", "schmerzen", "geschmerzt", "zu schmerzen"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "schmerzten درست است. فعل در زمان گذشته ساده (Präteritum) چون نتیجه واقعی در گذشته رخ داده." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را با sodass مرتب کنید",
+      "words": ["hart", "sodass", "arbeitete", "reich", "Er", "er", "wurde"],
+      "correctOrder": [4, 2, 0, 1, 5, 3, 6],
+      "correctSentence": { "de": "Er arbeitete hart, sodass er reich wurde.", "fa": "او سخت کار کرد، به طوری که ثروتمند شد." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["so", "dass", "war", "laut", "Die", "Musik", "hören", "nicht", "wir", "konnten"],
+      "correctOrder": [4, 5, 2, 0, 3, 1, 8, 7, 6, 9],
+      "correctSentence": { "de": "Die Musik war so laut, dass wir nicht hören konnten.", "fa": "موسیقی آنقدر بلند بود که نتوانستیم بشنویم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله را با ساختار درست مرتب کنید",
+      "words": ["Sie", "sodass", "schnell", "lief", "erste", "die", "wurde", "sie"],
+      "correctOrder": [0, 3, 2, 1, 7, 5, 4, 6],
+      "correctSentence": { "de": "Sie lief schnell, sodass sie die erste wurde.", "fa": "او سریع دوید، به طوری که اول شد." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "جملات با «sodass» نتیجه واقعی را بیان می‌کنند، نه هدف را.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! sodass نتیجه واقعی را بیان می‌کند. برای هدف از damit استفاده می‌شود." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جمله با «sodass» فعل در جایگاه دوم قرار می‌گیرد.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! در جمله فرعی با sodass، فعل به انتهای جمله می‌رود، نه جایگاه دوم." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "«sodass» و «so dass» هر دو نوشتار صحیح هستند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! هر دو نوشتار رسمی و صحیح هستند. sodass (سرهم) امروزه رایج‌تر است." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "گفتگو درباره موفقیت",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Zwei Kollegen sprechen über eine erfolgreiche Präsentation.", "fa": "دو همکار درباره یک ارائه موفق صحبت می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Sabine", "text": { "de": "Wie lief deine Präsentation?", "fa": "ارائه‌ات چطور بود؟" }, "mood": "neutral" },
+        { "speaker": "Markus", "text": { "de": "Sehr gut! Ich hatte mich so gut vorbereitet, dass alle beeindruckt waren.", "fa": "خیلی خوب! آنقدر خوب آماده شده بودم که همه تحت تأثیر قرار گرفتند." }, "mood": "happy" },
+        { "speaker": "Sabine", "text": { "de": "Das ist toll! Und was war das Ergebnis?", "fa": "عالیه! و نتیجه‌اش چی شد؟" }, "mood": "excited" },
+        { "speaker": "Markus", "text": { "de": "Sie haben mein Projekt genehmigt, sodass ich jetzt mehr Budget habe.", "fa": "پروژه‌ام را تأیید کردند، به طوری که الان بودجه بیشتری دارم." }, "mood": "happy" },
+        { "speaker": "Sabine", "text": { "de": "Herzlichen Glückwunsch! Das hast du verdient.", "fa": "تبریک می‌گم! لایقش بودی." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "چرا همه تحت تأثیر قرار گرفتند؟", "options": ["چون مارکوس خوب آماده شده بود", "چون موضوع جالب بود", "چون رئیس حضور داشت"], "correctIndex": 0, "explanation": "مارکوس گفت: Ich hatte mich so gut vorbereitet, dass alle beeindruckt waren." },
+        { "question": "نتیجه ارائه چه بود؟", "options": ["پروژه رد شد", "بودجه بیشتر گرفت", "مرخصی گرفت"], "correctIndex": 1, "explanation": "مارکوس گفت: sodass ich jetzt mehr Budget habe - به طوری که الان بودجه بیشتری دارم." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "قید مناسب را انتخاب کنید",
+      "sentence": "Der Sturm war heftig. {0} wurden viele Bäume entwurzelt.",
+      "options": ["Infolgedessen", "Obwohl", "Damit", "Weil"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Infolgedessen درست است: در نتیجه آن. این قید نتیجه جمله قبل را بیان می‌کند." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Sie war {0} aufgeregt, dass sie die ganze Nacht nicht schlafen konnte.",
+      "options": ["derart", "sodass", "damit", "weil"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "derart درست است. ساختار derart...dass برای تأکید: آنچنان هیجان‌زده بود که..." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "حرف ربط مناسب را انتخاب کنید",
+      "sentence": "Er trainierte intensiv, {0} er den Marathon in unter 3 Stunden lief.",
+      "options": ["sodass", "damit", "obwohl", "weil"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "sodass درست است: نتیجه تمرین فشرده این بود که ماراتن را زیر ۳ ساعت دوید." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در دانشگاه",
+      "scene": {
+        "location": "university",
+        "description": { "de": "Zwei Studenten sprechen über ihre Prüfungsergebnisse.", "fa": "دو دانشجو درباره نتایج امتحانشان صحبت می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Wie war deine Physikprüfung?", "fa": "امتحان فیزیکت چطور بود؟" }, "mood": "neutral" },
+        { "speaker": "Leon", "text": { "de": "Furchtbar! Die Aufgaben waren so schwer, dass ich kaum etwas lösen konnte.", "fa": "افتضاح! سوالات آنقدر سخت بودند که تقریباً هیچی نتوانستم حل کنم." }, "mood": "sad" },
+        { "speaker": "Anna", "text": { "de": "Oh nein! Hast du nicht genug gelernt?", "fa": "وای نه! کافی درس نخوانده بودی؟" }, "mood": "confused" },
+        { "speaker": "Leon", "text": { "de": "Doch, aber der Professor hatte alles geändert, sodass meine Vorbereitung nutzlos war.", "fa": "چرا، ولی استاد همه چیز را عوض کرده بود، به طوری که آمادگی‌ام بی‌فایده بود." }, "mood": "sad" },
+        { "speaker": "Anna", "text": { "de": "Das ist wirklich Pech. Folglich musst du die Prüfung wiederholen?", "fa": "این واقعاً بدشانسیه. پس باید امتحان رو تکرار کنی؟" }, "mood": "surprised" }
+      ],
+      "questions": [
+        { "question": "چرا لئون نتوانست سوالات را حل کند؟", "options": ["درس نخوانده بود", "سوالات خیلی سخت بودند", "دیر رسید"], "correctIndex": 1, "explanation": "لئون گفت: Die Aufgaben waren so schwer, dass ich kaum etwas lösen konnte." },
+        { "question": "چرا آمادگی لئون بی‌فایده بود؟", "options": ["کتاب اشتباه خوانده بود", "استاد همه چیز را عوض کرده بود", "امتحان لغو شده بود"], "correctIndex": 1, "explanation": "لئون گفت: der Professor hatte alles geändert, sodass meine Vorbereitung nutzlos war." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "جملات آلمانی را با معانی فارسی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "sodass er bestand" },
+        { "id": "i2", "text": "so müde, dass..." },
+        { "id": "i3", "text": "infolgedessen" },
+        { "id": "i4", "text": "folglich" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "به طوری که قبول شد" },
+        { "id": "m2", "text": "آنقدر خسته که..." },
+        { "id": "m3", "text": "در نتیجه آن" },
+        { "id": "m4", "text": "بنابراین" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "او سخت کار کرد، به طوری که ترفیع گرفت.",
+      "sentenceTemplate": "Er arbeitete hart, {0} er {1} wurde.",
+      "options": ["sodass", "damit", "befördert", "befördern", "weil", "arbeiten"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Er arbeitete hart, sodass er befördert wurde.", "fa": "او سخت کار کرد، به طوری که ترفیع گرفت." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "فیلم آنقدر جالب بود که دوباره دیدمش.",
+      "sentenceTemplate": "Der Film war {0} interessant, {1} ich ihn noch einmal sah.",
+      "options": ["so", "sodass", "dass", "damit", "weil", "denn"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Der Film war so interessant, dass ich ihn noch einmal sah.", "fa": "فیلم آنقدر جالب بود که دوباره دیدمش." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: تغییرات آب و هوایی",
+      "passage": {
+        "de": "Der Klimawandel hat ernste Konsequenzen für unseren Planeten. Die Temperaturen steigen so stark, dass die Gletscher schmelzen. Infolgedessen steigt der Meeresspiegel, sodass Küstenstädte bedroht sind.\n\nViele Länder haben ihre Emissionen reduziert, sodass die Luftqualität besser geworden ist. Dennoch reichen diese Maßnahmen nicht aus. Die Situation ist derart kritisch, dass sofortige Maßnahmen erforderlich sind.\n\nFolglich müssen wir alle unseren Lebensstil ändern, sodass zukünftige Generationen noch auf diesem Planeten leben können.",
+        "fa": "تغییرات آب و هوایی عواقب جدی برای سیاره ما دارد. دما آنقدر افزایش می‌یابد که یخچال‌های طبیعی آب می‌شوند. در نتیجه آن، سطح دریا بالا می‌آید، به طوری که شهرهای ساحلی در خطر هستند.\n\nبسیاری از کشورها انتشار گازهای خود را کاهش داده‌اند، به طوری که کیفیت هوا بهتر شده است. با این حال، این اقدامات کافی نیست. وضعیت آنچنان بحرانی است که اقدامات فوری لازم است.\n\nبنابراین همه ما باید سبک زندگی‌مان را تغییر دهیم، به طوری که نسل‌های آینده هنوز بتوانند روی این سیاره زندگی کنند."
+      },
+      "questions": [
+        { "question": "چرا یخچال‌های طبیعی آب می‌شوند؟", "options": ["آلودگی", "افزایش شدید دما", "جنگ"], "correctIndex": 1, "explanation": "در متن گفته شده: Die Temperaturen steigen so stark, dass die Gletscher schmelzen." },
+        { "question": "نتیجه آب شدن یخچال‌ها چیست؟", "options": ["کمبود آب", "افزایش سطح دریا", "زلزله"], "correctIndex": 1, "explanation": "در متن گفته شده: Infolgedessen steigt der Meeresspiegel." },
+        { "question": "چه کسی باید سبک زندگی‌اش را تغییر دهد؟", "options": ["فقط دولت‌ها", "همه ما", "فقط شرکت‌ها"], "correctIndex": 1, "explanation": "در متن گفته شده: Folglich müssen wir alle unseren Lebensstil ändern." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der wichtige Termin", "fa": "قرار مهم" },
+      "characters": ["Stefan", "Claudia"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Stefan hat heute ein wichtiges Vorstellungsgespräch.", "fa": "استفان امروز یک مصاحبه شغلی مهم دارد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Stefan",
+          "text": { "de": "Ich bin so nervös, dass ich nicht frühstücken konnte.", "fa": "آنقدر عصبی هستم که نتوانستم صبحانه بخورم." },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Claudia",
+          "text": { "de": "Mach dir keine Sorgen! Du hast dich so gut vorbereitet, dass du es schaffen wirst.", "fa": "نگران نباش! آنقدر خوب آماده شدی که موفق می‌شوی." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "چرا استفان صبحانه نخورد؟",
+          "options": ["وقت نداشت", "خیلی عصبی بود", "گرسنه نبود"],
+          "correctIndex": 1,
+          "explanation": "استفان گفت: Ich bin so nervös, dass ich nicht frühstücken konnte."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Stefan",
+          "text": { "de": "Danke! Ich hoffe, dass alles gut läuft, sodass ich den Job bekomme.", "fa": "ممنون! امیدوارم همه چیز خوب پیش بره، به طوری که شغل رو بگیرم." },
+          "mood": "neutral"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Später am Tag ruft Stefan Claudia an.", "fa": "بعداً در همان روز، استفان به کلودیا زنگ می‌زند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Stefan",
+          "text": { "de": "Claudia! Das Interview lief so gut, dass sie mir sofort ein Angebot gemacht haben!", "fa": "کلودیا! مصاحبه آنقدر خوب پیش رفت که بلافاصله بهم پیشنهاد دادند!" },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "نتیجه مصاحبه چه بود؟",
+          "options": ["رد شد", "باید منتظر بماند", "فوراً پیشنهاد گرفت"],
+          "correctIndex": 2,
+          "explanation": "استفان گفت: Das Interview lief so gut, dass sie mir sofort ein Angebot gemacht haben."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Claudia",
+          "text": { "de": "Herzlichen Glückwunsch! Infolgedessen müssen wir heute Abend feiern!", "fa": "تبریک! در نتیجه باید امشب جشن بگیریم!" },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "پیام اصلی این داستان چیست؟",
+          "options": ["استرس همیشه بد است", "آمادگی خوب به نتیجه خوب منجر می‌شود", "مصاحبه‌ها سخت هستند"],
+          "correctIndex": 1,
+          "explanation": "داستان نشان می‌دهد که آمادگی خوب استفان باعث شد که موفق شود."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: Konsekutivsätze",
+      "instruction": "پاسخ درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "sodass یعنی؟", "left": "چون", "right": "به طوری که", "correctSide": "right" },
+        { "prompt": "کدام نتیجه را بیان می‌کند؟", "left": "damit", "right": "sodass", "correctSide": "right" },
+        { "prompt": "so...dass برای چیست؟", "left": "تأکید بر شدت", "right": "بیان علت", "correctSide": "left" },
+        { "prompt": "فعل در جمله sodass کجاست؟", "left": "در انتها", "right": "در جایگاه دوم", "correctSide": "left" },
+        { "prompt": "infolgedessen چیست؟", "left": "قید", "right": "حرف ربط", "correctSide": "left" },
+        { "prompt": "folglich یعنی؟", "left": "بنابراین", "right": "با اینکه", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Er war so müde, dass er sofort einschlief.",
+      "translation": "او آنقدر خسته بود که فوراً خوابش برد."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Sie lernte fleißig, sodass sie die Prüfung bestand.",
+      "translation": "او با پشتکار درس خواند، به طوری که امتحان را قبول شد."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Das Wetter war so schlecht, dass wir zu Hause blieben.",
+      "translation": "هوا آنقدر بد بود که در خانه ماندیم."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: Konsekutivsätze",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "sodass یعنی؟", "options": ["به طوری که", "چون"], "correctAnswerIndex": 0 },
+        { "question": "کدام نتیجه را بیان می‌کند؟", "options": ["sodass", "damit"], "correctAnswerIndex": 0 },
+        { "question": "فعل در جمله با sodass کجاست؟", "options": ["در انتها", "در جایگاه دوم"], "correctAnswerIndex": 0 },
+        { "question": "so...dass برای چیست؟", "options": ["تأکید بر شدت", "بیان علت"], "correctAnswerIndex": 0 },
+        { "question": "folglich یعنی؟", "options": ["بنابراین", "با اینکه"], "correctAnswerIndex": 0 },
+        { "question": "کدام نوشتار صحیح است؟", "options": ["هر دو sodass و so dass", "فقط sodass"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: ساختارهای نتیجه‌ای",
+      "pairs": [
+        { "de": "sodass", "fa": "به طوری که" },
+        { "de": "so...dass", "fa": "آنقدر...که" },
+        { "de": "infolgedessen", "fa": "در نتیجه آن" },
+        { "de": "folglich", "fa": "بنابراین" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات مربوط به Konsekutivsätze",
+      "instruction": "کلمات آلمانی مربوط به این درس را پیدا کنید",
+      "targetWords": ["sodass", "Folge", "Konsequenz", "infolgedessen", "folglich", "derart"],
+      "gridSize": { "rows": 10, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "sodass", "fa": "به طوری که، در نتیجه", "options": ["چون", "به طوری که، در نتیجه", "برای اینکه", "با اینکه"], "correctIndex": 1 },
+        { "de": "die Folge", "fa": "نتیجه، پیامد", "options": ["علت", "نتیجه، پیامد", "هدف", "شرط"], "correctIndex": 1 },
+        { "de": "folglich", "fa": "بنابراین، پس", "options": ["به همین دلیل", "بنابراین، پس", "با این حال", "اگرچه"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما جملات نتیجه‌ای با «sodass» و ساختار «so...dass» را یاد گرفتید!",
+      "keyPoints": [
+        "sodass / so dass - برای بیان نتیجه واقعی",
+        "تفاوت با damit: sodass = نتیجه، damit = هدف",
+        "ساختار: جمله اصلی + sodass + فاعل + ... + فعل در انتها",
+        "ساختار تأکیدی: so + صفت/قید + dass + جمله فرعی",
+        "derart...dass - آنچنان...که (رسمی‌تر)",
+        "infolgedessen و folglich - قیدهای نتیجه‌ای",
+        "هر دو نوشتار sodass و so dass صحیح هستند"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "sodass", "fa": "به طوری که، در نتیجه" } },
+        { "word": { "de": "die Folge", "fa": "نتیجه، پیامد" } },
+        { "word": { "de": "die Konsequenz", "fa": "عاقبت، نتیجه" } },
+        { "word": { "de": "infolgedessen", "fa": "در نتیجه آن" } },
+        { "word": { "de": "folglich", "fa": "بنابراین، پس" } },
+        { "word": { "de": "derart", "fa": "آنچنان، چنان" } }
+      ]
+    }
+  ]
+}

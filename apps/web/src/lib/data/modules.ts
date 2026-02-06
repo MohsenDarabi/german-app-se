@@ -2000,6 +2000,37 @@ const DE_FA_B2_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/B2/B2-M11-L04"
       }
     ]
+  },
+  {
+    id: "module-12",
+    title: "بخش ۱۲: Konsekutivsätze",
+    level: "B2",
+    lessons: [
+      {
+        id: "B2-M12-L01",
+        title: "sodass / so dass - به طوری که",
+        description: "یاد بگیرید جملات نتیجه‌ای با sodass برای بیان پیامد.",
+        path: "/learn/de-fa/B2/B2-M12-L01"
+      },
+      {
+        id: "B2-M12-L02",
+        title: "so...dass - آنقدر...که",
+        description: "یاد بگیرید ساختار تشدیدی so + صفت/قید + dass.",
+        path: "/learn/de-fa/B2/B2-M12-L02"
+      },
+      {
+        id: "B2-M12-L03",
+        title: "Konsekutive Adverbien - قیدهای نتیجه‌ای",
+        description: "یاد بگیرید قیدهای نتیجه: folglich، infolgedessen، demzufolge.",
+        path: "/learn/de-fa/B2/B2-M12-L03"
+      },
+      {
+        id: "B2-M12-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل جملات نتیجه‌ای: sodass، so...dass و قیدها.",
+        path: "/learn/de-fa/B2/B2-M12-L04"
+      }
+    ]
   }
 ];
 
