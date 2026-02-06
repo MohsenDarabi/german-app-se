@@ -1,0 +1,516 @@
+{
+  "id": "B1-M09-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Nominalisierung mit Suffixen", "fa": "اسم‌سازی با پسوندها" },
+  "description": "یاد بگیرید چگونه با استفاده از پسوندهای -ung، -heit، -keit، -schaft و -tion از فعل‌ها و صفت‌ها اسم بسازید",
+  "level": "B1",
+  "module": 9,
+  "lessonNumber": 3,
+  "totalSteps": 45,
+  "estimatedMinutes": 22,
+  "vocabulary": [
+    { "de": "die Entscheidung", "fa": "تصمیم", "grammar": { "pos": "noun", "gender": "f" } },
+    { "de": "die Freiheit", "fa": "آزادی", "grammar": { "pos": "noun", "gender": "f" } },
+    { "de": "die Möglichkeit", "fa": "امکان", "grammar": { "pos": "noun", "gender": "f" } },
+    { "de": "die Freundschaft", "fa": "دوستی", "grammar": { "pos": "noun", "gender": "f" } },
+    { "de": "die Information", "fa": "اطلاعات", "grammar": { "pos": "noun", "gender": "f" } },
+    { "de": "die Erklärung", "fa": "توضیح", "grammar": { "pos": "noun", "gender": "f" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "اسم‌سازی در آلمانی - Nominalisierung",
+      "content": "در آلمانی می‌توانید با اضافه کردن **پسوند** به فعل‌ها یا صفت‌ها، **اسم** بسازید.\n\n**نکته مهم:**\nتمام اسم‌هایی که با این پسوندها ساخته می‌شوند **مونث (die)** هستند!\n\n**پسوندهای رایج:**\n• **-ung** از فعل‌ها: entscheiden می‌شود die Entscheidung\n• **-heit** از صفت‌ها: frei می‌شود die Freiheit\n• **-keit** از صفت‌های -lich یا -ig: möglich می‌شود die Möglichkeit\n• **-schaft** برای روابط: Freund می‌شود die Freundschaft\n• **-tion** کلمات بین‌المللی: die Information\n\n**مقایسه با فارسی:**\nدر فارسی هم پسوندهای مشابهی داریم: آزاد می‌شود آزاد**ی**، دوست می‌شود دوست**ی**",
+      "examples": [
+        { "de": "entscheiden wird zu die Entscheidung", "fa": "تصمیم گرفتن می‌شود تصمیم" },
+        { "de": "frei wird zu die Freiheit", "fa": "آزاد می‌شود آزادی" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "die Entscheidung", "fa": "تصمیم" },
+      "example": { "text": { "de": "Das war eine schwere Entscheidung.", "fa": "این یک تصمیم سخت بود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Entscheidung",
+      "translation": "تصمیم",
+      "syllables": ["Ent", "schei", "dung"],
+      "distractors": ["Ant", "schau", "dong"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "die Freiheit", "fa": "آزادی" },
+      "example": { "text": { "de": "Die Freiheit ist sehr wichtig.", "fa": "آزادی بسیار مهم است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Freiheit",
+      "translation": "آزادی",
+      "syllables": ["Frei", "heit"],
+      "distractors": ["Frai", "hait", "hat"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "die Möglichkeit", "fa": "امکان" },
+      "example": { "text": { "de": "Es gibt viele Möglichkeiten.", "fa": "امکانات زیادی وجود دارد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Möglichkeit",
+      "translation": "امکان",
+      "syllables": ["Mög", "lich", "keit"],
+      "distractors": ["Mag", "lech", "kait"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام پسوند برای ساختن اسم از فعل‌ها استفاده می‌شود؟",
+      "options": [
+        "-heit",
+        "-ung",
+        "-keit",
+        "-schaft"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! پسوند -ung برای ساختن اسم از فعل‌ها استفاده می‌شود: entscheiden wird zu Entscheidung", "incorrect": "پسوند -ung برای ساختن اسم از فعل‌ها استفاده می‌شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "پسوند درست را انتخاب کنید",
+      "sentence": "frei wird zu die Frei{0}",
+      "options": ["-ung", "-heit", "-keit", "-schaft"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "صفت frei با پسوند -heit اسم می‌شود: die Freiheit" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "پسوند -ung از فعل‌ها",
+      "content": "**پسوند -ung** را به **ریشه فعل** اضافه می‌کنیم:\n\n**قاعده:**\nفعل (بدون -en) + **-ung** = اسم مونث\n\n**مثال‌ها:**\n• entscheid**en** می‌شود die Entscheid**ung** (تصمیم)\n• erklär**en** می‌شود die Erklär**ung** (توضیح)\n• überrasch**en** می‌شود die Überrasch**ung** (غافلگیری)\n• entwickel**n** می‌شود die Entwickel**ung** (توسعه)\n\n**نکته:**\nهمه اسم‌های -ung **مونث** (die) هستند!\n\n**در فارسی:**\nمشابه تبدیل فعل به اسم با -ش: گفتن می‌شود گفت**ش** (گفتار)",
+      "examples": [
+        { "de": "Die Erklärung war sehr klar.", "fa": "توضیح خیلی واضح بود." },
+        { "de": "Ich brauche mehr Zeit für die Entscheidung.", "fa": "برای تصمیم‌گیری به زمان بیشتری نیاز دارم." }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در جلسه کاری",
+      "scene": {
+        "location": "office",
+        "description": { "de": "In einem Besprechungsraum", "fa": "در یک اتاق جلسه" }
+      },
+      "lines": [
+        { "speaker": "Chef", "text": { "de": "Wir brauchen eine Entscheidung bis morgen.", "fa": "تا فردا به یک تصمیم نیاز داریم." }, "mood": "neutral" },
+        { "speaker": "Anna", "text": { "de": "Welche Möglichkeiten haben wir?", "fa": "چه امکاناتی داریم؟" }, "mood": "confused" },
+        { "speaker": "Max", "text": { "de": "Ich brauche mehr Information dazu.", "fa": "به اطلاعات بیشتری در این مورد نیاز دارم." }, "mood": "neutral" },
+        { "speaker": "Chef", "text": { "de": "Die Erklärung kommt jetzt.", "fa": "توضیح الان می‌آید." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "رئیس تا کی تصمیم می‌خواهد؟", "options": ["امروز", "فردا", "هفته آینده"], "correctIndex": 1, "explanation": "رئیس گفت: bis morgen (تا فردا)" },
+        { "question": "ماکس به چه چیزی نیاز دارد؟", "options": ["زمان بیشتر", "اطلاعات بیشتر", "پول بیشتر"], "correctIndex": 1, "explanation": "ماکس گفت: mehr Information" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "die Freundschaft", "fa": "دوستی" },
+      "example": { "text": { "de": "Unsere Freundschaft ist sehr stark.", "fa": "دوستی ما خیلی قوی است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "Freundschaft",
+      "translation": "دوستی",
+      "syllables": ["Freund", "schaft"],
+      "distractors": ["Frond", "scheft", "schuft"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "die Information", "fa": "اطلاعات" },
+      "example": { "text": { "de": "Diese Information ist sehr wichtig.", "fa": "این اطلاعات خیلی مهم است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "Information",
+      "translation": "اطلاعات",
+      "syllables": ["In", "for", "ma", "tion"],
+      "distractors": ["An", "fer", "mo", "sion"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "چه جنسیتی دارند اسم‌هایی که با پسوندهای -ung، -heit، -keit، -schaft و -tion ساخته می‌شوند؟",
+      "options": [
+        "مذکر (der)",
+        "مونث (die)",
+        "خنثی (das)",
+        "هر سه امکان دارد"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! همه این پسوندها اسم‌های مونث (die) می‌سازند.", "incorrect": "همه اسم‌های با این پسوندها مونث هستند: die Entscheidung، die Freiheit، die Möglichkeit" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "پسوند درست را انتخاب کنید",
+      "sentence": "möglich wird zu die Möglich{0}",
+      "options": ["-ung", "-heit", "-keit", "-schaft"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "صفت‌های با پایان -lich با پسوند -keit اسم می‌شوند: die Möglichkeit" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "پسوند درست را انتخاب کنید",
+      "sentence": "erklären wird zu die Erklär{0}",
+      "options": ["-ung", "-heit", "-keit", "-schaft"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "فعل erklären با پسوند -ung اسم می‌شود: die Erklärung" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s8",
+      "title": "پسوندهای -heit و -keit از صفت‌ها",
+      "content": "**پسوندهای -heit و -keit** را به **صفت‌ها** اضافه می‌کنیم:\n\n**-heit:**\nبرای اکثر صفت‌ها:\n• frei می‌شود die Frei**heit** (آزادی)\n• krank می‌شود die Krank**heit** (بیماری)\n• schön می‌شود die Schön**heit** (زیبایی)\n\n**-keit:**\nبرای صفت‌های با پایان **-lich** یا **-ig**:\n• mög**lich** می‌شود die Möglich**keit** (امکان)\n• traurig می‌شود die Traurig**keit** (غم)\n• freund**lich** می‌شود die Freundlich**keit** (مهربانی)\n\n**قاعده ساده:**\n-lich و -ig می‌شود -keit\nبقیه صفت‌ها می‌شود -heit",
+      "examples": [
+        { "de": "Die Krankheit dauerte zwei Wochen.", "fa": "بیماری دو هفته طول کشید." },
+        { "de": "Ich schätze deine Freundlichkeit.", "fa": "مهربانی‌ات را قدر می‌دانم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "die Erklärung", "fa": "توضیح" },
+      "example": { "text": { "de": "Können Sie mir eine Erklärung geben?", "fa": "می‌توانید به من توضیحی بدهید؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Erklärung",
+      "translation": "توضیح",
+      "syllables": ["Er", "klä", "rung"],
+      "distractors": ["Ar", "kla", "rang"]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["eine wichtige", "ist.", "Entscheidung", "Das"],
+      "correctOrder": [3, 0, 2, 1],
+      "correctSentence": { "de": "Das ist eine wichtige Entscheidung.", "fa": "این یک تصمیم مهم است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["viele", "gibt.", "Es", "Möglichkeiten"],
+      "correctOrder": [2, 3, 0, 1],
+      "correctSentence": { "de": "Es gibt viele Möglichkeiten.", "fa": "امکانات زیادی وجود دارد." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Die Freundschaft", "sehr wichtig.", "zwischen uns", "ist"],
+      "correctOrder": [0, 2, 3, 1],
+      "correctSentence": { "de": "Die Freundschaft zwischen uns ist sehr wichtig.", "fa": "دوستی بین ما خیلی مهم است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "اسم‌های با پسوند -ung همیشه مونث هستند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! همه اسم‌های با پسوند -ung مونث (die) هستند: die Entscheidung، die Erklärung" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "پسوند -keit برای صفت‌هایی با پایان -lich یا -ig استفاده می‌شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! صفت‌های -lich و -ig با پسوند -keit اسم می‌شوند: möglich wird zu Möglichkeit" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "پسوند -ung برای ساختن اسم از صفت‌ها استفاده می‌شود.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! پسوند -ung برای ساختن اسم از **فعل‌ها** استفاده می‌شود: entscheiden wird zu Entscheidung" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "دوستان قدیمی",
+      "scene": {
+        "location": "cafe",
+        "description": { "de": "In einem Café", "fa": "در یک کافه" }
+      },
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Unsere Freundschaft bedeutet mir viel.", "fa": "دوستی ما برایم خیلی ارزشمند است." }, "mood": "happy" },
+        { "speaker": "Tom", "text": { "de": "Ja, und die Freiheit, ehrlich zu sein.", "fa": "بله، و آزادی صادق بودن." }, "mood": "happy" },
+        { "speaker": "Lisa", "text": { "de": "Ich brauche deine Erklärung zu gestern.", "fa": "به توضیح تو درباره دیروز نیاز دارم." }, "mood": "confused" },
+        { "speaker": "Tom", "text": { "de": "Ich gebe dir alle Information.", "fa": "همه اطلاعات را بهت می‌دهم." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "چه چیزی برای لیزا ارزشمند است؟", "options": ["پول", "دوستی", "کار"], "correctIndex": 1, "explanation": "لیزا گفت: Unsere Freundschaft bedeutet mir viel" },
+        { "question": "لیزا به چه چیزی نیاز دارد؟", "options": ["پول", "زمان", "توضیح"], "correctIndex": 2, "explanation": "لیزا گفت: Ich brauche deine Erklärung" }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "ریشه کلمه را با اسم درست جور کنید",
+      "items": [
+        { "id": "i1", "text": "entscheiden (تصمیم گرفتن)" },
+        { "id": "i2", "text": "frei (آزاد)" },
+        { "id": "i3", "text": "möglich (ممکن)" },
+        { "id": "i4", "text": "Freund (دوست)" },
+        { "id": "i5", "text": "erklären (توضیح دادن)" },
+        { "id": "i6", "text": "Information" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "die Entscheidung" },
+        { "id": "m2", "text": "die Freiheit" },
+        { "id": "m3", "text": "die Möglichkeit" },
+        { "id": "m4", "text": "die Freundschaft" },
+        { "id": "m5", "text": "die Erklärung" },
+        { "id": "m6", "text": "die Information" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "این یک تصمیم سخت است.",
+      "sentenceTemplate": "Das ist eine schwere {0}.",
+      "options": ["Entscheidung", "Freiheit", "Möglichkeit", "Freundschaft"],
+      "correctAnswers": [0],
+      "correctTranslation": { "de": "Das ist eine schwere Entscheidung.", "fa": "این یک تصمیم سخت است." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "آزادی خیلی مهم است.",
+      "sentenceTemplate": "Die {0} ist sehr wichtig.",
+      "options": ["Entscheidung", "Freiheit", "Möglichkeit", "Information"],
+      "correctAnswers": [1],
+      "correctTranslation": { "de": "Die Freiheit ist sehr wichtig.", "fa": "آزادی خیلی مهم است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "پسوند درست را انتخاب کنید",
+      "sentence": "Freund wird zu die Freund{0}",
+      "options": ["-ung", "-heit", "-keit", "-schaft"],
+      "correctAnswers": [3],
+      "feedback": { "explanation": "برای نشان دادن رابطه از پسوند -schaft استفاده می‌شود: die Freundschaft" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die {0} zwischen den Ländern ist stark.",
+      "options": ["Entscheidung", "Freundschaft", "Möglichkeit", "Erklärung"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "دوستی بین کشورها قوی است: die Freundschaft" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich brauche mehr {0} über das Projekt.",
+      "options": ["Entscheidung", "Freiheit", "Information", "Freundschaft"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "به اطلاعات بیشتری درباره پروژه نیاز دارم: die Information" }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: گفتگو درباره کار",
+      "passage": {
+        "de": "Maria hat eine wichtige Entscheidung getroffen. Sie hat ihre Freiheit gewählt und einen neuen Job angenommen. Die Möglichkeit, im Ausland zu arbeiten, war sehr attraktiv. Die Freundschaft mit ihren Kollegen wird ihr fehlen, aber sie braucht eine Erklärung für ihre Zukunft. Sie hat alle Information gesammelt und ist bereit für das neue Abenteuer.",
+        "fa": "ماریا یک تصمیم مهم گرفت. او آزادی‌اش را انتخاب کرد و یک کار جدید قبول کرد. امکان کار در خارج از کشور خیلی جذاب بود. دوستی با همکارانش را از دست خواهد داد، اما به توضیحی برای آینده‌اش نیاز دارد. او همه اطلاعات را جمع‌آوری کرده و برای ماجراجویی جدید آماده است."
+      },
+      "questions": [
+        { "question": "ماریا چه تصمیمی گرفت؟", "options": ["ماندن در کار قبلی", "قبول کردن کار جدید", "بازنشستگی"], "correctIndex": 1, "explanation": "در متن آمده: einen neuen Job angenommen" },
+        { "question": "چه چیزی برای ماریا جذاب بود؟", "options": ["حقوق بیشتر", "کار در خارج", "کار کمتر"], "correctIndex": 1, "explanation": "در متن آمده: Möglichkeit, im Ausland zu arbeiten" },
+        { "question": "ماریا چه چیزی را از دست خواهد داد؟", "options": ["پولش", "دوستی با همکاران", "خانه‌اش"], "correctIndex": 1, "explanation": "در متن آمده: Freundschaft mit ihren Kollegen wird ihr fehlen" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die große Entscheidung", "fa": "تصمیم بزرگ" },
+      "characters": ["Nina", "Paul"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Nina und Paul sitzen im Park und reden über ihre Zukunft.", "fa": "نینا و پاول در پارک نشسته‌اند و درباره آینده‌شان صحبت می‌کنند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Nina",
+          "text": { "de": "Ich muss eine wichtige Entscheidung treffen.", "fa": "باید یک تصمیم مهم بگیرم." },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Paul",
+          "text": { "de": "Welche Möglichkeiten hast du?", "fa": "چه امکاناتی داری؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "نینا باید چه کار کند؟",
+          "options": ["یک سفر رفتن", "یک تصمیم گرفتن", "یک کتاب خواندن"],
+          "correctIndex": 1,
+          "explanation": "نینا گفت: eine wichtige Entscheidung treffen"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Nina",
+          "text": { "de": "Ich kann in Berlin bleiben oder nach München ziehen.", "fa": "می‌توانم در برلین بمانم یا به مونیخ نقل مکان کنم." },
+          "mood": "sad"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Paul",
+          "text": { "de": "Die Freiheit zu wählen ist ein Geschenk!", "fa": "آزادی انتخاب یک هدیه است!" },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Nina",
+          "text": { "de": "Ja, aber unsere Freundschaft ist mir wichtig.", "fa": "بله، اما دوستی ما برایم مهم است." },
+          "mood": "sad"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Paul",
+          "text": { "de": "Freundschaft kennt keine Entfernung!", "fa": "دوستی فاصله نمی‌شناسد!" },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "پاول درباره دوستی چه می‌گوید؟",
+          "options": ["دوستی مهم نیست", "دوستی فاصله نمی‌شناسد", "دوستی سخت است"],
+          "correctIndex": 1,
+          "explanation": "پاول گفت: Freundschaft kennt keine Entfernung"
+        }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Das ist eine wichtige Entscheidung.",
+      "translation": "این یک تصمیم مهم است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Die Freiheit ist sehr wichtig.",
+      "translation": "آزادی خیلی مهم است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Unsere Freundschaft ist stark.",
+      "translation": "دوستی ما قوی است."
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع",
+      "instruction": "پسوند درست را سریع انتخاب کنید!",
+      "questions": [
+        { "prompt": "frei wird zu Frei___", "left": "-heit", "right": "-ung", "correctSide": "left" },
+        { "prompt": "entscheiden wird zu Entscheid___", "left": "-heit", "right": "-ung", "correctSide": "right" },
+        { "prompt": "möglich wird zu Möglich___", "left": "-keit", "right": "-schaft", "correctSide": "left" },
+        { "prompt": "Freund wird zu Freund___", "left": "-keit", "right": "-schaft", "correctSide": "right" },
+        { "prompt": "erklären wird zu Erklär___", "left": "-ung", "right": "-heit", "correctSide": "left" },
+        { "prompt": "krank wird zu Krank___", "left": "-ung", "right": "-heit", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "die Entscheidung", "options": ["تصمیم", "آزادی", "دوستی"], "correctAnswerIndex": 0 },
+        { "question": "die Freiheit", "options": ["امکان", "آزادی", "توضیح"], "correctAnswerIndex": 1 },
+        { "question": "die Möglichkeit", "options": ["دوستی", "اطلاعات", "امکان"], "correctAnswerIndex": 2 },
+        { "question": "die Freundschaft", "options": ["دوستی", "تصمیم", "آزادی"], "correctAnswerIndex": 0 },
+        { "question": "die Information", "options": ["توضیح", "اطلاعات", "امکان"], "correctAnswerIndex": 1 },
+        { "question": "die Erklärung", "options": ["آزادی", "دوستی", "توضیح"], "correctAnswerIndex": 2 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "die Entscheidung", "fa": "تصمیم" },
+        { "de": "die Freiheit", "fa": "آزادی" },
+        { "de": "die Möglichkeit", "fa": "امکان" },
+        { "de": "die Freundschaft", "fa": "دوستی" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات درس را پیدا کنید",
+      "targetWords": ["Entscheidung", "Freiheit", "Freundschaft", "Information", "Erklärung"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "die Entscheidung", "fa": "___", "options": ["آزادی", "تصمیم", "دوستی", "توضیح"], "correctIndex": 1 },
+        { "de": "die Möglichkeit", "fa": "___", "options": ["تصمیم", "آزادی", "امکان", "اطلاعات"], "correctIndex": 2 },
+        { "de": "die Erklärung", "fa": "___", "options": ["دوستی", "توضیح", "آزادی", "امکان"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما اسم‌سازی با پسوندها را یاد گرفتید!",
+      "keyPoints": [
+        "پسوند -ung از فعل‌ها: entscheiden wird zu die Entscheidung",
+        "پسوند -heit از صفت‌ها: frei wird zu die Freiheit",
+        "پسوند -keit از صفت‌های -lich و -ig: möglich wird zu die Möglichkeit",
+        "پسوند -schaft برای روابط: Freund wird zu die Freundschaft",
+        "پسوند -tion در کلمات بین‌المللی: die Information",
+        "همه این پسوندها اسم‌های مونث (die) می‌سازند!"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "die Entscheidung", "fa": "تصمیم" } },
+        { "word": { "de": "die Freiheit", "fa": "آزادی" } },
+        { "word": { "de": "die Möglichkeit", "fa": "امکان" } },
+        { "word": { "de": "die Freundschaft", "fa": "دوستی" } },
+        { "word": { "de": "die Information", "fa": "اطلاعات" } },
+        { "word": { "de": "die Erklärung", "fa": "توضیح" } }
+      ]
+    }
+  ]
+}

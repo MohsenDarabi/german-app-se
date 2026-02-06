@@ -8,7 +8,7 @@
 
 **Create B1 lessons - lesson by lesson, wait for user test after each**
 
-Current: `B1-M08` (Passiv Erweiterung) - **MODULE COMPLETE - READY FOR USER TEST**
+Current: `B1-M09` (Nominalisierung) - **MODULE COMPLETE - READY FOR USER TEST**
 
 ---
 
@@ -26,7 +26,7 @@ Current: `B1-M08` (Passiv Erweiterung) - **MODULE COMPLETE - READY FOR USER TEST
 |-------|---------|---------|--------|
 | A1 | 14 | 56+ | Complete |
 | A2 | 18 | 72 | **Complete** ✅ |
-| B1 | 8 | 32 | Module 8 complete |
+| B1 | 9 | 36 | Module 9 complete |
 
 ### A2 Completion (2026-02-05)
 
@@ -65,8 +65,9 @@ Current: `B1-M08` (Passiv Erweiterung) - **MODULE COMPLETE - READY FOR USER TEST
 | M06 | Konjunktiv II Vergangenheit | 4/4 | ✅ Complete |
 | M07 | Präpositionaladverbien | 4/4 | ✅ Complete |
 | M08 | Passiv Erweiterung | 4/4 | ✅ Complete |
+| M09 | Nominalisierung | 4/4 | ✅ Complete |
 
-**Total B1: 32 lessons**
+**Total B1: 36 lessons**
 
 ---
 
@@ -158,10 +159,23 @@ Current: `B1-M08` (Passiv Erweiterung) - **MODULE COMPLETE - READY FOR USER TEST
 
 ---
 
+## B1 Module 9: Nominalisierung (Nominalization)
+
+| Lesson | Title | Status |
+|--------|-------|--------|
+| B1-M09-L01 | Nominalisierung von Verben (das Lernen, das Lesen) | ✅ Complete |
+| B1-M09-L02 | Nominalisierung von Adjektiven (das Gute, der Alte) | ✅ Complete |
+| B1-M09-L03 | Nominalisierung mit Suffixen (-ung, -heit, -keit) | ✅ Complete |
+| B1-M09-L04 | Zusammenfassung | ✅ Complete |
+
+---
+
 ## Recent Changes
 
 | Date | Change |
 |------|--------|
+| 2026-02-06 | **B1 Module 9 (Nominalisierung) COMPLETE - 4 lessons!** |
+| 2026-02-06 | Created B1-M09-L01 to L04 in parallel |
 | 2026-02-06 | **B1 Module 8 (Passiv Erweiterung) COMPLETE - 4 lessons!** |
 | 2026-02-06 | Created B1-M08-L01 to L04 in parallel |
 | 2026-02-06 | **B1 Module 7 (Präpositionaladverbien) COMPLETE - 4 lessons!** |
@@ -202,6 +216,7 @@ Current: `B1-M08` (Passiv Erweiterung) - **MODULE COMPLETE - READY FOR USER TEST
 7. [x] Complete B1 Module 6 (Konjunktiv II Vergangenheit) - 4 lessons
 8. [x] Complete B1 Module 7 (Präpositionaladverbien) - 4 lessons
 9. [x] Complete B1 Module 8 (Passiv Erweiterung) - 4 lessons
-10. [ ] **User tests B1-M08 lessons**
-11. [ ] Plan B1 Module 9 topic
-12. [ ] Continue B1 curriculum development
+10. [x] Complete B1 Module 9 (Nominalisierung) - 4 lessons
+11. [ ] **User tests B1-M09 lessons**
+12. [ ] Plan B1 Module 10 topic
+13. [ ] Continue B1 curriculum development

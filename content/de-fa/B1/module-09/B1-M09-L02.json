@@ -1,0 +1,508 @@
+{
+  "id": "B1-M09-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Nominalisierung von Adjektiven", "fa": "اسم‌سازی از صفت‌ها" },
+  "description": "یاد بگیرید چگونه صفت‌ها را به اسم تبدیل کنید: das Gute, das Schöne, der Alte, die Kranke - برای بیان مفاهیم انتزاعی و توصیف افراد",
+  "level": "B1",
+  "module": 9,
+  "lessonNumber": 2,
+  "totalSteps": 45,
+  "estimatedMinutes": 25,
+  "vocabulary": [
+    { "de": "das Gute", "fa": "چیز خوب/خوبی", "grammar": { "pos": "noun", "gender": "n" } },
+    { "de": "das Schöne", "fa": "چیز زیبا/زیبایی", "grammar": { "pos": "noun", "gender": "n" } },
+    { "de": "das Wichtige", "fa": "چیز مهم/نکته مهم", "grammar": { "pos": "noun", "gender": "n" } },
+    { "de": "der Alte / die Alte", "fa": "مرد پیر / زن پیر", "grammar": { "pos": "noun", "gender": "m/f" } },
+    { "de": "der Kranke / die Kranke", "fa": "مرد بیمار / زن بیمار", "grammar": { "pos": "noun", "gender": "m/f" } },
+    { "de": "das Neue", "fa": "چیز جدید/تازگی", "grammar": { "pos": "noun", "gender": "n" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "اسم‌سازی از صفت‌ها چیست؟",
+      "content": "**Nominalisierung von Adjektiven (اسم‌سازی از صفت‌ها)**\n\nدر آلمانی می‌توانیم صفت‌ها را به اسم تبدیل کنیم!\n\n**دو نوع اصلی:**\n\n1. **مفاهیم انتزاعی (das + صفت)**\n   - das Gute = چیز خوب، خوبی\n   - das Schöne = چیز زیبا، زیبایی\n   - همیشه خنثی (das) هستند\n\n2. **توصیف افراد (der/die + صفت)**\n   - der Alte = مرد پیر\n   - die Alte = زن پیر\n   - جنسیت با شخص مطابقت می‌کند\n\n**نکته:** این اسم‌ها مثل صفت صرف می‌شوند!",
+      "examples": [
+        { "de": "Das Gute an der Sache ist...", "fa": "نکته خوب این موضوع این است که..." },
+        { "de": "Der Alte sitzt auf der Bank.", "fa": "مرد پیر روی نیمکت نشسته است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "das Gute", "fa": "چیز خوب/خوبی" },
+      "example": { "text": { "de": "Das Gute an diesem Job ist das Gehalt.", "fa": "چیز خوب این شغل، حقوق آن است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Gute",
+      "translation": "خوبی، چیز خوب",
+      "syllables": ["Gu", "te"],
+      "distractors": ["Go", "ta", "ti"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "das Schöne", "fa": "چیز زیبا/زیبایی" },
+      "example": { "text": { "de": "Das Schöne am Frühling sind die Blumen.", "fa": "چیز زیبای بهار، گل‌ها هستند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Schöne",
+      "translation": "زیبایی، چیز زیبا",
+      "syllables": ["Schö", "ne"],
+      "distractors": ["Scho", "na", "ni"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s4",
+      "title": "صرف اسم‌های ساخته شده از صفت",
+      "content": "**صرف با حروف تعریف مختلف:**\n\n**با das/der/die (تعریف معین):**\n- das Gute, der Alte, die Kranke\n- پسوند: -e\n\n**با etwas/nichts/viel/wenig (بدون حرف تعریف):**\n- etwas Gutes = چیز خوبی\n- nichts Neues = هیچ چیز جدیدی\n- پسوند: -es (خنثی)\n\n**مقایسه:**\n| با حرف تعریف | بدون حرف تعریف |\n|--------------|----------------|\n| das Gute | etwas Gutes |\n| das Neue | nichts Neues |\n| das Wichtige | viel Wichtiges |",
+      "examples": [
+        { "de": "Gibt es etwas Neues?", "fa": "چیز جدیدی هست؟" },
+        { "de": "Ich habe nichts Wichtiges vergessen.", "fa": "چیز مهمی را فراموش نکردم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "das Wichtige", "fa": "چیز مهم/نکته مهم" },
+      "example": { "text": { "de": "Das Wichtige ist, dass du gesund bist.", "fa": "نکته مهم این است که تو سالم هستی." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Wichtige",
+      "translation": "مهم، چیز مهم",
+      "syllables": ["Wich", "ti", "ge"],
+      "distractors": ["Woch", "ta", "ga"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله درست است؟ با etwas چه پسوندی استفاده می‌شود؟",
+      "options": [
+        "etwas Gute",
+        "etwas Gutes",
+        "etwas Guten",
+        "etwas Gutem"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! با etwas از پسوند -es استفاده می‌کنیم.", "incorrect": "با etwas/nichts/viel/wenig از پسوند -es استفاده می‌کنیم: etwas Gutes" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "برای توصیف یک زن بیمار از کدام فرم استفاده می‌کنیم؟",
+      "options": [
+        "der Kranke",
+        "die Kranke",
+        "das Kranke",
+        "die Kranken"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! برای زن از die استفاده می‌کنیم: die Kranke", "incorrect": "برای توصیف یک زن از die استفاده می‌کنیم: die Kranke" }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "der Alte / die Alte", "fa": "مرد پیر / زن پیر" },
+      "example": { "text": { "de": "Die Alte wohnt allein im Haus.", "fa": "زن پیر تنها در خانه زندگی می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "Alte",
+      "translation": "پیر (اسم)",
+      "syllables": ["Al", "te"],
+      "distractors": ["El", "ta", "ti"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "sentence": "Das {0} an diesem Buch ist die Geschichte.",
+      "options": ["Gutes", "Gute", "Guten", "Gutem"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "با das از پسوند -e استفاده می‌کنیم: das Gute" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Gibt es etwas {0}?",
+      "options": ["Neue", "Neues", "Neuen", "Neuem"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "با etwas از پسوند -es استفاده می‌کنیم: etwas Neues" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "اسم‌سازی برای توصیف افراد",
+      "content": "**توصیف افراد با صفت اسم‌شده:**\n\nوقتی می‌خواهیم فردی را با یک ویژگی توصیف کنیم:\n\n**مفرد:**\n- der Alte (مرد پیر)\n- die Alte (زن پیر)\n- der Kranke (مرد بیمار)\n- die Kranke (زن بیمار)\n\n**جمع:**\n- die Alten (پیرها)\n- die Kranken (بیماران)\n\n**نکته مهم:** این اسم‌ها مثل صفت صرف می‌شوند!\n\n| حالت | مذکر | مونث | جمع |\n|------|------|------|-----|\n| Nominativ | der Alte | die Alte | die Alten |\n| Akkusativ | den Alten | die Alte | die Alten |\n| Dativ | dem Alten | der Alten | den Alten |",
+      "examples": [
+        { "de": "Die Kranken brauchen Hilfe.", "fa": "بیماران به کمک نیاز دارند." },
+        { "de": "Ich helfe dem Alten.", "fa": "به مرد پیر کمک می‌کنم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "der Kranke / die Kranke", "fa": "مرد بیمار / زن بیمار" },
+      "example": { "text": { "de": "Der Arzt untersucht den Kranken.", "fa": "پزشک بیمار (مرد) را معاینه می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "Kranke",
+      "translation": "بیمار (اسم)",
+      "syllables": ["Kran", "ke"],
+      "distractors": ["Kron", "ka", "ki"]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "das Neue", "fa": "چیز جدید/تازگی" },
+      "example": { "text": { "de": "Das Neue gefällt mir besser.", "fa": "چیز جدید بیشتر به من می‌آید." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Neue",
+      "translation": "جدید، چیز جدید",
+      "syllables": ["Neu", "e"],
+      "distractors": ["Nau", "a", "o"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "sentence": "Ich habe nichts {0} gehört.",
+      "options": ["Wichtige", "Wichtiges", "Wichtigen", "Wichtigem"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "با nichts از پسوند -es استفاده می‌کنیم: nichts Wichtiges" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "{0} Kranke muss im Bett bleiben.",
+      "options": ["Das", "Der", "Die", "Den"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "برای مرد بیمار از der استفاده می‌کنیم: der Kranke" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "گفتگو درباره زندگی",
+      "scene": {
+        "location": "park",
+        "description": { "de": "Zwei Freunde sprechen im Park.", "fa": "دو دوست در پارک صحبت می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Was ist das Wichtige im Leben?", "fa": "چیز مهم در زندگی چیست؟" }, "mood": "confused" },
+        { "speaker": "Max", "text": { "de": "Das Gute ist die Gesundheit. Und das Schöne ist die Liebe.", "fa": "چیز خوب، سلامتی است. و چیز زیبا، عشق است." }, "mood": "happy" },
+        { "speaker": "Anna", "text": { "de": "Gibt es etwas Neues bei dir?", "fa": "چیز جدیدی پیش تو هست؟" }, "mood": "neutral" },
+        { "speaker": "Max", "text": { "de": "Nichts Besonderes. Aber ich habe etwas Interessantes gelesen.", "fa": "هیچ چیز خاصی. اما چیز جالبی خواندم." }, "mood": "excited" }
+      ],
+      "questions": [
+        { "question": "به نظر ماکس چیز خوب در زندگی چیست؟", "options": ["پول", "سلامتی", "کار"], "correctIndex": 1, "explanation": "ماکس گفت: Das Gute ist die Gesundheit." },
+        { "question": "ماکس چه کار کرده است؟", "options": ["چیز جالبی خوانده", "فیلم دیده", "سفر رفته"], "correctIndex": 0, "explanation": "ماکس گفت: Ich habe etwas Interessantes gelesen." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["ist", "Wichtige", "die", "Gesundheit", "Das"],
+      "correctOrder": [4, 1, 0, 2, 3],
+      "correctSentence": { "de": "Das Wichtige ist die Gesundheit.", "fa": "چیز مهم، سلامتی است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["es", "Neues", "Gibt", "etwas"],
+      "correctOrder": [2, 0, 3, 1],
+      "correctSentence": { "de": "Gibt es etwas Neues?", "fa": "چیز جدیدی هست؟" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["brauchen", "Die", "Hilfe", "Kranken"],
+      "correctOrder": [1, 3, 0, 2],
+      "correctSentence": { "de": "Die Kranken brauchen Hilfe.", "fa": "بیماران به کمک نیاز دارند." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "اسم‌های ساخته شده از صفت برای مفاهیم انتزاعی همیشه خنثی (das) هستند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! مفاهیم انتزاعی مثل das Gute, das Schöne, das Wichtige همیشه خنثی هستند." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "با etwas و nichts از پسوند -e استفاده می‌کنیم.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! با etwas و nichts از پسوند -es استفاده می‌کنیم: etwas Gutes, nichts Neues" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "die Alte به معنی زن پیر است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! die برای مونث استفاده می‌شود، پس die Alte یعنی زن پیر." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "sentence": "Ich helfe {0} Alten über die Straße.",
+      "options": ["der", "dem", "den", "das"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "helfen با Dativ می‌آید: dem Alten (به مرد پیر)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Das {0} an der Stadt sind die Parks.",
+      "options": ["Schönes", "Schöne", "Schönen", "Schönem"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "با das از پسوند -e استفاده می‌کنیم: das Schöne" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در بیمارستان",
+      "scene": {
+        "location": "hospital",
+        "description": { "de": "Eine Krankenschwester spricht mit einem Arzt.", "fa": "یک پرستار با یک پزشک صحبت می‌کند." }
+      },
+      "lines": [
+        { "speaker": "Krankenschwester", "text": { "de": "Wie geht es dem Kranken in Zimmer 5?", "fa": "حال بیمار در اتاق ۵ چطور است؟" }, "mood": "neutral" },
+        { "speaker": "Arzt", "text": { "de": "Dem Alten geht es besser. Das Gute ist, dass er morgen nach Hause kann.", "fa": "حال مرد پیر بهتر است. نکته خوب این است که فردا می‌تواند برود خانه." }, "mood": "happy" },
+        { "speaker": "Krankenschwester", "text": { "de": "Und die Kranke in Zimmer 8?", "fa": "و بیمار (زن) در اتاق ۸؟" }, "mood": "confused" },
+        { "speaker": "Arzt", "text": { "de": "Das Wichtige ist, dass sie sich ausruht. Nichts Neues sonst.", "fa": "نکته مهم این است که استراحت کند. در غیر این صورت هیچ چیز جدیدی نیست." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "بیمار اتاق ۵ کی می‌تواند برود خانه؟", "options": ["امروز", "فردا", "هفته آینده"], "correctIndex": 1, "explanation": "پزشک گفت: er morgen nach Hause kann." },
+        { "question": "برای بیمار اتاق ۸ چه چیزی مهم است؟", "options": ["دارو خوردن", "استراحت کردن", "ورزش کردن"], "correctIndex": 1, "explanation": "پزشک گفت: Das Wichtige ist, dass sie sich ausruht." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "جفت‌های درست را پیدا کنید",
+      "items": [
+        { "id": "i1", "text": "das Gute" },
+        { "id": "i2", "text": "etwas Neues" },
+        { "id": "i3", "text": "der Alte" },
+        { "id": "i4", "text": "die Kranke" },
+        { "id": "i5", "text": "nichts Wichtiges" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "چیز خوب" },
+        { "id": "m2", "text": "چیز جدیدی" },
+        { "id": "m3", "text": "مرد پیر" },
+        { "id": "m4", "text": "زن بیمار" },
+        { "id": "m5", "text": "هیچ چیز مهمی" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "چیز جدیدی هست؟",
+      "sentenceTemplate": "Gibt es {0} {1}?",
+      "options": ["etwas", "Neues", "nichts", "Gutes"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Gibt es etwas Neues?", "fa": "چیز جدیدی هست؟" }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "چیز مهم، سلامتی است.",
+      "sentenceTemplate": "Das {0} ist die {1}.",
+      "options": ["Wichtige", "Gesundheit", "Gute", "Liebe"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Das Wichtige ist die Gesundheit.", "fa": "چیز مهم، سلامتی است." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: فلسفه زندگی",
+      "passage": {
+        "de": "Was ist das Wichtige im Leben? Viele Menschen sagen: das Gute ist die Gesundheit. Andere sagen: das Schöne ist die Liebe. Aber was ist mit dem Neuen? Das Neue bringt Hoffnung und Freude. Ohne etwas Neues wird das Leben langweilig. Für die Alten ist das Wichtige oft die Familie. Die Kranken hoffen auf etwas Gutes: Gesundheit. Jeder Mensch sucht nach etwas Besonderem. Das Beste ist, wenn man alles zusammen hat: Gesundheit, Liebe und Hoffnung.",
+        "fa": "چیز مهم در زندگی چیست؟ خیلی از مردم می‌گویند: چیز خوب، سلامتی است. بقیه می‌گویند: چیز زیبا، عشق است. اما چیز جدید چطور؟ چیز جدید امید و شادی می‌آورد. بدون چیز جدیدی، زندگی کسل‌کننده می‌شود. برای پیرها، چیز مهم اغلب خانواده است. بیماران به چیز خوبی امیدوارند: سلامتی. هر انسانی به دنبال چیز خاصی می‌گردد. بهترین چیز این است که همه را با هم داشته باشی: سلامتی، عشق و امید."
+      },
+      "questions": [
+        { "question": "به نظر متن، چیز جدید چه می‌آورد؟", "options": ["پول", "امید و شادی", "مشکل"], "correctIndex": 1, "explanation": "Das Neue bringt Hoffnung und Freude." },
+        { "question": "برای پیرها چیز مهم چیست؟", "options": ["پول", "کار", "خانواده"], "correctIndex": 2, "explanation": "Für die Alten ist das Wichtige oft die Familie." },
+        { "question": "بیماران به چه امیدوارند؟", "options": ["سلامتی", "پول", "سفر"], "correctIndex": 0, "explanation": "Die Kranken hoffen auf etwas Gutes: Gesundheit." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der weise Alte", "fa": "مرد پیر خردمند" },
+      "characters": ["Der Alte", "Ein Junge"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Ein Junge trifft einen weisen Alten im Park.", "fa": "یک پسر با یک پیرمرد خردمند در پارک ملاقات می‌کند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Junge",
+          "text": { "de": "Was ist das Wichtige im Leben?", "fa": "چیز مهم در زندگی چیست؟" },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Der Alte",
+          "text": { "de": "Das Gute ist die Liebe, mein Kind.", "fa": "چیز خوب، عشق است، فرزندم." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "پیرمرد چه چیزی را خوب می‌داند؟",
+          "options": ["پول", "عشق", "کار"],
+          "correctIndex": 1,
+          "explanation": "پیرمرد گفت: Das Gute ist die Liebe."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Junge",
+          "text": { "de": "Und was ist das Schöne?", "fa": "و چیز زیبا چیست؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Der Alte",
+          "text": { "de": "Das Schöne ist, wenn du anderen hilfst. Nichts Besseres gibt es.", "fa": "چیز زیبا این است که به دیگران کمک کنی. هیچ چیز بهتری وجود ندارد." },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "به نظر پیرمرد چیز زیبا چیست؟",
+          "options": ["پول داشتن", "به دیگران کمک کردن", "مشهور شدن"],
+          "correctIndex": 1,
+          "explanation": "پیرمرد گفت: Das Schöne ist, wenn du anderen hilfst."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Junge",
+          "text": { "de": "Danke! Ich habe etwas Wichtiges gelernt.", "fa": "ممنون! چیز مهمی یاد گرفتم." },
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع",
+      "instruction": "پسوند درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "das Gut...", "left": "-e", "right": "-es", "correctSide": "left" },
+        { "prompt": "etwas Gut...", "left": "-e", "right": "-es", "correctSide": "right" },
+        { "prompt": "nichts Neu...", "left": "-e", "right": "-es", "correctSide": "right" },
+        { "prompt": "das Schön...", "left": "-e", "right": "-es", "correctSide": "left" },
+        { "prompt": "das Wichtig...", "left": "-e", "right": "-es", "correctSide": "left" },
+        { "prompt": "etwas Schön...", "left": "-e", "right": "-es", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Das Gute ist die Gesundheit.",
+      "translation": "چیز خوب، سلامتی است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Gibt es etwas Neues?",
+      "translation": "چیز جدیدی هست؟"
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Die Kranken brauchen Hilfe.",
+      "translation": "بیماران به کمک نیاز دارند."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "das Gute = ?", "options": ["چیز خوب", "چیز بد"], "correctAnswerIndex": 0 },
+        { "question": "etwas Neues = ?", "options": ["چیز قدیمی", "چیز جدیدی"], "correctAnswerIndex": 1 },
+        { "question": "der Alte = ?", "options": ["مرد پیر", "زن پیر"], "correctAnswerIndex": 0 },
+        { "question": "die Kranke = ?", "options": ["مرد بیمار", "زن بیمار"], "correctAnswerIndex": 1 },
+        { "question": "das Wichtige = ?", "options": ["چیز مهم", "چیز ساده"], "correctAnswerIndex": 0 },
+        { "question": "nichts Besonderes = ?", "options": ["چیز خاصی", "هیچ چیز خاصی"], "correctAnswerIndex": 1 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "das Gute", "fa": "چیز خوب" },
+        { "de": "das Schöne", "fa": "چیز زیبا" },
+        { "de": "das Wichtige", "fa": "چیز مهم" },
+        { "de": "das Neue", "fa": "چیز جدید" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "صفت‌های اسم‌شده این درس را پیدا کنید",
+      "targetWords": ["GUTE", "SCHONE", "WICHTIGE", "ALTE", "KRANKE", "NEUE"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "das Gute", "fa": "___", "options": ["چیز بد", "چیز خوب", "چیز قدیمی", "چیز ساده"], "correctIndex": 1 },
+        { "de": "etwas Neues", "fa": "___", "options": ["چیز قدیمی", "هیچ چیز", "چیز جدیدی", "چیز بزرگ"], "correctIndex": 2 },
+        { "de": "die Alte", "fa": "___", "options": ["مرد پیر", "زن جوان", "زن پیر", "مرد جوان"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما اسم‌سازی از صفت‌ها در آلمانی را یاد گرفتید!",
+      "keyPoints": [
+        "مفاهیم انتزاعی: das + صفت (das Gute, das Schöne) - همیشه خنثی",
+        "توصیف افراد: der/die + صفت (der Alte, die Kranke) - جنسیت مطابق شخص",
+        "با das/der/die: پسوند -e (das Gute, der Alte)",
+        "با etwas/nichts/viel/wenig: پسوند -es (etwas Gutes, nichts Neues)",
+        "این اسم‌ها مثل صفت صرف می‌شوند"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "das Gute", "fa": "چیز خوب/خوبی" } },
+        { "word": { "de": "das Schöne", "fa": "چیز زیبا/زیبایی" } },
+        { "word": { "de": "das Wichtige", "fa": "چیز مهم/نکته مهم" } },
+        { "word": { "de": "der Alte / die Alte", "fa": "مرد پیر / زن پیر" } },
+        { "word": { "de": "der Kranke / die Kranke", "fa": "مرد بیمار / زن بیمار" } },
+        { "word": { "de": "das Neue", "fa": "چیز جدید/تازگی" } }
+      ]
+    }
+  ]
+}

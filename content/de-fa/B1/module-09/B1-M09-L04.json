@@ -1,0 +1,493 @@
+{
+  "id": "B1-M09-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Zusammenfassung - Nominalisierung", "fa": "جمع‌بندی - اسم‌سازی" },
+  "description": "مرور جامع انواع اسم‌سازی در آلمانی: اسم‌سازی از فعل، اسم‌سازی از صفت، پسوندهای اسم‌ساز و کاربرد با حروف اضافه",
+  "level": "B1",
+  "module": 9,
+  "lessonNumber": 4,
+  "totalSteps": 45,
+  "estimatedMinutes": 25,
+  "vocabulary": [
+    { "de": "das Sprechen", "fa": "صحبت کردن، گفتگو", "grammar": { "pos": "noun", "noun": { "artikel": "n", "note": "nominalized verb" } } },
+    { "de": "das Beste", "fa": "بهترین چیز", "grammar": { "pos": "noun", "noun": { "artikel": "n", "note": "nominalized adjective" } } },
+    { "de": "die Bedeutung", "fa": "معنی، مفهوم", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Bedeutungen" } } },
+    { "de": "die Sicherheit", "fa": "امنیت، ایمنی", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Sicherheiten" } } },
+    { "de": "die Schwierigkeit", "fa": "دشواری، مشکل", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Schwierigkeiten" } } },
+    { "de": "die Wissenschaft", "fa": "علم، دانش", "grammar": { "pos": "noun", "noun": { "artikel": "f", "plural": "Wissenschaften" } } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "مرور کلی: اسم‌سازی در آلمانی",
+      "content": "**اسم‌سازی چیست؟**\nتبدیل فعل یا صفت به اسم.\n\n| نوع | ساختار | مثال |\n|-----|--------|------|\n| از فعل | das + Infinitiv | das Lesen (خواندن) |\n| از صفت | das + Adjektiv | das Gute (چیز خوب) |\n| با پسوند | ریشه + -ung/-heit/-keit/-schaft | die Bedeutung |\n\n**نکته مهم:**\nاسم‌های ساخته شده از فعل همیشه خنثی هستند!",
+      "examples": [
+        { "de": "Das Lernen macht Spaß.", "fa": "یادگیری سرگرم‌کننده است." },
+        { "de": "Das Wichtigste ist die Gesundheit.", "fa": "مهم‌ترین چیز سلامتی است." },
+        { "de": "Die Freundschaft ist wichtig.", "fa": "دوستی مهم است." }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s2",
+      "title": "اسم‌سازی از فعل: das + Infinitiv",
+      "content": "**قاعده:**\nهر فعل آلمانی می‌تواند با das به اسم تبدیل شود.\n\n| فعل | اسم | معنی |\n|-----|-----|------|\n| lesen | das Lesen | خواندن |\n| sprechen | das Sprechen | صحبت کردن |\n| schreiben | das Schreiben | نوشتن |\n\n**کاربرد با حروف اضافه:**\n- beim Lesen = هنگام خواندن (bei + dem)\n- zum Schwimmen = برای شنا (zu + dem)\n- vor dem Essen = قبل از غذا",
+      "examples": [
+        { "de": "Beim Kochen höre ich Musik.", "fa": "هنگام آشپزی موسیقی گوش می‌دهم." },
+        { "de": "Zum Lernen brauche ich Ruhe.", "fa": "برای یادگیری به آرامش نیاز دارم." }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s3",
+      "title": "پسوندهای اسم‌ساز: همه مونث هستند",
+      "content": "**همه این پسوندها اسم مونث می‌سازند:**\n\n| پسوند | مثال | معنی |\n|-------|------|------|\n| -ung | die Bedeutung | معنی |\n| -heit | die Sicherheit | امنیت |\n| -keit | die Schwierigkeit | دشواری |\n| -schaft | die Wissenschaft | علم |\n| -tion | die Information | اطلاعات |\n\n**نکته برای فارسی‌زبانان:**\nمثل پسوند -ی در فارسی: زیبا → زیبایی",
+      "examples": [
+        { "de": "Die Freiheit ist wichtig.", "fa": "آزادی مهم است." },
+        { "de": "Die Möglichkeit besteht.", "fa": "این امکان وجود دارد." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "das Sprechen", "fa": "صحبت کردن، گفتگو" },
+      "example": { "text": { "de": "Das Sprechen vor Publikum ist schwer.", "fa": "صحبت کردن جلوی جمع دشوار است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Sprechen",
+      "translation": "صحبت کردن، گفتگو",
+      "syllables": ["Spre", "chen"],
+      "distractors": ["Spra", "kan", "kun"]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "das Beste", "fa": "بهترین چیز" },
+      "example": { "text": { "de": "Das Beste kommt zum Schluss.", "fa": "بهترین چیز در آخر می‌آید." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Beste",
+      "translation": "بهترین چیز",
+      "syllables": ["Bes", "te"],
+      "distractors": ["Bas", "ta", "ti"]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "die Bedeutung", "fa": "معنی، مفهوم" },
+      "example": { "text": { "de": "Was ist die Bedeutung dieses Wortes?", "fa": "معنی این کلمه چیست؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Bedeutung",
+      "translation": "معنی، مفهوم",
+      "syllables": ["Be", "deu", "tung"],
+      "distractors": ["Ba", "dau", "tang"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله درباره اسم‌سازی از فعل درست است؟",
+      "options": ["اسم‌های ساخته شده از فعل مونث هستند.", "اسم‌های ساخته شده از فعل مذکر هستند.", "اسم‌های ساخته شده از فعل خنثی هستند.", "جنسیت به فعل اصلی بستگی دارد."],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! das + Infinitiv همیشه خنثی است: das Lesen, das Sprechen", "incorrect": "اسم‌های ساخته شده از فعل با das همیشه خنثی هستند." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "پسوند -heit چه جنسیتی به اسم می‌دهد؟",
+      "options": ["مذکر (der)", "خنثی (das)", "مونث (die)", "بستگی به ریشه دارد"],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! پسوندهای -heit, -keit, -ung, -schaft همه مونث هستند.", "incorrect": "پسوند -heit همیشه اسم مونث می‌سازد: die Sicherheit, die Freiheit" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "حرف تعریف مناسب را انتخاب کنید",
+      "sentence": "{0} Lesen ist mein Hobby.",
+      "options": ["Das", "Die", "Der", "Den"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "اسم‌های ساخته شده از فعل با Infinitiv همیشه خنثی هستند: das Lesen" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "حرف تعریف مناسب را انتخاب کنید",
+      "sentence": "{0} Schwierigkeit ist groß.",
+      "options": ["Die", "Das", "Der", "Den"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "پسوند -keit همیشه مونث است: die Schwierigkeit" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "ترکیب حرف اضافه درست را انتخاب کنید",
+      "sentence": "{0} Essen wasche ich mir die Hände.",
+      "options": ["Vor dem", "Nach das", "Bei der", "Zu die"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "قبل از غذا: vor dem Essen (das Essen خنثی است)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "گفتگو درباره یادگیری",
+      "scene": {
+        "location": "classroom",
+        "description": { "de": "Im Klassenzimmer", "fa": "در کلاس درس" }
+      },
+      "lines": [
+        { "speaker": "Eli", "text": { "de": "Was ist beim Deutschlernen am schwierigsten?", "fa": "در یادگیری آلمانی چه چیزی سخت‌ترین است؟" }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Das Sprechen finde ich am schwierigsten.", "fa": "به نظر من صحبت کردن سخت‌ترین است." }, "mood": "confused" },
+        { "speaker": "Eli", "text": { "de": "Wirklich? Die Bedeutung der Wörter ist für mich schwerer.", "fa": "واقعاً؟ معنی کلمات برای من سخت‌تر است." }, "mood": "surprised" },
+        { "speaker": "Tom", "text": { "de": "Das Beste ist, viel zu üben!", "fa": "بهترین کار این است که زیاد تمرین کنی!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "برای تام چه چیزی سخت‌ترین است؟", "options": ["نوشتن", "صحبت کردن", "خواندن"], "correctIndex": 1, "explanation": "تام گفت: Das Sprechen finde ich am schwierigsten" },
+        { "question": "راه حل پیشنهادی تام چیست؟", "options": ["کتاب خواندن", "زیاد تمرین کردن", "فیلم دیدن"], "correctIndex": 1, "explanation": "تام گفت: Das Beste ist, viel zu üben!" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "die Sicherheit", "fa": "امنیت، ایمنی" },
+      "example": { "text": { "de": "Die Sicherheit der Kinder ist wichtig.", "fa": "امنیت کودکان مهم است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "Sicherheit",
+      "translation": "امنیت، ایمنی",
+      "syllables": ["Si", "cher", "heit"],
+      "distractors": ["Sa", "kar", "hait"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "die Schwierigkeit", "fa": "دشواری، مشکل" },
+      "example": { "text": { "de": "Trotz aller Schwierigkeiten hat er es geschafft.", "fa": "با وجود همه مشکلات موفق شد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "Schwierigkeit",
+      "translation": "دشواری، مشکل",
+      "syllables": ["Schwie", "rig", "keit"],
+      "distractors": ["Schwa", "rag", "kait"]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "die Wissenschaft", "fa": "علم، دانش" },
+      "example": { "text": { "de": "Die Wissenschaft macht große Fortschritte.", "fa": "علم پیشرفت‌های بزرگی می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Wissenschaft",
+      "translation": "علم، دانش",
+      "syllables": ["Wis", "sen", "schaft"],
+      "distractors": ["Was", "san", "shaft"]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Spaß.", "macht", "Das Lernen"],
+      "correctOrder": [2, 1, 0],
+      "correctSentence": { "de": "Das Lernen macht Spaß.", "fa": "یادگیری سرگرم‌کننده است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["wichtig.", "Die Sicherheit ist", "sehr"],
+      "correctOrder": [1, 2, 0],
+      "correctSentence": { "de": "Die Sicherheit ist sehr wichtig.", "fa": "امنیت بسیار مهم است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Musik.", "Beim Kochen", "höre ich"],
+      "correctOrder": [1, 2, 0],
+      "correctSentence": { "de": "Beim Kochen höre ich Musik.", "fa": "هنگام آشپزی موسیقی گوش می‌دهم." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "پسوندهای -ung, -heit, -keit, -schaft همه اسم مونث می‌سازند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! همه این پسوندها مونث هستند: die Bedeutung, die Freiheit, die Möglichkeit, die Freundschaft" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "عبارت beim Lesen به معنی قبل از خواندن است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! beim Lesen = هنگام خواندن (bei + dem). قبل از خواندن = vor dem Lesen" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای ساختن اسم از صفت برای اشخاص از der یا die استفاده می‌کنیم.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! der Alte = مرد پیر، die Alte = زن پیر. ولی برای مفاهیم انتزاعی: das Gute = چیز خوب" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "گفتگو درباره علم",
+      "scene": {
+        "location": "university",
+        "description": { "de": "An der Universität", "fa": "در دانشگاه" }
+      },
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Die Wissenschaft hat große Bedeutung.", "fa": "علم اهمیت زیادی دارد." }, "mood": "excited" },
+        { "speaker": "Alex", "text": { "de": "Ja, trotz aller Schwierigkeiten macht sie Fortschritte.", "fa": "بله، با وجود همه مشکلات پیشرفت می‌کند." }, "mood": "happy" },
+        { "speaker": "Lisa", "text": { "de": "Die Sicherheit bei Experimenten ist auch wichtig.", "fa": "امنیت در آزمایش‌ها هم مهم است." }, "mood": "neutral" },
+        { "speaker": "Alex", "text": { "de": "Das Wichtigste ist die Genauigkeit.", "fa": "مهم‌ترین چیز دقت است." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "به گفته الکس، مهم‌ترین چیز چیست؟", "options": ["سرعت", "دقت", "امنیت"], "correctIndex": 1, "explanation": "الکس گفت: Das Wichtigste ist die Genauigkeit" },
+        { "question": "لیزا چه چیزی را مهم می‌داند؟", "options": ["امنیت در آزمایش‌ها", "سرعت کار", "هزینه تحقیق"], "correctIndex": 0, "explanation": "لیزا گفت: Die Sicherheit bei Experimenten ist auch wichtig" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "sentence": "Ich habe etwas {0} gehört.",
+      "options": ["Neues", "Neue", "Neuen", "Neuem"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "etwas + صفت اسم‌شده: etwas Neues (چیز جدیدی)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "sentence": "Er hat nichts {0} gesagt.",
+      "options": ["Besonderes", "Besondere", "Besonderen", "Besonderem"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "nichts + صفت اسم‌شده: nichts Besonderes (چیز خاصی)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "حرف اضافه درست را انتخاب کنید",
+      "sentence": "{0} Schwimmen gehe ich ins Hallenbad.",
+      "options": ["Zum", "Beim", "Vor dem", "Nach dem"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "برای شنا کردن: zum Schwimmen (zu + dem)" }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "پسوند را با جنسیت آن جفت کنید",
+      "items": [
+        { "id": "i1", "text": "-ung (Bedeutung)" },
+        { "id": "i2", "text": "-heit (Sicherheit)" },
+        { "id": "i3", "text": "-keit (Schwierigkeit)" },
+        { "id": "i4", "text": "-schaft (Wissenschaft)" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "die (مونث)" },
+        { "id": "m2", "text": "das (خنثی)" },
+        { "id": "m3", "text": "der (مذکر)" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m1"], ["i3", "m1"], ["i4", "m1"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "هنگام خواندن به آرامش نیاز دارم.",
+      "sentenceTemplate": "{0} Lesen brauche ich {1}.",
+      "options": ["Beim", "Ruhe", "Zum", "Zeit"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Beim Lesen brauche ich Ruhe.", "fa": "هنگام خواندن به آرامش نیاز دارم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "بهترین چیز این است که سالم باشیم.",
+      "sentenceTemplate": "{0} Beste ist, {1} zu sein.",
+      "options": ["Das", "gesund", "Die", "glücklich"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Das Beste ist, gesund zu sein.", "fa": "بهترین چیز این است که سالم باشیم." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: اهمیت یادگیری",
+      "passage": {
+        "de": "Das Lernen einer Fremdsprache hat große Bedeutung in der modernen Welt. Die Schwierigkeit liegt oft beim Sprechen und Verstehen. Die Wissenschaft zeigt, dass das Beste regelmäßiges Üben ist. Beim Lesen verbessert man den Wortschatz. Zum Sprechen braucht man Übungspartner. Die Sicherheit im Umgang mit der Sprache kommt mit der Zeit. Nichts Neues lernen wir ohne Mühe, aber etwas Wichtiges gewinnen wir: die Freiheit der Kommunikation.",
+        "fa": "یادگیری زبان خارجی در دنیای مدرن اهمیت زیادی دارد. دشواری اغلب در صحبت کردن و فهمیدن است. علم نشان می‌دهد که بهترین کار تمرین منظم است. هنگام خواندن دایره لغات بهبود می‌یابد. برای صحبت کردن به شریک تمرین نیاز داریم. اعتماد به نفس در استفاده از زبان با گذشت زمان می‌آید. هیچ چیز جدیدی را بدون زحمت یاد نمی‌گیریم، اما چیز مهمی به دست می‌آوریم: آزادی ارتباط."
+      },
+      "questions": [
+        { "question": "به گفته متن، دشواری یادگیری زبان در چیست؟", "options": ["نوشتن", "صحبت کردن و فهمیدن", "گرامر"], "correctIndex": 1, "explanation": "متن گفت: Die Schwierigkeit liegt oft beim Sprechen und Verstehen" },
+        { "question": "برای صحبت کردن به چه چیزی نیاز داریم؟", "options": ["کتاب", "شریک تمرین", "فیلم"], "correctIndex": 1, "explanation": "متن گفت: Zum Sprechen braucht man Übungspartner" },
+        { "question": "چه چیز مهمی از یادگیری زبان به دست می‌آوریم؟", "options": ["پول", "شغل", "آزادی ارتباط"], "correctIndex": 2, "explanation": "متن گفت: etwas Wichtiges gewinnen wir: die Freiheit der Kommunikation" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der Sprachkurs", "fa": "کلاس زبان" },
+      "characters": ["Eli", "Tom"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Eli und Tom besuchen einen Deutschkurs.", "fa": "الی و تام در کلاس آلمانی شرکت می‌کنند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Eli",
+          "text": { "de": "Das Sprechen ist heute dran!", "fa": "امروز نوبت صحبت کردن است!" },
+          "mood": "excited"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Tom",
+          "text": { "de": "Oh nein, das ist meine größte Schwierigkeit!", "fa": "اوه نه، این بزرگ‌ترین مشکل من است!" },
+          "mood": "confused"
+        },
+        {
+          "type": "question",
+          "question": "مشکل تام چیست؟",
+          "options": ["نوشتن", "صحبت کردن", "خواندن"],
+          "correctIndex": 1,
+          "explanation": "تام گفت صحبت کردن بزرگ‌ترین مشکل اوست."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Eli",
+          "text": { "de": "Das Beste ist, einfach anzufangen. Die Sicherheit kommt mit der Zeit.", "fa": "بهترین کار این است که شروع کنی. اعتماد به نفس با زمان می‌آید." },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Tom",
+          "text": { "de": "Du hast recht. Die Bedeutung von Übung ist klar!", "fa": "حق با توست. اهمیت تمرین واضح است!" },
+          "mood": "happy"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Nach dem Unterricht sprechen beide nur noch Deutsch!", "fa": "بعد از کلاس هر دو فقط آلمانی صحبت می‌کنند!" }
+        },
+        {
+          "type": "question",
+          "question": "توصیه الی به تام چه بود؟",
+          "options": ["کتاب بخواند", "شروع کند", "استراحت کند"],
+          "correctIndex": 1,
+          "explanation": "الی گفت: Das Beste ist, einfach anzufangen"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: جنسیت اسم‌ها",
+      "instruction": "حرف تعریف درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "Lesen (خواندن)", "left": "die", "right": "das", "correctSide": "right" },
+        { "prompt": "Bedeutung (معنی)", "left": "die", "right": "das", "correctSide": "left" },
+        { "prompt": "Sprechen (صحبت کردن)", "left": "die", "right": "das", "correctSide": "right" },
+        { "prompt": "Sicherheit (امنیت)", "left": "die", "right": "das", "correctSide": "left" },
+        { "prompt": "Beste (بهترین چیز)", "left": "die", "right": "das", "correctSide": "right" },
+        { "prompt": "Wissenschaft (علم)", "left": "die", "right": "das", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Das Lernen macht Spaß.",
+      "translation": "یادگیری سرگرم‌کننده است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Die Bedeutung ist wichtig.",
+      "translation": "معنی مهم است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Beim Kochen höre ich Musik.",
+      "translation": "هنگام آشپزی موسیقی گوش می‌دهم."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: اسم‌سازی",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "das + Infinitiv = ?", "options": ["خنثی", "مونث"], "correctAnswerIndex": 0 },
+        { "question": "پسوند -ung = ?", "options": ["مونث", "خنثی"], "correctAnswerIndex": 0 },
+        { "question": "پسوند -heit = ?", "options": ["مونث", "مذکر"], "correctAnswerIndex": 0 },
+        { "question": "beim Lesen = ?", "options": ["هنگام خواندن", "برای خواندن"], "correctAnswerIndex": 0 },
+        { "question": "zum Schwimmen = ?", "options": ["برای شنا", "هنگام شنا"], "correctAnswerIndex": 0 },
+        { "question": "etwas Neues = ?", "options": ["چیز جدیدی", "چیز قدیمی"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "das Sprechen", "fa": "صحبت کردن" },
+        { "de": "die Bedeutung", "fa": "معنی" },
+        { "de": "die Sicherheit", "fa": "امنیت" },
+        { "de": "die Wissenschaft", "fa": "علم" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی اسم‌های ساخته شده",
+      "instruction": "اسم‌های این درس را پیدا کنید",
+      "targetWords": ["Sprechen", "Bedeutung", "Sicherheit", "Schwierigkeit", "Wissenschaft", "Beste"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "das Sprechen", "fa": "___", "options": ["نوشتن", "صحبت کردن", "خواندن", "شنیدن"], "correctIndex": 1 },
+        { "de": "die Schwierigkeit", "fa": "___", "options": ["آسانی", "دشواری", "زیبایی", "سرعت"], "correctIndex": 1 },
+        { "de": "die Wissenschaft", "fa": "___", "options": ["هنر", "ورزش", "علم", "تجارت"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "comp2",
+      "title": "تبریک! بخش اسم‌سازی تمام شد!",
+      "message": "شما همه انواع اسم‌سازی در آلمانی را یاد گرفتید!",
+      "keyPoints": [
+        "اسم‌سازی از فعل: das + Infinitiv (همیشه خنثی)",
+        "اسم‌سازی از صفت: das Gute (خنثی برای مفاهیم)، der/die Alte (برای اشخاص)",
+        "پسوندهای -ung, -heit, -keit, -schaft, -tion همه مونث هستند",
+        "کاربرد با حروف اضافه: beim Lesen, zum Schwimmen, vor dem Essen",
+        "etwas/nichts + صفت اسم‌شده: etwas Neues, nichts Besonderes"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "das Sprechen", "fa": "صحبت کردن، گفتگو" } },
+        { "word": { "de": "das Beste", "fa": "بهترین چیز" } },
+        { "word": { "de": "die Bedeutung", "fa": "معنی، مفهوم" } },
+        { "word": { "de": "die Sicherheit", "fa": "امنیت، ایمنی" } },
+        { "word": { "de": "die Schwierigkeit", "fa": "دشواری، مشکل" } },
+        { "word": { "de": "die Wissenschaft", "fa": "علم، دانش" } }
+      ]
+    }
+  ]
+}

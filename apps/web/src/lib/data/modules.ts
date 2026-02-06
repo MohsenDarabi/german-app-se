@@ -1283,6 +1283,37 @@ const DE_FA_B1_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/B1/B1-M08-L04"
       }
     ]
+  },
+  {
+    id: "module-09",
+    title: "بخش ۹: اسم‌سازی (Nominalisierung)",
+    level: "B1",
+    lessons: [
+      {
+        id: "B1-M09-L01",
+        title: "Nominalisierung von Verben - اسم‌سازی از فعل",
+        description: "یاد بگیرید چطور از مصدر اسم بسازید: das Lernen, das Lesen, das Schwimmen.",
+        path: "/learn/de-fa/B1/B1-M09-L01"
+      },
+      {
+        id: "B1-M09-L02",
+        title: "Nominalisierung von Adjektiven - اسم‌سازی از صفت",
+        description: "یاد بگیرید چطور از صفت اسم بسازید: das Gute, das Schöne, der/die Alte.",
+        path: "/learn/de-fa/B1/B1-M09-L02"
+      },
+      {
+        id: "B1-M09-L03",
+        title: "Nominalisierung mit Suffixen - اسم‌سازی با پسوند",
+        description: "یاد بگیرید پسوندهای اسم‌ساز: -ung, -heit, -keit, -schaft, -tion (همه مونث!).",
+        path: "/learn/de-fa/B1/B1-M09-L03"
+      },
+      {
+        id: "B1-M09-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل اسم‌سازی: از فعل، از صفت و با پسوندها.",
+        path: "/learn/de-fa/B1/B1-M09-L04"
+      }
+    ]
   }
 ];
 

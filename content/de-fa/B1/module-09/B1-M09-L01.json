@@ -1,0 +1,520 @@
+{
+  "id": "B1-M09-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Nominalisierung von Verben", "fa": "اسم‌سازی از افعال" },
+  "description": "یاد بگیرید چگونه مصدر افعال را به اسم تبدیل کنید: das Lernen، das Schwimmen، das Lesen. همه این اسم‌ها خنثی هستند و با beim و zum استفاده می‌شوند.",
+  "level": "B1",
+  "module": 9,
+  "lessonNumber": 1,
+  "totalSteps": 45,
+  "estimatedMinutes": 25,
+  "vocabulary": [
+    { "de": "das Lernen", "fa": "یادگیری", "grammar": { "pos": "noun", "gender": "neuter" } },
+    { "de": "das Schwimmen", "fa": "شنا", "grammar": { "pos": "noun", "gender": "neuter" } },
+    { "de": "das Lesen", "fa": "خواندن", "grammar": { "pos": "noun", "gender": "neuter" } },
+    { "de": "das Schreiben", "fa": "نوشتن", "grammar": { "pos": "noun", "gender": "neuter" } },
+    { "de": "das Essen", "fa": "غذا خوردن", "grammar": { "pos": "noun", "gender": "neuter" } },
+    { "de": "das Leben", "fa": "زندگی", "grammar": { "pos": "noun", "gender": "neuter" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "اسم‌سازی از افعال چیست؟",
+      "content": "**Nominalisierung von Verben (اسم‌سازی از افعال)**\n\nدر آلمانی می‌توانیم هر مصدری را به اسم تبدیل کنیم. فقط کافی است حرف اول را بزرگ بنویسیم و das اضافه کنیم!\n\n**قاعده:**\n```\nمصدر فعل + das = اسم خنثی\n```\n\n**مثال‌ها:**\n- lernen (یاد گرفتن) → **das Lernen** (یادگیری)\n- schwimmen (شنا کردن) → **das Schwimmen** (شنا)\n- lesen (خواندن) → **das Lesen** (خواندن)\n\n**نکته مهم:** همه این اسم‌ها **خنثی (das)** هستند!",
+      "examples": [
+        { "de": "Das Lernen macht Spaß.", "fa": "یادگیری لذت‌بخش است." },
+        { "de": "Das Schwimmen ist gesund.", "fa": "شنا کردن سالم است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "das Lernen", "fa": "یادگیری" },
+      "example": { "text": { "de": "Das Lernen einer neuen Sprache braucht Zeit.", "fa": "یادگیری یک زبان جدید به زمان نیاز دارد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Lernen",
+      "translation": "یادگیری",
+      "syllables": ["Ler", "nen"],
+      "distractors": ["Lor", "non", "nan"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "das Schwimmen", "fa": "شنا" },
+      "example": { "text": { "de": "Das Schwimmen im Meer ist wunderbar.", "fa": "شنا در دریا فوق‌العاده است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Schwimmen",
+      "translation": "شنا",
+      "syllables": ["Schwim", "men"],
+      "distractors": ["Schwam", "mon", "mun"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s4",
+      "title": "استفاده با beim و zum",
+      "content": "**beim و zum با اسم‌های مصدری:**\n\n**beim = bei dem (در حین، هنگام)**\n- beim Lesen = در حین خواندن\n- beim Essen = هنگام غذا خوردن\n- beim Schwimmen = موقع شنا\n\n**zum = zu dem (برای)**\n- zum Lernen = برای یادگیری\n- zum Schreiben = برای نوشتن\n- zum Leben = برای زندگی\n\n**مثال‌ها:**\n- Ich höre Musik beim Lernen. (هنگام یادگیری موسیقی گوش می‌دهم.)\n- Du brauchst einen Stift zum Schreiben. (برای نوشتن به یک خودکار نیاز داری.)",
+      "examples": [
+        { "de": "Beim Lesen brauche ich eine Brille.", "fa": "هنگام خواندن به عینک نیاز دارم." },
+        { "de": "Ich gehe zum Schwimmen.", "fa": "برای شنا می‌روم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "das Lesen", "fa": "خواندن" },
+      "example": { "text": { "de": "Beim Lesen lerne ich viele neue Wörter.", "fa": "هنگام خواندن کلمات جدید زیادی یاد می‌گیرم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Lesen",
+      "translation": "خواندن",
+      "syllables": ["Le", "sen"],
+      "distractors": ["Lo", "san", "sun"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام حرف تعریف برای اسم‌های مصدری استفاده می‌شود؟",
+      "options": [
+        "der",
+        "die",
+        "das",
+        "den"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! همه اسم‌های مصدری خنثی هستند و با das می‌آیند.", "incorrect": "اسم‌های مصدری همیشه خنثی هستند و با das می‌آیند." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "beim Lesen یعنی چه؟",
+      "options": [
+        "برای خواندن",
+        "بدون خواندن",
+        "هنگام خواندن",
+        "بعد از خواندن"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "درست! beim = bei dem = هنگام، در حین", "incorrect": "beim = bei dem = هنگام، در حین" }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "das Schreiben", "fa": "نوشتن" },
+      "example": { "text": { "de": "Das Schreiben von E-Mails ist heute sehr wichtig.", "fa": "نوشتن ایمیل امروزه خیلی مهم است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "Schreiben",
+      "translation": "نوشتن",
+      "syllables": ["Schrei", "ben"],
+      "distractors": ["Schra", "bon", "bun"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "حرف تعریف مناسب را انتخاب کنید",
+      "sentence": "{0} Schwimmen ist sehr gesund.",
+      "options": ["Der", "Die", "Das", "Den"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "اسم‌های مصدری همیشه خنثی هستند: das Schwimmen" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "sentence": "Ich höre Musik {0} Lernen.",
+      "options": ["beim", "zum", "mit dem", "für das"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "beim = هنگام، در حین. Ich höre Musik beim Lernen." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "اسم مصدری با مضاف‌الیه",
+      "content": "**اسم مصدری با مضاف‌الیه (Genitiv):**\n\nاسم‌های مصدری می‌توانند مانند اسم‌های عادی مضاف‌الیه بگیرند:\n\n**ساختار:**\n```\ndas + Infinitiv + Genitiv\n```\n\n**مثال‌ها:**\n- das Lernen **der Sprache** = یادگیری زبان\n- das Lesen **des Buches** = خواندن کتاب\n- das Schreiben **eines Briefes** = نوشتن نامه\n\n**این ساختار در نوشتار رسمی رایج است!**",
+      "examples": [
+        { "de": "Das Lernen der deutschen Sprache ist interessant.", "fa": "یادگیری زبان آلمانی جالب است." },
+        { "de": "Das Schreiben des Berichts dauerte lange.", "fa": "نوشتن گزارش طولانی شد." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "das Essen", "fa": "غذا خوردن" },
+      "example": { "text": { "de": "Das Essen in diesem Restaurant ist ausgezeichnet.", "fa": "غذا در این رستوران عالی است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "Essen",
+      "translation": "غذا خوردن",
+      "syllables": ["Es", "sen"],
+      "distractors": ["As", "son", "san"]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "das Leben", "fa": "زندگی" },
+      "example": { "text": { "de": "Das Leben in der Stadt ist teuer.", "fa": "زندگی در شهر گران است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Leben",
+      "translation": "زندگی",
+      "syllables": ["Le", "ben"],
+      "distractors": ["La", "bon", "bun"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "sentence": "Du brauchst Zeit {0} Schreiben.",
+      "options": ["beim", "zum", "mit dem", "für das"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "zum = برای. Du brauchst Zeit zum Schreiben." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "{0} Essen sollte man nicht sprechen.",
+      "options": ["Beim", "Zum", "Mit dem", "Für das"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Beim Essen = هنگام غذا خوردن" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در باشگاه ورزشی",
+      "scene": {
+        "location": "gym",
+        "description": { "de": "Im Fitnessstudio", "fa": "در باشگاه ورزشی" }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Das Schwimmen ist mein Lieblingssport.", "fa": "شنا ورزش مورد علاقه من است." }, "mood": "happy" },
+        { "speaker": "Max", "text": { "de": "Wirklich? Ich mag das Laufen lieber.", "fa": "واقعاً؟ من دویدن را بیشتر دوست دارم." }, "mood": "surprised" },
+        { "speaker": "Anna", "text": { "de": "Beim Schwimmen kann ich entspannen.", "fa": "هنگام شنا می‌توانم استراحت کنم." }, "mood": "neutral" },
+        { "speaker": "Max", "text": { "de": "Und ich höre Musik beim Laufen.", "fa": "و من هنگام دویدن موسیقی گوش می‌دهم." }, "mood": "excited" },
+        { "speaker": "Anna", "text": { "de": "Das Wichtigste ist das regelmäßige Trainieren!", "fa": "مهم‌ترین چیز تمرین منظم است!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "ورزش مورد علاقه آنا چیست؟", "options": ["دویدن", "شنا", "تمرین"], "correctIndex": 1, "explanation": "آنا گفت: Das Schwimmen ist mein Lieblingssport." },
+        { "question": "ماکس هنگام دویدن چه کار می‌کند؟", "options": ["کتاب می‌خواند", "موسیقی گوش می‌دهد", "صحبت می‌کند"], "correctIndex": 1, "explanation": "ماکس گفت: Ich höre Musik beim Laufen." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["macht", "Lernen", "Das", "Spaß"],
+      "correctOrder": [2, 1, 0, 3],
+      "correctSentence": { "de": "Das Lernen macht Spaß.", "fa": "یادگیری لذت‌بخش است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Schwimmen", "Ich", "gehe", "zum"],
+      "correctOrder": [1, 2, 3, 0],
+      "correctSentence": { "de": "Ich gehe zum Schwimmen.", "fa": "برای شنا می‌روم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["Lesen", "ich", "Beim", "Musik", "höre"],
+      "correctOrder": [2, 0, 4, 1, 3],
+      "correctSentence": { "de": "Beim Lesen höre ich Musik.", "fa": "هنگام خواندن موسیقی گوش می‌دهم." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "اسم‌های مصدری در آلمانی همیشه خنثی هستند و با das می‌آیند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! همه اسم‌های مصدری خنثی هستند: das Lernen, das Schwimmen, das Lesen" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "beim Essen یعنی برای غذا خوردن.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! beim = هنگام، در حین. zum = برای. پس beim Essen = هنگام غذا خوردن" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای ساختن اسم مصدری، فقط حرف اول مصدر را بزرگ می‌نویسیم و das اضافه می‌کنیم.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! lernen → das Lernen, schwimmen → das Schwimmen" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "اسم مصدری صحیح را انتخاب کنید",
+      "sentence": "{0} der deutschen Sprache ist wichtig.",
+      "options": ["Das Lernen", "Der Lernen", "Die Lernen", "Den Lernen"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "اسم‌های مصدری خنثی هستند: Das Lernen der deutschen Sprache" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "sentence": "{0} in der Stadt ist teuer.",
+      "options": ["Das Leben", "Das Lesen", "Das Lernen", "Das Essen"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Das Leben in der Stadt ist teuer. = زندگی در شهر گران است." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در کتابخانه",
+      "scene": {
+        "location": "library",
+        "description": { "de": "In der Bibliothek", "fa": "در کتابخانه" }
+      },
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Das Lesen ist mein Hobby.", "fa": "خواندن سرگرمی من است." }, "mood": "happy" },
+        { "speaker": "Tom", "text": { "de": "Ich bevorzuge das Schreiben.", "fa": "من نوشتن را ترجیح می‌دهم." }, "mood": "neutral" },
+        { "speaker": "Lisa", "text": { "de": "Beim Lesen kann ich in andere Welten reisen.", "fa": "هنگام خواندن می‌توانم به دنیاهای دیگر سفر کنم." }, "mood": "excited" },
+        { "speaker": "Tom", "text": { "de": "Und beim Schreiben kann ich meine eigene Welt erschaffen.", "fa": "و هنگام نوشتن می‌توانم دنیای خودم را بسازم." }, "mood": "happy" },
+        { "speaker": "Lisa", "text": { "de": "Das Lernen durch Bücher ist wunderbar!", "fa": "یادگیری از طریق کتاب‌ها فوق‌العاده است!" }, "mood": "excited" }
+      ],
+      "questions": [
+        { "question": "سرگرمی لیزا چیست؟", "options": ["نوشتن", "خواندن", "شنا"], "correctIndex": 1, "explanation": "لیزا گفت: Das Lesen ist mein Hobby." },
+        { "question": "تام چه چیزی را ترجیح می‌دهد؟", "options": ["خواندن", "شنا", "نوشتن"], "correctIndex": 2, "explanation": "تام گفت: Ich bevorzuge das Schreiben." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "اسم مصدری را با ترجمه فارسی‌اش جفت کنید",
+      "items": [
+        { "id": "i1", "text": "das Lernen" },
+        { "id": "i2", "text": "das Schwimmen" },
+        { "id": "i3", "text": "das Lesen" },
+        { "id": "i4", "text": "das Schreiben" },
+        { "id": "i5", "text": "das Leben" },
+        { "id": "i6", "text": "das Essen" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "یادگیری" },
+        { "id": "m2", "text": "شنا" },
+        { "id": "m3", "text": "خواندن" },
+        { "id": "m4", "text": "نوشتن" },
+        { "id": "m5", "text": "زندگی" },
+        { "id": "m6", "text": "غذا خوردن" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "یادگیری لذت‌بخش است.",
+      "sentenceTemplate": "{0} {1} macht Spaß.",
+      "options": ["Lernen", "Das", "Schwimmen", "Die"],
+      "correctAnswers": [1, 0],
+      "correctTranslation": { "de": "Das Lernen macht Spaß.", "fa": "یادگیری لذت‌بخش است." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "برای شنا می‌روم.",
+      "sentenceTemplate": "Ich gehe {0} {1}.",
+      "options": ["zum", "Schwimmen", "beim", "Lesen"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Ich gehe zum Schwimmen.", "fa": "برای شنا می‌روم." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: سبک زندگی سالم",
+      "passage": {
+        "de": "Das Leben in der modernen Welt ist oft stressig. Das tägliche Arbeiten und das ständige Lernen können müde machen. Deshalb ist das regelmäßige Trainieren so wichtig. Das Schwimmen ist besonders gut für den Rücken. Beim Lesen kann man entspannen, und das Schreiben hilft beim Nachdenken. Das gesunde Essen ist auch ein wichtiger Teil des Lebens. Beim Kochen kann man kreativ sein. Das Wichtigste ist: Man sollte Zeit zum Entspannen finden!",
+        "fa": "زندگی در دنیای مدرن اغلب پر استرس است. کار کردن روزانه و یادگیری مداوم می‌تواند خسته‌کننده باشد. به همین دلیل تمرین منظم بسیار مهم است. شنا به‌ویژه برای کمر خوب است. هنگام خواندن می‌توان استراحت کرد و نوشتن به فکر کردن کمک می‌کند. غذای سالم هم بخش مهمی از زندگی است. هنگام آشپزی می‌توان خلاق بود. مهم‌ترین چیز این است: باید وقت برای آرامش پیدا کرد!"
+      },
+      "questions": [
+        { "question": "شنا برای چه چیزی خوب است؟", "options": ["سر", "کمر", "پا"], "correctIndex": 1, "explanation": "Das Schwimmen ist besonders gut für den Rücken." },
+        { "question": "نوشتن به چه کار کمک می‌کند؟", "options": ["خوابیدن", "فکر کردن", "دویدن"], "correctIndex": 1, "explanation": "Das Schreiben hilft beim Nachdenken." },
+        { "question": "هنگام آشپزی می‌توان چگونه بود؟", "options": ["خسته", "خلاق", "ناراحت"], "correctIndex": 1, "explanation": "Beim Kochen kann man kreativ sein." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Ein Tag im Leben", "fa": "یک روز در زندگی" },
+      "characters": ["Mia", "Paul"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Mia und Paul unterhalten sich über ihre Hobbys.", "fa": "میا و پاول درباره سرگرمی‌هایشان صحبت می‌کنند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Mia",
+          "text": { "de": "Das Lesen ist meine große Leidenschaft!", "fa": "خواندن شور و اشتیاق بزرگ من است!" },
+          "mood": "excited"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Paul",
+          "text": { "de": "Ich liebe das Schwimmen. Es entspannt mich total.", "fa": "من شنا را دوست دارم. کاملاً آرامم می‌کند." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "شور و اشتیاق میا چیست؟",
+          "options": ["شنا", "خواندن", "نوشتن"],
+          "correctIndex": 1,
+          "explanation": "میا گفت: Das Lesen ist meine große Leidenschaft!"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Mia",
+          "text": { "de": "Beim Lesen vergesse ich alles um mich herum.", "fa": "هنگام خواندن همه چیز اطرافم را فراموش می‌کنم." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Paul",
+          "text": { "de": "Und ich finde beim Schwimmen meine innere Ruhe.", "fa": "و من هنگام شنا آرامش درونی‌ام را پیدا می‌کنم." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "پاول هنگام شنا چه چیزی پیدا می‌کند؟",
+          "options": ["دوستان جدید", "آرامش درونی", "کتاب‌های جدید"],
+          "correctIndex": 1,
+          "explanation": "پاول گفت: Ich finde beim Schwimmen meine innere Ruhe."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Mia",
+          "text": { "de": "Das Schöne am Leben ist, dass es so viele Möglichkeiten gibt!", "fa": "زیبایی زندگی این است که امکانات زیادی وجود دارد!" },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "به نظر میا زیبایی زندگی چیست؟",
+          "options": ["یک سرگرمی", "امکانات زیاد", "شنا کردن"],
+          "correctIndex": 1,
+          "explanation": "میا گفت: Das Schöne am Leben ist, dass es so viele Möglichkeiten gibt!"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "das Lernen", "left": "یادگیری", "right": "شنا", "correctSide": "left" },
+        { "prompt": "das Schwimmen", "left": "نوشتن", "right": "شنا", "correctSide": "right" },
+        { "prompt": "das Lesen", "left": "خواندن", "right": "زندگی", "correctSide": "left" },
+        { "prompt": "das Schreiben", "left": "غذا خوردن", "right": "نوشتن", "correctSide": "right" },
+        { "prompt": "das Leben", "left": "زندگی", "right": "یادگیری", "correctSide": "left" },
+        { "prompt": "das Essen", "left": "خواندن", "right": "غذا خوردن", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Das Lernen macht Spaß.",
+      "translation": "یادگیری لذت‌بخش است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Ich gehe zum Schwimmen.",
+      "translation": "برای شنا می‌روم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Beim Lesen lerne ich viel.",
+      "translation": "هنگام خواندن زیاد یاد می‌گیرم."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "das Lernen = ?", "options": ["یادگیری", "شنا"], "correctAnswerIndex": 0 },
+        { "question": "das Schwimmen = ?", "options": ["نوشتن", "شنا"], "correctAnswerIndex": 1 },
+        { "question": "beim Lesen = ?", "options": ["برای خواندن", "هنگام خواندن"], "correctAnswerIndex": 1 },
+        { "question": "zum Schreiben = ?", "options": ["برای نوشتن", "هنگام نوشتن"], "correctAnswerIndex": 0 },
+        { "question": "das Leben = ?", "options": ["غذا", "زندگی"], "correctAnswerIndex": 1 },
+        { "question": "das Essen = ?", "options": ["غذا خوردن", "خواندن"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "das Lernen", "fa": "یادگیری" },
+        { "de": "das Schwimmen", "fa": "شنا" },
+        { "de": "das Lesen", "fa": "خواندن" },
+        { "de": "das Schreiben", "fa": "نوشتن" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "اسم‌های مصدری این درس را پیدا کنید",
+      "targetWords": ["Lernen", "Schwimmen", "Lesen", "Schreiben", "Essen", "Leben"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "das Lernen", "fa": "___", "options": ["شنا", "یادگیری", "نوشتن", "زندگی"], "correctIndex": 1 },
+        { "de": "das Lesen", "fa": "___", "options": ["غذا خوردن", "نوشتن", "خواندن", "شنا"], "correctIndex": 2 },
+        { "de": "das Leben", "fa": "___", "options": ["یادگیری", "شنا", "خواندن", "زندگی"], "correctIndex": 3 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما اسم‌سازی از افعال را یاد گرفتید!",
+      "keyPoints": [
+        "مصدر + das = اسم خنثی (das Lernen, das Lesen)",
+        "همه اسم‌های مصدری خنثی هستند",
+        "beim = هنگام (beim Lesen = هنگام خواندن)",
+        "zum = برای (zum Schwimmen = برای شنا)",
+        "می‌توان مضاف‌الیه اضافه کرد (das Lernen der Sprache)",
+        "در نوشتار رسمی رایج است"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "das Lernen", "fa": "یادگیری" } },
+        { "word": { "de": "das Schwimmen", "fa": "شنا" } },
+        { "word": { "de": "das Lesen", "fa": "خواندن" } },
+        { "word": { "de": "das Schreiben", "fa": "نوشتن" } },
+        { "word": { "de": "das Essen", "fa": "غذا خوردن" } },
+        { "word": { "de": "das Leben", "fa": "زندگی" } }
+      ]
+    }
+  ]
+}
