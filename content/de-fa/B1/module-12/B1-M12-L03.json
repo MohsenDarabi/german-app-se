@@ -1,0 +1,516 @@
+{
+  "id": "B1-M12-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Modalpartikeln: eigentlich, wohl, schon", "fa": "ذرات وجهی: eigentlich، wohl، schon" },
+  "description": "یاد بگیرید چگونه با ذرات وجهی eigentlich، wohl و schon به جملات آلمانی ظرافت و نوانس اضافه کنید",
+  "level": "B1",
+  "module": 12,
+  "lessonNumber": 3,
+  "totalSteps": 45,
+  "estimatedMinutes": 25,
+  "vocabulary": [
+    { "de": "eigentlich", "fa": "در واقع، راستش (برای نرم کردن سؤال یا اظهار تردید)", "grammar": { "pos": "particle" } },
+    { "de": "wohl", "fa": "احتمالاً، ظاهراً (برای بیان حدس)", "grammar": { "pos": "particle" } },
+    { "de": "schon", "fa": "حتماً، بله (برای اطمینان‌بخشی)", "grammar": { "pos": "particle" } },
+    { "de": "vermuten", "fa": "حدس زدن، گمان کردن", "grammar": { "pos": "verb" } },
+    { "de": "beruhigen", "fa": "آرام کردن، اطمینان دادن", "grammar": { "pos": "verb" } },
+    { "de": "unsicher", "fa": "نامطمئن، مردد", "grammar": { "pos": "adjective" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "ذرات وجهی (Modalpartikeln) چیستند؟",
+      "content": "**ذرات وجهی** کلمات کوچکی هستند که به جملات **ظرافت و نوانس** اضافه می‌کنند. آنها معنی جمله را تغییر نمی‌دهند، بلکه **نگرش یا احساس گوینده** را نشان می‌دهند.\n\n**سه ذره مهم این درس:**\n- **eigentlich** - برای نرم کردن سؤال یا بیان تردید\n- **wohl** - برای بیان حدس و احتمال\n- **schon** - برای اطمینان‌بخشی و تأیید\n\n**نکته:**\nاین کلمات در فارسی معادل دقیق ندارند و باید با بافت جمله درک شوند.",
+      "examples": [
+        { "de": "Was machst du eigentlich?", "fa": "راستی، چی‌کار می‌کنی؟" },
+        { "de": "Er ist wohl krank.", "fa": "احتمالاً مریض است." },
+        { "de": "Das wird schon!", "fa": "درست می‌شه، نگران نباش!" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "eigentlich", "fa": "در واقع، راستش (ذره وجهی)" },
+      "example": { "text": { "de": "Was machst du eigentlich beruflich?", "fa": "راستی، شغلت چیه؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "eigentlich",
+      "translation": "در واقع، راستش",
+      "syllables": ["ei", "gent", "lich"],
+      "distractors": ["au", "gant", "loch", "lang"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "wohl", "fa": "احتمالاً، ظاهراً (ذره وجهی)" },
+      "example": { "text": { "de": "Sie ist wohl nicht zu Hause.", "fa": "ظاهراً خونه نیست." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "wohl",
+      "translation": "احتمالاً، ظاهراً",
+      "syllables": ["wohl"],
+      "distractors": ["wol", "wahl", "wul", "weil"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "schon", "fa": "حتماً، بله (ذره اطمینان‌بخش)" },
+      "example": { "text": { "de": "Das wird schon klappen!", "fa": "حتماً درست می‌شه!" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "schon",
+      "translation": "حتماً، بله (اطمینان‌بخش)",
+      "syllables": ["schon"],
+      "distractors": ["schön", "schun", "schein", "schen"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام ذره وجهی برای بیان حدس و احتمال استفاده می‌شود؟",
+      "options": [
+        "eigentlich",
+        "wohl",
+        "schon",
+        "doch"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! wohl برای بیان حدس استفاده می‌شود: Er ist wohl krank.", "incorrect": "wohl برای بیان حدس استفاده می‌شود، مثل: Er ist wohl krank (احتمالاً مریضه)." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Was machst du {0} hier?",
+      "options": ["wohl", "eigentlich", "schon", "denn"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "eigentlich برای نرم کردن سؤال استفاده می‌شود: Was machst du eigentlich hier? (راستی، اینجا چی‌کار می‌کنی؟)" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "eigentlich - نرم‌کننده سؤال و بیان تردید",
+      "content": "**eigentlich** دو کاربرد اصلی دارد:\n\n**۱. نرم کردن سؤال (در واقع، راستی):**\n- Was machst du **eigentlich** beruflich?\n- Wie heißt du **eigentlich**?\n\n**۲. بیان تردید یا تغییر نظر:**\n- **Eigentlich** wollte ich... (در واقع می‌خواستم...)\n- **Eigentlich** habe ich keine Zeit. (راستش وقت ندارم.)\n\n**جایگاه در جمله:**\n- در سؤالات: بعد از فعل\n- در جملات خبری: اول جمله یا بعد از فعل",
+      "examples": [
+        { "de": "Woher kommst du eigentlich?", "fa": "راستی، اهل کجایی؟" },
+        { "de": "Eigentlich wollte ich zu Hause bleiben.", "fa": "در واقع می‌خواستم خونه بمونم." }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "آشنایی در مهمانی",
+      "scene": {
+        "location": "party",
+        "description": { "de": "Zwei Personen lernen sich auf einer Party kennen.", "fa": "دو نفر در یک مهمانی با هم آشنا می‌شوند." }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Hallo! Ich bin Anna. Was machst du eigentlich beruflich?", "fa": "سلام! من آنا هستم. راستی، شغلت چیه؟" }, "mood": "happy" },
+        { "speaker": "Max", "text": { "de": "Ich bin Ingenieur. Und du?", "fa": "من مهندسم. تو چی؟" }, "mood": "neutral" },
+        { "speaker": "Anna", "text": { "de": "Eigentlich bin ich Lehrerin, aber ich arbeite jetzt als Übersetzerin.", "fa": "در واقع معلمم، ولی الان به‌عنوان مترجم کار می‌کنم." }, "mood": "neutral" },
+        { "speaker": "Max", "text": { "de": "Interessant! Woher kommst du eigentlich?", "fa": "جالبه! راستی، اهل کجایی؟" }, "mood": "excited" }
+      ],
+      "questions": [
+        { "question": "شغل واقعی آنا چیست؟", "options": ["مترجم", "معلم", "مهندس"], "correctIndex": 1, "explanation": "آنا گفت: Eigentlich bin ich Lehrerin (در واقع معلمم)" },
+        { "question": "eigentlich در سؤال ماکس چه نقشی دارد؟", "options": ["بیان تردید", "نرم کردن سؤال", "بیان حدس"], "correctIndex": 1, "explanation": "Woher kommst du eigentlich? - eigentlich سؤال را محاوره‌ای‌تر و نرم‌تر می‌کند" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "vermuten", "fa": "حدس زدن، گمان کردن" },
+      "example": { "text": { "de": "Ich vermute, dass er wohl krank ist.", "fa": "گمان می‌کنم که احتمالاً مریضه." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "vermuten",
+      "translation": "حدس زدن، گمان کردن",
+      "syllables": ["ver", "mu", "ten"],
+      "distractors": ["vor", "mo", "tan", "fer"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "beruhigen", "fa": "آرام کردن، اطمینان دادن" },
+      "example": { "text": { "de": "Das wird schon. Beruhige dich!", "fa": "درست می‌شه. آروم باش!" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "beruhigen",
+      "translation": "آرام کردن، اطمینان دادن",
+      "syllables": ["be", "ru", "hi", "gen"],
+      "distractors": ["ba", "ro", "ha", "gan"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er ist {0} nicht gekommen, weil er krank ist.",
+      "options": ["eigentlich", "wohl", "schon", "doch"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "wohl برای بیان حدس: Er ist wohl nicht gekommen (احتمالاً نیامده)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Mach dir keine Sorgen! Das wird {0}!",
+      "options": ["eigentlich", "wohl", "schon", "mal"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "schon برای اطمینان‌بخشی: Das wird schon! (درست می‌شه!)" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["beruflich?", "eigentlich", "machst", "Was", "du"],
+      "correctOrder": [3, 2, 4, 1, 0],
+      "correctSentence": { "de": "Was machst du eigentlich beruflich?", "fa": "راستی، شغلت چیه؟" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["krank.", "wohl", "ist", "Er"],
+      "correctOrder": [3, 2, 1, 0],
+      "correctSentence": { "de": "Er ist wohl krank.", "fa": "احتمالاً مریضه." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "کلمه eigentlich برای بیان حدس و احتمال استفاده می‌شود.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! eigentlich برای نرم کردن سؤال یا بیان تردید استفاده می‌شود. wohl برای حدس استفاده می‌شود." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "جمله Das wird schon! برای اطمینان دادن به کسی استفاده می‌شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! schon در این جمله حس اطمینان‌بخشی دارد: نگران نباش، درست می‌شه!" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s8",
+      "title": "wohl و schon - حدس و اطمینان‌بخشی",
+      "content": "**wohl - بیان حدس و احتمال:**\n- Er ist **wohl** krank. (احتمالاً مریضه)\n- Das wird **wohl** stimmen. (احتمالاً درسته)\n- Sie hat **wohl** keine Zeit. (ظاهراً وقت نداره)\n\n**schon - اطمینان‌بخشی و تأیید:**\n- Das wird **schon**! (درست می‌شه!)\n- Das stimmt **schon**. (بله، درسته)\n- Du schaffst das **schon**! (حتماً موفق می‌شی!)\n\n**تفاوت مهم:**\n- **wohl** = عدم اطمینان، حدس\n- **schon** = اطمینان، دلداری\n\n**نکته:**\nschon به معنی «قبلاً» هم هست، اما اینجا نقش متفاوتی دارد.",
+      "examples": [
+        { "de": "Sie hat wohl vergessen.", "fa": "احتمالاً فراموش کرده." },
+        { "de": "Das wird schon klappen!", "fa": "حتماً جور می‌شه!" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "unsicher", "fa": "نامطمئن، مردد" },
+      "example": { "text": { "de": "Ich bin mir unsicher, ob das wohl stimmt.", "fa": "مطمئن نیستم که آیا این درسته." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "unsicher",
+      "translation": "نامطمئن، مردد",
+      "syllables": ["un", "si", "cher"],
+      "distractors": ["in", "sa", "char", "en"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "در جمله «Das wird schon!» کلمه schon چه معنایی دارد؟",
+      "options": [
+        "قبلاً",
+        "هنوز",
+        "اطمینان‌بخشی (نگران نباش)",
+        "احتمالاً"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! در این جمله schon حس اطمینان‌بخشی دارد: درست می‌شه، نگران نباش!", "incorrect": "در Das wird schon! کلمه schon معنی اطمینان‌بخشی دارد، نه «قبلاً»." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "دلداری دادن",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Lisa macht sich Sorgen wegen einer Prüfung.", "fa": "لیزا نگران امتحان است." }
+      },
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Ich bin so unsicher wegen der Prüfung morgen.", "fa": "خیلی نگران امتحان فردا هستم." }, "mood": "sad" },
+        { "speaker": "Tom", "text": { "de": "Beruhige dich! Das wird schon!", "fa": "آروم باش! درست می‌شه!" }, "mood": "happy" },
+        { "speaker": "Lisa", "text": { "de": "Meinst du wirklich?", "fa": "واقعاً فکر می‌کنی؟" }, "mood": "confused" },
+        { "speaker": "Tom", "text": { "de": "Du schaffst das schon! Du hast wohl genug gelernt.", "fa": "حتماً موفق می‌شی! احتمالاً به اندازه کافی درس خوندی." }, "mood": "excited" }
+      ],
+      "questions": [
+        { "question": "تام از کدام ذره برای دلداری دادن استفاده کرد؟", "options": ["eigentlich", "wohl", "schon"], "correctIndex": 2, "explanation": "تام گفت: Das wird schon! و Du schaffst das schon! - schon برای اطمینان‌بخشی" },
+        { "question": "تام فکر می‌کند لیزا چقدر درس خوانده؟", "options": ["کم", "به اندازه کافی", "اصلاً نخوانده"], "correctIndex": 1, "explanation": "تام گفت: Du hast wohl genug gelernt (احتمالاً به اندازه کافی درس خوندی)" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} wollte ich zu Hause bleiben, aber dann bin ich doch gegangen.",
+      "options": ["Wohl", "Schon", "Eigentlich", "Doch"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "Eigentlich در اول جمله برای بیان تردید یا تغییر نظر: در واقع می‌خواستم خونه بمونم..." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Du schaffst das {0}! Keine Sorge!",
+      "options": ["eigentlich", "wohl", "schon", "mal"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "schon برای اطمینان‌بخشی: Du schaffst das schon! (حتماً موفق می‌شی!)" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["klappen!", "wird", "schon", "Das"],
+      "correctOrder": [3, 1, 2, 0],
+      "correctSentence": { "de": "Das wird schon klappen!", "fa": "حتماً درست می‌شه!" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "wohl و schon هر دو برای بیان اطمینان استفاده می‌شوند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! wohl برای حدس و عدم اطمینان است، در حالی که schon برای اطمینان‌بخشی استفاده می‌شود." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "جمله آلمانی را با معنی فارسی جور کنید",
+      "items": [
+        { "id": "i1", "text": "Was machst du eigentlich?" },
+        { "id": "i2", "text": "Er ist wohl krank." },
+        { "id": "i3", "text": "Das wird schon!" },
+        { "id": "i4", "text": "Eigentlich wollte ich..." },
+        { "id": "i5", "text": "Das stimmt schon." },
+        { "id": "i6", "text": "Sie hat wohl vergessen." }
+      ],
+      "matches": [
+        { "id": "m1", "text": "راستی، چی‌کار می‌کنی؟" },
+        { "id": "m2", "text": "احتمالاً مریضه." },
+        { "id": "m3", "text": "درست می‌شه!" },
+        { "id": "m4", "text": "در واقع می‌خواستم..." },
+        { "id": "m5", "text": "بله، درسته." },
+        { "id": "m6", "text": "احتمالاً فراموش کرده." }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "راستی، اهل کجایی؟",
+      "sentenceTemplate": "Woher kommst {0} {1}?",
+      "options": ["du", "eigentlich", "wohl", "schon"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Woher kommst du eigentlich?", "fa": "راستی، اهل کجایی؟" }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "احتمالاً خونه نیست.",
+      "sentenceTemplate": "Sie ist {0} nicht zu Hause.",
+      "options": ["eigentlich", "wohl", "schon", "doch"],
+      "correctAnswers": [1],
+      "correctTranslation": { "de": "Sie ist wohl nicht zu Hause.", "fa": "احتمالاً خونه نیست." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: گفتگو در محل کار",
+      "passage": {
+        "de": "Maria kommt heute nicht zur Arbeit. Sie ist wohl krank. Der Chef fragt: \"Was macht Maria eigentlich? Ist sie immer noch im Urlaub?\" Der Kollege antwortet: \"Nein, sie ist wohl krank geworden. Aber machen Sie sich keine Sorgen, das wird schon! Sie kommt bestimmt morgen wieder.\" Der Chef sagt: \"Eigentlich wollte ich heute mit ihr sprechen, aber das kann warten.\"",
+        "fa": "ماریا امروز سر کار نیامده. احتمالاً مریض شده. رئیس می‌پرسد: «راستی ماریا چی‌کار می‌کنه؟ هنوز در تعطیلاته؟» همکار جواب می‌دهد: «نه، احتمالاً مریض شده. ولی نگران نباشید، درست می‌شه! حتماً فردا برمی‌گرده.» رئیس می‌گوید: «در واقع می‌خواستم امروز باهاش صحبت کنم، ولی می‌تونه صبر کنه.»"
+      },
+      "questions": [
+        { "question": "چرا ماریا سر کار نیامده؟", "options": ["در تعطیلات است", "احتمالاً مریض شده", "استعفا داده"], "correctIndex": 1, "explanation": "در متن آمده: Sie ist wohl krank geworden (احتمالاً مریض شده)" },
+        { "question": "رئیس می‌خواست چه کار کند؟", "options": ["به تعطیلات برود", "با ماریا صحبت کند", "همکار را ببیند"], "correctIndex": 1, "explanation": "رئیس گفت: Eigentlich wollte ich heute mit ihr sprechen" },
+        { "question": "همکار برای آرام کردن رئیس از چه عبارتی استفاده کرد؟", "options": ["Das ist wohl...", "Das wird schon!", "Eigentlich..."], "correctIndex": 1, "explanation": "همکار گفت: das wird schon! - برای اطمینان‌بخشی" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die unsichere Entscheidung", "fa": "تصمیم نامطمئن" },
+      "characters": ["Stefan", "Claudia"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Stefan steht vor einer wichtigen Entscheidung.", "fa": "استفان در آستانه یک تصمیم مهم است." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Stefan",
+          "text": { "de": "Ich weiß nicht, ob ich die neue Stelle annehmen soll.", "fa": "نمی‌دونم باید این شغل جدید رو قبول کنم یا نه." },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Claudia",
+          "text": { "de": "Was gefällt dir eigentlich an der neuen Stelle?", "fa": "راستی، چی از این شغل جدید خوشت میاد؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "کلودیا از کدام ذره وجهی استفاده کرد؟",
+          "options": ["wohl", "schon", "eigentlich"],
+          "correctIndex": 2,
+          "explanation": "کلودیا گفت: Was gefällt dir eigentlich... - eigentlich برای نرم کردن سؤال"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Stefan",
+          "text": { "de": "Das Gehalt ist wohl besser, aber der Weg ist länger.", "fa": "حقوقش احتمالاً بهتره، ولی راهش دورتره." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Claudia",
+          "text": { "de": "Eigentlich ist das Gehalt nicht alles.", "fa": "در واقع حقوق همه چیز نیست." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Stefan",
+          "text": { "de": "Du hast recht. Ich bin so unsicher.", "fa": "حق با توئه. خیلی مردد هستم." },
+          "mood": "sad"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Claudia",
+          "text": { "de": "Beruhige dich! Das wird schon! Du triffst schon die richtige Entscheidung.", "fa": "آروم باش! درست می‌شه! حتماً تصمیم درست رو می‌گیری." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "کلودیا برای دلداری دادن از کدام ذره استفاده کرد؟",
+          "options": ["eigentlich", "wohl", "schon"],
+          "correctIndex": 2,
+          "explanation": "کلودیا گفت: Das wird schon! و Du triffst schon... - schon برای اطمینان‌بخشی"
+        }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Was machst du eigentlich beruflich?",
+      "translation": "راستی، شغلت چیه؟"
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Er ist wohl krank geworden.",
+      "translation": "احتمالاً مریض شده."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Das wird schon klappen!",
+      "translation": "حتماً درست می‌شه!"
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع",
+      "instruction": "کدام ذره مناسب است؟",
+      "questions": [
+        { "prompt": "نرم کردن سؤال", "left": "eigentlich", "right": "wohl", "correctSide": "left" },
+        { "prompt": "بیان حدس", "left": "eigentlich", "right": "wohl", "correctSide": "right" },
+        { "prompt": "اطمینان‌بخشی", "left": "schon", "right": "wohl", "correctSide": "left" },
+        { "prompt": "بیان تردید", "left": "eigentlich", "right": "schon", "correctSide": "left" },
+        { "prompt": "احتمالاً مریضه", "left": "wohl", "right": "schon", "correctSide": "left" },
+        { "prompt": "درست می‌شه!", "left": "wohl", "right": "schon", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "Was machst du eigentlich?", "options": ["راستی چی‌کار می‌کنی؟", "احتمالاً چی‌کار می‌کنی؟", "حتماً چی‌کار می‌کنی؟"], "correctAnswerIndex": 0 },
+        { "question": "Er ist wohl krank.", "options": ["در واقع مریضه", "احتمالاً مریضه", "حتماً مریضه"], "correctAnswerIndex": 1 },
+        { "question": "Das wird schon!", "options": ["احتمالاً می‌شه", "قبلاً شده", "درست می‌شه!"], "correctAnswerIndex": 2 },
+        { "question": "Eigentlich wollte ich...", "options": ["در واقع می‌خواستم...", "احتمالاً می‌خواستم...", "حتماً می‌خواستم..."], "correctAnswerIndex": 0 },
+        { "question": "Du schaffst das schon!", "options": ["احتمالاً موفق می‌شی", "قبلاً موفق شدی", "حتماً موفق می‌شی!"], "correctAnswerIndex": 2 },
+        { "question": "vermuten", "options": ["آرام کردن", "حدس زدن", "نگران بودن"], "correctAnswerIndex": 1 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "eigentlich", "fa": "در واقع، راستش" },
+        { "de": "wohl", "fa": "احتمالاً" },
+        { "de": "schon", "fa": "حتماً (اطمینان‌بخش)" },
+        { "de": "unsicher", "fa": "نامطمئن" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات این درس را پیدا کنید",
+      "targetWords": ["eigentlich", "wohl", "schon", "vermuten", "unsicher"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich {0}, dass er wohl nicht kommen wird.",
+      "options": ["beruhige", "vermute", "unsicher", "schon"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "vermuten به معنی حدس زدن: من حدس می‌زنم که احتمالاً نمیاد." }
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "eigentlich", "fa": "در واقع، راستش", "options": ["احتمالاً", "در واقع، راستش", "حتماً", "هرگز"], "correctIndex": 1 },
+        { "de": "wohl", "fa": "احتمالاً", "options": ["در واقع", "حتماً", "احتمالاً", "هنوز"], "correctIndex": 2 },
+        { "de": "beruhigen", "fa": "آرام کردن", "options": ["حدس زدن", "نگران بودن", "آرام کردن", "فراموش کردن"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما ذرات وجهی eigentlich، wohl و schon را یاد گرفتید و می‌توانید به جملات آلمانی ظرافت اضافه کنید!",
+      "keyPoints": [
+        "eigentlich - برای نرم کردن سؤال یا بیان تردید",
+        "wohl - برای بیان حدس و احتمال",
+        "schon - برای اطمینان‌بخشی و دلداری",
+        "این ذرات معنی جمله را تغییر نمی‌دهند، بلکه نگرش گوینده را نشان می‌دهند",
+        "vermuten = حدس زدن، beruhigen = آرام کردن، unsicher = نامطمئن"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "eigentlich", "fa": "در واقع، راستش" } },
+        { "word": { "de": "wohl", "fa": "احتمالاً، ظاهراً" } },
+        { "word": { "de": "schon", "fa": "حتماً (اطمینان‌بخش)" } },
+        { "word": { "de": "vermuten", "fa": "حدس زدن" } },
+        { "word": { "de": "beruhigen", "fa": "آرام کردن" } },
+        { "word": { "de": "unsicher", "fa": "نامطمئن" } }
+      ]
+    }
+  ]
+}

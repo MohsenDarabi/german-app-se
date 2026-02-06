@@ -1376,6 +1376,37 @@ const DE_FA_B1_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/B1/B1-M11-L04"
       }
     ]
+  },
+  {
+    id: "module-12",
+    title: "بخش ۱۲: ذرات مودال (Modalpartikeln)",
+    level: "B1",
+    lessons: [
+      {
+        id: "B1-M12-L01",
+        title: "doch und ja - تأکید و تعجب",
+        description: "یاد بگیرید چطور با doch و ja به جملات تأکید، تعجب و اشتراک دانش اضافه کنید.",
+        path: "/learn/de-fa/B1/B1-M12-L01"
+      },
+      {
+        id: "B1-M12-L02",
+        title: "mal, eben, halt - نرم‌کننده‌ها",
+        description: "یاد بگیرید چطور با mal درخواست‌ها را نرم کنید و با eben/halt پذیرش بیان کنید.",
+        path: "/learn/de-fa/B1/B1-M12-L02"
+      },
+      {
+        id: "B1-M12-L03",
+        title: "eigentlich, wohl, schon - ظرافت‌ها",
+        description: "یاد بگیرید چطور با eigentlich، wohl و schon احتمال، تردید و اطمینان بیان کنید.",
+        path: "/learn/de-fa/B1/B1-M12-L03"
+      },
+      {
+        id: "B1-M12-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل همه ذرات مودال: doch، ja، mal، eben، halt، eigentlich، wohl، schon.",
+        path: "/learn/de-fa/B1/B1-M12-L04"
+      }
+    ]
   }
 ];
 

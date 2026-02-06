@@ -8,7 +8,7 @@
 
 **Create B1 lessons - lesson by lesson, wait for user test after each**
 
-Current: `B1-M11` (Futur II) - **MODULE COMPLETE - READY FOR USER TEST**
+Current: `B1-M12` (Modalpartikeln) - **MODULE COMPLETE - READY FOR USER TEST**
 
 ---
 
@@ -26,7 +26,7 @@ Current: `B1-M11` (Futur II) - **MODULE COMPLETE - READY FOR USER TEST**
 |-------|---------|---------|--------|
 | A1 | 14 | 56+ | Complete |
 | A2 | 18 | 72 | **Complete** ✅ |
-| B1 | 11 | 44 | Module 11 complete |
+| B1 | 12 | 48 | Module 12 complete |
 
 ### A2 Completion (2026-02-05)
 
@@ -68,8 +68,9 @@ Current: `B1-M11` (Futur II) - **MODULE COMPLETE - READY FOR USER TEST**
 | M09 | Nominalisierung | 4/4 | ✅ Complete |
 | M10 | Verben mit Präpositionen | 4/4 | ✅ Complete |
 | M11 | Futur II | 4/4 | ✅ Complete |
+| M12 | Modalpartikeln | 4/4 | ✅ Complete |
 
-**Total B1: 44 lessons**
+**Total B1: 48 lessons**
 
 ---
 
@@ -194,10 +195,23 @@ Current: `B1-M11` (Futur II) - **MODULE COMPLETE - READY FOR USER TEST**
 
 ---
 
+## B1 Module 12: Modalpartikeln (Modal Particles)
+
+| Lesson | Title | Status |
+|--------|-------|--------|
+| B1-M12-L01 | doch und ja (emphasis/contradiction/surprise) | ✅ Complete |
+| B1-M12-L02 | mal, eben, halt (softening/resignation) | ✅ Complete |
+| B1-M12-L03 | eigentlich, wohl, schon (hedging/probability/reassurance) | ✅ Complete |
+| B1-M12-L04 | Zusammenfassung | ✅ Complete |
+
+---
+
 ## Recent Changes
 
 | Date | Change |
 |------|--------|
+| 2026-02-06 | **B1 Module 12 (Modalpartikeln) COMPLETE - 4 lessons!** |
+| 2026-02-06 | Created B1-M12-L01 to L04 in parallel |
 | 2026-02-06 | **B1 Module 11 (Futur II) COMPLETE - 4 lessons!** |
 | 2026-02-06 | Created B1-M11-L01 to L04 in parallel |
 | 2026-02-06 | **B1 Module 10 (Verben mit Präpositionen) COMPLETE - 4 lessons!** |
@@ -247,6 +261,7 @@ Current: `B1-M11` (Futur II) - **MODULE COMPLETE - READY FOR USER TEST**
 10. [x] Complete B1 Module 9 (Nominalisierung) - 4 lessons
 11. [x] Complete B1 Module 10 (Verben mit Präpositionen) - 4 lessons
 12. [x] Complete B1 Module 11 (Futur II) - 4 lessons
-13. [ ] **User tests B1-M11 lessons**
-14. [ ] Plan B1 Module 12 topic
-15. [ ] Continue B1 curriculum development
+13. [x] Complete B1 Module 12 (Modalpartikeln) - 4 lessons
+14. [ ] **User tests B1-M12 lessons**
+15. [ ] Plan B1 Module 13 topic
+16. [ ] Continue B1 curriculum development

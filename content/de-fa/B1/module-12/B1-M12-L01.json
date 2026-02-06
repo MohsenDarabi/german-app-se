@@ -1,0 +1,528 @@
+{
+  "id": "B1-M12-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Modalpartikeln: doch und ja", "fa": "حروف تاکیدی: doch و ja" },
+  "description": "یاد بگیرید چگونه از حروف تاکیدی doch و ja استفاده کنید. این کلمات به جملات آلمانی حس و احساس اضافه می‌کنند: تأکید، تعجب، یادآوری و تناقض.",
+  "level": "B1",
+  "module": 12,
+  "lessonNumber": 1,
+  "totalSteps": 45,
+  "estimatedMinutes": 25,
+  "vocabulary": [
+    { "de": "doch", "fa": "اما، ولی (حرف تاکیدی)", "grammar": { "pos": "particle", "usage": "modal" } },
+    { "de": "ja", "fa": "بله (حرف تاکیدی)", "grammar": { "pos": "particle", "usage": "modal" } },
+    { "de": "betonen", "fa": "تأکید کردن", "grammar": { "pos": "verb", "partizipII": "betont", "hilfsverb": "haben" } },
+    { "de": "widersprechen", "fa": "مخالفت کردن", "grammar": { "pos": "verb", "partizipII": "widersprochen", "hilfsverb": "haben" } },
+    { "de": "erinnern", "fa": "یادآوری کردن", "grammar": { "pos": "verb", "partizipII": "erinnert", "hilfsverb": "haben" } },
+    { "de": "überrascht", "fa": "متعجب، شگفت‌زده", "grammar": { "pos": "adjective" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "حروف تاکیدی چیست؟",
+      "content": "**Modalpartikeln (حروف تاکیدی)**\n\nدر آلمانی کلماتی وجود دارند که معنی خاصی ندارند، اما به جمله **حس و احساس** اضافه می‌کنند.\n\n**مهم‌ترین‌ها:**\n- **doch** - تأکید، تناقض، یادآوری\n- **ja** - دانش مشترک، تعجب\n\n**مقایسه:**\n- Das ist toll. (خبری ساده)\n- Das ist **doch** toll! (تأکید: واقعاً عالیه!)\n- Das ist **ja** toll! (تعجب: وای چه عالی!)\n\n**نکته:** این کلمات در فارسی معادل مستقیم ندارند، اما مثل «که»، «آخه»، «مگه» عمل می‌کنند.",
+      "examples": [
+        { "de": "Das ist doch klar!", "fa": "این که واضحه! (تأکید)" },
+        { "de": "Das ist ja interessant!", "fa": "وای چه جالب! (تعجب)" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "doch", "fa": "اما، ولی (حرف تاکیدی)" },
+      "example": { "text": { "de": "Das ist doch wahr!", "fa": "این که راسته! (تأکید)" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "doch",
+      "translation": "حرف تاکیدی",
+      "syllables": ["doch"],
+      "distractors": ["dach", "duch", "dech"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "ja", "fa": "بله (حرف تاکیدی)" },
+      "example": { "text": { "de": "Das ist ja super!", "fa": "وای چه عالی! (تعجب)" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "ja",
+      "translation": "حرف تاکیدی",
+      "syllables": ["ja"],
+      "distractors": ["je", "jo", "jä"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s4",
+      "title": "کاربردهای مختلف doch",
+      "content": "**doch سه کاربرد اصلی دارد:**\n\n**۱. تناقض (جواب به سوال منفی):**\n- Kommst du nicht? - **Doch**, ich komme!\n  (نمی‌آیی؟ - چرا، می‌آیم!)\n\n**۲. تأکید و یادآوری:**\n- Du weißt **doch**, dass ich krank bin.\n  (تو که می‌دونی من مریضم.)\n\n**۳. تعجب یا ناباوری:**\n- Das ist **doch** unmöglich!\n  (این که غیرممکنه!)\n\n**توجه:** در فارسی از «که»، «مگه» و «آخه» برای همین حس‌ها استفاده می‌کنیم.",
+      "examples": [
+        { "de": "Doch, ich habe das gesagt!", "fa": "چرا، من این را گفتم!" },
+        { "de": "Du bist doch mein Freund!", "fa": "تو که دوست منی!" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "betonen", "fa": "تأکید کردن" },
+      "example": { "text": { "de": "Ich möchte das betonen.", "fa": "می‌خواهم روی این تأکید کنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "betonen",
+      "translation": "تأکید کردن",
+      "syllables": ["be", "to", "nen"],
+      "distractors": ["ba", "ta", "non"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "وقتی کسی سوال منفی می‌پرسد و شما می‌خواهید «چرا» بگویید، از چه کلمه‌ای استفاده می‌کنید؟",
+      "options": [
+        "Ja",
+        "Nein",
+        "Doch",
+        "Auch"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! doch برای جواب مثبت به سوال منفی استفاده می‌شود.", "incorrect": "وقتی سوال منفی است و جواب مثبت می‌دهید، از doch استفاده کنید." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله حس تعجب دارد؟",
+      "options": [
+        "Das ist interessant.",
+        "Das ist ja interessant!",
+        "Das ist nicht interessant.",
+        "Ist das interessant?"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "درست! ja در اینجا حس تعجب اضافه می‌کند.", "incorrect": "ja به جمله حس تعجب اضافه می‌کند: Das ist ja interessant!" }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "widersprechen", "fa": "مخالفت کردن" },
+      "example": { "text": { "de": "Ich muss dir widersprechen.", "fa": "باید با تو مخالفت کنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "widersprechen",
+      "translation": "مخالفت کردن",
+      "syllables": ["wi", "der", "spre", "chen"],
+      "distractors": ["wa", "dar", "spra", "kan"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "sentence": "Kommst du nicht mit? - {0}, ich komme!",
+      "options": ["Ja", "Nein", "Doch", "Aber"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "برای جواب مثبت به سوال منفی از Doch استفاده می‌کنیم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "sentence": "Das ist {0} toll! (تعجب)",
+      "options": ["aber", "ja", "nicht", "oder"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "ja برای بیان تعجب استفاده می‌شود: Das ist ja toll!" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "کاربردهای مختلف ja",
+      "content": "**ja دو کاربرد اصلی دارد:**\n\n**۱. دانش مشترک (تو که می‌دونی):**\n- Das ist **ja** bekannt.\n  (این که معروفه.)\n- Du weißt **ja**, wie es ist.\n  (تو که می‌دونی چطوره.)\n\n**۲. تعجب و کشف جدید:**\n- Das ist **ja** interessant!\n  (وای چه جالب!)\n- Du bist **ja** schon da!\n  (اِ، تو که اینجایی!)\n\n**تفاوت با doch:**\n- **ja** بیشتر برای تعجب و دانش مشترک\n- **doch** بیشتر برای تناقض و تأکید قوی",
+      "examples": [
+        { "de": "Er ist ja Arzt.", "fa": "او که دکتره. (دانش مشترک)" },
+        { "de": "Das schmeckt ja gut!", "fa": "وای چه خوشمزه‌ست! (تعجب)" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "erinnern", "fa": "یادآوری کردن" },
+      "example": { "text": { "de": "Ich erinnere dich daran.", "fa": "این را به تو یادآوری می‌کنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "erinnern",
+      "translation": "یادآوری کردن",
+      "syllables": ["er", "in", "nern"],
+      "distractors": ["ar", "an", "nirn"]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "überrascht", "fa": "متعجب، شگفت‌زده" },
+      "example": { "text": { "de": "Ich bin überrascht!", "fa": "من متعجبم!" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "überrascht",
+      "translation": "متعجب",
+      "syllables": ["ü", "ber", "rascht"],
+      "distractors": ["u", "bar", "racht"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "sentence": "Du weißt {0}, dass ich morgen komme.",
+      "options": ["ja", "nein", "nicht", "auch"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "ja برای دانش مشترک: Du weißt ja... (تو که می‌دونی...)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "sentence": "Das ist {0} unmöglich! (ناباوری)",
+      "options": ["ja", "doch", "und", "oder"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "doch برای بیان ناباوری و تأکید: Das ist doch unmöglich!" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در کافه",
+      "scene": {
+        "location": "cafe",
+        "description": { "de": "Im Café", "fa": "در کافه" }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Kommst du heute Abend nicht?", "fa": "امشب نمی‌آیی؟" }, "mood": "confused" },
+        { "speaker": "Max", "text": { "de": "Doch, ich komme!", "fa": "چرا، می‌آیم!" }, "mood": "happy" },
+        { "speaker": "Anna", "text": { "de": "Du weißt ja, dass wir um 8 anfangen.", "fa": "تو که می‌دونی ساعت ۸ شروع می‌کنیم." }, "mood": "neutral" },
+        { "speaker": "Max", "text": { "de": "Ja, das ist doch klar!", "fa": "بله، این که واضحه!" }, "mood": "happy" },
+        { "speaker": "Anna", "text": { "de": "Das ist ja super!", "fa": "وای چه عالی!" }, "mood": "excited" }
+      ],
+      "questions": [
+        { "question": "ماکس امشب می‌آید؟", "options": ["نه", "بله", "معلوم نیست"], "correctIndex": 1, "explanation": "ماکس گفت: Doch, ich komme! (چرا، می‌آیم!)" },
+        { "question": "مهمانی ساعت چند شروع می‌شود؟", "options": ["۷", "۸", "۹"], "correctIndex": 1, "explanation": "آنا گفت: Du weißt ja, dass wir um 8 anfangen." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["komme", "Doch", "ich"],
+      "correctOrder": [1, 0, 2],
+      "correctSentence": { "de": "Doch komme ich", "fa": "چرا، می‌آیم" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["interessant", "ist", "Das", "ja"],
+      "correctOrder": [2, 1, 3, 0],
+      "correctSentence": { "de": "Das ist ja interessant", "fa": "وای چه جالب" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["doch", "weißt", "Du", "das"],
+      "correctOrder": [2, 1, 0, 3],
+      "correctSentence": { "de": "Du weißt doch das", "fa": "تو که این را می‌دونی" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای جواب مثبت به سوال منفی از ja استفاده می‌کنیم.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! برای جواب مثبت به سوال منفی از doch استفاده می‌کنیم، نه ja." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "ja می‌تواند حس تعجب به جمله اضافه کند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! ja برای بیان تعجب استفاده می‌شود: Das ist ja toll!" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "doch می‌تواند برای یادآوری چیزی به کسی استفاده شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! doch برای یادآوری: Du weißt doch... (تو که می‌دونی...)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "sentence": "Du bist {0} schon da! (تعجب از حضور کسی)",
+      "options": ["doch", "ja", "nicht", "aber"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "ja برای بیان تعجب از کشف چیز جدید: Du bist ja schon da!" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "sentence": "Das habe ich {0} gesagt! (تأکید قوی)",
+      "options": ["ja", "doch", "nicht", "auch"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "doch برای تأکید قوی: Das habe ich doch gesagt!" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "تعجب از خبر",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Büro", "fa": "در دفتر کار" }
+      },
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Hast du gehört? Tom hat geheiratet!", "fa": "شنیدی؟ تام ازدواج کرده!" }, "mood": "excited" },
+        { "speaker": "Paul", "text": { "de": "Das ist ja überraschend!", "fa": "وای چه غیرمنتظره!" }, "mood": "surprised" },
+        { "speaker": "Lisa", "text": { "de": "Du wusstest das doch nicht, oder?", "fa": "تو که این را نمی‌دونستی، نه؟" }, "mood": "neutral" },
+        { "speaker": "Paul", "text": { "de": "Doch, ich wusste es! Er hat es mir ja erzählt.", "fa": "چرا، می‌دونستم! او که بهم گفته بود." }, "mood": "happy" },
+        { "speaker": "Lisa", "text": { "de": "Das ist doch nicht wahr!", "fa": "این که راست نیست!" }, "mood": "surprised" }
+      ],
+      "questions": [
+        { "question": "پاول از ازدواج تام خبر داشت؟", "options": ["نه", "بله", "معلوم نیست"], "correctIndex": 1, "explanation": "پاول گفت: Doch, ich wusste es!" },
+        { "question": "لیزا در آخر چه احساسی دارد؟", "options": ["خوشحال", "متعجب", "ناراحت"], "correctIndex": 1, "explanation": "لیزا گفت: Das ist doch nicht wahr! (ناباوری)" }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "جمله آلمانی را با معنی درست جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Doch, ich komme!" },
+        { "id": "i2", "text": "Das ist ja toll!" },
+        { "id": "i3", "text": "Du weißt doch..." },
+        { "id": "i4", "text": "Das ist ja bekannt." },
+        { "id": "i5", "text": "Das ist doch unmöglich!" },
+        { "id": "i6", "text": "Du bist ja schon da!" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "چرا، می‌آیم! (تناقض)" },
+        { "id": "m2", "text": "وای چه عالی! (تعجب)" },
+        { "id": "m3", "text": "تو که می‌دونی... (یادآوری)" },
+        { "id": "m4", "text": "این که معروفه. (دانش مشترک)" },
+        { "id": "m5", "text": "این که غیرممکنه! (ناباوری)" },
+        { "id": "m6", "text": "اِ، تو که اینجایی! (تعجب)" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "چرا، من می‌آیم!",
+      "sentenceTemplate": "{0}, ich {1}!",
+      "options": ["komme", "Doch", "Ja", "gehe"],
+      "correctAnswers": [1, 0],
+      "correctTranslation": { "de": "Doch, ich komme!", "fa": "چرا، من می‌آیم!" }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "وای چه جالب!",
+      "sentenceTemplate": "Das ist {0} {1}!",
+      "options": ["interessant", "ja", "doch", "nicht"],
+      "correctAnswers": [1, 0],
+      "correctTranslation": { "de": "Das ist ja interessant!", "fa": "وای چه جالب!" }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: گفتگوی دوستانه",
+      "passage": {
+        "de": "Maria und Tom sind alte Freunde. Sie treffen sich nach langer Zeit wieder. Maria sagt: \"Du bist ja schon da! Ich dachte, du kommst später.\" Tom antwortet: \"Doch, ich bin pünktlich! Du weißt doch, dass ich immer pünktlich bin.\" Maria lacht: \"Das ist ja wahr! Du bist doch der pünktlichste Mensch, den ich kenne!\" Tom sagt: \"Danke! Das höre ich ja gern!\"",
+        "fa": "ماریا و تام دوستان قدیمی هستند. آنها بعد از مدت طولانی دوباره همدیگر را می‌بینند. ماریا می‌گوید: «اِ، تو که اینجایی! فکر کردم دیرتر می‌آیی.» تام جواب می‌دهد: «چرا، من سر وقتم! تو که می‌دونی من همیشه سر وقتم.» ماریا می‌خندد: «این که راسته! تو که وقت‌شناس‌ترین آدمی هستی که می‌شناسم!» تام می‌گوید: «ممنون! این را خوشم می‌آید بشنوم!»"
+      },
+      "questions": [
+        { "question": "تام چطور آمد؟", "options": ["دیر", "سر وقت", "خیلی زود"], "correctIndex": 1, "explanation": "تام گفت: Doch, ich bin pünktlich!" },
+        { "question": "ماریا از دیدن تام چه احساسی داشت؟", "options": ["ناراحت", "متعجب", "عصبانی"], "correctIndex": 1, "explanation": "ماریا گفت: Du bist ja schon da! (تعجب)" },
+        { "question": "تام چه ویژگی‌ای دارد؟", "options": ["خنده‌رو", "وقت‌شناس", "آرام"], "correctIndex": 1, "explanation": "ماریا گفت: Du bist doch der pünktlichste Mensch." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die Überraschungsparty", "fa": "جشن غافلگیرانه" },
+      "characters": ["Mia", "Tom", "Lisa"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Es ist Toms Geburtstag. Mia und Lisa planen eine Überraschungsparty.", "fa": "تولد تام است. میا و لیزا یک جشن غافلگیرانه برنامه‌ریزی می‌کنند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Mia",
+          "text": { "de": "Du weißt doch, dass Tom heute Geburtstag hat?", "fa": "تو که می‌دونی امروز تولد تام است؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Ja, das weiß ich ja! Ich habe alles vorbereitet.", "fa": "بله، این را که می‌دونم! همه چیز را آماده کردم." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "چه مناسبتی است؟",
+          "options": ["عروسی", "تولد", "فارغ‌التحصیلی"],
+          "correctIndex": 1,
+          "explanation": "میا گفت: Du weißt doch, dass Tom heute Geburtstag hat?"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Tom kommt zur Party.", "fa": "تام به مهمانی می‌آید." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Tom",
+          "text": { "de": "Was ist das? Ihr seid ja alle hier!", "fa": "این چیه؟ همه که اینجایید!" },
+          "mood": "surprised"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Mia",
+          "text": { "de": "Doch, wir sind alle hier! Überraschung!", "fa": "چرا، همه اینجاییم! سورپرایز!" },
+          "mood": "excited"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Tom",
+          "text": { "de": "Das ist ja unglaublich! Danke!", "fa": "وای باورنکردنیه! ممنون!" },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "تام چه احساسی دارد؟",
+          "options": ["ناراحت", "عصبانی", "خوشحال و متعجب"],
+          "correctIndex": 2,
+          "explanation": "تام گفت: Das ist ja unglaublich! Danke!"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Alle feiern zusammen. Es ist ein schöner Abend.", "fa": "همه با هم جشن می‌گیرند. شب قشنگی است." }
+        },
+        {
+          "type": "question",
+          "question": "چه نوع جشنی بود؟",
+          "options": ["جشن عادی", "جشن غافلگیرانه", "جشن شرکت"],
+          "correctIndex": 1,
+          "explanation": "میا و لیزا یک Überraschungsparty برنامه‌ریزی کرده بودند."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "questions": [
+        { "prompt": "جواب مثبت به سوال منفی", "left": "doch", "right": "ja", "correctSide": "left" },
+        { "prompt": "تعجب از کشف جدید", "left": "doch", "right": "ja", "correctSide": "right" },
+        { "prompt": "دانش مشترک (تو که می‌دونی)", "left": "doch", "right": "ja", "correctSide": "right" },
+        { "prompt": "یادآوری قوی", "left": "doch", "right": "ja", "correctSide": "left" },
+        { "prompt": "ناباوری (این که غیرممکنه!)", "left": "doch", "right": "ja", "correctSide": "left" },
+        { "prompt": "تعجب (وای چه عالی!)", "left": "doch", "right": "ja", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Doch, ich komme!",
+      "translation": "چرا، می‌آیم!"
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Das ist ja interessant!",
+      "translation": "وای چه جالب!"
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Du weißt doch, dass ich komme.",
+      "translation": "تو که می‌دونی من می‌آیم."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "تناقض: Kommst du nicht? - ..., ich komme!", "options": ["Doch", "Ja"], "correctAnswerIndex": 0 },
+        { "question": "تعجب: Das ist ... toll!", "options": ["doch", "ja"], "correctAnswerIndex": 1 },
+        { "question": "یادآوری: Du weißt ..., dass...", "options": ["ja", "doch"], "correctAnswerIndex": 1 },
+        { "question": "دانش مشترک: Das ist ... bekannt.", "options": ["ja", "doch"], "correctAnswerIndex": 0 },
+        { "question": "ناباوری: Das ist ... unmöglich!", "options": ["ja", "doch"], "correctAnswerIndex": 1 },
+        { "question": "کشف جدید: Du bist ... schon da!", "options": ["ja", "doch"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "Doch, ich komme!", "fa": "چرا، می‌آیم!" },
+        { "de": "Das ist ja toll!", "fa": "وای چه عالی!" },
+        { "de": "Du weißt doch...", "fa": "تو که می‌دونی..." },
+        { "de": "Das ist ja bekannt.", "fa": "این که معروفه." }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات مربوط به این درس را پیدا کنید",
+      "targetWords": ["doch", "ja", "betonen", "widersprechen", "erinnern", "überrascht"],
+      "gridSize": { "rows": 12, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "doch (تناقض)", "fa": "چرا (جواب مثبت به سوال منفی)", "options": ["نه", "چرا", "شاید", "بله"], "correctIndex": 1 },
+        { "de": "ja (تعجب)", "fa": "وای (بیان شگفتی)", "options": ["بله", "نه", "وای", "اما"], "correctIndex": 2 },
+        { "de": "betonen", "fa": "تأکید کردن", "options": ["فراموش کردن", "یادآوری کردن", "تأکید کردن", "مخالفت کردن"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما حروف تاکیدی doch و ja را یاد گرفتید!",
+      "keyPoints": [
+        "doch برای تناقض: Doch, ich komme! (چرا، می‌آیم!)",
+        "doch برای تأکید و یادآوری: Du weißt doch... (تو که می‌دونی...)",
+        "doch برای ناباوری: Das ist doch unmöglich! (این که غیرممکنه!)",
+        "ja برای تعجب: Das ist ja toll! (وای چه عالی!)",
+        "ja برای دانش مشترک: Das ist ja bekannt. (این که معروفه.)",
+        "این حروف به جملات حس و احساس اضافه می‌کنند"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "doch", "fa": "اما، ولی (حرف تاکیدی)" } },
+        { "word": { "de": "ja", "fa": "بله (حرف تاکیدی)" } },
+        { "word": { "de": "betonen", "fa": "تأکید کردن" } },
+        { "word": { "de": "widersprechen", "fa": "مخالفت کردن" } },
+        { "word": { "de": "erinnern", "fa": "یادآوری کردن" } },
+        { "word": { "de": "überrascht", "fa": "متعجب، شگفت‌زده" } }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,522 @@
+{
+  "id": "B1-M12-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Modalpartikeln: mal, eben, halt", "fa": "ذرات مودال: mal، eben، halt - نرم‌کننده‌ها" },
+  "description": "یاد بگیرید چگونه با استفاده از ذرات مودال آلمانی، درخواست‌ها و جملات را نرم‌تر و طبیعی‌تر کنید. این ذرات در مکالمات روزمره آلمانی بسیار رایج هستند.",
+  "level": "B1",
+  "module": 12,
+  "lessonNumber": 2,
+  "totalSteps": 45,
+  "estimatedMinutes": 25,
+  "vocabulary": [
+    { "de": "mal", "fa": "ذره نرم‌کننده درخواست", "grammar": { "pos": "particle" } },
+    { "de": "eben", "fa": "ذره پذیرش/الان", "grammar": { "pos": "particle" } },
+    { "de": "halt", "fa": "ذره پذیرش (محاوره)", "grammar": { "pos": "particle" } },
+    { "de": "höflich", "fa": "مؤدبانه", "grammar": { "pos": "adjective" } },
+    { "de": "die Bitte", "fa": "درخواست، خواهش", "grammar": { "pos": "noun", "gender": "f" } },
+    { "de": "akzeptieren", "fa": "پذیرفتن، قبول کردن", "grammar": { "pos": "verb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "ذرات مودال چیستند؟",
+      "content": "**Modalpartikeln (ذرات مودال)**\n\nدر آلمانی، ذرات مودال کلماتی کوچک هستند که **احساس** و **لحن** جمله را تغییر می‌دهند.\n\n**سه ذره مهم:**\n- **mal** - درخواست را نرم‌تر می‌کند\n- **eben/halt** - پذیرش یا تسلیم را نشان می‌دهد\n\n**مثال:**\n- Komm her! (بیا اینجا! - دستوری)\n- Komm **mal** her! (یه لحظه بیا اینجا - دوستانه)\n\n**نکته فارسی:** این ذرات مثل «یه لحظه»، «خب»، «دیگه» در فارسی هستند که جمله را طبیعی‌تر می‌کنند.",
+      "examples": [
+        { "de": "Schau mal!", "fa": "یه نگاه کن!" },
+        { "de": "Das ist eben so.", "fa": "خب، همینه دیگه." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "mal", "fa": "ذره نرم‌کننده (برای درخواست‌ها)" },
+      "example": { "text": { "de": "Kannst du mir mal helfen?", "fa": "می‌تونی یه لحظه کمکم کنی؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "mal",
+      "translation": "ذره نرم‌کننده",
+      "syllables": ["mal"],
+      "distractors": ["mahl", "mel", "mol"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "eben", "fa": "ذره پذیرش / همین الان" },
+      "example": { "text": { "de": "Das ist eben so.", "fa": "خب، همینه دیگه." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "eben",
+      "translation": "پذیرش",
+      "syllables": ["e", "ben"],
+      "distractors": ["a", "bon", "ban"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "halt", "fa": "ذره پذیرش (محاوره‌ای)" },
+      "example": { "text": { "de": "Es ist halt schwer.", "fa": "خب، سخته دیگه." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "halt",
+      "translation": "پذیرش",
+      "syllables": ["halt"],
+      "distractors": ["holt", "helt", "hald"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام ذره درخواست را نرم‌تر و دوستانه‌تر می‌کند؟",
+      "options": [
+        "nicht",
+        "mal",
+        "sehr",
+        "immer"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! mal درخواست‌ها را نرم‌تر می‌کند.", "incorrect": "mal ذره‌ای است که درخواست‌ها را دوستانه‌تر می‌کند." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را با ذره مناسب پر کنید",
+      "sentence": "Kannst du {0} kommen?",
+      "options": ["mal", "sehr", "nicht", "immer"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "mal درخواست را دوستانه‌تر می‌کند: Kannst du mal kommen?" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در دفتر کار",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Büro. Anna braucht Hilfe von ihrem Kollegen.", "fa": "در دفتر. آنا به کمک همکارش نیاز دارد." }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Peter, kannst du mir mal helfen?", "fa": "پیتر، می‌تونی یه لحظه کمکم کنی؟" }, "mood": "neutral" },
+        { "speaker": "Peter", "text": { "de": "Ja klar! Was brauchst du?", "fa": "آره حتماً! چی لازم داری؟" }, "mood": "happy" },
+        { "speaker": "Anna", "text": { "de": "Schau mal hier. Verstehst du das?", "fa": "یه نگاه کن اینجا. می‌فهمیش؟" }, "mood": "confused" },
+        { "speaker": "Peter", "text": { "de": "Hmm, das ist halt kompliziert.", "fa": "هوم، خب پیچیده‌ست دیگه." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "آنا چگونه از پیتر کمک می‌خواهد؟", "options": ["با دستور", "با mal - دوستانه", "با Sie - رسمی"], "correctIndex": 1, "explanation": "آنا گفت: Kannst du mir mal helfen?" },
+        { "question": "پیتر درباره مشکل چه می‌گوید؟", "options": ["آسان است", "پیچیده است", "نمی‌داند"], "correctIndex": 1, "explanation": "پیتر گفت: Das ist halt kompliziert." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["her!", "mal", "Komm"],
+      "correctOrder": [2, 1, 0],
+      "correctSentence": { "de": "Komm mal her!", "fa": "یه لحظه بیا اینجا!" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "ذره mal درخواست‌ها را سخت‌تر و دستوری‌تر می‌کند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! mal درخواست‌ها را نرم‌تر و دوستانه‌تر می‌کند." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "کاربردهای mal",
+      "content": "**mal - نرم‌کننده درخواست**\n\n**۱. در درخواست‌ها:**\n- Hilf mir **mal**! (یه لحظه کمکم کن!)\n- Gib **mal** das Salz! (نمک رو بده!)\n\n**۲. با Schau/Guck:**\n- Schau **mal**! (یه نگاه کن!)\n- Guck **mal** hier! (اینجا رو ببین!)\n\n**۳. با فعل‌های مودال:**\n- Kannst du **mal** kommen? (می‌تونی بیای؟)\n- Könntest du **mal** anrufen? (می‌شه زنگ بزنی؟)\n\n**جایگاه:** معمولاً بعد از فعل یا فعل مودال می‌آید.\n\n**نکته:** بدون mal جمله دستوری و سرد به نظر می‌رسد!",
+      "examples": [
+        { "de": "Komm mal her!", "fa": "یه لحظه بیا اینجا!" },
+        { "de": "Warte mal!", "fa": "یه لحظه صبر کن!" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "höflich", "fa": "مؤدبانه، با ادب" },
+      "example": { "text": { "de": "Mit mal klingt die Bitte höflicher.", "fa": "با mal درخواست مؤدبانه‌تر به نظر می‌رسد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "höflich",
+      "translation": "مؤدبانه",
+      "syllables": ["höf", "lich"],
+      "distractors": ["hof", "lach", "lech"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "die Bitte", "fa": "درخواست، خواهش" },
+      "example": { "text": { "de": "Ich habe eine Bitte an dich.", "fa": "یه خواهش ازت دارم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "Bitte",
+      "translation": "درخواست",
+      "syllables": ["Bit", "te"],
+      "distractors": ["Bat", "ti", "ta"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله دوستانه‌تر به نظر می‌رسد؟",
+      "options": [
+        "Hilf mir!",
+        "Hilf mir mal!",
+        "Du musst mir helfen!",
+        "Hilf sofort!"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! با mal جمله دوستانه‌تر می‌شود.", "incorrect": "Hilf mir mal! با استفاده از mal دوستانه‌تر است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Schau {0}! Das ist interessant.",
+      "options": ["mal", "sehr", "nicht", "halt"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Schau mal! یعنی یه نگاه کن!" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "پذیرش واقعیت",
+      "scene": {
+        "location": "home",
+        "description": { "de": "Zu Hause. Tom und Lisa sprechen über das Wetter.", "fa": "در خانه. تام و لیزا درباره آب و هوا صحبت می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Es regnet schon wieder!", "fa": "باز داره بارون میاد!" }, "mood": "sad" },
+        { "speaker": "Tom", "text": { "de": "Ja, das ist eben so im November.", "fa": "آره، خب نوامبر همینه دیگه." }, "mood": "neutral" },
+        { "speaker": "Lisa", "text": { "de": "Ich will aber in den Park gehen!", "fa": "ولی می‌خوام برم پارک!" }, "mood": "angry" },
+        { "speaker": "Tom", "text": { "de": "Das geht halt heute nicht.", "fa": "خب امروز نمیشه دیگه." }, "mood": "neutral" },
+        { "speaker": "Lisa", "text": { "de": "Na gut, dann bleiben wir eben zu Hause.", "fa": "باشه، پس خونه می‌مونیم دیگه." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "تام با کدام ذره پذیرش را نشان می‌دهد؟", "options": ["mal", "eben / halt", "nicht"], "correctIndex": 1, "explanation": "تام از eben و halt برای نشان دادن پذیرش استفاده کرد." },
+        { "question": "لیزا در آخر چه تصمیمی می‌گیرد؟", "options": ["به پارک می‌رود", "خانه می‌ماند", "عصبانی می‌شود"], "correctIndex": 1, "explanation": "لیزا گفت: dann bleiben wir eben zu Hause." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["so.", "eben", "ist", "Das"],
+      "correctOrder": [3, 2, 1, 0],
+      "correctSentence": { "de": "Das ist eben so.", "fa": "خب، همینه دیگه." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "eben و halt معنی مشابهی دارند و هر دو پذیرش یا تسلیم را نشان می‌دهند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! eben و halt هر دو برای نشان دادن پذیرش واقعیت استفاده می‌شوند." }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "akzeptieren", "fa": "پذیرفتن، قبول کردن" },
+      "example": { "text": { "de": "Man muss es eben akzeptieren.", "fa": "باید قبولش کنی دیگه." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "akzeptieren",
+      "translation": "پذیرفتن",
+      "syllables": ["ak", "zep", "tie", "ren"],
+      "distractors": ["ok", "zap", "ta"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "ذره مناسب را انتخاب کنید",
+      "sentence": "Es ist {0} schwer, Deutsch zu lernen.",
+      "options": ["halt", "mal", "sehr", "nicht"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "halt نشان‌دهنده پذیرش است: Es ist halt schwer." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich war {0} dort.",
+      "options": ["eben", "mal", "halt", "sehr"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "eben اینجا به معنی «همین الان» است: Ich war eben dort." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "eben و halt - تفاوت‌ها",
+      "content": "**eben vs halt**\n\n**شباهت‌ها:**\nهر دو برای نشان دادن **پذیرش** یا **تسلیم** استفاده می‌شوند:\n- Das ist **eben** so. = Das ist **halt** so.\n- (خب، همینه دیگه.)\n\n**تفاوت‌ها:**\n\n| eben | halt |\n|------|------|\n| رسمی‌تر | محاوره‌ای‌تر |\n| نوشتاری و گفتاری | بیشتر گفتاری |\n| جنوب و شمال آلمان | بیشتر جنوب آلمان |\n\n**کاربرد دیگر eben:**\neben = همین الان، تازه\n- Ich war **eben** dort. (تازه اونجا بودم.)\n- Er hat **eben** angerufen. (همین الان زنگ زد.)\n\n**نکته:** در مکالمه روزمره، halt محاوره‌ای‌تر است!",
+      "examples": [
+        { "de": "Das ist eben so. (رسمی‌تر)", "fa": "خب، همینه دیگه." },
+        { "de": "Das ist halt so. (محاوره‌ای)", "fa": "خب، همینه دیگه." },
+        { "de": "Ich war eben dort. (زمان)", "fa": "همین الان اونجا بودم." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["helfen?", "mir", "du", "mal", "Könntest"],
+      "correctOrder": [4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Könntest du mal mir helfen?", "fa": "می‌شه یه لحظه کمکم کنی؟" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "eben فقط برای نشان دادن پذیرش استفاده می‌شود و معنی زمانی ندارد.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! eben هم معنی پذیرش دارد و هم معنی زمانی «همین الان»: Ich war eben dort." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "ذره مناسب را انتخاب کنید",
+      "sentence": "Gib {0} das Buch!",
+      "options": ["mal", "eben", "halt", "nicht"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "mal درخواست را نرم‌تر می‌کند: Gib mal das Buch!" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Man muss es {0} akzeptieren.",
+      "options": ["eben", "mal", "sehr", "nicht"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "eben نشان‌دهنده پذیرش است: Man muss es eben akzeptieren." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "جملات را با معنی فارسی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Schau mal!" },
+        { "id": "i2", "text": "Das ist eben so." },
+        { "id": "i3", "text": "Komm mal her!" },
+        { "id": "i4", "text": "Es ist halt schwer." },
+        { "id": "i5", "text": "Warte mal!" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "یه نگاه کن!" },
+        { "id": "m2", "text": "خب، همینه دیگه." },
+        { "id": "m3", "text": "یه لحظه بیا اینجا!" },
+        { "id": "m4", "text": "خب، سخته دیگه." },
+        { "id": "m5", "text": "یه لحظه صبر کن!" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "می‌تونی یه لحظه کمکم کنی؟",
+      "sentenceTemplate": "Kannst du {0} {1} helfen?",
+      "options": ["mir", "mal", "dir", "halt"],
+      "correctAnswers": [1, 0],
+      "correctTranslation": { "de": "Kannst du mal mir helfen?", "fa": "می‌تونی یه لحظه کمکم کنی؟" }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "خب، همینه دیگه.",
+      "sentenceTemplate": "Das {0} {1} so.",
+      "options": ["ist", "eben", "hat", "mal"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Das ist eben so.", "fa": "خب، همینه دیگه." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: ذرات مودال",
+      "passage": {
+        "de": "Maria will ins Kino gehen, aber es regnet stark. Sie sagt zu ihrem Freund: 'Komm, lass uns gehen!' Ihr Freund antwortet: 'Schau mal aus dem Fenster! Es regnet!' Maria ist traurig: 'Das ist halt Pech.' Später sagt sie: 'Kannst du mir mal den Regenschirm geben? Dann können wir eben zu Fuß gehen!' Ihr Freund lacht und gibt ihr den Regenschirm.",
+        "fa": "ماریا می‌خواهد به سینما برود، اما باران شدیدی می‌بارد. به دوستش می‌گوید: «بیا بریم!» دوستش جواب می‌دهد: «یه نگاه از پنجره بکن! داره بارون میاد!» ماریا ناراحت است: «خب، بدشانسیه دیگه.» بعداً می‌گوید: «می‌تونی چترو بهم بدی؟ اون وقت پیاده میریم دیگه!» دوستش می‌خندد و چتر را به او می‌دهد."
+      },
+      "questions": [
+        { "question": "دوست ماریا با کدام ذره توجه او را جلب می‌کند؟", "options": ["halt", "mal", "eben"], "correctIndex": 1, "explanation": "دوستش گفت: Schau mal aus dem Fenster!" },
+        { "question": "ماریا چگونه بدشانسی را پذیرفت؟", "options": ["با mal", "با halt", "با sehr"], "correctIndex": 1, "explanation": "ماریا گفت: Das ist halt Pech." },
+        { "question": "ماریا چگونه چتر را درخواست کرد؟", "options": ["با دستور", "با mal - دوستانه", "با halt"], "correctIndex": 1, "explanation": "ماریا گفت: Kannst du mir mal den Regenschirm geben?" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der verpasste Zug", "fa": "قطار از دست رفته" },
+      "characters": ["Anna", "Max"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Am Bahnhof. Anna und Max wollen nach Berlin fahren.", "fa": "در ایستگاه قطار. آنا و ماکس می‌خواهند به برلین بروند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Schau mal! Der Zug fährt gerade ab!", "fa": "یه نگاه کن! قطار داره حرکت می‌کنه!" },
+          "mood": "surprised"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Max",
+          "text": { "de": "Nein! Komm mal schnell!", "fa": "نه! زود بیا!" },
+          "mood": "excited"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Sie rennen, aber der Zug ist weg.", "fa": "می‌دوند، اما قطار رفته است." }
+        },
+        {
+          "type": "question",
+          "question": "ماکس از کدام ذره استفاده کرد؟",
+          "options": ["eben", "halt", "mal"],
+          "correctIndex": 2,
+          "explanation": "ماکس گفت: Komm mal schnell!"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Das ist halt Pech.", "fa": "خب، بدشانسیه دیگه." },
+          "mood": "sad"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Max",
+          "text": { "de": "Ja, das ist eben so. Wir nehmen den nächsten Zug.", "fa": "آره، همینه دیگه. قطار بعدی رو می‌گیریم." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Kannst du mal die Abfahrtszeiten checken?", "fa": "می‌تونی ساعت حرکت‌ها رو چک کنی؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Max",
+          "text": { "de": "Klar! Warte mal... Der nächste ist in einer Stunde.", "fa": "حتماً! یه لحظه صبر کن... بعدی یه ساعت دیگه‌ست." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "آنا و ماکس چگونه با این وضعیت کنار آمدند؟",
+          "options": ["عصبانی شدند", "آن را پذیرفتند", "رفتند خانه"],
+          "correctIndex": 1,
+          "explanation": "هر دو از eben و halt استفاده کردند که نشان‌دهنده پذیرش است."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع",
+      "instruction": "کدام ذره مناسب است؟",
+      "questions": [
+        { "prompt": "Schau ___! (یه نگاه کن)", "left": "mal", "right": "halt", "correctSide": "left" },
+        { "prompt": "Das ist ___ so. (پذیرش)", "left": "mal", "right": "eben", "correctSide": "right" },
+        { "prompt": "Komm ___ her! (درخواست)", "left": "mal", "right": "halt", "correctSide": "left" },
+        { "prompt": "Es ist ___ schwer. (پذیرش)", "left": "mal", "right": "halt", "correctSide": "right" },
+        { "prompt": "Warte ___! (یه لحظه)", "left": "mal", "right": "eben", "correctSide": "left" },
+        { "prompt": "Man muss es ___ akzeptieren.", "left": "mal", "right": "eben", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Schau mal hier!",
+      "translation": "یه نگاه کن اینجا!"
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Das ist eben so.",
+      "translation": "خب، همینه دیگه."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Kannst du mir mal helfen?",
+      "translation": "می‌تونی یه لحظه کمکم کنی؟"
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "نرم‌کننده درخواست", "options": ["mal", "halt", "eben"], "correctAnswerIndex": 0 },
+        { "question": "پذیرش (رسمی)", "options": ["mal", "eben", "sehr"], "correctAnswerIndex": 1 },
+        { "question": "پذیرش (محاوره)", "options": ["mal", "nicht", "halt"], "correctAnswerIndex": 2 },
+        { "question": "Schau ___!", "options": ["mal", "halt", "eben"], "correctAnswerIndex": 0 },
+        { "question": "Das ist ___ so.", "options": ["mal", "eben", "sehr"], "correctAnswerIndex": 1 },
+        { "question": "Es ist ___ schwer.", "options": ["mal", "sehr", "halt"], "correctAnswerIndex": 2 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "mal", "fa": "نرم‌کننده درخواست" },
+        { "de": "eben", "fa": "پذیرش (رسمی)" },
+        { "de": "halt", "fa": "پذیرش (محاوره)" },
+        { "de": "höflich", "fa": "مؤدبانه" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "ذرات مودال و کلمات مرتبط را پیدا کنید",
+      "targetWords": ["mal", "eben", "halt", "Bitte", "akzeptieren"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "mal", "fa": "ذره نرم‌کننده", "options": ["همیشه", "هرگز", "ذره نرم‌کننده", "خیلی"], "correctIndex": 2 },
+        { "de": "eben", "fa": "پذیرش/الان", "options": ["پذیرش/الان", "سریع", "آهسته", "بد"], "correctIndex": 0 },
+        { "de": "höflich", "fa": "مؤدبانه", "options": ["بی‌ادب", "مؤدبانه", "سخت", "آسان"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما ذرات مودال mal، eben و halt را یاد گرفتید!",
+      "keyPoints": [
+        "mal - درخواست‌ها را نرم‌تر و دوستانه‌تر می‌کند",
+        "Schau mal! = یه نگاه کن! / Komm mal her! = یه لحظه بیا!",
+        "eben - پذیرش واقعیت (رسمی‌تر)",
+        "halt - پذیرش واقعیت (محاوره‌ای)",
+        "Das ist eben so. = Das ist halt so. = خب، همینه دیگه.",
+        "eben همچنین می‌تواند به معنی «همین الان» باشد",
+        "این ذرات آلمانی شما را طبیعی‌تر می‌کنند!"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "mal", "fa": "ذره نرم‌کننده" } },
+        { "word": { "de": "eben", "fa": "پذیرش/الان" } },
+        { "word": { "de": "halt", "fa": "پذیرش (محاوره)" } },
+        { "word": { "de": "höflich", "fa": "مؤدبانه" } },
+        { "word": { "de": "die Bitte", "fa": "درخواست" } },
+        { "word": { "de": "akzeptieren", "fa": "پذیرفتن" } }
+      ]
+    }
+  ]
+}
