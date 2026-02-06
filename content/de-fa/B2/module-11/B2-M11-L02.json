@@ -1,0 +1,514 @@
+{
+  "id": "B2-M11-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Konzessivsätze: trotzdem, dennoch, gleichwohl", "fa": "جملات امتناعی: با این حال، با وجود این" },
+  "description": "یاد بگیرید چگونه از قیدهای امتناعی «trotzdem»، «dennoch» و «gleichwohl» استفاده کنید. این کلمات قیدند (نه حرف ربط) و دو جمله اصلی را به هم وصل می‌کنند. برخلاف «obwohl» که حرف ربط فرعی‌ساز است، این قیدها در جایگاه V2 قرار می‌گیرند.",
+  "level": "B2",
+  "module": 11,
+  "lessonNumber": 2,
+  "totalSteps": 45,
+  "estimatedMinutes": 40,
+  "vocabulary": [
+    { "de": "trotzdem", "fa": "با این حال، با وجود این (محاوره‌ای)", "grammar": { "pos": "adverb" } },
+    { "de": "dennoch", "fa": "با این وجود، با این حال (رسمی)", "grammar": { "pos": "adverb" } },
+    { "de": "gleichwohl", "fa": "با این همه، معذلک (بسیار رسمی، ادبی)", "grammar": { "pos": "adverb" } },
+    { "de": "obwohl", "fa": "اگرچه، با اینکه (حرف ربط فرعی‌ساز)", "grammar": { "pos": "conjunction" } },
+    { "de": "der Widerspruch", "fa": "تناقض، تضاد", "grammar": { "pos": "noun", "gender": "masculine" } },
+    { "de": "die Einschränkung", "fa": "محدودیت، استثنا", "grammar": { "pos": "noun", "gender": "feminine" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "قیدهای امتناعی چیستند؟",
+      "content": "**قیدهای امتناعی = Konzessive Adverbien**\n\nاین قیدها برای بیان تضاد یا استثنا استفاده می‌شوند و نشان می‌دهند که نتیجه‌ای برخلاف انتظار رخ داده است.\n\n**سه قید اصلی:**\n| قید | معنی | سطح رسمیت |\n|-----|------|------------|\n| **trotzdem** | با این حال | محاوره‌ای |\n| **dennoch** | با این وجود | رسمی |\n| **gleichwohl** | معذلک | بسیار رسمی/ادبی |\n\n**ساختار مهم:**\n```\nHauptsatz 1. + Trotzdem + Verb + Subject...\n```\n\n**مثال:**\n- Es regnet. **Trotzdem gehe** ich spazieren.\n- باران می‌بارد. **با این حال می‌روم** پیاده‌روی.\n\n**نکته برای فارسی‌زبانان:**\nدر فارسی معمولاً می‌گوییم «با این حال» یا «با وجود این». این قیدها دقیقاً همین کاربرد را دارند.",
+      "examples": [
+        { "de": "Er war müde. Trotzdem arbeitete er weiter.", "fa": "او خسته بود. با این حال به کارش ادامه داد." },
+        { "de": "Das Wetter war schlecht. Dennoch fand das Konzert statt.", "fa": "هوا بد بود. با این وجود کنسرت برگزار شد." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "trotzdem", "fa": "با این حال، با وجود این (محاوره‌ای)" },
+      "example": { "text": { "de": "Es ist kalt. Trotzdem gehe ich ohne Jacke.", "fa": "هوا سرد است. با این حال بدون ژاکت می‌روم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "trotzdem",
+      "translation": "با این حال",
+      "syllables": ["trotz", "dem"],
+      "distractors": ["trotz", "dam", "traz"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "dennoch", "fa": "با این وجود، با این حال (رسمی)" },
+      "example": { "text": { "de": "Die Aufgabe war schwer. Dennoch schaffte sie es.", "fa": "تکلیف سخت بود. با این وجود او موفق شد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "dennoch",
+      "translation": "با این وجود",
+      "syllables": ["den", "noch"],
+      "distractors": ["dan", "nach", "doch"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "gleichwohl", "fa": "با این همه، معذلک (بسیار رسمی، ادبی)" },
+      "example": { "text": { "de": "Die Kritik war hart. Gleichwohl blieb er optimistisch.", "fa": "انتقاد سخت بود. معذلک او خوش‌بین ماند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "gleichwohl",
+      "translation": "معذلک",
+      "syllables": ["gleich", "wohl"],
+      "distractors": ["glich", "wol", "wahl"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "تفاوت کلیدی: قید (trotzdem) در برابر حرف ربط (obwohl)",
+      "content": "**تفاوت اساسی در ترتیب کلمات:**\n\n**1. obwohl = حرف ربط فرعی‌ساز (Nebensatz)**\n- فعل به **انتها** می‌رود\n- جمله فرعی می‌سازد\n```\nObwohl es regnet, gehe ich spazieren.\n```\n\n**2. trotzdem/dennoch/gleichwohl = قید (Hauptsatz)**\n- فعل در **جایگاه دوم** (V2)\n- دو جمله اصلی را به هم وصل می‌کند\n```\nEs regnet. Trotzdem gehe ich spazieren.\n```\n\n**مقایسه:**\n| ساختار | ترتیب کلمات |\n|--------|-------------|\n| **Obwohl** es regnet, gehe ich... | فعل **regnet** در انتها |\n| Es regnet. **Trotzdem gehe** ich... | فعل **gehe** در جایگاه دوم |\n\n**نکته مهم:**\n- **obwohl** + Nebensatz (V-End)\n- **trotzdem** + Hauptsatz (V2)",
+      "examples": [
+        { "de": "Obwohl er krank war, ging er zur Arbeit.", "fa": "اگرچه مریض بود، به سر کار رفت. (با obwohl فعل در انتها)" },
+        { "de": "Er war krank. Trotzdem ging er zur Arbeit.", "fa": "او مریض بود. با این حال به سر کار رفت. (با trotzdem فعل در جایگاه دوم)" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "obwohl", "fa": "اگرچه، با اینکه (حرف ربط فرعی‌ساز)" },
+      "example": { "text": { "de": "Obwohl es spät war, blieb sie wach.", "fa": "اگرچه دیر شده بود، او بیدار ماند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "obwohl",
+      "translation": "اگرچه",
+      "syllables": ["ob", "wohl"],
+      "distractors": ["ab", "wahl", "wol"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "der Widerspruch", "fa": "تناقض، تضاد" },
+      "example": { "text": { "de": "Es gibt einen Widerspruch zwischen seinen Worten und Taten.", "fa": "بین حرف‌ها و کارهایش تناقض وجود دارد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "Widerspruch",
+      "translation": "تناقض",
+      "syllables": ["Wi", "der", "spruch"],
+      "distractors": ["Wa", "dar", "sprach"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "die Einschränkung", "fa": "محدودیت، استثنا" },
+      "example": { "text": { "de": "Trotz der Einschränkungen war das Projekt erfolgreich.", "fa": "با وجود محدودیت‌ها، پروژه موفق بود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Einschränkung",
+      "translation": "محدودیت",
+      "syllables": ["Ein", "schrän", "kung"],
+      "distractors": ["An", "schran", "kang"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "سطوح رسمیت قیدهای امتناعی",
+      "content": "**هر سه قید معنی یکسانی دارند، اما سطح رسمیت متفاوت:**\n\n| قید | کاربرد | مثال موقعیت |\n|-----|--------|-------------|\n| **trotzdem** | محاوره‌ای، روزمره | گفتگو با دوستان، ایمیل غیررسمی |\n| **dennoch** | رسمی، نوشتاری | گزارش کاری، مقاله خبری |\n| **gleichwohl** | بسیار رسمی/ادبی | متون حقوقی، ادبیات کلاسیک |\n\n**نکته عملی:**\n- در مکالمه روزمره: **trotzdem** ✓\n- در ایمیل کاری: **dennoch** ✓\n- در متن علمی یا حقوقی: **gleichwohl** یا **dennoch** ✓\n\n**مثال یک جمله با هر سه:**\n1. Es war teuer. **Trotzdem** kaufte ich es. (محاوره‌ای)\n2. Es war teuer. **Dennoch** kaufte ich es. (رسمی)\n3. Es war teuer. **Gleichwohl** kaufte ich es. (بسیار رسمی)",
+      "examples": [
+        { "de": "Ich bin müde. Trotzdem mache ich weiter.", "fa": "خسته‌ام. با این حال ادامه می‌دهم. (محاوره‌ای)" },
+        { "de": "Die Lage ist ernst. Dennoch bleibt Hoffnung.", "fa": "وضعیت جدی است. با این وجود امید باقی است. (رسمی)" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام کلمه قید است و کدام حرف ربط فرعی‌ساز؟",
+      "options": [
+        "trotzdem = حرف ربط، obwohl = قید",
+        "trotzdem = قید، obwohl = حرف ربط فرعی‌ساز",
+        "هر دو حرف ربط هستند",
+        "هر دو قید هستند"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! trotzdem قید است (جایگاه V2) و obwohl حرف ربط فرعی‌ساز است (فعل در انتها).", "incorrect": "trotzdem قید است و با جایگاه V2 استفاده می‌شود. obwohl حرف ربط فرعی‌ساز است و فعل را به انتها می‌برد." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام قید رسمی‌ترین و ادبی‌ترین است؟",
+      "options": [
+        "trotzdem",
+        "dennoch",
+        "gleichwohl",
+        "obwohl"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "درست! gleichwohl بسیار رسمی و ادبی است و در متون حقوقی و کلاسیک استفاده می‌شود.", "incorrect": "gleichwohl رسمی‌ترین است. trotzdem محاوره‌ای، dennoch رسمی، و obwohl حرف ربط است نه قید." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "sentence": "Es war spät. {0} blieb sie wach.",
+      "options": ["Obwohl", "Trotzdem", "Dass", "Weil"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "«Trotzdem» درست است: دیر شده بود. با این حال او بیدار ماند. (قید + جایگاه V2)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "{0} es kalt war, ging er schwimmen.",
+      "options": ["Trotzdem", "Obwohl", "Dennoch", "Gleichwohl"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "«Obwohl» درست است: اگرچه سرد بود، رفت شنا. (حرف ربط فرعی‌ساز + فعل در انتها)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "گزینه مناسب را انتخاب کنید",
+      "sentence": "Die Arbeit war schwer. {0} schaffte er es pünktlich.",
+      "options": ["Obwohl", "Dennoch", "Weil", "Damit"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "«Dennoch» درست است: کار سخت بود. با این وجود او به موقع تمامش کرد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Die Kritik war hart. {0} blieb er optimistisch.",
+      "options": ["Weil", "Gleichwohl", "Dass", "Damit"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "«Gleichwohl» درست است: انتقاد سخت بود. معذلک او خوش‌بین ماند. (رسمی/ادبی)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "sentence": "Er war müde. Trotzdem {0} er zur Arbeit.",
+      "options": ["gehen", "ging", "geht", "gegangen"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "«ging» درست است: فعل در جایگاه دوم و به شکل صرف‌شده (Präteritum)." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Obwohl es regnete, {0} wir spazieren.",
+      "options": ["gingen", "ging", "gehen", "gegangen"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "«gingen» درست است: اگرچه باران می‌بارید، رفتیم پیاده‌روی. (فعل در جمله اصلی پس از جمله فرعی)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "گفتگو در محل کار",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Zwei Kollegen besprechen ein Projekt.", "fa": "دو همکار درباره یک پروژه صحبت می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Das Budget wurde gekürzt.", "fa": "بودجه کم شد." }, "mood": "sad" },
+        { "speaker": "Thomas", "text": { "de": "Das ist schade. Trotzdem müssen wir das Projekt fertigstellen.", "fa": "حیف شد. با این حال باید پروژه را تمام کنیم." }, "mood": "neutral" },
+        { "speaker": "Anna", "text": { "de": "Stimmt. Dennoch brauchen wir einen neuen Plan.", "fa": "درسته. با این وجود به یک برنامه جدید نیاز داریم." }, "mood": "confused" },
+        { "speaker": "Thomas", "text": { "de": "Die Situation ist schwierig. Gleichwohl bin ich zuversichtlich.", "fa": "وضعیت سخت است. معذلک من مطمئنم." }, "mood": "happy" },
+        { "speaker": "Anna", "text": { "de": "Deine positive Einstellung hilft uns weiter!", "fa": "نگرش مثبت تو به ما کمک می‌کند!" }, "mood": "excited" }
+      ],
+      "questions": [
+        { "question": "توماس چه قیدی برای بیان تضاد استفاده کرد؟", "options": ["obwohl", "trotzdem و gleichwohl", "weil"], "correctIndex": 1, "explanation": "توماس از «trotzdem» و «gleichwohl» استفاده کرد که هر دو قید امتناعی هستند." },
+        { "question": "چرا آنا از «dennoch» استفاده کرد؟", "options": ["چون در محیط کار است", "چون ساده‌تر است", "چون کوتاه‌تر است"], "correctIndex": 0, "explanation": "«dennoch» در محیط‌های کاری و رسمی مناسب‌تر است." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["Trotzdem", "er", "weiter", "arbeitete"],
+      "correctOrder": [0, 3, 1, 2],
+      "correctSentence": { "de": "Trotzdem arbeitete er weiter.", "fa": "با این حال او به کارش ادامه داد." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["Dennoch", "das Konzert", "fand", "statt"],
+      "correctOrder": [0, 2, 1, 3],
+      "correctSentence": { "de": "Dennoch fand das Konzert statt.", "fa": "با این وجود کنسرت برگزار شد." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["sie", "Gleichwohl", "optimistisch", "blieb"],
+      "correctOrder": [1, 3, 0, 2],
+      "correctSentence": { "de": "Gleichwohl blieb sie optimistisch.", "fa": "معذلک او خوش‌بین ماند." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "بعد از «trotzdem» فعل در جایگاه دوم (V2) قرار می‌گیرد.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! trotzdem قید است و در جمله اصلی استفاده می‌شود، پس فعل در جایگاه دوم است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "«obwohl» و «trotzdem» هر دو حرف ربط فرعی‌ساز هستند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! obwohl حرف ربط فرعی‌ساز است، اما trotzdem قید است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "«gleichwohl» محاوره‌ای‌ترین قید امتناعی است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! gleichwohl بسیار رسمی و ادبی است. trotzdem محاوره‌ای‌ترین است." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "گفتگوی دانشگاهی",
+      "scene": {
+        "location": "university",
+        "description": { "de": "Ein Professor erklärt einem Studenten die Grammatik.", "fa": "یک استاد دستور زبان را به دانشجو توضیح می‌دهد." }
+      },
+      "lines": [
+        { "speaker": "Student", "text": { "de": "Herr Professor, was ist der Unterschied zwischen 'obwohl' und 'trotzdem'?", "fa": "آقای پروفسور، تفاوت بین obwohl و trotzdem چیست؟" }, "mood": "confused" },
+        { "speaker": "Professor", "text": { "de": "Eine gute Frage! 'Obwohl' ist eine Konjunktion, 'trotzdem' ist ein Adverb.", "fa": "سوال خوبی! obwohl حرف ربط است، trotzdem قید است." }, "mood": "neutral" },
+        { "speaker": "Student", "text": { "de": "Und wie wirkt sich das auf die Wortstellung aus?", "fa": "و این چه تاثیری روی ترتیب کلمات دارد؟" }, "mood": "neutral" },
+        { "speaker": "Professor", "text": { "de": "Bei 'obwohl' steht das Verb am Ende. Bei 'trotzdem' in Position 2.", "fa": "با obwohl فعل در انتها قرار می‌گیرد. با trotzdem در جایگاه دوم." }, "mood": "happy" },
+        { "speaker": "Student", "text": { "de": "Jetzt verstehe ich es. Vielen Dank!", "fa": "حالا فهمیدم. خیلی ممنون!" }, "mood": "excited" }
+      ],
+      "questions": [
+        { "question": "تفاوت اصلی بین obwohl و trotzdem چیست؟", "options": ["معنی متفاوت دارند", "یکی حرف ربط و دیگری قید است", "سطح رسمیت متفاوت دارند"], "correctIndex": 1, "explanation": "obwohl حرف ربط فرعی‌ساز است و trotzdem قید است." },
+        { "question": "با obwohl فعل کجا قرار می‌گیرد؟", "options": ["در جایگاه دوم", "در انتهای جمله", "در ابتدای جمله"], "correctIndex": 1, "explanation": "obwohl جمله فرعی می‌سازد و فعل به انتها می‌رود." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "قیدها را با سطح رسمیت درست جفت کنید",
+      "items": [
+        { "id": "i1", "text": "trotzdem" },
+        { "id": "i2", "text": "dennoch" },
+        { "id": "i3", "text": "gleichwohl" },
+        { "id": "i4", "text": "obwohl" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "محاوره‌ای، روزمره" },
+        { "id": "m2", "text": "رسمی، نوشتاری" },
+        { "id": "m3", "text": "بسیار رسمی، ادبی" },
+        { "id": "m4", "text": "حرف ربط فرعی‌ساز (نه قید)" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "هوا سرد بود. با این حال رفتیم پیاده‌روی.",
+      "sentenceTemplate": "Es war kalt. {0} gingen wir spazieren.",
+      "options": ["Trotzdem", "Obwohl", "Weil", "Damit"],
+      "correctAnswers": [0],
+      "correctTranslation": { "de": "Es war kalt. Trotzdem gingen wir spazieren.", "fa": "هوا سرد بود. با این حال رفتیم پیاده‌روی." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "اگرچه خسته بود، به کارش ادامه داد.",
+      "sentenceTemplate": "{0} er müde war, arbeitete er weiter.",
+      "options": ["Obwohl", "Trotzdem", "Dennoch", "Weil"],
+      "correctAnswers": [0],
+      "correctTranslation": { "de": "Obwohl er müde war, arbeitete er weiter.", "fa": "اگرچه خسته بود، به کارش ادامه داد." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: مقاله خبری",
+      "passage": {
+        "de": "Wirtschaftskrise und Optimismus\n\nDie Wirtschaftslage ist angespannt. Trotzdem zeigen sich viele Unternehmen optimistisch. Die Arbeitslosenzahlen steigen. Dennoch investieren einige Firmen in neue Projekte.\n\nDer Wirtschaftsminister erklärte: 'Die Herausforderungen sind groß. Gleichwohl sehen wir Chancen für Innovation und Wachstum.'\n\nObwohl die Inflation hoch ist, bleibt der Konsum stabil. Experten meinen: 'Die Situation ist schwierig. Trotzdem gibt es Grund zur Hoffnung.'",
+        "fa": "بحران اقتصادی و خوش‌بینی\n\nوضعیت اقتصادی پرتنش است. با این حال بسیاری از شرکت‌ها خوش‌بین هستند. آمار بیکاری افزایش می‌یابد. با این وجود برخی شرکت‌ها در پروژه‌های جدید سرمایه‌گذاری می‌کنند.\n\nوزیر اقتصاد توضیح داد: «چالش‌ها بزرگ هستند. معذلک ما فرصت‌هایی برای نوآوری و رشد می‌بینیم.»\n\nاگرچه تورم بالاست، مصرف پایدار می‌ماند. کارشناسان می‌گویند: «وضعیت سخت است. با این حال دلیلی برای امیدواری وجود دارد.»"
+      },
+      "questions": [
+        { "question": "چرا وزیر اقتصاد از «gleichwohl» استفاده کرد؟", "options": ["چون در موقعیت رسمی و سیاسی صحبت می‌کند", "چون ساده‌تر است", "چون معنی متفاوتی دارد"], "correctIndex": 0, "explanation": "gleichwohl در متون رسمی، سیاسی و حقوقی استفاده می‌شود." },
+        { "question": "کدام کلمه در این متن حرف ربط فرعی‌ساز است؟", "options": ["trotzdem", "dennoch", "obwohl"], "correctIndex": 2, "explanation": "obwohl حرف ربط فرعی‌ساز است و فعل را به انتها می‌برد." },
+        { "question": "چند قید امتناعی مختلف در این متن استفاده شده؟", "options": ["یک", "دو", "سه"], "correctIndex": 2, "explanation": "سه قید: trotzdem، dennoch و gleichwohl." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die verpasste Prüfung", "fa": "امتحان از دست رفته" },
+      "characters": ["Lisa", "Max"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Lisa hat die Prüfung nicht bestanden.", "fa": "لیزا در امتحان قبول نشد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Max",
+          "text": { "de": "Das tut mir leid. Was machst du jetzt?", "fa": "متاسفم. حالا چه کار می‌کنی؟" },
+          "mood": "sad"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Ich bin enttäuscht. Trotzdem gebe ich nicht auf.", "fa": "ناامید شدم. با این حال تسلیم نمی‌شوم." },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "لیزا از کدام قید استفاده کرد؟",
+          "options": ["obwohl", "trotzdem", "dennoch"],
+          "correctIndex": 1,
+          "explanation": "لیزا از «trotzdem» استفاده کرد که قید محاوره‌ای است."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Max",
+          "text": { "de": "Die Prüfung war schwer. Dennoch hast du dein Bestes gegeben.", "fa": "امتحان سخت بود. با این وجود بهترین تلاشت را کردی." },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Du hast recht. Ich werde es nochmal versuchen.", "fa": "حق با توست. دوباره تلاش می‌کنم." },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "چرا فعل بعد از «Trotzdem» در جایگاه دوم آمد؟",
+          "options": ["چون trotzdem قید است", "چون trotzdem حرف ربط است", "قانون خاصی ندارد"],
+          "correctIndex": 0,
+          "explanation": "trotzdem قید است و در جمله اصلی استفاده می‌شود، پس فعل در جایگاه دوم قرار می‌گیرد."
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Lisa bereitete sich intensiv vor und bestand die Wiederholungsprüfung.", "fa": "لیزا به شدت آماده شد و در امتحان مجدد قبول شد." }
+        },
+        {
+          "type": "question",
+          "question": "پیام اصلی داستان چیست؟",
+          "options": ["شکست پایان همه چیز است", "با وجود شکست باید ادامه داد", "امتحانات مهم نیستند"],
+          "correctIndex": 1,
+          "explanation": "لیزا با وجود شکست تسلیم نشد و موفق شد."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: قید یا حرف ربط؟",
+      "instruction": "قید است یا حرف ربط فرعی‌ساز؟",
+      "questions": [
+        { "prompt": "trotzdem", "left": "قید", "right": "حرف ربط", "correctSide": "left" },
+        { "prompt": "obwohl", "left": "قید", "right": "حرف ربط", "correctSide": "right" },
+        { "prompt": "dennoch", "left": "قید", "right": "حرف ربط", "correctSide": "left" },
+        { "prompt": "gleichwohl", "left": "قید", "right": "حرف ربط", "correctSide": "left" },
+        { "prompt": "obgleich", "left": "قید", "right": "حرف ربط", "correctSide": "right" },
+        { "prompt": "trotzdem (V2)", "left": "درست", "right": "غلط", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Es war kalt. Trotzdem ging er spazieren.",
+      "translation": "هوا سرد بود. با این حال رفت پیاده‌روی."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Die Aufgabe war schwer. Dennoch schaffte sie es.",
+      "translation": "تکلیف سخت بود. با این وجود او موفق شد."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Obwohl er müde war, arbeitete er weiter.",
+      "translation": "اگرچه خسته بود، به کارش ادامه داد."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: قیدهای امتناعی",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "trotzdem = ?", "options": ["با این حال", "چون"], "correctAnswerIndex": 0 },
+        { "question": "کدام رسمی‌تر است؟", "options": ["trotzdem", "dennoch"], "correctAnswerIndex": 1 },
+        { "question": "فعل بعد از trotzdem کجاست؟", "options": ["جایگاه دوم", "انتها"], "correctAnswerIndex": 0 },
+        { "question": "obwohl چیست؟", "options": ["قید", "حرف ربط"], "correctAnswerIndex": 1 },
+        { "question": "gleichwohl کجا استفاده می‌شود؟", "options": ["محاوره‌ای", "متون رسمی/ادبی"], "correctAnswerIndex": 1 },
+        { "question": "der Widerspruch = ?", "options": ["تناقض", "بهبود"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: قیدها و معانی",
+      "pairs": [
+        { "de": "trotzdem", "fa": "با این حال (محاوره‌ای)" },
+        { "de": "dennoch", "fa": "با این وجود (رسمی)" },
+        { "de": "gleichwohl", "fa": "معذلک (ادبی)" },
+        { "de": "obwohl", "fa": "اگرچه (حرف ربط)" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات کلیدی",
+      "instruction": "قیدها و کلمات این درس را پیدا کنید",
+      "targetWords": ["TROTZDEM", "DENNOCH", "GLEICHWOHL", "OBWOHL", "WIDERSPRUCH"],
+      "gridSize": { "rows": 10, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "trotzdem", "fa": "با این حال", "options": ["چون", "با این حال", "قبل از اینکه", "بعد از اینکه"], "correctIndex": 1 },
+        { "de": "der Widerspruch", "fa": "تناقض", "options": ["بهبود", "تناقض", "موافقت", "پیشنهاد"], "correctIndex": 1 },
+        { "de": "die Einschränkung", "fa": "محدودیت", "options": ["آزادی", "محدودیت", "افزایش", "کاهش"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما قیدهای امتناعی «trotzdem»، «dennoch» و «gleichwohl» را یاد گرفتید!",
+      "keyPoints": [
+        "trotzdem، dennoch، gleichwohl = قیدهای امتناعی (با این حال)",
+        "این کلمات قیدند، نه حرف ربط - فعل در جایگاه V2",
+        "obwohl = حرف ربط فرعی‌ساز - فعل در انتها",
+        "trotzdem: محاوره‌ای | dennoch: رسمی | gleichwohl: بسیار رسمی/ادبی",
+        "ساختار: Hauptsatz. + Trotzdem + Verb + Subject...",
+        "مثال: Es regnet. Trotzdem gehe ich spazieren."
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "trotzdem", "fa": "با این حال، با وجود این (محاوره‌ای)" } },
+        { "word": { "de": "dennoch", "fa": "با این وجود، با این حال (رسمی)" } },
+        { "word": { "de": "gleichwohl", "fa": "با این همه، معذلک (بسیار رسمی، ادبی)" } },
+        { "word": { "de": "obwohl", "fa": "اگرچه، با اینکه (حرف ربط فرعی‌ساز)" } },
+        { "word": { "de": "der Widerspruch", "fa": "تناقض، تضاد" } },
+        { "word": { "de": "die Einschränkung", "fa": "محدودیت، استثنا" } }
+      ]
+    }
+  ]
+}

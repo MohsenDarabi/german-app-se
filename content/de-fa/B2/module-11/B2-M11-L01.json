@@ -1,0 +1,515 @@
+{
+  "id": "B2-M11-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Konzessivsätze: obwohl, obgleich, obschon", "fa": "جملات تقابلی: با وجود اینکه" },
+  "description": "یاد بگیرید چگونه از «obwohl»، «obgleich» و «obschon» برای بیان تقابل و تضاد استفاده کنید. این ساختارها معادل «با اینکه»، «با وجود اینکه» یا «اگرچه» در فارسی هستند. کاری اتفاق می‌افتد علیرغم انتظار مخالف.",
+  "level": "B2",
+  "module": 11,
+  "lessonNumber": 1,
+  "totalSteps": 45,
+  "estimatedMinutes": 40,
+  "vocabulary": [
+    { "de": "obwohl", "fa": "با اینکه، اگرچه", "grammar": { "pos": "conjunction" } },
+    { "de": "obgleich", "fa": "با وجود اینکه (رسمی)", "grammar": { "pos": "conjunction" } },
+    { "de": "obschon", "fa": "با وجود اینکه (ادبی)", "grammar": { "pos": "conjunction" } },
+    { "de": "trotzdem", "fa": "با این حال، با وجود این", "grammar": { "pos": "adverb" } },
+    { "de": "dennoch", "fa": "با این وجود، معذلک", "grammar": { "pos": "adverb" } },
+    { "de": "der Widerspruch", "fa": "تناقض، تضاد", "grammar": { "pos": "noun", "gender": "masculine" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "جملات تقابلی با obwohl",
+      "content": "**Konzessivsätze mit obwohl, obgleich, obschon**\n\nدر آلمانی برای بیان تقابل یا تضاد از حروف ربط تقابلی استفاده می‌شود. این ساختار نشان می‌دهد که کاری علیرغم انتظار مخالف اتفاق می‌افتد.\n\n**سه حرف ربط اصلی:**\n\n| حرف ربط | سبک | کاربرد |\n|---------|-----|--------|\n| obwohl | محاوره‌ای و نوشتاری | رایج‌ترین |\n| obgleich | رسمی | متون رسمی |\n| obschon | ادبی | متون ادبی |\n\n**ساختار:**\n> obwohl + فاعل + ... + **فعل در انتها**\n\n**مثال:**\n> **Obwohl** es regnet, **gehe** ich spazieren.\n> **با اینکه** باران می‌بارد، پیاده‌روی می‌کنم.\n\n**نکته برای فارسی‌زبانان:**\nدر فارسی می‌گوییم «با اینکه» یا «اگرچه». تفاوت اصلی این است که در آلمانی فعل جمله فرعی به انتها می‌رود.",
+      "examples": [
+        { "de": "Obwohl er müde ist, arbeitet er weiter.", "fa": "با اینکه خسته است، به کارش ادامه می‌دهد." },
+        { "de": "Sie geht aus, obwohl sie krank ist.", "fa": "او بیرون می‌رود، با اینکه مریض است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "obwohl", "fa": "با اینکه، اگرچه" },
+      "example": { "text": { "de": "Obwohl es kalt ist, trägt er keine Jacke.", "fa": "با اینکه سرد است، او ژاکت نمی‌پوشد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "obwohl",
+      "translation": "با اینکه، اگرچه",
+      "syllables": ["ob", "wohl"],
+      "distractors": ["ab", "wahl", "wol", "op"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "obgleich", "fa": "با وجود اینکه (رسمی)" },
+      "example": { "text": { "de": "Obgleich die Situation schwierig war, blieb er ruhig.", "fa": "با وجود اینکه شرایط سخت بود، او آرام ماند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "obgleich",
+      "translation": "با وجود اینکه (رسمی)",
+      "syllables": ["ob", "gleich"],
+      "distractors": ["ab", "glaich", "glich", "op"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "obschon", "fa": "با وجود اینکه (ادبی)" },
+      "example": { "text": { "de": "Obschon er alles wusste, schwieg er.", "fa": "با وجود اینکه همه چیز را می‌دانست، سکوت کرد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "obschon",
+      "translation": "با وجود اینکه (ادبی)",
+      "syllables": ["ob", "schon"],
+      "distractors": ["ap", "schun", "shon", "op"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "جایگاه فعل در Konzessivsätze",
+      "content": "**ساختار جمله با obwohl**\n\nدر جملات تقابلی، جمله فرعی با obwohl می‌تواند قبل یا بعد از جمله اصلی بیاید:\n\n**جمله فرعی در ابتدا:**\n> **Obwohl** es **regnet**, **gehe** ich spazieren.\n> با اینکه باران می‌بارد، پیاده‌روی می‌کنم.\n\n(توجه: فعل جمله اصلی بلافاصله بعد از ویرگول می‌آید)\n\n**جمله فرعی در انتها:**\n> Ich **gehe** spazieren, **obwohl** es **regnet**.\n> پیاده‌روی می‌کنم، با اینکه باران می‌بارد.\n\n**نکته مهم:**\nدر هر دو حالت، فعل جمله فرعی (بعد از obwohl) همیشه به انتها می‌رود.\n\n**مقایسه با فارسی:**\n- فارسی: «**با اینکه** باران **می‌بارد**، می‌روم.» (فعل در وسط)\n- آلمانی: «Obwohl es **regnet**...» (فعل در انتها)",
+      "examples": [
+        { "de": "Obwohl sie kein Geld hatte, kaufte sie das Buch.", "fa": "با اینکه پول نداشت، کتاب را خرید." },
+        { "de": "Er kam zur Arbeit, obwohl er Fieber hatte.", "fa": "او سر کار آمد، با اینکه تب داشت." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله به معنای «با اینکه خسته است، کار می‌کند» است؟",
+      "options": [
+        "Er arbeitet, weil er müde ist.",
+        "Er arbeitet, obwohl er müde ist.",
+        "Er arbeitet, damit er müde ist.",
+        "Er arbeitet, wenn er müde ist."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! «obwohl» برای بیان تضاد استفاده می‌شود: کار می‌کند علیرغم خستگی.", "incorrect": "«obwohl» تضاد را بیان می‌کند. weil علت، damit هدف، و wenn شرط را بیان می‌کند." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام حرف ربط ادبی‌تر و کمتر رایج است؟",
+      "options": [
+        "obwohl",
+        "obgleich",
+        "obschon",
+        "weil"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "درست! obschon ادبی‌ترین است و بیشتر در متون ادبی دیده می‌شود.", "incorrect": "obschon ادبی‌ترین است. obwohl رایج‌ترین و obgleich رسمی است. weil اصلاً تقابلی نیست." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "trotzdem", "fa": "با این حال، با وجود این" },
+      "example": { "text": { "de": "Es regnet. Trotzdem gehe ich spazieren.", "fa": "باران می‌بارد. با این حال پیاده‌روی می‌کنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "trotzdem",
+      "translation": "با این حال، با وجود این",
+      "syllables": ["trotz", "dem"],
+      "distractors": ["tratz", "dam", "diem", "traz"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "dennoch", "fa": "با این وجود، معذلک" },
+      "example": { "text": { "de": "Er war krank. Dennoch ging er zur Arbeit.", "fa": "او مریض بود. با این وجود سر کار رفت." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "dennoch",
+      "translation": "با این وجود، معذلک",
+      "syllables": ["den", "noch"],
+      "distractors": ["dan", "nuch", "doch", "nen"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "der Widerspruch", "fa": "تناقض، تضاد" },
+      "example": { "text": { "de": "Das ist ein Widerspruch: Sie liebt ihn, obwohl er sie verletzt hat.", "fa": "این یک تناقض است: او دوستش دارد، با اینکه آزارش داده." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Widerspruch",
+      "translation": "تناقض، تضاد",
+      "syllables": ["Wi", "der", "spruch"],
+      "distractors": ["Wa", "dor", "sprach", "Wo"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "تفاوت obwohl با trotzdem",
+      "content": "**obwohl در مقابل trotzdem**\n\nهر دو تضاد را بیان می‌کنند، اما ساختارشان متفاوت است:\n\n**obwohl** (حرف ربط - یک جمله)\n> Ich gehe spazieren, **obwohl** es **regnet**.\n> پیاده‌روی می‌کنم، با اینکه باران می‌بارد.\n\n(فعل در انتهای جمله فرعی)\n\n**trotzdem** (قید - دو جمله)\n> Es regnet. **Trotzdem** **gehe** ich spazieren.\n> باران می‌بارد. با این حال پیاده‌روی می‌کنم.\n\n(فعل در جایگاه دوم)\n\n**جدول مقایسه:**\n\n| ویژگی | obwohl | trotzdem |\n|-------|--------|----------|\n| نوع | حرف ربط | قید |\n| جمله | یک جمله مرکب | دو جمله مستقل |\n| جایگاه فعل | در انتها | در جایگاه دوم |\n\n**نکته:**\nمعنای هر دو یکسان است، فقط ساختار متفاوت است.",
+      "examples": [
+        { "de": "Obwohl er reich ist, lebt er bescheiden.", "fa": "با اینکه ثروتمند است، ساده زندگی می‌کند." },
+        { "de": "Er ist reich. Trotzdem lebt er bescheiden.", "fa": "او ثروتمند است. با این حال ساده زندگی می‌کند." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "حرف ربط مناسب را انتخاب کنید",
+      "sentence": "Sie ging zur Party, {0} sie müde war.",
+      "options": ["obwohl", "weil", "damit", "wenn"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "obwohl درست است چون تضاد را بیان می‌کند: رفتن به مهمانی علیرغم خستگی." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "{0} das Wetter schlecht war, machten wir einen Ausflug.",
+      "options": ["Obwohl", "Weil", "Damit", "Wenn"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Obwohl درست است: با اینکه هوا بد بود، گردش رفتیم (تضاد)." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "فعل صحیح را انتخاب کنید",
+      "sentence": "Obwohl er wenig Zeit hatte, {0} er uns.",
+      "options": ["half", "helfen", "geholfen", "hilft"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "half درست است. جمله اصلی به گذشته ساده (Präteritum) است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را با obwohl مرتب کنید",
+      "words": ["krank", "obwohl", "ist", "zur", "er", "Arbeit", "geht", "er"],
+      "correctOrder": [1, 4, 0, 2, 6, 7, 3, 5],
+      "correctSentence": { "de": "Obwohl er krank ist, geht er zur Arbeit.", "fa": "با اینکه مریض است، سر کار می‌رود." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["Sie", "obwohl", "spricht", "Deutsch", "nervös", "ist", "sie"],
+      "correctOrder": [0, 3, 2, 1, 6, 4, 5],
+      "correctSentence": { "de": "Sie Deutsch spricht, obwohl sie nervös ist.", "fa": "او آلمانی صحبت می‌کند، با اینکه عصبی است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله را با ساختار درست مرتب کنید",
+      "words": ["Obgleich", "sie", "war", "blieb", "die", "Lage", "ruhig", "schwierig"],
+      "correctOrder": [0, 4, 5, 7, 2, 3, 1, 6],
+      "correctSentence": { "de": "Obgleich die Lage schwierig war, blieb sie ruhig.", "fa": "با وجود اینکه شرایط سخت بود، او آرام ماند." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "حروف ربط «obwohl»، «obgleich» و «obschon» همه برای بیان تضاد استفاده می‌شوند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! هر سه برای بیان تضاد (Konzessivsätze) استفاده می‌شوند، فقط سبک‌شان متفاوت است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جمله با «obwohl» فعل در جایگاه دوم قرار می‌گیرد.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! در جمله فرعی با obwohl، فعل به انتهای جمله می‌رود، نه جایگاه دوم." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "«trotzdem» و «obwohl» معنای مشابهی دارند اما ساختار جمله‌شان متفاوت است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! هر دو تضاد را بیان می‌کنند. obwohl حرف ربط است (فعل در انتها)، trotzdem قید است (فعل در جایگاه دوم)." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "گفتگو درباره تصمیم‌های سخت",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Zwei Freunde sprechen über eine wichtige Entscheidung.", "fa": "دو دوست درباره یک تصمیم مهم صحبت می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Maria", "text": { "de": "Hast du den neuen Job angenommen?", "fa": "آیا شغل جدید را قبول کردی؟" }, "mood": "neutral" },
+        { "speaker": "Thomas", "text": { "de": "Ja, obwohl das Gehalt niedriger ist.", "fa": "بله، با اینکه حقوقش کمتر است." }, "mood": "neutral" },
+        { "speaker": "Maria", "text": { "de": "Warum hast du dich dafür entschieden?", "fa": "چرا این تصمیم را گرفتی؟" }, "mood": "confused" },
+        { "speaker": "Thomas", "text": { "de": "Obwohl ich weniger verdiene, habe ich mehr Freizeit.", "fa": "با اینکه کمتر درآمد دارم، وقت آزاد بیشتری دارم." }, "mood": "happy" },
+        { "speaker": "Maria", "text": { "de": "Das verstehe ich. Zeit ist auch wichtig!", "fa": "این را می‌فهمم. وقت هم مهم است!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "توماس چرا شغل جدید را قبول کرد؟", "options": ["حقوق بیشتر", "وقت آزاد بیشتر", "نزدیک‌تر به خانه"], "correctIndex": 1, "explanation": "توماس گفت: obwohl ich weniger verdiene, habe ich mehr Freizeit." },
+        { "question": "حقوق شغل جدید چگونه است؟", "options": ["بیشتر", "کمتر", "برابر"], "correctIndex": 1, "explanation": "توماس گفت: obwohl das Gehalt niedriger ist - با اینکه حقوقش کمتر است." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "فعل مناسب را در جای درست انتخاب کنید",
+      "sentence": "Obwohl er den ganzen Tag gearbeitet hatte, {0} er nicht müde.",
+      "options": ["war", "sein", "gewesen", "ist"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "war درست است. جمله فرعی در Plusquamperfekt است، پس جمله اصلی در Präteritum می‌آید." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Er kaufte das Auto, {0} es sehr teuer war.",
+      "options": ["obwohl", "weil", "damit", "als"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "obwohl درست است: او ماشین را خرید، با اینکه خیلی گران بود (تضاد)." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "حرف ربط مناسب را انتخاب کنید",
+      "sentence": "{0} die Prüfung schwer war, bestand sie mit einer guten Note.",
+      "options": ["Obschon", "Weil", "Damit", "Wenn"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Obschon درست است (ادبی‌تر از obwohl): با وجود اینکه امتحان سخت بود، با نمره خوب قبول شد." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در رستوران",
+      "scene": {
+        "location": "restaurant",
+        "description": { "de": "Ein Paar diskutiert über ihre Essgewohnheiten.", "fa": "یک زوج درباره عادات غذایی‌شان بحث می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Du isst wieder Kuchen, obwohl du abnehmen willst?", "fa": "دوباره کیک می‌خوری، با اینکه می‌خوای لاغر بشی؟" }, "mood": "surprised" },
+        { "speaker": "Peter", "text": { "de": "Ich weiß, aber er sieht so lecker aus!", "fa": "می‌دونم، ولی خیلی خوشمزه به نظر می‌رسه!" }, "mood": "happy" },
+        { "speaker": "Anna", "text": { "de": "Obgleich du es weißt, machst du es trotzdem.", "fa": "با وجود اینکه می‌دونی، بازم این کار رو می‌کنی." }, "mood": "confused" },
+        { "speaker": "Peter", "text": { "de": "Manchmal muss man sich etwas gönnen, obwohl es nicht gesund ist.", "fa": "گاهی باید به خودت برسی، با اینکه سالم نیست." }, "mood": "neutral" },
+        { "speaker": "Anna", "text": { "de": "Na gut, dann teilen wir uns ein Stück!", "fa": "خب باشه، پس یه تیکه رو با هم می‌خوریم!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "پتر چرا کیک می‌خورد؟", "options": ["چون گرسنه است", "چون خوشمزه به نظر می‌رسد", "چون آنا خواست"], "correctIndex": 1, "explanation": "پتر گفت: er sieht so lecker aus - خیلی خوشمزه به نظر می‌رسد." },
+        { "question": "در پایان چه تصمیمی گرفتند؟", "options": ["کیک نخوردند", "یک تکه را با هم خوردند", "دو تا کیک خریدند"], "correctIndex": 1, "explanation": "آنا گفت: dann teilen wir uns ein Stück - یک تکه را با هم می‌خوریم." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "جملات آلمانی را با معانی فارسی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "obwohl er müde war" },
+        { "id": "i2", "text": "obgleich es regnete" },
+        { "id": "i3", "text": "obschon sie krank war" },
+        { "id": "i4", "text": "trotzdem ging er" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "با اینکه خسته بود" },
+        { "id": "m2", "text": "با وجود اینکه باران می‌بارید" },
+        { "id": "m3", "text": "با وجود اینکه مریض بود" },
+        { "id": "m4", "text": "با این حال رفت" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "با اینکه باران می‌بارد، پیاده‌روی می‌کنم.",
+      "sentenceTemplate": "{0} es regnet, {1} ich spazieren.",
+      "options": ["Obwohl", "Weil", "gehe", "gehen", "Damit", "geht"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Obwohl es regnet, gehe ich spazieren.", "fa": "با اینکه باران می‌بارد، پیاده‌روی می‌کنم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "او به مدرسه رفت، با اینکه مریض بود.",
+      "sentenceTemplate": "Er ging zur Schule, {0} er krank {1}.",
+      "options": ["obwohl", "weil", "war", "ist", "damit", "sein"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Er ging zur Schule, obwohl er krank war.", "fa": "او به مدرسه رفت، با اینکه مریض بود." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: زندگی متضاد",
+      "passage": {
+        "de": "Maria ist eine besondere Frau. Obwohl sie sehr beschäftigt ist, findet sie immer Zeit für ihre Familie. Obgleich sie keine formelle Ausbildung in Kunst hat, malt sie wunderbare Bilder. Ihre Freunde sagen oft: \"Obschon du so wenig Zeit hast, schaffst du so viel!\"\n\nMaria antwortet dann: \"Das Leben ist voller Widersprüche. Obwohl ich müde bin, macht mich die Arbeit glücklich. Trotzdem vergesse ich nie, was wirklich wichtig ist: die Menschen, die ich liebe.\"\n\nDennoch gibt es Tage, an denen sie sich fragt: Wie lange kann ich das noch durchhalten?",
+        "fa": "ماریا زن خاصی است. با اینکه خیلی مشغول است، همیشه برای خانواده‌اش وقت پیدا می‌کند. با وجود اینکه تحصیلات رسمی در هنر ندارد، تابلوهای فوق‌العاده‌ای می‌کشد. دوستانش اغلب می‌گویند: «با وجود اینکه وقت کمی داری، کارهای زیادی انجام می‌دهی!»\n\nماریا پاسخ می‌دهد: «زندگی پر از تضاد است. با اینکه خسته‌ام، کار کردن مرا خوشحال می‌کند. با این حال هرگز فراموش نمی‌کنم چه چیزی واقعاً مهم است: افرادی که دوستشان دارم.»\n\nبا این وجود روزهایی هست که از خودش می‌پرسد: چقدر دیگر می‌توانم ادامه دهم؟"
+      },
+      "questions": [
+        { "question": "ماریا با وجود چه چیزی برای خانواده‌اش وقت دارد؟", "options": ["خستگی", "مشغولیت زیاد", "مسافرت"], "correctIndex": 1, "explanation": "در متن گفته شده: Obwohl sie sehr beschäftigt ist - با اینکه خیلی مشغول است." },
+        { "question": "ماریا چگونه نقاشی می‌کند بدون تحصیلات هنری؟", "options": ["با استعداد ذاتی", "با کلاس خصوصی", "با کپی کردن"], "correctIndex": 0, "explanation": "در متن گفته شده: Obgleich sie keine formelle Ausbildung hat - با وجود نداشتن تحصیلات رسمی." },
+        { "question": "ماریا چه چیزی را هرگز فراموش نمی‌کند؟", "options": ["کارش", "افرادی که دوستشان دارد", "نقاشی‌هایش"], "correctIndex": 1, "explanation": "ماریا گفت: die Menschen, die ich liebe - افرادی که دوستشان دارم." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die unerwartete Reise", "fa": "سفر غیرمنتظره" },
+      "characters": ["Laura", "Michael"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Laura und Michael planen einen Ausflug ins Gebirge.", "fa": "لورا و میشائل برنامه‌ریزی سفر به کوهستان می‌کنند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Michael",
+          "text": { "de": "Schau mal, obwohl der Wetterbericht Regen vorhergesagt hat, scheint die Sonne!", "fa": "نگاه کن، با اینکه پیش‌بینی هوا باران گفته بود، آفتاب می‌تابد!" },
+          "mood": "surprised"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Laura",
+          "text": { "de": "Ja, obgleich alle sagten, wir sollten zu Hause bleiben, haben wir die richtige Entscheidung getroffen.", "fa": "آره، با وجود اینکه همه گفتند خانه بمانیم، تصمیم درستی گرفتیم." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "چرا سفر غیرمنتظره بود؟",
+          "options": ["چون هوا برعکس پیش‌بینی خوب بود", "چون ماشین خراب شد", "چون دیر رسیدند"],
+          "correctIndex": 0,
+          "explanation": "میشائل گفت: obwohl der Wetterbericht Regen vorhergesagt hat, scheint die Sonne."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Michael",
+          "text": { "de": "Obschon ich heute müde bin, fühle ich mich voller Energie.", "fa": "با وجود اینکه امروز خسته‌ام، پر از انرژی احساس می‌کنم." },
+          "mood": "excited"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Laura",
+          "text": { "de": "Das ist die Kraft der Natur! Trotzdem sollten wir nicht zu weit gehen.", "fa": "این قدرت طبیعت است! با این حال نباید خیلی دور برویم." },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "میشائل چه احساسی دارد؟",
+          "options": ["خسته و بی‌حال", "خسته اما پرانرژی", "عصبانی"],
+          "correctIndex": 1,
+          "explanation": "میشائل گفت: Obschon ich müde bin, fühle ich mich voller Energie."
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Am Ende des Tages waren beide glücklich, obwohl sie erschöpft waren.", "fa": "در پایان روز، هر دو خوشحال بودند، با اینکه خسته بودند." }
+        },
+        {
+          "type": "question",
+          "question": "پیام اصلی این داستان چیست؟",
+          "options": ["همیشه به پیش‌بینی هوا اعتماد کنید", "گاهی برعکس انتظارات نتیجه خوب می‌شود", "هرگز سفر نروید"],
+          "correctIndex": 1,
+          "explanation": "داستان نشان می‌دهد که با وجود پیش‌بینی بد، روز خوبی داشتند."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: Konzessivsätze",
+      "instruction": "پاسخ درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "obwohl یعنی؟", "left": "چون", "right": "با اینکه", "correctSide": "right" },
+        { "prompt": "کدام رسمی‌تر است؟", "left": "obwohl", "right": "obgleich", "correctSide": "right" },
+        { "prompt": "کدام ادبی‌تر است؟", "left": "obschon", "right": "obwohl", "correctSide": "left" },
+        { "prompt": "فعل در جمله obwohl کجاست؟", "left": "در جایگاه دوم", "right": "در انتها", "correctSide": "right" },
+        { "prompt": "trotzdem چه نوعی است؟", "left": "قید", "right": "حرف ربط", "correctSide": "left" },
+        { "prompt": "dennoch یعنی؟", "left": "چون", "right": "با این وجود", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Obwohl es regnet, gehe ich spazieren.",
+      "translation": "با اینکه باران می‌بارد، پیاده‌روی می‌کنم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Er arbeitet weiter, obwohl er müde ist.",
+      "translation": "او به کارش ادامه می‌دهد، با اینکه خسته است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Obgleich die Prüfung schwer war, hat sie bestanden.",
+      "translation": "با وجود اینکه امتحان سخت بود، قبول شد."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: Konzessivsätze",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "obwohl یعنی؟", "options": ["با اینکه", "چون"], "correctAnswerIndex": 0 },
+        { "question": "فعل در جمله با obwohl کجاست؟", "options": ["در انتها", "در جایگاه دوم"], "correctAnswerIndex": 0 },
+        { "question": "کدام ادبی‌ترین است؟", "options": ["obschon", "obwohl"], "correctAnswerIndex": 0 },
+        { "question": "trotzdem چیست؟", "options": ["قید", "حرف ربط"], "correctAnswerIndex": 0 },
+        { "question": "dennoch یعنی؟", "options": ["با این وجود", "به همین دلیل"], "correctAnswerIndex": 0 },
+        { "question": "کدام رسمی‌تر است؟", "options": ["obgleich", "obwohl"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: حروف ربط تقابلی",
+      "pairs": [
+        { "de": "obwohl", "fa": "با اینکه" },
+        { "de": "obgleich", "fa": "با وجود اینکه (رسمی)" },
+        { "de": "obschon", "fa": "با وجود اینکه (ادبی)" },
+        { "de": "trotzdem", "fa": "با این حال" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات مربوط به Konzessivsätze",
+      "instruction": "کلمات آلمانی مربوط به این درس را پیدا کنید",
+      "targetWords": ["obwohl", "obgleich", "obschon", "trotzdem", "dennoch", "Widerspruch"],
+      "gridSize": { "rows": 10, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "obwohl", "fa": "با اینکه، اگرچه", "options": ["چون", "با اینکه، اگرچه", "برای اینکه", "اگر"], "correctIndex": 1 },
+        { "de": "trotzdem", "fa": "با این حال", "options": ["به همین دلیل", "با این حال", "در نتیجه", "بنابراین"], "correctIndex": 1 },
+        { "de": "der Widerspruch", "fa": "تناقض، تضاد", "options": ["موافقت", "تناقض، تضاد", "سکوت", "پاسخ"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما جملات تقابلی با «obwohl»، «obgleich» و «obschon» را یاد گرفتید!",
+      "keyPoints": [
+        "obwohl - رایج‌ترین، برای محاوره و نوشتار",
+        "obgleich - رسمی‌تر، برای متون رسمی",
+        "obschon - ادبی‌ترین، برای متون ادبی",
+        "ساختار: obwohl + فاعل + ... + فعل در انتها",
+        "جمله با obwohl می‌تواند قبل یا بعد از جمله اصلی بیاید",
+        "trotzdem و dennoch قید هستند (فعل در جایگاه دوم)",
+        "تفاوت با weil: weil علت را بیان می‌کند، obwohl تضاد را"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "obwohl", "fa": "با اینکه، اگرچه" } },
+        { "word": { "de": "obgleich", "fa": "با وجود اینکه (رسمی)" } },
+        { "word": { "de": "obschon", "fa": "با وجود اینکه (ادبی)" } },
+        { "word": { "de": "trotzdem", "fa": "با این حال، با وجود این" } },
+        { "word": { "de": "dennoch", "fa": "با این وجود، معذلک" } },
+        { "word": { "de": "der Widerspruch", "fa": "تناقض، تضاد" } }
+      ]
+    }
+  ]
+}

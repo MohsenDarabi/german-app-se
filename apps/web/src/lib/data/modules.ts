@@ -1969,6 +1969,37 @@ const DE_FA_B2_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/B2/B2-M10-L04"
       }
     ]
+  },
+  {
+    id: "module-11",
+    title: "بخش ۱۱: Konzessivsätze",
+    level: "B2",
+    lessons: [
+      {
+        id: "B2-M11-L01",
+        title: "obwohl, obgleich, obschon - با اینکه",
+        description: "یاد بگیرید حروف ربط تضادی: obwohl، obgleich، obschon.",
+        path: "/learn/de-fa/B2/B2-M11-L01"
+      },
+      {
+        id: "B2-M11-L02",
+        title: "trotzdem, dennoch, gleichwohl - با این حال",
+        description: "یاد بگیرید قیدهای تضادی: trotzdem، dennoch، gleichwohl.",
+        path: "/learn/de-fa/B2/B2-M11-L02"
+      },
+      {
+        id: "B2-M11-L03",
+        title: "wenn auch, selbst wenn, auch wenn - حتی اگر",
+        description: "یاد بگیرید ساختارهای شرطی-تضادی: wenn auch، selbst wenn، auch wenn.",
+        path: "/learn/de-fa/B2/B2-M11-L03"
+      },
+      {
+        id: "B2-M11-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل جملات تضادی: حروف ربط، قیدها و ساختارهای شرطی.",
+        path: "/learn/de-fa/B2/B2-M11-L04"
+      }
+    ]
   }
 ];
 

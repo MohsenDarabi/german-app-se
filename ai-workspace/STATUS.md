@@ -8,7 +8,7 @@
 
 **Create B1 lessons - lesson by lesson, wait for user test after each**
 
-Current: `B2-M10` (Modalsätze) - **MODULE COMPLETE - READY FOR USER TEST**
+Current: `B2-M11` (Konzessivsätze) - **MODULE COMPLETE - READY FOR USER TEST**
 
 ---
 
@@ -27,7 +27,7 @@ Current: `B2-M10` (Modalsätze) - **MODULE COMPLETE - READY FOR USER TEST**
 | A1 | 14 | 56+ | Complete |
 | A2 | 18 | 72 | **Complete** ✅ |
 | B1 | 20 | 80 | **Complete** ✅ |
-| B2 | 10 | 40 | Module 10 complete |
+| B2 | 11 | 44 | Module 11 complete |
 
 ### A2 Completion (2026-02-05)
 
@@ -317,8 +317,9 @@ Current: `B2-M10` (Modalsätze) - **MODULE COMPLETE - READY FOR USER TEST**
 | M08 | Textverknüpfung | 4/4 | ✅ Complete |
 | M09 | Verbalperiphrasen | 4/4 | ✅ Complete |
 | M10 | Modalsätze | 4/4 | ✅ Complete |
+| M11 | Konzessivsätze | 4/4 | ✅ Complete |
 
-**Total B2: 40 lessons**
+**Total B2: 44 lessons**
 
 ---
 
@@ -429,6 +430,17 @@ Current: `B2-M10` (Modalsätze) - **MODULE COMPLETE - READY FOR USER TEST**
 | B2-M10-L02 | dadurch dass (by the fact that - formal) | ✅ Complete |
 | B2-M10-L03 | ohne dass / ohne zu (without doing) | ✅ Complete |
 | B2-M10-L04 | Zusammenfassung | ✅ Complete |
+
+---
+
+## B2 Module 11: Konzessivsätze (Concessive Clauses)
+
+| Lesson | Title | Status |
+|--------|-------|--------|
+| B2-M11-L01 | obwohl, obgleich, obschon (although - conjunctions) | ✅ Complete |
+| B2-M11-L02 | trotzdem, dennoch, gleichwohl (nevertheless - adverbs) | ✅ Complete |
+| B2-M11-L03 | wenn auch, selbst wenn, auch wenn (even if) | ✅ Complete |
+| B2-M11-L04 | Zusammenfassung | ✅ Complete |
 
 ---
 

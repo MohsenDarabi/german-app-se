@@ -1,0 +1,519 @@
+{
+  "id": "B2-M11-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Konzessivsätze: wenn auch, selbst wenn, auch wenn", "fa": "جملات امتیازی: حتی اگر" },
+  "description": "یاد بگیرید چگونه با استفاده از «wenn auch»، «selbst wenn» و «auch wenn» بیان کنید که نتیجه حتی در شرایط سخت یا غیرمنتظره هم تغییر نمی‌کند",
+  "level": "B2",
+  "module": 11,
+  "lessonNumber": 3,
+  "totalSteps": 45,
+  "estimatedMinutes": 40,
+  "vocabulary": [
+    { "de": "wenn auch", "fa": "اگرچه، حتی اگر", "grammar": { "pos": "conjunction" } },
+    { "de": "selbst wenn", "fa": "حتی اگر (فرضی)", "grammar": { "pos": "conjunction" } },
+    { "de": "auch wenn", "fa": "حتی اگر، اگرچه", "grammar": { "pos": "conjunction" } },
+    { "de": "stürmen", "fa": "طوفان شدن", "grammar": { "pos": "verb" } },
+    { "de": "sich anstrengen", "fa": "تلاش کردن", "grammar": { "pos": "verb", "type": "reflexive" } },
+    { "de": "scheitern", "fa": "شکست خوردن", "grammar": { "pos": "verb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "جملات امتیازی: حتی اگر (Konzessivsätze)",
+      "content": "**Konzessivsätze: wenn auch, selbst wenn, auch wenn**\n\nدر آلمانی برای بیان اینکه نتیجه‌ای **حتی در شرایط سخت یا غیرمنتظره** هم تغییر نمی‌کند، از این ساختارها استفاده می‌کنیم:\n\n**۱. auch wenn** (حتی اگر، اگرچه)\nرایج‌ترین شکل - برای واقعیت‌ها و فرضیات:\n- **Auch wenn** es regnet, gehe ich spazieren.\n- (حتی اگر باران ببارد، پیاده‌روی می‌کنم.)\n\n**۲. selbst wenn** (حتی اگر - تأکید قوی‌تر)\nبرای شرایط فرضی یا افراطی:\n- **Selbst wenn** es stürmt, gehe ich raus.\n- (حتی اگر طوفان شود، بیرون می‌روم.)\n\n**۳. wenn auch** (اگرچه، هرچند)\nاغلب در وسط جمله - تأکید بر امتیاز:\n- Ich helfe dir, **wenn auch** ungern.\n- (کمکت می‌کنم، اگرچه با بی‌میلی.)\n\n**ساختار:**\n| حرف ربط | Nebensatz (فعل در آخر) | Hauptsatz |\n|---------|------------------------|-----------|",
+      "examples": [
+        { "de": "Selbst wenn es stürmt, gehe ich spazieren.", "fa": "حتی اگر طوفان شود، پیاده‌روی می‌کنم." },
+        { "de": "Auch wenn ich müde bin, arbeite ich weiter.", "fa": "حتی اگر خسته باشم، به کار ادامه می‌دهم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "auch wenn", "fa": "حتی اگر، اگرچه" },
+      "example": { "text": { "de": "Auch wenn es regnet, gehen wir wandern.", "fa": "حتی اگر باران ببارد، پیاده‌روی می‌کنیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "auch",
+      "translation": "حتی، همچنین",
+      "syllables": ["auch"],
+      "distractors": ["ach", "och", "euch"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "selbst wenn", "fa": "حتی اگر (فرضی)" },
+      "example": { "text": { "de": "Selbst wenn du mich bittest, sage ich nein.", "fa": "حتی اگر از من خواهش کنی، نه می‌گویم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "selbst",
+      "translation": "خود، حتی",
+      "syllables": ["selbst"],
+      "distractors": ["solbt", "sielt", "salbt"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "wenn auch", "fa": "اگرچه، هرچند" },
+      "example": { "text": { "de": "Er kam, wenn auch spät.", "fa": "او آمد، اگرچه دیر." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "wenn",
+      "translation": "اگر، وقتی",
+      "syllables": ["wenn"],
+      "distractors": ["winn", "wann", "wonn"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "تفاوت auch wenn، selbst wenn و wenn auch",
+      "content": "**تفاوت‌های کلیدی:**\n\n**۱. auch wenn** - عمومی‌ترین\n- برای واقعیت‌ها و فرضیات\n- معادل: حتی اگر، اگرچه\n- Auch wenn ich krank bin, gehe ich arbeiten.\n\n**۲. selbst wenn** - تأکید قوی‌تر\n- برای شرایط افراطی یا غیرمحتمل\n- اغلب با Konjunktiv II\n- Selbst wenn ich Millionär **wäre**, würde ich arbeiten.\n\n**۳. wenn auch** - ادبی‌تر\n- اغلب در وسط یا آخر جمله\n- گاهی بدون فعل صرف‌شده\n- Er ist klug, wenn auch arrogant.\n\n**مقایسه:**\n| ساختار | قدرت امتیاز | کاربرد |\n|--------|-------------|--------|\n| auch wenn | متوسط | عمومی |\n| selbst wenn | قوی | فرضی/افراطی |\n| wenn auch | ادبی | نوشتاری |",
+      "examples": [
+        { "de": "Auch wenn es schwer ist, gebe ich nicht auf.", "fa": "حتی اگر سخت باشد، تسلیم نمی‌شوم." },
+        { "de": "Selbst wenn alle dagegen wären, würde ich weitermachen.", "fa": "حتی اگر همه مخالف بودند، ادامه می‌دادم." },
+        { "de": "Die Lösung ist gut, wenn auch kompliziert.", "fa": "راه‌حل خوب است، اگرچه پیچیده." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله برای شرایط فرضی/افراطی مناسب‌تر است؟",
+      "options": [
+        "Auch wenn es regnet, gehe ich raus.",
+        "Selbst wenn es stürmt, gehe ich raus.",
+        "Wenn auch es regnet, gehe ich raus.",
+        "Es regnet, wenn auch ich rausgehe."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! «selbst wenn» برای شرایط افراطی (طوفان) مناسب‌تر است.", "incorrect": "برای شرایط افراطی مثل طوفان، از «selbst wenn» استفاده می‌کنیم." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "stürmen", "fa": "طوفان شدن" },
+      "example": { "text": { "de": "Draußen stürmt es seit Stunden.", "fa": "بیرون ساعت‌هاست که طوفان است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "stürmen",
+      "translation": "طوفان شدن",
+      "syllables": ["stür", "men"],
+      "distractors": ["stur", "mun", "star"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "sich anstrengen", "fa": "تلاش کردن" },
+      "example": { "text": { "de": "Selbst wenn du dich anstrengst, ist es schwer.", "fa": "حتی اگر تلاش کنی، سخت است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "anstrengen",
+      "translation": "تلاش کردن",
+      "syllables": ["an", "stren", "gen"],
+      "distractors": ["un", "stron", "gon"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "scheitern", "fa": "شکست خوردن" },
+      "example": { "text": { "de": "Auch wenn das Projekt scheitert, haben wir viel gelernt.", "fa": "حتی اگر پروژه شکست بخورد، چیزهای زیادی یاد گرفتیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "scheitern",
+      "translation": "شکست خوردن",
+      "syllables": ["schei", "tern"],
+      "distractors": ["schi", "tarn", "schau"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "حرف ربط مناسب را انتخاب کنید",
+      "sentence": "{0} es regnet, machen wir ein Picknick.",
+      "options": ["Auch wenn", "Weil", "Obwohl", "Damit"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "«Auch wenn» برای بیان «حتی اگر باران ببارد» مناسب است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "حرف ربط مناسب را انتخاب کنید",
+      "sentence": "{0} du mich anflehst, ändere ich meine Meinung nicht.",
+      "options": ["Auch wenn", "Selbst wenn", "Wenn auch", "Falls"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "«Selbst wenn» برای شرایط افراطی (التماس کردن) تأکید قوی‌تری دارد." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "Konjunktiv II با selbst wenn",
+      "content": "**selbst wenn + Konjunktiv II**\n\nبرای بیان شرایط فرضی یا غیرواقعی، «selbst wenn» اغلب با Konjunktiv II ترکیب می‌شود:\n\n**ساختار:**\n`Selbst wenn + Subject + ... + Konjunktiv II, würde + ... + Infinitiv`\n\n**مثال‌ها:**\n| آلمانی | فارسی |\n|--------|-------|\n| Selbst wenn ich reich **wäre**, würde ich arbeiten. | حتی اگر ثروتمند **بودم**، کار می‌کردم. |\n| Selbst wenn er es **wüsste**, würde er nichts sagen. | حتی اگر می‌**دانست**، چیزی نمی‌گفت. |\n| Selbst wenn sie **käme**, würde ich nicht bleiben. | حتی اگر می‌**آمد**، نمی‌ماندم. |\n\n**نکته:** این ساختار نشان می‌دهد که شرط احتمالاً رخ نمی‌دهد، ولی حتی در آن صورت هم نتیجه تغییر نمی‌کند.",
+      "examples": [
+        { "de": "Selbst wenn ich Zeit hätte, würde ich nicht kommen.", "fa": "حتی اگر وقت داشتم، نمی‌آمدم." },
+        { "de": "Selbst wenn es möglich wäre, würde ich es nicht tun.", "fa": "حتی اگر ممکن بود، انجامش نمی‌دادم." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله درست است برای «حتی اگر ثروتمند بودم، ساده زندگی می‌کردم»؟",
+      "options": [
+        "Selbst wenn ich reich bin, lebe ich einfach.",
+        "Selbst wenn ich reich wäre, würde ich einfach leben.",
+        "Auch wenn ich reich wäre, lebe ich einfach.",
+        "Wenn auch ich reich bin, würde ich einfach leben."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "درست! با شرط فرضی از «selbst wenn + wäre» و «würde + Infinitiv» استفاده می‌کنیم.", "incorrect": "برای شرط فرضی، از Konjunktiv II استفاده می‌کنیم: selbst wenn ich reich wäre." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "فعل مناسب را انتخاب کنید (Konjunktiv II)",
+      "sentence": "Selbst wenn er mehr Zeit {0}, würde er nicht helfen.",
+      "options": ["hat", "hätte", "haben", "hatte"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "در جمله فرضی با «selbst wenn»، از Konjunktiv II (hätte) استفاده می‌کنیم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "فعل مناسب را انتخاب کنید",
+      "sentence": "Auch wenn das Wetter schlecht {0}, fahren wir in den Urlaub.",
+      "options": ["ist", "wäre", "sein", "war"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "«auch wenn» می‌تواند با Indikativ (واقعیت) هم استفاده شود: auch wenn das Wetter schlecht ist." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["wenn", "Auch", "bin", "müde", "ich", "weiter", "arbeite", "ich"],
+      "correctOrder": [1, 0, 4, 3, 2, 7, 6, 5],
+      "correctSentence": { "de": "Auch wenn ich müde bin ich arbeite weiter", "fa": "حتی اگر خسته باشم، به کار ادامه می‌دهم" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["wenn", "Selbst", "stürmt", "es", "raus", "gehe", "ich"],
+      "correctOrder": [1, 0, 3, 2, 6, 5, 4],
+      "correctSentence": { "de": "Selbst wenn es stürmt ich gehe raus", "fa": "حتی اگر طوفان شود، بیرون می‌روم" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["spät", "auch", "wenn", "kam", "Er"],
+      "correctOrder": [4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Er kam wenn auch spät", "fa": "او آمد، اگرچه دیر" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "«selbst wenn» تأکید قوی‌تری نسبت به «auch wenn» دارد.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! «selbst wenn» برای شرایط افراطی یا غیرمحتمل استفاده می‌شود و تأکید قوی‌تری دارد." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جمله «Auch wenn es regnet, gehe ich raus» فعل در جمله پیرو به آخر می‌رود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! در Nebensatz با «auch wenn»، فعل (regnet) به آخر جمله پیرو می‌رود." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "«wenn auch» فقط می‌تواند در ابتدای جمله بیاید.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! «wenn auch» اغلب در وسط یا آخر جمله می‌آید: Er kam, wenn auch spät." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "برنامه‌ریزی سفر",
+      "scene": {
+        "location": "living room",
+        "description": { "de": "Ein Paar plant einen Wanderausflug", "fa": "یک زوج برای یک سفر پیاده‌روی برنامه‌ریزی می‌کنند" }
+      },
+      "lines": [
+        { "speaker": "Maria", "text": { "de": "Die Wettervorhersage sagt Regen für morgen.", "fa": "پیش‌بینی هوا برای فردا باران می‌گوید." }, "mood": "sad" },
+        { "speaker": "Thomas", "text": { "de": "Auch wenn es regnet, sollten wir wandern gehen.", "fa": "حتی اگر باران ببارد، باید پیاده‌روی برویم." }, "mood": "excited" },
+        { "speaker": "Maria", "text": { "de": "Und selbst wenn es stürmt?", "fa": "و حتی اگر طوفان شود؟" }, "mood": "confused" },
+        { "speaker": "Thomas", "text": { "de": "Selbst wenn es stürmt, haben wir gute Regenjacken!", "fa": "حتی اگر طوفان شود، بارانی‌های خوبی داریم!" }, "mood": "happy" },
+        { "speaker": "Maria", "text": { "de": "Na gut, wenn auch widerwillig, komme ich mit.", "fa": "باشه، اگرچه با بی‌میلی، همراهت می‌آیم." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "پیش‌بینی هوا برای فردا چیست؟", "options": ["آفتابی", "بارانی", "برفی"], "correctIndex": 1, "explanation": "ماریا گفت: Die Wettervorhersage sagt Regen" },
+        { "question": "نظر توماس درباره پیاده‌روی چیست؟", "options": ["باید لغو کنند", "حتی اگر باران ببارد بروند", "صبر کنند"], "correctIndex": 1, "explanation": "توماس گفت: Auch wenn es regnet, sollten wir wandern gehen" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "حرف ربط مناسب را انتخاب کنید",
+      "sentence": "Die Arbeit ist interessant, {0} anstrengend.",
+      "options": ["auch wenn", "selbst wenn", "wenn auch", "obwohl"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "«wenn auch» در این ساختار کوتاه (بدون فعل) در وسط جمله می‌آید." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "حرف ربط مناسب را انتخاب کنید",
+      "sentence": "{0} alle gegen mich wären, würde ich meinen Traum verfolgen.",
+      "options": ["Auch wenn", "Selbst wenn", "Wenn auch", "Falls"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "«Selbst wenn» با Konjunktiv II برای شرایط فرضی/افراطی استفاده می‌شود." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "مصاحبه شغلی",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Ein Bewerber spricht mit einer Personalerin", "fa": "یک متقاضی با مسئول استخدام صحبت می‌کند" }
+      },
+      "lines": [
+        { "speaker": "Personalerin", "text": { "de": "Was motiviert Sie, auch wenn die Arbeit schwierig ist?", "fa": "چه چیزی شما را انگیزه می‌دهد، حتی وقتی کار سخت است؟" }, "mood": "neutral" },
+        { "speaker": "Bewerber", "text": { "de": "Selbst wenn Projekte scheitern, lerne ich daraus.", "fa": "حتی اگر پروژه‌ها شکست بخورند، از آنها یاد می‌گیرم." }, "mood": "happy" },
+        { "speaker": "Personalerin", "text": { "de": "Und auch wenn Sie unter Druck stehen?", "fa": "و حتی وقتی تحت فشار هستید؟" }, "mood": "neutral" },
+        { "speaker": "Bewerber", "text": { "de": "Auch wenn ich unter Druck stehe, bleibe ich ruhig.", "fa": "حتی وقتی تحت فشار هستم، آرام می‌مانم." }, "mood": "happy" },
+        { "speaker": "Personalerin", "text": { "de": "Das ist eine gute Einstellung, wenn auch selten.", "fa": "این دیدگاه خوبی است، اگرچه نادر." }, "mood": "surprised" }
+      ],
+      "questions": [
+        { "question": "متقاضی از شکست پروژه‌ها چه می‌آموزد؟", "options": ["هیچ چیز", "درس می‌گیرد", "ناراحت می‌شود"], "correctIndex": 1, "explanation": "متقاضی گفت: Selbst wenn Projekte scheitern, lerne ich daraus" },
+        { "question": "متقاضی تحت فشار چگونه است؟", "options": ["عصبانی", "آرام", "ناامید"], "correctIndex": 1, "explanation": "متقاضی گفت: Auch wenn ich unter Druck stehe, bleibe ich ruhig" }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "جملات آلمانی را با ترجمه فارسی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Auch wenn es regnet, gehe ich raus." },
+        { "id": "i2", "text": "Selbst wenn ich reich wäre, würde ich arbeiten." },
+        { "id": "i3", "text": "Er kam, wenn auch spät." },
+        { "id": "i4", "text": "Selbst wenn alle dagegen sind, mache ich weiter." }
+      ],
+      "matches": [
+        { "id": "m1", "text": "حتی اگر باران ببارد، بیرون می‌روم." },
+        { "id": "m2", "text": "حتی اگر ثروتمند بودم، کار می‌کردم." },
+        { "id": "m3", "text": "او آمد، اگرچه دیر." },
+        { "id": "m4", "text": "حتی اگر همه مخالف باشند، ادامه می‌دهم." }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "حتی اگر خسته باشم، تمرین می‌کنم.",
+      "sentenceTemplate": "{0} ich müde bin, {1} ich.",
+      "options": ["Auch wenn", "Selbst wenn", "trainiere", "schlafe"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Auch wenn ich müde bin, trainiere ich.", "fa": "حتی اگر خسته باشم، تمرین می‌کنم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "حتی اگر وقت داشتم، نمی‌آمدم.",
+      "sentenceTemplate": "Selbst wenn ich Zeit {0}, {1} ich nicht kommen.",
+      "options": ["habe", "hätte", "würde", "werde"],
+      "correctAnswers": [1, 2],
+      "correctTranslation": { "de": "Selbst wenn ich Zeit hätte, würde ich nicht kommen.", "fa": "حتی اگر وقت داشتم، نمی‌آمدم." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: نامه به دوست",
+      "passage": {
+        "de": "Liebe Anna,\n\nich wollte dir von meinem neuen Job erzählen. Auch wenn die Arbeit manchmal stressig ist, liebe ich sie. Selbst wenn ich bis spät arbeiten muss, beschwere ich mich nicht.\n\nMein Chef ist streng, wenn auch fair. Selbst wenn er kritisiert, tut er es konstruktiv. Auch wenn manche Kollegen schwierig sind, habe ich gute Freunde im Büro gefunden.\n\nSelbst wenn ich die Möglichkeit hätte, woanders zu arbeiten, würde ich bleiben.\n\nLiebe Grüße,\nSarah",
+        "fa": "آنای عزیز،\n\nمی‌خواستم درباره کار جدیدم بگویم. حتی اگر کار گاهی استرس‌زا است، آن را دوست دارم. حتی اگر باید تا دیروقت کار کنم، شکایت نمی‌کنم.\n\nرئیسم سختگیر است، اگرچه منصف. حتی وقتی انتقاد می‌کند، سازنده انتقاد می‌کند. حتی اگر بعضی همکاران سخت‌گیر هستند، دوستان خوبی در دفتر پیدا کردم.\n\nحتی اگر امکان کار در جای دیگر داشتم، می‌ماندم.\n\nبا مهر،\nسارا"
+      },
+      "questions": [
+        { "question": "سارا درباره کارش چه احساسی دارد؟", "options": ["از آن متنفر است", "آن را دوست دارد", "بی‌تفاوت است"], "correctIndex": 1, "explanation": "سارا نوشت: auch wenn die Arbeit manchmal stressig ist, liebe ich sie" },
+        { "question": "رئیس سارا چگونه است؟", "options": ["سختگیر ولی منصف", "بی‌انصاف", "بسیار مهربان"], "correctIndex": 0, "explanation": "سارا نوشت: streng, wenn auch fair" },
+        { "question": "اگر سارا امکان کار در جای دیگر داشت، چه می‌کرد؟", "options": ["فوراً می‌رفت", "می‌ماند", "فکر می‌کرد"], "correctIndex": 1, "explanation": "سارا نوشت: Selbst wenn ich die Möglichkeit hätte, woanders zu arbeiten, würde ich bleiben" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der Marathon-Läufer", "fa": "دونده ماراتن" },
+      "characters": ["Markus", "Lisa"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Markus trainiert für seinen ersten Marathon. Lisa ist seine beste Freundin.", "fa": "مارکوس برای اولین ماراتنش تمرین می‌کند. لیزا بهترین دوست اوست." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Das Wetter ist schrecklich. Willst du wirklich laufen?", "fa": "هوا وحشتناک است. واقعاً می‌خواهی بدوی؟" },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Markus",
+          "text": { "de": "Auch wenn es regnet, muss ich trainieren.", "fa": "حتی اگر باران ببارد، باید تمرین کنم." },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "چرا مارکوس می‌خواهد بدود؟",
+          "options": ["چون هوا خوب است", "حتی با باران باید تمرین کند", "لیزا خواسته"],
+          "correctIndex": 1,
+          "explanation": "مارکوس گفت: Auch wenn es regnet, muss ich trainieren"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Es beginnt stark zu regnen. Der Wind wird stärker.", "fa": "باران شدید شروع می‌شود. باد قوی‌تر می‌شود." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Selbst wenn du dich erkältest?", "fa": "حتی اگر سرما بخوری؟" },
+          "mood": "sad"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Markus",
+          "text": { "de": "Selbst wenn ich krank würde, würde ich nicht aufgeben.", "fa": "حتی اگر مریض شوم، تسلیم نمی‌شوم." },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "مارکوس چه می‌گوید درباره بیمار شدن؟",
+          "options": ["می‌ترسد", "حتی اگر مریض شود، تسلیم نمی‌شود", "نگران است"],
+          "correctIndex": 1,
+          "explanation": "مارکوس گفت: Selbst wenn ich krank würde, würde ich nicht aufgeben"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Am Marathontag scheint die Sonne. Markus gewinnt nicht, aber er erreicht das Ziel.", "fa": "روز ماراتن خورشید می‌درخشد. مارکوس برنده نمی‌شود، ولی به خط پایان می‌رسد." }
+        },
+        {
+          "type": "question",
+          "question": "نتیجه ماراتن مارکوس چه بود؟",
+          "options": ["برنده شد", "به خط پایان رسید ولی برنده نشد", "شرکت نکرد"],
+          "correctIndex": 1,
+          "explanation": "متن می‌گوید: Markus gewinnt nicht, aber er erreicht das Ziel"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: حروف ربط امتیازی",
+      "instruction": "گزینه درست را انتخاب کنید!",
+      "questions": [
+        { "prompt": "شرایط افراطی/فرضی", "left": "auch wenn", "right": "selbst wenn", "correctSide": "right" },
+        { "prompt": "عمومی‌ترین شکل", "left": "auch wenn", "right": "selbst wenn", "correctSide": "left" },
+        { "prompt": "ادبی‌تر، در وسط جمله", "left": "wenn auch", "right": "auch wenn", "correctSide": "left" },
+        { "prompt": "___ es regnet, gehe ich.", "left": "Auch wenn", "right": "Wenn auch", "correctSide": "left" },
+        { "prompt": "Er kam, ___ spät.", "left": "wenn auch", "right": "auch wenn", "correctSide": "left" },
+        { "prompt": "___ ich reich wäre, würde ich arbeiten.", "left": "Auch wenn", "right": "Selbst wenn", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Auch wenn es regnet, gehe ich spazieren.",
+      "translation": "حتی اگر باران ببارد، پیاده‌روی می‌کنم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Selbst wenn ich Zeit hätte, würde ich nicht kommen.",
+      "translation": "حتی اگر وقت داشتم، نمی‌آمدم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Die Arbeit ist gut, wenn auch anstrengend.",
+      "translation": "کار خوب است، اگرچه خسته‌کننده."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: جملات امتیازی!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "auch wenn =", "options": ["حتی اگر", "به جای"], "correctAnswerIndex": 0 },
+        { "question": "selbst wenn =", "options": ["حتی اگر (قوی)", "بدون اینکه"], "correctAnswerIndex": 0 },
+        { "question": "wenn auch =", "options": ["اگرچه", "برای اینکه"], "correctAnswerIndex": 0 },
+        { "question": "___ es stürmt, gehe ich.", "options": ["Selbst wenn", "Damit"], "correctAnswerIndex": 0 },
+        { "question": "Konjunktiv II با", "options": ["selbst wenn", "weil"], "correctAnswerIndex": 0 },
+        { "question": "Er ist klug, ___ arrogant.", "options": ["wenn auch", "auch wenn"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: حروف ربط",
+      "pairs": [
+        { "de": "auch wenn", "fa": "حتی اگر (عمومی)" },
+        { "de": "selbst wenn", "fa": "حتی اگر (قوی)" },
+        { "de": "wenn auch", "fa": "اگرچه (ادبی)" },
+        { "de": "stürmen", "fa": "طوفان شدن" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات کلیدی این درس را پیدا کنید",
+      "targetWords": ["auch", "selbst", "wenn", "stürmen", "scheitern", "anstrengen"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "auch wenn", "fa": "حتی اگر", "options": ["حتی اگر", "بدون اینکه", "برای اینکه", "چون"], "correctIndex": 0 },
+        { "de": "selbst wenn", "fa": "حتی اگر (فرضی)", "options": ["برای اینکه", "حتی اگر (فرضی)", "قبل از اینکه", "بعد از اینکه"], "correctIndex": 1 },
+        { "de": "scheitern", "fa": "شکست خوردن", "options": ["موفق شدن", "شکست خوردن", "تلاش کردن", "شروع کردن"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما ساختارهای «auch wenn»، «selbst wenn» و «wenn auch» را برای بیان «حتی اگر» یاد گرفتید!",
+      "keyPoints": [
+        "auch wenn = حتی اگر (عمومی‌ترین): Auch wenn es regnet, gehe ich raus.",
+        "selbst wenn = حتی اگر (تأکید قوی برای شرایط افراطی): Selbst wenn es stürmt, gehe ich.",
+        "wenn auch = اگرچه (ادبی، اغلب در وسط جمله): Er kam, wenn auch spät.",
+        "selbst wenn + Konjunktiv II = شرط فرضی: Selbst wenn ich reich wäre, würde ich arbeiten.",
+        "در جمله پیرو فعل به آخر می‌رود: Auch wenn ich müde BIN",
+        "این ساختارها نتیجه‌ای را نشان می‌دهند که حتی در شرایط سخت تغییر نمی‌کند"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "auch wenn", "fa": "حتی اگر، اگرچه" } },
+        { "word": { "de": "selbst wenn", "fa": "حتی اگر (فرضی)" } },
+        { "word": { "de": "wenn auch", "fa": "اگرچه، هرچند" } },
+        { "word": { "de": "stürmen", "fa": "طوفان شدن" } },
+        { "word": { "de": "sich anstrengen", "fa": "تلاش کردن" } },
+        { "word": { "de": "scheitern", "fa": "شکست خوردن" } }
+      ]
+    }
+  ]
+}
