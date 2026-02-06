@@ -1,0 +1,538 @@
+{
+  "id": "B1-M15-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Kausale Nebensätze", "fa": "جملات پیرو علّی" },
+  "description": "یاد بگیرید چگونه با استفاده از weil، da و zumal دلیل کارها را بیان کنید. این ساختارها در آلمانی بسیار پرکاربرد هستند.",
+  "level": "B1",
+  "module": 15,
+  "lessonNumber": 1,
+  "totalSteps": 45,
+  "estimatedMinutes": 25,
+  "vocabulary": [
+    { "de": "der Grund", "fa": "دلیل", "grammar": { "pos": "noun", "gender": "masculine" } },
+    { "de": "die Ursache", "fa": "علت", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "begründen", "fa": "توجیه کردن، دلیل آوردن", "grammar": { "pos": "verb" } },
+    { "de": "deshalb", "fa": "به همین دلیل", "grammar": { "pos": "adverb" } },
+    { "de": "nämlich", "fa": "چون که، آخه", "grammar": { "pos": "adverb" } },
+    { "de": "daher", "fa": "بنابراین، از این رو", "grammar": { "pos": "adverb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "جملات پیرو علّی چیست؟",
+      "content": "**Kausale Nebensätze (جملات پیرو علّی)**\n\nوقتی می‌خواهیم دلیل کاری را بیان کنیم، از جملات پیرو علّی استفاده می‌کنیم.\n\n**سه حرف ربط اصلی:**\n- **weil** (چون، زیرا) - رایج‌ترین\n- **da** (از آنجا که) - رسمی‌تر\n- **zumal** (به‌ویژه چون) - تأکیدی\n\n**نکته مهم:**\n در جملات پیرو با weil و da، **فعل به آخر جمله می‌رود!**\n\n**تفاوت با فارسی:**\n- فارسی: «چون مریضم، نمی‌آیم» (فعل در جای عادی)\n- آلمانی: «Ich komme nicht, **weil** ich krank **bin**.» (فعل آخر)",
+      "examples": [
+        { "de": "Ich bleibe zu Hause, weil ich krank bin.", "fa": "خانه می‌مانم چون مریضم." },
+        { "de": "Da es regnet, nehme ich einen Regenschirm.", "fa": "از آنجا که باران می‌بارد، چتر می‌برم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "der Grund", "fa": "دلیل" },
+      "example": { "text": { "de": "Was ist der Grund für deine Entscheidung?", "fa": "دلیل تصمیمت چیست؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "der Grund",
+      "translation": "دلیل",
+      "syllables": ["der", "Grund"],
+      "distractors": ["das", "Grond", "Grind"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "die Ursache", "fa": "علت" },
+      "example": { "text": { "de": "Die Ursache des Problems ist unklar.", "fa": "علت مشکل نامشخص است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "die Ursache",
+      "translation": "علت",
+      "syllables": ["die", "Ur", "sa", "che"],
+      "distractors": ["der", "Or", "se", "ko"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "begründen", "fa": "توجیه کردن، دلیل آوردن" },
+      "example": { "text": { "de": "Können Sie Ihre Meinung begründen?", "fa": "می‌توانید نظرتان را توجیه کنید؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "begründen",
+      "translation": "توجیه کردن",
+      "syllables": ["be", "grün", "den"],
+      "distractors": ["ba", "gron", "ton"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "weil - پرکاربردترین حرف ربط علّی",
+      "content": "**weil (چون، زیرا)**\n\nاین رایج‌ترین راه بیان دلیل در آلمانی است.\n\n**ساختار:**\nHauptsatz + weil + ... + **Verb (آخر)**\n\n**مثال‌ها:**\n- Ich lerne Deutsch, **weil** ich in Deutschland arbeiten **möchte**.\n  (آلمانی یاد می‌گیرم چون می‌خواهم در آلمان کار کنم.)\n\n- Er ist müde, **weil** er gestern spät **geschlafen hat**.\n  (خسته است چون دیشب دیر خوابیده.)\n\n**نکته:** در زبان محاوره گاهی فعل به آخر نمی‌رود، ولی در نوشتار رسمی باید فعل آخر باشد!",
+      "examples": [
+        { "de": "Sie kommt nicht, weil sie arbeiten muss.", "fa": "نمی‌آید چون باید کار کند." },
+        { "de": "Wir fahren nicht, weil das Auto kaputt ist.", "fa": "نمی‌رویم چون ماشین خراب است." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "در جملات با weil، فعل کجا قرار می‌گیرد؟",
+      "options": [
+        "در جایگاه دوم",
+        "در ابتدای جمله",
+        "در آخر جمله",
+        "قبل از weil"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! در جملات پیرو با weil، فعل به آخر می‌رود.", "incorrect": "در جملات پیرو با weil، فعل همیشه به آخر جمله می‌رود." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله صحیح است؟",
+      "options": [
+        "Ich bleibe, weil ich bin müde.",
+        "Ich bleibe, weil ich müde bin.",
+        "Ich bleibe, weil müde ich bin.",
+        "Ich bleibe, weil bin ich müde."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "درست! فعل «bin» باید آخر جمله پیرو باشد.", "incorrect": "در جملات با weil، فعل به آخر می‌رود: weil ich müde bin." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "deshalb", "fa": "به همین دلیل" },
+      "example": { "text": { "de": "Ich bin krank, deshalb bleibe ich zu Hause.", "fa": "مریضم، به همین دلیل خانه می‌مانم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "deshalb",
+      "translation": "به همین دلیل",
+      "syllables": ["des", "halb"],
+      "distractors": ["das", "holb", "hulb"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich komme nicht zur Party, {0} ich arbeiten muss. (نمی‌آیم مهمانی چون باید کار کنم)",
+      "options": ["denn", "weil", "deshalb", "aber"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "weil برای بیان دلیل استفاده می‌شود و فعل به آخر می‌رود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er lernt viel, weil er die Prüfung {0}. (چون می‌خواهد امتحان را بدهد)",
+      "options": ["bestehen will", "will bestehen", "bestehen", "wollen bestehen"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "در جملات پیرو، فعل اصلی آخر و فعل کمکی قبل از آن می‌آید: bestehen will." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "da - رسمی‌تر و اغلب در ابتدا",
+      "content": "**da (از آنجا که، چون)**\n\nda مثل weil است، ولی:\n- رسمی‌تر و مکتوب‌تر است\n- معمولاً در **ابتدای جمله** می‌آید\n- وقتی دلیل از قبل معلوم است استفاده می‌شود\n\n**ساختار با da در ابتدا:**\n**Da** + ... + Verb, + Hauptsatz (فعل دوم)\n\n**مثال:**\n**Da** ich krank **bin**, bleibe ich zu Hause.\n(از آنجا که مریضم، خانه می‌مانم.)\n\n**مقایسه:**\n- weil: «نمی‌آیم **چون** مریضم» (دلیل جدید)\n- da: «**از آنجا که** مریضم، نمی‌آیم» (دلیل معلوم)",
+      "examples": [
+        { "de": "Da es spät ist, gehe ich jetzt.", "fa": "از آنجا که دیر شده، الان می‌روم." },
+        { "de": "Da du nicht kommst, muss ich allein gehen.", "fa": "از آنجا که نمی‌آیی، باید تنها بروم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "nämlich", "fa": "چون که، آخه" },
+      "example": { "text": { "de": "Ich kann nicht kommen. Ich bin nämlich krank.", "fa": "نمی‌توانم بیایم. آخه مریضم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "nämlich",
+      "translation": "چون که، آخه",
+      "syllables": ["näm", "lich"],
+      "distractors": ["nam", "lech", "lach"]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "daher", "fa": "بنابراین، از این رو" },
+      "example": { "text": { "de": "Es regnet, daher nehme ich einen Schirm.", "fa": "باران می‌بارد، از این رو چتر می‌برم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "daher",
+      "translation": "بنابراین",
+      "syllables": ["da", "her"],
+      "distractors": ["do", "hir", "har"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "{0} es regnet, bleiben wir zu Hause. (از آنجا که باران می‌بارد)",
+      "options": ["Weil", "Da", "Deshalb", "Denn"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "da معمولاً در ابتدای جمله می‌آید و رسمی‌تر است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Da ich keine Zeit {0}, muss ich absagen. (از آنجا که وقت ندارم)",
+      "options": ["habe", "haben", "hat", "habt"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "فعل با ich می‌شود habe و به آخر جمله پیرو می‌رود." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "دلیل غیبت",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Am Telefon mit dem Chef", "fa": "پشت تلفن با رئیس" }
+      },
+      "lines": [
+        { "speaker": "Chef", "text": { "de": "Warum kommen Sie heute nicht?", "fa": "چرا امروز نمی‌آیید؟" }, "mood": "neutral" },
+        { "speaker": "Anna", "text": { "de": "Ich kann nicht kommen, weil ich krank bin.", "fa": "نمی‌توانم بیایم چون مریضم." }, "mood": "sad" },
+        { "speaker": "Chef", "text": { "de": "Das tut mir leid. Haben Sie Fieber?", "fa": "متأسفم. تب دارید؟" }, "mood": "confused" },
+        { "speaker": "Anna", "text": { "de": "Ja, da ich hohes Fieber habe, muss ich im Bett bleiben.", "fa": "بله، از آنجا که تب بالا دارم، باید در رختخواب بمانم." }, "mood": "sad" },
+        { "speaker": "Chef", "text": { "de": "Gute Besserung! Ruhen Sie sich aus.", "fa": "بهبود یابید! استراحت کنید." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "چرا آنا به کار نمی‌آید؟", "options": ["ترافیک", "مریض است", "سفر است"], "correctIndex": 1, "explanation": "آنا گفت: weil ich krank bin." },
+        { "question": "آنا چه علامتی دارد؟", "options": ["سردرد", "تب بالا", "سرماخوردگی"], "correctIndex": 1, "explanation": "آنا گفت: da ich hohes Fieber habe." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["krank", "bin", "ich", "weil", "bleibe", "Ich", "Hause", "zu"],
+      "correctOrder": [5, 4, 7, 6, 3, 2, 1, 0],
+      "correctSentence": { "de": "Ich bleibe zu Hause weil ich krank bin", "fa": "خانه می‌مانم چون مریضم" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["regnet", "es", "Da", "Schirm", "einen", "ich", "nehme"],
+      "correctOrder": [2, 1, 0, 6, 5, 4, 3],
+      "correctSentence": { "de": "Da es regnet nehme ich einen Schirm", "fa": "از آنجا که باران می‌بارد چتر می‌برم" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["müde", "weil", "geschlafen", "habe", "ich", "bin", "wenig", "Ich"],
+      "correctOrder": [7, 5, 1, 4, 6, 2, 3, 0],
+      "correctSentence": { "de": "Ich bin müde weil ich wenig geschlafen habe", "fa": "خسته‌ام چون کم خوابیده‌ام" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جملات با weil، فعل در جایگاه دوم قرار می‌گیرد.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! در جملات پیرو با weil، فعل به آخر جمله می‌رود." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "da معمولاً در ابتدای جمله می‌آید و رسمی‌تر از weil است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! da بیشتر در نوشتار رسمی و در ابتدای جمله استفاده می‌شود." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "zumal برای تأکید بیشتر روی دلیل استفاده می‌شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! zumal به معنی «به‌ویژه چون» است و تأکید بیشتری دارد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich kann heute nicht helfen, {0} es auch Sonntag ist. (به‌ویژه چون یکشنبه هم هست)",
+      "options": ["weil", "da", "zumal", "denn"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "zumal برای افزودن دلیل تأکیدی استفاده می‌شود: به‌ویژه چون..." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er hat abgesagt, weil er einen wichtigen Termin {0}. (چون قرار مهمی دارد)",
+      "options": ["hat", "haben", "habe", "habt"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "فعل با er می‌شود hat و به آخر جمله پیرو می‌رود." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "برنامه‌ریزی تعطیلات",
+      "scene": {
+        "location": "home",
+        "description": { "de": "Zu Hause beim Planen", "fa": "در خانه هنگام برنامه‌ریزی" }
+      },
+      "lines": [
+        { "speaker": "Max", "text": { "de": "Warum willst du nach Italien fahren?", "fa": "چرا می‌خواهی به ایتالیا بروی؟" }, "mood": "neutral" },
+        { "speaker": "Julia", "text": { "de": "Weil das Wetter dort schön ist.", "fa": "چون آب‌وهوا آنجا خوب است." }, "mood": "happy" },
+        { "speaker": "Max", "text": { "de": "Und das Essen ist auch gut, nicht wahr?", "fa": "و غذا هم خوبه، نه؟" }, "mood": "excited" },
+        { "speaker": "Julia", "text": { "de": "Genau! Das ist auch ein wichtiger Grund.", "fa": "دقیقاً! این هم یک دلیل مهم است." }, "mood": "happy" },
+        { "speaker": "Max", "text": { "de": "Da wir beide frei haben, können wir zusammen fahren.", "fa": "از آنجا که هر دو آزادیم، می‌توانیم با هم برویم." }, "mood": "excited" },
+        { "speaker": "Julia", "text": { "de": "Super! Zumal wir lange nicht verreist sind.", "fa": "عالی! به‌ویژه چون مدت‌هاست سفر نرفته‌ایم." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "چرا یولیا می‌خواهد به ایتالیا برود؟", "options": ["کار دارد", "آب‌وهوا خوب است", "دوستان دارد"], "correctIndex": 1, "explanation": "یولیا گفت: Weil das Wetter dort schön ist." },
+        { "question": "چه دلیل دیگری برای سفر وجود دارد؟", "options": ["ارزان است", "غذا خوب است", "نزدیک است"], "correctIndex": 1, "explanation": "ماکس گفت: Und das Essen ist auch gut." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "حروف ربط را با توضیحات جفت کنید",
+      "items": [
+        { "id": "i1", "text": "weil" },
+        { "id": "i2", "text": "da" },
+        { "id": "i3", "text": "zumal" },
+        { "id": "i4", "text": "denn" },
+        { "id": "i5", "text": "deshalb" },
+        { "id": "i6", "text": "nämlich" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "رایج‌ترین، فعل آخر" },
+        { "id": "m2", "text": "رسمی‌تر، اغلب ابتدای جمله" },
+        { "id": "m3", "text": "به‌ویژه چون، تأکیدی" },
+        { "id": "m4", "text": "حرف ربط همپایه، فعل دوم" },
+        { "id": "m5", "text": "به همین دلیل، نتیجه" },
+        { "id": "m6", "text": "آخه، توضیح بعدی" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "نمی‌آیم چون مریضم.",
+      "sentenceTemplate": "Ich {0} nicht, {1} ich krank {2}.",
+      "options": ["bin", "weil", "komme", "da"],
+      "correctAnswers": [2, 1, 0],
+      "correctTranslation": { "de": "Ich komme nicht, weil ich krank bin.", "fa": "نمی‌آیم چون مریضم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "از آنجا که دیر شده، باید بروم.",
+      "sentenceTemplate": "{0} es spät {1}, muss ich {2}.",
+      "options": ["Da", "gehen", "ist", "weil"],
+      "correctAnswers": [0, 2, 1],
+      "correctTranslation": { "de": "Da es spät ist, muss ich gehen.", "fa": "از آنجا که دیر شده، باید بروم." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: ایمیل مرخصی",
+      "passage": {
+        "de": "Sehr geehrter Herr Müller,\n\nich möchte morgen einen Tag frei nehmen, weil ich einen wichtigen Arzttermin habe. Da der Termin am Vormittag ist, kann ich nachmittags nicht mehr kommen, zumal die Praxis weit von der Firma entfernt ist.\n\nDer Grund ist eine wichtige Untersuchung. Ich habe nämlich seit Wochen Kopfschmerzen. Deshalb muss ich zum Arzt gehen.\n\nMit freundlichen Grüßen,\nSarah Klein",
+        "fa": "جناب آقای مولر محترم،\n\nمی‌خواهم فردا یک روز مرخصی بگیرم چون یک قرار پزشکی مهم دارم. از آنجا که قرار صبح است، بعدازظهر نمی‌توانم بیایم، به‌ویژه چون مطب از شرکت دور است.\n\nدلیل یک معاینه مهم است. آخه چند هفته‌ای است سردرد دارم. به همین دلیل باید به پزشک بروم.\n\nبا احترام،\nسارا کلاین"
+      },
+      "questions": [
+        { "question": "سارا چرا می‌خواهد مرخصی بگیرد؟", "options": ["سفر", "قرار پزشکی", "مهمانی"], "correctIndex": 1, "explanation": "سارا گفت: weil ich einen wichtigen Arzttermin habe." },
+        { "question": "چرا بعدازظهر نمی‌تواند بیاید؟", "options": ["خسته است", "قرار صبح است و مطب دور است", "کار دیگری دارد"], "correctIndex": 1, "explanation": "سارا گفت: Da der Termin am Vormittag ist و zumal die Praxis weit entfernt ist." },
+        { "question": "مشکل سارا چیست؟", "options": ["دندان‌درد", "سردرد", "کمردرد"], "correctIndex": 1, "explanation": "سارا گفت: Ich habe nämlich seit Wochen Kopfschmerzen." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Ein schlechter Tag", "fa": "یک روز بد" },
+      "characters": ["Tom", "Maria"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Tom hatte einen schlechten Tag. Er erzählt seiner Freundin Maria davon.", "fa": "تام یک روز بد داشت. او به دوست‌دخترش ماریا تعریف می‌کند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Maria",
+          "text": { "de": "Warum bist du so traurig?", "fa": "چرا اینقدر ناراحتی؟" },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Tom",
+          "text": { "de": "Weil ich heute zu spät zur Arbeit gekommen bin.", "fa": "چون امروز دیر به کار رسیدم." },
+          "mood": "sad"
+        },
+        {
+          "type": "question",
+          "question": "چرا تام ناراحت است؟",
+          "options": ["بیمار است", "دیر به کار رسیده", "پولش را گم کرده"],
+          "correctIndex": 1,
+          "explanation": "تام گفت: Weil ich heute zu spät zur Arbeit gekommen bin."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Maria",
+          "text": { "de": "Warum bist du zu spät gekommen?", "fa": "چرا دیر رسیدی؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Tom",
+          "text": { "de": "Da mein Wecker nicht geklingelt hat, bin ich spät aufgewacht.", "fa": "از آنجا که ساعتم زنگ نزده، دیر بیدار شدم." },
+          "mood": "sad"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Es wurde noch schlimmer.", "fa": "وضع بدتر هم شد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Tom",
+          "text": { "de": "Ich habe den Bus verpasst, zumal es auch noch geregnet hat!", "fa": "اتوبوس را از دست دادم، به‌ویژه چون باران هم می‌آمد!" },
+          "mood": "angry"
+        },
+        {
+          "type": "question",
+          "question": "چه اتفاق بدتری افتاد؟",
+          "options": ["اتوبوس را از دست داد و باران می‌آمد", "گوشی‌اش خراب شد", "کیفش را گم کرد"],
+          "correctIndex": 0,
+          "explanation": "تام گفت: Ich habe den Bus verpasst, zumal es auch noch geregnet hat!"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Maria",
+          "text": { "de": "Das ist wirklich ein schlechter Tag! Deshalb bist du so müde.", "fa": "واقعاً یک روز بد است! به همین دلیل اینقدر خسته‌ای." },
+          "mood": "sad"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Tom",
+          "text": { "de": "Ja, ich bin nämlich total kaputt.", "fa": "آره، آخه کاملاً داغونم." },
+          "mood": "sad"
+        },
+        {
+          "type": "question",
+          "question": "تام چرا خسته است؟",
+          "options": ["کم خوابیده", "روز بدی داشته", "ورزش کرده"],
+          "correctIndex": 1,
+          "explanation": "ماریا گفت: Deshalb bist du so müde. (به همین دلیل خسته است)"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع",
+      "instruction": "جمله‌بندی درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "فعل در weil کجاست؟", "left": "آخر", "right": "دوم", "correctSide": "left" },
+        { "prompt": "da کجا می‌آید؟", "left": "ابتدا", "right": "وسط", "correctSide": "left" },
+        { "prompt": "zumal چه معنی دارد؟", "left": "به‌ویژه چون", "right": "اما", "correctSide": "left" },
+        { "prompt": "denn فعل را کجا می‌برد؟", "left": "آخر", "right": "دوم", "correctSide": "right" },
+        { "prompt": "weil یا da؟ (رسمی‌تر)", "left": "weil", "right": "da", "correctSide": "right" },
+        { "prompt": "deshalb چیست؟", "left": "دلیل", "right": "نتیجه", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich bleibe zu Hause, weil ich krank bin.",
+      "translation": "خانه می‌مانم چون مریضم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Da es regnet, nehme ich einen Schirm.",
+      "translation": "از آنجا که باران می‌بارد، چتر می‌برم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Er kommt nicht, zumal er keine Zeit hat.",
+      "translation": "نمی‌آید، به‌ویژه چون وقت ندارد."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "weil ich müde ___", "options": ["bin", "ist"], "correctAnswerIndex": 0 },
+        { "question": "___ es spät ist", "options": ["Da", "Deshalb"], "correctAnswerIndex": 0 },
+        { "question": "به‌ویژه چون = ___", "options": ["zumal", "weil"], "correctAnswerIndex": 0 },
+        { "question": "فعل در جملات weil کجاست؟", "options": ["آخر", "دوم"], "correctAnswerIndex": 0 },
+        { "question": "weil er nicht kommen ___", "options": ["kann", "können"], "correctAnswerIndex": 0 },
+        { "question": "به همین دلیل = ___", "options": ["deshalb", "weil"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "weil", "fa": "چون (فعل آخر)" },
+        { "de": "da", "fa": "از آنجا که (رسمی)" },
+        { "de": "zumal", "fa": "به‌ویژه چون" },
+        { "de": "deshalb", "fa": "به همین دلیل" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات مربوط به این درس را پیدا کنید",
+      "targetWords": ["weil", "zumal", "Grund", "Ursache", "deshalb", "daher"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "der Grund", "fa": "دلیل", "options": ["دلیل", "علت", "نتیجه", "زمان"], "correctIndex": 0 },
+        { "de": "begründen", "fa": "توجیه کردن", "options": ["توضیح دادن", "توجیه کردن", "فهمیدن", "پرسیدن"], "correctIndex": 1 },
+        { "de": "nämlich", "fa": "آخه، چون که", "options": ["البته", "آخه", "اما", "پس"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما جملات پیرو علّی (weil، da، zumal) را یاد گرفتید!",
+      "keyPoints": [
+        "weil = چون (رایج‌ترین، فعل آخر)",
+        "da = از آنجا که (رسمی‌تر، اغلب ابتدای جمله)",
+        "zumal = به‌ویژه چون (تأکیدی)",
+        "در جملات پیرو: فعل به آخر می‌رود",
+        "denn = چون (حرف ربط همپایه، فعل دوم)",
+        "deshalb/daher = به همین دلیل (نتیجه)",
+        "nämlich = آخه (توضیح)"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "der Grund", "fa": "دلیل" } },
+        { "word": { "de": "die Ursache", "fa": "علت" } },
+        { "word": { "de": "begründen", "fa": "توجیه کردن، دلیل آوردن" } },
+        { "word": { "de": "deshalb", "fa": "به همین دلیل" } },
+        { "word": { "de": "nämlich", "fa": "چون که، آخه" } },
+        { "word": { "de": "daher", "fa": "بنابراین، از این رو" } }
+      ]
+    }
+  ]
+}

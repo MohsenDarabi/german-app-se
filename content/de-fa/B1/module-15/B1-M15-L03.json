@@ -1,0 +1,502 @@
+{
+  "id": "B1-M15-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Konsekutive und finale Nebensätze", "fa": "جملات پیرو نتیجه‌ای و هدفی" },
+  "description": "یاد بگیرید چگونه با sodass، damit و um...zu جملات پیرو نتیجه‌ای و هدفی بسازید",
+  "level": "B1",
+  "module": 15,
+  "lessonNumber": 3,
+  "totalSteps": 45,
+  "estimatedMinutes": 25,
+  "vocabulary": [
+    { "de": "das Ziel", "fa": "هدف", "grammar": { "pos": "noun", "gender": "n", "plural": "die Ziele" } },
+    { "de": "der Zweck", "fa": "منظور، هدف", "grammar": { "pos": "noun", "gender": "m", "plural": "die Zwecke" } },
+    { "de": "die Folge", "fa": "پیامد، نتیجه", "grammar": { "pos": "noun", "gender": "f", "plural": "die Folgen" } },
+    { "de": "erreichen", "fa": "رسیدن به، دست یافتن", "grammar": { "pos": "verb" } },
+    { "de": "bewirken", "fa": "باعث شدن، ایجاد کردن", "grammar": { "pos": "verb" } },
+    { "de": "beabsichtigen", "fa": "قصد داشتن", "grammar": { "pos": "verb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "جملات پیرو نتیجه‌ای و هدفی چیستند؟",
+      "content": "در آلمانی دو نوع جمله پیرو مهم وجود دارد:\n\n**1. جملات نتیجه‌ای (Konsekutivsätze):**\nنتیجه یا پیامد یک عمل را بیان می‌کنند.\n- **sodass** = به طوری که، به گونه‌ای که\n- **so...dass** = آنقدر...که\n\n**2. جملات هدفی (Finalsätze):**\nهدف یا قصد یک عمل را بیان می‌کنند.\n- **damit** = تا، برای اینکه (فاعل‌های متفاوت)\n- **um...zu** = برای اینکه (فاعل یکسان)\n\n**نکته برای فارسی‌زبانان:**\nدر فارسی هم از «تا» و «برای اینکه» استفاده می‌کنیم، ولی در آلمانی انتخاب بین damit و um...zu به فاعل جمله بستگی دارد.",
+      "examples": [
+        { "de": "Er war so müde, sodass er einschlief.", "fa": "او آنقدر خسته بود که خوابش برد." },
+        { "de": "Ich erkläre es, damit du verstehst.", "fa": "توضیح می‌دهم تا تو بفهمی." },
+        { "de": "Ich lerne Deutsch, um in Deutschland zu arbeiten.", "fa": "آلمانی یاد می‌گیرم تا در آلمان کار کنم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "das Ziel", "fa": "هدف" },
+      "example": { "text": { "de": "Mein Ziel ist es, Deutsch zu lernen.", "fa": "هدف من یادگیری آلمانی است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Ziel",
+      "translation": "هدف",
+      "syllables": ["Ziel"],
+      "distractors": ["Zal", "Zel", "Zul", "Zol"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "der Zweck", "fa": "منظور، هدف" },
+      "example": { "text": { "de": "Der Zweck dieser Übung ist das Lernen.", "fa": "منظور این تمرین، یادگیری است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Zweck",
+      "translation": "منظور، هدف",
+      "syllables": ["Zweck"],
+      "distractors": ["Zwak", "Zwok", "Zwik", "Zwuk"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "die Folge", "fa": "پیامد، نتیجه" },
+      "example": { "text": { "de": "Die Folge war, dass er krank wurde.", "fa": "نتیجه این بود که او مریض شد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Folge",
+      "translation": "پیامد، نتیجه",
+      "syllables": ["Fol", "ge"],
+      "distractors": ["Ful", "ga", "go", "Fe"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله نتیجه‌ای (Konsekutivsatz) است؟",
+      "options": [
+        "Ich lerne, um besser zu werden.",
+        "Sie arbeitet, damit ihre Kinder studieren können.",
+        "Es war so kalt, sodass wir froren.",
+        "Er kommt früh, um pünktlich zu sein."
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! sodass نتیجه یک عمل را بیان می‌کند: آنقدر سرد بود که یخ زدیم.", "incorrect": "sodass برای بیان نتیجه استفاده می‌شود، نه هدف." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را با کلمه مناسب پر کنید",
+      "sentence": "Er sprach so schnell, {0} niemand ihn verstand.",
+      "options": ["damit", "sodass", "um...zu", "weil"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "sodass برای بیان نتیجه استفاده می‌شود: آنقدر سریع صحبت کرد که هیچ‌کس نفهمید." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "تفاوت damit و um...zu",
+      "content": "**قانون طلایی:**\n\n**damit** = وقتی فاعل جمله اصلی و جمله پیرو **متفاوت** است\n**um...zu** = وقتی فاعل جمله اصلی و جمله پیرو **یکسان** است\n\n**damit:**\n- Ich erkläre es, **damit du** verstehst. (من توضیح می‌دهم تا تو بفهمی)\n- فاعل اول: ich، فاعل دوم: du → متفاوت → damit\n\n**um...zu:**\n- Ich spare Geld, **um** ein Auto **zu** kaufen. (پول پس‌انداز می‌کنم تا ماشین بخرم)\n- فاعل هر دو: ich → یکسان → um...zu\n\n**ساختار um...zu:**\num + سایر اجزا + zu + مصدر فعل",
+      "examples": [
+        { "de": "Die Mutter arbeitet, damit die Kinder studieren können.", "fa": "مادر کار می‌کند تا بچه‌ها بتوانند درس بخوانند." },
+        { "de": "Er arbeitet viel, um Geld zu verdienen.", "fa": "او زیاد کار می‌کند تا پول در بیاورد." }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "گفتگو درباره یادگیری زبان",
+      "scene": {
+        "location": "classroom",
+        "description": { "de": "Zwei Studenten sprechen über ihre Ziele.", "fa": "دو دانشجو درباره اهدافشان صحبت می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Maria", "text": { "de": "Warum lernst du Deutsch?", "fa": "چرا آلمانی یاد می‌گیری؟" }, "mood": "neutral" },
+        { "speaker": "Ali", "text": { "de": "Ich lerne Deutsch, um in Deutschland zu studieren.", "fa": "آلمانی یاد می‌گیرم تا در آلمان تحصیل کنم." }, "mood": "happy" },
+        { "speaker": "Maria", "text": { "de": "Das ist ein gutes Ziel! Ich arbeite jeden Tag, damit mein Deutsch besser wird.", "fa": "این هدف خوبی است! من هر روز تلاش می‌کنم تا آلمانی‌ام بهتر شود." }, "mood": "excited" },
+        { "speaker": "Ali", "text": { "de": "Ich übe so viel, sodass ich schon gut sprechen kann.", "fa": "آنقدر تمرین می‌کنم که الان می‌توانم خوب صحبت کنم." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "علی چرا آلمانی یاد می‌گیرد؟", "options": ["برای کار", "برای تحصیل در آلمان", "برای سفر"], "correctIndex": 1, "explanation": "علی گفت: um in Deutschland zu studieren" },
+        { "question": "ماریا چرا هر روز تلاش می‌کند؟", "options": ["تا امتحان بدهد", "تا آلمانی‌اش بهتر شود", "تا کار پیدا کند"], "correctIndex": 1, "explanation": "ماریا گفت: damit mein Deutsch besser wird" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "erreichen", "fa": "رسیدن به، دست یافتن" },
+      "example": { "text": { "de": "Ich arbeite hart, um mein Ziel zu erreichen.", "fa": "سخت کار می‌کنم تا به هدفم برسم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "erreichen",
+      "translation": "رسیدن به، دست یافتن",
+      "syllables": ["er", "rei", "chen"],
+      "distractors": ["ar", "rai", "ken", "cho"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "bewirken", "fa": "باعث شدن، ایجاد کردن" },
+      "example": { "text": { "de": "Seine Worte haben bewirkt, dass sie glücklich wurde.", "fa": "حرف‌هایش باعث شد که او خوشحال شود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "bewirken",
+      "translation": "باعث شدن، ایجاد کردن",
+      "syllables": ["be", "wir", "ken"],
+      "distractors": ["ba", "wer", "kan", "ko"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Ich spare Geld, {0} ein Haus zu kaufen.",
+      "options": ["damit", "sodass", "um", "weil"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "um...zu وقتی فاعل یکسان است استفاده می‌شود. من پول پس‌انداز می‌کنم تا خانه بخرم (هر دو فاعل: ich)." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Eltern arbeiten viel, {0} ihre Kinder eine gute Ausbildung bekommen.",
+      "options": ["damit", "sodass", "um...zu", "weil"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "damit وقتی فاعل‌ها متفاوت است: والدین کار می‌کنند (Eltern) تا بچه‌ها (Kinder) تحصیلات خوب داشته باشند." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["zu", "früh", "pünktlich", "auf,", "Er", "um", "steht", "sein."],
+      "correctOrder": [4, 6, 3, 1, 5, 2, 0, 7],
+      "correctSentence": { "de": "Er steht früh auf, um pünktlich zu sein.", "fa": "او زود بیدار می‌شود تا به موقع باشد." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["verstehen.", "langsam,", "wir", "spricht", "Er", "damit"],
+      "correctOrder": [4, 3, 1, 5, 2, 0],
+      "correctSentence": { "de": "Er spricht langsam, damit wir verstehen.", "fa": "او آهسته صحبت می‌کند تا ما بفهمیم." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "um...zu فقط وقتی استفاده می‌شود که فاعل جمله اصلی و جمله پیرو یکسان باشد.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! وقتی فاعل یکسان است از um...zu استفاده می‌کنیم. وقتی متفاوت است از damit." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "sodass برای بیان هدف استفاده می‌شود.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! sodass برای بیان نتیجه (Konsekutiv) استفاده می‌شود، نه هدف. برای هدف از damit یا um...zu استفاده می‌کنیم." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s8",
+      "title": "ساختار so...dass",
+      "content": "**so...dass** برای تأکید بر شدت چیزی استفاده می‌شود:\n\n**ساختار:**\nso + صفت/قید + dass + جمله پیرو\n\n**مثال‌ها:**\n- Es war **so** kalt, **dass** wir froren.\n- Er ist **so** schnell gelaufen, **dass** er gewonnen hat.\n- Sie war **so** müde, **dass** sie einschlief.\n\n**تفاوت با sodass:**\n- **so...dass** = تأکید بر شدت (آنقدر...که)\n- **sodass** = بیان ساده نتیجه (به طوری که)\n\n**نکته:**\nدر so...dass، بین so و dass حتماً صفت یا قید می‌آید.",
+      "examples": [
+        { "de": "Das Essen war so lecker, dass ich alles gegessen habe.", "fa": "غذا آنقدر خوشمزه بود که همه‌اش را خوردم." },
+        { "de": "Er hat so laut geschrien, dass alle erschrocken sind.", "fa": "آنقدر بلند فریاد زد که همه ترسیدند." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "beabsichtigen", "fa": "قصد داشتن" },
+      "example": { "text": { "de": "Ich beabsichtige, nach Berlin zu ziehen.", "fa": "قصد دارم به برلین نقل مکان کنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "beabsichtigen",
+      "translation": "قصد داشتن",
+      "syllables": ["be", "ab", "sich", "ti", "gen"],
+      "distractors": ["ba", "ob", "sech", "ta", "gon"]
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "برنامه‌ریزی سفر",
+      "scene": {
+        "location": "living_room",
+        "description": { "de": "Ein Ehepaar plant den Urlaub.", "fa": "یک زوج برنامه تعطیلات می‌ریزند." }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Ich spare Geld, um nach Italien zu reisen.", "fa": "پول پس‌انداز می‌کنم تا به ایتالیا سفر کنم." }, "mood": "happy" },
+        { "speaker": "Tom", "text": { "de": "Das ist so teuer, sodass wir lange sparen müssen.", "fa": "آنقدر گران است که باید زیاد پس‌انداز کنیم." }, "mood": "neutral" },
+        { "speaker": "Anna", "text": { "de": "Ich arbeite mehr, damit wir früher fahren können.", "fa": "بیشتر کار می‌کنم تا زودتر برویم." }, "mood": "excited" },
+        { "speaker": "Tom", "text": { "de": "Gut! Ich beabsichtige auch, Überstunden zu machen.", "fa": "خوب! من هم قصد دارم اضافه‌کاری کنم." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "آنا چرا پول پس‌انداز می‌کند؟", "options": ["برای خرید ماشین", "برای سفر به ایتالیا", "برای خرید خانه"], "correctIndex": 1, "explanation": "آنا گفت: um nach Italien zu reisen" },
+        { "question": "چرا سفر مشکل است؟", "options": ["چون زمان ندارند", "چون آنقدر گران است که باید زیاد پس‌انداز کنند", "چون بیمار هستند"], "correctIndex": 1, "explanation": "تام گفت: so teuer, sodass wir lange sparen müssen" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام گزینه برای «من زود می‌آیم تا کمکت کنم» طبیعی‌تر است؟ (فاعل یکسان)",
+      "options": [
+        "Ich komme früh, um dir zu helfen.",
+        "Ich komme früh, damit du hilfst.",
+        "Ich komme früh, sodass dir helfe.",
+        "Ich komme früh, weil dir zu helfen."
+      ],
+      "correctAnswerIndex": 0,
+      "feedback": { "correct": "آفرین! um...zu وقتی فاعل یکسان است طبیعی‌تر است: من می‌آیم تا کمک کنم (هر دو ich).", "incorrect": "وقتی فاعل یکسان است (ich)، از um...zu استفاده می‌کنیم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das Buch war {0} interessant, dass ich es zweimal gelesen habe.",
+      "options": ["so", "sodass", "damit", "um"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "so...dass برای تأکید بر شدت: کتاب آنقدر جالب بود که دو بار خواندمش." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er hat das Fenster geöffnet, {0} frische Luft hereinkommt.",
+      "options": ["um", "damit", "sodass", "so"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "damit چون فاعل‌ها متفاوت است: er (او) پنجره را باز کرد تا هوای تازه (Luft) بیاید." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["konnte.", "er", "sodass", "laut,", "Musik", "hören", "nicht", "Die", "war", "so"],
+      "correctOrder": [7, 4, 8, 9, 3, 2, 1, 6, 5, 0],
+      "correctSentence": { "de": "Die Musik war so laut, sodass er nicht hören konnte.", "fa": "موسیقی آنقدر بلند بود که نمی‌توانست بشنود." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جمله «Ich lerne Deutsch, damit ich in Deutschland arbeiten kann» می‌توان به جای damit از um...zu استفاده کرد.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! چون فاعل یکسان است (ich)، می‌توان گفت: Ich lerne Deutsch, um in Deutschland zu arbeiten." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "عبارت آلمانی را با معنی فارسی جور کنید",
+      "items": [
+        { "id": "i1", "text": "sodass" },
+        { "id": "i2", "text": "so...dass" },
+        { "id": "i3", "text": "damit" },
+        { "id": "i4", "text": "um...zu" },
+        { "id": "i5", "text": "das Ziel" },
+        { "id": "i6", "text": "die Folge" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "به طوری که (نتیجه)" },
+        { "id": "m2", "text": "آنقدر...که (تأکید)" },
+        { "id": "m3", "text": "تا (فاعل متفاوت)" },
+        { "id": "m4", "text": "برای اینکه (فاعل یکسان)" },
+        { "id": "m5", "text": "هدف" },
+        { "id": "m6", "text": "پیامد، نتیجه" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "من تلاش می‌کنم تا به هدفم برسم.",
+      "sentenceTemplate": "Ich bemühe mich, {0} mein Ziel zu erreichen.",
+      "options": ["damit", "um", "sodass", "weil"],
+      "correctAnswers": [1],
+      "correctTranslation": { "de": "Ich bemühe mich, um mein Ziel zu erreichen.", "fa": "من تلاش می‌کنم تا به هدفم برسم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "آنقدر بلند صحبت کرد که همه شنیدند.",
+      "sentenceTemplate": "Er hat so laut gesprochen, {0} alle gehört haben.",
+      "options": ["damit", "um", "sodass", "weil"],
+      "correctAnswers": [2],
+      "correctTranslation": { "de": "Er hat so laut gesprochen, sodass alle gehört haben.", "fa": "آنقدر بلند صحبت کرد که همه شنیدند." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: برنامه‌های شغلی",
+      "passage": {
+        "de": "Sara arbeitet sehr hart, um ihre Karriereziele zu erreichen. Sie steht jeden Tag um 5 Uhr auf, damit sie Zeit zum Lernen hat. Sie lernt Englisch, um international arbeiten zu können. Ihr Chef ist so zufrieden mit ihr, sodass er sie befördert hat. Sara sagt: \"Ich mache alles, damit meine Familie stolz auf mich ist. Mein Ziel ist es, Managerin zu werden.\" Die Folge ihrer harten Arbeit ist, dass sie jetzt mehr Geld verdient.",
+        "fa": "سارا خیلی سخت کار می‌کند تا به اهداف شغلی‌اش برسد. هر روز ساعت ۵ بیدار می‌شود تا وقت برای یادگیری داشته باشد. انگلیسی یاد می‌گیرد تا بتواند بین‌المللی کار کند. رئیسش آنقدر از او راضی است که ترفیعش داده. سارا می‌گوید: «همه کار می‌کنم تا خانواده‌ام به من افتخار کنند. هدفم این است که مدیر شوم.» پیامد کار سختش این است که الان پول بیشتری در می‌آورد."
+      },
+      "questions": [
+        { "question": "سارا چرا زود بیدار می‌شود؟", "options": ["برای ورزش", "تا وقت برای یادگیری داشته باشد", "برای رفتن به کار"], "correctIndex": 1, "explanation": "متن می‌گوید: damit sie Zeit zum Lernen hat" },
+        { "question": "چرا رئیس سارا را ترفیع داد؟", "options": ["چون انگلیسی بلد است", "چون آنقدر راضی بود که ترفیعش داد", "چون مدیر شد"], "correctIndex": 1, "explanation": "متن می‌گوید: so zufrieden, sodass er sie befördert hat" },
+        { "question": "هدف سارا چیست؟", "options": ["پول بیشتر", "مدیر شدن", "سفر به خارج"], "correctIndex": 1, "explanation": "سارا گفت: Mein Ziel ist es, Managerin zu werden" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der Traum von Deutschland", "fa": "رویای آلمان" },
+      "characters": ["Reza", "Lehrer"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Reza ist ein junger Mann aus dem Iran. Er hat einen großen Traum.", "fa": "رضا جوانی اهل ایران است. او یک رویای بزرگ دارد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Reza",
+          "text": { "de": "Ich lerne jeden Tag Deutsch, um in Deutschland zu studieren.", "fa": "هر روز آلمانی یاد می‌گیرم تا در آلمان تحصیل کنم." },
+          "mood": "excited"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lehrer",
+          "text": { "de": "Das ist ein gutes Ziel! Du musst viel üben, damit dein Deutsch besser wird.", "fa": "این هدف خوبی است! باید زیاد تمرین کنی تا آلمانی‌ات بهتر شود." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "رضا چرا آلمانی یاد می‌گیرد؟",
+          "options": ["برای کار", "برای تحصیل در آلمان", "برای سفر"],
+          "correctIndex": 1,
+          "explanation": "رضا گفت: um in Deutschland zu studieren"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Reza übt so viel, sodass er schnell Fortschritte macht.", "fa": "رضا آنقدر تمرین می‌کند که سریع پیشرفت می‌کند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Reza",
+          "text": { "de": "Ich beabsichtige, mein Ziel zu erreichen. Ich werde hart arbeiten, damit meine Familie stolz ist.", "fa": "قصد دارم به هدفم برسم. سخت کار خواهم کرد تا خانواده‌ام افتخار کنند." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "رضا آنقدر تمرین می‌کند که چه اتفاقی می‌افتد؟",
+          "options": ["خسته می‌شود", "سریع پیشرفت می‌کند", "می‌خوابد"],
+          "correctIndex": 1,
+          "explanation": "متن می‌گوید: so viel, sodass er schnell Fortschritte macht"
+        }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich lerne Deutsch, um in Deutschland zu arbeiten.",
+      "translation": "آلمانی یاد می‌گیرم تا در آلمان کار کنم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Er spricht langsam, damit alle verstehen.",
+      "translation": "او آهسته صحبت می‌کند تا همه بفهمند."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Es war so kalt, sodass wir froren.",
+      "translation": "آنقدر سرد بود که یخ زدیم."
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع",
+      "instruction": "نتیجه‌ای یا هدفی؟",
+      "questions": [
+        { "prompt": "sodass", "left": "نتیجه‌ای", "right": "هدفی", "correctSide": "left" },
+        { "prompt": "damit", "left": "نتیجه‌ای", "right": "هدفی", "correctSide": "right" },
+        { "prompt": "um...zu", "left": "نتیجه‌ای", "right": "هدفی", "correctSide": "right" },
+        { "prompt": "so...dass", "left": "نتیجه‌ای", "right": "هدفی", "correctSide": "left" },
+        { "prompt": "das Ziel", "left": "هدف", "right": "نتیجه", "correctSide": "left" },
+        { "prompt": "die Folge", "left": "هدف", "right": "نتیجه", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "فاعل یکسان → ?", "options": ["damit", "um...zu", "sodass"], "correctAnswerIndex": 1 },
+        { "question": "فاعل متفاوت → ?", "options": ["um...zu", "damit", "so...dass"], "correctAnswerIndex": 1 },
+        { "question": "نتیجه ساده → ?", "options": ["damit", "um...zu", "sodass"], "correctAnswerIndex": 2 },
+        { "question": "آنقدر...که → ?", "options": ["sodass", "so...dass", "damit"], "correctAnswerIndex": 1 },
+        { "question": "das Ziel", "options": ["پیامد", "منظور", "هدف"], "correctAnswerIndex": 2 },
+        { "question": "die Folge", "options": ["نتیجه", "هدف", "منظور"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "das Ziel", "fa": "هدف" },
+        { "de": "der Zweck", "fa": "منظور" },
+        { "de": "die Folge", "fa": "پیامد" },
+        { "de": "erreichen", "fa": "دست یافتن" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات این درس را پیدا کنید",
+      "targetWords": ["Ziel", "Zweck", "Folge", "damit", "sodass", "erreichen"],
+      "gridSize": { "rows": 12, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sie macht Sport, {0} gesund zu bleiben.",
+      "options": ["damit", "um", "sodass", "so"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "um...zu چون فاعل یکسان است (sie). او ورزش می‌کند تا سالم بماند." }
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "sodass", "fa": "به طوری که (نتیجه)", "options": ["تا (هدف)", "به طوری که (نتیجه)", "چون", "اگر"], "correctIndex": 1 },
+        { "de": "bewirken", "fa": "باعث شدن", "options": ["رسیدن به", "باعث شدن", "قصد داشتن", "تمام کردن"], "correctIndex": 1 },
+        { "de": "beabsichtigen", "fa": "قصد داشتن", "options": ["باعث شدن", "رسیدن به", "قصد داشتن", "انتظار داشتن"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما جملات پیرو نتیجه‌ای و هدفی را یاد گرفتید. حالا می‌توانید با sodass، damit و um...zu جملات پیچیده‌تری بسازید!",
+      "keyPoints": [
+        "sodass برای بیان نتیجه (به طوری که)",
+        "so...dass برای تأکید بر شدت (آنقدر...که)",
+        "damit وقتی فاعل‌ها متفاوت است (تا)",
+        "um...zu وقتی فاعل یکسان است (برای اینکه)",
+        "در um...zu فعل به صورت مصدر با zu می‌آید"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "das Ziel", "fa": "هدف" } },
+        { "word": { "de": "der Zweck", "fa": "منظور" } },
+        { "word": { "de": "die Folge", "fa": "پیامد" } },
+        { "word": { "de": "erreichen", "fa": "دست یافتن" } },
+        { "word": { "de": "bewirken", "fa": "باعث شدن" } },
+        { "word": { "de": "beabsichtigen", "fa": "قصد داشتن" } }
+      ]
+    }
+  ]
+}

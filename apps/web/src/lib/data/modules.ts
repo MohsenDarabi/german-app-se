@@ -1469,6 +1469,37 @@ const DE_FA_B1_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/B1/B1-M14-L04"
       }
     ]
+  },
+  {
+    id: "module-15",
+    title: "بخش ۱۵: جملات پیرو پیشرفته (Erweiterte Nebensätze)",
+    level: "B1",
+    lessons: [
+      {
+        id: "B1-M15-L01",
+        title: "Kausale Nebensätze - جملات علّی",
+        description: "یاد بگیرید جملات علّی با weil، da و zumal: بیان دلیل و علت.",
+        path: "/learn/de-fa/B1/B1-M15-L01"
+      },
+      {
+        id: "B1-M15-L02",
+        title: "Konzessive Nebensätze - جملات امتیازی",
+        description: "یاد بگیرید جملات امتیازی با obwohl، obgleich و auch wenn: بیان تضاد.",
+        path: "/learn/de-fa/B1/B1-M15-L02"
+      },
+      {
+        id: "B1-M15-L03",
+        title: "Konsekutive und finale Nebensätze - نتیجه و هدف",
+        description: "یاد بگیرید جملات نتیجه‌ای با sodass و جملات هدفی با damit و um...zu.",
+        path: "/learn/de-fa/B1/B1-M15-L03"
+      },
+      {
+        id: "B1-M15-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل جملات پیرو: علّی، امتیازی، نتیجه‌ای و هدفی.",
+        path: "/learn/de-fa/B1/B1-M15-L04"
+      }
+    ]
   }
 ];
 

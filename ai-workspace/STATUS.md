@@ -8,7 +8,7 @@
 
 **Create B1 lessons - lesson by lesson, wait for user test after each**
 
-Current: `B1-M14` (Adjektive mit Präpositionen) - **MODULE COMPLETE - READY FOR USER TEST**
+Current: `B1-M15` (Erweiterte Nebensätze) - **MODULE COMPLETE - READY FOR USER TEST**
 
 ---
 
@@ -26,7 +26,7 @@ Current: `B1-M14` (Adjektive mit Präpositionen) - **MODULE COMPLETE - READY FOR
 |-------|---------|---------|--------|
 | A1 | 14 | 56+ | Complete |
 | A2 | 18 | 72 | **Complete** ✅ |
-| B1 | 14 | 56 | Module 14 complete |
+| B1 | 15 | 60 | Module 15 complete |
 
 ### A2 Completion (2026-02-05)
 
@@ -71,8 +71,9 @@ Current: `B1-M14` (Adjektive mit Präpositionen) - **MODULE COMPLETE - READY FOR
 | M12 | Modalpartikeln | 4/4 | ✅ Complete |
 | M13 | Nomen-Verb-Verbindungen | 4/4 | ✅ Complete |
 | M14 | Adjektive mit Präpositionen | 4/4 | ✅ Complete |
+| M15 | Erweiterte Nebensätze | 4/4 | ✅ Complete |
 
-**Total B1: 56 lessons**
+**Total B1: 60 lessons**
 
 ---
 
@@ -230,10 +231,23 @@ Current: `B1-M14` (Adjektive mit Präpositionen) - **MODULE COMPLETE - READY FOR
 
 ---
 
+## B1 Module 15: Erweiterte Nebensätze (Extended Subordinate Clauses)
+
+| Lesson | Title | Status |
+|--------|-------|--------|
+| B1-M15-L01 | Kausale (weil, da, zumal - reason) | ✅ Complete |
+| B1-M15-L02 | Konzessive (obwohl, auch wenn - concession) | ✅ Complete |
+| B1-M15-L03 | Konsekutive + Finale (sodass, damit, um...zu) | ✅ Complete |
+| B1-M15-L04 | Zusammenfassung | ✅ Complete |
+
+---
+
 ## Recent Changes
 
 | Date | Change |
 |------|--------|
+| 2026-02-06 | **B1 Module 15 (Erweiterte Nebensätze) COMPLETE - 4 lessons!** |
+| 2026-02-06 | Created B1-M15-L01 to L04 in parallel |
 | 2026-02-06 | **B1 Module 14 (Adjektive mit Präpositionen) COMPLETE - 4 lessons!** |
 | 2026-02-06 | Created B1-M14-L01 to L04 in parallel |
 | 2026-02-06 | **B1 Module 13 (Nomen-Verb-Verbindungen) COMPLETE - 4 lessons!** |
@@ -292,6 +306,7 @@ Current: `B1-M14` (Adjektive mit Präpositionen) - **MODULE COMPLETE - READY FOR
 13. [x] Complete B1 Module 12 (Modalpartikeln) - 4 lessons
 14. [x] Complete B1 Module 13 (Nomen-Verb-Verbindungen) - 4 lessons
 15. [x] Complete B1 Module 14 (Adjektive mit Präpositionen) - 4 lessons
-16. [ ] **User tests B1-M14 lessons**
-17. [ ] Plan B1 Module 15 topic
-18. [ ] Continue B1 curriculum development
+16. [x] Complete B1 Module 15 (Erweiterte Nebensätze) - 4 lessons
+17. [ ] **User tests B1-M15 lessons**
+18. [ ] Plan B1 Module 16 topic
+19. [ ] Continue B1 curriculum development
