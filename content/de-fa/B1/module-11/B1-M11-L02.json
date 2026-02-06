@@ -1,0 +1,527 @@
+{
+  "id": "B1-M11-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Futur II - Vermutungen über die Vergangenheit", "fa": "آینده کامل - حدس‌ها درباره گذشته" },
+  "description": "یاد بگیرید چگونه با Futur II درباره گذشته حدس بزنید. مثال: Er wird wohl vergessen haben (احتمالاً فراموش کرده است). این ساختار اغلب با wohl، wahrscheinlich و sicherlich استفاده می‌شود.",
+  "level": "B1",
+  "module": 11,
+  "lessonNumber": 2,
+  "totalSteps": 45,
+  "estimatedMinutes": 25,
+  "vocabulary": [
+    { "de": "vermuten", "fa": "حدس زدن، فرض کردن", "grammar": { "pos": "verb" } },
+    { "de": "wahrscheinlich", "fa": "احتمالاً", "grammar": { "pos": "adverb" } },
+    { "de": "wohl", "fa": "احتمالاً، ظاهراً", "grammar": { "pos": "adverb" } },
+    { "de": "sicherlich", "fa": "مطمئناً، حتماً", "grammar": { "pos": "adverb" } },
+    { "de": "bestimmt", "fa": "قطعاً، حتماً", "grammar": { "pos": "adverb" } },
+    { "de": "möglicherweise", "fa": "شاید، احتمالاً", "grammar": { "pos": "adverb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "Futur II چیست؟",
+      "content": "**Futur II (آینده کامل)**\n\nدر آلمانی Futur II برای بیان **حدس درباره گذشته** استفاده می‌شود:\n\n**ساختار:**\nwerden + Partizip II + haben/sein\n\n**مثال:**\n- Er **wird** den Bus **verpasst haben**.\n- (احتمالاً اتوبوس را از دست داده است.)\n\n**توجه:** این ساختار بیشتر برای **حدس و گمان** است، نه برای آینده!\n\n**در فارسی:** احتمالاً رفته است، حتماً فراموش کرده است",
+      "examples": [
+        { "de": "Sie wird wohl schon gegangen sein.", "fa": "احتمالاً رفته است." },
+        { "de": "Er wird das vergessen haben.", "fa": "حتماً آن را فراموش کرده است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "vermuten", "fa": "حدس زدن، فرض کردن" },
+      "example": { "text": { "de": "Ich vermute, dass er krank ist.", "fa": "حدس می‌زنم که مریض است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "vermuten",
+      "translation": "حدس زدن",
+      "syllables": ["ver", "mu", "ten"],
+      "distractors": ["vor", "ma", "tan"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "wahrscheinlich", "fa": "احتمالاً" },
+      "example": { "text": { "de": "Er ist wahrscheinlich zu Hause.", "fa": "احتمالاً خانه است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "wahrscheinlich",
+      "translation": "احتمالاً",
+      "syllables": ["wahr", "schein", "lich"],
+      "distractors": ["wehr", "schon", "lech"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "wohl", "fa": "احتمالاً، ظاهراً" },
+      "example": { "text": { "de": "Sie wird wohl kommen.", "fa": "احتمالاً می‌آید." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "wohl",
+      "translation": "احتمالاً",
+      "syllables": ["wohl"],
+      "distractors": ["wahl", "weil", "woll"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "Futur II در زبان آلمانی معمولاً برای چه استفاده می‌شود؟",
+      "options": [
+        "بیان آینده دور",
+        "حدس زدن درباره گذشته",
+        "دستور دادن",
+        "آرزو کردن"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! Futur II برای حدس درباره گذشته استفاده می‌شود.", "incorrect": "Futur II معمولاً برای حدس زدن درباره گذشته استفاده می‌شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را با فعل کمکی مناسب پر کنید",
+      "sentence": "Er {0} wohl den Bus verpasst haben.",
+      "options": ["wird", "hat", "ist", "wurde"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "برای Futur II از werden استفاده می‌کنیم: Er wird verpasst haben." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "کجاست پیتر؟",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Büro. Peter ist noch nicht da.", "fa": "در دفتر. پیتر هنوز نیامده." }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Wo ist Peter? Er ist schon 30 Minuten zu spät!", "fa": "پیتر کجاست؟ ۳۰ دقیقه دیر کرده!" }, "mood": "confused" },
+        { "speaker": "Max", "text": { "de": "Er wird wohl den Bus verpasst haben.", "fa": "احتمالاً اتوبوس را از دست داده." }, "mood": "neutral" },
+        { "speaker": "Anna", "text": { "de": "Oder er wird verschlafen haben.", "fa": "یا خوابش برده." }, "mood": "surprised" },
+        { "speaker": "Max", "text": { "de": "Er wird sicherlich bald kommen.", "fa": "مطمئناً به زودی می‌آید." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "ماکس چه حدسی می‌زند؟", "options": ["پیتر مریض است", "پیتر اتوبوس را از دست داده", "پیتر در ترافیک است"], "correctIndex": 1, "explanation": "ماکس گفت: Er wird wohl den Bus verpasst haben." },
+        { "question": "آنا چه حدسی می‌زند؟", "options": ["پیتر خوابش برده", "پیتر رفته مرخصی", "پیتر قهوه می‌خورد"], "correctIndex": 0, "explanation": "آنا گفت: Oder er wird verschlafen haben." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["haben.", "vergessen", "wird", "Er", "wohl", "das"],
+      "correctOrder": [3, 2, 4, 5, 1, 0],
+      "correctSentence": { "de": "Er wird wohl das vergessen haben.", "fa": "احتمالاً آن را فراموش کرده است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در Futur II فعل اصلی به صورت Partizip II می‌آید و در آخر جمله قرار می‌گیرد.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! ساختار: werden + ... + Partizip II + haben/sein" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "ساختار Futur II",
+      "content": "**ساختار کامل Futur II:**\n\n**با haben (فعل‌های متعدی):**\n```\nSubjekt + werden + ... + Partizip II + haben\n```\n- Er **wird** das Buch **gelesen haben**.\n- (احتمالاً کتاب را خوانده است.)\n\n**با sein (فعل‌های حرکتی و تغییر حالت):**\n```\nSubjekt + werden + ... + Partizip II + sein\n```\n- Sie **wird** schon **gegangen sein**.\n- (احتمالاً رفته است.)\n\n**نکته:** همان قواعد haben/sein در Perfekt اینجا هم اعمال می‌شود!",
+      "examples": [
+        { "de": "Er wird gegessen haben.", "fa": "احتمالاً غذا خورده است." },
+        { "de": "Sie wird gekommen sein.", "fa": "احتمالاً آمده است." },
+        { "de": "Sie werden es verstanden haben.", "fa": "احتمالاً آن را فهمیده‌اند." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "sicherlich", "fa": "مطمئناً، حتماً" },
+      "example": { "text": { "de": "Er wird sicherlich angerufen haben.", "fa": "مطمئناً زنگ زده است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "sicherlich",
+      "translation": "مطمئناً",
+      "syllables": ["si", "cher", "lich"],
+      "distractors": ["su", "char", "lach"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "bestimmt", "fa": "قطعاً، حتماً" },
+      "example": { "text": { "de": "Sie wird bestimmt gewartet haben.", "fa": "قطعاً منتظر مانده است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "bestimmt",
+      "translation": "قطعاً",
+      "syllables": ["be", "stimmt"],
+      "distractors": ["ba", "stammt", "stemmt"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله Futur II است؟",
+      "options": [
+        "Er hat das Buch gelesen.",
+        "Er wird das Buch lesen.",
+        "Er wird das Buch gelesen haben.",
+        "Er liest das Buch."
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! Futur II: werden + Partizip II + haben/sein", "incorrect": "Futur II ساختار werden + Partizip II + haben/sein دارد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sie {0} wahrscheinlich schon gegangen sein.",
+      "options": ["wird", "hat", "ist", "wurde"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Futur II با werden ساخته می‌شود: Sie wird gegangen sein." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "کلیدها کجا هستند؟",
+      "scene": {
+        "location": "home",
+        "description": { "de": "Zu Hause. Maria sucht ihre Schlüssel.", "fa": "در خانه. ماریا دنبال کلیدهایش می‌گردد." }
+      },
+      "lines": [
+        { "speaker": "Maria", "text": { "de": "Ich finde meine Schlüssel nicht!", "fa": "کلیدهایم را پیدا نمی‌کنم!" }, "mood": "confused" },
+        { "speaker": "Tom", "text": { "de": "Du wirst sie wohl irgendwo hingelegt haben.", "fa": "احتمالاً یک جایی گذاشتی‌شان." }, "mood": "neutral" },
+        { "speaker": "Maria", "text": { "de": "Vielleicht wird der Hund sie versteckt haben!", "fa": "شاید سگ قایمشان کرده باشد!" }, "mood": "surprised" },
+        { "speaker": "Tom", "text": { "de": "Nein, du wirst sie bestimmt in der Tasche vergessen haben.", "fa": "نه، قطعاً توی کیفت جا گذاشتی‌شان." }, "mood": "happy" },
+        { "speaker": "Maria", "text": { "de": "Du hast recht! Hier sind sie!", "fa": "راست می‌گی! اینجان!" }, "mood": "excited" }
+      ],
+      "questions": [
+        { "question": "ماریا چه چیزی گم کرده؟", "options": ["کیفش", "کلیدهایش", "تلفنش"], "correctIndex": 1, "explanation": "ماریا گفت: Ich finde meine Schlüssel nicht!" },
+        { "question": "کلیدها کجا بودند؟", "options": ["زیر مبل", "در کیف", "پیش سگ"], "correctIndex": 1, "explanation": "تام درست حدس زد: in der Tasche vergessen haben." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["sein.", "gegangen", "wird", "schon", "Sie", "sicherlich"],
+      "correctOrder": [4, 2, 5, 3, 1, 0],
+      "correctSentence": { "de": "Sie wird sicherlich schon gegangen sein.", "fa": "مطمئناً رفته است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "کلماتی مثل wohl و wahrscheinlich نشان می‌دهند که جمله یک حدس است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! این قیدها نشان‌دهنده حدس و گمان هستند." }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "möglicherweise", "fa": "شاید، احتمالاً" },
+      "example": { "text": { "de": "Er wird möglicherweise umgezogen sein.", "fa": "شاید اسباب‌کشی کرده باشد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "möglicherweise",
+      "translation": "شاید",
+      "syllables": ["mög", "li", "cher", "wei", "se"],
+      "distractors": ["mag", "la", "char", "wa"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "فعل کمکی مناسب را انتخاب کنید",
+      "sentence": "Er wird wohl zu spät gekommen {0}.",
+      "options": ["sein", "haben", "werden", "sind"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "kommen با sein می‌آید: Er wird gekommen sein." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "فعل کمکی مناسب را انتخاب کنید",
+      "sentence": "Sie wird das Essen bestimmt schon gekocht {0}.",
+      "options": ["haben", "sein", "werden", "wird"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "kochen با haben می‌آید: Sie wird gekocht haben." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "تفاوت Perfekt و Futur II",
+      "content": "**Perfekt vs Futur II:**\n\n**Perfekt = واقعیت (Fakt):**\n- Er **hat** den Bus **verpasst**.\n- (اتوبوس را از دست داد. - می‌دانیم)\n\n**Futur II = حدس (Vermutung):**\n- Er **wird** den Bus **verpasst haben**.\n- (احتمالاً اتوبوس را از دست داده. - حدس می‌زنیم)\n\n**نشانه‌های حدس:**\n- wohl (احتمالاً)\n- wahrscheinlich (احتمالاً)\n- sicherlich (مطمئناً)\n- bestimmt (قطعاً)\n- möglicherweise (شاید)\n\n**در مکالمه روزمره:** Futur II بیشتر برای حدس زدن استفاده می‌شود!",
+      "examples": [
+        { "de": "Er hat angerufen. (واقعیت)", "fa": "زنگ زد. (می‌دانیم)" },
+        { "de": "Er wird wohl angerufen haben. (حدس)", "fa": "احتمالاً زنگ زده است. (حدس می‌زنیم)" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["haben.", "vergessen", "Termin", "wird", "den", "Sie", "wahrscheinlich"],
+      "correctOrder": [5, 3, 6, 4, 2, 1, 0],
+      "correctSentence": { "de": "Sie wird wahrscheinlich den Termin vergessen haben.", "fa": "احتمالاً قرار ملاقات را فراموش کرده است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "جمله Er wird gegessen haben یعنی در آینده غذا خواهد خورد.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! این جمله یعنی احتمالاً غذا خورده است (حدس درباره گذشته)." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "قید مناسب را انتخاب کنید",
+      "sentence": "Er wird {0} den Zug verpasst haben.",
+      "options": ["wohl", "nicht", "sehr", "immer"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "wohl نشان‌دهنده حدس است: Er wird wohl verpasst haben." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Die Kinder werden {0} schon eingeschlafen sein.",
+      "options": ["bestimmt", "gestern", "heute", "morgen"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "bestimmt نشان‌دهنده حدس قوی است: Die Kinder werden bestimmt eingeschlafen sein." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "قید را با معنی فارسی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "wohl" },
+        { "id": "i2", "text": "wahrscheinlich" },
+        { "id": "i3", "text": "sicherlich" },
+        { "id": "i4", "text": "bestimmt" },
+        { "id": "i5", "text": "möglicherweise" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "احتمالاً، ظاهراً" },
+        { "id": "m2", "text": "احتمالاً" },
+        { "id": "m3", "text": "مطمئناً" },
+        { "id": "m4", "text": "قطعاً" },
+        { "id": "m5", "text": "شاید" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "احتمالاً اتوبوس را از دست داده است.",
+      "sentenceTemplate": "Er {0} {1} den Bus verpasst haben.",
+      "options": ["wird", "wohl", "hat", "ist"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Er wird wohl den Bus verpasst haben.", "fa": "احتمالاً اتوبوس را از دست داده است." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "مطمئناً رفته است.",
+      "sentenceTemplate": "Sie {0} {1} gegangen sein.",
+      "options": ["wird", "sicherlich", "ist", "hat"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Sie wird sicherlich gegangen sein.", "fa": "مطمئناً رفته است." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: حدس‌ها",
+      "passage": {
+        "de": "Lisa ist heute nicht zur Arbeit gekommen. Ihre Kollegen machen sich Sorgen. Max sagt: Sie wird wohl krank geworden sein. Anna meint: Sie wird wahrscheinlich verschlafen haben. Tom vermutet: Sie wird sicherlich den Zug verpasst haben. Nach einer Stunde ruft Lisa an. Sie sagt, ihr Auto ist kaputt gegangen. Niemand hatte richtig geraten!",
+        "fa": "لیزا امروز سر کار نیامده. همکارانش نگران هستند. ماکس می‌گوید: احتمالاً مریض شده. آنا فکر می‌کند: احتمالاً خوابش برده. تام حدس می‌زند: مطمئناً قطار را از دست داده. بعد از یک ساعت لیزا زنگ می‌زند. می‌گوید ماشینش خراب شده. هیچ‌کس درست حدس نزده بود!"
+      },
+      "questions": [
+        { "question": "ماکس چه حدسی زد؟", "options": ["لیزا خوابش برده", "لیزا مریض شده", "ماشین لیزا خراب شده"], "correctIndex": 1, "explanation": "ماکس گفت: Sie wird wohl krank geworden sein." },
+        { "question": "واقعاً چه اتفاقی افتاده بود؟", "options": ["قطار را از دست داده بود", "خوابش برده بود", "ماشینش خراب شده بود"], "correctIndex": 2, "explanation": "لیزا گفت: ihr Auto ist kaputt gegangen." },
+        { "question": "کدام حدس درست بود؟", "options": ["حدس ماکس", "حدس آنا", "هیچ‌کدام"], "correctIndex": 2, "explanation": "Niemand hatte richtig geraten - هیچ‌کس درست حدس نزده بود!" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der verschwundene Kuchen", "fa": "کیک ناپدید شده" },
+      "characters": ["Mutter", "Vater", "Sohn"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "In der Küche. Der Kuchen ist verschwunden!", "fa": "در آشپزخانه. کیک ناپدید شده!" }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Mutter",
+          "text": { "de": "Wo ist mein Kuchen? Er war hier auf dem Tisch!", "fa": "کیک من کجاست؟ اینجا روی میز بود!" },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Vater",
+          "text": { "de": "Hmm, der Hund wird ihn wohl gegessen haben.", "fa": "هوم، احتمالاً سگ خورده‌اش." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Mutter",
+          "text": { "de": "Nein! Der Hund ist zu klein. Jemand wird ihn genommen haben!", "fa": "نه! سگ خیلی کوچک است. یکی برداشته!" },
+          "mood": "angry"
+        },
+        {
+          "type": "question",
+          "question": "پدر چه حدسی می‌زند؟",
+          "options": ["پسر خورده", "سگ خورده", "مادر برده"],
+          "correctIndex": 1,
+          "explanation": "پدر گفت: Der Hund wird ihn wohl gegessen haben."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Vater",
+          "text": { "de": "Vielleicht wird unser Sohn ihn mitgenommen haben...", "fa": "شاید پسرمان برده باشد..." },
+          "mood": "surprised"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Der Sohn kommt herein. Er hat Schokolade im Gesicht!", "fa": "پسر وارد می‌شود. شکلات روی صورتش دارد!" }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sohn",
+          "text": { "de": "Was? Welcher Kuchen? Ich weiß von nichts!", "fa": "چی؟ کدوم کیک؟ من چیزی نمی‌دونم!" },
+          "mood": "surprised"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Mutter",
+          "text": { "de": "Du wirst ihn bestimmt gegessen haben! Schau dein Gesicht an!", "fa": "قطعاً تو خوردیش! به صورتت نگاه کن!" },
+          "mood": "angry"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sohn",
+          "text": { "de": "Na gut... Der Kuchen war wirklich lecker!", "fa": "باشه... کیک واقعاً خوشمزه بود!" },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "چه کسی کیک را خورده بود؟",
+          "options": ["سگ", "پدر", "پسر"],
+          "correctIndex": 2,
+          "explanation": "پسر اعتراف کرد: Der Kuchen war wirklich lecker!"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع",
+      "instruction": "haben یا sein را انتخاب کنید",
+      "questions": [
+        { "prompt": "Er wird gegessen ___", "left": "haben", "right": "sein", "correctSide": "left" },
+        { "prompt": "Sie wird gegangen ___", "left": "haben", "right": "sein", "correctSide": "right" },
+        { "prompt": "Wir werden geschlafen ___", "left": "haben", "right": "sein", "correctSide": "left" },
+        { "prompt": "Er wird gekommen ___", "left": "haben", "right": "sein", "correctSide": "right" },
+        { "prompt": "Sie wird gelesen ___", "left": "haben", "right": "sein", "correctSide": "left" },
+        { "prompt": "Er wird gefahren ___", "left": "haben", "right": "sein", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Er wird wohl vergessen haben.",
+      "translation": "احتمالاً فراموش کرده است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Sie wird sicherlich schon gegangen sein.",
+      "translation": "مطمئناً رفته است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Die Kinder werden bestimmt eingeschlafen sein.",
+      "translation": "بچه‌ها قطعاً خوابیده‌اند."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "احتمالاً", "options": ["wohl", "nicht", "sehr"], "correctAnswerIndex": 0 },
+        { "question": "مطمئناً", "options": ["sicherlich", "vielleicht", "nie"], "correctAnswerIndex": 0 },
+        { "question": "Er wird ___ haben (gegessen)", "options": ["gegessen", "essen", "isst"], "correctAnswerIndex": 0 },
+        { "question": "Sie wird ___ sein (gegangen)", "options": ["gehen", "gegangen", "geht"], "correctAnswerIndex": 1 },
+        { "question": "قطعاً", "options": ["bestimmt", "manchmal", "selten"], "correctAnswerIndex": 0 },
+        { "question": "شاید", "options": ["immer", "möglicherweise", "nie"], "correctAnswerIndex": 1 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "wohl", "fa": "احتمالاً" },
+        { "de": "sicherlich", "fa": "مطمئناً" },
+        { "de": "bestimmt", "fa": "قطعاً" },
+        { "de": "möglicherweise", "fa": "شاید" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "قیدهای حدس را پیدا کنید",
+      "targetWords": ["wohl", "sicherlich", "bestimmt", "vermuten", "wahrscheinlich"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "vermuten", "fa": "حدس زدن", "options": ["دانستن", "حدس زدن", "فراموش کردن", "یادآوری کردن"], "correctIndex": 1 },
+        { "de": "wahrscheinlich", "fa": "احتمالاً", "options": ["هرگز", "همیشه", "احتمالاً", "امروز"], "correctIndex": 2 },
+        { "de": "sicherlich", "fa": "مطمئناً", "options": ["شاید", "مطمئناً", "کمی", "خیلی"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما Futur II برای حدس زدن درباره گذشته را یاد گرفتید!",
+      "keyPoints": [
+        "Futur II = werden + Partizip II + haben/sein",
+        "برای حدس درباره گذشته استفاده می‌شود",
+        "wohl, wahrscheinlich, sicherlich نشانه حدس هستند",
+        "Er wird vergessen haben = احتمالاً فراموش کرده",
+        "Sie wird gegangen sein = احتمالاً رفته است",
+        "تفاوت با Perfekt: حدس vs واقعیت"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "vermuten", "fa": "حدس زدن" } },
+        { "word": { "de": "wahrscheinlich", "fa": "احتمالاً" } },
+        { "word": { "de": "wohl", "fa": "احتمالاً، ظاهراً" } },
+        { "word": { "de": "sicherlich", "fa": "مطمئناً" } },
+        { "word": { "de": "bestimmt", "fa": "قطعاً" } },
+        { "word": { "de": "möglicherweise", "fa": "شاید" } }
+      ]
+    }
+  ]
+}

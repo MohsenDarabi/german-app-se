@@ -1,0 +1,530 @@
+{
+  "id": "B1-M11-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Futur II - Bildung", "fa": "آینده کامل - ساختار" },
+  "description": "یاد بگیرید چگونه زمان آینده کامل آلمانی (Futur II) را بسازید: werden + Partizip II + haben یا sein. این زمان برای بیان کاری که در آینده تمام شده خواهد بود استفاده می‌شود.",
+  "level": "B1",
+  "module": 11,
+  "lessonNumber": 1,
+  "totalSteps": 45,
+  "estimatedMinutes": 25,
+  "vocabulary": [
+    { "de": "abschließen", "fa": "به پایان رساندن", "grammar": { "pos": "verb", "partizipII": "abgeschlossen", "hilfsverb": "haben" } },
+    { "de": "erreichen", "fa": "رسیدن به، دست یافتن", "grammar": { "pos": "verb", "partizipII": "erreicht", "hilfsverb": "haben" } },
+    { "de": "absolvieren", "fa": "به اتمام رساندن، فارغ‌التحصیل شدن", "grammar": { "pos": "verb", "partizipII": "absolviert", "hilfsverb": "haben" } },
+    { "de": "beenden", "fa": "پایان دادن", "grammar": { "pos": "verb", "partizipII": "beendet", "hilfsverb": "haben" } },
+    { "de": "vollenden", "fa": "کامل کردن، به اتمام رساندن", "grammar": { "pos": "verb", "partizipII": "vollendet", "hilfsverb": "haben" } },
+    { "de": "fertigstellen", "fa": "تکمیل کردن، به پایان رساندن", "grammar": { "pos": "verb", "partizipII": "fertiggestellt", "hilfsverb": "haben" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "زمان آینده کامل چیست؟",
+      "content": "**Futur II (زمان آینده کامل)**\n\nاین زمان برای بیان کاری است که در آینده تمام شده خواهد بود:\n\n**ساختار:**\n```\nwerden + Partizip II + haben یا sein\n```\n\n**مثال‌ها:**\n- Ich **werde** das Buch gelesen **haben**.\n  (من کتاب را خوانده خواهم بود.)\n\n- Er **wird** angekommen **sein**.\n  (او رسیده خواهد بود.)\n\n**نکته مهم:**\nدر فارسی هم این مفهوم وجود دارد: تا فردا کارم را تمام کرده‌ام.",
+      "examples": [
+        { "de": "Bis morgen werde ich die Arbeit beendet haben.", "fa": "تا فردا کار را تمام کرده خواهم بود." },
+        { "de": "Sie wird schon gegangen sein.", "fa": "او احتمالا رفته خواهد بود." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "abschließen", "fa": "به پایان رساندن" },
+      "example": { "text": { "de": "Ich werde das Projekt abgeschlossen haben.", "fa": "من پروژه را به پایان رسانده خواهم بود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "abschließen",
+      "translation": "به پایان رساندن",
+      "syllables": ["ab", "schlie", "ßen"],
+      "distractors": ["ob", "schla", "sen"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "erreichen", "fa": "رسیدن به، دست یافتن" },
+      "example": { "text": { "de": "Bis nächstes Jahr werde ich mein Ziel erreicht haben.", "fa": "تا سال آینده به هدفم رسیده خواهم بود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "erreichen",
+      "translation": "رسیدن به، دست یافتن",
+      "syllables": ["er", "rei", "chen"],
+      "distractors": ["ar", "rie", "kan"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s4",
+      "title": "صرف فعل werden در Futur II",
+      "content": "**صرف فعل werden:**\n\n| ضمیر | werden |\n|------|--------|\n| ich | werde |\n| du | wirst |\n| er/sie/es | wird |\n| wir | werden |\n| ihr | werdet |\n| sie/Sie | werden |\n\n**ترتیب کلمات در جمله:**\n```\nفاعل + werden + ... + Partizip II + haben یا sein\n```\n\n**مثال:**\n- Ich **werde** das Buch gelesen **haben**.\n- Du **wirst** angekommen **sein**.\n\n**نکته:** haben یا sein همیشه در آخر جمله می‌آید!",
+      "examples": [
+        { "de": "Ich werde gegessen haben.", "fa": "من غذا خورده خواهم بود." },
+        { "de": "Du wirst gefahren sein.", "fa": "تو رانده خواهی بود." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "absolvieren", "fa": "به اتمام رساندن، فارغ‌التحصیل شدن" },
+      "example": { "text": { "de": "Er wird sein Studium absolviert haben.", "fa": "او تحصیلاتش را به اتمام رسانده خواهد بود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "absolvieren",
+      "translation": "به اتمام رساندن",
+      "syllables": ["ab", "sol", "vie", "ren"],
+      "distractors": ["ob", "sal", "va", "ron"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "ساختار Futur II چگونه است؟",
+      "options": [
+        "haben + Partizip II + werden",
+        "werden + Partizip II + haben یا sein",
+        "sein + werden + Partizip II",
+        "Partizip II + werden + haben"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! ساختار Futur II: werden + Partizip II + haben یا sein", "incorrect": "ساختار درست: werden + Partizip II + haben یا sein" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله از نظر ترتیب کلمات درست است؟",
+      "options": [
+        "Ich haben werde gegessen.",
+        "Ich werde haben gegessen.",
+        "Ich werde gegessen haben.",
+        "Gegessen ich werde haben."
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "درست! haben یا sein همیشه در آخر جمله می‌آید.", "incorrect": "در Futur II فعل کمکی haben یا sein در آخر می‌آید: Ich werde gegessen haben." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "beenden", "fa": "پایان دادن" },
+      "example": { "text": { "de": "Wir werden die Sitzung beendet haben.", "fa": "ما جلسه را به پایان رسانده خواهیم بود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "beenden",
+      "translation": "پایان دادن",
+      "syllables": ["be", "en", "den"],
+      "distractors": ["ba", "an", "don"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "فعل مناسب را انتخاب کنید",
+      "sentence": "Ich {0} das Buch gelesen haben.",
+      "options": ["werde", "wirst", "wird", "werden"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "برای ich از werde استفاده می‌کنیم: Ich werde das Buch gelesen haben." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "فعل مناسب را انتخاب کنید",
+      "sentence": "Du {0} angekommen sein.",
+      "options": ["werde", "wirst", "wird", "werden"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "برای du از wirst استفاده می‌کنیم: Du wirst angekommen sein." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "کدام فعل کمکی؟ haben یا sein؟",
+      "content": "**قوانین استفاده از haben یا sein:**\n\nقوانین Futur II مثل Perfekt است!\n\n**با sein:**\n- افعال حرکتی: gehen, kommen, fahren, fliegen, laufen\n- تغییر حالت: werden, sterben, einschlafen\n- bleiben و sein\n\n**با haben:**\n- همه افعال دیگر!\n- افعال متعدی (با مفعول مستقیم)\n- افعال انعکاسی\n\n**مثال‌ها:**\n- Er **wird** gegangen **sein**. (حرکتی)\n- Sie **wird** geschlafen **haben**. (غیرحرکتی)\n- Ich **werde** das Essen gekocht **haben**. (متعدی)",
+      "examples": [
+        { "de": "Sie wird nach Hause gefahren sein.", "fa": "او به خانه رفته خواهد بود." },
+        { "de": "Er wird die E-Mail geschrieben haben.", "fa": "او ایمیل را نوشته خواهد بود." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "vollenden", "fa": "کامل کردن، به اتمام رساندن" },
+      "example": { "text": { "de": "Der Künstler wird sein Werk vollendet haben.", "fa": "هنرمند اثرش را کامل کرده خواهد بود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "vollenden",
+      "translation": "کامل کردن",
+      "syllables": ["voll", "en", "den"],
+      "distractors": ["val", "an", "don"]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "fertigstellen", "fa": "تکمیل کردن، به پایان رساندن" },
+      "example": { "text": { "de": "Sie werden das Gebäude fertiggestellt haben.", "fa": "آنها ساختمان را تکمیل کرده خواهند بود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "fertigstellen",
+      "translation": "تکمیل کردن",
+      "syllables": ["fer", "tig", "stel", "len"],
+      "distractors": ["far", "tag", "stal", "lon"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "فعل کمکی مناسب را انتخاب کنید",
+      "sentence": "Er wird nach Berlin gefahren {0}.",
+      "options": ["haben", "sein", "werden", "ist"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "fahren یک فعل حرکتی است و با sein می‌آید: Er wird gefahren sein." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "فعل کمکی مناسب را انتخاب کنید",
+      "sentence": "Sie wird das Projekt abgeschlossen {0}.",
+      "options": ["sein", "haben", "werden", "hat"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "abschließen فعل متعدی است و با haben می‌آید: Sie wird abgeschlossen haben." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "برنامه‌ریزی برای آینده",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Büro", "fa": "در دفتر کار" }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Wann wirst du das Projekt abgeschlossen haben?", "fa": "کی پروژه را به پایان رسانده خواهی بود؟" }, "mood": "neutral" },
+        { "speaker": "Max", "text": { "de": "Bis nächsten Freitag werde ich es beendet haben.", "fa": "تا جمعه آینده آن را تمام کرده خواهم بود." }, "mood": "neutral" },
+        { "speaker": "Anna", "text": { "de": "Und die Präsentation?", "fa": "و ارائه چطور؟" }, "mood": "confused" },
+        { "speaker": "Max", "text": { "de": "Die werde ich bis Donnerstag fertiggestellt haben.", "fa": "آن را تا پنجشنبه تکمیل کرده خواهم بود." }, "mood": "happy" },
+        { "speaker": "Anna", "text": { "de": "Super! Dann werden wir alles erreicht haben!", "fa": "عالی! آن وقت همه چیز را به دست آورده خواهیم بود!" }, "mood": "excited" }
+      ],
+      "questions": [
+        { "question": "ماکس کی پروژه را تمام کرده خواهد بود؟", "options": ["چهارشنبه", "پنجشنبه", "جمعه"], "correctIndex": 2, "explanation": "ماکس گفت: Bis nächsten Freitag werde ich es beendet haben." },
+        { "question": "ارائه کی آماده خواهد بود؟", "options": ["جمعه", "پنجشنبه", "دوشنبه"], "correctIndex": 1, "explanation": "ماکس گفت: Die werde ich bis Donnerstag fertiggestellt haben." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["haben", "werde", "Ich", "gegessen"],
+      "correctOrder": [2, 1, 3, 0],
+      "correctSentence": { "de": "Ich werde gegessen haben.", "fa": "من غذا خورده خواهم بود." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["angekommen", "wird", "Er", "sein"],
+      "correctOrder": [2, 1, 0, 3],
+      "correctSentence": { "de": "Er wird angekommen sein.", "fa": "او رسیده خواهد بود." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["haben", "das", "Projekt", "werden", "abgeschlossen", "Wir"],
+      "correctOrder": [5, 3, 1, 2, 4, 0],
+      "correctSentence": { "de": "Wir werden das Projekt abgeschlossen haben.", "fa": "ما پروژه را به پایان رسانده خواهیم بود." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در Futur II فعل کمکی haben یا sein در آخر جمله می‌آید.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! ساختار: werden + Partizip II + haben یا sein (در آخر)" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "فعل fahren در Futur II با haben می‌آید.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! fahren یک فعل حرکتی است و با sein می‌آید: Er wird gefahren sein." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "قوانین استفاده از haben یا sein در Futur II مثل Perfekt است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! همان قوانین Perfekt در Futur II هم اعمال می‌شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "صرف مناسب werden را انتخاب کنید",
+      "sentence": "Ihr {0} die Prüfung bestanden haben.",
+      "options": ["werde", "wirst", "wird", "werdet"],
+      "correctAnswers": [3],
+      "feedback": { "explanation": "برای ihr از werdet استفاده می‌کنیم: Ihr werdet die Prüfung bestanden haben." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "صرف مناسب werden را انتخاب کنید",
+      "sentence": "Sie (جمع) {0} das Ziel erreicht haben.",
+      "options": ["werde", "wird", "werdet", "werden"],
+      "correctAnswers": [3],
+      "feedback": { "explanation": "برای sie (جمع) از werden استفاده می‌کنیم: Sie werden das Ziel erreicht haben." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "بعد از امتحان",
+      "scene": {
+        "location": "university",
+        "description": { "de": "An der Universität", "fa": "در دانشگاه" }
+      },
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Bis wann wirst du dein Studium absolviert haben?", "fa": "تا کی تحصیلاتت را به اتمام رسانده خواهی بود؟" }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Bis Ende des Jahres werde ich es vollendet haben.", "fa": "تا پایان سال آن را کامل کرده خواهم بود." }, "mood": "happy" },
+        { "speaker": "Lisa", "text": { "de": "Toll! Dann wirst du deinen Abschluss erreicht haben!", "fa": "عالی! آن وقت مدرکت را گرفته خواهی بود!" }, "mood": "excited" },
+        { "speaker": "Tom", "text": { "de": "Ja, und ich werde schon einen Job gefunden haben!", "fa": "بله، و یک کار هم پیدا کرده خواهم بود!" }, "mood": "excited" },
+        { "speaker": "Lisa", "text": { "de": "Das ist super! Du wirst alles geschafft haben!", "fa": "این عالیه! تو همه چیز را انجام داده خواهی بود!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "تام کی تحصیلاتش را تمام کرده خواهد بود؟", "options": ["اول سال", "وسط سال", "پایان سال"], "correctIndex": 2, "explanation": "تام گفت: Bis Ende des Jahres werde ich es vollendet haben." },
+        { "question": "تام چه چیزی هم پیدا کرده خواهد بود؟", "options": ["خانه", "کار", "ماشین"], "correctIndex": 1, "explanation": "تام گفت: Ich werde schon einen Job gefunden haben." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "فعل را با Partizip II درست جفت کنید",
+      "items": [
+        { "id": "i1", "text": "abschließen" },
+        { "id": "i2", "text": "erreichen" },
+        { "id": "i3", "text": "absolvieren" },
+        { "id": "i4", "text": "beenden" },
+        { "id": "i5", "text": "vollenden" },
+        { "id": "i6", "text": "fertigstellen" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "abgeschlossen" },
+        { "id": "m2", "text": "erreicht" },
+        { "id": "m3", "text": "absolviert" },
+        { "id": "m4", "text": "beendet" },
+        { "id": "m5", "text": "vollendet" },
+        { "id": "m6", "text": "fertiggestellt" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "من کتاب را خوانده خواهم بود.",
+      "sentenceTemplate": "{0} {1} das Buch gelesen haben.",
+      "options": ["werde", "Ich", "wird", "Du"],
+      "correctAnswers": [1, 0],
+      "correctTranslation": { "de": "Ich werde das Buch gelesen haben.", "fa": "من کتاب را خوانده خواهم بود." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "او به خانه رسیده خواهد بود.",
+      "sentenceTemplate": "Er {0} nach Hause gekommen {1}.",
+      "options": ["sein", "wird", "haben", "werde"],
+      "correctAnswers": [1, 0],
+      "correctTranslation": { "de": "Er wird nach Hause gekommen sein.", "fa": "او به خانه رسیده خواهد بود." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: برنامه‌های آینده",
+      "passage": {
+        "de": "Bis nächsten Sommer wird Maria viel erreicht haben. Sie wird ihr Studium absolviert haben und einen neuen Job gefunden haben. Bis dahin wird sie auch ihre Masterarbeit vollendet haben. Ihr Freund Tom wird bis dahin schon nach Berlin gezogen sein. Er wird dort eine neue Wohnung gefunden haben. Zusammen werden sie dann die Zukunft geplant haben. Maria hofft, dass sie bis Ende des Jahres alles abgeschlossen haben wird.",
+        "fa": "تا تابستان آینده ماریا خیلی چیزها به دست آورده خواهد بود. او تحصیلاتش را به اتمام رسانده خواهد بود و یک کار جدید پیدا کرده خواهد بود. تا آن زمان پایان‌نامه کارشناسی ارشدش را هم کامل کرده خواهد بود. دوستش تام تا آن موقع به برلین نقل مکان کرده خواهد بود. او آنجا یک آپارتمان جدید پیدا کرده خواهد بود. با هم آینده را برنامه‌ریزی کرده خواهند بود. ماریا امیدوار است که تا پایان سال همه چیز را به پایان رسانده باشد."
+      },
+      "questions": [
+        { "question": "ماریا تا کی تحصیلاتش را تمام کرده خواهد بود؟", "options": ["تا زمستان", "تا تابستان", "تا پاییز"], "correctIndex": 1, "explanation": "Bis nächsten Sommer wird Maria ihr Studium absolviert haben." },
+        { "question": "تام به کجا نقل مکان کرده خواهد بود؟", "options": ["مونیخ", "هامبورگ", "برلین"], "correctIndex": 2, "explanation": "Tom wird bis dahin schon nach Berlin gezogen sein." },
+        { "question": "ماریا چه چیزی کامل کرده خواهد بود؟", "options": ["پایان‌نامه", "کتاب", "مقاله"], "correctIndex": 0, "explanation": "Sie wird ihre Masterarbeit vollendet haben." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Das Versprechen", "fa": "قول" },
+      "characters": ["Mia", "Paul"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Mia und Paul sprechen über ihre Zukunftspläne.", "fa": "میا و پاول درباره برنامه‌های آینده‌شان صحبت می‌کنند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Paul",
+          "text": { "de": "Bis nächstes Jahr werde ich mein Studium abgeschlossen haben.", "fa": "تا سال آینده تحصیلاتم را به پایان رسانده خواهم بود." },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Mia",
+          "text": { "de": "Wirklich? Das ist toll!", "fa": "واقعا؟ این عالیه!" },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "پاول کی تحصیلاتش را تمام کرده خواهد بود؟",
+          "options": ["این ماه", "سال آینده", "دو سال دیگر"],
+          "correctIndex": 1,
+          "explanation": "پاول گفت: Bis nächstes Jahr werde ich mein Studium abgeschlossen haben."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Paul",
+          "text": { "de": "Und du? Was wirst du erreicht haben?", "fa": "و تو؟ تو به چه چیزی رسیده خواهی بود؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Mia",
+          "text": { "de": "Ich werde mein erstes Buch vollendet haben!", "fa": "من اولین کتابم را کامل کرده خواهم بود!" },
+          "mood": "excited"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Paul",
+          "text": { "de": "Super! Wirst du es dann auch veröffentlicht haben?", "fa": "عالی! آن وقت آن را منتشر هم کرده خواهی بود؟" },
+          "mood": "surprised"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Mia",
+          "text": { "de": "Ja, ich hoffe, ich werde alles fertiggestellt haben!", "fa": "بله، امیدوارم همه چیز را تکمیل کرده باشم!" },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "میا چه چیزی کامل کرده خواهد بود؟",
+          "options": ["یک فیلم", "یک کتاب", "یک آهنگ"],
+          "correctIndex": 1,
+          "explanation": "میا گفت: Ich werde mein erstes Buch vollendet haben!"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Beide freuen sich auf die Zukunft.", "fa": "هر دو مشتاق آینده هستند." }
+        },
+        {
+          "type": "question",
+          "question": "چه کسی کتاب خواهد نوشت؟",
+          "options": ["پاول", "میا", "هر دو"],
+          "correctIndex": 1,
+          "explanation": "میا گفت که اولین کتابش را کامل کرده خواهد بود."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع",
+      "instruction": "صرف درست werden را انتخاب کنید",
+      "questions": [
+        { "prompt": "ich ... gegessen haben", "left": "werde", "right": "wirst", "correctSide": "left" },
+        { "prompt": "du ... gekommen sein", "left": "werde", "right": "wirst", "correctSide": "right" },
+        { "prompt": "er ... gearbeitet haben", "left": "wird", "right": "werden", "correctSide": "left" },
+        { "prompt": "wir ... gefahren sein", "left": "wird", "right": "werden", "correctSide": "right" },
+        { "prompt": "ihr ... gelernt haben", "left": "werdet", "right": "werden", "correctSide": "left" },
+        { "prompt": "sie (جمع) ... angekommen sein", "left": "wird", "right": "werden", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich werde das Buch gelesen haben.",
+      "translation": "من کتاب را خوانده خواهم بود."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Er wird angekommen sein.",
+      "translation": "او رسیده خواهد بود."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Wir werden das Projekt beendet haben.",
+      "translation": "ما پروژه را به پایان رسانده خواهیم بود."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "ich ... (werden)", "options": ["werde", "wirst"], "correctAnswerIndex": 0 },
+        { "question": "du ... (werden)", "options": ["werde", "wirst"], "correctAnswerIndex": 1 },
+        { "question": "er ... (werden)", "options": ["wird", "werden"], "correctAnswerIndex": 0 },
+        { "question": "fahren با ... (haben یا sein)", "options": ["haben", "sein"], "correctAnswerIndex": 1 },
+        { "question": "essen با ... (haben یا sein)", "options": ["haben", "sein"], "correctAnswerIndex": 0 },
+        { "question": "kommen با ... (haben یا sein)", "options": ["haben", "sein"], "correctAnswerIndex": 1 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "abgeschlossen", "fa": "به پایان رسانده" },
+        { "de": "erreicht", "fa": "رسیده به" },
+        { "de": "absolviert", "fa": "به اتمام رسانده" },
+        { "de": "beendet", "fa": "پایان داده" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "Partizip II افعال این درس را پیدا کنید",
+      "targetWords": ["abgeschlossen", "erreicht", "absolviert", "beendet", "vollendet", "fertiggestellt"],
+      "gridSize": { "rows": 12, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "Partizip II درست را انتخاب کنید",
+      "words": [
+        { "de": "abschließen", "fa": "به پایان رساندن", "options": ["abgeschließt", "abgeschlossen", "abschließt", "abschließen"], "correctIndex": 1 },
+        { "de": "erreichen", "fa": "رسیدن به", "options": ["erreicht", "erreichen", "erreichet", "gereicht"], "correctIndex": 0 },
+        { "de": "beenden", "fa": "پایان دادن", "options": ["gebeendet", "beendet", "beenden", "beendeten"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما ساختار زمان آینده کامل (Futur II) را یاد گرفتید!",
+      "keyPoints": [
+        "ساختار Futur II: werden + Partizip II + haben یا sein",
+        "صرف werden: ich werde, du wirst, er wird, wir werden, ihr werdet, sie werden",
+        "haben یا sein همیشه در آخر جمله می‌آید",
+        "افعال حرکتی با sein: gehen, kommen, fahren, fliegen",
+        "افعال متعدی با haben: essen, lesen, schreiben",
+        "قوانین haben یا sein مثل Perfekt است"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "abschließen", "fa": "به پایان رساندن" } },
+        { "word": { "de": "erreichen", "fa": "رسیدن به، دست یافتن" } },
+        { "word": { "de": "absolvieren", "fa": "به اتمام رساندن، فارغ‌التحصیل شدن" } },
+        { "word": { "de": "beenden", "fa": "پایان دادن" } },
+        { "word": { "de": "vollenden", "fa": "کامل کردن، به اتمام رساندن" } },
+        { "word": { "de": "fertigstellen", "fa": "تکمیل کردن، به پایان رساندن" } }
+      ]
+    }
+  ]
+}

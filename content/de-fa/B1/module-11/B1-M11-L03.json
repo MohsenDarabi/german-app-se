@@ -1,0 +1,509 @@
+{
+  "id": "B1-M11-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Futur II - Abgeschlossene Handlungen in der Zukunft", "fa": "زمان آینده کامل - کارهای تمام‌شده در آینده" },
+  "description": "یاد بگیرید چگونه با Futur II درباره کارهایی صحبت کنید که تا یک زمان مشخص در آینده تمام خواهند شد",
+  "level": "B1",
+  "module": 11,
+  "lessonNumber": 3,
+  "totalSteps": 45,
+  "estimatedMinutes": 25,
+  "vocabulary": [
+    { "de": "bis morgen", "fa": "تا فردا", "grammar": { "pos": "adverb" } },
+    { "de": "bis nächste Woche", "fa": "تا هفته آینده", "grammar": { "pos": "adverb" } },
+    { "de": "bis dahin", "fa": "تا آن موقع", "grammar": { "pos": "adverb" } },
+    { "de": "in einer Stunde", "fa": "در یک ساعت دیگر", "grammar": { "pos": "adverb" } },
+    { "de": "bis zum Ende", "fa": "تا پایان", "grammar": { "pos": "adverb" } },
+    { "de": "spätestens", "fa": "حداکثر تا", "grammar": { "pos": "adverb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "Futur II - زمان آینده کامل",
+      "content": "**Futur II** برای بیان کارهایی استفاده می‌شود که **تا یک زمان مشخص در آینده تمام خواهند شد**.\n\n**ساختار:**\nwerden + Partizip II + haben یا sein\n\n**مثال:**\n- Bis morgen **werde** ich die Arbeit beendet **haben**.\n- In einer Stunde **wird** er angekommen **sein**.\n\n**کاربرد اصلی:**\nوقتی می‌خواهیم بگوییم کاری **قبل از یک مهلت** در آینده تمام می‌شود.\n\n**مقایسه با فارسی:**\nدر فارسی می‌گوییم: «تا فردا کار را تمام کرده‌ام» یا «تا فردا کار تمام شده است»",
+      "examples": [
+        { "de": "Bis morgen werde ich es gemacht haben.", "fa": "تا فردا آن را انجام داده‌ام." },
+        { "de": "In einer Stunde wird sie gegangen sein.", "fa": "در یک ساعت دیگر او رفته است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "bis morgen", "fa": "تا فردا" },
+      "example": { "text": { "de": "Bis morgen werde ich die E-Mail geschrieben haben.", "fa": "تا فردا ایمیل را نوشته‌ام." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "morgen",
+      "translation": "فردا",
+      "syllables": ["mor", "gen"],
+      "distractors": ["mar", "gan", "mur"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "bis nächste Woche", "fa": "تا هفته آینده" },
+      "example": { "text": { "de": "Bis nächste Woche wird das Projekt fertig sein.", "fa": "تا هفته آینده پروژه تمام شده است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "nächste",
+      "translation": "آینده",
+      "syllables": ["näch", "ste"],
+      "distractors": ["nach", "sta", "nech"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "bis dahin", "fa": "تا آن موقع" },
+      "example": { "text": { "de": "Bis dahin werde ich alles vorbereitet haben.", "fa": "تا آن موقع همه چیز را آماده کرده‌ام." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "dahin",
+      "translation": "آن موقع",
+      "syllables": ["da", "hin"],
+      "distractors": ["di", "han", "hun"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "ساختار Futur II چیست؟",
+      "options": [
+        "haben + Partizip II",
+        "werden + Partizip II + haben oder sein",
+        "sein + Partizip II",
+        "werden + Infinitiv"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! Futur II با werden + Partizip II + haben یا sein ساخته می‌شود.", "incorrect": "ساختار Futur II: werden + Partizip II + haben یا sein" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Bis morgen {0} ich das Buch gelesen haben.",
+      "options": ["werde", "habe", "bin", "war"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "در Futur II از werden استفاده می‌کنیم: Bis morgen werde ich das Buch gelesen haben." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "haben یا sein در Futur II",
+      "content": "**در Futur II هم مثل Perfekt:**\n\n**با haben:**\n- افعال متعدی (با مفعول مستقیم)\n- Ich werde das Buch gelesen **haben**.\n- Sie wird den Brief geschrieben **haben**.\n\n**با sein:**\n- افعال حرکتی: gehen, kommen, fahren, fliegen\n- افعال تغییر حالت: werden, sterben, aufwachen\n- Er wird angekommen **sein**.\n- Sie wird gegangen **sein**.\n\n**قاعده:**\nهمان افعالی که در Perfekt با sein می‌آیند، در Futur II هم با sein می‌آیند.",
+      "examples": [
+        { "de": "Bis 10 Uhr werde ich aufgestanden sein.", "fa": "تا ساعت ۱۰ بیدار شده‌ام." },
+        { "de": "Bis morgen wird er gearbeitet haben.", "fa": "تا فردا او کار کرده است." }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "برنامه‌ریزی پروژه",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Zwei Kollegen sprechen über ein Projekt.", "fa": "دو همکار درباره یک پروژه صحبت می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Bis wann wirst du den Bericht fertig haben?", "fa": "تا کی گزارش را تمام کرده‌ای؟" }, "mood": "neutral" },
+        { "speaker": "Max", "text": { "de": "Bis morgen werde ich ihn geschrieben haben.", "fa": "تا فردا آن را نوشته‌ام." }, "mood": "happy" },
+        { "speaker": "Anna", "text": { "de": "Super! Und die Präsentation?", "fa": "عالی! و ارائه؟" }, "mood": "excited" },
+        { "speaker": "Max", "text": { "de": "Die wird bis nächste Woche fertig sein.", "fa": "آن تا هفته آینده آماده شده است." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "ماکس تا کی گزارش را تمام کرده است؟", "options": ["امروز", "فردا", "هفته آینده"], "correctIndex": 1, "explanation": "ماکس گفت: Bis morgen werde ich ihn geschrieben haben" },
+        { "question": "ارائه تا کی آماده می‌شود؟", "options": ["فردا", "امروز", "هفته آینده"], "correctIndex": 2, "explanation": "ماکس گفت: Die wird bis nächste Woche fertig sein" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "in einer Stunde", "fa": "در یک ساعت دیگر" },
+      "example": { "text": { "de": "In einer Stunde wird der Zug angekommen sein.", "fa": "در یک ساعت دیگر قطار رسیده است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "Stunde",
+      "translation": "ساعت",
+      "syllables": ["Stun", "de"],
+      "distractors": ["Stan", "da", "Ston"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "bis zum Ende", "fa": "تا پایان" },
+      "example": { "text": { "de": "Bis zum Ende des Monats wird alles erledigt sein.", "fa": "تا پایان ماه همه چیز انجام شده است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "Ende",
+      "translation": "پایان",
+      "syllables": ["En", "de"],
+      "distractors": ["An", "da", "Un"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "In einer Stunde wird er angekommen {0}.",
+      "options": ["haben", "sein", "werden", "war"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "ankommen با sein می‌آید: Er wird angekommen sein." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Bis dahin wird sie die Prüfung bestanden {0}.",
+      "options": ["sein", "haben", "werden", "sind"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "bestehen با haben می‌آید: Sie wird die Prüfung bestanden haben." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["haben.", "gelesen", "das Buch", "ich", "werde", "Bis morgen"],
+      "correctOrder": [5, 4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Bis morgen werde ich das Buch gelesen haben.", "fa": "تا فردا کتاب را خوانده‌ام." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["sein.", "angekommen", "wird", "In einer Stunde", "er"],
+      "correctOrder": [3, 2, 4, 1, 0],
+      "correctSentence": { "de": "In einer Stunde wird er angekommen sein.", "fa": "در یک ساعت دیگر او رسیده است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در Futur II، افعال حرکتی مثل gehen و kommen با sein می‌آیند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! افعال حرکتی در Futur II هم مثل Perfekt با sein می‌آیند." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "Futur II برای کارهایی استفاده می‌شود که در گذشته تمام شده‌اند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! Futur II برای کارهایی است که تا یک زمان در آینده تمام خواهند شد." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s8",
+      "title": "عبارات زمانی با Futur II",
+      "content": "**عبارات زمانی رایج با Futur II:**\n\n**bis (تا):**\n- bis morgen - تا فردا\n- bis nächste Woche - تا هفته آینده\n- bis dahin - تا آن موقع\n- bis zum Ende - تا پایان\n\n**in (در):**\n- in einer Stunde - در یک ساعت دیگر\n- in zwei Tagen - در دو روز دیگر\n\n**spätestens (حداکثر تا):**\n- spätestens morgen - حداکثر تا فردا\n\n**ترتیب کلمات:**\nعبارت زمانی معمولا اول جمله می‌آید و فعل werden دوم.",
+      "examples": [
+        { "de": "Spätestens um 18 Uhr werde ich fertig sein.", "fa": "حداکثر تا ساعت ۱۸ تمام کرده‌ام." },
+        { "de": "In zwei Tagen wird alles vorbei sein.", "fa": "در دو روز دیگر همه چیز تمام شده است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "spätestens", "fa": "حداکثر تا" },
+      "example": { "text": { "de": "Spätestens morgen werde ich dich anrufen.", "fa": "حداکثر تا فردا بهت زنگ می‌زنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "spätestens",
+      "translation": "حداکثر تا",
+      "syllables": ["spä", "tes", "tens"],
+      "distractors": ["spa", "tas", "tans"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله در Futur II درست است؟",
+      "options": [
+        "Bis morgen ich werde das gemacht haben.",
+        "Bis morgen werde ich das gemacht haben.",
+        "Bis morgen werde ich das haben gemacht.",
+        "Bis morgen das werde ich gemacht haben."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! عبارت زمانی اول، سپس werden، فاعل، مفعول، Partizip II و در آخر haben یا sein.", "incorrect": "ترتیب درست: Bis morgen werde ich das gemacht haben." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "قبل از سفر",
+      "scene": {
+        "location": "home",
+        "description": { "de": "Ein Paar spricht über die Reisevorbereitungen.", "fa": "یک زوج درباره آمادگی سفر صحبت می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Hast du schon gepackt?", "fa": "چمدان بستی؟" }, "mood": "confused" },
+        { "speaker": "Tom", "text": { "de": "Noch nicht, aber bis heute Abend werde ich fertig sein.", "fa": "هنوز نه، اما تا امشب تمام کرده‌ام." }, "mood": "neutral" },
+        { "speaker": "Lisa", "text": { "de": "Gut. Spätestens um 8 Uhr müssen wir los.", "fa": "خوب. حداکثر تا ساعت ۸ باید راه بیفتیم." }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Bis dahin werde ich alles vorbereitet haben.", "fa": "تا آن موقع همه چیز را آماده کرده‌ام." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "تام تا کی چمدان را بسته است؟", "options": ["الان", "امشب", "فردا"], "correctIndex": 1, "explanation": "تام گفت: bis heute Abend werde ich fertig sein" },
+        { "question": "آنها حداکثر تا چه ساعتی باید راه بیفتند؟", "options": ["ساعت ۶", "ساعت ۷", "ساعت ۸"], "correctIndex": 2, "explanation": "لیزا گفت: Spätestens um 8 Uhr müssen wir los" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Bis nächste Woche {0} wir das Projekt abgeschlossen haben.",
+      "options": ["werden", "sind", "haben", "waren"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "در Futur II از werden استفاده می‌کنیم: werden + Partizip II + haben" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Spätestens morgen wird sie nach Hause {0} sein.",
+      "options": ["gefahren", "fahren", "gefahrt", "fährt"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Partizip II از fahren برابر است با gefahren." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["haben.", "abgeschlossen", "alles", "werde", "ich", "Bis zum Ende"],
+      "correctOrder": [5, 4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Bis zum Ende werde ich alles abgeschlossen haben.", "fa": "تا پایان همه چیز را تمام کرده‌ام." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جمله با Futur II، عبارت زمانی مثل bis morgen معمولا در اول جمله می‌آید.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! عبارت زمانی اول می‌آید و فعل werden در جایگاه دوم." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "عبارت زمانی آلمانی را با معنی فارسی جور کنید",
+      "items": [
+        { "id": "i1", "text": "bis morgen" },
+        { "id": "i2", "text": "bis nächste Woche" },
+        { "id": "i3", "text": "bis dahin" },
+        { "id": "i4", "text": "in einer Stunde" },
+        { "id": "i5", "text": "spätestens" },
+        { "id": "i6", "text": "bis zum Ende" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "تا فردا" },
+        { "id": "m2", "text": "تا هفته آینده" },
+        { "id": "m3", "text": "تا آن موقع" },
+        { "id": "m4", "text": "در یک ساعت دیگر" },
+        { "id": "m5", "text": "حداکثر تا" },
+        { "id": "m6", "text": "تا پایان" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "تا فردا کار را تمام کرده‌ام.",
+      "sentenceTemplate": "{0} {1} ich die Arbeit beendet {2}.",
+      "options": ["Bis morgen", "werde", "haben", "sein"],
+      "correctAnswers": [0, 1, 2],
+      "correctTranslation": { "de": "Bis morgen werde ich die Arbeit beendet haben.", "fa": "تا فردا کار را تمام کرده‌ام." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "در یک ساعت دیگر او رسیده است.",
+      "sentenceTemplate": "{0} wird er angekommen {1}.",
+      "options": ["In einer Stunde", "haben", "sein", "werden"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "In einer Stunde wird er angekommen sein.", "fa": "در یک ساعت دیگر او رسیده است." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: برنامه کاری سارا",
+      "passage": {
+        "de": "Sara hat viel zu tun. Bis morgen wird sie den Bericht geschrieben haben. Bis nächste Woche wird sie drei Meetings organisiert haben. Spätestens bis zum Ende des Monats wird sie das große Projekt abgeschlossen haben. In einer Stunde wird sie mit dem ersten Teil fertig sein. Sie ist sehr fleißig und bis dahin wird sie sicher alles geschafft haben.",
+        "fa": "سارا کار زیادی دارد. تا فردا گزارش را نوشته است. تا هفته آینده سه جلسه را سازماندهی کرده است. حداکثر تا پایان ماه پروژه بزرگ را تمام کرده است. در یک ساعت دیگر بخش اول را تمام کرده است. او خیلی سخت‌کوش است و تا آن موقع حتما همه چیز را انجام داده است."
+      },
+      "questions": [
+        { "question": "سارا تا کی گزارش را نوشته است؟", "options": ["امروز", "فردا", "هفته آینده"], "correctIndex": 1, "explanation": "در متن آمده: Bis morgen wird sie den Bericht geschrieben haben" },
+        { "question": "پروژه بزرگ تا کی تمام می‌شود؟", "options": ["هفته آینده", "فردا", "پایان ماه"], "correctIndex": 2, "explanation": "در متن آمده: bis zum Ende des Monats wird sie das große Projekt abgeschlossen haben" },
+        { "question": "سارا در یک ساعت دیگر چه کاری را تمام کرده است؟", "options": ["کل پروژه", "بخش اول", "گزارش"], "correctIndex": 1, "explanation": "در متن آمده: In einer Stunde wird sie mit dem ersten Teil fertig sein" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der wichtige Termin", "fa": "قرار مهم" },
+      "characters": ["Herr Müller", "Frau Schmidt"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Herr Müller hat einen wichtigen Termin um 15 Uhr.", "fa": "آقای مولر ساعت ۱۵ قرار مهمی دارد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Frau Schmidt",
+          "text": { "de": "Werden Sie pünktlich sein?", "fa": "به موقع می‌رسید؟" },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Herr Müller",
+          "text": { "de": "Ja, bis dahin werde ich alle Dokumente vorbereitet haben.", "fa": "بله، تا آن موقع همه مدارک را آماده کرده‌ام." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "آقای مولر تا کی مدارک را آماده کرده است؟",
+          "options": ["الان", "تا ساعت ۱۵", "فردا"],
+          "correctIndex": 1,
+          "explanation": "آقای مولر گفت: bis dahin - یعنی تا ساعت ۱۵"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Frau Schmidt",
+          "text": { "de": "Und der Bericht? Ist er fertig?", "fa": "و گزارش؟ آماده است؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Herr Müller",
+          "text": { "de": "In einer Stunde werde ich ihn beendet haben.", "fa": "در یک ساعت دیگر آن را تمام کرده‌ام." },
+          "mood": "excited"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Frau Schmidt",
+          "text": { "de": "Perfekt! Spätestens um 14 Uhr brauche ich eine Kopie.", "fa": "عالی! حداکثر تا ساعت ۱۴ به یک کپی نیاز دارم." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "گزارش تا کی تمام می‌شود؟",
+          "options": ["الان", "در یک ساعت دیگر", "فردا"],
+          "correctIndex": 1,
+          "explanation": "آقای مولر گفت: In einer Stunde werde ich ihn beendet haben"
+        }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Bis morgen werde ich es gemacht haben.",
+      "translation": "تا فردا آن را انجام داده‌ام."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "In einer Stunde wird er angekommen sein.",
+      "translation": "در یک ساعت دیگر او رسیده است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Spätestens morgen wird alles fertig sein.",
+      "translation": "حداکثر تا فردا همه چیز آماده است."
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع",
+      "instruction": "haben یا sein را انتخاب کنید!",
+      "questions": [
+        { "prompt": "gelesen ... (خوانده)", "left": "haben", "right": "sein", "correctSide": "left" },
+        { "prompt": "angekommen ... (رسیده)", "left": "haben", "right": "sein", "correctSide": "right" },
+        { "prompt": "geschrieben ... (نوشته)", "left": "haben", "right": "sein", "correctSide": "left" },
+        { "prompt": "gegangen ... (رفته)", "left": "haben", "right": "sein", "correctSide": "right" },
+        { "prompt": "gemacht ... (انجام داده)", "left": "haben", "right": "sein", "correctSide": "left" },
+        { "prompt": "gefahren ... (رانندگی کرده)", "left": "haben", "right": "sein", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "bis morgen", "options": ["تا فردا", "تا امروز", "تا دیروز"], "correctAnswerIndex": 0 },
+        { "question": "bis nächste Woche", "options": ["تا هفته گذشته", "تا هفته آینده", "این هفته"], "correctAnswerIndex": 1 },
+        { "question": "bis dahin", "options": ["از اینجا", "تا آن موقع", "از آنجا"], "correctAnswerIndex": 1 },
+        { "question": "in einer Stunde", "options": ["یک ساعت پیش", "در یک ساعت دیگر", "هر ساعت"], "correctAnswerIndex": 1 },
+        { "question": "spätestens", "options": ["زودترین", "حداکثر تا", "دیرترین"], "correctAnswerIndex": 1 },
+        { "question": "bis zum Ende", "options": ["از اول", "در وسط", "تا پایان"], "correctAnswerIndex": 2 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "bis morgen", "fa": "تا فردا" },
+        { "de": "bis dahin", "fa": "تا آن موقع" },
+        { "de": "in einer Stunde", "fa": "در یک ساعت دیگر" },
+        { "de": "spätestens", "fa": "حداکثر تا" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "عبارات زمانی این درس را پیدا کنید",
+      "targetWords": ["morgen", "nächste", "dahin", "Stunde", "spätestens"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Bis zum Ende des Jahres werden wir umgezogen {0}.",
+      "options": ["haben", "sein", "werden", "sind"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "umziehen با sein می‌آید: Wir werden umgezogen sein." }
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "bis morgen", "fa": "تا فردا", "options": ["تا دیروز", "تا فردا", "از فردا", "برای فردا"], "correctIndex": 1 },
+        { "de": "spätestens", "fa": "حداکثر تا", "options": ["زودتر از", "حداکثر تا", "دیرتر از", "قبل از"], "correctIndex": 1 },
+        { "de": "bis dahin", "fa": "تا آن موقع", "options": ["از آنجا", "تا اینجا", "تا آن موقع", "از آن موقع"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما Futur II را برای بیان کارهای تمام‌شده در آینده یاد گرفتید!",
+      "keyPoints": [
+        "Futur II: werden + Partizip II + haben یا sein",
+        "برای کارهایی که تا یک زمان در آینده تمام می‌شوند",
+        "با haben: افعال متعدی (lesen, schreiben, machen)",
+        "با sein: افعال حرکتی و تغییر حالت (gehen, kommen, fahren)",
+        "عبارات زمانی: bis morgen, bis nächste Woche, spätestens"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "bis morgen", "fa": "تا فردا" } },
+        { "word": { "de": "bis nächste Woche", "fa": "تا هفته آینده" } },
+        { "word": { "de": "bis dahin", "fa": "تا آن موقع" } },
+        { "word": { "de": "in einer Stunde", "fa": "در یک ساعت دیگر" } },
+        { "word": { "de": "bis zum Ende", "fa": "تا پایان" } },
+        { "word": { "de": "spätestens", "fa": "حداکثر تا" } }
+      ]
+    }
+  ]
+}

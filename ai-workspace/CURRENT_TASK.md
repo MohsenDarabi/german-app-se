@@ -6,58 +6,63 @@
 
 ## Active Task
 
-**Status**: `paused`
+**Status**: `in_progress`
 
-**Task**: Content Migration (content-migration.md workflow)
+**Task**: Create B1 Lessons (lesson by lesson, wait for user test)
 
-**Current**: Migrated L01-L04, remaining L05-L10 in Module 01, plus Modules 02-06
+**Current**: B1-M01-L01 (N-Deklination: Einführung) - ready for user testing
+
+---
+
+## ⚠️ IMPORTANT: Skip Audio Generation
+
+**User instruction (2026-02-05)**: Skip all audio generation for new lessons until further notice.
+
+When creating lessons:
+1. ✅ Create lesson JSON
+2. ✅ Validate lesson
+3. ✅ Register in modules.ts
+4. ✅ Regenerate asset registry
+5. ✅ Upload content to R2
+6. ❌ **SKIP** audio generation
+7. ❌ **SKIP** audio upload to R2
+8. ⏳ Wait for user to test before next lesson
 
 ---
 
 ## Last Completed
 
-**Task**: Migrate A1-M01-L04
+**Task**: A2 Curriculum Complete + B1-M01-L01 Created
 
-**Completed**: 2026-02-03
+**Completed**: 2026-02-05
 
 **Progress**:
-- ✅ A1-M01-L01: vocabulary grammar, feedbackTip, dialog questions, dictation
-- ✅ A1-M01-L02: vocabulary grammar, feedbackTip, dialog questions, dictation
-- ✅ A1-M01-L03: vocabulary grammar, feedbackTip, dialog questions, dictation
-- ✅ A1-M01-L04: vocabulary grammar (with verb conjugation), feedbackTip, dialog questions, dictation
+- ✅ A2-M18-L01: Genitiv Bildung (was already done)
+- ✅ A2-M18-L02: Genitiv mit Präpositionen (wegen, trotz, während, statt)
+- ✅ A2-M18-L03: Genitiv vs. von + Dativ
+- ✅ A2-M18-L04: Zusammenfassung
+- ✅ B1-M01-L01: N-Deklination Einführung (weak masculine nouns)
 
-**Result**:
-- Created L02: "Regelmäßige Verben" (Regular Verbs)
-- Vocabulary: machen, spielen, lernen, arbeiten, heute, jeden Tag
-- 24 steps with verb conjugation patterns
-- Key grammar: -e (ich), -st (du), -t (er/sie/es), arbeiten exception
-- All validation rules pass
-- Audio generated (40 texts)
-
-**Key Files Changed**:
-- `content/de-fa/A1/module-02/A1-M02-L02.json` - NEW
-- `apps/web/static/audio/A1-M02-L02/` - Audio files
-- `apps/web/src/lib/data/modules.ts` - Added L02
+**A2 Total**: 18 modules × 4 lessons = 72 lessons
+**B1 Started**: Module 1 (N-Deklination), Lesson 1 created
 
 ---
 
-## Pipeline Status
+## B1 Module 1 Plan: N-Deklination
 
-| Step | Status | Notes |
-|------|--------|-------|
-| Lesson JSONs | 10 lessons | Module 01 complete! |
-| Validation | 30 rules | All pass |
-| Audio | Complete | All 10 lessons have audio |
-| Multimedia Tasks | 23 tasks | Pending for colleague |
+| Lesson | Topic | Status |
+|--------|-------|--------|
+| B1-M01-L01 | Einführung (Introduction) | ✅ Ready for test |
+| B1-M01-L02 | Weitere Beispiele (More examples) | Pending |
+| B1-M01-L03 | Ausnahmen (Exceptions) | Pending |
+| B1-M01-L04 | Zusammenfassung (Summary) | Pending |
 
 ---
 
-## Session History (last 5)
+## Session History
 
 | Date | Task | Result |
 |------|------|--------|
-| 2026-01-06 | Create A1-M01-L10 | Completed - Phone numbers: null, Handy, anrufen |
-| 2026-01-06 | Create A1-M01-L09 | Completed - Numbers 21-100 |
-| 2026-01-06 | Create A1-M01-L08 | Completed - Numbers 11-20 |
-| 2026-01-06 | Fix 3-column tables | Completed - Grammar tips now support 3-column tables |
-| 2026-01-06 | Create A1-M01-L07 | Completed - Numbers 1-10 |
+| 2026-02-05 | Create B1-M01-L01 | Completed - N-Deklination intro |
+| 2026-02-05 | Complete A2 Module 18 | Completed - 3 lessons (L02-L04) |
+| 2026-02-05 | A2 Curriculum Plan | Completed - Option 1 selected |

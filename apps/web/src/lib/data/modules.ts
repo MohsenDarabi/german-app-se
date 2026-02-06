@@ -1345,6 +1345,37 @@ const DE_FA_B1_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/B1/B1-M10-L04"
       }
     ]
+  },
+  {
+    id: "module-11",
+    title: "بخش ۱۱: آینده کامل (Futur II)",
+    level: "B1",
+    lessons: [
+      {
+        id: "B1-M11-L01",
+        title: "Futur II: Bildung - ساختار",
+        description: "یاد بگیرید چطور Futur II را بسازید: werden + Partizip II + haben/sein.",
+        path: "/learn/de-fa/B1/B1-M11-L01"
+      },
+      {
+        id: "B1-M11-L02",
+        title: "Vermutungen über die Vergangenheit - حدس درباره گذشته",
+        description: "یاد بگیرید چطور با Futur II درباره گذشته حدس بزنید: Er wird gegangen sein.",
+        path: "/learn/de-fa/B1/B1-M11-L02"
+      },
+      {
+        id: "B1-M11-L03",
+        title: "Abgeschlossene Handlungen - کارهای تمام‌شده در آینده",
+        description: "یاد بگیرید چطور بگویید کاری تا زمان مشخصی تمام شده: Bis morgen werde ich es gemacht haben.",
+        path: "/learn/de-fa/B1/B1-M11-L03"
+      },
+      {
+        id: "B1-M11-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل Futur II: ساختار، حدس درباره گذشته و کارهای تمام‌شده در آینده.",
+        path: "/learn/de-fa/B1/B1-M11-L04"
+      }
+    ]
   }
 ];
 
