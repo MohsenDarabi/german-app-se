@@ -1,0 +1,523 @@
+{
+  "id": "B1-M10-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Verben mit Dativ-Präpositionen", "fa": "افعال با حروف اضافه داتیو" },
+  "description": "یاد بگیرید چگونه از افعالی که با حروف اضافه داتیو می‌آیند استفاده کنید: träumen von، sprechen mit، gehören zu، anfangen mit، handeln von، leiden unter. این ترکیبات ثابت هستند!",
+  "level": "B1",
+  "module": 10,
+  "lessonNumber": 2,
+  "totalSteps": 45,
+  "estimatedMinutes": 25,
+  "vocabulary": [
+    { "de": "träumen von (+Dat)", "fa": "رویا دیدن درباره", "grammar": { "pos": "verb", "type": "verb-preposition" } },
+    { "de": "sprechen mit (+Dat)", "fa": "صحبت کردن با", "grammar": { "pos": "verb", "type": "verb-preposition" } },
+    { "de": "gehören zu (+Dat)", "fa": "تعلق داشتن به", "grammar": { "pos": "verb", "type": "verb-preposition" } },
+    { "de": "anfangen mit (+Dat)", "fa": "شروع کردن با", "grammar": { "pos": "verb", "type": "verb-preposition" } },
+    { "de": "handeln von (+Dat)", "fa": "درباره چیزی بودن", "grammar": { "pos": "verb", "type": "verb-preposition" } },
+    { "de": "leiden unter (+Dat)", "fa": "رنج بردن از", "grammar": { "pos": "verb", "type": "verb-preposition" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "افعال با حروف اضافه داتیو چیست؟",
+      "content": "**Verben mit Dativ-Präpositionen (افعال با حروف اضافه داتیو)**\n\nبرخی افعال آلمانی همیشه با یک حرف اضافه خاص می‌آیند. این حرف اضافه تعیین می‌کند که اسم بعد از آن در چه حالتی باشد.\n\n**امروز یاد می‌گیریم:**\n- träumen **von** = رویا دیدن درباره\n- sprechen **mit** = صحبت کردن با\n- gehören **zu** = تعلق داشتن به\n- anfangen **mit** = شروع کردن با\n- handeln **von** = درباره چیزی بودن\n- leiden **unter** = رنج بردن از\n\n**نکته مهم:** این ترکیبات ثابت هستند و باید حفظ شوند!",
+      "examples": [
+        { "de": "Ich träume von einer Reise.", "fa": "من رویای یک سفر را دارم." },
+        { "de": "Er spricht mit seiner Mutter.", "fa": "او با مادرش صحبت می‌کند." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "träumen von (+Dat)", "fa": "رویا دیدن درباره" },
+      "example": { "text": { "de": "Ich träume von einem neuen Auto.", "fa": "من رویای یک ماشین جدید را دارم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "träumen",
+      "translation": "رویا دیدن",
+      "syllables": ["träu", "men"],
+      "distractors": ["treu", "mon", "mun"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "sprechen mit (+Dat)", "fa": "صحبت کردن با" },
+      "example": { "text": { "de": "Ich möchte mit dir sprechen.", "fa": "می‌خواهم با تو صحبت کنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "sprechen",
+      "translation": "صحبت کردن",
+      "syllables": ["spre", "chen"],
+      "distractors": ["spra", "kon", "kan"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s4",
+      "title": "ترتیب کلمات در جمله",
+      "content": "**ترتیب کلمات:**\n\nدر جمله اصلی، فعل در جایگاه دوم قرار می‌گیرد و حرف اضافه با متمم آن در انتها:\n\n**ساختار:**\n```\nSubjekt + Verb + ... + Präposition + Dativ\n```\n\n**مثال‌ها:**\n- Ich **träume** von einer Reise.\n- Er **spricht** mit seinem Freund.\n\n**در جمله سوالی:**\n- Von wem träumst du? (رویای چه کسی را داری؟)\n- Mit wem sprichst du? (با چه کسی صحبت می‌کنی؟)\n\n**نکته:** برای اشخاص از wem و برای اشیا از was استفاده می‌شود.",
+      "examples": [
+        { "de": "Von wem träumst du?", "fa": "رویای چه کسی را داری؟" },
+        { "de": "Mit wem sprichst du?", "fa": "با چه کسی صحبت می‌کنی؟" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "gehören zu (+Dat)", "fa": "تعلق داشتن به" },
+      "example": { "text": { "de": "Diese Stadt gehört zu Bayern.", "fa": "این شهر به بایرن تعلق دارد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "gehören",
+      "translation": "تعلق داشتن",
+      "syllables": ["ge", "hö", "ren"],
+      "distractors": ["ga", "ho", "ron"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام حرف اضافه با فعل träumen می‌آید؟",
+      "options": [
+        "mit",
+        "von",
+        "zu",
+        "unter"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! träumen von = رویا دیدن درباره", "incorrect": "träumen von = رویا دیدن درباره" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "Ich spreche ___ meiner Schwester. کدام حرف اضافه درست است؟",
+      "options": [
+        "von",
+        "zu",
+        "mit",
+        "unter"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "درست! sprechen mit = صحبت کردن با", "incorrect": "sprechen mit = صحبت کردن با" }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "anfangen mit (+Dat)", "fa": "شروع کردن با" },
+      "example": { "text": { "de": "Wir fangen mit der Arbeit an.", "fa": "ما با کار شروع می‌کنیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "anfangen",
+      "translation": "شروع کردن",
+      "syllables": ["an", "fan", "gen"],
+      "distractors": ["on", "fun", "gon"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "حرف اضافه مناسب را انتخاب کنید",
+      "sentence": "Ich träume {0} einer langen Reise.",
+      "options": ["mit", "von", "zu", "unter"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "träumen von = رویا دیدن درباره. Ich träume von einer langen Reise." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "حرف اضافه مناسب را انتخاب کنید",
+      "sentence": "Er spricht {0} seinem Chef.",
+      "options": ["von", "mit", "zu", "unter"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "sprechen mit = صحبت کردن با. Er spricht mit seinem Chef." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "da-Komposita و wo-Komposita",
+      "content": "**برای اشیا از da-Komposita استفاده می‌کنیم:**\n\nبه جای es با حرف اضافه، از da + حرف اضافه استفاده می‌کنیم:\n\n**مثال‌ها:**\n- Ich träume **davon**. (نه: von es)\n- Er fängt **damit** an. (نه: mit es)\n- Das gehört **dazu**. (نه: zu es)\n\n**برای سوال از wo + حرف اضافه:**\n- **Wovon** träumst du? (رویای چه چیزی را داری؟)\n- **Womit** fängst du an? (با چه شروع می‌کنی؟)\n- **Wozu** gehört das? (این به چه تعلق دارد؟)\n\n**نکته:** اگر حرف اضافه با حرف صدادار شروع شود، r اضافه می‌شود:\n- dar**unter**, wor**unter**",
+      "examples": [
+        { "de": "Ich träume davon, nach Japan zu reisen.", "fa": "من رویای سفر به ژاپن را دارم." },
+        { "de": "Wovon handelt das Buch?", "fa": "کتاب درباره چیست؟" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "handeln von (+Dat)", "fa": "درباره چیزی بودن" },
+      "example": { "text": { "de": "Der Film handelt von einer Liebesgeschichte.", "fa": "فیلم درباره یک داستان عاشقانه است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "handeln",
+      "translation": "درباره چیزی بودن",
+      "syllables": ["han", "deln"],
+      "distractors": ["hun", "don", "daln"]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "leiden unter (+Dat)", "fa": "رنج بردن از" },
+      "example": { "text": { "de": "Viele Menschen leiden unter Stress.", "fa": "بسیاری از مردم از استرس رنج می‌برند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "leiden",
+      "translation": "رنج بردن",
+      "syllables": ["lei", "den"],
+      "distractors": ["lau", "don", "din"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "حرف اضافه مناسب را انتخاب کنید",
+      "sentence": "Diese Aufgabe gehört {0} dem Projekt.",
+      "options": ["mit", "von", "zu", "unter"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "gehören zu = تعلق داشتن به. Diese Aufgabe gehört zu dem Projekt." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "حرف اضافه مناسب را انتخاب کنید",
+      "sentence": "Wir fangen {0} dem Essen an.",
+      "options": ["von", "zu", "unter", "mit"],
+      "correctAnswers": [3],
+      "feedback": { "explanation": "anfangen mit = شروع کردن با. Wir fangen mit dem Essen an." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در کافه",
+      "scene": {
+        "location": "Cafe",
+        "description": { "de": "Im Cafe", "fa": "در کافه" }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Wovon träumst du?", "fa": "رویای چه چیزی را داری؟" }, "mood": "happy" },
+        { "speaker": "Max", "text": { "de": "Ich träume von einer Weltreise!", "fa": "من رویای یک سفر دور دنیا را دارم!" }, "mood": "excited" },
+        { "speaker": "Anna", "text": { "de": "Das klingt toll! Und womit fängst du an?", "fa": "عالی به نظر می‌رسد! و با چه شروع می‌کنی؟" }, "mood": "surprised" },
+        { "speaker": "Max", "text": { "de": "Ich fange mit Europa an.", "fa": "من با اروپا شروع می‌کنم." }, "mood": "neutral" },
+        { "speaker": "Anna", "text": { "de": "Mit wem sprichst du darüber?", "fa": "با چه کسی درباره‌اش صحبت می‌کنی؟" }, "mood": "neutral" },
+        { "speaker": "Max", "text": { "de": "Ich spreche mit meiner Familie.", "fa": "با خانواده‌ام صحبت می‌کنم." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "ماکس رویای چه چیزی را دارد؟", "options": ["یک خانه جدید", "یک سفر دور دنیا", "یک ماشین"], "correctIndex": 1, "explanation": "ماکس گفت: Ich träume von einer Weltreise!" },
+        { "question": "ماکس با چه شروع می‌کند؟", "options": ["آسیا", "آفریقا", "اروپا"], "correctIndex": 2, "explanation": "ماکس گفت: Ich fange mit Europa an." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["träume", "einer", "von", "Reise", "Ich"],
+      "correctOrder": [4, 0, 2, 1, 3],
+      "correctSentence": { "de": "Ich träume von einer Reise.", "fa": "من رویای یک سفر را دارم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["mit", "Sie", "wem", "sprechen"],
+      "correctOrder": [2, 0, 3, 1],
+      "correctSentence": { "de": "Mit wem sprechen Sie?", "fa": "با چه کسی صحبت می‌کنید؟" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["dem", "fangen", "Wir", "Unterricht", "an", "mit"],
+      "correctOrder": [2, 1, 5, 0, 3, 4],
+      "correctSentence": { "de": "Wir fangen mit dem Unterricht an.", "fa": "ما با درس شروع می‌کنیم." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "träumen von همیشه با حالت داتیو می‌آید.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! träumen von + Dativ: Ich träume von einer Reise (یک سفر در داتیو)." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای اشیا به جای von es از davon استفاده می‌کنیم.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! برای اشیا از da + حرف اضافه استفاده می‌کنیم: davon، damit، dazu." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "sprechen mit یعنی صحبت کردن درباره چیزی.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! sprechen mit = صحبت کردن با کسی. sprechen über = صحبت کردن درباره چیزی." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "sentence": "Der Film handelt {0} einer wahren Geschichte.",
+      "options": ["mit", "zu", "von", "unter"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "handeln von = درباره چیزی بودن. Der Film handelt von einer wahren Geschichte." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "sentence": "Viele Leute leiden {0} Kopfschmerzen.",
+      "options": ["von", "mit", "zu", "unter"],
+      "correctAnswers": [3],
+      "feedback": { "explanation": "leiden unter = رنج بردن از. Viele Leute leiden unter Kopfschmerzen." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "درباره یک کتاب",
+      "scene": {
+        "location": "library",
+        "description": { "de": "In der Bibliothek", "fa": "در کتابخانه" }
+      },
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Wovon handelt dieses Buch?", "fa": "این کتاب درباره چیست؟" }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Es handelt von einem Abenteuer.", "fa": "درباره یک ماجراجویی است." }, "mood": "excited" },
+        { "speaker": "Lisa", "text": { "de": "Zu welchem Genre gehört es?", "fa": "به کدام ژانر تعلق دارد؟" }, "mood": "happy" },
+        { "speaker": "Tom", "text": { "de": "Es gehört zu den Krimis.", "fa": "به جنایی‌ها تعلق دارد." }, "mood": "neutral" },
+        { "speaker": "Lisa", "text": { "de": "Leidest du nicht unter Langeweile beim Lesen?", "fa": "هنگام خواندن از کسالت رنج نمی‌بری؟" }, "mood": "confused" },
+        { "speaker": "Tom", "text": { "de": "Nein, nie! Ich träume davon, alle Bücher zu lesen!", "fa": "نه، هرگز! رویای خواندن همه کتاب‌ها را دارم!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "کتاب درباره چیست؟", "options": ["یک عاشقانه", "یک ماجراجویی", "یک سفر"], "correctIndex": 1, "explanation": "تام گفت: Es handelt von einem Abenteuer." },
+        { "question": "کتاب به کدام ژانر تعلق دارد؟", "options": ["عاشقانه", "جنایی", "علمی تخیلی"], "correctIndex": 1, "explanation": "تام گفت: Es gehört zu den Krimis." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "فعل و حرف اضافه را با ترجمه فارسی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "träumen von" },
+        { "id": "i2", "text": "sprechen mit" },
+        { "id": "i3", "text": "gehören zu" },
+        { "id": "i4", "text": "anfangen mit" },
+        { "id": "i5", "text": "handeln von" },
+        { "id": "i6", "text": "leiden unter" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "رویا دیدن درباره" },
+        { "id": "m2", "text": "صحبت کردن با" },
+        { "id": "m3", "text": "تعلق داشتن به" },
+        { "id": "m4", "text": "شروع کردن با" },
+        { "id": "m5", "text": "درباره چیزی بودن" },
+        { "id": "m6", "text": "رنج بردن از" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "من رویای یک خانه جدید را دارم.",
+      "sentenceTemplate": "Ich {0} {1} einem neuen Haus.",
+      "options": ["träume", "von", "mit", "spreche"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Ich träume von einem neuen Haus.", "fa": "من رویای یک خانه جدید را دارم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "او با دوستش صحبت می‌کند.",
+      "sentenceTemplate": "Er {0} {1} seinem Freund.",
+      "options": ["spricht", "mit", "von", "träumt"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Er spricht mit seinem Freund.", "fa": "او با دوستش صحبت می‌کند." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: رویاها و واقعیت",
+      "passage": {
+        "de": "Maria träumt von einem Leben in Spanien. Sie spricht oft mit ihrer Familie darüber. Ihr Bruder gehört zu den Menschen, die sie am meisten unterstützen. Er sagt: Fang mit einem Praktikum an! Das Buch, das Maria gerade liest, handelt von einer Frau, die nach Barcelona gezogen ist. Maria leidet unter Heimweh, aber ihre Träume sind stärker. Wovon träumst du?",
+        "fa": "ماریا رویای زندگی در اسپانیا را دارد. او اغلب با خانواده‌اش درباره‌اش صحبت می‌کند. برادرش جزو افرادی است که بیشتر از همه از او حمایت می‌کنند. او می‌گوید: با یک کارآموزی شروع کن! کتابی که ماریا الان می‌خواند درباره زنی است که به بارسلونا نقل مکان کرده است. ماریا از دلتنگی رنج می‌برد، اما رویاهایش قوی‌ترند. تو رویای چه چیزی را داری؟"
+      },
+      "questions": [
+        { "question": "ماریا رویای چه چیزی را دارد؟", "options": ["زندگی در آلمان", "زندگی در اسپانیا", "زندگی در ایتالیا"], "correctIndex": 1, "explanation": "Maria träumt von einem Leben in Spanien." },
+        { "question": "برادر ماریا چه پیشنهادی می‌دهد؟", "options": ["سفر کردن", "شروع با کارآموزی", "کتاب خواندن"], "correctIndex": 1, "explanation": "Er sagt: Fang mit einem Praktikum an!" },
+        { "question": "ماریا از چه چیزی رنج می‌برد؟", "options": ["دلتنگی", "سرما", "استرس"], "correctIndex": 0, "explanation": "Maria leidet unter Heimweh." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der große Traum", "fa": "رویای بزرگ" },
+      "characters": ["Stefan", "Claudia"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Stefan und Claudia sitzen in einem Cafe und reden über ihre Zukunft.", "fa": "استفان و کلودیا در یک کافه نشسته‌اند و درباره آینده‌شان صحبت می‌کنند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Stefan",
+          "text": { "de": "Wovon träumst du am meisten?", "fa": "بیشتر از همه رویای چه چیزی را داری؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Claudia",
+          "text": { "de": "Ich träume von einem eigenen Restaurant.", "fa": "من رویای یک رستوران خودم را دارم." },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "کلودیا رویای چه چیزی را دارد؟",
+          "options": ["یک خانه", "یک رستوران", "یک سفر"],
+          "correctIndex": 1,
+          "explanation": "کلودیا گفت: Ich träume von einem eigenen Restaurant."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Stefan",
+          "text": { "de": "Mit wem sprichst du darüber?", "fa": "با چه کسی درباره‌اش صحبت می‌کنی؟" },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Claudia",
+          "text": { "de": "Ich spreche mit meinem Vater. Er gehört zu meinen größten Unterstützern.", "fa": "با پدرم صحبت می‌کنم. او جزو بزرگترین حامیان من است." },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Stefan",
+          "text": { "de": "Und womit fängst du an?", "fa": "و با چه شروع می‌کنی؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Claudia",
+          "text": { "de": "Ich fange mit einem Kochkurs an!", "fa": "با یک کلاس آشپزی شروع می‌کنم!" },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "کلودیا با چه شروع می‌کند؟",
+          "options": ["یک سفر", "یک کلاس آشپزی", "یک کتاب"],
+          "correctIndex": 1,
+          "explanation": "کلودیا گفت: Ich fange mit einem Kochkurs an!"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "träumen von", "left": "رویا دیدن درباره", "right": "صحبت کردن با", "correctSide": "left" },
+        { "prompt": "sprechen mit", "left": "شروع کردن با", "right": "صحبت کردن با", "correctSide": "right" },
+        { "prompt": "gehören zu", "left": "تعلق داشتن به", "right": "رنج بردن از", "correctSide": "left" },
+        { "prompt": "anfangen mit", "left": "درباره چیزی بودن", "right": "شروع کردن با", "correctSide": "right" },
+        { "prompt": "handeln von", "left": "درباره چیزی بودن", "right": "تعلق داشتن به", "correctSide": "left" },
+        { "prompt": "leiden unter", "left": "صحبت کردن با", "right": "رنج بردن از", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich träume von einer Reise.",
+      "translation": "من رویای یک سفر را دارم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Er spricht mit seinem Freund.",
+      "translation": "او با دوستش صحبت می‌کند."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Das Buch handelt von einer Geschichte.",
+      "translation": "کتاب درباره یک داستان است."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "träumen ___", "options": ["von", "mit"], "correctAnswerIndex": 0 },
+        { "question": "sprechen ___", "options": ["zu", "mit"], "correctAnswerIndex": 1 },
+        { "question": "gehören ___", "options": ["zu", "von"], "correctAnswerIndex": 0 },
+        { "question": "anfangen ___", "options": ["unter", "mit"], "correctAnswerIndex": 1 },
+        { "question": "handeln ___", "options": ["von", "mit"], "correctAnswerIndex": 0 },
+        { "question": "leiden ___", "options": ["unter", "zu"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "träumen von", "fa": "رویا دیدن درباره" },
+        { "de": "sprechen mit", "fa": "صحبت کردن با" },
+        { "de": "gehören zu", "fa": "تعلق داشتن به" },
+        { "de": "anfangen mit", "fa": "شروع کردن با" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "افعال این درس را پیدا کنید",
+      "targetWords": ["träumen", "sprechen", "gehören", "anfangen", "handeln", "leiden"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "حرف اضافه درست را انتخاب کنید",
+      "words": [
+        { "de": "träumen ___", "fa": "رویا دیدن", "options": ["mit", "von", "zu", "unter"], "correctIndex": 1 },
+        { "de": "leiden ___", "fa": "رنج بردن", "options": ["von", "mit", "zu", "unter"], "correctIndex": 3 },
+        { "de": "gehören ___", "fa": "تعلق داشتن", "options": ["von", "mit", "zu", "unter"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما افعال با حروف اضافه داتیو را یاد گرفتید!",
+      "keyPoints": [
+        "träumen von = رویا دیدن درباره",
+        "sprechen mit = صحبت کردن با",
+        "gehören zu = تعلق داشتن به",
+        "anfangen mit = شروع کردن با",
+        "handeln von = درباره چیزی بودن",
+        "leiden unter = رنج بردن از",
+        "برای اشیا از da-Komposita استفاده کنید: davon، damit، dazu",
+        "برای سوال از wo-Komposita استفاده کنید: wovon، womit، wozu"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "träumen von", "fa": "رویا دیدن درباره" } },
+        { "word": { "de": "sprechen mit", "fa": "صحبت کردن با" } },
+        { "word": { "de": "gehören zu", "fa": "تعلق داشتن به" } },
+        { "word": { "de": "anfangen mit", "fa": "شروع کردن با" } },
+        { "word": { "de": "handeln von", "fa": "درباره چیزی بودن" } },
+        { "word": { "de": "leiden unter", "fa": "رنج بردن از" } }
+      ]
+    }
+  ]
+}

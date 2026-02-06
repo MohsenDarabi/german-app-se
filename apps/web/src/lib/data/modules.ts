@@ -1314,6 +1314,37 @@ const DE_FA_B1_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/B1/B1-M09-L04"
       }
     ]
+  },
+  {
+    id: "module-10",
+    title: "بخش ۱۰: افعال با حروف اضافه (Verben mit Präpositionen)",
+    level: "B1",
+    lessons: [
+      {
+        id: "B1-M10-L01",
+        title: "Verben mit Akkusativ-Präpositionen - افعال با آکوزاتیو",
+        description: "یاد بگیرید افعال با حروف اضافه آکوزاتیو: warten auf, denken an, sich freuen auf.",
+        path: "/learn/de-fa/B1/B1-M10-L01"
+      },
+      {
+        id: "B1-M10-L02",
+        title: "Verben mit Dativ-Präpositionen - افعال با داتیو",
+        description: "یاد بگیرید افعال با حروف اضافه داتیو: träumen von, sprechen mit, gehören zu.",
+        path: "/learn/de-fa/B1/B1-M10-L02"
+      },
+      {
+        id: "B1-M10-L03",
+        title: "Reflexive Verben mit Präpositionen - افعال انعکاسی",
+        description: "یاد بگیرید افعال انعکاسی با حروف اضافه: sich interessieren für, sich freuen über.",
+        path: "/learn/de-fa/B1/B1-M10-L03"
+      },
+      {
+        id: "B1-M10-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل افعال با حروف اضافه: آکوزاتیو، داتیو و افعال انعکاسی.",
+        path: "/learn/de-fa/B1/B1-M10-L04"
+      }
+    ]
   }
 ];
 

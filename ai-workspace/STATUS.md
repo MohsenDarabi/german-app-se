@@ -8,7 +8,7 @@
 
 **Create B1 lessons - lesson by lesson, wait for user test after each**
 
-Current: `B1-M09` (Nominalisierung) - **MODULE COMPLETE - READY FOR USER TEST**
+Current: `B1-M10` (Verben mit Präpositionen) - **MODULE COMPLETE - READY FOR USER TEST**
 
 ---
 
@@ -26,7 +26,7 @@ Current: `B1-M09` (Nominalisierung) - **MODULE COMPLETE - READY FOR USER TEST**
 |-------|---------|---------|--------|
 | A1 | 14 | 56+ | Complete |
 | A2 | 18 | 72 | **Complete** ✅ |
-| B1 | 9 | 36 | Module 9 complete |
+| B1 | 10 | 40 | Module 10 complete |
 
 ### A2 Completion (2026-02-05)
 
@@ -66,8 +66,9 @@ Current: `B1-M09` (Nominalisierung) - **MODULE COMPLETE - READY FOR USER TEST**
 | M07 | Präpositionaladverbien | 4/4 | ✅ Complete |
 | M08 | Passiv Erweiterung | 4/4 | ✅ Complete |
 | M09 | Nominalisierung | 4/4 | ✅ Complete |
+| M10 | Verben mit Präpositionen | 4/4 | ✅ Complete |
 
-**Total B1: 36 lessons**
+**Total B1: 40 lessons**
 
 ---
 
@@ -170,10 +171,23 @@ Current: `B1-M09` (Nominalisierung) - **MODULE COMPLETE - READY FOR USER TEST**
 
 ---
 
+## B1 Module 10: Verben mit Präpositionen (Verbs with Fixed Prepositions)
+
+| Lesson | Title | Status |
+|--------|-------|--------|
+| B1-M10-L01 | Verben mit Akkusativ-Präpositionen (warten auf, denken an) | ✅ Complete |
+| B1-M10-L02 | Verben mit Dativ-Präpositionen (träumen von, sprechen mit) | ✅ Complete |
+| B1-M10-L03 | Reflexive Verben mit Präpositionen (sich interessieren für) | ✅ Complete |
+| B1-M10-L04 | Zusammenfassung | ✅ Complete |
+
+---
+
 ## Recent Changes
 
 | Date | Change |
 |------|--------|
+| 2026-02-06 | **B1 Module 10 (Verben mit Präpositionen) COMPLETE - 4 lessons!** |
+| 2026-02-06 | Created B1-M10-L01 to L04 in parallel |
 | 2026-02-06 | **B1 Module 9 (Nominalisierung) COMPLETE - 4 lessons!** |
 | 2026-02-06 | Created B1-M09-L01 to L04 in parallel |
 | 2026-02-06 | **B1 Module 8 (Passiv Erweiterung) COMPLETE - 4 lessons!** |
@@ -217,6 +231,7 @@ Current: `B1-M09` (Nominalisierung) - **MODULE COMPLETE - READY FOR USER TEST**
 8. [x] Complete B1 Module 7 (Präpositionaladverbien) - 4 lessons
 9. [x] Complete B1 Module 8 (Passiv Erweiterung) - 4 lessons
 10. [x] Complete B1 Module 9 (Nominalisierung) - 4 lessons
-11. [ ] **User tests B1-M09 lessons**
-12. [ ] Plan B1 Module 10 topic
-13. [ ] Continue B1 curriculum development
+11. [x] Complete B1 Module 10 (Verben mit Präpositionen) - 4 lessons
+12. [ ] **User tests B1-M10 lessons**
+13. [ ] Plan B1 Module 11 topic
+14. [ ] Continue B1 curriculum development

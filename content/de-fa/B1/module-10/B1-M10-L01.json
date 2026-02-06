@@ -1,0 +1,535 @@
+{
+  "id": "B1-M10-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Verben mit Akkusativ-Präpositionen", "fa": "افعال با حروف اضافه مفعولی" },
+  "description": "یاد بگیرید چگونه افعال آلمانی با حروف اضافه ثابت استفاده می‌شوند: warten auf، denken an، sich freuen auf. این ترکیب‌ها همیشه با حالت Akkusativ می‌آیند.",
+  "level": "B1",
+  "module": 10,
+  "lessonNumber": 1,
+  "totalSteps": 45,
+  "estimatedMinutes": 25,
+  "vocabulary": [
+    { "de": "warten auf (+Akk)", "fa": "منتظر چیزی بودن", "grammar": { "pos": "verb", "case": "accusative" } },
+    { "de": "denken an (+Akk)", "fa": "فکر کردن به", "grammar": { "pos": "verb", "case": "accusative" } },
+    { "de": "sich freuen auf (+Akk)", "fa": "مشتاق بودن به", "grammar": { "pos": "verb", "case": "accusative" } },
+    { "de": "bitten um (+Akk)", "fa": "درخواست کردن", "grammar": { "pos": "verb", "case": "accusative" } },
+    { "de": "achten auf (+Akk)", "fa": "توجه کردن به", "grammar": { "pos": "verb", "case": "accusative" } },
+    { "de": "glauben an (+Akk)", "fa": "ایمان داشتن به", "grammar": { "pos": "verb", "case": "accusative" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "افعال با حروف اضافه ثابت چیست؟",
+      "content": "**Verben mit festen Präpositionen (افعال با حروف اضافه ثابت)**\n\nدر آلمانی بعضی افعال همیشه با یک حرف اضافه خاص می‌آیند. این ترکیب‌ها را باید حفظ کنید!\n\n**نکته مهم:**\n- حرف اضافه، حالت (Kasus) را تعیین می‌کند\n- در این درس: همه با **Akkusativ** می‌آیند\n\n**مثال‌ها:**\n- warten **auf** = منتظر بودن\n- denken **an** = فکر کردن به\n- sich freuen **auf** = مشتاق بودن\n\n**توجه:** در فارسی هم حروف اضافه با افعال خاص می‌آیند: فکر کردن **به**، منتظر **چیزی** بودن",
+      "examples": [
+        { "de": "Ich warte auf den Bus.", "fa": "من منتظر اتوبوس هستم." },
+        { "de": "Er denkt an seine Familie.", "fa": "او به خانواده‌اش فکر می‌کند." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "warten auf (+Akk)", "fa": "منتظر چیزی بودن" },
+      "example": { "text": { "de": "Ich warte auf meinen Freund.", "fa": "من منتظر دوستم هستم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "warten",
+      "translation": "منتظر بودن",
+      "syllables": ["war", "ten"],
+      "distractors": ["wor", "tan", "tun"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "denken an (+Akk)", "fa": "فکر کردن به" },
+      "example": { "text": { "de": "Ich denke oft an meine Kindheit.", "fa": "من اغلب به کودکی‌ام فکر می‌کنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "denken",
+      "translation": "فکر کردن",
+      "syllables": ["den", "ken"],
+      "distractors": ["dan", "kon", "kun"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s4",
+      "title": "ترتیب کلمات در جمله",
+      "content": "**ترتیب کلمات با افعال و حروف اضافه:**\n\n**جمله خبری:**\n```\nفاعل + فعل + حرف اضافه + مفعول (Akkusativ)\n```\nIch warte **auf den Bus**.\n\n**جمله سوالی:**\n```\nAuf + wen/was + فعل + فاعل?\n```\n- **Auf wen** wartest du? (منتظر چه کسی هستی؟)\n- **Auf was** wartest du? (منتظر چه چیزی هستی؟)\n\n**نکته:** برای اشخاص از **wen** و برای اشیاء از **was** استفاده می‌کنیم.",
+      "examples": [
+        { "de": "Auf wen wartest du?", "fa": "منتظر چه کسی هستی؟" },
+        { "de": "Ich warte auf meinen Chef.", "fa": "منتظر رئیسم هستم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "sich freuen auf (+Akk)", "fa": "مشتاق بودن به" },
+      "example": { "text": { "de": "Ich freue mich auf die Ferien.", "fa": "من مشتاق تعطیلات هستم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "freuen",
+      "translation": "خوشحال شدن",
+      "syllables": ["freu", "en"],
+      "distractors": ["frei", "on", "an"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام حرف اضافه با فعل warten می‌آید؟",
+      "options": [
+        "an",
+        "auf",
+        "um",
+        "für"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! warten auf = منتظر بودن", "incorrect": "warten همیشه با auf می‌آید: warten auf" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "Ich denke ... meine Mutter. کدام گزینه درست است؟",
+      "options": [
+        "auf",
+        "um",
+        "an",
+        "für"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "درست! denken an = فکر کردن به", "incorrect": "denken همیشه با an می‌آید: denken an" }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "bitten um (+Akk)", "fa": "درخواست کردن" },
+      "example": { "text": { "de": "Ich bitte um Hilfe.", "fa": "من درخواست کمک می‌کنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "bitten",
+      "translation": "درخواست کردن",
+      "syllables": ["bit", "ten"],
+      "distractors": ["bat", "ton", "tun"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "حرف اضافه مناسب را انتخاب کنید",
+      "sentence": "Ich warte {0} den Zug.",
+      "options": ["an", "auf", "um", "für"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "warten auf = منتظر بودن. Ich warte auf den Zug." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "حرف اضافه مناسب را انتخاب کنید",
+      "sentence": "Sie denkt {0} ihren Vater.",
+      "options": ["auf", "an", "um", "für"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "denken an = فکر کردن به. Sie denkt an ihren Vater." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "da-Komposita و wo-Komposita",
+      "content": "**da-Komposita (برای اشیاء):**\n\nوقتی درباره اشیاء صحبت می‌کنیم، به جای auf es یا an es از ترکیب da- استفاده می‌کنیم:\n\n- warten auf **es** → warten **darauf**\n- denken an **es** → denken **daran**\n- sich freuen auf **es** → sich **darauf** freuen\n\n**wo-Komposita (برای سوال):**\n\nبرای سوال درباره اشیاء:\n- **Worauf** wartest du? (منتظر چه چیزی هستی؟)\n- **Woran** denkst du? (به چه فکر می‌کنی؟)\n\n**نکته:** اگر حرف اضافه با حرف صدادار شروع شود، **r** اضافه می‌شود: da**r**auf, wo**r**an",
+      "examples": [
+        { "de": "Ich warte darauf.", "fa": "منتظر آن هستم." },
+        { "de": "Woran denkst du?", "fa": "به چه فکر می‌کنی؟" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "achten auf (+Akk)", "fa": "توجه کردن به" },
+      "example": { "text": { "de": "Achte auf die Straße!", "fa": "به خیابان توجه کن!" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "achten",
+      "translation": "توجه کردن",
+      "syllables": ["ach", "ten"],
+      "distractors": ["och", "ton", "tun"]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "glauben an (+Akk)", "fa": "ایمان داشتن به" },
+      "example": { "text": { "de": "Ich glaube an dich.", "fa": "من به تو ایمان دارم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "glauben",
+      "translation": "ایمان داشتن",
+      "syllables": ["glau", "ben"],
+      "distractors": ["glo", "bon", "bun"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "حرف اضافه مناسب را انتخاب کنید",
+      "sentence": "Wir freuen uns {0} das Wochenende.",
+      "options": ["an", "auf", "um", "für"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "sich freuen auf = مشتاق بودن. Wir freuen uns auf das Wochenende." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "حرف اضافه مناسب را انتخاب کنید",
+      "sentence": "Er bittet {0} Entschuldigung.",
+      "options": ["auf", "an", "um", "für"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "bitten um = درخواست کردن. Er bittet um Entschuldigung." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در ایستگاه قطار",
+      "scene": {
+        "location": "train station",
+        "description": { "de": "Am Bahnhof", "fa": "در ایستگاه قطار" }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Worauf wartest du?", "fa": "منتظر چه چیزی هستی؟" }, "mood": "neutral" },
+        { "speaker": "Max", "text": { "de": "Ich warte auf den Zug nach München.", "fa": "منتظر قطار به مونیخ هستم." }, "mood": "neutral" },
+        { "speaker": "Anna", "text": { "de": "Freust du dich auf die Reise?", "fa": "مشتاق سفر هستی؟" }, "mood": "happy" },
+        { "speaker": "Max", "text": { "de": "Ja, ich freue mich sehr darauf!", "fa": "بله، خیلی مشتاقم!" }, "mood": "excited" },
+        { "speaker": "Anna", "text": { "de": "Denk an mich, wenn du dort bist!", "fa": "وقتی آنجا هستی به من فکر کن!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "ماکس منتظر چیست؟", "options": ["اتوبوس", "قطار", "هواپیما"], "correctIndex": 1, "explanation": "ماکس گفت: Ich warte auf den Zug nach München." },
+        { "question": "آنا از ماکس چه خواست؟", "options": ["که زود برگردد", "که به او فکر کند", "که زنگ بزند"], "correctIndex": 1, "explanation": "آنا گفت: Denk an mich, wenn du dort bist!" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["warte", "auf", "Ich", "Bus", "den"],
+      "correctOrder": [2, 0, 1, 4, 3],
+      "correctSentence": { "de": "Ich warte auf den Bus.", "fa": "من منتظر اتوبوس هستم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["denkst", "Woran", "du"],
+      "correctOrder": [1, 0, 2],
+      "correctSentence": { "de": "Woran denkst du?", "fa": "به چه فکر می‌کنی؟" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["freue", "auf", "mich", "Ferien", "Ich", "die"],
+      "correctOrder": [4, 0, 2, 1, 5, 3],
+      "correctSentence": { "de": "Ich freue mich auf die Ferien.", "fa": "من مشتاق تعطیلات هستم." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "فعل warten همیشه با حرف اضافه auf می‌آید.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! warten auf یک ترکیب ثابت است: Ich warte auf den Bus." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای سوال درباره اشیاء از Auf wen استفاده می‌کنیم.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! برای اشیاء از Worauf و برای اشخاص از Auf wen استفاده می‌کنیم." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "به جای auf es می‌گوییم darauf.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! برای اشیاء از da-Komposita استفاده می‌کنیم: darauf, daran, darum" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "sentence": "Ich glaube {0} den Erfolg.",
+      "options": ["auf", "an", "um", "für"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "glauben an = ایمان داشتن به. Ich glaube an den Erfolg." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "sentence": "Du musst {0} die Gesundheit achten.",
+      "options": ["an", "auf", "um", "für"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "achten auf = توجه کردن به. Du musst auf die Gesundheit achten." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در دفتر کار",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Büro", "fa": "در دفتر کار" }
+      },
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Ich bitte um einen Termin mit dem Chef.", "fa": "من درخواست یک قرار ملاقات با رئیس دارم." }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Worum geht es?", "fa": "درباره چیست؟" }, "mood": "confused" },
+        { "speaker": "Lisa", "text": { "de": "Ich muss auf die neuen Regeln achten.", "fa": "باید به قوانین جدید توجه کنم." }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Glaubst du an die Veränderungen?", "fa": "به تغییرات ایمان داری؟" }, "mood": "surprised" },
+        { "speaker": "Lisa", "text": { "de": "Ja, ich glaube daran!", "fa": "بله، به آن ایمان دارم!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "لیزا چه درخواستی دارد؟", "options": ["کمک", "قرار ملاقات", "پول"], "correctIndex": 1, "explanation": "لیزا گفت: Ich bitte um einen Termin mit dem Chef." },
+        { "question": "لیزا به چه چیزی ایمان دارد؟", "options": ["قوانین", "تغییرات", "رئیس"], "correctIndex": 1, "explanation": "لیزا گفت: Ich glaube daran! (به تغییرات)" }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "فعل را با حرف اضافه مناسب جفت کنید",
+      "items": [
+        { "id": "i1", "text": "warten" },
+        { "id": "i2", "text": "denken" },
+        { "id": "i3", "text": "sich freuen" },
+        { "id": "i4", "text": "bitten" },
+        { "id": "i5", "text": "achten" },
+        { "id": "i6", "text": "glauben" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "auf (منتظر)" },
+        { "id": "m2", "text": "an (فکر کردن)" },
+        { "id": "m3", "text": "auf (مشتاق)" },
+        { "id": "m4", "text": "um (درخواست)" },
+        { "id": "m5", "text": "auf (توجه)" },
+        { "id": "m6", "text": "an (ایمان)" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "من منتظر اتوبوس هستم.",
+      "sentenceTemplate": "{0} {1} auf den Bus.",
+      "options": ["warte", "Ich", "denke", "Er"],
+      "correctAnswers": [1, 0],
+      "correctTranslation": { "de": "Ich warte auf den Bus.", "fa": "من منتظر اتوبوس هستم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "او به خانواده‌اش فکر می‌کند.",
+      "sentenceTemplate": "Er {0} {1} seine Familie.",
+      "options": ["an", "denkt", "auf", "wartet"],
+      "correctAnswers": [1, 0],
+      "correctTranslation": { "de": "Er denkt an seine Familie.", "fa": "او به خانواده‌اش فکر می‌کند." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: انتظار و امید",
+      "passage": {
+        "de": "Maria wartet jeden Tag auf den Bus zur Arbeit. Dabei denkt sie oft an ihre Familie in Spanien. Sie freut sich auf den Sommer, denn dann kann sie nach Hause fliegen. Bei der Arbeit achtet sie immer auf die Details. Ihr Chef bittet sie oft um Hilfe bei schwierigen Projekten. Maria glaubt an sich selbst und an ihren Erfolg. Worauf sie besonders wartet? Auf das nächste Telefonat mit ihrer Mutter!",
+        "fa": "ماریا هر روز منتظر اتوبوس برای رفتن به کار است. در این حین اغلب به خانواده‌اش در اسپانیا فکر می‌کند. او مشتاق تابستان است، چون آن وقت می‌تواند به خانه پرواز کند. در کار همیشه به جزئیات توجه می‌کند. رئیسش اغلب از او در پروژه‌های سخت کمک می‌خواهد. ماریا به خودش و موفقیتش ایمان دارد. منتظر چه چیزی است؟ منتظر تماس تلفنی بعدی با مادرش!"
+      },
+      "questions": [
+        { "question": "ماریا هر روز منتظر چیست؟", "options": ["قطار", "اتوبوس", "تاکسی"], "correctIndex": 1, "explanation": "Maria wartet jeden Tag auf den Bus zur Arbeit." },
+        { "question": "ماریا مشتاق چه فصلی است؟", "options": ["زمستان", "پاییز", "تابستان"], "correctIndex": 2, "explanation": "Sie freut sich auf den Sommer." },
+        { "question": "ماریا به چه چیزی ایمان دارد؟", "options": ["رئیسش", "خودش و موفقیتش", "همکارانش"], "correctIndex": 1, "explanation": "Maria glaubt an sich selbst und an ihren Erfolg." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Das große Warten", "fa": "انتظار بزرگ" },
+      "characters": ["Mia", "Paul"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Mia und Paul sitzen im Café und warten auf ihre Freunde.", "fa": "میا و پاول در کافه نشسته‌اند و منتظر دوستانشان هستند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Mia",
+          "text": { "de": "Worauf freust du dich am meisten?", "fa": "بیشتر مشتاق چه چیزی هستی؟" },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Paul",
+          "text": { "de": "Ich freue mich auf die Sommerferien!", "fa": "مشتاق تعطیلات تابستانی هستم!" },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "پاول مشتاق چیست؟",
+          "options": ["کریسمس", "تعطیلات تابستانی", "تولدش"],
+          "correctIndex": 1,
+          "explanation": "پاول گفت: Ich freue mich auf die Sommerferien!"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Mia",
+          "text": { "de": "Ich denke oft an unsere letzte Reise.", "fa": "اغلب به آخرین سفرمان فکر می‌کنم." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Paul",
+          "text": { "de": "Ja, ich auch! Ich bitte dich um einen Gefallen.", "fa": "بله، من هم! یک لطفی از تو می‌خواهم." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Mia",
+          "text": { "de": "Worum bittest du?", "fa": "چه درخواستی داری؟" },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Paul",
+          "text": { "de": "Achte auf meine Tasche, ich hole Kaffee!", "fa": "به کیفم توجه کن، من قهوه می‌آورم!" },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "پاول از میا چه خواست؟",
+          "options": ["که به کیفش توجه کند", "که قهوه بیاورد", "که به سفر فکر کند"],
+          "correctIndex": 0,
+          "explanation": "پاول گفت: Achte auf meine Tasche!"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Mia",
+          "text": { "de": "Ich glaube an dich, du findest bestimmt guten Kaffee!", "fa": "به تو ایمان دارم، حتما قهوه خوب پیدا می‌کنی!" },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "میا به چه کسی ایمان دارد؟",
+          "options": ["به خودش", "به پاول", "به دوستانشان"],
+          "correctIndex": 1,
+          "explanation": "میا گفت: Ich glaube an dich!"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع",
+      "instruction": "حرف اضافه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "warten ...", "left": "auf", "right": "um", "correctSide": "left" },
+        { "prompt": "denken ...", "left": "auf", "right": "an", "correctSide": "right" },
+        { "prompt": "sich freuen ...", "left": "auf", "right": "um", "correctSide": "left" },
+        { "prompt": "bitten ...", "left": "an", "right": "um", "correctSide": "right" },
+        { "prompt": "achten ...", "left": "auf", "right": "an", "correctSide": "left" },
+        { "prompt": "glauben ...", "left": "an", "right": "auf", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich warte auf den Bus.",
+      "translation": "من منتظر اتوبوس هستم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Er denkt an seine Familie.",
+      "translation": "او به خانواده‌اش فکر می‌کند."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Wir freuen uns auf die Ferien.",
+      "translation": "ما مشتاق تعطیلات هستیم."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "warten ... den Bus", "options": ["auf", "an"], "correctAnswerIndex": 0 },
+        { "question": "denken ... die Zukunft", "options": ["auf", "an"], "correctAnswerIndex": 1 },
+        { "question": "sich freuen ... das Fest", "options": ["auf", "um"], "correctAnswerIndex": 0 },
+        { "question": "bitten ... Hilfe", "options": ["auf", "um"], "correctAnswerIndex": 1 },
+        { "question": "achten ... die Kinder", "options": ["auf", "an"], "correctAnswerIndex": 0 },
+        { "question": "glauben ... Gott", "options": ["auf", "an"], "correctAnswerIndex": 1 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "warten auf", "fa": "منتظر بودن" },
+        { "de": "denken an", "fa": "فکر کردن به" },
+        { "de": "sich freuen auf", "fa": "مشتاق بودن" },
+        { "de": "bitten um", "fa": "درخواست کردن" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "افعال این درس را پیدا کنید",
+      "targetWords": ["warten", "denken", "freuen", "bitten", "achten", "glauben"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "حرف اضافه درست را انتخاب کنید",
+      "words": [
+        { "de": "warten ___", "fa": "منتظر بودن", "options": ["an", "auf", "um", "für"], "correctIndex": 1 },
+        { "de": "denken ___", "fa": "فکر کردن به", "options": ["auf", "an", "um", "für"], "correctIndex": 1 },
+        { "de": "bitten ___", "fa": "درخواست کردن", "options": ["auf", "an", "um", "für"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما افعال با حروف اضافه مفعولی را یاد گرفتید!",
+      "keyPoints": [
+        "warten auf = منتظر بودن",
+        "denken an = فکر کردن به",
+        "sich freuen auf = مشتاق بودن",
+        "bitten um = درخواست کردن",
+        "achten auf = توجه کردن به",
+        "glauben an = ایمان داشتن به",
+        "همه این حروف اضافه با Akkusativ می‌آیند",
+        "برای اشیاء از da-Komposita استفاده می‌کنیم: darauf, daran",
+        "برای سوال از wo-Komposita استفاده می‌کنیم: worauf, woran"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "warten auf (+Akk)", "fa": "منتظر چیزی بودن" } },
+        { "word": { "de": "denken an (+Akk)", "fa": "فکر کردن به" } },
+        { "word": { "de": "sich freuen auf (+Akk)", "fa": "مشتاق بودن به" } },
+        { "word": { "de": "bitten um (+Akk)", "fa": "درخواست کردن" } },
+        { "word": { "de": "achten auf (+Akk)", "fa": "توجه کردن به" } },
+        { "word": { "de": "glauben an (+Akk)", "fa": "ایمان داشتن به" } }
+      ]
+    }
+  ]
+}

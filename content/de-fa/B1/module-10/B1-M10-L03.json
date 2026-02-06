@@ -1,0 +1,517 @@
+{
+  "id": "B1-M10-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Reflexive Verben mit Präpositionen", "fa": "افعال انعکاسی با حروف اضافه" },
+  "description": "یاد بگیرید چگونه افعال انعکاسی آلمانی را با حروف اضافه ثابت استفاده کنید: sich interessieren für، sich freuen über و غیره",
+  "level": "B1",
+  "module": 10,
+  "lessonNumber": 3,
+  "totalSteps": 45,
+  "estimatedMinutes": 25,
+  "vocabulary": [
+    { "de": "sich interessieren für", "fa": "علاقه‌مند بودن به", "grammar": { "pos": "verb", "case": "Akkusativ" } },
+    { "de": "sich freuen über", "fa": "خوشحال بودن از", "grammar": { "pos": "verb", "case": "Akkusativ" } },
+    { "de": "sich beschweren über", "fa": "شکایت کردن از", "grammar": { "pos": "verb", "case": "Akkusativ" } },
+    { "de": "sich kümmern um", "fa": "مراقبت کردن از", "grammar": { "pos": "verb", "case": "Akkusativ" } },
+    { "de": "sich erinnern an", "fa": "به یاد آوردن", "grammar": { "pos": "verb", "case": "Akkusativ" } },
+    { "de": "sich entscheiden für", "fa": "تصمیم گرفتن برای", "grammar": { "pos": "verb", "case": "Akkusativ" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "افعال انعکاسی با حروف اضافه ثابت",
+      "content": "در آلمانی بعضی افعال انعکاسی همیشه با یک **حرف اضافه خاص** می‌آیند.\n\n**دو نکته مهم:**\n1. ضمیر انعکاسی (sich) لازم است\n2. حرف اضافه ثابت است و باید حفظ شود\n\n**مثال:**\n• sich interessieren **für** (علاقه‌مند بودن به)\n• sich freuen **über** (خوشحال بودن از)\n• sich beschweren **über** (شکایت کردن از)\n\n**توجه:**\nهمه این حروف اضافه با حالت **Akkusativ** می‌آیند!\n\n**مقایسه با فارسی:**\nدر فارسی هم حروف اضافه ثابت داریم: علاقه‌مند بودن **به**، شکایت کردن **از**",
+      "examples": [
+        { "de": "Ich interessiere mich für Musik.", "fa": "من به موسیقی علاقه‌مندم." },
+        { "de": "Sie freut sich über das Geschenk.", "fa": "او از هدیه خوشحال است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "sich interessieren für", "fa": "علاقه‌مند بودن به" },
+      "example": { "text": { "de": "Ich interessiere mich für Sport.", "fa": "من به ورزش علاقه‌مندم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "interessieren",
+      "translation": "علاقه‌مند بودن",
+      "syllables": ["in", "te", "res", "sie", "ren"],
+      "distractors": ["an", "ta", "ras", "sen"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "sich freuen über", "fa": "خوشحال بودن از" },
+      "example": { "text": { "de": "Wir freuen uns über deinen Besuch.", "fa": "ما از دیدارت خوشحالیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "freuen",
+      "translation": "خوشحال بودن",
+      "syllables": ["freu", "en"],
+      "distractors": ["frei", "an", "on"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "sich beschweren über", "fa": "شکایت کردن از" },
+      "example": { "text": { "de": "Er beschwert sich über den Lärm.", "fa": "او از سر و صدا شکایت می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "beschweren",
+      "translation": "شکایت کردن",
+      "syllables": ["be", "schwe", "ren"],
+      "distractors": ["ba", "schwa", "ran"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام حرف اضافه با sich interessieren می‌آید؟",
+      "options": [
+        "über",
+        "für",
+        "an",
+        "um"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! sich interessieren für صحیح است.", "incorrect": "حرف اضافه درست für است: sich interessieren für" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "حرف اضافه درست را انتخاب کنید",
+      "sentence": "Ich interessiere mich {0} Geschichte.",
+      "options": ["über", "für", "an", "um"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "sich interessieren همیشه با für می‌آید: Ich interessiere mich für Geschichte." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "ترتیب کلمات با افعال انعکاسی",
+      "content": "**ترتیب ضمیر انعکاسی در جمله:**\n\n**در جمله اصلی:**\nفاعل + فعل صرف‌شده + ضمیر انعکاسی + بقیه جمله\n• **Ich** interessiere **mich** für Musik.\n• **Sie** freut **sich** über das Geschenk.\n\n**در سوال:**\nفعل + فاعل + ضمیر انعکاسی + بقیه جمله\n• **Interessierst du dich** für Sport?\n• **Wofür** interessierst **du dich**?\n\n**نکته:**\nضمیر انعکاسی معمولا بعد از فعل صرف‌شده می‌آید.",
+      "examples": [
+        { "de": "Wofür interessierst du dich?", "fa": "به چه چیزی علاقه‌مندی؟" },
+        { "de": "Worüber freust du dich?", "fa": "از چه چیزی خوشحالی؟" }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "گفتگو درباره علایق",
+      "scene": {
+        "location": "university",
+        "description": { "de": "Zwei Studenten sprechen in der Uni.", "fa": "دو دانشجو در دانشگاه صحبت می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Wofür interessierst du dich?", "fa": "به چه چیزی علاقه‌مندی؟" }, "mood": "happy" },
+        { "speaker": "Max", "text": { "de": "Ich interessiere mich für Informatik.", "fa": "من به علوم کامپیوتر علاقه‌مندم." }, "mood": "excited" },
+        { "speaker": "Anna", "text": { "de": "Oh, ich freue mich über deinen Erfolg im Studium!", "fa": "اوه، من از موفقیتت در تحصیل خوشحالم!" }, "mood": "happy" },
+        { "speaker": "Max", "text": { "de": "Danke! Und du? Interessierst du dich auch für Technik?", "fa": "ممنون! و تو؟ آیا تو هم به تکنولوژی علاقه‌مندی؟" }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "ماکس به چه چیزی علاقه‌مند است؟", "options": ["موسیقی", "علوم کامپیوتر", "ورزش"], "correctIndex": 1, "explanation": "ماکس گفت: Ich interessiere mich für Informatik" },
+        { "question": "آنا از چه چیزی خوشحال است؟", "options": ["هدیه", "موفقیت ماکس", "تعطیلات"], "correctIndex": 1, "explanation": "آنا گفت: Ich freue mich über deinen Erfolg" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "sich kümmern um", "fa": "مراقبت کردن از" },
+      "example": { "text": { "de": "Sie kümmert sich um ihre Kinder.", "fa": "او از بچه‌هایش مراقبت می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "kümmern",
+      "translation": "مراقبت کردن",
+      "syllables": ["küm", "mern"],
+      "distractors": ["kam", "morn", "kern"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "sich erinnern an", "fa": "به یاد آوردن" },
+      "example": { "text": { "de": "Ich erinnere mich an unseren Urlaub.", "fa": "من تعطیلاتمان را به یاد می‌آورم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "erinnern",
+      "translation": "به یاد آوردن",
+      "syllables": ["er", "in", "nern"],
+      "distractors": ["ar", "un", "norn"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام حرف اضافه با sich erinnern می‌آید؟",
+      "options": [
+        "für",
+        "über",
+        "an",
+        "um"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! sich erinnern an صحیح است.", "incorrect": "حرف اضافه درست an است: sich erinnern an" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "حرف اضافه درست را انتخاب کنید",
+      "sentence": "Er kümmert sich {0} seinen kranken Vater.",
+      "options": ["für", "über", "an", "um"],
+      "correctAnswers": [3],
+      "feedback": { "explanation": "sich kümmern همیشه با um می‌آید: sich kümmern um" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "حرف اضافه درست را انتخاب کنید",
+      "sentence": "Wir freuen uns {0} das gute Wetter.",
+      "options": ["für", "über", "an", "um"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "sich freuen über برای چیزهای فعلی یا گذشته استفاده می‌شود." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s8",
+      "title": "sich freuen auf در مقابل sich freuen über",
+      "content": "**تفاوت مهم:**\n\n**sich freuen über** (خوشحال بودن از)\nبرای چیزهایی که **الان** یا در **گذشته** اتفاق افتاده:\n• Ich freue mich **über** das Geschenk. (هدیه را دارم)\n• Sie freut sich **über** den Besuch. (مهمان آمده)\n\n**sich freuen auf** (مشتاق بودن برای)\nبرای چیزهایی که در **آینده** اتفاق می‌افتد:\n• Ich freue mich **auf** den Urlaub. (تعطیلات هنوز نیامده)\n• Er freut sich **auf** das Konzert. (کنسرت هنوز برگزار نشده)\n\n**به فارسی:**\nüber = خوشحال بودن از (الان یا گذشته)\nauf = مشتاق بودن برای (آینده)",
+      "examples": [
+        { "de": "Ich freue mich über dein Geschenk!", "fa": "از هدیه‌ات خوشحالم! (هدیه را گرفتم)" },
+        { "de": "Ich freue mich auf deinen Besuch!", "fa": "مشتاق دیدارت هستم! (هنوز نیامدی)" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "sich entscheiden für", "fa": "تصمیم گرفتن برای" },
+      "example": { "text": { "de": "Er hat sich für das rote Auto entschieden.", "fa": "او تصمیم گرفت ماشین قرمز را بخرد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "entscheiden",
+      "translation": "تصمیم گرفتن",
+      "syllables": ["ent", "schei", "den"],
+      "distractors": ["ant", "schau", "don"]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["für Musik.", "mich", "interessiere", "Ich"],
+      "correctOrder": [3, 2, 1, 0],
+      "correctSentence": { "de": "Ich interessiere mich für Musik.", "fa": "من به موسیقی علاقه‌مندم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["das Geschenk.", "über", "sich", "Sie", "freut"],
+      "correctOrder": [3, 4, 2, 1, 0],
+      "correctSentence": { "de": "Sie freut sich über das Geschenk.", "fa": "او از هدیه خوشحال است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["an den Urlaub.", "mich", "erinnere", "Ich"],
+      "correctOrder": [3, 2, 1, 0],
+      "correctSentence": { "de": "Ich erinnere mich an den Urlaub.", "fa": "من تعطیلات را به یاد می‌آورم." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "sich interessieren همیشه با حرف اضافه für می‌آید.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! sich interessieren für یک ترکیب ثابت است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "sich freuen über برای چیزهایی که در آینده اتفاق می‌افتد استفاده می‌شود.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! sich freuen über برای چیزهای فعلی یا گذشته است. برای آینده از sich freuen auf استفاده می‌کنیم." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "حروف اضافه für، über، um و an همه با حالت Akkusativ می‌آیند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! در ترکیب با این افعال انعکاسی، همه این حروف اضافه با Akkusativ هستند." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "شکایت در رستوران",
+      "scene": {
+        "location": "restaurant",
+        "description": { "de": "Ein Gast spricht mit dem Kellner.", "fa": "یک مهمان با گارسون صحبت می‌کند." }
+      },
+      "lines": [
+        { "speaker": "Gast", "text": { "de": "Ich möchte mich über das Essen beschweren.", "fa": "می‌خواهم از غذا شکایت کنم." }, "mood": "angry" },
+        { "speaker": "Kellner", "text": { "de": "Oh, das tut mir leid. Was ist das Problem?", "fa": "اوه، متاسفم. مشکل چیست؟" }, "mood": "surprised" },
+        { "speaker": "Gast", "text": { "de": "Die Suppe ist kalt. Ich habe mich für eine warme Suppe entschieden!", "fa": "سوپ سرد است. من سوپ گرم سفارش دادم!" }, "mood": "angry" },
+        { "speaker": "Kellner", "text": { "de": "Ich kümmere mich sofort darum.", "fa": "فوراً رسیدگی می‌کنم." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "مهمان از چه چیزی شکایت می‌کند؟", "options": ["گارسون", "غذا", "قیمت"], "correctIndex": 1, "explanation": "مهمان گفت: Ich möchte mich über das Essen beschweren" },
+        { "question": "گارسون چه کاری انجام می‌دهد؟", "options": ["عذرخواهی می‌کند", "رسیدگی می‌کند", "هر دو"], "correctIndex": 2, "explanation": "گارسون گفت: Das tut mir leid و Ich kümmere mich sofort darum" }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "فعل انعکاسی را با حرف اضافه درست جور کنید",
+      "items": [
+        { "id": "i1", "text": "sich interessieren" },
+        { "id": "i2", "text": "sich freuen" },
+        { "id": "i3", "text": "sich beschweren" },
+        { "id": "i4", "text": "sich kümmern" },
+        { "id": "i5", "text": "sich erinnern" },
+        { "id": "i6", "text": "sich entscheiden" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "für (علاقه‌مند بودن)" },
+        { "id": "m2", "text": "über (خوشحال بودن)" },
+        { "id": "m3", "text": "über (شکایت کردن)" },
+        { "id": "m4", "text": "um (مراقبت کردن)" },
+        { "id": "m5", "text": "an (به یاد آوردن)" },
+        { "id": "m6", "text": "für (تصمیم گرفتن)" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "من به تاریخ علاقه‌مندم.",
+      "sentenceTemplate": "Ich {0} mich {1} Geschichte.",
+      "options": ["interessiere", "für", "freue", "über"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Ich interessiere mich für Geschichte.", "fa": "من به تاریخ علاقه‌مندم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "او از بچه‌هایش مراقبت می‌کند.",
+      "sentenceTemplate": "Sie {0} sich {1} ihre Kinder.",
+      "options": ["kümmert", "um", "erinnert", "an"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Sie kümmert sich um ihre Kinder.", "fa": "او از بچه‌هایش مراقبت می‌کند." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Erinnerst du {0} an unsere Schulzeit?",
+      "options": ["mich", "dich", "sich", "uns"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "با du از ضمیر انعکاسی dich استفاده می‌کنیم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "حرف اضافه درست را انتخاب کنید",
+      "sentence": "Die Kunden beschweren sich {0} den schlechten Service.",
+      "options": ["für", "über", "an", "um"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "sich beschweren همیشه با über می‌آید: sich beschweren über" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "حرف اضافه درست را انتخاب کنید",
+      "sentence": "Wir haben uns {0} das neue Haus entschieden.",
+      "options": ["über", "an", "um", "für"],
+      "correctAnswers": [3],
+      "feedback": { "explanation": "sich entscheiden همیشه با für می‌آید: sich entscheiden für" }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: روز مارتین",
+      "passage": {
+        "de": "Martin interessiert sich sehr für Musik. Er freut sich jeden Tag über sein neues Klavier. Letzte Woche hat er sich über den Lärm der Nachbarn beschwert, weil er nicht üben konnte. Jetzt kümmert er sich um eine Lösung. Er erinnert sich an seinen Musiklehrer, der immer sagte: Musik braucht Ruhe. Er hat sich für ein Gespräch mit den Nachbarn entschieden.",
+        "fa": "مارتین به موسیقی خیلی علاقه‌مند است. او هر روز از پیانوی جدیدش خوشحال است. هفته گذشته از سر و صدای همسایه‌ها شکایت کرد چون نمی‌توانست تمرین کند. حالا به دنبال راه‌حل است. او معلم موسیقی‌اش را به یاد می‌آورد که همیشه می‌گفت: موسیقی به آرامش نیاز دارد. او تصمیم گرفته با همسایه‌ها صحبت کند."
+      },
+      "questions": [
+        { "question": "مارتین به چه چیزی علاقه‌مند است؟", "options": ["ورزش", "موسیقی", "آشپزی"], "correctIndex": 1, "explanation": "در متن آمده: Martin interessiert sich sehr für Musik" },
+        { "question": "مارتین از چه چیزی شکایت کرد؟", "options": ["پیانو", "معلم", "سر و صدای همسایه‌ها"], "correctIndex": 2, "explanation": "در متن آمده: über den Lärm der Nachbarn beschwert" },
+        { "question": "مارتین چه تصمیمی گرفت؟", "options": ["نقل مکان", "صحبت با همسایه‌ها", "فروختن پیانو"], "correctIndex": 1, "explanation": "در متن آمده: hat sich für ein Gespräch mit den Nachbarn entschieden" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die neue Mitarbeiterin", "fa": "کارمند جدید" },
+      "characters": ["Lisa", "Chef"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Lisa ist neu in der Firma und hat viele Fragen.", "fa": "لیزا در شرکت جدید است و سوالات زیادی دارد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Ich interessiere mich sehr für dieses Projekt.", "fa": "من به این پروژه خیلی علاقه‌مندم." },
+          "mood": "excited"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Chef",
+          "text": { "de": "Das freut mich! Wir freuen uns über Ihre Motivation.", "fa": "این خوشحال‌کننده است! ما از انگیزه شما خوشحالیم." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "لیزا به چه چیزی علاقه‌مند است؟",
+          "options": ["حقوق", "پروژه", "تعطیلات"],
+          "correctIndex": 1,
+          "explanation": "لیزا گفت: Ich interessiere mich sehr für dieses Projekt"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Wer kümmert sich um die Kunden?", "fa": "چه کسی از مشتریان مراقبت می‌کند؟" },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Chef",
+          "text": { "de": "Frau Müller kümmert sich um alles.", "fa": "خانم مولر به همه چیز رسیدگی می‌کند." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Ich erinnere mich an mein Vorstellungsgespräch.", "fa": "من مصاحبه استخدامی‌ام را به یاد می‌آورم." },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Chef",
+          "text": { "de": "Sie haben sich damals für uns entschieden. Willkommen!", "fa": "شما آن موقع ما را انتخاب کردید. خوش آمدید!" },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "چه کسی از مشتریان مراقبت می‌کند؟",
+          "options": ["لیزا", "رئیس", "خانم مولر"],
+          "correctIndex": 2,
+          "explanation": "رئیس گفت: Frau Müller kümmert sich um alles"
+        }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich interessiere mich für Sport.",
+      "translation": "من به ورزش علاقه‌مندم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Sie freut sich über das Geschenk.",
+      "translation": "او از هدیه خوشحال است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Er erinnert sich an seinen Urlaub.",
+      "translation": "او تعطیلاتش را به یاد می‌آورد."
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع",
+      "instruction": "حرف اضافه درست را سریع انتخاب کنید!",
+      "questions": [
+        { "prompt": "sich interessieren ___", "left": "für", "right": "über", "correctSide": "left" },
+        { "prompt": "sich freuen ___ (گذشته)", "left": "auf", "right": "über", "correctSide": "right" },
+        { "prompt": "sich beschweren ___", "left": "über", "right": "um", "correctSide": "left" },
+        { "prompt": "sich kümmern ___", "left": "an", "right": "um", "correctSide": "right" },
+        { "prompt": "sich erinnern ___", "left": "an", "right": "für", "correctSide": "left" },
+        { "prompt": "sich entscheiden ___", "left": "über", "right": "für", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "sich interessieren für", "options": ["علاقه‌مند بودن به", "خوشحال بودن از", "شکایت کردن از"], "correctAnswerIndex": 0 },
+        { "question": "sich freuen über", "options": ["مراقبت کردن از", "خوشحال بودن از", "به یاد آوردن"], "correctAnswerIndex": 1 },
+        { "question": "sich beschweren über", "options": ["شکایت کردن از", "علاقه‌مند بودن به", "تصمیم گرفتن برای"], "correctAnswerIndex": 0 },
+        { "question": "sich kümmern um", "options": ["به یاد آوردن", "خوشحال بودن از", "مراقبت کردن از"], "correctAnswerIndex": 2 },
+        { "question": "sich erinnern an", "options": ["تصمیم گرفتن برای", "به یاد آوردن", "شکایت کردن از"], "correctAnswerIndex": 1 },
+        { "question": "sich entscheiden für", "options": ["مراقبت کردن از", "علاقه‌مند بودن به", "تصمیم گرفتن برای"], "correctAnswerIndex": 2 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "pairs": [
+        { "de": "sich interessieren für", "fa": "علاقه‌مند بودن به" },
+        { "de": "sich freuen über", "fa": "خوشحال بودن از" },
+        { "de": "sich beschweren über", "fa": "شکایت کردن از" },
+        { "de": "sich kümmern um", "fa": "مراقبت کردن از" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "حروف اضافه درس را پیدا کنید",
+      "targetWords": ["interessieren", "freuen", "beschweren", "erinnern", "entscheiden"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "حرف اضافه درست را انتخاب کنید",
+      "words": [
+        { "de": "sich interessieren", "fa": "___", "options": ["über", "für", "um", "an"], "correctIndex": 1 },
+        { "de": "sich kümmern", "fa": "___", "options": ["für", "über", "um", "an"], "correctIndex": 2 },
+        { "de": "sich erinnern", "fa": "___", "options": ["für", "über", "um", "an"], "correctIndex": 3 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما افعال انعکاسی با حروف اضافه را یاد گرفتید!",
+      "keyPoints": [
+        "sich interessieren für: علاقه‌مند بودن به",
+        "sich freuen über: خوشحال بودن از چیز فعلی یا گذشته",
+        "sich freuen auf: مشتاق بودن برای چیز آینده",
+        "sich beschweren über: شکایت کردن از",
+        "sich kümmern um: مراقبت کردن از",
+        "sich erinnern an: به یاد آوردن",
+        "sich entscheiden für: تصمیم گرفتن برای"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "sich interessieren für", "fa": "علاقه‌مند بودن به" } },
+        { "word": { "de": "sich freuen über", "fa": "خوشحال بودن از" } },
+        { "word": { "de": "sich beschweren über", "fa": "شکایت کردن از" } },
+        { "word": { "de": "sich kümmern um", "fa": "مراقبت کردن از" } },
+        { "word": { "de": "sich erinnern an", "fa": "به یاد آوردن" } },
+        { "word": { "de": "sich entscheiden für", "fa": "تصمیم گرفتن برای" } }
+      ]
+    }
+  ]
+}
