@@ -1,0 +1,527 @@
+{
+  "id": "B2-M08-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Textverknüpfung: Pronominaladverbien", "fa": "انسجام متن: قیدهای ضمیری (da-/wo-)" },
+  "description": "یاد بگیرید چگونه از قیدهای ضمیری مانند dafür، dagegen، damit، darüber، wofür، womit و غیره برای ایجاد انسجام در متن استفاده کنید. این ترکیبات جایگزین «حرف اضافه + ضمیر» می‌شوند.",
+  "level": "B2",
+  "module": 8,
+  "lessonNumber": 2,
+  "totalSteps": 45,
+  "estimatedMinutes": 40,
+  "vocabulary": [
+    { "de": "dafür", "fa": "برای آن، به جای آن", "grammar": { "pos": "adverb" } },
+    { "de": "dagegen", "fa": "برخلاف آن، در مقابل آن", "grammar": { "pos": "adverb" } },
+    { "de": "damit", "fa": "با آن، به وسیله آن", "grammar": { "pos": "adverb" } },
+    { "de": "darüber", "fa": "درباره آن، روی آن", "grammar": { "pos": "adverb" } },
+    { "de": "wofür", "fa": "برای چه؟", "grammar": { "pos": "adverb" } },
+    { "de": "womit", "fa": "با چه؟", "grammar": { "pos": "adverb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "قیدهای ضمیری (Pronominaladverbien) چیست؟",
+      "content": "**Pronominaladverbien = da(r)- / wo(r)- + حرف اضافه**\n\nدر آلمانی وقتی می‌خواهیم به چیزی (نه شخص) اشاره کنیم، به جای «حرف اضافه + ضمیر»، از قید ضمیری استفاده می‌کنیم:\n\n**❌ نادرست:** Ich interessiere mich für **es**.\n**✅ درست:** Ich interessiere mich **dafür**.\n\n**ساختار:**\n| نوع | فرمول | مثال |\n|-----|-------|------|\n| da-ترکیب | da + حرف اضافه | dafür, damit, davon |\n| da(r)-ترکیب | dar + حرف اضافه (با مصوت) | darüber, darauf, daran |\n| wo-ترکیب | wo + حرف اضافه | wofür, womit, wovon |\n| wo(r)-ترکیب | wor + حرف اضافه (با مصوت) | worüber, worauf, woran |\n\n**نکته:** وقتی حرف اضافه با مصوت شروع شود، یک «r» اضافه می‌شود: da**r**über, wo**r**auf",
+      "examples": [
+        { "de": "Ich denke oft daran.", "fa": "من اغلب به آن فکر می‌کنم." },
+        { "de": "Woran denkst du?", "fa": "به چه فکر می‌کنی؟" },
+        { "de": "Ich freue mich darauf.", "fa": "من منتظرش هستم / خوشحالم از آن." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "dafür", "fa": "برای آن، به جای آن" },
+      "example": { "text": { "de": "Ich interessiere mich für Politik. Dafür lese ich täglich Zeitung.", "fa": "من به سیاست علاقه‌مندم. برای همین روزانه روزنامه می‌خوانم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "dafür",
+      "translation": "برای آن",
+      "syllables": ["da", "für"],
+      "distractors": ["de", "fer", "fur"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "dagegen", "fa": "برخلاف آن، در مقابل آن" },
+      "example": { "text": { "de": "Viele sind dafür, aber ich bin dagegen.", "fa": "خیلی‌ها موافقند، اما من مخالفم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "dagegen",
+      "translation": "برخلاف آن",
+      "syllables": ["da", "ge", "gen"],
+      "distractors": ["de", "ga", "gan"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "damit", "fa": "با آن، به وسیله آن" },
+      "example": { "text": { "de": "Hier ist der Schlüssel. Damit kannst du die Tür öffnen.", "fa": "این کلید است. با آن می‌توانی در را باز کنی." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "damit",
+      "translation": "با آن",
+      "syllables": ["da", "mit"],
+      "distractors": ["de", "mat", "mut"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "ترکیبات da(r)- برای اشاره به چیزها",
+      "content": "**da(r)- ترکیبات رایج:**\n\n| ترکیب | معنی | مثال |\n|-------|------|------|\n| **dafür** | برای آن | Ich bin dafür. |\n| **dagegen** | برخلاف آن | Er ist dagegen. |\n| **damit** | با آن | Was machst du damit? |\n| **davon** | از آن | Ich weiß nichts davon. |\n| **dazu** | به آن، علاوه بر آن | Was sagst du dazu? |\n| **darüber** | درباره آن | Wir sprechen darüber. |\n| **darunter** | زیر آن | Was verstehst du darunter? |\n| **darauf** | روی آن | Ich freue mich darauf. |\n| **dahinter** | پشت آن | Was steckt dahinter? |\n| **daran** | به آن | Ich denke daran. |\n\n**کاربرد اصلی:** ایجاد انسجام متن - اشاره به جمله یا مفهوم قبلی\n\n**مثال:**\nPolitik ist wichtig. **Dafür** interessiere ich mich sehr.\n(سیاست مهم است. **برای آن** خیلی علاقه‌مندم.)",
+      "examples": [
+        { "de": "Das Projekt ist schwierig. Aber ich arbeite gern daran.", "fa": "پروژه سخت است. اما با علاقه روی آن کار می‌کنم." },
+        { "de": "Er hat viel Geld. Davon hat er mir nichts gesagt.", "fa": "او پول زیادی دارد. از آن چیزی به من نگفت." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "darüber", "fa": "درباره آن، روی آن" },
+      "example": { "text": { "de": "Das Thema ist interessant. Darüber möchte ich mehr erfahren.", "fa": "موضوع جالب است. درباره آن می‌خواهم بیشتر بدانم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "darüber",
+      "translation": "درباره آن",
+      "syllables": ["dar", "ü", "ber"],
+      "distractors": ["der", "o", "bar"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "wofür", "fa": "برای چه؟" },
+      "example": { "text": { "de": "Wofür interessierst du dich?", "fa": "به چه علاقه‌مندی؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "wofür",
+      "translation": "برای چه؟",
+      "syllables": ["wo", "für"],
+      "distractors": ["wa", "fer", "wer"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "womit", "fa": "با چه؟" },
+      "example": { "text": { "de": "Womit kann ich Ihnen helfen?", "fa": "با چه می‌توانم کمکتان کنم؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "womit",
+      "translation": "با چه؟",
+      "syllables": ["wo", "mit"],
+      "distractors": ["wa", "mat", "wer"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "ترکیبات wo(r)- برای سوالات",
+      "content": "**wo(r)- ترکیبات سوالی:**\n\n| ترکیب | معنی | مثال |\n|-------|------|------|\n| **wofür** | برای چه؟ | Wofür brauchst du das? |\n| **wogegen** | برخلاف چه؟ | Wogegen protestieren sie? |\n| **womit** | با چه؟ | Womit fährst du? |\n| **wovon** | از چه؟ | Wovon träumst du? |\n| **wozu** | برای چه کاری؟ | Wozu braucht man das? |\n| **worüber** | درباره چه؟ | Worüber sprecht ihr? |\n| **worunter** | زیر چه؟ | Worunter leidest du? |\n| **worauf** | روی چه؟ | Worauf wartest du? |\n| **woran** | به چه؟ | Woran denkst du? |\n\n**قاعده مهم:**\nاین ترکیبات فقط برای **چیزها** استفاده می‌شوند، نه اشخاص!\n\n**برای اشخاص:**\n- ❌ Wofür interessierst du dich? (درباره چیز)\n- ✅ Für **wen** interessierst du dich? (درباره شخص)",
+      "examples": [
+        { "de": "Worüber lachst du?", "fa": "به چه می‌خندی؟" },
+        { "de": "Woran arbeitest du gerade?", "fa": "الان روی چه کار می‌کنی؟" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله درست است؟",
+      "options": [
+        "Ich interessiere mich für es.",
+        "Ich interessiere mich dafür.",
+        "Ich interessiere mich für das.",
+        "Ich interessiere mich damit."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! وقتی به چیزی (نه شخص) اشاره می‌کنیم، از قید ضمیری استفاده می‌کنیم: dafür, nicht für es.", "incorrect": "در آلمانی به جای «für es» از «dafür» استفاده می‌کنیم." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "چرا می‌گوییم «darüber» و نه «daüber»؟",
+      "options": [
+        "چون über یک کلمه خاص است",
+        "چون über با مصوت شروع می‌شود و «r» اضافه می‌شود",
+        "چون این یک استثناست",
+        "چون صدای زیباتری دارد"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "درست! وقتی حرف اضافه با مصوت (a, ä, e, i, o, ö, u, ü) شروع شود، یک «r» اضافه می‌کنیم: dar+über, wor+auf.", "incorrect": "وقتی حرف اضافه با مصوت شروع شود، برای راحتی تلفظ یک «r» اضافه می‌کنیم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "قید ضمیری مناسب را انتخاب کنید",
+      "sentence": "Politik ist wichtig. {0} lese ich jeden Tag die Nachrichten.",
+      "options": ["Dafür", "Damit", "Davon", "Darauf"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Dafür درست است: für Politik → dafür (برای آن/برای همین)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "قید ضمیری مناسب را انتخاب کنید",
+      "sentence": "{0} kann ich dir helfen?",
+      "options": ["Womit", "Wofür", "Worüber", "Wovon"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Womit درست است: mit + was → womit (با چه؟)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "قید ضمیری مناسب را انتخاب کنید",
+      "sentence": "Das Projekt ist sehr interessant. Ich arbeite gern {0}.",
+      "options": ["daran", "darauf", "damit", "dafür"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "daran درست است: arbeiten an + Dativ → daran (روی آن کار کردن)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "{0} freust du dich so?",
+      "options": ["Worauf", "Wofür", "Womit", "Woran"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Worauf درست است: sich freuen auf + Akk → worauf (منتظر چه هستی؟)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "قید ضمیری مناسب را انتخاب کنید",
+      "sentence": "Viele Leute sind {0}, aber einige sind {1}.",
+      "options": ["dafür", "dagegen"],
+      "correctAnswers": [0, 1],
+      "feedback": { "explanation": "dafür (موافق) و dagegen (مخالف) در مقابل هم هستند." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Das Thema ist kompliziert. {0} möchte ich nicht sprechen.",
+      "options": ["Darüber", "Damit", "Dafür", "Davon"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Darüber درست است: sprechen über + Akk → darüber (درباره آن)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "بحث درباره محیط زیست",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Zwei Kollegen diskutieren über Umweltschutz", "fa": "دو همکار درباره حفاظت از محیط زیست بحث می‌کنند" }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Hast du von dem neuen Umweltgesetz gehört?", "fa": "از قانون جدید محیط زیست شنیده‌ای؟" }, "mood": "neutral" },
+        { "speaker": "Max", "text": { "de": "Ja, davon habe ich gelesen. Ich bin dafür!", "fa": "آره، درباره آن خوانده‌ام. من موافقم!" }, "mood": "happy" },
+        { "speaker": "Anna", "text": { "de": "Wirklich? Worauf basiert deine Meinung?", "fa": "واقعاً؟ نظرت بر چه اساسی است؟" }, "mood": "confused" },
+        { "speaker": "Max", "text": { "de": "Damit können wir die CO2-Emissionen reduzieren.", "fa": "با آن می‌توانیم انتشار CO2 را کاهش دهیم." }, "mood": "excited" },
+        { "speaker": "Anna", "text": { "de": "Stimmt. Darüber sollten mehr Leute nachdenken.", "fa": "درسته. درباره آن باید افراد بیشتری فکر کنند." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "Max چرا از «davon» استفاده کرد؟", "options": ["برای اشاره به قانون محیط زیست", "برای پرسیدن سوال", "برای بیان مخالفت"], "correctIndex": 0, "explanation": "davon به «das neue Umweltgesetz» اشاره دارد: von dem Gesetz → davon" },
+        { "question": "Anna چرا از «worauf» استفاده کرد؟", "options": ["برای پاسخ دادن", "برای پرسیدن سوال درباره اساس نظر", "برای موافقت"], "correctIndex": 1, "explanation": "worauf سوالی است: بر چه اساسی؟ (auf was basiert?)" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را با قید ضمیری مرتب کنید",
+      "words": ["dich", "freust", "Worauf", "du"],
+      "correctOrder": [2, 1, 3, 0],
+      "correctSentence": { "de": "Worauf freust du dich?", "fa": "منتظر چه هستی؟" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["sprechen", "möchte", "darüber", "Ich", "nicht"],
+      "correctOrder": [3, 1, 4, 2, 0],
+      "correctSentence": { "de": "Ich möchte nicht darüber sprechen.", "fa": "نمی‌خواهم درباره آن صحبت کنم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["Davon", "gehört", "ich", "nichts", "habe"],
+      "correctOrder": [0, 4, 2, 3, 1],
+      "correctSentence": { "de": "Davon habe ich nichts gehört.", "fa": "از آن چیزی نشنیده‌ام." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای اشاره به اشخاص هم می‌توان از قیدهای ضمیری (dafür, damit) استفاده کرد.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! قیدهای ضمیری فقط برای چیزها استفاده می‌شوند. برای اشخاص: für wen, mit wem" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "وقتی حرف اضافه با مصوت شروع شود، یک «r» بین da/wo و حرف اضافه اضافه می‌کنیم: darüber, worauf.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! برای راحتی تلفظ: da+r+über, wo+r+auf" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "جمله «Ich interessiere mich für es» در آلمانی درست است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! باید بگوییم: Ich interessiere mich dafür. (نه für es)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "برنامه‌ریزی سفر",
+      "scene": {
+        "location": "home",
+        "description": { "de": "Freunde planen eine Reise", "fa": "دوستان برای یک سفر برنامه‌ریزی می‌کنند" }
+      },
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Ich träume von einer Reise nach Japan.", "fa": "رویای سفر به ژاپن را دارم." }, "mood": "excited" },
+        { "speaker": "Tom", "text": { "de": "Wovon träumst du genau?", "fa": "دقیقاً رویای چه چیزی را داری؟" }, "mood": "confused" },
+        { "speaker": "Lisa", "text": { "de": "Von den Tempeln und der Natur. Dafür spare ich schon lange.", "fa": "معابد و طبیعت. برای آن مدت‌هاست پس‌انداز می‌کنم." }, "mood": "happy" },
+        { "speaker": "Tom", "text": { "de": "Klingt toll! Womit fliegst du? Mit welcher Airline?", "fa": "عالی به نظر می‌رسد! با چه پرواز می‌کنی؟ با کدام شرکت هواپیمایی؟" }, "mood": "neutral" },
+        { "speaker": "Lisa", "text": { "de": "Darüber habe ich noch nicht nachgedacht.", "fa": "درباره آن هنوز فکر نکرده‌ام." }, "mood": "confused" }
+      ],
+      "questions": [
+        { "question": "Lisa چرا از «dafür» استفاده کرد؟", "options": ["برای اشاره به سفر به ژاپن", "برای پرسیدن سوال", "برای بیان مخالفت"], "correctIndex": 0, "explanation": "dafür به سفر به ژاپن اشاره دارد: für die Reise → dafür" },
+        { "question": "Tom چرا از «womit» استفاده کرد؟", "options": ["برای بیان موافقت", "برای پرسیدن درباره وسیله پرواز", "برای مخالفت"], "correctIndex": 1, "explanation": "womit سوالی است: با چه وسیله‌ای؟ (mit was?)" }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "قیدهای ضمیری را با معنای فارسی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "dafür" },
+        { "id": "i2", "text": "dagegen" },
+        { "id": "i3", "text": "darüber" },
+        { "id": "i4", "text": "wofür" },
+        { "id": "i5", "text": "womit" },
+        { "id": "i6", "text": "worauf" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "برای آن" },
+        { "id": "m2", "text": "برخلاف آن" },
+        { "id": "m3", "text": "درباره آن" },
+        { "id": "m4", "text": "برای چه؟" },
+        { "id": "m5", "text": "با چه؟" },
+        { "id": "m6", "text": "روی چه؟ / منتظر چه؟" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "من به آن علاقه‌مندم.",
+      "sentenceTemplate": "Ich interessiere mich {0}.",
+      "options": ["dafür", "damit", "davon", "darauf"],
+      "correctAnswers": [0],
+      "correctTranslation": { "de": "Ich interessiere mich dafür.", "fa": "من به آن علاقه‌مندم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "درباره چه صحبت می‌کنید؟",
+      "sentenceTemplate": "{0} sprecht ihr?",
+      "options": ["Worüber", "Wovon", "Womit", "Woran"],
+      "correctAnswers": [0],
+      "correctTranslation": { "de": "Worüber sprecht ihr?", "fa": "درباره چه صحبت می‌کنید؟" }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: انسجام متن",
+      "passage": {
+        "de": "Textverknüpfung in der deutschen Sprache\n\nProномinaladverbien spielen eine wichtige Rolle für die Textverknüpfung. Dafür gibt es einen guten Grund: Sie vermeiden Wiederholungen und machen den Text flüssiger.\n\nNehmen wir ein Beispiel: Umweltschutz ist heute ein wichtiges Thema. Darüber wird viel diskutiert. Viele Menschen sind dafür, aber einige sind dagegen.\n\nMit diesen kleinen Wörtern kann man elegant auf vorherige Sätze verweisen. Worauf muss man achten? Erstens: Diese Wörter beziehen sich nur auf Sachen, nicht auf Personen. Zweitens: Bei Präpositionen mit Vokal fügt man ein \"r\" ein (darüber, worauf).",
+        "fa": "انسجام متن در زبان آلمانی\n\nقیدهای ضمیری نقش مهمی در انسجام متن دارند. برای این کار دلیل خوبی وجود دارد: آنها از تکرار جلوگیری می‌کنند و متن را روان‌تر می‌کنند.\n\nیک مثال بزنیم: حفاظت از محیط زیست امروز موضوع مهمی است. درباره آن زیاد بحث می‌شود. خیلی از مردم موافقند، اما برخی مخالفند.\n\nبا این کلمات کوچک می‌توان به طور زیبا به جملات قبلی اشاره کرد. به چه باید توجه کرد؟ اول: این کلمات فقط به چیزها اشاره دارند، نه به اشخاص. دوم: در حروف اضافه‌ای که با مصوت شروع می‌شوند، یک «r» اضافه می‌شود."
+      },
+      "questions": [
+        { "question": "چرا قیدهای ضمیری مهم هستند؟", "options": ["چون متن را پیچیده‌تر می‌کنند", "چون از تکرار جلوگیری می‌کنند", "چون فقط برای سوال استفاده می‌شوند"], "correctIndex": 1, "explanation": "قیدهای ضمیری از تکرار جلوگیری می‌کنند و متن را روان‌تر می‌کنند." },
+        { "question": "قیدهای ضمیری به چه اشاره دارند؟", "options": ["فقط به اشخاص", "فقط به چیزها", "به همه چیز"], "correctIndex": 1, "explanation": "این کلمات فقط به چیزها اشاره دارند، نه به اشخاص." },
+        { "question": "چرا می‌گوییم «darüber» و نه «daüber»؟", "options": ["چون استثناست", "چون حرف اضافه با مصوت شروع می‌شود", "چون صدای بهتری دارد"], "correctIndex": 1, "explanation": "وقتی حرف اضافه با مصوت شروع شود، یک «r» اضافه می‌کنیم." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Das verlorene Handy", "fa": "گوشی گمشده" },
+      "characters": ["Emma", "Paul"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Emma sucht nervös nach etwas.", "fa": "اِما با استرس دنبال چیزی می‌گردد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Paul",
+          "text": { "de": "Wonach suchst du?", "fa": "دنبال چه می‌گردی؟" },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Emma",
+          "text": { "de": "Nach meinem Handy! Ich kann mich nicht erinnern, wohin ich es gelegt habe.", "fa": "دنبال گوشیم! یادم نمی‌آید کجا گذاشتمش." },
+          "mood": "sad"
+        },
+        {
+          "type": "question",
+          "question": "چرا Paul از «wonach» استفاده کرد؟",
+          "options": ["برای موافقت", "برای پرسیدن درباره چیزی که Emma دنبالش می‌گردد", "برای بیان مخالفت"],
+          "correctIndex": 1,
+          "explanation": "wonach = nach was (دنبال چه؟)"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Paul",
+          "text": { "de": "Woran erinnerst du dich zuletzt?", "fa": "آخرین چیزی که یادت می‌آید چیست؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Emma",
+          "text": { "de": "Ich habe damit telefoniert... Dann habe ich es auf den Tisch gelegt.", "fa": "باهاش تلفن زدم... بعد روی میز گذاشتمش." },
+          "mood": "confused"
+        },
+        {
+          "type": "question",
+          "question": "Emma چرا از «damit» استفاده کرد؟",
+          "options": ["برای اشاره به میز", "برای اشاره به گوشی", "برای پرسیدن سوال"],
+          "correctIndex": 1,
+          "explanation": "damit = mit dem Handy (با گوشی)"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Paul",
+          "text": { "de": "Schau mal! Liegt es nicht darunter? Unter den Papieren?", "fa": "ببین! زیرش نیست؟ زیر کاغذها؟" },
+          "mood": "excited"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Emma",
+          "text": { "de": "Oh ja! Dafür bin ich dir so dankbar!", "fa": "آه بله! خیلی ممنونم برای این کار!" },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "Paul چرا از «darunter» استفاده کرد؟",
+          "options": ["برای اشاره به زیر کاغذها", "برای موافقت", "برای پرسیدن سوال"],
+          "correctIndex": 0,
+          "explanation": "darunter = unter den Papieren (زیر کاغذها)"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: قید ضمیری درست",
+      "instruction": "قید ضمیری مناسب را انتخاب کنید!",
+      "questions": [
+        { "prompt": "sprechen über → ?", "left": "darüber", "right": "damit", "correctSide": "left" },
+        { "prompt": "warten auf → ?", "left": "dafür", "right": "darauf", "correctSide": "right" },
+        { "prompt": "arbeiten an → ?", "left": "daran", "right": "darauf", "correctSide": "left" },
+        { "prompt": "fragen nach → ?", "left": "davon", "right": "danach", "correctSide": "right" },
+        { "prompt": "träumen von → ?", "left": "davon", "right": "dafür", "correctSide": "left" },
+        { "prompt": "sich freuen auf → ?", "left": "dafür", "right": "darauf", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich interessiere mich sehr dafür.",
+      "translation": "من خیلی به آن علاقه‌مندم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Worüber sprecht ihr gerade?",
+      "translation": "الان درباره چه صحبت می‌کنید؟"
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Davon habe ich nichts gewusst.",
+      "translation": "از آن چیزی نمی‌دانستم."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: قیدهای ضمیری",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "für + das/es = ?", "options": ["dafür", "damit"], "correctAnswerIndex": 0 },
+        { "question": "über + was = ?", "options": ["worüber", "womit"], "correctAnswerIndex": 0 },
+        { "question": "mit + das = ?", "options": ["damit", "dafür"], "correctAnswerIndex": 0 },
+        { "question": "auf + was = ?", "options": ["worauf", "wovon"], "correctAnswerIndex": 0 },
+        { "question": "von + das = ?", "options": ["davon", "daran"], "correctAnswerIndex": 0 },
+        { "question": "an + was = ?", "options": ["woran", "wozu"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: da- و wo- ترکیبات",
+      "pairs": [
+        { "de": "dafür", "fa": "برای آن" },
+        { "de": "wofür", "fa": "برای چه؟" },
+        { "de": "darüber", "fa": "درباره آن" },
+        { "de": "worüber", "fa": "درباره چه؟" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "قیدهای ضمیری را پیدا کنید",
+      "targetWords": ["DAFUER", "DAGEGEN", "DAMIT", "DARUEBER", "WOFUER", "WOMIT"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "dafür", "fa": "برای آن", "options": ["با آن", "برای آن", "درباره آن", "از آن"], "correctIndex": 1 },
+        { "de": "darüber", "fa": "درباره آن", "options": ["برای آن", "با آن", "درباره آن", "روی آن"], "correctIndex": 2 },
+        { "de": "womit", "fa": "با چه؟", "options": ["برای چه؟", "با چه؟", "از چه؟", "روی چه؟"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما قیدهای ضمیری (Pronominaladverbien) را یاد گرفتید!",
+      "keyPoints": [
+        "قیدهای ضمیری از da(r)- یا wo(r)- + حرف اضافه تشکیل می‌شوند",
+        "da-ترکیبات برای اشاره استفاده می‌شوند: dafür, damit, darüber",
+        "wo-ترکیبات برای سوال استفاده می‌شوند: wofür, womit, worüber",
+        "وقتی حرف اضافه با مصوت شروع شود، «r» اضافه می‌کنیم: dar+über, wor+auf",
+        "این ترکیبات فقط برای چیزها استفاده می‌شوند، نه اشخاص",
+        "این کلمات برای انسجام متن و جلوگیری از تکرار بسیار مهم هستند"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "dafür", "fa": "برای آن، به جای آن" } },
+        { "word": { "de": "dagegen", "fa": "برخلاف آن، در مقابل آن" } },
+        { "word": { "de": "damit", "fa": "با آن، به وسیله آن" } },
+        { "word": { "de": "darüber", "fa": "درباره آن، روی آن" } },
+        { "word": { "de": "wofür", "fa": "برای چه؟" } },
+        { "word": { "de": "womit", "fa": "با چه؟" } }
+      ]
+    }
+  ]
+}

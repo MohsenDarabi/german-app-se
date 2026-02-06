@@ -8,7 +8,7 @@
 
 **Create B1 lessons - lesson by lesson, wait for user test after each**
 
-Current: `B2-M07` (Subjektive Modalverben) - **MODULE COMPLETE - READY FOR USER TEST**
+Current: `B2-M08` (Textverknüpfung) - **MODULE COMPLETE - READY FOR USER TEST**
 
 ---
 
@@ -27,7 +27,7 @@ Current: `B2-M07` (Subjektive Modalverben) - **MODULE COMPLETE - READY FOR USER 
 | A1 | 14 | 56+ | Complete |
 | A2 | 18 | 72 | **Complete** ✅ |
 | B1 | 20 | 80 | **Complete** ✅ |
-| B2 | 7 | 28 | Module 7 complete |
+| B2 | 8 | 32 | Module 8 complete |
 
 ### A2 Completion (2026-02-05)
 
@@ -314,8 +314,9 @@ Current: `B2-M07` (Subjektive Modalverben) - **MODULE COMPLETE - READY FOR USER 
 | M05 | Konnektoren für Argumentation | 4/4 | ✅ Complete |
 | M06 | Komplexe Attribute | 4/4 | ✅ Complete |
 | M07 | Subjektive Modalverben | 4/4 | ✅ Complete |
+| M08 | Textverknüpfung | 4/4 | ✅ Complete |
 
-**Total B2: 28 lessons**
+**Total B2: 32 lessons**
 
 ---
 
@@ -393,6 +394,17 @@ Current: `B2-M07` (Subjektive Modalverben) - **MODULE COMPLETE - READY FOR USER 
 | B2-M07-L02 | dürfen & sollen (probability and hearsay) | ✅ Complete |
 | B2-M07-L03 | wollen & mögen (doubt and concession) | ✅ Complete |
 | B2-M07-L04 | Zusammenfassung | ✅ Complete |
+
+---
+
+## B2 Module 8: Textverknüpfung (Text Cohesion)
+
+| Lesson | Title | Status |
+|--------|-------|--------|
+| B2-M08-L01 | Demonstrativpronomen (dieser, jener, derjenige) | ✅ Complete |
+| B2-M08-L02 | Pronominaladverbien (dafür, dagegen, damit) | ✅ Complete |
+| B2-M08-L03 | Verweisende Ausdrücke (Ersteres/Letzteres, wie erwähnt) | ✅ Complete |
+| B2-M08-L04 | Zusammenfassung | ✅ Complete |
 
 ---
 

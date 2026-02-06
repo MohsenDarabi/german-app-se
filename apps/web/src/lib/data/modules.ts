@@ -1876,6 +1876,37 @@ const DE_FA_B2_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/B2/B2-M07-L04"
       }
     ]
+  },
+  {
+    id: "module-08",
+    title: "بخش ۸: Textverknüpfung",
+    level: "B2",
+    lessons: [
+      {
+        id: "B2-M08-L01",
+        title: "Demonstrativpronomen - ضمایر اشاره",
+        description: "یاد بگیرید ضمایر اشاره برای پیوند متن: dieser، jener، derjenige، derselbe.",
+        path: "/learn/de-fa/B2/B2-M08-L01"
+      },
+      {
+        id: "B2-M08-L02",
+        title: "Pronominaladverbien - قیدهای ضمیری",
+        description: "یاد بگیرید قیدهای ضمیری برای ارجاع: dafür، dagegen، damit، darauf.",
+        path: "/learn/de-fa/B2/B2-M08-L02"
+      },
+      {
+        id: "B2-M08-L03",
+        title: "Verweisende Ausdrücke - عبارات ارجاعی",
+        description: "یاد بگیرید عبارات ارجاع: Ersteres/Letzteres، wie erwähnt، oben genannt.",
+        path: "/learn/de-fa/B2/B2-M08-L03"
+      },
+      {
+        id: "B2-M08-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل پیوند متن: ضمایر اشاره، قیدهای ضمیری و عبارات ارجاع.",
+        path: "/learn/de-fa/B2/B2-M08-L04"
+      }
+    ]
   }
 ];
 

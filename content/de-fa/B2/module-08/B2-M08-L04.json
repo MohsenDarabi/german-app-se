@@ -1,0 +1,527 @@
+{
+  "id": "B2-M08-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Textverknüpfung: Zusammenfassung", "fa": "پیوند متنی: جمع‌بندی" },
+  "description": "مرور جامع تمام عناصر انسجام متنی در آلمانی: ضمایر اشاره (dieser, jener, derjenige, derselbe)، قیدهای ضمیری (dafür, dagegen, damit, darüber, wofür, womit)، و عبارات ارجاعی (Ersteres/Letzteres, das Folgende, wie erwähnt). تمرکز بر ایجاد متون منسجم و یکپارچه.",
+  "level": "B2",
+  "module": 8,
+  "lessonNumber": 4,
+  "totalSteps": 45,
+  "estimatedMinutes": 45,
+  "vocabulary": [
+    { "de": "die Textverknüpfung", "fa": "پیوند متنی، اتصال متن", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "der Zusammenhang", "fa": "ارتباط، پیوستگی", "grammar": { "pos": "noun", "gender": "masculine" } },
+    { "de": "die Kohärenz", "fa": "انسجام", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "verweisen auf", "fa": "ارجاع دادن به", "grammar": { "pos": "verb" } },
+    { "de": "aufgreifen", "fa": "برداشتن، اشاره کردن به", "grammar": { "pos": "verb" } },
+    { "de": "zusammenfassen", "fa": "خلاصه کردن، جمع‌بندی کردن", "grammar": { "pos": "verb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "عناصر پیوند متنی در آلمانی",
+      "content": "**Textverknüpfung = پیوند متنی**\n\nبرای نوشتن متون منسجم در آلمانی، از سه دسته ابزار استفاده می‌کنیم:\n\n**1. Demonstrativpronomen (ضمایر اشاره):**\n- dieser/diese/dieses = این\n- jener/jene/jenes = آن\n- derjenige/diejenige = آن کسی که\n- derselbe/dieselbe = همان\n\n**2. Pronominaladverbien (قیدهای ضمیری):**\n- da + Präposition: dafür, dagegen, damit, darüber\n- wo + Präposition: wofür, womit, worüber\n\n**3. Verweisende Ausdrücke (عبارات ارجاعی):**\n- Ersteres/Letzteres = اولی/آخری\n- das Folgende = موارد زیر\n- wie erwähnt = همان‌طور که گفته شد\n\n**نکته برای فارسی‌زبانان:**\nدر فارسی از «این»، «آن»، «همان» و «که» استفاده می‌کنیم. آلمانی ابزارهای دقیق‌تری دارد.",
+      "examples": [
+        { "de": "Ich habe zwei Bücher. Dieses ist interessanter als jenes.", "fa": "دو کتاب دارم. این از آن جالب‌تر است." },
+        { "de": "Er sprach über das Problem. Darüber wurde viel diskutiert.", "fa": "او درباره مشکل صحبت کرد. درباره آن بحث زیادی شد." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "die Textverknüpfung", "fa": "پیوند متنی، اتصال متن" },
+      "example": { "text": { "de": "Eine gute Textverknüpfung macht den Text flüssig und verständlich.", "fa": "پیوند متنی خوب، متن را روان و قابل فهم می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Textverknüpfung",
+      "translation": "پیوند متنی",
+      "syllables": ["Text", "ver", "knüp", "fung"],
+      "distractors": ["Teks", "vor", "knup", "feng"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "der Zusammenhang", "fa": "ارتباط، پیوستگی" },
+      "example": { "text": { "de": "Der Zusammenhang zwischen den Sätzen muss klar sein.", "fa": "ارتباط بین جملات باید واضح باشد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Zusammenhang",
+      "translation": "ارتباط، پیوستگی",
+      "syllables": ["Zu", "sam", "men", "hang"],
+      "distractors": ["Za", "som", "man", "heng"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "die Kohärenz", "fa": "انسجام" },
+      "example": { "text": { "de": "Die Kohärenz eines Textes hängt von guten Verknüpfungen ab.", "fa": "انسجام یک متن به پیوندهای خوب بستگی دارد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Kohärenz",
+      "translation": "انسجام",
+      "syllables": ["Ko", "hä", "renz"],
+      "distractors": ["Ka", "he", "rans", "ha"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "Demonstrativpronomen: dieser, jener, derjenige, derselbe",
+      "content": "**ضمایر اشاره برای ارجاع در متن:**\n\n**dieser/diese/dieses (این - نزدیک):**\n- Das Buch ist interessant. **Dieses** Buch empfehle ich.\n- این کتاب جالب است. **این** کتاب را پیشنهاد می‌کنم.\n\n**jener/jene/jenes (آن - دور):**\n- Ich mag dieses Café, nicht **jenes**.\n- این کافه را دوست دارم، نه **آن** را.\n\n**derjenige/diejenige (آن کسی که):**\n- **Derjenige**, der lügt, verliert Vertrauen.\n- **آن کسی که** دروغ می‌گوید، اعتماد را از دست می‌دهد.\n\n**derselbe/dieselbe (همان):**\n- Er trägt **denselben** Anzug wie gestern.\n- او **همان** کت‌وشلوار دیروز را پوشیده.\n\n**صرف با جنس و حالت:**\n| | مذکر | مونث | خنثی | جمع |\n|---|------|------|------|-----|\n| Nom. | dieser | diese | dieses | diese |\n| Akk. | diesen | diese | dieses | diese |\n| Dat. | diesem | dieser | diesem | diesen |",
+      "examples": [
+        { "de": "Dieser Vorschlag ist besser als jener.", "fa": "این پیشنهاد بهتر از آن است." },
+        { "de": "Derjenige, der zuerst kommt, gewinnt.", "fa": "آن کسی که اول برسد، برنده می‌شود." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام ضمیر برای اشاره به چیز نزدیک استفاده می‌شود؟",
+      "options": [
+        "jener",
+        "dieser",
+        "derselbe",
+        "derjenige"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! dieser برای اشاره به چیز نزدیک است.", "incorrect": "dieser = این (نزدیک)، jener = آن (دور)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "ضمیر اشاره مناسب را انتخاب کنید (نزدیک)",
+      "sentence": "Ich habe zwei Autos. {0} Auto ist neu, das andere ist alt.",
+      "options": ["Jenes", "Dieses", "Dasselbe", "Solches"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "dieses برای اشاره به چیز نزدیک استفاده می‌شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "ضمیر اشاره مناسب را انتخاب کنید (همان)",
+      "sentence": "Er macht immer {0} Fehler wie vorher.",
+      "options": ["diesen", "jenen", "denselben", "solchen"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "derselbe/dieselbe/dasselbe = همان. Er macht denselben Fehler = همان اشتباه را می‌کند." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "verweisen auf", "fa": "ارجاع دادن به" },
+      "example": { "text": { "de": "Der Autor verweist auf frühere Studien.", "fa": "نویسنده به مطالعات قبلی ارجاع می‌دهد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "verweisen",
+      "translation": "ارجاع دادن",
+      "syllables": ["ver", "wei", "sen"],
+      "distractors": ["vor", "wai", "san", "weh"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "Pronominaladverbien: da(r)- و wo(r)-",
+      "content": "**قیدهای ضمیری برای جایگزینی حرف اضافه + ضمیر:**\n\n**da(r) + Präposition (برای اشاره به چیز):**\n- dafür = برای آن\n- dagegen = در مقابل آن\n- damit = با آن\n- darüber = درباره آن\n- daran = به آن\n- darauf = روی آن\n\n**wo(r) + Präposition (برای سوال یا جمله موصولی):**\n- wofür = برای چه\n- womit = با چه\n- worüber = درباره چه\n- woran = به چه\n- worauf = روی چه\n\n**قاعده r:**\n- اگر حرف اضافه با صدادار شروع شود: da**r**über, wo**r**auf\n- اگر با بی‌صدا شروع شود: da**mit**, wo**für**\n\n**چرا مهم است؟**\n- ❌ Er sprach über das. (نادرست)\n- ✅ Er sprach **darüber**. (درست)\n\n**نکته:** برای اشخاص از حرف اضافه + ضمیر استفاده کنید:\n- über ihn (درباره او) نه *darüber",
+      "examples": [
+        { "de": "Das Problem ist bekannt. Darüber wurde viel diskutiert.", "fa": "مشکل شناخته شده است. درباره آن بحث زیادی شد." },
+        { "de": "Wofür interessierst du dich?", "fa": "به چه چیزی علاقه‌مندی؟" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله صحیح است؟",
+      "options": [
+        "Ich interessiere mich für das.",
+        "Ich interessiere mich dafür.",
+        "Ich interessiere für das mich.",
+        "Ich mich interessiere dafür."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "درست! dafür جایگزین für + das می‌شود.", "incorrect": "برای اشاره به چیز، از da(r)+ حرف اضافه استفاده کنید: dafür, damit, darüber" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "قید ضمیری مناسب را انتخاب کنید",
+      "sentence": "Er hat einen Plan. Ich bin {0} einverstanden.",
+      "options": ["dafür", "damit", "darüber", "dagegen"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "einverstanden sein mit = موافق بودن با. damit = با آن." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "قید ضمیری مناسب را انتخاب کنید",
+      "sentence": "Das Thema ist wichtig. {0} müssen wir sprechen.",
+      "options": ["Dafür", "Damit", "Darüber", "Dagegen"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "sprechen über = صحبت کردن درباره. darüber = درباره آن." }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "aufgreifen", "fa": "برداشتن، اشاره کردن به" },
+      "example": { "text": { "de": "Ich möchte einen früheren Punkt wieder aufgreifen.", "fa": "می‌خواهم به یک نکته قبلی دوباره اشاره کنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "aufgreifen",
+      "translation": "برداشتن، اشاره کردن به",
+      "syllables": ["auf", "grei", "fen"],
+      "distractors": ["of", "grai", "fan", "gree"]
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "بحث درباره یک پروژه",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Büro, Projektbesprechung", "fa": "در دفتر، جلسه پروژه" }
+      },
+      "lines": [
+        { "speaker": "Maria", "text": { "de": "Wir haben zwei Optionen: Option A und Option B. Erstere ist billiger, Letztere ist schneller.", "fa": "دو گزینه داریم: گزینه A و B. اولی ارزان‌تر است، آخری سریع‌تر." }, "mood": "neutral" },
+        { "speaker": "Thomas", "text": { "de": "Ich bin für Option A. Dafür spricht auch die Qualität.", "fa": "من موافق گزینه A هستم. کیفیت هم به نفع آن است." }, "mood": "happy" },
+        { "speaker": "Maria", "text": { "de": "Dagegen könnte man sagen, dass Zeit auch Geld ist.", "fa": "در مقابل می‌توان گفت که زمان هم پول است." }, "mood": "confused" },
+        { "speaker": "Thomas", "text": { "de": "Das stimmt. Wie bereits erwähnt, müssen wir das Budget beachten.", "fa": "درست است. همان‌طور که قبلاً گفته شد، باید بودجه را در نظر بگیریم." }, "mood": "neutral" },
+        { "speaker": "Maria", "text": { "de": "Einverstanden. Fassen wir zusammen: Wir wählen diejenige Option, die das beste Preis-Leistungs-Verhältnis bietet.", "fa": "موافقم. خلاصه کنیم: آن گزینه‌ای را انتخاب می‌کنیم که بهترین نسبت قیمت به کیفیت را دارد." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "ماریا چگونه به دو گزینه اشاره می‌کند؟", "options": ["diese und jene", "Erstere und Letztere", "die erste und die zweite"], "correctIndex": 1, "explanation": "Erstere (اولی) و Letztere (آخری) برای ارجاع به دو چیز قبلی استفاده می‌شوند." },
+        { "question": "توماس با «dafür» به چه اشاره می‌کند؟", "options": ["Option B", "Option A", "کیفیت"], "correctIndex": 1, "explanation": "dafür = برای آن (Option A که توماس آن را انتخاب کرده)." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را مرتب کنید (قید ضمیری)",
+      "words": ["darüber", "diskutiert", "Wir", "haben"],
+      "correctOrder": [2, 3, 0, 1],
+      "correctSentence": { "de": "Wir haben darüber diskutiert.", "fa": "ما درباره آن بحث کردیم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را مرتب کنید (ضمیر اشاره)",
+      "words": ["besser", "ist", "Dieser Vorschlag", "als jener"],
+      "correctOrder": [2, 1, 0, 3],
+      "correctSentence": { "de": "Dieser Vorschlag ist besser als jener.", "fa": "این پیشنهاد بهتر از آن است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "«darüber» می‌تواند جایگزین «über ihn» (درباره او - شخص) شود.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! da(r)+ حرف اضافه فقط برای اشیا استفاده می‌شود. برای اشخاص: über ihn/sie." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "«Ersteres» به اولین مورد از دو چیز ذکر شده اشاره می‌کند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! Ersteres = اولی، Letzteres = آخری (از دو چیز)." }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "zusammenfassen", "fa": "خلاصه کردن، جمع‌بندی کردن" },
+      "example": { "text": { "de": "Lassen Sie mich das Gesagte kurz zusammenfassen.", "fa": "اجازه دهید گفته‌ها را به طور خلاصه جمع‌بندی کنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "zusammenfassen",
+      "translation": "جمع‌بندی کردن",
+      "syllables": ["zu", "sam", "men", "fas", "sen"],
+      "distractors": ["za", "som", "man", "fos"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "عبارت ارجاعی مناسب را انتخاب کنید",
+      "sentence": "Es gibt Vor- und Nachteile. {0} überwiegt in diesem Fall.",
+      "options": ["Ersteres", "Letzteres", "Dieses", "Jenes"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Ersteres = اولی (Vorteile). Letzteres = آخری (Nachteile)." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "عبارت ارجاعی مناسب را انتخاب کنید",
+      "sentence": "{0} wurde bereits in der Einleitung angesprochen.",
+      "options": ["Das Folgende", "Wie erwähnt", "Ersteres", "Derjenige"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "wie erwähnt = همان‌طور که گفته شد. برای ارجاع به مطلب قبلی." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "ارائه یک گزارش",
+      "scene": {
+        "location": "conference room",
+        "description": { "de": "Im Konferenzraum, Präsentation", "fa": "در اتاق کنفرانس، ارائه" }
+      },
+      "lines": [
+        { "speaker": "Dr. Schmidt", "text": { "de": "Ich werde über das Folgende sprechen: erstens die Methode, zweitens die Ergebnisse.", "fa": "درباره موارد زیر صحبت خواهم کرد: اول روش، دوم نتایج." }, "mood": "neutral" },
+        { "speaker": "Dr. Schmidt", "text": { "de": "Die Methode basiert auf derjenigen von Professor Müller.", "fa": "روش بر اساس روش پروفسور مولر است." }, "mood": "neutral" },
+        { "speaker": "Zuschauer", "text": { "de": "Worauf basieren die Ergebnisse genau?", "fa": "نتایج دقیقاً بر چه اساسی هستند؟" }, "mood": "confused" },
+        { "speaker": "Dr. Schmidt", "text": { "de": "Darauf komme ich gleich. Wie bereits erwähnt, war die Stichprobe groß.", "fa": "همین الان به آن می‌رسم. همان‌طور که گفته شد، نمونه بزرگ بود." }, "mood": "happy" },
+        { "speaker": "Dr. Schmidt", "text": { "de": "Zusammenfassend lässt sich sagen: Dieselben Ergebnisse wurden in drei Tests bestätigt.", "fa": "به طور خلاصه می‌توان گفت: همان نتایج در سه آزمایش تأیید شدند." }, "mood": "excited" }
+      ],
+      "questions": [
+        { "question": "دکتر اشمیت با «derjenigen» به چه اشاره می‌کند؟", "options": ["روش خودش", "روش پروفسور مولر", "نتایج"], "correctIndex": 1, "explanation": "derjenigen (مونث Dativ) = روش آن کسی که = روش پروفسور مولر." },
+        { "question": "«darauf» در پاسخ دکتر اشمیت به چه اشاره دارد؟", "options": ["نتایج", "سوال تماشاچی", "روش"], "correctIndex": 1, "explanation": "darauf = به آن (سوال). Darauf komme ich = به آن می‌رسم." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله را مرتب کنید (عبارت ارجاعی)",
+      "words": ["erwähnt", "Wie", "ist", "bereits", "das Thema wichtig"],
+      "correctOrder": [1, 3, 0, 2, 4],
+      "correctSentence": { "de": "Wie bereits erwähnt, ist das Thema wichtig.", "fa": "همان‌طور که قبلاً گفته شد، موضوع مهم است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "«derselbe» و «der gleiche» دقیقاً یک معنی دارند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! derselbe = همان یکی (identical). der gleiche = مشابه (similar). Er trägt denselben Anzug = همان کت‌وشلوار. Er trägt den gleichen Anzug = کت‌وشلوار مشابه." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "عناصر پیوند متنی را با کاربردشان جفت کنید",
+      "items": [
+        { "id": "i1", "text": "dieser/jener" },
+        { "id": "i2", "text": "derselbe" },
+        { "id": "i3", "text": "dafür/dagegen" },
+        { "id": "i4", "text": "Ersteres/Letzteres" },
+        { "id": "i5", "text": "wie erwähnt" },
+        { "id": "i6", "text": "das Folgende" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "اشاره به نزدیک/دور" },
+        { "id": "m2", "text": "همان چیز (یکسان)" },
+        { "id": "m3", "text": "جایگزین für/gegen + das" },
+        { "id": "m4", "text": "اولی/آخری از دو چیز" },
+        { "id": "m5", "text": "ارجاع به گفته قبلی" },
+        { "id": "m6", "text": "معرفی مطالب بعدی" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "درباره آن بحث زیادی شد.",
+      "sentenceTemplate": "{0} wurde viel {1}.",
+      "options": ["Darüber", "Dafür", "diskutiert", "gesprochen"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Darüber wurde viel diskutiert.", "fa": "درباره آن بحث زیادی شد." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "همان‌طور که قبلاً گفته شد، این مهم است.",
+      "sentenceTemplate": "{0} bereits {1}, ist das wichtig.",
+      "options": ["Wie", "Das", "erwähnt", "gesagt"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Wie bereits erwähnt, ist das wichtig.", "fa": "همان‌طور که قبلاً گفته شد، این مهم است." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: مقاله علمی",
+      "passage": {
+        "de": "Die Studie untersuchte zwei Methoden: Methode A und Methode B. Erstere war traditionell, Letztere innovativ. Dafür spricht, dass Methode B schnellere Ergebnisse lieferte. Dagegen könnte man einwenden, dass die Kosten höher waren. Derjenige Forscher, der die Studie leitete, argumentierte wie folgt: Die Qualität der Ergebnisse rechtfertigt die Kosten. Wie bereits in früheren Publikationen erwähnt, ist dasselbe Muster bei ähnlichen Experimenten zu beobachten. Zusammenfassend lässt sich sagen, dass beide Methoden ihre Berechtigung haben.",
+        "fa": "این مطالعه دو روش را بررسی کرد: روش A و روش B. اولی سنتی بود، آخری نوآورانه. به نفع آن است که روش B نتایج سریع‌تری داد. در مقابل می‌توان اعتراض کرد که هزینه‌ها بالاتر بود. آن محققی که مطالعه را هدایت کرد، این‌گونه استدلال کرد: کیفیت نتایج هزینه‌ها را توجیه می‌کند. همان‌طور که در نشریات قبلی گفته شد، همان الگو در آزمایش‌های مشابه مشاهده می‌شود. به طور خلاصه می‌توان گفت که هر دو روش جایگاه خود را دارند."
+      },
+      "questions": [
+        { "question": "«Erstere» به کدام روش اشاره دارد؟", "options": ["روش B", "روش A", "هر دو روش"], "correctIndex": 1, "explanation": "Erstere = اولی. روش A اول ذکر شد." },
+        { "question": "«Dafür» در جمله سوم به چه اشاره دارد؟", "options": ["روش A", "روش B", "نتایج"], "correctIndex": 1, "explanation": "Dafür spricht = به نفع آن است (Methode B - روش نوآورانه)." },
+        { "question": "«dasselbe Muster» یعنی چه؟", "options": ["الگوی مشابه", "همان الگوی یکسان", "الگوی متفاوت"], "correctIndex": 1, "explanation": "dasselbe = همان (identical). الگوی یکسانی که قبلاً دیده شده." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die zwei Jobangebote", "fa": "دو پیشنهاد شغلی" },
+      "characters": ["Lisa", "Max"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Lisa hat zwei Jobangebote bekommen und bespricht sie mit Max.", "fa": "لیزا دو پیشنهاد شغلی گرفته و با ماکس درباره‌شان صحبت می‌کند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Ich habe zwei Angebote: eins von einer Bank, eins von einem Startup. Ersteres zahlt mehr, Letzteres ist interessanter.", "fa": "دو پیشنهاد دارم: یکی از بانک، یکی از استارتاپ. اولی بیشتر پول می‌دهد، آخری جالب‌تر است." },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Max",
+          "text": { "de": "Wofür interessierst du dich mehr: Geld oder Spaß?", "fa": "به چه چیزی بیشتر علاقه داری: پول یا لذت؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "ماکس با «wofür» چه می‌پرسد؟",
+          "options": ["برای چه چیزی", "با چه چیزی", "درباره چه چیزی"],
+          "correctIndex": 0,
+          "explanation": "wofür = برای چه (für + was). sich interessieren für = علاقه‌مند بودن به."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Darüber denke ich ständig nach. Derjenige Job, der mehr Wachstum bietet, wäre ideal.", "fa": "مدام درباره آن فکر می‌کنم. آن شغلی که رشد بیشتری ارائه می‌دهد، ایده‌آل خواهد بود." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Max",
+          "text": { "de": "Wie du bereits erwähnt hast, ist das Startup interessanter. Dafür spricht auch die Flexibilität.", "fa": "همان‌طور که قبلاً گفتی، استارتاپ جالب‌تر است. انعطاف‌پذیری هم به نفع آن است." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "ماکس با «wie du bereits erwähnt hast» چه می‌کند؟",
+          "options": ["نظر جدیدی می‌دهد", "به گفته قبلی لیزا ارجاع می‌دهد", "سوال می‌پرسد"],
+          "correctIndex": 1,
+          "explanation": "wie erwähnt = همان‌طور که گفته شد. برای ارجاع به مطلب قبلی."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Dagegen spricht aber das Risiko. Startups können scheitern.", "fa": "ولی ریسک به ضررش است. استارتاپ‌ها می‌توانند شکست بخورند." },
+          "mood": "sad"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Max",
+          "text": { "de": "Stimmt. Aber dieselbe Unsicherheit gibt es überall. Wähle das, womit du glücklich wirst!", "fa": "درست است. ولی همان عدم اطمینان همه‌جا وجود دارد. آن را انتخاب کن که با آن خوشحال می‌شوی!" },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "ماکس با «dieselbe Unsicherheit» چه می‌گوید؟",
+          "options": ["عدم اطمینان مشابهی وجود دارد", "همان عدم اطمینان یکسان در همه‌جا هست", "عدم اطمینان متفاوتی دارد"],
+          "correctIndex": 1,
+          "explanation": "dieselbe = همان (identical). عدم اطمینان در همه مشاغل یکسان است."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: عناصر پیوند متنی",
+      "instruction": "گزینه درست را انتخاب کنید!",
+      "questions": [
+        { "prompt": "اشاره به نزدیک →", "left": "dieser", "right": "jener", "correctSide": "left" },
+        { "prompt": "اشاره به دور →", "left": "dieser", "right": "jener", "correctSide": "right" },
+        { "prompt": "همان (یکسان) →", "left": "derselbe", "right": "solcher", "correctSide": "left" },
+        { "prompt": "über + das = →", "left": "dafür", "right": "darüber", "correctSide": "right" },
+        { "prompt": "für + das = →", "left": "dafür", "right": "damit", "correctSide": "left" },
+        { "prompt": "اولی از دو چیز →", "left": "Ersteres", "right": "Letzteres", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Darüber wurde viel diskutiert.",
+      "translation": "درباره آن بحث زیادی شد."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Wie bereits erwähnt, ist das wichtig.",
+      "translation": "همان‌طور که قبلاً گفته شد، این مهم است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Derjenige, der zuerst kommt, gewinnt.",
+      "translation": "آن کسی که اول برسد، برنده می‌شود."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: پیوند متنی",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "dieser =", "options": ["این (نزدیک)", "آن (دور)"], "correctAnswerIndex": 0 },
+        { "question": "jener =", "options": ["این (نزدیک)", "آن (دور)"], "correctAnswerIndex": 1 },
+        { "question": "derselbe =", "options": ["همان (یکسان)", "مشابه"], "correctAnswerIndex": 0 },
+        { "question": "darüber =", "options": ["برای آن", "درباره آن"], "correctAnswerIndex": 1 },
+        { "question": "Ersteres =", "options": ["اولی", "آخری"], "correctAnswerIndex": 0 },
+        { "question": "wie erwähnt =", "options": ["همان‌طور که گفته شد", "موارد زیر"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: قیدهای ضمیری",
+      "pairs": [
+        { "de": "dafür", "fa": "برای آن" },
+        { "de": "dagegen", "fa": "در مقابل آن" },
+        { "de": "damit", "fa": "با آن" },
+        { "de": "darüber", "fa": "درباره آن" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "عناصر پیوند متنی را پیدا کنید",
+      "targetWords": ["dieser", "jener", "derselbe", "darüber", "dafür", "damit"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "die Textverknüpfung", "fa": "پیوند متنی", "options": ["جمله‌بندی", "پیوند متنی", "ترجمه", "تلفظ"], "correctIndex": 1 },
+        { "de": "verweisen auf", "fa": "ارجاع دادن به", "options": ["اشاره کردن", "ارجاع دادن به", "نوشتن", "خواندن"], "correctIndex": 1 },
+        { "de": "zusammenfassen", "fa": "جمع‌بندی کردن", "options": ["شروع کردن", "جمع‌بندی کردن", "توضیح دادن", "پرسیدن"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! جمع‌بندی پیوند متنی تمام شد!",
+      "message": "شما تمام عناصر انسجام متنی در آلمانی را مرور کردید!",
+      "keyPoints": [
+        "**Demonstrativpronomen:** dieser (نزدیک), jener (دور), derselbe (همان), derjenige (آن کسی که)",
+        "**Pronominaladverbien:** dafür, dagegen, damit, darüber (برای اشیا)",
+        "**wo(r)+:** wofür, womit, worüber (برای سوال یا جمله موصولی)",
+        "**Ersteres/Letzteres:** اولی/آخری از دو چیز",
+        "**wie erwähnt:** همان‌طور که گفته شد",
+        "**das Folgende:** موارد زیر",
+        "**نکته:** da(r)+ فقط برای اشیا، نه اشخاص!"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "die Textverknüpfung", "fa": "پیوند متنی" } },
+        { "word": { "de": "der Zusammenhang", "fa": "ارتباط، پیوستگی" } },
+        { "word": { "de": "die Kohärenz", "fa": "انسجام" } },
+        { "word": { "de": "verweisen auf", "fa": "ارجاع دادن به" } },
+        { "word": { "de": "aufgreifen", "fa": "برداشتن، اشاره کردن به" } },
+        { "word": { "de": "zusammenfassen", "fa": "جمع‌بندی کردن" } }
+      ]
+    }
+  ]
+}

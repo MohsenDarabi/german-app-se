@@ -1,0 +1,522 @@
+{
+  "id": "B2-M08-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Textverknüpfung: Demonstrativpronomen", "fa": "انسجام متن: ضمایر اشاره" },
+  "description": "یاد بگیرید چگونه از ضمایر اشاره آلمانی (dieser، jener، derjenige، derselbe) برای ایجاد انسجام در متن استفاده کنید. این ضمایر با ارجاع به اسم‌های قبلی، متن را روان‌تر و منسجم‌تر می‌کنند.",
+  "level": "B2",
+  "module": 8,
+  "lessonNumber": 1,
+  "totalSteps": 45,
+  "estimatedMinutes": 40,
+  "vocabulary": [
+    { "de": "dieser/diese/dieses", "fa": "این (نزدیک، تازه ذکر شده)", "grammar": { "pos": "pronoun" } },
+    { "de": "jener/jene/jenes", "fa": "آن (دور، قبلاً ذکر شده)", "grammar": { "pos": "pronoun" } },
+    { "de": "derjenige/diejenige/dasjenige", "fa": "آن کسی که، همان که", "grammar": { "pos": "pronoun" } },
+    { "de": "derselbe/dieselbe/dasselbe", "fa": "همان، عین همان", "grammar": { "pos": "pronoun" } },
+    { "de": "die Textverknüpfung", "fa": "انسجام متن، پیوند متنی", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "verweisen auf", "fa": "اشاره کردن به، ارجاع دادن به", "grammar": { "pos": "verb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "ضمایر اشاره برای انسجام متن",
+      "content": "**Demonstrativpronomen zur Textverknüpfung**\n\nضمایر اشاره در آلمانی نقش مهمی در انسجام متن دارند. آن‌ها به اسم‌های قبلی ارجاع می‌دهند و از تکرار جلوگیری می‌کنند.\n\n**چهار ضمیر اشاره اصلی:**\n\n| ضمیر | معنی | کاربرد |\n|------|------|--------|\n| **dieser** | این | ارجاع به نزدیک‌ترین/آخرین اسم |\n| **jener** | آن | ارجاع به دورتر/قدیمی‌تر |\n| **derjenige** | آن کسی که | ارجاع خاص با توضیح |\n| **derselbe** | همان | تاکید بر یکسان بودن |\n\n**نکته برای فارسی‌زبانان:**\nدر فارسی هم «این» و «آن» برای ارجاع استفاده می‌شوند، اما در آلمانی این ضمایر باید از نظر جنس و حالت با اسم مطابقت داشته باشند.",
+      "examples": [
+        { "de": "Ich habe zwei Bücher. Dieses ist interessant.", "fa": "من دو کتاب دارم. این یکی جالب است." },
+        { "de": "Er traf Maria und Peter. Diese war glücklich.", "fa": "او ماریا و پتر را دید. این (ماریا) خوشحال بود." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "dieser/diese/dieses", "fa": "این (نزدیک، تازه ذکر شده)" },
+      "example": { "text": { "de": "Das Buch ist neu. Dieses habe ich gestern gekauft.", "fa": "این کتاب نو است. این را دیروز خریدم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "dieser",
+      "translation": "این (مذکر)",
+      "syllables": ["die", "ser"],
+      "distractors": ["da", "sar", "dis", "zar"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "jener/jene/jenes", "fa": "آن (دور، قبلاً ذکر شده)" },
+      "example": { "text": { "de": "Er sprach von alter Musik. Jene gefällt ihm sehr.", "fa": "او از موسیقی قدیمی صحبت کرد. آن خیلی به او می‌آید." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "jener",
+      "translation": "آن (مذکر)",
+      "syllables": ["je", "ner"],
+      "distractors": ["ja", "nar", "nur", "nor"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "derjenige/diejenige/dasjenige", "fa": "آن کسی که، همان که" },
+      "example": { "text": { "de": "Derjenige, der zuerst kommt, gewinnt.", "fa": "آن کسی که اول بیاید، برنده می‌شود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "derjenige",
+      "translation": "آن کسی که (مذکر)",
+      "syllables": ["der", "je", "ni", "ge"],
+      "distractors": ["dar", "ja", "na", "go"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "dieser/jener: نزدیک در مقابل دور",
+      "content": "**dieser vs. jener در ارجاع**\n\n**dieser** (این) - ارجاع به آخرین/نزدیک‌ترین اسم:\n> Anna und Maria kamen. **Diese** (= Maria) trug ein rotes Kleid.\n> آنا و ماریا آمدند. **این** (= ماریا) لباس قرمز پوشیده بود.\n\n**jener** (آن) - ارجاع به اولین/دورتر اسم:\n> Anna und Maria kamen. **Jene** (= Anna) war müde.\n> آنا و ماریا آمدند. **آن** (= آنا) خسته بود.\n\n**صرف این ضمایر:**\n\n| حالت | مذکر | مونث | خنثی | جمع |\n|------|------|------|------|-----|\n| فاعلی | dieser/jener | diese/jene | dieses/jenes | diese/jene |\n| مفعولی | diesen/jenen | diese/jene | dieses/jenes | diese/jene |\n| اضافی | dieses/jenes | dieser/jener | dieses/jenes | dieser/jener |\n| به‌ای | diesem/jenem | dieser/jener | diesem/jenem | diesen/jenen |\n\n**نکته کاربردی:**\nدر زبان امروزی، jener کمتر استفاده می‌شود و بیشتر در متون رسمی و ادبی دیده می‌شود.",
+      "examples": [
+        { "de": "Peter und Hans sind Brüder. Dieser (Hans) ist älter.", "fa": "پتر و هانس برادرند. این (هانس) بزرگ‌تر است." },
+        { "de": "Peter und Hans sind Brüder. Jener (Peter) ist jünger.", "fa": "پتر و هانس برادرند. آن (پتر) کوچک‌تر است." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "در جمله «Lisa und Emma kamen. Diese war glücklich.» کلمه «Diese» به چه کسی اشاره دارد؟",
+      "options": [
+        "Lisa (اولین نام)",
+        "Emma (آخرین نام)",
+        "هر دو نفر",
+        "نامشخص است"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! «dieser» به آخرین/نزدیک‌ترین اسم ذکر شده اشاره دارد، یعنی Emma.", "incorrect": "«dieser» به آخرین اسم ذکر شده اشاره می‌کند. در اینجا Emma آخرین نام است." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام ضمیر اشاره بیشتر در زبان محاوره امروزی استفاده می‌شود؟",
+      "options": [
+        "jener (آن دور)",
+        "dieser (این نزدیک)",
+        "هر دو به یک اندازه",
+        "فقط در متون ادبی"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "درست! «dieser» در زبان روزمره رایج‌تر است. «jener» بیشتر در متون رسمی و ادبی استفاده می‌شود.", "incorrect": "«dieser» در زبان محاوره امروزی بسیار رایج‌تر از «jener» است." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "derselbe/dieselbe/dasselbe", "fa": "همان، عین همان" },
+      "example": { "text": { "de": "Wir haben denselben Lehrer.", "fa": "ما همان معلم را داریم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "derselbe",
+      "translation": "همان (مذکر)",
+      "syllables": ["der", "sel", "be"],
+      "distractors": ["dar", "sal", "ba", "zal"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "die Textverknüpfung", "fa": "انسجام متن، پیوند متنی" },
+      "example": { "text": { "de": "Gute Textverknüpfung macht einen Text leichter lesbar.", "fa": "انسجام متنی خوب، متن را خواناتر می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "Textverknüpfung",
+      "translation": "انسجام متن",
+      "syllables": ["Text", "ver", "knüp", "fung"],
+      "distractors": ["Takt", "vor", "knap", "fang"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "verweisen auf", "fa": "اشاره کردن به، ارجاع دادن به" },
+      "example": { "text": { "de": "Dieses Pronomen verweist auf den vorherigen Satz.", "fa": "این ضمیر به جمله قبلی اشاره می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "verweisen",
+      "translation": "اشاره کردن",
+      "syllables": ["ver", "wei", "sen"],
+      "distractors": ["vor", "wai", "zon", "wan"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "derselbe در مقابل der gleiche",
+      "content": "**derselbe vs. der gleiche - یک تفاوت مهم!**\n\n**derselbe** = عین همان (یک شیء واحد)\n> Wir fahren **dasselbe** Auto.\n> ما با **همان** ماشین می‌رویم. (یک ماشین، مشترک)\n\n**der gleiche** = مشابه همان (دو شیء یکسان)\n> Wir haben **das gleiche** Auto.\n> ما **ماشین مشابه** داریم. (دو ماشین شبیه هم)\n\n**صرف derselbe:**\nحرف تعریف + selb + پسوند صفت\n\n| حالت | مذکر | مونث | خنثی |\n|------|------|------|------|\n| فاعلی | derselbe | dieselbe | dasselbe |\n| مفعولی | denselben | dieselbe | dasselbe |\n| اضافی | desselben | derselben | desselben |\n| به‌ای | demselben | derselben | demselben |\n\n**نکته برای فارسی‌زبانان:**\nدر فارسی این تفاوت کمتر مشخص است. وقتی می‌گوییم «همان کتاب»، ممکن است منظورمان یک کتاب واحد یا کتاب مشابه باشد. در آلمانی این تفاوت مهم است!",
+      "examples": [
+        { "de": "Sie tragen denselben Mantel. (einen Mantel zusammen)", "fa": "آن‌ها همان پالتو را می‌پوشند. (یک پالتو مشترک)" },
+        { "de": "Sie tragen den gleichen Mantel. (zwei gleiche Mäntel)", "fa": "آن‌ها پالتوی مشابه می‌پوشند. (دو پالتوی شبیه هم)" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "ضمیر اشاره مناسب را انتخاب کنید",
+      "sentence": "Anna und Maria sind Schwestern. {0} ist älter als Maria.",
+      "options": ["Jene", "Diese", "Dieselbe", "Diejenige"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Jene درست است چون به اولین اسم (Anna) اشاره می‌کند، نه آخرین." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Wir arbeiten in {0} Büro. (همان دفتر - یک دفتر مشترک)",
+      "options": ["demselben", "dem gleichen", "diesem", "jenem"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "demselben درست است چون منظور یک دفتر واحد و مشترک است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "ضمیر مناسب را انتخاب کنید",
+      "sentence": "{0}, der das getan hat, muss sich entschuldigen.",
+      "options": ["Derjenige", "Dieser", "Jener", "Derselbe"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Derjenige درست است چون با جمله نسبی (der das getan hat) همراه است و به شخص خاصی اشاره می‌کند." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را با ضمیر اشاره مرتب کنید",
+      "words": ["interessant", "Buch", "ist", "Dieses"],
+      "correctOrder": [3, 1, 2, 0],
+      "correctSentence": { "de": "Dieses Buch ist interessant.", "fa": "این کتاب جالب است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["der", "kommt", "zuerst", "Derjenige", "gewinnt"],
+      "correctOrder": [3, 0, 2, 1, 4],
+      "correctSentence": { "de": "Derjenige der zuerst kommt gewinnt.", "fa": "آن کسی که اول بیاید برنده می‌شود." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله را با derselbe مرتب کنید",
+      "words": ["Meinung", "haben", "Wir", "dieselbe"],
+      "correctOrder": [2, 1, 3, 0],
+      "correctSentence": { "de": "Wir haben dieselbe Meinung.", "fa": "ما همان نظر را داریم." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جمله «Tom und Max sind Freunde. Dieser ist sportlich.» کلمه «Dieser» به Tom اشاره دارد.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! «dieser» به آخرین اسم ذکر شده اشاره می‌کند، یعنی Max، نه Tom." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "«derselbe» و «der gleiche» دقیقاً یک معنی دارند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! derselbe = یک شیء واحد، der gleiche = دو شیء مشابه. این تفاوت مهم است!" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "ضمیر «derjenige» معمولاً با جمله نسبی استفاده می‌شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! derjenige معمولاً با جمله نسبی می‌آید: Derjenige, der... / Diejenige, die..." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "بحث درباره یک کتاب",
+      "scene": {
+        "location": "library",
+        "description": { "de": "In einer Bibliothek sprechen zwei Studenten.", "fa": "در یک کتابخانه دو دانشجو صحبت می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Lena", "text": { "de": "Ich lese gerade zwei Romane: einen von Kafka und einen von Goethe.", "fa": "من الان دو رمان می‌خوانم: یکی از کافکا و یکی از گوته." }, "mood": "neutral" },
+        { "speaker": "Paul", "text": { "de": "Welcher gefällt dir besser? Dieser oder jener?", "fa": "کدام بیشتر خوشت می‌آید؟ این یا آن؟" }, "mood": "confused" },
+        { "speaker": "Lena", "text": { "de": "Dieser von Goethe ist leichter zu lesen, aber jener von Kafka ist tiefgründiger.", "fa": "این از گوته آسان‌تر خوانده می‌شود، اما آن از کافکا عمیق‌تر است." }, "mood": "happy" },
+        { "speaker": "Paul", "text": { "de": "Interessant! Derjenige, der beide gelesen hat, kann besser urteilen.", "fa": "جالب است! آن کسی که هر دو را خوانده، بهتر می‌تواند قضاوت کند." }, "mood": "neutral" },
+        { "speaker": "Lena", "text": { "de": "Genau. Möchtest du dasselbe Buch von Kafka leihen?", "fa": "دقیقاً. می‌خواهی همان کتاب کافکا را امانت بگیری؟" }, "mood": "excited" }
+      ],
+      "questions": [
+        { "question": "«dieser» در گفتار لنا به کدام کتاب اشاره دارد؟", "options": ["کتاب کافکا", "کتاب گوته", "هر دو کتاب"], "correctIndex": 1, "explanation": "dieser به آخرین اسم ذکر شده اشاره می‌کند. گوته آخرین بود، پس dieser = کتاب گوته." },
+        { "question": "لنا از «dasselbe» چگونه استفاده کرد؟", "options": ["برای کتاب مشابه", "برای همان کتاب واحد", "برای کتاب جدید"], "correctIndex": 1, "explanation": "dasselbe Buch = همان کتاب واحد که لنا دارد می‌خواند." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "ضمیر مناسب را انتخاب کنید",
+      "sentence": "Ich habe den Film zweimal gesehen. {0} Film war wirklich toll.",
+      "options": ["Dieser", "Jener", "Derselbe", "Derjenige"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Dieser درست است چون به فیلمی که تازه ذکر شد اشاره می‌کند." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Wir haben {0} Idee gehabt! (ما همان ایده را داشتیم - یک ایده مشترک)",
+      "options": ["dieselbe", "die gleiche", "diese", "jene"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "dieselbe درست است چون منظور یک ایده واحد و مشترک است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "ضمیر صحیح را انتخاب کنید",
+      "sentence": "{0}, die das Problem gelöst hat, bekommt einen Preis.",
+      "options": ["Diejenige", "Diese", "Jene", "Dieselbe"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Diejenige درست است چون با جمله نسبی (die das Problem gelöst hat) همراه است." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در جلسه کاری",
+      "scene": {
+        "location": "office meeting room",
+        "description": { "de": "In einem Besprechungsraum im Büro.", "fa": "در اتاق جلسه در دفتر." }
+      },
+      "lines": [
+        { "speaker": "Chef", "text": { "de": "Wir haben zwei Projekte: das Marketing-Projekt und das IT-Projekt.", "fa": "ما دو پروژه داریم: پروژه بازاریابی و پروژه IT." }, "mood": "neutral" },
+        { "speaker": "Anna", "text": { "de": "Dieses IT-Projekt braucht mehr Budget.", "fa": "این پروژه IT به بودجه بیشتری نیاز دارد." }, "mood": "confused" },
+        { "speaker": "Chef", "text": { "de": "Und jenes Marketing-Projekt? Was ist damit?", "fa": "و آن پروژه بازاریابی؟ آن چطور؟" }, "mood": "surprised" },
+        { "speaker": "Max", "text": { "de": "Diejenigen, die am Marketing arbeiten, brauchen neue Software.", "fa": "آن‌هایی که روی بازاریابی کار می‌کنند، به نرم‌افزار جدید نیاز دارند." }, "mood": "neutral" },
+        { "speaker": "Chef", "text": { "de": "Gut. Dieselbe Software kann für beide Projekte verwendet werden.", "fa": "خوب. همان نرم‌افزار می‌تواند برای هر دو پروژه استفاده شود." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "آنا از «dieses» برای کدام پروژه استفاده کرد؟", "options": ["پروژه بازاریابی", "پروژه IT", "هر دو"], "correctIndex": 1, "explanation": "آنا گفت «Dieses IT-Projekt» یعنی این پروژه IT که آخرین بار ذکر شده بود." },
+        { "question": "رئیس از «dieselbe» برای چه چیزی استفاده کرد؟", "options": ["پروژه‌ها", "نرم‌افزار", "بودجه"], "correctIndex": 1, "explanation": "رئیس گفت: «Dieselbe Software» یعنی یک نرم‌افزار واحد برای هر دو پروژه." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "ضمایر اشاره را با کاربردشان جفت کنید",
+      "items": [
+        { "id": "i1", "text": "dieser/diese/dieses" },
+        { "id": "i2", "text": "jener/jene/jenes" },
+        { "id": "i3", "text": "derjenige/diejenige" },
+        { "id": "i4", "text": "derselbe/dieselbe" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "ارجاع به آخرین اسم ذکر شده (نزدیک)" },
+        { "id": "m2", "text": "ارجاع به اولین اسم ذکر شده (دور)" },
+        { "id": "m3", "text": "ارجاع خاص با جمله نسبی" },
+        { "id": "m4", "text": "تاکید بر یکسان بودن (یک شیء واحد)" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "آن کسی که اول بیاید، برنده می‌شود.",
+      "sentenceTemplate": "{0}, der zuerst {1}, gewinnt.",
+      "options": ["Derjenige", "Dieser", "kommt", "geht", "Jener", "läuft"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Derjenige, der zuerst kommt, gewinnt.", "fa": "آن کسی که اول بیاید، برنده می‌شود." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "ما همان نظر را داریم.",
+      "sentenceTemplate": "Wir haben {0} {1}.",
+      "options": ["dieselbe", "die gleiche", "Meinung", "Idee", "diese", "Gedanke"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Wir haben dieselbe Meinung.", "fa": "ما همان نظر را داریم." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: انسجام در متن آکادمیک",
+      "passage": {
+        "de": "In der Studie wurden zwei Gruppen untersucht: die Kontrollgruppe und die Testgruppe. Diese (die Testgruppe) erhielt das neue Medikament, jene (die Kontrollgruppe) erhielt ein Placebo.\n\nDiejenigen Teilnehmer, die regelmäßig an den Tests teilnahmen, zeigten bessere Ergebnisse. Interessanterweise reagierten beide Gruppen auf dieselbe Weise auf Stress.\n\nDer Forscher, derselbe, der die Studie 2020 begonnen hatte, präsentierte die Ergebnisse auf einer Konferenz.",
+        "fa": "در این مطالعه دو گروه بررسی شدند: گروه کنترل و گروه آزمایش. این (گروه آزمایش) داروی جدید دریافت کرد، آن (گروه کنترل) دارونما دریافت کرد.\n\nآن شرکت‌کنندگانی که به طور منظم در آزمایش‌ها شرکت کردند، نتایج بهتری نشان دادند. جالب است که هر دو گروه به همان شکل به استرس واکنش نشان دادند.\n\nپژوهشگر، همان کسی که مطالعه را در ۲۰۲۰ شروع کرده بود، نتایج را در یک کنفرانس ارائه داد."
+      },
+      "questions": [
+        { "question": "«Diese» در متن به کدام گروه اشاره دارد؟", "options": ["گروه کنترل", "گروه آزمایش", "هر دو گروه"], "correctIndex": 1, "explanation": "Diese به آخرین اسم ذکر شده اشاره می‌کند: die Testgruppe (گروه آزمایش)." },
+        { "question": "چرا از «dieselbe Weise» استفاده شده؟", "options": ["دو روش مشابه", "یک روش واحد برای هر دو", "روش جدید"], "correctIndex": 1, "explanation": "dieselbe Weise = همان روش واحد، یعنی هر دو گروه دقیقاً یکسان واکنش نشان دادند." },
+        { "question": "«Diejenigen» در متن به چه کسانی اشاره دارد؟", "options": ["همه شرکت‌کنندگان", "شرکت‌کنندگان منظم", "پژوهشگران"], "correctIndex": 1, "explanation": "Diejenigen Teilnehmer, die regelmäßig teilnahmen = آن شرکت‌کنندگانی که منظم بودند." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Das verlorene Handy", "fa": "گوشی گمشده" },
+      "characters": ["Sophie", "Jan"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Sophie sucht verzweifelt ihr Handy.", "fa": "سوفی با ناامیدی دنبال گوشی‌اش می‌گردد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sophie",
+          "text": { "de": "Jan, hast du mein Handy gesehen? Ich kann es nicht finden!", "fa": "یان، گوشی من را دیدی؟ نمی‌توانم پیدایش کنم!" },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Jan",
+          "text": { "de": "Ist es dieses schwarze hier auf dem Tisch?", "fa": "این سیاه روی میز است؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "یان از کدام ضمیر اشاره استفاده کرد؟",
+          "options": ["jenes", "dieses", "dasselbe"],
+          "correctIndex": 1,
+          "explanation": "یان گفت «dieses» چون گوشی نزدیک و قابل مشاهده بود."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sophie",
+          "text": { "de": "Nein, das ist deins. Meins ist weiß. Wir haben nicht dasselbe Handy!", "fa": "نه، این مال توست. مال من سفید است. ما همان گوشی را نداریم!" },
+          "mood": "sad"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Jan",
+          "text": { "de": "Stimmt! Aber wir haben das gleiche Modell, nur in verschiedenen Farben.", "fa": "درسته! اما ما مدل مشابه داریم، فقط با رنگ‌های مختلف." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "تفاوت بین «dasselbe» و «das gleiche» در این مکالمه چیست؟",
+          "options": ["هیچ تفاوتی ندارند", "dasselbe = یک گوشی واحد، das gleiche = دو گوشی مشابه", "das gleiche = یک گوشی واحد"],
+          "correctIndex": 1,
+          "explanation": "سوفی گفت: ما dasselbe Handy نداریم (یک گوشی مشترک). یان گفت: اما das gleiche Modell داریم (دو گوشی مشابه)."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sophie",
+          "text": { "de": "Ah! Hier ist es! Unter der Zeitung! Derjenige, der diese Zeitung hier hingelegt hat, hat mein Handy versteckt!", "fa": "آها! اینجاست! زیر روزنامه! آن کسی که این روزنامه را اینجا گذاشته، گوشی من را قایم کرده!" },
+          "mood": "excited"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Jan",
+          "text": { "de": "Das war ich! Entschuldigung!", "fa": "آن من بودم! ببخشید!" },
+          "mood": "surprised"
+        },
+        {
+          "type": "question",
+          "question": "سوفی از «derjenige» در چه ساختاری استفاده کرد؟",
+          "options": ["بدون جمله نسبی", "با جمله نسبی", "به جای dieser"],
+          "correctIndex": 1,
+          "explanation": "سوفی گفت: Derjenige, der diese Zeitung... - با جمله نسبی برای مشخص کردن شخص."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: ضمایر اشاره",
+      "instruction": "ضمیر مناسب را انتخاب کنید",
+      "questions": [
+        { "prompt": "ارجاع به آخرین اسم:", "left": "dieser", "right": "jener", "correctSide": "left" },
+        { "prompt": "ارجاع به اولین اسم:", "left": "dieser", "right": "jener", "correctSide": "right" },
+        { "prompt": "یک شیء واحد و مشترک:", "left": "derselbe", "right": "der gleiche", "correctSide": "left" },
+        { "prompt": "دو شیء مشابه:", "left": "derselbe", "right": "der gleiche", "correctSide": "right" },
+        { "prompt": "با جمله نسبی:", "left": "dieser", "right": "derjenige", "correctSide": "right" },
+        { "prompt": "در زبان محاوره رایج‌تر:", "left": "dieser", "right": "jener", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Dieses Buch ist sehr interessant.",
+      "translation": "این کتاب خیلی جالب است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Derjenige, der zuerst kommt, gewinnt.",
+      "translation": "آن کسی که اول بیاید، برنده می‌شود."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Wir haben dieselbe Meinung.",
+      "translation": "ما همان نظر را داریم."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: ضمایر اشاره",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "dieser به کدام اسم اشاره می‌کند؟", "options": ["اولین", "آخرین/نزدیک‌ترین"], "correctAnswerIndex": 1 },
+        { "question": "jener به کدام اسم اشاره می‌کند؟", "options": ["اولین/دورتر", "آخرین"], "correctAnswerIndex": 0 },
+        { "question": "derselbe یعنی...?", "options": ["یک شیء واحد", "دو شیء مشابه"], "correctAnswerIndex": 0 },
+        { "question": "der gleiche یعنی...?", "options": ["یک شیء واحد", "دو شیء مشابه"], "correctAnswerIndex": 1 },
+        { "question": "derjenige معمولاً با چه ساختاری می‌آید؟", "options": ["بدون توضیح", "با جمله نسبی"], "correctAnswerIndex": 1 },
+        { "question": "کدام در محاوره رایج‌تر است؟", "options": ["dieser", "jener"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: ضمایر اشاره",
+      "pairs": [
+        { "de": "dieser", "fa": "این (نزدیک)" },
+        { "de": "jener", "fa": "آن (دور)" },
+        { "de": "derjenige", "fa": "آن کسی که" },
+        { "de": "derselbe", "fa": "همان (واحد)" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی ضمایر اشاره",
+      "instruction": "ضمایر اشاره آلمانی را پیدا کنید",
+      "targetWords": ["dieser", "diese", "dieses", "jener", "derjenige", "derselbe"],
+      "gridSize": { "rows": 10, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "dieser", "fa": "این (نزدیک)", "options": ["آن (دور)", "این (نزدیک)", "همان", "آن کسی که"], "correctIndex": 1 },
+        { "de": "derselbe", "fa": "همان (واحد)", "options": ["این", "مشابه", "همان (واحد)", "آن کسی که"], "correctIndex": 2 },
+        { "de": "Textverknüpfung", "fa": "انسجام متن", "options": ["ترجمه متن", "انسجام متن", "خلاصه متن", "تحلیل متن"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما ضمایر اشاره آلمانی برای انسجام متن را یاد گرفتید!",
+      "keyPoints": [
+        "dieser/diese/dieses - ارجاع به آخرین/نزدیک‌ترین اسم ذکر شده",
+        "jener/jene/jenes - ارجاع به اولین/دورتر اسم (بیشتر در متون رسمی)",
+        "derjenige/diejenige - ارجاع خاص، معمولاً با جمله نسبی",
+        "derselbe/dieselbe - یک شیء واحد (در مقابل der gleiche = مشابه)",
+        "این ضمایر باید از نظر جنس و حالت با اسم مطابقت داشته باشند",
+        "استفاده از ضمایر اشاره از تکرار جلوگیری می‌کند و متن را منسجم‌تر می‌کند"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "dieser/diese/dieses", "fa": "این (نزدیک، تازه ذکر شده)" } },
+        { "word": { "de": "jener/jene/jenes", "fa": "آن (دور، قبلاً ذکر شده)" } },
+        { "word": { "de": "derjenige/diejenige/dasjenige", "fa": "آن کسی که، همان که" } },
+        { "word": { "de": "derselbe/dieselbe/dasselbe", "fa": "همان، عین همان" } },
+        { "word": { "de": "die Textverknüpfung", "fa": "انسجام متن، پیوند متنی" } },
+        { "word": { "de": "verweisen auf", "fa": "اشاره کردن به، ارجاع دادن به" } }
+      ]
+    }
+  ]
+}

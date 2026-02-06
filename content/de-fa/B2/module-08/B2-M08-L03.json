@@ -1,0 +1,525 @@
+{
+  "id": "B2-M08-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Textverknüpfung: Verweisende Ausdrücke", "fa": "پیوستگی متن: عبارات ارجاعی" },
+  "description": "یاد بگیرید چگونه از عبارات ارجاعی برای پیوستگی متن استفاده کنید - ضروری برای نوشتن آکادمیک و متون رسمی",
+  "level": "B2",
+  "module": 8,
+  "lessonNumber": 3,
+  "totalSteps": 45,
+  "estimatedMinutes": 35,
+  "vocabulary": [
+    { "de": "Ersteres... Letzteres", "fa": "اولی... دومی (آخری)", "grammar": { "pos": "pronoun" } },
+    { "de": "das oben Genannte", "fa": "موارد فوق‌الذکر", "grammar": { "pos": "noun", "gender": "neuter" } },
+    { "de": "das Folgende", "fa": "موارد زیر", "grammar": { "pos": "noun", "gender": "neuter" } },
+    { "de": "wie bereits erwähnt", "fa": "همان‌طور که قبلاً ذکر شد", "grammar": { "pos": "phrase" } },
+    { "de": "diesbezüglich", "fa": "در این رابطه، در این خصوص", "grammar": { "pos": "adverb" } },
+    { "de": "im Folgenden", "fa": "در ادامه", "grammar": { "pos": "phrase" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "عبارات ارجاعی در متون آلمانی (Verweisende Ausdrücke)",
+      "content": "**Textverknüpfung: Verweisende Ausdrücke**\n\nدر متون رسمی و آکادمیک آلمانی، عبارات ارجاعی نقش مهمی دارند. این عبارات به خواننده کمک می‌کنند ارتباط بین بخش‌های مختلف متن را درک کند.\n\n**انواع اصلی:**\n\n| عبارت | معنی | کاربرد |\n|-------|------|--------|\n| Ersteres... Letzteres | اولی... دومی | اشاره به دو مورد قبلی |\n| das oben Genannte | موارد فوق‌الذکر | اشاره به بالای متن |\n| das Folgende | موارد زیر | اشاره به پایین متن |\n| wie bereits erwähnt | همان‌طور که قبلاً ذکر شد | تکرار نکته قبلی |\n| diesbezüglich | در این خصوص | ارتباط موضوعی |\n| im Folgenden | در ادامه | معرفی بخش بعدی |\n\n**نکته مهم:** این عبارات در مقالات علمی، گزارش‌ها و نامه‌های رسمی بسیار پرکاربرد هستند.",
+      "examples": [
+        { "de": "Ich habe zwei Optionen: Ersteres ist teurer, Letzteres praktischer.", "fa": "من دو گزینه دارم: اولی گران‌تر است، دومی عملی‌تر." },
+        { "de": "Wie bereits erwähnt, ist dieses Thema komplex.", "fa": "همان‌طور که قبلاً ذکر شد، این موضوع پیچیده است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "Ersteres... Letzteres", "fa": "اولی... دومی (آخری)" },
+      "example": { "text": { "de": "Kaffee oder Tee? Ersteres macht wach, Letzteres beruhigt.", "fa": "قهوه یا چای؟ اولی بیدار می‌کند، دومی آرام می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Ersteres",
+      "translation": "اولی",
+      "syllables": ["Ers", "te", "res"],
+      "distractors": ["Ars", "tu", "ras"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "das oben Genannte", "fa": "موارد فوق‌الذکر" },
+      "example": { "text": { "de": "Das oben Genannte zeigt deutlich, dass wir handeln müssen.", "fa": "موارد فوق‌الذکر به وضوح نشان می‌دهد که باید اقدام کنیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Genannte",
+      "translation": "ذکر شده",
+      "syllables": ["Ge", "nann", "te"],
+      "distractors": ["Ga", "nenn", "ta"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "das Folgende", "fa": "موارد زیر" },
+      "example": { "text": { "de": "Im Folgenden werden wir das Folgende analysieren.", "fa": "در ادامه موارد زیر را تحلیل خواهیم کرد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Folgende",
+      "translation": "زیر، بعدی",
+      "syllables": ["Fol", "gen", "de"],
+      "distractors": ["Fal", "gan", "da"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "Ersteres... Letzteres: اشاره به دو مورد قبلی",
+      "content": "**Ersteres... Letzteres**\n\nوقتی دو چیز یا مفهوم را ذکر کرده‌اید و می‌خواهید دوباره به آنها اشاره کنید:\n\n**ساختار:**\n- **Ersteres** = اولی (مورد اول)\n- **Letzteres** = دومی/آخری (مورد دوم)\n\n**مثال‌ها:**\n\n| جمله | معنی |\n|------|------|\n| Ich mag Äpfel und Birnen. **Ersteres** ist süßer. | من سیب و گلابی دوست دارم. **اولی** شیرین‌تر است. |\n| Sport und Lesen sind meine Hobbys. **Letzteres** mache ich öfter. | ورزش و مطالعه سرگرمی‌های من هستند. **دومی** را بیشتر انجام می‌دهم. |\n\n**نکته گرامری:** این کلمات صفت اسم‌شده هستند و بدون اسم به کار می‌روند:\n- ~~Ersteres Ding~~ → **Ersteres** ✓\n- ~~Letzteres Objekt~~ → **Letzteres** ✓",
+      "examples": [
+        { "de": "Qualität oder Quantität? Ersteres ist mir wichtiger.", "fa": "کیفیت یا کمیت؟ اولی برای من مهم‌تر است." },
+        { "de": "Berlin und München sind groß. Letzteres ist aber teurer.", "fa": "برلین و مونیخ بزرگ هستند. اما دومی گران‌تر است." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "در جمله «Ich habe einen Hund und eine Katze. Ersteres ist größer» به چه چیزی اشاره می‌شود؟",
+      "options": [
+        "گربه",
+        "سگ",
+        "هر دو به یک اندازه",
+        "موش"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! Ersteres به مورد اول یعنی سگ (Hund) اشاره دارد.", "incorrect": "Ersteres یعنی «اولی» و به اولین مورد ذکر شده (سگ) اشاره می‌کند." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "wie bereits erwähnt", "fa": "همان‌طور که قبلاً ذکر شد" },
+      "example": { "text": { "de": "Wie bereits erwähnt, ist die Deadline nächste Woche.", "fa": "همان‌طور که قبلاً ذکر شد، مهلت هفته آینده است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "erwähnt",
+      "translation": "ذکر شده",
+      "syllables": ["er", "wähnt"],
+      "distractors": ["ar", "want", "wahnt"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "عبارت مناسب را انتخاب کنید",
+      "sentence": "Ich mag sowohl Musik als auch Kunst. {0} ist aber meine größere Leidenschaft.",
+      "options": ["Ersteres", "Letzteres", "Diesbezüglich", "Folgendes"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Letzteres به مورد دوم (Kunst) اشاره می‌کند که علاقه بزرگ‌تر است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "عبارت مناسب را انتخاب کنید",
+      "sentence": "{0} möchte ich die Ergebnisse unserer Forschung präsentieren.",
+      "options": ["Im Folgenden", "Wie bereits erwähnt", "Das oben Genannte", "Ersteres"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Im Folgenden برای معرفی بخش بعدی استفاده می‌شود: «در ادامه»" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "diesbezüglich و im Folgenden: پیوند موضوعی",
+      "content": "**diesbezüglich = در این خصوص، در این رابطه**\n\nبرای اشاره به موضوعی که قبلاً مطرح شده:\n\n| جمله | معنی |\n|------|------|\n| **Diesbezüglich** möchte ich anmerken, dass... | **در این خصوص** می‌خواهم اشاره کنم که... |\n| Wir haben **diesbezüglich** keine Informationen. | ما **در این رابطه** اطلاعاتی نداریم. |\n\n**im Folgenden = در ادامه**\n\nبرای معرفی آنچه در ادامه متن خواهد آمد:\n\n| جمله | معنی |\n|------|------|\n| **Im Folgenden** werden drei Punkte erläutert. | **در ادامه** سه نکته توضیح داده می‌شود. |\n| **Im Folgenden** finden Sie die Details. | **در ادامه** جزئیات را خواهید یافت. |\n\n**کاربرد رسمی:** هر دو عبارت در نوشتار آکادمیک و رسمی بسیار متداول هستند.",
+      "examples": [
+        { "de": "Diesbezüglich hat die Regierung neue Maßnahmen angekündigt.", "fa": "در این خصوص، دولت اقدامات جدیدی اعلام کرده است." },
+        { "de": "Im Folgenden werden die Vor- und Nachteile diskutiert.", "fa": "در ادامه مزایا و معایب بحث خواهد شد." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام عبارت برای معرفی بخش بعدی متن مناسب است؟",
+      "options": [
+        "Wie bereits erwähnt",
+        "Das oben Genannte",
+        "Im Folgenden",
+        "Ersteres"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "درست! Im Folgenden یعنی «در ادامه» و برای معرفی بخش بعدی استفاده می‌شود.", "incorrect": "Im Folgenden برای اشاره به آنچه در ادامه خواهد آمد استفاده می‌شود." }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "diesbezüglich", "fa": "در این رابطه، در این خصوص" },
+      "example": { "text": { "de": "Diesbezüglich habe ich noch eine Frage.", "fa": "در این رابطه یک سؤال دیگر دارم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "diesbezüglich",
+      "translation": "در این خصوص",
+      "syllables": ["dies", "be", "züg", "lich"],
+      "distractors": ["das", "ba", "zog", "lech"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "عبارت مناسب را انتخاب کنید",
+      "sentence": "{0} ist zu sagen, dass das Projekt erfolgreich war.",
+      "options": ["Diesbezüglich", "Letzteres", "Ersteres", "Das Folgende"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Diesbezüglich برای اظهار نظر درباره موضوع مطرح شده استفاده می‌شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "عبارت مناسب را انتخاب کنید",
+      "sentence": "{0} haben wir bereits die Grundlagen besprochen.",
+      "options": ["Wie bereits erwähnt", "Im Folgenden", "Diesbezüglich", "Letzteres"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Wie bereits erwähnt برای اشاره به نکته‌ای که قبلاً گفته شده استفاده می‌شود." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["erwähnt", "Wie", "ist", "bereits", "das", "wichtig"],
+      "correctOrder": [1, 3, 0, 4, 5, 2],
+      "correctSentence": { "de": "Wie bereits erwähnt ist das wichtig", "fa": "همان‌طور که قبلاً ذکر شد، این مهم است" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["Im", "die", "Folgenden", "Methode", "wird", "erklärt"],
+      "correctOrder": [0, 2, 4, 1, 3, 5],
+      "correctSentence": { "de": "Im Folgenden wird die Methode erklärt", "fa": "در ادامه روش توضیح داده می‌شود" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["Diesbezüglich", "anmerken", "ich", "dass", "möchte"],
+      "correctOrder": [0, 4, 2, 1, 3],
+      "correctSentence": { "de": "Diesbezüglich möchte ich anmerken dass", "fa": "در این خصوص می‌خواهم اشاره کنم که" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "عبارت «Ersteres» به مورد دوم در یک لیست اشاره می‌کند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! Ersteres به مورد اول اشاره می‌کند. Letzteres به مورد دوم/آخر اشاره دارد." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "عبارت «Im Folgenden» برای اشاره به مطالب قبلی متن استفاده می‌شود.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! Im Folgenden برای معرفی مطالب بعدی استفاده می‌شود، نه قبلی. برای مطالب قبلی از «wie bereits erwähnt» استفاده کنید." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "عبارت «diesbezüglich» در متون رسمی و آکادمیک رایج است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! diesbezüglich یک عبارت رسمی است که در نوشتار آکادمیک و اداری بسیار استفاده می‌شود." }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "im Folgenden", "fa": "در ادامه" },
+      "example": { "text": { "de": "Im Folgenden werden die wichtigsten Punkte zusammengefasst.", "fa": "در ادامه نکات مهم خلاصه می‌شود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Folgenden",
+      "translation": "ادامه، بعدی",
+      "syllables": ["Fol", "gen", "den"],
+      "distractors": ["Fal", "gan", "dan"]
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "جلسه آکادمیک",
+      "scene": {
+        "location": "university",
+        "description": { "de": "In einem Seminarraum an der Universität", "fa": "در کلاس سمینار در دانشگاه" }
+      },
+      "lines": [
+        { "speaker": "Professor Müller", "text": { "de": "Wie bereits erwähnt, ist dieses Thema komplex.", "fa": "همان‌طور که قبلاً ذکر شد، این موضوع پیچیده است." }, "mood": "neutral" },
+        { "speaker": "Studentin Anna", "text": { "de": "Diesbezüglich habe ich eine Frage.", "fa": "در این خصوص یک سؤال دارم." }, "mood": "confused" },
+        { "speaker": "Professor Müller", "text": { "de": "Natürlich. Im Folgenden werde ich das genauer erklären.", "fa": "البته. در ادامه این را دقیق‌تر توضیح خواهم داد." }, "mood": "happy" },
+        { "speaker": "Studentin Anna", "text": { "de": "Sie haben Theorie und Praxis erwähnt. Ersteres verstehe ich, aber Letzteres nicht.", "fa": "شما تئوری و عمل را ذکر کردید. اولی را می‌فهمم، اما دومی را نه." }, "mood": "confused" },
+        { "speaker": "Professor Müller", "text": { "de": "Das oben Genannte bezieht sich auf die Grundlagen. Die Praxis kommt später.", "fa": "موارد فوق‌الذکر به مبانی مربوط می‌شود. عمل بعداً می‌آید." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "آنا درباره چه چیزی سؤال داشت؟", "options": ["تئوری", "عمل", "امتحان"], "correctIndex": 1, "explanation": "آنا گفت: Ersteres verstehe ich, aber Letzteres nicht - دومی (عمل) را نمی‌فهمد" },
+        { "question": "استاد چه قولی داد؟", "options": ["امتحان ندادن", "توضیح بیشتر در ادامه", "تکرار درس قبل"], "correctIndex": 1, "explanation": "استاد گفت: Im Folgenden werde ich das genauer erklären" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "عبارت مناسب را انتخاب کنید",
+      "sentence": "Qualität und Preis sind wichtig. {0} hat aber Priorität.",
+      "options": ["Ersteres", "Letzteres", "Diesbezüglich", "Im Folgenden"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Ersteres به مورد اول (Qualität) اشاره می‌کند که اولویت دارد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "عبارت مناسب را انتخاب کنید",
+      "sentence": "{0} bestätigt unsere Hypothese.",
+      "options": ["Das oben Genannte", "Im Folgenden", "Ersteres", "Letzteres"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Das oben Genannte به موارد ذکر شده در بالای متن اشاره می‌کند." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "جلسه کاری",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Besprechungsraum einer Firma", "fa": "در اتاق جلسات یک شرکت" }
+      },
+      "lines": [
+        { "speaker": "Manager Herr Schmidt", "text": { "de": "Wie bereits erwähnt, müssen wir die Kosten senken.", "fa": "همان‌طور که قبلاً ذکر شد، باید هزینه‌ها را کاهش دهیم." }, "mood": "neutral" },
+        { "speaker": "Mitarbeiterin Frau Weber", "text": { "de": "Diesbezüglich haben wir zwei Optionen analysiert.", "fa": "در این خصوص دو گزینه را تحلیل کردیم." }, "mood": "neutral" },
+        { "speaker": "Manager Herr Schmidt", "text": { "de": "Welche empfehlen Sie?", "fa": "کدام را توصیه می‌کنید؟" }, "mood": "confused" },
+        { "speaker": "Mitarbeiterin Frau Weber", "text": { "de": "Ersteres ist günstiger, aber Letzteres ist nachhaltiger.", "fa": "اولی ارزان‌تر است، اما دومی پایدارتر است." }, "mood": "neutral" },
+        { "speaker": "Manager Herr Schmidt", "text": { "de": "Das Folgende müssen wir noch besprechen. Im Folgenden zeige ich Ihnen die Zahlen.", "fa": "موارد زیر را هنوز باید بحث کنیم. در ادامه اعداد را به شما نشان می‌دهم." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "چند گزینه تحلیل شده بود؟", "options": ["یک", "دو", "سه"], "correctIndex": 1, "explanation": "خانم وبر گفت: wir haben zwei Optionen analysiert" },
+        { "question": "کدام گزینه پایدارتر بود؟", "options": ["اولی", "دومی", "هر دو"], "correctIndex": 1, "explanation": "خانم وبر گفت: Letzteres ist nachhaltiger - دومی پایدارتر است" }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "عبارات آلمانی را با معنای فارسی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Ersteres" },
+        { "id": "i2", "text": "Letzteres" },
+        { "id": "i3", "text": "wie bereits erwähnt" },
+        { "id": "i4", "text": "diesbezüglich" },
+        { "id": "i5", "text": "im Folgenden" },
+        { "id": "i6", "text": "das oben Genannte" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "اولی" },
+        { "id": "m2", "text": "دومی/آخری" },
+        { "id": "m3", "text": "همان‌طور که قبلاً ذکر شد" },
+        { "id": "m4", "text": "در این خصوص" },
+        { "id": "m5", "text": "در ادامه" },
+        { "id": "m6", "text": "موارد فوق‌الذکر" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "همان‌طور که قبلاً ذکر شد، این موضوع مهم است.",
+      "sentenceTemplate": "{0} ist dieses Thema {1}.",
+      "options": ["Wie bereits erwähnt", "Im Folgenden", "wichtig", "unwichtig"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Wie bereits erwähnt, ist dieses Thema wichtig.", "fa": "همان‌طور که قبلاً ذکر شد، این موضوع مهم است." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "در ادامه نتایج را ارائه خواهیم داد.",
+      "sentenceTemplate": "{0} werden wir die Ergebnisse {1}.",
+      "options": ["Im Folgenden", "Diesbezüglich", "präsentieren", "vergessen"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Im Folgenden werden wir die Ergebnisse präsentieren.", "fa": "در ادامه نتایج را ارائه خواهیم داد." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: گزارش پژوهشی",
+      "passage": {
+        "de": "Wie bereits erwähnt, untersucht diese Studie zwei Faktoren: Motivation und Umgebung. Ersteres bezieht sich auf interne Faktoren, Letzteres auf externe.\n\nDiesbezüglich haben wir 100 Teilnehmer befragt. Das oben Genannte zeigt, dass beide Faktoren wichtig sind.\n\nIm Folgenden werden die Ergebnisse im Detail präsentiert. Die Daten bestätigen, dass Motivation einen größeren Einfluss hat als die Umgebung.",
+        "fa": "همان‌طور که قبلاً ذکر شد، این مطالعه دو عامل را بررسی می‌کند: انگیزه و محیط. اولی به عوامل داخلی مربوط می‌شود، دومی به عوامل خارجی.\n\nدر این خصوص از ۱۰۰ شرکت‌کننده نظرسنجی کردیم. موارد فوق‌الذکر نشان می‌دهد که هر دو عامل مهم هستند.\n\nدر ادامه نتایج به طور مفصل ارائه می‌شود. داده‌ها تأیید می‌کنند که انگیزه تأثیر بیشتری از محیط دارد."
+      },
+      "questions": [
+        { "question": "Ersteres در این متن به چه چیزی اشاره دارد؟", "options": ["محیط", "انگیزه", "شرکت‌کنندگان"], "correctIndex": 1, "explanation": "Ersteres به مورد اول یعنی Motivation (انگیزه) اشاره دارد" },
+        { "question": "چند شرکت‌کننده در نظرسنجی بودند؟", "options": ["50", "100", "200"], "correctIndex": 1, "explanation": "متن می‌گوید: wir haben 100 Teilnehmer befragt" },
+        { "question": "کدام عامل تأثیر بیشتری دارد؟", "options": ["محیط", "انگیزه", "هر دو برابر"], "correctIndex": 1, "explanation": "متن می‌گوید: Motivation einen größeren Einfluss hat als die Umgebung" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die Präsentation", "fa": "ارائه" },
+      "characters": ["Dr. Fischer", "Student Lukas"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Dr. Fischer hält einen Vortrag über wissenschaftliches Schreiben.", "fa": "دکتر فیشر سخنرانی درباره نوشتن علمی ارائه می‌دهد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Dr. Fischer",
+          "text": { "de": "Wie bereits erwähnt, sind verweisende Ausdrücke sehr wichtig.", "fa": "همان‌طور که قبلاً ذکر شد، عبارات ارجاعی بسیار مهم هستند." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Student Lukas",
+          "text": { "de": "Diesbezüglich habe ich eine Frage.", "fa": "در این خصوص یک سؤال دارم." },
+          "mood": "confused"
+        },
+        {
+          "type": "question",
+          "question": "لوکاس چگونه به موضوع مطرح شده اشاره کرد؟",
+          "options": ["Im Folgenden", "Diesbezüglich", "Ersteres"],
+          "correctIndex": 1,
+          "explanation": "لوکاس از diesbezüglich (در این خصوص) برای اشاره به موضوع استفاده کرد"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Dr. Fischer",
+          "text": { "de": "Formelle und informelle Texte unterscheiden sich. Ersteres verwendet diese Ausdrücke häufig.", "fa": "متون رسمی و غیررسمی متفاوت هستند. اولی از این عبارات زیاد استفاده می‌کند." },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Student Lukas",
+          "text": { "de": "Das oben Genannte war sehr hilfreich!", "fa": "موارد فوق‌الذکر خیلی مفید بود!" },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "Ersteres در گفته دکتر فیشر به چه چیزی اشاره دارد؟",
+          "options": ["متون غیررسمی", "متون رسمی", "عبارات ارجاعی"],
+          "correctIndex": 1,
+          "explanation": "Ersteres به مورد اول یعنی formelle Texte (متون رسمی) اشاره دارد"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Dr. Fischer",
+          "text": { "de": "Im Folgenden üben wir das praktisch.", "fa": "در ادامه این را عملی تمرین می‌کنیم." },
+          "mood": "neutral"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Die Studenten beginnen mit den Übungen.", "fa": "دانشجویان تمرینات را شروع می‌کنند." }
+        },
+        {
+          "type": "question",
+          "question": "دکتر فیشر چه چیزی را برای ادامه اعلام کرد؟",
+          "options": ["امتحان", "تمرین عملی", "استراحت"],
+          "correctIndex": 1,
+          "explanation": "دکتر فیشر گفت: Im Folgenden üben wir das praktisch - در ادامه عملی تمرین می‌کنیم"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: عبارات ارجاعی",
+      "instruction": "معنی درست را انتخاب کنید!",
+      "questions": [
+        { "prompt": "Ersteres", "left": "اولی", "right": "دومی", "correctSide": "left" },
+        { "prompt": "Letzteres", "left": "اولی", "right": "دومی", "correctSide": "right" },
+        { "prompt": "wie bereits erwähnt", "left": "همان‌طور که ذکر شد", "right": "در ادامه", "correctSide": "left" },
+        { "prompt": "im Folgenden", "left": "قبلاً", "right": "در ادامه", "correctSide": "right" },
+        { "prompt": "diesbezüglich", "left": "در این خصوص", "right": "علاوه بر این", "correctSide": "left" },
+        { "prompt": "das oben Genannte", "left": "موارد زیر", "right": "موارد فوق‌الذکر", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Wie bereits erwähnt, ist das wichtig.",
+      "translation": "همان‌طور که قبلاً ذکر شد، این مهم است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Im Folgenden werden die Ergebnisse präsentiert.",
+      "translation": "در ادامه نتایج ارائه می‌شود."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Diesbezüglich habe ich keine Informationen.",
+      "translation": "در این خصوص اطلاعاتی ندارم."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: عبارات ارجاعی!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "Ersteres =", "options": ["اولی", "دومی"], "correctAnswerIndex": 0 },
+        { "question": "Letzteres =", "options": ["اولی", "دومی"], "correctAnswerIndex": 1 },
+        { "question": "برای اشاره به مطالب قبلی:", "options": ["wie bereits erwähnt", "im Folgenden"], "correctAnswerIndex": 0 },
+        { "question": "برای معرفی مطالب بعدی:", "options": ["das oben Genannte", "im Folgenden"], "correctAnswerIndex": 1 },
+        { "question": "diesbezüglich =", "options": ["در این خصوص", "علاوه بر این"], "correctAnswerIndex": 0 },
+        { "question": "das oben Genannte =", "options": ["موارد زیر", "موارد فوق‌الذکر"], "correctAnswerIndex": 1 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: عبارات ارجاعی",
+      "pairs": [
+        { "de": "Ersteres", "fa": "اولی" },
+        { "de": "Letzteres", "fa": "دومی" },
+        { "de": "im Folgenden", "fa": "در ادامه" },
+        { "de": "diesbezüglich", "fa": "در این خصوص" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "عبارات ارجاعی این درس را پیدا کنید",
+      "targetWords": ["Ersteres", "Letzteres", "erwähnt", "Folgenden", "diesbezüglich", "Genannte"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "Ersteres", "fa": "اولی", "options": ["دومی", "اولی", "سومی", "آخری"], "correctIndex": 1 },
+        { "de": "im Folgenden", "fa": "در ادامه", "options": ["قبلاً", "در ادامه", "در نتیجه", "به علاوه"], "correctIndex": 1 },
+        { "de": "diesbezüglich", "fa": "در این خصوص", "options": ["در این خصوص", "علاوه بر این", "به طور کلی", "در نهایت"], "correctIndex": 0 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما عبارات ارجاعی برای پیوستگی متن را یاد گرفتید!",
+      "keyPoints": [
+        "Ersteres... Letzteres = اولی... دومی - برای اشاره به دو مورد قبلی",
+        "das oben Genannte = موارد فوق‌الذکر - اشاره به بالای متن",
+        "das Folgende = موارد زیر - اشاره به پایین متن",
+        "wie bereits erwähnt = همان‌طور که قبلاً ذکر شد - تکرار نکته قبلی",
+        "diesbezüglich = در این خصوص - ارتباط موضوعی",
+        "im Folgenden = در ادامه - معرفی بخش بعدی",
+        "این عبارات در نوشتار آکادمیک و رسمی ضروری هستند"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "Ersteres... Letzteres", "fa": "اولی... دومی (آخری)" } },
+        { "word": { "de": "das oben Genannte", "fa": "موارد فوق‌الذکر" } },
+        { "word": { "de": "das Folgende", "fa": "موارد زیر" } },
+        { "word": { "de": "wie bereits erwähnt", "fa": "همان‌طور که قبلاً ذکر شد" } },
+        { "word": { "de": "diesbezüglich", "fa": "در این رابطه، در این خصوص" } },
+        { "word": { "de": "im Folgenden", "fa": "در ادامه" } }
+      ]
+    }
+  ]
+}
