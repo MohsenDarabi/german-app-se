@@ -1,0 +1,524 @@
+{
+  "id": "B2-M06-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Komplexe Attribute: Auflösung in Relativsätze", "fa": "صفات پیچیده: تبدیل به جملات موصولی" },
+  "description": "یاد بگیرید چگونه صفات وصفی گسترده (با Partizip I و II) را به جملات موصولی تبدیل کنید - مهارتی کلیدی برای درک و نوشتن متون آکادمیک",
+  "level": "B2",
+  "module": 6,
+  "lessonNumber": 3,
+  "totalSteps": 45,
+  "estimatedMinutes": 35,
+  "vocabulary": [
+    { "de": "der Relativsatz", "fa": "جمله موصولی", "grammar": { "pos": "noun", "gender": "masculine" } },
+    { "de": "das Partizip", "fa": "صفت فعلی (وجه وصفی)", "grammar": { "pos": "noun", "gender": "neuter" } },
+    { "de": "auflösen", "fa": "تجزیه کردن، باز کردن", "grammar": { "pos": "verb" } },
+    { "de": "das erweiterte Attribut", "fa": "صفت گسترده", "grammar": { "pos": "noun", "gender": "neuter" } },
+    { "de": "umwandeln", "fa": "تبدیل کردن", "grammar": { "pos": "verb" } },
+    { "de": "die Verständlichkeit", "fa": "قابل فهم بودن، وضوح", "grammar": { "pos": "noun", "gender": "feminine" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "چرا باید صفات گسترده را به جملات موصولی تبدیل کنیم؟",
+      "content": "**Erweiterte Partizipialattribute → Relativsätze**\n\nدر متون علمی و رسمی آلمانی، اغلب با **صفات وصفی گسترده** روبرو می‌شویم که فهم آن‌ها دشوار است.\n\n**راه‌حل:** تبدیل به جمله موصولی!\n\n| صفت گسترده (پیچیده) | جمله موصولی (ساده‌تر) |\n|---------------------|---------------------|\n| der arbeitende Mann | der Mann, **der arbeitet** |\n| das gelesene Buch | das Buch, **das gelesen wurde** |\n\n**چه زمانی تبدیل کنیم؟**\n- وقتی صفت خیلی طولانی است\n- برای افزایش وضوح در نوشتار\n- برای درک بهتر هنگام خواندن\n\n**مزیت:** جمله موصولی همیشه واضح‌تر و قابل فهم‌تر است!",
+      "examples": [
+        { "de": "der seit Stunden arbeitende Mann wird zu: der Mann, der seit Stunden arbeitet", "fa": "مردی که ساعت‌هاست کار می‌کند" },
+        { "de": "das von allen gelesene Buch wird zu: das Buch, das von allen gelesen wurde", "fa": "کتابی که توسط همه خوانده شده" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "der Relativsatz", "fa": "جمله موصولی" },
+      "example": { "text": { "de": "Ein Relativsatz beginnt mit einem Relativpronomen wie 'der', 'die' oder 'das'.", "fa": "جمله موصولی با ضمیر موصولی مانند der، die یا das شروع می‌شود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Relativsatz",
+      "translation": "جمله موصولی",
+      "syllables": ["Re", "la", "tiv", "satz"],
+      "distractors": ["Ro", "le", "tif", "salz"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "das Partizip", "fa": "صفت فعلی (وجه وصفی)" },
+      "example": { "text": { "de": "Das Partizip I endet auf '-end', das Partizip II oft auf '-t' oder '-en'.", "fa": "صفت فعلی اول به end- ختم می‌شود، صفت فعلی دوم اغلب به t- یا en- ختم می‌شود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Partizip",
+      "translation": "صفت فعلی",
+      "syllables": ["Par", "ti", "zip"],
+      "distractors": ["Per", "te", "zap", "zep"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "auflösen", "fa": "تجزیه کردن، باز کردن" },
+      "example": { "text": { "de": "Wir lösen das erweiterte Attribut in einen Relativsatz auf.", "fa": "ما صفت گسترده را به جمله موصولی تجزیه می‌کنیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "auflösen",
+      "translation": "تجزیه کردن",
+      "syllables": ["auf", "lö", "sen"],
+      "distractors": ["ab", "lo", "san", "zon"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "تبدیل Partizip I به جمله موصولی",
+      "content": "**Partizip I → Relativsatz mit Aktiv**\n\nصفت فعلی اول (Partizip I) نشان‌دهنده عمل در حال انجام است.\n\n**قاعده تبدیل:**\nPartizip I (-end) → فعل در زمان حال (Präsens)\n\n**مراحل:**\n1. ضمیر موصولی مناسب را انتخاب کنید (der/die/das)\n2. فعل را در زمان حال بگذارید\n3. سایر اجزا را اضافه کنید\n\n| Partizip I | Relativsatz |\n|------------|-------------|\n| der **schlafende** Mann | der Mann, der **schläft** |\n| die **singende** Frau | die Frau, die **singt** |\n| das **spielende** Kind | das Kind, das **spielt** |\n\n**با صفت گسترده:**\n| گسترده | ساده |\n|--------|------|\n| der **laut singende** Mann | der Mann, der **laut singt** |\n| die **am Fenster stehende** Frau | die Frau, die **am Fenster steht** |",
+      "examples": [
+        { "de": "der lächelnde Mann wird zu: der Mann, der lächelt", "fa": "مردی که لبخند می‌زند" },
+        { "de": "die am Computer arbeitende Frau wird zu: die Frau, die am Computer arbeitet", "fa": "زنی که پشت کامپیوتر کار می‌کند" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "جمله «der lesende Student» به کدام جمله موصولی تبدیل می‌شود؟",
+      "options": [
+        "der Student, der gelesen hat",
+        "der Student, der liest",
+        "der Student, der gelesen wurde",
+        "der Student, der lesen wird"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! Partizip I به فعل حال تبدیل می‌شود: lesend → liest", "incorrect": "Partizip I (lesend) نشان‌دهنده عمل در حال انجام است، پس به زمان حال تبدیل می‌شود: der liest" }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "das erweiterte Attribut", "fa": "صفت گسترده" },
+      "example": { "text": { "de": "Ein erweitertes Attribut enthält zusätzliche Informationen vor dem Nomen.", "fa": "صفت گسترده شامل اطلاعات اضافی قبل از اسم است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "erweitert",
+      "translation": "گسترده",
+      "syllables": ["er", "wei", "tert"],
+      "distractors": ["ar", "wai", "tart", "tirt"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جمله موصولی درست را انتخاب کنید",
+      "sentence": "der singende Vogel → der Vogel, {0}",
+      "options": ["der gesungen hat", "der singt", "der gesungen wird", "der sang"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Partizip I (singend) به زمان حال تبدیل می‌شود: der Vogel, der singt" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جمله موصولی درست را انتخاب کنید",
+      "sentence": "die im Garten spielenden Kinder → die Kinder, {0}",
+      "options": ["die gespielt haben", "die im Garten spielen", "die gespielt wurden", "die spielen werden"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "صفت گسترده با Partizip I: die im Garten spielenden Kinder → die Kinder, die im Garten spielen" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "تبدیل Partizip II به جمله موصولی",
+      "content": "**Partizip II → Relativsatz mit Passiv**\n\nصفت فعلی دوم (Partizip II) معمولاً نشان‌دهنده عمل انجام شده است.\n\n**قاعده تبدیل:**\nPartizip II → فعل در مجهول (Passiv)\n\n**مراحل:**\n1. ضمیر موصولی مناسب را انتخاب کنید\n2. از ساختار مجهول استفاده کنید: wurde/wurden + Partizip II\n3. اگر فاعل عمل مشخص است (von + کسی)، آن را اضافه کنید\n\n| Partizip II | Relativsatz |\n|-------------|-------------|\n| das **gelesene** Buch | das Buch, das **gelesen wurde** |\n| der **geschriebene** Brief | der Brief, der **geschrieben wurde** |\n| die **gebaute** Brücke | die Brücke, die **gebaut wurde** |\n\n**با von + فاعل:**\n| گسترده | ساده |\n|--------|------|\n| das **von ihm geschriebene** Buch | das Buch, das **von ihm geschrieben wurde** |\n| der **vom Chef gelobte** Mitarbeiter | der Mitarbeiter, der **vom Chef gelobt wurde** |",
+      "examples": [
+        { "de": "das geöffnete Fenster wird zu: das Fenster, das geöffnet wurde", "fa": "پنجره‌ای که باز شده" },
+        { "de": "der von allen geliebte Lehrer wird zu: der Lehrer, der von allen geliebt wurde", "fa": "معلمی که توسط همه دوست داشته می‌شد" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "جمله «das gekaufte Auto» به کدام جمله موصولی تبدیل می‌شود؟",
+      "options": [
+        "das Auto, das kauft",
+        "das Auto, das gekauft wird",
+        "das Auto, das gekauft wurde",
+        "das Auto, das kaufen wird"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "عالی! Partizip II به مجهول گذشته تبدیل می‌شود: gekauft → wurde gekauft", "incorrect": "Partizip II (gekauft) به ساختار مجهول گذشته تبدیل می‌شود: das Auto, das gekauft wurde" }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "umwandeln", "fa": "تبدیل کردن" },
+      "example": { "text": { "de": "Man kann erweiterte Attribute in Relativsätze umwandeln.", "fa": "می‌توان صفات گسترده را به جملات موصولی تبدیل کرد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "umwandeln",
+      "translation": "تبدیل کردن",
+      "syllables": ["um", "wan", "deln"],
+      "distractors": ["am", "wen", "daln", "dohn"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جمله موصولی درست را انتخاب کنید",
+      "sentence": "der geschriebene Brief → der Brief, {0}",
+      "options": ["der schreibt", "der geschrieben wurde", "der schreiben wird", "der geschrieben hat"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Partizip II به مجهول تبدیل می‌شود: der Brief, der geschrieben wurde" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جمله موصولی درست را انتخاب کنید",
+      "sentence": "die von der Firma entwickelte Software → die Software, {0}",
+      "options": ["die entwickelt", "die von der Firma entwickelt wurde", "die entwickeln wird", "die entwickelt hat"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "صفت گسترده با Partizip II و von: die Software, die von der Firma entwickelt wurde" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله موصولی را مرتب کنید",
+      "words": ["der", "der", "Mann", "arbeitet"],
+      "correctOrder": [0, 2, 1, 3],
+      "correctSentence": { "de": "der Mann, der arbeitet", "fa": "مردی که کار می‌کند" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله موصولی را مرتب کنید",
+      "words": ["das", "gelesen", "Buch", "wurde", "das"],
+      "correctOrder": [0, 2, 4, 1, 3],
+      "correctSentence": { "de": "das Buch, das gelesen wurde", "fa": "کتابی که خوانده شده" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله موصولی را مرتب کنید",
+      "words": ["die", "singt", "Frau", "die", "laut"],
+      "correctOrder": [0, 2, 3, 4, 1],
+      "correctSentence": { "de": "die Frau, die laut singt", "fa": "زنی که بلند آواز می‌خواند" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "Partizip I (مثل arbeitend) به جمله موصولی با فعل در زمان حال تبدیل می‌شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! Partizip I نشان‌دهنده عمل در حال انجام است: arbeitend → der arbeitet" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "Partizip II (مثل gelesen) به جمله موصولی با فعل معلوم (Aktiv) تبدیل می‌شود.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! Partizip II معمولاً به ساختار مجهول (Passiv) تبدیل می‌شود: gelesen → wurde gelesen" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "تبدیل صفات گسترده به جملات موصولی باعث می‌شود متن قابل فهم‌تر شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! جملات موصولی ساده‌تر و واضح‌تر از صفات گسترده طولانی هستند." }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "die Verständlichkeit", "fa": "قابل فهم بودن، وضوح" },
+      "example": { "text": { "de": "Die Verständlichkeit des Textes verbessert sich durch Relativsätze.", "fa": "وضوح متن با استفاده از جملات موصولی بهتر می‌شود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Verständlichkeit",
+      "translation": "قابل فهم بودن",
+      "syllables": ["Ver", "ständ", "lich", "keit"],
+      "distractors": ["Vor", "stand", "lach", "kait"]
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در کلاس نگارش آکادمیک",
+      "scene": {
+        "location": "university",
+        "description": { "de": "In einem Seminar für akademisches Schreiben an der Universität", "fa": "در سمینار نگارش آکادمیک در دانشگاه" }
+      },
+      "lines": [
+        { "speaker": "Professor", "text": { "de": "Heute lernen wir, wie man komplexe Attribute vereinfacht.", "fa": "امروز یاد می‌گیریم چگونه صفات پیچیده را ساده کنیم." }, "mood": "neutral" },
+        { "speaker": "Student", "text": { "de": "Ich habe Probleme mit langen Partizipialattributen.", "fa": "من با صفات فعلی طولانی مشکل دارم." }, "mood": "confused" },
+        { "speaker": "Professor", "text": { "de": "Kein Problem! Wandeln Sie sie einfach in Relativsätze um.", "fa": "مشکلی نیست! فقط آن‌ها را به جملات موصولی تبدیل کنید." }, "mood": "happy" },
+        { "speaker": "Professor", "text": { "de": "Zum Beispiel: 'der arbeitende Mann' wird zu 'der Mann, der arbeitet'.", "fa": "مثلاً: der arbeitende Mann می‌شود der Mann, der arbeitet" }, "mood": "neutral" },
+        { "speaker": "Student", "text": { "de": "Ah, das ist viel einfacher zu verstehen!", "fa": "آه، این خیلی ساده‌تر قابل فهم است!" }, "mood": "excited" }
+      ],
+      "questions": [
+        { "question": "دانشجو با چه چیزی مشکل دارد؟", "options": ["فعل‌ها", "صفات فعلی طولانی", "ضمایر"], "correctIndex": 1, "explanation": "دانشجو گفت: Ich habe Probleme mit langen Partizipialattributen" },
+        { "question": "راه‌حل پیشنهادی استاد چیست؟", "options": ["حذف صفات", "تبدیل به جمله موصولی", "استفاده از کلمات ساده‌تر"], "correctIndex": 1, "explanation": "استاد گفت: Wandeln Sie sie in Relativsätze um" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "ضمیر موصولی درست را انتخاب کنید",
+      "sentence": "der Mann, {0} seit Stunden arbeitet",
+      "options": ["die", "der", "das", "den"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "der Mann مذکر است، پس ضمیر موصولی هم der می‌شود" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "ضمیر موصولی درست را انتخاب کنید",
+      "sentence": "das Buch, {0} von allen gelesen wurde",
+      "options": ["der", "die", "das", "den"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "das Buch خنثی است، پس ضمیر موصولی هم das می‌شود" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "تصحیح پایان‌نامه",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Büro des Betreuers bei der Besprechung einer Masterarbeit", "fa": "در دفتر استاد راهنما هنگام بررسی پایان‌نامه" }
+      },
+      "lines": [
+        { "speaker": "Betreuer", "text": { "de": "Ihr Satz ist zu kompliziert. Lesen Sie mal vor.", "fa": "جمله شما خیلی پیچیده است. بلند بخوانید." }, "mood": "neutral" },
+        { "speaker": "Studentin", "text": { "de": "'Die von dem internationalen Forscherteam entwickelte Methode...'", "fa": "روشی که توسط تیم تحقیقاتی بین‌المللی توسعه داده شده..." }, "mood": "neutral" },
+        { "speaker": "Betreuer", "text": { "de": "Besser: 'Die Methode, die von dem internationalen Forscherteam entwickelt wurde...'", "fa": "بهتر: روشی، که توسط تیم تحقیقاتی بین‌المللی توسعه داده شده..." }, "mood": "happy" },
+        { "speaker": "Studentin", "text": { "de": "Ja, das klingt viel klarer!", "fa": "بله، این خیلی واضح‌تر به نظر می‌رسد!" }, "mood": "happy" },
+        { "speaker": "Betreuer", "text": { "de": "Genau! Relativsätze verbessern die Lesbarkeit.", "fa": "دقیقاً! جملات موصولی خوانایی را بهتر می‌کنند." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "چه چیزی باعث بهتر شدن جمله شد؟", "options": ["کوتاه‌تر کردن", "تبدیل به جمله موصولی", "حذف کلمات"], "correctIndex": 1, "explanation": "استاد صفت گسترده را به جمله موصولی تبدیل کرد" },
+        { "question": "جملات موصولی چه چیزی را بهتر می‌کنند؟", "options": ["سرعت خواندن", "خوانایی (Lesbarkeit)", "طول متن"], "correctIndex": 1, "explanation": "استاد گفت: Relativsätze verbessern die Lesbarkeit" }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "صفات گسترده را با جملات موصولی معادل جفت کنید",
+      "items": [
+        { "id": "i1", "text": "der lesende Student" },
+        { "id": "i2", "text": "das geschriebene Buch" },
+        { "id": "i3", "text": "die singende Frau" },
+        { "id": "i4", "text": "der gekaufte Wagen" },
+        { "id": "i5", "text": "das spielende Kind" },
+        { "id": "i6", "text": "die gebaute Brücke" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "der Student, der liest" },
+        { "id": "m2", "text": "das Buch, das geschrieben wurde" },
+        { "id": "m3", "text": "die Frau, die singt" },
+        { "id": "m4", "text": "der Wagen, der gekauft wurde" },
+        { "id": "m5", "text": "das Kind, das spielt" },
+        { "id": "m6", "text": "die Brücke, die gebaut wurde" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "مردی که کار می‌کند",
+      "sentenceTemplate": "der {0}, der {1}",
+      "options": ["Mann", "Frau", "arbeitet", "gearbeitet"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "der Mann, der arbeitet", "fa": "مردی که کار می‌کند" }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "کتابی که خوانده شده",
+      "sentenceTemplate": "das Buch, das {0} {1}",
+      "options": ["gelesen", "liest", "wurde", "wird"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "das Buch, das gelesen wurde", "fa": "کتابی که خوانده شده" }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: متن آکادمیک",
+      "passage": {
+        "de": "In wissenschaftlichen Texten findet man oft erweiterte Partizipialattribute. Ein Beispiel: 'Die von dem Forscherteam entwickelte und von der Industrie finanzierte Methode zeigt gute Ergebnisse.' Dieser Satz ist schwer zu verstehen.\n\nEinfacher mit Relativsätzen: 'Die Methode, die von dem Forscherteam entwickelt und von der Industrie finanziert wurde, zeigt gute Ergebnisse.'\n\nDurch die Umwandlung in Relativsätze wird die Verständlichkeit verbessert. Der Leser kann die Information besser verarbeiten. Besonders bei langen Attributen ist diese Technik hilfreich.",
+        "fa": "در متون علمی اغلب صفات فعلی گسترده دیده می‌شود. یک مثال: روشی که توسط تیم تحقیقاتی توسعه داده شده و توسط صنعت تأمین مالی شده، نتایج خوبی نشان می‌دهد. این جمله درک آن دشوار است.\n\nساده‌تر با جملات موصولی: روشی، که توسط تیم تحقیقاتی توسعه داده شده و توسط صنعت تأمین مالی شده، نتایج خوبی نشان می‌دهد.\n\nبا تبدیل به جملات موصولی، وضوح بهتر می‌شود. خواننده می‌تواند اطلاعات را بهتر پردازش کند. به ویژه برای صفات طولانی این تکنیک مفید است."
+      },
+      "questions": [
+        { "question": "چرا متون علمی گاهی سخت‌خوان هستند؟", "options": ["کلمات نادر", "صفات فعلی گسترده", "فعل‌های پیچیده"], "correctIndex": 1, "explanation": "متن می‌گوید: In wissenschaftlichen Texten findet man oft erweiterte Partizipialattribute" },
+        { "question": "چه چیزی وضوح را بهتر می‌کند؟", "options": ["کوتاه کردن جملات", "تبدیل به جملات موصولی", "حذف صفات"], "correctIndex": 1, "explanation": "متن می‌گوید: Durch die Umwandlung in Relativsätze wird die Verständlichkeit verbessert" },
+        { "question": "این تکنیک کجا بیشتر مفید است؟", "options": ["جملات کوتاه", "صفات طولانی", "فعل‌های ساده"], "correctIndex": 1, "explanation": "متن می‌گوید: Besonders bei langen Attributen ist diese Technik hilfreich" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der schwierige Artikel", "fa": "مقاله دشوار" },
+      "characters": ["Maria", "Thomas"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Maria studiert Germanistik und muss einen wissenschaftlichen Artikel lesen.", "fa": "ماریا زبان و ادبیات آلمانی می‌خواند و باید یک مقاله علمی بخواند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Maria",
+          "text": { "de": "Dieser Satz ist unmöglich! 'Die von dem international anerkannten Wissenschaftler publizierte Studie...'", "fa": "این جمله غیرممکن است! مطالعه‌ای که توسط دانشمند بین‌المللی شناخته‌شده منتشر شده..." },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Thomas",
+          "text": { "de": "Wandle es in einen Relativsatz um!", "fa": "آن را به جمله موصولی تبدیل کن!" },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "ماریا با چه مشکلی روبروست؟",
+          "options": ["گرامر فعل", "صفت گسترده طولانی", "لغات جدید"],
+          "correctIndex": 1,
+          "explanation": "ماریا با یک صفت فعلی گسترده طولانی مشکل دارد"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Maria",
+          "text": { "de": "Also: 'Die Studie, die von dem international anerkannten Wissenschaftler publiziert wurde...'", "fa": "پس: مطالعه‌ای، که توسط دانشمند بین‌المللی شناخته‌شده منتشر شده..." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Thomas",
+          "text": { "de": "Genau! Jetzt ist es viel klarer!", "fa": "دقیقاً! حالا خیلی واضح‌تر شد!" },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "چه تغییری در جمله ایجاد شد؟",
+          "options": ["کلمات حذف شدند", "صفت گسترده به جمله موصولی تبدیل شد", "فعل عوض شد"],
+          "correctIndex": 1,
+          "explanation": "صفت گسترده با Partizip II به جمله موصولی با wurde تبدیل شد"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Maria",
+          "text": { "de": "Diese Technik ist super für akademische Texte!", "fa": "این تکنیک برای متون آکادمیک عالی است!" },
+          "mood": "happy"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Maria liest den Rest des Artikels ohne Probleme.", "fa": "ماریا بقیه مقاله را بدون مشکل می‌خواند." }
+        },
+        {
+          "type": "question",
+          "question": "نتیجه یادگیری این تکنیک چه بود؟",
+          "options": ["متن کوتاه‌تر شد", "درک متن آسان‌تر شد", "متن حذف شد"],
+          "correctIndex": 1,
+          "explanation": "ماریا توانست بقیه مقاله را بدون مشکل بخواند"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: تبدیل صفات",
+      "instruction": "نوع تبدیل درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "lesend →", "left": "liest (Aktiv)", "right": "gelesen wurde (Passiv)", "correctSide": "left" },
+        { "prompt": "gelesen →", "left": "liest (Aktiv)", "right": "gelesen wurde (Passiv)", "correctSide": "right" },
+        { "prompt": "arbeitend →", "left": "arbeitet (Aktiv)", "right": "gearbeitet wurde (Passiv)", "correctSide": "left" },
+        { "prompt": "geschrieben →", "left": "schreibt (Aktiv)", "right": "geschrieben wurde (Passiv)", "correctSide": "right" },
+        { "prompt": "spielend →", "left": "spielt (Aktiv)", "right": "gespielt wurde (Passiv)", "correctSide": "left" },
+        { "prompt": "gekauft →", "left": "kauft (Aktiv)", "right": "gekauft wurde (Passiv)", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Der Mann, der arbeitet, ist müde.",
+      "translation": "مردی که کار می‌کند، خسته است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Das Buch, das gelesen wurde, war interessant.",
+      "translation": "کتابی که خوانده شده بود، جالب بود."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Die Frau, die am Fenster steht, ist meine Mutter.",
+      "translation": "زنی که کنار پنجره ایستاده، مادرم است."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: تبدیل‌ها!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "Partizip I → ?", "options": ["Aktiv (حال)", "Passiv"], "correctAnswerIndex": 0 },
+        { "question": "Partizip II → ?", "options": ["Aktiv", "Passiv (گذشته)"], "correctAnswerIndex": 1 },
+        { "question": "lesend = ?", "options": ["der liest", "der gelesen wurde"], "correctAnswerIndex": 0 },
+        { "question": "geschrieben = ?", "options": ["der schreibt", "der geschrieben wurde"], "correctAnswerIndex": 1 },
+        { "question": "der singend → der...", "options": ["singt", "gesungen wurde"], "correctAnswerIndex": 0 },
+        { "question": "das geöffnet → das...", "options": ["öffnet", "geöffnet wurde"], "correctAnswerIndex": 1 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: صفات و جملات موصولی",
+      "pairs": [
+        { "de": "der lesende Mann", "fa": "der Mann, der liest" },
+        { "de": "das geschriebene Buch", "fa": "das Buch, das geschrieben wurde" },
+        { "de": "die singende Frau", "fa": "die Frau, die singt" },
+        { "de": "der gekaufte Wagen", "fa": "der Wagen, der gekauft wurde" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات مربوط به این درس را پیدا کنید",
+      "targetWords": ["Relativsatz", "Partizip", "auflösen", "umwandeln", "Attribut", "wurde"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "der Relativsatz", "fa": "جمله موصولی", "options": ["جمله شرطی", "جمله موصولی", "جمله پرسشی", "جمله امری"], "correctIndex": 1 },
+        { "de": "auflösen", "fa": "تجزیه کردن", "options": ["نوشتن", "تجزیه کردن", "خواندن", "ترجمه کردن"], "correctIndex": 1 },
+        { "de": "umwandeln", "fa": "تبدیل کردن", "options": ["تبدیل کردن", "مقایسه کردن", "توضیح دادن", "پاک کردن"], "correctIndex": 0 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما یاد گرفتید چگونه صفات گسترده را به جملات موصولی تبدیل کنید!",
+      "keyPoints": [
+        "Partizip I (arbeitend) → Relativsatz mit Aktiv (der arbeitet)",
+        "Partizip II (gelesen) → Relativsatz mit Passiv (das gelesen wurde)",
+        "تبدیل به جمله موصولی متن را واضح‌تر و قابل فهم‌تر می‌کند",
+        "ضمیر موصولی باید با جنس اسم هماهنگ باشد (der/die/das)",
+        "در جمله موصولی، فعل به آخر می‌رود",
+        "این تکنیک برای متون علمی و آکادمیک بسیار مفید است"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "der Relativsatz", "fa": "جمله موصولی" } },
+        { "word": { "de": "das Partizip", "fa": "صفت فعلی (وجه وصفی)" } },
+        { "word": { "de": "auflösen", "fa": "تجزیه کردن، باز کردن" } },
+        { "word": { "de": "das erweiterte Attribut", "fa": "صفت گسترده" } },
+        { "word": { "de": "umwandeln", "fa": "تبدیل کردن" } },
+        { "word": { "de": "die Verständlichkeit", "fa": "قابل فهم بودن، وضوح" } }
+      ]
+    }
+  ]
+}

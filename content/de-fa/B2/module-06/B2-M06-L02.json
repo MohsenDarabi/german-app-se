@@ -1,0 +1,527 @@
+{
+  "id": "B2-M06-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Komplexe Attribute: Partizip II erweitert", "fa": "صفات پیچیده: وصف مفعولی گسترده" },
+  "description": "یاد بگیرید چگونه از صفات وصفی گسترده با Partizip II استفاده کنید. این ساختار معنای مجهول دارد: کاری که بر روی اسم انجام شده است. مثال: das von allen Studenten gelesene Buch (کتابی که توسط همه دانشجویان خوانده شده)",
+  "level": "B2",
+  "module": 6,
+  "lessonNumber": 2,
+  "totalSteps": 45,
+  "estimatedMinutes": 35,
+  "vocabulary": [
+    { "de": "das Attribut", "fa": "صفت، ویژگی", "grammar": { "pos": "noun", "gender": "neuter" } },
+    { "de": "komplex", "fa": "پیچیده، مرکب", "grammar": { "pos": "adjective" } },
+    { "de": "das Partizip II", "fa": "وصف مفعولی (صفت فعلی گذشته)", "grammar": { "pos": "noun", "gender": "neuter" } },
+    { "de": "das Passiv", "fa": "مجهول", "grammar": { "pos": "noun", "gender": "neuter" } },
+    { "de": "die Erweiterung", "fa": "گسترش، توسعه", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "abgeschlossen", "fa": "تمام‌شده، به پایان رسیده", "grammar": { "pos": "adjective" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "Partizip II به عنوان صفت چیست؟",
+      "content": "**Partizip II als Attribut (وصف مفعولی به عنوان صفت)**\n\nPartizip II می‌تواند مثل یک صفت قبل از اسم بیاید:\n\n| Partizip II | به عنوان صفت | معنی |\n|-------------|--------------|------|\n| gelesen | das gelesene Buch | کتاب خوانده‌شده |\n| geschrieben | der geschriebene Brief | نامه نوشته‌شده |\n| gekocht | die gekochte Suppe | سوپ پخته‌شده |\n\n**نکته کلیدی - معنای مجهول:**\n- Partizip I (lesend) = فاعلی: کسی که می‌خواند\n- Partizip II (gelesen) = **مفعولی**: چیزی که خوانده **شده**\n\n**تفاوت مهم با Partizip I:**\n- der lesende Mann = مردی که **می‌خواند** (فعال)\n- das gelesene Buch = کتابی که **خوانده شده** (مجهول)\n\n**قاعده:** Partizip II + پایان صفتی (e, en, er, es, em)",
+      "examples": [
+        { "de": "das gelesene Buch", "fa": "کتاب خوانده‌شده" },
+        { "de": "die gekochte Suppe", "fa": "سوپ پخته‌شده" },
+        { "de": "der geschriebene Brief", "fa": "نامه نوشته‌شده" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "das Attribut", "fa": "صفت، ویژگی" },
+      "example": { "text": { "de": "Das Partizip II kann als Attribut vor dem Nomen stehen.", "fa": "وصف مفعولی می‌تواند به عنوان صفت قبل از اسم بیاید." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Attribut",
+      "translation": "صفت، ویژگی",
+      "syllables": ["At", "tri", "but"],
+      "distractors": ["Et", "tra", "bot"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "komplex", "fa": "پیچیده، مرکب" },
+      "example": { "text": { "de": "Diese komplexen Attribute sind typisch für wissenschaftliche Texte.", "fa": "این صفات پیچیده مختص متون علمی هستند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "komplex",
+      "translation": "پیچیده",
+      "syllables": ["kom", "plex"],
+      "distractors": ["kam", "plax", "plox"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "das Partizip II", "fa": "وصف مفعولی (صفت فعلی گذشته)" },
+      "example": { "text": { "de": "Das Partizip II drückt eine abgeschlossene Handlung aus.", "fa": "وصف مفعولی بیانگر عملی تمام‌شده است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Partizip",
+      "translation": "وصف",
+      "syllables": ["Par", "ti", "zip"],
+      "distractors": ["Per", "ta", "zep"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "ساختار صفت گسترده با Partizip II",
+      "content": "**Erweitertes Partizip-II-Attribut = صفت وصفی گسترده با Partizip II**\n\nوقتی قبل از Partizip II اطلاعات بیشتری اضافه کنیم، ساختار «گسترده» می‌شود:\n\n**ساده:**\n- das gelesene Buch = کتاب خوانده‌شده\n\n**گسترده:**\n- das **von allen Studenten** gelesene Buch\n- = کتابی که **توسط همه دانشجویان** خوانده شده است\n\n**فرمول:**\n```\nآرتیکل + [von + فاعل] + [قید/متمم] + Partizip II + اسم\n```\n\n| آرتیکل | گسترش (فاعل/قید) | Partizip II | اسم |\n|--------|-----------------|-------------|-----|\n| das | von allen Studenten | gelesene | Buch |\n| der | im Jahr 1990 gebaute | gebaute | Turm |\n| die | von der Polizei gefundene | gefundene | Tasche |\n\n**نکته:** «von + فاعل» نشان می‌دهد چه کسی کار را انجام داده است.",
+      "examples": [
+        { "de": "das von allen Studenten gelesene Buch", "fa": "کتابی که توسط همه دانشجویان خوانده شده" },
+        { "de": "der im Jahr 1990 gebaute Turm", "fa": "برجی که در سال ۱۹۹۰ ساخته شده" },
+        { "de": "die von der Polizei gefundene Tasche", "fa": "کیفی که توسط پلیس پیدا شده" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "das Passiv", "fa": "مجهول" },
+      "example": { "text": { "de": "Das Partizip II drückt eine passive Bedeutung aus.", "fa": "وصف مفعولی معنای مجهول بیان می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "Passiv",
+      "translation": "مجهول",
+      "syllables": ["Pas", "siv"],
+      "distractors": ["Pos", "sav", "suv"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "die Erweiterung", "fa": "گسترش، توسعه" },
+      "example": { "text": { "de": "Die Erweiterung macht das Attribut informativer.", "fa": "گسترش، صفت را پرمحتواتر می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "Erweiterung",
+      "translation": "گسترش",
+      "syllables": ["Er", "wei", "te", "rung"],
+      "distractors": ["Ar", "wai", "ta", "rang"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "abgeschlossen", "fa": "تمام‌شده، به پایان رسیده" },
+      "example": { "text": { "de": "Das Partizip II zeigt eine abgeschlossene Handlung.", "fa": "وصف مفعولی یک عمل تمام‌شده را نشان می‌دهد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "abgeschlossen",
+      "translation": "تمام‌شده",
+      "syllables": ["ab", "ge", "schlos", "sen"],
+      "distractors": ["ob", "ga", "schlas", "san"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "Partizip II معنای چه نوع عملی را نشان می‌دهد؟",
+      "options": [
+        "عمل در حال انجام (فعال)",
+        "عمل انجام‌شده بر روی چیزی (مجهول)",
+        "عمل آینده",
+        "عمل احتمالی"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! Partizip II معنای مجهول دارد: چیزی که کاری بر آن انجام شده است.", "incorrect": "Partizip II معنای مجهول (passiv) دارد: das gelesene Buch = کتابی که خوانده شده (نه کسی که می‌خواند)" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "در «das von allen Studenten gelesene Buch»، «von allen Studenten» چه نقشی دارد؟",
+      "options": [
+        "مکان را نشان می‌دهد",
+        "فاعل کار را نشان می‌دهد",
+        "زمان را نشان می‌دهد",
+        "دلیل را نشان می‌دهد"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "دقیقاً! «von + فاعل» نشان می‌دهد چه کسی کار را انجام داده: کتاب توسط دانشجویان خوانده شده.", "incorrect": "در ساختار مجهول، «von + فاعل» نشان‌دهنده کسی است که کار را انجام داده است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "Partizip II درست را انتخاب کنید",
+      "sentence": "Das {0} Buch liegt auf dem Tisch. (lesen)",
+      "options": ["gelesene", "lesende", "lesen", "gelesen"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "das Buch خنثی است و با das می‌آید، پس پایان صفتی -e می‌گیرد: das gelesene Buch" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "ساختار صفت گسترده را کامل کنید",
+      "sentence": "Der {0} Brief ist sehr wichtig. (von meiner Mutter geschrieben)",
+      "options": ["von meiner Mutter geschriebene", "geschriebene von meiner Mutter", "von meiner Mutter schreibende", "schreibende von meiner Mutter"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "در صفت گسترده، گسترش قبل از Partizip می‌آید: der von meiner Mutter geschriebene Brief" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "Partizip II صحیح را انتخاب کنید",
+      "sentence": "Die von der Polizei {0} Tasche gehört einer Touristin. (finden)",
+      "options": ["gefundene", "findende", "gefunden", "finden"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "die Tasche مؤنث است، پس پایان صفتی -e می‌گیرد: die gefundene Tasche" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "تبدیل به جمله مجهول نسبی",
+      "content": "**Partizip-II-Attribut = Relativsatz im Passiv**\n\nهر صفت گسترده با Partizip II را می‌توان به جمله نسبی مجهول تبدیل کرد:\n\n**ساختار صفتی:**\ndas **von allen Studenten gelesene** Buch\n\n**جمله نسبی مجهول معادل:**\ndas Buch, **das von allen Studenten gelesen wurde/wird**\n\n**مراحل تبدیل:**\n1. اسم را جلو بیاورید\n2. ضمیر موصولی مناسب اضافه کنید\n3. ساختار مجهول بسازید (werden + Partizip II)\n4. فعل کمکی را به آخر ببرید\n\n**مثال‌های بیشتر:**\n| Partizip-II-Attribut | Relativsatz |\n|----------------------|-------------|\n| der im Jahr 2000 gebaute Turm | der Turm, der im Jahr 2000 gebaut wurde |\n| die gestern gekaufte Jacke | die Jacke, die gestern gekauft wurde |\n\n**نکته:** برای گذشته از «wurde» و برای حال از «wird» استفاده کنید.",
+      "examples": [
+        { "de": "das von mir geschriebene Buch = das Buch, das von mir geschrieben wurde", "fa": "کتابی که توسط من نوشته شده" },
+        { "de": "der vor Jahren gepflanzte Baum = der Baum, der vor Jahren gepflanzt wurde", "fa": "درختی که سال‌ها پیش کاشته شده" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جمله نسبی مجهول معادل را کامل کنید",
+      "sentence": "das von Mozart komponierte Stück = das Stück, {0} von Mozart komponiert {1}",
+      "options": ["das", "die", "wurde", "wird"],
+      "correctAnswers": [0, 2],
+      "feedback": { "explanation": "das Stück (خنثی) → das Stück, das von Mozart komponiert wurde (گذشته)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جمله نسبی مجهول معادل را کامل کنید",
+      "sentence": "die von der Firma hergestellten Produkte = die Produkte, {0} von der Firma hergestellt {1}",
+      "options": ["die", "das", "werden", "wurde"],
+      "correctAnswers": [0, 2],
+      "feedback": { "explanation": "die Produkte (جمع) → die Produkte, die von der Firma hergestellt werden" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "صفت گسترده درست را انتخاب کنید",
+      "sentence": "{0} ist sehr wertvoll.",
+      "options": ["Das von meinem Großvater geerbte Haus", "Geerbte das Haus von meinem Großvater", "Das Haus von meinem Großvater geerbte", "Von meinem Großvater das geerbte Haus"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "ترتیب درست: آرتیکل + گسترش + Partizip II + اسم = Das von meinem Großvater geerbte Haus" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در موزه",
+      "scene": {
+        "location": "museum",
+        "description": { "de": "In einem Kunstmuseum vor einem berühmten Gemälde", "fa": "در یک موزه هنری جلوی یک نقاشی مشهور" }
+      },
+      "lines": [
+        { "speaker": "Besucher", "text": { "de": "Wer hat dieses Bild gemalt?", "fa": "چه کسی این تصویر را نقاشی کرده؟" }, "mood": "confused" },
+        { "speaker": "Führerin", "text": { "de": "Das ist das von Vincent van Gogh gemalte 'Sternennacht'.", "fa": "این «شب پرستاره» است که توسط ونسان ون گوگ نقاشی شده." }, "mood": "happy" },
+        { "speaker": "Besucher", "text": { "de": "Also das Bild, das von van Gogh gemalt wurde?", "fa": "پس تصویری که توسط ون گوگ نقاشی شده؟" }, "mood": "neutral" },
+        { "speaker": "Führerin", "text": { "de": "Genau! Die im Jahr 1889 geschaffene Arbeit zeigt eine Nachtlandschaft.", "fa": "دقیقاً! این اثر که در سال ۱۸۸۹ خلق شده، یک منظره شبانه را نشان می‌دهد." }, "mood": "excited" },
+        { "speaker": "Besucher", "text": { "de": "Die hier ausgestellten Werke sind wirklich beeindruckend!", "fa": "آثاری که اینجا به نمایش گذاشته شده‌اند واقعاً چشمگیر هستند!" }, "mood": "excited" }
+      ],
+      "questions": [
+        { "question": "«das von van Gogh gemalte Bild» به چه جمله نسبی تبدیل می‌شود؟", "options": ["das Bild, das von van Gogh gemalt wurde", "das Bild, das van Gogh malt", "das Bild van Gogh gemalt"], "correctIndex": 0, "explanation": "صفت Partizip II به جمله نسبی مجهول تبدیل می‌شود: wurde + gemalt" },
+        { "question": "در «die im Jahr 1889 geschaffene Arbeit» چه اطلاعاتی گسترش است؟", "options": ["نوع کار", "زمان خلق اثر", "نام هنرمند"], "correctIndex": 1, "explanation": "«im Jahr 1889» زمان خلق اثر را نشان می‌دهد." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "صفت گسترده با Partizip II را مرتب کنید",
+      "words": ["Buch", "Studenten", "das", "gelesene", "allen", "von"],
+      "correctOrder": [2, 5, 4, 3, 0],
+      "correctSentence": { "de": "das von allen Studenten gelesene Buch", "fa": "کتابی که توسط همه دانشجویان خوانده شده" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "صفت گسترده با Partizip II را مرتب کنید",
+      "words": ["Brief", "der", "geschriebene", "Hand", "mit", "der"],
+      "correctOrder": [1, 4, 5, 3, 2, 0],
+      "correctSentence": { "de": "der mit der Hand geschriebene Brief", "fa": "نامه‌ای که با دست نوشته شده" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "صفت گسترده با Partizip II را مرتب کنید",
+      "words": ["Produkte", "in", "Deutschland", "die", "hergestellten"],
+      "correctOrder": [3, 1, 2, 4, 0],
+      "correctSentence": { "de": "die in Deutschland hergestellten Produkte", "fa": "محصولاتی که در آلمان تولید شده‌اند" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "Partizip II به عنوان صفت معنای مجهول دارد: کاری که بر روی اسم انجام شده است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! das gelesene Buch = کتابی که خوانده شده (نه کسی که می‌خواند)" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "در صفت گسترده با Partizip II، گسترش‌ها بعد از Partizip می‌آیند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! گسترش‌ها قبل از Partizip II می‌آیند: das [von allen Studenten] gelesene Buch" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "«von + فاعل» در صفت گسترده نشان می‌دهد چه کسی کار را انجام داده است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! das von Mozart komponierte Stück = قطعه‌ای که توسط موتزارت ساخته شده (موتزارت = فاعل)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "گزارش خبری",
+      "scene": {
+        "location": "office",
+        "description": { "de": "In einer Nachrichtenredaktion", "fa": "در دفتر تحریریه خبر" }
+      },
+      "lines": [
+        { "speaker": "Redakteur", "text": { "de": "Wir müssen über den gestrigen Unfall berichten.", "fa": "باید درباره تصادف دیروز گزارش دهیم." }, "mood": "neutral" },
+        { "speaker": "Journalistin", "text": { "de": "Das von der Polizei untersuchte Fahrzeug war ein LKW.", "fa": "وسیله نقلیه‌ای که توسط پلیس بررسی شده یک کامیون بود." }, "mood": "neutral" },
+        { "speaker": "Redakteur", "text": { "de": "Und was ist mit den verletzten Personen?", "fa": "و افراد مجروح چه؟" }, "mood": "sad" },
+        { "speaker": "Journalistin", "text": { "de": "Die ins Krankenhaus gebrachten Patienten sind außer Lebensgefahr.", "fa": "بیمارانی که به بیمارستان منتقل شده‌اند در خطر نیستند." }, "mood": "happy" },
+        { "speaker": "Redakteur", "text": { "de": "Gut. Schreib bitte: Die von den Rettungskräften versorgten Opfer erholen sich.", "fa": "خوب. لطفاً بنویس: قربانیانی که توسط نیروهای امداد مراقبت شده‌اند در حال بهبودی هستند." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "چند صفت گسترده با Partizip II در این مکالمه وجود دارد؟", "options": ["۲", "۳", "۴"], "correctIndex": 2, "explanation": "۴ صفت: untersuchte Fahrzeug, verletzten Personen, gebrachten Patienten, versorgten Opfer" },
+        { "question": "«die ins Krankenhaus gebrachten Patienten» به جمله نسبی چه می‌شود؟", "options": ["die Patienten, die ins Krankenhaus gebracht wurden", "die Patienten bringen ins Krankenhaus", "ins Krankenhaus, wo die Patienten gebracht"], "correctIndex": 0, "explanation": "صفت Partizip II به جمله نسبی مجهول تبدیل می‌شود." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "صفات گسترده را با جملات نسبی مجهول معادل جفت کنید",
+      "items": [
+        { "id": "i1", "text": "das gelesene Buch" },
+        { "id": "i2", "text": "der geschriebene Brief" },
+        { "id": "i3", "text": "die gekochte Suppe" },
+        { "id": "i4", "text": "das gebaute Haus" },
+        { "id": "i5", "text": "die gefundene Tasche" },
+        { "id": "i6", "text": "der reparierte Computer" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "das Buch, das gelesen wurde" },
+        { "id": "m2", "text": "der Brief, der geschrieben wurde" },
+        { "id": "m3", "text": "die Suppe, die gekocht wurde" },
+        { "id": "m4", "text": "das Haus, das gebaut wurde" },
+        { "id": "m5", "text": "die Tasche, die gefunden wurde" },
+        { "id": "m6", "text": "der Computer, der repariert wurde" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "نامه‌ای که توسط مادرم نوشته شده خیلی زیباست.",
+      "sentenceTemplate": "Der {0} Brief ist sehr schön.",
+      "options": ["von meiner Mutter geschriebene", "von meiner Mutter schreibende", "meiner Mutter geschrieben", "geschriebene meiner Mutter"],
+      "correctAnswers": [0],
+      "correctTranslation": { "de": "Der von meiner Mutter geschriebene Brief ist sehr schön.", "fa": "نامه‌ای که توسط مادرم نوشته شده خیلی زیباست." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "خانه‌ای که در سال ۱۹۵۰ ساخته شده هنوز محکم است.",
+      "sentenceTemplate": "Das {0} Haus ist noch {1}.",
+      "options": ["im Jahr 1950 gebaute", "1950 gebaut", "stabil", "bauen"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Das im Jahr 1950 gebaute Haus ist noch stabil.", "fa": "خانه‌ای که در سال ۱۹۵۰ ساخته شده هنوز محکم است." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: مقاله علمی",
+      "passage": {
+        "de": "Forschungsbericht: Klimawandel\n\nDie von internationalen Wissenschaftlern durchgeführte Studie zeigt alarmierende Ergebnisse. Die in den letzten 50 Jahren gemessenen Temperaturen sind deutlich gestiegen.\n\nDas von der UN veröffentlichte Dokument warnt vor den Folgen. Die durch Industrie verursachte Verschmutzung ist ein Hauptfaktor. Die von Autos produzierten Emissionen tragen ebenfalls bei.\n\nDie von Experten empfohlenen Maßnahmen umfassen: Reduzierung von CO2, Investitionen in erneuerbare Energien, und internationale Zusammenarbeit. Das von vielen Ländern unterzeichnete Abkommen ist ein erster Schritt.",
+        "fa": "گزارش تحقیقاتی: تغییرات اقلیمی\n\nمطالعه‌ای که توسط دانشمندان بین‌المللی انجام شده، نتایج هشداردهنده‌ای نشان می‌دهد. دماهایی که در ۵۰ سال گذشته اندازه‌گیری شده‌اند به طور قابل توجهی افزایش یافته‌اند.\n\nسندی که توسط سازمان ملل منتشر شده درباره عواقب هشدار می‌دهد. آلودگی‌ای که توسط صنعت ایجاد شده یک عامل اصلی است. انتشاراتی که توسط خودروها تولید می‌شوند نیز کمک می‌کنند.\n\nاقداماتی که توسط کارشناسان توصیه شده شامل: کاهش CO2، سرمایه‌گذاری در انرژی‌های تجدیدپذیر، و همکاری بین‌المللی است. توافق‌نامه‌ای که توسط بسیاری از کشورها امضا شده یک قدم اول است."
+      },
+      "questions": [
+        { "question": "چند صفت گسترده با Partizip II در این متن وجود دارد؟", "options": ["۵", "۶", "۷"], "correctIndex": 2, "explanation": "۷ صفت: durchgeführte Studie, gemessenen Temperaturen, veröffentlichte Dokument, verursachte Verschmutzung, produzierten Emissionen, empfohlenen Maßnahmen, unterzeichnete Abkommen" },
+        { "question": "«die von internationalen Wissenschaftlern durchgeführte Studie» به جمله نسبی چه می‌شود؟", "options": ["die Studie, die von internationalen Wissenschaftlern durchgeführt wurde", "die Studie durchführt internationale Wissenschaftler", "internationale Wissenschaftler führen die Studie durch"], "correctIndex": 0, "explanation": "صفت Partizip II به جمله نسبی مجهول تبدیل می‌شود با wurde." },
+        { "question": "چرا این متن از صفات گسترده با Partizip II استفاده می‌کند؟", "options": ["چون راحت‌تر است", "چون متن علمی و رسمی است", "چون نویسنده آلمانی نیست"], "correctIndex": 1, "explanation": "متون علمی و رسمی از این ساختارها برای فشردگی و دقت استفاده می‌کنند." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Das geheimnisvolle Paket", "fa": "بسته مرموز" },
+      "characters": ["Anna", "Max"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Anna findet ein Paket vor ihrer Tür.", "fa": "آنا یک بسته جلوی درش پیدا می‌کند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Max, schau! Ein von jemandem hiergelassenes Paket!", "fa": "ماکس، ببین! یک بسته که توسط کسی اینجا گذاشته شده!" },
+          "mood": "surprised"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Max",
+          "text": { "de": "Interessant! Ist ein Name darauf geschrieben?", "fa": "جالب است! اسمی رویش نوشته شده؟" },
+          "mood": "confused"
+        },
+        {
+          "type": "question",
+          "question": "«ein von jemandem hiergelassenes Paket» به جمله نسبی چه می‌شود؟",
+          "options": ["ein Paket, das von jemandem hiergelassen wurde", "ein Paket, das jemand hierlässt", "jemand hat ein Paket hiergelassen"],
+          "correctIndex": 0,
+          "explanation": "صفت Partizip II به جمله نسبی مجهول تبدیل می‌شود."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Hier steht: 'Die in diesem Paket enthaltenen Dokumente sind wichtig.'", "fa": "اینجا نوشته: «مدارکی که در این بسته موجودند مهم هستند.»" },
+          "mood": "surprised"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Max",
+          "text": { "de": "Das von deinem Großvater geerbte Fotoalbum ist vielleicht dabei!", "fa": "شاید آلبوم عکسی که از پدربزرگت به ارث رسیده توش باشد!" },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "در «die in diesem Paket enthaltenen Dokumente» چه اطلاعاتی گسترش است؟",
+          "options": ["نوع مدارک", "مکان مدارک (در بسته)", "زمان"],
+          "correctIndex": 1,
+          "explanation": "«in diesem Paket» مکان را نشان می‌دهد: مدارکی که در این بسته هستند."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Ja! Das sind die von meiner Familie lange gesuchten Dokumente!", "fa": "آره! اینها مدارکی هستند که خانواده‌ام مدت‌ها دنبالشان بودند!" },
+          "mood": "happy"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Das geheimnisvolle Paket enthielt wertvolle Familienerbstücke.", "fa": "بسته مرموز حاوی یادگارهای ارزشمند خانوادگی بود." }
+        },
+        {
+          "type": "question",
+          "question": "«die von meiner Familie lange gesuchten Dokumente» چه معنایی دارد؟",
+          "options": ["مدارکی که خانواده‌ام آنها را جستجو می‌کنند", "مدارکی که مدت‌ها توسط خانواده‌ام جستجو شده بودند", "مدارکی که خانواده‌ام پیدا کردند"],
+          "correctIndex": 1,
+          "explanation": "Partizip II (gesucht) معنای مجهول گذشته دارد: مدارکی که جستجو شده بودند."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: Partizip I یا Partizip II؟",
+      "instruction": "کدام Partizip معنای مجهول (انجام‌شده) دارد؟",
+      "questions": [
+        { "prompt": "کتاب خوانده‌شده:", "left": "lesend", "right": "gelesen", "correctSide": "right" },
+        { "prompt": "مرد در حال خواندن:", "left": "lesend", "right": "gelesen", "correctSide": "left" },
+        { "prompt": "نامه نوشته‌شده:", "left": "schreibend", "right": "geschrieben", "correctSide": "right" },
+        { "prompt": "زن در حال نوشتن:", "left": "schreibend", "right": "geschrieben", "correctSide": "left" },
+        { "prompt": "غذای پخته‌شده:", "left": "kochend", "right": "gekocht", "correctSide": "right" },
+        { "prompt": "خانه ساخته‌شده:", "left": "bauend", "right": "gebaut", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Das von meinem Vater gebaute Haus ist sehr alt.",
+      "translation": "خانه‌ای که توسط پدرم ساخته شده خیلی قدیمی است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Die von der Firma hergestellten Produkte sind hochwertig.",
+      "translation": "محصولاتی که توسط شرکت تولید شده‌اند با کیفیت هستند."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Der von allen geliebte Schauspieler ist gestorben.",
+      "translation": "بازیگری که همه دوستش داشتند فوت کرده است."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: صفات گسترده با Partizip II",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "Partizip II معنای چه دارد؟", "options": ["مجهول", "فعال"], "correctAnswerIndex": 0 },
+        { "question": "«das gelesene Buch» یعنی:", "options": ["کتاب خوانده‌شده", "کتاب در حال خوانده شدن"], "correctAnswerIndex": 0 },
+        { "question": "گسترش در کجا می‌آید؟", "options": ["قبل از Partizip II", "بعد از Partizip II"], "correctAnswerIndex": 0 },
+        { "question": "«von + فاعل» نشان می‌دهد:", "options": ["چه کسی کار را انجام داده", "کجا انجام شده"], "correctAnswerIndex": 0 },
+        { "question": "جمله نسبی معادل با چه ساخته می‌شود؟", "options": ["werden + Partizip II", "haben + Partizip II"], "correctAnswerIndex": 0 },
+        { "question": "این ساختار در کجا رایج است؟", "options": ["متون رسمی و علمی", "چت روزانه"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: صفت ساده و گسترده",
+      "pairs": [
+        { "de": "das gelesene Buch", "fa": "کتاب خوانده‌شده" },
+        { "de": "der geschriebene Brief", "fa": "نامه نوشته‌شده" },
+        { "de": "die gekochte Suppe", "fa": "سوپ پخته‌شده" },
+        { "de": "das gebaute Haus", "fa": "خانه ساخته‌شده" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات مربوط به این درس را پیدا کنید",
+      "targetWords": ["Attribut", "komplex", "Partizip", "Passiv", "Erweiterung", "abgeschlossen"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "das Attribut", "fa": "صفت، ویژگی", "options": ["فعل", "صفت", "اسم", "قید"], "correctIndex": 1 },
+        { "de": "das Passiv", "fa": "مجهول", "options": ["معلوم", "مجهول", "امری", "شرطی"], "correctIndex": 1 },
+        { "de": "abgeschlossen", "fa": "تمام‌شده", "options": ["شروع‌شده", "ادامه‌دار", "تمام‌شده", "توقف‌شده"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما صفات پیچیده با Partizip II گسترده را یاد گرفتید!",
+      "keyPoints": [
+        "Partizip II به عنوان صفت معنای مجهول دارد: کاری که بر روی اسم انجام شده",
+        "ساختار ساده: das gelesene Buch = کتاب خوانده‌شده",
+        "ساختار گسترده: das von allen Studenten gelesene Buch = کتابی که توسط همه دانشجویان خوانده شده",
+        "همه گسترش‌ها (فاعل، زمان، مکان) قبل از Partizip II می‌آیند",
+        "«von + فاعل» نشان می‌دهد چه کسی کار را انجام داده است",
+        "صفت Partizip II = جمله نسبی مجهول: das gelesene Buch = das Buch, das gelesen wurde",
+        "این ساختار در روزنامه‌ها، متون علمی و نوشتار رسمی بسیار رایج است"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "das Attribut", "fa": "صفت، ویژگی" } },
+        { "word": { "de": "komplex", "fa": "پیچیده، مرکب" } },
+        { "word": { "de": "das Partizip II", "fa": "وصف مفعولی" } },
+        { "word": { "de": "das Passiv", "fa": "مجهول" } },
+        { "word": { "de": "die Erweiterung", "fa": "گسترش، توسعه" } },
+        { "word": { "de": "abgeschlossen", "fa": "تمام‌شده، به پایان رسیده" } }
+      ]
+    }
+  ]
+}

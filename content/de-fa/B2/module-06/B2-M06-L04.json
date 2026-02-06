@@ -1,0 +1,527 @@
+{
+  "id": "B2-M06-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Komplexe Attribute: Zusammenfassung", "fa": "صفات مرکب: جمع‌بندی" },
+  "description": "مرور جامع تمام ساختارهای صفت مرکب: اسم مفعول گسترده (Partizip I erweitert)، اسم مفعول دوم گسترده (Partizip II erweitert)، تبدیل به جملات موصولی (Relativsätze) و بالعکس. تمرکز بر خواندن متون آکادمیک و انتخاب سبک مناسب.",
+  "level": "B2",
+  "module": 6,
+  "lessonNumber": 4,
+  "totalSteps": 45,
+  "estimatedMinutes": 35,
+  "vocabulary": [
+    { "de": "das Attribut", "fa": "صفت، ویژگی", "grammar": { "pos": "noun", "gender": "neuter" } },
+    { "de": "erweitert", "fa": "گسترده، توسعه‌یافته", "grammar": { "pos": "adjective" } },
+    { "de": "der Relativsatz", "fa": "جمله موصولی", "grammar": { "pos": "noun", "gender": "masculine" } },
+    { "de": "die Schriftsprache", "fa": "زبان نوشتاری", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "akademisch", "fa": "آکادمیک، دانشگاهی", "grammar": { "pos": "adjective" } },
+    { "de": "umwandeln", "fa": "تبدیل کردن", "grammar": { "pos": "verb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "دو نوع صفت مرکب در آلمانی",
+      "content": "**Komplexe Attribute = صفات مرکب**\n\nدر این درس، تمام ساختارهای صفت مرکب را مرور می‌کنیم:\n\n| نوع | ساختار | معنی | مثال |\n|------|--------|------|------|\n| **Partizip I erweitert** | فاعل فعل + صفت فاعلی | فعال، در حال انجام | der seit Stunden arbeitende Mann |\n| **Partizip II erweitert** | مفعول فعل + صفت مفعولی | غیرفعال، انجام‌شده | das von allen gelesene Buch |\n\n**چرا این ساختارها مهم هستند؟**\n- در متون آکادمیک و رسمی بسیار رایج‌اند\n- جملات را کوتاه‌تر و فشرده‌تر می‌کنند\n- درک آنها برای خواندن متون علمی ضروری است\n\n**نکته کلیدی:** در زبان محاوره‌ای، آلمانی‌زبانان معمولاً از جملات موصولی (Relativsätze) استفاده می‌کنند!",
+      "examples": [
+        { "de": "der seit Stunden arbeitende Mann = der Mann, der seit Stunden arbeitet", "fa": "مردی که ساعت‌هاست کار می‌کند" },
+        { "de": "das von allen gelesene Buch = das Buch, das von allen gelesen wurde", "fa": "کتابی که توسط همه خوانده شده" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "das Attribut", "fa": "صفت، ویژگی" },
+      "example": { "text": { "de": "Erweiterte Attribute sind typisch für die Schriftsprache.", "fa": "صفات گسترده مختص زبان نوشتاری هستند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Attribut",
+      "translation": "صفت، ویژگی",
+      "syllables": ["At", "tri", "but"],
+      "distractors": ["Ad", "tra", "bot"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "erweitert", "fa": "گسترده، توسعه‌یافته" },
+      "example": { "text": { "de": "Das erweiterte Partizip enthält zusätzliche Informationen.", "fa": "اسم فاعل گسترده اطلاعات اضافی دارد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "erweitert",
+      "translation": "گسترده",
+      "syllables": ["er", "wei", "tert"],
+      "distractors": ["ar", "wai", "tart"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "der Relativsatz", "fa": "جمله موصولی" },
+      "example": { "text": { "de": "Im Gespräch benutzt man lieber Relativsätze.", "fa": "در مکالمه ترجیحاً از جملات موصولی استفاده می‌شود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Relativsatz",
+      "translation": "جمله موصولی",
+      "syllables": ["Re", "la", "tiv", "satz"],
+      "distractors": ["Ra", "lo", "tef", "sotz"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "Partizip I erweitert (صفت فاعلی گسترده)",
+      "content": "**Partizip I erweitert = صفت فاعلی گسترده**\n\nاین ساختار نشان‌دهنده عملی است که **همزمان در حال انجام** است:\n\n| ساختار | معنی |\n|--------|------|\n| der arbeit**ende** Mann | مردی که کار می‌کند |\n| der **seit Stunden** arbeit**ende** Mann | مردی که ساعت‌هاست کار می‌کند |\n| die **laut** lach**enden** Kinder | بچه‌هایی که بلند می‌خندند |\n\n**چگونه ساخته می‌شود:**\n\n`توضیحات + Infinitiv + d + پسوند صفت`\n\n- seit Stunden + arbeiten + d + e = der seit Stunden arbeitende Mann\n- laut + lachen + d + en = die laut lachenden Kinder\n\n**نکته:** Partizip I همیشه **فعال** است و عمل **همزمان** را نشان می‌دهد.\n\n**تبدیل به Relativsatz:**\nder seit Stunden arbeitende Mann → der Mann, **der** seit Stunden **arbeitet**",
+      "examples": [
+        { "de": "die schnell fahrenden Autos", "fa": "ماشین‌هایی که سریع می‌رانند" },
+        { "de": "der laut bellende Hund", "fa": "سگی که بلند پارس می‌کند" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "«der seit Stunden arbeitende Mann» به چه معناست؟",
+      "options": [
+        "مردی که ساعت‌ها پیش کار کرد",
+        "مردی که ساعت‌هاست کار می‌کند",
+        "مردی که کارش تمام شده",
+        "مردی که کار خواهد کرد"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! Partizip I نشان‌دهنده عمل فعال و همزمان است: der Mann, der seit Stunden arbeitet.", "incorrect": "Partizip I (arbeitend) عمل فعال و در حال انجام را نشان می‌دهد، نه گذشته یا آینده." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام گزینه Partizip I گسترده درست «die Frau, die gerade telefoniert» است؟",
+      "options": [
+        "die gerade telefonierte Frau",
+        "die gerade telefonierende Frau",
+        "die gerade telefonieren Frau",
+        "die gerade telefonierend Frau"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "درست! Partizip I = Infinitiv + d + پسوند صفت: telefonieren + d + e = telefonierende", "incorrect": "Partizip I از Infinitiv + d ساخته می‌شود: telefonieren + d = telefonierend → telefonierende (با پسوند صفت)" }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "die Schriftsprache", "fa": "زبان نوشتاری" },
+      "example": { "text": { "de": "Erweiterte Partizipien gehören zur Schriftsprache.", "fa": "اسم‌های فاعل گسترده متعلق به زبان نوشتاری هستند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "Schriftsprache",
+      "translation": "زبان نوشتاری",
+      "syllables": ["Schrift", "spra", "che"],
+      "distractors": ["Schraft", "spre", "chi"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "akademisch", "fa": "آکادمیک، دانشگاهی" },
+      "example": { "text": { "de": "Akademische Texte enthalten viele erweiterte Attribute.", "fa": "متون آکادمیک شامل صفات گسترده زیادی هستند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "akademisch",
+      "translation": "آکادمیک",
+      "syllables": ["a", "ka", "de", "misch"],
+      "distractors": ["u", "ko", "du", "mosch"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "umwandeln", "fa": "تبدیل کردن" },
+      "example": { "text": { "de": "Man kann erweiterte Attribute in Relativsätze umwandeln.", "fa": "می‌توان صفات گسترده را به جملات موصولی تبدیل کرد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "umwandeln",
+      "translation": "تبدیل کردن",
+      "syllables": ["um", "wan", "deln"],
+      "distractors": ["om", "wen", "daln"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جمله موصولی را به صفت گسترده تبدیل کنید",
+      "sentence": "das Kind, das laut weint → das laut {0} Kind",
+      "options": ["weinende", "geweinte", "weinen", "weinend"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Partizip I برای عمل فعال: weinen + d + e = weinende (das weinende Kind)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "die seit Jahren {0} Wissenschaftlerin (که سال‌هاست تحقیق می‌کند)",
+      "options": ["forschende", "geforschte", "forschen", "geforscht"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Partizip I برای عمل فعال و همزمان: forschen + d + e = forschende" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جمله را با Partizip II گسترده کامل کنید",
+      "sentence": "das von allen {0} Buch (کتابی که توسط همه خوانده شده)",
+      "options": ["lesende", "gelesene", "lesen", "gelesen"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Partizip II برای عمل غیرفعال (شده): lesen → gelesen + e = gelesene" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "Partizip II erweitert (صفت مفعولی گسترده)",
+      "content": "**Partizip II erweitert = صفت مفعولی گسترده**\n\nاین ساختار نشان‌دهنده عملی است که **انجام شده** (غیرفعال/Passiv):\n\n| ساختار | معنی |\n|--------|------|\n| das geles**ene** Buch | کتاب خوانده‌شده |\n| das **von allen** geles**ene** Buch | کتابی که توسط همه خوانده شده |\n| die **gestern** gekauft**en** Schuhe | کفش‌هایی که دیروز خریداری شده‌اند |\n\n**چگونه ساخته می‌شود:**\n\n`توضیحات + Partizip II + پسوند صفت`\n\n- von allen + gelesen + e = das von allen gelesene Buch\n- gestern + gekauft + en = die gestern gekauften Schuhe\n\n**نکته مهم:** Partizip II همیشه **غیرفعال** (Passiv) است و عمل **تکمیل‌شده** را نشان می‌دهد.\n\n**تبدیل به Relativsatz:**\ndas von allen gelesene Buch → das Buch, **das** von allen **gelesen wurde**",
+      "examples": [
+        { "de": "die kürzlich veröffentlichte Studie", "fa": "مطالعه‌ای که اخیراً منتشر شده" },
+        { "de": "der gut bezahlte Job", "fa": "شغلی که خوب پرداخت می‌شود" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جمله موصولی را به صفت گسترده تبدیل کنید",
+      "sentence": "der Artikel, der gestern veröffentlicht wurde → der gestern {0} Artikel",
+      "options": ["veröffentlichende", "veröffentlichte", "veröffentlichen", "veröffentlicht"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Partizip II برای Passiv: veröffentlichen → veröffentlicht + e = veröffentlichte" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "die vom Chef {0} Entscheidung (تصمیمی که توسط رئیس گرفته شده)",
+      "options": ["treffende", "getroffene", "treffen", "getroffen"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Partizip II برای عمل غیرفعال: treffen → getroffen + e = getroffene" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "Partizip I یا II؟",
+      "sentence": "Die {0} Sonne erwärmt die Erde. (خورشیدی که می‌تابد)",
+      "options": ["scheinende", "geschienene", "scheinend", "geschienen"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Partizip I برای عمل فعال و همزمان: scheinen + d + e = scheinende (خورشید می‌تابد = فعال)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در سمینار دانشگاهی",
+      "scene": {
+        "location": "university",
+        "description": { "de": "Im Seminarraum der Universität", "fa": "در سالن سمینار دانشگاه" }
+      },
+      "lines": [
+        { "speaker": "Professor", "text": { "de": "Lesen Sie bitte den von mir verfassten Text.", "fa": "لطفاً متنی که توسط من نوشته شده را بخوانید." }, "mood": "neutral" },
+        { "speaker": "Studentin", "text": { "de": "Können Sie das erklären? Was bedeutet 'die seit Jahren forschenden Wissenschaftler'?", "fa": "می‌توانید توضیح دهید؟ 'die seit Jahren forschenden Wissenschaftler' یعنی چه؟" }, "mood": "confused" },
+        { "speaker": "Professor", "text": { "de": "Das ist ein erweitertes Partizip I. Es bedeutet: die Wissenschaftler, die seit Jahren forschen.", "fa": "این یک صفت فاعلی گسترده است. یعنی: دانشمندانی که سال‌هاست تحقیق می‌کنند." }, "mood": "happy" },
+        { "speaker": "Student", "text": { "de": "Und 'die kürzlich veröffentlichten Ergebnisse'? Ist das Partizip II?", "fa": "و 'die kürzlich veröffentlichten Ergebnisse'؟ این Partizip II است؟" }, "mood": "neutral" },
+        { "speaker": "Professor", "text": { "de": "Genau! Das bedeutet: die Ergebnisse, die kürzlich veröffentlicht wurden.", "fa": "دقیقاً! یعنی: نتایجی که اخیراً منتشر شده‌اند." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "'die seit Jahren forschenden Wissenschaftler' چه نوع ساختاری است؟", "options": ["Partizip I erweitert", "Partizip II erweitert", "Relativsatz"], "correctIndex": 0, "explanation": "forschend از forschen + d ساخته شده: Partizip I (عمل فعال و همزمان)" },
+        { "question": "'die kürzlich veröffentlichten Ergebnisse' به چه معناست؟", "options": ["نتایجی که در حال انتشار هستند", "نتایجی که اخیراً منتشر شده‌اند", "نتایجی که منتشر خواهند شد"], "correctIndex": 1, "explanation": "Partizip II (veröffentlicht) نشان‌دهنده عمل انجام‌شده است." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "صفت گسترده را مرتب کنید",
+      "words": ["arbeitende", "der", "Mann", "seit Stunden"],
+      "correctOrder": [1, 3, 0, 2],
+      "correctSentence": { "de": "der seit Stunden arbeitende Mann", "fa": "مردی که ساعت‌هاست کار می‌کند" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "صفت گسترده را مرتب کنید",
+      "words": ["gelesene", "von allen", "das", "Buch"],
+      "correctOrder": [2, 1, 0, 3],
+      "correctSentence": { "de": "das von allen gelesene Buch", "fa": "کتابی که توسط همه خوانده شده" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله موصولی را مرتب کنید",
+      "words": ["arbeitet", "der Mann,", "seit Stunden", "der"],
+      "correctOrder": [1, 3, 2, 0],
+      "correctSentence": { "de": "der Mann, der seit Stunden arbeitet", "fa": "مردی که ساعت‌هاست کار می‌کند" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "Partizip I (arbeitend) عمل فعال و همزمان را نشان می‌دهد.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! Partizip I = فعال و همزمان. der arbeitende Mann = مردی که (الان) کار می‌کند." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "در زبان محاوره‌ای آلمانی، صفات گسترده رایج‌تر از جملات موصولی هستند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! در زبان محاوره‌ای، جملات موصولی (Relativsätze) رایج‌تر هستند. صفات گسترده بیشتر در نوشتار رسمی و آکادمیک استفاده می‌شوند." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "'das von allen gelesene Buch' معادل 'das Buch, das von allen gelesen wurde' است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! هر دو یک معنی دارند، اما صفت گسترده رسمی‌تر و کوتاه‌تر است." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "مقایسه سبک‌ها",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Büro einer Zeitung", "fa": "در دفتر یک روزنامه" }
+      },
+      "lines": [
+        { "speaker": "Redakteur", "text": { "de": "Ihr Text ist zu kompliziert. Zu viele erweiterte Attribute!", "fa": "متن شما خیلی پیچیده است. صفات گسترده زیادی دارد!" }, "mood": "neutral" },
+        { "speaker": "Journalistin", "text": { "de": "Was meinen Sie? 'Die von der Regierung beschlossenen Maßnahmen'?", "fa": "منظورتان چیست؟ 'اقداماتی که توسط دولت تصویب شده'؟" }, "mood": "confused" },
+        { "speaker": "Redakteur", "text": { "de": "Genau. Schreiben Sie lieber: 'Die Maßnahmen, die die Regierung beschlossen hat.'", "fa": "دقیقاً. بهتر است بنویسید: 'اقداماتی که دولت تصویب کرده است.'" }, "mood": "happy" },
+        { "speaker": "Journalistin", "text": { "de": "Also Relativsätze statt erweiterter Attribute?", "fa": "یعنی جملات موصولی به جای صفات گسترده؟" }, "mood": "neutral" },
+        { "speaker": "Redakteur", "text": { "de": "Für die Zeitung, ja. Akademische Texte sind anders.", "fa": "برای روزنامه، بله. متون آکادمیک فرق دارند." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "چرا سردبیر از صفات گسترده انتقاد کرد؟", "options": ["گرامرشان اشتباه بود", "برای روزنامه خیلی پیچیده بودند", "معنی نداشتند"], "correctIndex": 1, "explanation": "سردبیر گفت متن خیلی پیچیده است و برای روزنامه بهتر است از جملات موصولی استفاده شود." },
+        { "question": "در چه نوع متونی صفات گسترده مناسب‌ترند؟", "options": ["روزنامه", "متون آکادمیک", "پیامک"], "correctIndex": 1, "explanation": "سردبیر گفت: Akademische Texte sind anders - متون آکادمیک با صفات گسترده نوشته می‌شوند." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "صفت گسترده را با جمله موصولی معادل جفت کنید",
+      "items": [
+        { "id": "i1", "text": "der schnell laufende Sportler" },
+        { "id": "i2", "text": "das von ihr geschriebene Buch" },
+        { "id": "i3", "text": "die laut singenden Vögel" },
+        { "id": "i4", "text": "der gestern gekaufte Computer" },
+        { "id": "i5", "text": "die hier arbeitenden Kollegen" },
+        { "id": "i6", "text": "das gut bezahlte Projekt" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "der Sportler, der schnell läuft" },
+        { "id": "m2", "text": "das Buch, das von ihr geschrieben wurde" },
+        { "id": "m3", "text": "die Vögel, die laut singen" },
+        { "id": "m4", "text": "der Computer, der gestern gekauft wurde" },
+        { "id": "m5", "text": "die Kollegen, die hier arbeiten" },
+        { "id": "m6", "text": "das Projekt, das gut bezahlt wird" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "کتابی که توسط همه خوانده شده",
+      "sentenceTemplate": "das {0} allen {1} Buch",
+      "options": ["von", "für", "gelesene", "lesende"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "das von allen gelesene Buch", "fa": "کتابی که توسط همه خوانده شده" }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "دانشمندانی که سال‌هاست تحقیق می‌کنند",
+      "sentenceTemplate": "die seit Jahren {0} Wissenschaftler",
+      "options": ["forschende", "geforschte", "forschenden", "geforschten"],
+      "correctAnswers": [2],
+      "correctTranslation": { "de": "die seit Jahren forschenden Wissenschaftler", "fa": "دانشمندانی که سال‌هاست تحقیق می‌کنند" }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: متن آکادمیک",
+      "passage": {
+        "de": "Die seit Jahrzehnten durchgeführten Forschungen zeigen eindeutige Ergebnisse. Die von internationalen Teams gesammelten Daten bestätigen die Theorie.\n\nDie schnell steigenden Temperaturen sind besorgniserregend. Die von Menschen verursachten Emissionen spielen eine wichtige Rolle. Die kürzlich veröffentlichten Studien warnen vor den Folgen.\n\nDie an der Forschung beteiligten Wissenschaftler fordern schnelles Handeln. Die von der Politik versprochenen Maßnahmen reichen nicht aus.",
+        "fa": "تحقیقاتی که دهه‌هاست انجام می‌شوند نتایج واضحی را نشان می‌دهند. داده‌هایی که توسط تیم‌های بین‌المللی جمع‌آوری شده‌اند نظریه را تأیید می‌کنند.\n\nدماهایی که سریع در حال افزایش هستند نگران‌کننده هستند. آلاینده‌هایی که توسط انسان ایجاد شده‌اند نقش مهمی دارند. مطالعاتی که اخیراً منتشر شده‌اند درباره عواقب هشدار می‌دهند.\n\nدانشمندانی که در تحقیق مشارکت دارند خواستار اقدام سریع هستند. اقداماتی که توسط سیاست وعده داده شده‌اند کافی نیستند."
+      },
+      "questions": [
+        { "question": "'die seit Jahrzehnten durchgeführten Forschungen' چه نوع ساختاری است؟", "options": ["Partizip I erweitert", "Partizip II erweitert", "ساده"], "correctIndex": 1, "explanation": "durchgeführten از Partizip II ساخته شده: تحقیقاتی که انجام شده‌اند (Passiv)" },
+        { "question": "'die schnell steigenden Temperaturen' Partizip I است یا II؟", "options": ["Partizip I (فعال)", "Partizip II (غیرفعال)", "هیچکدام"], "correctIndex": 0, "explanation": "steigend از steigen + d: دماهایی که در حال افزایش هستند (فعال و همزمان)" },
+        { "question": "چند صفت گسترده در این متن وجود دارد؟", "options": ["۴", "۶", "۸"], "correctIndex": 2, "explanation": "۸ صفت گسترده: durchgeführten, gesammelten, steigenden, verursachten, veröffentlichten, beteiligten, versprochenen (+ یک مورد دیگر)" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der schwierige Aufsatz", "fa": "انشای دشوار" },
+      "characters": ["Lena", "Dozent"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Lena schreibt einen akademischen Aufsatz.", "fa": "لنا یک انشای آکادمیک می‌نویسد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lena",
+          "text": { "de": "Ich verstehe diese erweiterten Attribute nicht. Was bedeutet 'die von Experten empfohlene Methode'?", "fa": "این صفات گسترده را نمی‌فهمم. 'die von Experten empfohlene Methode' یعنی چه؟" },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Dozent",
+          "text": { "de": "Das ist ein Partizip II erweitert. Es bedeutet: die Methode, die von Experten empfohlen wird.", "fa": "این یک Partizip II گسترده است. یعنی: روشی که توسط کارشناسان توصیه می‌شود." },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "چرا از Partizip II استفاده شده؟",
+          "options": ["چون عمل فعال است", "چون عمل غیرفعال/Passiv است", "چون عمل آینده است"],
+          "correctIndex": 1,
+          "explanation": "empfohlen از empfehlen ساخته شده و Passiv است: روش توصیه می‌شود (نه: روش توصیه می‌کند)"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lena",
+          "text": { "de": "Und 'die ständig wachsende Wirtschaft'? Das ist Partizip I, oder?", "fa": "و 'die ständig wachsende Wirtschaft'؟ این Partizip I است، درست است؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Dozent",
+          "text": { "de": "Richtig! Die Wirtschaft wächst - das ist aktiv. Also Partizip I.", "fa": "درست! اقتصاد رشد می‌کند - این فعال است. پس Partizip I." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "تفاوت اصلی Partizip I و II چیست؟",
+          "options": ["زمان فعل", "فعال یا غیرفعال بودن", "تعداد کلمات"],
+          "correctIndex": 1,
+          "explanation": "Partizip I = فعال (عمل انجام می‌دهد)، Partizip II = غیرفعال (عمل روی آن انجام می‌شود)"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lena",
+          "text": { "de": "Jetzt verstehe ich! Aber soll ich in meinem Aufsatz Relativsätze oder erweiterte Attribute benutzen?", "fa": "الان فهمیدم! ولی در انشایم باید از جملات موصولی استفاده کنم یا صفات گسترده؟" },
+          "mood": "excited"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Dozent",
+          "text": { "de": "Für akademische Texte sind erweiterte Attribute besser. Für mündliche Präsentationen besser Relativsätze.", "fa": "برای متون آکادمیک صفات گسترده بهترند. برای ارائه‌های شفاهی بهتر است از جملات موصولی استفاده شود." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "برای چه نوع متونی صفات گسترده توصیه می‌شود؟",
+          "options": ["ارائه شفاهی", "متون آکادمیک", "مکالمه روزمره"],
+          "correctIndex": 1,
+          "explanation": "استاد گفت: Für akademische Texte sind erweiterte Attribute besser."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: Partizip I یا II؟",
+      "instruction": "کدام Partizip؟",
+      "questions": [
+        { "prompt": "arbeitend (کار می‌کند)", "left": "Partizip I", "right": "Partizip II", "correctSide": "left" },
+        { "prompt": "geschrieben (نوشته شده)", "left": "Partizip I", "right": "Partizip II", "correctSide": "right" },
+        { "prompt": "laufend (می‌دود)", "left": "Partizip I", "right": "Partizip II", "correctSide": "left" },
+        { "prompt": "gekauft (خریداری شده)", "left": "Partizip I", "right": "Partizip II", "correctSide": "right" },
+        { "prompt": "singend (می‌خواند)", "left": "Partizip I", "right": "Partizip II", "correctSide": "left" },
+        { "prompt": "veröffentlicht (منتشر شده)", "left": "Partizip I", "right": "Partizip II", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Der seit Stunden arbeitende Mann ist müde.",
+      "translation": "مردی که ساعت‌هاست کار می‌کند خسته است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Das von allen gelesene Buch ist sehr bekannt.",
+      "translation": "کتابی که توسط همه خوانده شده بسیار معروف است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Die kürzlich veröffentlichte Studie zeigt neue Ergebnisse.",
+      "translation": "مطالعه‌ای که اخیراً منتشر شده نتایج جدیدی نشان می‌دهد."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: صفات مرکب",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "'der lachende Mann' - کدام Partizip؟", "options": ["Partizip I", "Partizip II"], "correctAnswerIndex": 0 },
+        { "question": "'das geschriebene Buch' - کدام Partizip؟", "options": ["Partizip I", "Partizip II"], "correctAnswerIndex": 1 },
+        { "question": "کدام برای متون آکادمیک بهتر است؟", "options": ["صفات گسترده", "جملات موصولی"], "correctAnswerIndex": 0 },
+        { "question": "کدام برای زبان محاوره‌ای بهتر است؟", "options": ["صفات گسترده", "جملات موصولی"], "correctAnswerIndex": 1 },
+        { "question": "Partizip I نشان‌دهنده:", "options": ["عمل فعال", "عمل غیرفعال"], "correctAnswerIndex": 0 },
+        { "question": "Partizip II نشان‌دهنده:", "options": ["عمل فعال", "عمل غیرفعال"], "correctAnswerIndex": 1 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: صفت و جمله موصولی",
+      "pairs": [
+        { "de": "der arbeitende Mann", "fa": "der Mann, der arbeitet" },
+        { "de": "das gelesene Buch", "fa": "das Buch, das gelesen wurde" },
+        { "de": "die singenden Vögel", "fa": "die Vögel, die singen" },
+        { "de": "der gekaufte Computer", "fa": "der Computer, der gekauft wurde" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات مربوط به صفات مرکب را پیدا کنید",
+      "targetWords": ["Partizip", "erweitert", "Relativsatz", "Attribut", "akademisch", "Schriftsprache"],
+      "gridSize": { "rows": 12, "cols": 12 },
+      "timeLimit": 150
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "erweitert", "fa": "گسترده", "options": ["کوتاه", "گسترده", "ساده", "قدیمی"], "correctIndex": 1 },
+        { "de": "umwandeln", "fa": "تبدیل کردن", "options": ["تبدیل کردن", "ترجمه کردن", "نوشتن", "خواندن"], "correctIndex": 0 },
+        { "de": "akademisch", "fa": "آکادمیک", "options": ["روزمره", "ساده", "آکادمیک", "قدیمی"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! جمع‌بندی صفات مرکب تمام شد!",
+      "message": "شما تمام ساختارهای صفت مرکب را مرور کردید!",
+      "keyPoints": [
+        "**Partizip I erweitert:** عمل فعال و همزمان - der arbeitende Mann = مردی که کار می‌کند",
+        "**Partizip II erweitert:** عمل غیرفعال و انجام‌شده - das gelesene Buch = کتابی که خوانده شده",
+        "**ساخت Partizip I:** Infinitiv + d + پسوند صفت (arbeitend + e = arbeitende)",
+        "**ساخت Partizip II:** Partizip II + پسوند صفت (gelesen + e = gelesene)",
+        "**تبدیل به Relativsatz:** der arbeitende Mann → der Mann, der arbeitet",
+        "**استفاده:** صفات گسترده در نوشتار رسمی و آکادمیک، جملات موصولی در زبان محاوره‌ای",
+        "برای خواندن متون علمی، درک صفات گسترده ضروری است"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "das Attribut", "fa": "صفت، ویژگی" } },
+        { "word": { "de": "erweitert", "fa": "گسترده، توسعه‌یافته" } },
+        { "word": { "de": "der Relativsatz", "fa": "جمله موصولی" } },
+        { "word": { "de": "die Schriftsprache", "fa": "زبان نوشتاری" } },
+        { "word": { "de": "akademisch", "fa": "آکادمیک، دانشگاهی" } },
+        { "word": { "de": "umwandeln", "fa": "تبدیل کردن" } }
+      ]
+    }
+  ]
+}

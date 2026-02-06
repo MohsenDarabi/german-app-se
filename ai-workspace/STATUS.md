@@ -8,7 +8,7 @@
 
 **Create B1 lessons - lesson by lesson, wait for user test after each**
 
-Current: `B2-M05` (Konnektoren für Argumentation) - **MODULE COMPLETE - READY FOR USER TEST**
+Current: `B2-M06` (Komplexe Attribute) - **MODULE COMPLETE - READY FOR USER TEST**
 
 ---
 
@@ -27,7 +27,7 @@ Current: `B2-M05` (Konnektoren für Argumentation) - **MODULE COMPLETE - READY F
 | A1 | 14 | 56+ | Complete |
 | A2 | 18 | 72 | **Complete** ✅ |
 | B1 | 20 | 80 | **Complete** ✅ |
-| B2 | 5 | 20 | Module 5 complete |
+| B2 | 6 | 24 | Module 6 complete |
 
 ### A2 Completion (2026-02-05)
 
@@ -312,8 +312,9 @@ Current: `B2-M05` (Konnektoren für Argumentation) - **MODULE COMPLETE - READY F
 | M03 | Konjunktiv I in der Presse | 4/4 | ✅ Complete |
 | M04 | Passiv-Alternativen | 4/4 | ✅ Complete |
 | M05 | Konnektoren für Argumentation | 4/4 | ✅ Complete |
+| M06 | Komplexe Attribute | 4/4 | ✅ Complete |
 
-**Total B2: 20 lessons**
+**Total B2: 24 lessons**
 
 ---
 
@@ -372,10 +373,23 @@ Current: `B2-M05` (Konnektoren für Argumentation) - **MODULE COMPLETE - READY F
 
 ---
 
+## B2 Module 6: Komplexe Attribute (Complex Participial Attributes)
+
+| Lesson | Title | Status |
+|--------|-------|--------|
+| B2-M06-L01 | Partizip I erweitert (der seit Stunden arbeitende Mann) | ✅ Complete |
+| B2-M06-L02 | Partizip II erweitert (das von allen gelesene Buch) | ✅ Complete |
+| B2-M06-L03 | Auflösung in Relativsätze (converting to relative clauses) | ✅ Complete |
+| B2-M06-L04 | Zusammenfassung | ✅ Complete |
+
+---
+
 ## Recent Changes
 
 | Date | Change |
 |------|--------|
+| 2026-02-06 | **B2 Module 6 (Komplexe Attribute) COMPLETE - 4 lessons!** |
+| 2026-02-06 | Created B2-M06-L01 to L04 in parallel |
 | 2026-02-06 | **B2 Module 5 (Konnektoren für Argumentation) COMPLETE - 4 lessons!** |
 | 2026-02-06 | Created B2-M05-L01 to L04 in parallel |
 | 2026-02-06 | **B2 Module 4 (Passiv-Alternativen) COMPLETE - 4 lessons!** |

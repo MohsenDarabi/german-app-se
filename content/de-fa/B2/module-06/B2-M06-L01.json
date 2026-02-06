@@ -1,0 +1,519 @@
+{
+  "id": "B2-M06-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Komplexe Attribute: Partizip I erweitert", "fa": "صفات مرکب: وجه وصفی حال گسترش‌یافته" },
+  "description": "یاد بگیرید چگونه از ساختارهای صفتی گسترش‌یافته با Partizip I در متون رسمی و آکادمیک آلمانی استفاده کنید. این ساختارها در روزنامه‌ها، مقالات علمی و متون حقوقی بسیار رایج هستند.",
+  "level": "B2",
+  "module": 6,
+  "lessonNumber": 1,
+  "totalSteps": 45,
+  "estimatedMinutes": 40,
+  "vocabulary": [
+    { "de": "arbeitend", "fa": "در حال کار کردن، شاغل", "grammar": { "pos": "adjective" } },
+    { "de": "laufend", "fa": "در حال دویدن، جاری", "grammar": { "pos": "adjective" } },
+    { "de": "steigend", "fa": "در حال افزایش، رو به رشد", "grammar": { "pos": "adjective" } },
+    { "de": "wachsend", "fa": "در حال رشد، فزاینده", "grammar": { "pos": "adjective" } },
+    { "de": "führend", "fa": "پیشرو، رهبری‌کننده", "grammar": { "pos": "adjective" } },
+    { "de": "entscheidend", "fa": "تعیین‌کننده، حیاتی", "grammar": { "pos": "adjective" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "Partizip I چیست؟",
+      "content": "**Partizip I (وجه وصفی حال)**\n\nPartizip I از مصدر + d ساخته می‌شود:\n\n| مصدر | Partizip I | معنی |\n|------|------------|------|\n| arbeiten | arbeit**end** | در حال کار کردن |\n| laufen | lauf**end** | در حال دویدن |\n| steigen | steig**end** | در حال افزایش |\n| wachsen | wachs**end** | در حال رشد |\n\n**استفاده به عنوان صفت:**\n- der **arbeitende** Mann = مردی که دارد کار می‌کند\n- die **laufende** Maschine = ماشینی که دارد کار می‌کند\n- das **steigende** Interesse = علاقه‌ای که دارد افزایش می‌یابد\n\n**نکته برای فارسی‌زبانان:**\nPartizip I مشابه «در حال + فعل» در فارسی است، اما در آلمانی به عنوان صفت قبل از اسم می‌آید.",
+      "examples": [
+        { "de": "der arbeitende Mann", "fa": "مرد شاغل / مردی که کار می‌کند" },
+        { "de": "die wachsende Wirtschaft", "fa": "اقتصاد رو به رشد" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "arbeitend", "fa": "در حال کار کردن، شاغل" },
+      "example": { "text": { "de": "Der arbeitende Mann trinkt Kaffee.", "fa": "مرد شاغل قهوه می‌نوشد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "arbeitend",
+      "translation": "در حال کار کردن",
+      "syllables": ["ar", "bei", "tend"],
+      "distractors": ["er", "bai", "tand", "dent"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "steigend", "fa": "در حال افزایش، رو به رشد" },
+      "example": { "text": { "de": "Die steigenden Preise sind ein Problem.", "fa": "قیمت‌های رو به افزایش یک مشکل است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "steigend",
+      "translation": "در حال افزایش",
+      "syllables": ["stei", "gend"],
+      "distractors": ["stai", "gand", "sti", "gond"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "wachsend", "fa": "در حال رشد، فزاینده" },
+      "example": { "text": { "de": "Die wachsende Bevölkerung braucht mehr Ressourcen.", "fa": "جمعیت رو به رشد به منابع بیشتری نیاز دارد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "wachsend",
+      "translation": "در حال رشد",
+      "syllables": ["wach", "send"],
+      "distractors": ["wech", "sand", "woch", "zend"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "ساختار گسترش‌یافته Partizip I",
+      "content": "**Erweitertes Partizipialattribut (صفت وصفی گسترش‌یافته)**\n\nدر آلمانی نوشتاری، می‌توانیم اطلاعات بیشتری قبل از Partizip I اضافه کنیم:\n\n**ساختار ساده:**\n> der **arbeitende** Mann\n> مرد شاغل\n\n**ساختار گسترش‌یافته:**\n> der **am Computer arbeitende** Mann\n> مردی که پشت کامپیوتر کار می‌کند\n\n> der **seit drei Stunden am Computer arbeitende** Mann\n> مردی که سه ساعت است پشت کامپیوتر کار می‌کند\n\n**فرمول:**\n```\nحرف تعریف + [گسترش‌ها] + Partizip I + اسم\n```\n\n**گسترش‌ها می‌توانند شامل:**\n- عبارات حرف‌اضافه‌ای: am Computer, mit dem Kollegen\n- قیدها: seit drei Stunden, schnell\n- مفعول‌ها: einen Brief, das Buch\n\n**نکته مهم:** تمام گسترش‌ها **قبل از** Partizip I می‌آیند!",
+      "examples": [
+        { "de": "der seit Jahren in Berlin lebende Künstler", "fa": "هنرمندی که سال‌هاست در برلین زندگی می‌کند" },
+        { "de": "die schnell wachsende Stadt", "fa": "شهر به سرعت رو به رشد" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "ساختار درست کدام است؟",
+      "options": [
+        "der arbeitende am Computer Mann",
+        "der am Computer arbeitende Mann",
+        "der Mann am Computer arbeitende",
+        "der am arbeitende Computer Mann"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! گسترش‌ها قبل از Partizip I و همه قبل از اسم می‌آیند.", "incorrect": "ترتیب درست: حرف تعریف + گسترش + Partizip I + اسم" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "Partizip I از کدام بخش فعل ساخته می‌شود؟",
+      "options": [
+        "ریشه فعل + te",
+        "مصدر + d",
+        "ریشه فعل + en",
+        "ریشه فعل + t"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "درست! Partizip I = مصدر + d (arbeiten → arbeitend)", "incorrect": "Partizip I از مصدر + d ساخته می‌شود: arbeiten → arbeitend" }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "führend", "fa": "پیشرو، رهبری‌کننده" },
+      "example": { "text": { "de": "Das ist ein weltweit führendes Unternehmen.", "fa": "این یک شرکت پیشرو در جهان است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "führend",
+      "translation": "پیشرو",
+      "syllables": ["füh", "rend"],
+      "distractors": ["fuh", "rand", "fur", "rond"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "entscheidend", "fa": "تعیین‌کننده، حیاتی" },
+      "example": { "text": { "de": "Das war der entscheidende Moment.", "fa": "آن لحظه تعیین‌کننده بود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "entscheidend",
+      "translation": "تعیین‌کننده",
+      "syllables": ["ent", "schei", "dend"],
+      "distractors": ["ant", "schi", "dand", "dund"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "laufend", "fa": "در حال دویدن، جاری" },
+      "example": { "text": { "de": "Die laufenden Kosten sind hoch.", "fa": "هزینه‌های جاری بالا هستند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "laufend",
+      "translation": "جاری، در حال",
+      "syllables": ["lau", "fend"],
+      "distractors": ["lou", "fand", "leu", "fond"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "شکل درست Partizip I را انتخاب کنید",
+      "sentence": "Der seit Stunden am Schreibtisch {0} Mitarbeiter braucht eine Pause.",
+      "options": ["arbeitende", "gearbeitet", "arbeiten", "arbeitender"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "arbeitende درست است چون صفت است و با Mitarbeiter (مذکر، فاعلی) مطابقت می‌کند." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "عبارت صحیح را انتخاب کنید",
+      "sentence": "Die {0} Wirtschaft zieht ausländische Investoren an.",
+      "options": ["schnell wachsende", "wachsende schnell", "wachsend schnell", "schnell wachsend"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "قید (schnell) قبل از Partizip I (wachsende) می‌آید." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "گسترش مناسب را انتخاب کنید",
+      "sentence": "Der {0} sprechende Politiker überzeugte das Publikum.",
+      "options": ["laut und deutlich", "und deutlich laut", "laut deutlich und", "deutlich und laut"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "قیدها (laut und deutlich) قبل از Partizip I (sprechende) می‌آیند." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "تبدیل جمله نسبی به ساختار Partizip I",
+      "content": "**از Relativsatz به Partizipialattribut**\n\nدر متون رسمی آلمانی، جملات نسبی اغلب به ساختار Partizip I تبدیل می‌شوند:\n\n**جمله نسبی:**\n> Der Mann, **der** am Computer **arbeitet**, trinkt Kaffee.\n> مردی که پشت کامپیوتر کار می‌کند، قهوه می‌نوشد.\n\n**ساختار Partizip I:**\n> Der **am Computer arbeitende** Mann trinkt Kaffee.\n> مرد در حال کار پشت کامپیوتر قهوه می‌نوشد.\n\n**مراحل تبدیل:**\n1. حذف ضمیر نسبی (der/die/das/die)\n2. تبدیل فعل صرف‌شده به Partizip I\n3. انتقال تمام عناصر به قبل از اسم\n\n**چرا این ساختار؟**\n- متن فشرده‌تر و رسمی‌تر می‌شود\n- در روزنامه‌ها فضای کمتری اشغال می‌کند\n- در متون آکادمیک و حقوقی بسیار رایج است\n\n**هشدار:** این ساختار در زبان محاوره کمتر استفاده می‌شود!",
+      "examples": [
+        { "de": "Die weltweit führende Firma", "fa": "شرکت پیشرو جهان" },
+        { "de": "Das schnell wachsende Problem", "fa": "مشکل به سرعت رو به رشد" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را با ساختار Partizip I گسترش‌یافته مرتب کنید",
+      "words": ["lernende", "die", "Student", "Sprachen", "drei", "ist", "beeindruckend"],
+      "correctOrder": [1, 4, 3, 0, 2, 5, 6],
+      "correctSentence": { "de": "Die drei Sprachen lernende Student ist beeindruckend.", "fa": "دانشجویی که سه زبان یاد می‌گیرد چشمگیر است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "ساختار صحیح را بسازید",
+      "words": ["steigende", "die", "Temperaturen", "schnell", "sind", "besorgniserregend"],
+      "correctOrder": [1, 3, 0, 2, 4, 5],
+      "correctSentence": { "de": "Die schnell steigenden Temperaturen sind besorgniserregend.", "fa": "دماهای به سرعت رو به افزایش نگران‌کننده هستند." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله را کامل کنید",
+      "words": ["der", "arbeitende", "Berlin", "in", "Ingenieur", "seit Jahren", "ist", "erfahren"],
+      "correctOrder": [0, 5, 3, 2, 1, 4, 6, 7],
+      "correctSentence": { "de": "Der seit Jahren in Berlin arbeitende Ingenieur ist erfahren.", "fa": "مهندسی که سال‌هاست در برلین کار می‌کند باتجربه است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در ساختار Partizip I گسترش‌یافته، گسترش‌ها بعد از Partizip I می‌آیند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! گسترش‌ها همیشه **قبل از** Partizip I می‌آیند: der am Computer arbeitende Mann" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "Partizip I از مصدر فعل + d ساخته می‌شود (مثلاً arbeiten → arbeitend).",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! Partizip I = مصدر + d" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "ساختارهای Partizip I گسترش‌یافته در زبان محاوره روزمره بسیار رایج هستند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! این ساختارها بیشتر در متون نوشتاری رسمی، روزنامه‌ها و متون آکادمیک استفاده می‌شوند." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در اتاق تحریریه روزنامه",
+      "scene": {
+        "location": "newspaper editorial office",
+        "description": { "de": "In der Redaktion einer Zeitung", "fa": "در تحریریه یک روزنامه" }
+      },
+      "lines": [
+        { "speaker": "Redakteur", "text": { "de": "Dieser Satz ist zu lang: 'Der Mann, der seit drei Jahren in der Stadt lebt, kennt alle Straßen.'", "fa": "این جمله خیلی طولانی است: «مردی که سه سال است در شهر زندگی می‌کند، همه خیابان‌ها را می‌شناسد.»" }, "mood": "confused" },
+        { "speaker": "Journalist", "text": { "de": "Wir können das kürzen: 'Der seit drei Jahren in der Stadt lebende Mann kennt alle Straßen.'", "fa": "می‌توانیم کوتاهش کنیم: «مرد سه‌ساله ساکن شهر همه خیابان‌ها را می‌شناسد.»" }, "mood": "happy" },
+        { "speaker": "Redakteur", "text": { "de": "Perfekt! Das spart Platz und klingt professioneller.", "fa": "عالی! جا صرفه‌جویی می‌شود و حرفه‌ای‌تر به نظر می‌رسد." }, "mood": "excited" },
+        { "speaker": "Journalist", "text": { "de": "Genau. Diese Partizipialstrukturen sind typisch für Zeitungssprache.", "fa": "دقیقاً. این ساختارهای وصفی برای زبان روزنامه‌ای معمول هستند." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "چرا از ساختار Partizip I استفاده کردند؟", "options": ["زیباتر است", "جا صرفه‌جویی می‌کند", "آسان‌تر است"], "correctIndex": 1, "explanation": "سردبیر گفت: Das spart Platz (جا صرفه‌جویی می‌شود)." },
+        { "question": "این ساختار در کجا رایج است؟", "options": ["گفتگوی روزمره", "زبان روزنامه‌ای", "پیامک"], "correctIndex": 1, "explanation": "خبرنگار گفت: Diese Partizipialstrukturen sind typisch für Zeitungssprache." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "ساختار Partizip I گسترش‌یافته را کامل کنید",
+      "sentence": "Das {0} Unternehmen expandiert nach Asien.",
+      "options": ["weltweit führende", "führende weltweit", "weltweit führend", "führend weltweit"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "قید (weltweit) قبل از Partizip I (führende) می‌آید: weltweit führende Unternehmen" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "گزینه صحیح را انتخاب کنید",
+      "sentence": "Die {0} Wissenschaftler veröffentlichten ihre Ergebnisse.",
+      "options": ["an dem Projekt arbeitenden", "arbeitenden an dem Projekt", "an dem Projekt arbeiten", "arbeitend an dem Projekt"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "عبارت حرف‌اضافه‌ای (an dem Projekt) قبل از Partizip I (arbeitenden) می‌آید." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Der {0} Zug hatte Verspätung.",
+      "options": ["aus München kommende", "kommende aus München", "aus München kommend", "kommen aus München"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "ساختار درست: عبارت حرف‌اضافه‌ای + Partizip I = aus München kommende" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "بحث آکادمیک",
+      "scene": {
+        "location": "university library",
+        "description": { "de": "In der Universitätsbibliothek", "fa": "در کتابخانه دانشگاه" }
+      },
+      "lines": [
+        { "speaker": "Professor", "text": { "de": "Lesen Sie diesen Satz aus dem wissenschaftlichen Artikel.", "fa": "این جمله را از مقاله علمی بخوانید." }, "mood": "neutral" },
+        { "speaker": "Student", "text": { "de": "'Die in den letzten Jahren stark ansteigenden Temperaturen...' Das ist kompliziert!", "fa": "«دماهای که در سال‌های اخیر به شدت افزایش یافته‌اند...» این پیچیده است!" }, "mood": "confused" },
+        { "speaker": "Professor", "text": { "de": "Ja, aber es bedeutet: 'Die Temperaturen, die in den letzten Jahren stark ansteigen.'", "fa": "بله، اما معنایش این است: «دماهایی که در سال‌های اخیر به شدت افزایش می‌یابند.»" }, "mood": "happy" },
+        { "speaker": "Student", "text": { "de": "Ah, ich verstehe! Die Erweiterung kommt vor dem Partizip.", "fa": "آها، فهمیدم! گسترش قبل از وصفی می‌آید." }, "mood": "excited" },
+        { "speaker": "Professor", "text": { "de": "Genau. Das müssen Sie für das Verstehen wissenschaftlicher Texte beherrschen.", "fa": "دقیقاً. این را برای فهم متون علمی باید بلد باشید." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "کجا باید این ساختار را بلد باشید؟", "options": ["گفتگوی روزمره", "متون علمی", "پیامک‌ها"], "correctIndex": 1, "explanation": "پروفسور گفت: Das müssen Sie für das Verstehen wissenschaftlicher Texte beherrschen." },
+        { "question": "گسترش در کجا قرار می‌گیرد؟", "options": ["بعد از Partizip", "قبل از Partizip", "بعد از اسم"], "correctIndex": 1, "explanation": "دانشجو گفت: Die Erweiterung kommt vor dem Partizip." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "جملات نسبی را با معادل Partizip I گسترش‌یافته جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Der Mann, der schnell läuft" },
+        { "id": "i2", "text": "Die Firma, die weltweit führt" },
+        { "id": "i3", "text": "Das Kind, das laut lacht" },
+        { "id": "i4", "text": "Die Preise, die ständig steigen" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "der schnell laufende Mann" },
+        { "id": "m2", "text": "die weltweit führende Firma" },
+        { "id": "m3", "text": "das laut lachende Kind" },
+        { "id": "m4", "text": "die ständig steigenden Preise" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "شرکت پیشرو جهان محصولات جدید تولید می‌کند.",
+      "sentenceTemplate": "Das {0} führende {1} produziert neue Produkte.",
+      "options": ["weltweit", "international", "Unternehmen", "Firma", "global", "Konzern"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Das weltweit führende Unternehmen produziert neue Produkte.", "fa": "شرکت پیشرو جهان محصولات جدید تولید می‌کند." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "دماهای به سرعت رو به افزایش نگران‌کننده هستند.",
+      "sentenceTemplate": "Die {0} steigenden {1} sind besorgniserregend.",
+      "options": ["schnell", "langsam", "Temperaturen", "Preise", "stark", "Kosten"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Die schnell steigenden Temperaturen sind besorgniserregend.", "fa": "دماهای به سرعت رو به افزایش نگران‌کننده هستند." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: متن روزنامه‌ای",
+      "passage": {
+        "de": "Die in den letzten Monaten stark steigenden Energiepreise belasten die Haushalte. Das seit Jahren in Berlin ansässige Forschungsinstitut veröffentlichte eine neue Studie. Die im Auftrag der Regierung arbeitenden Wissenschaftler warnen vor den Folgen.\n\nDer am schnellsten wachsende Sektor ist die Technologiebranche. Die weltweit führenden Unternehmen investieren Milliarden in erneuerbare Energien. Die derzeit laufenden Projekte sollen bis 2030 abgeschlossen sein.",
+        "fa": "قیمت‌های انرژی که در ماه‌های اخیر به شدت افزایش یافته‌اند، خانوارها را تحت فشار قرار می‌دهند. موسسه تحقیقاتی که سال‌هاست در برلین مستقر است، مطالعه جدیدی منتشر کرد. دانشمندانی که به سفارش دولت کار می‌کنند، نسبت به عواقب هشدار می‌دهند.\n\nسریع‌ترین بخش رو به رشد، صنعت فناوری است. شرکت‌های پیشرو جهان میلیاردها در انرژی‌های تجدیدپذیر سرمایه‌گذاری می‌کنند. پروژه‌های در حال اجرای فعلی قرار است تا ۲۰۳۰ تکمیل شوند."
+      },
+      "questions": [
+        { "question": "چند ساختار Partizip I گسترش‌یافته در متن وجود دارد؟", "options": ["۴ ساختار", "۶ ساختار", "۸ ساختار"], "correctIndex": 1, "explanation": "۶ ساختار: stark steigenden, in Berlin ansässige, im Auftrag arbeitenden, schnellsten wachsende, weltweit führenden, derzeit laufenden" },
+        { "question": "موسسه تحقیقاتی کجا مستقر است؟", "options": ["مونیخ", "برلین", "هامبورگ"], "correctIndex": 1, "explanation": "متن می‌گوید: Das seit Jahren in Berlin ansässige Forschungsinstitut" },
+        { "question": "پروژه‌های فعلی چه زمانی تکمیل می‌شوند؟", "options": ["۲۰۲۵", "۲۰۳۰", "۲۰۳۵"], "correctIndex": 1, "explanation": "متن می‌گوید: Die derzeit laufenden Projekte sollen bis 2030 abgeschlossen sein." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der Zeitungsartikel", "fa": "مقاله روزنامه" },
+      "characters": ["Emma", "Lukas"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Emma liest eine Zeitung und findet einen komplizierten Satz.", "fa": "اِما روزنامه می‌خواند و جمله پیچیده‌ای پیدا می‌کند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Emma",
+          "text": { "de": "Lukas, was bedeutet 'die seit Monaten andauernde Krise'?", "fa": "لوکاس، «die seit Monaten andauernde Krise» یعنی چه؟" },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lukas",
+          "text": { "de": "Das ist eine Partizipialstruktur. Es bedeutet: die Krise, die seit Monaten andauert.", "fa": "این یک ساختار وصفی است. یعنی: بحرانی که ماه‌هاست ادامه دارد." },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "لوکاس چگونه جمله را توضیح داد؟",
+          "options": ["با یک مثال", "با تبدیل به جمله نسبی", "با ترجمه به انگلیسی"],
+          "correctIndex": 1,
+          "explanation": "لوکاس ساختار Partizip I را به جمله نسبی معادل تبدیل کرد."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Emma",
+          "text": { "de": "Ah! Also 'andauernde' kommt von 'andauern'!", "fa": "آها! پس andauernde از andauern می‌آید!" },
+          "mood": "excited"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lukas",
+          "text": { "de": "Genau! Und 'seit Monaten' ist die Erweiterung vor dem Partizip.", "fa": "دقیقاً! و seit Monaten گسترش قبل از وصفی است." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "کدام بخش گسترش (Erweiterung) است؟",
+          "options": ["Krise", "seit Monaten", "andauernde"],
+          "correctIndex": 1,
+          "explanation": "seit Monaten گسترش است که قبل از Partizip I (andauernde) می‌آید."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Emma",
+          "text": { "de": "Jetzt verstehe ich Zeitungsartikel viel besser!", "fa": "حالا مقالات روزنامه را خیلی بهتر می‌فهمم!" },
+          "mood": "happy"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Emma liest weiter und findet noch mehr Partizipialstrukturen.", "fa": "اِما به خواندن ادامه می‌دهد و ساختارهای وصفی بیشتری پیدا می‌کند." }
+        },
+        {
+          "type": "question",
+          "question": "چرا این ساختار در روزنامه‌ها رایج است؟",
+          "options": ["زیباتر است", "فضای کمتری می‌گیرد", "آسان‌تر است"],
+          "correctIndex": 1,
+          "explanation": "ساختارهای Partizip I گسترش‌یافته متن را فشرده‌تر می‌کنند و فضای کمتری در روزنامه اشغال می‌کنند."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: Partizip I را بسازید!",
+      "instruction": "Partizip I درست کدام است؟",
+      "questions": [
+        { "prompt": "arbeiten →", "left": "arbeitend", "right": "gearbeitet", "correctSide": "left" },
+        { "prompt": "wachsen →", "left": "gewachsen", "right": "wachsend", "correctSide": "right" },
+        { "prompt": "steigen →", "left": "steigend", "right": "gestiegen", "correctSide": "left" },
+        { "prompt": "führen →", "left": "geführt", "right": "führend", "correctSide": "right" },
+        { "prompt": "laufen →", "left": "laufend", "right": "gelaufen", "correctSide": "left" },
+        { "prompt": "schlafen →", "left": "geschlafen", "right": "schlafend", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Der am Computer arbeitende Mann trinkt Kaffee.",
+      "translation": "مردی که پشت کامپیوتر کار می‌کند قهوه می‌نوشد."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Die schnell wachsende Stadt braucht neue Infrastruktur.",
+      "translation": "شهر به سرعت رو به رشد به زیرساخت جدید نیاز دارد."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Das weltweit führende Unternehmen expandiert nach Asien.",
+      "translation": "شرکت پیشرو جهان به آسیا گسترش می‌یابد."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: ساختارهای Partizip I!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "Partizip I چگونه ساخته می‌شود؟", "options": ["ریشه + te", "مصدر + d"], "correctAnswerIndex": 1 },
+        { "question": "گسترش کجا می‌آید؟", "options": ["قبل از Partizip", "بعد از Partizip"], "correctAnswerIndex": 0 },
+        { "question": "این ساختار کجا رایج است؟", "options": ["محاوره", "متون رسمی"], "correctAnswerIndex": 1 },
+        { "question": "arbeiten → ?", "options": ["arbeitend", "gearbeitet"], "correctAnswerIndex": 0 },
+        { "question": "کدام درست است؟", "options": ["der arbeitende am Computer Mann", "der am Computer arbeitende Mann"], "correctAnswerIndex": 1 },
+        { "question": "چرا روزنامه‌ها از این ساختار استفاده می‌کنند؟", "options": ["صرفه‌جویی در فضا", "آسان‌تر است"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: Partizip I و معانی",
+      "pairs": [
+        { "de": "arbeitend", "fa": "در حال کار" },
+        { "de": "steigend", "fa": "رو به افزایش" },
+        { "de": "wachsend", "fa": "در حال رشد" },
+        { "de": "führend", "fa": "پیشرو" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی Partizip I",
+      "instruction": "فرم‌های Partizip I را در جدول پیدا کنید",
+      "targetWords": ["arbeitend", "steigend", "wachsend", "führend", "laufend", "entscheidend"],
+      "gridSize": { "rows": 10, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "arbeitend", "fa": "در حال کار", "options": ["رو به رشد", "در حال کار", "پیشرو", "تعیین‌کننده"], "correctIndex": 1 },
+        { "de": "steigend", "fa": "رو به افزایش", "options": ["رو به افزایش", "در حال رشد", "جاری", "پیشرو"], "correctIndex": 0 },
+        { "de": "entscheidend", "fa": "تعیین‌کننده", "options": ["در حال کار", "رو به رشد", "تعیین‌کننده", "پیشرو"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما ساختارهای Partizip I گسترش‌یافته را یاد گرفتید!",
+      "keyPoints": [
+        "Partizip I = مصدر + d (arbeiten → arbeitend)",
+        "ساختار گسترش‌یافته: حرف تعریف + [گسترش‌ها] + Partizip I + اسم",
+        "گسترش‌ها همیشه قبل از Partizip I می‌آیند",
+        "این ساختار در متون رسمی، روزنامه‌ها و مقالات علمی رایج است",
+        "معادل جمله نسبی: der Mann, der arbeitet = der arbeitende Mann",
+        "در زبان محاوره کمتر استفاده می‌شود"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "arbeitend", "fa": "در حال کار کردن، شاغل" } },
+        { "word": { "de": "steigend", "fa": "در حال افزایش، رو به رشد" } },
+        { "word": { "de": "wachsend", "fa": "در حال رشد، فزاینده" } },
+        { "word": { "de": "führend", "fa": "پیشرو، رهبری‌کننده" } },
+        { "word": { "de": "entscheidend", "fa": "تعیین‌کننده، حیاتی" } },
+        { "word": { "de": "laufend", "fa": "در حال دویدن، جاری" } }
+      ]
+    }
+  ]
+}

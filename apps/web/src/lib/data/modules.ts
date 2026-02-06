@@ -1814,6 +1814,37 @@ const DE_FA_B2_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/B2/B2-M05-L04"
       }
     ]
+  },
+  {
+    id: "module-06",
+    title: "بخش ۶: Komplexe Attribute",
+    level: "B2",
+    lessons: [
+      {
+        id: "B2-M06-L01",
+        title: "Partizip I erweitert - صفت فعلی یک گسترده",
+        description: "یاد بگیرید صفات گسترده با Partizip I: der seit Stunden arbeitende Mann.",
+        path: "/learn/de-fa/B2/B2-M06-L01"
+      },
+      {
+        id: "B2-M06-L02",
+        title: "Partizip II erweitert - صفت فعلی دو گسترده",
+        description: "یاد بگیرید صفات گسترده با Partizip II: das von allen gelesene Buch.",
+        path: "/learn/de-fa/B2/B2-M06-L02"
+      },
+      {
+        id: "B2-M06-L03",
+        title: "Auflösung in Relativsätze - تبدیل به جملات موصولی",
+        description: "یاد بگیرید تبدیل صفات گسترده به جملات موصولی و بالعکس.",
+        path: "/learn/de-fa/B2/B2-M06-L03"
+      },
+      {
+        id: "B2-M06-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل صفات پیچیده: Partizip I و II گسترده و تبدیل آنها.",
+        path: "/learn/de-fa/B2/B2-M06-L04"
+      }
+    ]
   }
 ];
 
