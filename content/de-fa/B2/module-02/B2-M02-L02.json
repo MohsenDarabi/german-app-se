@@ -1,0 +1,525 @@
+{
+  "id": "B2-M02-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Nominaler Stil: Nominale Präpositionalphrasen", "fa": "سبک اسمی: عبارات حرف‌اضافه‌ای اسمی" },
+  "description": "یاد بگیرید چگونه از حروف اضافه رسمی با حالت Genitiv استفاده کنید - ساختارهایی که در متون رسمی، اداری و علمی آلمانی بسیار رایج هستند.",
+  "level": "B2",
+  "module": 2,
+  "lessonNumber": 2,
+  "totalSteps": 45,
+  "estimatedMinutes": 30,
+  "vocabulary": [
+    { "de": "aufgrund", "fa": "به دلیل، به خاطر", "grammar": { "pos": "preposition", "case": "genitive" } },
+    { "de": "infolge", "fa": "در نتیجه، به دنبال", "grammar": { "pos": "preposition", "case": "genitive" } },
+    { "de": "zwecks", "fa": "به منظور، برای", "grammar": { "pos": "preposition", "case": "genitive" } },
+    { "de": "anhand", "fa": "بر اساس، با استفاده از", "grammar": { "pos": "preposition", "case": "genitive" } },
+    { "de": "anlässlich", "fa": "به مناسبت", "grammar": { "pos": "preposition", "case": "genitive" } },
+    { "de": "hinsichtlich", "fa": "از نظر، در خصوص", "grammar": { "pos": "preposition", "case": "genitive" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "سبک اسمی چیست؟",
+      "content": "**Nominalstil (سبک اسمی)**\n\nدر متون رسمی آلمانی، به جای جملات کامل با فعل، اغلب از **عبارات اسمی** استفاده می‌شود:\n\n| Verbalstil (فعلی) | Nominalstil (اسمی) |\n|-------------------|---------------------|\n| Weil es regnet... | **Aufgrund** des Regens... |\n| Weil er krank ist... | **Aufgrund** seiner Krankheit... |\n| Als Folge davon... | **Infolge** dessen... |\n\n**چرا سبک اسمی؟**\n- کوتاه‌تر و فشرده‌تر\n- رسمی‌تر\n- در متون علمی، حقوقی و اداری رایج\n\n**نکته کلیدی:** این حروف اضافه همه با **Genitiv** می‌آیند!",
+      "examples": [
+        { "de": "Aufgrund des schlechten Wetters wurde das Spiel abgesagt.", "fa": "به دلیل هوای بد، بازی لغو شد." },
+        { "de": "Infolge der Krise verloren viele Menschen ihre Arbeit.", "fa": "در نتیجه بحران، بسیاری از مردم کارشان را از دست دادند." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "aufgrund", "fa": "به دلیل، به خاطر" },
+      "example": { "text": { "de": "Aufgrund der Tatsache, dass er krank war, blieb er zu Hause.", "fa": "به دلیل این واقعیت که بیمار بود، در خانه ماند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "aufgrund",
+      "translation": "به دلیل",
+      "syllables": ["auf", "grund"],
+      "distractors": ["oof", "grond", "ant"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "infolge", "fa": "در نتیجه، به دنبال" },
+      "example": { "text": { "de": "Infolge des Unfalls musste die Straße gesperrt werden.", "fa": "در نتیجه تصادف، خیابان باید مسدود می‌شد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "infolge",
+      "translation": "در نتیجه",
+      "syllables": ["in", "fol", "ge"],
+      "distractors": ["an", "fal", "ga"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "zwecks", "fa": "به منظور، برای" },
+      "example": { "text": { "de": "Zwecks Überprüfung der Dokumente müssen Sie persönlich erscheinen.", "fa": "به منظور بررسی مدارک، باید شخصاً حضور یابید." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "zwecks",
+      "translation": "به منظور",
+      "syllables": ["zwecks"],
+      "distractors": ["zweks", "tsweks", "zwaks"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "aufgrund = weil",
+      "content": "**aufgrund + Genitiv = weil + Nebensatz**\n\nدو جمله زیر معنی یکسان دارند:\n\n| weil (فعلی) | aufgrund (اسمی) |\n|-------------|------------------|\n| Weil es **regnet**, ... | Aufgrund **des Regens**, ... |\n| Weil er **krank ist**, ... | Aufgrund **seiner Krankheit**, ... |\n| Weil sie **müde war**, ... | Aufgrund **ihrer Müdigkeit**, ... |\n\n**تبدیل:**\n1. فعل را به اسم تبدیل کنید: regnen wird zu Regen\n2. صفت را به اسم تبدیل کنید: krank wird zu Krankheit\n3. Genitiv اضافه کنید: des Regens, der Krankheit\n\n**نکته:** aufgrund همیشه با Genitiv می‌آید:\n- aufgrund **des** Problems (مذکر/خنثی)\n- aufgrund **der** Situation (مؤنث)\n- aufgrund **der** Probleme (جمع)",
+      "examples": [
+        { "de": "Aufgrund des Regens bedeutet: Weil es regnet", "fa": "به دلیل باران یعنی: چون باران می‌بارد" },
+        { "de": "Aufgrund seiner Krankheit bedeutet: Weil er krank ist", "fa": "به دلیل بیماری‌اش یعنی: چون بیمار است" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام حالت گرامری بعد از 'aufgrund' می‌آید؟",
+      "options": [
+        "Nominativ",
+        "Akkusativ",
+        "Dativ",
+        "Genitiv"
+      ],
+      "correctAnswerIndex": 3,
+      "feedback": { "correct": "آفرین! aufgrund همیشه با Genitiv می‌آید: aufgrund des Regens", "incorrect": "aufgrund یکی از حروف اضافه‌ای است که حالت Genitiv می‌خواهد." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "'Aufgrund der Krise' معادل کدام جمله است؟",
+      "options": [
+        "Trotz der Krise",
+        "Weil es eine Krise gibt",
+        "Ohne die Krise",
+        "Nach der Krise"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "دقیقاً! aufgrund = weil: Aufgrund der Krise = Weil es eine Krise gibt", "incorrect": "aufgrund معنی 'به دلیل' می‌دهد و معادل weil است." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "anhand", "fa": "بر اساس، با استفاده از" },
+      "example": { "text": { "de": "Anhand der Daten können wir eine Analyse durchführen.", "fa": "بر اساس داده‌ها می‌توانیم یک تحلیل انجام دهیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "anhand",
+      "translation": "بر اساس",
+      "syllables": ["an", "hand"],
+      "distractors": ["en", "hend", "ont"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "anlässlich", "fa": "به مناسبت" },
+      "example": { "text": { "de": "Anlässlich seines Geburtstags haben wir eine Party organisiert.", "fa": "به مناسبت تولدش یک مهمانی ترتیب دادیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "anlässlich",
+      "translation": "به مناسبت",
+      "syllables": ["an", "läss", "lich"],
+      "distractors": ["en", "less", "lech"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "hinsichtlich", "fa": "از نظر، در خصوص" },
+      "example": { "text": { "de": "Hinsichtlich der Kosten gibt es noch Unklarheiten.", "fa": "از نظر هزینه‌ها هنوز ابهاماتی وجود دارد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "hinsichtlich",
+      "translation": "از نظر",
+      "syllables": ["hin", "sicht", "lich"],
+      "distractors": ["hen", "secht", "lech"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "حرف اضافه مناسب را انتخاب کنید",
+      "sentence": "{0} des schlechten Wetters wurde das Konzert abgesagt. (به دلیل)",
+      "options": ["Aufgrund", "Zwecks", "Anhand", "Anlässlich"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "aufgrund = به دلیل. Aufgrund des schlechten Wetters = به دلیل هوای بد" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "حرف اضافه مناسب را انتخاب کنید",
+      "sentence": "{0} der Ergebnisse können wir eine Entscheidung treffen. (بر اساس)",
+      "options": ["Infolge", "Anhand", "Aufgrund", "Zwecks"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "anhand = بر اساس. Anhand der Ergebnisse = بر اساس نتایج" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "infolge و zwecks",
+      "content": "**infolge + Genitiv = als Folge von (در نتیجه)**\n\n| infolge | weil/dadurch |\n|---------|---------------|\n| Infolge **des Unfalls** | Weil ein Unfall passierte |\n| Infolge **der Krise** | Als Folge der Krise |\n| Infolge **dessen** | Dadurch |\n\n**zwecks + Genitiv = um zu (به منظور)**\n\n| zwecks | um zu |\n|--------|-------|\n| Zwecks **Überprüfung** | Um zu überprüfen |\n| Zwecks **Klärung** | Um zu klären |\n| Zwecks **Verbesserung** | Um zu verbessern |\n\n**نکته:** zwecks بسیار رسمی و اداری است - در مکاتبات دولتی و قراردادها رایج است.",
+      "examples": [
+        { "de": "Infolge des Erdbebens wurden viele Gebäude zerstört.", "fa": "در نتیجه زلزله، بسیاری از ساختمان‌ها ویران شدند." },
+        { "de": "Zwecks Identifizierung bringen Sie bitte Ihren Ausweis mit.", "fa": "به منظور شناسایی، لطفاً کارت شناسایی خود را همراه بیاورید." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را با شکل Genitiv مناسب پر کنید",
+      "sentence": "Aufgrund {0} Entscheidung müssen wir warten. (die)",
+      "options": ["der", "die", "dem", "des"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "die Entscheidung (مؤنث) در Genitiv می‌شود: der Entscheidung" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را با شکل Genitiv مناسب پر کنید",
+      "sentence": "Infolge {0} Problems wurde das Projekt gestoppt. (das)",
+      "options": ["des", "der", "dem", "das"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "das Problem (خنثی) در Genitiv می‌شود: des Problems" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در اداره",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Büro eines Anwalts", "fa": "در دفتر یک وکیل" }
+      },
+      "lines": [
+        { "speaker": "Anwalt", "text": { "de": "Guten Tag. Aufgrund der aktuellen Gesetzeslage müssen wir einige Dokumente prüfen.", "fa": "روز بخیر. به دلیل وضعیت فعلی قوانین، باید چند سند را بررسی کنیم." }, "mood": "neutral" },
+        { "speaker": "Kunde", "text": { "de": "Verstehe. Welche Dokumente brauchen Sie?", "fa": "متوجهم. چه مدارکی نیاز دارید؟" }, "mood": "confused" },
+        { "speaker": "Anwalt", "text": { "de": "Zwecks Überprüfung Ihrer Identität benötige ich Ihren Ausweis.", "fa": "به منظور تأیید هویت شما، به کارت شناسایی شما نیاز دارم." }, "mood": "neutral" },
+        { "speaker": "Kunde", "text": { "de": "Natürlich. Hier ist mein Ausweis.", "fa": "البته. بفرمایید کارت شناسایی من." }, "mood": "neutral" },
+        { "speaker": "Anwalt", "text": { "de": "Danke. Anhand dieser Informationen können wir fortfahren.", "fa": "ممنون. بر اساس این اطلاعات می‌توانیم ادامه دهیم." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "چرا باید مدارک بررسی شوند؟", "options": ["به دلیل وضعیت قوانین", "به دلیل مشکل مالی", "به دلیل تأخیر"], "correctIndex": 0, "explanation": "وکیل گفت: Aufgrund der aktuellen Gesetzeslage = به دلیل وضعیت فعلی قوانین" },
+        { "question": "'zwecks Überprüfung' به چه معناست؟", "options": ["بعد از بررسی", "به منظور بررسی", "بدون بررسی"], "correctIndex": 1, "explanation": "zwecks = به منظور. zwecks Überprüfung = به منظور بررسی" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را با حرف اضافه Genitiv مرتب کنید",
+      "words": ["Regens", "wurde", "des", "Aufgrund", "abgesagt", "das Spiel"],
+      "correctOrder": [3, 2, 0, 1, 5, 4],
+      "correctSentence": { "de": "Aufgrund des Regens wurde das Spiel abgesagt.", "fa": "به دلیل باران، بازی لغو شد." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را با حرف اضافه Genitiv مرتب کنید",
+      "words": ["Daten", "der", "können", "Anhand", "entscheiden", "wir"],
+      "correctOrder": [3, 1, 0, 2, 5, 4],
+      "correctSentence": { "de": "Anhand der Daten können wir entscheiden.", "fa": "بر اساس داده‌ها می‌توانیم تصمیم بگیریم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله را با حرف اضافه Genitiv مرتب کنید",
+      "words": ["Überprüfung", "Zwecks", "erscheinen", "müssen", "Sie", "der Dokumente"],
+      "correctOrder": [1, 5, 3, 4, 2],
+      "correctSentence": { "de": "Zwecks der Dokumente Überprüfung müssen Sie erscheinen.", "fa": "به منظور بررسی مدارک، باید حضور یابید." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "حروف اضافه aufgrund, infolge, zwecks و anhand همه با Genitiv می‌آیند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! همه این حروف اضافه رسمی با حالت Genitiv استفاده می‌شوند." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "'Aufgrund des Regens' معادل 'Trotz des Regens' است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! aufgrund = به دلیل (weil)، اما trotz = علیرغم. معنی کاملاً متفاوت است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "'zwecks' یک حرف اضافه بسیار رسمی و اداری است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! zwecks در مکاتبات رسمی، قراردادها و متون اداری استفاده می‌شود." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "گزارش رسمی",
+      "scene": {
+        "location": "conference room",
+        "description": { "de": "In einer Besprechung bei der Arbeit", "fa": "در یک جلسه کاری" }
+      },
+      "lines": [
+        { "speaker": "Chef", "text": { "de": "Wie sieht es hinsichtlich des Budgets aus?", "fa": "از نظر بودجه وضعیت چطور است؟" }, "mood": "neutral" },
+        { "speaker": "Mitarbeiter", "text": { "de": "Infolge der Inflation mussten wir die Preise anpassen.", "fa": "در نتیجه تورم، مجبور شدیم قیمت‌ها را تنظیم کنیم." }, "mood": "sad" },
+        { "speaker": "Chef", "text": { "de": "Verstehe. Anhand der aktuellen Zahlen müssen wir einen neuen Plan erstellen.", "fa": "متوجهم. بر اساس آمار فعلی، باید یک برنامه جدید بسازیم." }, "mood": "neutral" },
+        { "speaker": "Mitarbeiter", "text": { "de": "Ja, aufgrund der Situation empfehle ich eine Kürzung.", "fa": "بله، به دلیل این وضعیت، کاهش را پیشنهاد می‌کنم." }, "mood": "neutral" },
+        { "speaker": "Chef", "text": { "de": "Gut. Anlässlich der nächsten Sitzung präsentieren Sie den neuen Plan.", "fa": "خوب است. به مناسبت جلسه بعدی، برنامه جدید را ارائه دهید." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "چرا قیمت‌ها تنظیم شدند؟", "options": ["به دلیل تورم", "به دلیل رقابت", "به دلیل قانون جدید"], "correctIndex": 0, "explanation": "کارمند گفت: Infolge der Inflation = در نتیجه تورم" },
+        { "question": "چه زمانی برنامه جدید ارائه می‌شود؟", "options": ["امروز", "به مناسبت جلسه بعدی", "هفته آینده"], "correctIndex": 1, "explanation": "رئیس گفت: Anlässlich der nächsten Sitzung = به مناسبت جلسه بعدی" }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "حروف اضافه را با معادل weil/um zu جفت کنید",
+      "items": [
+        { "id": "i1", "text": "aufgrund" },
+        { "id": "i2", "text": "infolge" },
+        { "id": "i3", "text": "zwecks" },
+        { "id": "i4", "text": "anhand" },
+        { "id": "i5", "text": "anlässlich" },
+        { "id": "i6", "text": "hinsichtlich" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "weil (به دلیل)" },
+        { "id": "m2", "text": "als Folge von (در نتیجه)" },
+        { "id": "m3", "text": "um zu (به منظور)" },
+        { "id": "m4", "text": "basierend auf (بر اساس)" },
+        { "id": "m5", "text": "zum Anlass von (به مناسبت)" },
+        { "id": "m6", "text": "bezüglich (در خصوص)" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "به دلیل بیماری‌اش، او نتوانست بیاید.",
+      "sentenceTemplate": "{0} seiner Krankheit konnte er nicht kommen.",
+      "options": ["Aufgrund", "Zwecks", "Anhand", "Anlässlich"],
+      "correctAnswers": [0],
+      "correctTranslation": { "de": "Aufgrund seiner Krankheit konnte er nicht kommen.", "fa": "به دلیل بیماری‌اش، او نتوانست بیاید." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "بر اساس نتایج، تصمیم گرفتیم.",
+      "sentenceTemplate": "{0} der Ergebnisse haben wir entschieden.",
+      "options": ["Infolge", "Aufgrund", "Anhand", "Zwecks"],
+      "correctAnswers": [2],
+      "correctTranslation": { "de": "Anhand der Ergebnisse haben wir entschieden.", "fa": "بر اساس نتایج، تصمیم گرفتیم." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: نامه رسمی",
+      "passage": {
+        "de": "Sehr geehrte Damen und Herren,\n\naufgrund der aktuellen wirtschaftlichen Lage müssen wir Ihnen mitteilen, dass es zu Änderungen kommen wird. Infolge der gestiegenen Energiekosten sehen wir uns gezwungen, unsere Preise anzupassen.\n\nZwecks Überprüfung Ihrer Vertragsbedingungen bitten wir Sie, uns bis zum 15. März zu kontaktieren. Anhand Ihrer Rückmeldung werden wir einen neuen Vertrag erstellen.\n\nHinsichtlich der Zahlungsbedingungen gibt es flexible Optionen. Anlässlich unseres 50-jährigen Jubiläums bieten wir außerdem Sonderkonditionen an.\n\nMit freundlichen Grüßen,\nDie Geschäftsführung",
+        "fa": "خانم‌ها و آقایان محترم،\n\nبه دلیل وضعیت اقتصادی فعلی، باید به اطلاع شما برسانیم که تغییراتی رخ خواهد داد. در نتیجه افزایش هزینه‌های انرژی، مجبور هستیم قیمت‌هایمان را تنظیم کنیم.\n\nبه منظور بررسی شرایط قرارداد شما، خواهشمندیم تا ۱۵ مارس با ما تماس بگیرید. بر اساس بازخورد شما، یک قرارداد جدید تنظیم خواهیم کرد.\n\nاز نظر شرایط پرداخت، گزینه‌های انعطاف‌پذیری وجود دارد. به مناسبت پنجاهمین سالگرد ما، شرایط ویژه‌ای نیز ارائه می‌دهیم.\n\nبا احترام،\nمدیریت"
+      },
+      "questions": [
+        { "question": "چرا قیمت‌ها تغییر می‌کنند؟", "options": ["به دلیل رقابت", "در نتیجه افزایش هزینه‌های انرژی", "به خاطر قانون جدید"], "correctIndex": 1, "explanation": "نامه می‌گوید: Infolge der gestiegenen Energiekosten = در نتیجه افزایش هزینه‌های انرژی" },
+        { "question": "تا چه تاریخی باید تماس گرفت؟", "options": ["۱۵ فوریه", "۱۵ مارس", "۱۵ آوریل"], "correctIndex": 1, "explanation": "نامه می‌گوید: bis zum 15. März = تا ۱۵ مارس" },
+        { "question": "چرا شرایط ویژه ارائه می‌شود؟", "options": ["به دلیل بحران", "به مناسبت ۵۰ سالگی شرکت", "به منظور جذب مشتری"], "correctIndex": 1, "explanation": "نامه می‌گوید: Anlässlich unseres 50-jährigen Jubiläums = به مناسبت پنجاهمین سالگرد" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Das offizielle Schreiben", "fa": "نامه رسمی" },
+      "characters": ["Sara", "Michael"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Sara arbeitet bei einer Firma und muss einen offiziellen Brief schreiben.", "fa": "سارا در یک شرکت کار می‌کند و باید یک نامه رسمی بنویسد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sara",
+          "text": { "de": "Michael, ich muss einen formellen Brief schreiben. Kannst du mir helfen?", "fa": "میشائیل، باید یک نامه رسمی بنویسم. می‌توانی کمکم کنی؟" },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Michael",
+          "text": { "de": "Natürlich! In formellen Briefen benutzt man oft Präpositionen wie 'aufgrund' und 'zwecks'.", "fa": "البته! در نامه‌های رسمی اغلب از حروف اضافه مثل 'aufgrund' و 'zwecks' استفاده می‌شود." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "چه نوع حروف اضافه‌ای در نامه‌های رسمی استفاده می‌شود؟",
+          "options": ["mit, bei, zu", "aufgrund, zwecks", "in, an, auf"],
+          "correctIndex": 1,
+          "explanation": "میشائیل گفت که در نامه‌های رسمی از aufgrund و zwecks استفاده می‌شود."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sara",
+          "text": { "de": "Also statt 'weil das Wetter schlecht war' sage ich 'aufgrund des schlechten Wetters'?", "fa": "پس به جای 'چون هوا بد بود' می‌گویم 'به دلیل هوای بد'?" },
+          "mood": "surprised"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Michael",
+          "text": { "de": "Genau! Und 'um zu prüfen' wird zu 'zwecks Prüfung'.", "fa": "دقیقاً! و 'برای بررسی کردن' می‌شود 'به منظور بررسی'." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "'zwecks Prüfung' معادل چه عبارتی است؟",
+          "options": ["nach der Prüfung", "um zu prüfen", "trotz der Prüfung"],
+          "correctIndex": 1,
+          "explanation": "zwecks = um zu. پس zwecks Prüfung = um zu prüfen = به منظور بررسی"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sara",
+          "text": { "de": "Das klingt viel professioneller! Danke für die Hilfe!", "fa": "این خیلی حرفه‌ای‌تر به نظر می‌رسد! ممنون از کمکت!" },
+          "mood": "excited"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Sara schreibt den Brief und ist sehr zufrieden mit dem Ergebnis.", "fa": "سارا نامه را می‌نویسد و از نتیجه خیلی راضی است." }
+        },
+        {
+          "type": "question",
+          "question": "چرا سارا از سبک اسمی استفاده می‌کند؟",
+          "options": ["چون ساده‌تر است", "چون حرفه‌ای‌تر و رسمی‌تر است", "چون کوتاه‌تر است"],
+          "correctIndex": 1,
+          "explanation": "سبک اسمی (Nominalstil) در متون رسمی و حرفه‌ای استفاده می‌شود."
+        }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "حرف اضافه مناسب را انتخاب کنید",
+      "sentence": "{0} des Jubiläums gab es eine große Feier. (به مناسبت)",
+      "options": ["Aufgrund", "Anlässlich", "Infolge", "Zwecks"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "anlässlich = به مناسبت. Anlässlich des Jubiläums = به مناسبت سالگرد" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "حرف اضافه مناسب را انتخاب کنید",
+      "sentence": "{0} des Unfalls musste die Straße gesperrt werden. (در نتیجه)",
+      "options": ["Anhand", "Aufgrund", "Infolge", "Hinsichtlich"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "infolge = در نتیجه. Infolge des Unfalls = در نتیجه تصادف" }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: حروف اضافه Genitiv",
+      "instruction": "معنی درست را انتخاب کنید!",
+      "questions": [
+        { "prompt": "aufgrund", "left": "به دلیل", "right": "علیرغم", "correctSide": "left" },
+        { "prompt": "infolge", "left": "قبل از", "right": "در نتیجه", "correctSide": "right" },
+        { "prompt": "zwecks", "left": "به منظور", "right": "بدون", "correctSide": "left" },
+        { "prompt": "anhand", "left": "بر خلاف", "right": "بر اساس", "correctSide": "right" },
+        { "prompt": "anlässlich", "left": "به مناسبت", "right": "به جای", "correctSide": "left" },
+        { "prompt": "hinsichtlich", "left": "در مقابل", "right": "از نظر", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Aufgrund des Regens wurde das Konzert abgesagt.",
+      "translation": "به دلیل باران، کنسرت لغو شد."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Zwecks Überprüfung müssen Sie persönlich erscheinen.",
+      "translation": "به منظور بررسی، باید شخصاً حضور یابید."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Anhand der Daten können wir eine Entscheidung treffen.",
+      "translation": "بر اساس داده‌ها می‌توانیم تصمیم بگیریم."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: حروف اضافه رسمی!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "'به دلیل' به آلمانی:", "options": ["aufgrund", "trotz"], "correctAnswerIndex": 0 },
+        { "question": "'در نتیجه' به آلمانی:", "options": ["anhand", "infolge"], "correctAnswerIndex": 1 },
+        { "question": "'به منظور' به آلمانی:", "options": ["zwecks", "wegen"], "correctAnswerIndex": 0 },
+        { "question": "این حروف اضافه با چه حالتی می‌آیند؟", "options": ["Genitiv", "Dativ"], "correctAnswerIndex": 0 },
+        { "question": "'بر اساس' به آلمانی:", "options": ["anhand", "infolge"], "correctAnswerIndex": 0 },
+        { "question": "'به مناسبت' به آلمانی:", "options": ["anlässlich", "hinsichtlich"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: حروف اضافه و معنی",
+      "pairs": [
+        { "de": "aufgrund", "fa": "به دلیل" },
+        { "de": "infolge", "fa": "در نتیجه" },
+        { "de": "zwecks", "fa": "به منظور" },
+        { "de": "anhand", "fa": "بر اساس" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "حروف اضافه Genitiv این درس را پیدا کنید",
+      "targetWords": ["aufgrund", "infolge", "zwecks", "anhand", "anlässlich", "hinsichtlich"],
+      "gridSize": { "rows": 12, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "aufgrund", "fa": "به دلیل", "options": ["علیرغم", "به دلیل", "به جای", "بدون"], "correctIndex": 1 },
+        { "de": "zwecks", "fa": "به منظور", "options": ["قبل از", "بعد از", "به منظور", "در طول"], "correctIndex": 2 },
+        { "de": "hinsichtlich", "fa": "از نظر", "options": ["از نظر", "به جای", "برخلاف", "همراه با"], "correctIndex": 0 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما حروف اضافه رسمی با Genitiv را یاد گرفتید!",
+      "keyPoints": [
+        "aufgrund + Genitiv = weil (به دلیل): aufgrund des Regens = weil es regnet",
+        "infolge + Genitiv = als Folge von (در نتیجه): infolge der Krise",
+        "zwecks + Genitiv = um zu (به منظور): zwecks Überprüfung = um zu überprüfen",
+        "anhand + Genitiv = basierend auf (بر اساس): anhand der Daten",
+        "anlässlich + Genitiv = به مناسبت: anlässlich des Jubiläums",
+        "hinsichtlich + Genitiv = از نظر: hinsichtlich der Kosten",
+        "همه این حروف اضافه با Genitiv می‌آیند و در متون رسمی رایج هستند"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "aufgrund", "fa": "به دلیل، به خاطر" } },
+        { "word": { "de": "infolge", "fa": "در نتیجه، به دنبال" } },
+        { "word": { "de": "zwecks", "fa": "به منظور، برای" } },
+        { "word": { "de": "anhand", "fa": "بر اساس، با استفاده از" } },
+        { "word": { "de": "anlässlich", "fa": "به مناسبت" } },
+        { "word": { "de": "hinsichtlich", "fa": "از نظر، در خصوص" } }
+      ]
+    }
+  ]
+}

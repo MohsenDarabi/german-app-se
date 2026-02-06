@@ -1,0 +1,526 @@
+{
+  "id": "B2-M02-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Nominaler Stil: Funktionsverbgefüge", "fa": "سبک اسمی: ترکیب‌های فعل کارکردی" },
+  "description": "یاد بگیرید چگونه از ترکیب‌های فعل کارکردی (Funktionsverbgefüge) استفاده کنید - ساختارهای رسمی‌تر که در متون اداری، علمی و رسانه‌ای آلمانی بسیار رایج هستند.",
+  "level": "B2",
+  "module": 2,
+  "lessonNumber": 3,
+  "totalSteps": 45,
+  "estimatedMinutes": 30,
+  "vocabulary": [
+    { "de": "zur Verfügung stehen", "fa": "در دسترس بودن", "grammar": { "pos": "phrase" } },
+    { "de": "zur Verfügung stellen", "fa": "در اختیار گذاشتن", "grammar": { "pos": "phrase" } },
+    { "de": "in Betracht ziehen", "fa": "در نظر گرفتن، مد نظر قرار دادن", "grammar": { "pos": "phrase" } },
+    { "de": "zur Kenntnis nehmen", "fa": "به اطلاع رساندن، آگاه شدن از", "grammar": { "pos": "phrase" } },
+    { "de": "Einfluss nehmen auf", "fa": "تأثیر گذاشتن بر", "grammar": { "pos": "phrase" } },
+    { "de": "zum Ausdruck bringen", "fa": "بیان کردن، ابراز کردن", "grammar": { "pos": "phrase" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "Funktionsverbgefüge چیست؟",
+      "content": "**Funktionsverbgefüge (FVG) = ترکیب فعل کارکردی**\n\nFVG ترکیبی از یک **اسم** + یک **فعل ضعیف (Funktionsverb)** است که معنای انتزاعی دارد:\n\n| FVG | فعل ساده معادل | معنی |\n|-----|----------------|------|\n| zur Verfügung stehen | verfügbar sein | در دسترس بودن |\n| Einfluss nehmen auf | beeinflussen | تأثیر گذاشتن |\n| in Betracht ziehen | berücksichtigen | در نظر گرفتن |\n| zum Ausdruck bringen | ausdrücken | بیان کردن |\n\n**فعل‌های کارکردی رایج:**\n- nehmen, geben, bringen, stellen, ziehen, kommen, setzen\n\n**چرا FVG؟**\n- رسمی‌تر از فعل ساده\n- در متون اداری، علمی و رسانه‌ای رایج\n- امکان تأکید بیشتر روی عمل",
+      "examples": [
+        { "de": "Die Unterlagen stehen Ihnen zur Verfügung.", "fa": "مدارک در اختیار شما هستند." },
+        { "de": "Er nimmt großen Einfluss auf die Entscheidung.", "fa": "او تأثیر زیادی بر تصمیم می‌گذارد." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "zur Verfügung stehen", "fa": "در دسترس بودن، موجود بودن" },
+      "example": { "text": { "de": "Die Daten stehen allen Mitarbeitern zur Verfügung.", "fa": "داده‌ها در دسترس همه کارمندان است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Verfügung",
+      "translation": "اختیار، دسترس",
+      "syllables": ["Ver", "fü", "gung"],
+      "distractors": ["Var", "fe", "gang"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "zur Verfügung stellen", "fa": "در اختیار گذاشتن، فراهم کردن" },
+      "example": { "text": { "de": "Das Unternehmen stellt den Kunden einen Berater zur Verfügung.", "fa": "شرکت یک مشاور در اختیار مشتریان می‌گذارد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "stellen",
+      "translation": "گذاشتن، قرار دادن",
+      "syllables": ["stel", "len"],
+      "distractors": ["stal", "lan", "sten"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "in Betracht ziehen", "fa": "در نظر گرفتن، مد نظر قرار دادن" },
+      "example": { "text": { "de": "Wir müssen alle Optionen in Betracht ziehen.", "fa": "ما باید همه گزینه‌ها را در نظر بگیریم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Betracht",
+      "translation": "نظر، توجه",
+      "syllables": ["Be", "tracht"],
+      "distractors": ["Ba", "trocht", "trackt"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "تفاوت stehen و stellen",
+      "content": "**zur Verfügung stehen vs. zur Verfügung stellen**\n\nدو FVG مهم با ساختار یکسان اما معنای متفاوت:\n\n| FVG | معنی | حالت |\n|-----|------|------|\n| zur Verfügung **stehen** | در دسترس **بودن** | وضعیت (Zustand) |\n| zur Verfügung **stellen** | در اختیار **گذاشتن** | عمل (Aktion) |\n\n**مثال:**\n- Der Computer **steht** zur Verfügung. (کامپیوتر موجود است)\n- Ich **stelle** den Computer zur Verfügung. (من کامپیوتر را در اختیار می‌گذارم)\n\n**این الگو در چند FVG تکرار می‌شود:**\n- in Frage stehen / in Frage stellen\n- unter Druck stehen / unter Druck setzen",
+      "examples": [
+        { "de": "Das Zimmer steht Ihnen ab Montag zur Verfügung.", "fa": "اتاق از دوشنبه در اختیار شماست." },
+        { "de": "Die Firma stellt uns ein Auto zur Verfügung.", "fa": "شرکت یک ماشین در اختیار ما می‌گذارد." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام FVG به معنای 'در دسترس بودن' است؟",
+      "options": [
+        "zur Verfügung stellen",
+        "zur Verfügung stehen",
+        "in Betracht ziehen",
+        "Einfluss nehmen"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! zur Verfügung stehen = در دسترس بودن (وضعیت)", "incorrect": "zur Verfügung stehen = در دسترس بودن. stellen = در اختیار گذاشتن (عمل)" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "فعل ساده معادل 'Einfluss nehmen auf' چیست؟",
+      "options": [
+        "verfügen",
+        "beeinflussen",
+        "berücksichtigen",
+        "ausdrücken"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "درست! Einfluss nehmen auf = beeinflussen = تأثیر گذاشتن", "incorrect": "Einfluss nehmen auf (تأثیر گذاشتن) = beeinflussen" }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "zur Kenntnis nehmen", "fa": "به اطلاع رسیدن، آگاه شدن از" },
+      "example": { "text": { "de": "Ich habe Ihre Beschwerde zur Kenntnis genommen.", "fa": "من از شکایت شما مطلع شدم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "Kenntnis",
+      "translation": "آگاهی، اطلاع",
+      "syllables": ["Kennt", "nis"],
+      "distractors": ["Kant", "nas", "nuss"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "Einfluss nehmen auf", "fa": "تأثیر گذاشتن بر" },
+      "example": { "text": { "de": "Die Medien nehmen großen Einfluss auf die öffentliche Meinung.", "fa": "رسانه‌ها تأثیر زیادی بر افکار عمومی می‌گذارند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "Einfluss",
+      "translation": "تأثیر، نفوذ",
+      "syllables": ["Ein", "fluss"],
+      "distractors": ["An", "flass", "floss"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "zum Ausdruck bringen", "fa": "بیان کردن، ابراز کردن" },
+      "example": { "text": { "de": "Sie hat ihre Zufriedenheit zum Ausdruck gebracht.", "fa": "او رضایتش را ابراز کرد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Ausdruck",
+      "translation": "بیان، ابراز",
+      "syllables": ["Aus", "druck"],
+      "distractors": ["Os", "drack", "drok"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "FVG مناسب را انتخاب کنید",
+      "sentence": "Die Unterlagen {0} Ihnen ab morgen zur Verfügung.",
+      "options": ["stehen", "stellen", "nehmen", "bringen"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "zur Verfügung stehen = در دسترس بودن. اینجا 'مدارک در دسترس هستند' پس stehen درست است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "FVG مناسب را انتخاب کنید",
+      "sentence": "Wir müssen diese Möglichkeit in {0} ziehen.",
+      "options": ["Kenntnis", "Betracht", "Ausdruck", "Einfluss"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "in Betracht ziehen = در نظر گرفتن. 'این امکان را باید در نظر بگیریم.'" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "FVG مناسب را انتخاب کنید",
+      "sentence": "Die Regierung nimmt großen {0} auf die Wirtschaft.",
+      "options": ["Kenntnis", "Betracht", "Einfluss", "Verfügung"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "Einfluss nehmen auf = تأثیر گذاشتن بر. 'دولت تأثیر زیادی بر اقتصاد می‌گذارد.'" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "FVGهای بیشتر با nehmen, bringen, stellen",
+      "content": "**سه فعل کارکردی پرکاربرد و FVGهای آنها:**\n\n**mit nehmen:**\n| FVG | معنی | فعل ساده |\n|-----|------|----------|\n| Abschied nehmen | خداحافظی کردن | sich verabschieden |\n| Rücksicht nehmen auf | ملاحظه کردن | berücksichtigen |\n| Stellung nehmen zu | موضع گرفتن | sich äußern zu |\n\n**mit bringen:**\n| FVG | معنی | فعل ساده |\n|-----|------|----------|\n| zum Ausdruck bringen | بیان کردن | ausdrücken |\n| zur Sprache bringen | مطرح کردن | ansprechen |\n| in Ordnung bringen | درست کردن | ordnen |\n\n**mit stellen:**\n| FVG | معنی | فعل ساده |\n|-----|------|----------|\n| in Frage stellen | زیر سؤال بردن | bezweifeln |\n| einen Antrag stellen | درخواست دادن | beantragen |\n| unter Beweis stellen | اثبات کردن | beweisen |",
+      "examples": [
+        { "de": "Er stellte die Ergebnisse in Frage.", "fa": "او نتایج را زیر سؤال برد." },
+        { "de": "Sie brachte das Thema zur Sprache.", "fa": "او موضوع را مطرح کرد." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["zur", "stehen", "Ihnen", "Die", "Verfügung", "Dokumente"],
+      "correctOrder": [3, 5, 1, 2, 0, 4],
+      "correctSentence": { "de": "Die Dokumente stehen Ihnen zur Verfügung", "fa": "مدارک در اختیار شما هستند" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["Betracht", "müssen", "Wir", "ziehen", "in", "das"],
+      "correctOrder": [2, 1, 5, 4, 0, 3],
+      "correctSentence": { "de": "Wir müssen das in Betracht ziehen", "fa": "ما باید آن را در نظر بگیریم" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["auf", "nimmt", "Einfluss", "Sie", "die", "Entscheidung"],
+      "correctOrder": [3, 1, 2, 0, 4, 5],
+      "correctSentence": { "de": "Sie nimmt Einfluss auf die Entscheidung", "fa": "او بر تصمیم تأثیر می‌گذارد" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "Funktionsverbgefüge رسمی‌تر از فعل‌های ساده هستند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! FVGها در متون اداری، علمی و رسانه‌ای استفاده می‌شوند و رسمی‌تر هستند." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "'zur Verfügung stellen' و 'zur Verfügung stehen' دقیقاً یک معنی دارند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! stellen = در اختیار گذاشتن (عمل)، stehen = در دسترس بودن (وضعیت)" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "'Einfluss nehmen auf' همان معنی 'beeinflussen' را دارد.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! هر دو به معنی 'تأثیر گذاشتن بر' هستند، اما Einfluss nehmen auf رسمی‌تر است." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در جلسه شرکت",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Geschäftsbesprechung im Konferenzraum", "fa": "جلسه کاری در اتاق کنفرانس" }
+      },
+      "lines": [
+        { "speaker": "Herr Müller", "text": { "de": "Guten Tag. Ich möchte Ihnen unsere neuen Ressourcen zur Verfügung stellen.", "fa": "روز بخیر. می‌خواهم منابع جدید را در اختیار شما بگذارم." }, "mood": "neutral" },
+        { "speaker": "Frau Schmidt", "text": { "de": "Vielen Dank! Ab wann stehen uns diese zur Verfügung?", "fa": "خیلی ممنون! از کی این‌ها در دسترس ما خواهند بود؟" }, "mood": "happy" },
+        { "speaker": "Herr Müller", "text": { "de": "Ab nächster Woche. Wir müssen auch noch andere Optionen in Betracht ziehen.", "fa": "از هفته آینده. ما باید گزینه‌های دیگر را هم در نظر بگیریم." }, "mood": "neutral" },
+        { "speaker": "Frau Schmidt", "text": { "de": "Natürlich. Ich nehme Ihre Vorschläge zur Kenntnis.", "fa": "البته. من از پیشنهادات شما مطلع شدم." }, "mood": "neutral" },
+        { "speaker": "Herr Müller", "text": { "de": "Der Vorstand nimmt großen Einfluss auf diese Entscheidung.", "fa": "هیئت مدیره تأثیر زیادی بر این تصمیم دارد." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "آقای مولر چه چیزی در اختیار می‌گذارد؟", "options": ["زمان", "منابع جدید", "پول"], "correctIndex": 1, "explanation": "او 'neue Ressourcen zur Verfügung stellen' را ذکر کرد." },
+        { "question": "چه کسی تأثیر زیادی بر تصمیم دارد؟", "options": ["خانم اشمیت", "هیئت مدیره", "مشتریان"], "correctIndex": 1, "explanation": "Der Vorstand (هیئت مدیره) nimmt großen Einfluss auf die Entscheidung." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "FVG مناسب را انتخاب کنید",
+      "sentence": "Er hat seine Bedenken zum {0} gebracht.",
+      "options": ["Verfügung", "Ausdruck", "Betracht", "Kenntnis"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "zum Ausdruck bringen = بیان کردن. 'او نگرانی‌هایش را بیان کرد.'" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "FVG مناسب را انتخاب کنید",
+      "sentence": "Ich habe Ihre Nachricht zur {0} genommen.",
+      "options": ["Verfügung", "Ausdruck", "Betracht", "Kenntnis"],
+      "correctAnswers": [3],
+      "feedback": { "explanation": "zur Kenntnis nehmen = مطلع شدن از. 'من از پیام شما مطلع شدم.'" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "فعل کارکردی مناسب را انتخاب کنید",
+      "sentence": "Die Firma {0} den Mitarbeitern Laptops zur Verfügung.",
+      "options": ["steht", "stellt", "nimmt", "bringt"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "zur Verfügung stellen = در اختیار گذاشتن. شرکت فاعل است و عمل انجام می‌دهد، پس stellen درست است." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "گفتگو با استاد",
+      "scene": {
+        "location": "university",
+        "description": { "de": "Im Büro des Professors", "fa": "در دفتر استاد" }
+      },
+      "lines": [
+        { "speaker": "Student", "text": { "de": "Guten Tag, Herr Professor. Ich möchte meine Bachelorarbeit zur Sprache bringen.", "fa": "روز بخیر آقای پروفسور. می‌خواهم درباره پایان‌نامه لیسانسم صحبت کنم." }, "mood": "neutral" },
+        { "speaker": "Professor", "text": { "de": "Natürlich. Welches Thema ziehen Sie in Betracht?", "fa": "البته. کدام موضوع را در نظر دارید؟" }, "mood": "neutral" },
+        { "speaker": "Student", "text": { "de": "Ich interessiere mich für Funktionsverbgefüge.", "fa": "من به ترکیب‌های فعل کارکردی علاقه‌مندم." }, "mood": "excited" },
+        { "speaker": "Professor", "text": { "de": "Interessant! Ich stelle Ihnen gerne Literatur zur Verfügung.", "fa": "جالب است! با کمال میل منابع در اختیارتان می‌گذارم." }, "mood": "happy" },
+        { "speaker": "Student", "text": { "de": "Vielen Dank! Ich bringe meine Dankbarkeit zum Ausdruck.", "fa": "خیلی ممنون! سپاسگزاری خود را ابراز می‌کنم." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "دانشجو چه موضوعی را در نظر دارد؟", "options": ["گرامر ساده", "ترکیب‌های فعل کارکردی", "ادبیات آلمانی"], "correctIndex": 1, "explanation": "دانشجو گفت که به Funktionsverbgefüge علاقه‌مند است." },
+        { "question": "استاد چه چیزی در اختیار دانشجو می‌گذارد؟", "options": ["پول", "منابع/کتاب", "کامپیوتر"], "correctIndex": 1, "explanation": "استاد گفت: 'Ich stelle Ihnen Literatur zur Verfügung.'" }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "FVGها را با فعل‌های ساده معادل جفت کنید",
+      "items": [
+        { "id": "i1", "text": "zur Verfügung stehen" },
+        { "id": "i2", "text": "Einfluss nehmen auf" },
+        { "id": "i3", "text": "in Betracht ziehen" },
+        { "id": "i4", "text": "zum Ausdruck bringen" },
+        { "id": "i5", "text": "in Frage stellen" },
+        { "id": "i6", "text": "zur Kenntnis nehmen" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "verfügbar sein" },
+        { "id": "m2", "text": "beeinflussen" },
+        { "id": "m3", "text": "berücksichtigen" },
+        { "id": "m4", "text": "ausdrücken" },
+        { "id": "m5", "text": "bezweifeln" },
+        { "id": "m6", "text": "erfahren" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "ما باید همه گزینه‌ها را در نظر بگیریم.",
+      "sentenceTemplate": "Wir müssen alle Optionen in {0} {1}.",
+      "options": ["Betracht", "Kenntnis", "ziehen", "nehmen"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Wir müssen alle Optionen in Betracht ziehen.", "fa": "ما باید همه گزینه‌ها را در نظر بگیریم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "او نگرانی‌هایش را بیان کرد.",
+      "sentenceTemplate": "Er hat seine Bedenken zum {0} {1}.",
+      "options": ["Ausdruck", "Betracht", "gebracht", "gezogen"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Er hat seine Bedenken zum Ausdruck gebracht.", "fa": "او نگرانی‌هایش را بیان کرد." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: متن اداری",
+      "passage": {
+        "de": "Sehr geehrte Damen und Herren,\n\nhiermit nehmen wir zur Kenntnis, dass Sie Interesse an unseren Dienstleistungen haben. Wir stellen Ihnen gerne alle relevanten Informationen zur Verfügung.\n\nBevor wir eine Entscheidung treffen, müssen wir verschiedene Faktoren in Betracht ziehen. Unser Vorstand nimmt großen Einfluss auf strategische Entscheidungen.\n\nWir möchten unsere Wertschätzung zum Ausdruck bringen und freuen uns auf eine erfolgreiche Zusammenarbeit.\n\nMit freundlichen Grüßen,\nDie Geschäftsleitung",
+        "fa": "خانم‌ها و آقایان محترم،\n\nبدین‌وسیله به اطلاع می‌رسانیم که از علاقه شما به خدمات ما مطلع شدیم. با کمال میل تمام اطلاعات مربوطه را در اختیار شما می‌گذاریم.\n\nقبل از تصمیم‌گیری، باید عوامل مختلف را در نظر بگیریم. هیئت مدیره ما تأثیر زیادی بر تصمیمات استراتژیک دارد.\n\nمی‌خواهیم قدردانی خود را ابراز کنیم و منتظر همکاری موفق هستیم.\n\nبا احترام،\nمدیریت"
+      },
+      "questions": [
+        { "question": "چند FVG در این متن استفاده شده است؟", "options": ["۲", "۴", "۵"], "correctIndex": 2, "explanation": "۵ FVG: zur Kenntnis nehmen, zur Verfügung stellen, in Betracht ziehen, Einfluss nehmen, zum Ausdruck bringen" },
+        { "question": "چرا این متن از FVG استفاده می‌کند؟", "options": ["چون ساده‌تر است", "چون متن رسمی اداری است", "چون نویسنده اشتباه کرده"], "correctIndex": 1, "explanation": "متون اداری و رسمی از FVG برای رسمیت بیشتر استفاده می‌کنند." },
+        { "question": "'zur Verfügung stellen' در این متن یعنی چه؟", "options": ["درخواست کردن", "در اختیار گذاشتن", "حذف کردن"], "correctIndex": 1, "explanation": "zur Verfügung stellen = در اختیار گذاشتن، فراهم کردن" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die formelle E-Mail", "fa": "ایمیل رسمی" },
+      "characters": ["Leila", "Markus"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Leila muss eine formelle E-Mail an ihren Chef schreiben.", "fa": "لیلا باید یک ایمیل رسمی به رئیسش بنویسد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Leila",
+          "text": { "de": "Markus, kannst du mir helfen? Ich weiß nicht, wie man formell schreibt.", "fa": "مارکوس، می‌تونی کمکم کنی؟ نمی‌دونم چطور رسمی بنویسم." },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Markus",
+          "text": { "de": "Klar! In formellen Texten benutzt man Funktionsverbgefüge.", "fa": "البته! در متون رسمی از ترکیب‌های فعل کارکردی استفاده می‌کنند." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "چرا از FVG در متون رسمی استفاده می‌شود؟",
+          "options": ["چون ساده‌تر است", "چون رسمی‌تر به نظر می‌رسد", "چون کوتاه‌تر است"],
+          "correctIndex": 1,
+          "explanation": "FVGها متن را رسمی‌تر و حرفه‌ای‌تر می‌کنند."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Markus",
+          "text": { "de": "Statt 'Ich gebe Ihnen die Unterlagen' schreib 'Ich stelle Ihnen die Unterlagen zur Verfügung'.", "fa": "به جای 'مدارک را به شما می‌دهم' بنویس 'مدارک را در اختیار شما می‌گذارم'." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Leila",
+          "text": { "de": "Ah! Und statt 'Ich bedenke das' sage ich 'Ich ziehe das in Betracht'?", "fa": "آها! و به جای 'به آن فکر می‌کنم' بگویم 'آن را در نظر می‌گیرم'؟" },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "فعل ساده معادل 'in Betracht ziehen' چیست؟",
+          "options": ["geben", "bedenken/berücksichtigen", "nehmen"],
+          "correctIndex": 1,
+          "explanation": "in Betracht ziehen = bedenken/berücksichtigen = در نظر گرفتن"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Markus",
+          "text": { "de": "Perfekt! Du hast es verstanden!", "fa": "عالی! فهمیدی!" },
+          "mood": "happy"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Leila schreibt ihre E-Mail jetzt viel professioneller.", "fa": "لیلا حالا ایمیلش را خیلی حرفه‌ای‌تر می‌نویسد." }
+        },
+        {
+          "type": "question",
+          "question": "چه چیزی متن را حرفه‌ای‌تر می‌کند؟",
+          "options": ["فعل‌های ساده", "ترکیب‌های فعل کارکردی", "جملات کوتاه"],
+          "correctIndex": 1,
+          "explanation": "استفاده از FVG متن را رسمی‌تر و حرفه‌ای‌تر می‌کند."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: FVG یا فعل ساده؟",
+      "instruction": "کدام رسمی‌تر است؟",
+      "questions": [
+        { "prompt": "رسمی‌تر:", "left": "beeinflussen", "right": "Einfluss nehmen", "correctSide": "right" },
+        { "prompt": "رسمی‌تر:", "left": "zur Verfügung stellen", "right": "geben", "correctSide": "left" },
+        { "prompt": "رسمی‌تر:", "left": "ausdrücken", "right": "zum Ausdruck bringen", "correctSide": "right" },
+        { "prompt": "رسمی‌تر:", "left": "in Betracht ziehen", "right": "bedenken", "correctSide": "left" },
+        { "prompt": "رسمی‌تر:", "left": "bezweifeln", "right": "in Frage stellen", "correctSide": "right" },
+        { "prompt": "رسمی‌تر:", "left": "zur Kenntnis nehmen", "right": "erfahren", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Die Unterlagen stehen Ihnen zur Verfügung.",
+      "translation": "مدارک در اختیار شما هستند."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Wir müssen das in Betracht ziehen.",
+      "translation": "ما باید آن را در نظر بگیریم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Er nimmt großen Einfluss auf die Entscheidung.",
+      "translation": "او تأثیر زیادی بر تصمیم می‌گذارد."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: FVG!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "zur Verfügung stehen =", "options": ["در دسترس بودن", "در اختیار گذاشتن"], "correctAnswerIndex": 0 },
+        { "question": "Einfluss nehmen auf =", "options": ["تأثیر گذاشتن بر", "در نظر گرفتن"], "correctAnswerIndex": 0 },
+        { "question": "in Betracht ziehen =", "options": ["بیان کردن", "در نظر گرفتن"], "correctAnswerIndex": 1 },
+        { "question": "zum Ausdruck bringen =", "options": ["بیان کردن", "در اختیار گذاشتن"], "correctAnswerIndex": 0 },
+        { "question": "zur Kenntnis nehmen =", "options": ["مطلع شدن", "تأثیر گذاشتن"], "correctAnswerIndex": 0 },
+        { "question": "in Frage stellen =", "options": ["زیر سؤال بردن", "در دسترس بودن"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: FVG و معنی",
+      "pairs": [
+        { "de": "zur Verfügung stehen", "fa": "در دسترس بودن" },
+        { "de": "Einfluss nehmen auf", "fa": "تأثیر گذاشتن بر" },
+        { "de": "in Betracht ziehen", "fa": "در نظر گرفتن" },
+        { "de": "zum Ausdruck bringen", "fa": "بیان کردن" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات کلیدی FVG را پیدا کنید",
+      "targetWords": ["Verfügung", "Betracht", "Einfluss", "Kenntnis", "Ausdruck", "stellen"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "zur Verfügung stellen", "fa": "در اختیار گذاشتن", "options": ["در دسترس بودن", "در اختیار گذاشتن", "تأثیر گذاشتن", "بیان کردن"], "correctIndex": 1 },
+        { "de": "in Betracht ziehen", "fa": "در نظر گرفتن", "options": ["بیان کردن", "تأثیر گذاشتن", "در نظر گرفتن", "مطلع شدن"], "correctIndex": 2 },
+        { "de": "Einfluss nehmen auf", "fa": "تأثیر گذاشتن بر", "options": ["در دسترس بودن", "مطلع شدن", "بیان کردن", "تأثیر گذاشتن بر"], "correctIndex": 3 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما ترکیب‌های فعل کارکردی (Funktionsverbgefüge) را یاد گرفتید!",
+      "keyPoints": [
+        "Funktionsverbgefüge = اسم + فعل کارکردی (nehmen, stellen, bringen, ziehen...)",
+        "zur Verfügung stehen = در دسترس بودن (وضعیت)",
+        "zur Verfügung stellen = در اختیار گذاشتن (عمل)",
+        "in Betracht ziehen = در نظر گرفتن = berücksichtigen",
+        "Einfluss nehmen auf = تأثیر گذاشتن بر = beeinflussen",
+        "zum Ausdruck bringen = بیان کردن = ausdrücken",
+        "zur Kenntnis nehmen = مطلع شدن = erfahren",
+        "FVGها در متون اداری، علمی و رسانه‌ای رایج هستند و رسمی‌تر از فعل‌های ساده هستند"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "zur Verfügung stehen", "fa": "در دسترس بودن" } },
+        { "word": { "de": "zur Verfügung stellen", "fa": "در اختیار گذاشتن" } },
+        { "word": { "de": "in Betracht ziehen", "fa": "در نظر گرفتن" } },
+        { "word": { "de": "zur Kenntnis nehmen", "fa": "مطلع شدن" } },
+        { "word": { "de": "Einfluss nehmen auf", "fa": "تأثیر گذاشتن بر" } },
+        { "word": { "de": "zum Ausdruck bringen", "fa": "بیان کردن" } }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,524 @@
+{
+  "id": "B2-M02-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Zusammenfassung: Nominaler Stil", "fa": "جمع‌بندی: سبک اسمی" },
+  "description": "مرور جامع همه عناصر سبک اسمی: اسمی‌سازی، عبارات حرف اضافه‌ای اسمی، و ترکیب‌های فعل-اسم. تفاوت سبک اسمی و فعلی در متون رسمی و علمی آلمانی.",
+  "level": "B2",
+  "module": 2,
+  "lessonNumber": 4,
+  "totalSteps": 45,
+  "estimatedMinutes": 35,
+  "vocabulary": [
+    { "de": "die Nominalisierung", "fa": "اسمی‌سازی", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "die Präpositionalphrase", "fa": "عبارت حرف اضافه‌ای", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "das Funktionsverbgefüge", "fa": "ترکیب فعل-اسم", "grammar": { "pos": "noun", "gender": "neuter" } },
+    { "de": "der Schreibstil", "fa": "سبک نوشتاری", "grammar": { "pos": "noun", "gender": "masculine" } },
+    { "de": "akademisch", "fa": "علمی، دانشگاهی", "grammar": { "pos": "adjective" } },
+    { "de": "umformulieren", "fa": "بازنویسی کردن", "grammar": { "pos": "verb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "سبک اسمی چیست؟",
+      "content": "**Nominaler Stil = سبک اسمی**\n\nسبک اسمی یکی از ویژگی‌های اصلی متون رسمی، علمی و اداری آلمانی است.\n\n**سه عنصر اصلی سبک اسمی:**\n\n| عنصر | توضیح | مثال |\n|------|-------|------|\n| **Nominalisierung** | تبدیل فعل به اسم | analysieren = die Analyse |\n| **Präpositionalphrasen** | عبارات حرف اضافه‌ای با اسم | aufgrund der Analyse |\n| **Funktionsverbgefüge** | ترکیب فعل + اسم | zur Verfügung stellen |\n\n**سبک فعلی (Verbaler Stil):**\n- Wir analysieren die Daten.\n\n**سبک اسمی (Nominaler Stil):**\n- Die Analyse der Daten erfolgt.\n\n**نکته:** سبک اسمی در گفتار روزمره کمتر استفاده می‌شود!",
+      "examples": [
+        { "de": "Verbal: Wir entscheiden morgen. Nominal: Die Entscheidung erfolgt morgen.", "fa": "فعلی: فردا تصمیم می‌گیریم. اسمی: تصمیم‌گیری فردا انجام می‌شود." },
+        { "de": "Verbal: Er hilft mir. Nominal: Er leistet mir Hilfe.", "fa": "فعلی: او به من کمک می‌کند. اسمی: او به من کمک ارائه می‌دهد." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "die Nominalisierung", "fa": "اسمی‌سازی" },
+      "example": { "text": { "de": "Die Nominalisierung von Verben ist typisch für wissenschaftliche Texte.", "fa": "اسمی‌سازی فعل‌ها مختص متون علمی است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Nominalisierung",
+      "translation": "اسمی‌سازی",
+      "syllables": ["No", "mi", "na", "li", "sie", "rung"],
+      "distractors": ["Nu", "mo", "le", "rin"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "die Präpositionalphrase", "fa": "عبارت حرف اضافه‌ای" },
+      "example": { "text": { "de": "Aufgrund der hohen Kosten wurde das Projekt gestoppt.", "fa": "به دلیل هزینه‌های بالا پروژه متوقف شد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Präpositionalphrase",
+      "translation": "عبارت حرف اضافه‌ای",
+      "syllables": ["Prä", "po", "si", "tio", "nal", "phra", "se"],
+      "distractors": ["Pro", "pa", "tal", "fra"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "das Funktionsverbgefüge", "fa": "ترکیب فعل-اسم" },
+      "example": { "text": { "de": "Das Funktionsverbgefüge 'in Betracht ziehen' bedeutet 'berücksichtigen'.", "fa": "ترکیب فعل-اسم 'in Betracht ziehen' یعنی 'در نظر گرفتن'." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Funktionsverbgefüge",
+      "translation": "ترکیب فعل-اسم",
+      "syllables": ["Funk", "ti", "ons", "verb", "ge", "fü", "ge"],
+      "distractors": ["Fank", "ta", "gö", "va"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "اسمی‌سازی: فعل → اسم",
+      "content": "**Nominalisierung = تبدیل فعل به اسم**\n\nفعل‌ها با پسوندهای مختلف به اسم تبدیل می‌شوند:\n\n| پسوند | مثال | معنی |\n|-------|------|------|\n| **-ung** | entwickeln = die Entwicklung | توسعه دادن = توسعه |\n| **-tion** | analysieren = die Analyse | تحلیل کردن = تحلیل |\n| **-heit/-keit** | wichtig = die Wichtigkeit | مهم = اهمیت |\n| **بدون پسوند** | beginnen = der Beginn | شروع کردن = شروع |\n\n**نکته مهم:** اسم‌های ساخته‌شده معمولاً با حرف اضافه همراه می‌شوند:\n\n| فعل | اسم + حرف اضافه |\n|-----|------------------|\n| sich für etwas interessieren | das Interesse **an** etwas |\n| auf etwas warten | das Warten **auf** etwas |\n| von etwas abhängen | die Abhängigkeit **von** etwas |",
+      "examples": [
+        { "de": "Wir müssen das Problem lösen. Die Lösung des Problems ist wichtig.", "fa": "باید مشکل را حل کنیم. حل مشکل مهم است." },
+        { "de": "Er hat viel gearbeitet. Seine Arbeit war beeindruckend.", "fa": "او زیاد کار کرد. کار او چشمگیر بود." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "اسمی‌سازی فعل 'entscheiden' چیست؟",
+      "options": [
+        "die Entscheidung",
+        "der Entscheider",
+        "das Entscheiden",
+        "die Entschiedenheit"
+      ],
+      "correctAnswerIndex": 0,
+      "feedback": { "correct": "آفرین! entscheiden به die Entscheidung تبدیل می‌شود (تصمیم‌گیری)", "incorrect": "entscheiden با پسوند -ung به اسم تبدیل می‌شود: die Entscheidung" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله به سبک اسمی (Nominaler Stil) نوشته شده است؟",
+      "options": [
+        "Wir haben das Projekt gestern analysiert.",
+        "Die Analyse des Projekts erfolgte gestern.",
+        "Gestern wollten wir analysieren.",
+        "Man analysiert das Projekt."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "دقیقاً! 'Die Analyse des Projekts' به جای 'Wir analysieren' نشانه سبک اسمی است.", "incorrect": "در سبک اسمی فعل به اسم تبدیل می‌شود: analysieren → die Analyse" }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "der Schreibstil", "fa": "سبک نوشتاری" },
+      "example": { "text": { "de": "Der akademische Schreibstil unterscheidet sich vom journalistischen.", "fa": "سبک نوشتاری علمی با سبک روزنامه‌نگاری متفاوت است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "Schreibstil",
+      "translation": "سبک نوشتاری",
+      "syllables": ["Schreib", "stil"],
+      "distractors": ["Schraib", "stol", "stel"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "akademisch", "fa": "علمی، دانشگاهی" },
+      "example": { "text": { "de": "Akademische Texte verwenden häufig den nominalen Stil.", "fa": "متون علمی اغلب از سبک اسمی استفاده می‌کنند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "akademisch",
+      "translation": "علمی، دانشگاهی",
+      "syllables": ["aka", "de", "misch"],
+      "distractors": ["uko", "di", "masch"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "umformulieren", "fa": "بازنویسی کردن" },
+      "example": { "text": { "de": "Können Sie diesen Satz nominal umformulieren?", "fa": "می‌توانید این جمله را به سبک اسمی بازنویسی کنید؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "umformulieren",
+      "translation": "بازنویسی کردن",
+      "syllables": ["um", "for", "mu", "lie", "ren"],
+      "distractors": ["om", "far", "ma", "la"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جمله را به سبک اسمی تبدیل کنید",
+      "sentence": "Die {0} des Problems war erfolgreich. (از: Wir haben das Problem gelöst.)",
+      "options": ["Lösung", "Lösend", "Gelöst", "Lösen"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "lösen به die Lösung تبدیل می‌شود. جمله اسمی: Die Lösung des Problems" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "حرف اضافه مناسب برای عبارت اسمی انتخاب کنید",
+      "sentence": "{0} der hohen Kosten wurde das Projekt abgebrochen.",
+      "options": ["Aufgrund", "Weil", "Da", "Obwohl"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "'Aufgrund' + Genitiv برای بیان علت در سبک اسمی استفاده می‌شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "ترکیب فعل-اسم مناسب را انتخاب کنید",
+      "sentence": "Die Firma {0} uns technische Unterstützung zur Verfügung.",
+      "options": ["stellt", "gibt", "macht", "bringt"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "zur Verfügung stellen = در اختیار گذاشتن (Funktionsverbgefüge)" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "حروف اضافه اسمی با Genitiv",
+      "content": "**Nominale Präpositionen mit Genitiv**\n\nاین حروف اضافه مخصوص سبک اسمی هستند و با Genitiv می‌آیند:\n\n| حرف اضافه | معنی | مثال |\n|-----------|------|------|\n| **aufgrund** | به دلیل | aufgrund der Analyse |\n| **infolge** | در نتیجه | infolge des Unfalls |\n| **zwecks** | به منظور | zwecks Verbesserung |\n| **anhand** | بر اساس | anhand der Daten |\n| **anlässlich** | به مناسبت | anlässlich des Jubiläums |\n| **bezüglich** | درباره | bezüglich Ihrer Anfrage |\n\n**مقایسه با سبک فعلی:**\n\n| سبک فعلی | سبک اسمی |\n|----------|----------|\n| Weil es geregnet hat, ... | Aufgrund des Regens ... |\n| Da die Kosten hoch sind, ... | Infolge der hohen Kosten ... |\n| Um zu verbessern, ... | Zwecks Verbesserung ... |",
+      "examples": [
+        { "de": "Aufgrund der positiven Ergebnisse wird das Projekt fortgesetzt.", "fa": "به دلیل نتایج مثبت، پروژه ادامه می‌یابد." },
+        { "de": "Anhand der Statistiken können wir den Trend erkennen.", "fa": "بر اساس آمارها می‌توانیم روند را تشخیص دهیم." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله اسمی را مرتب کنید",
+      "words": ["erfolgte", "des", "Die", "Projekts", "Analyse"],
+      "correctOrder": [2, 4, 1, 3, 0],
+      "correctSentence": { "de": "Die Analyse des Projekts erfolgte.", "fa": "تحلیل پروژه انجام شد." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "عبارت حرف اضافه‌ای اسمی را مرتب کنید",
+      "words": ["gestoppt", "wurde", "Kosten", "das", "hohen", "Projekt", "Aufgrund", "der"],
+      "correctOrder": [6, 7, 4, 2, 1, 3, 5, 0],
+      "correctSentence": { "de": "Aufgrund der hohen Kosten wurde das Projekt gestoppt.", "fa": "به دلیل هزینه‌های بالا پروژه متوقف شد." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "ترکیب فعل-اسم را مرتب کنید",
+      "words": ["Betracht", "Wir", "in", "Alternative", "die", "ziehen"],
+      "correctOrder": [1, 5, 4, 3, 2, 0],
+      "correctSentence": { "de": "Wir ziehen die Alternative in Betracht.", "fa": "ما این گزینه را در نظر می‌گیریم." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "سبک اسمی بیشتر در گفتار روزمره و محاوره استفاده می‌شود.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! سبک اسمی در متون رسمی، علمی و اداری رایج است، نه در گفتار روزمره." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "حرف اضافه 'aufgrund' با حالت Genitiv می‌آید.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! aufgrund + Genitiv: aufgrund des Problems, aufgrund der Kosten" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "'zur Verfügung stellen' یک Funktionsverbgefüge است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! zur Verfügung stellen (در اختیار گذاشتن) یک ترکیب فعل-اسم رایج است." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در جلسه کاری",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Geschäftsbesprechung in einem Unternehmen", "fa": "جلسه کاری در یک شرکت" }
+      },
+      "lines": [
+        { "speaker": "Herr Müller", "text": { "de": "Aufgrund der aktuellen Marktlage müssen wir unsere Strategie überdenken.", "fa": "به دلیل وضعیت فعلی بازار باید استراتژی‌مان را بازبینی کنیم." }, "mood": "neutral" },
+        { "speaker": "Frau Schmidt", "text": { "de": "Die Analyse der Verkaufszahlen zeigt einen deutlichen Rückgang.", "fa": "تحلیل ارقام فروش کاهش آشکاری نشان می‌دهد." }, "mood": "sad" },
+        { "speaker": "Herr Müller", "text": { "de": "Welche Maßnahmen ziehen Sie in Betracht?", "fa": "چه اقداماتی را در نظر می‌گیرید؟" }, "mood": "neutral" },
+        { "speaker": "Frau Schmidt", "text": { "de": "Zwecks Kostensenkung könnten wir die Produktion optimieren.", "fa": "به منظور کاهش هزینه‌ها می‌توانیم تولید را بهینه‌سازی کنیم." }, "mood": "neutral" },
+        { "speaker": "Herr Müller", "text": { "de": "Die Umsetzung dieser Vorschläge steht unter Berücksichtigung des Budgets.", "fa": "اجرای این پیشنهادات با در نظر گرفتن بودجه خواهد بود." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "چرا باید استراتژی را بازبینی کنند؟", "options": ["به دلیل وضعیت بازار", "به دلیل کارمندان جدید", "به دلیل تعطیلات"], "correctIndex": 0, "explanation": "'Aufgrund der aktuellen Marktlage' یعنی به دلیل وضعیت فعلی بازار." },
+        { "question": "کدام Funktionsverbgefüge در این مکالمه استفاده شد؟", "options": ["zur Verfügung stellen", "in Betracht ziehen", "in Frage stellen"], "correctIndex": 1, "explanation": "'in Betracht ziehen' یعنی در نظر گرفتن." }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در دانشگاه",
+      "scene": {
+        "location": "university",
+        "description": { "de": "Gespräch zwischen Professor und Student", "fa": "گفتگو بین استاد و دانشجو" }
+      },
+      "lines": [
+        { "speaker": "Student", "text": { "de": "Professor, warum muss ich in meiner Arbeit den nominalen Stil verwenden?", "fa": "استاد، چرا باید در پایان‌نامه‌ام از سبک اسمی استفاده کنم؟" }, "mood": "confused" },
+        { "speaker": "Professor", "text": { "de": "Der nominale Stil ist Kennzeichen wissenschaftlicher Texte.", "fa": "سبک اسمی نشانه متون علمی است." }, "mood": "neutral" },
+        { "speaker": "Student", "text": { "de": "Aber er klingt so unpersönlich!", "fa": "ولی خیلی غیرشخصی به نظر می‌رسد!" }, "mood": "confused" },
+        { "speaker": "Professor", "text": { "de": "Genau! Die Objektivität steht im Vordergrund, nicht der Autor.", "fa": "دقیقاً! عینیت در اولویت است، نه نویسنده." }, "mood": "happy" },
+        { "speaker": "Student", "text": { "de": "Verstehe. Die Vermeidung von 'ich' macht den Text neutraler.", "fa": "فهمیدم. اجتناب از 'من' متن را بی‌طرف‌تر می‌کند." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "چرا در متون علمی سبک اسمی ترجیح داده می‌شود؟", "options": ["چون ساده‌تر است", "برای عینیت و بی‌طرفی", "چون کوتاه‌تر است"], "correctIndex": 1, "explanation": "سبک اسمی 'Objektivität' (عینیت) ایجاد می‌کند." },
+        { "question": "'Die Vermeidung von ich' به چه معناست؟", "options": ["استفاده از من", "اجتناب از من", "ترجیح من"], "correctIndex": 1, "explanation": "Vermeidung = اجتناب. در متون علمی از ضمیر 'ich' اجتناب می‌شود." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "ترکیب فعل-اسم مناسب را کامل کنید",
+      "sentence": "Diese Option kommt nicht in {0}. (مطرح نیست)",
+      "options": ["Frage", "Betracht", "Verfügung", "Anspruch"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "in Frage kommen = مطرح بودن/امکان‌پذیر بودن. 'nicht in Frage kommen' = مطرح نیست" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "اسمی‌سازی درست را انتخاب کنید",
+      "sentence": "Die {0} der Ergebnisse dauerte drei Wochen. (از auswerten)",
+      "options": ["Auswertung", "Ausgewertung", "Auswerten", "Auswertend"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "auswerten به die Auswertung تبدیل می‌شود (ارزیابی). پسوند -ung برای اسمی‌سازی" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "حرف اضافه اسمی درست را انتخاب کنید",
+      "sentence": "{0} Ihrer Anfrage vom 15. März teilen wir Ihnen mit, dass...",
+      "options": ["Bezüglich", "Weil", "Obwohl", "Da"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "bezüglich + Genitiv = درباره، در خصوص. مخصوص نامه‌های رسمی" }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "سبک فعلی را با سبک اسمی معادل جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Wir analysieren die Daten." },
+        { "id": "i2", "text": "Er entscheidet sich." },
+        { "id": "i3", "text": "Sie stellt uns Hilfe bereit." },
+        { "id": "i4", "text": "Weil es regnet, ..." },
+        { "id": "i5", "text": "Wir berücksichtigen das." },
+        { "id": "i6", "text": "Um zu verbessern, ..." }
+      ],
+      "matches": [
+        { "id": "m1", "text": "Die Analyse der Daten erfolgt." },
+        { "id": "m2", "text": "Seine Entscheidung steht fest." },
+        { "id": "m3", "text": "Sie stellt uns Hilfe zur Verfügung." },
+        { "id": "m4", "text": "Aufgrund des Regens ..." },
+        { "id": "m5", "text": "Wir ziehen das in Betracht." },
+        { "id": "m6", "text": "Zwecks Verbesserung ..." }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "به دلیل کمبود وقت، جلسه لغو شد.",
+      "sentenceTemplate": "{0} des Zeitmangels wurde die Besprechung abgesagt.",
+      "options": ["Aufgrund", "Weil", "Da", "Obwohl"],
+      "correctAnswers": [0],
+      "correctTranslation": { "de": "Aufgrund des Zeitmangels wurde die Besprechung abgesagt.", "fa": "به دلیل کمبود وقت، جلسه لغو شد." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "ما این پیشنهاد را در نظر می‌گیریم.",
+      "sentenceTemplate": "Wir {0} diesen Vorschlag in {1}.",
+      "options": ["ziehen", "stellen", "Betracht", "Frage"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Wir ziehen diesen Vorschlag in Betracht.", "fa": "ما این پیشنهاد را در نظر می‌گیریم." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: متن علمی",
+      "passage": {
+        "de": "Die vorliegende Studie befasst sich mit der Analyse des Konsumverhaltens junger Erwachsener. Aufgrund der zunehmenden Digitalisierung hat sich das Kaufverhalten in den letzten Jahren stark verändert.\n\nDie Auswertung der Daten erfolgte anhand einer Umfrage mit 500 Teilnehmern. Zwecks Vergleichbarkeit wurden nur Personen im Alter von 18 bis 25 Jahren berücksichtigt.\n\nInfolge der Corona-Pandemie ist eine deutliche Verlagerung zum Online-Shopping zu beobachten. Die Verfügbarkeit von Produkten im Internet spielt dabei eine entscheidende Rolle. Bezüglich der Zahlungsmethoden zeigt sich eine Präferenz für digitale Optionen.\n\nDie Ergebnisse stehen in Einklang mit früheren Untersuchungen und werden zur Verfügung gestellt.",
+        "fa": "این مطالعه به تحلیل رفتار مصرفی بزرگسالان جوان می‌پردازد. به دلیل دیجیتالی‌شدن فزاینده، رفتار خرید در سال‌های اخیر به شدت تغییر کرده است.\n\nارزیابی داده‌ها بر اساس نظرسنجی با ۵۰۰ شرکت‌کننده انجام شد. به منظور قابلیت مقایسه، فقط افراد ۱۸ تا ۲۵ ساله در نظر گرفته شدند.\n\nدر نتیجه همه‌گیری کرونا، تغییر آشکاری به سمت خرید آنلاین مشاهده می‌شود. دسترسی به محصولات در اینترنت نقش تعیین‌کننده‌ای دارد. در خصوص روش‌های پرداخت، ترجیح به گزینه‌های دیجیتال مشاهده می‌شود.\n\nنتایج با تحقیقات قبلی همخوانی دارند و در اختیار گذاشته می‌شوند."
+      },
+      "questions": [
+        { "question": "چند حرف اضافه اسمی با Genitiv در این متن استفاده شده؟", "options": ["۲", "۴", "۶"], "correctIndex": 1, "explanation": "چهار حرف اضافه: aufgrund، anhand، zwecks، infolge، bezüglich (۵ تا)" },
+        { "question": "کدام Funktionsverbgefüge در پایان متن آمده؟", "options": ["in Betracht ziehen", "zur Verfügung stellen", "in Frage kommen"], "correctIndex": 1, "explanation": "'zur Verfügung gestellt' = در اختیار گذاشته می‌شود" },
+        { "question": "چرا این متن از سبک اسمی استفاده می‌کند؟", "options": ["چون ساده‌تر است", "چون متن علمی است و عینیت لازم دارد", "چون نویسنده این سبک را دوست دارد"], "correctIndex": 1, "explanation": "متون علمی برای عینیت و رسمیت از سبک اسمی استفاده می‌کنند." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der Praktikumsbericht", "fa": "گزارش کارآموزی" },
+      "characters": ["Sara", "Herr Weber"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Sara schreibt ihren ersten Praktikumsbericht für die Universität.", "fa": "سارا اولین گزارش کارآموزی‌اش را برای دانشگاه می‌نویسد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sara",
+          "text": { "de": "Herr Weber, ich habe geschrieben: 'Ich habe viel gelernt.'", "fa": "آقای وبر، نوشتم: «من چیزهای زیادی یاد گرفتم.»" },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Herr Weber",
+          "text": { "de": "Das ist zu persönlich. Schreiben Sie: 'Der Lernprozess war umfangreich.'", "fa": "این خیلی شخصی است. بنویسید: «فرایند یادگیری گسترده بود.»" },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "چرا جمله سارا اصلاح شد؟",
+          "options": ["چون غلط گرامری داشت", "چون برای متن رسمی خیلی شخصی بود", "چون خیلی طولانی بود"],
+          "correctIndex": 1,
+          "explanation": "در متون رسمی از ضمیر 'ich' اجتناب می‌شود و سبک اسمی ترجیح داده می‌شود."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sara",
+          "text": { "de": "Und 'Weil die Zeit knapp war, konnte ich nicht alles machen'?", "fa": "و «چون وقت کم بود، نتوانستم همه کارها را انجام دهم»؟" },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Herr Weber",
+          "text": { "de": "Besser: 'Aufgrund des Zeitmangels war eine vollständige Bearbeitung nicht möglich.'", "fa": "بهتر است: «به دلیل کمبود وقت، انجام کامل امکان‌پذیر نبود.»" },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "'Aufgrund des Zeitmangels' جایگزین کدام ساختار شد؟",
+          "options": ["damit", "weil die Zeit knapp war", "obwohl"],
+          "correctIndex": 1,
+          "explanation": "حرف اضافه اسمی 'aufgrund + Genitiv' جایگزین جمله پیرو 'weil...' شد."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sara",
+          "text": { "de": "Jetzt verstehe ich! Die Nominalisierung macht den Text professioneller.", "fa": "حالا فهمیدم! اسمی‌سازی متن را حرفه‌ای‌تر می‌کند." },
+          "mood": "excited"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Sara schreibt ihren Bericht im nominalen Stil neu.", "fa": "سارا گزارشش را به سبک اسمی بازنویسی می‌کند." }
+        },
+        {
+          "type": "question",
+          "question": "سبک اسمی چه تأثیری بر متن دارد؟",
+          "options": ["آن را ساده‌تر می‌کند", "آن را حرفه‌ای‌تر و رسمی‌تر می‌کند", "آن را کوتاه‌تر می‌کند"],
+          "correctIndex": 1,
+          "explanation": "سبک اسمی متن را 'professioneller' (حرفه‌ای‌تر) می‌کند."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: اسمی‌سازی",
+      "instruction": "کدام اسمی‌سازی درست است؟",
+      "questions": [
+        { "prompt": "analysieren:", "left": "die Analyse", "right": "das Analysieren", "correctSide": "left" },
+        { "prompt": "entscheiden:", "left": "das Entscheid", "right": "die Entscheidung", "correctSide": "right" },
+        { "prompt": "verbessern:", "left": "die Verbesserung", "right": "das Verbessern", "correctSide": "left" },
+        { "prompt": "entwickeln:", "left": "das Entwickel", "right": "die Entwicklung", "correctSide": "right" },
+        { "prompt": "untersuchen:", "left": "die Untersuchung", "right": "das Untersucht", "correctSide": "left" },
+        { "prompt": "lösen:", "left": "das Lösend", "right": "die Lösung", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Aufgrund der positiven Ergebnisse wird das Projekt fortgesetzt.",
+      "translation": "به دلیل نتایج مثبت، پروژه ادامه می‌یابد."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Die Analyse der Daten steht zur Verfügung.",
+      "translation": "تحلیل داده‌ها در دسترس است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Zwecks Verbesserung werden neue Maßnahmen in Betracht gezogen.",
+      "translation": "به منظور بهبود، اقدامات جدیدی در نظر گرفته می‌شوند."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: سبک اسمی",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "analysieren wird zu:", "options": ["die Analyse", "das Analysieren"], "correctAnswerIndex": 0 },
+        { "question": "حرف اضافه اسمی برای علت:", "options": ["aufgrund", "weil"], "correctAnswerIndex": 0 },
+        { "question": "'zur Verfügung stellen' چیست؟", "options": ["Funktionsverbgefüge", "Relativsatz"], "correctAnswerIndex": 0 },
+        { "question": "سبک اسمی کجا رایج است؟", "options": ["متون علمی", "چت روزانه"], "correctAnswerIndex": 0 },
+        { "question": "'infolge' با کدام حالت می‌آید؟", "options": ["Genitiv", "Dativ"], "correctAnswerIndex": 0 },
+        { "question": "'in Betracht ziehen' یعنی:", "options": ["در نظر گرفتن", "در اختیار گذاشتن"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: فعل و اسم",
+      "pairs": [
+        { "de": "analysieren", "fa": "die Analyse" },
+        { "de": "entscheiden", "fa": "die Entscheidung" },
+        { "de": "entwickeln", "fa": "die Entwicklung" },
+        { "de": "verbessern", "fa": "die Verbesserung" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات مربوط به سبک اسمی را پیدا کنید",
+      "targetWords": ["Nominalisierung", "Analyse", "Entwicklung", "Aufgrund", "Infolge", "Zwecks"],
+      "gridSize": { "rows": 12, "cols": 12 },
+      "timeLimit": 150
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "die Nominalisierung", "fa": "اسمی‌سازی", "options": ["فعل‌سازی", "اسمی‌سازی", "صفت‌سازی", "قیدسازی"], "correctIndex": 1 },
+        { "de": "aufgrund", "fa": "به دلیل", "options": ["با وجود", "به دلیل", "به جای", "مانند"], "correctIndex": 1 },
+        { "de": "in Betracht ziehen", "fa": "در نظر گرفتن", "options": ["رد کردن", "در نظر گرفتن", "تأیید کردن", "حذف کردن"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس جمع‌بندی تمام شد!",
+      "message": "شما همه عناصر سبک اسمی آلمانی را مرور کردید!",
+      "keyPoints": [
+        "سبک اسمی (Nominaler Stil) در متون رسمی، علمی و اداری استفاده می‌شود",
+        "اسمی‌سازی: فعل به اسم با پسوندهای -ung, -tion, -heit (مثلاً analysieren به die Analyse)",
+        "حروف اضافه اسمی + Genitiv: aufgrund, infolge, zwecks, anhand, bezüglich",
+        "Funktionsverbgefüge: zur Verfügung stellen, in Betracht ziehen, in Frage kommen",
+        "سبک فعلی = گفتار روزمره، سبک اسمی = نوشتار رسمی",
+        "سبک اسمی عینیت و بی‌طرفی ایجاد می‌کند"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "die Nominalisierung", "fa": "اسمی‌سازی" } },
+        { "word": { "de": "die Präpositionalphrase", "fa": "عبارت حرف اضافه‌ای" } },
+        { "word": { "de": "das Funktionsverbgefüge", "fa": "ترکیب فعل-اسم" } },
+        { "word": { "de": "der Schreibstil", "fa": "سبک نوشتاری" } },
+        { "word": { "de": "akademisch", "fa": "علمی، دانشگاهی" } },
+        { "word": { "de": "umformulieren", "fa": "بازنویسی کردن" } }
+      ]
+    }
+  ]
+}

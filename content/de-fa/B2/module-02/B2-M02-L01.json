@@ -1,0 +1,518 @@
+{
+  "id": "B2-M02-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Nominaler Stil: Von der Verbalisierung zur Nominalisierung", "fa": "سبک اسمی: تبدیل فعل به اسم" },
+  "description": "یاد بگیرید چگونه جملات فعلی را به سبک اسمی تبدیل کنید - سبکی رایج در متون علمی، اسناد رسمی و روزنامه‌های آلمانی.",
+  "level": "B2",
+  "module": 2,
+  "lessonNumber": 1,
+  "totalSteps": 45,
+  "estimatedMinutes": 30,
+  "vocabulary": [
+    { "de": "die Nominalisierung", "fa": "اسمی‌سازی، تبدیل به اسم", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "die Verbalisierung", "fa": "فعلی‌سازی، تبدیل به فعل", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "umformulieren", "fa": "بازنویسی کردن، به شکل دیگر نوشتن", "grammar": { "pos": "verb" } },
+    { "de": "der Ausdruck", "fa": "عبارت، بیان", "grammar": { "pos": "noun", "gender": "masculine" } },
+    { "de": "förmlich", "fa": "رسمی", "grammar": { "pos": "adjective" } },
+    { "de": "die Analyse", "fa": "تحلیل", "grammar": { "pos": "noun", "gender": "feminine" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "سبک اسمی چیست؟",
+      "content": "**Nominaler Stil (سبک اسمی)**\n\nدر آلمانی رسمی، به جای استفاده از فعل، اغلب از اسم استفاده می‌شود. این سبک در متون علمی، روزنامه‌ها و اسناد رسمی بسیار رایج است.\n\n**سبک فعلی (محاوره‌ای):**\n- Wir **analysieren** die Daten.\n- ما داده‌ها را **تحلیل می‌کنیم**.\n\n**سبک اسمی (رسمی):**\n- Die **Analyse** der Daten wird durchgeführt.\n- **تحلیل** داده‌ها انجام می‌شود.\n\n**چرا سبک اسمی؟**\n- ✅ کوتاه‌تر و فشرده‌تر\n- ✅ رسمی‌تر و علمی‌تر\n- ✅ رایج در نوشتار آکادمیک\n\n**نکته برای فارسی‌زبانان:** در فارسی هم این تفاوت وجود دارد: «ما تصمیم گرفتیم» ← «تصمیم ما»",
+      "examples": [
+        { "de": "Man entschied, dass... wird zu: Die Entscheidung, dass...", "fa": "تصمیم گرفته شد که... می‌شود: تصمیم مبنی بر اینکه..." },
+        { "de": "Wir haben das Problem gelöst. wird zu: Die Lösung des Problems.", "fa": "ما مشکل را حل کردیم. می‌شود: حل مشکل." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "die Nominalisierung", "fa": "اسمی‌سازی، تبدیل به اسم" },
+      "example": { "text": { "de": "Die Nominalisierung ist typisch für wissenschaftliche Texte.", "fa": "اسمی‌سازی مختص متون علمی است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Nominalisierung",
+      "translation": "اسمی‌سازی",
+      "syllables": ["No", "mi", "na", "li", "sie", "rung"],
+      "distractors": ["Na", "me", "lo", "se"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "die Verbalisierung", "fa": "فعلی‌سازی، تبدیل به فعل" },
+      "example": { "text": { "de": "Die Verbalisierung macht den Text verständlicher.", "fa": "فعلی‌سازی متن را قابل فهم‌تر می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Verbalisierung",
+      "translation": "فعلی‌سازی",
+      "syllables": ["Ver", "ba", "li", "sie", "rung"],
+      "distractors": ["Var", "bo", "le", "sang"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "umformulieren", "fa": "بازنویسی کردن، به شکل دیگر نوشتن" },
+      "example": { "text": { "de": "Können Sie diesen Satz umformulieren?", "fa": "می‌توانید این جمله را بازنویسی کنید؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "umformulieren",
+      "translation": "بازنویسی کردن",
+      "syllables": ["um", "for", "mu", "lie", "ren"],
+      "distractors": ["om", "far", "mo", "rin"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "تبدیل فعل به اسم",
+      "content": "**Verb zu Nomen (فعل به اسم)**\n\nبرای تبدیل فعل به اسم، معمولاً از پسوندهای زیر استفاده می‌شود:\n\n| فعل | اسم | پسوند |\n|-----|-----|-------|\n| analysieren | die Analyse | -e |\n| entwickeln | die Entwicklung | -ung |\n| entscheiden | die Entscheidung | -ung |\n| lösen | die Lösung | -ung |\n| beginnen | der Beginn | بدون پسوند |\n| verstehen | das Verständnis | -nis |\n\n**الگوهای رایج:**\n- **-ung**: رایج‌ترین پسوند (همیشه مؤنث: die)\n- **-tion**: برای فعل‌های لاتین (همیشه مؤنث: die)\n- **-e**: برای برخی فعل‌ها (معمولاً مؤنث: die)\n- **بدون پسوند**: برخی فعل‌ها مستقیماً اسم می‌شوند\n\n**نکته مهم:** هنگام اسمی‌سازی، مفعول فعل به **Genitiv** تبدیل می‌شود!",
+      "examples": [
+        { "de": "Wir lesen das Buch. wird zu: Das Lesen des Buches.", "fa": "ما کتاب را می‌خوانیم. می‌شود: خواندن کتاب." },
+        { "de": "Man entwickelt neue Technologien. wird zu: Die Entwicklung neuer Technologien.", "fa": "فناوری‌های جدید توسعه داده می‌شوند. می‌شود: توسعه فناوری‌های جدید." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "اسم مربوط به فعل 'analysieren' چیست؟",
+      "options": [
+        "die Analysierung",
+        "die Analyse",
+        "das Analysieren",
+        "der Analyst"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! analysieren می‌شود die Analyse (تحلیل)", "incorrect": "اسم درست die Analyse است. توجه کنید که der Analyst به معنی تحلیلگر (شخص) است." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام گزینه نمونه‌ای از «سبک اسمی» است؟",
+      "options": [
+        "Wir haben das Problem gelöst.",
+        "Die Lösung des Problems wurde erreicht.",
+        "Das Problem ist gelöst worden.",
+        "Man löste das Problem."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "دقیقاً! Die Lösung des Problems از اسم به جای فعل استفاده می‌کند.", "incorrect": "سبک اسمی یعنی استفاده از اسم (Lösung) به جای فعل (lösen)." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "der Ausdruck", "fa": "عبارت، بیان" },
+      "example": { "text": { "de": "Dieser Ausdruck ist sehr förmlich.", "fa": "این عبارت خیلی رسمی است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "Ausdruck",
+      "translation": "عبارت",
+      "syllables": ["Aus", "druck"],
+      "distractors": ["Ous", "drack", "Os"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "förmlich", "fa": "رسمی" },
+      "example": { "text": { "de": "Der nominale Stil ist förmlicher als der verbale Stil.", "fa": "سبک اسمی رسمی‌تر از سبک فعلی است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "förmlich",
+      "translation": "رسمی",
+      "syllables": ["förm", "lich"],
+      "distractors": ["farm", "lach", "form"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "die Analyse", "fa": "تحلیل" },
+      "example": { "text": { "de": "Die Analyse der Daten zeigt interessante Ergebnisse.", "fa": "تحلیل داده‌ها نتایج جالبی نشان می‌دهد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Analyse",
+      "translation": "تحلیل",
+      "syllables": ["A", "na", "ly", "se"],
+      "distractors": ["O", "ne", "lo", "ze"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جمله را به سبک اسمی تبدیل کنید",
+      "sentence": "Wir lösen das Problem. wird zu: Die {0} des Problems.",
+      "options": ["Lösung", "lösen", "gelöst", "Lösend"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "فعل lösen به اسم die Lösung تبدیل می‌شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جمله را به سبک اسمی تبدیل کنید",
+      "sentence": "Man entwickelt neue Methoden. wird zu: Die {0} neuer Methoden.",
+      "options": ["Entwicklung", "entwickeln", "entwickelt", "Entwickler"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "فعل entwickeln به اسم die Entwicklung تبدیل می‌شود." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "نقش Genitiv در سبک اسمی",
+      "content": "**Genitiv برای مفعول**\n\nوقتی جمله را به سبک اسمی تبدیل می‌کنیم، مفعول فعل به **Genitiv** تبدیل می‌شود:\n\n| سبک فعلی | سبک اسمی |\n|----------|----------|\n| Wir analysieren **die Daten**. | Die Analyse **der Daten**. |\n| Man entscheidet **das Problem**. | Die Entscheidung **des Problems**. |\n| Sie entwickeln **eine Lösung**. | Die Entwicklung **einer Lösung**. |\n\n**قواعد Genitiv:**\n| جنس | آرتیکل معین | آرتیکل نامعین |\n|-----|-------------|---------------|\n| مذکر | des + -(e)s | eines + -(e)s |\n| خنثی | des + -(e)s | eines + -(e)s |\n| مؤنث | der | einer |\n| جمع | der | - |\n\n**مثال‌ها:**\n- das Problem → des Problems\n- die Methode → der Methode\n- die Daten (جمع) → der Daten",
+      "examples": [
+        { "de": "Wir lesen das Buch. wird zu: Das Lesen des Buches ist wichtig.", "fa": "ما کتاب را می‌خوانیم. می‌شود: خواندن کتاب مهم است." },
+        { "de": "Man prüft die Qualität. wird zu: Die Prüfung der Qualität.", "fa": "کیفیت بررسی می‌شود. می‌شود: بررسی کیفیت." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "Genitiv درست را انتخاب کنید",
+      "sentence": "Die Analyse {0} Daten ist wichtig.",
+      "options": ["der", "die", "den", "das"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "die Daten (جمع) در Genitiv می‌شود: der Daten" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "Genitiv درست را انتخاب کنید",
+      "sentence": "Die Lösung {0} Problems wurde gefunden.",
+      "options": ["des", "dem", "den", "der"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "das Problem (خنثی) در Genitiv می‌شود: des Problems" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در سمینار دانشگاه",
+      "scene": {
+        "location": "university",
+        "description": { "de": "Seminar über wissenschaftliches Schreiben", "fa": "سمینار نگارش علمی" }
+      },
+      "lines": [
+        { "speaker": "Professor", "text": { "de": "Heute besprechen wir den Nominalstil.", "fa": "امروز درباره سبک اسمی صحبت می‌کنیم." }, "mood": "neutral" },
+        { "speaker": "Studentin", "text": { "de": "Warum ist der Nominalstil in wissenschaftlichen Texten so wichtig?", "fa": "چرا سبک اسمی در متون علمی اینقدر مهم است؟" }, "mood": "confused" },
+        { "speaker": "Professor", "text": { "de": "Er macht Texte kompakter und objektiver. Statt 'Wir haben analysiert' schreibt man 'Die Analyse zeigt'.", "fa": "متون را فشرده‌تر و عینی‌تر می‌کند. به جای «ما تحلیل کردیم» می‌نویسیم «تحلیل نشان می‌دهد»." }, "mood": "happy" },
+        { "speaker": "Student", "text": { "de": "Also vermeidet man das Personalpronomen 'wir'?", "fa": "پس ضمیر شخصی «ما» را حذف می‌کنیم؟" }, "mood": "surprised" },
+        { "speaker": "Professor", "text": { "de": "Genau! Der Nominalstil wirkt unpersönlicher und wissenschaftlicher.", "fa": "دقیقاً! سبک اسمی غیرشخصی‌تر و علمی‌تر به نظر می‌رسد." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "چرا سبک اسمی در متون علمی استفاده می‌شود؟", "options": ["چون ساده‌تر است", "چون فشرده‌تر و عینی‌تر است", "چون زیباتر است"], "correctIndex": 1, "explanation": "سبک اسمی متون را kompakter (فشرده‌تر) و objektiver (عینی‌تر) می‌کند." },
+        { "question": "در سبک اسمی چه چیزی حذف می‌شود؟", "options": ["فعل‌ها", "ضمایر شخصی مثل 'wir'", "آرتیکل‌ها"], "correctIndex": 1, "explanation": "در سبک اسمی ضمیر شخصی 'wir' حذف می‌شود و متن unpersönlicher (غیرشخصی‌تر) می‌شود." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله اسمی را مرتب کنید",
+      "words": ["Daten", "Die", "der", "Analyse", "wichtig", "ist"],
+      "correctOrder": [1, 3, 2, 0, 5, 4],
+      "correctSentence": { "de": "Die Analyse der Daten ist wichtig.", "fa": "تحلیل داده‌ها مهم است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله اسمی را مرتب کنید",
+      "words": ["Problems", "Die", "wurde", "des", "Lösung", "gefunden"],
+      "correctOrder": [1, 4, 3, 0, 2, 5],
+      "correctSentence": { "de": "Die Lösung des Problems wurde gefunden.", "fa": "راه‌حل مشکل پیدا شد." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله اسمی را مرتب کنید",
+      "words": ["Technologien", "neuer", "Entwicklung", "Die", "fortschreitet"],
+      "correctOrder": [3, 2, 1, 0, 4],
+      "correctSentence": { "de": "Die Entwicklung neuer Technologien fortschreitet.", "fa": "توسعه فناوری‌های جدید پیشرفت می‌کند." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "سبک اسمی در مکالمات روزمره بسیار رایج است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! سبک اسمی در متون علمی، روزنامه‌ها و اسناد رسمی رایج است، نه مکالمات روزمره." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "در سبک اسمی، مفعول فعل به Genitiv تبدیل می‌شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! مثلاً: Wir analysieren die Daten می‌شود Die Analyse der Daten (der = Genitiv جمع)" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "پسوند -ung همیشه اسم مذکر می‌سازد.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! پسوند -ung همیشه اسم مؤنث (die) می‌سازد: die Entwicklung, die Lösung, die Entscheidung" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جمله را به سبک اسمی تبدیل کنید",
+      "sentence": "Man entschied, dass... wird zu: Die {0}, dass...",
+      "options": ["Entscheidung", "entscheiden", "Entscheid", "entschieden"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "فعل entscheiden به اسم die Entscheidung تبدیل می‌شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "اسم مناسب را انتخاب کنید",
+      "sentence": "Die {0} der Ergebnisse dauert zwei Wochen. (auswerten)",
+      "options": ["Auswertung", "auswerten", "ausgewertet", "Auswerter"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "فعل auswerten به اسم die Auswertung (ارزیابی) تبدیل می‌شود." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در اداره",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Büro eines Unternehmens", "fa": "در دفتر یک شرکت" }
+      },
+      "lines": [
+        { "speaker": "Managerin", "text": { "de": "Bitte schreiben Sie den Bericht im Nominalstil.", "fa": "لطفاً گزارش را به سبک اسمی بنویسید." }, "mood": "neutral" },
+        { "speaker": "Mitarbeiter", "text": { "de": "Soll ich also 'Die Durchführung der Analyse' statt 'Wir haben analysiert' schreiben?", "fa": "پس باید «انجام تحلیل» بنویسم به جای «ما تحلیل کردیم»؟" }, "mood": "confused" },
+        { "speaker": "Managerin", "text": { "de": "Genau! Das klingt professioneller.", "fa": "دقیقاً! این حرفه‌ای‌تر به نظر می‌رسد." }, "mood": "happy" },
+        { "speaker": "Mitarbeiter", "text": { "de": "Und statt 'Wir haben die Kosten berechnet' schreibe ich 'Die Berechnung der Kosten'?", "fa": "و به جای «ما هزینه‌ها را محاسبه کردیم» بنویسم «محاسبه هزینه‌ها»؟" }, "mood": "excited" },
+        { "speaker": "Managerin", "text": { "de": "Perfekt! Sie haben es verstanden.", "fa": "عالی! فهمیدید." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "چرا گزارش‌های اداری به سبک اسمی نوشته می‌شوند؟", "options": ["چون ارزان‌تر است", "چون حرفه‌ای‌تر به نظر می‌رسد", "چون سریع‌تر نوشته می‌شود"], "correctIndex": 1, "explanation": "سبک اسمی professioneller (حرفه‌ای‌تر) به نظر می‌رسد." },
+        { "question": "«محاسبه هزینه‌ها» به آلمانی چه می‌شود؟", "options": ["Wir berechnen die Kosten", "Die Berechnung der Kosten", "Die Kosten werden berechnet"], "correctIndex": 1, "explanation": "Die Berechnung der Kosten = محاسبه هزینه‌ها (سبک اسمی)" }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "فعل‌ها را با اسم‌های مربوطه جفت کنید",
+      "items": [
+        { "id": "i1", "text": "analysieren" },
+        { "id": "i2", "text": "entwickeln" },
+        { "id": "i3", "text": "entscheiden" },
+        { "id": "i4", "text": "lösen" },
+        { "id": "i5", "text": "beginnen" },
+        { "id": "i6", "text": "verbessern" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "die Analyse" },
+        { "id": "m2", "text": "die Entwicklung" },
+        { "id": "m3", "text": "die Entscheidung" },
+        { "id": "m4", "text": "die Lösung" },
+        { "id": "m5", "text": "der Beginn" },
+        { "id": "m6", "text": "die Verbesserung" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "تحلیل داده‌ها مهم است.",
+      "sentenceTemplate": "Die {0} der Daten ist wichtig.",
+      "options": ["Analyse", "analysieren", "analysiert", "Analyst"],
+      "correctAnswers": [0],
+      "correctTranslation": { "de": "Die Analyse der Daten ist wichtig.", "fa": "تحلیل داده‌ها مهم است." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "توسعه فناوری‌های جدید ضروری است.",
+      "sentenceTemplate": "Die {0} neuer Technologien ist notwendig.",
+      "options": ["Entwicklung", "entwickeln", "Entwickler", "entwickelt"],
+      "correctAnswers": [0],
+      "correctTranslation": { "de": "Die Entwicklung neuer Technologien ist notwendig.", "fa": "توسعه فناوری‌های جدید ضروری است." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: متن علمی",
+      "passage": {
+        "de": "Die Durchführung der Studie erfolgte im Jahr 2023. Die Sammlung der Daten nahm drei Monate in Anspruch. Nach der Auswertung der Ergebnisse kam das Forschungsteam zu wichtigen Erkenntnissen.\n\nDie Analyse der Daten zeigte einen klaren Trend. Die Verbesserung der Luftqualität in Großstädten war messbar. Die Reduzierung des CO2-Ausstoßes um 15% wurde bestätigt.\n\nDie Veröffentlichung der Studie ist für nächstes Jahr geplant. Die Bedeutung dieser Forschung für die Umweltpolitik ist groß.",
+        "fa": "انجام مطالعه در سال ۲۰۲۳ صورت گرفت. جمع‌آوری داده‌ها سه ماه طول کشید. پس از ارزیابی نتایج، تیم تحقیقاتی به یافته‌های مهمی رسید.\n\nتحلیل داده‌ها روند واضحی نشان داد. بهبود کیفیت هوا در شهرهای بزرگ قابل اندازه‌گیری بود. کاهش ۱۵ درصدی انتشار CO2 تأیید شد.\n\nانتشار مطالعه برای سال آینده برنامه‌ریزی شده است. اهمیت این تحقیق برای سیاست‌های زیست‌محیطی بزرگ است."
+      },
+      "questions": [
+        { "question": "چند نمونه سبک اسمی در این متن وجود دارد؟", "options": ["۳", "۶", "۹"], "correctIndex": 2, "explanation": "۹ نمونه: Durchführung, Sammlung, Auswertung, Analyse, Verbesserung, Reduzierung, Veröffentlichung, Bedeutung, Forschung" },
+        { "question": "«انجام مطالعه» به آلمانی چه می‌شود؟", "options": ["Die Studie durchführen", "Die Durchführung der Studie", "Man führt die Studie durch"], "correctIndex": 1, "explanation": "Die Durchführung der Studie = انجام مطالعه (سبک اسمی)" },
+        { "question": "چرا این متن از سبک اسمی استفاده می‌کند؟", "options": ["چون متن علمی و رسمی است", "چون نویسنده اشتباه کرده", "چون کوتاه‌تر می‌شود"], "correctIndex": 0, "explanation": "متون علمی (wissenschaftliche Texte) از سبک اسمی برای رسمیت و عینیت استفاده می‌کنند." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der erste wissenschaftliche Artikel", "fa": "اولین مقاله علمی" },
+      "characters": ["Sara", "Professor Müller"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Sara schreibt ihren ersten wissenschaftlichen Artikel für die Universität.", "fa": "سارا اولین مقاله علمی خود را برای دانشگاه می‌نویسد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sara",
+          "text": { "de": "Professor, ich habe geschrieben: 'Wir haben die Daten analysiert und dann haben wir die Ergebnisse berechnet.'", "fa": "پروفسور، من نوشتم: «ما داده‌ها را تحلیل کردیم و سپس نتایج را محاسبه کردیم.»" },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Professor Müller",
+          "text": { "de": "Das klingt zu umgangssprachlich. Versuchen Sie den Nominalstil!", "fa": "این خیلی محاوره‌ای به نظر می‌رسد. سبک اسمی را امتحان کنید!" },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "چگونه می‌توان این جمله را به سبک اسمی تبدیل کرد؟",
+          "options": ["Die Analyse der Daten und die Berechnung der Ergebnisse erfolgten.", "Wir analysierten die Daten und berechneten die Ergebnisse.", "Die Daten wurden analysiert und die Ergebnisse berechnet."],
+          "correctIndex": 0,
+          "explanation": "سبک اسمی: Die Analyse (تحلیل) و Die Berechnung (محاسبه) به جای فعل‌ها"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sara",
+          "text": { "de": "Also: 'Die Analyse der Daten und die Berechnung der Ergebnisse erfolgten.'?", "fa": "پس: «تحلیل داده‌ها و محاسبه نتایج انجام شد.»؟" },
+          "mood": "excited"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Professor Müller",
+          "text": { "de": "Ausgezeichnet! Das klingt viel professioneller.", "fa": "عالی! این خیلی حرفه‌ای‌تر به نظر می‌رسد." },
+          "mood": "happy"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Sara überarbeitet ihren ganzen Artikel im Nominalstil.", "fa": "سارا کل مقاله‌اش را به سبک اسمی بازنویسی می‌کند." }
+        },
+        {
+          "type": "question",
+          "question": "چرا سبک اسمی در مقالات علمی ترجیح داده می‌شود؟",
+          "options": ["چون ساده‌تر نوشته می‌شود", "چون حرفه‌ای‌تر و عینی‌تر است", "چون خوانندگان آن را دوست دارند"],
+          "correctIndex": 1,
+          "explanation": "سبک اسمی professioneller (حرفه‌ای‌تر) و objektiver (عینی‌تر) به نظر می‌رسد."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sara",
+          "text": { "de": "Ich verstehe jetzt! Der Nominalstil ist formeller und passt besser zu akademischen Texten.", "fa": "حالا می‌فهمم! سبک اسمی رسمی‌تر است و بهتر به متون آکادمیک می‌خورد." },
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: اسم را پیدا کنید!",
+      "instruction": "اسم مربوط به هر فعل را انتخاب کنید",
+      "questions": [
+        { "prompt": "analysieren", "left": "die Analyse", "right": "der Analyst", "correctSide": "left" },
+        { "prompt": "entwickeln", "left": "der Entwickler", "right": "die Entwicklung", "correctSide": "right" },
+        { "prompt": "entscheiden", "left": "die Entscheidung", "right": "das Entscheid", "correctSide": "left" },
+        { "prompt": "lösen", "left": "der Löser", "right": "die Lösung", "correctSide": "right" },
+        { "prompt": "verbessern", "left": "die Verbesserung", "right": "der Verbesserer", "correctSide": "left" },
+        { "prompt": "berechnen", "left": "der Rechner", "right": "die Berechnung", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Die Analyse der Daten ist abgeschlossen.",
+      "translation": "تحلیل داده‌ها تمام شده است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Die Entwicklung neuer Technologien erfordert viel Zeit.",
+      "translation": "توسعه فناوری‌های جدید زمان زیادی می‌طلبد."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Die Lösung des Problems wurde gefunden.",
+      "translation": "راه‌حل مشکل پیدا شد."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: سبک اسمی!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "اسم از 'analysieren':", "options": ["die Analyse", "der Analyst"], "correctAnswerIndex": 0 },
+        { "question": "پسوند -ung چه جنسی دارد؟", "options": ["مؤنث (die)", "مذکر (der)"], "correctAnswerIndex": 0 },
+        { "question": "مفعول در سبک اسمی چه حالتی می‌گیرد؟", "options": ["Genitiv", "Akkusativ"], "correctAnswerIndex": 0 },
+        { "question": "'Die Lösung des Problems' = ?", "options": ["راه‌حل مشکل", "مشکل را حل کردیم"], "correctAnswerIndex": 0 },
+        { "question": "سبک اسمی در کجا رایج است؟", "options": ["متون علمی", "چت روزانه"], "correctAnswerIndex": 0 },
+        { "question": "اسم از 'entscheiden':", "options": ["die Entscheidung", "der Entscheid"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: فعل و اسم",
+      "pairs": [
+        { "de": "analysieren", "fa": "die Analyse" },
+        { "de": "entwickeln", "fa": "die Entwicklung" },
+        { "de": "entscheiden", "fa": "die Entscheidung" },
+        { "de": "lösen", "fa": "die Lösung" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات مربوط به این درس را پیدا کنید",
+      "targetWords": ["Nominalisierung", "Analyse", "Entwicklung", "Lösung", "Entscheidung", "förmlich"],
+      "gridSize": { "rows": 12, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "die Nominalisierung", "fa": "اسمی‌سازی", "options": ["فعلی‌سازی", "اسمی‌سازی", "صفت‌سازی", "قیدسازی"], "correctIndex": 1 },
+        { "de": "umformulieren", "fa": "بازنویسی کردن", "options": ["ترجمه کردن", "حذف کردن", "بازنویسی کردن", "خواندن"], "correctIndex": 2 },
+        { "de": "förmlich", "fa": "رسمی", "options": ["غیررسمی", "رسمی", "دوستانه", "ساده"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما سبک اسمی و تبدیل فعل به اسم را یاد گرفتید!",
+      "keyPoints": [
+        "سبک اسمی (Nominalstil) = استفاده از اسم به جای فعل",
+        "پسوند -ung رایج‌ترین است و همیشه مؤنث: die Entwicklung, die Lösung",
+        "مفعول فعل به Genitiv تبدیل می‌شود: die Analyse der Daten",
+        "سبک اسمی در متون علمی، روزنامه‌ها و اسناد رسمی رایج است",
+        "Wir analysieren می‌شود Die Analyse (فعل به اسم)",
+        "سبک اسمی فشرده‌تر، رسمی‌تر و عینی‌تر است",
+        "در مکالمات روزمره سبک فعلی طبیعی‌تر است"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "die Nominalisierung", "fa": "اسمی‌سازی" } },
+        { "word": { "de": "die Verbalisierung", "fa": "فعلی‌سازی" } },
+        { "word": { "de": "umformulieren", "fa": "بازنویسی کردن" } },
+        { "word": { "de": "der Ausdruck", "fa": "عبارت" } },
+        { "word": { "de": "förmlich", "fa": "رسمی" } },
+        { "word": { "de": "die Analyse", "fa": "تحلیل" } }
+      ]
+    }
+  ]
+}

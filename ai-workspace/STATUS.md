@@ -8,7 +8,7 @@
 
 **Create B1 lessons - lesson by lesson, wait for user test after each**
 
-Current: `B2-M01` (Erweiterte Partizipialkonstruktionen) - **MODULE COMPLETE - READY FOR USER TEST**
+Current: `B2-M02` (Nominaler Stil) - **MODULE COMPLETE - READY FOR USER TEST**
 
 ---
 
@@ -27,7 +27,7 @@ Current: `B2-M01` (Erweiterte Partizipialkonstruktionen) - **MODULE COMPLETE - R
 | A1 | 14 | 56+ | Complete |
 | A2 | 18 | 72 | **Complete** ✅ |
 | B1 | 20 | 80 | **Complete** ✅ |
-| B2 | 1 | 4 | Module 1 complete |
+| B2 | 2 | 8 | Module 2 complete |
 
 ### A2 Completion (2026-02-05)
 
@@ -308,8 +308,9 @@ Current: `B2-M01` (Erweiterte Partizipialkonstruktionen) - **MODULE COMPLETE - R
 | Module | Topic | Lessons | Status |
 |--------|-------|---------|--------|
 | M01 | Erweiterte Partizipialkonstruktionen | 4/4 | ✅ Complete |
+| M02 | Nominaler Stil | 4/4 | ✅ Complete |
 
-**Total B2: 4 lessons**
+**Total B2: 8 lessons**
 
 ---
 
@@ -324,10 +325,23 @@ Current: `B2-M01` (Erweiterte Partizipialkonstruktionen) - **MODULE COMPLETE - R
 
 ---
 
+## B2 Module 2: Nominaler Stil (Nominal Style)
+
+| Lesson | Title | Status |
+|--------|-------|--------|
+| B2-M02-L01 | Nominalisierung (verb → noun conversion) | ✅ Complete |
+| B2-M02-L02 | Nominale Präpositionalphrasen (aufgrund, infolge, zwecks) | ✅ Complete |
+| B2-M02-L03 | Funktionsverbgefüge (zur Verfügung stellen, in Betracht ziehen) | ✅ Complete |
+| B2-M02-L04 | Zusammenfassung | ✅ Complete |
+
+---
+
 ## Recent Changes
 
 | Date | Change |
 |------|--------|
+| 2026-02-06 | **B2 Module 2 (Nominaler Stil) COMPLETE - 4 lessons!** |
+| 2026-02-06 | Created B2-M02-L01 to L04 in parallel |
 | 2026-02-06 | **B2 Module 1 (Erweiterte Partizipialkonstruktionen) COMPLETE - 4 lessons!** |
 | 2026-02-06 | Created B2-M01-L01 to L04 in parallel - FIRST B2 MODULE! |
 | 2026-02-06 | **B1 Module 20 (Subjektiver Gebrauch der Modalverben) COMPLETE - 4 lessons!** |
@@ -409,6 +423,7 @@ Current: `B2-M01` (Erweiterte Partizipialkonstruktionen) - **MODULE COMPLETE - R
 22. [x] **B1 COMPLETE - 20 modules, 80 lessons!**
 23. [x] Start B2 curriculum
 24. [x] Complete B2 Module 1 (Erweiterte Partizipialkonstruktionen) - 4 lessons
-25. [ ] **User tests B2-M01 lessons**
-26. [ ] Plan B2 Module 2 topic
-27. [ ] Continue B2 curriculum development
+25. [x] Complete B2 Module 2 (Nominaler Stil) - 4 lessons
+26. [ ] **User tests B2-M02 lessons**
+27. [ ] Plan B2 Module 3 topic
+28. [ ] Continue B2 curriculum development

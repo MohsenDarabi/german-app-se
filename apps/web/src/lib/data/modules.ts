@@ -1690,6 +1690,37 @@ const DE_FA_B2_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/B2/B2-M01-L04"
       }
     ]
+  },
+  {
+    id: "module-02",
+    title: "بخش ۲: سبک اسمی (Nominaler Stil)",
+    level: "B2",
+    lessons: [
+      {
+        id: "B2-M02-L01",
+        title: "Nominalisierung - اسمی‌سازی",
+        description: "یاد بگیرید تبدیل جملات فعلی به سبک اسمی: analysieren → die Analyse.",
+        path: "/learn/de-fa/B2/B2-M02-L01"
+      },
+      {
+        id: "B2-M02-L02",
+        title: "Nominale Präpositionalphrasen - عبارات حرف اضافه‌ای",
+        description: "یاد بگیرید حروف اضافه رسمی با Genitiv: aufgrund، infolge، zwecks، anhand.",
+        path: "/learn/de-fa/B2/B2-M02-L02"
+      },
+      {
+        id: "B2-M02-L03",
+        title: "Funktionsverbgefüge - ترکیبات فعل-اسم",
+        description: "یاد بگیرید ترکیبات رسمی: zur Verfügung stellen، in Betracht ziehen.",
+        path: "/learn/de-fa/B2/B2-M02-L03"
+      },
+      {
+        id: "B2-M02-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل سبک اسمی: اسمی‌سازی، حروف اضافه و ترکیبات فعل-اسم.",
+        path: "/learn/de-fa/B2/B2-M02-L04"
+      }
+    ]
   }
 ];
 
