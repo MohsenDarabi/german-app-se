@@ -1,0 +1,518 @@
+{
+  "id": "B2-M01-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Partizipialkonstruktionen auflösen", "fa": "تبدیل ساختارهای وصفی به جملات موصولی" },
+  "description": "یاد بگیرید چگونه ساختارهای وصفی (Partizipialkonstruktionen) را به جملات موصولی تبدیل کنید و بالعکس. تفاوت سبکی بین نوشتار رسمی و محاوره را بشناسید.",
+  "level": "B2",
+  "module": 1,
+  "lessonNumber": 3,
+  "totalSteps": 45,
+  "estimatedMinutes": 30,
+  "vocabulary": [
+    { "de": "umwandeln", "fa": "تبدیل کردن", "grammar": { "pos": "verb" } },
+    { "de": "auflösen", "fa": "حل کردن، باز کردن", "grammar": { "pos": "verb" } },
+    { "de": "der Relativsatz", "fa": "جمله موصولی", "grammar": { "pos": "noun", "gender": "masculine" } },
+    { "de": "die Kurzform", "fa": "شکل کوتاه", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "die Langform", "fa": "شکل بلند", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "das Partizip I", "fa": "صفت فاعلی (وصفی حال)", "grammar": { "pos": "noun", "gender": "neuter" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "ساختارهای وصفی چیست؟",
+      "content": "**Partizipialkonstruktionen (ساختارهای وصفی)**\n\nدر آلمانی، می‌توان از صفت‌های وصفی (Partizipien) به جای جملات موصولی استفاده کرد:\n\n**دو نوع Partizip داریم:**\n\n1. **Partizip I (صفت فاعلی)** = ریشه فعل + d\n   - lesen → lesend (در حال خواندن)\n   - spielen → spielend (در حال بازی کردن)\n\n2. **Partizip II (صفت مفعولی)** = ge- + ریشه + (e)t/en\n   - lesen → gelesen (خوانده شده)\n   - schreiben → geschrieben (نوشته شده)\n\n**مثال تبدیل:**\n- **Kurzform:** der lesende Mann (مرد در حال خواندن)\n- **Langform:** der Mann, der liest (مردی که می‌خواند)\n\n**نکته کلیدی:** ساختار وصفی = رسمی‌تر و فشرده‌تر",
+      "examples": [
+        { "de": "der lesende Mann = der Mann, der liest", "fa": "مرد در حال خواندن = مردی که می‌خواند" },
+        { "de": "das gelesene Buch = das Buch, das gelesen wurde", "fa": "کتاب خوانده شده = کتابی که خوانده شد" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "umwandeln", "fa": "تبدیل کردن" },
+      "example": { "text": { "de": "Wir können diese Konstruktion in einen Relativsatz umwandeln.", "fa": "می‌توانیم این ساختار را به یک جمله موصولی تبدیل کنیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "umwandeln",
+      "translation": "تبدیل کردن",
+      "syllables": ["um", "wan", "deln"],
+      "distractors": ["om", "wen", "dlen"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "auflösen", "fa": "حل کردن، باز کردن" },
+      "example": { "text": { "de": "Man kann Partizipialkonstruktionen in Relativsätze auflösen.", "fa": "می‌توان ساختارهای وصفی را به جملات موصولی تبدیل کرد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "auflösen",
+      "translation": "حل کردن",
+      "syllables": ["auf", "lö", "sen"],
+      "distractors": ["ab", "lo", "zan"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "der Relativsatz", "fa": "جمله موصولی" },
+      "example": { "text": { "de": "Der Relativsatz beginnt mit einem Relativpronomen wie 'der', 'die' oder 'das'.", "fa": "جمله موصولی با ضمیر موصولی مانند 'der'، 'die' یا 'das' شروع می‌شود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Relativsatz",
+      "translation": "جمله موصولی",
+      "syllables": ["Re", "la", "tiv", "satz"],
+      "distractors": ["Ra", "le", "tef", "setz"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "Partizip I به جمله موصولی فعال",
+      "content": "**Partizip I → Relativsatz Aktiv**\n\nوقتی Partizip I (صفت فاعلی) داریم، جمله موصولی **فعال** می‌سازیم:\n\n**فرمول:**\nPartizip I + اسم → اسم + , + ضمیر موصولی + فعل (زمان حال)\n\n**مثال‌ها:**\n\n| Partizipialkonstruktion | Relativsatz |\n|------------------------|-------------|\n| der lesende Mann | der Mann, der liest |\n| die spielenden Kinder | die Kinder, die spielen |\n| das singende Mädchen | das Mädchen, das singt |\n\n**با توضیحات اضافی:**\n- die **im Park spielenden** Kinder\n- → die Kinder, **die im Park spielen**\n\n**نکته:** ترتیب کلمات در ساختار وصفی برعکس است: توضیحات قبل از صفت وصفی می‌آیند!",
+      "examples": [
+        { "de": "die im Garten arbeitende Frau = die Frau, die im Garten arbeitet", "fa": "زنِ در باغ کار کننده = زنی که در باغ کار می‌کند" },
+        { "de": "der laut bellende Hund = der Hund, der laut bellt", "fa": "سگِ بلند پارس کننده = سگی که بلند پارس می‌کند" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "جمله موصولی معادل «der lesende Mann» کدام است؟",
+      "options": [
+        "der Mann, der gelesen hat",
+        "der Mann, der liest",
+        "der Mann, der gelesen wird",
+        "der Mann, der lesen wird"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! Partizip I نشان‌دهنده عمل همزمان است: der Mann, der (gerade) liest.", "incorrect": "Partizip I (lesend) به جمله موصولی فعال در زمان حال تبدیل می‌شود: der Mann, der liest." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "ساختار وصفی را به جمله موصولی تبدیل کنید",
+      "sentence": "die spielenden Kinder = die Kinder, {0} spielen",
+      "options": ["der", "die", "das", "den"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Kinder جمع است، پس ضمیر موصولی 'die' می‌خواهد." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "die Kurzform", "fa": "شکل کوتاه" },
+      "example": { "text": { "de": "Die Partizipialkonstruktion ist die Kurzform des Relativsatzes.", "fa": "ساختار وصفی شکل کوتاه جمله موصولی است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "Kurzform",
+      "translation": "شکل کوتاه",
+      "syllables": ["Kurz", "form"],
+      "distractors": ["Karz", "ferm", "furm"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "die Langform", "fa": "شکل بلند" },
+      "example": { "text": { "de": "Der Relativsatz ist die Langform der Partizipialkonstruktion.", "fa": "جمله موصولی شکل بلند ساختار وصفی است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "Langform",
+      "translation": "شکل بلند",
+      "syllables": ["Lang", "form"],
+      "distractors": ["Lung", "ferm", "furm"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s8",
+      "title": "Partizip II به جمله موصولی مجهول",
+      "content": "**Partizip II → Relativsatz Passiv**\n\nوقتی Partizip II (صفت مفعولی) داریم، جمله موصولی **مجهول** می‌سازیم:\n\n**فرمول:**\nPartizip II + اسم → اسم + , + ضمیر موصولی + Partizip II + wurde/worden ist\n\n**مثال‌ها:**\n\n| Partizipialkonstruktion | Relativsatz |\n|------------------------|-------------|\n| das gelesene Buch | das Buch, das gelesen wurde |\n| die geschriebene Nachricht | die Nachricht, die geschrieben wurde |\n| der reparierte Computer | der Computer, der repariert wurde |\n\n**با توضیحات اضافی:**\n- das **von Maria geschriebene** Buch\n- → das Buch, **das von Maria geschrieben wurde**\n\n**نکته:** «von + فاعل» در جمله موصولی مجهول باقی می‌ماند!",
+      "examples": [
+        { "de": "die gestern gekaufte Tasche = die Tasche, die gestern gekauft wurde", "fa": "کیفِ دیروز خریده شده = کیفی که دیروز خریده شد" },
+        { "de": "der vom Chef unterschriebene Vertrag = der Vertrag, der vom Chef unterschrieben wurde", "fa": "قراردادِ توسط رئیس امضا شده = قراردادی که توسط رئیس امضا شد" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "جمله موصولی معادل «das gelesene Buch» کدام است؟",
+      "options": [
+        "das Buch, das liest",
+        "das Buch, das gelesen hat",
+        "das Buch, das gelesen wurde",
+        "das Buch, das lesen wird"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! Partizip II نشان‌دهنده عمل مجهول است: das Buch, das gelesen wurde.", "incorrect": "Partizip II (gelesen) به جمله موصولی مجهول تبدیل می‌شود: das Buch, das gelesen wurde." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "ساختار وصفی را به جمله موصولی تبدیل کنید",
+      "sentence": "das geschriebene Buch = das Buch, das geschrieben {0}",
+      "options": ["wird", "wurde", "ist", "hat"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Partizip II به مجهول گذشته تبدیل می‌شود: wurde + Partizip II" }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "das Partizip I", "fa": "صفت فاعلی (وصفی حال)" },
+      "example": { "text": { "de": "Das Partizip I wird mit dem Suffix '-d' gebildet: lesend, spielend.", "fa": "صفت فاعلی با پسوند '-d' ساخته می‌شود: lesend، spielend." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Partizip",
+      "translation": "صفت وصفی",
+      "syllables": ["Par", "ti", "zip"],
+      "distractors": ["Per", "te", "zep"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "die im Park {0} Kinder = die Kinder, die im Park spielen",
+      "options": ["spielen", "spielend", "spielenden", "gespielt"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "صفت وصفی قبل از اسم، صرف صفتی می‌گیرد: spielenden (جمع + معرفه)" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را برای ساختن جمله موصولی مرتب کنید",
+      "words": ["der", "liest", "Mann,", "der"],
+      "correctOrder": [0, 2, 3, 1],
+      "correctSentence": { "de": "der Mann, der liest", "fa": "مردی که می‌خواند" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را برای ساختن جمله موصولی مرتب کنید",
+      "words": ["das", "wurde", "Buch,", "geschrieben", "das"],
+      "correctOrder": [0, 2, 4, 3, 1],
+      "correctSentence": { "de": "das Buch, das geschrieben wurde", "fa": "کتابی که نوشته شد" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "Partizip I به جمله موصولی مجهول تبدیل می‌شود.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! Partizip I به جمله موصولی فعال تبدیل می‌شود: der lesende Mann = der Mann, der liest" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "ساختارهای وصفی (Partizipialkonstruktionen) در نوشتار رسمی و علمی رایج‌تر هستند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! این ساختارها فشرده‌تر و رسمی‌تر هستند و در متون علمی و روزنامه‌ها بیشتر استفاده می‌شوند." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جمله موصولی را به ساختار وصفی تبدیل کنید",
+      "sentence": "der Mann, der lacht = der {0} Mann",
+      "options": ["lachen", "gelacht", "lachende", "lachend"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "Partizip I + صرف صفتی: lachend + e = lachende (مذکر + معرفه)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در کلاس آلمانی پیشرفته",
+      "scene": {
+        "location": "classroom",
+        "description": { "de": "Fortgeschrittener Deutschkurs an der Universität", "fa": "کلاس آلمانی پیشرفته در دانشگاه" }
+      },
+      "lines": [
+        { "speaker": "Professorin", "text": { "de": "Heute lernen wir, wie man Partizipialkonstruktionen auflöst.", "fa": "امروز یاد می‌گیریم چگونه ساختارهای وصفی را تبدیل کنیم." }, "mood": "neutral" },
+        { "speaker": "Student", "text": { "de": "Was bedeutet 'der lesende Mann'?", "fa": "'der lesende Mann' یعنی چه؟" }, "mood": "confused" },
+        { "speaker": "Professorin", "text": { "de": "Das ist die Kurzform von 'der Mann, der liest'.", "fa": "این شکل کوتاه 'مردی که می‌خواند' است." }, "mood": "neutral" },
+        { "speaker": "Student", "text": { "de": "Und 'das gelesene Buch'?", "fa": "و 'das gelesene Buch'؟" }, "mood": "neutral" },
+        { "speaker": "Professorin", "text": { "de": "Das ist 'das Buch, das gelesen wurde' - eine passive Konstruktion!", "fa": "این 'کتابی که خوانده شد' است - یک ساختار مجهول!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "Partizip I به چه نوع جمله موصولی تبدیل می‌شود؟", "options": ["مجهول", "فعال", "شرطی"], "correctIndex": 1, "explanation": "Partizip I (lesend) نشان‌دهنده عمل فعال است." },
+        { "question": "کدام ساختار رسمی‌تر است؟", "options": ["جمله موصولی", "ساختار وصفی", "هر دو یکسان"], "correctIndex": 1, "explanation": "ساختار وصفی فشرده‌تر و در متون رسمی رایج‌تر است." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "die von Maria {0} E-Mail = die E-Mail, die von Maria geschrieben wurde",
+      "options": ["schreibende", "geschrieben", "geschriebene", "schreiben"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "Partizip II + صرف صفتی: geschrieben + e = geschriebene (مؤنث + معرفه)" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را برای ساختن ساختار وصفی مرتب کنید",
+      "words": ["im", "die", "Kinder", "spielenden", "Park"],
+      "correctOrder": [1, 0, 4, 3, 2],
+      "correctSentence": { "de": "die im Park spielenden Kinder", "fa": "بچه‌های در حال بازی در پارک" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "در ساختار وصفی با Partizip II، عامل (فاعل اصلی) با «von» بیان می‌شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! مثال: das von Maria geschriebene Buch (کتاب نوشته شده توسط ماریا)" }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "ساختارهای وصفی را با جملات موصولی معادل جفت کنید",
+      "items": [
+        { "id": "i1", "text": "der lesende Mann" },
+        { "id": "i2", "text": "das gelesene Buch" },
+        { "id": "i3", "text": "die spielenden Kinder" },
+        { "id": "i4", "text": "der reparierte Computer" },
+        { "id": "i5", "text": "die singende Frau" },
+        { "id": "i6", "text": "das geschriebene Gedicht" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "der Mann, der liest" },
+        { "id": "m2", "text": "das Buch, das gelesen wurde" },
+        { "id": "m3", "text": "die Kinder, die spielen" },
+        { "id": "m4", "text": "der Computer, der repariert wurde" },
+        { "id": "m5", "text": "die Frau, die singt" },
+        { "id": "m6", "text": "das Gedicht, das geschrieben wurde" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "مردی که کتاب می‌خواند",
+      "sentenceTemplate": "der {0}, der ein Buch {1}",
+      "options": ["Mann", "liest", "Frau", "gelesen"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "der Mann, der ein Buch liest", "fa": "مردی که کتاب می‌خواند" }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "نامه‌ای که نوشته شد",
+      "sentenceTemplate": "der {0}, der geschrieben {1}",
+      "options": ["Brief", "wurde", "Buch", "wird"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "der Brief, der geschrieben wurde", "fa": "نامه‌ای که نوشته شد" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "ساختار وصفی صحیح را انتخاب کنید",
+      "sentence": "die Frau, die tanzt = die {0} Frau",
+      "options": ["tanzen", "getanzt", "tanzende", "tanzend"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "Partizip I + صرف صفتی: tanzend + e = tanzende (مؤنث + معرفه)" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "خواندن روزنامه",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Büro beim Zeitunglesen", "fa": "در دفتر هنگام خواندن روزنامه" }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Schau mal, hier steht: 'Die vom Sturm zerstörten Häuser werden repariert.'", "fa": "ببین، اینجا نوشته: 'خانه‌های ویران شده توسط طوفان تعمیر می‌شوند.'" }, "mood": "neutral" },
+        { "speaker": "Max", "text": { "de": "Das klingt sehr formal. Was bedeutet das genau?", "fa": "این خیلی رسمی به نظر می‌رسد. دقیقاً یعنی چه؟" }, "mood": "confused" },
+        { "speaker": "Anna", "text": { "de": "Es heißt: 'Die Häuser, die vom Sturm zerstört wurden, werden repariert.'", "fa": "یعنی: 'خانه‌هایی که توسط طوفان ویران شدند، تعمیر می‌شوند.'" }, "mood": "happy" },
+        { "speaker": "Max", "text": { "de": "Ah, die Zeitungssprache ist wirklich kompakter!", "fa": "آها، زبان روزنامه واقعاً فشرده‌تر است!" }, "mood": "surprised" },
+        { "speaker": "Anna", "text": { "de": "Genau! In der Alltagssprache würde man eher den Relativsatz benutzen.", "fa": "دقیقاً! در زبان روزمره بیشتر از جمله موصولی استفاده می‌شود." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "کدام ساختار در روزنامه‌ها رایج‌تر است؟", "options": ["جمله موصولی", "ساختار وصفی", "جمله ساده"], "correctIndex": 1, "explanation": "ساختارهای وصفی فشرده‌تر هستند و در متون نوشتاری رسمی رایج‌ترند." },
+        { "question": "'vom Sturm zerstörten' چه نوع ساختاری است؟", "options": ["Partizip I", "Partizip II", "صفت ساده"], "correctIndex": 1, "explanation": "'zerstört' Partizip II است که عمل مجهول را نشان می‌دهد." }
+      ]
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: متن روزنامه‌ای",
+      "passage": {
+        "de": "Die gestern eröffnete Kunstausstellung im Stadtmuseum zeigt die im letzten Jahrhundert gemalten Bilder berühmter Künstler. Die von internationalen Kritikern gelobte Sammlung enthält über 200 Werke. Die täglich kommenden Besucher zeigen großes Interesse an den ausgestellten Kunstwerken.\n\nDer von der Stadt finanzierte Event dauert drei Monate. Die arbeitenden Mitarbeiter des Museums sind stolz auf diese einzigartige Ausstellung.",
+        "fa": "نمایشگاه هنری که دیروز افتتاح شد در موزه شهر، تابلوهای نقاشی شده در قرن گذشته توسط هنرمندان مشهور را نشان می‌دهد. این مجموعه که توسط منتقدان بین‌المللی ستایش شده، بیش از ۲۰۰ اثر دارد. بازدیدکنندگانی که روزانه می‌آیند علاقه زیادی به آثار هنری نمایش داده شده نشان می‌دهند.\n\nاین رویداد که توسط شهر تأمین مالی شده سه ماه طول می‌کشد. کارکنان شاغل موزه به این نمایشگاه منحصر به فرد افتخار می‌کنند."
+      },
+      "questions": [
+        { "question": "'die gestern eröffnete Kunstausstellung' یعنی چه؟", "options": ["نمایشگاهی که فردا افتتاح می‌شود", "نمایشگاهی که دیروز افتتاح شد", "نمایشگاهی که امروز افتتاح می‌شود"], "correctIndex": 1, "explanation": "'eröffnete' Partizip II است و عمل گذشته مجهول را نشان می‌دهد." },
+        { "question": "'die täglich kommenden Besucher' به چه جمله موصولی تبدیل می‌شود؟", "options": ["die Besucher, die täglich kommen", "die Besucher, die täglich gekommen sind", "die Besucher, die täglich kommen werden"], "correctIndex": 0, "explanation": "Partizip I (kommend) به جمله موصولی فعال در زمان حال تبدیل می‌شود." },
+        { "question": "چرا این متن از ساختارهای وصفی استفاده کرده؟", "options": ["چون ساده‌تر است", "چون فشرده‌تر و رسمی‌تر است", "چون قدیمی‌تر است"], "correctIndex": 1, "explanation": "متون روزنامه‌ای و رسمی از ساختارهای وصفی استفاده می‌کنند زیرا فشرده‌تر هستند." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der geheimnisvolle Brief", "fa": "نامه مرموز" },
+      "characters": ["Emma", "Lukas"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Emma findet einen auf dem Boden liegenden Brief.", "fa": "اما یک نامه افتاده روی زمین پیدا می‌کند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Emma",
+          "text": { "de": "Schau mal, ein von Hand geschriebener Brief!", "fa": "ببین، یک نامه دست‌نویس!" },
+          "mood": "excited"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lukas",
+          "text": { "de": "Meinst du einen Brief, der von Hand geschrieben wurde?", "fa": "منظورت نامه‌ای است که با دست نوشته شده؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "'von Hand geschriebener Brief' چه نوع ساختاری است؟",
+          "options": ["Partizip I", "Partizip II", "صفت ساده"],
+          "correctIndex": 1,
+          "explanation": "'geschrieben' Partizip II است و نشان‌دهنده عمل مجهول است."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Emma",
+          "text": { "de": "Ja, genau! Und hier ist eine interessant klingende Nachricht.", "fa": "بله، دقیقاً! و اینجا یک پیام جالب به نظر رسیده است." },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lukas",
+          "text": { "de": "Also eine Nachricht, die interessant klingt?", "fa": "پس پیامی که جالب به نظر می‌رسد؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "'interessant klingende Nachricht' چه نوع ساختاری است؟",
+          "options": ["Partizip I (فعال)", "Partizip II (مجهول)", "صفت ساده"],
+          "correctIndex": 0,
+          "explanation": "'klingend' Partizip I است و نشان‌دهنده عمل فعال همزمان است."
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Die in der Nachricht beschriebene Adresse führt zu einem alten Haus.", "fa": "آدرس توصیف شده در نامه به یک خانه قدیمی می‌رسد." }
+        },
+        {
+          "type": "question",
+          "question": "'die in der Nachricht beschriebene Adresse' را به جمله موصولی تبدیل کنید.",
+          "options": ["die Adresse, die in der Nachricht beschreibt", "die Adresse, die in der Nachricht beschrieben wurde", "die Adresse, die in der Nachricht beschreiben wird"],
+          "correctIndex": 1,
+          "explanation": "Partizip II به جمله موصولی مجهول تبدیل می‌شود: die Adresse, die beschrieben wurde."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: Partizip I یا II؟",
+      "instruction": "انتخاب کنید!",
+      "questions": [
+        { "prompt": "der lesende Mann", "left": "Partizip I", "right": "Partizip II", "correctSide": "left" },
+        { "prompt": "das gelesene Buch", "left": "Partizip I", "right": "Partizip II", "correctSide": "right" },
+        { "prompt": "die spielenden Kinder", "left": "Partizip I", "right": "Partizip II", "correctSide": "left" },
+        { "prompt": "der geschriebene Brief", "left": "Partizip I", "right": "Partizip II", "correctSide": "right" },
+        { "prompt": "die singende Frau", "left": "Partizip I", "right": "Partizip II", "correctSide": "left" },
+        { "prompt": "das reparierte Auto", "left": "Partizip I", "right": "Partizip II", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Der lesende Mann sitzt im Park.",
+      "translation": "مردِ در حال خواندن در پارک نشسته است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Das von Maria geschriebene Buch ist sehr interessant.",
+      "translation": "کتاب نوشته شده توسط ماریا بسیار جالب است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Die im Garten spielenden Kinder sind glücklich.",
+      "translation": "بچه‌های در حال بازی در باغ خوشحال هستند."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "'der lesende Mann' چه نوع ساختاری دارد؟", "options": ["Partizip I", "Partizip II"], "correctAnswerIndex": 0 },
+        { "question": "'das gelesene Buch' به چه تبدیل می‌شود؟", "options": ["der Mann, der liest", "das Buch, das gelesen wurde"], "correctAnswerIndex": 1 },
+        { "question": "Partizip I چگونه ساخته می‌شود؟", "options": ["ریشه + d", "ge- + ریشه + t"], "correctAnswerIndex": 0 },
+        { "question": "کدام ساختار رسمی‌تر است؟", "options": ["جمله موصولی", "ساختار وصفی"], "correctAnswerIndex": 1 },
+        { "question": "'spielend' چه نوع Partizip است؟", "options": ["Partizip I", "Partizip II"], "correctAnswerIndex": 0 },
+        { "question": "'geschrieben' چه نوع Partizip است؟", "options": ["Partizip I", "Partizip II"], "correctAnswerIndex": 1 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "der lesende Mann", "fa": "der Mann, der liest" },
+        { "de": "das gelesene Buch", "fa": "das Buch, das gelesen wurde" },
+        { "de": "die spielenden Kinder", "fa": "die Kinder, die spielen" },
+        { "de": "der geschriebene Brief", "fa": "der Brief, der geschrieben wurde" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات مربوط به این درس را پیدا کنید",
+      "targetWords": ["Partizip", "Relativsatz", "Kurzform", "Langform", "umwandeln", "auflösen"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "umwandeln", "fa": "تبدیل کردن", "options": ["ترجمه کردن", "تبدیل کردن", "حذف کردن", "اضافه کردن"], "correctIndex": 1 },
+        { "de": "der Relativsatz", "fa": "جمله موصولی", "options": ["جمله اصلی", "جمله موصولی", "جمله شرطی", "جمله امری"], "correctIndex": 1 },
+        { "de": "die Kurzform", "fa": "شکل کوتاه", "options": ["شکل بلند", "شکل کوتاه", "شکل قدیمی", "شکل جدید"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما یاد گرفتید چگونه ساختارهای وصفی را به جملات موصولی تبدیل کنید و بالعکس!",
+      "keyPoints": [
+        "Partizip I (صفت فاعلی) = ریشه فعل + d، برای جمله موصولی فعال",
+        "Partizip II (صفت مفعولی) = ge- + ریشه + t/en، برای جمله موصولی مجهول",
+        "der lesende Mann = der Mann, der liest (Partizip I، فعال)",
+        "das gelesene Buch = das Buch, das gelesen wurde (Partizip II، مجهول)",
+        "ساختارهای وصفی در نوشتار رسمی و روزنامه‌ای رایج‌ترند",
+        "در زبان محاوره، جملات موصولی رایج‌تر هستند"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "umwandeln", "fa": "تبدیل کردن" } },
+        { "word": { "de": "auflösen", "fa": "حل کردن، باز کردن" } },
+        { "word": { "de": "der Relativsatz", "fa": "جمله موصولی" } },
+        { "word": { "de": "die Kurzform", "fa": "شکل کوتاه" } },
+        { "word": { "de": "die Langform", "fa": "شکل بلند" } },
+        { "word": { "de": "das Partizip I", "fa": "صفت فاعلی (وصفی حال)" } }
+      ]
+    }
+  ]
+}

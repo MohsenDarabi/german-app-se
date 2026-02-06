@@ -1658,6 +1658,41 @@ const DE_FA_B1_MODULES: ModuleStub[] = [
   }
 ];
 
+// German B2 modules
+const DE_FA_B2_MODULES: ModuleStub[] = [
+  {
+    id: "module-01",
+    title: "بخش ۱: ساختارهای صفت فاعلی گسترده (Erweiterte Partizipialkonstruktionen)",
+    level: "B2",
+    lessons: [
+      {
+        id: "B2-M01-L01",
+        title: "Partizip I erweitert - صفت فاعلی گسترده",
+        description: "یاد بگیرید ساختارهای گسترده با Partizip I: der laut sprechende Mann.",
+        path: "/learn/de-fa/B2/B2-M01-L01"
+      },
+      {
+        id: "B2-M01-L02",
+        title: "Partizip II erweitert - صفت مفعولی گسترده",
+        description: "یاد بگیرید ساختارهای گسترده با Partizip II: das gestern gekaufte Buch.",
+        path: "/learn/de-fa/B2/B2-M01-L02"
+      },
+      {
+        id: "B2-M01-L03",
+        title: "Auflösen in Relativsätze - تبدیل به جمله موصولی",
+        description: "یاد بگیرید تبدیل ساختارهای صفت فاعلی به جملات موصولی و برعکس.",
+        path: "/learn/de-fa/B2/B2-M01-L03"
+      },
+      {
+        id: "B2-M01-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل ساختارهای صفت فاعلی گسترده: Partizip I، Partizip II و تبدیل.",
+        path: "/learn/de-fa/B2/B2-M01-L04"
+      }
+    ]
+  }
+];
+
 // English (en-fa) modules
 const EN_FA_A1_MODULES: ModuleStub[] = [
   {
@@ -1678,30 +1713,32 @@ const EN_FA_A1_MODULES: ModuleStub[] = [
 const EN_FA_A2_MODULES: ModuleStub[] = [];
 
 // Module data registry by language pair
-const MODULE_DATA: Record<string, { A1: ModuleStub[]; A2: ModuleStub[]; B1: ModuleStub[] }> = {
+const MODULE_DATA: Record<string, { A1: ModuleStub[]; A2: ModuleStub[]; B1: ModuleStub[]; B2: ModuleStub[] }> = {
   'de-fa': {
     A1: DE_FA_A1_MODULES,
     A2: DE_FA_A2_MODULES,
     B1: DE_FA_B1_MODULES,
+    B2: DE_FA_B2_MODULES,
   },
   'en-fa': {
     A1: EN_FA_A1_MODULES,
     A2: EN_FA_A2_MODULES,
     B1: [],
+    B2: [],
   },
 };
 
 /**
  * Get all modules for a specific language pair
  */
-export function getAllModulesForLanguage(languagePair: string): { A1: ModuleStub[]; A2: ModuleStub[]; B1: ModuleStub[] } {
-  return MODULE_DATA[languagePair] || { A1: [], A2: [], B1: [] };
+export function getAllModulesForLanguage(languagePair: string): { A1: ModuleStub[]; A2: ModuleStub[]; B1: ModuleStub[]; B2: ModuleStub[] } {
+  return MODULE_DATA[languagePair] || { A1: [], A2: [], B1: [], B2: [] };
 }
 
 /**
  * Get modules for a specific language pair and level
  */
-export function getModulesForLevel(languagePair: string, level: 'A1' | 'A2' | 'B1'): ModuleStub[] {
+export function getModulesForLevel(languagePair: string, level: 'A1' | 'A2' | 'B1' | 'B2'): ModuleStub[] {
   return MODULE_DATA[languagePair]?.[level] || [];
 }
 
@@ -1709,3 +1746,4 @@ export function getModulesForLevel(languagePair: string, level: 'A1' | 'A2' | 'B
 export const A1_MODULES = DE_FA_A1_MODULES;
 export const A2_MODULES = DE_FA_A2_MODULES;
 export const B1_MODULES = DE_FA_B1_MODULES;
+export const B2_MODULES = DE_FA_B2_MODULES;

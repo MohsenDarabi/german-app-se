@@ -8,7 +8,7 @@
 
 **Create B1 lessons - lesson by lesson, wait for user test after each**
 
-Current: `B1-M20` (Subjektiver Gebrauch der Modalverben) - **MODULE COMPLETE - READY FOR USER TEST**
+Current: `B2-M01` (Erweiterte Partizipialkonstruktionen) - **MODULE COMPLETE - READY FOR USER TEST**
 
 ---
 
@@ -26,7 +26,8 @@ Current: `B1-M20` (Subjektiver Gebrauch der Modalverben) - **MODULE COMPLETE - R
 |-------|---------|---------|--------|
 | A1 | 14 | 56+ | Complete |
 | A2 | 18 | 72 | **Complete** ✅ |
-| B1 | 20 | 80 | Module 20 complete |
+| B1 | 20 | 80 | **Complete** ✅ |
+| B2 | 1 | 4 | Module 1 complete |
 
 ### A2 Completion (2026-02-05)
 
@@ -302,10 +303,33 @@ Current: `B1-M20` (Subjektiver Gebrauch der Modalverben) - **MODULE COMPLETE - R
 
 ---
 
+## B2 Progress
+
+| Module | Topic | Lessons | Status |
+|--------|-------|---------|--------|
+| M01 | Erweiterte Partizipialkonstruktionen | 4/4 | ✅ Complete |
+
+**Total B2: 4 lessons**
+
+---
+
+## B2 Module 1: Erweiterte Partizipialkonstruktionen (Extended Participial Constructions)
+
+| Lesson | Title | Status |
+|--------|-------|--------|
+| B2-M01-L01 | Partizip I erweitert (extended present participle) | ✅ Complete |
+| B2-M01-L02 | Partizip II erweitert (extended past participle) | ✅ Complete |
+| B2-M01-L03 | Auflösen in Relativsätze (converting to relative clauses) | ✅ Complete |
+| B2-M01-L04 | Zusammenfassung | ✅ Complete |
+
+---
+
 ## Recent Changes
 
 | Date | Change |
 |------|--------|
+| 2026-02-06 | **B2 Module 1 (Erweiterte Partizipialkonstruktionen) COMPLETE - 4 lessons!** |
+| 2026-02-06 | Created B2-M01-L01 to L04 in parallel - FIRST B2 MODULE! |
 | 2026-02-06 | **B1 Module 20 (Subjektiver Gebrauch der Modalverben) COMPLETE - 4 lessons!** |
 | 2026-02-06 | Created B1-M20-L01 to L04 in parallel |
 | 2026-02-06 | **B1 Module 19 (Passiversatzformen) COMPLETE - 4 lessons!** |
@@ -382,6 +406,9 @@ Current: `B1-M20` (Subjektiver Gebrauch der Modalverben) - **MODULE COMPLETE - R
 19. [x] Complete B1 Module 18 (Irreale Vergleichssätze) - 4 lessons
 20. [x] Complete B1 Module 19 (Passiversatzformen) - 4 lessons
 21. [x] Complete B1 Module 20 (Subjektiver Gebrauch der Modalverben) - 4 lessons
-22. [ ] **User tests B1-M20 lessons**
-23. [ ] Plan B1 Module 21 topic
-24. [ ] Continue B1 curriculum development
+22. [x] **B1 COMPLETE - 20 modules, 80 lessons!**
+23. [x] Start B2 curriculum
+24. [x] Complete B2 Module 1 (Erweiterte Partizipialkonstruktionen) - 4 lessons
+25. [ ] **User tests B2-M01 lessons**
+26. [ ] Plan B2 Module 2 topic
+27. [ ] Continue B2 curriculum development
