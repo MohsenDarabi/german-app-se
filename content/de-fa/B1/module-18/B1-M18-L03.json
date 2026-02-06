@@ -1,0 +1,524 @@
+{
+  "id": "B1-M18-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Alternative Konstruktionen: als, als wenn, wie wenn", "fa": "ساختارهای جایگزین: als, als wenn, wie wenn" },
+  "description": "یاد بگیرید چگونه از ساختارهای جایگزین als ob برای بیان مقایسه‌های غیرواقعی استفاده کنید و تفاوت‌های سبکی آن‌ها را بشناسید.",
+  "level": "B1",
+  "module": 18,
+  "lessonNumber": 3,
+  "totalSteps": 45,
+  "estimatedMinutes": 25,
+  "vocabulary": [
+    { "de": "gerade so", "fa": "درست مثل اینکه", "grammar": { "pos": "adverb" } },
+    { "de": "genau so als ob", "fa": "دقیقاً انگار که", "grammar": { "pos": "phrase" } },
+    { "de": "der Ausdruck", "fa": "عبارت، اصطلاح", "grammar": { "pos": "noun", "gender": "masculine" } },
+    { "de": "die Konstruktion", "fa": "ساختار", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "literarisch", "fa": "ادبی", "grammar": { "pos": "adjective" } },
+    { "de": "umgangssprachlich", "fa": "محاوره‌ای", "grammar": { "pos": "adjective" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "سه ساختار برای یک معنی",
+      "content": "**Alternative Konstruktionen für irreale Vergleiche**\n\nدر آلمانی، سه ساختار معادل برای بیان مقایسه‌های غیرواقعی وجود دارد:\n\n**1. als ob + فعل در آخر:**\nEr tut so, **als ob** er müde **wäre**.\n\n**2. als wenn + فعل در آخر:**\nEr tut so, **als wenn** er müde **wäre**.\n\n**3. als + فعل بلافاصله بعد از als:**\nEr tut so, **als wäre** er müde.\n\n**همه به یک معنی هستند:**\nاو طوری رفتار می‌کند انگار که خسته است (ولی نیست).\n\n**تفاوت اصلی:**\n- als ob / als wenn = فعل در **آخر** جمله\n- als (تنها) = فعل **بلافاصله** بعد از als",
+      "examples": [
+        { "de": "Sie sieht aus, als ob sie krank wäre.", "fa": "او به نظر می‌رسد انگار مریض است." },
+        { "de": "Sie sieht aus, als wäre sie krank.", "fa": "او به نظر می‌رسد انگار مریض است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "der Ausdruck", "fa": "عبارت، اصطلاح" },
+      "example": { "text": { "de": "Diese drei Ausdrücke haben die gleiche Bedeutung.", "fa": "این سه عبارت معنی یکسانی دارند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Ausdruck",
+      "translation": "عبارت، اصطلاح",
+      "syllables": ["Aus", "druck"],
+      "distractors": ["Ous", "druk", "drick"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "die Konstruktion", "fa": "ساختار" },
+      "example": { "text": { "de": "Die Konstruktion mit 'als' ohne 'ob' ist literarischer.", "fa": "ساختار با 'als' بدون 'ob' ادبی‌تر است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Konstruktion",
+      "translation": "ساختار",
+      "syllables": ["Kon", "struk", "ti", "on"],
+      "distractors": ["Kun", "streck", "to", "an"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "literarisch", "fa": "ادبی" },
+      "example": { "text": { "de": "Die Form 'als wäre' klingt literarisch.", "fa": "فرم 'als wäre' ادبی به نظر می‌رسد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "literarisch",
+      "translation": "ادبی",
+      "syllables": ["li", "te", "ra", "risch"],
+      "distractors": ["le", "to", "re", "roch"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "als + فعل مستقیم (بدون ob)",
+      "content": "**ساختار ادبی با als (بدون ob)**\n\nوقتی از als بدون ob یا wenn استفاده می‌کنیم، فعل **بلافاصله** بعد از als می‌آید:\n\n**ترتیب کلمات:**\n```\nals + فعل + فاعل + بقیه جمله\n```\n\n**مثال‌ها:**\n- Er tat so, **als verstünde** er nichts.\n  (او طوری رفتار کرد انگار هیچی نمی‌فهمید.)\n\n- Sie sah aus, **als hätte** sie geweint.\n  (او به نظر می‌رسید انگار گریه کرده بود.)\n\n- Es klang, **als wäre** jemand im Haus.\n  (صدا طوری بود انگار کسی در خانه بود.)\n\n**نکته مهم:**\nاین ساختار **ادبی‌تر** و **رسمی‌تر** است. در مکالمه روزمره بیشتر از als ob استفاده می‌شود.",
+      "examples": [
+        { "de": "Er sprach, als wäre er ein Experte.", "fa": "او طوری صحبت کرد انگار متخصص است." },
+        { "de": "Sie lächelte, als wüsste sie ein Geheimnis.", "fa": "او لبخند زد انگار رازی می‌داند." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله از نظر گرامری درست است؟",
+      "options": [
+        "Er tut so, als ob wäre er müde.",
+        "Er tut so, als ob er müde wäre.",
+        "Er tut so, als ob er wäre müde.",
+        "Er tut so, als ob müde er wäre."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! با als ob فعل به آخر جمله می‌رود.", "incorrect": "با als ob فعل در آخر جمله قرار می‌گیرد: als ob er müde wäre." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام ساختار ادبی‌تر و رسمی‌تر است؟",
+      "options": [
+        "als ob + فعل در آخر",
+        "als wenn + فعل در آخر",
+        "als + فعل بلافاصله بعد",
+        "همه یکسان هستند"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "درست! ساختار 'als wäre er...' ادبی‌تر است.", "incorrect": "ساختار 'als + فعل مستقیم' (مثل als wäre er) ادبی‌تر و رسمی‌تر است." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "umgangssprachlich", "fa": "محاوره‌ای" },
+      "example": { "text": { "de": "'Als ob' ist umgangssprachlicher als 'als' allein.", "fa": "'Als ob' محاوره‌ای‌تر از 'als' تنها است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "umgangssprachlich",
+      "translation": "محاوره‌ای",
+      "syllables": ["um", "gangs", "sprach", "lich"],
+      "distractors": ["om", "ganks", "sprech", "lech"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "gerade so", "fa": "درست مثل اینکه" },
+      "example": { "text": { "de": "Es war gerade so, als ob ich träumen würde.", "fa": "درست مثل این بود که دارم خواب می‌بینم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "gerade",
+      "translation": "درست، دقیقاً",
+      "syllables": ["ge", "ra", "de"],
+      "distractors": ["ga", "ro", "da"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "genau so als ob", "fa": "دقیقاً انگار که" },
+      "example": { "text": { "de": "Er benimmt sich genau so, als ob er der Chef wäre.", "fa": "او دقیقاً طوری رفتار می‌کند انگار رئیس است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "genau",
+      "translation": "دقیقاً",
+      "syllables": ["ge", "nau"],
+      "distractors": ["ga", "nou", "nei"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er sieht aus, als {0} er krank {1}. (او به نظر مریض می‌رسد - با als بدون ob)",
+      "options": ["wäre", "ob", "wenn", "ist"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "با als بدون ob، فعل بلافاصله بعد از als می‌آید: als wäre er krank." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sie tut so, als ob sie nichts {0}. (او وانمود می‌کند هیچی نمی‌داند - wissen)",
+      "options": ["weiß", "wüsste", "wissen", "gewusst"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "بعد از als ob از Konjunktiv II استفاده می‌کنیم: als ob sie nichts wüsste." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Es klingt, als {0} er ein Profi {1}. (به نظر می‌رسد حرفه‌ای است - sein)",
+      "options": ["wäre", "ist", "ob", "wenn"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "با als تنها: als wäre er ein Profi (فعل بلافاصله بعد از als)." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "als wenn = als ob",
+      "content": "**als wenn به عنوان جایگزین als ob**\n\n'als wenn' دقیقاً مثل 'als ob' استفاده می‌شود و معنی یکسانی دارد:\n\n**مقایسه:**\n- als **ob** er schliefe = als **wenn** er schliefe\n  (انگار که خوابیده است)\n\n- als **ob** sie käme = als **wenn** sie käme\n  (انگار که می‌آید)\n\n**هر دو ساختار:**\n- فعل در **آخر** جمله\n- از **Konjunktiv II** استفاده می‌شود\n- در مکالمه روزمره رایج هستند\n\n**فرق جزئی:**\nدر بعضی مناطق آلمانی‌زبان، 'als wenn' رایج‌تر است، در بعضی مناطق 'als ob'. هر دو کاملاً درست هستند.\n\n**نکته:** 'wie wenn' هم گاهی استفاده می‌شود اما کمتر رایج است.",
+      "examples": [
+        { "de": "Er benimmt sich, als wenn er der König wäre.", "fa": "او طوری رفتار می‌کند انگار پادشاه است." },
+        { "de": "Sie spricht, als wenn sie alles wüsste.", "fa": "او طوری صحبت می‌کند انگار همه چیز را می‌داند." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید (ساختار als ob)",
+      "words": ["als", "er", "wäre", "ob", "müde"],
+      "correctOrder": [0, 3, 1, 4, 2],
+      "correctSentence": { "de": "als ob er müde wäre", "fa": "انگار که خسته است" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید (ساختار als بدون ob)",
+      "words": ["als", "er", "wäre", "müde"],
+      "correctOrder": [0, 2, 1, 3],
+      "correctSentence": { "de": "als wäre er müde", "fa": "انگار که خسته است" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید (ساختار als wenn)",
+      "words": ["wenn", "hätte", "sie", "als", "geweint"],
+      "correctOrder": [3, 0, 2, 4, 1],
+      "correctSentence": { "de": "als wenn sie geweint hätte", "fa": "انگار که گریه کرده بود" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "ساختارهای 'als ob'، 'als wenn' و 'als' تنها همه معنی یکسانی دارند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! هر سه ساختار برای بیان مقایسه غیرواقعی استفاده می‌شوند و معنی یکسانی دارند." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "در ساختار 'als wäre er müde'، فعل در آخر جمله قرار می‌گیرد.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! در ساختار als بدون ob، فعل بلافاصله بعد از als می‌آید: als wäre er (نه als er müde wäre)." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "ساختار 'als + فعل' (مثل als wäre) ادبی‌تر از als ob است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! ساختار als wäre ادبی‌تر و رسمی‌تر است، در حالی که als ob محاوره‌ای‌تر است." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در دفتر کار",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Zwei Kollegen sprechen über einen neuen Mitarbeiter", "fa": "دو همکار درباره یک کارمند جدید صحبت می‌کنند" }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Hast du den neuen Kollegen gesehen?", "fa": "همکار جدید را دیدی؟" }, "mood": "neutral" },
+        { "speaker": "Max", "text": { "de": "Ja, er benimmt sich, als ob er der Chef wäre!", "fa": "آره، او طوری رفتار می‌کند انگار رئیس است!" }, "mood": "surprised" },
+        { "speaker": "Anna", "text": { "de": "Genau! Er spricht, als wüsste er alles.", "fa": "دقیقاً! او طوری صحبت می‌کند انگار همه چیز را می‌داند." }, "mood": "confused" },
+        { "speaker": "Max", "text": { "de": "Und er gibt Befehle, als wenn er hier arbeiten würde seit Jahren.", "fa": "و او دستور می‌دهد انگار سال‌هاست اینجا کار می‌کند." }, "mood": "neutral" },
+        { "speaker": "Anna", "text": { "de": "Vielleicht sollten wir ihm sagen, dass er erst seit einer Woche hier ist!", "fa": "شاید باید بهش بگوییم که فقط یک هفته است اینجاست!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "همکار جدید چطور رفتار می‌کند؟", "options": ["مثل یک کارآموز", "مثل رئیس", "مثل مهمان"], "correctIndex": 1, "explanation": "ماکس گفت: 'als ob er der Chef wäre' - انگار رئیس است." },
+        { "question": "کدام ساختار در گفتگو استفاده شد؟", "options": ["فقط als ob", "فقط als wenn", "هر سه ساختار"], "correctIndex": 2, "explanation": "هر سه ساختار استفاده شد: als ob، als wüsste، als wenn." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sie lächelt, als wenn sie ein Geheimnis {0}. (او لبخند می‌زند انگار رازی دارد - haben)",
+      "options": ["hat", "hätte", "haben", "gehabt"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "بعد از als wenn از Konjunktiv II استفاده می‌کنیم: als wenn sie ein Geheimnis hätte." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er spricht Deutsch, als {0} er ein Muttersprachler {1}. (او آلمانی صحبت می‌کند انگار بومی است)",
+      "options": ["wäre", "ist", "ob", "wenn"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "با als تنها، فعل بلافاصله می‌آید: als wäre er ein Muttersprachler." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das Kind weint, als ob es großen Schmerz {0}. (بچه گریه می‌کند انگار درد زیادی دارد - haben)",
+      "options": ["hat", "hätte", "haben", "hatte"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "بعد از als ob از Konjunktiv II استفاده می‌کنیم: als ob es großen Schmerz hätte." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در رستوران",
+      "scene": {
+        "location": "restaurant",
+        "description": { "de": "Ein Gast bestellt beim Kellner", "fa": "یک مهمان از پیشخدمت سفارش می‌دهد" }
+      },
+      "lines": [
+        { "speaker": "Kellner", "text": { "de": "Guten Abend! Was darf es sein?", "fa": "شب بخیر! چی میل دارید؟" }, "mood": "neutral" },
+        { "speaker": "Gast", "text": { "de": "Ich möchte das Steak, aber es soll aussehen, als wäre es medium.", "fa": "استیک می‌خواهم، ولی باید به نظر برسد انگار مدیوم است." }, "mood": "neutral" },
+        { "speaker": "Kellner", "text": { "de": "Sie meinen, als ob es medium wäre, aber well done?", "fa": "منظورتان این است که انگار مدیوم است، ولی کاملاً پخته؟" }, "mood": "confused" },
+        { "speaker": "Gast", "text": { "de": "Genau! Und der Salat soll schmecken, als wenn er frisch gepflückt wäre.", "fa": "دقیقاً! و سالاد باید مزه‌ای داشته باشد انگار تازه چیده شده." }, "mood": "happy" },
+        { "speaker": "Kellner", "text": { "de": "Verstanden. Sie wünschen Perfektion!", "fa": "فهمیدم. شما کمال می‌خواهید!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "مهمان استیک را چطور می‌خواهد؟", "options": ["واقعاً مدیوم", "کاملاً پخته ولی شبیه مدیوم", "خام"], "correctIndex": 1, "explanation": "مهمان گفت: 'als wäre es medium' - به نظر برسد انگار مدیوم است (ولی نیست)." },
+        { "question": "چند ساختار مقایسه غیرواقعی در گفتگو استفاده شد؟", "options": ["یک", "دو", "سه"], "correctIndex": 2, "explanation": "سه ساختار: als wäre، als ob wäre، als wenn wäre." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "جمله‌ها را با ترجمه درست جفت کنید",
+      "items": [
+        { "id": "i1", "text": "als ob er schliefe" },
+        { "id": "i2", "text": "als wäre sie reich" },
+        { "id": "i3", "text": "als wenn ich träumte" },
+        { "id": "i4", "text": "als hätte er gewonnen" },
+        { "id": "i5", "text": "als ob wir Freunde wären" },
+        { "id": "i6", "text": "als käme sie aus Deutschland" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "انگار خوابیده است" },
+        { "id": "m2", "text": "انگار پولدار است" },
+        { "id": "m3", "text": "انگار دارم خواب می‌بینم" },
+        { "id": "m4", "text": "انگار برنده شده است" },
+        { "id": "m5", "text": "انگار دوست هستیم" },
+        { "id": "m6", "text": "انگار از آلمان می‌آید" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "او طوری رفتار می‌کند انگار همه چیز را می‌داند.",
+      "sentenceTemplate": "Er benimmt sich, als {0} er alles {1}.",
+      "options": ["ob", "wüsste", "weiß", "wenn"],
+      "correctAnswers": [1],
+      "correctTranslation": { "de": "Er benimmt sich, als wüsste er alles.", "fa": "او طوری رفتار می‌کند انگار همه چیز را می‌داند." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "به نظر می‌رسد انگار باران خواهد بارید.",
+      "sentenceTemplate": "Es sieht aus, als {0} es regnen {1}.",
+      "options": ["ob", "würde", "wird", "wenn"],
+      "correctAnswers": [1],
+      "correctTranslation": { "de": "Es sieht aus, als würde es regnen.", "fa": "به نظر می‌رسد انگار باران خواهد بارید." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: سه ساختار، یک معنی",
+      "passage": {
+        "de": "In der deutschen Sprache gibt es drei Möglichkeiten, irreale Vergleiche auszudrücken: 'als ob', 'als wenn' und 'als' allein.\n\nDie Konstruktion mit 'als ob' ist die häufigste im Alltag. Man sagt zum Beispiel: 'Er tut so, als ob er mich nicht kennen würde.' Das Verb steht am Ende des Satzes.\n\nDie Variante mit 'als wenn' bedeutet genau das Gleiche: 'Er tut so, als wenn er mich nicht kennen würde.' Auch hier steht das Verb am Ende.\n\nDie dritte Möglichkeit ist literarischer und eleganter: 'Er tut so, als würde er mich nicht kennen.' Hier folgt das Verb direkt nach 'als', ohne 'ob' oder 'wenn'.\n\nAlle drei Formen drücken aus, dass etwas nicht der Realität entspricht, sondern nur so erscheint.",
+        "fa": "در زبان آلمانی سه راه برای بیان مقایسه‌های غیرواقعی وجود دارد: 'als ob'، 'als wenn' و 'als' تنها.\n\nساختار با 'als ob' رایج‌ترین در زندگی روزمره است. مثلاً می‌گویند: 'او طوری رفتار می‌کند انگار مرا نمی‌شناسد.' فعل در آخر جمله قرار می‌گیرد.\n\nنوع 'als wenn' دقیقاً همان معنی را دارد. اینجا هم فعل در آخر است.\n\nسومین امکان ادبی‌تر و زیباتر است. اینجا فعل مستقیماً بعد از 'als' می‌آید، بدون 'ob' یا 'wenn'.\n\nهر سه فرم بیان می‌کنند که چیزی با واقعیت مطابقت ندارد، بلکه فقط به نظر می‌رسد."
+      },
+      "questions": [
+        { "question": "کدام ساختار در زندگی روزمره رایج‌تر است؟", "options": ["als تنها", "als ob", "als wenn"], "correctIndex": 1, "explanation": "متن می‌گوید: 'Die Konstruktion mit als ob ist die häufigste im Alltag.'" },
+        { "question": "در ساختار ادبی 'als + فعل'، فعل کجا قرار می‌گیرد؟", "options": ["در آخر جمله", "مستقیماً بعد از als", "قبل از als"], "correctIndex": 1, "explanation": "متن می‌گوید: 'Hier folgt das Verb direkt nach als.'" },
+        { "question": "همه این ساختارها چه چیزی را بیان می‌کنند؟", "options": ["واقعیت", "چیزی که واقعی نیست ولی به نظر می‌رسد", "آینده"], "correctIndex": 1, "explanation": "متن می‌گوید: 'dass etwas nicht der Realität entspricht, sondern nur so erscheint.'" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der falsche Millionär", "fa": "میلیونر دروغین" },
+      "characters": ["Thomas", "Kellnerin", "Freund"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Thomas geht in ein teures Restaurant. Er hat nicht viel Geld, aber er will beeindrucken.", "fa": "توماس به یک رستوران گران‌قیمت می‌رود. او پول زیادی ندارد، ولی می‌خواهد تحت تأثیر قرار دهد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Thomas",
+          "text": { "de": "Ich hätte gerne den teuersten Wein, bitte.", "fa": "لطفاً گران‌ترین شراب را می‌خواهم." },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Kellnerin",
+          "text": { "de": "Natürlich, mein Herr. Sie sprechen, als wären Sie ein Kenner!", "fa": "البته، آقا. شما طوری صحبت می‌کنید انگار متخصص هستید!" },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "چرا کلنر گفت 'als wären Sie ein Kenner'؟",
+          "options": ["چون توماس واقعاً متخصص است", "چون توماس طوری رفتار می‌کند انگار متخصص است", "چون شراب گران است"],
+          "correctIndex": 1,
+          "explanation": "'als wären' نشان می‌دهد که این یک مقایسه غیرواقعی است - توماس فقط به نظر می‌رسد متخصص است."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Thomas",
+          "text": { "de": "Oh ja, ich trinke diesen Wein ständig, als ob er Wasser wäre!", "fa": "اوه بله، من این شراب را مدام می‌نوشم، انگار آب است!" },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Freund",
+          "text": { "de": "Thomas! Ich dachte, du hättest kein Geld!", "fa": "توماس! فکر می‌کردم پول نداری!" },
+          "mood": "surprised"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Thomas",
+          "text": { "de": "Pssst! Tu so, als wenn du mich nicht kennen würdest!", "fa": "هیس! وانمود کن انگار مرا نمی‌شناسی!" },
+          "mood": "confused"
+        },
+        {
+          "type": "question",
+          "question": "توماس از دوستش چه خواست؟",
+          "options": ["که پول بدهد", "که وانمود کند او را نمی‌شناسد", "که شراب بخرد"],
+          "correctIndex": 1,
+          "explanation": "توماس گفت: 'Tu so, als wenn du mich nicht kennen würdest' - وانمود کن انگار مرا نمی‌شناسی."
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Am Ende musste Thomas alle Teller waschen, weil er nicht zahlen konnte. Er tat dabei so, als wäre es sein Hobby!", "fa": "در آخر توماس مجبور شد همه ظرف‌ها را بشوید، چون نمی‌توانست پرداخت کند. او در این حین طوری رفتار کرد انگار سرگرمی‌اش است!" }
+        },
+        {
+          "type": "question",
+          "question": "کدام ساختار در آخر داستان استفاده شد؟",
+          "options": ["als ob", "als wenn", "als wäre"],
+          "correctIndex": 2,
+          "explanation": "'als wäre es sein Hobby' - ساختار ادبی با als بدون ob."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: کدام ساختار؟",
+      "instruction": "انتخاب کنید!",
+      "questions": [
+        { "prompt": "... als ob er käme", "left": "فعل در آخر", "right": "فعل بعد از als", "correctSide": "left" },
+        { "prompt": "... als käme er", "left": "فعل در آخر", "right": "فعل بعد از als", "correctSide": "right" },
+        { "prompt": "... als wenn sie wüsste", "left": "فعل در آخر", "right": "فعل بعد از als", "correctSide": "left" },
+        { "prompt": "... als wäre ich reich", "left": "فعل در آخر", "right": "فعل بعد از als", "correctSide": "right" },
+        { "prompt": "als wäre - کدام سبک؟", "left": "ادبی", "right": "محاوره‌ای", "correctSide": "left" },
+        { "prompt": "als ob - کدام سبک؟", "left": "ادبی", "right": "محاوره‌ای", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Er tut so, als ob er mich nicht kennen würde.",
+      "translation": "او طوری رفتار می‌کند انگار مرا نمی‌شناسد."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Sie sieht aus, als wäre sie müde.",
+      "translation": "او به نظر می‌رسد انگار خسته است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Es klingt, als wenn jemand an der Tür wäre.",
+      "translation": "صدا طوری است انگار کسی پشت در است."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "'als ob' + فعل کجا؟", "options": ["آخر جمله", "بعد از als"], "correctAnswerIndex": 0 },
+        { "question": "'als' (تنها) + فعل کجا؟", "options": ["آخر جمله", "بعد از als"], "correctAnswerIndex": 1 },
+        { "question": "کدام ادبی‌تر است؟", "options": ["als wäre", "als ob wäre"], "correctAnswerIndex": 0 },
+        { "question": "'als wenn' = ?", "options": ["als ob", "als allein"], "correctAnswerIndex": 0 },
+        { "question": "Er tut so, als ___ er müde.", "options": ["wäre", "ist"], "correctAnswerIndex": 0 },
+        { "question": "Sie spricht, als ob sie alles ___.", "options": ["weiß", "wüsste"], "correctAnswerIndex": 1 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "als ob", "fa": "انگار که (محاوره‌ای)" },
+        { "de": "als wenn", "fa": "انگار که (معادل als ob)" },
+        { "de": "als wäre", "fa": "انگار که (ادبی)" },
+        { "de": "literarisch", "fa": "ادبی" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات مربوط به این درس را پیدا کنید",
+      "targetWords": ["Konstruktion", "literarisch", "Ausdruck", "umgangssprachlich", "genau", "gerade"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "literarisch", "fa": "ادبی", "options": ["محاوره‌ای", "ادبی", "رسمی", "عامیانه"], "correctIndex": 1 },
+        { "de": "die Konstruktion", "fa": "ساختار", "options": ["معنی", "ساختار", "عبارت", "جمله"], "correctIndex": 1 },
+        { "de": "umgangssprachlich", "fa": "محاوره‌ای", "options": ["ادبی", "رسمی", "محاوره‌ای", "علمی"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما سه ساختار جایگزین برای مقایسه‌های غیرواقعی را یاد گرفتید!",
+      "keyPoints": [
+        "als ob = als wenn = als (تنها) - هر سه معنی یکسانی دارند",
+        "als ob / als wenn: فعل در آخر جمله (als ob er müde wäre)",
+        "als (تنها): فعل بلافاصله بعد از als (als wäre er müde)",
+        "ساختار 'als + فعل' ادبی‌تر و رسمی‌تر است",
+        "ساختار 'als ob' در مکالمه روزمره رایج‌تر است",
+        "همه ساختارها از Konjunktiv II استفاده می‌کنند"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "der Ausdruck", "fa": "عبارت، اصطلاح" } },
+        { "word": { "de": "die Konstruktion", "fa": "ساختار" } },
+        { "word": { "de": "literarisch", "fa": "ادبی" } },
+        { "word": { "de": "umgangssprachlich", "fa": "محاوره‌ای" } },
+        { "word": { "de": "gerade so", "fa": "درست مثل اینکه" } },
+        { "word": { "de": "genau so als ob", "fa": "دقیقاً انگار که" } }
+      ]
+    }
+  ]
+}

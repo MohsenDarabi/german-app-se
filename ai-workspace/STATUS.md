@@ -8,7 +8,7 @@
 
 **Create B1 lessons - lesson by lesson, wait for user test after each**
 
-Current: `B1-M17` (Wortbildung) - **MODULE COMPLETE - READY FOR USER TEST**
+Current: `B1-M18` (Irreale Vergleichssätze) - **MODULE COMPLETE - READY FOR USER TEST**
 
 ---
 
@@ -26,7 +26,7 @@ Current: `B1-M17` (Wortbildung) - **MODULE COMPLETE - READY FOR USER TEST**
 |-------|---------|---------|--------|
 | A1 | 14 | 56+ | Complete |
 | A2 | 18 | 72 | **Complete** ✅ |
-| B1 | 17 | 68 | Module 17 complete |
+| B1 | 18 | 72 | Module 18 complete |
 
 ### A2 Completion (2026-02-05)
 
@@ -74,8 +74,9 @@ Current: `B1-M17` (Wortbildung) - **MODULE COMPLETE - READY FOR USER TEST**
 | M15 | Erweiterte Nebensätze | 4/4 | ✅ Complete |
 | M16 | Temporale Nebensätze | 4/4 | ✅ Complete |
 | M17 | Wortbildung | 4/4 | ✅ Complete |
+| M18 | Irreale Vergleichssätze | 4/4 | ✅ Complete |
 
-**Total B1: 68 lessons**
+**Total B1: 72 lessons**
 
 ---
 
@@ -266,10 +267,23 @@ Current: `B1-M17` (Wortbildung) - **MODULE COMPLETE - READY FOR USER TEST**
 
 ---
 
+## B1 Module 18: Irreale Vergleichssätze (Unreal Comparative Clauses)
+
+| Lesson | Title | Status |
+|--------|-------|--------|
+| B1-M18-L01 | als ob + Konjunktiv II Präsens (as if + present) | ✅ Complete |
+| B1-M18-L02 | als ob + Konjunktiv II Vergangenheit (as if + past) | ✅ Complete |
+| B1-M18-L03 | Alternative Konstruktionen (als, als wenn, wie wenn) | ✅ Complete |
+| B1-M18-L04 | Zusammenfassung | ✅ Complete |
+
+---
+
 ## Recent Changes
 
 | Date | Change |
 |------|--------|
+| 2026-02-06 | **B1 Module 18 (Irreale Vergleichssätze) COMPLETE - 4 lessons!** |
+| 2026-02-06 | Created B1-M18-L01 to L04 in parallel |
 | 2026-02-06 | **B1 Module 17 (Wortbildung) COMPLETE - 4 lessons!** |
 | 2026-02-06 | Created B1-M17-L01 to L04 in parallel |
 | 2026-02-06 | **B1 Module 16 (Temporale Nebensätze) COMPLETE - 4 lessons!** |
@@ -337,6 +351,7 @@ Current: `B1-M17` (Wortbildung) - **MODULE COMPLETE - READY FOR USER TEST**
 16. [x] Complete B1 Module 15 (Erweiterte Nebensätze) - 4 lessons
 17. [x] Complete B1 Module 16 (Temporale Nebensätze) - 4 lessons
 18. [x] Complete B1 Module 17 (Wortbildung) - 4 lessons
-19. [ ] **User tests B1-M17 lessons**
-20. [ ] Plan B1 Module 18 topic
-21. [ ] Continue B1 curriculum development
+19. [x] Complete B1 Module 18 (Irreale Vergleichssätze) - 4 lessons
+20. [ ] **User tests B1-M18 lessons**
+21. [ ] Plan B1 Module 19 topic
+22. [ ] Continue B1 curriculum development

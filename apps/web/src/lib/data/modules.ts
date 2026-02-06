@@ -1562,6 +1562,37 @@ const DE_FA_B1_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/B1/B1-M17-L04"
       }
     ]
+  },
+  {
+    id: "module-18",
+    title: "بخش ۱۸: جملات مقایسه‌ای غیرواقعی (Irreale Vergleichssätze)",
+    level: "B1",
+    lessons: [
+      {
+        id: "B1-M18-L01",
+        title: "als ob + Konjunktiv II Präsens - انگار که (حال)",
+        description: "یاد بگیرید ساختار als ob برای مقایسه‌های غیرواقعی با فعل کونیونکتیو دوم حال.",
+        path: "/learn/de-fa/B1/B1-M18-L01"
+      },
+      {
+        id: "B1-M18-L02",
+        title: "als ob + Konjunktiv II Vergangenheit - انگار که (گذشته)",
+        description: "یاد بگیرید ساختار als ob برای مقایسه‌های غیرواقعی با hätte/wäre + Partizip II.",
+        path: "/learn/de-fa/B1/B1-M18-L02"
+      },
+      {
+        id: "B1-M18-L03",
+        title: "als, als wenn, wie wenn - ساختارهای جایگزین",
+        description: "یاد بگیرید ساختارهای جایگزین als ob: استفاده از als، als wenn و wie wenn.",
+        path: "/learn/de-fa/B1/B1-M18-L03"
+      },
+      {
+        id: "B1-M18-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل جملات مقایسه‌ای غیرواقعی: als ob، als wenn، als و تمرین‌های ترکیبی.",
+        path: "/learn/de-fa/B1/B1-M18-L04"
+      }
+    ]
   }
 ];
 

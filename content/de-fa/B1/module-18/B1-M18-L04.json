@@ -1,0 +1,520 @@
+{
+  "id": "B1-M18-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Zusammenfassung: Irreale Vergleichssätze", "fa": "جمع‌بندی: جمله‌های مقایسه‌ای غیرواقعی" },
+  "description": "مرور تمام ساختارهای als ob، als wenn و als - ترکیب تمام مفاهیم درس‌های قبلی با تمرین‌های جامع و نکات کاربردی.",
+  "level": "B1",
+  "module": 18,
+  "lessonNumber": 4,
+  "totalSteps": 45,
+  "estimatedMinutes": 25,
+  "vocabulary": [
+    { "de": "zusammenfassen", "fa": "جمع‌بندی کردن", "grammar": { "pos": "verb" } },
+    { "de": "der Vergleich", "fa": "مقایسه", "grammar": { "pos": "noun", "gender": "masculine" } },
+    { "de": "vermeiden", "fa": "اجتناب کردن", "grammar": { "pos": "verb" } },
+    { "de": "die Verwechslung", "fa": "اشتباه گرفتن، خلط", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "anwenden", "fa": "به کار بردن", "grammar": { "pos": "verb" } },
+    { "de": "die Zusammenfassung", "fa": "جمع‌بندی، خلاصه", "grammar": { "pos": "noun", "gender": "feminine" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "مرور کلی: سه ساختار مقایسه‌ای غیرواقعی",
+      "content": "**Irreale Vergleichssätze - جمله‌های مقایسه‌ای غیرواقعی**\n\nدر این درس سه ساختار اصلی را یاد گرفتیم:\n\n**1. als ob + فعل در آخر:**\nEr tut so, **als ob** er müde **wäre**.\n(طوری رفتار می‌کند گویی خسته است.)\n\n**2. als wenn + فعل در آخر:**\nSie sieht aus, **als wenn** sie geweint **hätte**.\n(به نظر می‌رسد انگار گریه کرده است.)\n\n**3. als + فعل مستقیم (بدون ob/wenn):**\nEr tut so, **als wäre** er müde.\n(طوری رفتار می‌کند گویی خسته است.)\n\n**نکته مهم:** هر سه ساختار معنی یکسانی دارند! فقط ترتیب کلمات فرق می‌کند.",
+      "examples": [
+        { "de": "Er redet, als ob er alles wüsste.", "fa": "طوری حرف می‌زند گویی همه چیز را می‌داند." },
+        { "de": "Er redet, als wüsste er alles.", "fa": "طوری حرف می‌زند گویی همه چیز را می‌داند." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "zusammenfassen", "fa": "جمع‌بندی کردن" },
+      "example": { "text": { "de": "Lass mich die wichtigsten Punkte zusammenfassen.", "fa": "بگذار نکات مهم را جمع‌بندی کنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "zusammenfassen",
+      "translation": "جمع‌بندی کردن",
+      "syllables": ["zu", "sam", "men", "fas", "sen"],
+      "distractors": ["zo", "som", "fan", "fen"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "der Vergleich", "fa": "مقایسه" },
+      "example": { "text": { "de": "Der Vergleich mit 'als ob' ist sehr nützlich.", "fa": "مقایسه با 'als ob' بسیار مفید است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Vergleich",
+      "translation": "مقایسه",
+      "syllables": ["Ver", "gleich"],
+      "distractors": ["Fer", "glach", "glich"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s4",
+      "title": "فعل‌های رایج با als ob/als wenn/als",
+      "content": "**Verben mit irrealen Vergleichssätzen**\n\nاین فعل‌ها معمولاً با جمله‌های مقایسه‌ای غیرواقعی می‌آیند:\n\n**1. tun (als ob)** - وانمود کردن\nEr **tut so**, als ob er schliefe.\n\n**2. aussehen (als ob)** - به نظر رسیدن\nSie **sieht aus**, als ob sie krank wäre.\n\n**3. klingen (als ob)** - به نظر آمدن (صدا)\nDas **klingt**, als ob es regnen würde.\n\n**4. scheinen (als ob)** - به نظر آمدن\nEs **scheint**, als ob er Recht hätte.\n\n**5. sich fühlen (als ob)** - احساس کردن\nIch **fühle mich**, als ob ich fliegen könnte.\n\n**6. wirken (als ob)** - تأثیر گذاشتن، به نظر آمدن\nEr **wirkt**, als ob er müde wäre.",
+      "examples": [
+        { "de": "Sie tut so, als ob sie mich nicht kennen würde.", "fa": "طوری رفتار می‌کند گویی مرا نمی‌شناسد." },
+        { "de": "Das klingt, als ob du Probleme hättest.", "fa": "به نظر می‌آید که مشکلی داری." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله از نظر گرامری درست است؟",
+      "options": [
+        "Er tut so, als ob er müde ist.",
+        "Er tut so, als ob er müde wäre.",
+        "Er tut so, als ob er müde war.",
+        "Er tut so, als ob er müde sein."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! بعد از als ob باید Konjunktiv II بیاید: wäre", "incorrect": "بعد از als ob باید Konjunktiv II استفاده شود: als ob er müde wäre." }
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "vermeiden", "fa": "اجتناب کردن" },
+      "example": { "text": { "de": "Man sollte häufige Fehler vermeiden.", "fa": "باید از اشتباهات رایج اجتناب کرد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "vermeiden",
+      "translation": "اجتناب کردن",
+      "syllables": ["ver", "mei", "den"],
+      "distractors": ["fer", "mai", "dan"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را با فعل مناسب در Konjunktiv II پر کنید",
+      "sentence": "Er sieht aus, als ob er die ganze Nacht nicht {0}. (schlafen)",
+      "options": ["schläft", "geschlafen hätte", "schlafen würde", "schlief"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "برای بیان عمل گذشته از 'hätte + Partizip II' استفاده می‌کنیم: geschlafen hätte" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را با فعل مناسب در Konjunktiv II پر کنید",
+      "sentence": "Sie tut so, als {0} sie alles. (wissen - ساختار بدون ob)",
+      "options": ["weiß", "wüsste", "wissen würde", "gewusst hätte"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "در ساختار 'als + فعل مستقیم'، فعل بلافاصله بعد از als می‌آید: als wüsste sie" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را برای ساختن جمله با 'als ob' مرتب کنید",
+      "words": ["als ob", "Er", "so,", "tut", "reich", "wäre", "er"],
+      "correctOrder": [1, 3, 2, 0, 6, 5, 4],
+      "correctSentence": { "de": "Er tut so, als ob er reich wäre", "fa": "طوری رفتار می‌کند گویی پولدار است" }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "die Verwechslung", "fa": "اشتباه گرفتن، خلط" },
+      "example": { "text": { "de": "Eine häufige Verwechslung ist 'als ob' mit Indikativ.", "fa": "یک اشتباه رایج استفاده از 'als ob' با حالت اخباری است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "Verwechslung",
+      "translation": "اشتباه گرفتن",
+      "syllables": ["Ver", "wechs", "lung"],
+      "distractors": ["Fer", "wachs", "long"]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "جمله‌های با 'als ob' و 'als' دقیقاً معنی یکسانی دارند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! هر دو ساختار معنی یکسانی دارند. فقط ترتیب کلمات فرق می‌کند: 'als ob er käme' = 'als käme er'" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das klingt, {0} du Probleme {1}. (als ob + haben)",
+      "options": ["als ob", "hättest", "als", "hast"],
+      "correctAnswers": [0, 1],
+      "feedback": { "explanation": "ساختار صحیح: Das klingt, als ob du Probleme hättest." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در محل کار",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Zwei Kollegen sprechen über einen dritten Kollegen.", "fa": "دو همکار درباره همکار سومی صحبت می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Hast du Peter heute gesehen? Er sieht aus, als ob er krank wäre.", "fa": "امروز پیتر را دیدی؟ به نظر می‌رسد انگار مریض است." }, "mood": "confused" },
+        { "speaker": "Tom", "text": { "de": "Ja, er tut so, als hätte er die ganze Nacht nicht geschlafen.", "fa": "آره، طوری رفتار می‌کند گویی تمام شب نخوابیده." }, "mood": "neutral" },
+        { "speaker": "Anna", "text": { "de": "Er wirkt auch, als wäre er gestresst.", "fa": "همچنین به نظر می‌آید که استرس دارد." }, "mood": "sad" },
+        { "speaker": "Tom", "text": { "de": "Vielleicht sollten wir ihm helfen. Es scheint, als bräuchte er Unterstützung.", "fa": "شاید باید کمکش کنیم. به نظر می‌آید که به حمایت نیاز دارد." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "کدام ساختار در خط سوم استفاده شده است؟", "options": ["als ob + فعل در آخر", "als + فعل مستقیم", "als wenn + فعل در آخر"], "correctIndex": 1, "explanation": "'als wäre er gestresst' - فعل مستقیماً بعد از 'als' آمده است." },
+        { "question": "چرا در خط دوم 'hätte' استفاده شده؟", "options": ["برای بیان آینده", "برای بیان گذشته", "چون موضوع واقعی است"], "correctIndex": 1, "explanation": "'als hätte er nicht geschlafen' - چون عمل (نخوابیدن) در گذشته بوده است." }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "اشتباهات رایج و راه‌های اجتناب",
+      "content": "**Häufige Fehler - اشتباهات رایج**\n\n**1. استفاده از Indikativ به جای Konjunktiv II:**\n❌ Er tut so, als ob er müde **ist**.\n✅ Er tut so, als ob er müde **wäre**.\n\n**2. جایگاه اشتباه فعل:**\n❌ Er tut so, als ob **wäre** er müde.\n✅ Er tut so, als ob er müde **wäre**.\n\n**3. خلط ساختار als و als ob:**\n❌ Er tut so, als er müde wäre.\n✅ Er tut so, **als wäre** er müde. (فعل فوراً بعد از als)\n\n**4. فراموش کردن hätte/wäre در گذشته:**\n❌ Er sieht aus, als ob er nicht schlief.\n✅ Er sieht aus, als ob er nicht **geschlafen hätte**.\n\n**قاعده طلایی:**\n- **als ob/als wenn:** فعل به آخر جمله می‌رود\n- **als (تنها):** فعل فوراً بعد از als می‌آید",
+      "examples": [
+        { "de": "Sie redet, als ob sie alles wüsste.", "fa": "طوری حرف می‌زند گویی همه چیز را می‌داند. (als ob + آخر)" },
+        { "de": "Sie redet, als wüsste sie alles.", "fa": "طوری حرف می‌زند گویی همه چیز را می‌داند. (als + مستقیم)" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله اشتباه است؟",
+      "options": [
+        "Er tut so, als ob er reich wäre.",
+        "Er tut so, als wäre er reich.",
+        "Er tut so, als er reich wäre.",
+        "Er tut so, als wenn er reich wäre."
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! در ساختار 'als' بدون ob/wenn، فعل باید فوراً بعد از als بیاید: als wäre er", "incorrect": "'als er reich wäre' غلط است. باید بگوییم: 'als wäre er reich' (فعل فوراً بعد از als)" }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "anwenden", "fa": "به کار بردن" },
+      "example": { "text": { "de": "Jetzt können wir diese Struktur in der Praxis anwenden.", "fa": "حالا می‌توانیم این ساختار را در عمل به کار ببریم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "anwenden",
+      "translation": "به کار بردن",
+      "syllables": ["an", "wen", "den"],
+      "distractors": ["on", "wun", "dun"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sie fühlt sich, {0} sie fliegen {1}. (als ob + können)",
+      "options": ["als ob", "könnte", "als", "kann"],
+      "correctAnswers": [0, 1],
+      "feedback": { "explanation": "ساختار صحیح: Sie fühlt sich, als ob sie fliegen könnte." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "در ساختار 'als' (بدون ob)، فعل به آخر جمله می‌رود.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! در ساختار 'als' بدون ob، فعل فوراً بعد از als می‌آید: 'als wäre er' نه 'als er wäre'" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را برای ساختن جمله با 'als' (بدون ob) مرتب کنید",
+      "words": ["krank", "Sie", "als", "aus,", "sieht", "wäre", "sie"],
+      "correctOrder": [1, 4, 3, 2, 5, 6, 0],
+      "correctSentence": { "de": "Sie sieht aus, als wäre sie krank", "fa": "به نظر می‌رسد انگار مریض است" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جمله را با ساختار گذشته کامل کنید",
+      "sentence": "Er sieht aus, als ob er viel Geld {0} {1}. (verlieren - گذشته)",
+      "options": ["verloren", "hätte", "verliert", "würde"],
+      "correctAnswers": [0, 1],
+      "feedback": { "explanation": "برای گذشته: als ob + Partizip II + hätte/wäre → verloren hätte" }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "die Zusammenfassung", "fa": "جمع‌بندی، خلاصه" },
+      "example": { "text": { "de": "Hier ist eine Zusammenfassung der wichtigsten Regeln.", "fa": "اینجا جمع‌بندی مهم‌ترین قواعد است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Zusammenfassung",
+      "translation": "جمع‌بندی",
+      "syllables": ["Zu", "sam", "men", "fas", "sung"],
+      "distractors": ["Za", "som", "fan", "song"]
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "تمرین مکالمه",
+      "scene": {
+        "location": "cafe",
+        "description": { "de": "Zwei Freunde treffen sich im Café.", "fa": "دو دوست در کافه همدیگر را می‌بینند." }
+      },
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Du siehst aus, als hättest du gute Nachrichten!", "fa": "به نظر می‌آید خبر خوبی داری!" }, "mood": "excited" },
+        { "speaker": "Max", "text": { "de": "Ja! Ich habe die Prüfung bestanden. Ich fühle mich, als ob ich fliegen könnte!", "fa": "آره! امتحان را قبول شدم. احساس می‌کنم انگار می‌توانم پرواز کنم!" }, "mood": "happy" },
+        { "speaker": "Lisa", "text": { "de": "Das klingt, als wäre es eine schwere Prüfung gewesen.", "fa": "به نظر می‌آید امتحان سختی بوده." }, "mood": "neutral" },
+        { "speaker": "Max", "text": { "de": "Es war so schwer, als hätte ich nie Deutsch gelernt!", "fa": "انقدر سخت بود، گویی هرگز آلمانی یاد نگرفته‌ام!" }, "mood": "happy" },
+        { "speaker": "Lisa", "text": { "de": "Aber du hast es geschafft! Du redest jetzt, als wärst du ein Muttersprachler!", "fa": "اما موفق شدی! الان طوری حرف می‌زنی گویی زبان مادری‌ات است!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "در خط اول کدام ساختار استفاده شده؟", "options": ["als ob + فعل در آخر", "als + فعل مستقیم", "als wenn + فعل در آخر"], "correctIndex": 1, "explanation": "'als hättest du' - فعل مستقیماً بعد از 'als' آمده است." },
+        { "question": "چرا در خط چهارم 'hätte' به کار رفته؟", "options": ["عمل در حال انجام است", "عمل در گذشته بوده", "عمل در آینده خواهد بود"], "correctIndex": 1, "explanation": "'als hätte ich nie gelernt' - یادگیری عملی در گذشته بوده، پس از hätte + Partizip II استفاده شده." }
+      ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "می‌توان 'als ob' و 'als wenn' را به جای هم استفاده کرد.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! 'als ob' و 'als wenn' کاملاً قابل جایگزینی هستند و معنی یکسانی دارند." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را با ساختار مناسب پر کنید",
+      "sentence": "Er wirkt, {0} nichts passiert {1}. (als + sein در گذشته)",
+      "options": ["als", "wäre", "als ob", "gewesen"],
+      "correctAnswers": [0, 1],
+      "feedback": { "explanation": "با 'als' بدون ob، فعل فوراً می‌آید: als wäre nichts passiert" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را برای ساختن جمله با گذشته مرتب کنید",
+      "words": ["hätte", "als ob", "aus,", "Er", "viel", "sieht", "gearbeitet", "er"],
+      "correctOrder": [3, 5, 2, 1, 7, 4, 6, 0],
+      "correctSentence": { "de": "Er sieht aus, als ob er viel gearbeitet hätte", "fa": "به نظر می‌رسد انگار زیاد کار کرده است" }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "جمله‌های آلمانی را با معانی فارسی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Er tut so, als ob er schliefe." },
+        { "id": "i2", "text": "Sie sieht aus, als hätte sie geweint." },
+        { "id": "i3", "text": "Es klingt, als wäre es schwer." },
+        { "id": "i4", "text": "Er wirkt, als wüsste er nichts." },
+        { "id": "i5", "text": "Sie fühlt sich, als könnte sie alles." },
+        { "id": "i6", "text": "Es scheint, als hätte er Recht." }
+      ],
+      "matches": [
+        { "id": "m1", "text": "وانمود می‌کند که خوابیده است." },
+        { "id": "m2", "text": "به نظر می‌رسد گریه کرده است." },
+        { "id": "m3", "text": "به نظر می‌آید که سخت است." },
+        { "id": "m4", "text": "طوری به نظر می‌آید که هیچ نمی‌داند." },
+        { "id": "m5", "text": "احساس می‌کند همه کار می‌تواند بکند." },
+        { "id": "m6", "text": "به نظر می‌آید که حق با اوست." }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "طوری رفتار می‌کند گویی مرا نمی‌شناسد.",
+      "sentenceTemplate": "Er tut so, {0} {1} er mich nicht {2}.",
+      "options": ["als ob", "kennen würde", "als", "wäre", "könnte"],
+      "correctAnswers": [0, 4, 1],
+      "correctTranslation": { "de": "Er tut so, als ob er mich nicht kennen würde.", "fa": "طوری رفتار می‌کند گویی مرا نمی‌شناسد." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "به نظر می‌رسد انگار تمام شب نخوابیده است.",
+      "sentenceTemplate": "Sie sieht aus, {0} {1} sie die ganze Nacht nicht {2}.",
+      "options": ["als", "hätte", "geschlafen", "als ob", "wäre"],
+      "correctAnswers": [0, 1, 2],
+      "correctTranslation": { "de": "Sie sieht aus, als hätte sie die ganze Nacht nicht geschlafen.", "fa": "به نظر می‌رسد انگار تمام شب نخوابیده است." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: مصاحبه شغلی",
+      "passage": {
+        "de": "Maria hatte heute ein Vorstellungsgespräch. Sie war sehr nervös und sah aus, als hätte sie die ganze Nacht nicht geschlafen. Der Chef fragte viele schwierige Fragen. Maria antwortete, als wüsste sie alles über die Firma.\n\nDer Chef wirkte, als wäre er beeindruckt. Er sagte: \"Sie reden, als hätten Sie schon zehn Jahre Erfahrung!\" Maria fühlte sich, als könnte sie fliegen. Am Ende des Gesprächs schien es, als würde sie die Stelle bekommen.\n\nJetzt wartet Maria auf die Antwort. Sie tut so, als ob sie nicht nervös wäre, aber in Wirklichkeit ist sie sehr aufgeregt.",
+        "fa": "ماریا امروز مصاحبه شغلی داشت. خیلی عصبی بود و به نظر می‌رسید انگار تمام شب نخوابیده. رئیس سؤالات سخت زیادی پرسید. ماریا طوری جواب داد گویی همه چیز درباره شرکت می‌داند.\n\nرئیس طوری به نظر می‌رسید که تحت تأثیر قرار گرفته. گفت: «شما طوری صحبت می‌کنید گویی ده سال تجربه دارید!» ماریا احساس کرد می‌تواند پرواز کند. در پایان مکالمه به نظر می‌رسید که کار را خواهد گرفت.\n\nحالا ماریا منتظر جواب است. وانمود می‌کند که عصبی نیست، اما در واقع خیلی هیجان‌زده است."
+      },
+      "questions": [
+        { "question": "چند جمله مقایسه‌ای غیرواقعی در متن وجود دارد؟", "options": ["4", "6", "8"], "correctIndex": 2, "explanation": "8 ساختار: als hätte, als wüsste, als wäre, als hätten, als könnte, als würde, als ob...wäre و sah aus als" },
+        { "question": "کدام ساختار برای بیان گذشته استفاده شده؟", "options": ["als wäre", "als hätte...geschlafen", "als könnte"], "correctIndex": 1, "explanation": "'als hätte sie nicht geschlafen' برای بیان عمل گذشته (نخوابیدن) استفاده شده." },
+        { "question": "آیا ماریا واقعاً عصبی نیست؟", "options": ["بله، عصبی نیست", "خیر، فقط وانمود می‌کند", "معلوم نیست"], "correctIndex": 1, "explanation": "'tut so, als ob sie nicht nervös wäre' یعنی وانمود می‌کند - در واقع عصبی است." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der Schauspieler", "fa": "بازیگر" },
+      "characters": ["Klaus", "Regisseur"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Klaus ist Schauspieler. Heute hat er ein Casting für einen Film.", "fa": "کلاوس بازیگر است. امروز تست بازیگری برای یک فیلم دارد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Regisseur",
+          "text": { "de": "Klaus, Sie müssen so spielen, als ob Sie sehr traurig wären.", "fa": "کلاوس، باید طوری بازی کنید گویی خیلی غمگین هستید." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Klaus",
+          "text": { "de": "Verstanden. Ich werde so tun, als hätte ich alles verloren.", "fa": "فهمیدم. طوری رفتار می‌کنم گویی همه چیز را از دست داده‌ام." },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "کدام ساختار در جمله کلاوس استفاده شده؟",
+          "options": ["als ob + حال", "als + گذشته", "als hätte + Partizip II"],
+          "correctIndex": 2,
+          "explanation": "'als hätte ich verloren' - ساختار گذشته با hätte + Partizip II"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Klaus beginnt zu spielen. Er sieht aus, als wäre sein Herz gebrochen.", "fa": "کلاوس شروع به بازی می‌کند. به نظر می‌رسد قلبش شکسته است." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Regisseur",
+          "text": { "de": "Perfekt! Sie spielen, als wären Sie ein Oscar-Gewinner!", "fa": "عالی! طوری بازی می‌کنید گویی برنده اسکار هستید!" },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "چرا در 'als wären Sie' فعل مستقیماً بعد از als آمده؟",
+          "options": ["چون ob فراموش شده", "چون این ساختار بدون ob است", "چون جمله سؤالی است"],
+          "correctIndex": 1,
+          "explanation": "در ساختار 'als' بدون ob، فعل مستقیماً بعد از als می‌آید: als wären Sie"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Klaus",
+          "text": { "de": "Danke! Ich fühle mich, als könnte ich jede Rolle spielen!", "fa": "ممنون! احساس می‌کنم می‌توانم هر نقشی بازی کنم!" },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "کدام فعل با 'als ob' در این داستان استفاده شده؟",
+          "options": ["tun", "fühlen", "spielen"],
+          "correctIndex": 0,
+          "explanation": "'so tun, als ob' برای وانمود کردن استفاده می‌شود."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: ساختار صحیح",
+      "instruction": "ساختار درست را انتخاب کنید!",
+      "questions": [
+        { "prompt": "Er tut so, ___ er müde ___", "left": "als ob...wäre", "right": "als ob...ist", "correctSide": "left" },
+        { "prompt": "Sie sieht aus, ___ wäre sie krank", "left": "als ob", "right": "als", "correctSide": "right" },
+        { "prompt": "در گذشته: als ob er ___ hätte", "left": "geschlafen", "right": "schläft", "correctSide": "left" },
+        { "prompt": "فعل در 'als ob' کجا می‌رود؟", "left": "آخر جمله", "right": "بعد از ob", "correctSide": "left" },
+        { "prompt": "فعل در 'als' (تنها) کجا می‌رود؟", "left": "آخر جمله", "right": "بعد از als", "correctSide": "right" },
+        { "prompt": "'als ob' و 'als wenn'", "left": "معنی یکسان", "right": "معنی متفاوت", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Er tut so, als ob er alles wüsste.",
+      "translation": "طوری رفتار می‌کند گویی همه چیز را می‌داند."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Sie sieht aus, als hätte sie nicht geschlafen.",
+      "translation": "به نظر می‌رسد انگار نخوابیده است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Das klingt, als wäre es eine gute Idee.",
+      "translation": "به نظر می‌آید که ایده خوبی است."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: جمله‌های مقایسه‌ای",
+      "timeLimit": 90,
+      "questions": [
+        { "question": "'als ob' با چه حالتی می‌آید؟", "options": ["Konjunktiv II", "Indikativ"], "correctAnswerIndex": 0 },
+        { "question": "در 'als wäre er'، فعل کجاست؟", "options": ["بعد از als", "در آخر"], "correctAnswerIndex": 0 },
+        { "question": "برای گذشته از چه استفاده می‌کنیم؟", "options": ["hätte/wäre + Partizip II", "Präteritum"], "correctAnswerIndex": 0 },
+        { "question": "'Sie tut so, als ob sie ___ wäre'", "options": ["krank", "kranke"], "correctAnswerIndex": 0 },
+        { "question": "کدام درست است؟", "options": ["als wüsste er", "als er wüsste"], "correctAnswerIndex": 0 },
+        { "question": "'als ob' و 'als wenn'...", "options": ["قابل جایگزینی هستند", "متفاوت هستند"], "correctAnswerIndex": 0 },
+        { "question": "'aussehen' با چه ساختاری می‌آید؟", "options": ["als ob/als", "weil/dass"], "correctAnswerIndex": 0 },
+        { "question": "Er sieht aus, als ___ er müde.", "options": ["wäre", "ist"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: فعل‌ها و ساختارها",
+      "pairs": [
+        { "de": "tun als ob", "fa": "وانمود کردن" },
+        { "de": "aussehen als ob", "fa": "به نظر رسیدن" },
+        { "de": "klingen als ob", "fa": "صدا کردن مثل" },
+        { "de": "sich fühlen als ob", "fa": "احساس کردن" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات کلیدی این درس را پیدا کنید",
+      "targetWords": ["Vergleich", "vermeiden", "anwenden", "Zusammenfassung", "Verwechslung"],
+      "gridSize": { "rows": 10, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "zusammenfassen", "fa": "جمع‌بندی کردن", "options": ["تقسیم کردن", "جمع‌بندی کردن", "فراموش کردن", "نوشتن"], "correctIndex": 1 },
+        { "de": "vermeiden", "fa": "اجتناب کردن", "options": ["اجتناب کردن", "تکرار کردن", "درست کردن", "شروع کردن"], "correctIndex": 0 },
+        { "de": "die Verwechslung", "fa": "اشتباه گرفتن", "options": ["درست بودن", "اشتباه گرفتن", "یادگیری", "تمرین"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "تبریک! ماژول ۱۸ را کامل کردید!",
+      "message": "شما تمام ساختارهای جمله‌های مقایسه‌ای غیرواقعی را یاد گرفتید و می‌توانید از آنها استفاده کنید!",
+      "keyPoints": [
+        "سه ساختار اصلی: als ob + فعل در آخر، als wenn + فعل در آخر، als + فعل مستقیم",
+        "همیشه از Konjunktiv II استفاده می‌شود (wäre, hätte, könnte, wüsste...)",
+        "برای گذشته: hätte/wäre + Partizip II",
+        "فعل‌های رایج: tun als ob, aussehen, klingen, scheinen, sich fühlen, wirken",
+        "در 'als ob/als wenn' فعل به آخر می‌رود",
+        "در 'als' (تنها) فعل فوراً بعد از als می‌آید",
+        "اشتباه رایج: استفاده از Indikativ به جای Konjunktiv II"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "zusammenfassen", "fa": "جمع‌بندی کردن" } },
+        { "word": { "de": "der Vergleich", "fa": "مقایسه" } },
+        { "word": { "de": "vermeiden", "fa": "اجتناب کردن" } },
+        { "word": { "de": "die Verwechslung", "fa": "اشتباه گرفتن" } },
+        { "word": { "de": "anwenden", "fa": "به کار بردن" } },
+        { "word": { "de": "die Zusammenfassung", "fa": "جمع‌بندی، خلاصه" } }
+      ]
+    }
+  ]
+}

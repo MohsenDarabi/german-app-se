@@ -1,0 +1,511 @@
+{
+  "id": "B1-M18-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Irreale Vergleichssätze mit als ob + Konjunktiv II Vergangenheit", "fa": "جملات مقایسه غیرواقعی با als ob + گذشته التزامی دوم" },
+  "description": "یاد بگیرید چگونه با استفاده از als ob و زمان گذشته التزامی دوم (hätte/wäre + Partizip II) مقایسه‌های غیرواقعی در گذشته بسازید. این ساختار برای توصیف ظاهر و رفتارهایی که با واقعیت گذشته متفاوت است استفاده می‌شود.",
+  "level": "B1",
+  "module": 18,
+  "lessonNumber": 2,
+  "totalSteps": 45,
+  "estimatedMinutes": 25,
+  "vocabulary": [
+    { "de": "so tun als ob", "fa": "وانمود کردن انگار که", "grammar": { "pos": "phrase" } },
+    { "de": "aussehen als ob", "fa": "به نظر رسیدن انگار که", "grammar": { "pos": "phrase" } },
+    { "de": "klingen als ob", "fa": "صدا دادن انگار که", "grammar": { "pos": "phrase" } },
+    { "de": "sich verhalten als ob", "fa": "رفتار کردن انگار که", "grammar": { "pos": "phrase" } },
+    { "de": "wirken als ob", "fa": "به نظر آمدن انگار که", "grammar": { "pos": "phrase" } },
+    { "de": "scheinen als ob", "fa": "ظاهراً انگار که", "grammar": { "pos": "phrase" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "جملات مقایسه غیرواقعی گذشته با als ob",
+      "content": "**Irreale Vergleichssätze mit als ob + Konjunktiv II Vergangenheit**\n\nاین ساختار برای مقایسه چیزی با یک وضعیت غیرواقعی **در گذشته** استفاده می‌شود.\n\n**ساختار:**\nجمله اصلی + **als ob** + فاعل + ... + **Partizip II** + **hätte/wäre**\n\n**نکته مهم:** در جمله پیرو با als ob، فعل کمکی (hätte/wäre) به **آخر** می‌رود!\n\n**مقایسه:**\n- زمان حال: Er tut so, **als ob** er krank **wäre**. (انگار مریض است)\n- زمان گذشته: Er tat so, **als ob** er krank **gewesen wäre**. (انگار مریض بوده است)\n\n**hätte + Partizip II** برای فعل‌هایی که با haben صرف می‌شوند\n**wäre + Partizip II** برای فعل‌هایی که با sein صرف می‌شوند",
+      "examples": [
+        { "de": "Er tat so, als ob er nichts gewusst hätte.", "fa": "او طوری رفتار کرد انگار که چیزی نمی‌دانسته." },
+        { "de": "Sie sah aus, als ob sie die ganze Nacht nicht geschlafen hätte.", "fa": "او طوری به نظر می‌رسید انگار که تمام شب نخوابیده بود." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "so tun als ob", "fa": "وانمود کردن، طوری رفتار کردن انگار که" },
+      "example": { "text": { "de": "Er tut so, als ob er alles verstanden hätte.", "fa": "او طوری رفتار می‌کند انگار همه چیز را فهمیده." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "gewusst",
+      "translation": "دانسته (Partizip II از wissen)",
+      "syllables": ["ge", "wusst"],
+      "distractors": ["ga", "wust", "wisst"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "aussehen als ob", "fa": "به نظر رسیدن انگار که" },
+      "example": { "text": { "de": "Sie sah aus, als ob sie geweint hätte.", "fa": "به نظر می‌رسید انگار گریه کرده بود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "geweint",
+      "translation": "گریه کرده (Partizip II از weinen)",
+      "syllables": ["ge", "weint"],
+      "distractors": ["ga", "waint", "went"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "klingen als ob", "fa": "صدا دادن انگار که، به نظر رسیدن (از صدا)" },
+      "example": { "text": { "de": "Es klang, als ob er gelogen hätte.", "fa": "طوری به نظر می‌رسید (از صدایش) انگار دروغ گفته بود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "gelogen",
+      "translation": "دروغ گفته (Partizip II از lügen)",
+      "syllables": ["ge", "lo", "gen"],
+      "distractors": ["ga", "lu", "gon"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "ترتیب کلمات در جمله als ob گذشته",
+      "content": "**ترتیب کلمات - Wortstellung**\n\nدر جمله پیرو با als ob:\n1. **als ob** در ابتدا\n2. **فاعل** بلافاصله بعد از als ob\n3. **سایر اجزا** (مفعول، قید، ...)\n4. **Partizip II** قبل از آخر\n5. **hätte/wäre** در آخر\n\n**مثال:**\nEr tat so, **als ob** [فاعل] **er** [مفعول] **das** [قید] **nicht** [Partizip II] **gewusst** [hätte] **hätte**.\n\n**مقایسه با زمان حال:**\n- حال: als ob er krank **wäre** (فقط یک فعل)\n- گذشته: als ob er krank **gewesen wäre** (دو جزء فعلی)\n\n**توجه:** Partizip II درست قبل از hätte/wäre قرار می‌گیرد!",
+      "examples": [
+        { "de": "Sie sprach, als ob sie alles vergessen hätte.", "fa": "او طوری صحبت کرد انگار همه چیز را فراموش کرده بود." },
+        { "de": "Er lächelte, als ob nichts passiert wäre.", "fa": "او لبخند زد انگار که هیچ اتفاقی نیفتاده بود." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله از نظر گرامری درست است؟",
+      "options": [
+        "Er tat so, als ob er hätte nichts gewusst.",
+        "Er tat so, als ob er nichts gewusst hätte.",
+        "Er tat so, als ob er nichts hätte gewusst.",
+        "Er tat so, als ob gewusst hätte er nichts."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! Partizip II (gewusst) قبل از hätte می‌آید و hätte در آخر جمله است.", "incorrect": "در جمله als ob، ترتیب درست این است: als ob + فاعل + ... + Partizip II + hätte/wäre" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "چه زمانی از «wäre + Partizip II» استفاده می‌کنیم؟",
+      "options": [
+        "برای همه فعل‌ها",
+        "برای فعل‌هایی که با haben صرف می‌شوند",
+        "برای فعل‌هایی که با sein صرف می‌شوند",
+        "فقط برای فعل sein"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "درست! فعل‌هایی مثل kommen, gehen, fahren, passieren که با sein صرف می‌شوند، در این ساختار wäre می‌گیرند.", "incorrect": "فعل‌هایی که در Perfekt با sein می‌آیند (مثل ist gekommen)، در Konjunktiv II گذشته هم wäre می‌گیرند." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "sich verhalten als ob", "fa": "رفتار کردن انگار که" },
+      "example": { "text": { "de": "Er verhielt sich, als ob er der Chef gewesen wäre.", "fa": "او طوری رفتار کرد انگار رئیس بوده است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "verhalten",
+      "translation": "رفتار کردن",
+      "syllables": ["ver", "hal", "ten"],
+      "distractors": ["fer", "hol", "tan"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "wirken als ob", "fa": "به نظر آمدن انگار که" },
+      "example": { "text": { "de": "Sie wirkte, als ob sie das schon erlebt hätte.", "fa": "به نظر می‌رسید انگار این را قبلاً تجربه کرده بود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "erlebt",
+      "translation": "تجربه کرده",
+      "syllables": ["er", "lebt"],
+      "distractors": ["ar", "labt", "libt"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "scheinen als ob", "fa": "به نظر رسیدن انگار که" },
+      "example": { "text": { "de": "Es schien, als ob er die Wahrheit gesagt hätte.", "fa": "به نظر می‌رسید انگار حقیقت را گفته بود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Wahrheit",
+      "translation": "حقیقت",
+      "syllables": ["Wahr", "heit"],
+      "distractors": ["War", "hait", "hat"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er tat so, als ob er nichts {0} {1}. (او طوری رفتار کرد انگار چیزی نشنیده بود - hören)",
+      "options": ["gehört", "hätte", "hörte", "hat"],
+      "correctAnswers": [0, 1],
+      "feedback": { "explanation": "hören با haben صرف می‌شود: gehört hätte" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sie sah aus, als ob sie lange {0} {1}. (به نظر می‌رسید انگار زیاد دویده بود - laufen)",
+      "options": ["gelaufen", "wäre", "hätte", "lief"],
+      "correctAnswers": [0, 1],
+      "feedback": { "explanation": "laufen با sein صرف می‌شود: gelaufen wäre" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "بعد از جلسه",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Nach einer Besprechung im Büro.", "fa": "بعد از یک جلسه در دفتر کار." }
+      },
+      "lines": [
+        { "speaker": "Maria", "text": { "de": "Hast du gesehen, wie Peter reagiert hat?", "fa": "دیدی پیتر چطور واکنش نشان داد؟" }, "mood": "confused" },
+        { "speaker": "Thomas", "text": { "de": "Ja, er tat so, als ob er von dem Problem nichts gewusst hätte.", "fa": "آره، طوری رفتار کرد انگار از مشکل چیزی نمی‌دانست." }, "mood": "surprised" },
+        { "speaker": "Maria", "text": { "de": "Dabei hatte ich ihm letzte Woche alles erklärt!", "fa": "در حالی که هفته پیش همه چیز را برایش توضیح داده بودم!" }, "mood": "angry" },
+        { "speaker": "Thomas", "text": { "de": "Er verhielt sich, als ob das Gespräch nie stattgefunden hätte.", "fa": "او طوری رفتار کرد انگار آن گفتگو هرگز صورت نگرفته بود." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "پیتر چطور رفتار کرد؟", "options": ["انگار همه چیز را می‌دانست", "انگار چیزی نمی‌دانست", "انگار عصبانی بود"], "correctIndex": 1, "explanation": "توماس گفت: Er tat so, als ob er von dem Problem nichts gewusst hätte." },
+        { "question": "چرا ماریا عصبانی است؟", "options": ["چون پیتر دیر آمد", "چون قبلاً توضیح داده بود ولی پیتر وانمود کرد نمی‌داند", "چون جلسه لغو شد"], "correctIndex": 1, "explanation": "ماریا گفت: Dabei hatte ich ihm letzte Woche alles erklärt!" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["als", "nichts", "hätte.", "passiert", "Er", "lächelte,", "ob", "wäre"],
+      "correctOrder": [4, 5, 0, 6, 3, 7, 1, 2],
+      "correctSentence": { "de": "Er lächelte, als ob nichts passiert wäre hätte.", "fa": "او لبخند زد انگار هیچ اتفاقی نیفتاده بود." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["ob", "hätte.", "gewusst", "als", "sie", "alles", "Sie", "sprach,"],
+      "correctOrder": [6, 7, 3, 0, 4, 5, 2, 1],
+      "correctSentence": { "de": "Sie sprach, als ob sie alles gewusst hätte.", "fa": "او طوری صحبت کرد انگار همه چیز را می‌دانست." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "کلمات را مرتب کنید",
+      "words": ["aus,", "geweint", "sah", "als", "hätte.", "Sie", "ob", "sie"],
+      "correctOrder": [5, 2, 0, 3, 6, 7, 1, 4],
+      "correctSentence": { "de": "Sie sah aus, als ob sie geweint hätte.", "fa": "به نظر می‌رسید انگار گریه کرده بود." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جمله «als ob er gekommen wäre»، از wäre استفاده شده چون kommen با sein صرف می‌شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! فعل‌هایی که در Perfekt با sein می‌آیند (ist gekommen)، در Konjunktiv II Vergangenheit هم wäre می‌گیرند." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جمله als ob، فعل کمکی (hätte/wäre) در جایگاه دوم قرار می‌گیرد.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! در جمله پیرو با als ob، فعل کمکی به آخر جمله می‌رود: als ob er das gewusst hätte." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "جمله «Er tat so, als ob er krank gewesen wäre» در زمان گذشته است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! gewesen wäre نشان‌دهنده Konjunktiv II Vergangenheit است (انگار مریض بوده بود)." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "مقایسه حال و گذشته در als ob",
+      "content": "**مقایسه زمان حال و گذشته**\n\n**زمان حال (Konjunktiv II Präsens):**\nفقط یک فعل در آخر\n- Er tut so, als ob er krank **wäre**.\n- Sie sieht aus, als ob sie müde **wäre**.\n\n**زمان گذشته (Konjunktiv II Vergangenheit):**\nPartizipII + hätte/wäre در آخر\n- Er tat so, als ob er krank **gewesen wäre**.\n- Sie sah aus, als ob sie **gearbeitet hätte**.\n\n**چه موقع گذشته؟**\nوقتی عمل als ob در گذشته اتفاق افتاده باشد:\n- Er sieht aus, als ob er **geschlafen hätte**. (الان به نظر می‌رسد انگار قبلاً خوابیده بوده)\n- Sie sprach, als ob sie alles **gewusst hätte**. (آن موقع صحبت کرد انگار قبلاً می‌دانسته)",
+      "examples": [
+        { "de": "Sie tut so, als ob sie reich wäre. (حال)", "fa": "طوری رفتار می‌کند انگار پولدار است." },
+        { "de": "Sie tat so, als ob sie reich gewesen wäre. (گذشته)", "fa": "طوری رفتار کرد انگار پولدار بوده است." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Das Kind verhielt sich, als ob es das Spielzeug nicht {0} {1}. (بچه طوری رفتار کرد انگار اسباب‌بازی را نشکسته بود - kaputt machen)",
+      "options": ["kaputt gemacht", "hätte", "wäre", "machte"],
+      "correctAnswers": [0, 1],
+      "feedback": { "explanation": "kaputt machen با haben صرف می‌شود: kaputt gemacht hätte" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Er sprach so, als ob er in Deutschland {0} {1}. (او طوری صحبت کرد انگار در آلمان زندگی کرده بود - leben)",
+      "options": ["gelebt", "hätte", "wäre", "lebte"],
+      "correctAnswers": [0, 1],
+      "feedback": { "explanation": "leben با haben صرف می‌شود: gelebt hätte" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Sie wirkte, als ob sie gerade erst {0} {1}. (به نظر می‌رسید انگار تازه از خواب بلند شده بود - aufwachen)",
+      "options": ["aufgewacht", "wäre", "hätte", "wachte"],
+      "correctAnswers": [0, 1],
+      "feedback": { "explanation": "aufwachen با sein صرف می‌شود: aufgewacht wäre" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جای خالی را پر کنید",
+      "sentence": "Es klang, als ob jemand die Tür {0} {1}. (به نظر می‌رسید انگار کسی در را باز کرده بود - öffnen)",
+      "options": ["geöffnet", "hätte", "wäre", "öffnete"],
+      "correctAnswers": [0, 1],
+      "feedback": { "explanation": "öffnen با haben صرف می‌شود: geöffnet hätte" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در مهمانی",
+      "scene": {
+        "location": "party",
+        "description": { "de": "Auf einer Party. Anna und Lukas beobachten einen Gast.", "fa": "در یک مهمانی. آنا و لوکاس یک مهمان را مشاهده می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Sieh mal, Michael sieht so müde aus.", "fa": "ببین، میشائل خیلی خسته به نظر می‌رسد." }, "mood": "neutral" },
+        { "speaker": "Lukas", "text": { "de": "Ja, er sieht aus, als ob er die ganze Nacht nicht geschlafen hätte.", "fa": "آره، به نظر می‌رسد انگار تمام شب نخوابیده بود." }, "mood": "sad" },
+        { "speaker": "Anna", "text": { "de": "Und seine Augen sind rot. Es scheint, als ob er geweint hätte.", "fa": "و چشم‌هایش قرمز است. به نظر می‌رسد انگار گریه کرده بود." }, "mood": "sad" },
+        { "speaker": "Lukas", "text": { "de": "Er verhält sich auch komisch, als ob etwas Schlimmes passiert wäre.", "fa": "رفتارش هم عجیب است، انگار اتفاق بدی افتاده بود." }, "mood": "sad" }
+      ],
+      "questions": [
+        { "question": "میشائل چطور به نظر می‌رسد؟", "options": ["خوشحال", "خسته", "عصبانی"], "correctIndex": 1, "explanation": "لوکاس گفت: Er sieht aus, als ob er die ganze Nacht nicht geschlafen hätte." },
+        { "question": "چرا فکر می‌کنند اتفاق بدی افتاده؟", "options": ["چون دیر آمده", "چون رفتارش عجیب است و چشم‌هایش قرمز است", "چون چیزی نمی‌گوید"], "correctIndex": 1, "explanation": "آنا گفت چشم‌هایش قرمز است و لوکاس گفت رفتارش عجیب است." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "جمله‌های آلمانی را با معنی فارسی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "als ob er gelogen hätte" },
+        { "id": "i2", "text": "als ob sie geweint hätte" },
+        { "id": "i3", "text": "als ob nichts passiert wäre" },
+        { "id": "i4", "text": "als ob er es gewusst hätte" },
+        { "id": "i5", "text": "als ob sie gekommen wäre" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "انگار دروغ گفته بود" },
+        { "id": "m2", "text": "انگار گریه کرده بود" },
+        { "id": "m3", "text": "انگار هیچ اتفاقی نیفتاده بود" },
+        { "id": "m4", "text": "انگار آن را می‌دانست" },
+        { "id": "m5", "text": "انگار آمده بود" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "او طوری رفتار کرد انگار چیزی نشنیده بود.",
+      "sentenceTemplate": "Er tat so, als ob er nichts {0} {1}.",
+      "options": ["gehört", "hätte", "hörte", "wäre"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Er tat so, als ob er nichts gehört hätte.", "fa": "او طوری رفتار کرد انگار چیزی نشنیده بود." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "به نظر می‌رسید انگار اتفاق بدی افتاده بود.",
+      "sentenceTemplate": "Es schien, als ob etwas Schlimmes {0} {1}.",
+      "options": ["passiert", "wäre", "hätte", "passierte"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Es schien, als ob etwas Schlimmes passiert wäre.", "fa": "به نظر می‌رسید انگار اتفاق بدی افتاده بود." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: رفتار عجیب",
+      "passage": {
+        "de": "Gestern auf der Arbeit benahm sich mein Kollege sehr seltsam. Er tat so, als ob er die E-Mail vom Chef nicht gelesen hätte. Dabei weiß ich, dass er sie am Morgen geöffnet hat. Er sah aus, als ob er die ganze Nacht nicht geschlafen hätte, und wirkte nervös. Als ich ihn fragte, was los sei, antwortete er, als ob nichts passiert wäre. Aber seine Stimme klang, als ob er etwas verbergen würde. Später erfuhr ich, dass er einen großen Fehler gemacht hatte und sich verhielt, als ob er von nichts gewusst hätte.",
+        "fa": "دیروز در محل کار همکارم خیلی عجیب رفتار کرد. طوری رفتار کرد انگار ایمیل رئیس را نخوانده بود. در حالی که می‌دانم صبح آن را باز کرده بود. به نظر می‌رسید انگار تمام شب نخوابیده بود و عصبی به نظر می‌رسید. وقتی پرسیدم چه شده، طوری جواب داد انگار هیچ اتفاقی نیفتاده بود. اما صدایش طوری بود انگار چیزی را پنهان می‌کند. بعداً فهمیدم که اشتباه بزرگی کرده بود و طوری رفتار می‌کرد انگار از هیچ چیز خبر نداشت."
+      },
+      "questions": [
+        { "question": "همکار چگونه با ایمیل رئیس برخورد کرد؟", "options": ["فوری جواب داد", "وانمود کرد نخوانده", "آن را به دیگران نشان داد"], "correctIndex": 1, "explanation": "متن گفت: Er tat so, als ob er die E-Mail nicht gelesen hätte." },
+        { "question": "چرا همکار اینطور رفتار کرد؟", "options": ["چون خسته بود", "چون اشتباه بزرگی کرده بود", "چون از رئیس ناراحت بود"], "correctIndex": 1, "explanation": "متن گفت: Er hatte einen großen Fehler gemacht." },
+        { "question": "کدام جمله als ob با زمان گذشته در متن نیست؟", "options": ["als ob er nicht geschlafen hätte", "als ob nichts passiert wäre", "als ob er etwas verbergen würde"], "correctIndex": 2, "explanation": "würde نشان‌دهنده Konjunktiv II حال است، نه گذشته." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Das verschwundene Geld", "fa": "پول گمشده" },
+      "characters": ["Stefan", "Lisa", "Chef"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Im Büro fehlte Geld aus der Kasse. Der Chef war wütend.", "fa": "در دفتر پول از صندوق گم شده بود. رئیس عصبانی بود." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Chef",
+          "text": { "de": "Wer war gestern Abend im Büro?", "fa": "دیشب چه کسی در دفتر بود؟" },
+          "mood": "angry"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Stefan",
+          "text": { "de": "Ich war es nicht. Ich bin früh gegangen.", "fa": "من نبودم. زود رفتم." },
+          "mood": "confused"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Stefan sah aus, als ob er die ganze Nacht nicht geschlafen hätte.", "fa": "استفان به نظر می‌رسید انگار تمام شب نخوابیده بود." }
+        },
+        {
+          "type": "question",
+          "question": "چرا استفان خسته به نظر می‌رسید؟",
+          "options": ["چون زیاد کار کرده بود", "شاید چیزی را پنهان می‌کرد", "چون بیمار بود"],
+          "correctIndex": 1,
+          "explanation": "ظاهر خسته و رفتار عصبی او نشان می‌دهد شاید چیزی را پنهان می‌کند."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Stefan, du verhältst dich, als ob du etwas wüsstest.", "fa": "استفان، طوری رفتار می‌کنی انگار چیزی می‌دانی." },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Stefan",
+          "text": { "de": "Ich? Nein! Ich tue so, als ob nichts passiert wäre, weil wirklich nichts passiert ist!", "fa": "من؟ نه! طوری رفتار می‌کنم انگار هیچ اتفاقی نیفتاده چون واقعاً هیچ اتفاقی نیفتاده!" },
+          "mood": "angry"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Aber seine Stimme klang, als ob er gelogen hätte.", "fa": "اما صدایش طوری بود انگار دروغ گفته بود." }
+        },
+        {
+          "type": "question",
+          "question": "کدام جمله Konjunktiv II Vergangenheit دارد؟",
+          "options": ["als ob du etwas wüsstest", "als ob nichts passiert wäre", "هر دو"],
+          "correctIndex": 1,
+          "explanation": "passiert wäre (گذشته) در مقابل wüsstest (حال)"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: hätte یا wäre؟",
+      "instruction": "کدام فعل کمکی درست است؟",
+      "questions": [
+        { "prompt": "geschlafen ___", "left": "hätte", "right": "wäre", "correctSide": "left" },
+        { "prompt": "gekommen ___", "left": "hätte", "right": "wäre", "correctSide": "right" },
+        { "prompt": "gesagt ___", "left": "hätte", "right": "wäre", "correctSide": "left" },
+        { "prompt": "passiert ___", "left": "hätte", "right": "wäre", "correctSide": "right" },
+        { "prompt": "gewusst ___", "left": "hätte", "right": "wäre", "correctSide": "left" },
+        { "prompt": "gefahren ___", "left": "hätte", "right": "wäre", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Er tat so, als ob er nichts gewusst hätte.",
+      "translation": "او طوری رفتار کرد انگار چیزی نمی‌دانست."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Sie sah aus, als ob sie geweint hätte.",
+      "translation": "به نظر می‌رسید انگار گریه کرده بود."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Er lächelte, als ob nichts passiert wäre.",
+      "translation": "او لبخند زد انگار هیچ اتفاقی نیفتاده بود."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "schlafen با کدام فعل کمکی؟", "options": ["hätte", "wäre"], "correctAnswerIndex": 0 },
+        { "question": "kommen با کدام فعل کمکی؟", "options": ["hätte", "wäre"], "correctAnswerIndex": 1 },
+        { "question": "ترتیب درست: als ob er ___ gewusst", "options": ["nichts hätte", "hätte nichts"], "correctAnswerIndex": 0 },
+        { "question": "passieren با کدام فعل کمکی؟", "options": ["hätte", "wäre"], "correctAnswerIndex": 1 },
+        { "question": "کدام گذشته است؟", "options": ["als ob er müde wäre", "als ob er müde gewesen wäre"], "correctAnswerIndex": 1 },
+        { "question": "sagen با کدام فعل کمکی؟", "options": ["hätte", "wäre"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه",
+      "pairs": [
+        { "de": "gewusst hätte", "fa": "می‌دانسته بود" },
+        { "de": "passiert wäre", "fa": "اتفاق افتاده بود" },
+        { "de": "geweint hätte", "fa": "گریه کرده بود" },
+        { "de": "gekommen wäre", "fa": "آمده بود" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات مربوط به این درس را پیدا کنید",
+      "targetWords": ["hätte", "wäre", "gewusst", "passiert", "geweint", "gelogen"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "so tun als ob", "fa": "وانمود کردن", "options": ["گفتن", "وانمود کردن", "دیدن", "شنیدن"], "correctIndex": 1 },
+        { "de": "aussehen als ob", "fa": "به نظر رسیدن", "options": ["به نظر رسیدن", "صدا دادن", "رفتار کردن", "فکر کردن"], "correctIndex": 0 },
+        { "de": "sich verhalten als ob", "fa": "رفتار کردن", "options": ["دیدن", "گفتن", "رفتار کردن", "شنیدن"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما جملات مقایسه غیرواقعی گذشته با als ob را یاد گرفتید!",
+      "keyPoints": [
+        "ساختار: als ob + فاعل + ... + Partizip II + hätte/wäre",
+        "hätte برای فعل‌هایی که با haben صرف می‌شوند (gesagt hätte)",
+        "wäre برای فعل‌هایی که با sein صرف می‌شوند (gekommen wäre)",
+        "فعل کمکی (hätte/wäre) همیشه در آخر جمله als ob قرار می‌گیرد",
+        "مقایسه: حال (als ob er müde wäre) vs گذشته (als ob er müde gewesen wäre)",
+        "کاربرد: برای توصیف ظاهر و رفتارهای غیرواقعی در گذشته"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "so tun als ob", "fa": "وانمود کردن" } },
+        { "word": { "de": "aussehen als ob", "fa": "به نظر رسیدن" } },
+        { "word": { "de": "klingen als ob", "fa": "صدا دادن انگار که" } },
+        { "word": { "de": "sich verhalten als ob", "fa": "رفتار کردن" } },
+        { "word": { "de": "wirken als ob", "fa": "به نظر آمدن" } },
+        { "word": { "de": "scheinen als ob", "fa": "ظاهراً" } }
+      ]
+    }
+  ]
+}
