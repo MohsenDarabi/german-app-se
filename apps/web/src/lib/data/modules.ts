@@ -1752,6 +1752,37 @@ const DE_FA_B2_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/B2/B2-M03-L04"
       }
     ]
+  },
+  {
+    id: "module-04",
+    title: "بخش ۴: Passiv-Alternativen",
+    level: "B2",
+    lessons: [
+      {
+        id: "B2-M04-L01",
+        title: "sich lassen + Infinitiv - جایگزین مجهول با lassen",
+        description: "یاد بگیرید ساختار 'Das lässt sich machen' به جای 'Das kann gemacht werden'.",
+        path: "/learn/de-fa/B2/B2-M04-L01"
+      },
+      {
+        id: "B2-M04-L02",
+        title: "sein + zu + Infinitiv - ساختار الزام یا امکان",
+        description: "یاد بگیرید 'Die Aufgabe ist zu erledigen' برای بیان باید یا می‌توان.",
+        path: "/learn/de-fa/B2/B2-M04-L02"
+      },
+      {
+        id: "B2-M04-L03",
+        title: "Weitere Strukturen - ساختارهای بیشتر",
+        description: "یاد بگیرید صفات -bar/-lich، bleiben + Partizip II و es gibt + zu.",
+        path: "/learn/de-fa/B2/B2-M04-L03"
+      },
+      {
+        id: "B2-M04-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل همه جایگزین‌های مجهول: sich lassen، sein + zu، -bar/-lich.",
+        path: "/learn/de-fa/B2/B2-M04-L04"
+      }
+    ]
   }
 ];
 

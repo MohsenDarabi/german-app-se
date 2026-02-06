@@ -1,0 +1,524 @@
+{
+  "id": "B2-M04-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Passiv-Alternativen: sein + zu + Infinitiv", "fa": "جایگزین‌های مجهول: sein + zu + مصدر" },
+  "description": "یاد بگیرید چگونه از ساختار «sein + zu + مصدر» به عنوان جایگزین مجهول استفاده کنید. این ساختار می‌تواند معنای ضرورت (müssen) یا امکان (können) را بیان کند.",
+  "level": "B2",
+  "module": 4,
+  "lessonNumber": 2,
+  "totalSteps": 45,
+  "estimatedMinutes": 30,
+  "vocabulary": [
+    { "de": "erledigen", "fa": "انجام دادن، به پایان رساندن", "grammar": { "pos": "verb" } },
+    { "de": "verstehen", "fa": "فهمیدن، درک کردن", "grammar": { "pos": "verb" } },
+    { "de": "glauben", "fa": "باور کردن", "grammar": { "pos": "verb" } },
+    { "de": "die Aufgabe", "fa": "تکلیف، وظیفه", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "die Notwendigkeit", "fa": "ضرورت، لزوم", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "die Möglichkeit", "fa": "امکان، احتمال", "grammar": { "pos": "noun", "gender": "feminine" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "sein + zu + Infinitiv چیست؟",
+      "content": "**ساختار sein + zu + Infinitiv**\n\nاین ساختار یک **جایگزین مجهول** (Passiv-Alternativ) است که در آلمانی رسمی و نوشتاری خیلی رایج است.\n\n**ساختار:**\n- **sein** (صرف‌شده) + **zu** + **Infinitiv**\n\n**مثال پایه:**\n- Die Aufgabe **ist zu erledigen**.\n  = Die Aufgabe **muss erledigt werden**.\n  (این تکلیف باید انجام شود.)\n\n**دو معنای اصلی:**\n\n| ساختار | معنا | معادل |\n|--------|------|-------|\n| ist zu + Infinitiv | ضرورت | muss ... werden |\n| ist zu + Infinitiv | امکان | kann ... werden |\n\n**نکته کلیدی:** از بافت جمله مشخص می‌شود که ضرورت است یا امکان!",
+      "examples": [
+        { "de": "Die Aufgabe ist zu erledigen.", "fa": "این تکلیف باید انجام شود." },
+        { "de": "Das ist nicht zu glauben!", "fa": "این باورنکردنی است! (نمی‌توان باور کرد)" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "erledigen", "fa": "انجام دادن، به پایان رساندن" },
+      "example": { "text": { "de": "Diese Arbeit ist bis morgen zu erledigen.", "fa": "این کار باید تا فردا انجام شود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "erledigen",
+      "translation": "انجام دادن",
+      "syllables": ["er", "le", "di", "gen"],
+      "distractors": ["ar", "la", "du", "gan"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "verstehen", "fa": "فهمیدن، درک کردن" },
+      "example": { "text": { "de": "Der Text ist leicht zu verstehen.", "fa": "متن به راحتی قابل درک است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "verstehen",
+      "translation": "فهمیدن",
+      "syllables": ["ver", "ste", "hen"],
+      "distractors": ["vor", "sta", "han"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "glauben", "fa": "باور کردن" },
+      "example": { "text": { "de": "Das ist kaum zu glauben.", "fa": "این به سختی قابل باور است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "glauben",
+      "translation": "باور کردن",
+      "syllables": ["glau", "ben"],
+      "distractors": ["glo", "ban"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "ضرورت (Notwendigkeit) با sein + zu + Infinitiv",
+      "content": "**بیان ضرورت (müssen)**\n\nوقتی چیزی **باید انجام شود**، از این ساختار استفاده می‌کنیم:\n\n**ساختار:**\n- X **ist zu** + Infinitiv = X **muss** ... **werden**\n\n**مثال‌ها:**\n\n| sein + zu + Inf. | معادل با müssen + Passiv |\n|------------------|-------------------------|\n| Die Arbeit **ist zu erledigen**. | Die Arbeit **muss erledigt werden**. |\n| Das Formular **ist auszufüllen**. | Das Formular **muss ausgefüllt werden**. |\n| Der Bericht **ist einzureichen**. | Der Bericht **muss eingereicht werden**. |\n\n**کجا رایج است؟**\n- متون اداری و رسمی\n- دستورالعمل‌ها\n- قوانین و مقررات\n\n**توجه:** این ساختار خیلی رسمی‌تر و مختصرتر از مجهول با müssen است!",
+      "examples": [
+        { "de": "Die Rechnung ist sofort zu bezahlen.", "fa": "فاکتور باید فورا پرداخت شود." },
+        { "de": "Diese Regel ist zu beachten.", "fa": "این قانون باید رعایت شود." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "جمله «Die Aufgabe ist zu erledigen» به چه معناست؟",
+      "options": [
+        "تکلیف انجام شده است",
+        "تکلیف باید انجام شود",
+        "تکلیف را می‌توان انجام داد",
+        "تکلیف انجام نمی‌شود"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! این جمله بیان‌کننده ضرورت است: Die Aufgabe muss erledigt werden.", "incorrect": "این ساختار معمولا بیان‌کننده ضرورت است: باید انجام شود (muss ... werden)." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله با «sein + zu + Infinitiv» بیان ضرورت می‌کند؟",
+      "options": [
+        "Das ist nicht zu glauben!",
+        "Der Vertrag ist bis morgen zu unterschreiben.",
+        "Der Film ist gut zu verstehen.",
+        "Das Problem ist schwer zu lösen."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "درست! قرارداد باید تا فردا امضا شود - این ضرورت است.", "incorrect": "جمله دوم بیان‌کننده یک تکلیف و وظیفه است: Der Vertrag muss unterschrieben werden." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "die Aufgabe", "fa": "تکلیف، وظیفه" },
+      "example": { "text": { "de": "Die Aufgabe ist bis Freitag zu erledigen.", "fa": "تکلیف باید تا جمعه انجام شود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "Aufgabe",
+      "translation": "تکلیف",
+      "syllables": ["Auf", "ga", "be"],
+      "distractors": ["Uf", "go", "ba"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "die Notwendigkeit", "fa": "ضرورت، لزوم" },
+      "example": { "text": { "de": "Die Notwendigkeit dieser Maßnahme ist zu betonen.", "fa": "ضرورت این اقدام باید تاکید شود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "Notwendigkeit",
+      "translation": "ضرورت",
+      "syllables": ["Not", "wen", "dig", "keit"],
+      "distractors": ["Nat", "wan", "dag", "kait"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "die Möglichkeit", "fa": "امکان، احتمال" },
+      "example": { "text": { "de": "Die Möglichkeit ist nicht zu unterschätzen.", "fa": "این امکان را نباید دست کم گرفت." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Möglichkeit",
+      "translation": "امکان",
+      "syllables": ["Mög", "lich", "keit"],
+      "distractors": ["Mag", "loch", "kait"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "فرم درست را انتخاب کنید",
+      "sentence": "Die E-Mail {0} heute noch zu beantworten.",
+      "options": ["ist", "sind", "hat", "wird"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "چون Die E-Mail مفرد است، از 'ist' استفاده می‌کنیم: Die E-Mail ist zu beantworten = باید پاسخ داده شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "ساختار sein + zu + Infinitiv را کامل کنید",
+      "sentence": "Diese Dokumente {0} bis morgen {1}.",
+      "options": ["sind", "ist", "einzureichen", "eingereicht"],
+      "correctAnswers": [0, 2],
+      "feedback": { "explanation": "چون Dokumente جمع است: sind + zu + Infinitiv (einzureichen). این اسناد باید تا فردا تحویل داده شوند." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "ساختار درست را انتخاب کنید",
+      "sentence": "Der Fehler ist sofort zu {0}.",
+      "options": ["korrigieren", "korrigiert", "korrigierend", "korrigierung"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "بعد از 'zu' همیشه Infinitiv می‌آید: ist zu korrigieren = muss korrigiert werden" }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "امکان (Möglichkeit) با sein + zu + Infinitiv",
+      "content": "**بیان امکان یا عدم امکان (können)**\n\nوقتی درباره **امکان** یا **عدم امکان** صحبت می‌کنیم، معمولا با این کلمات می‌آید:\n\n**سیگنال‌های امکان:**\n- **leicht** (آسان)\n- **schwer** (سخت)\n- **kaum** (به سختی)\n- **nicht** (نه)\n- **gut** (خوب)\n\n**مثال‌ها:**\n\n| sein + zu + Inf. | معادل با können + Passiv |\n|------------------|-------------------------|\n| Das ist **leicht zu verstehen**. | Das **kann leicht verstanden werden**. |\n| Das ist **nicht zu glauben**! | Das **kann nicht geglaubt werden**! |\n| Das Problem ist **schwer zu lösen**. | Das Problem **kann schwer gelöst werden**. |\n\n**منفی‌سازی:**\n- Das ist **nicht** zu machen = Das kann nicht gemacht werden\n- Das ist **kaum** zu glauben = Das kann kaum geglaubt werden\n\n**نکته:** بدون این سیگنال‌ها، معمولا ضرورت (müssen) منظور است!",
+      "examples": [
+        { "de": "Die Schrift ist kaum zu lesen.", "fa": "این خط به سختی خوانده می‌شود." },
+        { "de": "Das Rätsel ist leicht zu lösen.", "fa": "این معما به راحتی قابل حل است." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "کدام قید نشان‌دهنده امکان است؟",
+      "sentence": "Der Text ist {0} zu verstehen.",
+      "options": ["morgen", "leicht", "immer", "dort"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "'leicht' (آسان) نشان می‌دهد که درباره امکان صحبت می‌کنیم: kann leicht verstanden werden" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "ساختار امکان را کامل کنید",
+      "sentence": "Das ist {0} zu glauben!",
+      "options": ["nicht", "sehr", "immer", "heute"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "'nicht' نشان می‌دهد که این غیرممکن است: Das kann nicht geglaubt werden = این باورنکردنی است!" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "این جمله بیان‌کننده چیست؟",
+      "sentence": "Das Problem ist schwer zu lösen. → این مشکل به سختی قابل {0} است.",
+      "options": ["حل", "ایجاد", "فراموشی", "تکرار"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "schwer zu lösen = به سختی قابل حل = kann schwer gelöst werden" }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در دفتر کار",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Büro eines Unternehmens", "fa": "در دفتر یک شرکت" }
+      },
+      "lines": [
+        { "speaker": "Chef", "text": { "de": "Diese Aufgabe ist bis morgen zu erledigen.", "fa": "این تکلیف باید تا فردا انجام شود." }, "mood": "neutral" },
+        { "speaker": "Mitarbeiter", "text": { "de": "Ist das wirklich zu schaffen? Das ist sehr viel Arbeit!", "fa": "آیا واقعا امکان‌پذیر است؟ این خیلی کار زیاد است!" }, "mood": "confused" },
+        { "speaker": "Chef", "text": { "de": "Der Bericht ist wichtig und ist unbedingt einzureichen.", "fa": "گزارش مهم است و حتما باید تحویل داده شود." }, "mood": "neutral" },
+        { "speaker": "Mitarbeiter", "text": { "de": "Verstehe. Die Deadline ist also nicht zu verschieben?", "fa": "متوجه شدم. پس مهلت قابل تغییر نیست؟" }, "mood": "sad" },
+        { "speaker": "Chef", "text": { "de": "Leider nicht. Aber das Team kann helfen - zusammen ist es zu schaffen!", "fa": "متاسفانه نه. اما تیم می‌تواند کمک کند - با هم امکان‌پذیر است!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "در جمله اول، «ist zu erledigen» بیان‌کننده چیست؟", "options": ["امکان", "ضرورت", "گذشته"], "correctIndex": 1, "explanation": "رئیس می‌گوید این تکلیف باید انجام شود - این یک ضرورت است." },
+        { "question": "در «ist nicht zu verschieben» چه بیان می‌شود؟", "options": ["این امکان ندارد که تغییر کند", "این باید تغییر کند", "این تغییر کرده"], "correctIndex": 0, "explanation": "با 'nicht' معنای عدم امکان بیان می‌شود: kann nicht verschoben werden" }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را با sein + zu + Infinitiv مرتب کنید",
+      "words": ["erledigen", "Aufgabe", "zu", "ist", "Die"],
+      "correctOrder": [4, 1, 3, 2, 0],
+      "correctSentence": { "de": "Die Aufgabe ist zu erledigen.", "fa": "این تکلیف باید انجام شود." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را با سیگنال امکان مرتب کنید",
+      "words": ["verstehen", "zu", "leicht", "ist", "Text", "Der"],
+      "correctOrder": [5, 4, 3, 2, 1, 0],
+      "correctSentence": { "de": "Der Text ist leicht zu verstehen.", "fa": "متن به راحتی قابل درک است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله منفی را مرتب کنید",
+      "words": ["glauben", "nicht", "ist", "Das", "zu"],
+      "correctOrder": [3, 2, 1, 4, 0],
+      "correctSentence": { "de": "Das ist nicht zu glauben.", "fa": "این باورنکردنی است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "ساختار «sein + zu + Infinitiv» فقط بیان‌کننده ضرورت است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! این ساختار هم ضرورت (müssen) و هم امکان (können) را بیان می‌کند - بافت جمله تعیین‌کننده است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "وقتی قیدهایی مثل «leicht» یا «schwer» در جمله باشد، معمولا امکان بیان می‌شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! قیدهایی مثل leicht, schwer, kaum, nicht معمولا نشان‌دهنده امکان یا عدم امکان هستند." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "جمله «Die Rechnung ist zu bezahlen» یعنی: فاکتور پرداخت شده است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! این جمله یعنی: فاکتور باید پرداخت شود (Die Rechnung muss bezahlt werden). این ضرورت است، نه گذشته!" }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "درس آلمانی",
+      "scene": {
+        "location": "classroom",
+        "description": { "de": "Im Deutschkurs für Fortgeschrittene", "fa": "در کلاس آلمانی سطح پیشرفته" }
+      },
+      "lines": [
+        { "speaker": "Lehrer", "text": { "de": "Heute lernen wir eine elegante Alternative zum Passiv.", "fa": "امروز یک جایگزین زیبا برای مجهول یاد می‌گیریم." }, "mood": "excited" },
+        { "speaker": "Schülerin", "text": { "de": "Können Sie ein Beispiel geben?", "fa": "می‌توانید یک مثال بدهید؟" }, "mood": "neutral" },
+        { "speaker": "Lehrer", "text": { "de": "Klar! 'Das ist leicht zu verstehen' statt 'Das kann leicht verstanden werden'.", "fa": "البته! 'Das ist leicht zu verstehen' به جای 'Das kann leicht verstanden werden'." }, "mood": "happy" },
+        { "speaker": "Schüler", "text": { "de": "Ah, das ist viel kürzer! Und wann bedeutet es 'müssen'?", "fa": "آها، این خیلی کوتاه‌تر است! و کی معنای 'müssen' می‌دهد؟" }, "mood": "surprised" },
+        { "speaker": "Lehrer", "text": { "de": "Ohne Wörter wie 'leicht' oder 'nicht'. Z.B.: 'Die Arbeit ist zu erledigen.'", "fa": "بدون کلماتی مثل 'leicht' یا 'nicht'. مثلا: 'Die Arbeit ist zu erledigen.'" }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "چرا این ساختار زیبا (elegant) است؟", "options": ["چون پیچیده‌تر است", "چون کوتاه‌تر است", "چون قدیمی‌تر است"], "correctIndex": 1, "explanation": "این ساختار kürzer (کوتاه‌تر) و مختصرتر از مجهول کامل است." },
+        { "question": "چه زمانی معنای müssen دارد؟", "options": ["وقتی 'leicht' در جمله باشد", "وقتی 'nicht' در جمله باشد", "وقتی بدون این سیگنال‌ها باشد"], "correctIndex": 2, "explanation": "بدون قیدهایی مثل leicht, schwer, nicht، معمولا ضرورت (müssen) بیان می‌شود." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "جمله‌های sein + zu + Infinitiv را با معادل مجهول جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Die Aufgabe ist zu erledigen." },
+        { "id": "i2", "text": "Das ist leicht zu verstehen." },
+        { "id": "i3", "text": "Das ist nicht zu glauben." },
+        { "id": "i4", "text": "Der Bericht ist einzureichen." },
+        { "id": "i5", "text": "Das Problem ist schwer zu lösen." },
+        { "id": "i6", "text": "Die Regel ist zu beachten." }
+      ],
+      "matches": [
+        { "id": "m1", "text": "muss erledigt werden" },
+        { "id": "m2", "text": "kann leicht verstanden werden" },
+        { "id": "m3", "text": "kann nicht geglaubt werden" },
+        { "id": "m4", "text": "muss eingereicht werden" },
+        { "id": "m5", "text": "kann schwer gelöst werden" },
+        { "id": "m6", "text": "muss beachtet werden" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "این متن به راحتی قابل درک است.",
+      "sentenceTemplate": "Dieser Text ist {0} zu verstehen.",
+      "options": ["leicht", "morgen", "immer", "dort"],
+      "correctAnswers": [0],
+      "correctTranslation": { "de": "Dieser Text ist leicht zu verstehen.", "fa": "این متن به راحتی قابل درک است." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "این کار باید فورا انجام شود.",
+      "sentenceTemplate": "Diese Arbeit {0} sofort zu {1}.",
+      "options": ["ist", "sind", "erledigen", "erledigt"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Diese Arbeit ist sofort zu erledigen.", "fa": "این کار باید فورا انجام شود." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: دستورالعمل اداری",
+      "passage": {
+        "de": "Hinweise für Antragsteller:\n\nDas Antragsformular ist vollständig auszufüllen. Unvollständige Anträge sind nicht zu bearbeiten. Alle Dokumente sind in Kopie einzureichen - Originale sind nicht zu schicken.\n\nDie Bearbeitungszeit ist schwer zu schätzen, da sie von der Anzahl der Anträge abhängt. Bei Fragen ist der Kundendienst unter folgender Nummer zu erreichen: 0800-123456.\n\nBitte beachten Sie: Falsche Angaben sind strafbar und können nicht korrigiert werden.",
+        "fa": "راهنمای متقاضیان:\n\nفرم درخواست باید کاملا پر شود. درخواست‌های ناقص پردازش نمی‌شوند. تمام مدارک باید به صورت کپی تحویل داده شوند - اصل مدارک نباید فرستاده شود.\n\nزمان پردازش به سختی قابل تخمین است، زیرا به تعداد درخواست‌ها بستگی دارد. در صورت سوال، خدمات مشتریان در شماره زیر قابل دسترس است: 0800-123456.\n\nلطفا توجه کنید: اطلاعات نادرست قابل مجازات است و قابل تصحیح نیست."
+      },
+      "questions": [
+        { "question": "«ist auszufüllen» در این متن بیان‌کننده چیست؟", "options": ["امکان", "ضرورت", "گذشته"], "correctIndex": 1, "explanation": "در متون اداری، این ساختار معمولا ضرورت (muss ausgefüllt werden) را بیان می‌کند." },
+        { "question": "چرا نوشته «schwer zu schätzen»؟", "options": ["چون ممنوع است", "چون امکان دقیق وجود ندارد", "چون لازم نیست"], "correctIndex": 1, "explanation": "با 'schwer' معنای امکان بیان می‌شود: به سختی می‌توان تخمین زد." },
+        { "question": "چند بار از ساختار sein + zu + Infinitiv استفاده شده؟", "options": ["3 بار", "5 بار", "7 بار"], "correctIndex": 2, "explanation": "7 مورد: auszufüllen, zu bearbeiten, einzureichen, zu schicken, zu schätzen, zu erreichen, korrigiert werden (البته آخری فرم متفاوت دارد)" }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der schwierige Auftrag", "fa": "سفارش دشوار" },
+      "characters": ["Anna", "Herr Müller"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Anna arbeitet in einer Marketingagentur. Heute bekommt sie einen neuen Auftrag.", "fa": "آنا در یک آژانس بازاریابی کار می‌کند. امروز یک سفارش جدید می‌گیرد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Herr Müller",
+          "text": { "de": "Anna, dieser Bericht ist bis morgen fertigzustellen.", "fa": "آنا، این گزارش باید تا فردا تکمیل شود." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Bis morgen? Das ist kaum zu schaffen!", "fa": "تا فردا؟ این به سختی امکان‌پذیر است!" },
+          "mood": "surprised"
+        },
+        {
+          "type": "question",
+          "question": "در جمله آنا، «kaum zu schaffen» چه معنایی دارد؟",
+          "options": ["باید انجام شود", "به سختی امکان‌پذیر است", "قبلا انجام شده"],
+          "correctIndex": 1,
+          "explanation": "با 'kaum' معنای عدم امکان یا سختی بیان می‌شود: kann kaum geschafft werden"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Herr Müller",
+          "text": { "de": "Ich weiß, aber die Deadline ist nicht zu verschieben.", "fa": "می‌دانم، اما مهلت قابل تغییر نیست." },
+          "mood": "sad"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Ist Hilfe zu bekommen? Vielleicht kann Max helfen.", "fa": "آیا کمک قابل دریافت است؟ شاید ماکس بتواند کمک کند." },
+          "mood": "confused"
+        },
+        {
+          "type": "question",
+          "question": "«ist nicht zu verschieben» یعنی چه؟",
+          "options": ["نمی‌توان تغییر داد", "باید تغییر داد", "تغییر داده شده"],
+          "correctIndex": 0,
+          "explanation": "با 'nicht' عدم امکان بیان می‌شود: kann nicht verschoben werden"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Herr Müller",
+          "text": { "de": "Gute Idee! Zusammen ist das Projekt gut zu meistern.", "fa": "ایده خوبی! با هم پروژه به خوبی قابل انجام است." },
+          "mood": "happy"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Anna und Max arbeiten zusammen. Am Ende ist der Bericht perfekt - und pünktlich!", "fa": "آنا و ماکس با هم کار می‌کنند. در نهایت گزارش عالی است - و به موقع!" }
+        },
+        {
+          "type": "question",
+          "question": "این داستان چه درسی درباره زبان آلمانی دارد؟",
+          "options": ["فقط ضرورت مهم است", "sein + zu + Infinitiv هم ضرورت و هم امکان را بیان می‌کند", "این ساختار فقط در محاوره استفاده می‌شود"],
+          "correctIndex": 1,
+          "explanation": "در این داستان هم ضرورت (ist fertigzustellen) و هم امکان (kaum zu schaffen, gut zu meistern) دیدیم."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: ضرورت یا امکان؟",
+      "instruction": "این جمله بیان‌کننده ضرورت (müssen) است یا امکان (können)؟",
+      "questions": [
+        { "prompt": "Die Aufgabe ist zu erledigen.", "left": "ضرورت", "right": "امکان", "correctSide": "left" },
+        { "prompt": "Das ist leicht zu verstehen.", "left": "ضرورت", "right": "امکان", "correctSide": "right" },
+        { "prompt": "Der Bericht ist einzureichen.", "left": "ضرورت", "right": "امکان", "correctSide": "left" },
+        { "prompt": "Das ist nicht zu glauben!", "left": "ضرورت", "right": "امکان", "correctSide": "right" },
+        { "prompt": "Die Regel ist zu beachten.", "left": "ضرورت", "right": "امکان", "correctSide": "left" },
+        { "prompt": "Das Problem ist schwer zu lösen.", "left": "ضرورت", "right": "امکان", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Die Aufgabe ist zu erledigen.",
+      "translation": "این تکلیف باید انجام شود."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Das ist leicht zu verstehen.",
+      "translation": "این به راحتی قابل درک است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Das ist nicht zu glauben!",
+      "translation": "این باورنکردنی است!"
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: sein + zu + Infinitiv",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "«ist zu erledigen» یعنی:", "options": ["muss erledigt werden", "wurde erledigt"], "correctAnswerIndex": 0 },
+        { "question": "«leicht zu verstehen» نشان‌دهنده:", "options": ["امکان", "ضرورت"], "correctAnswerIndex": 0 },
+        { "question": "«nicht zu glauben» یعنی:", "options": ["kann nicht geglaubt werden", "muss geglaubt werden"], "correctAnswerIndex": 0 },
+        { "question": "بدون سیگنال، معمولا معنا:", "options": ["ضرورت است", "امکان است"], "correctAnswerIndex": 0 },
+        { "question": "«schwer zu lösen» یعنی:", "options": ["به سختی قابل حل", "باید حل شود"], "correctAnswerIndex": 0 },
+        { "question": "این ساختار در کجا رایج است؟", "options": ["متون رسمی", "زبان کودکان"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: sein + zu + Infinitiv",
+      "pairs": [
+        { "de": "ist zu erledigen", "fa": "باید انجام شود" },
+        { "de": "leicht zu verstehen", "fa": "به راحتی قابل درک" },
+        { "de": "nicht zu glauben", "fa": "باورنکردنی" },
+        { "de": "schwer zu lösen", "fa": "به سختی قابل حل" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات مربوط به این درس را پیدا کنید",
+      "targetWords": ["erledigen", "verstehen", "glauben", "Aufgabe", "leicht", "schwer"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "erledigen", "fa": "انجام دادن", "options": ["پرسیدن", "انجام دادن", "خواندن", "نوشتن"], "correctIndex": 1 },
+        { "de": "die Aufgabe", "fa": "تکلیف", "options": ["جواب", "تکلیف", "سوال", "کتاب"], "correctIndex": 1 },
+        { "de": "die Notwendigkeit", "fa": "ضرورت", "options": ["امکان", "ضرورت", "آرزو", "تصمیم"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما ساختار sein + zu + Infinitiv را به عنوان جایگزین مجهول یاد گرفتید!",
+      "keyPoints": [
+        "ساختار: sein (صرف‌شده) + zu + Infinitiv",
+        "دو معنای اصلی: ضرورت (müssen) یا امکان (können)",
+        "بدون سیگنال → معمولا ضرورت: Die Aufgabe ist zu erledigen = muss erledigt werden",
+        "با leicht/schwer/nicht/kaum → امکان: Das ist leicht zu verstehen = kann verstanden werden",
+        "این ساختار در متون رسمی و اداری خیلی رایج است",
+        "مختصرتر و زیباتر از مجهول کامل است"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "erledigen", "fa": "انجام دادن" } },
+        { "word": { "de": "verstehen", "fa": "فهمیدن" } },
+        { "word": { "de": "glauben", "fa": "باور کردن" } },
+        { "word": { "de": "die Aufgabe", "fa": "تکلیف" } },
+        { "word": { "de": "die Notwendigkeit", "fa": "ضرورت" } },
+        { "word": { "de": "die Möglichkeit", "fa": "امکان" } }
+      ]
+    }
+  ]
+}

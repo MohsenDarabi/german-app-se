@@ -1,0 +1,525 @@
+{
+  "id": "B2-M04-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Passiv-Alternativen: Weitere Strukturen", "fa": "جایگزین‌های مجهول: ساختارهای بیشتر" },
+  "description": "یاد بگیرید چگونه از ساختارهای جایگزین مجهول استفاده کنید - صفت‌های -bar و -lich، ساختار bleiben + Partizip II، و es gibt + zu + Infinitiv.",
+  "level": "B2",
+  "module": 4,
+  "lessonNumber": 3,
+  "totalSteps": 45,
+  "estimatedMinutes": 30,
+  "vocabulary": [
+    { "de": "essbar", "fa": "خوردنی، قابل خوردن", "grammar": { "pos": "adjective" } },
+    { "de": "lösbar", "fa": "قابل حل، حل‌شدنی", "grammar": { "pos": "adjective" } },
+    { "de": "machbar", "fa": "قابل انجام، شدنی", "grammar": { "pos": "adjective" } },
+    { "de": "verständlich", "fa": "قابل فهم، قابل درک", "grammar": { "pos": "adjective" } },
+    { "de": "erklärlich", "fa": "توضیح‌پذیر، قابل توضیح", "grammar": { "pos": "adjective" } },
+    { "de": "abwarten", "fa": "منتظر ماندن، صبر کردن", "grammar": { "pos": "verb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "جایگزین‌های مجهول چیست؟",
+      "content": "**Passiv-Alternativen = جایگزین‌های مجهول**\n\nدر آلمانی علاوه بر ساختار مجهول (werden + Partizip II)، چند ساختار دیگر هم همان معنی را می‌رسانند:\n\n**۱. صفت‌های -bar:**\n- essbar = قابل خوردن (kann gegessen werden)\n- lösbar = قابل حل (kann gelöst werden)\n\n**۲. صفت‌های -lich:**\n- verständlich = قابل فهم (kann verstanden werden)\n- erklärlich = قابل توضیح (kann erklärt werden)\n\n**۳. bleiben + Partizip II:**\n- Das bleibt abzuwarten. = این باید منتظر ماند.\n\n**۴. es gibt + zu + Infinitiv:**\n- Es gibt viel zu tun. = کار زیادی برای انجام دادن هست.\n\n**چرا مهم است؟** این ساختارها در زبان روزمره و نوشتار رسمی خیلی رایج هستند!",
+      "examples": [
+        { "de": "Diese Pilze sind essbar.", "fa": "این قارچ‌ها خوردنی هستند." },
+        { "de": "Das Problem ist lösbar.", "fa": "این مشکل قابل حل است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "essbar", "fa": "خوردنی، قابل خوردن" },
+      "example": { "text": { "de": "Nicht alle Pilze im Wald sind essbar.", "fa": "همه قارچ‌های جنگل خوردنی نیستند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "essbar",
+      "translation": "خوردنی",
+      "syllables": ["ess", "bar"],
+      "distractors": ["ass", "ber", "bor"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "lösbar", "fa": "قابل حل، حل‌شدنی" },
+      "example": { "text": { "de": "Jedes mathematische Problem ist theoretisch lösbar.", "fa": "هر مسئله ریاضی از نظر تئوری قابل حل است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "lösbar",
+      "translation": "قابل حل",
+      "syllables": ["lös", "bar"],
+      "distractors": ["los", "ber", "bor"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "machbar", "fa": "قابل انجام، شدنی" },
+      "example": { "text": { "de": "Ist dieses Projekt bis nächste Woche machbar?", "fa": "آیا این پروژه تا هفته آینده قابل انجام است؟" } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "machbar",
+      "translation": "قابل انجام",
+      "syllables": ["mach", "bar"],
+      "distractors": ["much", "ber", "bor"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "صفت‌های -bar: ساختار و معنی",
+      "content": "**صفت‌های -bar = قابل ... شدن**\n\nاز ریشه فعل + پسوند **-bar** ساخته می‌شوند:\n\n| فعل | صفت -bar | معنی | معادل مجهول |\n|-----|----------|------|-------------|\n| essen | ess**bar** | خوردنی | kann gegessen werden |\n| lösen | lös**bar** | قابل حل | kann gelöst werden |\n| machen | mach**bar** | شدنی | kann gemacht werden |\n| lesen | les**bar** | خواندنی | kann gelesen werden |\n| trinken | trink**bar** | قابل نوشیدن | kann getrunken werden |\n\n**ساختار منفی:**\n- **un-** + صفت: unessbar (غیرقابل خوردن), unlösbar (غیرقابل حل)\n\n**کاربرد:**\n- صفت‌های -bar معمولاً با sein می‌آیند\n- Das Wasser ist trinkbar. = این آب قابل نوشیدن است.\n- Das Problem ist unlösbar. = این مشکل غیرقابل حل است.",
+      "examples": [
+        { "de": "Die Schrift ist kaum lesbar.", "fa": "این خط به سختی خوانا است." },
+        { "de": "Diese Aufgabe ist für jeden machbar.", "fa": "این تکلیف برای همه قابل انجام است." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "صفت -bar از فعل 'trinken' چیست؟",
+      "options": [
+        "trinklich",
+        "trinkbar",
+        "getrunken",
+        "trinkend"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! trinken → trinkbar (قابل نوشیدن)", "incorrect": "صفت‌های -bar از ریشه فعل + bar ساخته می‌شوند: trinken → trinkbar" }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "'unlösbar' به چه معناست؟",
+      "options": [
+        "قابل حل",
+        "حل شده",
+        "غیرقابل حل",
+        "در حال حل شدن"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "درست! un- + lösbar = unlösbar (غیرقابل حل)", "incorrect": "پیشوند un- معنی منفی می‌دهد: unlösbar = غیرقابل حل" }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "verständlich", "fa": "قابل فهم، قابل درک" },
+      "example": { "text": { "de": "Seine Erklärung war sehr verständlich.", "fa": "توضیح او خیلی قابل فهم بود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "verständlich",
+      "translation": "قابل فهم",
+      "syllables": ["ver", "ständ", "lich"],
+      "distractors": ["vor", "stand", "lach"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "erklärlich", "fa": "توضیح‌پذیر، قابل توضیح" },
+      "example": { "text": { "de": "Sein Verhalten ist nicht erklärlich.", "fa": "رفتار او قابل توضیح نیست." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "erklärlich",
+      "translation": "قابل توضیح",
+      "syllables": ["er", "klär", "lich"],
+      "distractors": ["ar", "klar", "lach"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "abwarten", "fa": "منتظر ماندن، صبر کردن" },
+      "example": { "text": { "de": "Das bleibt abzuwarten.", "fa": "این باید منتظر ماند / باید دید." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "abwarten",
+      "translation": "منتظر ماندن",
+      "syllables": ["ab", "war", "ten"],
+      "distractors": ["ob", "wer", "tan"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "صفت -bar مناسب را انتخاب کنید",
+      "sentence": "Diese Pilze sind {0}. Man kann sie essen.",
+      "options": ["essbar", "trinkbar", "lesbar", "machbar"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "essbar = قابل خوردن. چون می‌توان قارچ‌ها را خورد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "صفت -lich مناسب را انتخاب کنید",
+      "sentence": "Die Anleitung ist sehr {0}. Jeder kann sie verstehen.",
+      "options": ["erklärlich", "verständlich", "essbar", "machbar"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "verständlich = قابل فهم. از verstehen (فهمیدن) می‌آید." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "صفت مناسب را انتخاب کنید",
+      "sentence": "Das Problem ist nicht {0}. Es ist zu kompliziert.",
+      "options": ["lösbar", "essbar", "trinkbar", "abwarten"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "lösbar = قابل حل. چون مشکل خیلی پیچیده است، قابل حل نیست." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "bleiben + Partizip II و es gibt + zu + Infinitiv",
+      "content": "**دو ساختار جایگزین مجهول دیگر:**\n\n**۱. bleiben + zu + Infinitiv:**\nنشان می‌دهد که کاری هنوز باید انجام شود:\n\n- Das **bleibt abzuwarten**. = این باید منتظر ماند.\n- Es **bleibt zu hoffen**, dass... = باید امیدوار بود که...\n- Das **bleibt zu sehen**. = باید دید.\n\n**۲. es gibt + zu + Infinitiv:**\nنشان می‌دهد که کاری برای انجام هست:\n\n- **Es gibt** viel **zu tun**. = کار زیادی هست.\n- **Es gibt** nichts **zu sagen**. = چیزی برای گفتن نیست.\n- **Es gibt** viel **zu lernen**. = چیز زیادی برای یادگیری هست.\n\n**مقایسه با مجهول:**\n| جایگزین | معادل مجهول |\n|---------|-------------|\n| Das bleibt abzuwarten. | Das muss abgewartet werden. |\n| Es gibt viel zu tun. | Viel muss getan werden. |",
+      "examples": [
+        { "de": "Es bleibt zu hoffen, dass alles gut geht.", "fa": "باید امیدوار بود که همه چیز خوب پیش برود." },
+        { "de": "Es gibt hier viel zu sehen.", "fa": "اینجا چیزهای زیادی برای دیدن هست." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["bleibt", "Das", "abzuwarten"],
+      "correctOrder": [1, 0, 2],
+      "correctSentence": { "de": "Das bleibt abzuwarten", "fa": "این باید منتظر ماند" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["gibt", "tun", "Es", "viel", "zu"],
+      "correctOrder": [2, 0, 3, 4, 1],
+      "correctSentence": { "de": "Es gibt viel zu tun", "fa": "کار زیادی هست" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["hoffen", "zu", "bleibt", "Es"],
+      "correctOrder": [3, 2, 1, 0],
+      "correctSentence": { "de": "Es bleibt zu hoffen", "fa": "باید امیدوار بود" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "صفت‌های -bar از ریشه فعل + پسوند bar ساخته می‌شوند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! essen → essbar, lösen → lösbar, machen → machbar" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "'unlösbar' یعنی 'قابل حل'.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! پیشوند un- معنی منفی می‌دهد: unlösbar = غیرقابل حل" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "'Es gibt viel zu tun' یعنی کار زیادی برای انجام دادن هست.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! es gibt + zu + Infinitiv نشان می‌دهد که کاری برای انجام وجود دارد." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در جلسه کاری",
+      "scene": {
+        "location": "office",
+        "description": { "de": "In einem Meeting bei der Arbeit", "fa": "در یک جلسه کاری" }
+      },
+      "lines": [
+        { "speaker": "Managerin", "text": { "de": "Ist dieses Projekt bis Freitag machbar?", "fa": "آیا این پروژه تا جمعه قابل انجام است؟" }, "mood": "neutral" },
+        { "speaker": "Mitarbeiter", "text": { "de": "Das bleibt abzuwarten. Es gibt noch viel zu tun.", "fa": "باید دید. هنوز کار زیادی برای انجام هست." }, "mood": "confused" },
+        { "speaker": "Managerin", "text": { "de": "Das Problem mit dem Budget - ist das lösbar?", "fa": "مشکل بودجه - آیا قابل حل است؟" }, "mood": "neutral" },
+        { "speaker": "Mitarbeiter", "text": { "de": "Ja, das ist lösbar. Wir brauchen nur mehr Zeit.", "fa": "بله، قابل حل است. فقط به زمان بیشتری نیاز داریم." }, "mood": "happy" },
+        { "speaker": "Managerin", "text": { "de": "Gut. Es bleibt zu hoffen, dass wir pünktlich fertig werden.", "fa": "خوب. باید امیدوار بود که به موقع تمام کنیم." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "چه ساختار جایگزین مجهولی در جمله اول استفاده شد؟", "options": ["bleiben + zu + Infinitiv", "es gibt + zu + Infinitiv", "صفت -bar"], "correctIndex": 2, "explanation": "مدیر پرسید: 'Ist dieses Projekt machbar?' - صفت -bar استفاده شد." },
+        { "question": "'Das bleibt abzuwarten' به چه معناست؟", "options": ["این انجام شد", "باید دید / باید منتظر ماند", "این غیرممکن است"], "correctIndex": 1, "explanation": "bleiben + zu + Infinitiv نشان می‌دهد که هنوز باید منتظر ماند." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "ساختار مناسب را انتخاب کنید",
+      "sentence": "{0}, ob das Projekt erfolgreich wird.",
+      "options": ["Das bleibt abzuwarten", "Das ist essbar", "Das ist machbar", "Es gibt zu tun"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Das bleibt abzuwarten = باید دید. برای نشان دادن عدم قطعیت درباره آینده." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "ساختار مناسب را انتخاب کنید",
+      "sentence": "Im neuen Haus {0} noch {1}.",
+      "options": ["gibt", "es", "viel", "zu tun"],
+      "correctAnswers": [1, 3],
+      "feedback": { "explanation": "Es gibt viel zu tun = کار زیادی هست. ساختار es gibt + zu + Infinitiv" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "صفت -lich یا -bar مناسب را انتخاب کنید",
+      "sentence": "Seine Reaktion ist {0}. Jeder hätte so reagiert.",
+      "options": ["erklärlich", "essbar", "trinkbar", "lesbar"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "erklärlich = قابل توضیح. واکنش او قابل توضیح است چون هر کسی همین‌طور واکنش نشان می‌داد." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "در رستوران",
+      "scene": {
+        "location": "restaurant",
+        "description": { "de": "In einem Restaurant", "fa": "در یک رستوران" }
+      },
+      "lines": [
+        { "speaker": "Gast", "text": { "de": "Sind diese Pilze essbar?", "fa": "آیا این قارچ‌ها خوردنی هستند؟" }, "mood": "confused" },
+        { "speaker": "Kellner", "text": { "de": "Ja, natürlich! Sie sind sehr lecker und absolut essbar.", "fa": "بله، البته! خیلی خوشمزه و کاملاً خوردنی هستند." }, "mood": "happy" },
+        { "speaker": "Gast", "text": { "de": "Und das Wasser - ist das trinkbar?", "fa": "و آب - آیا قابل نوشیدن است؟" }, "mood": "neutral" },
+        { "speaker": "Kellner", "text": { "de": "Ja, unser Leitungswasser ist trinkbar und kostenlos.", "fa": "بله، آب لوله‌کشی ما قابل نوشیدن و رایگان است." }, "mood": "happy" },
+        { "speaker": "Gast", "text": { "de": "Wunderbar! Es gibt hier viel Gutes zu essen!", "fa": "عالی! اینجا چیزهای خوب زیادی برای خوردن هست!" }, "mood": "excited" }
+      ],
+      "questions": [
+        { "question": "مهمان درباره چه چیزی سؤال کرد؟", "options": ["قیمت غذا", "خوردنی بودن قارچ‌ها", "نام رستوران"], "correctIndex": 1, "explanation": "مهمان پرسید: 'Sind diese Pilze essbar?' (آیا این قارچ‌ها خوردنی هستند؟)" },
+        { "question": "آب لوله‌کشی رستوران چگونه است؟", "options": ["گران است", "قابل نوشیدن و رایگان است", "وجود ندارد"], "correctIndex": 1, "explanation": "پیشخدمت گفت: 'trinkbar und kostenlos' (قابل نوشیدن و رایگان)" }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "صفت‌های -bar و -lich را با معنی فارسی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "essbar" },
+        { "id": "i2", "text": "lösbar" },
+        { "id": "i3", "text": "machbar" },
+        { "id": "i4", "text": "verständlich" },
+        { "id": "i5", "text": "erklärlich" },
+        { "id": "i6", "text": "trinkbar" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "خوردنی" },
+        { "id": "m2", "text": "قابل حل" },
+        { "id": "m3", "text": "قابل انجام" },
+        { "id": "m4", "text": "قابل فهم" },
+        { "id": "m5", "text": "قابل توضیح" },
+        { "id": "m6", "text": "قابل نوشیدن" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "این مشکل قابل حل است.",
+      "sentenceTemplate": "Das Problem {0} {1}.",
+      "options": ["ist", "lösbar", "essbar", "sind"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Das Problem ist lösbar.", "fa": "این مشکل قابل حل است." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "کار زیادی برای انجام هست.",
+      "sentenceTemplate": "Es {0} viel {1} tun.",
+      "options": ["gibt", "bleibt", "zu", "ist"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Es gibt viel zu tun.", "fa": "کار زیادی برای انجام هست." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: گزارش پروژه",
+      "passage": {
+        "de": "Liebe Kolleginnen und Kollegen,\n\nich möchte Sie über den Stand des Projekts informieren.\n\nDie erste Phase ist abgeschlossen. Es bleibt zu hoffen, dass auch die zweite Phase planmäßig verläuft. Es gibt noch viel zu tun, aber ich bin optimistisch.\n\nDas technische Problem, das wir letzte Woche hatten, ist jetzt lösbar. Die Lösung ist verständlich und gut dokumentiert.\n\nOb wir den Termin einhalten können, bleibt abzuwarten. Das Ziel ist machbar, aber es hängt von vielen Faktoren ab.\n\nMit freundlichen Grüßen,\nIhr Projektleiter",
+        "fa": "همکاران عزیز،\n\nمی‌خواهم شما را از وضعیت پروژه مطلع کنم.\n\nفاز اول تمام شده است. باید امیدوار بود که فاز دوم هم طبق برنامه پیش برود. هنوز کار زیادی برای انجام هست، اما من خوش‌بین هستم.\n\nمشکل فنی که هفته گذشته داشتیم، حالا قابل حل است. راه‌حل قابل فهم و به خوبی مستند شده است.\n\nآیا می‌توانیم موعد را رعایت کنیم، باید دید. هدف قابل انجام است، اما به عوامل زیادی بستگی دارد.\n\nبا احترام،\nمدیر پروژه‌تان"
+      },
+      "questions": [
+        { "question": "چند ساختار جایگزین مجهول در این متن وجود دارد؟", "options": ["۳", "۵", "۷"], "correctIndex": 1, "explanation": "۵ ساختار: es bleibt zu hoffen، es gibt zu tun، lösbar، verständlich، machbar" },
+        { "question": "'Das bleibt abzuwarten' در این متن درباره چیست؟", "options": ["مشکل فنی", "رعایت موعد", "فاز اول"], "correctIndex": 1, "explanation": "مدیر پروژه می‌گوید که رعایت موعد هنوز مشخص نیست: 'Ob wir den Termin einhalten können, bleibt abzuwarten.'" },
+        { "question": "کدام صفت -bar در متن استفاده شده؟", "options": ["essbar و trinkbar", "lösbar و machbar", "lesbar و trinkbar"], "correctIndex": 1, "explanation": "در متن از lösbar (قابل حل) و machbar (قابل انجام) استفاده شده است." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der schwierige Auftrag", "fa": "سفارش دشوار" },
+      "characters": ["Chef", "Angestellte"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "In einer Firma gibt es ein neues Projekt.", "fa": "در یک شرکت پروژه جدیدی وجود دارد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Chef",
+          "text": { "de": "Ist dieser Auftrag machbar?", "fa": "آیا این سفارش قابل انجام است؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Angestellte",
+          "text": { "de": "Das bleibt abzuwarten. Es gibt noch viele offene Fragen.", "fa": "باید دید. هنوز سؤالات زیادی هست." },
+          "mood": "confused"
+        },
+        {
+          "type": "question",
+          "question": "کارمند چگونه پاسخ داد؟",
+          "options": ["بله، حتماً", "باید دید", "نه، غیرممکن است"],
+          "correctIndex": 1,
+          "explanation": "کارمند گفت: 'Das bleibt abzuwarten' (باید دید)"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Chef",
+          "text": { "de": "Und die technischen Probleme? Sind die lösbar?", "fa": "و مشکلات فنی؟ آیا قابل حل هستند؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Angestellte",
+          "text": { "de": "Ja, sie sind lösbar. Die Lösung ist auch verständlich.", "fa": "بله، قابل حل هستند. راه‌حل هم قابل فهم است." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "کدام صفت‌های -bar و -lich استفاده شدند؟",
+          "options": ["essbar و erklärlich", "lösbar و verständlich", "machbar و trinkbar"],
+          "correctIndex": 1,
+          "explanation": "کارمند از lösbar (قابل حل) و verständlich (قابل فهم) استفاده کرد."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Chef",
+          "text": { "de": "Gut. Es bleibt zu hoffen, dass alles klappt!", "fa": "خوب. باید امیدوار بود که همه چیز درست شود!" },
+          "mood": "happy"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Das Team beginnt mit der Arbeit. Es gibt viel zu tun!", "fa": "تیم کار را شروع می‌کند. کار زیادی هست!" }
+        },
+        {
+          "type": "question",
+          "question": "'Es gibt viel zu tun' به چه معناست؟",
+          "options": ["کاری نیست", "کار زیادی هست", "کار تمام شد"],
+          "correctIndex": 1,
+          "explanation": "es gibt + zu + Infinitiv یعنی کاری برای انجام هست: Es gibt viel zu tun = کار زیادی هست."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: صفت‌های -bar",
+      "instruction": "صفت -bar درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "essen →", "left": "essbar", "right": "esslich", "correctSide": "left" },
+        { "prompt": "lösen →", "left": "löslich", "right": "lösbar", "correctSide": "right" },
+        { "prompt": "machen →", "left": "machbar", "right": "machlich", "correctSide": "left" },
+        { "prompt": "trinken →", "left": "trinklich", "right": "trinkbar", "correctSide": "right" },
+        { "prompt": "lesen →", "left": "lesbar", "right": "leslich", "correctSide": "left" },
+        { "prompt": "verstehen →", "left": "verstehbar", "right": "verständlich", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Diese Aufgabe ist machbar.",
+      "translation": "این تکلیف قابل انجام است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Das bleibt abzuwarten.",
+      "translation": "باید دید / باید منتظر ماند."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Es gibt viel zu lernen.",
+      "translation": "چیز زیادی برای یادگیری هست."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: جایگزین‌های مجهول",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "essbar =", "options": ["خوردنی", "نوشیدنی"], "correctAnswerIndex": 0 },
+        { "question": "lösbar =", "options": ["غیرقابل حل", "قابل حل"], "correctAnswerIndex": 1 },
+        { "question": "verständlich =", "options": ["قابل فهم", "قابل خوردن"], "correctAnswerIndex": 0 },
+        { "question": "'Es gibt viel zu tun' =", "options": ["کار زیادی هست", "کاری نیست"], "correctAnswerIndex": 0 },
+        { "question": "'Das bleibt abzuwarten' =", "options": ["این تمام شد", "باید دید"], "correctAnswerIndex": 1 },
+        { "question": "پسوند -bar معادل چیست؟", "options": ["قابل ... شدن", "در حال ... شدن"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: صفت‌های -bar و معنی",
+      "pairs": [
+        { "de": "essbar", "fa": "خوردنی" },
+        { "de": "lösbar", "fa": "قابل حل" },
+        { "de": "machbar", "fa": "قابل انجام" },
+        { "de": "trinkbar", "fa": "قابل نوشیدن" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "صفت‌های -bar و -lich را پیدا کنید",
+      "targetWords": ["essbar", "lösbar", "machbar", "trinkbar", "verständlich", "erklärlich"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "essbar", "fa": "خوردنی", "options": ["قابل حل", "خوردنی", "قابل فهم", "قابل نوشیدن"], "correctIndex": 1 },
+        { "de": "lösbar", "fa": "قابل حل", "options": ["خوردنی", "قابل انجام", "قابل حل", "قابل توضیح"], "correctIndex": 2 },
+        { "de": "verständlich", "fa": "قابل فهم", "options": ["قابل فهم", "قابل حل", "خوردنی", "قابل نوشیدن"], "correctIndex": 0 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما ساختارهای جایگزین مجهول را یاد گرفتید!",
+      "keyPoints": [
+        "صفت‌های -bar = قابل ... شدن: essbar (خوردنی), lösbar (قابل حل), machbar (شدنی)",
+        "صفت‌های -lich: verständlich (قابل فهم), erklärlich (قابل توضیح)",
+        "پیشوند un- معنی منفی می‌دهد: unlösbar (غیرقابل حل)",
+        "bleiben + zu + Infinitiv: Das bleibt abzuwarten (باید دید)",
+        "es gibt + zu + Infinitiv: Es gibt viel zu tun (کار زیادی هست)",
+        "این ساختارها جایگزین‌های رایج برای مجهول هستند",
+        "در زبان روزمره و نوشتار رسمی بسیار استفاده می‌شوند"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "essbar", "fa": "خوردنی، قابل خوردن" } },
+        { "word": { "de": "lösbar", "fa": "قابل حل، حل‌شدنی" } },
+        { "word": { "de": "machbar", "fa": "قابل انجام، شدنی" } },
+        { "word": { "de": "verständlich", "fa": "قابل فهم، قابل درک" } },
+        { "word": { "de": "erklärlich", "fa": "توضیح‌پذیر، قابل توضیح" } },
+        { "word": { "de": "abwarten", "fa": "منتظر ماندن، صبر کردن" } }
+      ]
+    }
+  ]
+}

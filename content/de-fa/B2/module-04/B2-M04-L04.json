@@ -1,0 +1,528 @@
+{
+  "id": "B2-M04-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Passiv-Alternativen: Zusammenfassung", "fa": "جایگزین‌های مجهول: جمع‌بندی" },
+  "description": "مرور جامع تمام جایگزین‌های مجهول: sich lassen + Infinitiv، sein + zu + Infinitiv، صفت‌های -bar/-lich، bleiben + Partizip II، و es gibt + zu + Infinitiv. مقایسه کاربردها و انتخاب ساختار مناسب برای موقعیت‌های مختلف.",
+  "level": "B2",
+  "module": 4,
+  "lessonNumber": 4,
+  "totalSteps": 45,
+  "estimatedMinutes": 35,
+  "vocabulary": [
+    { "de": "die Alternative", "fa": "جایگزین، گزینه", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "machbar", "fa": "قابل انجام، شدنی", "grammar": { "pos": "adjective" } },
+    { "de": "verständlich", "fa": "قابل فهم، قابل درک", "grammar": { "pos": "adjective" } },
+    { "de": "abzuwarten", "fa": "منتظر ماندنی (باید منتظر ماند)", "grammar": { "pos": "adjective" } },
+    { "de": "die Umgangssprache", "fa": "زبان محاوره", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "die Fachsprache", "fa": "زبان تخصصی", "grammar": { "pos": "noun", "gender": "feminine" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "پنج جایگزین مجهول در آلمانی",
+      "content": "**Passiv-Alternativen = جایگزین‌های مجهول**\n\nدر آلمانی، پنج ساختار اصلی به جای Passiv استفاده می‌شوند:\n\n| ساختار | مثال | معنی |\n|--------|------|------|\n| **sich lassen + Inf.** | Das lässt sich machen. | این قابل انجام است. |\n| **sein + zu + Inf.** | Die Aufgabe ist zu erledigen. | کار باید/می‌تواند انجام شود. |\n| **-bar/-lich صفت‌های** | essbar, verständlich | خوردنی، قابل فهم |\n| **bleiben + Part. II** | Das bleibt abzuwarten. | این باید منتظر ماند. |\n| **es gibt + zu + Inf.** | Es gibt viel zu tun. | کار زیادی هست که باید انجام شود. |\n\n**چرا این ساختارها مهم هستند؟**\n- متنوع‌تر از Passiv ساده\n- در زبان محاوره رایج‌ترند\n- هر کدام تأکید متفاوتی دارند",
+      "examples": [
+        { "de": "Das Problem lässt sich lösen. = Das Problem kann gelöst werden.", "fa": "مشکل قابل حل است." },
+        { "de": "Der Text ist leicht zu verstehen. = Der Text kann leicht verstanden werden.", "fa": "متن به راحتی قابل فهم است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "die Alternative", "fa": "جایگزین، گزینه" },
+      "example": { "text": { "de": "Es gibt viele Alternativen zum Passiv.", "fa": "جایگزین‌های زیادی برای مجهول وجود دارد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Alternative",
+      "translation": "جایگزین",
+      "syllables": ["Al", "ter", "na", "ti", "ve"],
+      "distractors": ["El", "tar", "no", "to"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "machbar", "fa": "قابل انجام، شدنی" },
+      "example": { "text": { "de": "Das Projekt ist durchaus machbar.", "fa": "پروژه کاملاً قابل انجام است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "machbar",
+      "translation": "قابل انجام",
+      "syllables": ["mach", "bar"],
+      "distractors": ["moch", "ber", "bor"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "verständlich", "fa": "قابل فهم، قابل درک" },
+      "example": { "text": { "de": "Die Erklärung war sehr verständlich.", "fa": "توضیح بسیار قابل فهم بود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "verständlich",
+      "translation": "قابل فهم",
+      "syllables": ["ver", "ständ", "lich"],
+      "distractors": ["vor", "stand", "lach"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "۱. sich lassen + Infinitiv",
+      "content": "**sich lassen + Infinitiv = قابل ... بودن**\n\nاین ساختار بیان می‌کند که چیزی **امکان‌پذیر** است:\n\n**ساختار:**\nSubjekt + lässt sich + Infinitiv\n\n| Passiv | sich lassen + Inf. |\n|--------|---------------------|\n| Das kann gemacht werden. | Das **lässt sich** machen. |\n| Das Problem kann gelöst werden. | Das Problem **lässt sich** lösen. |\n| Der Fehler kann korrigiert werden. | Der Fehler **lässt sich** korrigieren. |\n\n**نکته منفی:**\nDas lässt sich **nicht** machen. = این قابل انجام نیست.\n\n**کاربرد:** این ساختار در زبان **محاوره** بسیار رایج است و طبیعی‌تر از Passiv به نظر می‌رسد.",
+      "examples": [
+        { "de": "Das Fenster lässt sich nicht öffnen.", "fa": "پنجره باز نمی‌شود. (قابل باز شدن نیست)" },
+        { "de": "Daran lässt sich nichts ändern.", "fa": "این قابل تغییر نیست." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله معادل 'Das kann repariert werden' است؟",
+      "options": [
+        "Das lässt sich reparieren.",
+        "Das ist zu reparieren.",
+        "Das bleibt repariert.",
+        "Das gibt zu reparieren."
+      ],
+      "correctAnswerIndex": 0,
+      "feedback": { "correct": "آفرین! 'sich lassen + Inf.' امکان‌پذیری را نشان می‌دهد: Das lässt sich reparieren = قابل تعمیر است.", "incorrect": "'sich lassen + Infinitiv' برای بیان امکان‌پذیری استفاده می‌شود." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام ساختار بیشتر در زبان تخصصی و رسمی استفاده می‌شود؟",
+      "options": [
+        "sich lassen + Infinitiv",
+        "sein + zu + Infinitiv",
+        "es gibt + zu + Infinitiv",
+        "همه یکسان هستند"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "درست! 'sein + zu + Infinitiv' در متون رسمی، قانونی و تخصصی رایج‌تر است.", "incorrect": "'sein + zu + Infinitiv' ساختاری رسمی‌تر است که در Fachsprache (زبان تخصصی) کاربرد دارد." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "abzuwarten", "fa": "منتظر ماندنی (باید منتظر ماند)" },
+      "example": { "text": { "de": "Das Ergebnis bleibt abzuwarten.", "fa": "نتیجه هنوز معلوم نیست (باید منتظر ماند)." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "abzuwarten",
+      "translation": "منتظر ماندنی",
+      "syllables": ["ab", "zu", "war", "ten"],
+      "distractors": ["ob", "za", "wer", "tan"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "die Umgangssprache", "fa": "زبان محاوره" },
+      "example": { "text": { "de": "In der Umgangssprache benutzt man 'sich lassen' häufig.", "fa": "در زبان محاوره از 'sich lassen' زیاد استفاده می‌شود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "Umgangssprache",
+      "translation": "زبان محاوره",
+      "syllables": ["Um", "gangs", "spra", "che"],
+      "distractors": ["Om", "gongs", "spro", "ka"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "die Fachsprache", "fa": "زبان تخصصی" },
+      "example": { "text": { "de": "Die Fachsprache verwendet oft 'sein + zu + Infinitiv'.", "fa": "زبان تخصصی اغلب از 'sein + zu + Infinitiv' استفاده می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Fachsprache",
+      "translation": "زبان تخصصی",
+      "syllables": ["Fach", "spra", "che"],
+      "distractors": ["Foch", "spro", "ka"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "ساختار 'sich lassen' درست را انتخاب کنید",
+      "sentence": "Das Problem {0} leicht lösen.",
+      "options": ["lässt sich", "ist zu", "bleibt", "gibt zu"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "'sich lassen + Infinitiv' برای بیان امکان‌پذیری: Das Problem lässt sich lösen." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "ساختار رسمی 'sein + zu + Infinitiv' را کامل کنید",
+      "sentence": "Die Rechnung {0} sofort {1}. (باید فوراً پرداخت شود)",
+      "options": ["ist", "lässt", "zu bezahlen", "bezahlen"],
+      "correctAnswers": [0, 2],
+      "feedback": { "explanation": "'sein + zu + Infinitiv' برای الزام: Die Rechnung ist zu bezahlen = باید پرداخت شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "صفت مناسب با پسوند -bar را انتخاب کنید",
+      "sentence": "Dieses Wasser ist nicht {0}. (قابل آشامیدن)",
+      "options": ["trinkbar", "trinklich", "zu trinken", "getrunken"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "trinken → trinkbar (قابل آشامیدن). پسوند -bar از فعل صفت می‌سازد." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "مقایسه: کدام ساختار را کی استفاده کنیم؟",
+      "content": "**راهنمای انتخاب ساختار مناسب:**\n\n| ساختار | کاربرد | رسمیت | مثال |\n|--------|--------|-------|------|\n| **sich lassen** | امکان‌پذیری عمومی | محاوره | Das lässt sich machen. |\n| **sein + zu** | الزام/امکان رسمی | رسمی | Die Arbeit ist zu erledigen. |\n| **-bar/-lich** | ویژگی دائمی | همه | Das ist essbar/verständlich. |\n| **bleiben + P.II** | وضعیت باقی‌مانده | رسمی | Das bleibt abzuwarten. |\n| **es gibt + zu** | وجود کار/وظیفه | محاوره | Es gibt viel zu tun. |\n\n**تفاوت معنایی مهم:**\n\n**sein + zu + Infinitiv** دو معنی دارد:\n1. **باید** (اجبار): Die Aufgabe **ist zu erledigen**. = باید انجام شود.\n2. **می‌تواند** (امکان): Das **ist leicht zu verstehen**. = به راحتی قابل فهم است.\n\n**نکته:** با قید (leicht, schwer, kaum) معمولاً معنی «امکان» است.",
+      "examples": [
+        { "de": "Die Tür ist zu schließen. (اجبار) vs. Die Tür ist schwer zu öffnen. (امکان)", "fa": "در باید بسته شود. / در به سختی باز می‌شود." },
+        { "de": "Es bleibt abzuwarten, ob... = باید منتظر ماند که آیا...", "fa": "هنوز مشخص نیست که آیا..." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "ساختار 'bleiben + Partizip II' را کامل کنید",
+      "sentence": "Das Ergebnis {0} noch {1}. (هنوز باید منتظر ماند)",
+      "options": ["bleibt", "ist", "abzuwarten", "warten"],
+      "correctAnswers": [0, 2],
+      "feedback": { "explanation": "'bleiben + zu + Infinitiv' برای وضعیتی که باقی می‌ماند: Das bleibt abzuwarten." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "ساختار 'es gibt + zu + Infinitiv' را کامل کنید",
+      "sentence": "Heute {0} viel {1}. (امروز کار زیادی هست)",
+      "options": ["gibt es", "ist es", "zu tun", "tun"],
+      "correctAnswers": [0, 2],
+      "feedback": { "explanation": "'es gibt + zu + Infinitiv' برای بیان وجود کار: Es gibt viel zu tun." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "پسوند صحیح را برای ساختن صفت انتخاب کنید",
+      "sentence": "Der Text ist sehr verständ{0}. (قابل فهم)",
+      "options": ["-lich", "-bar", "-ig", "-isch"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "verstehen → verständlich. پسوند -lich برای بعضی فعل‌ها استفاده می‌شود." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "جلسه کاری",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Besprechung im Büro", "fa": "جلسه در اداره" }
+      },
+      "lines": [
+        { "speaker": "Chefin", "text": { "de": "Ist das Projekt bis Freitag machbar?", "fa": "آیا پروژه تا جمعه قابل انجام است؟" }, "mood": "neutral" },
+        { "speaker": "Mitarbeiter", "text": { "de": "Das lässt sich machen, wenn wir Hilfe bekommen.", "fa": "این قابل انجام است، اگر کمک بگیریم." }, "mood": "neutral" },
+        { "speaker": "Chefin", "text": { "de": "Gut. Die Deadline ist einzuhalten.", "fa": "خوب. ددلاین باید رعایت شود." }, "mood": "happy" },
+        { "speaker": "Mitarbeiter", "text": { "de": "Verstanden. Es gibt allerdings noch ein Problem zu lösen.", "fa": "متوجه شدم. البته هنوز یک مشکل هست که باید حل شود." }, "mood": "confused" },
+        { "speaker": "Chefin", "text": { "de": "Ist das Problem lösbar?", "fa": "آیا مشکل قابل حل است؟" }, "mood": "surprised" },
+        { "speaker": "Mitarbeiter", "text": { "de": "Ja, das ist durchaus lösbar.", "fa": "بله، کاملاً قابل حل است." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "کدام ساختارهای Passiv-Alternative در این مکالمه استفاده شدند؟", "options": ["فقط sich lassen", "فقط -bar صفت‌ها", "هر سه: sich lassen، sein + zu، -bar"], "correctIndex": 2, "explanation": "سه ساختار: 'lässt sich machen'، 'ist einzuhalten'، 'lösbar/machbar'" },
+        { "question": "'Die Deadline ist einzuhalten' به چه معناست؟", "options": ["ددلاین قابل تغییر است", "ددلاین باید رعایت شود", "ددلاین گذشته است"], "correctIndex": 1, "explanation": "'sein + zu + Infinitiv' اینجا معنی الزام دارد: باید رعایت شود." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله با 'sich lassen' را مرتب کنید",
+      "words": ["leicht", "Das", "sich", "lässt", "erklären"],
+      "correctOrder": [1, 3, 2, 4, 0],
+      "correctSentence": { "de": "Das lässt sich leicht erklären.", "fa": "این به راحتی قابل توضیح است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله با 'sein + zu + Infinitiv' را مرتب کنید",
+      "words": ["Formular", "Das", "auszufüllen", "ist"],
+      "correctOrder": [1, 0, 3, 2],
+      "correctSentence": { "de": "Das Formular ist auszufüllen.", "fa": "فرم باید پر شود." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله با 'es gibt + zu' را مرتب کنید",
+      "words": ["gibt", "Hier", "zu", "es", "viel", "lernen"],
+      "correctOrder": [1, 3, 0, 4, 2, 5],
+      "correctSentence": { "de": "Hier gibt es viel zu lernen.", "fa": "اینجا چیزهای زیادی برای یادگیری هست." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "'sich lassen + Infinitiv' بیشتر در زبان محاوره استفاده می‌شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! 'sich lassen' در Umgangssprache (زبان محاوره) رایج‌تر است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "پسوند -bar فقط به اسم‌ها اضافه می‌شود.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! پسوند -bar به ریشه فعل اضافه می‌شود: essen → essbar, trinken → trinkbar" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "'sein + zu + Infinitiv' می‌تواند هم معنی «اجبار» و هم معنی «امکان» داشته باشد.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! 'Die Arbeit ist zu erledigen' = باید انجام شود (اجبار). 'Das ist leicht zu verstehen' = قابل فهم است (امکان)." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "گفتگو درباره انتخاب ساختار",
+      "scene": {
+        "location": "university",
+        "description": { "de": "Deutschkurs an der Universität", "fa": "کلاس آلمانی در دانشگاه" }
+      },
+      "lines": [
+        { "speaker": "Studentin", "text": { "de": "Wann benutze ich 'lässt sich' und wann 'ist zu'?", "fa": "کی از 'lässt sich' و کی از 'ist zu' استفاده کنم؟" }, "mood": "confused" },
+        { "speaker": "Dozent", "text": { "de": "'Lässt sich' ist lockerer und zeigt nur Möglichkeit.", "fa": "'lässt sich' راحت‌تر است و فقط امکان را نشان می‌دهد." }, "mood": "neutral" },
+        { "speaker": "Dozent", "text": { "de": "'Ist zu' kann Notwendigkeit bedeuten und ist formeller.", "fa": "'ist zu' می‌تواند ضرورت را معنی دهد و رسمی‌تر است." }, "mood": "happy" },
+        { "speaker": "Studentin", "text": { "de": "Und was ist mit '-bar' Adjektiven?", "fa": "و صفت‌های '-bar' چطور؟" }, "mood": "confused" },
+        { "speaker": "Dozent", "text": { "de": "Die beschreiben eine dauerhafte Eigenschaft: essbar, trinkbar, machbar.", "fa": "آنها یک ویژگی دائمی را توصیف می‌کنند: خوردنی، آشامیدنی، شدنی." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "تفاوت اصلی 'lässt sich' و 'ist zu' چیست؟", "options": ["معنی یکسان دارند", "lässt sich محاوره‌ای‌تر، ist zu رسمی‌تر و گاهی اجبار", "ist zu فقط در گذشته استفاده می‌شود"], "correctIndex": 1, "explanation": "'lässt sich' = امکان (محاوره)، 'ist zu' = امکان یا اجبار (رسمی)" },
+        { "question": "صفت‌های -bar چه چیزی را نشان می‌دهند؟", "options": ["عمل موقتی", "ویژگی دائمی", "دستور"], "correctIndex": 1, "explanation": "صفت‌های -bar مثل 'essbar' یک ویژگی دائمی (dauerhafte Eigenschaft) را توصیف می‌کنند." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "ساختار را با کاربرد مناسب جفت کنید",
+      "items": [
+        { "id": "i1", "text": "sich lassen + Inf." },
+        { "id": "i2", "text": "sein + zu + Inf." },
+        { "id": "i3", "text": "صفت‌های -bar/-lich" },
+        { "id": "i4", "text": "bleiben + Part. II" },
+        { "id": "i5", "text": "es gibt + zu + Inf." },
+        { "id": "i6", "text": "Passiv (werden)" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "امکان‌پذیری (محاوره)" },
+        { "id": "m2", "text": "اجبار/امکان (رسمی)" },
+        { "id": "m3", "text": "ویژگی دائمی" },
+        { "id": "m4", "text": "وضعیت باقی‌مانده" },
+        { "id": "m5", "text": "وجود کار/وظیفه" },
+        { "id": "m6", "text": "ساختار اصلی مجهول" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "این مشکل قابل حل است.",
+      "sentenceTemplate": "Dieses Problem {0} {1} lösen.",
+      "options": ["lässt", "ist", "sich", "zu"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Dieses Problem lässt sich lösen.", "fa": "این مشکل قابل حل است." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "فرم باید امضا شود.",
+      "sentenceTemplate": "Das Formular {0} zu {1}.",
+      "options": ["ist", "lässt", "unterschreiben", "unterschrieben"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Das Formular ist zu unterschreiben.", "fa": "فرم باید امضا شود." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: راهنمای رسمی",
+      "passage": {
+        "de": "Hinweise für Bewerber:\n\nDas Bewerbungsformular ist vollständig auszufüllen. Die Unterlagen lassen sich online einreichen. Bei technischen Problemen ist die Hotline zu kontaktieren.\n\nDie Frist ist unbedingt einzuhalten. Es gibt viele Dokumente hochzuladen. Die Dateien müssen lesbar und druckbar sein.\n\nDas Ergebnis bleibt abzuwarten. Die Entscheidung ist nicht anfechtbar. Weitere Informationen sind auf unserer Website abrufbar.",
+        "fa": "راهنمای متقاضیان:\n\nفرم درخواست باید کامل پر شود. مدارک می‌توانند آنلاین ارسال شوند. در صورت مشکلات فنی، باید با خط تلفن تماس گرفته شود.\n\nددلاین حتماً باید رعایت شود. مدارک زیادی هست که باید آپلود شوند. فایل‌ها باید خوانا و قابل چاپ باشند.\n\nنتیجه باید منتظر ماند. تصمیم قابل اعتراض نیست. اطلاعات بیشتر در وب‌سایت ما قابل دسترسی است."
+      },
+      "questions": [
+        { "question": "چند نوع Passiv-Alternative در این متن استفاده شده؟", "options": ["۲ نوع", "۴ نوع", "۵ نوع"], "correctIndex": 2, "explanation": "۵ نوع: ist auszufüllen (sein+zu)، lassen sich einreichen (sich lassen)، lesbar/druckbar (-bar)، bleibt abzuwarten (bleiben)، gibt ... hochzuladen (es gibt+zu)" },
+        { "question": "'Die Frist ist einzuhalten' به چه معناست؟", "options": ["ددلاین قابل تغییر است", "ددلاین باید رعایت شود", "ددلاین گذشته است"], "correctIndex": 1, "explanation": "'sein + zu + Infinitiv' اینجا الزام را نشان می‌دهد: باید رعایت شود." },
+        { "question": "چرا این متن از Passiv-Alternativen استفاده می‌کند نه Passiv ساده؟", "options": ["چون نویسنده اشتباه کرده", "چون متنوع‌تر و مناسب سبک رسمی است", "چون Passiv در آلمانی وجود ندارد"], "correctIndex": 1, "explanation": "استفاده از ساختارهای مختلف متن را متنوع‌تر و حرفه‌ای‌تر می‌کند." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die Prüfungsvorbereitung", "fa": "آمادگی امتحان" },
+      "characters": ["Leila", "Thomas"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Leila und Thomas bereiten sich auf die B2-Prüfung vor.", "fa": "لیلا و توماس برای امتحان B2 آماده می‌شوند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Leila",
+          "text": { "de": "Ich verstehe die Passiv-Alternativen nicht.", "fa": "من جایگزین‌های مجهول را نمی‌فهمم." },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Thomas",
+          "text": { "de": "Das lässt sich einfach erklären! Fangen wir mit 'sich lassen' an.", "fa": "این به راحتی قابل توضیح است! بیا با 'sich lassen' شروع کنیم." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "توماس از کدام ساختار استفاده کرد؟",
+          "options": ["sein + zu + Infinitiv", "sich lassen + Infinitiv", "bleiben + Partizip II"],
+          "correctIndex": 1,
+          "explanation": "'Das lässt sich erklären' = sich lassen + Infinitiv"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Thomas",
+          "text": { "de": "Schau, 'machbar' und 'lösbar' sind auch Passiv-Alternativen.", "fa": "ببین، 'machbar' و 'lösbar' هم جایگزین‌های مجهول هستند." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Leila",
+          "text": { "de": "Ah, das sind die -bar Adjektive!", "fa": "آها، اینها صفت‌های -bar هستند!" },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "صفت‌های -bar از چه ساخته می‌شوند؟",
+          "options": ["از اسم", "از ریشه فعل", "از صفت دیگر"],
+          "correctIndex": 1,
+          "explanation": "machen → machbar, lösen → lösbar (از ریشه فعل)"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Thomas",
+          "text": { "de": "Jetzt zur formellen Variante: 'Die Aufgabe ist zu erledigen.'", "fa": "حالا به شکل رسمی: 'کار باید انجام شود.'" },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Leila",
+          "text": { "de": "Das klingt wie ein offizielles Dokument!", "fa": "این شبیه یک سند رسمی به نظر می‌رسد!" },
+          "mood": "surprised"
+        },
+        {
+          "type": "question",
+          "question": "کدام ساختار برای متون رسمی مناسب‌تر است؟",
+          "options": ["sich lassen + Inf.", "sein + zu + Inf.", "es gibt + zu + Inf."],
+          "correctIndex": 1,
+          "explanation": "'sein + zu + Infinitiv' رسمی‌تر است و در متون اداری و قانونی رایج است."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: Passiv-Alternativen",
+      "instruction": "کدام ساختار درست است؟",
+      "questions": [
+        { "prompt": "محاوره‌ای‌تر:", "left": "lässt sich", "right": "ist zu", "correctSide": "left" },
+        { "prompt": "رسمی‌تر:", "left": "lässt sich", "right": "ist zu", "correctSide": "right" },
+        { "prompt": "ویژگی دائمی:", "left": "machbar", "right": "lässt sich machen", "correctSide": "left" },
+        { "prompt": "وجود کار:", "left": "es gibt zu tun", "right": "ist zu tun", "correctSide": "left" },
+        { "prompt": "وضعیت باقی‌مانده:", "left": "bleibt abzuwarten", "right": "lässt sich warten", "correctSide": "left" },
+        { "prompt": "قابل خوردن:", "left": "esslich", "right": "essbar", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Das Problem lässt sich leicht lösen.",
+      "translation": "مشکل به راحتی قابل حل است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Die Aufgabe ist bis morgen zu erledigen.",
+      "translation": "کار باید تا فردا انجام شود."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Es gibt noch viel zu tun.",
+      "translation": "هنوز کار زیادی هست که باید انجام شود."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: Passiv-Alternativen",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "'lässt sich machen' =", "options": ["قابل انجام است", "باید انجام شود"], "correctAnswerIndex": 0 },
+        { "question": "'ist zu erledigen' =", "options": ["باید انجام شود", "قابل انجام است"], "correctAnswerIndex": 0 },
+        { "question": "essbar =", "options": ["خوردنی", "نوشیدنی"], "correctAnswerIndex": 0 },
+        { "question": "کدام رسمی‌تر است؟", "options": ["sein + zu", "sich lassen"], "correctAnswerIndex": 0 },
+        { "question": "'bleibt abzuwarten' =", "options": ["باید منتظر ماند", "قابل انتظار است"], "correctAnswerIndex": 0 },
+        { "question": "'es gibt zu tun' =", "options": ["کار هست", "کار نیست"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: Passiv-Alternativen",
+      "pairs": [
+        { "de": "lässt sich machen", "fa": "قابل انجام است" },
+        { "de": "ist zu erledigen", "fa": "باید انجام شود" },
+        { "de": "essbar", "fa": "خوردنی" },
+        { "de": "bleibt abzuwarten", "fa": "باید منتظر ماند" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات مربوط به Passiv-Alternativen را پیدا کنید",
+      "targetWords": ["machbar", "lösbar", "essbar", "trinkbar", "lesbar", "Alternative"],
+      "gridSize": { "rows": 12, "cols": 12 },
+      "timeLimit": 150
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "machbar", "fa": "قابل انجام", "options": ["غیرممکن", "قابل انجام", "انجام شده", "انجام نشده"], "correctIndex": 1 },
+        { "de": "die Umgangssprache", "fa": "زبان محاوره", "options": ["زبان نوشتاری", "زبان محاوره", "زبان علمی", "زبان قدیمی"], "correctIndex": 1 },
+        { "de": "abzuwarten", "fa": "منتظر ماندنی", "options": ["تمام شده", "شروع شده", "منتظر ماندنی", "فراموش شده"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! جمع‌بندی Passiv-Alternativen تمام شد!",
+      "message": "شما همه جایگزین‌های مجهول در آلمانی را یاد گرفتید!",
+      "keyPoints": [
+        "**sich lassen + Inf.**: امکان‌پذیری (محاوره) - Das lässt sich machen.",
+        "**sein + zu + Inf.**: الزام یا امکان (رسمی) - Die Arbeit ist zu erledigen.",
+        "**صفت‌های -bar/-lich**: ویژگی دائمی - essbar, verständlich, machbar",
+        "**bleiben + Part. II**: وضعیت باقی‌مانده - Das bleibt abzuwarten.",
+        "**es gibt + zu + Inf.**: وجود کار/وظیفه - Es gibt viel zu tun.",
+        "انتخاب ساختار بر اساس رسمیت و معنی مورد نظر",
+        "'sein + zu' با قید (leicht, schwer) معمولاً معنی امکان دارد"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "die Alternative", "fa": "جایگزین، گزینه" } },
+        { "word": { "de": "machbar", "fa": "قابل انجام، شدنی" } },
+        { "word": { "de": "verständlich", "fa": "قابل فهم، قابل درک" } },
+        { "word": { "de": "abzuwarten", "fa": "منتظر ماندنی" } },
+        { "word": { "de": "die Umgangssprache", "fa": "زبان محاوره" } },
+        { "word": { "de": "die Fachsprache", "fa": "زبان تخصصی" } }
+      ]
+    }
+  ]
+}
