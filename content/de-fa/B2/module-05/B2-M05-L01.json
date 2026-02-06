@@ -1,0 +1,525 @@
+{
+  "id": "B2-M05-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Konnektoren für Argumentation: Kontrast", "fa": "کانکتورهای استدلال: تضاد" },
+  "description": "یاد بگیرید چگونه از کانکتورهای تضاد مانند jedoch، allerdings، dennoch، trotzdem، hingegen و dagegen در متون آکادمیک و استدلال‌های منطقی استفاده کنید.",
+  "level": "B2",
+  "module": 5,
+  "lessonNumber": 1,
+  "totalSteps": 45,
+  "estimatedMinutes": 35,
+  "vocabulary": [
+    { "de": "jedoch", "fa": "با این حال، اما", "grammar": { "pos": "adverb" } },
+    { "de": "allerdings", "fa": "البته، با این وجود", "grammar": { "pos": "adverb" } },
+    { "de": "dennoch", "fa": "با این وجود، با این همه", "grammar": { "pos": "adverb" } },
+    { "de": "trotzdem", "fa": "با وجود این، علیرغم آن", "grammar": { "pos": "adverb" } },
+    { "de": "hingegen", "fa": "برعکس، از طرف دیگر", "grammar": { "pos": "adverb" } },
+    { "de": "dagegen", "fa": "در مقابل، برخلاف آن", "grammar": { "pos": "adverb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "کانکتورهای تضاد چیستند؟",
+      "content": "**کانکتورهای تضاد (Kontrastkonnektoren)**\n\nاین کانکتورها برای بیان **تضاد منطقی** یا **تقابل** بین دو ایده استفاده می‌شوند. در نوشتار آکادمیک و استدلال‌های رسمی بسیار مهم هستند.\n\n**کانکتورهای این درس:**\n\n| کانکتور | معنی | جایگاه |\n|---------|------|--------|\n| jedoch | با این حال | ۰ یا ۱ |\n| allerdings | البته، اما | ۱ |\n| dennoch | با این وجود | ۱ |\n| trotzdem | علیرغم آن | ۱ |\n| hingegen | برعکس | ۱ |\n| dagegen | در مقابل | ۱ |\n\n**جایگاه ۰** = قبل از فاعل (مثل aber)\n**جایگاه ۱** = بعد از فعل (مثل قید معمولی)\n\n**نکته:** تفاوت اصلی این کانکتورها در **سطح رسمیت** و **نوع تضاد** است.",
+      "examples": [
+        { "de": "Das Argument ist logisch. Jedoch gibt es Gegenbeweise.", "fa": "استدلال منطقی است. با این حال، مدارک مخالفی وجود دارد." },
+        { "de": "Die Theorie ist populär, sie ist allerdings umstritten.", "fa": "این نظریه محبوب است، البته بحث‌برانگیز است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "jedoch", "fa": "با این حال، اما" },
+      "example": { "text": { "de": "Die Studie ist interessant. Jedoch fehlen wichtige Daten.", "fa": "مطالعه جالب است. با این حال، داده‌های مهمی کم است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "jedoch",
+      "translation": "با این حال",
+      "syllables": ["je", "doch"],
+      "distractors": ["ja", "dock", "joch"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "allerdings", "fa": "البته، با این وجود" },
+      "example": { "text": { "de": "Der Plan klingt gut, allerdings ist er teuer.", "fa": "برنامه خوب به نظر می‌رسد، البته گران است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "allerdings",
+      "translation": "البته، با این وجود",
+      "syllables": ["al", "ler", "dings"],
+      "distractors": ["el", "lar", "dangs", "dinks"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "dennoch", "fa": "با این وجود، با این همه" },
+      "example": { "text": { "de": "Es regnete stark. Dennoch gingen wir spazieren.", "fa": "باران شدید می‌بارید. با این وجود، پیاده‌روی کردیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "dennoch",
+      "translation": "با این وجود",
+      "syllables": ["den", "noch"],
+      "distractors": ["dan", "nuch", "dun"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "جایگاه jedoch در جمله",
+      "content": "**jedoch** انعطاف‌پذیرترین کانکتور تضاد است:\n\n**جایگاه ۰ (قبل از فاعل):**\n| جمله اول | جمله دوم |\n|----------|----------|\n| Das Argument ist stark. | **Jedoch** gibt es Kritik. |\n| | با این حال، انتقادی وجود دارد. |\n\n**جایگاه ۱ (بعد از فعل):**\n| جمله اول | جمله دوم |\n|----------|----------|\n| Das Argument ist stark. | Es gibt **jedoch** Kritik. |\n| | البته انتقادی وجود دارد. |\n\n**جایگاه ۱ در Nebensatz:**\n| جمله |\n|------|\n| ..., obwohl es **jedoch** schwierig ist. |\n\n**نکته:** در نوشتار آکادمیک، **jedoch** رسمی‌تر از **aber** است.",
+      "examples": [
+        { "de": "Die Methode ist neu. Jedoch wurde sie bereits kritisiert.", "fa": "این روش جدید است. با این حال، قبلاً مورد انتقاد قرار گرفته است." },
+        { "de": "Die Methode ist neu. Sie wurde jedoch bereits kritisiert.", "fa": "این روش جدید است. البته قبلاً مورد انتقاد قرار گرفته است." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله از نظر جایگاه jedoch درست است؟",
+      "options": [
+        "Jedoch die Studie ist unvollständig.",
+        "Die Studie ist jedoch unvollständig.",
+        "Die Studie unvollständig ist jedoch.",
+        "Die jedoch Studie ist unvollständig."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! jedoch در جایگاه ۱ (بعد از فعل) درست است.", "incorrect": "jedoch باید یا در ابتدا (با فعل بعد از آن) یا بعد از فعل بیاید." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام کانکتور در نوشتار آکادمیک رسمی‌تر از aber است؟",
+      "options": [
+        "trotzdem",
+        "jedoch",
+        "dagegen",
+        "همه به یک اندازه رسمی هستند"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "درست! jedoch رسمی‌تر از aber است و در متون آکادمیک ترجیح داده می‌شود.", "incorrect": "jedoch رسمی‌ترین جایگزین aber در متون آکادمیک است." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "trotzdem", "fa": "با وجود این، علیرغم آن" },
+      "example": { "text": { "de": "Es war kalt. Trotzdem ging er ohne Jacke.", "fa": "هوا سرد بود. با وجود این، بدون ژاکت رفت." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "trotzdem",
+      "translation": "با وجود این",
+      "syllables": ["trotz", "dem"],
+      "distractors": ["tratz", "dam", "trolz"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "hingegen", "fa": "برعکس، از طرف دیگر" },
+      "example": { "text": { "de": "Er ist optimistisch. Sie hingegen ist pessimistisch.", "fa": "او خوش‌بین است. او برعکس بدبین است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "hingegen",
+      "translation": "برعکس",
+      "syllables": ["hin", "ge", "gen"],
+      "distractors": ["han", "ga", "gun", "hen"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "dagegen", "fa": "در مقابل، برخلاف آن" },
+      "example": { "text": { "de": "Die erste Gruppe war erfolgreich. Die zweite dagegen scheiterte.", "fa": "گروه اول موفق بود. گروه دوم در مقابل شکست خورد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "dagegen",
+      "translation": "در مقابل",
+      "syllables": ["da", "ge", "gen"],
+      "distractors": ["de", "ga", "gun", "do"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "کانکتور مناسب را انتخاب کنید",
+      "sentence": "Die Theorie ist populär. {0} gibt es wenig empirische Beweise.",
+      "options": ["Jedoch", "Dagegen", "Hingegen", "Allerdings"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Jedoch برای بیان تضاد منطقی بین محبوبیت و کمبود مدرک مناسب است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "کانکتور مناسب را انتخاب کنید",
+      "sentence": "Er arbeitet viel. Er ist {0} nicht müde.",
+      "options": ["dennoch", "dagegen", "hingegen", "jedoch"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "dennoch نشان‌دهنده این است که نتیجه برخلاف انتظار است (کار زیاد ولی خسته نیست)." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "کانکتور مناسب را انتخاب کنید",
+      "sentence": "Das alte Modell war langsam. Das neue Modell {0} ist schnell.",
+      "options": ["jedoch", "dennoch", "hingegen", "trotzdem"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "hingegen برای مقایسه مستقیم دو چیز (مدل قدیم vs جدید) استفاده می‌شود." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "تفاوت معنایی کانکتورهای تضاد",
+      "content": "**تفاوت‌های ظریف بین کانکتورها:**\n\n| کانکتور | نوع تضاد | مثال |\n|---------|----------|------|\n| **jedoch** | تضاد منطقی رسمی | این درست است. **اما** مشکلاتی وجود دارد. |\n| **allerdings** | محدودیت یا استثنا | خوب است، **البته** گران هم هست. |\n| **dennoch** | نتیجه خلاف انتظار | سخت بود. **با این وجود** موفق شدیم. |\n| **trotzdem** | مشابه dennoch، کمی غیررسمی‌تر | سخت بود. **علیرغم آن** موفق شدیم. |\n| **hingegen** | مقایسه مستقیم | او موافق است. او **برعکس** مخالف. |\n| **dagegen** | تقابل آشکار | A درست است. B **در مقابل** غلط است. |\n\n**نکته مهم:**\n- **dennoch** و **trotzdem** تقریباً مترادف هستند\n- **hingegen** و **dagegen** برای مقایسه مستقیم استفاده می‌شوند\n- **allerdings** نرم‌تر و کمتر تقابلی است",
+      "examples": [
+        { "de": "Die Kosten sind hoch, allerdings lohnt sich die Investition.", "fa": "هزینه‌ها بالاست، البته سرمایه‌گذاری ارزشش را دارد." },
+        { "de": "Der Norden ist kalt. Der Süden hingegen ist warm.", "fa": "شمال سرد است. جنوب برعکس گرم است." }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "بحث آکادمیک",
+      "scene": {
+        "location": "university seminar room",
+        "description": { "de": "In einem Seminarraum an der Universität", "fa": "در یک سالن سمینار در دانشگاه" }
+      },
+      "lines": [
+        { "speaker": "Professor", "text": { "de": "Diese Studie zeigt positive Ergebnisse. Jedoch müssen wir kritisch bleiben.", "fa": "این مطالعه نتایج مثبتی نشان می‌دهد. با این حال، باید انتقادی بمانیم." }, "mood": "neutral" },
+        { "speaker": "Student", "text": { "de": "Sie haben recht. Allerdings sind die Daten sehr umfangreich.", "fa": "حق با شماست. البته داده‌ها بسیار جامع هستند." }, "mood": "neutral" },
+        { "speaker": "Professor", "text": { "de": "Die Methodik ist solide. Die Stichprobe ist hingegen zu klein.", "fa": "روش‌شناسی محکم است. نمونه برعکس خیلی کوچک است." }, "mood": "confused" },
+        { "speaker": "Student", "text": { "de": "Dennoch liefert die Studie wertvolle Erkenntnisse.", "fa": "با این وجود، مطالعه بینش‌های ارزشمندی ارائه می‌دهد." }, "mood": "happy" },
+        { "speaker": "Professor", "text": { "de": "Das stimmt. Trotzdem brauchen wir weitere Forschung.", "fa": "درست است. علیرغم آن، به تحقیقات بیشتری نیاز داریم." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "چه مشکلی با مطالعه وجود دارد؟", "options": ["داده‌ها کم است", "نمونه کوچک است", "روش‌شناسی ضعیف است"], "correctIndex": 1, "explanation": "پروفسور گفت: Die Stichprobe ist hingegen zu klein (نمونه خیلی کوچک است)." },
+        { "question": "دانشجو چه نظری داشت؟", "options": ["مطالعه بی‌ارزش است", "مطالعه بینش‌های ارزشمندی دارد", "تحقیق لازم نیست"], "correctIndex": 1, "explanation": "دانشجو گفت: Dennoch liefert die Studie wertvolle Erkenntnisse." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را با کانکتور تضاد مرتب کنید",
+      "words": ["Jedoch", "Kritiker", "die", "anderer", "Meinung", "sind"],
+      "correctOrder": [0, 4, 1, 3, 2, 5],
+      "correctSentence": { "de": "Jedoch sind die Kritiker anderer Meinung.", "fa": "با این حال، منتقدان نظر دیگری دارند." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["ist", "teuer", "Das", "Produkt", "allerdings", "gut"],
+      "correctOrder": [2, 3, 0, 5, 4, 1],
+      "correctSentence": { "de": "Das Produkt ist gut, allerdings teuer.", "fa": "محصول خوب است، البته گران." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["Dennoch", "das", "Experiment", "war", "erfolgreich"],
+      "correctOrder": [0, 3, 1, 2, 4],
+      "correctSentence": { "de": "Dennoch war das Experiment erfolgreich.", "fa": "با این وجود، آزمایش موفق بود." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "کانکتور jedoch می‌تواند هم در جایگاه ۰ (ابتدای جمله) و هم در جایگاه ۱ (بعد از فعل) قرار بگیرد.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! jedoch انعطاف‌پذیر است و می‌تواند در هر دو جایگاه استفاده شود." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "کانکتورهای hingegen و dagegen برای نشان دادن نتیجه خلاف انتظار استفاده می‌شوند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! hingegen و dagegen برای مقایسه مستقیم دو چیز استفاده می‌شوند، نه نتیجه خلاف انتظار. dennoch و trotzdem برای نتیجه خلاف انتظار هستند." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "allerdings در جایگاه ۱ قرار می‌گیرد، یعنی بعد از فعل صرف‌شده.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! allerdings همیشه در جایگاه ۱ قرار می‌گیرد: Er ist allerdings müde." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جمله را با کانکتور مناسب کامل کنید",
+      "sentence": "Die erste Methode ist schnell. Die zweite {0} ist genauer.",
+      "options": ["jedoch", "dennoch", "hingegen", "trotzdem"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "hingegen برای مقایسه مستقیم دو روش استفاده می‌شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جمله را با کانکتور مناسب کامل کنید",
+      "sentence": "Das Wetter war schlecht. {0} fand das Festival statt.",
+      "options": ["Hingegen", "Allerdings", "Trotzdem", "Dagegen"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "Trotzdem نشان می‌دهد که علیرغم هوای بد، فستیوال برگزار شد (نتیجه خلاف انتظار)." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جمله را با کانکتور مناسب کامل کنید",
+      "sentence": "Die Idee ist interessant, sie ist {0} schwer umsetzbar.",
+      "options": ["dennoch", "allerdings", "hingegen", "dagegen"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "allerdings برای بیان محدودیت یا استثنا استفاده می‌شود: ایده جالب است، البته سخت اجرا می‌شود." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "مقایسه دو پروژه",
+      "scene": {
+        "location": "office meeting room",
+        "description": { "de": "In einem Besprechungsraum im Büro", "fa": "در یک اتاق جلسه در دفتر" }
+      },
+      "lines": [
+        { "speaker": "Manager", "text": { "de": "Projekt A hat ein großes Budget. Projekt B dagegen ist unterfinanziert.", "fa": "پروژه A بودجه بزرگی دارد. پروژه B در مقابل کم‌بودجه است." }, "mood": "neutral" },
+        { "speaker": "Analyst", "text": { "de": "Das stimmt. Allerdings zeigt Projekt B bessere Ergebnisse.", "fa": "درست است. البته پروژه B نتایج بهتری نشان می‌دهد." }, "mood": "surprised" },
+        { "speaker": "Manager", "text": { "de": "Interessant! Das Team von A ist größer. Das Team von B hingegen arbeitet effizienter.", "fa": "جالب است! تیم A بزرگ‌تر است. تیم B برعکس کارآمدتر کار می‌کند." }, "mood": "happy" },
+        { "speaker": "Analyst", "text": { "de": "Trotzdem braucht Projekt B mehr Ressourcen für die nächste Phase.", "fa": "علیرغم آن، پروژه B برای فاز بعدی منابع بیشتری نیاز دارد." }, "mood": "neutral" },
+        { "speaker": "Manager", "text": { "de": "Dennoch sollten wir in Projekt B investieren.", "fa": "با این وجود، باید در پروژه B سرمایه‌گذاری کنیم." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "کدام پروژه نتایج بهتری دارد؟", "options": ["پروژه A", "پروژه B", "هر دو یکسان"], "correctIndex": 1, "explanation": "تحلیلگر گفت: Projekt B zeigt bessere Ergebnisse." },
+        { "question": "تصمیم نهایی مدیر چه بود؟", "options": ["سرمایه‌گذاری در پروژه A", "سرمایه‌گذاری در پروژه B", "لغو هر دو پروژه"], "correctIndex": 1, "explanation": "مدیر گفت: Dennoch sollten wir in Projekt B investieren." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "کانکتورها را با نوع تضادشان جفت کنید",
+      "items": [
+        { "id": "i1", "text": "jedoch" },
+        { "id": "i2", "text": "allerdings" },
+        { "id": "i3", "text": "dennoch" },
+        { "id": "i4", "text": "trotzdem" },
+        { "id": "i5", "text": "hingegen" },
+        { "id": "i6", "text": "dagegen" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "تضاد رسمی آکادمیک" },
+        { "id": "m2", "text": "محدودیت یا استثنا" },
+        { "id": "m3", "text": "نتیجه خلاف انتظار (رسمی)" },
+        { "id": "m4", "text": "نتیجه خلاف انتظار (کمتر رسمی)" },
+        { "id": "m5", "text": "مقایسه مستقیم (برعکس)" },
+        { "id": "m6", "text": "تقابل آشکار (در مقابل)" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "این نظریه جالب است. با این حال، مدارک کافی وجود ندارد.",
+      "sentenceTemplate": "Die Theorie ist interessant. {0} gibt es nicht genug {1}.",
+      "options": ["Jedoch", "Dennoch", "Beweise", "Daten", "Trotzdem", "Hingegen"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Die Theorie ist interessant. Jedoch gibt es nicht genug Beweise.", "fa": "این نظریه جالب است. با این حال، مدارک کافی وجود ندارد." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "شمال سرد است. جنوب برعکس گرم است.",
+      "sentenceTemplate": "Der Norden ist kalt. Der Süden {0} ist {1}.",
+      "options": ["dagegen", "hingegen", "dennoch", "warm", "kalt", "heiß"],
+      "correctAnswers": [1, 3],
+      "correctTranslation": { "de": "Der Norden ist kalt. Der Süden hingegen ist warm.", "fa": "شمال سرد است. جنوب برعکس گرم است." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: مقاله درباره انرژی‌های تجدیدپذیر",
+      "passage": {
+        "de": "Erneuerbare Energien sind die Zukunft der Stromversorgung. Jedoch sind die Anfangsinvestitionen hoch. Solar- und Windenergie werden immer günstiger, allerdings hängen sie stark vom Wetter ab.\n\nKohle und Gas liefern konstante Energie. Erneuerbare Quellen hingegen sind wetterabhängig. Dennoch investieren viele Länder massiv in grüne Technologien.\n\nKritiker argumentieren, dass die Infrastruktur fehlt. Trotzdem wächst der Anteil erneuerbarer Energien weltweit. Atomkraft ist CO2-neutral, dagegen ist sie wegen der Risiken umstritten.",
+        "fa": "انرژی‌های تجدیدپذیر آینده تأمین برق هستند. با این حال، سرمایه‌گذاری‌های اولیه بالاست. انرژی خورشیدی و بادی ارزان‌تر می‌شوند، البته به شدت به آب‌وهوا وابسته هستند.\n\nزغال‌سنگ و گاز انرژی ثابت تولید می‌کنند. منابع تجدیدپذیر برعکس به آب‌وهوا وابسته هستند. با این وجود، بسیاری از کشورها به شدت در فناوری‌های سبز سرمایه‌گذاری می‌کنند.\n\nمنتقدان استدلال می‌کنند که زیرساخت وجود ندارد. علیرغم آن، سهم انرژی‌های تجدیدپذیر در جهان رشد می‌کند. انرژی هسته‌ای CO2-خنثی است، در مقابل به دلیل خطرات بحث‌برانگیز است."
+      },
+      "questions": [
+        { "question": "چند کانکتور تضاد در این متن استفاده شده؟", "options": ["۴ کانکتور", "۶ کانکتور", "۸ کانکتور"], "correctIndex": 1, "explanation": "۶ کانکتور: jedoch، allerdings، hingegen، dennoch، trotzdem، dagegen" },
+        { "question": "مشکل اصلی انرژی‌های تجدیدپذیر چیست؟", "options": ["گران هستند", "به آب‌وهوا وابسته هستند", "هر دو مورد"], "correctIndex": 2, "explanation": "متن هم به هزینه بالای اولیه (jedoch) و هم به وابستگی به آب‌وهوا (allerdings) اشاره می‌کند." },
+        { "question": "چرا انرژی هسته‌ای بحث‌برانگیز است؟", "options": ["چون گران است", "چون CO2 تولید می‌کند", "به دلیل خطرات"], "correctIndex": 2, "explanation": "متن می‌گوید: dagegen ist sie wegen der Risiken umstritten (در مقابل به دلیل خطرات بحث‌برانگیز است)." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die Debatte", "fa": "مناظره" },
+      "characters": ["Anna", "Max"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Anna und Max diskutieren über Homeoffice vs. Büroarbeit.", "fa": "آنا و ماکس درباره کار از خانه در مقابل کار در دفتر بحث می‌کنند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Homeoffice ist flexibler. Man spart Zeit beim Pendeln.", "fa": "کار از خانه انعطاف‌پذیرتر است. در رفت‌وآمد وقت صرفه‌جویی می‌شود." },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Max",
+          "text": { "de": "Das stimmt. Allerdings fehlt der persönliche Kontakt zu Kollegen.", "fa": "درست است. البته تماس شخصی با همکاران کم می‌شود." },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "ماکس از کدام کانکتور استفاده کرد؟",
+          "options": ["jedoch", "allerdings", "dennoch"],
+          "correctIndex": 1,
+          "explanation": "ماکس از allerdings برای بیان یک محدودیت استفاده کرد."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Ja, das ist ein Nachteil. Dennoch bevorzuge ich die Flexibilität.", "fa": "بله، این یک عیب است. با این وجود، انعطاف‌پذیری را ترجیح می‌دهم." },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Max",
+          "text": { "de": "Im Büro ist man produktiver. Zu Hause hingegen hat man mehr Ablenkungen.", "fa": "در دفتر آدم مولدتر است. در خانه برعکس حواس‌پرتی بیشتر است." },
+          "mood": "confused"
+        },
+        {
+          "type": "question",
+          "question": "hingegen برای چه نوع تضادی استفاده شد؟",
+          "options": ["نتیجه خلاف انتظار", "مقایسه مستقیم", "محدودیت"],
+          "correctIndex": 1,
+          "explanation": "hingegen برای مقایسه مستقیم دفتر و خانه استفاده شد."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Trotzdem arbeiten viele erfolgreich von zu Hause.", "fa": "علیرغم آن، خیلی‌ها با موفقیت از خانه کار می‌کنند." },
+          "mood": "excited"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Sie einigen sich auf ein hybrides Modell.", "fa": "آن‌ها روی یک مدل ترکیبی توافق می‌کنند." }
+        },
+        {
+          "type": "question",
+          "question": "نتیجه بحث چه بود؟",
+          "options": ["فقط کار از خانه", "فقط کار در دفتر", "مدل ترکیبی"],
+          "correctIndex": 2,
+          "explanation": "آن‌ها روی ein hybrides Modell (مدل ترکیبی) توافق کردند."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: کانکتور درست را انتخاب کنید!",
+      "instruction": "کدام کانکتور مناسب‌تر است؟",
+      "questions": [
+        { "prompt": "تضاد رسمی آکادمیک:", "left": "jedoch", "right": "trotzdem", "correctSide": "left" },
+        { "prompt": "محدودیت نرم:", "left": "dennoch", "right": "allerdings", "correctSide": "right" },
+        { "prompt": "مقایسه مستقیم:", "left": "hingegen", "right": "jedoch", "correctSide": "left" },
+        { "prompt": "نتیجه خلاف انتظار:", "left": "dagegen", "right": "dennoch", "correctSide": "right" },
+        { "prompt": "تقابل آشکار:", "left": "dagegen", "right": "allerdings", "correctSide": "left" },
+        { "prompt": "جایگزین رسمی aber:", "left": "trotzdem", "right": "jedoch", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Die Studie ist interessant. Jedoch fehlen wichtige Daten.",
+      "translation": "مطالعه جالب است. با این حال، داده‌های مهمی کم است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Der Plan ist gut, allerdings sehr teuer.",
+      "translation": "برنامه خوب است، البته خیلی گران."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Es war schwierig. Dennoch haben wir es geschafft.",
+      "translation": "سخت بود. با این وجود، موفق شدیم."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: کانکتورهای تضاد!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "jedoch در کدام جایگاه می‌تواند بیاید؟", "options": ["فقط ۰", "۰ یا ۱"], "correctAnswerIndex": 1 },
+        { "question": "کدام برای مقایسه مستقیم است؟", "options": ["dennoch", "hingegen"], "correctAnswerIndex": 1 },
+        { "question": "allerdings چه نوع تضادی دارد؟", "options": ["محدودیت", "تقابل آشکار"], "correctAnswerIndex": 0 },
+        { "question": "کدام غیررسمی‌تر است؟", "options": ["dennoch", "trotzdem"], "correctAnswerIndex": 1 },
+        { "question": "dagegen معنی چیست؟", "options": ["با این وجود", "در مقابل"], "correctAnswerIndex": 1 },
+        { "question": "کدام رسمی‌تر از aber است؟", "options": ["jedoch", "trotzdem"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: کانکتورها و معانی",
+      "pairs": [
+        { "de": "jedoch", "fa": "با این حال" },
+        { "de": "allerdings", "fa": "البته، اما" },
+        { "de": "dennoch", "fa": "با این وجود" },
+        { "de": "hingegen", "fa": "برعکس" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کانکتورها",
+      "instruction": "کانکتورهای تضاد را در جدول پیدا کنید",
+      "targetWords": ["jedoch", "allerdings", "dennoch", "trotzdem", "hingegen", "dagegen"],
+      "gridSize": { "rows": 10, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "jedoch", "fa": "با این حال", "options": ["البته", "با این حال", "برعکس", "در مقابل"], "correctIndex": 1 },
+        { "de": "hingegen", "fa": "برعکس", "options": ["با این وجود", "علیرغم", "برعکس", "البته"], "correctIndex": 2 },
+        { "de": "dennoch", "fa": "با این وجود", "options": ["با این وجود", "در مقابل", "البته", "برعکس"], "correctIndex": 0 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما کانکتورهای تضاد برای استدلال را یاد گرفتید!",
+      "keyPoints": [
+        "jedoch: تضاد رسمی آکادمیک - جایگاه ۰ یا ۱",
+        "allerdings: محدودیت یا استثنا - جایگاه ۱",
+        "dennoch: نتیجه خلاف انتظار (رسمی) - جایگاه ۱",
+        "trotzdem: نتیجه خلاف انتظار (کمتر رسمی) - جایگاه ۱",
+        "hingegen: مقایسه مستقیم (برعکس) - جایگاه ۱",
+        "dagegen: تقابل آشکار (در مقابل) - جایگاه ۱",
+        "jedoch رسمی‌تر از aber است و در متون آکادمیک ترجیح داده می‌شود"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "jedoch", "fa": "با این حال، اما" } },
+        { "word": { "de": "allerdings", "fa": "البته، با این وجود" } },
+        { "word": { "de": "dennoch", "fa": "با این وجود، با این همه" } },
+        { "word": { "de": "trotzdem", "fa": "با وجود این، علیرغم آن" } },
+        { "word": { "de": "hingegen", "fa": "برعکس، از طرف دیگر" } },
+        { "word": { "de": "dagegen", "fa": "در مقابل، برخلاف آن" } }
+      ]
+    }
+  ]
+}

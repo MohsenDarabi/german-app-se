@@ -1,0 +1,532 @@
+{
+  "id": "B2-M05-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Konnektoren für Argumentation: Ergänzung", "fa": "کانکتورهای استدلال: افزودن اطلاعات" },
+  "description": "یاد بگیرید چگونه از کانکتورهای افزایشی و توضیحی استفاده کنید - außerdem، darüber hinaus، zudem، ferner، überdies و hinzu kommt, dass...",
+  "level": "B2",
+  "module": 5,
+  "lessonNumber": 3,
+  "totalSteps": 45,
+  "estimatedMinutes": 30,
+  "vocabulary": [
+    { "de": "außerdem", "fa": "علاوه بر این، همچنین", "grammar": { "pos": "adverb" } },
+    { "de": "darüber hinaus", "fa": "افزون بر این، علاوه بر آن", "grammar": { "pos": "adverb" } },
+    { "de": "zudem", "fa": "به علاوه، همچنین", "grammar": { "pos": "adverb" } },
+    { "de": "ferner", "fa": "همچنین، به‌علاوه (رسمی)", "grammar": { "pos": "adverb" } },
+    { "de": "überdies", "fa": "افزون بر این، علاوه بر آن (رسمی)", "grammar": { "pos": "adverb" } },
+    { "de": "hinzu kommt", "fa": "به این اضافه می‌شود که", "grammar": { "pos": "phrase" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "کانکتورهای افزایشی چیست؟",
+      "content": "**Additive Konnektoren = کانکتورهای افزایشی**\n\nاین کانکتورها برای **افزودن اطلاعات** و **تقویت استدلال** استفاده می‌شوند:\n\n| کانکتور | معنی | سطح رسمیت |\n|---------|------|----------|\n| **außerdem** | علاوه بر این | روزمره/نوشتار |\n| **darüber hinaus** | افزون بر این | رسمی/نوشتار |\n| **zudem** | به‌علاوه | نوشتار |\n| **ferner** | همچنین | بسیار رسمی |\n| **überdies** | افزون بر این | بسیار رسمی |\n| **hinzu kommt, dass...** | به این اضافه می‌شود که... | رسمی |\n\n**نکته مهم:** همه این کانکتورها در **جایگاه اول** جمله قرار می‌گیرند و فعل در **جایگاه دوم** می‌آید!\n\n**چرا مهم است؟** در نوشتار دانشگاهی، مقالات و بحث‌های رسمی بسیار پرکاربرد هستند.",
+      "examples": [
+        { "de": "Außerdem ist er sehr kompetent.", "fa": "علاوه بر این، او بسیار با صلاحیت است." },
+        { "de": "Darüber hinaus spricht sie drei Sprachen.", "fa": "افزون بر این، او سه زبان صحبت می‌کند." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "außerdem", "fa": "علاوه بر این، همچنین" },
+      "example": { "text": { "de": "Der Film war spannend. Außerdem hatte er tolle Schauspieler.", "fa": "فیلم هیجان‌انگیز بود. علاوه بر این، بازیگران عالی داشت." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "außerdem",
+      "translation": "علاوه بر این",
+      "syllables": ["au", "ßer", "dem"],
+      "distractors": ["ou", "ser", "dam"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "darüber hinaus", "fa": "افزون بر این، علاوه بر آن" },
+      "example": { "text": { "de": "Er hat Erfahrung. Darüber hinaus ist er sehr motiviert.", "fa": "او تجربه دارد. افزون بر این، بسیار با انگیزه است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "darüber",
+      "translation": "درباره آن",
+      "syllables": ["da", "rü", "ber"],
+      "distractors": ["du", "ru", "bar"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "zudem", "fa": "به علاوه، همچنین" },
+      "example": { "text": { "de": "Das Haus ist groß. Zudem hat es einen schönen Garten.", "fa": "خانه بزرگ است. به‌علاوه، باغ زیبایی دارد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "zudem",
+      "translation": "به‌علاوه",
+      "syllables": ["zu", "dem"],
+      "distractors": ["zo", "dam", "zom"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "جایگاه فعل با کانکتورهای افزایشی",
+      "content": "**Position 1 + Verb in Position 2**\n\nتمام این کانکتورها در جایگاه اول قرار می‌گیرند و فعل بلافاصله بعد از آنها می‌آید:\n\n| کانکتور | + فعل | + بقیه جمله |\n|---------|-------|------------|\n| **Außerdem** | ist | er pünktlich. |\n| **Darüber hinaus** | spricht | sie Deutsch. |\n| **Zudem** | hat | das Hotel einen Pool. |\n| **Ferner** | möchte | ich erwähnen, dass... |\n| **Überdies** | verfügt | er über Erfahrung. |\n\n**مقایسه با und:**\n- Er ist nett **und** er ist intelligent. (und در وسط)\n- Er ist nett. **Außerdem** ist er intelligent. (außerdem در ابتدای جمله جدید)\n\n**نکته:** این کانکتورها معمولاً در ابتدای جمله جدید می‌آیند، نه داخل جمله!",
+      "examples": [
+        { "de": "Das Restaurant ist günstig. Zudem schmeckt das Essen gut.", "fa": "رستوران ارزان است. به‌علاوه، غذا خوشمزه است." },
+        { "de": "Sie hat einen Master. Ferner hat sie Berufserfahrung.", "fa": "او مدرک کارشناسی ارشد دارد. همچنین تجربه کاری دارد." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام کانکتور برای مکالمه روزمره مناسب‌تر است؟",
+      "options": [
+        "ferner",
+        "überdies",
+        "außerdem",
+        "hinzu kommt"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! außerdem هم در مکالمه روزمره و هم در نوشتار استفاده می‌شود.", "incorrect": "außerdem از همه متداول‌تر و کمتر رسمی است." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "بعد از «darüber hinaus» فعل در کدام جایگاه قرار می‌گیرد؟",
+      "options": [
+        "جایگاه اول",
+        "جایگاه دوم",
+        "آخر جمله",
+        "هر جایی"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "درست! کانکتور در جایگاه ۱، فعل در جایگاه ۲", "incorrect": "کانکتورهای افزایشی در Position 1 هستند، پس فعل در Position 2 می‌آید." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "ferner", "fa": "همچنین، به‌علاوه (رسمی)" },
+      "example": { "text": { "de": "Ferner möchte ich auf einen wichtigen Punkt hinweisen.", "fa": "همچنین می‌خواهم به یک نکته مهم اشاره کنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "ferner",
+      "translation": "همچنین (رسمی)",
+      "syllables": ["fer", "ner"],
+      "distractors": ["far", "nur", "nar"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "überdies", "fa": "افزون بر این، علاوه بر آن (رسمی)" },
+      "example": { "text": { "de": "Überdies verfügt das Unternehmen über internationale Erfahrung.", "fa": "افزون بر این، شرکت تجربه بین‌المللی دارد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "überdies",
+      "translation": "افزون بر این",
+      "syllables": ["ü", "ber", "dies"],
+      "distractors": ["u", "bar", "das"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "hinzu kommt", "fa": "به این اضافه می‌شود که" },
+      "example": { "text": { "de": "Hinzu kommt, dass die Preise gestiegen sind.", "fa": "به این اضافه می‌شود که قیمت‌ها افزایش یافته‌اند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "hinzu",
+      "translation": "به این",
+      "syllables": ["hin", "zu"],
+      "distractors": ["han", "zo", "hon"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "کانکتور مناسب را انتخاب کنید",
+      "sentence": "Das Hotel ist zentral. {0} ist es günstig.",
+      "options": ["Außerdem", "Obwohl", "Deshalb", "Trotzdem"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "außerdem برای افزودن اطلاعات مثبت استفاده می‌شود: هتل مرکزی است. علاوه بر این، ارزان است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "کانکتور رسمی مناسب را انتخاب کنید",
+      "sentence": "{0} möchte ich erwähnen, dass wir pünktlich liefern.",
+      "options": ["Außerdem", "Ferner", "Und", "Aber"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "ferner برای متون رسمی مناسب است: همچنین می‌خواهم ذکر کنم که..." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "ساختار درست را انتخاب کنید",
+      "sentence": "{0}, dass die Kosten sehr hoch sind.",
+      "options": ["Hinzu kommt", "Außerdem kommt", "Darüber kommt", "Zudem kommt"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Hinzu kommt, dass... = به این اضافه می‌شود که..." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "hinzu kommt, dass... - ساختار خاص",
+      "content": "**Hinzu kommt, dass... = به این اضافه می‌شود که...**\n\nاین ساختار برای افزودن یک نکته مهم دیگر استفاده می‌شود:\n\n**ساختار:**\nHinzu kommt, + **dass** + فاعل + ... + **فعل در آخر**\n\n**مثال‌ها:**\n- Hinzu kommt, **dass** die Mieten **gestiegen sind**.\n  (به این اضافه می‌شود که اجاره‌ها افزایش یافته‌اند.)\n\n- Hinzu kommt, **dass** er keine Zeit **hat**.\n  (به این اضافه می‌شود که او وقت ندارد.)\n\n**توجه:** بعد از dass، فعل به **آخر جمله** می‌رود!\n\n**تفاوت با دیگر کانکتورها:**\n| ساختار معمولی | ساختار با dass |\n|---------------|---------------|\n| Außerdem ist er müde. | Hinzu kommt, dass er müde ist. |\n| Zudem hat sie Erfahrung. | Hinzu kommt, dass sie Erfahrung hat. |",
+      "examples": [
+        { "de": "Hinzu kommt, dass wir wenig Personal haben.", "fa": "به این اضافه می‌شود که پرسنل کمی داریم." },
+        { "de": "Die Situation ist schwierig. Hinzu kommt, dass das Budget begrenzt ist.", "fa": "وضعیت سخت است. به این اضافه می‌شود که بودجه محدود است." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["ist", "Außerdem", "pünktlich", "er"],
+      "correctOrder": [1, 0, 3, 2],
+      "correctSentence": { "de": "Außerdem ist er pünktlich", "fa": "علاوه بر این، او وقت‌شناس است" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["hinaus", "sie", "Darüber", "spricht", "Deutsch"],
+      "correctOrder": [2, 0, 3, 1, 4],
+      "correctSentence": { "de": "Darüber hinaus spricht sie Deutsch", "fa": "افزون بر این، او آلمانی صحبت می‌کند" }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله را مرتب کنید",
+      "words": ["teuer", "ist", "dass", "es", "kommt", "Hinzu"],
+      "correctOrder": [5, 4, 2, 3, 1, 0],
+      "correctSentence": { "de": "Hinzu kommt, dass es teuer ist", "fa": "به این اضافه می‌شود که گران است" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "کانکتور 'außerdem' هم در مکالمه روزمره و هم در نوشتار استفاده می‌شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! außerdem متداول‌ترین کانکتور افزایشی است و در هر دو سبک کاربرد دارد." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "بعد از 'darüber hinaus' فعل به آخر جمله می‌رود.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! بعد از darüber hinaus فعل در جایگاه دوم می‌آید: Darüber hinaus IST er kompetent." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "'ferner' و 'überdies' برای متون رسمی و آکادمیک مناسب‌تر هستند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! ferner و überdies در نوشتار رسمی، مقالات علمی و گزارش‌های رسمی استفاده می‌شوند." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "ارائه پروژه",
+      "scene": {
+        "location": "conference room",
+        "description": { "de": "In einem Konferenzraum bei der Projektpräsentation", "fa": "در اتاق کنفرانس، ارائه پروژه" }
+      },
+      "lines": [
+        { "speaker": "Projektleiter", "text": { "de": "Unser neues Produkt hat viele Vorteile. Erstens ist es umweltfreundlich.", "fa": "محصول جدید ما مزایای زیادی دارد. اول اینکه سازگار با محیط زیست است." }, "mood": "neutral" },
+        { "speaker": "Projektleiter", "text": { "de": "Außerdem ist es günstiger als die Konkurrenzprodukte.", "fa": "علاوه بر این، ارزان‌تر از محصولات رقیب است." }, "mood": "happy" },
+        { "speaker": "Projektleiter", "text": { "de": "Darüber hinaus bieten wir eine Garantie von fünf Jahren.", "fa": "افزون بر این، گارانتی پنج ساله ارائه می‌دهیم." }, "mood": "excited" },
+        { "speaker": "Investor", "text": { "de": "Das klingt interessant. Gibt es noch weitere Vorteile?", "fa": "جالب به نظر می‌رسد. آیا مزایای دیگری هم هست؟" }, "mood": "neutral" },
+        { "speaker": "Projektleiter", "text": { "de": "Ja! Hinzu kommt, dass wir bereits Partner in zehn Ländern haben.", "fa": "بله! به این اضافه می‌شود که ما در حال حاضر در ده کشور شریک داریم." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "چند کانکتور افزایشی در این مکالمه استفاده شد؟", "options": ["۱", "۲", "۳"], "correctIndex": 2, "explanation": "سه کانکتور: außerdem، darüber hinaus، hinzu kommt" },
+        { "question": "چه مدت گارانتی ارائه می‌شود؟", "options": ["۳ سال", "۵ سال", "۱۰ سال"], "correctIndex": 1, "explanation": "مدیر پروژه گفت: eine Garantie von fünf Jahren (گارانتی پنج ساله)" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "کانکتور مناسب را انتخاب کنید",
+      "sentence": "Die Wohnung ist hell. {0} hat sie einen Balkon.",
+      "options": ["Zudem", "Obwohl", "Weil", "Falls"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "zudem برای افزودن ویژگی مثبت دیگر: آپارتمان روشن است. به‌علاوه، بالکن دارد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "کانکتور رسمی مناسب را انتخاب کنید",
+      "sentence": "{0} verfügt das Unternehmen über internationale Erfahrung.",
+      "options": ["Und", "Überdies", "Oder", "Denn"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "überdies در نوشتار رسمی: افزون بر این، شرکت تجربه بین‌المللی دارد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Darüber {0} bietet das Hotel einen Spa-Bereich.",
+      "options": ["hinaus", "hinzu", "außer", "zusätzlich"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "darüber hinaus = افزون بر این. hinaus جزء ثابت این ترکیب است." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "مصاحبه شغلی",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Bei einem Vorstellungsgespräch", "fa": "در یک مصاحبه شغلی" }
+      },
+      "lines": [
+        { "speaker": "Personaler", "text": { "de": "Warum sollten wir Sie einstellen?", "fa": "چرا باید شما را استخدام کنیم؟" }, "mood": "neutral" },
+        { "speaker": "Bewerber", "text": { "de": "Ich habe zehn Jahre Erfahrung in diesem Bereich.", "fa": "من ده سال تجربه در این زمینه دارم." }, "mood": "neutral" },
+        { "speaker": "Bewerber", "text": { "de": "Außerdem spreche ich vier Sprachen fließend.", "fa": "علاوه بر این، چهار زبان را روان صحبت می‌کنم." }, "mood": "happy" },
+        { "speaker": "Bewerber", "text": { "de": "Ferner habe ich bereits ein großes Team geleitet.", "fa": "همچنین قبلاً یک تیم بزرگ را مدیریت کرده‌ام." }, "mood": "happy" },
+        { "speaker": "Personaler", "text": { "de": "Sehr beeindruckend!", "fa": "خیلی چشمگیر است!" }, "mood": "surprised" }
+      ],
+      "questions": [
+        { "question": "متقاضی چند سال تجربه دارد؟", "options": ["۵ سال", "۱۰ سال", "۱۵ سال"], "correctIndex": 1, "explanation": "متقاضی گفت: zehn Jahre Erfahrung (ده سال تجربه)" },
+        { "question": "کدام کانکتور رسمی‌تر است؟", "options": ["außerdem", "ferner", "هر دو یکسان"], "correctIndex": 1, "explanation": "ferner رسمی‌تر از außerdem است و در نوشتار رسمی بیشتر استفاده می‌شود." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "کانکتورها را با ترجمه فارسی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "außerdem" },
+        { "id": "i2", "text": "darüber hinaus" },
+        { "id": "i3", "text": "zudem" },
+        { "id": "i4", "text": "ferner" },
+        { "id": "i5", "text": "überdies" },
+        { "id": "i6", "text": "hinzu kommt, dass..." }
+      ],
+      "matches": [
+        { "id": "m1", "text": "علاوه بر این" },
+        { "id": "m2", "text": "افزون بر این" },
+        { "id": "m3", "text": "به‌علاوه" },
+        { "id": "m4", "text": "همچنین (رسمی)" },
+        { "id": "m5", "text": "علاوه بر آن (رسمی)" },
+        { "id": "m6", "text": "به این اضافه می‌شود که..." }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "علاوه بر این، او بسیار باتجربه است.",
+      "sentenceTemplate": "{0} ist er sehr {1}.",
+      "options": ["Außerdem", "Obwohl", "erfahren", "müde"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Außerdem ist er sehr erfahren.", "fa": "علاوه بر این، او بسیار باتجربه است." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "به این اضافه می‌شود که هزینه‌ها بالا هستند.",
+      "sentenceTemplate": "Hinzu {0}, dass die Kosten hoch {1}.",
+      "options": ["kommt", "geht", "sind", "ist"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Hinzu kommt, dass die Kosten hoch sind.", "fa": "به این اضافه می‌شود که هزینه‌ها بالا هستند." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: نامه رسمی",
+      "passage": {
+        "de": "Sehr geehrte Damen und Herren,\n\nIch bewerbe mich um die Stelle als Marketing-Manager.\n\nIch habe fünf Jahre Erfahrung im Marketing. Außerdem habe ich einen Master in Betriebswirtschaft. Darüber hinaus spreche ich drei Sprachen: Deutsch, Englisch und Spanisch.\n\nZudem habe ich bereits internationale Projekte geleitet. Ferner verfüge ich über ausgezeichnete Kommunikationsfähigkeiten.\n\nHinzu kommt, dass ich sehr teamfähig bin und gut unter Druck arbeiten kann.\n\nÜber eine positive Rückmeldung würde ich mich sehr freuen.\n\nMit freundlichen Grüßen",
+        "fa": "خانم‌ها و آقایان محترم،\n\nبرای جایگاه مدیر بازاریابی درخواست می‌دهم.\n\nپنج سال تجربه در بازاریابی دارم. علاوه بر این، مدرک کارشناسی ارشد مدیریت بازرگانی دارم. افزون بر این، سه زبان صحبت می‌کنم: آلمانی، انگلیسی و اسپانیایی.\n\nبه‌علاوه، قبلاً پروژه‌های بین‌المللی را مدیریت کرده‌ام. همچنین مهارت‌های ارتباطی عالی دارم.\n\nبه این اضافه می‌شود که من بسیار تیم‌پذیر هستم و می‌توانم تحت فشار خوب کار کنم.\n\nاز پاسخ مثبت خوشحال می‌شوم.\n\nبا احترام"
+      },
+      "questions": [
+        { "question": "چند کانکتور افزایشی در این نامه استفاده شده؟", "options": ["۳", "۵", "۷"], "correctIndex": 1, "explanation": "۵ کانکتور: außerdem، darüber hinaus، zudem، ferner، hinzu kommt" },
+        { "question": "متقاضی چند زبان صحبت می‌کند؟", "options": ["۲", "۳", "۴"], "correctIndex": 1, "explanation": "در نامه آمده: drei Sprachen: Deutsch, Englisch und Spanisch" },
+        { "question": "کدام کانکتور در این نامه استفاده نشده؟", "options": ["ferner", "zudem", "überdies"], "correctIndex": 2, "explanation": "از überdies در این نامه استفاده نشده است." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die perfekte Wohnung", "fa": "آپارتمان کامل" },
+      "characters": ["Lisa", "Makler"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Lisa sucht eine neue Wohnung. Sie besichtigt eine Wohnung mit einem Makler.", "fa": "لیزا دنبال آپارتمان جدید می‌گردد. او با یک مشاور املاک آپارتمانی را بازدید می‌کند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Makler",
+          "text": { "de": "Diese Wohnung ist sehr hell.", "fa": "این آپارتمان خیلی روشن است." },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Makler",
+          "text": { "de": "Außerdem ist sie sehr zentral gelegen.", "fa": "علاوه بر این، موقعیت مرکزی خیلی خوبی دارد." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "مشاور کدام کانکتور را استفاده کرد؟",
+          "options": ["ferner", "außerdem", "überdies"],
+          "correctIndex": 1,
+          "explanation": "مشاور گفت: außerdem ist sie sehr zentral gelegen"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Gibt es noch weitere Vorteile?", "fa": "آیا مزایای دیگری هم هست؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Makler",
+          "text": { "de": "Ja! Darüber hinaus hat sie einen großen Balkon.", "fa": "بله! افزون بر این، بالکن بزرگی دارد." },
+          "mood": "excited"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Makler",
+          "text": { "de": "Zudem sind die Nebenkosten niedrig.", "fa": "به‌علاوه، هزینه‌های جانبی پایین است." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "چند ویژگی مثبت ذکر شد؟",
+          "options": ["۲", "۴", "۵"],
+          "correctIndex": 1,
+          "explanation": "۴ ویژگی: روشن، مرکزی، بالکن بزرگ، هزینه‌های جانبی پایین"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Perfekt! Ich nehme sie!", "fa": "عالی! می‌گیرمش!" },
+          "mood": "excited"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Lisa unterschreibt den Mietvertrag und ist sehr glücklich.", "fa": "لیزا قرارداد اجاره را امضا می‌کند و خیلی خوشحال است." }
+        },
+        {
+          "type": "question",
+          "question": "لیزا در پایان چه احساسی داشت؟",
+          "options": ["ناراحت", "خوشحال", "مطمئن نیست"],
+          "correctIndex": 1,
+          "explanation": "در پایان آمده: Lisa ist sehr glücklich (لیزا خیلی خوشحال است)"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: کانکتورهای افزایشی",
+      "instruction": "ترجمه درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "außerdem", "left": "علاوه بر این", "right": "به همین دلیل", "correctSide": "left" },
+        { "prompt": "darüber hinaus", "left": "با وجود این", "right": "افزون بر این", "correctSide": "right" },
+        { "prompt": "zudem", "left": "به‌علاوه", "right": "اما", "correctSide": "left" },
+        { "prompt": "ferner", "left": "بنابراین", "right": "همچنین (رسمی)", "correctSide": "right" },
+        { "prompt": "überdies", "left": "افزون بر این (رسمی)", "right": "در نتیجه", "correctSide": "left" },
+        { "prompt": "hinzu kommt", "left": "به این اضافه می‌شود", "right": "این نتیجه می‌دهد", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Außerdem ist er sehr kompetent.",
+      "translation": "علاوه بر این، او بسیار با صلاحیت است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Darüber hinaus spricht sie drei Sprachen.",
+      "translation": "افزون بر این، او سه زبان صحبت می‌کند."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Hinzu kommt, dass die Preise gestiegen sind.",
+      "translation": "به این اضافه می‌شود که قیمت‌ها افزایش یافته‌اند."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: کانکتورها!",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "außerdem =", "options": ["علاوه بر این", "به همین دلیل"], "correctAnswerIndex": 0 },
+        { "question": "کدام رسمی‌تر است؟", "options": ["außerdem", "ferner"], "correctAnswerIndex": 1 },
+        { "question": "بعد از darüber hinaus فعل کجاست؟", "options": ["جایگاه ۲", "آخر جمله"], "correctAnswerIndex": 0 },
+        { "question": "Hinzu kommt, ___", "options": ["dass", "weil"], "correctAnswerIndex": 0 },
+        { "question": "zudem =", "options": ["به‌علاوه", "اگرچه"], "correctAnswerIndex": 0 },
+        { "question": "überdies برای کجا مناسب است؟", "options": ["مکالمه روزمره", "متون رسمی"], "correctAnswerIndex": 1 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: کانکتورها و معنی",
+      "pairs": [
+        { "de": "außerdem", "fa": "علاوه بر این" },
+        { "de": "darüber hinaus", "fa": "افزون بر این" },
+        { "de": "zudem", "fa": "به‌علاوه" },
+        { "de": "ferner", "fa": "همچنین (رسمی)" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کانکتورهای افزایشی را پیدا کنید",
+      "targetWords": ["außerdem", "darüber", "hinaus", "zudem", "ferner", "überdies"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "außerdem", "fa": "علاوه بر این", "options": ["به همین دلیل", "علاوه بر این", "با وجود این", "اما"], "correctIndex": 1 },
+        { "de": "ferner", "fa": "همچنین (رسمی)", "options": ["همچنین (رسمی)", "بنابراین", "اگرچه", "زیرا"], "correctIndex": 0 },
+        { "de": "hinzu kommt", "fa": "به این اضافه می‌شود", "options": ["این نتیجه می‌دهد", "به این اضافه می‌شود", "این خلاف است", "این درست است"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما کانکتورهای افزایشی آلمانی را یاد گرفتید!",
+      "keyPoints": [
+        "außerdem = علاوه بر این (متداول‌ترین، روزمره و نوشتار)",
+        "darüber hinaus = افزون بر این (رسمی‌تر)",
+        "zudem = به‌علاوه (بیشتر در نوشتار)",
+        "ferner = همچنین (بسیار رسمی، آکادمیک)",
+        "überdies = افزون بر این (بسیار رسمی)",
+        "hinzu kommt, dass... = به این اضافه می‌شود که... (+ جمله فرعی)",
+        "همه این کانکتورها در Position 1 هستند و فعل در Position 2 می‌آید",
+        "این کانکتورها برای افزودن اطلاعات و تقویت استدلال استفاده می‌شوند"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "außerdem", "fa": "علاوه بر این، همچنین" } },
+        { "word": { "de": "darüber hinaus", "fa": "افزون بر این، علاوه بر آن" } },
+        { "word": { "de": "zudem", "fa": "به علاوه، همچنین" } },
+        { "word": { "de": "ferner", "fa": "همچنین، به‌علاوه (رسمی)" } },
+        { "word": { "de": "überdies", "fa": "افزون بر این، علاوه بر آن (رسمی)" } },
+        { "word": { "de": "hinzu kommt", "fa": "به این اضافه می‌شود که" } }
+      ]
+    }
+  ]
+}

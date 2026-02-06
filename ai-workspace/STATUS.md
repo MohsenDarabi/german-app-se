@@ -8,7 +8,7 @@
 
 **Create B1 lessons - lesson by lesson, wait for user test after each**
 
-Current: `B2-M04` (Passiv-Alternativen) - **MODULE COMPLETE - READY FOR USER TEST**
+Current: `B2-M05` (Konnektoren für Argumentation) - **MODULE COMPLETE - READY FOR USER TEST**
 
 ---
 
@@ -27,7 +27,7 @@ Current: `B2-M04` (Passiv-Alternativen) - **MODULE COMPLETE - READY FOR USER TES
 | A1 | 14 | 56+ | Complete |
 | A2 | 18 | 72 | **Complete** ✅ |
 | B1 | 20 | 80 | **Complete** ✅ |
-| B2 | 4 | 16 | Module 4 complete |
+| B2 | 5 | 20 | Module 5 complete |
 
 ### A2 Completion (2026-02-05)
 
@@ -311,8 +311,9 @@ Current: `B2-M04` (Passiv-Alternativen) - **MODULE COMPLETE - READY FOR USER TES
 | M02 | Nominaler Stil | 4/4 | ✅ Complete |
 | M03 | Konjunktiv I in der Presse | 4/4 | ✅ Complete |
 | M04 | Passiv-Alternativen | 4/4 | ✅ Complete |
+| M05 | Konnektoren für Argumentation | 4/4 | ✅ Complete |
 
-**Total B2: 16 lessons**
+**Total B2: 20 lessons**
 
 ---
 
@@ -360,10 +361,23 @@ Current: `B2-M04` (Passiv-Alternativen) - **MODULE COMPLETE - READY FOR USER TES
 
 ---
 
+## B2 Module 5: Konnektoren für Argumentation (Argument Connectors)
+
+| Lesson | Title | Status |
+|--------|-------|--------|
+| B2-M05-L01 | Kontrast (jedoch, allerdings, dennoch, trotzdem) | ✅ Complete |
+| B2-M05-L02 | Kausalität (daher, deshalb, folglich, infolgedessen) | ✅ Complete |
+| B2-M05-L03 | Ergänzung (außerdem, darüber hinaus, zudem, ferner) | ✅ Complete |
+| B2-M05-L04 | Zusammenfassung | ✅ Complete |
+
+---
+
 ## Recent Changes
 
 | Date | Change |
 |------|--------|
+| 2026-02-06 | **B2 Module 5 (Konnektoren für Argumentation) COMPLETE - 4 lessons!** |
+| 2026-02-06 | Created B2-M05-L01 to L04 in parallel |
 | 2026-02-06 | **B2 Module 4 (Passiv-Alternativen) COMPLETE - 4 lessons!** |
 | 2026-02-06 | Created B2-M04-L01 to L04 in parallel |
 | 2026-02-06 | **B2 Module 3 (Konjunktiv I in der Presse) COMPLETE - 4 lessons!** |

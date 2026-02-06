@@ -1783,6 +1783,37 @@ const DE_FA_B2_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/B2/B2-M04-L04"
       }
     ]
+  },
+  {
+    id: "module-05",
+    title: "بخش ۵: Konnektoren für Argumentation",
+    level: "B2",
+    lessons: [
+      {
+        id: "B2-M05-L01",
+        title: "Kontrast - تضاد",
+        description: "یاد بگیرید حروف ربط تضاد: jedoch، allerdings، dennoch، trotzdem، hingegen.",
+        path: "/learn/de-fa/B2/B2-M05-L01"
+      },
+      {
+        id: "B2-M05-L02",
+        title: "Kausalität - علت و معلول",
+        description: "یاد بگیرید حروف ربط علّی: daher، deshalb، folglich، infolgedessen، somit.",
+        path: "/learn/de-fa/B2/B2-M05-L02"
+      },
+      {
+        id: "B2-M05-L03",
+        title: "Ergänzung - افزودن اطلاعات",
+        description: "یاد بگیرید حروف ربط اضافی: außerdem، darüber hinaus، zudem، ferner.",
+        path: "/learn/de-fa/B2/B2-M05-L03"
+      },
+      {
+        id: "B2-M05-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل حروف ربط استدلال: تضاد، علت و معلول، افزودن.",
+        path: "/learn/de-fa/B2/B2-M05-L04"
+      }
+    ]
   }
 ];
 

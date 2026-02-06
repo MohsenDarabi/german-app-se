@@ -1,0 +1,517 @@
+{
+  "id": "B2-M05-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Konnektoren für Argumentation: Zusammenfassung", "fa": "حروف ربط برای استدلال: جمع‌بندی" },
+  "description": "مرور جامع تمام حروف ربط استدلالی: کنتراست (jedoch, allerdings, dennoch, trotzdem, hingegen, dagegen)، علیت (daher, deshalb, folglich, infolgedessen, demnach, somit)، و تکمیل (außerdem, darüber hinaus, zudem, ferner, überdies). تمرکز بر انتخاب صحیح، تفاوت رسمی/غیررسمی، و جایگاه در جمله.",
+  "level": "B2",
+  "module": 5,
+  "lessonNumber": 4,
+  "totalSteps": 45,
+  "estimatedMinutes": 35,
+  "vocabulary": [
+    { "de": "die Argumentation", "fa": "استدلال، بحث", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "der Kontrast", "fa": "تضاد، کنتراست", "grammar": { "pos": "noun", "gender": "masculine" } },
+    { "de": "die Kausalität", "fa": "علیت، رابطه علّی", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "die Ergänzung", "fa": "تکمیل، افزودن", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "der Aufsatz", "fa": "انشا، مقاله", "grammar": { "pos": "noun", "gender": "masculine" } },
+    { "de": "die Stellungnahme", "fa": "اظهارنظر، موضع‌گیری", "grammar": { "pos": "noun", "gender": "feminine" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "سه دسته حروف ربط استدلالی",
+      "content": "**Konnektoren für Argumentation = حروف ربط برای استدلال**\n\nدر این درس، تمام ۱۹ حرف ربط استدلالی را مرور می‌کنیم:\n\n| دسته | عملکرد | حروف ربط |\n|------|--------|----------|\n| **Kontrast** | تضاد | jedoch, allerdings, dennoch, trotzdem, hingegen, dagegen |\n| **Kausalität** | علیت | daher, deshalb, folglich, infolgedessen, demnach, somit |\n| **Ergänzung** | تکمیل | außerdem, darüber hinaus, zudem, ferner, überdies |\n\n**چرا این حروف ربط مهم هستند؟**\n- در نوشتن متون رسمی (Aufsatz, Stellungnahme) ضروری‌اند\n- استدلال شما را منطقی و روان می‌کنند\n- در امتحان B2 و C1 بسیار تست می‌شوند\n\n**نکته:** همه این حروف ربط adverbial هستند و جایگاه فعل را تغییر می‌دهند!",
+      "examples": [
+        { "de": "Das Argument ist überzeugend. Jedoch gibt es Gegenargumente.", "fa": "استدلال قانع‌کننده است. اما استدلال‌های مخالف هم وجود دارد." },
+        { "de": "Er hat hart gearbeitet. Daher hat er Erfolg.", "fa": "او سخت کار کرده. بنابراین موفق است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "die Argumentation", "fa": "استدلال، بحث" },
+      "example": { "text": { "de": "Eine gute Argumentation braucht logische Konnektoren.", "fa": "یک استدلال خوب به حروف ربط منطقی نیاز دارد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Argumentation",
+      "translation": "استدلال",
+      "syllables": ["Ar", "gu", "men", "ta", "ti", "on"],
+      "distractors": ["Er", "go", "man", "to"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "der Kontrast", "fa": "تضاد، کنتراست" },
+      "example": { "text": { "de": "Im Kontrast dazu steht die Meinung der Gegner.", "fa": "در تضاد با این، نظر مخالفان قرار دارد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Kontrast",
+      "translation": "تضاد",
+      "syllables": ["Kon", "trast"],
+      "distractors": ["Kan", "trest", "tros"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "die Kausalität", "fa": "علیت، رابطه علّی" },
+      "example": { "text": { "de": "Die Kausalität zwischen Ursache und Wirkung ist klar.", "fa": "رابطه علّی بین علت و معلول واضح است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Kausalität",
+      "translation": "علیت",
+      "syllables": ["Kau", "sa", "li", "tät"],
+      "distractors": ["Ko", "se", "lo", "tat"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "حروف ربط کنتراست (تضاد)",
+      "content": "**Kontrast-Konnektoren = حروف ربط تضاد**\n\nاین حروف ربط برای بیان تضاد یا استثنا استفاده می‌شوند:\n\n| حرف ربط | معنی | رسمیت | جایگاه |\n|---------|------|-------|--------|\n| **jedoch** | اما، با این حال | رسمی | جایگاه ۱ یا ۳ |\n| **allerdings** | البته، اما | نیمه‌رسمی | جایگاه ۱ یا ۳ |\n| **dennoch** | با این وجود | رسمی | جایگاه ۱ |\n| **trotzdem** | با این حال | غیررسمی | جایگاه ۱ |\n| **hingegen** | در مقابل | رسمی | جایگاه ۱ یا ۳ |\n| **dagegen** | برخلاف آن | نیمه‌رسمی | جایگاه ۱ یا ۳ |\n\n**جایگاه ۱:** Er ist müde. **Trotzdem** arbeitet er weiter.\n**جایگاه ۳:** Er ist müde. Er arbeitet **trotzdem** weiter.\n\n**نکته:** با «جایگاه ۱» فعل فوراً بعد می‌آید (V2 قانون).",
+      "examples": [
+        { "de": "Das Wetter ist schlecht. Dennoch gehen wir spazieren.", "fa": "هوا بد است. با این وجود پیاده‌روی می‌رویم." },
+        { "de": "Sie ist jung. Er hingegen ist alt.", "fa": "او جوان است. او در مقابل پیر است." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام حرف ربط کنتراست در متون رسمی مناسب‌تر است؟",
+      "options": [
+        "trotzdem",
+        "jedoch",
+        "aber",
+        "doch"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! 'jedoch' رسمی‌ترین حرف ربط کنتراست است و در متون آکادمیک رایج است.", "incorrect": "'jedoch' رسمی‌تر از 'trotzdem' است و در نوشتار آکادمیک ترجیح داده می‌شود." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "تفاوت 'hingegen' و 'dagegen' چیست؟",
+      "options": [
+        "معنی متفاوت دارند",
+        "hingegen رسمی‌تر است",
+        "dagegen فقط در جمله منفی می‌آید",
+        "تفاوتی ندارند"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "درست! 'hingegen' رسمی‌تر است و در متون آکادمیک رایج‌تر است. 'dagegen' در زبان روزمره هم استفاده می‌شود.", "incorrect": "هر دو معنی مشابه دارند (در مقابل)، اما 'hingegen' رسمی‌تر است." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "die Ergänzung", "fa": "تکمیل، افزودن" },
+      "example": { "text": { "de": "Als Ergänzung möchte ich noch einen Punkt hinzufügen.", "fa": "به عنوان تکمیل می‌خواهم یک نکته دیگر اضافه کنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "Ergänzung",
+      "translation": "تکمیل",
+      "syllables": ["Er", "gän", "zung"],
+      "distractors": ["Ar", "gen", "zong"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "der Aufsatz", "fa": "انشا، مقاله" },
+      "example": { "text": { "de": "Im Aufsatz sollte man verschiedene Konnektoren verwenden.", "fa": "در انشا باید از حروف ربط مختلف استفاده کرد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "Aufsatz",
+      "translation": "انشا",
+      "syllables": ["Auf", "satz"],
+      "distractors": ["Oof", "sotz", "zats"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "die Stellungnahme", "fa": "اظهارنظر، موضع‌گیری" },
+      "example": { "text": { "de": "In einer Stellungnahme braucht man argumentative Konnektoren.", "fa": "در یک موضع‌گیری به حروف ربط استدلالی نیاز است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Stellungnahme",
+      "translation": "موضع‌گیری",
+      "syllables": ["Stel", "lung", "nah", "me"],
+      "distractors": ["Stall", "long", "noh", "ma"]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "حرف ربط کنتراست مناسب را انتخاب کنید",
+      "sentence": "Das Projekt ist teuer. {0} hat es viele Vorteile.",
+      "options": ["Jedoch", "Daher", "Außerdem", "Folglich"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "'Jedoch' (اما) برای بیان تضاد استفاده می‌شود: پروژه گران است، اما مزایای زیادی دارد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "حرف ربط علیت مناسب را انتخاب کنید",
+      "sentence": "Die Nachfrage ist gestiegen. {0} müssen wir mehr produzieren.",
+      "options": ["Trotzdem", "Folglich", "Hingegen", "Ferner"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "'Folglich' (در نتیجه) نتیجه‌گیری را نشان می‌دهد: تقاضا افزایش یافته، در نتیجه باید بیشتر تولید کنیم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "حرف ربط تکمیل مناسب را انتخاب کنید",
+      "sentence": "Das Produkt ist günstig. {0} ist es umweltfreundlich.",
+      "options": ["Dennoch", "Deshalb", "Darüber hinaus", "Infolgedessen"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "'Darüber hinaus' (علاوه بر این) برای اضافه کردن نکته جدید استفاده می‌شود." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "حروف ربط علیت (Kausalität)",
+      "content": "**Kausal-Konnektoren = حروف ربط علیت**\n\nاین حروف ربط نتیجه یا دلیل را نشان می‌دهند:\n\n| حرف ربط | معنی | رسمیت | مثال |\n|---------|------|-------|------|\n| **daher** | بنابراین | نیمه‌رسمی | Daher komme ich nicht. |\n| **deshalb** | به همین دلیل | غیررسمی | Deshalb bin ich hier. |\n| **folglich** | در نتیجه | رسمی | Folglich muss man handeln. |\n| **infolgedessen** | در پی آن | بسیار رسمی | Infolgedessen stieg der Preis. |\n| **demnach** | بر این اساس | رسمی | Demnach ist er unschuldig. |\n| **somit** | بدین ترتیب | رسمی | Somit ist das Problem gelöst. |\n\n**درجه رسمیت:**\ndeshalb < daher < folglich/somit/demnach < infolgedessen\n\n**نکته:** 'infolgedessen' در متون حقوقی و علمی بسیار رایج است.",
+      "examples": [
+        { "de": "Die Kosten sind gestiegen. Infolgedessen müssen wir sparen.", "fa": "هزینه‌ها افزایش یافته. در پی آن باید صرفه‌جویی کنیم." },
+        { "de": "Er hat nicht geübt. Somit hat er die Prüfung nicht bestanden.", "fa": "او تمرین نکرده. بدین ترتیب امتحان را قبول نشد." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "رسمی‌ترین حرف ربط علیت را انتخاب کنید",
+      "sentence": "Die Firma hat Verluste gemacht. {0} wurden Mitarbeiter entlassen.",
+      "options": ["Deshalb", "Daher", "Infolgedessen", "Somit"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "'Infolgedessen' رسمی‌ترین حرف ربط علیت است و در گزارش‌های رسمی رایج است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "حرف ربط تکمیل رسمی را انتخاب کنید",
+      "sentence": "Das System ist effizient. {0} ist es kostengünstig.",
+      "options": ["Trotzdem", "Ferner", "Daher", "Dennoch"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "'Ferner' (علاوه بر این) یک حرف ربط تکمیل رسمی است که در متون آکادمیک استفاده می‌شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جمله را با حرف ربط کنتراست کامل کنید",
+      "sentence": "Er war krank. {0} kam er zur Arbeit.",
+      "options": ["Daher", "Außerdem", "Trotzdem", "Folglich"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "'Trotzdem' (با این حال) تضاد را نشان می‌دهد: او مریض بود، با این حال سر کار آمد." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "بحث در سمینار دانشگاهی",
+      "scene": {
+        "location": "university",
+        "description": { "de": "Seminar an der Universität", "fa": "سمینار در دانشگاه" }
+      },
+      "lines": [
+        { "speaker": "Professorin", "text": { "de": "Was denken Sie über erneuerbare Energien?", "fa": "نظر شما درباره انرژی‌های تجدیدپذیر چیست؟" }, "mood": "neutral" },
+        { "speaker": "Student 1", "text": { "de": "Sie sind teuer. Jedoch sind sie umweltfreundlich.", "fa": "آنها گران هستند. اما دوستدار محیط زیست هستند." }, "mood": "neutral" },
+        { "speaker": "Studentin 2", "text": { "de": "Darüber hinaus schaffen sie neue Arbeitsplätze.", "fa": "علاوه بر این، شغل‌های جدید ایجاد می‌کنند." }, "mood": "happy" },
+        { "speaker": "Student 1", "text": { "de": "Das stimmt. Folglich sollten wir mehr investieren.", "fa": "درست است. در نتیجه باید بیشتر سرمایه‌گذاری کنیم." }, "mood": "excited" },
+        { "speaker": "Professorin", "text": { "de": "Gute Argumentation! Sie haben alle drei Konnektor-Typen verwendet.", "fa": "استدلال خوبی بود! شما از هر سه نوع حرف ربط استفاده کردید." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "کدام حرف ربط کنتراست در این مکالمه استفاده شد؟", "options": ["trotzdem", "jedoch", "dennoch"], "correctIndex": 1, "explanation": "'Jedoch' برای بیان تضاد بین گران بودن و دوستدار محیط زیست بودن استفاده شد." },
+        { "question": "'Darüber hinaus' چه نوع حرف ربطی است؟", "options": ["کنتراست", "علیت", "تکمیل"], "correctIndex": 2, "explanation": "'Darüber hinaus' حرف ربط تکمیل است که برای اضافه کردن نکته جدید استفاده می‌شود." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله با 'jedoch' را در جایگاه ۱ مرتب کنید",
+      "words": ["teuer", "Jedoch", "es", "ist", "qualitativ"],
+      "correctOrder": [1, 3, 2, 4, 0],
+      "correctSentence": { "de": "Jedoch ist es qualitativ teuer.", "fa": "اما از نظر کیفیت گران است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله با 'folglich' را مرتب کنید",
+      "words": ["handeln", "Folglich", "wir", "müssen"],
+      "correctOrder": [1, 3, 2, 0],
+      "correctSentence": { "de": "Folglich müssen wir handeln.", "fa": "در نتیجه باید اقدام کنیم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله با 'darüber hinaus' را مرتب کنید",
+      "words": ["es", "hinaus", "Darüber", "praktisch", "ist"],
+      "correctOrder": [2, 1, 4, 0, 3],
+      "correctSentence": { "de": "Darüber hinaus ist es praktisch.", "fa": "علاوه بر این، عملی است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "'Infolgedessen' رسمی‌ترین حرف ربط علیت است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! 'Infolgedessen' در متون حقوقی، علمی و گزارش‌های رسمی استفاده می‌شود." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "'Trotzdem' و 'dennoch' هر دو معنی یکسان دارند اما 'dennoch' رسمی‌تر است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! هر دو به معنی «با این حال» هستند، اما 'dennoch' در متون رسمی مناسب‌تر است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "همه حروف ربط استدلالی فقط در جایگاه ۱ جمله می‌آیند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! بسیاری از آنها مثل 'jedoch', 'allerdings', 'hingegen' می‌توانند در جایگاه ۳ هم بیایند." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "نوشتن مقاله",
+      "scene": {
+        "location": "library",
+        "description": { "de": "In der Bibliothek", "fa": "در کتابخانه" }
+      },
+      "lines": [
+        { "speaker": "Sara", "text": { "de": "Mein Aufsatz klingt so eintönig.", "fa": "انشای من خیلی یکنواخت به نظر می‌رسد." }, "mood": "sad" },
+        { "speaker": "Markus", "text": { "de": "Benutzt du verschiedene Konnektoren?", "fa": "آیا از حروف ربط مختلف استفاده می‌کنی؟" }, "mood": "neutral" },
+        { "speaker": "Sara", "text": { "de": "Ich schreibe immer nur 'aber' und 'deshalb'.", "fa": "من همیشه فقط 'aber' و 'deshalb' می‌نویسم." }, "mood": "confused" },
+        { "speaker": "Markus", "text": { "de": "Versuch mal 'jedoch' statt 'aber' und 'folglich' statt 'deshalb'.", "fa": "به جای 'aber' از 'jedoch' و به جای 'deshalb' از 'folglich' استفاده کن." }, "mood": "happy" },
+        { "speaker": "Sara", "text": { "de": "Und für 'auch' kann ich 'ferner' oder 'überdies' nehmen?", "fa": "و به جای 'auch' می‌توانم 'ferner' یا 'überdies' بگذارم؟" }, "mood": "excited" },
+        { "speaker": "Markus", "text": { "de": "Genau! Somit wird dein Text viel professioneller.", "fa": "دقیقاً! بدین ترتیب متنت خیلی حرفه‌ای‌تر می‌شود." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "چرا انشای سارا یکنواخت بود؟", "options": ["حروف ربط استفاده نکرده بود", "فقط از حروف ربط ساده استفاده می‌کرد", "گرامر اشتباه داشت"], "correctIndex": 1, "explanation": "سارا فقط از 'aber' و 'deshalb' استفاده می‌کرد که حروف ربط ساده هستند." },
+        { "question": "مارکوس چه جایگزین‌هایی پیشنهاد داد؟", "options": ["jedoch, folglich", "trotzdem, daher", "dennoch, somit"], "correctIndex": 0, "explanation": "مارکوس 'jedoch' به جای 'aber' و 'folglich' به جای 'deshalb' پیشنهاد داد." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "حرف ربط را با دسته مناسب جفت کنید",
+      "items": [
+        { "id": "i1", "text": "dennoch" },
+        { "id": "i2", "text": "folglich" },
+        { "id": "i3", "text": "außerdem" },
+        { "id": "i4", "text": "hingegen" },
+        { "id": "i5", "text": "infolgedessen" },
+        { "id": "i6", "text": "überdies" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "کنتراست (Kontrast)" },
+        { "id": "m2", "text": "علیت (Kausalität)" },
+        { "id": "m3", "text": "تکمیل (Ergänzung)" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m1"], ["i5", "m2"], ["i6", "m3"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "پروژه گران است. با این وجود ارزش دارد.",
+      "sentenceTemplate": "Das Projekt ist teuer. {0} lohnt es sich.",
+      "options": ["Dennoch", "Folglich", "Außerdem", "Daher"],
+      "correctAnswers": [0],
+      "correctTranslation": { "de": "Das Projekt ist teuer. Dennoch lohnt es sich.", "fa": "پروژه گران است. با این وجود ارزش دارد." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "تقاضا افزایش یافته. در نتیجه قیمت‌ها بالا رفته‌اند.",
+      "sentenceTemplate": "Die Nachfrage ist gestiegen. {0} sind die Preise gestiegen.",
+      "options": ["Trotzdem", "Jedoch", "Folglich", "Ferner"],
+      "correctAnswers": [2],
+      "correctTranslation": { "de": "Die Nachfrage ist gestiegen. Folglich sind die Preise gestiegen.", "fa": "تقاضا افزایش یافته. در نتیجه قیمت‌ها بالا رفته‌اند." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: استدلال درباره یادگیری زبان",
+      "passage": {
+        "de": "Das Erlernen einer Fremdsprache ist zeitaufwendig. Jedoch bringt es viele Vorteile mit sich. Darüber hinaus verbessert es die kognitiven Fähigkeiten.\n\nViele Menschen haben wenig Zeit. Dennoch sollten sie eine Sprache lernen. Außerdem gibt es heute viele Online-Möglichkeiten. Folglich kann man auch mit wenig Zeit Fortschritte machen.\n\nDie Motivation ist entscheidend. Deshalb sollte man realistische Ziele setzen. Ferner ist regelmäßiges Üben wichtiger als lange Lerneinheiten. Somit kann jeder erfolgreich eine Sprache lernen.",
+        "fa": "یادگیری زبان خارجی زمان‌بر است. اما مزایای زیادی به همراه دارد. علاوه بر این، توانایی‌های شناختی را بهبود می‌بخشد.\n\nبسیاری از مردم وقت کمی دارند. با این وجود باید زبان یاد بگیرند. همچنین امروز امکانات آنلاین زیادی وجود دارد. در نتیجه حتی با وقت کم هم می‌توان پیشرفت کرد.\n\nانگیزه تعیین‌کننده است. بنابراین باید اهداف واقع‌بینانه تعیین کرد. علاوه بر این، تمرین منظم مهم‌تر از جلسات طولانی است. بدین ترتیب هر کسی می‌تواند با موفقیت زبان یاد بگیرد."
+      },
+      "questions": [
+        { "question": "چند حرف ربط کنتراست در متن استفاده شده؟", "options": ["۱", "۲", "۳"], "correctIndex": 1, "explanation": "دو حرف ربط کنتراست: 'Jedoch' و 'Dennoch'" },
+        { "question": "'Darüber hinaus' و 'Ferner' چه نقشی دارند؟", "options": ["نشان دادن تضاد", "بیان نتیجه", "اضافه کردن نکته جدید"], "correctIndex": 2, "explanation": "هر دو حرف ربط تکمیل هستند که نکات جدید اضافه می‌کنند." },
+        { "question": "نتیجه‌گیری نهایی با کدام حرف ربط بیان شده؟", "options": ["Folglich", "Somit", "Deshalb"], "correctIndex": 1, "explanation": "'Somit' در آخر متن نتیجه‌گیری نهایی را بیان می‌کند." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die Debatte", "fa": "مناظره" },
+      "characters": ["Anna", "Tim"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Anna und Tim diskutieren über Homeoffice.", "fa": "آنا و تیم درباره کار از خانه بحث می‌کنند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Homeoffice spart Zeit. Außerdem ist es umweltfreundlich.", "fa": "کار از خانه وقت صرفه‌جویی می‌کند. علاوه بر این دوستدار محیط زیست است." },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Tim",
+          "text": { "de": "Jedoch fehlt der Kontakt zu Kollegen.", "fa": "اما ارتباط با همکاران از دست می‌رود." },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "آنا از کدام نوع حرف ربط استفاده کرد؟",
+          "options": ["کنتراست", "علیت", "تکمیل"],
+          "correctIndex": 2,
+          "explanation": "'Außerdem' حرف ربط تکمیل است."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Das stimmt. Dennoch kann man Online-Meetings haben.", "fa": "درسته. با این وجود می‌توان جلسات آنلاین داشت." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Tim",
+          "text": { "de": "Folglich brauchen wir eine gute Balance.", "fa": "در نتیجه به تعادل خوبی نیاز داریم." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "تیم در آخر از کدام حرف ربط برای نتیجه‌گیری استفاده کرد؟",
+          "options": ["Dennoch", "Folglich", "Außerdem"],
+          "correctIndex": 1,
+          "explanation": "'Folglich' حرف ربط علیت است که نتیجه را نشان می‌دهد."
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Sie einigten sich auf ein Hybrid-Modell.", "fa": "آنها بر مدل ترکیبی توافق کردند." }
+        },
+        {
+          "type": "question",
+          "question": "در این مناظره از هر سه دسته حرف ربط استفاده شد؟",
+          "options": ["بله", "خیر، فقط دو دسته", "خیر، فقط یک دسته"],
+          "correctIndex": 0,
+          "explanation": "کنتراست (jedoch, dennoch)، تکمیل (außerdem)، و علیت (folglich) - هر سه دسته استفاده شدند."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: نوع حرف ربط",
+      "instruction": "کدام دسته؟",
+      "questions": [
+        { "prompt": "jedoch", "left": "کنتراست", "right": "علیت", "correctSide": "left" },
+        { "prompt": "folglich", "left": "کنتراست", "right": "علیت", "correctSide": "right" },
+        { "prompt": "außerdem", "left": "تکمیل", "right": "کنتراست", "correctSide": "left" },
+        { "prompt": "dennoch", "left": "علیت", "right": "کنتراست", "correctSide": "right" },
+        { "prompt": "somit", "left": "علیت", "right": "تکمیل", "correctSide": "left" },
+        { "prompt": "ferner", "left": "تکمیل", "right": "کنتراست", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Das Argument ist überzeugend. Jedoch gibt es Gegenargumente.",
+      "translation": "استدلال قانع‌کننده است. اما استدلال‌های مخالف هم وجود دارد."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Die Kosten sind hoch. Folglich müssen wir sparen.",
+      "translation": "هزینه‌ها بالا هستند. در نتیجه باید صرفه‌جویی کنیم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Das System ist effizient. Darüber hinaus ist es günstig.",
+      "translation": "سیستم کارآمد است. علاوه بر این ارزان است."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: حروف ربط استدلالی",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "'jedoch' نوع:", "options": ["کنتراست", "علیت"], "correctAnswerIndex": 0 },
+        { "question": "'folglich' نوع:", "options": ["علیت", "تکمیل"], "correctAnswerIndex": 0 },
+        { "question": "'außerdem' نوع:", "options": ["تکمیل", "کنتراست"], "correctAnswerIndex": 0 },
+        { "question": "رسمی‌تر:", "options": ["trotzdem", "dennoch"], "correctAnswerIndex": 1 },
+        { "question": "رسمی‌ترین علیت:", "options": ["deshalb", "infolgedessen"], "correctAnswerIndex": 1 },
+        { "question": "'hingegen' یعنی:", "options": ["در مقابل", "بنابراین"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: حروف ربط و معانی",
+      "pairs": [
+        { "de": "jedoch", "fa": "اما، با این حال" },
+        { "de": "folglich", "fa": "در نتیجه" },
+        { "de": "außerdem", "fa": "علاوه بر این" },
+        { "de": "dennoch", "fa": "با این وجود" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "حروف ربط استدلالی را پیدا کنید",
+      "targetWords": ["jedoch", "dennoch", "folglich", "daher", "ferner", "somit"],
+      "gridSize": { "rows": 12, "cols": 12 },
+      "timeLimit": 150
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "infolgedessen", "fa": "در پی آن", "options": ["در مقابل", "در پی آن", "علاوه بر این", "با این حال"], "correctIndex": 1 },
+        { "de": "hingegen", "fa": "در مقابل", "options": ["در نتیجه", "علاوه بر این", "در مقابل", "بنابراین"], "correctIndex": 2 },
+        { "de": "überdies", "fa": "علاوه بر این", "options": ["با این وجود", "در نتیجه", "در مقابل", "علاوه بر این"], "correctIndex": 3 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! جمع‌بندی حروف ربط استدلالی تمام شد!",
+      "message": "شما همه ۱۹ حرف ربط استدلالی را مرور کردید!",
+      "keyPoints": [
+        "**کنتراست (۶ حرف):** jedoch, allerdings, dennoch, trotzdem, hingegen, dagegen",
+        "**علیت (۶ حرف):** daher, deshalb, folglich, infolgedessen, demnach, somit",
+        "**تکمیل (۵ حرف):** außerdem, darüber hinaus, zudem, ferner, überdies",
+        "**رسمیت:** infolgedessen > folglich > daher > deshalb",
+        "**جایگاه:** می‌توانند در جایگاه ۱ یا ۳ بیایند",
+        "در متون رسمی از حروف ربط متنوع استفاده کنید",
+        "برای B2/C1: از 'jedoch' به جای 'aber' و 'folglich' به جای 'deshalb' استفاده کنید"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "die Argumentation", "fa": "استدلال، بحث" } },
+        { "word": { "de": "der Kontrast", "fa": "تضاد، کنتراست" } },
+        { "word": { "de": "die Kausalität", "fa": "علیت، رابطه علّی" } },
+        { "word": { "de": "die Ergänzung", "fa": "تکمیل، افزودن" } },
+        { "word": { "de": "der Aufsatz", "fa": "انشا، مقاله" } },
+        { "word": { "de": "die Stellungnahme", "fa": "اظهارنظر، موضع‌گیری" } }
+      ]
+    }
+  ]
+}

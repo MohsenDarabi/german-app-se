@@ -1,0 +1,513 @@
+{
+  "id": "B2-M05-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Konnektoren für Argumentation: Kausalität", "fa": "حروف ربط برای استدلال: علت و معلول" },
+  "description": "یاد بگیرید چگونه از حروف ربط علّی برای بیان نتیجه منطقی در متون علمی و رسمی استفاده کنید: daher، deshalb/deswegen، folglich، infolgedessen، demnach، somit",
+  "level": "B2",
+  "module": 5,
+  "lessonNumber": 2,
+  "totalSteps": 45,
+  "estimatedMinutes": 35,
+  "vocabulary": [
+    { "de": "daher", "fa": "بنابراین، از این رو", "grammar": { "pos": "adverb" } },
+    { "de": "deshalb", "fa": "به همین دلیل، از این رو", "grammar": { "pos": "adverb" } },
+    { "de": "deswegen", "fa": "به همین خاطر، به این سبب", "grammar": { "pos": "adverb" } },
+    { "de": "folglich", "fa": "در نتیجه، بنابراین", "grammar": { "pos": "adverb" } },
+    { "de": "infolgedessen", "fa": "در نتیجه آن، به تبع آن", "grammar": { "pos": "adverb" } },
+    { "de": "demnach", "fa": "بر این اساس، طبق این", "grammar": { "pos": "adverb" } },
+    { "de": "somit", "fa": "بدین ترتیب، لذا", "grammar": { "pos": "adverb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "حروف ربط علّی چیست؟",
+      "content": "**کونکتورهای علّی (Kausale Konnektoren)**\n\nاین حروف ربط برای بیان **نتیجه منطقی** از یک علت استفاده می‌شوند.\n\n**ساختار:**\n- همه در **جایگاه اول** (Position 1) قرار می‌گیرند\n- فعل بلافاصله بعد از آنها می‌آید (جایگاه دوم)\n\n**فرمول:**\n```\n[علت]. + [کونکتور] + [فعل] + [بقیه جمله].\n```\n\n**مثال:**\n- Es regnet stark. **Daher** bleiben wir zu Hause.\n  (باران شدید می‌بارد. **بنابراین** در خانه می‌مانیم.)\n\n**کاربرد:**\n- متون علمی و دانشگاهی\n- مقالات و گزارش‌ها\n- استدلال‌های رسمی",
+      "examples": [
+        { "de": "Die Kosten steigen. Daher müssen wir sparen.", "fa": "هزینه‌ها افزایش می‌یابند. بنابراین باید صرفه‌جویی کنیم." },
+        { "de": "Er war krank. Deshalb kam er nicht.", "fa": "او مریض بود. به همین دلیل نیامد." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "daher", "fa": "بنابراین، از این رو" },
+      "example": { "text": { "de": "Die Daten sind unvollständig. Daher können wir keine Schlussfolgerung ziehen.", "fa": "داده‌ها ناقص هستند. بنابراین نمی‌توانیم نتیجه‌گیری کنیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "daher",
+      "translation": "بنابراین",
+      "syllables": ["da", "her"],
+      "distractors": ["de", "har", "dir"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "deshalb", "fa": "به همین دلیل، از این رو" },
+      "example": { "text": { "de": "Die Studie zeigt klare Ergebnisse. Deshalb empfehlen wir diese Methode.", "fa": "مطالعه نتایج واضحی نشان می‌دهد. به همین دلیل این روش را توصیه می‌کنیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "deshalb",
+      "translation": "به همین دلیل",
+      "syllables": ["des", "halb"],
+      "distractors": ["das", "holb", "hilb"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "deswegen", "fa": "به همین خاطر، به این سبب" },
+      "example": { "text": { "de": "Der Markt ist gesättigt. Deswegen sinken die Preise.", "fa": "بازار اشباع شده است. به همین خاطر قیمت‌ها کاهش می‌یابند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "deswegen",
+      "translation": "به همین خاطر",
+      "syllables": ["des", "we", "gen"],
+      "distractors": ["das", "wa", "gan"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "تفاوت‌های ظریف بین کونکتورها",
+      "content": "**سطح رسمیت:**\n\n| کونکتور | سطح | کاربرد |\n|---------|-----|--------|\n| **deshalb/deswegen** | محاوره‌ای تا نیمه‌رسمی | روزمره، ایمیل |\n| **daher** | رسمی | گزارش، مقاله |\n| **folglich** | بسیار رسمی | متون علمی |\n| **infolgedessen** | بسیار رسمی | متون حقوقی |\n| **demnach** | رسمی | نتیجه‌گیری منطقی |\n| **somit** | رسمی | جمع‌بندی |\n\n**deshalb = deswegen:**\n- معنای یکسان دارند\n- deswegen کمی محاوره‌ای‌تر است\n\n**نکته مهم:** در آزمون‌های زبان آلمانی (مثل TestDaF)، استفاده از folglich و infolgedessen امتیاز بیشتری می‌آورد!",
+      "examples": [
+        { "de": "Die Wirtschaft wächst. Folglich steigt die Beschäftigung.", "fa": "اقتصاد رشد می‌کند. در نتیجه اشتغال افزایش می‌یابد." },
+        { "de": "Das Experiment scheiterte. Infolgedessen wurde das Projekt eingestellt.", "fa": "آزمایش شکست خورد. در نتیجه آن پروژه متوقف شد." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "folglich", "fa": "در نتیجه، بنابراین" },
+      "example": { "text": { "de": "Die Hypothese wurde bestätigt. Folglich ist die Theorie gültig.", "fa": "فرضیه تأیید شد. در نتیجه نظریه معتبر است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "folglich",
+      "translation": "در نتیجه",
+      "syllables": ["folg", "lich"],
+      "distractors": ["falg", "loch", "fleg"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "infolgedessen", "fa": "در نتیجه آن، به تبع آن" },
+      "example": { "text": { "de": "Die Verhandlungen scheiterten. Infolgedessen wurde der Vertrag nicht unterzeichnet.", "fa": "مذاکرات شکست خورد. در نتیجه آن قرارداد امضا نشد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "infolgedessen",
+      "translation": "در نتیجه آن",
+      "syllables": ["in", "fol", "ge", "des", "sen"],
+      "distractors": ["an", "fel", "ga", "das"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "demnach", "fa": "بر این اساس، طبق این" },
+      "example": { "text": { "de": "Die Umfrage zeigt 70% Zustimmung. Demnach ist das Projekt populär.", "fa": "نظرسنجی ۷۰٪ موافقت نشان می‌دهد. بر این اساس پروژه محبوب است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "demnach",
+      "translation": "بر این اساس",
+      "syllables": ["dem", "nach"],
+      "distractors": ["dam", "noch", "nim"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام کونکتور برای متون علمی رسمی‌تر است؟",
+      "options": [
+        "deshalb",
+        "deswegen",
+        "folglich",
+        "و همه یکسان هستند"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "آفرین! folglich رسمی‌تر است و در متون علمی و دانشگاهی ترجیح داده می‌شود.", "incorrect": "folglich رسمی‌ترین گزینه است و در متون علمی و دانشگاهی استفاده می‌شود." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "در جمله «Die Kosten steigen. _____ müssen wir sparen.» کدام گزینه صحیح است؟",
+      "options": [
+        "Daher",
+        "Weil",
+        "Obwohl",
+        "Wenn"
+      ],
+      "correctAnswerIndex": 0,
+      "feedback": { "correct": "درست! Daher در جایگاه اول قرار می‌گیرد و نتیجه منطقی را بیان می‌کند.", "incorrect": "Daher صحیح است زیرا در جایگاه اول می‌آید و نتیجه منطقی (باید صرفه‌جویی کنیم) را بیان می‌کند." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "کونکتور مناسب را انتخاب کنید",
+      "sentence": "Die Inflation steigt. {0} werden die Lebenshaltungskosten höher.",
+      "options": ["Daher", "Weil", "Obwohl", "Wenn"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Daher (بنابراین) نتیجه منطقی را بیان می‌کند: تورم بالا می‌رود، بنابراین هزینه‌های زندگی افزایش می‌یابد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جمله را با کونکتور مناسب کامل کنید",
+      "sentence": "Das Medikament hat Nebenwirkungen. {0} sollte es nur unter ärztlicher Aufsicht eingenommen werden.",
+      "options": ["Folglich", "Aber", "Trotzdem", "Obwohl"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Folglich (در نتیجه) نشان می‌دهد که به دلیل عوارض جانبی، دارو باید زیر نظر پزشک مصرف شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "کونکتور رسمی را انتخاب کنید",
+      "sentence": "Die Verhandlungen scheiterten. {0} wurde das Projekt eingestellt.",
+      "options": ["Infolgedessen", "So", "Dann", "Auch"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Infolgedessen (در نتیجه آن) کونکتور بسیار رسمی است که در متون حقوقی و اداری استفاده می‌شود." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "somit - جمع‌بندی و نتیجه‌گیری",
+      "content": "**somit (بدین ترتیب، لذا)**\n\nاین کونکتور برای **جمع‌بندی نهایی** یک استدلال استفاده می‌شود.\n\n**ویژگی‌ها:**\n- در انتهای یک استدلال می‌آید\n- نتیجه نهایی را اعلام می‌کند\n- در جایگاه اول قرار می‌گیرد\n\n**مثال کامل:**\n\nDie Studie zeigt, dass Bewegung gesund ist. Sport verbessert die Stimmung und reduziert Stress. **Somit** ist regelmäßige körperliche Aktivität für das Wohlbefinden unerlässlich.\n\n(مطالعه نشان می‌دهد که ورزش سالم است. ورزش حال و هوا را بهتر می‌کند و استرس را کاهش می‌دهد. **بدین ترتیب** فعالیت بدنی منظم برای سلامت روان ضروری است.)\n\n**در مقایسه با folglich:**\n- folglich: نتیجه مستقیم\n- somit: نتیجه‌گیری کلی و جمع‌بندی",
+      "examples": [
+        { "de": "Alle Bedingungen sind erfüllt. Somit kann das Projekt beginnen.", "fa": "همه شرایط برآورده شده‌اند. بدین ترتیب پروژه می‌تواند شروع شود." },
+        { "de": "Die Argumente sind überzeugend. Somit stimmen wir zu.", "fa": "استدلال‌ها قانع‌کننده هستند. لذا موافقت می‌کنیم." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "کونکتور مناسب برای جمع‌بندی را انتخاب کنید",
+      "sentence": "Alle Tests waren erfolgreich. {0} ist das Produkt marktreif.",
+      "options": ["Somit", "Weil", "Bevor", "Falls"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Somit (بدین ترتیب) برای جمع‌بندی و نتیجه‌گیری نهایی استفاده می‌شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "نتیجه‌گیری منطقی را کامل کنید",
+      "sentence": "Die Statistiken zeigen einen Aufwärtstrend. {0} können wir optimistisch sein.",
+      "options": ["Demnach", "Obwohl", "Bevor", "Solange"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Demnach (بر این اساس) نشان می‌دهد که بر اساس آمار، می‌توانیم خوش‌بین باشیم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جمله علمی را کامل کنید",
+      "sentence": "Die Hypothese wurde widerlegt. {0} muss eine neue Theorie entwickelt werden.",
+      "options": ["Folglich", "Aber", "Und", "Oder"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Folglich (در نتیجه) در متون علمی برای بیان نتیجه منطقی استفاده می‌شود." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "جلسه هیئت مدیره",
+      "scene": {
+        "location": "conference room",
+        "description": { "de": "In einer Vorstandssitzung eines Unternehmens", "fa": "در جلسه هیئت مدیره یک شرکت" }
+      },
+      "lines": [
+        { "speaker": "Vorstandsvorsitzender", "text": { "de": "Die Verkaufszahlen sind um 20% gestiegen.", "fa": "آمار فروش ۲۰٪ افزایش یافته است." }, "mood": "happy" },
+        { "speaker": "Finanzvorstand", "text": { "de": "Folglich ist unser Umsatz auf einem Rekordhoch.", "fa": "در نتیجه درآمد ما در بالاترین سطح تاریخی است." }, "mood": "excited" },
+        { "speaker": "Marketingleiterin", "text": { "de": "Die Kampagne war erfolgreich. Deshalb empfehle ich, sie fortzusetzen.", "fa": "کمپین موفق بود. به همین دلیل توصیه می‌کنم ادامه دهیم." }, "mood": "neutral" },
+        { "speaker": "Vorstandsvorsitzender", "text": { "de": "Die Argumente sind überzeugend. Somit genehmigen wir das Budget.", "fa": "استدلال‌ها قانع‌کننده هستند. بدین ترتیب بودجه را تصویب می‌کنیم." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "کدام کونکتور در این مکالمه برای نتیجه‌گیری نهایی استفاده شد؟", "options": ["Folglich", "Deshalb", "Somit"], "correctIndex": 2, "explanation": "Somit برای جمع‌بندی و تصمیم نهایی استفاده شد: بودجه تصویب می‌شود." },
+        { "question": "«Folglich» در این متن چه نقشی دارد؟", "options": ["بیان علت", "بیان نتیجه مستقیم", "بیان تضاد"], "correctIndex": 1, "explanation": "Folglich نتیجه مستقیم افزایش فروش را بیان می‌کند: درآمد رکورد زد." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را با کونکتور علّی مرتب کنید",
+      "words": ["müssen", "Daher", "sparen", "wir"],
+      "correctOrder": [1, 3, 0, 2],
+      "correctSentence": { "de": "Daher müssen wir sparen.", "fa": "بنابراین باید صرفه‌جویی کنیم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله علمی را مرتب کنید",
+      "words": ["gültig", "die", "Folglich", "Theorie", "ist"],
+      "correctOrder": [2, 4, 1, 3, 0],
+      "correctSentence": { "de": "Folglich ist die Theorie gültig.", "fa": "در نتیجه نظریه معتبر است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله رسمی را مرتب کنید",
+      "words": ["Projekt", "Infolgedessen", "das", "wurde", "eingestellt"],
+      "correctOrder": [1, 3, 2, 0, 4],
+      "correctSentence": { "de": "Infolgedessen wurde das Projekt eingestellt.", "fa": "در نتیجه آن پروژه متوقف شد." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "کونکتورهای علّی مثل daher و folglich در جایگاه اول جمله قرار می‌گیرند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! این کونکتورها همیشه در Position 1 قرار می‌گیرند و فعل بلافاصله بعد از آنها می‌آید." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "deshalb و deswegen معنای کاملاً متفاوتی دارند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! deshalb و deswegen معنای یکسانی دارند (به همین دلیل). فقط deswegen کمی محاوره‌ای‌تر است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "somit معمولاً برای جمع‌بندی و نتیجه‌گیری نهایی استفاده می‌شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! somit (بدین ترتیب) در انتهای یک استدلال برای اعلام نتیجه نهایی به کار می‌رود." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "ارائه دانشگاهی",
+      "scene": {
+        "location": "university",
+        "description": { "de": "Bei einer wissenschaftlichen Präsentation an der Universität", "fa": "در یک ارائه علمی در دانشگاه" }
+      },
+      "lines": [
+        { "speaker": "Professor", "text": { "de": "Unsere Forschung zeigt signifikante Ergebnisse.", "fa": "تحقیقات ما نتایج معناداری نشان می‌دهد." }, "mood": "neutral" },
+        { "speaker": "Studentin", "text": { "de": "Die Daten bestätigen die Hypothese. Demnach ist der Klimawandel messbar.", "fa": "داده‌ها فرضیه را تأیید می‌کنند. بر این اساس تغییرات اقلیمی قابل اندازه‌گیری است." }, "mood": "excited" },
+        { "speaker": "Professor", "text": { "de": "Richtig. Die Temperatur stieg in 50 Jahren um 1,5 Grad. Infolgedessen schmelzen die Gletscher.", "fa": "درست است. دما در ۵۰ سال ۱.۵ درجه افزایش یافت. در نتیجه آن یخچال‌های طبیعی ذوب می‌شوند." }, "mood": "sad" },
+        { "speaker": "Studentin", "text": { "de": "Somit müssen wir dringend handeln!", "fa": "بدین ترتیب باید فوری اقدام کنیم!" }, "mood": "surprised" }
+      ],
+      "questions": [
+        { "question": "کدام کونکتور برای بیان نتیجه از داده‌های علمی استفاده شد؟", "options": ["Somit", "Demnach", "Infolgedessen"], "correctIndex": 1, "explanation": "Demnach (بر این اساس) برای نتیجه‌گیری از داده‌های علمی استفاده شد." },
+        { "question": "Infolgedessen در این متن چه رابطه‌ای را نشان می‌دهد؟", "options": ["افزایش دما باعث ذوب یخچال‌ها شد", "یخچال‌ها باعث افزایش دما شدند", "هیچ رابطه‌ای وجود ندارد"], "correctIndex": 0, "explanation": "Infolgedessen رابطه علت و معلول را نشان می‌دهد: افزایش دما → ذوب یخچال‌ها" }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "کونکتورها را با سطح رسمیت جفت کنید",
+      "items": [
+        { "id": "i1", "text": "deshalb/deswegen" },
+        { "id": "i2", "text": "daher" },
+        { "id": "i3", "text": "folglich" },
+        { "id": "i4", "text": "infolgedessen" },
+        { "id": "i5", "text": "somit" },
+        { "id": "i6", "text": "demnach" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "محاوره‌ای تا نیمه‌رسمی" },
+        { "id": "m2", "text": "رسمی - گزارش" },
+        { "id": "m3", "text": "بسیار رسمی - علمی" },
+        { "id": "m4", "text": "بسیار رسمی - حقوقی" },
+        { "id": "m5", "text": "رسمی - جمع‌بندی" },
+        { "id": "m6", "text": "رسمی - نتیجه‌گیری منطقی" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "هزینه‌ها افزایش یافت. بنابراین باید صرفه‌جویی کنیم.",
+      "sentenceTemplate": "Die Kosten stiegen. {0} müssen wir sparen.",
+      "options": ["Daher", "Obwohl", "Weil", "Bevor"],
+      "correctAnswers": [0],
+      "correctTranslation": { "de": "Die Kosten stiegen. Daher müssen wir sparen.", "fa": "هزینه‌ها افزایش یافت. بنابراین باید صرفه‌جویی کنیم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "آزمایش شکست خورد. در نتیجه آن پروژه متوقف شد.",
+      "sentenceTemplate": "Das Experiment scheiterte. {0} wurde das Projekt {1}.",
+      "options": ["Infolgedessen", "Deshalb", "eingestellt", "begonnen"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Das Experiment scheiterte. Infolgedessen wurde das Projekt eingestellt.", "fa": "آزمایش شکست خورد. در نتیجه آن پروژه متوقف شد." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: گزارش اقتصادی",
+      "passage": {
+        "de": "Wirtschaftsbericht Q3 2024:\n\nDie Inflation liegt bei 5,2%. Daher sinkt die Kaufkraft der Verbraucher. Die Zentralbank hat die Zinsen erhöht. Folglich werden Kredite teurer.\n\nDie Energiepreise sind gestiegen. Deswegen steigen auch die Produktionskosten. Infolgedessen erhöhen viele Unternehmen ihre Preise.\n\nDie Arbeitslosenquote ist stabil bei 4,8%. Demnach bleibt der Arbeitsmarkt robust. Die Exportzahlen sind positiv. Somit zeigt die Wirtschaft trotz Herausforderungen Widerstandsfähigkeit.",
+        "fa": "گزارش اقتصادی سه‌ماهه سوم ۲۰۲۴:\n\nتورم ۵.۲٪ است. بنابراین قدرت خرید مصرف‌کنندگان کاهش می‌یابد. بانک مرکزی نرخ بهره را افزایش داده است. در نتیجه وام‌ها گران‌تر می‌شوند.\n\nقیمت انرژی افزایش یافته است. به همین دلیل هزینه‌های تولید نیز بالا می‌رود. در نتیجه آن بسیاری از شرکت‌ها قیمت‌هایشان را افزایش می‌دهند.\n\nنرخ بیکاری با ۴.۸٪ پایدار است. بر این اساس بازار کار قوی باقی می‌ماند. آمار صادرات مثبت است. بدین ترتیب اقتصاد علیرغم چالش‌ها مقاومت نشان می‌دهد."
+      },
+      "questions": [
+        { "question": "چند کونکتور علّی در این متن استفاده شده؟", "options": ["4", "5", "6"], "correctIndex": 2, "explanation": "6 کونکتور: daher, folglich, deswegen, infolgedessen, demnach, somit" },
+        { "question": "کدام کونکتور برای جمع‌بندی نهایی استفاده شده؟", "options": ["Daher", "Folglich", "Somit"], "correctIndex": 2, "explanation": "Somit در انتها برای جمع‌بندی کلی وضعیت اقتصاد استفاده شده است." },
+        { "question": "رابطه بین افزایش قیمت انرژی و افزایش قیمت شرکت‌ها با کدام کونکتور بیان شده؟", "options": ["Deswegen و Infolgedessen", "Daher و Folglich", "Demnach و Somit"], "correctIndex": 0, "explanation": "Deswegen (افزایش هزینه تولید) و Infolgedessen (افزایش قیمت‌ها) این زنجیره علّی را نشان می‌دهند." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die Forschungspräsentation", "fa": "ارائه تحقیقاتی" },
+      "characters": ["Dr. Schmidt", "Anna"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Anna bereitet ihre Doktorarbeit-Präsentation vor. Dr. Schmidt ist ihr Betreuer.", "fa": "آنا ارائه پایان‌نامه دکترایش را آماده می‌کند. دکتر اشمیت استاد راهنمای اوست." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Ich habe die Ergebnisse analysiert. Die Daten zeigen einen klaren Trend.", "fa": "نتایج را تحلیل کردم. داده‌ها یک روند واضح نشان می‌دهند." },
+          "mood": "excited"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Dr. Schmidt",
+          "text": { "de": "Sehr gut! Aber wie verbinden Sie die Argumente?", "fa": "بسیار خوب! اما چگونه استدلال‌ها را به هم وصل می‌کنید؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Die Temperatur stieg. Folglich schmolzen die Gletscher. Infolgedessen stieg der Meeresspiegel.", "fa": "دما بالا رفت. در نتیجه یخچال‌ها ذوب شدند. در نتیجه آن سطح دریا بالا آمد." },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "آنا از کدام کونکتورها برای زنجیره علّی استفاده کرد؟",
+          "options": ["deshalb و daher", "folglich و infolgedessen", "somit و demnach"],
+          "correctIndex": 1,
+          "explanation": "آنا از folglich و infolgedessen برای نشان دادن زنجیره علت و معلول استفاده کرد."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Dr. Schmidt",
+          "text": { "de": "Perfekt! Das ist eine klare Argumentation. Demnach ist Ihre These gut begründet.", "fa": "عالی! این یک استدلال واضح است. بر این اساس تز شما خوب مستند شده است." },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Anna",
+          "text": { "de": "Somit bin ich bereit für die Verteidigung!", "fa": "بدین ترتیب برای دفاع آماده‌ام!" },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "چرا دکتر اشمیت از demnach استفاده کرد؟",
+          "options": ["برای بیان تضاد", "برای نتیجه‌گیری منطقی از شواهد", "برای شروع بحث جدید"],
+          "correctIndex": 1,
+          "explanation": "Demnach برای نتیجه‌گیری منطقی استفاده می‌شود: بر اساس استدلال خوب، تز مستند است."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: کونکتورها",
+      "instruction": "کونکتور مناسب را انتخاب کنید!",
+      "questions": [
+        { "prompt": "رسمی‌ترین:", "left": "deshalb", "right": "folglich", "correctSide": "right" },
+        { "prompt": "برای جمع‌بندی:", "left": "somit", "right": "daher", "correctSide": "left" },
+        { "prompt": "محاوره‌ای‌تر:", "left": "deswegen", "right": "infolgedessen", "correctSide": "left" },
+        { "prompt": "متون حقوقی:", "left": "deshalb", "right": "infolgedessen", "correctSide": "right" },
+        { "prompt": "نتیجه از آمار:", "left": "demnach", "right": "obwohl", "correctSide": "left" },
+        { "prompt": "Position 1:", "left": "daher", "right": "weil", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Die Kosten steigen. Daher müssen wir sparen.",
+      "translation": "هزینه‌ها افزایش می‌یابند. بنابراین باید صرفه‌جویی کنیم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Die Hypothese wurde bestätigt. Folglich ist die Theorie gültig.",
+      "translation": "فرضیه تأیید شد. در نتیجه نظریه معتبر است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Alle Bedingungen sind erfüllt. Somit kann das Projekt beginnen.",
+      "translation": "همه شرایط برآورده شده‌اند. بدین ترتیب پروژه می‌تواند شروع شود."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: کونکتورهای علّی",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "daher یعنی:", "options": ["بنابراین", "اما"], "correctAnswerIndex": 0 },
+        { "question": "folglich در کجا رایج است؟", "options": ["متون علمی", "زبان کودکان"], "correctAnswerIndex": 0 },
+        { "question": "somit برای چیست؟", "options": ["جمع‌بندی", "مقدمه"], "correctAnswerIndex": 0 },
+        { "question": "infolgedessen خیلی:", "options": ["رسمی است", "محاوره‌ای است"], "correctAnswerIndex": 0 },
+        { "question": "deshalb و deswegen:", "options": ["معنای یکسان دارند", "متضاد هستند"], "correctAnswerIndex": 0 },
+        { "question": "این کونکتورها در Position:", "options": ["1", "آخر"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: کونکتورها",
+      "pairs": [
+        { "de": "daher", "fa": "بنابراین" },
+        { "de": "folglich", "fa": "در نتیجه" },
+        { "de": "somit", "fa": "بدین ترتیب" },
+        { "de": "demnach", "fa": "بر این اساس" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کونکتورهای علّی را پیدا کنید",
+      "targetWords": ["daher", "deshalb", "folglich", "somit", "demnach"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "daher", "fa": "بنابراین", "options": ["اما", "بنابراین", "چون", "اگر"], "correctIndex": 1 },
+        { "de": "folglich", "fa": "در نتیجه", "options": ["قبل از", "در نتیجه", "به جای", "علیرغم"], "correctIndex": 1 },
+        { "de": "infolgedessen", "fa": "در نتیجه آن", "options": ["در نتیجه آن", "به علاوه", "همچنین", "البته"], "correctIndex": 0 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما کونکتورهای علّی برای استدلال علمی را یاد گرفتید!",
+      "keyPoints": [
+        "همه کونکتورهای علّی در Position 1 قرار می‌گیرند",
+        "daher, deshalb, deswegen: بنابراین (سطوح مختلف رسمیت)",
+        "folglich: در نتیجه (بسیار رسمی، متون علمی)",
+        "infolgedessen: در نتیجه آن (بسیار رسمی، متون حقوقی)",
+        "demnach: بر این اساس (نتیجه‌گیری از شواهد)",
+        "somit: بدین ترتیب (جمع‌بندی نهایی)"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "daher", "fa": "بنابراین" } },
+        { "word": { "de": "deshalb", "fa": "به همین دلیل" } },
+        { "word": { "de": "deswegen", "fa": "به همین خاطر" } },
+        { "word": { "de": "folglich", "fa": "در نتیجه" } },
+        { "word": { "de": "infolgedessen", "fa": "در نتیجه آن" } },
+        { "word": { "de": "demnach", "fa": "بر این اساس" } },
+        { "word": { "de": "somit", "fa": "بدین ترتیب" } }
+      ]
+    }
+  ]
+}
