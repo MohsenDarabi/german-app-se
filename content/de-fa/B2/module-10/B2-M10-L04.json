@@ -1,0 +1,528 @@
+{
+  "id": "B2-M10-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Modalsätze: Zusammenfassung", "fa": "جملات حالتی: جمع‌بندی" },
+  "description": "مرور جامع تمام انواع جملات حالتی در آلمانی: indem (با انجام دادن - روش)، dadurch, dass (از طریق اینکه - رسمی)، ohne dass / ohne zu (بدون اینکه - نفی)، و anstatt dass / anstatt zu (به جای اینکه). تمرکز بر مقایسه و استفاده صحیح در متون رسمی و غیررسمی.",
+  "level": "B2",
+  "module": 10,
+  "lessonNumber": 4,
+  "totalSteps": 45,
+  "estimatedMinutes": 45,
+  "vocabulary": [
+    { "de": "der Modalsatz", "fa": "جمله حالتی", "grammar": { "pos": "noun", "gender": "masculine" } },
+    { "de": "die Methode", "fa": "روش، شیوه", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "das Mittel", "fa": "ابزار، وسیله", "grammar": { "pos": "noun", "gender": "neuter" } },
+    { "de": "die Alternative", "fa": "جایگزین، گزینه دیگر", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "vermeiden", "fa": "اجتناب کردن، پرهیز کردن", "grammar": { "pos": "verb" } },
+    { "de": "ersetzen", "fa": "جایگزین کردن", "grammar": { "pos": "verb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "مرور کلی: جملات حالتی در آلمانی",
+      "content": "**Modalsätze = جملات حالتی**\n\nجملات حالتی نشان می‌دهند که یک عمل **چگونه** انجام می‌شود. در این ماژول سه دسته یاد گرفتیم:\n\n**1. روش/ابزار (Wie? - چگونه؟):**\n- **indem** = با اینکه، از طریق اینکه\n- **dadurch, dass** = از این طریق که (رسمی‌تر)\n\n**2. نفی/عدم انجام (Was nicht? - چه چیزی نه؟):**\n- **ohne dass** + Nebensatz = بدون اینکه (فاعل‌های متفاوت)\n- **ohne zu** + Infinitiv = بدون اینکه (فاعل یکسان)\n\n**3. جایگزین (Was stattdessen? - به جای چه؟):**\n- **anstatt dass** + Nebensatz = به جای اینکه (فاعل‌های متفاوت)\n- **anstatt zu** + Infinitiv = به جای اینکه (فاعل یکسان)\n\n**قاعده کلی:**\n- اگر فاعل دو بخش جمله **یکسان** باشد → از **zu + Infinitiv** استفاده کنید\n- اگر فاعل‌ها **متفاوت** باشند → از **dass + Nebensatz** استفاده کنید",
+      "examples": [
+        { "de": "Er lernt, indem er viel liest. (روش)", "fa": "او یاد می‌گیرد با اینکه زیاد می‌خواند." },
+        { "de": "Er ging, ohne zu grüßen. (نفی)", "fa": "او رفت بدون اینکه سلام کند." },
+        { "de": "Er schlief, anstatt zu arbeiten. (جایگزین)", "fa": "او خوابید به جای اینکه کار کند." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "der Modalsatz", "fa": "جمله حالتی" },
+      "example": { "text": { "de": "Ein Modalsatz beschreibt, wie eine Handlung durchgeführt wird.", "fa": "یک جمله حالتی توصیف می‌کند که یک عمل چگونه انجام می‌شود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Modalsatz",
+      "translation": "جمله حالتی",
+      "syllables": ["Mo", "dal", "satz"],
+      "distractors": ["Ma", "del", "sotz", "zats"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "die Methode", "fa": "روش، شیوه" },
+      "example": { "text": { "de": "Diese Methode ist sehr effektiv zum Sprachenlernen.", "fa": "این روش برای یادگیری زبان بسیار مؤثر است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Methode",
+      "translation": "روش، شیوه",
+      "syllables": ["Me", "tho", "de"],
+      "distractors": ["Ma", "thu", "da", "te"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "das Mittel", "fa": "ابزار، وسیله" },
+      "example": { "text": { "de": "Musik ist ein gutes Mittel, um sich zu entspannen.", "fa": "موسیقی ابزار خوبی برای آرامش یافتن است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Mittel",
+      "translation": "ابزار، وسیله",
+      "syllables": ["Mit", "tel"],
+      "distractors": ["Met", "tal", "tol", "Mot"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "indem و dadurch, dass: روش و ابزار",
+      "content": "**indem = با اینکه، از طریق اینکه**\n\nبرای بیان **روش** یا **ابزار** انجام کاری استفاده می‌شود.\n\n**ساختار indem:**\n- فعل در آخر جمله فرعی\n- Man lernt Deutsch, **indem** man viel **übt**.\n- آلمانی یاد می‌گیرند با اینکه زیاد تمرین می‌کنند.\n\n**dadurch, dass = از این طریق که (رسمی‌تر)**\n- معنای مشابه indem ولی رسمی‌تر\n- Man verbessert sich **dadurch, dass** man Fehler **macht**.\n- آدم پیشرفت می‌کند از این طریق که اشتباه می‌کند.\n\n**تفاوت:**\n| indem | dadurch, dass |\n|-------|---------------|\n| محاوره‌ای و نوشتاری | بیشتر رسمی/علمی |\n| یک جمله | می‌تواند جدا شود |\n\n**نکته برای فارسی‌زبانان:**\nدر فارسی از «با اینکه» یا «از طریق» استفاده می‌کنیم. در آلمانی فعل به آخر می‌رود!",
+      "examples": [
+        { "de": "Sie spart Geld, indem sie weniger einkauft.", "fa": "او پول پس‌انداز می‌کند با اینکه کمتر خرید می‌کند." },
+        { "de": "Dadurch, dass er früh aufsteht, hat er mehr Zeit.", "fa": "از این طریق که زود بیدار می‌شود، وقت بیشتری دارد." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله برای بیان روش صحیح است؟",
+      "options": [
+        "Er lernt, ohne dass er liest.",
+        "Er lernt, indem er viel liest.",
+        "Er lernt, anstatt dass er liest.",
+        "Er lernt, obwohl er viel liest."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! indem برای بیان روش استفاده می‌شود: با اینکه زیاد می‌خواند.", "incorrect": "indem = با اینکه (روش). ohne = بدون. anstatt = به جای. obwohl = اگرچه." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "حرف ربط مناسب را انتخاب کنید (روش)",
+      "sentence": "Man bleibt gesund, {0} man Sport treibt.",
+      "options": ["ohne dass", "anstatt dass", "indem", "obwohl"],
+      "correctAnswers": [2],
+      "feedback": { "explanation": "indem = با اینکه (روش). آدم سالم می‌ماند با اینکه ورزش می‌کند." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "حرف ربط مناسب را انتخاب کنید (روش رسمی)",
+      "sentence": "Die Effizienz wird gesteigert, {0}, {1} neue Technologien eingesetzt werden.",
+      "options": ["dadurch", "dass", "indem", "ohne"],
+      "correctAnswers": [0, 1],
+      "feedback": { "explanation": "dadurch, dass = از این طریق که (رسمی). کارایی افزایش می‌یابد از این طریق که فناوری‌های جدید به کار می‌روند." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "vermeiden", "fa": "اجتناب کردن، پرهیز کردن" },
+      "example": { "text": { "de": "Man kann Fehler vermeiden, indem man aufmerksam ist.", "fa": "می‌توان از اشتباهات اجتناب کرد با اینکه دقت کرد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "vermeiden",
+      "translation": "اجتناب کردن",
+      "syllables": ["ver", "mei", "den"],
+      "distractors": ["vor", "mai", "dan", "men"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s6b",
+      "title": "ohne dass و ohne zu: بدون اینکه",
+      "content": "**ohne dass / ohne zu = بدون اینکه**\n\nبرای بیان عملی که **انجام نشده** استفاده می‌شود.\n\n**ohne zu + Infinitiv (فاعل یکسان):**\n- Er ging, **ohne zu** grüßen.\n- او رفت بدون اینکه سلام کند.\n- فاعل هر دو بخش: Er\n\n**ohne dass + Nebensatz (فاعل‌های متفاوت):**\n- Er ging, **ohne dass** sie es **merkte**.\n- او رفت بدون اینکه او (زن) متوجه شود.\n- فاعل‌ها: Er و sie\n\n**قاعده مهم:**\n| فاعل یکسان | فاعل متفاوت |\n|------------|-------------|\n| ohne **zu** + Infinitiv | ohne **dass** + فعل صرف‌شده |\n\n**نکته:**\n- در ohne zu، zu قبل از مصدر می‌آید\n- در ohne dass، فعل به آخر جمله فرعی می‌رود\n\n**مثال مقایسه‌ای:**\n- Er geht, ohne **zu** fragen. (فاعل: Er-Er)\n- Er geht, ohne **dass** ich es **weiß**. (فاعل: Er-ich)",
+      "examples": [
+        { "de": "Sie verließ das Haus, ohne zu frühstücken.", "fa": "او خانه را ترک کرد بدون اینکه صبحانه بخورد." },
+        { "de": "Er kaufte das Auto, ohne dass seine Frau es wusste.", "fa": "او ماشین را خرید بدون اینکه همسرش بداند." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله صحیح است وقتی فاعل‌ها متفاوت هستند؟",
+      "options": [
+        "Er ging, ohne zu bemerken.",
+        "Er ging, ohne dass sie es bemerkte.",
+        "Er ging, ohne sie zu bemerken es.",
+        "Er ging, ohne dass zu bemerken."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "درست! وقتی فاعل‌ها متفاوت هستند (Er و sie)، از ohne dass استفاده می‌کنیم.", "incorrect": "وقتی فاعل‌ها متفاوت هستند، باید از ohne dass + جمله فرعی استفاده کنید." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "ساختار مناسب را انتخاب کنید (فاعل یکسان)",
+      "sentence": "Sie verließ die Party, {0} sich zu verabschieden.",
+      "options": ["ohne dass", "ohne", "anstatt dass", "indem"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "ohne + zu (فاعل یکسان: sie-sie). او مهمانی را ترک کرد بدون خداحافظی." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "ساختار مناسب را انتخاب کنید (فاعل‌های متفاوت)",
+      "sentence": "Er unterschrieb den Vertrag, {0} {1} Anwalt ihn gelesen hatte.",
+      "options": ["ohne", "dass", "sein", "zu"],
+      "correctAnswers": [0, 1],
+      "feedback": { "explanation": "ohne dass (فاعل‌های متفاوت: Er و Anwalt). او قرارداد را امضا کرد بدون اینکه وکیلش آن را خوانده باشد." }
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "die Alternative", "fa": "جایگزین، گزینه دیگر" },
+      "example": { "text": { "de": "Anstatt zu klagen, sollte man nach Alternativen suchen.", "fa": "به جای شکایت کردن، باید دنبال گزینه‌های دیگر گشت." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "Alternative",
+      "translation": "جایگزین",
+      "syllables": ["Al", "ter", "na", "ti", "ve"],
+      "distractors": ["El", "tar", "no", "tu", "va"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "ersetzen", "fa": "جایگزین کردن" },
+      "example": { "text": { "de": "Man kann Butter durch Öl ersetzen.", "fa": "می‌توان کره را با روغن جایگزین کرد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "ersetzen",
+      "translation": "جایگزین کردن",
+      "syllables": ["er", "set", "zen"],
+      "distractors": ["ar", "sat", "zan", "zet"]
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "بحث درباره روش‌های یادگیری",
+      "scene": {
+        "location": "classroom",
+        "description": { "de": "Im Sprachkurs, Diskussion über Lernmethoden", "fa": "در کلاس زبان، بحث درباره روش‌های یادگیری" }
+      },
+      "lines": [
+        { "speaker": "Lehrer", "text": { "de": "Wie verbessert man sein Deutsch am besten?", "fa": "چگونه می‌توان آلمانی خود را به بهترین شکل بهبود داد؟" }, "mood": "neutral" },
+        { "speaker": "Maria", "text": { "de": "Indem man jeden Tag ein bisschen übt, macht man Fortschritte.", "fa": "با اینکه هر روز کمی تمرین می‌کنیم، پیشرفت می‌کنیم." }, "mood": "happy" },
+        { "speaker": "Thomas", "text": { "de": "Ich lerne, ohne viele Grammatikregeln auswendig zu lernen.", "fa": "من یاد می‌گیرم بدون اینکه قواعد دستوری زیادی حفظ کنم." }, "mood": "neutral" },
+        { "speaker": "Lehrer", "text": { "de": "Interessant! Manche Schüler lernen besser, anstatt zu lesen, Videos zu schauen.", "fa": "جالب است! بعضی دانش‌آموزان بهتر یاد می‌گیرند به جای خواندن، ویدئو ببینند." }, "mood": "surprised" },
+        { "speaker": "Maria", "text": { "de": "Dadurch, dass man viele Podcasts hört, verbessert man auch das Hörverstehen.", "fa": "از این طریق که پادکست‌های زیادی گوش می‌دهیم، درک شنیداری هم بهتر می‌شود." }, "mood": "excited" }
+      ],
+      "questions": [
+        { "question": "ماریا با «indem» چه می‌گوید؟", "options": ["روش پیشرفت", "عدم انجام کاری", "جایگزین"], "correctIndex": 0, "explanation": "indem = با اینکه (روش). ماریا روش پیشرفت را توضیح می‌دهد." },
+        { "question": "توماس با «ohne zu» چه می‌گوید؟", "options": ["چیزی که انجام نمی‌دهد", "روش یادگیری", "جایگزین"], "correctIndex": 0, "explanation": "ohne zu = بدون اینکه. توماس می‌گوید بدون حفظ قواعد یاد می‌گیرد." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را مرتب کنید (indem)",
+      "words": ["übt", "man", "Man lernt,", "indem", "viel"],
+      "correctOrder": [2, 3, 1, 4, 0],
+      "correctSentence": { "de": "Man lernt, indem man viel übt.", "fa": "آدم یاد می‌گیرد با اینکه زیاد تمرین می‌کند." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را مرتب کنید (ohne zu)",
+      "words": ["zu grüßen", "Er ging,", "ohne"],
+      "correctOrder": [1, 2, 0],
+      "correctSentence": { "de": "Er ging, ohne zu grüßen.", "fa": "او رفت بدون اینکه سلام کند." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله را مرتب کنید (anstatt zu)",
+      "words": ["zu arbeiten", "anstatt", "Er schlief,"],
+      "correctOrder": [2, 1, 0],
+      "correctSentence": { "de": "Er schlief, anstatt zu arbeiten.", "fa": "او خوابید به جای اینکه کار کند." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "«indem» و «dadurch, dass» هر دو برای بیان روش استفاده می‌شوند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! هر دو برای بیان روش هستند. dadurch, dass رسمی‌تر است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "وقتی فاعل‌های دو بخش جمله یکسان هستند، باید از «ohne dass» استفاده کنیم.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! وقتی فاعل‌ها یکسان هستند، از ohne zu + Infinitiv استفاده می‌کنیم. ohne dass برای فاعل‌های متفاوت است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "«anstatt zu» به معنای «بدون اینکه» است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! anstatt zu = به جای اینکه (جایگزین). ohne zu = بدون اینکه (نفی)." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "ساختار مناسب را انتخاب کنید (جایگزین - فاعل یکسان)",
+      "sentence": "Er sieht fern, {0} seine Hausaufgaben zu machen.",
+      "options": ["ohne", "anstatt", "indem", "dadurch"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "anstatt zu = به جای اینکه. او تلویزیون می‌بیند به جای اینکه تکالیفش را انجام دهد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "ساختار مناسب را انتخاب کنید (جایگزین - فاعل‌های متفاوت)",
+      "sentence": "Sie kocht selbst, {0} {1} ihre Mutter es macht.",
+      "options": ["anstatt", "dass", "ohne", "zu"],
+      "correctAnswers": [0, 1],
+      "feedback": { "explanation": "anstatt dass (فاعل‌های متفاوت: sie و Mutter). او خودش آشپزی می‌کند به جای اینکه مادرش این کار را بکند." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "مشاوره شغلی",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Büro, Karriereberatung", "fa": "در دفتر، مشاوره شغلی" }
+      },
+      "lines": [
+        { "speaker": "Berater", "text": { "de": "Wie können Sie Ihre Karriere verbessern?", "fa": "چگونه می‌توانید شغلتان را بهبود دهید؟" }, "mood": "neutral" },
+        { "speaker": "Klient", "text": { "de": "Vielleicht, indem ich neue Fähigkeiten lerne?", "fa": "شاید با اینکه مهارت‌های جدید یاد بگیرم؟" }, "mood": "confused" },
+        { "speaker": "Berater", "text": { "de": "Genau! Dadurch, dass Sie sich weiterbilden, steigen Ihre Chancen.", "fa": "دقیقاً! از این طریق که آموزش‌های بیشتری می‌بینید، شانستان بالا می‌رود." }, "mood": "happy" },
+        { "speaker": "Klient", "text": { "de": "Ich arbeite viel, ohne dass ich befördert werde.", "fa": "من زیاد کار می‌کنم بدون اینکه ترفیع بگیرم." }, "mood": "sad" },
+        { "speaker": "Berater", "text": { "de": "Anstatt nur zu arbeiten, sollten Sie auch netzwerken.", "fa": "به جای اینکه فقط کار کنید، باید شبکه‌سازی هم بکنید." }, "mood": "neutral" },
+        { "speaker": "Klient", "text": { "de": "Verstanden! Anstatt dass ich warte, werde ich aktiv.", "fa": "فهمیدم! به جای اینکه صبر کنم، فعال می‌شوم." }, "mood": "excited" }
+      ],
+      "questions": [
+        { "question": "مشاور چه روشی پیشنهاد می‌کند؟", "options": ["بیشتر کار کردن", "آموزش بیشتر", "کمتر کار کردن"], "correctIndex": 1, "explanation": "dadurch, dass Sie sich weiterbilden = از این طریق که آموزش‌های بیشتری می‌بینید." },
+        { "question": "مشاور با «anstatt zu» چه پیشنهادی می‌دهد؟", "options": ["فقط کار نکن، شبکه‌سازی هم بکن", "بیشتر کار کن", "کمتر شبکه‌سازی کن"], "correctIndex": 0, "explanation": "anstatt nur zu arbeiten = به جای اینکه فقط کار کنی." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "ساختار را با کاربردش جفت کنید",
+      "items": [
+        { "id": "i1", "text": "indem" },
+        { "id": "i2", "text": "dadurch, dass" },
+        { "id": "i3", "text": "ohne zu" },
+        { "id": "i4", "text": "ohne dass" },
+        { "id": "i5", "text": "anstatt zu" },
+        { "id": "i6", "text": "anstatt dass" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "روش (محاوره‌ای)" },
+        { "id": "m2", "text": "روش (رسمی)" },
+        { "id": "m3", "text": "نفی (فاعل یکسان)" },
+        { "id": "m4", "text": "نفی (فاعل متفاوت)" },
+        { "id": "m5", "text": "جایگزین (فاعل یکسان)" },
+        { "id": "m6", "text": "جایگزین (فاعل متفاوت)" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "او آلمانی یاد می‌گیرد با اینکه فیلم می‌بیند.",
+      "sentenceTemplate": "Er lernt Deutsch, {0} er Filme {1}.",
+      "options": ["indem", "ohne", "schaut", "sieht"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Er lernt Deutsch, indem er Filme schaut.", "fa": "او آلمانی یاد می‌گیرد با اینکه فیلم می‌بیند." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "او رفت بدون اینکه خداحافظی کند.",
+      "sentenceTemplate": "Sie ging, {0} sich zu {1}.",
+      "options": ["ohne", "anstatt", "verabschieden", "grüßen"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Sie ging, ohne sich zu verabschieden.", "fa": "او رفت بدون اینکه خداحافظی کند." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: مقاله درباره یادگیری",
+      "passage": {
+        "de": "Effektives Lernen: Experten empfehlen, indem man regelmäßig übt, neue Informationen besser zu behalten. Dadurch, dass das Gehirn immer wieder aktiviert wird, entstehen starke Verbindungen. Viele Studenten machen den Fehler, anstatt zu üben, nur zu lesen. Sie hoffen, ohne viel Aufwand zu bestehen. Aber ohne dass man aktiv arbeitet, bleibt wenig im Gedächtnis. Die beste Methode ist, anstatt dass man alles auf einmal lernt, jeden Tag ein bisschen zu üben.",
+        "fa": "یادگیری مؤثر: کارشناسان توصیه می‌کنند که با اینکه منظم تمرین می‌کنیم، اطلاعات جدید بهتر در ذهن می‌ماند. از این طریق که مغز مدام فعال می‌شود، اتصالات قوی ایجاد می‌شود. بسیاری از دانشجویان این اشتباه را می‌کنند که به جای تمرین، فقط می‌خوانند. آن‌ها امیدوارند بدون زحمت زیاد قبول شوند. اما بدون اینکه فعالانه کار کنیم، چیز کمی در حافظه می‌ماند. بهترین روش این است که به جای اینکه همه چیز را یکجا یاد بگیریم، هر روز کمی تمرین کنیم."
+      },
+      "questions": [
+        { "question": "متن با «indem» چه روشی را توصیه می‌کند؟", "options": ["خواندن", "تمرین منظم", "استراحت"], "correctIndex": 1, "explanation": "indem man regelmäßig übt = با اینکه منظم تمرین می‌کنیم." },
+        { "question": "دانشجویان با «anstatt zu» چه اشتباهی می‌کنند؟", "options": ["زیاد تمرین می‌کنند", "فقط می‌خوانند به جای تمرین", "زود می‌خوابند"], "correctIndex": 1, "explanation": "anstatt zu üben, nur zu lesen = به جای تمرین، فقط خواندن." },
+        { "question": "«ohne dass» در متن به چه اشاره دارد؟", "options": ["بدون کار فعال، چیزی در حافظه نمی‌ماند", "بدون خواندن قبول می‌شوند", "بدون استراحت موفق می‌شوند"], "correctIndex": 0, "explanation": "ohne dass man aktiv arbeitet = بدون اینکه فعالانه کار کنیم." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der neue Mitarbeiter", "fa": "کارمند جدید" },
+      "characters": ["Herr Müller", "Frau Schmidt"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Ein neuer Mitarbeiter hat in der Firma angefangen.", "fa": "یک کارمند جدید در شرکت شروع به کار کرده است." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Frau Schmidt",
+          "text": { "de": "Wie lernt der Neue so schnell?", "fa": "تازه‌وارد چگونه این‌قدر سریع یاد می‌گیرد؟" },
+          "mood": "surprised"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Herr Müller",
+          "text": { "de": "Indem er viele Fragen stellt und aufmerksam zuhört.", "fa": "با اینکه سؤالات زیادی می‌پرسد و با دقت گوش می‌دهد." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "آقای مولر با «indem» چه می‌گوید؟",
+          "options": ["روش یادگیری", "مشکل کارمند", "جایگزین"],
+          "correctIndex": 0,
+          "explanation": "indem = با اینکه (روش). کارمند جدید با پرسیدن سؤال یاد می‌گیرد."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Frau Schmidt",
+          "text": { "de": "Er arbeitet auch effizient, ohne Zeit zu verschwenden.", "fa": "او همچنین کارآمد کار می‌کند بدون اینکه وقت تلف کند." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Herr Müller",
+          "text": { "de": "Ja, anstatt lange Pausen zu machen, bleibt er fokussiert.", "fa": "بله، به جای اینکه استراحت‌های طولانی بکند، متمرکز می‌ماند." },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "«ohne zu» در جمله خانم اشمیت چه معنایی دارد؟",
+          "options": ["با اینکه", "بدون اینکه", "به جای اینکه"],
+          "correctIndex": 1,
+          "explanation": "ohne zu = بدون اینکه. بدون تلف کردن وقت."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Frau Schmidt",
+          "text": { "de": "Dadurch, dass er so motiviert ist, inspiriert er auch andere.", "fa": "از این طریق که این‌قدر با انگیزه است، دیگران را هم الهام می‌دهد." },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "«dadurch, dass» در جمله آخر چه کاربردی دارد؟",
+          "options": ["جایگزین", "نفی", "روش (رسمی)"],
+          "correctIndex": 2,
+          "explanation": "dadurch, dass = از این طریق که. نشان می‌دهد چگونه دیگران الهام می‌گیرند."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: جملات حالتی",
+      "instruction": "کاربرد درست را انتخاب کنید!",
+      "questions": [
+        { "prompt": "indem →", "left": "روش", "right": "نفی", "correctSide": "left" },
+        { "prompt": "ohne zu →", "left": "جایگزین", "right": "نفی (فاعل یکسان)", "correctSide": "right" },
+        { "prompt": "anstatt zu →", "left": "جایگزین (فاعل یکسان)", "right": "روش", "correctSide": "left" },
+        { "prompt": "dadurch, dass →", "left": "نفی", "right": "روش (رسمی)", "correctSide": "right" },
+        { "prompt": "ohne dass →", "left": "نفی (فاعل متفاوت)", "right": "جایگزین", "correctSide": "left" },
+        { "prompt": "anstatt dass →", "left": "روش", "right": "جایگزین (فاعل متفاوت)", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Man lernt, indem man übt.",
+      "translation": "آدم یاد می‌گیرد با اینکه تمرین می‌کند."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Er ging, ohne zu grüßen.",
+      "translation": "او رفت بدون اینکه سلام کند."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Sie schlief, anstatt zu arbeiten.",
+      "translation": "او خوابید به جای اینکه کار کند."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: جملات حالتی",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "indem =", "options": ["با اینکه (روش)", "بدون اینکه"], "correctAnswerIndex": 0 },
+        { "question": "ohne zu =", "options": ["به جای اینکه", "بدون اینکه (فاعل یکسان)"], "correctAnswerIndex": 1 },
+        { "question": "anstatt zu =", "options": ["به جای اینکه (فاعل یکسان)", "با اینکه"], "correctAnswerIndex": 0 },
+        { "question": "dadurch, dass =", "options": ["از این طریق که (رسمی)", "بدون اینکه"], "correctAnswerIndex": 0 },
+        { "question": "ohne dass =", "options": ["نفی - فاعل یکسان", "نفی - فاعل متفاوت"], "correctAnswerIndex": 1 },
+        { "question": "anstatt dass =", "options": ["جایگزین - فاعل متفاوت", "روش"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: جملات حالتی",
+      "pairs": [
+        { "de": "indem", "fa": "با اینکه (روش)" },
+        { "de": "ohne zu", "fa": "بدون اینکه" },
+        { "de": "anstatt zu", "fa": "به جای اینکه" },
+        { "de": "dadurch, dass", "fa": "از این طریق که" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات کلیدی جملات حالتی را پیدا کنید",
+      "targetWords": ["indem", "dadurch", "ohne", "anstatt", "dass", "Methode"],
+      "gridSize": { "rows": 10, "cols": 10 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "der Modalsatz", "fa": "جمله حالتی", "options": ["جمله شرطی", "جمله حالتی", "جمله علّی", "جمله زمانی"], "correctIndex": 1 },
+        { "de": "vermeiden", "fa": "اجتناب کردن", "options": ["جستجو کردن", "اجتناب کردن", "پیدا کردن", "شروع کردن"], "correctIndex": 1 },
+        { "de": "ersetzen", "fa": "جایگزین کردن", "options": ["حذف کردن", "جایگزین کردن", "تکرار کردن", "متوقف کردن"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! جمع‌بندی جملات حالتی تمام شد!",
+      "message": "شما تمام انواع جملات حالتی در آلمانی را مرور کردید!",
+      "keyPoints": [
+        "**روش و ابزار (Wie?):**",
+        "indem = با اینکه (محاوره‌ای و نوشتاری)",
+        "dadurch, dass = از این طریق که (رسمی‌تر)",
+        "**نفی/عدم انجام (Was nicht?):**",
+        "ohne zu + Infinitiv = بدون اینکه (فاعل یکسان)",
+        "ohne dass + Nebensatz = بدون اینکه (فاعل متفاوت)",
+        "**جایگزین (Was stattdessen?):**",
+        "anstatt zu + Infinitiv = به جای اینکه (فاعل یکسان)",
+        "anstatt dass + Nebensatz = به جای اینکه (فاعل متفاوت)",
+        "**قاعده کلی:**",
+        "فاعل یکسان → zu + Infinitiv",
+        "فاعل متفاوت → dass + Nebensatz"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "der Modalsatz", "fa": "جمله حالتی" } },
+        { "word": { "de": "die Methode", "fa": "روش، شیوه" } },
+        { "word": { "de": "das Mittel", "fa": "ابزار، وسیله" } },
+        { "word": { "de": "die Alternative", "fa": "جایگزین" } },
+        { "word": { "de": "vermeiden", "fa": "اجتناب کردن" } },
+        { "word": { "de": "ersetzen", "fa": "جایگزین کردن" } }
+      ]
+    }
+  ]
+}

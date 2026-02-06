@@ -1938,6 +1938,37 @@ const DE_FA_B2_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/B2/B2-M09-L04"
       }
     ]
+  },
+  {
+    id: "module-10",
+    title: "بخش ۱۰: Modalsätze",
+    level: "B2",
+    lessons: [
+      {
+        id: "B2-M10-L01",
+        title: "indem - با انجام دادن",
+        description: "یاد بگیرید با indem روش انجام کار را بیان کنید.",
+        path: "/learn/de-fa/B2/B2-M10-L01"
+      },
+      {
+        id: "B2-M10-L02",
+        title: "dadurch dass - از طریق اینکه",
+        description: "یاد بگیرید ساختار رسمی dadurch, dass برای بیان روش.",
+        path: "/learn/de-fa/B2/B2-M10-L02"
+      },
+      {
+        id: "B2-M10-L03",
+        title: "ohne dass / ohne zu - بدون اینکه",
+        description: "یاد بگیرید ohne dass و ohne zu برای بیان عدم انجام کار.",
+        path: "/learn/de-fa/B2/B2-M10-L03"
+      },
+      {
+        id: "B2-M10-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل جملات وجهی: indem، dadurch dass، ohne dass.",
+        path: "/learn/de-fa/B2/B2-M10-L04"
+      }
+    ]
   }
 ];
 

@@ -8,7 +8,7 @@
 
 **Create B1 lessons - lesson by lesson, wait for user test after each**
 
-Current: `B2-M09` (Verbalperiphrasen) - **MODULE COMPLETE - READY FOR USER TEST**
+Current: `B2-M10` (Modalsätze) - **MODULE COMPLETE - READY FOR USER TEST**
 
 ---
 
@@ -27,7 +27,7 @@ Current: `B2-M09` (Verbalperiphrasen) - **MODULE COMPLETE - READY FOR USER TEST*
 | A1 | 14 | 56+ | Complete |
 | A2 | 18 | 72 | **Complete** ✅ |
 | B1 | 20 | 80 | **Complete** ✅ |
-| B2 | 9 | 36 | Module 9 complete |
+| B2 | 10 | 40 | Module 10 complete |
 
 ### A2 Completion (2026-02-05)
 
@@ -316,8 +316,9 @@ Current: `B2-M09` (Verbalperiphrasen) - **MODULE COMPLETE - READY FOR USER TEST*
 | M07 | Subjektive Modalverben | 4/4 | ✅ Complete |
 | M08 | Textverknüpfung | 4/4 | ✅ Complete |
 | M09 | Verbalperiphrasen | 4/4 | ✅ Complete |
+| M10 | Modalsätze | 4/4 | ✅ Complete |
 
-**Total B2: 36 lessons**
+**Total B2: 40 lessons**
 
 ---
 
@@ -417,6 +418,17 @@ Current: `B2-M09` (Verbalperiphrasen) - **MODULE COMPLETE - READY FOR USER TEST*
 | B2-M09-L02 | Modalitätsverben (scheinen zu, drohen zu, pflegen zu) | ✅ Complete |
 | B2-M09-L03 | Zustandsausdrücke (im Begriff sein, dabei sein, imstande sein) | ✅ Complete |
 | B2-M09-L04 | Zusammenfassung | ✅ Complete |
+
+---
+
+## B2 Module 10: Modalsätze (Modal Clauses)
+
+| Lesson | Title | Status |
+|--------|-------|--------|
+| B2-M10-L01 | indem (by doing - method/means) | ✅ Complete |
+| B2-M10-L02 | dadurch dass (by the fact that - formal) | ✅ Complete |
+| B2-M10-L03 | ohne dass / ohne zu (without doing) | ✅ Complete |
+| B2-M10-L04 | Zusammenfassung | ✅ Complete |
 
 ---
 
