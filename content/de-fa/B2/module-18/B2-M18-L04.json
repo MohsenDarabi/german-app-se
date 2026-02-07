@@ -1,0 +1,546 @@
+{
+  "id": "B2-M18-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Restriktive Sätze: Zusammenfassung", "fa": "جملات محدودکننده: جمع‌بندی" },
+  "description": "مرور جامع تمام ساختارهای محدودکننده در آلمانی: außer dass/wenn (به جز اینکه/وقتی)، es sei denn (مگر اینکه)، nur dass/bloß dass (فقط اینکه). تمرکز بر تفاوت‌های معنایی بین عبارات مختلف، زمان استفاده از هر ساختار، و تمرین جامع با تمام انواع جملات محدودکننده.",
+  "level": "B2",
+  "module": 18,
+  "lessonNumber": 4,
+  "totalSteps": 45,
+  "estimatedMinutes": 45,
+  "vocabulary": [
+    { "de": "außer", "fa": "به جز، غیر از", "grammar": { "pos": "preposition" } },
+    { "de": "es sei denn", "fa": "مگر اینکه", "grammar": { "pos": "phrase" } },
+    { "de": "nur dass", "fa": "فقط اینکه", "grammar": { "pos": "phrase" } },
+    { "de": "die Ausnahme", "fa": "استثنا", "grammar": { "pos": "noun", "gender": "f" } },
+    { "de": "die Einschränkung", "fa": "محدودیت", "grammar": { "pos": "noun", "gender": "f" } },
+    { "de": "andernfalls", "fa": "در غیر این صورت", "grammar": { "pos": "adverb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "مرور کلی: جملات محدودکننده (Restriktive Sätze)",
+      "content": "**Restriktive Sätze = جملات محدودکننده**\n\nدر این ماژول سه نوع اصلی ساختار محدودکننده یاد گرفتیم:\n\n**1. außer dass/wenn = به جز اینکه/وقتی:**\n- **Alles ist gut, außer dass es zu kalt ist.**\n- همه چیز خوب است، به جز اینکه خیلی سرد است.\n- کاربرد: استثنا کردن یک موقعیت\n\n**2. es sei denn = مگر اینکه:**\n- **Ich komme, es sei denn, ich bin krank.**\n- می‌آیم، مگر اینکه مریض باشم.\n- کاربرد: شرط منفی، استثنا\n\n**3. nur dass/bloß dass = فقط اینکه:**\n- **Es ist wie gestern, nur dass heute die Sonne scheint.**\n- مثل دیروز است، فقط اینکه امروز آفتاب می‌تابد.\n- کاربرد: تفاوت جزئی بیان کردن\n\n**نکته کلیدی برای فارسی‌زبانان:**\nهر سه ساختار برای محدود کردن جمله استفاده می‌شوند، ولی معنی و کاربرد متفاوت دارند.",
+      "examples": [
+        { "de": "Ich esse alles, außer dass ich keine Erdnüsse mag. (استثنا)", "fa": "همه چیز می‌خورم، به جز اینکه بادام زمینی دوست ندارم." },
+        { "de": "Wir gehen wandern, es sei denn, es regnet. (شرط منفی)", "fa": "پیاده‌روی می‌رویم، مگر اینکه باران ببارد." },
+        { "de": "Er ist wie sein Bruder, nur dass er größer ist. (تفاوت جزئی)", "fa": "او مثل برادرش است، فقط اینکه قدش بلندتر است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "außer", "fa": "به جز، غیر از" },
+      "example": { "text": { "de": "Alle kamen zur Party, außer Anna.", "fa": "همه به مهمانی آمدند، به جز آنا." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "außer",
+      "translation": "به جز، غیر از",
+      "syllables": ["au", "ßer"],
+      "distractors": ["ou", "ser", "au", "sser"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "die Ausnahme", "fa": "استثنا" },
+      "example": { "text": { "de": "Das ist eine Ausnahme von der Regel.", "fa": "این یک استثنا از قاعده است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Ausnahme",
+      "translation": "استثنا",
+      "syllables": ["Aus", "nah", "me"],
+      "distractors": ["Ous", "noh", "ma", "Eus"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "die Einschränkung", "fa": "محدودیت" },
+      "example": { "text": { "de": "Es gibt einige Einschränkungen bei diesem Angebot.", "fa": "چند محدودیت در این پیشنهاد وجود دارد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Einschränkung",
+      "translation": "محدودیت",
+      "syllables": ["Ein", "schrän", "kung"],
+      "distractors": ["Oin", "schron", "gung", "schren"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "außer dass/wenn: استثنا کردن موقعیت",
+      "content": "**außer dass = به جز اینکه:**\n\n**ساختار:**\n```\nجمله اصلی + außer dass + جمله فرعی (فعل در انتها)\n```\n\n**کاربرد:** بیان استثنا یا محدودیت در جمله مثبت\n\n**مثال:**\n> **Alles war perfekt, außer dass das Wetter schlecht war.**\n> همه چیز عالی بود، به جز اینکه هوا بد بود.\n\n**außer wenn = به جز وقتی:**\n\n**ساختار:**\n```\nجمله اصلی + außer wenn + جمله فرعی (فعل در انتها)\n```\n\n**کاربرد:** بیان استثنا شرطی/زمانی\n\n**مثال:**\n> **Ich bin immer glücklich, außer wenn ich Stress habe.**\n> همیشه خوشحالم، به جز وقتی استرس دارم.\n\n**تفاوت:**\n- **außer dass** = استثنا واقعیت (حقیقت)\n- **außer wenn** = استثنا شرطی (زمانی که...)\n\n**نکته:** بعد از außer dass/wenn فعل به انتها می‌رود (مثل جمله فرعی عادی).",
+      "examples": [
+        { "de": "Ich mag alle Tiere, außer dass ich Angst vor Spinnen habe. (واقعیت)", "fa": "تمام حیوانات را دوست دارم، به جز اینکه از عنکبوت می‌ترسم." },
+        { "de": "Sie geht jeden Tag joggen, außer wenn es regnet. (شرطی)", "fa": "او هر روز دویدن می‌رود، به جز وقتی که باران می‌بارد." },
+        { "de": "Alles läuft gut, außer dass wir zu wenig Personal haben. (محدودیت)", "fa": "همه چیز خوب پیش می‌رود، به جز اینکه نیروی کافی نداریم." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله از نظر دستوری صحیح است؟",
+      "options": [
+        "Alles ist gut, außer dass es ist kalt.",
+        "Alles ist gut, außer dass es kalt ist.",
+        "Alles ist gut, außer dass kalt es ist.",
+        "Alles ist gut, außer es ist kalt dass."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! بعد از außer dass فعل به انتها می‌رود: außer dass es kalt ist.", "incorrect": "بعد از außer dass فعل در انتهای جمله فرعی قرار می‌گیرد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "ساختار مناسب را انتخاب کنید (استثنا واقعیت)",
+      "sentence": "Ich liebe meinen Job, {0} ich manchmal zu viel arbeiten muss.",
+      "options": ["außer dass", "außer wenn", "nur dass", "es sei denn"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "außer dass = به جز اینکه. برای بیان استثنا واقعیت استفاده می‌شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "ساختار مناسب را انتخاب کنید (استثنا شرطی)",
+      "sentence": "Wir grillen jeden Samstag, {0} das Wetter schlecht ist.",
+      "options": ["außer wenn", "außer dass", "nur dass", "bloß dass"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "außer wenn = به جز وقتی که. برای بیان استثنا شرطی/زمانی استفاده می‌شود." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "es sei denn", "fa": "مگر اینکه" },
+      "example": { "text": { "de": "Ich helfe dir gerne, es sei denn, ich habe keine Zeit.", "fa": "با کمال میل کمکت می‌کنم، مگر اینکه وقت نداشته باشم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "andernfalls",
+      "translation": "در غیر این صورت",
+      "syllables": ["an", "dern", "falls"],
+      "distractors": ["on", "dorn", "fells", "un"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "es sei denn: شرط منفی و استثنا",
+      "content": "**es sei denn = مگر اینکه**\n\n**ساختار:**\n```\nجمله اصلی + es sei denn + جمله فرعی (فعل در انتها)\n```\n\n**کاربرد:** بیان شرط منفی یا استثنا (= «unless» در انگلیسی)\n\n**مثال:**\n> **Ich komme zur Party, es sei denn, ich bin krank.**\n> به مهمانی می‌آیم، مگر اینکه مریض باشم.\n\n**معنی:** همان چیزی که قبل از «es sei denn» گفته شد اتفاق می‌افتد، مگر اینکه شرط بعد از آن رخ دهد.\n\n**تفاوت با außer dass:**\n\n| ساختار | معنی | کاربرد | مثال |\n|---------|------|--------|------|\n| außer dass | به جز اینکه | استثنا واقعیت | Alles ist gut, außer dass... |\n| es sei denn | مگر اینکه | شرط منفی | Ich komme, es sei denn... |\n\n**نکته:**\n- **außer dass** = استثنا از حقیقت موجود\n- **es sei denn** = شرط برای نتیجه آینده\n\n**سطح رسمیت:** رسمی، نوشتاری",
+      "examples": [
+        { "de": "Wir fahren morgen los, es sei denn, das Auto ist kaputt. (شرط آینده)", "fa": "فردا حرکت می‌کنیم، مگر اینکه ماشین خراب باشد." },
+        { "de": "Sie bekommt den Job, es sei denn, es gibt einen besseren Kandidaten. (استثنا)", "fa": "او شغل را می‌گیرد، مگر اینکه کاندید بهتری وجود داشته باشد." },
+        { "de": "Das Meeting findet statt, es sei denn, der Chef sagt es ab. (شرط منفی)", "fa": "جلسه برگزار می‌شود، مگر اینکه رئیس لغوش کند." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام ساختار برای بیان شرط منفی مناسب است؟",
+      "options": [
+        "außer dass",
+        "nur dass",
+        "es sei denn",
+        "bloß dass"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "درست! es sei denn = مگر اینکه، برای بیان شرط منفی استفاده می‌شود.", "incorrect": "es sei denn = مگر اینکه، برای بیان شرط منفی (unless) استفاده می‌شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "ساختار مناسب را انتخاب کنید (شرط منفی)",
+      "sentence": "Das Konzert beginnt um 20 Uhr, {0} es gibt eine Verzögerung.",
+      "options": ["es sei denn", "außer dass", "nur dass", "außer wenn"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "es sei denn = مگر اینکه. کنسرت ساعت 20 شروع می‌شود، مگر اینکه تأخیر وجود داشته باشد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "ساختار مناسب را انتخاب کنید (استثنا واقعیت)",
+      "sentence": "Die Wohnung ist perfekt, {0} sie ein bisschen teuer ist.",
+      "options": ["außer dass", "es sei denn", "nur dass", "bloß dass"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "außer dass = به جز اینکه. آپارتمان عالی است، به جز اینکه کمی گران است." }
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "nur dass", "fa": "فقط اینکه، تنها اینکه" },
+      "example": { "text": { "de": "Er sieht aus wie sein Vater, nur dass er blonde Haare hat.", "fa": "او شبیه پدرش است، فقط اینکه موهای بلوند دارد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "bloß",
+      "translation": "فقط",
+      "syllables": ["bloß"],
+      "distractors": ["blos", "bloss", "blus"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "nur dass/bloß dass: تفاوت جزئی",
+      "content": "**nur dass/bloß dass = فقط اینکه، تنها اینکه**\n\n**ساختار:**\n```\nجمله اصلی + nur dass/bloß dass + جمله فرعی (فعل در انتها)\n```\n\n**کاربرد:** بیان تفاوت جزئی یا کوچک بین دو موقعیت\n\n**مثال:**\n> **Es ist wie gestern, nur dass heute die Sonne scheint.**\n> مثل دیروز است، فقط اینکه امروز آفتاب می‌تابد.\n\n**تفاوت nur dass و bloß dass:**\n- **nur dass** = رسمی‌تر، نوشتاری\n- **bloß dass** = محاوره‌ای‌تر\n- معنی هر دو یکسان است\n\n**تفاوت با außer dass:**\n\n| ساختار | معنی | کاربرد | احساس |\n|---------|------|--------|-------|\n| außer dass | به جز اینکه | استثنا کامل | منفی‌تر |\n| nur dass | فقط اینکه | تفاوت جزئی | خنثی |\n\n**مثال مقایسه:**\n- **Alles ist gut, außer dass es regnet.** (استثنا بزرگ - منفی)\n- **Alles ist wie gestern, nur dass es heute regnet.** (تفاوت کوچک - خنثی)\n\n**نکته:** nur dass/bloß dass معمولاً برای تفاوت‌های کوچک و غیرمهم استفاده می‌شود.",
+      "examples": [
+        { "de": "Sie ist wie ihre Schwester, nur dass sie größer ist. (تفاوت فیزیکی)", "fa": "او مثل خواهرش است، فقط اینکه قدش بلندتر است." },
+        { "de": "Es war ein normaler Tag, bloß dass ich früher aufgestanden bin. (تفاوت جزئی)", "fa": "یک روز عادی بود، فقط اینکه زودتر بیدار شدم." },
+        { "de": "Das Auto ist super, nur dass die Farbe mir nicht gefällt. (استثنا کوچک)", "fa": "ماشین عالی است، فقط اینکه رنگش را دوست ندارم." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "کدام ساختار برای بیان تفاوت جزئی مناسب است؟",
+      "options": [
+        "außer dass",
+        "es sei denn",
+        "nur dass",
+        "außer wenn"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "درست! nur dass = فقط اینکه، برای بیان تفاوت‌های جزئی استفاده می‌شود.", "incorrect": "nur dass/bloß dass = فقط اینکه، برای بیان تفاوت‌های کوچک استفاده می‌شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "ساختار مناسب را انتخاب کنید (تفاوت جزئی)",
+      "sentence": "Der Film war interessant, {0} er etwas zu lang war.",
+      "options": ["nur dass", "es sei denn", "außer wenn", "andernfalls"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "nur dass = فقط اینکه. فیلم جالب بود، فقط اینکه کمی طولانی بود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "ساختار مناسب را انتخاب کنید (محاوره‌ای)",
+      "sentence": "Alles war wie immer, {0} wir einen neuen Kollegen hatten.",
+      "options": ["bloß dass", "es sei denn", "außer wenn", "außer dass"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "bloß dass = فقط اینکه (محاوره‌ای). همه چیز مثل همیشه بود، فقط اینکه همکار جدید داشتیم." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "جستجوی خانه",
+      "scene": {
+        "location": "home",
+        "description": { "de": "Anna und Tom suchen eine neue Wohnung", "fa": "آنا و تام به دنبال خانه جدید هستند" }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Die erste Wohnung war perfekt, außer dass sie zu teuer war.", "fa": "خانه اول عالی بود، به جز اینکه خیلی گران بود." }, "mood": "sad" },
+        { "speaker": "Tom", "text": { "de": "Stimmt. Wir nehmen die zweite Wohnung, es sei denn, wir finden noch was Besseres.", "fa": "درسته. خانه دوم را می‌گیریم، مگر اینکه چیز بهتری پیدا کنیم." }, "mood": "neutral" },
+        { "speaker": "Anna", "text": { "de": "Die zweite ist wie die erste, nur dass sie kleiner ist.", "fa": "خانه دوم مثل اولی است، فقط اینکه کوچک‌تر است." }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Ich mag alle Zimmer, außer wenn ich an die kleine Küche denke.", "fa": "تمام اتاق‌ها را دوست دارم، به جز وقتی که به آشپزخانه کوچک فکر می‌کنم." }, "mood": "confused" },
+        { "speaker": "Anna", "text": { "de": "Die Küche ist okay, bloß dass wir keinen großen Esstisch haben können.", "fa": "آشپزخانه خوب است، فقط اینکه نمی‌توانیم میز ناهارخوری بزرگ داشته باشیم." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "آنا با «außer dass» چه استثنایی بیان می‌کند؟", "options": ["گران بودن خانه اول", "کوچک بودن خانه دوم", "آشپزخانه کوچک"], "correctIndex": 0, "explanation": "außer dass sie zu teuer war = به جز اینکه خیلی گران بود." },
+        { "question": "تام با «es sei denn» چه شرطی می‌گذارد؟", "options": ["اگر خانه اول ارزان‌تر شود", "مگر اینکه چیز بهتری پیدا کنند", "اگر آشپزخانه بزرگ‌تر باشد"], "correctIndex": 1, "explanation": "es sei denn = مگر اینکه. خانه دوم را می‌گیرند، مگر اینکه چیز بهتری پیدا کنند." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را مرتب کنید (außer dass)",
+      "words": ["das Wetter schlecht war.", "außer dass", "Alles war perfekt,"],
+      "correctOrder": [2, 1, 0],
+      "correctSentence": { "de": "Alles war perfekt, außer dass das Wetter schlecht war.", "fa": "همه چیز عالی بود، به جز اینکه هوا بد بود." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را مرتب کنید (es sei denn)",
+      "words": ["es sei denn,", "Wir kommen morgen,", "wir sind krank."],
+      "correctOrder": [1, 0, 2],
+      "correctSentence": { "de": "Wir kommen morgen, es sei denn, wir sind krank.", "fa": "فردا می‌آییم، مگر اینکه مریض باشیم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله را مرتب کنید (nur dass)",
+      "words": ["nur dass", "Es ist wie gestern,", "heute die Sonne scheint."],
+      "correctOrder": [1, 0, 2],
+      "correctSentence": { "de": "Es ist wie gestern, nur dass heute die Sonne scheint.", "fa": "مثل دیروز است، فقط اینکه امروز آفتاب می‌تابد." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "außer dass برای بیان استثنا واقعیت استفاده می‌شود، در حالی که es sei denn برای شرط منفی آینده است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! außer dass = استثنا واقعیت، es sei denn = شرط منفی (unless)" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "nur dass و bloß dass هر دو معنی «فقط اینکه» می‌دهند، ولی bloß dass محاوره‌ای‌تر است.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! هر دو همان معنی را دارند، ولی bloß dass محاوره‌ای‌تر است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "außer wenn و außer dass دقیقاً یکسان هستند و تفاوتی ندارند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! außer dass = استثنا واقعیت، außer wenn = استثنا شرطی/زمانی" }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "ساختار را با کاربرد و معنی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "außer dass" },
+        { "id": "i2", "text": "außer wenn" },
+        { "id": "i3", "text": "es sei denn" },
+        { "id": "i4", "text": "nur dass" },
+        { "id": "i5", "text": "bloß dass" },
+        { "id": "i6", "text": "andernfalls" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "به جز اینکه (استثنا واقعیت)" },
+        { "id": "m2", "text": "به جز وقتی که (استثنا شرطی)" },
+        { "id": "m3", "text": "مگر اینکه (شرط منفی)" },
+        { "id": "m4", "text": "فقط اینکه (تفاوت جزئی - رسمی)" },
+        { "id": "m5", "text": "فقط اینکه (تفاوت جزئی - محاوره‌ای)" },
+        { "id": "m6", "text": "در غیر این صورت (قید)" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "برنامه‌ریزی تعطیلات",
+      "scene": {
+        "location": "home",
+        "description": { "de": "Familie plant den Sommerurlaub", "fa": "خانواده در حال برنامه‌ریزی تعطیلات تابستانی است" }
+      },
+      "lines": [
+        { "speaker": "Vater", "text": { "de": "Ich möchte ans Meer fahren, außer dass die Hotels dort sehr teuer sind.", "fa": "می‌خواهم به دریا برویم، به جز اینکه هتل‌های آنجا خیلی گران هستند." }, "mood": "sad" },
+        { "speaker": "Mutter", "text": { "de": "Wir können campen gehen, es sei denn, du möchtest lieber ein Hotel.", "fa": "می‌توانیم کمپینگ برویم، مگر اینکه هتل را ترجیح بدهی." }, "mood": "happy" },
+        { "speaker": "Sohn", "text": { "de": "Camping ist super, nur dass es manchmal unbequem ist.", "fa": "کمپینگ عالی است، فقط اینکه گاهی راحت نیست." }, "mood": "neutral" },
+        { "speaker": "Vater", "text": { "de": "Ich gehe überall hin, außer wenn es zu heiß ist.", "fa": "به هر جا می‌روم، به جز وقتی که خیلی گرم باشد." }, "mood": "confused" },
+        { "speaker": "Mutter", "text": { "de": "Das Wetter ist wie letztes Jahr, bloß dass es dieses Jahr mehr regnet.", "fa": "هوا مثل سال گذشته است، فقط اینکه امسال بیشتر باران می‌بارد." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "مادر با «es sei denn» چه پیشنهادی می‌دهد؟", "options": ["کمپینگ، مگر اینکه پدر هتل بخواهد", "هتل، مگر اینکه پول نباشد", "ساحل، مگر اینکه گرم باشد"], "correctIndex": 0, "explanation": "es sei denn = مگر اینکه. می‌توانیم کمپینگ برویم، مگر اینکه هتل را ترجیح بدهی." },
+        { "question": "پسر با «nur dass» چه تفاوتی بیان می‌کند؟", "options": ["کمپینگ گران است", "کمپینگ گاهی راحت نیست", "کمپینگ خطرناک است"], "correctIndex": 1, "explanation": "nur dass = فقط اینکه. کمپینگ عالی است، فقط اینکه گاهی راحت نیست." }
+      ]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "همه چیز خوب است، به جز اینکه خیلی سرد است.",
+      "sentenceTemplate": "Alles ist gut, {0} es {1} kalt ist.",
+      "options": ["außer dass", "es sei denn", "nur dass", "zu", "sehr", "bloß"],
+      "correctAnswers": [0, 4],
+      "correctTranslation": { "de": "Alles ist gut, außer dass es sehr kalt ist.", "fa": "همه چیز خوب است، به جز اینکه خیلی سرد است." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "می‌آیم، مگر اینکه مریض باشم.",
+      "sentenceTemplate": "Ich komme, {0} ich krank {1}.",
+      "options": ["es sei denn", "außer dass", "nur dass", "bin", "habe", "war"],
+      "correctAnswers": [0, 3],
+      "correctTranslation": { "de": "Ich komme, es sei denn, ich bin krank.", "fa": "می‌آیم، مگر اینکه مریض باشم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr3",
+      "sourceText": "او مثل برادرش است، فقط اینکه قدش بلندتر است.",
+      "sentenceTemplate": "Er ist wie sein Bruder, {0} er größer {1}.",
+      "options": ["nur dass", "es sei denn", "außer wenn", "ist", "hat", "war"],
+      "correctAnswers": [0, 3],
+      "correctTranslation": { "de": "Er ist wie sein Bruder, nur dass er größer ist.", "fa": "او مثل برادرش است، فقط اینکه قدش بلندتر است." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: نظر مشتری",
+      "passage": {
+        "de": "Produktbewertung: Hotel Sonnenschein\n\nIch habe zwei Wochen im Hotel Sonnenschein verbracht. Alles war wunderbar, außer dass das WLAN manchmal nicht funktionierte.\n\nDas Zimmer war wie auf den Fotos, nur dass es in Wirklichkeit noch schöner war. Das Personal war sehr freundlich, außer wenn man nach 22 Uhr noch etwas brauchte.\n\nDas Essen war ausgezeichnet, bloß dass es wenig vegetarische Optionen gab.\n\nIch würde dieses Hotel jedem empfehlen, es sei denn, man braucht unbedingt schnelles Internet für die Arbeit.\n\nInsgesamt: 4 von 5 Sternen!",
+        "fa": "نظر درباره محصول: هتل سان‌شاین\n\nدو هفته در هتل سان‌شاین گذراندم. همه چیز عالی بود، به جز اینکه وای‌فای گاهی کار نمی‌کرد.\n\nاتاق مثل عکس‌ها بود، فقط اینکه در واقعیت حتی زیباتر بود. پرسنل خیلی دوستانه بودند، به جز وقتی که بعد از ساعت ۲۲ به چیزی نیاز داشتید.\n\nغذا عالی بود، فقط اینکه گزینه‌های گیاهخواری کم بود.\n\nاین هتل را به همه توصیه می‌کنم، مگر اینکه حتماً به اینترنت سریع برای کار نیاز داشته باشید.\n\nدر مجموع: ۴ از ۵ ستاره!"
+      },
+      "questions": [
+        { "question": "مشتری با «außer dass» چه مشکلی بیان کرده؟", "options": ["وای‌فای گاهی کار نمی‌کرد", "اتاق کوچک بود", "غذا گران بود"], "correctIndex": 0, "explanation": "außer dass das WLAN manchmal nicht funktionierte = به جز اینکه وای‌فای گاهی کار نمی‌کرد." },
+        { "question": "مشتری با «nur dass» چه تفاوتی درباره اتاق بیان می‌کند؟", "options": ["اتاق گران‌تر بود", "اتاق زیباتر از عکس‌ها بود", "اتاق کوچک‌تر بود"], "correctIndex": 1, "explanation": "nur dass es in Wirklichkeit noch schöner war = فقط اینکه در واقعیت حتی زیباتر بود." },
+        { "question": "مشتری با «es sei denn» چه شرطی می‌گذارد؟", "options": ["مگر اینکه به اینترنت سریع نیاز داشته باشید", "مگر اینکه غذای گیاهخواری بخواهید", "مگر اینکه اتاق بزرگ بخواهید"], "correctIndex": 0, "explanation": "es sei denn, man braucht unbedingt schnelles Internet = مگر اینکه حتماً به اینترنت سریع نیاز داشته باشید." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der neue Mitbewohner", "fa": "هم‌خانه جدید" },
+      "characters": ["Lisa", "Tom"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Lisa sucht einen neuen Mitbewohner für ihre WG.", "fa": "لیزا به دنبال هم‌خانه جدید برای آپارتمانش است." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Der erste Kandidat war nett, außer dass er Raucher ist.", "fa": "کاندید اول خوب بود، به جز اینکه سیگاری است." },
+          "mood": "sad"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Tom",
+          "text": { "de": "Ich bin Nichtraucher. Ich bin wie der erste Kandidat, nur dass ich nicht rauche!", "fa": "من سیگار نمی‌کشم. من مثل کاندید اول هستم، فقط اینکه سیگار نمی‌کشم!" },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "تام با «nur dass» چه تفاوتی بیان می‌کند؟",
+          "options": ["او سیگار نمی‌کشد", "او قدش بلندتر است", "او کار دیگری دارد"],
+          "correctIndex": 0,
+          "explanation": "nur dass ich nicht rauche = فقط اینکه سیگار نمی‌کشم."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Perfekt! Du kannst einziehen, es sei denn, du hast laute Partys.", "fa": "عالی! می‌تونی نقل مکان کنی، مگر اینکه مهمانی‌های شلوغ داری." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "لیزا با «es sei denn» چه شرطی می‌گذارد؟",
+          "options": ["تام نباید مهمانی شلوغ داشته باشد", "تام باید آشپزی کند", "تام باید اجاره بپردازد"],
+          "correctIndex": 0,
+          "explanation": "es sei denn, du hast laute Partys = مگر اینکه مهمانی‌های شلوغ داشته باشی."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Tom",
+          "text": { "de": "Keine Sorge! Ich mag alles, außer wenn es zu laut ist.", "fa": "نگران نباش! همه چیز را دوست دارم، به جز وقتی که خیلی شلوغ باشد." },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "تام با «außer wenn» چه می‌گوید؟",
+          "options": ["سر و صدا زیاد را دوست ندارد", "آشپزی را دوست ندارد", "تمیز کردن را دوست ندارد"],
+          "correctIndex": 0,
+          "explanation": "außer wenn es zu laut ist = به جز وقتی که خیلی شلوغ باشد."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: جملات محدودکننده",
+      "instruction": "ساختار درست را انتخاب کنید!",
+      "questions": [
+        { "prompt": "استثنا واقعیت = ؟", "left": "außer dass", "right": "es sei denn", "correctSide": "left" },
+        { "prompt": "شرط منفی = ؟", "left": "nur dass", "right": "es sei denn", "correctSide": "right" },
+        { "prompt": "تفاوت جزئی = ؟", "left": "nur dass", "right": "außer dass", "correctSide": "left" },
+        { "prompt": "محاوره‌ای‌تر کدام است؟", "left": "bloß dass", "right": "nur dass", "correctSide": "left" },
+        { "prompt": "استثنا شرطی = ؟", "left": "außer wenn", "right": "außer dass", "correctSide": "left" },
+        { "prompt": "مگر اینکه = ؟", "left": "außer dass", "right": "es sei denn", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Alles ist perfekt, außer dass es zu teuer ist.",
+      "translation": "همه چیز عالی است، به جز اینکه خیلی گران است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Ich komme morgen, es sei denn, ich bin krank.",
+      "translation": "فردا می‌آیم، مگر اینکه مریض باشم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Er ist wie sein Bruder, nur dass er größer ist.",
+      "translation": "او مثل برادرش است، فقط اینکه قدش بلندتر است."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: جملات محدودکننده",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "außer dass =", "options": ["به جز اینکه", "مگر اینکه"], "correctAnswerIndex": 0 },
+        { "question": "es sei denn =", "options": ["مگر اینکه", "فقط اینکه"], "correctAnswerIndex": 0 },
+        { "question": "nur dass =", "options": ["فقط اینکه", "به جز اینکه"], "correctAnswerIndex": 0 },
+        { "question": "bloß dass =", "options": ["فقط اینکه", "مگر اینکه"], "correctAnswerIndex": 0 },
+        { "question": "außer wenn =", "options": ["به جز وقتی که", "فقط وقتی که"], "correctAnswerIndex": 0 },
+        { "question": "die Ausnahme =", "options": ["استثنا", "محدودیت"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: ساختارهای محدودکننده",
+      "pairs": [
+        { "de": "außer dass", "fa": "به جز اینکه" },
+        { "de": "es sei denn", "fa": "مگر اینکه" },
+        { "de": "nur dass", "fa": "فقط اینکه" },
+        { "de": "die Ausnahme", "fa": "استثنا" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات کلیدی جملات محدودکننده را پیدا کنید",
+      "targetWords": ["außer", "denn", "bloß", "Ausnahme", "Einschränkung"],
+      "gridSize": { "rows": 10, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "außer", "fa": "به جز، غیر از", "options": ["فقط", "به جز", "همه", "هیچ"], "correctIndex": 1 },
+        { "de": "die Ausnahme", "fa": "استثنا", "options": ["قاعده", "استثنا", "مثال", "نتیجه"], "correctIndex": 1 },
+        { "de": "die Einschränkung", "fa": "محدودیت", "options": ["آزادی", "محدودیت", "امکان", "مشکل"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! جمع‌بندی جملات محدودکننده تمام شد!",
+      "message": "شما تمام انواع جملات محدودکننده (Restriktive Sätze) در آلمانی را مرور کردید!",
+      "keyPoints": [
+        "**außer dass/wenn = به جز اینکه/وقتی:**",
+        "استثنا کردن موقعیت از جمله اصلی",
+        "außer dass = استثنا واقعیت",
+        "außer wenn = استثنا شرطی/زمانی",
+        "**es sei denn = مگر اینکه:**",
+        "بیان شرط منفی (unless)",
+        "استثنا برای نتیجه آینده",
+        "سطح: رسمی، نوشتاری",
+        "**nur dass/bloß dass = فقط اینکه:**",
+        "بیان تفاوت جزئی بین دو موقعیت",
+        "nur dass = رسمی‌تر",
+        "bloß dass = محاوره‌ای‌تر",
+        "**تفاوت کلیدی:**",
+        "außer dass: استثنا کامل، احساس منفی‌تر",
+        "nur dass: تفاوت کوچک، احساس خنثی",
+        "es sei denn: شرط منفی، استثنا آینده"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "außer", "fa": "به جز، غیر از" } },
+        { "word": { "de": "es sei denn", "fa": "مگر اینکه" } },
+        { "word": { "de": "nur dass", "fa": "فقط اینکه" } },
+        { "word": { "de": "die Ausnahme", "fa": "استثنا" } },
+        { "word": { "de": "die Einschränkung", "fa": "محدودیت" } },
+        { "word": { "de": "andernfalls", "fa": "در غیر این صورت" } }
+      ]
+    }
+  ]
+}

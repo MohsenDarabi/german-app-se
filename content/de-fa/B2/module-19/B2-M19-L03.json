@@ -1,0 +1,527 @@
+{
+  "id": "B2-M19-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Wissenschaftssprache - Redemittel", "fa": "زبان علمی - عبارات کاربردی" },
+  "description": "یاد بگیرید چگونه در نوشتار علمی و آکادمیک از عبارات و اصطلاحات تخصصی استفاده کنید. این درس شامل عبارات برای معرفی موضوع، استدلال، نتیجه‌گیری و بیان احتیاط‌آمیز در متون علمی است.",
+  "level": "B2",
+  "module": 19,
+  "lessonNumber": 3,
+  "totalSteps": 45,
+  "estimatedMinutes": 50,
+  "vocabulary": [
+    { "de": "das Redemittel", "fa": "عبارت کاربردی، اصطلاح", "grammar": { "pos": "noun", "gender": "neuter" } },
+    { "de": "die Argumentation", "fa": "استدلال، برهان", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "die Schlussfolgerung", "fa": "نتیجه‌گیری", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "sich befassen mit", "fa": "پرداختن به، مشغول شدن به", "grammar": { "pos": "verb", "type": "separable" } },
+    { "de": "zusammenfassen", "fa": "خلاصه کردن، جمع‌بندی کردن", "grammar": { "pos": "verb", "type": "separable" } },
+    { "de": "daraus folgt", "fa": "از این نتیجه می‌شود، از این به دست می‌آید", "grammar": { "pos": "phrase" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "عبارات معرفی در متون علمی",
+      "content": "**Einleitungsformulierungen (عبارات معرفی)**\n\nدر نوشتار علمی و آکادمیک، از **عبارات استانداردی** برای معرفی موضوع تحقیق استفاده می‌شود:\n\n**عبارات رایج برای معرفی:**\n> ✅ **Diese Arbeit befasst sich mit** ...\n> این پژوهش به ... می‌پردازد.\n\n> ✅ **Das Ziel dieser Studie ist** ...\n> هدف این مطالعه ... است.\n\n> ✅ **Im Folgenden wird untersucht** ...\n> در ادامه ... بررسی می‌شود.\n\n> ✅ **Der vorliegende Aufsatz behandelt** ...\n> مقاله حاضر ... را بررسی می‌کند.\n\n**نکته مهم برای فارسی‌زبانان:**\n- این عبارات در فارسی معادل‌های مشابه دارند اما ساختار جمله متفاوت است\n- در آلمانی فعل در جایگاه دوم می‌آید\n- این عبارات **رسمی و بی‌طرف** هستند و در همه رشته‌ها کاربرد دارند",
+      "examples": [
+        { "de": "Diese Arbeit befasst sich mit den Auswirkungen des Klimawandels.", "fa": "این پژوهش به تأثیرات تغییرات اقلیمی می‌پردازد." },
+        { "de": "Das Ziel dieser Studie ist die Analyse sozialer Medien.", "fa": "هدف این مطالعه تحلیل رسانه‌های اجتماعی است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "das Redemittel", "fa": "عبارت کاربردی، اصطلاح" },
+      "example": { "text": { "de": "In wissenschaftlichen Texten verwendet man spezielle Redemittel.", "fa": "در متون علمی از عبارات کاربردی خاصی استفاده می‌شود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Redemittel",
+      "translation": "عبارت کاربردی",
+      "syllables": ["Re", "de", "mit", "tel"],
+      "distractors": ["Ra", "da", "mat", "tal"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "sich befassen mit", "fa": "پرداختن به، مشغول شدن به" },
+      "example": { "text": { "de": "Die Studie befasst sich mit modernen Technologien.", "fa": "این مطالعه به فناوری‌های مدرن می‌پردازد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "befassen",
+      "translation": "پرداختن به",
+      "syllables": ["be", "fas", "sen"],
+      "distractors": ["ba", "fos", "san", "fes"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "die Argumentation", "fa": "استدلال، برهان" },
+      "example": { "text": { "de": "Eine klare Argumentation ist in wissenschaftlichen Arbeiten wichtig.", "fa": "استدلال روشن در کارهای علمی اهمیت دارد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Argumentation",
+      "translation": "استدلال، برهان",
+      "syllables": ["Ar", "gu", "men", "ta", "ti", "on"],
+      "distractors": ["Or", "ga", "man", "te", "tu", "an"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "عبارات استدلال و توضیح",
+      "content": "**Argumentationsformulierungen (عبارات استدلال)**\n\nبرای **استدلال و توضیح** در متون علمی از عبارات مشخصی استفاده می‌کنیم:\n\n**عبارات رایج:**\n> **Daraus folgt, dass** ...\n> از این نتیجه می‌شود که ...\n\n> **Dies lässt sich erklären durch** ...\n> این را می‌توان با ... توضیح داد.\n\n> **Ein Grund dafür ist** ...\n> یک دلیل برای این ... است.\n\n> **Dies ist darauf zurückzuführen, dass** ...\n> این به این دلیل است که ...\n\n> **Dabei ist zu beachten, dass** ...\n> در این باید توجه داشت که ...\n\n**ساختار:**\nاکثر این عبارات با **dass** ادامه می‌یابند و بعد از dass فعل در انتها می‌آید.\n\n**نکته:** این عبارات به متن شما ساختار منطقی و حرفه‌ای می‌دهند.",
+      "examples": [
+        { "de": "Daraus folgt, dass weitere Forschung nötig ist.", "fa": "از این نتیجه می‌شود که تحقیق بیشتر لازم است." },
+        { "de": "Dies lässt sich erklären durch die hohe Nachfrage.", "fa": "این را می‌توان با تقاضای بالا توضیح داد." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام عبارت برای معرفی موضوع تحقیق مناسب است؟",
+      "options": [
+        "Ich finde das Thema interessant.",
+        "Diese Arbeit befasst sich mit dem Thema.",
+        "Das Thema ist sehr wichtig für mich.",
+        "Meiner Meinung nach ist das Thema gut."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! «Diese Arbeit befasst sich mit» یک عبارت استاندارد علمی برای معرفی موضوع است.", "incorrect": "در متون علمی از عبارات استاندارد و بی‌طرف مانند «Diese Arbeit befasst sich mit» استفاده می‌کنیم." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "عبارت «Daraus folgt, dass...» به چه معناست؟",
+      "options": [
+        "قبل از این",
+        "از این نتیجه می‌شود که",
+        "به علاوه این",
+        "برعکس این"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "درست! این عبارت برای بیان نتیجه‌گیری منطقی استفاده می‌شود.", "incorrect": "«Daraus folgt» یعنی «از این نتیجه می‌شود» و برای نتیجه‌گیری منطقی کاربرد دارد." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "die Schlussfolgerung", "fa": "نتیجه‌گیری" },
+      "example": { "text": { "de": "Die Schlussfolgerung der Studie ist eindeutig.", "fa": "نتیجه‌گیری مطالعه واضح است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "Schlussfolgerung",
+      "translation": "نتیجه‌گیری",
+      "syllables": ["Schluss", "fol", "ge", "rung"],
+      "distractors": ["Schlos", "fal", "ga", "rang"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "zusammenfassen", "fa": "خلاصه کردن، جمع‌بندی کردن" },
+      "example": { "text": { "de": "Zusammenfassend lässt sich sagen, dass die Ergebnisse positiv sind.", "fa": "در جمع‌بندی می‌توان گفت که نتایج مثبت هستند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "zusammenfassen",
+      "translation": "خلاصه کردن",
+      "syllables": ["zu", "sam", "men", "fas", "sen"],
+      "distractors": ["za", "som", "man", "fos", "san"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "daraus folgt", "fa": "از این نتیجه می‌شود" },
+      "example": { "text": { "de": "Die Daten zeigen einen Trend, daraus folgt eine klare Entwicklung.", "fa": "داده‌ها روندی را نشان می‌دهند، از این نتیجه می‌شود که یک پیشرفت روشن وجود دارد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "folgt",
+      "translation": "نتیجه می‌شود",
+      "syllables": ["folgt"],
+      "distractors": ["folt", "falgt", "folgt", "fulgt"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "عبارات نتیجه‌گیری",
+      "content": "**Schlussformulierungen (عبارات نتیجه‌گیری)**\n\nبرای **جمع‌بندی و نتیجه‌گیری** در پایان متن علمی:\n\n**عبارات رایج:**\n> **Zusammenfassend lässt sich sagen, dass** ...\n> در جمع‌بندی می‌توان گفت که ...\n\n> **Abschließend ist festzuhalten, dass** ...\n> در پایان باید تأکید کرد که ...\n\n> **Die Ergebnisse zeigen, dass** ...\n> نتایج نشان می‌دهند که ...\n\n> **Aus den Untersuchungen geht hervor, dass** ...\n> از بررسی‌ها مشخص می‌شود که ...\n\n> **Als Fazit lässt sich ziehen** ...\n> به عنوان نتیجه می‌توان گرفت ...\n\n**نکته:** این عبارات به خواننده سیگنال می‌دهند که به بخش نتیجه‌گیری رسیده‌ایم.\n\n**ساختار:** معمولاً با dass ادامه می‌یابند و فعل در انتها قرار می‌گیرد.",
+      "examples": [
+        { "de": "Zusammenfassend lässt sich sagen, dass die Hypothese bestätigt wurde.", "fa": "در جمع‌بندی می‌توان گفت که فرضیه تأیید شد." },
+        { "de": "Die Ergebnisse zeigen, dass mehr Forschung notwendig ist.", "fa": "نتایج نشان می‌دهند که تحقیق بیشتر ضروری است." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "عبارت مناسب را انتخاب کنید",
+      "sentence": "Diese Arbeit {0} mit dem Klimawandel.",
+      "options": ["befasst sich", "macht sich", "kümmert sich", "interessiert sich"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "befasst sich mit درست است. این عبارت استاندارد برای «پرداختن به موضوع» است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Daraus {0}, dass weitere Studien nötig sind.",
+      "options": ["folgt", "kommt", "geht", "steht"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "folgt درست است. «Daraus folgt» یک عبارت ثابت برای نتیجه‌گیری است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "عبارت نتیجه‌گیری را کامل کنید",
+      "sentence": "{0} lässt sich sagen, dass die Ergebnisse positiv sind.",
+      "options": ["Zusammenfassend", "Erstens", "Außerdem", "Danach"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Zusammenfassend درست است. این عبارت برای شروع جمع‌بندی استفاده می‌شود." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله علمی را مرتب کنید",
+      "words": ["Medien", "Diese", "befasst", "mit", "Studie", "sozialen", "sich"],
+      "correctOrder": [1, 4, 2, 6, 3, 5, 0],
+      "correctSentence": { "de": "Diese Studie befasst sich mit sozialen Medien.", "fa": "این مطالعه به رسانه‌های اجتماعی می‌پردازد." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله نتیجه‌گیری را بسازید",
+      "words": ["nötig", "dass", "Forschung", "folgt", "weitere", "ist", "Daraus"],
+      "correctOrder": [6, 3, 1, 4, 2, 0, 5],
+      "correctSentence": { "de": "Daraus folgt, dass weitere Forschung nötig ist.", "fa": "از این نتیجه می‌شود که تحقیق بیشتر لازم است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله را به ترتیب صحیح مرتب کنید",
+      "words": ["Nachfrage", "durch", "erklären", "lässt", "hohe", "die", "Dies", "sich"],
+      "correctOrder": [6, 3, 7, 2, 1, 5, 4, 0],
+      "correctSentence": { "de": "Dies lässt sich erklären durch die hohe Nachfrage.", "fa": "این را می‌توان با تقاضای بالا توضیح داد." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در متون علمی باید از عبارات شخصی مانند «ich finde» استفاده کرد.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! در متون علمی از عبارات بی‌طرف و استاندارد استفاده می‌کنیم، نه عبارات شخصی." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "عبارت «Diese Arbeit befasst sich mit» برای معرفی موضوع تحقیق استفاده می‌شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! این یک عبارت استاندارد برای معرفی موضوع در متون علمی است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "عبارت «Zusammenfassend lässt sich sagen» برای جمع‌بندی و نتیجه‌گیری به کار می‌رود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! این عبارت سیگنالی برای شروع بخش نتیجه‌گیری است." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s10",
+      "title": "عبارات احتیاط‌آمیز (Hedging)",
+      "content": "**Hedging Language (بیان احتیاط‌آمیز)**\n\nدر نوشتار علمی برای **اجتناب از ادعاهای مطلق** از عبارات احتیاط‌آمیز استفاده می‌کنیم:\n\n**قیدهای احتیاط‌آمیز:**\n> **möglicherweise** - احتمالاً، شاید\n> **vermutlich** - به احتمال زیاد\n> **wahrscheinlich** - محتمل است\n> **es scheint** - به نظر می‌رسد\n> **anscheinend** - ظاهراً\n\n**افعال و عبارات:**\n> **Es lässt sich vermuten, dass** ...\n> می‌توان حدس زد که ...\n\n> **Es ist anzunehmen, dass** ...\n> می‌توان فرض کرد که ...\n\n> **Unter Umständen** könnte ...\n> در شرایطی ممکن است ...\n\n**چرا مهم است؟**\nدر علم قطعیت مطلق کمتر وجود دارد، پس از این عبارات برای بیان **احتمال و احتیاط** استفاده می‌شود.\n\n**مقایسه:**\n❌ Die Ergebnisse **beweisen**, dass... (خیلی قاطع)\n✅ Die Ergebnisse **deuten darauf hin**, dass... (احتیاط‌آمیز)",
+      "examples": [
+        { "de": "Möglicherweise lässt sich dies durch externe Faktoren erklären.", "fa": "احتمالاً این را می‌توان با عوامل خارجی توضیح داد." },
+        { "de": "Es scheint, dass weitere Forschung notwendig ist.", "fa": "به نظر می‌رسد که تحقیق بیشتر ضروری است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s11",
+      "word": { "de": "möglicherweise", "fa": "احتمالاً، شاید" },
+      "example": { "text": { "de": "Möglicherweise gibt es noch andere Erklärungen.", "fa": "احتمالاً توضیحات دیگری هم وجود دارد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl7",
+      "word": "möglicherweise",
+      "translation": "احتمالاً",
+      "syllables": ["mög", "li", "cher", "wei", "se"],
+      "distractors": ["mag", "lu", "char", "wai", "sa"]
+    },
+    {
+      "type": "new-word",
+      "id": "s12",
+      "word": { "de": "vermutlich", "fa": "به احتمال زیاد، احتمالاً" },
+      "example": { "text": { "de": "Vermutlich liegt die Ursache in den veränderten Bedingungen.", "fa": "احتمالاً علت در شرایط تغییر یافته است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl8",
+      "word": "vermutlich",
+      "translation": "احتمالاً",
+      "syllables": ["ver", "mut", "lich"],
+      "distractors": ["var", "mat", "lach", "luch"]
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "گفتگو در سمینار دانشگاهی",
+      "scene": {
+        "location": "university",
+        "description": { "de": "Zwei Doktoranden besprechen ihre Forschungsergebnisse.", "fa": "دو دانشجوی دکترا درباره نتایج تحقیقشان بحث می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Dr. Fischer", "text": { "de": "Meine Arbeit befasst sich mit dem Einfluss digitaler Medien auf Jugendliche.", "fa": "کار من به تأثیر رسانه‌های دیجیتال بر نوجوانان می‌پردازد." }, "mood": "neutral" },
+        { "speaker": "Dr. Amiri", "text": { "de": "Interessant! Daraus folgt, dass die Mediennutzung eine wichtige Rolle spielt?", "fa": "جالبه! از این نتیجه می‌شود که استفاده از رسانه نقش مهمی دارد؟" }, "mood": "neutral" },
+        { "speaker": "Dr. Fischer", "text": { "de": "Ja, möglicherweise beeinflusst es auch das Lernverhalten.", "fa": "بله، احتمالاً بر رفتار یادگیری هم تأثیر می‌گذارد." }, "mood": "happy" },
+        { "speaker": "Dr. Amiri", "text": { "de": "Dies lässt sich vermutlich durch die hohe Bildschirmzeit erklären.", "fa": "این را احتمالاً می‌توان با زمان زیاد صفحه توضیح داد." }, "mood": "neutral" },
+        { "speaker": "Dr. Fischer", "text": { "de": "Zusammenfassend lässt sich sagen, dass weitere Studien notwendig sind.", "fa": "در جمع‌بندی می‌توان گفت که مطالعات بیشتر ضروری است." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "موضوع تحقیق دکتر فیشر چیست؟", "options": ["رسانه‌های سنتی", "رسانه‌های دیجیتال", "کتاب‌ها"], "correctIndex": 1, "explanation": "دکتر فیشر گفت: befasst sich mit dem Einfluss digitaler Medien." },
+        { "question": "دکتر فیشر در پایان چه نتیجه‌ای گرفت؟", "options": ["همه چیز روشن است", "مطالعات بیشتر لازم است", "تحقیق کامل شد"], "correctIndex": 1, "explanation": "او گفت: weitere Studien notwendig sind." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "قید احتیاط‌آمیز مناسب را انتخاب کنید",
+      "sentence": "{0} gibt es noch andere Faktoren, die eine Rolle spielen.",
+      "options": ["Möglicherweise", "Sicherlich", "Definitiv", "Immer"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Möglicherweise درست است. در نوشتار علمی از قیدهای احتیاط‌آمیز استفاده می‌کنیم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Es {0}, dass die Hypothese korrekt ist.",
+      "options": ["scheint", "ist sicher", "beweist", "muss"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "scheint درست است. «Es scheint» یک عبارت احتیاط‌آمیز برای بیان احتمال است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "عبارت علمی مناسب را انتخاب کنید",
+      "sentence": "Das Ziel dieser {0} ist die Untersuchung neuer Methoden.",
+      "options": ["Studie", "Geschichte", "Meinung", "Idee"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Studie درست است. «Das Ziel dieser Studie» یک عبارت استاندارد علمی است." }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "عبارات آلمانی را با معادل فارسی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Diese Arbeit befasst sich mit" },
+        { "id": "i2", "text": "Daraus folgt, dass" },
+        { "id": "i3", "text": "Zusammenfassend lässt sich sagen" },
+        { "id": "i4", "text": "Möglicherweise" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "این پژوهش به ... می‌پردازد" },
+        { "id": "m2", "text": "از این نتیجه می‌شود که" },
+        { "id": "m3", "text": "در جمع‌بندی می‌توان گفت" },
+        { "id": "m4", "text": "احتمالاً" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "این مطالعه به تأثیرات تغییرات اقلیمی می‌پردازد.",
+      "sentenceTemplate": "Diese Studie {0} sich mit den {1} des Klimawandels.",
+      "options": ["befasst", "macht", "Auswirkungen", "Meinungen", "kümmert", "Ideen"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Diese Studie befasst sich mit den Auswirkungen des Klimawandels.", "fa": "این مطالعه به تأثیرات تغییرات اقلیمی می‌پردازد." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "از این نتیجه می‌شود که تحقیق بیشتر ضروری است.",
+      "sentenceTemplate": "Daraus {0}, dass weitere Forschung {1} ist.",
+      "options": ["folgt", "kommt", "notwendig", "interessant", "geht", "wichtig"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Daraus folgt, dass weitere Forschung notwendig ist.", "fa": "از این نتیجه می‌شود که تحقیق بیشتر ضروری است." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: چکیده علمی",
+      "passage": {
+        "de": "Diese Arbeit befasst sich mit den Auswirkungen sozialer Medien auf die psychische Gesundheit junger Erwachsener. Das Ziel dieser Studie ist die Analyse des Nutzungsverhaltens und dessen Folgen.\n\nDaraus folgt, dass übermäßige Nutzung möglicherweise zu Stress und Angst führen kann. Dies lässt sich erklären durch den ständigen Vergleich mit anderen und den Druck, immer online zu sein.\n\nZusammenfassend lässt sich sagen, dass ein bewusster Umgang mit sozialen Medien wichtig ist. Es scheint, dass moderate Nutzung weniger negative Auswirkungen hat. Vermutlich sind weitere Langzeitstudien notwendig, um eindeutige Schlussfolgerungen zu ziehen.",
+        "fa": "این پژوهش به تأثیرات رسانه‌های اجتماعی بر سلامت روان بزرگسالان جوان می‌پردازد. هدف این مطالعه تحلیل رفتار استفاده و پیامدهای آن است.\n\nاز این نتیجه می‌شود که استفاده بیش از حد احتمالاً می‌تواند منجر به استرس و اضطراب شود. این را می‌توان با مقایسه مداوم با دیگران و فشار برای همیشه آنلاین بودن توضیح داد.\n\nدر جمع‌بندی می‌توان گفت که برخورد آگاهانه با رسانه‌های اجتماعی مهم است. به نظر می‌رسد که استفاده معتدل تأثیرات منفی کمتری دارد. احتمالاً مطالعات بلندمدت بیشتر برای نتیجه‌گیری‌های قطعی ضروری است."
+      },
+      "questions": [
+        { "question": "موضوع این تحقیق چیست؟", "options": ["تأثیر رسانه‌های سنتی", "تأثیر رسانه‌های اجتماعی بر سلامت روان", "تاریخچه رسانه‌ها"], "correctIndex": 1, "explanation": "در متن گفته شده: befasst sich mit den Auswirkungen sozialer Medien auf die psychische Gesundheit." },
+        { "question": "استفاده بیش از حد به چه چیزی منجر می‌شود؟", "options": ["موفقیت", "استرس و اضطراب", "شادی"], "correctIndex": 1, "explanation": "در متن آمده: kann zu Stress und Angst führen." },
+        { "question": "چه نوع مطالعاتی در آینده لازم است؟", "options": ["مطالعات کوتاه‌مدت", "مطالعات بلندمدت", "مطالعات تاریخی"], "correctIndex": 1, "explanation": "در متن گفته شده: sind weitere Langzeitstudien notwendig." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die Forschungspräsentation", "fa": "ارائه تحقیق" },
+      "characters": ["Prof. Weber", "Sara"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Sara präsentiert ihre Masterarbeit vor dem Prüfungskomitee.", "fa": "سارا پایان‌نامه کارشناسی ارشد خود را به کمیته داوری ارائه می‌کند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sara",
+          "text": { "de": "Meine Arbeit befasst sich mit nachhaltiger Energiegewinnung in Städten.", "fa": "کار من به تولید انرژی پایدار در شهرها می‌پردازد." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Prof. Weber",
+          "text": { "de": "Interessant. Und zu welcher Schlussfolgerung kommen Sie?", "fa": "جالبه. و به چه نتیجه‌گیری می‌رسید؟" },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "موضوع تحقیق سارا چیست؟",
+          "options": ["انرژی هسته‌ای", "انرژی پایدار در شهرها", "انرژی‌های سنتی"],
+          "correctIndex": 1,
+          "explanation": "سارا گفت: befasst sich mit nachhaltiger Energiegewinnung in Städten."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sara",
+          "text": { "de": "Daraus folgt, dass Solarenergie in urbanen Gebieten sehr effektiv sein kann.", "fa": "از این نتیجه می‌شود که انرژی خورشیدی در مناطق شهری می‌تواند بسیار مؤثر باشد." },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Prof. Weber",
+          "text": { "de": "Wie lässt sich das erklären?", "fa": "این را چگونه می‌توان توضیح داد؟" },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sara",
+          "text": { "de": "Dies lässt sich erklären durch die große Dachfläche der Gebäude.", "fa": "این را می‌توان با سطح بزرگ پشت‌بام ساختمان‌ها توضیح داد." },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "چرا انرژی خورشیدی در شهرها مؤثر است؟",
+          "options": ["هوای تمیز", "پشت‌بام‌های بزرگ", "باد زیاد"],
+          "correctIndex": 1,
+          "explanation": "سارا گفت: durch die große Dachfläche der Gebäude."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: عبارات علمی",
+      "instruction": "پاسخ درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "sich befassen mit یعنی؟", "left": "پرداختن به", "right": "فراموش کردن", "correctSide": "left" },
+        { "prompt": "Daraus folgt یعنی؟", "left": "قبل از این", "right": "از این نتیجه می‌شود", "correctSide": "right" },
+        { "prompt": "möglicherweise یعنی؟", "left": "قطعاً", "right": "احتمالاً", "correctSide": "right" },
+        { "prompt": "کدام برای جمع‌بندی است؟", "left": "Zusammenfassend", "right": "Erstens", "correctSide": "left" },
+        { "prompt": "die Schlussfolgerung یعنی؟", "left": "نتیجه‌گیری", "right": "معرفی", "correctSide": "left" },
+        { "prompt": "vermutlich یعنی؟", "left": "هرگز", "right": "احتمالاً", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Diese Arbeit befasst sich mit modernen Technologien.",
+      "translation": "این پژوهش به فناوری‌های مدرن می‌پردازد."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Daraus folgt, dass weitere Forschung notwendig ist.",
+      "translation": "از این نتیجه می‌شود که تحقیق بیشتر ضروری است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Zusammenfassend lässt sich sagen, dass die Ergebnisse positiv sind.",
+      "translation": "در جمع‌بندی می‌توان گفت که نتایج مثبت هستند."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: زبان علمی",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "das Redemittel یعنی؟", "options": ["عبارت کاربردی", "کتاب"], "correctAnswerIndex": 0 },
+        { "question": "sich befassen mit یعنی؟", "options": ["پرداختن به", "فرار کردن"], "correctAnswerIndex": 0 },
+        { "question": "die Argumentation یعنی؟", "options": ["استدلال", "شعر"], "correctAnswerIndex": 0 },
+        { "question": "zusammenfassen یعنی؟", "options": ["خلاصه کردن", "تکرار کردن"], "correctAnswerIndex": 0 },
+        { "question": "möglicherweise یعنی؟", "options": ["احتمالاً", "هرگز"], "correctAnswerIndex": 0 },
+        { "question": "die Schlussfolgerung یعنی؟", "options": ["نتیجه‌گیری", "مقدمه"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: واژگان علمی",
+      "pairs": [
+        { "de": "das Redemittel", "fa": "عبارت کاربردی" },
+        { "de": "die Argumentation", "fa": "استدلال" },
+        { "de": "die Schlussfolgerung", "fa": "نتیجه‌گیری" },
+        { "de": "sich befassen mit", "fa": "پرداختن به" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات زبان علمی",
+      "instruction": "کلمات آلمانی مربوط به این درس را پیدا کنید",
+      "targetWords": ["Redemittel", "Argumentation", "Schlussfolgerung", "vermutlich", "möglicherweise"],
+      "gridSize": { "rows": 10, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "das Redemittel", "fa": "عبارت کاربردی، اصطلاح", "options": ["کتاب", "عبارت کاربردی، اصطلاح", "مقاله", "نامه"], "correctIndex": 1 },
+        { "de": "die Argumentation", "fa": "استدلال، برهان", "options": ["شعر", "استدلال، برهان", "داستان", "نقد"], "correctIndex": 1 },
+        { "de": "zusammenfassen", "fa": "خلاصه کردن", "options": ["تکرار کردن", "خلاصه کردن", "نوشتن", "خواندن"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما زبان علمی و عبارات آکادمیک آلمانی را یاد گرفتید!",
+      "keyPoints": [
+        "برای معرفی: Diese Arbeit befasst sich mit...",
+        "برای استدلال: Daraus folgt, dass... / Dies lässt sich erklären durch...",
+        "برای نتیجه‌گیری: Zusammenfassend lässt sich sagen...",
+        "برای بیان احتیاط‌آمیز: möglicherweise, vermutlich, es scheint",
+        "عبارات علمی بی‌طرف و استاندارد هستند",
+        "از عبارات شخصی در متون علمی پرهیز کنید"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "das Redemittel", "fa": "عبارت کاربردی، اصطلاح" } },
+        { "word": { "de": "die Argumentation", "fa": "استدلال، برهان" } },
+        { "word": { "de": "die Schlussfolgerung", "fa": "نتیجه‌گیری" } },
+        { "word": { "de": "sich befassen mit", "fa": "پرداختن به" } },
+        { "word": { "de": "zusammenfassen", "fa": "خلاصه کردن" } },
+        { "word": { "de": "daraus folgt", "fa": "از این نتیجه می‌شود" } }
+      ]
+    }
+  ]
+}

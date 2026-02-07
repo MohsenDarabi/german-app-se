@@ -1,0 +1,589 @@
+{
+  "id": "B2-M20-L02",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Stilistik: Formelle und informelle Sprache", "fa": "سبک‌شناسی: زبان رسمی و غیررسمی" },
+  "description": "یاد بگیرید چگونه بین سبک رسمی و غیررسمی آلمانی تمایز قائل شوید. این درس تفاوت‌های بین زبان نوشتاری و گفتاری، سطح‌های مختلف زبان (رجیستر)، انتخاب بین معلوم و مجهول، و اسم‌سازی برای سبک رسمی را پوشش می‌دهد.",
+  "level": "B2",
+  "module": 20,
+  "lessonNumber": 2,
+  "totalSteps": 45,
+  "estimatedMinutes": 50,
+  "vocabulary": [
+    { "de": "die Stilistik", "fa": "سبک‌شناسی، علم سبک", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "formell", "fa": "رسمی", "grammar": { "pos": "adjective" } },
+    { "de": "informell", "fa": "غیررسمی", "grammar": { "pos": "adjective" } },
+    { "de": "das Register", "fa": "سطح زبان، رجیستر", "grammar": { "pos": "noun", "gender": "neuter" } },
+    { "de": "angemessen", "fa": "مناسب، شایسته", "grammar": { "pos": "adjective" } },
+    { "de": "der Kontext", "fa": "زمینه، متن، بافت", "grammar": { "pos": "noun", "gender": "masculine" } },
+    { "de": "die Nominalisierung", "fa": "اسم‌سازی", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "das Passiv", "fa": "مجهول", "grammar": { "pos": "noun", "gender": "neuter" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "سبک‌شناسی: زبان رسمی در مقابل غیررسمی",
+      "content": "**Stilistik: Formelle vs. informelle Sprache**\n\nدر آلمانی، انتخاب بین سبک **رسمی (formell)** و **غیررسمی (informell)** بسیار مهم است. این انتخاب به **زمینه (Kontext)** و **رابطه با مخاطب** بستگی دارد.\n\n**تفاوت‌های اصلی:**\n\n**۱. ضمیر شخصی:**\n> **رسمی:** Sie (با حرف بزرگ)\n> **غیررسمی:** du / ihr\n\n**۲. واژگان:**\n> **رسمی:** sich bedanken, sich entschuldigen\n> **غیررسمی:** danken, sorry sagen\n\n**۳. ساختار جمله:**\n> **رسمی:** جملات بلندتر، مجهول، اسم‌سازی\n> **غیررسمی:** جملات کوتاه‌تر، معلوم، افعال\n\n**نکته مهم برای فارسی‌زبانان:**\n- در فارسی «شما» و «تو» داریم، اما کاربرد Sie/du در آلمانی دقیق‌تر است\n- در آلمانی حتی با همکاران ممکن است Sie استفاده شود\n- زبان رسمی آلمانی بسیار ساختارمندتر از فارسی است\n- در ایمیل‌ها و نامه‌های رسمی تفاوت بسیار مشخص است",
+      "examples": [
+        { "de": "**غیررسمی:** Kannst du mir helfen?", "fa": "می‌تونی کمکم کنی؟" },
+        { "de": "**رسمی:** Könnten Sie mir behilflich sein?", "fa": "می‌توانید به من کمک کنید؟" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "die Stilistik", "fa": "سبک‌شناسی، علم سبک" },
+      "example": { "text": { "de": "Die Stilistik befasst sich mit sprachlichen Ausdrucksweisen.", "fa": "سبک‌شناسی به شیوه‌های بیان زبانی می‌پردازد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Stilistik",
+      "translation": "سبک‌شناسی",
+      "syllables": ["Sti", "lis", "tik"],
+      "distractors": ["Sta", "las", "tak", "lok"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "formell", "fa": "رسمی" },
+      "example": { "text": { "de": "In formellen Situationen verwenden wir Sie.", "fa": "در موقعیت‌های رسمی از Sie استفاده می‌کنیم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "formell",
+      "translation": "رسمی",
+      "syllables": ["for", "mell"],
+      "distractors": ["fur", "mall", "far", "mul"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "informell", "fa": "غیررسمی" },
+      "example": { "text": { "de": "Mit Freunden spreche ich informell.", "fa": "با دوستان غیررسمی صحبت می‌کنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "informell",
+      "translation": "غیررسمی",
+      "syllables": ["in", "for", "mell"],
+      "distractors": ["un", "fur", "mall", "an"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "رجیستر (سطح زبان): انتخاب مناسب",
+      "content": "**Das Register: Die richtige Sprachebene wählen**\n\n**رجیستر (Register)** به سطح یا لایه‌ی زبانی گفته می‌شود که متناسب با موقعیت استفاده می‌کنیم.\n\n**سطوح مختلف:**\n\n**۱. رسمی-آکادمیک (Akademisch):**\n> متون علمی، مقالات، رساله‌ها\n> ویژگی: اسم‌سازی، مجهول، واژگان تخصصی\n\n**۲. رسمی-اداری (Offiziell):**\n> نامه‌های اداری، ایمیل‌های کاری، گزارش‌ها\n> ویژگی: Sie، ساختار دقیق، لحن محترمانه\n\n**۳. خنثی-استاندارد (Neutral):**\n> اخبار، کتاب‌های درسی، توضیحات\n> ویژگی: واضح، بی‌طرف، قابل فهم\n\n**۴. غیررسمی-محاوره‌ای (Umgangssprachlich):**\n> گفتگو با دوستان، پیام‌ها، چت\n> ویژگی: du/ihr، کوتاه‌نوشت، اصطلاحات عامیانه\n\n**مثال‌ها:**\n\n| موقعیت | سبک مناسب |\n|---------|------------|\n| مصاحبه شغلی | رسمی-اداری |\n| ایمیل به استاد | رسمی-اداری |\n| گفتگو با همکار نزدیک | خنثی یا غیررسمی |\n| چت با دوست | غیررسمی |",
+      "examples": [
+        { "de": "**آکادمیک:** Die Untersuchung ergab signifikante Resultate.", "fa": "بررسی نتایج معنی‌داری به دست داد." },
+        { "de": "**محاوره‌ای:** Wir haben echt coole Sachen rausgefunden!", "fa": "چیزای خیلی جالبی پیدا کردیم!" }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "das Register", "fa": "سطح زبان، رجیستر" },
+      "example": { "text": { "de": "Man muss das richtige Register für die Situation wählen.", "fa": "باید رجیستر مناسب برای موقعیت را انتخاب کرد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "Register",
+      "translation": "سطح زبان",
+      "syllables": ["Re", "gis", "ter"],
+      "distractors": ["Ra", "gas", "tar", "Ri"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "angemessen", "fa": "مناسب، شایسته" },
+      "example": { "text": { "de": "Eine angemessene Ausdrucksweise ist wichtig.", "fa": "شیوه بیان مناسب مهم است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "angemessen",
+      "translation": "مناسب",
+      "syllables": ["an", "ge", "mes", "sen"],
+      "distractors": ["un", "ga", "mus", "sun"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "der Kontext", "fa": "زمینه، متن، بافت" },
+      "example": { "text": { "de": "Der Kontext bestimmt, ob man du oder Sie sagt.", "fa": "زمینه تعیین می‌کند که du یا Sie بگوییم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Kontext",
+      "translation": "زمینه، بافت",
+      "syllables": ["Kon", "text"],
+      "distractors": ["Kan", "taxt", "Ken", "toxt"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "در کدام موقعیت باید از Sie استفاده کرد؟",
+      "options": [
+        "صحبت با دوست صمیمی",
+        "مصاحبه شغلی",
+        "چت با همکلاسی",
+        "صحبت با برادر"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! در مصاحبه شغلی همیشه باید از Sie استفاده کنید.", "incorrect": "در موقعیت‌های رسمی مثل مصاحبه شغلی از Sie استفاده می‌کنیم." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله رسمی‌تر است؟",
+      "options": [
+        "Kannst du mir helfen?",
+        "Könnten Sie mir behilflich sein?",
+        "Hilfst du mir mal?",
+        "Hey, hilfst du mir?"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "عالی! استفاده از Konjunktiv II (könnten) و واژه behilflich sein این جمله را رسمی می‌کند.", "incorrect": "جمله دوم با Sie و ساختار رسمی‌تر است." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "زبان نوشتاری در مقابل گفتاری",
+      "content": "**Schriftsprache vs. Gesprochene Sprache**\n\nتفاوت‌های مهم بین زبان **نوشتاری (Schriftsprache)** و **گفتاری (gesprochene Sprache)**:\n\n**۱. ساختار جمله:**\n> **نوشتاری:** جملات پیچیده‌تر، بندهای فرعی زیاد\n> **گفتاری:** جملات کوتاه‌تر، ساده‌تر\n\n**مثال:**\n> **نوشتاری:** Nachdem der Antrag geprüft worden war, wurde er genehmigt.\n> **گفتاری:** Wir haben den Antrag geprüft und dann genehmigt.\n\n**۲. واژگان:**\n> **نوشتاری:** sich bedanken, in Erwägung ziehen\n> **گفتاری:** danken, überlegen\n\n**۳. کوتاه‌نویسی:**\n> **گفتاری:** hab', werd', 'ne (eine), 'n (einen)\n> **نوشتاری:** habe, werde, eine, einen\n\n**۴. حذف‌ها در گفتار:**\n> **گفتاری:** Hab ich gemacht. (بدون فاعل)\n> **نوشتاری:** Ich habe es gemacht.\n\n**نکته:** در ایمیل‌های رسمی و نامه‌ها همیشه از زبان نوشتاری استفاده کنید.",
+      "examples": [
+        { "de": "**نوشتاری:** Ich möchte mich für Ihre Hilfe bedanken.", "fa": "می‌خواهم بابت کمکتان تشکر کنم." },
+        { "de": "**گفتاری:** Danke für deine Hilfe!", "fa": "ممنون بابت کمکت!" }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "فرم رسمی مناسب را انتخاب کنید",
+      "sentence": "Ich möchte {0} herzlich für Ihre Unterstützung bedanken.",
+      "options": ["mich", "dich", "sich", "uns"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "mich درست است. «sich bedanken» یک فعل بازتابی است و با ضمیر بازتابی استفاده می‌شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "واژه رسمی مناسب را انتخاب کنید",
+      "sentence": "Könnten Sie mir {0} sein?",
+      "options": ["behilflich", "helfen", "unterstützen", "assistieren"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "behilflich درست است. «behilflich sein» یک عبارت رسمی برای کمک کردن است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "ضمیر رسمی مناسب را انتخاب کنید",
+      "sentence": "Ich wünsche {0} einen angenehmen Tag.",
+      "options": ["Ihnen", "dir", "euch", "dich"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Ihnen درست است. این حالت سوم (Dativ) از ضمیر رسمی Sie است." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s10",
+      "title": "معلوم و مجهول: انتخاب سبک",
+      "content": "**Aktiv vs. Passiv: Stilistische Wahl**\n\nدر زبان آلمانی، انتخاب بین **معلوم (Aktiv)** و **مجهول (Passiv)** تأثیر زیادی روی سبک متن دارد.\n\n**کاربرد مجهول:**\n\n**۱. زبان رسمی و آکادمیک:**\n> **مجهول:** Es wurde festgestellt, dass...\n> **معلوم:** Wir haben festgestellt, dass...\n\n**۲. وقتی فاعل مهم نیست:**\n> **مجهول:** Der Brief wurde gestern geschickt.\n> فاعل (کی فرستاد) مهم نیست، عمل مهم است.\n\n**۳. متون علمی و گزارش‌ها:**\n> **مجهول:** Die Daten wurden analysiert.\n> خنثی‌تر و عینی‌تر به نظر می‌رسد.\n\n**کاربرد معلوم:**\n\n**۱. زبان غیررسمی و گفتاری:**\n> **معلوم:** Wir haben den Bericht fertig gemacht.\n> شخصی‌تر و مستقیم‌تر\n\n**۲. وقتی فاعل مهم است:**\n> **معلوم:** Der Professor hat die Theorie entwickelt.\n\n**نکته برای فارسی‌زبانان:**\n- در فارسی مجهول کمتر از آلمانی استفاده می‌شود\n- آلمانی‌ها در نوشتار رسمی مجهول را ترجیح می‌دهند\n- در فارسی می‌گوییم: «گفته شد»، در آلمانی: Es wurde gesagt",
+      "examples": [
+        { "de": "**معلوم:** Ich habe den Antrag abgeschickt.", "fa": "درخواست را فرستادم." },
+        { "de": "**مجهول:** Der Antrag wurde abgeschickt.", "fa": "درخواست فرستاده شد." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s11",
+      "word": { "de": "das Passiv", "fa": "مجهول" },
+      "example": { "text": { "de": "Im Passiv steht die Handlung im Vordergrund, nicht die handelnde Person.", "fa": "در مجهول، عمل در مرکز توجه است، نه فاعل." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl7",
+      "word": "Passiv",
+      "translation": "مجهول",
+      "syllables": ["Pas", "siv"],
+      "distractors": ["Pos", "suv", "Pes", "sav"]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "کدام جمله برای یک متن علمی مناسب‌تر است؟",
+      "options": [
+        "Wir haben die Daten analysiert.",
+        "Die Daten wurden analysiert.",
+        "Ich habe die Daten analysiert.",
+        "Man hat die Daten analysiert."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "درست! در متون علمی معمولاً از مجهول استفاده می‌شود.", "incorrect": "در متون علمی، مجهول رسمی‌تر و عینی‌تر است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله مجهول رسمی را مرتب کنید",
+      "words": ["wurde", "Der", "Antrag", "geprüft", "und", "genehmigt"],
+      "correctOrder": [1, 2, 0, 3, 4, 5],
+      "correctSentence": { "de": "Der Antrag wurde geprüft und genehmigt.", "fa": "درخواست بررسی و تأیید شد." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را به ترتیب درست مرتب کنید",
+      "words": ["Es", "festgestellt", "dass", "wurde", "die", "Theorie", "korrekt", "ist"],
+      "correctOrder": [0, 3, 1, 2, 4, 5, 7, 6],
+      "correctSentence": { "de": "Es wurde festgestellt, dass die Theorie korrekt ist.", "fa": "مشخص شد که نظریه صحیح است." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s12",
+      "title": "اسم‌سازی: سبک رسمی و آکادمیک",
+      "content": "**Nominalisierung: Formeller und akademischer Stil**\n\n**اسم‌سازی (Nominalisierung)** یعنی تبدیل افعال یا صفات به اسم. این یک ویژگی مهم زبان رسمی آلمانی است.\n\n**چرا اسم‌سازی؟**\n- سبک رسمی‌تر و آکادمیک‌تر\n- جملات فشرده‌تر\n- متن عینی‌تر و خنثی‌تر\n\n**انواع اسم‌سازی:**\n\n**۱. از فعل به اسم:**\n> **فعل:** untersuchen (بررسی کردن)\n> **اسم:** die Untersuchung (بررسی)\n\n**مثال:**\n> **با فعل:** Wir untersuchen das Problem.\n> **با اسم:** Die Untersuchung des Problems ist wichtig.\n\n**۲. از صفت به اسم:**\n> **صفت:** wichtig (مهم)\n> **اسم:** die Wichtigkeit (اهمیت)\n\n**۳. با پیشوند:**\n> das Be-grüßen (احوال‌پرسی)\n> das Zer-stören (تخریب)\n\n**مقایسه سبک‌ها:**\n\n| غیررسمی | رسمی |\n|----------|------|\n| Ich möchte ankommen. | Meine Ankunft ist geplant. |\n| Wir bereiten vor. | Die Vorbereitung läuft. |\n| Er entscheidet schnell. | Seine schnelle Entscheidung... |",
+      "examples": [
+        { "de": "**با فعل:** Nachdem wir diskutiert hatten, entschieden wir.", "fa": "بعد از بحث، تصمیم گرفتیم." },
+        { "de": "**با اسم:** Nach der Diskussion fiel die Entscheidung.", "fa": "بعد از بحث، تصمیم اتخاذ شد." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s13",
+      "word": { "de": "die Nominalisierung", "fa": "اسم‌سازی" },
+      "example": { "text": { "de": "Die Nominalisierung macht den Text formeller.", "fa": "اسم‌سازی متن را رسمی‌تر می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl8",
+      "word": "Nominalisierung",
+      "translation": "اسم‌سازی",
+      "syllables": ["No", "mi", "na", "li", "sie", "rung"],
+      "distractors": ["Nu", "ma", "ne", "le", "sa", "rang"]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "فعل را با اسم مربوطه جفت کنید",
+      "items": [
+        { "id": "i1", "text": "untersuchen" },
+        { "id": "i2", "text": "entscheiden" },
+        { "id": "i3", "text": "vorbereiten" },
+        { "id": "i4", "text": "behandeln" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "die Untersuchung" },
+        { "id": "m2", "text": "die Entscheidung" },
+        { "id": "m3", "text": "die Vorbereitung" },
+        { "id": "m4", "text": "die Behandlung" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "اسم مناسب را انتخاب کنید",
+      "sentence": "Die {0} des Projekts dauert zwei Monate.",
+      "options": ["Vorbereitung", "vorbereiten", "bereitet", "vorbereitend"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Vorbereitung درست است. این شکل اسمی فعل vorbereiten است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "شکل رسمی‌تر را انتخاب کنید",
+      "sentence": "Nach der {0} wurde das Ergebnis bekannt gegeben.",
+      "options": ["Untersuchung", "untersuchen", "untersucht", "untersuchend"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Untersuchung درست است. استفاده از اسم در اینجا رسمی‌تر است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در زبان رسمی آلمانی، اسم‌سازی بیشتر از افعال استفاده می‌شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! اسم‌سازی یک ویژگی مهم سبک رسمی و آکادمیک است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "در گفتگوی روزمره با دوستان، استفاده از Sie مناسب است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! با دوستان از du استفاده می‌کنیم. Sie برای موقعیت‌های رسمی است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "مجهول در متون علمی بیشتر از معلوم استفاده می‌شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! مجهول در متون علمی عینی‌تر و خنثی‌تر به نظر می‌رسد." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "گفتگوی رسمی: مصاحبه شغلی",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Ein Vorstellungsgespräch in einem Unternehmen.", "fa": "مصاحبه شغلی در یک شرکت." }
+      },
+      "lines": [
+        { "speaker": "Frau Schmidt (Personalchefin)", "text": { "de": "Guten Tag, Herr Ahmadi. Könnten Sie sich bitte kurz vorstellen?", "fa": "روز بخیر، آقای احمدی. می‌توانید خودتان را معرفی کنید؟" }, "mood": "neutral" },
+        { "speaker": "Herr Ahmadi", "text": { "de": "Guten Tag, Frau Schmidt. Ich bedanke mich herzlich für die Einladung zum Gespräch.", "fa": "روز بخیر، خانم اشمیت. صمیمانه برای دعوت به مصاحبه تشکر می‌کنم." }, "mood": "happy" },
+        { "speaker": "Frau Schmidt", "text": { "de": "Warum interessieren Sie sich für diese Position?", "fa": "چرا به این موقعیت علاقه‌مندید؟" }, "mood": "neutral" },
+        { "speaker": "Herr Ahmadi", "text": { "de": "Die Stelle entspricht genau meinen Qualifikationen und ich schätze die Unternehmensphilosophie sehr.", "fa": "این شغل دقیقاً با صلاحیت‌هایم مطابقت دارد و فلسفه شرکت را بسیار ارج می‌نهم." }, "mood": "excited" },
+        { "speaker": "Frau Schmidt", "text": { "de": "Könnten Sie uns Ihre Gehaltsvorstellungen mitteilen?", "fa": "می‌توانید انتظارات حقوقی‌تان را بیان کنید؟" }, "mood": "neutral" },
+        { "speaker": "Herr Ahmadi", "text": { "de": "Aufgrund meiner Erfahrung und Qualifikation stelle ich mir ein Gehalt von 55.000 Euro vor.", "fa": "با توجه به تجربه و صلاحیتم، حقوق 55،000 یورو را در نظر دارم." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "آقای احمدی چگونه خودش را معرفی می‌کند؟", "options": ["غیررسمی", "رسمی و محترمانه", "خیلی کوتاه"], "correctIndex": 1, "explanation": "او از عبارات رسمی مثل «sich bedanken» و «herzlich» استفاده می‌کند." },
+        { "question": "سبک گفتگو در این مصاحبه چگونه است؟", "options": ["غیررسمی", "رسمی", "دوستانه"], "correctIndex": 1, "explanation": "هر دو از Sie استفاده می‌کنند و واژگان رسمی به کار می‌برند." }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "گفتگوی غیررسمی: دوستان",
+      "scene": {
+        "location": "cafe",
+        "description": { "de": "Zwei Freunde unterhalten sich in einem Café.", "fa": "دو دوست در کافه با هم صحبت می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Lena", "text": { "de": "Hey, hast du schon gehört? Ich hab den Job bekommen!", "fa": "سلام، شنیدی؟ شغل رو گرفتم!" }, "mood": "excited" },
+        { "speaker": "Max", "text": { "de": "Echt? Krass! Gratuliere! Wann fängst du an?", "fa": "واقعاً؟ عالیه! تبریک! کی شروع می‌کنی؟" }, "mood": "excited" },
+        { "speaker": "Lena", "text": { "de": "Nächsten Monat. Bin total aufgeregt!", "fa": "ماه بعد. خیلی هیجان‌زده‌ام!" }, "mood": "excited" },
+        { "speaker": "Max", "text": { "de": "Versteh ich. Das wird super! Lass uns das feiern!", "fa": "درک می‌کنم. عالی می‌شه! بیا جشن بگیریم!" }, "mood": "happy" },
+        { "speaker": "Lena", "text": { "de": "Gute Idee! Hab grade richtig Bock auf Pizza!", "fa": "فکر خوبیه! الان حسابی هوس پیتزا کردم!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "لنا و ماکس چه رابطه‌ای دارند؟", "options": ["همکار", "دوست نزدیک", "غریبه"], "correctIndex": 1, "explanation": "آنها از du استفاده می‌کنند و خیلی غیررسمی صحبت می‌کنند." },
+        { "question": "سبک گفتگو چگونه است؟", "options": ["رسمی", "خیلی غیررسمی و دوستانه", "خنثی"], "correctIndex": 1, "explanation": "از عبارات عامیانه مثل «echt», «krass», «Bock haben» استفاده می‌کنند." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m2",
+      "instruction": "عبارت غیررسمی را با معادل رسمی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Danke!" },
+        { "id": "i2", "text": "Kannst du helfen?" },
+        { "id": "i3", "text": "Tschüss!" },
+        { "id": "i4", "text": "Wie geht's?" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "Ich bedanke mich." },
+        { "id": "m2", "text": "Könnten Sie behilflich sein?" },
+        { "id": "m3", "text": "Auf Wiedersehen!" },
+        { "id": "m4", "text": "Wie geht es Ihnen?" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "لطفاً می‌توانید به من کمک کنید؟ (رسمی)",
+      "sentenceTemplate": "Könnten {0} mir bitte {1} sein?",
+      "options": ["Sie", "du", "behilflich", "helfen", "ihr", "unterstützen"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Könnten Sie mir bitte behilflich sein?", "fa": "لطفاً می‌توانید به من کمک کنید؟" }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "از کمکتان صمیمانه تشکر می‌کنم. (رسمی)",
+      "sentenceTemplate": "Ich {0} mich herzlich für {1} Hilfe.",
+      "options": ["bedanke", "danke", "Ihre", "deine", "sage", "euer"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Ich bedanke mich herzlich für Ihre Hilfe.", "fa": "از کمکتان صمیمانه تشکر می‌کنم." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: ایمیل رسمی",
+      "passage": {
+        "de": "Sehr geehrte Frau Professor Müller,\n\nich möchte mich herzlich für Ihre Unterstützung bei meiner Masterarbeit bedanken. Ihre konstruktiven Anmerkungen haben mir sehr geholfen.\n\nDie Untersuchung wurde wie besprochen durchgeführt. Die Analyse der Daten ergab interessante Resultate. Nach der Auswertung wurde festgestellt, dass die Hypothese bestätigt werden konnte.\n\nIch würde mich freuen, wenn Sie Zeit für ein persönliches Gespräch hätten. Könnten Sie mir einen Termin für nächste Woche mitteilen?\n\nMit freundlichen Grüßen\nAli Rezaei",
+        "fa": "خانم پروفسور مولر محترم،\n\nمی‌خواهم صمیمانه بابت حمایت‌تان در پایان‌نامه کارشناسی ارشدم تشکر کنم. نکات سازنده‌تان بسیار به من کمک کرد.\n\nبررسی همان‌طور که صحبت شد انجام شد. تحلیل داده‌ها نتایج جالبی به دست داد. بعد از ارزیابی مشخص شد که فرضیه می‌تواند تأیید شود.\n\nخوشحال می‌شوم اگر برای یک گفتگوی حضوری وقت داشته باشید. می‌توانید یک قرار ملاقات برای هفته آینده به من اطلاع دهید؟\n\nبا احترام\nعلی رضایی"
+      },
+      "questions": [
+        { "question": "سبک این ایمیل چگونه است؟", "options": ["غیررسمی", "خیلی رسمی و محترمانه", "خنثی"], "correctIndex": 1, "explanation": "از Sie، عبارات رسمی، و اسم‌سازی استفاده شده است." },
+        { "question": "نویسنده از چه ساختاری استفاده کرده؟", "options": ["فقط معلوم", "فقط مجهول", "ترکیبی از معلوم و مجهول"], "correctIndex": 2, "explanation": "مثلاً «wurde durchgeführt» (مجهول) و «möchte bedanken» (معلوم) استفاده شده." },
+        { "question": "چه چیزی مشخص شد؟", "options": ["فرضیه غلط بود", "فرضیه تأیید شد", "فرضیه نیاز به بررسی بیشتر دارد"], "correctIndex": 1, "explanation": "در متن آمده: dass die Hypothese bestätigt werden konnte." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "فرم رسمی مناسب را انتخاب کنید",
+      "sentence": "Ich möchte {0} für die Einladung bedanken.",
+      "options": ["mich", "dich", "sich", "euch"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "mich درست است. فعل «sich bedanken» با ضمیر بازتابی استفاده می‌شود." }
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der Stilwechsel", "fa": "تغییر سبک" },
+      "characters": ["Sara", "Professor Weber"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Sara schreibt ihre erste wissenschaftliche Arbeit. Sie zeigt sie Professor Weber.", "fa": "سارا اولین مقاله علمی‌اش را می‌نویسد. آن را به پروفسور وبر نشان می‌دهد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Professor Weber",
+          "text": { "de": "Frau Ahmadi, Ihre Arbeit ist inhaltlich gut, aber der Stil ist zu informell.", "fa": "خانم احمدی، کار شما از نظر محتوا خوب است، اما سبک خیلی غیررسمی است." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sara",
+          "text": { "de": "Zu informell? Können Sie mir ein Beispiel geben?", "fa": "خیلی غیررسمی؟ می‌توانید مثالی بزنید؟" },
+          "mood": "confused"
+        },
+        {
+          "type": "question",
+          "question": "مشکل کار سارا چیست؟",
+          "options": ["محتوا ضعیف است", "سبک خیلی غیررسمی است", "خیلی کوتاه است"],
+          "correctIndex": 1,
+          "explanation": "پروفسور گفت: der Stil ist zu informell."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Professor Weber",
+          "text": { "de": "Sie schreiben zum Beispiel 'Wir haben untersucht'. Besser wäre: 'Es wurde untersucht'.", "fa": "مثلاً می‌نویسید «ما بررسی کردیم». بهتر است: «بررسی شد»." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sara",
+          "text": { "de": "Verstehe. Also mehr Passiv und Nominalisierung?", "fa": "متوجه شدم. پس مجهول و اسم‌سازی بیشتر؟" },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Professor Weber",
+          "text": { "de": "Genau! Und verwenden Sie formellere Ausdrücke. Statt 'finden' besser 'feststellen'.", "fa": "دقیقاً! و از عبارات رسمی‌تر استفاده کنید. به جای «finden» بهتر است «feststellen»." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "پروفسور چه پیشنهادی می‌دهد؟",
+          "options": ["کوتاه‌تر نوشتن", "استفاده از مجهول و عبارات رسمی", "افزودن تصاویر"],
+          "correctIndex": 1,
+          "explanation": "او پیشنهاد می‌دهد از Passiv و formellere Ausdrücke استفاده شود."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: سبک رسمی و غیررسمی",
+      "instruction": "کدام رسمی‌تر است؟",
+      "questions": [
+        { "prompt": "کدام رسمی‌تر است؟", "left": "Ich bedanke mich.", "right": "Danke!", "correctSide": "left" },
+        { "prompt": "کدام رسمی‌تر است؟", "left": "Kannst du helfen?", "right": "Könnten Sie helfen?", "correctSide": "right" },
+        { "prompt": "کدام رسمی‌تر است؟", "left": "Es wurde untersucht.", "right": "Wir haben untersucht.", "correctSide": "left" },
+        { "prompt": "کدام رسمی‌تر است؟", "left": "Tschüss!", "right": "Auf Wiedersehen!", "correctSide": "right" },
+        { "prompt": "برای متن علمی؟", "left": "مجهول", "right": "معلوم", "correctSide": "left" },
+        { "prompt": "برای چت با دوست؟", "left": "du", "right": "Sie", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich möchte mich herzlich für Ihre Hilfe bedanken.",
+      "translation": "می‌خواهم صمیمانه بابت کمکتان تشکر کنم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Die Untersuchung wurde erfolgreich durchgeführt.",
+      "translation": "بررسی با موفقیت انجام شد."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Könnten Sie mir bitte behilflich sein?",
+      "translation": "لطفاً می‌توانید به من کمک کنید؟"
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: سبک‌شناسی",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "die Stilistik یعنی؟", "options": ["سبک‌شناسی", "آمار"], "correctAnswerIndex": 0 },
+        { "question": "formell یعنی؟", "options": ["رسمی", "غیررسمی"], "correctAnswerIndex": 0 },
+        { "question": "برای مصاحبه شغلی؟", "options": ["Sie", "du"], "correctAnswerIndex": 0 },
+        { "question": "das Register یعنی؟", "options": ["سطح زبان", "دفتر"], "correctAnswerIndex": 0 },
+        { "question": "کدام رسمی‌تر است؟", "options": ["behilflich sein", "helfen"], "correctAnswerIndex": 0 },
+        { "question": "die Nominalisierung یعنی؟", "options": ["اسم‌سازی", "نامگذاری"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: واژگان سبک‌شناسی",
+      "pairs": [
+        { "de": "die Stilistik", "fa": "سبک‌شناسی" },
+        { "de": "formell", "fa": "رسمی" },
+        { "de": "das Register", "fa": "سطح زبان" },
+        { "de": "angemessen", "fa": "مناسب" },
+        { "de": "die Nominalisierung", "fa": "اسم‌سازی" },
+        { "de": "der Kontext", "fa": "زمینه، بافت" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات مربوط به سبک‌شناسی",
+      "instruction": "کلمات آلمانی مربوط به این درس را پیدا کنید",
+      "targetWords": ["Stilistik", "formell", "informell", "Register", "Kontext"],
+      "gridSize": { "rows": 10, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "die Stilistik", "fa": "سبک‌شناسی", "options": ["آمار", "سبک‌شناسی", "تاریخ", "جغرافیا"], "correctIndex": 1 },
+        { "de": "angemessen", "fa": "مناسب", "options": ["نامناسب", "مناسب", "قدیمی", "جدید"], "correctIndex": 1 },
+        { "de": "das Register", "fa": "سطح زبان", "options": ["دفتر", "سطح زبان", "ثبت‌نام", "فهرست"], "correctIndex": 1 },
+        { "de": "die Nominalisierung", "fa": "اسم‌سازی", "options": ["نامگذاری", "اسم‌سازی", "فعل‌سازی", "صفت‌سازی"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما سبک‌شناسی و تفاوت بین زبان رسمی و غیررسمی را یاد گرفتید!",
+      "keyPoints": [
+        "انتخاب بین Sie و du به زمینه و رابطه بستگی دارد",
+        "رجیستر (Register): سطح زبانی مناسب برای هر موقعیت",
+        "زبان رسمی: اسم‌سازی، مجهول، واژگان رسمی‌تر",
+        "زبان غیررسمی: جملات کوتاه‌تر، معلوم، du/ihr",
+        "مجهول در متون علمی و رسمی بیشتر استفاده می‌شود",
+        "اسم‌سازی سبک را رسمی‌تر و فشرده‌تر می‌کند",
+        "در ایمیل‌های رسمی از sich bedanken و behilflich sein استفاده کنید"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "die Stilistik", "fa": "سبک‌شناسی" } },
+        { "word": { "de": "formell", "fa": "رسمی" } },
+        { "word": { "de": "informell", "fa": "غیررسمی" } },
+        { "word": { "de": "das Register", "fa": "سطح زبان" } },
+        { "word": { "de": "angemessen", "fa": "مناسب" } },
+        { "word": { "de": "der Kontext", "fa": "زمینه، بافت" } },
+        { "word": { "de": "die Nominalisierung", "fa": "اسم‌سازی" } },
+        { "word": { "de": "das Passiv", "fa": "مجهول" } }
+      ]
+    }
+  ]
+}

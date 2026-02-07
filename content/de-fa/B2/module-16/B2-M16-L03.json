@@ -1,0 +1,505 @@
+{
+  "id": "B2-M16-L03",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Temporalsätze erweitert: ehe, bevor", "fa": "جملات زمانی پیشرفته: ehe، bevor" },
+  "description": "یاد بگیرید چگونه از حروف ربط «ehe» و «bevor» برای بیان رویدادهایی که قبل از عمل دیگری اتفاق می‌افتند استفاده کنید. تفاوت‌های سبکی، کاربرد رسمی و غیررسمی، و استفاده صحیح از زمان‌های مختلف را در این جملات بیاموزید.",
+  "level": "B2",
+  "module": 16,
+  "lessonNumber": 3,
+  "totalSteps": 45,
+  "estimatedMinutes": 45,
+  "vocabulary": [
+    { "de": "ehe", "fa": "قبل از اینکه (رسمی)", "grammar": { "pos": "conjunction" } },
+    { "de": "bevor", "fa": "قبل از اینکه", "grammar": { "pos": "conjunction" } },
+    { "de": "vorher", "fa": "قبلاً، پیشتر", "grammar": { "pos": "adverb" } },
+    { "de": "zuvor", "fa": "پیش از آن، قبلاً", "grammar": { "pos": "adverb" } },
+    { "de": "im Voraus", "fa": "از پیش، پیشاپیش", "grammar": { "pos": "phrase" } },
+    { "de": "die Vorbereitung", "fa": "آمادگی، آماده‌سازی", "grammar": { "pos": "noun", "gender": "feminine" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "ehe و bevor: قبل از اینکه",
+      "content": "**ehe & bevor: Temporalsätze (قبل از اینکه)**\n\nهر دو «ehe» و «bevor» به معنای **«قبل از اینکه»** هستند و رویدادی را که **پیش از عمل اصلی** اتفاق می‌افتد، نشان می‌دهند.\n\n**ساختار:**\n> جمله اصلی + **bevor/ehe** + فاعل + ... + فعل\n> **Bevor/Ehe** + فاعل + ... + فعل , جمله اصلی\n\n**مثال:**\n> Ich **rufe** dich an, **bevor** ich **losfahre**.\n> قبل از اینکه حرکت کنم، بهت زنگ می‌زنم.\n\n> **Ehe** er **abreist**, muss er noch packen.\n> قبل از اینکه برود، باید چمدان ببندد.\n\n**تفاوت اصلی:**\n- **bevor** = کاربرد عمومی، محاوره‌ای و نوشتاری\n- **ehe** = رسمی‌تر، ادبی‌تر، بیشتر در نوشتار\n\n**نکته مهم برای فارسی‌زبانان:**\n- در فارسی «قبل از اینکه» و «پیش از اینکه» داریم\n- تفاوت سبکی ehe و bevor مثل فارسی نیست\n- هر دو جمله معمولاً در **یک زمان** هستند",
+      "examples": [
+        { "de": "Bevor wir essen, waschen wir die Hände.", "fa": "قبل از اینکه غذا بخوریم، دست‌ها را می‌شوییم." },
+        { "de": "Ehe die Sonne untergeht, sollten wir aufbrechen.", "fa": "پیش از اینکه خورشید غروب کند، باید حرکت کنیم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "ehe", "fa": "قبل از اینکه (رسمی)" },
+      "example": { "text": { "de": "Ehe er eine Entscheidung trifft, denkt er lange nach.", "fa": "پیش از اینکه تصمیم بگیرد، مدت‌ها فکر می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "ehe",
+      "translation": "قبل از اینکه (رسمی)",
+      "syllables": ["e", "he"],
+      "distractors": ["a", "ha", "i", "hi"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "bevor", "fa": "قبل از اینکه" },
+      "example": { "text": { "de": "Bevor du gehst, solltest du deine Tasche packen.", "fa": "قبل از اینکه بروی، باید کیفت را جمع کنی." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "bevor",
+      "translation": "قبل از اینکه",
+      "syllables": ["be", "vor"],
+      "distractors": ["ba", "var", "bo", "fer"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "vorher", "fa": "قبلاً، پیشتر" },
+      "example": { "text": { "de": "Ich habe das vorher nicht gewusst.", "fa": "من این را قبلاً نمی‌دانستم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "vorher",
+      "translation": "قبلاً، پیشتر",
+      "syllables": ["vor", "her"],
+      "distractors": ["var", "hor", "fur", "har"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "تفاوت سبکی: ehe در مقابل bevor",
+      "content": "**ehe vs. bevor: تفاوت‌های سبکی**\n\n**bevor (رایج‌تر):**\n- در گفتار روزمره استفاده می‌شود\n- در نوشتار عادی کاربرد دارد\n- خنثی و بدون لحن خاص\n\n**مثال:**\n> **Bevor** ich ins Bett gehe, putze ich mir die Zähne.\n> قبل از اینکه بخوابم، دندان‌هایم را مسواک می‌زنم.\n\n**ehe (رسمی‌تر و ادبی‌تر):**\n- بیشتر در زبان نوشتاری\n- در ادبیات و متون رسمی\n- لحن ادبی و شاعرانه دارد\n\n**مثال:**\n> **Ehe** der Tag anbricht, sind wir längst fort.\n> پیش از آنکه روز بدمد، ما مدت‌هاست رفته‌ایم.\n\n**جدول مقایسه:**\n\n| bevor | ehe |\n|-------|-----|\n| محاوره‌ای | رسمی |\n| نوشتار عادی | ادبیات |\n| کاربرد روزمره | متون رسمی |\n| 90% مواقع | 10% مواقع |\n\n**نکته:** در مکالمات روزمره، «bevor» را انتخاب کنید. برای متون رسمی یا ادبی، «ehe» مناسب‌تر است.",
+      "examples": [
+        { "de": "Bevor wir starten, müssen wir tanken. (روزمره)", "fa": "قبل از اینکه شروع کنیم، باید باک را پر کنیم." },
+        { "de": "Ehe wir diese Welt verlassen, sollten wir Gutes tun. (ادبی)", "fa": "پیش از آنکه این دنیا را ترک کنیم، باید کار خوب انجام دهیم." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله برای مکالمه روزمره مناسب‌تر است؟",
+      "options": [
+        "Ehe ich esse, wasche ich die Hände.",
+        "Bevor ich esse, wasche ich die Hände.",
+        "Während ich esse, wasche ich die Hände.",
+        "Nachdem ich esse, wasche ich die Hände."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! «bevor» برای مکالمات روزمره مناسب‌تر است.", "incorrect": "برای گفتار روزمره، «bevor» رایج‌تر از «ehe» است." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله لحن ادبی و رسمی‌تری دارد؟",
+      "options": [
+        "Bevor der Winter kommt, ziehen die Vögel nach Süden.",
+        "Ehe der Winter naht, ziehen die Vögel gen Süden.",
+        "Wenn der Winter kommt, sind die Vögel weg.",
+        "Als der Winter kam, waren die Vögel schon fort."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "درست! «ehe» و «naht» و «gen» کلمات ادبی‌تری هستند.", "incorrect": "جمله با «ehe» رسمی‌تر و ادبی‌تر است." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "zuvor", "fa": "پیش از آن، قبلاً" },
+      "example": { "text": { "de": "Er hatte das Buch zuvor nie gelesen.", "fa": "او آن کتاب را پیش از آن هرگز نخوانده بود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "zuvor",
+      "translation": "پیش از آن، قبلاً",
+      "syllables": ["zu", "vor"],
+      "distractors": ["ze", "var", "zi", "fur"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "im Voraus", "fa": "از پیش، پیشاپیش" },
+      "example": { "text": { "de": "Ich danke Ihnen im Voraus für Ihre Hilfe.", "fa": "از پیش برای کمکتان سپاسگزارم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "Voraus",
+      "translation": "پیش، جلو",
+      "syllables": ["Vo", "raus"],
+      "distractors": ["Va", "rois", "Fu", "rous"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "die Vorbereitung", "fa": "آمادگی، آماده‌سازی" },
+      "example": { "text": { "de": "Die Vorbereitung auf die Prüfung dauert lange.", "fa": "آمادگی برای امتحان مدت زیادی طول می‌کشد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Vorbereitung",
+      "translation": "آمادگی، آماده‌سازی",
+      "syllables": ["Vor", "be", "rei", "tung"],
+      "distractors": ["Var", "ba", "roi", "tong"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "استفاده از زمان‌ها با ehe و bevor",
+      "content": "**زمان‌های فعلی در جملات با ehe/bevor**\n\n**قاعده کلی:** هر دو جمله معمولاً در **یک زمان** هستند.\n\n**۱. حال ساده (Präsens):**\n> **Bevor** ich **gehe**, **räume** ich auf.\n> قبل از اینکه بروم، مرتب می‌کنم.\n\n**۲. گذشته ساده (Präteritum):**\n> **Ehe** er **abreiste**, **verabschiedete** er sich.\n> پیش از اینکه رفت، خداحافظی کرد.\n\n**۳. حال کامل (Perfekt):**\n> **Bevor** wir **gegessen haben**, haben wir **gebetet**.\n> قبل از اینکه غذا خوردیم، دعا کردیم.\n\n**۴. آینده (Futur I):**\n> **Ehe** das Jahr **enden wird**, **werden** wir das Projekt **abschließen**.\n> پیش از آنکه سال تمام شود، پروژه را به پایان می‌رسانیم.\n\n**نکته مهم:** برخلاف فارسی که گاهی زمان‌ها متفاوت است، در آلمانی معمولاً هر دو جمله زمان یکسان دارند.\n\n**استثنا:** گاهی برای تأکید بر توالی زمانی، زمان‌های متفاوت استفاده می‌شود:\n> **Bevor** ich **gekommen bin**, hatte er schon **angefangen**.\n> قبل از اینکه بیایم، او قبلاً شروع کرده بود.",
+      "examples": [
+        { "de": "Bevor du schläfst, solltest du das Licht ausschalten.", "fa": "قبل از اینکه بخوابی، باید چراغ را خاموش کنی." },
+        { "de": "Ehe sie heirateten, hatten sie fünf Jahre zusammengelebt.", "fa": "پیش از اینکه ازدواج کردند، پنج سال با هم زندگی کرده بودند." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "حرف ربط مناسب را انتخاب کنید",
+      "sentence": "{0} ich zur Arbeit gehe, trinke ich Kaffee.",
+      "options": ["Bevor", "Nachdem", "Während", "Obwohl"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Bevor درست است. عمل قهوه خوردن قبل از رفتن به سر کار اتفاق می‌افتد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جمله را با ehe کامل کنید (سبک رسمی)",
+      "sentence": "{0} der Frühling kommt, ist alles noch kalt.",
+      "options": ["Ehe", "Bevor", "Nachdem", "Als"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Ehe درست است و لحن رسمی و ادبی دارد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "فعل را در زمان مناسب بگذارید",
+      "sentence": "Bevor wir {0}, müssen wir einkaufen. (essen)",
+      "options": ["essen", "gegessen", "aßen", "ißt"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "essen (مصدر) درست است. هر دو جمله در حال ساده هستند." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را به ترتیب درست مرتب کنید",
+      "words": ["Bevor", "schlafen", "ich", "gehe", "lese", "ich", "ein", "Buch"],
+      "correctOrder": [0, 2, 3, 4, 5, 6, 7, 1],
+      "correctSentence": { "de": "Bevor ich schlafen gehe, lese ich ein Buch.", "fa": "قبل از اینکه بخوابم، کتاب می‌خوانم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله با ehe را مرتب کنید",
+      "words": ["Ehe", "Entscheidung", "eine", "trifft", "er", "denkt", "lange", "nach", "er"],
+      "correctOrder": [0, 8, 1, 2, 3, 5, 4, 6, 7],
+      "correctSentence": { "de": "Ehe er eine Entscheidung trifft, denkt er lange nach.", "fa": "پیش از اینکه تصمیم بگیرد، مدت‌ها فکر می‌کند." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله زمانی را بسازید",
+      "words": ["Bevor", "reist", "muss", "ein", "Visum", "beantragen", "man", "man"],
+      "correctOrder": [0, 6, 1, 2, 7, 3, 4, 5],
+      "correctSentence": { "de": "Bevor man reist, muss man ein Visum beantragen.", "fa": "قبل از اینکه سفر کند، باید ویزا درخواست کرد." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "ehe و bevor هر دو به معنی «قبل از اینکه» هستند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! هر دو به یک معنی هستند، اما تفاوت سبکی دارند." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "ehe در مکالمات روزمره رایج‌تر از bevor است.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! bevor در گفتار روزمره رایج‌تر است. ehe رسمی‌تر و ادبی‌تر است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جملات با bevor و ehe، معمولاً هر دو جمله در یک زمان هستند.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! معمولاً هر دو بخش از جمله زمان یکسانی دارند." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "گفتگو در آشپزخانه",
+      "scene": {
+        "location": "kitchen",
+        "description": { "de": "Eine Mutter spricht mit ihrer Tochter über die Vorbereitung des Abendessens.", "fa": "یک مادر با دخترش درباره آماده کردن شام صحبت می‌کند." }
+      },
+      "lines": [
+        { "speaker": "Mutter", "text": { "de": "Bevor wir das Essen kochen, müssen wir einkaufen gehen.", "fa": "قبل از اینکه غذا بپزیم، باید برای خرید بریم." }, "mood": "neutral" },
+        { "speaker": "Sara", "text": { "de": "Was brauchen wir denn?", "fa": "چه چیزهایی نیاز داریم؟" }, "mood": "confused" },
+        { "speaker": "Mutter", "text": { "de": "Ehe ich die Liste schreibe, muss ich den Kühlschrank kontrollieren.", "fa": "پیش از اینکه لیست بنویسم، باید یخچال را چک کنم." }, "mood": "neutral" },
+        { "speaker": "Sara", "text": { "de": "Bevor du das machst, kann ich schon mal den Tisch decken.", "fa": "قبل از اینکه این کار را بکنی، می‌توانم میز را بچینم." }, "mood": "happy" },
+        { "speaker": "Mutter", "text": { "de": "Gute Idee! Aber ehe du anfängst, wasch bitte deine Hände.", "fa": "فکر خوبیه! اما پیش از اینکه شروع کنی، لطفاً دست‌هایت را بشور." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "مادر قبل از نوشتن لیست چه کار می‌کند؟", "options": ["خرید می‌رود", "یخچال را چک می‌کند", "غذا می‌پزد"], "correctIndex": 1, "explanation": "مادر گفت: muss ich den Kühlschrank kontrollieren." },
+        { "question": "سارا قبل از چیدن میز چه کار باید بکند؟", "options": ["دست بشوید", "خرید کند", "غذا بخورد"], "correctIndex": 0, "explanation": "مادر گفت: wasch bitte deine Hände." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "قید زمانی مناسب را انتخاب کنید",
+      "sentence": "Ich habe das {0} nicht gewusst.",
+      "options": ["vorher", "nachher", "während", "obwohl"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "vorher (قبلاً) درست است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "عبارت صحیح را انتخاب کنید",
+      "sentence": "Ich danke Ihnen {0} für Ihre Unterstützung.",
+      "options": ["im Voraus", "im Nachhinein", "inzwischen", "unterdessen"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "im Voraus (از پیش، پیشاپیش) درست است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "کلمه مناسب را انتخاب کنید",
+      "sentence": "Die {0} auf das Meeting ist sehr wichtig.",
+      "options": ["Vorbereitung", "Nachbereitung", "Bereitung", "Vorbild"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "die Vorbereitung (آمادگی) درست است." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "گفتگو در فرودگاه",
+      "scene": {
+        "location": "airport",
+        "description": { "de": "Zwei Freunde verabschieden sich am Flughafen.", "fa": "دو دوست در فرودگاه خداحافظی می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Ali", "text": { "de": "Bevor du abfliegst, möchte ich dir noch etwas sagen.", "fa": "قبل از اینکه پرواز کنی، می‌خواهم چیزی بهت بگویم." }, "mood": "sad" },
+        { "speaker": "Michael", "text": { "de": "Was denn? Ehe du weitersprichst, lass mich raten: Du wirst mich vermissen!", "fa": "چی؟ پیش از اینکه ادامه بدی، بگذار حدس بزنم: دلت برام تنگ می‌شود!" }, "mood": "happy" },
+        { "speaker": "Ali", "text": { "de": "Natürlich! Bevor du zurückkommst, werden drei Monate vergehen.", "fa": "البته! قبل از اینکه برگردی، سه ماه می‌گذرد." }, "mood": "sad" },
+        { "speaker": "Michael", "text": { "de": "Ehe ich gehe, verspreche ich dir: Ich rufe jede Woche an!", "fa": "پیش از اینکه بروم، بهت قول می‌دهم: هر هفته زنگ می‌زنم!" }, "mood": "neutral" },
+        { "speaker": "Ali", "text": { "de": "Bevor du einsteigst, noch eine Umarmung!", "fa": "قبل از اینکه سوار شوی، یک بغل دیگر!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "میشائل چند وقت می‌ماند؟", "options": ["یک ماه", "دو ماه", "سه ماه"], "correctIndex": 2, "explanation": "علی گفت: werden drei Monate vergehen." },
+        { "question": "میشائل چه قولی می‌دهد؟", "options": ["هر روز زنگ می‌زند", "هر هفته زنگ می‌زند", "هر ماه زنگ می‌زند"], "correctIndex": 1, "explanation": "میشائل گفت: Ich rufe jede Woche an!" }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "عبارات آلمانی را با معنی فارسی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "bevor ich gehe" },
+        { "id": "i2", "text": "ehe er kommt" },
+        { "id": "i3", "text": "im Voraus" },
+        { "id": "i4", "text": "vorher" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "قبل از اینکه بروم" },
+        { "id": "m2", "text": "پیش از اینکه بیاید" },
+        { "id": "m3", "text": "از پیش، پیشاپیش" },
+        { "id": "m4", "text": "قبلاً، پیشتر" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "قبل از اینکه بخوابم، کتاب می‌خوانم.",
+      "sentenceTemplate": "{0} ich schlafen gehe, {1} ich ein Buch.",
+      "options": ["Bevor", "Nachdem", "lese", "las", "Während", "gelesen"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Bevor ich schlafen gehe, lese ich ein Buch.", "fa": "قبل از اینکه بخوابم، کتاب می‌خوانم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "پیش از اینکه تصمیم بگیرد، باید فکر کند.",
+      "sentenceTemplate": "{0} er eine Entscheidung trifft, {1} er nachdenken.",
+      "options": ["Ehe", "Nachdem", "muss", "musste", "Bevor", "kann"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Ehe er eine Entscheidung trifft, muss er nachdenken.", "fa": "پیش از اینکه تصمیم بگیرد، باید فکر کند." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: صبحانه در خانواده اشمیت",
+      "passage": {
+        "de": "Familie Schmidt hat eine feste Morgenroutine. Bevor die Kinder aufstehen, bereitet die Mutter das Frühstück vor. Ehe der Vater zur Arbeit fährt, trinkt er immer eine Tasse Kaffee.\n\nDie Kinder müssen sich beeilen. Bevor sie zur Schule gehen, müssen sie ihre Zähne putzen und ihre Schultaschen packen. Ehe sie das Haus verlassen, kontrolliert die Mutter, ob sie alles dabei haben.\n\nAm Wochenende ist alles entspannter. Bevor die Familie zusammen frühstückt, dürfen die Kinder ausschlafen. Ehe sie etwas planen, genießen sie erst mal den ruhigen Morgen.",
+        "fa": "خانواده اشمیت یک برنامه صبحگاهی ثابت دارند. قبل از اینکه بچه‌ها بیدار شوند، مادر صبحانه را آماده می‌کند. پیش از اینکه پدر سر کار برود، همیشه یک فنجان قهوه می‌نوشد.\n\nبچه‌ها باید عجله کنند. قبل از اینکه به مدرسه بروند، باید دندان‌هایشان را مسواک بزنند و کیف مدرسه‌شان را جمع کنند. پیش از اینکه خانه را ترک کنند، مادر چک می‌کند که آیا همه چیز را همراه دارند.\n\nآخر هفته همه چیز راحت‌تر است. قبل از اینکه خانواده با هم صبحانه بخورند، بچه‌ها می‌توانند دیر بیدار شوند. پیش از اینکه چیزی برنامه‌ریزی کنند، اول از صبح آرام لذت می‌برند."
+      },
+      "questions": [
+        { "question": "مادر صبحانه را چه زمانی آماده می‌کند؟", "options": ["بعد از بیدار شدن بچه‌ها", "قبل از بیدار شدن بچه‌ها", "هنگام رفتن پدر"], "correctIndex": 1, "explanation": "در متن گفته شده: Bevor die Kinder aufstehen, bereitet die Mutter das Frühstück vor." },
+        { "question": "پدر قبل از رفتن سر کار چه می‌کند؟", "options": ["قهوه می‌نوشد", "صبحانه می‌خورد", "بچه‌ها را بیدار می‌کند"], "correctIndex": 0, "explanation": "در متن آمده: Ehe der Vater zur Arbeit fährt, trinkt er immer eine Tasse Kaffee." },
+        { "question": "آخر هفته چه چیزی متفاوت است؟", "options": ["بچه‌ها زودتر بیدار می‌شوند", "بچه‌ها می‌توانند دیر بیدار شوند", "مادر صبحانه نمی‌پزد"], "correctIndex": 1, "explanation": "در متن گفته شده: dürfen die Kinder ausschlafen." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der erste Arbeitstag", "fa": "اولین روز کاری" },
+      "characters": ["Leila", "Chef"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Leila ist sehr nervös. Morgen beginnt sie ihre neue Arbeit.", "fa": "لیلا بسیار مضطرب است. فردا کار جدیدش را شروع می‌کند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Leila",
+          "text": { "de": "Bevor ich morgen anfange, muss ich alles vorbereiten.", "fa": "قبل از اینکه فردا شروع کنم، باید همه چیز را آماده کنم." },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "لیلا چه احساسی دارد؟",
+          "options": ["خوشحال", "مضطرب", "خسته"],
+          "correctIndex": 1,
+          "explanation": "در متن گفته شده: Leila ist sehr nervös."
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Sie legt ihre Kleidung zurecht. Ehe sie schlafen geht, stellt sie den Wecker.", "fa": "لباس‌هایش را آماده می‌کند. پیش از اینکه بخوابد، ساعت را تنظیم می‌کند." }
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Am nächsten Morgen wacht sie früh auf. Bevor sie das Haus verlässt, trinkt sie einen Kaffee.", "fa": "صبح روز بعد زود بیدار می‌شود. قبل از اینکه خانه را ترک کند، یک قهوه می‌نوشد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Chef",
+          "text": { "de": "Willkommen! Ehe wir beginnen, zeige ich Ihnen Ihren Arbeitsplatz.", "fa": "خوش آمدید! پیش از اینکه شروع کنیم، محل کارتان را نشانتان می‌دهم." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "رئیس اول چه کار می‌کند؟",
+          "options": ["محل کار را نشان می‌دهد", "قهوه می‌آورد", "قرارداد را می‌دهد"],
+          "correctIndex": 0,
+          "explanation": "رئیس گفت: zeige ich Ihnen Ihren Arbeitsplatz."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Leila",
+          "text": { "de": "Vielen Dank! Bevor ich Fragen stelle, möchte ich erst mal alles kennenlernen.", "fa": "خیلی ممنون! قبل از اینکه سوال بپرسم، می‌خواهم اول همه چیز را بشناسم." },
+          "mood": "happy"
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: ehe و bevor",
+      "instruction": "پاسخ درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "bevor یعنی؟", "left": "بعد از اینکه", "right": "قبل از اینکه", "correctSide": "right" },
+        { "prompt": "کدام رسمی‌تر است؟", "left": "bevor", "right": "ehe", "correctSide": "right" },
+        { "prompt": "vorher یعنی؟", "left": "قبلاً", "right": "بعداً", "correctSide": "left" },
+        { "prompt": "im Voraus یعنی؟", "left": "در آخر", "right": "از پیش", "correctSide": "right" },
+        { "prompt": "کدام در گفتار روزمره رایج‌تر است؟", "left": "bevor", "right": "ehe", "correctSide": "left" },
+        { "prompt": "die Vorbereitung یعنی؟", "left": "نتیجه", "right": "آمادگی", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Bevor ich zur Arbeit gehe, trinke ich Kaffee.",
+      "translation": "قبل از اینکه به سر کار بروم، قهوه می‌نوشم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Ehe er eine Entscheidung trifft, denkt er nach.",
+      "translation": "پیش از اینکه تصمیم بگیرد، فکر می‌کند."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Bevor wir essen, waschen wir die Hände.",
+      "translation": "قبل از اینکه غذا بخوریم، دست‌ها را می‌شوییم."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: جملات زمانی",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "bevor یعنی؟", "options": ["قبل از اینکه", "بعد از اینکه"], "correctAnswerIndex": 0 },
+        { "question": "ehe یعنی؟", "options": ["قبل از اینکه", "بعد از اینکه"], "correctAnswerIndex": 0 },
+        { "question": "کدام رسمی‌تر است؟", "options": ["ehe", "bevor"], "correctAnswerIndex": 0 },
+        { "question": "vorher یعنی؟", "options": ["قبلاً", "بعداً"], "correctAnswerIndex": 0 },
+        { "question": "zuvor یعنی؟", "options": ["پیش از آن", "پس از آن"], "correctAnswerIndex": 0 },
+        { "question": "die Vorbereitung یعنی؟", "options": ["آمادگی", "نتیجه"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: واژگان زمانی",
+      "pairs": [
+        { "de": "ehe", "fa": "قبل از اینکه (رسمی)" },
+        { "de": "bevor", "fa": "قبل از اینکه" },
+        { "de": "vorher", "fa": "قبلاً، پیشتر" },
+        { "de": "zuvor", "fa": "پیش از آن" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات زمانی",
+      "instruction": "کلمات آلمانی مربوط به این درس را پیدا کنید",
+      "targetWords": ["ehe", "bevor", "vorher", "zuvor", "Voraus", "Vorbereitung"],
+      "gridSize": { "rows": 10, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "ehe", "fa": "قبل از اینکه (رسمی)", "options": ["بعد از اینکه", "قبل از اینکه (رسمی)", "در حین", "هنگامی که"], "correctIndex": 1 },
+        { "de": "bevor", "fa": "قبل از اینکه", "options": ["قبل از اینکه", "بعد از اینکه", "در حالی که", "چون"], "correctIndex": 0 },
+        { "de": "die Vorbereitung", "fa": "آمادگی، آماده‌سازی", "options": ["نتیجه", "آمادگی، آماده‌سازی", "تصمیم", "اجرا"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس تمام شد!",
+      "message": "شما جملات زمانی پیشرفته با ehe و bevor را یاد گرفتید!",
+      "keyPoints": [
+        "ehe و bevor هر دو به معنی «قبل از اینکه» هستند",
+        "bevor در گفتار روزمره رایج‌تر است",
+        "ehe رسمی‌تر و ادبی‌تر است و بیشتر در نوشتار استفاده می‌شود",
+        "معمولاً هر دو جمله در یک زمان هستند",
+        "vorher = قبلاً، zuvor = پیش از آن، im Voraus = از پیش",
+        "die Vorbereitung = آمادگی، آماده‌سازی"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "ehe", "fa": "قبل از اینکه (رسمی)" } },
+        { "word": { "de": "bevor", "fa": "قبل از اینکه" } },
+        { "word": { "de": "vorher", "fa": "قبلاً، پیشتر" } },
+        { "word": { "de": "zuvor", "fa": "پیش از آن، قبلاً" } },
+        { "word": { "de": "im Voraus", "fa": "از پیش، پیشاپیش" } },
+        { "word": { "de": "die Vorbereitung", "fa": "آمادگی، آماده‌سازی" } }
+      ]
+    }
+  ]
+}

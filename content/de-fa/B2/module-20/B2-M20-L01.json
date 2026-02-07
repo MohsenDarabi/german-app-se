@@ -1,0 +1,569 @@
+{
+  "id": "B2-M20-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Komplexe Satzstrukturen: Alle Nebensätze", "fa": "ساختارهای پیچیده جمله: تمام جملات پیرو" },
+  "description": "در این درس پایانی B2، تمام انواع جملات پیرو (Nebensätze) را مرور می‌کنیم: زمانی، علّی، امتیازی، نتیجه‌ای، هدفی و شرطی. یاد می‌گیرید چگونه چند نوع جمله پیرو را در یک جمله ترکیب کنید و در نوشتار رسمی به کار ببرید.",
+  "level": "B2",
+  "module": 20,
+  "lessonNumber": 1,
+  "totalSteps": 45,
+  "estimatedMinutes": 50,
+  "vocabulary": [
+    { "de": "die Satzstruktur", "fa": "ساختار جمله", "grammar": { "pos": "noun", "gender": "feminine" } },
+    { "de": "komplex", "fa": "پیچیده", "grammar": { "pos": "adjective" } },
+    { "de": "verschachtelt", "fa": "تو در تو", "grammar": { "pos": "adjective" } },
+    { "de": "der Nebensatz", "fa": "جمله پیرو", "grammar": { "pos": "noun", "gender": "masculine" } },
+    { "de": "der Hauptsatz", "fa": "جمله اصلی", "grammar": { "pos": "noun", "gender": "masculine" } },
+    { "de": "verbinden", "fa": "متصل کردن", "grammar": { "pos": "verb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "مرور کامل: انواع جملات پیرو (Nebensätze)",
+      "content": "**Komplexe Satzstrukturen - Übersicht**\n\nدر سطح B2، شما با انواع مختلف **جملات پیرو (Nebensätze)** آشنا شده‌اید. جملات پیرو نمی‌توانند به تنهایی بایستند و به یک **جمله اصلی (Hauptsatz)** نیاز دارند.\n\n**انواع Nebensätze:**\n\n**1. زمانی (temporal):** als, wenn, während, nachdem, bevor, seit\n**2. علّی (kausal):** weil, da\n**3. امتیازی (konzessiv):** obwohl, obgleich\n**4. نتیجه‌ای (konsekutiv):** sodass, so ... dass\n**5. هدفی (final):** damit, um ... zu\n**6. شرطی (konditional):** wenn, falls, sofern\n\n**ویژگی مشترک:**\nدر همه Nebensätze، **فعل صرف‌شده در انتها** قرار می‌گیرد.\n\n**مثال:**\n> Ich lerne Deutsch, **weil** ich in Deutschland arbeiten **möchte**.\n> من آلمانی یاد می‌گیرم چون می‌خواهم در آلمان کار کنم.\n\n**نکته برای فارسی‌زبانان:**\nدر فارسی، ترتیب کلمات در جملات وابسته مثل جملات اصلی است، اما در آلمانی فعل به انتها می‌رود.",
+      "examples": [
+        { "de": "Ich bleibe zu Hause, weil es regnet.", "fa": "من خانه می‌مانم چون باران می‌بارد." },
+        { "de": "Obwohl es kalt ist, gehe ich spazieren.", "fa": "هرچند سرد است، قدم می‌زنم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "die Satzstruktur", "fa": "ساختار جمله" },
+      "example": { "text": { "de": "Die Satzstruktur im Deutschen ist manchmal komplex.", "fa": "ساختار جمله در آلمانی گاهی پیچیده است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Satzstruktur",
+      "translation": "ساختار جمله",
+      "syllables": ["Satz", "struk", "tur"],
+      "distractors": ["Sotz", "strak", "tor", "Sur"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "komplex", "fa": "پیچیده" },
+      "example": { "text": { "de": "Diese Aufgabe ist sehr komplex.", "fa": "این تکلیف بسیار پیچیده است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "komplex",
+      "translation": "پیچیده",
+      "syllables": ["kom", "plex"],
+      "distractors": ["kam", "plix", "plux", "kum"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "verschachtelt", "fa": "تو در تو" },
+      "example": { "text": { "de": "Der Satz ist zu verschachtelt und schwer zu verstehen.", "fa": "جمله خیلی تو در تو است و فهمیدنش سخت است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "verschachtelt",
+      "translation": "تو در تو",
+      "syllables": ["ver", "schach", "telt"],
+      "distractors": ["var", "schech", "talt", "fur"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "جملات پیرو زمانی (Temporale Nebensätze)",
+      "content": "**Temporale Nebensätze - جملات پیرو زمانی**\n\nاین جملات زمان وقوع یک عمل را مشخص می‌کنند.\n\n**حروف ربط رایج:**\n\n**1. als:** برای رویداد یک‌باره در گذشته\n> **Als** ich Kind **war**, spielte ich viel.\n> وقتی بچه بودم، زیاد بازی می‌کردم.\n\n**2. wenn:** برای رویدادهای تکراری یا آینده\n> **Wenn** ich Zeit **habe**, lese ich Bücher.\n> وقتی وقت دارم، کتاب می‌خوانم.\n\n**3. während:** همزمانی دو عمل\n> **Während** ich koche, **hört** mein Mann Musik.\n> در حالی که من آشپزی می‌کنم، شوهرم موسیقی گوش می‌دهد.\n\n**4. nachdem:** بعد از (با تفاوت زمانی)\n> **Nachdem** ich gegessen **hatte**, ging ich spazieren.\n> بعد از اینکه غذا خوردم، قدم زدم.\n\n**5. bevor:** قبل از\n> **Bevor** ich schlafe, **putze** ich meine Zähne.\n> قبل از خوابیدن، دندان‌هایم را مسواک می‌زنم.\n\n**نکته:** با nachdem باید تفاوت زمانی رعایت شود (Plusquamperfekt + Präteritum یا Perfekt + Präsens).",
+      "examples": [
+        { "de": "Als ich in Berlin war, besuchte ich viele Museen.", "fa": "وقتی در برلین بودم، از موزه‌های زیادی دیدن کردم." },
+        { "de": "Bevor du gehst, räum bitte auf.", "fa": "قبل از اینکه بروی، لطفاً مرتب کن." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "der Nebensatz", "fa": "جمله پیرو" },
+      "example": { "text": { "de": "In einem Nebensatz steht das Verb am Ende.", "fa": "در یک جمله پیرو، فعل در انتها قرار دارد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "Nebensatz",
+      "translation": "جمله پیرو",
+      "syllables": ["Ne", "ben", "satz"],
+      "distractors": ["Na", "ban", "sotz", "setz"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "der Hauptsatz", "fa": "جمله اصلی" },
+      "example": { "text": { "de": "Der Hauptsatz kann alleine stehen.", "fa": "جمله اصلی می‌تواند به تنهایی بایستد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "Hauptsatz",
+      "translation": "جمله اصلی",
+      "syllables": ["Haupt", "satz"],
+      "distractors": ["Hopt", "sotz", "Heupt", "setz"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "verbinden", "fa": "متصل کردن" },
+      "example": { "text": { "de": "Man kann zwei Sätze mit einer Konjunktion verbinden.", "fa": "می‌توان دو جمله را با یک حرف ربط متصل کرد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "verbinden",
+      "translation": "متصل کردن",
+      "syllables": ["ver", "bin", "den"],
+      "distractors": ["var", "ban", "dun", "fer"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "جملات پیرو علّی و امتیازی (Kausale & Konzessive Nebensätze)",
+      "content": "**جملات علّی (kausal) - دلیل و علت**\n\nاین جملات دلیل یک عمل را بیان می‌کنند.\n\n**weil:** چون، به این دلیل که\n> Ich lerne viel, **weil** ich die Prüfung bestehen **will**.\n> من زیاد درس می‌خوانم چون می‌خواهم در امتحان قبول شوم.\n\n**da:** چون (رسمی‌تر)\n> **Da** es spät **war**, ging ich nach Hause.\n> چون دیر شده بود، به خانه رفتم.\n\n**جملات امتیازی (konzessiv) - در برابر انتظار**\n\nاین جملات چیزی را بیان می‌کنند که در برابر انتظار است.\n\n**obwohl/obgleich:** هرچند، با وجود اینکه\n> **Obwohl** ich müde **bin**, arbeite ich weiter.\n> هرچند خسته هستم، به کار ادامه می‌دهم.\n\n**تفاوت مهم:**\n- **weil/da** → نتیجه منطقی\n- **obwohl** → نتیجه غیرمنتظره\n\n**مقایسه:**\n> **Weil** es regnet, bleibe ich zu Hause. (منطقی)\n> **Obwohl** es regnet, gehe ich raus. (غیرمنتظره)",
+      "examples": [
+        { "de": "Da ich krank war, konnte ich nicht kommen.", "fa": "چون مریض بودم، نتوانستم بیایم." },
+        { "de": "Obwohl es teuer ist, kaufe ich es.", "fa": "هرچند گران است، می‌خرمش." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام حرف ربط برای جملات علّی استفاده می‌شود؟",
+      "options": [
+        "obwohl",
+        "weil",
+        "damit",
+        "während"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! «weil» برای بیان دلیل و علت استفاده می‌شود.", "incorrect": "«weil» و «da» برای جملات علّی هستند که دلیل را بیان می‌کنند." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "جمله «Obwohl ich müde bin, arbeite ich weiter» چه نوع جمله‌ای است؟",
+      "options": [
+        "زمانی",
+        "علّی",
+        "امتیازی",
+        "شرطی"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "درست! «obwohl» یک حرف ربط امتیازی است که چیزی در برابر انتظار را بیان می‌کند.", "incorrect": "«obwohl» برای جملات امتیازی استفاده می‌شود - وقتی نتیجه در برابر انتظار باشد." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s10",
+      "title": "جملات پیرو نتیجه‌ای و هدفی (Konsekutive & Finale Nebensätze)",
+      "content": "**جملات نتیجه‌ای (konsekutiv) - نتیجه**\n\nاین جملات نتیجه یک عمل را بیان می‌کنند.\n\n**sodass / so ... dass:** به طوری که\n> Es regnete stark, **sodass** die Straßen überschwemmt **wurden**.\n> به شدت باران آمد، به طوری که خیابان‌ها آب گرفتند.\n\n> Er war **so** müde, **dass** er sofort **einschlief**.\n> او آنقدر خسته بود که فوراً خوابش برد.\n\n**جملات هدفی (final) - هدف و منظور**\n\nاین جملات هدف یک عمل را مشخص می‌کنند.\n\n**damit:** تا اینکه، به این منظور که\n> Ich lerne Deutsch, **damit** ich in Deutschland arbeiten **kann**.\n> من آلمانی یاد می‌گیرم تا بتوانم در آلمان کار کنم.\n\n**um ... zu:** برای اینکه (فاعل یکسان)\n> Ich gehe früh ins Bett, **um** ausgeruht **zu** sein.\n> زود به رختخواب می‌روم تا استراحت کرده باشم.\n\n**تفاوت مهم:**\n- **damit:** فاعل‌ها می‌توانند متفاوت باشند\n- **um ... zu:** فاعل باید یکسان باشد",
+      "examples": [
+        { "de": "Sie spricht laut, damit alle sie hören können.", "fa": "او بلند صحبت می‌کند تا همه بتوانند او را بشنوند." },
+        { "de": "Ich spare Geld, um ein Auto zu kaufen.", "fa": "من پول پس‌انداز می‌کنم تا ماشین بخرم." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "حرف ربط مناسب را انتخاب کنید",
+      "sentence": "Ich lerne viel, {0} ich die Prüfung bestehen kann.",
+      "options": ["damit", "obwohl", "während", "als"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "damit درست است. «damit» برای بیان هدف استفاده می‌شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Es war so kalt, {0} das Wasser gefror.",
+      "options": ["dass", "weil", "wenn", "bevor"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "dass درست است. ساختار «so ... dass» برای بیان نتیجه استفاده می‌شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "فعل مناسب را انتخاب کنید",
+      "sentence": "Obwohl er krank ist, {0} er zur Arbeit.",
+      "options": ["geht", "gehen", "gehe", "gegangen"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "geht درست است. بعد از جمله پیرو، در جمله اصلی فعل در جایگاه اول یا دوم می‌آید." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s11",
+      "title": "جملات پیرو شرطی (Konditionale Nebensätze)",
+      "content": "**جملات شرطی (konditional) - شرط**\n\nاین جملات شرطی را بیان می‌کنند که تحت آن شرط چیزی اتفاق می‌افتد.\n\n**wenn:** اگر (رایج‌ترین)\n> **Wenn** es regnet, **bleiben** wir zu Hause.\n> اگر باران ببارد، خانه می‌مانیم.\n\n**falls:** در صورتی که (رسمی‌تر)\n> **Falls** Sie Fragen **haben**, rufen Sie mich an.\n> در صورتی که سؤالی دارید، با من تماس بگیرید.\n\n**sofern:** تا جایی که (بسیار رسمی)\n> **Sofern** nichts dazwischen **kommt**, sehen wir uns morgen.\n> تا جایی که مانعی پیش نیاید، فردا همدیگر را می‌بینیم.\n\n**وارونگی (بدون wenn):**\nمی‌توان wenn را حذف کرد و فعل را در ابتدا آورد:\n> **Regnet** es, bleiben wir zu Hause.\n\n**انواع شرطی:**\n- **Realis:** شرایط واقعی (Präsens + Präsens/Futur)\n- **Irrealis:** شرایط غیرواقعی (Konjunktiv II)",
+      "examples": [
+        { "de": "Wenn du Zeit hast, können wir uns treffen.", "fa": "اگر وقت داری، می‌توانیم همدیگر را ببینیم." },
+        { "de": "Falls es schneit, fällt die Schule aus.", "fa": "در صورتی که برف بیاید، مدرسه تعطیل است." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را به ترتیب صحیح مرتب کنید",
+      "words": ["Ich", "bleibe", "Hause", "zu", "weil", "regnet", "es"],
+      "correctOrder": [0, 1, 3, 2, 4, 6, 5],
+      "correctSentence": { "de": "Ich bleibe zu Hause, weil es regnet.", "fa": "من خانه می‌مانم چون باران می‌بارد." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله شرطی را مرتب کنید",
+      "words": ["Wenn", "hast", "du", "Zeit", "treffen", "uns", "wir", "können"],
+      "correctOrder": [0, 2, 1, 3, 7, 6, 5, 4],
+      "correctSentence": { "de": "Wenn du Zeit hast, können wir uns treffen.", "fa": "اگر وقت داری، می‌توانیم همدیگر را ببینیم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله هدفی را بسازید",
+      "words": ["Ich", "Deutsch", "lerne", "in", "arbeiten", "kann", "ich", "damit", "Deutschland"],
+      "correctOrder": [0, 2, 1, 7, 6, 3, 8, 4, 5],
+      "correctSentence": { "de": "Ich lerne Deutsch, damit ich in Deutschland arbeiten kann.", "fa": "من آلمانی یاد می‌گیرم تا بتوانم در آلمان کار کنم." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s12",
+      "title": "ترکیب چند جمله پیرو (Verschachtelte Sätze)",
+      "content": "**جملات تو در تو - ترکیب چند Nebensatz**\n\nدر نوشتار رسمی و متون پیچیده، اغلب چند جمله پیرو در یک جمله ترکیب می‌شوند.\n\n**ساختار 1: دو Nebensatz پشت سر هم**\n> Ich weiß, **dass** er krank **ist**, **weil** er gestern gefehlt **hat**.\n> من می‌دانم که او مریض است چون دیروز غایب بود.\n\n**ساختار 2: Nebensatz داخل Nebensatz**\n> Ich hoffe, **dass** ich die Prüfung bestehe, **obwohl** ich wenig gelernt **habe**.\n> امیدوارم در امتحان قبول شوم، هرچند کم درس خوانده‌ام.\n\n**ساختار 3: سه Nebensatz**\n> Er sagte, **dass** er kommt, **wenn** er Zeit **hat**, **falls** das Wetter gut **ist**.\n> او گفت می‌آید اگر وقت داشته باشد، در صورتی که هوا خوب باشد.\n\n**نکته علائم نگارشی:**\n- بین Hauptsatz و Nebensatz: کاما (,)\n- بین دو Nebensatz هم‌سطح: کاما (,)\n- داخل Nebensatz: بدون کاما\n\n**نکته برای فارسی‌زبانان:**\nاین ساختارها در فارسی کمتر دیده می‌شوند و معمولاً جملات کوتاه‌تر ترجیح داده می‌شوند.",
+      "examples": [
+        { "de": "Ich glaube, dass er kommt, obwohl es regnet.", "fa": "فکر می‌کنم او می‌آید، هرچند باران می‌بارد." },
+        { "de": "Sie sagt, dass sie lernt, damit sie die Prüfung besteht.", "fa": "او می‌گوید که درس می‌خواند تا در امتحان قبول شود." }
+      ]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در همه جملات پیرو (Nebensätze)، فعل صرف‌شده در انتها قرار می‌گیرد.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! این ویژگی مشترک تمام جملات پیرو در آلمانی است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "«weil» و «obwohl» هر دو برای بیان دلیل استفاده می‌شوند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! «weil» برای دلیل و «obwohl» برای امتیاز (در برابر انتظار) استفاده می‌شود." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "می‌توان چند جمله پیرو را در یک جمله ترکیب کرد.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! در نوشتار رسمی، اغلب چند Nebensatz در یک جمله استفاده می‌شود." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "گفتگو در محل کار: گزارش پروژه",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Zwei Kollegen besprechen den Projektfortschritt.", "fa": "دو همکار پیشرفت پروژه را بررسی می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Frau Müller", "text": { "de": "Wir müssen das Projekt beschleunigen, damit wir die Deadline einhalten können.", "fa": "باید پروژه را سریع‌تر کنیم تا بتوانیم ضرب‌الاجل را رعایت کنیم." }, "mood": "neutral" },
+        { "speaker": "Herr Schmidt", "text": { "de": "Das wird schwierig, weil zwei Mitarbeiter krank sind.", "fa": "این سخت خواهد بود چون دو کارمند مریض هستند." }, "mood": "sad" },
+        { "speaker": "Frau Müller", "text": { "de": "Obwohl wir unterbesetzt sind, müssen wir es schaffen.", "fa": "هرچند کمبود نیرو داریم، باید موفق شویم." }, "mood": "neutral" },
+        { "speaker": "Herr Schmidt", "text": { "de": "Wenn wir Überstunden machen, können wir es vielleicht schaffen.", "fa": "اگر اضافه‌کاری کنیم، شاید بتوانیم موفق شویم." }, "mood": "neutral" },
+        { "speaker": "Frau Müller", "text": { "de": "Ich spreche mit dem Chef, damit er uns Unterstützung gibt.", "fa": "با رئیس صحبت می‌کنم تا به ما کمک کند." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "چرا پروژه را باید سریع‌تر کنند؟", "options": ["چون بودجه کم است", "تا ضرب‌الاجل را رعایت کنند", "چون رئیس خواسته"], "correctIndex": 1, "explanation": "خانم مولر گفت: damit wir die Deadline einhalten können." },
+        { "question": "مشکل اصلی چیست؟", "options": ["دو کارمند مریض هستند", "بودجه کافی نیست", "پروژه خیلی بزرگ است"], "correctIndex": 0, "explanation": "آقای اشمیت گفت: weil zwei Mitarbeiter krank sind." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "کدام ساختار برای بیان هدف با فاعل یکسان استفاده می‌شود؟",
+      "options": [
+        "damit",
+        "um ... zu",
+        "sodass",
+        "obwohl"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! «um ... zu» وقتی استفاده می‌شود که فاعل در هر دو جمله یکسان باشد.", "incorrect": "«um ... zu» برای هدف با فاعل یکسان و «damit» برای فاعل‌های متفاوت استفاده می‌شود." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc4",
+      "question": "«Nachdem ich gegessen hatte, ging ich spazieren» - تفاوت زمانی کدام است؟",
+      "options": [
+        "هر دو زمان حال",
+        "Nebensatz گذشته‌تر از Hauptsatz",
+        "Hauptsatz گذشته‌تر از Nebensatz",
+        "هیچ تفاوتی ندارند"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "درست! با «nachdem» باید جمله پیرو یک زمان گذشته‌تر باشد.", "incorrect": "با «nachdem» باید تفاوت زمانی باشد: Plusquamperfekt در Nebensatz، Präteritum در Hauptsatz." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "حرف ربط زمانی مناسب را انتخاب کنید",
+      "sentence": "{0} ich Kind war, spielte ich viel im Garten.",
+      "options": ["Als", "Wenn", "Während", "Bevor"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Als درست است. «als» برای رویداد یک‌باره در گذشته استفاده می‌شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "جمله نتیجه‌ای را کامل کنید",
+      "sentence": "Es regnete so stark, {0} die Straßen überschwemmt wurden.",
+      "options": ["dass", "weil", "damit", "obwohl"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "dass درست است. ساختار «so ... dass» برای بیان نتیجه استفاده می‌شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "حرف ربط شرطی را انتخاب کنید",
+      "sentence": "{0} Sie Fragen haben, können Sie mich anrufen.",
+      "options": ["Falls", "Obwohl", "Während", "Da"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Falls درست است. «falls» یک حرف ربط شرطی رسمی است." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "گفتگو در دانشگاه: برنامه‌ریزی سمینار",
+      "scene": {
+        "location": "university",
+        "description": { "de": "Zwei Studenten planen ein Seminar.", "fa": "دو دانشجو در حال برنامه‌ریزی سمینار هستند." }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Wir sollten früh anfangen, damit wir alles vorbereiten können.", "fa": "باید زود شروع کنیم تا بتوانیم همه چیز را آماده کنیم." }, "mood": "neutral" },
+        { "speaker": "David", "text": { "de": "Obwohl wir wenig Zeit haben, müssen wir es gründlich machen.", "fa": "هرچند وقت کمی داریم، باید کامل انجامش دهیم." }, "mood": "neutral" },
+        { "speaker": "Anna", "text": { "de": "Wenn wir die Aufgaben aufteilen, können wir schneller arbeiten.", "fa": "اگر کارها را تقسیم کنیم، می‌توانیم سریع‌تر کار کنیم." }, "mood": "happy" },
+        { "speaker": "David", "text": { "de": "Da ich an Präsentationen erfahren bin, kann ich das übernehmen.", "fa": "چون در ارائه‌ها تجربه دارم، می‌توانم آن را برعهده بگیرم." }, "mood": "neutral" },
+        { "speaker": "Anna", "text": { "de": "Perfekt! Während du die Präsentation machst, recherchiere ich die Inhalte.", "fa": "عالی! در حالی که تو ارائه را آماده می‌کنی، من محتوا را تحقیق می‌کنم." }, "mood": "excited" }
+      ],
+      "questions": [
+        { "question": "چرا باید زود شروع کنند؟", "options": ["چون کار زیاد است", "تا همه چیز را آماده کنند", "چون استاد گفته"], "correctIndex": 1, "explanation": "آنا گفت: damit wir alles vorbereiten können." },
+        { "question": "دیوید چه کاری را برعهده می‌گیرد؟", "options": ["تحقیق محتوا", "ارائه", "نوشتن گزارش"], "correctIndex": 1, "explanation": "دیوید گفت: kann ich das (die Präsentation) übernehmen." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "هر حرف ربط را با نوع جمله پیرو آن جفت کنید",
+      "items": [
+        { "id": "i1", "text": "weil / da" },
+        { "id": "i2", "text": "obwohl / obgleich" },
+        { "id": "i3", "text": "damit / um...zu" },
+        { "id": "i4", "text": "sodass / so...dass" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "kausal (علّی)" },
+        { "id": "m2", "text": "konzessiv (امتیازی)" },
+        { "id": "m3", "text": "final (هدفی)" },
+        { "id": "m4", "text": "konsekutiv (نتیجه‌ای)" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "من آلمانی یاد می‌گیرم تا بتوانم در آلمان کار کنم.",
+      "sentenceTemplate": "Ich lerne Deutsch, {0} ich in Deutschland arbeiten {1}.",
+      "options": ["damit", "weil", "kann", "könnte", "obwohl", "konnte"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Ich lerne Deutsch, damit ich in Deutschland arbeiten kann.", "fa": "من آلمانی یاد می‌گیرم تا بتوانم در آلمان کار کنم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "هرچند خسته است، به کار ادامه می‌دهد.",
+      "sentenceTemplate": "{0} er müde ist, {1} er weiter.",
+      "options": ["Obwohl", "Weil", "arbeitet", "arbeitete", "Wenn", "gearbeitet"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Obwohl er müde ist, arbeitet er weiter.", "fa": "هرچند خسته است، به کار ادامه می‌دهد." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: موفقیت در کار",
+      "passage": {
+        "de": "Sara hat große Erfolge in ihrem Beruf erzielt, obwohl sie aus einer kleinen Stadt kommt. Sie studierte hart, damit sie ihre Träume verwirklichen konnte. Während ihre Freunde feierten, lernte sie jeden Abend bis spät in die Nacht.\n\nNachdem sie ihr Studium abgeschlossen hatte, fand sie sofort eine gute Stelle. Da sie sehr motiviert war, wurde sie schnell befördert. Wenn jemand sie fragt, wie sie es geschafft hat, antwortet sie: \"Es war nicht leicht, aber ich gab nie auf.\"\n\nHeute hilft sie jungen Menschen, damit auch sie ihre Ziele erreichen können. Sie glaubt fest daran, dass jeder erfolgreich sein kann, sofern er hart arbeitet und an sich selbst glaubt.",
+        "fa": "سارا در شغلش موفقیت‌های بزرگی کسب کرده است، هرچند از یک شهر کوچک می‌آید. او سخت درس خواند تا بتواند رویاهایش را محقق کند. در حالی که دوستانش جشن می‌گرفتند، او هر شب تا دیروقت درس می‌خواند.\n\nبعد از اینکه تحصیلاتش را تمام کرد، فوراً شغل خوبی پیدا کرد. چون خیلی با انگیزه بود، به سرعت ارتقا یافت. وقتی کسی از او می‌پرسد چطور موفق شد، جواب می‌دهد: «آسان نبود، اما هرگز تسلیم نشدم.»\n\nامروز او به جوانان کمک می‌کند تا آنها هم بتوانند به اهدافشان برسند. او کاملاً معتقد است که همه می‌توانند موفق شوند، تا جایی که سخت کار کنند و به خودشان ایمان داشته باشند."
+      },
+      "questions": [
+        { "question": "چرا سارا سخت درس خواند؟", "options": ["چون استاد گفته بود", "تا رویاهایش را محقق کند", "چون پدر و مادرش می‌خواستند"], "correctIndex": 1, "explanation": "در متن گفته شده: damit sie ihre Träume verwirklichen konnte." },
+        { "question": "چه زمانی سارا درس می‌خواند؟", "options": ["صبح زود", "در حالی که دوستانش جشن می‌گرفتند", "آخر هفته‌ها"], "correctIndex": 1, "explanation": "در متن گفته شده: Während ihre Freunde feierten, lernte sie..." },
+        { "question": "چرا سارا به سرعت ارتقا یافت؟", "options": ["چون خوش‌شانس بود", "چون خیلی با انگیزه بود", "چون از شهر کوچک بود"], "correctIndex": 1, "explanation": "در متن گفته شده: Da sie sehr motiviert war, wurde sie schnell befördert." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die wichtige Entscheidung", "fa": "تصمیم مهم" },
+      "characters": ["Lisa", "Thomas"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Lisa muss eine wichtige Entscheidung treffen, obwohl sie unsicher ist.", "fa": "لیزا باید یک تصمیم مهم بگیرد، هرچند مطمئن نیست." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Ich weiß nicht, was ich tun soll, weil beide Angebote gut sind.", "fa": "نمی‌دانم چه کار کنم چون هر دو پیشنهاد خوب است." },
+          "mood": "confused"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Thomas",
+          "text": { "de": "Wenn du in München arbeitest, verdienst du mehr Geld.", "fa": "اگر در مونیخ کار کنی، پول بیشتری در می‌آوری." },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "چرا لیزا نمی‌داند چه کار کند؟",
+          "options": ["چون هیچ پیشنهادی ندارد", "چون هر دو پیشنهاد خوب است", "چون والدینش مخالف هستند"],
+          "correctIndex": 1,
+          "explanation": "لیزا گفت: weil beide Angebote gut sind."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Aber wenn ich nach München gehe, bin ich weit von meiner Familie entfernt.", "fa": "اما اگر به مونیخ بروم، از خانواده‌ام دور هستم." },
+          "mood": "sad"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Thomas",
+          "text": { "de": "Obwohl München weit ist, kannst du jedes Wochenende nach Hause fahren.", "fa": "هرچند مونیخ دور است، می‌توانی هر آخر هفته به خانه بروی." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Du hast recht. Ich nehme das Angebot an, damit ich beruflich weiterkomme.", "fa": "حق با توست. پیشنهاد را قبول می‌کنم تا از نظر شغلی پیشرفت کنم." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "لیزا در نهایت چه تصمیمی می‌گیرد؟",
+          "options": ["نزدیک خانواده می‌ماند", "پیشنهاد مونیخ را قبول می‌کند", "هیچ پیشنهادی را قبول نمی‌کند"],
+          "correctIndex": 1,
+          "explanation": "لیزا گفت: Ich nehme das Angebot an (مونیخ)."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: شناسایی انواع جملات پیرو",
+      "instruction": "نوع جمله پیرو را تشخیص دهید",
+      "questions": [
+        { "prompt": "weil = ?", "left": "علّی", "right": "امتیازی", "correctSide": "left" },
+        { "prompt": "obwohl = ?", "left": "علّی", "right": "امتیازی", "correctSide": "right" },
+        { "prompt": "damit = ?", "left": "هدفی", "right": "نتیجه‌ای", "correctSide": "left" },
+        { "prompt": "sodass = ?", "left": "هدفی", "right": "نتیجه‌ای", "correctSide": "right" },
+        { "prompt": "als = ?", "left": "زمانی", "right": "شرطی", "correctSide": "left" },
+        { "prompt": "falls = ?", "left": "زمانی", "right": "شرطی", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Ich bleibe zu Hause, weil es stark regnet.",
+      "translation": "من خانه می‌مانم چون به شدت باران می‌بارد."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Obwohl ich müde bin, arbeite ich weiter.",
+      "translation": "هرچند خسته هستم، به کار ادامه می‌دهم."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Ich lerne Deutsch, damit ich in Deutschland arbeiten kann.",
+      "translation": "من آلمانی یاد می‌گیرم تا بتوانم در آلمان کار کنم."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: جملات پیرو",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "weil بیان می‌کند؟", "options": ["دلیل", "نتیجه"], "correctAnswerIndex": 0 },
+        { "question": "obwohl یعنی؟", "options": ["هرچند", "چون"], "correctAnswerIndex": 0 },
+        { "question": "damit برای چیست؟", "options": ["هدف", "علت"], "correctAnswerIndex": 0 },
+        { "question": "فعل در Nebensatz کجاست؟", "options": ["انتها", "ابتدا"], "correctAnswerIndex": 0 },
+        { "question": "als برای چه زمانی؟", "options": ["یک‌بار گذشته", "همیشه"], "correctAnswerIndex": 0 },
+        { "question": "sodass بیان می‌کند؟", "options": ["نتیجه", "هدف"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: واژگان جملات پیچیده",
+      "pairs": [
+        { "de": "die Satzstruktur", "fa": "ساختار جمله" },
+        { "de": "komplex", "fa": "پیچیده" },
+        { "de": "verschachtelt", "fa": "تو در تو" },
+        { "de": "der Nebensatz", "fa": "جمله پیرو" },
+        { "de": "der Hauptsatz", "fa": "جمله اصلی" },
+        { "de": "verbinden", "fa": "متصل کردن" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات مربوط به جملات پیچیده",
+      "instruction": "کلمات آلمانی مربوط به این درس را پیدا کنید",
+      "targetWords": ["Satzstruktur", "komplex", "verschachtelt", "Nebensatz", "Hauptsatz", "verbinden"],
+      "gridSize": { "rows": 10, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "die Satzstruktur", "fa": "ساختار جمله", "options": ["نوع جمله", "ساختار جمله", "طول جمله", "موضوع جمله"], "correctIndex": 1 },
+        { "de": "komplex", "fa": "پیچیده", "options": ["ساده", "پیچیده", "کوتاه", "بلند"], "correctIndex": 1 },
+        { "de": "verschachtelt", "fa": "تو در تو", "options": ["مستقیم", "تو در تو", "ساده", "کوتاه"], "correctIndex": 1 },
+        { "de": "verbinden", "fa": "متصل کردن", "options": ["جدا کردن", "متصل کردن", "شکستن", "بستن"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! درس پایانی B2 تمام شد!",
+      "message": "تبریک! شما تمام انواع جملات پیرو و ساختارهای پیچیده آلمانی را یاد گرفتید!",
+      "keyPoints": [
+        "انواع Nebensätze: زمانی، علّی، امتیازی، نتیجه‌ای، هدفی، شرطی",
+        "در همه Nebensätze فعل در انتها قرار می‌گیرد",
+        "weil/da: دلیل | obwohl: امتیاز | damit: هدف | sodass: نتیجه",
+        "als: یک‌بار گذشته | wenn: تکراری/آینده | während: همزمان",
+        "می‌توان چند Nebensatz را در یک جمله ترکیب کرد",
+        "بین Hauptsatz و Nebensatz کاما (,) قرار می‌گیرد",
+        "die Satzstruktur = ساختار جمله، verschachtelt = تو در تو"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "die Satzstruktur", "fa": "ساختار جمله" } },
+        { "word": { "de": "komplex", "fa": "پیچیده" } },
+        { "word": { "de": "verschachtelt", "fa": "تو در تو" } },
+        { "word": { "de": "der Nebensatz", "fa": "جمله پیرو" } },
+        { "word": { "de": "der Hauptsatz", "fa": "جمله اصلی" } },
+        { "word": { "de": "verbinden", "fa": "متصل کردن" } }
+      ]
+    }
+  ]
+}

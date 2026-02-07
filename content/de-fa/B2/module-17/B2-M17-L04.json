@@ -1,0 +1,574 @@
+{
+  "id": "B2-M17-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Adversativsätze: Zusammenfassung", "fa": "جملات تقابلی: جمع‌بندی" },
+  "description": "مرور جامع تمام ساختارهای تقابلی در آلمانی: während/wohingegen برای تضاد و مقایسه، anstatt dass/anstatt zu برای بیان «به جای اینکه»، و ohne dass/ohne zu برای «بدون اینکه». تمرکز بر تفاوت بین ساختار با جمله فرعی (dass) و مصدر (zu)، انتخاب صحیح ساختار بر اساس فاعل یکسان یا متفاوت، و کاربرد در جملات پیچیده.",
+  "level": "B2",
+  "module": 17,
+  "lessonNumber": 4,
+  "totalSteps": 45,
+  "estimatedMinutes": 45,
+  "vocabulary": [
+    { "de": "während", "fa": "در حالی که، در حین", "grammar": { "pos": "conjunction" } },
+    { "de": "wohingegen", "fa": "حال آنکه، در مقابل", "grammar": { "pos": "conjunction" } },
+    { "de": "anstatt", "fa": "به جای", "grammar": { "pos": "preposition" } },
+    { "de": "stattdessen", "fa": "به جای آن", "grammar": { "pos": "adverb" } },
+    { "de": "ohne", "fa": "بدون", "grammar": { "pos": "preposition" } },
+    { "de": "hingegen", "fa": "در مقابل، برعکس", "grammar": { "pos": "adverb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "مرور کلی: جملات تقابلی (Adversativsätze)",
+      "content": "**Adversativsätze = جملات تقابلی**\n\nدر این ماژول سه نوع اصلی جملات تقابلی یاد گرفتیم:\n\n**1. تضاد و مقایسه:**\n- **während** = در حالی که (تضاد زمانی یا منطقی)\n- **wohingegen** = حال آنکه (تأکید بر تضاد قوی‌تر)\n- **hingegen** = در مقابل (قید، جایگزین جمله فرعی)\n\n**2. «به جای اینکه» (Substitution):**\n- **anstatt dass** + فعل آخر (فاعل‌های متفاوت)\n- **anstatt zu** + مصدر (فاعل یکسان)\n- **stattdessen** = به جای آن (قید)\n\n**3. «بدون اینکه» (Negation):**\n- **ohne dass** + فعل آخر (فاعل‌های متفاوت)\n- **ohne zu** + مصدر (فاعل یکسان)\n\n**قاعده کلیدی برای فارسی‌زبانان:**\nاگر فاعل جمله اصلی و جمله فرعی یکسان باشد → استفاده از **zu** + مصدر\nاگر فاعل‌ها متفاوت باشند → استفاده از **dass** + فعل صرف‌شده",
+      "examples": [
+        { "de": "Während ich lerne, sieht er fern. (تضاد)", "fa": "در حالی که من درس می‌خوانم، او تلویزیون می‌بیند." },
+        { "de": "Anstatt zu lernen, spielt er. (یک فاعل)", "fa": "به جای اینکه درس بخواند، بازی می‌کند." },
+        { "de": "Ohne dass ich es wusste, kam er. (دو فاعل)", "fa": "بدون اینکه من بدانم، آمد." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "während", "fa": "در حالی که، در حین" },
+      "example": { "text": { "de": "Während ich arbeite, hört sie Musik.", "fa": "در حالی که من کار می‌کنم، او موسیقی گوش می‌دهد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "während",
+      "translation": "در حالی که",
+      "syllables": ["wäh", "rend"],
+      "distractors": ["weh", "rand", "wuh", "rent"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "wohingegen", "fa": "حال آنکه، در مقابل" },
+      "example": { "text": { "de": "Er ist sehr fleißig, wohingegen sein Bruder faul ist.", "fa": "او خیلی سخت‌کوش است، حال آنکه برادرش تنبل است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "wohingegen",
+      "translation": "حال آنکه",
+      "syllables": ["wo", "hin", "ge", "gen"],
+      "distractors": ["wu", "han", "ga", "gun"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "anstatt", "fa": "به جای" },
+      "example": { "text": { "de": "Anstatt zu schlafen, arbeitet er die ganze Nacht.", "fa": "به جای اینکه بخوابد، تمام شب کار می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "anstatt",
+      "translation": "به جای",
+      "syllables": ["an", "statt"],
+      "distractors": ["on", "stott", "in", "stutt"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "während و wohingegen: تفاوت در تضاد",
+      "content": "**تفاوت بین während و wohingegen:**\n\n**1. während = در حالی که**\n- تضاد زمانی یا منطقی خنثی\n- می‌تواند همزمانی زمانی نیز نشان دهد\n- رایج‌تر و طبیعی‌تر\n\n```\nWährend ich lerne, spielt er.\n= در حالی که من درس می‌خوانم، او بازی می‌کند.\n```\n\n**2. wohingegen = حال آنکه**\n- تأکید قوی‌تر بر تضاد\n- فقط برای تقابل (نه همزمانی)\n- رسمی‌تر و ادبی‌تر\n\n```\nIch arbeite hart, wohingegen er nichts tut.\n= من سخت کار می‌کنم، حال آنکه او کاری نمی‌کند.\n```\n\n**3. hingegen = در مقابل (قید)**\n- جایگزین ساده‌تر\n- در وسط جمله دوم\n- محاوره‌ای‌تر\n\n```\nIch lerne. Er hingegen spielt.\n= من درس می‌خوانم. او در مقابل بازی می‌کند.\n```\n\n**جدول مقایسه:**\n\n| ساختار | تأکید تضاد | رسمیت | کاربرد |\n|--------|------------|-------|--------|\n| während | متوسط | خنثی | همه‌جا |\n| wohingegen | قوی | رسمی | نوشتاری |\n| hingegen | متوسط | خنثی | محاوره‌ای |",
+      "examples": [
+        { "de": "Während sie reich ist, lebt er bescheiden. (تضاد خنثی)", "fa": "در حالی که او ثروتمند است، او ساده زندگی می‌کند." },
+        { "de": "Sie ist sehr großzügig, wohingegen er geizig ist. (تضاد قوی)", "fa": "او خیلی بخشنده است، حال آنکه او خسیس است." },
+        { "de": "Ich mag Kaffee. Sie hingegen trinkt nur Tee. (قید)", "fa": "من قهوه دوست دارم. او در مقابل فقط چای می‌نوشد." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام عبارت برای تأکید قوی‌تر بر تضاد مناسب‌تر است؟",
+      "options": [
+        "während",
+        "wohingegen",
+        "aber",
+        "und"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! wohingegen تأکید قوی‌تر بر تضاد دارد و رسمی‌تر است.", "incorrect": "wohingegen = حال آنکه، برای تأکید قوی‌تر بر تضاد استفاده می‌شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "عبارت مناسب را انتخاب کنید (تضاد)",
+      "sentence": "{0} ich früh aufstehe, schläft er bis Mittag.",
+      "options": ["Während", "Weil", "Obwohl", "Damit"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Während = در حالی که. این حرف ربط برای نشان دادن تضاد استفاده می‌شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "عبارت مناسب را انتخاب کنید (تضاد قوی)",
+      "sentence": "Er arbeitet viel, {0} sein Kollege wenig leistet.",
+      "options": ["während", "wohingegen", "weil", "damit"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Wohingegen = حال آنکه. این عبارت تضاد قوی‌تری نسبت به während ایجاد می‌کند." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "stattdessen", "fa": "به جای آن" },
+      "example": { "text": { "de": "Ich wollte Tee trinken. Stattdessen trank ich Kaffee.", "fa": "می‌خواستم چای بنوشم. به جای آن قهوه نوشیدم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "stattdessen",
+      "translation": "به جای آن",
+      "syllables": ["statt", "des", "sen"],
+      "distractors": ["stott", "das", "sun", "doss"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "hingegen", "fa": "در مقابل، برعکس" },
+      "example": { "text": { "de": "Ich mag Sport. Sie hingegen bevorzugt Lesen.", "fa": "من ورزش دوست دارم. او در مقابل خواندن را ترجیح می‌دهد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "hingegen",
+      "translation": "در مقابل",
+      "syllables": ["hin", "ge", "gen"],
+      "distractors": ["han", "ga", "gun", "hun"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s8",
+      "title": "anstatt dass و anstatt zu: قاعده فاعل",
+      "content": "**انتخاب صحیح: dass یا zu؟**\n\n**قاعده طلایی:**\n- **فاعل یکسان** → anstatt **zu** + مصدر\n- **فاعل متفاوت** → anstatt **dass** + جمله (فعل آخر)\n\n**1. anstatt zu (یک فاعل):**\n```\nAnstatt zu lernen, spielt er.\n= به جای اینکه درس بخواند، بازی می‌کند.\nفاعل هر دو: او\n```\n\n**2. anstatt dass (دو فاعل):**\n```\nAnstatt dass er hilft, beschwert er sich.\n= به جای اینکه کمک کند، شکایت می‌کند.\nفاعل جمله اصلی: او (beschwert)\nفاعل جمله فرعی: او (hilft) - ولی ساختار رسمی\n```\n\n**3. stattdessen (قید):**\n```\nIch wollte Tee. Stattdessen trank ich Kaffee.\n= می‌خواستم چای. به جای آن قهوه نوشیدم.\nجمله مستقل، بدون ارتباط دستوری\n```\n\n**نکته مهم برای فارسی‌زبانان:**\nدر فارسی می‌گوییم: «به جای اینکه درس بخوانم، بازی کردم»\nدر آلمانی:\n✓ Anstatt **zu lernen**, spielte ich.\n✗ Anstatt dass ich **lerne**, spielte ich.",
+      "examples": [
+        { "de": "Anstatt zu helfen, sitzt er nur herum. (یک فاعل)", "fa": "به جای اینکه کمک کند، فقط نشسته است." },
+        { "de": "Anstatt dass du mir hilfst, machst du alles schlimmer. (دو فاعل)", "fa": "به جای اینکه کمک کنی، همه چیز را بدتر می‌کنی." },
+        { "de": "Ich wollte kommen. Stattdessen rief ich an. (قید)", "fa": "می‌خواستم بیایم. به جای آن زنگ زدم." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله از نظر دستوری صحیح است؟",
+      "options": [
+        "Anstatt zu dass lernen, spielt er.",
+        "Anstatt zu lernen, spielt er.",
+        "Anstatt lernen zu, spielt er.",
+        "Anstatt dass zu lernen, spielt er."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "درست! با یک فاعل از zu + مصدر استفاده می‌کنیم.", "incorrect": "با فاعل یکسان: anstatt zu + مصدر (anstatt zu lernen)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "ساختار مناسب را انتخاب کنید (یک فاعل)",
+      "sentence": "Anstatt {0} helfen, kritisiert er nur.",
+      "options": ["zu", "dass", "um", "für"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "فاعل یکسان (er) → anstatt zu helfen. به جای اینکه کمک کند، فقط انتقاد می‌کند." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "ساختار مناسب را انتخاب کنید (دو فاعل)",
+      "sentence": "Anstatt {0} du kommst, rufst du nur an.",
+      "options": ["zu", "dass", "um", "ohne"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "فاعل متفاوت (du/du ولی ساختار رسمی) → anstatt dass. به جای اینکه بیایی، فقط زنگ می‌زنی." }
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "ohne", "fa": "بدون" },
+      "example": { "text": { "de": "Er verließ das Haus, ohne ein Wort zu sagen.", "fa": "او بدون اینکه حرفی بزند، خانه را ترک کرد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "ohne",
+      "translation": "بدون",
+      "syllables": ["oh", "ne"],
+      "distractors": ["ah", "na", "uh", "nu"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s10",
+      "title": "ohne dass و ohne zu: قاعده فاعل",
+      "content": "**انتخاب صحیح: dass یا zu؟**\n\n**قاعده طلایی (مشابه anstatt):**\n- **فاعل یکسان** → ohne **zu** + مصدر\n- **فاعل متفاوت** → ohne **dass** + جمله (فعل آخر)\n\n**1. ohne zu (یک فاعل):**\n```\nEr ging, ohne zu grüßen.\n= او رفت، بدون اینکه سلام کند.\nفاعل هر دو: او\n```\n\n**2. ohne dass (دو فاعل):**\n```\nEr ging, ohne dass ich es wusste.\n= او رفت، بدون اینکه من بدانم.\nفاعل اصلی: او\nفاعل فرعی: من\n```\n\n**ترتیب کلمات:**\n\n**mit ohne zu:**\n```\nohne + zu + مصدر (+ مفعول)\nohne zu kommen\nohne ein Wort zu sagen\n```\n\n**mit ohne dass:**\n```\nohne dass + فاعل + ... + فعل صرف‌شده\nohne dass ich es wusste\nohne dass er mich sieht\n```\n\n**نکته مهم:**\nدر فارسی: «بدون اینکه بدانم» = ohne dass ich wusste (دو فاعل)\nدر فارسی: «بدون اینکه بدانم» (خودم) = ohne zu wissen (یک فاعل)",
+      "examples": [
+        { "de": "Sie verließ das Zimmer, ohne zu antworten. (یک فاعل)", "fa": "او بدون اینکه جواب دهد، اتاق را ترک کرد." },
+        { "de": "Er kam, ohne dass ich ihn eingeladen hatte. (دو فاعل)", "fa": "او آمد، بدون اینکه من دعوتش کرده باشم." },
+        { "de": "Sie half mir, ohne dass ich darum gebeten hatte. (دو فاعل)", "fa": "او به من کمک کرد، بدون اینکه من خواسته باشم." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "کدام جمله از نظر دستوری صحیح است؟",
+      "options": [
+        "Er kam, ohne dass zu sagen.",
+        "Er kam, ohne zu dass sagen.",
+        "Er kam, ohne etwas zu sagen.",
+        "Er kam, ohne dass etwas zu sagen."
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "درست! با یک فاعل از ohne zu استفاده می‌کنیم.", "incorrect": "با فاعل یکسان: ohne zu + مصدر (ohne etwas zu sagen)" }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "ساختار مناسب را انتخاب کنید (یک فاعل)",
+      "sentence": "Sie ging weg, ohne {0} grüßen.",
+      "options": ["zu", "dass", "um", "für"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "فاعل یکسان (sie) → ohne zu grüßen. او بدون اینکه سلام کند، رفت." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "ساختار مناسب را انتخاب کنید (دو فاعل)",
+      "sentence": "Er kam herein, ohne {0} ich ihn sah.",
+      "options": ["zu", "dass", "um", "weil"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "فاعل متفاوت (er/ich) → ohne dass ich ihn sah. او آمد داخل، بدون اینکه من ببینمش." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "در محل کار",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Büro, Diskussion über Arbeitsweise", "fa": "در اداره، بحث درباره شیوه کار" }
+      },
+      "lines": [
+        { "speaker": "Chef", "text": { "de": "Während Sie gut arbeiten, macht Ihr Kollege ständig Fehler.", "fa": "در حالی که شما خوب کار می‌کنید، همکارتان مدام اشتباه می‌کند." }, "mood": "neutral" },
+        { "speaker": "Lisa", "text": { "de": "Ich versuche, ihm zu helfen, wohingegen er nie um Rat fragt.", "fa": "من سعی می‌کنم کمکش کنم، حال آنکه او هرگز مشورت نمی‌کند." }, "mood": "confused" },
+        { "speaker": "Chef", "text": { "de": "Anstatt zu lernen, verbringt er seine Zeit mit privaten Anrufen.", "fa": "به جای اینکه یاد بگیرد، وقتش را با تماس‌های شخصی می‌گذراند." }, "mood": "sad" },
+        { "speaker": "Lisa", "text": { "de": "Er verlässt oft das Büro, ohne dass jemand weiß, wohin er geht.", "fa": "او اغلب اداره را ترک می‌کند، بدون اینکه کسی بداند کجا می‌رود." }, "mood": "neutral" },
+        { "speaker": "Chef", "text": { "de": "Das muss sich ändern. Anstatt dass ich ihm alles erkläre, soll er selbst Initiative zeigen.", "fa": "این باید تغییر کند. به جای اینکه من همه چیز را توضیح دهم، باید خودش ابتکار عمل نشان دهد." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "رئیس با «Während» چه تضادی بیان می‌کند؟", "options": ["بین کار خوب لیزا و اشتباهات همکارش", "بین وقت کاری و استراحت", "بین دو پروژه"], "correctIndex": 0, "explanation": "Während Sie gut arbeiten, macht Ihr Kollege ständig Fehler = تضاد بین عملکرد لیزا و همکارش." },
+        { "question": "لیزا با «wohingegen» چه می‌گوید؟", "options": ["تضاد قوی: او کمک می‌کند، ولی همکار مشورت نمی‌کند", "علت کمک کردن", "نتیجه کمک"], "correctIndex": 0, "explanation": "wohingegen = حال آنکه، تأکید بر تضاد قوی بین تلاش لیزا و بی‌اعتنایی همکار." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را مرتب کنید (während)",
+      "words": ["sieht er fern", "Während ich", "arbeite,"],
+      "correctOrder": [1, 2, 0],
+      "correctSentence": { "de": "Während ich arbeite, sieht er fern.", "fa": "در حالی که من کار می‌کنم، او تلویزیون می‌بیند." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را مرتب کنید (anstatt zu)",
+      "words": ["spielt er", "Anstatt zu", "lernen,"],
+      "correctOrder": [1, 2, 0],
+      "correctSentence": { "de": "Anstatt zu lernen, spielt er.", "fa": "به جای اینکه درس بخواند، بازی می‌کند." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله را مرتب کنید (ohne zu)",
+      "words": ["zu grüßen", "Er ging,", "ohne"],
+      "correctOrder": [1, 2, 0],
+      "correctSentence": { "de": "Er ging, ohne zu grüßen.", "fa": "او بدون اینکه سلام کند، رفت." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "با فاعل یکسان از zu + مصدر استفاده می‌کنیم (anstatt zu، ohne zu).",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! فاعل یکسان → zu + مصدر. فاعل متفاوت → dass + جمله." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "wohingegen و während هیچ تفاوتی ندارند و می‌توان آن‌ها را جایگزین کرد.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! wohingegen تأکید قوی‌تر بر تضاد دارد و رسمی‌تر است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جمله «Er kam, ohne dass ich es wusste»، دو فاعل متفاوت وجود دارد (er و ich).",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! فاعل متفاوت (er/ich) → ohne dass استفاده می‌شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f7",
+      "instruction": "ساختار مناسب را انتخاب کنید",
+      "sentence": "{0} er fleißig ist, ist sein Bruder faul.",
+      "options": ["Während", "Weil", "Damit", "Obwohl"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Während = در حالی که. این حرف ربط تضاد بین دو برادر را نشان می‌دهد." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f8",
+      "instruction": "ساختار مناسب را انتخاب کنید",
+      "sentence": "Sie ist sehr höflich, {0} ihre Schwester unhöflich ist.",
+      "options": ["während", "wohingegen", "weil", "damit"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Wohingegen = حال آنکه. تأکید قوی بر تضاد بین دو خواهر." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "برنامه‌ریزی تعطیلات",
+      "scene": {
+        "location": "home",
+        "description": { "de": "Zu Hause, Planung eines Ausflugs", "fa": "در خانه، برنامه‌ریزی یک گردش" }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Während ich gerne wandere, bevorzugst du das Schwimmen.", "fa": "در حالی که من دوست دارم پیاده‌روی کنم، تو شنا را ترجیح می‌دهی." }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Stimmt! Anstatt in die Berge zu fahren, könnten wir ans Meer gehen.", "fa": "درسته! به جای اینکه به کوه برویم، می‌توانیم به دریا برویم." }, "mood": "excited" },
+        { "speaker": "Anna", "text": { "de": "Aber wir waren letztes Jahr am Meer. Stattdessen sollten wir etwas Neues versuchen.", "fa": "ولی سال گذشته کنار دریا بودیم. به جای آن باید چیز جدیدی را امتحان کنیم." }, "mood": "confused" },
+        { "speaker": "Tom", "text": { "de": "Okay! Anstatt dass wir uns streiten, lass uns einen Kompromiss finden.", "fa": "باشه! به جای اینکه بحث کنیم، بیا یک راه میانه پیدا کنیم." }, "mood": "happy" },
+        { "speaker": "Anna", "text": { "de": "Gute Idee! Wir könnten wandern gehen, ohne dass wir weit fahren müssen.", "fa": "ایده خوبی! می‌توانیم پیاده‌روی برویم، بدون اینکه مجبور باشیم راه دور برویم." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "آنا با «Während» چه تضادی بیان می‌کند؟", "options": ["بین علاقه خودش و تام به فعالیت‌های مختلف", "بین دو فصل", "بین دو شهر"], "correctIndex": 0, "explanation": "Während ich gerne wandere, bevorzugst du das Schwimmen = تضاد بین علایق مختلف." },
+        { "question": "تام با «Anstatt zu» چه پیشنهادی می‌دهد؟", "options": ["رفتن به کوه", "به جای کوه، رفتن به دریا", "رفتن به شهر"], "correctIndex": 1, "explanation": "Anstatt in die Berge zu fahren, könnten wir ans Meer gehen = پیشنهاد جایگزین." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "ساختار را با کاربرد و معنی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "während" },
+        { "id": "i2", "text": "wohingegen" },
+        { "id": "i3", "text": "anstatt zu" },
+        { "id": "i4", "text": "anstatt dass" },
+        { "id": "i5", "text": "ohne zu" },
+        { "id": "i6", "text": "ohne dass" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "تضاد (در حالی که)" },
+        { "id": "m2", "text": "تضاد قوی (حال آنکه)" },
+        { "id": "m3", "text": "به جای (یک فاعل)" },
+        { "id": "m4", "text": "به جای (دو فاعل)" },
+        { "id": "m5", "text": "بدون (یک فاعل)" },
+        { "id": "m6", "text": "بدون (دو فاعل)" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "در حالی که او می‌خواند، من می‌نویسم.",
+      "sentenceTemplate": "{0} sie liest, {1} ich.",
+      "options": ["Während", "Weil", "schreibe", "schreibt", "Obwohl", "lese"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Während sie liest, schreibe ich.", "fa": "در حالی که او می‌خواند، من می‌نویسم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "به جای اینکه کمک کند، انتقاد می‌کند.",
+      "sentenceTemplate": "Anstatt {0} helfen, {1} er.",
+      "options": ["zu", "dass", "kritisiert", "kritisieren", "ohne", "hilft"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Anstatt zu helfen, kritisiert er.", "fa": "به جای اینکه کمک کند، انتقاد می‌کند." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: دو برادر",
+      "passage": {
+        "de": "Max und Paul sind Brüder, aber sie sind sehr unterschiedlich.\n\nWährend Max früh aufsteht, schläft Paul bis Mittag. Max ist sehr sportlich, wohingegen Paul lieber liest.\n\nAnstatt Sport zu treiben, verbringt Paul seine Zeit in der Bibliothek. Max hingegen geht jeden Tag joggen, ohne dass das Wetter ihn stört.\n\nPaul arbeitet oft bis spät in die Nacht, ohne zu essen oder zu trinken. Anstatt dass er sich um seine Gesundheit kümmert, denkt er nur an seine Bücher.\n\nStattdessen könnte er wie Max leben: Sport treiben, früh schlafen, gesund essen. Aber Paul ist glücklich mit seinem Leben, während Max sein sportliches Leben liebt.",
+        "fa": "ماکس و پل برادر هستند، ولی خیلی متفاوت هستند.\n\nدر حالی که ماکس زود بیدار می‌شود، پل تا ظهر می‌خوابد. ماکس خیلی ورزشکار است، حال آنکه پل ترجیح می‌دهد کتاب بخواند.\n\nبه جای اینکه ورزش کند، پل وقتش را در کتابخانه می‌گذراند. ماکس در مقابل هر روز دویدن می‌رود، بدون اینکه آب و هوا او را اذیت کند.\n\nپل اغلب تا دیروقت شب کار می‌کند، بدون اینکه غذا بخورد یا بنوشد. به جای اینکه به سلامتیش اهمیت دهد، فقط به کتاب‌هایش فکر می‌کند.\n\nبه جای آن می‌توانست مثل ماکس زندگی کند: ورزش کند، زود بخوابد، سالم غذا بخورد. ولی پل با زندگیش خوشحال است، در حالی که ماکس زندگی ورزشی‌اش را دوست دارد."
+      },
+      "questions": [
+        { "question": "تضاد اصلی بین ماکس و پل چیست؟", "options": ["ماکس ورزشکار است، پل کتابخوان", "هر دو ورزشکار هستند", "هر دو کتابخوان هستند"], "correctIndex": 0, "explanation": "Max ist sehr sportlich, wohingegen Paul lieber liest = تضاد اصلی." },
+        { "question": "چرا در «Anstatt Sport zu treiben» از zu استفاده شده؟", "options": ["چون دو فاعل است", "چون یک فاعل است (Paul)", "چون رسمی‌تر است"], "correctIndex": 1, "explanation": "فاعل یکسان (Paul) → anstatt zu treiben. به جای اینکه ورزش کند..." },
+        { "question": "ماکس با «ohne dass» چگونه دویدن می‌کند؟", "options": ["فقط در هوای خوب", "بدون اینکه آب و هوا او را اذیت کند", "با دوستانش"], "correctIndex": 1, "explanation": "ohne dass das Wetter ihn stört = بدون اینکه آب و هوا مانع شود." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der neue Mitarbeiter", "fa": "همکار جدید" },
+      "characters": ["Lisa", "Der neue Kollege"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Lisa arbeitet seit Jahren in der Firma. Heute kommt ein neuer Kollege.", "fa": "لیزا سال‌هاست در شرکت کار می‌کند. امروز همکار جدیدی می‌آید." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Während ich immer pünktlich bin, kommt der Neue oft zu spät.", "fa": "در حالی که من همیشه سر وقتم، آن همکار جدید اغلب دیر می‌آید." },
+          "mood": "confused"
+        },
+        {
+          "type": "question",
+          "question": "لیزا با «Während» چه تضادی بیان می‌کند؟",
+          "options": ["بین سر وقت بودن خودش و دیر آمدن همکار", "بین دو پروژه", "بین دو دپارتمان"],
+          "correctIndex": 0,
+          "explanation": "Während ich immer pünktlich bin, kommt der Neue oft zu spät = تضاد در رفتار کاری."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Anstatt zu arbeiten, telefoniert er ständig mit Freunden.", "fa": "به جای اینکه کار کند، مدام با دوستانش تلفن می‌کند." },
+          "mood": "sad"
+        },
+        {
+          "type": "question",
+          "question": "چرا از «Anstatt zu» استفاده شده؟",
+          "options": ["چون دو فاعل متفاوت دارد", "چون یک فاعل دارد (er)", "چون رسمی‌تر است"],
+          "correctIndex": 1,
+          "explanation": "فاعل یکسان (er) → anstatt zu arbeiten. به جای اینکه کار کند..."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Er macht Fehler, ohne dass er sie bemerkt.", "fa": "او اشتباه می‌کند، بدون اینکه متوجه شود." },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "چرا از «ohne dass» استفاده شده؟",
+          "options": ["چون یک فاعل است", "چون دو فاعل متفاوت است (er/er ولی منظور متفاوت)", "چون کوتاه‌تر است"],
+          "correctIndex": 1,
+          "explanation": "ohne dass er sie bemerkt = بدون اینکه (خودش) متوجه شود. ساختار رسمی برای تأکید."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Lisa",
+          "text": { "de": "Ich bin fleißig, wohingegen er faul ist. Das ist frustrierend!", "fa": "من سخت‌کوشم، حال آنکه او تنبل است. این آزاردهنده است!" },
+          "mood": "sad"
+        },
+        {
+          "type": "question",
+          "question": "چرا لیزا از «wohingegen» استفاده کرده؟",
+          "options": ["برای تضاد ساده", "برای تأکید قوی بر تضاد", "برای بیان زمان"],
+          "correctIndex": 1,
+          "explanation": "wohingegen = حال آنکه، برای تأکید قوی‌تر بر تضاد استفاده می‌شود."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: جملات تقابلی",
+      "instruction": "ساختار درست را انتخاب کنید!",
+      "questions": [
+        { "prompt": "فاعل یکسان → ؟", "left": "zu + مصدر", "right": "dass + جمله", "correctSide": "left" },
+        { "prompt": "فاعل متفاوت → ؟", "left": "zu + مصدر", "right": "dass + جمله", "correctSide": "right" },
+        { "prompt": "تضاد قوی‌تر؟", "left": "während", "right": "wohingegen", "correctSide": "right" },
+        { "prompt": "به جای (یک فاعل)?", "left": "anstatt zu", "right": "anstatt dass", "correctSide": "left" },
+        { "prompt": "بدون (دو فاعل)?", "left": "ohne zu", "right": "ohne dass", "correctSide": "right" },
+        { "prompt": "قید = به جای آن؟", "left": "stattdessen", "right": "hingegen", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Während ich lerne, hört sie Musik.",
+      "translation": "در حالی که من درس می‌خوانم، او موسیقی گوش می‌دهد."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Anstatt zu helfen, kritisiert er nur.",
+      "translation": "به جای اینکه کمک کند، فقط انتقاد می‌کند."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Er ging, ohne ein Wort zu sagen.",
+      "translation": "او بدون اینکه حرفی بزند، رفت."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: جملات تقابلی",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "während =", "options": ["در حالی که", "چون"], "correctAnswerIndex": 0 },
+        { "question": "wohingegen =", "options": ["حال آنکه (تضاد قوی)", "با اینکه"], "correctAnswerIndex": 0 },
+        { "question": "anstatt zu =", "options": ["به جای (یک فاعل)", "بدون"], "correctAnswerIndex": 0 },
+        { "question": "ohne dass =", "options": ["بدون (دو فاعل)", "به جای"], "correctAnswerIndex": 0 },
+        { "question": "stattdessen =", "options": ["به جای آن (قید)", "در مقابل"], "correctAnswerIndex": 0 },
+        { "question": "hingegen =", "options": ["در مقابل (قید)", "چون"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: جملات تقابلی",
+      "pairs": [
+        { "de": "während", "fa": "در حالی که" },
+        { "de": "wohingegen", "fa": "حال آنکه" },
+        { "de": "anstatt zu", "fa": "به جای (یک فاعل)" },
+        { "de": "ohne dass", "fa": "بدون (دو فاعل)" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات کلیدی جملات تقابلی را پیدا کنید",
+      "targetWords": ["während", "wohingegen", "anstatt", "ohne", "stattdessen"],
+      "gridSize": { "rows": 10, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "während", "fa": "در حالی که، در حین", "options": ["چون", "در حالی که", "اگر", "تا"], "correctIndex": 1 },
+        { "de": "anstatt", "fa": "به جای", "options": ["بدون", "به جای", "با", "برای"], "correctIndex": 1 },
+        { "de": "wohingegen", "fa": "حال آنکه، در مقابل", "options": ["چون", "حال آنکه", "اگرچه", "وقتی"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! جمع‌بندی جملات تقابلی تمام شد!",
+      "message": "شما تمام انواع جملات تقابلی در آلمانی را مرور کردید!",
+      "keyPoints": [
+        "**تضاد و مقایسه:**",
+        "während = در حالی که (تضاد خنثی)",
+        "wohingegen = حال آنکه (تضاد قوی، رسمی)",
+        "hingegen = در مقابل (قید)",
+        "**«به جای اینکه» (Substitution):**",
+        "anstatt zu + مصدر (فاعل یکسان)",
+        "anstatt dass + جمله (فاعل متفاوت)",
+        "stattdessen = به جای آن (قید)",
+        "**«بدون اینکه» (Negation):**",
+        "ohne zu + مصدر (فاعل یکسان)",
+        "ohne dass + جمله (فاعل متفاوت)",
+        "**قاعده طلایی:**",
+        "فاعل یکسان → zu + مصدر",
+        "فاعل متفاوت → dass + جمله (فعل آخر)"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "während", "fa": "در حالی که، در حین" } },
+        { "word": { "de": "wohingegen", "fa": "حال آنکه، در مقابل" } },
+        { "word": { "de": "anstatt", "fa": "به جای" } },
+        { "word": { "de": "stattdessen", "fa": "به جای آن" } },
+        { "word": { "de": "ohne", "fa": "بدون" } },
+        { "word": { "de": "hingegen", "fa": "در مقابل، برعکس" } }
+      ]
+    }
+  ]
+}

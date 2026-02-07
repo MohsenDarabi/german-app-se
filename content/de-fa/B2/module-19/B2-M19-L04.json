@@ -1,0 +1,534 @@
+{
+  "id": "B2-M19-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Wissenschaftssprache: Zusammenfassung", "fa": "زبان علمی: جمع‌بندی" },
+  "description": "مرور جامع تمام عناصر زبان علمی آلمانی: اسمی‌سازی (Nominalisierung) برای بیان رسمی و فشرده، ساختارهای غیرشخصی (unpersönliche Strukturen) برای عینیت، و عبارات کاربردی (Redemittel) برای متون علمی. تمرکز بر ترکیب این عناصر در نوشتار آکادمیک و تفاوت‌های اساسی با زبان فارسی.",
+  "level": "B2",
+  "module": 19,
+  "lessonNumber": 4,
+  "totalSteps": 45,
+  "estimatedMinutes": 45,
+  "vocabulary": [
+    { "de": "die Nominalisierung", "fa": "اسمی‌سازی", "grammar": { "pos": "noun", "gender": "f" } },
+    { "de": "unpersönlich", "fa": "غیرشخصی", "grammar": { "pos": "adjective" } },
+    { "de": "das Redemittel", "fa": "عبارت کاربردی", "grammar": { "pos": "noun", "gender": "n" } },
+    { "de": "die Wissenschaft", "fa": "علم", "grammar": { "pos": "noun", "gender": "f" } },
+    { "de": "objektiv", "fa": "عینی", "grammar": { "pos": "adjective" } },
+    { "de": "zusammenfassen", "fa": "خلاصه کردن", "grammar": { "pos": "verb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "مرور کلی: زبان علمی آلمانی",
+      "content": "**Wissenschaftssprache = زبان علمی**\n\nدر این ماژول سه ویژگی اصلی زبان علمی آلمانی را یاد گرفتیم:\n\n**1. اسمی‌سازی (Nominalisierung):**\n- تبدیل فعل/صفت به اسم برای بیان فشرده\n- **untersuchen (فعل) wird zu die Untersuchung (اسم)**\n- سطح: رسمی، علمی، کتبی\n- مزیت: اطلاعات بیشتر در جای کمتر\n\n**2. ساختارهای غیرشخصی:**\n- حذف فاعل انسانی برای عینیت\n- **man untersucht wird zu Es wird untersucht**\n- **Passiv:** Die Daten werden analysiert\n- **man-Sätze:** Man kann feststellen...\n- **sich lassen:** Dieses Phänomen lässt sich erklären\n\n**3. عبارات کاربردی (Redemittel):**\n- عبارات ثابت برای ساختار متن علمی\n- **Laut dieser Studie...** = طبق این مطالعه\n- **Daraus ergibt sich...** = از این نتیجه می‌شود\n- **Es lässt sich feststellen...** = می‌توان مشاهده کرد\n\n**نکته کلیدی برای فارسی‌زبانان:**\nدر فارسی اسمی‌سازی کمتر رایج است و بیشتر از جملات فعلی استفاده می‌شود!",
+      "examples": [
+        { "de": "Man untersucht die Daten. Wird zu: Die Untersuchung der Daten zeigt... (اسمی‌سازی)", "fa": "داده‌ها بررسی می‌شوند. می‌شود: بررسی داده‌ها نشان می‌دهد..." },
+        { "de": "Die Daten werden analysiert. (ساختار غیرشخصی)", "fa": "داده‌ها تحلیل می‌شوند." },
+        { "de": "Laut dieser Studie ist das Ergebnis eindeutig. (عبارت کاربردی)", "fa": "طبق این مطالعه، نتیجه واضح است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "die Nominalisierung", "fa": "اسمی‌سازی" },
+      "example": { "text": { "de": "Die Nominalisierung ist typisch für wissenschaftliche Texte.", "fa": "اسمی‌سازی برای متون علمی معمول است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Nominalisierung",
+      "translation": "اسمی‌سازی",
+      "syllables": ["No", "mi", "na", "li", "sie", "rung"],
+      "distractors": ["Na", "mu", "nu", "le", "su", "rang"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "unpersönlich", "fa": "غیرشخصی" },
+      "example": { "text": { "de": "Wissenschaftliche Texte sind oft unpersönlich formuliert.", "fa": "متون علمی غالباً به صورت غیرشخصی فرمول‌بندی می‌شوند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "unpersönlich",
+      "translation": "غیرشخصی",
+      "syllables": ["un", "per", "sön", "lich"],
+      "distractors": ["an", "por", "san", "lach"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "das Redemittel", "fa": "عبارت کاربردی" },
+      "example": { "text": { "de": "Diese Redemittel helfen beim Schreiben wissenschaftlicher Arbeiten.", "fa": "این عبارات کاربردی در نوشتن کارهای علمی کمک می‌کنند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Redemittel",
+      "translation": "عبارت کاربردی",
+      "syllables": ["Re", "de", "mit", "tel"],
+      "distractors": ["Ra", "du", "mot", "tal"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "مرور: اسمی‌سازی (Nominalisierung)",
+      "content": "**اسمی‌سازی = تبدیل فعل/صفت به اسم**\n\n**1. از فعل به اسم:**\n```\nفعل + -ung/-tion/-ment wird zu اسم\n```\n> **untersuchen** wird zu die **Untersuchung**\n> **reagieren** wird zu die **Reaktion**\n> **entwickeln** wird zu die **Entwicklung**\n\n**2. از صفت به اسم:**\n```\nصفت + -heit/-keit/-ität wird zu اسم\n```\n> **wichtig** wird zu die **Wichtigkeit**\n> **möglich** wird zu die **Möglichkeit**\n> **objektiv** wird zu die **Objektivität**\n\n**3. اسم بی‌نشان (صفر):**\n```\nفعل (بدون پسوند) wird zu اسم\n```\n> **beginnen** wird zu der **Beginn**\n> **verlaufen** wird zu der **Verlauf**\n\n**چرا اسمی‌سازی؟**\n- **فشرده‌تر:** اطلاعات بیشتر در جای کمتر\n- **رسمی‌تر:** مناسب متون علمی\n- **عینی‌تر:** تمرکز روی فرآیند، نه انجام‌دهنده\n\n**جدول مقایسه:**\n\n| فعل | اسمی‌سازی | معنی |\n|------|------------|------|\n| erforschen | die Erforschung | تحقیق کردن |\n| erklären | die Erklärung | توضیح دادن |\n| analysieren | die Analyse | تحلیل کردن |",
+      "examples": [
+        { "de": "Man untersucht die Daten wird zu Die Untersuchung der Daten (فشرده)", "fa": "داده‌ها بررسی می‌شوند می‌شود بررسی داده‌ها" },
+        { "de": "Es ist wichtig wird zu Die Wichtigkeit (رسمی)", "fa": "مهم است می‌شود اهمیت" },
+        { "de": "Die Studie beginnt wird zu Der Beginn der Studie (عینی)", "fa": "مطالعه شروع می‌شود می‌شود آغاز مطالعه" }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "اسم مشتق از «entwickeln» چیست؟",
+      "options": [
+        "die Entwicklung",
+        "die Entwickelnheit",
+        "der Entwickel",
+        "das Entwicklern"
+      ],
+      "correctAnswerIndex": 0,
+      "feedback": { "correct": "آفرین! entwickeln → die Entwicklung (توسعه).", "incorrect": "فعل entwickeln با پسوند -ung به die Entwicklung تبدیل می‌شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "اسم مناسب را انتخاب کنید (اسمی‌سازی)",
+      "sentence": "Die {0} der Experimente dauerte drei Monate.",
+      "options": ["Durchführung", "durchführen", "durchgeführt", "Durchführ"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "die Durchführung = انجام، اجرا. اسم مشتق از فعل durchführen." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "اسم مناسب را انتخاب کنید (صفت به اسم)",
+      "sentence": "Die {0} dieser Theorie ist unbestritten.",
+      "options": ["Gültigkeit", "gültig", "gelten", "Gültig"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "die Gültigkeit = اعتبار. اسم مشتق از صفت gültig با پسوند -keit." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "die Wissenschaft", "fa": "علم" },
+      "example": { "text": { "de": "Die Wissenschaft sucht nach objektiven Erkenntnissen.", "fa": "علم به دنبال شناخت‌های عینی است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "Wissenschaft",
+      "translation": "علم",
+      "syllables": ["Wis", "sen", "schaft"],
+      "distractors": ["Was", "san", "schoft", "son"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "objektiv", "fa": "عینی" },
+      "example": { "text": { "de": "Die Studie liefert objektive Daten.", "fa": "این مطالعه داده‌های عینی ارائه می‌دهد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "objektiv",
+      "translation": "عینی",
+      "syllables": ["ob", "jek", "tiv"],
+      "distractors": ["ab", "jak", "tuv", "ov"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "zusammenfassen", "fa": "خلاصه کردن" },
+      "example": { "text": { "de": "Lassen Sie mich die Ergebnisse zusammenfassen.", "fa": "اجازه دهید نتایج را خلاصه کنم." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "zusammenfassen",
+      "translation": "خلاصه کردن",
+      "syllables": ["zu", "sam", "men", "fas", "sen"],
+      "distractors": ["za", "som", "mon", "fos", "san"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "مرور: ساختارهای غیرشخصی",
+      "content": "**سه روش برای بیان غیرشخصی:**\n\n**1. مجهول (Passiv) - تمرکز روی عمل:**\n```\nwerden + Partizip II\n```\n> Die Daten **werden analysiert**.\n> داده‌ها تحلیل می‌شوند.\n> (مهم نیست چه کسی تحلیل می‌کند)\n\n**2. man-Sätze - فاعل عمومی:**\n```\nman + فعل\n```\n> **Man** kann feststellen, dass...\n> می‌توان مشاهده کرد که...\n> (فاعل کلی، نه شخص خاص)\n\n**3. sich lassen - امکان‌پذیری:**\n```\nفاعل + lässt sich + فعل اصلی (infinitiv)\n```\n> Dieses Phänomen **lässt sich** erklären.\n> این پدیده قابل توضیح است.\n> (بدون ذکر توضیح‌دهنده)\n\n**چرا غیرشخصی؟**\n- **عینیت:** تمرکز روی موضوع، نه نویسنده\n- **رسمیت:** مناسب متون علمی\n- **کلی‌بودن:** نتایج برای همه، نه فرد خاص\n\n**جدول مقایسه:**\n\n| نوع | مثال | تمرکز |\n|------|------|-------|\n| Passiv | Die Daten werden analysiert | عمل |\n| man | Man untersucht die Daten | عمومی |\n| sich lassen | Die Daten lassen sich analysieren | امکان |",
+      "examples": [
+        { "de": "Die Ergebnisse werden dokumentiert. (Passiv)", "fa": "نتایج مستند می‌شوند." },
+        { "de": "Man kann daraus schließen, dass... (man)", "fa": "می‌توان از این نتیجه گرفت که..." },
+        { "de": "Diese Theorie lässt sich beweisen. (sich lassen)", "fa": "این نظریه قابل اثبات است." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام جمله غیرشخصی‌تر است برای متن علمی؟",
+      "options": [
+        "Ich untersuche die Daten.",
+        "Die Daten werden untersucht.",
+        "Du untersuchst die Daten.",
+        "Wir untersuchen die Daten."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "درست! مجهول (Passiv) تمرکز را روی عمل می‌گذارد، نه انجام‌دهنده.", "incorrect": "در متون علمی، مجهول (Die Daten werden untersucht) غیرشخصی‌تر است." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "ساختار مناسب را انتخاب کنید (sich lassen)",
+      "sentence": "Diese Hypothese {0} durch weitere Studien bestätigen.",
+      "options": ["lässt sich", "wird", "kann man", "ist"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "lässt sich bestätigen = قابل تأیید است. ساختار sich lassen برای امکان‌پذیری." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "ساختار مناسب را انتخاب کنید (man)",
+      "sentence": "{0} kann feststellen, dass die Ergebnisse eindeutig sind.",
+      "options": ["Man", "Es", "Ich", "Sie"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Man kann feststellen = می‌توان مشاهده کرد. man برای فاعل عمومی." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "سمینار علمی",
+      "scene": {
+        "location": "university",
+        "description": { "de": "Im Seminarraum, wissenschaftliche Präsentation", "fa": "در کلاس سمینار، ارائه علمی" }
+      },
+      "lines": [
+        { "speaker": "Prof. Müller", "text": { "de": "Laut dieser Studie lässt sich ein klarer Zusammenhang feststellen.", "fa": "طبق این مطالعه، می‌توان ارتباط واضحی را مشاهده کرد." }, "mood": "neutral" },
+        { "speaker": "Anna", "text": { "de": "Die Durchführung der Experimente erfolgte unter kontrollierten Bedingungen.", "fa": "انجام آزمایش‌ها تحت شرایط کنترل‌شده صورت گرفت." }, "mood": "neutral" },
+        { "speaker": "Prof. Müller", "text": { "de": "Daraus ergibt sich, dass die Hypothese bestätigt wird.", "fa": "از این نتیجه می‌شود که فرضیه تأیید می‌شود." }, "mood": "excited" },
+        { "speaker": "Tom", "text": { "de": "Man kann davon ausgehen, dass weitere Forschung notwendig ist.", "fa": "می‌توان فرض کرد که تحقیق بیشتر ضروری است." }, "mood": "neutral" },
+        { "speaker": "Anna", "text": { "de": "Die Analyse der Daten zeigt eine signifikante Verbesserung.", "fa": "تحلیل داده‌ها بهبود قابل توجهی را نشان می‌دهد." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "پروفسور مولر از چه ساختاری استفاده کرد؟", "options": ["اسمی‌سازی", "sich lassen", "هر دو"], "correctIndex": 2, "explanation": "Laut dieser Studie (عبارت کاربردی) + lässt sich feststellen (sich lassen)." },
+        { "question": "آنا در جمله اول از چه استفاده کرد؟", "options": ["فعل", "اسمی‌سازی", "صفت"], "correctIndex": 1, "explanation": "Die Durchführung = اسمی‌سازی از فعل durchführen." }
+      ]
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را مرتب کنید (مجهول)",
+      "words": ["werden", "Die Ergebnisse", "dokumentiert.", "in der Studie"],
+      "correctOrder": [1, 0, 3, 2],
+      "correctSentence": { "de": "Die Ergebnisse werden in der Studie dokumentiert.", "fa": "نتایج در مطالعه مستند می‌شوند." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را مرتب کنید (sich lassen)",
+      "words": ["lässt sich", "Diese Theorie", "leicht", "beweisen."],
+      "correctOrder": [1, 0, 2, 3],
+      "correctSentence": { "de": "Diese Theorie lässt sich leicht beweisen.", "fa": "این نظریه به راحتی قابل اثبات است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله را مرتب کنید (عبارت کاربردی)",
+      "words": ["dass die Ergebnisse", "Daraus", "ergibt sich,", "valide sind."],
+      "correctOrder": [1, 2, 0, 3],
+      "correctSentence": { "de": "Daraus ergibt sich, dass die Ergebnisse valide sind.", "fa": "از این نتیجه می‌شود که نتایج معتبر هستند." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "اسمی‌سازی (Nominalisierung) باعث می‌شود متن فشرده‌تر و رسمی‌تر شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! اسمی‌سازی اطلاعات بیشتری در جای کمتر ارائه می‌دهد و برای متون علمی مناسب است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "در زبان علمی آلمانی، استفاده از «ich» و «wir» ترجیح داده می‌شود.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! در متون علمی، ساختارهای غیرشخصی (Passiv, man, sich lassen) ترجیح داده می‌شوند." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "sich lassen برای بیان امکان‌پذیری بدون ذکر انجام‌دهنده استفاده می‌شود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! مثال: Diese Theorie lässt sich beweisen = این نظریه قابل اثبات است (بدون ذکر اثبات‌کننده)." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "عبارت کاربردی مناسب را انتخاب کنید",
+      "sentence": "{0} dieser Untersuchung sind die Ergebnisse eindeutig.",
+      "options": ["Laut", "Mit", "Von", "Bei"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Laut dieser Untersuchung = طبق این بررسی. عبارت کاربردی برای ارجاع به منبع." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "عبارت کاربردی مناسب را انتخاب کنید",
+      "sentence": "{0} ergibt sich, dass weitere Forschung nötig ist.",
+      "options": ["Daraus", "Damit", "Davon", "Darin"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "Daraus ergibt sich = از این نتیجه می‌شود. عبارت کاربردی برای نتیجه‌گیری." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "گزارش تحقیق",
+      "scene": {
+        "location": "laboratory",
+        "description": { "de": "Im Labor, Forschungsbesprechung", "fa": "در آزمایشگاه، جلسه تحقیق" }
+      },
+      "lines": [
+        { "speaker": "Dr. Schmidt", "text": { "de": "Die Auswertung der Daten wurde bereits abgeschlossen.", "fa": "تحلیل داده‌ها قبلاً تکمیل شده است." }, "mood": "neutral" },
+        { "speaker": "Lisa", "text": { "de": "Man kann deutlich erkennen, dass die Werte gestiegen sind.", "fa": "می‌توان به وضوح دید که مقادیر افزایش یافته‌اند." }, "mood": "excited" },
+        { "speaker": "Dr. Schmidt", "text": { "de": "Diese Beobachtung lässt sich durch die Theorie erklären.", "fa": "این مشاهده از طریق نظریه قابل توضیح است." }, "mood": "happy" },
+        { "speaker": "Max", "text": { "de": "Die Durchführung weiterer Tests ist daher erforderlich.", "fa": "بنابراین انجام آزمایش‌های بیشتر ضروری است." }, "mood": "neutral" },
+        { "speaker": "Lisa", "text": { "de": "Zusammenfassend lässt sich sagen, dass die Hypothese bestätigt wurde.", "fa": "به طور خلاصه می‌توان گفت که فرضیه تأیید شد." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "دکتر اشمیت از کدام ساختار استفاده کرد؟", "options": ["مجهول (Passiv)", "man-Satz", "ich-Form"], "correctIndex": 0, "explanation": "Die Auswertung wurde abgeschlossen = مجهول (Passiv) برای غیرشخصی‌سازی." },
+        { "question": "لیزا در جمله آخر از چه عبارتی استفاده کرد؟", "options": ["Zusammenfassend lässt sich sagen", "Ich denke", "Meiner Meinung nach"], "correctIndex": 0, "explanation": "Zusammenfassend lässt sich sagen = به طور خلاصه می‌توان گفت. عبارت کاربردی برای جمع‌بندی." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "اسم را با فعل/صفت مربوطه جفت کنید",
+      "items": [
+        { "id": "i1", "text": "die Untersuchung" },
+        { "id": "i2", "text": "die Entwicklung" },
+        { "id": "i3", "text": "die Möglichkeit" },
+        { "id": "i4", "text": "die Wichtigkeit" },
+        { "id": "i5", "text": "die Analyse" },
+        { "id": "i6", "text": "der Beginn" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "untersuchen (بررسی کردن)" },
+        { "id": "m2", "text": "entwickeln (توسعه دادن)" },
+        { "id": "m3", "text": "möglich (ممکن)" },
+        { "id": "m4", "text": "wichtig (مهم)" },
+        { "id": "m5", "text": "analysieren (تحلیل کردن)" },
+        { "id": "m6", "text": "beginnen (شروع کردن)" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "داده‌ها تحلیل می‌شوند.",
+      "sentenceTemplate": "Die Daten {0} {1}.",
+      "options": ["werden", "analysiert", "sind", "analysieren", "analysierten", "wurde"],
+      "correctAnswers": [0, 1],
+      "correctTranslation": { "de": "Die Daten werden analysiert.", "fa": "داده‌ها تحلیل می‌شوند." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "این نظریه قابل اثبات است.",
+      "sentenceTemplate": "Diese Theorie {0} {1} beweisen.",
+      "options": ["lässt sich", "kann", "wird", "ist", "lassen", "wurde"],
+      "correctAnswers": [0],
+      "correctTranslation": { "de": "Diese Theorie lässt sich beweisen.", "fa": "این نظریه قابل اثبات است." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: چکیده مقاله علمی",
+      "passage": {
+        "de": "Zusammenfassung\n\nDie vorliegende Studie untersucht die Auswirkungen von Stress auf die Produktivität. Die Durchführung der Experimente erfolgte über einen Zeitraum von sechs Monaten mit 200 Teilnehmern.\n\nLaut den erhobenen Daten lässt sich feststellen, dass erhöhter Stress die Leistung signifikant reduziert. Die Analyse der Ergebnisse zeigt, dass die Produktivität bei gestressten Probanden um durchschnittlich 35% sank.\n\nMan kann davon ausgehen, dass Stressmanagement-Programme die Situation verbessern können. Daraus ergibt sich die Empfehlung, solche Programme in Unternehmen zu implementieren.\n\nDie Ergebnisse wurden durch statistische Tests bestätigt und lassen sich auf verschiedene Arbeitsumgebungen übertragen.",
+        "fa": "خلاصه\n\nمطالعه حاضر تأثیرات استرس بر بهره‌وری را بررسی می‌کند. انجام آزمایش‌ها در طول دوره شش ماهه با ۲۰۰ شرکت‌کننده صورت گرفت.\n\nطبق داده‌های جمع‌آوری‌شده می‌توان مشاهده کرد که استرس افزایش‌یافته، عملکرد را به طور قابل توجهی کاهش می‌دهد. تحلیل نتایج نشان می‌دهد که بهره‌وری در آزمودنی‌های تحت استرس به طور متوسط ۳۵٪ کاهش یافت.\n\nمی‌توان فرض کرد که برنامه‌های مدیریت استرس می‌توانند وضعیت را بهبود بخشند. از این نتیجه می‌شود که توصیه می‌شود چنین برنامه‌هایی در شرکت‌ها اجرا شوند.\n\nنتایج از طریق آزمایش‌های آماری تأیید شدند و قابل انتقال به محیط‌های کاری مختلف هستند."
+      },
+      "questions": [
+        { "question": "در این متن چند بار از اسمی‌سازی استفاده شده؟", "options": ["۱-۲ بار", "۳-۵ بار", "بیشتر از ۵ بار"], "correctIndex": 2, "explanation": "die Durchführung, die Analyse, die Produktivität, die Empfehlung و... همه اسمی‌سازی هستند." },
+        { "question": "«lässt sich feststellen» چه ساختاری است؟", "options": ["مجهول", "sich lassen", "man-Satz"], "correctIndex": 1, "explanation": "lässt sich feststellen = ساختار sich lassen برای بیان امکان‌پذیری بدون ذکر انجام‌دهنده." },
+        { "question": "«Daraus ergibt sich» چه نوع عبارتی است؟", "options": ["عبارت کاربردی برای نتیجه‌گیری", "سوال", "فعل ساده"], "correctIndex": 0, "explanation": "Daraus ergibt sich = از این نتیجه می‌شود. عبارت کاربردی علمی برای نتیجه‌گیری." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Die wissenschaftliche Arbeit", "fa": "کار علمی" },
+      "characters": ["Emma", "Prof. Weber"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Emma schreibt ihre Bachelorarbeit und zeigt sie Professor Weber.", "fa": "اما پایان‌نامه کارشناسی خود را می‌نویسد و به پروفسور وبر نشان می‌دهد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Prof. Weber",
+          "text": { "de": "Ihre Arbeit ist gut, aber zu persönlich formuliert. Verwenden Sie mehr Nominalisierungen!", "fa": "کار شما خوب است، اما خیلی شخصی فرمول‌بندی شده. بیشتر از اسمی‌سازی استفاده کنید!" },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Emma",
+          "text": { "de": "Sie meinen, statt 'Ich habe untersucht' sollte ich 'Die Untersuchung zeigt' schreiben?", "fa": "منظورتان این است که به جای «من بررسی کردم» باید «بررسی نشان می‌دهد» بنویسم؟" },
+          "mood": "confused"
+        },
+        {
+          "type": "question",
+          "question": "پروفسور وبر چه پیشنهادی داد؟",
+          "options": ["استفاده از اسمی‌سازی", "استفاده از ich-Form", "استفاده از صفت"],
+          "correctIndex": 0,
+          "explanation": "Verwenden Sie mehr Nominalisierungen = از اسمی‌سازی بیشتر استفاده کنید."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Prof. Weber",
+          "text": { "de": "Genau! Und verwenden Sie auch unpersönliche Strukturen wie 'Es lässt sich feststellen'.", "fa": "دقیقاً! و همچنین از ساختارهای غیرشخصی مثل «می‌توان مشاهده کرد» استفاده کنید." },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Emma",
+          "text": { "de": "Verstehe! Also: 'Die Analyse der Daten wurde durchgeführt' statt 'Ich habe die Daten analysiert'?", "fa": "فهمیدم! پس: «تحلیل داده‌ها انجام شد» به جای «من داده‌ها را تحلیل کردم»؟" },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "اما در جمله اصلاح‌شده از چه استفاده کرد؟",
+          "options": ["اسمی‌سازی + مجهول", "فقط فعل", "فقط صفت"],
+          "correctIndex": 0,
+          "explanation": "Die Analyse (اسمی‌سازی) + wurde durchgeführt (مجهول)."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Prof. Weber",
+          "text": { "de": "Perfekt! Laut dieser Überarbeitung wird Ihre Arbeit wissenschaftlicher klingen.", "fa": "عالی! طبق این بازنگری، کار شما علمی‌تر به نظر خواهد رسید." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "پروفسور از کدام عبارت کاربردی استفاده کرد؟",
+          "options": ["Laut dieser Überarbeitung", "Ich denke", "Meiner Meinung nach"],
+          "correctIndex": 0,
+          "explanation": "Laut dieser Überarbeitung = طبق این بازنگری. عبارت کاربردی علمی."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: زبان علمی",
+      "instruction": "پاسخ درست را سریع انتخاب کنید!",
+      "questions": [
+        { "prompt": "untersuchen wird zu", "left": "die Untersuchung", "right": "der Untersuchen", "correctSide": "left" },
+        { "prompt": "wichtig wird zu", "left": "das Wichtig", "right": "die Wichtigkeit", "correctSide": "right" },
+        { "prompt": "رسمی‌تر کدام است؟", "left": "Ich untersuche", "right": "Es wird untersucht", "correctSide": "right" },
+        { "prompt": "sich lassen = ؟", "left": "امکان‌پذیری", "right": "ضرورت", "correctSide": "left" },
+        { "prompt": "Laut dieser Studie = ؟", "left": "طبق این مطالعه", "right": "به نظر من", "correctSide": "left" },
+        { "prompt": "فشرده‌تر کدام است؟", "left": "die Entwicklung", "right": "entwickeln", "correctSide": "left" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Die Durchführung der Studie erfolgte unter kontrollierten Bedingungen.",
+      "translation": "انجام مطالعه تحت شرایط کنترل‌شده صورت گرفت."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Laut den Ergebnissen lässt sich ein klarer Zusammenhang feststellen.",
+      "translation": "طبق نتایج می‌توان ارتباط واضحی را مشاهده کرد."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Daraus ergibt sich, dass weitere Forschung notwendig ist.",
+      "translation": "از این نتیجه می‌شود که تحقیق بیشتر ضروری است."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: زبان علمی",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "die Nominalisierung =", "options": ["اسمی‌سازی", "صفت‌سازی"], "correctAnswerIndex": 0 },
+        { "question": "unpersönlich =", "options": ["غیرشخصی", "شخصی"], "correctAnswerIndex": 0 },
+        { "question": "das Redemittel =", "options": ["عبارت کاربردی", "واژه"], "correctAnswerIndex": 0 },
+        { "question": "objektiv =", "options": ["عینی", "ذهنی"], "correctAnswerIndex": 0 },
+        { "question": "zusammenfassen =", "options": ["خلاصه کردن", "توسعه دادن"], "correctAnswerIndex": 0 },
+        { "question": "die Wissenschaft =", "options": ["علم", "هنر"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: اسمی‌سازی",
+      "pairs": [
+        { "de": "untersuchen", "fa": "die Untersuchung" },
+        { "de": "entwickeln", "fa": "die Entwicklung" },
+        { "de": "wichtig", "fa": "die Wichtigkeit" },
+        { "de": "möglich", "fa": "die Möglichkeit" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات کلیدی زبان علمی را پیدا کنید",
+      "targetWords": ["Nominalisierung", "unpersönlich", "objektiv", "Wissenschaft", "Analyse"],
+      "gridSize": { "rows": 10, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "die Nominalisierung", "fa": "اسمی‌سازی", "options": ["صفت‌سازی", "اسمی‌سازی", "فعل‌سازی", "قید‌سازی"], "correctIndex": 1 },
+        { "de": "unpersönlich", "fa": "غیرشخصی", "options": ["شخصی", "غیرشخصی", "رسمی", "محاوره‌ای"], "correctIndex": 1 },
+        { "de": "objektiv", "fa": "عینی", "options": ["ذهنی", "عینی", "نسبی", "مطلق"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! جمع‌بندی زبان علمی تمام شد!",
+      "message": "شما تمام عناصر زبان علمی آلمانی را مرور کردید!",
+      "keyPoints": [
+        "**۱. اسمی‌سازی (Nominalisierung):**",
+        "تبدیل فعل/صفت به اسم برای بیان فشرده و رسمی",
+        "untersuchen → die Untersuchung",
+        "wichtig → die Wichtigkeit",
+        "مزیت: اطلاعات بیشتر، رسمیت بالاتر",
+        "**۲. ساختارهای غیرشخصی:**",
+        "Passiv: Die Daten werden analysiert",
+        "man: Man kann feststellen, dass...",
+        "sich lassen: Diese Theorie lässt sich beweisen",
+        "مزیت: عینیت، تمرکز روی موضوع",
+        "**۳. عبارات کاربردی (Redemittel):**",
+        "Laut dieser Studie... (طبق این مطالعه)",
+        "Daraus ergibt sich... (از این نتیجه می‌شود)",
+        "Es lässt sich feststellen... (می‌توان مشاهده کرد)",
+        "مزیت: ساختار منطقی، وضوح بیشتر",
+        "**نکته کلیدی:**",
+        "ترکیب این سه عنصر = متن علمی حرفه‌ای!"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "die Nominalisierung", "fa": "اسمی‌سازی" } },
+        { "word": { "de": "unpersönlich", "fa": "غیرشخصی" } },
+        { "word": { "de": "das Redemittel", "fa": "عبارت کاربردی" } },
+        { "word": { "de": "die Wissenschaft", "fa": "علم" } },
+        { "word": { "de": "objektiv", "fa": "عینی" } },
+        { "word": { "de": "zusammenfassen", "fa": "خلاصه کردن" } }
+      ]
+    }
+  ]
+}

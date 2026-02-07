@@ -1,0 +1,552 @@
+{
+  "id": "B2-M15-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Erweiterte Relativsätze: Zusammenfassung", "fa": "جملات موصولی گسترده: جمع‌بندی" },
+  "description": "مرور جامع تمام انواع جملات موصولی گسترده در آلمانی: ضمایر موصولی با was برای اشاره به کل جمله و مفاهیم کلی، قیود موصولی wo/wohin/woher برای مکان، و ترکیبات wo(r)- با حروف اضافه. تمرکز بر تفاوت‌های کاربردی، اشتباهات رایج، و تمرین‌های جامع برای فارسی‌زبانان.",
+  "level": "B2",
+  "module": 15,
+  "lessonNumber": 4,
+  "totalSteps": 45,
+  "estimatedMinutes": 45,
+  "vocabulary": [
+    { "de": "das Relativpronomen", "fa": "ضمیر موصولی", "grammar": { "pos": "noun", "gender": "n" } },
+    { "de": "das Relativadverb", "fa": "قید موصولی", "grammar": { "pos": "noun", "gender": "n" } },
+    { "de": "das Kompositum", "fa": "ترکیب", "grammar": { "pos": "noun", "gender": "n" } },
+    { "de": "der Bezug", "fa": "ارتباط", "grammar": { "pos": "noun", "gender": "m" } },
+    { "de": "verweisen", "fa": "اشاره کردن", "grammar": { "pos": "verb" } },
+    { "de": "sich beziehen auf", "fa": "اشاره کردن به", "grammar": { "pos": "phrase" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "مرور کلی: جملات موصولی گسترده",
+      "content": "**Erweiterte Relativsätze = جملات موصولی گسترده**\n\nدر این ماژول سه نوع اصلی جملات موصولی گسترده یاد گرفتیم:\n\n**1. ضمایر موصولی با was:**\n- اشاره به کل جمله: **Das Wetter ist schön, was mich freut.**\n- بعد از ضمایر نامعین: **alles, was...**، **nichts, was...**\n- بعد از صفت عالی: **das Beste, was...**\n- اسم‌های کلی: **etwas/vieles/manches, was...**\n\n**2. قیود موصولی برای مکان:**\n- **wo** = جایی که (مکان ثابت)\n- **wohin** = جایی که به آنجا (حرکت به)\n- **woher** = جایی که از آنجا (حرکت از)\n\n**3. ترکیبات wo(r)- با حروف اضافه:**\n- **woran** = آنچه به آن\n- **wofür** = آنچه برای آن\n- **womit** = آنچه با آن\n- **worauf** = آنچه روی آن\n\n**نکته کلیدی برای فارسی‌زبانان:**\nاین ساختارها در فارسی همیشه مستقیم ترجمه نمی‌شوند و باید معنای کلی جمله را درک کرد.",
+      "examples": [
+        { "de": "Er hat die Prüfung bestanden, was eine Überraschung war. (was = کل جمله)", "fa": "او امتحان را پاس کرد، که یک سورپرایز بود." },
+        { "de": "Das Haus, wo ich wohne, ist sehr alt. (wo = مکان)", "fa": "خانه‌ای که در آن زندگی می‌کنم، خیلی قدیمی است." },
+        { "de": "Das Projekt, woran wir arbeiten, ist wichtig. (woran = an + was)", "fa": "پروژه‌ای که روی آن کار می‌کنیم، مهم است." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "das Relativpronomen", "fa": "ضمیر موصولی" },
+      "example": { "text": { "de": "Das Relativpronomen 'was' bezieht sich auf einen ganzen Satz.", "fa": "ضمیر موصولی 'was' به کل جمله اشاره می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Relativpronomen",
+      "translation": "ضمیر موصولی",
+      "syllables": ["Re", "la", "tiv", "pro", "no", "men"],
+      "distractors": ["Ra", "lu", "tef", "pra", "na", "man"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "das Relativadverb", "fa": "قید موصولی" },
+      "example": { "text": { "de": "Die Relativadverbien 'wo', 'wohin' und 'woher' drücken einen Ortsbezug aus.", "fa": "قیود موصولی 'wo'، 'wohin' و 'woher' ارتباط مکانی بیان می‌کنند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Relativadverb",
+      "translation": "قید موصولی",
+      "syllables": ["Re", "la", "tiv", "ad", "verb"],
+      "distractors": ["Ra", "lu", "tef", "od", "varb"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "das Kompositum", "fa": "ترکیب" },
+      "example": { "text": { "de": "Das Kompositum 'woran' besteht aus 'wo' und 'an'.", "fa": "ترکیب 'woran' از 'wo' و 'an' تشکیل شده است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Kompositum",
+      "translation": "ترکیب",
+      "syllables": ["Kom", "po", "si", "tum"],
+      "distractors": ["Kam", "pa", "su", "tom"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "ضمایر موصولی: der/die/das در مقابل was",
+      "content": "**تفاوت کلیدی: کی از was استفاده می‌کنیم؟**\n\n**1. ضمایر معمولی (der/die/das/welche):**\n```\nاسم مشخص + der/die/das + فعل\n```\n> Der Mann, **der** dort steht, ist mein Lehrer.\n> اشاره به اسم مشخص: Mann\n\n**2. ضمیر موصولی was:**\n```\nکل جمله + , was + فعل\nضمیر نامعین/صفت عالی + , was + فعل\n```\n> Er kam zu spät, **was** mich ärgerte.\n> اشاره به کل جمله قبلی\n\n> Alles, **was** du sagst, ist richtig.\n> بعد از ضمیر نامعین\n\n**جدول مقایسه:**\n\n| موقعیت | ضمیر | مثال |\n|---------|------|------|\n| اسم مشخص | der/die/das | Der Mann, **der**... |\n| کل جمله | was | Er kam, **was**... |\n| alles/nichts | was | Alles, **was**... |\n| صفت عالی | was | Das Beste, **was**... |\n| etwas/vieles | was | Etwas, **was**... |\n\n**اشتباه رایج:** ❌ Er kam zu spät, der mich ärgerte.\n**صحیح:** ✅ Er kam zu spät, was mich ärgerte.",
+      "examples": [
+        { "de": "Das Buch, das ich lese, ist spannend. (اسم مشخص: Buch)", "fa": "کتابی که می‌خوانم، هیجان‌انگیز است." },
+        { "de": "Er hat gewonnen, was eine Überraschung war. (کل جمله)", "fa": "او برنده شد، که یک سورپرایز بود." },
+        { "de": "Alles, was du brauchst, ist hier. (ضمیر نامعین)", "fa": "همه چیزی که نیاز داری، اینجاست." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "der Bezug", "fa": "ارتباط" },
+      "example": { "text": { "de": "Das Relativpronomen hat einen klaren Bezug zum Hauptsatz.", "fa": "ضمیر موصولی ارتباط واضحی با جمله اصلی دارد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "verweisen",
+      "translation": "اشاره کردن",
+      "syllables": ["ver", "wei", "sen"],
+      "distractors": ["var", "wai", "san", "fur"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "verweisen", "fa": "اشاره کردن" },
+      "example": { "text": { "de": "Das Pronomen verweist auf den vorherigen Satz.", "fa": "ضمیر به جمله قبلی اشاره می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "beziehen",
+      "translation": "اشاره کردن به",
+      "syllables": ["be", "zie", "hen"],
+      "distractors": ["ba", "zai", "hon", "bu"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "sich beziehen auf", "fa": "اشاره کردن به" },
+      "example": { "text": { "de": "Das Relativadverb bezieht sich auf einen Ort.", "fa": "قید موصولی به یک مکان اشاره می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "Ortsbezug",
+      "translation": "ارتباط مکانی",
+      "syllables": ["Orts", "be", "zug"],
+      "distractors": ["Arts", "ba", "zog", "Urts"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "قیود موصولی مکانی: wo, wohin, woher",
+      "content": "**سه قید موصولی برای بیان مکان:**\n\n**1. wo = جایی که (مکان ثابت)**\n```\nاسم مکان + , wo + فعل\n```\n> Das Haus, **wo** ich wohne, ist alt.\n> مکان ثابت: wo ich wohne = جایی که در آن زندگی می‌کنم\n\n**2. wohin = جایی که به آنجا (حرکت به)**\n```\nاسم مکان + , wohin + فعل\n```\n> Die Stadt, **wohin** wir reisen, ist schön.\n> حرکت به: wohin wir reisen = جایی که به آنجا سفر می‌کنیم\n\n**3. woher = جایی که از آنجا (حرکت از)**\n```\nاسم مکان + , woher + فعل\n```\n> Das Land, **woher** er kommt, ist weit.\n> حرکت از: woher er kommt = جایی که از آنجا می‌آید\n\n**جدول مقایسه:**\n\n| قید | معنی | کاربرد | مثال |\n|-----|------|--------|------|\n| wo | جایی که | مکان ثابت | wo ich wohne |\n| wohin | به جایی که | حرکت به | wohin ich gehe |\n| woher | از جایی که | حرکت از | woher ich komme |\n\n**نکته:** می‌توان از **in dem/in die/aus dem** نیز استفاده کرد:\n- wo = in dem/in der\n- wohin = in die/zu dem\n- woher = aus dem/von dem",
+      "examples": [
+        { "de": "Die Bibliothek, wo ich lerne, ist modern. (مکان ثابت)", "fa": "کتابخانه‌ای که در آن درس می‌خوانم، مدرن است." },
+        { "de": "Das Restaurant, wohin wir gehen, ist teuer. (حرکت به)", "fa": "رستورانی که به آنجا می‌رویم، گران است." },
+        { "de": "Die Stadt, woher sie stammt, ist klein. (حرکت از)", "fa": "شهری که او از آنجا می‌آید، کوچک است." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله از نظر استفاده از ضمیر موصولی صحیح است؟",
+      "options": [
+        "Er hat das Spiel gewonnen, der mich überraschte.",
+        "Er hat das Spiel gewonnen, was mich überraschte.",
+        "Er hat das Spiel gewonnen, das mich überraschte.",
+        "Er hat das Spiel gewonnen, die mich überraschte."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "آفرین! برای اشاره به کل جمله از was استفاده می‌کنیم.", "incorrect": "برای اشاره به کل جمله قبلی باید از was استفاده کنیم، نه der/die/das." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "کدام قید موصولی برای بیان حرکت به مکان استفاده می‌شود؟",
+      "options": [
+        "wo",
+        "woher",
+        "wohin",
+        "womit"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "درست! wohin = به جایی که (حرکت به مکان).", "incorrect": "wohin = به جایی که، برای بیان حرکت به مکان استفاده می‌شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "ضمیر موصولی مناسب را انتخاب کنید (اشاره به کل جمله)",
+      "sentence": "Sie hat die Prüfung bestanden, {0} ihre Eltern sehr stolz macht.",
+      "options": ["was", "das", "die", "der"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "was = آنچه. برای اشاره به کل جمله قبلی (او امتحان را پاس کرد) از was استفاده می‌کنیم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "قید موصولی مناسب را انتخاب کنید (مکان ثابت)",
+      "sentence": "Das Café, {0} wir uns treffen, hat guten Kaffee.",
+      "options": ["wo", "wohin", "woher", "womit"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "wo = جایی که. برای بیان مکان ثابت (جایی که در آن ملاقات می‌کنیم) از wo استفاده می‌کنیم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "قید موصولی مناسب را انتخاب کنید (حرکت به)",
+      "sentence": "Das Land, {0} ich reisen möchte, ist weit weg.",
+      "options": ["wo", "wohin", "woher", "woran"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "wohin = به جایی که. برای بیان حرکت به مکان (جایی که می‌خواهم به آنجا سفر کنم) از wohin استفاده می‌کنیم." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s10",
+      "title": "ترکیبات wo(r)- با حروف اضافه",
+      "content": "**ساختار wo(r)- + حرف اضافه برای اشیا و مفاهیم:**\n\n**قاعده:** برای اسامی بی‌جان یا مفاهیم انتزاعی، از ترکیبات wo(r)- استفاده می‌کنیم.\n\n**ساختار:**\n```\nwo + حرف اضافه (اگر با صدا شروع شود: wor + حرف اضافه)\n```\n\n**ترکیبات رایج:**\n\n| ترکیب | حرف اضافه | معنی | مثال |\n|--------|------------|------|------|\n| woran | an + was | آنچه به آن | Das Projekt, **woran** ich arbeite |\n| wofür | für + was | آنچه برای آن | Das Thema, **wofür** ich mich interessiere |\n| womit | mit + was | آنچه با آن | Das Tool, **womit** wir arbeiten |\n| worauf | auf + was | آنچه روی آن | Das Problem, **worauf** wir achten |\n| worüber | über + was | آنچه درباره آن | Das Buch, **worüber** ich spreche |\n| wovon | von + was | آنچه از آن | Das Thema, **wovon** er träumt |\n\n**نکته:** با صداهای واکه‌ای (a, e, i, o, u) حرف **r** اضافه می‌شود:\n- wo**r**an, wo**r**auf, wo**r**über\n- ولی: womit, wofür\n\n**برای انسان‌ها:** از **Präposition + der/die/das** استفاده می‌کنیم:\n- Der Mann, **mit dem** ich spreche. (نه: womit)",
+      "examples": [
+        { "de": "Das Projekt, woran ich arbeite, ist wichtig. (woran = an + was)", "fa": "پروژه‌ای که روی آن کار می‌کنم، مهم است." },
+        { "de": "Das Thema, wofür ich mich interessiere, ist Medizin. (wofür = für + was)", "fa": "موضوعی که به آن علاقه دارم، پزشکی است." },
+        { "de": "Das Tool, womit wir arbeiten, ist modern. (womit = mit + was)", "fa": "ابزاری که با آن کار می‌کنیم، مدرن است." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "ترکیب wo(r)- مناسب را انتخاب کنید (an + was)",
+      "sentence": "Das Problem, {0} wir denken, ist schwierig.",
+      "options": ["woran", "womit", "wofür", "worauf"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "woran = an + was. فعل denken با حرف اضافه an استفاده می‌شود: an etwas denken." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "ترکیب wo(r)- مناسب را انتخاب کنید (für + was)",
+      "sentence": "Das Hobby, {0} ich mich interessiere, ist Fotografie.",
+      "options": ["womit", "wofür", "wovon", "woher"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "wofür = für + was. فعل sich interessieren با für استفاده می‌شود: sich für etwas interessieren." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "ترکیب wo(r)- مناسب را انتخاب کنید (mit + was)",
+      "sentence": "Das Auto, {0} ich zur Arbeit fahre, ist alt.",
+      "options": ["womit", "woher", "wohin", "woran"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "womit = mit + was. با آن وسیله به محل کار می‌روم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را مرتب کنید (was برای کل جمله)",
+      "words": ["was mich", "Sie kam zu spät,", "sehr ärgerte."],
+      "correctOrder": [1, 0, 2],
+      "correctSentence": { "de": "Sie kam zu spät, was mich sehr ärgerte.", "fa": "او دیر آمد، که مرا خیلی عصبانی کرد." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را مرتب کنید (wo برای مکان)",
+      "words": ["ist modern.", "wo ich studiere,", "Die Universität,"],
+      "correctOrder": [2, 1, 0],
+      "correctSentence": { "de": "Die Universität, wo ich studiere, ist modern.", "fa": "دانشگاهی که در آن درس می‌خوانم، مدرن است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله را مرتب کنید (woran برای an + was)",
+      "words": ["woran ich arbeite,", "ist fast fertig.", "Das Projekt,"],
+      "correctOrder": [2, 0, 1],
+      "correctSentence": { "de": "Das Projekt, woran ich arbeite, ist fast fertig.", "fa": "پروژه‌ای که روی آن کار می‌کنم، تقریباً تمام است." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای اشاره به کل جمله قبلی، از ضمیر موصولی was استفاده می‌کنیم.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! مثال: Er kam zu spät, was mich ärgerte. (was اشاره به کل جمله قبلی دارد)" }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "wo و wohin به یک معنی هستند و تفاوتی در کاربرد ندارند.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! wo = جایی که (مکان ثابت)، wohin = به جایی که (حرکت به مکان)." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "برای انسان‌ها از ترکیبات wo(r)- استفاده نمی‌کنیم، بلکه از Präposition + der/die/das استفاده می‌کنیم.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! Der Mann, mit dem ich spreche. (نه: womit). wo(r)- فقط برای اشیا و مفاهیم است." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "گفتگو در دفتر",
+      "scene": {
+        "location": "office",
+        "description": { "de": "Im Büro, Gespräch über ein Projekt", "fa": "در دفتر، صحبت درباره یک پروژه" }
+      },
+      "lines": [
+        { "speaker": "Anna", "text": { "de": "Das Projekt, woran wir seit Monaten arbeiten, ist endlich fertig.", "fa": "پروژه‌ای که ماه‌هاست روی آن کار می‌کنیم، بالاخره تمام شد." }, "mood": "excited" },
+        { "speaker": "Tom", "text": { "de": "Das ist großartig, was alle freuen wird!", "fa": "این عالی است، که همه را خوشحال می‌کند!" }, "mood": "happy" },
+        { "speaker": "Anna", "text": { "de": "Das Büro, wo wir die Präsentation halten, ist im dritten Stock.", "fa": "دفتری که ارائه را در آن برگزار می‌کنیم، در طبقه سوم است." }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Das Thema, wofür ich mich am meisten interessiere, ist die neue Strategie.", "fa": "موضوعی که بیشترین علاقه را به آن دارم، استراتژی جدید است." }, "mood": "excited" },
+        { "speaker": "Anna", "text": { "de": "Das Tool, womit wir die Daten analysieren, ist sehr effizient.", "fa": "ابزاری که با آن داده‌ها را تحلیل می‌کنیم، خیلی کارآمد است." }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "آنا از چه ساختاری برای بیان پروژه استفاده کرده؟", "options": ["woran (an + was)", "womit (mit + was)", "wofür (für + was)"], "correctIndex": 0, "explanation": "woran wir arbeiten = پروژه‌ای که روی آن کار می‌کنیم (arbeiten an + Dativ)." },
+        { "question": "تام از was برای اشاره به چه چیزی استفاده کرده؟", "options": ["به یک اسم مشخص", "به کل جمله قبلی (پروژه تمام شد)", "به یک شخص"], "correctIndex": 1, "explanation": "was alle freuen wird = که همه را خوشحال می‌کند. was به کل جمله قبلی اشاره دارد." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "ساختار را با کاربرد جفت کنید",
+      "items": [
+        { "id": "i1", "text": "was" },
+        { "id": "i2", "text": "wo" },
+        { "id": "i3", "text": "wohin" },
+        { "id": "i4", "text": "woher" },
+        { "id": "i5", "text": "woran" },
+        { "id": "i6", "text": "wofür" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "اشاره به کل جمله یا ضمیر نامعین" },
+        { "id": "m2", "text": "مکان ثابت (جایی که)" },
+        { "id": "m3", "text": "حرکت به مکان (به جایی که)" },
+        { "id": "m4", "text": "حرکت از مکان (از جایی که)" },
+        { "id": "m5", "text": "an + was (آنچه به/روی آن)" },
+        { "id": "m6", "text": "für + was (آنچه برای آن)" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"], ["i5", "m5"], ["i6", "m6"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "او امتحان را پاس کرد، که من را خوشحال کرد.",
+      "sentenceTemplate": "Er hat die Prüfung {0}, {1} mich freute.",
+      "options": ["bestanden", "gemacht", "was", "das", "die"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Er hat die Prüfung bestanden, was mich freute.", "fa": "او امتحان را پاس کرد، که من را خوشحال کرد." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "کتابخانه‌ای که در آن درس می‌خوانم، خیلی آرام است.",
+      "sentenceTemplate": "Die Bibliothek, {0} ich lerne, ist sehr {1}.",
+      "options": ["wo", "wohin", "ruhig", "laut", "woher"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Die Bibliothek, wo ich lerne, ist sehr ruhig.", "fa": "کتابخانه‌ای که در آن درس می‌خوانم، خیلی آرام است." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: خاطرات سفر",
+      "passage": {
+        "de": "Liebe Freunde,\n\nich möchte euch von meiner Reise nach Berlin erzählen, was eine unvergessliche Erfahrung war.\n\nDas Hotel, wo ich gewohnt habe, lag direkt am Alexanderplatz. Die Stadt, wohin ich schon lange reisen wollte, hat mich begeistert. Das Brandenburger Tor, wovon ich so viel gehört hatte, war beeindruckend.\n\nDas Museum, worin ich die meiste Zeit verbracht habe, war das Pergamonmuseum. Die Ausstellungen, wofür ich mich besonders interessierte, waren zur antiken Geschichte.\n\nAlles, was ich gesehen habe, war wunderbar. Die Menschen, mit denen ich gesprochen habe, waren sehr freundlich. Das Essen, worauf ich mich am meisten gefreut hatte, war die Currywurst!\n\nIch komme nächstes Jahr wieder, was meine Freunde in Berlin sehr freuen wird.\n\nLiebe Grüße",
+        "fa": "دوستان عزیز،\n\nمی‌خواهم از سفرم به برلین برایتان بگویم، که یک تجربه فراموش‌نشدنی بود.\n\nهتلی که در آن اقامت داشتم، دقیقاً در الکساندرپلاتس بود. شهری که مدت‌ها می‌خواستم به آنجا سفر کنم، مرا شیفته کرد. دروازه براندنبورگ، که خیلی درباره‌اش شنیده بودم، تحسین‌برانگیز بود.\n\nموزه‌ای که بیشترین وقت را در آن گذراندم، موزه پرگامون بود. نمایشگاه‌هایی که به آن‌ها علاقه ویژه‌ای داشتم، درباره تاریخ باستان بودند.\n\nهمه چیزی که دیدم، شگفت‌انگیز بود. افرادی که با آن‌ها صحبت کردم، خیلی مهربان بودند. غذایی که بیشترین انتظارش را داشتم، کوری‌وورست بود!\n\nسال آینده دوباره می‌آیم، که دوستانم در برلین را خیلی خوشحال خواهد کرد.\n\nبا احترام"
+      },
+      "questions": [
+        { "question": "نویسنده از چه ساختاری برای بیان محل هتل استفاده کرده؟", "options": ["wo (مکان ثابت)", "wohin (حرکت به)", "woher (حرکت از)"], "correctIndex": 0, "explanation": "Das Hotel, wo ich gewohnt habe = هتلی که در آن اقامت داشتم (مکان ثابت)." },
+        { "question": "was در جمله اول به چه چیزی اشاره دارد؟", "options": ["به هتل", "به برلین", "به کل جمله قبلی (سفر به برلین)"], "correctIndex": 2, "explanation": "...von meiner Reise erzählen, was eine unvergessliche Erfahrung war = که یک تجربه فراموش‌نشدنی بود. was به کل سفر اشاره دارد." },
+        { "question": "wofür در جمله درباره موزه به چه معنی است؟", "options": ["آنچه برای آن (علاقه‌مند بودم)", "جایی که", "از جایی که"], "correctIndex": 0, "explanation": "Die Ausstellungen, wofür ich mich interessierte = نمایشگاه‌هایی که به آن‌ها علاقه داشتم (sich interessieren für)." }
+      ]
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "برنامه‌ریزی تعطیلات",
+      "scene": {
+        "location": "home",
+        "description": { "de": "Zu Hause, Planung des Sommerurlaubs", "fa": "در خانه، برنامه‌ریزی تعطیلات تابستانی" }
+      },
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Die Insel, wohin wir fahren wollen, soll wunderschön sein.", "fa": "جزیره‌ای که می‌خواهیم به آنجا برویم، ظاهراً خیلی زیباست." }, "mood": "excited" },
+        { "speaker": "Max", "text": { "de": "Ich habe das Hotel gebucht, was nicht einfach war.", "fa": "هتل را رزرو کردم، که آسان نبود." }, "mood": "neutral" },
+        { "speaker": "Lisa", "text": { "de": "Das Hotel, wo wir übernachten, hat einen Pool.", "fa": "هتلی که در آن اقامت می‌کنیم، استخر دارد." }, "mood": "happy" },
+        { "speaker": "Max", "text": { "de": "Die Aktivitäten, wofür ich mich interessiere, sind Tauchen und Segeln.", "fa": "فعالیت‌هایی که به آن‌ها علاقه دارم، غواصی و قایقرانی هستند." }, "mood": "excited" },
+        { "speaker": "Lisa", "text": { "de": "Alles, was wir brauchen, ist gutes Wetter!", "fa": "همه چیزی که نیاز داریم، هوای خوب است!" }, "mood": "happy" }
+      ],
+      "questions": [
+        { "question": "لیزا برای بیان حرکت به جزیره از چه قیدی استفاده کرده؟", "options": ["wo", "wohin", "woher"], "correctIndex": 1, "explanation": "wohin wir fahren wollen = جایی که می‌خواهیم به آنجا برویم (حرکت به مکان)." },
+        { "question": "ماکس از was برای اشاره به چه چیزی استفاده کرده؟", "options": ["به هتل", "به کل جمله قبلی (رزرو هتل)", "به جزیره"], "correctIndex": 1, "explanation": "Ich habe das Hotel gebucht, was nicht einfach war = هتل را رزرو کردم، که آسان نبود. was به عمل رزرو کردن اشاره دارد." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der neue Job", "fa": "شغل جدید" },
+      "characters": ["Sarah", "Kollege"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Sarah beginnt heute ihren neuen Job.", "fa": "سارا امروز کار جدیدش را شروع می‌کند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sarah",
+          "text": { "de": "Das Büro, wo ich arbeiten werde, ist sehr modern.", "fa": "دفتری که در آن کار خواهم کرد، خیلی مدرن است." },
+          "mood": "excited"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Kollege",
+          "text": { "de": "Das freut mich, was ein guter Start ist!", "fa": "خوشحالم، که یک شروع خوب است!" },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "سارا از چه قید موصولی برای بیان محل کار استفاده کرده؟",
+          "options": ["wo (مکان ثابت)", "wohin (حرکت به)", "woher (حرکت از)"],
+          "correctIndex": 0,
+          "explanation": "wo ich arbeiten werde = جایی که در آن کار خواهم کرد (مکان ثابت)."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sarah",
+          "text": { "de": "Das Projekt, woran ich arbeiten werde, ist sehr interessant.", "fa": "پروژه‌ای که روی آن کار خواهم کرد، خیلی جالب است." },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "woran در جمله سارا به چه معنی است؟",
+          "options": ["wo + an = آنچه روی آن", "wo + in = آنچه در آن", "wo + mit = آنچه با آن"],
+          "correctIndex": 0,
+          "explanation": "woran = an + was. فعل arbeiten با an استفاده می‌شود: an einem Projekt arbeiten."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Kollege",
+          "text": { "de": "Die Themen, wofür du verantwortlich bist, sind Marketing und Vertrieb.", "fa": "موضوعاتی که مسئول آن‌ها هستی، بازاریابی و فروش هستند." },
+          "mood": "neutral"
+        },
+        {
+          "type": "question",
+          "question": "همکار از wofür برای بیان چه چیزی استفاده کرده؟",
+          "options": ["für + was = آنچه برای آن (مسئول)", "mit + was = آنچه با آن", "von + was = آنچه از آن"],
+          "correctIndex": 0,
+          "explanation": "wofür du verantwortlich bist = موضوعاتی که برای آن‌ها مسئول هستی (verantwortlich für)."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sarah",
+          "text": { "de": "Alles, was ich brauche, ist ein guter Kaffee am Morgen!", "fa": "همه چیزی که نیاز دارم، یک قهوه خوب صبحگاهی است!" },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "سارا از was بعد از چه کلمه‌ای استفاده کرده؟",
+          "options": ["ضمیر نامعین (alles)", "اسم مشخص", "صفت عالی"],
+          "correctIndex": 0,
+          "explanation": "Alles, was... = همه چیزی که... (بعد از ضمیر نامعین alles از was استفاده می‌کنیم)."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: جملات موصولی گسترده",
+      "instruction": "ساختار درست را انتخاب کنید!",
+      "questions": [
+        { "prompt": "اشاره به کل جمله = ؟", "left": "was", "right": "der/die/das", "correctSide": "left" },
+        { "prompt": "مکان ثابت = ؟", "left": "wohin", "right": "wo", "correctSide": "right" },
+        { "prompt": "حرکت به مکان = ؟", "left": "wohin", "right": "wo", "correctSide": "left" },
+        { "prompt": "حرکت از مکان = ؟", "left": "wo", "right": "woher", "correctSide": "right" },
+        { "prompt": "an + was = ؟", "left": "woran", "right": "womit", "correctSide": "left" },
+        { "prompt": "für + was = ؟", "left": "wovon", "right": "wofür", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Er hat die Prüfung bestanden, was seine Eltern sehr freut.",
+      "translation": "او امتحان را پاس کرد، که والدینش را خیلی خوشحال می‌کند."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Das Haus, wo ich aufgewachsen bin, steht noch.",
+      "translation": "خانه‌ای که در آن بزرگ شدم، هنوز پابرجاست."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Das Projekt, woran wir arbeiten, ist wichtig.",
+      "translation": "پروژه‌ای که روی آن کار می‌کنیم، مهم است."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: جملات موصولی گسترده",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "was =", "options": ["اشاره به کل جمله", "اسم مشخص"], "correctAnswerIndex": 0 },
+        { "question": "wo =", "options": ["جایی که (مکان ثابت)", "به جایی که"], "correctAnswerIndex": 0 },
+        { "question": "wohin =", "options": ["به جایی که (حرکت به)", "از جایی که"], "correctAnswerIndex": 0 },
+        { "question": "woher =", "options": ["از جایی که (حرکت از)", "جایی که"], "correctAnswerIndex": 0 },
+        { "question": "woran =", "options": ["an + was", "für + was"], "correctAnswerIndex": 0 },
+        { "question": "wofür =", "options": ["für + was", "mit + was"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: جملات موصولی",
+      "pairs": [
+        { "de": "was", "fa": "آنچه (کل جمله)" },
+        { "de": "wo", "fa": "جایی که" },
+        { "de": "wohin", "fa": "به جایی که" },
+        { "de": "woran", "fa": "آنچه به/روی آن" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات کلیدی جملات موصولی گسترده را پیدا کنید",
+      "targetWords": ["was", "wo", "wohin", "woher", "woran", "wofür", "womit"],
+      "gridSize": { "rows": 10, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "das Relativpronomen", "fa": "ضمیر موصولی", "options": ["ضمیر شخصی", "ضمیر موصولی", "ضمیر ملکی", "ضمیر اشاره"], "correctIndex": 1 },
+        { "de": "das Relativadverb", "fa": "قید موصولی", "options": ["قید زمان", "قید موصولی", "قید حالت", "قید مکان"], "correctIndex": 1 },
+        { "de": "der Bezug", "fa": "ارتباط", "options": ["تفاوت", "ارتباط", "جدایی", "مخالفت"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! جمع‌بندی جملات موصولی گسترده تمام شد!",
+      "message": "شما تمام انواع جملات موصولی گسترده در آلمانی را مرور کردید!",
+      "keyPoints": [
+        "**ضمیر موصولی was:**",
+        "اشاره به کل جمله: Er kam, was mich freute.",
+        "بعد از ضمیر نامعین: alles/nichts/etwas, was...",
+        "بعد از صفت عالی: das Beste, was...",
+        "**قیود موصولی مکانی:**",
+        "wo = جایی که (مکان ثابت)",
+        "wohin = به جایی که (حرکت به)",
+        "woher = از جایی که (حرکت از)",
+        "**ترکیبات wo(r)- + حرف اضافه:**",
+        "woran = an + was (آنچه به/روی آن)",
+        "wofür = für + was (آنچه برای آن)",
+        "womit = mit + was (آنچه با آن)",
+        "worauf = auf + was (آنچه روی آن)",
+        "**نکات کلیدی:**",
+        "was برای اشیا و مفاهیم، نه انسان‌ها",
+        "wo(r)- فقط برای اشیا، برای انسان: Präposition + der/die/das",
+        "تفاوت wo/wohin/woher را رعایت کنید"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "das Relativpronomen", "fa": "ضمیر موصولی" } },
+        { "word": { "de": "das Relativadverb", "fa": "قید موصولی" } },
+        { "word": { "de": "das Kompositum", "fa": "ترکیب" } },
+        { "word": { "de": "der Bezug", "fa": "ارتباط" } },
+        { "word": { "de": "verweisen", "fa": "اشاره کردن" } },
+        { "word": { "de": "sich beziehen auf", "fa": "اشاره کردن به" } }
+      ]
+    }
+  ]
+}

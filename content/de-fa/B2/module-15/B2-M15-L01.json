@@ -1,0 +1,523 @@
+{
+  "id": "B2-M15-L01",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Erweiterte Relativsätze: Relativpronomen 'was'", "fa": "جملات موصولی پیشرفته: ضمیر موصولی 'was'" },
+  "description": "یاد بگیرید چگونه از ضمیر موصولی «was» در موارد خاص استفاده کنید: بعد از ضمایر نامعین (alles, nichts, etwas)، بعد از صفات عالی (das Beste)، و بعد از صفات اسم‌شده (das Wichtige). این ساختار در فارسی معادل مستقیم ندارد.",
+  "level": "B2",
+  "module": 15,
+  "lessonNumber": 1,
+  "totalSteps": 45,
+  "estimatedMinutes": 45,
+  "vocabulary": [
+    { "de": "das Relativpronomen", "fa": "ضمیر موصولی", "grammar": { "pos": "noun", "gender": "neuter" } },
+    { "de": "der Nebensatz", "fa": "جمله پیرو، جمله فرعی", "grammar": { "pos": "noun", "gender": "masculine" } },
+    { "de": "das Superlativ", "fa": "صفت عالی، بالاترین درجه", "grammar": { "pos": "noun", "gender": "neuter" } },
+    { "de": "das Indefinitpronomen", "fa": "ضمیر نامعین", "grammar": { "pos": "noun", "gender": "neuter" } },
+    { "de": "verweisen", "fa": "اشاره کردن، ارجاع دادن", "grammar": { "pos": "verb" } },
+    { "de": "beziehen", "fa": "مربوط بودن، ارتباط داشتن", "grammar": { "pos": "verb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "ضمیر موصولی was: مقدمه",
+      "content": "**Relativpronomen 'was'**\n\nدر آلمانی، ضمیر موصولی **was** در موارد خاصی به جای der/die/das استفاده می‌شود.\n\n**سه مورد اصلی:**\n\n**۱. بعد از ضمایر نامعین (Indefinitpronomen):**\n> Alles, **was** ich sage, ist wahr.\n> هر آنچه می‌گویم، حقیقت است.\n\n**۲. بعد از صفات عالی (Superlativ):**\n> Das Beste, **was** passieren kann, ist...\n> بهترین چیزی که می‌تواند اتفاق بیفتد، این است که...\n\n**۳. بعد از صفات اسم‌شده (Nominalisierte Adjektive):**\n> Das Wichtige, **was** ich sagen möchte, ist...\n> مهم‌ترین چیزی که می‌خواهم بگویم، این است که...\n\n**نکته برای فارسی‌زبانان:**\n- در فارسی از «آنچه»، «هر آنچه» یا «چیزی که» استفاده می‌کنیم\n- در آلمانی باید بین der/die/das و was تفاوت قائل شویم\n- was فقط در موارد خاص به کار می‌رود",
+      "examples": [
+        { "de": "Nichts, was er sagt, stimmt.", "fa": "هیچ چیزی که او می‌گوید، درست نیست." },
+        { "de": "Etwas, was ich nie vergessen werde.", "fa": "چیزی که هرگز فراموش نخواهم کرد." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "das Relativpronomen", "fa": "ضمیر موصولی" },
+      "example": { "text": { "de": "Das Relativpronomen 'was' wird nach Indefinitpronomen verwendet.", "fa": "ضمیر موصولی 'was' بعد از ضمایر نامعین به کار می‌رود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Relativpronomen",
+      "translation": "ضمیر موصولی",
+      "syllables": ["Re", "la", "tiv", "pro", "no", "men"],
+      "distractors": ["Ra", "lu", "tav", "pre", "nu", "man"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "der Nebensatz", "fa": "جمله پیرو، جمله فرعی" },
+      "example": { "text": { "de": "Der Nebensatz mit 'was' steht nach dem Komma.", "fa": "جمله پیرو با 'was' بعد از ویرگول قرار می‌گیرد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Nebensatz",
+      "translation": "جمله پیرو",
+      "syllables": ["Ne", "ben", "satz"],
+      "distractors": ["Na", "bin", "setz", "sotz"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "das Superlativ", "fa": "صفت عالی، بالاترین درجه" },
+      "example": { "text": { "de": "Nach einem Superlativ benutzt man oft 'was' als Relativpronomen.", "fa": "بعد از صفت عالی، اغلب از 'was' به عنوان ضمیر موصولی استفاده می‌شود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Superlativ",
+      "translation": "صفت عالی",
+      "syllables": ["Su", "per", "la", "tiv"],
+      "distractors": ["So", "pur", "lu", "tav"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s5",
+      "title": "was بعد از ضمایر نامعین",
+      "content": "**Relativpronomen 'was' nach Indefinitpronomen**\n\nبعد از ضمایر نامعین زیر، همیشه از **was** استفاده می‌کنیم:\n\n**ضمایر نامعین:**\n- **alles** (همه چیز)\n- **nichts** (هیچ چیز)\n- **etwas** (چیزی)\n- **vieles** (خیلی چیزها)\n- **einiges** (برخی چیزها)\n- **manches** (بعضی چیزها)\n- **wenig** (کم، اندک)\n\n**ساختار:**\n> Indefinitpronomen + **,** + **was** + ... + Verb\n\n**مثال‌ها:**\n> **Alles**, **was** du brauchst, ist Liebe.\n> هر آنچه نیاز داری، عشق است.\n\n> **Nichts**, **was** er sagt, ist interessant.\n> هیچ چیزی که او می‌گوید، جالب نیست.\n\n> **Etwas**, **was** ich nie verstehen werde.\n> چیزی که هرگز نخواهم فهمید.\n\n**توجه:** فعل در جمله موصولی به انتها می‌رود.",
+      "examples": [
+        { "de": "Vieles, was ich gelernt habe, ist nützlich.", "fa": "خیلی از چیزهایی که یاد گرفتم، مفید هستند." },
+        { "de": "Wenig, was er macht, ist gut.", "fa": "کم چیزی که او انجام می‌دهد، خوب است." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "کدام جمله درست است؟",
+      "options": [
+        "Alles, das ich weiß, ist wahr.",
+        "Alles, was ich weiß, ist wahr.",
+        "Alles, die ich weiß, ist wahr.",
+        "Alles, der ich weiß, ist wahr."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "عالی! بعد از «alles» حتماً از «was» استفاده می‌کنیم.", "incorrect": "بعد از ضمایر نامعین مثل «alles»، باید از «was» استفاده کنیم، نه der/die/das." }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "جمله «Nichts, was er sagt, ist richtig» به چه معناست؟",
+      "options": [
+        "هر چه او می‌گوید، درست است.",
+        "هیچ چیزی که او می‌گوید، درست نیست.",
+        "بعضی چیزها که او می‌گوید، درست است.",
+        "همه چیزهایی که او می‌گوید، غلط است."
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "درست! «Nichts» یعنی «هیچ چیز»، پس هیچ چیزی که او می‌گوید درست نیست.", "incorrect": "«Nichts» یعنی «هیچ چیز»، نه «همه چیز»." }
+    },
+    {
+      "type": "new-word",
+      "id": "s6",
+      "word": { "de": "das Indefinitpronomen", "fa": "ضمیر نامعین" },
+      "example": { "text": { "de": "Nach einem Indefinitpronomen steht das Relativpronomen 'was'.", "fa": "بعد از ضمیر نامعین، ضمیر موصولی 'was' قرار می‌گیرد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "Indefinitpronomen",
+      "translation": "ضمیر نامعین",
+      "syllables": ["In", "de", "fi", "nit", "pro", "no", "men"],
+      "distractors": ["Un", "da", "fa", "nat", "pre", "nu", "man"]
+    },
+    {
+      "type": "new-word",
+      "id": "s7",
+      "word": { "de": "verweisen", "fa": "اشاره کردن، ارجاع دادن" },
+      "example": { "text": { "de": "Das Pronomen 'was' verweist auf das vorherige Wort.", "fa": "ضمیر 'was' به کلمه قبلی اشاره می‌کند." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "verweisen",
+      "translation": "اشاره کردن",
+      "syllables": ["ver", "wei", "sen"],
+      "distractors": ["var", "wie", "san", "sor"]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "beziehen", "fa": "مربوط بودن، ارتباط داشتن" },
+      "example": { "text": { "de": "Das Relativpronomen bezieht sich auf 'alles'.", "fa": "ضمیر موصولی به «alles» مربوط می‌شود." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl6",
+      "word": "beziehen",
+      "translation": "مربوط بودن",
+      "syllables": ["be", "zie", "hen"],
+      "distractors": ["ba", "zu", "han", "hon"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s9",
+      "title": "was بعد از صفات عالی",
+      "content": "**Relativpronomen 'was' nach Superlativen**\n\nبعد از صفات عالی که با **das** همراه هستند، از **was** استفاده می‌کنیم.\n\n**صفات عالی رایج:**\n- **das Beste** (بهترین)\n- **das Schönste** (زیباترین)\n- **das Schlimmste** (بدترین)\n- **das Wichtigste** (مهم‌ترین)\n- **das Interessanteste** (جالب‌ترین)\n- **das Einzige** (تنها)\n\n**ساختار:**\n> **das + Superlativ** + **,** + **was** + ... + Verb\n\n**مثال‌ها:**\n> **Das Beste**, **was** passieren kann, ist Frieden.\n> بهترین چیزی که می‌تواند اتفاق بیفتد، صلح است.\n\n> **Das Schlimmste**, **was** ich erlebt habe, war der Unfall.\n> بدترین چیزی که تجربه کردم، تصادف بود.\n\n> **Das Einzige**, **was** zählt, ist die Familie.\n> تنها چیزی که اهمیت دارد، خانواده است.\n\n**نکته:** فعل در انتهای جمله موصولی قرار می‌گیرد.",
+      "examples": [
+        { "de": "Das Schönste, was ich gesehen habe, ist der Sonnenuntergang.", "fa": "زیباترین چیزی که دیده‌ام، غروب آفتاب است." },
+        { "de": "Das Wichtigste, was wir brauchen, ist Zeit.", "fa": "مهم‌ترین چیزی که نیاز داریم، زمان است." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Alles, {0} du sagst, ist wichtig.",
+      "options": ["was", "das", "die", "der"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "«was» درست است. بعد از «alles» همیشه از was استفاده می‌کنیم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "ضمیر موصولی مناسب را انتخاب کنید",
+      "sentence": "Nichts, {0} er macht, ist gut.",
+      "options": ["was", "das", "der", "den"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "«was» درست است. بعد از «nichts» باید از was استفاده کنیم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Das Beste, {0} passieren kann, ist Gesundheit.",
+      "options": ["was", "das", "die", "der"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "«was» درست است. بعد از صفات عالی مثل «das Beste» از was استفاده می‌کنیم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را به ترتیب درست مرتب کنید",
+      "words": ["Alles", "was", "ich", "weiß", "ist", "das"],
+      "correctOrder": [0, 5, 1, 2, 3, 4],
+      "correctSentence": { "de": "Alles, was ich weiß, ist das.", "fa": "هر آنچه می‌دانم، همین است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله موصولی را مرتب کنید",
+      "words": ["Das", "Schönste", "gesehen", "habe", "ich", "was", "ist", "das"],
+      "correctOrder": [0, 1, 5, 4, 2, 3, 6, 7],
+      "correctSentence": { "de": "Das Schönste, was ich gesehen habe, ist das.", "fa": "زیباترین چیزی که دیده‌ام، همین است." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo3",
+      "instruction": "جمله را با was بسازید",
+      "words": ["Etwas", "was", "nie", "ich", "vergessen", "werde"],
+      "correctOrder": [0, 1, 3, 2, 4, 5],
+      "correctSentence": { "de": "Etwas, was ich nie vergessen werde.", "fa": "چیزی که هرگز فراموش نخواهم کرد." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "بعد از «alles» از ضمیر موصولی «was» استفاده می‌کنیم.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! بعد از ضمایر نامعین مثل «alles» همیشه از was استفاده می‌شود." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "بعد از «das Beste» باید از «der» به عنوان ضمیر موصولی استفاده کنیم.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! بعد از صفات عالی مثل «das Beste» از «was» استفاده می‌کنیم، نه der/die/das." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "در جمله موصولی با «was»، فعل به انتها می‌رود.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! مثل همه جملات فرعی در آلمانی، فعل در انتها قرار می‌گیرد." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "گفتگو در کتابفروشی",
+      "scene": {
+        "location": "bookstore",
+        "description": { "de": "Zwei Freunde sprechen über ihre Lieblingsbücher.", "fa": "دو دوست درباره کتاب‌های مورد علاقه‌شان صحبت می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Lisa", "text": { "de": "Das Beste, was ich dieses Jahr gelesen habe, ist dieser Roman.", "fa": "بهترین چیزی که امسال خوانده‌ام، این رمان است." }, "mood": "excited" },
+        { "speaker": "Tom", "text": { "de": "Alles, was du mir empfiehlst, ist immer gut.", "fa": "هر آنچه به من پیشنهاد می‌دهی، همیشه خوب است." }, "mood": "happy" },
+        { "speaker": "Lisa", "text": { "de": "Das Einzige, was ich nicht mag, sind lange Beschreibungen.", "fa": "تنها چیزی که دوست ندارم، توصیفات طولانی است." }, "mood": "neutral" },
+        { "speaker": "Tom", "text": { "de": "Nichts, was zu lang ist, lese ich bis zum Ende.", "fa": "هیچ چیزی که خیلی طولانی باشد، تا آخر نمی‌خوانم." }, "mood": "neutral" },
+        { "speaker": "Lisa", "text": { "de": "Das Wichtigste, was zählt, ist eine spannende Geschichte.", "fa": "مهم‌ترین چیزی که اهمیت دارد، یک داستان هیجان‌انگیز است." }, "mood": "excited" }
+      ],
+      "questions": [
+        { "question": "چه چیزی برای لیزا مهم‌ترین است؟", "options": ["توصیفات طولانی", "داستان هیجان‌انگیز", "نویسنده معروف"], "correctIndex": 1, "explanation": "لیزا گفت: Das Wichtigste, was zählt, ist eine spannende Geschichte." },
+        { "question": "تام چه چیزی را تا آخر نمی‌خواند؟", "options": ["کتاب‌های کوتاه", "کتاب‌های خیلی طولانی", "کتاب‌های خارجی"], "correctIndex": 1, "explanation": "تام گفت: Nichts, was zu lang ist, lese ich bis zum Ende." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Etwas, {0} ich nie vergessen werde.",
+      "options": ["was", "das", "die", "den"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "«was» درست است. بعد از «etwas» از was استفاده می‌کنیم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "ضمیر موصولی مناسب را انتخاب کنید",
+      "sentence": "Das Schlimmste, {0} passieren kann, ist Krieg.",
+      "options": ["was", "das", "der", "die"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "«was» درست است. بعد از صفت عالی «das Schlimmste» از was استفاده می‌کنیم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f6",
+      "instruction": "جمله را کامل کنید",
+      "sentence": "Vieles, {0} er sagt, stimmt nicht.",
+      "options": ["was", "das", "die", "der"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "«was» درست است. بعد از «vieles» باید از was استفاده کنیم." }
+    },
+    {
+      "type": "dialog",
+      "id": "d2",
+      "title": "گفتگو در رستوران",
+      "scene": {
+        "location": "restaurant",
+        "description": { "de": "Zwei Kollegen sprechen über das Essen.", "fa": "دو همکار درباره غذا صحبت می‌کنند." }
+      },
+      "lines": [
+        { "speaker": "Maria", "text": { "de": "Das Einzige, was ich hier nicht mag, ist das Dessert.", "fa": "تنها چیزی که اینجا دوست ندارم، دسر است." }, "mood": "neutral" },
+        { "speaker": "Klaus", "text": { "de": "Alles, was ich probiert habe, war ausgezeichnet.", "fa": "هر آنچه امتحان کردم، عالی بود." }, "mood": "happy" },
+        { "speaker": "Maria", "text": { "de": "Das Beste, was sie kochen, ist die Pasta.", "fa": "بهترین چیزی که می‌پزند، پاستا است." }, "mood": "excited" },
+        { "speaker": "Klaus", "text": { "de": "Etwas, was ich empfehlen kann, ist der Fisch.", "fa": "چیزی که می‌توانم پیشنهاد کنم، ماهی است." }, "mood": "happy" },
+        { "speaker": "Maria", "text": { "de": "Das Wichtigste, was für mich zählt, ist frisches Gemüse.", "fa": "مهم‌ترین چیزی که برای من اهمیت دارد، سبزیجات تازه است." }, "mood": "neutral" }
+      ],
+      "questions": [
+        { "question": "ماریا چه چیزی را دوست ندارد؟", "options": ["پاستا", "دسر", "ماهی"], "correctIndex": 1, "explanation": "ماریا گفت: Das Einzige, was ich hier nicht mag, ist das Dessert." },
+        { "question": "کلاوس چه چیزی را پیشنهاد می‌کند؟", "options": ["پاستا", "دسر", "ماهی"], "correctIndex": 2, "explanation": "کلاوس گفت: Etwas, was ich empfehlen kann, ist der Fisch." }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s10",
+      "title": "was بعد از صفات اسم‌شده",
+      "content": "**Relativpronomen 'was' nach nominalisierten Adjektiven**\n\nبعد از صفاتی که به اسم تبدیل شده‌اند (با das)، از **was** استفاده می‌کنیم.\n\n**صفات اسم‌شده رایج:**\n- **das Wichtige** (مهم)\n- **das Gute** (خوب)\n- **das Interessante** (جالب)\n- **das Schöne** (زیبا)\n- **das Besondere** (ویژه)\n- **das Positive** (مثبت)\n\n**ساختار:**\n> **das + صفت اسم‌شده** + **,** + **was** + ... + Verb\n\n**مثال‌ها:**\n> **Das Wichtige**, **was** ich sagen möchte, ist...\n> مهم‌ترین چیزی که می‌خواهم بگویم، این است که...\n\n> **Das Gute**, **was** passiert ist, ist...\n> چیز خوبی که اتفاق افتاده، این است که...\n\n> **Das Interessante**, **was** ich gehört habe, ist...\n> چیز جالبی که شنیده‌ام، این است که...\n\n**تفاوت با فارسی:**\nدر فارسی ساختار مشابهی نداریم و معمولاً از «چیزی که» یا «آنچه» استفاده می‌کنیم.",
+      "examples": [
+        { "de": "Das Schöne, was ich erlebt habe, ist unvergesslich.", "fa": "چیز زیبایی که تجربه کردم، فراموش‌نشدنی است." },
+        { "de": "Das Besondere, was sie macht, ist ihre Freundlichkeit.", "fa": "چیز ویژه‌ای که او انجام می‌دهد، مهربانی‌اش است." }
+      ]
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "هر جمله را با ادامه مناسب جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Alles, was..." },
+        { "id": "i2", "text": "Das Beste, was..." },
+        { "id": "i3", "text": "Nichts, was..." },
+        { "id": "i4", "text": "Das Wichtige, was..." }
+      ],
+      "matches": [
+        { "id": "m1", "text": "ich brauche, ist hier." },
+        { "id": "m2", "text": "passieren kann, ist Frieden." },
+        { "id": "m3", "text": "er sagt, stimmt." },
+        { "id": "m4", "text": "ich sagen möchte, ist das." }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "هر آنچه می‌گویم، حقیقت است.",
+      "sentenceTemplate": "Alles, {0} ich sage, {1} wahr.",
+      "options": ["was", "das", "ist", "sind", "war", "bin"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Alles, was ich sage, ist wahr.", "fa": "هر آنچه می‌گویم، حقیقت است." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "بهترین چیزی که می‌توانم بگویم، این است.",
+      "sentenceTemplate": "Das {0}, {1} ich sagen kann, ist das.",
+      "options": ["Beste", "Gute", "was", "das", "die", "der"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Das Beste, was ich sagen kann, ist das.", "fa": "بهترین چیزی که می‌توانم بگویم، این است." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: تجربیات سفر",
+      "passage": {
+        "de": "Anna erzählt von ihrer Weltreise:\n\n\"Das Schönste, was ich gesehen habe, war der Sonnenaufgang in Nepal. Das Beste, was mir passiert ist, war die Begegnung mit freundlichen Menschen. Alles, was ich erlebt habe, hat mich verändert.\n\nDas Einzige, was ich bereue, ist, dass die Reise zu kurz war. Nichts, was ich vorher kannte, konnte mich auf diese Erfahrung vorbereiten. Das Wichtige, was ich gelernt habe, ist, dass die Welt größer ist als meine Probleme.\n\nEtwas, was ich nie vergessen werde, ist die Gastfreundschaft der Menschen. Vieles, was ich dachte, hat sich als falsch erwiesen.\"",
+        "fa": "آنا از سفر دور دنیا خود تعریف می‌کند:\n\n«زیباترین چیزی که دیدم، طلوع آفتاب در نپال بود. بهترین چیزی که برایم اتفاق افتاد، ملاقات با مردم مهربان بود. هر آنچه تجربه کردم، مرا تغییر داده است.\n\nتنها چیزی که پشیمانم، این است که سفر خیلی کوتاه بود. هیچ چیزی که قبلاً می‌دانستم، نتوانست من را برای این تجربه آماده کند. مهم‌ترین چیزی که یاد گرفتم، این است که دنیا بزرگ‌تر از مشکلات من است.\n\nچیزی که هرگز فراموش نخواهم کرد، مهمان‌نوازی مردم است. خیلی از چیزهایی که فکر می‌کردم، اشتباه بودند.»"
+      },
+      "questions": [
+        { "question": "زیباترین چیزی که آنا دید چه بود؟", "options": ["غروب در ایتالیا", "طلوع در نپال", "دریا در یونان"], "correctIndex": 1, "explanation": "در متن آمده: Das Schönste, was ich gesehen habe, war der Sonnenaufgang in Nepal." },
+        { "question": "آنا از چه چیزی پشیمان است؟", "options": ["از رفتن به سفر", "از کوتاهی مدت سفر", "از ملاقات با مردم"], "correctIndex": 1, "explanation": "در متن آمده: Das Einzige, was ich bereue, ist, dass die Reise zu kurz war." },
+        { "question": "مهم‌ترین چیزی که آنا یاد گرفت چیست؟", "options": ["دنیا بزرگ‌تر از مشکلاتش است", "مردم مهربان هستند", "سفر گران است"], "correctIndex": 0, "explanation": "در متن آمده: Das Wichtige, was ich gelernt habe, ist, dass die Welt größer ist als meine Probleme." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der neue Job", "fa": "شغل جدید" },
+      "characters": ["Sarah", "Chef"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Sarah hat ein Vorstellungsgespräch für ihren Traumjob.", "fa": "سارا برای شغل رویایی‌اش مصاحبه دارد." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Chef",
+          "text": { "de": "Das Wichtigste, was wir suchen, ist Teamfähigkeit.", "fa": "مهم‌ترین چیزی که دنبالش هستیم، توانایی کار تیمی است." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sarah",
+          "text": { "de": "Alles, was ich in meinem letzten Job gelernt habe, war Teamarbeit.", "fa": "هر آنچه در شغل قبلی‌ام یاد گرفتم، کار تیمی بود." },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "چه چیزی برای شرکت مهم است؟",
+          "options": ["تحصیلات عالی", "توانایی کار تیمی", "سابقه کار طولانی"],
+          "correctIndex": 1,
+          "explanation": "رئیس گفت: Das Wichtigste, was wir suchen, ist Teamfähigkeit."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Chef",
+          "text": { "de": "Das Beste, was Sie mitbringen können, ist Ihre Erfahrung.", "fa": "بهترین چیزی که می‌توانید به همراه بیاورید، تجربه‌تان است." },
+          "mood": "happy"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sarah",
+          "text": { "de": "Etwas, was ich immer tue, ist mein Bestes zu geben.", "fa": "چیزی که همیشه انجام می‌دهم، بهترین تلاشم را کردن است." },
+          "mood": "neutral"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Eine Woche später bekommt Sarah einen Anruf.", "fa": "یک هفته بعد سارا یک تماس دریافت می‌کند." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Chef",
+          "text": { "de": "Das Einzige, was wir noch brauchen, ist Ihre Zusage!", "fa": "تنها چیزی که هنوز نیاز داریم، قبولی شماست!" },
+          "mood": "excited"
+        },
+        {
+          "type": "question",
+          "question": "در نهایت چه اتفاقی افتاد؟",
+          "options": ["سارا شغل را گرفت", "سارا رد شد", "معلوم نیست"],
+          "correctIndex": 0,
+          "explanation": "رئیس گفت: Das Einzige, was wir noch brauchen, ist Ihre Zusage! - یعنی شغل را به او پیشنهاد داد."
+        }
+      ]
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: ضمیر موصولی was",
+      "instruction": "پاسخ درست را انتخاب کنید",
+      "questions": [
+        { "prompt": "بعد از alles از چه استفاده می‌کنیم؟", "left": "was", "right": "das", "correctSide": "left" },
+        { "prompt": "das Beste, ... ich weiß", "left": "was", "right": "der", "correctSide": "left" },
+        { "prompt": "Nichts, ... er sagt", "left": "das", "right": "was", "correctSide": "right" },
+        { "prompt": "بعد از صفت عالی کدام؟", "left": "was", "right": "die", "correctSide": "left" },
+        { "prompt": "das Relativpronomen یعنی؟", "left": "ضمیر موصولی", "right": "ضمیر شخصی", "correctSide": "left" },
+        { "prompt": "Etwas, ... ich vergesse", "left": "der", "right": "was", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Alles, was ich brauche, ist Zeit.",
+      "translation": "هر آنچه نیاز دارم، زمان است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Das Beste, was passieren kann, ist Frieden.",
+      "translation": "بهترین چیزی که می‌تواند اتفاق بیفتد، صلح است."
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Nichts, was er sagt, stimmt.",
+      "translation": "هیچ چیزی که او می‌گوید، درست نیست."
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: was یا das؟",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "Alles, ... ich weiß", "options": ["was", "das"], "correctAnswerIndex": 0 },
+        { "question": "Das Buch, ... ich lese", "options": ["was", "das"], "correctAnswerIndex": 1 },
+        { "question": "Nichts, ... er macht", "options": ["was", "das"], "correctAnswerIndex": 0 },
+        { "question": "Das Auto, ... ich fahre", "options": ["was", "das"], "correctAnswerIndex": 1 },
+        { "question": "Etwas, ... wichtig ist", "options": ["was", "das"], "correctAnswerIndex": 0 },
+        { "question": "Das Beste, ... ich kenne", "options": ["was", "das"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: واژگان درس",
+      "pairs": [
+        { "de": "das Relativpronomen", "fa": "ضمیر موصولی" },
+        { "de": "der Nebensatz", "fa": "جمله پیرو" },
+        { "de": "das Superlativ", "fa": "صفت عالی" },
+        { "de": "das Indefinitpronomen", "fa": "ضمیر نامعین" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات مربوط به ضمایر موصولی",
+      "instruction": "کلمات آلمانی مربوط به این درس را پیدا کنید",
+      "targetWords": ["Relativpronomen", "Nebensatz", "Superlativ", "Indefinitpronomen", "verweisen"],
+      "gridSize": { "rows": 10, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "das Relativpronomen", "fa": "ضمیر موصولی", "options": ["ضمیر شخصی", "ضمیر موصولی", "ضمیر ملکی", "ضمیر اشاره"], "correctIndex": 1 },
+        { "de": "das Superlativ", "fa": "صفت عالی", "options": ["صفت ساده", "صفت عالی", "صفت تفضیلی", "صفت ملکی"], "correctIndex": 1 },
+        { "de": "verweisen", "fa": "اشاره کردن", "options": ["پرسیدن", "اشاره کردن", "جواب دادن", "فراموش کردن"], "correctIndex": 1 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "تبریک! درس تمام شد!",
+      "message": "شما ضمیر موصولی «was» و کاربردهای آن را یاد گرفتید!",
+      "keyPoints": [
+        "«was» بعد از ضمایر نامعین (alles, nichts, etwas, vieles) استفاده می‌شود",
+        "«was» بعد از صفات عالی (das Beste, das Schönste) به کار می‌رود",
+        "«was» بعد از صفات اسم‌شده (das Wichtige, das Gute) استفاده می‌شود",
+        "فعل در جمله موصولی با was به انتها می‌رود",
+        "این ساختار در فارسی معادل مستقیم ندارد و از «آنچه» یا «چیزی که» استفاده می‌شود",
+        "das Relativpronomen = ضمیر موصولی، der Nebensatz = جمله پیرو"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "das Relativpronomen", "fa": "ضمیر موصولی" } },
+        { "word": { "de": "der Nebensatz", "fa": "جمله پیرو، جمله فرعی" } },
+        { "word": { "de": "das Superlativ", "fa": "صفت عالی، بالاترین درجه" } },
+        { "word": { "de": "das Indefinitpronomen", "fa": "ضمیر نامعین" } },
+        { "word": { "de": "verweisen", "fa": "اشاره کردن، ارجاع دادن" } },
+        { "word": { "de": "beziehen", "fa": "مربوط بودن، ارتباط داشتن" } }
+      ]
+    }
+  ]
+}

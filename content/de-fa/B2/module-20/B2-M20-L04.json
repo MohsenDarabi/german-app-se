@@ -1,0 +1,562 @@
+{
+  "id": "B2-M20-L04",
+  "languagePair": "de-fa",
+  "source": { "code": "de", "name": "Deutsch" },
+  "target": { "code": "fa", "name": "فارسی" },
+  "title": { "de": "Prüfungsvorbereitung B2: Strategien & Tipps", "fa": "آمادگی آزمون B2: استراتژی‌ها و نکات" },
+  "description": "مرور جامع برای آمادگی آزمون B2 آلمانی (Goethe-Zertifikat B2، telc B2): استراتژی‌های Leseverstehen (درک مطلب)، Hörverstehen (درک شنیداری)، Schreiben (نوشتن)، و Sprechen (صحبت کردن). تمرکز بر الگوهای کلیدی گرامر سطح B2، تکنیک‌های مدیریت وقت، و نکات کلیدی برای موفقیت در آزمون.",
+  "level": "B2",
+  "module": 20,
+  "lessonNumber": 4,
+  "totalSteps": 45,
+  "estimatedMinutes": 50,
+  "vocabulary": [
+    { "de": "die Prüfung", "fa": "آزمون", "grammar": { "pos": "noun", "gender": "f" } },
+    { "de": "die Vorbereitung", "fa": "آمادگی", "grammar": { "pos": "noun", "gender": "f" } },
+    { "de": "das Leseverstehen", "fa": "درک مطلب", "grammar": { "pos": "noun", "gender": "n" } },
+    { "de": "das Hörverstehen", "fa": "درک شنیداری", "grammar": { "pos": "noun", "gender": "n" } },
+    { "de": "die Strategie", "fa": "استراتژی", "grammar": { "pos": "noun", "gender": "f" } },
+    { "de": "bestehen", "fa": "قبول شدن", "grammar": { "pos": "verb" } }
+  ],
+  "steps": [
+    {
+      "type": "grammar-tip",
+      "id": "s1",
+      "title": "مرور کلی: آمادگی آزمون B2",
+      "content": "**Prüfungsvorbereitung B2 = آمادگی آزمون B2**\n\nآزمون‌های B2 آلمانی (Goethe-Zertifikat B2، telc B2، ÖSD B2) چهار بخش اصلی دارند:\n\n**1. Leseverstehen = درک مطلب (60-80 دقیقه)**\n- خواندن متون پیچیده (مقالات، گزارش‌ها، نامه‌های رسمی)\n- فهم ایده اصلی و جزئیات\n- تشخیص نظرات و استدلال‌ها\n\n**2. Hörverstehen = درک شنیداری (40 دقیقه)**\n- گوش دادن به مکالمات، مصاحبه‌ها، سخنرانی‌ها\n- فهم اطلاعات خاص و کلی\n- تشخیص نگرش و احساسات\n\n**3. Schriftlicher Ausdruck = نوشتن (75-80 دقیقه)**\n- نوشتن نامه رسمی/غیررسمی\n- نوشتن مقاله یا گزارش\n- ارائه نظر و استدلال\n\n**4. Mündlicher Ausdruck = صحبت کردن (15-20 دقیقه)**\n- ارائه کوتاه\n- بحث و مذاکره\n- بیان نظر و واکنش\n\n**نکته کلیدی برای فارسی‌زبانان:**\nاستراتژی و مدیریت وقت به اندازه دانش زبان مهم است!",
+      "examples": [
+        { "de": "Lesen Sie zuerst die Fragen, dann den Text. (استراتژی درک مطلب)", "fa": "ابتدا سوالات را بخوانید، سپس متن را." },
+        { "de": "Achten Sie auf Signalwörter wie 'jedoch', 'trotzdem', 'deshalb'. (نشانه‌های کلیدی)", "fa": "به کلمات نشانه‌گر مثل 'jedoch'، 'trotzdem'، 'deshalb' توجه کنید." },
+        { "de": "Planen Sie Ihre Zeit: 5 Minuten für Planung, 65 Minuten für Schreiben, 10 Minuten für Korrektur. (مدیریت وقت)", "fa": "زمان خود را برنامه‌ریزی کنید: ۵ دقیقه برای برنامه‌ریزی، ۶۵ دقیقه برای نوشتن، ۱۰ دقیقه برای اصلاح." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s2",
+      "word": { "de": "die Prüfung", "fa": "آزمون" },
+      "example": { "text": { "de": "Die B2-Prüfung dauert etwa 3 Stunden.", "fa": "آزمون B2 حدود ۳ ساعت طول می‌کشد." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl1",
+      "word": "Prüfung",
+      "translation": "آزمون",
+      "syllables": ["Prü", "fung"],
+      "distractors": ["Pra", "fong", "Pru", "fang"]
+    },
+    {
+      "type": "new-word",
+      "id": "s3",
+      "word": { "de": "die Vorbereitung", "fa": "آمادگی" },
+      "example": { "text": { "de": "Eine gute Vorbereitung ist der Schlüssel zum Erfolg.", "fa": "آمادگی خوب کلید موفقیت است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl2",
+      "word": "Vorbereitung",
+      "translation": "آمادگی",
+      "syllables": ["Vor", "be", "rei", "tung"],
+      "distractors": ["Ver", "ba", "ra", "tong"]
+    },
+    {
+      "type": "new-word",
+      "id": "s4",
+      "word": { "de": "das Leseverstehen", "fa": "درک مطلب" },
+      "example": { "text": { "de": "Das Leseverstehen umfasst vier verschiedene Texte.", "fa": "درک مطلب شامل چهار متن مختلف است." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl3",
+      "word": "Leseverstehen",
+      "translation": "درک مطلب",
+      "syllables": ["Le", "se", "ver", "ste", "hen"],
+      "distractors": ["La", "sa", "var", "sta"]
+    },
+    {
+      "type": "new-word",
+      "id": "s5",
+      "word": { "de": "das Hörverstehen", "fa": "درک شنیداری" },
+      "example": { "text": { "de": "Beim Hörverstehen hören Sie den Text zweimal.", "fa": "در درک شنیداری، متن را دو بار می‌شنوید." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl4",
+      "word": "Hörverstehen",
+      "translation": "درک شنیداری",
+      "syllables": ["Hör", "ver", "ste", "hen"],
+      "distractors": ["Her", "var", "sta", "hon"]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s6",
+      "title": "استراتژی‌های Leseverstehen - درک مطلب",
+      "content": "**کلیدهای موفقیت در درک مطلب B2:**\n\n**قبل از خواندن:**\n1. **ابتدا سوالات را بخوانید** - بدانید به دنبال چه چیزی هستید\n2. **کلمات کلیدی را مشخص کنید** - در سوالات و گزینه‌ها\n3. **زمان را تقسیم کنید** - حداکثر ۲۰ دقیقه برای هر متن\n\n**هنگام خواندن:**\n4. **خواندن سرسری (Skimming)** - ایده کلی را بفهمید\n5. **خواندن جزئی (Scanning)** - جزئیات خاص را پیدا کنید\n6. **به کلمات نشانه‌گر توجه کنید:**\n   - تضاد: **jedoch, trotzdem, dennoch, obwohl**\n   - علت: **deshalb, daher, aus diesem Grund**\n   - نتیجه: **folglich, infolgedessen, somit**\n\n**نکات مهم:**\n- همه کلمات را نباید بدانید - معنی کلی مهم است\n- از متن استنتاج کنید - معنی کلمات ناآشنا را حدس بزنید\n- گزینه‌های غلط اغلب با کلمات متن شباهت دارند ولی معنی متفاوت است\n\n**اشتباهات رایج فارسی‌زبانان:**\n- ترجمه کلمه به کلمه - به معنی کلی فکر کنید\n- صرف وقت زیاد روی یک سوال - بگذرید و بعد برگردید",
+      "examples": [
+        { "de": "Der Text befürwortet die neue Regelung, obwohl es Kritik gibt. (تضاد)", "fa": "متن از قانون جدید حمایت می‌کند، اگرچه انتقادهایی وجود دارد." },
+        { "de": "Deshalb ist es wichtig, frühzeitig zu planen. (علت و معلول)", "fa": "بنابراین مهم است که زودتر برنامه‌ریزی کنید." },
+        { "de": "Die Studie zeigt folglich einen klaren Zusammenhang. (نتیجه‌گیری)", "fa": "مطالعه در نتیجه یک ارتباط روشن نشان می‌دهد." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc1",
+      "question": "بهترین استراتژی برای شروع درک مطلب کدام است؟",
+      "options": [
+        "ابتدا متن را از اول تا آخر بخوانید، سپس سوالات را ببینید",
+        "ابتدا سوالات را بخوانید، سپس با هدف متن را بخوانید",
+        "فقط پاراگراف اول و آخر را بخوانید",
+        "تمام کلمات ناآشنا را در لغت‌نامه جستجو کنید"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "عالی! خواندن سوالات ابتدا به شما هدف می‌دهد و زمان را صرفه‌جویی می‌کند.", "incorrect": "ابتدا سوالات را بخوانید تا بدانید به دنبال چه چیزی هستید. این باعث خواندن هدفمند می‌شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f1",
+      "instruction": "کلمه نشانه‌گر مناسب را انتخاب کنید (تضاد)",
+      "sentence": "Die Lösung ist einfach, {0} funktioniert sie nicht immer.",
+      "options": ["deshalb", "dennoch", "folglich", "somit"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "dennoch = با این حال، با وجود این. کلمه نشانه‌گر تضاد است. راه‌حل ساده است، ولی همیشه کار نمی‌کند." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s7",
+      "title": "استراتژی‌های Hörverstehen - درک شنیداری",
+      "content": "**کلیدهای موفقیت در درک شنیداری B2:**\n\n**قبل از گوش دادن:**\n1. **سوالات را بخوانید** - در ۳۰ ثانیه اول\n2. **کلمات کلیدی را مشخص کنید** - چه چیزی باید بشنوید\n3. **گزینه‌ها را پیش‌بینی کنید** - چه جوابی منطقی است\n\n**هنگام گوش دادن (پخش اول):**\n4. **ایده کلی را بگیرید** - موضوع اصلی چیست؟\n5. **جوابهای قطعی را بنویسید** - مطمئن‌ها را علامت بزنید\n6. **نگران کلمات ناآشنا نباشید** - به جریان کلی توجه کنید\n\n**هنگام گوش دادن (پخش دوم):**\n7. **جزئیات را بگیرید** - جوابهای نامطمئن را پیدا کنید\n8. **به تغییر نگرش توجه کنید** - aber، allerdings، jedoch\n9. **اطلاعات خاص را یادداشت کنید** - اعداد، تاریخ‌ها، نام‌ها\n\n**نکات مهم:**\n- جواب همیشه با کلمات متن یکسان نیست - paraphrase می‌شود\n- به لحن و احساسات گوینده توجه کنید - مثبت یا منفی؟\n- اگر جوابی را از دست دادید، بگذرید - وقت را هدر ندهید\n\n**اشتباهات رایج:**\n- تلاش برای نوشتن همه چیز - فقط کلیدها را بنویسید\n- ترجمه به فارسی در ذهن - به آلمانی فکر کنید",
+      "examples": [
+        { "de": "Die Sprecherin ist zunächst skeptisch, doch später überzeugt. (تغییر نگرش)", "fa": "گوینده ابتدا تردید دارد، ولی بعد متقاعد می‌شود." },
+        { "de": "Er erwähnt drei Vorteile: Erstens... Zweitens... Drittens... (ساختار)", "fa": "او سه مزیت ذکر می‌کند: اول... دوم... سوم..." },
+        { "de": "Sie betont, dass es wichtig sei, frühzeitig zu beginnen. (تأکید)", "fa": "او تأکید می‌کند که مهم است زود شروع کنیم." }
+      ]
+    },
+    {
+      "type": "new-word",
+      "id": "s8",
+      "word": { "de": "die Strategie", "fa": "استراتژی" },
+      "example": { "text": { "de": "Mit der richtigen Strategie können Sie die Prüfung bestehen.", "fa": "با استراتژی درست می‌توانید آزمون را بگذرانید." } }
+    },
+    {
+      "type": "syllable-spelling",
+      "id": "syl5",
+      "word": "Strategie",
+      "translation": "استراتژی",
+      "syllables": ["Stra", "te", "gie"],
+      "distractors": ["Stro", "ta", "gai", "Stre"]
+    },
+    {
+      "type": "new-word",
+      "id": "s9",
+      "word": { "de": "bestehen", "fa": "قبول شدن" },
+      "example": { "text": { "de": "Um zu bestehen, brauchen Sie mindestens 60% der Punkte.", "fa": "برای قبولی، حداقل ۶۰٪ از امتیازها را نیاز دارید." } }
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc2",
+      "question": "در درک شنیداری، چرا پخش دوم مهم است؟",
+      "options": [
+        "فقط برای چک کردن جوابها",
+        "برای گرفتن جزئیات و جوابهای نامطمئن",
+        "برای نوشتن تمام متن",
+        "فقط برای متن را دوباره شنیدن"
+      ],
+      "correctAnswerIndex": 1,
+      "feedback": { "correct": "دقیق! پخش اول برای ایده کلی، پخش دوم برای جزئیات و جوابهای نامطمئن است.", "incorrect": "پخش دوم فرصت است برای گرفتن جزئیات و تکمیل جوابهایی که در پخش اول مطمئن نبودید." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s10",
+      "title": "استراتژی‌های Schreiben - نوشتن",
+      "content": "**کلیدهای موفقیت در بخش نوشتن B2:**\n\n**مدیریت زمان (۷۵-۸۰ دقیقه):**\n- **۵ دقیقه:** برنامه‌ریزی و طرح کلی (Mindmap)\n- **۶۵ دقیقه:** نوشتن متن اصلی\n- **۱۰ دقیقه:** خواندن و اصلاح اشتباهات\n\n**ساختار نامه رسمی:**\n```\n1. Anrede (خطاب): Sehr geehrte Damen und Herren,\n2. Einleitung (مقدمه): Bezug auf... / Ich wende mich an Sie...\n3. Hauptteil (متن اصلی): Begründung, Details\n4. Schluss (نتیجه): Bitte um Antwort / Danksagung\n5. Grußformel (تعارف): Mit freundlichen Grüßen\n```\n\n**ساختار مقاله/گزارش:**\n```\n1. Einleitung (مقدمه): Thema vorstellen\n2. Hauptteil (متن اصلی):\n   - Argument 1 + Beispiel\n   - Argument 2 + Beispiel\n   - Gegenargument + Widerlegung\n3. Schluss (نتیجه): Zusammenfassung + eigene Meinung\n```\n\n**کلمات و عبارات کلیدی B2:**\n- **نظر:** Meiner Meinung nach, Ich bin der Ansicht, dass...\n- **استدلال:** Erstens, Darüber hinaus, Außerdem\n- **مثال:** Zum Beispiel, Dies zeigt sich daran, dass...\n- **تضاد:** Allerdings, Jedoch, Andererseits\n- **نتیجه:** Zusammenfassend, Abschließend, Somit\n\n**چک‌لیست اصلاح:**\n✓ فعل صرف شده؟\n✓ جنس اسم درست؟ (der/die/das)\n✓ حالت درست؟ (Nominativ/Akkusativ/Dativ/Genitiv)\n✓ ترتیب کلمات؟ (فعل در جایگاه دوم)\n✓ پاراگراف‌بندی؟",
+      "examples": [
+        { "de": "Sehr geehrte Damen und Herren, ich wende mich an Sie, weil... (نامه رسمی)", "fa": "خانم/آقای محترم، من به شما مراجعه می‌کنم، زیرا..." },
+        { "de": "Meiner Meinung nach ist es wichtig, dass wir... (بیان نظر)", "fa": "به نظر من مهم است که ما..." },
+        { "de": "Zusammenfassend lässt sich sagen, dass... (نتیجه‌گیری)", "fa": "در خلاصه می‌توان گفت که..." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f2",
+      "instruction": "عبارت مناسب برای شروع نامه رسمی را انتخاب کنید",
+      "sentence": "{0}, hiermit möchte ich mich für die Stelle bewerben.",
+      "options": ["Guten Tag", "Sehr geehrte Damen und Herren", "Liebe Freunde", "Hey"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Sehr geehrte Damen und Herren = خانم/آقای محترم. این خطاب رسمی است و در نامه‌های اداری استفاده می‌شود." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f3",
+      "instruction": "عبارت مناسب برای بیان نظر را انتخاب کنید",
+      "sentence": "{0} ist Umweltschutz ein wichtiges Thema.",
+      "options": ["Ich denke", "Meiner Meinung nach", "Vielleicht", "Manchmal"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "Meiner Meinung nach = به نظر من. این عبارت رسمی برای بیان نظر در سطح B2 است." }
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s11",
+      "title": "استراتژی‌های Sprechen - صحبت کردن",
+      "content": "**کلیدهای موفقیت در بخش صحبت کردن B2:**\n\n**بخش ۱: ارائه (Präsentation) - ۳-۴ دقیقه**\n- یک موضوع انتخاب کنید و ارائه دهید\n- **ساختار:**\n  1. Einleitung: مقدمه و معرفی موضوع\n  2. Hauptteil: نکات اصلی (۲-۳ نکته)\n  3. Schluss: نتیجه‌گیری و نظر شخصی\n\n**بخش ۲: بحث (Diskussion) - ۴-۵ دقیقه**\n- پاسخ به سوالات ممتحن\n- بیان نظر و استدلال\n- موافقت یا مخالفت با احترام\n\n**عبارات کلیدی:**\n- **شروع:** Ich möchte über... sprechen / Mein Thema ist...\n- **ترتیب:** Erstens, Zweitens, Schließlich\n- **نظر:** Ich bin der Meinung, dass... / Meiner Ansicht nach...\n- **موافقت:** Da stimme ich zu / Das sehe ich genauso\n- **مخالفت:** Da bin ich anderer Meinung / Ich sehe das anders\n- **مثال:** Ein gutes Beispiel dafür ist... / Das zeigt sich daran, dass...\n- **نتیجه:** Zusammenfassend kann man sagen... / Abschließend...\n\n**نکات مهم:**\n- **آرام صحبت کنید** - واضح و قابل فهم\n- **اشتباه نکته مهم نیست** - خودتان را اصلاح کنید و ادامه دهید\n- **زمان را پر کنید** - اگر نمی‌دانید، توضیح دهید یا مثال بزنید\n- **به سوال پاسخ دهید** - منحرف نشوید\n\n**اشتباهات رایج فارسی‌زبانان:**\n- صحبت خیلی سریع - نفس بگیرید!\n- ترجمه مستقیم از فارسی - به آلمانی فکر کنید\n- سکوت طولانی - چیزی بگویید، حتی اگر ساده باشد",
+      "examples": [
+        { "de": "Ich möchte über das Thema Umweltschutz sprechen. (شروع ارائه)", "fa": "می‌خواهم درباره موضوع محیط‌زیست صحبت کنم." },
+        { "de": "Meiner Ansicht nach ist es wichtig, dass wir mehr recyceln. (بیان نظر)", "fa": "به نظر من مهم است که بیشتر بازیافت کنیم." },
+        { "de": "Da stimme ich zu, allerdings gibt es auch Nachteile. (موافقت با تردید)", "fa": "با این موافقم، اما معایبی هم وجود دارد." }
+      ]
+    },
+    {
+      "type": "multiple-choice",
+      "id": "mc3",
+      "question": "بهترین واکنش در بخش صحبت کردن اگر یک کلمه را نمی‌دانید چیست؟",
+      "options": [
+        "سکوت کنید و منتظر سوال بعدی باشید",
+        "به فارسی توضیح دهید",
+        "با کلمات دیگر توضیح دهید یا مثال بزنید",
+        "بگویید 'Ich weiß nicht' و بگذرید"
+      ],
+      "correctAnswerIndex": 2,
+      "feedback": { "correct": "عالی! Paraphrase کردن (توضیح با کلمات دیگر) نشان می‌دهد که می‌توانید خودتان را بیان کنید.", "incorrect": "بهترین کار این است که با کلمات دیگر توضیح دهید یا مثال بزنید. این مهارت مهمی در B2 است." }
+    },
+    {
+      "type": "dialog",
+      "id": "d1",
+      "title": "مشاوره آمادگی آزمون",
+      "scene": {
+        "location": "language school",
+        "description": { "de": "In der Sprachschule, Beratungsgespräch", "fa": "در آموزشگاه زبان، جلسه مشاوره" }
+      },
+      "lines": [
+        { "speaker": "Maria", "text": { "de": "Ich bin sehr nervös wegen der B2-Prüfung nächste Woche.", "fa": "من خیلی نگران آزمون B2 هفته آینده هستم." }, "mood": "confused" },
+        { "speaker": "Lehrerin", "text": { "de": "Das ist normal. Haben Sie die Modellprüfungen gemacht?", "fa": "این طبیعی است. آزمون‌های نمونه را انجام داده‌اید؟" }, "mood": "neutral" },
+        { "speaker": "Maria", "text": { "de": "Ja, aber beim Hörverstehen habe ich Schwierigkeiten. Ich verstehe nicht alles.", "fa": "بله، ولی در درک شنیداری مشکل دارم. همه چیز را نمی‌فهمم." }, "mood": "sad" },
+        { "speaker": "Lehrerin", "text": { "de": "Sie müssen nicht jedes Wort verstehen. Konzentrieren Sie sich auf die Hauptinformation.", "fa": "شما نباید هر کلمه را بفهمید. روی اطلاعات اصلی تمرکز کنید." }, "mood": "happy" },
+        { "speaker": "Maria", "text": { "de": "Und beim Schreiben? Ich mache oft Fehler mit den Artikeln.", "fa": "و در نوشتن؟ من اغلب با حرف تعریف اشتباه می‌کنم." }, "mood": "confused" },
+        { "speaker": "Lehrerin", "text": { "de": "Planen Sie 10 Minuten für die Korrektur ein. So können Sie viele Fehler selbst finden.", "fa": "۱۰ دقیقه برای اصلاح برنامه‌ریزی کنید. اینطور می‌توانید خیلی از اشتباهات را خودتان پیدا کنید." }, "mood": "excited" }
+      ],
+      "questions": [
+        { "question": "ماریا در کدام بخش بیشترین مشکل را دارد؟", "options": ["نوشتن", "درک شنیداری", "صحبت کردن"], "correctIndex": 1, "explanation": "ماریا می‌گوید: beim Hörverstehen habe ich Schwierigkeiten." },
+        { "question": "معلم چه توصیه‌ای برای نوشتن می‌دهد؟", "options": ["۵ دقیقه برای برنامه‌ریزی", "۱۰ دقیقه برای اصلاح", "سریع‌تر بنویسید"], "correctIndex": 1, "explanation": "معلم می‌گوید: Planen Sie 10 Minuten für die Korrektur ein." }
+      ]
+    },
+    {
+      "type": "grammar-tip",
+      "id": "s12",
+      "title": "گرامر کلیدی B2: مرور سریع",
+      "content": "**الگوهای گرامری که در آزمون B2 مهم هستند:**\n\n**۱. جملات فرعی (Nebensätze):**\n- dass, weil, obwohl, wenn, damit, sodass\n- **فعل در انتها!**\n\n**۲. Konjunktiv II (شرطی):**\n- würde + Infinitiv = ... می‌کردم\n- hätte/wäre + Partizip II = ... کرده بودم\n\n**۳. Passiv (مجهول):**\n- Präsens: wird + Partizip II\n- Präteritum: wurde + Partizip II\n\n**۴. حروف اضافه با حالات:**\n- Akkusativ: durch, für, gegen, ohne, um\n- Dativ: aus, bei, mit, nach, seit, von, zu\n- Genitiv: während, wegen, trotz, innerhalb\n\n**۵. جملات نسبی (Relativsätze):**\n- der/die/das در نقش فاعل یا مفعول\n\n**۶. Partizip I & II به عنوان صفت:**\n- schlafend = در حال خوابیدن\n- geschlafen = خوابیده\n\n**نکته برای فارسی‌زبانان:**\nدر فارسی ترتیب کلمات آزاد است، ولی در آلمانی **ترتیب کلمات خیلی مهم است!**\n- جمله اصلی: فعل جایگاه ۲\n- جمله فرعی: فعل آخر\n- سوالی: فعل اول",
+      "examples": [
+        { "de": "Ich glaube, dass die Prüfung schwer ist. (جمله فرعی: فعل آخر)", "fa": "فکر می‌کنم که آزمون سخت است." },
+        { "de": "Wenn ich mehr Zeit hätte, würde ich besser lernen. (Konjunktiv II)", "fa": "اگر زمان بیشتری داشتم، بهتر یاد می‌گرفتم." },
+        { "de": "Die Prüfung wird von vielen Kandidaten abgelegt. (Passiv)", "fa": "آزمون توسط داوطلبان زیادی گذرانده می‌شود." }
+      ]
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f4",
+      "instruction": "جمله فرعی را کامل کنید (فعل آخر!)",
+      "sentence": "Ich bin nervös, weil ich die Prüfung morgen {0}.",
+      "options": ["habe", "hatte", "haben", "hat"],
+      "correctAnswers": [0],
+      "feedback": { "explanation": "در جمله فرعی با weil، فعل در انتها می‌آید. من نگرانم، چون فردا آزمون دارم." }
+    },
+    {
+      "type": "fill-in-blank",
+      "id": "f5",
+      "instruction": "Konjunktiv II را کامل کنید",
+      "sentence": "Wenn ich mehr Zeit {0}, würde ich alle Modellprüfungen machen.",
+      "options": ["habe", "hätte", "haben", "hatte"],
+      "correctAnswers": [1],
+      "feedback": { "explanation": "hätte = داشتم (شرطی). اگر زمان بیشتری داشتم، تمام آزمون‌های نمونه را می‌کردم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo1",
+      "instruction": "جمله را مرتب کنید (جمله فرعی)",
+      "words": ["dass ich", "Ich hoffe,", "die Prüfung bestehe."],
+      "correctOrder": [1, 0, 2],
+      "correctSentence": { "de": "Ich hoffe, dass ich die Prüfung bestehe.", "fa": "امیدوارم که آزمون را بگذرانم." }
+    },
+    {
+      "type": "word-order",
+      "id": "wo2",
+      "instruction": "جمله را مرتب کنید (Konjunktiv II)",
+      "words": ["hätte,", "Wenn ich", "besser vorbereitet", "wäre ich", "mehr gelernt"],
+      "correctOrder": [1, 4, 0, 3, 2],
+      "correctSentence": { "de": "Wenn ich mehr gelernt hätte, wäre ich besser vorbereitet", "fa": "اگر بیشتر یاد گرفته بودم، بهتر آماده بودم" }
+    },
+    {
+      "type": "matching",
+      "id": "m1",
+      "instruction": "بخش آزمون را با استراتژی کلیدی جفت کنید",
+      "items": [
+        { "id": "i1", "text": "Leseverstehen" },
+        { "id": "i2", "text": "Hörverstehen" },
+        { "id": "i3", "text": "Schreiben" },
+        { "id": "i4", "text": "Sprechen" }
+      ],
+      "matches": [
+        { "id": "m1", "text": "ابتدا سوالات، سپس متن" },
+        { "id": "m2", "text": "پخش اول: ایده کلی، پخش دوم: جزئیات" },
+        { "id": "m3", "text": "۱۰ دقیقه برای اصلاح اشتباهات" },
+        { "id": "m4", "text": "ساختار: مقدمه، نکات اصلی، نتیجه" }
+      ],
+      "correctPairs": [["i1", "m1"], ["i2", "m2"], ["i3", "m3"], ["i4", "m4"]]
+    },
+    {
+      "type": "true-false",
+      "id": "tf1",
+      "instruction": "درست یا غلط؟",
+      "statement": "در بخش درک شنیداری، باید تمام کلمات را بفهمید تا بتوانید به سوالات پاسخ دهید.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! شما نباید همه کلمات را بفهمید. ایده کلی و اطلاعات کلیدی مهم است، نه هر کلمه." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf2",
+      "instruction": "درست یا غلط؟",
+      "statement": "در بخش نوشتن، باید ۱۰ دقیقه برای خواندن و اصلاح اشتباهات وقت بگذارید.",
+      "correctAnswer": true,
+      "feedback": { "explanation": "درست! اصلاح اشتباهات می‌تواند امتیاز شما را بالا ببرد. همیشه زمان برای چک کردن بگذارید." }
+    },
+    {
+      "type": "true-false",
+      "id": "tf3",
+      "instruction": "درست یا غلط؟",
+      "statement": "در بخش صحبت کردن، اگر اشتباه کنید، بهتر است سکوت کنید و منتظر سوال بعدی باشید.",
+      "correctAnswer": false,
+      "feedback": { "explanation": "غلط! اشتباه مشکلی نیست. خودتان را اصلاح کنید و ادامه دهید. ممتحن می‌خواهد ببیند می‌توانید ارتباط برقرار کنید." }
+    },
+    {
+      "type": "comprehension",
+      "id": "comp1",
+      "title": "درک مطلب: نکات آزمون B2",
+      "passage": {
+        "de": "Die B2-Prüfung: Tipps und Strategien\n\nViele Kandidaten machen den Fehler, zu viel Zeit mit unbekannten Wörtern zu verbringen. Dabei ist es viel wichtiger, die Hauptinformation zu verstehen. Beim Leseverstehen sollten Sie zunächst die Fragen lesen, bevor Sie den Text bearbeiten. So wissen Sie genau, wonach Sie suchen müssen.\n\nBeim Hörverstehen hören Sie den Text zweimal. Nutzen Sie die erste Hörphase, um die Hauptideen zu erfassen. In der zweiten Phase konzentrieren Sie sich auf Details und beantworten die Fragen, bei denen Sie noch unsicher waren.\n\nFür den schriftlichen Teil ist Zeitmanagement entscheidend. Planen Sie 5 Minuten für die Gliederung, 65 Minuten für das Schreiben und unbedingt 10 Minuten für die Korrektur ein. Viele Kandidaten vergessen die Korrekturphase und verlieren dadurch wertvolle Punkte.\n\nBeim mündlichen Teil gilt: Sprechen Sie ruhig und deutlich. Wenn Sie ein Wort nicht kennen, umschreiben Sie es mit anderen Worten. Das zeigt, dass Sie kommunikativ kompetent sind - genau das wird auf B2-Niveau erwartet.",
+        "fa": "آزمون B2: نکات و استراتژی‌ها\n\nبسیاری از داوطلبان این اشتباه را می‌کنند که زمان زیادی را صرف کلمات ناآشنا می‌کنند. در حالی که بسیار مهم‌تر است که اطلاعات اصلی را بفهمید. در درک مطلب، ابتدا باید سوالات را بخوانید، قبل از اینکه متن را پردازش کنید. اینطور دقیقاً می‌دانید به دنبال چه چیزی باید بگردید.\n\nدر درک شنیداری، متن را دو بار می‌شنوید. از مرحله شنیدن اول برای گرفتن ایده‌های اصلی استفاده کنید. در مرحله دوم، روی جزئیات تمرکز کنید و به سوالاتی پاسخ دهید که هنوز مطمئن نبودید.\n\nبرای بخش نوشتن، مدیریت زمان تعیین‌کننده است. ۵ دقیقه برای طرح کلی، ۶۵ دقیقه برای نوشتن و حتماً ۱۰ دقیقه برای اصلاح برنامه‌ریزی کنید. بسیاری از داوطلبان مرحله اصلاح را فراموش می‌کنند و بدین ترتیب امتیازهای ارزشمند را از دست می‌دهند.\n\nدر بخش صحبت کردن این قانون است: آرام و واضح صحبت کنید. اگر یک کلمه را نمی‌دانید، با کلمات دیگر توضیح دهید. این نشان می‌دهد که از نظر ارتباطی شایسته هستید – دقیقاً این چیزی است که در سطح B2 انتظار می‌رود."
+      },
+      "questions": [
+        { "question": "چرا خواندن سوالات قبل از متن مهم است؟", "options": ["برای صرفه‌جویی در زمان", "برای دانستن به دنبال چه چیزی بگردید", "برای فهم کلمات ناآشنا"], "correctIndex": 1, "explanation": "متن می‌گوید: So wissen Sie genau, wonach Sie suchen müssen = اینطور دقیقاً می‌دانید به دنبال چه چیزی باید بگردید." },
+        { "question": "چند دقیقه باید برای اصلاح در بخش نوشتن وقت بگذارید؟", "options": ["۵ دقیقه", "۱۰ دقیقه", "۶۵ دقیقه"], "correctIndex": 1, "explanation": "متن می‌گوید: unbedingt 10 Minuten für die Korrektur = حتماً ۱۰ دقیقه برای اصلاح." },
+        { "question": "اگر در بخش صحبت کردن یک کلمه را نمی‌دانید، باید چه کنید؟", "options": ["سکوت کنید", "با کلمات دیگر توضیح دهید", "به فارسی بگویید"], "correctIndex": 1, "explanation": "متن می‌گوید: umschreiben Sie es mit anderen Worten = با کلمات دیگر توضیح دهید." }
+      ]
+    },
+    {
+      "type": "story",
+      "id": "story1",
+      "title": { "de": "Der Prüfungstag", "fa": "روز آزمون" },
+      "characters": ["Sarah", "Prüfer"],
+      "segments": [
+        {
+          "type": "narration",
+          "text": { "de": "Es ist 8 Uhr morgens. Sarah sitzt im Prüfungsraum.", "fa": "ساعت ۸ صبح است. سارا در اتاق آزمون نشسته." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sarah",
+          "text": { "de": "Ich bin so nervös. Hoffentlich habe ich genug gelernt.", "fa": "من خیلی نگرانم. امیدوارم کافی یاد گرفته باشم." },
+          "mood": "confused"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Die Prüfung beginnt mit dem Leseverstehen.", "fa": "آزمون با درک مطلب شروع می‌شود." }
+        },
+        {
+          "type": "question",
+          "question": "سارا چه احساسی دارد؟",
+          "options": ["خوشحال", "نگران", "خسته"],
+          "correctIndex": 1,
+          "explanation": "سارا می‌گوید: Ich bin so nervös = من خیلی نگرانم."
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Sarah erinnert sich an den Tipp ihrer Lehrerin: Zuerst die Fragen lesen!", "fa": "سارا نکته معلمش را به یاد می‌آورد: ابتدا سوالات را بخوان!" }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sarah",
+          "text": { "de": "Richtig! Ich lese zuerst die Fragen, dann weiß ich, wonach ich suche.", "fa": "درسته! ابتدا سوالات را می‌خوانم، آنوقت می‌دانم به دنبال چه هستم." },
+          "mood": "happy"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Nach 60 Minuten ist das Leseverstehen vorbei. Jetzt kommt das Hörverstehen.", "fa": "بعد از ۶۰ دقیقه، درک مطلب تمام می‌شود. حالا نوبت درک شنیداری است." }
+        },
+        {
+          "type": "question",
+          "question": "سارا چه استراتژی را به کار می‌برد؟",
+          "options": ["ابتدا متن را می‌خواند", "ابتدا سوالات را می‌خواند", "همه کلمات را ترجمه می‌کند"],
+          "correctIndex": 1,
+          "explanation": "سارا می‌گوید: Ich lese zuerst die Fragen = ابتدا سوالات را می‌خوانم."
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sarah",
+          "text": { "de": "Beim ersten Hören konzentriere ich mich auf die Hauptideen. Beim zweiten Mal hole ich die Details.", "fa": "در شنیدن اول روی ایده‌های اصلی تمرکز می‌کنم. دفعه دوم جزئیات را می‌گیرم." },
+          "mood": "excited"
+        },
+        {
+          "type": "narration",
+          "text": { "de": "Die schriftliche Prüfung ist vorbei. Am Nachmittag ist die mündliche Prüfung.", "fa": "آزمون کتبی تمام شد. بعدازظهر آزمون شفاهی است." }
+        },
+        {
+          "type": "dialog",
+          "speaker": "Prüfer",
+          "text": { "de": "Bitte stellen Sie Ihr Thema vor. Sie haben 4 Minuten Zeit.", "fa": "لطفاً موضوعتان را ارائه دهید. شما ۴ دقیقه وقت دارید." },
+          "mood": "neutral"
+        },
+        {
+          "type": "dialog",
+          "speaker": "Sarah",
+          "text": { "de": "Ich möchte über das Thema Umweltschutz sprechen. Meiner Meinung nach ist es ein sehr wichtiges Thema.", "fa": "می‌خواهم درباره موضوع محافظت از محیط‌زیست صحبت کنم. به نظر من موضوع بسیار مهمی است." },
+          "mood": "happy"
+        },
+        {
+          "type": "question",
+          "question": "در بخش صحبت کردن، سارا چند دقیقه وقت دارد؟",
+          "options": ["۲ دقیقه", "۴ دقیقه", "۱۰ دقیقه"],
+          "correctIndex": 1,
+          "explanation": "ممتحن می‌گوید: Sie haben 4 Minuten Zeit = شما ۴ دقیقه وقت دارید."
+        }
+      ]
+    },
+    {
+      "type": "translation",
+      "id": "tr1",
+      "sourceText": "امیدوارم که آزمون را بگذرانم.",
+      "sentenceTemplate": "Ich hoffe, {0} ich die Prüfung {1}.",
+      "options": ["dass", "weil", "bestehe", "bestehen", "wenn", "habe"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Ich hoffe, dass ich die Prüfung bestehe.", "fa": "امیدوارم که آزمون را بگذرانم." }
+    },
+    {
+      "type": "translation",
+      "id": "tr2",
+      "sourceText": "اگر بیشتر یاد می‌گرفتم، بهتر آماده بودم.",
+      "sentenceTemplate": "Wenn ich mehr {0} hätte, wäre ich besser {1}.",
+      "options": ["gelernt", "lernen", "vorbereitet", "vorbereiten", "studiert", "gemacht"],
+      "correctAnswers": [0, 2],
+      "correctTranslation": { "de": "Wenn ich mehr gelernt hätte, wäre ich besser vorbereitet.", "fa": "اگر بیشتر یاد می‌گرفتم، بهتر آماده بودم." }
+    },
+    {
+      "type": "rapid-fire",
+      "id": "r1",
+      "title": "آزمون سریع: واژگان آزمون B2",
+      "instruction": "معنی درست را انتخاب کنید!",
+      "questions": [
+        { "prompt": "Leseverstehen", "left": "درک شنیداری", "right": "درک مطلب", "correctSide": "right" },
+        { "prompt": "Hörverstehen", "left": "درک شنیداری", "right": "درک مطلب", "correctSide": "left" },
+        { "prompt": "bestehen", "left": "قبول شدن", "right": "شکست خوردن", "correctSide": "left" },
+        { "prompt": "Vorbereitung", "left": "آزمون", "right": "آمادگی", "correctSide": "right" },
+        { "prompt": "Strategie", "left": "استراتژی", "right": "مشکل", "correctSide": "left" },
+        { "prompt": "Prüfung", "left": "آمادگی", "right": "آزمون", "correctSide": "right" }
+      ]
+    },
+    {
+      "type": "dictation",
+      "id": "dict1",
+      "targetText": "Lesen Sie zuerst die Fragen, dann den Text.",
+      "translation": "ابتدا سوالات را بخوانید، سپس متن را.",
+      "difficulty": "B2"
+    },
+    {
+      "type": "dictation",
+      "id": "dict2",
+      "targetText": "Planen Sie 10 Minuten für die Korrektur ein.",
+      "translation": "۱۰ دقیقه برای اصلاح برنامه‌ریزی کنید.",
+      "difficulty": "B2"
+    },
+    {
+      "type": "dictation",
+      "id": "dict3",
+      "targetText": "Meiner Meinung nach ist Umweltschutz wichtig.",
+      "translation": "به نظر من حفاظت از محیط‌زیست مهم است.",
+      "difficulty": "B2"
+    },
+    {
+      "type": "speed-challenge",
+      "id": "sc1",
+      "title": "چالش سرعت: آمادگی آزمون B2",
+      "timeLimit": 60,
+      "questions": [
+        { "question": "Prüfung =", "options": ["آزمون", "آمادگی"], "correctAnswerIndex": 0 },
+        { "question": "Vorbereitung =", "options": ["آمادگی", "استراتژی"], "correctAnswerIndex": 0 },
+        { "question": "Leseverstehen =", "options": ["درک مطلب", "درک شنیداری"], "correctAnswerIndex": 0 },
+        { "question": "Hörverstehen =", "options": ["درک شنیداری", "نوشتن"], "correctAnswerIndex": 0 },
+        { "question": "bestehen =", "options": ["قبول شدن", "شکست خوردن"], "correctAnswerIndex": 0 },
+        { "question": "Strategie =", "options": ["استراتژی", "مشکل"], "correctAnswerIndex": 0 },
+        { "question": "Korrektur =", "options": ["اصلاح", "برنامه‌ریزی"], "correctAnswerIndex": 0 },
+        { "question": "Kandidat =", "options": ["داوطلب", "ممتحن"], "correctAnswerIndex": 0 }
+      ]
+    },
+    {
+      "type": "memory-match",
+      "id": "mm1",
+      "title": "بازی حافظه: آمادگی آزمون",
+      "pairs": [
+        { "de": "Leseverstehen", "fa": "درک مطلب" },
+        { "de": "Hörverstehen", "fa": "درک شنیداری" },
+        { "de": "Vorbereitung", "fa": "آمادگی" },
+        { "de": "bestehen", "fa": "قبول شدن" },
+        { "de": "Strategie", "fa": "استراتژی" }
+      ]
+    },
+    {
+      "type": "word-hunt",
+      "id": "wh1",
+      "title": "جستجوی کلمات",
+      "instruction": "کلمات کلیدی آمادگی آزمون B2 را پیدا کنید",
+      "targetWords": ["Prüfung", "Vorbereitung", "Leseverstehen", "Hörverstehen", "Strategie", "bestehen"],
+      "gridSize": { "rows": 12, "cols": 12 },
+      "timeLimit": 120
+    },
+    {
+      "type": "vocab-check",
+      "id": "vc1",
+      "instruction": "معنی درست را انتخاب کنید",
+      "words": [
+        { "de": "die Prüfung", "fa": "آزمون", "options": ["آمادگی", "آزمون", "استراتژی", "مشکل"], "correctIndex": 1 },
+        { "de": "die Vorbereitung", "fa": "آمادگی", "options": ["آزمون", "آمادگی", "نتیجه", "سوال"], "correctIndex": 1 },
+        { "de": "das Leseverstehen", "fa": "درک مطلب", "options": ["درک شنیداری", "درک مطلب", "نوشتن", "صحبت کردن"], "correctIndex": 1 },
+        { "de": "das Hörverstehen", "fa": "درک شنیداری", "options": ["درک مطلب", "درک شنیداری", "اصلاح", "برنامه‌ریزی"], "correctIndex": 1 },
+        { "de": "bestehen", "fa": "قبول شدن", "options": ["شکست خوردن", "قبول شدن", "آماده شدن", "تمرین کردن"], "correctIndex": 1 },
+        { "de": "die Strategie", "fa": "استراتژی", "options": ["مشکل", "سوال", "استراتژی", "جواب"], "correctIndex": 2 }
+      ]
+    },
+    {
+      "type": "completion",
+      "id": "complete",
+      "title": "آفرین! آمادگی آزمون B2 تمام شد!",
+      "message": "شما تمام نکات کلیدی برای موفقیت در آزمون B2 را یاد گرفتید!",
+      "keyPoints": [
+        "**Leseverstehen (درک مطلب):**",
+        "ابتدا سوالات، سپس متن را بخوانید",
+        "به کلمات نشانه‌گر (jedoch, deshalb) توجه کنید",
+        "همه کلمات را نباید بدانید - معنی کلی مهم است",
+        "**Hörverstehen (درک شنیداری):**",
+        "پخش اول: ایده کلی",
+        "پخش دوم: جزئیات و جوابهای نامطمئن",
+        "به تغییر نگرش توجه کنید",
+        "**Schreiben (نوشتن):**",
+        "۵ دقیقه برنامه‌ریزی + ۶۵ دقیقه نوشتن + ۱۰ دقیقه اصلاح",
+        "ساختار واضح: مقدمه، متن اصلی، نتیجه",
+        "از کلمات ربط B2 استفاده کنید",
+        "**Sprechen (صحبت کردن):**",
+        "آرام و واضح صحبت کنید",
+        "اشتباه مشکلی نیست - اصلاح کنید و ادامه دهید",
+        "Paraphrase کنید اگر کلمه‌ای را نمی‌دانید",
+        "**گرامر کلیدی B2:**",
+        "جملات فرعی: فعل آخر",
+        "Konjunktiv II: hätte/würde",
+        "Passiv: wird/wurde + Partizip II",
+        "**نکته کلیدی:**",
+        "استراتژی + مدیریت وقت = موفقیت در آزمون!"
+      ],
+      "vocabularyLearned": [
+        { "word": { "de": "die Prüfung", "fa": "آزمون" } },
+        { "word": { "de": "die Vorbereitung", "fa": "آمادگی" } },
+        { "word": { "de": "das Leseverstehen", "fa": "درک مطلب" } },
+        { "word": { "de": "das Hörverstehen", "fa": "درک شنیداری" } },
+        { "word": { "de": "die Strategie", "fa": "استراتژی" } },
+        { "word": { "de": "bestehen", "fa": "قبول شدن" } }
+      ]
+    }
+  ]
+}
