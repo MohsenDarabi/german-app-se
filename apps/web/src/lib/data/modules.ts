@@ -2093,6 +2093,192 @@ const DE_FA_B2_MODULES: ModuleStub[] = [
         path: "/learn/de-fa/B2/B2-M14-L04"
       }
     ]
+  },
+  {
+    id: "module-15",
+    title: "بخش ۱۵: Erweiterte Relativsätze",
+    level: "B2",
+    lessons: [
+      {
+        id: "B2-M15-L01",
+        title: "Relativpronomen 'was' - ضمیر موصولی was",
+        description: "یاد بگیرید استفاده از was بعد از ضمایر نامعین، صفت عالی و صفات اسمی‌شده.",
+        path: "/learn/de-fa/B2/B2-M15-L01"
+      },
+      {
+        id: "B2-M15-L02",
+        title: "wo, wohin, woher - قیدهای موصولی مکانی",
+        description: "یاد بگیرید قیدهای موصولی مکانی: wo (کجا)، wohin (به کجا)، woher (از کجا).",
+        path: "/learn/de-fa/B2/B2-M15-L02"
+      },
+      {
+        id: "B2-M15-L03",
+        title: "wo(r)- Komposita - ترکیبات wo(r)-",
+        description: "یاد بگیرید ترکیبات موصولی: worauf، worüber، woran، wofür، womit.",
+        path: "/learn/de-fa/B2/B2-M15-L03"
+      },
+      {
+        id: "B2-M15-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل جملات موصولی پیشرفته: was، wo/wohin/woher و ترکیبات wo(r)-.",
+        path: "/learn/de-fa/B2/B2-M15-L04"
+      }
+    ]
+  },
+  {
+    id: "module-16",
+    title: "بخش ۱۶: Temporalsätze erweitert",
+    level: "B2",
+    lessons: [
+      {
+        id: "B2-M16-L01",
+        title: "sobald, kaum dass - به محض اینکه",
+        description: "یاد بگیرید حروف ربط زمانی فوری: sobald و kaum dass برای توالی سریع.",
+        path: "/learn/de-fa/B2/B2-M16-L01"
+      },
+      {
+        id: "B2-M16-L02",
+        title: "solange, bis - تا زمانی که",
+        description: "یاد بگیرید حروف ربط مدت: solange (تا زمانی که) و bis (تا).",
+        path: "/learn/de-fa/B2/B2-M16-L02"
+      },
+      {
+        id: "B2-M16-L03",
+        title: "ehe, bevor - قبل از اینکه",
+        description: "یاد بگیرید تفاوت ehe (رسمی) و bevor (عادی) برای بیان قبل از.",
+        path: "/learn/de-fa/B2/B2-M16-L03"
+      },
+      {
+        id: "B2-M16-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل جملات زمانی پیشرفته: sobald، kaum dass، solange، bis، ehe، bevor.",
+        path: "/learn/de-fa/B2/B2-M16-L04"
+      }
+    ]
+  },
+  {
+    id: "module-17",
+    title: "بخش ۱۷: Adversativsätze",
+    level: "B2",
+    lessons: [
+      {
+        id: "B2-M17-L01",
+        title: "während, wohingegen - در حالی که (تضاد)",
+        description: "یاد بگیرید während و wohingegen برای بیان تضاد (نه زمان).",
+        path: "/learn/de-fa/B2/B2-M17-L01"
+      },
+      {
+        id: "B2-M17-L02",
+        title: "anstatt dass, anstatt zu - به جای اینکه",
+        description: "یاد بگیرید ساختارهای «به جای»: anstatt dass (فاعل متفاوت) و anstatt zu (فاعل یکسان).",
+        path: "/learn/de-fa/B2/B2-M17-L02"
+      },
+      {
+        id: "B2-M17-L03",
+        title: "ohne dass, ohne zu - بدون اینکه",
+        description: "یاد بگیرید ساختارهای «بدون»: ohne dass (فاعل متفاوت) و ohne zu (فاعل یکسان).",
+        path: "/learn/de-fa/B2/B2-M17-L03"
+      },
+      {
+        id: "B2-M17-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل جملات تقابلی: während، anstatt، ohne و تفاوت dass و zu.",
+        path: "/learn/de-fa/B2/B2-M17-L04"
+      }
+    ]
+  },
+  {
+    id: "module-18",
+    title: "بخش ۱۸: Restriktive Sätze",
+    level: "B2",
+    lessons: [
+      {
+        id: "B2-M18-L01",
+        title: "außer dass, außer wenn - به جز اینکه",
+        description: "یاد بگیرید ساختارهای استثنا: außer dass و außer wenn برای محدودیت.",
+        path: "/learn/de-fa/B2/B2-M18-L01"
+      },
+      {
+        id: "B2-M18-L02",
+        title: "es sei denn - مگر اینکه",
+        description: "یاد بگیرید es sei denn برای بیان شرط منفی و استثنا.",
+        path: "/learn/de-fa/B2/B2-M18-L02"
+      },
+      {
+        id: "B2-M18-L03",
+        title: "nur dass, bloß dass - فقط اینکه",
+        description: "یاد بگیرید nur dass (رسمی) و bloß dass (محاوره‌ای) برای استثنای جزئی.",
+        path: "/learn/de-fa/B2/B2-M18-L03"
+      },
+      {
+        id: "B2-M18-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل جملات محدودکننده: außer، es sei denn، nur dass و کاربرد هرکدام.",
+        path: "/learn/de-fa/B2/B2-M18-L04"
+      }
+    ]
+  },
+  {
+    id: "module-19",
+    title: "بخش ۱۹: Wissenschaftssprache",
+    level: "B2",
+    lessons: [
+      {
+        id: "B2-M19-L01",
+        title: "Nominalisierungen - اسمی‌سازی",
+        description: "یاد بگیرید اسمی‌سازی پیشرفته برای نوشتار علمی: -ung، -heit، -keit.",
+        path: "/learn/de-fa/B2/B2-M19-L01"
+      },
+      {
+        id: "B2-M19-L02",
+        title: "Unpersönliche Strukturen - ساختارهای غیرشخصی",
+        description: "یاد بگیرید ساختارهای غیرشخصی: es wird angenommen، man-Konstruktionen.",
+        path: "/learn/de-fa/B2/B2-M19-L02"
+      },
+      {
+        id: "B2-M19-L03",
+        title: "Redemittel - عبارات کاربردی",
+        description: "یاد بگیرید عبارات علمی: daraus folgt، zusammenfassend lässt sich sagen.",
+        path: "/learn/de-fa/B2/B2-M19-L03"
+      },
+      {
+        id: "B2-M19-L04",
+        title: "Zusammenfassung - جمع‌بندی",
+        description: "مرور کامل زبان علمی: اسمی‌سازی، ساختارهای غیرشخصی و عبارات کاربردی.",
+        path: "/learn/de-fa/B2/B2-M19-L04"
+      }
+    ]
+  },
+  {
+    id: "module-20",
+    title: "بخش ۲۰: B2 Abschluss",
+    level: "B2",
+    lessons: [
+      {
+        id: "B2-M20-L01",
+        title: "Komplexe Satzstrukturen - ساختارهای پیچیده جمله",
+        description: "مرور تمام انواع جملات پیرو: زمانی، علّی، تضادی، نتیجه‌ای، هدفی، شرطی.",
+        path: "/learn/de-fa/B2/B2-M20-L01"
+      },
+      {
+        id: "B2-M20-L02",
+        title: "Stilistik - سبک‌شناسی",
+        description: "یاد بگیرید تفاوت سطوح زبان: رسمی، غیررسمی، علمی و محاوره‌ای.",
+        path: "/learn/de-fa/B2/B2-M20-L02"
+      },
+      {
+        id: "B2-M20-L03",
+        title: "Textproduktion - تولید متن",
+        description: "یاد بگیرید نوشتن متن منسجم با ساختار مقدمه، بدنه و نتیجه.",
+        path: "/learn/de-fa/B2/B2-M20-L03"
+      },
+      {
+        id: "B2-M20-L04",
+        title: "Prüfungsvorbereitung - آمادگی آزمون",
+        description: "مرور جامع و راهبردهای آزمون B2 گوته و telc.",
+        path: "/learn/de-fa/B2/B2-M20-L04"
+      }
+    ]
   }
 ];
 
